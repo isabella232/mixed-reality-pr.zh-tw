@@ -1,0 +1,21 @@
+# - name: Learn about Azure Services 
+- name: 準備好使用新的 Microsoft Edge
+  href: new-microsoft-edge.md
+- name: 計畫和活動
+  items:
+    - name: 混合實境講者系列
+      href: sf-academy-events.md
+    - name: 混合實境開發日
+      items:
+        - name: 混合實境開發日
+          href: mr-dev-days.md
+        - name: 工作階段錄製內容
+          href: mr-dev-days-sessions.md
+- name: 目前的混合實境版本資訊
+  href: release-notes-may-2020.md
+- name: 社群資源
+  href: ../discover/community.md
+- name: 投稿至此文件
+  href: contributing.md
+- name: 大規模部署 HoloLens
+  href: 'https://docs.microsoft.com/hololens/'
