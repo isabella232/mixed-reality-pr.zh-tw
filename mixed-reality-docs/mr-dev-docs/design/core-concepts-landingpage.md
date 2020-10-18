@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
 keywords: Windows Mixed Reality、設計、應用程式模式、控制項、樣式、HoloLens、互動、UX 元素、行為、建立區塊
-ms.openlocfilehash: cece64194100e35ea836a23a645079e64332ec32
-ms.sourcegitcommit: ccc7c9ee0bb65e1bc672482592ebfddbba40d7da
+ms.openlocfilehash: cebcb99124ed71ed170210f2de9ce2f24bcb514d
+ms.sourcegitcommit: 53a00690f32a0a629ed23aefaae5a888f669dcb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 10/16/2020
-ms.locfileid: "92113522"
+ms.locfileid: "92138019"
 ---
 # <a name="core-concepts-overview"></a>核心概念總覽
 
@@ -19,10 +19,6 @@ ms.locfileid: "92113522"
 
 
 在探討您的體驗設計之前，請先瞭解一些核心概念。 以下每個主題都是一項基本因素，基本上會影響您為使用者建立的混合現實體驗品質。 
-
-
-
-混合現實應用程式類型[ ![ 的混合現實應用](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)程式** [Types of mixed reality apps](types-of-mixed-reality-apps.md)**
 
 :::row:::
     :::column:::
@@ -50,13 +46,13 @@ ms.locfileid: "92113522"
 
 :::row:::
     :::column:::
-       [ ![ 空間對應](images/surfacereconstruction.jpg)](spatial-mapping.md) **[空間對應](spatial-mapping.md)**
+        [ ![ 空間錨](images/azurespatialanchors.jpg)](spatial-anchors.md)點**[空間錨點](spatial-anchors.md)**
     :::column-end:::
     :::column:::
-       
+        [ ![ 空間對應](images/surfacereconstruction.jpg)](spatial-mapping.md) **[空間對應](spatial-mapping.md)**
     :::column-end:::
     :::column:::
-       [ ![ 空間錨](images/azurespatialanchors.jpg)](spatial-anchors.md)點**[空間錨點](spatial-anchors.md)**
+        混合現實應用程式類型[ ![ 的混合現實應用](images/enhancedenvironmentapps-640px.jpg)](types-of-mixed-reality-apps.md)程式** [Types of mixed reality apps](types-of-mixed-reality-apps.md)**
     :::column-end:::
 :::row-end:::
 
