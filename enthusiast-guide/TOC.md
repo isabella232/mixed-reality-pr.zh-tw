@@ -43,8 +43,7 @@
 ### [WebVR](webvr-questions.md)
 ### [其他問題](other-questions.md)
 
-## 附錄
+## 資源
 ### [提出錯誤及意見反應](filing-feedback.md)
 ### [混合實境軟體概觀和發行歷程記錄](mixed-reality-software.md)
-### [運動控制器的運作方式](motion-controllers.md)
 ### [內外追蹤的運作方式](tracking-system.md)
