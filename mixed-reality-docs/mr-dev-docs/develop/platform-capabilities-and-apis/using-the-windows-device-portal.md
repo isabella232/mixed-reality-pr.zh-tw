@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 398b9ee312c8d49e3468980e5e2c1be556c17162
-ms.sourcegitcommit: 252b52f7541a6e15aa33322286855af8a3924fc1
+ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
+ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/09/2020
-ms.locfileid: "91862987"
+ms.lasthandoff: 10/13/2020
+ms.locfileid: "92011486"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 
@@ -374,3 +374,20 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 ## <a name="device-portal-rest-apis"></a>裝置入口網站 REST API
 
 裝置入口網站中所有的項目都是以 [REST API](device-portal-api-reference.md) (可選擇性地讓您用來存取資料，並以程式設計方式控制裝置) 為基礎所建置。
+
+## <a name="troubleshooting"></a>疑難排解
+
+### <a name="how-to-fix-the-its-lonely-here-message"></a>如何修正「此處暫無任何項目」訊息
+
+> [!NOTE]
+> 如果在 Hololens 2 上使用之前在 HoloLens (第一代) 上使用，則從 HoloLens 2 移轉到 HoloLens (第一代) 可能會導致頁面變得空無一物。
+
+![裝置入口網站頁面中的「此處暫無任何項目」訊息](images/using-windows-portal-img-19.png)
+
+1. 從左上角的功能表中，選取 [重設版面配置]：
+
+![從裝置入口網站功能表中，選取 [重設版面配置]](images/using-windows-portal-img-20.png)
+
+2. 按一下 [重設工作區] 標題下的 [重設版面配置]。 入口網站頁面會自動重新整理並顯示您的內容。
+
+![從 [重設工作區] 頁面選取 [重設版面配置]](images/using-windows-portal-img-21.png)
