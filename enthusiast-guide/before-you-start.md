@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、相容、相容性、入門、安裝程式、電腦、系統需求
 appliesto:
 - Windows 10
-ms.openlocfilehash: c76f670230a4a19b53b7e8f938b13e79bb7c8db7
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174447"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293061"
 ---
 # <a name="before-you-start"></a>在您開始使用 Intune 之前
 
@@ -52,7 +52,7 @@ ms.locfileid: "92174447"
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>確定您有相容的圖形驅動程式
 
-您的電腦必須有 WDDM 2.2 或更新版本的圖形驅動程式，才能完成混合的現實設定。 如果它還沒有相容的圖形驅動程式，請嘗試下列來源：
+您的電腦必須有 WDDM 2.2 或更新版本的圖形驅動程式，才能完成 Windows Mixed Reality 安裝程式。 如果它還沒有相容的圖形驅動程式，請嘗試下列來源：
 
 * 使用 Windows Update 檢查是否有最新的重要驅動程式更新 (**開始 > Windows 設定 > 更新和安全性 > 檢查更新**) 
 * 檢查是否有最新的選用驅動程式更新：
@@ -64,7 +64,7 @@ ms.locfileid: "92174447"
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>請確定您有任何必要的介面卡
 
-您 Windows Mixed Reality 相容的電腦可能沒有連線到沉浸式耳機所需的全尺寸 HDMI 和 USB 3.0 埠。 或者，您可能需要藍牙介面卡才能符合混合實境入口需求。  如果是這種情況，您將需要介面卡來連接耳機和移動控制器。 您可以在 [這裡](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)找到您可能需要的介面卡類型清單，以及特定介面卡型號的一些建議。
+您 Windows Mixed Reality 相容的電腦可能沒有連線到沉浸式耳機所需的全尺寸 HDMI 和 USB 3.0 埠。 或者，您可能需要藍牙介面卡，才能符合 Windows Mixed Reality 入口網站需求。  如果是這種情況，您將需要介面卡來連接耳機和移動控制器。 請務必檢查 [您可能需要的介面卡類型清單，以及特定介面卡型號的一些建議](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。
 
 ## <a name="make-sure-that-you-have-input-devices"></a>請確定您有輸入裝置
 
@@ -76,7 +76,7 @@ Windows Mixed Reality 的設計最適合搭配 Windows Mixed Reality 的動作�
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>確定您有很大的開放空間
 
-如果您想要在使用 Windows Mixed Reality 時四處移動，您需要有一個大型的開放空間。  在安裝期間，系統會要求您選擇「坐即站」或「所有體驗」。 如果您想要四處移動，請選擇 [所有體驗] 並設定界限。
+如果您想要在使用 Windows Mixed Reality 時四處移動，您需要有一個大型的開放空間。  在安裝期間，系統會要求您選擇「坐即站」或「所有體驗」。 如果您想要四處移動，請選擇 [所有體驗] 並設定界限。 請參閱 [沉浸式耳機健康狀態、安全和緩和方針，](wmr-health-safety-comfort.md) 以瞭解空間需求。
 
 ### <a name="seated-and-standing-no-boundary"></a>固定 (沒有界限) 
 

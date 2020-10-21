@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: 47aec4d0dac6cd29cbcbd6ddc6dd7dcc6a40fcbc
-ms.sourcegitcommit: 2cdc2e38990fff24972d98f9e74f0dabacbffa7d
+ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/17/2020
-ms.locfileid: "92156594"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293069"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -22,17 +22,19 @@ ms.locfileid: "92156594"
 您可以使用下列檢查點來設定、設定和使用您的沉浸式 VR 裝置，讓您的應用程式和遊戲保持生活。
 
 ### <a name="1-before-you-buy"></a>1. 購買之前
+
 您的電腦必須處理您所購買的 VR 硬體，才能獲得最佳的設定和使用體驗。 在某些情況下，您可能需要訂購額外的 [介面卡或硬體](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。本節將逐步引導您完成與虛擬實境硬體相關的最小電腦需求、相容性檢查和常見問題。
 
 <br>
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [最低電腦硬體指導方針](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 執行 Windows Mixed Reality、Windows Mixed Reality Ultra 和混合實境入口應用程式所需瞭解的一切 |
+| [最低電腦硬體指導方針](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 執行 Windows Mixed Reality、Windows Mixed Reality Ultra 和 Windows Mixed Reality 入口網站應用程式所需瞭解的一切 |
 | [取得電腦相容性的協助](get-help-with-pc-compatibility.md) | 瞭解 Windows Mixed Reality PC 檢查產生的報告 |
 | [購買常見問題](before-you-buy-faqs.md) | 取得有關技術規格、裝置和控制器的所有購買問題的解答 |
 
 ### <a name="2-getting-started"></a>2. 開始使用
+
 當您擁有裝置之後，您必須正確設定並設定它以供使用。 在本節結束時，您將會安裝所有的軟體需求，並準備好開始使用 Windows Mixed Reality。
 
 <br>
@@ -44,6 +46,7 @@ ms.locfileid: "92156594"
 | [健全狀況、安全性和緩和方針](wmr-health-safety-comfort.md) | 在使用您的耳機之前使用 Windows Mixed Reality 保持安全的建議  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. 使用 Windows Mixed Reality
+
 Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。 在本節結束時，您將熟悉如何流覽虛擬 home 環境、使用控制器和語音作為輸入，以及整合服務與應用程式，例如 SteamVR 和 WebVR。
 
 <br>
@@ -63,12 +66,14 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。
 > 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)**。
 
 ### <a name="4-troubleshooting-tips--resources"></a>4. 疑難排解、秘訣 & 資源
-當您遇到任何與您的沉浸式硬體相關的問題時，請從我們所彙集的 [一般常見問題](troubleshooting-windows-mixed-reality.md) 著手。 如果您找不到想要的資訊，我們在 [ **疑難排解常見問題** ] 區段中有一份詳盡的主題特有的常見問題檔，其中涵蓋從安裝和錯誤碼一直到效能和耳機顯示的一切。 
+
+當您遇到任何與您的沉浸式硬體相關的問題時，請從我們所彙集的 [一般常見問題](troubleshooting-windows-mixed-reality.md) 著手。 如果您找不到想要的資訊，我們在 [ **疑難排解常見問題** ] 區段中有一份詳盡的主題特有的常見問題檔，其中涵蓋從安裝和錯誤碼一直到效能和耳機顯示的一切。
 
 針對新問題和 bug，我們一律會 lookout，因此如果您遇到未記載的任何內容，請在 [這裡傳送意見](filing-feedback.md)反應給我們。
 
 如果您想要深入瞭解 VR 中特定功能的運作方式，請參閱下列文章：
-* [移動控制器的運作方式](motion-controllers.md)
+
+* [移動控制器的運作方式](controllers-in-wmr.md)
 * [內外追蹤的運作方式](tracking-system.md)
 
 > [!NOTE]
