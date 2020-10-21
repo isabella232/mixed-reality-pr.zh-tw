@@ -8,51 +8,51 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，教學課程，開始使用
 appliesto:
 - Windows 10
-ms.openlocfilehash: 847ed83b4abf39e515359eca43672b3f2708b1c8
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: 94b23785861ad70630a14d26668164fdf699fcce
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174453"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92292983"
 ---
-# <a name="learn-mixed-reality"></a><span data-ttu-id="ceab8-104">學習混合實境</span><span class="sxs-lookup"><span data-stu-id="ceab8-104">Learn Mixed Reality</span></span>
+# <a name="learn-mixed-reality"></a><span data-ttu-id="8584c-104">學習混合實境</span><span class="sxs-lookup"><span data-stu-id="8584c-104">Learn Mixed Reality</span></span>
 
-## <a name="running-the-learning-experience-for-the-first-time"></a><span data-ttu-id="ceab8-105">第一次執行學習體驗</span><span class="sxs-lookup"><span data-stu-id="ceab8-105">Running the learning experience for the first time</span></span>
+## <a name="running-the-learning-experience-for-the-first-time"></a><span data-ttu-id="8584c-105">第一次執行學習體驗</span><span class="sxs-lookup"><span data-stu-id="8584c-105">Running the learning experience for the first time</span></span>
 
-<span data-ttu-id="ceab8-106">完成設定之後，混合實境入口應用程式應該會在名為 **學習混合實境** 的 HMD 中啟動沉浸式體驗，該體驗將教您如何使用 Windows Mixed Reality。</span><span class="sxs-lookup"><span data-stu-id="ceab8-106">After finishing setup, the Mixed Reality Portal app should launch an immersive experience in your HMD called **Learn Mixed Reality** that will teach you how to use Windows Mixed Reality.</span></span> <span data-ttu-id="ceab8-107">在 [載入] 畫面的 gem 中看看，開始使用。</span><span class="sxs-lookup"><span data-stu-id="ceab8-107">Gaze at the gem in the loading screen to get started.</span></span> <span data-ttu-id="ceab8-108">您應該會在耳機中聽到 Cortana 的語音，以提供接下來要做什麼的指示。</span><span class="sxs-lookup"><span data-stu-id="ceab8-108">You should hear Cortana's voice in your headset giving you instructions on what to do next.</span></span>
+<span data-ttu-id="8584c-106">完成設定之後，混合實境入口應用程式應該會在名為 **學習混合實境** 的 HMD 中啟動沉浸式體驗，該體驗將教您如何使用 Windows Mixed Reality。</span><span class="sxs-lookup"><span data-stu-id="8584c-106">After finishing setup, the Mixed Reality Portal app should launch an immersive experience in your HMD called **Learn Mixed Reality** that will teach you how to use Windows Mixed Reality.</span></span> <span data-ttu-id="8584c-107">在 [載入] 畫面的 gem 中看看，開始使用。</span><span class="sxs-lookup"><span data-stu-id="8584c-107">Gaze at the gem in the loading screen to get started.</span></span> <span data-ttu-id="8584c-108">您應該會在耳機中聽到 Cortana 的語音，以提供接下來要做什麼的指示。</span><span class="sxs-lookup"><span data-stu-id="8584c-108">You should hear Cortana's voice in your headset giving you instructions on what to do next.</span></span>
 
 ![學習混合實境](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a><span data-ttu-id="ceab8-110">重新執行學習體驗</span><span class="sxs-lookup"><span data-stu-id="ceab8-110">Re-run the learning experience</span></span>
+## <a name="re-run-the-learning-experience"></a><span data-ttu-id="8584c-110">重新執行學習體驗</span><span class="sxs-lookup"><span data-stu-id="8584c-110">Re-run the learning experience</span></span>
 
-<span data-ttu-id="ceab8-111">學習混合實境是應用程式。</span><span class="sxs-lookup"><span data-stu-id="ceab8-111">Learn Mixed Reality is an app.</span></span> <span data-ttu-id="ceab8-112">您可以隨時從 [混合實境首頁](your-mixed-reality-home.md) 內的 [開始] 功能表啟動應用程式。</span><span class="sxs-lookup"><span data-stu-id="ceab8-112">The app can be launched from the Start menu inside of [your mixed reality home](your-mixed-reality-home.md) at any time.</span></span> <span data-ttu-id="ceab8-113">使用您的動作控制器或鍵盤：</span><span class="sxs-lookup"><span data-stu-id="ceab8-113">Using your motion controllers or keyboard:</span></span>
+<span data-ttu-id="8584c-111">學習混合實境是應用程式。</span><span class="sxs-lookup"><span data-stu-id="8584c-111">Learn Mixed Reality is an app.</span></span> <span data-ttu-id="8584c-112">您可以隨時從 [混合實境首頁](your-mixed-reality-home.md) 內的 [開始] 功能表啟動應用程式。</span><span class="sxs-lookup"><span data-stu-id="8584c-112">The app can be launched from the Start menu inside of [your mixed reality home](your-mixed-reality-home.md) at any time.</span></span> <span data-ttu-id="8584c-113">使用您的動作控制器或鍵盤：</span><span class="sxs-lookup"><span data-stu-id="8584c-113">Using your motion controllers or keyboard:</span></span>
 
-### <a name="use-your-motion-controllers"></a><span data-ttu-id="ceab8-114">使用您的動作控制器</span><span class="sxs-lookup"><span data-stu-id="ceab8-114">Use your motion controllers</span></span>
+### <a name="use-your-motion-controllers"></a><span data-ttu-id="8584c-114">使用您的動作控制器</span><span class="sxs-lookup"><span data-stu-id="8584c-114">Use your motion controllers</span></span>
 
-1. <span data-ttu-id="ceab8-115">按下控制器上的 Windows 按鈕</span><span class="sxs-lookup"><span data-stu-id="ceab8-115">Press the Windows button on your controller</span></span>
-2. <span data-ttu-id="ceab8-116">選取 [所有應用程式]</span><span class="sxs-lookup"><span data-stu-id="ceab8-116">Select "All apps"</span></span>
-3. <span data-ttu-id="ceab8-117">選取 [學習混合實境]</span><span class="sxs-lookup"><span data-stu-id="ceab8-117">Select "Learn Mixed Reality"</span></span>
-4. <span data-ttu-id="ceab8-118">將應用程式放在您的家裡以啟動應用程式</span><span class="sxs-lookup"><span data-stu-id="ceab8-118">Place the app in your home to launch the app</span></span>
+1. <span data-ttu-id="8584c-115">按下控制器上的 Windows 按鈕</span><span class="sxs-lookup"><span data-stu-id="8584c-115">Press the Windows button on your controller</span></span>
+2. <span data-ttu-id="8584c-116">選取 [所有應用程式]</span><span class="sxs-lookup"><span data-stu-id="8584c-116">Select "All apps"</span></span>
+3. <span data-ttu-id="8584c-117">選取 [學習混合實境]</span><span class="sxs-lookup"><span data-stu-id="8584c-117">Select "Learn Mixed Reality"</span></span>
+4. <span data-ttu-id="8584c-118">將應用程式放在您的家裡以啟動應用程式</span><span class="sxs-lookup"><span data-stu-id="8584c-118">Place the app in your home to launch the app</span></span>
 
-### <a name="use-your-mouse--keyboard"></a><span data-ttu-id="ceab8-119">使用滑鼠 & 鍵盤</span><span class="sxs-lookup"><span data-stu-id="ceab8-119">Use your mouse & keyboard</span></span>
+### <a name="use-your-mouse--keyboard"></a><span data-ttu-id="8584c-119">使用滑鼠 & 鍵盤</span><span class="sxs-lookup"><span data-stu-id="8584c-119">Use your mouse & keyboard</span></span>
 
-1. <span data-ttu-id="ceab8-120">按鍵盤上的 Windows 鍵</span><span class="sxs-lookup"><span data-stu-id="ceab8-120">Press the Windows key on your keyboard</span></span>
-2. <span data-ttu-id="ceab8-121">選取 [所有應用程式]</span><span class="sxs-lookup"><span data-stu-id="ceab8-121">Select "All apps"</span></span>
-3. <span data-ttu-id="ceab8-122">選取 [學習混合實境]</span><span class="sxs-lookup"><span data-stu-id="ceab8-122">Select "Learn Mixed Reality"</span></span>
-4. <span data-ttu-id="ceab8-123">以滑鼠左鍵按一下滑鼠，將應用程式放在您的首頁，然後啟動應用程式</span><span class="sxs-lookup"><span data-stu-id="ceab8-123">Left-click with your mouse to place the app in your home and launch the app</span></span>
+1. <span data-ttu-id="8584c-120">按鍵盤上的 Windows 鍵</span><span class="sxs-lookup"><span data-stu-id="8584c-120">Press the Windows key on your keyboard</span></span>
+2. <span data-ttu-id="8584c-121">選取 [所有應用程式]</span><span class="sxs-lookup"><span data-stu-id="8584c-121">Select "All apps"</span></span>
+3. <span data-ttu-id="8584c-122">選取 [學習混合實境]</span><span class="sxs-lookup"><span data-stu-id="8584c-122">Select "Learn Mixed Reality"</span></span>
+4. <span data-ttu-id="8584c-123">以滑鼠左鍵按一下滑鼠，將應用程式放在您的首頁，然後啟動應用程式</span><span class="sxs-lookup"><span data-stu-id="8584c-123">Left-click with your mouse to place the app in your home and launch the app</span></span>
 
-<span data-ttu-id="ceab8-124">若要深入瞭解如何使用移動控制器來解決混合現實的情況，請查看 [混合現實中的動作控制器](controllers-in-wmr.md)</span><span class="sxs-lookup"><span data-stu-id="ceab8-124">To learn more about how to get around in mixed reality with motion controllers, review [motion controllers in Mixed reality](controllers-in-wmr.md)</span></span>
+<span data-ttu-id="8584c-124">若要深入瞭解如何使用移動控制器來解決混合現實的情況，請查看 [混合現實中的動作控制器](controllers-in-wmr.md)</span><span class="sxs-lookup"><span data-stu-id="8584c-124">To learn more about how to get around in mixed reality with motion controllers, review [motion controllers in Mixed Reality](controllers-in-wmr.md)</span></span>
 
-## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a><span data-ttu-id="ceab8-125">在 Windows Mixed Reality 首頁內使用語音命令和 Cortana</span><span class="sxs-lookup"><span data-stu-id="ceab8-125">Use voice commands and Cortana inside of the Windows Mixed Reality home</span></span>
+## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a><span data-ttu-id="8584c-125">在 Windows Mixed Reality 首頁內使用語音命令和 Cortana</span><span class="sxs-lookup"><span data-stu-id="8584c-125">Use voice commands and Cortana inside of the Windows Mixed Reality home</span></span>
 
-[<span data-ttu-id="ceab8-126">瞭解您可以在 Windows Mixed Reality 首頁中使用的語音命令</span><span class="sxs-lookup"><span data-stu-id="ceab8-126">Learn the voice commands you can use in the Windows Mixed Reality home</span></span>](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
+[<span data-ttu-id="8584c-126">瞭解您可以在 Windows Mixed Reality 首頁中使用的語音命令</span><span class="sxs-lookup"><span data-stu-id="8584c-126">Learn the voice commands you can use in the Windows Mixed Reality home</span></span>](https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality)
 
-## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a><span data-ttu-id="ceab8-127">在我的桌面畫面上顯示我在耳機中看到的內容預覽</span><span class="sxs-lookup"><span data-stu-id="ceab8-127">Show a preview of what I'm seeing in my headset on my desktop's screen</span></span>
+## <a name="show-a-preview-of-what-im-seeing-in-my-headset-on-my-desktops-screen"></a><span data-ttu-id="8584c-127">在我的桌面畫面上顯示我在耳機中看到的內容預覽</span><span class="sxs-lookup"><span data-stu-id="8584c-127">Show a preview of what I'm seeing in my headset on my desktop's screen</span></span>
 
-<span data-ttu-id="ceab8-128">直接按混合實境入口應用程式底部的 **播放** 圖示。</span><span class="sxs-lookup"><span data-stu-id="ceab8-128">Just press the **Play** icon at the bottom of the Mixed Reality Portal app.</span></span>
+<span data-ttu-id="8584c-128">直接按混合實境入口應用程式底部的 **播放** 圖示。</span><span class="sxs-lookup"><span data-stu-id="8584c-128">Just press the **Play** icon at the bottom of the Mixed Reality Portal app.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="ceab8-129">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ceab8-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8584c-129">另請參閱</span><span class="sxs-lookup"><span data-stu-id="8584c-129">See also</span></span>
 
-* [<span data-ttu-id="ceab8-130">安裝疑難排解</span><span class="sxs-lookup"><span data-stu-id="ceab8-130">Troubleshooting installation</span></span>](installation_errors.md)
-* [<span data-ttu-id="ceab8-131">疑難排解設定</span><span class="sxs-lookup"><span data-stu-id="ceab8-131">Troubleshooting setup</span></span>](set-up-questions.md)
-* [<span data-ttu-id="ceab8-132">您的混合實境首頁</span><span class="sxs-lookup"><span data-stu-id="ceab8-132">Your mixed reality home</span></span>](your-mixed-reality-home.md)
+* [<span data-ttu-id="8584c-130">安裝疑難排解</span><span class="sxs-lookup"><span data-stu-id="8584c-130">Troubleshooting installation</span></span>](installation_errors.md)
+* [<span data-ttu-id="8584c-131">疑難排解設定</span><span class="sxs-lookup"><span data-stu-id="8584c-131">Troubleshooting setup</span></span>](set-up-questions.md)
+* [<span data-ttu-id="8584c-132">您的混合實境首頁</span><span class="sxs-lookup"><span data-stu-id="8584c-132">Your mixed reality home</span></span>](your-mixed-reality-home.md)
