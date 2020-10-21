@@ -1,0 +1,49 @@
+### YamlMime:Hub
+title: Windows Mixed Reality VR 文件
+summary: 了解如何充分利用 Windows Mixed Reality 的中繼到進階客戶資訊。
+brand: windows
+metadata:
+  title: Windows Mixed Reality VR 文件
+  description: 了解如何充分利用 Windows Mixed Reality 的中繼到進階客戶資訊。
+  services: guidance
+  ms.service: guidance
+  ms.topic: hub-page
+  ms.prod: mixed-reality
+  ms.technology: enthusiast-guide
+  author: mattwojo
+  ms.author: mattwoj
+  ms.openlocfilehash: b791970df40711c298501b2db09cff8ec342de8a
+  ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+  ms.translationtype: HT
+  ms.contentlocale: zh-TW
+  ms.lasthandoff: 10/19/2020
+  ms.locfileid: "92174383"
+highlightedContent:
+  items:
+  - title: 購買之前
+    itemType: learn
+    url: windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md
+  - title: 開始使用
+    itemType: get-started
+    url: before-you-start.md
+  - title: 學習混合實境
+    itemType: how-to-guide
+    url: learn-mixed-reality.md
+  - title: Windows Mixed Reality 學院
+    itemType: video
+    url: https://developer.microsoft.com/en-us/windows/mixed-reality/academy
+additionalContent:
+  sections:
+  - title: 其他資源
+    summary: 尋找疑難排解、開發文件和論壇的相關連結。
+    items:
+    - title: 疑難排解
+      summary: Windows Mixed Reality 所有領域的 A 到 Z 疑難排解
+      url: installation_errors.md
+    - title: 意見反應
+      summary: 收集從有用意見反應到子系統運作方式的額外文章，深入了解 Windows Mixed Reality。
+      url: filing-feedback.md
+    - title: 開發文件
+      summary: 開發和設計文件
+      url: https://developer.microsoft.com/windows/mixed-reality
+  footer: 發現我們網站上的問題？ [讓我們知道！](https://forums.hololens.com/categories/using-windows-mixed-reality)
