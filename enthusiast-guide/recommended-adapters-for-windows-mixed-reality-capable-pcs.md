@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，adapter，轉換器，HDMI，USB，DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: bcdc25c0f6e678666a713d01aaa4fb15da31e90c
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: ea0cd3c87fecda310ec72ba50d8f5982d1782b31
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174401"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434594"
 ---
 # <a name="recommended-adapters"></a>建議的介面卡
 > [!NOTE]
@@ -263,7 +263,7 @@ ms.locfileid: "92174401"
 
 如果您的耳機是在2018之後發行，則不需要介面卡，且控制器配對到耳機。
 
-2017或更早版本隨附的裝置需要適用于控制器的介面卡。 如果您的電腦未包含藍牙來配對 [Windows Mixed Reality 移動控制器](controllers-in-wmr.md)，您可以使用類似 Plugable USB 藍牙4.0 低功耗微介面卡的介面卡。
+2017或更早版本隨附的裝置需要適用于控制器的介面卡。 如果您的電腦未包含藍牙來配對 [Windows Mixed Reality 移動控制器](controllers-in-wmr.md#Pair-motion-controllers)，您可以使用類似 Plugable USB 藍牙4.0 低功耗微介面卡的介面卡。
 
 > [!NOTE]
 > Microsoft 不會製造、測試、認證，也不保證任何介面卡的功能性、可靠性或品質。 如有任何問題、任何介面卡的疑慮或問題，請洽詢您介面卡的賣方或製造商。

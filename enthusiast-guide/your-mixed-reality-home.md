@@ -3,18 +3,18 @@ title: 您的混合實境首頁
 description: 如何在 Windows Mixed Reality 首頁內流覽和傳送、啟動應用程式和遊戲、個人化首頁，以及變更視覺效果、音訊和語音設定。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲
-ms.openlocfilehash: 6537bca13a7eb133d7f78e7922ea91304fdc90f2
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293090"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434619"
 ---
 # <a name="your-windows-mixed-reality-home"></a>您的 Windows Mixed Reality 首頁
 
 ## <a name="what-is-the-windows-mixed-reality-home"></a>什麼是 Windows Mixed Reality 首頁
 
-Windows Mixed Reality 是第一個空間作業系統。 它會利用我們 instinctual 的能力來導覽三維空間，而不是使用一般螢幕和2D 介面。 每個地方都有一個用途，內容也有內容。 就像您的電腦是從桌面介面開始，而您的電話是從主畫面開始，Windows Mixed Reality 從 Mixed Reality 首頁開始。 這是您可以流覽和個人化的環境，以建立自己的環境。 這是 Microsoft Store 中所提供數千個應用程式的畫布。 您可以使用這些應用程式進行多處理，像是在3D 中的空間幾乎沒有限制的時候。
+Windows Mixed Reality 是第一個空間作業系統。 它會利用我們 instinctual 的能力來導覽三維空間，而不是使用一般螢幕和2D 介面。 每個地方都有一個用途，內容也有內容。 就像您的電腦是從桌面介面開始，而您的電話是從主畫面開始，Windows Mixed Reality 從 Mixed Reality 首頁開始。 這是您可以流覽和個人化的環境，以建立自己的環境。 這是 Microsoft Store 或 SteamVR 中可用之數千個應用程式的畫布。 您可以使用這些應用程式進行多處理，像是在3D 中的空間幾乎沒有限制的時候。
 
 ## <a name="move-through-the-windows-mixed-reality-home"></a>移動 Windows Mixed Reality 首頁
 
@@ -73,7 +73,7 @@ Windows Mixed Reality 是第一個空間作業系統。 它會利用我們 insti
 
 ## <a name="turn-off-the-boundary"></a>關閉界限
 
-移至 Windows Mixed Reality 入口網站，然後開啟畫面左上方的功能表。 選取 [ **執行設定 > 空間界限**]。 將切換開關切換為 [關閉]。 如果關閉界限，您應該將它留在桌上。
+移至混合實境入口，然後開啟畫面左上方的功能表。 選取 [ **執行設定 > 空間界限**]。 將切換開關切換為 [關閉]。 如果關閉界限，您應該將它留在桌上。
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 首頁的空間音效
 

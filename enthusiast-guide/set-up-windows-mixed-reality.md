@@ -3,12 +3,12 @@ title: 設定 Windows Mixed Reality
 description: 如何設定您的 Windows Mixed Reality 動作控制器、語音和音訊，以及定義安全播放空間的房間界限。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、入門、設定、移動控制器、控制器、語音、音訊、站上、站上、界限、圖形驅動程式、Microsoft Edge、chromium
-ms.openlocfilehash: 71775ba03cb143b83f1a4514f62f20df903df96d
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174466"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434634"
 ---
 # <a name="set-up-windows-mixed-reality"></a>設定 Windows Mixed Reality
 
@@ -86,7 +86,7 @@ ms.locfileid: "92174466"
 
 ## <a name="what-is-the-maximum-size-of-the-boundary"></a>界限的大小上限為何？
 
-目前支援的最大界限大小 Windows Mixed Reality 為 18x18ft (5.7 x 5.7 m) 或 13ft (>4m) 半徑。  界限大小取決於錨點，以及您可以移動錨點之間的距離，然後才會造成界限的穩定性。  Windows Mixed Reality 是以平臺中的階段抽象為基礎，這是您在中移動的空間，而且該階段相依于幾乎每個應用程式也會假設的單一錨點 (，因為它們只有單一座標系統) 。  這一點很重要，因為在進行內部追蹤時，當您從錨點移離錨點時，耳機追蹤就可以可靠地維持界限的穩定。  如果界限的目的是要協助避免發生實體障礙，就會變得越來越多的問題。  有兩個因素會進入最大界限大小的決定;Windows Mixed Reality 耳機的最大距離，可提供最大的房間規模調整體驗，以及耳機纜線的長度以及耳機纜線的長度，對於大多數 Windows Mixed Reality 耳機都是 10ft (3m) 。 
+目前支援的最大界限大小 Windows Mixed Reality 為 18x18ft (5.7 x 5.7 m) 或 13ft (>4m) 半徑。  界限大小取決於錨點，以及您可以移動錨點之間的距離，然後才會造成界限的穩定性。  Windows Mixed Reality 是以平臺中的階段抽象為基礎，這是您在中移動的空間，而且該階段相依于幾乎每個應用程式也會假設的單一錨點 (，因為它們只有單一座標系統) 。  這一點很重要，因為在進行內部追蹤時，當您從錨點移離錨點時，耳機追蹤就可以可靠地維持界限的穩定。  如果界限的目的是要協助避免發生實體障礙，就會變得越來越多的問題。  有兩個因素會進入最大界限大小的決定;Windows Mixed Reality 耳機的最大距離，可提供最大的房間規模調整體驗，以及耳機纜線的長度以及耳機纜線的長度，對於大多數 Windows Mixed Reality 耳機都是 10ft (3m) 。
 
 ## <a name="set-up-speech"></a>設定語音
 
@@ -106,13 +106,13 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 這項設定會控制您的混合現實首頁的視覺品質。 預設值為「自動」。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
 
 您的耳機原生解析度如下所示。
 
 如果您將具有較高解析度的耳機連接 (例如，具有4320x2160 的耳機會顯示) 到您的電腦，您將會看到可調整混合現實顯示解析度的設定。
 
-* 這項設定會提供 Windows Mixed Reality 組合堆疊的選項，以轉譯原生 (例如，在 4320x2160) ，或讓撰寫堆疊以較低的解析度和精密呈現 (例如，在2880x1440 和精密轉譯為4320x2160。
+* 這項設定會提供 Windows Mixed Reality 組合堆疊的選項，以原生方式轉譯 (例如，在 4320x2160) ，或讓撰寫堆疊以較低的解析度和精密呈現 (例如，在2880x1440 和精密轉譯為 4320x2160) 。
 * 預設設定是以原生方式轉譯 (例如， **4320 x 2160 (最佳品質) ** 選項) ，以提供您耳機的最佳視覺品質。
 * 如果您的電腦不符合具有較高解析度顯示之耳機的最小圖形硬體需求，以及/或如果您看到圖形效能問題，您可以嘗試使用 [選取 **自動消除倍增 (最佳效能]) ** 選項。
 
@@ -131,9 +131,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 * **90Hz**
 
 >[!Note]
->HP 殘響 G2 的自動重新整理頻率設定為90Hz
-
-某些 Windows Mixed Reality 功能（包括混合實境入口 preview 和較大的耳機顯示 FOV）僅適用于90Hz 體驗。
+>當您第一次設定 HP-UX 的 G2 耳機時，體驗將會變更為90Hz，以確保獲得最佳體驗。  如有需要，您可以將此變更回 [自動]。
 
 ### <a name="input-switching"></a>輸入切換
 
@@ -180,5 +178,5 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 * [安裝疑難排解](installation_errors.md)
 * [疑難排解設定](set-up-questions.md)
 * [學習混合實境](learn-mixed-reality.md)
-* [運動控制器的運作方式](controllers-in-wmr.md)
+* [運動控制器](controllers-in-wmr.md)
 * [內外追蹤的運作方式](tracking-system.md)

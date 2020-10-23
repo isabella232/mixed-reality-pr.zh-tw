@@ -8,29 +8,20 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 360b8fea1744e2753aaa5310d79e82f978d92f67
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293113"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434581"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的動作控制器
 
 移動控制器是可讓使用者在混合現實中採取行動的硬體配件。 動作控制器優於手勢的優點是，控制器在空間中具有精確的位置，讓您能夠更精細地與數位物件互動。 針對 Windows Mixed Reality 沉浸式耳機，移動控制器是使用者將在其世界中採取行動的主要方式。
+
 Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器，在您的觀看視野中提供精確且回應的移動，這表示不需要在您的空間中的牆上安裝硬體。 這些移動控制器會提供與 Windows Mixed Reality 沉浸式耳機一樣容易的設定和可攜性。
 
-Windows Mixed Reality 的設計目的是要與混合的現實運動控制器搭配使用，以提供自然、精確的互動，而不需要在您的牆上安裝硬體。
-
 您也可以使用 Xbox 控制器、滑鼠和鍵盤，或 [直接使用您的聲音](using-speech-in-wmr.md)來解決問題。
-
-**特徵：**
-
-* 光學追蹤
-* 觸發程序
-* 抓取按鈕
-* 操縱杆
-* Touchpad
 
 ## <a name="motion-controller-setup"></a>移動控制器設定
 
@@ -38,12 +29,12 @@ Windows Mixed Reality 的設計目的是要與混合的現實運動控制器搭�
 
 1. 啟動已連線到耳機的 **混合實境入口** 。  
 2. 在左下角選取 [...] **> 設定控制器**。
-3. 在每個控制器中插入 2 AA 電池，然後將控制器放在配對模式中 (請參閱配對移動控制器一節中的指示) 
+3. 在每個控制器中插入 2 AA 電池，並讓控制器進入配對模式 (查看配對[動作控制器區段](controllers-in-wmr.md#Pair-motion-controllers)中的指示
 4. 遵循螢幕上提供的指示進行。
 
 > [!NOTE]
-> * 對於直接與您的電腦配對的控制器，您必須將它們開啟，然後按下電池區間內的配對按鈕，直到燈開始閃爍，以使其進入配對模式。  
-> * 移動控制器只支援一次一部電腦或電腦配對。 如果您需要使用不同的耳機，您需要經過配對程式。 請參閱 [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
+> * 對於直接與您的電腦配對的控制器，您必須將它們開啟，然後按下電池區間內的配對按鈕，直到燈開始閃爍，以使其進入配對模式。
+> * 動作控制器一次只支援配對一台電腦。 如果您需要使用不同的耳機，您需要經過配對程式。 請參閱 [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
 [取得連接説明](wmr-setup-faq.md#my-motion-controllers-arent-working)
 
@@ -58,20 +49,29 @@ Windows Mixed Reality 的設計目的是要與混合的現實運動控制器搭�
 
 ## <a name="pair-motion-controllers"></a>配對移動控制器
 
+如果您使用包含整合式藍牙控制器的耳機，例如 Samsung 電影對白 + 或 HP 回音，您的控制器應該已經配對。 但是您仍然可以使用「設定應用程式」來配對您的控制器 (在設定 HMD 時應該已安裝此應用程式。 您也可以從 Microsoft store) 取得。
+
+### <a name="pair-motion-controllers-to-hmd"></a>將移動控制器配對至 HMD
+
 藉由按下 [Windows] 按鈕2秒，讓控制器開啟，直到 Led 亮起為止。
 
 從您的控制器中移除電池蓋，然後在控制器邊緣找出小配對按鈕。 按住此按鈕以與您的電腦配對。
+    ![移動控制器配對](images/connect_controller.png)
 
-如果您使用的是 HP 的「回音」 G2 耳機，您的控制器應該已經配對。 但是，您可以使用「HP 回音」 VR 「設定」應用程式，將您的控制器配對 (它應該在安裝期間已經安裝。 您也可以從 Microsoft store) 取得。 此外，您可以藉由新增另一個藍牙裝置來將控制器配對至 PV：
+啟動已連線到耳機的 **混合實境入口** 。  
+在左下角選取 [...] **> 設定控制器**。
+依照畫面上的指示操作。
+
+### <a name="pair-motion-controllers-to-pc"></a>將移動控制器配對至電腦
+
+您可以藉由新增另一個藍牙裝置，將控制器配對至電腦。
+
+開啟控制器的電源，並將它們放入配對模式，如上所述。
 
 * 流覽至 [電腦設定]
 * 裝置/新增藍牙或其他裝置。
 
-![移動控制器配對](images/connect_controller.png)
-
-您可能會在螢幕的右下角看到一則訊息，因為控制器上的固件會更新。 當發生這種情況時，您可以前進到教學課程中的下一個步驟，但不要關閉控制器。
-
-控制器固件更新完成後，將會重新開機並重新連線至主機電腦。 Led 將呈穩固且亮亮。
+配對完成後，Led 將會呈穩固且亮亮。
 
 ### <a name="common-issues"></a>常見問題
 
@@ -94,7 +94,7 @@ Windows Mixed Reality 的設計目的是要與混合的現實運動控制器搭�
 |  若要執行此工作  |  運動控制器  | 遊戲台 | 滑鼠 + 鍵盤 |
 | --- | --- | --- | --- |
 | 傳送 | 按下操縱杆，然後將控制器指向您要前往的位置。 釋放操縱杆。 | 將左側的操縱杆向前按，然後查看您想要前往的位置。 釋放操縱杆。 | 按一下並按住右鍵，然後將滑鼠指向您要前往的位置。 放開按鈕。 |
-| Select | 指向控制器，然後提取觸發程式或按一下觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
+| 選取 | 指向控制器，然後提取觸發程式或按一下觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
 | 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按下 **Windows 標誌鍵**。 |
 | 離開沉浸式應用程式 | 按下 [ **Windows** ] 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ]。 | 按下 **Xbox** 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ] 按鈕。 | 按下 **Windows 標誌鍵**。然後，在顯示的 [快速動作] 功能表上選取 [ **混合現實首頁** ] 按鈕。 |
 | Rotate | 將操縱杆向左或向右移動。 | 將右邊的向左或向右移動。 | 不適用。 |
@@ -129,8 +129,8 @@ Windows Mixed Reality 的設計目的是要與混合的現實運動控制器搭�
 * 如果沉浸式耳機連接到您的電腦，且有新的控制器固件可供使用，則會在下一次開啟時自動將該固件推送到您的動作控制器。
 * 控制器固件更新會以一種顯示迴圈中的 LED 象限模式來表示，並花費1-2 分鐘。 固件更新有時可能需要較長的時間（最多10分鐘），這可能表示藍牙連線或無線電干擾不佳。
 * 如果固件更新中斷 (控制器電源關閉或電池) 將會在下一次開啟電源時再試一次。
-* 在固件更新完成後，控制器將會重新開機並重新連線。 
-* 這兩個控制器都應該立即連接。  (檢查藍牙和其他裝置的下列) ： ![連接的控制器](images/cyk-connected.jpg)
+* 在固件更新完成後，控制器將會重新開機並重新連線。
+* 這兩個控制器都應該立即連接。 流覽至混合實境入口以檢查控制器的狀態。
 * 確認您的控制器正常運作：
   * 啟動 **混合實境入口** ，然後輸入您的混合現實首頁。
   * 移動控制器並確認追蹤、測試按鈕，並確認遙傳可運作。 如果沒有，請查看 [[動作控制器疑難排解] 區段](motion-controller-problems.md)
@@ -155,4 +155,4 @@ Windows Mixed Reality 的設計目的是要與混合的現實運動控制器搭�
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
 * [疑難排解](troubleshooting-windows-mixed-reality.md)
 
-您的移動控制器有問題嗎？ [取得協助](using-wmr-faq.md#im-having-trouble-with-my-motion-controllers)
+您的移動控制器有問題嗎？ [取得協助](motion-controller-problems.md)

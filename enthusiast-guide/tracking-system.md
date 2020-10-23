@@ -3,12 +3,12 @@ title: 內外追蹤的運作方式
 description: Windows Mixed Reality 耳機中所使用之以相機為基礎之內部追蹤系統的相關資訊。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、內部、內部、追蹤、攝影機
-ms.openlocfilehash: a91b5fba399e9bb328fd579811a64aee03b49efd
-ms.sourcegitcommit: 5eb27475f8616c9d4f95b4b386a5bd0d22f41125
+ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/19/2020
-ms.locfileid: "92174339"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434603"
 ---
 # <a name="inside-out-tracking"></a>內部追蹤
 
@@ -72,6 +72,6 @@ Windows Mixed Reality 中的追蹤很容易使用。 不需要基礎結構或設
 
 ## <a name="see-also"></a>另請參閱
 * [追蹤系統疑難排解](tracking.md)
-* [運動控制器的運作方式](controller-in-wmr.md)
+* [運動控制器](controller-in-wmr.md)
 * [您的 Windows Mixed Reality 首頁](your-mixed-reality-home.md)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 在購買之前，Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、預先銷售、研究、購買
 appliesto:
 - Windows 10
-ms.openlocfilehash: de697bc7002ab342241acc2bdc989a3e1e397632
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293037"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434612"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -31,15 +31,11 @@ ms.locfileid: "92293037"
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>哪些製造商正在銷售 Windows Mixed Reality 裝置？
 
-**快速解答：** 耳機和移動控制器目前可從 Acer、ASUS、Samsung 和 HP 取得。 請參閱<https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**快速解答：** 耳機和移動控制器目前可從 HP 取得。 請參閱<https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>我可以在哪裡購買獨立的移動控制器？
 
 **快速解答：** 可惜的是，我們目前並不知道任何零售商銷售獨立的移動控制器。
-
-### <a name="what-is-the-price-point"></a>價格點為何？
-
-**快速解答：** 耳機和控制器定價依製造商和零售商而異。 請參閱 <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro> 目前從 Microsoft 銷售的混合現實裝置。
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality 電腦與 Windows Mixed Reality Ultra 電腦之間有何差異？
 
@@ -47,7 +43,7 @@ ms.locfileid: "92293037"
 
 ### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>當裝置看起來像是「虛擬實境」經驗時，為什麼這稱為「混合式事實」？
 
-**快速解答：** Mixed Reality 指的是完整的空間運算範圍，從增強的現實和全像是虛擬生活。 Microsofts Mixed Reality platform 支援虛擬實境和增強的事實。 我們目前在該頻譜上支援兩種具有類似技術的裝置類型： HoloLens (AR) 和 Windows Mixed Reality (的 VR) 耳機與移動控制器一起使用。
+**快速解答：** Mixed Reality 指的是完整的空間運算範圍，從增強的現實和全像是虛擬生活。 Windows Mixed Reality 平臺可支援跨虛擬實境的裝置 (VR) 和增強的現實 (AR) 。 我們目前在該頻譜上支援兩種具有類似技術的裝置類型： HoloLens (AR) 和 Windows Mixed Reality (的 VR) 耳機與移動控制器一起使用。
 
 在此深入瞭解混合現實： <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
@@ -61,7 +57,7 @@ ms.locfileid: "92293037"
 
 **快速解答：** 否，Windows Mixed Reality 耳機的內建攝影機僅用於位置追蹤。 Windows Mixed Reality 耳機是 pixels occluded 的，也就是說，它們是為了虛擬實境，並且不提供真實世界或增強現實的觀點。 
 
-### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>什麼是內部追蹤追蹤？ 它與外部追蹤或 Lighthouse 追蹤有何不同？
+### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>什麼是內部追蹤追蹤？ 它與外部追蹤或 lighthouse 追蹤有何不同？
 
 * **內部追蹤** Windows Mixed Reality 使用內出追蹤。 使用內建的追蹤攝影機內建在耳機中，並在環境中追蹤變更，以便在您四處移動時，判斷與環境相關的耳機位置。
 
@@ -71,7 +67,7 @@ ms.locfileid: "92293037"
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>由於攝影機 FOV，移動控制器的內部追蹤是否會影響遊戲的播放？
 
- 如同耳機，Windows Mixed Reality 的動作控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。 如果使用者將控制器移出耳機的觀賞欄位，在大部分情況下，Windows 會繼續推斷控制器位置，並將其提供給應用程式。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。 此時，系統會將控制器主體鎖定給使用者，在移動時追蹤使用者的位置，同時仍會使用其內部方向感應器來公開控制器的真實方向。 許多使用控制器來指向和啟動 UI 元素的應用程式，都可以正常運作，而不需要使用者注意。 若要瞭解這一點，最好的方法就是親自試試看。 請嘗試造訪您附近的 Microsoft store，並立即查看！ 在此同時，我們將提供一段影片，其中包含可在各種追蹤狀態中使用移動控制器的沉浸式內容範例：
+ 如同耳機，Windows Mixed Reality 的動作控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。 如果使用者將控制器移出耳機的觀賞欄位，在大部分情況下，Windows 會繼續推斷控制器位置，並將其提供給應用程式。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。 此時，系統會將控制器主體鎖定給使用者，在移動時追蹤使用者的位置，同時仍會使用其內部方向感應器來公開控制器的真實方向。 許多使用控制器來指向和啟動 UI 元素的應用程式，都可以正常運作，而不需要使用者注意。 若要瞭解這一點，最好的方法就是親自試試看。
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality 與 Samsung 齒輪 VR 有何不同？
 
@@ -85,7 +81,7 @@ ms.locfileid: "92293037"
 <table>
 <tr>
 <th style="width:25%"> Headset </th>
-<th style="width:15%"> 解決方法 </th>
+<th style="width:15%"> 解決方案 </th>
 <th style="width:10%"> 顯示 </th>
 <th style="width:10%"> 重新整理速率 </th>
 <th style="width:10%"> FOV </th>
@@ -315,7 +311,7 @@ ms.locfileid: "92293037"
 
 **快速解答：** Windows Mixed Reality 移動控制器使用藍牙。 根據耳機，移動控制器會與耳機上的藍牙無線電配對 (（如果配備) ），或電腦上的藍牙無線電。
 
-* 某些 Windows Mixed Reality 耳機，包括 Acer OJO 500、Samsung 電影對白 + 和 HP 的回音，內建的藍牙無線電波可搭配運動控制器使用。 隨附于這些耳機的移動控制器會預先配對至原廠的耳機，不需要您的電腦具有個別的藍牙無線電。
+* 某些 Windows Mixed Reality 耳機，包括 Acer OJO 500、Samsung 電影對白 +、HP 的回音，以及與運動控制器搭配使用的內建藍牙無線電功能。 隨附于這些耳機的移動控制器會預先配對至原廠的耳機，不需要您的電腦具有個別的藍牙無線電。
 * 其他 Windows Mixed Reality 耳機將必須與您電腦上的藍牙無線電配對。
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Windows Mixed Reality 耳機之間的 Windows Mixed Reality 動作控制器是否跨相容？

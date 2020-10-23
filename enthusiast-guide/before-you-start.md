@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、相容、相容性、入門、安裝程式、電腦、系統需求
 appliesto:
 - Windows 10
-ms.openlocfilehash: b10fc9962d899b0a2c2ee15e6d039fc6bfb6d503
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 84001a46826ada06e315f1707ee9516c3da063bd
+ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293061"
+ms.lasthandoff: 10/22/2020
+ms.locfileid: "92434568"
 ---
 # <a name="before-you-start"></a>在您開始使用 Intune 之前
 
@@ -35,10 +35,12 @@ ms.locfileid: "92293061"
 
 ## <a name="make-sure-you-have-the-windows-10-version-1709-or-newer-installed"></a>請確定您已安裝 Windows 10 1709 版或更新版本
 
-您必須執行 Windows 10 版本 1709 (「建立建立者」更新) 或更新版本，才能使用 Windows Mixed Reality。 Windows 10 的相容版本包括：
-* Windows 10 1709 版 (秋季建立者更新、組建 16299) 
-* Windows 10 1803 版 (春季 Update，組建 17134) 
-* Windows 10 1809 版 (10 月更新，組建 17763) 
+您必須執行 Windows 10 1903 版或更新版本，才能使用 Windows Mixed Reality。 Windows 10 的相容版本包括：
+
+* Windows 10 版本1903
+* Windows 10 版本1909
+* Windows 10 版本2004
+* Windows 10 版本20H2
 
 若要查看您的裝置目前執行的 Windows 10 版本，請選取 [ **開始** ] 按鈕，然後選取 [ **系統 > > 的設定**。
 
@@ -48,7 +50,7 @@ ms.locfileid: "92293061"
 
 ## <a name="make-sure-your-pc-is-connected-to-the-internet"></a>確定您的電腦已連線到網際網路
 
-檢查您的電腦是否已連線到網際網路。 您將需要下載驅動程式和一些額外的軟體，才能讓 Windows Mixed Reality 啟動並執行。  如果您的 Wi-Fi 網路連線設定為 [計量付費]，請將其變更為 [未計量]。 [深入了解](https://support.microsoft.com/en-us/help/4028458/windows-metered-connections-in-windows-10)。
+檢查您的電腦是否已連線到網際網路。 您將需要下載驅動程式和一些額外的軟體，才能讓 Windows Mixed Reality 啟動並執行。
 
 ## <a name="make-sure-you-have-a-compatible-graphics-driver"></a>確定您有相容的圖形驅動程式
 
@@ -69,10 +71,6 @@ ms.locfileid: "92293061"
 ## <a name="make-sure-that-you-have-input-devices"></a>請確定您有輸入裝置
 
 Windows Mixed Reality 的設計最適合搭配 Windows Mixed Reality 的動作控制器使用，可提供自然、精確的互動，而不需要在您的牆上安裝硬體。 但是您也可以使用 Xbox 控制器或滑鼠和鍵盤。
-
-## <a name="get-headphones-if-your-headset-didnt-come-with-them"></a>如果您的耳機未隨附耳機，請取得耳機
-
-除非您購買了 Samsung HMD 電影對白、HP 回音或 (HP 吐，且已整合 AKG 耳機和整合的雙重陣列麥克風) ，否則您將需要取得一組耳機的音訊耳機，以插入 HMD 的 headset's 3.5 mm 音訊插孔。
 
 ## <a name="make-sure-that-you-have-a-large-open-space"></a>確定您有很大的開放空間
 
