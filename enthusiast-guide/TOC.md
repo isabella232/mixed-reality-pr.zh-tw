@@ -16,14 +16,14 @@
 ### [Windows Mixed Reality 設定常見問題集](wmr-setup-faq.md)
 
 ## 使用 Windows Mixed Reality
-### [學習混合實境](learn-mixed-reality.md)
-### [您的 Windows Mixed Reality 首頁](your-mixed-reality-home.md)
+### [混合實境的學習體驗](learn-mixed-reality.md)
+### [您的混合實境首頁](your-mixed-reality-home.md)
 ### [Windows Mixed Reality 中的控制器](controllers-in-wmr.md)
 ### [使用語音輸入](using-speech-in-wmr.md)
-### [遊戲、360 度影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
-### [SteamVR](using-steamvr-with-windows-mixed-reality.md)
-### [使用 Microsoft Edge](using-microsoft-edge.md)  
-### [WebVR](webvr.md)
+### [使用遊戲、360 度影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
+### [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md)
+### [使用 Microsoft Edge](using-microsoft-edge.md)
+### [什麼是 WebVR](webvr.md)
 ### [使用 Windows Mixed Reality 常見問題集](using-wmr-faq.md)
 
 ## 針對常見問題進行疑難排解
