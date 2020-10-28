@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散佈, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本概念, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動
-ms.openlocfilehash: 947d9378cd65ceda11cf5dbb1d103a8f9bcc6e63
-ms.sourcegitcommit: 8aa3b0034f9f2ff0973d49061c669a82c2c8d7e6
+ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
+ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/14/2020
-ms.locfileid: "92058582"
+ms.lasthandoff: 10/21/2020
+ms.locfileid: "92293124"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型
 
@@ -32,9 +32,9 @@ ms.locfileid: "92058582"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [展開您的設計程序](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | 親自了解 Microsoft 內部和外部的混合實境開發人員收集到的方法、深入解析和設計理論 |
+| [展開您的設計程序](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | 從 Microsoft 內部和外部的設計師收集有關混合實境的設計過程第一手資料 |
 | [混合實境應用程式的類型](types-of-mixed-reality-apps.md) | 決定您的應用程式體驗在混合實境頻譜上的位置 |
-| [Designing Holograms 應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 深入了解混合實境 UX 設計的基本概念，方法是探討如何建立絕佳的 HoloLens 應用程式的混合實境行為、秘訣和建議 |
+| [Designing Holograms 應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 深入了解混合實境 UX 設計的基本概念，方法是探討如何建立絕佳的 HoloLens 應用程式 (可從 HoloLens 2 的 Microsoft Store 下載) 的混合實境行為、秘訣和建議 |
 
 ### <a name="2-core-concepts"></a>2.核心概念
 
@@ -46,7 +46,7 @@ ms.locfileid: "92058582"
 | --- | --- |
 | [全像攝影框架](holographic-frame.md) | 了解使用者在配戴頭戴式裝置看您覆疊在實際環境上的內容時，是什麼情形 |
 | [座標系統](coordinate-systems.md) | 了解如何將全像投影放置在世界上對使用者有意義的地方，不論是他們所在的實際空間或您所建立的虛擬領域 |
-| [空間對應](spatial-mapping.md) | 錨定使用者世界中的物件，並利用真實世界的深度提示 |
+| [空間對應](spatial-mapping.md) | 錨定使用者世界中的物件，並利用真實世界的實體介面 |
 | [舒適度考量](comfort.md) | 以模仿自然環境的方式建立和呈現沉浸式內容，以確保使用者的舒適度和安全性 |
 
 ### <a name="3-interaction-design"></a>3.互動設計
