@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: b9b9d46e2ab71fa90960e403ceac94b95ba01440
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 75d8ade12d5534a1eb86f36bcdd590539a6811b5
+ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293072"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92683174"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中取得電腦相容性的協助
 
@@ -41,11 +41,11 @@ ms.locfileid: "92293072"
 
 ### <a name="this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link"></a>這部電腦具有混合式圖形設定與不相容的 PCIe 連結
 
-PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器通訊的連接。 您的設定可能會運作，但如果遇到問題，您必須切換到 [相容的電腦](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。
+PCIe 代表 *周邊元件連接 Express* 。 這是電腦用來與圖形配接器通訊的連接。 您的設定可能會運作，但如果遇到問題，您必須切換到 [相容的電腦](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。
 
 ### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>此電腦的圖形驅動程式可能無法搭配 Windows Mixed Reality
 
-如果您遇到問題，請嘗試使用 Windows Update 下載新的圖形驅動程式 (**啟動 > 設定 > 更新 & 安全性 > 檢查更新**) -或移至您的電腦製造商或圖形配接器製造商的網站。
+如果您遇到問題，請嘗試使用 Windows Update 下載新的圖形驅動程式 ( **啟動 > 設定 > 更新 & 安全性 > 檢查更新** ) -或移至您的電腦製造商或圖形配接器製造商的網站。
 
 > [!div class="nextstepaction"]
 > [檢查更新](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -63,10 +63,10 @@ PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器
 * 將您的耳機插入不同的 USB 埠（如果有的話）。
 * 如果無法運作，請將您電腦的目前 USB 驅動程式卸載，然後重新安裝 Microsoft 驅動程式：
 
-1. 選取 [開始]，然後在 [**搜尋**] 方塊中輸入「裝置管理員 **」**。
+1. 選取 [開始]，然後在 [ **搜尋** ] 方塊中輸入「裝置管理員 **」** 。
 2. 從結果中選取 [ **裝置管理員** ]。
 3. 展開 [通用序列匯流排控制器] 的類別，查看列出的裝置，然後卸載任何不相容的驅動程式。
-    * 如果清單中包含「可延伸的主機控制器」專案，且該專案在裝置名稱的結尾沒有「Microsoft」，則該驅動程式與 Windows Mixed Reality 不相容。 您必須將它卸載。 若要卸載驅動程式，請在清單中的裝置上按一下滑鼠右鍵，然後選取 [ **卸載裝置**]。 選取 [ **刪除此裝置的驅動程式軟體** ] 核取方塊，然後選取 [ **卸載**]。
+    * 如果清單中包含「可延伸的主機控制器」專案，且該專案在裝置名稱的結尾沒有「Microsoft」，則該驅動程式與 Windows Mixed Reality 不相容。 您必須將它卸載。 若要卸載驅動程式，請在清單中的裝置上按一下滑鼠右鍵，然後選取 [ **卸載裝置** ]。 選取 [ **刪除此裝置的驅動程式軟體** ] 核取方塊，然後選取 [ **卸載** ]。
     * 如果清單包含名稱中包含 "Etron" 的「可延伸主機控制器」專案，表示該 USB 控制器與 Windows Mixed Reality 不相容。 您必須在電腦上使用不同的 USB 埠，或購買不同的 USB 3.0 主機控制器。
 4. 重新啟動電腦。
 5. 返回裝置管理員，然後再次找出可延伸的主機控制器專案。 如果您現在在裝置名稱的結尾看到「Microsoft」，您就可以開始了。 如果沒有，請重複執行卸載步驟，以移除任何其他非 Microsoft 版本的驅動程式。
@@ -99,7 +99,7 @@ PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器
 
 ### <a name="this-pcs-graphics-driver-wont-work-with-windows-mixed-reality"></a>這部電腦的圖形驅動程式無法使用 Windows Mixed Reality
 
-此電腦的圖形驅動程式無法搭配 Windows Mixed Reality 使用。 請嘗試使用 Windows Update 下載新的圖形驅動程式 (**開始 > 設定 > 更新 & 安全性 > 檢查更新**) -或移至您的電腦製造商或圖形配接器製造商的網站。 
+此電腦的圖形驅動程式無法搭配 Windows Mixed Reality 使用。 請嘗試使用 Windows Update 下載新的圖形驅動程式 ( **開始 > 設定 > 更新 & 安全性 > 檢查更新** ) -或移至您的電腦製造商或圖形配接器製造商的網站。 
 
 > [!div class="nextstepaction"]
 > [檢查更新](ms-settings:windowsupdate?activationSource=SMC-Article-4045777)
@@ -108,7 +108,7 @@ PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器
 
 ### <a name="this-pcs-processor-wont-work-with-windows-mixed-reality"></a>此電腦的處理器無法搭配 Windows Mixed Reality
 
-此電腦的處理器不會 supprot AVX/Popcnt 指令。 若要執行 Windows Mixed Reality，您必須將它取代為 [相容的圖形配接器](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ，或切換至 [相容的電腦](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。
+此電腦的處理器不支援 AVX/Popcnt 指示。 若要執行 Windows Mixed Reality，您必須將它取代為 [相容的圖形配接器](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md#compatibility-guidelines) ，或切換至 [相容的電腦](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。
 
 ### <a name="this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality"></a>這部電腦沒有足夠的可用磁碟空間來執行 Windows Mixed Reality
 
@@ -142,7 +142,7 @@ Windows Mixed Reality 需要 Windows 10 Fall Creators Update。 請[更新您的
 > [!NOTE]
 > 如果您看到一則訊息，指出「此硬體設定可能與 Windows Mixed Reality 搭配運作，但尚未經過測試」，您可能會在執行長時間的 Windows Mixed Reality 時遇到一些效能問題。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
