@@ -13,6 +13,6 @@ ms.contentlocale: zh-TW
 ms.lasthandoff: 10/27/2020
 ms.locfileid: "92638515"
 ---
-# <a name="distribution-overview"></a><span data-ttu-id="07193-104">散發總覽</span><span class="sxs-lookup"><span data-stu-id="07193-104">Distribution overview</span></span>
+# <a name="distribution-overview"></a><span data-ttu-id="030c0-104">散發總覽</span><span class="sxs-lookup"><span data-stu-id="030c0-104">Distribution overview</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="07193-105">另請參閱</span><span class="sxs-lookup"><span data-stu-id="07193-105">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="030c0-105">另請參閱</span><span class="sxs-lookup"><span data-stu-id="030c0-105">See also</span></span>
