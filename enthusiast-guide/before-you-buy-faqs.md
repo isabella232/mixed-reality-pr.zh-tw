@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 在購買之前，Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、預先銷售、研究、購買
 appliesto:
 - Windows 10
-ms.openlocfilehash: b665d0d84f511ae5e6383c5d4b5aadea400b2033
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: a38b6ed8625fbb419ad24f2e27acec881d7b85a7
+ms.sourcegitcommit: ea7d806c9aa88d1295493a25f47e58bb72a4000a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434612"
+ms.lasthandoff: 10/28/2020
+ms.locfileid: "92907440"
 ---
 # <a name="frequently-asked-questions"></a>常見問題集
 
@@ -21,17 +21,17 @@ ms.locfileid: "92434612"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>我可以在哪裡購買 Windows Mixed Reality ready 的電腦或耳機？
 
-**快速解答：** 您可以在核准的當地零售商或從各種零售商（包括 Microsoft Store）線上購買 Windows Mixed Reality ready 的電腦或耳機。 尋找 Windows Mixed Reality ready PC 或線上耳機： <https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**快速解答：** 您可以在核准的當地零售商或從各種零售商（包括 Microsoft Store）線上購買 Windows Mixed Reality ready 的電腦或耳機。 尋找 Windows Mixed Reality ready PC 或線上耳機： <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>我可以在哪裡嘗試 Windows Mixed Reality？
 
-**快速解答：** 您可以在您附近的 [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) 嘗試 Windows Mixed Reality。  
-* 尋找您當地的 Microsoft Reactor： <https://www.microsoft.com/en-us/store/locations/all-locations>
+**快速解答：** 您可以在您附近的 [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) 嘗試 Windows Mixed Reality。
+
 * 在 Meetup.com 上尋找 Microsoft Reactor 活動： <https://www.meetup.com/pro/microsoft-reactor>
 
 ### <a name="which-manufacturers-are-selling-windows-mixed-reality-devices"></a>哪些製造商正在銷售 Windows Mixed Reality 裝置？
 
-**快速解答：** 耳機和移動控制器目前可從 HP 取得。 請參閱<https://www.microsoft.com/en-us/mixed-reality/windows-mixed-reality?icid=ARVRcat_Feature1_WMRIntro>
+**快速解答：** 耳機和移動控制器目前可從 HP 取得。 請參閱<https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-buy-standalone-motion-controllers"></a>我可以在哪裡購買獨立的移動控制器？
 
@@ -51,7 +51,7 @@ ms.locfileid: "92434612"
 
 **快速解答：** Windows Mixed Reality 耳機功能 (追蹤攝影機位於耳機) ，以及 Windows 10 的隨插即用安裝。
 
-**更多詳細資料**： Windows Mixed Reality 提供數個功能，包括簡單的安裝 (不需要外部感應器來追蹤您和控制器) 、您所選擇的耳機可符合您的舒適和價位、具有競爭解決方案的耳機，最後是一種獨特的使用者體驗，其中有提供空間介面，可讓您從 Microsoft Store 使用數以千計的應用程式。
+**更多詳細資料** ： Windows Mixed Reality 提供數個功能，包括簡單的安裝 (不需要外部感應器來追蹤您和控制器) 、您所選擇的耳機可符合您的舒適和價位、具有競爭解決方案的耳機，最後是一種獨特的使用者體驗，其中有提供空間介面，可讓您從 Microsoft Store 使用數以千計的應用程式。
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>混合的現實表示內部攝影機是否通過？ 除了虛擬實境之外，您還可以體驗增強的現實嗎？
 
@@ -257,7 +257,7 @@ ms.locfileid: "92434612"
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Mixed reality 耳機有 IPD 調整嗎？
 
-**快速解答：** 根據耳機，某些混合現實耳機功能機械 IPD 調整。 其他耳機功能軟體 IPD 調整，可根據您的 IPD 改善影像失真和深度精確度。 使用者可以透過 [設定] **> 混合現實 > 耳機顯示 > 校正**來設定其自訂 IPD。
+**快速解答：** 根據耳機，某些混合現實耳機功能機械 IPD 調整。 其他耳機功能軟體 IPD 調整，可根據您的 IPD 改善影像失真和深度精確度。 使用者可以透過 [設定] **> 混合現實 > 耳機顯示 > 校正** 來設定其自訂 IPD。
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>混合現實耳機有眼睛的調整嗎？
 
