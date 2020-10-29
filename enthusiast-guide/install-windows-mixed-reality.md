@@ -8,14 +8,17 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，入門，設定，混合實境入口
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5e04f29f834b2220f51f1748aa59e4188d8ad38d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680685"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915563"
 ---
 # <a name="install-windows-mixed-reality-software"></a>安裝 Windows Mixed Reality 軟體
+
+> [!div class="nextstepaction"]
+> [取得混合實境入口](https://www.microsoft.com/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)
 
 ## <a name="launch-mixed-reality-portal"></a>啟動混合實境入口
 
