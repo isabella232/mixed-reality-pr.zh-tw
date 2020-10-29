@@ -1,0 +1,68 @@
+---
+title: Unity 中的焦點
+description: 藉由設定焦點點，在 Unity 中手動調整全息圖穩定性
+author: thetuvix
+ms.author: alexturn
+ms.date: 03/21/2018
+ms.topic: article
+keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區
+ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91676914"
+---
+# <a name="focus-point-in-unity"></a><span data-ttu-id="66b26-104">Unity 中的焦點</span><span class="sxs-lookup"><span data-stu-id="66b26-104">Focus point in Unity</span></span>
+
+<span data-ttu-id="66b26-105">**命名空間：** *UnityEngine. XR*</span><span class="sxs-lookup"><span data-stu-id="66b26-105">**Namespace:** *UnityEngine.XR.WSA*</span></span><br>
+<span data-ttu-id="66b26-106">**類型** ： *HolographicSettings*</span><span class="sxs-lookup"><span data-stu-id="66b26-106">**Type** : *HolographicSettings*</span></span>
+
+<span data-ttu-id="66b26-107">您可以設定 [焦點點](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 來提供 HoloLens 提示，以提供有關如何在目前顯示的全像上執行穩定的提示。</span><span class="sxs-lookup"><span data-stu-id="66b26-107">The [focus point](../platform-capabilities-and-apis/hologram-stability.md#reprojection) can be set to provide HoloLens a hint about how to best perform stabilization on the holograms currently being displayed.</span></span>
+
+<span data-ttu-id="66b26-108">如果您想要在 Unity 中設定焦點點，則必須使用 *HolographicSettings. SetFocusPointForFrame ( # B1* 來設定每個框架。</span><span class="sxs-lookup"><span data-stu-id="66b26-108">If you want to set the Focus Point in Unity, it needs to be set every frame using *HolographicSettings.SetFocusPointForFrame()* .</span></span> <span data-ttu-id="66b26-109">如果未設定框架的焦點點，則會使用預設穩定平面。</span><span class="sxs-lookup"><span data-stu-id="66b26-109">If the Focus Point is not set for a frame, the default stabilization plane will be used.</span></span>
+
+> [!NOTE]
+> <span data-ttu-id="66b26-110">依預設，新的 Unity 專案會設定「啟用深度緩衝區共用」選項。</span><span class="sxs-lookup"><span data-stu-id="66b26-110">By default, new Unity projects have the "Enable Depth Buffer Sharing" option set.</span></span>  <span data-ttu-id="66b26-111">使用此選項時，在沉浸式桌上型耳機或執行 Windows 10 2018 年4月更新 (RS4) 或更新版本的 HoloLens 上執行的 Unity 應用程式，會將您的深度緩衝區提交至 Windows，以自動優化全像影像穩定性，而不需要您的應用程式指定焦點點：</span><span class="sxs-lookup"><span data-stu-id="66b26-111">With this option, a Unity app running on either an immersive desktop headset or a HoloLens running the Windows 10 April 2018 Update (RS4) or later will submit your depth buffer to Windows to optimize hologram stability automatically, without your app specifying a focus point:</span></span>
+> * <span data-ttu-id="66b26-112">在沉浸式桌面耳機上，這會啟用依圖元深度為基礎的 reprojection。</span><span class="sxs-lookup"><span data-stu-id="66b26-112">On an immersive desktop headset, this will enable per-pixel depth-based reprojection.</span></span>
+> * <span data-ttu-id="66b26-113">在執行 Windows 10 2018 年4月更新或更新版本的 HoloLens 上，這會分析深度緩衝區以自動挑選最佳的穩定平面。</span><span class="sxs-lookup"><span data-stu-id="66b26-113">On a HoloLens running the Windows 10 April 2018 Update or later, this will analyze the depth buffer to pick an optimal stabilization plane automatically.</span></span>
+>
+> <span data-ttu-id="66b26-114">這兩種方法都應提供更佳的影像品質，而不會讓您的應用程式明確地為每個畫面格選取焦點點。</span><span class="sxs-lookup"><span data-stu-id="66b26-114">Either approach should provide even better image quality without explicit work by your app to select a focus point for each frame.</span></span>  <span data-ttu-id="66b26-115">請注意，如果您要以手動方式提供焦點，這將會覆寫上述的自動行為，而且通常會減少全像全像全像是。</span><span class="sxs-lookup"><span data-stu-id="66b26-115">Note that if you do provide a focus point manually, that will override the automatic behavior described above, and will usually reduce hologram stability.</span></span>  <span data-ttu-id="66b26-116">一般而言，當您的應用程式是在尚未更新為 Windows 10 2018 年4月更新的 HoloLens 上執行時，您應該只指定手動焦點點。</span><span class="sxs-lookup"><span data-stu-id="66b26-116">Generally, you should only specify a manual focus point when your app is running on a HoloLens that has not yet been updated to the Windows 10 April 2018 Update.</span></span>
+
+### <a name="example"></a><span data-ttu-id="66b26-117">範例</span><span class="sxs-lookup"><span data-stu-id="66b26-117">Example</span></span>
+
+<span data-ttu-id="66b26-118">有許多方式可以設定焦點點，如 *SetFocusPointForFrame* 靜態函式上提供的多載所建議。</span><span class="sxs-lookup"><span data-stu-id="66b26-118">There are many ways to set the Focus Point, as suggested by the overloads available on the *SetFocusPointForFrame* static function.</span></span> <span data-ttu-id="66b26-119">以下是一個簡單的範例，可將焦點平面設定為每個框架所提供的物件：</span><span class="sxs-lookup"><span data-stu-id="66b26-119">Presented below is a simple example to set the focus plane to the provided object for each frame:</span></span>
+
+```cs
+public GameObject focusedObject;
+void Update()
+{
+    // Normally the normal is best set to be the opposite of the main camera's
+    // forward vector.
+    // If the content is actually all on a plane (like text), set the normal to
+    // the normal of the plane and ensure the user does not pass through the
+    // plane.
+    var normal = -Camera.main.transform.forward;     
+    var position = focusedObject.transform.position;
+    UnityEngine.XR.WSA.HolographicSettings.SetFocusPointForFrame(position, normal);
+}
+```
+
+<span data-ttu-id="66b26-120">請注意，上述的簡單程式碼可能會在焦點物件最後成為使用者的背後時，減少全像影像的穩定性。</span><span class="sxs-lookup"><span data-stu-id="66b26-120">Note that the simple code above may end up reducing hologram stability if the focused object ends up behind the user.</span></span>  <span data-ttu-id="66b26-121">這就是為什麼您通常應該設定「啟用深度緩衝區共用」，而不是以手動方式指定焦點點。</span><span class="sxs-lookup"><span data-stu-id="66b26-121">This is why you should generally set "Enable Depth Buffer Sharing" instead of manually specifying a focus point.</span></span>
+
+## <a name="next-development-checkpoint"></a><span data-ttu-id="66b26-122">下一個開發檢查點</span><span class="sxs-lookup"><span data-stu-id="66b26-122">Next Development Checkpoint</span></span>
+
+<span data-ttu-id="66b26-123">如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。</span><span class="sxs-lookup"><span data-stu-id="66b26-123">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the Mixed Reality platform capabilities and APIs.</span></span> <span data-ttu-id="66b26-124">您可以從這裡繼續進行下一個主題：</span><span class="sxs-lookup"><span data-stu-id="66b26-124">From here, you can proceed to the next topic:</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="66b26-125">追蹤遺失</span><span class="sxs-lookup"><span data-stu-id="66b26-125">Tracking loss</span></span>](tracking-loss-in-unity.md)
+
+<span data-ttu-id="66b26-126">或直接跳到在裝置或模擬器上部署您的應用程式：</span><span class="sxs-lookup"><span data-stu-id="66b26-126">Or jump directly to deploying your app on a device or emulator:</span></span>
+
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="66b26-127">部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機</span><span class="sxs-lookup"><span data-stu-id="66b26-127">Deploy to HoloLens or Windows Mixed Reality immersive headsets</span></span>](../platform-capabilities-and-apis/using-visual-studio.md)
+
+<span data-ttu-id="66b26-128">您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis) 。</span><span class="sxs-lookup"><span data-stu-id="66b26-128">You can always go back to the [Unity development checkpoints](unity-development-overview.md#3-platform-capabilities-and-apis) at any time.</span></span>
+
+### <a name="see-also"></a><span data-ttu-id="66b26-129">另請參閱</span><span class="sxs-lookup"><span data-stu-id="66b26-129">See also</span></span>
+* [<span data-ttu-id="66b26-130">穩定平面</span><span class="sxs-lookup"><span data-stu-id="66b26-130">Stabilization plane</span></span>](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

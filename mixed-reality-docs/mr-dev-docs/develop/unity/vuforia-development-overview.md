@@ -1,0 +1,115 @@
+---
+title: 使用 Unity 的 Vuforia
+description: 利用 Vuforia 在 Unity 中建立 Windows Mixed Reality 應用程式。
+author: thetuvix
+ms.author: alexturn
+ms.date: 12/20/2019
+ms.topic: article
+keywords: Vuforia、標記、座標、參考的框架、追蹤
+ms.openlocfilehash: 270588bb317b0c083500dfaaca80c075a35410b9
+ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 10/03/2020
+ms.locfileid: "91680604"
+---
+# <a name="using-vuforia-engine-with-unity"></a><span data-ttu-id="63e71-104">搭配使用 Vuforia 引擎與 Unity</span><span class="sxs-lookup"><span data-stu-id="63e71-104">Using Vuforia Engine with Unity</span></span>
+
+<span data-ttu-id="63e71-105">Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗連接到環境中特定映射和物件的能力。</span><span class="sxs-lookup"><span data-stu-id="63e71-105">Vuforia Engine brings an important capability to HoloLens – the power to connect AR experiences to specific images and objects in the environment.</span></span> <span data-ttu-id="63e71-106">您可以使用這項功能，在產業企業的機械上重迭引導式逐步指示，或將數位功能和體驗新增至實體產品或遊戲。</span><span class="sxs-lookup"><span data-stu-id="63e71-106">You can use this capability to overlay guided step-by-step instructions on top of machinery for the industrial enterprise or add digital features and experiences to a physical product or game.</span></span>
+
+<span data-ttu-id="63e71-107">為了在開發 AR 體驗時有更大的彈性，Vuforia 引擎提供廣泛的功能和目標。</span><span class="sxs-lookup"><span data-stu-id="63e71-107">For greater flexibility when developing AR experiences, Vuforia Engine offers a broad range of features and targets.</span></span> <span data-ttu-id="63e71-108">其中一項最新的功能 Vuforia 模型目標，是商業和產業使用的主要功能。</span><span class="sxs-lookup"><span data-stu-id="63e71-108">One of our newest features, Vuforia Model Targets, is a key capability for both commercial and industrial uses.</span></span> <span data-ttu-id="63e71-109">模型目標可讓應用程式辨識實體物件（例如機器、汽車或玩具），並根據 CAD 或數位3D 模型來進行追蹤。</span><span class="sxs-lookup"><span data-stu-id="63e71-109">Model Targets allow applications to recognize physical objects like machines, automobiles or toys and track them based on a CAD or digital 3D model.</span></span> <span data-ttu-id="63e71-110">針對產業用途，這項功能可以提供元件工作者和服務技術人員使用 AR 工作指示，以及在工廠或在現場推出的程式指引。</span><span class="sxs-lookup"><span data-stu-id="63e71-110">For industrial uses, this feature can provide assembly workers and service technicians with AR work instructions and procedural guidance while in the factory or out in the field.</span></span>
+
+<span data-ttu-id="63e71-111">您可以輕鬆地在 Unity 中設定適用于手機和平板電腦的現有 Vuforia 引擎應用程式，以在 HoloLens 上執行。</span><span class="sxs-lookup"><span data-stu-id="63e71-111">Existing Vuforia Engine apps that were built for phones and tablets can easily be configured in Unity to run on HoloLens.</span></span> <span data-ttu-id="63e71-112">您甚至可以使用 Vuforia 引擎讓新的 HoloLens 應用程式 Windows 10 平板電腦，例如 Surface Pro 和 Surface Book。</span><span class="sxs-lookup"><span data-stu-id="63e71-112">You can even use Vuforia Engine to take your new HoloLens app to Windows 10 tablets such as the Surface Pro and Surface Book.</span></span>
+
+
+## <a name="get-the-tools"></a><span data-ttu-id="63e71-113">取得工具</span><span class="sxs-lookup"><span data-stu-id="63e71-113">Get the tools</span></span>
+
+<span data-ttu-id="63e71-114">[安裝建議](../install-the-tools.md) 的 Visual Studio 和 unity 版本，然後設定 Unity 以使用 Visual Studio 和慣用的 IDE 和編譯器。</span><span class="sxs-lookup"><span data-stu-id="63e71-114">[Install the recommended versions](../install-the-tools.md) of Visual Studio and Unity and then configure Unity to use Visual Studio and the preferred IDE and compiler.</span></span> 
+
+<span data-ttu-id="63e71-115">安裝 Unity 時，請務必安裝「Windows Store IL2CPP 腳本後端」。</span><span class="sxs-lookup"><span data-stu-id="63e71-115">When installing Unity, be sure to install the “Windows Store IL2CPP Scripting Backend”.</span></span>
+
+<span data-ttu-id="63e71-116">新增 Vuforia 引擎封裝[，如下所述。](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/vuforia-engine-package-hosting-for-unity.html)</span><span class="sxs-lookup"><span data-stu-id="63e71-116">Add the Vuforia Engine package as described [here.](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/vuforia-engine-package-hosting-for-unity.html).</span></span>
+
+## <a name="getting-started-with-vuforia-engine"></a><span data-ttu-id="63e71-117">開始使用 Vuforia 引擎</span><span class="sxs-lookup"><span data-stu-id="63e71-117">Getting started with Vuforia Engine</span></span>
+
+<span data-ttu-id="63e71-118">若要瞭解如何搭配使用 Vuforia 引擎與 HoloLens，最好的起點是 [Vuforia Engine HoloLens 範例](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (可在 Unity 資產存放區) 取得。</span><span class="sxs-lookup"><span data-stu-id="63e71-118">The best starting point for learning about using Vuforia Engine with HoloLens is with the [Vuforia Engine HoloLens sample](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (available in the Unity Asset Store).</span></span> <span data-ttu-id="63e71-119">此範例會提供完整的 HoloLens 專案，包括可部署到 HoloLens 的預先設定場景。</span><span class="sxs-lookup"><span data-stu-id="63e71-119">The sample provides a complete HoloLens project including pre-configured scenes that can be deployed to a HoloLens.</span></span>
+
+<span data-ttu-id="63e71-120">幕後顯示如何使用 Vuforia 映射目標來辨識影像，並使用 HoloLens 體驗中的數位內容加以增強。</span><span class="sxs-lookup"><span data-stu-id="63e71-120">The scenes show how to use Vuforia Image Targets to recognize an image and augment it with digital content in a HoloLens experience.</span></span> <span data-ttu-id="63e71-121">Vuforia 引擎 Hololens 範例也包含場景，顯示模型目標的使用量和 HoloLens 上的 VuMarks。</span><span class="sxs-lookup"><span data-stu-id="63e71-121">The Vuforia Engine Hololens Sample also includes a scene showing the usage of Model Targets and VuMarks on HoloLens.</span></span> <span data-ttu-id="63e71-122">您可以輕鬆地在幕後取代您自己的內容，以試驗如何建立使用 Vuforia 引擎的 HoloLens 應用程式。</span><span class="sxs-lookup"><span data-stu-id="63e71-122">You can easily substitute your own content in the scenes to experiment with the creation of HoloLens apps that use Vuforia Engine.</span></span>
+
+
+
+## <a name="configuring-a-vuforia-app-for-hololens"></a><span data-ttu-id="63e71-123">設定適用于 HoloLens 的 Vuforia 應用程式</span><span class="sxs-lookup"><span data-stu-id="63e71-123">Configuring a Vuforia App for HoloLens</span></span>
+
+<span data-ttu-id="63e71-124">開發適用于 HoloLens 的 Vuforia 引擎應用程式基本上與為其他裝置開發 Vuforia 引擎應用程式相同。</span><span class="sxs-lookup"><span data-stu-id="63e71-124">Developing a Vuforia Engine app for HoloLens is fundamentally the same as developing Vuforia Engine apps for other devices.</span></span> <span data-ttu-id="63e71-125">接著，您可以套用組建設定和設定，如下一節所述。</span><span class="sxs-lookup"><span data-stu-id="63e71-125">You can then apply the build settings and configurations described in the section below.</span></span> <span data-ttu-id="63e71-126">這就是讓 Vuforia 引擎使用 HoloLens 空間對應和位置追蹤系統所需的一切。</span><span class="sxs-lookup"><span data-stu-id="63e71-126">That’s all that’s needed to enable Vuforia Engine to work with the HoloLens spatial mapping and positional tracking systems.</span></span>
+
+## <a name="build-and-run-the-vuforia-engine-sample-for-hololens"></a><span data-ttu-id="63e71-127">建立並執行 HoloLens 的 Vuforia 引擎範例</span><span class="sxs-lookup"><span data-stu-id="63e71-127">Build and Run the Vuforia Engine Sample for HoloLens</span></span>
+1.  <span data-ttu-id="63e71-128">從 Unity 資產存放區下載[HoloLens 的 Vuforia 引擎範例](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553)</span><span class="sxs-lookup"><span data-stu-id="63e71-128">Download the [Vuforia Engine Sample for HoloLens](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) from the Unity Asset Store</span></span>
+2.  <span data-ttu-id="63e71-129">套用適用于 [電源和效能的建議 Unity 引擎選項](performance-recommendations-for-unity.md)</span><span class="sxs-lookup"><span data-stu-id="63e71-129">Apply the [recommended Unity engine options for power and performance](performance-recommendations-for-unity.md)</span></span>
+3.  <span data-ttu-id="63e71-130">將範例場景新增至組建中的 **場景** **。**</span><span class="sxs-lookup"><span data-stu-id="63e71-130">Add the sample scenes to **Scenes** in **Build.**</span></span>
+4.  <span data-ttu-id="63e71-131">在 [ **組建設定** ] 中，按一下 [ **新增開啟場景** ] 按鈕，將組建平臺切換至 **UWP** 。</span><span class="sxs-lookup"><span data-stu-id="63e71-131">In **Build Settings** , switch build platform to **UWP** by clicking the **Add Open Scenes** button.</span></span>
+<span data-ttu-id="63e71-132">![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)</span><span class="sxs-lookup"><span data-stu-id="63e71-132">![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)</span></span>
+5.  <span data-ttu-id="63e71-133">按一下 [ **播放機設定** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="63e71-133">Click the **Player Settings** button.</span></span>  
+   * <span data-ttu-id="63e71-134">選取 **UWP** 圖示並展開 [ **XR 設定** ] 區段。</span><span class="sxs-lookup"><span data-stu-id="63e71-134">Select the **UWP** icon and expand the **XR Settings** section.</span></span>
+   * <span data-ttu-id="63e71-135">確定已啟用 **支援的虛擬事實** 。</span><span class="sxs-lookup"><span data-stu-id="63e71-135">Ensure that **Virtual Reality Supported** is enabled.</span></span>    
+   * <span data-ttu-id="63e71-136">在 **虛擬實境 sdk** 下，確定：</span><span class="sxs-lookup"><span data-stu-id="63e71-136">Under **Virtual Reality SDKs** ensure that:</span></span>
+     * <span data-ttu-id="63e71-137">**視窗混合的現實** 會包含在清單中，並啟用 **深度緩衝區** 共用。</span><span class="sxs-lookup"><span data-stu-id="63e71-137">**Window Mixed Reality** is included in the list and that **Enable Depth Buffer** Sharing is enabled.</span></span> 
+     * <span data-ttu-id="63e71-138">**深度格式** 會設定為 **16 位的深度。**</span><span class="sxs-lookup"><span data-stu-id="63e71-138">The **Depth Format** is set to **16-bit depth.**</span></span> 
+   * <span data-ttu-id="63e71-139">確定身歷聲轉譯 **模式** 設定為 [ **單一傳遞實例]。**</span><span class="sxs-lookup"><span data-stu-id="63e71-139">Ensure that the **Stereo Rendering Mode** is set to **Single Pass Instanced.**</span></span>
+6.  <span data-ttu-id="63e71-140">展開 [ **發行設定** ] 區段。</span><span class="sxs-lookup"><span data-stu-id="63e71-140">Expand the **Publishing Settings** section.</span></span>
+   * <span data-ttu-id="63e71-141">在 [ **功能** ] 底下， **確定已選取** [ **網際網路用戶端** ]、[網路攝影機]、[麥克風] 和 [</span><span class="sxs-lookup"><span data-stu-id="63e71-141">Under **Capabilities** ensure that **Internet Client, WebCam, Microphone,** and **SpatialPerception** are selected.</span></span>
+   * <span data-ttu-id="63e71-142">**注意：** 只有在您想要使用 SURFACE Observer API 時，才應該選取 >spatialperception。</span><span class="sxs-lookup"><span data-stu-id="63e71-142">**NOTE: SpatialPerception** should only be selected if you intend to use the Surface Observer API.</span></span>
+   * <span data-ttu-id="63e71-143">在 [ **支援的裝置系列** ] 底下， **確定已選取** [全像]。</span><span class="sxs-lookup"><span data-stu-id="63e71-143">Under **Supported Device Families** , ensure that **Holographic** is selected.</span></span> 
+7.  <span data-ttu-id="63e71-144">展開 [ **解析和展示** ] 區段。</span><span class="sxs-lookup"><span data-stu-id="63e71-144">Expand the **Resolution and Presentation** section.</span></span>
+   * <span data-ttu-id="63e71-145">停 **用在背景執行** 時，Vuforia 引擎會在應用程式進入背景時暫停，並可在應用程式繼續時再次存取相機。</span><span class="sxs-lookup"><span data-stu-id="63e71-145">Disable **Run in Background** so that Vuforia Engine pauses when the app is put into the background and can access the camera again when the app is resumed.</span></span> 
+   * <span data-ttu-id="63e71-146">在 [ **預設方向** ] 下拉式清單中，確定已選取 [ **橫向左方** ]。</span><span class="sxs-lookup"><span data-stu-id="63e71-146">In the **Default Orientation** dropdown, ensure that **Landscape Left** is selected.</span></span>
+8.  <span data-ttu-id="63e71-147">返回 [ **組建設定** ] 視窗，然後選取 [ **建立** ] 以產生 Visual Studio 專案。</span><span class="sxs-lookup"><span data-stu-id="63e71-147">Return to the **Build Settings** window and select **Build** to generate a Visual Studio project.</span></span>
+9.  <span data-ttu-id="63e71-148">從 Visual Studio 建立可執行檔，並將它安裝在 HoloLens 上。</span><span class="sxs-lookup"><span data-stu-id="63e71-148">Build the executable from Visual Studio and install it on your HoloLens.</span></span>
+
+## <a name="the-vuforia-developer-portal"></a><span data-ttu-id="63e71-149">Vuforia 開發人員入口網站</span><span class="sxs-lookup"><span data-stu-id="63e71-149">The Vuforia Developer Portal</span></span>
+
+<span data-ttu-id="63e71-150">如果開發人員想要使用 Vuforia 引擎和 HoloLens 來建立自己的 AR 體驗，則應該在 [developer.vuforia.com](https://developer.vuforia.com/)的 Vuforia 開發人員入口網站上註冊。</span><span class="sxs-lookup"><span data-stu-id="63e71-150">Developers looking to create their own AR experiences with Vuforia Engine and HoloLens should sign up on our Vuforia Developer Portal at [developer.vuforia.com](https://developer.vuforia.com/).</span></span> <span data-ttu-id="63e71-151">在入口網站中，開發人員可以存取 [Vuforia Engine 論壇](https://developer.vuforia.com/forum) ，讓他們可以加入社區討論、包含有關所有 Vuforia 引擎功能的深入檔的文檔 [庫](https://library.vuforia.com/) ，以及可供使用者建立自己自訂目標的 [Vuforia 目標管理員](https://developer.vuforia.com/target-manager) 。</span><span class="sxs-lookup"><span data-stu-id="63e71-151">In the portal, developers have access to the [Vuforia Engine Forums](https://developer.vuforia.com/forum) where they can join community discussions, a [library](https://library.vuforia.com/) with in-depth documentation on all the Vuforia Engine Features, and the [Vuforia Target Manager](https://developer.vuforia.com/target-manager) where users can create their own custom Targets.</span></span> <span data-ttu-id="63e71-152">開發人員也可以使用 [Vuforia 授權管理員](https://developer.vuforia.com/license-manager)來註冊免費的開發人員授權。</span><span class="sxs-lookup"><span data-stu-id="63e71-152">Developers can also sign up for a free Developer License using the [Vuforia License Manager](https://developer.vuforia.com/license-manager).</span></span>
+
+## <a name="device-tracking-with-vuforia"></a><span data-ttu-id="63e71-153">使用 Vuforia 進行裝置追蹤</span><span class="sxs-lookup"><span data-stu-id="63e71-153">Device Tracking with Vuforia</span></span>
+
+<span data-ttu-id="63e71-154">[裝置追蹤](https://library.vuforia.com/features/environments/device-tracker-overview.html) 會維持追蹤的時間，即使目標已不在查看中也一樣。</span><span class="sxs-lookup"><span data-stu-id="63e71-154">[Device Tracking](https://library.vuforia.com/features/environments/device-tracker-overview.html) maintains tracking even when a target is no longer in view.</span></span> <span data-ttu-id="63e71-155">啟用位置裝置追蹤器時，會自動為所有目標啟用此功能。</span><span class="sxs-lookup"><span data-stu-id="63e71-155">It is automatically enabled for all targets when the Positional Device Tracker is enabled.</span></span> <span data-ttu-id="63e71-156">針對 HoloLens 應用程式，會在 Unity 中自動啟動位置裝置追蹤器。</span><span class="sxs-lookup"><span data-stu-id="63e71-156">For HoloLens applications, the Positional Device Tracker is started automatically in Unity.</span></span>
+
+<span data-ttu-id="63e71-157">Vuforia 引擎會自動從相機追蹤和 HoloLens 的空間追蹤中 e-fuses 姿勢，以提供穩定的目標，而不受相機是否看到目標的影響。</span><span class="sxs-lookup"><span data-stu-id="63e71-157">Vuforia Engine automatically fuses the poses from camera tracking and HoloLens's spatial tracking to provide stable target poses independent of whether the target is seen by the camera or not.</span></span>
+
+<span data-ttu-id="63e71-158">因為此程式會自動處理，所以開發人員不需要任何程式設計。</span><span class="sxs-lookup"><span data-stu-id="63e71-158">Since the process is handled automatically, it does not require any programming by the developer.</span></span>
+
+
+<span data-ttu-id="63e71-159">**以下是此程式的高階描述：**</span><span class="sxs-lookup"><span data-stu-id="63e71-159">**The following is a high-level description of the process:**</span></span>
+1. <span data-ttu-id="63e71-160">Vuforia 的目標追蹤器可識別目標</span><span class="sxs-lookup"><span data-stu-id="63e71-160">Vuforia’s target Tracker recognizes the target</span></span>
+2. <span data-ttu-id="63e71-161">接著會初始化目標追蹤</span><span class="sxs-lookup"><span data-stu-id="63e71-161">Target tracking is then initialized</span></span>
+3. <span data-ttu-id="63e71-162">系統會分析目標的位置和旋轉，以提供適用于 HoloLens 的健全姿勢估計</span><span class="sxs-lookup"><span data-stu-id="63e71-162">The position and rotation of the target are analyzed to provide a robust pose estimate for the HoloLens</span></span>
+4. <span data-ttu-id="63e71-163">Vuforia 引擎會將目標的姿勢轉換成 HoloLens 空間對應座標空間</span><span class="sxs-lookup"><span data-stu-id="63e71-163">Vuforia Engine transforms the target's pose into the HoloLens spatial mapping coordinate space</span></span>
+5. <span data-ttu-id="63e71-164">如果目標已不在查看中，則 HoloLens 會過度追蹤。</span><span class="sxs-lookup"><span data-stu-id="63e71-164">HoloLens takes over tracking if the target is no longer in view.</span></span> <span data-ttu-id="63e71-165">當您再次查看目標時，Vuforia 會繼續正確地追蹤影像和物件。</span><span class="sxs-lookup"><span data-stu-id="63e71-165">Whenever you look again at the target, Vuforia will continue to track the images and objects accurately.</span></span>
+
+<span data-ttu-id="63e71-166">偵測到但不再顯示的目標會回報為 EXTENDED_TRACKED。</span><span class="sxs-lookup"><span data-stu-id="63e71-166">Targets that are detected, but no longer in view, are reported as EXTENDED_TRACKED.</span></span> <span data-ttu-id="63e71-167">在這些情況下，在所有目標上使用的 DefaultTrackableEventHandler 腳本會繼續呈現增強的內容。</span><span class="sxs-lookup"><span data-stu-id="63e71-167">In these cases, the DefaultTrackableEventHandler script that is used on all targets continues to render augmentation content.</span></span> <span data-ttu-id="63e71-168">開發人員可以藉由執行自訂可追蹤事件處理常式腳本來控制這項行為。</span><span class="sxs-lookup"><span data-stu-id="63e71-168">The developer can control this behavior by implementing a custom trackable event handler script.</span></span>
+
+
+## <a name="performance-mode-with-vuforia-engine"></a><span data-ttu-id="63e71-169">具有 Vuforia 引擎的效能模式</span><span class="sxs-lookup"><span data-stu-id="63e71-169">Performance Mode with Vuforia Engine</span></span> 
+
+<span data-ttu-id="63e71-170">您可以透過 Vuforia 引擎來管理 HoloLens 上的效能，以達到範圍 AR 的效能，並減少 CPU 上的工作負載。</span><span class="sxs-lookup"><span data-stu-id="63e71-170">It is possible through the Vuforia Engine to manage the performance on the HoloLens to extent AR experiences and reduce the workload on the CPU.</span></span> <span data-ttu-id="63e71-171">Vuforia 引擎提供可選取的三種模式：預設值、優化速度，以及優化品質。</span><span class="sxs-lookup"><span data-stu-id="63e71-171">The Vuforia Engine offers three modes that can be selected: default, for optimizing speed, and for optimizing quality.</span></span> 
+
+*   <span data-ttu-id="63e71-172">MODE_OPTIMIZE_SPEED 可讓您將 HoloLens 裝置上的工作負載降到最低，並非常適合用來擴充 AR 體驗。</span><span class="sxs-lookup"><span data-stu-id="63e71-172">MODE_OPTIMIZE_SPEED lets you minimize the workload on the HoloLens device and is great for extending AR experiences.</span></span> <span data-ttu-id="63e71-173">建議在應用程式正在追蹤靜態物件/目標的情況下使用。</span><span class="sxs-lookup"><span data-stu-id="63e71-173">It is recommended for situations where the app is tracking static objects/targets.</span></span>
+*   <span data-ttu-id="63e71-174">MODE_DEFAULT 是可用於大部分案例的一般模式。</span><span class="sxs-lookup"><span data-stu-id="63e71-174">MODE_DEFAULT is the normal mode which can be used in most scenarios.</span></span>
+*   <span data-ttu-id="63e71-175">MODE_OPTIMIZE_QUALITY 更適合用來追蹤您希望挑選的可移動目標或模型目標。</span><span class="sxs-lookup"><span data-stu-id="63e71-175">MODE_OPTIMIZE_QUALITY is better for tracking movable targets or model targets you expect to be picked up.</span></span>
+
+<span data-ttu-id="63e71-176">**設定模式**</span><span class="sxs-lookup"><span data-stu-id="63e71-176">**Setting the mode**</span></span>
+
+<span data-ttu-id="63e71-177">若要變更 Unity 中的效能模式，請流覽至 Vuforia Configuration (Ctrl + Shift + V/Cmd + Shift + V) ，其位於 ARCamera GameObject 的元件中。</span><span class="sxs-lookup"><span data-stu-id="63e71-177">To change the performance mode in Unity, navigate to Vuforia Configuration (Ctrl+Shift+V / Cmd+Shift+V) that is located as a component in the ARCamera GameObject.</span></span> 
+*   <span data-ttu-id="63e71-178">選取 [相機裝置模式] 的下拉式功能表，然後選取三個選項的其中一個。</span><span class="sxs-lookup"><span data-stu-id="63e71-178">Select the dropdown menu for Camera Device Mode and select one of the three options.</span></span>
+
+
+## <a name="see-also"></a><span data-ttu-id="63e71-179">另請參閱</span><span class="sxs-lookup"><span data-stu-id="63e71-179">See also</span></span>
+* [<span data-ttu-id="63e71-180">安裝工具</span><span class="sxs-lookup"><span data-stu-id="63e71-180">Install the tools</span></span>](../install-the-tools.md)
+* [<span data-ttu-id="63e71-181">座標系統</span><span class="sxs-lookup"><span data-stu-id="63e71-181">Coordinate systems</span></span>](../../design/coordinate-systems.md)
+* [<span data-ttu-id="63e71-182">空間對應</span><span class="sxs-lookup"><span data-stu-id="63e71-182">Spatial mapping</span></span>](../../design/spatial-mapping.md)
+* [<span data-ttu-id="63e71-183">Unity 中的相機</span><span class="sxs-lookup"><span data-stu-id="63e71-183">Camera in Unity</span></span>](camera-in-unity.md)
+* [<span data-ttu-id="63e71-184">匯出和建置 Unity Visual Studio 解決方案</span><span class="sxs-lookup"><span data-stu-id="63e71-184">Exporting and building a Unity Visual Studio solution</span></span>](exporting-and-building-a-unity-visual-studio-solution.md)
+* [<span data-ttu-id="63e71-185">Vuforia 檔：開發 Unity 中的 Windows 10</span><span class="sxs-lookup"><span data-stu-id="63e71-185">Vuforia documentation: Developing for Windows 10 in Unity</span></span>](https://library.vuforia.com/articles/Solution/Developing-for-Windows-10-in-Unity)
+* [<span data-ttu-id="63e71-186">Vuforia 檔：如何安裝 Vuforia Unity 擴充功能</span><span class="sxs-lookup"><span data-stu-id="63e71-186">Vuforia documentation: How to install the Vuforia Unity extension</span></span>](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
+* [<span data-ttu-id="63e71-187">Vuforia 檔：使用 Unity 中的 HoloLens 範例</span><span class="sxs-lookup"><span data-stu-id="63e71-187">Vuforia documentation: Working with the HoloLens sample in Unity</span></span>](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
+* [<span data-ttu-id="63e71-188">Vuforia 檔： Vuforia 中的裝置追蹤</span><span class="sxs-lookup"><span data-stu-id="63e71-188">Vuforia documentation: Device Tracking in Vuforia</span></span>](https://library.vuforia.com/features/environments/device-tracker-overview.html)
+* [<span data-ttu-id="63e71-189">Vuforia 檔：畫面播放速率和效能 Optomization</span><span class="sxs-lookup"><span data-stu-id="63e71-189">Vuforia documentation: Framerate and Performance Optomization</span></span>](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
