@@ -1,5 +1,5 @@
 ---
-title: 使用 Windows Mixed Reality 常見問題
+title: 使用 Windows Mixed Reality 常見問題集
 description: 取得使用 Windows Mixed Reality 時常見問題的解答。
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 62b6b61f74abfd77ba61563639ff719576551f07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680236"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044443"
 ---
-# <a name="using-windows-mixed-reality-faq"></a>使用 Windows Mixed Reality 常見問題
+# <a name="using-windows-mixed-reality-faq"></a>使用 Windows Mixed Reality 常見問題集
 
 如果您在使用 Windows Mixed Reality 沉浸式耳機時需要協助，請參閱這些主題以取得一般資訊和疑難排解。
 
@@ -61,7 +61,7 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
     * 就緒–控制器全都已設定。
     * 遺失追蹤–混合實境入口找不到您的控制器。 將它們放在耳機前方，然後按下 [ **Windows** ] 按鈕4秒，再重新開機，再按2秒。
     * 電力偏低–更換控制器電池。
-* 如果使用 Wi-fi，請嘗試將您的電腦連接到5GHz 的 Wi-fi 網路，以減少無線干擾。 
+* 如果使用 Wi-fi，請嘗試將您的電腦連接到 5GHz Wi-Fi 網路，以減少無線干擾。 
 * 針對直接與控制器配對的較新耳機，請選取 [ **...]** **混合實境入口** 按鈕，然後選擇 [ **設定控制器** ]。 這會將您帶到耳機應用程式，以便將控制器配對到耳機。  
 * 適用于沒有內建藍牙可直接與控制器配對的舊耳機：  
     * 選取 [> 裝置的設定] > 藍牙 & 電腦上的其他裝置，並確定控制器列示為配對。如果不是，您必須將它們配對。 
@@ -93,9 +93,9 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
 
 如果地面看起來 (例如，您覺得您是浮動) ，請選取 [ **開始] > 空間調整** ，同時讓耳機進行變更。
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 為何會這樣？
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 原因為何？
 
-如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。 
+如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。
 
 ## <a name="how-do-i-uninstall-windows-mixed-reality"></a>如何? 卸載 Windows Mixed Reality？
 
@@ -106,14 +106,14 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
 > [!NOTE]
 > 如果您看到一則訊息，指出「我們無法完成移除 Windows Mixed Reality」，這表示某些檔案（包括您的環境相關資訊）仍可能在您的電腦上。 如果您決定稍後重新安裝 Windows Mixed Reality，這可能會造成問題。
 > 
-> 若要瞭解如何從您的電腦手動移除任何剩餘的 Windows Mixed Reality 資訊，請參閱 **[這篇文章](troubleshooting-windows-mixed-reality.md#how-to-uninstall-windows-mixed-reality)** 。 
+> 若要瞭解如何從您的電腦手動移除任何剩餘的 Windows Mixed Reality 資訊，請參閱 **[這篇文章](installation_errors.md)** 。
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>當我使用 Windows Mixed Reality 時，我的 Wi-fi 會變慢
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>當我使用 Windows Mixed Reality 時，我的 Wi-Fi 變慢
 
-如果您使用 2.4 GHz Wi-fi 連線，則您的移動控制器可能會減緩 Wi-fi。 請嘗試下列其中一項：
+如果您使用 2.4 GHz Wi-Fi 連接，您的移動控制器可能會減緩您的 Wi-fi。 請嘗試下列其中一項：
 
 <!-- TODO: Use Windows Mixed Reality PC hardware guidelines interlink -->
-* 切換至5GHz 的 Wi-fi 連線（如果有的話）。 [深入了解](https://support.microsoft.com/help/4000461)
+* 切換至 5GHz Wi-Fi 連接（如果有的話）。 [深入了解](https://support.microsoft.com/help/4000461)
 * 使用個別的 Bluetooth 介面卡，將您的動作控制器連接到您的電腦。 [查看建議的介面卡](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 
 ## <a name="what-is-the-experience-options-setting"></a>何謂體驗選項設定？
@@ -132,6 +132,6 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
 
 是否仍需要協助？ 如需 advanced 疑難排解的詳細說明，請參閱 [這篇文章](troubleshooting-windows-mixed-reality.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

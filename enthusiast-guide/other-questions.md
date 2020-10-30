@@ -1,24 +1,25 @@
 ---
 title: 其他問題
-description: 超越標準取用者支援檔的 Advanced Windows Mixed Reality 疑難排解。
+description: 其他 Windows Mixed Reality 超越標準取用者支援檔的疑難排解秘訣。
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、卸載 Windows Mixed Reality、支援的語言
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8a035a4d113a0a53f41079709660f65bfa278a0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
+ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680332"
+ms.lasthandoff: 10/30/2020
+ms.locfileid: "93044460"
 ---
 # <a name="other-questions"></a>其他問題
 
 ## <a name="my-graphics-driver-isnt-supported-im-getting-graphics-driver-failure-errors"></a>我的圖形驅動程式不受支援 (我收到圖形驅動程式失敗錯誤) 。
 
 搜尋並執行 "dxdiag"：
+
 1.  如果結果為「基本轉譯器」，則不會安裝圖形驅動程式。 修正方法：
     * 移至 **裝置管理員 > 動作 > 掃描硬體變更** 。
     * 使用 Windows Update 來更新驅動程式。
@@ -57,13 +58,13 @@ Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung H
 ## <a name="my-desktop-app-only-shows-a-black-screen"></a>我的桌面應用程式只會顯示黑色畫面。
 如果您的電腦有 Nvidia 混合式 GPU，問題可能是因為 Nvidia 裝置在離散 GPU （而非整合模式）上執行 runtimebroker.exe 所造成。 若要修正此問題，請遵循「[如何? 建立新程式的 Optimus 設定](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)」底下的指示。 新增 C:\windows\system32\runtimebroker.exe 並強制它在「整合式圖形」處理器上執行。 
 
-## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>當我使用 Windows Mixed Reality 時，我的 Wi-fi 會變慢。
+## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>當我使用 Windows Mixed Reality 時，我的 Wi-Fi 會變慢。
 
-如果您使用 2.4 GHz Wi-fi 連線，則您的移動控制器可能會減緩 Wi-fi。 請嘗試下列其中一項：
-* 切換至5GHz 的 Wi-fi 連線（如果有的話）。 [深入了解](https://support.microsoft.com/en-us/help/4000461)。
+如果您使用 2.4 GHz Wi-Fi 連接，您的移動控制器可能會減緩您的 Wi-fi。 請嘗試下列其中一項：
+* 切換至 5GHz Wi-Fi 連接（如果有的話）。 [深入了解](https://support.microsoft.com/en-us/help/4000461)。
 * 使用個別的 Bluetooth 介面卡，將您的動作控制器連接到您的電腦。 請參閱 [建議的介面卡](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)。
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 為何會這樣？
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 原因為何？
 
 如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。 
 
@@ -119,16 +120,16 @@ Windows Mixed Reality 也提供下列語言版本，不需要語音命令或聽�
 2. 在 **搜尋** 方塊中，輸入 "regedit"，然後選取 [是]。
 3. 移除下列登錄值：
    <ul>
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>，然後刪除 "FirstRunSucceeded"。</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic\speechandaudio</b>，然後刪除 "PreferDesktopSpeaker" 和 "PreferDesktopMic"。</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\ Speech_OneCore &gt; Settings\Holographic</b>，然後刪除 "DisableSpeechInput"。 注意：您必須針對已使用 Windows Mixed Reality 之電腦上的每個使用者帳戶，刪除 HHKEY_CURRENT_USER 中的登錄專案。</li> 
-    <li><b>HKEY_LOCAL_MACHINE \software\microsoft\windows\currentversion\perceptionsimulationextensions</b>，然後刪除「DeviceID」和「模式」。</li> 
-    <li><b>HKEY_CURRENT_USER \software\microsoft\windows\currentversion\holographic</b>，然後刪除 "OnDeviceLearningCompleted"。</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>，然後刪除 "FirstRunSucceeded"。</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>，然後刪除 "PreferDesktopSpeaker" 和 "PreferDesktopMic"。</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Settings\Holographic</b>，然後刪除 "DisableSpeechInput"。 注意：您必須針對已使用 Windows Mixed Reality 之電腦上的每個使用者帳戶，刪除 HHKEY_CURRENT_USER 中的登錄專案。</li> 
+    <li><b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>，然後刪除「DeviceID」和「模式」。</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>，然後刪除 "OnDeviceLearningCompleted"。</li> 
    </ul>
 4. 移除下列登錄機碼： <ul>
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_LOCAL_MACHINE \Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
-   <li> <b>HKEY_CURRENT_USER \Software\Microsoft\ Speech_OneCore \Settings\HolographicPreferences</b></li><br/></ul>
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
+   <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. 關閉登錄編輯程式。
 6. 移至 **C:\Users\user name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** 並刪除「RoomBounds.js開啟」。 針對已使用 Windows Mixed Reality 的每個使用者重複此步驟。
 7. 開啟系統管理員命令提示字元，並移至 **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors** 。 刪除 "HeadTracking data" 資料夾的內容 (但不) 資料夾本身。
