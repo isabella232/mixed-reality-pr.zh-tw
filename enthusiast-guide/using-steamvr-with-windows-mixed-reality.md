@@ -3,37 +3,43 @@ title: 使用 SteamVR 搭配 Windows Mixed Reality
 description: 如何使用相容電腦在 Windows Mixed Reality 耳機播放 SteamVR 遊戲。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: 0f6f2617bbe9cc50c4835913a85e49725b51791a
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+ms.openlocfilehash: a064e448979ed256a5ed09d8b1342e287078e01d
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683224"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131922"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
+
 適用于 SteamVR 的 Windows Mixed Reality 可讓使用者在 Windows Mixed Reality 的沉浸式耳機上執行 SteamVR 體驗。 安裝適用于 SteamVR 的 Windows Mixed Reality 之後，使用者可以從其桌面或串流庫啟動其最愛的 SteamVR 應用程式，並直接在其 Windows 耳機上播放。
 
 ## <a name="get-your-pc-ready"></a>讓您的電腦準備就緒
-* 確定您沒有任何擱置中的更新：選取 [ **開始 > 設定] > 更新 & 安全性 > Windows Update** 。 如果有可用的更新，請選取 [ **立即安裝** ]。 如果沒有可用的更新，請選取 [ **檢查更新** ]，然後安裝任何新的更新。 
+
+* 確定您沒有任何擱置中的更新：選取 [ **開始 > 設定] > 更新 & 安全性 > Windows Update** 。 如果有可用的更新，請選取 [ **立即安裝** ]。 如果沒有可用的更新，請選取 [ **檢查更新** ]，然後安裝任何新的更新。
 * 電腦需求會因流上的應用程式和內容而有所不同。 查看每個標題的最低需求。 具有 GTX 1070 圖形配接器 (或對等) 的電腦，以及 Intel® Core™ i7 處理器都應為廣泛的標題提供良好的體驗。
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>設定 SteamVR 的 Windows Mixed Reality
-1. 如果您尚未設定 [Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality)。
+
+1. 如果您尚未設定 [Windows Mixed Reality](set-up-windows-mixed-reality.md)。
 2. 安裝 [串流](http://store.steampowered.com/about/) 和 **登** 入，或 **建立新的帳戶。**
-3. 安裝 [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)。 當您的耳機插入電源時，啟動串流，您應該會看到一個對話方塊，提示您安裝 SteamVR。 依照對話方塊上的提示進行安裝。 
+3. 安裝 [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)。 當您的耳機插入電源時，啟動串流，您應該會看到一個對話方塊，提示您安裝 SteamVR。 依照對話方塊上的提示進行安裝。
     * 如果您沒有看到快顯視窗，請流覽至 *媒體* 櫃的 [ *工具* ] 區段來安裝 SteamVR。 在清單中找出 SteamVR，然後以滑鼠右鍵按一下並選取 [ *安裝遊戲* ]。
-4. 安裝 [適用于 SteamVR 的 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)。 
+4. 安裝 [適用于 SteamVR 的 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)。
 
 ## <a name="play-steamvr-games"></a>Play SteamVR 遊戲
+
 1. 將您的耳機連接到您的電腦，然後開啟您的動作控制器。
 2. 一旦載入 Windows Mixed Reality 首頁，並顯示您的控制器，請在您的桌面上開啟串流應用程式。
-3. 使用流應用程式從您的串流庫啟動 SteamVR 遊戲。 
+3. 使用流應用程式從您的串流庫啟動 SteamVR 遊戲。
 
 **秘訣** ：若要在不離開耳機的情況下啟動 SteamVR 遊戲，請使用桌面應用程式 ( **啟動 > 桌面** ) 在 Windows Mixed Reality 內查看您的電腦桌面並與其互動。
 
 ## <a name="using-motion-controllers-with-steamvr"></a>搭配 SteamVR 使用移動控制器
+
 您將在不同的遊戲中以不同的方式使用移動控制器。 以下是一些可協助您開始使用的基本概念：
-* 若要開啟 [串流] 儀表板，請在左側或右側的操縱杆上按直向下。 
+
+* 若要開啟 [串流] 儀表板，請在左側或右側的操縱杆上按直向下。
 * 若要結束 SteamVR 遊戲並回到 Windows Mixed Reality 首頁，請按 [Windows] 按鈕。
 
 ## <a name="changing-the-resolution"></a>變更解析度
@@ -42,7 +48,7 @@ ms.locfileid: "92683224"
 
 ## <a name="using-multiple-headsets"></a>使用多個耳機
 
-如果您是 VR 愛好者，您可能會在同一部電腦上定期使用一個以上的 VR 耳機。 如果是這種情況，請注意，當 Windows Mixed Reality 耳機插入電源時，SteamVR 遊戲一律會啟動 Windows Mixed Reality 耳機。 如果您想要在另一個耳機上啟動 SteamVR 遊戲，請務必先拔掉 Windows Mixed Reality 耳機，再繼續進行。 
+如果您是 VR 愛好者，您可能會在同一部電腦上定期使用一個以上的 VR 耳機。 如果是這種情況，請注意，當 Windows Mixed Reality 耳機插入電源時，SteamVR 遊戲一律會啟動 Windows Mixed Reality 耳機。 如果您想要在另一個耳機上啟動 SteamVR 遊戲，請務必先拔掉 Windows Mixed Reality 耳機，再繼續進行。
 
 ## <a name="preview-programs"></a>預覽程式
 
@@ -55,6 +61,7 @@ SteamVR 的 Windows Mixed Reality 是您從串流存放區安裝的元件，可�
 如果您想要更頻繁地取得更新，建議您加入我們的公用搶鮮版（Beta）。  更新會先移至我們的搶鮮版（Beta）物件，並在將更新發佈給所有使用者之前，使用他們的意見反應來確定更新為高品質。  如果您不在我們的測試計劃中，最終將會取得所有相同的修正和功能，但經過 Beta 版使用者的測試之後也是如此。
 
 若要加入：
+
   1. 在 [流] 中，使用 [連結 **庫** ] 功能表底下的下拉式清單來篩選 **軟體** 。
   2. 在清單中，以滑鼠右鍵按一下 **SteamVR 的 [Windows Mixed Reality** ]，然後選取 [ **屬性** ]。
   3. 按一下 [ **Beta** ] 索引標籤。
@@ -65,6 +72,7 @@ SteamVR 的 Windows Mixed Reality 是您從串流存放區安裝的元件，可�
 SteamVR 是由閥門建立和發行，而且在所有 SteamVR 耳機都很常見。  它會遵循類似的模型，將更新發行至搶鮮版（Beta）成員，再發佈給所有使用者。
 
 若要加入：
+
   1. 在 [流] 中，使用 [連結 **庫** ] 功能表底下的下拉式清單來篩選 **工具** 。
   2. 在清單中，以滑鼠右鍵按一下 [ **SteamVR** ]，然後選取 [ **屬性** ]。
   3. 按一下 [ **Beta** ] 索引標籤。
@@ -75,18 +83,20 @@ SteamVR 是由閥門建立和發行，而且在所有 SteamVR 耳機都很常見
 Windows Mixed Reality 是 Windows 10 的一部分。  許多影響 SteamVR 使用者的修正和功能都隨附于 Windows 作業系統。  如果您想要試用最新的 Windows 10 preview 組建，建議您加入 [Windows 測試人員計畫](https://insider.windows.com)。
 
 ## <a name="enabling-motion-reprojection-for-steamvr-apps"></a>啟用 SteamVR Apps 的動作 reprojection
+
 SteamVR 的 Windows Mixed Reality 具有實驗性動作 reprojection 功能，可讓 90 FPS reprojection 更順暢。
 
-啟用 [動作] reprojection 時，所有的串流 VR 遊戲都會以1/2 畫面播放速率轉譯名義上 (45 fps，而非 90 FPS) ，而 Windows Mixed Reality for SteamVR 會使用 GPU 所產生的動態向量來推斷下一個畫面格。 針對在指定的電腦上可靠地達到 60 FPS + 的 SteamVR 遊戲，這應該會產生具有偶爾構件的穩固 90 FPS 體驗，同時維持舒適的體驗。 
+啟用 [動作] reprojection 時，所有的串流 VR 遊戲都會以1/2 畫面播放速率轉譯名義上 (45 fps，而非 90 FPS) ，而 Windows Mixed Reality for SteamVR 會使用 GPU 所產生的動態向量來推斷下一個畫面格。 針對在指定的電腦上可靠地達到 60 FPS + 的 SteamVR 遊戲，這應該會產生具有偶爾構件的穩固 90 FPS 體驗，同時維持舒適的體驗。
 
 可用的動作 reprojection 模式如下所示：
+
 * **SteamVR 每個應用程式的設定** ：可讓您透過 STEAMVR 設定 UI 控制動作 reprojection。 然後，您可以開啟 [SteamVR 設定]、移至 [影片] > Per-Application 影片設定]，然後選取 [動作平滑] 的選項。
 * **Auto** ：讓運動 reprojection 在遊戲轉譯太慢時自動開啟，以維護 90 FPS。 當遊戲開始維護 90 FPS 或在低於 45 FPS 的時候開始轉譯時，移動 reprojection 將會關閉。 非同步旋轉 reprojection 會在任何時候啟用。
 * **動作向量** ：強制應用程式一律以具有動作向量 reprojection 的半畫面播放速率執行。
 * **None** ：停用運動 reprojection。
 
-
 **預期的視覺構件** 
+
 1. 使用大於150% 的應用程式解析時，您可能會遇到模糊。 使用移動 reprojection 時，建議使用小於150% 的值。
 2. 清晰對比度的邊緣或文字（特別是在遊戲 HUDs 或功能表上）可能會因為 disocclusion 而暫時扭曲或失真。
 3. SteamVR 家用及許多其他在您電腦上未可靠地碰到 50-60 FPS 的遊戲，在此模式下的體驗將會不佳。
@@ -94,10 +104,10 @@ SteamVR 的 Windows Mixed Reality 具有實驗性動作 reprojection 功能，�
 
 一開始，我們會對最新世代的 NVidia Gpu 進行實驗性支援。 我們將繼續逐一查看及改善其他 Gpu 的 reprojection 支援，並積極聆聽您的意見反應。
 
-
 **支援的 gpu：** Nvidia GeForce GTX1060、AMD RX470 或更高版本，並安裝 Windows Mixed Reality 相容的圖形驅動程式。
 
-若要啟用動作 reprojection： 
+若要啟用動作 reprojection：
+
 1. 請確定您已使用上述指示加入宣告 **SteamVR Beta 的 Windows Mixed Reality** 。
 2. 開啟 SteamVR 儀表板。
 3. 按一下左邊的按鈕並 Windows Mixed Reality 標誌，開啟 SteamVR 設定 Windows Mixed Reality。
@@ -124,12 +134,13 @@ Red = 動作 reprojection 是關閉的，因為應用程式的執行速度低於
 
 ## <a name="sharing-feedback-on-steamvr"></a>SteamVR 上的分享意見反應
 
-在改善 Windows Mixed Reality SteamVR 體驗時，您的意見反應非常寶貴。 請透過 [Windows 意見反應中樞](filing-feedback.md)提交所有意見反應和 bug。 請遵循下列建議，以協助我們充分利用您的意見反應： 
+在改善 Windows Mixed Reality SteamVR 體驗時，您的意見反應非常寶貴。 請透過 [Windows 意見反應中樞](filing-feedback.md)提交所有意見反應和 bug。 請遵循下列建議，以協助我們充分利用您的意見反應：
+
 1. 在意見反應中樞中，表示您回報的是「這是哪一種意見反應？」的新問題。 區段。
 2. 選取 **混合現實** 類別和 **應用程式** 子類別。
 3. 在問題摘要中放入 "SteamVR" 一字。 這可協助我們找到您的意見反應。
 4. 描述當您遇到問題時，所使用的 SteamVR 遊戲或應用程式。
-5. 請考慮將 SteamVR 系統報告附加至您的意見反應。 這會提供額外的記錄檔，以協助我們診斷您的問題。 
+5. 請考慮將 SteamVR 系統報告附加至您的意見反應。 這會提供額外的記錄檔，以協助我們診斷您的問題。
     1. 在 [SteamVR] 視窗 (顯示控制器狀態的小視窗) 按一下標題以開啟功能表。
     2. 選取 [建立系統報告]。
     3. 儲存至檔案。
@@ -144,8 +155,10 @@ Red = 動作 reprojection 是關閉的，因為應用程式的執行速度低於
 
 如果您有任何問題或意見可以共用，您也可以在我們的串流 [論壇](http://steamcommunity.com/app/719950/discussions/)上聯繫我們。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
+
 * [使用 Windows Mixed Reality 針對 SteamVR 進行疑難排解](steamvr-questions.md)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
-* [最低電腦硬體指導方針](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
+* [使用 Unity 中的 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [在 Unreal 中使用 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [提出錯誤及意見反應](filing-feedback.md)

@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、卸載 Windows Mixed Reality、支援的語言
 appliesto:
 - Windows 10
-ms.openlocfilehash: aa61148a115ae295c1dc64b575a2fae7b0111470
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: a49008cb7d6a51385cb0d4ece7dfae3018aefe88
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044460"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131862"
 ---
 # <a name="other-questions"></a>其他問題
 
@@ -29,7 +29,7 @@ ms.locfileid: "93044460"
     * 使用 Windows Update 來更新驅動程式。
     * 如果該更新無法修正問題，請移至製造商的網站，並安裝最新的驅動程式更新。 
     * 如果您的 GPU 無法使用更新，您的裝置可能不支援 WMR。 如果您認為應該如此，請聯絡 [支援](https://support.microsoft.com)人員。
-    
+
 如果 Windows Mixed Reality 安裝程式指出您的圖形配接器不符合需求，而您認為它的確如此，請確定您的耳機已插入正確的卡片中。
 
 ## <a name="my-samsung-odyssey-or-odyssey-headset-firmware-update-is-stuck"></a>我的 Samsung 電影對白或電影對白 + 耳機固件更新停滯。
@@ -37,6 +37,7 @@ ms.locfileid: "93044460"
 Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung HMD 電影對白 + Setup" 裝置附屬應用程式所提供的耳機固件更新。 如需有關 Samsung 固件更新問題的詳細資訊和協助，請與 Samsung 客戶服務聯繫。
 
 如果固件更新程式停滯，而且沒有超過五分鐘的進度：
+
 * 暫時拔掉所有其他 USB 裝置，然後重試一次固件更新。
 * 將 Samsung 耳機連接到您電腦上的其他 USB 3.0 埠。
 * 停用和/或卸載任何可能幹擾固件更新的軟體，例如 Gb 的 AORUS App Center。
@@ -45,28 +46,32 @@ Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung H
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>如何? 在混合的生活中存取我的電腦桌面？
 從 Windows 的 [耳機] 按鈕啟動桌面應用程式 **> 所有應用程式 > 桌面** ，以混合的方式存取您的電腦桌面。
 
-## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>如何查看混合現實中的多個監視器？
-根據預設，桌面應用程式會自動切換為顯示具有焦點的監視器。 如果您想要在混合現實中看到所有的監視器： 
+## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>如何查看混合現實中的多個監視器
+
+根據預設，桌面應用程式會自動切換為顯示具有焦點的監視器。 如果您想要在混合現實中看到所有的監視器：
+
 * 按一下應用程式左上角的 [監視] 圖示。
 * 停用 [自動切換監視器]。
 * 挑選您想要查看的監視器。
 * 啟動桌面應用程式的另一個實例。
 * 選擇您想要在該實例上看到的監視器。
 * 針對所有實體監視器重複執行。
-請注意，每次您重新開機 mixed reality 時，都必須重新選擇要在每個傳統型應用程式上顯示的監視器。 
+請注意，每次您重新開機 mixed reality 時，都必須重新選擇要在每個傳統型應用程式上顯示的監視器。
 
-## <a name="my-desktop-app-only-shows-a-black-screen"></a>我的桌面應用程式只會顯示黑色畫面。
+## <a name="my-desktop-app-only-shows-a-black-screen"></a>我的桌面應用程式只會顯示黑色畫面
+
 如果您的電腦有 Nvidia 混合式 GPU，問題可能是因為 Nvidia 裝置在離散 GPU （而非整合模式）上執行 runtimebroker.exe 所造成。 若要修正此問題，請遵循「[如何? 建立新程式的 Optimus 設定](http://nvidia.custhelp.com/app/answers/detail/a_id/2615/~/how-do-i-customize-optimus-profiles-and-settings%3F)」底下的指示。 新增 C:\windows\system32\runtimebroker.exe 並強制它在「整合式圖形」處理器上執行。 
 
 ## <a name="my-wi-fi-slows-down-when-im-using-windows-mixed-reality"></a>當我使用 Windows Mixed Reality 時，我的 Wi-Fi 會變慢。
 
 如果您使用 2.4 GHz Wi-Fi 連接，您的移動控制器可能會減緩您的 Wi-fi。 請嘗試下列其中一項：
-* 切換至 5GHz Wi-Fi 連接（如果有的話）。 [深入了解](https://support.microsoft.com/en-us/help/4000461)。
-* 使用個別的 Bluetooth 介面卡，將您的動作控制器連接到您的電腦。 請參閱 [建議的介面卡](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)。
+
+* 切換至 5GHz Wi-Fi 連接（如果有的話）。 [深入了解](https://support.microsoft.com/help/4000461)。
+* 使用個別的 Bluetooth 介面卡，將您的動作控制器連接到您的電腦。 請參閱 [建議的介面卡](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)。
 
 ## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 原因為何？
 
-如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。 
+如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。
 
 ## <a name="what-is-the-experience-options-setting"></a>何謂體驗選項設定？
 
@@ -75,9 +80,10 @@ Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung H
 * 60Hz：將重新整理頻率設定為60Hz，並關閉特定功能，例如混合實境入口中的影片捕獲和預覽。
 * 90Hz：將更新頻率設定為90Hz。
 
-## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality 支援哪些語言？
+## <a name="what-languages-are-supported-in-windows-mixed-reality"></a>Windows Mixed Reality 支援哪些語言
 
 Windows Mixed Reality 提供下列語言版本：
+
 * 簡體中文 (中國)
 * 英文 (澳大利亞)
 * 英文 (加拿大)

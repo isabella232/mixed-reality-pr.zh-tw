@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，入門，設定，混合實境入口
 appliesto:
 - Windows 10
-ms.openlocfilehash: b07e1a90247072952969cb2e2fc845bdb906bcae
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: a9333e9f4d80ea73724e2530f2e94c3d0e32d0d4
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915563"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132102"
 ---
 # <a name="install-windows-mixed-reality-software"></a>安裝 Windows Mixed Reality 軟體
 
@@ -51,9 +51,10 @@ Windows Mixed Reality 大約是1GB 的大小，而您的下載時間會視您的
 
 **確定您的電腦能夠辨識您的耳機**
 
-如果重新開機無法運作，請確定您的電腦已辨識您的耳機。 選取 [開始]，在 [搜尋] 方塊中輸入 [裝置管理員]，然後在清單中選取它。 展開混合現實裝置，並查看是否已列出您的耳機。 
+如果重新開機無法運作，請確定您的電腦已辨識您的耳機。 選取 [開始]，在 [搜尋] 方塊中輸入 [裝置管理員]，然後在清單中選取它。 展開混合現實裝置，並查看是否已列出您的耳機。
 
 如果未列出，請嘗試下列動作：
+
 * 將耳機插入電腦上的不同埠（如果有的話）。
 * 從 [Windows Update](https://support.microsoft.com/help/12373)檢查是否有最新的軟體更新。
 * 卸載並重新安裝 Windows Mixed Reality：
@@ -91,8 +92,9 @@ Windows Mixed Reality 大約是1GB 的大小，而您的下載時間會視您的
 ![準備開始設定](images/1050px-gettingsetup.png)
 
 ## <a name="see-also"></a>另請參閱
+
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
 * [安裝疑難排解](installation_errors.md)
-* [疑難排解設定](set-up-questions.md)
+* [疑難排解設定](wmr-setup-faq.md)
 * [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)

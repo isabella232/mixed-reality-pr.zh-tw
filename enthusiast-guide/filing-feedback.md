@@ -1,5 +1,5 @@
 ---
-title: 提出 bug 和意見反應
+title: 提出錯誤及意見反應
 description: 使用意見反應中樞應用程式中正確的分類來提出意見反應，協助我們 Windows Mixed Reality 更好。
 author: hferrone
 ms.author: v-hferrone
@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: e0fdebf10ef7370964b0831f898dc151b3e243a0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c0e2da59e64973c954cc880504a021a2835ed204
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679585"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132122"
 ---
-# <a name="filing-bugs-and-feedback"></a>提出 bug 和意見反應
+# <a name="filing-bugs-and-feedback"></a>提出錯誤及意見反應
 
 ## <a name="why-its-important"></a>重要的原因
 
@@ -24,6 +24,7 @@ ms.locfileid: "91679585"
 ## <a name="before-you-file-feedback"></a>在您提出意見之前
 
 請確定您的電腦已設定為提供意見反應與診斷的完整資料。 以下是在提出意見反應之前，如何再次檢查電腦上的設定：
+
 1. 開啟 [Windows **設定** ] 應用程式。
 2. 按一下 [ **隱私權** ]。
 3. 移至左窗格中的 [ **意見 & 診斷** ] (請注意，這已重新命名為 **診斷 &** 最新的 Windows Windows 測試人員組建中的意見反應。
@@ -31,6 +32,7 @@ ms.locfileid: "91679585"
 5. 請務必重新開機您的電腦，並重複這些步驟，以在提出意見之前重現您的問題。
 
 ## <a name="how-to-file-feedback-for-windows-mixed-reality-immersive-headsets-on-pc"></a>如何為電腦上的 Windows Mixed Reality 沉浸式耳機提出意見反應
+
 1. 確定您已將沉浸式耳機連接到您的電腦。
 2. 在 HMD 連線的桌面上啟動 **意見反應中樞** 。
 3. 移至左窗格中的 [ **意見反應]** 索引標籤。 ![[意見] 索引標籤](images/feedback1.png) 
@@ -50,13 +52,12 @@ ms.locfileid: "91679585"
    | 設定           | 導致您無法設定裝置的任何功能。                           |
    | 所有其他問題 | 別的東西。                                                                        |
 
-
 9. 為了協助我們更快找出並修正錯誤，捕捉追蹤和影片非常有説明。 若要開始收集追蹤，請按一下 [ **開始捕獲** ]。 這將會開始收集追蹤和您混合現實案例的影片捕獲。 ![開始捕獲](images/feedback4.png)
 10. 離開意見反應應用程式，並在中斷的情況下執行。 此時請勿關閉意見反應中樞應用程式。
 11. 當您完成案例後，請返回意見反應應用程式，然後按一下 [ **停止捕捉** ]。 這麼做之後，您應該會看到已加入包含追蹤的檔案。
 12. 按一下 [ **提交** ]。 ![提交](images/feedback5.png)
 
-這會引導您前往「感謝您」頁面。 至此，已成功提交您的意見反應。 
+這會引導您前往「感謝您」頁面。 至此，已成功提交您的意見反應。
 
 在您提交意見反應之後，若要輕鬆地將其他人 (例如同事、Microsoft 員工、 [論壇](https://forums.hololens.com/) 讀者等 ) 問題，請前往意見反應 **> 我的意見** 反應，按一下問題，然後使用 **共用** 圖示取得可提供給其他人附議或呈報的簡短 URL。
 
@@ -65,12 +66,10 @@ ms.locfileid: "91679585"
 >    * 在裝置的主要磁片磁碟機上至少有3GB 可用磁碟空間。
 >    * 確定有非計量付費網路可用，以便上傳 cab。
 
-
 ## <a name="after-filing-feedback"></a>歸檔意見反應之後
 
 在提出意見反應之後，請務必定期向意見反應中樞回來查看！ 在大部分的情況下，我們會嘗試儘快回應。 如果您未在提出意見反應時與我們聯繫，我們可以透過意見反應中樞中的批註系統，與您聯繫以取得疑難排解建議或更多問題的唯一方法。 可惜的是，此時不會將通知傳送給您意見反應中樞以外的時間。
 
-
 ## <a name="see-also"></a>另請參閱
-* [疑難排解](troubleshooting-windows-mixed-reality.md)
 
+* [疑難排解](troubleshooting-windows-mixed-reality.md)

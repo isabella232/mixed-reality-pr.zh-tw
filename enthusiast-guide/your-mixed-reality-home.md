@@ -3,12 +3,12 @@ title: 您的混合實境首頁
 description: 如何在 Windows Mixed Reality 首頁內流覽和傳送、啟動應用程式和遊戲、個人化首頁，以及變更視覺效果、音訊和語音設定。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲
-ms.openlocfilehash: 177a9db67f304c163356a814b5c4d2e54ba4867d
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: ce4774f4a8f752d5e508d8daa66c050b2a6f28ca
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434619"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132112"
 ---
 # <a name="your-windows-mixed-reality-home"></a>您的 Windows Mixed Reality 首頁
 
@@ -73,7 +73,7 @@ Windows Mixed Reality 是第一個空間作業系統。 它會利用我們 insti
 
 ## <a name="turn-off-the-boundary"></a>關閉界限
 
-移至混合實境入口，然後開啟畫面左上方的功能表。 選取 [ **執行設定 > 空間界限**]。 將切換開關切換為 [關閉]。 如果關閉界限，您應該將它留在桌上。
+移至混合實境入口，然後開啟畫面左上方的功能表。 選取 [ **執行設定 > 空間界限** ]。 將切換開關切換為 [關閉]。 如果關閉界限，您應該將它留在桌上。
 
 ## <a name="spatial-sound-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 首頁的空間音效
 
@@ -84,7 +84,7 @@ Windows Mixed Reality 首頁包含空間音效模擬，其中每個應用程式�
 
 ## <a name="see-also"></a>另請參閱
 
-* [疑難排解 Windows Mixed Reality 首頁](set-up-questions.md#my-controllers-arent-showing-in-my-windows-mixed-reality-home)
+* [疑難排解 Windows Mixed Reality 首頁](wmr-setup-faq.md#my-motion-controllers-arent-working)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
 * [內外追蹤的運作方式](tracking-system.md)
 * [運動控制器的運作方式](controllers-in-wmr.md)

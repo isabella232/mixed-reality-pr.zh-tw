@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf02ccfc92d80ee1d1a8f6ca3d4ab55650f4a62c
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: 9c31f772baa434a4c14157ae91c97454f1910a3c
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93044443"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93131822"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>使用 Windows Mixed Reality 常見問題集
 
@@ -40,7 +40,7 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
 
 ## <a name="speech-commands-arent-working"></a>語音命令無法運作
 
-若要使用語音命令，您電腦的語音和語言設定必須設定為 [支援的 Windows Mixed Reality 區域和語言](wmr-setup-faq.md#what-languages-are-supported-in-windows-mixed-reality)。 若要檢查您的 Windows 區域和語言，請選取 [ **設定 > 時間] & 語言 > 區域 & 語言** 。 若要檢查您的語音語言，請選取 [ **設定] > 時間 & 語言 > 語音** ]。
+若要使用語音命令，您電腦的語音和語言設定必須設定為 [支援的 Windows Mixed Reality 區域和語言](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)。 若要檢查您的 Windows 區域和語言，請選取 [ **設定 > 時間] & 語言 > 區域 & 語言** 。 若要檢查您的語音語言，請選取 [ **設定] > 時間 & 語言 > 語音** ]。
 
 如果您的耳機沒有內建的 mic，請使用 mic 連接耳機或您的電腦。 當耳機直接連接到耳機時，若要自動將 mic 輸入切換到耳機，請選取 [ **設定] > 混合現實 > 音訊和語音** ，並確定 **當我磨損耳機時，切換到耳機 mic** 已開啟。
 
@@ -132,6 +132,6 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
 
 是否仍需要協助？ 如需 advanced 疑難排解的詳細說明，請參閱 [這篇文章](troubleshooting-windows-mixed-reality.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

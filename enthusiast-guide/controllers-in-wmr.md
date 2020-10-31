@@ -8,14 +8,14 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: d1cf8e56d19ef9ae62d9f83811e843f34b1c2d8c
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 892236c632d21620e48ced55d594bd059704a423
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434581"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132052"
 ---
-# <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的動作控制器
+# <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的運動控制器
 
 移動控制器是可讓使用者在混合現實中採取行動的硬體配件。 動作控制器優於手勢的優點是，控制器在空間中具有精確的位置，讓您能夠更精細地與數位物件互動。 針對 Windows Mixed Reality 沉浸式耳機，移動控制器是使用者將在其世界中採取行動的主要方式。
 
@@ -28,8 +28,8 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
 大部分耳機都會直接配對到耳機，但有些早期耳機需要使用藍牙4.0 將移動控制器配對到您的電腦。 當您第一次連接沉浸式耳機時，將會逐步引導您在安裝期間開啟您的動作控制器。 但是，如果您稍後需要重新配對它們，以下是：
 
 1. 啟動已連線到耳機的 **混合實境入口** 。  
-2. 在左下角選取 [...] **> 設定控制器**。
-3. 在每個控制器中插入 2 AA 電池，並讓控制器進入配對模式 (查看配對[動作控制器區段](controllers-in-wmr.md#Pair-motion-controllers)中的指示
+2. 在左下角選取 [...] **> 設定控制器** 。
+3. 在每個控制器中插入 2 AA 電池，並讓控制器進入配對模式 (查看配對[動作控制器區段](controllers-in-wmr.md#pair-motion-controllers)中的指示
 4. 遵循螢幕上提供的指示進行。
 
 > [!NOTE]
@@ -45,7 +45,7 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
 > 
 > 如果您有有線 Xbox 控制器，請將它插入您的電腦。
 > 
-> 有些遊戲和應用程式使用 Xbox 控制器的方式不同于混合現實的使用方式。 若要在遊戲或應用程式中使用控制器，請選取應用程式行上的 [ **做為遊戲台** ] 或 [做為遊戲台使用]。 若要將控制器切換回混合的實際情況，請選取 [ **做為遊戲台**]，再選取 [使用注視]。  
+> 有些遊戲和應用程式使用 Xbox 控制器的方式不同于混合現實的使用方式。 若要在遊戲或應用程式中使用控制器，請選取應用程式行上的 [ **做為遊戲台** ] 或 [做為遊戲台使用]。 若要將控制器切換回混合的實際情況，請選取 [ **做為遊戲台** ]，再選取 [使用注視]。  
 
 ## <a name="pair-motion-controllers"></a>配對移動控制器
 
@@ -59,7 +59,7 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
     ![移動控制器配對](images/connect_controller.png)
 
 啟動已連線到耳機的 **混合實境入口** 。  
-在左下角選取 [...] **> 設定控制器**。
+在左下角選取 [...] **> 設定控制器** 。
 依照畫面上的指示操作。
 
 ### <a name="pair-motion-controllers-to-pc"></a>將移動控制器配對至電腦
@@ -95,8 +95,8 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
 | --- | --- | --- | --- |
 | 傳送 | 按下操縱杆，然後將控制器指向您要前往的位置。 釋放操縱杆。 | 將左側的操縱杆向前按，然後查看您想要前往的位置。 釋放操縱杆。 | 按一下並按住右鍵，然後將滑鼠指向您要前往的位置。 放開按鈕。 |
 | 選取 | 指向控制器，然後提取觸發程式或按一下觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
-| 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按下 **Windows 標誌鍵**。 |
-| 離開沉浸式應用程式 | 按下 [ **Windows** ] 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ]。 | 按下 **Xbox** 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ] 按鈕。 | 按下 **Windows 標誌鍵**。然後，在顯示的 [快速動作] 功能表上選取 [ **混合現實首頁** ] 按鈕。 |
+| 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按下 **Windows 標誌鍵** 。 |
+| 離開沉浸式應用程式 | 按下 [ **Windows** ] 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ]。 | 按下 **Xbox** 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ] 按鈕。 | 按下 **Windows 標誌鍵** 。然後，在顯示的 [快速動作] 功能表上選取 [ **混合現實首頁** ] 按鈕。 |
 | Rotate | 將操縱杆向左或向右移動。 | 將右邊的向左或向右移動。 | 不適用。 |
 | 備份 | 將操縱杆向後移動。 | 向左移動。 | 不適用。 |
 | Walk | 向下推直杆，然後以您想要的方向按下它。 | 將左方朝下，然後以您想要的方向按下該按鈕。 | 不適用。 |
@@ -151,8 +151,10 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
 
 ## <a name="see-also"></a>另請參閱
 
-* [詢問社群](https://answers.microsoft.com)
-* [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
-* [疑難排解](troubleshooting-windows-mixed-reality.md)
+- [Unity 中的 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Unreal 中的 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [詢問社群](https://answers.microsoft.com)
+- [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
+- [疑難排解](troubleshooting-windows-mixed-reality.md)
 
 您的移動控制器有問題嗎？ [取得協助](motion-controller-problems.md)
