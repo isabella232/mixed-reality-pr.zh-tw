@@ -3,12 +3,12 @@ title: 設定 Windows Mixed Reality
 description: 如何設定您的 Windows Mixed Reality 動作控制器、語音和音訊，以及定義安全播放空間的房間界限。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、入門、設定、移動控制器、控制器、語音、音訊、站上、站上、界限、圖形驅動程式、Microsoft Edge、chromium
-ms.openlocfilehash: cd59fd34dd00edc98d209681cc1239895c36ada2
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
+ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434634"
+ms.lasthandoff: 10/31/2020
+ms.locfileid: "93132142"
 ---
 # <a name="set-up-windows-mixed-reality"></a>設定 Windows Mixed Reality
 
@@ -40,7 +40,7 @@ ms.locfileid: "92434634"
 
 如果您只打算使用 Xbox 遊戲台或鍵盤和滑鼠，您就不需要配對控制器。  如果您打算使用控制器，您應該將它們配對。
 
-**注意**： Windows Mixed Reality 移動控制器需要藍牙4.0。 如果您的電腦沒有內建藍牙，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。 如果您在耳機中使用內建的電臺，就不需要藍牙介面卡。
+**注意** ： Windows Mixed Reality 移動控制器需要藍牙4.0。 如果您的電腦沒有內建藍牙，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。 如果您在耳機中使用內建的電臺，就不需要藍牙介面卡。
 
 ![熟悉您的動作控制器](images/get_to_know_controllers.png)
 
@@ -50,9 +50,9 @@ ms.locfileid: "92434634"
 
 選擇會議室規模或辦公桌調整體驗：
 
-**選項1：將我設定為所有體驗 (也稱為房間規模) ** 可讓您在房間內四處移動，而且是最具沉浸式的混合現實體驗。 我們建議您清除至少5英尺 x 7 英尺 (1.5 計量 x 2 計量) 空間，以找出混合的實際情況。
+**選項1：將我設定為所有體驗 (也稱為房間規模)** 可讓您在房間內四處移動，而且是最具沉浸式的混合現實體驗。 我們建議您清除至少5英尺 x 7 英尺 (1.5 計量 x 2 計量) 空間，以找出混合的實際情況。
 
-**選項2：將我設定為已上線，而持續的 (也稱為服務台規模) ** 體驗將可在您的桌上型電腦上運作。 如果您的空間中沒有足夠的空間，這是個不錯的選項。 這也表示您將在沒有界限的情況下使用耳機。 您需要留在同一處，因為您沒有界限可協助您避免實體障礙。 此外，某些應用程式和遊戲可能會設計為搭配界限使用，因此可能無法如預期運作。
+**選項2：將我設定為已上線，而持續的 (也稱為服務台規模)** 體驗將可在您的桌上型電腦上運作。 如果您的空間中沒有足夠的空間，這是個不錯的選項。 這也表示您將在沒有界限的情況下使用耳機。 您需要留在同一處，因為您沒有界限可協助您避免實體障礙。 此外，某些應用程式和遊戲可能會設計為搭配界限使用，因此可能無法如預期運作。
 
 ![選擇安裝程式](images/1050px-chooseasetup.png)
 
@@ -100,7 +100,7 @@ ms.locfileid: "92434634"
 
 ## <a name="adjusting-your-headsets-display-settings"></a>調整您的耳機顯示設定
 
-Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡品質和效能的顯示設定。 若要調整這些設定，請移至 [ **設定] > Mixed Reality > 耳機顯示**。
+Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡品質和效能的顯示設定。 若要調整這些設定，請移至 [ **設定] > Mixed Reality > 耳機顯示** 。
 
 ### <a name="visuals"></a>視覺效果
 
@@ -113,8 +113,8 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 如果您將具有較高解析度的耳機連接 (例如，具有4320x2160 的耳機會顯示) 到您的電腦，您將會看到可調整混合現實顯示解析度的設定。
 
 * 這項設定會提供 Windows Mixed Reality 組合堆疊的選項，以原生方式轉譯 (例如，在 4320x2160) ，或讓撰寫堆疊以較低的解析度和精密呈現 (例如，在2880x1440 和精密轉譯為 4320x2160) 。
-* 預設設定是以原生方式轉譯 (例如， **4320 x 2160 (最佳品質) ** 選項) ，以提供您耳機的最佳視覺品質。
-* 如果您的電腦不符合具有較高解析度顯示之耳機的最小圖形硬體需求，以及/或如果您看到圖形效能問題，您可以嘗試使用 [選取 **自動消除倍增 (最佳效能]) ** 選項。
+* 預設設定是以原生方式轉譯 (例如， **4320 x 2160 (最佳品質)** 選項) ，以提供您耳機的最佳視覺品質。
+* 如果您的電腦不符合具有較高解析度顯示之耳機的最小圖形硬體需求，以及/或如果您看到圖形效能問題，您可以嘗試使用 [選取 **自動消除倍增 (最佳效能])** 選項。
 
 這項設定可在 Windows 10、1903版或更新版本上使用。
 
@@ -126,7 +126,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 此 advanced 設定會覆寫預設耳機顯示器的重新整理頻率體驗。
 
-* **自動 (預設) **：根據您電腦的硬體設定自動選取60Hz 或90Hz 體驗。
+* **自動 (預設)** ：根據您電腦的硬體設定自動選取60Hz 或90Hz 體驗。
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +138,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 此設定會控制 Windows Mixed Reality 的行為，以回應您的耳機狀態感應器：
 
 * **使用耳機狀態感應器自動切換** (預設) ： Windows 會在您佩戴耳機時，自動將輸入 (鍵盤、滑鼠 ... ) 到 Windows Mixed Reality。 您可以隨時使用 Win + Y 覆寫此項。
-* **使用 windows 標誌鍵 + Y 手動切換**： windows 將不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
+* **使用 windows 標誌鍵 + Y 手動切換** ： windows 將不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
 
 這項設定可在 Windows 10、1903版或更新版本上使用。
 
@@ -151,7 +151,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 ### <a name="issues-with-the-new-microsoft-edge-in-windows-mixed-reality"></a>Windows Mixed Reality 新 Microsoft Edge 的問題
 
-**2020-01 累積更新針對 Windows 10 1903 版 (或更新版本所解決的已知問題) **
+**2020-01 累積更新針對 Windows 10 1903 版 (或更新版本所解決的已知問題)**
 
 - 啟動任何 Win32 應用程式（包括新的 Microsoft Edge）都會使耳機顯示短暫地凍結。
 - Microsoft Edge 圖格會從 Windows Mixed Reality [開始] 功能表中消失， (您可以在 [傳統應用程式] 資料夾) 中找到它。
@@ -165,7 +165,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 - 在 Windows Mixed Reality 中開啟的網站將會在混合實境入口關閉時遺失，不過 Microsoft Edge 視窗仍會保留在混合實境首頁中的位置。
 - 未 hrtf 來自 Microsoft Edge windows 的音訊。
 - 修正于360檢視器延伸模組版本2.3.8：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 [展開] 按鈕，以確認您擁有的延伸模組版本。
-- 在 Windows Mixed Reality 會話期間，虛擬監視器會顯示為 [設定] **> 系統 > 顯示**中的一般實體監視器。
+- 在 Windows Mixed Reality 會話期間，虛擬監視器會顯示為 [設定] **> 系統 > 顯示** 中的一般實體監視器。
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>第一次啟動混合現實
 
@@ -176,7 +176,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
 * [安裝疑難排解](installation_errors.md)
-* [疑難排解設定](set-up-questions.md)
+* [疑難排解設定](wmr-setup-faq.md)
 * [學習混合實境](learn-mixed-reality.md)
 * [運動控制器](controllers-in-wmr.md)
 * [內外追蹤的運作方式](tracking-system.md)
