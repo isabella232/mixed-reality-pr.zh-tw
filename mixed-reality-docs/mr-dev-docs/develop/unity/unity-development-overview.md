@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件
-ms.openlocfilehash: ed6e3482194b17ec3b6dfa2abe309f3519c64662
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 006814c17d7e2e7c343f28b83de845674c079a95
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980309"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638565"
 ---
 # <a name="unity-development-overview"></a>Unity 開發概觀
 
@@ -21,7 +21,7 @@ ms.locfileid: "91980309"
 要在 [Unity](https://unity.com) 中建置[混合實境應用程式](../../design/app-views.md)，使用混合實境工具組是最快速的途徑。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 您也可以造訪內容豐富的[資產存放區](https://www.assetstore.unity3d.com/)和 [Unity 混合實境論壇](https://forum.unity3d.com/forums/hololens.102/)，與建置混合實境應用程式的線上社群交流。 您絕對想不到在這裡會發現哪些絕佳的資產或解決方案。 當您準備好開始使用 MRTK 時，請前往以下開發檢查點！
 
 > [!IMPORTANT]
-> 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-guides.md)** 。 對於使用 HTK、MRTK v1、SteamVR 的專案，或針對沉浸式頭戴裝置 (例如 Oculus Rift 或 HTC Vive) 開發的專案，我們都提供了相關指南。
+> 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。 對於使用 HTK、MRTK v1、SteamVR 的專案，或針對沉浸式頭戴裝置 (例如 Reverb G2、Oculus Rift、HTC Vive) 開發的專案，我們都提供了相關指南。
 
 ## <a name="development-checkpoints"></a>開發檢查點
 

@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發
-ms.openlocfilehash: 3b5dc5d0ce1510405960c6effd653acc9c2588b2
-ms.sourcegitcommit: 9ab467e36d7d9fad51b0e93a56038a6421a7b09d
+ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
+ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "91980339"
+ms.lasthandoff: 10/27/2020
+ms.locfileid: "92638585"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -27,6 +27,9 @@ ms.locfileid: "91980339"
 * Azure Spatial Anchors 的初始支援
 
 如果您不熟悉 Unreal 開發，請不要盲目跳入。 探索 Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">教學課程系列</a>，以快速了解並尋找 Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">市集</a>和混合實境<a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">論壇</a>中的資產和支援。 這些資源可將您連結至今日混合實境市集中建置者和問題解決者的社群。
+
+> [!IMPORTANT]
+> 如果您有現有 Unreal 專案要帶到 HoloLens 2 或沉浸式頭戴式裝置 (例如 Reverb G2)，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。
 
 ## <a name="development-checkpoints"></a>開發檢查點
 

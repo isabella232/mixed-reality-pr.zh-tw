@@ -1,20 +1,16 @@
 ---
-ms.openlocfilehash: 514062ea4b0343eae6d4e0b05097b4c65ca3de22
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
+ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91989608"
+ms.lasthandoff: 10/29/2020
+ms.locfileid: "92915536"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
 ![Unity](../images/unity_logo_banner.png)<br>
 
 使用 Unity 建置跨平台、功能完整的混合實境應用程式。 請參閱 [Unity 開發概觀](../unity/unity-development-overview.md)，開始進行適用於 HoloLens 或 Windows Mixed Reality 沉浸式頭戴裝置的 Unity 開發。
-
-## <a name="what-does-unity-offer"></a>Unity 提供什麼功能？
-
-Unity 是市場上領先的即時開發平台之一，其透過專用的[學習平台](https://unity.com/products/learn-premium)、[資產存放區](https://assetstore.unity.com/)、[完整文件](https://docs.unity3d.com/Manual/index.html)和蓬勃發展的社群來擴大生態系統。 Unity 的基礎執行階段程式碼是以撰寫 C++，但是所有開發指令碼都是以 C# 完成。 無論您想要打造遊戲、電影和動畫電影藝術，甚至要在虛擬世界中轉譯架構或工程概念，Unity 都有可支援您的基礎結構。
 
 ## <a name="available-hardware-platforms"></a>可用的硬體平台
 
@@ -42,13 +38,13 @@ Unity 是市場上領先的即時開發平台之一，其透過專用的[學習�
 
 ## <a name="cloud-services"></a>雲端服務
 
-有數個雲端服務可以整合到 Unity 內建的混合實境專案中，特別是 **Azure 遠端轉譯**和 **Azure Spatial Anchors**。 這些服務可以將共用的全像攝影內容和即時 3D 轉譯新增至您的應用程式，使其更吸引人且更適合您的使用者。
+有數個雲端服務可以整合到 Unity 內建的混合實境專案中，特別是 **Azure 遠端轉譯** 和 **Azure Spatial Anchors** 。 這些服務可以將共用的全像攝影內容和即時 3D 轉譯新增至您的應用程式，使其更吸引人且更適合您的使用者。
 
-這些服務全都涵蓋於 [Unity 開發旅程](../unity/unity-development-overview.md)的課程中，我們**強烈建議透過此途徑學習 Unity 的混合實境**。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unity/unity-development-overview.md#5-adding-services)。
+這些服務全都涵蓋於 [Unity 開發旅程](../unity/unity-development-overview.md)的課程中，我們 **強烈建議透過此途徑學習 Unity 的混合實境** 。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unity/unity-development-overview.md#5-adding-services)。
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-您可以使用 **Microsoft Dynamics 365 Guides**，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unity 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unity/unity-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
+您可以使用 **Microsoft Dynamics 365 Guides** ，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unity 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unity/unity-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
 
 ## <a name="examples"></a>範例
 
@@ -65,10 +61,6 @@ Unity 是市場上領先的即時開發平台之一，其透過專用的[學習�
 ![Unreal](../images/unreal_logo_banner.png)
 
 使用 Unreal 建置跨平台、功能完整的混合實境應用程式。 請參閱 [Unreal 開發概觀](../unreal/unreal-development-overview.md)，開始進行適用於 HoloLens 的 Unreal 開發。
-
-## <a name="what-does-unreal-offer"></a>Unreal 提供什麼功能？
-
-Unreal Engine 4 是功能強大的開放原始碼建立引擎，具備對 C++ 和 Blueprints 混合實境的完整支援。 從 Unreal Engine 4.25 開始，HoloLens 支援已具備完整功能且可供生產環境使用。
 
 ## <a name="available-hardware-platforms"></a>可用的硬體平台
 
@@ -96,13 +88,13 @@ Unreal Engine 4 是功能強大的開放原始碼建立引擎，具備對 C++ �
 
 ## <a name="cloud-services"></a>雲端服務
 
-在 Unreal 中建置混合實境應用程式時，您可以存取功能強大的雲端服務 **Azure Spatial Anchors**，用以在不同的裝置間新增、保存及共用全像攝影內容。 
+在 Unreal 中建置混合實境應用程式時，您可以存取功能強大的雲端服務 **Azure Spatial Anchors** ，用以在不同的裝置間新增、保存及共用全像攝影內容。 
 
-Azure Spatial Anchors 涵蓋於 [Unreal 開發旅程](../unreal/unreal-development-overview.md)的課程中，我們**強烈建議透過此途徑學習 Unreal 的混合實境**。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unreal/unreal-development-overview.md#5-adding-services)。
+Azure Spatial Anchors 涵蓋於 [Unreal 開發旅程](../unreal/unreal-development-overview.md)的課程中，我們 **強烈建議透過此途徑學習 Unreal 的混合實境** 。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unreal/unreal-development-overview.md#5-adding-services)。
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-您可以使用 **Microsoft Dynamics 365 Guides**，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unreal 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unreal/unreal-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
+您可以使用 **Microsoft Dynamics 365 Guides** ，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unreal 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unreal/unreal-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
 
 ## <a name="examples"></a>範例
 
@@ -121,10 +113,6 @@ WebXR 裝置 API 是一種開放的規格，可讓您在任何平台上您的瀏
  ![原生](../images/native_logo_banner.png)
 
 直接編寫 Windows Mixed Reality API 程式碼以建立混合實境應用程式。 請參閱[原生開發概觀](../native/directx-development-overview.md)，開始使用 OpenXR 或舊版 WinRT 進行適用於 HoloLens 2 或 Windows Mixed Reality 沉浸式頭戴裝置的原生應用程式開發。 Windows Mixed Reality API 支援以 C++ 和 C# 撰寫的應用程式，可讓您以任一種語言建置自己的架構或中介軟體。
-
-## <a name="what-does-openxr-offer"></a>OpenXR 提供什麼功能？
-
-OpenXR 是 Khronos 中開放且免權利金的 API 標準，可讓引擎以原生方式對多個跨混合實境頻譜的廠商存取其中各種裝置。 您可以在 HoloLens 2 上使用 OpenXR 或在電腦上使用 Windows Mixed Reality 沉浸式頭戴裝置進行開發。 如果您無法存取頭戴式裝置，則可使用適用於 HoloLens 2 和 Windows Mixed Reality 頭戴式裝置的模擬器。
 
 ## <a name="available-hardware-platforms"></a>可用的硬體平台
 
@@ -147,7 +135,7 @@ OpenXR 是 Khronos 中開放且免權利金的 API 標準，可讓引擎以原�
 
 |  工具/SDK  |  說明  |
 | --- | --- |
-| [OpenXR 開發人員工具](../native/openxr-getting-started.md#getting-the-windows-mixed-reality-openxr-developer-tools) | 提供一個示範場景來練習 OpenXR 的各種功能，以及一個系統狀態頁面，其中提供作用中執行階段和目前頭戴式裝置的重要資訊。 |
+| [OpenXR 開發人員工具](../native/openxr-getting-started.md#getting-the-openxr-developer-tools-for-windows-mixed-reality) | 提供一個示範場景來練習 OpenXR 的各種功能，以及一個系統狀態頁面，其中提供作用中執行階段和目前頭戴式裝置的重要資訊。 |
 | [OpenXR 規格](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html) |  描述 OpenXR 是什麼、其所提供的功能，以及如何在您自己的專案中加以實作。 |
 | [OpenXR 載入器](../native/openxr-getting-started.md#integrate-the-openxr-loader-into-a-project) | 探索裝置上的作用中 OpenXR 執行階段，以及提供其所實作核心功能和擴充功能的存取權。 |
 
@@ -157,3 +145,6 @@ OpenXR 是 Khronos 中開放且免權利金的 API 標準，可讓引擎以原�
 
 <!-- Go to actual GH link for more samples -->
 * [BasicXrApp](https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp) - 示範一個簡單的 OpenXR 範例，其中包含兩個 Visual Studio 專案檔，一個用於 Win32 桌面應用程式，另一個用於 UWP HoloLens 2 應用程式。
+
+您也可以觀看 60 分鐘的 BasicXrApp 逐步解說，此逐步解說會在 Visual Studio 中導覽 OpenXR API 的所有重要元件：
+>[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/OpenXR-Cross-platform-native-mixed-reality/player?format=ny]
