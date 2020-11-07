@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、全像影像、設計、互動
-ms.openlocfilehash: f5c42d197316169a99e388e40bf97a03682630ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5e0ef2768b6e79136f8144492d6825107a6ed88e
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682601"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340696"
 ---
 # <a name="what-is-a-hologram"></a>什麼是全像投影？
 
@@ -72,7 +72,7 @@ HoloLens 可讓您建立像是在世界各地出現在世界各地的全像 **�
 
 部分的全像是以使用者為依據。 無論使用者在何處進行，這些都是相對於使用者的標記投影位置。 您甚至可以選擇將一段時間帶到一段時間，然後在到達另一個房間之後，將它放在牆上。
 
-**最佳作法**
+**最佳做法**
 * 在某些案例中，您可能會要求在整個體驗中，全像全像的全像是， 這種定位有兩種高階方法。 讓我們將其稱為「 **顯示鎖定** 」和「 **主體鎖定** 」。
    * 顯示鎖定的內容會 positionally 「鎖定」至裝置顯示。 這很難處理許多原因，包括非自然感覺「clingyness」，讓許多使用者感到沮喪，並且想要「搖動」。 一般情況下，許多設計師都發現更適合用來避免顯示鎖定的內容。
    * 主體鎖定的方法遠 forgivable。 本文-鎖定是指將全像行動網卡至使用者的內文或注視向量，但位於使用者周圍的3d 空間中。 許多經驗都採用了內文鎖定行為，其中的全像是使用者注視的，這可讓使用者旋轉其內文，並在空間中移動，而不會遺失全像影像。 合併延遲有助於讓全息圖移動感覺更自然。 比方說，Windows 全像是 Windows 全像的時候，在使用者的外觀鎖定之後，會在使用者看起來像是一種非常有彈性的延遲，在使用者關閉其前端時使用變化。
@@ -126,8 +126,19 @@ HoloLens 可讓您建立像是在世界各地出現在世界各地的全像 **�
 
 ---
 
+## <a name="next-discovery-checkpoint"></a>下次探索檢查點
 
-## <a name="see-also"></a>另請參閱
+如果您正在關注我們所配置的 [探索旅程](get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [工作的新願景](https://dynamics.microsoft.com//mixed-reality/overview/)
+
+或跳至：
+
+> [!div class="nextstepaction"]
+> [追求更個人化的運算](../out-of-scope/case-study-the-pursuit-of-more-personal-computing.md)
+
+## <a name="see-also"></a>請參閱
 * [展開您的設計程序](case-study-expanding-the-design-process-for-mixed-reality.md)
 * [空間音效](../design/spatial-sound.md)
 * [色彩、光線和材質](../color,-light-and-materials.md)

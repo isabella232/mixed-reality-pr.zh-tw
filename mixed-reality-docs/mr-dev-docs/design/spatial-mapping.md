@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 空間對應、HoloLens、混合現實、表面重建、網格
-ms.openlocfilehash: 83c235cb7a5111be2b7e01d6c5864c1d06e9c6dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680469"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340666"
 ---
 # <a name="spatial-mapping"></a>空間對應
 
@@ -119,7 +119,7 @@ ms.locfileid: "91680469"
 
 您也必須考慮應用程式的 [掃描體驗](spatial-mapping.md#the-environment-scanning-experience) 會如何影響其物理模擬。 首先，遺漏的表面將不會與任何值衝突;當橡膠球在 corridor 和已知世界結束時，會發生什麼事？ 其次，您必須決定是否會在一段時間內繼續回應環境中的變更。 在某些情況下，您會想要儘快回應;比方說，如果使用者使用門和傢俱作為內送羅馬箭號 tempest 的可移動 barricades。 但在其他情況下，您可能會想要忽略新的更新;如果您的狗決定坐在播放軌的中間，讓您的全像 racetrack 在地面上推動您的全像運動車，可能突然不太有趣。
 
-### <a name="navigation"></a>巡覽
+### <a name="navigation"></a>導覽
 
 應用程式可以使用空間對應資料來授與全息字元 (或代理程式) 能夠以真實人員的相同方式流覽真實世界。 這有助於加強全像攝影字元的存在，方法是將其限制為與使用者和朋友的相同自然、熟悉的行為集合。
 
@@ -369,7 +369,14 @@ ms.locfileid: "91680469"
 * 為了讓介面網格正確源，每個 GameObject 都必須在使用中，然後才會將它傳送至 SurfaceObserver，以建立其網格。 否則，網格會顯示在您的空間中，但以怪角度旋轉。
 * 執行與 SurfaceObserver 通訊之腳本的 GameObject 必須設定為來源。 否則，您建立並傳送給 SurfaceObserver 的所有 Gameobject 都有其格線，其位移等於父遊戲物件的位移。 這可以讓您的網格顯示數個計量，讓您很難進行處理。
 
-## <a name="see-also"></a>另請參閱
+## <a name="next-discovery-checkpoint"></a>下次探索檢查點
+
+如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [建議物件的縮放比例 - (縮放比例)](../design/scale.md)
+
+## <a name="see-also"></a>請參閱
 * [座標系統](coordinate-systems.md)
 * [DirectX 中的空間對應](../develop/native/spatial-mapping-in-directx.md)
 * [Unity 中的空間對應](../develop/unity/spatial-mapping-in-unity.md)

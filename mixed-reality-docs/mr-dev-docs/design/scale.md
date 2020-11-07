@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、樣式、設計
-ms.openlocfilehash: a9a02d681986df3d73c7990fc975e659e5326981
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679428"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340656"
 ---
 # <a name="scale"></a>調整
 
@@ -80,7 +80,19 @@ ms.locfileid: "91679428"
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="next-discovery-checkpoint"></a>下次探索檢查點
+
+如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會結束形式突襲行動混合現實基礎的初始工作。 您可以看看產業合作夥伴在現實世界中的混合現實情況： 
+
+> [!div class="nextstepaction"]
+> [查看產業合作夥伴如何使用混合實境](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
+
+或繼續進行設計旅程：
+
+> [!div class="nextstepaction"]
+> [開始您的設計旅程](../design/design.md)
+
+## <a name="see-also"></a>請參閱
 * [色彩、光線和材質](../color,-light-and-materials.md)
 * [印刷樣式](typography.md)
 * [空間音效設計](spatial-sound-design.md)

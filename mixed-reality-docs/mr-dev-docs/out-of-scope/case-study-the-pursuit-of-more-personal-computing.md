@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、個案研究、願景、案例
-ms.openlocfilehash: 9e142d72866079e34e6f4a8df78b79d6f846275e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e08026dbb490f8581118b1bf6351231eeffba92a
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681000"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340676"
 ---
 # <a name="case-study---the-pursuit-of-more-personal-computing"></a>個案研究-追求更多個人運算的能力
 
@@ -150,12 +150,24 @@ Volvo 建立了展示其最新汽車模型的體驗， (immersing 使用者的�
 
 我們很難說，「混合式」的未來未來會看起來像是取用者，但專注于獨特的問題、實際的硬體實際操作， **並 *立即* 試用混合現實、語音和 AI 之間的交集** 。 Microsoft 剛開始使用 mixed reality，但從現今的企業經驗中學習，將可協助您建立未來的體驗。
 
+## <a name="next-discovery-checkpoint"></a>下次探索檢查點
+
+如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [沉浸式、人體工學、直覺式和不受限制](https://www.microsoft.com//hololens/hardware)
+
+或跳至混合現實的核心體驗：
+
+> [!div class="nextstepaction"]
+> [讓使用者感到舒適 - (舒適)](../design/comfort.md)
+
 ## <a name="about-the-author"></a>關於作者
 
 <table style="border-collapse:collapse">
 <tr>
 <td style="border-style: none" width="60" padding-left="0px"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Mark Vitazko</b><br>UX 設計工具 @Microsoft</td>
+<td style="border-style: none"><b>Mark Vitazko</b><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>
  

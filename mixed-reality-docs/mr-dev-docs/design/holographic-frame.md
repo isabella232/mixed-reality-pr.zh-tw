@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens、Windows Mixed Reality、全像攝影框架、視野
-ms.openlocfilehash: 516d9255fbc8067f42e17125d41240c9ba49a33b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680809"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340636"
 ---
 # <a name="holographic-frame"></a>全像攝影框架
 
@@ -139,9 +139,16 @@ Lowe 的商店體驗邀請客戶進入廚房的全大規模原型，以展示透
 
 實際的口頭表達方式提供了功能強大的焦點，並利用微妙的技巧來將您的消息轉變成使用者，像是您所說的一樣。 當使用者移動經驗時，如果使用者移到他的其邊界以外的範圍，則會在返回中性狀態之前，先將您導向至閾值。 如果使用者從內容中看起來完全 (比方說，若要查看場景中其他地方) 再回頭看看，朗讀程式的方向位置將會再次以使用者為主。 這類技術可提供強大的深度功能，並在全像全像的框架內建立焦點，減少過多的前端移動並提升 [使用者的舒適](comfort.md)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="next-discovery-checkpoint"></a>下次探索檢查點
+
+如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [讓全像攝影物件感覺真實 - (空間對應)](../design/spatial-mapping.md)
+
+## <a name="see-also"></a>請參閱
 * [本能互動](interaction-fundamentals.md)
 * [舒適度](comfort.md)
-* [調整](scale.md)
+* [縮放比例](scale.md)
 * [頭部目光和停駐](gaze-and-dwell.md)
 * [全像投影穩定性](../develop/platform-capabilities-and-apis/hologram-stability.md)
