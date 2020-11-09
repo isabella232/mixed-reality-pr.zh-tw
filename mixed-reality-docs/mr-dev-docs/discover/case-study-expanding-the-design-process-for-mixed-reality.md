@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、處理、個案研究
-ms.openlocfilehash: ee6bf2ad9f76e25c678458ca00505a95b406bfc6
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: f08115879d09d0be7ef8cae12ea0a4c15991a576
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293188"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386244"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>以不同的方式思考混合現實
 當 Microsoft 推出 HoloLens (第1代) 至2016中的積極開發人員物件時，該團隊已經與 Microsoft 內外的工作室合作，打造出裝置的啟動體驗。 這些團隊藉由實踐，在混合實境設計的新領域中找到機會和挑戰。
@@ -127,6 +127,13 @@ Bodystorming 是一種技術，可用來快速產生想法，並評估太含糊�
 * 麻線
 * 鉛筆
 * Sharpies
+
+## <a name="next-discovery-checkpoint"></a>下次探索檢查點
+
+如果您正在關注我們所配置的 [探索旅程](get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [使用者緩和](../design/comfort.md)
 
 ## <a name="see-also"></a>另請參閱
 * [個案研究-我在 HoloLens 設計團隊的第一年](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)

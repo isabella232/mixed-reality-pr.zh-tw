@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity，混合現實，開發，使用者入門，新專案
-ms.openlocfilehash: 3ddca223df94f4aa748ee510c3198389acecdedc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f1465dcb31718b9d3faeb64d24e33d9f9ffeb7cc
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679075"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386214"
 ---
 # <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>針對 Windows Mixed Reality 設定新的 Unity 專案 
 
@@ -19,7 +19,7 @@ ms.locfileid: "91679075"
 
 Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft 平臺。 WMR 平臺可讓您建立應用程式，以在全像全像 VR 的顯示裝置上呈現數位內容。
 
-設定 WMR 時，您可以採用兩個路徑。 第一個選項是安裝 [混合現實工具](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) 組 (MRTK) v2，這會自動設定 WMR 環境。 第二個選項是手動變更一些 Unity 設定，以使用 WMR 進行滾動。 
+設定 WMR 時，您可以採用兩個路徑。 第一個選項是安裝 [混合現實工具組 (MRTK) ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)，這會自動設定 WMR 環境。 第二個選項是手動變更一些 Unity 設定，以使用 WMR 進行滾動。 
 
 > [!NOTE]
 > 您稍後可以隨時匯入 MRTK，如此一來，就不會再進行手動路由。
@@ -36,7 +36,7 @@ Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft
 5. 將 **組建類型** 設定為 **D3D**
 6. 將 **UWP SDK** 設定為 **最新安裝**
 
-![Unity XR 設定](images/unity-uwp-settings.png)<br>
+<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
 *Unity XR 設定*
 
 當平臺設定正確之後，您需要讓 Unity 知道您的應用程式應該在匯出時建立一個 [沉浸式視圖](../../design/app-views.md) ，而不是2d 視圖：
@@ -91,5 +91,7 @@ HoloLens 有行動類別 GPU。 如果您的應用程式是以 HoloLens 為目�
 > 如果您刪除並建立新的相機，請確定您的新相機已標記為 **MainCamera** 。
 
 ## <a name="see-also"></a>另請參閱
-* [混合實境工具組 v2](mrtk-getting-started.md)
+* [MRTK-安裝指南 (GitHub) ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK-檔首頁 (GitHub) ](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [安裝工具](../install-the-tools.md)
 * [Unity 開發總覽](unity-development-overview.md)
