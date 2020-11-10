@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散佈, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本概念, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動
-ms.openlocfilehash: 7333163a01496f41c4cb3cd98f54012e5c58a8d4
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
+ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293124"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94361686"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型
 
@@ -88,17 +88,17 @@ ms.locfileid: "92293124"
         瞭解如何使用 Unity 建立互動式體驗。 邊做邊學，從開始到完成。
     :::column-end:::    
     :::column:::    
-        [![混合實境工具組 (MRTK)](images/Final_mrtk-small_logo.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
+        [![混合實境工具組 (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
         **[混合實境工具組 (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
         透過混合實境工具組的空間互動和 UI 基本要素，您可以使用 Unity 快速進行混合實境的設計和開發。   
     :::column-end:::
     :::column:::    
-        [![混合實境設計實驗室](images/Final_mrdl_logo.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        [![混合實境設計實驗室](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
         **[混合實境設計實驗室](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
         取得範例應用程式，示範如何使用 MRTK 的建置元素來建立美觀的混合實境體驗。
     :::column-end:::        
     :::column:::    
-        [![Microsoft Maquette](images/Final_maquette_logo.png)](https://www.maquette.ms/)<br>
+        [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  
         為 VR 而設計。 Microsoft Maquette 讓空間原型設計變得簡單、快速、身歷其境。 
     :::column-end:::    
@@ -112,22 +112,22 @@ ms.locfileid: "92293124"
 
 :::row:::
     :::column:::
-       [![了解基本概念](images/icon-lightbulb.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
+       [![了解基本概念](images/74-15.png)](../discover/get-started-with-mr.md#understand-the-basics)<br>
         **[了解基本概念](../discover/get-started-with-mr.md#understand-the-basics)**<br>
         進一步瞭解混合實境的定義以及其使用方式。
     :::column-end:::
     :::column:::
-        [![參加活動](images/icon-calendar.jpg)](../whats-new/sf-academy-events.md)<br>
+        [![參加活動](images/74-16.png)](../whats-new/sf-academy-events.md)<br>
          **[參加活動](../whats-new/sf-academy-events.md)**<br>
         參觀硬體並取得實際操作教學課程，製作您的第一個 HoloLens 2 應用程式。
     :::column-end:::
     :::column:::
-        [![安裝工具](images/icon-design.png)](../develop/install-the-tools.md)<br>
+        [![安裝工具](images/74-17.png)](../develop/install-the-tools.md)<br>
          **[安裝工具](../develop/install-the-tools.md)**<br>
         使用安裝檢查清單來取得建置 HoloLens 和混合實境應用程式所需的工具。
     :::column-end:::
     :::column:::
-        [![開始進行開發](images/icon-developer.png)](../develop/development.md)<br>
+        [![開始進行開發](images/74-18.png)](../develop/development.md)<br>
         **[開始進行開發](../develop/development.md)**<br>
         根據您的技能層級、工作風格或感興趣的平台，選擇開發路徑。
     :::column-end:::
