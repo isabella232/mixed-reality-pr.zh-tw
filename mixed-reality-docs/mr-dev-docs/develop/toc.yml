@@ -22,7 +22,7 @@
       href: unity/unity-development-overview.md
     - name: 開始使用
       items:
-        - name: 開始使用混合實境工具組 v2
+        - name: 開始使用 MRTK
           href: unity/mrtk-getting-started.md
         - name: 設定 Windows Mixed Reality 的 Unity 專案
           href: unity/configure-unity-project.md
@@ -170,7 +170,7 @@
               href: unity/tutorials/mr-azure-301.md
     - name: 核心基本要素
       items:
-        - name: MRTK 101 - 如何使用混合實境工具組 Unity 進行基本互動
+        - name: MRTK 101 - 使用混合現實工具組 Unity 建立核心互動
           href: unity/mrtk-101.md
         - name: Unity 中的相機
           href: unity/camera-in-unity.md
