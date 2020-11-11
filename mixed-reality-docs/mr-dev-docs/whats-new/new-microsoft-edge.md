@@ -5,19 +5,19 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
-keywords: edge、全新、沉浸式 web、microsoft edge、browser、vr
-ms.openlocfilehash: 0f4ecdd26624e9b1e5b8e151e1ac074ece9c9769
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: edge、new、沉浸式 web、microsoft edge、browser、vr、360、360 video、360 viewer、webxr、webvr
+ms.openlocfilehash: b20d21a3cd4cc77af86021e2b82555ba9c48478e
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499583"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520775"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality 和新的 Microsoft Edge
 
 [新的 Microsoft Edge 現在已可供下載](https://blogs.windows.com/windowsexperience/?p=173496)，但客戶也可以在未來的幾個月內依照測量出的推出方法，[在未來的更新中等待它安裝 Windows 10](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/)。 
 
-在這段新聞中， **我們想要讓 WINDOWS MIXED REALITY VR 耳機客戶知道新 Microsoft Edge 的期望，並通知您一些可在 Windows Mixed Reality 中改善網頁流覽體驗的暫止更新**。
+在這段新聞中， **我們想要讓 WINDOWS MIXED REALITY VR 耳機客戶知道新 Microsoft Edge 的期望，並通知您一些可在 Windows Mixed Reality 中改善網頁流覽體驗的暫止更新** 。
 
 ## <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
 
@@ -28,9 +28,9 @@ ms.locfileid: "92499583"
 
 ## <a name="getting-ready-for-the-new-microsoft-edge"></a>準備迎接新的 Microsoft Edge
 
-如果您想要在混合實境首頁中使用新 Microsoft Edge 的 Windows Mixed Reality VR 耳機客戶應該 **升級至 Windows 10 1903 版或更新版本，以進行 Win32 應用程式的原生支援， (例如 Microsoft Edge 中的新) 混合實境首頁 ** 。 請檢查 Windows Update 或 [手動安裝最新版本的 Windows 10](https://www.microsoft.com/en-us/software-download/windows10)。
+如果您想要在混合實境首頁中使用新 Microsoft Edge 的 Windows Mixed Reality VR 耳機客戶應該 **升級至 Windows 10 1903 版或更新版本，以進行 Win32 應用程式的原生支援， (例如 Microsoft Edge 中的新) 混合實境首頁** 。 請檢查 Windows Update 或 [手動安裝最新版本的 Windows 10](https://www.microsoft.com/en-us/software-download/windows10)。
 
-為了充分利用混合實境首頁中的最佳 Microsoft Edge 經驗，我們也建議您等候 **新 Microsoft Edge 的一些關鍵 Windows Mixed Reality 優化，以取得 Windows 10 1903 版或更新版本 (的2020-01 累積更新 **，這應該會在1月底的) 中提供。
+為了充分利用混合實境首頁中的最佳 Microsoft Edge 經驗，我們也建議您等候 **新 Microsoft Edge 的一些關鍵 Windows Mixed Reality 優化，以取得 Windows 10 1903 版或更新版本 (的2020-01 累積更新** ，這應該會在1月底的) 中提供。
 
 >[!IMPORTANT]
 >如果您選擇在進行這些更新之前下載新的 Microsoft Edge，在 Windows Mixed Reality (中將會有一些已知問題，您可以在下面) 閱讀相關資訊。
@@ -81,6 +81,6 @@ ms.locfileid: "92499583"
 ### <a name="additional-known-issues"></a>其他已知問題
 
 -   在 Windows Mixed Reality 中開啟的網站將會在混合實境入口關閉時遺失，不過 Microsoft Edge 視窗仍會保留在混合實境首頁中的位置。
-- 具有混合式 GPU 設定的電腦上可能無法正確啟動 WebXR 體驗，包括360檢視器擴充功能。 您可以藉由在圖形配接器軟體中選取您專用的 GPU 作為預設 GPU，來解決此問題。
+- 具有混合式 GPU 設定的電腦上可能無法正確啟動 WebXR 體驗，包括360檢視器擴充功能。 您可以在新的 Microsoft Edge 中啟用預覽功能，以解決此問題。 流覽至 `edge://flags` ，並搜尋「多重 gpu」，並啟用稱為 **WEBXR 多重 gpu 支援** 的旗標。
 -   未 hrtf 來自 Microsoft Edge windows 的音訊。
--   **修正于360檢視器延伸模組版本 2.3.8**：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 **展開** 按鈕，以確認您擁有的延伸模組版本。
+-   **修正于360檢視器延伸模組版本 2.3.8** ：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 **展開** 按鈕，以確認您擁有的延伸模組版本。

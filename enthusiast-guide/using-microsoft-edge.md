@@ -3,15 +3,15 @@ title: 在 Windows Mixed Reality 中使用 Microsoft Edge
 description: 準備好開始進行新的 Microsoft Edge Windows Mixed Reality。 包含預期的變更、要尋找的更新，以及已知問題。
 author: mattzmsft
 ms.author: mazeller
-ms.date: 08/04/2020
+ms.date: 11/11/2020
 ms.topic: article
-keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲、Microsoft Edge、chromium、邊緣
-ms.openlocfilehash: 40f5f57883c5d8ad1a03076411a077deb9979c71
-ms.sourcegitcommit: 1aae69e26ae872b724be1bd1ae0b3158c49dc7e2
+keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲、Microsoft Edge、chromium、Edge、360、360影片、360檢視器
+ms.openlocfilehash: 0498a48136718c19848fa79638ea771051345528
+ms.sourcegitcommit: 434ed0621af05307bb67b15cabf164561ec96ead
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/24/2020
-ms.locfileid: "92499563"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94520765"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality 和新的 Microsoft Edge
 
@@ -24,7 +24,7 @@ ms.locfileid: "92499563"
 
 ## <a name="installing-the-new-microsoft-edge"></a>安裝新的 Microsoft Edge 
 
-在安裝新的 Microsoft Edge 之前，請 **升級為 Windows 10 1903 版或更新版本，以提供 Win32 應用程式的原生支援 (例如) 中的新 Microsoft Edge Windows Mixed Reality ** 。 請檢查 Windows Update 或 [手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)。
+在安裝新的 Microsoft Edge 之前，請 **升級為 Windows 10 1903 版或更新版本，以提供 Win32 應用程式的原生支援 (例如) 中的新 Microsoft Edge Windows Mixed Reality** 。 請檢查 Windows Update 或 [手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)。
 
 Windows 10 1903 版或更新版本之後，您就可以開始使用新的 Microsoft Edge！ 新 Microsoft Edge 是透過 Windows Update 推出，但如果您想要更快，可以從 [Microsoft Edge 網站](https://www.microsoft.com/edge) 手動安裝新的 Microsoft Edge。
 
@@ -77,6 +77,6 @@ Windows 10 1903 版或更新版本之後，您就可以開始使用新的 Micros
 ### <a name="additional-known-issues"></a>其他已知問題
 
 -   在 Windows Mixed Reality 中開啟的網站將會在混合實境入口關閉時遺失，不過 Microsoft Edge 視窗仍會保留在混合實境首頁中的位置。
-- 具有混合式 GPU 設定的電腦上可能無法正確啟動 WebXR 體驗，包括360檢視器擴充功能。 您可以藉由在圖形配接器軟體中選取您專用的 GPU 作為預設 GPU，來解決此問題。
+- 具有混合式 GPU 設定的電腦上可能無法正確啟動 WebXR 體驗，包括360檢視器擴充功能。 您可以在新的 Microsoft Edge 中啟用預覽功能，以解決此問題。 流覽至 `edge://flags` ，並搜尋「多重 gpu」，並啟用稱為 **WEBXR 多重 gpu 支援** 的旗標。
 -   未 hrtf 來自 Microsoft Edge windows 的音訊。
--   **修正于360檢視器延伸模組版本 2.3.8**：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 **展開** 按鈕，以確認您擁有的延伸模組版本。
+-   **修正于360檢視器延伸模組版本 2.3.8** ：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 **展開** 按鈕，以確認您擁有的延伸模組版本。
