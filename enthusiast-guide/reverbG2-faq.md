@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
-ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
+ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
+ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94482396"
+ms.lasthandoff: 11/11/2020
+ms.locfileid: "94498283"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -68,11 +68,7 @@ HP 建議：
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>為什麼我的 HP 運動控制器模型未在遊戲中正確顯示
 
-雖然許多遊戲都會立即與 HP 運動控制器搭配運作，但有些遊戲有現有控制器功能的相依性，因此可能會有一些問題：
-
-- 顯示錯誤的模型：修正此問題需要遊戲更新。 這通常不會封鎖遊戲的任何功能，但可能會導致混淆或甚至是視覺效果的構件。
-- 對觸控板的相依性，通常是在控制器的輸入版面配置上。 SteamVR 可讓您建立自訂系結，以協助規避這類問題：
-    - SteamVR Windows Mixed Reality 包含一些遊戲的自訂系結。 當遊戲啟動時，不需要使用者動作，就會自動使用這些系結。
+雖然大部分的遊戲都不會顯示控制器或使用驅動程式所安裝的模型，但有些遊戲會使用自己的控制器型號版本，以自訂它們或顯示可用輸入的內容相關說明。 這通常不會封鎖遊戲的任何功能，但可能會導致混淆或甚至是視覺效果的構件。 這只能透過遊戲本身的更新來修正。
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>我的 SteamVR 遊戲似乎無法正常搭配我的 HP 運動控制器運作
 
