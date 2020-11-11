@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82f9accc8e24574faf7c826aff1908bea7350b08
-ms.sourcegitcommit: feceb21018ce1d966188a34bd1faeddfdc1b9544
+ms.openlocfilehash: c24f6766cab242332e79a0c5cf5ed3cd92c4687d
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93049468"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482396"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -73,3 +73,16 @@ HP 建議：
 - 顯示錯誤的模型：修正此問題需要遊戲更新。 這通常不會封鎖遊戲的任何功能，但可能會導致混淆或甚至是視覺效果的構件。
 - 對觸控板的相依性，通常是在控制器的輸入版面配置上。 SteamVR 可讓您建立自訂系結，以協助規避這類問題：
     - SteamVR Windows Mixed Reality 包含一些遊戲的自訂系結。 當遊戲啟動時，不需要使用者動作，就會自動使用這些系結。
+
+## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>我的 SteamVR 遊戲似乎無法正常搭配我的 HP 運動控制器運作
+
+雖然開發人員致力於更新其遊戲以進行 HP 運動控制器相容性，但我們為串流上許多最受歡迎的遊戲提供了自訂控制器系結。 使用 "Windows Mixed Reality for SteamVR" 完全更新至版本1.2.444 時，應會在遊戲執行時自動挑選這些系結。 但是，如果您的遊戲目前似乎沒有註冊您的動作，您可以使用 [SteamVR 設定] 功能表手動搜尋自訂系結設定檔。
+若要執行此工作
+
+- 按下右邊的動作控制器的功能表按鈕，開啟 [SteamVR] 功能表
+- 選取 [SteamVR] 功能表右下角的 [設定] 圖示
+- 選取 [控制器] 索引標籤
+- 選取 [管理控制器系結] 選項
+
+您可以從這裡將作用中控制器系結變更為「自訂」，這會開啟用來嘗試共用遊戲系結的選項。
+如果 (尚未在此遊戲中共用任何自訂遊戲系結，或您未完全滿意所嘗試的) ，您也可以建立自己的自訂遊戲系結，甚至在幾個遊戲會話之後共用這些系結來協助其他人。
