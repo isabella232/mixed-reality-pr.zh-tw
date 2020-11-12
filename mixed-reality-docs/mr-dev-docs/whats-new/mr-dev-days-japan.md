@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 7d840c3f4f12f679dc7ca7622f906f3282ec785b
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
+ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386414"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94549111"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>混合現實開發天數日本
 
@@ -29,14 +29,12 @@ ms.locfileid: "94386414"
 
 ## <a name="registration"></a>註冊
 
-[立即報名](https://mixedrealityprod.microsoftcrmportals.com/MRDDRegistration/)
-
-我們很高興能為您的混合現實開發日日本開立註冊。  此活動是免費的，且在線上的 Microsoft 團隊實況活動中保持上線。  我們要求出席者註冊，以便在事件更接近時傳送電子郵件更新，讓您可以參與活動的互動式元素。
-
+即將推出
 
 ## <a name="schedule---subject-to-change"></a>排程-可能變更
 
 **所有時間都是日本標準時間 (UTC + 9)** 
+
 
 
 ### <a name="december-16th"></a>12月16日
@@ -44,22 +42,22 @@ ms.locfileid: "94386414"
 |---------|---------|---------|---------|---------|
 |10：上午 10:00-10：50am|開啟演講|TBD|JA-JP|N/A|
 |10： 50am-11：上午10:00|**打破**||||
-|11：上午 10:00-11：25am|*會話 1* 什麼是混合現實？您可以用 HL2 來做什麼？MR 技術堆疊|TBD|JA|100|
-|11： 30am-11：55am|*會話 2* 與客戶和合作夥伴個案研究的日本商業市場動力更新|TBD|JA|200|
-|12： 00-12：50pm|*午餐研討會* 面板：互動式免費討論、問與答、MRTK + Oculus 的追求2|TBD|JA|200|
+|11：上午 10:00-11：25am|*會話 1* 什麼是混合現實？您可以用 HL2 來做什麼？MR 技術堆疊|: Atsushi Suzuki|JA|100|
+|11： 30am-11：55am|*會話 2* 與客戶和合作夥伴個案研究的日本商業市場動力更新|Tetsu Muranaka|JA|200|
+|12： 00-12：50pm|*午餐研討會* 面板：互動式免費討論、問與答、MRTK + Oculus 的追求2|Madoka Chiyoda + Microsoft Mvp|JA|200|
 |12： 50pm-1：00|**打破**||||
-|1： 00-1：25pm|*會話 3* HoloLens 2 開發的總覽|TBD|JA|200|
-|1： 30pm-1：55pm|*會話 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity) |TBD|JA|300|
-|2： 00-2：20pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |TBD|EN|300|
-|2： 30pm-2：55pm|*會話 6* MR 應用程式設計 (建立 HL2 應用程式 UI/UX) 的最佳作法|TBD|EN|300|
+|1： 00-1：25pm|*會話 3* HoloLens 2 開發的總覽|Madoka Chiyoda|JA|200|
+|1： 30pm-1：55pm|*會話 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity) |Yoon 公園|JA|300|
+|2： 00-2：20pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
+|2： 30pm-2：55pm|*會話 6* MR 應用程式設計 (建立 HL2 應用程式 UI/UX) 的最佳作法|Daniel Escudero|EN|300|
 |2： 55pm-3：下午5:15|**打破**||||
 |3：下午 5:15-3：40pm|*會話 7* Azure 物件錨點|TBD|EN|300|
-|3：下午5:45 執行-4：下午10點|*會話 8* Azure 遠端轉譯|TBD|JA|300|
+|3：下午5:45 執行-4：下午10點|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
 |4：下午 5:15-4：40pm|*課程 9* Azure 空間錨點|TBD|EN|300|
-|4：下午5:45 執行-5：下午10點|*會話 10* 世界鎖定工具|TBD|EN|300|
-|5：下午 5:15-5：40pm|*會話 11* Azure Kinect DK 深入探討，個案研究|TBD|JA|400|
-|5：下午5:45 執行-6：00|關閉|TBD|JA|NA|
-||||||
+<!--|4：下午5:45 執行-5：下午10點|*會話 10* Unity + PiXYZ| (Unity 日本) |JA|200|-->
+|4：下午5:45 執行-5：下午10點|*會話 10* 待定|TBD|JA|200|
+|5：下午 5:15-5：40pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
+|5：下午5:45 執行-6：00|關閉|Madoka Chiyoda|JA|NA|
 
 #### <a name="contributors-english-subtitle-reviewers"></a>參與者 (英文副標題審核者) 
 
