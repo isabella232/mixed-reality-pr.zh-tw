@@ -1,18 +1,18 @@
 ---
 title: 入門教學課程 - 7。 與 3D 物件互動
-description: 本課程說明如何使用混合實境工具組 (MRTK) 來建立混合實境應用程式。
+description: 本課程說明如何使用混合實境工具組 (MRTK) 來與 3D 物件互動。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 0cedd731fc795341532a8a330f4fdcce9fba47b0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696327"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353516"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -53,7 +53,7 @@ ms.locfileid: "91696327"
 * **NearInteractionGrabbable** 元件
 * **Part Assembly Controller (指令碼)** 元件
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-1.png)
+![已選取 RoverAssembly 和所有 Rover 組件物件並已新增元件的 Unity](images/mr-learning-base/base-07-section1-step1-1.png)
 
 > [!TIP]
 > 若要選取非連續的多個物件，請按住 CTRL 鍵並使用滑鼠選取任何物件。
@@ -68,14 +68,14 @@ ms.locfileid: "91696327"
 
 * 從 [兩手操作類型] 下拉式清單中，取消核取 [縮放]，只啟用 [移動] 和 [選轉]
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-2.png)
+![已設定 [雙手操作類型] 的 Unity](images/mr-learning-base/base-07-section1-step1-2.png)
 
 > [!NOTE]
 > 此時，您已針對所有 Rover 零件物件和 RoverAssembly 物件啟用物件操作。
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK] > [SDK] > [StandardAssets] > [Audio] 資料夾，以找出音訊剪輯：
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-3.png)
+![已選取 [音訊] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-07-section1-step1-3.png)
 
 在 [階層] 視窗中，重新選取所有 **Rover 零件物件** ，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **音訊來源** 元件，並進行以下設定：
 
@@ -83,13 +83,13 @@ ms.locfileid: "91696327"
 * 取消核取 [喚醒時播放] 核取方塊
 * 將 [空間混合] 變更為 1
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-4.png)
+![已選取所有 Rover 組件並已新增和設定音訊來源元件的 Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
 在 [階層] 視窗中，展開 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 物件，以顯示所有位置提示物件，選取第一個 Rover 零件 RoverParts > **Camera_Part** ，然後設定 **Part Assembly Controller (指令碼)** 元件，如下所示：
 
 * 將 **Camera_PlacementHint** 物件指派給 [要放置的位置] 欄位
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-5.png)
+![已設定 Camera_Part PartAssemblyController 元件的 Unity](images/mr-learning-base/base-07-section1-step1-5.png)
 
 針對其餘每個 Rover 零件物件和 RoverAssembly 物件 **重複** 此步驟，以設定 **Part Assembly Controller (指令碼)** 元件，如下所示：
 
@@ -104,11 +104,11 @@ ms.locfileid: "91696327"
 * 將 **RoverAssembly** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [PartAssemblyController] > [ResetPlacement ()]，以將此函式設定為觸發事件時所要執行的動作
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-6.png)
+![已設定 [重設] 按鈕物件 OnClick 事件的 Unity](images/mr-learning-base/base-07-section1-step1-6.png)
 
 如果您現在進入遊戲模式，您可以使用近或遠的互動來將 Rover 零件放在 Rover 上。 零件會在接近對應的放置提示時，貼齊位置並成為 Rover 的一部分。 若要重設放置位置，您可以按下 [重設] 按鈕：
 
-![mr-learning-base](images/mr-learning-base/base-07-section1-step1-7.png)
+![按下 [重設] 按鈕的 Unity 播放模式分割檢視](images/mr-learning-base/base-07-section1-step1-7.png)
 
 若要深入了解 Object Manipulator (物件操作工具) 元件及其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的 [Object Manipulator (物件操作工具)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 指南。
 
@@ -125,7 +125,7 @@ ms.locfileid: "91696327"
 
 然後 **取消核取** 這兩個元件旁的核取方塊，使其預設為 **停用** ：
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-1.png)
+![已選取 RoverExplorer 物件並已新增和停用元件的 Unity](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
 > 週框方塊視覺效果會在執行階段中建立，因此在您進入遊戲模式之前看不到該效果。
@@ -145,7 +145,7 @@ ms.locfileid: "91696327"
 * 確認 **已核取** 引數核取方塊
 * 將 **圖示** 保留為 [具有週框的立方體] 圖示
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-2.png)
+![已選取 BoundingBox_Enable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-2.png)
 
 將第四個 (也就是最後一個) 按鈕重新命名為 **BoundingBox_Disable** ，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
 
@@ -159,11 +159,11 @@ ms.locfileid: "91696327"
 * 確認 **未核取** 引數核取方塊
 * 將 **圖示** 變更為 [具有週框的立方體] 圖示
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-3.png)
+![已選取 BoundingBox_Disable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-3.png)
 
 如果您現在進入遊戲模式，並按一下 [啟用] 按鈕來啟用週框方塊，您就可以使用近或遠的互動來移動、旋轉和縮放週框方塊，然後使用 [停用] 按鈕再次停用週框方塊：
 
-![mr-learning-base](images/mr-learning-base/base-07-section2-step1-4.png)
+![正在操作週框方塊的 Unity 播放模式分割檢視](images/mr-learning-base/base-07-section2-step1-4.png)
 
 若要深入了解 Bounding Box 元件和其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[周框方塊](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)指南。
 

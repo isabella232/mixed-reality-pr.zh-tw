@@ -1,18 +1,18 @@
 ---
 title: 多使用者功能教學課程 - 2。 設定 Photon Unity 網路
-description: 完成此課程以了解如何在 HoloLens 2 應用程式中實作使用者共用體驗。
+description: 完成此課程，以了解如何在 HoloLens 2 應用程式中實作 Photon Unity 網路。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 23498938815bd5bb2e200639ae89c62699a01774
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699104"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353476"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -48,7 +48,7 @@ ms.locfileid: "91699104"
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [發佈設定] 區段：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
+![Unity 玩家設定](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
 在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)所啟用的 **InternetClient** 、 **Microphone** 、 **SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
 
@@ -57,13 +57,13 @@ ms.locfileid: "91699104"
 * **InternetClientServer** 功能
 * **PrivateNetworkClientServer** 功能
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
+![Unity 功能設定](images/mr-learning-sharing/sharing-02-section2-step1-2.png)
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 
 在 Unity 功能表中，選取 視窗 >  **套件管理員** 以開啟 套件管理員 視窗，然後選取 AR 基本概念，並按一下 安裝 按鈕以安裝套件：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
+![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 
 > [!NOTE]
 > 您正在安裝 AR Foundation 套件，因為 Azure Spatial Anchors SDK 需要此套件，您將在下一節中匯入。
@@ -79,7 +79,7 @@ ms.locfileid: "91699104"
 
 匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
 > 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組 ](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
@@ -93,15 +93,15 @@ ms.locfileid: "91699104"
 
 下載完成時，請按一下 [匯入] 按鈕來開啟 [匯入 Unity 套件] 視窗：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
+![具有 PUN 2 的 Unity 資產存放區 - 免費](images/mr-learning-sharing/sharing-02-section5-step1-1.png)
 
 在 [匯入 Unity 套件] 視窗中，按一下 [全部] 按鈕以確保選取所有資產，然後按一下 [匯入] 按鈕來匯入資產：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
+![具有 PUN 2 匯入視窗的 Unity](images/mr-learning-sharing/sharing-02-section5-step1-2.png)
 
 Unity 完成匯入程序之後，Pun 精靈視窗會隨即出現並載入 PUN 設定功能表，您現在可以忽略或關閉此視窗：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
+![具有 PUN 設定視窗的 Unity](images/mr-learning-sharing/sharing-02-section5-step1-3.png)
 
 ## <a name="creating-the-pun-application"></a>建立 PUN 應用程式
 
@@ -109,11 +109,11 @@ Unity 完成匯入程序之後，Pun 精靈視窗會隨即出現並載入 PUN �
 
 瀏覽至 Photon <a href="https://dashboard.photonengine.com/account/signin" target="_blank">儀表板</a> 並登入 (如果您已經有想要使用的帳戶)，否則請按一下 [建立帳戶] 連結，並依照指示註冊新帳戶：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
+![Photon 登入頁面](images/mr-learning-sharing/sharing-02-section6-step1-1.png)
 
 登入之後，按一下 [建立新的應用程式] 按鈕：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
+![Photon 儀表板歡迎使用頁面](images/mr-learning-sharing/sharing-02-section6-step1-2.png)
 
 在 [建立新的應用程式] 頁面上，輸入下列值：
 
@@ -124,11 +124,11 @@ Unity 完成匯入程序之後，Pun 精靈視窗會隨即出現並載入 PUN �
 
 接著按一下 [建立] 按鈕以建立新應用程式：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
+![Photon 建立應用程式頁面](images/mr-learning-sharing/sharing-02-section6-step1-3.png)
 
 當 Photon 完成建立程序後，新的 PUN 應用程式將會出現在儀表板上：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
+![Photon 應用程式頁面](images/mr-learning-sharing/sharing-02-section6-step1-4.png)
 
 ## <a name="connecting-the-unity-project-to-the-pun-application"></a>將 Unity 專案連線至 PUN 應用程式
 
@@ -136,7 +136,7 @@ Unity 完成匯入程序之後，Pun 精靈視窗會隨即出現並載入 PUN �
 
 在 Photon 儀表板上，按一下 [應用程式識別碼] 欄位以顯示應用程式識別碼，然後將其複製到您的剪貼簿：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
+![已選取應用程式識別碼的 Photon 應用程式頁面](images/mr-learning-sharing/sharing-02-section7-step1-1.png)
 
 在 Unity 功能表中，選取 [視窗] > [Photon Unity 網路] > [PUN 精靈] 以開啟 PUN 精靈視窗，然後按一下 [設定專案] 按鈕以開啟 [PUN 設定] 功能表，並依照下列方式進行設定：
 
@@ -144,11 +144,11 @@ Unity 完成匯入程序之後，Pun 精靈視窗會隨即出現並載入 PUN �
 
 然後按一下 [設定專案] 按鈕來套用應用程式識別碼：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
+![已填入 AppId 的 Unity PUN 設定視窗](images/mr-learning-sharing/sharing-02-section7-step1-2.png)
 
 當 Unity 完成 PUN 設定程序後，[PUN 設定] 功能表就會顯示訊息「完成！」訊息 並自動選取 [專案] 視窗中的 **PhotonServerSettings** 資產，讓其屬性顯示在 [偵測器] 視窗中：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
+![已套用設定專案的 Unity PUN 設定視窗](images/mr-learning-sharing/sharing-02-section7-step1-3.png)
 
 ## <a name="congratulations"></a>恭喜！
 

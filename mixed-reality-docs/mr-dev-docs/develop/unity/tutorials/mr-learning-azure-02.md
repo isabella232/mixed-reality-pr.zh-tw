@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 儲存體
 ms.localizationpriority: high
-ms.openlocfilehash: d405ecc9f863e77271d4c16f820fc6ee00e55b1b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: e01796dd99982bb749d59108bcc972e5bc361770
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696435"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353326"
 ---
 # <a name="2-integrating-azure-storage"></a>2.整合 Azure 儲存體
 
@@ -57,7 +57,6 @@ ms.locfileid: "91696435"
 
 > [!TIP]
 > 若要從 Unity 編輯器內部進行測試，您可以使用本機模擬器：
-
 > * 在 Windows 10 上，您可以使用 [Azure 儲存體模擬器](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
 > * 在 MacOS/Linux 上，您可以使用適用於 Docker 的 [Azurite Docker 影像](https://hub.docker.com/_/microsoft-azure-storage-azurite)
 
@@ -65,7 +64,7 @@ ms.locfileid: "91696435"
 
 在階層視窗中，找出 **DataManager** 物件並加以選取。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial2-section4-step1-1.png)
+![在偵測器中顯示了 DataManager 指令碼元件設定欄位的 Unity](images/mr-learning-azure/tutorial2-section4-step1-1.png)
 
 在偵測器視窗中，您會看到 **DataManager (指令碼)** 元件是保留所有 **Azure 儲存體** 相關設定的位置。 所有相關的設定都已設定完成，您只需要將「連接字串」欄位取代為您可以從 Azure 入口網站取得的值。 如果您使用本機 Azure 儲存體模擬器解決方案，則可以保留已提供的「連接字串」。
 

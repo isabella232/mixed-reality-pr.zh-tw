@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchor 教學課程 - 3。 儲存、擷取和共用 Azure Spatial Anchors
-description: 完成此課程以了解如何在混合實境應用程式中實作 Azure Spatial Anchors。
+description: 完成此課程以了解如何在混合實境應用程式中儲存、擷取和共用 Azure Spatial Anchors。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: edbbfa6bb4027e6d0d0d37a46575eafdb1d6e631
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696460"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353296"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.儲存、擷取和共用 Azure Spatial Anchors
 
@@ -27,11 +27,11 @@ ms.locfileid: "91696460"
 
 在 [階層] 視窗中，展開 **ButtonParent** 物件。 選取 **last four child button** 物件。 在 [偵測器] 視窗中， **核取** 名稱欄位旁的核取方塊，讓所有物件變成作用中。
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-1.png)
+![已選取和啟用先前非使用中按鈕物件的 Unity](images/mr-learning-asa/asa-03-section1-step1-1.png)
 
 在 [階層] 視窗中，選取 **ButtonParent** 物件。 然後在 [偵測器] 視窗中，找出 **GridObjectCollection** 元件，然後按一下 [更新集合] 按鈕，以更新所有 **ButtonParent** 物件的子物件位置。
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section1-step1-2.png)
+![已更新 GridObjectCollection 元件的 Unity](images/mr-learning-asa/asa-03-section1-step1-2.png)
 
 ## <a name="persisting-azure-spatial-anchors-between-app-sessions"></a>在應用程式工作階段之間保存 Azure Spatial Anchors
 
@@ -39,7 +39,7 @@ ms.locfileid: "91696460"
 
 在 [階層] 視窗中，展開 **ButtonParent** 物件，並找出名為 **SaveAzureAnchorIdToDisk** 和 **GetAzureAnchorIdFromDisk** 的兩個按鈕：
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section2-step1-1.png)
+![已選取 SaveAzureAnchorIdToDisk 和 GetAzureAnchorIdFromDisk 按鈕物件的 Unity](images/mr-learning-asa/asa-03-section2-step1-1.png)
 
 請遵循上一個教學課程中的 [設定按鈕以操作場景](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene)指示來執行相同步驟，在兩個按鈕上設定 **Interactable (指令碼)** 元件：
 
@@ -68,7 +68,7 @@ ms.locfileid: "91696460"
 
 在 [階層] 視窗中，展開 **ButtonParent** 物件。   找出名為 **ShareAzureAnchorIdToNetwork** 和 **GetAzureAnchorIdFromNetwork** 的兩個按鈕：
 
-![mr-learning-asa](images/mr-learning-asa/asa-03-section3-step1-1.png)
+![已選取 ShareAzureAnchorIdToNetwork 和 GetAzureAnchorIdFromNetwork 按鈕物件的 Unity](images/mr-learning-asa/asa-03-section3-step1-1.png)
 
 請遵循上一個教學課程中的 [設定按鈕以操作場景](mr-learning-asa-02.md#configuring-the-buttons-to-operate-the-scene)指示來執行相同步驟，在兩個按鈕上設定 **Interactable (指令碼)** 元件：
 

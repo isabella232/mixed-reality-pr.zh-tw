@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, Azure spatial anchors
 ms.localizationpriority: high
-ms.openlocfilehash: 2c10d7458fc956cb8974319cd5355260179f10b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696400"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353246"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.整合 Azure Spatial Anchors
 
@@ -41,17 +41,17 @@ ms.locfileid: "91696400"
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTKMRTK.Tutorials.AzureCloudServices] > [Prefabs] > [Manager]
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![已選取 AnchorManager Prefab 的 Unity](images/mr-learning-azure/tutorial4-section1-step1-1.png)
 
 從 [Manager] 資料夾，將 Prefab **Anchor Manager** 拖放到場景階層中。
 
 選取階層中的 **Anchor Manager** GameObject，然後在 [偵測器] 區段中，您會看到 **Spatial Anchor Manager** (指令碼)。 尋找 [帳戶識別碼] 和 [金鑰] 欄位，然後新增您在先前階段的必要條件中所建立的認證。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step2-1.png)
+![已選取新增 AnchorManager Prefab 的 Unity](images/mr-learning-azure/tutorial4-section1-step2-1.png)
 
 現在，在場景階層中尋找 **Scene Controller** 物件，然後加以選取。 您會看到 **Scene Controller** 偵測器。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial4-section1-step3-1.png)
+![已設定 SceneController 指令碼元件的 Unity](images/mr-learning-azure/tutorial4-section1-step3-1.png)
 
 您會發現 **Scene Controller** 中的 **Anchor Manager** 欄位是空的，請將 **Anchor Manager** 從場景中的階層拖放到該欄位，然後儲存場景。
 
