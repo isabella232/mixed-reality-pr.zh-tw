@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 3385197f0df8cfb58ec3c9ba60aee0480cda8533
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293251"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416994"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -36,12 +36,12 @@ ms.locfileid: "92293251"
 * 已[安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦
 * 基本 C# 程式設計知識
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已掛接 Unity 2019.3.X，且已新增通用 Windows 平台組建支援模組
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已掛接 Unity 2019 LTS，且已新增通用 Windows 平台組建支援模組
 
 **強烈建議** 先完成 [使用者入門](mr-learning-base-01.md)教學課程系列或一些基本的 Unity 和 MRTK 體驗，再繼續執行。
 
 > [!IMPORTANT]
-> * 本教學課程系列的建議 Unity 版本是 Unity 2019.3.X。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求或建議。
+> * 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求或建議。
 > * 透過 MRTK 專案進行全像攝影遠端處理只會使用舊版 XR。 目前不支援 XR SDK。
 
 ## <a name="creating-and-preparing-the-unity-project"></a>建立和準備 Unity 專案
@@ -73,7 +73,7 @@ ms.locfileid: "92293251"
 
 匯入教學課程資產之後，您的 [專案] 視窗看起來應該會像這樣：
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
 
 ## <a name="configuring-and-preparing-the-scene"></a>設定和準備場景
 
@@ -88,15 +88,15 @@ ms.locfileid: "92293251"
 * ModelParent
 * 平台
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
+![Unity，已選取要新增至場景的 Prefabs](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-1.png)
 
 將這些模型從 [Prefabs] 資料夾拖放到 [階層] 視窗中。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
+![新增的 Prefabs 仍保持選取狀態的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-2.png)
 
 若要將焦點放在場景中的物件上，您可以按兩下 **ModelParent** 物件，然後再次將場景稍微縮小：
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
+![焦點位於 ModelParent 物件的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section3-Step1-3.png)
 
 > [!TIP]
 > 如果您發現場景中的大圖示 (例如大型邊框的 'T' 圖示) 會造成干擾，您可以藉由<a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">切換 Gizmo</a> 到關閉位置來將其隱藏。
@@ -109,15 +109,15 @@ ms.locfileid: "92293251"
 
 在 [階層] 視窗中，展開 **ButtonParent** 物件，然後選取 **NextButton** 。 在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，然後按一下 **OnClick ()+ 事件底下的**  圖示。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
+![已新增 NextButton OnClick 事件的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
 在 [階層] 視窗中保持選取 **NextButton** 物件，按一下 **ButtonParent** 物件並將其從 [階層] 視窗拖曳至您剛才所新增事件的空白 [無 (物件)] 欄位，讓 ButtonParent 物件可以從此按鈕接聽按下按鈕的事件：
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
+![已設定 NextButton OnClick 事件接聽程式的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-2.png)
 
 按一下相同事件的 [沒有函式] 下拉式清單。 然後選取 [ViewButtonControl]  >  [NextModel ()]，將 [NextModel ()] 函式設定為從這個按鈕引發按下按鈕事件時所觸發的動作：
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
+![具有 NextButton OnClick 事件動作選取路徑的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-3.png)
 
 ### <a name="2-configuring-the-remaining-buttons"></a>2.設定其餘按鈕
 
@@ -131,23 +131,23 @@ ms.locfileid: "92293251"
 
 現在您的按鈕已設定為示範模型切換和裁剪功能。 現在可以將 3D 模型和裁剪物件新增至指令碼。
 
-我們提供六種不同的 3D 模型作為示範，請展開 ***ModelParentobject*** 以公開這些 3D 模型。
+我們提供六種不同的 3D 模型作為示範，請展開 *_ModelParentobject_* 以公開這些 3D 模型。
 
-在 [階層] 視窗中保持選取 ButtonParent 物件，在 [偵測器] 視窗中，找出 **View Button Control (指令碼)** 元件，然後展開 **Models** 變數。
+在 [階層] 視窗中保持選取 ButtonParent 物件，在 [偵測器] 視窗中，找出 *View Button Control (指令碼)* 元件，然後展開 **Models** 變數。
 
 在 [大小] 欄位中，輸入您想要在場景中擁有的 3D 模型數目。 在此案例中，此值會是 6。 會建立欄位以新增新的 3D 模型。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
+![具有 ViewButtonControl 指令碼元件欄位的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-1.png)
 
 將 ModelParent 物件的每個子物件拖放到這些欄位。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
+![已設定 ViewButtonControl 指令碼元件欄位的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-2.png)
 
 從 [階層] 視窗中，將 **ClippingObjects** 物件拖放至 **Toggle Button (指令碼)** 元件的 [裁剪物件] 欄位。
 >[!NOTE]
 >只停留在按鈕父物件。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
+![已設定 ToggleButton 指令碼元件欄位的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step3-3.png)
 
 在 [階層] 視窗中，選取 [ClippingObjects] prefab，並在 [偵測器] 視窗中啟用以開啟裁剪物件。
 
@@ -159,7 +159,7 @@ ms.locfileid: "92293251"
 
 若要設定 **ClippingSphere** 物件，請按一下該物件，然後在 [偵測器] 視窗中，找出 **Clipping Sphere (指令碼)** 元件。 在 [大小] 欄位中輸入您需要為 3D 模型新增的轉譯器數目。 在此案例中，請為 MarsCuriosityRover 子物件新增 10 個。 會建立欄位以新增轉譯器，並將 MarsCuriosityRover 物件的子模型物件拖放到這些欄位。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
+![已設定 ClippingSphere 指令碼元件欄位的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section5-Step1-1.png)
 
 遵循相同的程序，並將 MarsCuriosityRover 的子物件轉譯器新增至 **ClippingBox** 和 **ClippingPlane** 物件。
 
@@ -171,25 +171,25 @@ ms.locfileid: "92293251"
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1.識別目標物件和相關聯的工具提示
 
-在 [階層] 視窗中，選取 [ModelParent] 物件。 展開 [MarsCuriosity] -> [Rover]，以尋找 MarsCuriosityRover 的五個主要組件： **POI-Camera** 、 **POI-Wheels** 、 **POI-Antena** 、 **POI-Spectrometer** 、 **POI-RUHF Antenna** 。
+在 [階層] 視窗中，選取 [ModelParent] 物件。 展開 [MarsCuriosity] -> [Rover] ***，以尋找 MarsCuriosityRover 的五個主要部分：* POI-Camera** 、 **POI-Wheels** 、 **POI-Antena** 、 **POI-Spectrometer** 、 **POI-RUHF Antenna** 。
 
 * 觀察與 [階層] 視窗中 MarsCuriosityRover 組件相關聯的五個對應工具提示物件。
 * 當您查看 MarsCuriosityRover 組件時，將會設定這些物件以醒目提示體驗。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
+![已選取並展開 Rover 物件的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step1-1.png)
 
 ### <a name="2-implement-while-looking-at-target-----on-look-away--events"></a>2.在發生 Looking At Target () 和 On Look Away () 事件時實作
 
-在 [階層] 視窗中，選取 [POI-Camera] 物件。 在 [偵測器] 視窗中，找出 **Eye Tracking Target (指令碼)** 元件，並且設定 **While Looking At Target ()** 和 **On Look Away ()** 事件，如下所示：
+在 [階層] 視窗中，選取 [POI-Camera] 物件。 在 [偵測器] 視窗中，找出 *Eye Tracking Target (指令碼)* 元件，並且設定 **While Looking At Target ()** 和 **On Look Away ()** 事件，如下所示：
 
 * 對 [無 (物件)] 欄位，指派 **POI-Camera ToolTip** 物件
 * 從 **While Looking At Target ()** 事件的 [沒有函式] 下拉式清單中，選取 [GameObject]  >  [SetActive (bool)]。 選取其底下的 **核取方塊** ，將工具提示醒目提示為當您查看目標物件時所觸發的動作。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
+![正在進行 EyeTrackingTarget WhileLookingAtTarget 事件設定的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 
 * 遵循相同的程序，然後按一下 **On Look Away ()** 事件接聽程式的 [沒有函式] 下拉式清單。 然後選取 [GameObject]  >  [SetActive (bool)]，並將 [核取方塊] 保留空白以隱藏工具提示，作為當您將視線移開目標物件時所觸發的動作。
 
-![mrlearning-pc-holographic-remoting](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
+![已設定 EyeTrackingTarget OnLookAway 事件的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-2.png)
 
 遵循相同的程序，並且將個別的工具提示物件指派給其相同的 **MarsCuriosityRover** 組件 **While Looking At Target ()** 和 **On Look Away ()** 事件。
 

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: af9055c4e6074c4d4b10b4f0a6ac135c858b57a7
-ms.sourcegitcommit: 520c69eb761ad6083b36f448bbcfab89e343e40d
-ms.translationtype: MT
+ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.translationtype: HT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/12/2020
-ms.locfileid: "94549111"
+ms.locfileid: "94573282"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>混合現實開發天數日本
 
@@ -48,18 +48,17 @@ ms.locfileid: "94549111"
 |12： 50pm-1：00|**打破**||||
 |1： 00-1：25pm|*會話 3* HoloLens 2 開發的總覽|Madoka Chiyoda|JA|200|
 |1： 30pm-1：55pm|*會話 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity) |Yoon 公園|JA|300|
-|2： 00-2：20pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
+|2： 00-2：25pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
 |2： 30pm-2：55pm|*會話 6* MR 應用程式設計 (建立 HL2 應用程式 UI/UX) 的最佳作法|Daniel Escudero|EN|300|
-|2： 55pm-3：下午5:15|**打破**||||
-|3：下午 5:15-3：40pm|*會話 7* Azure 物件錨點|TBD|EN|300|
-|3：下午5:45 執行-4：下午10點|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
-|4：下午 5:15-4：40pm|*課程 9* Azure 空間錨點|TBD|EN|300|
-<!--|4：下午5:45 執行-5：下午10點|*會話 10* Unity + PiXYZ| (Unity 日本) |JA|200|-->
-|4：下午5:45 執行-5：下午10點|*會話 10* 待定|TBD|JA|200|
-|5：下午 5:15-5：40pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
-|5：下午5:45 執行-6：00|關閉|Madoka Chiyoda|JA|NA|
+|2： 55pm-3：下午10點|**打破**||||
+|3：下午10點-3：35pm|*會話 7* Azure 物件錨點|TBD|EN|300|
+|3： 40pm-4：05pm|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
+|4：下午10點-4：35pm|*課程 9* Azure 空間錨點|TBD|EN|300|
+|4： 40pm-5：05pm|*會話 10* 待定|TBD|JA|200|
+|5：下午10點-5：35pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
+|5： 35pm-5：50pm|關閉|Madoka Chiyoda|JA|NA|
 
-#### <a name="contributors-english-subtitle-reviewers"></a>參與者 (英文副標題審核者) 
+#### <a name="contributors-technical-reviewers-for-the-subtitles"></a> () 的技術審核者參與者
 
 Futo Horio ([@Futo_Horio](https://twitter.com/Futo_Horio)) 、Takahiro Miyaura ([@takabrz1](https://twitter.com/takabrz1)) 、Akihiro Ueyama ([@akihiro01051](https://twitter.com/akihiro01051)) 、Kaoru Nakamura ([@kaorun55](https://twitter.com/kaorun55)) 、Shinya Tachihara ([@deco_c_](https://twitter.com/deco_c_)) 
 

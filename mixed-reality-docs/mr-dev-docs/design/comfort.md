@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 設計, 舒適度, HoloLens 2, HoloLens (第 1 代)
-ms.openlocfilehash: 6528dca71a1e0cd92b621cab8b1b7ba547fcb71e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f53c91b10f9dfc37678356c914e486f61eea6382
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696658"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340646"
 ---
 # <a name="comfort"></a>舒適度
 
@@ -162,6 +162,13 @@ Windows Mixed Reality 沉浸式 HMD 沒有 IPD 或 VO 的自動校正。 IPD 可
 ## <a name="arm-positions"></a>手臂位置
 
 當使用者預期會在體驗持續期間內保持手臂抬起時，會累積肌肉疲勞。 要求使用者長時間重複做空中點選手勢，也會讓使用者疲勞。 因此，我們建議體驗要避免要求經常、重複的手勢輸入。 這個目標可以藉由將簡短休息合併到與應用程式的互動，或者在互動中提供混合的手勢和語音輸入來達成。
+
+## <a name="next-discovery-checkpoint"></a>下一個探索檢查點
+
+如果您有遵循我們安排的[探索旅程](../discover/get-started-with-mr.md)，則您正處於探索混合實境基本概念的途中。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [使用者如何看到世界 - (全像攝影框架)](../design/holographic-frame.md)
 
 ## <a name="see-also"></a>另請參閱
 * [目光](gaze-and-commit.md)

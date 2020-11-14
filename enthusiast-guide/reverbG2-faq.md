@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 77d1d7273d1e73af4655ef45bd102220e15d2355
-ms.sourcegitcommit: af1e5c9003fc3b7dd0a2f67531f91f954b6a9ea3
+ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/11/2020
-ms.locfileid: "94498283"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573202"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -36,13 +36,15 @@ HP 建議：
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>我在插入耳機時遇到7-14 「發生錯誤」的錯誤
 
+7-14 發生錯誤的程式碼表示找不到某些必要的 USB2 元件。  由於 HP 回音的額外纜線，所以 USB 信號的部分容能更緊密。  這表示您電腦上的一個埠可能會比其他埠更可靠地運作。
+
 如果您看到7-14 「發生錯誤」錯誤，請嘗試下列步驟：
 
-- 請確定您已安裝最新的驅動程式。
-- 請嘗試將纜線插入不同的 USB-3.0 埠。
-- 請將 USB C 用於包含的介面卡，以嘗試不同的埠。
-
-請嘗試將纜線插入不同的 USB 集線器。  
+- 請確定您已為耳機和 USB 控制器安裝最新的驅動程式。
+- 請確定您使用的是 Microsoft USB 驅動程式。 「可擴充的主機控制器」裝置名稱中應該會有 "Microsoft"。
+- 請嘗試將纜線插入您電腦上的不同 USB-3.0 埠。  (嘗試 USB 類型-C 和類型埠) 
+- 使用包含的 USB C 來嘗試不同的埠。
+- 嘗試透過 USB 集線器將耳機插入您的電腦。
 
 > [!NOTE]
 > HP 建議僅使用內建于主機板的 USB 控制器，並搭配「裝置」 G2 裝置。

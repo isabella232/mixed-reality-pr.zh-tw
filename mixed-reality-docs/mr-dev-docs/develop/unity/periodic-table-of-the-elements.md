@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、範例應用程式、控制項
-ms.openlocfilehash: 2f7120aaf92a6e3d7b6ace301aae7392b67fa00b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682504"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573262"
 ---
 # <a name="periodic-table-of-the-elements"></a>元素週期表
 
@@ -21,6 +21,11 @@ ms.locfileid: "91682504"
 專案的[定期資料表](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 透過此專案，您可以瞭解如何使用 **[物件集合](../../design/object-collection.md)** ，在3d 空間中配置具有各種介面類別型的物件陣列。 同時瞭解如何建立互動物件，以回應 HoloLens 的標準輸入。 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
 
 ![Elements 應用程式的期間資料表](images/640px-periodictable-hero.jpg)
+
+## <a name="demo-video"></a>示範影片 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
+
+使用混合實境擷取 HoloLens 2 記錄
 
 ## <a name="about-the-app"></a>關於應用程式
 
@@ -60,52 +65,31 @@ ms.locfileid: "91682504"
 
 ![物件集合](images/640px-periodictable-collections.jpg)
 
-### <a name="fitbox"></a>Fitbox
-
-根據預設，在應用程式啟動時，會在使用者撥雲見日的位置放置全像影像。 這有時候會導致不想要的結果，例如，將影像放在牆後方或資料表的中間。 Fitbox 可讓使用者使用注視來判斷將放置全息圖的位置。 它會使用簡單的 PNG 影像材質進行自訂，您可以使用自己的影像或3D 物件輕鬆地加以自訂。
-
-![Fitbox](../../design/images/450px-periodictable-fitbox.jpg)
-
 ## <a name="technical-details"></a>技術詳細資訊
 
 您可以在 [混合式現實設計實驗室 GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)上，找到專案應用程式的定期表格的腳本和 prefabs。
 
-## <a name="application-examples"></a>應用程式範例
+## <a name="porting-story-for-hololens-2"></a>HoloLens 2 的移植案例
 
-以下是您可以利用此專案中的元件來建立的一些概念。
+閱讀有關如何使用 HoloLens 2 的 instinctual 互動來更新專案應用程式之定期表格的案例。
 
-### <a name="stock-data-visualization-app"></a>股票資料視覺效果應用程式
+[元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 
-使用與專案範例的定期資料表相同的控制項和互動模型，您可以建立可哥視化股票市場資料的應用程式。 這個範例會使用物件集合控制項來配置球形圖形中的股票資料。 您可以想像出詳細資料，其中每個股票的其他相關資訊可能會以有趣的方式顯示。
 
-![應用程式範例：財務 (1/3) ](images/640px-periodictable-applicationexamples-finance1.jpg)
 
-![應用程式範例：三) 的財務 (2](images/640px-periodictable-applicationexamples-finance2.jpg)
-
-![應用程式範例：財務 (3) ](images/640px-periodictable-applicationexamples-finance3.jpg)<br>
-*如何在財務應用程式中使用元素範例應用程式的定期資料表中所使用的物件集合範例*
-
-### <a name="sports-app"></a>運動應用程式
-
-這是使用專案範例應用程式之定期資料表中的物件集合和其他元件來視覺化運動資料的範例。
-
-![應用程式範例：運動 (1/3) ](images/640px-periodictable-applicationexamples-sports0.jpg)
-
-![應用程式範例：運動 (2/3) ](images/640px-periodictable-applicationexamples-sports1.jpg)
-
-![應用程式範例：運動 (3 之 3) ](images/640px-periodictable-applicationexamples-sports3.jpg)<br>
-*如何在運動應用程式中使用 appcould 元素範例的定期資料表中所使用的物件集合範例*
 
 ## <a name="about-the-author"></a>關於作者
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>盾 Yoon 公園</b><br>UX 設計工具 @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>另請參閱
 
-* [可互動的物件](../../design/interactable-object.md)
-* [物件集合](../../design/object-collection.md)
+* [MRTK 範例中樞](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

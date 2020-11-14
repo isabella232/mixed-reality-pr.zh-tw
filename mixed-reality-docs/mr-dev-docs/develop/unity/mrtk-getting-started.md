@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: c374939b4b3af28cabc1ee338c1c0d4d14ec17fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4513185573003510e5a7cae97ecce4cb5d2552e0
+ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696933"
+ms.lasthandoff: 11/09/2020
+ms.locfileid: "94386204"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>開始使用適用於 Unity 的 MRTK
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
@@ -26,10 +26,11 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 
 >[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
 
-如需深入了解，請參閱 [GitHub 上的 MRTK 文件](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)。
+如需深入了解，請參閱 [GitHub 上的 MRTK 文件](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)。 若要開始使用，請遵循[安裝指南](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)頁面上的步驟。
+
 
 ## <a name="new-with-mrtk-v2"></a>MRTK v2 的新功能
-我們想要強調我們對這些平台工具的承諾。  事實上，我們利用 MRTK 第 2 版來開發收件匣體驗，例如安裝體驗 (OOBE) 和我們的混合實境學習應用程式。  您也可以預期新的 HoloLens 2 功能會先透過 MRTK 公開，因為我們認為這是在我們的平台上進行開發的最佳方式。 
+我們想要強調我們對這些平台工具的承諾。  事實上，我們利用 MRTK 第 2 版來開發收件匣體驗，例如全新安裝體驗 (OOBE) 和我們的混合實境提示應用程式。 您也可以預期新的 HoloLens 2 功能會先透過 MRTK 公開，因為我們認為這是在我們的平台上進行開發的最佳方式。 
 
 ### <a name="modular"></a>模組化
 我們以模組化的方式建置，因此不需要個別將工具組的部分納入您的專案中。  這其實有幾個優點。  它會讓您的專案大小變小，讓您更容易管理。  此外，由於它是以可編寫指令碼的物件建置，而且是介面驅動的，因此您也可以用自己的物件取代其中所包含的元件，以支援其他服務、系統和平台。
@@ -41,7 +42,7 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 使用行動平台時，我們會考慮到效能。  這是非常重要的，我們想要確保工具不會與您作對。
 
 ## <a name="see-also"></a>另請參閱
-* [MRTK 入門指南](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)
-* [MRTK 文件集首頁](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [安裝工具](../install-the-tools.md)
-* [從 HTK/MRTK 移植到 MRTK 第 2 版](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK - 安裝指南 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
+* [MRTK - 文件首頁 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+* [從 HoloToolkit/MRTK 移植到 MRTK 第 2 版 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)

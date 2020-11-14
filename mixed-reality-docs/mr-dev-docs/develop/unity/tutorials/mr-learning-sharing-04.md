@@ -1,18 +1,18 @@
 ---
 title: 多使用者功能教學課程 - 4。 與多個使用者共用物件移動
-description: 完成此課程以了解如何在 HoloLens 2 應用程式中實作使用者共用體驗。
+description: 完成此課程，以了解如何在 HoloLens 2 應用程式中與多個使用者共用物件移動。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: b080522e25d933aeb979c3d9a851beaaac4da57f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4a8d98bbabd3061e8fb9f4262e202dac680d584b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697046"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353416"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4.與多個使用者共用物件移動
 
@@ -29,7 +29,7 @@ ms.locfileid: "91697046"
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.MultiUserCapabilities] > [Prefabs] 資料夾，並將 **TableAnchor** 預製物件 (Prefab) 拖曳到階層視窗中的 **SharedPlayground** 物件上方，以將其作為 SharedPlayground 物件的子系來新增至您的場景：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+![已選取新增 TableAnchor Prefab 的 Unity](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>設定 PUN 以具現化物件
 
@@ -41,19 +41,19 @@ ms.locfileid: "91697046"
 
 * 在 [Rover Explorer Prefab] 欄位中，從 [資源] 資料夾指派 **RoverExplorer_Complete_Variant** Prefab
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
+![已部分設定 Photon Room 元件的 Unity](images/mr-learning-sharing/sharing-04-section2-step1-1.png)
 
 在仍選取 **NetworkRoom** 子物件的情況下，在 [階層] 視窗中，展開 **TableAnchor** 物件，然後在 [偵測器] 視窗中找出 **Photon Room (指令碼)** 元件，並依照下列方式進行設定：
 
 * 在 [Rover Explorer 位置] 欄位中，從 [階層] 視窗指派 TableAnchor > **Table** 子物件
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
+![已設定 Photon Room 元件的 Unity](images/mr-learning-sharing/sharing-04-section2-step1-2.png)
 
 ## <a name="trying-the-experience-with-shared-object-movement"></a>嘗試共用物件移動的體驗
 
 如果您現在建立了 Unity 專案並將其部署至 HoloLens，然後回到 Unity，並在應用程式於 HoloLens 上執行時，按下 [開始遊戲] 按鈕進入遊戲模式，當您在 HoloLens 中移動物件時，您將會看到物件在 Unity 中移動：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
+![動畫，顯示具有網路物件的 Unity](images/mr-learning-sharing/sharing-04-section3-step1-1.gif)
 
 ## <a name="congratulations"></a>恭喜！
 

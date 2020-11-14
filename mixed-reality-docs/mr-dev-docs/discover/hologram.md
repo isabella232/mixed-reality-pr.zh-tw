@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、全像影像、設計、互動
-ms.openlocfilehash: c26cbbaa011c9e7ec92ea45dfd9491dbd178a025
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386234"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631466"
 ---
 # <a name="what-is-a-hologram"></a>什麼是全像投影？
 
@@ -126,13 +126,10 @@ HoloLens 可讓您建立像是在世界各地出現在世界各地的全像 **�
 
 ---
 
-## <a name="next-discovery-checkpoint"></a>下次探索檢查點
+## <a name="next-discovery-checkpoint"></a>下一個探索檢查點
 
-如果您正在關注我們所配置的 [探索旅程](get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
+如果您有遵循我們安排的[探索旅程](get-started-with-mr.md)，則您正處於探索混合實境基本概念的途中。 您可以從這裡繼續進行下一個基本主題： 
 
 > [!div class="nextstepaction"]
 > [展開您的設計程序](case-study-expanding-the-design-process-for-mixed-reality.md)
 
-## <a name="see-also"></a>另請參閱
-* [空間音效](../design/spatial-sound.md)
-* [色彩、光線和材質](../color,-light-and-materials.md)

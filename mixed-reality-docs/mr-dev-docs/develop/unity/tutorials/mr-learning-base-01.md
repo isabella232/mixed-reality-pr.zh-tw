@@ -1,5 +1,5 @@
 ---
-title: 入門教學課程 - 1。 簡介
+title: 入門教學課程 - 1。 入門教學課程簡介
 description: 本課程說明如何使用混合實境工具組 (MRTK) 從頭建立混合實境應用程式。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,14 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6d6be08aa532de22a30e70274859eda466a78204
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 992d864d7e016c3d0906366d10993ff0559afc06
+ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696376"
+ms.lasthandoff: 11/06/2020
+ms.locfileid: "93416896"
 ---
-# <a name="1-introduction"></a>1.簡介
+# <a name="1-introduction-to-the-getting-started-tutorials"></a>1.入門教學課程簡介
 
 ## <a name="overview"></a>概觀
 
@@ -44,13 +44,13 @@ ms.locfileid: "91696376"
 * 已[安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 或更新版本
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已安裝 Unity 2019.3.15，且已新增通用 Windows 平台組建支援模組
+* 已安裝 Unity 2019 LTS 的 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，且已新增通用 Windows 平台組建支援模組
 
 > [!CAUTION]
 > 本教學課程系列的建議 MRTK 版本是 MRTK 2.4.0。
 
 > [!CAUTION]
-> 本教學課程系列的建議 Unity 版本是 Unity 2019.3.15。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
+> 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：2.初始化您的專案並部署您的第一個應用程式](mr-learning-base-02.md)

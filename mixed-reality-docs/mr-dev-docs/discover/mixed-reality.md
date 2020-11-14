@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: 混合實境, 全像攝影, AR, VR, MR, XR, 擴增實境, 虛擬實境, 說明
 ms.localizationpriority: high
-ms.openlocfilehash: 44ef30925f8429628ebeb2c5f367d379a8ab102f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696697"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340706"
 ---
 # <a name="what-is-mixed-reality"></a>什麼是混合實境？
 
@@ -34,7 +34,7 @@ ms.locfileid: "91696697"
 
 過去數十年來，眾人持續探索人類與電腦輸入之間的關聯性，因而造就了所謂的 *人機互動* (或簡稱 HCI) 的專業領域。 人類輸入會透過各種不同的方式進行，包括鍵盤、滑鼠、觸控、筆跡、語音，甚至是 Kinect 的框架追蹤。
 
-在感應器和處理方面的提升，逐漸使環境中的電腦輸入形成新的區域。 電腦與環境之間的互動是有效的環境理解或 *感知* ，而正因如此，Windows 中顯示環境資訊的 API 名稱即稱為[認知 API](https://docs.microsoft.com/uwp/api/Windows.Perception)。 環境輸入會擷取諸多事物，像是使用者所處的位置 (例如[頭部追蹤](../design/coordinate-systems.md))、表面和界限 (例如[空間對應](../design/spatial-mapping.md)和[場景理解](../design/scene-understanding.md))、環境光源、環境音效、物件辨識和位置。
+在感應器和處理方面的提升，逐漸使環境中的電腦輸入形成新的區域。 電腦與環境之間的互動是有效的環境理解或 *感知* ，而正因如此，Windows 中顯示環境資訊的 API 名稱即稱為 [認知 API](https://docs.microsoft.com/uwp/api/Windows.Perception)。 環境輸入會擷取諸多事物，像是使用者所處的位置 (例如[頭部追蹤](../design/coordinate-systems.md))、表面和界限 (例如[空間對應](../design/spatial-mapping.md)和[場景理解](../design/scene-understanding.md))、環境光源、環境音效、物件辨識和位置。
 
 <br>
 
@@ -97,7 +97,8 @@ ms.locfileid: "91696697"
 </table> 
 
 
-> [注意] 無論裝置是連線到其他電腦或以行動網卡連線到其他電腦 (透過 USB 纜線或 Wi-Fi) 或是獨立的 (未連線)，都不會反映裝置是否為全像攝影還是沉浸式。 增加行動性的功能會帶來更好的體驗，且全像攝影和沉浸式裝置都可能是以行動網卡連線或是未連線的。
+> [!NOTE]
+> 無論裝置是連線到其他電腦或以行動網卡連線到其他電腦 (透過 USB 纜線或 Wi-Fi) 或是獨立的 (未連線)，都不會反映裝置是否為全像攝影還是沉浸式。 增加行動性的功能會帶來更好的體驗，且全像攝影和沉浸式裝置都可能是以行動網卡連線或是未連線的。
 
 技術提升是已啟用混合實境體驗的功能。 目前沒有任何裝置可在整個頻譜中執行體驗。 Windows 10 同時為裝置製造商和開發人員提供通用的混合實境平台。 現今的裝置可以支援混合實境頻譜內的特定範圍，而新型裝置則可擴大該範圍。 在未來，全像攝影裝置會變得更沉浸式，而沉浸式裝置會變得更全像攝影。
 
@@ -111,6 +112,12 @@ ms.locfileid: "91696697"
 * **中間 (完全混合實境)。** 這些體驗混合了真實世界與數位世界。 看過[野蠻遊戲](https://en.wikipedia.org/wiki/Jumanji)這部電影的觀看者，可以調整故事中所出現房屋的實體結構與叢林環境的混合方式。
 * **向右 (接近數位實境)。** 使用者會體驗到數位環境，且不會察覺周遭實體環境發生的情況。
 
+## <a name="next-discovery-checkpoint"></a>下一個探索檢查點
+
+如果您有遵循我們安排的[探索旅程](get-started-with-mr.md)，則您正處於探索混合實境基本概念的途中。 您可以從這裡繼續進行下一個基本主題： 
+
+> [!div class="nextstepaction"]
+> [什麼是全像投影？](hologram.md)
 
 ## <a name="see-also"></a>另請參閱
 

@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發
-ms.openlocfilehash: d7c94ebb7fc6cc16916f1f577b8e54e374b9db1f
-ms.sourcegitcommit: e1de7caa7bd46afe9766186802fa4254d33d1ca6
+ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/20/2020
-ms.locfileid: "92240767"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573292"
 ---
 # <a name="winrt-in-unreal"></a>Unreal 中的 WinRT
 
@@ -31,7 +31,7 @@ ms.locfileid: "92240767"
 4. [設定部署](tutorials/unreal-uxt-ch6.md) 至裝置或模擬器
 
 ## <a name="creating-a-winrt-dll"></a>建立 WinRT DLL 
-1. 開啟新的 Visual Studio 專案，然後在與 Unreal 遊戲的**uproject**檔案相同的目錄中，建立**DLL (通用 Windows) **專案。 
+1. 開啟新的 Visual Studio 專案，然後在與 Unreal 遊戲的 **uproject** 檔案相同的目錄中，建立 **DLL (通用 Windows)** 專案。 
 
 ![建立 DLL](images/unreal-winrt-img-01.png)
 
@@ -44,11 +44,11 @@ ms.locfileid: "92240767"
 > 在新的專案編譯之後，您想要特別注意空白的 cpp 和標頭檔，分別名為 **HoloLensWinrtDLL .cpp** 和 **HoloLensWinrtDLL** 。 標頭是在 Unreal 中使用 DLL 的 include 檔，而 cpp 會保存您所匯出之任何函式的主體，並包含 Unreal 無法編譯的任何 WinRT 程式碼。 
 
 3. 在您新增任何程式碼之前，您需要更新專案屬性，以確保您需要的 WinRT 程式碼可以編譯： 
-    * 以滑鼠右鍵按一下 HoloLensWinrtDLL 專案，然後選取 [**屬性**]  
-    * **將設定下拉式清單**變更**為所有的設定，並將****平臺**下拉式清單變更為**所有平臺**  
-    * 在 **Configuration Properties> C/c + +> 所有選項**：
+    * 以滑鼠右鍵按一下 HoloLensWinrtDLL 專案，然後選取 [ **屬性** ]  
+    * **將設定下拉式清單** 變更 **為所有的設定，並將****平臺** 下拉式清單變更為 **所有平臺**  
+    * 在 **Configuration Properties> C/c + +> 所有選項** ：
         * 將 **await** 新增至 **其他選項** ，以確保我們可以等候非同步工作  
-        * 將 **c + + 語言標準** 變更為 **ISO c + + 17 標準 (/std： c + + 17) ** 以包含任何 WinRT 程式碼
+        * 將 **c + + 語言標準** 變更為 **ISO c + + 17 標準 (/std： c + + 17)** 以包含任何 WinRT 程式碼
 
 ![升級專案屬性](images/unreal-winrt-img-03.png)
 
@@ -87,7 +87,7 @@ public:
 > [!NOTE]
 > 所有 WinRT 程式碼都會儲存在 **HoloLensWinrtDLL** 中，因此在參考標頭時，Unreal 不會嘗試包含任何 WinRT 程式碼。 
 
-3. 仍在 **HoloLensWinrtDLL .cpp**中，為 OpenFileDialogue ( # A1 和所有支援的程式碼新增函式主體： 
+3. 仍在 **HoloLensWinrtDLL .cpp** 中，為 OpenFileDialogue ( # A1 和所有支援的程式碼新增函式主體： 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -180,12 +180,12 @@ private:
 > [!NOTE]
 > 現在已在與 uproject 檔案相同的目錄中建立方案，以及名為 Source/ConsumeWinRT/ConsumeWinRT 的新組建腳本。
 
-2. 開啟方案、流覽 **遊戲/ConsumeWinRT/來源/ConsumeWinRT** 資料夾，然後開啟 **ConsumeWinRT.build.cs**：
+2. 開啟方案、流覽 **遊戲/ConsumeWinRT/來源/ConsumeWinRT** 資料夾，然後開啟 **ConsumeWinRT.build.cs** ：
 
 ![開啟 ConsumeWinRT.build.cs 檔案](images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>連結 DLL
-1. 在 **ConsumeWinRT.build.cs**中，新增屬性以找出 DLL (目錄中包含 HoloLensWinrtDLL) 的 include 路徑。 DLL 位於 include 路徑的子目錄中，因此此屬性將用來作為二進位根目錄目錄：
+1. 在 **ConsumeWinRT.build.cs** 中，新增屬性以找出 DLL (目錄中包含 HoloLensWinrtDLL) 的 include 路徑。 DLL 位於 include 路徑的子目錄中，因此此屬性將用來作為二進位根目錄目錄：
 
 ```cs
 using System.IO;
@@ -240,17 +240,32 @@ public ConsumeWinRT(ReadOnlyTargetRules target) : base(Target)
 }
 ```
 
-3. 開啟 **WinrtActor** 並新增兩個函式定義，一個是藍圖可以使用的函式定義，另一個則使用 DLL 程式碼： 
+3. 開啟 **WinrtActor** ，並新增一個函式定義（藍圖將呼叫的定義）： 
+
 ```cpp
 public:
     UFUNCTION(BlueprintCallable)
-    static void OpenFileDialogue;
+    static void OpenFileDialogue();
 ```
 
-4. 開啟 **WinrtActor .cpp** ，並在 BeginPlay 中載入 DLL： 
+4. 開啟 **WinrtActor .cpp** ，並更新 BeginPlay 以載入 DLL： 
 
 ```cpp
-void AWinfrtActor::BeginPlay()
+void AWinrtActor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Gets path to DLL location
+    const FString BinDir = FPaths::ProjectDir() / 
+        "ThirdParty" / "HoloLensWinrtDLL" / 
+        "arm64" / "Release" / "HoloLensWinrtDLL";
+
+    // Loads DLL into application
+    void * dllHandle = FPlatformProcess::GetDllHandle(
+        *(BinDir / "HoloLensWinrtDLL.dll"));
+}
+
+void AWinrtActor::OpenFileDialogue()
 {
 #if PLATFORM_HOLOLENS
     HoloLensWinrtDLL::OpenFileDialogue();
@@ -264,15 +279,15 @@ void AWinfrtActor::BeginPlay()
 ### <a name="building-the-game"></a>打造遊戲
 1. 建立遊戲解決方案，以啟動對遊戲專案開啟的 Unreal 編輯器： 
     * 在 [ **放置** 動作專案] 索引標籤中，搜尋新的 **WinrtActor** 並將它拖曳到場景中 
-    * 開啟層級藍圖，以在**WinrtActor**中執行藍圖可呼叫函式 
+    * 開啟層級藍圖，以在 **WinrtActor** 中執行藍圖可呼叫函式 
 
 ![將 WinrtActor 放在場景中](images/unreal-winrt-img-06.png)
 
-2. 在 **世界 Outliner**中，找出先前放置在場景中的 **WindrtActor** ，並將它拖曳到層級藍圖中： 
+2. 在 **世界 Outliner** 中，找出先前放置在場景中的 **WindrtActor** ，並將它拖曳到層級藍圖中： 
 
 ![將 WinrtActor 拖曳至層級藍圖](images/unreal-winrt-img-07.png)
 
-3. 在層級的藍圖中，從 WinrtActor 拖曳輸出節點，搜尋 [開啟檔案] **對話方塊**，然後從任何使用者輸入路由傳送節點。  在此情況下，會從語音事件呼叫 Open File 對話： 
+3. 在層級的藍圖中，從 WinrtActor 拖曳輸出節點，搜尋 [開啟檔案] **對話方塊** ，然後從任何使用者輸入路由傳送節點。  在此情況下，會從語音事件呼叫 Open File 對話： 
 
 ![設定層級藍圖中的節點](images/unreal-winrt-img-08.png)
 

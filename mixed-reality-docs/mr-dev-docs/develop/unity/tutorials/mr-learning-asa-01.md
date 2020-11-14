@@ -1,20 +1,20 @@
 ---
-title: Azure Spatial Anchor 教學課程 - 1。 簡介
-description: 完成此課程，在混合實境應用程式中實作 Azure Spatial Anchors。
+title: Azure Spatial Anchor 教學課程 - 1。 Azure Spatial Anchors 教學課程簡介
+description: 完成此課程以了解如何在混合實境應用程式中實作 Azure Spatial Anchors。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 088987e0b43908abecfd66b9dbb0a4de8fcf472e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: fcea8bd02c81437dd7337ee94838f44f299f1927
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699248"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353396"
 ---
-# <a name="1-introduction"></a>1.簡介
+# <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1.Azure Spatial Anchors 教學課程簡介
 
 ## <a name="overview"></a>概觀
 

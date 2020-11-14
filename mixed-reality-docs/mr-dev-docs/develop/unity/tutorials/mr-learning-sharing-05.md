@@ -1,18 +1,18 @@
 ---
 title: 多使用者功能教學課程 - 5。 將 Azure Spatial Anchors 整合到共用體驗
-description: 完成此課程以了解如何在 HoloLens 2 應用程式中實作使用者共用體驗。
+description: 完成此課程，以了解如何使用 Azure Spatial Anchors 來錨定共用多使用者 HoloLens 2 應用程式中的物件。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: fc8e20a9ddaa595db0a3d59975e7c785d01c0a6d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697018"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353426"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5.將 Azure Spatial Anchors 整合到共用體驗
 
@@ -27,11 +27,11 @@ ms.locfileid: "91697018"
 
 在 [階層] 視窗中，展開 **SharedPlayground** 物件，然後展開 **TableAnchor** 物件以公開其子物件：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
+![已展開 SharedPlayground 和 TableAnchor 物件的 Unity](images/mr-learning-sharing/sharing-05-section1-step1-1.png)
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.MultiUserCapabilities] > [預製物件] 資料夾，並將 **按鈕** 預製物件拖曳到 **TableAnchor** 子物件上方，以將其作為 TableAnchor 物件的子系來新增至您的場景：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
+![已選取新加入按鈕 Prefab 的 Unity](images/mr-learning-sharing/sharing-05-section1-step1-2.png)
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>設定按鈕以操作場景
 
@@ -39,14 +39,14 @@ ms.locfileid: "91697018"
 
 在 [階層] 視窗中，展開 **Button** 物件，然後選取名為 **StartAzureSession** 的第一個子按鈕物件：
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
+![已選取 StartAzureSession 按鈕物件的 Unity](images/mr-learning-sharing/sharing-05-section2-step1-1.png)
 
 在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，並設定 **OnClick ()** 事件，如下所示：
 
 * 針對 **無 (物件)** 欄位，請指派 **TableAnchor** 物件
 * 從 **無函式** 下拉式清單中，選取 **AnchorModuleScript** > **StartAzureSession ()** 函式
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
+![已設定 StartAzureSession 按鈕 OnClick 事件的 Unity](images/mr-learning-sharing/sharing-05-section2-step1-2.png)
 
 在 [階層] 視窗中，選取名為 **CreateAzureAnchor** 的第二個子按鈕物件，然後在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，並設定 **OnClick ()** 事件，如下所示：
 
@@ -54,21 +54,21 @@ ms.locfileid: "91697018"
 * 從 **無函式** 下拉式清單中，選取 **AnchorModuleScript** > **CreateAzureAnchor ()** 函式
 * 針對所顯示的 [無 (遊戲物件)] 欄位，請指派 **TableAnchor** 物件
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
+![已設定 CreateAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-sharing/sharing-05-section2-step1-3.png)
 
 在 [階層] 視窗中，選取名為 **ShareAzureAnchor** 的第三個子按鈕物件，然後在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，並設定 **OnClick ()** 事件，如下所示：
 
 * 針對 **無 (物件)** 欄位，請指派 **TableAnchor** 物件
 * 從 **無函式** 下拉式清單中，選取 **AnchorModuleScript** > **CreateAzureAnchor ()** 函式
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
+![已設定 ShareAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-sharing/sharing-05-section2-step1-4.png)
 
 在 [階層] 視窗中，選取名為 **GetAzureAnchor** 的第四個子按鈕物件，然後在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，並設定 **OnClick ()** 事件，如下所示：
 
 * 針對 **無 (物件)** 欄位，請指派 **TableAnchor** 物件
 * 從 **無函式** 下拉式清單中，選取 **SharingModuleScript** > **GetAzureAnchor ()** 函式
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
+![已設定 GetAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-sharing/sharing-05-section2-step1-5.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>將場景連線至 Azure 資源
 
@@ -79,7 +79,7 @@ ms.locfileid: "91697018"
 * 在 [Spatial Anchors Account 識別碼] 欄位中，貼上 Azure Spatial Anchors 帳戶中的 **帳戶識別碼**
 * 在 [Spatial Anchors 帳戶金鑰] 欄位中，貼上 Azure Spatial Anchors 帳戶中的主要或次要 **存取金鑰**
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
+![已設定 Spatial Anchor Manager 的 Unity](images/mr-learning-sharing/sharing-05-section3-step1-1.png)
 
 > [!TIP]
 > 除了在場景中設定 Spatial Anchors 帳戶識別碼和金鑰，您可以針對整個專案設定；如果您有多個場景使用 ASA，這會很有用。 若要這麼做，請在 [專案] 視窗中，瀏覽至 [資產] > [AzureSpatialAnchors.SDK] > [資源] > **SpatialAnchorConfig** 資產，然後在 [偵測器] 視窗中設定這些值。
@@ -88,7 +88,7 @@ ms.locfileid: "91697018"
 
 * 在 **公用共用 Pin 碼** 欄位中變更幾個數字，讓 Pin 碼變成專案的專用碼
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
+![已設定 Anchor Module Script 的 Unity](images/mr-learning-sharing/sharing-05-section3-step1-2.png)
 
 在仍選取 **TableAnchor** 物件的情況下，在 [偵測器] 視窗中，確定 **已啟用** 所有指令碼元件：
 
@@ -96,7 +96,7 @@ ms.locfileid: "91697018"
 * 勾選 **Anchor Module Script (指令碼)** 元件旁的核取方塊來將其啟用
 * 勾選 **Sharing Module Script (指令碼)** 元件旁的核取方塊來將其啟用
 
-![mr-learning-sharing](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
+![已啟用所有 TableAnchor 指令碼元件的 Unity](images/mr-learning-sharing/sharing-05-section3-step1-3.png)
 
 ## <a name="trying-the-experience-with-spatial-alignment"></a>試用空間對齊的體驗
 

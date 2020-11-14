@@ -7,12 +7,12 @@ ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發
-ms.openlocfilehash: 25842fb8083b7757e73e7dbe7551b6bde9d8d95e
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
+ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638585"
+ms.lasthandoff: 11/07/2020
+ms.locfileid: "94340686"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -45,7 +45,7 @@ ms.locfileid: "92638585"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [安裝最新工具](../install-the-tools.md) | 下載並安裝最新的 Unity 套件，並設定您的混合實境專案 |
+| [安裝最新工具](../install-the-tools.md) | 下載並安裝最新版的 Unreal Engine，並設定您的混合實境專案 |
 | [HoloLens 2 教學課程系列](tutorials/unreal-uxt-ch1.md) | 進入 HoloLens 2 硬體的入門級 MRTK 教學課程 |
 
 ### <a name="2-core-building-blocks"></a>2.核心基本要素

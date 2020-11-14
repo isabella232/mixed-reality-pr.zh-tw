@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchor 教學課程 - 2。 開始使用 Azure Spatial Anchors
-description: 完成此課程以了解如何在混合實境應用程式中實作 Azure Spatial Anchors。
+description: 完成此課程，以了解如何使用 Azure Spatial Anchors 來錨定混合實境應用程式中的物件。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: e5553df4256e0535d5becb94f22b9ce8eac228dc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696463"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353446"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -47,7 +47,7 @@ ms.locfileid: "91696463"
 
 在 Unity 功能表中，選取 [視窗] >  **[套件管理員]** 以開啟 [套件管理員] 視窗，然後選取 [AR 基本概念]，並按一下 [安裝] 按鈕以安裝套件：
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section2-step1-1.png)
+![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
 > [!NOTE]
 > 您正在安裝 AR Foundation 套件，因為 Azure Spatial Anchors SDK 需要此套件，您將在下一節中匯入。
@@ -62,7 +62,7 @@ ms.locfileid: "91696463"
 
 匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section3-step1-1.png)
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-asa/asa-02-section3-step1-1.png)
 
 > [!NOTE]
 > 如果您看到任何有關於 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' 已過時的 CS0618 警告，您可以忽略這些警告。
@@ -81,7 +81,7 @@ ms.locfileid: "91696463"
 * **Instructions** Prefab
 * **ParentAnchor** Prefab
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section4-step1-1.png)
+![已選取新增 Prefabs 的 Unity](images/mr-learning-asa/asa-02-section4-step1-1.png)
 
 > [!TIP]
 > 如果您發現場景中的大圖示 (例如大型邊框的 'T' 圖示) 會造成干擾，您可以藉由將 <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">Gizmo 切換</a>到關閉位置來將其隱藏，如上圖所示。
@@ -95,14 +95,14 @@ ms.locfileid: "91696463"
 * 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [StartAzureSession ()]，以將此函式設定為觸發事件時所要執行的動作
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-1.png)
+![已設定 StartAzureSession 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 在 [階層] 視窗中，選取名為 **StopAzureSession** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
 * 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [StopAzureSession ()]，以將此函式設定為觸發事件時所要執行的動作
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-2.png)
+![已設定 StopAzureSession 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 在 [階層] 視窗中，選取名為 **CreateAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
@@ -110,7 +110,7 @@ ms.locfileid: "91696463"
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [CreateAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 * 將 **ParentAnchor** 物件指派給空的 [無 (遊戲物件)] 欄位，使其成為 CreateAzureAnchor () 函式的引數
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-3.png)
+![已設定 CreateAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-3.png)
 
 在 [階層] 視窗中，選取名為 **RemoveLocalAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
@@ -118,21 +118,21 @@ ms.locfileid: "91696463"
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [RemoveLocalAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 * 將 **ParentAnchor** 物件指派給空的 [無 (遊戲物件)] 欄位，使其成為 RemoveLocalAnchor () 函式的引數
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-4.png)
+![已設定 RemoveLocalAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-4.png)
 
 在 [階層] 視窗中，選取名為 **FindAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
 * 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [FindAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-5.png)
+![已設定 FindAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 在 [階層] 視窗中，選取名為 **DeleteAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **DeleteAzureAnchor** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [DeleteAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section5-step1-6.png)
+![已設定 DeleteAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
 
 ## <a name="connecting-the-scene-to-the-azure-resource"></a>將場景連線至 Azure 資源
 
@@ -141,7 +141,7 @@ ms.locfileid: "91696463"
 * 在 [Spatial Anchors Account 識別碼] 欄位中，貼上 Azure Spatial Anchors 帳戶中的 **帳戶識別碼**
 * 在 [Spatial Anchors 帳戶金鑰] 欄位中，貼上 Azure Spatial Anchors 帳戶中的主要或次要 **存取金鑰**
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section6-step1-1.png)
+![已設定 Spatial Anchor Manager 的 Unity](images/mr-learning-asa/asa-02-section6-step1-1.png)
 
 ## <a name="trying-the-basic-behaviors-of-azure-spatial-anchors"></a>嘗試 Azure Spatial Anchors 的基本行為
 
@@ -163,7 +163,7 @@ Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spati
 1. 刪除 Azure 錨點
 1. 停止 Azure 工作階段
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section7-step1-1.png)
+![已選取指示物件的 Unity](images/mr-learning-asa/asa-02-section7-step1-1.png)
 
 > [!CAUTION]
 > Azure Spatial Anchors 會使用網際網路來儲存和載入錨點資料，因此請確定您的裝置已連線到網際網路。
@@ -177,15 +177,15 @@ Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spati
 * 將 [X 軸縮放] 變更為 1.1
 * 將 [Z 軸縮放] 變更為 1.1
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-1.png)
+![已選取、置放及縮放 ParentAnchor 物件的 Unity](images/mr-learning-asa/asa-02-section8-step1-1.png)
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.GettingStarted] > [Prefabs] > [Rover] 資料夾，然後按一下 **RoverExplorer_Complete** Prefab，並將其拖曳至 [階層] 視窗中來新增到您的場景中：
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-2.png)
+![已選取新增 RoverExplorer_Complete Prefab 的 Unity](images/mr-learning-asa/asa-02-section8-step1-2.png)
 
 在 [階層] 視窗中，繼續選取新增的 RoverModule_Complete 物件，並將其拖曳至 **ParentAnchor** 物件，使其成為 ParentAnchor 物件的子系：
 
-![mr-learning-asa](images/mr-learning-asa/asa-02-section8-step1-3.png)
+![RoverExplorer_Complete 物件設定為 ParentAnchor 子系的 Unity](images/mr-learning-asa/asa-02-section8-step1-3.png)
 
 如果您現在重建專案，並將應用程式部署到您的裝置，您現在就可以藉由移動已調整大小的立方體來重新放置整個 Rover Explorer 體驗。
 

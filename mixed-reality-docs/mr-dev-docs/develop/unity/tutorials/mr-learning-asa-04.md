@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors 教學課程 - 4. 顯示 Azure Spatial Anchors 意見反應
-description: 完成此課程以了解如何在混合實境應用程式中實作 Azure Spatial Anchors。
+description: 完成此課程，以了解如何在混合實境應用程式中顯示來自 Azure Spatial Anchors 的意見反應。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c36fa20ae6438aee92d5d853febd683e01e81ea7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 4c35af1f5a2a723df6603fbdf41dd18a2e9ee45d
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696456"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353336"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4.顯示 Azure Spatial Anchors 的意見反應
 
@@ -27,7 +27,7 @@ ms.locfileid: "91696456"
 
 在階層視窗中，以滑鼠右鍵按一下 [指示] >  [TextContent] 物件。 選取 [3D 物件] >  [文字 - TextMeshPro]，將 TextMeshPro 文字物件建立為指示 > TextContent 物件的子系：
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-1.png)
+![已選取新建立 TextMeshPro 物件的 Unity](images/mr-learning-asa/asa-04-section1-step1-1.png)
 
 > [!TIP]
 > 若要更簡便地使用場景，請按一下物件左邊的眼睛圖示，將 ParentAnchor 物件的<a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">場景可見度</a>設為關閉。 這會在場景視窗中隱藏物件，而不會變更其遊戲內的可見度。
@@ -44,13 +44,13 @@ ms.locfileid: "91696456"
 * 將 TextMeshPro - 文字元件的 **字型大小** 變更為 0.17。
 * 將 TextMeshPro 文字元件的 **對齊** 變更為置中和中間。
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-2.png)
+![已設定意見反應物件的 Unity](images/mr-learning-asa/asa-04-section1-step1-2.png)
 
 在階層視窗中再次選取 [意見反應] 物件，然後在偵測器視窗中使用 [新增元件] 按鈕來新增 **錨點意見反應指令碼 (指令碼)** 元件，並進行以下設定：
 
 * 將 **Feedback** 物件本身指派給 **Anchor Feedback Script (指令碼)** 元件的 [回饋文字] 欄位。
 
-![mr-learning-asa](images/mr-learning-asa/asa-04-section1-step1-3.png)
+![已設定 Anchor Feedback Script 元件的 Unity](images/mr-learning-asa/asa-04-section1-step1-3.png)
 
 ## <a name="congratulations"></a>恭喜！
 

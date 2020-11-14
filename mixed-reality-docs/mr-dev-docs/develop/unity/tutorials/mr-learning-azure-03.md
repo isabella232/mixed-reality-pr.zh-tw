@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 自訂視覺, azure 認知服務
 ms.localizationpriority: high
-ms.openlocfilehash: baf5ddb805e6bff6fd41d2fb7cc8ea64b55944e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696429"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353266"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.整合 Azure 自訂視覺
 
@@ -43,11 +43,11 @@ ms.locfileid: "91696429"
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.AzureCloudServices] > [Prefabs] > [Manager] 資料夾。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-1.png)
+![具有 [專案] 視窗的 Unity，顯示 ObjectDetectionManager Prefab 的路徑](images/mr-learning-azure/tutorial3-section4-step1-1.png)
 
 從該處，將 Prefab **ObjectDetectionManager** 拖曳到場景階層中。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-2.png)
+![在偵測器中顯示了 ObjectDetectionManager 指令碼元件設定欄位的 Unity](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 在 [階層] 視窗中，找出 **ObjectDetectionManager** 物件並加以選取。
 **ObjectDetectionManager** Prefab 包含 **ObjectDetectionManager (指令碼)** 元件，而且您可以從 [偵測器] 視窗看到其相依於數個設定。
@@ -66,11 +66,11 @@ ms.locfileid: "91696429"
 
 現在，正確設定 **ObjectDetectionManager (指令碼)** 之後，請在場景階層中尋找 **的 SceneController** 物件，然後加以選取。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-3.png)
+![在偵測器中顯示了 SceneController 指令碼元件設定欄位的 Unity](images/mr-learning-azure/tutorial3-section4-step1-3.png)
 
 您會在 **SceneController** 元件中看到 [物件偵測管理員] 欄位是空的，請將 **ObjectDetectionManager** 從階層拖曳至該欄位並儲存場景。
 
-![mr-learning-azure](images/mr-learning-azure/tutorial3-section4-step1-4.png)
+![已設定 SceneController 指令碼元件的 Unity](images/mr-learning-azure/tutorial3-section4-step1-4.png)
 
 ## <a name="take-and-upload-images"></a>拍攝影像並上傳
 

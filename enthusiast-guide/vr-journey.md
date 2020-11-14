@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: def16b5bff13fec13ce0ebb503ec88dfca22e0b8
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293069"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573212"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -41,7 +41,7 @@ ms.locfileid: "92293069"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [設定 Windows Mixed Reality](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 熟悉您在新的 VR 裝置上的控制器、空間界限、語音輸入和 Microsoft Edge |
+| [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md) | 熟悉您在新的 VR 裝置上的控制器、空間界限、語音輸入和 Microsoft Edge |
 | [Windows Mixed Reality 安裝程式常見問題](wmr-setup-faq.md) | 在設定 Windows Mixed Reality 時，取得已知問題的解答和疑難排解協助 |
 | [健全狀況、安全性和緩和方針](wmr-health-safety-comfort.md) | 在使用您的耳機之前使用 Windows Mixed Reality 保持安全的建議  |
 
@@ -63,7 +63,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。
 | [使用 WebVR](webvr.md) | 在瀏覽器環境中取得安裝程式以體驗 VR |
 
 > [!NOTE]
-> 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)**。
+> 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)** 。
 
 ### <a name="4-troubleshooting-tips--resources"></a>4. 疑難排解、秘訣 & 資源
 

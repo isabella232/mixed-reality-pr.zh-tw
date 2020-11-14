@@ -1,18 +1,18 @@
 ---
 title: Azure Spatial Anchors 教學課程 - 5。 適用於 Android 和 iOS 的 Azure Spatial Anchors
-description: 完成此課程，以了解如何將包含混合實境工具組和 Azure Spatial Anchors 的 Unity 專案部署至 Android 和 iOS。
+description: 完成此課程，以了解如何將包含混合實境工具組 (MRTK) 和 Azure Spatial Anchors 的 Unity 專案部署至 Android 和 iOS。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, android, ios
 ms.localizationpriority: high
-ms.openlocfilehash: f1c1ab7c9a79108931762b31640ff667fe1fc2e5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696437"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353376"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 
@@ -37,7 +37,7 @@ ms.locfileid: "91696437"
 
 在 Unity 功能表中，選取 [視窗] > [套件管理員] 以開啟 [套件管理員] 視窗，然後選取 [AR Foundation] > [3.1.3]，並按一下 [更新為 3.1.3] 按鈕以更新套件：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section1-step1-1.png)
+![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-asa/asa-05-section1-step1-1.png)
 
 若有需要，遵循相同程序來匯入其餘套件。
 
@@ -50,25 +50,25 @@ ms.locfileid: "91696437"
 
 在 [階層] 視窗中，選取 [MixedRealityToolkit] 物件。 然後在 [偵測器] 視窗中，選取 [相機] 索引標籤、複製相機設定檔，並為其提供適當的名稱，例如， **AzureSpatialAnchors_ARCameraProfile** ：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-1.png)
+![已選取新建立 ARCameraProfile 的 Unity](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
 > [!TIP]
 > 如需有關如何複製 MRTK 設定檔的提示，您可以參閱[設定混合實境工具組設定檔](mr-learning-base-03.md)的指示。
 
 在仍選取 [相機] 索引標籤的 [偵測器] 視窗中展開 [相機設定提供者]，然後按一下 [+ 新增相機設定提供者] 按鈕，再展開新增的 [新資料提供者 1]：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-2.png)
+![已新增新資料提供者的 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
 使用 [類型] 下拉式清單，將類型變更為 [Microsoft.MixedReality.Toolkit.Experimental.UnityAR] > [UnityARCameraSettings]：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-3.png)
+![具有資料提供者類型選取路徑的 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
 在仍然選取 **MixedRealityToolkit** 物件的 [階層] 視窗中，使用 [新增元件] 按鈕來新增下列元件：
 
 * AR Anchor Manager (指令碼)
 * DisableDiagnosticsSystem (指令碼)
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section2-step1-4.png)
+![已新增 AR 錨點管理員和 DisableDiagnosticsSystem 元件的 Unity MixedRealityToolkit 物件 ](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
 > [!NOTE]
 > AR Session Origin (指令碼) 元件會在您新增 AR Reference Point Manager (指令碼) 元件時自動加入，因為這是 AR Reference Point Manager (指令碼) 元件的必要項目。
@@ -79,7 +79,7 @@ ms.locfileid: "91696437"
 
 在 Unity 功能表中，選取 [檔案] > [建置設定...] 來開啟 [建置設定] 視窗，然後將平台切換為 Android：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-1.png)
+![已選取 Android 平台的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section3-step1-1.png)
 
 > [!TIP]
 > 如需有關如何切換建置平台的提示，可參閱[切換建置平台](mr-learning-base-02.md#switching-the-build-platform)的指示。
@@ -88,17 +88,17 @@ ms.locfileid: "91696437"
 
 在 Unity 功能表中，選取 [混合實境工具組] > [公用程式] > [設定 Unity 專案] 來開啟 [MRTK 專案設定程式] 視窗，並確定已選取所有選項，然後按一下 [套用] 按鈕來套用設定：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![Unity [MRTK 專案設定程式] 視窗 Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [其他設定] 區段，選取 [Vulkan]，然後按一下 **"-"** 來將其移除：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-3.png)
+![已選取 Vulcan 的 Unity [其他設定]](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
 關閉 [玩家設定] 視窗，然後再次開啟 [建置設定] 視窗。
 
 在 [建置設定] 視窗中，按一下 [新增開啟的場景] 按鈕，將您目前的場景加入至 [建置中的場景] 清單。 然後，使用 USB 纜線，將您的 Android 裝置連接到您的電腦，並從 [執行裝置] 下拉式清單中將其選取：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-4.png)
+![已新增場景並已選取 [執行裝置] 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section3-step1-4.png)
 
 >[!NOTE]
 > 如果您的裝置未出現在 [執行裝置] 下拉式清單中，您可能需要按下下拉式清單旁的 [重新整理] 按鈕。
@@ -107,7 +107,7 @@ ms.locfileid: "91696437"
 
 選擇適當的位置來儲存您的建置，例如 _D:\MixedRealityLearning\Builds_ ，然後為 apk 提供適當的名稱，例如 _MRTKTutorials-AzureSpatialAnchors_ ，然後按一下 [儲存] 按鈕來啟動建置程序：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section3-step1-5.png)
+![具有 [儲存] 提示視窗 Android 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
 如果您在 Unity 主控台視窗中遇到與 Android SDK、NDK 或 JDK 模組相關的任何錯誤，則需要開啟 Unity Hub，並安裝相關聯的 Android 建置支援模組。
@@ -120,7 +120,7 @@ ms.locfileid: "91696437"
 
 在 Unity 功能表中，選取 [檔案] > [建置設定...] 來開啟 [建置設定] 視窗，然後將平台切換為 iOS：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-1.png)
+![已選取 iOS 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section4-step1-1.png)
 
 > [!TIP]
 > 如需有關如何切換建置平台的提示，可參閱[切換建置平台](mr-learning-base-02.md#switching-the-build-platform)的指示。
@@ -129,23 +129,23 @@ ms.locfileid: "91696437"
 
 在 Unity 功能表中，選取 [混合實境工具組] > [公用程式] > [設定 Unity 專案] 來開啟 [MRTK 專案設定程式] 視窗，並確定已選取所有選項，然後按一下 [套用] 按鈕來套用設定：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-2.png)
+![Unity [MRTK 專案設定程式] 視窗 iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [其他設定] 區段，取消核取 [Strip Engine Code] 核取方塊來將其停用：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-3.png)
+![已停用 [Strip Engine Code] 的 Unity [其他設定]](images/mr-learning-asa/asa-05-section4-step1-3.png)
 
 關閉 [玩家設定] 視窗，然後再次開啟 [建置設定] 視窗。
 
 在 [建置設定] 視窗中，按一下 [新增開啟的場景] 按鈕，將您目前的場景加入至 [建置中的場景] 清單：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-4.png)
+![已新增場景的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section4-step1-4.png)
 
 在 [建置設定] 視窗中，按一下 [建置] 按鈕，以開啟 [建置 iOS] 視窗。
 
 選擇適當的位置來儲存您的 Xcode 專案，例如 _D:\MixedRealityLearning\Builds_ ，建立新的資料夾並指定適當的名稱，例如 _MRTKTutorials-AzureSpatialAnchors_ ，然後按一下 [選取資料夾] 按鈕來開始建置程序：
 
-![mr-learning-asa](images/mr-learning-asa/asa-05-section4-step1-5.png)
+![具有 [儲存] 提示視窗 iOS 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
 當建置程序完成時，請遵循[ Xcode 專案](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)的指示，以了解如何將 Xcode 專案部署至您的 iOS 裝置。
 

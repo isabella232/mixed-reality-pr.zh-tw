@@ -1,18 +1,18 @@
 ---
 title: 入門教學課程 - 5。 使用解算器建立動態內容
-description: 本課程說明如何使用混合實境工具組 (MRTK) 來建立混合實境應用程式。
+description: 本課程說明如何使用混合實境工具組 (MRTK) 解算器來建立動態內容。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: c6ddbbd8bb65aa93c80f1e4499e976c7c24af7ec
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293212"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353526"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -30,7 +30,7 @@ ms.locfileid: "92293212"
 
  MRTK 的解算器位於 MRTK SDK 資料夾中。 若要查看專案中的可用解算器，請在 [專案] 視窗中瀏覽至 [資產]  >  [MRTK]  >  [SDK]  >  [功能]  >  [公用程式] >  [解算器]：
 
-![mr-learning-base](images/mr-learning-base/base-05-section1-step1-1.png)
+![已選取 [解算器] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-05-section1-step1-1.png)
 
 在本教學課程中，我們將檢閱「方向性指標解算器」和「點選放置解算器」的實作。 若要深入了解 MRTK 中可用的完整解算器範圍，您可以參閱 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[解算器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)指南。
 
@@ -41,14 +41,14 @@ ms.locfileid: "92293212"
 
 在 [專案] 視窗中，瀏覽至 [資產]  >  [MRTK.Tutorials.GettingStarted]  >  [Prefabs] 資料夾，按一下 [Chevron] Prefab 並將其拖曳至 [階層] 視窗，將其轉換 [位置] 設定為 X = 0、Y = 0、Z = 2，以將其放在 RoverExplorer 物件附近：
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-1.png)
+![已選取新加入 Chevron Prefab 的 Unity](images/mr-learning-base/base-05-section2-step1-1.png)
 
 > [!TIP]
 > 如果您發現場景中的相機或任何其他圖示隱藏了物件，或造成混亂，您可以藉由<a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">切換 Gizmos</a> 為關閉位置來隱藏這些物件，如上圖所示。 若要深入了解 Gizmos 功能表，以及如何使用其來最佳化場景檢視，您可以參閱 Unity 的 <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos 功能表</a>文件。
 
 將新增的 Chevron 物件 **Indicator** 重新命名，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **DirectionalIndicator** ：
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-2.png)
+![已新增 DirectionalIndicator 解算器元件的 Unity](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > 當您新增解算器時 (在此案例中為 DirectionalIndicator 元件)，Solver Handler 元件也會自動新增，因為解算器需要此元件。
@@ -62,13 +62,13 @@ ms.locfileid: "92293212"
 * 藉由將其從 [階層] 視窗拖曳至 [無 (轉換)]  欄位，將 **RoverExplorer** 指派至 **DirectionalIndicator** 元件的 **方向目標**
 * 將 [檢視位移] 變更為 0.2
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-3.png)
+![已設定 DirectionalIndicator 解算器元件的 Unity](images/mr-learning-base/base-05-section2-step1-3.png)
 
 按下 [開始遊戲] 按鈕進入遊戲模式，在向左或向右移動滑鼠時按住滑鼠右鍵來旋轉您的注視方向，同時注意下列事項：
 
 * 當您查看 RoverExplorer 物件時，指標物件會出現並指向 RoverExplorer 物件
 
-![mr-learning-base](images/mr-learning-base/base-05-section2-step1-4.png)
+![正在使用 DirectionalIndicator 解算器的 Unity 播放模式分割檢視](images/mr-learning-base/base-05-section2-step1-4.png)
 
 > [!NOTE]
 > 如果您沒有在場景視窗中看到相機光線，請確定您已啟用 [Gizmos] 功能表，如上圖中所示。
@@ -87,7 +87,7 @@ ms.locfileid: "92293212"
 * 勾選 [保持垂直方向] 核取方塊
 * 從 [磁性表面]  >  [元素 0] 下拉式清單中，取消選取 [空間感知] 以外的所有選項
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-1.png)
+![已新增和設定 TapToPlace 解算器元件的 Unity](images/mr-learning-base/base-05-section3-step1-1.png)
 
 > [!NOTE]
 > [磁性表面] 設定會決定放置物件時，Tap To Place (指令碼) 元件可以偵測哪些物件。 藉由將設定變更為僅限 [空間感知]，Tap To Place (指令碼) 元件就只能將 Rover 放在名為「空間感知」的 Unity 層物件上，其預設為 HoloLens 所產生的空間感知網格。
@@ -99,7 +99,7 @@ ms.locfileid: "92293212"
 
 在 [階層] 視窗中，保持選取 RoverAssembly 物件，在 [偵測器] 視窗中，找出 [On Placing Started ()] 事件，然後按一下 **+** 圖示，以新增新的事件：
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-2.png)
+![已新增 TapToPlace OnPlacingStarted 事件的 Unity](images/mr-learning-base/base-05-section3-step1-2.png)
 
 設定事件，如下所示：
 
@@ -107,7 +107,7 @@ ms.locfileid: "92293212"
 * 從 [沒有函式] 下拉式清單中，選取 [TapToPlace]  >  [float SurfaceNormalOffset]，以在觸發事件時更新 SurfaceNormalOffset 屬性值
 * 確認引數已設定為 **0**
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-3.png)
+![已設定 TapToPlace OnPlacingStarted 事件的 Unity](images/mr-learning-base/base-05-section3-step1-3.png)
 
 在 [階層] 視窗中，以滑鼠右鍵按一下空的位置，然後選取 [3D 物件]  >  [Cube]，以建立代表地面的暫存物件，並設定 [Transform] 元件，如下所示：
 
@@ -115,27 +115,27 @@ ms.locfileid: "92293212"
 * **旋轉** ：X = 0、Y = 0、Z = 0
 * **縮放比例** ：X = 10、Y = 0.2、Z = 10
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-4.png)
+![已新增並置放暫存地面 Cube 物件的 Unity](images/mr-learning-base/base-05-section3-step1-4.png)
 
 在 [階層] 視窗中保持選取暫存 Cube，在 [偵測器] 視窗中使用 [層] 下拉式清單，將 Cube 的圖層設定變更為包含 **空間感知** 層：
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-5.png)
+![將暫存地面 Cube 物件圖層設定為 [空間感知] 的 Unity](images/mr-learning-base/base-05-section3-step1-5.png)
 
 按下 [開始遊戲] 按鈕進入遊戲模式，然後在往下移動滑鼠時按住滑鼠右鍵，直到注視 RoverAssembly 物件為止：
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-6.png)
+![具有注視點擊 RoverAssembly 物件的 Unity 播放模式分割檢視](images/mr-learning-base/base-05-section3-step1-6.png)
 
 按一下滑鼠左鍵以啟動點選放置程序：
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-7.png)
+![已開始放置 TapToPlace 的 Unity 播放模式分割檢視](images/mr-learning-base/base-05-section3-step1-7.png)
 
 在向左或向右移動滑鼠時按住滑鼠右鍵來旋轉您的注視方向，當您對放置位置感到滿意時，按一下滑鼠左鍵：
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-8.png)
+![已結束放置 TapToPlace 的 Unity 播放模式分割檢視](images/mr-learning-base/base-05-section3-step1-8.png)
 
 在遊戲模式中完成功能的測試之後，以滑鼠右鍵按一下 Cube 物件，然後選取 [刪除] 將其從場景中移除：
 
-![mr-learning-base](images/mr-learning-base/base-05-section3-step1-9.png)
+![已選取暫存地面 Cube 和 [刪除] 內容相關快顯功能表的 Unity](images/mr-learning-base/base-05-section3-step1-9.png)
 
 ## <a name="congratulations"></a>恭喜！
 

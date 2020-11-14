@@ -1,18 +1,18 @@
 ---
 title: 入門教學課程 - 9。 使用語音命令
-description: 了解如何使用混合實境工具組 (MRTK) 建立混合實境應用程式。
+description: 本課程說明如何搭配混合實境工具組 (MRTK) 來使用語音命令。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d9ddf3d234b68dfe4ce3ab5c9272566479edd71d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
+ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696726"
+ms.lasthandoff: 11/04/2020
+ms.locfileid: "93353506"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
 

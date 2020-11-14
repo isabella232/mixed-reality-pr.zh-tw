@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、mrtk、design、範例應用程式、控制項
-ms.openlocfilehash: ee410e16a578efa53a38da2fb6b6477e109ac101
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682681"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573182"
 ---
 # <a name="surfaces"></a>表面
 
@@ -21,6 +21,11 @@ ms.locfileid: "91682681"
 [表面](https://github.com/microsoft/MRDL_Unity_Surfaces)  是 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 它會探索如何使用視覺效果、音訊和完全明確的手動追蹤來建立 tactile 刺痛。
 
 ![表面](images/MRDL_Surfaces_1.jpg)
+
+## <a name="demo-video"></a>示範影片 
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
+
+使用混合實境擷取 HoloLens 2 記錄
 
 ## <a name="about-the-app"></a>關於應用程式
 介面示範如何使用混合現實工具組 (MRTK) 的輸入系統和建立區塊，以建立 HoloLens 2 的應用程式體驗。 在此專案中，您可以找到下列範例：
@@ -47,11 +52,13 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>盾 Yoon 公園</b><br>UX 設計工具 @Microsoft</td>
+<td style="border-style: none"><b>Dong Yoon Park</b><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>
 
 ## <a name="see-also"></a>另請參閱
 
-* [可互動的物件](../../design/interactable-object.md)
-* [物件集合](../../design/object-collection.md)
+* [MRTK 範例中樞](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
+* [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)
