@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens、持續性、Unity
-ms.openlocfilehash: bb1a9b0544f9325a60c86c7424b7b451b6b4335b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens、持續性、Unity、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682460"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678527"
 ---
 # <a name="persistence-in-unity"></a>Unity 中的持續性
 
@@ -109,17 +109,17 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
+如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [空間對應](spatial-mapping-in-unity.md)
 
-或跳至混合的現實平臺功能和 Api：
+或者，直接跳到混合實境平台功能和 API 的主題：
 
 > [!div class="nextstepaction"]
 > [共用體驗](shared-experiences-in-unity.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。
 
 ## <a name="see-also"></a>另請參閱
 * [空間錨點持續性](../../design/coordinate-systems.md#spatial-anchor-persistence)

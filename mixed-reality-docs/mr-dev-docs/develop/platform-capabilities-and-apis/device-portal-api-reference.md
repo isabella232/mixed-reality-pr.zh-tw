@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
-keywords: HoloLens、Windows 裝置入口網站、API
-ms.openlocfilehash: 6b8f99fbc6f1965639ceef218f5c516d2e6ba467
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens、Windows 裝置入口網站、API、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679305"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677967"
 ---
 # <a name="device-portal-api-reference"></a>裝置入口網站 API 參照
 
@@ -159,7 +159,7 @@ Payload
 
 取得裝置的熱階段 (0 正常、1暖、2關鍵) 
 
-## <a name="map-manager"></a>對應管理員
+## <a name="map-manager"></a>地圖管理員
 
 **/api/holographic/mapmanager/mapFiles (取得)**
 
@@ -355,7 +355,7 @@ $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 
 取得 Windows 裝置入口網站內混合現實捕捉的狀態。
 
-***回應***
+**_回應_* _
 
 回應包含 JSON 屬性，指出 Windows 裝置入口網站是否錄製影片。
 
@@ -363,7 +363,7 @@ $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 {"IsRecording" : boolean}
 ```
 
-**/api/holographic/mrc/thumbnail (取得)**
+_ */api/holographic/mrc/thumbnail (取得)**
 
 取得指定檔案的縮圖影像。
 

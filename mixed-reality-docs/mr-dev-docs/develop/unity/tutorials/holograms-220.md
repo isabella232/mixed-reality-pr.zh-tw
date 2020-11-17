@@ -1,17 +1,17 @@
 ---
-title: MR 空間 220-空間音效
+title: MR Spatial 220 - 空間音效
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習空間音效概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學院、教學課程、空間音效
-ms.openlocfilehash: 1da57024fbc069fcfc7d522175cf6d542304414a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間音效、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681913"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678367"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR Spatial 220：空間音效
 
@@ -38,7 +38,7 @@ ms.locfileid: "91681913"
 
 ## <a name="before-you-start"></a>開始之前
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>先決條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。
@@ -58,7 +58,7 @@ ms.locfileid: "91681913"
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
-* 您必須在 [工具]-[>選項] 下的 Visual Studio 中停用 [啟用 Just My Code] ( *未* 核取) ，才能在程式碼中叫用中斷點。
+* 您必須在 [工具]-[>選項] 下的 Visual Studio 中停用 [啟用 Just My Code] (*未* 核取) ，才能在程式碼中叫用中斷點。
 
 ## <a name="chapter-1---unity-setup"></a>第1章-Unity 設定
 
@@ -67,55 +67,55 @@ ms.locfileid: "91681913"
 * 變更 Unity 的音效設定以使用 Microsoft 空間音效。
 * 將3D 音效新增至 Unity 中的物件。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 啟動 Unity。
-* 選取 [開啟]。
+* 選取 [開啟]  。
 * 流覽至您的桌面，並尋找您先前取消封存的資料夾。
 * 按一下 [ **Starting\Decibel** ] 資料夾，然後按下 [ **選取資料夾** ] 按鈕。
 * 等候專案在 Unity 中載入。
-* 在 [ **專案** ] 面板中，開啟 [ **Scenes\Decibel.unity** ]。
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY** ]。
+* 在 [ **專案** ] 面板中，開啟 [ **Scenes\Decibel.unity**]。
+* **在 [階層**] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY**]。
 * 在 [偵測器] 中，展開 [ **spatialize** ]，並注意 [沒有 **Spatialize** ] 核取方塊。
 
 根據預設，Unity 不會載入空間定位器外掛程式。 下列步驟將會在專案中啟用空間音效。
 
-* 在 Unity 的頂端功能表中，移至 [ **編輯 > 專案設定 > 音訊** ]。
-* 尋找 [ **空間定位器外掛程式** ] 下拉式清單，然後選取 [ **MS HRTF 空間定位器** ]。
-* **在 [階層** ] 面板中，選取 [ **HologramCollection > P0LY** ]。
+* 在 Unity 的頂端功能表中，移至 [ **編輯 > 專案設定 > 音訊**]。
+* 尋找 [ **空間定位器外掛程式** ] 下拉式清單，然後選取 [ **MS HRTF 空間定位器**]。
+* **在 [階層**] 面板中，選取 [ **HologramCollection > P0LY**]。
 * 在 [偵測 **器** ] 面板中，尋找 **音訊來源** 元件。
 * 核取 [ **Spatialize** ] 核取方塊。
-* 將 **空間 Blend** 滑杆拖曳至 **3d** ，或在編輯方塊中輸入 **1** 。
+* 將 **空間 Blend** 滑杆拖曳至 **3d**，或在編輯方塊中輸入 **1** 。
 
 我們現在會在 Unity 中建立專案，並在 Visual Studio 中設定解決方案。
 
-1. 在 Unity 中，選取 [ **File > Build Settings** ]。
+1. 在 Unity 中，選取 [ **File > Build Settings**]。
 2. 按一下 [ **新增開啟場景** ] 以加入場景。
-3. 在 [ **平臺** ] 清單中選取 **通用 Windows 平臺** ，然後按一下 [ **切換平臺** ]。
-4. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens** 。 否則，請將它保留在 **任何裝置** 上。
+3. 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
+4. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
 5. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
-6. 按一下 [建置]  。
+6. 按一下 [建置]。
 7. 建立名為 "App" 的 **新資料夾** 。
 8. 按一下 **應用程式** 資料夾。
-9. 按下 [ **選取資料夾** ]。
+9. 按下 [ **選取資料夾**]。
 
 當 Unity 完成時，將會出現檔案總管視窗。
 
 1. 開啟 **應用程式** 資料夾。
-2. 開啟 [ **分貝 Visual Studio] 解決方案** 。
+2. 開啟 [ **分貝 Visual Studio] 解決方案**。
 
 如果要部署到 HoloLens：
 
-1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86** 。
-2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦** ]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)** 。 按一下 [選取]。  如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項** 。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
+2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
+3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 
 如果部署到沉浸式耳機：
 
-1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x64** 。
-2. 請確定部署目標設定為 [ **本機電腦** ]。
-3. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。
+1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x64**。
+2. 請確定部署目標設定為 [ **本機電腦**]。
+3. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
 
 ## <a name="chapter-2---spatial-sound-and-interaction"></a>第2章-空間音效和互動
 
@@ -134,18 +134,18 @@ ms.locfileid: "91681913"
 
 音效的適當位置將會取決於全像影像。 比方說，如果全息圖是人類的，則音效來源應該位於嘴附近，而不是距離。
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>指示
 
 下列指示會將 hrtf 音效附加至全像影像。
 
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY** ]。
-* 在 [偵測 **器** ] 面板的 [ **spatialize** ] 中，按一下 [ **AudioClip** ] 旁的圓形，然後從快顯視窗中選取 [ **PolyHover** ]。
+* **在 [階層**] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY**]。
+* 在 [偵測 **器** ] 面板的 [ **spatialize**] 中，按一下 [ **AudioClip** ] 旁的圓形，然後從快顯視窗中選取 [ **PolyHover** ]。
 * 按一下 [ **輸出** ] 旁的圓形，然後從快顯視窗中選取 [ **SoundEffects** ]。
 
 專案分貝會使用 Unity **AudioMixer** 元件來調整音效群組的音效等級。 藉由以這種方式將聲音分組，可以調整整體磁片區，同時維持每個音效的相對音量。
 
-* 在 **spatialize** 中，展開 [ **3d 音效設定** ]。
-* 將 **Doppler 層級** 設定為 **0** 。
+* 在 **spatialize** 中，展開 [ **3d 音效設定**]。
+* 將 **Doppler 層級** 設定為 **0**。
 
 將 Doppler 層級設定為 [零] 會停用 (由全像影像或使用者) 的移動所造成的音調變化。 Doppler 的典型範例是快速移動的汽車。 當汽車採用固定的接聽程式時，引擎的音調也會上升。 當它通過接聽程式時，會降低距離。
 
@@ -159,14 +159,14 @@ ms.locfileid: "91681913"
 
 瞭解預期的其中一個範例是，鳥通常會高於人類的標題。 如果使用者聽到鳥音效，他們的初始反應就是查閱。 將鳥放在使用者的下方，可能會讓他們面對正確的音效方向，但根據預期需要查閱，找不到影像。
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>指示
 
 下列指示可讓 P0LY 在您後方隱藏，讓您可以使用音效找出全像影像。
 
-* **在 [階層** ] 面板中，選取 [ **管理員** ]。
-* 在 [偵測 **器** ] 面板中，尋找 [ **語音輸入處理常式** ]。
-* 在 [ **語音輸入處理常式** ] 中，展開 [ **移至隱藏** ]。
-* 將 **函數** 變更為 **PolyActions. GoHide** 。
+* **在 [階層**] 面板中，選取 [**管理員**]。
+* 在 [偵測 **器** ] 面板中，尋找 [ **語音輸入處理常式**]。
+* 在 [ **語音輸入處理常式**] 中，展開 [ **移至隱藏**]。
+* 將 **函數** 變更為 **PolyActions. GoHide**。
 
 ![關鍵字：移至隱藏](images/gohide.png)
 
@@ -178,26 +178,26 @@ ms.locfileid: "91681913"
 * 不要讓使用者過高的聲音變得太過
 * 微妙的音效效果最佳-請勿失色經驗
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>指示
 
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]。
-* 展開 [ **EnergyHub** ]，然後選取 [ **基底** ]。
-* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 並加入 **手勢音效處理常式** 。
-* 在 [ **手勢音效處理常式** ] 中，按一下 [ **導覽開始的剪輯** ] 和 [ **導覽更新的剪輯** ] 旁的圓形，然後從快顯視窗中選取 [ **RotateClick** ]。
+* **在 [階層**] 面板中，展開 [ **HologramCollection**]。
+* 展開 [ **EnergyHub** ]，然後選取 [ **基底**]。
+* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 並加入 **手勢音效處理常式**。
+* 在 [ **手勢音效處理常式**] 中，按一下 [ **導覽開始的剪輯** ] 和 [ **導覽更新的剪輯** ] 旁的圓形，然後從快顯視窗中選取 [ **RotateClick** ]。
 * 按兩下 [GestureSoundHandler] 以 Visual Studio 載入。
 
 手勢音效處理常式會執行下列工作：
 
-* 建立並設定 **spatialize** 。
+* 建立並設定 **spatialize**。
 * 將 **spatialize** 放在適當 **GameObject** 的位置。
 * 播放與手勢相關聯的 **AudioClip** 。
 
 #### <a name="build-and-deploy"></a>建置和部署
 
-1. 在 Unity 中，選取 [ **File > Build Settings** ]。
-2. 按一下 [建置]  。
+1. 在 Unity 中，選取 [ **File > Build Settings**]。
+2. 按一下 [建置]。
 3. 按一下 **應用程式** 資料夾。
-4. 按下 [ **選取資料夾** ]。
+4. 按下 [ **選取資料夾**]。
 
 確認工具列中顯示的是「發行」、「x86」、「x64」和「遠端裝置」。 如果沒有，這就是 Visual Studio 的編碼實例。 您可能需要從應用程式資料夾重新開啟方案。
 
@@ -228,18 +228,18 @@ ms.locfileid: "91681913"
 
 例如，在資料表上設定杯的音效應該會比將科羅拉多放在金屬片上的音效更安靜。
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>指示
 
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]。
-* 展開 [ **EnergyHub** ]，選取 [ **基底** ]。
+* **在 [階層**] 面板中，展開 [ **HologramCollection**]。
+* 展開 [ **EnergyHub**]，選取 [ **基底**]。
 * 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後 **以音效和動作** 新增點一下。
-* 利用 **音效和動作來放置** ：
-  * 選取 **[在點處放置父系** ]。
-  * 設定放置 **音效** 以 **放置** 。
-  * 將 **取貨音效** 設定為 **收取** 。
+* 利用 **音效和動作來放置**：
+  * 選取 **[在點處放置父系**]。
+  * 設定放置 **音效** 以 **放置**。
+  * 將 **取貨音效** 設定為 **收取**。
   * 在 [ **取貨動作** ] 和 [ **放置] 動作** 下，按右下方的 +。 將 EnergyHub 從場景拖曳至 [ **無] (物件)** 欄位。
-    * 在 [ **裝貨] 動作** 底下，按一下 [ **沒有函數**  ->  **EnergyHubBase**  ->  **ResetAnimation** ]。
-    * 在 [ **放置動作** ] 下方，按一下 [ **沒有函數**  ->  **EnergyHubBase**  ->  **>onselect** ]。
+    * 在 [**裝貨] 動作** 底下，按一下 [**沒有函數**  ->  **EnergyHubBase**  ->  **ResetAnimation**]。
+    * 在 [**放置動作**] 下方，按一下 [**沒有函數**  ->  **EnergyHubBase**  ->  **>onselect**]。
 
 ![利用音效和動作來放置](images/holograms220-taptoplace.png)
 
@@ -251,10 +251,10 @@ ms.locfileid: "91681913"
 
 典型的範例是音樂會廳。 當接聽程式位於大廳之外且門已關閉時，音樂音效會 muffled。 通常磁片區也會減少。 當大門開啟時，就會在實際的音量聽到音效的整個範圍。 高頻率音效通常會吸收較低的頻率。
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>指示
 
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY** ]。
-* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後新增 **音訊發射器** 。
+* **在 [階層**] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY**]。
+* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後新增 **音訊發射器**。
 
 音訊發射器類別提供下列功能：
 
@@ -268,14 +268,14 @@ RaycastNonAlloc 方法會用來做為效能優化，以限制配置以及傳回�
 
 請注意，AudioEmitter 會更新人為時間刻度，而不是每個畫面上的。 這樣做的原因是因為人們通常不會移動到足夠的速度，因此效果必須比每一季或半秒更頻繁地更新。 從某個位置快速傳送到另一個位置的全像影像，可能會破壞假像。
 
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]。
-* 展開 [ **EnergyHub** ]，然後選取 [ **BlobOutside** ]。
-* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後新增 **音訊 Occluder** 。
-* 在 [ **音訊 Occluder** ] 中，將 **截止頻率** 設定為 **1500** 。
+* **在 [階層**] 面板中，展開 [ **HologramCollection**]。
+* 展開 [ **EnergyHub** ]，然後選取 [ **BlobOutside**]。
+* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後新增 **音訊 Occluder**。
+* 在 [ **音訊 Occluder**] 中，將 **截止頻率** 設定為 **1500**。
 
 此設定會將 Spatialize 頻率限制為 1500 Hz 和以下。
 
-* 將 **磁片區傳遞** 至 **0.9** 。
+* 將 **磁片區傳遞** 至 **0.9**。
 
 這項設定會將 Spatialize 的磁片區縮減為其目前層級的90%。
 
@@ -287,25 +287,25 @@ RaycastNonAlloc 方法會用來做為效能優化，以限制配置以及傳回�
 
 使用中性的頻率是 22 kHz (22000 Hz) 。 選擇此頻率的原因，是因為它高於可由人類 ear 聽到的最大頻率，所以不會對音效造成明顯影響。
 
-* **在 [階層** ] 面板中，選取 [ **SpatialMapping** ]。
-* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後新增 **音訊 Occluder** 。
-* 在 [ **音訊 Occluder** ] 中，將 **截止頻率** 設定為 **750** 。
+* **在 [階層**] 面板中，選取 [ **SpatialMapping**]。
+* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ]，然後新增 **音訊 Occluder**。
+* 在 [ **音訊 Occluder**] 中，將 **截止頻率** 設定為 **750**。
 
 當使用者與 **AudioEmitter** 之間的路徑中有多個阻隔器時，會將最低頻率套用至篩選準則。
 
-* 將 **磁片區傳遞** 至 **0.75** 。
+* 將 **磁片區傳遞** 至 **0.75**。
 
 當使用者與 **AudioEmitter** 之間的路徑中有多個阻隔器時，會套用額外的大量傳遞。
 
-* **在 [階層** ] 面板中，選取 [ **管理員** ]。
-* 在 [偵測 **器** ] 面板中，展開 [ **語音輸入處理常式** ]。
-* 在 [ **語音輸入處理常式** ] 中，展開 [ **繼續收費** ]。
-* 將 **函數** 變更為 **PolyActions. GoCharge** 。
+* **在 [階層**] 面板中，選取 [**管理員**]。
+* 在 [偵測 **器** ] 面板中，展開 [ **語音輸入處理常式**]。
+* 在 [ **語音輸入處理常式**] 中，展開 [ **繼續收費**]。
+* 將 **函數** 變更為 **PolyActions. GoCharge**。
 
 ![關鍵字： Go 收費](images/gocharge.png)
 
-* 展開 **這裡** 。
-* 將 **函數** 變更為 **PolyActions. 撰寫復活** 。
+* 展開 **這裡**。
+* 將 **函數** 變更為 **PolyActions. 撰寫復活**。
 
 ![關鍵字：這裡](images/comehere.png)
 
@@ -435,59 +435,59 @@ HoloLens 是完全獨立的非網路共用全像電腦。 在移動時，您的�
 * 以視覺效果吸引人，將視圖建立到隱藏的世界中。
 * 藉由在隱藏體或使用者接近隱藏的世界時新增音訊效果，以增強真實感。
 
-#### <a name="instructions"></a>Instructions
+#### <a name="instructions"></a>指示
 
-* **在 [階層** ] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **Underworld** ]。
-* 展開 [ **Underworld** ]，然後選取 [ **VoiceSource** ]。
-* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 和 [新增 **使用者語音效果** ]。
+* **在 [階層**] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **Underworld**]。
+* 展開 [ **Underworld** ]，然後選取 [ **VoiceSource**]。
+* 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 和 [新增 **使用者語音效果**]。
 
-**Spatialize** 元件將會新增至 **VoiceSource** 。
+**Spatialize** 元件將會新增至 **VoiceSource**。
 
-* 在 **spatialize** 中，將 [ **輸出** ] 設定為 **UserVoice (混音器)** 。
+* 在 **spatialize** 中，將 [ **輸出** ] 設定為 **UserVoice (混音器)**。
 * 核取 [ **Spatialize** ] 核取方塊。
-* 將 **空間 Blend** 滑杆拖曳至 **3d** ，或在編輯方塊中輸入 **1** 。
-* 展開 [ **3D 音效設定** ]。
-* 將 **Doppler 層級** 設定為 **0** 。
-* 在 [ **使用者心聲效果** ] 中，將 **父物件** 從場景設定為 **Underworld** 。
-* 將 **最大距離** 設定為 **1** 。
+* 將 **空間 Blend** 滑杆拖曳至 **3d**，或在編輯方塊中輸入 **1** 。
+* 展開 [ **3D 音效設定**]。
+* 將 **Doppler 層級** 設定為 **0**。
+* 在 [ **使用者心聲效果**] 中，將 **父物件** 從場景設定為 **Underworld** 。
+* 將 **最大距離** 設定為 **1**。
 
 設定 [ **最大距離** ] 會告知 **使用者語音效果** 在啟用效果之前，使用者必須在父物件中的距離。
 
-* 在 [ **使用者語音效果** ] 中，展開 [ **一首哀歌參數** ]。
-* 將 **深度** 設定為 **0.1** 。
-* 設定一下 **1 個磁片** 區，再按2個 **音量** ，然後將3個 **磁片區分** 到 **0.8** 。
-* 將 **原始音效磁片** 區設定為 **0.5** 。
+* 在 [ **使用者語音效果**] 中，展開 [ **一首哀歌參數**]。
+* 將 **深度** 設定為 **0.1**。
+* 設定一下 **1 個磁片** 區，再按2個 **音量** ，然後將3個 **磁片區分** 到 **0.8**。
+* 將 **原始音效磁片** 區設定為 **0.5**。
 
 先前的設定會設定 Unity **AudioChorusFilter** 的參數，這些參數是用來為使用者的語音新增豐富的聲音。
 
-* 在 [ **使用者語音效果** ] 中，展開 [ **Echo 參數** ]。
+* 在 [ **使用者語音效果**] 中，展開 [ **Echo 參數**]。
 * 將 **延遲** 設定為 **300**
-* 將 **衰減比例** 設定為 **0.2** 。
-* 將 **原始音效音量** 設定為 **0** 。
+* 將 **衰減比例** 設定為 **0.2**。
+* 將 **原始音效音量** 設定為 **0**。
 
 先前的設定會設定用來讓使用者的語音回應的 Unity **AudioEchoFilter** 參數。
 
 使用者心聲效果腳本負責：
 
 * 測量使用者與附加腳本的 **GameObject** 之間的距離。
-* 判斷使用者是否遇到 **GameObject** 。
+* 判斷使用者是否遇到 **GameObject**。
 
 無論距離為何，使用者都必須面對 GameObject，才能啟用效果。
 
-* 將 **AudioChorusFilter** 和 **AudioEchoFilter** 套用至 **spatialize** 。
+* 將 **AudioChorusFilter** 和 **AudioEchoFilter** 套用至 **spatialize**。
 * 停用篩選以停用效果。
 
 使用者心聲效果會使用來自 [MixedRealityToolkit For Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)的 Mic 串流選取器元件，來選取高品質的語音串流，並將其路由傳送至 Unity 的音訊系統。
 
-* **在 [階層** ] 面板中，選取 [ **管理員** ]。
-* 在 [偵測 **器** ] 面板中，展開 [ **語音輸入處理常式** ]。
-* 在 [ **語音輸入處理常式** ] 中，展開 [ **顯示 Underworld** ]。
-* 將 **函數** 變更為 **UnderworldBase. OnEnable** 。
+* **在 [階層**] 面板中，選取 [**管理員**]。
+* 在 [偵測 **器** ] 面板中，展開 [ **語音輸入處理常式**]。
+* 在 [ **語音輸入處理常式**] 中，展開 [ **顯示 Underworld**]。
+* 將 **函數** 變更為 **UnderworldBase. OnEnable**。
 
 ![關鍵字：顯示 Underworld](images/showunderworld.png)
 
-* 展開 [ **隱藏 Underworld** ]。
-* 將 **函數** 變更為 **UnderworldBase. OnDisable** 。
+* 展開 [ **隱藏 Underworld**]。
+* 將 **函數** 變更為 **UnderworldBase. OnDisable**。
 
 ![關鍵字：隱藏 Underworld](images/hideunderworld.png)
 
@@ -497,7 +497,7 @@ HoloLens 是完全獨立的非網路共用全像電腦。 在移動時，您的�
 
 部署應用程式之後：
 
-* 臉部 (牆壁、樓層、表格) ，然後說出 *"Show Underworld"* 。
+* 臉部 (牆壁、樓層、表格) ，然後說出 *"Show Underworld"*。
 
 將會顯示 underworld，並隱藏所有其他的全像投影。 如果看不到 underworld，請確定您面對的是真實世界表面。
 
@@ -512,6 +512,6 @@ Underworld 將會隱藏，而先前隱藏的全像全像投影會再度出現。
 
 ## <a name="the-end"></a>結束
 
-恭喜！ 您現在已完成 **MR 空間220：空間音效** 。
+恭喜！ 您現在已完成 **MR 空間220：空間音效**。
 
 聽聽全世界的音效，利用音效讓您的生活體驗！

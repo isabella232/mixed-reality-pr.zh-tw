@@ -5,13 +5,13 @@ author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
-keywords: galaxy explorer、案例研究、專案、範例
-ms.openlocfilehash: 1e04b27ff0382d87f8e6a15ae2b7b2284fa020e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680772"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677627"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>進行 HoloLens 2 的 Galaxy Explorer
 
@@ -96,7 +96,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 ![行星上的視覺 affordances](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>新增 affordances 來強制抓取
- 
+ 
 一旦有了基本的強制抓取機制搭配音訊和 visual affordances，我們就看過如何讓選取行星更容易使用。 有兩個主要的專案要解決：因為日光系統是3D 移動介面，所以使用者會增加複雜性來瞭解如何以一致的方式鎖定物件。 這是因為正面光線在選取物件時非常快速，讓行星迅速移往使用者的事實。
 
 我們採用三個面向的解決方案來達到這個效益。 第一個是相當直覺：讓選取範圍變慢，讓行星以更自然的步調來處理使用者。 調整速度之後，我們必須重新流覽音訊和視覺效果 affordances，並新增其他音訊意見反應，作為向使用者追蹤的地球。
@@ -151,7 +151,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 個別輪替的串流提供良好的視覺效果，但在觀察到接近範圍時，就不會有詳細的資料。
 
 最引人注目的部分是 Jupiter 的絕佳紅色點，因此我們特別建立了一組網格和紋理來展示。
- 
+ 
 我們使用的機制與 Jupiter 的波段類似：一組旋轉零件是由彼此組成，同時也會在其「主要圖層」下分組，以確保不論 rest 移動的速度有多快，都能保持在相同位置。
 
 當網格已設定並準備就緒時，會套用不同層的 stormy vortex，然後每個光碟都會個別進行動畫處理，而其餘部分則會以最快的速度移動，而 rest 會逐漸降低。
@@ -202,4 +202,4 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="mixed-reality-studios"></a>混合現實工作室
 
-Microsoft Mixed Reality Studio 小組（位於美洲、歐洲和亞太地區）是使用者體驗設計、全像電腦運算、AR/VR 技術以及3D 開發的專家。包括建立3D 資產、DirectX、Unity 和 Unreal。 我們會協助您構想所需的未來、設計、建立和提供解決方案，同時讓客戶能夠在其組織之間創造可測量的影響。 工作室與超過22000的 Microsoft 服務專業人員密切合作，以進行企業應用程式整合、採用、操作及支援。
+Microsoft Mixed Reality Studio 小組（位於美洲、歐洲和 Asia-Pacific）是使用者體驗設計、全像電腦運算、AR/VR 技術以及3D 開發的專家。包括建立3D 資產、DirectX、Unity 和 Unreal。 我們會協助您構想所需的未來、設計、建立和提供解決方案，同時讓客戶能夠在其組織之間創造可測量的影響。 工作室與超過22000的 Microsoft 服務專業人員密切合作，以進行企業應用程式整合、採用、操作及支援。

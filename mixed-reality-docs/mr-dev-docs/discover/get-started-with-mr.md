@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境、探索、散佈、索引、登陸頁面、設計、開發、教學課程、範例應用程式、基本概念、案例研究、資源、HoloLens 操作說明、開放原始碼專案
-ms.openlocfilehash: 34c78c277e0b184c0421c2bdd56ef13411a5bf29
-ms.sourcegitcommit: bd359c269add7ac76f0c2c26ca7caedba14749b1
+ms.openlocfilehash: 7c8fc83fd2b5542909fd2ea6ab4dca288175c56c
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94417833"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631516"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 
@@ -143,11 +143,6 @@ ms.locfileid: "94417833"
 
 <br>
 
-
 >[!IMPORTANT]
 >本網站所提供的所有混合實境開發資料僅供參考。 您的應用程式、其使用方式和對終端使用者的影響是應用程式開發人員的唯一責任，包括確保應用程式不會對使用者造成不適、傷害或任何其他損害，並包含適切的警告和免責聲明。 您需要在開發和發佈應用程式時隨時採取適當的步驟，以確保應用程式的安全，並符合 [Microsoft 應用程式開發人員合約](https://docs.microsoft.com/legal/windows/agreements/app-developer-agreement)中的所有義務。
 
-## <a name="see-also"></a>請參閱
-* [沉浸式頭戴裝置硬體詳細資料](immersive-headset-hardware-details.md)
-* [社群資源](community.md)
-* [VR 愛好者指南](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/)

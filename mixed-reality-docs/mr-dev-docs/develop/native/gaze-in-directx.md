@@ -5,18 +5,18 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 眼睛、頭部眼、前端追蹤、眼睛追蹤、directx、輸入、全像影像
-ms.openlocfilehash: 06f725f3560d2c05e15c2e1362e820262986a192
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 眼睛、頭部眼、前端追蹤、眼睛追蹤、directx、輸入、全像投影、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 9ec54f5db33346c499582b54a0b3e36c129bf7ab
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679356"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678077"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX 中的列印頭和眼睛輸入
 
 > [!NOTE]
-> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)** 。
+> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
 在 Windows Mixed Reality 中，眼睛和前端的輸入是用來判斷使用者所查看的內容。 這可以用來驅動主要輸入模型，例如 [前端和認可](../../design/gaze-and-commit.md)，也可以提供互動類型的內容。 有兩種類型的注視向量可透過 API 取得：標眼和眼睛。  兩者都是以具有原點和方向的三維光線形式提供。 然後，應用程式可以 raycast 到其幕後或真實世界，判斷使用者的目標。
 
@@ -177,11 +177,11 @@ if (pointerPose)
 如同我們的 [眼睛追蹤設計](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available)檔中所述，這兩個設計人員和開發人員都應該注意，您的應用程式可能會有可能無法使用眼睛追蹤資料的實例。
 這種情況的原因有很多種，那就是使用者已拒絕應用程式存取其眼睛追蹤資料，或只是暫時干擾差異性 (例如 HoloLens 面板上的塗抹，或遮蔽使用者的眼睛) 。 雖然本檔中已提及部分 Api，但我們將在下列內容中提供一份摘要，說明如何偵測如何以快速參考的方式來使用眼睛追蹤： 
 
-* 檢查系統是否支援眼睛追蹤。 呼叫下列 *方法* ： [EyesPose. IsSupported ( # B1](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* 檢查系統是否支援眼睛追蹤。 呼叫下列 *方法*： [EyesPose. IsSupported ( # B1](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* 檢查使用者是否已校正。 呼叫下列 *屬性* ： [EyesPose. IsCalibrationValid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid) 
+* 檢查使用者是否已校正。 呼叫下列 *屬性*： [EyesPose. IsCalibrationValid](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid) 
 
-* 確認使用者已為您的應用程式提供使用其眼睛追蹤資料的許可權：取出目前的 _' GazeInputAccessStatus '_ 。 有關如何進行這項操作的範例，請參閱 [要求存取注視輸入](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input)的說明。   
+* 確認使用者已為您的應用程式提供使用其眼睛追蹤資料的許可權：取出目前的 _' GazeInputAccessStatus '_。 有關如何進行這項操作的範例，請參閱 [要求存取注視輸入](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input)的說明。   
 
 此外，您可能會想要在收到的眼睛追蹤資料更新之間加上超時時間，以檢查您的眼睛追蹤資料是否已過時，如以下所述。  
 如需詳細資訊，請流覽我們的回溯 [設計考慮](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) 。

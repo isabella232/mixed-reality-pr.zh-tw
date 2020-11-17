@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、範例應用程式、設計、HoloLens
-ms.openlocfilehash: d4014e1300b60d61dfba38ee5c5b0c8a530fbe08
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: ad5c544b9c164ef0d85eb3217685d6f96bb86367
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573252"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677463"
 ---
 # <a name="lunar-module"></a>月球模組
 
@@ -43,7 +43,7 @@ ms.locfileid: "94573252"
 
 最新的 flashiest 電腦自然會感到十分好奇 arcade 的小孩。 但是陰曆 Lander 有一個新穎的輸入技師修理，勇敢面對考驗了。
 
-陰曆 Lander 會使用兩個按鈕來旋轉左右出貨，以及使用 **天生拉杆** 來控制出貨產生的天生數量。 此拉杆可讓使用者有正常遊戲的特定層級 finesse 無法提供。 這也是新式航空考核的萬用群組件。 Atari 希望陰曆 Lander immerse 使用者，覺得它們其實是試驗陰曆的課程模組。 這個概念稱為 **tactile 深度** 。
+陰曆 Lander 會使用兩個按鈕來旋轉左右出貨，以及使用 **天生拉杆** 來控制出貨產生的天生數量。 此拉杆可讓使用者有正常遊戲的特定層級 finesse 無法提供。 這也是新式航空考核的萬用群組件。 Atari 希望陰曆 Lander immerse 使用者，覺得它們其實是試驗陰曆的課程模組。 這個概念稱為 **tactile 深度**。
 
 Tactile 深度是感應式意見反應以執行重複動作的體驗。 在此情況下，調整您的眼睛和我們的玩家聽到的節流閥杆和旋轉的重複動作，可協助將玩家連接到衛星表面上的登陸。 這個概念可以系結至「流程」的心理概念。 當使用者完全吸收在具有適當混合的挑戰和獎勵，或更簡單的工作中時，他們就是「在區域中」。
 
@@ -78,7 +78,7 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 
 **旋轉**
 
-這會比較複雜一點。 讓全像「旋轉」按鈕，以提供更豐富的體驗。 沒有實際的控制項可供使用，因此其行為必須來自操作代表 lander 的物件，或使用 lander 本身。 我們會利用點一下和拖曳方法，讓使用者以他們想要的方向有效地「推送和提取」。 當使用者按下並按住時，開始手勢的空間點就會變成旋轉的原點。 從原點拖曳可將手平移的差異轉換 (X、Y、Z) ，並將其套用至 lander 旋轉值的差異。 或者更簡單地說，將 *左拖曳 <-> 右邊、向上 <-> 向下、在空間中向前 <->，則會據以旋轉出貨* 。
+這會比較複雜一點。 讓全像「旋轉」按鈕，以提供更豐富的體驗。 沒有實際的控制項可供使用，因此其行為必須來自操作代表 lander 的物件，或使用 lander 本身。 我們會利用點一下和拖曳方法，讓使用者以他們想要的方向有效地「推送和提取」。 當使用者按下並按住時，開始手勢的空間點就會變成旋轉的原點。 從原點拖曳可將手平移的差異轉換 (X、Y、Z) ，並將其套用至 lander 旋轉值的差異。 或者更簡單地說，將 *左拖曳 <-> 右邊、向上 <-> 向下、在空間中向前 <->，則會據以旋轉出貨*。
 
 由於 HoloLens 可以追蹤兩個手，因此可以在天生由左方控制時，將旋轉指派給右手邊。 Finesse 是此遊戲中成功的驅動因素。 這些互動的 *風格* 是絕對最高的優先順序。 尤其是在 tactile 深度的內容中。 如果出貨的反應太快，可能會不必要地進行操作，但速度太慢時，使用者必須在出貨時「推播並提取」一段滑雪長的時間。
 

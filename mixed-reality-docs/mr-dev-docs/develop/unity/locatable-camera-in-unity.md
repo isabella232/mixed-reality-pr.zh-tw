@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 相片、影片、hololens、攝影機、unity、定位
-ms.openlocfilehash: dfbbcc21db1247a7250e5049bfd1c4f89976ac15
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: 相片、影片、hololens、攝影機、unity、定位、PVC、相片攝影機、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、網路攝影機、相片拍攝、影片捕獲
+ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957798"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678597"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity 中的定位相機
 

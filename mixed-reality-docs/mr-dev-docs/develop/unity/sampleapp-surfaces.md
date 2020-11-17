@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Windows Mixed Reality、HoloLens、mrtk、design、範例應用程式、控制項
-ms.openlocfilehash: 1c6cb4579bbd3d6124cf36b21226ffa803f39f00
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: c20ea17b20c867d9bf1da0d5f6244e36f2abbf27
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573182"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678517"
 ---
 # <a name="surfaces"></a>表面
 

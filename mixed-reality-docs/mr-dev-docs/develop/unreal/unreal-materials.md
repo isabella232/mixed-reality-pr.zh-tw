@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開發、教材、檔、指南、功能、全息表、遊戲開發
-ms.openlocfilehash: bfce6e6bf8acd58821dba1213e1f1ab571d85a0c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開發、教材、檔、指南、功能、全息表、遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679693"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678937"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal 中的材質建議
 
@@ -73,7 +73,7 @@ Unreal 不建議的材質設定[ ![ 中不建議的材質設定 ](images/unreal-
 
 建立材質實例時，應該將喜好設定提供給材質實例動態的 **材質實例常數** 。 **材質實例常數** 是在執行時間之前只計算一次的實例材質。
 
-透過內容瀏覽器建立的材質實例 (以 **滑鼠右鍵按一下 > 建立材質實例** ) 是材質實例常數。 動態資料實例是透過程式碼建立。 您可以在 [Unreal 引擎檔](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)中找到有關材質實例的詳細資料。
+透過內容瀏覽器建立的材質實例 (以 **滑鼠右鍵按一下 > 建立材質實例**) 是材質實例常數。 動態資料實例是透過程式碼建立。 您可以在 [Unreal 引擎檔](https://docs.unrealengine.com/Engine/Rendering/Materials/MaterialInstances/index.html)中找到有關材質實例的詳細資料。
 
 ![在 Unreal 中建立材質實例](images/unreal-materials-img-08.png)
 

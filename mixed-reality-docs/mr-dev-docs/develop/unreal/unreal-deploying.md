@@ -5,15 +5,15 @@ author: sw5813
 ms.author: suwu
 ms.date: 7/10/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: abd5e5c28ec5e66c4f73df8edf5e0ac0212d170a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9d32dff121899d40175af813fac4f7be1acc66c3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679816"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679117"
 ---
 # <a name="deploy-to-device-in-unreal"></a>在 Unreal 中部署至裝置
 
@@ -30,11 +30,11 @@ ms.locfileid: "91679816"
 
 ![啟動下拉式選項](images/unreal/launch-dropdown.png)
 
-2. 開啟 **裝置管理員** 。 請注意，您的 HoloLens 不會自動出現在裝置清單中。
+2. 開啟 **裝置管理員**。 請注意，您的 HoloLens 不會自動出現在裝置清單中。
 
 3. 展開 [ **新增未列出的裝置** ] 區段。
 
-4. 選取 [ **HoloLens** ] 作為您的 **平臺** 。
+4. 選取 [ **HoloLens** ] 作為您的 **平臺**。
 
 5. 輸入裝置的 IP 位址和埠資訊（以冒號分隔）作為裝置識別碼。 例如，透過 USB) 連接時 ("127.0.0.1： 10080"。 使用您的裝置入口網站使用者名稱和密碼認證。
 
@@ -57,6 +57,6 @@ ms.locfileid: "91679816"
 如果您正在遵循我們所配置的 Unreal 開發檢查點旅程，您就會在部署階段。 您可以從這裡繼續新增 advanced services：
 
 > [!div class="nextstepaction"]
-> [Advanced services](unreal-development-overview.md#5-adding-services)
+> [進階服務](unreal-development-overview.md#5-adding-services)
 
-您隨時都可以回到 [Unreal 開發檢查點](unreal-development-overview.md#4-deploying-to-a-device) 。
+您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#4-deploying-to-a-device)。

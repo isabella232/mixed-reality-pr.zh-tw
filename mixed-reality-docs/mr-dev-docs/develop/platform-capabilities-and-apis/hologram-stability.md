@@ -5,15 +5,15 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 07/08/2020
 ms.topic: article
-keywords: 全像，穩定性，hololens
+keywords: 全像投影、穩定性、hololens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、畫面播放速率、轉譯、reprojection、色彩分隔
 appliesto:
 - HoloLens
-ms.openlocfilehash: 21a9f7cff655ff35d32e3ca701219d4a1e41a0e2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 081a080c73a1c78eb762b94291027cf7ebcbed45
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679300"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679597"
 ---
 # <a name="hologram-stability"></a>全像投影穩定性
 
@@ -32,7 +32,7 @@ ms.locfileid: "91679300"
 * **漂移。** 使用者會看到因為全像全像投影一樣的漂移。 當您遠離 [空間錨點](../../design/spatial-anchors.md)，而不是完全對應的環境部分時，就會發生漂移。 建立接近空間錨點的全像影像，可降低漂移的可能性。
 * **Jumpiness.** 當全像的位置，而不是在它的位置， Jumpiness 可能會隨著追蹤調整，以符合對您環境的更新理解。
 * **游泳。** 當與使用者前端的動作相對應的全像是 sway 時。 當應用程式未完全實 [reprojection](hologram-stability.md#reprojection)，且未針對目前使用者 [校正](../../calibration.md) HoloLens 時，就會發生泳道。 使用者可以重新執行 [校正](../../calibration.md) 應用程式以修正問題。 開發人員可以更新穩定平面來進一步增強穩定性。
-* **色彩分隔。** HoloLens 中的顯示為彩色順序顯示，可在 60 Hz 將紅色-綠色-藍色-綠色的色頻閃爍 (個別的色彩欄位會顯示在 240 Hz) 。 每當使用者以眼睛來追蹤移動全息圖時，該全息圖的開頭和尾端邊緣會以其構成色彩分隔，產生彩虹效果。 分隔程度取決於全息圖的速度。 在某些罕見的情況下，在查看固定的全像點時快速移動一次，也會造成彩虹的效果，稱為 *[色彩分隔](hologram-stability.md#color-separation)* 。
+* **色彩分隔。** HoloLens 中的顯示為彩色順序顯示，可在 60 Hz 將紅色-綠色-藍色-綠色的色頻閃爍 (個別的色彩欄位會顯示在 240 Hz) 。 每當使用者以眼睛來追蹤移動全息圖時，該全息圖的開頭和尾端邊緣會以其構成色彩分隔，產生彩虹效果。 分隔程度取決於全息圖的速度。 在某些罕見的情況下，在查看固定的全像點時快速移動一次，也會造成彩虹的效果，稱為 *[色彩分隔](hologram-stability.md#color-separation)*。
 
 ## <a name="frame-rate"></a>畫面播放速率
 
@@ -91,7 +91,7 @@ Reprojection 有四種主要類型
 * **無：** 如果應用程式沒有執行任何動作，就會在使用者的前端的方向以2個計量器固定的穩定平面使用平面 Reprojection，通常會產生 substandard 的結果。
 
 應用程式必須採取特定動作來啟用不同類型的 reprojection
-* **深度 Reprojection：** 應用程式會針對每個呈現的畫面格，將其深度緩衝區提交至系統。  在 Unity 上，會使用 [ **XR 外掛程式管理** ] 下 [ **Windows Mixed Reality 設定** ] 窗格中的 [ **共用深度緩衝區** ] 選項來完成深度 Reprojection。  DirectX 應用程式呼叫 CommitDirect3D11DepthBuffer。  應用程式不應呼叫 SetFocusPoint。
+* **深度 Reprojection：** 應用程式會針對每個呈現的畫面格，將其深度緩衝區提交至系統。  在 Unity 上，會使用 [ **XR 外掛程式管理**] 下 [ **Windows Mixed Reality 設定**] 窗格中的 [**共用深度緩衝區**] 選項來完成深度 Reprojection。  DirectX 應用程式呼叫 CommitDirect3D11DepthBuffer。  應用程式不應呼叫 SetFocusPoint。
 * **平面 Reprojection：** 在每個畫面上，應用程式會將平面的位置告訴系統穩定。  Unity 應用程式會呼叫 SetFocusPointForFrame，且應該停用 **共用深度緩衝區** 。  DirectX 應用程式呼叫 SetFocusPoint，不應呼叫 CommitDirect3D11DepthBuffer。
 * **自動平面 Reprojection：** 若要啟用，應用程式必須將其深度緩衝區提交至系統，因為它們會進行深度 Reprojection。  在 HoloLens 2 上，應用程式接著需要 SetFocusPoint 點0、0（針對每個框架）。  若為 HoloLens 第1代，應用程式不應呼叫 SetFocusPoint。
 
@@ -107,7 +107,7 @@ Reprojection 有四種主要類型
             
 當 reprojection 方法使用深度緩衝區時，請務必確認深度緩衝區的內容是否代表應用程式呈現的場景。  許多因素可能會造成問題。 例如，如果有第二個相機用來呈現使用者介面重迭，則可能會覆寫實際視圖的所有深度資訊。  透明物件通常不會設定深度。  某些文字轉譯預設不會設定深度。  當深度不符合轉譯的全像投影時，轉譯中將會顯示問題。
             
-HoloLens 2 具有可顯示深度為和未設定的視覺化效果，可從裝置入口網站啟用。  在 [ **查看** 全像全像] 標籤上  >  **Hologram Stability** ，選取 [ **在耳機中顯示深度視覺效果** ] 核取方塊。  已正確設定深度的區域會是藍色。  未設定深度的已轉譯專案會以紅色標示，並需要修正。  
+HoloLens 2 具有可顯示深度為和未設定的視覺化效果，可從裝置入口網站啟用。  在 [**查看** 全像全像] 標籤上  >  **Hologram Stability** ，選取 [**在耳機中顯示深度視覺效果**] 核取方塊。  已正確設定深度的區域會是藍色。  未設定深度的已轉譯專案會以紅色標示，並需要修正。  
 
 > [!NOTE]
 > 深度的視覺效果將不會顯示在混合實境擷取中。  只有透過裝置才能看到它。

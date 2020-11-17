@@ -5,13 +5,13 @@ author: markkeinz
 ms.author: makei
 ms.date: 10/29/2020
 ms.topic: article
-keywords: HoloLens、遠端、全像攝影遠端
-ms.openlocfilehash: fcacac76e65fa884433afca9f568c5c0211dd570
-ms.sourcegitcommit: 979967d6841d8fa64cf1d6cf3ae532b736ed3bd1
+keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、安全性、驗證、伺服器對用戶端
+ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/30/2020
-ms.locfileid: "93102297"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679587"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>針對全像遠端功能啟用連接安全性
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 手勢、動作控制器、unity、注視、輸入
-ms.openlocfilehash: 6c41de0a0b5d2879b2f3a0be90c9456100599d2b
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+keywords: 手勢、移動控制器、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
+ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886271"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678647"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity 中的筆勢和運動控制器
 
@@ -100,21 +100,21 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 
 Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控制器的設計各有不同之處，就是使用者的位置與應用程式在轉譯控制器時應使用的自然「向前」方向之間的關聯性。
 
-為了更妥善地表示這些控制器，您可以針對每個互動來源（底框 **姿勢** 和 **指標姿勢** ）調查兩種類型的姿勢。 框姿勢和指標姿勢座標都是由全域 Unity 全局座標中的所有 Unity Api 表示。
+為了更妥善地表示這些控制器，您可以針對每個互動來源（底框 **姿勢** 和 **指標姿勢**）調查兩種類型的姿勢。 框姿勢和指標姿勢座標都是由全域 Unity 全局座標中的所有 Unity Api 表示。
 
 ### <a name="grip-pose"></a>握住姿勢
 
 底框 **姿勢** 代表 HoloLens 所偵測到的掌上的位置，或是持有移動控制器的掌上。
 
-在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件** ，例如寶劍或機槍。 視覺化運動控制器時也會使用底框姿勢，因為移動控制器的 Windows 所提供的 **呈現模型** 會使用底框姿勢作為其原點和旋轉中心。
+在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件**，例如寶劍或機槍。 視覺化運動控制器時也會使用底框姿勢，因為移動控制器的 Windows 所提供的 **呈現模型** 會使用底框姿勢作為其原點和旋轉中心。
 
 此底框姿勢的定義方式明確如下：
-* 把手 **位置** ：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 運動控制器上，此位置通常會與 [抓住] 按鈕對齊。
-* 底 **圖方向的右軸** ：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
-* 底圖 **方向的向前軸** ：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
-* 底圖 **方向的向上軸** ：右邊和向前定義所隱含的向上軸。
+* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 運動控制器上，此位置通常會與 [抓住] 按鈕對齊。
+* 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
+* 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
+* 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
 
-您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 *[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替* ) 或透過 WINDOWS MR 專屬 API ( *SourceState. SourcePose. TryGetPosition/輪替* ，要求 **) 的** 的資料。
+您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 *[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替*) 或透過 WINDOWS MR 專屬 API (*SourceState. SourcePose. TryGetPosition/輪替*，要求 **) 的** 的資料。
 
 ### <a name="pointer-pose"></a>指標姿勢
 
@@ -122,7 +122,7 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 系統提供的指標姿勢最適合用來在您 **呈現控制器模型本身** 時 raycast。 如果您要轉譯某個其他的虛擬物件來取代控制器，例如虛擬的機槍，您應該指向該虛擬物件最自然的光線，例如沿著應用程式定義的機槍模型的圓柱移動光線。 因為使用者可以看到虛擬物件，而不是實體控制器，所以指向虛擬物件可能會比使用您的應用程式更自然。
 
-目前，只有透過 Windows MR 專屬 API （ *sourceState. sourcePose. TryGetPosition/旋轉* ）在 Unity 中提供指標姿勢，並傳入 *InteractionSourceNode* 作為引數。
+目前，只有透過 Windows MR 專屬 API （ *sourceState. sourcePose. TryGetPosition/旋轉*）在 Unity 中提供指標姿勢，並傳入 *InteractionSourceNode* 作為引數。
 
 ## <a name="controller-tracking-state"></a>控制器追蹤狀態
 
@@ -140,7 +140,7 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 ### <a name="reasoning-about-tracking-state-explicitly"></a>明確追蹤狀態的原因
 
-希望根據追蹤狀態以不同方式來處理位置的應用程式，可能會進一步檢查控制器狀態的屬性，例如 *SourceLossRisk* 和 *PositionAccuracy* ：
+希望根據追蹤狀態以不同方式來處理位置的應用程式，可能會進一步檢查控制器狀態的屬性，例如 *SourceLossRisk* 和 *PositionAccuracy*：
 
 <table>
 <tr>
@@ -164,8 +164,8 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 ## <a name="common-unity-apis-inputgetbuttongetaxis"></a>通用 Unity Api (輸入 GetButton/GetAxis) 
 
-**Namespace：** *UnityEngine* ， *UnityEngine. XR*<br>
-**類型** ： *輸入* 、 *XR。InputTracking*
+**Namespace：** *UnityEngine*， *UnityEngine. XR*<br>
+**類型**： *輸入*、 *XR。InputTracking*
 
 Unity 目前使用其一般 *輸入. GetButton/GetAxis* api 來公開 [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html)、 [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) 和 Windows Mixed Reality 的輸入，包括實習和移動控制器。 如果您的應用程式使用這些 Api 進行輸入，則可以輕鬆地支援跨多個 XR Sdk 的移動控制器，包括 Windows Mixed Reality。
 
@@ -173,7 +173,7 @@ Unity 目前使用其一般 *輸入. GetButton/GetAxis* api 來公開 [Oculus SD
 
 若要使用一般 Unity 輸入 Api，您通常會先將按鈕和軸連結到 [Unity 輸入管理員](https://docs.unity3d.com/Manual/ConventionalGameInput.html)中的邏輯名稱，然後將按鈕或軸識別碼系結至每個名稱。 然後，您可以撰寫參考該邏輯按鈕/軸名稱的程式碼。
 
-例如，若要將左移動控制器的 [觸發程式] 按鈕對應至 [提交] 動作，請移至 Unity 內的 [ **編輯 > 專案設定] > 輸入** ，並展開 [軸] 下的 [提交] 區段的屬性。 將 **正面按鈕** 或 **Alt 正按鈕** 屬性變更為讀取 **搖桿按鈕 14** ，如下所示：
+例如，若要將左移動控制器的 [觸發程式] 按鈕對應至 [提交] 動作，請移至 Unity 內的 [ **編輯 > 專案設定] > 輸入** ，並展開 [軸] 下的 [提交] 區段的屬性。 將 **正面按鈕** 或 **Alt 正按鈕** 屬性變更為讀取 **搖桿按鈕 14**，如下所示：
 
 ![Unity 的 InputManager](images/unity-input-manager.png)<br>
 *Unity InputManager*
@@ -186,7 +186,7 @@ if (Input.GetButton("Submit"))
   // ...
 }
 ```
-您可以變更 [ **軸** ] 下的 [ **大小** ] 屬性，以新增更多邏輯按鈕。
+您可以變更 [**軸**] 下的 [**大小**] 屬性，以新增更多邏輯按鈕。
 
 ### <a name="getting-a-physical-buttons-pressed-state-directly"></a>直接取得實體按鈕的按下狀態
 
@@ -201,7 +201,7 @@ if (Input.GetKey("joystick button 8"))
 
 ### <a name="getting-a-hand-or-motion-controllers-pose"></a>取得手或移動控制器的姿勢
 
-您可以使用 XR 存取控制器的位置和旋轉 *。InputTracking* ：
+您可以使用 XR 存取控制器的位置和旋轉 *。InputTracking*：
 
 ```cs
 Vector3 leftPosition = InputTracking.GetLocalPosition(XRNode.LeftHand);
@@ -215,7 +215,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 特定 Api (XR。Wsa。輸入) 
 
 **命名空間：** *UnityEngine. XR。輸入*<br>
-**類型** ： *InteractionManager* 、 *InteractionSourceState* 、 *InteractionSource* 、 *InteractionSourceProperties* 、 *InteractionSourceKind* 、 *InteractionSourceLocation*
+**類型**： *InteractionManager*、 *InteractionSourceState*、 *InteractionSource*、 *InteractionSourceProperties*、 *InteractionSourceKind*、 *InteractionSourceLocation*
 
 若要取得 HoloLens) 和移動控制器的 Windows Mixed Reality 手輸入 (的詳細資訊，您可以選擇使用 *UnityEngine. XR* 底下的 Windows 特定空間輸入 api。 這可讓您存取額外的資訊，例如位置精確度或來源種類，讓您可以分辨手和控制器。
 
@@ -427,7 +427,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 ## <a name="high-level-composite-gesture-apis-gesturerecognizer"></a>高層級複合手勢 Api (GestureRecognizer) 
 
 **命名空間：** *UnityEngine. XR。輸入*<br>
-**類型** ： *GestureRecognizer* 、 *GestureSettings* 、 *InteractionSourceKind*
+**類型**： *GestureRecognizer*、 *GestureSettings*、 *InteractionSourceKind*
 
 您的應用程式也可以辨識空間輸入來源、點擊、按住、操作和導覽手勢的較高層級複合手勢。 您可以使用 GestureRecognizer，跨 [手](../../design/gaze-and-commit.md#composite-gestures) 和 [移動控制器](../../design/motion-controllers.md) 辨識這些複合手勢。
 
@@ -441,7 +441,7 @@ GestureRecognizer 上的每個手勢事件都會提供輸入的 SourceKind，以
 
 ### <a name="create-a-new-gesture-recognizer"></a>建立新的手勢辨識器
 
-若要使用 *GestureRecognizer* ，您必須建立 *GestureRecognizer* ：
+若要使用 *GestureRecognizer*，您必須建立 *GestureRecognizer*：
 
 ```cs
 GestureRecognizer recognizer = new GestureRecognizer();
@@ -449,7 +449,7 @@ GestureRecognizer recognizer = new GestureRecognizer();
 
 ### <a name="specify-which-gestures-to-watch-for"></a>指定要監看的手勢
 
-透過 SetRecognizableGestures 指定您感興趣的手勢 *( # B1* ：
+透過 SetRecognizableGestures 指定您感興趣的手勢 *( # B1*：
 
 ```cs
 recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
@@ -507,7 +507,7 @@ void OnDestroy()
 ![移動控制器模型和遙傳](images/motioncontrollertest-teleport-1000px.png)<br>
 *移動控制器模型和遙傳*
 
-若要在您的應用程式中轉譯與您的使用者所持有的實體控制器相符的移動控制站，並在按下各種按鈕時表達清楚，您可以在 [混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity/)組中使用 **MotionController 預製專案** 。  這個預製專案會從系統已安裝的移動控制器驅動程式，在執行時間動態載入正確的 glTF 模型。  請務必以動態方式載入這些模型，而不是在編輯器中手動匯入這些模型，如此您的應用程式就會針對使用者可能擁有的任何目前和未來控制器顯示實際精確的3D 模型。
+若要在您的應用程式中轉譯與您的使用者所持有的實體控制器相符的移動控制站，並在按下各種按鈕時表達清楚，您可以在 [混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity/)組中使用 **MotionController 預製專案**。  這個預製專案會從系統已安裝的移動控制器驅動程式，在執行時間動態載入正確的 glTF 模型。  請務必以動態方式載入這些模型，而不是在編輯器中手動匯入這些模型，如此您的應用程式就會針對使用者可能擁有的任何目前和未來控制器顯示實際精確的3D 模型。
 
 1. 遵循 [消費者入門](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md) 指示下載 Mixed Reality 工具組，並將它新增至 Unity 專案。
 2. 如果您在消費者入門步驟中將相機替換成 *MixedRealityCameraParent* 預製專案，您就可以開始使用！  該預製專案包括移動控制器轉譯。  否則，請從 [專案] 窗格將 *資產/HoloToolkit/Input/Prefabs/MotionControllers* 加入場景中。  當使用者在場景中 teleports 時，您會想要將該預製專案新增為您用來移動攝影機之任何父物件的子系，以便讓控制器與使用者一起使用。  如果您的應用程式不需要 teleporting，只要在場景的根目錄新增預製專案即可。
@@ -517,8 +517,8 @@ void OnDestroy()
 在虛擬實境中擲回物件是較困難的問題，因此可能會先出現。 如同大部分的實際互動，在遊戲中擲回時，它會以非預期的方式運作，並中斷深度。 我們花了一些時間來思考如何表示實體正確的擲回行為，並提供一些指導方針，讓我們想要與您分享，並透過我們的平臺更新來啟用。
 
 您可以在 [這裡](https://github.com/keluecke/MixedRealityToolkit-Unity/blob/master/External/Unitypackages/ThrowingStarter.unitypackage)找到建議如何執行擲回的範例。 此範例會遵循下列四個指導方針：
-* **使用控制器的 *速度* ，而不是位置** 。 在 Windows 的11月更新中，我們引進了「 [近似」位置追蹤狀態](../../design/motion-controllers.md#controller-tracking-state)時的行為變更。 處於此狀態時，系統會繼續回報控制器的相關速度資訊，只要我們認為它的精確度很高，通常會比位置維持高準確度更長。
-* **納入控制器的 *角度速度*** 。 此邏輯全部包含在靜態方法的檔案中，該檔案 `throwing.cs` 位於 `GetThrownObjectVelAngVel` 上述連結的封裝內：
+* **使用控制器的 *速度* ，而不是位置**。 在 Windows 的11月更新中，我們引進了「 [近似」位置追蹤狀態](../../design/motion-controllers.md#controller-tracking-state)時的行為變更。 處於此狀態時，系統會繼續回報控制器的相關速度資訊，只要我們認為它的精確度很高，通常會比位置維持高準確度更長。
+* **納入控制器的 *角度速度***。 此邏輯全部包含在靜態方法的檔案中，該檔案 `throwing.cs` 位於 `GetThrownObjectVelAngVel` 上述連結的封裝內：
    1. 由於 conserved 的角度速度，擲回的物件必須維持與擲回時相同的角度速度： `objectAngularVelocity = throwingControllerAngularVelocity;`
    2. 因為擲回之物件的中心可能不是在底框姿勢的原點，所以它可能會有不同的速度，而在使用者的參考框架中，控制器則可能會有不同的速度。 以這種方式產生的物件速度的部分，就是在控制器原點周圍擲回物件的最大中心的瞬間相切速度。 這種相切速度是控制器角度速度的交叉乘積，向量表示控制器原點與擲回物件的中央之間的距離。
 
@@ -529,9 +529,9 @@ void OnDestroy()
 
    3. 擲回物件的速度總計是控制器速度和這個相切速度的總和： `objectVelocity = throwingControllerVelocity + tangentialVelocity;`
 
-* 請密切 **注意我們應用速度的 *時間*** 。 按下按鈕時，最多可能需要20毫秒該事件，才能透過藍牙向上到作業系統。 這表示，如果您將控制器狀態變更從按下的狀態變更為未按下（反之亦然），則控制器會引發您所取得的資訊，而這項資訊會在狀態變更之前出現。 此外，我們的輪詢 API 所呈現的控制器會向前預測，以反映畫面上顯示的可能原因，未來可能會更20毫秒。 這適合用來 *呈現* 保留的物件，但是會在使用者釋放擲回的時間點時，將我們的時間問題轉譯為 *目標* 物件。 幸運的是，在11月更新中，當傳送 *InteractionSourcePressed* 或 *InteractionSourceReleased* 這類 Unity 事件時，該狀態會包含實際按下或放開按鈕時的歷程記錄資料。  若要在擲回期間取得最精確的控制器轉譯和控制器目標，您必須適當地正確地使用輪詢和事件：
-   * 針對每個畫面格的 **控制器呈現** ，您的應用程式應該將控制器的 *GameObject* 放在向前預測的控制器上，以表示目前畫面格的 photon 時間。  您可以從 Unity 輪詢 Api （例如 XR）取得此資料 *[。InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* 或 *[XR。Wsa。輸入. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)* 。
-   * 針對以按下或放開的 **控制器為目標的控制器** ，您的應用程式應該根據該按下或釋放事件的歷程控制器姿勢來 raycast 和計算軌跡。  您可以從 Unity 事件 Api 取得這類資料，例如 *[InteractionManager. InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)* 。
+* 請密切 **注意我們應用速度的 *時間***。 按下按鈕時，最多可能需要20毫秒該事件，才能透過藍牙向上到作業系統。 這表示，如果您將控制器狀態變更從按下的狀態變更為未按下（反之亦然），則控制器會引發您所取得的資訊，而這項資訊會在狀態變更之前出現。 此外，我們的輪詢 API 所呈現的控制器會向前預測，以反映畫面上顯示的可能原因，未來可能會更20毫秒。 這適合用來 *呈現* 保留的物件，但是會在使用者釋放擲回的時間點時，將我們的時間問題轉譯為 *目標* 物件。 幸運的是，在11月更新中，當傳送 *InteractionSourcePressed* 或 *InteractionSourceReleased* 這類 Unity 事件時，該狀態會包含實際按下或放開按鈕時的歷程記錄資料。  若要在擲回期間取得最精確的控制器轉譯和控制器目標，您必須適當地正確地使用輪詢和事件：
+   * 針對每個畫面格的 **控制器呈現** ，您的應用程式應該將控制器的 *GameObject* 放在向前預測的控制器上，以表示目前畫面格的 photon 時間。  您可以從 Unity 輪詢 Api （例如 XR）取得此資料 *[。InputTracking. GetLocalPosition](https://docs.unity3d.com/ScriptReference/XR.InputTracking.GetLocalPosition.html)* 或 *[XR。Wsa。輸入. InteractionManager. GetCurrentReading](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.GetCurrentReading.html)*。
+   * 針對以按下或放開的 **控制器為目標的控制器** ，您的應用程式應該根據該按下或釋放事件的歷程控制器姿勢來 raycast 和計算軌跡。  您可以從 Unity 事件 Api 取得這類資料，例如 *[InteractionManager. InteractionSourcePressed](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.InteractionManager.InteractionSourcePressed.html)*。
 * **使用** 底框姿勢。 相對於底框姿勢（而不是指標姿勢）回報角度速度和速度。
 
 未來的 Windows 更新將持續改善擲回，而您可以預期在此找到更多資訊。

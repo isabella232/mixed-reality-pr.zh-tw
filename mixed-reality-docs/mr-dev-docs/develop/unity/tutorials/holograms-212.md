@@ -1,17 +1,17 @@
 ---
-title: MR 輸入 212-語音
+title: MR Input 212 - 語音
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解語音概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學院、教學課程、語音
-ms.openlocfilehash: ed37ef6e0c26c3d2a0cd2d51e18d01a258b2fc78
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、語音、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: b9d9002180da7a59c62b77b83872e77499da4c09
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680629"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677237"
 ---
 # <a name="mr-input-212-voice"></a>MR Input 212：語音
 
@@ -53,7 +53,7 @@ ms.locfileid: "91680629"
 
 ## <a name="before-you-start"></a>開始之前
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>先決條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。
@@ -72,27 +72,27 @@ ms.locfileid: "91680629"
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
-* 您必須在 [工具]-[>選項] 下的 Visual Studio 中停用 [啟用 Just My Code] ( *未* 核取) ，才能在程式碼中叫用中斷點。
+* 您必須在 [工具]-[>選項] 下的 Visual Studio 中停用 [啟用 Just My Code] (*未* 核取) ，才能在程式碼中叫用中斷點。
 
 ## <a name="unity-setup"></a>Unity 設定
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 1. 啟動 Unity。
-2. 選取 [開啟]。
+2. 選取 [開啟]  。
 3. 流覽至您先前取消封存的 HolographicAcademy-全像 **-212-Voice** 資料夾。
-4. 尋找並選取 [ **啟動** / **模型瀏覽器** ] 資料夾。
+4. 尋找並選取 [**啟動** / **模型瀏覽器**] 資料夾。
 5. 按一下 [ **選取資料夾** ] 按鈕。
 6. 在 [ **專案** ] 面板中，展開 [ **場景** ] 資料夾。
 7. 按兩下 [ **ModelExplorer** 場景]，以在 Unity 中載入。
 
 ### <a name="building"></a>建置
 
-1. 在 Unity 中，選取 [ **File > Build Settings** ]。
+1. 在 Unity 中，選取 [ **File > Build Settings**]。
 2. 如果 **場景/ModelExplorer** 未列在 **組建的場景** 中，請按一下 [ **新增開啟場景** ] 以加入場景。
-3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens** 。 否則，請將它保留在 **任何裝置** 上。
+3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
 4. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
-5. 按一下 [建置]  。
+5. 按一下 [建置]。
 6. 建立名為 "App" 的 **新資料夾** 。
 7. 按一下 **應用程式** 資料夾。
 8. 按下 [ **選取資料夾** ]，Unity 就會開始建立 Visual Studio 的專案。
@@ -100,21 +100,21 @@ ms.locfileid: "91680629"
 當 Unity 完成時，將會出現檔案總管視窗。
 
 1. 開啟 **應用程式** 資料夾。
-2. 開啟 **ModelExplorer Visual Studio 方案** 。
+2. 開啟 **ModelExplorer Visual Studio 方案**。
 
 如果要部署到 HoloLens：
 
-1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86** 。
-2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦** ]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)** 。 按一下 [選取]。  如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項** 。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
+2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
+3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 5. 部署應用程式之後，請使用 **選取手勢** 來關閉 **Fitbox** 。
 
 如果部署到沉浸式耳機：
 
-1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x64** 。
-2. 請確定部署目標設定為 [ **本機電腦** ]。
-3. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。
+1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x64**。
+2. 請確定部署目標設定為 [ **本機電腦**]。
+3. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
 4. 部署應用程式之後，請在動作控制器上提取觸發程式來關閉 **Fitbox** 。
 
 >[!NOTE]
@@ -136,14 +136,14 @@ ms.locfileid: "91680629"
 
 #### <a name="do"></a>DO
 
-* 建立簡潔的命令。 您不想要使用「 *播放目前選取的影片* 」，因為該命令並非簡潔，而且使用者很容易就會忘記。 相反地，您應該使用：「 *播放影片* 」，因為它很簡潔，而且有多個音節。
+* 建立簡潔的命令。 您不想要使用「 *播放目前選取的影片*」，因為該命令並非簡潔，而且使用者很容易就會忘記。 相反地，您應該使用：「 *播放影片*」，因為它很簡潔，而且有多個音節。
 * 使用簡單的詞彙。 請一律嘗試使用簡單的單字和片語，方便使用者探索和記住。 例如，如果您的應用程式具有可顯示或隱藏的附注物件，您就不會使用 " *Show 牌子"* 命令，因為 "牌子" 是很少使用的詞彙。 相反地，您會 *使用下列命令來顯示應用* 程式中的附注。
-* 保持一致。 語音命令在您的應用程式中應該保持一致。 假設您的應用程式中有兩個場景，而且這兩個場景都包含用來關閉應用程式的按鈕。 如果第一個場景使用 " *Exit"* 命令來觸發按鈕，但第二個場景使用「 *關閉應用程式* 」命令，則使用者會感到混淆。 如果相同的功能跨多個場景保存，則應該使用相同的語音命令來觸發它。
+* 保持一致。 語音命令在您的應用程式中應該保持一致。 假設您的應用程式中有兩個場景，而且這兩個場景都包含用來關閉應用程式的按鈕。 如果第一個場景使用 " *Exit"* 命令來觸發按鈕，但第二個場景使用「 *關閉應用程式*」命令，則使用者會感到混淆。 如果相同的功能跨多個場景保存，則應該使用相同的語音命令來觸發它。
 
 #### <a name="dont"></a>不要
 
-* 使用單一的音節命令。 例如，如果您要建立語音命令來播放影片，您應該避免使用簡單的命令「 *播放* 」，因為這只是一個音節，而且可能很容易被系統錯過。 相反地，您應該使用：「 *播放影片* 」，因為它很簡潔，而且有多個音節。
-* 使用系統命令。 系統會保留 *"Select"* 命令，以觸發目前焦點物件的點擊事件。 請勿重複使用關鍵字或片語中的 *"Select"* 命令，因為它可能無法如您預期般運作。 例如，如果在您的應用程式中選取 cube 的聲音命令為「 *選取 cube* 」，但使用者在從未提到命令時正在查看球體，則會改為選取球體。 同樣地，已啟用語音的應用程式行命令。 請勿在 CoreWindow View 中使用下列語音命令：
+* 使用單一的音節命令。 例如，如果您要建立語音命令來播放影片，您應該避免使用簡單的命令「 *播放*」，因為這只是一個音節，而且可能很容易被系統錯過。 相反地，您應該使用：「 *播放影片*」，因為它很簡潔，而且有多個音節。
+* 使用系統命令。 系統會保留 *"Select"* 命令，以觸發目前焦點物件的點擊事件。 請勿重複使用關鍵字或片語中的 *"Select"* 命令，因為它可能無法如您預期般運作。 例如，如果在您的應用程式中選取 cube 的聲音命令為「 *選取 cube*」，但使用者在從未提到命令時正在查看球體，則會改為選取球體。 同樣地，已啟用語音的應用程式行命令。 請勿在 CoreWindow View 中使用下列語音命令：
     1. 向後
     2. 捲軸工具
     3. Zoom 工具
@@ -152,24 +152,24 @@ ms.locfileid: "91680629"
     6. 移除
 * 使用類似的聲音。 請嘗試避免使用 rhyme 的語音命令。 如果您的購物應用程式支援 [ *顯示存放區]* 和 [ *顯示更多]* 作為語音命令，則您會想要在另一個使用中的命令停用其中一個命令。 例如，您可以使用 [ *顯示存放區]* 按鈕來開啟存放區，然後在商店顯示時停用該命令，如此就可以使用 [ *顯示更多]* 命令來進行流覽。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 **Unity 的階層** 面板中，使用搜尋工具來尋找 **holoComm_screen_mesh** 物件。
 * 按兩下 **holoComm_screen_mesh** 物件以在 **場景** 中加以查看。 這是太空人的監看，它會回應我們的語音命令。
 * 在 [偵測 **器** ] 面板中，找出 **語音輸入來源 (腳本)** 元件。
-* 展開 [ **關鍵字** ] 區段以查看支援的語音命令： **開啟 Communicator** 。
-* 按一下右邊的齒輪，然後選取 [ **編輯腳本** ]。
+* 展開 [ **關鍵字** ] 區段以查看支援的語音命令： **開啟 Communicator**。
+* 按一下右邊的齒輪，然後選取 [ **編輯腳本**]。
 * 探索 **SpeechInputSource.cs** ，瞭解它如何使用 **KeywordRecognizer** 來新增語音命令。
 
 ### <a name="build-and-deploy"></a>建置和部署
 
 * 在 Unity 中，使用檔案 **> 組建設定** 來重建應用程式。
 * 開啟 **應用程式** 資料夾。
-* 開啟 **ModelExplorer Visual Studio 方案** 。
+* 開啟 **ModelExplorer Visual Studio 方案**。
 
  (如果您已在安裝期間于 Visual Studio 中建立或部署此專案，則您可以開啟 VS 的實例，然後在出現) 提示時按一下 [全部重載]。
 
-* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。
+* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
 * 將應用程式部署到 HoloLens 之後，請使用 [點 [一下手勢] 關閉 [符合](../../../design/gaze-and-commit.md#composite-gestures) ] 方塊。
 * 觀賞太空人的觀賞。
 * 當 watch 具有焦點時，請確認游標變更為麥克風。 這會提供應用程式接聽語音命令的意見反應。
@@ -192,13 +192,13 @@ ms.locfileid: "91680629"
 >2. 按一下 [通用 Windows 平臺] 索引標籤
 >3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 Unity 的 **階層面板中** ，確認已選取 **holoComm_screen_mesh** 物件。
 * 在 [偵測 **器** ] 面板中，尋找 **太空人 Watch (腳本)** 元件。
 * 按一下設定為 [ **Communicator 預製專案** ] 屬性值的小、藍色 cube。
 * 在 [ **專案** ] 面板中， **Communicator** 預製專案現在應該會有焦點。
-* 按一下 [ **專案** ] 面板中的 **Communicator** 預製專案，以在偵測 **器** 中查看其元件。
+* 按一下 [**專案**] 面板中的 **Communicator** 預製專案，以在偵測 **器** 中查看其元件。
 * 查看 **麥克風管理員 (腳本)** 元件，這可讓我們記錄使用者的聲音。
 * 請注意， **Communicator** 物件具有 **語音輸入處理常式 (腳本)** 元件，可回應 **傳送訊息** 命令。
 * 查看 **Communicator (腳本)** 元件，然後按兩下腳本，在 Visual Studio 中開啟它。
@@ -248,18 +248,18 @@ MessageUIRenderer.gameObject.SetActive(false);
 >2. 按一下 [通用 Windows 平臺] 索引標籤
 >3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 我們將編輯 **MicrophoneManager.cs** 以使用聽寫辨識器。 這就是我們要新增的內容：
 
-1. 當您按下 [ **錄製] 按鈕** 時，我們會 **啟動 DictationRecognizer** 。
+1. 當您按下 [ **錄製] 按鈕** 時，我們會 **啟動 DictationRecognizer**。
 2. 顯示 DictationRecognizer 瞭解的 **假設** 。
 3. 鎖定 DictationRecognizer 瞭解的 **結果** 。
 4. 檢查 DictationRecognizer 是否有超時。
-5. 當按下 [ **停止] 按鈕** 或 mic 會話超時時，請 **停止 DictationRecognizer** 。
-6. 重新開機 **KeywordRecognizer** ，它會接聽 **傳送訊息** 命令。
+5. 當按下 [ **停止] 按鈕** 或 mic 會話超時時，請 **停止 DictationRecognizer**。
+6. 重新開機 **KeywordRecognizer**，它會接聽 **傳送訊息** 命令。
 
-讓我們開始這次的教學。 完成 3. a **MicrophoneManager.cs** 中的所有程式碼撰寫練習，或複製並貼上完成的程式碼，如下所示：
+現在就開始吧。 完成 3. a **MicrophoneManager.cs** 中的所有程式碼撰寫練習，或複製並貼上完成的程式碼，如下所示：
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.
@@ -451,7 +451,7 @@ namespace Academy
 
 * 在 Visual Studio 中重建並部署至您的裝置。
 * 使用輕量手勢關閉 [符合] 方塊。
-* 觀賞太空人的監看，然後說「 *開啟 Communicator* 」。
+* 觀賞太空人的監看，然後說「 *開啟 Communicator*」。
 * 選取 [ **錄製** ] 按鈕 (麥克風) 以記錄您的訊息。
 * 開始說話。 **聽寫辨識器** 會解讀您的語音，並顯示 communicator 中的假設文字。
 * 當您記錄訊息時，請嘗試說出「 *傳送訊息* 」。 請注意， **關鍵字辨識器** 沒有回應，因為 **聽寫辨識器** 仍在作用中。
@@ -475,10 +475,10 @@ namespace Academy
 >2. 按一下 [通用 Windows 平臺] 索引標籤
 >3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-1. **在 [階層** ] 面板中搜尋 **Jetpack_Center** ，然後選取它。
-2. 在 [偵測 **器** ] 面板中尋找 **Tagalong 動作** 腳本。
+1. **在 [階層**] 面板中搜尋 **Jetpack_Center** ，然後選取它。
+2. 在 [偵測 **器**] 面板中尋找 **Tagalong 動作** 腳本。
 3. 按一下 [物件] 右邊的小圓圈， **沿著欄位標記** 。
 4. 在彈出的視窗中，搜尋 **SRGSToolbox** ，然後從清單中選取它。
 5. 請查看 **StreamingAssets** 資料夾中的 **SRGSColor.xml** 檔案。
@@ -500,7 +500,7 @@ namespace Academy
 
 ## <a name="the-end"></a>結束
 
-恭喜！ 您現在已完成 **MR 輸入212： Voice** 。
+恭喜！ 您現在已完成 **MR 輸入212： Voice**。
 
 * 您知道語音命令的 Dos 和注意事項。
 * 您已瞭解如何運用工具提示，讓使用者知道語音命令。

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store、HoloLens、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品化
-ms.openlocfilehash: 1ea3a125bed26cabbf617585c0e87399c772e24a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+ms.openlocfilehash: f5dae379deee54056595c291363b5b1e3e83f25e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631476"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678787"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>將應用程式提交到 Microsoft Store
 
@@ -60,16 +60,16 @@ ms.locfileid: "94631476"
 
 **特別注意以 [Windows Mixed Reality 沉浸式耳機](../discover/immersive-headset-hardware-details.md)為目標的應用程式，其至少需要 Windows 10 Fall Creators Update (10.0;組建 16299) 可正常運作。**
 
-當您在 Visual Studio 中建立新的通用 Windows 專案時，系統會提示您設定 Windows 的目標和最小版本。 針對現有的專案，您可以在下拉式功能表中選取 [ **<您的應用程式名稱>** 內容，來變更 [ **專案** ] 功能表中的這個設定。
+當您在 Visual Studio 中建立新的通用 Windows 專案時，系統會提示您設定 Windows 的目標和最小版本。 針對現有的專案，您可以在下拉式功能表中選取 [ **<您的應用程式名稱>** 內容，來變更 [**專案**] 功能表中的這個設定。
 
 ![在 Visual Studio 2019 中設定最低和目標平臺版本](images/visual-studio-min-version-500px.png)<br>
 *在 Visual Studio 中設定最低和目標平臺版本*
 
 ### <a name="specifying-target-device-families"></a>指定目標裝置系列
 
-適用于 [hololens](../hololens-hardware-details.md)和 [沉浸式耳機](../discover/immersive-headset-hardware-details.md)的 Windows Mixed Reality 應用程式 () 是通用 Windows 平臺的一部分，因此任何具有 **Windows 通用**[目標裝置系列](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx)Cab 的應用程式套件，都會在 HoloLens 或具有沉浸式耳機的 Windows 10 電腦上執行。 如果您未在應用程式資訊清單中指定目標裝置系列，您可能會不小心開啟您的應用程式，而非預期的 Windows 10 裝置。 遵循下列步驟來指定所要的 Windows 10 裝置系列，然後 [再次檢查當您在合作夥伴中心中上傳應用程式套件以進行 Microsoft Store 提交時，是否已設定正確的裝置系列。](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
+適用于 [hololens](../hololens-hardware-details.md)和 [沉浸式耳機](../discover/immersive-headset-hardware-details.md)的 Windows Mixed Reality 應用程式 () 是通用 Windows 平臺的一部分，因此任何具有 **Windows 通用**[目標裝置系列](https://msdn.microsoft.com/library/windows/apps/dn986903.aspx)的應用程式套件，都可以在 HoloLens 或具有沉浸式耳機的 Windows 10 電腦上執行。 如果您未在應用程式資訊清單中指定目標裝置系列，您可能會不小心開啟您的應用程式，而非預期的 Windows 10 裝置。 遵循下列步驟來指定所要的 Windows 10 裝置系列，然後 [再次檢查當您在合作夥伴中心中上傳應用程式套件以進行 Microsoft Store 提交時，是否已設定正確的裝置系列。](submitting-an-app-to-the-microsoft-store.md#submitting-your-mixed-reality-app-to-the-store)
 
-* 若要在 Visual Studio 中設定此欄位，請以滑鼠右鍵按一下 **package.appxmanifest** ，然後選取 [ **View Code** ]，然後尋找 [ **y Name** ] 欄位。 依預設，它看起來應該類似下列專案：
+* 若要在 Visual Studio 中設定此欄位，請以滑鼠右鍵按一下 **package.appxmanifest** ，然後選取 [ **View Code**]，然後尋找 [ **y Name** ] 欄位。 依預設，它看起來應該類似下列專案：
 
 ```
 <Dependencies>
@@ -124,7 +124,7 @@ ms.locfileid: "94631476"
 
 如果您要使用自己的自訂 .xml 檔案來覆寫預設的 package.appxmanifest 檔案，則無法將應用程式與 Microsoft Store 產生關聯。 將自訂資訊清單檔與存放區產生關聯將會產生錯誤訊息。
 
-您也可以藉由前往您的 Visual Studio 解決方案，然後選取 **[專案] > [儲存] > 將應用程式與存放區建立關聯** ，來測試購買和通知案例。
+您也可以藉由前往您的 Visual Studio 解決方案，然後選取 **[專案] > [儲存] > 將應用程式與存放區建立關聯**，來測試購買和通知案例。
 
 ### <a name="creating-an-upload-package"></a>建立上傳套件
 
@@ -171,12 +171,12 @@ Windows 通用平臺可讓您建立在所有 Windows 10 裝置系列上執行的
 
 一般情況下，提交適用于 HoloLens 和/或沉浸式耳機的 Windows Mixed Reality 應用程式，就像是將任何 UWP 應用程式提交至 Microsoft Store 一樣。 一旦您藉 [由保留名稱來建立應用程式](https://docs.microsoft.com/windows/uwp/publish/create-your-app-by-reserving-a-name)，請遵循 [UWP 提交檢查清單](https://docs.microsoft.com/windows/uwp/publish/app-submissions)。
 
-您首先要做的其中一件事，就是為您的混合現實體驗 [選取類別和子類別](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) 。 **請務必為您的應用程式選擇最精確的類別** 。 類別可協助您將應用程式放在正確的商店類別中，並確保它會使用相關的搜尋查詢來顯示。 將 **您的 VR 標題列為遊戲，將不會對您的應用程式造成更好的曝光，** 而且可能會讓它無法顯示在更適合且更擁擠的類別中。
+您首先要做的其中一件事，就是為您的混合現實體驗 [選取類別和子類別](https://docs.microsoft.com/windows/uwp/publish/category-and-subcategory-table) 。 **請務必為您的應用程式選擇最精確的類別**。 類別可協助您將應用程式放在正確的商店類別中，並確保它會使用相關的搜尋查詢來顯示。 將 **您的 VR 標題列為遊戲，將不會對您的應用程式造成更好的曝光，** 而且可能會讓它無法顯示在更適合且更擁擠的類別中。
 
 不過，提交程式中有四個主要區域，您會想要進行混合的現實特定選擇：
-1. 在 [ [屬性](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] 下的 [ **[產品](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)** 宣告] 區段中。
-2. 在 [ [屬性](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] 下的 [ **[系統需求](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)** ] 區段中。
-3. 在 [ [套件](https://docs.microsoft.com/windows/uwp/publish/upload-app-packages)] 下的 [ **[裝置系列可用性](submitting-an-app-to-the-microsoft-store.md#device-family-availability)** ] 區段中。
+1. 在 [[屬性](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] 下的 [**[產品](submitting-an-app-to-the-microsoft-store.md#mixed-reality-product-declarations)** 宣告] 區段中。
+2. 在 [[屬性](https://docs.microsoft.com/windows/uwp/publish/enter-app-properties)] 下的 [**[系統需求](submitting-an-app-to-the-microsoft-store.md#mixed-reality-system-requirements)**] 區段中。
+3. 在 [[套件](https://docs.microsoft.com/windows/uwp/publish/upload-app-packages)] 下的 [**[裝置系列可用性](submitting-an-app-to-the-microsoft-store.md#device-family-availability)**] 區段中。
 4. 在數個 **[Store 清單頁面](submitting-an-app-to-the-microsoft-store.md#store-listing-page)** 欄位中。
 
 ### <a name="mixed-reality-product-declarations"></a>混合現實產品聲明
@@ -208,7 +208,7 @@ Windows 通用平臺可讓您建立在所有 Windows 10 裝置系列上執行的
 
 **輸入硬體：**
 
-如果您的應用程式支援 [語音輸入](../design/voice-input.md)) 、 **[Xbox 控制器或遊戲台](../discover/hardware-accessories.md#bluetooth-gamepads)** ，以及/或 **[Windows Mixed Reality 移動控制器](../design/motion-controllers.md)** 的 **麥克風** ，請使用核取方塊來告訴潛在客戶。 這項資訊會顯示在您應用程式的 [產品詳細資料] 頁面上，並可協助您的應用程式包含在適當的應用程式/遊戲集合中。 例如，所有支援動作控制器的遊戲都可能會有一個集合。
+如果您的應用程式支援 [語音輸入](../design/voice-input.md)) 、 **[Xbox 控制器或遊戲台](../discover/hardware-accessories.md#bluetooth-gamepads)**，以及/或 **[Windows Mixed Reality 移動控制器](../design/motion-controllers.md)** 的 **麥克風**，請使用核取方塊來告訴潛在客戶。 這項資訊會顯示在您應用程式的 [產品詳細資料] 頁面上，並可協助您的應用程式包含在適當的應用程式/遊戲集合中。 例如，所有支援動作控制器的遊戲都可能會有一個集合。
 
 請仔細針對輸入類型選取 [最小硬體] 或 [建議的硬體] 核取方塊。 
 

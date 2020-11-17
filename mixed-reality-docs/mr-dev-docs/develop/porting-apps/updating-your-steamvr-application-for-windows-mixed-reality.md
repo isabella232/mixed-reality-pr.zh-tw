@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: SteamVR，相容性
-ms.openlocfilehash: 4a1439bed8743396cba13fa4d65debc62487ab46
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: SteamVR、相容性、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、串流、移動控制器、haptics
+ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638504"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677657"
 ---
 # <a name="updating-your-steamvr-application"></a>更新您的 SteamVR 應用程式
 我們鼓勵開發人員測試 SteamVR 體驗，並將其優化，以在 Windows Mixed Reality 耳機上執行。 本檔涵蓋開發人員可進行的一般改進，以確保他們的體驗在 Windows Mixed Reality 上執行得很棒。
@@ -29,10 +29,10 @@ ms.locfileid: "92638504"
 ## <a name="controls"></a>控制項
 
 設計或調整控制項版面配置時，請記住下列保留的命令集：
-1. 按一下向下 **和向右類比操縱杆** 會保留給 **流儀表板** 。
+1. 按一下向下 **和向右類比操縱杆** 會保留給 **流儀表板**。
 
 > [!NOTE]
-> 如果您使用的是「HP 回音」 G2 控制器，則按一下右邊的功能表按鈕會保留給「 **流」儀表板** 。
+> 如果您使用的是「HP 回音」 G2 控制器，則按一下右邊的功能表按鈕會保留給「 **流」儀表板**。
 
 2. **Windows 按鈕** 一律會將使用者傳回到 Windows Mixed Reality 首頁。
 

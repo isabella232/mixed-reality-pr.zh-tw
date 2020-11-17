@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 注視, 定向注視, 互動, 設計, 手部接近, HoloLens
-ms.openlocfilehash: 18e2a6128a5fa07fe2ddcd3c0eab192ccdedb4b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8141bc588247be15174d4a85992b74911ffc002e
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696614"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631536"
 ---
 # <a name="direct-manipulation-with-hands"></a>手部直接操作
 
@@ -34,7 +34,7 @@ ms.locfileid: "91696614"
 <tr>
      <td><strong>輸入模型</strong></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></a></td>
      <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>沉浸式頭戴裝置</strong></a></td>
 </tr>
 <tr>
@@ -259,7 +259,7 @@ HoloLens 2 可讓使用者將週框方塊套用至每個 3D 物件，以便用�
 
 非能供性操作不會將能供性連結至週框方塊。 使用者只能顯示週框方塊，然後直接與它互動。 若以一隻手抓住週框方塊，物件的轉譯和旋轉會與那隻手的動作和方向相關聯。 以雙手抓住物件時，使用者可以根據兩隻手的相對動作來轉譯、縮放及旋轉物件。
 
-特定操作需要精確度。 建議您使用 **能供性操作** ，因為它可提供高層級的細微性。 針對彈性操作，建議您使用 **非能供性操作** ，因為它可帶來即時而有趣的體驗。
+特定操作需要精確度。 建議您使用 **能供性操作**，因為它可提供高層級的細微性。 針對彈性操作，建議您使用 **非能供性操作**，因為它可帶來即時而有趣的體驗。
 
 <br>
 
@@ -307,18 +307,18 @@ HoloLens 2 可讓使用者將週框方塊套用至每個 3D 物件，以便用�
 
 直接操作若能如預期運作，將可達到奇妙的效果。 但若無法順利將手移到想要的位置，而老是無意中觸發全像投影，就會出現挫敗感。 眼球追蹤或許有助於判斷使用者真正的意圖。
 
-* **時機** ：避免無意中觸發操作回應。 眼球追蹤有助於了解使用者目前從事的活動。
+* **時機**：避免無意中觸發操作回應。 眼球追蹤有助於了解使用者目前從事的活動。
 例如，想像您在閱讀全像攝影 (指示) 文件時，您伸手要去拿實際環境中的工具。
 
 此時，您的手不小心劃過某個您根本沒留意過的互動式全像攝影按鈕 (例如該按鈕可能不在使用者的視野 (FoV) 內)。
 
   長話短說：如果使用者已有一段時間未注視某個全像投影，系統也未偵測到其觸碰或抓取事件，表示使用者可能並非真正想要與該全像投影互動。
 
-* **標的** ：除了處理誤判的啟用以外，它還有助於判斷所應抓取或觸碰的全像投影，因為從您的視角可能無法看出精準的交叉點，尤其是有數個全像投影的位置彼此十分靠近時。
+* **標的**：除了處理誤判的啟用以外，它還有助於判斷所應抓取或觸碰的全像投影，因為從您的視角可能無法看出精準的交叉點，尤其是有數個全像投影的位置彼此十分靠近時。
 
   雖然 HoloLens 2 的眼球追蹤在判斷眼睛視線時會因其精準度而有所限制，但對近距離互動而言仍不失為有利的工具，因為透過手部輸入互動時，會有深度的差異。 這表示，要判斷您的手是在全像投影的後面還是前面，而精確地抓取操作工具 (舉例而言)，有時是很困難的。
 
-* **目的地** ：運用使用者在執行快速拋投手勢時看往何處的相關資訊。 抓取全像投影並約略拋向您要的目的地。  
+* **目的地**：運用使用者在執行快速拋投手勢時看往何處的相關資訊。 抓取全像投影並約略拋向您要的目的地。  
 
     雖然這有時行得通，但快速執行手勢可能會導致目的地嚴重失準。 不過，同時運用眼球追蹤或可改善手勢的準確度。
 

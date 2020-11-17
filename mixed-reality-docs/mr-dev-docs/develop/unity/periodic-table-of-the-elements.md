@@ -5,20 +5,20 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、範例應用程式、控制項
-ms.openlocfilehash: 82ffa19b27c1d2687b67df659cb3bb50544748fc
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573262"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677677"
 ---
 # <a name="periodic-table-of-the-elements"></a>元素週期表
 
 >[!NOTE]
 >本文討論我們在 [混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity)中建立的探索範例，這是我們分享學習的地方，並提供混合現實應用程式開發的建議。 我們的設計相關文章和程式碼將隨著我們進行新探索而演進。
 
-專案的[定期資料表](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 透過此專案，您可以瞭解如何使用 **[物件集合](../../design/object-collection.md)** ，在3d 空間中配置具有各種介面類別型的物件陣列。 同時瞭解如何建立互動物件，以回應 HoloLens 的標準輸入。 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
+專案的[定期資料表](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 透過此專案，您可以瞭解如何使用 **[物件集合](../../design/object-collection.md)**，在3d 空間中配置具有各種介面類別型的物件陣列。 同時瞭解如何建立互動物件，以回應 HoloLens 的標準輸入。 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
 
 ![Elements 應用程式的期間資料表](images/640px-periodictable-hero.jpg)
 

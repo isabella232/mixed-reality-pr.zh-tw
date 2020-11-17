@@ -5,13 +5,13 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件
-ms.openlocfilehash: 15948870d3150614aefa071ce07cf51c29d284fc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
+ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682453"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677397"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -53,7 +53,7 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 如何啟用 >spatialperception 功能：
 1. 在 Unity 編輯器中，開啟 [ **播放機設定** ] 窗格 (編輯 > 專案設定 > 播放) 
 2. 按一下 [ **Windows 市存放區** ] 索引標籤
-3. 展開 [ **發行設定]** ，並檢查 [ **功能]** 清單中的 [ **>spatialperception]** 功能
+3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
 
 請注意，如果您已經將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
 
@@ -84,13 +84,13 @@ Unity 提供2個元件，可讓您輕鬆地將空間對應新增至您的應用�
 
 若要在 Unity 應用程式中使用這兩個元件：
 1. 在您想要偵測空間介面網格的區域中央選取 GameObject。
-2. 在 [偵測器] 視窗中， **加入元件**  >  **XR**  >  **空間對應碰撞** 器   或 **空間對應** 轉譯器。
+2. 在 [偵測器] 視窗中，**加入元件**  >  **XR**  >  **空間對應碰撞** 器或 **空間對應** 轉譯器。
 
 您可以在 <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity 檔網站</a>找到更多有關如何使用這些元件的詳細資料。
 
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>超越內建空間對應元件
 
-這些元件可讓您輕鬆地開始使用空間對應。 當您想要繼續進行時，有兩個主要的途徑可以探索：
+這些元件可讓您輕鬆地開始使用空間對應。  當您想要繼續進行時，有兩個主要的途徑可以探索：
 * 若要進行您自己的較低層級網格處理，請參閱下一節有關低層級空間對應腳本 API 的資訊。
 * 若要進行較高層級的網狀分析，請參閱下列有關 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>中 SpatialUnderstanding 程式庫的章節。
 
@@ -99,7 +99,7 @@ Unity 提供2個元件，可讓您輕鬆地將空間對應新增至您的應用�
 如果您需要比從空間對應轉譯器和空間對應碰撞器元件取得的更多控制，您可以使用低層級空間對應腳本 Api。
 
 **命名空間：** *UnityEngine. XR*<br>
-**類型** ： *SurfaceObserver* 、 *SurfaceChange* 、 *SurfaceData* 、 *SurfaceId*
+**類型**： *SurfaceObserver*、 *SurfaceChange*、 *SurfaceData*、 *SurfaceId*
 
 以下是使用空間對應 Api 之應用程式的建議流程大綱。
 
@@ -226,7 +226,7 @@ void Start () {
 
 ### <a name="understanding-modules"></a>瞭解模組
 
-模組會公開三個主要介面：適用于簡單介面和空間查詢的拓撲、物件偵測的圖形，以及物件放置規劃求解的物件集合之條件約束式位置。 以下說明每個步驟。 除了三個主要模組介面外，還可以使用光線轉型介面來取出標記的介面類別型，而且可以將自訂的防水 playspace 網格複製出來。
+模組會公開三個主要介面：適用于簡單介面和空間查詢的拓撲、物件偵測的圖形，以及物件放置規劃求解的物件集合之條件約束式位置。 以下說明上述各方式。 除了三個主要模組介面外，還可以使用光線轉型介面來取出標記的介面類別型，而且可以將自訂的防水 playspace 網格複製出來。
 
 ### <a name="ray-casting"></a>光線轉換
 
@@ -479,17 +479,17 @@ Import_UnderstandingMesh –
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊： 
+依循我們配置的 Unity 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
 
-或跳至混合的現實平臺功能和 Api：
+或者，直接跳到混合實境平台功能和 API 的主題：
 
 > [!div class="nextstepaction"]
 > [共用體驗](shared-experiences-in-unity.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。
 
 ## <a name="see-also"></a>另請參閱
 * [座標系統](../../design/coordinate-systems.md)

@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: galaxy explorer、案例研究、專案、範例
-ms.openlocfilehash: 3d3995bb7e43f49423901a92ce7ec1e7b31f8f4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681076"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678617"
 ---
 # <a name="galaxy-explorer"></a>星系探險
 

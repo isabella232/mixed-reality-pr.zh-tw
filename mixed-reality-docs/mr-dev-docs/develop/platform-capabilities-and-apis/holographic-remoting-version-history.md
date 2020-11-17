@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens、遠端、全像攝影遠端
-ms.openlocfilehash: 844a5dc36b480791296f17db067cd71ece307a2b
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011430"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677847"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
@@ -45,7 +45,7 @@ ms.locfileid: "92011430"
 * 在先前的版本中，會在「全像」遠端播放程式的玩家端完整處理預測。 從版本2.2.0 開始，全像攝影遠端處理有時間同步處理，而由遠端應用程式完全完成預測。 在困難的網路情況下，使用者也應預期改良的全像影像穩定性。
 
 ## <a name="version-213-may-25-2020"></a>版本 2.1.3 (2020 月25日) <a name="v2.1.3"></a>
-* 已變更 [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 事件的行為。 在舊版中，在透過[HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)建立下一個畫面格時，**不**保證新增的[HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)也具有有效的[HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) 。 從版本 2.1.3 HolographicSpace 開始， [CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 會與來自全像遠端播放播放程式的結果資料同步處理，而使用者也可以預期在新增攝影機時，在下一個畫面上，該攝影機也有有效的 [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) 可用。
+* 已變更 [HolographicSpace. CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 事件的行為。 在舊版中，在透過 [HolographicSpace](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.createnextframe)建立下一個畫面格時，**不** 保證新增的 [HolographicCamera](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera)也具有有效的 [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) 。 從版本 2.1.3 HolographicSpace 開始， [CameraAdded](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace.cameraadded) 會與來自全像遠端播放播放程式的結果資料同步處理，而使用者也可以預期在新增攝影機時，在下一個畫面上，該攝影機也有有效的 [HolographicCameraPose](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose) 可用。
 * 已 **停用** DepthBufferStreamResolution，可用來透過 RemoteContext.ConfigureDepthVideoStream 停用深度緩衝區串流。 請注意，如果使用 [HolographicCameraRenderingParameters，CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer) 將會失敗，並 *E_ILLEGAL_METHOD_CALL*。
 * 全像遠端播放機的啟動畫面已重新設計，現在不會封鎖使用者的觀點。
 * 穩定性改進與 bug 修正。

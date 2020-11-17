@@ -5,13 +5,13 @@ author: hamalawi
 ms.author: moelhama
 ms.date: 11/10/2020
 ms.topic: article
-keywords: HoloLens、模擬器、組建、版本
-ms.openlocfilehash: c80017fcad1d79080b0782cc6c580d788c229748
-ms.sourcegitcommit: c300518d76e5723a46729bc02d65bcb5293cf2b1
+keywords: HoloLens、模擬器、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
+ms.openlocfilehash: e6030328a85525851fa8f4f5129f4544a3136b68
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/10/2020
-ms.locfileid: "94447064"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679557"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 模擬器保存
 
@@ -19,7 +19,7 @@ HoloLens 模擬器 (第1代) 和 HoloLens 2 模擬器組建會並存安裝。 �
 
 |  Build |  發行日期 |  備註 |
 |----------|----------|----------|
-|  [HoloLens 2 模擬器組建10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 2020年11月10日 | Windows 全像1903年 11 2020 月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 模擬器組建10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 2020 年 11 月 10 日 | Windows 全像1903年 11 2020 月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.19041.1124](https://go.microsoft.com/fwlink/?linkid=2145829) | 2020 年 10 月 13 日 | Windows 全像版本 2004 2020 年10月更新。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2145828) | 2020 年 10 月 13 日 | Windows 全像版本 1903 2020 年10月更新。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.19041.1117](https://go.microsoft.com/fwlink/?linkid=2141987) | 2020年9月07日 | Windows 全像2004年 9 2020 月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |

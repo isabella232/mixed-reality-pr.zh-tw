@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality、手追蹤、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全息全像遊戲開發
-ms.openlocfilehash: 5bc120f802c2160282befd1ce6cb8025be21cbaa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal 引擎4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676901"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679207"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal 中的手勢追蹤
 
@@ -68,7 +68,7 @@ enum class EWMRHandKeypoint : uint8
  
 ### <a name="supporting-hand-tracking"></a>支援手動追蹤
 
-您可以藉由新增 **支援** 手動追蹤 **> Windows Mixed Reality** ，在藍圖中使用手邊追蹤：
+您可以藉由新增 **支援** 手動追蹤 **> Windows Mixed Reality**，在藍圖中使用手邊追蹤：
 
 ![手動追蹤 BP](images/unreal/hand-tracking-bp.png)
 
@@ -100,7 +100,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 * **Keypoint** –手形的骨骼。 
 * **轉換** –骨骼基底的座標和方向。 您可以要求下一個骨骼的基底，以取得適用于骨骼結尾的轉換資料。 特殊的秘訣骨骼可提供 distal 的結尾。 
 * **半徑** ：骨骼基底的半徑。
-* 傳回 **值** -如果已追蹤此框架，則為 true; 如果未追蹤此骨骼，則為 false。
+* 傳回 **值**-如果已追蹤此框架，則為 true; 如果未追蹤此骨骼，則為 false。
 
 ## <a name="hand-live-link-animation"></a>手實況連結動畫
 使用 [即時連結外掛程式](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)可對動畫公開手。
@@ -111,7 +111,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 
 ![即時連結來源](images/unreal/live-link-source.png)
  
-啟用來源並開啟動畫資產之後，展開 [ **預覽場景** ] 索引標籤中的 [ **動畫** ] 區段，也會看到其他選項 (詳細資料位於 Unreal 的即時連結檔中-當外掛程式在 Beta 版中，此程式可能會在稍後) 變更。
+啟用來源並開啟動畫資產之後，展開 [**預覽場景**] 索引標籤中的 [**動畫**] 區段，也會看到其他選項 (詳細資料位於 Unreal 的即時連結檔中-當外掛程式在 Beta 版中，此程式可能會在稍後) 變更。
 
 ![即時連結動畫](images/unreal/live-link-animation.png)
  
@@ -128,7 +128,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 ![手上網格](images/unreal/hand-mesh.png)
 
 在您可以存取手中的資料之前，您必須：
-- 選取您的 **ARSessionConfig** 資產，展開 [ **AR 設定-> 世界對應** 設定]，然後核取 [ **從追蹤的幾何產生網格資料** ]。 
+- 選取您的 **ARSessionConfig** 資產，展開 [ **AR 設定-> 世界對應** 設定]，然後核取 [ **從追蹤的幾何產生網格資料**]。 
 
 以下是預設的網格參數：
 
@@ -236,7 +236,7 @@ enum class EHMDTrackingStatus : uint8
 
 以下是兩個適用列舉案例的明細：
 * **NotTracked** –不可見的手
-* 已 **追蹤** --已完整追蹤手
+* 已 **追蹤**--已完整追蹤手
 
 ### <a name="struct"></a>結構
 PointerPoseInfo 結構可以提供下列資料的資訊：
@@ -263,7 +263,7 @@ struct FPointerPoseInfo
 };
 ```
 
-### <a name="functions"></a>函式
+### <a name="functions"></a>函數
 
 您可以在每個畫面上呼叫以下列出的所有函式，以允許連續監視。 
 
@@ -289,7 +289,7 @@ C++：
 static bool UWindowsMixedRealityFunctionLibrary::IsGrasped(EControllerHand hand);
 ```
  
-3. 如果使用者在目前的框架中觸發了 Select， **則 [已按下] 會** 傳回 true。
+3. 如果使用者在目前的框架中觸發了 Select，**則 [已按下] 會** 傳回 true。
 
 藍圖：
 
@@ -326,7 +326,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 Hololens 2 可以追蹤空間手勢，這表示您可以將這些手勢視為輸入。 您可以在 [HoloLens 2 基本使用](https://docs.microsoft.com/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
 
-您可以在 [ **Windows Mixed Reality 空間輸入** ] 下找到藍圖函式，然後在呼叫程式碼檔案中加入 c + + 函式 `WindowsMixedRealitySpatialInputFunctionLibrary.h` 。
+您可以在 [ **Windows Mixed Reality 空間輸入**] 下找到藍圖函式，然後在呼叫程式碼檔案中加入 c + + 函式 `WindowsMixedRealitySpatialInputFunctionLibrary.h` 。
 
 ![捕捉手勢](images/unreal/capture-gestures.png)
 
@@ -407,14 +407,14 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unreal 開發檢查點旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊： 
+依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
 
 > [!div class="nextstepaction"]
 > [本機空間錨點](unreal-spatial-anchors.md)
 
-或跳至混合的現實平臺功能和 Api：
+或者，直接跳到混合實境平台功能和 API 的主題：
 
 > [!div class="nextstepaction"]
 > [HoloLens 相機](unreal-hololens-camera.md)
 
-您隨時都可以回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks)。

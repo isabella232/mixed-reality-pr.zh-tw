@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音
-ms.openlocfilehash: b6930b35046e32beb1a4ca9f9ca29996487fcf4d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
+ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681045"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679887"
 ---
 # <a name="voice-input-in-unity"></a>Unity 中的語音輸入
 
@@ -41,7 +41,7 @@ KeywordRecognizer (兩種 PhraseRecognizers 類型的其中一種) ，您的應�
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
 **命名空間：** *UnityEngine*<br>
-**類型：** *KeywordRecognizer* 、 *PhraseRecognizedEventArgs* 、 *SpeechError* 、 *SpeechSystemStatus*
+**類型：** *KeywordRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
 我們需要一些 using 語句來節省一些按鍵：
 
@@ -103,7 +103,7 @@ keywordRecognizer.Start();
 ### <a name="grammarrecognizer"></a>GrammarRecognizer
 
 **命名空間：** *UnityEngine*<br>
-**類型** ： *GrammarRecognizer* 、 *PhraseRecognizedEventArgs* 、 *SpeechError* 、 *SpeechSystemStatus*
+**類型**： *GrammarRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
 如果您要使用 SRGS 指定辨識文法，則會使用 GrammarRecognizer。 如果您的應用程式有多個關鍵字，如果您想要辨識更複雜的片語，或是想要輕鬆開啟和關閉命令集，這會很有用。 請參閱： [使用 SRGS XML 建立](https://msdn.microsoft.com/library/hh378349(v=office.14).aspx) 檔案格式資訊的文法。
 
@@ -145,7 +145,7 @@ grammarRecognizer.Start();
 ## <a name="dictation"></a>聽寫
 
 **命名空間：** *UnityEngine*<br>
-**類型** ： *DictationRecognizer* 、 *SpeechError* 、 *SpeechSystemStatus*
+**類型**： *DictationRecognizer*、 *SpeechError*、 *SpeechSystemStatus*
 
 使用 DictationRecognizer 將使用者的語音轉換成文字。 DictationRecognizer 會公開 [聽寫](../../design/voice-input.md#dictation) 功能，並支援註冊和接聽假設和片語完成的事件，讓您可以在使用者說話和之後，將意見反應提供給您的使用者。 開始 ( # A1 並停止 ( # A3 方法，分別啟用和停用聽寫辨識。 完成辨識器之後，應該使用 Dispose ( # A1 方法來處置它所使用的資源。 如果未在這之前釋出這些資源，它會在垃圾收集期間自動釋出這些資源。
 
@@ -308,4 +308,4 @@ GitHub 上的混合現實工具組包含麥克風協助程式類別，可在系�
 > [!div class="nextstepaction"]
 > [共用體驗](shared-experiences-in-unity.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。

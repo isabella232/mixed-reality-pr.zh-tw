@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 部署、unity、visual studio、HoloLens、HoloLens 2、沉浸式耳機
-ms.openlocfilehash: 4d145568190ea43cf2ec43442a1c3d5ca4d92251
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 部署、unity、visual studio、HoloLens、HoloLens 2、沉浸式耳機、最佳作法、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP、Visual Studio Tools Windows SDK
+ms.openlocfilehash: 5e00b24c7a36ae83a281800e2c7d8b2fc377f178
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679066"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678843"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>使用 Unity 和 Visual Studio 的最佳作法
 
@@ -24,8 +24,8 @@ Unity 2018 中的 .NET 腳本後端支援已被取代，並已在 Unity 2019 + �
 1) 每次在相同的目錄中建立您的專案，並在該處重複使用預先建立的檔案，以利用累加式大樓
 2) 針對您的專案停用反惡意程式碼軟體掃描 & 組建資料夾
    - 在您的 Windows 10 設定應用程式下開啟 **病毒 & 威脅防護**
-   - 選取 [ **病毒 & 威脅防護設定** ] 下的 [ **管理設定** ]
-   - 選取 [ **排除** ] 區段底下的 [ **新增或移除排除** 專案]
+   - 選取 [**病毒 & 威脅防護設定**] 下的 [**管理設定**]
+   - 選取 [**排除**] 區段底下的 [**新增或移除排除** 專案]
    - 按一下 [ **新增排除** ]，然後選取包含 Unity 專案程式碼和組建輸出的資料夾
 3) 利用 SSD 來建立
 
@@ -55,7 +55,7 @@ Unity 2018 中的 .NET 腳本後端支援已被取代，並已在 Unity 2019 + �
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>使用文字格式資產來輕鬆比較內容變更
 
-以文字格式儲存資產可讓您更輕鬆地查看 Visual Studio 中的內容變更差異。 您可以藉由變更 **資產序列化** 模式來 **強制文字** ，以在 [編輯 > 專案設定 > 編輯器] 中啟用此功能。 不過，合併文字資產檔案變更很容易出錯且不建議使用，因此請考慮在原始檔控制系統中啟用獨佔二進位簽出。
+以文字格式儲存資產可讓您更輕鬆地查看 Visual Studio 中的內容變更差異。 您可以藉由變更 **資產序列化** 模式來 **強制文字**，以在 [編輯 > 專案設定 > 編輯器] 中啟用此功能。 不過，合併文字資產檔案變更很容易出錯且不建議使用，因此請考慮在原始檔控制系統中啟用獨佔二進位簽出。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)

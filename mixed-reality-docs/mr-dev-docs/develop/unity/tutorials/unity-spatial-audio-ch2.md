@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: 混合現實、unity、教學課程、hololens2、空間音訊
-ms.openlocfilehash: 25386819826efc6f25182e0780ff148206248a06
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、head 相關的傳送函式、回音、Microsoft 空間定位器、prefabs、音量曲線
+ms.openlocfilehash: eb550c3127e13926d73428b337abfd7cf9872eb7
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682328"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678187"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>空間化按鈕互動音效
 
@@ -32,9 +32,9 @@ ms.locfileid: "91682328"
 ## <a name="spatialize-button-feedback"></a>Spatialize 按鈕意見反應
 在此步驟中，您將 spatialize 按鈕的音訊意見反應。 如需相關的設計建議，請參閱 [空間音效設計](../../../design/spatial-sound-design.md)。 
 
-您可以在 [ **音訊混音** 器] 窗格中，為音訊 **來源** 元件定義音訊播放的目的地，稱為 **混音器群組** 。 
-* 使用 **視窗-> 音訊 > 音訊混音** 器，從功能表列開啟 [ **音訊混音** 器] 窗格
-* 按一下 [ **Mixers** ] 旁邊的 [+]，以建立 **混音** 器。 新的混音器將包含稱為 **Master** 的預設 **群組** 。
+您可以在 [**音訊混音** 器] 窗格中，為音訊 **來源** 元件定義音訊播放的目的地，稱為 **混音器群組**。 
+* 使用 **視窗-> 音訊 > 音訊混音** 器，從功能表列開啟 [**音訊混音** 器] 窗格
+* 按一下 [ **Mixers**] 旁邊的 [+]，以建立 **混音** 器。 新的混音器將包含稱為 **Master** 的預設 **群組**。
 
 您的 **混音** 器窗格現在看起來像這樣：
 
@@ -43,33 +43,42 @@ ms.locfileid: "91682328"
 > [!NOTE]
 > 在 [第5章](unity-spatial-audio-ch5.md)啟用 [回條] 之前，混音器的音量計量不會顯示透過 Microsoft 空間定位器播放之音效的活動
 
-按一下 [ **階層] 窗格中的 [** **PressableButtonHoloLens2** ]。 在 [偵測 **器** ] 窗格中：
+按一下 [**階層] 窗格中的 [** **PressableButtonHoloLens2** ]。 在 [偵測 **器** ] 窗格中：
 1. 尋找 **音訊來源** 元件
 2. 針對 [ **輸出** ] 屬性，按一下選取器並選擇混音器
 3. 核取 [ **Spatialize** ] 核取方塊
 4. 將 **空間 Blend** 滑杆移至 3d (1) 。
 
 > [!NOTE]
-> 在2019之前的 Unity 版本中，[Spatialize] 核取方塊位於 **音訊來源** 的 [偵測 **器** ] 窗格底部。
+> 在2019之前的 Unity 版本中，[Spatialize] 核取方塊位於 **音訊來源** 的 [偵測 **器**] 窗格底部。
 
 這些變更之後， **PressableButtonHoloLens2** 的 **音訊來源** 元件看起來會像這樣：
 
 ![按鈕音訊來源](images/spatial-audio/button-audio-source.png)
 
 > [!NOTE]
-> 如果您在未核取 [ **Spatialize** ] 核取方塊的情況下，將 **空間 Blend** 移至 1 (3d) ，Unity 將會使用其移動流覽空間定位器，而不是使用 hrtf 的 **Microsoft 空間定位器** 。
+> 如果您在未核取 [ **Spatialize** ] 核取方塊的情況下，將 **空間 Blend** 移至 1 (3d) ，Unity 將會使用其移動流覽空間定位器，而不是使用 hrtf 的 **Microsoft 空間定位器**。
 
 ## <a name="adjust-the-volume-curve"></a>調整音量曲線
 根據預設，Unity 會在從接聽程式更遠的情況下 attenuate hrtf 音效。 當此衰減套用至互動回饋音效時，介面可能會變得更難使用。
 
-若要停用此衰減，請調整 **音量** 曲線。 在 **PressableButtonHoloLens2** 的 [偵測 **器** ] 窗格的 [ **音訊來源** ] 元件中，有一個稱為 **3d 音效設定** 的區段。 在該區段中：
+若要停用此衰減，請調整 **音量** 曲線。 在 **PressableButtonHoloLens2** 的 [偵測 **器**] 窗格的 [**音訊來源**] 元件中，有一個稱為 **3d 音效設定** 的區段。 在該區段中：
 1. 將 **Volume Rolloff** 屬性設定為線性
 2. 拖曳 **音量** 曲線上的端點 (紅色曲線) 從 y 軸上的 ' 0 ' 到 ' 1 '
 3. 若要將 **音量** 曲線的形狀調整為平面，請將白色曲線圖形控制項平行地拖曳至 X 軸
 
-這些變更之後， **PressableButtonHoloLens2** **音訊來源** 屬性的 [ **3d 音效設定** ] 區段看起來會像這樣：
+這些變更之後， **PressableButtonHoloLens2** **音訊來源** 屬性的 [ **3d 音效設定**] 區段看起來會像這樣：
 
 ![按鈕3D 音效設定](images/spatial-audio/button-3d-sound-settings.png)
+
+## <a name="testing-the-spatialize-audio"></a>測試 spatialize 音訊
+
+您可以隨意測試新的 hrtf 按鈕互動音效：
+
+* 在 Unity 編輯器中輸入遊戲模式，最好是場景中的迴圈音訊範例
+* 從左至右移動物件與音訊來源，並比較是否已啟用空間音訊。 您可以透過下列方式變更要測試的音訊來源設定：
+    * 將空間 Blend 屬性移至 0-1 (2D 非 hrtf 和 3D hrtf 音效) 
+    * 檢查和取消選取 Spatialize 屬性
 
 ## <a name="next-steps"></a>後續步驟
 

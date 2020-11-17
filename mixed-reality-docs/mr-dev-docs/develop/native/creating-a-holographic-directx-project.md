@@ -5,18 +5,18 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality，全像應用程式、新的應用程式、UWP 應用程式、範本應用程式、全像投影、新專案、逐步解說、下載、範例程式碼
-ms.openlocfilehash: 3cca7cedfcf90299049653426a497abbd2dede74
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality，全像攝影應用程式、新的應用程式、UWP 應用程式、範本應用程式、全像投影、新專案、逐步解說、下載、範例程式碼、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 08adbf6a4148e0e1d3b808d993011a7407fbf086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679372"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678127"
 ---
 # <a name="creating-a-holographic-directx-project"></a>建立全像攝影 DirectX 專案
 
 > [!NOTE]
-> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)** 。
+> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
 您為 HoloLens 建立的全像攝影應用程式將會是 <a href="https://docs.microsoft.com/windows/uwp/get-started/universal-application-platform-guide" target="_blank">通用 Windows 平臺 (UWP) 應用程式</a>。  如果以桌面為目標 Windows Mixed Reality 耳機，您可以建立 UWP 應用程式或 Win32 應用程式。
 
@@ -39,33 +39,33 @@ DirectX 11 全像 UWP 應用程式範本非常類似于 DirectX 11 UWP 應用程
 [安裝工具](../install-the-tools.md)之後，您就可以建立全像的 DirectX UWP 專案。
 
 若要在 Visual Studio 2019 中建立新專案：
-1. 開始 **Visual Studio** 。
-2. 在右邊的 **開始** 區段中，選取 [ **建立新專案** ]。
-3. 在 [ **建立新專案** ] 對話方塊的下拉式功能表中，選取 [ **c + +** ]、[ **Windows Mixed Reality** ] 和 [ **UWP** ]。
-4. 選取 **(通用 Windows)  (c + +/WinRT) 的全像 DirectX 11 應用程式** 。
+1. 開始 **Visual Studio**。
+2. 在右邊的 **開始** 區段中，選取 [ **建立新專案**]。
+3. 在 [ **建立新專案** ] 對話方塊的下拉式功能表中，選取 [ **c + +**]、[ **Windows Mixed Reality**] 和 [ **UWP**]。
+4. 選取 **(通用 Windows)  (c + +/WinRT) 的全像 DirectX 11 應用程式**。
    ![Visual Studio 2019 中全像 DirectX 11 c + +/WinRT UWP 應用程式專案範本的螢幕擷取畫面](images/holographic-directx-app-cpp-new-project-2019.png)<br>
    *Visual Studio 2019 的全像 DirectX 11 c + +/WinRT UWP 應用程式專案範本*
    >[!IMPORTANT]
    >請確定專案範本的名稱包含 " (c + +/WinRT) "。  如果沒有，則會安裝較舊版本的全像攝影專案範本。  若要取得最新的專案範本，請將 [其安裝](../install-the-tools.md) 為 Visual Studio 2019 的擴充功能。
-5. 按一下 [下一步]。
-5. 填寫 [ **專案名稱** ] 和 [ **位置** ] 文字方塊，然後按一下或按一下 [ **建立** ]。 建立全像應用程式專案。
-6. 針對僅限 HoloLens 2 的開發目標，請確定 **目標版本** 和 **最低版本** 都設為 **Windows 10 1903 版** 。  如果您也以 HoloLens (第一代) 或桌面 Windows Mixed Reality 耳機，則可以將 **最低版本** 設定為 **Windows 10 版本 1809** ，不過在使用 HoloLens 2 的新功能時，您的程式碼中將會需要一些 <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">版本的自我調整檢查</a> 。
+5. 按 [下一步] 。
+5. 填寫 [ **專案名稱** ] 和 [ **位置** ] 文字方塊，然後按一下或按一下 [ **建立**]。 建立全像應用程式專案。
+6. 針對僅限 HoloLens 2 的開發目標，請確定 **目標版本** 和 **最低版本** 都設為 **Windows 10 1903 版**。  如果您也以 HoloLens (第一代) 或桌面 Windows Mixed Reality 耳機，則可以將 **最低版本** 設定為 **Windows 10 版本 1809** ，不過在使用 HoloLens 2 的新功能時，您的程式碼中將會需要一些 <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">版本的自我調整檢查</a> 。
    ![將 Windows 10 1903 版設定為目標和最小版本的螢幕擷取畫面](images/new-uwp-project.png)<br>
    *將 **Windows 10 1903 版** 設定為目標和最小版本*
    >[!IMPORTANT]
    >如果您沒有看到 **Windows 10，版本 1903** 是一個選項，則未安裝最新的 Windows 10 SDK。  若要讓此選項出現，請 <a href="https://developer.microsoft.com/windows/downloads/windows-10-sdk" target="_blank">安裝 WINDOWS 10 SDK 的版本10.0.18362.0 或更新版本</a>。
 
 若要在 Visual Studio 2017 中建立新專案：
-1. 開始 **Visual Studio** 。
-2. **在 [檔案] 功能表中** ，指向 [ **新增** ]，然後從內容功能表中選取 [ **專案** ]。 [新增專案]  對話方塊隨即開啟。
+1. 開始 **Visual Studio**。
+2. **在 [檔案] 功能表中**，指向 [**新增**]，然後從內容功能表中選取 [**專案**]。 [新增專案]  對話方塊隨即開啟。
 3. 展開左側的 [ **已安裝** ]，然後展開 **Visual C++** 語言節點。
-4. 流覽至 [ **Windows 通用 >** 全像] 節點，然後選取 [全像] **DirectX 11 應用程式 (通用 Windows)  (c + +/WinRT])** 。
+4. 流覽至 [ **Windows 通用 >** 全像] 節點，然後選取 [全像] **DirectX 11 應用程式 (通用 Windows)  (c + +/WinRT])**。
    ![Visual Studio 2017 中全像 DirectX 11 c + +/WinRT UWP 應用程式專案範本的螢幕擷取畫面](images/holographic-directx-app-cpp-new-project.png)<br>
    *Visual Studio 2017 的全像 DirectX 11 c + +/WinRT UWP 應用程式專案範本*
    >[!IMPORTANT]
    >請確定專案範本的名稱包含 " (c + +/WinRT) "。  如果沒有，則會安裝較舊版本的全像攝影專案範本。  若要取得最新的專案範本，請將 [其安裝](../install-the-tools.md) 為 Visual Studio 2017 的擴充功能。
-5. 填寫 [ **名稱** ] 和 [ **位置** ] 文字方塊，然後按一下或按 **[確定]** 。 建立全像應用程式專案。
-6. 針對僅限 HoloLens 2 的開發目標，請確定 **目標版本** 和 **最低版本** 都設為 **Windows 10 1903 版** 。  如果您也以 HoloLens (第一代) 或桌面 Windows Mixed Reality 耳機，則可以將 **最低版本** 設定為 **Windows 10 版本 1809** ，不過在使用 HoloLens 2 的新功能時，您的程式碼中將會需要一些 <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">版本的自我調整檢查</a> 。
+5. 填寫 [ **名稱** ] 和 [ **位置** ] 文字方塊，然後按一下或按 **[確定]**。 建立全像應用程式專案。
+6. 針對僅限 HoloLens 2 的開發目標，請確定 **目標版本** 和 **最低版本** 都設為 **Windows 10 1903 版**。  如果您也以 HoloLens (第一代) 或桌面 Windows Mixed Reality 耳機，則可以將 **最低版本** 設定為 **Windows 10 版本 1809** ，不過在使用 HoloLens 2 的新功能時，您的程式碼中將會需要一些 <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">版本的自我調整檢查</a> 。
    ![將 Windows 10 1903 版設定為目標和最小版本的螢幕擷取畫面](images/new-uwp-project.png)<br>
    *將 **Windows 10 1903 版** 設定為目標和最小版本*
    >[!IMPORTANT]
@@ -83,7 +83,7 @@ DirectX 11 全像 UWP 應用程式範本非常類似于 DirectX 11 UWP 應用程
 
 您的全像 UWP 應用程式會在 AppView 中的 **wWinMain** 函式開始。 **WWinMain** 函式會建立應用程式的 <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.iframeworkview" target="_blank">IFrameworkView</a> ，並使用它來啟動 <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.core.coreapplication" target="_blank">CoreApplication</a> 。
 
-從 **AppView .cpp** ：
+從 **AppView .cpp**：
 
 ```cpp
 // The main function bootstraps into the IFrameworkView.
@@ -107,7 +107,7 @@ int __stdcall wWinMain(HINSTANCE, HINSTANCE, PWSTR, int)
 
 您的全像 Win32 應用程式會在 AppMain 中的 **wWinMain** 函式開始。 **WWinMain** 函式會建立應用程式的 HWND，並啟動其訊息迴圈。
 
-從 **AppMain .cpp** ：
+從 **AppMain .cpp**：
 
 ```cpp
 int APIENTRY wWinMain(
@@ -177,9 +177,9 @@ int APIENTRY wWinMain(
 
 中 **Render** 的轉譯方法 `AppMain.cpp` 會接受 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> ，並根據目前的應用程式和空間定位狀態，將目前的畫面格轉譯為每個全像攝影相機。
 
-## <a name="notes"></a>注意
+## <a name="notes"></a>備註
 
-Windows Mixed Reality 應用程式範本現在支援使用已啟用 Spectre 防護旗標的編譯 (/Qspectre) 。 在編譯設定並啟用 Spectre 緩和功能之前，請務必先安裝 Spectre 緩和版的 Microsoft Visual C++ (MSVC) 執行時間程式庫。 若要安裝 Spectre 降低的 c + + 程式庫，請啟動 Visual Studio 安裝程式，然後選取 [ **修改** ]。 流覽至 **個別元件** ，並搜尋 "spectre"。 選取對應至您需要編譯 Spectre 緩和程式碼之目標平臺和 MSVC 版本的方塊，然後按一下 [ **修改** ] 開始安裝。
+Windows Mixed Reality 應用程式範本現在支援使用已啟用 Spectre 防護旗標的編譯 (/Qspectre) 。 在編譯設定並啟用 Spectre 緩和功能之前，請務必先安裝 Spectre 緩和版的 Microsoft Visual C++ (MSVC) 執行時間程式庫。 若要安裝 Spectre 降低的 c + + 程式庫，請啟動 Visual Studio 安裝程式，然後選取 [ **修改**]。 流覽至 **個別元件** ，並搜尋 "spectre"。 選取對應至您需要編譯 Spectre 緩和程式碼之目標平臺和 MSVC 版本的方塊，然後按一下 [ **修改** ] 開始安裝。
 
 ## <a name="see-also"></a>另請參閱
 * [取得 HolographicSpace](getting-a-holographicspace.md)

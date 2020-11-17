@@ -5,13 +5,13 @@ author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、全息全像、穩定、個案研究
-ms.openlocfilehash: 4eb61cb37ef087dc5fbeb6b4ef6ca1c507719205
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、全息全像、穩定、個案研究、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679317"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679607"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>個案研究-使用穩定平面減少全像 turbulence
 

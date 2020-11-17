@@ -1,17 +1,17 @@
 ---
-title: MR 輸入 211-手勢
+title: MR Input 211 - 手勢
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習手勢概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學院、教學課程、手勢
-ms.openlocfilehash: 0d3057cb1751a3bc429ed1ccf520b451110f64b4
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、手勢、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680636"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678287"
 ---
 # <a name="mr-input-211-gesture"></a>MR Input 211：手勢
 
@@ -29,7 +29,7 @@ ms.locfileid: "91680636"
 * 當使用者的手即將消失時，請提供意見反應。
 * 使用操作事件，讓使用者能夠以手移入全像移動影像。
 
-在此課程中，我們將重新流覽 Unity 專案 **模型瀏覽器** ，這是我們在 [MR 輸入 210](holograms-210.md)中建立的。 我們太空人的朋友會回頭協助我們探索這些新的手勢概念。
+在此課程中，我們將重新流覽 Unity 專案 **模型瀏覽器**，這是我們在 [MR 輸入 210](holograms-210.md)中建立的。 我們太空人的朋友會回頭協助我們探索這些新的手勢概念。
 
 >[!IMPORTANT]
 >下列各章節中內嵌的影片是使用較舊版本的 Unity 和混合現實工具組所記錄。 雖然逐步指示是正確且最新的，但您可能會在相對應的影片中看到已過期的腳本和視覺效果。 影片仍隨附于 posterity，因為所涵蓋的概念仍然適用。
@@ -46,7 +46,7 @@ ms.locfileid: "91680636"
 
 ## <a name="before-you-start"></a>開始之前
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>先決條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。
@@ -64,27 +64,27 @@ ms.locfileid: "91680636"
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
-* 您必須在 [工具]-[>選項] 下的 Visual Studio 中停用 [啟用 Just My Code] ( *未* 核取) ，才能在程式碼中叫用中斷點。
+* 您必須在 [工具]-[>選項] 下的 Visual Studio 中停用 [啟用 Just My Code] (*未* 核取) ，才能在程式碼中叫用中斷點。
 
 ## <a name="chapter-0---unity-setup"></a>第0章-Unity 設定
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 1. 啟動 Unity。
-2. 選取 [開啟]。
+2. 選取 [開啟]  。
 3. 流覽至您先前取消封存的 **手勢** 資料夾。
-4. 尋找並選取 [ **啟動** / **模型瀏覽器** ] 資料夾。
+4. 尋找並選取 [**啟動** / **模型瀏覽器**] 資料夾。
 5. 按一下 [ **選取資料夾** ] 按鈕。
 6. 在 [ **專案** ] 面板中，展開 [ **場景** ] 資料夾。
 7. 按兩下 [ **ModelExplorer** 場景]，以在 Unity 中載入。
 
 ### <a name="building"></a>建置
 
-1. 在 Unity 中，選取 [ **File > Build Settings** ]。
+1. 在 Unity 中，選取 [ **File > Build Settings**]。
 2. 如果 **場景/ModelExplorer** 未列在 **組建的場景** 中，請按一下 [ **新增開啟場景** ] 以加入場景。
-3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens** 。 否則，請將它保留在 **任何裝置** 上。
+3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
 4. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
-5. 按一下 [建置]  。
+5. 按一下 [建置]。
 6. 建立名為 "App" 的 **新資料夾** 。
 7. 按一下 **應用程式** 資料夾。
 8. 按下 [ **選取資料夾** ]，Unity 就會開始建立 Visual Studio 的專案。
@@ -92,21 +92,21 @@ ms.locfileid: "91680636"
 當 Unity 完成時，將會出現檔案總管視窗。
 
 1. 開啟 **應用程式** 資料夾。
-2. 開啟 **ModelExplorer Visual Studio 方案** 。
+2. 開啟 **ModelExplorer Visual Studio 方案**。
 
 如果要部署到 HoloLens：
 
-1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86** 。
-2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦** ]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)** 。 按一下 [選取]。  如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項** 。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
+2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
+3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 5. 部署應用程式之後，請使用 **選取手勢** 來關閉 **Fitbox** 。
 
 如果部署到沉浸式耳機：
 
-1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x64** 。
-2. 請確定部署目標設定為 [ **本機電腦** ]。
-3. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。
+1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x64**。
+2. 請確定部署目標設定為 [ **本機電腦**]。
+3. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
 4. 部署應用程式之後，請在動作控制器上提取觸發程式來關閉 **Fitbox** 。
 
 >[!NOTE]
@@ -124,9 +124,9 @@ ms.locfileid: "91680636"
 >[!NOTE]
 >在 HoloLens 2 上，只要手指出現時，就會引發 (，而不只是手指指向) 。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-* **在 [階層] 面板中** ，展開 [ **InputManager** ] 物件。
+* **在 [階層] 面板中**，展開 [ **InputManager** ] 物件。
 * 尋找並選取 [ **GesturesInput** ] 物件。
 
 **InteractionInputSource.cs** 腳本會執行這些步驟：
@@ -137,11 +137,11 @@ ms.locfileid: "91680636"
 
 接下來，我們會根據使用者的動作，將我們的資料指標從 [MR 輸入 210](holograms-210.md) 升級為一個顯示意見反應的資料指標。
 
-1. **在 [階層** ] 面板中，選取資料 **指標** 物件，並將其刪除。
+1. **在 [階層**] 面板中，選取資料 **指標** 物件，並將其刪除。
 2. 在 [ **專案** ] 面板中，搜尋 **CursorWithFeedback** ，然後將它拖曳 **至 [階層** ] 面板中。
 3. 按一下 [階層 **] 面板中的 [** **InputManager** ]，然後將 [ **CursorWithFeedback** ] 物件從階層 **拖曳至偵測****器** 底部的 InputManager **SimpleSinglePointerSelector** 資料 **指標** 欄位中。
 4. 按一下階層 **中的** **CursorWithFeedback** 。
-5. 在 [偵測 **器** ] 面板中，展開物件資料 **指標** 腳本上的 **資料指標狀態資料** 。
+5. 在 [偵測 **器**] 面板中，展開物件資料 **指標** 腳本上的 **資料指標狀態資料**。
 
 **資料指標狀態資料** 的運作方式如下：
 
@@ -153,9 +153,9 @@ ms.locfileid: "91680636"
 
 * 在 Unity 中，使用檔案 **> 組建設定** 來重建應用程式。
 * 開啟 **應用程式** 資料夾。
-* 如果尚未開啟，請開啟 **ModelExplorer Visual Studio 方案** 。
+* 如果尚未開啟，請開啟 **ModelExplorer Visual Studio 方案**。
   *  (如果您已在安裝期間于 Visual Studio 中建立或部署此專案，則您可以開啟 VS 的實例，然後在出現) 提示時按一下 [全部重載]。
-* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5** 。
+* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
 * 將應用程式部署到 HoloLens 之後，請使用 [點一下手勢] 來關閉 fitbox。
 * 將您的手移至視野，並將您的索引手指指向天空以開始進行追蹤。
 * 將您的手靠左、靠右、向上和向下移動。
@@ -170,26 +170,26 @@ ms.locfileid: "91680636"
 
 * 使用導覽手勢事件來旋轉太空人。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 若要在我們的應用程式中使用導覽手勢，我們將會在導覽手勢發生時，編輯 **GestureAction.cs** 來旋轉物件。 此外，我們會將意見反應新增至游標，以在流覽可供使用時顯示。
 
-1. **在 [階層** ] 面板中，展開 [ **CursorWithFeedback** ]。
+1. **在 [階層**] 面板中，展開 [ **CursorWithFeedback**]。
 2. 在 [全像 **] 資料夾中** ，尋找 **ScrollFeedback** 資產。
 3. 將 **ScrollFeedback** 預製專案拖放到階層中的 **CursorWithFeedback** **GameObject。**
-4. 按一下 [ **CursorWithFeedback** ]。
+4. 按一下 [ **CursorWithFeedback**]。
 5. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
-6. 在功能表的 [搜尋] 方塊中，輸入 **CursorFeedback** 。 選取搜尋結果。
-7. 從階層中，將 **ScrollFeedback** **物件拖放至偵測****器** 中 **游標回饋** 元件的 [ **Scroll 偵測到的遊戲物件** ] 屬性。
-8. **在 [階層] 面板中** ，選取 [ **AstroMan** ] 物件。
+6. 在功能表的 [搜尋] 方塊中，輸入 **CursorFeedback**。 選取搜尋結果。
+7. 從階層中，將 **ScrollFeedback** **物件拖放至偵測****器** 中 **游標回饋** 元件的 [ **Scroll 偵測到的遊戲物件**] 屬性。
+8. **在 [階層] 面板中**，選取 [ **AstroMan** ] 物件。
 9. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
-10. 在功能表中，輸入搜尋方塊的 **手勢動作** 。 選取搜尋結果。
+10. 在功能表中，輸入搜尋方塊的 **手勢動作**。 選取搜尋結果。
 
 接下來，在 Visual Studio 中開啟 **GestureAction.cs** 。 在編碼練習 2. c 中，編輯腳本以執行下列動作：
 
 1. 每當執行導覽手勢時 **，旋轉 AstroMan** 物件。
 2. 計算 **rotationFactor** 以控制套用至物件的旋轉量。
-3. 當使用者向左或向右移動時，旋轉 y 軸周圍的 **物件** 。
+3. 當使用者向左或向右移動時，旋轉 y 軸周圍的 **物件**。
 
 在腳本中完成編碼練習 2. c，或以下列完成的解決方案取代程式碼：
 
@@ -314,13 +314,13 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 使用 **手動指引分數** 來協助預測何時會遺失手動追蹤。
 * 提供資料 **指標的意見** 反應，以在使用者的手中接近相機的視圖邊緣時顯示。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-1. **在 [階層] 面板中** ，選取 [ **CursorWithFeedback** ] 物件。
+1. **在 [階層] 面板中**，選取 [ **CursorWithFeedback** ] 物件。
 2. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
-3. 在功能表中，輸入搜尋方塊 **手動指引** 。 選取搜尋結果。
+3. 在功能表中，輸入搜尋方塊 **手動指引**。 選取搜尋結果。
 4. 在 [ **專案** ] **面板的** [全像] 資料夾中，尋找 **HandGuidanceFeedback** 資產。
-5. 將 **HandGuidanceFeedback** 資產拖放到 [偵測 **器** ] 面板中的 [ **手形指導指標** ] 屬性。
+5. 將 **HandGuidanceFeedback** 資產拖放到 [偵測 **器**] 面板中的 [**手形指導指標**] 屬性。
 
 ### <a name="build-and-deploy"></a>建置和部署
 
@@ -339,28 +339,28 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 使用操作事件以您的手移太空人。
 * 提供資料指標的意見反應，讓使用者知道可以使用操作的時機。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
 
-1. 使用語音關鍵字 " **Move 太空人** " 來啟用 **操作** 手勢和「 **旋轉太空人** 」以停用它們。
-2. 切換以回應 **操作手勢辨識器** 。
+1. 使用語音關鍵字 "**Move 太空人**" 來啟用 **操作** 手勢和「**旋轉太空人**」以停用它們。
+2. 切換以回應 **操作手勢辨識器**。
 
-讓我們開始這次的教學。
+現在就開始吧。
 
-1. **在 [階層** ] 面板中，建立新的空白 GameObject。 將它命名為 " **AstronautManager** "。
+1. **在 [階層**] 面板中，建立新的空白 GameObject。 將它命名為 "**AstronautManager**"。
 2. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
-3. 在功能表中，于 [搜尋 box **太空人管理員** ] 中輸入。 選取搜尋結果。
+3. 在功能表中，于 [搜尋 box **太空人管理員**] 中輸入。 選取搜尋結果。
 4. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
-5. 在功能表中，輸入搜尋方塊 **語音輸入來源** 。 選取搜尋結果。
+5. 在功能表中，輸入搜尋方塊 **語音輸入來源**。 選取搜尋結果。
 
 我們現在會新增控制太空人互動狀態所需的語音命令。
 
-1. 展開 [ **檢查** ] 中的 [ **關鍵字** ] 區段。
+1. 展開 [**檢查**] 中的 [**關鍵字**] 區段。
 2. 按一下右側的， **+** 以加入新的關鍵字。
-3. 輸入關鍵字做為 **移動太空人** 。 如有需要，請隨意新增按鍵快捷方式。
+3. 輸入關鍵字做為 **移動太空人**。 如有需要，請隨意新增按鍵快捷方式。
 4. 按一下右側的， **+** 以加入新的關鍵字。
-5. 將關鍵字輸入為 **旋轉太空人** 。 如有需要，請隨意新增按鍵快捷方式。
+5. 將關鍵字輸入為 **旋轉太空人**。 如有需要，請隨意新增按鍵快捷方式。
 6. 對應的處理常式程式碼可以在 **GestureAction.cs** 的 **ISpeechHandler. OnSpeechKeywordRecognized** 處理常式中找到。
 
 ![如何設定第4章的語音輸入來源](images/holograms211-speech.png)
@@ -369,8 +369,8 @@ GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
 
 1. 在 [ **專案** ] **面板的** [全像] 資料夾中，尋找 **PathingFeedback** 資產。
 2. 將 **PathingFeedback** 預製專案拖放到階層中的 **CursorWithFeedback** **物件。**
-3. **在 [階層** ] 面板中，按一下 [ **CursorWithFeedback** ]。
-4. 從階層中，將 **PathingFeedback** **物件拖放至偵測****器** 的 [資料 **指標意見** ] 元件中的 [偵測 **到的遊戲物件** ] 屬性。
+3. **在 [階層**] 面板中，按一下 [ **CursorWithFeedback**]。
+4. 從階層中，將 **PathingFeedback** **物件拖放至偵測****器** 的 [資料 **指標意見**] 元件中的 [偵測 **到的遊戲物件**] 屬性。
 
 現在，我們需要將程式碼新增至 **GestureAction.cs** ，以啟用下列各項：
 
@@ -378,7 +378,7 @@ GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
 2. 計算 **移動向量** ，以根據手上的位置決定應將太空人移至何處。
 3. **將太空人移** 至新的位置。
 
-完成編碼練習 4. **GestureAction.cs** ，或使用我們完成的解決方案：
+完成編碼練習 4. **GestureAction.cs**，或使用我們完成的解決方案：
 
 ```cs
 using HoloToolkit.Unity.InputModule;
@@ -506,36 +506,36 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 * 將太空人模型擴充為多個較小的片段，讓使用者可以與之互動。
 * 使用導覽和操作手勢來個別移動每個片段。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 在本節中，我們將完成下列工作：
 
-1. 加入新的關鍵字「 **展開模型** 」以展開太空人模型。
-2. 加入新的關鍵字 [ **重設模型** ]，將模型傳回至其原始表單。
+1. 加入新的關鍵字「**展開模型**」以展開太空人模型。
+2. 加入新的關鍵字 [**重設模型**]，將模型傳回至其原始表單。
 
 我們會藉由將兩個以上的關鍵字新增至上一章中的語音輸入來源來完成這項作業。 我們也將示範另一個處理辨識事件的方式。
 
-1. 在 [偵測 **器** ] 中按一下 [上一步]，然後在 [ **檢查** **] 中展開** [ **關鍵字** ] 區段。
+1. 在 [偵測 **器**] 中按一下 [上一步]，然後在 [**檢查** **] 中展開**[**關鍵字**] 區段。
 2. 按一下右側的， **+** 以加入新的關鍵字。
-3. 輸入關鍵字做為 **展開模型** 。 如有需要，請隨意新增按鍵快捷方式。
+3. 輸入關鍵字做為 **展開模型**。 如有需要，請隨意新增按鍵快捷方式。
 4. 按一下右側的， **+** 以加入新的關鍵字。
-5. 輸入關鍵字做為 **重設模型** 。 如有需要，請隨意新增按鍵快捷方式。
+5. 輸入關鍵字做為 **重設模型**。 如有需要，請隨意新增按鍵快捷方式。
 6. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
-7. 在功能表中，輸入搜尋方塊 **語音輸入處理常式** 。 選取搜尋結果。
-8. 檢查 **是否為全域接聽程式** ，因為我們想要讓這些命令運作，而不論我們所關注的 GameObject 為何。
+7. 在功能表中，輸入搜尋方塊 **語音輸入處理常式**。 選取搜尋結果。
+8. 檢查 **是否為全域接聽程式**，因為我們想要讓這些命令運作，而不論我們所關注的 GameObject 為何。
 9. 按一下該 **+** 按鈕，然後從 [關鍵字] 下拉式清單中選取 [ **展開模型** ]。
-10. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後 **Hierarchy** 將階層中的 [ **AstronautManager** ] 拖曳到 [ **無 (物件)** ] 欄位中。
-11. 現在，按一下 [ **沒有** 函式] 下拉式清單，選取 [ **AstronautManager** ]，然後按一下 [ **ExpandModelCommand** ]。
+10. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後 **Hierarchy** 將階層中的 [ **AstronautManager** ] 拖曳到 [**無 (物件)** ] 欄位中。
+11. 現在，按一下 [ **沒有** 函式] 下拉式清單，選取 [ **AstronautManager**]，然後按一下 [ **ExpandModelCommand**]。
 12. 按一下 [語音輸入處理常式 **+** ] 按鈕，然後從 [關鍵字] 下拉式清單中選取 [ **重設模型** ]。
-13. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後 **Hierarchy** 將階層中的 [ **AstronautManager** ] 拖曳到 [ **無 (物件)** ] 欄位中。
-14. 現在，按一下 [ **沒有** 函式] 下拉式清單，選取 [ **AstronautManager** ]，然後按一下 [ **ResetModelCommand** ]。
+13. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後 **Hierarchy** 將階層中的 [ **AstronautManager** ] 拖曳到 [**無 (物件)** ] 欄位中。
+14. 現在，按一下 [ **沒有** 函式] 下拉式清單，選取 [ **AstronautManager**]，然後按一下 [ **ResetModelCommand**]。
 
 ![如何設定第5章的語音輸入來源和處理常式](images/holograms211-speechhandler.png)
 
 ### <a name="build-and-deploy"></a>建置和部署
 
 * 試試看！ 建立應用程式，並將其部署到 HoloLens。
-* **展開 [展開模型** ] 以查看展開的太空人模型。
+* **展開 [展開模型**] 以查看展開的太空人模型。
 * 使用 **導覽** 來旋轉太空人花色的個別部分。
 * 假設 **Move 太空人** ，然後使用 **操作** 來移動太空人花色的個別部分。
 * 例如， **旋轉太空人** 可再次旋轉零件。
@@ -543,7 +543,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ## <a name="the-end"></a>結束
 
-恭喜！ 您現在已完成 **MR 輸入211：手勢** 。
+恭喜！ 您現在已完成 **MR 輸入211：手勢**。
 
 * 您知道如何偵測和回應手動追蹤、流覽和操作事件。
 * 您瞭解導覽和操作手勢之間的差異。

@@ -5,13 +5,13 @@ author: cjdgit
 ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 應用程式品質準則，混合現實，混合現實應用程式
-ms.openlocfilehash: 96d446e1f6f5649f842d674ea4692d619894cc32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 應用程式品質準則、混合現實、混合現實應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: c18f4e8470f7f183fdf250472fd3a977f925dfbf
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679320"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677987"
 ---
 # <a name="app-quality-criteria"></a>應用程式品質準則
 

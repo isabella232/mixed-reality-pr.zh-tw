@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 12/01/2019
 ms.topic: article
-keywords: 混合現實、unity、教學課程、hololens2、空間音訊
-ms.openlocfilehash: cb9bfb03da864c78784c288f4d7c4190461cd838
-ms.sourcegitcommit: d8f39c0b95d9e61d645d64f27baabc7a1c300dc1
+keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
+ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/21/2020
-ms.locfileid: "92293165"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678206"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>在執行時間啟用和停用 spatialization
 
@@ -87,7 +87,7 @@ public class SpatializeOnOff : MonoBehaviour
 
 > [!NOTE]
 > 若要啟用或停用 spatialization，腳本只會調整 **spatialBlend** 屬性，並啟用 **spatialization** 屬性。 在此模式中，Unity 仍會套用 **音量** 曲線。 否則，如果使用者從來源到目前為止都要停用 spatialization，他們會聽到大量增加。 <br> <br>
-> 如果您想要完全停用 spatialization，請修改腳本，以同時調整**SourceObject**變數的**spatialization**布林值屬性。
+> 如果您想要完全停用 spatialization，請修改腳本，以同時調整 **SourceObject** 變數的 **spatialization** 布林值屬性。
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>附加您的腳本，並從按鈕進行驅動
 在 [] 的 [偵測 **器** ] 窗格 **中，按一下**[ **新增元件** ]，然後在 [關閉] 腳本 **上新增 Spatialize** ：
@@ -95,18 +95,18 @@ public class SpatializeOnOff : MonoBehaviour
 ![將腳本新增至四個](images/spatial-audio/add-script-to-quad.png)
 
 在 [ **Spatialize on** ] 元件的 [ **四**：
-1. 尋找階層中的**PressableButtonHoloLens2-> IconAndText > TextMeshPro** **主旨：**
+1. 尋找階層中的 **PressableButtonHoloLens2-> IconAndText > TextMeshPro** **主旨：**
 
 ![尋找階層中的 PressableButtonHoloLens2 物件](images/spatial-audio/pressable-button-object.png)
 
-2. 將**TextMeshPro**主體拖曳至**Spatialize On**元件的**ButtonTextObject**欄位
+2. 將 **TextMeshPro** 主體拖曳至 **Spatialize On** 元件的 **ButtonTextObject** 欄位
 
-這些變更之後，**四個四**個**Spatialize 的關閉**元件看起來會像這樣：
+這些變更之後，**四個四** 個 **Spatialize 的關閉** 元件看起來會像這樣：
 
 ![Spatialize on basic](images/spatial-audio/spatialize-on-off-basic.png)
 
-若要在放開按鈕時設定按鈕以呼叫**Spatialize On** script，請開啟**PressableButtonHoloLens2**物件的 [偵測**器**] 窗格，尋找**互動**元件，然後：
-1. 尋找**事件**子區段的**OnClick ( # B1**區域
+若要在放開按鈕時設定按鈕以呼叫 **Spatialize On** script，請開啟 **PressableButtonHoloLens2** 物件的 [偵測 **器**] 窗格，尋找 **互動** 元件，然後：
+1. 尋找 **事件** 子區段的 **OnClick ( # B1** 區域
 2. 將 **四** 個從階層 **拖曳至目標** 物件位置。
 3. 從 [動作] 下拉式清單方塊中選取 [ **SpatializeOnOff. SwapSpatialization** ]。
 

@@ -1,19 +1,19 @@
 ---
-title: 更新混合實境的 2D UWP 應用程式
+title: 針對混合現實更新 2D UWP 應用程式
 description: 本文概述如何更新您現有的2D 通用 Windows 平臺應用程式，以在 HoloLens 和 Windows Mixed Reality 沉浸式耳機上執行。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D 應用程式、UWP、平面應用程式、HoloLens、沉浸式耳機、應用程式模型、上一頁按鈕、應用程式行、DPI、解析度、縮放
-ms.openlocfilehash: af262527c957dda57f0c8a3252a2f63207d6ca39
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 2D 應用程式、UWP、平面應用程式、HoloLens、沉浸式耳機、應用程式模型、上一頁按鈕、應用程式行、DPI、解析度、縮放、移植、HoloLens 1 代、HoloLens 2、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10
+ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679140"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677797"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>更新混合實境的 2D UWP 應用程式
+# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>針對混合現實更新 2D UWP 應用程式
 
 Windows Mixed Reality 可讓使用者在您的實體或數位世界中看到像是您一樣的全像投影。 在其核心中，您將沉浸式耳機配件附加至的 HoloLens 和桌上型電腦都是 Windows 10 的裝置;這表示您可以在存放區中執行幾乎所有通用 Windows 平臺 (UWP) 應用程式作為2D 應用程式。
 
@@ -69,16 +69,16 @@ Windows Mixed Reality 可讓使用者在您的實體或數位世界中看到像�
   ```
 * 救！
 
-如果您沒有針對開發環境使用 Visual Studio，可以在您選擇的文字編輯器中開啟 **AppXManifest.xml** ，以確保您的目標是 **Windows 通用** *y* 。
+如果您沒有針對開發環境使用 Visual Studio，可以在您選擇的文字編輯器中開啟 **AppXManifest.xml** ，以確保您的目標是 **Windows 通用** *y*。
 
 ### <a name="run-in-the-hololens-emulator"></a>在 HoloLens 模擬器中執行
 
 現在，您的 UWP 應用程式是以 "Windows 通用" 為目標，讓我們建立您的應用程式，並在 [HoloLens 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md)中執行它。
-* 請確定您已[安裝 HoloLens 模擬器](../install-the-tools.md)。
+* 請確定您已 [安裝 HoloLens 模擬器](../install-the-tools.md) 。
 * 在 Visual Studio 中，選取應用程式的 **x86** 組建設定
 
   ![Visual Studio 中的 x86 組建設定](../platform-capabilities-and-apis/images/x86setting.png)<br>
-* 在 [部署目標] 下拉式功能表中選取 **HoloLens 模擬器**
+* 在 [部署目標] 下拉式功能表中，選取 [HoloLens 模擬器] 
 
   ![部署目標清單中的 HoloLens 模擬器](images/deployemulator-500px.png)<br>
 * 選取 [ **Debug] > 開始調試** 程式，以部署您的應用程式並啟動偵錯工具。
@@ -98,7 +98,7 @@ Windows Mixed Reality 可讓使用者在您的實體或數位世界中看到像�
 ### <a name="running-your-uwp-app-in-the-debugger"></a>在偵錯工具中執行 UWP 應用程式
 
 這些步驟將逐步引導您使用 Visual Studio 偵錯工具來偵測 UWP 應用程式。
-* 如果您尚未這麼做，請在 Visual Studio 中開啟您的解決方案。 將目標變更為 **HoloLens 模擬器** ，並將組建設定變更為 **x86** 。
+* 如果您尚未這麼做，請在 Visual Studio 中開啟您的解決方案。 將目標變更為 **HoloLens 模擬器** ，並將組建設定變更為 **x86**。
 * 選取 [ **Debug] > 開始調試** 程式，以部署您的應用程式並啟動偵錯工具。
 * 使用滑鼠、鍵盤或 Xbox 控制器將應用程式放在世界各地。
 * Visual Studio 現在應該會在應用程式程式碼中的某處中斷。
@@ -116,7 +116,7 @@ Windows Mixed Reality 可讓使用者在您的實體或數位世界中看到像�
 
 ![從回應式設計](images/scale-500px.png)
 
-Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖元** 。 這表示，開發人員會依照 Windows 10 的人類介面指導方針來設計其 UI，以獲得有效的圖元，而 Windows 調整可確保這些有效的圖元在各裝置、解析度、DPI 等方面都是正確的大小。若要深入瞭解此[組建簡報](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)，請參閱[MSDN 上的這篇絕佳的閱讀](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx)。
+Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖元**。 這表示，開發人員會依照 Windows 10 的人類介面指導方針來設計其 UI，以獲得有效的圖元，而 Windows 調整可確保這些有效的圖元在各裝置、解析度、DPI 等方面都是正確的大小。若要深入瞭解此[組建簡報](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)，請參閱[MSDN 上的這篇絕佳的閱讀](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx)。
 
 即使有獨特的能力可將世界各地的應用程式放在不同的距離，建議使用類似電視的觀賞距離，以產生最佳的可讀性，並與注視/手勢互動。 因此，Mixed Reality 首頁中的虛擬平板會在下列位置顯示您的平面 UWP 視圖：
 
@@ -147,7 +147,7 @@ Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖
 
 **標題：** 顯示與應用程式實例相關聯之磚的 *displayname*
 
-[ **上一頁] 按鈕：** 按下時，會引發 *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* 事件。 [上一頁] 按鈕可見度是由 *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* 所控制。
+[**上一頁] 按鈕：** 按下時，會引發 *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* 事件。 [上一頁] 按鈕可見度是由 *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* 所控制。
 
 ![2D 應用程式視圖中的應用程式行 UI](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *2D 應用程式視圖中的應用程式行 UI*

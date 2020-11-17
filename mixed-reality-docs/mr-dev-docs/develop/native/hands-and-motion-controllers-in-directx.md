@@ -5,18 +5,18 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 手、移動控制器、directx、輸入、全息
-ms.openlocfilehash: faa9abe224b554c45cf0175b62da40c297122ad1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 手、移動控制器、directx、輸入、全像全像、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 3dcf3767a537ccc64cb06c6f44d765425a5578b9
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680380"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678057"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX 中的手部和運動控制器
 
 > [!NOTE]
-> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)** 。
+> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
 在 Windows Mixed Reality 中，會透過空間輸入 Api 來處理手和 [移動控制器](../../design/motion-controllers.md) 的輸入，這些都是在 [ [輸入](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial) ] 命名空間中找到。 這可讓您輕鬆地處理常見的動作，例如 **選取** 在雙手和移動控制器之間按相同方式。
 
@@ -69,7 +69,7 @@ void MyApp::OnSourcePressed(SpatialInteractionManager const& sender, SpatialInte
 ### <a name="polling-based-input"></a>以輪詢為基礎的輸入
 您也可以使用 SpatialInteractionManager 來輪詢每個畫面格中輸入的目前狀態。  若要這樣做，只要每個畫面格呼叫 [GetDetectedSourcesAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) 就可以了。  此函數會傳回陣列，其中包含每個使用中[SpatialInteractionSource](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource)的一個[SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) 。 這表示每個作用中的動作控制器都有一個，每個追蹤的手都有一個，而如果最近從未提到了 ' select ' 命令，則會有一個適用于語音。 然後，您可以檢查每個 SpatialInteractionSourceState 上的屬性，以將輸入驅動至您的應用程式。 
 
-以下是如何使用輪詢方法檢查「選取」動作的範例。 請注意， *預測* 變數代表可從 [HolographicFrame](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe)取得的 [HolographicFramePrediction](https://docs.microsoft.com//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction)物件。
+以下是如何使用輪詢方法檢查「選取」動作的範例。 請注意，*預測* 變數代表可從 [HolographicFrame](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe)取得的 [HolographicFramePrediction](https://docs.microsoft.com//uwp/api/Windows.Graphics.Holographic.HolographicFramePrediction)物件。
 
 ```cpp
 using namespace winrt::Windows::UI::Input::Spatial;
@@ -97,35 +97,35 @@ for (auto& sourceState : sourceStates)
 
 這會在每個畫面格的手和控制器呈現和鎖定時，產生下列最佳作法：
 * 針對呈現每個畫面格的 **手入/控制器** ，您的應用程式應該在目前畫面格的 photon 時間 **輪詢** 每個互動來源的 **向前預測** 姿勢。  您可以藉由呼叫 [GetDetectedSourcesAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getdetectedsourcesattimestamp) 每個畫面格，並傳入 [HolographicFrame：： CurrentPrediction](https://docs.microsoft.com//uwp/api/windows.graphics.holographic.holographicframe.currentprediction)所提供的預測時間戳記，來輪詢所有的互動來源。
-* 針對以按下或放開為目標的站上 **/控制器** ，您的應用程式應該處理已按下/已釋放的 **事件** ，並根據該事件的歷程 **記錄** 標頭或手 raycasting。 您可以藉由處理 [SourcePressed](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed) 或 [SourceReleased](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcereleased) 事件、從事件引數取得 [State](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) 屬性，然後呼叫其 [TryGetPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) 方法，取得此目標光線。
+* 針對以按下或放開為目標的站上 **/控制器** ，您的應用程式應該處理已按下/已釋放的 **事件**，並根據該事件的歷程 **記錄** 標頭或手 raycasting。 您可以藉由處理 [SourcePressed](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed) 或 [SourceReleased](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcereleased) 事件、從事件引數取得 [State](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) 屬性，然後呼叫其 [TryGetPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose) 方法，取得此目標光線。
 
 ## <a name="cross-device-input-properties"></a>跨裝置輸入屬性
 SpatialInteractionSource API 支援具有各式各樣功能的控制器和手追蹤系統。 裝置類型之間有許多常見的功能。 例如，手追蹤和移動控制器都提供「選取」動作和3D 位置。 API 盡可能將這些常見的功能對應至 SpatialInteractionSource 上的相同屬性。  這可讓應用程式更輕鬆地支援廣泛的輸入類型。 下表描述支援的屬性，以及它們如何在輸入類型之間進行比較。
 
-| 屬性 | 描述 | HoloLens (第1代) 手勢 | 移動控制器 | 明確表述的手|
+| 屬性 | 說明 | HoloLens (第1代) 手勢 | 移動控制器 | 明確表述的手|
 |--- |--- |--- |--- |--- |
-| [SpatialInteractionSource：： **Handedness**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | 右邊或左邊的/控制器。 | 不支援 | 支援 | 支援 |
-| [SpatialInteractionSourceState：： **IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | 主要按鈕的目前狀態。 | 分流 | 觸發程序 | 寬鬆的空中點 (垂直縮小)  |
-| [SpatialInteractionSourceState：： **IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | 抓取按鈕的目前狀態。 | 不支援 | 抓取按鈕 | 縮小或封閉手勢 |
-| [SpatialInteractionSourceState：： **IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | 功能表按鈕的目前狀態。    | 不支援 | 功能表按鈕 | 不支援 |
-| [SpatialInteractionSourceLocation：： **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | 控制器上手或把手位置的 XYZ 位置。 | 掌上位置 | 握住姿勢位置 | 掌上位置 |
-| [SpatialInteractionSourceLocation：： **取向**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | 四元數，代表控制器上的手或底姿勢的方向。 | 不支援 | 握住姿勢方向 | 掌上方向 |
-| [SpatialPointerInteractionSourcePose：： **Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | 指標光線的原點。 | 不支援 | 支援 | 支援 |
-| [SpatialPointerInteractionSourcePose：： **ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | 指標光線的方向。 | 不支援 | 支援 | 支援 |
+| [SpatialInteractionSource：：**Handedness**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.handedness) | 右邊或左邊的/控制器。 | 不支援 | 支援 | 支援 |
+| [SpatialInteractionSourceState：：**IsSelectPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isselectpressed) | 主要按鈕的目前狀態。 | 分流 | 觸發程序 | 寬鬆的空中點 (垂直縮小)  |
+| [SpatialInteractionSourceState：：**IsGrasped**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.isgrasped) | 抓取按鈕的目前狀態。 | 不支援 | 抓取按鈕 | 縮小或封閉手勢 |
+| [SpatialInteractionSourceState：：**IsMenuPressed**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.ismenupressed) | 功能表按鈕的目前狀態。    | 不支援 | 功能表按鈕 | 不支援 |
+| [SpatialInteractionSourceLocation：：**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.position) | 控制器上手或把手位置的 XYZ 位置。 | 掌上位置 | 握住姿勢位置 | 掌上位置 |
+| [SpatialInteractionSourceLocation：：**取向**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation.orientation) | 四元數，代表控制器上的手或底姿勢的方向。 | 不支援 | 握住姿勢方向 | 掌上方向 |
+| [SpatialPointerInteractionSourcePose：：**Position**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.position#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_Position) | 指標光線的原點。 | 不支援 | 支援 | 支援 |
+| [SpatialPointerInteractionSourcePose：：**ForwardDirection**](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose.forwarddirection#Windows_UI_Input_Spatial_SpatialPointerInteractionSourcePose_ForwardDirection) | 指標光線的方向。 | 不支援 | 支援 | 支援 |
 
 有些以上的屬性在所有裝置上都無法使用，而且 API 提供了測試此功能的方法。 例如，您可以檢查 [SpatialInteractionSource：： IsGraspSupported](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsource.isgraspsupported) 屬性，以判斷來源是否提供理解動作。
 
 ### <a name="grip-pose-vs-pointing-pose"></a>底姿勢與指標姿勢
 
-Windows Mixed Reality 支援各種外型規格中的動作控制器。  它也支援已明確表述的手追蹤系統。  這些系統中的所有系統都有不同的關聯性，也就是應用程式在使用者手中用來指向或呈現物件的自然「向前」方向之間的關聯性。  為了支援上述所有動作，有兩種類型的3D 表示提供給手追蹤和移動控制器。  第一個是代表使用者手位置的底框姿勢。  第二個是指向姿勢，代表源自于使用者手或控制器的指標光線。 因此，如果您想要轉譯 **使用者的手** 或 **保留在使用者手中的物件** （例如寶劍或機槍），請使用底框姿勢。 如果您想要從控制器或手 raycast （例如，當使用者 **指向 UI** 時），請使用指標姿勢。
+Windows Mixed Reality 支援各種外型規格中的動作控制器。  它也支援已明確表述的手追蹤系統。  這些系統中的所有系統都有不同的關聯性，也就是應用程式在使用者手中用來指向或呈現物件的自然「向前」方向之間的關聯性。  為了支援上述所有動作，有兩種類型的3D 表示提供給手追蹤和移動控制器。  第一個是代表使用者手位置的底框姿勢。  第二個是指向姿勢，代表源自于使用者手或控制器的指標光線。 因此，如果您想要轉譯 **使用者的手** 或 **保留在使用者手中的物件**（例如寶劍或機槍），請使用底框姿勢。 如果您想要從控制器或手 raycast （例如，當使用者 **指向 UI** 時），請使用指標姿勢。
 
-您可以透過 [SpatialInteractionSourceState：:P 屬性 r) ：： TryGetLocation ( ... )](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_)來存取此框 **姿勢** 。 其定義如下：
-* 把手 **位置** ：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
-* 底 **圖方向的右軸** ：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
-* 底圖 **方向的向前軸** ：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
-* 底圖 **方向的向上軸** ：右邊和向前定義所隱含的向上軸。
+您可以透過 [SpatialInteractionSourceState：:P 屬性 r) ：： TryGetLocation ( ... )](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourceproperties.trygetlocation#Windows_UI_Input_Spatial_SpatialInteractionSourceProperties_TryGetLocation_Windows_Perception_Spatial_SpatialCoordinateSystem_)來存取此框 **姿勢**。 其定義如下：
+* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
+* 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
+* 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
+* 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
 
-您可以透過 [SpatialInteractionSourceState：:P 屬性 r) ：： TryGetLocation ( ... ) ：： SourcePointerPose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose)或 [SpatialInteractionSourceState：： TryGetPointerPose ( ... ) ：： TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_)來存取 **指標姿勢** 。
+您可以透過 [SpatialInteractionSourceState：:P 屬性 r) ：： TryGetLocation ( ... ) ：： SourcePointerPose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcelocation#Windows_UI_Input_Spatial_SpatialInteractionSourceLocation_SourcePointerPose)或 [SpatialInteractionSourceState：： TryGetPointerPose ( ... ) ：： TryGetInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerpose#Windows_UI_Input_Spatial_SpatialPointerPose_TryGetInteractionSourcePose_Windows_UI_Input_Spatial_SpatialInteractionSource_)來存取 **指標姿勢**。
 
 ## <a name="controller-specific-input-properties"></a>控制器特定的輸入屬性
 針對控制器，SpatialInteractionSource 具有具有額外功能的控制器屬性。
@@ -149,10 +149,10 @@ Windows Mixed Reality API 會提供對已進行的明確追蹤支援，例如 Ho
 
 每個聯合都會提供下列資訊：
 
-| 名稱 | 描述 |
+| 名稱 | 說明 |
 |--- |--- |
 |位置 | 聯合的3D 位置，適用于任何要求的座標系統。 |
-|方向 | 適用于骨骼的3D 方向，適用于任何要求的座標系統。 |
+|Orientation | 適用于骨骼的3D 方向，適用于任何要求的座標系統。 |
 |半徑 | 面板在聯合位置的距離。 適用于微調依賴手指寬度的直接互動或視覺效果。 |
 |精確度 | 提供提示，告訴您系統如何確保系統對這種聯合資訊的感覺。 |
 

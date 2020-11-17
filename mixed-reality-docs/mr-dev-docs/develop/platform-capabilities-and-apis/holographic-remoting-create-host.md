@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 03/11/2020
 ms.topic: article
-keywords: HoloLens、遠端、全像攝影遠端
-ms.openlocfilehash: 7b2a0166fd7d239222f9742e0f5f2f6dfd3a7ffb
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、NuGet
+ms.openlocfilehash: 8494387b99352866632b46a98a449d173395b85d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683184"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677937"
 ---
 # <a name="writing-a-holographic-remoting-remote-app"></a>撰寫全像攝影遠端應用程式
 
@@ -24,7 +24,7 @@ ms.locfileid: "92683184"
 
 一般的遠端連線的延遲將會降到50毫秒。 播放程式應用程式可以即時報告延遲時間。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 良好的起點是以 Windows Mixed Reality API 為目標的可運作 DirectX 型桌面或 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 [C + + 全息版專案範本](../native/creating-a-holographic-directx-project.md)是不錯的起點。
 
@@ -37,10 +37,10 @@ ms.locfileid: "92683184"
 
 若要將 NuGet 套件新增至 Visual Studio 中的專案，必須執行下列步驟。
 1. 在 Visual Studio 中開啟專案。
-2. 以滑鼠右鍵按一下專案節點，然後選取 [ **管理 NuGet 套件 ...** ]
+2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
 3. 在出現的面板中，按一下 **[流覽]** ，然後搜尋「全像的遠端處理」。
-4. 選取 [ **Microsoft** ]，並確定 **挑選最新** 的2.x 版，然後按一下 [ **安裝** ]。
-5. 如果出現 [ **預覽** ] 對話方塊，請按一下 **[確定** ]。
+4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後按一下 [ **安裝**]。
+5. 如果出現 [ **預覽** ] 對話方塊，請按一下 **[確定**]。
 6. 出現的下一個對話方塊是授權合約。 按一下 [ **我接受** ] 以接受授權合約。
 
 >[!NOTE]
@@ -89,7 +89,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 1) 遠端應用程式會連接到在裝置上執行的播放程式。
 2) 在裝置上執行的播放程式會連接到遠端應用程式。
 
-若要建立從遠端應用程式到 HoloLens 2 的連接，請 ```Connect``` 在指定主機名稱和埠的遠端內容上呼叫方法。 全像遠端播放機使用的埠是 **8265** 。
+若要建立從遠端應用程式到 HoloLens 2 的連接，請 ```Connect``` 在指定主機名稱和埠的遠端內容上呼叫方法。 全像遠端播放機使用的埠是 **8265**。
 
 ```cpp
 try

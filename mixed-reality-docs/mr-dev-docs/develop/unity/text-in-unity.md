@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、控制項、字型、印刷樣式、ui、ux
-ms.openlocfilehash: 21409115ed1e9aa9103e1e77ea4aacc0881e1262
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、控制項、字型、印刷樣式、ui、ux、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
+ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682436"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677357"
 ---
 # <a name="text-in-unity"></a>Unity 中的文字
 
@@ -100,17 +100,17 @@ Unity 的預設字型材質不支援遮蔽。 因此，依預設，您會看到�
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
+依循我們配置的 Unity 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [語音輸入](voice-input-in-unity.md)
 
-或跳至混合的現實平臺功能和 Api：
+或者，直接跳到混合實境平台功能和 API 的主題：
 
 > [!div class="nextstepaction"]
 > [共用體驗](shared-experiences-in-unity.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。
 
 
 ## <a name="see-also"></a>另請參閱

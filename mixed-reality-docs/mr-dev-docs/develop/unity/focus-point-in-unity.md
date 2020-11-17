@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區
-ms.openlocfilehash: 4d8c8a232d12a8d6f0a7694fbc0ed8f66395163a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 48c0d26e89124b9dbfc1d108354fb6e751e51783
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91676914"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678687"
 ---
 # <a name="focus-point-in-unity"></a>Unity 中的焦點
 
 **命名空間：** *UnityEngine. XR*<br>
-**類型** ： *HolographicSettings*
+**類型**： *HolographicSettings*
 
 您可以設定 [焦點點](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 來提供 HoloLens 提示，以提供有關如何在目前顯示的全像上執行穩定的提示。
 
@@ -52,17 +52,17 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 您可以從這裡繼續進行下一個主題：
+如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 接下來，您可以繼續進行下一個主題：
 
 > [!div class="nextstepaction"]
 > [追蹤遺失](tracking-loss-in-unity.md)
 
-或直接跳到在裝置或模擬器上部署您的應用程式：
+或者，直接跳到在裝置或模擬器上部署應用程式的主題：
 
 > [!div class="nextstepaction"]
 > [部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機](../platform-capabilities-and-apis/using-visual-studio.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis)。
 
 ### <a name="see-also"></a>另請參閱
 * [穩定平面](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

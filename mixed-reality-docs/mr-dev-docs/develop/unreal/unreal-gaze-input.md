@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality，全像影像、HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎
-ms.openlocfilehash: 477fbdc9c7ddb3b4e890e62150651d9227d4c19e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679849"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679047"
 ---
 # <a name="gaze-input"></a>注視輸入
 
@@ -46,17 +46,17 @@ ms.locfileid: "91679849"
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unreal 開發檢查點旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊： 
+依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
 
 > [!div class="nextstepaction"]
 > [手勢追蹤](unreal-hand-tracking.md)
 
-或跳至混合的現實平臺功能和 Api：
+或者，直接跳到混合實境平台功能和 API 的主題：
 
 > [!div class="nextstepaction"]
 > [HoloLens 相機](unreal-hololens-camera.md)
 
-您隨時都可以回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks)。
 
 ## <a name="see-also"></a>另請參閱
 * [校正](../../calibration.md)

@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: 混合實境, 全像攝影, AR, VR, MR, XR, 擴增實境, 虛擬實境, 說明
 ms.localizationpriority: high
-ms.openlocfilehash: a55b05f8edfeedfff3313844428b9af4cf7a2fc0
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+ms.openlocfilehash: 44914decd9530a11d11127b43af527d995f6c252
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340706"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631486"
 ---
 # <a name="what-is-mixed-reality"></a>什麼是混合實境？
 
@@ -34,7 +34,7 @@ ms.locfileid: "94340706"
 
 過去數十年來，眾人持續探索人類與電腦輸入之間的關聯性，因而造就了所謂的 *人機互動* (或簡稱 HCI) 的專業領域。 人類輸入會透過各種不同的方式進行，包括鍵盤、滑鼠、觸控、筆跡、語音，甚至是 Kinect 的框架追蹤。
 
-在感應器和處理方面的提升，逐漸使環境中的電腦輸入形成新的區域。 電腦與環境之間的互動是有效的環境理解或 *感知* ，而正因如此，Windows 中顯示環境資訊的 API 名稱即稱為 [認知 API](https://docs.microsoft.com/uwp/api/Windows.Perception)。 環境輸入會擷取諸多事物，像是使用者所處的位置 (例如[頭部追蹤](../design/coordinate-systems.md))、表面和界限 (例如[空間對應](../design/spatial-mapping.md)和[場景理解](../design/scene-understanding.md))、環境光源、環境音效、物件辨識和位置。
+在感應器和處理方面的提升，逐漸使環境中的電腦輸入形成新的區域。 電腦與環境之間的互動是有效的環境理解或 *感知*，而正因如此，Windows 中顯示環境資訊的 API 名稱即稱為 [認知 API](https://docs.microsoft.com/uwp/api/Windows.Perception)。 環境輸入會擷取諸多事物，像是使用者所處的位置 (例如[頭部追蹤](../design/coordinate-systems.md))、表面和界限 (例如[空間對應](../design/spatial-mapping.md)和[場景理解](../design/scene-understanding.md))、環境光源、環境音效、物件辨識和位置。
 
 <br>
 
@@ -52,7 +52,7 @@ ms.locfileid: "94340706"
 
 ## <a name="the-mixed-reality-spectrum"></a>混合實境頻譜
 
-因為混合實境融合了實際和數位世界，這兩個實境就定義了頻譜的兩極，稱為 Virtuality Continuum。 我們將實境的陣列稱為 *混合實境頻譜* 。 左側是我們人類所在之處的實體實境。 右側則是對應的數位實境。
+因為混合實境融合了實際和數位世界，這兩個實境就定義了頻譜的兩極，稱為 Virtuality Continuum。 我們將實境的陣列稱為 *混合實境頻譜*。 左側是我們人類所在之處的實體實境。 右側則是對應的數位實境。
 
 <br>
 
@@ -62,7 +62,7 @@ ms.locfileid: "94340706"
 
 ### <a name="augmented-vs-virtual-reality"></a>擴增與虛擬實境
 
-現今市場上大部分的行動電話幾乎都沒有環境理解功能。 他們所提供的體驗無法混合實體和數位實境。 在實體世界的影片串流上重疊圖形的體驗即為「擴增實境」  。 遮蔽您的檢視來呈現數位體驗的體驗即為「虛擬實境」  。 擴增實境與虛擬實境之間的體驗，形成了 *混合實境* ：
+現今市場上大部分的行動電話幾乎都沒有環境理解功能。 他們所提供的體驗無法混合實體和數位實境。 在實體世界的影片串流上重疊圖形的體驗即為「擴增實境」  。 遮蔽您的檢視來呈現數位體驗的體驗即為「虛擬實境」  。 擴增實境與虛擬實境之間的體驗，形成了 *混合實境*：
 * 從真實世界開始，放置數位物件 (例如全像投影)，如同真實存在一般。
 * 從實體世界開始，另一個人的數位表示法 -- [頭像] -- 顯示他們在留言時所處的位置。 換句話說，即為不同時間點表示非同步共同作業的體驗。
 * 從數位世界開始，實體世界 (例如牆和傢俱) 的實體界限會以數位方式出現在體驗中，以協助使用者避免實體物件。
@@ -119,10 +119,4 @@ ms.locfileid: "94340706"
 > [!div class="nextstepaction"]
 > [什麼是全像投影？](hologram.md)
 
-## <a name="see-also"></a>另請參閱
-
-* [什麼是全像投影？](hologram.md)
-* [了解混合實境的基本概念](get-started-with-mr.md#understand-the-basics)
-* [開始建立並建立原型](../design/design.md)
-* [了解工具和架構](../develop/development.md)
 

@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、Azure、Azure 空間錨點、ASA
-ms.openlocfilehash: 324aecdc89b4996625ce93514616c32d2d064ffa
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、Azure、Azure 空間錨點、ASA、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: c9f432a2ef26e28a2329f9fd191f680a4148ca7e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679824"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678457"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity 中的共用體驗
 
@@ -33,17 +33,17 @@ ms.locfileid: "91679824"
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 您可以從這裡繼續進行下一個主題：
+如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 接下來，您可以繼續進行下一個主題：
 
 > [!div class="nextstepaction"]
 > [定位相機](locatable-camera-in-unity.md)
 
-或直接跳到在裝置或模擬器上部署您的應用程式：
+或者，直接跳到在裝置或模擬器上部署應用程式的主題：
 
 > [!div class="nextstepaction"]
 > [部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機](../platform-capabilities-and-apis/using-visual-studio.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis)。
 
 ## <a name="see-also"></a>另請參閱
 * [混合實境中的共用體驗](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)

@@ -8,16 +8,16 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 學院, 教學課程
-ms.openlocfilehash: ba0fe1db533b47088abecb6e97e2dc7826f7ee23
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: cd0fcd0f2247582582f008c3c1131e893d89a3de
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696312"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573192"
 ---
 # <a name="sample-apps"></a>範例應用程式
 
-![HoloLens 2 使用者](images/08_Tutorials.png)
+<br/><img src="https://user-images.githubusercontent.com/13754172/90335383-ab391e80-e00f-11ea-8a6c-b61aa910b83d.gif" width="100%" _alt="Sample apps">
 
 目前，我們所有的教學課程和範例應用程式都是在 Unity 或 Unreal 中建置。 隨著我們開發其他引擎和平台的內容，您會在目錄中的相關標題底下找到它們。
 

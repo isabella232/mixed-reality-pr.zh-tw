@@ -5,13 +5,13 @@ author: fieldsJacksonG
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發
-ms.openlocfilehash: 09d90af95d9433772563fdc292f31d118b3dd846
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、串流、遠端處理、混合現實、開發、入門、功能、新專案、模擬器、檔、指南、功能、全像投影、遊戲開發、混合現實耳機、windows 混合現實耳機、虛擬實境耳機、WinRT、DLL
+ms.openlocfilehash: fd50e5ecd3186fc8852936affbfedc3d5fd4de75
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573292"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679807"
 ---
 # <a name="winrt-in-unreal"></a>Unreal 中的 WinRT
 
@@ -44,9 +44,9 @@ ms.locfileid: "94573292"
 > 在新的專案編譯之後，您想要特別注意空白的 cpp 和標頭檔，分別名為 **HoloLensWinrtDLL .cpp** 和 **HoloLensWinrtDLL** 。 標頭是在 Unreal 中使用 DLL 的 include 檔，而 cpp 會保存您所匯出之任何函式的主體，並包含 Unreal 無法編譯的任何 WinRT 程式碼。 
 
 3. 在您新增任何程式碼之前，您需要更新專案屬性，以確保您需要的 WinRT 程式碼可以編譯： 
-    * 以滑鼠右鍵按一下 HoloLensWinrtDLL 專案，然後選取 [ **屬性** ]  
+    * 以滑鼠右鍵按一下 HoloLensWinrtDLL 專案，然後選取 [**屬性**]  
     * **將設定下拉式清單** 變更 **為所有的設定，並將****平臺** 下拉式清單變更為 **所有平臺**  
-    * 在 **Configuration Properties> C/c + +> 所有選項** ：
+    * 在 **Configuration Properties> C/c + +> 所有選項**：
         * 將 **await** 新增至 **其他選項** ，以確保我們可以等候非同步工作  
         * 將 **c + + 語言標準** 變更為 **ISO c + + 17 標準 (/std： c + + 17)** 以包含任何 WinRT 程式碼
 
@@ -180,7 +180,7 @@ private:
 > [!NOTE]
 > 現在已在與 uproject 檔案相同的目錄中建立方案，以及名為 Source/ConsumeWinRT/ConsumeWinRT 的新組建腳本。
 
-2. 開啟方案、流覽 **遊戲/ConsumeWinRT/來源/ConsumeWinRT** 資料夾，然後開啟 **ConsumeWinRT.build.cs** ：
+2. 開啟方案、流覽 **遊戲/ConsumeWinRT/來源/ConsumeWinRT** 資料夾，然後開啟 **ConsumeWinRT.build.cs**：
 
 ![開啟 ConsumeWinRT.build.cs 檔案](images/unreal-winrt-img-05.png)
 
@@ -287,7 +287,7 @@ void AWinrtActor::OpenFileDialogue()
 
 ![將 WinrtActor 拖曳至層級藍圖](images/unreal-winrt-img-07.png)
 
-3. 在層級的藍圖中，從 WinrtActor 拖曳輸出節點，搜尋 [開啟檔案] **對話方塊** ，然後從任何使用者輸入路由傳送節點。  在此情況下，會從語音事件呼叫 Open File 對話： 
+3. 在層級的藍圖中，從 WinrtActor 拖曳輸出節點，搜尋 [開啟檔案] **對話方塊**，然後從任何使用者輸入路由傳送節點。  在此情況下，會從語音事件呼叫 Open File 對話： 
 
 ![設定層級藍圖中的節點](images/unreal-winrt-img-08.png)
 

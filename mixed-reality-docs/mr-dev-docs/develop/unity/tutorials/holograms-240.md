@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit，mixedrealitytoolkit，mixedrealitytoolkit-unity，共用，網路，學院，教學課程
-ms.openlocfilehash: 886b8b3ef449dc2872358fffd67b6af4c661de0e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、共用、網路、學術、教學課程、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: f57629e37463c9a05219ebae92bff8870728d688
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682804"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678257"
 ---
 # <a name="mr-sharing-240-multiple-hololens-devices"></a>MR Sharing 240：多個 HoloLens 裝置
 
@@ -39,7 +39,7 @@ ms.locfileid: "91682804"
 
 ## <a name="before-you-start"></a>開始之前
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>先決條件
 
 * 使用隨網際網路存取安裝的正確 [工具](../../../develop/install-the-tools.md) 設定的 Windows 10 電腦。
 * 至少有兩個 HoloLens 裝置 [設定用於開發](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)。
@@ -50,7 +50,7 @@ ms.locfileid: "91682804"
   * 如果您仍然需要 Unity 5.6 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip)。
   * 如果您仍然需要 Unity 5.5 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip)。
   * 如果您仍然需要 Unity 5.4 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip)。
-* 取消將檔案封存到您的桌面或其他易於觸及的位置。 將資料夾名稱保留為 **SharedHolograms** 。
+* 取消將檔案封存到您的桌面或其他易於觸及的位置。 將資料夾名稱保留為 **SharedHolograms**。
 
 >[!NOTE]
 >如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms)取得。
@@ -66,48 +66,48 @@ ms.locfileid: "91682804"
 * 設定 Unity 以開發全息型應用程式。
 * 查看您的全像影像！
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 啟動 Unity。
-* 選取 [開啟]。
+* 選取 [開啟]  。
 * 輸入位置作為您先前 unarchived 的 **SharedHolograms** 資料夾。
-* 選取 [ **專案名稱** ]，然後按一下 [ **選取資料夾** ]。
-* **在階層中，以** 滑鼠右鍵按一下 **主要攝影機** ，然後選取 [ **刪除** ]。
+* 選取 [ **專案名稱** ]，然後按一下 [ **選取資料夾**]。
+* **在階層中，以** 滑鼠右鍵按一下 **主要攝影機**，然後選取 [**刪除**]。
 * 在 [ **HoloToolkit-共用-240/Prefabs/攝影機** ] 資料夾中，尋找 **主要相機** 預製專案。
-* 將 [ **主要攝影機** ] 拖放到階層 **中。**
-* 在階層 **中，按一下** [ **建立** ] 並 **建立空白** 。
-* 以滑鼠右鍵按一下新的 **GameObject** ，然後選取 [ **重新命名** ]。
-* 將 GameObject 重新命名為 **HologramCollection** 。
+* 將 [**主要攝影機**] 拖放到階層 **中。**
+* 在階層 **中，按一下**[ **建立** ] 並 **建立空白**。
+* 以滑鼠右鍵按一下新的 **GameObject** ，然後選取 [ **重新命名**]。
+* 將 GameObject 重新命名為 **HologramCollection**。
 * 選取階層中的 **HologramCollection** 物件 **。**
-* 在偵測 **器** 中，將 **轉換位置** 設定為： **X：0，Y：-0.25，Z： 2** 。
-* 在 [ **專案] 面板** 的 [全像全像 **] 資料夾中** ，尋找 **EnergyHub** 資產。
+* 在偵測 **器** 中，將 **轉換位置** 設定為： **X：0，Y：-0.25，Z： 2**。
+* 在 [**專案] 面板** 的 [全像全像 **] 資料夾中**，尋找 **EnergyHub** 資產。
 * 將 **EnergyHub** 物件從 **專案面板** 拖放到階層中， **做為** **HologramCollection 的子** 系。
-* 選取 [檔案 **> 另存場景為** ...]
-* 命名場景 **SharedHolograms** ，然後按一下 [ **儲存** ]。
+* 選取 [檔案 **> 另存場景為**...]
+* 命名場景 **SharedHolograms** ，然後按一下 [ **儲存**]。
 * 按下 Unity 中的 [ **播放** ] 按鈕，以預覽您的全像影像。
 * 按第二次 [ **播放** ] 以停止預覽模式。
 
 **將專案從 Unity 匯出至 Visual Studio**
 
-* 在 Unity 中，選取 [ **File > Build Settings** ]。
+* 在 Unity 中，選取 [ **File > Build Settings**]。
 * 按一下 [ **新增開啟場景** ] 以加入場景。
-* 在 [ **平臺** ] 清單中選取 **通用 Windows 平臺** ，然後按一下 [ **切換平臺** ]。
-* 將 **SDK** 設定為 **通用 10** 。
-* 將 **目標裝置** 設定為 **HoloLens** ，並將 **UWP 組建類型** 設定為 **D3D** 。
-* 檢查 **Unity c # 專案** 。
-* 按一下 [建置]  。
+* 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
+* 將 **SDK** 設定為 **通用 10**。
+* 將 **目標裝置** 設定為 **HoloLens** ，並將 **UWP 組建類型** 設定為 **D3D**。
+* 檢查 **Unity c # 專案**。
+* 按一下 [建置]。
 * 在出現的 [檔案瀏覽器] 視窗中，建立名為 "App" 的 **新資料夾** 。
 * 按一下 **應用程式** 資料夾。
-* 按下 [ **選取資料夾** ]。
+* 按下 [ **選取資料夾**]。
 * 當 Unity 完成時，將會出現檔案總管視窗。
 * 開啟 **應用程式** 資料夾。
 * 開啟 **SharedHolograms** 以啟動 Visual Studio。
-* 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X86** 。
-* 按一下 [本機電腦] 旁的下拉箭號，然後選取 [ **遠端裝置** ]。
+* 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X86**。
+* 按一下 [本機電腦] 旁的下拉箭號，然後選取 [ **遠端裝置**]。
     * 將 **位址** 設定為 HoloLens 的名稱或 IP 位址。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > 網路 & 網際網路 > [Advanced Options** ] 或 [問 Cortana **] 嗨 Cortana，我的 IP 位址為何？**
-    * 將 [ **驗證模式]** 設定為 [ **通用** ]。
-    * 按一下 [ **選取** ]
-* 按一下 [ **Debug > 啟動但不進行調試** ]，或按 **Ctrl + F5** 。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+    * 將 [ **驗證模式]** 設定為 [ **通用**]。
+    * 按一下 [**選取**]
+* 按一下 [ **Debug > 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 * 放在 HoloLens 上，找出 EnergyHub 的全息圖。
 
 ## <a name="chapter-2---interaction"></a>第2章-互動
@@ -121,13 +121,13 @@ ms.locfileid: "91682804"
 * 使用「注視輸入」來控制資料指標。
 * 使用手勢輸入與全像影像互動。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 **目光**
 
 * 在 [階層] **面板** 中，選取 [ **HologramCollection** ] 物件。
 * 在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。
-* 在功能表中，于 [搜尋] 方塊中輸入 **注視 Manager** 。 選取搜尋結果。
+* 在功能表中，于 [搜尋] 方塊中輸入 **注視 Manager**。 選取搜尋結果。
 * 在 [ **HoloToolkit-Sharing-240\Prefabs\Input** ] 資料夾中，尋找資料 **指標** 資產。
 * 將資料 **指標** 資產拖放到階層 **上。**
 
@@ -135,10 +135,10 @@ ms.locfileid: "91682804"
 
 * 在 [階層] **面板** 中，選取 [ **HologramCollection** ] 物件。
 * 按一下 [ **新增元件** ]，然後在 [搜尋] 欄位中輸入 **手勢管理員** 。 選取搜尋結果。
-* 在 [階層] **面板** 中，展開 [ **HologramCollection** ]。
+* 在 [階層] **面板** 中，展開 [ **HologramCollection**]。
 * 選取子 **EnergyHub** 物件。
 * 在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。
-* 在功能表中，輸入搜尋方塊全息圖 **放置** 。 選取搜尋結果。
+* 在功能表中，輸入搜尋方塊全息圖 **放置**。 選取搜尋結果。
 * 選取 [檔案] **> 儲存場景** 來儲存場景。
 
 **部署及享用**
@@ -168,14 +168,14 @@ ms.locfileid: "91682804"
 >2. 按一下 [Windows 市存放區] 索引標籤
 >3. 在 [發佈設定 > 功能] 區段中，檢查 **InternetClientServer** 功能和 **PrivateNetworkClientServer** 功能
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案] 面板** 中，流覽至 [ **HoloToolkit-Sharing-240\Prefabs\Sharing** ] 資料夾。
 * 將 **共用** 預製專案拖放到 [階層] **面板** 中。
 
 接下來我們需要啟動共用服務。 只有 **一部電腦** 在共用體驗中需要執行這個步驟。
 
-* 在 Unity 中-在最上層功能表中，選取 [ **HoloToolkit-共用-240] 功能表** 。
+* 在 Unity 中-在最上層功能表中，選取 [ **HoloToolkit-共用-240] 功能表**。
 * 在下拉式清單中選取 [ **啟動共用服務** ] 專案。
 * 核取 [ **私人網路** ] 選項，然後在出現防火牆提示時按一下 [ **允許存取** ]。
 * 記下 [共用服務主控台] 視窗中顯示的 IPv4 位址。 這與執行服務的電腦是相同的 IP。
@@ -184,9 +184,9 @@ ms.locfileid: "91682804"
 
 * **在階層中，選取****共用** 物件。
 * 在偵測 **器** 的 **共用階段** 元件上，將 **伺服器位址** 從 ' localhost ' 變更為執行 SharingService.exe 之電腦的 IPv4 位址。
-* **在階層中選取** [ **HologramCollection** ] 物件。
+* **在階層中選取**[ **HologramCollection** ] 物件。
 * 在 [偵測 **器** ] 中，按一下 [ **新增元件** ] 按鈕。
-* 在搜尋方塊中，輸入匯 **入匯出錨點管理員** 。 選取搜尋結果。
+* 在搜尋方塊中，輸入匯 **入匯出錨點管理員**。 選取搜尋結果。
 * 在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。
 * 按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。
 * 使用以下列程式碼取代內容。
@@ -295,9 +295,9 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* 回到 Unity，在 [階層] **面板** 中選取 **HologramCollection** 。
+* 回到 Unity，在 [階層]**面板** 中選取 **HologramCollection** 。
 * 在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。
-* 在功能表中，輸入搜尋 box **應用程式狀態管理員** 。 選取搜尋結果。
+* 在功能表中，輸入搜尋 box **應用程式狀態管理員**。 選取搜尋結果。
 
 **部署及享用**
 
@@ -319,7 +319,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 選擇並分享玩家頭像。
 * 將玩家頭像附加到每個人的標題旁邊。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。
 * 將 **PlayerAvatarStore** 拖放到階層中 **。**
@@ -367,12 +367,12 @@ public class AvatarSelector : MonoBehaviour
 }
 ```
 
-* **在階層中選取** [ **HologramCollection** ] 物件。
-* 在 [偵測 **器** ] 中按一下 [ **新增元件** ]。
-* 在 [搜尋] 方塊中，輸入「 **本機播放機管理員** 」。 選取搜尋結果。
-* **在階層中選取** [ **HologramCollection** ] 物件。
-* 在 [偵測 **器** ] 中按一下 [ **新增元件** ]。
-* 在 [搜尋] 方塊中，輸入 **Remote Player Manager** 。 選取搜尋結果。
+* **在階層中選取**[ **HologramCollection** ] 物件。
+* 在 [偵測 **器** ] 中按一下 [ **新增元件**]。
+* 在 [搜尋] 方塊中，輸入「 **本機播放機管理員**」。 選取搜尋結果。
+* **在階層中選取**[ **HologramCollection** ] 物件。
+* 在 [偵測 **器** ] 中按一下 [ **新增元件**]。
+* 在 [搜尋] 方塊中，輸入 **Remote Player Manager**。 選取搜尋結果。
 * 在 Visual Studio 中開啟 **HologramPlacement** 腳本。
 * 使用以下列程式碼取代內容。
 
@@ -618,7 +618,7 @@ public class AppStateManager : Singleton<AppStateManager>
 
 * 根據玩家的標頭位置，在空間對應網格上放置全像影像。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。
 * 將 **CustomSpatialMapping** 預製專案拖放到階層上 **。**
@@ -986,7 +986,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 點擊以放置 EnergyHub。
 * 請嘗試語音命令「重設目標」來挑選 EnergyHub 備份，並以群組方式一起工作，以將全息圖移至新位置。
 
-## <a name="chapter-6---real-world-physics"></a>第6章-真實世界物理
+## <a name="chapter-6---real-world-physics"></a>第6章-Real-World 物理
 
 >[!VIDEO https://www.youtube.com/embed/XNpQVSyXwMo]
 
@@ -997,11 +997,11 @@ public class HologramPlacement : Singleton<HologramPlacement>
 * 啟動炮彈，以將實際表面彈開。
 * 共用炮彈，讓其他玩家可以看到它們。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-* **在階層中選取** [ **HologramCollection** ] 物件。
-* 在 [偵測 **器** ] 中按一下 [ **新增元件** ]。
-* 在搜尋方塊中，輸入 **Projectile 啟動器** 。 選取搜尋結果。
+* **在階層中選取**[ **HologramCollection** ] 物件。
+* 在 [偵測 **器** ] 中按一下 [ **新增元件**]。
+* 在搜尋方塊中，輸入 **Projectile 啟動器**。 選取搜尋結果。
 
 **部署及享用**
 
@@ -1019,12 +1019,12 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 * 共同作業以在錨點上啟動足夠的炮彈來發現秘密入口網站！
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。
 * 將 **Underworld** 資產拖放為 HologramCollection 的 **子** 系。
-* 選取 **HologramCollection** 後，按一下 [ **檢查** ] 中的 [ **新增元件** ] 按鈕。
-* 在功能表的 [搜尋] 方塊中，輸入 **ExplodeTarget** 。 選取搜尋結果。
+* 選取 **HologramCollection** 後，按一下 [**檢查**] 中的 [**新增元件**] 按鈕。
+* 在功能表的 [搜尋] 方塊中，輸入 **ExplodeTarget**。 選取搜尋結果。
 * 選取 **HologramCollection** 後，從階層中，將 **EnergyHub** **物件拖曳至** 偵測 **器** 中的 **目標** 欄位。
 * 選取 **HologramCollection** 後，從階層中，將 **Underworld** **物件拖曳至** 偵測 **器** 中的 [ **Underworld** ] 欄位。
 

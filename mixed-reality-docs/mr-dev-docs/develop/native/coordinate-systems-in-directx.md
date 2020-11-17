@@ -5,18 +5,18 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
-keywords: 混合的現實、空間定位器、空間參考框架、空間座標系統、空間階段、範例程式碼、影像穩定、空間錨點、空間錨點存放區、追蹤遺失、逐步解說
-ms.openlocfilehash: 5ae60d5696d40a07ad350d0de097eb2f82f1dde1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、空間定位器、空間參考框架、空間座標系統、空間階段、範例程式碼、影像穩定、空間錨點、空間錨點存放區、追蹤遺失、逐步解說、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679380"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679657"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX 中的座標系統
 
 > [!NOTE]
-> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)** 。
+> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
 [座標系統](../../design/coordinate-systems.md) 形成 Windows Mixed Reality api 所提供的空間理解基礎。
 
@@ -593,14 +593,14 @@ SpatialLocatorAttachedFrameOfReference 類別會定義相對於裝置而非真�
 
 首先，我們變更了範本來儲存 SpatialLocatorAttachedFrameOfReference，而不是 SpatialStationaryFrameOfReference：
 
-從 **HolographicTagAlongSampleMain .h** ：
+從 **HolographicTagAlongSampleMain .h**：
 
 ```
    // A reference frame attached to the holographic camera.
    Windows::Perception::Spatial::SpatialLocatorAttachedFrameOfReference^   m_referenceFrame;
 ```
 
-從 **HolographicTagAlongSampleMain .cpp** ：
+從 **HolographicTagAlongSampleMain .cpp**：
 
 ```
    // In this example, we create a reference frame attached to the device.
@@ -629,7 +629,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 基於使用者緩和的原因，我們使用線性插補 ( "lerp" ) 來使變更在一段時間內發生的情況變得更平滑。 這對使用者而言更適合用來鎖定全像看的全像影像。 Lerping 標記沿著全息圖的位置也可讓我們藉由抑制移動來使全像如果我們沒有執行這項抑制，使用者會看到「全像」的影像，因為通常會將其視為 imperceptible 的使用者頭部移動。
 
-從 **StationaryQuadRenderer：:P ositionhologram** ：
+從 **StationaryQuadRenderer：:P ositionhologram**：
 
 ```
    const float& dtime = static_cast<float>(timer.GetElapsedSeconds());
@@ -656,7 +656,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 >[!NOTE]
 >在 [偵錯工具] 面板的案例中，您可以選擇將全息圖重新放置到一小段邊，讓它不會對您的觀點。 以下是您可能會這麼做的範例。
 
-若為 **StationaryQuadRenderer：:P ositionhologram** ：
+若為 **StationaryQuadRenderer：:P ositionhologram**：
 
 ```
        // If you're making a debug view, you might not want the tag-along to be directly in the
@@ -673,7 +673,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 只是放置全息圖，在此案例中為四個我們也必須旋轉物件，以面對使用者的臉。 請注意，這種旋轉會在世界空間中發生，因為這種類型的 billboarding 可讓全像是使用者環境中的影像。 視圖空間 billboarding 並不容易，因為全像全像顯示方向會鎖定全像顯示器;在這種情況下，您也必須在左右的視圖矩陣之間插補，才能取得不會中斷身歷聲轉譯的視圖空間佈告欄轉換。 在這裡，我們將旋轉 X 和 Z 軸，以面對使用者的臉。
 
-從 **StationaryQuadRenderer：： Update** ：
+從 **StationaryQuadRenderer：： Update**：
 
 ```
    // Seconds elapsed since previous frame.
@@ -720,7 +720,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 在此範例中，我們也選擇在 SpatialLocatorAttachedReferenceFrame 的座標系統中轉譯全息圖，也就是我們放置全息圖的位置。  (如果我們決定使用其他座標系統轉譯，則必須從裝置附加的參考框架座標系統取得轉換至該座標系統。 ) 
 
-從 **HolographicTagAlongSampleMain：： Render** ：
+從 **HolographicTagAlongSampleMain：： Render**：
 
 ```
    // The view and projection matrices for each holographic camera will change
@@ -733,7 +733,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
        );
 ```
 
-這樣就完成了！ 現在，全像是在使用者的注視方向之前，將2個計量的位置「定位」。
+就這麼簡單！ 現在，全像是在使用者的注視方向之前，將2個計量的位置「定位」。
 
 >[!NOTE]
 >此範例也會載入其他內容-請參閱 StationaryQuadRenderer .cpp。

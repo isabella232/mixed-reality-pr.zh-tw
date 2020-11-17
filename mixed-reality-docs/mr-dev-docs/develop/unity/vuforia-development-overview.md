@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
-keywords: Vuforia、標記、座標、參考的框架、追蹤
-ms.openlocfilehash: 270588bb317b0c083500dfaaca80c075a35410b9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Vuforia、標記、座標、參考的框架、追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、unity、HoloLens、裝置追蹤、效能模式、Vuforia 開發人員入口網站
+ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680604"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679667"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>搭配使用 Vuforia 引擎與 Unity
 
@@ -46,7 +46,7 @@ Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗
 1.  從 Unity 資產存放區下載[HoloLens 的 Vuforia 引擎範例](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553)
 2.  套用適用于 [電源和效能的建議 Unity 引擎選項](performance-recommendations-for-unity.md)
 3.  將範例場景新增至組建中的 **場景** **。**
-4.  在 [ **組建設定** ] 中，按一下 [ **新增開啟場景** ] 按鈕，將組建平臺切換至 **UWP** 。
+4.  在 [**組建設定**] 中，按一下 [**新增開啟場景**] 按鈕，將組建平臺切換至 **UWP** 。
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
 5.  按一下 [ **播放機設定** ] 按鈕。  
    * 選取 **UWP** 圖示並展開 [ **XR 設定** ] 區段。
@@ -56,9 +56,9 @@ Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗
      * **深度格式** 會設定為 **16 位的深度。** 
    * 確定身歷聲轉譯 **模式** 設定為 [ **單一傳遞實例]。**
 6.  展開 [ **發行設定** ] 區段。
-   * 在 [ **功能** ] 底下， **確定已選取** [ **網際網路用戶端** ]、[網路攝影機]、[麥克風] 和 [
+   * 在 [**功能**] 底下，**確定已選取**[**網際網路用戶端**]、[網路攝影機]、[麥克風] 和 [
    * **注意：** 只有在您想要使用 SURFACE Observer API 時，才應該選取 >spatialperception。
-   * 在 [ **支援的裝置系列** ] 底下， **確定已選取** [全像]。 
+   * 在 [ **支援的裝置系列**] 底下， **確定已選取** [全像]。 
 7.  展開 [ **解析和展示** ] 區段。
    * 停 **用在背景執行** 時，Vuforia 引擎會在應用程式進入背景時暫停，並可在應用程式繼續時再次存取相機。 
    * 在 [ **預設方向** ] 下拉式清單中，確定已選取 [ **橫向左方** ]。

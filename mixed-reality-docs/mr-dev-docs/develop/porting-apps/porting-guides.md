@@ -5,13 +5,13 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
-keywords: 埠、移植、unity、中介軟體、引擎、UWP、Win32
-ms.openlocfilehash: 9822976ab7dac9ae7567e5f38ca44ceee646d098
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
+ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638538"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677727"
 ---
 # <a name="porting-guides"></a>移植指南
 
@@ -38,7 +38,7 @@ Windows Mixed Reality 平臺仍在積極開發中。 建議您 [加入 Windows �
 1. 安裝 [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
 2. [加入](https://insider.windows.com/) Windows 測試人員計畫。
 3. 啟用 [開發人員模式](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
-4. 透過 [ **設定] > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)
+4. 透過 [**設定] > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. 升級為最新組建的 Visual Studio
 * 如果您是使用 Visual Studio 然後升級至最新的組建
@@ -56,7 +56,7 @@ Windows Mixed Reality 平臺仍在積極開發中。 建議您 [加入 Windows �
 > [!IMPORTANT]
 > 如果您使用的是 HP 回 G2 控制器，請參閱 [本文以取得其他](../unreal/unreal-reverb-g2-controllers.md) 輸入對應指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [Windows Mixed Reality 最小電腦硬體相容性指導方針](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [瞭解混合現實的效能](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity 的效能建議](../unity/performance-recommendations-for-unity.md)

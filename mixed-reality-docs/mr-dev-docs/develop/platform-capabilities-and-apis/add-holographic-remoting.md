@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 05/24/2019
 ms.topic: article
-keywords: Windows Mixed Reality，全像全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息
-ms.openlocfilehash: 0a6cdf34a797a7113c780dee0049125861dd7c32
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality，全像全像全像全像，遠端轉譯、網路轉譯、HoloLens、遠端全息全像、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680372"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679627"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>新增全像遠端 (HoloLens (第1代) # A3
 
@@ -41,10 +41,10 @@ HoloLens 開發人員必須更新應用程式，才能使其與 HoloLens 2 相�
 
 遵循下列步驟來取得適用于全像攝影的 NuGet 套件，並從您的專案新增參考：
 1. 在 Visual Studio 中移至您的專案。
-2. 以滑鼠右鍵按一下專案節點，然後選取 [ **管理 NuGet 套件 ...** ]
+2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
 3. 在出現的面板中，按一下 **[流覽]** ，然後搜尋「全像的遠端處理」。
-4. 選取 [ **Microsoft** ]，然後按一下 [ **安裝** ]。
-5. 如果出現 [ **預覽** ] 對話方塊，請按一下 **[確定** ]。
+4. 選取 [ **Microsoft** ]，然後按一下 [ **安裝**]。
+5. 如果出現 [ **預覽** ] 對話方塊，請按一下 **[確定**]。
 6. 出現的下一個對話方塊是授權合約。 按一下 [ **我接受** ] 以接受授權合約。
 
 ### <a name="create-the-holographicstreamerhelpers"></a>建立 HolographicStreamerHelpers

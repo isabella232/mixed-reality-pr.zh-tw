@@ -5,13 +5,13 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、全像轉譯、全像攝影、沉浸式、聚焦點、深度緩衝區、僅限方向、位置、不透明、透明、剪輯
-ms.openlocfilehash: 7e606232f626c64407ced75481deb3055326f760
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: holotoolkit，mixedrealitytoolkit，mixedrealitytoolkit-unity，全像轉譯，全像全像，全像投影、全像投影、聚焦點、深度緩衝區、僅限方向、位置、不透明、透明、剪輯、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: c3c470634e2c5c9445ae8c0a29621971de22a92b
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679015"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677617"
 ---
 # <a name="camera-in-unity"></a>Unity 中的相機
 
@@ -76,12 +76,12 @@ HoloLens 和沉浸式耳機都會 reproject 您的應用程式所轉譯的每個
 
 將您的應用程式深度緩衝區共用到 Windows 每個畫面格，將會根據您要轉譯的耳機類型，為您的應用程式提供兩個最多的全像全像全像全像：
 
-* 當提供深度緩衝區時， **沉浸式耳機** 可以執行位置 reprojection，調整您的全像位置和方向的 misprediction。
+* 當提供深度緩衝區時，**沉浸式耳機** 可以執行位置 reprojection，調整您的全像位置和方向的 misprediction。
 * 全像 **耳機** 有幾種不同的方法。 當提供深度緩衝區時，HoloLens 1 會自動選取 [焦點點](focus-point-in-unity.md) ，並在與大部分內容交集的平面上優化全像影像穩定性。 HoloLens 2 將會使用深度 LSR 來穩定內容 [ (請參閱備註) ](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
 
 設定您的 Unity 應用程式是否會提供 Windows 的深度緩衝區：
 
-1. 移至 [ **編輯**  >  **專案設定**  >  **播放機**  >  **] 通用 Windows 平臺** 索引標籤  >  **XR 設定** ]。
+1. 移至 [**編輯**  >  **專案設定**  >  **播放機**  >  **] 通用 Windows 平臺** 索引標籤  >  **XR 設定**]。
 2. 展開 **WINDOWS MIXED REALITY SDK** 專案。
 3. 核取或取消核取 [ **啟用深度緩衝區共用** ] 核取方塊。  這項功能預設會在建立的新專案中檢查，因為這項功能已新增至 Unity，而且預設會針對已升級的舊專案取消核取。
 
@@ -93,17 +93,17 @@ HoloLens 和沉浸式耳機都會 reproject 您的應用程式所轉譯的每個
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
+依循我們配置的 Unity 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [目光](gaze-in-unity.md)
 
-或跳至混合的現實平臺功能和 Api：
+或者，直接跳到混合實境平台功能和 API 的主題：
 
 > [!div class="nextstepaction"]
 > [共用體驗](shared-experiences-in-unity.md)
 
-您隨時都可以回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks) 。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -7,12 +7,12 @@ ms.date: 09/07/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 工具, 開始使用, 基本概念, unity, visual studio, 工具組
-ms.openlocfilehash: fe949d7a61eb49098351d49f9fe9f7c1fd5699c8
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: 8e123ec9de117b3c1c5959f2719481ae8094a9e6
+ms.sourcegitcommit: f459c7deb254409fd5db3967bcc875bcbc367e77
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001464"
+ms.lasthandoff: 11/10/2020
+ms.locfileid: "94482408"
 ---
 # <a name="install-the-tools"></a>安裝工具
 
@@ -42,3 +42,4 @@ ms.locfileid: "92001464"
 既然您已準備好 Windows 10、Visual Studio 和 Windows 10 SDK，讓我們選擇要作為建置基礎的引擎。
 
 [!INCLUDE[](includes/tools-overview.md)]
+

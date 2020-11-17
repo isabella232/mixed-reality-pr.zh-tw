@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: 4513185573003510e5a7cae97ecce4cb5d2552e0
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: ed3663c9eb3735dc2232a667e605ba4dab5bf1a4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386204"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573222"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>開始使用適用於 Unity 的 MRTK
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
@@ -24,7 +24,7 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 
 <br>
 
->[!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Setting-up-your-HoloLens-2-development-environment/player?format=ny]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
 如需深入了解，請參閱 [GitHub 上的 MRTK 文件](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)。 若要開始使用，請遵循[安裝指南](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)頁面上的步驟。
 
