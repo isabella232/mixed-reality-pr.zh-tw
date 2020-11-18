@@ -7,12 +7,12 @@ ms.date: 08/24/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散佈, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本概念, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動
-ms.openlocfilehash: 2ee127b05a8ad88e49eda6d088f84e895aeaf511
-ms.sourcegitcommit: 4e618948e1e2e0baf4bb3e8b67513fa7716aa815
+ms.openlocfilehash: 19a83a132cca08573f1066a2f7b87bd383ca79f4
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94361686"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573272"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型
 
@@ -35,7 +35,7 @@ ms.locfileid: "94361686"
 | [展開您的設計程序](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | 從 Microsoft 內部和外部的設計師收集有關混合實境的設計過程第一手資料 |
 | [混合實境應用程式的類型](types-of-mixed-reality-apps.md) | 決定您的應用程式體驗在混合實境頻譜上的位置 |
 | [Designing Holograms 應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 深入了解混合實境 UX 設計的基本概念，方法是探討如何建立絕佳的 HoloLens 應用程式 (可從 HoloLens 2 的 Microsoft Store 下載) 的混合實境行為、秘訣和建議 |
-
+| [MRTK 範例中樞](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | 體驗適用於混合實境的一般空間互動和 UX 建構元素 (可從 HoloLens 2 中的 Microsoft Store 下載) |
 ### <a name="2-core-concepts"></a>2.核心概念
 
 無論您進行 VR 還是 AR 的開發，為了設計流暢的沉浸式體驗，有幾個核心概念是務必牢記在心的。 了解使用者的觀點、定位物件，以及確保每個人都感到安心舒適，是您在這個階段的旅程首先要考量的。 在本節結束時，您就已打好堅實的基礎，可繼續進入互動設計階段。

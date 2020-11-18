@@ -7,18 +7,21 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, holograms, 相機, PV 相機, MRC
-ms.openlocfilehash: e66583d46d64361621303e36a5fbcc209300f5d8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6302a64fcde2a16b6ae1cb570215629a3e6ea9e5
+ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696195"
+ms.lasthandoff: 11/12/2020
+ms.locfileid: "94573232"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal 中的 HoloLens 相片/影片相機
 
 ## <a name="overview"></a>概觀
 
-HoloLens 具有相片/影片 (PV) 相機，用於混合實境擷取 (MRC)，並可供應用程式用來存取真實世界的視覺效果。
+HoloLens 具有相片/影片 (PV) 相機，用於混合實境擷取 (MRC)，並可供應用程式用來存取真實世界的視覺效果。 
+
+> [!IMPORTANT]
+> PV 攝影機不支援全像攝影遠端功能，但可以使用連接到您電腦的網路攝影機來模擬 HoloLens PV 攝影機功能。
 
 ## <a name="render-from-the-pv-camera-for-mrc"></a>從適用於 MRC 的 PV 相機呈現
 
@@ -51,14 +54,14 @@ HoloLens 具有相片/影片 (PV) 相機，用於混合實境擷取 (MRC)，並�
 
 ## <a name="rendering-an-image"></a>呈現影像
 若要呈現相機影像：
-1. 根據專案中的材質建立動態材質執行個體，在下列螢幕擷取畫面中將其稱為 **PVCamMat** 。  
+1. 根據專案中的材質建立動態材質執行個體，在下列螢幕擷取畫面中將其稱為 **PVCamMat**。  
 2. 將動態材質執行個體設定為 **材質執行個體動態物件參考** 變數。  
 3. 將場景中呈現相機摘要的物件材質設定為這個新的動態材質執行個體。
     * 啟動用來將相機影像繫結至材質的計時器。
 
 ![相機轉譯](images/unreal-camera-render.PNG)
 
-4. 建立此計時器的新函式 (在這個案例中為 **MaterialTimer** )，並且呼叫 **GetARCameraImage** 以從網路攝影機取得紋理。  
+4. 建立此計時器的新函式 (在這個案例中為 **MaterialTimer**)，並且呼叫 **GetARCameraImage** 以從網路攝影機取得紋理。  
 5. 如果紋理有效，請將著色器中的紋理參數設定為影像。  否則，請重新啟動材質計時器。
 
 ![網路攝影機的相機紋理](images/unreal-camera-texture.PNG)

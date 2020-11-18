@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 30ef793511285fe2fe52810912f6c5c06c8550dc
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ded881290de0167b7ffe26fc86b573d9b9ebb0b6
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353456"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631496"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.建立全像攝影遠端處理電腦應用程式
 
@@ -39,6 +39,11 @@ ms.locfileid: "93353456"
 ### <a name="1-set-the-player-settings"></a>1.設定玩家設定
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗。
+
+在 [專案設定] 視窗中，展開 [發佈設定]、向下捲動到 [功能] 區段，然後選取下方顯示的功能核取方塊 (除了現有功能以外)。
+
+* 網際網路用戶端伺服器
+* 私人網路用戶端伺服器
 
 在 [XR 設定] 區段中，選取 [支援的 WSA 全像攝影遠端處理] 核取方塊，並啟用全像攝影遠端處理。
 
@@ -87,10 +92,10 @@ ms.locfileid: "93353456"
 
 ### <a name="2-connect-the-holographic-remoting-pc-app-to-the-remoting-player"></a>2.將全像攝影遠端處理電腦應用程式連線到遠端播放程式
 
-* 啟動 HoloLens 上的 **遠端播放程式** 。
-* 記下 HoloLens 的 **IP 位址** 。 **遠端播放程式** 會在啟動時，將其顯示為全像投影。
+* 啟動 HoloLens 上的 **遠端播放程式**。
+* 記下 HoloLens 的 **IP 位址**。 **遠端播放程式** 會在啟動時，將其顯示為全像投影。
 * 在您的電腦上開啟全像攝影遠端處理電腦應用程式。
-* 啟動應用程式之後，輸入 **IP 位址** ，然後按一下 [連線] 按鈕以進行連線。
+* 啟動應用程式之後，輸入 **IP 位址**，然後按一下 [連線] 按鈕以進行連線。
 
 ## <a name="congratulations"></a>恭喜！
 

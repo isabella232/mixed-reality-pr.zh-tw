@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3a826ba3bf8fdf1299038a7964278f0d57dbb7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: f4530cb6519434f8eb74e5335fecbe82ac2cd2c2
+ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353536"
+ms.lasthandoff: 11/14/2020
+ms.locfileid: "94631526"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
 
@@ -30,11 +30,11 @@ ms.locfileid: "93353536"
 
 ## <a name="creating-a-static-panel-of-buttons"></a>建立按鈕的靜態面板
 
-在階層視窗中，以滑鼠右鍵按一下 **RoverExplorer** 物件並選取 [建立空物件]，將空白物件新增為 RoverExplorer 的子系，然後將物件命名為 **Buttons** ，並設定 **變形** 元件，如下所示：
+在階層視窗中，以滑鼠右鍵按一下 **RoverExplorer** 物件並選取 [建立空物件]，將空白物件新增為 RoverExplorer 的子系，然後將物件命名為 **Buttons**，並設定 **變形** 元件，如下所示：
 
-* **位置** ：X = -0.6、Y = 0.036、Z = -0.5
-* **旋轉** ：X = 90、Y = 0、Z = 0
-* **縮放比例** ：X = 1、Y = 1、Z = 1
+* **位置**：X = -0.6、Y = 0.036、Z = -0.5
+* **旋轉**：X = 90、Y = 0、Z = 0
+* **縮放比例**：X = 1、Y = 1、Z = 1
 
 ![已選取並置放新建立 Buttons 物件的 Unity](images/mr-learning-base/base-06-section1-step1-1.png)
 
@@ -44,16 +44,16 @@ ms.locfileid: "93353536"
 
 在階層視窗中選取 **Buttons** 物件，然後在偵測器視窗中使用 [新增元件] 按鈕來新增 **GridObjectCollection** 元件，並進行以下設定：
 
-* **排序類型** ：子順序
-* **版面配置** ：水平
-* **儲存格寬度** ：0.2
-* **錨點** ：中間靠左對齊
+* **排序類型**：子順序
+* **版面配置**：水平
+* **儲存格寬度**：0.2
+* **錨點**：中間靠左對齊
 
 然後按一下 [更新集合] 按鈕，以更新 Buttons 物件的子物件位置：
 
 ![已新增、設定和套用 GridObjectCollection 元件的 Unity Buttons 物件](images/mr-learning-base/base-06-section1-step1-3.png)
 
-在階層視窗中，將按鈕命名為 **提示** 、 **分解** 和 **重設** 。
+在階層視窗中，將按鈕命名為 **提示**、**分解** 和 **重設**。
 
 為每個按鈕選取 **SeeItSayItLabel** > **TextMeshPro** 子物件，然後在 偵測器視窗中分別變更 **TextMeshPro - 文字** 元件文字以符合按鈕名稱：
 
@@ -61,14 +61,17 @@ ms.locfileid: "93353536"
 
 完成後，摺疊 Buttons 物件的子物件。
 
-在階層視窗中，選取 [提示] 按鈕物件，然後在偵測器視窗中，設定可互動的 **OnClick ()** 事件，如下所示：
+在階層視窗中，選取 [提示] 按鈕物件，然後在偵測器視窗中，設定 **Interactable.OnClick ()** 事件，如下所示：
 
 * 將 **RoverAssembly** 物件指派給 **無 (物件)** 欄位
 * 從 **沒有函式** 下拉式清單中，選取 **PartAssemblyController** > **TogglePlacementHints ()** ，以將此函式設定為觸發事件時所要執行的動作
 
 ![已設定 [提示] 按鈕物件 OnClick 事件的 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
-在階層視窗中，選取 [分解] 按鈕物件，然後在偵測器視窗中，設定可互動的 **OnClick ()** 事件，如下所示：
+> [!TIP]
+> Interactable 元件是一個全方位容器，可讓任何物件輕鬆地進行互動及回應輸入。 Interactable 可作為所有輸入類型的概括，包括觸控、手部射線、語音等，並可將這些互動注入事件和視覺主題回應。 若要了解如何針對不同的輸入類型進行設定，並自訂其視覺化主題，您可參閱 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 指南。
+
+在階層視窗中，選取 [分解] 按鈕物件，然後在偵測器視窗中，設定 **Interactable.OnClick ()** 事件，如下所示：
 
 * 將 **RoverAssembly** 物件指派給 **無 (物件)** 欄位
 * 從 **沒有函式** 下拉式清單中，選取 **ExplodedViewController** > **ToggleExplodedView ()** ，以將此函式設定為觸發事件時所要執行的動作
@@ -92,11 +95,11 @@ ms.locfileid: "93353536"
 
 ![已選取新增附近功能表 Prefab 的 Unity](images/mr-learning-base/base-06-section2-step1-1.png)
 
-在階層視窗中，將物件重新命名為 **功能表** ，然後展開其 **ButtonCollection** 子物件，以顯示四個按鈕：
+在階層視窗中，將物件重新命名為 **功能表**，然後展開其 **ButtonCollection** 子物件，以顯示四個按鈕：
 
 ![已選取 Menu 物件並展開 ButtonCollection 物件的 Unity](images/mr-learning-base/base-06-section2-step1-2.png)
 
-將第一個按鈕重新命名為 **Indicator** ，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
+將第一個按鈕重新命名為 **Indicator**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
 
 * 將 **主要標籤文字** 變更為符合按鈕的名稱
 * 將 **Indicator** 物件指派給 **無 (物件)** 欄位
@@ -116,11 +119,11 @@ ms.locfileid: "93353536"
 > [!NOTE]
 > 現在，當應用程式啟動時，預設會停用指標，而且只要按下 [指標] 按鈕就能啟用。
 
-將第二個按鈕重新命名為 **TapToPlace** ，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
+將第二個按鈕重新命名為 **TapToPlace**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
 
 * 將 **主要標籤文字** 變更為符合按鈕的名稱
 * 將 RoverExplorer > **RoverAssembly** 物件指派給 **無 (物件)** 欄位
-* 從 [沒有函式] 下拉式清單中，選取 **TapToPlace** > **bool enabled** ，以在觸發事件時更新此屬性值
+* 從 [沒有函式] 下拉式清單中，選取 **TapToPlace** > **bool enabled**，以在觸發事件時更新此屬性值
 * 確認 **已核取** 引數核取方塊
 * 將 **圖示** 變更為「手部發光」圖示
 
@@ -131,7 +134,7 @@ ms.locfileid: "93353536"
 * 取消核取其名稱旁的核取方塊，使其預設為非作用中
 * 在 **On Placing Stopped ()** 事件區段中，按一下 **+** 圖示，以新增新的事件：
 * 將 RoverExplorer > **RoverAssembly** 物件指派給 **無 (物件)** 欄位
-* 從 [沒有函式] 下拉式清單中，選取 **TapToPlace** > **bool enabled** ，以在觸發事件時更新此屬性值
+* 從 [沒有函式] 下拉式清單中，選取 **TapToPlace** > **bool enabled**，以在觸發事件時更新此屬性值
 * 確認 **未核取** 引數核取方塊
 
 ![已重新設定 TapToPlace 元件的 Unity](images/mr-learning-base/base-06-section2-step1-6.png)
@@ -141,7 +144,7 @@ ms.locfileid: "93353536"
 
 ## <a name="adding-text-to-the-scene"></a>將文字加入場景
 
-在階層視窗中，以滑鼠右鍵按一下 **表格** 物件，然後選取 **3D 物件** > **文字 -TextMeshPro** ，將文字物件當作表格物件的子系新增，然後在偵測器視窗中，設定 **矩形轉換** 元件，如下所示：
+在階層視窗中，以滑鼠右鍵按一下 **表格** 物件，然後選取 **3D 物件** > **文字 -TextMeshPro**，將文字物件當作表格物件的子系新增，然後在偵測器視窗中，設定 **矩形轉換** 元件，如下所示：
 
 * 將 **Pos Y** 變更為 1
 * 將 **寬度** 變更為 1
@@ -174,7 +177,7 @@ ms.locfileid: "93353536"
 
 ![已選取所有 Rover 組件物件並已新增和設定 ToolTipSpawner 元件的 Unity](images/mr-learning-base/base-06-section4-step1-2.png)
 
-在階層視窗中，選取第一個 Rover 元件、RoverParts > **Camera_Part** ，然後設定 **ToolTipSpawner** 元件，如下所示：
+在階層視窗中，選取第一個 Rover 元件、RoverParts > **Camera_Part**，然後設定 **ToolTipSpawner** 元件，如下所示：
 
 * 變更 **工具提示文字** 以反映組件的名稱，例如 **攝影機**
 
@@ -182,10 +185,10 @@ ms.locfileid: "93353536"
 
 針對每個 Rover 組件物件 **重複** 此步驟，以設定 **ToolTipSpawner** 元件，如下所示：
 
-* 針對 **Generator_Part** ，將 **工具提示文字** 變更為 **產生器**
-* 針對 **Lights_Part** ，將 **工具提示文字** 變更為 **光源**
-* 針對 **UHFAntenna_Part** ，將 **工具提示文字** 變更為 **UHF 天線** 欄位
-* 針對 **Spectrometer_Part** ，將 **工具提示文字** 變更為 **Spectrometer**
+* 針對 **Generator_Part**，將 **工具提示文字** 變更為 **產生器**
+* 針對 **Lights_Part**，將 **工具提示文字** 變更為 **光源**
+* 針對 **UHFAntenna_Part**，將 **工具提示文字** 變更為 **UHF 天線** 欄位
+* 針對 **Spectrometer_Part**，將 **工具提示文字** 變更為 **Spectrometer**
 
 按下 [開始遊戲] 按鈕進入遊戲模式，然後在往下移動滑鼠時按住滑鼠右鍵，直到目光對到其中一個組件且該組件的工具提示出現為止：
 
