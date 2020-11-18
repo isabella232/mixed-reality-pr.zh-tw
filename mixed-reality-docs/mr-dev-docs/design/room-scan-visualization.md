@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality，應用程式模式、設計、HoloLens、會議室掃描、空間對應、網格
-ms.openlocfilehash: 25de181bbb2dedaba9e4917f51cc80bac77cc5f1
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、應用程式模式、設計、HoloLens、會議室掃描、空間對應、網格、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: f912ddcff5ef1d14468cec1e63c8153ae6460476
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679436"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703354"
 ---
 # <a name="room-scan-visualization"></a>空間位置掃描視覺效果
 

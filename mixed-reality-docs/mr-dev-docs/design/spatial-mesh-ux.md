@@ -4,13 +4,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX
-ms.openlocfilehash: 2c811edc14fbcc7c917fe9fa724f1cab23179a96
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680465"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703294"
 ---
 # <a name="spatial-mesh"></a>空間網格
 

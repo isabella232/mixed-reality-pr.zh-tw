@@ -1,19 +1,19 @@
 ---
-title: 設計全像顯示器的內容
+title: 設計全像攝影顯示器的內容
 description: 全像顯示器的設計方針和最佳作法
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: UI 設計、全像顯示、內容設計、深色主題、淺色主題
-ms.openlocfilehash: 627ffdd0a413ad3140c29e9b1c7bb69c9dc249cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UI 設計、全像展示、內容設計、深色主題、淺色主題、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、圖元
+ms.openlocfilehash: ea3fbda7aff80f0878521deb433c88b16abeab19
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680476"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702634"
 ---
-# <a name="designing-content-for-holographic-display"></a>設計全像顯示器的內容
+# <a name="designing-content-for-holographic-display"></a>設計全像攝影顯示器的內容
 
 ![Ulnar 側邊位置](images/UX_Hero_DarkTheme.jpg)
 

@@ -5,20 +5,20 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、HoloLens、全像影像、設計、互動
-ms.openlocfilehash: f902639e66246c9184750ebc58dbad1c04b2bb5a
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality、HoloLens、全像投影、設計、互動、混合現實耳機、windows Mixed reality 耳機、什麼是增強的現實
+ms.openlocfilehash: 6407770a818bc294cf615201a837218173b963d0
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631466"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702244"
 ---
 # <a name="what-is-a-hologram"></a>什麼是全像投影？
 
 <iframe width="940" height="530" src="https://www.youtube.com/embed/MVXH5V8MVQo" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 
-HoloLens 可讓您建立像是在世界各地出現在世界各地的全像 **影像** 、像是真實物件一樣的聲音和音效物件。 全像投影會回應您的 [注視](../design/gaze-and-commit.md)、 [手勢](../design/gaze-and-commit.md#composite-gestures) 和 [語音命令](../design/voice-input.md)，並且可以與您的 [真實世界表面](../design/spatial-mapping.md) 互動。 透過全像投影，您可以建立屬於自己世界的數位物件。
+HoloLens 可讓您建立像是在世界各地出現在世界各地的全像 **影像**、像是真實物件一樣的聲音和音效物件。 全像投影會回應您的 [注視](../design/gaze-and-commit.md)、 [手勢](../design/gaze-and-commit.md#composite-gestures) 和 [語音命令](../design/voice-input.md)，並且可以與您的 [真實世界表面](../design/spatial-mapping.md) 互動。 透過全像投影，您可以建立屬於自己世界的數位物件。
 
 <br>
 
@@ -73,7 +73,7 @@ HoloLens 可讓您建立像是在世界各地出現在世界各地的全像 **�
 部分的全像是以使用者為依據。 無論使用者在何處進行，這些都是相對於使用者的標記投影位置。 您甚至可以選擇將一段時間帶到一段時間，然後在到達另一個房間之後，將它放在牆上。
 
 **最佳做法**
-* 在某些案例中，您可能會要求在整個體驗中，全像全像的全像是， 這種定位有兩種高階方法。 讓我們將其稱為「 **顯示鎖定** 」和「 **主體鎖定** 」。
+* 在某些案例中，您可能會要求在整個體驗中，全像全像的全像是， 這種定位有兩種高階方法。 讓我們將其稱為「 **顯示鎖定** 」和「 **主體鎖定**」。
    * 顯示鎖定的內容會 positionally 「鎖定」至裝置顯示。 這很難處理許多原因，包括非自然感覺「clingyness」，讓許多使用者感到沮喪，並且想要「搖動」。 一般情況下，許多設計師都發現更適合用來避免顯示鎖定的內容。
    * 主體鎖定的方法遠 forgivable。 本文-鎖定是指將全像行動網卡至使用者的內文或注視向量，但位於使用者周圍的3d 空間中。 許多經驗都採用了內文鎖定行為，其中的全像是使用者注視的，這可讓使用者旋轉其內文，並在空間中移動，而不會遺失全像影像。 合併延遲有助於讓全息圖移動感覺更自然。 比方說，Windows 全像是 Windows 全像的時候，在使用者的外觀鎖定之後，會在使用者看起來像是一種非常有彈性的延遲，在使用者關閉其前端時使用變化。
 * 將全像觀賞距離的全像是大約是1-2 的計量離 head。

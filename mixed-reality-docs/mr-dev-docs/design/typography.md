@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、樣式、字型、印刷樣式、ui、ux
-ms.openlocfilehash: 59c7796998ac01fcbb5c9dc418da6454c8c74d12
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、樣式、字型、印刷樣式、ui、ux、文字、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: c0e3b23c52925b6fe64dccc7087613e8cd49e851
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680401"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703244"
 ---
 # <a name="typography"></a>印刷樣式
 

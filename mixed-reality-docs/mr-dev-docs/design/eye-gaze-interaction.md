@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: 眼睛追蹤、混合現實、輸入、眼睛
-ms.openlocfilehash: 57b90142fc47b72030f9b767370fd84a5c7d5b14
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 眼睛追蹤、混合現實、輸入、眼睛、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、互動
+ms.openlocfilehash: 59dded6ca23b9adc075dc02d642ce7761f93bcfb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679965"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702544"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 上的眼睛架構互動
 
@@ -70,7 +70,7 @@ HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。
 雖然您可以使用眼睛來建立滿足的使用者體驗，讓您感覺像是 superhero，但您也一定要知道這不是什麼好用。 以下將討論一些需要考慮的挑戰，以及如何在使用眼睛輸入時解決這些 *挑戰* ： 
 
 - **您的眼睛是「永遠開啟** 」當您開啟眼睛蓋時，您的眼睛會開始 fixating 環境中的事物。 因為您已查看太長的時間，所以會對每個外觀做出反應，並不慎發出動作，因此會產生 unsatisfying 體驗。
-因此，我們建議您合併眼睛與 *語音命令* 、 *手勢手勢* 、 *按鈕點擊* 或延伸停留，以觸發選取目標 (如需詳細資訊，請參閱 [眼睛和認可](gaze-and-commit-eyes.md)) 。
+因此，我們建議您合併眼睛與 *語音命令*、 *手勢手勢*、 *按鈕點擊* 或延伸停留，以觸發選取目標 (如需詳細資訊，請參閱 [眼睛和認可](gaze-and-commit-eyes.md)) 。
 此解決方案也可讓使用者自由地查看，而不會因為 involuntarily 觸發某個東西而不會產生任何負荷。 當您在查看目標時設計視覺和聽覺的意見反應時，也應該考慮這個問題。
 不要讓使用者使用立即的彈出效果或暫留音效。 奧妙是索引鍵。 我們將在討論 [設計建議](eye-gaze-interaction.md#design-recommendations)時，討論下面的一些最佳作法。
 

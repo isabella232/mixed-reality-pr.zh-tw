@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (第1代) 、HoloLens 2、混合的現實、資料指標、目標、注視、手勢
-ms.openlocfilehash: 6fb5f335e192ce7664eab0099dc5d6aa6ed2420d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens (第1代) 、HoloLens 2、混合的現實、游標、目標、注視、手勢、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、放射片、輸入
+ms.openlocfilehash: db895c7aad177d7ddd2eb371392812b1d7e4d039
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680477"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702644"
 ---
 # <a name="cursors"></a>資料指標
 
@@ -21,7 +21,7 @@ ms.locfileid: "91680477"
 
 資料指標提供的意見反應可讓使用者預測系統的回應方式、使用該信號作為意見反應，以便更妥善地傳達裝置的意圖，並對其互動提供更自信的能力。
 
-有3種資料指標： **手指、光線** 和 **頭部** 。 這些指標資料指標在 HoloLens、HoloLens 2 和沉浸式耳機上，使用不同的輸入形式。 以下是要針對每種類型的耳機和互動模型使用哪一種資料指標類型的指引。 在 (MRTK) 的混合現實工具組中，我們建立了拖放資料指標模組，以協助您建立正確的指標體驗。
+有3種資料指標： **手指、光線** 和 **頭部**。 這些指標資料指標在 HoloLens、HoloLens 2 和沉浸式耳機上，使用不同的輸入形式。 以下是要針對每種類型的耳機和互動模型使用哪一種資料指標類型的指引。 在 (MRTK) 的混合現實工具組中，我們建立了拖放資料指標模組，以協助您建立正確的指標體驗。
 
 
 ## <a name="device-support"></a>裝置支援

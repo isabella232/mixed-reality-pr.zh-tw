@@ -5,13 +5,13 @@ author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
-keywords: 混合的現實、手勢、互動、設計
-ms.openlocfilehash: 909472abfec34f75a2f5fa810f87003978cc6a5e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、手勢、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、bloom
+ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680437"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703264"
 ---
 # <a name="start-gesture"></a>開始手勢
 
@@ -97,7 +97,7 @@ ms.locfileid: "91680437"
 > 1. 您必須更新為2019年11月更新 (組建 18363.1039) 或更新版本。
 > 1. 您的眼睛必須在裝置上校正，讓眼睛追蹤能夠正常運作。 如果您看不到 [開始] 圖示周圍的軌道點，則裝置上不會校正您的眼睛。
 
-您也可以只使用一手勢來執行開始手勢。 若要這樣做，請向您的手中拿出手，並查看您內部手腕上的 [ **開始] 圖示** 。 **當您隨時留意圖示時** ，請將您的 thumb 和索引手指放在一起。<br>
+您也可以只使用一手勢來執行開始手勢。 若要這樣做，請向您的手中拿出手，並查看您內部手腕上的 [ **開始] 圖示** 。 **當您隨時留意圖示時**，請將您的 thumb 和索引手指放在一起。<br>
 :::row:::
     :::column:::
         ![手腕按鈕就緒](images/wrist-button-ready.png)<br>

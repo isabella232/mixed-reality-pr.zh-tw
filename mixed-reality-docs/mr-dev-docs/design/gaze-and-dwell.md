@@ -1,25 +1,25 @@
 ---
-title: 注視和停留
+title: 目光和停駐
 description: " (眼睛/頭部) 注視和停留輸入模型的一般總覽"
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: 混合的現實、注視、停留、互動、設計、眼睛追蹤、head 追蹤
-ms.openlocfilehash: ee8b6487079a071fe84606949314f2dd315df45f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、注視、停留、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680909"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702194"
 ---
-# <a name="gaze-and-dwell"></a>注視和停留
+# <a name="gaze-and-dwell"></a>目光和停駐
 
 當手上拿著工具和組件時，手勢可以很繁瑣或不可能進行。
 在某些內容中，語音命令也可能不可靠，例如在過高的情況下。
 「注視」和「停留」提供了一種熟悉且簡單的主要機制，可讓您在 HoloLens 上使用並無人參與。
 此外，「注視」和「停留」是一項絕佳的回溯，與操作環境中的雜訊干擾或無回應條件無關。
-我們將看看兩種不同的眼睛 _和停留_ ： [前端和停留](gaze-and-dwell-head.md) ，以及 [眼睛和停留](gaze-and-dwell-eyes.md)。
+我們將看看兩種不同的眼睛 _和停留_： [前端和停留](gaze-and-dwell-head.md) ，以及 [眼睛和停留](gaze-and-dwell-eyes.md)。
 
 ## <a name="scenarios"></a>案例
 

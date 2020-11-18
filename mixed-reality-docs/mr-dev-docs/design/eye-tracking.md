@@ -5,13 +5,13 @@ author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
-keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正
-ms.openlocfilehash: 20e76188c6b64776d818f340f6aca0a725454dd8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
+ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679964"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702584"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -63,7 +63,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 <br>
 
 ## <a name="available-eye-tracking-data"></a>可用的眼睛追蹤資料
-在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的 [眼睛追蹤 API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) 所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_ 。
+在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的 [眼睛追蹤 API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) 所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_。
 如需有關如何存取眼睛追蹤資料的詳細資訊，請參閱我們的開發人員指南，以瞭解如何在您的 [DirectX](../develop/native/gaze-in-directx.md) 和 [Unity 中](https://aka.ms/mrtk-eyes)使用眼睛。
 
 預測的眼睛大約是在實際目標 (的視覺角度1.5 度以內，請參閱下圖) 。 由於預期會有些許的 imprecisions，因此開發人員應該規劃這項下限值周圍的一些邊界 (例如，2.0-3.0 度可能會導致) 更熟悉的體驗。 我們將在下方討論如何處理小型目標的選取。 為了讓眼球追蹤精準運作，每個使用者都必須接受眼球追蹤使用者校正。 
@@ -81,7 +81,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 ### <a name="user-intent"></a>使用者意圖    
 使用者查看位置和內容的相關資訊，可 **為其他輸入** 提供功能強大的內容，例如語音、手和控制器。
 這可以運用在各種不同的工作上。
-例如，這可以從快速且輕鬆地以場景為 **目標** ，只要查看一組影像，然後說「選取」 (也會 [看到「](gaze-and-commit.md) *選取* 」也看到) 或「 *put this ...* 」，然後查看使用者想要放置全像 *有* 。 您可以在[混合實境工具組 - 視線導向目標選取](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html)和[混合實境工具組 - 視線導向目標定位](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)中找到相關範例。
+例如，這可以從快速且輕鬆地以場景為 **目標**，只要查看一組影像，然後說「選取」 (也會 [看到「](gaze-and-commit.md) *選取*」也看到) 或「 *put this ...*」，然後查看使用者想要放置全像 *有*。 您可以在[混合實境工具組 - 視線導向目標選取](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html)和[混合實境工具組 - 視線導向目標定位](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)中找到相關範例。
 
 此外，使用者意圖的範例可能包括使用使用者查看的相關資訊，以增強與各有虛擬專員和互動式全息的互動。 例如，虛擬專員可能會根據目前已查看的內容，來調整可用的選項和其行為。 
 

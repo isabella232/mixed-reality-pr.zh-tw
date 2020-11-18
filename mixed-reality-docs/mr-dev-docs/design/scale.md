@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、樣式、設計
-ms.openlocfilehash: 7d35da2d86d8d3b7f444974d87e5aa10e58ed2c8
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Windows Mixed Reality、樣式、設計、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、調整、全像影像
+ms.openlocfilehash: e82211b0bee2214df7542d3129f95ea207f4b0e3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340656"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703374"
 ---
 # <a name="scale"></a>調整
 
@@ -51,7 +51,7 @@ ms.locfileid: "94340656"
 
 :::row:::
     :::column:::
-        Minecraft 使用類似的技巧 **[開發了概念體驗](https://minecraft.net/)** 。 藉由將虛擬視窗新增至房間內的實體介面，房間內的現有物件就會放在極大的環境內容中，而不是空間的實體規模限制。<br>
+        Minecraft 使用類似的技巧 **[開發了概念體驗](https://minecraft.net/)**。 藉由將虛擬視窗新增至房間內的實體介面，房間內的現有物件就會放在極大的環境內容中，而不是空間的實體規模限制。<br>
         <br>
         *影像： Minecraft 適用于 HoloLens 的概念體驗*
     :::column-end:::
@@ -80,19 +80,7 @@ ms.locfileid: "94340656"
 
 ---
 
-## <a name="next-discovery-checkpoint"></a>下次探索檢查點
-
-如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會結束形式突襲行動混合現實基礎的初始工作。 您可以看看產業合作夥伴在現實世界中的混合現實情況： 
-
-> [!div class="nextstepaction"]
-> [查看產業合作夥伴如何使用混合實境](../discover/get-started-with-mr.md#see-how-industry-partners-are-using-mixed-reality)
-
-或繼續進行設計旅程：
-
-> [!div class="nextstepaction"]
-> [開始您的設計旅程](../design/design.md)
-
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [色彩、光線和材質](../color,-light-and-materials.md)
 * [印刷樣式](typography.md)
 * [空間音效設計](spatial-sound-design.md)

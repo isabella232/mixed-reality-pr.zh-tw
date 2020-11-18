@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、3D 應用程式啟動器、沉浸式耳機、即時立方體
-ms.openlocfilehash: 884d05b8b8ef7e15f5c65a411cf500b0d4dc598c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、3D 應用程式啟動器、沉浸式耳機、即時立方體、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、UWP、Win32、光源、色彩
+ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680697"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703474"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>3D 應用程式啟動程式設計指引
 
@@ -118,7 +118,7 @@ ms.locfileid: "91680697"
         ![具有內建圖的型別可以正常運作 ](images/flattypeandbkg-640px.png) *，而且內建的背景可以正常運作*
     :::column-end:::
     :::column:::
-        ![如果您將側邊的拉伸類型加上陰影，則 ](images/20171016-160221-mixedreality-640px.jpg) *如果您將側邊加上陰影* ，則拉伸類型可以正常運作
+        ![如果您將側邊的拉伸類型加上陰影，則 ](images/20171016-160221-mixedreality-640px.jpg) *如果您將側邊加上陰影*，則拉伸類型可以正常運作
     :::column-end:::
 :::row-end:::
 

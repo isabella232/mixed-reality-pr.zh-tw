@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: vr、硬體、規格、規格、技術、感應器、光學、顯示器
-ms.openlocfilehash: 0e700ca95cb62b0909cf0ac434712b9690ec9571
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: vr、硬體、規格、規格、技術、感應器、光學、顯示器、混合現實耳機、虛擬實境耳機、何謂虛擬實境、沉浸式耳機
+ms.openlocfilehash: 6f4be5954c8a8fe8ca0497d1a1c5d9ed09edb0c7
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631456"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703434"
 ---
 # <a name="immersive-headset-hardware-details"></a>沉浸式頭戴裝置硬體詳細資料
 

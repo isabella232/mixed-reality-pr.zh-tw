@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof 控制器，移動控制器
-ms.openlocfilehash: 74ea6c8879d5deb1271e9a2169cae013b03bab5b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 6dof 控制器、移動控制器、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、滾動、抓住、州
+ms.openlocfilehash: a1af86ca174bc574ab8030d8aebd128649b6515f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679484"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703154"
 ---
 # <a name="motion-controllers"></a>運動控制器
 
@@ -88,7 +88,7 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
 
 1. 將 2 AA 電池插入控制器的背面。 請暫時讓電池蓋住。
 2. 如果您使用的是外部 USB 藍牙介面卡，而不是內建的藍牙無線電，請先檢查 [藍牙的最佳作法](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) ，再繼續進行。 針對具有內建無線電的桌面設定，請確定天線已連線。
-3. 開啟 [ **Windows 設定**  ->  **裝置**  ->  ]， **新增藍牙或其他裝置**  ->  **藍牙** ，並移除任何先前的「動作控制器–右方」和「移動控制器-左方」實例。 另請檢查清單底部的其他裝置類別。
+3. 開啟 [ **Windows 設定**  ->  **裝置**  ->  ]，**新增藍牙或其他裝置**  ->  **藍牙**，並移除任何先前的「動作控制器–右方」和「移動控制器-左方」實例。 另請檢查清單底部的其他裝置類別。
 4. 選取 [ **新增藍牙或其他裝置** ]，並查看其開始探索藍牙裝置。
 5. 按住控制器的 Windows 按鈕以開啟控制器，在 buzzes 之後發行。
 6. 按住電池區間中的配對按鈕 (索引標籤) 直到 Led 開始閃爍。
@@ -104,7 +104,7 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
     :::column-end:::
 :::row-end:::
    
-8. 您會看到控制器出現在 [ **滑鼠、鍵盤、& 畫筆] 類別** 下的 [藍牙設定] **中。** 至此，您可能會收到一次固件更新–請參閱 [下一節](motion-controllers.md#updating-controller-firmware)。
+8. 您會看到控制器出現在 [**滑鼠、鍵盤、& 畫筆] 類別** 下的 [藍牙設定]**中。** 至此，您可能會收到一次固件更新–請參閱 [下一節](motion-controllers.md#updating-controller-firmware)。
 9. 重新連接電池蓋。
 10. 針對第二個控制器重複步驟1-9。
 
@@ -146,8 +146,8 @@ Windows Mixed Reality 的移動控制器會使用沉浸式耳機中的感應器�
 
 ## <a name="gazing-and-pointing"></a>撥雲見日和指標
 
-Windows Mixed Reality 支援兩個重要的互動模型： **注視和認可** 以及認可和 **認可** ：
-* 使用「 **注視」和「認可** 」時，使用者會以其 [注視](gaze-and-commit.md) 的物件為目標，然後選取具有手氣的物件、遊戲台、clicker 或語音。
+Windows Mixed Reality 支援兩個重要的互動模型： **注視和認可** 以及認可和 **認可**：
+* 使用「 **注視」和「認可**」時，使用者會以其 [注視](gaze-and-commit.md) 的物件為目標，然後選取具有手氣的物件、遊戲台、clicker 或語音。
 * 使用 **point 和 commit** 時，使用者可以在目標物件上以具有指標能力的移動控制器為目標，然後選取具有控制器觸發程式的物件。
 
 支援指向移動控制器的應用程式也應該盡可能啟用注視導向互動，讓使用者可以選擇他們所使用的輸入裝置。
@@ -162,19 +162,19 @@ Windows Mixed Reality 支援兩個重要的互動模型： **注視和認可** �
 
 Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控制器的設計各有不同之處，就是使用者的位置與應用程式在轉譯控制器時應使用的自然「向前」方向之間的關聯性。
 
-為了更妥善地表示這些控制器，您可以針對每個互動來源進行兩種調查：底框 **姿勢** 和 **指標姿勢** 。
+為了更妥善地表示這些控制器，您可以針對每個互動來源進行兩種調查：底框 **姿勢** 和 **指標姿勢**。
 
 ### <a name="grip-pose"></a>握住姿勢
 
 底框 **姿勢** 代表 HoloLens 所偵測到的掌上的位置，或是持有移動控制器的掌上。
 
-在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件** ，例如寶劍或機槍。 視覺化運動控制器時也會使用底框姿勢，因為移動控制器的 Windows 所提供的 **呈現模型** 會使用底框姿勢作為其原點和旋轉中心。
+在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件**，例如寶劍或機槍。 視覺化運動控制器時也會使用底框姿勢，因為移動控制器的 Windows 所提供的 **呈現模型** 會使用底框姿勢作為其原點和旋轉中心。
 
 此底框姿勢的定義方式明確如下：
-* 把手 **位置** ：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 運動控制器上，此位置通常會與 [抓住] 按鈕對齊。
-* 底 **圖方向的右軸** ：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
-* 底圖 **方向的向前軸** ：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
-* 底圖 **方向的向上軸** ：右邊和向前定義所隱含的向上軸。
+* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 運動控制器上，此位置通常會與 [抓住] 按鈕對齊。
+* 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
+* 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
+* 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
 
 ### <a name="pointer-pose"></a>指標姿勢
 
@@ -223,7 +223,7 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 ## <a name="interactions-low-level-spatial-input"></a>互動：低層級空間輸入
 
-跨手和移動控制器的核心互動是 **選取** 、 **功能表** 、 **抓住** 、 **觸控板** 、 **操縱杆** 和 **首頁** 。
+跨手和移動控制器的核心互動是 **選取**、 **功能表**、 **抓住**、 **觸控板**、 **操縱杆** 和 **首頁**。
 * **Select** 是啟動全像下一次發行的全像是的主要互動。 針對移動控制器，您可以使用控制器的觸發程式來執行選取的按鍵。 其他執行選取的方法是說 [語音命令](voice-input.md) 「選取」。 您可以在任何應用程式中使用相同的選取互動。 將 Select 視為等同于滑鼠點擊的專案;您只需要學習一次，然後再套用到所有應用程式的通用動作。
 * **功能表** 是在物件上作用的次要互動，用來提取內容功能表或採取其他次要動作。 使用移動控制器，您可以使用控制器的 *功能表* 按鈕來執行功能表動作。  (也就是其上有漢堡「功能表」圖示的按鈕) 
 * **Grasp** 深入瞭解使用者如何直接在物件上採取動作來操作它們。 使用移動控制器，您可以藉由緊密地擠壓第一個來執行理解動作。 移動控制器可能會偵測到有抓取按鈕、棕櫚觸發程式或其他感應器的理解。
@@ -233,7 +233,7 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 ## <a name="composite-gestures-high-level-spatial-input"></a>複合手勢：高層級空間輸入
 
-您可以在一段時間內追蹤 [手手勢](gaze-and-commit.md#composite-gestures) 和移動控制器，以偵測一組常見的高階 **[複合手勢](gaze-and-commit.md#composite-gestures)** 。 這可讓您的應用程式偵測到高階的 **點擊** 、 **保存** 、 **操作** 和 **導覽** 手勢，無論使用者是否最終使用手或控制器。
+您可以在一段時間內追蹤 [手手勢](gaze-and-commit.md#composite-gestures) 和移動控制器，以偵測一組常見的高階 **[複合手勢](gaze-and-commit.md#composite-gestures)**。 這可讓您的應用程式偵測到高階的 **點擊**、 **保存**、 **操作** 和 **導覽** 手勢，無論使用者是否最終使用手或控制器。
 
 ## <a name="rendering-the-motion-controller-model"></a>轉譯移動控制器模型
 
@@ -283,4 +283,4 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 * [軌跡](gaze-and-commit.md#composite-gestures)
 * [愛好者指南：您的 Windows Mixed Reality 首頁](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
 * [愛好者指南：在 Windows Mixed Reality 中使用遊戲 & 應用程式](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [內出追蹤的運作方式](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [內外追蹤的運作方式](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)

@@ -5,13 +5,13 @@ author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
-keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 6185d434b1687675f9ae46313277f61cf6d5e1f8
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 場景理解、空間對應、Windows Mixed Reality、Unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、遮蔽、SDK
+ms.openlocfilehash: 80fb01707d3265aa3dac23d75ea92034115d3c94
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679420"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703364"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -109,7 +109,7 @@ ms.locfileid: "91679420"
 
 場景理解會產生防水網格，以使用語義分解空間，特別是為了解決空間對應網格所強加的物理限制。 防水結構可確保一律會達到物理光線轉換，而且語義分解可讓您更輕鬆地產生室內導覽的導覽網格。 如 [遮蔽](#occlusion)一節中所述，使用 EnableSceneObjectMeshes 和 EnableWorldMesh 建立場景將會產生最實際的完整網狀。 環境網格的 [防水] 屬性會防止點擊率測試失敗，而網格資料可確保物理與場景中的所有物件互動，而不是只與房間結構互動。
 
-### <a name="navigation"></a>巡覽
+### <a name="navigation"></a>導覽
 
 以語義類別分解的平面網格是導覽和路徑規劃的理想結構，可簡化 [空間對應導覽](spatial-mapping.md#navigation) 總覽中所述的許多問題。 在場景中計算的 SceneMesh 物件已經由介面型別取消組成，以確保 nav 的產生僅限於可進行的表面。 由於樓層結構的簡易性，3d 引擎（例如 Unity）中的動態 nav 網狀架構會根據即時需求來實現。
 

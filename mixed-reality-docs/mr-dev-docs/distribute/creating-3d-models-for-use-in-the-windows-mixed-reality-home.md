@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 3D、模型化、模型化指引、資產需求、撰寫方針、啟動器、3D 啟動器、材質、材質、複雜度、三角形、網格、多邊形、polycount、限制
-ms.openlocfilehash: 606726b9c205ccdf3eacafca96b2bd9ccae43e82
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D、模型化、模型化指引、資產需求、撰寫指導方針、啟動器、3D 啟動器、材質、材質、複雜度、三角形、網格、多邊形、polycount、限制、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781560"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703464"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>建立用於住家的 3D 模型
 
@@ -193,7 +193,7 @@ LODs 會根據每個」 LOD 上設定的螢幕涵蓋範圍值所驅動的系統�
 
 ### <a name="tools"></a>工具
 首先，請下載下列工具（如果您還沒有的話）。 這些工具可讓您輕鬆地開啟任何 glTF 模型、預覽、變更，以及將其存回 glTF 或 glb：
-1. [Visual Studio Code](https://code.visualstudio.com/)
+1. [Visual Studio Code](https://code.visualstudio.com/) \(英文\)
 2. [適用于 Visual Studio Code 的 glTF 工具](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 

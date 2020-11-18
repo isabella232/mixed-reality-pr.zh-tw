@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: 座標系統、空間座標系統、全球規模、全球、規模、位置、方向、錨點、空間錨點、已全球鎖定、正進行全球鎖定、持續性、共用
-ms.openlocfilehash: a1108aceb91ec80d20b4cac043477ee92527035b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 座標系統、空間座標系統、世界規模、世界、縮放、位置、方向、錨點、空間錨點、世界鎖定、全球鎖定、持續性、共用、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: 92694023a3c7c7266b0f5d927180df20692b9d45
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679401"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703304"
 ---
 # <a name="spatial-anchors"></a>空間錨點
 

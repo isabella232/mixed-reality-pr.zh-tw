@@ -5,17 +5,17 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 沉浸式視圖、2D 視圖、平板、應用程式
-ms.openlocfilehash: e625eca3adb7cd4a9dcd1f971917f008d5daa7d2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 沉浸式觀賞、2D 視圖、平板、應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 1380c32dc89e472428c86be30b2fce82a946f3cc
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680005"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702915"
 ---
 # <a name="app-views"></a>應用程式檢視
 
-Windows 應用程式可包含兩種類型的視圖： **沉浸式視圖** 和 **2d 視圖** 。 應用程式可以在其各種沉浸式視圖和2D 視圖之間切換，在監視器上以視窗或在耳機中顯示2D 的視圖。 至少有一個沉浸式視圖的應用程式會分類為 **混合現實應用程式** 。 從未具有沉浸式觀賞的應用程式是 **2d 應用程式** 。
+Windows 應用程式可包含兩種類型的視圖： **沉浸式視圖** 和 **2d 視圖**。 應用程式可以在其各種沉浸式視圖和2D 視圖之間切換，在監視器上以視窗或在耳機中顯示2D 的視圖。 至少有一個沉浸式視圖的應用程式會分類為 **混合現實應用程式**。 從未具有沉浸式觀賞的應用程式是 **2d 應用程式**。
 
 ## <a name="immersive-views"></a>沉浸式視圖
 

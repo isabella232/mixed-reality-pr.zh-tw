@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D，標誌，圖示，模型，啟動器，3D 啟動器，磚，即時 cube，深層連結，secondarytile，次要磚，UWP
-ms.openlocfilehash: 22f2a6eebdd379b7d7959f9708bb55bb7de6b85e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D、標誌、圖示、模型、啟動器、3D 啟動器、磚、即時立方體、深層連結、secondarytile、次要磚、UWP、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、XML、周框方塊、unity
+ms.openlocfilehash: 926d0b3bb337517b65986f85f6977b3dd1975735
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679845"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703194"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>實作 3D 應用程式啟動器 (UWP 應用程式)
 

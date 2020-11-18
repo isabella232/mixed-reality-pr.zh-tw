@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: 混合的現實、無人參與、注視、注視目標、互動、設計
-ms.openlocfilehash: 47e2bd8fef52a36601d58f321def9c066db259e5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Mixed Reality、免持手、注視、注視目標、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、語音輸入、可用性
+ms.openlocfilehash: 7f4d3a0ec8d2e7435f54164006a8bd122b1ebcba
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680861"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702134"
 ---
 # <a name="hands-free"></a>免持式
 

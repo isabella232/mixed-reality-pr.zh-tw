@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
-keywords: 作法、配件、藍牙、bt、控制器、遊戲台、clicker、xbox
-ms.openlocfilehash: 7f51264a3914d028c9a027d70d5aa1999582110a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 作法、配件、藍牙、bt、控制器、遊戲台、clicker、xbox、硬體、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移動控制器
+ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682589"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702004"
 ---
 # <a name="hardware-accessories"></a>硬體配件
 
@@ -19,7 +19,7 @@ Windows Mixed Reality 裝置支援配件。 您可以使用藍牙或 USB 將支�
 
 如需搭配 HoloLens 使用藍牙附屬元件的相關資訊，請參閱 [連接到 bluetooth 和 USB-C 裝置](https://docs.microsoft.com/hololens/hololens-connect-devices)。
 
-Windows Mixed Reality 沉浸式耳機需要[輸入的附屬和](../design/gaze-and-commit.md)[聲音](../design/voice-input.md)以外的配件。 支援的配件包括 **鍵盤和滑鼠** 、 **遊戲台** 和 **[移動控制器](../design/motion-controllers.md)** 。
+Windows Mixed Reality 沉浸式耳機需要[輸入的附屬和](../design/gaze-and-commit.md)[聲音](../design/voice-input.md)以外的配件。 支援的配件包括 **鍵盤和滑鼠**、 **遊戲台** 和 **[移動控制器](../design/motion-controllers.md)**。
 
 ## <a name="pairing-bluetooth-accessories"></a>配對藍牙配件
 

@@ -5,17 +5,17 @@ author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
-keywords: 混合的現實、注視、注視目標、互動、設計、眼睛追蹤、head 追蹤
-ms.openlocfilehash: 887d1a30a974bdd643889959a1fee55e96d7b16a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、注視、注視目標、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: a901e505d8e282e52078f5635627fbc2018a27b5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680940"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702404"
 ---
 # <a name="gaze-and-commit"></a>注視並認可
 
-「 _注視」和「認可_ 」是一種基本的輸入模型，與使用滑鼠： _點 & 按一下_ 來與電腦互動的方式密切相關。
+「_注視」和「認可_」是一種基本的輸入模型，與使用滑鼠：_點 & 按一下_ 來與電腦互動的方式密切相關。
 在這個頁面中，我們會介紹兩種類型的注視輸入 (前端和眼睛) 以及不同類型的認可動作。 
 您可以使用間接操作將 _注視和 commit_ 視為最遠的輸入模型。
 這表示它最適合用來與不觸及的全像內容互動。
@@ -257,7 +257,7 @@ Xbox 適應性控制器會使用 [A] 按鈕，以次要輸入的形式執行 cli
 當您想1:1 要讓全像全像移動、調整大小或旋轉全像移動、調整大小或旋轉影像時，可以使用操作手勢來移動、調整大小或旋轉。 這類 1:1 移動的用途之一是要讓使用者可以實際繪圖。
 操作手勢的初始定向應經由注視或指向來完成。 當點一下和按住開始之後，就會以手動方式處理物件的任何操作，讓使用者在操作時進行查詢。
 
-### <a name="navigation"></a>巡覽
+### <a name="navigation"></a>導覽
 瀏覽手勢的運作方式如同虛擬搖桿，可用來瀏覽 UI 小工具，例如放射狀功能表。 您可點選並按住來啟動手勢，然後在標準化 3D Cube (在初次按壓時置中) 中移動您的手。 您可以將您的手沿著 X、 Y 或 Z 軸從值 -1 移到 1 (而 0 表示起點)。
 瀏覽可用來建置以速度為基礎的連續捲動或縮放手勢，類似於藉由按一下滑鼠中間按鈕，然後上下移動滑鼠來捲動 2D UI。
 

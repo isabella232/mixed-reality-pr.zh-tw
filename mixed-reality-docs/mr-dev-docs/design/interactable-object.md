@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
-keywords: 混合的現實、控制項、互動、ui、ux
-ms.openlocfilehash: 6458f4b1c80c8606d07d610f509ed610a0ca4268
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、控制項、互動、提示、ui、ux、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
+ms.openlocfilehash: e298ce7fa46688a734c55a6674c03b89a4e7b5f3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679529"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703224"
 ---
 # <a name="interactable-object"></a>可互動的物件
 
@@ -93,12 +93,12 @@ ms.locfileid: "91679529"
 HoloLens 2 支援可讓您與物件互動的明確追蹤輸入。 如果沒有 haptic 的意見反應和深度的深度認知，有時可能很難分辨出您手中的手遠距離物件或您是否觸及。 請務必提供足夠的視覺提示，以傳達物件的狀態，以及特別與該物件相關的實際狀態。
 
 使用視覺效果的意見反應來傳達下列內容：
-* **預設 (觀察)** ：物件的預設閒置狀態。
-* **停留** ：當手近了全像影像時，變更視覺效果以傳達該手的目標是全像全像。 
-* **距離和互動點** ：當手進行全像投影時，設計意見反應以傳達預期的互動點，以及從物件到手指的距離
-* **連絡人開始** ：變更視覺效果 (淺色、色彩) ，以傳達觸控已發生的情況
-* **Grasped** ：在 Grasped 物件時，變更視覺效果 (淺色、色彩) 
-* **連絡人結束** ：當觸控結束時，變更視覺效果 (淺色、色彩) 
+* **預設 (觀察)**：物件的預設閒置狀態。
+* **停留**：當手近了全像影像時，變更視覺效果以傳達該手的目標是全像全像。 
+* **距離和互動點**：當手進行全像投影時，設計意見反應以傳達預期的互動點，以及從物件到手指的距離
+* **連絡人開始**：變更視覺效果 (淺色、色彩) ，以傳達觸控已發生的情況
+* **Grasped**：在 Grasped 物件時，變更視覺效果 (淺色、色彩) 
+* **連絡人結束**：當觸控結束時，變更視覺效果 (淺色、色彩) 
 
 <br>
 
@@ -189,10 +189,10 @@ HoloLens 2 支援可讓您與物件互動的明確追蹤輸入。 如果沒有 h
 ### <a name="audio-cues"></a>音訊提示
 
 針對直接互動，適當的音訊意見反應可大幅改善使用者體驗。 使用音訊意見反應來傳達下列內容：
-* **連絡人開始** ：觸控開始時播放音效
-* **連絡人結束** ：觸控端播放音效
-* **抓取開始** ：抓取開始時播放音效
-* **抓取結束** ：抓取結束時播放音效
+* **連絡人開始**：觸控開始時播放音效
+* **連絡人結束**：觸控端播放音效
+* **抓取開始**：抓取開始時播放音效
+* **抓取結束**：抓取結束時播放音效
 
 <br>
 
@@ -266,7 +266,7 @@ HoloLens 2 支援可讓您與物件互動的明確追蹤輸入。 如果沒有 h
 在 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 中，您可以使用腳本 [**互動**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 讓物件回應各種類型的輸入互動狀態。 它支援各種類型的主題，可讓您藉由控制物件屬性（例如色彩、大小、材質和著色器）來定義視覺狀態。
 
 * [互動](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [Button](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [按鈕](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
 * [手邊互動範例場景](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit 的標準著色器提供各種選項，例如可協助您建立視覺和音訊提示的 **相近光源** 。

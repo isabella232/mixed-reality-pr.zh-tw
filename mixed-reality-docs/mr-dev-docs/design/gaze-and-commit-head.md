@@ -5,13 +5,13 @@ author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
-keywords: Mixed Reality, 注視, 注視定向, 互動, 設計
-ms.openlocfilehash: 76223dd375e76d943183bc745792e2cb9d3d0601
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、注視、注視目標、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、目標、焦點、平滑
+ms.openlocfilehash: d913ac81e20962d38178223a050fdccfb51d8632
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679957"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702384"
 ---
 # <a name="head-gaze-and-commit"></a>頭部注視並認可
 _前端和認可_ 是 [注視和認可](gaze-and-commit.md) 輸入模型的特殊案例，其牽涉到將物件的方向指向順向 (前端方向) ，然後使用次要輸入（例如手勢的點擊點或語音命令「選取」）進行處理。 

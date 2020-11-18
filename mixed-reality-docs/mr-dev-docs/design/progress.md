@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、控制項、ui、ux
-ms.openlocfilehash: 751a8fe9a196f894ac0ef9e3dcca64dec1c97498
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、控制項、ui、ux、進度指標、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 93cdd7054c05af9f8621e091fa3d4b59d9e65ee3
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679452"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703384"
 ---
 # <a name="progress-indicator"></a>進度指示器
 
@@ -27,7 +27,7 @@ ms.locfileid: "91679452"
 
 ## <a name="types-of-progress"></a>進度的類型
 
-請務必提供有關所發生情況的使用者資訊。 如果您的應用程式沒有提供良好的視覺效果意見反應，則在混合現實的使用者中，實體環境或物件很容易就會有問題。 在需要幾秒鐘的情況下（例如，當資料正在載入或場景正在更新時），最好是顯示視覺指標。 有兩個選項可讓使用者顯示作業正在進行中– **進度** 列或 **進度環形** 。
+請務必提供有關所發生情況的使用者資訊。 如果您的應用程式沒有提供良好的視覺效果意見反應，則在混合現實的使用者中，實體環境或物件很容易就會有問題。 在需要幾秒鐘的情況下（例如，當資料正在載入或場景正在更新時），最好是顯示視覺指標。 有兩個選項可讓使用者顯示作業正在進行中– **進度** 列或 **進度環形**。
 
 :::row:::
     :::column:::

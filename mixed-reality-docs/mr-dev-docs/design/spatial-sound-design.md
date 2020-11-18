@@ -5,13 +5,13 @@ author: kegodin
 ms.author: kegodin
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality、空間音效、設計、樣式
-ms.openlocfilehash: 8bb48aad2d4582696241bc5444beabc88ca5a7d9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、空間音效、設計、樣式、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、手勢、互動、衰減
+ms.openlocfilehash: 503a59eb6a71aea0e1ec043ca6e3196f821f211a
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680464"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703278"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>如何在混合現實應用程式中使用音效
 

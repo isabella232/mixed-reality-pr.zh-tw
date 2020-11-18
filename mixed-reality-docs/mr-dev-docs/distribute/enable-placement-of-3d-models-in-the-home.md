@@ -5,15 +5,15 @@ author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
-keywords: 3D，模型，放在首頁、地點、世界、模型、混合實境首頁、web、應用程式
-ms.openlocfilehash: 4ea720fd9fc404d4730733b6b65df13acdf1a51a
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: 3D，型號，放置於家裡、地點、世界、模型化、混合實境首頁、web、應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 192c403ce50c3a47fb19f644af78d1150bb9aa3f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781562"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703184"
 ---
-# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>在混合實境首頁中啟用3D 模型的放置
+# <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>在混合實境首頁中啟用 3D 模型的放置
 
 > [!NOTE]
 > 這項功能已新增為 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)的一部分。 較舊版本的 Windows 與這項功能不相容。

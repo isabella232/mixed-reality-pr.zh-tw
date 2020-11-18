@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
-keywords: 混合的現實、控制項、互動、ui、ux
-ms.openlocfilehash: 917f62ff3c066896751adceeeefc0c5856e418c9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、平板、MRTK、混合現實工具組
+ms.openlocfilehash: 85aa91793da9022080c95775bbfd1e4775ea05d8
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679412"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703326"
 ---
 # <a name="slate"></a>平板
 

@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Windows Mixed Reality，應用程式行，周框方塊
-ms.openlocfilehash: 381efae8c831fda2152eb96cf762bf4f94c34c57
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality，應用程式橫條，周框方塊，混合現實耳機，windows Mixed Reality 耳機，虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680093"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703054"
 ---
 # <a name="bounding-box-and-app-bar"></a>週框方塊和應用程式列
 ![「周框」是混合現實物件操作的標準介面。](images/UX_Hero_BoundingBox.jpg)<br>

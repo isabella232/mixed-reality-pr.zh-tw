@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: shell、os、platform、cliff 房子、房屋、home、環境、開始、開始功能表、首頁功能表、釘選、應用程式、啟動應用程式、放置應用程式、傳送、移動、流覽
-ms.openlocfilehash: 1f2ec91edca100e9253a6c8e65f4b3f9d2b2feeb
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: shell、os、platform、cliff 房子、房屋、home、環境、開始、開始功能表、首頁功能表、釘選、應用程式、啟動應用程式、放置應用程式、傳送、移動、流覽、混合現實耳機、虛擬實境耳機、何謂虛擬實境
+ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681212"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703444"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>瀏覽 Windows Mixed Reality 住家
 
@@ -48,11 +48,11 @@ ms.locfileid: "91681212"
 
 ## <a name="moving-and-adjusting-apps"></a>移動及調整應用程式
 
-選取應用程式行上的 [ **調整** ]，以顯示移動、調整和旋轉混合現實內容的控制項。 當您完成時，請選取 [ **完成** ]。
+選取應用程式行上的 [ **調整** ]，以顯示移動、調整和旋轉混合現實內容的控制項。 當您完成時，請選取 [ **完成**]。
 
 ![在調整模式中的商店平板 (blue frame) 。 請注意， (top) 的應用程式行已變更為包含 [完成] 和 [移除] 按鈕。](images/adjust-500px.png)
 
-不同的應用程式可能會有應用程式行上的其他選項。 例如，Microsoft Edge 具有 *滾動* 條、 *拖曳* 和 *縮放* 選項。 
+不同的應用程式可能會有應用程式行上的其他選項。 例如，Microsoft Edge 具有 *滾動* 條、 *拖曳* 和 *縮放* 選項。 
 
 ![在 HoloLens 上執行之2D 應用程式的應用程式行](images/holobar-500px.png)
 
@@ -60,9 +60,9 @@ ms.locfileid: "91681212"
 
 ## <a name="getting-around-your-home"></a>開始
 
-使用 **HoloLens** ，您可以在實際空間間移動，以在家裡四處移動。
+使用 **HoloLens**，您可以在實際空間間移動，以在家裡四處移動。
 
-有了 **沉浸式耳機** ，您也可以在 playspace 中，于虛擬世界的類似區域內進行移動和四處移動。 若要在較長的距離間移動，您可以使用控制器上的操縱杆來幾乎「進行」，也可以使用 *遙傳* 來立即跳過較長的距離。
+有了 **沉浸式耳機**，您也可以在 playspace 中，于虛擬世界的類似區域內進行移動和四處移動。 若要在較長的距離間移動，您可以使用控制器上的操縱杆來幾乎「進行」，也可以使用 *遙傳* 來立即跳過較長的距離。
 
 ![Windows Mixed Reality 首頁中的遙傳](images/teleportation-500px.png)
 
@@ -122,7 +122,7 @@ ms.locfileid: "91681212"
 Windows Mixed Reality 有一些內建的應用程式，例如：
 * 取得應用程式和遊戲的 **Microsoft Store**
 * **意見反應中樞** 提交有關系統和系統應用程式的意見反應
-* **設定** 系統設定的設定 ( [包括網路](../connecting-to-wi-fi-on-hololens.md) 和系統更新) 
+* **設定** 系統設定的設定 ([包括網路](../connecting-to-wi-fi-on-hololens.md) 和系統更新) 
 * **Microsoft Edge** 流覽網站
 * 觀看及分享相片和影片的 **相片**
 * **校正** (hololens 僅) 用來調整目前使用者的 hololens 體驗

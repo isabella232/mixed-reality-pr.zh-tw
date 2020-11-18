@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
-keywords: 混合的現實、手、移動控制器、互動、設計
-ms.openlocfilehash: 8b2ed6127708204d0c4a537c56b2225ff26e0d0f
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、手、運動控制器、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680865"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702154"
 ---
 # <a name="hands-and-motion-controllers"></a>手部與運動控制器
 ## <a name="scenarios"></a>案例
@@ -32,12 +32,12 @@ ms.locfileid: "91680865"
 
 :::row:::
     :::column:::
-       [![用手直接操作](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
+       [![手部直接操作](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
        ### <a name="direct-manipulation-with-handsbr"></a>[手部直接操作](direct-manipulation.md)<br>
        這是運用手的強大功能，讓使用者能夠直接觸及和操作全像投影。 藉由運用每日使用經驗並提供適當的視覺 affordances，使用者就能夠使用相同的方式來操作真實世界的物件，以與虛擬化物件互動。
     :::column-end:::
     :::column:::
-       [![用手指向並認可](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
+       [![手部指向和行動](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
         ### <a name="point-and-commit-with-handsbr"></a>[手部指向和行動](point-and-commit.md)<br>
         這種樣式可讓使用者在距離中與全像影像互動。 它可讓使用者充分利用環境。 使用者可以在任何地方放置全像位置，然後從任何距離進行存取。 用來控制和操作2D 和3D 全像投影的精神模型和筆勢，與直接操作的高度同步。
     :::column-end:::

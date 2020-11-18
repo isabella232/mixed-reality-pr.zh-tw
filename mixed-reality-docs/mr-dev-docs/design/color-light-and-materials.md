@@ -5,15 +5,15 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、色彩、燈光、材質
-ms.openlocfilehash: 76237b1b08df98850a4989987ed608dae29b6b5c
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality、設計、色彩、燈光、材質、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 9333be5316f5b3ba317aac3ef8591c0dd65370d4
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683214"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702784"
 ---
-# <a name="color-light-and-materials"></a>色彩、光線和材質
+# <a name="color-light-and-materials"></a>色彩、燈光和材質
 ![色彩、光線和材質](images/RemoteRendering.jpg)
 
 設計混合實境的內容時，必須仔細考慮您體驗中所使用的每個視覺資產的色彩、光源和材質。 這些決策適用于美觀用途，例如使用燈光和材質來設定沉浸式環境的色調，以及功能性用途，例如使用驚人的色彩來警示使用者即將發生的動作。 每個決策都必須根據您體驗的目標裝置的商機和限制進行權衡。
@@ -37,9 +37,9 @@ ms.locfileid: "92683214"
 
 由於加法顯示器的本質，某些色彩在全像全像顯示器上可能會不同。 某些色彩會在照明環境中顯示，有些則會顯示為較少的具影響力。 很酷的色彩通常會 recede 到背景，而暖色彩則會跳到前景。 當您在體驗中探索色彩時，請考慮下列因素：
 
-* 轉譯 **淺色色彩** -白色顯示非常亮，應謹慎使用。 在大部分的情況下，請考慮有關 R 235 G 235 B 235 的白色值。 很亮的區域可能會導致使用者不適感。 針對 UI 視窗的 backplate，建議使用深色色彩。
+* 轉譯 **淺色色彩**-白色顯示非常亮，應謹慎使用。 在大部分的情況下，請考慮有關 R 235 G 235 B 235 的白色值。 很亮的區域可能會導致使用者不適感。 針對 UI 視窗的 backplate，建議使用深色色彩。
 
-* 轉譯 **深色色彩** -由於加法顯示器的本質，深色色彩會顯示為透明。 實心的黑色物件看起來與真實世界沒有不同。 請參閱下列 Alpha 通道。 若要提供 "黑色" 的外觀，請嘗試相當深的灰色 RGB 值，例如16、16、16。
+* 轉譯 **深色色彩**-由於加法顯示器的本質，深色色彩會顯示為透明。 實心的黑色物件看起來與真實世界沒有不同。 請參閱下列 Alpha 通道。 若要提供 "黑色" 的外觀，請嘗試相當深的灰色 RGB 值，例如16、16、16。
 
 * **色彩一致性** ：通常會將全像影像轉譯為明亮，使其維持色彩一致性，不論背景為何。 大型區域可能會變成 blotchy。 避免大型區域的明亮、單色。
 
@@ -96,7 +96,7 @@ Light 和 color 可協助讓您的全息體在使用者的環境中以更自然�
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [設計全像攝影顯示器的內容](designing-content-for-holographic-display.md)
 * [色彩分隔](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [全像投影](../discover/hologram.md)

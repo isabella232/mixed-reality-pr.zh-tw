@@ -1,19 +1,19 @@
 ---
-title: 混合實境應用程式類型
+title: 混合現實應用程式的類型
 description: 針對 Windows Mixed Reality 開發應用程式的其中一項優點是，平臺可透過使用者目前的 environmentl，從完全沉浸式的虛擬環境支援的各種體驗，到輕量資訊的分層。
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、應用程式模式
-ms.openlocfilehash: 5d2fa3a5d83f878009f4574c3468719c9af17014
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、設計、應用程式模式、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: 17ae6b2ec8d9c67d2b6f0114535fc25c1cb487b2
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680417"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703214"
 ---
-# <a name="types-of-mixed-reality-apps"></a>混合實境應用程式類型
+# <a name="types-of-mixed-reality-apps"></a>混合現實應用程式的類型
 
 開發 Windows Mixed Reality 應用程式的優點之一，是該平台可以支援各種頻譜體驗。 從完全沉浸式虛擬環境到使用者目前環境下的輕量資訊分層，Windows Mixed Reality 提供了一組強大的工具，可將任何體驗變為現實。 應用程式製作者必須在開發過程中及早瞭解其體驗所在的範圍。 這項決策最終將會影響應用程式設計的組成，以及開發的技術途徑。
 

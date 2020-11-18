@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、手教練、沉浸式耳機、MRTK、手、協助手
-ms.openlocfilehash: 10e5f3b025e4346d7c4075c2de7252c9ab217c93
-ms.sourcegitcommit: 24d96bf3bb9a3143445e018195edae99d91684c6
+keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92683244"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702344"
 ---
 # <a name="hand-coach"></a>手勢指導
 ![範例：手形指導](images/HandCoach/MRTK_handCoach.jpg)<br>
@@ -84,7 +84,7 @@ ms.locfileid: "92683244"
 
 ## <a name="can-i-create-my-own"></a>我可以建立自己的嗎？
 
-可以！ 建議您為您的遊戲建立自己的獨特手勢，並貢獻回該社區！
+是！ 建議您為您的遊戲建立自己的獨特手勢，並貢獻回該社區！
 我們提供 Rigged 手的 Maya 檔，可用於您的應用程式，可在這裡下載： <a href="files/HandCoach_MRTK.zip"> 下載 HandCoach_MRTK.zip </a>
 
 ![Maya 中的動畫指標範例](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -170,7 +170,7 @@ ms.locfileid: "92683244"
     *   每個專案的設定
         *   設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [互動-基礎](interaction-fundamentals.md)
 * [資產建立流程](asset-creation-process.md)
 * [軌跡](../gestures.md)

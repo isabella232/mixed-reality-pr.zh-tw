@@ -5,13 +5,13 @@ author: hak0n
 ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
-keywords: ggv、語音、cortana、語音、輸入
-ms.openlocfilehash: 206fd1b304d1b0f376ec1d45a6d5ba852b0bc4f2
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: ggv、語音、cortana、語音、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、注視
+ms.openlocfilehash: f4f81383f942961857b088b05c4e8cac07ab7dfe
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680396"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703204"
 ---
 # <a name="voice-input"></a>語音輸入
 
@@ -25,7 +25,7 @@ ms.locfileid: "91680396"
 
 ## <a name="voice-and-gaze"></a>語音和注視
 
-使用語音命令時， (head 或眼睛) 眼通常會用來做為目的機制，不論是使用資料指標 ( 「選取」 ) 或將命令隱含地通道處理至您所查看的應用程式。 如此一來，甚至可能還不需要顯示任何 _看起來的游標 ( 「看起來」 )_ 。 當然，有些語音命令根本不需要目標，例如「移至開始」或「嗨 Cortana」。
+使用語音命令時， (head 或眼睛) 眼通常會用來做為目的機制，不論是使用資料指標 ( 「選取」 ) 或將命令隱含地通道處理至您所查看的應用程式。 如此一來，甚至可能還不需要顯示任何 _看起來的游標 ( 「看起來」 )_。 當然，有些語音命令根本不需要目標，例如「移至開始」或「嗨 Cortana」。
 
 <br>
 
@@ -159,7 +159,7 @@ ms.locfileid: "91680396"
 * 更大 |提高
 * 小
 
-在 HoloLens 2 上，您也可以結合眼睛來建立更自然的互動，以隱含的方式提供您所參考之內容的相關資訊。 例如，您可以只查看一個全息圖，然後說 _「放入_ 」，然後查看您要放置它的位置，然後說「在 _這裡_ 」。
+在 HoloLens 2 上，您也可以結合眼睛來建立更自然的互動，以隱含的方式提供您所參考之內容的相關資訊。 例如，您可以只查看一個全息圖，然後說 _「放入_」，然後查看您要放置它的位置，然後說「在 _這裡_」。
 或者，您可以在複雜的電腦上查看全像的部分，然後說：「給我更多關於 _這個_ 的資訊」。
 
 
@@ -237,7 +237,7 @@ ms.locfileid: "91680396"
 
 ### <a name="voice-feedback-states"></a>語音反饋狀態
 
-當語音正確套用時，使用者會了解 **他們能說什麼並獲得清楚的反饋** 而知道系統 **正確聽懂他們的語音** 。 這兩個訊號會讓使用者有信心，確信他們可以使用語音作為主要輸入方式。 下圖顯示的是當系統辨識到語音輸入時會有什麼情形，以及系統會如何讓使用者知道這一點。
+當語音正確套用時，使用者會了解 **他們能說什麼並獲得清楚的反饋** 而知道系統 **正確聽懂他們的語音**。 這兩個訊號會讓使用者有信心，確信他們可以使用語音作為主要輸入方式。 下圖顯示的是當系統辨識到語音輸入時會有什麼情形，以及系統會如何讓使用者知道這一點。
 
 
 :::row:::
@@ -299,7 +299,7 @@ HoloLens 2 [支援多種語言](https://docs.microsoft.com/hololens/hololens2-la
 ---
 
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>MRTK 中的語音輸入 (適用于 Unity 的混合現實工具組) 
-透過 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** ，您可以輕鬆地對任何物件指派語音命令。 使用 MRTK 的 **語音輸入設定檔** 來定義關鍵字。 藉由指派 **SpeechInputHandler** 腳本，您可以讓任何物件回應語音輸入設定檔中定義的關鍵字。 SpeechInputHandler 也會提供語音確認標籤，以提升使用者的信心。
+透過 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**，您可以輕鬆地對任何物件指派語音命令。 使用 MRTK 的 **語音輸入設定檔** 來定義關鍵字。 藉由指派 **SpeechInputHandler** 腳本，您可以讓任何物件回應語音輸入設定檔中定義的關鍵字。 SpeechInputHandler 也會提供語音確認標籤，以提升使用者的信心。
 
 * [MRTK-Voice 命令](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
 

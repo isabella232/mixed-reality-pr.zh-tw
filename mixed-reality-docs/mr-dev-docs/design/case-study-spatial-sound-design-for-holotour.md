@@ -5,13 +5,13 @@ author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、HoloLens、HoloTour、空間音效、個案研究
-ms.openlocfilehash: 6cf2d18661924276f1ea75efb88e29acd4709f37
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、HoloLens、HoloTour、空間音效、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
+ms.openlocfilehash: 31e38f6f5ce309bba11515ab09303593af0a328b
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679997"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702834"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>案例研究： HoloTour 的空間音效設計
 
@@ -56,7 +56,7 @@ ms.locfileid: "91679997"
 
 在不同的方法中，我們有時會搭配放置於場景周圍的空間音效發射器來播放迴圈身歷聲環境。 這些發射器會播放隨機音量、音調和觸發頻率的一次性音效。 這項技術會建立具有更強方向的環境。 例如，在 Aguas Alienates 中，您可以聽到全景的每個象限如何具有特定的發射器，以反白顯示地理位置的特定區域，但共同合作來建立整體的沉浸式環境。
 
-## <a name="tips-and-tricks"></a>秘訣與提示
+## <a name="tips-and-tricks"></a>秘訣與技巧
 
 有一些額外的方式可醒目提示方向性並改善深度，以充分利用 HoloLens 的空間音效功能。 我們在此提供了一份清單。 下一次嘗試 HoloTour 時，請聆聽這些效果。
 * **尋找目標：** 當您查看全像攝影框架的特定物件或區域時，就會觸發這些音效。 例如，看看羅馬的 Piazza Navona 中的街道咖啡，以稍微觸發忙碌餐廳的聲音。

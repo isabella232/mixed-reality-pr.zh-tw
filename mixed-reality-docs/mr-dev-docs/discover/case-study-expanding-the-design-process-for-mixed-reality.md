@@ -5,13 +5,13 @@ author: danielescudero
 ms.author: daescu
 ms.date: 04/08/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、處理、個案研究
-ms.openlocfilehash: 4cde36c8b5c3914c63e0c588e76dc4b782dcdcb9
-ms.sourcegitcommit: cc27d31f0cebaf9fc4221a3300a9e3d73230b367
+keywords: Windows Mixed Reality、設計、處理、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、何謂虛擬實境、增強的現實、bodystorming、分鏡腳本、意見反應
+ms.openlocfilehash: 5f1cc6efd7d1fa8dda043575562bfaf94ea812a9
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/14/2020
-ms.locfileid: "94631506"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702204"
 ---
 # <a name="thinking-differently-for-mixed-reality"></a>以不同的方式思考混合現實
 當 Microsoft 推出 HoloLens (第1代) 至2016中的積極開發人員物件時，該團隊已經與 Microsoft 內外的工作室合作，打造出裝置的啟動體驗。 這些團隊藉由實踐，在混合實境設計的新領域中找到機會和挑戰。

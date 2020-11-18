@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
-keywords: 3D，標誌，圖示，模型，啟動器，3D 啟動器，磚，即時 cube，win32
-ms.openlocfilehash: 4b22c78e651687c293a1e47ff8e4e9106de631bf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 3D，標誌，圖示，模型，啟動器，3D 啟動器，磚，即時 cube，win32，混合現實耳機，windows mixed reality 耳機，虛擬實境耳機，資訊清單
+ms.openlocfilehash: 9a8680232bf1d8d333c26ca4e39075ee553782fb
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679665"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703424"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>實作 3D 應用程式啟動器 (Win32 應用程式)
 

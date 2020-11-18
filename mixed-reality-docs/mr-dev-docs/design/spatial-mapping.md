@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 空間對應、HoloLens、混合現實、表面重建、網格
-ms.openlocfilehash: 6ca545327e412eaba5ee79959dfa9d01380b18c6
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: 空間對應、HoloLens、混合現實、表面重建、網格、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、場景理解、世界網格、遮蔽、物理、流覽、表面觀察器、轉譯、網格處理
+ms.openlocfilehash: 448c64a6c19ee96d58be9a14f7ea4c34a755695e
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340666"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703314"
 ---
 # <a name="spatial-mapping"></a>空間對應
 
@@ -230,7 +230,7 @@ ms.locfileid: "94340666"
 
 ## <a name="mesh-processing"></a>網格處理
 
-應用程式可能會想要在空間介面網格上執行 [各種作業](spatial-mapping.md#mesh-processing) ，以符合其需求。 每個空間介面網格所提供的索引和頂點資料，會使用與用來呈現所有新式轉譯 Api 中三角形網格的 [頂點和索引緩衝區](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) 相同的熟悉版面配置。 不過，有一個要注意的關鍵事實是，空間對應三角形有 **正面的纏繞順序** 。 每個三角形都是以網格的索引緩衝區中的三個頂點索引來表示，而這些索引將會在從 **前端** 看到三角形時，以 **順** 向順序識別三角形的頂點。 空間介面網格的前端 (或外) ，會與您預期的正面 (可見的真實世界表面) 相同。
+應用程式可能會想要在空間介面網格上執行 [各種作業](spatial-mapping.md#mesh-processing) ，以符合其需求。 每個空間介面網格所提供的索引和頂點資料，會使用與用來呈現所有新式轉譯 Api 中三角形網格的 [頂點和索引緩衝區](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) 相同的熟悉版面配置。 不過，有一個要注意的關鍵事實是，空間對應三角形有 **正面的纏繞順序**。 每個三角形都是以網格的索引緩衝區中的三個頂點索引來表示，而這些索引將會在從 **前端** 看到三角形時，以 **順** 向順序識別三角形的頂點。 空間介面網格的前端 (或外) ，會與您預期的正面 (可見的真實世界表面) 相同。
 
 如果介面觀察器所提供的最粗略三角形密度仍能力不佳粗略，則應用程式應該只執行網狀簡化，這項工作的計算成本很高，而且已由執行時間執行，以產生各種提供的詳細資料層級。
 
@@ -256,9 +256,9 @@ ms.locfileid: "94340666"
 
 這種掃描體驗的本質可能會隨著每個應用程式的需求而有很大的差異，但有兩個主要原則應該引導其設計。
 
-首先， **與使用者進行清楚的通訊是主要考慮** 。 使用者應該一律留意是否符合應用程式的需求。 當它們不符合時，就應該立即清楚清楚使用者的原因，而且應該很快就會採取適當的動作。
+首先， **與使用者進行清楚的通訊是主要考慮**。 使用者應該一律留意是否符合應用程式的需求。 當它們不符合時，就應該立即清楚清楚使用者的原因，而且應該很快就會採取適當的動作。
 
-其次， **應用程式應該嘗試在效率與可靠性之間取得平衡** 。 如果可以 **可靠地** 這麼做，應用程式應該會自動分析空間對應資料，以節省使用者的時間。 當您無法可靠地這麼做時，應用程式應該改為讓使用者快速提供應用程式所需的其他資訊。
+其次， **應用程式應該嘗試在效率與可靠性之間取得平衡**。 如果可以 **可靠地** 這麼做，應用程式應該會自動分析空間對應資料，以節省使用者的時間。 當您無法可靠地這麼做時，應用程式應該改為讓使用者快速提供應用程式所需的其他資訊。
 
 為了協助設計正確的掃描體驗，請考慮下列哪一個可能適用于您的應用程式：
 
@@ -369,14 +369,7 @@ ms.locfileid: "94340666"
 * 為了讓介面網格正確源，每個 GameObject 都必須在使用中，然後才會將它傳送至 SurfaceObserver，以建立其網格。 否則，網格會顯示在您的空間中，但以怪角度旋轉。
 * 執行與 SurfaceObserver 通訊之腳本的 GameObject 必須設定為來源。 否則，您建立並傳送給 SurfaceObserver 的所有 Gameobject 都有其格線，其位移等於父遊戲物件的位移。 這可以讓您的網格顯示數個計量，讓您很難進行處理。
 
-## <a name="next-discovery-checkpoint"></a>下次探索檢查點
-
-如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
-
-> [!div class="nextstepaction"]
-> [建議物件的縮放比例 - (縮放比例)](../design/scale.md)
-
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [座標系統](coordinate-systems.md)
 * [DirectX 中的空間對應](../develop/native/spatial-mapping-in-directx.md)
 * [Unity 中的空間對應](../develop/unity/spatial-mapping-in-unity.md)

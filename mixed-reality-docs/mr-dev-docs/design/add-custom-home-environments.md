@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，Home，自訂環境，地點，cliff 房子，skyloft，使用者，建立
-ms.openlocfilehash: 69fac9fcc0b3d7f199f4277c5d1b5a0c7df5f8c2
-ms.sourcegitcommit: 838bebf6bacac4047feff493c0847d4e6371976f
+keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、自訂環境、地點、cliff 房子、skyloft、使用者、建立、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 3b5862c6ba4ec1a0549b751cf2982247b6501201
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/07/2020
-ms.locfileid: "91781526"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703014"
 ---
 # <a name="design-your-own-immersive-environments"></a>設計自己的沉浸式環境
 
@@ -53,11 +53,11 @@ ms.locfileid: "91781526"
 2. 執行您剛剛下載的 **Fantasy_Island.exe** 檔案。
 
     > [!NOTE]
-    > 當您嘗試執行從 web (下載的 .exe 檔案，就像這樣的) ，您可能會遇到「Windows 已保護您的電腦」快顯視窗。 若要從此快顯視窗執行 Fantasy_Island.exe，請選取 [ **更多資訊** ]，然後 **繼續執行** 。 此安全性設定的目的是要防止您下載不想要信任的檔案，因此當您信任檔案的來源時，請選擇此選項。
+    > 當您嘗試執行從 web (下載的 .exe 檔案，就像這樣的) ，您可能會遇到「Windows 已保護您的電腦」快顯視窗。 若要從此快顯視窗執行 Fantasy_Island.exe，請選取 [ **更多資訊** ]，然後 **繼續執行**。 此安全性設定的目的是要防止您下載不想要信任的檔案，因此當您信任檔案的來源時，請選擇此選項。
 
 3. 開啟 **檔案總管** 並在網址列中貼上下列內容，以流覽至 [環境] 資料夾： `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` 。
 4. 將您下載的範例環境複製到此資料夾。
-5. 重新開機 **混合實境入口** 。 這會重新整理位置選擇器中的環境清單。
+5. 重新開機 **混合實境入口**。 這會重新整理位置選擇器中的環境清單。
 6. 放在您的耳機上。 一旦您在家中，請使用 [Windows] 按鈕來開啟 **[開始] 功能表** 。
 7. 選取釘選應用程式清單上方的 [ **地點** ] 圖示，以選擇主環境。
 8. 您會在您的地點清單中找到您下載的幻想島環境。 選取 [ **幻想島** ] 以進入新的自訂家用環境！

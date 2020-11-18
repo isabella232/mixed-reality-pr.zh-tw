@@ -5,13 +5,13 @@ author: nbarragan23
 ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
-keywords: 手、功能表、按鈕、快速存取、版面配置
-ms.openlocfilehash: f7bf8ab2fb54e6a939bd538a0a0ba756c5efb916
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 手、功能表、按鈕、快速存取、版面配置、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 8f9adbdbebb826a79db037f48b233e3bc5e049de
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680884"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702294"
 ---
 # <a name="hand-menu"></a>手部功能表
 

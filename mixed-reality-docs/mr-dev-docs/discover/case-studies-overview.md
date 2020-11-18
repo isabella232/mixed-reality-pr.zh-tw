@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality、HoloLens、個案研究、願景、案例
-ms.openlocfilehash: 78ece9c010ed402c6281ee2f9cd5638db9af4f3d
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Windows Mixed Reality、HoloLens、個案研究、願景、情節、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680581"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703484"
 ---
 # <a name="case-study-gallery"></a>案例研究資源庫
 

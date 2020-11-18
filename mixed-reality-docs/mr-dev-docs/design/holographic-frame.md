@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
-keywords: HoloLens、Windows Mixed Reality、全像攝影框架、視野
-ms.openlocfilehash: 649cacfaf40f226a84f1b9b928cb47e468f3f146
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: HoloLens、Windows Mixed Reality、全像攝影框架、FOV、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、互動、流覽、功能表
+ms.openlocfilehash: c1786af43bacc414b5ffcf6f59753d7f8fa92fef
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340636"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94702214"
 ---
 # <a name="holographic-frame"></a>全像攝影框架
 
@@ -21,7 +21,7 @@ ms.locfileid: "94340636"
 
 通常，設計人員會覺得需要將其經驗範圍限制為使用者可以立即看到的內容，並犧牲真實世界的規模，以確保使用者能看到整個物件。 同樣地，具有複雜應用程式的設計人員通常會使用內容來多載全像攝影框架，而令使用者難以互動和雜亂的介面。 建立混合現實內容的設計人員不需要將他們的經驗限制為直接在使用者之前，也不會在其立即觀看中。 如果對應使用者的實體世界，則應該將所有這些表面視為數位內容和互動的可能畫布。 在體驗中適當地設計互動和內容，應該鼓勵使用者四處移動空間、將注意力導向重要內容，並協助查看混合現實的潛能。
 
-在應用程式中鼓勵移動和探索最重要的技巧，或許是 **讓使用者調整體驗** 。 使用裝置提供短時間的「免工作」時間給使用者。 這可以像將物件放在空間中一樣簡單，讓使用者四處移動或 narrating 體驗簡介。 這次應該不會有任何重要的工作或特定的手勢 (例如，按下) ，而是讓使用者在要求互動或透過應用程式的階段之前，透過裝置來觀看內容的目的。 如果這是使用者第一次使用裝置，則這特別重要，因為他們可以透過全像全像全像全像全像全像地查看內容。
+在應用程式中鼓勵移動和探索最重要的技巧，或許是 **讓使用者調整體驗**。 使用裝置提供短時間的「免工作」時間給使用者。 這可以像將物件放在空間中一樣簡單，讓使用者四處移動或 narrating 體驗簡介。 這次應該不會有任何重要的工作或特定的手勢 (例如，按下) ，而是讓使用者在要求互動或透過應用程式的階段之前，透過裝置來觀看內容的目的。 如果這是使用者第一次使用裝置，則這特別重要，因為他們可以透過全像全像全像全像全像全像地查看內容。
 
 ### <a name="large-objects"></a>大型物件
 
@@ -139,14 +139,7 @@ Lowe 的商店體驗邀請客戶進入廚房的全大規模原型，以展示透
 
 實際的口頭表達方式提供了功能強大的焦點，並利用微妙的技巧來將您的消息轉變成使用者，像是您所說的一樣。 當使用者移動經驗時，如果使用者移到他的其邊界以外的範圍，則會在返回中性狀態之前，先將您導向至閾值。 如果使用者從內容中看起來完全 (比方說，若要查看場景中其他地方) 再回頭看看，朗讀程式的方向位置將會再次以使用者為主。 這類技術可提供強大的深度功能，並在全像全像的框架內建立焦點，減少過多的前端移動並提升 [使用者的舒適](comfort.md)。
 
-## <a name="next-discovery-checkpoint"></a>下次探索檢查點
-
-如果您正在關注我們所配置的 [探索旅程](../discover/get-started-with-mr.md) ，您將會在探索混合現實的基本概念。 您可以從這裡繼續進行下一個基本主題： 
-
-> [!div class="nextstepaction"]
-> [讓全像攝影物件感覺真實 - (空間對應)](../design/spatial-mapping.md)
-
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [本能互動](interaction-fundamentals.md)
 * [舒適度](comfort.md)
 * [縮放比例](scale.md)

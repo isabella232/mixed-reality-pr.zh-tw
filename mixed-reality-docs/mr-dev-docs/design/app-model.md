@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
-keywords: UWP、應用程式模型、生命週期、暫停、繼續、磚、視圖、合約
-ms.openlocfilehash: 67b883517ae17422bf7c27227c33882cf8a9f7ef
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: UWP、應用程式模型、生命週期、暫停、繼續、磚、視圖、合約、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 332556a5118f0c69a83654d345119995e4262cb5
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680041"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703104"
 ---
 # <a name="app-model"></a>應用程式模型
 
@@ -51,7 +51,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](https://docs.microsoft.com/
 
 另一個 Windows 10 shell 的主要差異在於應用程式如何透過 CoreApplication 來通知應用程式實例啟用[。](https://docs.microsoft.com/uwp/api/Windows.ApplicationModel.Core.CoreApplication#Windows_ApplicationModel_Core_CoreApplication_Resuming) [CoreWindow.Activated](https://docs.microsoft.com/uwp/api/windows.ui.core.corewindow#Windows_UI_Core_CoreWindow_Activated)
 
-|  案例 |  繼續中  |  已啟動 | 
+|  狀況 |  繼續中  |  已啟動 | 
 |----------|----------|----------|
 |  從 [開始] 功能表啟動應用程式的新實例  |   |  以新的 [TileId](https://docs.microsoft.com/uwp/api/windows.ui.startscreen.secondarytile#Windows_UI_StartScreen_SecondaryTile_TileId) **啟用** | 
 |  從 [開始] 功能表啟動應用程式的第二個實例  |   |  以新的 **TileId** **啟用** | 
@@ -68,7 +68,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](https://docs.microsoft.com/
 
 ## <a name="app-views"></a>應用程式檢視
 
-當您的應用程式啟動時，您可以選擇您想要顯示的檢視類型。 針對應用程式的 **CoreApplication** ，一律會有主要的 [應用程式視圖](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView) ，以及您想要建立的任意數目的應用程式視圖。 在桌上型電腦上，您可以將應用程式視圖視為視窗。 我們的混合現實應用程式範本會建立 Unity 專案，其中主要應用程式視圖為 [沉浸式](app-views.md)。 
+當您的應用程式啟動時，您可以選擇您想要顯示的檢視類型。 針對應用程式的 **CoreApplication**，一律會有主要的 [應用程式視圖](https://docs.microsoft.com/uwp/api/Windows.UI.ViewManagement.ApplicationView) ，以及您想要建立的任意數目的應用程式視圖。 在桌上型電腦上，您可以將應用程式視圖視為視窗。 我們的混合現實應用程式範本會建立 Unity 專案，其中主要應用程式視圖為 [沉浸式](app-views.md)。 
 
 您的應用程式可以使用 XAML 之類的技術來建立其他2D 應用程式視圖，以使用應用程式內購買的 Windows 10 功能。 如果您的應用程式是以 UWP 應用程式的形式啟動，以供其他 Windows 10 裝置使用，則您的主要觀點是2D，但您可以新增額外的應用程式視圖，以提供更好的 volumetrically 體驗，以在混合現實中「亮亮」。 想像一下以 XAML 建立相片檢視器應用程式，其中的投影片按鈕會切換至沉浸式應用程式視圖，從世界各地的應用程式 flew 相片。
 
@@ -167,9 +167,9 @@ HoloLens 同時支援 [FileOpenPicker](https://docs.microsoft.com/uwp/api/Window
 
 根據預設，下列是在本機支援的延伸模組：
 
-|  App  |  延伸模組 | 
+|  應用程式  |  延伸模組 | 
 |----------|----------|
-|  相片  |  bmp、gif、jpg、png、avi、mov、的 wmv、wmv | 
+|  照片  |  bmp、gif、jpg、png、avi、mov、的 wmv、wmv | 
 |  Microsoft Edge  |  htm、html、pdf、svg、xml | 
 
 ### <a name="app-contracts-and-windows-mixed-reality-extensions"></a>應用程式合約和 Windows Mixed Reality 擴充功能
