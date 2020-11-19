@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 746b6257e6a3ab28424d7b74e43a1b6541d6fad0
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
-ms.translationtype: HT
+ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
+ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573282"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94897353"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>混合現實開發天數日本
 
@@ -27,9 +27,13 @@ ms.locfileid: "94573282"
 
 **免註冊**
 
+**主要語言-日文**
+
 ## <a name="registration"></a>註冊
 
-即將推出
+[登錄-現在開啟](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+
+我們很高興能為您的混合現實開發日日本開立註冊。  此活動是免費的，且在線上的 Microsoft 團隊實況活動中保持上線。  我們要求出席者註冊，以便在事件更接近時傳送電子郵件更新，讓您可以參與活動的互動式元素。
 
 ## <a name="schedule---subject-to-change"></a>排程-可能變更
 
@@ -40,7 +44,7 @@ ms.locfileid: "94573282"
 ### <a name="december-16th"></a>12月16日
 |**Time**|**會話標題**|**主講人**|**語言**|**Level**|
 |---------|---------|---------|---------|---------|
-|10：上午 10:00-10：50am|開啟演講|TBD|JA-JP|N/A|
+|10：上午 10:00-10：50am|開啟演講|TBD|JA-JP|不適用|
 |10： 50am-11：上午10:00|**打破**||||
 |11：上午 10:00-11：25am|*會話 1* 什麼是混合現實？您可以用 HL2 來做什麼？MR 技術堆疊|: Atsushi Suzuki|JA|100|
 |11： 30am-11：55am|*會話 2* 與客戶和合作夥伴個案研究的日本商業市場動力更新|Tetsu Muranaka|JA|200|
@@ -49,7 +53,7 @@ ms.locfileid: "94573282"
 |1： 00-1：25pm|*會話 3* HoloLens 2 開發的總覽|Madoka Chiyoda|JA|200|
 |1： 30pm-1：55pm|*會話 4* HoloLens 2 & MRTK v 2.5 (MRTK-Unity) |Yoon 公園|JA|300|
 |2： 00-2：25pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
-|2： 30pm-2：55pm|*會話 6* MR 應用程式設計 (建立 HL2 應用程式 UI/UX) 的最佳作法|Daniel Escudero|EN|300|
+|2： 30pm-2：55pm|*會話 6* 建立「設計全像影像」應用程式。 我們將深入探討在建立這個新的 HoloLens 2 應用程式時所發現的功能、挑戰和其他有趣的學習。|Daniel Escudero|EN|300|
 |2： 55pm-3：下午10點|**打破**||||
 |3：下午10點-3：35pm|*會話 7* Azure 物件錨點|TBD|EN|300|
 |3： 40pm-4：05pm|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
