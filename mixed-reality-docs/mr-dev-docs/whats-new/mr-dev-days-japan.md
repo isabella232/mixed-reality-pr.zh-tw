@@ -1,19 +1,19 @@
 ---
-title: 混合現實開發天數日本
+title: Mixed Reality Dev Days Japan
 description: 混合現實開發天數日本的事件頁面
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 170c0ebfeee2b6305c5d52c8aba143badaffa5e2
-ms.sourcegitcommit: 53c6d27781ed12e2899c72087d317a62b2fad8cb
+ms.openlocfilehash: e120582e6184b9b105221aeddb5bcb42629ccb0c
+ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 11/19/2020
-ms.locfileid: "94897353"
+ms.locfileid: "94933263"
 ---
-# <a name="mixed-reality-dev-days-japan"></a>混合現實開發天數日本
+# <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
 ![混合實境開發日](images/MRDD/MRDevDaysJapanBanner.png)
 
@@ -44,7 +44,7 @@ ms.locfileid: "94897353"
 ### <a name="december-16th"></a>12月16日
 |**Time**|**會話標題**|**主講人**|**語言**|**Level**|
 |---------|---------|---------|---------|---------|
-|10：上午 10:00-10：50am|開啟演講|TBD|JA-JP|不適用|
+|10：上午 10:00-10：50am|開啟演講|TBD|JA-JP|N/A|
 |10： 50am-11：上午10:00|**打破**||||
 |11：上午 10:00-11：25am|*會話 1* 什麼是混合現實？您可以用 HL2 來做什麼？MR 技術堆疊|: Atsushi Suzuki|JA|100|
 |11： 30am-11：55am|*會話 2* 與客戶和合作夥伴個案研究的日本商業市場動力更新|Tetsu Muranaka|JA|200|
@@ -55,10 +55,10 @@ ms.locfileid: "94897353"
 |2： 00-2：25pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
 |2： 30pm-2：55pm|*會話 6* 建立「設計全像影像」應用程式。 我們將深入探討在建立這個新的 HoloLens 2 應用程式時所發現的功能、挑戰和其他有趣的學習。|Daniel Escudero|EN|300|
 |2： 55pm-3：下午10點|**打破**||||
-|3：下午10點-3：35pm|*會話 7* Azure 物件錨點|TBD|EN|300|
+|3：下午10點-3：35pm|*會話 7* Azure 物件錨點|Jesse McCulloch|EN|300|
 |3： 40pm-4：05pm|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
-|4：下午10點-4：35pm|*課程 9* Azure 空間錨點|TBD|EN|300|
-|4： 40pm-5：05pm|*會話 10* 待定|TBD|JA|200|
+|4：下午10點-4：35pm|*課程 9* Azure 空間錨點|TBD|JA|300|
+|4： 40pm-5：05pm|*會話 10* Unity + PiXYZ|Shinobu Takahashi (Unity) |JA|200|
 |5：下午10點-5：35pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
 |5： 35pm-5：50pm|關閉|Madoka Chiyoda|JA|NA|
 
