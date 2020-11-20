@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7d6d5a1eeabffdd7ad6d4ddd070a14c6dcf0d5ee
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 241fb95d92c771af727cc50287e4d1b2526123a5
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573202"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002963"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -43,7 +43,7 @@ HP 建議：
 - 請確定您已為耳機和 USB 控制器安裝最新的驅動程式。
 - 請確定您使用的是 Microsoft USB 驅動程式。 「可擴充的主機控制器」裝置名稱中應該會有 "Microsoft"。
 - 請嘗試將纜線插入您電腦上的不同 USB-3.0 埠。  (嘗試 USB 類型-C 和類型埠) 
-- 使用包含的 USB C 來嘗試不同的埠。
+- 使用隨附的 USB C 來進行介面卡，以嘗試不同的埠。
 - 嘗試透過 USB 集線器將耳機插入您的電腦。
 
 > [!NOTE]
@@ -75,7 +75,7 @@ HP 建議：
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>我的 SteamVR 遊戲似乎無法正常搭配我的 HP 運動控制器運作
 
 雖然開發人員致力於更新其遊戲以進行 HP 運動控制器相容性，但我們為串流上許多最受歡迎的遊戲提供了自訂控制器系結。 使用 "Windows Mixed Reality for SteamVR" 完全更新至版本1.2.444 時，應會在遊戲執行時自動挑選這些系結。 但是，如果您的遊戲目前似乎沒有註冊您的動作，您可以使用 [SteamVR 設定] 功能表手動搜尋自訂系結設定檔。
-若要執行此工作
+作法
 
 - 按下右邊的動作控制器的功能表按鈕，開啟 [SteamVR] 功能表
 - 選取 [SteamVR] 功能表右下角的 [設定] 圖示

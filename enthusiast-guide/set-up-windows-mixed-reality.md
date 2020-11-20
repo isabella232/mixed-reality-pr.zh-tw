@@ -3,12 +3,12 @@ title: 設定 Windows Mixed Reality
 description: 如何設定您的 Windows Mixed Reality 動作控制器、語音和音訊，以及定義安全播放空間的房間界限。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、入門、設定、移動控制器、控制器、語音、音訊、站上、站上、界限、圖形驅動程式、Microsoft Edge、chromium
-ms.openlocfilehash: 95ca5b8d86e26061e565a74efa36e49cc3d1b92b
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 16fa0fbf1574a61a5c7401de8a1e0431e183ec11
+ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132142"
+ms.lasthandoff: 11/20/2020
+ms.locfileid: "95002993"
 ---
 # <a name="set-up-windows-mixed-reality"></a>設定 Windows Mixed Reality
 
@@ -24,7 +24,11 @@ ms.locfileid: "93132142"
 
 ## <a name="get-set"></a>取得集
 
-準備空間 (包括) 的額外負荷空間。 請確定您要使用的區域中沒有阻礙、危險或脆弱的專案。 請勿在樓梯的頂端，或在額外的低上限風扇下設定。 從區域中移除 breakables 和阻礙，並確定您和使用耳機的任何人都能閱讀並瞭解 [安全指導方針](https://support.microsoft.com/help/4039969)。
+準備空間 (包括) 的額外負荷空間。 請確定您要使用的區域中沒有阻礙、危險或脆弱的專案。 請勿在樓梯的頂端，或在額外的低上限風扇下設定。 從區域中移除 breakables 和阻礙，並確定您和使用耳機的任何人都能閱讀並瞭解安全指導方針。
+
+空間就緒後，請插入您的耳機，但不要將它放在您的電腦上。首先，我們需要在您的電腦上進行某些設定。 我們將執行電腦檢查、下載一些軟體、連接您的控制器，以及建立可協助您避免阻礙的 [界限](boundary-questions.md) 。
+
+接下來是有趣的部分—放在您的耳機上，然後輸入混合世界。 Cortana 將會等待您提供導覽。 祝您順利！
 
 ## <a name="go"></a>快！
 
@@ -40,7 +44,7 @@ ms.locfileid: "93132142"
 
 如果您只打算使用 Xbox 遊戲台或鍵盤和滑鼠，您就不需要配對控制器。  如果您打算使用控制器，您應該將它們配對。
 
-**注意** ： Windows Mixed Reality 移動控制器需要藍牙4.0。 如果您的電腦沒有內建藍牙，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。 如果您在耳機中使用內建的電臺，就不需要藍牙介面卡。
+**注意**： Windows Mixed Reality 移動控制器需要藍牙4.0。 如果您的電腦沒有內建藍牙，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。 如果您在耳機中使用內建的電臺，就不需要藍牙介面卡。
 
 ![熟悉您的動作控制器](images/get_to_know_controllers.png)
 
@@ -100,13 +104,13 @@ ms.locfileid: "93132142"
 
 ## <a name="adjusting-your-headsets-display-settings"></a>調整您的耳機顯示設定
 
-Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡品質和效能的顯示設定。 若要調整這些設定，請移至 [ **設定] > Mixed Reality > 耳機顯示** 。
+Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡品質和效能的顯示設定。 若要調整這些設定，請移至 [ **設定] > Mixed Reality > 耳機顯示**。
 
 ### <a name="visuals"></a>視覺效果
 
 這項設定會控制您的混合現實首頁的視覺品質。 預設值為「自動」。
 
-### <a name="resolution"></a>解決方案
+### <a name="resolution"></a>解決方法
 
 您的耳機原生解析度如下所示。
 
@@ -126,7 +130,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 此 advanced 設定會覆寫預設耳機顯示器的重新整理頻率體驗。
 
-* **自動 (預設)** ：根據您電腦的硬體設定自動選取60Hz 或90Hz 體驗。
+* **自動 (預設)**：根據您電腦的硬體設定自動選取60Hz 或90Hz 體驗。
 * **60Hz**
 * **90Hz**
 
@@ -138,7 +142,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 此設定會控制 Windows Mixed Reality 的行為，以回應您的耳機狀態感應器：
 
 * **使用耳機狀態感應器自動切換** (預設) ： Windows 會在您佩戴耳機時，自動將輸入 (鍵盤、滑鼠 ... ) 到 Windows Mixed Reality。 您可以隨時使用 Win + Y 覆寫此項。
-* **使用 windows 標誌鍵 + Y 手動切換** ： windows 將不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
+* **使用 windows 標誌鍵 + Y 手動切換**： windows 將不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
 
 這項設定可在 Windows 10、1903版或更新版本上使用。
 
