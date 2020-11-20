@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: c2a00b88992fde3e599020d930ef950222e87099
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
+ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573212"
+ms.lasthandoff: 11/19/2020
+ms.locfileid: "94941864"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -29,6 +29,7 @@ ms.locfileid: "94573212"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
+| [開始之前](before-you-start.md) |  |
 | [最低電腦硬體指導方針](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 執行 Windows Mixed Reality、Windows Mixed Reality Ultra 和 Windows Mixed Reality 入口網站應用程式所需瞭解的一切 |
 | [取得電腦相容性的協助](get-help-with-pc-compatibility.md) | 瞭解 Windows Mixed Reality PC 檢查產生的報告 |
 | [購買常見問題](before-you-buy-faqs.md) | 取得有關技術規格、裝置和控制器的所有購買問題的解答 |
@@ -57,24 +58,27 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。
 | [流覽 Windows Mixed Reality 首頁](your-mixed-reality-home.md) | 探索 Windows Mixed Reality 首頁的虛擬環境  |
 | [使用控制器](controllers-in-wmr.md) | 設定、瞭解及使用您的動作控制器 |
 | [使用語音輸入](using-speech-in-wmr.md) | 熟悉各種可與3D 物件、應用程式行、[開始] 功能表和 Cortana 互動的聲音命令 |
-| [遊戲、360影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md) | 開始使用您的第一個沉浸式遊戲、2D 商店平板、桌面應用程式及 WebVR 體驗 |
-| [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) | 連接您的裝置並播放 SteamVR 遊戲，瞭解 Windows 測試人員計畫 |
-| [使用 Microsoft Edge](using-microsoft-edge.md) | 在您的沉浸式裝置上安裝最新版本的 Microsoft Edge |
-| [使用 WebVR](webvr.md) | 在瀏覽器環境中取得安裝程式以體驗 VR |
 
 > [!NOTE]
-> 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)** 。
+> 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)**。
 
-### <a name="4-troubleshooting-tips--resources"></a>4. 疑難排解、秘訣 & 資源
+## <a name="4-discover-apps-and-content"></a>4. 探索應用程式和內容
 
-當您遇到任何與您的沉浸式硬體相關的問題時，請從我們所彙集的 [一般常見問題](troubleshooting-windows-mixed-reality.md) 著手。 如果您找不到想要的資訊，我們在 [ **疑難排解常見問題** ] 區段中有一份詳盡的主題特有的常見問題檔，其中涵蓋從安裝和錯誤碼一直到效能和耳機顯示的一切。
+尋找沉浸式遊戲、桌面應用程式和 VR 內容，並使用下列資源中的 Microsoft Edge 瀏覽器。 
+
+<br>
+
+| [遊戲、360影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md) |開始使用您的第一個沉浸式遊戲、2D 商店平板、桌面應用程式及 WebVR 體驗 | | [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) |連接您的裝置並播放 SteamVR 遊戲並瞭解 Windows 測試人員計畫 | | [使用 Microsoft Edge](using-microsoft-edge.md) |在您的沉浸式裝置上安裝最新版本的 Microsoft Edge | | [使用 WebVR](webvr.md) |在您的瀏覽器環境中取得安裝程式以體驗 VR |
+
+## <a name="troubleshooting-tips--resources"></a>疑難排解、秘訣 & 資源
+
+當您遇到任何與沉浸式硬體相關的問題時，請從：
+ 
+* [一般常見問題](troubleshooting-windows-mixed-reality.md) 
+
+如果您找不到想要的資訊，我們在 [ **疑難排解常見問題** ] 區段中有一份詳盡的主題特有的常見問題檔，其中涵蓋從安裝和錯誤碼一直到效能和耳機顯示的一切。 如果您想要深入瞭解 VR 中特定功能的運作方式，請參閱 [動作控制器](controllers-in-wmr.md) 和 [內部追蹤](tracking-system.md) 運作方式的相關文章。
 
 針對新問題和 bug，我們一律會 lookout，因此如果您遇到未記載的任何內容，請在 [這裡傳送意見](filing-feedback.md)反應給我們。
-
-如果您想要深入瞭解 VR 中特定功能的運作方式，請參閱下列文章：
-
-* [移動控制器的運作方式](controllers-in-wmr.md)
-* [內外追蹤的運作方式](tracking-system.md)
 
 > [!NOTE]
 > 您可以在 [這裡](mixed-reality-software.md)找到完整的 Windows Mixed Reality 發行歷程記錄。
