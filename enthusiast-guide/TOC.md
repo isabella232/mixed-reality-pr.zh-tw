@@ -1,15 +1,11 @@
 # [Windows Mixed Reality 愛好者文件](index.yml)
 ## [開始您的 VR 旅程](vr-journey.md)
 
-## 購買之前
-<!-- ### [What is Windows Mixed Reality?](windows-mixed-reality.md) -->
+## 開始使用
+### [開始之前](before-you-start.md)
 ### [最低電腦硬體指導方針](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 ### [建議的介面卡](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)
 ### [取得電腦相容性的協助](get-help-with-pc-compatibility.md)
-### [常見問題集](before-you-buy-faqs.md)
-
-## 開始使用
-### [開始之前](before-you-start.md)
 ### [插入您的頭戴式裝置](plug-in-your-headset.md)
 ### [安裝 Windows Mixed Reality](install-windows-mixed-reality.md)
 ### [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
@@ -31,6 +27,7 @@
 ### [提出錯誤及意見反應](filing-feedback.md)
 ### [錯誤碼](error-codes.md)
 ### [安裝錯誤](installation_errors.md)
+### [購買之前](before-you-buy-faqs.md)
 ### [界限](boundary-questions.md)
 ### [頭戴式裝置連線能力](headset-connectivity.md)
 ### [頭戴式裝置顯示器](headset-display.md)
