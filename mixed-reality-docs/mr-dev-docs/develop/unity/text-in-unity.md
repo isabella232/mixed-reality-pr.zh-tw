@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、控制項、字型、印刷樣式、ui、ux、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 9778b1b11db7ac1c330b0ede4f6153deff45a95a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 04b62cd0989042856dbd15d467d042f67df69931
+ms.sourcegitcommit: 5d6dbbb94e60cf10786d0fbbaf4239a1541e9e29
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677357"
+ms.lasthandoff: 11/21/2020
+ms.locfileid: "95008131"
 ---
 # <a name="text-in-unity"></a>Unity 中的文字
 
@@ -93,7 +93,7 @@ Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 不
 
 ### <a name="shader-with-occlusion-support"></a>具有遮蔽支援的著色器
 
-Unity 的預設字型材質不支援遮蔽。 因此，依預設，您會看到物件後面的文字。 我們已包含 [支援遮蔽的簡單著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MRTK/Core/StandardAssets/Shaders/Text3DShader.shader)。 下圖顯示具有預設字型材質 (左) 的文字，以及具有適當遮蔽 (右邊) 的文字。
+Unity 的預設字型材質不支援遮蔽。 因此，依預設，您會看到物件後面的文字。 我們已包含 [支援遮蔽的簡單著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader)。 下圖顯示具有預設字型材質 (左) 的文字，以及具有適當遮蔽 (右邊) 的文字。
 
 ![具有遮蔽支援的著色器](images/hug-text-07-1000px.png)<br>
 *具有遮蔽支援的著色器*
