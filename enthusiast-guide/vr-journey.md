@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: 429a1130d628f54f12eb8ff6eed3f48d4712143a
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
+ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941864"
+ms.lasthandoff: 11/23/2020
+ms.locfileid: "95417202"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -29,7 +29,7 @@ ms.locfileid: "94941864"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [開始之前](before-you-start.md) |  |
+| [開始之前](before-you-start.md) | 請確定您有開始使用 VR 旅程所需的一切 |
 | [最低電腦硬體指導方針](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) | 執行 Windows Mixed Reality、Windows Mixed Reality Ultra 和 Windows Mixed Reality 入口網站應用程式所需瞭解的一切 |
 | [取得電腦相容性的協助](get-help-with-pc-compatibility.md) | 瞭解 Windows Mixed Reality PC 檢查產生的報告 |
 | [購買常見問題](before-you-buy-faqs.md) | 取得有關技術規格、裝置和控制器的所有購買問題的解答 |
@@ -64,11 +64,16 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。
 
 ## <a name="4-discover-apps-and-content"></a>4. 探索應用程式和內容
 
-尋找沉浸式遊戲、桌面應用程式和 VR 內容，並使用下列資源中的 Microsoft Edge 瀏覽器。 
+在下列資源中尋找沉浸式遊戲、桌面應用程式和 VR 內容。 
 
 <br>
 
-| [遊戲、360影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md) |開始使用您的第一個沉浸式遊戲、2D 商店平板、桌面應用程式及 WebVR 體驗 | | [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) |連接您的裝置並播放 SteamVR 遊戲並瞭解 Windows 測試人員計畫 | | [使用 Microsoft Edge](using-microsoft-edge.md) |在您的沉浸式裝置上安裝最新版本的 Microsoft Edge | | [使用 WebVR](webvr.md) |在您的瀏覽器環境中取得安裝程式以體驗 VR |
+|  Checkpoint  |  功能  |
+| --- | --- |
+| [遊戲、360影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md) | 開始使用您的第一個沉浸式遊戲、2D 商店平板、桌面應用程式及 WebVR 體驗 |
+| [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) | 連接您的裝置並播放 SteamVR 遊戲，瞭解 Windows 測試人員計畫 |
+| [使用 Microsoft Edge](using-microsoft-edge.md) | 在您的沉浸式裝置上安裝最新版本的 Microsoft Edge |
+| [使用 WebVR](webvr.md) | 在瀏覽器環境中取得安裝程式以體驗 VR |
 
 ## <a name="troubleshooting-tips--resources"></a>疑難排解、秘訣 & 資源
 
