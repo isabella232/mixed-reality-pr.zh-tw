@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/14/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件
-ms.openlocfilehash: f7b57cf8a023874aa14118ff5cd50076bbf344e0
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: f903848b8d5c9c1dccfc00cd7bd6d16d2e491a5e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699188"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679837"
 ---
 # <a name="5-adding-a-button--resetting-piece-locations"></a>5.新增按鈕並重設棋子位置
 
@@ -30,12 +30,12 @@ ms.locfileid: "91699188"
 ## <a name="creating-a-reset-function"></a>建立重設函式
 您的第一項工作是建立函式藍圖，將棋子重設為其在場景中的原始位置。 
 
-1.  開啟 **WhiteKing** 、按一下 [ My 藍圖] 中 [函式] 區段旁的 **+** 圖示，並將其命名為 [Reset Location]。 
+1.  開啟 **WhiteKing**、按一下 [ My 藍圖] 中 [函式] 區段旁的 **+** 圖示，並將其命名為 [Reset Location]。 
 
 2.  從藍圖格線上的 [Reset Location] 拖曳並放開執行，以建立 **SetActorRelativeTransform** 節點。 
     * 此函式會為動作項目設定與其父系相對的變形 (位置、旋轉和縮放)。 您會使用此函式來重設棋盤上的國王位置，即使棋盤已從其原始位置移動也一樣。 
     
-3. 在事件圖形內部按一下滑鼠右鍵，選取 [進行轉換]，並將其 [位置] 變更為 **X =-26** 、 **Y = 4** 、 **Z = 0** 。
+3. 在事件圖形內部按一下滑鼠右鍵，選取 [進行轉換]，並將其 [位置] 變更為 **X =-26**、**Y = 4**、**Z = 0**。
     * 將其 [傳回值] 連線到 **SetActorRelativeTransform** 中的 [新增相對轉換] 釘選。 
 
 ![重設位置函式](images/unreal-uxt/5-function.PNG)
@@ -47,8 +47,8 @@ ms.locfileid: "91699188"
 既然已正確設定函式，您的下一項工作就是建立按鈕，讓該函式在被觸碰時啟動。 
 
 
-1.  按一下 [新增] > [藍圖類別]、展開 [所有類別] 區段，然後搜尋 **BP_ButtonHoloLens2** 。 
-    * 將其命名為 **ResetButton** ，然後按兩下以開啟藍圖
+1.  按一下 [新增] > [藍圖類別]、展開 [所有類別] 區段，然後搜尋 **BP_ButtonHoloLens2**。 
+    * 將其命名為 **ResetButton**，然後按兩下以開啟藍圖
 
 > [!NOTE]
 > **BP_ButtonHoloLens2** 是 3D 按鈕藍圖動作項目，屬於 UX 工具外掛程式。
@@ -70,8 +70,8 @@ ms.locfileid: "91699188"
     
 從這裡開始，您會想要呼叫 **WhiteKing** 的 **Reset Location** 函式，該函式需要參考層級中的 **WhiteKing** 動作項目。 
 
-4.  在 [我的藍圖] 面板中，瀏覽至 [變數] 區段、按一下 **+** 按鈕，並將變數命名為 **WhiteKing** 。 
-    * 在 [詳細資料] 面板中，選取 [變數類型] 旁的下拉式清單，搜尋 **WhiteKing** ，然後選取 [物件參考]。 
+4.  在 [我的藍圖] 面板中，瀏覽至 [變數] 區段、按一下 **+** 按鈕，並將變數命名為 **WhiteKing**。 
+    * 在 [詳細資料] 面板中，選取 [變數類型] 旁的下拉式清單，搜尋 **WhiteKing**，然後選取 [物件參考]。 
     * 勾選 [可編輯執行個體] 旁的方塊。 這可讓您從主要層級設定變數。 
 
 ![建立變數](images/unreal-uxt/5-var.PNG)
@@ -85,7 +85,7 @@ ms.locfileid: "91699188"
 
 ![從 On Button Pressed 呼叫 Reset Location 函式](images/unreal-uxt/5-callresetloc.PNG)
 
-2.  將 **ResetButton** 拖曳到檢視區，並將其位置設定為 **X = 50** 、 **Y = -25** 和 **Z = 10** 。 將其旋轉設定為 **Z = 180** 。 在 [預設值] 底下，將 **WhiteKing** 變數的值設定為 **WhiteKing** 。
+2.  將 **ResetButton** 拖曳到檢視區，並將其位置設定為 **X = 50**、**Y = -25** 和 **Z = 10**。 將其旋轉設定為 **Z = 180**。 在 [預設值] 底下，將 **WhiteKing** 變數的值設定為 **WhiteKing**。
 
 ![設定變數](images/unreal-uxt/5-buttonlevel.PNG)
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器, 網格物件集合
 ms.localizationpriority: high
-ms.openlocfilehash: 849de7c50adc8ff1da5262ad46fae50cce48e953
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: b49d1b93b98a68e253239647262edc737fdbeb58
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353216"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679307"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4.將物件置放在場景中
 
@@ -47,15 +47,15 @@ ms.locfileid: "93353216"
 > [!TIP]
 > 若要並排顯示場景和遊戲視窗 (如上圖所示)，將遊戲視窗拖曳至場景視窗的右邊即可。 若要深入了解如何自訂您的工作區，您可以參閱 Unity 的<a href="https://docs.unity3d.com/Manual/CustomizingYourWorkspace.html" target="_blank">自訂您的工作區</a>文件。
 
-以滑鼠右鍵按一下新建立的物件並選取 [重新命名]，然後將名稱變更為 **RoverExplorer** ：
+以滑鼠右鍵按一下新建立的物件並選取 [重新命名]，然後將名稱變更為 **RoverExplorer**：
 
 ![Unity [重新命名] 內容相關快顯功能表](images/mr-learning-base/base-04-section2-step1-2.png)
 
 在仍選取 RoverExplorer 物件的情況下，在 [偵測器] 視窗中設定 **變形** 元件，如下所示：
 
-* **位置** ：X = 0、Y = -0.6、Z = 2
-* **旋轉** ：X = 0、Y = 0、Z = 0
-* **縮放** ：X = 1、Y = 1、Z = 1
+* **位置**：X = 0、Y = -0.6、Z = 2
+* **旋轉**：X = 0、Y = 0、Z = 0
+* **縮放**：X = 1、Y = 1、Z = 1
 
 ![已選取並置放 RoverExplorer 物件的 Unity](images/mr-learning-base/base-04-section2-step1-3.png)
 
@@ -73,9 +73,9 @@ ms.locfileid: "93353216"
 
 在 [專案] 視窗中，按一下 **資料表** Prefab 並拖曳至 **RoverExplorer** 物件上，使其成為 RoverExplorer 物件的子系，然後在 [偵測器] 視窗中設定 **變形** 元件，如下所示：
 
-* **位置** ：X = 0、Y = -0.005、Z = 0
-* **旋轉** ：X = 0、Y = 0、Z = 0
-* **縮放** ：X = 1.2、Y = 0.01、Z = 1.2
+* **位置**：X = 0、Y = -0.005、Z = 0
+* **旋轉**：X = 0、Y = 0、Z = 0
+* **縮放**：X = 1.2、Y = 0.01、Z = 1.2
 
 ![已選取並置放新加入資料表 Prefab 的 Unity](images/mr-learning-base/base-04-section3-step1-2.png)
 
@@ -84,19 +84,19 @@ ms.locfileid: "93353216"
 
 在 [專案] 視窗中，按一下 **[RoverAssembly]** Prefab 並拖曳至 **RoverExplorer** 物件，使其成為 RoverExplorer 物件的子系，然後在 [偵測器] 視窗中設定 **變形** 元件，如下所示：
 
-* **位置** ：X = -0.1、Y = 0、Z = 0
-* **旋轉** ：X = 0、Y = -135、Z = 0
-* **縮放** ：X = 1、Y = 1、Z = 1
+* **位置**：X = -0.1、Y = 0、Z = 0
+* **旋轉**：X = 0、Y = -135、Z = 0
+* **縮放**：X = 1、Y = 1、Z = 1
 
 ![已選取並置放新加入 RoverAssembly Prefab 的 Unity](images/mr-learning-base/base-04-section3-step1-3.png)
 
 ## <a name="organizing-objects-in-a-collection"></a>組織集合中的 3D 物件
 
-在 [階層] 視窗中，以滑鼠右鍵按一下 **RoverExplorer** 物件並選取 [建立空物件]，將空白物件新增為 RoverExplorer 的子系，然後將物件命名為 **RoverParts** ，並設定 **變形** 元件，如下所示：
+在 [階層] 視窗中，以滑鼠右鍵按一下 **RoverExplorer** 物件並選取 [建立空物件]，將空白物件新增為 RoverExplorer 的子系，然後將物件命名為 **RoverParts**，並設定 **變形** 元件，如下所示：
 
-* **位置** ：X = 0、Y = 0.06、Z = 0
-* **旋轉** ：X = 0、Y = 90、Z = 0
-* **縮放** ：X = 1、Y = 1、Z = 1
+* **位置**：X = 0、Y = 0.06、Z = 0
+* **旋轉**：X = 0、Y = 90、Z = 0
+* **縮放**：X = 1、Y = 1、Z = 1
 
 ![已選取並置放新建立 RoverParts 物件的 Unity](images/mr-learning-base/base-04-section4-step1-1.png)
 
@@ -118,7 +118,7 @@ ms.locfileid: "93353216"
 > [!TIP]
 > 若要深入了解場景可見度的控制項，以及如何使用其來最佳化場景檢視和工作流程，您可以參閱 Unity 的<a href="https://docs.unity3d.com/Manual/SceneVisibility.html" target="_blank">場景可見度</a>文件。
 
-在 [階層] 視窗中，將附加的 **(1)** 取代為 **_Part** ，以清除 RoverParts 子物件的名稱：
+在 [階層] 視窗中，將附加的 **(1)** 取代為 **_Part**，以清除 RoverParts 子物件的名稱：
 
 ![已清除重複組件名稱的 Unity](images/mr-learning-base/base-04-section4-step1-5.png)
 
@@ -128,10 +128,10 @@ ms.locfileid: "93353216"
 
 設定 **GridObjectCollection** 元件值，如下所示：
 
-* **排序類型** ：字母順序
-* **版面配置** ：水平
-* **儲存格寬度** ：0.25
-* **與父系的距離** ：0.38
+* **排序類型**：字母順序
+* **版面配置**：水平
+* **儲存格寬度**：0.25
+* **與父系的距離**：0.38
 
 ![已設定 GridObjectCollection 元件的 Unity](images/mr-learning-base/base-04-section4-step1-7.png)
 

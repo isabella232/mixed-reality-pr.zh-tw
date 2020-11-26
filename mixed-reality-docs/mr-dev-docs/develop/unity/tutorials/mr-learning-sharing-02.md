@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: aeda463610f1fb1205eade556a2c2b9bc07a4fde
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353476"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679257"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -42,7 +42,7 @@ ms.locfileid: "93353476"
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
 
 1. 將 **MRTK 設定檔** 變更為 **DefaultHoloLens2ConfigurationProfile**
-1. 將 **空間感知網格顯示選項** 變更為 **遮蔽** 。
+1. 將 **空間感知網格顯示選項** 變更為 **遮蔽**。
 
 ## <a name="enabling-additional-capabilities"></a>啟用其他功能
 
@@ -50,7 +50,7 @@ ms.locfileid: "93353476"
 
 ![Unity 玩家設定](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)所啟用的 **InternetClient** 、 **Microphone** 、 **SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
+在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)所啟用的 **InternetClient**、**Microphone**、**SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
 
 然後啟用下列其他功能：
 

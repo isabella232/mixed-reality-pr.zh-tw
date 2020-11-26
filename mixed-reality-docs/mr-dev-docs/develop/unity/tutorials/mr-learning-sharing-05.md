@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 65672bad9a967e11e7feb7efc45759608e9c9e76
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353426"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678247"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5.將 Azure Spatial Anchors 整合到共用體驗
 
@@ -105,8 +105,8 @@ ms.locfileid: "93353426"
 
 如果您現在建立 Unity 專案，並將其部署到裝置，您就可以藉由共用 Azure Anchor 識別碼，在裝置之間進行空間對齊。 若要進行測試，您可以依照下列步驟執行：
 
-1. 裝置 1 上： **啟動應用程式** (Rover Explorer 已具現化並放在桌面上)
-2. 在裝置 2 上： **啟動應用程式** (兩位使用者都會看到具有 Rover Explorer 的桌面，但桌面不會出現在相同的位置，而且使用者虛擬人偶不會出現在使用者的所在位置)
+1. 裝置 1 上：**啟動應用程式** (Rover Explorer 已具現化並放在桌面上)
+2. 在裝置 2 上：**啟動應用程式** (兩位使用者都會看到具有 Rover Explorer 的桌面，但桌面不會出現在相同的位置，而且使用者虛擬人偶不會出現在使用者的所在位置)
 3. 裝置 1 上：按下 [啟動 Azure 工作階段] 按鈕
 4. 裝置 1 上：按下 [建立 Azure 錨點] 按鈕 (在 TableAnchor 物件的位置上建立錨點，並將錨點資訊儲存在 Azure 資源中)。
 5. 裝置 1 上：按下 [共用 Azure 錨點] 按鈕 (即時與其他使用者共用錨點識別碼)

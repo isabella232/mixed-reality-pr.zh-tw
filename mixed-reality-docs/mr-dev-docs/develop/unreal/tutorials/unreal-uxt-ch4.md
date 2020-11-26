@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/18/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件
-ms.openlocfilehash: a4ad1879e73c85e25e5de675a4180f57361691a9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: dc17b878255a3d6a8e0efc3a4c5bd7aa7d57373d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699213"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679847"
 ---
 # <a name="4-making-your-scene-interactive"></a>4.使場景成為互動式場景
 
@@ -30,13 +30,13 @@ ms.locfileid: "91699213"
 ## <a name="downloading-the-mrtk-ux-tools-plugin"></a>下載 MRTK UX 工具外掛程式
 開始處理使用者輸入之前，您必須先將外掛程式新增至專案。
 
-1.  在 GitHub 的混合實境 UX 工具 [版本頁面](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases)上，瀏覽至適用於 Unreal 的 UX 工具 v0.9.0 版本，並下載 **UXTools.0.9.0.zip** 。 將檔案解壓縮。
+1.  在 GitHub 的混合實境 UX 工具 [版本頁面](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases)上，瀏覽至適用於 Unreal 的 UX 工具 v0.9.0 版本，並下載 **UXTools.0.9.0.zip**。 將檔案解壓縮。
 
 2.  在專案的根資料夾中，建立名為 **Plugins** 的新資料夾。 將解壓縮的 UXTools 外掛程式複製到這個資料夾中，然後重新啟動 Unreal 編輯器。 
 
 ![建立專案外掛程式資料夾](images/unreal-uxt/4-plugins.PNG)
 
-3.  UXTools 外掛程式有一個內容資料夾，內含 **按鈕** 、 **輸入模擬** 和 **指標** 等元件的子資料夾，且具有包含額外程式碼的 C++ 類別資料夾。  
+3.  UXTools 外掛程式有一個內容資料夾，內含 **按鈕**、**輸入模擬** 和 **指標** 等元件的子資料夾，且具有包含額外程式碼的 C++ 類別資料夾。  
 
 > [!NOTE]
 > 如果您在 [內容瀏覽器] 中沒有看到 [UXTools 內容] 區段，請按一下 [檢視選項] > [顯示外掛程式內容]。 
@@ -73,11 +73,11 @@ ms.locfileid: "91699213"
 1. 從其中一個 [繁衍轉換] 釘選拖曳並放開釘選，以放置新的節點。 
     * 搜尋 [進行轉換] 節點，然後將 [傳回值] 拖曳至另一手的 [繁衍轉換]，讓兩個 **SpawnActor** 節點連線。 
 
-2.  按一下兩個 **SpawnActor** 節點底端的 **向下箭頭** ，以顯示 [擁有者] 釘選。    
+2.  按一下兩個 **SpawnActor** 節點底端的 **向下箭頭**，以顯示 [擁有者] 釘選。    
     * 從其中一個 **擁有者** 釘選拖曳釘選，然後放開以放置新的節點。 
     * 搜尋 [本身] 並選取 [取得本身的參考] 變數，然後在 [本身] 物件參考節點與其他手部互動動作項目的 [擁有者] 釘選之間建立連結。 
 3. 最後同樣重要的是，應對兩個手部互動動作項目都核取 [在抓取目標上顯示近處的游標] 方塊。 如此，當您的食指靠近抓取目標時就會出現游標，讓您能更輕易看出手指與目標的相對位置。
-    * **編譯** 、 **儲存** ，然後返回主視窗。 
+    * **編譯**、**儲存**，然後返回主視窗。 
 
 確定連線符合下列螢幕擷取畫面，但是您可以隨意拖曳節點，讓您的藍圖更容易閱讀
 
@@ -105,9 +105,9 @@ ms.locfileid: "91699213"
 
 ## <a name="testing-the-scene"></a>測試場景
 好消息！ 您已經準備好使用新的虛擬手部和使用者輸入來測試應用程式。 按下主視窗中的 [播放]，您會看到由 MRTK UX 工具外掛程式提供的兩個網狀手部，並且具有從每一個手掌延伸的手部光線。 您可以控制手部及其互動，如下所示：
-- 按住 **左 Alt** 鍵，以控制 **左手** ，按住 **左 Shift** 鍵，以控制 **右手** 。 
+- 按住 **左 Alt** 鍵，以控制 **左手**，按住 **左 Shift** 鍵，以控制 **右手**。 
 - 移動您的滑鼠來移動手部，並使用您的 **滑鼠滾輪** 來捲動，將手部 **向前** 或 **向後** 移動。 
-- 按一下滑鼠左鍵以 **捏合** ，按一下滑鼠中間按鈕以 **撥開** 。 
+- 按一下滑鼠左鍵以 **捏合**，按一下滑鼠中間按鈕以 **撥開**。 
 
 > [!NOTE]
 > 如果您將多個頭戴式裝置插入電腦，輸入模擬可能無法正常運作。 如有問題，請嘗試拔掉其他頭戴式裝置。 

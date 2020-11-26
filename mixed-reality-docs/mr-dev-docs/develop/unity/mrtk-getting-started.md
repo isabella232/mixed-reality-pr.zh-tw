@@ -6,13 +6,13 @@ ms.author: dongpark
 ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2
-ms.openlocfilehash: ed3663c9eb3735dc2232a667e605ba4dab5bf1a4
-ms.sourcegitcommit: 8a80613f025b05a83393845d4af4da26a7d3ea9c
+keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
+ms.openlocfilehash: c780084e89e286d9558fafa78c460518f48a0368
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/12/2020
-ms.locfileid: "94573222"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678557"
 ---
 # <a name="getting-started-with-mrtk-for-unity"></a>開始使用適用於 Unity 的 MRTK
 ![MRTK](../../design/images/MRTK_UX_Hero.png)

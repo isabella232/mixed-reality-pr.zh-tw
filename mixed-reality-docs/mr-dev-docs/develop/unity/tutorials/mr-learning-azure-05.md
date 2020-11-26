@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure bot 服務, luis, 自然語言, 對話 bot
+keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure bot 服務, luis, 自然語言, 對話 bot, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 417b534223427b491d900ad767d9fd797698ac71
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915553"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679357"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.整合 Azure Bot 服務
 
@@ -33,7 +33,7 @@ ms.locfileid: "92915553"
 
 ## <a name="understanding-azure-bot-service"></a>了解 Azure Bot 服務
 
-**Azure Bot 服務** 運用 **LUIS** ，讓開發人員能夠建立智慧型 Bot 並與使用者保持自然交談。 交談式 Bot 是促進使用者與您的應用程式互動的絕佳方式。 Bot 可以使用 [QnA 標記](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true)作為知識庫，以 [Language Understanding (LUIS)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) 的功能來維持複雜的交談。
+**Azure Bot 服務** 運用 **LUIS**，讓開發人員能夠建立智慧型 Bot 並與使用者保持自然交談。 交談式 Bot 是促進使用者與您的應用程式互動的絕佳方式。 Bot 可以使用 [QnA 標記](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true)作為知識庫，以 [Language Understanding (LUIS)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) 的功能來維持複雜的交談。
 
 深入了解 [Azure Bot 服務](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true)。
 
@@ -48,16 +48,16 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 下載追蹤物件 Azure Function 專案：[AzureFunction_TrackedObjectsService.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureFunction_TrackedObjectsService.zip)，並將其解壓縮至您的硬碟。
 
-此 Azure 函式有兩個動作，分別是 **Count** 和 **Find** ，這兩者可透過基本的 HTTP GET 叫用。 您可以在 **Visual Studio** 中檢查程式碼。
+此 Azure 函式有兩個動作，分別是 **Count** 和 **Find**，這兩者可透過基本的 HTTP GET 叫用。 您可以在 **Visual Studio** 中檢查程式碼。
 
 深入了解 [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)。
 
-**Count** 函式會從表格的 **表格儲存體** 查詢所有 **TrackedObjects** ，非常簡單。 另一方面， **Find** 函式會從 GET 要求取得「名稱」查詢參數，並查詢 **表格儲存體** 以取得相符的 **TrackedObject** 並傳回 DTO 作為 JSON。
+**Count** 函式會從表格的 **表格儲存體** 查詢所有 **TrackedObjects**，非常簡單。 另一方面，**Find** 函式會從 GET 要求取得「名稱」查詢參數，並查詢 **表格儲存體** 以取得相符的 **TrackedObject** 並傳回 DTO 作為 JSON。
 
-您可以直接從 **Visual Studio** 部署 **Azure 函式** 。
+您可以直接從 **Visual Studio** 部署 **Azure 函式**。
 在這裡尋找關於 [Azure 函式部署](https://docs.microsoft.com/azure/devops/pipelines/targets/azure-functions?view=azure-devops&tabs=dotnet-core%2Cyaml&preserve-view=true)的所有資訊。
 
-完成部署之後，在 **Azure 入口網站** 中開啟對應的資源，然後按一下「設定」區段下的 [組態]。 在 **應用程式設定** 中， 您需要提供儲存 **追蹤物件** 之 **Azure 儲存體** 的「連接字串」。 按一下 [新增應用程式設定]，名稱請使用： **AzureStorageConnectionString** ，並提供正確的「連接字串」。 之後，請按一下 [儲存]， **Azure 函式** 已準備好裝載您接下來會建立的 Bot。
+完成部署之後，在 **Azure 入口網站** 中開啟對應的資源，然後按一下「設定」區段下的 [組態]。 在 **應用程式設定** 中， 您需要提供儲存 **追蹤物件** 之 **Azure 儲存體** 的「連接字串」。 按一下 [新增應用程式設定]，名稱請使用：**AzureStorageConnectionString**，並提供正確的「連接字串」。 之後，請按一下 [儲存]，**Azure 函式** 已準備好裝載您接下來會建立的 Bot。
 
 ### <a name="creating-a-conversation-bot"></a>建立交談 Bot
 
@@ -71,11 +71,11 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 我們已備妥 Bot 編輯器專案，以提供本教學課程所需的對話和觸發程式。 下載 Bot Framework Composer 專案：[BotComposerProject_TrackedObjectsBot.zip](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/BotComposerProject_TrackedObjectsBot.zip)，並將其解壓縮至您的硬碟。
 
-在頂端列上，按一下 [開啟]，然後選取您已下載的 Bot Framework 專案，其名稱為 **TrackedObjectsBot** 。 專案完全載入之後，您應該會看到專案已就緒。
+在頂端列上，按一下 [開啟]，然後選取您已下載的 Bot Framework 專案，其名稱為 **TrackedObjectsBot**。 專案完全載入之後，您應該會看到專案已就緒。
 
 ![已開啟 TrackedObjectsBot 專案的 Bot Framework Composer](images/mr-learning-azure/tutorial5-section4-step1-2.png)
 
-讓我們將焦點放在左側，您可以在這裡看到 **對話面板** 。 在這裡有一個名為 **TrackedObjectsBot** 的對話，其下有數個 **觸發程式** 。
+讓我們將焦點放在左側，您可以在這裡看到 **對話面板**。 在這裡有一個名為 **TrackedObjectsBot** 的對話，其下有數個 **觸發程式**。
 
 深入了解 [Bot Framework 概念](https://docs.microsoft.com/composer/concept-dialog)。
 
@@ -114,13 +114,13 @@ Bot 會要求使用者提供 **追蹤物件** 的「名稱」以了解更詳細�
 
 ![TrackedObjectsBot 專案對話方塊觸發程式 FindEntity](images/mr-learning-azure/tutorial5-section4-step1-6.png)
 
-如果找不到 **追蹤物件** ，就會通知使用者並結束交談。 找到目標的 **追蹤物件** 時，Bot 會檢查有哪些可用的屬性並加以報告。
+如果找不到 **追蹤物件**，就會通知使用者並結束交談。 找到目標的 **追蹤物件** 時，Bot 會檢查有哪些可用的屬性並加以報告。
 
 ### <a name="adapting-the-bot"></a>調整 Bot
 
 **AskingForCount** 和 **FindEntity** 觸發程式必須與後端交談，這表示您必須新增先前部署之 **Azure 函式** 的正確 URL。
 
-在對話面板上，按一下 [AskingForCount] 並尋找「傳送 HTTP 要求」動作，您可以在這裡看到欄位 **URL** ，您需要變更 **Count** 函式端點的正確 URL。
+在對話面板上，按一下 [AskingForCount] 並尋找「傳送 HTTP 要求」動作，您可以在這裡看到欄位 **URL**，您需要變更 **Count** 函式端點的正確 URL。
 
 ![TrackedObjectsBot 專案 AskingForCount 對話方塊觸發程式端點設定](images/mr-learning-azure/tutorial5-section5-step1-1.png)
 
@@ -153,13 +153,13 @@ Bot 會要求使用者提供 **追蹤物件** 的「名稱」以了解更詳細�
 
 ![已選取新增 ChatBotManager prefab 的 Unity](images/mr-learning-azure/tutorial5-section6-step1-2.png)
 
-現在請將 **ChatBotManager** 物件與附加至 **ChatBotPanel** 物件的 **ChatBotController** 元件連線。 在階層中選取 **ChatBotPanel** ，您會看到空白的 **聊天 Bot 管理員** 欄位，請從階層中將 **ChatBotManager** 物件拖曳到空白的 **聊天 Bot 管理員** 欄位中。
+現在請將 **ChatBotManager** 物件與附加至 **ChatBotPanel** 物件的 **ChatBotController** 元件連線。 在階層中選取 **ChatBotPanel**，您會看到空白的 **聊天 Bot 管理員** 欄位，請從階層中將 **ChatBotManager** 物件拖曳到空白的 **聊天 Bot 管理員** 欄位中。
 
 ![已設定 ChatBotPanel 的 Unity](images/mr-learning-azure/tutorial5-section6-step1-3.png)
 
-接下來，您需要一種方法來開啟 **ChatBotPanel** ，讓使用者可以與之互動。 從場景視窗中，您可能已注意到 **MainMenu** 物件上出現「聊天 Bot」側邊按鈕可用來解決此問題。
+接下來，您需要一種方法來開啟 **ChatBotPanel**，讓使用者可以與之互動。 從場景視窗中，您可能已注意到 **MainMenu** 物件上出現「聊天 Bot」側邊按鈕可用來解決此問題。
 
-在階層中，尋找 **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot** ，並在偵測器中尋找 ButtonConfigHelper 指令碼。 在該處，您會在 **OnClick()** 事件回呼上看到空位。 將 **ChatBotPanel** 拖放到事件位置，從下拉式清單中瀏覽 GameObject，然後在子功能表 *SetActive (bool)* 中選取並啟用核取方塊。
+在階層中，尋找 **RootMenu** > **MainMenu** > **SideButtonCollection** > **ButtonChatBot**，並在偵測器中尋找 ButtonConfigHelper 指令碼。 在該處，您會在 **OnClick()** 事件回呼上看到空位。 將 **ChatBotPanel** 拖放到事件位置，從下拉式清單中瀏覽 GameObject，然後在子功能表 *SetActive (bool)* 中選取並啟用核取方塊。
 
 ![已設定 ButtonChatBot 的 Unity](images/mr-learning-azure/tutorial5-section6-step1-4.png)
 
@@ -180,7 +180,7 @@ Bot 應該會告訴您數量並結束交談。
 
 #### <a name="asking-about-a-tracked-object"></a>詢問追蹤物件的相關資訊
 
-現在再次執行應用程式，這次詢問 **尋找追蹤物件** ，Bot 會詢問您應該以 "car" 回應的名稱，或是您知道存在於資料庫中之其他「追蹤物件」的名稱。 Bot 會告訴您例如說明等詳細資料，以及是否已指派空間錨點。
+現在再次執行應用程式，這次詢問 **尋找追蹤物件**，Bot 會詢問您應該以 "car" 回應的名稱，或是您知道存在於資料庫中之其他「追蹤物件」的名稱。 Bot 會告訴您例如說明等詳細資料，以及是否已指派空間錨點。
 
 > [!TIP]
 > 試著詢問不存在的 **追蹤物件** 不存在，看看 Bot 會如何回應。
@@ -192,4 +192,4 @@ Bot 應該會告訴您數量並結束交談。
 ## <a name="conclusion"></a>結論
 
 在此教學課程系列中，您已體驗到 **Azure 雲端服務** 如何為您的應用程式帶來全新且令人興奮的功能。
-您現在可以使用 **Azure 儲存體** ，將資料和影像儲存在雲端中，使用 **Azure 自訂視覺** 來關聯和定型模型、將物件帶入具有 **Azure Spatial Anchors** 的本機內容，以及實作 **Azure Bot Framework (由 LUIS 提供技術支援)** ，以全新且自然的互動模式新增對話式 Bot。
+您現在可以使用 **Azure 儲存體**，將資料和影像儲存在雲端中，使用 **Azure 自訂視覺** 來關聯和定型模型、將物件帶入具有 **Azure Spatial Anchors** 的本機內容，以及實作 **Azure Bot Framework (由 LUIS 提供技術支援)** ，以全新且自然的互動模式新增對話式 Bot。

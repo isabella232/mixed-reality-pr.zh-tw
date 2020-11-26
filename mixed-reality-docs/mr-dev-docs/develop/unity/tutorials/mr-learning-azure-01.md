@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: azure, 混合實境, unity, 教學課程, hololens, hololens 2, azure blob 儲存體, azure 表格儲存體，azure spatial anchors, azure bot framework
+keywords: azure, 混合實境, unity, 教學課程, hololens, hololens 2, azure blob 儲存體, azure 表格儲存體，azure spatial anchors, azure bot framework, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 878fd92a946b70ba3b0a867722f86ab801a79032
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416974"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679417"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.適用於 HoloLens 2 的 Azure 雲端服務
 
@@ -21,7 +21,7 @@ ms.locfileid: "93416974"
 歡迎參與這系列的教學課程，本系列課程內容著重於將 **Azure 雲端** 服務帶入 **HoloLens 2** 應用程式中。 在此五部分的教學課程系列中，您將了解如何將數個 **Azure 雲端** 服務整合至 **HoloLens 2** 的 **Unity** 專案中。 在每個連續章節中，您將新增新的 **Azure 雲端** 服務以擴充應用程式功能和使用者體驗，同時了解每個 **Azure 雲端** 服務的基本概念。
 
 > [!NOTE]
-> 本教學課程系列著重於 **HoloLens 2** ，但由於 Unity 的跨平台性質，您的學習內容也適用於桌面和智慧型手機應用程式。
+> 本教學課程系列著重於 **HoloLens 2**，但由於 Unity 的跨平台性質，您的學習內容也適用於桌面和智慧型手機應用程式。
 
 這是第一個教學課程，將為您介紹此系列的目標，以及您將使用的每個 Azure 雲端服務，和設定初始 Unity 專案的方式。
 
@@ -36,7 +36,7 @@ ms.locfileid: "93416974"
 ## <a name="application-goals"></a>應用程式目標
 
 在此教學課程系列中，您將建置一個 **HoloLens 2** 應用程式，以偵測影像中的物件並尋找其空間位置。 若要設定網域語言，您可以從現有的 **追蹤物件** 呼叫這類實體。
-使用者可以建立 **追蹤物件** ，透過電腦視覺和 (或) 空間位置將其中一組或二組影像加以關聯。 所有資料都必須保存到雲端。 此外，應用程式的某些層面會選擇性地透過 Bot 以自然語言來控制。
+使用者可以建立 **追蹤物件**，透過電腦視覺和 (或) 空間位置將其中一組或二組影像加以關聯。 所有資料都必須保存到雲端。 此外，應用程式的某些層面會選擇性地透過 Bot 以自然語言來控制。
 
 ### <a name="features"></a>功能
 
@@ -93,7 +93,7 @@ ms.locfileid: "93416974"
 5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureCloudServices
 
-然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，將場景的 MRTK 組態設定檔變更為 **DefaultHoloLens2ConfigurationProfile** ，並將空間感知網格的顯示選項變更為 [遮蔽]。
+然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，將場景的 MRTK 組態設定檔變更為 **DefaultHoloLens2ConfigurationProfile**，並將空間感知網格的顯示選項變更為 [遮蔽]。
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 
@@ -127,7 +127,7 @@ ms.locfileid: "93416974"
 
 在本節中，您將藉由新增一些教學課程 Prefab 來準備場景。
 
-在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.AzureCloudServices] > [預製物件] > [管理員] 資料夾。 按住 CTRL 鍵時，按一下 [SceneController]、 **RootMenu** 和 **DataManager** 以選取三個預製物件：
+在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.AzureCloudServices] > [預製物件] > [管理員] 資料夾。 按住 CTRL 鍵時，按一下 [SceneController]、**RootMenu** 和 **DataManager** 以選取三個預製物件：
 
 ![已選取 SceneController、RootMenu 和 DataManager prefabs 的 Unity](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
@@ -162,7 +162,7 @@ ms.locfileid: "93416974"
 
 ![已新增 DataManager 事件接聽程式的 Unity](images/mr-learning-azure/tutorial1-section6-step1-2.png)
 
-您會注意到事件的下拉式功能表已變成作用中，請按一下下拉式功能表並瀏覽至 **SceneController** ，然後在子功能表中選取 **Init ()** 選項：
+您會注意到事件的下拉式功能表已變成作用中，請按一下下拉式功能表並瀏覽至 **SceneController**，然後在子功能表中選取 **Init ()** 選項：
 
 ![已新增 DataManager 事件動作的 Unity](images/mr-learning-azure/tutorial1-section6-step1-3.png)
 
@@ -178,7 +178,7 @@ ms.locfileid: "93416974"
 
 ## <a name="prepare-project-build-pipeline"></a>準備專案建置管線
 
-雖然專案還必須填入內容，但您必須執行一些準備工作，讓專案準備好建置 **HoloLens 2** 。
+雖然專案還必須填入內容，但您必須執行一些準備工作，讓專案準備好建置 **HoloLens 2**。
 
 ### <a name="1-add-additional-required-capabilities"></a>1.新增額外的必要功能
 
@@ -190,7 +190,7 @@ ms.locfileid: "93416974"
 
 ![Unity 發行設定](images/mr-learning-azure/tutorial1-section7-step1-2.png)
 
-在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在教學課程開頭建立專案時所啟用的 **InternetClient** 、 **Microphone** 和 **SpatialPerception** 功能是否皆已啟用。 然後，啟用 **InternetClientServer** 、 **PrivateNetworkClientServer** 和 **Webcam** 功能：
+在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在教學課程開頭建立專案時所啟用的 **InternetClient**、**Microphone** 和 **SpatialPerception** 功能是否皆已啟用。 然後，啟用 **InternetClientServer**、**PrivateNetworkClientServer** 和 **Webcam** 功能：
 
 ![Unity 功能](images/mr-learning-azure/tutorial1-section7-step1-3.png)
 
@@ -215,7 +215,7 @@ ms.locfileid: "93416974"
 
 ## <a name="congratulations"></a>恭喜！
 
-在本教學課程中，我們介紹了教學課程系列，您也了解各項即將實作的功能，以及如何繫結 **Azure 雲端** ，進而實現您的 *HoloLens 2* 應用程式。 您已將必要的元件新增至專案，並備妥此教學課程系列的場景。
+在本教學課程中，我們介紹了教學課程系列，您也了解各項即將實作的功能，以及如何繫結 **Azure 雲端**，進而實現您的 *HoloLens 2* 應用程式。 您已將必要的元件新增至專案，並備妥此教學課程系列的場景。
 
 在下一課中，您將使用 Azure 儲存體作為雲端式持續性解決方案，以儲存資料和影像。
 

@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure spatial anchors, 語音辨識, Windows 10, LUIS, LUIS 入口網站, 意圖, 實體, 語句, 自然語言理解
 ms.localizationpriority: high
-ms.openlocfilehash: 8cebe1fb203aeed9a262a2e9f482993b4775e0a6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696894"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678507"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.設定意圖和自然語言理解
 
@@ -44,7 +44,7 @@ ms.locfileid: "91696894"
 
 在本節中，您將為下一節要建立的 Language Understanding Intelligent Service (LUIS) 應用程式建立 Azure 預測資源。
 
-登入 <a href="https://portal.azure.com" target="_blank">Azure</a>，然後按一下 [建立資源]  。 然後搜尋並選取 **Language Understanding** ：
+登入 <a href="https://portal.azure.com" target="_blank">Azure</a>，然後按一下 [建立資源]  。 然後搜尋並選取 **Language Understanding**：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-1.png)
 
@@ -54,7 +54,7 @@ ms.locfileid: "91696894"
 
 在 [建立] 頁面上，按一下 [預測]  選項，並輸入下列值：
 
-* 針對 **訂用帳戶** ，如果您有試用版訂用帳戶，請選取 [免費試用]  ，否則請選取其他訂用帳戶的其中一個
+* 針對 **訂用帳戶**，如果您有試用版訂用帳戶，請選取 [免費試用]  ，否則請選取其他訂用帳戶的其中一個
 * 在 [資源群組]  中，按一下 [新建]  連結並輸入適當名稱 (例如 MRKT-Tutorials)  ，然後按一下 [確定] 
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
@@ -90,7 +90,7 @@ ms.locfileid: "91696894"
 
 具體而言，您將建立一個意圖，如果使用者說出應該採取的動作，則應用程式將會根據使用者所參考的按鈕，從場景中的三個紅色按鈕之一觸發 Interactable.OnClick() 事件。
 
-例如，如果使用者說 "go ahead and launch the rocket" (繼續並發射火箭)  ，應用程式會預測 **go ahead** 代表應採取一些 **動作** ，以及預測 **目標** 的 Interactable.OnClick() 事件位於 **啟動** 按鈕上。
+例如，如果使用者說 "go ahead and launch the rocket" (繼續並發射火箭)  ，應用程式會預測 **go ahead** 代表應採取一些 **動作**，以及預測 **目標** 的 Interactable.OnClick() 事件位於 **啟動** 按鈕上。
 
 達成此動作所需採取的主要步驟如下：
 
@@ -104,7 +104,7 @@ ms.locfileid: "91696894"
 
 ### <a name="1-create-a-luis-app"></a>1.建立 LUIS 應用程式
 
-使用您在上一節中建立 Azure 資源時所使用的相同使用者帳戶登入 <a href="https://www.luis.ai" target="_blank">LUIS</a>，選取您的國家/地區並同意使用條款。 在下一個步驟中，當系統要求您 **連結您的 Azure 帳戶** 時，請選擇 **繼續使用您的試用金鑰** ，改為使用 Azure 撰寫資源。
+使用您在上一節中建立 Azure 資源時所使用的相同使用者帳戶登入 <a href="https://www.luis.ai" target="_blank">LUIS</a>，選取您的國家/地區並同意使用條款。 在下一個步驟中，當系統要求您 **連結您的 Azure 帳戶** 時，請選擇 **繼續使用您的試用金鑰**，改為使用 Azure 撰寫資源。
 
 > [!NOTE]
 > 如果您已註冊 LUIS，而您的撰寫試用金鑰已過期，您可以參閱 [遷移至 Azure 資源撰寫金鑰](https://docs.microsoft.com/azure/cognitive-services/luis/luis-migration-authoring)文件，將您的 LUIS 撰寫資源切換為 Azure。
@@ -184,7 +184,7 @@ ms.locfileid: "91696894"
 
 在 [實體] 頁面上，瀏覽回到 **PressButton** 意圖頁面。
 
-回到 PressButton 意圖頁面之後，按一下單字 **go** ，然後再按一下單字 **ahead** ，接著從內容快顯功能表中選取 [動作 (簡單)]  ，將 **go ahead** 標示為 **動作** 實體值：
+回到 PressButton 意圖頁面之後，按一下單字 **go**，然後再按一下單字 **ahead**，接著從內容快顯功能表中選取 [動作 (簡單)]  ，將 **go ahead** 標示為 **動作** 實體值：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
@@ -195,7 +195,7 @@ ms.locfileid: "91696894"
 > [!NOTE]
 > 上圖中顯示在標籤底下的紅線表示尚未對實體值進行預測，當您在下一節中訓練模型時，此問題就會解決。
 
-接下來，按一下單字 **launch** ，然後從內容快顯功能表中選取 [目標 (簡單)]  ，將  標記為 **目標** 實體值：
+接下來，按一下單字 **launch**，然後從內容快顯功能表中選取 [目標 (簡單)]  ，將  標記為 **目標** 實體值：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
@@ -279,13 +279,13 @@ PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定�
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>將 Unity 專案連線至 LUIS 應用程式
 
-在 [管理] > [應用程式設定] > [Azure 資源]  頁面上，按一下 **複製** 圖示來複製 **查詢範例** ：
+在 [管理] > [應用程式設定] > [Azure 資源]  頁面上，按一下 **複製** 圖示來複製 **查詢範例**：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-1.png)
 
 回到 Unity 專案，在 [階層] 視窗中選取 **Lunarcom** 物件，然後在 [偵測器] 視窗中尋找 **Lunarcom Intent Recognizer (指令碼)** 元件並進行設定，如下所示：
 
-* 在 [LUIS 端點]  欄位中，貼上您在上一個步驟中複製的 **查詢範例** ：
+* 在 [LUIS 端點]  欄位中，貼上您在上一個步驟中複製的 **查詢範例**：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-2.png)
 
@@ -295,11 +295,11 @@ PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定�
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-1.png)
 
-如果您現在進入遊戲模式，您可以先按下火箭按鈕來測試意圖辨識。 然後，假設您的電腦有麥克風，當您說出第一個範例語句： **go ahead and launch the rocket** 時，您就會看到 LunarModule 發射至太空中：
+如果您現在進入遊戲模式，您可以先按下火箭按鈕來測試意圖辨識。 然後，假設您的電腦有麥克風，當您說出第一個範例語句：**go ahead and launch the rocket** 時，您就會看到 LunarModule 發射至太空中：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-2.png)
 
-請嘗試所有 **範例語句** ，然後嘗試一些 **有變化的範例語句** 變體，以及幾個 **隨機語句** 。
+請嘗試所有 **範例語句**，然後嘗試一些 **有變化的範例語句** 變體，以及幾個 **隨機語句**。
 
 接下來，返回 <a href="https://www.luis.ai" target="_blank">LUIS</a> 並瀏覽至 [組建] > [改善應用程式效能] >[檢閱端點語句]  頁面，使用 **切換** 按鈕從 [預設實體] 檢視切換至 [語彙基元檢視]  ，然檢閱語句：
 

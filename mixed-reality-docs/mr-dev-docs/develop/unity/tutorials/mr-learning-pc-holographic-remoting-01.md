@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: d88d3e17e26ddd361f2cbe1a32f22025255303f0
-ms.sourcegitcommit: 8fd127aff85b77778bd7a75c5ec5215d27ecf21a
+ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/06/2020
-ms.locfileid: "93416994"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679767"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -62,7 +62,7 @@ ms.locfileid: "93416994"
 
 1. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
 
-然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示，將場景的 MRTK 設定檔變更為 **DefaultHoloLens2ConfigurationProfile** 。 將空間感知網格的顯示選項變更為 **遮蔽** 。
+然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示，將場景的 MRTK 設定檔變更為 **DefaultHoloLens2ConfigurationProfile**。 將空間感知網格的顯示選項變更為 **遮蔽**。
 
 ## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
 
@@ -107,7 +107,7 @@ ms.locfileid: "93416994"
 
 ### <a name="1-configuring-the-interactable-script-component"></a>1.設定 Interactable (指令碼) 元件
 
-在 [階層] 視窗中，展開 **ButtonParent** 物件，然後選取 **NextButton** 。 在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，然後按一下 **OnClick ()+ 事件底下的**  圖示。
+在 [階層] 視窗中，展開 **ButtonParent** 物件，然後選取 **NextButton**。 在 [偵測器] 視窗中，找出 **Interactable (指令碼)** 元件，然後按一下 **OnClick ()+ 事件底下的**  圖示。
 
 ![已新增 NextButton OnClick 事件的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section4-Step1-1.png)
 
@@ -171,7 +171,7 @@ ms.locfileid: "93416994"
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1.識別目標物件和相關聯的工具提示
 
-在 [階層] 視窗中，選取 [ModelParent] 物件。 展開 [MarsCuriosity] -> [Rover] ***，以尋找 MarsCuriosityRover 的五個主要部分：* POI-Camera** 、 **POI-Wheels** 、 **POI-Antena** 、 **POI-Spectrometer** 、 **POI-RUHF Antenna** 。
+在 [階層] 視窗中，選取 [ModelParent] 物件。 展開 [MarsCuriosity] -> [Rover]***，以尋找 MarsCuriosityRover 的五個主要部分：* POI-Camera**、**POI-Wheels**、**POI-Antena**、**POI-Spectrometer**、**POI-RUHF Antenna**。
 
 * 觀察與 [階層] 視窗中 MarsCuriosityRover 組件相關聯的五個對應工具提示物件。
 * 當您查看 MarsCuriosityRover 組件時，將會設定這些物件以醒目提示體驗。
@@ -183,7 +183,7 @@ ms.locfileid: "93416994"
 在 [階層] 視窗中，選取 [POI-Camera] 物件。 在 [偵測器] 視窗中，找出 *Eye Tracking Target (指令碼)* 元件，並且設定 **While Looking At Target ()** 和 **On Look Away ()** 事件，如下所示：
 
 * 對 [無 (物件)] 欄位，指派 **POI-Camera ToolTip** 物件
-* 從 **While Looking At Target ()** 事件的 [沒有函式] 下拉式清單中，選取 [GameObject]  >  [SetActive (bool)]。 選取其底下的 **核取方塊** ，將工具提示醒目提示為當您查看目標物件時所觸發的動作。
+* 從 **While Looking At Target ()** 事件的 [沒有函式] 下拉式清單中，選取 [GameObject]  >  [SetActive (bool)]。 選取其底下的 **核取方塊**，將工具提示醒目提示為當您查看目標物件時所觸發的動作。
 
 ![正在進行 EyeTrackingTarget WhileLookingAtTarget 事件設定的 Unity](images/mrlearning-pc-holographic-remoting/Tutorial1-Section6-Step2-1.png)
 

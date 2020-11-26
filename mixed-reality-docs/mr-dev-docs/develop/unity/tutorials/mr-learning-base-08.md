@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 490a131bb196941d2ae581b97d88a104c0c212e2
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 2b572a106cba904231ed124260cd879cd3a9a944
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353496"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679747"
 ---
 # <a name="8-using-eye-tracking"></a>8.使用眼球追蹤
 
@@ -80,12 +80,12 @@ ms.locfileid: "93353496"
   * 按一下小型 **+** 圖示，以新增另一個事件
   * 將物件本身 (也就是相同的 **TextMeshPro** 物件) 新增至 [無 (物件)] 欄位
   * 從 [沒有函式] 下拉式清單中，選取 [TextMeshPro]  >  [float fontSize] 以在觸發事件時更新此屬性值
-  * 將引數設定為 **0.06** ，以將目前的字型大小增加 50% 成為 0.04
+  * 將引數設定為 **0.06**，以將目前的字型大小增加 50% 成為 0.04
 * 在 **On Look Away ()** 事件區段中
   * 按一下小型 **+** 圖示，以新增另一個事件
   * 將物件本身 (也就是相同的 **TextMeshPro** 物件) 新增至 [無 (物件)] 欄位
   * 從 [沒有函式] 下拉式清單中，選取 [TextMeshPro]  >  [float fontSize] 以在觸發事件時更新此屬性值
-  * 將引數設定為 **0.04** ，以將字型大小重設回 0.04
+  * 將引數設定為 **0.04**，以將字型大小重設回 0.04
 
 ![已選取提示 TextMeshPro 物件並已設定 EyeTrackingTarget 元件的 Unity](images/mr-learning-base/base-08-section4-step1-3.png)
 

@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發
-ms.openlocfilehash: a8e345831167362745a45a8fa81ddae858083ca7
-ms.sourcegitcommit: 9a489e8a3bf90b20f1b61606eea42c859c833424
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: b810ad7500f8bb2a70ef18ad29fb32df8801a2de
+ms.sourcegitcommit: 2759aba06e643d70004023b105ed26b33ce3dbfa
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/07/2020
-ms.locfileid: "94340686"
+ms.lasthandoff: 11/18/2020
+ms.locfileid: "94810444"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -29,7 +29,7 @@ ms.locfileid: "94340686"
 如果您不熟悉 Unreal 開發，請不要盲目跳入。 探索 Unreal <a href="https://docs.unrealengine.com/GettingStarted/index.html" target="_blank">教學課程系列</a>，以快速了解並尋找 Unreal <a href="https://www.unrealengine.com/marketplace/store" target="_blank">市集</a>和混合實境<a href="https://forums.unrealengine.com/development-discussion/vr-ar-development" target="_blank">論壇</a>中的資產和支援。 這些資源可將您連結至今日混合實境市集中建置者和問題解決者的社群。
 
 > [!IMPORTANT]
-> 如果您有現有 Unreal 專案要帶到 HoloLens 2 或沉浸式頭戴式裝置 (例如 Reverb G2)，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。
+> 如果您有現有 Unreal 專案要帶到沉浸式頭戴式裝置 (例如 Reverb G2)，請參閱我們的 **[移植指南](unreal-reverb-g2-controllers.md)** 。
 
 ## <a name="development-checkpoints"></a>開發檢查點
 

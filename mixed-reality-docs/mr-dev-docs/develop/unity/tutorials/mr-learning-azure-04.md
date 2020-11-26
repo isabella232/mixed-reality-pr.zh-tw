@@ -5,18 +5,18 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens, hololens 2, Azure spatial anchors
+keywords: 混合實境, unity, 教學課程, hololens, hololens 2, Azure 空間錨點, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f8271fe3b3b9549d6c95707466db9af3d312fab7
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353246"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679337"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.整合 Azure Spatial Anchors
 
-在本教學課程中，您將了解如何使用 **Azure Spatial Anchors** 。 您會將 **追蹤物件** 儲存為 Azure Spatial Anchor。 查詢錨點之後將會出現一個箭號，引導您前往該位置。
+在本教學課程中，您將了解如何使用 **Azure Spatial Anchors**。 您會將 **追蹤物件** 儲存為 Azure Spatial Anchor。 查詢錨點之後將會出現一個箭號，引導您前往該位置。
 
 ## <a name="objectives"></a>目標
 
@@ -70,13 +70,13 @@ Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spati
 
 執行應用程式，然後在體驗的主功能表中，按一下 [設定物件]。
 
-提供您想要儲存的物件 **名稱** ，然後按一下 [設定物件] 以繼續。 若要新增有關物件的詳細資訊，請選取 **影像** ，並描述物件。
+提供您想要儲存的物件 **名稱**，然後按一下 [設定物件] 以繼續。 若要新增有關物件的詳細資訊，請選取 **影像**，並描述物件。
 
 若要儲存位置，請按一下 [儲存位置]
 
-您會看到 **錨點指標** ，您可以在想要儲存的位置上移動和放置該指標。 之後，您會看到確認快顯視窗。 如果您想要確認並儲存位置，請按一下 [是]；否則，您可以按一下 [否]，然後再次選取位置來變更位置。
+您會看到 **錨點指標**，您可以在想要儲存的位置上移動和放置該指標。 之後，您會看到確認快顯視窗。 如果您想要確認並儲存位置，請按一下 [是]；否則，您可以按一下 [否]，然後再次選取位置來變更位置。
 
-當您按一下 [是] 來確認位置之後，位置和錨點識別碼將會儲存在 Azure 雲端儲存體中。 儲存之後，您會在錨點中看到具有物件名稱的 **物件標記** 。
+當您按一下 [是] 來確認位置之後，位置和錨點識別碼將會儲存在 Azure 雲端儲存體中。 儲存之後，您會在錨點中看到具有物件名稱的 **物件標記**。
 
 現在已成功儲存物件位置。
 
@@ -90,7 +90,7 @@ Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spati
 
 現在您可以按一下 [顯示位置] 來尋找物件。 按一下 [顯示位置] 之後，系統就會從雲端儲存體中查詢物件位址。
 
-成功擷取位置之後， **箭頭** 就會將您導向物件的位置。 遵循箭頭標記，直到您找到物件的位置。
+成功擷取位置之後，**箭頭** 就會將您導向物件的位置。 遵循箭頭標記，直到您找到物件的位置。
 
 您找到物件後，物件名稱就會出現在頂端，而箭頭將會消失，此時您可以按一下 [物件標記] 來查看物件的詳細資料。
 
@@ -98,7 +98,7 @@ Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spati
 
 在本教學課程中，您已了解 Azure Spatial Anchors 可以如何儲存和擷取 Hololense 2 上的物件位置。
 
-在最後一個教學課程中，您將了解如何使用 **Azure Bot Service** ，將自然語言新增為我們應用程式的新互動方法。
+在最後一個教學課程中，您將了解如何使用 **Azure Bot Service**，將自然語言新增為我們應用程式的新互動方法。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：5.整合 Azure Bot Service 與 LUIS](mr-learning-azure-05.md)

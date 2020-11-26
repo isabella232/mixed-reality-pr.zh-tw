@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, holograms, 空間對應
-ms.openlocfilehash: 8e49878cf37945c8e317b1098f48014b57d18551
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 空間對應, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696758"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94678807"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal 中的空間對應
 
@@ -27,8 +27,8 @@ ms.locfileid: "91696758"
 - 開啟 [編輯] > [專案設定]，然後向下捲動至 [平台] 區段。    
     + 選取 **HoloLens** 並勾選 [空間感知]。
 
-若要在 HoloLens 遊戲中加入空間對應，並偵錯 **MRMesh** ：
-1. 開啟 **ARSessionConfig** ，並展開 [ARSettings] > [世界對應] 區段。 
+若要在 HoloLens 遊戲中加入空間對應，並偵錯 **MRMesh**：
+1. 開啟 **ARSessionConfig**，並展開 [ARSettings] > [世界對應] 區段。 
 
 2. 勾選 [從追蹤的幾何圖形產生網格資料]，這會指示 HoloLens 外掛程式啟動，以非同步方式取得空間對應資料，並透過 **MRMesh** 將其呈現給 Unreal。 
 3. 勾選 [以線框呈現網格資料]，以在 **MRMesh** 中顯示每個三角形的白色線框。 
@@ -48,7 +48,7 @@ ms.locfileid: "91696758"
     + 如果預期的應用程式執行階段環境預期會很大，此值可能需要很大，才能符合真實世界的空間。  另一方面，如果應用程式只需要在使用者附近的表面上放置全像投影，則此值可能會比較小。 當使用者在世界中行走時，空間對應體積會隨著他們移動。 
 
 ## <a name="working-with-mrmesh"></a>使用 MongoDB
-若要可在執行階段存取 **MRMesh** ：
+若要可在執行階段存取 **MRMesh**：
 1. 將 **ARTrackableNotify** 元件新增至藍圖動作項目。 
 
 ![空間錨點的 AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
@@ -67,7 +67,7 @@ ms.locfileid: "91696758"
 在 C++ 中，您可以訂閱 `OnTrackableAdded` 委派，以在 `ARTrackedGeometry` 可用時立即取得，如下列程式碼所示。 
 
 > [!IMPORTANT]
-> 專案的 build.cs 檔案 **必須** 具有 **PublicDependencyModuleNames** 清單中的 **AugmentedReality** 。
+> 專案的 build.cs 檔案 **必須** 具有 **PublicDependencyModuleNames** 清單中的 **AugmentedReality**。
 > - 這包括 **ARBlueprintLibrary** 和 MRMeshComponent，可讓您檢查 **UARTrackedGeometry** 的 **MRMesh** 元件。 
 
 ![空間錨點範例程式 C++ 代碼](images/unreal-spatialmapping-examplecode.PNG)

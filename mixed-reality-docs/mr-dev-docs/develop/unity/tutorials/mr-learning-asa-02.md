@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: c73ddec2fc1be20a4a2c582948cd240be7fe23db
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: ae2726be302bf8ebf342ebd95233b28d7e534423
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353446"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679937"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -41,7 +41,7 @@ ms.locfileid: "93353446"
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
 
 1. 將 **MRTK 設定檔** 變更為 **DefaultHoloLens2ConfigurationProfile**
-1. 將 **空間感知網格顯示選項** 變更為 **遮蔽** 。
+1. 將 **空間感知網格顯示選項** 變更為 **遮蔽**。
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 

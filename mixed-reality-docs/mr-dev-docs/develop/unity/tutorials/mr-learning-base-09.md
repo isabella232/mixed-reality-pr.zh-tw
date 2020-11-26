@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 語音命令, 語音輸入
 ms.localizationpriority: high
-ms.openlocfilehash: c5d7297b8c8153270cd6ccf40eff64eab4afb49e
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: e51f9e816acbc2f98415deaec2c0885c97e40442
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353506"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679247"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
 
@@ -67,7 +67,7 @@ ms.locfileid: "93353506"
 
 在 [階層] 視窗中，以滑鼠右鍵按一下空的位置，然後選取 [建立空物件]，將空的物件新增至您的場景。
 
-將物件命名為 **SpeechInputHandler_Global** ，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **SpeechInputHandler** 元件並進行下列設定：
+將物件命名為 **SpeechInputHandler_Global**，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **SpeechInputHandler** 元件並進行下列設定：
 
 * **取消核取** [需要對焦] 核取方塊，如此使用者就不需要看著具有 SpeechInputHandler 元件的物件來觸發語音命令
 * 從 [專案] 視窗中，將 **SpeechConfirmation Tooltip** Prefab 指派給 [語音確認工具提示 Prefab] 欄位，以在辨識到語音命令時顯示此 Prefab
@@ -80,7 +80,7 @@ ms.locfileid: "93353506"
 
 展開 **元素 0** 並進行下列設定：
 
-* 在 [關鍵字] 欄位中輸入 **啟用指標** ，以參考您在上一節中建立的啟用指標語音命令。
+* 在 [關鍵字] 欄位中輸入 **啟用指標**，以參考您在上一節中建立的啟用指標語音命令。
 * 按一下小型 **+** 圖示，以新增事件
 * 從 [階層] 視窗中，將 [指標] 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [GameObject] > [SetActive (bool)]，以將此函式設定為觸發事件時所要執行的動作
@@ -90,7 +90,7 @@ ms.locfileid: "93353506"
 
 展開 **元素 1** 並進行下列設定：
 
-* 在 [關鍵字] 欄位中輸入 **啟用週邊方塊** ，以參考您在上一節中建立的啟用週邊方塊命令。
+* 在 [關鍵字] 欄位中輸入 **啟用週邊方塊**，以參考您在上一節中建立的啟用週邊方塊命令。
 * 按一下小型 **+** 圖示，以新增事件
 * 從 [階層] 視窗中，將 [RoverExplorer] 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [BoundingBox] >  [bool enabled] 以在觸發事件時更新此屬性值
@@ -104,7 +104,7 @@ ms.locfileid: "93353506"
 
 展開 **元素 2** 並進行下列設定：
 
-* 在 [關鍵字] 欄位中輸入 **停用週邊方塊** ，以參考您在上一節中建立的停用週邊方塊命令
+* 在 [關鍵字] 欄位中輸入 **停用週邊方塊**，以參考您在上一節中建立的停用週邊方塊命令
 * 按一下小型 **+** 圖示，以新增事件
 * 從 [階層] 視窗中，將 [RoverExplorer] 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [BoundingBox] >  [bool enabled] 以在觸發事件時更新此屬性值
@@ -125,7 +125,7 @@ ms.locfileid: "93353506"
 
 在 SpeechInputHandler 元件上，按一下小型 **+** 圖示以新增關鍵字元素，然後展開新建立的元素，並進行下列設定：
 
-* 在 [關鍵字] 欄位中輸入 **啟用點選放置** ，以參考您在上一節中建立的點選放置命令
+* 在 [關鍵字] 欄位中輸入 **啟用點選放置**，以參考您在上一節中建立的點選放置命令
 * 按一下小型 **+** 圖示，以新增事件
 * 從 [階層] 視窗中，將物件本身 (也就是相同的 **RoverAssembly** 物件) 指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [TapToPlace] > [bool enabled] 以在觸發事件時更新此屬性值

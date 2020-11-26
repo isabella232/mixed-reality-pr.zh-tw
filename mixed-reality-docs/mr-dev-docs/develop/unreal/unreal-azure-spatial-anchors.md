@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 開發, 空間錨點, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 全像投影, 遊戲開發
-ms.openlocfilehash: 5f1f7ef0cb55714ed87bbc3e827d77d3e2694084
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 開發, 空間錨點, 混合實境, 開發, 功能, 新專案, 模擬器, 文件, 指南, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696865"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679867"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal 中的 Azure Spatial Anchors
 
@@ -47,7 +47,7 @@ Azure Spatial Anchors 是 Microsoft Mixed Reality 服務，可讓擴增實境裝
 ## <a name="adding-azure-spatial-anchors-plugins"></a>新增 Azure Spatial Anchors 外掛程式
 
 在 Unreal 編輯器中啟用 Azure Spatial Anchors 外掛程式，方法如下：
-1. 按一下 [編輯] > [外掛程式] 並搜尋 **AzureSpatialAnchors** 和 **AzureSpatialAnchorsForWMR** 。
+1. 按一下 [編輯] > [外掛程式] 並搜尋 **AzureSpatialAnchors** 和 **AzureSpatialAnchorsForWMR**。
 2. 在兩個外掛程式中選取 [已啟用] 核取方塊，以允許存取您應用程式中的 Azure Spatial Anchors 藍圖程式庫。
 
 ![空間錨點外掛程式](images/asa-unreal/unreal-spatial-anchors-img-01.png)
@@ -132,7 +132,7 @@ Azure Spatial Anchors 代表擴增實境應用程式空間中的實體世界姿�
 ![空間錨點外掛程式](images/asa-unreal/unreal-spatial-anchors-img-15.png)
 
 > [!NOTE]
-> 「儲存雲端錨點」是非同步函式，只能在遊戲執行緒事件 (例如 **EventTick** ) 上呼叫。 「儲存雲端錨點」可能不會顯示為自訂藍圖函式中可用的藍圖函式。 不過，其應可在 Pawn 事件圖形藍圖編輯器中使用。
+> 「儲存雲端錨點」是非同步函式，只能在遊戲執行緒事件 (例如 **EventTick**) 上呼叫。 「儲存雲端錨點」可能不會顯示為自訂藍圖函式中可用的藍圖函式。 不過，其應可在 Pawn 事件圖形藍圖編輯器中使用。
 
 在下列範例中，Azure Spatial Anchors 會在輸入事件回呼期間儲存在集合中。 然後錨點會儲存在 EventTick 上。 視您的 Azure Spatial Anchors 工作階段所建立的空間資料量而定，儲存 Azure Spatial Anchors 可能會進行多次嘗試。 這就是為何檢查儲存呼叫是否成功是個好主意。
 
@@ -180,7 +180,7 @@ Azure Spatial Anchors 代表擴增實境應用程式空間中的實體世界姿�
 
 為了使用 Azure Spatial Anchors 服務找出對等節點所建立的 Azure Spatial Anchors，應用程式必須建立 [Azure Spatial Anchors 監看員]：
 1. 檢查 Azure Spatial Anchors 工作階段是否正在執行。
-2. 建立 **AzureSpatialAnchorsLocateCriteria** 。
+2. 建立 **AzureSpatialAnchorsLocateCriteria**。
     * 您可以指定各種位置參數，例如與使用者的距離或與另一個錨點的距離。
 3. 在 **AzureSpatialAnchorsLocateCritieria** 中宣告您所需的 Azure Spatial Anchor 識別碼。
 4. 呼叫 [建立監看員]。

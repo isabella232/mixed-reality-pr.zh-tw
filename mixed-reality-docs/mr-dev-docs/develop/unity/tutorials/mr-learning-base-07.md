@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 物件互動, 週框方塊
 ms.localizationpriority: high
-ms.openlocfilehash: 1e91cc97f68a4d4b5bcb015184e96582533d1f96
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: 5e2857a7baf85187902bd98de6271e53dcc3539e
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353516"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679267"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -34,12 +34,12 @@ ms.locfileid: "93353516"
 3. 設定 Object Manipulator (指令碼) 元件
 
 > [!NOTE]
-> 若要能夠 **操作物件** ，該物件必須具有下列元件：
+> 若要能夠 **操作物件**，該物件必須具有下列元件：
 >
 > * **Collider** 元件，例如 Box Collider
 > * **Object Manipulator (指令碼)** 元件
 >
-> 若要能夠以追蹤的手部 **操作** 及 **抓取物件** ，該物件必須具有下列元件：
+> 若要能夠以追蹤的手部 **操作** 及 **抓取物件**，該物件必須具有下列元件：
 >
 > * **Collider** 元件，例如 Box Collider
 > * **Object Manipulator (指令碼)** 元件
@@ -77,7 +77,7 @@ ms.locfileid: "93353516"
 
 ![已選取 [音訊] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-07-section1-step1-3.png)
 
-在 [階層] 視窗中，重新選取所有 **Rover 零件物件** ，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **音訊來源** 元件，並進行以下設定：
+在 [階層] 視窗中，重新選取所有 **Rover 零件物件**，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **音訊來源** 元件，並進行以下設定：
 
 * 將 **MRTK_Scale_Start** 音訊剪輯指派給 **AudioClip** 欄位
 * 取消核取 [喚醒時播放] 核取方塊
@@ -85,7 +85,7 @@ ms.locfileid: "93353516"
 
 ![已選取所有 Rover 組件並已新增和設定音訊來源元件的 Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
-在 [階層] 視窗中，展開 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 物件，以顯示所有位置提示物件，選取第一個 Rover 零件 RoverParts > **Camera_Part** ，然後設定 **Part Assembly Controller (指令碼)** 元件，如下所示：
+在 [階層] 視窗中，展開 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 物件，以顯示所有位置提示物件，選取第一個 Rover 零件 RoverParts > **Camera_Part**，然後設定 **Part Assembly Controller (指令碼)** 元件，如下所示：
 
 * 將 **Camera_PlacementHint** 物件指派給 [要放置的位置] 欄位
 
@@ -93,11 +93,11 @@ ms.locfileid: "93353516"
 
 針對其餘每個 Rover 零件物件和 RoverAssembly 物件 **重複** 此步驟，以設定 **Part Assembly Controller (指令碼)** 元件，如下所示：
 
-* 針對 **Generator_Part** ，將 **Generator_PlacementHint** 物件指派給 [要放置的位置] 欄位
-* 針對 **Lights_Part** ，將 **Lights_PlacementHint** 物件指派給 [要放置的位置] 欄位
-* 針對 **UHFAntenna_Part** ，將 **UHFAntenna_PlacementHint** 物件指派給 [要放置的位置] 欄位
-* 針對 **Spectrometer_Part** ，將 **Spectrometer_PlacementHint** 物件指派給 [要放置的位置] 欄位
-* 針對 **RoverAssembly** ，將物件本身 (也就是相同的 **RoverAssembly** 物件) 指派給 [要放置的位置] 欄位
+* 針對 **Generator_Part**，將 **Generator_PlacementHint** 物件指派給 [要放置的位置] 欄位
+* 針對 **Lights_Part**，將 **Lights_PlacementHint** 物件指派給 [要放置的位置] 欄位
+* 針對 **UHFAntenna_Part**，將 **UHFAntenna_PlacementHint** 物件指派給 [要放置的位置] 欄位
+* 針對 **Spectrometer_Part**，將 **Spectrometer_PlacementHint** 物件指派給 [要放置的位置] 欄位
+* 針對 **RoverAssembly**，將物件本身 (也就是相同的 **RoverAssembly** 物件) 指派給 [要放置的位置] 欄位
 
 在 [階層] 視窗中，選取 [RoverExplorer] > [按鈕] > [重設] 按鈕物件，然後在 [偵測器] 視窗中，設定可互動的 **OnClick ()** 事件，如下所示：
 
@@ -123,7 +123,7 @@ ms.locfileid: "93353516"
 * **BoundingBox** 元件
 * **Object Manipulator (指令碼)** 元件
 
-然後 **取消核取** 這兩個元件旁的核取方塊，使其預設為 **停用** ：
+然後 **取消核取** 這兩個元件旁的核取方塊，使其預設為 **停用**：
 
 ![已選取 RoverExplorer 物件並已新增和停用元件的 Unity](images/mr-learning-base/base-07-section2-step1-1.png)
 
@@ -133,7 +133,7 @@ ms.locfileid: "93353516"
 > [!NOTE]
 > BoundingBox 元件將會在執行階段尚自動新增 NearInteractionGrabbable 元件。 因此，我們不需要新增此元件，就能以追蹤的手部抓取框起來的物件。
 
-在 [階層] 視窗中，展開功能表 > **ButtonCollection** 物件以顯示四個按鈕，並將第三個按鈕重新命名為 **BoundingBox_Enable** ，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
+在 [階層] 視窗中，展開功能表 > **ButtonCollection** 物件以顯示四個按鈕，並將第三個按鈕重新命名為 **BoundingBox_Enable**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
 
 * 將 [主要標籤文字] 變更為 [啟用]
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
@@ -147,7 +147,7 @@ ms.locfileid: "93353516"
 
 ![已選取 BoundingBox_Enable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-2.png)
 
-將第四個 (也就是最後一個) 按鈕重新命名為 **BoundingBox_Disable** ，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
+將第四個 (也就是最後一個) 按鈕重新命名為 **BoundingBox_Disable**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
 
 * 將 [主要標籤文字] 變更為 [停用]
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位

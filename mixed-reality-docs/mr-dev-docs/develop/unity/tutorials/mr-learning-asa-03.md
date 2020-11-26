@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 應用程式工作階段
 ms.localizationpriority: high
-ms.openlocfilehash: 2fbf9b849cec62c5281396fcb1e2f8e6e26b4621
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: c085aecef1ce32565d2f3bbbf1d5fdb2da91c217
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353296"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679407"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.儲存、擷取和共用 Azure Spatial Anchors
 
@@ -25,7 +25,7 @@ ms.locfileid: "93353296"
 
 ## <a name="preparing-the-scene"></a>準備場景
 
-在 [階層] 視窗中，展開 **ButtonParent** 物件。 選取 **last four child button** 物件。 在 [偵測器] 視窗中， **核取** 名稱欄位旁的核取方塊，讓所有物件變成作用中。
+在 [階層] 視窗中，展開 **ButtonParent** 物件。 選取 **last four child button** 物件。 在 [偵測器] 視窗中，**核取** 名稱欄位旁的核取方塊，讓所有物件變成作用中。
 
 ![已選取和啟用先前非使用中按鈕物件的 Unity](images/mr-learning-asa/asa-03-section1-step1-1.png)
 

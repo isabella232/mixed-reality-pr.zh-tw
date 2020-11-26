@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: a7fa1bdaa72d341eaa49ac70dfa926d8f9bbad7a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699099"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679727"
 ---
 # <a name="2-using-speech-recognition-to-execute-commands"></a>2.使用語音辨識來執行命令
 
@@ -34,11 +34,11 @@ ms.locfileid: "91699099"
 > [!NOTE]
 > Lunarcom Wake Word Recognizer (指令碼) 元件不是 MRTK 的一部分。 這是本教學課程資產隨附的元件。
 
-如果您現在進入遊戲模式，如先前的教學課程所示，預設會啟用終端機面板，但您現在可以藉由說出關閉字詞： **關閉終端機** ，來將其停用：
+如果您現在進入遊戲模式，如先前的教學課程所示，預設會啟用終端機面板，但您現在可以藉由說出關閉字詞：**關閉終端機**，來將其停用：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
-然後藉由說出喚醒字詞： **啟動終端機** ，來再次將其啟動：
+然後藉由說出喚醒字詞：**啟動終端機**，來再次將其啟動：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 

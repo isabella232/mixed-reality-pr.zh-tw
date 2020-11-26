@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件
-ms.openlocfilehash: 07b1012f364b8dc157ac29b5be442561757bb4dc
-ms.sourcegitcommit: 8e91ff47ef70e80a41137f80aa1093e711d27bf7
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: 869b947d23c3fbd1e561cef2c3ec41322fefd6a2
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/12/2020
-ms.locfileid: "91957828"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679907"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2.初始化您的專案和第一個應用程式
 
@@ -53,12 +53,12 @@ ms.locfileid: "91957828"
 在您開始將物件新增至場景之前，必須啟用兩個外掛程式。
 
 1. 開啟 [編輯] > [外掛程式]，然後從內建選項清單中選取 [擴增實境]。 
-    * 向下捲動至 **HoloLens** ，並勾選 [啟用]。 
+    * 向下捲動至 **HoloLens**，並勾選 [啟用]。 
 
 ![啟用 HoloLens 外掛程式](images/unreal-uxt/2-plugins.PNG)
 
 2. 從內建選項清單中選取 [虛擬實境]。 
-    * 向下捲動至 **Microsoft Windows Mixed Reality** 、勾選 [啟用]，然後重新啟動您的編輯器。 
+    * 向下捲動至 **Microsoft Windows Mixed Reality**、勾選 [啟用]，然後重新啟動您的編輯器。 
 
 ![啟用 Windows Mixed Reality 外掛程式](images/unreal-uxt/2-virtual-reality-plugin.PNG)
 
@@ -73,13 +73,13 @@ ms.locfileid: "91957828"
 1. 選取 [檔案] > [新增層級]，然後選擇 [空白層級]。 檢視區中的預設場景現在應該是空白的。
 
 2. 從 [模式] 索引標籤中選取 [基本]，然後將 **PlayerStart** 拖曳至場景。 
-    * 在 [詳細資料] 索引標籤中，將 [位置] 設定為 **X = 0** 、 **Y = 0** 和 **Z = 0** 。這會在應用程式啟動時，將使用者設在場景中心。
+    * 在 [詳細資料] 索引標籤中，將 [位置] 設定為 **X = 0**、**Y = 0** 和 **Z = 0**。這會在應用程式啟動時，將使用者設在場景中心。
 
 ![具有 PlayerStart 的檢視區](images/unreal-uxt/2-playerstart.PNG)
 
 3. 將 [立方體] 從 [基本] 索引標籤拖曳到場景。 
-    * 將 [位置] 設定為 **X = 50** 、 **Y = 0** 和 **Z = 0** 。 這會在開始時將立方體放在離玩家 50 公分處。 
-    * 將 [縮放] 變更為 **X = 0.2** 、 **Y = 0.2** 和 **Z = 0.2** ，以縮小立方體。 
+    * 將 [位置] 設定為 **X = 50**、**Y = 0** 和 **Z = 0**。 這會在開始時將立方體放在離玩家 50 公分處。 
+    * 將 [縮放] 變更為 **X = 0.2**、**Y = 0.2** 和 **Z = 0.2**，以縮小立方體。 
 
 您將無法看到立方體，除非您將光線新增至場景，這是測試場景前的最後一項工作。
 
@@ -87,7 +87,7 @@ ms.locfileid: "91957828"
 
 ![已新增光線的檢視區](images/unreal-uxt/2-light.PNG)
 
-5. 移至 [檔案] > [儲存目前的]、將您的層級命名為 **Main** ，然後按一下 [儲存]。 
+5. 移至 [檔案] > [儲存目前的]、將您的層級命名為 **Main**，然後按一下 [儲存]。 
 
 設定場景後，請按下工具列中的 [播放]，以查看行動中的立方體！ 當您完成工作的管理時，請按 **Esc** 以停止應用程式。
 
@@ -100,7 +100,7 @@ ms.locfileid: "91957828"
 
 1. 使用 [7-zip](https://www.7-zip.org/) 下載並解壓縮 [GitHub](https://github.com/microsoft/MixedReality-Unreal-Samples/blob/master/ChessApp/ChessAssets.7z) 資產資料夾。
 
-2. 從 [內容瀏覽器] 中按一下 [新增] > [新增資料夾]，並將其命名為 **ChessAssets** 。 
+2. 從 [內容瀏覽器] 中按一下 [新增] > [新增資料夾]，並將其命名為 **ChessAssets**。 
     * 按兩下新資料夾 - 這是您將匯入3D 資產的位置。
 
 ![顯示或隱藏來源面板](images/unreal-uxt/2-showhidesources.PNG)
@@ -117,13 +117,13 @@ ms.locfileid: "91957828"
 
 ## <a name="adding-blueprints"></a>新增藍圖
 
-1. 按一下 [內容瀏覽器] 中的 [新增] > [新增資料夾]，並將其命名為 **Blueprints** 。 
+1. 按一下 [內容瀏覽器] 中的 [新增] > [新增資料夾]，並將其命名為 **Blueprints**。 
 
 > [!NOTE]
 > 如果您不熟悉[藍圖](https://docs.unrealengine.com/en-US/Engine/Blueprints/index.html)，這些藍圖是特殊資產，可提供節點型介面，用於建立新類型的動作項目和指令碼層級事件。 
 
 2. 按兩下 [藍圖] 資料夾，然後按一下滑鼠右鍵並選取 [藍圖類別]。         
-    * 選取 [動作項目]，並將藍圖命名為 **Board** 。 
+    * 選取 [動作項目]，並將藍圖命名為 **Board**。 
 
 ![選取您藍圖的父類別](images/unreal-uxt/2-bpparent.PNG)
 
@@ -138,7 +138,7 @@ ms.locfileid: "91957828"
 
 1. 按兩下 **Board** 以開啟藍圖編輯器。 
 
-2. 從 [元件] 面板中按一下 [新增元件] > [場景]，並將其命名為 **Root** 。 請注意， **Root** 會在下列螢幕擷取畫面中顯示為 **DefaultSceneRoot** 的子系：
+2. 從 [元件] 面板中按一下 [新增元件] > [場景]，並將其命名為 **Root**。 請注意，**Root** 會在下列螢幕擷取畫面中顯示為 **DefaultSceneRoot** 的子系：
 
 ![取代藍圖中的根項目](images/unreal-uxt/2-root-blueprint.PNG)
 
@@ -148,16 +148,16 @@ ms.locfileid: "91957828"
 ![取代根項目](images/unreal-uxt/2-root.PNG)
 
 
-4. 從 [元件] 面板中按一下 [新增元件] > [靜態網格]，並將其命名為 **SM_Board** 。 其會在 **Root** 底下顯示為子物件。
+4. 從 [元件] 面板中按一下 [新增元件] > [靜態網格]，並將其命名為 **SM_Board**。 其會在 **Root** 底下顯示為子物件。
 
 ![新增靜態網格](images/unreal-uxt/2-sm-board.PNG)
 
-4. 按一下 **SM_Board** 、向下捲動至 [ 詳細資料] 面板的 [靜態網格] 區段，然後從下拉式清單中選取 **ChessBoard** 。 
+4. 按一下 **SM_Board**、向下捲動至 [ 詳細資料] 面板的 [靜態網格] 區段，然後從下拉式清單中選取 **ChessBoard**。 
 
 ![檢視區中的棋盤網格](images/unreal-uxt/2-sm-board-view.PNG)
 
 5.  仍在 [詳細資料] 面板中，展開 [材質] 區段，然後從下拉式清單中按一下 [建立新資產] > [材質]。 
-    * 將材質命名為 **M_ChessBoard** ，並將其儲存在 **ChessAssets** 資料夾中。 
+    * 將材質命名為 **M_ChessBoard**，並將其儲存在 **ChessAssets** 資料夾中。 
 
 ![建立新的材質](images/unreal-uxt/2-newmat.PNG)
 
@@ -165,17 +165,17 @@ ms.locfileid: "91957828"
 
 ![開啟材質編輯器](images/unreal-uxt/2-material-editor.PNG)
 
-7. 在材質編輯器中，按一下滑鼠右鍵，然後搜尋 **紋理範例** 。 
-    * 展開 [詳細資料] 面板中的 [材質呈現紋理基底] 區段，然後將 [紋理] 設定為 **ChessBoard_Albedo** 。 
+7. 在材質編輯器中，按一下滑鼠右鍵，然後搜尋 **紋理範例**。 
+    * 展開 [詳細資料] 面板中的 [材質呈現紋理基底] 區段，然後將 [紋理] 設定為 **ChessBoard_Albedo**。 
     * 將 **RGB** 輸出釘選拖曳到 **M_ChessBoard** 的 [基本色彩] 釘選。 
 
 ![設定基本色彩](images/unreal-uxt/2-boardalbedomat.PNG)
 
 8.  再重複四次上述步驟，使用下列設定再建立四個 **紋理範例** 節點：
-    * 將 [材質] 設定為 **ChessBoard_AO** ，並將 **RGB** 連結至 [環境光遮蔽] 釘選。
-    * 將 [材質] 設定為 **ChessBoard_Metal** ，並將 **RGB** 連結至 [金屬] 釘選。 
-    * 將 [材質] 設定為 **ChessBoard_Normal** ，並將 **RGB** 連結至 [一般] 釘選。
-    * 將 [材質] 設定為 **ChessBoard_Rough** ，並將 **RGB** 連結至 [粗糙度] 釘選。 
+    * 將 [材質] 設定為 **ChessBoard_AO**，並將 **RGB** 連結至 [環境光遮蔽] 釘選。
+    * 將 [材質] 設定為 **ChessBoard_Metal**，並將 **RGB** 連結至 [金屬] 釘選。 
+    * 將 [材質] 設定為 **ChessBoard_Normal**，並將 **RGB** 連結至 [一般] 釘選。
+    * 將 [材質] 設定為 **ChessBoard_Rough**，並將 **RGB** 連結至 [粗糙度] 釘選。 
     * 按一下 **[儲存]** 。 
 
 ![連結其餘紋理](images/unreal-uxt/2-boardmat.PNG)
@@ -184,32 +184,32 @@ ms.locfileid: "91957828"
 
 ## <a name="populating-the-scene"></a>填入場景
 如果回到 **Board** 藍圖，您會看到已套用您剛建立的材質。 剩下的就是設定場景！ 首先，變更下列屬性，以確保棋盤在放入場景時大小合理，且角度正確：
-1.  將 [縮放] 設定為 **(0.05, 0.05, 0.05)** ，並將 [Z 旋轉] 設定為 **90** 。 
+1.  將 [縮放] 設定為 **(0.05, 0.05, 0.05)** ，並將 [Z 旋轉] 設定為 **90**。 
     * 按一下頂端工具列中的 [編譯]，然後按一下 [儲存] 並返回主視窗。 
 
 ![已套用材質的棋盤](images/unreal-uxt/2-chessboard.PNG)
 
 2.  以滑鼠右鍵按一下 [立方體] > [編輯] > [刪除]，然後將 [棋盤] 從 [內容瀏覽器] 拖曳至檢視區。 
-    * 將 [位置] 設定為 **X = 80** 、 **Y = 0** 和 **Z = 20** 。 
+    * 將 [位置] 設定為 **X = 80**、**Y = 0** 和 **Z = 20**。 
 
 3.  按一下 [播放] 按鈕，以在層級中檢視您的新棋盤。 按 **Esc** 即可返回編輯器。 
 
 現在您將遵循相同的步驟來建立棋子，如同您建立棋盤一般：
 
-1. 移至 [藍圖] 資料夾、按一下滑鼠右鍵並選取 [藍圖類別]，然後選擇 [動作項目]。 將動作項目命名為 **WhiteKing** 。
+1. 移至 [藍圖] 資料夾、按一下滑鼠右鍵並選取 [藍圖類別]，然後選擇 [動作項目]。 將動作項目命名為 **WhiteKing**。
 
-2. 按兩下 **WhiteKing** 以在藍圖編輯器中將其開啟、按一下 [新增元件] > [場景]，並將其命名為 **Root** 。 
-    * 將 **Root** 拖放至 **DefaultSceneRoot** ，以將其取代。 
+2. 按兩下 **WhiteKing** 以在藍圖編輯器中將其開啟、按一下 [新增元件] > [場景]，並將其命名為 **Root**。 
+    * 將 **Root** 拖放至 **DefaultSceneRoot**，以將其取代。 
 
-3. 按一下 [新增元件] > [靜態網格]，並將其命名為 **SM_King** 。 
-    * 在 [詳細資料] 面板中，將 [靜態網格] 設定為 **Chess_King** ，將 [材質] 設定為名為 **M_ChessWhite** 的新材質。 
+3. 按一下 [新增元件] > [靜態網格]，並將其命名為 **SM_King**。 
+    * 在 [詳細資料] 面板中，將 [靜態網格] 設定為 **Chess_King**，將 [材質] 設定為名為 **M_ChessWhite** 的新材質。 
 
-4. 在材質編輯器中開啟 **M_ChessWhite** ，並將下列 **紋理範例** 節點連結至下列項目：
-   * 將 [紋理] 設定為 **ChessWhite_Albedo** ，並將 **RGB** 連結至 [基本色彩] 釘選。
-    * 將 [材質] 設定為 **ChessWhite_AO** ，並將 **RGB** 連結至 [環境光遮蔽] 釘選。
-    * 將 [材質] 設定為 **ChessWhite_Metal** ，並將 **RGB** 連結至 [金屬] 釘選。 
-    * 將 [材質] 設定為 **ChessWhite_Normal** ，並將 **RGB** 連結至 [一般] 釘選。
-    * 將 [材質] 設定為 **ChessWhite_Rough** ，並將 **RGB** 連結至 [粗糙度] 釘選。 
+4. 在材質編輯器中開啟 **M_ChessWhite**，並將下列 **紋理範例** 節點連結至下列項目：
+   * 將 [紋理] 設定為 **ChessWhite_Albedo**，並將 **RGB** 連結至 [基本色彩] 釘選。
+    * 將 [材質] 設定為 **ChessWhite_AO**，並將 **RGB** 連結至 [環境光遮蔽] 釘選。
+    * 將 [材質] 設定為 **ChessWhite_Metal**，並將 **RGB** 連結至 [金屬] 釘選。 
+    * 將 [材質] 設定為 **ChessWhite_Normal**，並將 **RGB** 連結至 [一般] 釘選。
+    * 將 [材質] 設定為 **ChessWhite_Rough**，並將 **RGB** 連結至 [粗糙度] 釘選。 
     * 按一下 **[儲存]** 。 
 
 在繼續之前，您的 **M_ChessKing** 材質應該看起來像是下圖。
@@ -218,15 +218,15 @@ ms.locfileid: "91957828"
 
 您幾乎只需將新的棋子加入場景中就大功告成了： 
 
-1. 開啟 **WhiteKing** 藍圖，然後將 [縮放] 變更為 **(0.05, 0.05, 0.05)** ，並將 [Z 旋轉] 設定為 **90** 。
+1. 開啟 **WhiteKing** 藍圖，然後將 [縮放] 變更為 **(0.05, 0.05, 0.05)** ，並將 [Z 旋轉] 設定為 **90**。
     * 編譯並儲存您的藍圖，然後回到主視窗。 
 
 2.  將 **WhiteKing** 拖曳到檢視區、切換至 [世界大綱] 面板，然後將 **WhiteKing** 拖曳至 [棋盤]，使其成為子物件。
 
 ![世界大綱](images/unreal-uxt/2-child.PNG)
 
-3.  在 [變形] 底下的 [詳細資料] 面板中，將 **WhiteKing** 的 [位置] 設定為 **X = -26** 、 **Y = 4** 和 **Z = 0** 。
+3.  在 [變形] 底下的 [詳細資料] 面板中，將 **WhiteKing** 的 [位置] 設定為 **X = -26**、**Y = 4** 和 **Z = 0**。
 
-收工了！ 按一下 [播放] 查看您填入的作用中層級，然後在您準備好要結束時，按 **Esc** 。 本教學課程涵蓋了許多建立簡單專案的基礎，但您的專案已準備好繼續進行系列的下一個部分：設定混合實境。 
+收工了！ 按一下 [播放] 查看您填入的作用中層級，然後在您準備好要結束時，按 **Esc**。 本教學課程涵蓋了許多建立簡單專案的基礎，但您的專案已準備好繼續進行系列的下一個部分：設定混合實境。 
 
 [下一節：3.設定您的專案以進行混合實境](unreal-uxt-ch3.md)

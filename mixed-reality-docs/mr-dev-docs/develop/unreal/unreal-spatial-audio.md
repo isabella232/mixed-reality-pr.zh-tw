@@ -6,13 +6,13 @@ ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發
-ms.openlocfilehash: 9b953cd0ea9aab92b2306da63a948b470363d0e6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 空間音訊
+ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91699045"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679797"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal 中的空間音訊
 
@@ -26,7 +26,7 @@ ms.locfileid: "91699045"
 
 將空間音效新增至專案的第一個步驟，是安裝 Microsoft 空間音效外掛程式；您可以透過下列方式找到此外掛程式：
 
-1. 按一下 [編輯] > [外掛程式]，並在搜尋方塊中搜尋 **MicrosoftSpatialSound** 。
+1. 按一下 [編輯] > [外掛程式]，並在搜尋方塊中搜尋 **MicrosoftSpatialSound**。
 2. 選取 **MicrosoftSpatialSound** 外掛程式中的 [已啟用] 核取方塊。
 3. 在 [外掛程式] 頁面中選取 [立即重新啟動]，將 Unreal 編輯器重新啟動。
 

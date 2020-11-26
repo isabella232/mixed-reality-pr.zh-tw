@@ -5,18 +5,18 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 自訂視覺, azure 認知服務
+keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 自訂視覺, azure 認知服務, azure 雲端服務, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 9a6cccf9c1a7d2547ed5ddacfc4841d2f4d1609b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353266"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679347"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.整合 Azure 自訂視覺
 
-您將在本教學課程中了解如何使用 **Azure 自訂視覺** 。您將上傳一組相片，將其與「追蹤物件」產生關聯，然後上傳至 **自訂視覺** 服務並開始訓練程序。 接著，您將使用該服務從網路攝影機摘要中捕捉相片，以偵測「追蹤物件」。
+您將在本教學課程中了解如何使用 **Azure 自訂視覺**。您將上傳一組相片，將其與「追蹤物件」產生關聯，然後上傳至 **自訂視覺** 服務並開始訓練程序。 接著，您將使用該服務從網路攝影機摘要中捕捉相片，以偵測「追蹤物件」。
 
 ## <a name="objectives"></a>目標
 
@@ -74,7 +74,7 @@ ms.locfileid: "93353266"
 
 ## <a name="take-and-upload-images"></a>拍攝影像並上傳
 
-執行場景並按一下 [設定物件]，然後輸入您在 [上一課](mr-learning-azure-02.md)中建立的其中一個 **追蹤物件名稱** 。 現在，按一下 **物件卡片** 底部的 [電腦視覺] 按鈕。
+執行場景並按一下 [設定物件]，然後輸入您在 [上一課](mr-learning-azure-02.md)中建立的其中一個 **追蹤物件名稱**。 現在，按一下 **物件卡片** 底部的 [電腦視覺] 按鈕。
 
 新的視窗會隨即開啟，而您必須在其中拍攝六張相片來訓練模型，以進行影像辨識。 當您看到想要追蹤的物件時，請按一下 [相機] 按鈕並執行 AirTap，請執行此動作六次。
 
@@ -88,7 +88,7 @@ ms.locfileid: "93353266"
 
 ## <a name="detect-objects"></a>偵測物件
 
-您現在可以將訓練的模型放到測試中、執行應用程式，然後從 [主功能表] 中按一下 [搜尋物件]，接著輸入有問題的 **追蹤物件** 名稱。 **物件卡片** 會隨即出現，然後請按一下 [自訂視覺] 按鈕。 在這裡， **ObjectDetectionManager** 會開始在背景中取得相機中的拍攝影像，並在功能表上顯示進度。 將相機指向您用來訓練模型的物件，您將在不久後看到其已偵測到該物件。
+您現在可以將訓練的模型放到測試中、執行應用程式，然後從 [主功能表] 中按一下 [搜尋物件]，接著輸入有問題的 **追蹤物件** 名稱。 **物件卡片** 會隨即出現，然後請按一下 [自訂視覺] 按鈕。 在這裡，**ObjectDetectionManager** 會開始在背景中取得相機中的拍攝影像，並在功能表上顯示進度。 將相機指向您用來訓練模型的物件，您將在不久後看到其已偵測到該物件。
 
 ## <a name="congratulations"></a>恭喜！
 

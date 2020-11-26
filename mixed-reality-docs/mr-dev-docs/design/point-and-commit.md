@@ -6,13 +6,13 @@ ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
-keywords: 混合實境, 互動, 設計, HoloLens, 手部, 遠方, 指向和行動
-ms.openlocfilehash: 5baf625127b1c1757bb6ae82473adcb8329746cd
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合實境, 互動, 設計, HoloLens, 手部, 遠方, 指向和行動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, 手部射線, 物件操作, MRTK, 混合實境工具組, DoF
+ms.openlocfilehash: 91befcec2d9b020c58d3ed02fd181122ce715936
+ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696240"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94703454"
 ---
 # <a name="point-and-commit-with-hands"></a>手部指向和行動
 

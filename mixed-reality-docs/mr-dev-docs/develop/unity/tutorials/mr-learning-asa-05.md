@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens, android, ios
+keywords: 混合實境, unity, 教學課程, hololens, android, ios, MRTK, 混合實境工具組, UWP, Azure 空間錨點, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 501cfab2a86dcf5753b7371898a8c4b6c8a1e10b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353376"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679427"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 
@@ -48,7 +48,7 @@ ms.locfileid: "93353376"
 
 在本節中，您將了解如何設定 MRTK 以部署至行動裝置。
 
-在 [階層] 視窗中，選取 [MixedRealityToolkit] 物件。 然後在 [偵測器] 視窗中，選取 [相機] 索引標籤、複製相機設定檔，並為其提供適當的名稱，例如， **AzureSpatialAnchors_ARCameraProfile** ：
+在 [階層] 視窗中，選取 [MixedRealityToolkit] 物件。 然後在 [偵測器] 視窗中，選取 [相機] 索引標籤、複製相機設定檔，並為其提供適當的名稱，例如，**AzureSpatialAnchors_ARCameraProfile**：
 
 ![已選取新建立 ARCameraProfile 的 Unity](images/mr-learning-asa/asa-05-section2-step1-1.png)
 
@@ -105,7 +105,7 @@ ms.locfileid: "93353376"
 
 在 [建置設定] 視窗中，按一下 [建置並執行] 按鈕，以開啟 [建置 Android] 視窗。
 
-選擇適當的位置來儲存您的建置，例如 _D:\MixedRealityLearning\Builds_ ，然後為 apk 提供適當的名稱，例如 _MRTKTutorials-AzureSpatialAnchors_ ，然後按一下 [儲存] 按鈕來啟動建置程序：
+選擇適當的位置來儲存您的建置，例如 _D:\MixedRealityLearning\Builds_，然後為 apk 提供適當的名稱，例如 _MRTKTutorials-AzureSpatialAnchors_，然後按一下 [儲存] 按鈕來啟動建置程序：
 
 ![具有 [儲存] 提示視窗 Android 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
@@ -143,7 +143,7 @@ ms.locfileid: "93353376"
 
 在 [建置設定] 視窗中，按一下 [建置] 按鈕，以開啟 [建置 iOS] 視窗。
 
-選擇適當的位置來儲存您的 Xcode 專案，例如 _D:\MixedRealityLearning\Builds_ ，建立新的資料夾並指定適當的名稱，例如 _MRTKTutorials-AzureSpatialAnchors_ ，然後按一下 [選取資料夾] 按鈕來開始建置程序：
+選擇適當的位置來儲存您的 Xcode 專案，例如 _D:\MixedRealityLearning\Builds_，建立新的資料夾並指定適當的名稱，例如 _MRTKTutorials-AzureSpatialAnchors_，然後按一下 [選取資料夾] 按鈕來開始建置程序：
 
 ![具有 [儲存] 提示視窗 iOS 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section4-step1-5.png)
 

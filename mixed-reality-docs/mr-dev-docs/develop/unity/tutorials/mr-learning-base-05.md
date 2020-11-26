@@ -5,14 +5,14 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens
+keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 64b5c3c719ce72260a10226d22c178d4016e403b
-ms.sourcegitcommit: 63c228af55379810ab2ee4f09f20eded1bb76229
+ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/04/2020
-ms.locfileid: "93353526"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679297"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -46,7 +46,7 @@ ms.locfileid: "93353526"
 > [!TIP]
 > 如果您發現場景中的相機或任何其他圖示隱藏了物件，或造成混亂，您可以藉由<a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">切換 Gizmos</a> 為關閉位置來隱藏這些物件，如上圖所示。 若要深入了解 Gizmos 功能表，以及如何使用其來最佳化場景檢視，您可以參閱 Unity 的 <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos 功能表</a>文件。
 
-將新增的 Chevron 物件 **Indicator** 重新命名，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **DirectionalIndicator** ：
+將新增的 Chevron 物件 **Indicator** 重新命名，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **DirectionalIndicator**：
 
 ![已新增 DirectionalIndicator 解算器元件的 Unity](images/mr-learning-base/base-05-section2-step1-2.png)
 
@@ -111,9 +111,9 @@ ms.locfileid: "93353526"
 
 在 [階層] 視窗中，以滑鼠右鍵按一下空的位置，然後選取 [3D 物件]  >  [Cube]，以建立代表地面的暫存物件，並設定 [Transform] 元件，如下所示：
 
-* **位置** ：X = 0、Y = -1.65、Z = 6
-* **旋轉** ：X = 0、Y = 0、Z = 0
-* **縮放比例** ：X = 10、Y = 0.2、Z = 10
+* **位置**：X = 0、Y = -1.65、Z = 6
+* **旋轉**：X = 0、Y = 0、Z = 0
+* **縮放比例**：X = 10、Y = 0.2、Z = 10
 
 ![已新增並置放暫存地面 Cube 物件的 Unity](images/mr-learning-base/base-05-section3-step1-4.png)
 

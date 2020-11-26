@@ -5,14 +5,14 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 08/27/2019
 ms.topic: article
-keywords: HoloLens, MRTK, 混合實境工具組, Windows Mixed Reality, 設計, 範例應用程式, 控制項
+keywords: HoloLens, MRTK, 混合實境工具組, Windows Mixed Reality, 設計, 範例應用程式, 控制項, 混合實境頭戴式裝置, Windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
 ms.localizationpriority: high
-ms.openlocfilehash: d10de5c9f16e0caa289d5110647b4c45a8a8fcf9
-ms.sourcegitcommit: 83c9373fe5b2e07cdab921b6cab3fdd418307003
+ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/09/2020
-ms.locfileid: "94386263"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94677528"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101：如何使用混合實境工具組 Unity 進行常見的空間互動
 ![MRTK](images/MRTK101/MRTK101Cover.png)
@@ -45,7 +45,7 @@ MRTK 支援編輯器內的輸入模擬。 只要按一下 Unity 的開始遊戲�
 
 
 ## <a name="how-to-grab-and-move-an-object"></a>如何抓取和移動物件？
-若要讓物件可供抓取，請指派這兩個指令碼： **ObjectManipulator.cs** 和 **NearInteractionGrabbable.cs** (適用於以接合手部追蹤輸入進行直接抓取) ObjectManipulator 可支援近處和遠處的互動。 您可以使用 HoloLens 2 的接合手部追蹤輸入 (近處)、手部射線 (遠處)、運動控制器的光束 (遠處)、HoloLens 注視游標與空間點選 (遠處) 來抓取和移動物件。
+若要讓物件可供抓取，請指派這兩個指令碼：**ObjectManipulator.cs** 和 **NearInteractionGrabbable.cs** (適用於以接合手部追蹤輸入進行直接抓取) ObjectManipulator 可支援近處和遠處的互動。 您可以使用 HoloLens 2 的接合手部追蹤輸入 (近處)、手部射線 (遠處)、運動控制器的光束 (遠處)、HoloLens 注視游標與空間點選 (遠處) 來抓取和移動物件。
 
 <br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
@@ -70,7 +70,7 @@ MRTK 支援編輯器內的輸入模擬。 只要按一下 Unity 的開始遊戲�
 
 
 ## <a name="how-to-make-an-object-respond-to-input-events"></a>如何讓物件回應輸入事件？
-將 **PointerHandler.cs** 指派給物件。 在偵測器中，您可以使用 OnPointerDown()、OnPointerUp()、OnPointerClicked()、OnPointerDragged() 事件。若要在指令碼中使用這些事件，請實作 **IMixedRealityPointerHandler** 。
+將 **PointerHandler.cs** 指派給物件。 在偵測器中，您可以使用 OnPointerDown()、OnPointerUp()、OnPointerClicked()、OnPointerDragged() 事件。若要在指令碼中使用這些事件，請實作 **IMixedRealityPointerHandler**。
 
 <br/><img alt="PointerHandler.cs assigned to an object image" width="800" src="images/MRTK101/MRTK_PointerHandler.png">
 
@@ -88,7 +88,7 @@ Interactable 提供各種主題類型，包括著色器主題，該主題可讓�
 
 - [在 MRTK 文件中深入了解 Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 
-視覺化回饋的另一個重要組成要素是 **MRTK 標準著色器** 。 透過 MRTK 標準著色器，您可以輕鬆地加入視覺回饋效果，例如暫留光源和鄰近光源。 由於 MRTK 標準著色器執行的計算比 Unity 標準著色器少很多，因此可讓您建立高效能的體驗。
+視覺化回饋的另一個重要組成要素是 **MRTK 標準著色器**。 透過 MRTK 標準著色器，您可以輕鬆地加入視覺回饋效果，例如暫留光源和鄰近光源。 由於 MRTK 標準著色器執行的計算比 Unity 標準著色器少很多，因此可讓您建立高效能的體驗。
 
 建立新的材質，然後選取著色器的 [混合實境工具組] > [標準]。 或者，您可以挑選其中一個使用 MRTK 標準著色器的現有材質。
 

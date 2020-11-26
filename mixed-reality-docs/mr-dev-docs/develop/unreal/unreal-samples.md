@@ -7,13 +7,13 @@ ms.author: suwu
 ms.date: 09/29/2020
 ms.topic: article
 ms.localizationpriority: high
-keywords: unreal, 範例, UX 工具外掛程式, MRTK-Unreal, mixedrealitytoolkit, mixedrealitytoolkit-unreal, unreal engine, 開放原始碼
-ms.openlocfilehash: b87ae1a3186cb487ca0a609ab663c3a41128ceb3
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: unreal, 範例, UX 工具外掛程式, MRTK-Unreal, mixedrealitytoolkit, mixedrealitytoolkit-unreal, unreal engine, 開放原始碼, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
+ms.openlocfilehash: 404b0319ddf1dfc6954df5fef30607bc0b53f536
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696258"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679787"
 ---
 # <a name="unreal-sample-apps"></a>Unreal 範例應用程式
 

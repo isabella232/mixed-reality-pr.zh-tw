@@ -7,13 +7,13 @@ ms.author: v-haferr
 ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
-keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務
-ms.openlocfilehash: ae79da3d5bdf85bc27312044409c1f9c9aa5f031
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
+ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
+ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696222"
+ms.lasthandoff: 11/17/2020
+ms.locfileid: "94679687"
 ---
 # <a name="azure-cloud-services"></a>Azure 雲端服務
 
@@ -46,9 +46,9 @@ ARR 的連帶好處是，您可在應用程式中使用的使用者介面類型�
 Azure Spatial Anchors (或簡稱 ASA) 是一種跨平台服務，可讓您建置空間感知的混合實境應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 
 
 ASA 是專為混合實境的常見使用案例設計的解決方案，這類案例包括：
-* **導向** ：可以連接兩個或更多空間錨點，以建立使用者必須與其互動的工作清單或興趣點。
-* **多重使用者體驗** ：使用者可與相同虛擬空間中的物件互動，而來回移動。
-* **在真實世界中保存虛擬內容** ：使用者可在真實世界中放置能夠從其他支援裝置上檢視的虛擬物件。
+* **導向**：可以連接兩個或更多空間錨點，以建立使用者必須與其互動的工作清單或興趣點。
+* **多重使用者體驗**：使用者可與相同虛擬空間中的物件互動，而來回移動。
+* **在真實世界中保存虛擬內容**：使用者可在真實世界中放置能夠從其他支援裝置上檢視的虛擬物件。
 
 ![Azure Spatial Anchors 範例](images/persistence.gif)
 
