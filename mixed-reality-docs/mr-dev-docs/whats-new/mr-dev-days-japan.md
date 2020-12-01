@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 6f673c78004f94692fcb09d304d6d40d2f97f1c3
-ms.sourcegitcommit: 893d7df2df66316e881dfba578a2810c203d9aa3
+ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94941854"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443485"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -95,13 +95,13 @@ Futo Horio ([@Futo_Horio](https://twitter.com/Futo_Horio)) 、Takahiro Miyaura (
 
 ### <a name="code-of-conduct"></a>管理辦法 
 
-**_Microsoft 的任務是讓地球上的每個人和每個組織都能達到更多目標。這包括所有的 Microsoft 活動和聚會，包括在數位平臺上，我們會在此為所有參與者創造尊重、易記、有趣和內含的體驗。_* _  
+Microsoft 的任務在讓世界上的所有人和組織都能成就更多志業。 這包括所有的 Microsoft 活動和聚會，包括在數位平臺上，我們會在此為所有參與者創造尊重、易記、有趣和內含的體驗。
 
-_*_我們預期所有數位事件參與者都能遵守此管理辦法的準則，其中涵蓋了主要的數位事件和所有相關活動。無論地點是什麼，我們都不容許任何人都能以任何形式，在程式的任何方面，都能容忍干擾或失禮行為、訊息、影像或互動，包括商務和社交活動。Microsoft 不會根據年齡、上階、色彩、性別身分識別或運算式、國家/地區來源、實體或精神殘障、宗教、色情方向，或任何其他受適用當地法律、法規和法令保護的特性，來容忍騷擾或辨識。_*_  
+我們預期所有數位事件參與者都能遵守此管理辦法的準則，其中涵蓋了主要的數位事件和所有相關活動。 無論地點是什麼，我們都不容許任何人都能以任何形式，在程式的任何方面，都能容忍干擾或失禮行為、訊息、影像或互動，包括商務和社交活動。 Microsoft 不會根據年齡、上階、色彩、性別身分識別或運算式、國家/地區來源、實體或精神殘障、宗教、色情方向，或任何其他受適用當地法律、法規和法令保護的特性，來容忍騷擾或辨識。  
 
-_*_禁止攝影、影片或以社交管道共用之任何格式的簡報來錄製影片內容或簡報。我們鼓勵所有人都能協助建立歡迎且安全的環境。請回報任何疑慮、harassing 行為、可疑或干擾性活動，以對企業營運熱線 (1-877-320-MSFT 或 [buscond@microsoft.com](mailto:buscond@microsoft.com)) 。Microsoft 保留隨時拒絕進場，或從混合現實開發天中移除任何人的權利。_*_  
+禁止攝影、影片或以社交管道共用之任何格式的簡報來錄製影片內容或簡報。 我們鼓勵所有人都能協助建立歡迎且安全的環境。 請回報任何疑慮、harassing 行為、可疑或干擾性活動，以對企業營運熱線 (1-877-320-MSFT 或 [buscond@microsoft.com](mailto:buscond@microsoft.com)) 。 Microsoft 保留隨時拒絕進場，或從混合現實開發天中移除任何人的權利。 
 
-_ *_我們鼓勵所有人在 AltspaceVR 的沉浸式環境內進行負責任的行為，就像在任何 person 活動一樣。參與活動時，請尊重其他使用者空間，而不會封鎖該階段的其他出席者觀點。 請注意，就像任何親自活動一樣，其他使用者可能會在活動時聽到您所說的任何專案，如果您需要私用對話，建議您將其帶到 AltspaceVR 內的另一個空間，例如 AltspaceVR 首頁_**
+我們鼓勵所有人在 AltspaceVR 的沉浸式環境內進行負責任的行為，就像在任何 person 活動一樣。 參與活動時，請尊重其他使用者空間，而不會封鎖該階段的其他出席者觀點。  請注意，就像任何親自參與的活動一樣，在事件中，其他使用者可能會聽到您所說的任何專案，如果您需要進行私用對話，建議您將它帶到 AltspaceVR 內的另一個空間，例如 AltspaceVR 首頁。
 
 
 

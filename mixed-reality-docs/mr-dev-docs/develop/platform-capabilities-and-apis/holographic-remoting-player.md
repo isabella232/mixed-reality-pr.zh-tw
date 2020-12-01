@@ -3,20 +3,20 @@ title: 全像攝影遠端播放程式
 description: 全像遠端播放機是一個附屬應用程式，可連線到支援全像攝影的電腦應用程式和遊戲。 全像攝影的遠端處理會使用 Wi-Fi 連線，即時將電腦上的全像 Microsoft HoloLens 串流處理到您的。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、診斷、效能
-ms.openlocfilehash: c65b10079ffbc40602ebbd25b1e493c19b2a6078
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 990143a6d0c51f5f817ca0636573c3479a7e1682
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677927"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443615"
 ---
 # <a name="holographic-remoting-player"></a>全像攝影遠端播放程式
 
 >[!IMPORTANT]
->HoloLens 2 的全像是主要版本變更。 [ **HoloLens (第1代)** 的遠端應用程式](add-holographic-remoting.md)必須使用 NuGet **1.x.x** 套件 1.x. x 和 [遠端應用程式， **HoloLens 2**](holographic-remoting-create-host.md) **必須使用 2.x**. x. x. x. x. x. x. x 版。 這表示針對 HoloLens 2 所撰寫的遠端應用程式與 HoloLens (第1代) 並不相容，反之亦然。
+>HoloLens 2 的全像是主要版本變更。 [ **HoloLens (第1代)** 的遠端應用程式](add-holographic-remoting.md)必須使用 NuGet **1.x.x** 套件 1.x. x 和 [遠端應用程式， **HoloLens 2**](holographic-remoting-create-remote-wmr.md) **必須使用 2.x**. x. x. x. x. x. x. x 版。 這表示針對 HoloLens 2 所撰寫的遠端應用程式與 HoloLens (第1代) 並不相容，反之亦然。
 
 全像 [遠端播放機](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 是一個附屬應用程式，可連線到支援全像攝影的電腦應用程式和遊戲。 全像攝影的遠端處理會使用 Wi-Fi 連線，即時將電腦上的全像 Microsoft HoloLens 串流處理到您的。
 
@@ -26,6 +26,9 @@ ms.locfileid: "94677927"
 
 >[!TIP]
 >從版本 [2.2.0](holographic-remoting-version-history.md#v2.2.0) 開始，您也可以在執行 [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)的 Windows 電腦上使用全像遠端播放機。
+
+>[!TIP]
+>從版本 [2.4.0](holographic-remoting-version-history.md#v2.4.0) 使用 [OpenXR API](../native/openxr.md) 的遠端應用程式可以建立。 若要開始使用，請參閱 [使用 OpenXR Api 撰寫全像遠端處理遠端應用程式](holographic-remoting-create-remote-openxr.md)。
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>連接到全像遠端播放機
 
@@ -78,6 +81,7 @@ ms.locfileid: "94677927"
 
 ## <a name="see-also"></a>另請參閱
 * [HoloLens (第1代) ：新增全像的遠端處理](add-holographic-remoting.md)
-* [HoloLens 2：撰寫全像遠端遠端應用程式](holographic-remoting-create-host.md)
+* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [全像攝影遠端軟體授權條款](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

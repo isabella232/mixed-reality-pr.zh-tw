@@ -1,17 +1,17 @@
 ---
 title: 新增全像遠端
 description: 說明如何使用全像是在網路上透過全像的遠端處理來呈現 HoloLens。
-author: mikeriches
-ms.author: mriches
-ms.date: 05/24/2019
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality，全像全像全像全像，遠端轉譯、網路轉譯、HoloLens、遠端全息全像、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ec03a349959f9bde71a2c8a600d513fb21c533a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7aafb7a764a062efcca2c5a3cd9f77d4395516a2
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679627"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443651"
 ---
 # <a name="add-holographic-remoting-hololens-1st-gen"></a>新增全像遠端 (HoloLens (第1代) # A3
 
@@ -23,7 +23,7 @@ ms.locfileid: "94679627"
 HoloLens 開發人員必須更新應用程式，才能使其與 HoloLens 2 相容。 這需要新版本的全像「全像」版本的 NuGet 套件。 如果使用「全像」的「全像遠端處理 NuGet 套件」的應用程式，且版本號碼小於2.0.0.0，則會嘗試連接到 HoloLens 2 上的全像遠端播放程式，連接將會失敗。
 
 >[!NOTE]
->您可以在 [這裡](holographic-remoting-create-host.md)找到 HoloLens 2 的特定指引。
+>您可以在 [這裡](holographic-remoting-create-remote-wmr.md)找到 HoloLens 2 的特定指引。
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>在您的桌面或 UWP 應用程式中新增全像遠端處理

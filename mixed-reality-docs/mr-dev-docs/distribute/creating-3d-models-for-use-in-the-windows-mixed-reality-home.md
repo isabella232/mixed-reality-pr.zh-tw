@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D、模型化、模型化指引、資產需求、撰寫指導方針、啟動器、3D 啟動器、材質、材質、複雜度、三角形、網格、多邊形、polycount、限制、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: fb2f2718497781a2d38a0a061016e146ff077488
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 6baf8bd4faf6bb9994806e846602c91b83a1530b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703464"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443657"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>建立用於住家的 3D 模型
 
@@ -60,7 +60,7 @@ Windows Mixed Reality home 不支援10000三角形以上的模型。 建議您�
 ### <a name="node-counts-and-submesh-limits"></a>節點計數和 submesh 限制
 Windows Mixed Reality home 不支援每個」 LOD 具有64節點或 32 submeshes 的模型。 節點是 [glTF 規格](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) 中的概念，可定義場景中的物件。 Submeshes 是在物件之網格的 [基本](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) 陣列中定義。 
 
-|  功能 |  描述  |  支援的最大值 | 文件 |
+|  特徵 |  描述  |  支援的最大值 | 文件 |
 |------|------|------|------|
 |  節點 |  GlTF 場景中的物件 |  每個」 LOD 64 | [這裡](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy)|
 |  Submeshes |  所有網格上的基本專案總和 |  每個」 LOD 32 | [這裡](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes)|
@@ -97,6 +97,9 @@ Windows Mixed Reality home 不支援每個」 LOD 具有64節點或 32 submeshes
 ## <a name="optimizations"></a>最佳化
 
 Windows Mixed Reality home 在使用自訂延伸模組所定義的核心 glTF 規格之上，提供一系列的優化。 <= 1709 的 Windows 版本和建議在較新版本的 Windows 上，都需要進行這些優化。 您可以使用 [GitHub 上提供的 Windows Mixed Reality 資產轉換器](https://github.com/Microsoft/glTF-Toolkit/releases)，輕鬆地優化任何 glTF 2.0 模型。 此工具會執行正確的材質封裝和優化，如下所示。 基於一般使用方式，我們建議使用 WindowsMRAssetConverter，但如果您需要更充分掌控體驗，而且想要建立您自己的優化管線，您可以參考以下的詳細規格。  
+
+> [!NOTE]
+> 如需確切的模型限制之可能性的完整清單，請參閱「 [3d 模型優化](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 」一文，以在 Dynamics 365 應用程式中使用。
 
 ### <a name="materials"></a>材質
 
@@ -193,7 +196,7 @@ LODs 會根據每個」 LOD 上設定的螢幕涵蓋範圍值所驅動的系統�
 
 ### <a name="tools"></a>工具
 首先，請下載下列工具（如果您還沒有的話）。 這些工具可讓您輕鬆地開啟任何 glTF 模型、預覽、變更，以及將其存回 glTF 或 glb：
-1. [Visual Studio Code](https://code.visualstudio.com/) \(英文\)
+1. [Visual Studio Code](https://code.visualstudio.com/)
 2. [適用于 Visual Studio Code 的 glTF 工具](https://marketplace.visualstudio.com/items?itemName=cesium.gltf-vscode)
 
 
@@ -235,7 +238,7 @@ Windows Mixed Reality home 支援下列動畫觸發語義。
 ### <a name="restrictions"></a>限制
 動畫的長度不能超過20分鐘，且不能包含超過36000的主要畫面格 (20 分鐘的 30 FPS) 。 此外，使用以平滑目標為基礎的動畫時，不會超過8192的變形目標頂點或較少。 超過這些計數會導致 Windows Mixed Reality 首頁不支援動畫資產。 
 
-|功能|最大值|
+|特徵|最大值|
 |-----|-----|
 |持續時間|20 分鐘|
 |關鍵 幀|36000| 

@@ -3,15 +3,15 @@ title: 全像遠端的疑難排解和限制
 description: HoloLens 2 上全像攝影的疑難排解步驟。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality，全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、疑難排解、說明、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 9577f9f028987be71fdb9cd839f86980db350f02
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca0e4b3a43eae5be09f2c0bfbee9056cd847787c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679577"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443604"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>全像遠端處理疑難排解
 
@@ -105,7 +105,8 @@ ms.locfileid: "94679577"
 
 ## <a name="see-also"></a>另請參閱
 * [全像遠端版本歷程記錄](holographic-remoting-version-history.md)
-* [撰寫全像攝影遠端應用程式](holographic-remoting-create-host.md)
+* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [全像攝影遠端軟體授權條款](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

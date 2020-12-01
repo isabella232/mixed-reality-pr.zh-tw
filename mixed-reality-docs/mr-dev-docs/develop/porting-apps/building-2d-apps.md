@@ -1,19 +1,19 @@
 ---
-title: 針對混合現實更新 2D UWP 應用程式
+title: 更新 Windows Mixed Reality 的 2D UWP 應用程式
 description: 本文概述如何更新您現有的2D 通用 Windows 平臺應用程式，以在 HoloLens 和 Windows Mixed Reality 沉浸式耳機上執行。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D 應用程式、UWP、平面應用程式、HoloLens、沉浸式耳機、應用程式模型、上一頁按鈕、應用程式行、DPI、解析度、縮放、移植、HoloLens 1 代、HoloLens 2、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10
-ms.openlocfilehash: 4103ee1e5a7169759dfd823b41b5e3fd18011956
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f4dcc022fced0b3e22eb42751dc596e1b334a01a
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677797"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443626"
 ---
-# <a name="updating-2d-uwp-apps-for-mixed-reality"></a>針對混合現實更新 2D UWP 應用程式
+# <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>更新 Windows Mixed Reality 的 2D UWP 應用程式
 
 Windows Mixed Reality 可讓使用者在您的實體或數位世界中看到像是您一樣的全像投影。 在其核心中，您將沉浸式耳機配件附加至的 HoloLens 和桌上型電腦都是 Windows 10 的裝置;這表示您可以在存放區中執行幾乎所有通用 Windows 平臺 (UWP) 應用程式作為2D 應用程式。
 

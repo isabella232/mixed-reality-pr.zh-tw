@@ -1,23 +1,29 @@
 ---
 title: Unity 中的筆勢和運動控制器
 description: 瞭解如何在 Unity 中使用手手勢和移動控制器來採取行動。
-author: thetuvix
+author: hferrone
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/1/2020
 ms.topic: article
 keywords: 手勢、移動控制器、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: e1a2ae10638bb8dbd35eed7e9a0a1d2a05181f0c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 122642bb7fc561e505098bca00b8bf65bfd4552e
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678647"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443575"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity 中的筆勢和運動控制器
 
 您可以透過兩種主要方式，在您 [的 [Unity](gaze-in-unity.md)]、[ [手手勢](../../design/gaze-and-commit.md#composite-gestures) ] 和 [ [運動] 控制器](../../design/motion-controllers.md) 中針對 HoloLens 和沉浸式 HMD 採取行動。 您可以透過 Unity 中的相同 Api，存取兩個空間輸入來源的資料。
 
 Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資料、 *GetButton/輸入 GetAxis* api （可跨多個 Unity XR sdk 運作），以及 Windows Mixed Reality 的特定 *InteractionManager/GestureRecognizer* api，該 api 會公開可用的完整空間輸入資料集。
+
+## <a name="unity-xr-input-apis"></a>Unity XR 輸入 Api
+
+針對新的專案，我們建議您從頭開始使用新的 XR 輸入 Api。 
+
+您可以在這裡找到有關 [XR api](https://docs.unity3d.com/Manual/xr_input.html)的詳細資訊。
 
 ## <a name="unity-buttonaxis-mapping-table"></a>Unity 按鈕/軸對應表
 
@@ -213,6 +219,9 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 請注意，此底框之間的關聯性會造成，且指標會造成 (，控制器的提示會指向控制器的) 可能不同。 目前，只能透過 MR 專屬的輸入 API 來存取控制器的指標姿勢，如下一節所述。
 
 ## <a name="windows-specific-apis-xrwsainput"></a>Windows 特定 Api (XR。Wsa。輸入) 
+
+> [!CAUTION]
+> 如果您的專案使用任何 XR。WSA Api 在未來的 Unity 版本中，將會以 XR SDK 的方式來淘汰這些 Api。 針對新的專案，我們建議您從一開始就使用 XR SDK。 您可以在 [這裡找到 XR 輸入系統和 api](https://docs.unity3d.com/Manual/xr_input.html)的詳細資訊。
 
 **命名空間：** *UnityEngine. XR。輸入*<br>
 **類型**： *InteractionManager*、 *InteractionSourceState*、 *InteractionSource*、 *InteractionSourceProperties*、 *InteractionSourceKind*、 *InteractionSourceLocation*
