@@ -3,15 +3,15 @@ title: 自訂全像攝影遠端資料通道
 description: 自訂資料通道可用來透過已建立的全像「全像」遠端連線來傳送使用者資料。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像攝影遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、資料頻道
-ms.openlocfilehash: bbbf0e1dd48e1e6872243b2ea562b0729d53ebae
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677907"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443445"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>自訂全像攝影遠端資料通道
 
@@ -114,7 +114,8 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>另請參閱
-* [撰寫全像攝影遠端應用程式](holographic-remoting-create-host.md)
+* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
 * [全像攝影遠端軟體授權條款](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

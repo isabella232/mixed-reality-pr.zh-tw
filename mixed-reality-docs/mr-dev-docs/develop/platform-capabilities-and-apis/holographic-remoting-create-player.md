@@ -3,15 +3,15 @@ title: 撰寫自訂全像攝影遠端播放程式
 description: 藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以將在遠端電腦上轉譯的內容顯示到您的 HoloLens 2。 本文說明如何達成此目的。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像 Remoting、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: f55973e74abc60f62599375aebf278224865a5c1
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677917"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443638"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>撰寫自訂全像攝影遠端播放應用程式
 
@@ -22,7 +22,7 @@ ms.locfileid: "94677917"
 
 全像遠端播放機可讓您的應用程式顯示在桌上型電腦上或 UWP 裝置（例如 Xbox One）上 [轉譯的全息內容，](rendering.md) 以允許存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，您將會使用 NuGet 套件將全像是您的 UWP 應用程式新增至 UWP 應用程式，並撰寫程式碼來處理連接以及顯示沉浸式視圖。 
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 良好的起點是已以 Windows Mixed Reality API 為目標的可運作 DirectX 型 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 如果您沒有現有的應用程式，而且想要從頭開始，則 [c + +](../native/creating-a-holographic-directx-project.md) 全像的專案範本是不錯的起點。
 
@@ -251,7 +251,8 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 自訂資料通道可以用來透過已建立的遠端連線來傳送使用者資料。 如需詳細資訊，請參閱 [自訂資料通道](holographic-remoting-custom-data-channels.md) 。
 
 ## <a name="see-also"></a>另請參閱
-* [撰寫全像攝影遠端應用程式](holographic-remoting-create-host.md)
+* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [自訂全像攝影遠端資料通道](holographic-remoting-custom-data-channels.md)
 * [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)

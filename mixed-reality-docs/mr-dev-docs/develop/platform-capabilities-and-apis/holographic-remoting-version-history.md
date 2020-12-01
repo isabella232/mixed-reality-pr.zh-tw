@@ -3,20 +3,24 @@ title: 全像遠端版本歷程記錄
 description: HoloLens 2 上全像攝影的版本歷程記錄。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 03/11/2020
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: d9b1a9e7aa519084c05f658b2bc1864dc26e7ffa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 5ac15c9af7f6cb2d0263b1ee20e0d2c490d353a0
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677847"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443467"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
 > [!IMPORTANT]
 > 本指南專為 HoloLens 2 上的全像攝影遠端所特有。
+
+## <a name="version-240-december-1-2020"></a>版本 2.4.0 (2020 年12月1日) <a name="v2.4.0"></a>
+* 全像攝影遠端功能現在支援使用 [OPENXR API](../native/openxr.md)撰寫遠端應用程式。 若要開始使用，請參閱 [使用 OpenXR Api 撰寫全像遠端處理遠端應用程式](holographic-remoting-create-remote-openxr.md)。
+* Bug 修正和穩定性改進。
 
 ## <a name="version-231-october-10-2020"></a>2020年10月10日 (版本 2.3.1) <a name="v2.3.1"></a>
 * 已修正造成視覺抖動的遠端姿勢預測的回歸。
@@ -102,8 +106,9 @@ ms.locfileid: "94677847"
 * HoloLens 2 的全像全像的全像公開發行。
 
 ## <a name="see-also"></a>另請參閱
+* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
-* [撰寫全像遠端主機應用程式](holographic-remoting-create-host.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
 * [全像攝影遠端軟體授權條款](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

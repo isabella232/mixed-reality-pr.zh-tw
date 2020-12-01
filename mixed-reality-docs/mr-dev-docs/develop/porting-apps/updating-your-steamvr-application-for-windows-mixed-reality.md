@@ -1,19 +1,19 @@
 ---
-title: 更新您的 SteamVR 應用程式
+title: 更新 Windows Mixed Reality 的 SteamVR 應用程式
 description: 更新 SteamVR 應用程式，以充分利用 Windows Mixed Reality 耳機進行相容性的最佳做法。
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR、相容性、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、串流、移動控制器、haptics
-ms.openlocfilehash: be510203b928cc1871b505d184e1aba05ec99abc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4565f041db83574a51d9327d37780f5ef216dc9c
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677657"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443435"
 ---
-# <a name="updating-your-steamvr-application"></a>更新您的 SteamVR 應用程式
+# <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>更新 Windows Mixed Reality 的 SteamVR 應用程式
 我們鼓勵開發人員測試 SteamVR 體驗，並將其優化，以在 Windows Mixed Reality 耳機上執行。 本檔涵蓋開發人員可進行的一般改進，以確保他們的體驗在 Windows Mixed Reality 上執行得很棒。
 
 ## <a name="initial-setup-instructions"></a>初始安裝指示
@@ -52,7 +52,7 @@ Windows Mixed Reality 移動控制器使用標準 haptics 馬達，而不是在�
 
 ## <a name="launching-steamvr-apps-from-windows-mixed-reality-start-menu"></a>從 Windows Mixed Reality [開始] 功能表啟動 SteamVR 應用程式
 
-針對透過串流散發的 VR 體驗，我們已 [更新 SteamVR Beta 的 Windows Mixed Reality](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) ，以及最新的 [Windows 測試人員](https://insider.windows.com) RS5 航班，讓 SteamVR 標題現在會自動顯示在 [所有應用程式] 清單的 Windows Mixed Reality [開始] 功能表中。 安裝這些軟體版本之後，您的客戶現在可以直接從 Windows Mixed Reality 首頁內啟動 SteamVR 標題，而不需要移除其耳機。
+針對透過串流散發的 VR 體驗，我們已 [更新 SteamVR 的 Windows Mixed Reality](https://steamcommunity.com/games/719950/announcements/detail/1687045485866139800) 以及最新的 [Windows 版本](https://insider.windows.com) ，讓 SteamVR 標題現在會自動顯示在 [所有應用程式] 清單中的 Windows Mixed Reality [開始] 功能表。
 
 ## <a name="windows-mixed-reality-logo"></a>Windows Mixed Reality 標誌
 

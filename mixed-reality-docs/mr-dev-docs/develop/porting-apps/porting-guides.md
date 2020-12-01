@@ -1,23 +1,23 @@
 ---
-title: 移植指南
+title: 將 VR 應用程式移植到 Windows Mixed Reality
 description: 逐步解說逐步解說，說明如何將現有的沉浸式應用程式移植至 Windows Mixed Reality。
 author: JBrentJ
 ms.author: alexturn
 ms.date: 07/07/2020
 ms.topic: article
 keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
-ms.openlocfilehash: 18129151b1e3d11f9e9c7bb3c3420c23b5fd1dd0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: aa9d45a4413fd8e0f5c7eec61f830635c2db6f4b
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677727"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443682"
 ---
-# <a name="porting-guides"></a>移植指南
+# <a name="porting-vr-apps-to-windows-mixed-reality"></a>將 VR 應用程式移植到 Windows Mixed Reality
 
 Windows 10 包含沉浸式和全像攝影耳機的直接支援。 如果您已建立其他裝置的內容（例如 Oculus Rift 或 HTC Vive），這些裝置會相依于存在於作業系統平臺 API 之上的程式庫。 將現有的 Win32 Unity VR 應用程式帶入 Windows Mixed Reality 牽涉到將廠商專屬的 VR Sdk 重定目標使用於 Unity 的跨廠商 VR Api。
 
-## <a name="porting-overview"></a>移植總覽
+## <a name="porting-requirements"></a>移植需求
 
 概括而言，下列步驟牽涉到移植現有的內容：
 1. **確定您的電腦正在執行 Windows 10 Fall Creators Update (16299) 。** 我們不再建議從 Insider Skip 通道接收預覽版，因為這些組建對於混合現實開發來說不是最穩定的。

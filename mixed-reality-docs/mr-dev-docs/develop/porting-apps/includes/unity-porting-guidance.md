@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bcc899a178917a8ef184b4c11bd724df71f7b5c0
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
+ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638537"
+ms.lasthandoff: 12/01/2020
+ms.locfileid: "96443681"
 ---
 # <a name="project-settings"></a>[專案設定](#tab/project)
 
@@ -54,7 +54,7 @@ ms.locfileid: "92638537"
 
 您可以跨多種 [體驗規模](../../../design/coordinate-systems.md)來建立混合的現實體驗。
 
-如果您要移植的是 **大規模的體驗** ，您必須確定 Unity 已設定為 **固定** 的追蹤空間類型：
+如果您要移植的是 **大規模的體驗**，您必須確定 Unity 已設定為 **固定** 的追蹤空間類型：
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -62,7 +62,7 @@ XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
 
 上述程式碼會設定 Unity 的全局座標系統，以追蹤 [固定的參考框架](../../../design/coordinate-systems.md#spatial-coordinate-systems)。 在「固定追蹤」模式中，放在「相機」預設位置前方之編輯器中的內容 (轉寄是-Z) 會在應用程式啟動時出現在使用者前面。 若要 recenter 使用者的原始來源，您可以呼叫 Unity 的 [XR。InputTracking. Recenter](https://docs.unity3d.com/ScriptReference/XR.InputTracking.Recenter.html) 方法。
 
-如果您要移植 **大規模體驗** 或 **房間規模的體驗** ，您將會放置相對於樓層的內容。 您可以使用 **[空間階段](../../../design/coordinate-systems.md#spatial-coordinate-systems)** （代表使用者定義的樓層層級來源和選擇性的空間界限），在第一次執行期間設定使用者的樓層。 針對這些經驗，您必須確定 Unity 已設定為 **RoomScale** 追蹤空間類型。 雖然 RoomScale 是預設值，但您會想要明確進行設定，並確保您會得到 true，以找出使用者將電腦移離他們所校正之房間的情況：
+如果您要移植 **大規模體驗** 或 **房間規模的體驗**，您將會放置相對於樓層的內容。 您可以使用 **[空間階段](../../../design/coordinate-systems.md#spatial-coordinate-systems)**（代表使用者定義的樓層層級來源和選擇性的空間界限），在第一次執行期間設定使用者的樓層。 針對這些經驗，您必須確定 Unity 已設定為 **RoomScale** 追蹤空間類型。 雖然 RoomScale 是預設值，但您會想要明確進行設定，並確保您會得到 true，以找出使用者將電腦移離他們所校正之房間的情況：
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -95,9 +95,6 @@ else
 
 以現有 HMD 為目標的每個遊戲或應用程式將會有一組其處理的輸入、體驗所需的輸入類型，以及它所呼叫以取得這些輸入的特定 Api。 我們致力於嘗試使其盡可能簡單明瞭，以充分利用 Windows Mixed Reality 中提供的輸入。
 1. 請閱讀相鄰索引標籤中 Unity 的《 **輸入移植指南》** ，以取得 Windows Mixed Reality 如何公開輸入的詳細資料，以及該如何對應至您的應用程式目前所能執行的作業。
-2. 選擇您要利用 Unity 的跨 VR SDK 輸入 API 還是 MR 專屬的輸入 API。 Unity VR 應用程式目前會使用 GetButton/GetAxis Api 來進行 [Oculus 輸入](https://docs.unity3d.com/Manual/OculusControllers.html) 和 [OpenVR 輸入](https://docs.unity3d.com/Manual/OpenVRControllers.html)。 如果您的應用程式已經使用這些適用于移動控制器的 Api，這是最簡單的路徑，您應該只需要在輸入管理員中重新對應按鈕和軸。
-    * 您可以使用一般的跨 VR SDK 輸入 GetButton/GetAxis Api 或 MR 專屬的 UnityEngine，在 Unity 中存取移動控制器資料。輸入 Api。  (先前位於 Unity 5.6 中的 UnityEngine. XR 命名空間) 
-    * 請參閱結合了遊戲台和移動控制器的 [工具組範例](https://github.com/Microsoft/HoloToolkit-Unity/pull/572) 。
 
 ### <a name="9-performance-testing-and-tuning"></a>9. 效能測試和微調
 
@@ -110,15 +107,24 @@ Windows Mixed Reality 將可在各式各樣的裝置上使用，範圍從高終�
 您可以使用下列兩種方法之一來將輸入邏輯移植到 Windows Mixed Reality： Unity 的一般輸入。跨多個平臺的 GetButton/GetAxis Api，或 Windows 特定的 XR。Wsa。輸入 Api，專為運動控制器和 HoloLens 手提供更豐富的資料。
 
 > [!IMPORTANT]
-> 如果您使用的是 HP 回 G2 控制器，請參閱 [本文以取得其他](../../unity/unity-reverb-g2-controllers.md) 輸入對應指示。
+> 如果您使用 HP-UX 的 G2 控制器，請參閱 [這篇文章](../../unity/unity-reverb-g2-controllers.md) 以取得其他輸入對應指示。
 
-## <a name="general-inputgetbuttongetaxis-apis"></a>一般輸入. GetButton/GetAxis Api
+## <a name="unity-xr-input-apis"></a>Unity XR 輸入 Api
+
+針對新的專案，我們建議您從頭開始使用新的 XR 輸入 Api。 
+
+您可以在這裡找到有關 [XR api](https://docs.unity3d.com/Manual/xr_input.html)的詳細資訊。
+
+## <a name="inputgetbuttongetaxis-apis"></a>GetButton/GetAxis Api
 
 Unity 目前使用其一般輸入. GetButton/GetAxis Api 來公開 [OCULUS SDK](https://docs.unity3d.com/Manual/OculusControllers.html) 和 [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html)的輸入。 如果您的應用程式已經使用這些 Api 進行輸入，這是在 Windows Mixed Reality 中支援移動控制器最簡單的路徑：您應該只需要重新對應輸入管理員中的按鈕和軸。
 
 如需詳細資訊，請參閱 [unity 按鈕/軸對應表](../../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 和 [通用 Unity api 的總覽](../../unity/gestures-and-motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)。
 
 ## <a name="windows-specific-xrwsainput-apis"></a>Windows 特定 XR。Wsa。輸入 Api
+
+> [!CAUTION]
+> 如果您的專案使用任何 XR。WSA Api 在未來的 Unity 版本中，將會以 XR SDK 的方式來淘汰這些 Api。 針對新的專案，我們建議您從一開始就使用 XR SDK。 您可以在 [這裡找到 XR 輸入系統和 api](https://docs.unity3d.com/Manual/xr_input.html)的詳細資訊。
 
 如果您的應用程式已經為每個平臺建立自訂輸入邏輯，您可以選擇使用 **UnityEngine. XR** 命名空間底下的 Windows 特定空間輸入 api。 這可讓您存取額外的資訊，例如位置精確度或來源種類，讓您可以在 HoloLens 上分辨手和控制器。
 
@@ -133,15 +139,15 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 為了更妥善地表示這些控制器，您可以針對每個互動來源進行兩種調查：
 
-* 底框 **姿勢** ，代表 HoloLens 所偵測到之掌上的位置，或是持有運動控制器的掌上。
-    * 在沉浸式耳機上，這個姿勢最適合用 **來呈現使用者手** 或 **使用者手中所持有的物件** ，例如寶劍或機槍。
-    * 把手 **位置** ：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
-    * 底 **圖方向的右軸** ：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
-    * 底圖 **方向的向前軸** ：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
-    * 底圖 **方向的向上軸** ：右邊和向前定義所隱含的向上軸。
-    * 您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 **[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替** ) 或透過 Windows 特定 API ( **SourceState. SourcePose. TryGetPosition/旋轉** ，要求底框姿勢) 。
-* **指標姿勢** ，代表指向轉寄之控制器的秘訣。
+* 底框 **姿勢**，代表 HoloLens 所偵測到之掌上的位置，或是持有運動控制器的掌上。
+    * 在沉浸式耳機上，這個姿勢最適合用 **來呈現使用者手** 或 **使用者手中所持有的物件**，例如寶劍或機槍。
+    * 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
+    * 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
+    * 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
+    * 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
+    * 您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 **[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替**) 或透過 Windows 特定 API (**SourceState. SourcePose. TryGetPosition/旋轉**，要求底框姿勢) 。
+* **指標姿勢**，代表指向轉寄之控制器的秘訣。
     * 當您在呈現控制器模型本身時 **指向 UI** 時，最好使用這個姿勢來 raycast。
-    * 目前，指標姿勢只能透過 Windows 特定 API 來使用 ( **sourceState. sourcePose. TryGetPosition/旋轉** ，要求指標姿勢) 。
+    * 目前，指標姿勢只能透過 Windows 特定 API 來使用 (**sourceState. sourcePose. TryGetPosition/旋轉**，要求指標姿勢) 。
 
 這些姿勢座標全都以 Unity 全局座標表示。
