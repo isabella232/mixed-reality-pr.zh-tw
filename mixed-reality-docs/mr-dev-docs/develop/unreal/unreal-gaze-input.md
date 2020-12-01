@@ -6,43 +6,101 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 2ea55e3c53275f6150ca7f2def10d71634119e2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: f89638cef6b90e004f097c701c3df13edaf74fac
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679047"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354316"
 ---
 # <a name="gaze-input"></a>注視輸入
 
-## <a name="overview"></a>概觀
-
-[Windows Mixed Reality 外掛程式](https://docs.unrealengine.com/Platforms/VR/WMR/index.html)不會為眼睛輸入提供任何內建函數，但 HoloLens 2 支援眼睛追蹤。 實際的追蹤功能是由 Unreal 的前端 **裝載顯示器** 和 **眼睛追蹤** api 所提供，包括：
-
-- 裝置資訊
-- 追蹤感應器
-- 方向和位置
-- 裁剪窗格
-- 注視資料和追蹤資訊
-
-您可以在 Unreal 的前端 [裝載顯示](https://docs.unrealengine.com/BlueprintAPI/Input/HeadMountedDisplay/index.html) 和 [眼睛追蹤](https://docs.unrealengine.com/BlueprintAPI/EyeTracking/index.html) 檔中找到完整的功能清單。
-
-除了 Unreal Api 之外，請查看 HoloLens 2 [眼睛](../../design/eye-gaze-interaction.md) 的相關檔，並深入瞭解 [HoloLens 2 的眼睛追蹤](https://docs.microsoft.com/windows/mixed-reality/eye-tracking) 的運作方式。
-
-> [!IMPORTANT]
-> 只有 HoloLens 2 才支援眼睛追蹤。
+注視用來指出使用者所查看的內容。  這會使用裝置上的眼睛追蹤攝影機，在 Unreal 世界空間中尋找符合使用者目前查看的光線。
 
 ## <a name="enabling-eye-tracking"></a>啟用眼睛追蹤
-您必須先在 HoloLens 專案設定中啟用注視輸入，才能使用任何 Unreal 的 Api。 當應用程式啟動時，您會看到如下列螢幕擷取畫面所示的同意提示。
 
-- 選取 **[是]** 可設定許可權，並取得輸入的存取權。 如果您在任何時間都需要變更此設定，可以在 [ **設定** ] 應用程式中找到。
+- 在 [ **> HoloLens 的專案設定**] 中，啟用 [ **注視輸入** ] 功能：
 
-![目視輸入許可權](images/unreal/eye-input-permissions.png)
+![已反白顯示注視輸入的 HoloLens 專案設定功能螢幕擷取畫面](images/unreal-gaze-img-01.png)
+
+- 建立新的動作專案並將其新增至您的場景
 
 > [!NOTE] 
 > Unreal 中的 HoloLens 眼睛追蹤只會有一個眼睛光線，而不是 stereoscopic 追蹤所需的兩個光線，而這是不受支援的。
 
-這就是您在 Unreal 中開始將注視輸入新增至 HoloLens 2 應用程式時所需的所有設定。 您可以在下列連結中找到有關注視輸入的詳細資訊，以及它如何影響混合現實中的使用者。 當您建立互動式體驗時，請務必考慮這些資訊。
+## <a name="using-eye-tracking"></a>使用眼球追蹤
+
+先確認裝置支援使用 IsEyeTrackerConnected 函式的眼睛追蹤。  如果傳回 true，請呼叫 GetGazeData，以找出使用者的眼睛在目前畫面格的位置：
+
+![的藍圖是眼睛追蹤連接函數](images/unreal-gaze-img-02.png)
+
+> [!NOTE]
+> HoloLens 上無法使用 fixation 點和信賴值。
+
+若要找出使用者所查看的內容，請線上條追蹤中使用 [注視來源] 和 [方向]。  此向量的開頭是注視原點，而結尾是原點，而注視方向乘以所需距離：
+
+![Get-help Data 函數的藍圖](images/unreal-gaze-img-03.png)
+
+## <a name="getting-head-orientation"></a>取得頭部方向
+
+或者，HMD 旋轉可以用來代表使用者的標頭方向。  這並不需要注視輸入功能，但不會提供任何眼睛追蹤資訊。  您必須將藍圖的參考新增為世界內容，才能取得正確的輸出資料：
+
+> [!NOTE]
+> 取得 HMD 資料僅適用于 Unreal 4.26 和更新版本。
+
+![Get HMDData 函式的藍圖](images/unreal-gaze-img-04.png)
+
+## <a name="using-c"></a>使用 C++ 
+
+- 在您遊戲的 build.cs 檔案中，將 "EyeTracker" 新增至 PublicDependencyModuleNames 清單：
+
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",
+        "EyeTracker"
+});
+```
+
+- 在 [File/New c + + 類別] 中，建立名為 "EyeTracker" 的新 c + + 執行者
+    - Visual Studio 的解決方案將會開啟新的 EyeTracker 類別。 建立並執行，以使用新的 EyeTracker 執行者開啟 Unreal 遊戲。  在 [放置動作專案] 視窗中搜尋 "EyeTracker"。  將此類別拖放到遊戲視窗中，以將它新增至專案：
+
+![開啟動作專案視窗的動作專案螢幕擷取畫面](images/unreal-gaze-img-06.png)
+
+- 在 EyeTracker .cpp 中，新增 EyeTrackerFunctionLibrary 和 DrawDebugHelpers 的 include：
+
+```cpp
+#include "EyeTrackerFunctionLibrary.h"
+#include "DrawDebugHelpers.h"
+```
+
+在 [滴答] 中，檢查裝置是否支援使用 UEyeTrackerFunctionLibrary：： IsEyeTrackerConnected 的眼睛追蹤。  然後，從 UEyeTrackerFunctionLibrary：： GetGazeData 找出線條追蹤的光線起點和終點：
+
+```cpp
+void AEyeTracker::Tick(float DeltaTime)
+{
+    Super::Tick(DeltaTime);
+
+    if(UEyeTrackerFunctionLibrary::IsEyeTrackerConnected())
+    {
+        FEyeTrackerGazeData GazeData;
+        if(UEyeTrackerFunctionLibrary::GetGazeData(GazeData))
+        {
+            FVector Start = GazeData.GazeOrigin;
+            FVector End = GazeData.GazeOrigin + GazeData.GazeDirection * 100;
+
+            FHitResult Hit Result;
+            if (GWorld->LineTraceSingleByChannel(HitResult, Start, End, ECollisionChannel::ECC_Visiblity))
+            {
+                DrawDebugCoordinateSystem(GWorld, HitResult.Location, FQuat::Identity.Rotator(), 10);
+            }
+        }
+    }
+}
+```
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
