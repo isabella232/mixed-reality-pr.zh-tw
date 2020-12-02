@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: bf6b98eca850d2b280e7a016799c4287955159a6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 487118403c2a8af1a6b54bc9aa9245fbe9d0568a
+ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443681"
+ms.locfileid: "96477053"
 ---
 # <a name="project-settings"></a>[專案設定](#tab/project)
 
@@ -94,7 +94,8 @@ else
 ### <a name="8-work-through-your-input-model"></a>8. 完成輸入模型的工作
 
 以現有 HMD 為目標的每個遊戲或應用程式將會有一組其處理的輸入、體驗所需的輸入類型，以及它所呼叫以取得這些輸入的特定 Api。 我們致力於嘗試使其盡可能簡單明瞭，以充分利用 Windows Mixed Reality 中提供的輸入。
-1. 請閱讀相鄰索引標籤中 Unity 的《 **輸入移植指南》** ，以取得 Windows Mixed Reality 如何公開輸入的詳細資料，以及該如何對應至您的應用程式目前所能執行的作業。
+
+請閱讀相鄰索引標籤中 Unity 的《 [輸入移植指南》](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) ，以取得 Windows Mixed Reality 如何公開輸入的詳細資料，以及該如何對應至您的應用程式目前所能執行的作業。
 
 ### <a name="9-performance-testing-and-tuning"></a>9. 效能測試和微調
 
