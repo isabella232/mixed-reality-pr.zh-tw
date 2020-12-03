@@ -7,16 +7,15 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 空間對應, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: cd7e99230809c9d98f732e0dfa1f0b86d05c4365
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678807"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354370"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal 中的空間對應
 
-## <a name="overview"></a>概觀
 空間對應可讓您將物件放在實體世界的表面上，方法是在 HoloLens 周圍顯示世界，這使得全像投影對使用者來說看起來更真實。 空間對應也會利用真實世界的深度提示，來錨定使用者世界中的物件。這有助於說服使用者這些全像投影實際在其空間內；在空間中浮動或隨著使用者移動的全像投影，將不會覺得真實。 您想要盡可能地將項目放在舒適的位置。
 
 若要深入了解空間對應品質、放置、遮蔽、轉譯等等，請參閱[空間對應](../../design/spatial-mapping.md)文件。
@@ -26,6 +25,8 @@ ms.locfileid: "94678807"
 若要在 HoloLens 上啟用空間對應：
 - 開啟 [編輯] > [專案設定]，然後向下捲動至 [平台] 區段。    
     + 選取 **HoloLens** 並勾選 [空間感知]。
+
+![螢幕擷取畫面：已醒目提示空間感知的 HoloLens 專案設定功能](images/unreal-spatial-mapping-img-01.png)
 
 若要在 HoloLens 遊戲中加入空間對應，並偵錯 **MRMesh**：
 1. 開啟 **ARSessionConfig**，並展開 [ARSettings] > [世界對應] 區段。 
@@ -48,6 +49,13 @@ ms.locfileid: "94678807"
     + 如果預期的應用程式執行階段環境預期會很大，此值可能需要很大，才能符合真實世界的空間。  另一方面，如果應用程式只需要在使用者附近的表面上放置全像投影，則此值可能會比較小。 當使用者在世界中行走時，空間對應體積會隨著他們移動。 
 
 ## <a name="working-with-mrmesh"></a>使用 MongoDB
+
+首先，您必須啟動空間對應：
+
+![已醒目提示空間對應擷取類型的 ToggleARCapture 函式藍圖](images/unreal-spatial-mapping-img-02.png)
+
+在為空間擷取了空間對應後，建議您關閉空間對應。  空間對應可能會在一段時間後完成，也可能會在每個方向的光線投射針對 MRMesh 傳回碰撞時完成。
+
 若要可在執行階段存取 **MRMesh**：
 1. 將 **ARTrackableNotify** 元件新增至藍圖動作項目。 
 
@@ -64,21 +72,53 @@ ms.locfileid: "94678807"
 
 ![空間錨點範例](images/unreal-spatialmapping-example.PNG)
 
-在 C++ 中，您可以訂閱 `OnTrackableAdded` 委派，以在 `ARTrackedGeometry` 可用時立即取得，如下列程式碼所示。 
+## <a name="spatial-mapping-in-c"></a>C++ 中的空間對應
 
-> [!IMPORTANT]
-> 專案的 build.cs 檔案 **必須** 具有 **PublicDependencyModuleNames** 清單中的 **AugmentedReality**。
-> - 這包括 **ARBlueprintLibrary** 和 MRMeshComponent，可讓您檢查 **UARTrackedGeometry** 的 **MRMesh** 元件。 
+在遊戲的 build.cs 檔案中，將 **AugmentedReality** 和 **MRMesh** 新增至 PublicDependencyModuleNames 清單：
 
-![空間錨點範例程式 C++ 代碼](images/unreal-spatialmapping-examplecode.PNG)
+```cpp
+PublicDependencyModuleNames.AddRange(
+    new string[] {
+        "Core",
+        "CoreUObject",
+        "Engine",
+        "InputCore",    
+        "EyeTracker",
+        "AugmentedReality",
+        "MRMesh"
+});
+```
 
-空間對應不是透過 **ARTrackedGeometries** 呈現的唯一資料類型。 您可以檢查 `EARObjectClassification` 是否為 `World`，其表示這是空間對應幾何。 
+若要存取 MRMesh，請訂閱 **OnTrackableAdded** 委派：
 
-已更新和移除的事件也有類似的委派： 
-- `AddOnTrackableUpdatedDelegate_Handle` 
-- `AddOnTrackableRemovedDelegate_Handle`。 
+```cpp
+#include "ARBlueprintLibrary.h"
+#include "MRMeshComponent.h"
 
-您可以在 [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API 中找到完整的事件清單。
+void AARTrackableMonitor::BeginPlay()
+{
+    Super::BeginPlay();
+
+    // Subscribe to Tracked Geometry delegates
+    UARBlueprintLibrary::AddOnTrackableAddedDelegate_Handle(
+        FOnTrackableAddedDelegate::CreateUObject(this, &AARTrackableMonitor::OnTrackableAdded)
+    );
+}
+
+void AARTrackableMonitor::OnTrackableAdded(UARTrackedGeometry* Added)
+{
+    // When tracked geometry is received, check that it's from spatial mapping
+    if(Added->GetObjectClassification() == EARObjectClassification::World)
+    {
+        UMRMeshComponent* MRMesh = Added->GetUnderlyingMesh();
+    }
+}
+```
+
+> [!NOTE]
+> 已更新和已移除的事件有類似的委派，分別是 **AddOnTrackableUpdatedDelegate_Handle** 和 **AddOnTrackableRemovedDelegate_Handle**。
+>
+> 您可以在 [UARTrackedGeometry](https://docs.unrealengine.com/API/Runtime/AugmentedReality/UARTrackedGeometry/index.html) API 中找到完整的事件清單。
 
 ## <a name="see-also"></a>另請參閱
 * [空間對應](../../design/spatial-mapping.md)

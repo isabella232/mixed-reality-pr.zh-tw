@@ -7,18 +7,21 @@ ms.date: 07/01/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 開發, 空間錨點, 混合實境, 開發, 功能, 新專案, 模擬器, 文件, 指南, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 05a4b221961fa9b3a150eb8ef9f8bd2f77f5b955
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: b464292b606f6c375fe84a50867cac770cd8f001
+ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679867"
+ms.lasthandoff: 11/30/2020
+ms.locfileid: "96354546"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal 中的 Azure Spatial Anchors
 
 ## <a name="overview"></a>概觀
 
 Azure Spatial Anchors 是 Microsoft Mixed Reality 服務，可讓擴增實境裝置探索、共用及保存實體世界中的錨點。 以下文件提供將 Azure Spatial Anchors 服務整合到 Unreal 專案中的指示。 如果您要尋找更多資訊，請參閱 [Azure Spatial Anchors 服務](https://azure.microsoft.com/services/spatial-anchors/)。
+
+> [!NOTE]
+> 如果您以 iOS 或 Android 作為目標，則 Unreal Engine 4.26 現在有適用於 ARKit 和 ARCore 支援的外掛程式。
 
 > [!IMPORTANT]
 > 本機錨點會儲存在裝置上，而 Azure Spatial Anchors 會儲存在雲端。 如果您要將錨點儲存在裝置本機上，我們有[本機空間錨點](unreal-spatial-anchors.md)文件，可協助您逐步完成此程序。 請注意，您在同一個專案中可以有本機和 Azure 錨點，而不會發生衝突。
