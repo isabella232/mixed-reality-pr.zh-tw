@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: c0111c03d2350627106a53af7c1e04d448a08fe6
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 01447b6122dae1c449e85b9bc7a9ad2cfc678f24
+ms.sourcegitcommit: 59c23d1ea5009e1929660a9a97c6131c353cd57e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443485"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96538715"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -42,7 +42,7 @@ ms.locfileid: "96443485"
 
 
 ### <a name="december-16th"></a>12月16日
-|**Time**|**會話標題**|**主講人**|**語言**|**Level**|
+|**Time**|**會話標題**|**主講人**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
 |10：上午 10:00-10：50am|開啟演講|TBD|JA-JP|N/A|
 |10： 50am-11：上午10:00|**打破**||||
@@ -57,7 +57,7 @@ ms.locfileid: "96443485"
 |2： 55pm-3：下午10點|**打破**||||
 |3：下午10點-3：35pm|*會話 7* Azure 物件錨點|Jesse McCulloch|EN|300|
 |3： 40pm-4：05pm|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
-|4：下午10點-4：35pm|*課程 9* Azure 空間錨點|TBD|JA|300|
+|4：下午10點-4：35pm|*課程 9* 透過 Azure 空間錨點對齊全像影像和真實世界|Yingguang Mei|EN|300|
 |4： 40pm-5：05pm|*會話 10* Unity + PiXYZ|Shinobu Takahashi (Unity) |JA|200|
 |5：下午10點-5：35pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
 |5： 35pm-5：50pm|關閉|Madoka Chiyoda|JA|NA|
