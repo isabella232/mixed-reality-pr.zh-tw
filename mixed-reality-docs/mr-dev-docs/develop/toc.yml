@@ -308,6 +308,8 @@
       items:
         - name: 在 Unreal 中部署至裝置
           href: unreal/unreal-deploying.md
+        - name: 發佈至 Microsoft Store
+          href: unreal/unreal-publishing-to-store.md
         - name: 在 Unreal 中升級專案
           href: unreal/unreal-porting.md
         - name: Unreal 的效能建議
