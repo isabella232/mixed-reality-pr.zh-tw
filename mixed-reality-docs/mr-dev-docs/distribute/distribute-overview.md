@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/02/2020
 ms.topic: article
 keywords: HoloLens、Mixed Reality、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品化
-ms.openlocfilehash: f52109792e174a0b0fbdd9738539b5fc88f190a1
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 4ea60d2111f99924eaa417d4ff6fa8830934588c
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443517"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578877"
 ---
 # <a name="distributing-your-apps"></a>散發您的應用程式
 
@@ -81,7 +81,7 @@ ms.locfileid: "96443517"
     <td>✔️</td>
 </tr>
 <tr>
-    <td><a href="#additional-scenarios"><strong>自訂 Win32 部署</strong></a> (僅 Windows Mixed Reality-請參閱以下) </td>
+    <td>HoloLens 裝置無法使用<a href="#additional-scenarios"><strong>自訂的 Win32 部署</strong></a> (-請參閱以下) </td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>

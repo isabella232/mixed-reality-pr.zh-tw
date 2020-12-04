@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 7712641bad36b8759b9237abf14593f8c121e81b
-ms.sourcegitcommit: 3eb4c1a79e9173a5c9b6d2284f34c0bceced402c
+ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96501706"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578613"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -57,6 +57,10 @@ HP 建議：
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>我的 HP 運動控制器遊戲，有時會留在一側
 
 此問題的修正方式是將搖桿完全上移直到按一下，然後自由移動。
+
+## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>其他狀態我很高興，或是當我在使用麥克風與一些應用程式時，音訊正在剪切
+
+當 Windows 電腦第一次辨識「HP 回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定的預期。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」的應用程式範例包括 Skype、縮放、小組和 Cisco WebEx，但並非所有的 VR 社交或廣播應用程式都有這項功能。
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>混合實境入口指出「此耳機上無法執行混合的現實」，但這在先前的 WMR 耳機中運作正常
 

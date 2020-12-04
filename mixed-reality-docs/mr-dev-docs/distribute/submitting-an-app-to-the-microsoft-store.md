@@ -6,14 +6,17 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store、HoloLens、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: b5d25817afeb2d8d970d329c802b7eaabcdf7f35
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1d37337279e46e5f0f9d5cea82813af8de9d0f76
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703114"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578897"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>將應用程式提交到 Microsoft Store
+
+> [!IMPORTANT]
+> 如果您要提交 Unreal 應用程式，請務必遵循此處的 **[發佈指示](../develop/unreal/unreal-publishing-to-store.md)** ，再繼續進行操作。
 
 [HoloLens](../hololens-hardware-details.md)和 Windows 10 PC 都能為您的[沉浸式耳機](../discover/immersive-headset-hardware-details.md)執行通用 Windows 平臺應用程式。 無論您是提交支援 HoloLens、電腦或兩者的應用程式，提交應用程式都會經歷 [合作夥伴中心](https://partner.microsoft.com/dashboard)。
 
@@ -38,9 +41,9 @@ ms.locfileid: "94703114"
 
 | 必要資產 | 建議的調整 | 映像格式 | 資產顯示在哪裡？ | 
 |----------|----------|----------|------------------|
-| 正方形71x71 標誌 | 任意 |  PNG | 不適用 | 
+| 正方形71x71 標誌 | 任意 |  PNG | N/A | 
 | 正方形150x150 標誌 | 150x150 (100% scale) 或 225x225 (150% scale)  | PNG | 如果未提供310x310，則啟動釘選和所有應用程式 () 、商店搜尋建議、商店清單頁面、商店流覽、商店搜尋 | 
-|  寬310x150 標誌 |  任意  |  PNG  |  不適用 | 
+|  寬310x150 標誌 |  任意  |  PNG  |  N/A | 
 |  市集標誌 |  75x75 (150% 規模)   |  PNG  |  合作夥伴中心，報表應用程式，撰寫評論，我的文件庫 | 
 |  啟動顯示畫面 |  930x450 (150% 規模)   |  PNG  |  2D 應用程式啟動器 (平板)  | 
 

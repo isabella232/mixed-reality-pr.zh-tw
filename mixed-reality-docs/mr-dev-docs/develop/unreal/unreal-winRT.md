@@ -1,17 +1,17 @@
 ---
 title: Unreal 中的 WinRT
 description: 概述 Unreal Engine 的空間音訊外掛程式。
-author: fieldsJacksonG
+author: hferrone
 ms.author: jacksonf
 ms.date: 07/08/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、串流、遠端處理、混合現實、開發、入門、功能、新專案、模擬器、檔、指南、功能、全像投影、遊戲開發、混合現實耳機、windows 混合現實耳機、虛擬實境耳機、WinRT、DLL
-ms.openlocfilehash: 722add1601013d206ffface84d3a53cf3a9d89f9
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: ff0b235a45bf0e04b82e610384a290e8fc3a7525
+ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354439"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96578593"
 ---
 # <a name="winrt-in-unreal"></a>Unreal 中的 WinRT
 
