@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: f5abfca4d5f85fd65aee77857d94a989122df310
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: eaba6ea1ee77ffffb74008402eafd1f09fd822e5
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678947"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609679"
 ---
 # <a name="the-making-of-kippys-escape"></a>製作 Kippy 的 Escape
 
@@ -24,7 +24,7 @@ Kippy 機器人喚醒以找出自己在島上的孤立狀態。 您可以自行�
 
 ## <a name="overview"></a>概觀
 
-Kippy 的 Escape 是一個開放原始碼 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) 範例應用程式，使用 Unreal Engine 4 和 [混合現實 UX 工具進行 Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)。 在這篇文章中，我們將逐步引導您完成將 Kippy 的轉換至生命的程式，從第一項原則和視覺化設計，到實施和優化體驗。 您可以在 [Unreal 開發總覽](unreal-development-overview.md)中找到使用 MRTK UX 工具開發混合現實應用程式的詳細資訊。
+Kippy 的 Escape 是一個開放原始碼 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) 範例應用程式，使用 Unreal Engine 4 和 [混合現實 UX 工具進行 Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)。 在這篇文章中，我們將逐步引導您完成我們的程式，從第一個原則和視覺化設計，到實施和優化體驗。 您可以在 [Unreal 開發總覽](unreal-development-overview.md)中找到使用 MRTK UX 工具開發混合現實應用程式的詳細資訊。
 
 ## <a name="first-principles"></a>第一個原則 
 
@@ -36,7 +36,7 @@ Kippy 的 Escape 是一個開放原始碼 [HoloLens 2](https://docs.microsoft.co
 
 HoloLens 2 可以存取設計功能，目前在遊戲中有其他地方。 您可以使用您的手或以眼睛追蹤作為目標，直接推送或操作物件。 這些主要功能的背後，是我們在 Kippy 的轉換程式中所建立的一些有趣的部分。  
 
-使用獨特的 HoloLens 2 功能做為遊戲設計的指導方針，我們已將一些小型環境案例的範圍限定在其中。 孤島有很大的意義，因為可以針對不同的播放程式高度進行調整，並提供一些有趣的橋樑想法。 從這裡開始，我們進入了古文明的主題與科幻-fi 技術的比較，也就是有人在毀損上建立的機械，利用了每個島所提供的奇怪能源。 每個孤島都有各自的外觀和操作，這是協助您建立視覺興趣的詳細資料。 模型化和紋理之間的平衡很重要，因為這是為了讓繪製呼叫的效能降低，以呈現效能，因此設計風格的外觀。 
+使用獨特的 HoloLens 2 功能做為遊戲設計的指導方針，我們已將一些小型環境案例的範圍限定在其中。 孤島有意義，因為可以針對不同的播放程式高度進行調整，並提供一些有趣的橋樑想法。 我們進入了古文明的主題，以符合科幻-fi 技術的概念，也就是有人在毀損上建立的機械，利用了每個島所提供的奇怪能源。 每個孤島都有各自的外觀和操作，這是協助您建立視覺興趣的詳細資料。 模型化和紋理之間的良好平衡會讓繪製呼叫的效能降低，以呈現效能，因此設計風格的外觀是以這種方式設計。 
 
 ![早期遊戲設計 ](images/kippys-escape/kippys-escape-img-01.png)
  *會針對體驗的外觀進行一些早期的草圖*
@@ -54,7 +54,7 @@ HoloLens 2 可以存取設計功能，目前在遊戲中有其他地方。 您�
 
 *如果使用者花太多時間來解決謎題，Kippy 會為使用者提供提示*
 
-除了字元和環境設計之外，我們也一致了讓遊戲感到有趣的工作。 眼睛追蹤可讓我們引發材質和音效屬性，這些屬性強調遊戲的重要部分。 空間音訊可協助您在玩家的環境中，讓這些層級在家裡的外觀。 能夠抓取物件、推播按鈕和操作滑杆推動創新的玩家參與，所以請務必確定這些連接點都覺得自然。 
+除了字元和環境設計之外，我們也一致了讓遊戲感到有趣的工作。 眼睛追蹤可讓我們引發材質和音效屬性，這些屬性強調遊戲的重要部分。 空間音訊可協助您在玩家的環境中，讓這些層級在家裡的外觀。 能夠抓取物件、推播按鈕和操作滑杆，推動創新的玩家參與。 請務必確定這些連接點都有自然的感覺。 
 
 ![橋接器纜線的尾端會在使用者的手上進行時發光](images/kippys-escape/kippys-escape-img-05.gif)
 
@@ -117,4 +117,4 @@ Kippy 的 Escape 高度依賴混合現實 UX 工具元件，讓遊戲成為互�
 </tr>
 </table>
 
-特別感謝我們的朋友 [Framestore](https://www.framestore.com/) ，協助我們將 Kippy 的轉換至下一個層級。 從字元開發到資產設計，到遊戲程式設計，在此專案上進行共同作業的 pivotal。  
+特別感謝我們的朋友 [Framestore](https://www.framestore.com/) ，協助我們將 Kippy 的轉換至生命。 從字元開發到資產設計，到遊戲程式設計，在此專案上進行共同作業的 pivotal。  

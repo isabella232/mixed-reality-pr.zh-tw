@@ -6,22 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal 引擎4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 0a16a0291261277cb09e736e60b25f8ba71382e3
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4c66e2353c1e881c05541fd0fe9eafa553ea5c23
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679207"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609709"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal 中的手勢追蹤
 
-## <a name="overview"></a>概觀
-
-手追蹤系統會使用某人的手掌和手指做為輸入。 您可以在程式碼中取得每個手指的位置和旋轉、整個掌，甚至手手勢。 
+手追蹤系統會使用某人的手掌和手指做為輸入。 每個手指的位置和旋轉、完整的掌上和手手勢的資料都可以使用。 
 
 ## <a name="hand-pose"></a>手姿勢
 
-手姿勢可讓您追蹤作用中使用者的手和手指，並將其作為輸入，您可以透過藍圖和 c + + 來存取。 您可以在 Unreal 的 [HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API 中找到更多的技術詳細資料。 Unreal API 會將資料傳送為座標系統，並與 Unreal 引擎同步處理刻度。
+手姿勢可讓您追蹤並使用使用者的手和手指做為輸入。 您可以在藍圖和 c + + 中存取追蹤資料。 您可以在 Unreal 的 [HandPose](https://docs.microsoft.com/uwp/api/windows.perception.people.handpose) API 中找到更多的技術詳細資料。 Unreal API 會將資料傳送為座標系統，並與 Unreal 引擎同步處理刻度。
 
 ### <a name="understanding-the-bone-hierarchy"></a>瞭解骨骼階層
 
@@ -72,7 +70,7 @@ enum class EWMRHandKeypoint : uint8
 
 ![手動追蹤 BP](images/unreal/hand-tracking-bp.png)
 
-`true`如果裝置上支援手形追蹤，而且 `false` 無法使用手動追蹤，此函式就會傳回。
+`true`如果裝置上支援手形追蹤，而且 `false` 無法使用手形追蹤，此函式就會傳回。
 
 ![支援手動追蹤 BP](images/unreal/supports-hand-tracking-bp.png)
 
@@ -85,6 +83,7 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::SupportsHandTrackin
 ```
 
 ### <a name="getting-hand-tracking"></a>取得追蹤
+
 您可以使用 **GetHandJointTransform** 來傳回手中的空間資料。 資料會每個畫面格更新，但如果您在框架內，則會快取傳回的值。 基於效能考慮，不建議在此函式中使用繁重的邏輯。 
 
 ![取得手聯合轉換](images/unreal/get-hand-joint-transform.png)
@@ -94,24 +93,25 @@ C++：
 static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransform(EControllerHand Hand, EWMRHandKeypoint Keypoint, FTransform& OutTransform, float& OutRadius)
 ```
 
-函數參數細目：
+以下是 GetHandJointTransform 函數參數的細目：
 
-* **手形** –是使用者的左邊或右邊
+* **手** –可以是使用者的左邊或右邊。
 * **Keypoint** –手形的骨骼。 
 * **轉換** –骨骼基底的座標和方向。 您可以要求下一個骨骼的基底，以取得適用于骨骼結尾的轉換資料。 特殊的秘訣骨骼可提供 distal 的結尾。 
 * **半徑** ：骨骼基底的半徑。
 * 傳回 **值**-如果已追蹤此框架，則為 true; 如果未追蹤此骨骼，則為 false。
 
 ## <a name="hand-live-link-animation"></a>手實況連結動畫
+
 使用 [即時連結外掛程式](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)可對動畫公開手。
 
 如果已啟用 Windows Mixed Reality 和即時連結外掛程式： 
 1. 選取 [ **Window > 即時連結** ] 以開啟 [即時連結編輯器] 視窗。 
-2. 按一下 [ **來源** ] 並啟用 **Windows Mixed Reality 手追蹤來源**
+2. 選取 **來源** 並啟用 **Windows Mixed Reality 手追蹤來源**
 
 ![即時連結來源](images/unreal/live-link-source.png)
  
-啟用來源並開啟動畫資產之後，展開 [**預覽場景**] 索引標籤中的 [**動畫**] 區段，也會看到其他選項 (詳細資料位於 Unreal 的即時連結檔中-當外掛程式在 Beta 版中，此程式可能會在稍後) 變更。
+啟用來源並開啟動畫資產之後，展開 [**預覽場景**] 索引標籤中的 [**動畫**] 區段，也會看到其他選項。
 
 ![即時連結動畫](images/unreal/live-link-animation.png)
  
@@ -194,7 +194,8 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 您可以在 c + + 和藍圖中使用手光線作為指標裝置，以公開 [SpatialPointerInteractionSourcePose](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialpointerinteractionsourcepose) API。
 
-請務必注意，因為所有函式的結果都會變更每個畫面格，所以它們全都變成可呼叫。 如需有關純和 impure 或可呼叫函式的詳細資訊，請參閱藍圖的使用者 guid [功能](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)
+> [!IMPORTANT]
+> 因為所有的函式結果都會變更每個畫面格，所以全都變成可呼叫。 如需有關純和 impure 或可呼叫函式的詳細資訊，請參閱「函 [式上的](https://docs.unrealengine.com/en-US/Engine/Blueprints/UserGuide/Functions/index.html#purevs.impure)藍圖使用者 guid」。
 
 若要在藍圖中使用手片，請搜尋 **WINDOWS MIXED REALITY HMD** 下的任何動作：
 
@@ -203,6 +204,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 若要以 c + + 存取它們，請將加入 `WindowsMixedRealityFunctionLibrary.h` 至呼叫程式碼檔案的頂端。
 
 ### <a name="enum"></a>列舉
+
 您也可以存取 **EHMDInputControllerButtons** 下的輸入案例，此案例可用於藍圖：
 
 ![輸入控制器按鈕](images/unreal/input-controller-buttons.png)
@@ -218,10 +220,11 @@ enum class EHMDInputControllerButtons : uint8
 ```
 
 以下是兩個適用列舉案例的明細：
+
 * **選取** 使用者觸發的選取事件。 
-    * 您可以藉由點一下、注視和認可，或藉由在啟用 [語音輸入](unreal-voice-input.md) 的情況下說出「選取」，在 HoloLens 2 中觸發事件。 
+    * 在 HoloLens 2 中，藉由按下按鍵、注視和認可，或藉由在啟用 [語音輸入](unreal-voice-input.md) 時說出「選取」來觸發。 
 * **理解** 使用者觸發的理解事件。 
-    * 在 HoloLens 2 中，您可以關閉使用者的手指，以觸發此事件。 
+    * 在 HoloLens 2 中，藉由關閉使用者的手指來觸發。 
 
 您可以透過如下所示的列舉，在 c + + 中存取您的手形網格追蹤狀態 `EHMDTrackingStatus` ：
 
@@ -235,18 +238,21 @@ enum class EHMDTrackingStatus : uint8
 ```
 
 以下是兩個適用列舉案例的明細：
+
 * **NotTracked** –不可見的手
 * 已 **追蹤**--已完整追蹤手
 
 ### <a name="struct"></a>結構
+
 PointerPoseInfo 結構可以提供下列資料的資訊：
+
 * **原點** –手的原點
 * **方向** –手形方向
 * **向上** –向上向量
 * **方向** –方向四元數 
 * **追蹤狀態** -目前的追蹤狀態
 
-您可以透過藍圖來存取，如下所示：
+您可以透過藍圖存取 PointerPoseInfo 結構，如下所示：
 
 ![指標姿勢資訊 BP](images/unreal/pointer-pose-info-bp.png)
 
@@ -263,7 +269,7 @@ struct FPointerPoseInfo
 };
 ```
 
-### <a name="functions"></a>函數
+### <a name="functions"></a>函式
 
 您可以在每個畫面上呼叫以下列出的所有函式，以允許連續監視。 
 
@@ -324,7 +330,7 @@ static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrac
 
 ## <a name="gestures"></a>軌跡
 
-Hololens 2 可以追蹤空間手勢，這表示您可以將這些手勢視為輸入。 您可以在 [HoloLens 2 基本使用](https://docs.microsoft.com/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
+HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 您可以在 [HoloLens 2 基本使用](https://docs.microsoft.com/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
 
 您可以在 [ **Windows Mixed Reality 空間輸入**] 下找到藍圖函式，然後在呼叫程式碼檔案中加入 c + + 函式 `WindowsMixedRealitySpatialInputFunctionLibrary.h` 。
 
@@ -349,7 +355,7 @@ enum class ESpatialInputAxisGestureType : uint8
 };
 ```
 
-### <a name="function"></a>函式
+### <a name="function"></a>函數
 您可以使用函數來啟用和停用手勢捕捉 `CaptureGestures` 。 當已啟用的手勢引發輸入事件時， `true` 如果手勢捕捉成功，則函式會傳回，如果發生錯誤，則會傳回 `false` 。
 
 藍圖：
@@ -407,7 +413,7 @@ const FKey FSpatialInputKeys::RightNavigationZGesture(RightNavigationZGestureNam
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
+如果您正在遵循我們所配置的 Unreal 開發旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊： 
 
 > [!div class="nextstepaction"]
 > [本機空間錨點](unreal-spatial-anchors.md)

@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、回音、回音、HP 回音、mixed reality、開發、運動控制器、使用者輸入、功能、新專案、模擬器、檔、指南、功能、全像遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 6a56b11e6738dd6359508d0cdfc1560bddfaff2e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 419f5b803a6abb2b19080807ef9f403b96758683
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678927"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609589"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Unreal 中的 HP 回音 G2 控制器 
 
@@ -38,7 +38,7 @@ ms.locfileid: "94678927"
 
 ![定義新的動作和對應](images/reverb-g2-img-02.png)
 
-HP 的殘響 G2 控制器也有類比底框，可用於與「壓縮軸」系結的軸對應中。  有個別的壓縮系結，當您完全按下 [框] 按鈕時，應該將其用於動作對應。 
+HP 的殘響 G2 控制器也有類比底框，可用於與「壓縮軸」系結的軸對應中。  有個別的捏住系結，當您完全按下 [握住] 按鈕時，應該將其用於動作對應。 
 
 ![使用壓縮軸系結](images/reverb-g2-img-03.png)
 

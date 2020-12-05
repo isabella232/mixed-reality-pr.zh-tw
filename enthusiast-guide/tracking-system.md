@@ -3,14 +3,14 @@ title: 內外追蹤的運作方式
 description: Windows Mixed Reality 耳機中所使用之以相機為基礎之內部追蹤系統的相關資訊。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、內部、內部、追蹤、攝影機
-ms.openlocfilehash: eda1b323915788f72ae6f4a2efcf51850734eac9
-ms.sourcegitcommit: 55a6a0b481238e7a2e3278a51583b6bda0eb259a
+ms.openlocfilehash: e299415d8f5a727d8005a9cb3a65dd5da0d9bdf6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/22/2020
-ms.locfileid: "92434603"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609729"
 ---
-# <a name="inside-out-tracking"></a>內部追蹤
+# <a name="inside-out-tracking"></a>內外追蹤
 
 ## <a name="how-does-inside-out-tracking-work"></a>內部追蹤的運作方式為何？
 
@@ -30,7 +30,7 @@ ms.locfileid: "92434603"
 
 ## <a name="how-much-light-is-enough-light"></a>光線夠多了？
 
-很好的經驗法則是，如果您可以輕鬆地在環境中四處移動，而不覺得它太暗，而且您可以觀察另一位人的功能是否橫跨房間，那麼追蹤系統可能有足夠的光線。
+很好的經驗法則是，如果您可以輕鬆地在環境中四處移動，而不覺得它太暗，而且您可以觀察另一位人的功能是否橫跨房間，那麼追蹤系統可能有足夠的光線。 請記住，如果您想要在 sun 進行，相機可能會變得飽和，而且無法可靠地追蹤。 
 
 ## <a name="what-is-the-recommended-amount-of-environmental-features"></a>建議的環境功能數量為何？
 
@@ -42,7 +42,7 @@ ms.locfileid: "92434603"
 
 ## <a name="where-will-tracking-not-work"></a>追蹤無法運作的位置為何？
 
-追蹤將無法在較低的房間內運作，因為這種情況下相機將無法看到足夠的功能。 追蹤通常不會執行得很好 (或有時適用于移動車輛的所有) ，例如飛機、匯流排、訓練、汽車或電梯。
+追蹤將無法在較低的房間內運作，因為這種情況下相機將無法看到足夠的功能。 追蹤通常不會執行得很好 (或有時適用于移動車輛的所有) ，例如飛機、匯流排、訓練、汽車或電梯。 在太多光線或強式的情況下，追蹤也會失敗。 比方說，如果有一個直射的直接串流進入房間，相機可能會降低曝光率，以減少飽和度，而無法查看一般自然功能。 建議您保持相對於燈光，如果您必須傾向或尋找 uncomfortably 亮的事物，則追蹤系統可能無法正常運作。 
 
 ## <a name="what-is-the-difference-between-3dof-and-6dof"></a>3DOF 和6DOF 之間有何差異？
 
@@ -72,6 +72,6 @@ Windows Mixed Reality 中的追蹤很容易使用。 不需要基礎結構或設
 
 ## <a name="see-also"></a>另請參閱
 * [追蹤系統疑難排解](tracking.md)
-* [運動控制器](controller-in-wmr.md)
+* [運動控制器](controllers-in-wmr.md)
 * [您的 Windows Mixed Reality 首頁](your-mixed-reality-home.md)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)

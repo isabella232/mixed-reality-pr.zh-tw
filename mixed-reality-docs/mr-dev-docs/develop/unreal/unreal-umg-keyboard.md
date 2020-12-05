@@ -6,16 +6,16 @@ ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全像移動、HoloLens 2、眼睛追蹤、眼睛輸入、前端掛載顯示器、Unreal 引擎、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、widget、UI、UMG、Unreal 運動圖形、Unreal 引擎、UE、UE4
-ms.openlocfilehash: 9f22a5f7a13732727b6b122d385aad7e708a1343
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355285"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609759"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>Unreal 中的 UMG 和鍵盤
 
-Unreal 動畫圖形 (UMG) 是 Unreal 引擎的內建 UI 系統，用來建立功能表和文字方塊等介面。 使用 UMG 所建立的使用者介面是由小工具所組成。 本指南將說明如何建立新的小工具、將它新增至世界空間，以及在混合的情況下啟用與該 widget 的互動，方法是使用系統鍵盤作為範例。 您可以在官方的 Unreal 引擎 [檔](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)中深入瞭解 UMG。 
+Unreal 動畫圖形 (UMG) 是 Unreal 引擎的內建 UI 系統，用來建立功能表和文字方塊等介面。 使用 UMG 所建立的使用者介面是由小工具所組成。 我們將引導您建立新的 widget、將其新增至世界空間，以及使用系統鍵盤作為範例來啟用互動。 您可以在官方的 Unreal 引擎 [檔](https://docs.unrealengine.com/en-US/Engine/UMG/index.html)中深入瞭解 UMG。 
 
 ## <a name="create-a-new-widget"></a>建立新的小工具
 
@@ -27,7 +27,7 @@ Unreal 動畫圖形 (UMG) 是 Unreal 引擎的內建 UI 系統，用來建立功
 
 ![醒目提示和展開文字 widget 元件之階層視窗的螢幕擷取畫面](images/unreal-umg-img-02.png)
 
-- 在 [階層] 或 [設計工具] 視窗中選取 widget，並修改 [詳細資料] 面板中的參數。  在此情況下，我們已新增一些預設的「提示文字」以及當游標停留在文字方塊上時的色調色彩，以提供小工具可供互動的意見反應。  當您與之互動時，文字方塊將會顯示 HoloLens 上的虛擬鍵盤：
+- 在 [階層] 或 [設計工具] 視窗中選取 widget，並修改 [詳細資料] 面板中的參數。  在此情況下，我們新增了一些預設的「提示文字」，以及當您將滑鼠停留在文字方塊上時所顯示的淡色色彩。  當您進行互動時，文字方塊將會顯示 HoloLens 上的虛擬鍵盤：
 
 ![階層視窗中已修改之參數的螢幕擷取畫面](images/unreal-umg-img-03.png)
 
@@ -57,11 +57,14 @@ UMG 小工具通常會從滑鼠接收輸入。  在 HoloLens 或 VR 上，我們
 
 ![反白顯示 widget 互動元件的新動作專案螢幕擷取畫面](images/unreal-umg-img-08.png)
 
-- 在 Widget 互動元件的 [詳細資料] 面板中，將互動距離設定為所需距離、將 **互動來源** 設定為 [ **自訂**]，並針對 [開發] 將 [ **顯示 Debug** ] 設定為 [ **true**]：
+- 在 Widget 互動元件的詳細資料面板中：
+    - 將互動距離設定為您想要的距離值
+    - 將 **互動來源** 設定為 **自訂**
+    - 若為開發，請將 **Show Debug** 設為 **true**：
 
 ![Widget 互動和偵測元件屬性的螢幕擷取畫面](images/unreal-umg-img-09.png)
 
-互動來源的預設值是 "World"，這應該會根據 Widget 互動元件的世界位置傳送 raycasts，但在 AR 和 VR 中似乎不是這樣。  在開發過程中啟用「顯示偵錯工具」和將暫留淡色新增至 widget 很重要，因為這會讓 widget 互動元件執行您所預期的工作。  因應措施是使用自訂來源，並從手光線的事件圖形中設定 raycast。  
+互動來源的預設值是 "World"，這應該會根據 Widget 互動元件的世界位置傳送 raycasts。 在 AR 和 VR 中，就不是這樣。  若要檢查 widget 互動元件是否符合您的預期，請務必啟用 [顯示偵錯工具] 並將暫留淡色新增至 widget。  因應措施是使用自訂來源，並從手光線的事件圖形中設定 raycast。  
 
 在這裡，我們會從事件滴答進行呼叫：
 

@@ -6,20 +6,20 @@ ms.author: v-hferrone
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開發、教材、檔、指南、功能、全息表、遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: d57689e9427ab5877e3afb49b0d19f35df6c47d2
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678937"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609569"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal 中的材質建議
 
-材質可以在 Unreal 引擎中建立或打破效能。 此頁面可作為基本設定的快速入門，您應該使用這些設定才能獲得最佳效能。
+您使用的資料可能會直接影響您的專案在 Unreal 引擎中的執行程度。 此頁面可作為基本設定的快速入門，您應該使用這些設定，以從您的混合現實應用程式取得最佳效能。
 
 ## <a name="using-customizeduvs"></a>使用 CustomizedUVs
 
-如果您需要為您的材質提供 UVs 圖，您應該使用 CustomizedUVs 而不是直接修改材質節點的 UV。 CustomizedUVs 允許在頂點著色器中發生 UV 操作，而不是圖元著色器。 
+如果您需要在您的材質上提供 UV 平鋪，請使用 CustomizedUVs，而不是直接修改材質節點的 UV。 CustomizedUVs 可讓您操作頂點著色器中的 UVs，而不是圖元著色器。
 
 ![Unreal 中的材質設定](images/unreal-materials-img-01c.png)
 
@@ -33,7 +33,7 @@ Unreal 不建議的材質設定[ ![ 中不建議的材質設定 ](images/unreal-
 
 ## <a name="changing-blend-mode"></a>變更 Blend 模式
 
-除非有強原因，否則您應該將 blend 模式設定為不透明。 遮罩和半透明材質很慢。 您可以在 [Unreal 引擎檔](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)中找到更多有關材質的詳細資料。
+除非有強原因，否則建議您將 blend 模式設定為不透明。 遮罩和半透明材質很慢。 您可以在 [Unreal 引擎檔](https://docs.unrealengine.com/Platforms/Mobile/Materials/index.html)中找到更多有關材質的詳細資料。
 
 ![變更 blend 模式](images/unreal-materials-img-02.jpg)
 
@@ -57,7 +57,7 @@ Unreal 不建議的材質設定[ ![ 中不建議的材質設定 ](images/unreal-
 
 ## <a name="optional-settings"></a>選擇性設定
 
-下列設定可能會改善效能，但請注意，這些設定會停用某些功能。 只有在您確定不需要有問題的功能時，才使用這些設定。
+下列設定可能會改善效能，但請注意，這些設定會停用某些功能。 只有在您確定不需要這類功能時，才可使用這些設定。
 
 ![Unreal 中的選擇性材質設定](images/unreal-materials-img-06.jpg)
 
@@ -67,7 +67,7 @@ Unreal 不建議的材質設定[ ![ 中不建議的材質設定 ](images/unreal-
 
 以下不是「設定」，因為它們是與材質相關的最佳做法。
 
-建立參數時，最好盡可能使用「靜態參數」。 靜態參數可用來移除沒有執行時間成本之材質的整個分支。 實例可以有不同的值，因此可以有樣板化著色器設定，而不會遺失效能。 但缺點在於，這會建立許多會導致重新編譯許多著色器的排列。 請儘量減少材質中的靜態參數數目，以及這些靜態參數實際上使用的排列數目。 您可以在 [Unreal 引擎檔](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)中找到轉譯材質參數的詳細資料。
+建立參數時，最好盡可能使用「靜態參數」。 靜態參數可用來移除沒有執行時間成本之材質的整個分支。 實例可以有不同的值，因此可以設定樣板化著色器，而不會遺失效能。 缺點是建立了數個會導致著色器重新編譯的排列。 請嘗試將材質中的靜態參數數目，以及這些靜態參數所使用的排列數目降至最低。 您可以在 [Unreal 引擎檔](https://docs.unrealengine.com/Engine/Rendering/Materials/ExpressionReference/Parameters/index.html#staticswitchparameter)中找到轉譯材質參數的詳細資料。
 
 ![材質設定的最佳作法](images/unreal-materials-img-07.jpg)
 
