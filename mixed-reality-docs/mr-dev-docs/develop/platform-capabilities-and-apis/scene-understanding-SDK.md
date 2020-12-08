@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 7541ab38cd8c90e774614af5ea457e5636ee66fe
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 731a4dfd0b714f22f25c0818de82680d4c576a27
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679896"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761760"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -47,7 +47,7 @@ SceneUnderstanding 需要 Windows SDK 18362 版或更高版本。
 
 因為每個場景會將它的資料儲存在您應用程式的記憶體空間中，所以您可以假設場景物件的所有功能或其內部資料一律會在應用程式的進程中執行。
 
-### <a name="layout"></a>配置
+### <a name="layout"></a>版面配置
 
 若要使用場景理解，瞭解並瞭解執行時間如何以邏輯和實際方式代表元件，可能會很有説明。 場景代表具有特定版面配置的資料，並在維持 pliable 的基礎結構，而不需要進行重大修訂時，才會維持符合未來需求的基礎結構。 場景會藉由儲存所有元件， (一般清單中) 的所有場景物件的所有元件，並透過參考（特定元件參考其他元件）定義階層和組合。
 
@@ -135,9 +135,9 @@ SceneMesh 是一個 SceneComponent，使用三角形清單來近似任意幾何�
 
 #### <a name="winding-order-and-coordinate-systems"></a>纏繞順序和座標系統
 
-場景理解所產生的所有網格都預期會使用順向繞組順序，在右手座標系統中傳回網格。 
+場景理解所產生的所有網格都應該使用順向的纏繞順序，在 Right-Handed 座標系統中傳回網格。 
 
-注意：在191105之前的作業系統組建，可能會有已知的錯誤，其中「世界」網格是以逆時針的纏繞順序傳回，之後也已修正。
+注意：在191105之前的 OS 組建可能會有已知的錯誤，其中「世界」網格以 Counter-Clockwise 的纏繞順序傳回，這會在之後修正。
 
 ### <a name="scenequad"></a>SceneQuad
 
@@ -222,7 +222,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-re-finding-components"></a>元件更新和重新尋找元件
 
-還有另一個函式可在場景中抓取元件，稱為 ***sys.application.findcomponent*** 。 在後續的場景中，此函式可用於更新追蹤物件和尋找它們。 下列程式碼會計算相對於前一個場景的新場景，然後在新場景中找出樓層。
+還有另一個函式可在場景中抓取元件，稱為 **_sys.application.findcomponent_* _。 在後續的場景中，此函式可用於更新追蹤物件和尋找它們。 下列程式碼會計算相對於前一個場景的新場景，然後在新場景中找出樓層。
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +239,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>從場景物件存取網格和四邊形
 
-一旦找到 SceneObjects，您的應用程式很可能會想要存取其所組成之四邊形/網格中所包含的資料。 這項資料是使用 ***四邊形*** 和 ***網格*** 屬性來存取。 下列程式碼將列舉 floor 物件的所有四邊形和網格。
+一旦找到 SceneObjects，您的應用程式很可能會想要存取其所組成之四邊形/網格中所包含的資料。 這項資料是使用 _*_四邊形_*_ 和 _*_網格_*_ 屬性來存取。 下列程式碼將列舉 floor 物件的所有四邊形和網格。
 
 ```cs
 
@@ -263,53 +263,95 @@ foreach (var mesh in firstFloor.Meshes)
 
 ### <a name="dealing-with-transforms"></a>處理轉換
 
-在處理轉換時，場景理解已刻意嘗試配合傳統的3D 場景標記法。 因此，每個場景會限制為單一座標系統，就像是最常見的3D 環境表示一樣。 SceneObjects 每個都會將其位置提供給座標系統內的位置和方向。 如果您的應用程式處理的場景會延展單一來源提供的限制，讓它可以將 SceneObjects 錨定到 SpatialAnchors，或是產生數個場景並將它們合併在一起，但為了簡單起見，我們假設防水場景存在於自己的原點，並由場景所定義的一個來當地語系化。
+在處理轉換時，場景理解已刻意嘗試配合傳統的3D 場景標記法。 因此，每個場景會限制為單一座標系統，就像是最常見的3D 環境表示一樣。 SceneObjects 每個都提供其相對於座標系統的位置。 如果您的應用程式處理的場景會延展單一來源提供的限制，讓它可以將 SceneObjects 錨定到 SpatialAnchors，或是產生數個場景並將它們合併在一起，但為了簡單起見，我們假設防水場景存在於自己的原點，並由場景所定義的一個來當地語系化。
 
-例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 請參閱 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) 的詳細資訊，以取得對應至 Unity 世界來源的 SpatialCoordinateSystem，以及在 `.ToUnity()` 和之間進行轉換的擴充方法 `System.Numerics.Matrix4x4` `UnityEngine.Matrix4x4` 。
+例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 如需有關取得與 Unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) 。
 
 ```cs
-public class SceneRootComponent : MonoBehavior
+private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)
 {
-    public SpatialCoordinateSystem worldOrigin;
-    public Scene scene;
-    SpatialCoordinateSystem sceneOrigin;
-    
-    void Start()
-    {
-        // Initialize a SpatialCoordinateSystem for the scene's node in the system's Spatial Graph.
-        scene.origin = SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
-    }
-    
-    void Update()
-    {
-        // Try to get the current transform of the scene's spatial graph node.
-        // This may not be available, e.g. when tracking has been lost.
-        var sceneToWorld = sceneOrigin.TryGetTransformTo(worldOrigin);
-        if (sceneToWorld.HasValue)
-        {
-            // Convert the transform to Unity numerics and update the game object.
-            var sceneToWorldUnity = sceneToWorld.Value.ToUnity();
-            this.gameObject.transform.SetPositionAndRotation(sceneToWorldUnity.GetColumn(3), sceneToWorldUnity.rotation);
-        }
-    }
+
+      System.Numerics.Matrix4x4? sceneToUnityTransform = System.Numerics.Matrix4x4.Identity;
+
+      Windows.Perception.Spatial.SpatialCoordinateSystem sceneCoordinateSystem = Microsoft.Windows.Perception.Spatial.Preview.SpatialGraphInteropPreview.CreateCoordinateSystemForNode(scene.OriginSpatialGraphNodeId);
+      HolograhicFrameData holoFrameData =  Marshal.PtrToStructure<HolograhicFrameData>(UnityEngine.XR.XRDevice.GetNativePtr());
+      Windows.Perception.Spatial.SpatialCoordinateSystem unityCoordinateSystem = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(holoFrameData.ISpatialCoordinateSystemPtr);
+
+      sceneToUnityTransform = sceneCoordinateSystem.TryGetTransformTo(unityCoordinateSystem);
+
+      if(sceneToUnityTransform != null)
+      {
+          sceneToUnityTransform = ConvertRightHandedMatrix4x4ToLeftHanded(sceneToUnityTransform.Value);
+      }
+      else
+      {
+          return null;
+      }
+
+    return sceneToUnityTransform;
 }
 ```
 
-每一個 `SceneObject` 都有 `Position` 和屬性， `Orientation` 可以用來定位相對於包含之來源的對應內容 `Scene` 。 例如，下列範例假設遊戲是場景根目錄的子系，並指派其區域位置和旋轉以對齊指定的 `SceneObject` ：
+每個都 `SceneObject` 有轉換，然後套用至該物件。 在 Unity 中，我們轉換為右手座標，並將本機轉換指派為：
 
 ```cs
-void SetLocalTransformFromSceneObject(GameObject gameObject, SceneObject sceneObject)
+private System.Numerics.Matrix4x4 ConvertRightHandedMatrix4x4ToLeftHanded(System.Numerics.Matrix4x4 matrix)
 {
-    gameObject.transform.localPosition = sceneObject.Position.ToUnity();
-    gameObject.transform.localRotation = sceneObject.Orientation.ToUnity());
+    matrix.M13 = -matrix.M13;
+    matrix.M23 = -matrix.M23;
+    matrix.M43 = -matrix.M43;
+
+    matrix.M31 = -matrix.M31;
+    matrix.M32 = -matrix.M32;
+    matrix.M34 = -matrix.M34;
+
+    return matrix;
 }
+
+ private void SetUnityTransformFromMatrix4x4(Transform targetTransform, System.Numerics.Matrix4x4 matrix, bool updateLocalTransformOnly = false)
+ {
+    if(targetTransform == null)
+    {
+        return;
+    }
+
+    Vector3 unityTranslation;
+    Quaternion unityQuat;
+    Vector3 unityScale;
+
+    System.Numerics.Vector3 vector3;
+    System.Numerics.Quaternion quaternion;
+    System.Numerics.Vector3 scale;
+
+    System.Numerics.Matrix4x4.Decompose(matrix, out scale, out quaternion, out vector3);
+
+    unityTranslation = new Vector3(vector3.X, vector3.Y, vector3.Z);
+    unityQuat        = new Quaternion(quaternion.X, quaternion.Y, quaternion.Z, quaternion.W);
+    unityScale       = new Vector3(scale.X, scale.Y, scale.Z);
+
+    if(updateLocalTransformOnly)
+    {
+        targetTransform.localPosition = unityTranslation;
+        targetTransform.localRotation = unityQuat;
+    }
+    else
+    {
+        targetTransform.SetPositionAndRotation(unityTranslation, unityQuat);
+    }
+}
+
+// Assume we have an SU object called suObject and a unity equivalent unityObject
+
+System.Numerics.Matrix4x4 converted4x4LocationMatrix = ConvertRightHandedMatrix4x4ToLeftHanded(suObject.GetLocationAsMatrix());
+SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix, true);
+        
 ```
 
 ### <a name="quad"></a>四
 
 四邊形的設計目的是為了簡化2D 放置案例，而且應該將其視為2D 畫布 UX 元素的延伸。 雖然四邊形是 SceneObjects 的元件，而且可以在3D 中轉譯，但四個 Api 本身會假設四邊形是2D 結構。 它們提供的資訊包括範圍、圖形，以及提供用於放置的 Api。
 
-四邊形具有矩形範圍，但代表任意成形的2D 表面。 若要啟用與3D 環境互動之2D 表面上的放置，四邊形提供公用程式以實現這種互動。 目前的場景理解提供兩種 **FindCentermostPlacement** 和 **GetOcclusionMask** 這類函數。 FindCentermostPlacement 是高階 API，可找出四個位置上可放置物件的位置，並且會嘗試找出您的物件的最佳位置，以確保您提供的周框方塊會位於基礎介面上。
+四邊形具有矩形範圍，但代表任意成形的2D 表面。 若要啟用與3D 環境互動之2D 表面上的放置，四邊形提供公用程式以實現這種互動。 目前的場景理解提供兩種這類功能： _ *FindCentermostPlacement** 和 **GetSurfaceMask**。 FindCentermostPlacement 是高階 API，可找出四個位置上可放置物件的位置，並且會嘗試找出您的物件的最佳位置，以確保您提供的周框方塊會位於基礎介面上。
 
 > [!NOTE]
 > 輸出的座標相對於「四個空間」中的四個十字，左上角的 (x = 0，y = 0) ，就如同其他 windows Rect 類型一樣。 使用您自己的物件的來源時，請務必將此納入考慮。 
@@ -372,7 +414,11 @@ mesh.GetVertexPositions(positions);
 
 索引/頂點緩衝區必須 >= 索引/頂點計數，但也可以任意調整大小，以便有效率地重複使用記憶體。
 
-## <a name="developing-with-scene-understandings"></a>使用場景稍微瞭解進行開發
+### <a name="collidermesh"></a>ColliderMesh
+
+場景物件可透過 [網格] 和 [ColliderMeshes] 屬性，提供網格和碰撞的網格資料存取。 這些網格一律會相符，這表示網格屬性的 i'th 索引代表與 ColliderMeshes 屬性的 i'th 索引相同的 geometryh。 如果執行時間/物件支援碰撞器網格，您將會 guarateed 以取得最小的多邊形、最高的順序近似值，以及在您的應用程式使用 colliders 的任何地方使用 ColliderMeshes 的 genrally 良好作法。 如果系統不支援 colliders，則在 ColliderMeshes 中傳回的網格物件將會是與網格減少記憶體限制相同的物件。
+
+## <a name="developing-with-scene-understanding"></a>使用場景理解進行開發
 
 至此，您應該瞭解場景瞭解執行時間和 SDK 的核心構成要素。 大部分的電源和複雜性都是存取模式、與3D 架構的互動，以及可以撰寫在這些 Api 之上的工具，以執行空間規劃、房間分析、流覽、物理等更先進的工作。我們希望在範例中抓住這些範例，建議您以適當的方向引導您的案例。 如果有未解決的範例/案例，請讓我們知道，我們會嘗試記錄/原型您所需的內容。
 
