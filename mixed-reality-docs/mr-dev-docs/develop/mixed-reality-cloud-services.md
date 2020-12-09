@@ -1,6 +1,6 @@
 ---
 layout: LandingPage
-title: Azure 雲端服務
+title: Azure 混合實境雲端服務概觀
 description: 混合實境雲端服務資源。
 author: hferrone
 ms.author: v-haferr
@@ -8,14 +8,14 @@ ms.date: 06/5/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: 640e99637f9cfa1786e1e78ed5cec396748b2f47
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
+ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679687"
+ms.lasthandoff: 12/02/2020
+ms.locfileid: "96526055"
 ---
-# <a name="azure-cloud-services"></a>Azure 雲端服務
+# <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
 ![ Azure Spatial Anchors 影像](../design/images/AzureSpatialAnchors.jpg)
 
