@@ -3,15 +3,15 @@ title: Unity 的輸入移植指南
 description: 瞭解如何在 Unity 中處理 Windows Mixed Reality 的輸入。
 author: thetuvix
 ms.author: alexturn
-ms.date: 03/21/2018
+ms.date: 12/9/2020
 ms.topic: article
 keywords: 輸入、unity、移植
-ms.openlocfilehash: 4ad4b66b8238b3d00142fd14161113c6b912641c
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 053918ec62f83c74655b0d4bb09a2b45b62bfc53
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679092"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925874"
 ---
 # <a name="input-porting-guide-for-unity"></a>Unity 的輸入移植指南
 
@@ -35,16 +35,16 @@ Windows Mixed Reality 支援各種外型規格中的運動控制器，每個控�
 
 為了更妥善地表示這些控制器，您可以針對每個互動來源進行兩種調查：
 
-* 底框 **姿勢** ，代表 HoloLens 所偵測到之掌上的位置，或是持有運動控制器的掌上。
-    * 在沉浸式耳機上，這個姿勢最適合用 **來呈現使用者手** 或 **使用者手中所持有的物件** ，例如寶劍或機槍。
-    * 把手 **位置** ：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
-    * 底 **圖方向的右軸** ：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
-    * 底圖 **方向的向前軸** ：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
-    * 底圖 **方向的向上軸** ：右邊和向前定義所隱含的向上軸。
-    * 您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 **[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替** ) 或透過 Windows 特定 API ( **SourceState. SourcePose. TryGetPosition/旋轉** ，要求底框姿勢) 。
-* **指標姿勢** ，代表指向轉寄之控制器的秘訣。
+* 底框 **姿勢**，代表 HoloLens 所偵測到之掌上的位置，或是持有運動控制器的掌上。
+    * 在沉浸式耳機上，這個姿勢最適合用 **來呈現使用者手** 或 **使用者手中所持有的物件**，例如寶劍或機槍。
+    * 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
+    * 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
+    * 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
+    * 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
+    * 您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 **[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替**) 或透過 Windows 特定 API (**SourceState. SourcePose. TryGetPosition/旋轉**，要求底框姿勢) 。
+* **指標姿勢**，代表指向轉寄之控制器的秘訣。
     * 當您在呈現控制器模型本身時 **指向 UI** 時，最好使用這個姿勢來 raycast。
-    * 目前，指標姿勢只能透過 Windows 特定 API 來使用 ( **sourceState. sourcePose. TryGetPosition/旋轉** ，要求指標姿勢) 。
+    * 目前，指標姿勢只能透過 Windows 特定 API 來使用 (**sourceState. sourcePose. TryGetPosition/旋轉**，要求指標姿勢) 。
 
 這些姿勢座標全都以 Unity 全局座標表示。
 

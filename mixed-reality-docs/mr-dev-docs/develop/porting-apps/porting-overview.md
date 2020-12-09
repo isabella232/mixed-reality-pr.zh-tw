@@ -1,19 +1,19 @@
 ---
-title: 移植總覽
+title: 移植概觀
 description: 概述將現有應用程式帶入混合現實的各種移植選項。
 author: hferrone
 ms.author: v-hferrone
-ms.date: 10/02/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植、unity、中介軟體、引擎、UWP、Win32
-ms.openlocfilehash: 074e0792a5ed43bb56b8f337613234efbd166eb7
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443543"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925828"
 ---
-# <a name="porting-overview"></a>移植總覽
+# <a name="porting-overview"></a>移植概觀
 
 當您將現有專案移植或升級為混合的實際專案時，可能會根據您的應用程式是使用 Unity 或 Unreal 引擎、HoloLens (第一代) 或 HoloLens 2，或 SteamVR 來進行。 此總覽頁面包含我們針對每個平臺和裝置目前的建議-請務必回頭查看這些流程一律會變更。
 

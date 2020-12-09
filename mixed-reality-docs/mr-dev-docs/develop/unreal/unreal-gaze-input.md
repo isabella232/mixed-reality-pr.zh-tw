@@ -3,15 +3,15 @@ title: Unreal 中的注視輸入
 description: 針對 HoloLens 和 Unreal 引擎設定注視輸入的教學課程
 author: hferrone
 ms.author: jacksonf
-ms.date: 06/10/2020
+ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 0a011c3f5a7ad79e83e25c4c95c46d2a04ad555d
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: a11573d732e739068dca8c42dd8688c0705fc5bb
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609499"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925991"
 ---
 # <a name="gaze-input"></a>注視輸入
 
