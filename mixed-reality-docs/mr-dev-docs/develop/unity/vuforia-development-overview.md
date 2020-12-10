@@ -1,23 +1,23 @@
 ---
 title: 使用 Unity 的 Vuforia
-description: 利用 Vuforia 在 Unity 中建立 Windows Mixed Reality 應用程式。
+description: 使用 Vuforia 在 Unity 中建立 Windows Mixed Reality 應用程式。
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia、標記、座標、參考的框架、追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、unity、HoloLens、裝置追蹤、效能模式、Vuforia 開發人員入口網站
-ms.openlocfilehash: 930f23d5bbc4115476c337dcb99f40096039d78f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ecacf4036bfab38eb90782a194c445a83ca623ba
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679667"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010559"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>搭配使用 Vuforia 引擎與 Unity
 
 Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗連接到環境中特定映射和物件的能力。 您可以使用這項功能，在產業企業的機械上重迭引導式逐步指示，或將數位功能和體驗新增至實體產品或遊戲。
 
-為了在開發 AR 體驗時有更大的彈性，Vuforia 引擎提供廣泛的功能和目標。 其中一項最新的功能 Vuforia 模型目標，是商業和產業使用的主要功能。 模型目標可讓應用程式辨識實體物件（例如機器、汽車或玩具），並根據 CAD 或數位3D 模型來進行追蹤。 針對產業用途，這項功能可以提供元件工作者和服務技術人員使用 AR 工作指示，以及在工廠或在現場推出的程式指引。
+Vuforia 引擎提供廣泛的功能和目標，讓您的 AR 開發程式更有彈性。 其中一項最新的功能 Vuforia 模型目標，是商業和產業使用的主要功能。 模型目標可讓應用程式辨識實體物件（例如機器、汽車或玩具），並根據 CAD 或數位3D 模型來進行追蹤。 針對產業用途，這項功能可以提供元件工作者和服務技術人員使用 AR 工作指示，以及在工廠或在現場推出的程式指引。
 
 您可以輕鬆地在 Unity 中設定適用于手機和平板電腦的現有 Vuforia 引擎應用程式，以在 HoloLens 上執行。 您甚至可以使用 Vuforia 引擎讓新的 HoloLens 應用程式 Windows 10 平板電腦，例如 Surface Pro 和 Surface Book。
 
@@ -32,9 +32,9 @@ Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗
 
 ## <a name="getting-started-with-vuforia-engine"></a>開始使用 Vuforia 引擎
 
-若要瞭解如何搭配使用 Vuforia 引擎與 HoloLens，最好的起點是 [Vuforia Engine HoloLens 範例](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (可在 Unity 資產存放區) 取得。 此範例會提供完整的 HoloLens 專案，包括可部署到 HoloLens 的預先設定場景。
+若要瞭解 Vuforia Engine 和 HoloLens，最好的起點是 Unity 資產存放區) 提供的「 [Vuforia 引擎 HoloLens 範例](https://assetstore.unity.com/packages/templates/packs/vuforia-hololens-sample-101553) (。 此範例會提供完整的 HoloLens 專案，包括可部署到 HoloLens 的預先設定場景。
 
-幕後顯示如何使用 Vuforia 映射目標來辨識影像，並使用 HoloLens 體驗中的數位內容加以增強。 Vuforia 引擎 Hololens 範例也包含場景，顯示模型目標的使用量和 HoloLens 上的 VuMarks。 您可以輕鬆地在幕後取代您自己的內容，以試驗如何建立使用 Vuforia 引擎的 HoloLens 應用程式。
+幕後顯示如何使用 Vuforia 映射目標來辨識影像，並使用 HoloLens 體驗中的數位內容加以增強。 Vuforia 引擎 HoloLens 範例也包含場景，顯示模型目標的使用量和 HoloLens 上的 VuMarks。 您可以輕鬆地在幕後取代您自己的內容，以試驗如何建立使用 Vuforia 引擎的 HoloLens 應用程式。
 
 
 
@@ -48,7 +48,7 @@ Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗
 3.  將範例場景新增至組建中的 **場景** **。**
 4.  在 [**組建設定**] 中，按一下 [**新增開啟場景**] 按鈕，將組建平臺切換至 **UWP** 。
 ![image](https://user-images.githubusercontent.com/45470042/89573103-173daa80-d7f8-11ea-9284-931a7b6c913d.png)
-5.  按一下 [ **播放機設定** ] 按鈕。  
+5.  選取 [ **播放機設定** ] 按鈕。  
    * 選取 **UWP** 圖示並展開 [ **XR 設定** ] 區段。
    * 確定已啟用 **支援的虛擬事實** 。    
    * 在 **虛擬實境 sdk** 下，確定：
@@ -71,7 +71,7 @@ Vuforia Engine 為 HoloLens 帶來一項重要的功能，也就是將 AR 體驗
 
 ## <a name="device-tracking-with-vuforia"></a>使用 Vuforia 進行裝置追蹤
 
-[裝置追蹤](https://library.vuforia.com/features/environments/device-tracker-overview.html) 會維持追蹤的時間，即使目標已不在查看中也一樣。 啟用位置裝置追蹤器時，會自動為所有目標啟用此功能。 針對 HoloLens 應用程式，會在 Unity 中自動啟動位置裝置追蹤器。
+[裝置追蹤](https://library.vuforia.com/features/environments/device-tracker-overview.html) 會維持追蹤的時間，即使目標已不在查看中也一樣。 啟用位置裝置追蹤器時，它會自動啟用所有目標。 針對 HoloLens 應用程式，會在 Unity 中自動啟動位置裝置追蹤器。
 
 Vuforia 引擎會自動從相機追蹤和 HoloLens 的空間追蹤中 e-fuses 姿勢，以提供穩定的目標，而不受相機是否看到目標的影響。
 
@@ -87,13 +87,12 @@ Vuforia 引擎會自動從相機追蹤和 HoloLens 的空間追蹤中 e-fuses �
 
 偵測到但不再顯示的目標會回報為 EXTENDED_TRACKED。 在這些情況下，在所有目標上使用的 DefaultTrackableEventHandler 腳本會繼續呈現增強的內容。 開發人員可以藉由執行自訂可追蹤事件處理常式腳本來控制這項行為。
 
-
 ## <a name="performance-mode-with-vuforia-engine"></a>具有 Vuforia 引擎的效能模式 
 
 您可以透過 Vuforia 引擎來管理 HoloLens 上的效能，以達到範圍 AR 的效能，並減少 CPU 上的工作負載。 Vuforia 引擎提供可選取的三種模式：預設值、優化速度，以及優化品質。 
 
 *   MODE_OPTIMIZE_SPEED 可讓您將 HoloLens 裝置上的工作負載降到最低，並非常適合用來擴充 AR 體驗。 建議在應用程式正在追蹤靜態物件/目標的情況下使用。
-*   MODE_DEFAULT 是可用於大部分案例的一般模式。
+*   MODE_DEFAULT 是標準模式，可在大部分的情況下使用。
 *   MODE_OPTIMIZE_QUALITY 更適合用來追蹤您希望挑選的可移動目標或模型目標。
 
 **設定模式**
@@ -112,4 +111,4 @@ Vuforia 引擎會自動從相機追蹤和 HoloLens 的空間追蹤中 e-fuses �
 * [Vuforia 檔：如何安裝 Vuforia Unity 擴充功能](https://library.vuforia.com/articles/Solution/Installing-the-Unity-Extension)
 * [Vuforia 檔：使用 Unity 中的 HoloLens 範例](https://library.vuforia.com/articles/Solution/Working-with-the-HoloLens-sample-in-Unity)
 * [Vuforia 檔： Vuforia 中的裝置追蹤](https://library.vuforia.com/features/environments/device-tracker-overview.html)
-* [Vuforia 檔：畫面播放速率和效能 Optomization](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)
+* [Vuforia 檔：畫面播放速率和效能優化](https://library.vuforia.com/content/vuforia-library/en/articles/Solution/Framerate-Optimization-for-Mixed-Reality-Apps.html)

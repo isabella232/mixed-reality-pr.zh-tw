@@ -6,16 +6,16 @@ ms.author: vladkol
 ms.date: 05/20/2018
 ms.topic: article
 keywords: unity、mixed reality、native、xrdevice、spatialcoordinatesystem、holographicframe、holographiccamera、ispatialcoordinatesystem、iholographicframe、iholographiccamera、getnativeptr、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: a64deb46db82e6d0401a803e45dcbbd854476745
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8dda1152da9705147ca3a057faadb9edd8428df6
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679927"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010589"
 ---
 # <a name="mixed-reality-native-objects-in-unity"></a>Unity 中的混合實境原生物件
 
-[取得 HolographicSpace](../native/getting-a-holographicspace.md) 是每個混合現實應用程式開始接收攝影機資料和轉譯畫面格之前的作用。 在 Unity 中，引擎會為您處理這些步驟，並在其轉譯迴圈中于內部處理全像攝影物件和更新。
+每個混合現實應用程式都會在開始接收攝影機資料和轉譯畫面之前 [取得 HolographicSpace](../native/getting-a-holographicspace.md) 。 在 Unity 中，引擎會為您處理這些步驟，並在其轉譯迴圈中處理全像攝影物件和內部更新。
 
 不過，在 advanced 案例中，您可能需要取得基礎原生物件的存取權，例如 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 和目前的 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>。 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine. XR. XRDevice</a> 是提供這些原生物件存取權的物件。
 
@@ -49,13 +49,13 @@ HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeDa
 
 ### <a name="unmarshaling-native-pointers"></a>封送原生指標
 
-如果您使用的是 [MixedReality](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) ，您可以使用方法，從原生指標建立 managed 物件 `FromNativePtr()` ：
+如果您使用的是 [MixedReality DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)，您可以使用方法，從原生指標建立 managed 物件 `FromNativePtr()` ：
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
 ```
 
-否則，請使用 `Marshal.GetObjectForIUnknown()` 並轉換成所需的類型：
+否則，請使用 `Marshal.GetObjectForIUnknown()` 並轉換成您想要的類型：
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
@@ -96,9 +96,10 @@ namespace NumericsConversion
 > [!NOTE]
 > 變更透過 HolographicFrameNativeData 接收之原生物件的狀態，可能會導致無法預期的行為和轉譯成品，特別是當 Unity 也有相同狀態的原因。  例如，您不應該呼叫 HolographicFrame UpdateCurrentPrediction，否則 Unity 以該畫面格呈現的姿勢預測將會與 Windows 預期的姿勢不同步，這 [會減少全](../platform-capabilities-and-apis/hologram-stability.md)像全像的情況。
 
-當您在原生外掛程式或 c # 程式碼中進行轉譯或偵錯工具時，您可以使用 HolographicFrameNativeData 中的資料來存取原生介面。 
+如果您需要存取原生介面以進行轉譯或偵錯工具，請使用原生外掛程式或 c # 程式碼中 HolographicFrameNativeData 的資料。 
 
 以下範例示範如何使用 HolographicFrameNativeData 取得目前框架的 photon 時間預測。 
+
 ```cs
 using System;
 using System.Runtime.InteropServices;

@@ -1,24 +1,24 @@
 ---
 title: 元素週期表
-description: 專案的定期資料表是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式，您可以在其中學習如何使用物件集合，在3D 空間中設定物件陣列，以及各種表面類型。
+description: 專案的定期資料表是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 了解如何使用物件集合，透過各種介面類型在 3D 空間中配置物件陣列。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4b85631fb044ee0b24c003f7808fd0455b87deec
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677677"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010179"
 ---
 # <a name="periodic-table-of-the-elements"></a>元素週期表
 
 >[!NOTE]
 >本文討論我們在 [混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity)中建立的探索範例，這是我們分享學習的地方，並提供混合現實應用程式開發的建議。 我們的設計相關文章和程式碼將隨著我們進行新探索而演進。
 
-專案的[定期資料表](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 透過此專案，您可以瞭解如何使用 **[物件集合](../../design/object-collection.md)**，在3d 空間中配置具有各種介面類別型的物件陣列。 同時瞭解如何建立互動物件，以回應 HoloLens 的標準輸入。 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
+專案的[定期資料表](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 瞭解如何使用 **[物件集合](../../design/object-collection.md)**，在3d 空間中配置具有各種介面類別型的物件陣列。 同時瞭解如何建立互動物件，以回應 HoloLens 的標準輸入。 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
 
 ![Elements 應用程式的期間資料表](images/640px-periodictable-hero.jpg)
 
@@ -33,7 +33,7 @@ ms.locfileid: "94677677"
 
 ## <a name="background"></a>背景
 
-在我第一次體驗 HoloLens 之後，定期資料表應用程式就是我知道我想要在混合現實中進行實驗的概念。 由於每個專案都有許多以文字顯示的資料點，因此我認為在3D 空間中探索印刷樣式組合是很重要的主題。 能夠以視覺化方式呈現專案的 electron 模型是這個專案的另一個有趣的部分。
+在我第一次體驗 HoloLens 之後，我知道我想要在混合的情況下實驗定期資料表應用程式。 由於每個專案都有許多以文字顯示的資料點，因此我認為在3D 空間中探索印刷樣式組合是很重要的主題。 讓使用者有機會將元素的 electron 模型視覺化是此專案的另一個有趣部分。
 
 ## <a name="design"></a>設計
 
@@ -49,19 +49,19 @@ ms.locfileid: "94677677"
 ![原型](images/640px-periodictable-prototypes.jpg)<br>
 *互動原型*
 
-使用者可以透過使用表格底部的按鈕來變更介面型別，它們可以在平面、圓柱圖、球體圖和散佈圖之間切換。
+使用者可以透過使用表格底部的按鈕來變更介面類別型-它們可以在平面、圓柱圖、球體圖和散佈圖之間切換。
 
 ## <a name="common-controls-and-patterns-used-in-this-app"></a>此應用程式中使用的通用控制項和模式
 
 ### <a name="interactable-object-button"></a>互動物件 (按鈕) 
 
-[互動物件](../../design/interactable-object.md) 是可回應基本 HoloLens 輸入的物件。 它是以預製專案/腳本的形式提供，您可以輕鬆地將它套用到任何物件。 例如，您可以在場景中製作咖啡杯互動，並回應像是注視、碰點、導覽和操作手勢等輸入。 [深入了解](../../design/interactable-object.md)
+[互動物件](../../design/interactable-object.md) 是物件，可回應基本的 HoloLens 輸入。 它是以預製專案/腳本的形式提供，您可以輕鬆地將它套用到任何物件。 例如，您可以在場景中製作咖啡杯互動，並回應像是注視、碰點、導覽和操作手勢等輸入。 [深入了解](../../design/interactable-object.md)
 
 ![nteractable 物件](images/640px-periodictable-interactableobject.jpg)
 
 ### <a name="object-collection"></a>物件集合
 
-[物件集合](../../design/object-collection.md) 是一個物件，可協助您配置各種不同圖形中的多個物件。 它支援平面、圓柱、球體和散佈圖。 您可以設定其他屬性，例如 radius、資料列數目和間距。 [深入了解](../../design/object-collection.md)
+[物件集合](../../design/object-collection.md) 是一種物件，可協助您配置各種不同圖形中的多個物件。 它支援平面、圓柱、球體和散佈圖。 您可以設定其他屬性，例如 radius、資料列數目和間距。 [深入了解](../../design/object-collection.md)
 
 ![物件集合](images/640px-periodictable-collections.jpg)
 

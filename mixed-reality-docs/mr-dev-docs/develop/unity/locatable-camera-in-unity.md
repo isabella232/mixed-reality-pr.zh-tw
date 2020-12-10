@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 相片、影片、hololens、攝影機、unity、定位、PVC、相片攝影機、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、網路攝影機、相片拍攝、影片捕獲
-ms.openlocfilehash: c41ff88650da4aa6dc0d98c05b1b881362123a4f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678597"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010099"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity 中的定位相機
 
@@ -19,10 +19,10 @@ ms.locfileid: "94678597"
 
 必須為應用程式宣告「網路攝影機」功能才能使用 [相機](../platform-capabilities-and-apis/locatable-camera.md)。
 1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定] 頁面，移至播放機設定
-2. 按一下 [Windows 存放區] 索引標籤
+2. 選取 [Windows 存放區] 索引標籤
 3. 在 [發佈設定 > 功能] 區段中，檢查 **網路** 攝影機和 **麥克風** 功能
 
-攝影機一次只能有一種操作。 若要判斷 (相片、影片或無) 相機目前所在的模式，您可以檢查 UnityEngine. XR。
+攝影機一次只能有一種操作。 您可以使用 UnityEngine. XR 檢查相機目前所在的模式。 可用的模式為 [相片]、[影片] 或 [無]。
 
 ## <a name="photo-capture"></a>相片捕獲
 
@@ -33,13 +33,13 @@ ms.locfileid: "94678597"
 1. 建立 *PhotoCapture* 物件
 2. 使用您想要的設定來建立 *CameraParameters* 物件
 3. 透過 *StartPhotoModeAsync* 啟動相片模式
-4. 取得所需的相片
+4. 拍攝您想要的相片
     *  (選擇性) 與該圖片互動
 5. 停止相片模式並清除資源
 
 ### <a name="common-set-up-for-photocapture"></a>PhotoCapture 的一般設定
 
-針對這三種用途，請從上述的前3個步驟開始
+針對這三種用途，請從上述的前三個步驟開始
 
 一開始先建立 *PhotoCapture* 物件
 
@@ -70,7 +70,7 @@ void OnPhotoCaptureCreated(PhotoCapture captureObject)
    }
 ```
 
-最後，您也會使用此處所提供的相同清除程式碼
+最後，您也會使用此處提供的相同清除程式碼
 
 ```cs
 void OnStoppedPhotoMode(PhotoCapture.PhotoCaptureResult result)
@@ -124,9 +124,9 @@ void OnCapturedPhotoToDisk(PhotoCapture.PhotoCaptureResult result)
 
 ### <a name="capture-a-photo-to-a-texture2d"></a>將相片拍攝至 Texture2D
 
-將資料捕獲到 Texture2D 時，此程式非常類似于捕捉至磁片。
+將資料捕捉至 Texture2D 時，此程式類似于捕捉至磁片。
 
-遵循上述的設定程式。
+依照上述的安裝程式進行操作。
 
 在 *OnPhotoModeStarted* 中，將框架捕獲到記憶體。
 
@@ -205,7 +205,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 **命名空間：** *UnityEngine. XR*<br>
 **類型：** *VideoCapture*
 
-*VideoCapture* 函式與 *PhotoCapture* 的功能非常類似。 唯一的兩個差異是您必須指定每秒的畫面格 (FPS) 值，而且您只能將磁片直接儲存為磁片磁碟機。 使用 *VideoCapture* 的步驟如下：
+*VideoCapture* 的功能類似于 *PhotoCapture*。 唯一的兩個差異是您必須指定每秒的畫面格 (FPS) 值，而且您只能將磁片直接儲存為磁片磁碟機。 使用 *VideoCapture* 的步驟如下：
 1. 建立 *VideoCapture* 物件
 2. 使用您想要的設定來建立 *CameraParameters* 物件
 3. 透過 *StartVideoModeAsync* 啟動影片模式
@@ -277,7 +277,7 @@ void OnStartedRecordingVideo(VideoCapture.VideoCaptureResult result)
    }
 ```
 
-稍後，您會想要停止錄製。 例如，計時器或使用者輸入可能會發生這種情況。
+在稍後，您會想要使用計時器或使用者輸入來停止錄製。
 
 ```cs
 // The user has indicated to stop recording
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 接下來，您可以繼續進行下一個主題：
+如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 您可以從這裡繼續前往下一個主題：
 
 > [!div class="nextstepaction"]
 > [對焦點](focus-point-in-unity.md)

@@ -6,22 +6,22 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、追蹤遺失、追蹤遺失影像、輪詢、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 52b81069e6b9f94a2a6a4fb552be4234cf43d1f0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678417"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010049"
 ---
 # <a name="tracking-loss-in-unity"></a>Unity 中的追蹤遺失
 
-當裝置無法在世界中找到自己的裝置時，應用程式會遇到「追蹤遺失」。 根據預設，Unity 將會暫停更新迴圈，並向使用者顯示啟動顯示映射。 當重新開機追蹤時，啟動顯示映射將會消失，而且更新迴圈會繼續進行。
+當裝置無法在世界中找到自己的裝置時，應用程式會遇到「追蹤遺失」。 根據預設，Unity 將會暫停更新迴圈，並在每次追蹤遺失時向使用者顯示啟動顯示映射。 一旦重新開機追蹤之後，啟動顯示映射就會消失，而且更新迴圈會繼續進行。
 
 或者，使用者可以退出宣告設定，以手動方式處理這項轉換。 如果沒有執行任何動作來處理，則所有內容在追蹤遺失期間都會變成主體鎖定。
 
 ## <a name="default-handling"></a>預設處理
 
-根據預設，應用程式的更新迴圈以及所有訊息和事件都會在追蹤遺失期間停止。 如此一來，使用者就會看到一個影像。 您可以從 [編輯->設定->播放程式]、按一下 [啟動顯示影像]，然後設定全像攝影追蹤損失影像來自訂此映射。
+根據預設，更新迴圈和所有訊息和事件將會在追蹤遺失期間停止。 如此一來，使用者就會看到一個影像。 您可以從 [編輯->設定->播放程式]、按一下 [啟動顯示影像]，然後設定全像攝影追蹤損失影像來自訂此映射。
 
 ## <a name="manual-handling"></a>手動處理
 
@@ -31,13 +31,13 @@ ms.locfileid: "94678417"
 **類型：** *WorldManager*
 
 * 全域管理員會公開事件，以偵測遺失/取得的追蹤 (*WorldManager OnPositionalLocatorStateChanged*) 和屬性，以查詢目前狀態 (*WorldManager 的狀態*) 
-* 當追蹤狀態為 [未啟用] 時，即使使用者轉譯，相機也不會在虛擬環境中轉譯。 這表示，物件將不再對應到任何實體位置，而且全部都會被鎖定。
+* 當追蹤狀態為非作用中時，即使使用者翻譯，相機也不會在虛擬環境中轉譯。 物件不會再對應到任何實體位置，而且會顯示為已鎖定主體。
 
-處理自己的追蹤變更時，您必須輪詢每個框架的狀態屬性，或處理 *OnPositionalLocatorStateChanged* 事件。
+處理您自己的追蹤變更時，您必須輪詢每個框架的狀態屬性，或處理 *OnPositionalLocatorStateChanged* 事件。
 
 ### <a name="polling"></a>輪詢
 
-最重要的狀態是 *PositionalLocatorState* ，這表示追蹤功能完全正常運作。 任何其他狀態都只會導致主要攝影機的旋轉差異。 例如：
+最重要的狀態是 *PositionalLocatorState*，這表示追蹤功能完全正常運作。 任何其他狀態都只會導致主要攝影機的旋轉差異。 例如：
 
 ```cs
 void Update()
@@ -60,7 +60,7 @@ void Update()
 
 ### <a name="handling-the-onpositionallocatorstatechanged-event"></a>處理 OnPositionalLocatorStateChanged 事件
 
-另外還有更方便的，您也可以訂閱 *OnPositionalLocatorStateChanged* 來處理轉換：
+更方便的一點是，您也可以訂閱 *OnPositionalLocatorStateChanged* 來處理轉換：
 
 ```cs
 void Start()

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 20e2b8d4b8a18f38e72db7889a5d00cf15bfc0eb
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679887"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010569"
 ---
 # <a name="voice-input-in-unity"></a>Unity 中的語音輸入
 
@@ -27,9 +27,9 @@ KeywordRecognizer (兩種 PhraseRecognizers 類型的其中一種) ，您的應�
 
 ## <a name="enabling-the-capability-for-voice"></a>啟用語音的功能
 
-您必須為應用程式宣告 **麥克風** 功能，以利用語音輸入。
+必須為應用程式宣告 **麥克風** 功能，才能使用語音輸入。
 1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定
-2. 按一下 [Windows 市存放區] 索引標籤
+2. 選取 [Windows 存放區] 索引標籤
 3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
 
 ## <a name="phrase-recognition"></a>片語辨識
@@ -58,7 +58,7 @@ KeywordRecognizer keywordRecognizer;
 Dictionary<string, System.Action> keywords = new Dictionary<string, System.Action>();
 ```
 
-現在將關鍵字加入至字典 (例如，在 Start ( # A2 方法) 內。 在此範例中，我們要新增 "activate" 關鍵字：
+現在將關鍵字加入至字典，例如，在 Start ( # A1 方法中。 在此範例中，我們要新增 "activate" 關鍵字：
 
 ```
 //Create keywords for keyword recognizer
@@ -147,7 +147,7 @@ grammarRecognizer.Start();
 **命名空間：** *UnityEngine*<br>
 **類型**： *DictationRecognizer*、 *SpeechError*、 *SpeechSystemStatus*
 
-使用 DictationRecognizer 將使用者的語音轉換成文字。 DictationRecognizer 會公開 [聽寫](../../design/voice-input.md#dictation) 功能，並支援註冊和接聽假設和片語完成的事件，讓您可以在使用者說話和之後，將意見反應提供給您的使用者。 開始 ( # A1 並停止 ( # A3 方法，分別啟用和停用聽寫辨識。 完成辨識器之後，應該使用 Dispose ( # A1 方法來處置它所使用的資源。 如果未在這之前釋出這些資源，它會在垃圾收集期間自動釋出這些資源。
+使用 DictationRecognizer 將使用者的語音轉換成文字。 DictationRecognizer 會公開 [聽寫](../../design/voice-input.md#dictation) 功能，並支援註冊和接聽假設和片語完成的事件，讓您可以在使用者說話和之後，將意見反應提供給您的使用者。 開始 ( # A1 並停止 ( # A3 方法，分別啟用和停用聽寫辨識。 完成辨識器之後，應該使用 Dispose ( # A1 方法來處置它所使用的資源。 如果未在這之前釋出這些資源，它會在垃圾收集期間自動釋放這些資源。
 
 開始使用聽寫只需要幾個步驟：
 1. 建立新的 DictationRecognizer
@@ -156,9 +156,9 @@ grammarRecognizer.Start();
 
 ### <a name="enabling-the-capability-for-dictation"></a>啟用聽寫功能
 
-除了上述的「麥克風」功能之外，您必須為應用程式宣告「網際網路用戶端」功能，以利用聽寫。
+您必須為應用程式宣告「網際網路用戶端」功能（以及上面所述的「麥克風」功能），以利用聽寫。
 1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定] 頁面，移至播放機設定
-2. 按一下 [Windows 市存放區] 索引標籤
+2. 選取 [Windows 存放區] 索引標籤
 3. 在 [發佈設定 > 功能] 區段中，檢查 **InternetClient** 功能
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer
@@ -251,7 +251,7 @@ private void DictationRecognizer_DictationError(string error, int hresult)
 }
 ```
 
-一旦您已訂閱並處理您感興趣的聽寫事件之後，請啟動聽寫辨識器以開始接收事件。
+當您訂閱並處理您所關心的聽寫事件之後，請啟動聽寫辨識器以開始接收事件。
 
 ```
 dictationRecognizer.Start();
@@ -269,9 +269,9 @@ dictationRecognizer.Dispose();
 
 **提示**
 * 開始 ( # A1 並停止 ( # A3 方法，分別啟用和停用聽寫辨識。
-* 完成辨識器之後，必須使用 Dispose ( # A1 方法處置，以釋放其使用的資源。 如果未在這之前釋出這些資源，它會在垃圾收集期間自動釋出這些資源。
+* 完成辨識器之後，必須使用 Dispose ( # A1 方法處置，以釋放其使用的資源。 如果未在這之前釋出這些資源，它會在垃圾收集期間自動釋放這些資源。
 * 在設定的一段時間後發生超時。 您可以檢查 DictationComplete 事件中的這些超時。 有兩個需要注意的超時：
-   1. 如果辨識器啟動，但在前五秒內未收到任何音訊，則會超時。
+   1. 如果辨識器啟動，但在前五秒沒有聽到任何音訊，則會超時。
    2. 如果辨識器已指定結果，但接著會聽到20秒的無回應，則會超時。
 
 ## <a name="using-both-phrase-recognition-and-dictation"></a>使用片語辨識和聽寫

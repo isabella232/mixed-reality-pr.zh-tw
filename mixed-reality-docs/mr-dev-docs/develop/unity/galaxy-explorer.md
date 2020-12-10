@@ -6,18 +6,19 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: a58d07cd50679154fe68d3b8b7d424ea6cfbf39e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678617"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010299"
 ---
 # <a name="galaxy-explorer"></a>星系探險
 
 **您分享您的想法。我們正在共用程式碼。**
 
-Galaxy Explorer 專案已準備就緒。 您與社群分享了您的想法，選擇應用程式，觀看小組建置它，並可立即取得原始程式碼。 如果您有裝置，則也可以從適用于 Microsoft HoloLens 的 Windows 市集中下載 Galaxy Explorer 專案。
+Galaxy Explorer 專案已準備就緒。 您已與您分享您的想法、選擇應用程式、監看 team build，現在您可以取得原始程式碼。 如果您有裝置，則可以從 Windows 市集中下載 Microsoft HoloLens 的 [Galaxy Explorer] 專案。
+
 >[!TIP]
 >[取得](https://github.com/Microsoft/GalaxyExplorer) GitHub 上的程式碼
 
@@ -92,7 +93,7 @@ Microsoft HoloLens 的產業有大量的相關想法，可讓您瞭解全像電�
 ![Galaxy Explorer 開發小組](images/syiteampic.jpg)<br>
 *Galaxy Explorer 開發小組*
 
-我們已瞭解組建正確的團隊是我們可以進行的最重要投資之一。 我們決定針對您熟悉該開發模型的遊戲 studio 進行組織。 我們選擇有11個核心小組成員來控制範圍，因為我們有固定的時間範圍 (在2016年3月30日之前，建立一些很酷的專案) 。
+我們已瞭解建立正確的團隊是我們最重要的投資之一，也就是針對您熟悉該開發模型的遊戲 studio 進行組織。 我們選擇有11個核心小組成員來控制範圍，因為我們有固定的時間範圍， (在2016年3月30日) 之前建立一些很酷的專案。
 
 針對此專案，我們開始使用生產者、Jessica 誰進行了規劃、審查進度，以及將事物保持在每天執行。 她是一個粉紅色的頭髮。 我們有 (Jon) 的設計主管，以及 (Peter) 的資深設計人員。 他們保有了 Galaxy Explorer 的創意願景。 Jon 是前一個資料列中的眼鏡，Peter 是右邊的第二個。
 
@@ -100,9 +101,9 @@ Microsoft HoloLens 的產業有大量的相關想法，可讓您瞭解全像電�
 
 我們一開始有四個演出者：概念演出者 (Jedd，第二個是從上一頁的) 開始，一個是從背面的) 開始，一個建模者 (說，第三個則是技術演出者 (Alex () # A7 和 animator (Steve (最左方的人) 。 這兩個方法都不會這麼做，但它們是其主要責任。
 
-我們每天都有一個全職的測試人員-Lena –他每天測試組建、設定組建評論，以及在上線時檢查功能。 雖然我們一直都在查看組建，但每個人都經常進行測試。 Lena 是 leather 夾克滾輪的人。
+我們每天都有一個全職測試人員-Lena-誰每天測試組建、設定組建評論，以及在線上時複習功能。 雖然我們一直都在查看組建，但每個人都經常進行測試。 Lena 是 leather 夾克滾輪的人。
 
-我們是 Microsoft 的大型 studio 的一部分， (將小組視為非遊戲開發) 。 還有其他許多人同時參與–我們在整個專案中經常長處我們的藝術總監、音訊工程師和 studio 領導地位，但是這些人都是與我們更廣大團隊擁有的其他專案共用資源。
+我們是 Microsoft 的大型 studio 的一部分， (將小組視為非遊戲開發) 。 有許多其他人也會參與，我們在整個專案中經常長處我們的藝術總監、音訊工程師和 studio 領導地位，但是這些人已與更廣大團隊的其他專案共用資源。
 
 ## <a name="see-also"></a>另請參閱
 * [案例研究-在混合式事實下建立 galaxy](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)

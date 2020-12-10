@@ -1,24 +1,24 @@
 ---
 title: Unity 中的持續性
-description: 持續性可讓您的使用者在想要的任何地方釘選個別的全像全像全半商店或工作區，然後在應用程式的許多用途之後找出它。
+description: 持續性可讓您的使用者在想要的地方釘選個別的全像影像，然後在應用程式的許多用途之後找出它。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens、持續性、Unity、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: cff7f05a5a5695ae8e379ed681c3b7320622968c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: d74f9c0a118c1886037c564073742ebedc7d0146
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678527"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010439"
 ---
 # <a name="persistence-in-unity"></a>Unity 中的持續性
 
 **命名空間：** *UnityEngine. XR*<br>
 **類別：** *WorldAnchorStore*
 
-WorldAnchorStore 是建立全像攝影體驗的關鍵，也就是在應用程式的各個實例上，全像地方都有特定的真實世界位置。 這可讓您的使用者在想要的任何地方釘選個別的全像全像全像全半商店或工作區，然後在您應用程式的許多用途之後找出它。
+WorldAnchorStore 是建立全像攝影體驗的關鍵，也就是在應用程式的各個實例上，全像地方都有特定的真實世界位置。 然後，使用者可以在想要的任何地方釘選個別的全像
 
 ## <a name="how-to-persist-holograms-across-sessions"></a>如何跨會話保存全息
 
@@ -26,7 +26,7 @@ WorldAnchorStore 可讓您跨會話保存 WorldAnchor 的位置。 若要實際�
 
 若要從先前的會話載入全息影像：
 1. 取得 WorldAnchorStore
-2. 載入與全球錨點相關的應用程式資料，以提供您世界錨點的識別碼
+2. 載入與世界錨點相關的應用程式資料，以提供您世界錨點的識別碼
 3. 從識別碼載入世界錨點
 
 若要在未來的會話中儲存影像：
@@ -36,7 +36,7 @@ WorldAnchorStore 可讓您跨會話保存 WorldAnchor 的位置。 若要實際�
 
 ### <a name="getting-the-worldanchorstore"></a>取得 WorldAnchorStore
 
-我們會想要保留 WorldAnchorStore 的參考，讓我們知道當我們想要執行作業時，我們已經準備好了。 因為這是非同步呼叫，可能會在啟動時立即呼叫
+您會想要保留 WorldAnchorStore 的參考，讓您知道它準備好執行作業的時間。 因為這是非同步呼叫，可能會在啟動時立即執行，您想要呼叫：
 
 ```
 WorldAnchorStore.GetAsync(StoreLoaded);
@@ -55,7 +55,7 @@ private void StoreLoaded(WorldAnchorStore store)
 
 ### <a name="saving-a-worldanchor"></a>儲存 WorldAnchor
 
-為了節省時間，我們只需要命名要儲存的內容，並將它傳遞到我們要儲存的 WorldAnchor 中。 注意：嘗試將兩個錨點儲存至相同的字串將會 (存放區失敗。Save 會傳回 false) 。 您需要先刪除先前的儲存，然後再儲存新的儲存：
+為了節省時間，我們只需要命名要儲存的內容，並將它傳遞到我們要儲存的 WorldAnchor 中。 注意：嘗試將兩個錨點儲存至相同的字串將會 (存放區失敗。Save 會傳回 false) 。 儲存新的儲存之前，請先刪除先前的儲存：
 
 ```
 private void SaveGame()
@@ -109,7 +109,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 接下來，您可以繼續進行下一個建置組塊：
+如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
 
 > [!div class="nextstepaction"]
 > [空間對應](spatial-mapping-in-unity.md)

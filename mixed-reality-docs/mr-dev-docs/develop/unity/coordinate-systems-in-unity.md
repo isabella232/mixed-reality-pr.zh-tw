@@ -1,17 +1,17 @@
 ---
 title: Unity 中的座標系統
-description: 瞭解如何在 Unity 中打造站上、站上、房間規模和世界級混合現實體驗。
+description: 瞭解如何在 Unity 中打造站上、站上、會議室規模和世界級混合現實體驗。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、僅限方向、固定大小、固定規模、會議室規模、世界規模、360度、卡上、站上、房間、世界、縮放、位置、方向、Unity、錨定、空間錨點、世界錨點、全球鎖定、世界鎖定、內文鎖定、內文鎖定、追蹤損失、locatability、界限、recenter、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 92b132bb75e88711fb4bf9fda3dee5b778a0be6e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678677"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010279"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity 中的座標系統
 
@@ -24,7 +24,7 @@ Windows Mixed Reality 透過房間規模的應用程式，支援橫跨各種 [�
 **命名空間：** *UnityEngine. XR*<br>
 **類型：** *XRDevice*
 
-若要建立 **僅限方向** 或內部 **規模的體驗**，您必須將 Unity 設定為「固定追蹤空間」類型。 這會設定 Unity 的全局座標系統，以追蹤 [固定的參考框架](../../design/coordinate-systems.md#spatial-coordinate-systems)。 在「固定追蹤」模式中，放在「相機」預設位置前方之編輯器中的內容 (轉寄是-Z) 將會在應用程式啟動時出現在使用者前面。
+若要建立 **僅限方向** 或內部 **規模的體驗**，您必須將 Unity 設定為「固定追蹤空間」類型。 固定追蹤空間會設定 Unity 的全局座標系統，以追蹤 [固定的參考框架](../../design/coordinate-systems.md#spatial-coordinate-systems)。 在「固定追蹤」模式中，放在「相機」預設位置前方之編輯器中的內容 (轉寄是-Z) 將會在應用程式啟動時出現在使用者前面。
 
 ```cs
 XRDevice.SetTrackingSpaceType(TrackingSpaceType.Stationary);
@@ -52,7 +52,7 @@ InputTracking.Recenter();
 
 若要獲得 **大規模** 或 **房間規模的體驗**，您必須將內容放在地面的相對位置。 您可以使用 **[空間階段](../../design/coordinate-systems.md#spatial-coordinate-systems)**（代表使用者定義的樓層層級來源和選擇性的空間界限），在第一次執行期間設定使用者的樓層。
 
-若要確保 Unity 在地面層級進行全局座標系統操作，您可以將 Unity 設定為 RoomScale 追蹤空間類型，並確定設定成功：
+為了確保 Unity 在地面層級的全局座標系統運作，您可以設定並測試 Unity 是否使用 RoomScale 追蹤空間類型：
 
 ```cs
 if (XRDevice.SetTrackingSpaceType(TrackingSpaceType.RoomScale))
@@ -65,16 +65,17 @@ else
 }
 ```
 * 如果 SetTrackingSpaceType 傳回 true，表示 Unity 已成功切換其全局座標系統，以追蹤 [參考的階段框架](../../design/coordinate-systems.md#spatial-coordinate-systems)。
-* 如果 SetTrackingSpaceType 傳回 false，則 Unity 無法切換至參考的階段框架，可能是因為使用者尚未在其環境中設定。 這並不常見，但如果階段是在不同的房間內設定，而裝置已移至目前的房間，而沒有使用者設定新的階段，就可能發生這種情況。
+* 如果 SetTrackingSpaceType 傳回 false，則 Unity 無法切換至參考的階段框架，可能是因為使用者未在其環境中設定 floor。 雖然錯誤傳回值並不常見，但如果階段是在不同的房間內設定的，而且裝置會移至目前的房間，而沒有使用者設定新的階段，就可能發生此情況。
 
-一旦您的應用程式成功設定 RoomScale 追蹤空間類型，放在 y = 0 平面上的內容就會出現在樓層上。  (0、0、0) 的原點將會是使用者在房間設定期間勇敢面對考驗的特定位置，而-Z 代表在安裝期間所面對的正向方向。
+一旦您的應用程式成功設定 RoomScale 追蹤空間類型，放在 y = 0 平面上的內容就會出現在樓層上。 0、0、0的原點將是使用者在房間設定期間勇敢面對考驗的特定位置，而-Z 代表在安裝期間所面對的順向方向。
 
 **命名空間：** *UnityEngine。 XR*<br>
 **類型：** *界限*
 
-在腳本程式碼中，您可以呼叫 UnityEngine 的 TryGetGeometry 方法，以取得界限多邊形，並指定 TrackedArea 的界限類型。 如果使用者定義了界限 (您會收到一份頂點) 清單，您知道可以安全地將 **房間規模的體驗** 提供給使用者，讓他們可以在您所建立的場景周圍四處進行。
+在腳本中，您可以呼叫 UnityEngine 的 TryGetGeometry 方法，以取得界限多邊形，並指定 TrackedArea 的界限類型。 如果使用者定義了界限， (您取得頂點) 的清單，就可以安全地將 **房間規模的體驗** 提供給使用者，讓他們可以在您建立的場景周圍四處進行。
 
-請注意，當使用者進行方法時，系統會自動呈現界限。 您的應用程式不需要使用此多邊形來呈現界限本身。 不過，您可以選擇使用此界限多邊形來配置場景物件，以確保使用者可以在不 teleporting 的情況下，實際觸及這些物件：
+> [!NOTE]
+> 當使用者進行方法時，系統會自動呈現界限。 您的應用程式不需要使用此多邊形來呈現界限本身。 不過，您可以選擇使用此界限多邊形來配置場景物件，以確保使用者可以在不 teleporting 的情況下，實際觸及這些物件：
 
 ```cs
 var vertices = new List<Vector3>();
@@ -89,7 +90,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **命名空間：** *UnityEngine. XR*<br>
 **類型：** *WorldAnchor*
 
-若要在 HoloLens 上讓使用者穿梭超過5個度量的真實 **世界規模體驗** ，您將需要新的技術，而不是用於會議室規模的體驗。 您將使用的一項重要技巧是建立 [空間錨點](../../design/coordinate-systems.md#spatial-anchors) ，以在實體世界中精確地鎖定全像地理位置的叢集，而不論使用者漫遊的程度為何，然後 [在後續的會話中再次尋找這些影像](../../design/coordinate-systems.md#spatial-anchor-persistence)。
+若要在 HoloLens 上讓使用者穿梭超過5個度量的真實 **世界規模體驗** ，您將需要新的技術，而不是用於會議室規模的體驗。 您將使用的一項重要技巧是建立 [空間錨點](../../design/coordinate-systems.md#spatial-anchors) ，以在實體世界中精確地鎖定大量的全像位置，而不論使用者漫遊的程度為何，然後 [在後續的會話中再次找出這些影像](../../design/coordinate-systems.md#spatial-anchor-persistence)。
 
 在 Unity 中，您可以藉由將 **WorldAnchor** Unity 元件新增至 GameObject 來建立空間錨點。
 
@@ -101,7 +102,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-就這麼簡單！ 此遊戲物件現在會錨定在實體世界中的目前位置，您可能會看到其 Unity 全局座標在一段時間後會稍微調整，以確保實體對齊。 使用 [持續](persistence-in-unity.md) 性，在未來的應用程式會話中再次尋找此錨定的位置。
+這樣就完成了！ 此遊戲物件現在會錨定在實體世界中的目前位置，您可能會看到其 Unity 全局座標在一段時間後會稍微調整，以確保實體對齊。 使用 [持續](persistence-in-unity.md) 性，在未來的應用程式會話中再次尋找此錨定的位置。
 
 ### <a name="removing-a-world-anchor"></a>移除世界錨點
 
@@ -162,7 +163,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>跨裝置共用錨點
 
-您可以使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
+使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
 
 若要開始在 Unity 中建立共用體驗，請嘗試5分鐘的 <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間錨點 Unity 快速入門</a>。
 
@@ -170,7 +171,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 接下來，您可以繼續進行下一個建置組塊：
+如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
 
 > [!div class="nextstepaction"]
 > [目光](gaze-in-unity.md)

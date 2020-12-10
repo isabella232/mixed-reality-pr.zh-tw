@@ -1,31 +1,31 @@
 ---
 title: 進行 HoloLens 2 的 Galaxy Explorer
-description: 歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 如同原始的 Galaxy Explorer，我們的團隊會在 GitHub 上開放專案，以確保該社區具有完整的存取權。
+description: 歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 就像原始的 Galaxy Explorer 一樣，我們的小組也會在 GitHub 上以開放原始碼的方式取得專案，以確保該社區具有完整的存取權。
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 00bf30224a820bd85394c4b97136f81b52fe4128
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677627"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010469"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>進行 HoloLens 2 的 Galaxy Explorer
 
-歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "星系探險") 最初是開發為 HoloLens (第一代) 的開放原始碼應用程式，透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們正在更新它，以獲得 [HoloLens 2 的全新且令人興奮的功能](https://www.microsoft.com/hololens/hardware)。
+歡迎使用 HoloLens 2 應用程式更新的 Galaxy Explorer！ [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "星系探險") 最初開發為 HoloLens 的開放原始碼應用程式 (第一代) 透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新它，以獲得 [HoloLens 2 的全新且令人興奮的功能](https://www.microsoft.com/hololens/hardware)。
 
-作為其中一個 [Microsoft Mixed Reality 工作室](galaxy-explorer-update.md#mixed-reality-studios)，我們通常會開發商業級的解決方案，並在整個創意和開發程式中開發 & 的目標平臺測試。 我們現在有獨特的情況，也就是還沒有 HoloLens 2 裝置的存取權，但很高興能開始更新 Galaxy Explorer。 我們登機在此專案上使用架構和工具 (例如 [MRTK v2](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) ，因為它們可供我們和社區使用，而我們想要讓您帶著。
+作為其中一個 [Microsoft Mixed Reality 工作室](galaxy-explorer-update.md#mixed-reality-studios)，我們通常會開發商業級的解決方案，並在整個創意和開發程式中開發 & 的目標平臺測試。 我們會使用登機的架構和 (工具來此專案，例如 [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) ，因為它們變成可供我們和社區使用，而我們想要讓您帶著。
 
-如同原始的 Galaxy Explorer， [我們的團隊](galaxy-explorer-update.md#meet-the-team) 會在 [GitHub 上開放專案](https://github.com/Microsoft/GalaxyExplorer) ，以確保該社區具有完整的存取權。 我們也將在此記錄我們的旅程，以完全透明的方式說明如何 undertook 從 MRTK v1 移植到 MRTK v2、如何根據 HoloLens 2 中提供的新功能來增強體驗，以及如何確保 Galaxy Explorer 保持多平臺的體驗。 所以無論您是在 HoloLens 上觀看 Galaxy Explorer (第1代) 、HoloLens 2、Windows Mixed Reality 耳機或 Windows 10 桌面，我們都想要確保您有沉浸式體驗，並盡可能享受旅程。
+如同原始的 Galaxy Explorer， [我們的團隊](galaxy-explorer-update.md#meet-the-team) 會在 [GitHub 上開放專案](https://github.com/Microsoft/GalaxyExplorer) ，以確保該社區具有完整的存取權。 我們也將在此記錄我們的旅程，以完整的透明說明如何從 MRTK v1 移植到 MRTK v2、如何增強 HoloLens 2 中可用的新功能，以及確保 Galaxy Explorer 保持多平臺的體驗。 無論您是在 HoloLens 上觀看 Galaxy Explorer (第一代) 、HoloLens 2、Windows Mixed Reality 耳機或 Windows 10 桌上型電腦，我們都想要確定您已盡可能地享受旅程。
 
-此頁面將會在我們進行專案時展開，我們將會連結至更詳細的文章、程式碼、設計構件、其他 MRTK v2 檔等等，以提供您測試人員查看專案的資訊。
+此頁面將會隨著我們在專案中的進展而擴大，並提供更詳細的文章、程式碼、設計成品和其他 MRTK 檔的連結，以提供您 insider 的專案查看。
 
 ## <a name="unveiling-the-new-logo"></a>揭露新的標誌
 
-我們很高興地開始使用新的 Galaxy Explorer 標誌的預覽！ 藉由銀河的方式來支付以示敬意的原始標誌，我們設計了真實的視覺效果並更新印刷樣式，以提供更精緻且現代化的感覺。 包含在標誌中的搶先查看其中一個新圖示。
+我們很高興地開始使用新的 Galaxy Explorer 標誌的預覽！ 藉由銀河的方式來以示敬意原始標誌，我們設計了真實的視覺效果，並更新印刷樣式，以提供更現代化的感覺。 包含在標誌中的搶先查看其中一個新圖示。
 
 ![新的 Galaxy Explorer 標誌](images/ge-update-app-icon.png)
 
@@ -33,17 +33,17 @@ ms.locfileid: "94677627"
 
 ## <a name="thinking-about-interactions"></a>考慮互動
 
-作為創意工作室，我們 ecstatic 了將 Galaxy Explorer 移植到 HoloLens 2 的許可權。 我們從一開始就知道，我們希望體驗成為新裝置的一小部分，並示範混合現實的提升只限于夢想。
+作為創意工作室，我們 ecstatic 了將 Galaxy Explorer 移植到 HoloLens 2 的許可權。 我們從一開始就知道，我們希望體驗成為新裝置的一小部分，並示範混合的現實能力只受到夢想的限制。
 
 HoloLens 2 可讓使用者以自然的方式來觸控、抓住和移動全息影像，它們的回應方式很類似真正的物件。 完全表達的手模型很棒，因為它可讓使用者進行自然的操作。 例如，每個人都以稍微不同的方式來挑選杯，而不是強制執行這項工作，HoloLens 2 可讓您以自己的方式進行。
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-這是在第一代 HoloLens 裝置上，以以點為基礎之介面的重大變更。 使用者現在可以「關閉」和「個人」，而不是從距離與全像全像之間的互動。 當您將現有的經驗移植到 HoloLens 2 或規劃新的體驗時，請務必讓自己熟悉全像投影的直接操作。
+這是第一代 HoloLens 裝置上以點點為基礎之介面的重大變更。 使用者現在可以「關閉」和「個人」，而不是從距離與全像全像之間的互動。 當您將現有的經驗移植到 HoloLens 2 或規劃新的體驗時，請務必讓自己熟悉全像投影的直接操作。
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>直接操作與空間的大量距離
 
-它是一種神奇的體驗，可以觸及全球，並將其放在您手中。 這種方法的挑戰是日光系統的大小–是很大的！ 使用者必須四處四處找出空間，才能與每個行星互動。
+這是神奇的體驗，可讓您抓住全球，並將其放在您手中。 這種方法的挑戰是日光系統的大小–是很大的！ 使用者需要四處移動空間，以接近每個行星的互動。
 
 為了讓使用者能與更遠的物件互動，MRTK 提供了從使用者的手中走出的手片，作為手的延伸。 環圈圖的游標會附加至光線的結尾，以指出光線與目標物件相交的位置。 然後，游標所在的物件就能從手部接收手勢命令。 
 
@@ -79,7 +79,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="implementing-force-grab-into-the-application"></a>在應用程式中執行強制抓取
 
-當我們嘗試在行星上取得強制抓取時，我們發現我們必須變更日光系統的規模。 這表示，系統很難讓使用者瞭解和流覽精確的中型系統標記法，但他們並不知道要在何處尋找。 不過，精確、小型的標記法使某些行星變得太小而無法輕易選取。 如此一來，行星的大小和日光物體之間的間距，設計為在中型房間內感覺舒適，同時維持相對精確度。
+當我們嘗試在行星上取得強制抓取時，我們發現我們必須變更日光系統的規模。 這表示，系統很難讓使用者瞭解和流覽不清楚、中型的日光系統標記法。 不過，小尺寸表示讓某些行星變得太小而無法輕易選取。 如此一來，行星的大小和日光物體之間的間距，設計為在中型房間內感覺舒適，同時維持相對精確度。
 
 在我們的開發短期衝刺的後續階段中，我們很幸運能擁有內部的 MSFT 混合現實專家，因此我們可以將他們的輸入做為專家的測試人員，並在強制抓取互動上進行快速的反覆運算。
 
@@ -91,17 +91,17 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 當我們在 HoloLens 2 上實驗時，我們發現即使新的互動是自然且直覺的，全像是：沒有權數或 tactile sensations。 由於全息全像是在與物件互動時，人類用來接收的自然意見反應，因此我們需要建立它們。
 
-我們考慮到使用者會針對互動的各種階段提供視覺和音訊的意見反應，而且因為強制抓取機制是與 Galaxy Explorer 互動的核心，所以我們進行了許多反覆運算。 其目標是要針對互動的每個階段，找出音訊和視覺效果的正確平衡：將焦點放在想要的物件上、將它呼叫給使用者，然後再放開。 我們所學到的內容是，必須大幅提高音訊和視覺效果的意見反應，才能將互動比我們過去用來 (第一代) 。
+我們考慮到使用者會針對互動的各種階段提供視覺和音訊的意見反應，而且因為強制抓取機制是與 Galaxy Explorer 互動的核心，所以我們進行了許多反覆運算。 其目標是要針對互動的每個階段，找出音訊和視覺效果的正確平衡：將焦點放在想要的物件上、將它呼叫給使用者，然後再放開。 我們所學到的內容是，需要更多的音訊和視覺效果，才能將互動與我們過去針對 HoloLens (第一代) 的互動。
 
 ![行星上的視覺 affordances](images/ge-update-planet-affordances.png)
 
 ### <a name="adding-affordances-for-force-grab"></a>新增 affordances 來強制抓取
  
-一旦有了基本的強制抓取機制搭配音訊和 visual affordances，我們就看過如何讓選取行星更容易使用。 有兩個主要的專案要解決：因為日光系統是3D 移動介面，所以使用者會增加複雜性來瞭解如何以一致的方式鎖定物件。 這是因為正面光線在選取物件時非常快速，讓行星迅速移往使用者的事實。
+一旦有了基本的強制抓取機制搭配音訊和 visual affordances，我們就看過如何讓選取行星更容易使用。 有兩個主要的原因要解決：因為日光系統是3D 移動介面，所以使用者會增加複雜性來瞭解如何以一致的方式鎖定物件。 這是因為在選取物件時，光線很快就會變得更複雜，讓行星迅速移往使用者。
 
-我們採用三個面向的解決方案來達到這個效益。 第一個是相當直覺：讓選取範圍變慢，讓行星以更自然的步調來處理使用者。 調整速度之後，我們必須重新流覽音訊和視覺效果 affordances，並新增其他音訊意見反應，作為向使用者追蹤的地球。
+我們採用三個面向的解決方案來達到這個效益。 第一個是相當直覺：讓選取範圍變慢，讓行星以更自然的步調來處理使用者。 調整速度之後，我們必須重新流覽音訊和視覺 affordances，將音訊意見反應新增至使用者所追蹤的地球。
 
-解決方案的第二個部分是讓整個強制抓取互動的視覺效果非常明確。 我們視覺化了一個粗線，在手邊的光線連接之後移往目標物件，然後將物件帶回使用者，就像套索一樣。 
+解決方案的第二個部分是讓整個強制抓取互動的視覺效果成為有形。 我們視覺化了一個粗線，在手邊的光線連接之後移往目標物件，然後將物件帶回使用者，就像套索一樣。 
 
 ![用於強制抓取的視覺效果「套索」 affordances](images/ge-update-lasso-affordances.png)
 
@@ -111,7 +111,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ## <a name="spotlight-on-jupiter"></a>在 Jupiter 上聚焦
 
-建立銀河方式的日光主體是 humbling 的體驗。 尤其是，Jupiter 的獨特特性讓它耶。 它是天然氣巨人中最大且最彩色的，且包含的品質高於所有其他行星組合。 其廣泛的 turbulence 和雲端動態 mesmerizing 區，可 prefect 特別的藝術。
+建立銀河方式的日光主體是 humbling 的體驗。 尤其是，Jupiter 的獨特特性讓它耶。 這是最大且最彩色的天然氣巨人，且包含的品質高於所有其他行星組合。 其廣泛的 turbulence 和雲端動態 mesmerizing 區，可 prefect 特別的藝術。
 
 ### <a name="geometry-and-meshes"></a>幾何和網格
 
@@ -123,7 +123,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 下一種方法是「冒煙和鏡像」的解決方案，其中包括覆迭透明材質圖層，每個都解決了面向移動的特定層面，並在旋轉網格的組合上進行編譯。
 
-在下圖中，您可以在左側看到內部 shell。 此 matt 圖層提供了組合的背景，以防護組成雲端的多層之間的任何小間距。 由於圖層的旋轉速度很慢，因此它也會作為視覺化緩衝區來提供更快速的移動區間，以協助在各層中建立 visual unity。
+在下圖中，您可以在左側看到內部 shell。 此階層圖層提供了組合的背景，以防止組成雲端的多層之間的任何小間距。 由於圖層的旋轉速度很慢，因此它也會作為視覺化緩衝區來提供更快速的移動區間，以協助在各層中建立 visual unity。
 
 將此錨點設定為模型之後，移動的雲端層接著會投射在下方所示的中間和右側網格上。
 
@@ -135,13 +135,13 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 特性良好的紅點也會分成不同的移動元件，然後插入材質的其他隱藏區域中。 這些元件可以被視為下圖中間區段中的 red toned 斑點予。
 
-因為每個波段都有特定的方向和速度，所以紋理會個別套用至每個網格。 然後，網格具有共同的中心和 pivot 點，以便 concentrically 以動畫顯示整個表面。
+因為每個波段都有特定的方向和速度，所以紋理會個別套用至每個網格。 然後，網格會有一個通用的中心點和一個資料點，讓您可以 concentrically 整個表面的動畫。
 
 ![Jupiter 紋理總覽](images/ge-update-jupiter-planet-cloud-texture.png)
 
 ### <a name="rotation-and-texture-behavior"></a>旋轉和材質行為
 
-現在已設定了 Jupiter 的視覺效果組合，我們必須確定已正確地計算並套用旋轉和軌跡速度。 針對 Jupiter 完成完整輪替需要大約9小時的時間。 這是因差異旋轉而產生的定義。 因此，會將赤道幾內亞資料流程設定為「主要串流」，並採用3600的框架進行完整的旋轉。 每一層都必須有旋轉速度作為3600，才能符合其初始位置，例如600、900、1200、1800等等。
+一旦設定了 Jupiter 的視覺效果組合之後，我們必須確定已正確地計算並套用旋轉和軌跡速度。 針對 Jupiter 完成完整輪替需要大約9小時的時間。 這是因差異旋轉而產生的定義。 因此，會將赤道幾內亞資料流程設定為「主要串流」，並採用3600的框架進行完整的旋轉。 每一層都需要有旋轉速度作為3600，才能符合其初始位置，例如，600、900、1200、1800等等。
 
 ![Jupiter shell 紋理](images/ge-update-shell-texture.jpg)
 
@@ -176,11 +176,11 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 一開始就已設定紋理的 Jupiter 層，其證明不足以執行。
 
-原始的全球標準著色器 (及其所有變化) 透過腳本 SunLightReceiver 接收其光源資訊，MRTK 標準著色器不支援此功能。
+原始的全球標準著色器及其所有的變化，都會透過腳本 SunLightReceiver （MRTK 標準著色器不支援）接收其光源資訊。
 
-單純地交換著色器並不是一種解決方案，因為地球標準著色器不支援使用投影片的材質地圖。 我們已編輯此著色器，以便讓 Jupiter 組建如預期運作。
+單純地交換著色器並不是一種解決方案，因為地球標準著色器不支援使用投影片的材質地圖。 我們已編輯此著色器，讓 Jupiter 組建如預期運作。
 
-最後，您必須將來源 Blend 設定為10，以及將目的地 Blend 設定為5，以設定 Alpha 混合。
+最後，您必須將來源 Blend 設定為10，並將目的地 Blend 設定為5，以設定 Alpha 融合。
 
 ![Jupiter Unity 屬性](images/ge-update-jupiter-unity-render-queue.jpg)
 
@@ -188,13 +188,13 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ## <a name="meet-the-team"></a>認識團隊 
 
-我們的混合現實 studio 小組是由設計人員、3D 演出者、UX 專家、開發人員、程式經理和 studio 標頭所組成。 我們從全球各地 hail：比利時、加拿大、德國、以色列、日本、英國和美國。 我們是來自各種背景的豐富團隊：遊戲-傳統和獨立製作、數位行銷、醫療保健和科學。
+我們的混合現實 studio 小組是由設計人員、3D 演出者、UX 專家、開發人員、程式經理和 studio 標頭所組成。 我們從全球各地 hail：比利時、加拿大、德國、以色列、日本、英國和美國。 我們是來自各種背景的豐富團隊：遊戲-傳統與獨立製作、數位行銷、醫療保健和科學。
 
-我們很高興能為 HoloLens 2 建立 Galaxy Explorer，以及更新 HoloLens (第一代) VR 和桌上出版。 
+我們很高興能建立 HoloLens 2 的 Galaxy Explorer，以及更新 HoloLens (first gen) 、VR 和 desktop 版本。 
 
 ![Galaxy Explorer 小組](images/ge-update-team-image.png)
 
-從左至右： Artemis Tsouflidou (Developer) 、Angie Teickner (Visual Designer) 、David Janer (UX 設計工具) 、劉娜 Garrett (交付 & 生產潛在客戶) 、Yasushi Zonno (創意領導人) 、Eline Ledent (Developer) 和 Ben Turner (Sr-iov) 。
+從左至右： Artemis Tsouflidou (Developer) 、Angie Teickner (Visual Designer) 、David Janer (UX 設計工具) 、劉娜 Garrett (交付 & 生產潛在客戶) 、Yasushi Zonno (創意領導人) 、Eline Ledent (開發人員) ，以及 Ben Turner (Sr-iov) 。
 從左至右： Amit Rojtblat (技術演出者) 、聖馬丁 Wettig (3D 演出者) 和 Dirk Songuer (Studio Head) 。
 未精選： Tim Gerken (技術負責人) 和 Oscar Salandin (視覺化設計工具) 。
 
@@ -202,4 +202,4 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 ### <a name="mixed-reality-studios"></a>混合現實工作室
 
-Microsoft Mixed Reality Studio 小組（位於美洲、歐洲和 Asia-Pacific）是使用者體驗設計、全像電腦運算、AR/VR 技術以及3D 開發的專家。包括建立3D 資產、DirectX、Unity 和 Unreal。 我們會協助您構想所需的未來、設計、建立和提供解決方案，同時讓客戶能夠在其組織之間創造可測量的影響。 工作室與超過22000的 Microsoft 服務專業人員密切合作，以進行企業應用程式整合、採用、操作及支援。
+Microsoft Mixed Reality Studio 小組（位於美洲、歐洲和 Asia-Pacific）是使用者體驗設計、全像電腦運算、AR/VR 技術以及3D 開發的專家;包括建立3D 資產、DirectX、Unity 和 Unreal。 我們會協助您構想所需的未來、設計、建立和提供解決方案，同時讓客戶能夠在其組織之間創造可測量的影響。 工作室與超過22000的 Microsoft 服務專業人員密切合作，以進行企業應用程式整合、採用、操作及支援。
