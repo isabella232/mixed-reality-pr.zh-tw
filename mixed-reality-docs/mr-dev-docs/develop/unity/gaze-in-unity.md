@@ -6,26 +6,24 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 眼睛、中眼、unity、全息全像、混合式現實、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 0c62de9cb1b7ea892831ea2cedbeb23be5ea7b37
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677507"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010359"
 ---
-# <a name="head-gaze-in-unity"></a><span data-ttu-id="1689a-104">Unity 中的頭部</span><span class="sxs-lookup"><span data-stu-id="1689a-104">Head-gaze in Unity</span></span>
+# <a name="head-gaze-in-unity"></a><span data-ttu-id="8af7f-104">Unity 中的頭部</span><span class="sxs-lookup"><span data-stu-id="8af7f-104">Head-gaze in Unity</span></span>
 
-<span data-ttu-id="1689a-105">「[注視](../../design/gaze-and-commit.md)」是一種主要方式，可[讓使用者](../../discover/hologram.md)以[混合現實](../../discover/mixed-reality.md)的方式來設定您應用程式所建立的全像</span><span class="sxs-lookup"><span data-stu-id="1689a-105">[Gaze](../../design/gaze-and-commit.md) is a primary way for users to target the [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).</span></span>
+<span data-ttu-id="8af7f-105">[注視](../../design/gaze-and-commit.md)是讓您的應用程式以[混合現實](../../discover/mixed-reality.md)的方式來鎖定您的應用[程式所建立](../../discover/hologram.md)的主要方式。</span><span class="sxs-lookup"><span data-stu-id="8af7f-105">[Gaze](../../design/gaze-and-commit.md) is the primary way for users to target [holograms](../../discover/hologram.md) your app creates in [Mixed Reality](../../discover/mixed-reality.md).</span></span>
 
+## <a name="implementing-head-gaze"></a><span data-ttu-id="8af7f-106">執行頭部</span><span class="sxs-lookup"><span data-stu-id="8af7f-106">Implementing head-gaze</span></span>
 
-## <a name="implementing-head-gaze"></a><span data-ttu-id="1689a-106">執行頭部</span><span class="sxs-lookup"><span data-stu-id="1689a-106">Implementing head-gaze</span></span>
+<span data-ttu-id="8af7f-107">在概念上，您可以從使用者的耳機投射光線，以查看其點擊的內容，藉以判斷 [head](../../design/gaze-and-commit.md) 。</span><span class="sxs-lookup"><span data-stu-id="8af7f-107">Conceptually, you determine [head-gaze](../../design/gaze-and-commit.md) by projecting a ray forward from the user's headset to see what it hits.</span></span> <span data-ttu-id="8af7f-108">在 Unity 中，使用者的標頭位置和方向會透過[相機](camera-in-unity.md)（特別是[UnityEngine](https://docs.unity3d.com/ScriptReference/Camera-main.html)）公開。[轉換. 轉寄](https://docs.unity3d.com/ScriptReference/Transform-forward.html)和[UnityEngine。](https://docs.unity3d.com/ScriptReference/Camera-main.html)[轉換。位置](https://docs.unity3d.com/ScriptReference/Transform-position.html)。</span><span class="sxs-lookup"><span data-stu-id="8af7f-108">In Unity, the user's head position and direction are exposed through the [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span></span>
 
-<span data-ttu-id="1689a-107">從概念上來說， [前端](../../design/gaze-and-commit.md) 的執行方式是從使用者的標頭投射光線，其中耳機是在正向方向，並決定光線的衝突。</span><span class="sxs-lookup"><span data-stu-id="1689a-107">Conceptually, [head-gaze](../../design/gaze-and-commit.md) is implemented by projecting a ray from the user's head where the headset is, in the forward direction they are facing and determining what that ray collides with.</span></span>
-<span data-ttu-id="1689a-108">在 Unity 中，使用者的標頭位置和方向會透過 Unity 主要[攝影機](camera-in-unity.md)（特別是[UnityEngine](https://docs.unity3d.com/ScriptReference/Camera-main.html)）公開。[轉換. 轉寄](https://docs.unity3d.com/ScriptReference/Transform-forward.html)和[UnityEngine。](https://docs.unity3d.com/ScriptReference/Camera-main.html)[轉換。位置](https://docs.unity3d.com/ScriptReference/Transform-position.html)。</span><span class="sxs-lookup"><span data-stu-id="1689a-108">In Unity, the user's head position and direction are exposed through the Unity Main [Camera](camera-in-unity.md), specifically [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.forward](https://docs.unity3d.com/ScriptReference/Transform-forward.html) and [UnityEngine.Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html).[transform.position](https://docs.unity3d.com/ScriptReference/Transform-position.html).</span></span>
+<span data-ttu-id="8af7f-109">呼叫 [RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) 可為您提供一個 [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) ，其中包含衝突的相關資訊，包括3d 衝突點以及另一個 GameObject 的前端光線點擊。</span><span class="sxs-lookup"><span data-stu-id="8af7f-109">Calling [Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) gives you a [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) containing information about the collision, including the 3D collision point and the other GameObject the head-gaze ray hit.</span></span>
 
-<span data-ttu-id="1689a-109">呼叫 [RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) 會產生 [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) 結構，其中包含衝突的相關資訊，包括發生衝突的3d 點，還有另一個 GameObject 的前端光線衝突。</span><span class="sxs-lookup"><span data-stu-id="1689a-109">Calling [Physics.RayCast](https://docs.unity3d.com/ScriptReference/Physics.Raycast.html) results in a [RaycastHit](https://docs.unity3d.com/ScriptReference/RaycastHit.html) structure which contains information about the collision including the 3D point where collision occurred and the other GameObject the head-gaze ray collided with.</span></span>
-
-### <a name="example-implement-head-gaze"></a><span data-ttu-id="1689a-110">範例：執行頭部-注視</span><span class="sxs-lookup"><span data-stu-id="1689a-110">Example: Implement head-gaze</span></span>
+### <a name="example-implement-head-gaze"></a><span data-ttu-id="8af7f-110">範例：執行頭部-注視</span><span class="sxs-lookup"><span data-stu-id="8af7f-110">Example: Implement head-gaze</span></span>
 
 ```cs
 void Update()
@@ -45,32 +43,32 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a><span data-ttu-id="1689a-111">最佳作法</span><span class="sxs-lookup"><span data-stu-id="1689a-111">Best practices</span></span>
+### <a name="best-practices"></a><span data-ttu-id="8af7f-111">最佳作法</span><span class="sxs-lookup"><span data-stu-id="8af7f-111">Best practices</span></span>
 
-<span data-ttu-id="1689a-112">雖然上述範例示範如何在更新迴圈中執行單一 raycast，以尋找使用者前端的目標，但建議您在管理前端的單一物件中執行此動作，而不是在可能對 gazed 物件有興趣的任何物件中執行此動作。</span><span class="sxs-lookup"><span data-stu-id="1689a-112">While the example above demonstrates how to do a single raycast in an update loop to find the target the user's head points at, it is recommended to do this in a single object managing head-gaze instead of doing this in any object that is potentially interested in the object being gazed at.</span></span> <span data-ttu-id="1689a-113">這可讓您的應用程式藉由在每個畫面上執行一個 head raycast 來節省處理。</span><span class="sxs-lookup"><span data-stu-id="1689a-113">This lets your app save processing by doing just one head-gaze raycast each frame.</span></span>
+<span data-ttu-id="8af7f-112">雖然上述範例會從更新迴圈引發單一 raycast，以找出使用者的標頭的目標，我們建議使用單一物件來管理所有的前端進程。</span><span class="sxs-lookup"><span data-stu-id="8af7f-112">While the example above fires a single raycast from the update loop to find the target the user's head points at, we recommended using a single object to manage all head-gaze processes.</span></span> <span data-ttu-id="8af7f-113">結合您的列印頭邏輯可節省您的應用程式珍貴處理能力，並將您的 raycasting 限制為每個畫面一個。</span><span class="sxs-lookup"><span data-stu-id="8af7f-113">Combining your head-gaze logic will save your app precious processing power and limit your raycasting to one per frame.</span></span>
 
-## <a name="visualizing-head-gaze"></a><span data-ttu-id="1689a-114">將頭部視覺化</span><span class="sxs-lookup"><span data-stu-id="1689a-114">Visualizing head-gaze</span></span>
+## <a name="visualizing-head-gaze"></a><span data-ttu-id="8af7f-114">將頭部視覺化</span><span class="sxs-lookup"><span data-stu-id="8af7f-114">Visualizing head-gaze</span></span>
 
-<span data-ttu-id="1689a-115">就像在您使用滑鼠指標來鎖定內容並與其互動的桌面上一樣，您應該執行代表使用者前端的 [游標](../../design/cursors.md) 。</span><span class="sxs-lookup"><span data-stu-id="1689a-115">Just like on the desktop where you use a mouse pointer to target and interact with content, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze.</span></span> <span data-ttu-id="1689a-116">這可讓使用者在他們即將與其互動的方面具有信賴度。</span><span class="sxs-lookup"><span data-stu-id="1689a-116">This gives the user confidence in what they're about to interact with.</span></span>
+<span data-ttu-id="8af7f-115">就像電腦上的滑鼠指標一樣，您應該執行代表使用者前端的 [游標](../../design/cursors.md) 。</span><span class="sxs-lookup"><span data-stu-id="8af7f-115">Just like with a mouse pointer on a computer, you should implement a [cursor](../../design/cursors.md) that represents the user's head-gaze.</span></span> <span data-ttu-id="8af7f-116">知道使用者的目標內容會讓他們即將與其互動的內容更加可靠。</span><span class="sxs-lookup"><span data-stu-id="8af7f-116">Knowing what content a user is targeting increases confidence in what they're about to interact with.</span></span>
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit-v2"></a><span data-ttu-id="1689a-117">混合現實工具組 v2 中的頭部</span><span class="sxs-lookup"><span data-stu-id="1689a-117">Head-gaze in the Mixed Reality Toolkit v2</span></span>
-<span data-ttu-id="1689a-118">您可以從 MRTK v2 中的 [輸入管理員](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) 來存取 head。</span><span class="sxs-lookup"><span data-stu-id="1689a-118">You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK v2.</span></span>
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a><span data-ttu-id="8af7f-117">混合現實工具組中的頭部</span><span class="sxs-lookup"><span data-stu-id="8af7f-117">Head-gaze in the Mixed Reality Toolkit</span></span> 
+<span data-ttu-id="8af7f-118">您可以從 MRTK 的 [輸入管理員](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) 存取前端。</span><span class="sxs-lookup"><span data-stu-id="8af7f-118">You can access head-gaze from the [Input Manager](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html) in MRTK.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="1689a-119">下一個開發檢查點</span><span class="sxs-lookup"><span data-stu-id="1689a-119">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="8af7f-119">下一個開發檢查點</span><span class="sxs-lookup"><span data-stu-id="8af7f-119">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="1689a-120">依循我們配置的 Unity 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。</span><span class="sxs-lookup"><span data-stu-id="1689a-120">If you're following the Unity development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="1689a-121">接下來，您可以繼續進行下一個建置組塊：</span><span class="sxs-lookup"><span data-stu-id="1689a-121">From here, you can proceed to the next building block:</span></span>
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="1689a-122">手勢和運動控制器</span><span class="sxs-lookup"><span data-stu-id="1689a-122">Gestures and motion controllers</span></span>](gestures-and-motion-controllers-in-unity.md)
-
-<span data-ttu-id="1689a-123">或者，直接跳到混合實境平台功能和 API 的主題：</span><span class="sxs-lookup"><span data-stu-id="1689a-123">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="8af7f-120">如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。</span><span class="sxs-lookup"><span data-stu-id="8af7f-120">If you're following the Unity development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="8af7f-121">您可以從這裡繼續進行下一個組建區塊：</span><span class="sxs-lookup"><span data-stu-id="8af7f-121">From here, you can continue to the next building block:</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="1689a-124">共用體驗</span><span class="sxs-lookup"><span data-stu-id="1689a-124">Shared experiences</span></span>](shared-experiences-in-unity.md)
+> [<span data-ttu-id="8af7f-122">手勢和運動控制器</span><span class="sxs-lookup"><span data-stu-id="8af7f-122">Gestures and motion controllers</span></span>](gestures-and-motion-controllers-in-unity.md)
 
-<span data-ttu-id="1689a-125">您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。</span><span class="sxs-lookup"><span data-stu-id="1689a-125">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="8af7f-123">或者，直接跳到混合實境平台功能和 API 的主題：</span><span class="sxs-lookup"><span data-stu-id="8af7f-123">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1689a-126">另請參閱</span><span class="sxs-lookup"><span data-stu-id="1689a-126">See also</span></span>
-* [<span data-ttu-id="1689a-127">相機</span><span class="sxs-lookup"><span data-stu-id="1689a-127">Camera</span></span>](camera-in-unity.md)
-* [<span data-ttu-id="1689a-128">資料指標</span><span class="sxs-lookup"><span data-stu-id="1689a-128">Cursors</span></span>](../../design/cursors.md)
-* [<span data-ttu-id="1689a-129">頭部目光和行動</span><span class="sxs-lookup"><span data-stu-id="1689a-129">Head-gaze and commit</span></span>](../../design/gaze-and-commit.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="8af7f-124">共用體驗</span><span class="sxs-lookup"><span data-stu-id="8af7f-124">Shared experiences</span></span>](shared-experiences-in-unity.md)
+
+<span data-ttu-id="8af7f-125">您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。</span><span class="sxs-lookup"><span data-stu-id="8af7f-125">You can always go back to the [Unity development checkpoints](unity-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="8af7f-126">另請參閱</span><span class="sxs-lookup"><span data-stu-id="8af7f-126">See also</span></span>
+* [<span data-ttu-id="8af7f-127">相機</span><span class="sxs-lookup"><span data-stu-id="8af7f-127">Camera</span></span>](camera-in-unity.md)
+* [<span data-ttu-id="8af7f-128">資料指標</span><span class="sxs-lookup"><span data-stu-id="8af7f-128">Cursors</span></span>](../../design/cursors.md)
+* [<span data-ttu-id="8af7f-129">頭部目光和行動</span><span class="sxs-lookup"><span data-stu-id="8af7f-129">Head-gaze and commit</span></span>](../../design/gaze-and-commit.md)
