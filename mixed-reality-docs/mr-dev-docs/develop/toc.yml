@@ -6,8 +6,6 @@
   items:
     - name: Azure 混合實境雲端服務概觀
       href: mixed-reality-cloud-services.md
-    - name: 混合實境學習概觀
-      href: mr-learning-overview.md
     - name: 範例和功能應用程式
       href: features-and-samples.md
 - name: 移植應用程式
@@ -254,6 +252,8 @@
   items:
     - name: Unreal 開發概觀
       href: unreal/unreal-development-overview.md
+    - name: 在 Unreal 中升級專案
+      href: unreal/unreal-porting.md
     - name: 教學課程
       items:
         - name: 使用 MRTK UX 工具建置國際象棋應用程式
@@ -310,8 +310,6 @@
           href: unreal/unreal-deploying.md
         - name: 發佈至 Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: 在 Unreal 中升級專案
-          href: unreal/unreal-porting.md
         - name: Unreal 的效能建議
           href: unreal/performance-recommendations-for-unreal.md
         - name: Unreal 中的材質建議
