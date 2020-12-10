@@ -2,16 +2,16 @@
 title: 空間音訊教學課程-4。 在執行時間啟用和停用空間音訊
 description: 使用按鈕來啟用和停用在執行時間 spatialization 的音訊。
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: c752f79f53b5167d674b9e778637357d97fb914a
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c9e510e544962c5d1a4c462d20dafa222c6a5289
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678206"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002603"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>在執行時間啟用和停用 spatialization
 

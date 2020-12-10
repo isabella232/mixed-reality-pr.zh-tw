@@ -1,17 +1,17 @@
 ---
-title: 設計全像影像
+title: 設計全像投影
 description: 透過 Microsoft 全新的設計全像影像應用程式，瞭解混合的現實。
 author: hferrone
 ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK，混合的現實工具組，全像投影，設計全像投影、學習、範例應用程式、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: 243b6f28da7b074b3ff6d48794d525ac08281fa7
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96355338"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002541"
 ---
 # <a name="the-making-of-designing-holograms"></a>設計全息製作
 
@@ -122,6 +122,32 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 顯然圖示的運作方式比簡單的文字更好，因此為了提供更強大的指引，我接著開始建立一組動畫物件和虛擬人偶，每個物件都告訴您有關在個別案例中所做的事情，以及其使用方式的一小部分。
 
 ![互動式全息式功能表系統的動畫 GIF](images/designing-holograms/creative-process.gif)
+
+## <a name="core-concepts"></a>核心概念
+
+**全像攝影框架**
+
+![使用者的動畫 GIF，以醒目提示的全像全像 dollhouse 來搜尋](images/designing-holograms/FOVandFOI.gif)
+
+**座標系統**
+
+![以反白顯示座標系統的方式 dollhouse 使用者的動畫 GIF](images/designing-holograms/CoordinateSystems.gif)
+
+**眼球追蹤**
+
+![使用者的動畫 GIF，查看已醒目提示眼睛光線的靜止全息影像](images/designing-holograms/EyeTracking.gif)
+
+**房間掃描視覺效果和空間對應**
+
+![正在對應之 dollhouse 內所有表面的動畫 GIF](images/designing-holograms/SpatialMapping.gif)
+
+**場景理解**
+
+![所辨識 dollhouse 中物件的動畫 GIF](images/designing-holograms/SceneUnderstanding.gif)
+
+**使用手光線的點和認可**
+
+![醒目提示手動光線之使用者的動畫 GIF](images/designing-holograms/HandRays.gif)
 
 ## <a name="try-it-out-moments"></a>「立即試用」分鐘
 

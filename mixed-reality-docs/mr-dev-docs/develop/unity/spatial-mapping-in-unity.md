@@ -6,16 +6,16 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 60196a85689ce6c4c190acdfe305fc12982ace4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677397"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002513"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
-本主題說明如何在您的 Unity 專案中使用 [空間對應](../../design/spatial-mapping.md) ，以及如何在 HoloLens 裝置上抓取代表世界表面的三角形網格，以進行放置、遮蔽、房間分析等等。
+[空間對應](../../design/spatial-mapping.md) 可讓您取得代表 HoloLens 裝置周圍之表面的三角形網格。 您可以使用 surface 資料進行放置、遮蔽和房間分析，讓您的 Unity 專案有額外的深度劑量。
 
 Unity 包含空間對應的完整支援，可透過下列方式公開給開發人員：
 1. MixedRealityToolkit 中提供的空間對應元件，可為開始使用空間對應提供便利快速的路徑
@@ -34,7 +34,7 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (第一代) </strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -52,10 +52,11 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 
 如何啟用 >spatialperception 功能：
 1. 在 Unity 編輯器中，開啟 [ **播放機設定** ] 窗格 (編輯 > 專案設定 > 播放) 
-2. 按一下 [ **Windows 市存放區** ] 索引標籤
+2. 選取 [ **Windows 存放區** ] 索引標籤
 3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
 
-請注意，如果您已經將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
+> [!NOTE]
+> 如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
 
 空間對應也需要至少10.0.10586.0 的 MaxVersionTested：
 1. 在 Visual Studio 中，以滑鼠右鍵按一下方案總管中的 **package.appxmanifest** ，然後選取 [ **View Code** ]
@@ -64,7 +65,7 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 
 ## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>開始使用 Unity 的內建空間對應元件
 
-Unity 提供2個元件，可讓您輕鬆地將空間對應新增至您的應用程式、 **空間對應** 轉譯器和 **空間對應碰撞** 器。
+Unity 提供兩個元件，可讓您輕鬆地將空間對應新增至您的應用程式、 **空間對應** 轉譯器和 **空間對應碰撞** 器。
 
 ### <a name="spatial-mapping-renderer"></a>空間對應轉譯器
 
@@ -96,12 +97,12 @@ Unity 提供2個元件，可讓您輕鬆地將空間對應新增至您的應用�
 
 ## <a name="using-the-low-level-unity-spatial-mapping-api"></a>使用低層級 Unity 空間對應 API
 
-如果您需要比從空間對應轉譯器和空間對應碰撞器元件取得的更多控制，您可以使用低層級空間對應腳本 Api。
+如果您需要比空間對應轉譯器和空間對應碰撞器元件供應專案更多的控制，請使用低層級空間對應 Api。
 
 **命名空間：** *UnityEngine. XR*<br>
 **類型**： *SurfaceObserver*、 *SurfaceChange*、 *SurfaceData*、 *SurfaceId*
 
-以下是使用空間對應 Api 之應用程式的建議流程大綱。
+我們概述了在下列各節中使用空間對應 Api 的應用程式所建議的流程。
 
 ### <a name="set-up-the-surfaceobservers"></a>設定 SurfaceObserver (s) 
 
@@ -135,8 +136,8 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 
 ### <a name="handling-surface-changes"></a>處理介面變更
 
-有幾個主要案例需要處理。 新增 & 更新，可以使用相同的程式碼路徑並移除。
-* 在範例中新增的 & 更新案例中，我們會在字典中新增或取得代表這個網格的 GameObject、建立具有必要元件的 SurfaceData 結構，然後呼叫 RequestMeshDataAsync，以在場景中填入網格資料和位置的 GameObject。
+有幾個主要案例要處理-新增和更新，可以使用相同的程式碼路徑，並移除。
+* 在新增和更新的案例中，我們會在字典中加入或取得代表這個網格的 GameObject、建立具有必要元件的 SurfaceData 結構，然後呼叫 RequestMeshDataAsync，以在場景中填入網格資料和位置的 GameObject。
 * 在移除的案例中，我們會從字典中移除代表這個網格的 GameObject，並將它終結。
 
 ```cs
@@ -189,7 +190,7 @@ System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects 
 
 ### <a name="handling-data-ready"></a>處理資料就緒
 
-OnDataReady 處理常式會接收 SurfaceData 物件。 WorldAnchor、MeshFilter 和 (選擇性地) 它所包含的 MeshCollider 物件會反映相關聯空間介面的最新狀態。 藉由存取 MeshFilter 物件的網狀成員，選擇性地執行網格資料的分析和/或 [處理](../../design/spatial-mapping.md#mesh-processing) 。 使用最新的網格轉譯空間介面，並 (選擇性地) 將它用於物理衝突和 raycasts。 請務必確認 SurfaceData 的內容不是 null。
+OnDataReady 處理常式會接收 SurfaceData 物件。 WorldAnchor、MeshFilter 和 (選擇性地) 它所包含的 MeshCollider 物件會反映相關聯空間介面的最新狀態。 （選擇性）藉由存取 MeshFilter 物件的網狀成員來分析及/或 [處理](../../design/spatial-mapping.md#mesh-processing) 網格資料。 使用最新的網格轉譯空間介面，並 (選擇性地) 將它用於物理衝突和 raycasts。 請務必確認 SurfaceData 的內容不是 null。
 
 ### <a name="start-processing-on-updates"></a>開始處理更新
 
@@ -214,23 +215,23 @@ void Start () {
 
 ## <a name="higher-level-mesh-analysis-spatialunderstanding"></a>較高層級的網狀分析： SpatialUnderstanding
 
-<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>是一組實用的公用程式程式碼，可用於以全像內嵌式 Unity api 為基礎的全像開發環境。
+<a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>是以 Unity 的全像內嵌式 api 為基礎進行全像開發的公用程式程式碼集合。
 
 ### <a name="spatial-understanding"></a>空間理解
 
-在實體世界中放置全像影像時，通常會想要超越空間對應的網格和表面平面。 當放置完成 cti 時，需要較高層級的環境理解。 這通常需要做出有關樓層、上限和牆壁的決策。 此外，也可以針對一組放置條件約束進行優化，以判斷全像攝影物件的最理想實體位置。
+在實體世界中放置全像影像時，通常會想要超越空間對應的網格和表面平面。 當放置完成 cti 時，需要較高層級的環境理解。 這通常需要做出有關樓層、上限和牆壁的決策。 您也可以針對一組放置條件約束進行優化，以判斷全像攝影物件最適合的實體位置。
 
-在開發年輕 Conker 和片段的過程中，Asobo 工作室面臨這個問題，並針對此用途開發會議室規劃。 每個遊戲都有遊戲特定的需求，但它們共用了核心空間的理解技術。 HoloToolkit. SpatialUnderstanding 程式庫會封裝這項技術，可讓您快速找出牆上的空格、將物件放在最上方、找出放置的字元，以及許多其他空間理解查詢。
+在開發年輕 Conker 和片段的期間，Asobo 工作室藉由開發會議室規劃求解來面對這個問題。 這些遊戲都有遊戲專屬的需求，但它們共用了核心空間的理解技術。 HoloToolkit. SpatialUnderstanding 程式庫會封裝這項技術，可讓您快速找出牆上的空格、將物件放在最上方、找出放置的字元，以及許多其他空間理解查詢。
 
 所有原始程式碼都包含在內，可讓您依據需求進行自訂，並與您的小組分享您的改進。 C + + 規劃的程式碼已經包裝成 UWP dll，並使用 MixedRealityToolkit 中包含的預製專案來公開給 Unity。
 
 ### <a name="understanding-modules"></a>瞭解模組
 
-模組會公開三個主要介面：適用于簡單介面和空間查詢的拓撲、物件偵測的圖形，以及物件放置規劃求解的物件集合之條件約束式位置。 以下說明上述各方式。 除了三個主要模組介面外，還可以使用光線轉型介面來取出標記的介面類別型，而且可以將自訂的防水 playspace 網格複製出來。
+模組會公開三個主要介面：適用于簡單介面和空間查詢的拓撲、物件偵測的圖形，以及物件放置規劃求解的物件集合之條件約束的位置。 以下說明上述各方式。 除了三個主要模組介面外，還可以使用光線轉型介面來取出標記的介面類別型，而且可以將自訂的防水 playspace 網格複製出來。
 
 ### <a name="ray-casting"></a>光線轉換
 
-掃描和結束空間之後，就會在內部產生標籤，例如樓層、上限和牆。 "PlayspaceRaycast" 函式會使用光線，並在光線與已知表面衝突時傳回，如果是，則以 "RaycastResult" 的形式呈現該介面的相關資訊。
+當房間掃描完成之後，就會在內部產生標籤，例如樓層、上限和牆。 "PlayspaceRaycast" 函式會使用光線，並在光線與已知表面衝突時傳回，如果是，則以 "RaycastResult" 的形式呈現該介面的相關資訊。
 
 ```cpp
 struct RaycastResult
@@ -258,7 +259,7 @@ struct RaycastResult
 };
 ```
 
-就內部而言，raycast 是針對 playspace 的計算8cm 立方體素表示來計算。 每個體素都包含一組介面元素，其中包含已處理的拓撲資料 (也稱為 surfels) 。 會比較交集體素資料格內所含的 surfels，以及用來查閱拓撲資訊的最佳相符項。 此拓撲資料包含以 "SurfaceTypes" 列舉的形式傳回的標籤，以及交集資料表面的介面區。
+就內部而言，raycast 是針對 playspace 的計算出的 8-cm 立方體素標記法來計算。 每個體素都包含一組介面元素，其中包含已處理的拓撲資料 (也稱為 surfels) 。 會比較交集體素資料格內所含的 surfels，以及用來查閱拓撲資訊的最佳相符項。 此拓撲資料包含以 "SurfaceTypes" 列舉的形式傳回的標籤，以及交集資料表面的介面區。
 
 在 Unity 範例中，資料指標會將光線轉換成每個畫面格。 首先，針對 Unity 的 colliders。 第二，針對瞭解模組的世界標記法。 最後一個是 UI 元素。 在此應用程式中，UI 會獲得優先權、接下來的理解結果，最後是 Unity 的 colliders。 SurfaceType 會回報為數據指標旁的文字。
 
@@ -267,7 +268,10 @@ struct RaycastResult
 
 ### <a name="topology-queries"></a>拓撲查詢
 
-在 DLL 內，拓撲管理員會處理環境的標籤。 如上所述，大部分的資料會儲存在 surfels 中，並包含在體素磁片區中。 此外，還會使用 "PlaySpaceInfos" 結構來儲存有關 playspace 的資訊，包括世界上的對齊 (更多有關以下) 、樓層和最高高度的詳細資料。 啟發學習法可用來決定樓層、上限和牆。 例如，具有大於1個 m2 介面區的最大和最低水準介面會被視為樓層。 請注意，此程式也會使用掃描程式期間的相機路徑。
+在 DLL 內，拓撲管理員會處理環境的標籤。 如上所述，大部分的資料會儲存在 surfels 中，並包含在體素磁片區中。 此外，還會使用 "PlaySpaceInfos" 結構來儲存有關 playspace 的資訊，包括世界上的對齊 (更多有關以下) 、樓層和最高高度的詳細資料。 啟發學習法可用來決定樓層、上限和牆。 例如，具有大於 1-m2 介面區的最大和最低水準介面會被視為樓層。 
+
+> [!NOTE]
+> 掃描過程中的攝影機路徑也會在此程式中使用。
 
 拓撲管理員公開的查詢子集會透過 dll 公開。 公開的拓撲查詢如下所示。
 
@@ -306,13 +310,14 @@ struct TopologyResult
 };
 ```
 
-請注意，在 Unity 範例中，每個查詢都會連結到虛擬 UI 面板中的按鈕。 此範例會將每個查詢的參數設為合理的值。 如需更多範例，請參閱範例程式碼中的 SpaceVisualizer.cs。
+> [!NOTE]
+> 在 Unity 範例中，每個查詢都會連結到虛擬 UI 面板中的按鈕。 此範例會將每個查詢的參數設為合理的值。 如需更多範例，請參閱範例程式碼中的 SpaceVisualizer.cs。
 
 ### <a name="shape-queries"></a>圖形查詢
 
-在 dll 內，圖形分析器 ( "ShapeAnalyzer_W" ) 使用拓撲分析器來比對使用者所定義的自訂圖形。 Unity 範例會定義一組圖形，並透過 [圖形] 索引標籤中的應用程式內查詢功能表來公開結果。其目的是讓使用者可以定義自己的物件圖形查詢，並視其應用程式的需要來使用這些查詢。
+在 dll 中，圖形分析器 ( "ShapeAnalyzer_W" ) 使用拓朴分析器來比對使用者所定義的自訂圖形。 Unity 範例會定義一組圖形，並透過 [圖形] 索引標籤中的應用程式內查詢功能表來公開結果。其目的是讓使用者可以定義自己的物件圖形查詢，並視其應用程式的需要來使用這些查詢。
 
-請注意，圖形分析僅適用于水準表面。 例如，一名沙發是由平面基座介面和沙發的一般頂端所定義。 圖形查詢會尋找特定大小、高度和外觀範圍的兩個表面，並將兩個表面對齊並連接。 使用 Api 術語時，沙發基座和上一頁是圖形元件，而對齊需求是圖形元件條件約束。
+圖形分析僅適用于水準表面。 例如，一名沙發是由平面基座介面和沙發的一般頂端所定義。 圖形查詢會尋找特定大小、高度和外觀範圍的兩個表面，並將兩個表面對齊並連接。 使用 Api 術語時，沙發基座和上一頁是圖形元件，而對齊需求是圖形元件條件約束。
 
 Unity 範例中所定義的範例查詢 (ShapeDefinition.cs) ，適用于 "sittable" 物件，如下所示。
 
@@ -333,7 +338,7 @@ AddShape("Sittable", shapeComponents);
 
 每個圖形查詢都是由一組圖形元件所定義，每個都有一組元件條件約束，以及一組列出元件之間相依性的圖形條件約束。 此範例包含單一元件定義中的三個條件約束，而且元件之間沒有任何形狀條件約束 (因為只有一個元件) 。
 
-相反地，「沙發」圖形有兩個圖形元件和四個「形狀」條件約束。 請注意，在此範例中，元件會以其在使用者元件清單中的索引來識別 (0 和 1) 。
+相反地，「沙發」圖形有兩個圖形元件和四個「形狀」條件約束。 元件是以使用者元件清單中的索引來識別， (0 和1在此範例中) 。
 
 ```cs
 shapeConstraints = new List<ShapeConstraint>()
@@ -436,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-使用者導向 playspace 「繪製」–在掃描階段期間，使用者會四處移動並查看播放步調，以有效地繪製應該包含的區域。 產生的網格很重要，可在此階段提供使用者意見反應。 室內家用或 office 設定–查詢函式是以適當角度的平面和牆為中心設計的。 這是一項軟性限制。 不過，在掃描階段期間，主要軸分析已完成，可將網格鑲嵌沿著主要和次要軸優化。 內含的 SpatialUnderstanding.cs 檔案會管理掃描階段程式。 它會呼叫下列函數。
+使用者導向 playspace 「繪製」–在掃描階段期間，使用者會四處移動並查看播放步調，有效地繪製應該包含的區域。 產生的網格很重要，可在此階段提供使用者意見反應。 室內家用或 office 設定–查詢函式是以適當角度的平面和牆為中心設計的。 這是一項軟性限制。 不過，在掃描階段期間，主要軸分析已完成，可將網格鑲嵌沿著主要和次要軸優化。 內含的 SpatialUnderstanding.cs 檔案會管理掃描階段程式。 它會呼叫下列函數。
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -461,11 +466,11 @@ Import_UnderstandingMesh –
     after scanning has been finalized.
 ```
 
-掃描流程（由 "SpatialUnderstanding" 行為驅動）會呼叫 InitScan，然後 UpdateScan 每個畫面格。 當統計資料查詢報告合理的涵蓋範圍時，使用者就可以 airtap 呼叫 RequestFinish 來指出掃描階段結束。 UpdateScan 會繼續呼叫，直到它的傳回值指出 dll 已完成處理。
+掃描流程（由 "SpatialUnderstanding" 行為驅動）會呼叫 InitScan，然後 UpdateScan 每個畫面格。 當統計資料查詢報告合理的涵蓋範圍時，使用者就可以 airtap 呼叫 RequestFinish 來指出掃描階段結束。 UpdateScan 會繼續呼叫，直到其傳回值指出 dll 已完成處理。
 
 ### <a name="understanding-mesh"></a>瞭解網格
 
-瞭解 dll 會在內部將 playspace 儲存為8cm 大小體素 cube 的方格。 在掃描的初始部分期間，主要元件分析完成以判斷房間的座標軸。 就內部而言，它會儲存其體素空間與這些軸對齊。 從體素磁片區解壓縮 isosurface，大約每秒會產生一個網狀。 
+瞭解 dll 會在內部將 playspace 儲存為 8 cm 大小體素 cube 的方格。 在掃描的初始部分期間，主要元件分析完成以判斷房間的座標軸。 就內部而言，它會儲存其體素空間與這些軸對齊。 從體素磁片區解壓縮 isosurface，大約每秒會產生一個網狀。 
 
 ![從體素磁片區產生的網狀](images/su-custommesh.jpg)<br>
 *從體素磁片區產生的網狀*
@@ -479,7 +484,7 @@ Import_UnderstandingMesh –
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-依循我們配置的 Unity 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊： 
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)

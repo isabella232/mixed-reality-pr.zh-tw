@@ -2,16 +2,16 @@
 title: 混合現實的音效
 description: 混合現實中的音訊可以提高 UI 互動的使用者信心，並 immerse 使用者體驗。
 author: kegodin
-ms.author: kegodin
+ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: 空間音效、環繞音效、3d 音訊、3d 音效、空間音訊、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、個案研究、聲場
-ms.openlocfilehash: 50a5b4a634eec5a326158975f70fa385ce7af6a8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2fe40f1b271e7ae775c333951286e87c5196c20b
+ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703254"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97002493"
 ---
 # <a name="audio-in-mixed-reality"></a>混合現實的音效
 音訊是設計和生產力在混合現實中不可或缺的一部分。 音效可以：
