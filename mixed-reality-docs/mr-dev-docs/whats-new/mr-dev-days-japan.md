@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: df7b6837653b309189e44d36853430b89b8b56a9
-ms.sourcegitcommit: 2eeee7bb1589148f5c9fe7f76ade58d3e08b5817
+ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
+ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/11/2020
-ms.locfileid: "97104202"
+ms.locfileid: "97111880"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -44,7 +44,7 @@ ms.locfileid: "97104202"
 ### <a name="december-16th"></a>12月16日
 |**Time**|**會話標題**|**主講人**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|10：上午 10:00-10：50am|開啟演講|Madoka Chiyoda、Alex Kipman、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA-JP|N/A|
+|10：上午 10:00-10：50am|開啟演講|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA-JP|N/A|
 |10： 50am-11：上午10:00|**中斷 (10min)**||||
 |11：上午 10:00-11：25am|*會話 1* 混合現實簡介|: Atsushi Suzuki|JA|100|
 |11： 30am-11：55am|*會話 2* Mixed Reality 商務動力|Tetsu Muranaka|JA|200|
