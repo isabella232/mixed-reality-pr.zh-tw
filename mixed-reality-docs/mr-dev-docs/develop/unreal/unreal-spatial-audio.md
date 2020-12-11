@@ -7,20 +7,18 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 空間音訊
-ms.openlocfilehash: 25fa60b4e55ec0f3bd0875ad88834981d198f7f5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679797"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609539"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal 中的空間音訊
 
-## <a name="overview"></a>概觀
-
 不同於視覺，人類可聽到來自周遭 360 度的聲音。 空間音效會模擬人類聽覺的運作方式，提供識別真實世界中的發聲位置所需的提示。 在混合實境應用程式中新增空間音效後，將可加強使用者體驗的沉浸程度。  
 
-高品質的空間音效處理是很複雜的，因此，HoloLens 2 隨附了專用硬體來處理這些音效物件。  您必須先在 Unreal 專案中安裝 **MicrosoftSpatialSound** 外掛程式，才可存取此硬體處理支援。 本文將逐步引導您完成該外掛程式的安裝和設定，並為您深入介紹在 Unreal Engine 中使用空間音效所需的資源。
+高品質的空間音效處理是很複雜的，因此，HoloLens 2 隨附了專用硬體來處理這些音效物件。  您必須先在 Unreal 專案中安裝 **MicrosoftSpatialSound** 外掛程式，才可存取此硬體處理支援。 本文將逐步引導您完成外掛程式的安裝和設定，並為您深入介紹資源。
 
 ## <a name="installing-the-microsoft-spatial-sound-plugin"></a>安裝 Microsoft 空間音效外掛程式
 
@@ -39,8 +37,9 @@ ms.locfileid: "94679797"
 
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>設定 HoloLens 2 平台的空間化外掛程式
+
 空間化外掛程式的設定須就個別平台來執行。  您可以啟用適用於 HoloLens 2 的 Microsoft 空間音效外掛程式，方法是：
-1. 選取 [編輯] > [專案設定] 並捲動至 [平台]，然後按一下 [HoloLens]。
+1. 選取 [編輯] > [專案設定] 並捲動至 **[平台]，然後按一下 [HoloLens]。
 2. 展開 [音訊] 屬性，並將 [空間化外掛程式] 欄位設定為 [Microsoft 空間音效]。
 
 ![適用於 HoloLens 平台的空間化外掛程式](images/unreal-spatial-audio-img-02.png)
@@ -50,6 +49,7 @@ ms.locfileid: "94679797"
 ![適用於 Windows 平台的空間化外掛程式](images/unreal-spatial-audio-img-05.png)
 
 ## <a name="enabling-spatial-audio-on-your-workstation"></a>在工作站上啟用空間音訊
+
 Windows 桌面版依預設會停用空間音訊。 您可以透過下列方式加以啟用：
 * 以滑鼠右鍵按一下工作列中的 [磁碟區] 圖示。
     + 選擇 [空間音效] -> [Windows Sonic 耳機版]，以便在 HoloLens 2 上聽到最佳呈現的音效。
@@ -60,6 +60,7 @@ Windows 桌面版依預設會停用空間音訊。 您可以透過下列方式�
 >只有您要在 Unreal 編輯器中測試您的專案時，才需要進行此設定。
 
 ## <a name="creating-attenuation-objects"></a>建立衰減物件
+
 在您安裝並設定必要的外掛程式後：
 1. 在 [放置動作項目] 視窗中搜尋 [環境音效] 動作項目，並將其拖曳至 [場景] 視窗中。
 
@@ -82,7 +83,8 @@ Windows 桌面版依預設會停用空間音訊。 您可以透過下列方式�
 
 ![設定衰減設定](images/unreal-spatial-audio-img-08.png)
 
-6. 藉由更新環境音效動作項目的 [音效] 屬性以指定所要使用的 SoundAsset 檔案，藉以設定要附加至環境音效動作項目的 [音效資產]。
+6. 設定要附加至環境音效動作項目的 [聲音資產]：
+    * 更新環境音效動作項目的 [音效] 屬性，以指定所要使用的 SoundAsset 檔案。
 
 ![設定音效資產](images/unreal-spatial-audio-img-09.png)
 
@@ -91,9 +93,10 @@ Windows 桌面版依預設會停用空間音訊。 您可以透過下列方式�
 
 ![新的音效衰減資產](images/unreal-spatial-audio-img-10.png)
 
-一切都設定完成後，就可以使用 HoloLens 2 上的專用硬體卸載支援將環境音效空間化。
+音效資產設定完成後，就可以使用 HoloLens 2 上的專用硬體卸載支援將環境音效空間化。
 
 ## <a name="configuring-objects-for-spatialization"></a>設定空間化的物件
+
 使用空間音訊時，表示您將負責管理音效在虛擬環境中的運作方式。 您主要的工作重心，是要建立在使用者靠近時發出較大聲響、並在使用者遠離時較小聲的音效物件。 這就是所謂的音效衰減，聽起來會像是音效物件置於固定之處。
 
 所有衰減物件都附有下列可修改的設定：
@@ -108,7 +111,7 @@ Windows 桌面版依預設會停用空間音訊。 您可以透過下列方式�
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
+依循我們配置的 Unreal 開發旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [語音輸入](unreal-voice-input.md)

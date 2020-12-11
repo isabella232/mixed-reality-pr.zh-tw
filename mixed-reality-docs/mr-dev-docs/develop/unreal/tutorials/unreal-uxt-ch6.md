@@ -1,22 +1,20 @@
 ---
 title: 6. 封裝並部署至裝置或模擬器
-description: 教學課程系列的第 6 部分 (共有 6 部分)，使用 Unreal Engine 4 和混合實境工具組 UX 工具外掛程式來建置簡單的國際象棋應用程式
+description: 教學課程系列的第 6 部分 (共有 6 部分)，使用 Unreal Engine 4 和混合實境工具組 UX 工具外掛程式來建置國際象棋應用程式
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: cbdbf87d75dcfc56c8eea52f7dff4a646f3b6a5d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679817"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609489"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.封裝並部署至裝置或模擬器
-
-## <a name="overview"></a>概觀
 
 在上一個教學課程中，您已新增一個簡單按鈕，將棋子重設為其原始位置。 在此最後一節中，您將會準備好要在 HoloLens 2 或模擬器上執行的應用程式。 若有 HoloLens 2，您可以從電腦串流或封裝應用程式，以直接在裝置上執行。 如果沒有裝置，您會封裝應用程式以在模擬器上執行。 本節結束時，您將會有一個可以播放的已部署混合實境應用程式，這是透過互動和 UI 完成的。
 
@@ -26,7 +24,8 @@ ms.locfileid: "94679817"
 * 封裝應用程式並將其部署至 HoloLens 2 裝置或模擬器
 
 ## <a name="device-only-streaming"></a>[僅限裝置] 串流
-在此情況下，[全像遠端處理](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting)表示將電腦或獨立 UWP 裝置中的資料串流至 HoloLens 2，而不是切換管道。 其運作方式是遠端主機應用程式會從 HoloLens 接收輸入資料流程、在虛擬沉浸式檢視中呈現內容，以及透過 Wi-fi 將內容框架串流回 HoloLens。 串流可讓您將遠端沉浸式檢視新增至現有的桌上型電腦軟體，並可存取更多系統資源。
+
+[全像遠端處理](https://docs.microsoft.com/windows/mixed-reality/add-holographic-remoting)表示將電腦或獨立 UWP 裝置中的資料串流至 HoloLens 2，而不是切換管道。 遠端主機應用程式會從 HoloLens 接收輸入資料流程、在虛擬沉浸式檢視中呈現內容，以及透過 Wi-fi 將內容框架串流回 HoloLens。 串流可讓您將遠端沉浸式檢視新增至現有的桌上型電腦軟體，並可存取更多系統資源。
 
 如果您是使用國際象棋應用程式前往此路由，將需要進行一些事項：
 
@@ -36,7 +35,7 @@ ms.locfileid: "94679817"
 
 3.  重新啟動編輯器，然後輸入您裝置的 IP 位址 (如全像遠端處理播放程式中所顯示)，接著按一下 [連線]。
 
-連線之後，請按一下 [播放] 按鈕右邊的下拉箭號，然後選取 [VR 預覽]。 這會在 [VR 預覽] 視窗中執行應用程式，進而串流至 HoloLens 頭戴式裝置。
+連線之後，請按一下 [播放] 按鈕右邊的下拉箭號，然後選取 [VR 預覽]。 應用程式會在 [VR 預覽] 視窗中執行，進而串流至 HoloLens 頭戴式裝置。
 
 ## <a name="packaging-and-deploying-the-app-via-device-portal"></a>透過裝置入口網站封裝和部署應用程式
 
@@ -80,16 +79,16 @@ ms.locfileid: "94679817"
 7.  按一下 [瀏覽 ...]、移至您的 **ChessApp.appxbundle** 檔案，然後按一下 [開啟]。
 
     * 如果這是您第一次在裝置上安裝應用程式，請勾選 [允許我選取架構套件] 旁的方塊。
-    * 在下一個對話方塊中，包含適當的 **VCLibs** 和 **appx** 檔案 (若為裝置則為 arm64，若為模擬器則為 x64)。 您可以在儲存套件的資料夾內 **HoloLens** 底下找到這些檔案。
+    * 在下一個對話方塊中，包含適當的 **VCLibs** 和 **appx** 檔案 (若為裝置則為 **arm64**，若為模擬器則為 **x64**)。 您可以在儲存套件的資料夾內 **HoloLens** 底下找到這些檔案。
 
 8.  按一下 [安裝]
-    * 您現在可以移至 [所有應用程式]，然後點選新安裝的應用程式來執行，也可以直接從 **Windows 裝置入口網站** 啟動應用程式。 
+    * 您現在可以移至 [所有應用程式]，然後點選新安裝的應用程式來執行，或直接從 **Windows 裝置入口網站** 啟動應用程式。 
 
-恭喜！ 您的 HoloLens 混合實境應用程式已完成，且已可開始使用。 不過，這不是盡頭。 MRTK 有許多獨立功能，您可以將其新增至專案，包括空間對應、注視和語音輸入，甚至是 QR 代碼。 如需這些功能的詳細資訊，請參閱 [Unreal 開發概觀](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)。
+恭喜！ 您的 HoloLens 混合實境應用程式已完成，且已可開始使用。 不過，您的體驗尚未結束。 MRTK 有許多獨立功能，您可以將其新增至專案，包括空間對應、注視和語音輸入，甚至是 QR 代碼。 如需這些功能的詳細資訊，請參閱 [Unreal 開發概觀](https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview)。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
+依循我們配置的 Unreal 開發旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [注視輸入](../unreal-gaze-input.md)

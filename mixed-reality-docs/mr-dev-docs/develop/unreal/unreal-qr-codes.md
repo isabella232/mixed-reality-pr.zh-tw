@@ -7,16 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, qr 代碼, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: f2f06e9aa8d458d58dc8551ab6cd726622c30d4c
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 7e39e1d822f0aa623a83678beef24f2c98a18944
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354402"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609639"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal 中的 QR 代碼
 
-HoloLens 2 可以使用網路攝影機查看世界空間中的 QR 代碼，這會在每個代碼的真實世界位置中使用座標系統將其呈現為全息投影。  除了單一 QR 代碼外，HoloLens 2 還可以在相同位置的多個裝置上呈現全像投影，以建立共用體驗。 確定您遵循將 QR 代碼新增至應用程式的最佳作法：
+HoloLens 2 可以使用網路攝影機查看世界空間中的 QR 代碼，這會在每個代碼的真實世界位置中將其呈現為全息投影。 HoloLens 2 也可以在相同位置的多個裝置上呈現全像投影，以建立共用體驗。 確定您遵循將 QR 代碼新增至應用程式的最佳作法：
 
 - 寧靜區域
 - 光源和底圖
@@ -29,11 +29,11 @@ HoloLens 2 可以使用網路攝影機查看世界空間中的 QR 代碼，這�
 
 ## <a name="enabling-qr-detection"></a>啟用 QR 偵測
 因為 HoloLens 2 需要使用網路攝影機來查看 QR 代碼，所以您必須在專案設定中將其啟用：
-- 開啟 [編輯] > [專案設定]捲動至 [平台] 區段，然後按一下 [HoloLens]。
+- 開啟 [編輯] > [專案設定]捲動至 [平台] 區段，然後選取 [HoloLens]。
     + 展開 [功能] 區段，並勾選 [網路攝影機]。  
 - 您也必須[新增 ARSessionConfig 資產](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)，來加入 QR 代碼追蹤。
 
-[!INCLUDE[](includes/tabs-qr-codes.md)]
+[!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
 ## <a name="setting-up-a-tracked-qr-code"></a>設定已追蹤的 QR 代碼
 
@@ -54,7 +54,7 @@ QR 代碼會透過 Unreal 的 AR 追蹤幾何系統呈現為追蹤的影像。 �
 ## <a name="using-a-tracked-qr-code"></a>使用已追蹤的 QR 代碼
 下圖中的事件圖形會顯示用來在 QR 代碼中心呈現點的 **OnUpdateTrackedImage** 事件，並印出其資料。
 
-![QR 轉譯範例](images/unreal-qr-render.PNG)
+[!INCLUDE[](includes/tabs-qr-codes-2.md)]
 
 以下是後續動作：
 1. 首先，追蹤的影像會強制轉型為 **ARTrackedQRCode**，以檢查目前更新的影像是否為 QR 代碼。  
@@ -68,7 +68,7 @@ QR 代碼會透過 Unreal 的 AR 追蹤幾何系統呈現為追蹤的影像。 �
 
 ![QR GUID](images/unreal-qr-guid.PNG)
 
-QR 代碼在幕後還有很多工作要做，因此這不是盡頭。 請務必查看下列連結，以取得有關幕後內容的詳細資訊。
+QR 代碼在幕後還有很多工作要做，因此您的體驗尚未結束。 請務必查看下列連結，以取得有關幕後內容的詳細資訊。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

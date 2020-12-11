@@ -10,26 +10,25 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 串�
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 5a001088208106176ae771c2bc684674e6ce37a8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 9cbde33ce7238d704d4b24b4afbed9d8306d4e4d
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679777"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609329"
 ---
 # <a name="streaming-in-unreal"></a>Unreal 中的串流
 
-## <a name="overview"></a>概觀
 從電腦串流至 HoloLens 可提供兩大優點： 
 * 可讓您的混合實境應用程式利用電腦的計算能力。 
 * 有助於加快開發反覆運算的時間。 
 
-若要開始使用，您必須將[全像攝影遠端播放程式](../platform-capabilities-and-apis/holographic-remoting-player.md)下載到您的 HoloLens 裝置。 這可讓您的應用程式從下列來源直接串流至 HoloLens 上的遠端播放程式：
+若要開始使用，您必須將[全像攝影遠端播放程式](../platform-capabilities-and-apis/holographic-remoting-player.md)下載到您的 HoloLens 裝置。 全像攝影遠端播放程式可讓您的應用程式從下列來源直接串流至 HoloLens 上的遠端播放程式：
 
 * Unreal Engine 編輯器
 * 已封裝的 Windows 可執行檔 
 
-進行串流時，您可以存取您在裝置上執行應用程式時可用的絕大多數 HoloLens 功能。 其中包括[手部關節追蹤](unreal-hand-tracking.md) (如果您是在 HoloLens 2 上)、[空間對應](unreal-spatial-mapping.md)和[空間錨點](unreal-spatial-anchors.md)，但不包括此[限制清單](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md)上的功能。 
+進行串流時，您可以存取您在裝置上執行應用程式時可用的絕大多數 HoloLens 功能。 其中包括[手部關節追蹤](unreal-hand-tracking.md) (如果您是在 HoloLens 2 上)、[空間對應](unreal-spatial-mapping.md)和[空間錨點](unreal-spatial-anchors.md)，但不包括此[清單](../platform-capabilities-and-apis/holographic-remoting-troubleshooting.md)上的功能。 
 
 > [!NOTE]
 > * 串流品質高度取決於您的 wifi 網路強度。
@@ -45,7 +44,7 @@ ms.locfileid: "94679777"
     </colgroup>
     <tr>
         <td><strong>來源</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens 第一代</strong></a></td>
         <td><a href="https://www.microsoft.com/hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><strong>沉浸式頭戴裝置</strong></td>
     </tr>
@@ -68,14 +67,14 @@ ms.locfileid: "94679777"
 
 身為開發人員，您會發現從 Unreal 編輯器串流至 HoloLens 裝置可在測試時提供很大的好處，也就是您不再需要等到應用程式完成建置和部署，才能試用您的更新。
 
-您可以在「開始使用 Unreal」教學課程系列的最後一節中，找到[從 Unreal 編輯器進行串流](tutorials/unreal-uxt-ch6.md#device-only-streaming)的詳細指示。
+您可以在教學課程系列中找到[從 Unreal 編輯器進行串流](tutorials/unreal-uxt-ch6.md#device-only-streaming)的詳細指示。
 
 ## <a name="streaming-from-a-packaged-windows-executable"></a>從已封裝的 Windows 可執行檔進行串流
 
-從 Unreal 4.25.1 開始，您可以依照下列步驟，從已封裝的 Windows 可執行檔將應用程式串流至 HoloLens 2 裝置： 
+在 Unreal 4.25.1 和後續版本中，您可以從已封裝的 Windows 可執行檔將應用程式串流至 HoloLens 2 裝置： 
 
 1. 在 [編輯器] 功能表中，移至 [檔案] > [封裝專案] > [Windows]。 
-    * 選擇要儲存套件的位置，然後按一下 [選取資料夾]。
+    * 選擇要儲存套件的位置，然後選取 [選取資料夾]。
 
 2. 套件完成建置後，請在 HoloLens 2 上開啟 [全像攝影遠端播放程式]，並記下 IP 位址。 
 3. 將 [全像攝影遠端播放程式] 保持開啟，並使用命令列提示字元執行下列動作： 
@@ -88,6 +87,7 @@ ms.locfileid: "94679777"
 按 Enter 鍵，您的應用程式即會開始串流！
 
 ## <a name="see-also"></a>另請參閱
+
 * [全像攝影遠端處理版本歷程記錄](../platform-capabilities-and-apis/holographic-remoting-version-history.md)
 * [撰寫自訂全像攝影遠端播放應用程式](../platform-capabilities-and-apis/holographic-remoting-create-player.md)
 * [建立全像攝影遠端處理的連線安全](../platform-capabilities-and-apis/holographic-remoting-secure-connection.md)

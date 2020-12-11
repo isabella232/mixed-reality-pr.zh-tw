@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: cdd2b613535080b371807020670a2785274c29f5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: f4f9a04a2de5e2c10bc43770bb1bfe9d00f3a4b6
+ms.sourcegitcommit: d56e7dd6c917ddc4ead0792ebff21891921174b9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696268"
+ms.lasthandoff: 12/03/2020
+ms.locfileid: "96564063"
 ---
 # <a name="available-in-mrtk"></a>[適用於 MRTK](#tab/mrtk)
 
 |  功能  |  功能  |
 | --- | --- |
-| [輸入模擬](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/InputSimulation.md) | 在編輯器中使用滑鼠和鍵盤輸入，模擬頭戴式顯示器 (HMD) 和手部追蹤功能 |
-| [手部互動](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/HandInteraction.md) | 使用關節手部輸入與 UX 元件互動 |
-| [可點按的按鈕元件](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/PressableButton.md) | 透過低階元件驅動按鈕藍圖的狀態 |
-| [操作工具元件](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/Manipulator.md) | 使用單手或雙手操作輸入來移動和旋轉動作項目 |
-| [追蹤行為元件](https://github.com/microsoft/MixedReality-UXTools-Unreal/blob/public/0.8.x/Docs/FollowComponent.md) | 將動作項目或元件保持在另一個元件的可見範圍內 |
+| [輸入模擬](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/InputSimulation.html) | 在編輯器中使用滑鼠和鍵盤輸入，模擬頭戴式顯示器 (HMD) 和手部追蹤功能 |
+| [手部互動](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html) | 使用關節手部輸入與 UX 元件互動 |
+| [可點按的按鈕](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/PressableButton.html) | 透過低階元件驅動按鈕藍圖的狀態 |
+| [操作工具](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Manipulator.html) | 使用單手或雙手操作輸入來移動和旋轉動作項目 |
+| [追蹤行為](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/FollowComponent.html) | 將動作項目或元件保持在另一個元件的可見範圍內 |
 
 # <a name="standalone-features"></a>[獨立功能](#tab/standalone)
 

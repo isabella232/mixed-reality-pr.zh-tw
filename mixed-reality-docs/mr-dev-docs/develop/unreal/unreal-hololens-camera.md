@@ -2,21 +2,21 @@
 title: Unreal 中的 HoloLens 相片/影片相機
 description: 在 Unreal 中使用 HoloLens 相片/影片相機的指南
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 相機, PV 相機, MRC, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: ef557bc6492ced6bb9b3c47a8cccc897e33b76c1
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: c0c6e06e66e03934912906dbff5a93f9271a68b6
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354583"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609601"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal 中的 HoloLens 相片/影片相機
 
-HoloLens 的面板上有相片/影片 (PV) 相機，不僅可用於混合實境擷取 (MRC)，也可供應用程式用來透過相機框架中的像素座標定位 Unreal 世界空間中的物件。
+HoloLens 的面板上有相片/影片 (PV) 相機，不僅可用於混合實境擷取 (MRC)，也可用來透過相機框架中的像素座標定位 Unreal 世界空間中的物件。
 
 > [!IMPORTANT]
 > PV 攝影機不支援全像攝影遠端功能，但可以使用連接到您電腦的網路攝影機來模擬 HoloLens PV 攝影機功能。
@@ -25,7 +25,7 @@ HoloLens 的面板上有相片/影片 (PV) 相機，不僅可用於混合實境�
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-依循我們配置的 Unreal 開發檢查點旅程，此時您會探索混合實境平台功能和 API。 接下來，您可以繼續進行下一個主題：
+依循我們配置的 Unreal 開發旅程，此時您會探索混合實境平台功能和 API。 接下來，您可以繼續進行下一個主題：
 
 > [!div class="nextstepaction"]
 > [QR 代碼](unreal-qr-codes.md)

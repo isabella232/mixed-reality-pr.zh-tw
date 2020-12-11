@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5952cf94ba07a6d92903050a2a813cc911d4d70f
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: a8258f1ba99fdd1607014624c4ad4d6ec0a8e330
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354593"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609602"
 ---
 # <a name="425"></a>[4.25](#tab/425)
 
@@ -13,9 +13,9 @@ ms.locfileid: "96354593"
 > [!NOTE]
 > 這需要 **Unreal Engine 4.25** 或更新版本。
 
-系統和自訂 MRC 錄製器，藉由結合 PV 相機與沉浸式應用程式所呈現的全像投影，建立混合實境。
+系統和自訂 MRC 錄製器，藉由結合 PV 相機與應用程式所呈現的全像投影，建立混合實境。
 
-根據預設，混合實境擷取會使用右眼的全像投影輸出。 如果沉浸式應用程式選擇[從 PV 相機呈現](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)，則會改用此功能。 這樣可以改善實際世界與 MRC 影片中全像投影之間的對應。
+根據預設，混合實境擷取會使用右眼的全像投影輸出。 如果沉浸式應用程式選擇[從 PV 相機呈現](../../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in)，則會改用此功能。 從 PV 相機呈現可以改善實際世界與 MRC 影片中全像投影之間的對應。
 
 若要選擇從 PV 相機呈現：
 
@@ -51,7 +51,7 @@ ms.locfileid: "96354593"
 
 ![網路攝影機的相機紋理](../images/unreal-camera-texture.PNG)
 
-5. 確定材質有一個參數符合 **SetTextureParameterValue** 中繫結至色彩項目的名稱。 若非如此，就無法適當地顯示相機影像。
+5. 確定材質有一個參數符合 **SetTextureParameterValue** 中繫結至色彩項目的名稱。 如果沒有參數，相機影像就無法正確顯示。
 
 ![相機紋理](../images/unreal-camera-material.PNG)
 
@@ -91,13 +91,13 @@ ms.locfileid: "96354593"
 
 ## <a name="find-camera-positions-in-world-space"></a>尋找世界空間中的相機位置
 
-HoloLens 2 上的相機會與裝置的頭部追蹤垂直偏移。  為因應此情況，有幾個函式可用來定位世界空間中的相機。
+HoloLens 2 上的相機會與裝置的頭部追蹤垂直偏移。  有幾個函式可用來定位世界空間中的相機，以因應此情況。
 
-GetPVCameraToWorldTransform 會取得 PVCamera 世界空間的轉換。  這會放置於相機鏡頭上：
+GetPVCameraToWorldTransform 會取得 PV 相機世界空間中的轉換，並將其定位在相機鏡頭上：
 
 ![藍圖：取得 PVCamera 對世界轉換函式](../images/unreal-pvc-img-08.png)
 
-GetWorldSpaceRayFromCameraPoint 會從相機鏡頭射出光線到 Unreal 世界空間中的場景，以找出相機框架中特定像素上有何項目：
+GetWorldSpaceRayFromCameraPoint 會從相機鏡頭射出光線到 Unreal 世界空間中的場景，以找出相機框架中特定像素的內容：
 
 ![藍圖：取得從相機位置點射出的世界空間光線](../images/unreal-pvc-img-09.png)
 
@@ -105,7 +105,7 @@ GetPVCameraIntrinsics 會傳回相機內建值，這可在對相機框架進行�
 
 ![藍圖：取得 PVCamera 內建函式](../images/unreal-pvc-img-10.png)
 
-若要找出世界空間內的特定像素座標上有何項目，您可以搭配使用光線追蹤與世界空間光線：
+若要找出世界空間內的特定像素座標上有何項目，請搭配使用光線追蹤與世界空間光線：
 
 ![藍圖：世界空間光線，用來找出世界空間內的特定座標上有何項目](../images/unreal-pvc-img-11.png)
 

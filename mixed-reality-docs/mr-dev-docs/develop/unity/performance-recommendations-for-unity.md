@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 圖形, cpu, gpu, 轉譯, 記憶體回收行程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 2c5a459f673889dd4c52043f9b9df6a3fe43a93a
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
+ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696318"
+ms.lasthandoff: 12/07/2020
+ms.locfileid: "96761770"
 ---
 # <a name="performance-recommendations-for-unity"></a>對 Unity 的效能建議
 
@@ -120,9 +120,9 @@ public class ExampleClass : MonoBehaviour
 
 3) **注意 Box 處理**
 
-    [Box 處理](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)是 C# 語言和執行時間的核心概念。 這是將實值類型變數 (例如 char、int、bool 等) 包裝成參考類型變數的程序。 當實值類型變數為 "boxed" 時，會包裝在儲存於受管理堆積上的 System.Object 中。 因此，系統會配置記憶體，且最終在處置時必須由記憶體回收行程處理。 這些配置和取消配置會產生效能成本，且在許多情況下並不需要，或是可以輕鬆地以較不昂貴的替代方案來取代。
+    [Box 處理](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)是 C# 語言和執行時間的核心概念。 這是將實值類型變數 (例如 `char`、`int`、`bool` 等) 包裝成參考類型變數的程序。 當實值類型變數為 "boxed" 時，會包裝在儲存於受管理堆積上的 `System.Object` 中。 因此，系統會配置記憶體，且最終在處置時必須由記憶體回收行程處理。 這些配置和取消配置會產生效能成本，且在許多情況下並不需要，或是可以輕鬆地以較不昂貴的替代方案來取代。
 
-    開發中最常見的 Box 處理形式之一，是使用[可為 Null 的實值類型](https://docs.microsoft.com//dotnet/csharp/programming-guide/nullable-types/)。 通常會想要能夠針對函式中的實值類型傳回 null，特別是當作業嘗試取得值時，可能會失敗。 這種方法的潛在問題，是現在會在堆積上進行配置，因此需要在稍後進行記憶體回收行程。
+    若要避免 Box 處理，請確定您用來儲存數值類型和結構 (包括 `Nullable<T>`) 的變數、欄位和屬性已強型別化為特定類型 (例如 `int`、`float?` 或 `MyStruct`)，而不是使用物件。  如果將這些物件放入清單中，請務必使用強型別清單 (例如 `List<int>`)，而不是 `List<object>` 或 `ArrayList`。
 
     **C# 中的 Box 處理範例**
 
@@ -130,21 +130,6 @@ public class ExampleClass : MonoBehaviour
     // boolean value type is boxed into object boxedMyVar on the heap
     bool myVar = true;
     object boxedMyVar = myVar;
-    ```
-
-    **透過可為 Null 的實值類型進行有問題 Box 處理的範例**
-
-    此程式碼會示範一個可在 Unity 專案中建立的虛擬粒子類別。 呼叫 `TryGetSpeed()` 將會導致堆積上的物件配置，而這將需要在稍後的時間點進行記憶體回收行程。 這個範例特別有問題，因為場景中可能有超過 1000 個以上的粒子，而每個粒子都被要求其目前的速度。 因此，1000 多個物件會受到配置，因而每個畫面格都會解除配置，這會大幅降低效能。 重新撰寫函式以傳回負數值 (例如 -1) 來表示失敗則可避免這個問題，並將記憶體保留在堆疊上。
-
-    ```csharp
-        public class MyParticle
-        {
-            // Example of function returning nullable value type
-            public int? TryGetSpeed()
-            {
-                // Returns current speed int value or null if fails
-            }
-        }
     ```
 
 #### <a name="repeating-code-paths"></a>重複的程式碼路徑
@@ -219,7 +204,7 @@ public class ExampleClass : MonoBehaviour
 
 ## <a name="cpu-to-gpu-performance-recommendations"></a>CPU 對 GPU 效能建議
 
-一般來說，CPU 對 GPU 的效能會降至提交到圖形卡的 **繪製呼叫** 。 為改善效能，必須策略性地將繪製呼叫 **降低** 或 **重建** ，以獲得最佳結果。 由於繪製呼叫本身會耗用大量資源，因此減少繪製呼叫會降低所需的整體工作量。 此外，在繪製呼叫之間的狀態變更需要在圖形驅動程式中進行高成本驗證和轉譯步驟，因此，重建應用程式的繪製呼叫來限制狀態變更 (亦即 不同的資料等) 可以提升效能。
+一般來說，CPU 對 GPU 的效能會降至提交到圖形卡的 **繪製呼叫**。 為改善效能，必須策略性地將繪製呼叫 **降低** 或 **重建**，以獲得最佳結果。 由於繪製呼叫本身會耗用大量資源，因此減少繪製呼叫會降低所需的整體工作量。 此外，在繪製呼叫之間的狀態變更需要在圖形驅動程式中進行高成本驗證和轉譯步驟，因此，重建應用程式的繪製呼叫來限制狀態變更 (亦即 不同的資料等) 可以提升效能。
 
 Unity 有一篇很棒的文章，可讓您大致瞭解並探討其平台的批次繪製呼叫。
 - [Unity 繪製呼叫批次處理](https://docs.unity3d.com/Manual/DrawCallBatching.html)
@@ -249,7 +234,7 @@ Unity 能夠批次處理許多靜態物件，以減少對 GPU 的繪製呼叫。
 
 #### <a name="dynamic-batching"></a>動態批次處理
 
-由於將 HoloLens 開發的物件標示為「靜態」會有問題，因此動態批次處理可能是彌補這項缺乏功能的絕佳工具。 當然，該功能也適用於沉浸式頭戴裝置。 不過，Unity 中的動態批次處理可能難以啟用，因為 GameObject 必須 **a) 共用相同的資料** 且 **b) 符合一長串的其他條件** 。
+由於將 HoloLens 開發的物件標示為「靜態」會有問題，因此動態批次處理可能是彌補這項缺乏功能的絕佳工具。 當然，該功能也適用於沉浸式頭戴裝置。 不過，Unity 中的動態批次處理可能難以啟用，因為 GameObject 必須 **a) 共用相同的資料** 且 **b) 符合一長串的其他條件**。
 
 如需完整清單，請參閱[在 Unity 中繪製呼叫批次處理](https://docs.unity3d.com/Manual/DrawCallBatching.html)中的「動態批次處理」。 最常見的情況是，因為相關聯的網格資料不能超過 300 個頂點，所以 GameObject 會變成無效而無法動態地進行批次處理。
 

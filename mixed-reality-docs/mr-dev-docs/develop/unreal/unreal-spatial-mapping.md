@@ -2,21 +2,21 @@
 title: Unreal 中的空間對應
 description: 在 Unreal 中使用空間對應的指南
 author: hferrone
-ms.author: v-hferrone
+ms.author: jacksonf
 ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 空間對應, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 878eae5f5fd0b7a1630511faa23c1477455ed988
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: bde5a1b53f6ad90bc84f54bd3e4f1237b78f2abe
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354370"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609419"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal 中的空間對應
 
-空間對應可讓您將物件放在實體世界的表面上，方法是在 HoloLens 周圍顯示世界，這使得全像投影對使用者來說看起來更真實。 空間對應也會利用真實世界的深度提示，來錨定使用者世界中的物件。這有助於說服使用者這些全像投影實際在其空間內；在空間中浮動或隨著使用者移動的全像投影，將不會覺得真實。 您想要盡可能地將項目放在舒適的位置。
+空間對應可讓您將物件放在真實世界的實體表面上。 對應了 HoloLens 周圍的環境後，對使用者而言，全像投影看起來會更真實。 空間對應也會利用深度提示將物件錨定在使用者所處的環境中，這樣更能說服使用者這些全像投影真的在其空間中。 浮動於空間中或隨著使用者移動的全像投影會缺乏真實感，因此您應盡可能放置物品，以營造舒適感。
 
 若要深入了解空間對應品質、放置、遮蔽、轉譯等等，請參閱[空間對應](../../design/spatial-mapping.md)文件。
 
@@ -46,7 +46,7 @@ ms.locfileid: "96354370"
 
 - **每立方米的三角形數量上限計量** 會更新空間對應網格中三角形的密度。  
 - **空間網格體積大小** 是玩家周圍用來呈現和更新空間對應資料的立方體大小。  
-    + 如果預期的應用程式執行階段環境預期會很大，此值可能需要很大，才能符合真實世界的空間。  另一方面，如果應用程式只需要在使用者附近的表面上放置全像投影，則此值可能會比較小。 當使用者在世界中行走時，空間對應體積會隨著他們移動。 
+    + 如果預期的應用程式執行階段環境預期會很大，此值可能需要很大，才能符合真實世界的空間。 如果應用程式只需要在使用者附近的表面上放置全像投影，則此值可能會比較小。 當使用者在世界中行走時，空間對應體積會隨著他們移動。 
 
 ## <a name="working-with-mrmesh"></a>使用 MongoDB
 
@@ -62,7 +62,7 @@ ms.locfileid: "96354370"
 ![空間錨點的 AR Trackable Notify](images/unreal-spatialmapping-artrackablenotify.PNG)
 
 2. 選取 **ARTrackableNotify** 元件，然後展開 [詳細資料] 面板中的 [事件] 區段。 
-    - 對您要監視的事件按一下 **+** 按鈕。 
+    - 對您要監視的事件選取 **+** 按鈕。 
 
 ![空間錨點事件](images/unreal-spatialmapping-events.PNG)
 

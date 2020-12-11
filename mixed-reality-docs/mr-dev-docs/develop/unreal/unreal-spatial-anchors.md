@@ -7,18 +7,16 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 空間錨點, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354475"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609629"
 ---
 # <a name="local-spatial-anchors-in-unreal"></a>Unreal 中的本機空間錨點
 
-## <a name="overview"></a>概觀
-
-空間錨點是用來在應用程式工作階段之間，在真實世界空間中儲存全像投影。 這些會透過 Unreal 呈現為 **ARPins**，並儲存在 HoloLens 的錨點存放區中，可在未來的工作階段中載入。 本機錨點是沒有網際網路連線時的理想後援。
+空間錨點能夠以 **ARPin** 的形式將全像投影儲存在應用程式工作階段之間的真實世界空間中。 ARPin 儲存在 HoloLens 的錨定存放區之後，就可以在未來的工作階段中載入，且在沒有網際網路連線時，將是理想的備用選項。
 
 > [!NOTE]
 > UE 4.25 的錨點函式在 4.26 已過時，請以較新的函式加以取代。 
@@ -34,7 +32,7 @@ ms.locfileid: "96354475"
 
 ## <a name="saving-anchors"></a>儲存錨點
 
-一旦應用程式具有需要釘選到世界的元件，就可以下列序列儲存到錨點存放區： 
+一旦應用程式具有您需要釘選到世界的元件，就可以下列序列儲存到錨點存放區： 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
@@ -44,7 +42,7 @@ ms.locfileid: "96354475"
 3. 將動作項目新增至 **ARPin**，並將圖釘儲存至 HoloLens 錨點存放區。  
     * 您選擇的錨點名稱必須是唯一的，在這個範例中，其為目前的時間戳記。 
 
-4. 如果錨點成功儲存至錨點存放區，則您可以在 [系統] > [對應管理員] > [裝置上儲存的錨點檔案] 底下的 HoloLens 裝置入口網站中，檢查該錨點。 
+4. 如果錨點成功儲存至錨點存放區，則您可以在 [系統] > [對應管理員] > [裝置上儲存的錨點檔案] 底下的 HoloLens 裝置入口網站中查看該錨點。 
 
 ## <a name="loading-anchors"></a>載入錨點
 
@@ -72,7 +70,7 @@ ms.locfileid: "96354475"
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
+依循我們配置的 Unreal 開發旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊： 
 
 > [!div class="nextstepaction"]
 > [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)
