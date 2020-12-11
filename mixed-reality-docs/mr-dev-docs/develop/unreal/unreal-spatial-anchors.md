@@ -7,84 +7,82 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 空間錨點, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 8be1521d44a9dda521c1570d3ac55955e475bc30
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: b517b1d89ddf7a35864db45a17336f4493816526
+ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354475"
+ms.lasthandoff: 12/04/2020
+ms.locfileid: "96609629"
 ---
-# <a name="local-spatial-anchors-in-unreal"></a><span data-ttu-id="1a555-104">Unreal 中的本機空間錨點</span><span class="sxs-lookup"><span data-stu-id="1a555-104">Local Spatial Anchors in Unreal</span></span>
+# <a name="local-spatial-anchors-in-unreal"></a><span data-ttu-id="dda93-104">Unreal 中的本機空間錨點</span><span class="sxs-lookup"><span data-stu-id="dda93-104">Local Spatial Anchors in Unreal</span></span>
 
-## <a name="overview"></a><span data-ttu-id="1a555-105">概觀</span><span class="sxs-lookup"><span data-stu-id="1a555-105">Overview</span></span>
-
-<span data-ttu-id="1a555-106">空間錨點是用來在應用程式工作階段之間，在真實世界空間中儲存全像投影。</span><span class="sxs-lookup"><span data-stu-id="1a555-106">Spatial anchors are used to save holograms in real-world space between application sessions.</span></span> <span data-ttu-id="1a555-107">這些會透過 Unreal 呈現為 **ARPins**，並儲存在 HoloLens 的錨點存放區中，可在未來的工作階段中載入。</span><span class="sxs-lookup"><span data-stu-id="1a555-107">These get surfaced through Unreal as **ARPin** s and saved in the HoloLens’ anchor store, which is loaded in future sessions.</span></span> <span data-ttu-id="1a555-108">本機錨點是沒有網際網路連線時的理想後援。</span><span class="sxs-lookup"><span data-stu-id="1a555-108">Local anchors are ideal as a fallback when there is no internet connectivity.</span></span>
+<span data-ttu-id="dda93-105">空間錨點能夠以 **ARPin** 的形式將全像投影儲存在應用程式工作階段之間的真實世界空間中。</span><span class="sxs-lookup"><span data-stu-id="dda93-105">Spatial anchors save holograms in real-world space between application sessions as **ARPin** s.</span></span> <span data-ttu-id="dda93-106">ARPin 儲存在 HoloLens 的錨定存放區之後，就可以在未來的工作階段中載入，且在沒有網際網路連線時，將是理想的備用選項。</span><span class="sxs-lookup"><span data-stu-id="dda93-106">Once saved in the HoloLens' anchor store, ARPin's can be loaded in future sessions and are an ideal fallback option when there's no internet connectivity.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="1a555-109">UE 4.25 的錨點函式在 4.26 已過時，請以較新的函式加以取代。</span><span class="sxs-lookup"><span data-stu-id="1a555-109">Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones.</span></span> 
+> <span data-ttu-id="dda93-107">UE 4.25 的錨點函式在 4.26 已過時，請以較新的函式加以取代。</span><span class="sxs-lookup"><span data-stu-id="dda93-107">Anchor functions from UE 4.25 are obsolete in 4.26 and should be replaced with newer ones.</span></span> 
 
 > [!IMPORTANT]
-> <span data-ttu-id="1a555-110">本機錨點會儲存在裝置上，而 Azure Spatial Anchors 會儲存在雲端。</span><span class="sxs-lookup"><span data-stu-id="1a555-110">Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud.</span></span> <span data-ttu-id="1a555-111">如果您想要使用 Azure 雲端服務來儲存您的錨點，我們有一份文件可引導您整合 [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)。</span><span class="sxs-lookup"><span data-stu-id="1a555-111">If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md).</span></span> <span data-ttu-id="1a555-112">請注意，您在同一個專案中可以有本機和 Azure 錨點，而不會發生衝突。</span><span class="sxs-lookup"><span data-stu-id="1a555-112">Note that you can have local and Azure anchors in the same project without conflict.</span></span>
+> <span data-ttu-id="dda93-108">本機錨點會儲存在裝置上，而 Azure Spatial Anchors 會儲存在雲端。</span><span class="sxs-lookup"><span data-stu-id="dda93-108">Local anchors are stored on device, while Azure Spatial Anchors are stored in the cloud.</span></span> <span data-ttu-id="dda93-109">如果您想要使用 Azure 雲端服務來儲存您的錨點，我們有一份文件可引導您整合 [Azure Spatial Anchors](unreal-azure-spatial-anchors.md)。</span><span class="sxs-lookup"><span data-stu-id="dda93-109">If you're looking to use Azure cloud services to store your anchors, we have a document that can walk you through integrating [Azure Spatial Anchors](unreal-azure-spatial-anchors.md).</span></span> <span data-ttu-id="dda93-110">請注意，您在同一個專案中可以有本機和 Azure 錨點，而不會發生衝突。</span><span class="sxs-lookup"><span data-stu-id="dda93-110">Note that you can have local and Azure anchors in the same project without conflict.</span></span>
 
-## <a name="checking-the-anchor-store"></a><span data-ttu-id="1a555-113">檢查錨定存放區</span><span class="sxs-lookup"><span data-stu-id="1a555-113">Checking the anchor store</span></span>
+## <a name="checking-the-anchor-store"></a><span data-ttu-id="dda93-111">檢查錨定存放區</span><span class="sxs-lookup"><span data-stu-id="dda93-111">Checking the anchor store</span></span>
 
-<span data-ttu-id="1a555-114">在儲存或載入錨點之前，必須先檢查錨點存放區是否準備就緒。</span><span class="sxs-lookup"><span data-stu-id="1a555-114">Before saving or loading anchors, you need to check if the anchor store is ready.</span></span>  <span data-ttu-id="1a555-115">在錨點存放區準備就緒之前，呼叫任何 HoloLens 錨點功能將會失敗。</span><span class="sxs-lookup"><span data-stu-id="1a555-115">Calling any of the HoloLens anchor functions before the anchor store is ready will not succeed.</span></span>  
+<span data-ttu-id="dda93-112">在儲存或載入錨點之前，必須先檢查錨點存放區是否準備就緒。</span><span class="sxs-lookup"><span data-stu-id="dda93-112">Before saving or loading anchors, you need to check if the anchor store is ready.</span></span>  <span data-ttu-id="dda93-113">在錨點存放區準備就緒之前，呼叫任何 HoloLens 錨點功能將會失敗。</span><span class="sxs-lookup"><span data-stu-id="dda93-113">Calling any of the HoloLens anchor functions before the anchor store is ready won't succeed.</span></span>  
 
 [!INCLUDE[](includes/tabs-sa-1.md)]
 
-## <a name="saving-anchors"></a><span data-ttu-id="1a555-116">儲存錨點</span><span class="sxs-lookup"><span data-stu-id="1a555-116">Saving anchors</span></span>
+## <a name="saving-anchors"></a><span data-ttu-id="dda93-114">儲存錨點</span><span class="sxs-lookup"><span data-stu-id="dda93-114">Saving anchors</span></span>
 
-<span data-ttu-id="1a555-117">一旦應用程式具有需要釘選到世界的元件，就可以下列序列儲存到錨點存放區：</span><span class="sxs-lookup"><span data-stu-id="1a555-117">Once the application has a component that needs to be pinned to the world, it can be saved to the anchor store with the following sequence:</span></span> 
+<span data-ttu-id="dda93-115">一旦應用程式具有您需要釘選到世界的元件，就可以下列序列儲存到錨點存放區：</span><span class="sxs-lookup"><span data-stu-id="dda93-115">Once the application has a component you need to pin to the world, it can be saved to the anchor store with the following sequence:</span></span> 
 
 [!INCLUDE[](includes/tabs-sa-2.md)]
 
-<span data-ttu-id="1a555-118">將此細分：</span><span class="sxs-lookup"><span data-stu-id="1a555-118">Breaking this down:</span></span>
-1. <span data-ttu-id="1a555-119">在已知位置繁衍動作項目。</span><span class="sxs-lookup"><span data-stu-id="1a555-119">Spawn an actor at a known location.</span></span>
-2. <span data-ttu-id="1a555-120">根據動作項目的類別，建立具有該位置和名稱的 **ARPin**。</span><span class="sxs-lookup"><span data-stu-id="1a555-120">Create an **ARPin** with that location and a name based on the actor’s class.</span></span> 
-3. <span data-ttu-id="1a555-121">將動作項目新增至 **ARPin**，並將圖釘儲存至 HoloLens 錨點存放區。</span><span class="sxs-lookup"><span data-stu-id="1a555-121">Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.</span></span>  
-    * <span data-ttu-id="1a555-122">您選擇的錨點名稱必須是唯一的，在這個範例中，其為目前的時間戳記。</span><span class="sxs-lookup"><span data-stu-id="1a555-122">The anchor name you choose must be unique, which in this example is the current timestamp.</span></span> 
+<span data-ttu-id="dda93-116">將此細分：</span><span class="sxs-lookup"><span data-stu-id="dda93-116">Breaking this down:</span></span>
+1. <span data-ttu-id="dda93-117">在已知位置繁衍動作項目。</span><span class="sxs-lookup"><span data-stu-id="dda93-117">Spawn an actor at a known location.</span></span>
+2. <span data-ttu-id="dda93-118">根據動作項目的類別，建立具有該位置和名稱的 **ARPin**。</span><span class="sxs-lookup"><span data-stu-id="dda93-118">Create an **ARPin** with that location and a name based on the actor’s class.</span></span> 
+3. <span data-ttu-id="dda93-119">將動作項目新增至 **ARPin**，並將圖釘儲存至 HoloLens 錨點存放區。</span><span class="sxs-lookup"><span data-stu-id="dda93-119">Add the actor to the **ARPin** and save the pin to the HoloLens anchor store.</span></span>  
+    * <span data-ttu-id="dda93-120">您選擇的錨點名稱必須是唯一的，在這個範例中，其為目前的時間戳記。</span><span class="sxs-lookup"><span data-stu-id="dda93-120">The anchor name you choose must be unique, which in this example is the current timestamp.</span></span> 
 
-4. <span data-ttu-id="1a555-123">如果錨點成功儲存至錨點存放區，則您可以在 [系統] > [對應管理員] > [裝置上儲存的錨點檔案] 底下的 HoloLens 裝置入口網站中，檢查該錨點。</span><span class="sxs-lookup"><span data-stu-id="1a555-123">If the anchor is successfully saved to the anchor store, you can be inspect it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**.</span></span> 
+4. <span data-ttu-id="dda93-121">如果錨點成功儲存至錨點存放區，則您可以在 [系統] > [對應管理員] > [裝置上儲存的錨點檔案] 底下的 HoloLens 裝置入口網站中查看該錨點。</span><span class="sxs-lookup"><span data-stu-id="dda93-121">If the anchor is successfully saved to the anchor store, you can see it in the HoloLens device portal under **System > Map manager > Anchor Files Saved On Device**.</span></span> 
 
-## <a name="loading-anchors"></a><span data-ttu-id="1a555-124">載入錨點</span><span class="sxs-lookup"><span data-stu-id="1a555-124">Loading anchors</span></span>
+## <a name="loading-anchors"></a><span data-ttu-id="dda93-122">載入錨點</span><span class="sxs-lookup"><span data-stu-id="dda93-122">Loading anchors</span></span>
 
-<span data-ttu-id="1a555-125">當應用程式啟動時，您可以使用下列藍圖來將元件還原至其錨點位置：</span><span class="sxs-lookup"><span data-stu-id="1a555-125">When an application starts, you can use the following blueprint to restore components to their anchor locations:</span></span>
+<span data-ttu-id="dda93-123">當應用程式啟動時，您可以使用下列藍圖來將元件還原至其錨點位置：</span><span class="sxs-lookup"><span data-stu-id="dda93-123">When an application starts, you can use the following blueprint to restore components to their anchor locations:</span></span>
 
 [!INCLUDE[](includes/tabs-sa-3.md)]
 
-<span data-ttu-id="1a555-126">將此細分：</span><span class="sxs-lookup"><span data-stu-id="1a555-126">Breaking this down:</span></span>
-1. <span data-ttu-id="1a555-127">逐一查看錨點存放區中的所有錨點。</span><span class="sxs-lookup"><span data-stu-id="1a555-127">Iterate over all of the anchors in the anchor store.</span></span> 
-2. <span data-ttu-id="1a555-128">在身分識別中繁衍動作項目。</span><span class="sxs-lookup"><span data-stu-id="1a555-128">Spawn an actor at identity.</span></span>
-3. <span data-ttu-id="1a555-129">從錨點存放區將該動作項目釘選到 **ARPin**。</span><span class="sxs-lookup"><span data-stu-id="1a555-129">Pin that actor to the **ARPin** from the anchor store.</span></span>  
+<span data-ttu-id="dda93-124">將此細分：</span><span class="sxs-lookup"><span data-stu-id="dda93-124">Breaking this down:</span></span>
+1. <span data-ttu-id="dda93-125">逐一查看錨點存放區中的所有錨點。</span><span class="sxs-lookup"><span data-stu-id="dda93-125">Iterate over all of the anchors in the anchor store.</span></span> 
+2. <span data-ttu-id="dda93-126">在身分識別中繁衍動作項目。</span><span class="sxs-lookup"><span data-stu-id="dda93-126">Spawn an actor at identity.</span></span>
+3. <span data-ttu-id="dda93-127">從錨點存放區將該動作項目釘選到 **ARPin**。</span><span class="sxs-lookup"><span data-stu-id="dda93-127">Pin that actor to the **ARPin** from the anchor store.</span></span>  
 
-    * <span data-ttu-id="1a555-130">請務必在身分識別繁衍動作項目，因為錨點會負責根據儲存位置在世界中重新放置全像投影。</span><span class="sxs-lookup"><span data-stu-id="1a555-130">It's important to spawn the actor at identity since the anchor is responsible for repositioning the hologram in the world based on where it was saved.</span></span> <span data-ttu-id="1a555-131">此處新增的任何轉換都會將位移新增至錨點。</span><span class="sxs-lookup"><span data-stu-id="1a555-131">Any transform added here will add an offset to the anchor.</span></span> 
+    * <span data-ttu-id="dda93-128">請務必在身分識別繁衍動作項目，因為錨點會負責根據儲存位置在世界中重新放置全像投影。</span><span class="sxs-lookup"><span data-stu-id="dda93-128">It's important to spawn the actor at identity since the anchor is responsible for repositioning the hologram in the world based on where it was saved.</span></span> <span data-ttu-id="dda93-129">此處新增的任何轉換都會將位移新增至錨點。</span><span class="sxs-lookup"><span data-stu-id="dda93-129">Any transform added here will add an offset to the anchor.</span></span> 
 
-<span data-ttu-id="1a555-132">也會查詢錨點識別碼，以便根據錨點的儲存名稱來繁衍不同的動作項目。</span><span class="sxs-lookup"><span data-stu-id="1a555-132">The anchor ID is also queried so that different actors can be spawned depending on the anchor’s saved name.</span></span> 
+<span data-ttu-id="dda93-130">也會查詢錨點識別碼，以便根據錨點的儲存名稱來繁衍不同的動作項目。</span><span class="sxs-lookup"><span data-stu-id="dda93-130">The anchor ID is also queried so that different actors can be spawned depending on the anchor’s saved name.</span></span> 
 
-## <a name="removing-anchors"></a><span data-ttu-id="1a555-133">移除錨點</span><span class="sxs-lookup"><span data-stu-id="1a555-133">Removing anchors</span></span> 
+## <a name="removing-anchors"></a><span data-ttu-id="dda93-131">移除錨點</span><span class="sxs-lookup"><span data-stu-id="dda93-131">Removing anchors</span></span> 
 
-<span data-ttu-id="1a555-134">當您完成錨點時，可以使用 **Remove ARPin from WMRAnchor Store** 和 **Remove All ARPins from WMRAnchor Store** 元件，清除個別錨點或整個錨點存放區。</span><span class="sxs-lookup"><span data-stu-id="1a555-134">When you're done with an anchor you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.</span></span>
+<span data-ttu-id="dda93-132">當您完成錨點時，可以使用 **Remove ARPin from WMRAnchor Store** 和 **Remove All ARPins from WMRAnchor Store** 元件，清除個別錨點或整個錨點存放區。</span><span class="sxs-lookup"><span data-stu-id="dda93-132">When you're done with an anchor, you can clear individual anchors or the entire anchor store with the **Remove ARPin from WMRAnchor Store** and **Remove All ARPins from WMRAnchor Store** components.</span></span>
 
 [!INCLUDE[](includes/tabs-sa-4.md)]
 
 > [!NOTE]
-> <span data-ttu-id="1a555-135">請記住，空間錨點仍是 Beta 版，因此請務必回頭查看是否有更新的資訊和功能。</span><span class="sxs-lookup"><span data-stu-id="1a555-135">Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.</span></span>
+> <span data-ttu-id="dda93-133">請記住，空間錨點仍是 Beta 版，因此請務必回頭查看是否有更新的資訊和功能。</span><span class="sxs-lookup"><span data-stu-id="dda93-133">Bear in mind that Spatial Anchors are still in Beta, so be sure to check back for updated information and features.</span></span>
 
-## <a name="next-development-checkpoint"></a><span data-ttu-id="1a555-136">下一個開發檢查點</span><span class="sxs-lookup"><span data-stu-id="1a555-136">Next Development Checkpoint</span></span>
+## <a name="next-development-checkpoint"></a><span data-ttu-id="dda93-134">下一個開發檢查點</span><span class="sxs-lookup"><span data-stu-id="dda93-134">Next Development Checkpoint</span></span>
 
-<span data-ttu-id="1a555-137">依循我們配置的 Unreal 開發檢查點旅程，此時您會探索 MRTK核心建置組塊。</span><span class="sxs-lookup"><span data-stu-id="1a555-137">If you're following the Unreal development checkpoint journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="1a555-138">接下來，您可以繼續進行下一個建置組塊：</span><span class="sxs-lookup"><span data-stu-id="1a555-138">From here, you can proceed to the next building block:</span></span> 
-
-> [!div class="nextstepaction"]
-> [<span data-ttu-id="1a555-139">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="1a555-139">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
-
-<span data-ttu-id="1a555-140">或者，直接跳到混合實境平台功能和 API 的主題：</span><span class="sxs-lookup"><span data-stu-id="1a555-140">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
+<span data-ttu-id="dda93-135">依循我們配置的 Unreal 開發旅程，此時您會探索 MRTK核心建置組塊。</span><span class="sxs-lookup"><span data-stu-id="dda93-135">If you're following the Unreal development journey we've laid out, you're in the midst of exploring the MRTK core building blocks.</span></span> <span data-ttu-id="dda93-136">接下來，您可以繼續進行下一個建置組塊：</span><span class="sxs-lookup"><span data-stu-id="dda93-136">From here, you can continue to the next building block:</span></span> 
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="1a555-141">HoloLens 相機</span><span class="sxs-lookup"><span data-stu-id="1a555-141">HoloLens camera</span></span>](unreal-hololens-camera.md)
+> [<span data-ttu-id="dda93-137">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="dda93-137">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
 
-<span data-ttu-id="1a555-142">您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks)。</span><span class="sxs-lookup"><span data-stu-id="1a555-142">You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.</span></span>
+<span data-ttu-id="dda93-138">或者，直接跳到混合實境平台功能和 API 的主題：</span><span class="sxs-lookup"><span data-stu-id="dda93-138">Or jump to Mixed Reality platform capabilities and APIs:</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="1a555-143">另請參閱</span><span class="sxs-lookup"><span data-stu-id="1a555-143">See also</span></span>
-* [<span data-ttu-id="1a555-144">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="1a555-144">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
-* [<span data-ttu-id="1a555-145">空間錨點</span><span class="sxs-lookup"><span data-stu-id="1a555-145">Spatial anchors</span></span>](../../design/spatial-anchors.md)
-* [<span data-ttu-id="1a555-146">座標系統</span><span class="sxs-lookup"><span data-stu-id="1a555-146">Coordinate systems</span></span>](../../design/coordinate-systems.md)
+> [!div class="nextstepaction"]
+> [<span data-ttu-id="dda93-139">HoloLens 相機</span><span class="sxs-lookup"><span data-stu-id="dda93-139">HoloLens camera</span></span>](unreal-hololens-camera.md)
+
+<span data-ttu-id="dda93-140">您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks)。</span><span class="sxs-lookup"><span data-stu-id="dda93-140">You can always go back to the [Unreal development checkpoints](unreal-development-overview.md#2-core-building-blocks) at any time.</span></span>
+
+## <a name="see-also"></a><span data-ttu-id="dda93-141">另請參閱</span><span class="sxs-lookup"><span data-stu-id="dda93-141">See also</span></span>
+* [<span data-ttu-id="dda93-142">Azure Spatial Anchors</span><span class="sxs-lookup"><span data-stu-id="dda93-142">Azure Spatial Anchors</span></span>](unreal-azure-spatial-anchors.md)
+* [<span data-ttu-id="dda93-143">空間錨點</span><span class="sxs-lookup"><span data-stu-id="dda93-143">Spatial anchors</span></span>](../../design/spatial-anchors.md)
+* [<span data-ttu-id="dda93-144">座標系統</span><span class="sxs-lookup"><span data-stu-id="dda93-144">Coordinate systems</span></span>](../../design/coordinate-systems.md)
