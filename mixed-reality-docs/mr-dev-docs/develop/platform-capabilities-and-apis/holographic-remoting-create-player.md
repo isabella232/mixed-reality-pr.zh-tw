@@ -1,26 +1,26 @@
 ---
 title: 撰寫自訂全像攝影遠端播放程式
-description: 藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以將在遠端電腦上轉譯的內容顯示到您的 HoloLens 2。 本文說明如何達成此目的。
+description: 藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以顯示在遠端電腦上轉譯的內容到您的 HoloLens 2。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像 Remoting、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 69dc382873eb4fe0dc50f6f55e074c3491b02c02
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443638"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102893"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>撰寫自訂全像攝影遠端播放應用程式
 
 >[!IMPORTANT]
 >本檔說明如何建立 HoloLens 2 的自訂播放程式應用程式。 針對 HoloLens 2 撰寫的自訂播放程式與針對 HoloLens 1 所撰寫的遠端應用程式不相容。 這表示這兩個應用程式都必須使用 NuGet 套件 **2.x 版。**
 
-藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，使其能夠在 HoloLens 2 上的遠端電腦上顯示 [沉浸式的視圖](../../design/app-views.md) 。 本文說明如何達成此目的。 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
+藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以便在 HoloLens 2 上的遠端電腦上顯示 [沉浸式視圖](../../design/app-views.md) 。 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
 
-全像遠端播放機可讓您的應用程式顯示在桌上型電腦上或 UWP 裝置（例如 Xbox One）上 [轉譯的全息內容，](rendering.md) 以允許存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，您將會使用 NuGet 套件將全像是您的 UWP 應用程式新增至 UWP 應用程式，並撰寫程式碼來處理連接以及顯示沉浸式視圖。 
+全像遠端播放機可讓您的應用程式顯示桌上型電腦或 UWP [裝置上轉譯的全](rendering.md) 像 Xbox One，並可存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，請使用 NuGet 套件將全像是在 UWP 應用程式中新增全像的遠端處理。 然後撰寫程式碼來處理連接，並顯示沉浸式視圖。 
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -34,10 +34,10 @@ ms.locfileid: "96443638"
 若要將 NuGet 套件新增至 Visual Studio 中的專案，必須執行下列步驟。
 1. 在 Visual Studio 中開啟專案。
 2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
-3. 在出現的面板中，按一下 **[流覽]** ，然後搜尋「全像的遠端處理」。
-4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後按一下 [ **安裝**]。
-5. 如果出現 [ **預覽** ] 對話方塊，請按一下 **[確定**]。
-6. 出現的下一個對話方塊是授權合約。 按一下 [ **我接受** ] 以接受授權合約。
+3. 在出現的面板中，選取 **[流覽]** ，然後搜尋「全像的遠端處理」。
+4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後選取 [ **安裝**]。
+5. 如果出現 [ **預覽** ] 對話方塊，請選取 **[確定]**。
+6. 當 [授權合約] 對話方塊出現時，選取 [ **我接受** ]。
 
 >[!IMPORTANT]
 ><a name="idl"></a>NuGet 套件內的包含適用于全像全像攝影的 ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` API 的詳細檔。
@@ -47,7 +47,7 @@ ms.locfileid: "96443638"
 若要讓應用程式知道 NuGet 套件所新增的 Microsoft.Holographic.AppRemoting.dll，必須在專案上採取下列步驟：
 
 1. 在 [方案總管以滑鼠右鍵按一下 **package.appxmanifest** 檔案，然後選取 [**開啟方式**...]。
-2. 選取 **XML (文字) 編輯器** ，然後按一下 [確定]
+2. 選取 **XML (文字) 編輯器** ，然後選取 **[確定]**
 3. 將下列幾行新增至檔案，並儲存
 ```xml
   </Capabilities>
@@ -124,7 +124,7 @@ catch(winrt::hresult_error& e)
 >[!IMPORTANT]
 >如同任何 c + +/WinRT API， ```Connect``` 可能會擲回需要處理的 WinRT：： hresult_error。
 
-您可以藉由呼叫方法來接聽播放程式應用程式上的連入連線 ```Listen``` 。 交握埠和傳輸埠都可以在此呼叫期間指定。 交握埠用於初始交握。 然後，資料會透過傳輸埠傳送。 預設會使用通訊埠編號 **8265** 和 **8266** 。
+您可以藉由呼叫方法來接聽播放程式應用程式上的連入連線 ```Listen``` 。 交握埠和傳輸埠都可以在此呼叫期間指定。 交握埠用於初始交握。 然後，資料會透過傳輸埠來傳送。 預設會使用通訊埠編號 **8265** 和 **8266** 。
 
 ```cpp
 try
@@ -148,7 +148,7 @@ m_onConnectedEventToken = m_playerContext.OnConnected([]()
     // Handle connection successfully established
 });
 ```
-2) OnDisconnected：在已建立的連接終止或無法建立連接時觸發。
+2) OnDisconnected：如果已建立的連接終止或無法建立連線，就會觸發。
 ```cpp
 m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailureReason failureReason)
 {
@@ -160,7 +160,7 @@ m_onDisconnectedEventToken = m_playerContext.OnDisconnected([](ConnectionFailure
 }
 ```
 >[!NOTE]
->可能 ```ConnectionFailureReason``` 的值記載于檔案 ```Microsoft.Holographic.AppRemoting.idl``` [file](#idl)中。
+>可能 ```ConnectionFailureReason``` 的值記載于檔案 ```Microsoft.Holographic.AppRemoting.idl``` [](#idl)中。
 
 3) OnListening：接聽連入連線開始時。
 ```cpp
@@ -206,15 +206,15 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 - 遠端應用程式已透過 HolographicCameraRenderingParameters 認可深度緩衝區 [。 CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_)。
 - 自訂播放程式應用程式在呼叫之前已系結有效的深度緩衝區 ```BlitRemoteFrame``` 。
 
-如果符合這些條件，則 ```BlitRemoteFrame``` 會將遠端深度 array.blit 至目前系結的本機深度緩衝區。 然後，您可以轉譯與遠端轉譯內容有深度交集的其他本機內容。 此外，您也可以在自訂播放程式中透過 [HolographicCameraRenderingParameters CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) 本機深度緩衝區，以取得遠端和本機呈現內容的深度 reprojection。 如需詳細資訊，請參閱 [深度 Reprojection](hologram-stability.md#reprojection) 。
+如果符合這些條件，則 ```BlitRemoteFrame``` 會將遠端深度 array.blit 至目前系結的本機深度緩衝區。 然後，您可以轉譯其他本機內容，這會與遠端轉譯的內容有深度交集。 此外，您也可以在自訂播放程式中透過 [HolographicCameraRenderingParameters CommitDirect3D11DepthBuffer](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer#Windows_Graphics_Holographic_HolographicCameraRenderingParameters_CommitDirect3D11DepthBuffer_Windows_Graphics_DirectX_Direct3D11_IDirect3DSurface_) 本機深度緩衝區，以取得遠端和本機呈現內容的深度 reprojection。 如需詳細資訊，請參閱 [深度 Reprojection](hologram-stability.md#reprojection) 。
 
 ### <a name="projection-transform-mode"></a>投射轉換模式
 
-透過全像 reprojection 使用深度時所呈現的一個問題，就是可以使用與自訂播放機應用程式直接轉譯的本機內容不同的投影轉換來轉譯遠端內容。 常見的使用案例是在播放程式端和遠端端透過 [HolographicCamera：： SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) 和 [HolographicCamera：： SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)) 指定不同的接近平面的值 (。 在此情況下，如果播放程式端的投射轉換應該反映遠端近/遠的平面距離或區域，則不會很清楚。
+其中一個問題是，透過全像 reprojection 使用深度時所呈現的問題，就是可以使用與自訂播放機應用程式直接轉譯的本機內容不同的投影轉換來轉譯遠端內容。 常見的使用案例是在播放程式端和遠端端透過 [HolographicCamera：： SetNearPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setnearplanedistance) 和 [HolographicCamera：： SetFarPlaneDistance](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.setfarplanedistance)) 指定不同的接近平面的值 (。 在此情況下，如果播放程式端的投射轉換應該反映遠端近/遠的平面距離或區域，則不會很清楚。
 
 從版本 [2.1.0](holographic-remoting-version-history.md#v2.1.0) 開始，您可以透過來控制投影轉換模式 ```PlayerContext::ProjectionTransformConfig``` 。 支援的值為：
 
-- ```Local``` - [HolographicCameraPose：:P rojectiontransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) 會傳回投影轉換，以反映 HolographicCamera 上您自訂播放程式應用程式所設定的近/遠平面距離。
+- ```Local``` - [HolographicCameraPose：:P rojectiontransform](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerapose.projectiontransform) 會傳回投影轉換，以反映您的自訂播放程式在 HolographicCamera 上所設定的近/遠平面距離。
 - ```Remote``` -投射轉換會反映遠端應用程式所指定的近/遠平面距離。
 - ```Merged``` -與遠端應用程式和自訂播放程式應用程式合併的近/遠平面距離。 根據預設，這是藉由最少接近平面距離和最大平面距離來完成。 如果遠端或本機端是反向的 < 接近，則會翻轉遠端近/遠的平面距離。
 
@@ -251,7 +251,7 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 自訂資料通道可以用來透過已建立的遠端連線來傳送使用者資料。 如需詳細資訊，請參閱 [自訂資料通道](holographic-remoting-custom-data-channels.md) 。
 
 ## <a name="see-also"></a>另請參閱
-* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 Windows Mixed Reality Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [自訂全像攝影遠端資料通道](holographic-remoting-custom-data-channels.md)
 * [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)

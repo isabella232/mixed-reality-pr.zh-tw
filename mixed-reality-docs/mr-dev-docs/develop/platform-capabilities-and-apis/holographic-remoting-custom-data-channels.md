@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像攝影遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、資料頻道
-ms.openlocfilehash: 119a08a7f0e41aca694184879e33aaf54160220c
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 6fd2bbd8ce2dedc3b13674576a23a0484ebe1419
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96443445"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102903"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>自訂全像攝影遠端資料通道
 
@@ -38,15 +38,15 @@ winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnDataReceived_revoker
 winrt::Microsoft::Holographic::AppRemoting::IDataChannel::OnClosed_revoker m_customChannelClosedEventRevoker;
 ```
 
-成功建立連接之後，就可以從遠端端和/或播放程式端起始新的資料通道建立。 RemoteCoNtext 和 PlayerCoNtext 都會提供 ```CreateDataChannel()``` 方法來進行這項作業。 第一個參數是通道識別碼，用來識別後續作業中的資料通道。 第二個參數是指定優先權的優先權，此通道的資料會傳送到另一端。 通道識別碼的有效範圍是0到（含）（最高），包括63（遠端端）和64（最高），並包括玩家端的127。 有效的優先順序是 ```Low``` ， ```Medium``` 或是雙方 ```High``` 的 () 。
+成功建立連接之後，您可以從遠端端、播放程式端或兩者建立新的資料通道。 RemoteCoNtext 和 PlayerCoNtext 都提供 ```CreateDataChannel()``` 建立資料通道的方法。 第一個參數是通道識別碼，用來識別後續作業中的資料通道。 第二個參數是優先順序，可指定此通道的資料會傳送到另一端的優先順序。 遠端端的有效通道識別碼是從0到（含）（包括63）和64（最高），並包含玩家端的127。 有效的優先順序 ```Low``` 是 ```Medium```) 兩側的、或 ```High``` (。
 
-若要在 **遠端** 起始建立資料通道：
+若要開始在 **遠端** 建立資料通道：
 ```cpp
 // Valid channel ids for channels created on the remote side are 0 up to and including 63
 m_remoteContext.CreateDataChannel(0, DataChannelPriority::Low);
 ```
 
-若要在 **播放** 程式端起始資料通道的建立：
+若要開始在 **播放** 程式端建立資料通道：
 ```cpp
 // Valid channel ids for channels created on the player side are 64 up to and including 127
 m_playerContext.CreateDataChannel(64, DataChannelPriority::Low);
@@ -114,7 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>另請參閱
-* [使用 Windows 混合 Realiy Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 Windows Mixed Reality Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)

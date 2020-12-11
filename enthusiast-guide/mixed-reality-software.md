@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
 - Windows 10
-ms.openlocfilehash: 76a913ae5890c908dda4e25d5b5c21554fdae7f0
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 0dd2ef30252189d006bfaf5702c47dce72f2798d
+ms.sourcegitcommit: d8db38647cf45f05b9445ceaf057d4cd01721ee6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011422"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97091302"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -26,7 +26,7 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
     * 在 Windows 10 版本1809和更新版本中，混合實境入口會透過 Microsoft Store 應用程式更新。
 2. **混合現實隨選封裝** (FOD) ，在混合實境入口首次執行時自動下載並安裝。 您可以在[這裡](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)找到 FOD 套件的詳細資訊
 3. **混合現實耳機和移動控制器驅動程式**（也稱為 HoloLens 感應器驅動程式）是可讓 Windows Mixed Reality 耳機使用 Windows Mixed Reality 的重要驅動程式套件。 這項功能會在您第一次插入混合現實耳機時，透過 Windows Update 自動下載和安裝，並透過 Windows Update 定期更新
-4. **混合現實移動控制器模型驅動程式**包含混合現實移動控制器的3d 模型，以及協力廠商混合現實體驗所需的模型。 這項功能會在您第一次將混合現實移動控制器配對至您的電腦時自動下載並安裝 Windows Update，並透過 Windows Update 進行更新
+4. **混合現實移動控制器模型驅動程式** 包含混合現實移動控制器的3d 模型，以及協力廠商混合現實體驗所需的模型。 這項功能會在您第一次將混合現實移動控制器配對至您的電腦時自動下載並安裝 Windows Update，並透過 Windows Update 進行更新
 5. **Windows 10，版本 1709 (秋季建立者的更新) 或更新版本** ，包含可啟用的主要作業系統元件和技術 Windows Mixed Reality
 
 此外，在 SteamVR 中使用 Windows Mixed Reality 需要下列軟體：
@@ -40,9 +40,9 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 
 ## <a name="windows-10-release-notes---may-2020"></a>Windows 10 版本資訊-5 月2020
 
-**Windows 10 5 月2020更新 (v2004) **包含 WINDOWS MIXED REALITY (VR) 耳機的新功能，例如在混合實境首頁中啟動 Win32 應用程式的能力。 HoloLens (第1代) 長期維護 (LTS) ，每月發行服務更新。
+**Windows 10 5 月2020更新 (v2004)** 包含 WINDOWS MIXED REALITY (VR) 耳機的新功能，例如在混合實境首頁中啟動 Win32 應用程式的能力。 HoloLens (第1代) 長期維護 (LTS) ，每月發行服務更新。
 
-若要更新為電腦上的最新版本 Windows Mixed Reality 沉浸式 (VR) 耳機，請開啟 [ **設定** ] 應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新** ] 按鈕。 在 Windows 10 的電腦上，您也可以使用[Windows media 建立工具](https://www.microsoft.com/software-download/windows10)，以手動方式安裝**Windows 10 2020 更新**。
+若要更新為電腦上的最新版本 Windows Mixed Reality 沉浸式 (VR) 耳機，請開啟 [ **設定** ] 應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新** ] 按鈕。 在 Windows 10 的電腦上，您也可以使用 [Windows media 建立工具](https://www.microsoft.com/software-download/windows10)，以手動方式安裝 **Windows 10 2020 更新**。
 
 **Desktop 的最新版本**： Windows 10 v2004 (10.0.19041.264) 
 
@@ -100,6 +100,7 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
 
    | 版本          | 發行日期          | 重大變更                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 2020年12月10日  | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>適用于 HP 控制器的新控制器固件，可解決某些控制器具有非正常運作觸發程式的問題。</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 2020年10月8日  | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>HP 殘響 G2、HP Omnicept 和新 HP 控制器的官方支援。</li><li>HP 回音和 Samsung 電影對白 + 耳機的次要顯示器校正。  (需要 [Os 組建 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) 或更高版本 [，或 os 組建18362.1110 和 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) 或更高版本的) 。</li><li>電腦電源狀態從睡眠轉換成減少 SWW 1-4 錯誤的增強功能。</li><li>Windows Mixed Reality 耳機平臺的次要修正和可靠性改進。|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 2020 5 月7日      | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>Windows Mixed Reality 耳機平臺的次要修正和可靠性改進。</li></ul>  |
 
@@ -162,7 +163,7 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
    | 版本            | 發行日期          | 重大變更                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
    | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>支援 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 以暫停預覽視窗。</li></ul>  | 
-   | 2000.20041.1212.0  | 2020 年 5 月 11 日          | <ul><li>解決造成不一致15-5 錯誤的計時問題。</li><li>改進了執行 Windows Mixed Reality 且沒有網際網路連線的支援。</li><li>改善透過 **設定控制器**配對動作控制器的支援。</li></ul>  | 
+   | 2000.20041.1212.0  | 2020 年 5 月 11 日          | <ul><li>解決造成不一致15-5 錯誤的計時問題。</li><li>改進了執行 Windows Mixed Reality 且沒有網際網路連線的支援。</li><li>改善透過 **設定控制器** 配對動作控制器的支援。</li></ul>  | 
    | 2000.20031.1202.0  | 2020 年 4 月 14 日        | <ul><li>支援註冊 Windows Mixed Reality 的相關資訊、秘訣和優惠。</li></ul>  | 
    | 2000.20011.1312.0  | 2020 年 2 月 11 日     | <ul><li>針對在2019年5月更新的裝置上使用 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 改善應用程式的支援。</li><li>解決存取範圍和鍵盤焦點問題</li></ul>  | 
    | 2000.19101.1211.0  | 2019年11月11日     | <ul><li>解決防止您切換房間界限視覺效果的問題。</li><li>解決防止您在房間界限設定期間將耳機置中的問題。</li></ul>  | 
