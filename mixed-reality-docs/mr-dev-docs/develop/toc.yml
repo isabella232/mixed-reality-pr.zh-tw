@@ -452,11 +452,13 @@
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
         - name: 感知模擬
           href: platform-capabilities-and-apis/perception-simulation.md
-    - name: 研究工具
+    - name: 裝置入口網站
       items:
         - name: 使用 Windows 裝置入口網站
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
         - name: 裝置入口網站 API 參照
           href: platform-capabilities-and-apis/device-portal-api-reference.md
+    - name: 研究工具
+      items:
         - name: HoloLens 研究模式
           href: platform-capabilities-and-apis/research-mode.md
