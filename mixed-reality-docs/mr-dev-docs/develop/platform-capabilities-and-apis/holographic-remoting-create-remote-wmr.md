@@ -1,28 +1,26 @@
 ---
 title: " (WMR) 撰寫全像遠端遠端應用程式"
-description: 藉由建立可在遠端電腦上轉譯的全像遠端遠端應用程式遠端內容，可以串流處理至 HoloLens 2。 本文說明如何達成此目的。
+description: 藉由建立可在遠端電腦上轉譯的全像遠端遠端應用程式遠端內容，可以串流處理至 HoloLens 2。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、NuGet
-ms.openlocfilehash: 3bbb75d9f1b6db64326f5b429103828266650a52
-ms.sourcegitcommit: 9664bcc10ed7e60f7593f3a7ae58c66060802ab1
+ms.openlocfilehash: 5eddcc117008ebc54eac11965592099601880d3e
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96469499"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530219"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>使用 HolographicSpace API 撰寫全像遠端執行遠端應用程式
 
 >[!IMPORTANT]
->本檔說明如何使用 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)建立 HoloLens 2 的遠端應用程式。 **HoloLens (第1代)** 的遠端應用程式必須使用 NuGet **1.x.x** 套件1.x 版。 這表示針對 HoloLens 2 撰寫的遠端應用程式不相容于 HoloLens 1，反之亦然。 您可以在 [這裡](add-holographic-remoting.md)找到 HoloLens 1 的檔。
+>本檔說明如何使用 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)建立 HoloLens 2 的遠端應用程式。 **HoloLens (第1代)** 的遠端應用程式必須使用 NuGet 套件1.x 版。 這表示針對 HoloLens 2 撰寫的遠端應用程式不相容于 HoloLens 1，反之亦然。 您可以在 [這裡](add-holographic-remoting.md)找到 HoloLens 1 的檔。
 
-藉由建立全像遠端執行遠端應用程式，在遠端電腦上轉譯的遠端內容可以串流處理到 HoloLens 2 和沉浸式裝置，例如 Windows Mixed Reality 耳機。 本文說明如何達成此目的。 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
+全像的遠端處理應用程式可以將遠端轉譯的內容串流至 HoloLens 2 並 Windows Mixed Reality 沉浸式耳機。 您也可以存取更多的系統資源，並將遠端 [沉浸式觀點](../../design/app-views.md) 整合到現有的桌上型電腦軟體。 遠端應用程式會從 HoloLens 2 接收輸入資料流程、在虛擬沉浸式視圖中轉譯內容，並將內容框架串流回 HoloLens 2。 連接是使用標準 Wi-fi 進行的。 在桌面或 UWP 應用程式中，會透過 NuGet 封包新增全像的遠端處理。 需要額外的程式碼，以處理連接並以沉浸式視圖呈現。 一般的遠端連線的延遲將會降到50毫秒。 播放程式應用程式可以即時報告延遲時間。
 
-全像「全像」的遠端功能可讓應用程式以 HoloLens 2，並 Windows Mixed Reality 耳機，在桌上型電腦上或 UWP 裝置（例如 Xbox One）上轉譯，以允許存取更多系統資源，並讓您能夠將遠端 [沉浸式視圖](../../design/app-views.md) 整合至現有的桌上型電腦軟體。 遠端應用程式會從 HoloLens 2 接收輸入資料流程、在虛擬沉浸式視圖中轉譯內容，並將內容框架串流回 HoloLens 2。 連接是使用標準 Wi-fi 進行的。 在桌面或 UWP 應用程式中，會透過 NuGet 封包新增全像的遠端處理。 需要額外的程式碼，以處理連接並以沉浸式視圖呈現。
-
-一般的遠端連線的延遲將會降到50毫秒。 播放程式應用程式可以即時報告延遲時間。
+此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
 
 ## <a name="prerequisites"></a>必要條件
 
@@ -38,10 +36,10 @@ ms.locfileid: "96469499"
 若要將 NuGet 套件新增至 Visual Studio 中的專案，必須執行下列步驟。
 1. 在 Visual Studio 中開啟專案。
 2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
-3. 在出現的面板中，按一下 **[流覽]** ，然後搜尋「全像的遠端處理」。
-4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後按一下 [ **安裝**]。
-5. 如果出現 [ **預覽** ] 對話方塊，請按一下 **[確定**]。
-6. 出現的下一個對話方塊是授權合約。 按一下 [ **我接受** ] 以接受授權合約。
+3. 在出現的面板中，選取 **[流覽]** ，然後搜尋「全像的遠端處理」。
+4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後選取 [ **安裝**]。
+5. 如果出現 [ **預覽** ] 對話方塊，請選取 **[確定]**。
+6. 當 [授權合約] 對話方塊出現時，選取 [ **我接受** ]。
 
 >[!NOTE]
 >2.x **版的** NuGet 套件仍可供想要以 HoloLens 1 為目標的開發人員使用。 如需詳細資訊，請參閱新增全像 [遠端 (HoloLens (第1代) # B3 ](add-holographic-remoting.md)。
@@ -83,7 +81,7 @@ m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::Cr
 
 ## <a name="connect-to-the-device"></a>連接到裝置
 
-遠端應用程式準備好轉譯內容之後，就可以建立與播放機裝置的連線。
+當遠端應用程式準備好轉譯內容時，可建立與播放機裝置的連線。
 
 您可以透過下列兩種方式之一來完成連接。
 1) 遠端應用程式會連接到在裝置上執行的播放程式。
@@ -108,7 +106,7 @@ catch(winrt::hresult_error& e)
 >[!TIP]
 >若要避免使用 [c + +/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/) 語言投射， ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` 可以包含位於全像「遠端處理 NuGet」套件內的檔案。 它包含基礎 COM 介面的宣告。 不過，我們建議使用 c + +/WinRT。
 
-您可以藉由呼叫方法來接聽遠端應用程式上的連入連線 ```Listen``` 。 交握埠和傳輸埠都可以在此呼叫期間指定。 交握埠用於初始交握。 然後，資料會透過傳輸埠傳送。 預設會使用 **8265** 和 **8266** 。
+您可以藉由呼叫方法來接聽遠端應用程式上的連入連線 ```Listen``` 。 交握埠和傳輸埠都可以在此呼叫期間指定。 交握埠用於初始交握。 然後，資料會透過傳輸埠來傳送。 預設會使用 **8265** 和 **8266** 。
 
 ```cpp
 try
@@ -126,7 +124,7 @@ catch(winrt::hresult_error& e)
 
 ## <a name="handling-remoting-specific-events"></a>處理遠端處理特定事件
 
-遠端內容會公開三個很重要的事件，以監視連接的狀態。
+遠端內容會公開三個事件，這對監視連接的狀態非常重要。
 1) OnConnected：已成功建立裝置的連線時觸發。
 ```cpp
 winrt::weak_ref<winrt::Microsoft::Holographic::AppRemoting::IRemoteContext> remoteContextWeakRef = m_remoteContext;
@@ -293,7 +291,7 @@ m_onSendFrameEventRevoker = m_remoteContext.OnSendFrame(
 
 ## <a name="depth-reprojection"></a>深度 Reprojection
 
-從版本 [2.1.0](holographic-remoting-version-history.md#v2.1.0)開始，全像攝影遠端支援 [深度 Reprojection](hologram-stability.md#reprojection)。 除了色彩緩衝區之外，還需要從遠端應用程式將深度緩衝區串流至 HoloLens 2。 預設會啟用深度緩衝區串流，並將其設定為使用色彩緩衝區的一半解析度。 這可以變更如下：
+從版本 [2.1.0](holographic-remoting-version-history.md#v2.1.0)開始，全像攝影遠端支援 [深度 Reprojection](hologram-stability.md#reprojection)。 這需要從遠端應用程式將色彩緩衝區和深度緩衝區串流至 HoloLens 2。 預設會啟用深度緩衝區串流，並將其設定為使用色彩緩衝區的一半解析度。 這可以變更如下：
 
 ```cpp
 // class implementation
@@ -353,7 +351,7 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 
 ```
 
-若要確認 depth reprojection 是否正確運作 HoloLens 2 您可以透過裝置入口網站啟用深度視覺化。 如需詳細資料，請參閱 [驗證深度設定是否正確](hologram-stability.md#verifying-depth-is-set-correctly) 。
+若要確認深度 reprojection 是否可在 HoloLens 2 上正確運作，您可以透過裝置入口網站啟用深度視覺化檢視。 如需詳細資料，請參閱 [驗證深度設定是否正確](hologram-stability.md#verifying-depth-is-set-correctly) 。
 
 ## <a name="optional-custom-data-channels"></a>選用：自訂資料通道
 
