@@ -4,16 +4,16 @@ title: Azure 混合實境雲端服務概觀
 description: 混合實境雲端服務資源。
 author: hferrone
 ms.author: v-haferr
-ms.date: 06/5/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: 338574ac5a06841a6a2a9920fc0dfbdfdbfd0bbf
-ms.sourcegitcommit: eba192e1cfaef35bc55161d4e9a0adea36ff1a18
+ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/02/2020
-ms.locfileid: "96526055"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96925927"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
