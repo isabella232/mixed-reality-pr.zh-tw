@@ -3,16 +3,16 @@ title: Unity 開發概觀
 description: 開始在 Unity 中建置混合實境應用程式。
 author: thetuvix
 ms.author: kurtie
-ms.date: 08/04/2020
+ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 9a9a5bc47327b3bd23ac6212b8b9f12787b74e4c
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679897"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926039"
 ---
 # <a name="unity-development-overview"></a>Unity 開發概觀
 

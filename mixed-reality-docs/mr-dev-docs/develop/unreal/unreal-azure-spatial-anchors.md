@@ -3,16 +3,16 @@ title: Unreal 中的 Azure Spatial Anchors
 description: 在 Unreal Engine 中建立 Azure Spatial Anchors 的概觀。
 author: hferrone
 ms.author: jacksonf
-ms.date: 07/01/2020
+ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 開發, 空間錨點, 混合實境, 開發, 功能, 新專案, 模擬器, 文件, 指南, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 4714957c3ddab188a776c86f839208759c9d20de
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 18ec9db03341ad4fc6a5c10ea6f8fdd38c61c537
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609739"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926031"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal 中的 Azure Spatial Anchors
 
