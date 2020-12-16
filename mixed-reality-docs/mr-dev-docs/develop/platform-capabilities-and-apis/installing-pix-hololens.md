@@ -1,27 +1,27 @@
 ---
-title: 安裝適用于 HoloLens 2 的 PIX
+title: 安裝使用於 HoloLens 2 的 PIX
 description: 瞭解如何安裝適用于 HoloLens 2 裝置的 PIX。
 author: hferrone
 ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens、HoloLens 2、PIX、捕獲、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4554600414784b2644006e6e891f16f8ce3a79f5
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615330"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530450"
 ---
-# <a name="installing-pix-for-hololens-2"></a>安裝適用于 HoloLens 2 的 PIX
+# <a name="installing-pix-for-hololens-2"></a>安裝使用於 HoloLens 2 的 PIX
 
 [PIX](https://devblogs.microsoft.com/pix) 是 Windows 上 DirectX 12 應用程式的效能微調和偵錯工具。 
 
-## <a name="setup"></a>設定
+## <a name="setup"></a>安裝程式
 
 1. 從您的主機電腦抓取最新的 PIX [版本]( https://devblogs.microsoft.com/pix/download) ，並透過 USB 纜線將您的 HoloLens 2 連接到您的電腦。
 
-2. 如果您的 HoloLens 2 是在 [Windows 測試人員組建](https://insider.windows.com) 上，或具有會中斷 PIX 的設定，請  [重新快閃裝置](https://docs.microsoft.com/hololens/hololens-recovery) 以清除所有資料。
+2. 如果您的 HoloLens 2 是在 [Windows 測試人員組建](https://insider.windows.com) 上，或具有會中斷 PIX 的設定，請  [重新刷新您的裝置](https://docs.microsoft.com/hololens/hololens-recovery) 以清除所有資料。
 
 3. 啟用 **開發人員模式** 和 **裝置入口網站**：
 
@@ -33,7 +33,7 @@ ms.locfileid: "96615330"
 
 ![醒目提示 [更新] 和 [安全性] 按鈕的 HoloLens 開啟 [設定] 視窗的螢幕擷取畫面](images/pix-img-02.jpg)
 
-* **針對開發人員** 按一下：
+* **針對開發人員** 選取：
 
 ![已反白顯示 [開發人員] 按鈕的 [安全性和更新] 視窗的螢幕擷取畫面](images/pix-img-03.jpg)
 
@@ -60,7 +60,7 @@ ms.locfileid: "96615330"
 
 * 從 Shell 選取 **設定**
 * 選取 **更新 & 安全性**
-* **針對開發人員** 按一下，然後在 **裝置探索** 下按配對 
+* **針對開發人員** 選取，並在 **裝置探索** 下按配對 
 
 ![[開發人員] 視窗的螢幕擷取畫面，其中已醒目提示裝置探索來開啟 [設定]](images/pix-img-08.jpg)
 
@@ -72,7 +72,7 @@ ms.locfileid: "96615330"
 
 ## <a name="launching-pix"></a>啟動 PIX
 
-首先，使用裝置入口網站來確認 HoloLens 2 上未執行應用程式。 然後，啟動 PIX、連線到您的裝置，然後按一下 [ **首頁**]：
+首先，使用裝置入口網站來確認應用程式未在 HoloLens 2 上執行。 然後，啟動 PIX、連線到您的裝置，然後選取 [ **首頁**]：
 
 ![PIX 應用程式主畫面的螢幕擷取畫面](images/pix-img-10.png)
 
@@ -80,18 +80,18 @@ ms.locfileid: "96615330"
 
 ![已反白顯示 [連線] 按鈕的 PIX 應用程式左側功能表的螢幕擷取畫面](images/pix-img-11.png)
 
-2. 在 [ **電腦** ] 索引標籤中，按一下 [ **新增** ]，然後輸入下列認證：
+2. 從 [ **電腦** ] 索引標籤中，選取 [ **新增**]，然後輸入下列認證：
     * 別名：由使用者自行決定
     * 主機名稱或 IP 位址：127.0.0。1
 
-3. 按一下 [**電腦**] 索引標籤右下角的 **[** 連線]：
+3. 選取 [**電腦**] 索引標籤右下角的 **[** 連線]：
 
 ![已反白顯示 [別名]、[主機名稱]、[IP 位址] 和 [新增] 按鈕的 PIX 應用程式連線視窗](images/pix-img-12.png)
 
 > [!NOTE]
 > 第一個連接一律會變慢，因為正在複製二進位檔。
 
-4. 當 PIX 連接到 HoloLens 2 時，請在 [啟動 UWP] 索引標籤的 [ **選取目標進程** ] 區段中尋找您的應用程式，然後按一下 [ **啟動**]：
+4. 當 PIX 連接到 HoloLens 2 時，請在 [啟動 UWP] 索引標籤的 [ **選取目標進程** ] 區段中尋找您的應用程式，然後選取 [ **啟動**]：
 
 ![已反白顯示 [選取目標進程] 視窗和 [啟動] 按鈕的 PIX 應用程式螢幕擷取畫面](images/pix-img-13.png)
 
@@ -101,7 +101,7 @@ ms.locfileid: "96615330"
 
 ![已反白顯示 GPU 捕捉的 [電腦] 連接面板開啟的 PIX 應用程式螢幕擷取畫面](images/pix-img-14.png)
 
-2. 在 **GPU 捕捉** 面板中按一下產生的螢幕擷取畫面，以開啟要分析的捕獲：
+2. 按一下 **GPU 捕捉** 面板中產生的螢幕擷取畫面，以開啟要分析的捕獲：
 
 ![已反白顯示 GPU 捕捉面板的 [GPU 捕捉] 區段開啟的 PIX 應用程式螢幕擷取畫面](images/pix-img-15.png)
 

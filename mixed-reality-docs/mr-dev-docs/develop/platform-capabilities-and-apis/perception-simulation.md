@@ -6,23 +6,23 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens、模擬、測試
-ms.openlocfilehash: d4cd9497f9adcea03ece222f09124ce593ea73cf
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679928"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530399"
 ---
 # <a name="perception-simulation"></a>感知模擬
 
-您是否要為您的應用程式建立自動化測試？ 您是否想要讓您的測試超越元件層級的單元測試，並讓您的應用程式端對端實際執行？ 認知模擬就是您要尋找的內容。 認知模擬程式庫會將人類和世界的輸入資料傳送到您的應用程式，以便讓您的測試自動化。 例如，您可以模擬人們的輸入，查看特定、可重複的位置，然後執行筆勢或使用移動控制器。
+您是否要為您的應用程式建立自動化測試？ 您是否想要讓您的測試超越元件層級的單元測試，並讓您的應用程式端對端實際執行？ 認知模擬就是您要尋找的內容。 認知模擬程式庫會將人類和世界的輸入資料傳送到您的應用程式，以便讓您的測試自動化。 例如，您可以模擬人們的輸入，查看特定、可重複的位置，然後使用手勢或移動控制器。
 
-認知模擬可將這類模擬輸入傳送給實體 HoloLens、HoloLens 模擬器 (第一代) 、HoloLens 2 模擬器或已安裝混合實境入口的電腦。 認知模擬會略過混合現實裝置上的即時感應器，並將模擬的輸入傳送給裝置上執行的應用程式。 應用程式會透過其一律使用的相同 Api 來接收這些輸入事件，而且無法分辨與實際感應器執行之間的差異，與使用感知模擬執行之間的差異。 認知模擬是 HoloLens 模擬器用來將模擬的輸入傳送到 HoloLens 虛擬機器的相同技術。
+認知模擬可將這類模擬輸入傳送給實體 HoloLens、HoloLens 模擬器 (第一代) 、HoloLens 2 模擬器或已安裝混合實境入口的電腦。 認知模擬會略過混合現實裝置上的即時感應器，並將模擬的輸入傳送給裝置上執行的應用程式。 應用程式會透過其一律使用的相同 Api 來接收這些輸入事件，而且無法分辨與實際感應器的執行與認知模擬之間的差異。 認知模擬是 HoloLens 模擬器用來將模擬的輸入傳送到 HoloLens 虛擬機器的相同技術。
 
-若要開始在程式碼中使用模擬，請先建立 IPerceptionSimulationManager 物件。 您可以從該物件發出命令來控制模擬「人」的屬性，包括標頭位置、手形位置和手勢，也可以啟用和操作移動控制器。
+若要開始在程式碼中使用模擬，請先建立 IPerceptionSimulationManager 物件。 您可以從該物件發出命令，以控制模擬「人」的屬性，包括頭部位置、手形位置和手勢。 您也可以啟用和操作移動控制器。
 
 ## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>設定 Visual Studio 專案以進行感知模擬
-1. 在您的開發電腦上[安裝 HoloLens 模擬器](../install-the-tools.md)。 模擬器包含您將用於認知模擬的程式庫。
+1. 在您的開發電腦上[安裝 HoloLens 模擬器](../install-the-tools.md)。 模擬器包含您用來感知模擬的程式庫。
 2. 建立新的 Visual Studio c # 桌面專案 (主控台專案的效果很好，可以開始) 。
 3. 將下列二進位檔新增至您的專案，做為參考 (專案 >的 [新增 >參考 ...] ) 。您可以在% ProgramFiles (x86) % \ Microsoft XDE \\ (版本) 中找到它們，例如 (模擬器的 **% ProgramFiles) x86 HoloLens 2% \ microsoft XDE \\ 10.0.18362.0** 。   (注意：雖然二進位檔是 HoloLens 2 模擬器的一部分，但它們也適用于桌面上的 Windows Mixed Reality。 ) a。 用於感知模擬的 PerceptionSimulationManager.Interop.dll 受控 c # 包裝函式。
     b. PerceptionSimulationRest.dll 程式庫，可將 web 通訊端通道設定為 HoloLens 或模擬器。
@@ -34,15 +34,15 @@ ms.locfileid: "91679928"
 
 若要控制模擬，您要對從 IPerceptionSimulationManager 物件取出的物件發出更新。 第一個步驟是取得該物件，並將它連接到您的目標裝置或模擬器。 您可以按一下[工具列](using-the-hololens-emulator.md)中的裝置入口網站按鈕，取得模擬器的 IP 位址
 
-![開啟裝置入口網站圖示 ](images/emulator-deviceportal.png) **開啟裝置入口網站** ：在模擬器中開啟 HoloLens OS 的 Windows 裝置入口網站。  針對 Windows Mixed Reality，可以在 [設定 & 安全性] 底下的 [設定] 應用程式中，然後在 [啟用裝置入口網站] 下的 [使用下列方式連接：] 區段中，取得「適用于開發人員」。  請務必記下 IP 位址和埠。
+![開啟裝置入口網站圖示 ](images/emulator-deviceportal.png) **開啟裝置入口網站**：在模擬器中開啟 HoloLens OS 的 Windows 裝置入口網站。  針對 Windows Mixed Reality，可以在 [設定 & 安全性] 底下的 [設定] 應用程式中，然後在 [啟用裝置入口網站] 下的 [使用下列方式連接：] 區段中，取得「適用于開發人員」。  請務必記下 IP 位址和埠。
 
 首先，您會呼叫 RestSimulationStreamSink 來取得 RestSimulationStreamSink 物件。 這是您將透過 HTTP 連接控制的目標裝置或模擬器。 您的命令將會傳遞至裝置或模擬器上執行的 [Windows 裝置入口網站](using-the-windows-device-portal.md) ，並由其處理。 建立物件所需的四個參數如下：
 * Uri uri-目標裝置的 IP 位址 (例如 " https://123.123.123.123 " 或 " https://123.123.123.123:50080 " ) 
-* NetworkCredential 認證-用來連接到目標裝置或模擬器上 [Windows 裝置入口網站](using-the-windows-device-portal.md) 的使用者名稱/密碼。 如果您透過本機位址連接到模擬器 (例如，168。 *.* .* ) 在同一部電腦上，將會接受任何認證。
-* bool 標準-True 表示正常優先順序，false 表示低優先順序。 您通常會想要在測試案例中將此設為 *true* ，以允許您的測試取得控制權。  模擬器與 Windows Mixed Reality 模擬會使用低優先順序的連接。  如果您的測試也使用低優先順序連接，則最近建立的連接將會受到控制。
+* NetworkCredential 認證-用來連接到目標裝置或模擬器上 [Windows 裝置入口網站](using-the-windows-device-portal.md) 的使用者名稱/密碼。 如果您是透過本機位址連接到模擬器 (例如，168。*.*.* ) 在同一部電腦上，將會接受任何認證。
+* bool 標準-True 表示正常優先順序，false 表示低優先順序。 您通常會想要在測試案例中將此設為 *true* ，以允許您的測試取得控制權。  模擬器與 Windows Mixed Reality 模擬會使用低優先順序的連接。  如果您的測試也會使用低優先順序的連接，則最近建立的連接將會受到控制。
 * CancellationToken token-Token，以取消非同步作業。
 
-其次，您將建立 IPerceptionSimulationManager。 這是您用來控制模擬的物件。 請注意，這也必須在非同步方法中完成。
+其次，您將建立 IPerceptionSimulationManager。 這是您用來控制模擬的物件。 這也必須在非同步方法中完成。
 
 ## <a name="control-the-simulated-human"></a>控制模擬的人
 
@@ -245,7 +245,7 @@ namespace ConsoleApplication1
 
 移除 Windows 10 2018 年10月更新或更早版本上的控制器時，請先透過 API 將其狀態設定為 Off，然後再呼叫 PerceptionSimulationDevice 工具。
 
-請注意，此工具必須以系統管理員身分執行。
+此工具必須以系統管理員身分執行。
 
 
 
@@ -531,7 +531,7 @@ public enum PlaybackState
 
 ### <a name="microsoftperceptionsimulationvector3"></a>PerceptionSimulation. Vector3
 
-描述3個元件向量，可能會描述3D 空間中的點或向量。
+描述三個元件向量，可能會描述3D 空間中的點或向量。
 
 ```
 public struct Vector3
@@ -566,7 +566,7 @@ public struct Vector3
 
 ### <a name="microsoftperceptionsimulationrotation3"></a>PerceptionSimulation. Rotation3
 
-描述3個元件旋轉。
+描述三個元件旋轉。
 
 ```
 public struct Rotation3
@@ -694,7 +694,7 @@ public struct SimulatedDisplayConfiguration
 
 **PerceptionSimulation. SimulatedDisplayConfiguration. ApplyEyeTransforms**
 
-是否應將提供給左和右眼睛轉換的值視為有效，並套用到執行中的系統。
+是否應將提供給左和右眼睛轉換的值視為有效，並套用至執行中的系統。
 
 **PerceptionSimulation. SimulatedDisplayConfiguration. ApplyIpd**
 
@@ -837,7 +837,7 @@ public interface ISimulatedHuman
     float Height { get; set; }
     ISimulatedHand LeftHand { get; }
     ISimulatedHand RightHand { get; }
-    ISimulatedHead Head { get; }
+    ISimulatedHead Head { get; }s
     void Move(Vector3 translation);
     void Rotate(float radians);
 }
@@ -934,7 +934,7 @@ public interface ISimulatedHand
 
 **PerceptionSimulation. ISimulatedHand 可見**
 
-取出 >simulateddevice (ie 是否可以看到手形，不論它是否位於 HandTracker) 要偵測到的位置。
+取出 >simulateddevice 的目前是否看得到手 (也就是，是否在 HandTracker) 偵測到位置。
 
 **PerceptionSimulation. ISimulatedHand. EnsureVisible**
 
@@ -1069,7 +1069,7 @@ public interface ISimulatedSixDofController
 
 **PerceptionSimulation. ISimulatedSixDofController。狀態**
 
-取得或設定控制器的目前狀態。  控制器狀態必須設定為 [關閉] 以外的值，才能移動、[旋轉] 或 [按下] 按鈕將會成功。
+取得或設定控制器的目前狀態。  控制器狀態必須設定為 [關閉] 以外的值，才能讓任何移動、旋轉或按下按鈕的動作都成功。
 
 **PerceptionSimulation. ISimulatedSixDofController. Position**
 
@@ -1219,7 +1219,7 @@ public interface ISimulationRecording
 
 **PerceptionSimulation. ISimulationRecording. Seek (System.object)**
 
-將記錄搜尋至指定的時間 (從一開始) 算起的100毫微秒間隔，並在該位置暫停。 如果時間超過錄製的結尾，則會在最後一個畫面上暫停。
+搜尋指定時間的記錄 (從開始) 的 100-毫微秒間隔，然後在該位置暫停。 如果時間超過錄製的結尾，則會在最後一個畫面上暫停。
 
 參數
 * 刻度-要搜尋的時間。
@@ -1272,7 +1272,7 @@ public static class PerceptionSimulationManager
 
 **PerceptionSimulation. PerceptionSimulationManager. CreatePerceptionSimulationRecording (System.string)**
 
-建立一個接收，將所有收到的封包儲存在指定路徑的檔案中。
+建立接收，以將所有收到的封包儲存在指定路徑的檔案中。
 
 參數
 * 路徑-要建立之檔案的路徑。
@@ -1300,7 +1300,7 @@ public static class PerceptionSimulationManager
 參數
 * 路徑-要載入之檔案的路徑。
 * factory-記錄用來在必要時建立 ISimulationStreamSink 的 factory。
-* 回呼-接收更新的回呼，regrading 記錄的狀態。
+* 回呼-回呼，可接收更新 regrading 記錄的狀態。
 
 傳回值
 
@@ -1332,35 +1332,35 @@ public enum StreamDataTypes
 
 **PerceptionSimulation. StreamDataTypes Head**
 
-關於頭部位置和方向的資料流程。
+標頭的位置和方向的資料流程。
 
 **PerceptionSimulation. StreamDataTypes**
 
-關於手的位置和手勢的資料流程。
+資料串流以取得手的位置和手勢。
 
 **PerceptionSimulation. StreamDataTypes. SpatialMapping**
 
-關於環境空間對應的資料流程。
+環境的空間對應資料串流。
 
 **PerceptionSimulation. StreamDataTypes. 校正**
 
-與裝置校正相關的資料流程。 只有在遠端模式的系統才會接受校正封包。
+用於校正裝置的資料流程。 只有在遠端模式的系統才會接受校正封包。
 
 **PerceptionSimulation. StreamDataTypes. 環境**
 
-與裝置環境相關的資料流程。
+裝置環境的資料流程。
 
 **PerceptionSimulation. StreamDataTypes. SixDofControllers**
 
-關於運動控制器的資料流程。
+動作控制器的資料流程。
 
 **PerceptionSimulation. StreamDataTypes 眼睛**
 
-有關模擬人類眼睛的資料串流。
+以模擬人類的眼睛來串流資料。
 
 **PerceptionSimulation. StreamDataTypes. DisplayConfiguration**
 
-與裝置的顯示設定相關的資料流程。
+以裝置的顯示設定來串流資料。
 
 **PerceptionSimulation. StreamDataTypes**
 

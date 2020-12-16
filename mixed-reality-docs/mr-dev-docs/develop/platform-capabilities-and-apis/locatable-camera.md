@@ -6,47 +6,47 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: 攝影機、hololens、彩色攝影機、正面、hololens 2、cv、電腦視覺、基準、標記、qr 代碼、qr、相片、影片
-ms.openlocfilehash: 992258a38b78e9f36e873f7c478d2b6e6f0e3785
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 9261465f362e6aa0e97d9f6b1f61af305c178079
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679933"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530380"
 ---
 # <a name="locatable-camera"></a>定位相機
 
-HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式查看使用者看到的內容。 開發人員可以存取和控制攝影機，就像在 smartphone、筆記本電腦或桌上型電腦上的彩色攝影機一樣。 適用于行動裝置和桌上型電腦的相同通用 windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) 和 windows Media foundation api 可在 HoloLens 上運作。 Unity [也將這些 Windows api 包裝](../unity/locatable-camera-in-unity.md) 成可在 HoloLens 上以簡單的方式使用相機來進行工作，例如，將一般相片和影片 (與或不含全像影像) ，以及在場景中找出相機的位置和觀點。
+HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式查看使用者看到的內容。 開發人員可以存取和控制攝影機，就像在 smartphone、筆記本電腦或桌上型電腦上的彩色攝影機一樣。 適用于行動裝置和桌上型電腦的相同通用 windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) 和 windows Media foundation api 可在 HoloLens 上運作。 Unity [已將這些 Windows api 包裝](../unity/locatable-camera-in-unity.md) 成可在 HoloLens 上抽象化相機使用功能。 功能工作包括將一般相片和影片 (與或不含全像投影) ，以及在場景中找出相機的位置和觀點。
 
 ## <a name="device-camera-information"></a>裝置相機資訊
 
 ### <a name="hololens-first-generation"></a>HoloLens (第一代) 
 
-* 已修正焦點相片/影片 (PV) 攝影機（具有自動白平衡、自動曝光和完整影像處理管線）。
+* 已修正焦點相片/影片 (PV) 攝影機與自動白平衡、自動曝光和完整的影像處理管線。
 * 當相機處於作用中狀態時，世界上的白色隱私權 LED 將會發亮
 * 攝影機支援下列模式 (所有模式都是16:9 的外觀比例) 30、24、20、15和 5 fps：
 
   |  影片  |  預覽  |  還  |  水準視圖 (H-FOV)  |  建議用法 | 
   |----------|----------|----------|----------|----------|
-  |  1280x720 |  1280x720 |  1280x720 |  45deg  |  使用影片穩定)  (預設模式 | 
-  |  N/A |  N/A |  2048x1152 |  67deg |  最高解析度仍為影像 | 
-  |  1408x792 |  1408x792 |  1408x792 |  48deg |  Overscan (填補影片穩定之前的) 解析度 | 
-  |  1344x756 |  1344x756 |  1344x756 |  67deg |  使用 overscan 的大型 FOV 影片模式 | 
-  |  896x504 |  896x504 |  896x504 |  48deg |  影像處理工作的低電源/低解析度模式 | 
+  |  1280x720 |  1280x720 |  1280x720 |  45度  |  使用影片穩定)  (預設模式 | 
+  |  不適用 |  不適用 |  2048x1152 |  67度 |  最高解析度仍為影像 | 
+  |  1408x792 |  1408x792 |  1408x792 |  48度 |  Overscan (填補影片穩定之前的) 解析度 | 
+  |  1344x756 |  1344x756 |  1344x756 |  67度 |  使用 overscan 的大型 FOV 影片模式 | 
+  |  896x504 |  896x504 |  896x504 |  48度 |  影像處理工作的低電源/低解析度模式 | 
 
 ### <a name="hololens-2"></a>HoloLens 2
 
-* 自動聚焦相片/影片 (PV) 攝影機（具有自動白平衡、自動曝光和完整影像處理管線）。
+* 自動聚焦相片/影片 (PV) 攝影機（具有自動白平衡、自動曝光和完整的影像處理管線）。
 * 當相機處於作用中狀態時，就會導致世界各地的白色隱私權燈亮著。
 * HoloLens 2 支援不同的相機設定檔。 瞭解如何 [探索並選取攝影機功能](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles)。
 * 攝影機支援下列設定檔和解析度 (所有的影片模式都是16:9 的外觀比例) ：
   
   | 設定檔                                         | 影片     | 預覽   | 還     | 畫面播放速率 | 水準視圖 (H-FOV)  | 建議用法                             |
   |-------------------------------------------------|-----------|-----------|-----------|-------------|----------------------------------|---------------------------------------------|
-  | 舊版、0 BalancedVideoAndPhoto、100             | 2272x1278 | 2272x1278 |           | 15、30       | 64.69                            | 高品質的影片錄製                |
-  | 舊版、0 BalancedVideoAndPhoto、100             | 896x504   | 896x504   |           | 15、30       | 64.69                            | 適用于高品質相片捕捉的預覽串流 |
+  | 舊版、0 BalancedVideoAndPhoto、100             | 2272x1278 | 2272x1278 |           | 15.30       | 64.69                            | 高品質的影片錄製                |
+  | 舊版、0 BalancedVideoAndPhoto、100             | 896x504   | 896x504   |           | 15.30       | 64.69                            | 適用于高品質相片捕捉的預覽串流 |
   | 舊版、0 BalancedVideoAndPhoto、100             |           |           | 3904x2196 |             | 64.69                            | 高品質的相片捕捉                  |
-  | BalancedVideoAndPhoto，120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15、30       | 64.69                            | 長時間案例                     |
-  | BalancedVideoAndPhoto，120                       | 1504x846  | 1504x846  |           | 15、30       | 64.69                            | 長時間案例                     |
+  | BalancedVideoAndPhoto，120                       | 1952x1100 | 1952x1100 | 1952x1100 | 15.30       | 64.69                            | 長時間案例                     |
+  | BalancedVideoAndPhoto，120                       | 1504x846  | 1504x846  |           | 15.30       | 64.69                            | 長時間案例                     |
   | 視訊會議，100                           | 1952x1100 | 1952x1100 | 1952x1100 | 15、30、60    | 64.69                            | 視訊會議，長時間案例 |
   | 視訊會議，100                           | 1504x846  | 1504x846  |           | 5、15、30、60  | 64.69                            | 視訊會議，長時間案例 |
   | 視訊會議，100 BalancedVideoAndPhoto，120 | 1920x1080 | 1920x1080 | 1920x1080 | 15、30       | 64.69                            | 視訊會議，長時間案例 |
@@ -65,7 +65,7 @@ HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式�
 
 ## <a name="locating-the-device-camera-in-the-world"></a>找出世界中的裝置攝影機
 
-當 HoloLens 拍攝相片和影片時，所捕捉的框架會包含相機的位置，以及相機的鏡頭模型。 這可讓應用程式在真實世界中的相機位置，以增強影像案例。 開發人員可以使用其最愛的影像處理或自訂電腦視覺程式庫，以創造性的來變換自己的案例。
+當 HoloLens 拍攝相片和影片時，所捕捉的框架會包含相機在世界的位置，以及相機的鏡頭模型。 這可讓應用程式在真實世界中的相機位置，以增強影像案例。 開發人員可以使用其最愛的影像處理或自訂電腦視覺程式庫，以創造性的來變換自己的案例。
 
 HoloLens 檔中其他位置的「相機」可能參考「虛擬遊戲攝影機」 (應用程式轉譯為) 的錐。 除非另有指示，否則這個頁面上的「相機」是指真實的 RGB 色攝影機。
 
@@ -75,9 +75,11 @@ HoloLens 檔中其他位置的「相機」可能參考「虛擬遊戲攝影機�
 
 ### <a name="using-mediaframereference"></a>使用 MediaFrameReference
 
-如果您使用 [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) 類別從相機讀取影像畫面格，則適用這些指示。
+如果 you'r 使用 [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) 類別從相機讀取影像畫面格，則適用這些指示。
 
-每個影像框架都會 (相片或影片) 是否包含在拍攝時根目錄于相機的[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) ，可使用[MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)的[CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)屬性來存取。 此外，每個畫面格都包含相機鏡頭模型的描述，可在 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 屬性中找到。 這些轉換會一起定義3D 空間中每個圖元的光線，代表產生圖元的光子所採用的路徑。 這些光線可以與應用程式中的其他內容相關，方法是從框架的座標系統取得轉換到其他的座標系統 (例如從 [固定的參考框架](../../design/coordinate-systems.md#stationary-frame-of-reference)) 。 總而言之，每個影像框架都會提供下列各項：
+每個影像框架都會 (相片或影片) 是否包含在拍攝時根目錄于相機的[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) ，可使用[MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)的[CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)屬性來存取。 每個畫面格都包含相機鏡頭模型的描述，可在 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 屬性中找到。 這些轉換會一起定義3D 空間中每個圖元的光線，代表產生圖元的光子所採用的路徑。 這些光線可以與應用程式中的其他內容相關，方法是從框架的座標系統取得轉換到其他的座標系統 (例如從 [固定的參考框架](../../design/coordinate-systems.md#stationary-frame-of-reference)) 。 
+
+每個影像框架都會提供下列各項：
 * 以 RGB/NV12/JPEG/etc 格式) 的圖元資料 (
 * 從 capture 的位置[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
 * 包含相機鏡頭模式的 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 類別
@@ -171,9 +173,9 @@ private:
 
 ### <a name="distortion-error"></a>扭曲錯誤
 
-在 HoloLens 上，影片和靜止影像串流會在系統的影像處理管線中 undistorted，然後才會將框架提供給應用程式 (預覽資料流程包含原始的扭曲框架) 。 由於只有 CameraIntrinsics 可供使用，因此應用程式必須假設圖像框架代表完美的 pinhole 攝影機。
+在 HoloLens 上，影片和靜止影像串流會在系統的影像處理管線中 undistorted，然後才會將框架提供給應用程式 (預覽資料流程包含) 的原始失真畫面。 由於只有 CameraIntrinsics 可供使用，因此應用程式必須假設圖像框架代表完美的 pinhole 攝影機。
 
-在 HoloLens (第一代) ，在框架中繼資料中使用 CameraIntrinsics 時，映射處理器中的 undistortion 函式可能仍會保留最多10圖元的錯誤。 在許多使用案例中，這項錯誤並不重要，但如果您要將影像對齊真實世界的海報/標記，您會發現 <的10px 位移 (大約是11mm，而將放置2個計量離開) ，則可能造成失真錯誤。 
+在 HoloLens (第一代) ，在框架中繼資料中使用 CameraIntrinsics 時，映射處理器中的 undistortion 函式可能仍會保留最多10圖元的錯誤。 在許多使用案例中，此錯誤並不重要，但如果您要將影像對齊真實的海報/標記，而您注意到 <的10圖元位移 (大約是 11 mm 的空間，代表2計量離開) ，則可能造成失真錯誤。 
 
 ## <a name="locatable-camera-usage-scenarios"></a>的相機使用案例
 
@@ -183,9 +185,9 @@ private:
 
 ### <a name="tag--pattern--poster--object-tracking"></a>標記/模式/海報/物件追蹤
 
-許多混合現實應用程式都使用可辨識的影像或視覺模式來建立空間中的可追蹤點。 然後，這會用來呈現相對於該點的物件，或建立已知位置。 HoloLens 的一些用途包括尋找以 fiducials 標記的真實世界物件 (例如，具有 QR 代碼) 的電視監視器、將 fiducials 放在，以及以視覺化方式與非 HoloLens 裝置（例如，已設定為透過 Wi-fi 與 HoloLens 進行通訊的平板電腦）進行配對。
+許多混合現實應用程式都使用可辨識的影像或視覺模式來建立空間中的可追蹤點。 然後，這會用來呈現相對於該點的物件，或建立已知位置。 HoloLens 的一些用途包括尋找以 fiducials 標記的真實世界物件 (例如，具有 QR 代碼) 的電視監視器、將 fiducials 放在，以及以視覺化方式與非 HoloLens 裝置（例如已設定為透過 Wi-fi 與 HoloLens 通訊的平板電腦）配對。
 
-若要辨識視覺效果模式，然後將該物件放在應用程式世界空間中，您將需要一些事項：
+您需要一些東西來辨識視覺效果模式，並將物件放在應用程式世界空間中：
 1. 影像模式辨識工具組，例如 QR 代碼、AR 標記、臉部搜尋工具、圓形追蹤器、OCR 等等。
 2. 在執行時間收集影像畫面格，並將其傳遞至辨識層
 3. 將其影像位置 Unproject 回世界位置，或可能是世界光線。 
@@ -205,7 +207,7 @@ private:
 5. 主要執行緒：移動虛擬模型以符合找到的重點
 6. 主執行緒：重複步驟2
 
-某些影像標記系統只提供單一圖元位置 (其他人提供完整轉換，在此情況下，將不需要此區段) ，這相當於可能的位置。 若要取得單一3d 位置，我們可以利用多個光線，並依其近似交集找出最終結果。 若要這樣做，您需要執行下列動作：
+某些影像標記系統只會提供單一圖元位置 (其他人會提供完整的轉換，在此情況下不需要此區段) ，這相當於可能的位置。 若要取得單一3d 位置，我們可以利用多個光線，並依其近似交集找出最終結果。 若要這樣做，您需要執行下列動作：
 1. 取得迴圈來收集多個相機影像
 2. 尋找相關聯的功能點及其世界光線
 3. 當您有功能的字典，而且每個都有多個世界光線時，您可以使用下列程式碼來解決這些光線的交集：
@@ -228,11 +230,11 @@ public static Vector3 ClosestPointBetweenRays(
  }
 ```
 
-有兩個或多個追蹤的標記位置，您可以定位模型化場景，以符合使用者目前的案例。 如果您無法採用重力，則需要三個標記位置。 在許多情況下，我們會使用簡單的色彩配置，其中白色球體代表即時追蹤標記位置，而藍色球體表示模型化標記位置。 這可讓使用者以視覺化方式測量對齊品質。 我們假設所有的應用程式都有下列設定：
+如果有兩個或多個追蹤的標記位置，您可以將模型化的場景定位至符合使用者目前的案例。 如果您無法採用重力，則需要三個標記位置。 在許多情況下，我們會使用色彩配置，其中白色球體代表即時追蹤標記位置，而藍色球體表示模型化標記位置。 這可讓使用者以視覺化方式測量對齊品質。 我們假設所有的應用程式都有下列設定：
 * 兩個或多個模型化標記位置
-* 場景中的一個「校正空間」是標記的父系
+* 一個「校正空間」，在場景中是標記的父系
 * 相機功能識別碼
-* 此行為會移動校正空間來對齊模型化標籤與即時標籤 (我們很小心地移動上層空間，而不是模型化標記，因為其他連接是相對於其) 的位置。
+* 行為，這會移動校正空間來對齊模型標記與即時標籤 (我們很小心地移動上層空間，而不是模型標記本身，因為其他連接是相對於其) 的位置。
 
 ```
 // In the two tags case:
@@ -252,7 +254,7 @@ public static Vector3 ClosestPointBetweenRays(
 範例：
 * 具有 Led (的產業機器人，或較慢移動物件的 QR 代碼) 
 * 識別和辨識房間中的物件
-* 找出並辨識房間內的人員 (例如，將全像連絡人卡片放在臉部) 
+* 識別和辨識房間中的人員，例如，將全像攝影的連絡人卡片放在臉部上
 
 ## <a name="see-also"></a>另請參閱
 * [已定位相機範例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

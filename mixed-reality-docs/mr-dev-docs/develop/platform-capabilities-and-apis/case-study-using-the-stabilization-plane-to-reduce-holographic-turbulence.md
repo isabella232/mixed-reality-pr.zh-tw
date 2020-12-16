@@ -6,28 +6,28 @@ ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、全息全像、穩定、個案研究、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: c268e7ee83fdcbb8c5ddd09cd643f4354d05ec29
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679607"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530442"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>個案研究-使用穩定平面減少全像 turbulence
 
-使用全像投影可能有點棘手。 您可以四處移動空間並查看所有不同角度的全像投影，提供一層深度，讓您無法使用一般的電腦畫面。 將這些全像放在一起，並在實際的情況下，您可以透過 Microsoft HoloLens 的硬體和智慧型的全像攝影應用程式設計來達成技術。
+使用全像影像通常很難處理。 四處移動空間並查看所有不同角度的全像影像，提供了一般電腦螢幕上無法使用的深度層級。 將這些全像放在一起，並在實際的情況下，您可以透過 Microsoft HoloLens 的硬體和智慧型的全像攝影應用程式設計來達成技術。
 
 ## <a name="the-tech"></a>技術
 
-為了讓全像是與您分享空間一樣，它們應該會正確呈現，而不需要色彩分隔。 這項功能是以內建于 HoloLens 硬體的技術為基礎，讓全像是在所謂 [穩定平面](hologram-stability.md#reprojection)的情況下定位。
+為了讓全像是與您分享空間一樣，它們應該會正確轉譯，而不需要色彩分隔。 這項功能是以內建于 HoloLens 硬體的技術為基礎來達成，讓全像是在所謂的 [穩定平面](hologram-stability.md#reprojection)上的全像投影。
 
-平面是由點和法線定義，但因為我們一定會想要平面來臉部，所以我們其實只在意設定平面的點。 我們可以告訴 HoloLens 將處理的重點放在一起，以保持所有專案的錨定和穩定，但如何設定此焦點點是應用程式特定的，並且可以根據內容來建立或中斷應用程式。
+平面是由點和一般定義。 由於我們一定會想要平面來臉部相機，因此我們關心的是設定平面的點。 我們可以告訴 HoloLens 要將其處理放在哪一點，以保持所有錨定和穩定。 不過，設定此焦點點是應用程式特定的，而且可以根據內容來建立或中斷應用程式。
 
-總而言之，在適當套用穩定平面時，全像是最適合的全像是，實際上這表示您所建立的應用程式類型。 讓我們來看看目前提供給 HoloLens 的一些應用程式如何解決這個問題。
+當穩定平面已正確套用時，全像投影的效果最佳，但實際的意義取決於您所建立的應用程式類型。 讓我們來看看目前提供給 HoloLens 的一些應用程式如何解決這個問題。
 
 ## <a name="behind-the-scenes"></a>在幕後
 
-在開發下列應用程式時，我們注意到當我們未使用平面時，物件會在我們的標頭移動時使用 sway，而我們會看到色彩分隔與快速或全像移動。 在開發時間範圍內，我們已透過試用和錯誤來瞭解如何充分運用穩定平面，以及如何設計應用程式來解決無法修正的問題。
+在開發下列應用程式時，我們注意到，當我們未使用平面時，物件會在我們的標頭移動時使用 sway。 我們也會看到色彩分隔與快速 head 或全像投影的移動。 我們最後會透過試用版進行學習，以及如何以最佳方式使用穩定平面，並針對無法修正的問題設計應用程式。
 
 ### <a name="galaxy-explorer-stationary-content-3d-interactivity"></a>Galaxy Explorer：固定內容、3D 互動
 
@@ -47,25 +47,25 @@ Galaxy Explorer 的設計非常適合讓事物保持穩定，並減少色彩分�
 
 在 [HoloTour] 和 [3D 檢視器] 中，您會看到單獨的動畫物件或影片，並將3D 效果新增至其上方。 這些應用程式中的穩定會設定為您目前所觀看的任何內容。
 
-HoloTour 也可讓您從您的虛擬世界 straying 太遠，而不需要離開固定位置。 這可確保在中，您將無法從其他的全像是其他的全像是穩定問題。
+HoloTour 也可讓您從虛擬世界 straying 太遠，而不需要離開固定位置。 這可確保在中，您將無法從其他的全像是其他的全像是穩定問題。
 
 ![在此範例中，HoloTour 會將穩定平面設定為 Hadrian 的 Pantheon 電影。](images/holotour-stabilization-plane-500px.jpg)
 
 ### <a name="roboraid-dynamic-content-and-environmental-interactions"></a>RoboRaid：動態內容和環境互動
 
-儘管應用程式需要最突然的移動，但在 RoboRaid 中設定穩定平面非常簡單。 平面的目的是要與牆或周圍的物件有關，而且當您遠離它們時，就會在您前方的固定距離浮點數。
+儘管應用程式需要最突然的移動，但在 RoboRaid 中設定穩定平面非常簡單。 平面的目的是要與牆或周圍的物件有關，而且當您夠遠時，會在您前方的固定距離浮點數。
 
-RoboRaid 是以穩定平面為考慮而設計的。 Reticle，因為它是標頭鎖定，所以最常使用紅色和藍色來避免這種情況，以將任何色彩不規則降至最低。 它也包含片段之間稍微的深度，藉由以預期的視差效果遮罩，以最小化所發生的色彩出血。 機器人不會非常快速地移動，而且只會以固定的間隔傳送短距離。 它們通常會在您之前停留2個計量，預設會設定穩定。
+RoboRaid 是以穩定平面為考慮而設計的。 Reticle，因為它是標頭鎖定，所以最常使用紅色和藍色來規避，如此可將任何色彩不規則降至最低。 它也包含片段之間稍微的深度，藉由以預期的視差效果遮罩，以最小化所發生的色彩出血。 機器人不會快速移動，且只會以固定的間隔傳送短距離。 它們通常會在您之前停留2個計量，預設會設定穩定。
 
 ### <a name="fragments-and-young-conker-dynamic-content-with-environmental-interaction"></a>片段和年輕 Conker：具有環境互動的動態內容
 
-Asobo Studio 在 c + + 中撰寫，片段和年輕 Conker 採用不同的方法來設定穩定平面。 感興趣的點 (POI) 是在程式碼中定義，並依優先順序排序。 Poi 是遊戲中的內容，例如 Conker 模型的年輕 Conker、功能表、意圖 reticle 和標誌。 Poi 會以使用者的注視來交集，且平面會設定為具有最高優先順序之物件的中心。 如果沒有任何交集，則會將平面設定為預設距離。
+Asobo Studio 在 c + + 中撰寫，片段和年輕 Conker 採用不同的方法來設定穩定平面。 感興趣的點 (POI) 是在程式碼中定義，並依優先順序排序。 Poi 是遊戲中的內容，例如年輕 Conker、功能表、意圖 reticle 和標誌的 Conker 模型。 Poi 會以使用者的注視來交集，且平面會設定為具有最高優先順序之物件的中心。 如果沒有任何交集，則會將平面設定為預設距離。
 
 如果您移至先前掃描的播放空間以外的位置，則片段和年輕 Conker 也會藉由暫停應用程式，來設計離全像是 straying 太遠的影像。 因此，他們會將您保持在找到的界限內，以提供最穩定的體驗。
 
 ## <a name="do-it-yourself"></a>親自完成
 
-如果您有 HoloLens，而且想要使用本文中的概念來解決，您可以下載測試場景，並嘗試下列練習。 它會使用 Unity 的內建 gizmo API，並可協助您將平面的設定位置視覺化。 此程式碼也用來捕捉此案例研究中的螢幕擷取畫面。
+如果您有 HoloLens，並且想要使用本文中的概念，您可以下載測試場景來嘗試下列練習。 測試場景會使用 Unity 的內建 gizmo API，協助您將平面的設定位置視覺化。 程式碼也用來捕捉此案例研究中的螢幕擷取畫面。
 1. 同步最新版本的 [MixedRealityToolkit-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)。
 2. 開啟 [HoloToolkit-Examples/Utilities/場景/StabilizationPlaneSetting unity](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/Utilities/Scenes/StabilizationPlaneSetting.unity) 場景。
 3. 建立並設定產生的專案。
@@ -86,7 +86,7 @@ Asobo Studio 在 c + + 中撰寫，片段和年輕 Conker 採用不同的方法�
 **提示**
 * 讓您的平面設定邏輯保持簡單。 如您所見，您不需要複雜的平面設定演算法，就能獲得沉浸式體驗。 穩定平面只是拼圖的一部分。
 * 可能的話，請一律在目標之間順暢地移動平面。 立即切換較遠的目標可能會以視覺化方式中斷場景。
-* 請考慮在平面設定邏輯，以鎖定非常特定的目標。 如此一來，您就可以視需要在物件上鎖定平面，例如標誌或標題畫面。
+* 請考慮在平面設定邏輯來鎖定特定目標的選項。 如此一來，您就可以視需要在物件上鎖定平面，例如標誌或標題畫面。
 
 ## <a name="about-the-author"></a>關於作者
 
