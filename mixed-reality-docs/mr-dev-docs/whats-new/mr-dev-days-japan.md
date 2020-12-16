@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 94f38ff122826dfaea6282403c5958b127c81739
-ms.sourcegitcommit: ee87915132cf2874d4642ce2fe383f5eba6c49c2
+ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
+ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97111880"
+ms.lasthandoff: 12/16/2020
+ms.locfileid: "97564253"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -31,9 +31,9 @@ ms.locfileid: "97111880"
 
 ## <a name="registration"></a>註冊
 
-[登錄-現在開啟](https://mixedrealityprod.microsoftcrmportals.com/event/sessions?id=MR_Dev_Days_Japan864059683)
+[立即觀看-Microsoft 小組實況活動](https://aka.ms/MRDDJPLive)
 
-我們很高興能為您的混合現實開發日日本開立註冊。  此活動是免費的，且在線上的 Microsoft 團隊實況活動中保持上線。  我們要求出席者註冊，以便在事件更接近時傳送電子郵件更新，讓您可以參與活動的互動式元素。
+我們建議您在「小組電腦」應用程式上觀賞，也可以參與小組行動應用程式或桌面瀏覽器。 如果您因為某些原因而無法登入小組，請檢查 [YouTube 現場](https://youtu.be/zxZu1uHjyo4)。 不過，您將無法與喇叭參與 QA。
 
 ## <a name="schedule---subject-to-change"></a>排程-可能變更
 
