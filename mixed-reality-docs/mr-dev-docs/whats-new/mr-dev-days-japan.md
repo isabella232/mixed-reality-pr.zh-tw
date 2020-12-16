@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
-ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
+ms.openlocfilehash: bd51220e030af1e9c60a66eb43ea6985b95cd43f
+ms.sourcegitcommit: 16524778ece416e002f52c9ceae354e1122bcc74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97580544"
+ms.locfileid: "97582412"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -29,11 +29,11 @@ ms.locfileid: "97580544"
 
 **主要語言-日文**
 
-## <a name="registration"></a>註冊
+## <a name="session-recordings"></a>會話記錄
 
-[立即觀看-Microsoft 小組實況活動](https://aka.ms/MRDDJPLive)
+[觀看所有影片-YouTube 播放清單](https://www.youtube.com/playlist?list=PLQEKit6tfVVIZaQWKTuNMONjPiIKMuJRH)
 
-我們建議您在「小組電腦」應用程式上觀賞，也可以參與小組行動應用程式或桌面瀏覽器。 如果您因為某些原因而無法登入小組，請檢查 [YouTube 現場](https://youtu.be/zxZu1uHjyo4)。 不過，您將無法與喇叭參與 QA。
+感謝您加入 Mixed Reality Dev Days 日本。 所有影片都會封存在 YouTube 頻道上。 期待您再次看看！
 
 ## <a name="schedule---subject-to-change"></a>排程-可能變更
 
@@ -45,22 +45,22 @@ ms.locfileid: "97580544"
 
 |**Time**|**會話標題**|**主講人**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|11：上午 10:00-11：50am|開啟演講|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA-JP|N/A|
+|11：上午 10:00-11：50am|[使用 Alex Kipman 的特殊歡迎畫面來開啟專題演講](https://youtu.be/MamMO11TnzY)|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA-JP|N/A|
 |11： 50am-12：00|**中斷 (10min)**||||
-|12： 00-12：25pm|*會話 1* 混合現實簡介|: Atsushi Suzuki|JA|100|
-|12： 30pm-12：55pm|*會話 2* Mixed Reality 商務動力|Tetsu Muranaka|JA|200|
-|1： 00-1：50pm|*午餐研討會* 面板：互動式免費討論、問與答、MRTK + Oculus 的追求2|Madoka Chiyoda + Microsoft Mvp|JA|200|
+|12： 00-12：25pm|*會話 1* [混合現實簡介](https://youtu.be/HqJy91y8Of0)|: Atsushi Suzuki|JA|100|
+|12： 30pm-12：55pm|*Session 2* [Mixed Reality 商務動力](https://youtu.be/fJJ9I8UGbio)|Tetsu Muranaka|JA|200|
+|1： 00-1：50pm|*午餐研討會* 面板：互動式免費討論、問與答、MRTK + Oculus 的執行 2 * 稍後更新|Madoka Chiyoda + Microsoft Mvp|JA|200|
 |1： 50pm-2：00|**中斷 (10min)**||||
-|2： 00-2：25pm|*會話 3* HoloLens 2 開發的總覽|Madoka Chiyoda|JA|200|
-|2： 30pm-2：55pm|*會話 4* MRTK UX 元件 v 2.5。0|Yoon 公園|JA|300|
-|3： 00-3：25pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
-|3： 30pm-3：55pm|*會話 6* 製作全像設計|Daniel Escudero|EN|300|
+|2： 00-2：25pm|[HoloLens 2 開發的](https://youtu.be/_z0CwAVkbiQ)*課程 3* 總覽|Madoka Chiyoda|JA|200|
+|2： 30pm-2：55pm|*Session 4* [MRTK UX 元件 v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon 公園|JA|300|
+|3： 00-3：25pm|*第5階段* [：開始使用 HoloLens 2 和 UNREAL 引擎 (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|EN|300|
+|3： 30pm-3：55pm|*會話 6* [製作](https://youtu.be/jHn9yydiRTw)全像影像|Daniel Escudero|EN|300|
 |3： 55pm-4：下午5:15|**中斷 (20min)**||||
-|4：下午 5:15-4：40pm|*會話 7* Azure 物件錨點|Jesse McCulloch|EN|300|
-|4：下午5:45 執行-5：下午10點|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
-|5：下午 5:15-5：40pm|*課程 9* 透過 Azure 空間錨點對齊全像影像和真實世界|Yingguang Mei|EN|300|
-|5：下午5:45 執行-6：下午10點|*會話 10* Unity + PiXYZ|Shinobu Takahashi (Unity 技術日本) |JA|200|
-|6：下午 5:15-6：40pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
+|4：下午 5:15-4：40pm|*會話 7* [Azure 物件錨點](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|EN|300|
+|4：下午5:45 執行-5：下午10點|*會話 8* [Azure 遠端轉譯](https://youtu.be/MEhL12WGOW0)|: Atsushi Suzuki|JA|300|
+|5：下午 5:15-5：40pm|*會話 9* [透過 Azure 空間錨點對齊全像影像和真實世界](https://youtu.be/ApBd_jSHg9Q)|Yingguang Mei|EN|300|
+|5：下午5:45 執行-6：下午10點|*會話 10* [Unity + PiXYZ](https://youtu.be/ggRZRRN36VI)|Shinobu Takahashi (Unity 技術日本) |JA|200|
+|6：下午 5:15-6：40pm|*Session 11* [Azure Kinect DK 深入探討，個案研究](https://youtu.be/C6gg2jBL3Tw)|Shinji Chiba|JA|400|
 |6：下午5:45 執行-7：00|關閉|Madoka Chiyoda|JA|N/A|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a> () 的技術審核者參與者
