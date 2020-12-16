@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
 keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 7ca5357c9d7f3536fc165d0663813ae98f45004f
-ms.sourcegitcommit: 1b5a5ce89f2edc86985a73e4f3828bb761e7543a
+ms.openlocfilehash: 925e94931adab767fbca2544d781c9ba1c095216
+ms.sourcegitcommit: cecb76c6a9b4b2c4e9769a5829a7146c99086e85
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/16/2020
-ms.locfileid: "97564253"
+ms.locfileid: "97580544"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -39,28 +39,29 @@ ms.locfileid: "97564253"
 
 **所有時間都是日本標準時間 (UTC + 9)** 
 
-
-
 ### <a name="december-16th"></a>12月16日
+
+**我們已延遲一小時的原始排程。**
+
 |**Time**|**會話標題**|**主講人**|**Language**|**Level**|
 |---------|---------|---------|---------|---------|
-|10：上午 10:00-10：50am|開啟演講|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA-JP|N/A|
-|10： 50am-11：上午10:00|**中斷 (10min)**||||
-|11：上午 10:00-11：25am|*會話 1* 混合現實簡介|: Atsushi Suzuki|JA|100|
-|11： 30am-11：55am|*會話 2* Mixed Reality 商務動力|Tetsu Muranaka|JA|200|
-|12： 00-12：50pm|*午餐研討會* 面板：互動式免費討論、問與答、MRTK + Oculus 的追求2|Madoka Chiyoda + Microsoft Mvp|JA|200|
-|12： 50pm-1：00|**中斷 (10min)**||||
-|1： 00-1：25pm|*會話 3* HoloLens 2 開發的總覽|Madoka Chiyoda|JA|200|
-|1： 30pm-1：55pm|*會話 4* MRTK UX 元件 v 2.5。0|Yoon 公園|JA|300|
-|2： 00-2：25pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
-|2： 30pm-2：55pm|*會話 6* 製作全像設計|Daniel Escudero|EN|300|
-|2： 55pm-3：下午5:15|**中斷 (20min)**||||
-|3：下午 5:15-3：40pm|*會話 7* Azure 物件錨點|Jesse McCulloch|EN|300|
-|3：下午5:45 執行-4：下午10點|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
-|4：下午 5:15-4：40pm|*課程 9* 透過 Azure 空間錨點對齊全像影像和真實世界|Yingguang Mei|EN|300|
-|4：下午5:45 執行-5：下午10點|*會話 10* Unity + PiXYZ|Shinobu Takahashi (Unity 技術日本) |JA|200|
-|5：下午 5:15-5：40pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
-|5：下午5:45 執行-6：00|關閉|Madoka Chiyoda|JA|N/A|
+|11：上午 10:00-11：50am|開啟演講|Madoka Chiyoda、Jesse McCulloch、Kaoru Nakamura、Tetsu Muranaka|JA-JP|N/A|
+|11： 50am-12：00|**中斷 (10min)**||||
+|12： 00-12：25pm|*會話 1* 混合現實簡介|: Atsushi Suzuki|JA|100|
+|12： 30pm-12：55pm|*會話 2* Mixed Reality 商務動力|Tetsu Muranaka|JA|200|
+|1： 00-1：50pm|*午餐研討會* 面板：互動式免費討論、問與答、MRTK + Oculus 的追求2|Madoka Chiyoda + Microsoft Mvp|JA|200|
+|1： 50pm-2：00|**中斷 (10min)**||||
+|2： 00-2：25pm|*會話 3* HoloLens 2 開發的總覽|Madoka Chiyoda|JA|200|
+|2： 30pm-2：55pm|*會話 4* MRTK UX 元件 v 2.5。0|Yoon 公園|JA|300|
+|3： 00-3：25pm|*會話 5* 開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal) |Cameron Micka|EN|300|
+|3： 30pm-3：55pm|*會話 6* 製作全像設計|Daniel Escudero|EN|300|
+|3： 55pm-4：下午5:15|**中斷 (20min)**||||
+|4：下午 5:15-4：40pm|*會話 7* Azure 物件錨點|Jesse McCulloch|EN|300|
+|4：下午5:45 執行-5：下午10點|*會話 8* Azure 遠端轉譯|: Atsushi Suzuki|JA|300|
+|5：下午 5:15-5：40pm|*課程 9* 透過 Azure 空間錨點對齊全像影像和真實世界|Yingguang Mei|EN|300|
+|5：下午5:45 執行-6：下午10點|*會話 10* Unity + PiXYZ|Shinobu Takahashi (Unity 技術日本) |JA|200|
+|6：下午 5:15-6：40pm|*會話 11* Azure Kinect DK 深入探討，個案研究|Shinji Chiba|JA|400|
+|6：下午5:45 執行-7：00|關閉|Madoka Chiyoda|JA|N/A|
 
 #### <a name="contributors-technical-reviewers-for-the-subtitles"></a> () 的技術審核者參與者
 
