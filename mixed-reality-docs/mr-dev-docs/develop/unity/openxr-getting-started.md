@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: adb678d168d86dc2376ac46caa690e5db036099c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 05adee2d88bc90dcfb5cf8b780212c7622aff786
+ms.sourcegitcommit: ce4975f584bb62075bcb66349237b77081fb982b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622934"
+ms.locfileid: "97644915"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
@@ -29,7 +29,7 @@ ms.locfileid: "97622934"
 
 ## <a name="installing-the-mixed-reality-openxr-plugin"></a>安裝 Mixed Reality OpenXR 外掛程式
 
-使用 Mixed Reality OpenXR 外掛程式之前，您必須安裝 Unity 的 **OpenXR 外掛程式** 和 **XR 外掛程式管理** 套件：
+您的專案必須先安裝 **OpenXR 外掛程式** 和 **XR 外掛程式管理** 套件，才能使用 Mixed Reality OpenXR 外掛程式。 如果您已經安裝這些專案，很棒！ 如果不是，安裝 Mixed Reality OpenXR 外掛程式會自動將它們安裝為相依性：
 
 1. 在 Unity 編輯器中，流覽至 [ **編輯 > 專案設定] > 封裝管理員**
 2. 展開 [限 **域** 登錄] 區段，輸入下列資訊，然後選取 [ **儲存**]：   

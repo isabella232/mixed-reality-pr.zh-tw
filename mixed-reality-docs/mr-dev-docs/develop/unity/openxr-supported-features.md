@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/15/2020
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: dc908762d6e44e04f56b8ff82b90394106ca42e5
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5db08dee6b26de6fa3f44d92709e4903bb90a44c
+ms.sourcegitcommit: 7595db7438398b5c78cec41a6f8ab625711bf8ec
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 12/17/2020
-ms.locfileid: "97622898"
+ms.locfileid: "97664416"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>混合現實 OpenXR Unity 中支援的功能
 
@@ -25,12 +25,12 @@ ms.locfileid: "97622898"
 * 針對 HoloLens 2 應用程式優化 UWP 套件和 CoreWindow 互動。
 * 使用錨點和未系結空間的世界規模追蹤。
 * 錨點儲存體 API，以將錨點保存到 HoloLens 2 的本機儲存體。
-* 移動控制器和手互動，包括新的 HP 回音卡控制器。
+* [移動控制器和手互動](#motion-controller-and-hand-interactions)，包括新的 HP 回音卡控制器。
 * 使用26個接點和聯合半徑輸入，以明確表述的手勢進行追蹤。
 * HoloLens 2 上的眼睛注視互動。
 * HoloLens 2 上尋找 (PV) 攝影機的相片/影片。
 * 混合實境擷取使用透過 PV 攝影機的第三種眼睛呈現。
-* 支援「播放」以使用全像「遠端處理」應用程式 HoloLens 2，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
+* 支援「播放」以使用全像「 [遠端處理」應用程式 HoloLens 2](#holographic-remoting-in-unity-editor-play-mode)，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
 * 透過 MRTK OpenXR adapter 套件與 MRTK Unity 2.5.2 相容。 <missing link>
 * 與 Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 或更新版本相容
 
