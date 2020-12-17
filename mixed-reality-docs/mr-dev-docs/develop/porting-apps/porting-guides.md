@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
-ms.openlocfilehash: 9f3e064c4462fc3d12a23bd94885476bcd2f9466
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 4137ff4dcc9f72dd66b9078b0d86c2d06f01f2bc
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925947"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613222"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>將 VR 應用程式移植到 Windows Mixed Reality
 
-Windows 10 包含沉浸式和全像攝影耳機的直接支援。 如果您已建立其他裝置的內容（例如 Oculus Rift 或 HTC Vive），這些裝置會相依于存在於作業系統平臺 API 之上的程式庫。 將現有的 Win32 Unity VR 應用程式帶入 Windows Mixed Reality 牽涉到將廠商專屬的 VR Sdk 重定目標使用於 Unity 的跨廠商 VR Api。
+Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立其他裝置的內容（例如 Oculus Rift 或 HTC Vive），它們就會相依于存在於作業系統平臺 API 之上的程式庫。 將現有的 Win32 Unity VR 應用程式帶入 Windows Mixed Reality 牽涉到將廠商專屬的 VR Sdk 重定目標使用於 Unity 的跨廠商 VR Api。
 
 ## <a name="porting-requirements"></a>移植需求
 
@@ -23,7 +23,7 @@ Windows 10 包含沉浸式和全像攝影耳機的直接支援。 如果您已�
 1. **確定您的電腦正在執行 Windows 10 Fall Creators Update (16299) 。** 我們不再建議從 Insider Skip 通道接收預覽版，因為這些組建對於混合現實開發來說不是最穩定的。
 2. **升級至最新版本的圖形或遊戲引擎。** 遊戲引擎將需要支援2017年4月) 或更高版本的 Windows 10 SDK 版本 10.0.15063.0 (。
 3. **升級任何中介軟體、外掛程式或元件。** 如果您的應用程式包含任何元件，最好是升級到最新版本。
-4. **移除重複 sdk 的** 相依性。 根據您的內容的目標裝置而定，您必須移除或有條件地編譯該 SDK (例如 SteamVR) ，因此您可以改為以 Windows Api 為目標。
+4. **移除重複 sdk 的** 相依性。 視內容的目標裝置而定，您必須移除或有條件地編譯該 SDK，讓您可以改為以 Windows Api 為目標。 此案例的範例將會 SteamVR。
 5. **解決組建問題。** 此時，移植練習是您的應用程式、引擎和您擁有的元件相依性所特有的。
 
 ## <a name="common-porting-steps"></a>常見的移植步驟
@@ -41,7 +41,7 @@ Windows Mixed Reality 平臺仍在積極開發中。 建議您 [加入 Windows �
 4. 透過 [**設定] > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. 升級為最新組建的 Visual Studio
-* 如果您是使用 Visual Studio 然後升級至最新的組建
+* 如果您是使用 Visual Studio，請升級至最新的組建
 * 請參閱 Visual Studio 2019 下 [的安裝工具](../install-the-tools.md#installation-checklist) 頁面
 
 ### <a name="4-choose-the-correct-adapter"></a>4. 選擇正確的介面卡

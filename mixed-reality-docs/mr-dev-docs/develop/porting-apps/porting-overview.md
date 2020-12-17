@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植、unity、中介軟體、引擎、UWP、Win32
-ms.openlocfilehash: 1ec03610dd26e9f75162795cbdded77a8e0189ce
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: d8cbb62500a81a29a00f4d32eaed0c2df3f5149d
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925828"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612832"
 ---
 # <a name="porting-overview"></a>移植概觀
 
-當您將現有專案移植或升級為混合的實際專案時，可能會根據您的應用程式是使用 Unity 或 Unreal 引擎、HoloLens (第一代) 或 HoloLens 2，或 SteamVR 來進行。 此總覽頁面包含我們針對每個平臺和裝置目前的建議-請務必回頭查看這些流程一律會變更。
+當您想要移植或升級現有的專案時，您的移植旅程取決於您的應用程式是使用 Unity 或 Unreal 引擎所建立，並以 HoloLens (第1代) 或 HoloLens 2 或 SteamVR 為目標。 此總覽頁面包含我們針對每個平臺和裝置目前的建議-請務必回頭查看這些流程一律會變更。
 
 首先，根據我們的 [Unity](#unity) 和 [Unreal](#unreal) 建議來設定您的專案目標，然後遵循一或多個移植案例：
 
@@ -26,7 +26,7 @@ ms.locfileid: "96925828"
 
 ## <a name="recommended-project-targets"></a>建議的專案目標
 
-無論您是否將應用程式移植到另一個目標裝置，都必須保持您的專案最新狀態。 如需我們目前的建議，請參閱下列以引擎為基礎的資源。
+無論您是將應用程式移植到另一個目標裝置，都必須保持您的專案最新狀態。 如需我們目前的建議，請參閱下列以引擎為基礎的資源。
 
 ### <a name="unity"></a>Unity
 
@@ -52,7 +52,7 @@ ms.locfileid: "96925828"
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 頭戴式裝置
 
-如果您已為其他裝置（例如 Oculus Rift 或 HP 回送 G2）建立內容，您將必須重新鎖定廠商專屬的 VR Sdk 和可能的輸入對應 Api。 您可以在「 [沉浸式應用程式移植指南](porting-guides.md)」中找到 Unity 和 Unreal 移植案例的相關資訊。
+如果您已建立其他裝置的內容（例如 Oculus Rift 或 HP 回送 G2），則您必須將廠商專屬的 VR Sdk 和可能的輸入對應 Api 重定目標。 您可以在「 [沉浸式應用程式移植指南](porting-guides.md)」中找到 Unity 和 Unreal 移植案例的相關資訊。
 
 ### <a name="steamvr-applications"></a>SteamVR 應用程式
 
@@ -60,5 +60,5 @@ ms.locfileid: "96925828"
 
 ### <a name="2d-universal-windows-applications"></a>2D 通用 Windows 應用程式
 
-如果您有想要移植到 Windows Mixed Reality 沉浸式耳機或 HoloLens 的現有 2D UWP 應用程式，請遵循我們 [移植 2D uwp 應用程式](building-2d-apps.md) 中的指示，以取得 Windows Mixed Reality 文章。
+如果您有想要移植到 Windows Mixed Reality 沉浸式耳機或 HoloLens 的現有 2D UWP 應用程式，請遵循我們 [的移植 2D uwp 應用程式，以取得 Windows Mixed Reality 的](building-2d-apps.md) 指示。
 

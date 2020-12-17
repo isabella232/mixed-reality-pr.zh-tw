@@ -1,25 +1,23 @@
 ---
-title: 針對 Windows Mixed Reality 設定新的 Unity 專案
+title: 在不 MRTK 的情況下設定您的專案
 description: 針對 Windows Mixed Reality 設定 Unity 專案的指示
-author: thetuvix
+author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能
-ms.openlocfilehash: cd7e6c5681c717c37368393a605998a2ab8e4175
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1337001e8cc5c280c5789acbc8f10f40bca9b763
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677667"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613370"
 ---
-# <a name="configure-a-new-unity-project-for-windows-mixed-reality"></a>針對 Windows Mixed Reality 設定新的 Unity 專案 
-
-## <a name="overview"></a>概觀
+# <a name="configuring-your-project-without-mrtk"></a>在不 MRTK 的情況下設定您的專案
 
 Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft 平臺。 WMR 平臺可讓您建立應用程式，以在全像全像 VR 的顯示裝置上呈現數位內容。
 
-設定 WMR 時，您可以採用兩個路徑。 第一個選項是安裝 [混合現實工具組 (MRTK) ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)，這會自動設定 WMR 環境。 第二個選項是手動變更一些 Unity 設定，以使用 WMR 進行滾動。 
+雖然 Microsoft 和社區建立了開放原始碼工具，例如 [混合現實工具組 (MRTK) ](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) ，而這些工具會自動設定 WMR 的環境，但許多開發人員想要從頭開始建立他們的體驗。  當您使用 MRTK 時，下列檔將示範如何針對混合現實開發正確設定專案。  您需要變更的設定分為兩類：每個專案設定和個別場景設定。
 
 > [!NOTE]
 > 您稍後可以隨時匯入 MRTK，如此一來，就不會再進行手動路由。
@@ -28,25 +26,53 @@ Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft
 
 ## <a name="per-project-settings"></a>每個專案的設定
 
-您需要變更 WMR 的第一個設定是專案平臺： 
-1. 選取 [檔案 **> 組建設定 ...** ]
-2. 在 [平臺] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]
-3. 將 **SDK** 設定為 **通用 10**
-4. 將 **目標裝置** 設定為 **任何裝置** 以支援沉浸式耳機或切換至 **HoloLens**
-5. 將 **組建類型** 設定為 **D3D**
-6. 將 **UWP SDK** 設定為 **最新安裝**
+如果您的目標是 Desktop VR，建議您在新的 Unity 專案上使用預設選取的電腦獨立平臺：
 
-<img src="images/unity-uwp-settings.png" width="550px" alt="Unity XR Settings">
-*Unity XR 設定*
+![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示 [電腦]、[Mac & 獨立平臺](images/wmr-config-img-3.png)
 
-當平臺設定正確之後，您需要讓 Unity 知道您的應用程式應該在匯出時建立一個 [沉浸式視圖](../../design/app-views.md) ，而不是2d 視圖：
-1. 從 [**組建設定 ...** ] 視窗中，開啟 [**播放玩家設定**]。
-2. 選取 [ **通用 Windows 平臺** ] 索引標籤的設定，並展開 [ **XR 設定** ] 群組
-3. 在 [ **XR 設定** ] 區段中，核取 [ **虛擬實境支援** ] 核取方塊，以新增 **虛擬實境裝置** 清單。
-4. 在 [ **XR 設定** ] 群組中，確認 **[Windows Mixed Reality]** 列為受支援的裝置。  (此選項可能會顯示為舊版 Unity 中的 **Windows 全息** 版) 
+如果您的目標是 HoloLens 2，則必須切換至通用 Windows 平臺：
 
-![Unity UWP 設定](images/xrsettings.png)<br>
-*Unity XR 設定*
+1.  選取 [檔案 **> 組建設定 ...** ]
+2.  選取 [平臺] 清單中的 [**通用 Windows 平臺**]，然後選取 [**切換平臺**]
+3.  將 **架構** 設定為 **ARM 64**
+4.  將 **目標裝置** 設定為 **HoloLens**
+5.  將 **組建類型** 設定為 **D3D**
+6.  將 **UWP SDK** 設定為 **最新安裝**
+7.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
+
+![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示通用 Windows 平臺](images/wmr-config-img-4.png)
+
+設定您的平臺之後，您需要讓 Unity 知道在匯出時建立一個 [沉浸式視圖](../../design/app-views.md) ，而不是2d 視圖。
+
+### <a name="for-xrsdk"></a>針對 XRSDK 
+
+1. 在 Unity 編輯器中，流覽至 [**編輯 > 專案設定**]，然後選取 [ **XR 外掛程式管理**]
+
+2. 選取 [**安裝 XR 外掛程式管理**]
+
+![醒目提示 XR 外掛程式管理的 unity 編輯器中開啟之 [專案設定] 視窗的螢幕擷取畫面](images/wmr-config-img-5.png)
+
+3. 選取 [ **啟動時初始化 XR** ] 和 **Windows Mixed Reality**
+
+![醒目提示 XR 外掛程式管理的 unity 編輯器中開啟之 [專案設定] 視窗的螢幕擷取畫面](images/wmr-config-img-7.png)
+
+4. 展開 [ **XR 外掛程式管理]** 區段，然後選取 **Windows Mixed Reality**
+5. 檢查所有方塊，並將 **深度提交模式** 設定為 **深度16位**
+
+![在 unity 編輯器中開啟的 [專案設定] 視窗的螢幕擷取畫面，其中已醒目提示 Windows Mixed Reality 區段](images/wmr-config-img-8.png)
+
+### <a name="for-legacy-xr"></a>針對舊版 XR 
+
+> [!CAUTION]
+> Unity 2019 中的舊版 XR 已被取代，並已在 Unity 2020 中移除。
+
+1. 從組建設定開啟 **播放機設定** ... **視窗** 並展開 [ **XR 設定** ] 群組
+2. 在 [ **XR 設定** ] 區段中，選取 [ **支援的虛擬實境** 新增虛擬實境裝置] 清單
+3. 將 **深度格式** 設定為 **16 位深度** ，並啟用 **深度緩衝區共用**
+4. 將 **身歷聲轉譯模式** 設定為 **單一傳遞實例**
+5. 如果您想要使用全像攝影的遠端處理，請選取 [不 **支援的 WSA** 全像 
+
+![醒目提示 [播放程式設定] 區段的 [在 unity 編輯器中開啟專案設定] 視窗的螢幕擷取畫面](images/wmr-config-img-9.png)
 
 ### <a name="updating-the-manifest"></a>更新資訊清單
 
@@ -65,10 +91,12 @@ Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft
 ### <a name="quality-settings"></a>品質設定
 
 HoloLens 有行動類別 GPU。 如果您的應用程式是以 HoloLens 為目標，您會想要調整應用程式中的品質設定以獲得最快的效能，以確保它會維持完整的畫面播放速率：
-1. 選取 [ **編輯] > 專案設定 > 品質**
-2. 選取 [ **Windows Store** ] 標誌底下的 **下拉式清單**，然後選取 [**非常低**]。 您會知道當 Windows Store 資料行中的方塊和 **非常低** 的資料列中的方塊為綠色時，會正確套用設定。
 
-![Unity 品質設定](images/getting-started-unity-quality-settings.jpg)<br>
+1. 選取 [ **編輯] > 專案設定 > 品質**
+2. 選取 [ **Windows Store** ] 標誌底下的 **下拉式清單**，然後選取 [**非常低**]。 您會知道當 Windows Store 資料行中的方塊和 **非常低** 的資料列中的方塊為綠色時，會正確套用設定
+3. 在 [**遮蔽**] 區段中，選取 [**停用陰影**]
+
+![醒目提示 [品質設定] 區段的 unity 編輯器中開啟的 [專案設定] 視窗螢幕擷取畫面](images/wmr-config-img-10.png)<br>
 *Unity 品質設定*
 
 ## <a name="per-scene-settings"></a>每場景設定
@@ -78,20 +106,27 @@ HoloLens 有行動類別 GPU。 如果您的應用程式是以 HoloLens 為目�
 若已核取 [ **虛擬事實** ]，則 [Unity 攝影機](camera-in-unity.md) 元件會處理 [標頭追蹤和 stereoscopic](../platform-capabilities-and-apis/rendering.md)轉譯。 這表示您不需要使用自訂相機來取代主要攝影機物件。
 
 如果您的應用程式是以 HoloLens 為目標，則您必須變更一些設定，以針對裝置的透明顯示進行優化。 這些設定可讓您的全像全球內容顯示到實體世界：
+
 1. **在階層中，選取****主要攝影機**
 2. 在 [偵測 **器** ] 面板中，將轉換 **位置** 設定為 **0、0、0** ，讓使用者的標頭位置開始于 Unity world 來源。
 3. 將 **清除旗標** 變更為 **純色**。
 4. 將 **背景** 色彩變更為 **RGBA 0、0、0、0**。 在 HoloLens 中，黑色呈現為透明。
 5. 變更 **裁剪平面-接近** [HoloLens 建議](camera-in-unity.md#clip-planes) 的 0.85 (計量) 。
 
-![Unity 攝影機設定](images/Unitycamerasettings.png)<br>
+![在 Unity 編輯器中開啟之偵測器索引標籤的螢幕擷取畫面](images/wmr-config-img-11.png)<br>
 *Unity 攝影機設定*
 
 > [!IMPORTANT]
 > 如果您刪除並建立新的相機，請確定您的新相機已標記為 **MainCamera**。
 
+## <a name="next-steps"></a>後續步驟
+
+現在您的專案已經準備就緒，您可以開始開發混合現實體驗：
+
+* 新增 [核心組建區塊](unity-development-overview.md#2-core-building-blocks)
+* 查看可用 [的平臺功能和 api](unity-development-overview.md#3-platform-capabilities-and-apis)
+* 瞭解如何 [部署您的應用程式](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
+* 使用[混合現實](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)模擬器
+
 ## <a name="see-also"></a>另請參閱
-* [MRTK - 安裝指南 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK - 文件首頁 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
 * [安裝工具](../install-the-tools.md)
-* [Unity 開發總覽](unity-development-overview.md)

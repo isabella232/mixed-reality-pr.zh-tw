@@ -6,17 +6,17 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 逐步解說、語音命令、片語、辨識、語音、directx、平臺、cortana、windows mixed reality
-ms.openlocfilehash: bdd92f79b3dd9677ac5c2c64e532978477ac5bca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679325"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613102"
 ---
 # <a name="voice-input-in-directx"></a>DirectX 中的語音輸入
 
 > [!NOTE]
-> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)** 。
+> 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
 本文說明如何在 Windows Mixed Reality 的 DirectX 應用程式中，執行 [語音命令](../../design/voice-input.md) 加上小型片語和句子辨識。
 
@@ -29,7 +29,7 @@ ms.locfileid: "91679325"
 
 首先，建立新的 *Windows：： Media：： SpeechRecognition：： SpeechRecognizer* 實例。
 
-從 *HolographicVoiceInputSampleMain：： CreateSpeechConstraintsForCurrentState* ：
+從 *HolographicVoiceInputSampleMain：： CreateSpeechConstraintsForCurrentState*：
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-若要在語音辨識器的條件約束清單中載入命令清單，請使用 [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) 物件。
+若要將命令清單載入語音辨識器的條件約束清單中，請使用 [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) 物件。
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-*OnResultGenerated* 事件處理常式會接收 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)實例中的事件資料。 如果信賴度大於您所定義的閾值，您的應用程式應該會注意到事件發生。 儲存事件資料，讓您可以在後續的更新迴圈中使用它。
+*OnResultGenerated* 事件處理常式會接收 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)實例中的事件資料。 如果信賴度大於您所定義的閾值，您的應用程式應該會注意到事件發生。 儲存事件資料，讓您可以在稍後的更新迴圈中使用它。
 
-從 *HolographicVoiceInputSampleMain .cpp* ：
+從 *HolographicVoiceInputSampleMain .cpp*：
 
 ```
 // Change the cube color, if we get a valid result.
@@ -112,7 +112,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
 
 在我們的範例程式碼中，我們會根據使用者的命令變更旋轉全息圖 cube 的色彩。
 
-從 *HolographicVoiceInputSampleMain：： Update* ：
+從 *HolographicVoiceInputSampleMain：： Update*：
 
 ```
 // Check for new speech input since the last frame.
@@ -367,7 +367,7 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
 
 「全像」語音範例會使用語音合成，為使用者提供有聲音的指示。 本節說明如何建立合成語音範例，然後透過 HRTF 音訊 Api 播放。
 
-當您要求片語輸入時，您應該提供自己的語音提示。 提示也有助於指出語音命令可用於連續辨識案例的時機。 下列範例示範如何使用語音合成器來執行這項操作。 您也可以使用預先錄製的語音剪輯、視覺 UI 或其他指標，例如，在不是動態提示的情況下。
+建議您在要求片語輸入時提供自己的語音提示。 提示也有助於指出語音命令可用於連續辨識案例的時機。 下列範例示範如何使用語音合成器來執行這項操作。 您也可以使用預先錄製的語音剪輯、視覺 UI 或其他指標，例如在提示不是動態的情況下。
 
 首先，建立 SpeechSynthesizer 物件。
 

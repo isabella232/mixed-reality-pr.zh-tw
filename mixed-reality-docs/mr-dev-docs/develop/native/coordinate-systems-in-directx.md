@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的座標系統
-description: 說明如何使用 Windows Mixed Reality 空間定位器、參考框架、空間錨點和座標系統、如何使用 SpatialStage、如何處理追蹤遺失、如何儲存和載入錨點，以及如何執行映射穩定。
+description: 瞭解 DirectX 中的座標系統，以及空間定位器、參考框架和空間錨點的混合現實。 使用 SpatialStage 和處理追蹤遺失、儲存和載入錨點，以及影像穩定。
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 混合的現實、空間定位器、空間參考框架、空間座標系統、空間階段、範例程式碼、影像穩定、空間錨點、空間錨點存放區、追蹤遺失、逐步解說、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4ab97df0d0ce87f86b3b561edb544d503e479e96
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679657"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613112"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX 中的座標系統
 
@@ -20,16 +20,16 @@ ms.locfileid: "94679657"
 
 [座標系統](../../design/coordinate-systems.md) 形成 Windows Mixed Reality api 所提供的空間理解基礎。
 
-現今的上建的 VR 或單一房間的 VR 裝置會建立一個主要座標系統來代表其追蹤的空間。 Windows Mixed Reality 的裝置（例如 HoloLens）是設計用來在整個未定義的環境中使用，而裝置會在使用者四處四處探索和學習其環境。 這可讓裝置進行調整以持續改善使用者房間的相關知識，但會導致在應用程式存留期內，將其關聯性變更為另一個的座標系統。 Windows Mixed Reality 支援各式各樣的裝置，範圍從內建的沉浸式耳機到世界附加的參考框架。
+現今的上建的 VR 或單一房間的 VR 裝置會為其追蹤空間建立一個主要座標系統。 HoloLens 這類的混合現實裝置是針對大型未定義的環境所設計，而裝置會在使用者四處四處探索和學習其周圍。 裝置可調整以持續改善使用者房間的知識，但會導致在應用程式存留期內，改變彼此之間關聯性的座標系統。 Windows Mixed Reality 支援各式各樣的裝置，範圍從內建的沉浸式耳機到世界附加的參考框架。
 
 >[!NOTE]
 >本文中的程式碼片段目前示範如何使用 c + + [/cx，而](creating-a-holographic-directx-project.md)不是 c + + 全像 c + + 全像 c + + 的 + 17 相容 c + +/WinRT。  這些概念對 c + +/WinRT 專案而言是相等的，不過您必須轉譯程式碼。
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Windows 中的空間座標系統
 
-在 Windows 中用來因應實際座標系統原因的核心類型是 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>。 此類型的實例代表任意座標系統，並提供方法來取得轉換矩陣，您可以使用此矩陣在兩個座標系統之間進行轉換，而不需要瞭解每個座標系統的詳細資料。
+在 Windows 中用來因應實際座標系統原因的核心類型是 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>。 此類型的實例代表任意座標系統，提供取得轉換矩陣資料的方法，您可以使用此方法在兩個座標系統之間進行轉換，而不需要瞭解每個座標系統的詳細資料。
 
-傳回空間資訊的方法（在使用者的環境中以點、光線或磁片區表示）將會接受 SpatialCoordinateSystem 參數，讓您決定最適合傳回這些座標的座標系統。 這些座標的單位將一律為計量。
+傳回空間資訊的方法會接受 SpatialCoordinateSystem 參數，讓您決定最適合傳回這些座標的座標系統。 空間資訊以點、光線或磁片區的形式表示在使用者的環境中，而這些座標的單位一律會是計量。
 
 SpatialCoordinateSystem 與其他座標系統有動態的關聯性，包括代表裝置位置的關聯性。 在任何時間點，裝置都可以找到某些座標系統，而不是其他系統。 對於大部分的座標系統而言，您的應用程式必須準備好處理它們找不到的時間週期。
 
@@ -43,11 +43,17 @@ SpatialCoordinateSystem 與其他座標系統有動態的關聯性，包括代�
 ![左側和右側座標系統](images/left-hand-right-hand.gif)<br>
 *左側和右側座標系統*
 
-若要根據 HoloLens 的位置啟動程式至 SpatialCoordinateSystem，請使用 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> 類別來建立附加或固定的參考框架，如下列各節所述。
+您可以使用 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> 類別，根據 HoloLens 位置，在 SpatialCoordinateSystem 中建立附加或固定的參考框架。 若要深入瞭解此程式，請繼續下一節。
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>使用空間階段來放置全球的全像影像
 
-透明的座標系統 Windows Mixed Reality 沉浸式耳機是使用 static <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference：： Current</a> 屬性來存取。 此 API 會提供座標系統、玩家是否為裝置上、行動裝置或行動裝置的相關資訊、在玩家為行動裝置時的安全區域界限，以及耳機是否有方向的指示。 另外還有一個事件處理常式，可更新空間階段。
+透明的座標系統 Windows Mixed Reality 沉浸式耳機是使用 static <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference：： Current</a> 屬性來存取。 此 API 提供：
+
+* 座標系統
+* 玩家是否在裝置上或行動裝置的相關資訊
+* 當玩家為行動裝置時，要流覽的安全區域界限
+* 指出耳機是否為方向。 
+* 空間階段更新的事件處理常式。
 
 首先，我們會取得空間階段並訂閱其更新： 
 
@@ -68,7 +74,7 @@ SpatialStageManager::SpatialStageManager(
 }
 ```
 
-在 OnCurrentChanged 方法中，您的應用程式應該檢查空間階段，並據以更新播放機體驗。 在此範例中，我們會提供階段界限的視覺效果，以及使用者指定的開始位置，以及階段的視圖範圍和移動屬性範圍。 當無法提供階段時，我們也會切換回我們自己的固定座標系統。
+在 OnCurrentChanged 方法中，您的應用程式應該檢查空間階段並更新播放機體驗。 在此範例中，我們會提供階段界限的視覺效果，以及使用者指定的起點和移動屬性範圍的開始位置。 當無法提供階段時，我們也會切換回我們自己的固定座標系統。
 
 
 **空間階段更新** 的程式碼
@@ -175,7 +181,7 @@ void SpatialStageManager::OnCurrentChanged(Object^ /*o*/)
 }
 ```
 
-以順時針順序提供定義階段界限的頂點集合。 當使用者進行方法時，Windows Mixed Reality shell 會在界限上繪製範圍;基於您的目的，您可能會想要 triangularize walkable 區域。 下列演算法可以用來 triangularize 階段。
+以順時針順序提供定義階段界限的頂點集合。 當使用者在使用時，Windows Mixed Reality shell 會在界限上繪製一個範圍，但是您可能會想要為自己的目的 triangularize walkable 區域。 下列演算法可以用來 triangularize 階段。
 
 
 **空間階段 triangularization** 的程式碼
@@ -304,9 +310,9 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 您可以在選擇的 SpatialCoordinateSystem 中，于任何位置和方向建立 SpatialAnchor。 裝置目前必須能夠找出該座標系統，且系統不能達到其空間錨點的限制。
 
-一旦定義之後，SpatialAnchor 的座標系統會持續調整，以保留其初始位置的精確位置和方向。 然後，您可以使用此 SpatialAnchor 來轉譯在確切位置的使用者環境中，會顯示為固定的全像影像。
+一旦定義之後，SpatialAnchor 的座標系統會持續調整以保持其初始位置的精確位置和方向。 然後，您可以使用此 SpatialAnchor 來轉譯在確切位置的使用者環境中，會顯示為固定的全像影像。
 
-保留錨點的調整效果，會隨著錨點的距離增加而放大。 因此，您應該避免轉譯相對於錨點來源中超過3個計量的內容。
+保留錨點的調整效果，會隨著錨點的距離增加而放大。 您應避免轉譯相對於錨點來源中超過3個計量的內容。
 
 [CoordinateSystem](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.coordinatesystem.aspx)屬性會取得座標系統，可讓您放置相對於錨點的內容，並在裝置調整錨點的精確位置時套用緩和措施。
 
@@ -316,9 +322,9 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 您可以使用 [SpatialAnchorStore](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchorstore.aspx) 類別在本機保存 SpatialAnchor，然後在相同 HoloLens 裝置上的未來應用程式會話中取回。
 
-藉由使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，您可以從本機 SpatialAnchor 建立持久的雲端錨點，然後您的應用程式就可以在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
+藉由使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，您可以從本機 SpatialAnchor 建立持久的雲端錨點，然後您的應用程式就可以在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置即時看到相對於該錨點轉譯的內容。 
 
-您也可以使用<a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure Spatial Anchors</a> 跨 HoloLens、iOS 和 Android 裝置取得非同步全像投影持久性。  藉由共用持久的雲端空間錨點，多個裝置就能觀察相同的已保存全像投影一段時間，即使那些裝置並未同時存在。
+您也可以使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。  藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
 
 若要開始在您的 HoloLens 應用程式中建立共用體驗，請嘗試5分鐘的 <a href="https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure 空間錨點 HoloLens 快速入門</a>。
 
@@ -328,9 +334,10 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 在此程式碼範例中，我們已修改 Windows 全像應用程式範本，以在偵測到已 **按下** 的手勢時建立錨點。 Cube 接著會在轉譯階段放置於錨點。
 
-由於 helper 類別支援多個錨點，因此我們可以使用此程式碼範例來放置任意數量的 cube！
+因為協助程式類別支援多個錨點，所以我們可以將多個 cube 放在我們想要使用此程式碼範例的位置！
 
-請注意，錨點的識別碼是您在應用程式中控制的內容。 在此範例中，我們建立了一個根據目前儲存在應用程式錨點集合中之錨點數目的命名配置。
+> [!NOTE]
+> 錨點的識別碼是您在應用程式中控制的內容。 在此範例中，我們建立了一個根據目前儲存在應用程式錨點集合中之錨點數目的命名配置。
 
 ```
    // Check for new input state since the last frame.
@@ -486,11 +493,11 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ### <a name="load-content-from-the-anchor-store-when-the-app-resumes"></a>在應用程式繼續時從錨點存放區載入內容
 
-當您的應用程式繼續執行時，或在應用程式 implementaiton 所需的任何其他時間，您可以將先前儲存的錨點從錨定存放區的 IMapView 傳送到您自己的 SpatialAnchors 記憶體內部資料庫，來還原先前儲存至 AnchorStore 的錨點。
+您可以還原 AnchorStore 中已儲存的錨點，方法是在您的應用程式繼續或任何時候，將它們從錨定存放區的 IMapView 傳送到您自己的記憶體中 SpatialAnchors 資料庫。
 
 若要從 SpatialAnchorStore 還原錨點，請將您感興趣的每一個錨點還原到您自己的記憶體中集合。
 
-您需要 SpatialAnchors 的記憶體內部資料庫;將字串與您建立的 SpatialAnchors 產生關聯的一些方式。 在我們的範例程式碼中，我們選擇使用 Windows：： Foundation：： collection：： IMap 來儲存錨點，這樣可讓您輕鬆地針對 SpatialAnchorStore 使用相同的索引鍵和資料值。
+您需要 SpatialAnchors 的記憶體內部資料庫，以將字串與您建立的 SpatialAnchors 產生關聯。 在我們的範例程式碼中，我們選擇使用 Windows：： Foundation：： collection：： IMap 來儲存錨點，這樣可讓您輕鬆地針對 SpatialAnchorStore 使用相同的索引鍵和資料值。
 
 ```
    // This is an in-memory anchor list that is separate from the anchor store.
@@ -554,7 +561,7 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ### <a name="example-relating-anchor-coordinate-systems-to-stationary-reference-frame-coordinate-systems"></a>範例：將錨點座標系統與固定參考框架座標系統相關聯
 
-假設您有一個錨點，而且您想要將錨點座標系統中的某個東西與您已用於大部分其他內容的 SpatialStationaryReferenceFrame 產生關聯。 您可以使用 [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) ，從錨點的座標系統取得轉換至固定參考框架的轉換：
+假設您有一個錨點，而且您想要讓錨點座標系統中的某個東西與您已用於其他內容的 SpatialStationaryReferenceFrame 產生關聯。 您可以使用 [TryGetTransformTo](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialcoordinatesystem.trygettransformto.aspx) 從錨點的座標系統取得轉換，使其成為固定參考框架的轉換：
 
 ```
    // In this code snippet, someAnchor is a SpatialAnchor^ that has been initialized and is valid in the current environment.
@@ -579,17 +586,17 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 有時候您會想要轉譯一台 [保持連接](../../design/coordinate-systems.md#attached-frame-of-reference) 至裝置位置的全息圖，例如，包含偵錯工具資訊的面板，或是當裝置只能判斷其方向，而不是在空間中的位置時的參考訊息。 為了達成此目的，我們使用了附加的參考框架。
 
-SpatialLocatorAttachedFrameOfReference 類別會定義相對於裝置而非真實世界的座標系統。 這個框架有一個固定的標題，相對於使用者的周圍面，指向建立參考框架時使用者面對的方向。 然後，此參考框架中的所有方向都會相對於該固定標題，即使使用者旋轉裝置也是一樣。
+SpatialLocatorAttachedFrameOfReference 類別會定義座標系統（相對於裝置），而不是真實世界。 這個框架有一個固定的標題，相對於使用者的周圍面，指向建立參考框架時使用者面對的方向。 然後，此參考框架中的所有方向都會相對於該固定標題，即使使用者旋轉裝置也是一樣。
 
 就 HoloLens 而言，此框架座標系統的原點是位於使用者頭部的旋轉中心，因此其位置不會受到頭部旋轉的影響。 您的應用程式可以指定相對於這個點的位移，以在使用者之前放置全像影像。
 
 若要取得 SpatialLocatorAttachedFrameOfReference，請使用 SpatialLocator 類別並呼叫 CreateAttachedFrameOfReferenceAtCurrentHeading。
 
-請注意，這適用于整個 Windows Mixed Reality 裝置的範圍。
+這適用于整個 Windows Mixed Reality 裝置的範圍。
 
 ### <a name="use-a-reference-frame-attached-to-the-device"></a>使用附加至裝置的參考框架
 
-這些章節會討論在 Windows 全像應用程式範本中所做的變更，以使用此 API 啟用裝置連結的參考框架。 請注意，這個「已連接」的全像是固定或錨定的全像投影，也可以在裝置暫時無法在世界中尋找其位置時使用。
+這些章節會討論在 Windows 全像應用程式範本中所做的變更，以使用此 API 啟用裝置連結的參考框架。 這種「附加」的全像是固定或錨定的全像投影，也可以在裝置暫時無法在世界中尋找其位置時使用。
 
 首先，我們變更了範本來儲存 SpatialLocatorAttachedFrameOfReference，而不是 SpatialStationaryFrameOfReference：
 
@@ -627,7 +634,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 這個 SpatialPointerPose 具有根據 [使用者目前的標題](gaze-in-directx.md)放置全息圖所需的資訊。
 
-基於使用者緩和的原因，我們使用線性插補 ( "lerp" ) 來使變更在一段時間內發生的情況變得更平滑。 這對使用者而言更適合用來鎖定全像看的全像影像。 Lerping 標記沿著全息圖的位置也可讓我們藉由抑制移動來使全像如果我們沒有執行這項抑制，使用者會看到「全像」的影像，因為通常會將其視為 imperceptible 的使用者頭部移動。
+為了讓使用者更容易使用，我們使用線性插補 ( "lerp" ) 在一段時間內平滑變更的位置。 這對使用者而言更適合用來鎖定全像看的全像影像。 Lerping 加上標籤的影像位置也可讓我們藉由抑制移動來使全像影像穩定。 如果未進行這項抑制，使用者會看到全息圖抖動，因為通常會視為使用者的 imperceptible 移動。
 
 從 **StationaryQuadRenderer：:P ositionhologram**：
 
@@ -654,7 +661,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 ```
 
 >[!NOTE]
->在 [偵錯工具] 面板的案例中，您可以選擇將全息圖重新放置到一小段邊，讓它不會對您的觀點。 以下是您可能會這麼做的範例。
+>在 [偵錯工具] 面板的案例中，您可以選擇將全息圖重新放置到一小部分，使其不會對您的觀點。 以下是您可能會這麼做的範例。
 
 若為 **StationaryQuadRenderer：:P ositionhologram**：
 
@@ -671,7 +678,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 ### <a name="rotate-the-hologram-to-face-the-camera"></a>旋轉全像相機的影像
 
-只是放置全息圖，在此案例中為四個我們也必須旋轉物件，以面對使用者的臉。 請注意，這種旋轉會在世界空間中發生，因為這種類型的 billboarding 可讓全像是使用者環境中的影像。 視圖空間 billboarding 並不容易，因為全像全像顯示方向會鎖定全像顯示器;在這種情況下，您也必須在左右的視圖矩陣之間插補，才能取得不會中斷身歷聲轉譯的視圖空間佈告欄轉換。 在這裡，我們將旋轉 X 和 Z 軸，以面對使用者的臉。
+它並不足以放置全息圖，在此案例中為四;我們也必須旋轉物件，以面對使用者的臉。 這種旋轉會在世界空間中發生，因為這種類型的 billboarding 可讓全像是使用者環境的一部分。 視圖空間 billboarding 不是很舒適，因為全像全像是顯示方向的全像影像一樣，在這種情況下，您也必須在左右的視圖矩陣之間插補，以取得不會中斷身歷聲轉譯的視圖空間佈告欄轉換。 在這裡，我們將旋轉 X 和 Z 軸，以面對使用者的臉。
 
 從 **StationaryQuadRenderer：： Update**：
 
@@ -733,7 +740,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
        );
 ```
 
-就這麼簡單！ 現在，全像是在使用者的注視方向之前，將2個計量的位置「定位」。
+這樣就完成了！ 現在，全像是在使用者的注視方向之前，將2個計量的位置「定位」。
 
 >[!NOTE]
 >此範例也會載入其他內容-請參閱 StationaryQuadRenderer .cpp。

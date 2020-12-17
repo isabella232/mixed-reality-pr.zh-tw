@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX，全像攝影轉譯、原生、原生應用程式、WinRT、WinRT 應用程式、平臺 Api、自訂引擎、中介軟體、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 0d5e364fdb4faac73f28649f5c009823a74ac595
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679647"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613072"
 ---
 # <a name="native-development-overview"></a>原生開發概觀
 
 ![原生橫幅標誌](../images/native_logo_banner.png)
 
-[Unity](../unity/unity-development-overview.md)或[Unreal](../unreal/unreal-development-overview.md)這類3d 引擎不是唯一開放給您的混合現實開發途徑。 您也可以透過使用 DirectX 11 或 DirectX 12 的 Windows Mixed Reality Api，直接撰寫程式碼，來建立混合的現實應用程式。 藉由直接運用平臺，您基本上就是建立自己的中介軟體或架構。 
+[Unity](../unity/unity-development-overview.md)或[Unreal](../unreal/unreal-development-overview.md)這類3d 引擎不是唯一開放給您的混合現實開發途徑。 您也可以使用 Windows Mixed Reality Api 搭配 DirectX 11 或 DirectX 12 來建立混合的現實應用程式。 藉由進入平臺來源，您基本上就是建立自己的中介軟體或架構。 
 
 > [!IMPORTANT]
 > 如果您有想要維護的現有 WinRT 專案，請前往我們的主要 [winrt 檔](creating-a-holographic-directx-project.md)。 
@@ -29,10 +29,10 @@ ms.locfileid: "94679647"
 ### <a name="1-getting-started"></a>1.開始使用
 
 Windows Mixed Reality 支援 [兩種類型的應用程式](../../design/app-views.md)：
-*  (UWP 或 Win32) 的 **混合現實應用程式**，其使用 [HolographicSpace API](getting-a-holographicspace.md)或 [OpenXR api](openxr.md) ，將 [沉浸式視圖](../../design/app-views.md)轉譯為填滿耳機顯示器的使用者
+* UWP 或 Win32 **混合現實應用程式，這些應用程式** 會使用 [HolographicSpace API](getting-a-holographicspace.md)或 [OpenXR api](openxr.md)來呈現可填滿耳機顯示器的 [沉浸式視圖](../../design/app-views.md)
 * **2d 應用程式** (UWP) ，其使用 DIRECTX、XAML 或其他架構在 Windows Mixed Reality 首頁的平板上轉譯 [2d 視圖](../../design/app-views.md#2d-views)
 
-[2d 視圖和沉浸式視圖](../../design/app-views.md)的 DirectX 開發之間的差異，主要是要考慮全像攝影轉譯和空間輸入。 您的 UWP 應用程式 [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) 或您的 Win32 應用程式的 HWND 是必要的，而且維持在相同的狀態。 適用于您應用程式的 WinRT Api 也是如此。 但是，您必須使用這些 Api 的不同子集來利用全像全像的功能。 例如，目前的 swapchain 和框架是由系統針對全像的應用程式管理，以便啟用姿勢預測的框架迴圈。
+[2d 視圖和沉浸式視圖](../../design/app-views.md)的 DirectX 開發之間的差異，主要是要考慮全像攝影轉譯和空間輸入。 您的 UWP 應用程式 [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) 或您的 Win32 應用程式的 HWND 是必要的，而且維持在相同的狀態。 適用于您應用程式的 WinRT Api 也是如此。 但是，您必須使用這些 Api 的不同子集來利用全像全像的功能。 例如，「全像」應用程式的系統會管理 swapchain 和框架，以啟用姿勢預測的框架迴圈。
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -54,11 +54,11 @@ Windows Mixed Reality 的應用程式會使用下列 Api 來建立 HoloLens 和�
 
 ### <a name="3-deploying-and-testing"></a>3. 部署和測試
 
-您可以在 HoloLens 2 上使用 OpenXR 或在電腦上使用 Windows Mixed Reality 沉浸式頭戴裝置進行開發。  如果您沒有耳機的存取權，您可以改用 [HoloLens 2 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md) 或 [Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 模擬器。
+您可以在 HoloLens 2 上使用 OpenXR 或 Windows Mixed Reality 沉浸式耳機開發桌上型電腦。  如果您沒有耳機的存取權，您可以改用 [HoloLens 2 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md) 或 [Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 模擬器。
 
 ## <a name="whats-next"></a>接下來要做什麼？
 
-開發人員的工作無止境，在學習新工具或 SDK 方面尤其如此。 完成入門級教學後，以下各節將帶領您前往更深入的領域，並提供有用的資源協助您脫離瓶頸。 請注意，這些主題和資源無須依序使用，您可以隨意來回參考並探索！
+開發人員的工作無止境，在學習新工具或 SDK 方面尤其如此。 下列各節會將您帶到您已完成的初學者層級內容以外的區域。 這些主題和資源不會以任何順序排列，因此您可以隨時跳到探索！
 
 ### <a name="additional-resources"></a>其他資源
 

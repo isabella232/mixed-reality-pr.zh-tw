@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: c6167fc48a98de8f400400475c2057a2b4773b29
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53a44fab72d3a15df3cf5929c6ddda4fec06af71
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702584"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97612862"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -133,7 +133,7 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 * 使用者有唯一的眼鏡或某些系統尚未支援的眼睛狀況。    
 * 外部因素抑制可靠的眼睛追蹤，例如，因為眼睛前方的線，而非 HoloLens 面板或眼鏡、密集的直接陽光和遮蔽。   
 
-因此，開發人員應該確保這些使用者有適當的回溯支援。 在 [ [DirectX 中的眼睛追蹤](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-is-not-available) ] 頁面上，我們會說明偵測是否有眼睛追蹤資料的必要 api。 
+因此，開發人員應該確保這些使用者有適當的回溯支援。 在 [ [DirectX 中的眼睛追蹤](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) ] 頁面上，我們會說明偵測是否有眼睛追蹤資料的必要 api。 
 
 雖然某些使用者可能會基本思考模式決定要撤銷其眼睛追蹤資料的存取權，但對於不提供其眼追蹤資料存取權的隱私權而言，使用者體驗的取捨很有問題，但在某些情況下，這可能是不小心的。  
 因此，如果您的應用程式使用眼睛追蹤，而且這是此體驗的重要部分，我們建議您明確地將此資訊傳達給使用者。     
