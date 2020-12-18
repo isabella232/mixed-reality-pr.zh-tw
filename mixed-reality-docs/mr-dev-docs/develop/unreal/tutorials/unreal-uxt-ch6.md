@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 4319b1171090b8ca7a320e98867bfb3635bab005
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609489"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010541"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.封裝並部署至裝置或模擬器
 
@@ -49,6 +49,7 @@ ms.locfileid: "96609489"
 1.  移至 [編輯] > [專案設定]。
     * 在 [專案] > [描述] > [關於] > [專案名稱] 底下，新增專案名稱。
     * 在 [專案] > [描述] > [發行者] > [公司辨別名稱] 底下，新增 **CN=YourCompanyName**。
+    * 在 [專案] > [描述] > [設定] 底下，選取 [在 VR 中啟動]。
 
 > [!IMPORTANT]
 > 當您嘗試在步驟 3 中產生新的憑證時，將其中一個欄位留空會導致錯誤。
@@ -56,7 +57,10 @@ ms.locfileid: "96609489"
 > [!IMPORTANT]
 > 發行者的名稱必須採用 [LADPv3 辨別名稱格式](https://www.ietf.org/rfc/rfc2253.txt)。 若發行者名稱的格式不正確，在封裝時將會導致「找不到簽署金鑰。 無法以數位方式簽署應用程式。」 錯誤。
 
-![專案設定 - 描述](images/unreal-uxt/6-cn.PNG)
+> [!IMPORTANT]
+> 若未選取 [在 VR 中啟動]，將導致應用程式嘗試在平板中啟動
+
+![專案設定 - 描述](images/unreal-uxt/6-cn-new.PNG)
 
 2.  在 [平台] > [HoloLens] 底下，啟用 [針對 HoloLens 模擬進行建置] 和/或 [針對 HoloLens 裝置進行建置]。
 

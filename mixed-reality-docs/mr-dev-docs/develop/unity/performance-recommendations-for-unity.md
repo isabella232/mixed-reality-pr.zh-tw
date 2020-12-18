@@ -7,16 +7,16 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 圖形, cpu, gpu, 轉譯, 記憶體回收行程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 6fd12bec31bb721def8801a8f2bacb8c3cb75745
-ms.sourcegitcommit: d11275796a1f65c31dd56b44a8a1bbaae4d7ec76
+ms.openlocfilehash: 1a0509e656b7a6bf0d8d1f0b5d381b2fbdb39c2d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96761770"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010479"
 ---
 # <a name="performance-recommendations-for-unity"></a>對 Unity 的效能建議
 
-本文是以[混合實境效能建議](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)中所述的討論為基礎，但著重於 Unity 引擎環境的特定學習。
+本文雖以[混合實境的效能建議](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)為基礎，但內容著重在 Unity 特有的改良功能。
 
 ## <a name="use-recommended-unity-project-settings"></a>使用建議的 Unity 專案設定
 
@@ -24,7 +24,7 @@ ms.locfileid: "96761770"
 
 ## <a name="how-to-profile-with-unity"></a>如何使用 Unity 進行分析
 
-Unity 提供內建的 **[Unity 分析工具](https://docs.unity3d.com/Manual/Profiler.html)** ，這是一項絕佳資源，可讓您針對特定應用程式收集寶貴的效能深入解析。 雖然使用者可以在編輯器中執行分析工具，但這些計量並不代表真正的執行時間環境，因此應謹慎使用這些結果。 當您在裝置上執行應用程式時，建議從遠端分析應用程式，以取得最精確且可採取動作的深入解析。 此外，也可使用 Unity 的 [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)，這個工具非常強大且深入解析。
+Unity 提供內建的 **[Unity 分析工具](https://docs.unity3d.com/Manual/Profiler.html)** ，這是一項絕佳資源，可讓您針對特定應用程式收集寶貴的效能深入解析。 雖然您可以在編輯器中執行分析工具，但這些計量並不代表真正的執行階段環境，因此請謹慎使用其結果。 當您在裝置上執行應用程式時，建議從遠端分析應用程式，以取得最精確且可採取動作的深入解析。 此外，也可使用 Unity 的 [Frame Debugger](https://docs.unity3d.com/Manual/FrameDebugger.html)，這個工具既強大且能深入解析。
 
 Unity 提供的絕佳文件：
 1) 如何從遠端將 [Unity 分析工具連線到 UWP 應用程式](https://docs.unity3d.com/Manual/windowsstore-profiler.html)
@@ -41,7 +41,7 @@ Unity 提供的絕佳文件：
 
 #### <a name="cache-references"></a>快取參考
 
-最佳做法是在初始化時快取所有相關元件和 GameObject 的參考。 這是因為相對於儲存指標的記憶體成本，重複的函式呼叫 (例如 *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* ) 會大幅提高成本。 這也適用於經常使用的 [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html)。 *Camera.main* 只會使用底下的 *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* ，以高成本的方式搜尋場景圖形中含有 *"MainCamera"* 標記的相機物件。
+建議您在初始化時快取所有相關元件和 Gameobject 的參考，因為 *[GetComponent\<T>()](https://docs.unity3d.com/ScriptReference/GameObject.GetComponent.html)* 和 [Camera.main](https://docs.unity3d.com/ScriptReference/Camera-main.html) 之類的重複函式呼叫在儲存指標時所需的成本會比記憶體的成本更昂貴。 . *Camera.main* 只會使用底下的 *[FindGameObjectsWithTag()](https://docs.unity3d.com/ScriptReference/GameObject.FindGameObjectsWithTag.html)* ，以高成本的方式搜尋場景圖形中含有 *"MainCamera"* 標記的相機物件。
 
 ```CS
 using UnityEngine;
@@ -86,7 +86,7 @@ public class ExampleClass : MonoBehaviour
 
 1) **避免使用 [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
-    雖然 LINQ 可能會非常簡潔且易於讀寫，但相較於手動撰寫演算法，通常需要更多的計算以及更多的記憶體配置。
+    雖然 LINQ 既簡潔有容易讀取和寫入，但所需的計算和記憶體數量一般會比手動撰寫演算法更多。
 
     ```CS
     // Example Code
@@ -102,7 +102,7 @@ public class ExampleClass : MonoBehaviour
 
 2) **通用 Unity API**
 
-    某些 Unity API 雖然很有用，但執行的成本可能很高。 其中大部分牽涉到在整個場景圖形中搜尋一些相符的 Gameobject 清單。 這些作業通常可加以避免，方法是快取參考或針對有問題的 GameObject 實作管理員元件，以便在執行時間追蹤參考。
+    某些 Unity API 雖然很有用，但執行的成本可能很高。 其中大部分牽涉到在整個場景圖形中搜尋一些相符的 Gameobject 清單。 這些作業通常可加以避免，方法是快取參考或針對 GameObject 實作管理員元件，以便在執行時間追蹤參考。
 
     ```csharp
         GameObject.SendMessage()
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **注意 Box 處理**
 
-    [Box 處理](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)是 C# 語言和執行時間的核心概念。 這是將實值類型變數 (例如 `char`、`int`、`bool` 等) 包裝成參考類型變數的程序。 當實值類型變數為 "boxed" 時，會包裝在儲存於受管理堆積上的 `System.Object` 中。 因此，系統會配置記憶體，且最終在處置時必須由記憶體回收行程處理。 這些配置和取消配置會產生效能成本，且在許多情況下並不需要，或是可以輕鬆地以較不昂貴的替代方案來取代。
+    [Box 處理](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)是 C# 語言和執行時間的核心概念。 這是將實值類型變數 (例如 `char`、`int`、`bool` 等) 包裝成參考類型變數的程序。 實值類型變數為 "boxed" 時會包裝在儲存於 Managed 堆積上的 `System.Object` 中。 系統會配置記憶體，且最終在處置時必須由記憶體回收行程處理。 這些配置和取消配置會產生效能成本，且在許多情況下並不需要，或是可以輕鬆地以較不昂貴的替代方案來取代。
 
     若要避免 Box 處理，請確定您用來儲存數值類型和結構 (包括 `Nullable<T>`) 的變數、欄位和屬性已強型別化為特定類型 (例如 `int`、`float?` 或 `MyStruct`)，而不是使用物件。  如果將這些物件放入清單中，請務必使用強型別清單 (例如 `List<int>`)，而不是 `List<object>` 或 `ArrayList`。
 
@@ -134,11 +134,11 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="repeating-code-paths"></a>重複的程式碼路徑
 
-任何重複的 Unity 回呼函式 (亦即 Update)，每秒和/或每個畫面格會執行許多次，都應該非常小心地撰寫。 在此，任何高成本的作業都會對效能產生巨大且一致的影響。
+任何重複的 Unity 回呼函式 (亦即 Update)，每秒和/或每個畫面格會執行許多次，都應該小心地撰寫。 在此，任何高成本的作業都會對效能產生巨大且一致的影響。
 
 1) **空白的回呼函式**
 
-    雖然在您的應用程式中保留下列程式碼可能看似無害，特別是因為每個 Unity 指令碼都會使用此程式碼區塊自動初始化，但這些空白回呼實際上可能會非常昂貴。 Unity 會在未受管理/受管理程式碼界限 (在 UnityEngine 程式碼與您的應用程式程式碼) 之間來回操作。 即使沒有要執行的內容，透過此橋接器切換內容的成本也相當高。 如果您應用程式的 100 多個 GameObject 具有包含空白重複 Unity 回呼的元件，這會變得特別有問題。
+    雖然在您的應用程式中保留下列程式碼可能看似無害，特別是因為每個 Unity 指令碼都會使用 Update 方法自動初始化，但這些空白回呼可能會變得昂貴。 Unity 會在未受管理與受管理的程式碼界限 (在 UnityEngine 程式碼與您的應用程式程式碼) 之間來回操作。 即使沒有要執行的內容，透過此橋接器切換內容的成本也相當高。 如果您應用程式的數百個 GameObject 具有包含空白重複 Unity 回呼的元件，這會變得特別有問題。
 
     ```CS
     void Update()
@@ -153,7 +153,7 @@ public class ExampleClass : MonoBehaviour
 
     下列 Unity API 是許多全像攝影應用程式的常見作業。 雖然不一定能夠這麼做，但這些函式的結果通常可計算一次，且結果會在指定畫面格的整個應用程式中重複使用。
 
-    a) 一般而言，最好具有專用的單一類別或服務來處理場景中的注視 Raycast，然後在所有其他場景元件中重複使用這個結果，而不是每個元件都進行重複且基本上都相同的 Raycast 作業。 當然，有些應用程式可能需要不同來源，或是針對不同 [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html) 的 Raycast。
+    a) 最好具有專用的單一類別或服務來處理場景中的注視 Raycast，然後在所有其他場景元件中重複使用這個結果，而不是每個元件都進行重複且相同的 Raycast 作業。 有些應用程式可能需要不同來源，或是針對不同 [LayerMasks](https://docs.unity3d.com/ScriptReference/LayerMask.html) 的 Raycast。
     
     ```csharp
         UnityEngine.Physics.Raycast()
@@ -174,19 +174,19 @@ public class ExampleClass : MonoBehaviour
 
 3) **避免介面和虛擬結構**
 
-    透過介面與直接物件來叫用函式呼叫或呼叫虛擬函式，通常比使用直接結構或直接函式呼叫的成本更高。 如果虛擬函式或介面不是必要的，則應該將其移除。 不過，如果利用這些方法可簡化開發共同作業、程式碼可讀性和程式碼維護性，那麼這些方法的效能衝擊通常值得取捨。
+    透過介面與直接物件來叫用函式呼叫或呼叫虛擬函式，通常比使用直接結構或直接函式呼叫的成本更高。 如果虛擬函式或介面不是必要的，則應該將其移除。 不過，如果利用這些方法可簡化開發共同作業、程式碼可讀性和程式碼維護性，則取捨之下，這些方法所造成的效能影響就有其價值了。
 
     一般來說，建議不要將欄位和函式標示為虛擬，除非有清楚的預期需要覆寫這個成員。 對於在每個畫面格上呼叫多次的高頻率程式碼路徑，或甚至是每個畫面格呼叫一次 (例如 `UpdateUI()` 方法)，都應該特別小心。
 
 4) **避免以傳值方式傳遞結構**
 
-    不同於類別，結構是實值類型，而當直接傳遞至函式時，會將其內容複製到新建立的實例。 此複本會增加 CPU 成本，以及堆疊上的額外記憶體。 針對小型結構，效果通常非常小，因此可接受。 不過，對於每個畫面格重複叫用的函式，以及接受大型結構的函式，如果可能，請將函式定義修改為以傳址方式傳遞。 [請於此處深入了解](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    不同於類別，結構是實值類型，而當直接傳遞至函式時，會將其內容複製到新建立的實例。 此複本會增加 CPU 成本，以及堆疊上的額外記憶體。 針對小型結構，影響很小，因此可接受。 不過，對於每個畫面格重複叫用的函式，以及接受大型結構的函式，如果可能，請將函式定義修改為以傳址方式傳遞。 [請於此處深入了解](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>其他
 
 1) **物理特性**
 
-    a) 一般而言，改善物理特性最簡單的方式，是限制花費在「物理特性」上的時間量，或每秒的反覆運算次數。 當然，這會降低模擬準確度。 請參閱 Unity 中的 [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html)
+    a) 一般而言，改善物理特性最簡單的方式，是限制花費在「物理特性」上的時間量，或每秒的反覆運算次數。 這會降低模擬準確度。 請參閱 Unity 中的 [TimeManager](https://docs.unity3d.com/Manual/class-TimeManager.html)
 
     b) Unity 中的碰撞器類型具有廣泛不同的效能特性。 下列順序從左至右列出最高效能的碰撞器到最低效能的碰撞器。 請務必避免網格碰撞器，這比基本碰撞器的成本高出許多。
 
@@ -228,13 +228,13 @@ Unity 中的 [單通道執行個體化轉譯] 可讓您將每個眼球的繪製�
 
 #### <a name="static-batching"></a>靜態批次處理
 
-Unity 能夠批次處理許多靜態物件，以減少對 GPU 的繪製呼叫。 靜態批次處理適用於 Unity 中大部分的 [轉譯器](https://docs.unity3d.com/ScriptReference/Renderer.html)物件，這些物件會 **1) 共用相同的資料** 且 **2) 全部標示為 [靜態]** (在 Unity 中選取物件，然後按一下偵測器右上方的核取方塊)。 標記為「靜態」的 GameObject 無法在整個應用程式的執行時間移動。 因此，靜態批次處理可能很容易在 HoloLens 上運用，因為幾乎每個物件都必須放置、移動、調整等等。針對沉浸式頭戴裝置，靜態批次處理可以大幅減少繪製呼叫，因而改善效能。
+Unity 能夠批次處理許多靜態物件，以減少對 GPU 的繪製呼叫。 靜態批次處理適用於 Unity 中大部分的 [轉譯器](https://docs.unity3d.com/ScriptReference/Renderer.html)物件，這些物件會 **1) 共用相同的資料** 且 **2) 全部標示為 [靜態]** (在 Unity 中選取物件，然後選取偵測器右上方的核取方塊)。 標記為「靜態」的 GameObject 無法在整個應用程式的執行時間移動。 因此，靜態批次處理可能很容易在 HoloLens 上運用，因為幾乎每個物件都必須放置、移動、調整等等。針對沉浸式頭戴裝置，靜態批次處理可以大幅減少繪製呼叫，因而改善效能。
 
 如需詳細資料，請參閱[在 Unity 中繪製呼叫批次處理](https://docs.unity3d.com/Manual/DrawCallBatching.html)中的「靜態批次處理」。
 
 #### <a name="dynamic-batching"></a>動態批次處理
 
-由於將 HoloLens 開發的物件標示為「靜態」會有問題，因此動態批次處理可能是彌補這項缺乏功能的絕佳工具。 當然，該功能也適用於沉浸式頭戴裝置。 不過，Unity 中的動態批次處理可能難以啟用，因為 GameObject 必須 **a) 共用相同的資料** 且 **b) 符合一長串的其他條件**。
+由於將 HoloLens 開發的物件標示為「靜態」會有問題，因此動態批次處理可能是彌補這項缺乏功能的絕佳工具。 該功能也適用於沉浸式頭戴裝置。 不過，Unity 中的動態批次處理可能難以啟用，因為 GameObject 必須 **a) 共用相同的資料** 且 **b) 符合一長串的其他條件**。
 
 如需完整清單，請參閱[在 Unity 中繪製呼叫批次處理](https://docs.unity3d.com/Manual/DrawCallBatching.html)中的「動態批次處理」。 最常見的情況是，因為相關聯的網格資料不能超過 300 個頂點，所以 GameObject 會變成無效而無法動態地進行批次處理。
 
@@ -242,7 +242,7 @@ Unity 能夠批次處理許多靜態物件，以減少對 GPU 的繪製呼叫。
 
 只有在多個 GameObject 可以共用相同的資料時，才會進行批次處理。 一般而言，這會因為需要 GameObject 而受到封鎖，使其各自的材質獲得獨特的紋理。 通常會將「紋理」結合成一個大「紋理」，這是一種稱為[紋理圖集](https://en.wikipedia.org/wiki/Texture_atlas)的方法。
 
-此外，通常最好是在可能且合理的情況下，將網格結合成一個 GameObject。 Unity 中的每個轉譯器都會有其相關聯的繪製呼叫，而不會在單一轉譯器下提交合併的網格。
+此外，最好是在可能且合理的情況下，將網格結合成一個 GameObject。 Unity 中的每個轉譯器都會有其相關聯的繪製呼叫，而不會在單一轉譯器下提交合併的網格。
 
 >[!NOTE]
 > 在執行時間修改 Renderer.material 的屬性，會建立一份資料複本，因此可能會中斷批次處理。 使用 Renderer.sharedMaterial 來修改 Gameobject 之間的共用材質屬性。
@@ -253,11 +253,11 @@ Unity 能夠批次處理許多靜態物件，以減少對 GPU 的繪製呼叫。
 
 ### <a name="optimize-depth-buffer-sharing"></a>將深度緩衝區共用進行最佳化
 
-通常建議您啟用 [Player XR 設定] 下的 [深度緩衝區共用]，以將[全像投影穩定性](../platform-capabilities-and-apis/Hologram-stability.md)進行最佳化。 不過，使用此設定來啟用深度延遲階段重新投影時，建議選取 [16 位元深度格式]，而不是 [24 位元深度格式]。 16 位元深度緩衝區會大幅降低與深度緩衝區流量相關聯的頻寬 (和電源)。 這在降低電源和改善效能方面都是一大優勢。 不過，使用「16 位元深度格式」可能會有兩個負面結果。
+建議您啟用 [Player XR 設定] 下的 [深度緩衝區共用]，以將[全像投影穩定性](../platform-capabilities-and-apis/Hologram-stability.md)進行最佳化。 不過，使用此設定來啟用深度延遲階段重新投影時，建議選取 [16 位元深度格式]，而不是 [24 位元深度格式]。 16 位元深度緩衝區會大幅降低與深度緩衝區流量相關聯的頻寬 (和電源)。 這在降低電源和改善效能方面都是一大優勢。 不過，使用「16 位元深度格式」可能會有兩個負面結果。
 
 **Z 衝突**
 
-降低的深度範圍精確度會使 [z 衝突](https://en.wikipedia.org/wiki/Z-fighting)較可能發生在 16 位元而非 24 位元。 若要避免這些成品，請修改 [Unity 攝影機](https://docs.unity3d.com/Manual/class-Camera.html)的近/遠裁剪平面，以降低精確度。 對於 HoloLens 型應用程式，50m 的遠裁剪平面而非 Unity 預設的 1000m 裁剪平面通常可以排除任何 z 衝突。
+降低的深度範圍精確度會使 [z 衝突](https://en.wikipedia.org/wiki/Z-fighting)較可能發生在 16 位元而非 24 位元。 若要避免這些成品，請修改 [Unity 攝影機](https://docs.unity3d.com/Manual/class-Camera.html)的近/遠裁剪平面，以降低精確度。 對於 HoloLens 型應用程式，50 m 的遠裁剪平面而非 Unity 預設的 1000 m 裁剪平面通常可以排除任何 z 衝突。
 
 **已停用的樣板緩衝區**
 
@@ -265,11 +265,11 @@ Unity 能夠批次處理許多靜態物件，以減少對 GPU 的繪製呼叫。
 
 ### <a name="avoid-full-screen-effects"></a>避免全螢幕效果
 
-在全螢幕上操作的技術可能會相當高成本，因為其大小順序是每個畫面格數百萬個作業。 因此，建議您避免[後置處理效果](https://docs.unity3d.com/Manual/PostProcessingOverview.html) (例如消除鋸齒、綻開等等)。
+在全螢幕上操作的技術可能很昂貴，因為其數量級是每個畫面格數百萬個作業。 建議您避免[後置處理效果](https://docs.unity3d.com/Manual/PostProcessingOverview.html) (例如消除鋸齒、綻開等等)。
 
 ### <a name="optimal-lighting-settings"></a>最佳光源設定
 
-Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)可以提供優異的視覺結果，但牽涉到相當高成本的光源計算。 建議您透過 [視窗] > [轉譯] > [光源設定] > 取消核取 [即時全域照明]，停用每個 Unity 場景檔案的即時全域照明。
+Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)可以提供優異的視覺結果，但牽涉到高成本的光源計算。 建議您透過 [視窗] > [轉譯] > [光源設定] > 取消核取 [即時全域照明]，停用每個 Unity 場景檔案的即時全域照明。
 
 此外，建議停用所有陰影轉換，因為這些也會在 Unity 場景上增加高成本的 GPU 通道。 可針對光源停用陰影，也可以透過 [品質] 設定進行全面性控制。
 
@@ -279,9 +279,9 @@ Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)�
 
 ### <a name="reduce-poly-count"></a>減少多邊形計數
 
-多邊形計數通常會縮減為
+多邊形計數會縮減，方法是
 1) 從場景移除物件
-2) 資產減去，可減少指定網格的多邊形數目
+2) 減去資產，以減少指定網格的多邊形數目
 3) 將[詳細資料的層級 (LOD) 系統](https://docs.unity3d.com/Manual/LevelOfDetail.html)實作到您的應用程式中，以相同幾何的較低多邊形版本呈現遙遠的物件
 
 ### <a name="understanding-shaders-in-unity"></a>瞭解 Unity 中的著色器
@@ -291,7 +291,7 @@ Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)�
 1) 選取您的著色器資產或選取材質，然後在偵測器視窗的右上角，選取後接 [選取著色器] 的齒輪圖示
 
     ![選取 Unity 中的著色器](images/Select-shader-unity.png)
-2) 選取著色器資產後，按一下偵測器視窗下的 [編譯並顯示程式碼] 按鈕
+2) 選取著色器資產後，選取偵測器視窗下的 [編譯並顯示程式碼] 按鈕
 
     ![在 Unity 中編譯著色器程式碼](images/compile-shader-code-unity.PNG)
 
@@ -311,7 +311,7 @@ Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)�
 
 您不需要使用以實體為基礎的轉譯 (PBR) 或其他高品質的著色器，而是瞭解如何利用更高的效能及更低成本的著色器。 [混合實境工具組](https://github.com/Microsoft/MixedRealityToolkit-Unity)提供已針對混合實境專案進行最佳化的 [MRTK 標準著色器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)。
 
-Unity 也提供無光、頂點光、擴散和其他簡化的著色器選項，相較於 Unity 標準著色器，速度大幅提升。 如需詳細資訊，請參閱[內建著色器的用法和效能](https://docs.unity3d.com/Manual/shader-Performance.html)。
+Unity 也提供無光、頂點光、擴散和其他簡化的著色器選項，相較於 Unity 標準著色器，速度會有所提升。 如需詳細資訊，請參閱[內建著色器的用法和效能](https://docs.unity3d.com/Manual/shader-Performance.html)。
 
 #### <a name="shader-preloading"></a>著色器預先載入
 
@@ -327,7 +327,7 @@ Unity 也提供無光、頂點光、擴散和其他簡化的著色器選項，�
 
 記憶體過度配置及解除配置的作業可能會對您的全像攝影應用程式造成不良的影響，因而導致效能不一致、凍結的畫面格和其他不利的行為。 在 Unity 中開發時，請務必瞭解記憶體考慮，因為記憶體管理是由記憶體回收行程所控制。
 
-#### <a name="garbage-collection"></a>記憶體回收行程
+#### <a name="garbage-collection"></a>記憶體回收
 
 當記憶體回收行程 (GC) 啟動以分析不在執行期間範圍中的物件，且需要釋放其記憶體時，全像攝影應用程式將會遺失處理記憶體回收行程的計算時間，因此可供重複使用。 常數配置和取消配置通常需要更頻繁地執行記憶體回收行程，因而會影響效能和使用者體驗。
 
@@ -343,13 +343,13 @@ Unity 提供了絕佳的頁面，詳細說明記憶體回收行程的運作方�
 
 #### <a name="object-pooling"></a>物件集區
 
-物件集區是一種常用的技術，可降低連續配置及取消配置物件的成本。 這是藉由配置相同物件的大型集區，並重複使用此集區中非使用中的可用實例來完成，而不是在一段時間內不斷產生和終結物件。 物件集區非常適合在應用程式期間有變數存留期的重複使用元件。
+物件集區是一項熱門技術，可降低配置和取消配置連續物件時所耗用的成本。 這是藉由配置相同物件的大型集區，並重複使用此集區中非使用中的可用實例來完成，而不是在一段時間內不斷產生和終結物件。 物件集區非常適合在應用程式期間有變數存留期的重複使用元件。
 
 - [Unity 中的物件集區教學課程](https://unity3d.com/learn/tutorials/topics/scripting/object-pooling) 
 
 ## <a name="startup-performance"></a>啟動效能
 
-您應該考慮使用較小的場景來啟動您的應用程式，然後使用 *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* 載入場景的其餘部分。 這可讓您的應用程式盡可能快速地進入互動狀態。 請注意，當新的場景啟動時，可能會有大型的 CPU 尖峰，而且任何轉譯的內容可能會斷斷續續或是停頓。 解決這個情況的方法之一，就是在要載入的場景上，將 AsyncOperation.allowSceneActivation 屬性設為 "false"，等待場景載入，將畫面清除為黑色，然後將其設回 "true"，以完成場景啟用。
+請考慮使用較小的場景來啟動您的應用程式，然後使用 *[SceneManager.LoadSceneAsync](https://docs.unity3d.com/ScriptReference/SceneManagement.SceneManager.LoadSceneAsync.html)* 載入場景的其餘部分。 這可讓您的應用程式盡可能快速地進入互動狀態。 當新的場景啟動時，可能會有大型的 CPU 尖峰，而且任何轉譯的內容可能會斷斷續續或是停頓。 解決這個情況的方法之一，就是在要載入的場景上，將 AsyncOperation.allowSceneActivation 屬性設為 "false"，等待場景載入，將畫面清除為黑色，然後將其設回 "true"，以完成場景啟用。
 
 請記住，當啟動場景在載入時，會向使用者顯示全像攝影畫面。
 

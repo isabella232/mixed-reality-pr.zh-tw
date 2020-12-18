@@ -8,14 +8,14 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 學院, 教學課程, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, unity, unreal, HoloLens, Azure 空間錨點, Azure 語音服務
-ms.openlocfilehash: 0e3b1749790e3c372570bdd1d8e68fe3fd593dd8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677277"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010459"
 ---
-# <a name="tutorials"></a>教學課程 
+# <a name="tutorials"></a>教學課程
 
 ![HoloLens 2 使用者](images/08_Tutorials.png)
 
@@ -23,7 +23,7 @@ ms.locfileid: "94677277"
 
 ## <a name="hololens-2"></a>HoloLens 2 
 
-HoloLens 2 教學課程的設計目的是協助開發人員了解開發混合實境應用程式的技術和最佳做法。 Unity 教學課程是根據[混合實境工具組 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)，Unreal 教學課程是根據[適用於 Unreal Engine 的 UX 工具 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)。
+HoloLens 2 教學課程的設計目的是為了教導用於開發混合實境應用程式的技術和最佳做法。 Unity 教學課程是根據[混合實境工具組 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)，Unreal 教學課程是根據[適用於 Unreal Engine 的 UX 工具 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)。
 
 * 入門教學課程
     * Unity - [9 之 1 簡介](tutorials/mr-learning-base-01.md)
@@ -107,7 +107,7 @@ HoloLens 2 教學課程的設計目的是協助開發人員了解開發混合實
 
 ## <a name="mixed-reality-and-azure-services-tutorials"></a>混合實境和 Azure 服務教學課程
 
-這些獨立的教學課程很適合用來學習如何將不同的 Azure 服務實作為 Unity 專案。 這些教學課程都是以 HoloLens (第 1 代) 或我們的沉浸式頭戴裝置為基礎，但是使用服務的課程應可轉移至大部分的裝置。
+這些獨立的教學課程很適合用來學習如何將不同的 Azure 服務實作為 Unity 專案。 這些教學課程都是以 HoloLens (第一代) 或我們的沉浸式頭戴裝置為基礎，但是使用服務的課程應可轉移至大部分的裝置。
 
 <ul id="cardtypes-W" class="cardsW panelContent" style="display: flex; margin-top: 0px;">
     <li>

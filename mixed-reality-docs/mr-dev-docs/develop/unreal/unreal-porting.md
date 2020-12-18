@@ -7,12 +7,12 @@ ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 文件, 指南, 功能, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 移植, 升級
-ms.openlocfilehash: 0ba10b8ee1067da4494f147d43f8834010e1250f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609659"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010619"
 ---
 # <a name="upgrading-projects-in-unreal"></a>在 Unreal 中升級專案
 
@@ -50,3 +50,7 @@ ms.locfileid: "96609659"
 | IsTrackingAvailable | ![IsTrackingAvailable 屬性的藍圖](images/unreal-porting-img-17.png) |
 | IsButtonClicked、IsButtonDown、IsGrasped、IsSelectPressed | 使用 Unreal 的輸入動作系統。 |
 | SetFocusPointForFrame | 已在 4.26 中移除。  過去用於遠端處理時的重新投影，現在則支援深度重新投影。 |
+
+## <a name="426-changes"></a>4.26 變更
+
+重大變更為必須設定 [編輯] > [專案設定] > [專案] > [描述] > [設定] 中的 [在 VR 中啟動]，才能啟動 Windows Mixed Reality 外掛程式。 若沒有該參數，您就不會在裝置上看到全像投影。

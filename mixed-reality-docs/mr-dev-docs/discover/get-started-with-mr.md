@@ -3,16 +3,16 @@ title: 開始使用混合實境
 description: 協助新手學習混合實境並了解其功能。
 author: grbury
 ms.author: grbury
-ms.date: 07/29/2020
+ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: c085a60f78ef68e2139b8cc3dd2fdae24bce2a52
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
+ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702265"
+ms.lasthandoff: 12/09/2020
+ms.locfileid: "96926060"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 
@@ -60,6 +60,7 @@ ms.locfileid: "94702265"
 | --- | --- |
 | [混合實境是一種頻譜](../discover/mixed-reality.md) | 混合實境會混合實體與數位場景，這是人、機和環境互動的新一代進化 |
 | [什麼是全像投影？](../discover/hologram.md) | HoloLens 可讓您建立全像投影，全像投影是出現在您周圍世界中由光線和音效組合的物件，就像是真正的物件一樣。 全像投影會回應您的注視、手勢和語音命令，並可與周圍的真實世界表面互動 |
+| [混合實境學習概觀](mr-learning-overview.md#general-modules) | 透過 Microsoft Learn 試用我們策劃的混合實境模組 |
 | [展開您的設計程序](../discover/case-study-expanding-the-design-process-for-mixed-reality.md) | 在建立沉浸式體驗時，利用空間思考、體力激盪和行動來拓展您的設計思維  |
 
 <br>

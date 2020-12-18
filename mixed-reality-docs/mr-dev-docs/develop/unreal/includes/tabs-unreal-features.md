@@ -1,20 +1,22 @@
 ---
-ms.openlocfilehash: be2bbcc7e20a005ecb91228cdfa36b20f56acb33
-ms.sourcegitcommit: f31f3a54c7c46e21884d62b4a696acf122a3c2b9
+ms.openlocfilehash: 31f11712c2f1cbe7e6726ecf5a83ccd31a2e616e
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/07/2020
-ms.locfileid: "96781962"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96912172"
 ---
 # <a name="426"></a>[4.26](#tab/ue426)
 
 最新的 Unreal Engine 4.26 版本包含：
-* OpenXR 支援
-* 支援具有 Microsoft 廠商特定 OpenXR 擴充功能的 [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 外掛程式
+* 新的[跨裝置 XR API](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-porting) 支援
+* OpenXR 支援 + [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal) 外掛程式 
 * 適用於高效能影片播放的 HoloLens 媒體播放器外掛程式
 * 適用於 iOS 和 Android 的 Azure Spatial Anchors (Beta)
-* 從 Azure 串流至 HoloLens 2
+* 支援在遠端處理時進行反向連線，以便能從 Azure 串流到 HoloLens 2
+* HoloLens 2 系統鍵盤存取
 * 適用於已封裝應用程式的 Windows 應用程式認證套件合規性
+* HoloLens 2 的 Unreal Insights 支援
 * HP Reverb G2 控制器支援
 
 如需詳細資訊，請參閱 Unreal Engine 4.26 <a href="https://docs.unrealengine.com/Support/Builds/ReleaseNotes/4_26/index.html" target="_blank" title="Unreal Engine 4.26 版本資訊">版本資訊</a>。 

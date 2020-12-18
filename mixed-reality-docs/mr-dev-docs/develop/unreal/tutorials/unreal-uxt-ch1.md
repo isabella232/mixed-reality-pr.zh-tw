@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 465215efd953c0acb9f2d80a2905ee06963c5f8c
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 71a3edbc00c315ca68ac56985c54faee2492d74d
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609719"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010522"
 ---
 # <a name="1-getting-started"></a>1.開始使用
 
@@ -33,20 +33,27 @@ ms.locfileid: "96609719"
 * Windows 10 1809 或更新版本
 * Windows 10 SDK 10.0.18362.0 或更新版本
 * [Unreal Engine](https://www.unrealengine.com/en-US/get-now) 4.25 或更新版本
-* [針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 Microsoft HoloLens 2 裝置或模擬器
+* [針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 Microsoft HoloLens 2 裝置或[模擬器](../../platform-capabilities-and-apis/using-the-hololens-emulator.md#hololens-2-emulator-overview)
 * Visual Studio 2019 與下列工作負載
 
 ### <a name="installing-visual-studio-2019"></a>安裝 Visual Studio 2019
 
 首先，請確定您的設定具有所有必要的 Visual Studio 套件：
 1. 安裝最新版 [Visual Studio 2019](https://visualstudio.microsoft.com/downloads/)
-2. 安裝下列[工作負載](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)：
+1. 安裝下列[工作負載](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-workloads)：
     * 使用 C++ 的傳統型開發
     * .NET 桌面開發
     * 通用 Windows 平台開發
+1. 展開「通用 Windows 平台開發」，然後選取： 
+    * USB 裝置連線
+    * C++ (v142) 通用 Windows 平台工具
 
-3. 安裝下列[元件](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components)：
+1. 安裝下列[元件](https://docs.microsoft.com/visualstudio/install/modify-visual-studio?#modify-individual-components)：
     * 編譯器、建置工具與執行階段 > MSVC v142 - VS 2019 C++ ARM64 建置工具 (最新版本)
+
+您可以使用下列圖片來確認安裝
+
+![VS 安裝程式中的重要刻度](images/unreal-uxt/1-install-the-tools.png)
 
 這樣就完成了！ 您已準備好繼續著手進行國際象棋專案。
 

@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 98030e55736d423d1fb84d2b965f6ed40246d8f4
-ms.sourcegitcommit: 9c88703a832fb8ca8476e808499d06239ea5d2cd
+ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
+ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92011486"
+ms.lasthandoff: 12/11/2020
+ms.locfileid: "97102923"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 
@@ -34,13 +34,13 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 2. 執行 HoloLens2 的 [開始手勢](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)或 HoloLens (第 1 代) 的[綻開](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)，以啟動主功能表。 
 3. 看一下 [設定] 磚，然後執行 HoloLens (第 1 代) 的[空中點選](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap)手勢，或是在 HoloLens 2 上[觸碰或使用手部射線](https://docs.microsoft.com/hololens/hololens2-basic-usage)進行選取。 
 4. 選取 [更新] 功能表項目。
-5. 選取 [適用於開發人員] 功能表項目。
+5. 選取 [適用於開發人員]  功能表項目。
 6. 啟用 [開發人員模式]。
 
 > [!IMPORTANT]
 > 如果目前處於多重使用者模式，且您不是系統管理員，進入開發人員模式的功能可能會呈現為灰色。請確定您是 **[裝置的系統管理員](https://docs.microsoft.com/hololens/security-adminless-os)** 。
 
-7. [向下捲動](../../design/gaze-and-commit.md#composite-gestures)並啟用**裝置入口網站**。
+7. [向下捲動](../../design/gaze-and-commit.md#composite-gestures)並啟用 **裝置入口網站**。
 8. 如果您要設定 Windows 裝置入口網站，以便透過 USB 或 Wi-Fi 將應用程式部署到此 HoloLens，請按一下 [配對] 以[產生配對 PIN](using-visual-studio.md)。 將 [設定] 應用程式保留在 [PIN] 快顯視窗中，直到您在第一次部署期間，將 PIN 輸入 Visual Studio 為止。
 
 ![在 Windows 全像攝影版的 [設定] 應用程式中啟用開發人員模式](images/using-windows-portal-img-01.jpg)
@@ -117,6 +117,38 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 >[!NOTE]
 > 僅在裝置刷新時，才會信任此裝置的憑證，且使用者才必須再次執行此程序。
 
+## <a name="sideloading-applications"></a>側載應用程式
+
+### <a name="installing-a-certificate"></a>安裝憑證
+
+1. 在 Windows 裝置入口網站中，瀏覽至 [應用程式管理員] 頁面
+2. 在 [部署應用程式] 區段中，選取 [安裝憑證]
+3. 在 [選取用於簽署應用程式套件的憑證檔案 (.cer)] 下，選取 [選擇檔案]，並瀏覽至與您要側載的應用程式套件相關聯的憑證
+4. 選取 [安裝] 可開始進行安裝
+
+![螢幕擷取畫面：在 Windows 裝置入口網站中開啟的 [應用程式管理員] 頁面](images/sideloading-1.png)
+
+### <a name="installing-an-app"></a>安裝應用程式
+
+> [!NOTE]
+> 為了讓應用程式能夠透過裝置入口網站成功完成安裝，其必須經過憑證的簽署，您必須先將此憑證安裝到裝置上，然後才能嘗試安裝應用程式。 如需相關指示，請參閱[上一節](#installing-a-certificate)。
+
+1. 當您[從 Visual Studio 建立了應用程式套件](using-visual-studio.md)後，就可以將套件從產生的檔案遠端安裝到您的裝置上：
+
+![螢幕擷取畫面：應用程式套件的檔案內容](images/sideloading-2.png)
+
+2. 在 Windows 裝置入口網站中，瀏覽至 [應用程式管理員] 頁面
+3. 在 [部署應用程式] 區段中，選取 [本機存放區]
+4. 在 [選取應用程式套件] 下，選取 [選擇檔案]，並瀏覽至您要側載的應用程式套件
+5. 如果您在安裝應用程式時，要一起安裝選用項目或架構套件，請勾選對應的方塊，然後選取 [下一步]：
+
+![螢幕擷取畫面：在 Windows 裝置入口網站中開啟的 [應用程式管理員] 頁面，其中已醒目提示 [本機儲存體] 索引標籤](images/sideloading-3.png)
+
+6. 選取 [安裝] 即可起始安裝
+ 
+![螢幕擷取畫面：在 Windows 裝置入口網站中開啟的 [應用程式管理員] 頁面，且安裝已成功完成](images/sideloading-4.png) 
+
+安裝完成後，回到 HoloLens 上的 [所有應用程式] 頁面，然後啟動新安裝的應用程式！
 
 ## <a name="device-portal-pages"></a>Device Portal 頁面
 
@@ -155,7 +187,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 * 縮放：滑鼠滾輪。
 * **追蹤選項**
    * 選取 [強制視覺追蹤] 來開啟持續性視覺追蹤。 
-   * **暫停**將會停止視覺追蹤。
+   * **暫停** 將會停止視覺追蹤。
 * **檢視選項**：設定 3D 視圖上的選項：
   * **追蹤**：指出視覺追蹤是否為作用中。
   * **顯示樓面**：顯示棋盤式的樓面規劃。
@@ -198,10 +230,10 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
   * **PV 相機**：擷取來自相片/攝影機的影片串流。
   * **麥克風音訊**：擷取來自麥克風陣列的音訊。
   * **App 音訊**：擷取來自目前執行中 App 的音訊。
-  * **從相機呈現**：如果[受執行中應用程式支援](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (僅限 HoloLens 2)，則將要從相片/攝影機角度進行的擷取對齊。
+  * **從相機呈現**：如果 [受執行中應用程式支援](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (僅限 HoloLens 2)，則將要從相片/攝影機角度進行的擷取對齊。
   * **即時預覽品質**：選取即時預覽的螢幕解析度、畫面播放速率，以及串流速率。
 * **音訊設定** (僅限 HoloLens 2)：
-  * **音訊媒體類別**：選取要在處理麥克風時使用的類別。 **預設值**會包含部分環境，而**通訊**會套用背景噪音消除。
+  * **音訊媒體類別**：選取要在處理麥克風時使用的類別。 **預設值** 會包含部分環境，而 **通訊** 會套用背景噪音消除。
   * **App 音訊增益**：套用至 App 音訊音量的增益。
   * **麥克風音訊增益**：套用至麥克風音訊音量的增益。
 * **相片和影片設定** (HoloLens 2，2004 版或更新版本)：
@@ -209,8 +241,8 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
   * **相片解析度**：相片將採用的解析度。
   * **影片解析度和畫面播放速率**：影片將採用的解析度和畫面播放速率。
   * **影片防震緩衝區**：拍攝影片時使用的緩衝區大小。 值愈高，快速移動時的補償效果愈好。
-* 按一下或點選 [即時預覽] 按鈕以顯示擷取串流。 **停止即時預覽**將會停止擷取串流。
-* 按一下或點選 [錄製]，開始使用指定的設定來錄製混合實境串流。 **停止錄製**將會中止並儲存錄製內容。
+* 按一下或點選 [即時預覽] 按鈕以顯示擷取串流。 **停止即時預覽** 將會停止擷取串流。
+* 按一下或點選 [錄製]，開始使用指定的設定來錄製混合實境串流。 **停止錄製** 將會中止並儲存錄製內容。
 * 按一下或點選 [拍攝相片]，從擷取串流中拍攝靜止影像。
 * 按一下或點選 [還原預設設定] 以還原音訊、相片和影片設定的預設設定。
 * **影片與相片**：顯示在裝置上所拍攝影片和相片擷取的清單。

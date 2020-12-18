@@ -7,14 +7,15 @@ ms.date: 08/27/2019
 ms.topic: article
 keywords: HoloLens, MRTK, 混合實境工具組, Windows Mixed Reality, 設計, 範例應用程式, 控制項, 混合實境頭戴式裝置, Windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
 ms.localizationpriority: high
-ms.openlocfilehash: 95d8f8c52b226eda7ea1601feffc1464c2ea91c5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 16087b69a45def0f496d2ded434458725474bd25
+ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677528"
+ms.lasthandoff: 12/10/2020
+ms.locfileid: "97010599"
 ---
 # <a name="mrtk-101-how-to-use-mixed-reality-toolkit-unity-for-common-spatial-interactions"></a>MRTK 101：如何使用混合實境工具組 Unity 進行常見的空間互動
+
 ![MRTK](images/MRTK101/MRTK101Cover.png)
 
 了解如何使用 MRTK 來實現混合實境中一些最廣泛使用的常見互動模式。
@@ -36,16 +37,19 @@ ms.locfileid: "94677528"
 您可以在 Unity 編輯器中，使用 MRTK 的輸入模擬來測試此頁面中的所有內容。 如果您尚未這麼做，請遵循 [MRTK 安裝指南 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html) 以安裝最新版的 MRTK。
 
 ## <a name="how-to-simulate-input-interactions-in-unity-editor"></a>如何在 Unity 編輯器中模擬輸入互動？
-MRTK 支援編輯器內的輸入模擬。 只要按一下 Unity 的開始遊戲按鈕，即可執行場景。 使用這些按鍵來模擬輸入。
-按 W、A、S、D 鍵來移動相機。
-按住滑鼠右鍵並移動滑鼠來瀏覽。
-若要顯示模擬的手部，請按空格鍵 (右手) 或左 Shift 鍵 (左手)；若要將模擬的手部放入視圖中，請按 T 或 Y 鍵；若要旋轉模擬的手部，請按 Q 或 E (水平) / R 或 F (垂直)
 
-- [在 MRTK 文件中深入了解輸入模擬](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html)
+MRTK 支援編輯器內的輸入模擬。 按一下 Unity 的 [播放] 按鈕來執行場景，然後使用下列按鍵來模擬輸入：
+- 按 W、A、S、D 鍵來移動相機。
+- 按住滑鼠右鍵並移動滑鼠來瀏覽。
+- 按空格鍵 (右手) 或左邊的 Shift 鍵 (左手) 來帶出模擬的雙手
+- 按 T 或 Y 鍵讓模擬的雙手保持在視線內
+- 按 Q 或 E (水平)/R 或 F (垂直) 來旋轉模擬的雙手
 
+您可以在 [MRTK 文件](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/InputSimulation/InputSimulationService.html)中深入了解輸入模擬。
 
 ## <a name="how-to-grab-and-move-an-object"></a>如何抓取和移動物件？
-若要讓物件可供抓取，請指派這兩個指令碼：**ObjectManipulator.cs** 和 **NearInteractionGrabbable.cs** (適用於以接合手部追蹤輸入進行直接抓取) ObjectManipulator 可支援近處和遠處的互動。 您可以使用 HoloLens 2 的接合手部追蹤輸入 (近處)、手部射線 (遠處)、運動控制器的光束 (遠處)、HoloLens 注視游標與空間點選 (遠處) 來抓取和移動物件。
+
+附加 **ObjectManipulator.cs** 和 **NearInteractionGrabbable.cs** 指令碼即可讓物件可供抓取。 ObjectManipulator 同時支援遠近互動。 您可以使用 HoloLens 2 的接合手部追蹤輸入 (近處)、手部射線 (遠處)、運動控制器的光束 (遠處)，以及 HoloLens 注視游標和空間點選 (遠處) 來抓取和移動物件。
 
 <br/><img alt="NearInteractionGrabbable and ObjectManipulator.cs assigned to an object" width="800" src="images/MRTK101/MRTK_ManipulationHandler.png">
 
@@ -53,7 +57,7 @@ MRTK 支援編輯器內的輸入模擬。 只要按一下 Unity 的開始遊戲�
 
 
 ## <a name="how-to-resize-an-object"></a>如何調整物件大小？
-**ObjectManipulator.cs** 支援兩手的縮放/旋轉。 這適用於各種輸入類型，例如 HoloLens 2 的接合手部輸入、HoloLens 1 的注視 + 手勢輸入，以及 Windows Mixed Reality 沉浸式頭戴裝置的動作控制器輸入。
+**ObjectManipulator.cs** 支援兩手的縮放/旋轉。 此指令碼適用於各種輸入類型，例如 HoloLens 2 的接合手部輸入、HoloLens 1 的注視 + 手勢輸入，以及 Windows Mixed Reality 沉浸式頭戴裝置的動作控制器輸入。
 
 - [在 MRTK 文件中深入了解 Object Manipulator](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html)
 
@@ -88,7 +92,7 @@ Interactable 提供各種主題類型，包括著色器主題，該主題可讓�
 
 - [在 MRTK 文件中深入了解 Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
 
-視覺化回饋的另一個重要組成要素是 **MRTK 標準著色器**。 透過 MRTK 標準著色器，您可以輕鬆地加入視覺回饋效果，例如暫留光源和鄰近光源。 由於 MRTK 標準著色器執行的計算比 Unity 標準著色器少很多，因此可讓您建立高效能的體驗。
+視覺化回饋的另一個重要組成要素是 **MRTK 標準著色器**。 透過 MRTK 標準著色器，您可以輕鬆地加入視覺回饋效果，例如暫留光源和鄰近光源。 由於 MRTK 標準著色器執行的計算比 Unity 標準著色器少，因此可讓您建立高效能的體驗。
 
 建立新的材質，然後選取著色器的 [混合實境工具組] > [標準]。 或者，您可以挑選其中一個使用 MRTK 標準著色器的現有材質。
 
@@ -107,11 +111,11 @@ Interactable 提供各種主題類型，包括著色器主題，該主題可讓�
 <br/><img alt="Audio Source assigned to an object. AudioSource.PlayOneShot configured in the Interactable's OnPress() and OnRelease() events." width="800" src="images/MRTK101/MRTK_Audio.png">
 
 ## <a name="how-to-use-hololens-2-style-button-prefabs"></a>如何使用 HoloLens 2 樣式的按鈕 Prefab？
-MRTK 提供各類 HoloLens 2 命令介面 (OS) 樣式的按鈕。 其提供複雜的視覺回饋，例如，鄰近光源、壓縮方塊和按鈕表面上的漣波效果，可改善使用者的信賴度。
+MRTK 提供各種類型的 HoloLens 2 命令介面 (OS) 樣式按鈕，其中包括視覺回饋，例如鄰近光源、壓縮方塊和按鈕表面上的漣波效果，可改善使用者的信賴度。
 
 <br/><img alt="Interactable button" width="800" src="images/MRTK101/MRTK_Button.gif">
 
-只要將其中一個 **HoloLens 2 樣式的可點按按鈕 Prefab** 拖放到您的場景中即可。 Prefab 會使用上方介紹的 Interactable.cs。 您可以在 Interactable 中使用公開的事件 例如 (OnClick()) 來觸發動作。
+將其中一個 **HoloLens 2 樣式的可點按按鈕 Prefab** 拖放到您的場景中即可。 Prefab 會使用上方介紹的 Interactable.cs。 您可以在 Interactable 中使用公開的事件 例如 (OnClick()) 來觸發動作。
 
 <br/><img alt="HoloLens 2 Button Prefab" width="800" src="images/MRTK101/MRTK_Button.png">
 
@@ -119,7 +123,7 @@ MRTK 提供各類 HoloLens 2 命令介面 (OS) 樣式的按鈕。 其提供複�
 
 ## <a name="how-to-make-an-object-follow-you"></a>如何讓物件跟著您移動？
 將 **RadialView.cs** 或 **Follow.cs** 指令碼指派給物件。 這是 Solver (解算器) 指令碼系列的一部分，可讓您在 3D 空間中實現各種物件類型的定位。 **SolverHandler.cs** 將會自動新增。
-以下是使用 RadialView 設定達到 'lazy follow' 常駐標籤行為的範例，就像是 HoloLens 命令介面中的 [開始] 功能表。 您可以指定最小/最大距離和最小/最大檢視角度。 下列範例顯示物件在 0.4m 和 0.8m 範圍之間的 15° 檢視。 調整 Lerp 時間值，讓位置更新的速度更快或更慢。
+以下是使用 RadialView 設定達到 'lazy follow' 常駐標籤行為的範例，就像是 HoloLens 命令介面中的 [開始] 功能表。 您可以指定最小/最大距離和最小/最大檢視角度。 下列範例顯示物件在 0.4 m 和 0.8 m 範圍之間的 15° 檢視。 調整 Lerp 時間值，讓位置更新的速度更快或更慢。
 
 <br/><img alt="MRTK Standard Shader for solver" width="400" src="images/MRTK101/MRTK_SolverRadialView.png">
 
@@ -128,7 +132,7 @@ MRTK 提供各類 HoloLens 2 命令介面 (OS) 樣式的按鈕。 其提供複�
 - [在 MRTK 文件中深入了解 Solver](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)
 
 ## <a name="how-to-make-an-object-face-you"></a>如何讓物件面對您？
-將 **Billboard.cs** 指令碼指派給物件。 無論您的位置為何，物件一律會面對您。 您可以指定樞紐軸選項。
+將 **Billboard.cs** 指令碼指派給物件。 無論您的位置在哪，物件都會面對您。 您可以指定樞紐軸選項。
 
 <br/><img alt="Image of Billboard.cs script assigned to an object with Pivot Axis option Y" width="800" src="images/MRTK101/MRTK_Billboard.png">
 

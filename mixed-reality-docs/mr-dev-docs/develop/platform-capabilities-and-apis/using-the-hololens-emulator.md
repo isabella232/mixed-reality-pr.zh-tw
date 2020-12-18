@@ -1,18 +1,18 @@
 ---
 title: 使用 HoloLens 模擬器
 description: 使用 HoloLens 模擬器在沒有實體 HoloLens 的電腦上測試混合實境應用程式。
-author: pbarnettms
-ms.author: pbarnett
+author: hamalawi
+ms.author: moelhama
 ms.date: 10/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 模擬器
-ms.openlocfilehash: 702fb18d22808cb23fa5b31ac19b50645f86efe6
-ms.sourcegitcommit: 5bf2121490b7b76135f52d41216330023745f54c
+ms.openlocfilehash: e6dc8a7d38d5c7c9575723446350ee087a69dc18
+ms.sourcegitcommit: 0509cf6c57067cffd75a0189106e3369e9ecc5c8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/13/2020
-ms.locfileid: "92001469"
+ms.lasthandoff: 12/08/2020
+ms.locfileid: "96855905"
 ---
 # <a name="using-the-hololens-emulator"></a>使用 HoloLens 模擬器
 
@@ -28,7 +28,7 @@ HoloLens 模擬器可讓您在沒有實體 HoloLens 的電腦上測試全像攝�
 下載 HoloLens 模擬器。
 
 版本：
-* [HoloLens 2 模擬器 (Windows 全像攝影 2004 版 2020 年 10 月更新)](https://go.microsoft.com/fwlink/?linkid=2145829)。
+* [HoloLens 2 模擬器 (Windows 全像攝影 20H2 版 2020 年 12 月更新)](https://go.microsoft.com/fwlink/?linkid=2151523)。
 * [HoloLens 模擬器 (第 1 代) 和全像攝影專案範本](https://go.microsoft.com/fwlink/?linkid=2065980)。
 
 您可以在 [HoloLens 模擬器封存](hololens-emulator-archive.md)頁面上找到版本資訊和 HoloLens 模擬器的舊版組建。
@@ -61,7 +61,7 @@ HoloLens 模擬器會使用 Hyper-V 與 RemoteFx (第 1 代模擬器) 或 GPU-PV
     >[!NOTE]
     >在使用 Unity 時，請從 Unity 建置專案，然後如往常般將建置好的解決方案載入至 Visual Studio。
 2. 若為 HoloLens 模擬器 (第 1 代)，請確定平台已設定為 **x86**。 若為 HoloLens 2 模擬器，請確定平台已設定為 **x86** 或 **x64**。
-3. 選取想要的 **HoloLens 模擬器**版本作為要偵錯的目標裝置。
+3. 選取想要的 **HoloLens 模擬器** 版本作為要偵錯的目標裝置。
 4. 移至 [偵錯] > [開始偵錯] 或按 **F5** 啟動模擬器，然後部署要偵錯的應用程式。
 
 模擬器首次啟動時，可能需要一分鐘以上的時間才能啟動。 建議您在偵錯工作階段期間讓模擬器保持開啟，以便能夠快速地將應用程式部署到模擬器。
@@ -92,7 +92,7 @@ HoloLens (第 1 代) 上的游標會跟著頭部的移動和旋轉。 在 HoloLe
 在主視窗右邊，找出模擬器工具列。 工具列包含下列按鈕：
 * ![關閉圖示](images/emulator-close.png) **關閉**：關閉模擬器。
 * ![最小化圖示](images/emulator-minimize.png) **最小化**：將模擬器視窗最小化。
-* ![模擬圖示](images/emulator-simulation-panel.png) **模擬控制台**：顯示或隱藏用來設定和控制[模擬器輸入](#basic-emulator-input)的[模擬控制台](#simulation-control-panel)。
+* ![模擬圖示](images/emulator-simulation-panel.png) **模擬控制台**：顯示或隱藏用來設定和控制 [模擬器輸入](#basic-emulator-input)的 [模擬控制台](#simulation-control-panel)。
 * ![全螢幕圖示](images/emulator-fit.png) **全螢幕**：讓模擬器變成全螢幕大小。
 * ![縮放圖示](images/emulator-zoom.png) **縮放**：讓模擬器放大和縮小。
 * ![說明圖示](images/emulator-help.png) **說明**：開啟模擬器的說明。
@@ -208,7 +208,7 @@ HoloLens (第 1 代) 上的游標會跟著頭部的移動和旋轉。 在 HoloLe
 在主視窗右邊，您會找到模擬器工具列。 工具列包含下列按鈕：
 * ![關閉圖示](images/emulator-close.png) **關閉**：關閉模擬器。
 * ![最小化圖示](images/emulator-minimize.png) **最小化**：將模擬器視窗最小化。
-* ![人類輸入圖示](images/emulator-control.png) **人類輸入**：滑鼠和鍵盤可用來模擬人類對[模擬器的輸入](#basic-emulator-input)。
+* ![人類輸入圖示](images/emulator-control.png) **人類輸入**：滑鼠和鍵盤可用來模擬人類對 [模擬器的輸入](#basic-emulator-input)。
 * ![鍵盤和滑鼠輸入圖示](images/emulator-input.png) **鍵盤和滑鼠輸入**：鍵盤和滑鼠輸入會直接以鍵盤和滑鼠事件的形式傳遞到 HoloLens OS，彷彿您是與藍牙鍵盤和滑鼠連線。
 * ![全螢幕圖示](images/emulator-fit.png) **全螢幕**：讓模擬器變成全螢幕大小。
 * ![縮放圖示](images/emulator-zoom.png) **縮放**：讓模擬器放大和縮小。

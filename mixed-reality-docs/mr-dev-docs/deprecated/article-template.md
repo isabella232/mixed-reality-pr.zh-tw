@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 無
-ms.openlocfilehash: 748685f89e44221ff50b90b57d871867b83f581c
-ms.sourcegitcommit: d4b96e5b51b64ff618dbf667e8b8eb069e1a2fe2
+ms.openlocfilehash: 1fc560d170c4e17f4d70b7068474a1aabda472a2
+ms.sourcegitcommit: 3762d207d3b5f4a1d932197aae7a4fae4baec960
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/05/2020
-ms.locfileid: "91717431"
+ms.lasthandoff: 12/18/2020
+ms.locfileid: "97676131"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>標題 (盡可能地指定，請使用人類詞彙)  
 
@@ -52,7 +52,7 @@ ms.locfileid: "91717431"
 
 區段可以包含下列任何或所有內容：  
 
-*   解釋
+*   說明
 *   考量
 *   經驗法則 
 *   使用方法 
@@ -65,7 +65,7 @@ ms.locfileid: "91717431"
 *   不要試著太有趣。
 *   使用 en-us 撰寫 (美國英文) 拼寫和慣例。
 *   **針對標題使用句子大小寫、區段標題和 .。。一切正常。** 在句子中，唯一應該大寫的單字是適當的名詞 (，就像您在文法學校) 中所學的一樣。 品牌名稱 (例如 Microsoft HoloLens) 是適當的名詞。 功能名稱 (例如空間對應) 不是正確的名詞，除非商標它們。
-*   請勿撰寫表單的連結，「如需詳細資訊，請移至 [這裡](../whats-new/contributing.md)」。 相反地，請將連結 [內容](../whats-new/contributing.md) ，而不會將讀取器導向至其他位置。
+*   請勿撰寫表單的連結，「如需詳細資訊，請移至 [這裡](../contributing.md)」。 相反地，請將連結 [內容](../contributing.md) ，而不會將讀取器導向至其他位置。
 *   這份檔是真實的來源。 資訊必須是精確且最新的。
 
 <br>
