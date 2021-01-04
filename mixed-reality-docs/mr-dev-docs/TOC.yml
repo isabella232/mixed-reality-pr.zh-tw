@@ -8,5 +8,7 @@
   href: develop/toc.yml
 - name: 散佈
   href: distribute/toc.yml
+- name: 參與指南
+  href: contributing.md
 - name: 新功能
   href: whats-new/toc.yml
