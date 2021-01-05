@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 065327e89b28daa4475bf624430d361176a98a7e
-ms.sourcegitcommit: 09522ab15a9008ca4d022f9e37fcc98f6eaf6093
+ms.openlocfilehash: 73a0fac8519881a9deb7049b122a7d739ef972b4
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/30/2020
-ms.locfileid: "96354474"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717728"
 ---
-# <a name="425"></a>[<span data-ttu-id="e3a8b-101">4.25</span><span class="sxs-lookup"><span data-stu-id="e3a8b-101">4.25</span></span>](#tab/425)
-
-![空間錨點存放區就緒](../images/unreal-spatialanchors-store-ready.PNG)
-
-# <a name="426"></a>[<span data-ttu-id="e3a8b-103">4.26</span><span class="sxs-lookup"><span data-stu-id="e3a8b-103">4.26</span></span>](#tab/426)
+# <a name="426"></a>[<span data-ttu-id="fdb30-101">4.26</span><span class="sxs-lookup"><span data-stu-id="fdb30-101">4.26</span></span>](#tab/426)
 
 ![空間錨點存放區就緒 4.26](../images/local-spatial-anchors-img-01.png)
+
+# <a name="425"></a>[<span data-ttu-id="fdb30-103">4.25</span><span class="sxs-lookup"><span data-stu-id="fdb30-103">4.25</span></span>](#tab/425)
+
+![空間錨點存放區就緒](../images/unreal-spatialanchors-store-ready.PNG)
