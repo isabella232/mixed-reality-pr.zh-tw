@@ -6,19 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、鍵盤、MRTK、混合現實工具組
-ms.openlocfilehash: 52555dec04b42b7865e8d358d57cbc9112a7a326
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703144"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847283"
 ---
 # <a name="keyboard"></a>鍵盤
 
 ![鍵盤](images/UX_Hero_Keyboard.jpg)
 
-您的混合現實應用程式可以隨時叫用系統鍵盤。 請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤支援直接互動，而 HoloLens 上的鍵盤 (第1代) 支援注視和點一下手勢輸入。
-
+您的混合現實應用程式可以隨時叫用系統鍵盤，其行為會根據目標平臺的功能而定。 例如，HoloLens 2 上的鍵盤支援直接的互動，而 HoloLens (第一代) 鍵盤則支援注視和空中點擊。
 
 <br>
 
@@ -34,12 +33,12 @@ ms.locfileid: "94703144"
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，下一項工作是將應用程式部署至裝置或模擬器。 
+如果您遵循我們所配置的 Unity 開發旅程圖，下一項工作是將您的應用程式部署至裝置或模擬器。 
 
 > [!div class="nextstepaction"]
 > [部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機](../develop/platform-capabilities-and-apis/using-visual-studio.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

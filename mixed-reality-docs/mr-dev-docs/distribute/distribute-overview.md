@@ -6,18 +6,18 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: HoloLens、Mixed Reality、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品化
-ms.openlocfilehash: b4b82557ba274852ebb3f97058017fa2e5db1c02
-ms.sourcegitcommit: 9e9d58de4513655c7daa71ff4b5b2c2b115ab959
+ms.openlocfilehash: 632bb9c0c5bdb93041f71a4382802b02f6817f0e
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97034579"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757626"
 ---
 # <a name="distributing-your-apps"></a>散發您的應用程式
 
 ![WMR 首頁中的 Floaty 鳥3D 應用程式 lancher](images/distribute-hero-image.png)
 
-將您的應用程式帶入使用者或世界各地是最重要的，有時也是耗費，也就是任何開發工作的一部分。 我們已簡化下列一組資源的處理常式，這些資源全都取決於您或您的小組最適合的散發和部署案例。
+將您的應用程式帶入使用者或世界各地是最重要的，有時也是耗費，也就是任何開發工作的一部分。 我們簡化了一組資源的程式，這取決於最適合您或您小組的散發和部署案例。
 
 [!INCLUDE[](includes/before-submission.md)]
 
@@ -81,7 +81,7 @@ ms.locfileid: "97034579"
     <td>✔️</td>
 </tr>
 <tr>
-    <td>HoloLens 裝置無法使用<a href="#additional-scenarios"><strong>自訂的 Win32 部署</strong></a> (-請參閱以下) </td>
+    <td>HoloLens 裝置無法使用<a href="#other-scenarios"><strong>自訂的 Win32 部署</strong></a> (-請參閱以下) </td>
     <td>✔️</td>
     <td>✔️</td>
     <td>❌</td>
@@ -91,14 +91,14 @@ ms.locfileid: "97034579"
 > [!IMPORTANT]
 > 應用程式安裝程式目前不適用於受管理的裝置，或 (第1代) 裝置的 HoloLens。
 
-## <a name="additional-scenarios"></a>其他案例
+## <a name="other-scenarios"></a>其他案例
 
-* 針對 Win32 應用程式部署，包括流和遊戲傳遞，您可以產生 Win32。EXE 檔案使用來自 Unity 的電腦獨立組建目標，並以一般方式將您的應用程式提交至您選擇的平臺。 
+* 您可以產生 Win32。EXE 檔案：使用來自 Unity 的電腦獨立組建目標進行 Win32 應用程式部署，包括流和遊戲通過。 一旦您擁有。EXE，您可以像平常一樣將應用程式提交至您選擇的平臺。 
 
-* 如果您在離線時需要安裝 HoloLens 2 的應用程式，請參閱 [離線安全 HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) 指示，或透過布建套件定應用程式，而不需啟用開發人員模式。
+* 如果您在離線時需要安裝 HoloLens 2 的應用程式，請參閱 [離線安全 HoloLens 2](https://docs.microsoft.com/hololens/hololens-common-scenarios-offline-secure) 指示，或透過布建套件安裝應用程式，而不需啟用開發人員模式。
 
 * 您也可以將組建部署到您的裝置，並與其他已啟用開發人員模式的開發人員共用，方法是 [使用 Visual Studio 部署和偵錯工具，](../develop/platform-capabilities-and-apis/using-visual-studio.md) 或 [使用裝置入口網站安裝應用程式套件](https://docs.microsoft.com/hololens/holographic-custom-apps#installing-an-application-package-with-the-device-portal)。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [從 Microsoft Store 尋找、安裝和卸載應用程式](https://docs.microsoft.com/hololens/holographic-store-apps)
 

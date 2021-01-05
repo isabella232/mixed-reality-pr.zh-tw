@@ -1,11 +1,19 @@
 ---
-ms.openlocfilehash: 23bba22801f61f6b4814991c8b3bde68d2c5f6b7
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
+ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002695"
+ms.lasthandoff: 12/21/2020
+ms.locfileid: "97717997"
 ---
+# <a name="426"></a>[4.26](#tab/426)
+
+若要取得手片的資料，您應該使用上一節中的 Get 移動控制器資料函數。 傳回的結構包含兩個參數，您可以使用這兩個參數來建立手光線– **目標位置** 和 **目標旋轉**。 這些參數會形成您的肘線所導向的光線。 您應該採用它們，並尋找所指向的全像影像。
+
+以下是判斷手光線是否叫用小工具和設定自訂命中結果的範例：
+
+![取得移動控制器資料函式的藍圖](../images/unreal-hand-tracking-img-04.png) 
+
 # <a name="425"></a>[4.25](#tab/425)
 
 若要在藍圖中使用手片，請搜尋 **WINDOWS MIXED REALITY HMD** 下的任何動作：
@@ -138,10 +146,3 @@ C++：
 ```cpp
 static EHMDTrackingStatus UWindowsMixedRealityFunctionLibrary::GetControllerTrackingStatus(EControllerHand hand);
 ```
-# <a name="426"></a>[4.26](#tab/426)
-
-若要取得手片的資料，您應該使用上一節中的 Get 移動控制器資料函數。 傳回的結構包含兩個參數，您可以使用這兩個參數來建立手光線– **目標位置** 和 **目標旋轉**。 這些參數會形成您的肘線所導向的光線。 您應該採用它們，並尋找所指向的全像影像。
-
-以下是判斷手光線是否叫用小工具和設定自訂命中結果的範例：
-
-![取得移動控制器資料函式的藍圖](../images/unreal-hand-tracking-img-04.png) 

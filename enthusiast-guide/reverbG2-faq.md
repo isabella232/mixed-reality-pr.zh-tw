@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0c0bc508772fe32af9edc21ca62ba5e46125fe88
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 55baf3f076b8cf0f815f899658b3bbe61292e267
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96578613"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725899"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -28,11 +28,11 @@ HP 建議：
 
 如果您覺得顯示器看起來有點模糊，有幾件事您可以試試看：
 
-- 確定您的耳機正確地放在您的頭部，以便您的眼睛以鏡頭為中心。
-- 請嘗試調整 IPD (interpupillary 距離) 。 請注意，「回音」 G2 使用硬體 IPD。 若要變更它，請在您的耳機上尋找 IPD 調整。
-- 如果您需要眼鏡或連絡人，他們仍然是必要的。
-- 如果您的鏡頭只需要進行 (清理，請檢查您的-沒有流體) 。
-- 由於耳機的 advanced 設計，在啟動裝置時，前幾分鐘內可能會有一些輕微的影像重設，在 Lcd 有機會進行準備之前。
+- 請確定您的耳機已正確地放在鏡頭的中央。
+- 請嘗試調整 IPD (interpupillary 距離) 。 「回音」 G2 使用硬體 IPD。 若要變更它，請在您的耳機上尋找 IPD 調整。
+- 如果您需要眼鏡或連絡人，您必須在使用裝置時將它們磨損。
+- 檢查您的鏡頭是否為乾淨 (microfiber 抹布，無流體) 。
+- 由於有了先進的耳機設計，在啟動裝置時，前幾分鐘內可能會有一些小影像的重影，直到 Lcd 有機會準備好。
 
 ## <a name="i-am-getting-a-7-14-something-went-wrong-error-when-i-plug-in-my-headset"></a>我在插入耳機時遇到7-14 「發生錯誤」的錯誤
 
@@ -52,15 +52,15 @@ HP 建議：
 
 ## <a name="i-am-getting-a-13-14-something-went-wrong-error-when-my-pc-resumes-from-hibernate-s4"></a>我的電腦從休眠狀態 (S4 開始時，出現13-14 「發生錯誤」錯誤) 
 
-有時，在繼續程式中，視訊卡無法建立連線，因此從您的電腦撥出 USB 類型 C 並將其重新插入，可能有助於建立連接。
+有時，在繼續程式期間，視訊卡無法建立連線，因此從您的電腦撥出 USB 類型 C 並將其重新插入，可能有助於建立連接。
 
 ## <a name="my-hp-motion-controller-joystick-will-sometimes-stick-to-one-side"></a>我的 HP 運動控制器遊戲，有時會留在一側
 
 此問題的修正方式是將搖桿完全上移直到按一下，然後自由移動。
 
-## <a name="others-state-i-am-very-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>其他狀態我很高興，或是當我在使用麥克風與一些應用程式時，音訊正在剪切
+## <a name="others-state-i-am-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>當我使用麥克風進行某些應用程式時，其他人會看到我的聲音，或是音訊正在剪切
 
-當 Windows 電腦第一次辨識「HP 回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定的預期。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」的應用程式範例包括 Skype、縮放、小組和 Cisco WebEx，但並非所有的 VR 社交或廣播應用程式都有這項功能。
+當 Windows 電腦第一次辨識出 HP 的「回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定的預期。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」的應用程式範例包括 Skype、縮放、小組和 Cisco WebEx，但並非所有的 VR 社交或廣播應用程式都有這項功能。
 
 ## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>混合實境入口指出「此耳機上無法執行混合的現實」，但這在先前的 WMR 耳機中運作正常
 
@@ -68,17 +68,17 @@ HP 建議：
 
 ## <a name="it-looks-like-my-left-display-is-stretched-and-the-right-display-is-off-centered-and-half-black"></a>我的左顯示器似乎已伸展，右邊的顯示顯示在中央和半黑色
 
-當您的耳機未以原生解析度執行時，就會發生這種情況。 由於「HP 回音」 G2 HMD 會顯示高解析度的本質，因此並非所有系統都能轉譯原生解析度。 未來的修正程式即將推出 Windows Update，當耳機不是原生解析度時，將會解決轉譯問題。
+當耳機未以原生解析度執行時，就會發生這種情況。 由於高解析度的本質會顯示在 HP 回音 HMD 中，並非所有系統都可以轉譯原生解析度。 未來會有一個修正 Windows Update，當耳機不是原生解析度時，將會解決轉譯問題。
 
 有幾個原因會導致您的系統無法以原生解析度轉譯：
 
-- 系統上的 DisplayPort 可能不會與1.3 相容，或可能不支援全部4個通道。
-- 如果您正在使用介面卡，它可能不支援 HBR3 相容，或可能不支援全部4個通道。
+- 系統上的 DisplayPort 可能不會與1.3 相容，或可能不支援全部四個通道。
+- 如果您使用介面卡，它可能不支援 HBR3 相容，或可能不支援全部四個通道。
 - 如果您的系統具有混合式 GPU，可能會限制 DisplayPort 可用的頻寬。
 
 ## <a name="why-are-my-hp-motion-controller-models-not-showing-up-correctly-in-a-game"></a>為什麼我的 HP 運動控制器模型未在遊戲中正確顯示
 
-雖然大部分的遊戲都不會顯示控制器或使用驅動程式所安裝的模型，但有些遊戲會使用自己的控制器型號版本，以自訂它們或顯示可用輸入的內容相關說明。 這通常不會封鎖遊戲的任何功能，但可能會導致混淆或甚至是視覺效果的構件。 這只能透過遊戲本身的更新來修正。
+雖然大部分的遊戲都不會顯示控制器或使用驅動程式所安裝的模型，但有些遊戲會使用自己的控制器型號版本，以自訂它們或顯示可用輸入的內容說明。 這通常不會封鎖遊戲的任何功能，但可能會導致混淆或甚至是視覺效果的構件。 這只能透過遊戲本身的更新來修正。
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>我的 SteamVR 遊戲似乎無法正常搭配我的 HP 運動控制器運作
 

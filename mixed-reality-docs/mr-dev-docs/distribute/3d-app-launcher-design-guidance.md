@@ -6,16 +6,16 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、3D 應用程式啟動器、沉浸式耳機、即時立方體、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、UWP、Win32、光源、色彩
-ms.openlocfilehash: a501b4bdc86df17f6d005c2f7ccf4fe6a94a4b43
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703474"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757726"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>3D 應用程式啟動程式設計指引
 
-當您放入 Windows Mixed Reality 沉浸式 (VR) 耳機時，您會進入 Windows Mixed Reality 首頁，並以山脈和水 (的 cliff 來視覺化，不過您可以 [選擇其他環境，甚至建立自己的](../design/add-custom-home-environments.md)) 。 在這個首頁的空間內，使用者可以自由排列和組織他們關心任何方式的3D 物件和應用程式。 **3d 應用程式啟動器** 是使用者的混合現實房子中的「實體」物件，可選擇啟動應用程式。
+當您將 Windows Mixed Reality 沉浸式 (VR) 耳機時，請輸入 Windows Mixed Reality 首頁。 首頁會以山脈和水的 cliff 來視覺化，但您可以 [選擇其他環境，甚至建立自己的](../design/add-custom-home-environments.md)) 。 在首頁的空間內，使用者可以自由排列和組織他們在意任何方式的3D 物件和應用程式。 **3d 應用程式啟動器** 是使用者的混合現實房子中的「實體」物件，可選擇啟動應用程式。
 
 ![範例： Floaty 鳥3D 應用程式啟動器](images/20171016-151526-mixedreality1-1200px-1000px.jpg)<br>
 *(虛構應用程式) 的 Floaty 鳥3D 應用程式啟動器範例*
@@ -82,7 +82,7 @@ ms.locfileid: "94703474"
 
 ## <a name="tips-for-good-3d-models"></a>良好3D 模型的秘訣
 
-* 規劃應用程式啟動程式的維度時，大約會針對 30cm cube 進行。 因此，1:1:1 大小的比率。
+* 規劃應用程式啟動器的維度時，大約會有 30 cm 的 cube。 因此，1:1:1 大小的比率。
 * 模型必須在10000多邊形下。 [深入瞭解 (LODs 的三角形計數和詳細資料層級) ](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * 在沉浸式耳機上測試。
 * 盡可能在您的模型幾何中建立詳細資料–不依賴材質取得詳細資料。
@@ -105,9 +105,9 @@ ms.locfileid: "94703474"
 
 ## <a name="how-to-handle-type"></a>如何處理類型
 
-* 我們建議您的類型包含應用程式啟動器的 1/3 (或更) 。 型別是讓人們知道您的啟動器實際上是啟動程式的主要事物，所以如果它很大，就很好用。
+* 我們建議您的類型會佔用大約1/3 的應用程式啟動器 (或更多) 。 型別是讓人們知道您的啟動器實際上是啟動程式的主要事物，所以如果它很大，就很好用。
 * 避免將類型設為寬度-請嘗試將其保留在應用程式啟動器核心維度的範圍內 (更多或更少) 。
-* 一般類型可以運作，但請注意，在某些環境中，可能很難查看。 您可以考慮將它放在其背後的穩固物件或背後，以協助進行此工作。
+* 一般類型可以運作，但在某些環境中，可能很難查看。 您可以考慮將它放在其背後的穩固物件或背後，以協助進行此工作。
 * 將維度加入至您的型別在3D 中感覺很不錯。 將類型的側邊著色為不同、較深色的色彩有助於可讀性。
 
 :::row:::
@@ -144,7 +144,7 @@ ms.locfileid: "94703474"
 
 ## <a name="lighting"></a>光源
 
-應用程式啟動程式的光源來自懸崖之屋環境。 請務必在整個單元中的數個位置測試您的啟動程式，讓它在燈光和遮蔽中都能美觀。 好消息是，如果您已遵循本檔中的其他設計指導方針，則您的啟動程式應該會相當適合懸崖之屋中的大部分光源。
+應用程式啟動程式的光源來自懸崖之屋環境。 請務必在整個單元中的數個位置測試您的啟動程式，讓它在燈光和遮蔽中都能美觀。 好消息是，如果您已遵循本檔中的其他設計指導方針，則您的啟動器應該在懸崖之屋的大部分光源中都是不錯的形式。
 
 測試啟動程式如何在環境中的各種燈光中尋找的好地方，就是 Studio、媒體室、外部和後 Patio 的任何地方， (具有草坪) 的具體區域。 另一個不錯的測試是把它放在半淺色和半影子，看看它的樣子。
 
@@ -168,7 +168,7 @@ ms.locfileid: "94703474"
 
 ### <a name="best-practices"></a>最佳作法
 
-* 如果您的應用程式啟動器物件是針對 .PBR 而撰寫的，則將它轉換為懸崖之屋環境應該相當簡單。
+* 如果您的應用程式啟動程式物件是針對 .PBR 而撰寫的，則將它轉換為懸崖之屋環境應該很簡單。
 * 我們的著色器預期會有金屬/粗糙度的工作流程– Unreal 的 .PBR 著色器是關閉的傳真。
 * 匯出紋理時，請記住 [建議的材質大小](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#material-guidelines) 。
 * 請務必為您的物件建立即時光源，這表示：
@@ -176,7 +176,7 @@ ms.locfileid: "94703474"
   * 避免紋理中的內建光源
   * 使用其中一個 .PBR 材質撰寫套件來取得為著色器產生的正確對應
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [建立要在混合實境首頁中使用的3D 模型](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [實作 3D 應用程式啟動器 (UWP 應用程式)](implementing-3d-app-launchers.md)

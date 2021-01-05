@@ -1,30 +1,30 @@
 ---
 title: 案例研究總覽
-description: 混合現實團隊遇到的故事、學習和體驗，並在過程中進行 jotted。
+description: 混合現實團隊發現的故事、學習和體驗，並在過程中 jotted。
 author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Windows Mixed Reality、HoloLens、個案研究、願景、情節、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: b30cc49759867b4f11f3f88195c8d9bec87ba297
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703484"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757646"
 ---
 # <a name="case-study-gallery"></a>案例研究資源庫
 
-混合現實團隊遇到的故事、學習和體驗，並在過程中進行 jotted。
+混合現實團隊發現的故事、學習和體驗，並在過程中 jotted。
 
 :::row:::
     :::column:::
        [ ![ 3 HoloStudio ui 和互動設計學習](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 和互動設計學習](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio 是適用于 HoloLens 的第一個應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過許多使用者測試、原型設計和試用和錯誤來完成這項工作。<br>
+        HoloStudio 是適用于 HoloLens 的第一個應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過使用者測試、原型設計和試用和錯誤來完成此操作。<br>
         *2016 年 7 月*
     :::column-end:::
     :::column:::
-       [ ![ 打造 HoloSketch、適用于 hololens 大樓 HoloSketch 的空間配置和 ux 草圖應用程式](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[、適用于 hololens 的空間配置和 ux 草圖應用程式](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+       [ ![ 打造 HoloSketch、適用于 hololens 大樓 HoloSketch 的空間配置和 ux 草圖應用程式](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[、空間配置，以及適用于 hololens 的 ux 草圖應用程式](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch 是適用于 HoloLens 的裝置空間配置和 UX 草圖工具，可協助打造全像攝影體驗。<br>
          *2017 年 7 月*
     :::column-end:::
@@ -55,7 +55,7 @@ ms.locfileid: "94703484"
 
 :::row:::
     :::column:::
-       使用不同的效能調整 Datascape 跨裝置 [ ![ 調整 Datascape](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[Scaling Datascape across devices with different performance](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+       使用不同的效能調整 Datascape 跨裝置 [ ![ 調整 Datascape](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
         此案例研究可讓您深入瞭解 Microsoft 開發人員如何將 Datascape 應用程式優化，以在具有各種效能功能的裝置上提供引人注目的體驗。<br>
         *2017 年 8 月*
     :::column-end:::
@@ -79,7 +79,7 @@ ms.locfileid: "94703484"
     :::column-end:::
     :::column:::
        [ ![ HoloLens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) galaxy explorer 進行 **[HoloLens 2](../develop/unity/galaxy-explorer-update.md)的工作**<br>
-        歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 Galaxy Explorer 最初是開發為 HoloLens (第一代) 的開放原始碼應用程式，透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們正在更新 HoloLens 2 的新功能。<br>
+        歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 Galaxy Explorer 最初開發為 HoloLens (第一代) 的開放原始碼應用程式，並透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新 HoloLens 2 的新功能。<br>
         *2019 年 6 月*
     :::column-end:::
     :::column:::
@@ -94,7 +94,7 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
 
 :::row:::
     :::column:::
-       適用于 HoloTour 之 HoloTour 空間音效設計 [ ![ 的空間音效設計](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[Spatial sound design for HoloTour](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
+       適用于 HoloTour 之 HoloTour 空間音效設計 [ ![ 的空間音效設計](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
         若要為 Microsoft HoloLens 建立真正的沉浸式3D 虛擬導覽，全景影片和全像攝影景象只是公式的一部分。<br>
          *2016 年 8 月*
     :::column-end:::
@@ -104,7 +104,7 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
         *2016 年 8 月*
     :::column-end:::
     :::column:::
-       針對 HoloTour HoloTour 捕捉和建立內容 [ ![ 的捕捉和建立內容](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[Capturing and creating content for HoloTour](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)**<br>
+       [ ![ 針對 machu pichu HoloTour](../out-of-scope/images/camera-machu-pichu-500px.png)](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md) **[捕捉和建立 HoloTour 內容](../out-of-scope/case-study-capturing-and-creating-content-for-holotour.md)的內容**<br>
         HoloTour 提供全球 iconic 地點的沉浸式3D 個人導覽。 如同我們發現的，建立已知位置的 convincingly 實際3D 呈現，會結合創意和技術 wizardry。<br>
         *2016 年 8 月*
     :::column-end:::
@@ -118,7 +118,7 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
 
 :::row:::
     :::column:::
-       在 RoboRaid 中使用空間音效 [ ![ 在 RoboRaid 中使用空間音效](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md) **[Using spatial sound in RoboRaid](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
+       在 RoboRaid 中使用空間音效 [ ![ 在 RoboRaid 中使用空間音效](../design/images/successful-dodge-roboraid-500px.jpg)](../design/case-study-using-spatial-sound-in-roboraid.md) **[](../design/case-study-using-spatial-sound-in-roboraid.md)**<br>
         空間音效是 Microsoft HoloLens 的最令人興奮的功能之一，可讓使用者在物件不在看不見的時候，察覺他們的工作。<br>
          *2016 年 2 月*
     :::column-end:::
@@ -140,16 +140,16 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
 :::row:::
     :::column:::
        [ ![ 以混合](../develop/unity/images/bang-ai-weiwie.jpg)](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)現實表示人類 **[的](../out-of-scope/case-study-representing-humans-in-mixed-reality.md)人類**<br>
-        當我們無法只建立絕佳的元素，但在混合現實中使用最實際的環境、物件和人員的功能時，會出現何種機會？<br>
+        當我們不能建立絕佳的元素，但在混合現實中使用最實際的環境、物件和人員的功能時，會出現何種機會？<br>
          *2017 年 11 月*
     :::column-end:::
     :::column:::
-       [ ![ 我](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)在 hololens 設計團隊第一年的第一年 **[My first year on the HoloLens design team](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
+       [ ![ 我](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)在 hololens 設計團隊第一年的第一年 **[](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
         當我在2016年1月加入 HoloLens 設計小組時，從 2D flatland 到3D 世界的旅程已開始。<br>
         *2016 年 1 月*
     :::column-end:::
     :::column:::
-       針對 HoloTour HoloTour 捕捉和建立內容 [ ![ 的捕捉和建立內容](images/academyteam1000.png)](case-study-expanding-the-design-process-for-mixed-reality.md) **[Capturing and creating content for HoloTour](case-study-expanding-the-design-process-for-mixed-reality.md)**<br>
+       針對 HoloTour HoloTour 捕捉和建立內容 [ ![ 的捕捉和建立內容](images/academyteam1000.png)](case-study-expanding-the-design-process-for-mixed-reality.md) **[](case-study-expanding-the-design-process-for-mixed-reality.md)**<br>
         將技術新增至設計程式，可協助您的小組在空間上更輕鬆地思考混合的現實體驗。<br>
         *2018 年 4 月*
     :::column-end:::
@@ -158,7 +158,7 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
 :::row:::
     :::column:::
        [ ![ AfterNow 的流程-構想、原型設計、建築](../out-of-scope/images/whatisenvisioning-640px.png)](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md) **[AfterNow 的程式-構想、原型設計、建築](../out-of-scope/case-study-afternows-process-envisioning,-prototyping,-building.md)**<br>
-        在 AfterNow，我們會與您合作，讓您的想法和抱負成為可供市場使用的具體、完全營運的產品和體驗。 但是在撰寫一行程式碼之前，我們會透過名為構想的程式建立藍圖。<br>
+        在 AfterNow，我們會與您合作，讓您的想法和抱負成為具體、完全營運的產品，並為市場提供現成的體驗。 但是在撰寫一行程式碼之前，我們會透過名為構想的程式建立藍圖。<br>
         *2017 年 4 月*
     :::column-end:::
     :::column:::

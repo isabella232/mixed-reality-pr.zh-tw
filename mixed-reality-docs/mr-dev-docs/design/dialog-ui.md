@@ -1,22 +1,23 @@
 ---
 title: 對話
+description: 瞭解對話重迭，以及如何在混合現實應用程式中使用它們。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 354581b5f0c2b63e5fdb7077c0d8cdba4c96c3d3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702600"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847447"
 ---
 # <a name="dialog"></a>對話
 
-![對話](images/MRTK_UX_Dialog.jpg)
+![以 [是] 且沒有任何按鈕顯示在 HoloLens 上的對話方塊重迭螢幕擷取畫面](images/MRTK_UX_Dialog.jpg)
 
-對話方塊控制項是提供內容相關應用程式資訊的 UI 重迭。 而且它們通常會需要使用者執行某種動作。 使用對話方塊來通知使用者重要的資訊，或是在完成動作之前要求確認或其他資訊。
+對話方塊控制項是 UI 重迭，可提供內容相關的應用程式資訊，通常會要求使用者動作。 您可以使用對話方塊來提供使用者重要資訊，以及要求確認或額外資訊，才能完成動作。
 
 <br>
 
@@ -29,16 +30,16 @@ MRTK 提供三種大小的對話方塊控制項，包含一或兩個按鈕選項
 - DialogMedium_192x128. 預製專案：192x128mm
 - DialogLarge_192x192. 預製專案：192x192mm
 
-![對話](images/MRTK_UX_Dialog_Types.jpg)
+![在 HoloLens 上執行的不同大小對話重迭螢幕擷取畫面](images/MRTK_UX_Dialog_Types.jpg)
 
 
-* 如需詳細資料，請參閱 [MRTK 對話方塊](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html) 。
+* 如需詳細資訊，請參閱 [MRTK-對話方塊](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)。
 
 <br>
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

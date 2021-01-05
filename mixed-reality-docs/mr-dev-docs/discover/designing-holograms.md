@@ -6,19 +6,19 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK，混合的現實工具組，全像投影，設計全像投影、學習、範例應用程式、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: bf904b319ed5b452f254b659315d9b531832a4d5
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 2480b5e0b4dca502c746dad6f070226ffa8cd1f9
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002541"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757756"
 ---
 # <a name="the-making-of-designing-holograms"></a>設計全息製作
 
 > [!NOTE]
 > 請在此頁面上，允許小型載入視窗，以將所有酷炫的 Gif 和 embedded 影片全部考慮。
 
-學習如何設計混合的現實可能很困難，特別是在視覺效果的情況下，這不一定會正確轉譯成2D 設計流程。 在 Microsoft，我們已建立可供您下載 HoloLens 2 的免費應用程式，可協助您透過第一手來瞭解混合現實 UX 設計的基本概念。 設計全像影像應用程式的獨特方法是探討混合現實行為、秘訣和建議，以協助您建立自己的吸引人和出色的 HoloLens 應用程式。 從 Microsoft Store 免費下載應用程式，並從 Microsoft 的混合現實設計小組學習！
+學習如何設計混合的現實可能很困難，因為媒體不一定會轉譯成2D 設計流程。 在 Microsoft，我們為 HoloLens 2 建立了免費的應用程式，協助您瞭解混合現實 UX 設計第一手的基本概念。 設計全像影像應用程式的獨特方法是探討混合現實行為、秘訣和建議，以協助您建立自己的吸引人和出色的 HoloLens 應用程式。 從 Microsoft Store 免費下載應用程式，並從 Microsoft 的混合現實設計小組學習！
 
 > [!div class="nextstepaction"]
 > [下載設計全像影像應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
@@ -52,7 +52,7 @@ ms.locfileid: "97002541"
 
 ## <a name="exploring-the-doll-house"></a>探索娃娃房子
 
-娃娃房子是我們在整個應用程式中使用的虛擬環境，這是一個 80 x 60 x 40-cm 微型空間，其中包含大部分房間共通的基本元素，例如牆、燈、傢俱、表格和電視。 娃娃房子是應用程式體驗的主要 protagonist，因此我們需要確定它在任何環境中都能正常運作。 把它想像成一個小型的示範空間，用來視覺化各種混合現實概念。
+娃娃房子是我們在整個應用程式中使用的虛擬環境。 環境是 80 x 60 x 40-cm 的空間，其中包含大部分房間共通的基本元素，例如牆壁、燈、傢俱、表格和電視。 娃娃房子是應用程式體驗的主要 protagonist，因此我們需要確定它在任何環境中都能正常運作。 把它想像成一個小型的示範空間，用來視覺化各種混合現實概念。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Dollhouse-adjustment-behavior-in-the-Designing-Holograms-app/player]
 *Dollhouse 調整行為的影片*
@@ -62,10 +62,10 @@ ms.locfileid: "97002541"
 我們最初的假設是，1:1 示範會很令人驚奇，看起來像是真實的老師。 使用者會看到老師在真實規模中看到的所有內容。 不過，我們會立即發現有幾個問題：
 
 - 大部分的開發人員會在辦公室或房間以外的房間內執行其應用程式，因此無法容納。
-- 顯示是加總的，這表示整個虛擬環境會在使用者的房間上重迭。 這可能會造成兩個數據表混淆，或許是雙 couches 和沒有對齊的牆。
+- 顯示是加總的，這表示整個虛擬環境會在使用者的房間上重迭。 這可能會造成兩個數據表混淆（可能是雙 couches）和沒有對齊的牆。
 - 而最糟的是，所有虛擬環境都受到視野的高度限制。
 
-當我們嘗試迷你的1:10 規模時，結果就是一個很棒的鳥，也就是實際的房間，您可以從任何角度查看所有的東西 最令人驚訝的是，大部分的測試人員發現它更能看到較小的版本，而不是切換回1:1 規模。 因此，我們決定實際報廢1:1 版，並避免需要額外的工作來調整 UI 和應用程式的其他層面。
+當我們嘗試迷你1:10 規模時，結果就是一個很棒的鳥，也就是實際的房間。 您可以同時看到所有從任何角度進入的內容。 最令人驚訝的是，大部分的測試人員發現它更能看到較小的版本，而不是切換回1:1 規模。 因此，我們決定實際報廢1:1 版，並避免需要額外的工作來調整 UI 和應用程式的其他層面。
 
 ![使用1:1 調整規模 ](images/designing-holograms/1-1-scale.png)
  *欄位與 1:1* 級別的視圖模式
@@ -84,7 +84,7 @@ Microsoft 在三藩市有混合實境擷取 studio。 Microsoft 也會將這項�
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Raw-capture-footage-for-the-Designing-Holograms-app/player]
 *Daniel Escudero 的原始素材，從三藩市的混合實境擷取 Studio 中的106攝影機之一。*
 
-此捕捉程式會產生 keyframed 網格、法線和材質，以供進一步的進入生產階段，或是準備好播放作為 h.264 壓縮的檔案。 這些檔案可以匯入 Unity、Unreal、native 和 WebXR，並在 Windows、iOS、Mac、Android、魔術 Leap 和 Playstation VR 上執行。
+此捕捉程式會產生 keyframed 網格、法線和材質，以供進一步的進入生產階段，或是準備好播放作為 h.264 壓縮的檔案。 這些檔案可以匯入 Unity、Unreal、Native 和 WebXR 專案中。 檔案可以在 Windows、iOS、Mac、Android、魔術 Leap 和 Playstation VR 上執行。
 
 <br>
 
@@ -107,7 +107,7 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 
 ### <a name="syncing-animated-objects"></a>同步處理動畫物件
 
-第二個是建立物件的動畫，以與捕捉的移動進行同步處理。 在應用程式的不同部分中，我們會每隔五個畫面匯入特定捕獲的連續 Obj。 然後，Obj 會在場景中以動畫顯示，以確保它們符合捕捉的相對應框架。 它是動畫和 keyframing 的繁瑣程式，但結果很棒，您現在可以看到與非捕捉物件的混合實境擷取互動。
+第二個是建立物件的動畫，以與捕捉的移動進行同步處理。 在應用程式的不同部分中，我們會每隔五個畫面匯入特定捕獲的連續 Obj。 然後，Obj 會在場景中以動畫顯示，以確保它們符合捕捉的相對應框架。 它是動畫處理和 keyframing 的繁瑣程式，但結果很棒。 您現在可以看到與非捕捉物件互動的混合實境擷取。
 
 ![混合實境擷取和 UI 面板之間的同步動畫](images/designing-holograms/synced-objects.gif)
 
@@ -115,11 +115,11 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 
 ### <a name="ui-creative-process"></a>UI 創意流程
 
-當我們開始 ideating UI 設計時，除了傳輸資訊外，我們也想要展示一些魔術以及全息圖案提供的可能性。 只要顯示靜態2D 視窗和文字方塊並不會直接在3D 世界中，也不會顯示許多可能性，因此從一開始，我們決定要從該視窗中移除，並充分利用全像立體空間。
+當我們開始進行 UI 設計時，我們想要示範一些像是「全息」所提供的魔術和可能性。 單純地顯示靜態2D 視窗和文字方塊，並不會直接在3D 世界中。 手中的許多可能性都不會顯示，因此從一開始，我們決定要從該位置移出，並充分利用全像立體空間。
 
-一開始，我們會先將一些粗細新增至面板和圖示，以及文字資訊。 但是，以使用者的身份來看，我看到的是一個文字方塊。 具有影像的文字方塊，但我們不在此。 我們進一步利用混合現實工具組 (MRTK) 著色器。 MRTK 著色器變成一項強大的工具，而且我們已使用其樣板功能，有些可能會將其視為入口網站效果，以將負面深度新增至面板。 這表示，圖示現在會出現在透明面板後方，而不是在文字方塊前面加上專案。 我現在看到的就是使用者，這就是我在現實世界中無法再複寫的內容，而且這就是您開始進行全像攝影的地方。 此外，我也不想要閱讀的使用者，就是在實體世界中這麼多。
+一開始，我們開始將一些粗細新增至面板、圖示和文字資訊。 但是，以使用者的身份來看，我看到的是一個文字方塊。 具有影像的文字方塊，但不存在。 我們進一步利用混合現實工具組 (MRTK) 著色器。 MRTK 著色器變成一項強大的工具，並使用其樣板功能將負面深度新增至面板。 這表示，圖示現在會出現在透明面板後方，而不是在文字方塊前面加上專案。 我現在看到的就是使用者，這就是我在現實世界中無法再複寫的內容，而且這就是您開始進行全像攝影的地方。 此外，我還不太喜歡閱讀的使用者，而是在實體世界中做過許多事。
 
-顯然圖示的運作方式比簡單的文字更好，因此為了提供更強大的指引，我接著開始建立一組動畫物件和虛擬人偶，每個物件都告訴您有關在個別案例中所做的事情，以及其使用方式的一小部分。
+顯然圖示的運作方式比簡單的文字更好，為了提供更強大的指引，我接著開始建立一組動畫物件和虛擬人偶，每個物件都告訴您有關在個別案例中所做的事情，以及其使用方式的一小部分。
 
 ![互動式全息式功能表系統的動畫 GIF](images/designing-holograms/creative-process.gif)
 
@@ -177,11 +177,11 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Martin Wettig" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
-<td style="border-style: none"><b>聖馬丁 Wettig</b><br><i>資深3D 演出者</i><br>當您在設計全像全像是 Microsoft 的混合現實工作室中，有一位資深的3D 演出者在柏林上，會導致3D 藝術和 UI 設計。</td>
+<td style="border-style: none"><b>聖馬丁 Wettig</b><br><i>資深3D 演出者</i><br>聖馬丁在設計全像全像是 Microsoft 的混合現實工作室的其中一位資深3D 演出者的時候，會導致3D 藝術和 UI 設計。</td>
 </tr>
 </table>
 
-很棒的是，「混合的現實設計小組」可讓您在此專案的每個步驟中，將許多人的知識與重要的團隊分享給令人驚喜的 [物件](https://objecttheory.com/) 。 感謝您的熱情，讓您在設計上有出色的關注。
+這項寶貴的感謝，讓您瞭解混合的現實設計小組，以分享更多的知識，以及 [物件理論](https://objecttheory.com/) 上令人驚奇的人，在專案的每個步驟中都是重要的成員。 感謝您的熱情，讓您在設計上有出色的關注。
 
 > [!div class="nextstepaction"]
 > [下載設計全像影像應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)

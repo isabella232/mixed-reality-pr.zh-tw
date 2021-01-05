@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: b65be6082967b49ee9d3c8b97cb0a18f9149a3ca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131952"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725769"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中使用語音
 
-使用您的語音以更快的速度 Windows Mixed Reality —拍攝快速的相片、開啟應用程式，甚至沒有控制器的傳送。 若要輕鬆地輸入，請在混合現實鍵盤上嘗試聽寫模式。 
+您可以使用語音來加快 Windows Mixed Reality 的速度。 拍攝快速的相片、開啟應用程式，甚至是沒有控制器的 teleporting，都只是一個字。 若要輕鬆地輸入，請在混合現實鍵盤上嘗試聽寫模式。 
 
 遇到語音問題嗎？ [取得協助](using-wmr-faq.md#speech-commands-arent-working)
 
@@ -30,13 +30,13 @@ ms.locfileid: "93131952"
 
 ## <a name="see-it-say-it"></a>看到什麼就說什麼
 
-在 Windows Mixed Reality 首頁中，如果您看到單字，通常可以用它做為語音命令。 例如，您只需要說出按鈕的名稱即可選取它。 如果您沒有看到名稱，請將您的移動控制器指向按鈕 (或者，如果您使用的是 Xbox 遊戲台，請將您的注視) ，以找出要說的內容。 
+在 Windows Mixed Reality 首頁中，如果您看到單字，通常可以用它做為語音命令。 例如，您只需要說出按鈕的名稱即可選取它。 如果您沒有看到名稱，請將您的動作控制器指向按鈕，以找出所要說的內容。 針對 Xbox gamepads，請將您的注視放在按鈕上。
 
 ## <a name="general-speech-commands"></a>一般語音命令
 
-在 Windows Mixed Reality 中使用這些都能更快地解決問題。 有些命令會使用注視游標，您會說「選取」來顯示。
+在 Windows Mixed Reality 中使用下列語音命令以加快速度。 有些命令會使用注視游標，您會說「選取」來顯示。
 
-| 若要執行此工作 | 請說這個 |
+| 作法 | 請說這個 |
 | --- | --- |
 | 選取 | 說「選取」以顯示注視游標。 然後，將游標移至您要選取的內容，然後再按一次 [選取]。 |
 | 開啟 [開始] 功能表 | 移至 [開始] |
@@ -54,7 +54,7 @@ ms.locfileid: "93131952"
 
 在3D 物件、全息圖或應用程式視窗中，使用下列命令：
 
-| 若要執行此工作 | 請說這個 |
+| 作法 | 請說這個 |
 | --- | --- |
 | 讓它變得更大 | 大 |
 | 使其變小 | 小 |
@@ -66,7 +66,7 @@ ms.locfileid: "93131952"
 
 使用應用程式視窗或3D 物件注視下列命令：
 
-| 若要執行此工作 | 請說這個 |
+| 作法 | 請說這個 |
 | --- | --- |
 | 關閉應用程式或3D 物件 | 關閉 |
 | 調整 (調整大小或移動) 的內容 | Adjust |
@@ -81,7 +81,7 @@ ms.locfileid: "93131952"
 
 請看一下 [開始] 功能表，以使用下列命令：
 
-| 若要執行此工作 | 請說這個 |
+| 作法 | 請說這個 |
 | --- | --- |
 | 移至 [所有應用程式] 清單 | 所有應用程式 |
 | 開始或所有應用程式時向上或向下移動 | 向上一頁/向下一頁 |
@@ -98,7 +98,7 @@ ms.locfileid: "93131952"
 
 說「嗨 Cortana」，然後使用下列其中一個命令：
 
-| 若要執行此工作 | 請說這個 |
+| 作法 | 請說這個 |
 | --- | --- |
 | 瞭解您可以對 Cortana 的看法 | 我可以說什麼？ |
 | 增加/減少音量 | 開啟/減少音量 |
@@ -120,24 +120,24 @@ ms.locfileid: "93131952"
 
 ## <a name="keyboard-dictation"></a>鍵盤聽寫
 
-只要鍵盤處於作用中狀態，您就可以切換到聽寫模式，以方便輸入。 選取鍵盤上的麥克風（或單純說「開始聽寫」）開始使用。
+只要鍵盤處於作用中狀態，就可以切換到聽寫模式，以方便輸入。 選取鍵盤上的麥克風（或單純說「開始聽寫」）開始使用。
 
 > [!NOTE]
 > Mixed reality 鍵盤僅提供英文版，但您可以使用任何支援的 [Windows Mixed Reality 語言](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)的聽寫。
 
 ### <a name="keyboard-dictation-commands"></a>鍵盤聽寫命令
 
-| 若要執行此工作 | 請說這個 |
+| 作法 | 請說這個 |
 | --- | --- |
 | 關閉鍵盤 | 關閉 |
 | 開始聽寫 | 開始聽寫 |
 | 停止聽寫 | 停止聽寫 |
-| 刪除您剛才聽寫的內容 | 刪除這個 |
+| 刪除您所聽寫的內容 | 刪除這個 |
 | 在 [聽寫] 方塊中選取所有專案 | 全選 |
 
 ### <a name="punctuation"></a>標點符號
 
-您必須說出要使用的標點符號名稱。 比方說，您可能會說： **「嘿，** 您最多可以說 **問號** 」。
+您必須說出要使用的標點符號名稱。 比方說，您可能會說： **「嘿，** 您最多可以說 **問號**」。
 
 以下是您可以使用的標點符號關鍵字：
 
@@ -150,9 +150,9 @@ ms.locfileid: "93131952"
 
 有時候，將電子郵件地址之類的東西搞得很有説明。 比方說，若要聽寫 example@outlook.com ，請說：「e X A M P L e at outlook .com」。
 
-若要停止聽寫，請選取 [ **完成** ]。
+若要停止聽寫，請選取 [ **完成**]。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

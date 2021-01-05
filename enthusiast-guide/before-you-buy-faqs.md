@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 在購買之前，Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、預先銷售、研究、購買
 appliesto:
 - Windows 10
-ms.openlocfilehash: 20a585088c9bea9d01754f78e9934a4022c0e34c
-ms.sourcegitcommit: c7b5790a26472c5a08c959189a574fb15f9046d2
+ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/20/2020
-ms.locfileid: "95002972"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725509"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>購買常見問題之前
 
@@ -21,7 +21,7 @@ ms.locfileid: "95002972"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>我可以在哪裡購買 Windows Mixed Reality ready 的電腦或耳機
 
-**快速解答：** 您可以在核准的當地零售商或從各種零售商（包括 Microsoft Store）線上購買 Windows Mixed Reality ready 的電腦或耳機。 尋找 Windows Mixed Reality ready PC 或線上耳機： <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**快速解答：** 您可以在核准的當地零售商或從不同零售商（包括 Microsoft Store）的線上購買 Windows Mixed Reality ready 的電腦或耳機。 尋找 Windows Mixed Reality ready PC 或線上耳機： <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>我可以在哪裡嘗試 Windows Mixed Reality
 
@@ -51,7 +51,7 @@ ms.locfileid: "95002972"
 
 **快速解答：** Windows Mixed Reality 耳機功能 (追蹤攝影機位於耳機) ，以及 Windows 10 的隨插即用安裝。
 
-**更多詳細資料**： Windows Mixed Reality 提供數個功能，包括簡單的安裝 (不需要外部感應器來追蹤您和控制器) 、您所選擇的耳機可符合您的舒適和價位、具有競爭解決方案的耳機，最後是一種獨特的使用者體驗，其中有提供空間介面，可讓您從 Microsoft Store 使用數以千計的應用程式。
+**更多詳細資料**： Windows Mixed Reality 提供數個功能，包括簡單的安裝 (不需要外部感應器來追蹤您和您的控制器) 、您選擇的耳機可符合您的舒適和價位、具有競爭解決方案的耳機，最後是功能空間介面的獨特使用者體驗，可讓您從 Microsoft Store 使用數以千計的應用程式。
 
 ### <a name="does-mixed-reality-mean-that-inside-out-cameras-are-passthrough-can-you-experience-augmented-reality-in-addition-to-virtual-reality"></a>混合的現實表示內部攝影機是否通過？ 除了虛擬實境之外，您還可以體驗增強的現實
 
@@ -59,11 +59,11 @@ ms.locfileid: "95002972"
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>什麼是內部追蹤追蹤？ 它與外部追蹤或 lighthouse 追蹤有何不同
 
-* **內部追蹤** Windows Mixed Reality 使用內出追蹤。 使用內建的追蹤攝影機內建在耳機中，並在環境中追蹤變更，以便在您四處移動時，判斷與環境相關的耳機位置。
+* **內部追蹤** Windows Mixed Reality 使用內出追蹤。 使用內建的追蹤攝影機內建在耳機中，並追蹤環境中的變更，以根據您四處移動的環境判斷耳機位置。
 
-* **外部追蹤** Oculus、Vive 和其他人使用外部追蹤。  使用外部追蹤時，會由一或多個外部裝置追蹤耳機。 相機 (s) 內建在環境內的這些外部裝置內，用來判斷耳機與環境之間的相對位置。
+* **外部追蹤** Oculus、Vive 和其他人使用外部追蹤。  使用外部追蹤時，會由一或多個外部裝置追蹤耳機。 相機 (s) 內建在環境內的這些外部裝置內，用來根據環境判斷耳機的位置。
 
-若要深入瞭解內部追蹤追蹤，您可以前往： <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system>
+深入瞭解 [內部追蹤](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)。
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>可能會因為相機 FOV 而影響遊戲的播放，追蹤動作控制器
 
@@ -71,7 +71,7 @@ ms.locfileid: "95002972"
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality 與 Samsung 齒輪 VR 有何不同
 
-**快速解答：** 所有 smartphone 型的 VR 產品（包括 Samsung 齒輪 VR 和 Google Daydream）都使用三度自由 (3DOF) 的標頭位置追蹤系統。 以3DOF 為基礎的系統，可讓您 **只** 從虛擬世界中的頸部移動您的頭部。 另一方面，Windows MR (6DOF) head 和控制器定位追蹤系統。 以6DOF 為基礎的系統可讓您在虛擬世界中移動整個主體;因此，您可以從不同的觀點來討論物件並查看它，就像在實體世界中一樣。 Rift 和 Vive 也是以6DOF 為基礎的系統。
+**快速解答：** 所有 smartphone 型的 VR 產品（包括 Samsung 齒輪 VR 和 Google Daydream）都使用三種自由度 (3DOF) 標頭位置追蹤系統。 以3DOF 為基礎的系統，可讓您 **只** 從虛擬世界中的頸部移動您的頭部。 另一方面，Windows MR (6DOF) head 和控制器定位追蹤系統。 以6DOF 為基礎的系統可讓您在虛擬世界中移動整個主體;因此，您可以從不同的觀點來討論物件並查看它，就像在實體世界中一樣。 Rift 和 Vive 也是以6DOF 為基礎的系統。
 
 * 如需3DOF 和6DOF 的詳細資訊，請參閱： <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
 * 請在這裡深入瞭解位置追蹤和自由度 (DOF) ： <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
@@ -81,7 +81,7 @@ ms.locfileid: "95002972"
 <table>
 <tr>
 <th style="width:25%"> Headset </th>
-<th style="width:15%"> 解決方法 </th>
+<th style="width:15%"> 解決方案 </th>
 <th style="width:10%"> 顯示 </th>
 <th style="width:10%"> 重新整理速率 </th>
 <th style="width:10%"> FOV </th>
@@ -96,10 +96,10 @@ ms.locfileid: "95002972"
 <td> Acer AH101 </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 100° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="https://www.acer.com/ac/en/US/content/windows-mixed-reality-home">宏 碁</a> </td>
@@ -109,9 +109,9 @@ ms.locfileid: "95002972"
 <td> Acer OJO 500 </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 100° </td>
-<td> 整合式 + 3.5 mm 插口 </td>
+<td> 整合 + 3.5-mm 插口 </td>
 <td> 內建 </td>
 <td style="text-align: center;">機械</td>
 <td> 秋季2018 </td>
@@ -122,10 +122,10 @@ ms.locfileid: "95002972"
 <td> ASUS HC102 </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 95° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="https://www.asus.com/us/Headset/ASUS-Windows-Mixed-Reality-Headset-HC102/">華碩</a> </td>
@@ -135,10 +135,10 @@ ms.locfileid: "95002972"
 <td> Dell Visor </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="https://www.dell.com/en-us/shop/accessories/apd/536-bbbr?~ck=mn">戴爾</a> </td>
@@ -148,10 +148,10 @@ ms.locfileid: "95002972"
 <td> Fujitsu FMV 耳機 </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="http://pr.fujitsu.com/jp/news/2017/10/17.html">富士通</a> </td>
@@ -161,9 +161,9 @@ ms.locfileid: "95002972"
 <td> HP 回音 </td>
 <td> 4320x2160 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 114° </td>
-<td> 整合式 + 3.5 mm 插口 </td>
+<td> 整合 + 3.5-mm 插口 </td>
 <td> 內建 </td>
 <td style="text-align: center;">軟體</td>
 <td> 春季2019 </td>
@@ -174,10 +174,10 @@ ms.locfileid: "95002972"
 <td> HP VR1000 </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="https://store.hp.com/us/en/pdp/hp-windows-mixed-reality-headset-vr1000-100">惠普</a> </td>
@@ -187,10 +187,10 @@ ms.locfileid: "95002972"
 <td> Lenovo Explorer </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="https://www.lenovo.com/us/en/virtual-reality-and-smart-devices/virtual-and-augmented-reality/lenovo-explorer/Lenovo-Explorer/p/G10NREAG0A2">聯想</a> </td>
@@ -200,10 +200,10 @@ ms.locfileid: "95002972"
 <td> Medion ERAZER MR X1000 </td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="https://www.medion.com/be/shop/monitoren-medion-erazer-mr-x1000-vr-headset-controllers-30023616a1.html">Medion</a> </td>
@@ -213,10 +213,10 @@ ms.locfileid: "95002972"
 <td> Samsung HMD 電影對白</td>
 <td> 2880x1600 </td>
 <td> AMOLED </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 110° </td>
 <td> Integrated </td>
-<td> None </td>
+<td> 無 </td>
 <td style="text-align: center;">機械</td>
 <td> 秋季2017 </td>
 <td> <a href="https://www.samsung.com/us/computing/hmd/windows-mixed-reality/xe800zaa-hc1us-xe800zaa-hc1us/?redir=windows%20mixed%20reality">三星</a> </td>
@@ -226,7 +226,7 @@ ms.locfileid: "95002972"
 <td> Samsung HMD Odyssey+</td>
 <td> 2880x1600 </td>
 <td> AMOLED </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 110° </td>
 <td> Integrated </td>
 <td> 內建 </td>
@@ -239,10 +239,10 @@ ms.locfileid: "95002972"
 <td> 3Glasses Blubur S2</td>
 <td> 2880x1440 </td>
 <td> 液晶 </td>
-<td> 最高90Hz </td>
+<td> 最高 90 Hz </td>
 <td> 105° </td>
-<td> 3.5 mm 插座 </td>
-<td> None </td>
+<td> 3.5-mm 插口 </td>
+<td> 無 </td>
 <td style="text-align: center;">軟體</td>
 <td> 秋季2017 </td>
 <td> <a href="http://3glasses.com/goods.action?gid=30">3Glasses</a> </td>
@@ -265,7 +265,7 @@ ms.locfileid: "95002972"
 
 ### <a name="will-there-be-issues-with-motion-controller-tracking-if-multiple-windows-mixed-reality-headsets-are-in-close-proximity"></a>如果有多個 Windows Mixed Reality 耳機處於近距離，移動控制器追蹤是否有問題？
 
-**快速解答：** 我們發現沒有與移動控制器的干擾，但是您應該為使用者提供足夠的空間，以便在混合現實中獲得最佳體驗-也就是10英尺 x 10 英尺。
+**快速解答：** 我們發現沒有干擾運動控制器，但是您應該為使用者提供足夠的空間來獲得混合現實的最佳體驗，例如10英尺 x 10 英尺。
 
 ### <a name="is-there-boundary-chaperone-or-guardian-system-in-windows-mixed-reality"></a>Windows Mixed Reality 中是否有界限、chaperone 或監護人系統？
 
@@ -273,13 +273,13 @@ ms.locfileid: "95002972"
 
 ### <a name="do-windows-mixed-reality-headsets-work-in-the-dark"></a>Windows Mixed Reality 耳機是否能在深？
 
-**快速解答：** 理想的一般規則是，如果您因為太暗而無法安心地四處移動，則追蹤系統也會在該環境中有很長的時間運作。
+**快速解答：** 理想的一般規則是，如果您因為太暗而無法安心地四處移動，則追蹤系統在該環境中也會有很長的時間在運作。
 
 ### <a name="what-is-the-cable-length-of-the-windows-mixed-reality-headset"></a>Windows Mixed Reality 耳機的纜線長度為何？
 
 **快速解答：** 通常 Windows Mixed Reality 耳機的纜線長度是4計量，但取決於耳機。 如需詳細資訊，請參閱： <https://www.microsoft.com/en-us/store/collections/vrandmixedrealityheadsets>
 
-### <a name="can-i-use-an-usb--hdmi-extension-cables-with-windows-mixed-reality-headsets"></a>我可以使用 USB/HDMI 擴充纜線搭配 Windows Mixed Reality 耳機嗎？
+### <a name="can-i-use-a-usb--hdmi-extension-cable-with-windows-mixed-reality-headsets"></a>我可以使用 USB/HDMI 擴充纜線搭配 Windows Mixed Reality 耳機嗎？
 
 **快速解答：** 我們所設計的 Windows Mixed Reality 不需延長纜線即可運作。 不支援使用具有混合現實耳機的延伸線，而且可能會影響您的體驗。
 
@@ -322,7 +322,7 @@ ms.locfileid: "95002972"
 
 **快速解答：** 如果您的電腦沒有內建的藍牙支援，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。
 
-### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>控制器是否可搭配藍牙3.1 使用，或是否需要藍牙4.0？
+### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>控制器是否可與藍牙3.1 搭配運作，或需要藍牙4.0？
 
 **快速解答：** Windows Mixed Reality 的最低支援規格為藍牙4.0。 如果您的電腦具有藍牙3.1，您將不會遭到封鎖而無法使用控制器，但最佳體驗是在 BT 4.0 上。 下載並執行 [混合實境入口](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) ，以查看您的電腦是否已 WMR 就緒。
 
@@ -354,11 +354,11 @@ ms.locfileid: "95002972"
 
 ### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>我可以在 Windows Mixed Reality 耳機內看到我的鍵盤嗎？
 
-**快速解答：** 您無法在耳機內看到您的實體鍵盤，但您可以使用我們的軟體鍵盤。 此外，許多 Windows Mixed Reality 耳機都有 front 取決顯示器，所以您可以在工作時翻轉耳機。 更多詳細資料： <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
+**快速解答：** 您無法從耳機看到您的實體鍵盤，但您可以使用我們的軟體鍵盤。 此外，許多 Windows Mixed Reality 耳機都有 front 取決顯示器，所以您可以在工作時翻轉耳機。 更多詳細資料： <https://www.microsoft.com/en-us/windows/windows-mixed-reality#specs>
 
 ### <a name="what-games-require-a-gamepad-as-opposed-to-motion-controllers"></a>哪些遊戲需要遊戲，而不是運動控制器？
 
-**快速解答：** 我們預期最大的 Windows Mixed Reality 應用程式會選擇支援移動控制器，但這不是必要條件。 移動控制器支援是由開發人員所提供。 開發人員決定要在遊戲中支援的輸入模式。 您可以在存放區中查看特定遊戲或應用程式產品詳細資料頁面支援的控制器類型。
+**快速解答：** 我們預期最大的 Windows Mixed Reality 應用程式會選擇支援運動控制器，但它並不是必要的需求。 移動控制器支援是由開發人員所提供。 開發人員決定要在遊戲中支援的輸入模式。 您可以在存放區中查看特定遊戲或應用程式產品詳細資料頁面支援的控制器類型。
 
 ### <a name="if-i-am-using-xbox-game-streaming-can-i-use-my-xbox-controller"></a>如果我使用 Xbox 遊戲串流，我可以使用 Xbox 控制器嗎？
 
@@ -368,7 +368,7 @@ ms.locfileid: "95002972"
 
 **快速解答：** 是的，即使您沒有太多空間，Windows Mixed Reality 也可以運作。 您可以在安裝期間選取「辦公桌規模」體驗來設定此設定。
 
-## <a name="content"></a>Content
+## <a name="content"></a>內容
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>哪些遊戲和應用程式在 Windows Mixed Reality 上執行？
 
@@ -386,7 +386,7 @@ ms.locfileid: "95002972"
 
 ### <a name="are-the-minimum-specs-for-steamvr-higher-than-a-windows-mixed-reality-ultra-pc"></a>SteamVR 的最小規格是否高於 Windows Mixed Reality Ultra 電腦？
 
-**快速解答：** 您可以使用 Windows Mixed Reality 的 Ultra PC 需求來執行 SteamVR。 不過，我們建議您在具有 GTX 1070 視訊卡的電腦上執行 SteamVR Preview (或更好的) 和 Intel 核心的 i7 處理器。 我們將繼續查看意見反應，並將效能優化，以在未來的更新中支援額外的系統組態。 如果您不符合這些較高的規格，電腦將不會遭到封鎖而無法執行 Windows Mixed Reality SteamVR，不過這樣會影響整體體驗的效能和品質。
+**快速解答：** 您可以使用 Windows Mixed Reality 的 Ultra PC 需求來執行 SteamVR。 不過，我們建議您在具有 GTX 1070 視訊卡的電腦上執行 SteamVR Preview (或更好的) 和 Intel 核心的 i7 處理器。 我們將繼續查看意見反應並將效能優化，以在未來的更新中支援其他系統設定。 如果您不符合這些較高的規格，電腦將不會遭到封鎖而無法執行 Windows Mixed Reality SteamVR，不過這樣會影響整體體驗的效能和品質。
 
 ### <a name="are-all-steam-vr-games-be-supported"></a>是否支援所有的串流 VR 遊戲？
 

@@ -1,6 +1,6 @@
 ---
 title: 學習混合實境
-description: 說明如何執行學習混合實境應用程式，此應用程式會教您如何使用和流覽 Windows Mixed Reality。
+description: 說明如何執行學習混合實境應用程式，以及如何流覽 Windows Mixed Reality。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，教學課程，開始使用
 appliesto:
 - Windows 10
-ms.openlocfilehash: be85b88f356532df736d69f8319ca6a7337ae824
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93132062"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97726049"
 ---
 # <a name="learn-mixed-reality"></a>學習混合實境
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>第一次執行學習體驗
 
-完成設定之後，混合實境入口應用程式應該會在名為 **學習混合實境** 的 HMD 中啟動沉浸式體驗，該體驗將教您如何使用 Windows Mixed Reality。 在 [載入] 畫面的 gem 中看看，開始使用。 您應該會在耳機中聽到 Cortana 的語音，以提供接下來要做什麼的指示。
+完成設定之後，混合實境入口應用程式應該會在名為 **學習混合實境** 的 HMD 中啟動沉浸式體驗。 這種沉浸式體驗將告訴您如何使用 Windows Mixed Reality。 在 [載入] 畫面的 gem 中看看，開始使用。 您應該會在耳機中聽到 Cortana 的語音，以提供接下來要做什麼的指示。
 
 ![學習混合實境](images/file-learnmixedrealitystart.png)
 
-## <a name="re-run-the-learning-experience"></a>重新執行學習體驗
+## <a name="rerun-the-learning-experience"></a>重新執行學習體驗
 
-學習混合實境是應用程式。 您可以隨時從 [混合實境首頁](your-mixed-reality-home.md) 內的 [開始] 功能表啟動應用程式。 使用您的動作控制器或鍵盤：
+學習混合實境是應用程式。 您可以隨時從 [混合實境首頁](your-mixed-reality-home.md) 中的 [開始] 功能表啟動應用程式。 使用您的動作控制器或鍵盤：
 
 ### <a name="use-your-motion-controllers"></a>使用您的動作控制器
 
@@ -51,7 +51,7 @@ ms.locfileid: "93132062"
 
 直接按混合實境入口應用程式底部的 **播放** 圖示。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [安裝疑難排解](installation_errors.md)
 * [疑難排解設定](wmr-setup-faq.md)

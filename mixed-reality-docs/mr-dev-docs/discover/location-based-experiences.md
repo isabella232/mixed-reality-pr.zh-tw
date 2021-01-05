@@ -6,18 +6,18 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 混合的現實、vr、lbe、位置、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、硬體、HoloLens、多玩家、雲端服務、azure
-ms.openlocfilehash: b082153d3d32b2ecee1eb4430cab008819d50ba3
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 323981d49c99f5cb175b71645851496bfa1f268c
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702094"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757826"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality 的位置型娛樂
 
-在過去幾年來，我們在以位置為基礎的娛樂類別中目睹了大量的成長和創新。 傳統的場地（例如主題公園和 theatres）已開始提供沉浸式、多玩家體驗，作為現有乘車點和安裝的免費體驗。 新的操作員和場地為 masses 帶來了獨特的多 sensorial、多玩家體驗。 所有這些經驗都會將信封推播到混合現實的可能原因。
+在過去幾年來，我們在以位置為基礎的娛樂類別中看到大量的成長和創新。 傳統的場地（例如主題公園和劇院）已開始提供沉浸式、多玩家體驗，作為現有乘車點和安裝的免費體驗。 新的操作員和場地為 masses 帶來了獨特的多 sensorial、多玩家體驗。 所有這些經驗都會將信封推播到混合現實的可能原因。
 
-本檔是在以位置為基礎的娛樂類別中開始使用 Windows Mixed Reality 的指南。 下列指導方針可能還適用于超越娛樂的位置型體驗，例如訓練、產品設計或其他使用案例。
+本檔是在以位置為基礎的娛樂類別中開始使用 Windows Mixed Reality 的指南。 下列指導方針可能還適用于除了訓練、產品設計和其他使用案例以外的位置型體驗。
 
 ## <a name="engineering-faq"></a>工程常見問題
 
@@ -27,7 +27,7 @@ ms.locfileid: "94702094"
 
 答： Microsoft 及其 OEM 合作夥伴提供了一套具吸引力的裝置組合，可根據您的需求進行選擇。  
 
-如果您為客戶提供的體驗需要虛擬實境耳機，則 HP、Samsung 和 Acer 的下列市場耳機都很適合。 每個耳機都有自己的差異化屬性。 下列各項的詳細資料。
+如果您為客戶提供的體驗需要虛擬實境耳機，HP、Samsung 和 Acer 的市場耳機很適合。 每個耳機都有自己的差異化屬性。 下列各項的詳細資料。
 
 HP 回音： [詳細資料](https://hp.com/go/Reverbpro)
 
@@ -35,11 +35,11 @@ Samsung 電影對白 +： [詳細資料](https://www.samsung.com/us/computing/hm
 
 Acer： [詳細資料](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
 
-如果您的地點擅長於混合或增強的現實中，需要使用「立即使用」耳機，您可以購買 Microsoft HoloLens 2 (現在開啟，以取得) 的訂購興趣。  
+如果您的地點是以混合或增強的現實體驗來學習，請查看 Microsoft HoloLens 2。  
 
 HoloLens 2： [預先訂購的興趣](https://www.microsoft.com//hololens/buy)
 
-如果您要試驗的體驗需要先進的電腦視覺、語音和內文追蹤，您可能會發現 Azure Kinect DK 符合您的需求。  
+如果您想要試驗使用先進的電腦視覺、語音和內文追蹤的體驗，Azure Kinect DK 相當適合。  
 
 Azure Kinect： [詳細資料](https://azure.microsoft.com//services/kinect-dk/)
 
@@ -56,9 +56,9 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 >[!NOTE]
 >這項功能需要版本2000.19061.1011.0 或更高版本。  
 
-您可能會發現您需要更多的混合實境入口自訂，而不是透過應用程式，將應用程式部署到 kiosk 或自訂體驗。 混合實境入口最新的7月更新支援數個可透過設定檔執行的 advanced settings，以執行下列動作：  
+您可能會發現您需要更多的混合實境入口自訂，而不是透過應用程式，將應用程式部署到 kiosk 或自訂體驗。 混合實境入口最新的7月更新支援數個可透過設定檔設定的 advanced settings：  
 
-允許失敗的系統檢查–安裝程式通常會先檢查電腦是否與 Windows Mixed Reality 相容，再完成安裝程式。 如果發生相容性問題，略過這可能會導致 Windows Mixed Reality 嘗試執行時發生問題。  
+允許失敗的系統檢查–安裝程式通常會先檢查電腦是否與 Windows Mixed Reality 相容，再完成安裝程式。 如果發生相容性問題，略過相容性檢查可能會在嘗試執行 Windows Mixed Reality 時發生問題。  
 
 略過裝置附屬應用程式– DCA 提供製造商提供的耳機專屬設定步驟，並允許更新耳機的固件。  
 
@@ -68,13 +68,13 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 以全螢幕顯示預覽–混合實境入口預設為在使用耳機時，于桌上型電腦的全螢幕中顯示耳機預覽。  
 
-為您隱藏側邊面板的新資訊-這可防止您在啟動混合實境入口時，將新的從面板展開。  
+隱藏側邊面板的新狀態-防止新的面板在啟動混合實境入口時展開。  
 
 #### <a name="how-to-configure"></a>如何設定：  
 
 若要設定這些設定中的任何一項，您必須在此目錄下建立名為 _UserConfig.js_ 的檔案： _$env \\ ： localappdata\packages\ Microsoft.MixedReality.Portal_8wekyb3d8bbwe \localstate_
 
-對於大部分的使用者，這看起來會像 _C:\Users \<username> \Appdata\local\packages\ microsoft.mixedreality.portal_8wekyb3d8bbwe \localstate \\_
+對大部分的使用者而言，這看起來會像這樣： _C:\Users \<username> \Appdata\local\packages\ microsoft.mixedreality.portal_8wekyb3d8bbwe \localstate \\_
 
 針對您想要啟用的任何上述設定，JSON 檔案的下列內容應設定為 "true"：  
 
@@ -100,16 +100,16 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 答：設定 playspace 的方式應該與取用者設定體驗一樣。 房間設定程式也可讓您定義您的房間界線。 您可以在 [這裡](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)閱讀更多有關設定空間界限的詳細資料。
 
-如同上述檔中所述，最大合理的單一座標 playspace 大約是5mx5m。 如果您想要有更大的區域，您可以在 Windows 全像 API 堆疊中使用空間錨點功能。 使用此 API 將需要在您所產生的體驗中進行自訂工程。  
+如同上述檔中所述，最大合理的單一座標 playspace 大約是5mx5m。 如果您想要有更大的區域，您可以在 Windows 全像 API 堆疊中使用空間錨點功能。 使用此 API 時，您將需要在所產生的體驗中進行自訂工程。  
 
 您可以在 [這裡](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems)閱讀更多有關如何將內容優化以取得不同空間大小的詳細資料。
  
 
-**問：我的空間太大，當我嘗試設定具有界限的長期體驗時遇到錯誤。設定我的大型自由漫遊體驗有什麼作用？**
+**問：我的空間太大，當我嘗試設定具有界限的長期體驗時遇到錯誤。我該怎麼做才能設定我的大型自由漫遊體驗？**
 
-答：若要設定比 ~ 18x18ft 更大的空間，您將無法使用系統提供的界限體驗。  界限系統依賴單一固定座標「錨點」，這可能會在使用者離中央階段錨點太遠時變得不穩定。 
+答：若要設定比 ~ 18x18ft 更大的空間，您無法使用系統提供的界限體驗。  界限系統依賴單一固定座標「錨點」，當使用者距離中央階段錨點太遠時，這可能會變得不穩定。 
 
-相反地，您可以設定「固定」模式，這樣將不會顯示界限或設定階段界限或 playspace。  然後，您必須在應用程式內設定多個空間錨點，以參考實體界限區域。 
+您可以設定「固定」模式，而不會顯示界限或設定階段界限或 playspace。  您必須在應用程式內設定多個空間錨點，以參考實體界限區域。 
 
 應用程式開發人員負責顯示必要的保護措施，讓使用者不會與實體周圍發生衝突。  這些可能是在體驗或自訂遊戲界限視覺效果中的數位牆。 
 
@@ -123,8 +123,8 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 **問：我在的地點部署了多玩家體驗。Windows Mixed Reality 是否支援？**
 
-答：如果您加入宣告 Windows 20H1 或更新版本的組建 (透過我們的測試人員 [計畫](https://docs.microsoft.com/windows-insider/at-home/get-started)) 您可以存取新的介面來進行地圖共用。 這項新功能可透過 Windows 裝置入口網站的 [ [對應管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) ] 介面使用。 若要使用此工具，請遵循下列步驟：
-* 請確定您選擇20H1 或更新 (版本，從2019年9月起，這表示使用我們的 Insider 計畫) 
+答：如果您透過我們的測試人員計畫加入宣告 Windows 20H1 或更新版本的組建，您可以存取地圖共用的新介面。 這項新功能可透過 Windows 裝置入口網站的 [ [對應管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) ] 介面使用。 若要使用此工具，請依照下列步驟執行：
+* 請確定您加入宣告20H1 或更新版本-2019 年9月之後，這表示使用我們的測試人員計畫
 * 使用這些[指示](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop)啟用 WINDOWS 裝置入口網站 (WDP) 
 * 插入您想要從 HMD 下載現有對應或匯入新對應的 Windows Mixed Reality
 * 使用 [設定] 畫面中提供的 URL，在您選擇的瀏覽器中流覽至 WDP。
@@ -136,7 +136,6 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 > [!NOTE] 
 > 先前，您可以使用空間資料封裝工具，不過，該工具最初是以不受支援的形式發行，而且現在已正式淘汰，且不再于20H1 運作。 相反地，請使用如上所述的收件匣 [對應管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) 工具。 
 
-  
 ### <a name="tracking"></a>跟蹤
 
 問： Windows Mixed Reality 耳機中的追蹤技術如何運作？  
@@ -153,11 +152,11 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 答：下列做法有助於取得更可靠的追蹤磁片區：  
 
-在多個位置重迭的房間內提供各種功能，可協助追蹤系統取得穩固的鎖定。 請考慮隨機油漆 splatters 和影線，而不是使用實線輪廓樣式線條。 
+在多個位置重迭的房間內提供不同的功能，可協助追蹤系統取得穩固的鎖定。 請考慮隨機油漆 splatters 和影線，而不是使用實線輪廓樣式線條。 
 
-盡可能將您區域中的燈光動態範圍降至最低。 混合現實 Hmd 上的追蹤攝影機並非 HDR，而且 AGC (自動取得) 和 AEC (自動) 公開，以便處理不同的光源。 視 surface light、模式和對比的分佈而定，AGC 或 AEC 可能會讓您成為最大的白色或黑色房間，讓您可以將可能是相對於「色彩」的功能沖蝕。 如果您正嘗試將內部圖片放在具有亮日光背後的外部視窗前方，然後調整曝光，讓您可以在外部看到詳細資料，則內部的所有專案都是 underexposed 和黑色。 或者，如果是在內部進行設定，則外部的所有專案現在都是 overexposed，而且全部都是白色。  
+盡可能將您區域中的燈光動態範圍降至最低。 混合現實 Hmd 上的追蹤攝影機不是 HDR，而且 AGC (自動取得) 和 AEC (自動曝光，) 處理不同的光源。 視 surface light、模式和對比的分佈而定，AGC 或 AEC 可能會讓您成為最大的白色或黑色房間，這可能會讓您的功能更有可能與「色彩」相反。 如果您想要將內部圖片放在具有亮日光背後的外部視窗前方，然後調整曝光，讓您可以在外部看到詳細資料，則內部的所有專案都是 underexposed 和黑色。 或者，如果是在內部進行設定，則外部的所有專案現在都是 overexposed，而且全部都是白色。  
 
-在房間內的聚光燈 (甚至是) 的額外負荷，也就是如果追蹤攝影機有時可能會原因，這會造成追蹤攝影機的 AEC/AGC 混淆。 平面/漫射光源有助於。  
+在房間內的聚光燈 (甚至是) 的額外負荷，如果追蹤攝影機有時可能會原因，這會使追蹤攝影機的 AEC/AGC 混淆。 平面/漫射光源有助於。  
 
 ### <a name="mixed-reality-cloud-services-and-azure"></a>混合現實雲端服務與 AZURE 
 
@@ -167,7 +166,7 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 遠端裝置部署 & 管理 
 
-即時現場分析 
+Real-Time 現場分析 
 
 智慧型適應性的 LBE 遊戲 
 
@@ -193,14 +192,14 @@ LBE 保留與預約系統
 
 ### <a name="support-and-community"></a>支援和團體  
 
-以下是一些實用的資源，可讓您參與小組的主題專家、取得疑難排解支援，以及提供給更廣泛的混合現實開發小組。  
+我們有幾個實用的資源，可協助您與小組的主題專家交流、取得疑難排解支援，以及對更廣大的混合現實開發人員群體貢獻。  
 
 如果您遇到任何公開發行功能的問題，請使用意見反應中樞提出錯誤。如需指引，請參閱此 [頁面](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback)。
 
-如需 WMR 的其他疑難排解協助，請 [提出支援要求](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782)以與客戶支援小組聯繫。
+如需 WMR 的其他疑難排解協助，請向我們的客戶支援小組 [提出支援要求](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) 。
 
-加入我們的 HoloDevelopers 時差頻道，與開發人員參與團隊的混合現實和主題專家： [aka.ms/holodevelopers](https://aka.ms/holodevelopers)
+加入我們的 HoloDevelopers 時差頻道，與混合現實開發人員和主題專家互動： [aka.ms/holodevelopers](https://aka.ms/holodevelopers)
 
-Twitter：遵循我們的混合現實開發人員關係團隊，取得新聞、活動和更新 @MxdRealityDev 
+Twitter：遵循我們的混合現實開發人員關係小組來取得新聞、活動和更新 @MxdRealityDev 
 
 如果您一直在三藩市或周圍，在 Microsoft Reactor 一律會發生什麼事。 您可以在 [這裡](https://developer.microsoft.com//reactor/Location/San%20Francisco)看到我們的活動行事曆。

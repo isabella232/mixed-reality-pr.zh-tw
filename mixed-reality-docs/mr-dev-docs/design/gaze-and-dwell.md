@@ -1,29 +1,29 @@
 ---
 title: 目光和停駐
-description: " (眼睛/頭部) 注視和停留輸入模型的一般總覽"
+description: " (眼睛/前端) 注視和停留輸入模型的一般總覽。"
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: d47401b65f7d62e1fe59655c42efe72ac68acfc6
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702194"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847337"
 ---
 # <a name="gaze-and-dwell"></a>目光和停駐
 
 當手上拿著工具和組件時，手勢可以很繁瑣或不可能進行。
 在某些內容中，語音命令也可能不可靠，例如在過高的情況下。
 「注視」和「停留」提供了一種熟悉且簡單的主要機制，可讓您在 HoloLens 上使用並無人參與。
-此外，「注視」和「停留」是一項絕佳的回溯，與操作環境中的雜訊干擾或無回應條件無關。
+此外，「注視」和「停留」是很棒的回復，與操作環境中的雜訊干擾或無回應條件無關。
 我們將看看兩種不同的眼睛 _和停留_： [前端和停留](gaze-and-dwell-head.md) ，以及 [眼睛和停留](gaze-and-dwell-eyes.md)。
 
 ## <a name="scenarios"></a>案例
 
-當某人的手中有其他工作忙碌的情況下，看看並停留擅長，而語音不是100% 可靠，或因為環境或社交條件約束而無法使用。
+當某人的手中有其他工作忙碌的情況下，看看並停留擅長，因為環境或社交條件約束，所以語音不是100% 可靠或無法使用。
 穿戴 HoloLens 的人員在修理汽車引擎時覆疊參考資訊就是個不錯的範例。
 他們的雙手忙著拿起工具，或在靠向引擎室時支撐其身體。
 車庫空間很吵雜，充斥著工具的碰撞和唧唧聲，讓語音命令變得難以使用。
@@ -63,7 +63,8 @@ ms.locfileid: "94702194"
 
 ---
 
- ## <a name="see-also"></a>另請參閱
+ ## <a name="see-also"></a>請參閱
+
 * [眼動式互動](eye-gaze-interaction.md)
 * [HoloLens 2 的眼球追蹤](eye-tracking.md)
 * [目光和行動](gaze-and-commit.md)

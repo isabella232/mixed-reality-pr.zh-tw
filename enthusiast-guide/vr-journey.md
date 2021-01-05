@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: 9426a85611cf53a349ca5bc8f3727ee8a784940e
-ms.sourcegitcommit: a129039d8ed228ed0305aa312006cadf403f0831
+ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/23/2020
-ms.locfileid: "95417202"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725705"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -23,7 +23,11 @@ ms.locfileid: "95417202"
 
 ### <a name="1-before-you-buy"></a>1. 購買之前
 
-您的電腦必須處理您所購買的 VR 硬體，才能獲得最佳的設定和使用體驗。 在某些情況下，您可能需要訂購額外的 [介面卡或硬體](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。本節將逐步引導您完成與虛擬實境硬體相關的最小電腦需求、相容性檢查和常見問題。
+您的電腦必須處理您所購買的 VR 硬體，才能獲得最佳的設定和使用體驗。 在某些情況下，您可能需要訂購額外的 [介面卡或硬體](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。 本節將逐步引導您：
+
+* 最小電腦需求
+* 相容性檢查
+* 與虛擬實境硬體相關的常見問題
 
 <br>
 
@@ -48,7 +52,11 @@ ms.locfileid: "95417202"
 
 ### <a name="3-using-windows-mixed-reality"></a>3. 使用 Windows Mixed Reality
 
-Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。 在本節結束時，您將熟悉如何流覽虛擬 home 環境、使用控制器和語音作為輸入，以及整合服務與應用程式，例如 SteamVR 和 WebVR。
+Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可供使用。 在本節結尾處，您將會很熟悉：
+
+* 流覽虛擬 home 環境
+* 使用控制器和語音作為輸入
+* 整合服務與應用程式，例如 SteamVR 和 WebVR。
 
 <br>
 
@@ -57,7 +65,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。
 | [學習混合實境](learn-mixed-reality.md) | 瞭解如何使用您的注視、語音、控制器和鍵盤/滑鼠輸入 |
 | [流覽 Windows Mixed Reality 首頁](your-mixed-reality-home.md) | 探索 Windows Mixed Reality 首頁的虛擬環境  |
 | [使用控制器](controllers-in-wmr.md) | 設定、瞭解及使用您的動作控制器 |
-| [使用語音輸入](using-speech-in-wmr.md) | 熟悉各種可與3D 物件、應用程式行、[開始] 功能表和 Cortana 互動的聲音命令 |
+| [使用語音輸入](using-speech-in-wmr.md) | 熟悉可與3D 物件、應用程式行、[開始] 功能表和 Cortana 互動的不同語音命令 |
 
 > [!NOTE]
 > 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)**。
@@ -81,9 +89,9 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都提供各種功能和服務。
  
 * [一般常見問題](troubleshooting-windows-mixed-reality.md) 
 
-如果您找不到想要的資訊，我們在 [ **疑難排解常見問題** ] 區段中有一份詳盡的主題特有的常見問題檔，其中涵蓋從安裝和錯誤碼一直到效能和耳機顯示的一切。 如果您想要深入瞭解 VR 中特定功能的運作方式，請參閱 [動作控制器](controllers-in-wmr.md) 和 [內部追蹤](tracking-system.md) 運作方式的相關文章。
+如果找不到您要尋找的內容，我們在 **疑難排解常見問題的** 章節中有一份詳盡的主題特有的常見問題檔，涵蓋了所有從安裝和錯誤碼一直到效能和耳機顯示的內容。 您可以在有關 [動作控制器](controllers-in-wmr.md) 和 [內部追蹤](tracking-system.md) 運作方式的文章中，深入瞭解特定功能的運作方式。
 
-針對新問題和 bug，我們一律會 lookout，因此如果您遇到未記載的任何內容，請在 [這裡傳送意見](filing-feedback.md)反應給我們。
+我們一直都在 lookout 新的問題和 bug，所以如果您遇到未記載的任何問題，請傳送 [意見](filing-feedback.md)反應給我們。
 
 > [!NOTE]
 > 您可以在 [這裡](mixed-reality-software.md)找到完整的 Windows Mixed Reality 發行歷程記錄。

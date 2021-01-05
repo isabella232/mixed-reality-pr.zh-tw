@@ -6,16 +6,18 @@ ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
 keywords: 混合的現實、手、運動控制器、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: e931e5ec11548d9aab0d1dd7f8921dbc7554abab
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 1dffdd5f3471993dfdb5e504e4c5b87ec0bfef7d
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702154"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847320"
 ---
 # <a name="hands-and-motion-controllers"></a>手部與運動控制器
+
 ## <a name="scenarios"></a>案例
-如果您在閱讀 [互動總覽](interaction-fundamentals.md)之後選擇採用此互動模型，表示您正在開發應用程式，要求使用者使用兩次手與全像全球互動。 您的應用程式即將達成在虛擬和實體之間移除界限的目標。
+
+閱讀 [互動總覽](interaction-fundamentals.md)之後，您可以選擇手和移動控制器互動模型。 這表示您要開發一個應用程式，要求使用者使用兩次手與全像全球互動。 您的應用程式即將達成在虛擬和實體之間移除界限的目標。
 
 某些特定案例可能是：
 * 為資訊工作者提供具有 UI 能供性的 2D 虛擬畫面，以顯示及控制內容
@@ -32,19 +34,19 @@ ms.locfileid: "94702154"
 
 :::row:::
     :::column:::
-       [![手部直接操作](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
+       [![用手直接操作](images/hands-and-controllers-direct-manipulation.jpg)](direct-manipulation.md)<br>
        ### <a name="direct-manipulation-with-handsbr"></a>[手部直接操作](direct-manipulation.md)<br>
-       這是運用手的強大功能，讓使用者能夠直接觸及和操作全像投影。 藉由運用每日使用經驗並提供適當的視覺 affordances，使用者就能夠使用相同的方式來操作真實世界的物件，以與虛擬化物件互動。
+       運用使用者可用來觸控和操作全像的功能的樣式。 藉由使用每日體驗並提供適當的視覺 affordances，使用者就可以使用相同的方式來操作真實世界的物件，以與虛擬使用者互動。
     :::column-end:::
     :::column:::
-       [![手部指向和行動](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
+       [![用手指向並認可](images/hands-and-controllers-point-and-commit.jpg)](point-and-commit.md)<br>
         ### <a name="point-and-commit-with-handsbr"></a>[手部指向和行動](point-and-commit.md)<br>
         這種樣式可讓使用者在距離中與全像影像互動。 它可讓使用者充分利用環境。 使用者可以在任何地方放置全像位置，然後從任何距離進行存取。 用來控制和操作2D 和3D 全像投影的精神模型和筆勢，與直接操作的高度同步。
     :::column-end:::
     :::column:::
        [![運動控制器](images/hands-and-controllers-motion-controllers.jpg)](motion-controllers.md)<br>
        ### <a name="motion-controllersbr"></a>[運動控制器](motion-controllers.md)<br>
-       移動控制器是一種工具，可在使用其中一種或兩種方式時，跨大量距離提供精確的互動，以擴充使用者的實體功能。 這些硬體配件提供許多常用互動的快捷方式，並針對各種不同的動作提供 surefooted、tactile 的意見反應。 目前，移動控制器僅適用于 Windows Mixed Reality (WMR) 案例。 
+       移動控制器會擴充使用者的實體功能，並在使用一或兩個區域時，以精確的方式進行互動。 這些硬體配件提供許多常用互動的快捷方式，並針對各種動作提供 footed、tactile 的意見反應。 目前，移動控制器僅適用于 Windows Mixed Reality (WMR) 案例。 
     :::column-end:::
 :::row-end:::
 

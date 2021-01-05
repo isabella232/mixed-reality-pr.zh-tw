@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: shell、os、platform、cliff 房子、房屋、home、環境、開始、開始功能表、首頁功能表、釘選、應用程式、啟動應用程式、放置應用程式、傳送、移動、流覽、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: 590e52de7caacc515e703da19e9efdc0a2b9c535
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703444"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757686"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>瀏覽 Windows Mixed Reality 住家
 
-就像 Windows 電腦體驗從桌面開始一樣，Windows Mixed Reality 從首頁開始。 Windows Mixed Reality home 利用我們固有的能力來瞭解和流覽3D 地點。 使用 HoloLens，您的家庭是您的實體空間。 有了沉浸式耳機，您的家庭就是虛擬場所。
+就像 Windows 電腦體驗從桌面開始一樣，Windows Mixed Reality 從首頁開始。 Windows Mixed Reality 首頁會使用我們的固有能力來瞭解和流覽3D 位置。 就 HoloLens 而言，您的家庭是您的實體空間，但使用沉浸式耳機時，您的家庭是一個虛擬場所。
 
 您的家裡也可以使用 [開始] 功能表來開啟和放置應用程式與內容。 您可以同時使用多個應用程式，以混合現實內容和多階段填滿您的家裡。 即使您重新開機裝置，您放在家裡的專案仍會留在那裡。
 
@@ -56,13 +56,13 @@ ms.locfileid: "94703444"
 
 ![在 HoloLens 上執行之2D 應用程式的應用程式行](images/holobar-500px.png)
 
-[ **上一頁** ] 按鈕會流覽回到先前在應用程式中看到的畫面。 當您到達應用程式中已顯示的體驗開始時，它會停止，而且不會流覽至其他應用程式。
+[ **上一頁** ] 按鈕會流覽回到先前在應用程式中看到的畫面。 當您到達應用程式所顯示的體驗開始時，它會停止，而且不會流覽至其他應用程式。
 
 ## <a name="getting-around-your-home"></a>開始
 
 使用 **HoloLens**，您可以在實際空間間移動，以在家裡四處移動。
 
-有了 **沉浸式耳機**，您也可以在 playspace 中，于虛擬世界的類似區域內進行移動和四處移動。 若要在較長的距離間移動，您可以使用控制器上的操縱杆來幾乎「進行」，也可以使用 *遙傳* 來立即跳過較長的距離。
+有了 **沉浸式耳機**，您就可以在 playspace 中開始進行，以在虛擬世界中的類似區域內移動。 若要在較長的距離間移動，請使用控制器上的操縱杆來幾乎「進行」，或者您可以使用 *遙傳* 來立即跳過較長的距離。
 
 ![Windows Mixed Reality 首頁中的遙傳](images/teleportation-500px.png)
 
@@ -87,7 +87,7 @@ ms.locfileid: "94703444"
 
 ### <a name="motion-controllers"></a>運動控制器
 
-最佳的 Windows Mixed Reality 體驗將會是 Windows Mixed Reality 的 [動作控制器](../design/motion-controllers.md) ，其支援使用耳機中的感應器來支援6種自由度的追蹤，而不需要外部攝影機或標記！
+最佳的 Windows Mixed Reality 體驗將會有 Windows Mixed Reality 的 [動作控制器](../design/motion-controllers.md) ，其只使用耳機中的感應器來支援六種自由度的追蹤，而不需要外部攝影機或標記！
 
 即將推出流覽命令。
 
@@ -97,7 +97,7 @@ ms.locfileid: "94703444"
   * 以較小的增量，向左、向右或向左移動操縱杆。
   * 在左側的操縱杆上按一下並按住，然後以您想要的方向，將操縱杆移至「 [走」。](navigating-the-windows-mixed-reality-home.md#getting-around-your-home)
 * 將 **右邊的操縱杆** 向左或向右移動，以旋轉45度的方向。
-* 按下 **按鈕可** 執行選取動作，就像使用 [[點](../design/gaze-and-commit.md#composite-gestures) 一下] 手勢一樣。
+* 按下 **按鈕就** 會選取並做為 [點擊](../design/gaze-and-commit.md#composite-gestures) 點手勢。
 * 按下 [ **節目表** ] 按鈕會顯示 [[開始] 功能表](navigating-the-windows-mixed-reality-home.md#start-menu) ，並如同 [bloom](../design/system-gesture.md#bloom) 手勢一樣。
 * 按 **左和右觸發** 程式可讓您放大和縮小您要在家裡互動的2d 桌面應用程式。
 
@@ -106,20 +106,20 @@ ms.locfileid: "94703444"
 **注意：** 使用 **Windows 鍵 + Y** ，在控制電腦桌面與 Windows Mixed Reality 首頁之間切換滑鼠。
 
 在 Windows Mixed Reality 首頁內：
-* 按下滑鼠左鍵時，會執行選取動作，就像使用 [攻](../design/gaze-and-commit.md#composite-gestures)**點** 手勢一樣。
+* 按下滑鼠左鍵時，會選取並以像是「[攻](../design/gaze-and-commit.md#composite-gestures)點」手勢的 **方式** 運作。
 * 按住滑鼠 **右鍵** 按鈕會帶出 [遙傳](navigating-the-windows-mixed-reality-home.md#getting-around-your-home) reticle。
 * 按下鍵盤上的 **Windows** 鍵會顯示 [ [開始] 功能表](navigating-the-windows-mixed-reality-home.md#start-menu) ，並如同 [bloom](../design/system-gesture.md#bloom) 手勢一樣。
 * 在2D 桌面應用程式中 [撥雲見日](../design/gaze-and-commit.md) 時，您可以 **按一下** 滑鼠右鍵以選取， **按一下滑鼠右鍵** 以顯示操作功能表，然後使用 **滾輪** 滾動 (，就像在電腦的桌面) 一樣。
 
 ## <a name="cortana"></a>Cortana
 
-[Cortana](../design/voice-input.md#hey-cortana) 是 Windows Mixed Reality 的個人助理，就像在 PC 和手機上一樣。 HoloLens 有內建的麥克風，但沉浸式耳機可能需要額外的硬體。 使用 Cortana 來開啟應用程式，重新開機您的裝置，並在線上尋找專案等等。 開發人員也可以選擇將 [Cortana 整合](https://dev.windows.com/cortana) 到他們的體驗。
+[Cortana](../design/voice-input.md#hey-cortana) 是 Windows Mixed Reality 的個人助理，就像在 PC 和手機上一樣。 HoloLens 有內建的麥克風，但沉浸式耳機可能需要額外的硬體。 使用 Cortana 來開啟應用程式、重新開機您的裝置、線上查閱專案等等。 開發人員也可以選擇將 [Cortana 整合](https://dev.windows.com/cortana) 到他們的體驗。
 
-您也可以使用語音命令來解決您的首頁。 例如，根據裝置) ，指向按鈕 ([gaze](../design/gaze-and-commit.md) ，視裝置而定，然後說「選取」。 其他聲音命令包括「Go 首頁」、「更大」、「更小」、「關閉」和「臉部我」。
+您也可以使用語音命令來解決您的首頁。 例如，根據裝置) ，指向按鈕 ([](../design/gaze-and-commit.md) ，視裝置而定，然後說「選取」。 其他聲音命令包括「Go 首頁」、「更大」、「更小」、「關閉」和「臉部我」。
 
 ## <a name="store-settings-and-system-apps"></a>儲存、設定和系統應用程式
 
-Windows Mixed Reality 有一些內建的應用程式，例如：
+Windows Mixed Reality 有數個內建應用程式，例如：
 * 取得應用程式和遊戲的 **Microsoft Store**
 * **意見反應中樞** 提交有關系統和系統應用程式的意見反應
 * **設定** 系統設定的設定 ([包括網路](../connecting-to-wi-fi-on-hololens.md) 和系統更新) 
@@ -134,7 +134,7 @@ Windows Mixed Reality 有一些內建的應用程式，例如：
 * **桌面** (沉浸式耳機) ，可在沉浸式耳機中觀看桌上型電腦監視器
 * **檔案總管** 存取位於您裝置上的檔案和資料夾
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [應用程式檢視](../design/app-views.md)
 * [運動控制器](../design/motion-controllers.md)
 * [硬體配件](hardware-accessories.md)

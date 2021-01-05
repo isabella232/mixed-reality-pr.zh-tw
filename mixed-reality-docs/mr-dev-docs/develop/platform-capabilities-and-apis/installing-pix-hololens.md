@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens、HoloLens 2、PIX、捕獲、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 5dfc16f97790b47af3c24ca44c060a9a2495a320
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 598a6b891798be7059eae2eff578c6bbbae442f6
+ms.sourcegitcommit: 9d79aaa313f003dd42d5610d458031890776ee8e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530450"
+ms.lasthandoff: 12/30/2020
+ms.locfileid: "97822925"
 ---
 # <a name="installing-pix-for-hololens-2"></a>安裝使用於 HoloLens 2 的 PIX
 
@@ -25,7 +25,7 @@ ms.locfileid: "97530450"
 
 3. 啟用 **開發人員模式** 和 **裝置入口網站**：
 
-* 從 Shell 開啟 **設定** ：
+* 從混合現實首頁開啟 **設定** ：
 
 ![反白顯示 [設定] 按鈕的 HoloLens 功能表螢幕擷取畫面](images/pix-img-01.jpg)
 
@@ -114,5 +114,5 @@ ms.locfileid: "97530450"
 
 PIX 現在已備妥可供使用！
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [PIX 首頁](https://devblogs.microsoft.com/pix)

@@ -3,12 +3,12 @@ title: 使用 WebVR 搭配 Windows Mixed Reality
 description: 描述 WebVR 以及如何搭配 Windows Mixed Reality 耳機上的 Microsoft Edge 來使用它。
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，WebVR，Edge，Microsoft Edge，網頁流覽
-ms.openlocfilehash: 8e8d7b5feefe5b1eccad0684808b40b63e9bbbca
-ms.sourcegitcommit: 2da7e181e4e23eed31b59f0332c3ba8b3f594cd0
+ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
+ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/31/2020
-ms.locfileid: "93131852"
+ms.lasthandoff: 12/22/2020
+ms.locfileid: "97725599"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>使用 WebVR 搭配 Windows Mixed Reality
 
@@ -17,21 +17,21 @@ ms.locfileid: "93131852"
 
 ## <a name="what-is-webvr"></a>什麼是 WebVR
 
-[WebVR](https://webvr.info) 是一種開放的規格，可以在瀏覽器中體驗 VR。 如果網站實行 WebVR 支援並提供3D 內容，它可以在耳機中顯示沉浸式內容，並提供使用者同意。
+[WebVR](https://webvr.info) 是一種開放的規格，可讓您直接從瀏覽器體驗 VR。 如果網站實行 WebVR 支援並提供3D 內容，它可以在耳機中顯示沉浸式內容，並提供使用者同意。
 
 ## <a name="what-is-the-difference-between-webvr-and-browsing-the-web-in-vr"></a>在 VR 中 WebVR 和流覽 web 有何不同
 
-WebVR 是一種技術，可讓網站作者將 VR 功能新增至網頁。 頁面會使用 WebVR API 來顯示3D 內容 (例如360度的影片、3D 模型，或整個耳機) 的3D 遊戲。 **範例：** 在 [cnn.com/vr](http://cnn.com/vr)上觀看360影片。 如果頁面支援 WebVR，則會新增按鈕或其他 UI 元素，您可以按一下以輸入 VR。
+WebVR 是一種技術，可讓網站作者將 VR 功能新增至網頁。 頁面會使用 WebVR API 來顯示3D 內容 (例如360度的影片、3D 模型，或整個耳機) 的3D 遊戲。 **範例：** 在 [cnn.com/vr](http://cnn.com/vr)上觀看360影片。 如果頁面支援 WebVR，則會新增按鈕或其他 UI 元素，讓您可以選取以輸入 VR。
 
 在 VR 中流覽 web 表示在您佩戴耳機時使用 Edge 瀏覽器，這是 Cliffhouse 內的2D 應用程式平板。
 
 ## <a name="do-all-websites-support-webvr"></a>所有網站都支援 WebVR
 
-否。 網站作者必須選擇使用 WebVR，而且他們可以建立針對特定瀏覽器、耳機和控制器優化的網站。 例如，某些 WebVR 內容只針對 mobile VR 裝置優化。 此外，請記住，網站必須明確建立並提供 WebVR 內容。 有一些 WebVR 相容內容的網站數目每天都會成長。
+不會。 網站作者必須選擇使用 WebVR，而且他們可以針對特定的瀏覽器、耳機和控制器建立優化的網站。 某些 WebVR 內容僅適用于 mobile VR 裝置。 此外，請記住，網站必須明確建立並提供 WebVR 內容。 有一些 WebVR 相容內容的網站數目每天都會成長。
 
 ## <a name="can-i-use-my-viveoculus-etc-to-view-webvr-content-in-microsoft-edge"></a>我可以使用 Vive/Oculus 等來查看 Microsoft Edge 中的 WebVR 內容
 
-否。 您必須使用 Windows Mixed Reality 耳機在 Edge 中使用 WebVR。 不過，您可以在另一個瀏覽器中存取 WebVR 內容;請參閱下列網址的完整相容裝置和瀏覽器清單： [WebVR. rocks](http://webvr.rocks/)。
+不會。 需要 Windows Mixed Reality 耳機才能在 Edge 中使用 WebVR。 不過，您可以在另一個瀏覽器中存取 WebVR 內容;請參閱下列網址的完整相容裝置和瀏覽器清單： [WebVR. rocks](http://webvr.rocks/)。
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>我可以在哪裡找到 WebVR 開發人員檔
 
@@ -51,17 +51,17 @@ Microsoft Edge > 網站問題
 
 ## <a name="how-do-i-set-up-webvr"></a>如何? 設定 WebVR
 
-若要在 Windows Mixed Reality 耳機 (使用硬體或模擬來體驗 WebVR 內容) 您必須：
+若要在 Windows Mixed Reality 耳機 (使用硬體或模擬) 來體驗 WebVR 內容，您必須：
 
 1. 確定您的耳機已連線。
 2. 在桌面上或在混合現實中啟動 Microsoft Edge。
 3. 流覽至已啟用 WebVR 的頁面。
-4. 按一下頁面內的 [輸入 VR] 按鈕 (此按鈕的位置和視覺標記法可能會因每個網站) 而有所不同。 它看起來可能類似： \
+4. 選取頁面中的 [輸入 VR] 按鈕 (此按鈕的位置和視覺標記法可能會因每個網站) 而有所不同。 它看起來可能類似： \
    ![VR Goggles 映射](images/75px-enter-vr.png)
-5. 當您第一次嘗試在特定網域上輸入 VR 時，瀏覽器會要求同意使用沉浸式視圖，請按一下 [是]： ![第一次嘗試在特定網域上輸入 VR 時所顯示的同意 UI](images/1053px-Webvr-consent-ui.png)
+5. 當您第一次嘗試在特定網域上輸入 VR 時，瀏覽器會要求同意使用沉浸式視圖，請選取 [是]： ![第一次嘗試在特定網域上輸入 VR 時所顯示的同意 UI](images/1053px-Webvr-consent-ui.png)
 6. 您的耳機應該會開始顯示 WebVR 內容。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [針對 > WebVR 進行疑難排解](webvr-questions.md)
 * [如何進入您的第一個 WebVR 體驗](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

@@ -1,65 +1,64 @@
 ---
 title: 按鈕
-description: 按鈕讓使用者得以觸發立即動作。 它是混合現實中最基本的元件之一。
+description: 瞭解如何使用按鈕觸發立即動作，這是其中一個混合現實的基礎元件。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、按鈕
-ms.openlocfilehash: c5e52bef8604ba4874b7f4b055107ec0db6b3683
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702854"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847595"
 ---
 # <a name="button"></a>Button
 
 ![Button](images/UX_Hero_Button.jpg)
 
-按鈕讓使用者得以觸發立即動作。 它是混合現實中最基本的元件之一。 在 HoloLens 2 中，按鈕有許多視覺提示和 affordances，可提高使用者的互動信賴度。 
-
+按鈕可讓您的使用者在混合現實體驗中觸發立即動作。 在 HoloLens 2 中，按鈕具有視覺提示和 affordances，可協助提高對使用者的互動。 
 
 :::row:::
     :::column:::
-       ![移動](images/UX_Button_Affordance_ProximityLight.jpg)<br>
+       ![顯示相近光線效果的按鈕](images/UX_Button_Affordance_ProximityLight.jpg)<br>
        **近亮光**<br>
     :::column-end:::
     :::column:::
-       ![旋轉](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
+       ![顯示焦點醒目提示效果的選取按鈕](images/UX_Button_Affordance_FocusHighlight.jpg)<br>
         **焦點醒目提示**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       ![移動](images/UX_Button_Affordance_Compression.jpg)<br>
+       ![顯示具有壓縮箱效果的按鈕](images/UX_Button_Affordance_Compression.jpg)<br>
        **壓縮框架**<br>
     :::column-end:::
     :::column:::
-       ![旋轉](images/UX_Button_Affordance_Pulse.jpg)<br>
+       ![顯示觸發程式脈衝效果的按鍵](images/UX_Button_Affordance_Pulse.jpg)<br>
         **觸發程式上的脈衝**<br>
     :::column-end:::
 :::row-end:::
 
 <br>
 
-
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>MRTK 中的按鈕 (混合現實工具組) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種類型的按鈕 prefabs。 您可以找到 HoloLens 2 的 shell 樣式按鈕， (第一代) 以及自訂的範例。 HoloLens 2 按鈕預製專案包含許多詳細的 affordances，可協助提升使用者的信心。 它包含以鄰近性為基礎的醒目提示、壓縮前端框架，以及觸發程式的脈衝效果。
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種類型的按鈕 prefabs，包括 HoloLens 2 的 shell 樣式按鈕，以及 HoloLens (第1代) 。 HoloLens 2 按鈕預製專案包含數個詳細 affordances，可協助提升使用者的信心：
 
-* [MRTK-按鈕](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* 鄰近性醒目提示
+* 壓縮 front 籠
+* 對觸發程式的脈衝效果。
 
-
+* 如需詳細指示和自訂的範例，請參閱 [MRTK 按鈕](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) 。
 
 <br>
 
 ---
 
-
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: 作法、配件、藍牙、bt、控制器、遊戲台、clicker、xbox、硬體、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移動控制器
-ms.openlocfilehash: 3855d5337c4cad462b60ff8c73cec0b7b96c0ca1
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702004"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757716"
 ---
 # <a name="hardware-accessories"></a>硬體配件
 
-Windows Mixed Reality 裝置支援配件。 您可以使用藍牙或 USB 將支援的配件與已連線的電腦配對到沉浸式耳機。
+Windows Mixed Reality 裝置支援配件。 您可以使用藍牙或 USB 埠，將支援的配件與您電腦上的沉浸式耳機配對。
 
 如需搭配 HoloLens 使用藍牙附屬元件的相關資訊，請參閱 [連接到 bluetooth 和 USB-C 裝置](https://docs.microsoft.com/hololens/hololens-connect-devices)。
 
@@ -28,13 +28,13 @@ Windows Mixed Reality 沉浸式耳機需要[輸入的附屬和](../design/gaze-a
 1. 從 [開始] 功能表開啟 [ **設定** ] 應用程式
 2. 移至 **裝置**
 3. 使用滑杆開關開啟藍牙無線電
-4. 將您的藍牙裝置置於配對模式。 這種方式會因裝置而異。 在大部分的藍牙裝置上，只要按住一或多個按鈕就可以完成這項工作。
+4. 將您的藍牙裝置置於配對模式。 此程式會因裝置而異，但在大部分的藍牙裝置上，請按住一或多個按鈕。
 5. 等候裝置的名稱顯示在藍牙裝置清單中。 當它完成時，請選取裝置，然後選取 [ **配對** ] 按鈕。 如果您附近有許多藍牙裝置，您可能需要滾動至 [藍牙裝置] 清單底部，以查看您嘗試配對的裝置。
 6. 將 Bluetooth 周邊與輸入功能配對時 (例如： Bluetooth 鍵盤) ，可能會顯示6位數或8位數的 pin。 請務必在週邊設備上輸入 pin，然後按 enter 鍵以完成與耳機的配對。
 
 ## <a name="motion-controllers"></a>運動控制器
 
-沉浸式耳機支援 Windows Mixed Reality [動作控制器](../design/motion-controllers.md) ，但不支援 HoloLens。 這些控制器使用沉浸式耳機中的感應器，在您的觀看視野中提供精確且回應性的移動追蹤，這表示不需要在您的空間中的牆上安裝硬體。 每個控制器都有數種輸入方法。
+沉浸式耳機支援 Windows Mixed Reality [動作控制器](../design/motion-controllers.md) ，但不支援 HoloLens。 這些控制器會在您的視野中提供精確且有回應的移動追蹤。 沉浸式耳機中的感應器會進行追蹤，也就是說，您不需要在空間的牆上安裝硬體。 每個控制器都有數種輸入方法。
 
 ![Windows Mixed Reality 動作控制器](../design/images/winmr-ck-1080x1080-350px.jpg)
 
@@ -46,19 +46,19 @@ Windows Mixed Reality 沉浸式耳機需要[輸入的附屬和](../design/gaze-a
 
 您可以使用具有應用程式的控制器，以及專門啟用遊戲台支援的遊戲。 Gamepads 無法用來控制 HoloLens 使用者介面。
 
-隨附于 Xbox One S 或銷售作為 Xbox One S 功能之配件的 Xbox 無線控制器，可讓它們與 HoloLens 和沉浸式耳機一起使用。 Xbox 無線控制器 [必須先更新](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) ，才能搭配 HoloLens 使用。
+Xbox 無線控制器隨附 Xbox One S 或作為 Xbox One S 功能藍牙連線的配件，因此您可以將它們與 HoloLens 和沉浸式耳機一起使用。 Xbox 無線控制器 [必須先更新](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) ，才能搭配 HoloLens 使用。
 
 其他品牌的藍牙 gamepads 可與 Windows Mixed Reality 裝置搭配運作，但支援會因應用程式而異。
 
 ## <a name="other-bluetooth-accessories"></a>其他藍牙配件
 
-只要周邊支援 Bluetooth HID 或 GATT 設定檔，就能夠與 HoloLens 配對。 除了鍵盤、滑鼠和 HoloLens Clicker 以外的其他 Bluetooth HID 和 GATT 裝置，可能需要 Microsoft HoloLens 上的隨附應用程式才能完整運作。
+只要週邊設備支援藍牙 HID 或 GATT 設定檔，它就可以與 HoloLens 配對。 除了鍵盤、滑鼠和 HoloLens Clicker 以外的其他 Bluetooth HID 和 GATT 裝置，可能需要 Microsoft HoloLens 上的隨附應用程式才能完整運作。
 
 不支援的週邊設備包括：
 
 * 不支援藍牙音訊設定檔中的週邊設備。
-* 像是喇叭和耳機等藍牙音訊裝置在 [設定] 應用程式中可能會顯示為可用，但不支援使用 Microsoft HoloLens 作為音訊端點。
-* 啟用 Bluetooth 的電話和電腦不支援配對並用於檔案傳輸。
+* 諸如喇叭和耳機等藍牙音訊裝置可在 [設定] 應用程式中使用，但 Microsoft HoloLens 不支援做為音訊端點。
+* 啟用 Bluetooth 的手機和電腦不支援配對和檔案傳輸。
 
 ## <a name="unpairing-a-bluetooth-peripheral"></a>取消配對藍牙週邊設備
 

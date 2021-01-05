@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 全像投影、穩定性、hololens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、畫面播放速率、轉譯、reprojection、色彩分隔
 appliesto:
 - HoloLens
-ms.openlocfilehash: 345ba3608b77ed4d7b493985903295f5ee3f4863
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
+ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530426"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97808829"
 ---
 # <a name="hologram-stability"></a>全像投影穩定性
 
@@ -91,14 +91,14 @@ Reprojection 有四種主要類型
 應用程式必須採取特定動作來啟用不同類型的 reprojection
 * **深度 Reprojection：** 應用程式會針對每個呈現的畫面格，將其深度緩衝區提交至系統。  在 Unity 上，會使用 [ **XR 外掛程式管理**] 下 [ **Windows Mixed Reality 設定**] 窗格中的 [**共用深度緩衝區**] 選項來完成深度 Reprojection。  DirectX 應用程式呼叫 CommitDirect3D11DepthBuffer。  應用程式不應呼叫 SetFocusPoint。
 * **平面 Reprojection：** 在每個畫面上，應用程式會將平面的位置告訴系統穩定。  Unity 應用程式會呼叫 SetFocusPointForFrame，且應該停用 **共用深度緩衝區** 。  DirectX 應用程式呼叫 SetFocusPoint，不應呼叫 CommitDirect3D11DepthBuffer。
-* **自動平面 Reprojection：** 若要啟用，應用程式必須將其深度緩衝區提交至系統，因為它們會進行深度 Reprojection。  在 HoloLens 2 上，應用程式接著需要 SetFocusPoint 點0、0（針對每個框架）。  若為 HoloLens 第1代，應用程式不應呼叫 SetFocusPoint。
+* **自動平面 Reprojection：** 若要啟用，應用程式必須將其深度緩衝區提交至系統，因為它們會進行深度 Reprojection。 使用混合現實工具組的應用程式 (MRTK) 可將 [相機設定提供者](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html#hololens-2-reprojection-method) 設定為使用 AutoPlanar Reprojection。 原生應用程式應該 `DepthReprojectionMode` 在 [HolographicCameraRenderingParameters](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 中將設定為 `AutoPlanar` 每個框架。 若為 HoloLens 第1代，應用程式不應該呼叫 SetFocusPoint。
 
 ### <a name="choosing-reprojection-technique"></a>選擇 Reprojection 技術
 
 穩定類型 |    沉浸式頭戴裝置 |    HoloLens 第1代 | HoloLens 2
 --- | --- | --- | ---
-深度 Reprojection |    建議 |   不適用 |   建議<br/><br/>Unity 應用程式必須使用 Unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。 否則，請使用自動平面 Reprojection。
-自動平面 Reprojection | 不適用 |   建議的預設值 |   如果深度 Reprojection 未提供最佳結果，則建議使用<br/><br/>建議您使用 unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。  先前的 Unity 版本將會使用稍微降低的 reprojection 結果。
+深度 Reprojection |    建議 |   N/A |   建議<br/><br/>Unity 應用程式必須使用 Unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。 否則，請使用自動平面 Reprojection。
+自動平面 Reprojection | N/A |   建議的預設值 |   如果深度 Reprojection 未提供最佳結果，則建議使用<br/><br/>建議您使用 unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。  先前的 Unity 版本將會使用稍微降低的 reprojection 結果。
 平面 Reprojection |   不建議 |   如果自動平面未提供最佳結果，則建議使用 | 如果沒有任何深度選項提供所需的結果，請使用    
 
 ### <a name="verifying-depth-is-set-correctly"></a>正在驗證深度設定是否正確
@@ -181,7 +181,7 @@ renderingParameters.SetFocusPoint(
 
 和之前一樣，在 60 FPS 和設定穩定平面的情況下，以最重要的方式呈現全像全像全像全像全像 如果面對明顯的色彩分隔，請先確定畫面播放速率符合預期。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [瞭解混合現實的效能](understanding-performance-for-mixed-reality.md)
 * [色彩、光線和材質](../../color,-light-and-materials.md)
 * [本能互動](../../design/interaction-fundamentals.md)

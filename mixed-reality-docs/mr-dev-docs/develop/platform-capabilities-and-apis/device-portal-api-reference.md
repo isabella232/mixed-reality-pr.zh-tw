@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens、Windows 裝置入口網站、API、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 1085f6c948ab7fe0ff8cb3801ebb0b883570acbc
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
+ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677967"
+ms.lasthandoff: 12/29/2020
+ms.locfileid: "97804430"
 ---
 # <a name="device-portal-api-reference"></a>裝置入口網站 API 參照
 
@@ -389,6 +389,9 @@ _ */api/holographic/mrc/thumbnail (取得)**
 
 ## <a name="mixed-reality-streaming"></a>混合的現實串流
 
+> [!CAUTION]
+> 由於回送隔離的原因，您無法從裝置上的應用程式內連線到混合現實串流。
+
 HoloLens 透過區塊下載分散的數量，支援混合現實的即時預覽。
 
 混合的現實資料流程共用一組相同的參數來控制所要捕獲的內容：
@@ -693,6 +696,6 @@ Payload
 傳回資料
 * 在開始時，會傳回 WPR 會話狀態。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [使用 Windows 裝置入口網站](using-the-windows-device-portal.md)
 * [裝置入口網站 (UWP) 的核心 API 參考 ](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-api-core)
