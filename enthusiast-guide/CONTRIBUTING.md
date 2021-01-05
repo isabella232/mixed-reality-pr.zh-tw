@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: d8b4e23603a09d39fef076b600364a55410d12c3
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691470"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865433"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>參與混合現實愛好者指南
 
@@ -167,7 +167,7 @@ ms.locfileid: "97691470"
 >[!NOTE]
 >在 review.docs.microsoft.com 上預覽您的變更只適用于 Microsoft 員工
 
-Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就可以在內容公開之前，先進行審核 https://review.docs.microsoft.com/windows/mixed-reality?branch=master 。 使用左邊資料行中的目錄來尋找您的文章。
+Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就可以在內容公開之前，先進行審核 https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide?branch=master 。 使用左邊資料行中的目錄來尋找您的文章。
 
 ## <a name="editing-in-the-browser-vs-editing-with-a-desktop-client"></a>在瀏覽器中編輯和使用桌面用戶端編輯
 

@@ -6,23 +6,23 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 05adee2d88bc90dcfb5cf8b780212c7622aff786
-ms.sourcegitcommit: ce4975f584bb62075bcb66349237b77081fb982b
+ms.openlocfilehash: 9e7f59c57d409d61df73e6d07659bf6c7242202c
+ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97644915"
+ms.lasthandoff: 01/05/2021
+ms.locfileid: "97880595"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
 從 Unity 2020.2 版開始，可以使用 Unity 封裝管理員 (UPM) 提供 Microsoft 的 Mixed Reality OpenXR 外掛程式套件。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
-*   Unity 2020.2 或更新版本
-*   Unity OpenXR 外掛程式0.1.1 或更新版本
-*   Visual Studio 2019 或更新版本
-*   在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
+* Unity 2020.2 或更新版本
+* Unity OpenXR 外掛程式0.1.1 或更新版本
+* Visual Studio 2019 或更新版本
+* 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
 
 > [!NOTE]
 > 如果您是在 Windows 電腦上建立 VR 應用程式，則不一定需要混合現實 OpenXR 外掛程式。 但是，如果您要自訂適用于 HP 重設系的控制器對應，或建立可在 HoloLens 2 和 VR 耳機上運作的應用程式，則您會想要安裝外掛程式。
@@ -32,7 +32,7 @@ ms.locfileid: "97644915"
 您的專案必須先安裝 **OpenXR 外掛程式** 和 **XR 外掛程式管理** 套件，才能使用 Mixed Reality OpenXR 外掛程式。 如果您已經安裝這些專案，很棒！ 如果不是，安裝 Mixed Reality OpenXR 外掛程式會自動將它們安裝為相依性：
 
 1. 在 Unity 編輯器中，流覽至 [ **編輯 > 專案設定] > 封裝管理員**
-2. 展開 [限 **域** 登錄] 區段，輸入下列資訊，然後選取 [ **儲存**]：   
+2. 展開 [限 **域** 登錄] 區段，輸入下列資訊，然後選取 [ **儲存**]：
     * 將 **名稱** 設定為 **Microsoft Mixed Reality**
     * 將 **URL** 設定為 **https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/**
     * 將 **範圍 (s)** 設定為 **mixedreality**
@@ -52,28 +52,30 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 
 若要新增 OpenXR 套件：
 
-1. 在文字編輯器中開啟 **<projectRoot> /Packages/manifest.js** ，例如 Visual Studio Code
-2. 依照下列方式修改 *套件/manifest.js* 的 [相依性] 區段：
+1. 在文字編輯器中開啟 **[projectRoot]/Packages/manifest.js** ，例如 Visual Studio Code
+    1. 若要取得這裡，請在 [專案] 視窗的左面板中，以滑鼠右鍵按一下 **套件** 。 然後，按一下 [ **在 Explorer 中顯示**]。
+    ![[專案] 視窗中的套件清單螢幕擷取畫面](images/packages.png)
+1. 依照下列方式修改 *套件/manifest.js* 的 [相依性] 區段：
 
-> [!IMPORTANT]
-> 您的資訊清單檔中可能會有更多相依性，而不是此處所示。 請勿刪除其中任何一項，只要將 OpenXR 相依性新增至清單即可。
+    > [!IMPORTANT]
+    > 您的資訊清單檔中可能會有更多相依性，而不是此處所示。 請勿刪除其中任何一項，只要將 OpenXR 相依性新增至清單即可。
 
-```
-  "dependencies": {
-    "com.microsoft.mixedreality.openxr": "0.1.0",
-  }
-```
+    ``` json
+      "dependencies": {
+        "com.microsoft.mixedreality.openxr": "0.1.1",
+      }
+    ```
 
-3. 儲存檔案、切換回 Unity 編輯器，然後開啟 **封裝管理員** 來確認已安裝外掛程式： 
+1. 儲存檔案、切換回 Unity 編輯器，然後開啟 **封裝管理員** 來確認已安裝外掛程式：
 
-![Unity 封裝管理員的螢幕擷取畫面，其中已反白顯示混合現實 OpenXR 外掛程式的 Unity 編輯器中開啟](images/openxr-img-03.png)
+    ![Unity 封裝管理員的螢幕擷取畫面，其中已反白顯示混合現實 OpenXR 外掛程式的 Unity 編輯器中開啟](images/openxr-img-03.png)
 
-> [!Note] 
-> 如果使用 Unity 封裝管理員移除 OpenXR 封裝，您必須使用先前所述的步驟重新新增它。
+    > [!Note]
+    > 如果使用 Unity 封裝管理員移除 OpenXR 封裝，您必須使用先前所述的步驟重新新增它。
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>設定 OpenXR 的 XR 外掛程式管理
 
-若要將 OpenXR 設定為 Unity 中的執行時間： 
+若要將 OpenXR 設定為 Unity 中的執行時間：
 
 1. 在 Unity 編輯器中，流覽至 [**編輯 > 專案設定**]
 2. 在設定清單中，選取 [ **XR 外掛程式管理**]
@@ -97,7 +99,7 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 
 ## <a name="try-out-the-unity-sample-scenes"></a>試用 Unity 範例場景
 
-若要利用一或多個範例，請從 **套件管理員** 安裝 [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) ：
+若要利用一或多個範例，請從 **封裝管理員** 安裝 [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) ：
 
 ![Unity 封裝管理員在 Unity 編輯器中開啟，並醒目提示 AR Foundation 的螢幕擷取畫面](images/openxr-img-09.png)
 
@@ -118,13 +120,14 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 ![Screenshot of Unity Package Manager open in Unity editor with OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png) -->
 
 > [!NOTE]
->  更新套件時，Unity 會提供選項來更新匯入的範例。  更新匯入的範例將會覆寫對範例和相關資產所做的任何變更。
+> 更新套件時，Unity 會提供選項來更新匯入的範例。  更新匯入的範例將會覆寫對範例和相關資產所做的任何變更。
 
-## <a name="next-steps"></a>後續步驟 
+## <a name="next-steps"></a>後續步驟
 
 現在您已將專案設定為 OpenXR 並可存取範例，請查看我們的 OpenXR 外掛程式目前支援的 [功能](openxr-supported-features.md) 。
 
-## <a name="see-also"></a>另請參閱
-* [在不 MRTK 的情況下設定您的專案](configure-unity-project.md)
+## <a name="see-also"></a>請參閱
+
+* [在沒有 MRTK 的情況下設定專案](configure-unity-project.md)
 * [Unity 的建議設定](recommended-settings-for-unity.md)
 * [對 Unity 的效能建議](performance-recommendations-for-unity.md#how-to-profile-with-unity)

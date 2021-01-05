@@ -6,17 +6,18 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: d925f28b1d34b5a157e89fc0ea56a7b28fffbe8f
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94702344"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847965"
 ---
 # <a name="hand-coach"></a>手勢指導
+
 ![範例：手形指導](images/HandCoach/MRTK_handCoach.jpg)<br>
 
-手指導是指當系統未偵測到使用者的手時，所觸發的3D 模型化手。 這會實作為「教學」元件，可在未教授手勢時協助引導使用者。 如果使用者尚未針對某段時間完成指定的手勢，則手將會有延遲的迴圈。 手形指導可用來代表按下按鈕或挑選全像影像。  
+當系統未偵測到使用者的手時，手上的教練會觸發3D 模型化的手。 這項功能是一個「教學」元件，可在未教授手勢時協助引導使用者。 如果使用者尚未針對某個句號完成指定的手勢，則手會有延遲的迴圈。 手形指導可用來代表按下按鈕或挑選全像影像。  
 
 ## <a name="hand-coach-provided"></a>提供的手勢
 
@@ -62,11 +63,11 @@ ms.locfileid: "94702344"
 
 ## <a name="design-concepts"></a>設計概念
 
-針對 Hololens2，我們根據 instinctual 和自然手勢來設計出互動。 我們相信大部分的使用者都可以直覺化，因此不會建立專用的手勢學習時間。 相反地，我們建立了一項手勢來協助可能停滯或不熟悉與全像影像互動的使用者瞭解這些手勢。 在沒有學習的時候，我們認為顯示使用者如何藉由示範來執行動作，這是最佳選項。 在我們的研究中，我們發現使用者可以找出手勢，但需要一些指引。 如果我們偵測到某一段時間內的使用者沒有與某個物件互動，則會觸發適當的手勢和手指放置。 
+針對 Hololens2，我們根據 instinctual 和自然手勢來設計出互動。 我們相信大部分的使用者都可以直覺化，因此我們不會建立專用的手勢學習時間。 相反地，我們建立了一項指導，以協助使用者瞭解這些手勢是否停滯，或不熟悉全像全息圖互動。 在沒有學習的時候，我們認為顯示使用者如何藉由示範來執行動作，這是最佳選項。 我們發現使用者能夠找出手勢，但需要一些指引。 如果我們偵測到使用者未與某個物件進行互動，則會觸發適當的手勢和手指放置。 
 
 ### <a name="intuitive"></a>直觀
 
-製作手動畫時，應該很明顯，不會造成任何混淆。 手的動畫是您嘗試引起給使用者以瞭解其用途的手勢標記法。 
+製作手動畫時，應該很明顯，不會造成任何混淆。 手動畫是您嘗試提示使用者瞭解的手勢標記法。 
 
 例如，如果您希望使用者按下按鈕，就會觸發按下按鈕的動作。
 
@@ -75,7 +76,7 @@ ms.locfileid: "94702344"
 
 ### <a name="hand-scale"></a>手擴展
 
-我們使用 UI 功能表來測試各種手的大小，並覺得如果手上的大小為真，則會給予阻感覺，但如果太小，則很難查看並瞭解手勢。 
+我們使用 UI 功能表來測試各種手上的大小，並覺得如果手上的大小為真，則會提供阻感受。 如果太小，就很難查看並瞭解手勢。 
 
 **語氣和手**
 
@@ -84,8 +85,8 @@ ms.locfileid: "94702344"
 
 ## <a name="can-i-create-my-own"></a>我可以建立自己的嗎？
 
-是！ 建議您為您的遊戲建立自己的獨特手勢，並貢獻回該社區！
-我們提供 Rigged 手的 Maya 檔，可用於您的應用程式，可在這裡下載： <a href="files/HandCoach_MRTK.zip"> 下載 HandCoach_MRTK.zip </a>
+可以！ 建議您為您的遊戲建立自己的獨特手勢，並貢獻回該社區！
+我們提供 Rigged 手的 Maya 檔，可用於您的應用程式，您可以在這裡下載： <a href="files/HandCoach_MRTK.zip"> 下載 HandCoach_MRTK.zip </a>
 
 ![Maya 中的動畫指標範例](images/HandCoach/MayaSelect_Gif.gif)<br>
 *在 Maya 中刺探方塊的動畫手勢範例*
@@ -93,7 +94,7 @@ ms.locfileid: "94702344"
 
 **建議的 authoring tool**
 
-在3D 演出者之間，許多選擇使用 [Autodesk 的 Maya，其本身可以使用 HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 來轉換資產的建立方式。 提供的手入檔案是 Maya 二進位檔案，因此建議使用 Maya 來建立動畫和匯出手。 如果您想要使用其他3D 程式，以下是 <b>。FBX</b>： <a href="files/HandCoachMRTK_FBX.zip"> 下載 HandCoachMRTK_FBX.zip </a> 以建立您自己的控制器設定。 
+在3D 演出者之間，許多選擇使用 [Autodesk 的 Maya，可以使用 HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 來轉換資產的建立方式。 提供的手入檔案是 Maya 二進位檔案，因此建議使用 Maya 來建立動畫和匯出手。 如果您想要使用其他3D 程式，以下是 <b>。FBX</b>： <a href="files/HandCoachMRTK_FBX.zip"> 下載 HandCoachMRTK_FBX.zip </a> 以建立您自己的控制器設定。 
 
 如果使用提供的可下載 maya 檔，建議您將 unity 中的手縮小為0.6。
 
@@ -105,7 +106,7 @@ ms.locfileid: "94702344"
 *   Maya Ascii 格式有兩個右手檔案可用
 *    右邊和左方都提供 Maya 二進位格式
 *   將 Maya 檔案設定為 24 FPS
-*   在檔案中，有一個左邊的右手邊可以用於兩個右手邊或單一右手手勢。 預設只會顯示右手邊。
+*   在檔案中，有左方和右手邊，可用於兩個右手或單次手勢。 預設只會顯示右手邊。
 *   建議將大約10個框架的緩衝區留在開頭和結尾，以淡化
 *   如果使用指定的目標建立物件的動畫，它的最佳作法是建立預設方塊或 Null 的動畫。
 *   如果手上有一個實體物件（例如方塊）的動畫，它的最佳作法是不要在 Maya 中製作轉譯的動畫，但等候在 Unity 或程式碼中建立動畫。
@@ -146,21 +147,23 @@ ms.locfileid: "94702344"
 ## <a name="implementing-hands-into-your-unity-project"></a>實際執行您的 Unity 專案
 
 ### <a name="best-practices"></a>最佳作法
-*    建議您將 unity 中的手縮小至0。6
-*   雙手應該播放兩次，如果未完成，則會持續迴圈直到手勢完成為止。 雙手應迴圈兩次，以確保使用者有時間註冊並查看手勢。 手應該在迴圈之間淡入和縮小。 
- *  如果 HL2 攝影機可以看到使用者的手，但使用者不會執行所需的互動，則會在10秒後出現。
+
+* 建議您將 unity 中的手縮小至0。6
+* 雙手應該播放兩次，如果未完成，則會持續迴圈直到手勢完成為止。 雙手應迴圈兩次，以確保使用者有時間註冊並查看手勢。 手應該在迴圈之間淡入和縮小。 
+ *  如果 HL2 攝影機看到使用者的手，但使用者未進行需要的互動，則手會在10秒後出現。
 *   如果 HL2 攝影機看不到使用者的手，就會在5秒後出現手。  
 *   如果在動畫中間的 HL2 攝影機會以明顯的方式追蹤使用者的手，動畫將會完成並淡出。
 *   如果您要包含語音，建議您將其對應至手的手勢。
-*   如果您至少教授過一次，請只在偵測到使用者卡住時，才重複手勢。
+*   如果您至少教授過一次，只要偵測到使用者停滯，請只重複手勢。
 *   如果特定的手指/手位置很重要，請確保使用者可以清楚地在動畫中看到這些細微差異。 試著 angling 手，讓最重要的部分清楚可見。 
-* 如果您注意到手上的失真，您需要移至 Unity 的品質設定，以增加骨骼數量。 
+* 如果您注意到手上的失真，您需要移至 Unity 的品質設定來提高骨骼數目。 
  移至 Unity 的 [編輯] > 專案設定 > 品質 > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。 
 
    ![範例：專案設定視窗](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>避免事項
+
 * 調整手太大
 * 把手放在使用者附近
 * 手中應只教授一次。 透過教學可能會造成混淆和 messiness
@@ -170,7 +173,8 @@ ms.locfileid: "94702344"
     *   每個專案的設定
         *   設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
 * [互動-基礎](interaction-fundamentals.md)
 * [資產建立流程](asset-creation-process.md)
 * [軌跡](../gestures.md)

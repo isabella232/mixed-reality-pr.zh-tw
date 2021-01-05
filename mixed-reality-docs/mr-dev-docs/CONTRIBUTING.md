@@ -5,20 +5,28 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 03/21/2018
 ms.topic: article
-ms.openlocfilehash: 0a71072a27befc4295b82e1235cbc75655743056
-ms.sourcegitcommit: 0b406ccbc7ce619e42809ba8dfdc47d83f4917ff
+ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/18/2020
-ms.locfileid: "97691312"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865413"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>參與混合現實開發人員檔
 
 歡迎使用 [適用于混合現實開發人員檔的公用](https://github.com/MicrosoftDocs/mixed-reality/tree/master/mixed-reality-docs)存放庫！ 您在此存放庫中建立或編輯 **的任何文章都將可在公用中看到。** 
 
-Mixed Reality 檔現在位於 docs.microsoft.com 平臺上，其使用具有 Markdig 功能的 GitHub flavored Markdown。 您在此存放庫中編輯的內容會格式化為顯示在上的樣式頁面 https://docs.microsoft.com/windows/mixed-reality 。 如果您想要參與 HoloLens 或 VR 愛好者檔，請造訪其各自的 [HoloLens](https://github.com/MicrosoftDocs/Hololens) 和 [vr](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) 存放庫。
+Mixed Reality 檔現在位於 docs.microsoft.com 平臺上，其使用具有 Markdig 功能的 GitHub flavored Markdown。 您在此存放庫中編輯的內容會格式化為顯示在上的樣式頁面 https://docs.microsoft.com/windows/mixed-reality 。 
 
 本頁面涵蓋參與和連結至 Markdown 基本概念的基本步驟和指導方針。 感謝您的參與！
+
+## <a name="available-repos"></a>可用的存放庫
+
+| 儲存機制名稱 | URL |
+| --- | --- |
+| 混合實境 | [MicrosoftDocs/mixed-事實](https://docs.microsoft.com/windows/mixed-reality) |
+| VR 愛好者指南 | [MicrosoftDocs/mixed-現實/愛好者指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
+| HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
 ## <a name="before-you-start"></a>開始之前
 

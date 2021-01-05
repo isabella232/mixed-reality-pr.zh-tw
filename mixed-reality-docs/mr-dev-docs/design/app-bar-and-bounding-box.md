@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality，應用程式橫條，周框方塊，混合現實耳機，windows Mixed Reality 耳機，虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: f718babfa07c69b6579fbd78f306a10f0ed6aad5
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 0f94aa3842afbfbd544716b801c7cb88d7be3abc
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703054"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847647"
 ---
 # <a name="bounding-box-and-app-bar"></a>週框方塊和應用程式列
 ![「周框」是混合現實物件操作的標準介面。](images/UX_Hero_BoundingBox.jpg)<br>
@@ -19,12 +19,12 @@ ms.locfileid: "94703054"
 
 ## <a name="what-is-the-bounding-box"></a>什麼是周框方塊？
 
-「周框」是混合現實物件操作的標準介面。 它會為使用者提供物件目前可以調整的 affordance。 在 HoloLens 2 上，周框方塊適用于直接操作，而且會回應使用者的 finger's 鄰近性。 它會顯示視覺效果的意見反應，以協助使用者感知與物件之間的距離。
+「周框」是混合現實物件操作的標準介面。 這項功能可為使用者提供視覺提示，指出物件目前是可調整的。 在 HoloLens 2 上，周框方塊適用于直接操作，而且會回應使用者的 finger's 鄰近性。 它會顯示視覺效果的意見反應，以協助使用者感知與物件之間的距離。
 
 :::row:::
     :::column:::
         ### <a name="scaling-an-objectbr"></a>調整物件<br>
-        周框方塊的邊角會告訴使用者物件可以調整的範圍。 控點會遵循廣泛瞭解的調整規模模式。 此視覺效果 affordance 會將物件的總區域顯示為使用者，即使在調整模式之外看不到也是如此。 這點特別重要，因為如果不存在，則會顯示在另一個物件或介面上的物件，其行為可能會與不應該出現在該物件的周圍空間相同。<br>
+        周框方塊的邊角會告訴使用者物件可以調整的範圍。 控點會遵循廣泛瞭解的調整規模模式。 此視覺提示會顯示使用者物件的總區域，即使在調整模式之外看不到它。 如果沒有這項功能，則會有一個物件（貼齊至另一個物件或介面）的行為，就像是在不應該出現的位置周圍一樣。<br>
         <br>
         *影片迴圈：透過周框方塊調整物件*
     :::column-end:::
@@ -54,7 +54,7 @@ ms.locfileid: "94703054"
 :::row:::
     :::column:::
         ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>HoloLens 2 上的手近距離視覺回饋<br>
-        在 HoloLens 2 上有一個額外的視覺提示，可協助使用者瞭解深度。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
+        在 HoloLens 2 上有一個額外的視覺提示，可協助使用者深入瞭解。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
         <br>
         *影片迴圈：根據鄰近範圍方塊的視覺效果意見反應範例*
     :::column-end:::
@@ -74,12 +74,12 @@ ms.locfileid: "94703054"
 
 ## <a name="what-is-the-app-bar"></a>什麼是應用程式行？
 
-應用程式行是一個物件層級的功能表，其中包含一系列的按鈕，可顯示在全像影像的範圍下邊緣。 此模式通常用來讓使用者能夠移除及調整全像投影。 應用程式行的設計主要是在使用者的環境中管理放置物件的方式。 結合周框方塊，使用者可以完全掌控物件在混合現實中的位置和方式。
+應用程式行是一個物件層級的功能表，其中包含一系列顯示在全像全像全像在全像是在全像影像的邊界下邊緣的按鈕。 此模式通常用來讓使用者移除及調整全像投影。 應用程式行的設計主要是在使用者的環境中管理放置物件的方式。 結合周框方塊，使用者可以完全掌控物件在混合現實中的位置和方式。
 
 :::row:::
     :::column:::
         ### <a name="the-app-bar-follows-the-userbr"></a>應用程式行會跟隨使用者<br>
-        由於這個模式會與全球鎖定的物件一起使用，因此當使用者四處移動物件時，應用程式行一律會顯示在最接近使用者的物件端。 雖然這不是 billboarding 的，但它實際上可達到相同的結果;防止使用者的位置遮蔽或封鎖可從環境中的不同位置取得的功能。 <br>
+        由於這個模式會與全球鎖定的物件一起使用，因此當使用者四處移動物件時，應用程式行一律會顯示在最接近使用者的物件端。 雖然在技術上並不 billboarding，但這項功能實際上也達到相同的結果。 防止使用者的位置遮蔽或封鎖可從環境中的不同位置取得的功能。 <br>
         <br>
         *影片迴圈：流覽全像投影，應用程式行*
     :::column-end:::
@@ -93,7 +93,7 @@ ms.locfileid: "94703054"
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 的 MRTK (混合現實工具組) 中的周框方塊
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供周框方塊和應用程式行的腳本和 prefabs。 只要在任何物件上指派 BoundingBox.cs 腳本，就可以新增周框方塊。
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供周框方塊和應用程式行的腳本和 prefabs。 您可以藉由將 BoundingBox.cs 腳本指派給任何物件，來新增周框方塊。
 
 * [MRTK 周框方塊](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)
 
@@ -103,7 +103,7 @@ ms.locfileid: "94703054"
 ---
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

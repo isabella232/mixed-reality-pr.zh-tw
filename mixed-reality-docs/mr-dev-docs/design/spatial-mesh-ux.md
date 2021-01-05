@@ -1,45 +1,47 @@
 ---
 title: 空間網格視覺效果
+description: 瞭解裝置如何使用空間網格來瞭解實體環境。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: ec887f73b8561e0a91740d612227411683707364
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ffa13da6762b803ba2a3f370308ac2af65164ecf
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703294"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848187"
 ---
 # <a name="spatial-mesh"></a>空間網格
 
 ![空間網格](images/MRTK_PulseShader_SpatialMesh.gif)
 
-透過空間網格視覺效果，使用者可以瞭解裝置如何感覺並瞭解實體環境。 除了提供空間內容，適當的空間網格視覺效果也可以建立趣味性兼具和神奇體驗。  
+使用者瞭解裝置如何透過空間網格視覺效果來理解及瞭解實體環境。 適當的空間網格視覺效果可在提供空間內容時建立趣味性兼具和神奇體驗。  
 
 ## <a name="design-guideline"></a>設計指導方針
-因為允許使用者專注並與內容互動，所以背景中空間網格的連續和重複視覺效果可能會造成干擾。 建議您在初始啟動時，或在使用者顯示明確的意圖，藉由目標和空中點擊空間來查看環境網格，以謹慎地將環境視覺化。 您可以在 HoloLens shell 中觀察此行為。
+
+請務必讓使用者專注並與內容互動。 背景中空間網格的連續視覺效果可能會造成干擾。 建議您在初始啟動時，或當使用者清楚地顯示其想要依目標和空中點擊空間來查看環境網格時，謹慎地視覺化環境。 您可以在混合實境入口中觀察這項行為。
 <br>
 
-
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>適用于 Unity 的 MRTK (混合現實工具組) 的空間網格視覺效果
+
 MRTK 為空間網格視覺效果提供數種材質。
 
 - **MRTK_Wireframe，MRTK_Wireframe** 的材質：預設的靜態空間網格材質，顯示沒有動畫的網格輪廓。 這項資料適用于偵錯工具，因為它會顯示整個空間網格幾何。 但是，不建議用於生產環境。
 <br>
 <img src="images/SurfaceReconstruction.jpg" alt="Wireframe spatial mesh visualization" width="640px">
 
-- **MRTK_SurfaceReconstruction** 的材質：此材質提供您對空間網格的動畫脈衝效果。 您可以使用這項資料，在您的體驗特定時刻或使用者的點擊輸入，將環境視覺化。 如需範例，請參閱 **PulseShaderExamples unity** 場景。
+- **MRTK_SurfaceReconstruction** 的材質：此材質提供您對空間網格的動畫脈衝效果。 您可以使用這份資料，在特定時間或使用者的按兩下輸入時，將環境視覺化。 如需範例，請參閱 **PulseShaderExamples unity** 場景。
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* 如需詳細資訊，請參閱 [MRTK-空間感知](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 和 [MRTK-脈衝著色器](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html) 。
+* 如需詳細資訊，請參閱 [MRTK-空間感知](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 和 [MRTK-脈衝著色器](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html)。
 
 <br>
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

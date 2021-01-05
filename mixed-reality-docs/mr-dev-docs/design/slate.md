@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、平板、MRTK、混合現實工具組
-ms.openlocfilehash: 85aa91793da9022080c95775bbfd1e4775ea05d8
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703326"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848225"
 ---
 # <a name="slate"></a>平板
 
 ![平板](images/UX_Hero_Slate.jpg)
 
-「平板」是一種精簡的視窗樣式控制項，可顯示2D 內容。 例如，您可以使用它來顯示純文字、影像或檔。 它提供 grabbable 的標題列，其中包含 [ (追蹤) ] 和 [關閉] 功能的按鈕。 您可以透過 [直接操作](direct-manipulation.md#2d-slate-interaction) （如同實體觸控畫面）來滾動平板內的內容。 您也可以使用注視、按兩下和拖曳手勢或移動控制器指標。
+「平板」是一種精簡的視窗樣式控制項，用來顯示2D 內容，例如純文字、影像或檔。 一台平板提供 grabbable 標題列，其中含有「 (追蹤) 」和「關閉」功能的按鈕。 您可以透過 [直接操作](direct-manipulation.md#2d-slate-interaction) （如同實體觸控畫面）來滾動平板內的內容。 您也可以使用注視、點一下和拖曳手勢或移動控制器指標。
 
 <br>
 
@@ -31,7 +31,7 @@ ms.locfileid: "94703326"
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

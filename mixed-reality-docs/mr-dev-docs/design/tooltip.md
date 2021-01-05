@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、工具提示、MRTK、混合現實工具組
-ms.openlocfilehash: a182b9100341709dfb78ab188cbff2bd7ed3512e
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703234"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848126"
 ---
 # <a name="tooltip"></a>工具提示
 
@@ -31,7 +31,7 @@ ms.locfileid: "94703234"
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

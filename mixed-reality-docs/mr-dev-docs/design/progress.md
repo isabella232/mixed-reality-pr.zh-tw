@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、控制項、ui、ux、進度指標、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: aa74ae1bf9dae9831743aeaf6ce18df196784ded
-ms.sourcegitcommit: bec6029b2780c54cc04a45ef7ae5df3f5b4727c1
+ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/01/2020
-ms.locfileid: "96470510"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848286"
 ---
 # <a name="progress-indicator"></a>進度指示器
 
@@ -19,7 +19,7 @@ ms.locfileid: "96470510"
 
 <img src="images/MRTK_ProgressIndicator.gif" alt="Progress ring example in HoloLens" width="940px">
 
-進度控制項為使用者提供回饋，告知正在進行長時間執行的操作。 根據所使用的指示器，它可以表示在進度指示器可見的時候，使用者無法與 App 互動，也可以指示可能需要等待多久的時間。
+進度控制項可提供執行長時間執行作業的意見反應。 當進度指標可見時，使用者可以看到等待時間，而且無法與應用程式互動。
 
 <br>
 
@@ -27,7 +27,7 @@ ms.locfileid: "96470510"
 
 ## <a name="types-of-progress"></a>進度的類型
 
-請務必提供有關所發生情況的使用者資訊。 如果您的應用程式沒有提供良好的視覺效果意見反應，則在混合現實的使用者中，實體環境或物件很容易就會有問題。 在需要幾秒鐘的情況下（例如，當資料正在載入或場景正在更新時），最好是顯示視覺指標。 有兩個選項可讓使用者顯示作業正在進行中– **進度** 列或 **進度環形**。
+請務必提供有關所發生情況的使用者資訊。 在混合的情況下，如果您的應用程式沒有良好的視覺效果意見反應，就可以輕鬆地將使用者的注意力帶到實體環境或物件。 在需要幾秒鐘的情況下（例如資料載入或場景正在進行更新時），最好是顯示視覺指標。 有兩個選項可讓使用者顯示作業正在進行中– **進度** 列或 **進度環形**。
 
 :::row:::
     :::column:::
@@ -49,13 +49,13 @@ ms.locfileid: "96470510"
 :::row:::
     :::column:::
         ### <a name="progress-ringbr"></a>進度環<br>
-        只有在作業完成之後，才會封鎖進度環形的狀態，而且應該在任何進一步的使用者互動時使用。<br>
+        進度環形只有不定狀態，而且應該在作業完成之前封鎖使用者互動時使用。<br>
         <br>
         *影像： HoloLens 的進度環形範例*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens 的進度環形範例](images/640px-progressring.jpg)<br>
+       ![HoloLens 裝置上的進度環形範例](images/640px-progressring.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -98,7 +98,7 @@ ms.locfileid: "96470510"
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

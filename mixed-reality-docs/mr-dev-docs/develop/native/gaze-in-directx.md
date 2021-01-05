@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 眼睛、頭部眼、前端追蹤、眼睛追蹤、directx、輸入、全像投影、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4e8c638d91125a30cb4121b09a699f9ff6db5892
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613042"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848093"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX 中的列印頭和眼睛輸入
 
@@ -84,6 +84,7 @@ if (pointerPose)
 2. 啟用套件資訊清單中的「注視輸入」功能。
 
 ### <a name="requesting-access-to-eye-gaze-input"></a>要求存取眼睛輸入
+
 當您的應用程式啟動時，請呼叫 [EyesPose：： RequestAccessAsync](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.requestaccessasync#Windows_Perception_People_EyesPose_RequestAccessAsync) 來要求存取眼睛追蹤。 系統會視需要提示使用者，並在授與存取權之後傳回 [GazeInputAccessStatus：：「允許](https://docs.microsoft.com//uwp/api/windows.ui.input.gazeinputaccessstatus) 」。 這是非同步呼叫，因此需要一些額外的管理。 下列範例會啟動卸離的 std：： thread 以等候結果，而該結果會儲存至名為 *m_isEyeTrackingEnabled* 的成員變數。
 
 ```cpp
@@ -146,6 +147,7 @@ if (Windows::Perception::People::EyesPose::IsSupported() &&
 ```
 
 ### <a name="getting-the-eye-gaze-ray"></a>取得眼睛光線
+
 當您取得 ET 的存取權之後，就可以自由抓取每個畫面的眼睛光線。
 如同前端，請使用所需的時間戳記和座標系統來呼叫[SpatialPointerPose：： TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) ，以取得[SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) 。 SpatialPointerPose 包含透過[眼睛](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.eyes)屬性的[EyesPose](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose)物件。 只有在已啟用眼睛追蹤的情況下，此值才會是 null。 從該處，您可以藉由呼叫 [EyesPose：： IsCalibrationValid](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)，檢查裝置中的使用者是否有眼睛追蹤校正。  接下來，使用 [眼睛屬性來](https://docs.microsoft.com//uwp/api/windows.perception.people.eyespose.gaze#Windows_Perception_People_EyesPose_Gaze) 取得包含眼睛的位置和方向的 [SpatialRay](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialray) 。 注視屬性有時可以是 null，因此請務必檢查此值。 發生這種情況的原因是，已校正的使用者暫時關閉其眼睛。
 
@@ -174,7 +176,8 @@ if (pointerPose)
 ```
 
 ## <a name="fallback-when-eye-tracking-isnt-available"></a>當眼睛追蹤無法使用時回復
-如同我們的 [眼睛追蹤設計](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available)檔中所述，設計人員和開發人員都應該留意可能無法使用眼睛追蹤資料的情況。
+
+如同我們的 [眼睛追蹤設計](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available)檔中所述，設計人員和開發人員都應該留意可能無法使用眼睛追蹤資料的情況。
 
 資料無法使用的原因有很多種：
 * 未進行校正的使用者
@@ -190,11 +193,12 @@ if (pointerPose)
 * 確認使用者已為您的應用程式提供使用其眼睛追蹤資料的許可權：取出目前的 _' GazeInputAccessStatus '_。 有關如何進行這項操作的範例，請參閱 [要求存取注視輸入](https://docs.microsoft.com/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input)的說明。   
 
 您也可能想要在收到的眼睛追蹤資料更新之間加上超時時間，以檢查您的眼睛追蹤資料是否已過時，如以下所述，則改回前端。   
-如需詳細資訊，請流覽我們的回溯 [設計考慮](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-is-not-available) 。
+如需詳細資訊，請流覽我們的回溯 [設計考慮](../../design/eye-tracking.md#fallback-solutions-when-eye-tracking-isnt-available) 。
 
 <br>
 
 ## <a name="correlating-gaze-with-other-inputs"></a>將注視與其他輸入相互關聯
+
 有時您可能會發現您需要的 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) 與過去的事件相對應。 例如，如果使用者進行了點擊，您的應用程式可能會想要知道他們正在查看的內容。 基於這個目的，只要將 [SpatialPointerPose：： TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) 與預測的框架時間搭配使用，就會因為系統輸入處理和顯示時間之間的延遲而不正確。 此外，如果針對目標使用眼睛，我們的眼睛通常會在完成認可動作之前繼續進行。 這對簡單的分流來說比較不成問題，但在結合長聲音命令與快速的移動時變得更重要。 處理此案例的其中一種方式是使用對應至輸入事件的歷程時間戳記，對  [SpatialPointerPose：： TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp)進行額外的呼叫。  
 
 不過，針對透過 SpatialInteractionManager 進行路由的輸入，有更簡單的方法。 [SpatialInteractionSourceState](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)有自己的[TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose)函數。 呼叫以提供完全相關的 [SpatialPointerPose](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose) ，而不需要猜測。 如需有關使用 SpatialInteractionSourceStates 的詳細資訊，請參閱 DirectX 檔 [中的手和移動控制器](hands-and-motion-controllers-in-directx.md) 。
@@ -202,6 +206,7 @@ if (pointerPose)
 <br>
 
 ## <a name="calibration"></a>校正
+
 為了讓眼睛追蹤能準確地運作，每位使用者都必須經過 [眼睛追蹤使用者的校正](../../calibration.md)。 這可讓裝置為使用者調整系統，以獲得更舒適且更高品質的觀賞體驗，並同時確保一致的眼睛追蹤。 開發人員不需要在其端進行任何動作，即可管理使用者校正。 系統會在下列情況下，確定使用者會收到校正裝置的提示：
 * 使用者第一次使用裝置
 * 使用者先前退出宣告校正流程
@@ -211,7 +216,8 @@ if (pointerPose)
 
 <br>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
 * [校正](../../calibration.md)
 * [DirectX 中的座標系統](coordinate-systems-in-directx.md)
 * [HoloLens 2 上的眼睛](../../design/eye-tracking.md)

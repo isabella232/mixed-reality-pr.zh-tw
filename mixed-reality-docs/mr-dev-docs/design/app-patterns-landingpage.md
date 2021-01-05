@@ -6,14 +6,15 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX 設計、混合現實 UX、UX、應用程式模式、控制項、樣式、HoloLens、互動、空間互動、空間 UI、UX 元素、行為、建立區塊、印刷、色彩、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: c75856362f0e68eba2736105c028bff736c5932c
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703134"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97847781"
 ---
 # <a name="ux-elements-overview"></a>UX 元素總覽
+
 ## <a name="foundational-elements"></a>基本元素
 瞭解設計絕佳混合現實體驗所需的基礎元素。
 
@@ -28,10 +29,10 @@ ms.locfileid: "94703134"
 
 :::row:::
     :::column:::
-       [ ![ 印刷](images/typography-cover.png)](typography.md)樣式 **[Typography](typography.md)**
+       [ ![ 印刷](images/typography-cover.png)](typography.md)樣式 **[](typography.md)**
     :::column-end:::
     :::column:::
-       [ ![ 音效](images/spatialaudio.png)](spatial-sound-design.md) **[Sound](spatial-sound-design.md)**
+       [ ![ 音效](images/spatialaudio.png)](spatial-sound-design.md) **[](spatial-sound-design.md)**
     :::column-end:::
 :::row-end:::
 
@@ -66,10 +67,10 @@ ms.locfileid: "94703134"
 
 :::row:::
     :::column:::
-       [ ![ 手形功能表](images/UX_Hero_HandMenu.jpg)](hand-menu.md) **[Hand menu](hand-menu.md)功能表**
+       [ ![ 手形功能表](images/UX_Hero_HandMenu.jpg)](hand-menu.md) **[](hand-menu.md)功能表**
     :::column-end:::
     :::column:::
-       靠近功能表的 [ ![ 附近功能表](images/UX_Hero_NearMenu.jpg)](near-menu.md) **[Near menu](near-menu.md)**
+       靠近功能表的 [ ![ 附近功能表](images/UX_Hero_NearMenu.jpg)](near-menu.md) **[](near-menu.md)**
     :::column-end:::
     :::column:::
        [ ![ 物件集合](images/UX_Hero_ObjectCollection.jpg)](object-collection.md) **[物件集合](object-collection.md)**
@@ -105,7 +106,7 @@ ms.locfileid: "94703134"
        [ ![ 對話方塊](images/MRTK_UX_Dialog.jpg)](dialog-ui.md) **[對話方塊](dialog-ui.md)**
     :::column-end:::
     :::column:::
-       [ ![ 手動指導](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[Hand coach](hand-coach.md)**
+       [ ![ 手動指導](images/HandCoach/MRTK_handCoach.jpg)](hand-coach.md) **[](hand-coach.md)**
     :::column-end:::
     :::column:::
        [ ![ 空間網格](images/MRTK_PulseShader_SpatialMesh.gif)](spatial-mesh-ux.md) **[空間網格](spatial-mesh-ux.md)**

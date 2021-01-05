@@ -6,16 +6,16 @@ ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 混合的現實、手勢、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、bloom
-ms.openlocfilehash: 1994b38341dfdb2ef1cdb326cf7747c0af5f9c34
-ms.sourcegitcommit: 4f3ef057a285be2e260615e5d6c41f00d15d08f8
+ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
+ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94703264"
+ms.lasthandoff: 01/01/2021
+ms.locfileid: "97848165"
 ---
 # <a name="start-gesture"></a>開始手勢
 
-開始手勢是用來叫用 [開始] 功能表的手手勢。 這相當於按下鍵盤上的 Windows 鍵、Xbox 控制器上的 Xbox 按鈕，或沉浸式耳機移動控制器上的 Windows 按鈕。 請務必瞭解哪些手勢會在每個混合現實裝置上保留給系統，以避免在設計互動時產生衝突。
+開始手勢是用來叫用 [開始] 功能表的手手勢。 這相當於按下鍵盤上的 Windows 鍵、Xbox 控制器上的 Xbox 按鈕，或沉浸式耳機移動控制器上的 Windows 按鈕。 請特別注意每個混合現實裝置上的保留系統手勢，以避免在設計互動時產生衝突。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -53,7 +53,8 @@ ms.locfileid: "94703264"
 </table>
 
 ## <a name="bloom"></a>盛開
-為了啟動 HoloLens (第1代) 中的 [開始] 功能表，我們設計了「Bloom」，這是模擬花卉櫻花的符號手勢。 它是 surefooted 互動、輕鬆執行和快速回收的獨特方式。 若要在 HoloLens (第一代) 上執行 bloom 手勢，請將您的手中的手上移一層，並將您的手合在一起，然後透過散佈手指來開啟您的手。
+
+我們設計了 "Bloom"，將 HoloLens 中的 [開始] 功能表 (第一代) ，也就是模擬花卉櫻花的符號手勢。 它是確定-footed 互動、簡單易用以及快速重新叫用的獨特方式。 若要使用手勢，請將您的手中的手朝您手上一處，然後散佈手指來開啟您的手。
 
 :::row:::
     :::column:::
@@ -71,7 +72,8 @@ ms.locfileid: "94703264"
 ---
 
 ## <a name="start-gesture"></a>開始手勢
-在 HoloLens 2 中，我們將 Bloom 手勢取代為虛擬手腕按鈕，以允許不需要額外教學的更 instinctual 互動。 藉由顯示使用者手腕上的按鈕，可以直覺地聯繫，並將其與他人一起按。
+
+在 HoloLens 2 中，我們將 Bloom 手勢取代為虛擬手腕按鈕，這對使用者來說更 instinctual。 藉由顯示使用者手腕上的按鈕，可以直覺地聯繫，並將其與他人一起按。
 
 :::row:::
     :::column:::
@@ -88,7 +90,6 @@ ms.locfileid: "94703264"
 
 ---
 
-
 ## <a name="one-handed-start-gesture"></a>單向開始手勢
 
 > [!IMPORTANT]
@@ -97,7 +98,7 @@ ms.locfileid: "94703264"
 > 1. 您必須更新為2019年11月更新 (組建 18363.1039) 或更新版本。
 > 1. 您的眼睛必須在裝置上校正，讓眼睛追蹤能夠正常運作。 如果您看不到 [開始] 圖示周圍的軌道點，則裝置上不會校正您的眼睛。
 
-您也可以只使用一手勢來執行開始手勢。 若要這樣做，請向您的手中拿出手，並查看您內部手腕上的 [ **開始] 圖示** 。 **當您隨時留意圖示時**，請將您的 thumb 和索引手指放在一起。<br>
+您也可以只使用一手勢來使用開始手勢。 將您手上的手向您手上，看看您的內部手腕上的 [ **開始] 圖示** 。 **當您隨時留意圖示時**，請將您的 thumb 和索引手指放在一起。<br>
 :::row:::
     :::column:::
         ![手腕按鈕就緒](images/wrist-button-ready.png)<br>
@@ -113,7 +114,7 @@ ms.locfileid: "94703264"
 
 ---
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [本能互動](interaction-fundamentals.md)
 * [眼睛](eye-tracking.md)
