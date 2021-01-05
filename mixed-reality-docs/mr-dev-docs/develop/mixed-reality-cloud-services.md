@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: f69ec9672898caf01092d805e5c83df48a14a65e
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925927"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865403"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
@@ -28,7 +28,7 @@ ms.locfileid: "96925927"
 ### <a name="azure-remote-rendering"></a>Azure 遠端轉譯
 Azure 遠端轉譯 (或簡稱 ARR) 是一項服務，可讓您即時轉譯高度複雜的 3D 模型，並將其串流至裝置。 ARR 目前處於公開預覽階段，可新增至以 HoloLens 2 或 Windows 桌上型電腦為目標的 Unity 或原生 C++ 專案。
 
-![ 遠端轉譯影像](../design/images/RemoteRendering.jpg)
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Intro-to-Azure-Mixed-Reality-Services-Azure-Remote-Rendering/player]
 
 對於任何在未連線的裝置上執行的混合實境應用程式而言，ARR 是不可或缺的元件，因為這類應用程式的計算轉譯能力較低。 以下列兩相比較的引擎模型為例：左邊的高逼真度模型有超過 1800 萬個三角形，而右邊逼真度較低的模型則只有約 20 萬個。 在講究各個細節的案例中 (工業設備管理、卡車引擎等資產的設計審查、外科手術術前規劃等等)，3D 視覺效果都可真實呈現出這類細節。 這可協助設計人員、工程師、醫生和學生進一步了解複雜的資訊，並做出正確的決定。 但在關鍵的商業和設計決策中，可能會因為這種簡化而失去不可或缺的重要細節。
 
