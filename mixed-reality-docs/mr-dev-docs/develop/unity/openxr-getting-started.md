@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 9e7f59c57d409d61df73e6d07659bf6c7242202c
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
+ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880595"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97905290"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
 從 Unity 2020.2 版開始，可以使用 Unity 封裝管理員 (UPM) 提供 Microsoft 的 Mixed Reality OpenXR 外掛程式套件。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 * Unity 2020.2 或更新版本
 * Unity OpenXR 外掛程式0.1.1 或更新版本
@@ -126,7 +126,11 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 
 現在您已將專案設定為 OpenXR 並可存取範例，請查看我們的 OpenXR 外掛程式目前支援的 [功能](openxr-supported-features.md) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="have-feedback"></a>有任何意見反應嗎？
+
+OpenXR 仍是實驗性的，因此我們會感謝您提供給我們的意見反應，以協助您更妥善地進行。 您可以使用 **Microsoft** OpenXR 標記您的論壇文章，並 [](https://aka.ms/unityforums)  +   **HoloLens 2** 或 **Windows Mixed Reality**，在 Unity 論壇中找到我們。
+
+## <a name="see-also"></a>另請參閱
 
 * [在沒有 MRTK 的情況下設定專案](configure-unity-project.md)
 * [Unity 的建議設定](recommended-settings-for-unity.md)
