@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 158bb9d50e8d288cf4fc345b5f5e210f113146ae
-  ms.sourcegitcommit: 856a1a48f05dd84f884a6e64bef4003e3768e669
+  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
+  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 12/04/2020
-  ms.locfileid: "96604811"
+  ms.lasthandoff: 01/06/2021
+  ms.locfileid: "97905280"
 highlightedContent:
   items:
   - title: 什麼是混合實境？
@@ -69,16 +69,16 @@ productDirectory:
     links:
     - url: develop/development.md
       text: 選擇您的技術路徑
-    - url: develop/install-the-tools.md
-      text: 安裝工具
+    - url: develop/features-and-samples.md
+      text: 尋找範例和功能應用程式
     - url: develop/unity/unity-development-overview.md
       text: 開始使用 Unity
     - url: develop/unreal/unreal-development-overview.md
       text: 開始使用 Unreal
     - url: develop/porting-apps/porting-overview.md
       text: 移植現有的應用程式
-    - url: develop/porting-apps/porting-hl1-hl2.md
-      text: 讓應用程式做好使用 HoloLens 2 的準備
+    - url: distribute/distribute-overview.md
+      text: 發佈您的應用程式
   - title: 部署
     imageSrc: images/icon-distribution.jpg
     links:
@@ -90,8 +90,8 @@ productDirectory:
       text: 註冊您的裝置
     - url: https://docs.microsoft.com/hololens/hololens-updates
       text: 管理您的 HoloLens 更新
-    - url: https://docs.microsoft.com/hololens/hololens-release-notes
-      text: 版本資訊
+    - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+      text: 使用 Remote Assist 進行雲端連線部署
     - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
       text: 疑難排解與支援
 conceptualContent:
@@ -186,60 +186,3 @@ tools:
   - title: OpenXR API
     imageSrc: images/Final_mrdl_logo.png
     url: https://www.khronos.org/registry/OpenXR/specs/1.0/man/html/openxr.html
-additionalContent:
-  sections:
-  - title: 其他資源
-    summary: 讓您的應用程式準備好進行商業部署、整合 Azure 雲端服務，或測試我們的範例應用程式。
-    items:
-    - title: 散佈
-      links:
-      - text: 散佈概觀
-        url: distribute/distribute-overview.md
-      - text: 設計 3D 應用程式啟動器
-        url: distribute/3d-app-launcher-design-guidance.md
-      - text: 建立混合實境首頁的 3D 模型
-        url: distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md
-      - text: 在 UWP 應用程式中實作 3D 應用程式啟動器
-        url: distribute/implementing-3d-app-launchers.md
-      - text: 新增應用程式內購買
-        url: distribute/in-app-purchases.md
-      - text: 提交至 Microsoft Store
-        url: distribute/submitting-an-app-to-the-microsoft-store.md
-    - title: Dynamics 365 Mixed Reality
-      links:
-      - text: Dynamics 365 文件
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/
-      - text: 使用遠端協助
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/overview-hololens
-      - text: 使用者指南
-        url: https://docs.microsoft.com/dynamics365/mixed-reality/guides/
-      - text: 遠端協助學習模組
-        url: https://docs.microsoft.com/learn/browse/?products=dynamics-remote-assist
-    - title: Azure 雲端服務
-      links:
-      - text: 雲端服務概觀
-        url: develop/mixed-reality-cloud-services.md
-      - text: 跳入 Azure Spatial Anchors
-        url: https://docs.microsoft.com/azure/spatial-anchors/
-      - text: Azure Spatial Anchors 教學課程
-        url: develop/unity/tutorials/mr-learning-asa-01.md
-      - text: 使用 Azure 遠端轉譯進行開發
-        url: https://docs.microsoft.com/azure/remote-rendering/
-      - text: Azure 遠端轉譯教學課程
-        url: https://docs.microsoft.com/en-us/azure/remote-rendering/tutorials/unity/tutorial-landing
-    - title: HoloLens 2 範例應用程式
-      links:
-      - text: 表面
-        url: develop/unity/sampleapp-surfaces.md
-      - text: 元素週期表 2.0
-        url: https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158
-      - text: Galaxy Explorer 2.0
-        url: develop/unity/galaxy-explorer-update.md
-    - title: 學習模組
-      links:
-      - text: 混合實境簡介
-        url: https://docs.microsoft.com/learn/modules/intro-to-mixed-reality/
-      - text: 在 Unity 中使用混合實境工具組來設定混合實境專案
-        url: https://docs.microsoft.com/learn/modules/mixed-reality-toolkit-project-unity/
-      - text: 使用 Unity 和 Azure 認知服務建立語言翻譯工具應用程式
-        url: https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/
