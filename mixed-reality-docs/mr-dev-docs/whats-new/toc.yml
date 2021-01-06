@@ -1,4 +1,19 @@
-# - name: Learn about Azure Services 
+- name: 探索 Designing Holograms 應用程式
+  href: ../discover/designing-holograms.md
+- name: 全新的混合實境學習模組
+  href: ../discover/mr-learning-overview.md
+- name: 了解 Azure 混合實境雲端服務
+  href: ../develop/mixed-reality-cloud-services.md
+- name: 開始使用 Unity 中的 OpenXR
+  href: ../develop/unity/openxr-getting-started.md
+- name: 使用全新的 HP Reverb G2 控制器
+  items:
+    - name: Unity
+      href: ../develop/unity/unity-reverb-g2-controllers.md
+    - name: Unreal
+      href: ../develop/unreal/unreal-reverb-g2-controllers.md
+- name: 將應用程式散發到全球
+  href: ../distribute/distribute-overview.md
 - name: 準備好使用新的 Microsoft Edge
   href: new-microsoft-edge.md
 - name: 計畫和活動
