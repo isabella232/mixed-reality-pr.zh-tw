@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: e55c66599e47abff35b872a494a6afbb48774171
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 8f6ba747c2f336194cb30241dce18bc1138143f2
+ms.sourcegitcommit: b331ec40b1e8869e6a6e7b2e32a03ff68e04b956
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859517"
+ms.lasthandoff: 01/06/2021
+ms.locfileid: "97956061"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中取得電腦相容性的協助
 
@@ -27,13 +27,32 @@ ms.locfileid: "97859517"
 > * 檢查 [建議的介面卡](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) 清單
 > * 選取 [開始 > 設定]，以更新您的圖形驅動程式 **> 更新 & 安全性 > 檢查更新** 
 
+如果您想要取得連絡人，您可以 [詢問該社區](https://answers.microsoft.com)、 [聯絡支援](https://support.microsoft.com/contactus/)或移至 [疑難排解](troubleshooting-windows-mixed-reality.md) 資訊。
+
 ## <a name="youre-good-to-go"></a>您已經準備好了
 
 好消息，如果您看到的 **是好** 消息，您的電腦就可以 Windows Mixed Reality 執行！ 電腦硬體和設定之間仍有變化，因此每台電腦上的混合現實體驗可能不會相同。
 
 ## <a name="supports-some-features"></a>支援某些功能
 
-如果您看到 [ **支援某些功能** ] 訊息，則您的電腦可以執行某些 Windows Mixed Reality 經驗，但可能無法提供最佳體驗。 可能的缺點包括延遲圖形、效能點擊，以及一些您無法執行的應用程式和遊戲。 我們已列出您可能會看到的訊息，以及下面所要採取的動作。
+如果您看到 [ **支援某些功能** ] 訊息，則您的電腦可以執行某些 Windows Mixed Reality 經驗，但可能無法提供最佳體驗。 可能的缺點包括延遲圖形、效能點擊，以及一些您無法執行的應用程式和遊戲。 我們已列出您可能會看到的訊息，以及其處理方式：
+
+* [這部電腦有一個具有單一通道 RAM 的整合式圖形配接器](#this-pc-has-an-integrated-graphics-card-with-single-channel-ram)
+* [這部電腦具有混合式圖形設定與不相容的 PCIe 連結](#this-pc-has-a-hybrid-graphics-configuration-with-an-incompatible-pcie-link)
+* [此電腦的圖形驅動程式可能無法搭配 Windows Mixed Reality](#this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality)
+* [此電腦的處理器可能無法搭配 Windows Mixed Reality](#this-pcs-processor-might-not-work-well-with-windows-mixed-reality)
+* [這部電腦可能沒有相容的 USB 設定](#this-pc-might-not-have-a-compatible-usb-configuration)
+* [這部電腦沒有藍牙4.0 適用于控制器](#this-pc-doesnt-have-bluetooth-40-for-controllers)
+* [根據您的耳機，您可能需要 Bluetooth 介面卡才能使用移動控制器](#depending-on-your-headset-you-may-need-a-bluetooth-adapter-to-use-motion-controllers)
+* [這部電腦沒有自我供電的 USB 埠](#this-pc-doesnt-have-a-self-powered-usb-port)
+* [此電腦的圖形配接器無法搭配 Windows Mixed Reality](#this-pcs-graphics-card-wont-work-with-windows-mixed-reality)
+* [這部電腦的圖形驅動程式無法使用 Windows Mixed Reality](#this-pcs-graphics-driver-wont-work-with-windows-mixed-reality)
+* [此電腦的處理器無法搭配 Windows Mixed Reality](#this-pcs-processor-wont-work-with-windows-mixed-reality)
+* [這部電腦沒有足夠的可用磁碟空間來執行 Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
+* [這部電腦執行的 Windows 版本不支援 Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
+* [這部電腦未執行最新版本的 Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [這部電腦沒有 USB 3.0 埠](#this-pc-has-no-usb-30-port)
+* [您無法透過遠端桌面執行此應用程式](#you-cant-run-this-app-via-remote-desktop)
 
 ### <a name="this-pc-has-an-integrated-graphics-card-with-single-channel-ram"></a>這部電腦有一個具有單一通道 RAM 的整合式圖形配接器
 
@@ -161,10 +180,11 @@ Windows Mixed Reality 需要 Windows 10 Fall Creators Update。 請[更新您的
 
 某些硬體設定可能會導致 Windows Mixed Reality 的效能問題。 針對緩慢載入、不穩定的視覺效果或不良的視覺品質等問題，請嘗試下列常見的修正：
 
-* 關閉在電腦桌面上執行的任何開啟的應用程式。
+* 關閉任何在您電腦桌面上執行的開啟應用程式
 * 如果您使用的是 USB 或 DisplayPort 至 HDMI 介面卡，請試著另一個。 查看建議的介面卡
-* 如果有額外的監視器連接到電腦的圖形配接器，請將它們中斷連接。
-* 嘗試從 Windows 市集中下載一些不同的混合現實應用程式，有些應用程式可能更適合您的電腦設定。
+* 如果有額外的監視器連接到電腦的圖形配接器，請將它們中斷連接
+* 嘗試從 Windows 市集中下載一些不同的混合現實應用程式，有些應用程式可能更適合您的電腦設定
+* 查看我們的 [效能問題檔](performance-questions.md)
 
 如果您仍有效能問題，請更新下列 [Windows Mixed Reality](set-up-windows-mixed-reality.md) 設定，以獲得最佳的使用者體驗：
 
@@ -178,7 +198,7 @@ Windows Mixed Reality 需要 Windows 10 Fall Creators Update。 請[更新您的
 
 ## <a name="working-with-steamvr"></a>使用 SteamVR
 
-享受 SteamVR 的遊戲是一個絕佳的方式，可體驗 VR 所提供的所有功能。 不過，您會想要確定您是從沉浸式裝置獲得最佳效能。 當 [您安裝了](https://store.steampowered.com/about)串流之後：
+享受 SteamVR 的遊戲是一個絕佳的方式，可體驗 VR 所提供的所有功能。 不過，您會想要確定您是從沉浸式裝置 [獲得最佳效能](performance-questions.md) 。 當 [您安裝了](https://store.steampowered.com/about)串流之後：
 
 * 遵循[使用 SteamVR 搭配 Windows Mixed Reality](using-steamvr-with-windows-mixed-reality.md)的指示
 * 安裝 [SteamVR 效能測試](https://store.steampowered.com/app/323910/SteamVR_Performance_Test) 應用程式
@@ -196,9 +216,3 @@ Windows Mixed Reality 需要 Windows 10 Fall Creators Update。 請[更新您的
 > [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
 您隨時都可以回到 [VR 旅程](vr-journey.md) 。
-
-## <a name="see-also"></a>請參閱
-
-* [詢問社群](https://answers.microsoft.com)
-* [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
-* [疑難排解](troubleshooting-windows-mixed-reality.md)
