@@ -6,21 +6,26 @@ ms.author: mazeller
 ms.date: 11/13/2020
 ms.topic: article
 keywords: Microsoft Store、HoloLens、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 92de6072300ed94873cc68dfa78531da4685d274
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 7b1953fe0244b06f019f0e28432b7f9be9c21081
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757836"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031974"
 ---
 # <a name="submitting-an-app-to-the-microsoft-store"></a>將應用程式提交到 Microsoft Store
 
 > [!IMPORTANT]
-> 如果您要提交 Unreal 應用程式，請務必遵循此處的 **[發佈指示](../develop/unreal/unreal-publishing-to-store.md)** ，再繼續進行操作。
+> 如果您要提交 Unreal 應用程式，請務必遵循 **[發佈指示](../develop/unreal/unreal-publishing-to-store.md)** ，再繼續進行操作。
+
+## <a name="prerequisites"></a>先決條件
 
 [HoloLens](../hololens-hardware-details.md)和 Windows 10 PC 都能為您的[沉浸式耳機](../discover/immersive-headset-hardware-details.md)執行通用 Windows 平臺應用程式。 無論您是提交支援 HoloLens、電腦或兩者的應用程式，提交應用程式都會經歷 [合作夥伴中心](https://partner.microsoft.com/dashboard)。
 
-如果您還沒有合作夥伴中心開發人員帳戶，請先 [註冊](https://developer.microsoft.com/store/register) 一個帳戶，再繼續進行。
+如果您還沒有合作夥伴中心開發人員帳戶，請先 [註冊](https://developer.microsoft.com/store/register) 一個帳戶，再繼續進行。 您可以在此 [應用程式提交文章](https://docs.microsoft.com/windows/uwp/publish/app-submissions)中找到有關提交指導方針和檢查清單的詳細資訊。
+
+> [!IMPORTANT]
+> 如果您的合作夥伴中心開發人員帳戶無法進行雇用驗證檢查，您將無法將任何應用程式提交至 Microsoft Store。 如需詳細資訊，請洽詢合作夥伴中心 [支援小組](https://developer.microsoft.com/windows/support) 。
 
 ## <a name="packaging-a-mixed-reality-app"></a>封裝混合現實應用程式
 
@@ -266,7 +271,7 @@ Windows 通用平臺可讓您建立在所有 Windows 10 裝置系列上執行的
 
 在許多情況下，您的取用者在購買 Windows Mixed Reality 的沉浸式耳機之前，將會受到限制，不會有虛擬實境的體驗。 他們可能不知道要從密集遊戲的期望，或是想要在沉浸式體驗中熟悉他們自己的緩和閾值。 許多客戶也可以嘗試在未徽章為 [Windows Mixed Reality 電腦](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)的電腦上 Windows Mixed Reality 沉浸式耳機。 基於這些考慮，強烈建議您考慮為您的付費混合現實應用程式或遊戲提供 [免費試用](https://docs.microsoft.com/windows/uwp/publish/set-app-pricing-and-availability#free-trial) 。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [什麼是混合現實？](../discover/mixed-reality.md)
 * [開發概觀](../develop/development.md)
 * [應用程式檢視](../design/app-views.md)

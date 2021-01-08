@@ -3,12 +3,12 @@ title: 使用 SteamVR 搭配 Windows Mixed Reality
 description: 瞭解如何在使用相容電腦的 Windows Mixed Reality 耳機和控制器上設定及播放 SteamVR 遊戲。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006898"
+ms.locfileid: "98031964"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
 
@@ -18,14 +18,18 @@ ms.locfileid: "98006898"
 
 * 確定您沒有任何擱置中的更新：選取 [ **開始 > 設定] > 更新 & 安全性 > Windows Update**。 如果有可用的更新，請選取 [ **立即安裝**]。 如果沒有可用的更新，請選取 [ **檢查更新**]，然後安裝任何新的更新。
 * 電腦需求會因流上的應用程式和內容而有所不同。 查看每個標題的最低需求。 具有 GTX 1070 圖形配接器 (或對等) 的電腦，以及 Intel® Core™ i7 處理器都應為廣泛的標題提供良好的體驗。
+* 設定 [Windows Mixed Reality](set-up-windows-mixed-reality.md) （如果您尚未安裝）。 
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>設定 SteamVR 的 Windows Mixed Reality
 
-1. 設定 [Windows Mixed Reality](set-up-windows-mixed-reality.md) （如果您尚未這樣做）
-2. 安裝 [串流](http://store.steampowered.com/about/) 和 **登** 入，或 **建立新的帳戶。**
-3. 安裝 [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)。 當您的耳機插入電源時，啟動串流，您應該會看到一個對話方塊，提示您安裝 SteamVR。 依照對話方塊上的提示進行安裝。
+1. [下載並安裝 SteamVR。](https://steamcdn-a.akamaihd.net/client/installer/SteamWindowsMRInstaller.exe)
+2. 準備好時，請啟動 SteamVR。 SteamVR 教學課程應該會自動啟動。
+
+> **注意：** 若要進行 SteamVR 設定的 advanced 疑難排解，請確定您已安裝下列軟體元件：
+> 1. 安裝 [串流](http://store.steampowered.com/about/) 和 **登** 入，或 **建立新的帳戶。**
+> 2. 安裝 [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)。 當您的耳機插入電源時，啟動串流，您應該會看到一個對話方塊，提示您安裝 SteamVR。 依照對話方塊上的提示進行安裝。
     * 如果您沒有看到快顯視窗，請流覽至 *媒體* 櫃的 [*工具*] 區段來安裝 SteamVR。 在清單中找出 SteamVR，然後以滑鼠右鍵按一下並選取 [ *安裝遊戲*]。
-4. 安裝 [適用于 SteamVR 的 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)。
+> 3. 安裝 [適用于 SteamVR 的 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)。
 
 ## <a name="play-steamvr-games"></a>Play SteamVR 遊戲
 
@@ -155,7 +159,7 @@ Red = 動作 reprojection 是關閉的，因為應用程式的執行速度低於
 
 如果您有任何問題或意見可以共用，您也可以在我們的串流 [論壇](http://steamcommunity.com/app/719950/discussions/)上聯繫我們。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [使用 Windows Mixed Reality 針對 SteamVR 進行疑難排解](steamvr-questions.md)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
