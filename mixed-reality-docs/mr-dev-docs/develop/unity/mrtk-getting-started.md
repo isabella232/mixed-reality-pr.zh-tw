@@ -1,5 +1,5 @@
 ---
-title: 開始使用 MRTK 第 2 版
+title: 適用於 Unity 的 MRTK 簡介
 description: 適用於想要使用 MRTK 的新開發人員
 author: cre8ivepark
 ms.author: dongpark
@@ -7,14 +7,15 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
-ms.openlocfilehash: a8e85e27617d5c7d616d6db75941c5cf5808f3ce
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 6887d79d4a0737f3ed0f63af5686699fc7a1a2b6
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010119"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613442"
 ---
-# <a name="getting-started-with-mrtk-for-unity"></a>開始使用適用於 Unity 的 MRTK
+# <a name="introducing-mrtk-for-unity"></a>適用於 Unity 的 MRTK 簡介
+
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
 ## <a name="what-is-mixed-reality-toolkit-mrtk"></a>混合實境工具組 (MRTK) 是什麼？

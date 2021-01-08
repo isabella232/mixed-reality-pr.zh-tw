@@ -1,17 +1,17 @@
 ---
 title: Unity 中的空間對應
-description: 在 Unity 中與您之間的真實世界幾何呈現和衝突。
+description: 瞭解如何在 Unity 混合現實應用程式中，使用及管理與您有關的真實世界幾何呈現和衝突。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 2e5518b1a54f967762143bb8602141b4199a2d54
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002513"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009288"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -484,10 +484,10 @@ Import_UnderstandingMesh –
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊： 
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊： 
 
 > [!div class="nextstepaction"]
-> [Text](text-in-unity.md)
+> [文字](text-in-unity.md)
 
 或者，直接跳到混合實境平台功能和 API 的主題：
 

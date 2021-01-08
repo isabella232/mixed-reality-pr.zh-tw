@@ -1,17 +1,17 @@
 ---
 title: Unity 中的相機
-description: 如何使用 Unity 的主要攝影機進行 Windows Mixed Reality 開發以進行全像轉譯。
+description: 瞭解如何設定及使用 Unity 的主要攝影機進行 Windows Mixed Reality 開發以進行全像轉譯。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit，mixedrealitytoolkit，mixedrealitytoolkit-unity，全像轉譯，全像全像，全像投影、全像投影、聚焦點、深度緩衝區、僅限方向、位置、不透明、透明、剪輯、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 26eb8966004c958c6063d09de891ef835d973a82
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: cd5284a8fdef7254b7d0375b57877d30f5d0d708
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010429"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006388"
 ---
 # <a name="camera-in-unity"></a>Unity 中的相機
 
@@ -97,7 +97,7 @@ HoloLens 和沉浸式耳機都會 reproject 您的應用程式所轉譯的每個
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊：
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [目光](gaze-in-unity.md)

@@ -1,17 +1,17 @@
 ---
 title: 對話
-description: 瞭解對話重迭，以及如何在混合現實應用程式中使用它們。
+description: 瞭解 MRTK 中的對話方塊覆迭，以及如何在混合現實應用程式中使用它們。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 752c4cc03c90e498664c61fa3c53b303a2a83a2f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9ef4fc5e4d781d235996a645e8d1bb81e040a64c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847447"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009048"
 ---
 # <a name="dialog"></a>對話
 

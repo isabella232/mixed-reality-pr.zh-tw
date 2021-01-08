@@ -1,17 +1,17 @@
 ---
 title: 平板
-description: 「平板」是一種精簡的視窗樣式控制項，可顯示2D 內容。
+description: 深入瞭解平板，這是一個精簡的視窗樣式控制項，可讓您使用「混合現實」工具組來顯示2D 內容。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、平板、MRTK、混合現實工具組
-ms.openlocfilehash: 53bcc9d8ac3b222e9b5a3dfcf47b327c212552d2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: cbb4a741f4f78dcad603670bc282a25bc0e70fd2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848225"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008808"
 ---
 # <a name="slate"></a>平板
 

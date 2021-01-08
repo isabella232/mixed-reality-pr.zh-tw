@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 4d945a6fbc61e56707d1e36e110a1108283b5add
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: 168d4175a7e55d5116f19c51a802c9a8abdc1e19
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102923"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530313"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 
@@ -31,8 +31,8 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>設定 HoloLens 以使用 Windows 裝置入口網站
 
 1. 開啟您的 HoloLens 並將裝置戴上。
-2. 執行 HoloLens2 的 [開始手勢](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)或 HoloLens (第 1 代) 的[綻開](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)，以啟動主功能表。 
-3. 看一下 [設定] 磚，然後執行 HoloLens (第 1 代) 的[空中點選](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap)手勢，或是在 HoloLens 2 上[觸碰或使用手部射線](https://docs.microsoft.com/hololens/hololens2-basic-usage)進行選取。 
+2. 使用 HoloLens2 的[開始手勢](https://docs.microsoft.com/hololens/hololens2-basic-usage#start-gesture)或 HoloLens (第 1 代) 的[綻開](https://docs.microsoft.com/hololens/hololens1-basic-usage#open-the-start-menu-with-bloom)，以啟動主功能表。 
+3. 注視 [設定] 圖格，並在 HoloLens (第一代) 上進行[空中點選](https://docs.microsoft.com/hololens/hololens1-basic-usage#select-holograms-with-gaze-and-air-tap)手勢。 [加以觸控或使用手部射線](https://docs.microsoft.com/hololens/hololens2-basic-usage)，也可以在 HoloLens 2 上進行選取。 
 4. 選取 [更新] 功能表項目。
 5. 選取 [適用於開發人員]  功能表項目。
 6. 啟用 [開發人員模式]。
@@ -41,7 +41,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 > 如果目前處於多重使用者模式，且您不是系統管理員，進入開發人員模式的功能可能會呈現為灰色。請確定您是 **[裝置的系統管理員](https://docs.microsoft.com/hololens/security-adminless-os)** 。
 
 7. [向下捲動](../../design/gaze-and-commit.md#composite-gestures)並啟用 **裝置入口網站**。
-8. 如果您要設定 Windows 裝置入口網站，以便透過 USB 或 Wi-Fi 將應用程式部署到此 HoloLens，請按一下 [配對] 以[產生配對 PIN](using-visual-studio.md)。 將 [設定] 應用程式保留在 [PIN] 快顯視窗中，直到您在第一次部署期間，將 PIN 輸入 Visual Studio 為止。
+8. 如果您要設定 Windows 裝置入口網站，以便透過 USB 或 Wi-Fi 將應用程式部署到此 HoloLens，請選取 [配對] 以[產生配對 PIN](using-visual-studio.md)。 將 [設定] 應用程式保留在 [PIN] 快顯視窗中，直到您在第一次部署期間，將 PIN 輸入 Visual Studio 為止。
 
 ![在 Windows 全像攝影版的 [設定] 應用程式中啟用開發人員模式](images/using-windows-portal-img-01.jpg)
 
@@ -55,7 +55,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 ![HoloLens 2 設定](images/using-windows-portal-img-02.jpg)
 
 3. 從您電腦上的網頁瀏覽器，移至 https://<YOUR_HOLOLENS_IP_ADDRESS>
-   * 瀏覽器將會顯示下列訊息：「此網站的安全性憑證有問題」。 這是因為核發給 Device Portal 的憑證是測試憑證。 您可以暫時略過這個憑證錯誤並繼續。
+   * 瀏覽器將會顯示下列訊息：「此網站的安全性憑證有問題」，因為發給裝置入口網站的憑證是測試憑證。 您可以暫時略過這個憑證錯誤並繼續。
 
 ## <a name="connecting-over-usb"></a>透過 USB 連線
 
@@ -79,7 +79,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 ## <a name="connecting-to-an-emulator"></a>連線到模擬器
 
-您也可以透過模擬器使用 Device Portal。 若要連線到裝置入口網站，請使用[工具列](using-the-hololens-emulator.md)。 按一下這個圖示：![開啟裝置入口網站圖示](images/emulator-deviceportal.png) **開啟裝置入口網站**：在模擬器中開啟 HoloLens OS 的 Windows 裝置入口網站。
+您也可以透過模擬器使用 Device Portal。 若要連線到裝置入口網站，請使用[工具列](using-the-hololens-emulator.md)。 選取此圖示：![開啟裝置入口網站圖示](images/emulator-deviceportal.png) **開啟裝置入口網站**：在模擬器中開啟 HoloLens OS 的 Windows 裝置入口網站。
 
 ## <a name="creating-a-username-and-password"></a>建立使用者名稱和密碼
 
@@ -87,8 +87,8 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 設定 Windows 裝置入口網站的存取權
 
 首次在 HoloLens 上連線到 Device Portal 時，您必須建立使用者名稱和密碼。
-1. 在您電腦上的網頁瀏覽器中，輸入 HoloLens 的 IP 位址。 [設定存取] 頁面將會開啟。
-2. 按一下或點選 [要求 PIN]，並查看 HoloLens 顯示畫面，以取得所產生的 PIN。
+1. 在您電腦上的網頁瀏覽器中，輸入 HoloLens 的 IP 位址。 [設定存取] 頁面隨即開啟。
+2. 選取或點選 [要求 PIN]，並查看 HoloLens 顯示畫面以取得產生的 PIN。
 3. 輸入 [您裝置上顯示的 PIN] 文字方塊中的 PIN。
 4. 輸入您會用來連線到 Device Portal 的使用者名稱。 它並不需要是 Microsoft 帳戶 (MSA) 或網域名稱。
 5. 輸入密碼並確認它。 密碼長度必須至少為七個字元。 它並不需要是 MSA 或網域密碼。
@@ -100,16 +100,16 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 如果您在瀏覽器中看見「憑證錯誤」，可透過與裝置建立信任關係來加以修正。
 
-每個 HoloLens 都會為其 SSL 連線產生唯一的自我簽署憑證。 根據預設，此憑證並不會受到您電腦的網頁瀏覽器信任，因此您可能會收到「憑證錯誤」。 藉由從您的 HoloLens 下載此憑證 (透過 USB 或您信任的 Wi-Fi 網路)，並在電腦上信任它，您便能安全地連線到您的裝置。
+每個 HoloLens 都會為其 SSL 連線產生自我簽署憑證。 根據預設，此憑證並不會受到您電腦的網頁瀏覽器信任，因此您可能會收到「憑證錯誤」。 透過 USB 或您信任的 Wi-Fi 網路，從您的 HoloLens 下載此憑證，並在電腦上信任該憑證，您便可安全地連線到您的裝置。
 1. **請確保您是在安全的網路上 (USB 或您信任的 Wi-Fi 網路)。**
 2. 從裝置入口網站上的 [安全性] 頁面下載此裝置的憑證。
    * 瀏覽到： https://<YOUR_HOLOLENS_IP_ADDRESS>/devicepair.htm
    * 開啟 [系統] > [喜好設定] 的節點。 
-   * 向下捲動至 [裝置安全性]，按一下 [下載此裝置的憑證] 按鈕。
+   * 向下捲動至 [裝置安全性]，選取 [下載此裝置的憑證] 按鈕。
 3. 安裝您電腦上「信任的根憑證授權」存放區中的憑證。
    * 從 [Windows] 功能表中，輸入：管理電腦憑證並啟動 applet。
    * 展開 [信任的根憑證授權] 資料夾。
-   * 按一下 [憑證] 資料夾。
+   * 選取 [憑證] 資料夾。
    * 從 [動作] 功能表中，選取：[所有工作] > [匯入]...
    * 使用您從 Device Portal 下載的憑證檔案完成憑證匯入精靈。
 4. 重新啟動瀏覽器。
@@ -144,7 +144,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 ![螢幕擷取畫面：在 Windows 裝置入口網站中開啟的 [應用程式管理員] 頁面，其中已醒目提示 [本機儲存體] 索引標籤](images/sideloading-3.png)
 
-6. 選取 [安裝] 即可起始安裝
+6. 選取 [安裝] 可開始進行安裝
  
 ![螢幕擷取畫面：在 Windows 裝置入口網站中開啟的 [應用程式管理員] 頁面，且安裝已成功完成](images/sideloading-4.png) 
 
@@ -172,8 +172,8 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 * **裝置狀態：** 監視裝置的健康狀況並報告嚴重錯誤。
 * **Windows 資訊：** 顯示 HoloLens 的名稱，以及目前安裝的 Windows 版本。
 * [喜好設定] 區段包含下列設定：
-   * **IPD**：設定瞳孔間距 (IPD)，這是使用者雙眼注視前方時，兩個瞳孔中心點之間的距離 (以公釐為單位)。 此設定會立即生效。 預設值會在您設定裝置時自動計算。
-   * **裝置名稱**：為 HoloLens 指派名稱。 在變更此值之後，必須重新啟動裝置才能生效。 按一下 [儲存] 之後，將會有對話方塊詢問您是否要立即重新啟動裝置，或稍後再重新啟動。
+   * **IPD**：設定瞳孔間距 (IPD) - 這是使用者雙眼注視前方時，兩個瞳孔中心點之間的距離 (以公釐為單位)。 此設定會立即生效。 預設值會在您設定裝置時自動計算。
+   * **裝置名稱**：為 HoloLens 指派名稱。 在變更此值之後，重新啟動裝置才能生效。 按一下 [儲存] 之後，將會有對話方塊詢問您是否要立即重新啟動裝置，或稍後再重新啟動。
    * **睡眠設定**：設定裝置在接上電源及使用電池的情況下，在進入睡眠之前所需等待的時間長度。
 
 ### <a name="3d-view"></a>3D 檢視
@@ -194,11 +194,11 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
   * **顯示範圍**：顯示檢視範圍。
   * **顯示穩定平面**：顯示 HoloLens 用來穩定動作的平面。
   * **顯示網格**：顯示代表您周遭環境的空間對應網格。
-  * **顯示空間錨點**：顯示作用中應用程式的空間錨點。 您必須按一下 [更新] 按鈕，才能取得並重新整理錨點。
+  * **顯示空間錨點**：顯示作用中應用程式的空間錨點。 選取 [更新] 按鈕，才能取得並重新整理錨點。
   * **顯示詳細資料**：隨著下列數據變更，即時顯示雙手位置、頭部旋轉四元數，以及裝置原點向量。
   * **全螢幕按鈕**：以全螢幕模式顯示 3D 檢視。 按下 ESC 以離開全螢幕檢視。
-* **表面重建**：按一下或點選 [更新] 以顯示裝置中最新的空間對應網格。 可能需要花費一些時間 (最多幾秒鐘) 才能完成完整作業。 網格並不會在 3D 檢視中自動更新，您必須手動按一下 [更新] 以取得來自裝置的最新網格。 按一下 [儲存]，將目前的空間對應網格在您的電腦上儲存為 obj 檔案。
-* **空間錨點**：按一下 [更新] 以顯示或更新作用中應用程式的空間錨點。
+* **表面重建**：選取或點選 [更新] 以顯示裝置中最新的空間對應網格。 可能需要花費一些時間 (最多幾秒鐘) 才能完成完整作業。 網格並不會在 3D 檢視中自動更新，您必須手動選取 [更新] 以取得來自裝置的最新網格。 選取 [儲存] 以將目前的空間對應網格在您的電腦上儲存為 obj 檔案。
+* **空間錨點**：選取 [更新] 以顯示或更新作用中應用程式的空間錨點。
 
 ### <a name="map-manager"></a>地圖管理員
 
@@ -211,9 +211,9 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 #### <a name="exporting-and-importing-maps"></a>匯出和匯入地圖
 
-若要匯出地圖，請按一下 [匯出系統地圖和錨點]。 這可能需要一些時間，請等候 30-60 秒，讓地圖完成匯出。 完成後，檔案就會下載到您的瀏覽器中。  
+若要匯出地圖，請選取 [匯出系統地圖和錨點]。 這可能需要一些時間，請等候 30-60 秒，讓地圖完成匯出。 完成後，檔案就會下載到您的瀏覽器中。  
 
-若要匯入地圖和錨點，請分別按一下 [上傳地圖檔案] 和 [上傳錨點檔案]，然後選取您已匯出的地圖或錨點檔案。 上傳的地圖或錨點檔案可來自您的或任何其他的 HoloLens 裝置。 
+若要匯入地圖和錨點，請分別選取 [上傳地圖檔案] 和 [上傳錨點檔案]，然後選取您已匯出的地圖或錨點檔案。 上傳的地圖或錨點檔案可來自任何其他的 HoloLens 裝置。 
 
 > [!NOTE]
 > 在 HoloLens 上，您也可以匯入和匯出空間對應資料基底。 不過，這並不適用於非 HoloLens 裝置。  
@@ -233,7 +233,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
   * **從相機呈現**：如果 [受執行中應用程式支援](mixed-reality-capture-for-developers.md#render-from-the-pv-camera-opt-in) (僅限 HoloLens 2)，則將要從相片/攝影機角度進行的擷取對齊。
   * **即時預覽品質**：選取即時預覽的螢幕解析度、畫面播放速率，以及串流速率。
 * **音訊設定** (僅限 HoloLens 2)：
-  * **音訊媒體類別**：選取要在處理麥克風時使用的類別。 **預設值** 會包含部分環境，而 **通訊** 會套用背景噪音消除。
+  * **音訊媒體類別**：選取要在處理麥克風時使用的類別。 [預設值] 會包含部分環境，而 [通訊] 會套用背景噪音消除。
   * **App 音訊增益**：套用至 App 音訊音量的增益。
   * **麥克風音訊增益**：套用至麥克風音訊音量的增益。
 * **相片和影片設定** (HoloLens 2，2004 版或更新版本)：
@@ -241,13 +241,13 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
   * **相片解析度**：相片將採用的解析度。
   * **影片解析度和畫面播放速率**：影片將採用的解析度和畫面播放速率。
   * **影片防震緩衝區**：拍攝影片時使用的緩衝區大小。 值愈高，快速移動時的補償效果愈好。
-* 按一下或點選 [即時預覽] 按鈕以顯示擷取串流。 **停止即時預覽** 將會停止擷取串流。
-* 按一下或點選 [錄製]，開始使用指定的設定來錄製混合實境串流。 **停止錄製** 將會中止並儲存錄製內容。
-* 按一下或點選 [拍攝相片]，從擷取串流中拍攝靜止影像。
-* 按一下或點選 [還原預設設定] 以還原音訊、相片和影片設定的預設設定。
+* 選取或點選 [即時預覽] 按鈕以顯示擷取串流。 **停止即時預覽** 將會停止擷取串流。
+* 選取或點選 [錄製] 來開始使用指定的設定錄製混合實境串流。 **停止錄製** 將會中止並儲存錄製內容。
+* 選取或點選 [拍攝相片] 來從擷取串流中拍攝靜止影像。
+* 選取或點選 [還原預設設定] 以還原音訊、相片和影片設定的預設設定。
 * **影片與相片**：顯示在裝置上所拍攝影片和相片擷取的清單。
 
-此頁面上的所有設定適用於使用 Windows 裝置入口網站所拍攝的擷取，但有些則適用於系統 MRC (開始功能表、硬體按鈕、全域語音命令、Miracast) 以及自訂的 MRC 錄製器。
+此頁面上的所有設定都適用於使用 Windows 裝置入口網站取得的擷取。 有些則額外適用於系統 MRC，包括 [開始] 功能表、硬體按鈕、全域語音命令、Miracast 和自訂 MRC 錄製器。
 
 |  設定  |  適用於系統 MRC  |  適用於自訂 MRC 錄製器 |
 |----------|----------|----------|
@@ -282,10 +282,10 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 *Microsoft HoloLens 上 Windows 裝置入口網站的效能追蹤頁面*
 
 從您的 HoloLens 擷取 [Windows Performance Recorder](https://msdn.microsoft.com/library/windows/hardware/hh448205.aspx) (WPR) 追蹤。
-* **可用的設定檔**：從下拉式清單選取 WPR 設定檔，然後按一下或點選 [開始] 以開始追蹤。
-* **自訂設定檔**：按一下或點選 [瀏覽]，以從您的電腦選擇 WPR 設定檔。 按一下或點選 [上傳並開始] 以開始追蹤。
+* **可用的設定檔**：從下拉式清單選取 WPR 設定檔，然後選取或點選 [開始] 以開始追蹤。
+* **自訂設定檔**：選取或點選 [瀏覽]，以從您的電腦選擇 WPR 設定檔。 選取或點選 [上傳並開始] 以開始追蹤。
 
-若要停止追蹤，請按一下 [停止] 連結。 留在此頁面上，直到追蹤檔案下載完成。
+若要停止追蹤，請選取 [停止] 連結。 留在此頁面上，直到追蹤檔案下載完成。
 
 擷取的 ETL 檔案可以在 [Windows Performance Analyzer](https://msdn.microsoft.com/library/windows/hardware/hh448170.aspx) 中開啟以進行分析。
 
@@ -304,10 +304,10 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 顯示系統診斷資訊的即時圖表，例如電源使用量、畫面播放速率與 CPU 負載。
 
 下列為可用的衡量標準：
-* **SoC 電源**：系統單晶片電源瞬間使用率 (一分鐘內的平均值)
-* **系統電源**：系統電源瞬間使用率 (一分鐘內的平均值)
+* **SoC 電源**：系統單晶片電源瞬間使用量 (一分鐘內的平均值)
+* **系統電源**：系統電源瞬間使用量 (一分鐘內的平均值)
 * **畫面播放速率**：每秒畫面格數、每秒遺失的 VBlanks 數，以及連續遺失的 VBlanks 數
-* **GPU**：GPU 引擎使用率、可用總計的百分比
+* **GPU**：GPU 引擎使用量、可用總計的百分比
 * **CPU**︰可用總計的百分比
 * **I/O**：讀取與寫入
 * **網路**：已接收與已傳送
@@ -362,7 +362,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
    3. 警告
    4. 非錯誤警告
 
-按一下或點選 [啟用] 以開始追蹤。 提供者已新增到 [啟用的提供者] 下拉式清單中。
+選取或點選 [啟用] 以開始追蹤。 提供者已新增到 [啟用的提供者] 下拉式清單中。
 * **自訂提供者**：選取自訂 ETW 提供者與追蹤層級。 依 GUID 識別提供者。 不要在 GUID 中包含括號。
 * **啟用的提供者**：列出已啟用的提供者。 從下拉式清單選取提供者，然後按一下或點選 [停用] 以停止追蹤。 按一下或點選 [全部停止] 以暫停所有追蹤。
 * **提供者歷程記錄**：顯示目前工作階段期間已啟用的 ETW 提供者。 按一下或點選 [啟用] 以啟用已停用的提供者。 按一下或點選 [清除] 以清除歷程記錄。
@@ -379,10 +379,10 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 *Microsoft HoloLens 上 Windows 裝置入口網站的模擬頁面*
 
 允許您記錄並播放輸入資料以進行測試。
-* **擷取房間**：用來下載模擬的房間檔案，其中包含針對使用者周遭環境的空間對應網格。 為房間命名，然後按一下 [擷取]，在您的電腦上將資料儲存為 .xef 檔案。 此房間檔案可以載入 HoloLens 模擬器。
-* **錄製**：檢查要錄製的串流、為錄製命名，然後按一下或點選 [錄製] 開始錄製。 使用您的 HoloLens 執行動作，然後按一下 [停止]，在您的電腦上將資料儲存為 .xef 檔案。 此檔案可以載入 HoloLens 模擬器或裝置。
+* **擷取房間**：用來下載模擬的房間檔案，其中包含針對使用者周遭環境的空間對應網格。 為房間命名，然後按一下 [擷取] 來將資料在您的電腦上儲存為 .xef 檔案。 此房間檔案可以載入 HoloLens 模擬器。
+* **錄製**：檢查要錄製的串流、為錄製命名，然後按一下或點選 [錄製] 開始錄製。 使用您的 HoloLens 執行動作，然後按一下 [停止] 來將資料在您的電腦上儲存為 .xef 檔案。 此檔案可以載入 HoloLens 模擬器或裝置。
 * **播放**：按一下或點選 [上傳錄製]，從電腦中選取 xef 檔案，並將資料傳送到 HoloLens。
-* **控制模式**：從下拉式清單中選取 [預設] 或 [模擬]，然後按一下或點選 [設定] 按鈕來選取 HoloLens 上的模式。 選擇 [模擬] 將會停用 HoloLens 上實際的感應器，並改為使用已上傳的模擬資料。 如果您切換到 [模擬]，您的 HoloLens 將不會對真實使用者做出回應，直到您切換回 [預設] 為止。
+* **控制模式**：從下拉式清單中選取 [預設] 或 [模擬]，然後按一下或點選 [設定] 按鈕來選取 HoloLens 上的模式。 選擇 [模擬] 將會停用 HoloLens 上實際的感應器，並改為使用已上傳的模擬資料。 如果您切換到 [模擬]，您的 HoloLens 不會對真實使用者做出回應，直到您切換回 [預設] 為止。
 
 ### <a name="networking"></a>網路功能
 

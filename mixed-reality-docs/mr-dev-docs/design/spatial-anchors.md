@@ -1,17 +1,17 @@
 ---
 title: 空間錨點
-description: 使用空間錨點轉譯穩定全像投影的最佳做法。
+description: 瞭解在混合現實應用程式中使用空間錨點轉譯穩定的全像影像的最佳作法。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、世界規模、世界、縮放、位置、方向、錨點、空間錨點、世界鎖定、全球鎖定、持續性、共用、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 7f6997e491f76e66845b88ea0897dbb037495ba6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848215"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009108"
 ---
 # <a name="spatial-anchors"></a>空間錨點
 

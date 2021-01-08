@@ -1,19 +1,20 @@
 ---
-title: 空間音訊教學課程-3。 從影片空間化音訊
-description: 將影片資產匯入您的 Unity 專案，並從影片 spatialize 音訊。
+title: 從影片空間化音訊
+description: 瞭解如何將影片資產匯入 Unity mixed reality 專案中，並從影片 spatialize 音訊。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器、影片匯入、影片播放工具
-ms.openlocfilehash: 46f2f88be6613096a835f04e826b776c32c1b8c2
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 211d1e32a8137444d0f33d442a60067dcd77ca36
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002623"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007409"
 ---
 # <a name="spatializing-audio-from-a-video"></a>從影片空間化音訊
+
 在 HoloLens 2 Unity 教學課程的「空間音訊」課程模組的第3章中，您將會：
 * 匯入影片並新增影片播放影片
 * 播放影片到四邊形
@@ -40,6 +41,7 @@ ms.locfileid: "97002623"
 ![階層中的影片播放影片](images/spatial-audio/video-player-in-hierarchy.png)
 
 ## <a name="play-video-onto-a-quadrangle"></a>播放影片至四邊形
+
 **影片播放影片** 物件需要有紋理的遊戲物件來呈現影片。 首先 **，以滑鼠** 按右鍵階層 **窗格，然後選擇 [** **3d 物件-> 四** 個：
 
 ![將四個階層新增至階層](images/spatial-audio/add-quad-to-hierarchy.png)
@@ -74,6 +76,7 @@ ms.locfileid: "97002623"
 ![影片播放影片屬性](images/spatial-audio/video-player-properties.png)
 
 ## <a name="spatialize-the-audio-from-the-video"></a>從影片 Spatialize 音訊
+
 在 **四** 個的 [偵測 **器**] 窗格中，建立 **音訊來源**，您將從影片將音訊傳送至該來源：
 * 按一下窗格底部的 [ **新增元件** ]
 * 新增 **音訊來源**
@@ -96,6 +99,7 @@ ms.locfileid: "97002623"
 ![影片播放影片設定音訊來源](images/spatial-audio/video-player-set-audio-source.png)
 
 ## <a name="next-steps"></a>後續步驟
+
 在 HoloLens 2 或 Unity 編輯器中試用您的應用程式。 您將會看到並聆聽影片，而影片中的音訊將會 hrtf。
 
 > [!div class="nextstepaction"]

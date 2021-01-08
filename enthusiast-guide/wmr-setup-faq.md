@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality 設定常見問題集
-description: 取得使用 Windows Mixed Reality 時的一般設定問題的解答。
+description: 取得使用 Windows Mixed Reality 應用程式和裝置時的一般設定問題的解答。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: bde88890f596e19dd9b5f9e87ceabbf91039af67
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725439"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008628"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality 設定常見問題集
 

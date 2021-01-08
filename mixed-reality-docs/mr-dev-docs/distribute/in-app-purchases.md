@@ -1,17 +1,17 @@
 ---
 title: 應用程式內建購買功能
-description: 混合現實應用程式支援應用程式內購買，但有一些工作可以進行設定。
+description: 瞭解如何在您的混合現實應用程式中，搭配 2D XAML views 和 stock Windows OS 快顯視窗使用應用程式內購買。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 應用程式內購買、hololens、XAML、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 905c1be72bf2a3d6fa167cab68a4cb71e6538acc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a87cc68f67def1d46a3a6ba352e723d356f51fa2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757777"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008668"
 ---
 # <a name="in-app-purchases"></a>應用程式內建購買功能
 

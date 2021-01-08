@@ -1,17 +1,17 @@
 ---
 title: 版本資訊-2019 年5月
-description: Windows Mixed Reality Windows 10 2019 年5月更新的版本資訊 (也稱為 19H1) 。
+description: 在2019年5月19H1 更新的 Windows Mixed Reality Windows 10 版本資訊上隨時掌握最新資訊。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: 版本資訊、版本、windows 10、組建、19h1、os、5月2019
-ms.openlocfilehash: 19444732884a87de3f28e90d656deef6e51eb191
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725919"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007118"
 ---
 # <a name="release-notes---may-2019"></a>版本資訊-2019 年5月
 

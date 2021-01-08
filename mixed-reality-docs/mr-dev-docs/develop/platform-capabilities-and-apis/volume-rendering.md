@@ -1,17 +1,17 @@
 ---
 title: 磁碟區呈現
-description: 體積型影像包含豐富的資訊，在整個磁片區中都不會有不透明度和色彩，而無法輕易地表示為表面。 瞭解如何有效率地轉譯 Windows Mixed Reality 內的體積型影像。
+description: 瞭解如何在 Windows Mixed Reality 中有效率地轉譯具有不透明度和色彩的豐富體積型影像。
 author: kevinkennedy
 ms.author: kkennedy
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 體積型映射，磁片區轉譯，效能，混合現實
-ms.openlocfilehash: c0b68a2368823e5699e24d66bfafe1e4e05bdce8
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2a76be80d786aea0c8bc1bd364155fa37d37e151
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612942"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008778"
 ---
 # <a name="volume-rendering"></a>磁碟區呈現
 

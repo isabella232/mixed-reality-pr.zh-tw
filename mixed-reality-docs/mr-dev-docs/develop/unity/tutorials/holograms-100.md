@@ -1,17 +1,17 @@
 ---
 title: MR Basics 100 - 開始使用 Unity
-description: 瞭解如何建立您的第一個基本 mixed reality "hello world" 應用程式。
+description: 瞭解如何建立您的第一個適用于 HoloLens 和 Windows Mixed Reality 裝置的基本混合現實 "hello world" 應用程式。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、HoloLens、沉浸式、vr、mr、入門、全息圖、學術、教學課程、混合現實學術、unity、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 83ca133e341688f42fa2d53b4d50f1aefa9bb39b
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678407"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006508"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR Basics 100：開始使用 Unity
 
@@ -30,7 +30,7 @@ ms.locfileid: "94678407"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>Prerequisites
 
 * [已安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦。
 
@@ -43,7 +43,7 @@ ms.locfileid: "94678407"
 若要建立及部署 UWP 應用程式，Unity 可以將專案匯出為 Visual Studio 方案，其中包含所有必要的資產和程式碼檔案。
 
 1. 啟動 Unity
-2. 選取 [**新增**]
+2. 選取 [新增]
 3. 輸入 (的專案名稱，例如 "MixedRealityIntroduction" ) 
 4. 輸入儲存專案的位置
 5. 確定已選取 **3d** 切換
@@ -223,7 +223,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 現在已部署您的應用程式，請嘗試在整個 cube 周圍移動，然後觀察它是否存在於世界的前方。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Unity 開發概觀](../unity-development-overview.md)
 * [使用 Unity 和 Visual Studio 的最佳作法](../best-practices-for-working-with-unity-and-visual-studio.md)

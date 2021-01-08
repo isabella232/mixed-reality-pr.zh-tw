@@ -1,5 +1,5 @@
 ---
-title: 適用于 Windows Mixed Reality 功能的電腦的建議介面卡
+title: Windows Mixed Reality 電腦的建議介面卡
 description: 如果您的電腦沒有完整大小的 USB 和 HDMI 埠，建議使用 Windows Mixed Reality 耳機的介面卡清單。
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，adapter，轉換器，HDMI，USB，DisplayPort
 appliesto:
 - Windows 10
-ms.openlocfilehash: 248a202ce57c0b6872ddefc9ec9c2f89e2aa87a4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 86eaa8d462d97a740f15859d2ab631aafb8dd68e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725979"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009098"
 ---
 # <a name="recommended-adapters"></a>建議的介面卡
 > [!NOTE]

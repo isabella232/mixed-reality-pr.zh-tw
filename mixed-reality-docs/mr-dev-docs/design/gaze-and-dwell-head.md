@@ -1,17 +1,17 @@
 ---
 title: 頭部注視並佇留
-description: 頭部注視並佇留輸入模型的概觀
+description: 開始使用前端和停留輸入模型的總覽，包括常見案例和設計原則。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、ux、指導方針、清單視圖
-ms.openlocfilehash: 060d78ec629905ac9f2134851998ec131d85f0cd
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847369"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007078"
 ---
 # <a name="head-gaze-and-dwell"></a>頭部注視並佇留
 

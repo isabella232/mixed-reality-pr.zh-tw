@@ -1,17 +1,17 @@
 ---
 title: 目光和停駐
-description: " (眼睛/前端) 注視和停留輸入模型的一般總覽。"
+description: 取得混合現實應用程式的眼睛和前端和停留輸入模型的一般總覽。
 author: sostel
 ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: e8005551e08248a73098bd0f9c198b0919e2471a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847337"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007638"
 ---
 # <a name="gaze-and-dwell"></a>目光和停駐
 

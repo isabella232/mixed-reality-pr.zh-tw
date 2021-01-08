@@ -1,17 +1,17 @@
 ---
 title: 著色器
-description: 混合現實工具組標準著色器提供各種類型的視覺效果，可搭配全像全像使用。
+description: 瞭解混合現實工具組標準著色器如何提供各種類型的視覺效果，可搭配您的混合現實應用程式中的全像影像使用。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、著色器、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、視覺效果
-ms.openlocfilehash: 08701fb48d633f7de75b74b5e44655c3a01fade8
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 68e40c053f9557debf9ad22baf2f48a8e06a1bbb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848239"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008858"
 ---
 # <a name="shader"></a>著色器
 

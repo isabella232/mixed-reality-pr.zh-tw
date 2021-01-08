@@ -1,18 +1,18 @@
 ---
 title: 觀眾檢視
-description: 將來自外部裝置的全像投影視覺化，作為在外部顯示器上示範混合實境體驗，或錄製混合實境體驗影片的方法。
+description: 將來自外部裝置的全像投影視覺化，以顯示或錄製外部顯示器上的混合實境體驗。
 author: chrisfromwork
 ms.author: chriba
 ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 觀眾檢視, iPhone, iOS, iPad, OpenCV, 相機, ARKit, HoloLens, 混合實境, MixedRealityToolkit, 示範, 錄製
-ms.openlocfilehash: 7b48315753ada0ae7a94abca5377a083ac659a34
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: c344edea9b499bdff15d1d93e400b8be626a63b6
+ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91696541"
+ms.lasthandoff: 12/15/2020
+ms.locfileid: "97530108"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens 和 HoloLens 2 的觀眾檢視
 
@@ -20,8 +20,7 @@ ms.locfileid: "91696541"
 
 ## <a name="overview"></a>概觀
 
-戴上 HoloLens 時，我們通常會忘記沒有穿戴裝置的人無法體驗我們所體驗的奧妙。 觀眾檢視可以讓其他人在 2D 螢幕上看到 HoloLens 使用者在他們的世界中所看到的內容。
-觀眾檢視提供快速且實惠的方法，讓您使用行動裝置以 HD 錄製全像投影。 它也提供透過攝影機的全像投影專業品質錄影。
+當您穿戴 HoloLens 時，很容易忘記沒有 HoloLens 的人員無法體驗您所看到的相同奇觀。 「觀眾檢視」可讓其他人看到 HoloLens 使用者在 2D 螢幕上看到的內容。 這也是一種快速且經濟實惠的方法，可使用行動裝置來錄製 HD 中的全像投影，並透過攝影機取得高品質的全像投影錄影。
 
 ## <a name="key-resources"></a>主要資源
 
@@ -30,7 +29,8 @@ ms.locfileid: "91696541"
 * [**觀眾檢視範例**](https://github.com/microsoft/MixedReality-SpectatorView/tree/master/samples)
 
 ## <a name="use-cases"></a>使用案例
-* 您可以使用 iPhone 或 Android 裝置錄製混合實境體驗。 以 Full HD 錄製，對全像投影甚至是陰影套用消除鋸齒功能。 這是擷取全像投影影片的符合成本效益且快速的方式。
+
+* 您可以使用 iPhone 或 Android 裝置錄製混合實境體驗。 以 Full HD 錄製並將消除鋸齒功能套用到全像投影和陰影，以符合成本效益且快速的方式來擷取全像投影的影片。
 * 直接從您的 iPhone 或 iPad 將即時混合實境體驗串流至 Apple TV，沒有延遲！
 * 與來賓分享體驗：讓非 HoloLens 使用者直接從他們的手機或平板電腦體驗全像投影。
 

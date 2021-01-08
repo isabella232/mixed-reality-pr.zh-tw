@@ -1,17 +1,17 @@
 ---
-title: 使用 Unity 和 Visual Studio 的最佳作法
+title: Unity 和 Visual Studio 的最佳作法
 description: 使用 Unity 和 Visual Studio 來簡化建立混合現實應用程式之工作流程的秘訣和訣竅。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 部署、unity、visual studio、HoloLens、HoloLens 2、沉浸式耳機、最佳作法、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP、Visual Studio Tools Windows SDK
-ms.openlocfilehash: 9e80cad3e7154ae5548514297343db8efcdcb49e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9464c86826b9a8ea2c64384dfa699fc6d98743dd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010259"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009368"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>使用 Unity 和 Visual Studio 的最佳作法
 
@@ -57,7 +57,7 @@ Unity 2018 中的 .NET 腳本後端支援已被取代，並已在 Unity 2019 + �
 
 以文字格式儲存資產可讓您更輕鬆地查看 Visual Studio 中的內容變更差異。 您可以選取 [ **編輯 > 專案設定] > 編輯器** ，並變更 **資產序列化** 模式來 **強制文字**，以將資產儲存成文字格式。 不過，合併文字資產檔案變更很容易出錯且不建議使用，因此請考慮在原始檔控制中啟用獨佔二進位簽出。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)
 - [優化 IL2CPP 的組建時間](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)
 - [*UnityScriptAnalyzer* Visual Studio 擴充功能](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/UnityScriptAnalyzer)

@@ -1,5 +1,5 @@
 ---
-title: 入門教學課程 - 3。 設定 MRTK 設定檔
+title: MRTK 教學課程 - 3. 設定 MRTK 設定檔
 description: 本課程說明如何設定混合實境工具組 (MRTK) 設定檔。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 空間感知
 ms.localizationpriority: high
-ms.openlocfilehash: 7ac81c21e1658798b7f512c4afa2eea9f509d827
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 48bb6aa8705c9d874e6af8867d1edbe2385cb853
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679317"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613242"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.設定 MRTK 設定檔
 

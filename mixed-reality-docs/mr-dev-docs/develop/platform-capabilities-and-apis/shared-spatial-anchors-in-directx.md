@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的共用空間錨點
-description: 說明如何藉由共用空間錨點來同步處理兩個 HoloLens 裝置。
+description: 瞭解如何在 DirectX 應用程式中共用本機和 Azure 空間錨點，以同步處理兩個 HoloLens 裝置。
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: HoloLens，同步處理，空間錨點，傳輸，多人遊戲，視圖，案例，逐步解說，範例程式碼，Azure，Azure 空間錨點，ASA
-ms.openlocfilehash: 4e41975a18c28cb2228b20ebb5d3a445774cca44
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 46fe6be5d81a8fc68502500e318eb8e63d223089
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530327"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008528"
 ---
 # <a name="shared-experiences-in-directx"></a>DirectX 中的共用體驗
 
@@ -34,7 +34,8 @@ ms.locfileid: "97530327"
 
 在您無法使用 Azure 空間錨點的情況下， [本機錨點轉移](../../out-of-scope/local-anchor-transfers-in-directx.md) 可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。  這種方法可提供比 Azure 空間錨點更便宜的錨點召回，且此方法不支援 iOS 和 Android 裝置。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
 * [混合實境中的共用體驗](shared-experiences-in-mixed-reality.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * <a href="https://docs.microsoft.com/cpp/api/spatial-anchors/winrt/" target="_blank">適用于 HoloLens 的 Azure 空間錨點 SDK</a>

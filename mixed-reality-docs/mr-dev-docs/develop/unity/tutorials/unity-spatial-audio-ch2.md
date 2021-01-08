@@ -1,26 +1,28 @@
 ---
-title: 空間音訊教學課程-2。 空間化按鈕互動音效
-description: 將按鈕加入至您的專案，並 spatialize 按鈕互動音效。
+title: 空間化按鈕互動音效
+description: 瞭解如何在混合現實應用程式中新增按鈕，以及 spatialize 按鈕互動音效。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、head 相關的傳送函式、回音、Microsoft 空間定位器、prefabs、音量曲線
-ms.openlocfilehash: 62825ed8922cd904212160748018446cbc76b839
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002593"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007358"
 ---
 # <a name="spatializing-button-interaction-sounds"></a>空間化按鈕互動音效
 
 ## <a name="objectives"></a>目標
+
 在 HoloLens 2 教學課程的空間音訊模組的第二章中，您將會：
 * 新增按鈕
 * Spatialize 按鈕的 click 聲
 
 ## <a name="add-a-button"></a>新增按鈕
+
 在 [ **專案** ] 窗格中，選取 [ **資產** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"：
 
 ![資產中的按鈕預製專案](images/spatial-audio/button-prefab-in-assets.png)
@@ -30,6 +32,7 @@ ms.locfileid: "97002593"
 ![按鈕轉換](images/spatial-audio/button-transform.png)
 
 ## <a name="spatialize-button-feedback"></a>Spatialize 按鈕意見反應
+
 在此步驟中，您將 spatialize 按鈕的音訊意見反應。 如需相關的設計建議，請參閱 [空間音效設計](../../../design/spatial-sound-design.md)。 
 
 您可以在 [**音訊混音** 器] 窗格中，為音訊 **來源** 元件定義音訊播放的目的地，稱為 **混音器群組**。 
@@ -60,6 +63,7 @@ ms.locfileid: "97002593"
 > 如果您在未核取 [ **Spatialize** ] 核取方塊的情況下，將 **空間 Blend** 移至 1 (3d) ，Unity 將會使用其移動流覽空間定位器，而不是使用 hrtf 的 **Microsoft 空間定位器**。
 
 ## <a name="adjust-the-volume-curve"></a>調整音量曲線
+
 根據預設，Unity 會在從接聽程式更遠的情況下 attenuate hrtf 音效。 當此衰減套用至互動回饋音效時，介面可能會變得更難使用。
 
 若要停用此衰減，請調整 **音量** 曲線。 在 **PressableButtonHoloLens2** 的 [偵測 **器**] 窗格的 [**音訊來源**] 元件中，有一個稱為 **3d 音效設定** 的區段。 在該區段中：

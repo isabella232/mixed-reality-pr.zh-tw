@@ -1,17 +1,17 @@
 ---
 title: 場景理解
-description: 適用于 HoloLens 的場景理解功能簡介
+description: 瞭解如何使用 HoloLens 的場景理解進行開發，包括 SDK、功能和常見的使用案例。
 author: szymons
 ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、遮蔽、SDK
-ms.openlocfilehash: f46245c668e7cc58258fa4e28c4af5aa7812ef5f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: c4485c5501300d6ca629f4e587fde1f88eea7ea5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848262"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008868"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -111,7 +111,7 @@ ms.locfileid: "97848262"
 
 場景理解會產生防水網格，以使用語義分解空間，特別是為了解決空間對應網格所強加的物理限制。 防水結構可確保一律會達到物理光線轉換，而且語義分解可讓您更輕鬆地產生室內導覽的導覽網格。 如 [遮蔽](#occlusion)一節中所述，使用 EnableSceneObjectMeshes 和 EnableWorldMesh 建立場景將會產生最實際的完整網狀。 環境網格的防水屬性可防止點擊率測試失敗。 網格資料可確保物理與場景中的所有物件互動，而不只是空間結構。
 
-### <a name="navigation"></a>瀏覽
+### <a name="navigation"></a>巡覽
 
 以語義類別分解的平面網格是導覽和路徑規劃的理想結構，可簡化 [空間對應導覽](spatial-mapping.md#navigation) 總覽中所述的許多問題。 在場景中計算的 SceneMesh 物件是由表面型別取消組成，以確保導覽網格產生僅限於可進行的介面。 由於地板結構的簡單起見，3d 引擎（例如 Unity）中的動態 nav 網格產生會根據即時需求來實現。
 

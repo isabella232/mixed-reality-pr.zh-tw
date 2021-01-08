@@ -1,17 +1,17 @@
 ---
 title: 原生開發概觀
-description: 直接使用 Windows Mixed Reality Api 來建立以 DirectX 為基礎的混合現實引擎。
+description: 瞭解如何直接使用 Windows Mixed Reality Api 來建立以 DirectX 為基礎的混合現實引擎。
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX，全像攝影轉譯、原生、原生應用程式、WinRT、WinRT 應用程式、平臺 Api、自訂引擎、中介軟體、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 493715660ff8df79df25e09c82fe48b863053ed3
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613072"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006848"
 ---
 # <a name="native-development-overview"></a>原生開發概觀
 
@@ -68,6 +68,6 @@ Windows Mixed Reality 的應用程式會使用下列 Api 來建立 HoloLens 和�
 * [OpenXR 效能](openxr-performance.md)
 * [對 OpenXR 進行疑難排解](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [應用程式模型](../../design/app-model.md)
 * [應用程式檢視](../../design/app-views.md)

@@ -1,17 +1,17 @@
 ---
 title: 建立全像攝影 DirectX 專案
-description: 說明如何根據 Windows Mixed Reality 應用程式範本建立新的全像全像攝影應用程式。
+description: 瞭解如何根據 Windows Mixed Reality 應用程式範本，建立新的全像全像全像全像）。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality，全像攝影應用程式、新的應用程式、UWP 應用程式、範本應用程式、全像投影、新專案、逐步解說、下載、範例程式碼、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: f377ca5b8af08beb53c878e1ebf665b8074853f6
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 9259a85512555342877de0a5a8bae697fdd03b8d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613082"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006868"
 ---
 # <a name="creating-a-holographic-directx-project"></a>建立全像攝影 DirectX 專案
 
@@ -47,7 +47,7 @@ DirectX 11 全像 UWP 應用程式範本非常類似于 DirectX 11 UWP 應用程
    *Visual Studio 2019 的全像 DirectX 11 c + +/WinRT UWP 應用程式專案範本*
    >[!IMPORTANT]
    >請確定專案範本的名稱包含 " (c + +/WinRT) "。  如果沒有，則會安裝較舊版本的全像攝影專案範本。  若要取得最新的專案範本，請將 [其安裝](../install-the-tools.md) 為 Visual Studio 2019 的擴充功能。
-5. 選取 [下一步]。
+5. 選取 [下一步]  。
 5. 填寫 [ **專案名稱** ] 和 [ **位置** ] 文字方塊，然後選取或按一下 [ **建立**]。 建立全像應用程式專案。
 6. 針對僅限 HoloLens 2 的開發目標，請確定 **目標版本** 和 **最低版本** 都設為 **Windows 10 1903 版**。  如果您也將目標設為 HoloLens (第1代) 或桌面 Windows Mixed Reality 耳機，您可以將 **最低版本** 設定為 **Windows 10 版本 1809**。 當您使用 HoloLens 2 的新功能時，您的程式碼中將需要一些 <a href="https://docs.microsoft.com/windows/uwp/debug-test-perf/version-adaptive-code" target="_blank">版本的自我調整性檢查</a> 。
    ![將 Windows 10 1903 版設定為目標和最小版本的螢幕擷取畫面](images/new-uwp-project.png)<br>
@@ -177,11 +177,11 @@ int APIENTRY wWinMain(
 
 中的轉譯方法 `AppMain.cpp` 會接受<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> ，並根據目前的應用程式和空間定位狀態，將目前的畫面格轉譯為每個全像攝影相機。
 
-## <a name="notes"></a>備忘錄
+## <a name="notes"></a>附註
 
 Windows Mixed Reality 應用程式範本現在支援使用已啟用 Spectre 防護旗標的編譯 (/Qspectre) 。 在編譯設定 Spectre 緩和功能的設定之前，請務必先安裝 Spectre 緩和版的 Microsoft Visual C++ (MSVC) 執行時間程式庫。 若要安裝 Spectre 降低的 c + + 程式庫，請啟動 Visual Studio 安裝程式，然後選取 [ **修改**]。 流覽至 **個別元件** ，並搜尋 "spectre"。 選取對應至您需要編譯 Spectre 緩和程式碼之目標平臺和 MSVC 版本的方塊，然後按一下 [ **修改** ] 開始安裝。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [取得 HolographicSpace](getting-a-holographicspace.md)
 * <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspaceh" target="_blank">HolographicSpace</a>
 * [DirectX 中的呈現](rendering-in-directx.md)

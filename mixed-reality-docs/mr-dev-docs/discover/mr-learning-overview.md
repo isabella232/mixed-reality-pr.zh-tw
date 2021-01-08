@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 996aad49d7fa48d5c7d7d33913680da9e5a4bdd8
-ms.sourcegitcommit: 9c2a90b17fe72cf482598969f8f3beca511e78a1
+ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97350010"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757796"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 
@@ -20,7 +20,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 針對混合實境進行開發時，所擁有的工具越多越好。 雖然文件和撰寫的教學課程很重要，但如果您更喜歡視覺學習模組，那麼 Microsoft Learn 的影片內容就是理想的選擇。 目前正在新增更多模組，因此請務必回來查看是否有更多更新！
 
-我們的學習課程模組可讓您更熟悉混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure Mixed Reality 服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。 開始使用混合實境學習模組，或查看我們的 Microsoft Learn 簡介[影片](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn)！
+我們的學習模組可讓您更精通混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure 混合實境服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。 開始使用混合實境學習模組，或查看我們的 Microsoft Learn 簡介[影片](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn)！
 
 ## <a name="general-modules"></a>一般模組
 
@@ -38,7 +38,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 * 描述全像投影背後的核心概念
 * 開始設計及開發 3D 應用程式
 * 了解混合實境能在現實世界的應用程式中提供什麼功能
-* 運用雲端的強大功能來實現混合實境
+* 使用雲端的強大功能來實現混合實境
 
 ## <a name="unity-modules"></a>Unity 模組
 
@@ -50,7 +50,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 **學習目標**
 
-在此課程模組結束時，您將能夠：
+在本課程模組結束時，您將能夠：
 
 * 設定 Unity 以進行 Windows Mixed Reality 開發
 * 將混合實境工具組 (MRTK) 基礎套件匯入到 Unity
@@ -60,7 +60,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 ### <a name="create-a-language-translator-app-with-unity--azure-cognitive-services"></a>[使用 Unity + Azure 認知服務建立語言翻譯工具應用程式](https://docs.microsoft.com/learn/modules/create-language-translator-mixed-reality-application-unity-azure-cognitive-services/)
 
-使用認知服務，為混合實境裝置 (Windows Mixed Reality、HoloLens 2 等) 建立語言翻譯工具應用程式。
+使用認知服務，為您的混合實境裝置 (Windows Mixed Reality、HoloLens 2 等) 建立語言翻譯工具應用程式。
 
 **學習目標**
 

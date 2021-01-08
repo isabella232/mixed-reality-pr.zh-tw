@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 7f6f501a5e2cde9fdb6aa3ba1aa973a4ab697fd8
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 83d8068ca8ce73f23edb85cf9044db5409105380
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010541"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865393"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.封裝並部署至裝置或模擬器
 
@@ -30,6 +30,9 @@ ms.locfileid: "97010541"
 如果您是使用國際象棋應用程式前往此路由，將需要進行一些事項：
 
 1.  從您的 HoloLens 2 上的 Microsoft Store 安裝 **全像攝影遠端播放程式** 並執行應用程式。 請記下應用程式中顯示的 IP 位址。
+    * 移至 [編輯] > [專案設定]，並確定將 Windows [預設 RHI] 設定為 [預設] 或 [D3D11]：
+
+![預設 RHI](../images/unreal/performance-recommendations-img-09.png)
 
 2.  回到 Unreal 編輯器，移至 [編輯] > [專案設定]，然後勾選 [全像攝影遠端處理] 區段中的 [啟用遠端處理]。
 

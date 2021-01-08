@@ -1,17 +1,17 @@
 ---
-title: 進階 HoloLens 模擬器和混合實境模擬器輸入
+title: Advanced HoloLens 模擬器和混合現實模擬器
 description: 使用鍵盤、滑鼠和 Xbox 控制器來模擬 HoloLens 模擬器和 Windows Mixed Reality 模擬器輸入的詳細指示。
 author: pbarnettms
 ms.author: pbarnett
 ms.date: 06/8/2020
 ms.topic: article
 keywords: HoloLens、模擬器、模擬、Windows Mixed Reality、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: f5076e65ba1c5d95c1bb106d2d3181665177b43a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff8a2830630b73266fe7348eee5459bcad98e2e0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530455"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006678"
 ---
 # <a name="advanced-hololens-emulator-and-mixed-reality-simulator-input"></a>進階 HoloLens 模擬器和混合實境模擬器輸入
 
@@ -137,7 +137,7 @@ ms.locfileid: "97530455"
 > [!NOTE]
 > 使用耳機時，系統會自動忽略標準鍵盤、滑鼠和遊戲台控制項。
 
-|  作業 |  動作 |  注意 | 
+|  作業 |  動作 |  附註 | 
 |----------|----------|----------|
 |  主體 X |  向左/向右操縱杆 |   | 
 |  主體 Z |  向前/向後的操縱杆 |   | 

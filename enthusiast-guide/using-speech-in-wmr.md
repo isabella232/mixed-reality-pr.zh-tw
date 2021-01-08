@@ -1,6 +1,6 @@
 ---
 title: 在 Windows Mixed Reality 中使用語音
-description: 瞭解如何在您的 Windows Mixed Reality 應用程式中使用語音輸入。
+description: 瞭解如何使用語音輸入來控制 Windows Mixed Reality 應用程式中的命令、3D 物件和聽寫。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6a32b96fd932e3b7d47e29749fb47c70b64e32c3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725769"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007668"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中使用語音
 
@@ -38,7 +38,7 @@ ms.locfileid: "97725769"
 
 | 作法 | 請說這個 |
 | --- | --- |
-| 選取 | 說「選取」以顯示注視游標。 然後，將游標移至您要選取的內容，然後再按一次 [選取]。 |
+| Select | 說「選取」以顯示注視游標。 然後，將游標移至您要選取的內容，然後再按一次 [選取]。 |
 | 開啟 [開始] 功能表 | 移至 [開始] |
 | 離開沉浸式應用程式 | 說「移至開始」以顯示 [快速動作] 功能表，然後說「Mixed reality home」。 |
 | 開啟/關閉 [開] | 說「移至開始」以顯示 [快速動作] 功能表，然後說「Mixed reality home」。 |

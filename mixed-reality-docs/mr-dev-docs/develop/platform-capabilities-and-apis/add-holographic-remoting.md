@@ -1,17 +1,17 @@
 ---
 title: 新增全像遠端
-description: 說明如何使用全像是在網路上透過全像的遠端處理來呈現 HoloLens。
+description: 瞭解如何安裝、設定和使用全像全像的遠端處理，透過網路將全像是的 HoloLens 裝置呈現。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality，全像全像全像全像，遠端轉譯、網路轉譯、HoloLens、遠端全息全像、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 809258d3387b5e45885c0eb207544c176f891a1d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 68c1dd43dac4830da061d4900ce768692057e781
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530310"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006668"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>新增全像 (HoloLens (first gen) # A3
 

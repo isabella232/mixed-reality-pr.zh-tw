@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的呈現
-description: 說明 Windows Mixed Reality 的全息轉譯。
+description: 瞭解如何在 Windows Mixed Reality 的 DirectX 應用程式中更新和轉譯內容。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全息圖、轉譯、3D 圖形、HolographicFrame、轉譯迴圈、更新迴圈、逐步解說、範例程式碼、Direct3D
-ms.openlocfilehash: 90d665e8054a185969a95e6ff6415979e728e9ab
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613182"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006718"
 ---
 # <a name="rendering-in-directx"></a>DirectX 中的呈現
 
@@ -746,6 +746,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [DirectX 中的座標系統](coordinate-systems-in-directx.md)
 * [使用 HoloLens 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

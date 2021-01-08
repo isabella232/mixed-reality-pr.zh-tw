@@ -1,17 +1,17 @@
 ---
 title: 版本資訊 - 2016 年 8 月
-description: 'Windows 10 周年版本的 HoloLens 版本資訊 (2016) '
+description: 針對2016年秋季的 Windows 10 周年版本，隨時掌握 HoloLens 版本資訊。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens、版本資訊、os、平臺、功能、商用套件
-ms.openlocfilehash: 870da1075dd1fa1a83926a89bad753233927abda
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725959"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009258"
 ---
 # <a name="release-notes---august-2016"></a>版本資訊 - 2016 年 8 月
 
@@ -92,7 +92,7 @@ Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為�
 </tr><tr>
 <td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Business Store 入口網站</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<th colspan="3" style="text-align: left;"> 安全性與身分識別</th>
+<th colspan="3" style="text-align: left;"> 安全性及身分識別</th>
 </tr><tr>
 <td>使用 Azure Active Directory (AAD) 登入</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>

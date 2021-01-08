@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality 沉浸式耳機健康情況、安全且舒適
+title: Windows Mixed Reality 耳機健康情況和安全
 description: 瞭解如何在使用 Windows Mixed Reality 應用程式時，讓自己和您的使用者保持健康、安全且舒適。
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: a8b78cd637b3f3b68ef793aa76031e3151f1f0fe
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725569"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008998"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality 沉浸式耳機健康情況、安全且舒適
 

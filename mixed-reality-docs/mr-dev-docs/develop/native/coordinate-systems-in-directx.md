@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的座標系統
-description: 瞭解 DirectX 中的座標系統，以及空間定位器、參考框架和空間錨點的混合現實。 使用 SpatialStage 和處理追蹤遺失、儲存和載入錨點，以及影像穩定。
+description: 瞭解 DirectX 中的座標系統，以及空間定位器、參考框架和空間錨點的混合現實。
 author: thetuvix
 ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 混合的現實、空間定位器、空間參考框架、空間座標系統、空間階段、範例程式碼、影像穩定、空間錨點、空間錨點存放區、追蹤遺失、逐步解說、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 7bf2309f3fb6264d6b1a5232f7ead78b771c1649
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 055eff0bb04228cb0a19b9ea208bfc9c00ce2dbe
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613112"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006858"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX 中的座標系統
 
@@ -804,7 +804,7 @@ Windows 全像應用程式範本隨附已為您建立的 LocatabilityChanged 處
 
 [空間對應](spatial-mapping-in-directx.md)api 會利用座標系統來取得 surface 網格的模型轉換。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [座標系統](../../design/coordinate-systems.md)
 * [空間錨點](../../design/spatial-anchors.md)
 * <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>

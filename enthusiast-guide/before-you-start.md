@@ -1,6 +1,6 @@
 ---
 title: 開始之前
-description: 如何確定您的電腦與 Windows Mixed Reality 相容，且可供使用。
+description: 瞭解如何確保您的電腦相容，並準備好使用各種 Windows Mixed Reality 的應用程式體驗。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、相容、相容性、入門、安裝程式、電腦、系統需求
 appliesto:
 - Windows 10
-ms.openlocfilehash: f4743b6548def227675944fcd742b1596963cb3c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725489"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006878"
 ---
 # <a name="before-you-start"></a>開始之前
 

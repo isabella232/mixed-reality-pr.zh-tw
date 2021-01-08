@@ -1,14 +1,14 @@
 ---
 title: 使用 SteamVR 搭配 Windows Mixed Reality
-description: 如何使用相容電腦在 Windows Mixed Reality 耳機播放 SteamVR 遊戲。
+description: 瞭解如何在使用相容電腦的 Windows Mixed Reality 耳機和控制器上設定及播放 SteamVR 遊戲。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: e91c5b7fcaed2f048e79843c47ae613761a5d3ad
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9330d6026b74494c851aea6b4664c1ede787c1c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725739"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006898"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
 

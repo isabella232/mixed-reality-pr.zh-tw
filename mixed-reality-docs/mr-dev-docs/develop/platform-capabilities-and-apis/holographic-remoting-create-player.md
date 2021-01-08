@@ -1,17 +1,17 @@
 ---
 title: 撰寫自訂全像攝影遠端播放程式
-description: 藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以顯示在遠端電腦上轉譯的內容到您的 HoloLens 2。
+description: 建立自訂 Hologaphic 遠端應用程式，以將在遠端電腦上轉譯的內容顯示到您的 HoloLens 2。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像 Remoting、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ac3ee68cf3cff3e024ce40acceac61a2fe123399
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: 23449749e709075e6530730e596bfcc9cd088c1e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102893"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006548"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>撰寫自訂全像攝影遠端播放應用程式
 
@@ -22,7 +22,7 @@ ms.locfileid: "97102893"
 
 全像遠端播放機可讓您的應用程式顯示桌上型電腦或 UWP [裝置上轉譯的全](rendering.md) 像 Xbox One，並可存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，請使用 NuGet 套件將全像是在 UWP 應用程式中新增全像的遠端處理。 然後撰寫程式碼來處理連接，並顯示沉浸式視圖。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 良好的起點是已以 Windows Mixed Reality API 為目標的可運作 DirectX 型 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 如果您沒有現有的應用程式，而且想要從頭開始，則 [c + +](../native/creating-a-holographic-directx-project.md) 全像的專案範本是不錯的起點。
 

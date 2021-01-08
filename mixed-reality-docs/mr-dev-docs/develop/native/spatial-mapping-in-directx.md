@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的空間對應
-description: 瞭解如何在您的 DirectX 應用程式中執行空間對應，包括通用 Windows 平臺 SDK 隨附的空間對應範例應用程式。
+description: 瞭解如何在您的 DirectX 應用程式中執行空間對應，以及如何在通用 Windows 平臺 SDK 中使用空間對應範例應用程式。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows mixed reality、空間對應、環境、互動、directx、winrt、api、範例程式碼、UWP、SDK、逐步解說
-ms.openlocfilehash: fa372473939222ef4be7ca36076a17241173c441
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: bcd78487e96aaf09707aa4bf58917223cc2e8583
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612912"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006708"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX 中的空間對應
 
@@ -88,7 +88,7 @@ ms.locfileid: "97612912"
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>設定您的應用程式以使用 >spatialperception 功能
 
-您的應用程式可以使用空間對應功能。 這是必要的，因為空間網格表示使用者的環境，可能會被視為私用資料。 在您應用程式的 package.appxmanifest 檔案中宣告這項功能。 以下是範例：
+您的應用程式可以使用空間對應功能。 這是必要的，因為空間網格表示使用者的環境，可能會被視為私用資料。 在您應用程式的 package.appxmanifest 檔案中宣告這項功能。 以下為範例：
 
 ```xml
 <Capabilities>
@@ -96,7 +96,7 @@ ms.locfileid: "97612912"
 </Capabilities>
 ```
 
-這項功能來自 **uap2** 命名空間。 若要在您的資訊清單中取得這個命名空間的存取權，請將它包含在封裝> 專案中的 *xlmns* 屬性 &lt; 。 以下是範例：
+這項功能來自 **uap2** 命名空間。 若要在您的資訊清單中取得這個命名空間的存取權，請將它包含在封裝> 專案中的 *xlmns* 屬性 &lt; 。 以下為範例：
 
 ```xml
 <Package
@@ -676,6 +676,6 @@ context->OMSetRenderTargets(1, targets, pCameraResources->GetSurfaceDepthStencil
 m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [建立全像攝影 DirectX 專案](creating-a-holographic-directx-project.md)
 * [Windows 感知空間 API](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.aspx)

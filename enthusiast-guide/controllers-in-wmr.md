@@ -1,6 +1,6 @@
 ---
 title: Windows Mixed Reality 中的控制器
-description: 瞭解如何在 Windows Mixed Reality 中設定和使用控制器。
+description: 瞭解如何設定、配對、使用和疑難排解 Windows Mixed Reality 中的控制器常見問題。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: f349f4bbc2cadd511515783504562052f1d58ed3
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725389"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007798"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的運動控制器
 
@@ -94,7 +94,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 |  作法  |  運動控制器  | 遊戲台 | 滑鼠 + 鍵盤 |
 | --- | --- | --- | --- |
 | 傳送 | 按下操縱杆，然後將控制器指向您要前往的位置。 釋放操縱杆。 | 將左側的操縱杆向前按，然後查看您想要前往的位置。 釋放操縱杆。 | 選取並按住右鍵，然後將滑鼠指向您要前往的位置。 放開按鈕。 |
-| 選取 | 指向控制器，然後提取觸發程式或使用觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
+| Select | 指向控制器，然後提取觸發程式或使用觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
 | 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按下 **Windows 標誌鍵**。 |
 | 離開沉浸式應用程式 | 按下 [ **Windows** ] 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ]。 | 按下 **Xbox** 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ] 按鈕。 | 按 * * Windows 標誌鍵。 然後，在顯示的 [快速動作] 功能表上選取 [ **混合現實首頁** ] 按鈕。 |
 | Rotate | 將操縱杆向左或向右移動。 | 將右邊的向左或向右移動。 | 不適用。 |

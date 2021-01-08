@@ -1,17 +1,17 @@
 ---
 title: 瞭解混合現實的效能
-description: 優化 Windows Mixed Reality 應用程式效能的 Advanced 資訊和詳細資料。
+description: 瞭解分析和優化 Windows Mixed Reality 應用程式效能的 advanced 資訊和詳細資料。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，效能，優化，CPU，GPU
-ms.openlocfilehash: fc7b6385acda9079a649131b9e6eccf5ac067819
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530065"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008468"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>瞭解混合現實的效能
 
@@ -134,9 +134,9 @@ ms.locfileid: "97530065"
 
 #### <a name="object-pooling"></a>物件集區
 
-物件共用是一種常用的技巧，可降低持續配置和物件取消配置的成本。 這是透過配置相同物件的大型集區，並重複使用此集區中非使用中的可用實例來完成，而不是隨著時間不斷地產生和終結物件。 物件集區很適合用於在應用程式期間具有變數存留期的 reuseable 元件。
+物件共用是一種常用的技巧，可降低持續配置和物件取消配置的成本。 這是藉由配置相同物件的大型集區，並重複使用此集區中非使用中的可用實例來完成，而不是在一段時間內不斷產生和終結物件。 物件集區非常適合在應用程式期間有變數存留期的重複使用元件。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 - [對 Unity 的效能建議](../unity/performance-recommendations-for-unity.md)
 - [Unity 的建議設定](../unity/recommended-settings-for-unity.md)
 - [優化3D 模型](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)

@@ -1,17 +1,17 @@
 ---
 title: 全像遠端的疑難排解和限制
-description: HoloLens 2 上全像攝影的疑難排解步驟。
+description: 尋找 HoloLens 2 裝置上的全像「全像」遠端功能的疑難排解資源和指示。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality，全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、疑難排解、說明、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 9b900238abc79b0f2f93691d4b4a67cce67a201a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: ee1dce72af02374e930de4a1bdff94285c7a84ae
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530184"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006448"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>全像遠端處理疑難排解
 

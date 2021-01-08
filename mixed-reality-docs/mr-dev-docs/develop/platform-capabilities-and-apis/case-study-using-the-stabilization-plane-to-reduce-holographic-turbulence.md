@@ -1,17 +1,17 @@
 ---
-title: 個案研究-使用穩定平面減少全像 turbulence
-description: 使用穩定平面減少全像攝影晃動
+title: 案例研究-使用穩定平面
+description: 探索我們的開發團隊如何使用穩定平面來減少混合現實應用程式中的全像 turbulence。
 author: bstrukus
 ms.author: bestruku
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、全息全像、穩定、個案研究、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: e0eba3df5457ea06ee80682d99c82a5a23c1635d
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 85caee589a5f031f605417639eab2e980cb613c5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530442"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006698"
 ---
 # <a name="case-study---using-the-stabilization-plane-to-reduce-holographic-turbulence"></a>個案研究-使用穩定平面減少全像 turbulence
 
@@ -97,7 +97,7 @@ Asobo Studio 在 c + + 中撰寫，片段和年輕 Conker 採用不同的方法�
 </tr>
 </table>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [MR Basics 100：開始使用 Unity](../unity/tutorials/holograms-100.md)
 * [Unity 中的焦點](../unity/focus-point-in-unity.md)
 * [全像投影穩定性](hologram-stability.md)

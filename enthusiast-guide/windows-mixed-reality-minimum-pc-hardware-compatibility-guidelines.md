@@ -1,6 +1,6 @@
 ---
-title: Windows Mixed Reality 最小電腦硬體相容性指導方針
-description: 此圖表概述與 Windows Mixed Reality 相容性的最小電腦系統需求。
+title: Windows Mixed Reality 電腦相容性指導方針
+description: 總覽圖表列出與 Windows Mixed Reality 相容性的最低電腦系統需求。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，Ultra，相容，相容性，系統需求，電腦
 appliesto:
 - Windows 10
-ms.openlocfilehash: bd287e2089056be56330c2c2e8e9af2c079009ac
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ed53c388797cb57a7f2a53ed40b18923a23c8b74
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725659"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009118"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality 最小電腦硬體相容性指導方針
 
@@ -69,6 +69,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
  [取得混合實境入口結果的協助](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
 
 ## <a name="compatibility-guidelines"></a>相容性指導方針
+
 > [!IMPORTANT]
 > 我們將會更新，並新增至，而且可能會修訂這些 Windows Mixed Reality 電腦相容性指導方針。 請定期回來查看最新的指導方針和需求。
 
@@ -177,7 +178,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
 
 <table>
     <tr>
-        <th> Surface 裝置 </th><th> Windows Mixed Reality 功能支援？ </th><th> 建議組態 </th><th> 備註</th>
+        <th> Surface 裝置 </th><th> Windows Mixed Reality 功能支援？ </th><th> 建議組態 </th><th> 附註</th>
     </tr>
     <tr>
         <td style="vertical-align: middle"> Surface Pro (原始) /Surface Pro 2 </td><td style="vertical-align: middle"> 無 </td><td> </td><td></td>
@@ -211,7 +212,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Book 2 (13.5 &quot;)  </td><td style="vertical-align: middle"> 部分 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/4 GB 的 RAM </td>
+        <td style="vertical-align: middle"> Surface Book 2 (13.5 &quot;)  </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GTX 1050/4 GB 的 RAM </td>
         <td>
             <ul>
                 <li><b>注意</b>： Surface Book 2 (13 ") 不會針對 Windows Mixed Reality 徽章，但會支援一些 Windows Mixed Reality 功能，可讓您使用有限數目的相容應用程式和遊戲。  效能將視您的設定而定。</li>
@@ -224,7 +225,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> 部分 </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/4 GB 的 RAM </td>
+        <td style="vertical-align: middle"> Surface Studio </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/NVIDIA GeForce GTX 980m/4 GB 的 RAM </td>
         <td>
             <ul>
                 <li><b>注意</b>： Surface Studio 不會針對 Windows Mixed Reality 徽章，但會支援一些 Windows Mixed Reality 功能，可讓您使用有限數目的相容應用程式和遊戲。  效能將視您的設定而定。</li>
@@ -236,7 +237,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
         </td>
     </tr>
     <tr>
-        <td style="vertical-align: middle"> Surface Pro (2017)  </td><td style="vertical-align: middle"> 部分 </td><td style="vertical-align: middle"> Intel Core i7/Intel®鳶尾花™外加圖形 640/16 GB 的 RAM </td>
+        <td style="vertical-align: middle"> Surface Pro (2017)  </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel®鳶尾花™外加圖形 640/16 GB 的 RAM </td>
         <td>
             <ul>
                 <li><b>注意</b>： Surface Pro (2017) 不會徽章 Windows Mixed Reality，但會支援一些 Windows Mixed Reality 功能，可讓您使用有限數目的相容應用程式和遊戲。  效能將視您的設定而定。</li>
@@ -247,7 +248,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
             </ul>
         </td>
     </tr><br/>    <tr>
-        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> 部分 </td><td style="vertical-align: middle"> Intel Core i7/Intel®鳶尾花™外加圖形 640/16 GB 的 RAM </td>
+        <td style="vertical-align: middle"> Surface Laptop </td><td style="vertical-align: middle"> Partial </td><td style="vertical-align: middle"> Intel Core i7/Intel®鳶尾花™外加圖形 640/16 GB 的 RAM </td>
         <td>
             <ul>
                 <li><b>注意</b>： Surface Laptop 不會針對 Windows Mixed Reality 徽章，但會支援一些 Windows Mixed Reality 功能，可讓您使用有限數目的相容應用程式和遊戲。  效能將視您的設定而定。</li>
@@ -261,6 +262,7 @@ Windows 10 Windows Mixed Reality 和 Windows Mixed Reality Ultra。 您所體驗
 </table>
 
 ## <a name="see-also"></a>請參閱
+
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
 * [適用于 Windows Mixed Reality 功能的電腦的建議介面卡](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)

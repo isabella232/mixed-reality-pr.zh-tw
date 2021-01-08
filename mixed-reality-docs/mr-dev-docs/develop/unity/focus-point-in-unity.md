@@ -1,17 +1,17 @@
 ---
 title: Unity 中的焦點
-description: 藉由設定焦點點，在 Unity 中手動調整全息圖穩定性
+description: 瞭解如何藉由設定 HoloLens 的焦點點以及 Windows Mixed Reality 的沉浸式耳機，以手動調整 Unity 中的全像影像穩定性。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: d2708dcf39f1d2c67ab1abf69f8330f9dd536ab0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010269"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009338"
 ---
 # <a name="focus-point-in-unity"></a>Unity 中的焦點
 
@@ -53,7 +53,7 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unity 開發旅程圖，您將會在探索混合現實平臺功能和 Api。 您可以從這裡繼續前往下一個主題：
+如果您正在遵循我們所配置的 Unity 開發旅程圖，您將會在探索混合現實平臺功能和 Api。 接下來，您可以繼續進行下一個主題：
 
 > [!div class="nextstepaction"]
 > [追蹤遺失](tracking-loss-in-unity.md)
@@ -66,4 +66,5 @@ void Update()
 您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis)。
 
 ### <a name="see-also"></a>另請參閱
+
 * [穩定平面](../platform-capabilities-and-apis/hologram-stability.md#reprojection)

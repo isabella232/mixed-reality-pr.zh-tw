@@ -1,6 +1,6 @@
 ---
 title: 使用 Windows Mixed Reality 常見問題集
-description: 取得使用 Windows Mixed Reality 時常見問題的解答。
+description: 尋找使用 Windows Mixed Reality 應用程式和硬體時的常見問題資源。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 75ed2699cc34af5f526e0799b762d45ef36e99b9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 31a27afa9c96ee8beb8b38f74534fc6f58c01f1d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725669"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007048"
 ---
 # <a name="using-windows-mixed-reality-faq"></a>使用 Windows Mixed Reality 常見問題集
 
@@ -24,7 +24,6 @@ ms.locfileid: "97725669"
 ## <a name="i-see-a-message-that-says-lost-tracking-or-we-dont-have-a-boundary-for-this-space"></a>我看到一則訊息，指出「遺失追蹤」或「我們沒有這個空間的界限」。
 
 選取您桌面上的 [ **開始] > 混合實境入口** 。 選取 [ **功能表**]，然後選取 [ **執行安裝程式** ] 以建立新的界限。 Windows Mixed Reality 支援多個位置，而且只要房間未變更，就會識別您正在啟動的空間。  
-
 
 ## <a name="i-cant-hear-any-sound-or-the-sound-is-coming-from-my-computer-instead-of-my-headset"></a>我聽不到任何聲音，或音效來自我的電腦而不是我的耳機
 
@@ -133,5 +132,6 @@ Windows Mixed Reality 是設計用來在您的沉浸式耳機上播放音效，�
 是否仍需要協助？ 如需 advanced 疑難排解的詳細說明，請參閱 [這篇文章](troubleshooting-windows-mixed-reality.md)。
 
 ## <a name="see-also"></a>請參閱
+
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 全像投影、穩定性、hololens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、畫面播放速率、轉譯、reprojection、色彩分隔
 appliesto:
 - HoloLens
-ms.openlocfilehash: 4405cd0fa7cfca5205d312d1ccc54efc06db7bd7
-ms.sourcegitcommit: 13fe1e7f7f268730a0be720933d7414e9c63ac9b
+ms.openlocfilehash: 36abf928d8f665717bacaf8da372d299b41fabd6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97808829"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006638"
 ---
 # <a name="hologram-stability"></a>全像投影穩定性
 
@@ -95,10 +95,10 @@ Reprojection 有四種主要類型
 
 ### <a name="choosing-reprojection-technique"></a>選擇 Reprojection 技術
 
-穩定類型 |    沉浸式頭戴裝置 |    HoloLens 第1代 | HoloLens 2
+穩定類型 |    沉浸式耳機 |    HoloLens 第1代 | HoloLens 2
 --- | --- | --- | ---
-深度 Reprojection |    建議 |   N/A |   建議<br/><br/>Unity 應用程式必須使用 Unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。 否則，請使用自動平面 Reprojection。
-自動平面 Reprojection | N/A |   建議的預設值 |   如果深度 Reprojection 未提供最佳結果，則建議使用<br/><br/>建議您使用 unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。  先前的 Unity 版本將會使用稍微降低的 reprojection 結果。
+深度 Reprojection |    建議 |   不適用 |   建議<br/><br/>Unity 應用程式必須使用 Unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。 否則，請使用自動平面 Reprojection。
+自動平面 Reprojection | 不適用 |   建議的預設值 |   如果深度 Reprojection 未提供最佳結果，則建議使用<br/><br/>建議您使用 unity 2018.4.12 或更新版本或 Unity 2019.3 或更新版本。  先前的 Unity 版本將會使用稍微降低的 reprojection 結果。
 平面 Reprojection |   不建議 |   如果自動平面未提供最佳結果，則建議使用 | 如果沒有任何深度選項提供所需的結果，請使用    
 
 ### <a name="verifying-depth-is-set-correctly"></a>正在驗證深度設定是否正確

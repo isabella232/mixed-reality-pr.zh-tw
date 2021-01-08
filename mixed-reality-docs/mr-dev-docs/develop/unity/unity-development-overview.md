@@ -1,24 +1,24 @@
 ---
-title: Unity 開發概觀
-description: 開始在 Unity 中建置混合實境應用程式。
-author: thetuvix
+title: 適用於 HoloLens 的 Unity 開發
+description: 開始在 Unity 和 HoloLens 中建置混合實境應用程式。
+author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 4eeec1544315ff2b9a43fc725d5bbd83c8cea89f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926039"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613472"
 ---
-# <a name="unity-development-overview"></a>Unity 開發概觀
+# <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發 
 
 ![Unity 橫幅標誌](../images/unity_logo_banner.png)
 
-要在 [Unity](https://unity.com) 中建置[混合實境應用程式](../../design/app-views.md)，使用混合實境工具組是最快速的途徑。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 您也可以造訪內容豐富的[資產存放區](https://www.assetstore.unity3d.com/)和 [Unity 混合實境論壇](https://forum.unity3d.com/forums/hololens.102/)，與建置混合實境應用程式的線上社群交流。 您絕對想不到在這裡會發現哪些絕佳的資產或解決方案。 當您準備好開始使用 MRTK 時，請前往以下開發檢查點！
+要在 [Unity](https://unity.com) 中建置 HoloLens [混合實境應用程式](../../design/app-views.md)，使用混合實境工具組是最快速的途徑。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 您也可以造訪內容豐富的[資產存放區](https://www.assetstore.unity3d.com/)和 [Unity 混合實境論壇](https://forum.unity3d.com/forums/hololens.102/)，與建置混合實境應用程式的線上社群交流。 您絕對想不到在這裡會發現哪些絕佳的資產或解決方案。 當您準備好開始使用 MRTK 時，請前往以下開發檢查點！
 
 > [!IMPORTANT]
 > 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。 對於使用 HTK、MRTK v1、SteamVR 的專案，或針對沉浸式頭戴裝置 (例如 Reverb G2、Oculus Rift、HTC Vive) 開發的專案，我們都提供了相關指南。

@@ -1,26 +1,28 @@
 ---
-title: 空間音訊教學課程-4。 在執行時間啟用和停用空間音訊
-description: 使用按鈕來啟用和停用在執行時間 spatialization 的音訊。
+title: 在執行時間啟用和停用空間音訊
+description: '瞭解如何撰寫 c # 腳本，該腳本會在執行時間使用按鈕來啟用和停用音訊 spatialization。'
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: c9e510e544962c5d1a4c462d20dafa222c6a5289
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: eaaf8a05088b5bab674ca11b15b0c63383faa479
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002603"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007338"
 ---
 # <a name="enabling-and-disabling-spatialization-at-run-time"></a>在執行時間啟用和停用 spatialization
 
 ## <a name="objectives"></a>目標
+
 在第4章中，您將會：
 * 新增腳本來控制遊戲物件上的 spatialization
 * 從按鈕動作驅動 spatialization 控制腳本
 
 ## <a name="add-spatialization-control-script"></a>新增 spatialization 控制項腳本
+
 在 [ **專案** ] 窗格中按一下滑鼠右鍵，然後選擇 [ **建立-> c # 腳本**] 來建立新的 c # 腳本。 將腳本命名為 "SpatializeOnOff"。
 
 ![建立腳本](images/spatial-audio/create-script.png)
@@ -90,6 +92,7 @@ public class SpatializeOnOff : MonoBehaviour
 > 如果您想要完全停用 spatialization，請修改腳本，以同時調整 **SourceObject** 變數的 **spatialization** 布林值屬性。
 
 ## <a name="attach-your-script-and-drive-it-from-the-button"></a>附加您的腳本，並從按鈕進行驅動
+
 在 [] 的 [偵測 **器** ] 窗格 **中，按一下**[ **新增元件** ]，然後在 [關閉] 腳本 **上新增 Spatialize** ：
 
 ![將腳本新增至四個](images/spatial-audio/add-script-to-quad.png)
@@ -115,6 +118,7 @@ public class SpatializeOnOff : MonoBehaviour
 ![按鈕動作設定](images/spatial-audio/button-action-settings.png)
 
 ## <a name="next-steps"></a>後續步驟
+
 在 HoloLens 2 或 Unity 編輯器中試用您的應用程式。 在應用程式中，您現在可以觸控按鈕來啟用和停用影片上的 spatialization。 在 Unity 編輯器中進行測試時，請按下空格鍵並以滾輪滾動，以啟動手動模擬。 
 
 > [!div class="nextstepaction"]

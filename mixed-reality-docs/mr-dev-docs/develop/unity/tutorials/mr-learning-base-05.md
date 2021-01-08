@@ -1,5 +1,5 @@
 ---
-title: 入門教學課程 - 5。 使用解算器建立動態內容
+title: MRTK 教學課程 - 5. 使用解算器建立動態內容
 description: 本課程說明如何使用混合實境工具組 (MRTK) 解算器來建立動態內容。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: fb86cdfe82e8d89c65e8513b52e2de49f52a2f04
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
+ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679297"
+ms.lasthandoff: 12/17/2020
+ms.locfileid: "97613502"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 

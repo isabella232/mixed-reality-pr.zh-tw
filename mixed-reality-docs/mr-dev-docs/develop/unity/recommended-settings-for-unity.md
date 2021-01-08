@@ -1,17 +1,17 @@
 ---
 title: Unity 的建議設定
-description: Unity 提供一些混合現實特定的行為，可透過專案設定來切換。
+description: 瞭解 Unity 的效能以及混合現實應用程式特定的發佈行為，這些行為可透過專案設定來切換。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity、設定、混合現實、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、效能、品質設定、照明設定、深度緩衝區、xr、追蹤損失
-ms.openlocfilehash: d32dd19e535d2681654014cc92f319dc564e059e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010109"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009328"
 ---
 # <a name="recommended-settings-for-unity"></a>Unity 的建議設定
 
@@ -167,7 +167,7 @@ HoloLens 有行動類別的 CPU 和 GPU，這表示應用程式可能需要較�
 |  麥克風  |  VideoCapture 捕獲音訊) 、DictationRecognizer、GrammarRecognizer 和 KeywordRecognizer 時的 ( |
 |  InternetClient  |  DictationRecognizer (並使用 Unity Profiler)  |
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [Unity 開發概觀](unity-development-overview.md)
 * [了解混合實境的效能](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

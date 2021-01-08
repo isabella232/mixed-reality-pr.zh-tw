@@ -1,17 +1,17 @@
 ---
 title: 可互動的物件
-description: 按鈕一直以來都是用來觸發2D 抽象世界中事件的比喻。 在三維混合現實世界中，我們不再需要局限于這種抽象概念。
+description: 瞭解如何在您的混合現實應用程式中觸發事件、提供視覺提示，以及與物件互動。
 author: cre8ivepark
 ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、提示、ui、ux、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
-ms.openlocfilehash: fb7004c22602683e4edb1e38784cac5c0b7479c4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847865"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007198"
 ---
 # <a name="interactable-object"></a>可互動的物件
 

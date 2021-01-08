@@ -1,6 +1,6 @@
 ---
-title: 混合實境軟體概觀和發行歷程記錄
-description: 概述 Windows Mixed Reality 的主要軟體元件及其發行歷程記錄
+title: 軟體總覽和發行歷程記錄
+description: 概述 Windows Mixed Reality、沉浸式耳機和其發行歷程記錄的主要軟體元件。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
 - Windows 10
-ms.openlocfilehash: 31adf0572482cb9857ff94c2b7ef3aee4fe538d9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b06bd835f1e2562e01bfb7bf240747919f422e8c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726019"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009248"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -49,9 +49,11 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 ### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality 沉浸式耳機的更新
 
 #### <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
+
 如 [先前所宣佈](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge)，我們已使用 Windows Mixed Reality 中的新 Microsoft Edge 瀏覽器進行更新，以提供更好的支援。 新的 Microsoft Edge 採用 Chromium 的開放原始碼專案，為客戶建立更好的 web 相容性，並為所有 網頁程式開發人員建立較少的 web 片段。 它也支援 WebXR，這是用來建立適用于 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
 
 #### <a name="improved-settings-for-wmr"></a>改良的 WMR 設定
+
 感謝您的意見反應，我們已新增並闡明耳機顯示頁面上的設定：
 
 * **我的家用的視覺品質** 變更這些設定只會影響 (懸崖之屋和 Skyloft) 的混合實境首頁環境：
@@ -71,15 +73,18 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 * **輸入切換** -切換輸入焦點切換 (Win + Y) 行為，根據狀態感應器回饋) 或手動 (自動。
 
 #### <a name="new-cortana-app"></a>新 Cortana 應用程式
+
 Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限英文），不再支援特定的混合現實特定命令，例如「拍攝相片」和「拍攝影片」。 您可以使用新的 Cortana 來啟動應用程式，而且它也支援以生產力為焦點的新命令，例如「我的下一個會議是什麼時候」。 或「傳送電子郵件給 <name> 我遲到的時候。」
     
 #### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>19041.546 2020 年10月10日發行 (推出的其他更新) 
+
 此桌面每月服務更新包括下列 Windows Mixed Reality 裝置的變更： 
 * 減少 Windows Mixed Reality 前端掛載顯示器 (HMD) 的扭曲和 aberrations。 
 * 新增即將推出之 HP Windows Mixed Reality 移動控制器的支援。 
 * 將 Windows Mixed Reality 中的 90-Hz 重新整理頻率設定的行為變更為，在無法達到 90 Hz 的特定情況下，不會再自動切換回 60 Hz。 
 
 #### <a name="help-us-improve"></a>協助我們改進！
+
 我們會持續尋找改善相容性。  如果您認為慣用的傳統 Win32 應用程式在 Windows Mixed Reality 時無法正常運作，請透過我們的 [意見反應中樞](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)提交意見反應。
 
 ### <a name="prior-release-notes"></a>先前的版本資訊

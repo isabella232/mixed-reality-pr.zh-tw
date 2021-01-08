@@ -1,17 +1,17 @@
 ---
 title: 手勢指導
-description: 當系統未偵測到使用者的手協助時，所觸發的3D 手。
+description: 瞭解當系統未偵測到使用者的手協助時，如何使用手指導來觸發3D 手。
 author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: e46704a1cd2e93fc1764528c408c01d117444c34
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847965"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009158"
 ---
 # <a name="hand-coach"></a>手勢指導
 

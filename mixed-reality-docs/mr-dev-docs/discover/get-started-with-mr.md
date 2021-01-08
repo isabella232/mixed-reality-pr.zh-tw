@@ -1,24 +1,24 @@
 ---
 title: 開始使用混合實境
-description: 協助新手學習混合實境並了解其功能。
+description: 了解混合實境理論、開發和常見使用案例的基本概念。
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: ef39848fea512df9fa61ca4d538354e11fb8e042
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
+ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926060"
+ms.lasthandoff: 12/23/2020
+ms.locfileid: "97757666"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 
 ![虛擬的蜂鳥與手](images/01_MixedReality.png)
 
-混合實境生態系統是一種新興的實體和數位互動態勢，其可能性只會受想像力所限制。 無論您是經驗豐富的開發人員還是新的歸附者，我們都建議您利用我們在下面的連結中所安排的資源，來開始您的混合實境旅程。 新的路途還很長，讓我們立刻出發吧！ 
+混合實境生態系統是一種新興的實體和數位互動態勢，其可能性只會受想像力所限制。 無論您是經驗豐富的開發人員還是新的歸附者，我們都建議您利用我們在下面所安排的資源，來開始您的混合實境旅程。 新的路途還很長，讓我們立刻出發吧！ 
 
 ## <a name="choose-your-track"></a>選擇適合您的主題
 
@@ -54,7 +54,7 @@ ms.locfileid: "96926060"
 
 ![您要使用混合實境執行什麼作業？](images/HLS19_remoteAssistHologram_001.jpg)
 
-在深入探討應用程式的設計或開發之前，您必須先了解所謂的混合實境是什麼。 本節旨在讓您熟悉混合實境頻譜，包括環境輸入、感知變更、設計挑戰及其隨附裝置的範圍。 
+在深入探討應用程式的設計或開發之前，您必須先了解所謂的混合實境是什麼。 本節旨在讓您熟悉混合實境頻譜，包括環境輸入、感知變更、設計挑戰及裝置。 
 
 |  概念  |  結果  |
 | --- | --- |
@@ -68,6 +68,42 @@ ms.locfileid: "96926060"
 ---
 
 ## <a name="see-how-industry-partners-are-using-mixed-reality"></a>查看產業合作夥伴如何使用混合實境
+
+:::row:::
+    :::column:::
+       [![Mercedes 汽車 HoloLens](images/mercedes.png)](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="mercedes-benz-is-transforming-the-service-workforce-with-hololens-2-and-dynamics-365-remote-assist"></a>[Mercedes-Benz 使用 HoloLens 2 和 Dynamics 365 遠端協助來轉換服務員工](https://customers.microsoft.com/story/839709-mercedes-benz-automotive-holoLens-en-usa)
+        Mercedes-Benz USA 使用 HoloLens 2 和 Dynamics 365 遠端協助，來改善服務技術人員的效率、縮短解決問題的時間，並降低與服務相關之旅遊的成本和環境衝擊。
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![BHP 能源 Dynamics 365 HoloLens](images/bhp.png)](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="bhp-increases-the-pace-of-innovation-despite-lockdown-with-mixed-reality-and-iot"></a>[BHP 透過混合實境和 IoT，在面臨封鎖的情況下加快創新的步調](https://customers.microsoft.com/story/850776-bhp-energy-dynamics-365-hololens)
+        儘管 COVID-19 帶來種種影響和限制，BHP 透過 HoloLens 2 和 Dynamics 365 遠端協助，為千里之外的現場工作者提供支援和訓練。
+    :::column-end:::
+:::row-end:::
+
+---
+
+:::row:::
+    :::column:::
+       [![MediView HoloLens 故事](images/mediview.jpeg)](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+    :::column-end:::
+    :::column span="2":::
+        ### <a name="healthcare-startup-cuts-time-to-market-by-up-to-70-despite-pandemic"></a>[儘管面臨疫情，醫療保健新創公司仍將上市時間減少高達 70%](https://customers.microsoft.com/story/848966-mediview-mcs-story)
+        醫療保健新創公司 Mediview 已開發出一項優異的產品，該產品使用直接在患者構造上，或停留在其上方投影的 3D 全像投影，以協助外科醫生查看患者內部構造並引導他們完成程序。
+    :::column-end:::
+:::row-end:::
+
+---
 
 :::row:::
     :::column:::
@@ -98,8 +134,8 @@ ms.locfileid: "96926060"
        [![Philips-Azurion](images/Philips-Azurion1.jpg)](https://binged.it/31B1RiR)
     :::column-end:::
     :::column span="2":::
-        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-minimally-invasive-procedures"></a>[Philips 正在試驗將 HoloLens 應用在影像導引微創程序領域](https://binged.it/31B1RiR)
-        Philips 正在試驗將 HoloLens 應用在影像導引微創程序領域，在這段期間，醫師倚賴現場 X 光線、超聲波和其他資訊來源，在患者內部「查看」並引導其採取動作。
+        ### <a name="philips-is-piloting-hololens-in-the-domain-of-image-guided-invasive-procedures"></a>[Philips 正在試驗將 HoloLens 應用在影像導引侵入性程序領域](https://binged.it/31B1RiR)
+        Philips 正在試驗將 HoloLens 應用在影像導引侵入性程序領域，在這段期間，醫師倚賴現場 X 光線、超聲波和其他資訊來源，在患者內部「查看」並引導其採取動作。
     :::column-end:::
 :::row-end:::
 
@@ -111,13 +147,13 @@ ms.locfileid: "96926060"
 
 ![HoloLens 分解視圖](images/HoloLens2_ExplodedView_8k.png)
 
-如果您想要了解不同的混合實境硬體和服務如何運作，請查看下列連結。 這些連結會將您引導至 Microsoft 文件的不同部分，但建議您加入書簽並返回這裡，以繼續展開您的設計和開發旅程。
+如果您想要了解不同的混合實境硬體和服務如何運作，請查看下列連結。 這些連結會將您引導至 Microsoft 文件的不同部分。 我們建議您將此頁面加入書籤，以便繼續進行您的設計和開發旅程。
 
 |  概念  |  結果  |
 | --- | --- |
 | [HoloLens 硬體](https://www.microsoft.com//hololens/hardware) | HoloLens 2 提供最舒適且身歷其境的沈浸式混合實境體驗，採用領先業界的解決方案，可在數分鐘內實現價值 - 這些都由於 Microsoft 雲端與 AI 服務的可靠性、安全性及可擴展性而得到增強 |
-| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | 探索各式各樣可讓員工使用 Dynamics 365 獲得能力並將作業最佳化的產品，包括[遠端協助](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、[配置](https://docs.microsoft.com/dynamics365/mixed-reality/layout/)和[指南](https://docs.microsoft.com/dynamics365/mixed-reality/guides/)。 有意義的深入解析來自實際工作、實際裝置和實際使用者的親身體驗 |
-| [Azure 雲端服務](../develop/mixed-reality-cloud-services.md) | 藉由新增空間感知、空間錨點和複雜的 3D 模型轉譯，在各種平台上打造引人注目的沉浸式體驗 |
+| [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | 探索各式各樣可讓員工使用 Dynamics 365 獲得能力並將作業最佳化的產品，包括[遠端協助](https://docs.microsoft.com/dynamics365/mixed-reality/remote-assist/ra-overview)、配置和[指南](https://docs.microsoft.com/dynamics365/mixed-reality/guides/)。 有意義的深入解析來自實際工作、實際裝置和實際使用者的親身體驗 |
+| [Azure 雲端服務](../develop/mixed-reality-cloud-services.md) | 藉由空間感知、空間錨點和複雜的 3D 模型轉譯，在各種平台上打造引人注目的沉浸式體驗 |
 
 ## <a name="what-would-you-like-to-do-next"></a>接著要執行什麼作業？
 

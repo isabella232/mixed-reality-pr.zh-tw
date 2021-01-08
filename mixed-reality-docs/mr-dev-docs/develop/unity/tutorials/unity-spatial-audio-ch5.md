@@ -1,26 +1,28 @@
 ---
-title: 空間音訊教學課程-5。 使用殘響增加空間音訊的距離
-description: 新增回音效果，以增強距離變化與空間音訊的意義。
+title: 使用殘響增加空間音訊的距離
+description: 瞭解如何新增一項回音效果，以增強混合現實應用程式中空間音訊的距離變化意義。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器、音訊混音器、SFX 回音
-ms.openlocfilehash: c63e5a239806c133e814eee8b44cbfb30f55aa5d
-ms.sourcegitcommit: fbeff51cae92add88d2b960c9b7bbfb04d5a0291
+ms.openlocfilehash: 6c04ac1e4b52c7eb6104d54c184c789bec413852
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97002613"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006358"
 ---
 # <a name="using-reverb-to-add-distance-to-spatial-audio"></a>使用殘響增加空間音訊的距離
 
 ## <a name="objectives"></a>目標
+
 在上一章中，我們將 spatialization 新增至音效，讓他們有意義的方向。 在第5章中，我們將新增一項回音效果，讓聲音的距離更合理。 我們的目標是：
 * 藉由新增回音來改善音效來源的認知距離
 * 使用接聽程式與全像投影之間的距離，控制聲音的感覺距離
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>新增混音器群組和回音效果
+
 在 [第2章](unity-spatial-audio-ch2.md)中，我們新增了混音器。 混音器依預設會包含一個名為 **Master** 的 **群組**。 因為我們只想要將回音效果套用至某些音效，所以讓我們為這些音效新增第二個 **群組** 。 若要加入 **群組**，請以滑鼠右鍵按一下 **音訊混音** 器中的 **主要** 群組，然後選擇 [**新增子群組**]：
 
 ![新增子群組](images/spatial-audio/add-child-group.png)
@@ -44,6 +46,7 @@ ms.locfileid: "97002613"
 其他設定則控制模擬房間的感覺。 尤其是， **衰減時間** 與認知的房間大小有關。 
 
 ## <a name="enable-reverb-on-the-video-playback"></a>啟用影片播放時的回音
+
 有兩個步驟可在音訊來源上啟用回音：
 * 將 **音訊來源** 路由傳送至適當的 **群組**
 * 設定 **Microsoft 空間定位器** 外掛程式，以將音訊傳遞到 **群組** 進行處理

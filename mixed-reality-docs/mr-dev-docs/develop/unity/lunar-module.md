@@ -1,17 +1,17 @@
 ---
 title: 月球模組
-description: 瞭解如何使用雙向追蹤和 Xbox 控制器輸入擴充 HoloLens 的基本手勢、建立會回應表面對應和平面尋找的物件，以及執行簡單的功能表系統。
+description: 瞭解如何使用雙向追蹤和 Xbox 控制器輸入擴充 HoloLens 的基本手勢、建立回應物件，以及執行功能表系統。
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 2861cb85ac2f4a51a80e586b2be42ddb1d395e8a
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: b0630df49fd8ad154017000893a08560793fb39e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010499"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008818"
 ---
 # <a name="lunar-module"></a>月球模組
 
@@ -108,7 +108,7 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 </tr>
 </table>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [MRTK 範例中樞](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)

@@ -1,17 +1,17 @@
 ---
 title: 元素週期表
-description: 專案的定期資料表是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 了解如何使用物件集合，透過各種介面類型在 3D 空間中配置物件陣列。
+description: 瞭解如何使用具有專案範例應用程式之定期資料表的物件集合，來配置3D 空間中的物件陣列。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: a4099c889fee886e63d3a8b773398a250621f26e
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010179"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009358"
 ---
 # <a name="periodic-table-of-the-elements"></a>元素週期表
 
@@ -87,7 +87,7 @@ ms.locfileid: "97010179"
 </tr>
 </table>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 
 * [MRTK 範例中樞](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)

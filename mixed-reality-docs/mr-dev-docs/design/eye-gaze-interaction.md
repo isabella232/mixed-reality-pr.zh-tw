@@ -1,17 +1,17 @@
 ---
 title: 眼部目光導向的互動
-description: HoloLens 2 將全像攝影體驗的內容和人類理解能力帶入了新境界；它讓開發人員能夠運用使用者視線方向的相關資訊。 本頁面涵蓋的設計建議適用于想要使用眼睛作為輸入的開發人員。
+description: 瞭解關於 HoloLens 2 的眼睛和注視互動，以及新的內容和人為瞭解的互動方式（如果有的話）。
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、互動
-ms.openlocfilehash: e21d591d2843f67f3a0b0eed42a27c74942e8999
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847335"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008578"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 上的眼睛架構互動
 

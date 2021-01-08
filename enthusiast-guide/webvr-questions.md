@@ -1,14 +1,14 @@
 ---
 title: WebVR 常見問題
-description: 超越標準取用者支援檔的網路混合現實疑難排解。
+description: 針對超越標準取用者支援檔的 web 應用程式，保持最新的混合現實疑難排解。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、WebVR
-ms.openlocfilehash: fd9906ca36c71b1bf959466d90c57e07be0eca5e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: dc7a0b28e19f4f1fc029489aae2ea375e43b8d3b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725629"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008658"
 ---
 # <a name="webvr-faqs"></a>WebVR 常見問題
 

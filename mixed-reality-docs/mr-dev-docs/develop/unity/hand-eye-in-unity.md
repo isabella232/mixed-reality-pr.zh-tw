@@ -1,17 +1,17 @@
 ---
 title: Unity 中的明確和眼睛追蹤
-description: 有兩種主要方式可以在您的「Unity」、「手手勢」和「動作控制器」中採取動作。
+description: 深入瞭解在 Unity、手勢手勢和移動控制器上採取動作的兩個主要方式。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 手勢、移動控制器、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: de8ea7968c36722f3690c5515e4f69e576898524
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 4c704677a78fee02b9da9d0db9bc2966ab6b3724
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97011549"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008949"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity 中的明確和眼睛追蹤
 
@@ -48,7 +48,7 @@ MRTK v2 提供一組 UI 控制項和建立區塊，可協助您加速開發。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊：
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [空間對應](spatial-mapping-in-unity.md)

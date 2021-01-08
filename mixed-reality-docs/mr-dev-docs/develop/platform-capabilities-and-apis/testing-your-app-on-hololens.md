@@ -1,17 +1,17 @@
 ---
 title: 測試 HoloLens 上的應用程式
-description: 測試 HoloLens 應用程式的指引和建議
+description: 深入瞭解您的 HoloLens 混合現實應用程式測試和效能優化的一般指引和建議。
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens，測試
-ms.openlocfilehash: e1a5a62cf52a3144f02b8acaa96b3c653246fd9c
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530333"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008538"
 ---
 # <a name="testing-your-app-on-hololens"></a>測試 HoloLens 上的應用程式
 
@@ -22,6 +22,7 @@ ms.locfileid: "97530333"
 全像攝影應用程式需要在各式各樣的環境中順利執行。 他們也需要隨時維護效能和使用者的緩和。 使用全像全像全公司的應用程式時，效能對使用者的體驗很重要。 請確定您已閱讀並遵循 [混合現實的瞭解效能](understanding-performance-for-mixed-reality.md)
 
 ## <a name="testing-3d-in-3d"></a>在3D 中測試3D
+
 1. **盡可能在最多不同的空間中測試您的應用程式。** 在大型房間、小型房間、bathrooms、廚房、臥室、辦公室等等嘗試。 也請考慮使用非標準功能的房間，例如非垂直牆、彎曲牆、非水準上限。 在房間間、地面之間轉換走廊或階梯時，是否能順利運作？
 2. **在不同的光源條件中測試您的應用程式。** 它會正確地回應不同的環境條件，例如光源、黑色表面以及透明或反射表面（例如鏡像和玻璃牆）。
 3. **在不同的動作條件中測試您的應用程式。** 放在裝置上，並在各種不同的動作狀態下嘗試您的案例。 它會正確地回應不同的移動還是穩定狀態？
@@ -37,11 +38,11 @@ ms.locfileid: "97530333"
 ![適用于 HoloLens 應用程式開發的環境測試矩陣](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>舒適度
+
 1. **剪輯平面。** 用心到轉譯 [全息影像](hologram-stability.md#hologram-render-distances)的位置。
 2. **避免與實際的 head 移動不一致的虛擬移動。** 避免以不代表使用者實際動作的方式移動攝影機。 如果您的應用程式需要透過場景移動使用者，請讓動作可預測、將加速降至最低，並讓使用者控制移動。
 3. **遵循「全像」品質指導方針。** 實行全像 [影像品質指導](hologram-stability.md) 方針的高效能應用程式比較不可能導致使用者不適感。
 4. **以水準方式（而不是垂直）散發全像投影。** 強制使用者花很長的時間來向上查閱或向下，可能會導致疲勞。
-
 
 ## <a name="input"></a>輸入
 
@@ -112,5 +113,6 @@ ms.locfileid: "97530333"
 
 若要為您的應用程式提供最有機會在 Windows 市集中 [發佈](../../distribute/submitting-an-app-to-the-microsoft-store.md)，請先在本機進行驗證並測試，再提交憑證以進行認證。 如果您的應用程式是以 Windows 全像裝置系列為目標， [Windows 應用程式認證套件](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) 只會在您的電腦上執行本機靜態分析測試。 您的 HoloLens 不會執行任何測試。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
 * [將應用程式提交到 Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

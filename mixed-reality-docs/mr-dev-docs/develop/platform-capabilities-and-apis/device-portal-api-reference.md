@@ -1,17 +1,17 @@
 ---
 title: 裝置入口網站 API 參照
-description: HoloLens Windows 裝置入口網站的 API 參考
+description: 隨時掌握適用于 HoloLens 開發的 Windows 裝置入口網站 API。
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens、Windows 裝置入口網站、API、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: c705ce65971042ab41befed9c6813dc797b61fc0
-ms.sourcegitcommit: 084b1da9d7b435394b38d6152a2f9aee7a74aa2a
+ms.openlocfilehash: 13845a5a5668ee8c86178196326425f46be9b321
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/29/2020
-ms.locfileid: "97804430"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006648"
 ---
 # <a name="device-portal-api-reference"></a>裝置入口網站 API 參照
 

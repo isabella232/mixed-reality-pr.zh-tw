@@ -1,17 +1,17 @@
 ---
 title: 開始您的 VR 旅程
-description: 檢查點，以引導新的 VR 裝置使用者完成設定，並使用其沉浸式 VR 裝置。
+description: 探索我們的策劃檢查點，以引導新的裝置使用者完成設定，並使用其沉浸式的 VR 裝置。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: 9a82ab12b9cf91bd1fefcf84a2f6b4e62c8df24a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725705"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007058"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -60,7 +60,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可
 
 <br>
 
-|  Checkpoint  |  功能  |
+|  Checkpoint  |  特徵  |
 | --- | --- |
 | [學習混合實境](learn-mixed-reality.md) | 瞭解如何使用您的注視、語音、控制器和鍵盤/滑鼠輸入 |
 | [流覽 Windows Mixed Reality 首頁](your-mixed-reality-home.md) | 探索 Windows Mixed Reality 首頁的虛擬環境  |
@@ -76,7 +76,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可
 
 <br>
 
-|  Checkpoint  |  功能  |
+|  Checkpoint  |  特徵  |
 | --- | --- |
 | [遊戲、360影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md) | 開始使用您的第一個沉浸式遊戲、2D 商店平板、桌面應用程式及 WebVR 體驗 |
 | [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) | 連接您的裝置並播放 SteamVR 遊戲，瞭解 Windows 測試人員計畫 |

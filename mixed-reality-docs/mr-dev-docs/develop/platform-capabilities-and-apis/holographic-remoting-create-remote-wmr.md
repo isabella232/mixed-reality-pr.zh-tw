@@ -1,17 +1,17 @@
 ---
 title: " (WMR) 撰寫全像遠端遠端應用程式"
-description: 藉由建立可在遠端電腦上轉譯的全像遠端遠端應用程式遠端內容，可以串流處理至 HoloLens 2。
+description: 瞭解如何將遠端電腦上轉譯的遠端內容串流至使用 HolographicSpace 的全像遠端應用程式 HoloLens 2。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、NuGet
-ms.openlocfilehash: 5eddcc117008ebc54eac11965592099601880d3e
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: b78d1c93c8b2890ba8d904c289c8d61a14380824
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530219"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006498"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>使用 HolographicSpace API 撰寫全像遠端執行遠端應用程式
 
@@ -22,7 +22,7 @@ ms.locfileid: "97530219"
 
 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 良好的起點是以 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)為目標的可運作 DirectX 型桌面或 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 [C + + 全息版專案範本](../native/creating-a-holographic-directx-project.md)是不錯的起點。
 

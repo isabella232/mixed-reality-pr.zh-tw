@@ -1,17 +1,17 @@
 ---
 title: 設計全像攝影顯示器的內容
-description: 瞭解全像顯示器的設計方針和最佳作法。
+description: 瞭解在 HoloLens 裝置上進行全像顯示器的設計指導方針和最佳作法。
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI 設計、全像展示、內容設計、深色主題、淺色主題、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、圖元
-ms.openlocfilehash: 4a95f5df50a600035d9127c73f86a5d8be5e7131
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847996"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009088"
 ---
 # <a name="designing-content-for-holographic-display"></a>設計全像攝影顯示器的內容
 
@@ -22,6 +22,7 @@ ms.locfileid: "97847996"
 <br>
 
 ## <a name="challenges-with-bright-color-on-a-large-surface"></a>在大型表面上具有亮色的挑戰 
+
 根據我們的 HoloLens 經驗研究和測試，我們發現在顯示的大型區域中使用亮色可能會導致幾個問題： 
 
 **眼睛疲勞** 

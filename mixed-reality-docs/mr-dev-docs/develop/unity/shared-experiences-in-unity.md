@@ -1,17 +1,17 @@
 ---
 title: Unity 中的共用體驗
-description: 在 Unity 應用程式的多個使用者之間共用相同的全息。
+description: 瞭解如何使用 Azure 空間錨點，在 Unity 應用程式的多個使用者之間共用相同的全像投影。
 author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、Azure、Azure 空間錨點、ASA、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 46588f84c39a48e22147d0fc246ceb8d5ee7c47d
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 26ff56c2f9d3feff33bcb7eb103b41a8dfcba971
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010088"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009278"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity 中的共用體驗
 

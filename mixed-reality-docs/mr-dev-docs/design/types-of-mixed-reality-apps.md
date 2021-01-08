@@ -1,17 +1,17 @@
 ---
 title: 混合現實應用程式的類型
-description: 深入瞭解混合現實平臺可支援的各種體驗，從完全沉浸式的環境到透過使用者目前環境的輕量資訊分層。
+description: 瞭解混合現實平臺所支援的體驗，從沉浸式環境到使用者環境中的輕量資訊分層。
 author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、應用程式模式、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 8c9a051ff0b80461fe590efa37593bddb01c0e63
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848101"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007618"
 ---
 # <a name="types-of-mixed-reality-apps"></a>混合現實應用程式的類型
 

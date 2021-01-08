@@ -1,17 +1,17 @@
 ---
 title: Unity 中的筆勢和運動控制器
-description: 瞭解如何在 Unity 中使用手手勢和移動控制器來採取行動。
+description: 瞭解如何使用 XR 和一般按鈕/軸 Api，在您的 Unity 中使用手手勢和移動控制器來採取行動。
 author: hferrone
 ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 手勢、移動控制器、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 8941fa05af21a7b2c7302f4a76f27cf38e1d5a65
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 3ef3e3d5a1d9171ff6cc04e19fa97bb73768370e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010319"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008788"
 ---
 # <a name="gestures-and-motion-controllers-in-unity"></a>Unity 中的筆勢和運動控制器
 
@@ -565,7 +565,7 @@ void OnDestroy()
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊：
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [手部和眼睛追蹤](hand-eye-in-unit.md)

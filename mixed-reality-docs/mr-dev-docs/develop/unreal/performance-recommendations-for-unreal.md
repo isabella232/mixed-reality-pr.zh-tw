@@ -7,12 +7,12 @@ ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 效能, 最佳化, 設定, 文件
-ms.openlocfilehash: 295f5c3653d02e9ab7ab4cd51dba57cafb5b291f
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
+ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609619"
+ms.lasthandoff: 01/04/2021
+ms.locfileid: "97865423"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal 的效能建議
 
@@ -37,7 +37,7 @@ Unreal Engine 有幾項可提高應用程式效能的功能，全部都是以[�
 
 ![VR 轉譯設定](images/unreal/performance-recommendations-img-03.png)
 
-4. 使用 OpenXR 時，確保 [預設] 或 [D3D12] 是選取的 [預設 RHI]。
+4. **[僅 OpenXR]** 確保 [預設] 或 [D3D12] 是選取的 [預設 RHI]：
     * 選取 **D3D11** 會對效能造成負面影響，因為平台會執行額外的轉譯行程。 除了避免額外的轉譯行程，**D3D12** 應提供轉譯效能改善。
 
 ![預設 RHI](images/unreal/performance-recommendations-img-09.png)
