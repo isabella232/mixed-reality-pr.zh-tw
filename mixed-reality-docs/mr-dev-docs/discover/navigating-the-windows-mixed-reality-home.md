@@ -1,17 +1,17 @@
 ---
 title: 瀏覽 Windows Mixed Reality 住家
-description: HoloLens 和 Windows Mixed Reality 的耳機共用了一個範例，可在您的環境中啟動、放置及操作應用程式和3D 模型， (是否為實體或數位) 。 瞭解如何在這兩種裝置類型上流覽 Windows Mixed Reality 首頁。
+description: 瞭解如何在 HoloLens 和 Windows Mixed Reality 耳機上流覽 Windows Mixed Reality 首頁。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: shell、os、platform、cliff 房子、房屋、home、環境、開始、開始功能表、首頁功能表、釘選、應用程式、啟動應用程式、放置應用程式、傳送、移動、流覽、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: 4d8aa88fa1057c550601feb7ad85ace15fcada54
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757686"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009688"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>瀏覽 Windows Mixed Reality 住家
 

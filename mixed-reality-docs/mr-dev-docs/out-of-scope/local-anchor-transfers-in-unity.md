@@ -1,17 +1,17 @@
 ---
 title: Unity 中的本機錨點傳輸
-description: 在 Unity 應用程式的多個 HoloLens 裝置之間傳輸錨點。
+description: 瞭解如何在 Unity mixed reality 應用程式中的多個 HoloLens 裝置之間傳輸錨點。
 author: fieldsjacksong
 ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、傳輸、本機錨定、錨點匯出、錨點匯入
-ms.openlocfilehash: d6aebfb89d05926b1f773dea58ee65fead57988e
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682801"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009638"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Unity 中的本機錨點傳輸
 
@@ -27,7 +27,7 @@ ms.locfileid: "91682801"
 如何啟用 *>spatialperception* 功能：
 1. 在 Unity 編輯器中，開啟 [ **播放機設定** ] 窗格 (編輯 > 專案設定 > 播放) 
 2. 按一下 [ **Windows 市存放區** ] 索引標籤
-3. 展開 [ **發行設定]** ，並檢查 [ **功能]** 清單中的 [ **>spatialperception]** 功能
+3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
 
 >[!NOTE]
 >如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
@@ -35,7 +35,7 @@ ms.locfileid: "91682801"
 ### <a name="anchor-transfer"></a>錨點傳輸
 
 **命名空間：** *UnityEngine. XR。共用*<br>
-**類型** ： *WorldAnchorTransferBatch*
+**類型**： *WorldAnchorTransferBatch*
 
 若要傳送 [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md)，必須建立要傳送的錨點。 其中一個 HoloLens 的使用者會掃描其環境，並以手動或程式設計方式選擇空間中的點來作為共用體驗的錨點。 接著可以將代表這點的資料序列化，並傳輸至體驗中共用的其他裝置。 然後每個裝置都會將錨點資料還原序列化，並嘗試找出空間中的那個點。 為了讓錨點傳送正常運作，每個裝置都必須掃描出足夠的環境，讓錨點表示的點可以識別。
 

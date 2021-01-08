@@ -1,17 +1,17 @@
 ---
 title: 版本資訊 - 2017 年 10 月
-description: Windows Mixed Reality Windows 10 Fall Creators Update (2017 年10月) 的版本資訊。
+description: 在2017年10月) Windows 10 Fall Creators Update (的 Windows Mixed Reality 版本資訊。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 版本資訊、版本、windows 10、組建、rs3、os
-ms.openlocfilehash: 7c5af3b8ead4aa4bee9e342e9c41b696a30e5e2c
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725909"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009488"
 ---
 # <a name="release-notes---october-2017"></a>版本資訊 - 2017 年 10 月
 

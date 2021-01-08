@@ -1,17 +1,17 @@
 ---
 title: 工具提示
-description: 工具提示是連結至另一個控制項或物件的簡短描述。
+description: 瞭解如何在混合現實應用程式中使用工具提示，這是連結至另一個控制項或物件的簡短描述。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、工具提示、MRTK、混合現實工具組
-ms.openlocfilehash: ceb88fd89ec9d7bde50e23f2ae3ac158a301eb02
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848126"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009408"
 ---
 # <a name="tooltip"></a>工具提示
 

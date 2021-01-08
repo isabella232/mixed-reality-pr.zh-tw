@@ -1,17 +1,17 @@
 ---
 title: 取得 HolographicSpace
-description: 說明 HolographicSpace API，這是一種適用于全息轉譯和空間輸入的核心概念。
+description: 瞭解如何在您的混合現實應用程式中使用 HolographicSpace API 進行全像轉譯和空間輸入。
 author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality、HolographicSpace、CoreWindow、空間輸入、轉譯、交換鏈、全像攝影框架、更新迴圈、遊戲迴圈、參考框架、locatability、範例程式碼、逐步解說、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 3b0e31b8d3bf0d7741e7976edd2069db68ea5121
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c630905b4f7f3bf03d575201feb944c3b8f62f32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613012"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009528"
 ---
 # <a name="getting-a-holographicspace"></a>取得 HolographicSpace
 
@@ -176,6 +176,6 @@ m_locatabilityChangedToken = m_spatialLocator.LocatabilityChanged(
 
 然後，請使用此事件來判斷何時無法將靜止的全像全球呈現。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [DirectX 中的呈現](rendering-in-directx.md)
 * [DirectX 中的座標系統](coordinate-systems-in-directx.md)

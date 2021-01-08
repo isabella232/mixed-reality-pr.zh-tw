@@ -1,17 +1,17 @@
 ---
 title: 啟用住家內的 3D 模型位置
-description: 如何從您的網站或應用程式將3D 模型放在 Windows Mixed Reality 首頁
+description: 瞭解如何將您的網站或應用程式的3D 模型放在 Windows Mixed Reality 首頁。
 author: thmignon
 ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D，型號，放置於家裡、地點、世界、模型化、混合實境首頁、web、應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ad35e1d010e32c4729b0d0dd58943dabdee86e09
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757806"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010098"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>在混合實境首頁中啟用 3D 模型的放置
 
@@ -42,7 +42,7 @@ ms.locfileid: "97757806"
     </tr>
 </table>
 
-## <a name="overview"></a>概觀
+## <a name="the-basics"></a>基本概念
 
 有兩個步驟可讓您在 Windows Mixed Reality 首頁中放置3D 模型：
 1. [確定您的3d 模型與 Windows Mixed Reality 首頁相容](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)。

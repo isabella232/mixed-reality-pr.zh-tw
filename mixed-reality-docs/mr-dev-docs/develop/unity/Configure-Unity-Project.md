@@ -1,19 +1,19 @@
 ---
 title: 在不 MRTK 的情況下設定您的專案
-description: 針對 Windows Mixed Reality 設定 Unity 專案的指示
+description: 瞭解如何為沒有混合現實工具組的 Windows Mixed Reality 設定新的 Unity 專案。
 author: hferrone
 ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能
-ms.openlocfilehash: 1337001e8cc5c280c5789acbc8f10f40bca9b763
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 1d4acb80a7ad0c5143a4408829759aab0a2c012b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613370"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009898"
 ---
-# <a name="configuring-your-project-without-mrtk"></a>在不 MRTK 的情況下設定您的專案
+# <a name="configuring-your-project-without-mrtk"></a>在沒有 MRTK 的情況下設定專案
 
 Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft 平臺。 WMR 平臺可讓您建立應用程式，以在全像全像 VR 的顯示裝置上呈現數位內容。
 

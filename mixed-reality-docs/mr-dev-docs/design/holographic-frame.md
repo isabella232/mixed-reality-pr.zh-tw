@@ -1,17 +1,17 @@
 ---
 title: 全像攝影框架
-description: 使用者會透過全像攝影框架來查看混合現實的世界。
+description: 瞭解使用者如何透過全像攝影框架查看混合現實世界，以及如何以最佳的方式設計體驗。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens、Windows Mixed Reality、全像攝影框架、FOV、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、互動、流覽、功能表
-ms.openlocfilehash: 679f629d5190ad6e3df2d92d2adfcce998f7dea5
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847384"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009588"
 ---
 # <a name="holographic-frame"></a>全像攝影框架
 

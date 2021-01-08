@@ -1,17 +1,17 @@
 ---
 title: Unity 中的語音輸入
-description: Unity 會公開三種方式，將語音輸入新增至您的 Windows Mixed Reality 應用程式。
+description: 瞭解 Unity 如何公開三種方式，將語音輸入、語音辨識和聽寫新增至您的 Windows Mixed Reality 應用程式。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 66aba92c14eca4183739687934e12db289cd2302
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d07909bbf05ff882eb0a4b6123c39eae9280e3e8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010569"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009798"
 ---
 # <a name="voice-input-in-unity"></a>Unity 中的語音輸入
 

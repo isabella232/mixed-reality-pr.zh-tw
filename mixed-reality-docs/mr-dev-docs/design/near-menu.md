@@ -1,17 +1,17 @@
 ---
 title: 近端功能表
-description: 近端功能表是面板上的按鈕集合，可讓您遵循標記的行為。
+description: 瞭解如何使用 near 功能表，這是面板上的按鈕集合，可讓您在混合現實環境中使用標記式行為。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、功能表、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: fb64ecf4a0bc2d7a495e87d127b39aded1212a6f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3cba4452861f05a1ce921c1f18f6636661ee34b0
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847264"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009928"
 ---
 # <a name="near-menu"></a>近端功能表
 

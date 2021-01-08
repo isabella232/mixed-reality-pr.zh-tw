@@ -1,17 +1,17 @@
 ---
 title: 實作 3D 應用程式啟動器 (Win32 應用程式)
-description: 瞭解如何建立適用于 Windows Mixed Reality [開始] 功能表和家用環境之 Win32 VR 應用程式和遊戲的3D 應用程式啟動器和標誌。
+description: 瞭解如何建立適用于 [開始] 功能表和家用環境之 Win32 VR 應用程式和遊戲的3D 應用程式啟動器和標誌。
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D，標誌，圖示，模型，啟動器，3D 啟動器，磚，即時 cube，win32，混合現實耳機，windows mixed reality 耳機，虛擬實境耳機，資訊清單
-ms.openlocfilehash: 5a3e38de54aad1fceb4804003043c87dddab61c4
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757815"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009667"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>實作 3D 應用程式啟動器 (Win32 應用程式)
 

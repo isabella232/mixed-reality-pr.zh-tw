@@ -1,17 +1,17 @@
 ---
 title: 資產建立程序
-description: 針對混合現實體驗建立資產的指引。
+description: 瞭解如何建立、購買及移植資產，以進行混合的現實體驗。
 author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 資產、建立、處理、預算、多邊形、材質、著色器、效能、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、資產
-ms.openlocfilehash: 2089ac7a870d9b4b13d314774d6d6124b78bb15c
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847556"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009616"
 ---
 # <a name="asset-creation-process"></a>資產建立程序
 

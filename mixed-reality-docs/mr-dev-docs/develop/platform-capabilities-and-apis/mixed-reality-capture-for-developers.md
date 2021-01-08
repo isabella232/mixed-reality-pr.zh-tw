@@ -1,19 +1,19 @@
 ---
-title: 適用於開發人員的混合實境擷取
-description: 適用于開發人員的混合現實開發最佳做法。
+title: 適用于開發人員的混合現實 capture
+description: 瞭解為開發人員啟用、使用和轉譯混合現實 capture 的最佳作法。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: 13765686c3e86822efff17b25995a6eaa4008e6c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613342"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009938"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>適用於開發人員的混合實境擷取
+# <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
 
 > [!NOTE]
 > 請參閱下面 [的 PV 攝影機](#render-from-the-pv-camera-opt-in) 轉譯，以取得 HoloLens 2 新的 MRC 功能的指引。
@@ -224,8 +224,8 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 |  屬性名稱  |  類型  |  預設值  |  描述 |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))   |  1 (VideoRecord)   |  描述此效果用於哪個捕獲資料流程。 無法使用音訊。 |
-|  HologramCompositionEnabled  |  boolean  |  TRUE  |  用來啟用或停用影片捕獲中全像影像的旗標。 |
-|  RecordingIndicatorEnabled  |  boolean  |  TRUE  |  用來啟用或停用全息圖捕獲期間在螢幕上錄製指標的旗標。 |
+|  HologramCompositionEnabled  |  boolean  |  true  |  用來啟用或停用影片捕獲中全像影像的旗標。 |
+|  RecordingIndicatorEnabled  |  boolean  |  true  |  用來啟用或停用全息圖捕獲期間在螢幕上錄製指標的旗標。 |
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  此旗標可啟用或停用由 HoloLens 追蹤器提供技術支援的影片穩定。 |
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  設定用於視頻穩定的歷程記錄畫面格數目。 0從電源和效能的觀點來看，有0延遲且幾乎「免費」。 針對最高品質 (，建議使用15，但延遲和記憶體) 的15個框架成本。 |
 |  GlobalOpacityCoefficient  |  FLOAT  |  0.9 (HoloLens) 1.0 (沉浸式耳機)   |  在 0.0 (完全透明) 至 1.0 (完全不透明的) ，設定全像影像的全域不透明度係數。 |

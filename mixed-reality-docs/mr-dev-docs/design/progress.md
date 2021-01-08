@@ -1,17 +1,17 @@
 ---
 title: 顯示進度
-description: 進度控制項為使用者提供回饋，告知正在進行長時間執行的操作。
+description: 瞭解進度控制項如何提供意見反應給使用者，在您的混合現實應用程式中進行長時間執行的作業。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、控制項、ui、ux、進度指標、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 3f24f7095147a0d220df8adc42b67a1b8e4053c9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 489f4bd9fea31126f936673db7acafeab27d9cd9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848286"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009458"
 ---
 # <a name="progress-indicator"></a>進度指示器
 

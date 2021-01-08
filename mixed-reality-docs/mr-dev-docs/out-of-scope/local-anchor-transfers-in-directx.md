@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的本機錨點傳輸
-description: 說明如何藉由傳輸空間錨點來同步處理兩個 HoloLens 裝置。
+description: 瞭解如何藉由傳輸、匯出和序列化空間錨點，來同步處理兩個 HoloLens 裝置。
 author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens，同步處理，空間錨點，傳輸，多人遊戲，視圖，案例，逐步解說，範例程式碼，傳輸，本機錨點傳輸，錨點匯出，錨點匯入
-ms.openlocfilehash: 6d54b29a01617f9d78b7fdfec0ebc04a3cd48002
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91679657"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009648"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX 中的本機錨點傳輸
 
@@ -33,7 +33,7 @@ ms.locfileid: "91679657"
 
 您的應用程式必須先獲得使用 >spatialperception 功能的許可權，才能使用 [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)。 這是必要的，因為傳輸空間錨點牽涉到共用一段時間內所搜集的感應器映射（該錨點可能包含機密資訊）。
 
-在您應用程式的 package.appxmanifest 檔案中宣告這項功能。 以下是範例：
+在您應用程式的 package.appxmanifest 檔案中宣告這項功能。 以下為範例：
 
 ```
 <Capabilities>
@@ -41,7 +41,7 @@ ms.locfileid: "91679657"
 </Capabilities>
 ```
 
-這項功能來自 **uap2** 命名空間。 若要在您的資訊清單中取得這個命名空間的存取權，請將它包含在封裝> 專案中的 *xlmns* 屬性 &lt; 。 以下是範例：
+這項功能來自 **uap2** 命名空間。 若要在您的資訊清單中取得這個命名空間的存取權，請將它包含在封裝> 專案中的 *xlmns* 屬性 &lt; 。 以下為範例：
 
 ```
 <Package
@@ -674,7 +674,7 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 
 這樣就完成了！ 現在，您應該有足夠的資訊來嘗試找出網路上收到的錨點。 同樣地，請注意，用戶端必須要有足夠的視覺追蹤資料，才能成功地找出錨點;如果無法立即運作，請試著稍候一段時間。 如果仍然無法運作，請讓伺服器傳送更多錨點，並使用網路通訊來同意用戶端所適用的訊息。 您可以下載 HolographicSpatialAnchorTransferSample、設定用戶端和伺服器 Ip，以及將其部署至用戶端和伺服器 HoloLens 裝置，來嘗試此程式。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [平行模式程式庫 (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
 * [StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
 * [StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)

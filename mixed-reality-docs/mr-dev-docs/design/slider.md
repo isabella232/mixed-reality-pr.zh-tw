@@ -1,17 +1,17 @@
 ---
 title: 滑桿
-description: 滑杆是一個 UI 元件，可讓您藉由將旋鈕或杆移至曲目來設定值。
+description: 瞭解如何使用滑杆 UI 元件，藉由使用「混合現實」工具組移動播放軌上的旋鈕或杠杆來設定值。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、滑杆、MRTK、混合現實工具組
-ms.openlocfilehash: b2f338dd25bbcc50a68a3c5e9b8d980d15827755
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 15a536074f8f873456482a55c1c9dbe418602bb1
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848232"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009558"
 ---
 # <a name="slider"></a>Slider
 

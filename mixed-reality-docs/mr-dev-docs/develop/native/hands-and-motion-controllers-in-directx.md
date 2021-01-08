@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的手部和運動控制器
-description: 在原生 DirectX 應用程式中使用手追蹤和移動控制器的開發人員指南。
+description: 開始使用在原生 DirectX 應用程式中使用手追蹤和移動控制器的開發人員指南。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 手、移動控制器、directx、輸入、全像全像、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 52fc8f054ee4a4a57374c90fc31703b749d498de
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 43673602b01a1937953d16fcca9b4c4f4d3fd33a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613052"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009538"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX 中的手部和運動控制器
 
@@ -231,7 +231,7 @@ SpatialGestureRecognizer 只會在您要求的手勢集合之間進行最短的�
 
 在 HoloLens (第一代) 上，互動和手勢應衍生自使用者的標頭，而不是在手邊的位置呈現或互動。 一旦互動開始之後，就可以使用該手的相對運動來控制手勢，如同操作或導覽手勢一樣。
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [DirectX 中的頭部和眼睛目光](gaze-in-directx.md)
 * [直接操作輸入模型](../../design/direct-manipulation.md)
 * [點認可輸入模型](../../design/point-and-commit.md)

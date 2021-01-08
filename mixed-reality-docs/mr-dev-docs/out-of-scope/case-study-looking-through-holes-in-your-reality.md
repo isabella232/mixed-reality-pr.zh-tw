@@ -1,17 +1,17 @@
 ---
 title: 案例研究 - 在實境中的的透視技術
-description: 此案例研究說明如何在 HoloLens 上實行「魔術視窗」效果，讓使用者可以在其實際環境內的幕後、下面和虛擬的進入範圍內查看。
+description: 此案例研究說明 HoloLens 上的「魔術視窗」效果，讓使用者可以在地板後方、在地面下，以及進入虛擬機器會。
 author: ericrehmeyer
 ms.author: bestruku
 ms.date: 10/18/2019
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、魔術視窗、視差
-ms.openlocfilehash: 84af124cc69e03b3502cee55c694b11ff5c9433b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 018e45a79d88cbc8e28204f023106fbe5dae39bc
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681133"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010108"
 ---
 # <a name="case-study---looking-through-holes-in-your-reality"></a>案例研究 - 在實境中的的透視技術
 
@@ -108,7 +108,7 @@ ColorMask 0
 </tr>
 </table>
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [MR Basics 101：使用裝置完成專案](../develop/unity/tutorials/holograms-101.md)
 * [座標系統](../design/coordinate-systems.md)
 * [空間錨點](../design/spatial-anchors.md)

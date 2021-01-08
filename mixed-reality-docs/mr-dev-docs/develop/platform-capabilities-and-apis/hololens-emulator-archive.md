@@ -1,23 +1,23 @@
 ---
 title: HoloLens 模擬器封存
-description: Microsoft HoloLens 模擬器的已發行組建清單。
+description: 針對 Microsoft HoloLens (第一代) 和 HoloLens 2 模擬器的已發行組建清單，隨時保持最新狀態。
 author: hamalawi
 ms.author: moelhama
 ms.date: 12/08/2020
 ms.topic: article
 keywords: HoloLens、模擬器、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
-ms.openlocfilehash: 4aae710d0e976f8e7b5a36201b4b0dad0c195a45
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3f2fff072e5685e3c5c47d2e50e6c4a4588e9da4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530035"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009508"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 模擬器保存
 
 HoloLens 模擬器 (第一代) 和 HoloLens 2 模擬器組建並存安裝。 我們建議使用最新的可用組建，但在某些情況下，您可能會想要針對舊的模擬器測試應用程式。 此頁面包含所有發行版本的連結。
 
-|  Build |  發行日期 |  注意 |
+|  組建 |  發行日期 |  附註 |
 |----------|----------|----------|
 |  [HoloLens 2 模擬器組建10.0.19041.1131](https://go.microsoft.com/fwlink/?linkid=2151523) | 2020 年 12 月 8 日 | Windows 全像2020年12月更新版20H2。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.18362.1088](https://go.microsoft.com/fwlink/?linkid=2151522) | 2020 年 12 月 8 日 | Windows 全像 1903 2020 年12月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -48,7 +48,7 @@ HoloLens 模擬器 (第一代) 和 HoloLens 2 模擬器組建並存安裝。 我
 
 ## <a name="hololens-emulator-first-gen-archive"></a>HoloLens 模擬器 (第一代) 封存
 
-|  Build |  發行日期 |  注意 |
+|  組建 |  發行日期 |  附註 |
 |----------|----------|----------|
 |  [HoloLens 模擬器組建10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | 2018 年 11 月 19 日 | 最新的 HoloLens (第一代) 組建。 Windows 10 2018 年 10 月更新。 |
 |  [HoloLens 模擬器組建10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | 2018 年 5 月 21 日 |
@@ -58,6 +58,7 @@ HoloLens 模擬器 (第一代) 和 HoloLens 2 模擬器組建並存安裝。 我
 |  [HoloLens 模擬器組建10.0.11082.1033](https://go.microsoft.com/fwlink/?LinkID=724053) |  2016 年 3 月 30 日 |
 
 ## <a name="see-also"></a>另請參閱
+
 * [安裝工具](../../develop/install-the-tools.md)
 * [使用 HoloLens 模擬器](using-the-hololens-emulator.md)
 * [Advanced HoloLens 模擬器和混合現實模擬器輸入](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

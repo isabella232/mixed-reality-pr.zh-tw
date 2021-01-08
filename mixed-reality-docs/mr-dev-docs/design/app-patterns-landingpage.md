@@ -1,21 +1,22 @@
 ---
 title: Mixed reality UX 元素
-description: 本檔包含一組主題，說明如何為混合的現實裝置設計。
+description: 瞭解如何使用基礎元素、通用控制項和行為，為混合現實裝置設計應用程式。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
 keywords: UX 設計、混合現實 UX、UX、應用程式模式、控制項、樣式、HoloLens、互動、空間互動、空間 UI、UX 元素、行為、建立區塊、印刷、色彩、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 47f7877e9a5f8a71bcae9a16011210d9fc897040
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847781"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009698"
 ---
 # <a name="ux-elements-overview"></a>UX 元素總覽
 
 ## <a name="foundational-elements"></a>基本元素
+
 瞭解設計絕佳混合現實體驗所需的基礎元素。
 
 :::row:::
@@ -39,6 +40,7 @@ ms.locfileid: "97847781"
 <br>
 
 ## <a name="common-controls-and-behaviors"></a>通用控制項和行為
+
 了解混合實境體驗常用的通用空間互動和 UI 建置組塊。
 
 :::row:::

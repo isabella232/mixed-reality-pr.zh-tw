@@ -1,14 +1,14 @@
 ---
 title: 疑難排解 Windows Mixed Reality
-description: Windows Mixed Reality 超出標準取用者支援檔的疑難排解。
+description: 使用超過標準取用者支援檔的 Windows Mixed Reality 疑難排解來保持最新狀態。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援
-ms.openlocfilehash: f98bc55062f2e159e6ac6fca5514cee899f50bc5
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859487"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009478"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>疑難排解 Windows Mixed Reality (常見問題) 
 

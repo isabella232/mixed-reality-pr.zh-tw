@@ -1,17 +1,17 @@
 ---
 title: 鍵盤
-description: 瞭解如何在 MRTK 中叫用系統鍵盤。
+description: 瞭解如何使用「混合現實」工具組叫用並使用系統鍵盤。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、鍵盤、MRTK、混合現實工具組
-ms.openlocfilehash: b258ad7934cae76c581723d681cce32c68458b72
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 8efb5446479e53569349eda302c7d4dcb844a137
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847283"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009728"
 ---
 # <a name="keyboard"></a>鍵盤
 

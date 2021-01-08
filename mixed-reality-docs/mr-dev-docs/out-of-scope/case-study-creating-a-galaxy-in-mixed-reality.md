@@ -1,17 +1,17 @@
 ---
 title: 案例研究-在混合式事實下建立 galaxy
-description: 在 Microsoft HoloLens 出貨之前，我們會要求開發人員小組想要看到新裝置有經驗的內部小組組建。 有超過5000的想法已共用，而在24小時的 Twitter 輪詢之後，優勝者就稱為「Galaxy Explorer」。
+description: 瞭解「Galaxy Explorer」應用程式，以及它如何針對 Microsft HoloLens 和在24小時的 Twitter 輪詢之後，由社區開發人員進行。
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer、HoloLens、Windows Mixed Reality、分享您的想法、個案研究
-ms.openlocfilehash: 91e1c356d69d2b58795a0a0003dd5ffaf0ef1bdc
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681181"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009778"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>案例研究-在混合式事實下建立 galaxy
 
@@ -41,7 +41,7 @@ Zibits 是專案的尖端領導人，而 Karim Luccin 是團隊的圖形工程�
 
 ### <a name="creating-the-position-of-the-stars"></a>建立星星的位置
 
-我們的其中一個小組成員已經撰寫了 c # 程式碼，該程式碼會在其初始位置產生星星。 星星位於橢圓形上，而其位置可以透過 ( **curveOffset** 、 **ellipseSize** 、提高 **許可權** ) 來描述，其中 **curveOffset** 是沿著橢圓形的星形角度， **ellipseSize** 是沿著 X 和 Z 的橢圓形的維度，而且會提高 galaxy 內星號的適當提高許可權。 因此，我們可以建立 ([Unity 的 ComputeBuffer](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) 的緩衝區，它會使用每個星狀屬性來初始化，並將其傳送至 GPU，以供其餘體驗使用。 為了繪製這個緩衝區，我們會使用 [Unity 的 DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) ，以允許在任意一組點上的 GPU) 上執行著色器 (程式碼，而不會有代表 galaxy 的實際網格：
+我們的其中一個小組成員已經撰寫了 c # 程式碼，該程式碼會在其初始位置產生星星。 星星位於橢圓形上，而其位置可以透過 (**curveOffset**、 **ellipseSize**、提高 **許可權**) 來描述，其中 **curveOffset** 是沿著橢圓形的星形角度， **ellipseSize** 是沿著 X 和 Z 的橢圓形的維度，而且會提高 galaxy 內星號的適當提高許可權。 因此，我們可以建立 ([Unity 的 ComputeBuffer](https://docs.unity3d.com/ScriptReference/ComputeBuffer.html)) 的緩衝區，它會使用每個星狀屬性來初始化，並將其傳送至 GPU，以供其餘體驗使用。 為了繪製這個緩衝區，我們會使用 [Unity 的 DrawProcedural](https://docs.unity3d.com/ScriptReference/Graphics.DrawProcedural.html) ，以允許在任意一組點上的 GPU) 上執行著色器 (程式碼，而不會有代表 galaxy 的實際網格：
 
 **Cpu：**
 
@@ -92,7 +92,7 @@ v2g vert (uint index : SV_VertexID)
 星星在長弧線的移動速度更快，邊緣的速度較慢。
 
 
-如此一來，就會 ( **curveOffset** 、 **ellipseSize** 、提高 **許可權** 、 **年齡** ) 的完整描述每顆星，其中 **age** 是在載入場景之後所經過的總時間。
+如此一來，就會 (**curveOffset**、 **ellipseSize**、提高 **許可權**、 **年齡**) 的完整描述每顆星，其中 **age** 是在載入場景之後所經過的總時間。
 
 
 
@@ -203,6 +203,6 @@ x3 精密回到完整解析度。
 </table>
 
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
 * [GitHub 上的 Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer)
 * [YouTube 上的 Galaxy Explorer 專案更新](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)

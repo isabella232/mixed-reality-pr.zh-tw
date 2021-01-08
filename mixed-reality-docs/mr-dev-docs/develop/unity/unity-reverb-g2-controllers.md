@@ -1,17 +1,17 @@
 ---
 title: Unity 中的 HP 回音 G2 控制器
-description: 使用 SteamVR 和 Windows Mixed Reality 中的 HP 回音 G2 控制器的指示。
+description: 瞭解如何在 SteamVR 和 Windows Mixed Reality Unity 應用程式中，設定和使用新的 HP 殘響 G2 控制器。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity、回音、回音、HP 回音、mixed reality、開發、移動控制器、使用者輸入、功能、新專案、模擬器、檔、指南、功能、全像遊戲開發
-ms.openlocfilehash: 17f373a3d94740bf103821b85ee5d6fe4dbaa11f
-ms.sourcegitcommit: 8b16945d6a551f174a65fa3980ba392682ca45d4
+ms.openlocfilehash: 1c9d8f1279f81ea1d8020e2a3c689dae86496221
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92886251"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009828"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity 中的 HP 回音 G2 控制器
 
@@ -286,7 +286,7 @@ void Update()
 
 ### <a name="generating-events-from-the-new-inputs"></a>從新的輸入產生事件 
 
-您可以選擇將所有狀態變更作為事件來處理，而不是輪詢控制器的狀態一次，讓您可以處理最快速的動作，使其維持小於框架。 為了讓這個方法能夠運作，行動電話控制器的快取需要處理自最後一個畫面格之後由控制器所發行的所有狀態，您可以將最後一次 MotionControllerReading 的時間戳記儲存在 MotionController 中，然後呼叫 *MotionController. TryGetReadingAfterTime ( # B1* ： 
+您可以選擇將所有狀態變更作為事件來處理，而不是輪詢控制器的狀態一次，讓您可以處理最快速的動作，使其維持小於框架。 為了讓這個方法能夠運作，行動電話控制器的快取需要處理自最後一個畫面格之後由控制器所發行的所有狀態，您可以將最後一次 MotionControllerReading 的時間戳記儲存在 MotionController 中，然後呼叫 *MotionController. TryGetReadingAfterTime ( # B1*： 
 
 ```csharp
 private class MotionControllerState 

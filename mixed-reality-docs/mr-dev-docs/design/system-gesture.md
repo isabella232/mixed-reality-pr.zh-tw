@@ -1,17 +1,17 @@
 ---
 title: 開始手勢
-description: 開始手勢以呼叫 [開始] 功能表。
+description: 瞭解如何使用開始手勢來呼叫 HoloLens 上的 [開始] 功能表，以及 Windows Mixed Reality 沉浸式耳機。
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 混合的現實、手勢、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、bloom
-ms.openlocfilehash: 9df8d54dcf63c13dedabdbf55300b3516a2c9bf1
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e29d483375db103cebc30be9117e40899a9f81f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848165"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009428"
 ---
 # <a name="start-gesture"></a>開始手勢
 

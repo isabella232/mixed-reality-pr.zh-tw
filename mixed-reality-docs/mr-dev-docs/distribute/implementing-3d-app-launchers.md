@@ -1,17 +1,17 @@
 ---
 title: 實作 3D 應用程式啟動器 (UWP 應用程式)
-description: 如何建立 Windows Mixed Reality UWP 應用程式和遊戲的3D 應用程式啟動器和標誌， (透過 Microsoft Store) （包括 HoloLens 和沉浸式 (VR) 耳機）散佈。
+description: 瞭解如何在 HoloLens 和 VR 耳機上建立 Windows Mixed Reality UWP 應用程式和遊戲的3D 應用程式啟動器和標誌。
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、標誌、圖示、模型、啟動器、3D 啟動器、磚、即時立方體、深層連結、secondarytile、次要磚、UWP、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、XML、周框方塊、unity
-ms.openlocfilehash: 38f0932f20e3660c91b87de7bcb9d66799d9a51a
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 40a68d0835ec8fb92d6417650700f41e8a31aab6
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757492"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009678"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>實作 3D 應用程式啟動器 (UWP 應用程式)
 

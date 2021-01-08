@@ -1,17 +1,17 @@
 ---
 title: 頭部注視並認可
-description: 前端注視和認可輸入模型的總覽。
+description: 開始使用前端和認可輸入模型，包括目標大小調整、放置和穩定。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、注視目標、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、目標、焦點、平滑
-ms.openlocfilehash: cc12c349704a63c5b95c9eede91d0486f56787a2
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847878"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009448"
 ---
 # <a name="head-gaze-and-commit"></a>頭部注視並認可
 

@@ -1,17 +1,17 @@
 ---
 title: 混合實境講者系列
-description: 在三藩市 Reactor 的混合現實開發人員活動行事曆。
+description: 在三藩市的 Reactor 中，隨時掌握混合現實開發人員活動的行事曆。
 author: danielescudero
 ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 活動、行事曆、學院、排程、sf、三藩市、reactor
-ms.openlocfilehash: 169af00c61d1eeb5af6b0ea1249f5f4c3083a9f3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: ce0fb818547af70252e7387a910207e333407363
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757426"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009998"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 活動
 
@@ -32,5 +32,3 @@ ms.locfileid: "97757426"
 | 混合實境講者系列|2020年10月22日|[使用 BabylonJS 的 WebXR 簡介](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
 | 混合實境講者系列|2020 年 11 月 17 日|[打造未來： MRTK 的新功能](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | 混合實境講者系列|2020 年 12 月 1 日|[設計全像影像]()|
-
-

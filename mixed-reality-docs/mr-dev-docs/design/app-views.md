@@ -1,17 +1,17 @@
 ---
 title: 應用程式檢視
-description: Windows Mixed Reality apps 中的兩種視圖都是沉浸式視圖和2D 視圖。
+description: 瞭解如何在 Windows Mixed Reality apps 中使用兩種類型的視圖-沉浸式視圖和2D 視圖。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 沉浸式觀賞、2D 視圖、平板、應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 0c6127427d5af118bb18aea5c19ddaef6fe8d5eb
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848074"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009628"
 ---
 # <a name="app-views"></a>應用程式檢視
 

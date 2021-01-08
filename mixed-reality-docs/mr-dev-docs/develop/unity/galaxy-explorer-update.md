@@ -1,17 +1,17 @@
 ---
 title: 進行 HoloLens 2 的 Galaxy Explorer
-description: 歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 就像原始的 Galaxy Explorer 一樣，我們的小組也會在 GitHub 上以開放原始碼的方式取得專案，以確保該社區具有完整的存取權。
+description: 深入瞭解我們的團隊如何針對 GitHub 上的 HoloLens 2 更新 Galaxy Explorer 開放原始碼專案。
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 00bf589d738cf74cbfdb489bc43aadf931dda285
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010469"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009578"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>進行 HoloLens 2 的 Galaxy Explorer
 

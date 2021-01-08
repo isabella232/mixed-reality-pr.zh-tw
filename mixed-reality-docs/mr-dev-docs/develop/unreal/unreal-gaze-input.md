@@ -1,17 +1,17 @@
 ---
 title: Unreal 中的注視輸入
-description: 針對 HoloLens 和 Unreal 引擎設定注視輸入的教學課程
+description: 瞭解如何在 Unreal 中使用適用于 HoloLens 的眼睛追蹤和頭部方向來設定和使用注視輸入。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: a11573d732e739068dca8c42dd8688c0705fc5bb
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925991"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010138"
 ---
 # <a name="gaze-input"></a>注視輸入
 
@@ -104,7 +104,7 @@ void AEyeTracker::Tick(float DeltaTime)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unreal 開發旅程，您將在探索 MRTK 核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
+依循我們配置的 Unreal 開發旅程，此時您會探索 MRTK核心建置組塊。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [手勢追蹤](unreal-hand-tracking.md)

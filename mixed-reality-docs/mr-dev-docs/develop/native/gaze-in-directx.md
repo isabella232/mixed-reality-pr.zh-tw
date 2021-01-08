@@ -1,17 +1,17 @@
 ---
 title: DirectX 中的頭部和眼睛目光
-description: 瞭解如何在原生 DirectX 應用程式中使用前端和眼睛追蹤。
+description: 瞭解如何在原生 DirectX 應用程式中，要求、使用和解除封裝 raycasting 資料，從前端和眼睛追蹤。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 眼睛、頭部眼、前端追蹤、眼睛追蹤、directx、輸入、全像投影、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4d7ed9b735b5f3cd7029e42ccc75bc539e3c4f4b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: a518e5e4153da9c58295abb257a8ed2d69145211
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848093"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009548"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX 中的列印頭和眼睛輸入
 
@@ -27,6 +27,7 @@ ms.locfileid: "97848093"
 前端和眼睛光線都可透過  [SpatialPointerPose](https://docs.microsoft.com//uwp/api/Windows.UI.Input.Spatial.SpatialPointerPose) API 存取。 呼叫 [SpatialPointerPose：： TryGetAtTimestamp](https://docs.microsoft.com//uwp/api/windows.ui.input.spatial.spatialpointerpose.trygetattimestamp) ，以在指定的時間戳記和 [座標系統](coordinate-systems-in-directx.md)接收新的 SpatialPointerPose 物件。 此 SpatialPointerPose 包含頭部的原點和方向。 如果有眼睛追蹤，它也會包含眼睛的原點和方向。
 
 ### <a name="device-support"></a>裝置支援
+
 <table>
 <colgroup>
     <col width="25%" />

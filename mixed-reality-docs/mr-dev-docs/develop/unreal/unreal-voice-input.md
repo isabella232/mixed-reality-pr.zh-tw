@@ -1,17 +1,17 @@
 ---
-title: 語音輸入
-description: 在 HoloLens 2 和 Unreal 引擎中設定及使用語音輸入的教學課程
+title: Unreal 中的語音輸入
+description: 瞭解如何在 Unreal 混合現實應用程式中，為 HoloLens 2 裝置設定和使用語音輸入、語音對應和辨識。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、Unreal、Unreal Engine 4、UE4、HoloLens 2、語音、語音輸入、語音辨識、混合現實、開發、功能、檔、指南、全息全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 504a2d978e3c9bc698e8edd11ea8a4d6be13795a
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609749"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010068"
 ---
 # <a name="voice-input-in-unreal"></a>Unreal 中的語音輸入
 

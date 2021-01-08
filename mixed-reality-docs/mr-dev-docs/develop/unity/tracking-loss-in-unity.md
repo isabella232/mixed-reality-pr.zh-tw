@@ -1,17 +1,17 @@
 ---
 title: Unity 中的追蹤遺失
-description: 處理 Unity 應用程式內的追蹤遺失。
+description: 瞭解如何在 Unity mixed reality 應用程式內處理手動和預設追蹤的遺失。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、追蹤遺失、追蹤遺失影像、輪詢、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 1df9f579abf43576284d065afa091bb26c631482
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010049"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009848"
 ---
 # <a name="tracking-loss-in-unity"></a>Unity 中的追蹤遺失
 
@@ -81,5 +81,6 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>另請參閱
+## <a name="see-also"></a>請參閱
+
 * [處理 DirectX 中的追蹤遺失](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

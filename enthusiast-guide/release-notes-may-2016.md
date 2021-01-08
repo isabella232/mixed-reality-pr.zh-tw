@@ -1,17 +1,17 @@
 ---
 title: 版本資訊 - 2016 年 5 月
-description: Windows 全像攝影版的 HoloLens 版本資訊可能會更新2016。
+description: 隨時掌握 Windows 全像2016版更新版的 HoloLens 版本資訊。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens，版本資訊，作業系統，功能，組建，平臺
-ms.openlocfilehash: a1e5ab1ead2816baf2f03c1037299090e1246f17
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725949"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009498"
 ---
 # <a name="release-notes---may-2016"></a>版本資訊 - 2016 年 5 月
 

@@ -1,17 +1,17 @@
 ---
 title: 眼球追蹤
-description: HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人員能夠使用新的內容層級，並在全像人類的經驗中理解。
+description: 瞭解 HoloLens 2 的眼睛追蹤，以及新的人類理解層級（如果提供全像攝影體驗）。
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: 5ee957db85c2eefc32b7bfd716268262b347867b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847944"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009598"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -19,7 +19,7 @@ ms.locfileid: "97847944"
 
 HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人員能夠使用新的內容層級，並在全像人類的經驗中理解。 本頁面說明開發人員如何從各種使用案例的眼睛追蹤中獲益，以及設計眼睛型使用者互動時要尋找的內容。 
 
-眼睛追蹤 API 已設計為使用者的隱私權，避免傳遞任何可識別的資訊，特別是任何生物特徵辨識。 針對感知感知的應用程式，使用者必須授與應用程式許可權以使用眼睛追蹤資訊。 
+眼睛追蹤 API 已設計為使用者的隱私權，避免傳遞任何可識別的資訊，特別是任何生物特徵辨識。 針對感知感知的應用程式，使用者必須授與應用程式許可權以使用眼睛追蹤資訊。
 
 ### <a name="device-support"></a>裝置支援
 

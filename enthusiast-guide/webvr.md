@@ -1,14 +1,14 @@
 ---
 title: 使用 WebVR 搭配 Windows Mixed Reality
-description: 描述 WebVR 以及如何搭配 Windows Mixed Reality 耳機上的 Microsoft Edge 來使用它。
+description: 瞭解 WebVR 的基本概念、如何搭配 Windows Mixed Reality 耳機的 Microsoft Edge 以及常見的疑難排解問題。
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，WebVR，Edge，Microsoft Edge，網頁流覽
-ms.openlocfilehash: 92f1d00c7f635c88a727732fb743996a654ba775
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725599"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009438"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>使用 WebVR 搭配 Windows Mixed Reality
 

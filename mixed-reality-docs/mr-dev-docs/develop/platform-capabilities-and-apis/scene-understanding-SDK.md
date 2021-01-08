@@ -1,17 +1,17 @@
 ---
 title: 場景理解 SDK
-description: 場景理解 SDK 程式設計手冊
+description: 瞭解如何安裝和使用場景理解 SDK，包括混合現實應用程式中的元件、網格和物件。
 author: szymons
 ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 1ec29d09ab52abae9a9111a6441523c8aa7720f7
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530343"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009378"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -47,7 +47,7 @@ SceneUnderstanding 需要 Windows SDK 18362 版或更高版本。
 
 因為每個場景會將它的資料儲存在您應用程式的記憶體空間中，所以您可以假設場景物件的所有功能或其內部資料一律會在應用程式的進程中執行。
 
-### <a name="layout"></a>Layout
+### <a name="layout"></a>配置
 
 若要使用場景理解，瞭解並瞭解執行時間如何以邏輯和實際方式代表元件，可能會有價值。 場景代表具有特定版面配置的資料，並在維持 pliable 的基礎結構，而不需要進行重大修訂時，才會維持符合未來需求的基礎結構。 場景會藉由儲存所有元件， (一般清單中) 的所有場景物件的所有元件，並透過參考（特定元件參考其他元件）定義階層和組合。
 

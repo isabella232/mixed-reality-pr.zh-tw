@@ -1,17 +1,17 @@
 ---
 title: Unity 中的目光
-description: 「注視」是一種主要方式，可讓使用者以混合現實的方式來設定您應用程式所建立的全像
+description: 瞭解如何使用「注視輸入」作為主要方式，讓使用者將應用程式所建立的全像是以混合現實的形式來設定。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 眼睛、中眼、unity、全息全像、混合式現實、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: ca33fef5a5a761df83ed7991b366cf711a5db224
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010359"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009888"
 ---
 # <a name="head-gaze-in-unity"></a>Unity 中的頭部
 
@@ -56,7 +56,7 @@ void Update()
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊：
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [手勢和運動控制器](gestures-and-motion-controllers-in-unity.md)

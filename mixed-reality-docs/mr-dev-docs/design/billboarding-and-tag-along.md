@@ -1,17 +1,17 @@
 ---
 title: 佈告板和常駐標籤
-description: 具有 billboarding 的物件一律會導向至臉部給使用者。
+description: 瞭解如何搭配使用物件與 billboarding，這一律會將自己導向至混合現實應用程式中的使用者。
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、billboarding、加上標籤、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、Mixed Reality 工具組
-ms.openlocfilehash: 44f2678fe2f8e4be071086f46037749d1df61ae4
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 92caa1bcd325cefecc6d3820b819cecfce6fc09c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848027"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009608"
 ---
 # <a name="billboarding-and-tag-along"></a>佈告板和常駐標籤
 

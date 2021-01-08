@@ -1,17 +1,17 @@
 ---
 title: Unity 播放模式
-description: 在 Unity 編輯器中使用播放模式，以預覽裝置上的變更，而不需要部署應用程式。
+description: 瞭解如何在 Unity 編輯器中使用播放模式，以預覽裝置上的應用程式變更，而不需要部署應用程式。
 author: jonmlyons
 ms.author: jlyons
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、遠端處理、全像全像攝影、全像遠端播放機、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、unity play 模式
-ms.openlocfilehash: 396e441903fe7b567c6329ca4d207ce893a07825
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 9f6c2cafd08fca8a5d60f3fcf5832ee74762e173
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010609"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009838"
 ---
 # <a name="unity-play-mode"></a>Unity 播放模式
 
