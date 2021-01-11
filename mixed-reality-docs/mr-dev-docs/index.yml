@@ -4,7 +4,7 @@ summary: 使用 Windows Mixed Reality、混合實境工具組 (MRTK)、Unity、U
 brand: windows
 metadata:
   title: 混合實境文件
-  description: 使用 Windows Mixed Reality、混合實境工具組 (MRTK)、Unity、Unreal 以及 HoloLens 和 Windows 沉浸式頭戴裝置的更多功能，進入混合實境應用程式的擴充世界。
+  description: 深入了解 HoloLens 和 Windows 沉浸式頭戴裝置混合實境應用程式的擴充世界。
   services: service
   ms.service: service
   ms.subservice: subservice
@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ddea2f7271e00cc4f845b6bfd6c53c919846632
-  ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
+  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/06/2021
-  ms.locfileid: "97905280"
+  ms.lasthandoff: 01/08/2021
+  ms.locfileid: "98007552"
 highlightedContent:
   items:
   - title: 什麼是混合實境？
