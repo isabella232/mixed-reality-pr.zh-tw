@@ -1,19 +1,19 @@
 ---
-title: 適用于開發人員的混合現實 capture
+title: 適用於開發人員的混合實境擷取
 description: 瞭解為開發人員啟用、使用和轉譯混合現實 capture 的最佳作法。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: e55100003859e3581bdd7f6e1da312e1fdd8cf57
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009938"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108861"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
+# <a name="mixed-reality-capture-for-developers"></a>適用於開發人員的混合實境擷取
 
 > [!NOTE]
 > 請參閱下面 [的 PV 攝影機](#render-from-the-pv-camera-opt-in) 轉譯，以取得 HoloLens 2 新的 MRC 功能的指引。
@@ -254,24 +254,27 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 ### <a name="simultaneous-mrc-limitations"></a>同時 MRC 限制
 
-有多個應用程式同時存取 MRC 有一些限制。
+當有多個應用程式同時存取 MRC 時，您必須留意某些限制。
 
 #### <a name="photovideo-camera-access"></a>相片/攝影機存取
 
-相片/攝影機受限於可同時存取它的進程數目。 當處理常式錄製影片或拍攝相片時，任何其他程式將無法取得相片/攝影機。  (這適用于混合實境擷取和標準相片/影片捕獲) 
+在 HoloLens 1 上，當處理常式錄製影片或拍攝相片時，MRC 將無法拍攝相片或抓取影片。 反之亦然：如果 MRC 正在執行，應用程式將無法取得相機的存取權。 
 
-使用 HoloLens 2 時，應用程式可以使用 MediaCaptureInitializationSettings [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode) 屬性，指出他們如果不需要對相片/攝影機進行獨佔控制，則會想要執行 SharedReadOnly。 捕捉的解析度和幀數將限制為其他應用程式已設定相機來提供。
+有了 HoloLens 2，您就可以共用相機的存取權。 如果您不需要直接控制解析度或畫面播放速率，您可以搭配 SharedReadOnly 使用 [SharedMode 屬性](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 來初始化 MediaCapture。  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>內建的 MRC 相片/攝影機存取
 
 內建于透過 Cortana、[開始] 功能表、硬體快捷方式、Miracast、Windows 裝置入口網站) 的 Windows 10 (的 MRC 功能：
+
 * 預設會以 ExclusiveControl 執行
 
-不過，每個子系統都已新增支援，以在共用模式下運作：
-* 如果應用程式要求相片/攝影機的 ExclusiveControl 存取權，內建的 MRC 將會自動停止使用相片/攝影機，因此應用程式的要求將會成功
-* 如果在應用程式 ExclusiveControl 時啟動內建的 MRC，內建的 MRC 將會以 SharedReadOnly 模式執行
+不過，支援已新增至 MRC 子系統以在共用模式中運作： 
+
+* 如果應用程式要求相片/攝影機的 ExclusiveControl 存取權，內建的 MRC 將會自動停止使用相片/攝影機，因此應用程式的要求將會成功 
+* 如果在應用程式 ExclusiveControl 時啟動內建的 MRC，內建的 MRC 將會以 SharedReadOnly 模式執行 
 
 此共用模式功能有某些限制：
+
 * 透過 Cortana、硬體快速鍵或 [開始] 功能表的相片：需要 Windows 10 2018 年4月更新 (或更新版本) 
 * 透過 Cortana、硬體快速鍵或 [開始] 功能表的影片：需要 Windows 10 2018 年4月更新 (或更新版本) 
 * 透過 Miracast 的串流處理 MRC：需要 Windows 10 2018 年10月更新 (或更新版本) 
@@ -280,11 +283,26 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 >[!NOTE]
 > 當另一個應用程式正在使用相片/攝影機時，內建的 MRC 攝影機 UI 的解析度和畫面播放速率可能會從其正常值減少。
 
-#### <a name="mrc-access"></a>MRC 存取
+#### <a name="mrc-access-for-developers"></a>開發人員的 MRC 存取
 
-有了 Windows 10 2018 年4月更新，存取 MRC 串流的多個應用程式就不再有限制 (不過，相片/攝影機的存取權仍有) 的限制。
+使用 MRC 時，建議您一律要求相機的獨佔控制。 這可確保您的應用程式可以完全掌控相機的設定，只要您知道上面所列的限制即可。 
 
-在 Windows 10 2018 年4月更新之前，應用程式的自訂 MRC 錄製器與系統 MRC 的互斥 (捕獲相片、捕獲影片或從 Windows 裝置入口網站) 進行串流。
+* 使用[初始化設定](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)建立 media capture 物件
+* 將 [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 屬性設定為 **專有**
+
+> [!CAUTION]
+> 請務必仔細閱讀 [SharingMode 備註](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) ，再繼續進行操作。
+
+* 以您想要的方式設定您的相機
+* 啟動應用程式、使用啟動 API 來捕獲影片畫面，然後啟用 MRC
+
+> [!CAUTION]
+> 如果您在啟動應用程式之前啟動了您的應用程式，我們無法保證此功能將會如預期般運作。
+
+您可以在全像全像 [臉部追蹤範例](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking)中找到上述程式的完整範例。
+
+> [!NOTE]
+> 在 Windows 10 2018 年4月更新之前，應用程式的自訂 MRC 錄製器會與系統 MRC 互斥 (捕獲相片、捕獲影片或從 Windows 裝置入口網站) 進行串流。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -3,14 +3,14 @@ title: 參與指示
 description: 瞭解如何使用 GitHub flavored Markdown，對 docs.microsoft.com 平臺上的混合現實開發人員檔做出貢獻。
 author: mattwojo
 ms.author: mattwoj
-ms.date: 03/21/2018
+ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 47689a53557e6ce9b97d0e9d834a70fb0a7786d0
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865413"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108851"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>參與混合現實開發人員檔
 
@@ -28,7 +28,7 @@ Mixed Reality 檔現在位於 docs.microsoft.com 平臺上，其使用具有 Mar
 | VR 愛好者指南 | [MicrosoftDocs/mixed-現實/愛好者指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 如果您還沒有帳戶，則必須 [建立一個 GitHub 帳戶](https://github.com/join)。
 
@@ -176,7 +176,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 
 基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用 [Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>安裝程式
+### <a name="setup"></a>設定
 
 請依照下列步驟設定 Visual Studio Code，以使用此存放庫：
 

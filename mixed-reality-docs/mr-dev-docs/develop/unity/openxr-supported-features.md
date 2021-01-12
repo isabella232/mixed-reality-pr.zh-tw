@@ -3,26 +3,26 @@ title: Unity 中的 OpenXR 外掛程式支援功能
 description: 探索 OpenXR 針對 Unity 中的混合現實開發所支援的功能。
 author: hferrone
 ms.author: alexturn
-ms.date: 12/15/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 94ec7ae6c89dea8f953fea6f4c794ca51e044d87
-ms.sourcegitcommit: 5784336a780486d05db6a627839efe47f08fac36
+ms.openlocfilehash: d65bab65bcb06f7ccba522461e04062458e7400c
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/05/2021
-ms.locfileid: "97880582"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108841"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>混合現實 OpenXR Unity 中支援的功能
 
-**Mixed Reality OpenXR 外掛程式** 套件是 Unity **OpenXR 外掛程式** 的延伸模組，並支援 HoloLens 2 和 Windows Mixed Reality 耳機的功能套件。 繼續之前，請確定您已安裝 **unity 2020.2** 或更新版本、 **OpenXR 外掛程式版本 0.1.1** 或更新版本，且您的 Unity 專案已 [設定 OpenXR](openxr-getting-started.md)。
+**Mixed Reality OpenXR 外掛程式** 套件是 Unity **OpenXR 外掛程式** 的延伸模組，並支援 HoloLens 2 和 Windows Mixed Reality 耳機的功能套件。 繼續之前，請確定您已安裝 **unity 2020.2** 或更新版本、 **OpenXR 外掛程式版本 0.1.2** 或更新版本，且您的 Unity 專案已 [設定 OpenXR](openxr-getting-started.md)。
 
 ## <a name="whats-supported"></a>支援的項目
 
 目前支援下列功能：
 
-* 支援 HoloLens 2 的 UWP 應用程式，以及 Windows Mixed Reality 耳機的 Win32 VR 應用程式。
-* 針對 HoloLens 2 應用程式優化 UWP 套件和 CoreWindow 互動。
+* 支援 HoloLens 2 的 UWP 應用程式，並針對 HoloLens 2 應用程式模型進行優化。
+* 支援適用于 Windows Mixed Reality 耳機的 Win32 VR 應用程式，具有最新的控制器設定檔和全像應用程式遠端。
 * 使用錨點和未系結空間的世界規模追蹤。
 * [錨點儲存體 API，以將錨點保存](#anchors-and-anchor-persistence) 到 HoloLens 2 的本機儲存體。
 * [移動控制器和手互動](#motion-controller-and-hand-interactions)，包括新的 HP 回音卡控制器。
@@ -31,7 +31,7 @@ ms.locfileid: "97880582"
 * HoloLens 2 上尋找 (PV) 攝影機的相片/影片。
 * 混合實境擷取使用透過 PV 攝影機的第三種眼睛呈現。
 * 支援「播放」以使用全像「 [遠端處理」應用程式 HoloLens 2](#holographic-remoting-in-unity-editor-play-mode)，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
-* 透過 MRTK OpenXR 提供者支援，與 MRTK Unity 2.5.2 和更新版本相容。 [請參閱 MRTK 檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithMRTKAndXRSDK.html) 以開始使用。
+* 透過 [MRTK OpenXR 提供者支援](openxr-getting-started.md#using-mrtk-with-openxr-support)，與 MRTK Unity 2.5.3 和更新版本相容。
 * 與 Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 或更新版本相容
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity 編輯器 play 模式的全像遠端功能

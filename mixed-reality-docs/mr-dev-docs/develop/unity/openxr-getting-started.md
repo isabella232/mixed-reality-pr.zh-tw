@@ -3,24 +3,24 @@ title: 使用 Unity 的 Mixed Reality OpenXR 外掛程式
 description: 瞭解如何啟用 Unity 專案的 Mixed Reality OpenXR 外掛程式。
 author: hferrone
 ms.author: alexturn
-ms.date: 12/1/2020
+ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 7d28dd50e111da4b010bcae699b7451d967e8f35
-ms.sourcegitcommit: 653ddcae6d7a1617c89da1153fa8e7b482ef6818
+ms.openlocfilehash: c5d312161b7d0f4f832e8d09dbacf5af700ffd8d
+ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/06/2021
-ms.locfileid: "97905290"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98108875"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
 從 Unity 2020.2 版開始，可以使用 Unity 封裝管理員 (UPM) 提供 Microsoft 的 Mixed Reality OpenXR 外掛程式套件。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 * Unity 2020.2 或更新版本
-* Unity OpenXR 外掛程式0.1.1 或更新版本
+* Unity OpenXR 外掛程式0.1.2 或更新版本
 * Visual Studio 2019 或更新版本
 * 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
 
@@ -62,7 +62,7 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 
     ``` json
       "dependencies": {
-        "com.microsoft.mixedreality.openxr": "0.1.1",
+        "com.microsoft.mixedreality.openxr": "0.1.2",
       }
     ```
 
@@ -109,7 +109,7 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 2. 在套件清單中，選取 **Mixed Reality OpenXR 外掛程式**
 3. 在 **範例** 清單中找出範例，然後選取 [匯 **入**]
 
-![Unity 封裝管理員在 Unity 編輯器中開啟的螢幕擷取畫面，其中已選取混合的現實 OpenXR 外掛程式，並醒目提示範例匯入按鈕](images/openxr-img-10.png)
+![Unity 封裝管理員在 Unity 編輯器中開啟的螢幕擷取畫面，其中已選取混合的現實 OpenXR 外掛程式，並醒目提示範例匯入按鈕](images/openxr-img-03.png)
 
 <!-- ### For all other OpenXR samples
 
@@ -121,6 +121,33 @@ Unity 封裝管理員使用名為 *manifest.js* 的資訊清單檔來決定要�
 
 > [!NOTE]
 > 更新套件時，Unity 會提供選項來更新匯入的範例。  更新匯入的範例將會覆寫對範例和相關資產所做的任何變更。
+
+## <a name="using-mrtk-with-openxr-support"></a>搭配使用 MRTK 與 OpenXR 支援
+
+MRTK Unity 支援從2.5.3 版本開始的 Mixed Reality OpenXR 外掛程式。  MRTK 外掛程式可以從您 [安裝 Mixed Reality OpenXR 外掛程式](#installing-the-mixed-reality-openxr-plugin)時所設定的相同範圍登錄中進行安裝。 您可以在 [MRTK 檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server)中找到更詳細的資訊。
+
+1. 在 **[projectRoot]/Packages/manifest.js** 檔案中新增下列套件：
+
+```json
+"dependencies": {
+    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
+    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
+    …
+}
+```
+
+2. 移至偵測器中的 MixedReality 工具組元件腳本，並切換至 **DefaultOpenXRConfigurationProfile** 設定檔：
+
+![在偵測器的混合現實工具組元件中切換 MRTK 設定的螢幕擷取畫面](images/openxr-img-11.png)
+
+### <a name="known-issues"></a>已知問題 
+
+使用「手動追蹤」功能時，請將下列這一行新增至 **資產/MixedRealityToolkit 產生/link.xml** 檔案：
+
+```
+<assembly fullname = "Microsoft.MixedReality.Toolkit.Providers.OpenXR" preserve="all"/>
+```
 
 ## <a name="next-steps"></a>後續步驟
 
