@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors 教學課程 - 4. 顯示 Azure Spatial Anchors 意見反應
+title: 顯示 Azure Spatial Anchors 意見反應
 description: 完成此課程，以了解如何在混合實境應用程式中顯示來自 Azure Spatial Anchors 的意見反應。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 工作階段, 回饋元素
 ms.localizationpriority: high
-ms.openlocfilehash: fe87e539060b57f505838b43e897e8b6d8336aaf
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 05e418b84f3370274433c4cc21f0122f3475301c
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679387"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008328"
 ---
 # <a name="4-displaying-feedback-from-azure-spatial-anchors"></a>4.顯示 Azure Spatial Anchors 的意見反應
 

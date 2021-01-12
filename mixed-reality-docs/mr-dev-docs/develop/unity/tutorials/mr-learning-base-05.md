@@ -1,5 +1,5 @@
 ---
-title: MRTK 教學課程 - 5. 使用解算器建立動態內容
+title: 使用解算器建立動態內容
 description: 本課程說明如何使用混合實境工具組 (MRTK) 解算器來建立動態內容。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 533aa1c9f2b0b7620e23d611714552fb19a5357b
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613502"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008018"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
-
-## <a name="overview"></a>概觀
 
 在本教學課程中，您將會探索如何使用 MRTK 的可用放置工具 (也就是解算器) 來動態地放置全像投影，以解決複雜的空間放置案例。 在 MRTK 中，解算器是指令碼和行為的系統，用來允許物件在場景中追蹤您、使用者或其他遊戲物件。 也可用來對齊特定位置，讓您的應用程式更具直覺性。
 

@@ -1,5 +1,5 @@
 ---
-title: Azure 雲端教學課程 - 5. 整合 Azure Bot 服務與 LUIS
+title: 整合 Azure Bot 服務與 LUIS
 description: 完成此課程，以了解如何在 HoloLens 2 應用程式中實作 Azure Bot 服務和自然語言理解。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure bot 服務, luis, 自然語言, 對話 bot, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d9884fc135a38e610df9faceb8cf4b24c21f7982
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 70d136467bc677c028614429e6e197ce25b30327
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679357"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008248"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.整合 Azure Bot 服務
 

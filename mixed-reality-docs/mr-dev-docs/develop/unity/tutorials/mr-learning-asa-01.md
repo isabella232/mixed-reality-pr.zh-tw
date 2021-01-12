@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchor 教學課程 - 1。 Azure Spatial Anchors 教學課程簡介
+title: Azure Spatial Anchors 教學課程簡介
 description: 完成此課程以了解如何在混合實境應用程式中實作 Azure Spatial Anchors。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, ios, android, Windows 10, ARCore, macOS, Android 建置支援, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 005bbf3f9ecb7ed7f15f78d4042b4090f00edca7
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6ac412913f8d475d213a26cb4f9f82e12d129b82
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679397"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008398"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1.Azure Spatial Anchors 教學課程簡介
-
-## <a name="overview"></a>概觀
 
 歡迎使用 Azure Spatial Anchors 教學課程！ 透過本教學課程系列，您將了解 <a href="https://azure.microsoft.com/services/spatial-anchors" target="_blank">Azure Spatial Anchors</a> (ASA) 的基本概念，以及如何在真實世界中錨定完整的混合實境體驗。 您也將了解如何將專案部署至 Android 和 iOS。
 
@@ -40,16 +38,16 @@ ms.locfileid: "94679397"
 * 已[安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦
 * Windows 10 SDK 10.0.18362.0 或更新版本
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* 已安裝 Unity 2019.3.15 的 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，且已新增通用 Windows 平台組建支援模組
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已安裝 Unity 2019.3.15，且已新增通用 Windows 平台組建支援模組
 * 完成[建立空間錨點資源](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens#create-a-spatial-anchors-resource)一節，其位於[教學課程：建立使用 Azure Spatial Anchors 的 Unity HoloLens 應用程式](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-hololens)
 * 完成[使用者入門教學課程](mr-learning-base-01.md)系列或一些基本的 Unity 和 MRTK 體驗
 * 如果想要部署至 Android 及 HoloLens
   * 已啟用<a href="https://developer.android.com/studio/debug/dev-options" target="_blank">開發人員</a>和具有 <a href="https://developers.google.com/ar/discover/supported-devices" target="_blank">ARCore 功能</a>的 Android 裝置，可透過 USB 連接至您的 Windows 或 macOS 電腦
-  * 已安裝 Unity 2019.3.15 的 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，且已新增 Android 組建支援模組
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已安裝 Unity 2019.3.15，且已新增 Android 組建支援模組
 * 如果想要部署至 iOS 及 HoloLens
   * 已安裝最新版 <a href="https://geo.itunes.apple.com/us/app/xcode/id497799835?mt=12" target="_blank">Xcode</a> 和 <a href="https://cocoapods.org" target="_blank">CocoaPods</a> 的 macOS 電腦
   * <a href="https://developer.apple.com/documentation/arkit/verifying_device_support_and_user_permission" target="_blank">ARKit 相容</a>的 iOS 裝置可透過 USB 連接至您的 macOS 電腦
-  * 已安裝 Unity 2019.3.15 的 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，且已新增 iOS 組建支援模組
+  * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已安裝 Unity 2019.3.15，且已新增 iOS 組建支援模組
 
 > [!CAUTION]
 > 本教學課程系列的建議混合實境工具組版本是 MRTK 2.4.0。

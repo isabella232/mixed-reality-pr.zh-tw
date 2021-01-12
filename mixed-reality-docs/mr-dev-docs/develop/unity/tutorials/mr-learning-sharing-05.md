@@ -1,5 +1,5 @@
 ---
-title: 多使用者功能教學課程 - 5。 將 Azure Spatial Anchors 整合到共用體驗
+title: 將 Azure Spatial Anchors 整合到共用體驗
 description: 完成此課程，以了解如何使用 Azure Spatial Anchors 來錨定共用多使用者 HoloLens 2 應用程式中的物件。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: ec24a8dcdc8708e61184056df6d282f4496cb453
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 665979d860a2507fbf6cc9b962f5449c7d7d12f2
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678247"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010128"
 ---
 # <a name="5-integrating-azure-spatial-anchors-into-a-shared-experience"></a>5.將 Azure Spatial Anchors 整合到共用體驗
 

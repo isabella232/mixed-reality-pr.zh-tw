@@ -1,5 +1,5 @@
 ---
-title: 多使用者功能教學課程 - 1。 多使用者功能教學課程簡介
+title: 多使用者功能教學課程簡介
 description: 完成此課程以了解如何在 HoloLens 2 應用程式中實作共用的多使用者體驗。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 9bcaed777b8b98d95065324fc1fb5b33a1923e63
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 1000b4d2637e3a0f3bbc79df9866577427674767
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679737"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007218"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1.多使用者功能教學課程簡介
-
-## <a name="overview"></a>概觀
 
 歡迎使用多使用者功能教學課程！ 透過本教學課程系列，您將了解使用 <a href="https://www.photonengine.com/PUN" target="_blank">Photon Unity 網路</a> (PUN) 建置多使用者體驗的基本概念。 PUN 是可讓混合實境開發人員用來建立共用體驗的眾多網路功能選項之一。
 

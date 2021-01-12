@@ -1,5 +1,5 @@
 ---
-title: Azure 雲端教學課程 - 2. 整合 Azure 儲存體
+title: 整合 Azure 儲存體
 description: 完成此課程，以了解如何在 HoloLens 2 應用程式中執行 Azure 表格儲存體和 Azure Blob 儲存體。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 儲存體, azure 雲端服務, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f13014757c4a3d6f9a6f3ffd53ef6aaf19334e2f
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a948e035a467588091a2b5e16a3e2632ab3049d3
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679367"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008198"
 ---
 # <a name="2-integrating-azure-storage"></a>2.整合 Azure 儲存體
 

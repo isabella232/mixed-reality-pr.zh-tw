@@ -1,5 +1,5 @@
 ---
-title: MRTK 教學課程 - 2. 初始化您的專案並部署您的第一個應用程式
+title: 初始化您的專案並部署您的第一個應用程式
 description: 本課程說明如何為混合實境工具組 (MRTK) 設定 Unity 專案，以及如何將其部署到 HoloLens 2。
 author: jessemcculloch
 ms.author: v-vtieto
@@ -7,16 +7,14 @@ ms.date: 12/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ebf81b9b1ae1abb5001b88e0f2b2929c45c22d7f
-ms.sourcegitcommit: 50d9afae479e418b885dc883ce88771292923f01
+ms.openlocfilehash: 2ce119e1dd18eacf02088d00e99fb70d06bf956e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97859527"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008218"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
-
-## <a name="overview"></a>概觀
 
 在本教學課程中，您將了解如何建立新的 Unity 專案、將其設定為<a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">混合實境工具組 (MRTK)</a>開發之用，以及匯入 MRTK。 您也將逐步了解如何設定和建置基本 Unity 場景，並將其從 Visual Studio 部署到 HoloLens 2。 將其部署到 HoloLens 2 之後，您應該會看到一個空間對應網格，其中涵蓋 HoloLens 所感知到的介面。 此外，您應該會看到雙手和手指上有用於手部追蹤的指標，還有用於留意應用程式效能的畫面播放速率計數器。
 

@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchors 教學課程 - 5。 適用於 Android 和 iOS 的 Azure Spatial Anchors
+title: 適用於 Android 和 iOS 的 Azure Spatial Anchors
 description: 完成此課程，以了解如何將包含混合實境工具組 (MRTK) 和 Azure Spatial Anchors 的 Unity 專案部署至 Android 和 iOS。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, android, ios, MRTK, 混合實境工具組, UWP, Azure 空間錨點, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: bee84db206dbb4e95272799c16d6dbd4e394e807
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679427"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008388"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 

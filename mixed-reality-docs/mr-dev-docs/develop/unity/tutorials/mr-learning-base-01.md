@@ -1,5 +1,5 @@
 ---
-title: MRTK 教學課程 - 1. MRTK 教學課程簡介
+title: MRTK 教學課程簡介
 description: 本課程說明如何使用混合實境工具組 (MRTK) 從頭建立混合實境應用程式。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: 25a19d24a027000c78d6bffe2c74eb9f9d91370c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 27a5f2cae4f08fbc142c8b872c22d23ab41cdc62
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613202"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008078"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
-
-## <a name="overview"></a>概觀
 
 歡迎使用入門教學課程系列！ 在這些教學課程中，您將了解混合實境工具組 (MRTK) 及其所提供的一些功能。 您也會建立一個混合實境體驗，讓使用者可以探索模仿 NASA Mars Curiosity Rover (好奇號火星探測車) 的全像投影。 在此系列結束時，您將完全了解 MRTK，以及其如何加速您的開發流程。
 
