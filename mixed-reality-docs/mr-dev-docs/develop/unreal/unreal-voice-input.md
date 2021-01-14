@@ -6,18 +6,20 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、Unreal、Unreal Engine 4、UE4、HoloLens 2、語音、語音輸入、語音辨識、混合現實、開發、功能、檔、指南、全息全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: c7ac523258dc44aa261470aea8cdf21f32c915b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 466b41c522e95f9fe3d618ad221dde8ccd925634
+ms.sourcegitcommit: a688bf0f1b796e4860f8252e852be79053937088
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010068"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98205833"
 ---
 # <a name="voice-input-in-unreal"></a>Unreal 中的語音輸入
 
 Unreal 中的語音輸入可讓您與全息圖互動，而不需要使用手勢，且僅 HoloLens 2 支援。 HoloLens 2 上的語音輸入是由在所有其他通用 Windows 應用程式中支援語音的相同引擎所提供，但 Unreal 使用較有限的引擎來處理語音輸入。 這會將 Unreal 中的語音輸入功能限制為預先定義的語音對應，這些對應會在下列各節中討論。 
 
 ## <a name="enabling-speech-recognition"></a>啟用語音辨識
+
+如果您使用 Windows Mixed Reality 外掛程式，語音輸入不需要任何特殊的 Windows Mixed Reality Api;它建置於現有的 Unreal Engine 4 [輸入](https://docs.unrealengine.com/Gameplay/Input/index.html) 對應 API 上。 如果您使用 OpenXR，您應該另外安裝 [Microsoft OpenXR 外掛程式](https://github.com/microsoft/Microsoft-OpenXR-Unreal)。 
 
 若要在 HoloLens 上啟用語音辨識：
 1. 選取 [ **專案設定] > 平臺 > HoloLens > 功能** ，並啟用 **麥克風**。 
@@ -29,8 +31,6 @@ Unreal 中的語音輸入可讓您與全息圖互動，而不需要使用手勢�
 ![Windows 語音辨識設定](images/unreal/speech-recognition-settings.png)
 
 3. 當應用程式第一次開始詢問您是否要啟用麥克風時，就會顯示對話方塊。 選取 [ **是]** 會在應用程式中啟動語音輸入。
-
-語音輸入不需要任何特殊的 Windows Mixed Reality Api;它建置於現有的 Unreal Engine 4 [輸入](https://docs.unrealengine.com/Gameplay/Input/index.html) 對應 API 上。 
 
 ## <a name="adding-speech-mappings"></a>新增語音對應
 
