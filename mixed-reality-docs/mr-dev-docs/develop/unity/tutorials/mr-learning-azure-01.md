@@ -1,5 +1,5 @@
 ---
-title: Azure 雲端教學課程 - 1. 適用於 HoloLens 2 的 Azure 雲端服務
+title: 適用於 HoloLens 2 的 Azure 雲端服務
 description: 完成此課程，以了解如何在 HoloLens 2 應用程式中執行各種 Azure 服務。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, 混合實境, unity, 教學課程, hololens, hololens 2, azure blob 儲存體, azure 表格儲存體，azure spatial anchors, azure bot framework, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 98ca849722feeaa307cb43e568570897b48ed850
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 24f44e7ecef3aeab45978787bf09d1f947bc2411
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679417"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008318"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.適用於 HoloLens 2 的 Azure 雲端服務
-
-## <a name="overview"></a>概觀
 
 歡迎參與這系列的教學課程，本系列課程內容著重於將 **Azure 雲端** 服務帶入 **HoloLens 2** 應用程式中。 在此五部分的教學課程系列中，您將了解如何將數個 **Azure 雲端** 服務整合至 **HoloLens 2** 的 **Unity** 專案中。 在每個連續章節中，您將新增新的 **Azure 雲端** 服務以擴充應用程式功能和使用者體驗，同時了解每個 **Azure 雲端** 服務的基本概念。
 
@@ -31,7 +29,7 @@ ms.locfileid: "94679417"
 
 接下來，您會前進到第四個教學課程[整合 Azure Spatial Anchors](mr-learning-azure-04.md)，並探索 Azure Spatial Anchors 服務來儲存和尋找位置、了解核心概念、準備必要資源、設定場景，以及開始使用應用程式中的新功能。
 
-在第五個教學課程[將 Azure Bot 服務與 LUIS 整合](mr-learning-azure-05.md)中，您可以為應用程式提供新的使用者互動方法，也就是自然語言！ 這項功能會透過搭配 Language Understanding (LUIS) 使用 Azure Bot Framework 來實現。 最後一章會教您 Azure Bot 服務的基本概念，並加速您使用 Bot Framework Composer 作為零程式碼解決方案的程序。 建立 Bot 之後，您會將其整合到場景中，並執行 HoloLens 2 應用程式的最後階段。
+在第五個教學課程[將 Azure Bot 服務與 LUIS 整合](mr-learning-azure-05.md)中，您可以為應用程式提供新的使用者互動方法，也就是自然語言！ 這項功能會透過搭配 Language Understanding (LUIS) 使用 Azure Bot Framework 來實現。 最後一章會教您 Azure Bot 服務的基本概念，並加速您使用 Bot Framework 編輯器作為零程式碼解決方案的程序。 建立 Bot 之後，您會將其整合到場景中，並執行 HoloLens 2 應用程式的最後階段。
 
 ## <a name="application-goals"></a>應用程式目標
 
@@ -84,20 +82,20 @@ ms.locfileid: "94679417"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「Azure 雲端教學課程」
-2. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
+2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
+5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureCloudServices
 
 然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，將場景的 MRTK 組態設定檔變更為 **DefaultHoloLens2ConfigurationProfile**，並將空間感知網格的顯示選項變更為 [遮蔽]。
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 
-在 Unity 功能表中，選取 [視窗] > [套件管理員] 以開啟 [套件管理員] 視窗，然後選取 [AR 基本概念]，並按一下 [安裝] 按鈕以安裝套件：
+在 Unity 功能表中，選取 視窗 >  **套件管理員** 以開啟 套件管理員 視窗，然後選取 AR 基本概念，並按一下 安裝 按鈕以安裝套件：
 
 ![已選取 AR Foundation 的 Unity 套件管理員視窗](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
@@ -199,7 +197,7 @@ ms.locfileid: "94679417"
 您將在此教學課程系列中使用的所有功能並非都可以在 Unity 編輯器中執行，這表示您必須熟悉如何將應用程式部署至 HoloLens 2 裝置。
 
 > [!TIP]
-> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提示，您可以參閱[入門教學課程 - 對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。
+> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提示，您可以參閱[入門教學課程 - 對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示。
 
 ### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3.在 HoloLens 2 上執行應用程式，並遵循應用程式內的指示
 

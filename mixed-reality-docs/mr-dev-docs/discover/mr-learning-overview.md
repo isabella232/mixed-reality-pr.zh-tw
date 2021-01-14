@@ -1,18 +1,18 @@
 ---
 title: 混合實境學習模組概觀
-description: 查看可用的混合實境學習課程模組。
+description: 隨時掌握在 Microsoft Learn 平台上裝載的所有可用混合實境模組。
 author: hferrone
 ms.author: jemccull
 ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 5d59f09b98b4228b52a87a7c91e64129060f754c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 211d8e61a45a59df725f4c6c7d11c93f129d63b5
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757796"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006908"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 

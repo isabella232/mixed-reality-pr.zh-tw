@@ -1,18 +1,18 @@
 ---
 title: 範例和功能應用程式
-description: 查看 HoloLens 可用的功能範例。
+description: 隨時掌握所有可用的 Microsoft 範例以及 HoloLens 的混合實境功能應用程式。
 author: hferrone
 ms.author: jemccull
 ms.date: 12/3/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 範例, MRTK, 研究模式, HoloLens 2, qr 代碼, WebRTC, 混合實境擷取, 全像攝影遠端處理, UX 工具
 ms.localizationpriority: high
-ms.openlocfilehash: 2624949dd21b4c8e14ed45f152d41900b5f91faf
-ms.sourcegitcommit: 924f8c1ceb93c378f800cf88d82944cf80f092bc
+ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96615542"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007608"
 ---
 # <a name="samples-and-feature-apps"></a>範例和功能應用程式
 

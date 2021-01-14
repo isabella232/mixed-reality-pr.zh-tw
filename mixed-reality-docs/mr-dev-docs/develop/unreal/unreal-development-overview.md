@@ -1,18 +1,18 @@
 ---
 title: Unreal 開發概觀
-description: 使用 Unreal Engine 4 的混合實境開發概觀
+description: 使用 Unreal Engine 4 搭配我們策劃的檢查點旅程，開始進行 HoloLens 和 VR 的 wit 混合實境開發。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, OpenXR
-ms.openlocfilehash: af5883ad71acf919133c330b1da8eb846d3a039f
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926017"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009758"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 

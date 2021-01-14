@@ -1,18 +1,18 @@
 ---
 title: 在 Unreal 中升級專案
-description: Unreal 專案中版本升級步驟和已淘汰 API 的概觀。
+description: 隨時掌握 Unreal 專案的版本升級步驟、API 變更和淘汰項目。
 author: hferrone
 ms.author: jacksonf
 ms.date: 11/23/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 文件, 指南, 功能, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 移植, 升級
-ms.openlocfilehash: 5460ab55c887c44029e956545cf6a549f55716f7
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 27fb726bc0ca9c51b4e7b68ad28b76f89312262e
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010619"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010048"
 ---
 # <a name="upgrading-projects-in-unreal"></a>在 Unreal 中升級專案
 

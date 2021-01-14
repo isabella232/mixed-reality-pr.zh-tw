@@ -1,28 +1,26 @@
 ---
-title: 電腦全像攝影遠端處理教學課程 - 1。 開始使用電腦全像攝影遠端處理
-description: 完成此課程，以了解如何從電腦到 HoloLens 2 進行遠端混合實境體驗。
+title: 開始使用電腦全像攝影遠端處理
+description: 完成此課程，以了解如何從遠端將混合實境應用程式從電腦串流到 HoloLens 2。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/29/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: eae7b57544b8a544d3df926296ad5f2a720d5529
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679767"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007918"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
-## <a name="overview"></a>概觀
+歡迎使用 HoloLens 2 教學課程。 在這個兩部分的教學課程系列中，您將了解如何建立混合實境體驗示範，以及如何建立適用於全像攝影遠端的電腦應用程式。
 
-  歡迎使用 HoloLens 2 教學課程。 在這個兩部分的教學課程系列中，您將了解如何建立混合實境體驗示範，以及如何建立適用於全像攝影遠端的電腦應用程式。
+在本教學課程中，您將了解如何建立混合實境體驗。 本教學課程將示範 UI 元素、3D 模型操作、模型裁剪，以及眼球追蹤功能。
 
-   在本教學課程中，您將了解如何建立混合實境體驗。 本教學課程將示範 UI 元素、3D 模型操作、模型裁剪，以及眼球追蹤功能。
-
-  在第二個教學課程 ([建立全像攝影遠端處理應用程式](mr-learning-pc-holographic-remoting-02.md)) 中，您將了解如何建立適用於全像攝影遠端處理的電腦應用程式。 並且隨時連線至 HoloLens 2，以提供在混合實境中視覺化 3D 內容的方法。
+在第二個教學課程 ([建立全像攝影遠端處理應用程式](mr-learning-pc-holographic-remoting-02.md)) 中，您將了解如何建立適用於全像攝影遠端處理的電腦應用程式。 並且隨時連線至 HoloLens 2，以提供在混合實境中視覺化 3D 內容的方法。
 
 ## <a name="objectives"></a>目標
 
@@ -48,19 +46,19 @@ ms.locfileid: "94679767"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
+為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 
-1. [切換組建平台](mr-learning-base-02.md#configuring-the-unity-project)
+2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 
-1. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-1. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-1. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
+5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
 
-1. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
+6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
 
 然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示，將場景的 MRTK 設定檔變更為 **DefaultHoloLens2ConfigurationProfile**。 將空間感知網格的顯示選項變更為 **遮蔽**。
 

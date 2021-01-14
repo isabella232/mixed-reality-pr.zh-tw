@@ -1,33 +1,34 @@
 ---
 title: 適用於 HoloLens 的 Unity 開發
-description: 開始在 Unity 和 HoloLens 中建置混合實境應用程式。
+description: 透過我們策劃的檢查點旅程，開始在 Unity 和 HoloLens 中建置混合實境應用程式。
 author: hferrone
 ms.author: kurtie
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 150d86d1522f3fa71dd9d9a1fe154baef89496e0
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 28ddaeed4218dc3433e13122806a2032e335dd56
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613472"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98031983"
 ---
-# <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發 
+# <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
 ![Unity 橫幅標誌](../images/unity_logo_banner.png)
 
 要在 [Unity](https://unity.com) 中建置 HoloLens [混合實境應用程式](../../design/app-views.md)，使用混合實境工具組是最快速的途徑。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 您也可以造訪內容豐富的[資產存放區](https://www.assetstore.unity3d.com/)和 [Unity 混合實境論壇](https://forum.unity3d.com/forums/hololens.102/)，與建置混合實境應用程式的線上社群交流。 您絕對想不到在這裡會發現哪些絕佳的資產或解決方案。 當您準備好開始使用 MRTK 時，請前往以下開發檢查點！
 
 > [!IMPORTANT]
-> 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。 對於使用 HTK、MRTK v1、SteamVR 的專案，或針對沉浸式頭戴裝置 (例如 Reverb G2、Oculus Rift、HTC Vive) 開發的專案，我們都提供了相關指南。
+> 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。 我們針對使用 HTK、MRTK v1 或 SteamVR 的專案提供了指南。
 
 ## <a name="development-checkpoints"></a>開發檢查點
 
-使用下列檢查點，將您的 Unity 遊戲和應用程式融入混合實境的世界中。 如果您尚未探索 [設計全像投影範例應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)，建議您下載並使用，以熟悉混合實境 UX 的基本概念。 
+使用下列檢查點，將您的 Unity 遊戲和應用程式融入混合實境的世界中。 如果您尚未探索 [設計全像投影範例應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)，建議您下載並使用，以熟悉混合實境 UX 的基本概念。
 
 ### <a name="1-getting-started"></a>1.開始使用
+
 在 Unity 中開發最簡單的方式，就是使用混合實境工具組。 MRTK 可協助您自動設定混合實境的專案，並提供一組功能協助您加速開發流程。 閱讀本節的內容後，您大致上就已了解混合實境工具組、針對混合實境應用程式正確設定的開發環境，以及您自行建置且可在 Unity 中運作的 MRTK 專案。
 
 |  Checkpoint  |  結果  |
@@ -37,10 +38,10 @@ ms.locfileid: "97613472"
 | [HoloLens 2 教學課程系列](tutorials/mr-learning-base-01.md) | 進入 HoloLens 2 硬體的入門級 MRTK 教學課程 |
 
 > [!IMPORTANT]
-> 如果您想要在未匯入混合實境工具組的情況下建立新的 Unity 專案，則您需要為 Windows Mixed Reality 手動變更一小組 Unity 設定。 這些設定分成兩個類別：每個專案和每個場景。 如需逐步程序，請參閱我們的設定指南。
+> 如果您想要在未匯入混合實境工具組的情況下建立新的 Unity 專案，則您需要為 Windows Mixed Reality 手動變更一小組 Unity 設定。 這些設定分成兩個類別：每個專案和每個場景。 如需逐步程序，請參閱我們的[設定指南](configure-unity-project.md)。
 
 > [!NOTE]
-> 在您的專案中設定 MRTK V2 後，標準 Unity 遊戲物件 (例如相機) 會立即亮起，以提供坐姿級別體驗。 您可以在 [座標系統] 頁面上找到變更應用程式體驗級別的指示。
+> 在您的專案中設定 MRTK V2 後，標準 Unity 遊戲物件 (例如相機) 會立即亮起，以提供坐姿級別體驗。 您可以在[座標系統](coordinate-systems-in-unity.md)頁面上找到變更應用程式體驗級別的指示。
 
 ### <a name="2-core-building-blocks"></a>2.核心基本要素
 
@@ -113,11 +114,21 @@ ms.locfileid: "97613472"
 | [指令碼參考](https://docs.unity3d.com/ScriptReference/) | 這部分的文件包含 Unity 所提供之 API 指令碼的詳細資料，並且可從 Unity 編輯器線上存取，只要按一下 [說明] > [指令碼參考] 即可 |
 | [手動](https://docs.unity3d.com/Manual/index.html) | 此手冊旨在協助您了解如何使用 Unity (包括基本與進階技術)，並且可從 Unity 編輯器線上存取，只要按一下 [說明] > [指令碼參考] 即可 |
 
-
 > [!div class="nextstepaction"]
 > [探索 MRTK](mrtk-getting-started.md)
 
+## <a name="have-feedback"></a>有任何意見嗎？
+
+您可以在 [Unity 論壇](https://aka.ms/unityforums)藉由標記 **Microsoft** 和下列標籤組合來找到我們，進而協助我們了解您提供意見反應的外掛程式：
+
+* HoloLens 2 
+* Windows Mixed Reality
+* OpenXR
+* XRSDK
+* 傳統 XR 
+
 ## <a name="see-also"></a>另請參閱
+
 * [混合實境工具組 v2](mrtk-getting-started.md)
 * [MR Basics 100：開始使用 Unity](tutorials/holograms-100.md)
 * [Unity 的建議設定](recommended-settings-for-unity.md)

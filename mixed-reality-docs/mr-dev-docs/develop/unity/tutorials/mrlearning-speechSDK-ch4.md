@@ -1,18 +1,18 @@
 ---
-title: Azure 語音服務教學課程 - 4。 設定意圖和自然語言理解
-description: 完成此課程以了解如何在混合實境應用程式中實作 Azure 語音 SDK。
+title: 設定意圖和自然語言理解
+description: 完成此課程，以了解如何在混合實境應用程式中設定意圖和自然語言理解。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure spatial anchors, 語音辨識, Windows 10, LUIS, LUIS 入口網站, 意圖, 實體, 語句, 自然語言理解
 ms.localizationpriority: high
-ms.openlocfilehash: b21637fc0630b6cb024dcdbc0a1985979914d3a0
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 07044d3dc38be12d5d601d34a23a241a71c5b06d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678507"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007768"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.設定意圖和自然語言理解
 

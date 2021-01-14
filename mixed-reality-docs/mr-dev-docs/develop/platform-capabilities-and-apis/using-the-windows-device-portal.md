@@ -1,18 +1,18 @@
 ---
 title: 使用 Windows 裝置入口網站
-description: HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來設定及管理您的裝置。 Device Portal 是您 HoloLens 上的網頁伺服器，您可以從電腦上的網頁瀏覽器與它連線。 裝置入口網站包含許多工具，可協助您管理 HoloLens，並對應用程式進行偵錯及最佳化。
+description: 了解如何使用 Windows 裝置入口網站從遠端透過 Wi-Fi 或 USB 來設定及管理您的裝置。
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 168d4175a7e55d5116f19c51a802c9a8abdc1e19
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 75eda2775486b1ace82b574816db34a2f895c80b
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530313"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007788"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 

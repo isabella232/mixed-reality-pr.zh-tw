@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: 教學課程
-description: 提供有關混合實境開發的教學課程。
+description: 隨時掌握我們為 HoloLens 和 Azure 服務提供的混合實境開發教學課程。
 author: keveleigh
 ms.author: kurtie
 ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 學院, 教學課程, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, unity, unreal, HoloLens, Azure 空間錨點, Azure 語音服務
-ms.openlocfilehash: a85792ba082450fb01f3c6f7bb008d3c7b17560b
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010459"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98006518"
 ---
 # <a name="tutorials"></a>教學課程
 

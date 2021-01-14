@@ -1,18 +1,18 @@
 ---
 title: Unreal 中的 QR 代碼
-description: 在 Unreal 中使用 QR 代碼的指南
+description: 了解如何在 Unreal 混合實境應用程式中設定、使用及追蹤 QR 代碼。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, qr 代碼, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 72f08c22b8dcab5e13de2baae817b3496ada1a60
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926080"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010008"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal 中的 QR 代碼
 
@@ -28,6 +28,7 @@ HoloLens 2 可以使用網路攝影機查看世界空間中的 QR 代碼，這�
 > QR 代碼是現成可供 HoloLens 追蹤的唯一影像類型，HoloLens 上不支援 Unreal 的 **UARTrackedImage** 模組。 如果您需要追蹤自訂影像，則可以使用第三方影像辨識程式庫來存取裝置的[網路攝影機](unreal-hololens-camera.md)並處理影像。 
 
 ## <a name="enabling-qr-detection"></a>啟用 QR 偵測
+
 因為 HoloLens 2 需要使用網路攝影機來查看 QR 代碼，所以您必須在專案設定中將其啟用：
 - 開啟 [編輯] > [專案設定]捲動至 [平台] 區段，然後選取 [HoloLens]。
     + 展開 [功能] 區段，並勾選 [網路攝影機]。  
@@ -52,6 +53,7 @@ QR 代碼會透過 Unreal 的 AR 追蹤幾何系統呈現為追蹤的影像。 �
 ![將節點新增至 On Add Tracked Geometry](images/unreal-qr-codes-tracked-geometry.png)
 
 ## <a name="using-a-tracked-qr-code"></a>使用已追蹤的 QR 代碼
+
 下圖中的事件圖形會顯示用來在 QR 代碼中心呈現點的 **OnUpdateTrackedImage** 事件，並印出其資料。
 
 [!INCLUDE[](includes/tabs-qr-codes-2.md)]
@@ -63,6 +65,7 @@ QR 代碼會透過 Unreal 的 AR 追蹤幾何系統呈現為追蹤的影像。 �
 您也可以在程式碼中[取得 QR 代碼的座標系統](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)。
 
 ## <a name="finding-the-unique-id"></a>尋找唯一識別碼
+
 每個 QR 代碼都有唯一的 guid 識別碼，您可以透過下列方式找到該識別碼：
 - 拖放 **As ARTracked QRCode** 釘選並搜尋 [取得唯一識別碼]。
 

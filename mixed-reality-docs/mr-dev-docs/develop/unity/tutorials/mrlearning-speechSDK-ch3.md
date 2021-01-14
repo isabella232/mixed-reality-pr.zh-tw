@@ -1,18 +1,18 @@
 ---
-title: Azure 語音服務教學課程 - 3。 新增 Azure 認知服務語音翻譯元件
-description: 在此課程中，您將了解如何在混合實境應用程式中實作 Azure 語音 SDK。
+title: 新增 Azure 認知服務語音翻譯元件
+description: 在此課程中，您將了解如何在混合實境應用程式中新增 Azure 認知服務語音翻譯。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10, 語音翻譯
 ms.localizationpriority: high
-ms.openlocfilehash: 1139da69b27352b996d57184e21e9d6291d26fce
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3c647ca841e51b707aae4171b31b0b045c79fb03
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679917"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009878"
 ---
 # <a name="3-adding-the-azure-cognitive-services-speech-translation-component"></a>3.新增 Azure 認知服務語音翻譯元件
 

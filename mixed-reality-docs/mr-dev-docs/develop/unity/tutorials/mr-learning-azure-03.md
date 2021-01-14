@@ -1,18 +1,18 @@
 ---
-title: Azure 雲端教學課程 - 3。 整合 Azure 自訂視覺
-description: 完成此課程，以了解如何在 HoloLens 2 應用程式中執行 Azure 自訂視覺。
+title: 整合 Azure 自訂視覺
+description: 完成此課程，以了解如何在 HoloLens 2 混合實境應用程式中執行 Azure 自訂視覺。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 自訂視覺, azure 認知服務, azure 雲端服務, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d30d409752c8b7f9728a4a6576829d175f91506d
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679347"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008208"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.整合 Azure 自訂視覺
 

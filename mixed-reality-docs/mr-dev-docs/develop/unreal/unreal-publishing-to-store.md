@@ -1,18 +1,18 @@
 ---
 title: 發佈至 Microsoft Store
-description: ''
+description: 了解如何封裝、認證 Unreal 混合實境應用程式，以及將這些應用程式發佈到 Microsoft Store。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 文件, 指南, 功能, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 發佈, 散發, Microsoft Store
-ms.openlocfilehash: 37a17ba4a691ca8db6ce447abd485293454b8ae3
-ms.sourcegitcommit: 9c640c96e2270ef69edd46f1b12acb00b373554d
+ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96583894"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010018"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>發佈至 Microsoft Store
 
@@ -108,6 +108,7 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 4. 關閉 Unreal、重新開啟專案，然後重新封裝 HoloLens。  重新執行 WACK，此錯誤就會消失。 
 
 ## <a name="see-also"></a>另請參閱
+
 * [將應用程式提交到 Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows 應用程式認證套件](https://developer.microsoft.com/windows/downloads/app-certification-kit)
 * [手動建立應用程式安裝程式檔案](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)

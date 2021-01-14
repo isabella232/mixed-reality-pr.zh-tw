@@ -7,18 +7,22 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組
-ms.openlocfilehash: 5c0eefe6f4811feba6d1d52164652acbc44945c3
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
+ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847601"
+ms.lasthandoff: 01/12/2021
+ms.locfileid: "98110446"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型
 
 ![混合實境設計抽象](images/design-hero-image.png)
 
-混合實境應用程式不同於現今既有的任何技術，其設計是很困難的工作。 您不僅必須將考量您所建立的實際和虛擬環境之間全新的組合，也必須考量其所提供的全新使用者體驗。 由於混合實境牽涉領域很廣，我們僅選擇了若干重點及其設計頻譜，並將以一系列檢查點的形式列於下方。 這些檢查點通常應依序執行，但如果您有把握，則可以隨意跳到下列任何一節。
+混合實境應用程式不同於現今既有的任何技術，其設計是很困難的工作。 您不僅必須將考量您所建立的實際和虛擬環境之間全新的組合，也必須考量其所提供的全新使用者體驗。 由於混合實境牽涉領域很廣，我們僅選擇了若干重點及其設計頻譜，並將以一系列檢查點的形式列於下方。 這些檢查點通常應依序執行，但如果您有把握，則可以隨意跳到下列任何一節。 
+
+請觀看我們的設計概觀影片以開始使用：
+
+>[!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4LhlW]
 
 ## <a name="design-checkpoints"></a>設計檢查點
 

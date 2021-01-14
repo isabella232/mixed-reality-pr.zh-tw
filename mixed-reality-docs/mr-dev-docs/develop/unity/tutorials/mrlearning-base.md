@@ -1,18 +1,18 @@
 ---
-title: 入門教學課程 - 1。 概觀和目標
-description: 此課程可讓您了解如何在混合實境應用程式中實作 Azure 臉部辨識。
+title: 教學課程概觀和目標
+description: 完成此課程以了解如何在混合實境應用程式中實作 Azure 臉部辨識。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 777203d0051c22b0f249db7d377ab08f92c089b7
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91697009"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010088"
 ---
 # <a name="1-overview-and-objectives"></a>1.概觀和目標
 
@@ -39,7 +39,7 @@ ms.locfileid: "91697009"
     </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 ### <a name="prerequisites"></a>必要條件
 

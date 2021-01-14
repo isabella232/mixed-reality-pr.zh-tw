@@ -1,5 +1,5 @@
 ---
-title: Azure Spatial Anchor 教學課程 - 2。 開始使用 Azure Spatial Anchors
+title: 開始使用 Azure Spatial Anchors
 description: 完成此課程，以了解如何使用 Azure Spatial Anchors 來錨定混合實境應用程式中的物件。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,16 +7,14 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: ae2726be302bf8ebf342ebd95233b28d7e534423
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: a31d398621c581460e49ed81d23c446e60bc530f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679937"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008508"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
-
-## <a name="overview"></a>概觀
 
 在此教學課程中，您將探索啟動和停止 Azure Spatial Anchors 工作階段，以及在單一裝置上建立、上傳和下載 Azure Spatial Anchors 所需的各種步驟。
 
@@ -29,14 +27,14 @@ ms.locfileid: "94679937"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-為此，請先遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
-1. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
-1. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
-1. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureSpatialAnchors
+2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureSpatialAnchors
 
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
 
@@ -148,7 +146,7 @@ ms.locfileid: "94679937"
 Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spatial Anchors 功能，您必須在裝置中建置專案並部署應用程式。
 
 > [!TIP]
-> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱[對您的 HoloLens 2 建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。
+> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱 [對您的 HoloLens 2 建置應用程式] (mr-learning-base-02.md#building-your-application-to-your-hololens-2) 的指示。
 
 當應用程式在您的裝置上執行時，請遵循 Azure Spatial Anchor 教學課程指示面板上顯示的螢幕指示：
 

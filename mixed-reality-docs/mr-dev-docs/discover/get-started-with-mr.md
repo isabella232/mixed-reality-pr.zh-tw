@@ -1,18 +1,18 @@
 ---
 title: 開始使用混合實境
-description: 了解混合實境理論、開發和常見使用案例的基本概念。
+description: 選擇您的開發軌跡，並了解混合實境理論、開發和常見使用案例的基本概念。
 author: grbury
 ms.author: grbury
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: f50457fedb0223317e522c4d86bd56cc02657c77
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 03db5f79a531d77bfd1cd6513c5bed9ad1202189
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757666"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009718"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 

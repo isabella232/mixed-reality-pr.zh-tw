@@ -1,18 +1,18 @@
 ---
 title: Unreal 中的空間音訊
-description: 詳盡了解 Unreal Engine 的空間音訊外掛程式。
+description: 了解 HoloLens 裝置的 Unreal 混合實境應用程式適用的空間音訊外掛程式細節。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 空間音訊
-ms.openlocfilehash: fa87862f6a6af456ea344b67e22f1640c9cfafb4
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609539"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009968"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal 中的空間音訊
 
@@ -34,7 +34,6 @@ ms.locfileid: "96609539"
 ![Unreal 空間音訊外掛程式](images/unreal-spatial-audio-img-01.png)
 
 編輯器重新啟動後，您的專案即設定完成。
-
 
 ## <a name="setting-the-spatialization-plugin-for-hololens-2-platform"></a>設定 HoloLens 2 平台的空間化外掛程式
 

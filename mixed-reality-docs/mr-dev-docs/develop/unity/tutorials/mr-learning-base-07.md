@@ -1,18 +1,18 @@
 ---
-title: MRTK 教學課程 - 7. 與 3D 物件互動
-description: 本課程說明如何使用混合實境工具組 (MRTK) 來與 3D 物件互動。
+title: 與 3D 物件互動
+description: 本課程說明如何使用混合實境工具組 (MRTK) 來與混合實境應用程式中的 3D 物件互動及進行操作。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 物件互動, 週框方塊
 ms.localizationpriority: high
-ms.openlocfilehash: a457c850cdc5db7b9613ae20caab23d69b342997
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613492"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007928"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 

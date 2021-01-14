@@ -1,22 +1,20 @@
 ---
-title: MRTK 教學課程 - 9. 使用語音命令
-description: 本課程說明如何搭配混合實境工具組 (MRTK) 來使用語音命令。
+title: 使用語音命令
+description: 本課程說明如何在混合實境應用程式中透過混合實境工具組 (MRTK) 來設定、建立及使用語音命令。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 語音命令, 語音輸入
 ms.localizationpriority: high
-ms.openlocfilehash: 6e008f3e46bc4a22499691e284020321d29a2f23
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613462"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007908"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
-
-## <a name="overview"></a>概觀
 
 在本教學課程中，您將了解如何建立語音命令，以及如何全域性地控制這些命令。 您也將了解如何控制局部語音命令，該命令會要求使用者看著控制語音命令的物件。
 
@@ -32,7 +30,7 @@ ms.locfileid: "97613462"
 ![啟用麥克風功能](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> 當您在本教學課程系列開頭設定 Unity 時，「麥克風」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings)指示期間啟用。 不過如果未啟用，請務必立即啟用。
+> 當您在本教學課程系列開頭設定 Unity 時，「麥克風」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#selecting-mrtk-and-project-settings)指示期間啟用。 不過如果未啟用，請務必立即啟用。
 
 ## <a name="creating-speech-commands"></a>建立語音命令
 

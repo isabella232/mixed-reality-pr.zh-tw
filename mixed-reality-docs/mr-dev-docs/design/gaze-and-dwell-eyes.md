@@ -1,18 +1,18 @@
 ---
 title: 眼部目光和停駐
-description: 眼部注視和停駐輸入模型的概觀。
+description: 從開始眼部目光和停駐輸入模型的概觀著手，包括互動模型、設計指導方針和獨特的挑戰。
 author: sostel
 ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 眼球追蹤, 混合實境, 輸入, 眼部注視, 眼部定向, HoloLens 2, 眼動式選取, Dwell, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 設計
-ms.openlocfilehash: bf9ad97790093a08156660bfd6e33d16c06e6387
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847815"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007708"
 ---
 # <a name="eye-gaze-and-dwell"></a>眼部目光和停駐
 
@@ -43,6 +43,7 @@ ms.locfileid: "97847815"
 ![停駐狀態](images/eyes_dwellstate_recommendation.png)<br>
 
 ## <a name="see-also"></a>另請參閱
+
 * [眼球追蹤](eye-tracking.md)
 * [眼部目光和行動](gaze-and-commit-eyes.md)
 * [目光和行動](gaze-and-commit.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 11533175057217bddcc7e121a524da1f26d2764e
-ms.sourcegitcommit: b0b5e109c16bcff7b9c098620467c8b9685e9597
+ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
+ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/29/2020
-ms.locfileid: "92915536"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98052735"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -38,13 +38,13 @@ ms.locfileid: "92915536"
 
 ## <a name="cloud-services"></a>雲端服務
 
-有數個雲端服務可以整合到 Unity 內建的混合實境專案中，特別是 **Azure 遠端轉譯** 和 **Azure Spatial Anchors** 。 這些服務可以將共用的全像攝影內容和即時 3D 轉譯新增至您的應用程式，使其更吸引人且更適合您的使用者。
+有數個雲端服務可以整合到 Unity 內建的混合實境專案中，特別是 **Azure 遠端轉譯** 和 **Azure Spatial Anchors**。 這些服務可以將共用的全像攝影內容和即時 3D 轉譯新增至您的應用程式，使其更吸引人且更適合您的使用者。
 
-這些服務全都涵蓋於 [Unity 開發旅程](../unity/unity-development-overview.md)的課程中，我們 **強烈建議透過此途徑學習 Unity 的混合實境** 。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unity/unity-development-overview.md#5-adding-services)。
+這些服務全都涵蓋於 [適用於 HoloLens 的 Unity 開發旅程](../unity/unity-development-overview.md)課程中，我們 **強烈建議透過此途徑學習 Unity 的混合實境**。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unity/unity-development-overview.md#5-adding-services)。
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-您可以使用 **Microsoft Dynamics 365 Guides** ，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unity 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unity/unity-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
+您可以使用 **Microsoft Dynamics 365 Guides**，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 適用於 HoloLens 的 Unity 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unity/unity-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
 
 ## <a name="examples"></a>範例
 
@@ -88,13 +88,13 @@ ms.locfileid: "92915536"
 
 ## <a name="cloud-services"></a>雲端服務
 
-在 Unreal 中建置混合實境應用程式時，您可以存取功能強大的雲端服務 **Azure Spatial Anchors** ，用以在不同的裝置間新增、保存及共用全像攝影內容。 
+在 Unreal 中建置混合實境應用程式時，您可以存取功能強大的雲端服務 **Azure Spatial Anchors**，用以在不同的裝置間新增、保存及共用全像攝影內容。 
 
-Azure Spatial Anchors 涵蓋於 [Unreal 開發旅程](../unreal/unreal-development-overview.md)的課程中，我們 **強烈建議透過此途徑學習 Unreal 的混合實境** 。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unreal/unreal-development-overview.md#5-adding-services)。
+Azure Spatial Anchors 涵蓋於 [Unreal 開發旅程](../unreal/unreal-development-overview.md)的課程中，我們 **強烈建議透過此途徑學習 Unreal 的混合實境**。 您已在此路徑中，因此只要繼續閱讀，然後點按文章最底下的大型藍色按鈕即可。 不過，如果目前處於更進階的開發階段中，且您已確定要開始進行，請參閱我們的[雲端服務概觀](../mixed-reality-cloud-services.md)，或直接移至[服務資源](../unreal/unreal-development-overview.md#5-adding-services)。
 
 ## <a name="dynamics-365-guides"></a>Dynamics 365 Guides
 
-您可以使用 **Microsoft Dynamics 365 Guides** ，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unreal 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unreal/unreal-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
+您可以使用 **Microsoft Dynamics 365 Guides**，以視覺方式將全像攝影指示傳輸至應用程式虛擬環境，適時適地為您的使用者提供重要資訊。 Unreal 開發旅程中也涵蓋這項功能，但如果您要直接跳過去，您可以從[這裡](../unreal/unreal-development-overview.md#5-adding-services)選取 [Dynamics 365] 索引標籤，以查看有哪些供應項目。
 
 ## <a name="examples"></a>範例
 

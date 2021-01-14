@@ -1,20 +1,20 @@
 ---
-title: Azure 語音服務教學課程 - 2。 新增本機語音轉換文字翻譯離線模式
-description: 完成此課程以了解如何在混合實境應用程式中實作 Azure 語音 SDK。
+title: 新增本機語音轉換文字翻譯離線模式
+description: 完成此課程，以了解如何在混合實境應用程式中新增離線模式以進行本機語音轉換文字翻譯。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 06/27/2019
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: d5b0e5140c698996c051eab10064d99280482886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679727"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98010078"
 ---
-# <a name="2-using-speech-recognition-to-execute-commands"></a>2.使用語音辨識來執行命令
+# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.新增本機語音轉換文字翻譯離線模式
 
 在本教學課程中，您將新增使用 Azure 語音辨識執行命令的功能，這可讓您根據所定義的單字或片語進行一些動作。
 
@@ -29,18 +29,18 @@ ms.locfileid: "94679727"
 * 在 [喚醒字詞] 欄位中，入適當的片語，例如「啟動終端機 (Activate terminal)」。
 * 在 [關閉字詞] 欄位中，輸入適當的片語，例如「關閉終端機 (Dismiss terminal)」。
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-1.png)
+![已醒目提示 Lunarcom Wake Word Recognizer 指令碼元件的 Unity 編輯器](images/mrlearning-speech/tutorial2-section1-step1-1.png)
 
 > [!NOTE]
 > Lunarcom Wake Word Recognizer (指令碼) 元件不是 MRTK 的一部分。 這是本教學課程資產隨附的元件。
 
 如果您現在進入遊戲模式，如先前的教學課程所示，預設會啟用終端機面板，但您現在可以藉由說出關閉字詞：**關閉終端機**，來將其停用：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-2.png)
+![在播放模式中使用語音辨識器功能的 Unity 編輯器](images/mrlearning-speech/tutorial2-section1-step1-2.png)
 
 然後藉由說出喚醒字詞：**啟動終端機**，來再次將其啟動：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial2-section1-step1-3.png)
+![在播放模式中具有作用中終端機的 Unity 編輯器](images/mrlearning-speech/tutorial2-section1-step1-3.png)
 
 > [!CAUTION]
 > 應用程式必須連線到 Azure，因此請確定您的電腦/裝置已連線到網際網路。

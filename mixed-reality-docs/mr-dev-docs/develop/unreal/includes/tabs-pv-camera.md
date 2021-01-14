@@ -1,14 +1,17 @@
 ---
-ms.openlocfilehash: eb51caa4caf0d425b5e49c3abca2a523b08fc312
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: ad7d530de61864528ae80e4d0086687d282e6b18
+ms.sourcegitcommit: 8f9f98342aaf66645fd74dac3fad499f9d799ce7
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717827"
+ms.lasthandoff: 01/11/2021
+ms.locfileid: "98109537"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
 ## <a name="pv-camera-feed-setup"></a>PV 相機摘要設定
+
+> [!IMPORTANT]
+> PV 相機會同時在 Windows Mixed Reality 和 OpenXR 外掛程式中實作。 不過，OpenXR 需要安裝 [Microsoft OpenXR 外掛程式](https://github.com/microsoft/Microsoft-OpenXR-Unreal)。 此外，OpenXR 目前有所限制，相機可以搭配 DirectX11 RHI 運作。 在更高的 Unreal 版本中將會修正這項限制。 
 
 - 在 [專案設定] > [HoloLens] 中，啟用 [網路攝影機] 功能：
 

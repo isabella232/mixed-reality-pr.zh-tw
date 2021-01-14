@@ -1,22 +1,20 @@
 ---
-title: MRTK 教學課程 - 8. 使用眼球追蹤
-description: 本課程說明如何搭配混合實境工具組 (MRTK) 來使用眼球追蹤。
+title: 使用眼球追蹤
+description: 本課程說明如何在混合實境應用程式中透過混合實境工具組 (MRTK) 來使用眼球追蹤。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 538204513589b96bedb8b20c46eee5735b764a4c
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613482"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007888"
 ---
 # <a name="8-using-eye-tracking"></a>8.使用眼球追蹤
-
-## <a name="overview"></a>概觀
 
 在本教學課程中，您將了解如何啟用 HoloLens 2 的眼球追蹤，並將眼球追蹤新增至物件，以在使用者查看物件時觸發動作。
 
@@ -35,7 +33,7 @@ ms.locfileid: "97613482"
 ![Unity [MRTK 專案設定程式] 視窗](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> 當您在本教學課程系列開頭設定 Unity 時，「注視輸入」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#1-apply-the-mrtk-project-configurator-settings)指示期間啟用。 不過如果未啟用，請確定您立即啟用。
+> 當您在本教學課程系列開頭設定 Unity 時，「注視輸入」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#selecting-mrtk-and-project-settings)指示期間啟用。 不過如果未啟用，請確定您立即啟用。
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>在注視提供者中啟用眼球型追蹤
 

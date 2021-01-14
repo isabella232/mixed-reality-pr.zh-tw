@@ -1,5 +1,5 @@
 ---
-title: Azure 雲端教學課程 - 4. 整合 Azure Spatial Anchors
+title: 整合 Azure Spatial Anchors
 description: 完成此課程以了解如何在 HoloLens 2 應用程式中實作 Azure Spatial Anchors。
 author: jessemcculloch
 ms.author: jemccull
@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, Azure 空間錨點, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 5245f3522e7822c16ebc0d0113634f152f223086
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679337"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008168"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.整合 Azure Spatial Anchors
 
@@ -60,7 +60,7 @@ ms.locfileid: "94679337"
 Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spatial Anchors 功能，您必須將專案部署至您的裝置。
 
 > [!TIP]
-> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱[對您的 HoloLens 2 建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。
+> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱 [對您的 HoloLens 2 建置應用程式] (mr-learning-base-02.md#building-and-deploying-to-your-hololens-2) 的指示。
 
 ## <a name="run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>在 HoloLens 2 上執行應用程式，並遵循應用程式內的指示
 

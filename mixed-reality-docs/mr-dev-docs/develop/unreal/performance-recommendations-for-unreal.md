@@ -1,24 +1,25 @@
 ---
 title: Unreal 的效能建議
-description: 在 Unreal 中使用混合實境應用程式的最佳效能建議
+description: 了解如何使用我們建議的 Unreal 專案設定，讓混合實境應用程式發揮最佳效能。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 5/5/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 效能, 最佳化, 設定, 文件
-ms.openlocfilehash: a369a68f8ebf9b7084c22f0efa3bbf0bf5ecbebf
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: a1a8dacd0206882c7ebd67b2658fa2e6300aa66a
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865423"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009818"
 ---
 # <a name="performance-recommendations-for-unreal"></a>Unreal 的效能建議
 
 Unreal Engine 有幾項可提高應用程式效能的功能，全部都是以[混合實境效能建議](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)中的討論為基礎。 建議您先閱讀應用程式瓶頸、分析和剖析混合實境應用程式，並進行一般效能修正，再繼續進行。
 
 ## <a name="recommended-unreal-project-settings"></a>建議的 Unreal 專案設定
+
 您可以在 [編輯] > [專案設定] 中找到下列每個設定。
 
 1. 使用行動 VR 轉譯器：
@@ -78,4 +79,5 @@ Unreal Engine 有幾項可提高應用程式效能的功能，全部都是以[�
 ![減少行動著色器排列](images/unreal/performance-recommendations-img-08.png)
 
 ## <a name="see-also"></a>另請參閱
+
 * [Unreal Engine 行動效能指導方針]( https://docs.unrealengine.com/Platforms/Mobile/Performance/index.html)

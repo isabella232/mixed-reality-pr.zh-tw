@@ -1,22 +1,20 @@
 ---
-title: 多使用者功能教學課程 - 2。 設定 Photon Unity 網路
-description: 完成此課程，以了解如何在 HoloLens 2 應用程式中實作 Photon Unity 網路。
+title: 設定 Photon Unity 網路
+description: 完成此課程，以了解如何在 HoloLens 2 混合實境應用程式中實作 Photon Unity 網路。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 062c39ab6973c7c71e305cfc7a695fb250c76596
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679257"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007298"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
-
-## <a name="overview"></a>概觀
 
 在本教學課程中，您將使用 Photon Unity 網路 (PUN) 來準備建立共用體驗。 您將了解如何建立 Photon PUN 應用程式、將 PUN 資產匯入到您的 Unity 專案，以及將您的 Unity 專案連線到 PUN 應用程式。
 
@@ -30,14 +28,14 @@ ms.locfileid: "94679257"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-為此，請先遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
-1. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
-1. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-1. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-1. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
-1. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 MultiUserCapabilities
+2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 MultiUserCapabilities
 
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
 
@@ -50,7 +48,7 @@ ms.locfileid: "94679257"
 
 ![Unity 玩家設定](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)所啟用的 **InternetClient**、**Microphone**、**SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
+在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)所啟用的 **InternetClient**、**Microphone**、**SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
 
 然後啟用下列其他功能：
 
@@ -61,7 +59,7 @@ ms.locfileid: "94679257"
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 
-在 Unity 功能表中，選取 視窗 >  **套件管理員** 以開啟 套件管理員 視窗，然後選取 AR 基本概念，並按一下 安裝 按鈕以安裝套件：
+在 Unity 功能表中，選取 [視窗] >  **[套件管理員]** 以開啟 [套件管理員] 視窗，然後選取 [AR 基本概念]，並按一下 [安裝] 按鈕以安裝套件：
 
 ![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-sharing/sharing-02-section3-step1-1.png)
 

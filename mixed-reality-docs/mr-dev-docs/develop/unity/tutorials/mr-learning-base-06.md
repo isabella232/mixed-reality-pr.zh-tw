@@ -1,22 +1,20 @@
 ---
-title: MRTK 教學課程 - 6. 建立使用者介面
-description: 本課程說明如何使用混合實境工具組 (MRTK) 來建立使用者介面。
+title: 建立使用者介面
+description: 本課程說明如何使用混合實境工具組 (MRTK) 來建立靜態和動態使用者介面。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, prefab, 全像投影, 工具提示
 ms.localizationpriority: high
-ms.openlocfilehash: 90b794dc6e88b724d16c339e428c4d2ed9cdac07
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613512"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98008058"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
-
-## <a name="overview"></a>概觀
 
 在本教學課程中，您將了解如何使用 MRTK 的按鈕和功能表預製物件以及 Unity 的 TextMeshPro 元件來建立簡單的使用者介面。 您也將了解如何設定按鈕來觸發事件，並新增動態工具提示 UI 元素，以提供使用者其他資訊。
 

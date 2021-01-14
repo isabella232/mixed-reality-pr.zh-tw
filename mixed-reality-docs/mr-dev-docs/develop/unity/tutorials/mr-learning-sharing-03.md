@@ -1,18 +1,18 @@
 ---
-title: 多使用者功能教學課程 - 3。 連線多個使用者
-description: 完成此課程，以了解如何連線 HoloLens 2 應用程式中的多個使用者。
+title: 連線多個使用者
+description: 完成此課程，以了解如何連線 HoloLens 2 混合實境應用程式中的多個使用者。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: c16182fe2363b4682a25d70715f5ee8cb65d5886
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6cc77b32e9479bafeb53dcb99cba4f2f29865fd7
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679757"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98007208"
 ---
 # <a name="3-connecting-multiple-users"></a>3.連線多個使用者
 
@@ -112,7 +112,7 @@ ms.locfileid: "94679757"
 ![動畫，顯示具有網路使用者的 Unity](images/mr-learning-sharing/sharing-03-section4-step1-1.gif)
 
 > [!TIP]
-> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱[對您的 HoloLens 2 建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。
+> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱[對您的 HoloLens 2 建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示。
 
 > [!CAUTION]
 > 應用程式必須連線到 Photon，因此請確定您的電腦/裝置已連線到網際網路。

@@ -1,18 +1,18 @@
 ---
 title: Unreal 中的空間對應
-description: 在 Unreal 中使用空間對應的指南
+description: 了解如何在 HoloLens 裝置的 Unreal 混合實境應用程式中使用空間對應和網格。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 空間對應, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 6d70e7f2d32fbf39bc51534661b8224547c36acc
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 3f07acc5bb4ad85084f6eb178fd1c33d94224408
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96926052"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009958"
 ---
 # <a name="spatial-mapping-in-unreal"></a>Unreal 中的空間對應
 

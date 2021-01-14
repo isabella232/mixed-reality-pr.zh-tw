@@ -1,18 +1,18 @@
 ---
 title: 安裝工具
-description: 從此開始準備混合實境開發。 本文應該一律反映 Unity、Visual Studio 以及建議用於 HoloLens 和 Windows Mixed Reality 沉浸式頭戴裝置開發的其他工具的最新版本。
+description: 從這裡開始使用針對 HoloLens 和 VR 開發建議的最新版 Unity、Visual Studio 和工具。
 author: thetuvix
 ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: addbab6a7bedc7c8065e7b68923bf1956a522a02
-ms.sourcegitcommit: f2782d0925b2075fdaa0a4ecdef3dd4f0b4e1e99
+ms.openlocfilehash: 447f0713ef26757bd6fcf89684a7f5d59a052dcb
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/09/2020
-ms.locfileid: "96925998"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009418"
 ---
 # <a name="install-the-tools"></a>安裝工具
 

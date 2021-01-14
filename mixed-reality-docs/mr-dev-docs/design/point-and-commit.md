@@ -1,18 +1,18 @@
 ---
 title: 手部指向和行動
-description: 指向和行動輸入模型的概觀
+description: 了解混合實境應用程式中手勢支援的指向和行動輸入模型基本概念。
 author: caseymeekhof
 ms.author: cmeekhof
 ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 互動, 設計, HoloLens, 手部, 遠方, 指向和行動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, 手部射線, 物件操作, MRTK, 混合實境工具組, DoF
-ms.openlocfilehash: 13b692dada134f856ac6eed446cca45702030f67
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 4ee1fabac763a22006b956e46a908ff4d11e395f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848296"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009738"
 ---
 # <a name="point-and-commit-with-hands"></a>手部指向和行動
 
