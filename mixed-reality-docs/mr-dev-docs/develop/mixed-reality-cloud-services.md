@@ -1,19 +1,19 @@
 ---
 layout: LandingPage
 title: Azure 混合實境雲端服務概觀
-description: 混合實境雲端服務資源。
+description: 了解您可整合到 Unity 或 Unreal 應用程式中的所有 Azure 混合實境雲端服務。
 author: hferrone
 ms.author: v-haferr
 ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: e660556810cdea86321b7826217268e6c8d0850a
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
+ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865403"
+ms.lasthandoff: 01/08/2021
+ms.locfileid: "98009568"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
