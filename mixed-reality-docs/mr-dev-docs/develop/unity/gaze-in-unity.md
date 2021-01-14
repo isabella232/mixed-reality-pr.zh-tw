@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 眼睛、中眼、unity、全息全像、混合式現實、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 5dab8cb38aaa4b9a4547f4bf494afb093b6d8058
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7efc77eff90a164fdc0476a90912a0f52c9bb33d
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009888"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192636"
 ---
 # <a name="head-gaze-in-unity"></a>Unity 中的頭部
 
@@ -59,7 +59,7 @@ void Update()
 如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
-> [手勢和運動控制器](gestures-and-motion-controllers-in-unity.md)
+> [運動控制器](motion-controllers-in-unity.md)
 
 或者，直接跳到混合實境平台功能和 API 的主題：
 

@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR、相容性、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、串流、移動控制器、haptics
-ms.openlocfilehash: 94b6aad63156d752858c6566174ff01e6127d75d
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612902"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192626"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>更新 Windows Mixed Reality 的 SteamVR 應用程式
 
@@ -26,7 +26,7 @@ ms.locfileid: "97612902"
 1. 如果您的應用程式呈現控制器模型：
     * 使用 [Windows Mixed Reality 運動控制器模型](../../design/motion-controllers.md#rendering-the-motion-controller-model)
     * 使用 IVRRenderModel：： GetComponentState 取得元件部分的本機轉換 (例如，指標姿勢) 
-2. 具有 handedness 概念的體驗應從輸入 Api 取得提示，以區分控制器 [ (Unity 範例) ](../unity/gestures-and-motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
+2. 具有 handedness 概念的體驗應從輸入 Api 取得提示，以區分控制器 [ (Unity 範例) ](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table)
 
 ## <a name="controls"></a>控制項
 

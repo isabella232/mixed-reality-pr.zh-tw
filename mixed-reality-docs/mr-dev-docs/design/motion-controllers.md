@@ -5,13 +5,13 @@ author: wguyman
 ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 6dof 控制器、移動控制器、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、滾動、抓住、州
-ms.openlocfilehash: 2dbe0ab0b83b371a88e419e7b223f30670bfeaea
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: 6dof 控制器、移動控制器、配對、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、滾動、抓住、州
+ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009708"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192616"
 ---
 # <a name="motion-controllers"></a>運動控制器
 
@@ -239,7 +239,7 @@ Windows Mixed Reality 支援不同外型規格中的運動控制器，每個控�
 
 我們建議您在控制器的把手 **姿勢** 上轉譯所有呈現模型，因為模型的來源會與實體世界中的這個點對齊。 如果您正在轉譯控制器模型，您可能會想要從 **指標姿勢** raycast 至場景，代表使用者自然預期會指向的光線，並假設該控制器的實體設計。
 
-如需如何在 Unity 中以動態方式載入控制器模型的詳細資訊，請參閱在 [unity 中轉譯移動控制器模型](../develop/unity/gestures-and-motion-controllers-in-unity.md#rendering-the-motion-controller-model-in-unity) 一節。
+如需如何在 Unity 中以動態方式載入控制器模型的詳細資訊，請參閱在 [unity 中轉譯移動控制器模型](../develop/unity/gestures-in-unity.md#rendering-the-motion-controller-model-in-unity) 一節。
 
 **2d 控制器線條藝術** 雖然我們建議您將應用程式內控制器的秘訣和命令附加至 app 內控制器模型本身，但某些開發人員可能會想要在一般的「教學課程」或「操作說明」 UI 中使用動態控制器的2D 線條藝術標記法。 針對這些開發人員，我們製作了 .png 動畫控制器的線狀圖檔案，在下面的黑色和白色 (按一下滑鼠右鍵儲存) 。
 
@@ -275,9 +275,9 @@ Windows Mixed Reality 支援不同外型規格中的運動控制器，每個控�
 
 使用「混合現實-> 輸入」類別，在意見反應中樞中[提供意見反應給我們](../give-us-feedback.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [Unity 中的筆勢和運動控制器](../develop/unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity 中的動作控制器](../develop/unity/motion-controllers-in-unity.md)
 * [DirectX 中的手部和運動控制器](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [軌跡](gaze-and-commit.md#composite-gestures)
 * [愛好者指南：您的 Windows Mixed Reality 首頁](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)

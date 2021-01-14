@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 應用程式品質準則、混合現實、混合現實應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 788a2e8ac1a364f8c33e3895992fd99fa220a26a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
+ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530286"
+ms.lasthandoff: 01/14/2021
+ms.locfileid: "98192676"
 ---
 # <a name="app-quality-criteria"></a>應用程式品質準則
 
@@ -545,7 +545,8 @@ ms.locfileid: "97530286"
 * [Unity 的輸入移植指南](../porting-apps/input-porting-guide-for-unity.md)
 * [Unity 中的鍵盤輸入](../unity/keyboard-input-in-unity.md)
 * [Unity 中的目光](../unity/gaze-in-unity.md)
-* [Unity 中的筆勢和運動控制器](../unity/gestures-and-motion-controllers-in-unity.md)
+* [Unity 中的動作控制器](../unity/motion-controllers-in-unity.md)
+* [Unity 中的手勢](../unity/gestures-in-unity.md)
 * [Unity 中的語音輸入](../unity/voice-input-in-unity.md)
 * [DirectX 中的鍵盤、滑鼠及控制器輸入](../../keyboard,-mouse,-and-controller-input-in-directx.md)
 * [DirectX 中的頭部和眼睛目光](../native/gaze-in-directx.md)
