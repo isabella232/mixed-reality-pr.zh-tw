@@ -3,22 +3,24 @@ title: HoloLens 模擬器封存
 description: 針對 Microsoft HoloLens (第一代) 和 HoloLens 2 模擬器的已發行組建清單，隨時保持最新狀態。
 author: hamalawi
 ms.author: moelhama
-ms.date: 12/08/2020
+ms.date: 01/13/2021
 ms.topic: article
 keywords: HoloLens、模擬器、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
-ms.openlocfilehash: 3f2fff072e5685e3c5c47d2e50e6c4a4588e9da4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 754fef2b22df50a8bbf7a88572f8292ed2087e62
+ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009508"
+ms.lasthandoff: 01/13/2021
+ms.locfileid: "98166763"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 模擬器保存
 
 HoloLens 模擬器 (第一代) 和 HoloLens 2 模擬器組建並存安裝。 我們建議使用最新的可用組建，但在某些情況下，您可能會想要針對舊的模擬器測試應用程式。 此頁面包含所有發行版本的連結。
 
-|  組建 |  發行日期 |  附註 |
+|  組建 |  發行日期 |  備註 |
 |----------|----------|----------|
+|  [HoloLens 2 模擬器組建10.0.19041.1134](https://go.microsoft.com/fwlink/?linkid=2152389) | 2021年1月13日 | Windows 全像版本 20H2 2021 年1月更新。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 模擬器組建10.0.18362.1091](https://go.microsoft.com/fwlink/?linkid=2152388) | 2021年1月13日 | Windows 全像1903年 1 2021 月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.19041.1131](https://go.microsoft.com/fwlink/?linkid=2151523) | 2020 年 12 月 8 日 | Windows 全像2020年12月更新版20H2。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.18362.1088](https://go.microsoft.com/fwlink/?linkid=2151522) | 2020 年 12 月 8 日 | Windows 全像 1903 2020 年12月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.18362.1081](https://go.microsoft.com/fwlink/?linkid=2148612) | 2020 年 11 月 10 日 | Windows 全像1903年 11 2020 月更新版。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
@@ -48,7 +50,7 @@ HoloLens 模擬器 (第一代) 和 HoloLens 2 模擬器組建並存安裝。 我
 
 ## <a name="hololens-emulator-first-gen-archive"></a>HoloLens 模擬器 (第一代) 封存
 
-|  組建 |  發行日期 |  附註 |
+|  組建 |  發行日期 |  備註 |
 |----------|----------|----------|
 |  [HoloLens 模擬器組建10.0.17763.134](https://go.microsoft.com/fwlink/?linkid=2065980) | 2018 年 11 月 19 日 | 最新的 HoloLens (第一代) 組建。 Windows 10 2018 年 10 月更新。 |
 |  [HoloLens 模擬器組建10.0.17134.80](https://go.microsoft.com/fwlink/?linkid=874531) | 2018 年 5 月 21 日 |
