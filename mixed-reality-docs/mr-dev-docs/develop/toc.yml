@@ -20,25 +20,17 @@
       href: porting-apps/building-2d-apps.md
 - name: Unity
   items:
-    - name: Unity 開發概觀
+    - name: 適用於 HoloLens 的 Unity 開發
       href: unity/unity-development-overview.md
-    - name: 專案組態
-      items:
-        - name: MRTK 簡介
-          href: unity/mrtk-getting-started.md
-        - name: 在沒有 MRTK 的情況下設定專案
-          href: unity/configure-unity-project.md
-        - name: 使用 Mixed Reality OpenXR 外掛程式
-          href: unity/openxr-getting-started.md
-        - name: OpenXR 外掛程式支援的功能
-          href: unity/openxr-supported-features.md
+    - name: 適用於 VR 的 Unity 開發
+      href: unity/unity-development-wmr-overview.md
     - name: 教學課程
       items:
         - name: 總覽
           href: unity/tutorials.md
         - name: HoloLens 2 教學課程
           items:
-            - name: MRTK 教學課程
+            - name: 初級 MRTK 教學課程
               items:
                 - name: 1. 簡介
                   href: unity/tutorials/mr-learning-base-01.md
@@ -172,51 +164,63 @@
               href: unity/tutorials/mr-azure-312.md
             - name: MR 和 Azure 313 - IoT 中樞服務
               href: unity/tutorials/mr-azure-301.md
-    - name: 核心基本要素
+    - name: 設定您的專案
+      items:
+        - name: MRTK 簡介
+          href: unity/mrtk-getting-started.md
+        - name: 在沒有 MRTK 的情況下設定專案
+          href: unity/configure-unity-project.md
+        - name: 使用 Mixed Reality OpenXR 外掛程式
+          href: unity/openxr-getting-started.md
+        - name: OpenXR 外掛程式支援的功能
+          href: unity/openxr-supported-features.md
+    - name: 基本建置組塊
       items:
         - name: MRTK 101 - 使用混合現實工具組 Unity 建立核心互動
           href: unity/mrtk-101.md
-        - name: Unity 中的相機
+        - name: 相機
           href: unity/camera-in-unity.md
-        - name: Unity 中的座標系統
+        - name: 座標系統
           href: unity/coordinate-systems-in-unity.md
-        - name: Unity 中的持續性
+        - name: 持續性
           href: unity/persistence-in-unity.md
-        - name: Unity 中的目光
+        - name: 頭部注視
           href: unity/gaze-in-unity.md
-        - name: Unity 中的文字
+        - name: Text
           href: unity/text-in-unity.md
-        - name: Unity 中的筆勢和運動控制器
-          href: unity/gestures-and-motion-controllers-in-unity.md
-        - name: Unity 中的手部和眼睛追蹤
+        - name: 運動控制器
+          href: unity/motion-controllers-in-unity.md
+        - name: 軌跡
+          href: unity/gestures-in-unity.md
+        - name: 手部和眼睛追蹤
           href: unity/hand-eye-in-unit.md
-        - name: Unity 中的語音輸入
+        - name: 語音輸入
           href: unity/voice-input-in-unity.md
-        - name: Unity 中的空間對應
+        - name: 空間對應
           href: unity/spatial-mapping-in-unity.md
-        - name: Unity 中的空間音效
+        - name: 空間音效
           href: unity/spatial-sound-in-unity.md
-    - name: 平台功能和 API
+    - name: 進階功能
       items:
-        - name: Unity 中的共用體驗
+        - name: 共用體驗
           href: unity/shared-experiences-in-unity.md
-        - name: Unity 中的定位相機
+        - name: 定位相機
           href: unity/locatable-camera-in-unity.md
-        - name: Unity 中的焦點
+        - name: 對焦點
           href: unity/focus-point-in-unity.md
-        - name: Unity 中的追蹤遺失
+        - name: 追蹤遺失
           href: unity/tracking-loss-in-unity.md
-        - name: Unity 中的鍵盤輸入
+        - name: 鍵盤輸入
           href: unity/keyboard-input-in-unity.md
         - name: 搭配使用 HoloLens 的 Windows 命名空間和 Unity 應用程式
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: Unity 中的混合實境原生物件
+        - name: 混合實境原生物件
           href: unity/unity-xrdevice-advanced.md
-        - name: 使用 Unity 的 Vuforia
+        - name: 使用 Vuforia
           href: unity/vuforia-development-overview.md
     - name: 沉浸式 VR
       items:
-        - name: Unity 中的 HP Reverb G2 控制器
+        - name: HP Reverb G2 控制器
           href: unity/unity-reverb-g2-controllers.md
     - name: 範例應用程式
       items:
@@ -236,7 +240,7 @@
               href: unity/galaxy-explorer.md
             - name: 月球模組
               href: unity/lunar-module.md
-    - name: 設定與偵錯
+    - name: 偵錯和效能
       items:
         - name: 使用 Unity IL2CPP 進行管理偵錯
           href: unity/managed-debugging-with-unity-il2cpp.md
@@ -272,35 +276,35 @@
               href: unreal/tutorials/unreal-uxt-ch5.md
             - name: 封裝和部署
               href: unreal/tutorials/unreal-uxt-ch6.md
-    - name: 核心基本要素
+    - name: 基本建置組塊
       items:
-        - name: Unreal 中的注視輸入
+        - name: 注視輸入
           href: unreal/unreal-gaze-input.md
-        - name: Unreal 中的手勢追蹤
+        - name: 手勢追蹤
           href: unreal/unreal-hand-tracking.md
-        - name: Unreal 中的空間對應
+        - name: 空間對應
           href: unreal/unreal-spatial-mapping.md
-        - name: Unreal 中的空間音訊
+        - name: 空間音訊
           href: unreal/unreal-spatial-audio.md
-        - name: Unreal 中的本機空間錨點
+        - name: 本機空間錨點
           href: unreal/unreal-spatial-anchors.md
-        - name: Unreal 中的 Azure Spatial Anchors
+        - name: Azure
           href: unreal/unreal-azure-spatial-anchors.md
-        - name: Unreal 中的語音輸入
+        - name: 語音輸入
           href: unreal/unreal-voice-input.md
-    - name: 平台功能和 API
+    - name: 進階功能
       items:
-        - name: Unreal 中的 HoloLens 相片/影片相機
+        - name: HoloLens 相片/影片相機
           href: unreal/unreal-hololens-camera.md
-        - name: Unreal 中的 QR 代碼
+        - name: QR 代碼
           href: unreal/unreal-qr-codes.md
-        - name: Unreal 中的 UMG 和鍵盤
+        - name: UMG 與鍵盤
           href: unreal/unreal-umg-keyboard.md
-        - name: Unreal 中的 WinRT
+        - name: WinRT
           href: unreal/unreal-winrt.md
     - name: 沉浸式 VR
       items:
-        - name: Unreal 中的 HP Reverb G2 控制器
+        - name: HP Reverb G2 控制器
           href: unreal/unreal-reverb-g2-controllers.md
     - name: 範例應用程式
       items:
@@ -308,17 +312,17 @@
           href: unreal/unreal-kippys-escape.md
     - name: 部署與效能
       items:
-        - name: 在 Unreal 中部署至裝置
+        - name: 部署到裝置
           href: unreal/unreal-deploying.md
         - name: 發佈至 Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: Unreal 的效能建議
+        - name: 效能建議
           href: unreal/performance-recommendations-for-unreal.md
-        - name: Unreal 中的材質建議
+        - name: 材質建議
           href: unreal/unreal-materials.md
         - name: 使用 Unreal Insights 進行剖析
           href: unreal/unreal-insights.md
-        - name: Unreal 中的串流
+        - name: 串流
           href: unreal/unreal-streaming.md
 - name: Web
   items:
