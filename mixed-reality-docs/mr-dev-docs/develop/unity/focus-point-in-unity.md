@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: bd662a079f23ed590708d961e924859675a44917
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009338"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226397"
 ---
 # <a name="focus-point-in-unity"></a>Unity 中的焦點
 
@@ -63,7 +63,7 @@ void Update()
 > [!div class="nextstepaction"]
 > [部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機](../platform-capabilities-and-apis/using-visual-studio.md)
 
-您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis)。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-advanced-features)。
 
 ### <a name="see-also"></a>另請參閱
 

@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 相片、影片、hololens、攝影機、unity、定位、PVC、相片攝影機、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、網路攝影機、相片拍攝、影片捕獲
-ms.openlocfilehash: 125521206421acbcc4c9ad6e5fb371314ddb48f2
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010099"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226417"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity 中的定位相機
 
@@ -309,7 +309,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 您可以從這裡繼續前往下一個主題：
+如果您要遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實平臺功能和 Api。 接下來，您可以繼續進行下一個主題：
 
 > [!div class="nextstepaction"]
 > [對焦點](focus-point-in-unity.md)
@@ -319,7 +319,7 @@ void OnStoppedRecordingVideo(VideoCapture.VideoCaptureResult result)
 > [!div class="nextstepaction"]
 > [部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機](../platform-capabilities-and-apis/using-visual-studio.md)
 
-您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis)。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-advanced-features)。
 
 ## <a name="see-also"></a>另請參閱
 * [定位相機](../platform-capab ilities-and-apis/locatable-camera.md)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、Azure、Azure 空間錨點、ASA、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: a82439d5676bf4bcb7898a33aafc29b43e91a49f
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4d24f3690f4d4b1fc206dbd2b5e0aa5afad6c34c
+ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031954"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98226337"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity 中的共用體驗
 
@@ -43,7 +43,7 @@ ms.locfileid: "98031954"
 > [!div class="nextstepaction"]
 > [部署到 HoloLens 或 Windows Mixed Reality 沉浸式耳機](../platform-capabilities-and-apis/using-visual-studio.md)
 
-您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-platform-capabilities-and-apis)。
+您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#3-advanced-features)。
 
 ## <a name="see-also"></a>另請參閱
 * [混合實境中的共用體驗](../platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
