@@ -1,19 +1,19 @@
 ---
-title: 適用於開發人員的混合實境擷取
+title: 適用于開發人員的混合現實 capture
 description: 瞭解為開發人員啟用、使用和轉譯混合現實 capture 的最佳作法。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: 40d621133d8aa4c7a58488b80a04ca3b4b46638d
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108861"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247721"
 ---
-# <a name="mixed-reality-capture-for-developers"></a>適用於開發人員的混合實境擷取
+# <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
 
 > [!NOTE]
 > 請參閱下面 [的 PV 攝影機](#render-from-the-pv-camera-opt-in) 轉譯，以取得 HoloLens 2 新的 MRC 功能的指引。
@@ -214,14 +214,14 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 應用程式有兩個選項可新增效果：
 * 舊版 API： [MediaCapture. AddEffectAsync ( # B1 ](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* 新的 Microsoft 建議 API (會傳回物件，讓您可以操控動態屬性) ： [MediaCapture. AddVideoEffectAsync ( # B3](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync ( # B5](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) ，這需要應用程式建立自己的[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 請參閱 MRC [效果範例，例如使用方式。
+* 新的 Microsoft 建議 API (會傳回物件，讓您可以操控動態屬性) ： [MediaCapture. AddVideoEffectAsync ( # B3](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync ( # B5](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) ，這需要應用程式建立自己的[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
 
 >[!NOTE]
 > Visual Studio 不會辨識 MixedRealityCapture 命名空間，但字串仍然有效。
 
 **MixedRealityCapture. MixedRealityCaptureVideoEffect**) 的 MRC 影片效果 (
 
-|  屬性名稱  |  類型  |  預設值  |  描述 |
+|  屬性名稱  |  類型  |  預設值  |  說明 |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))   |  1 (VideoRecord)   |  描述此效果用於哪個捕獲資料流程。 無法使用音訊。 |
 |  HologramCompositionEnabled  |  boolean  |  true  |  用來啟用或停用影片捕獲中全像影像的旗標。 |
@@ -241,7 +241,7 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 **MixedRealityCapture. MixedRealityCaptureAudioEffect) 的** MRC 音訊效果 (
 
-| 屬性名稱 | 類型 | 預設值 | 描述 |
+| 屬性名稱 | 類型 | 預設值 | 說明 |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (Mic 和系統音訊)  | 用來指出應使用哪些音訊來源的列舉： 0 (僅限 Mic 音訊) 、1 (僅限系統音訊) 、2 (Mic 和系統音訊)  |
 | LoopbackGain | FLOAT | Windows 裝置入口網站中的 **應用程式音訊增益** 設定 | 適用于系統音訊音量的增益。 範圍從0.0 到5.0。 僅 HoloLens 2 支援 |
