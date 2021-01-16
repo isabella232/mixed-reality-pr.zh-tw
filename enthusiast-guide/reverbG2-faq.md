@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 00338e1354dc04acc76fa2525c721a5e2bd4afe2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
+ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009468"
+ms.lasthandoff: 01/15/2021
+ms.locfileid: "98242531"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -92,3 +92,13 @@ HP 建議：
 
 您可以從這裡將作用中控制器系結變更為「自訂」，這會開啟用來嘗試共用遊戲系結的選項。
 如果 (尚未在此遊戲中共用任何自訂遊戲系結，或您未完全滿意所嘗試的) ，您也可以建立自己的自訂遊戲系結，甚至在幾個遊戲會話之後共用這些系結來協助其他人。
+
+## <a name="i-have-all-cables-connected-to-the-headset-and-pc-but-it-wont-turn-on"></a>我已將所有纜線連接到耳機和 PC，但它不會開啟
+
+確認連接到耳機的纜線已完全固定。 纜線頂端有一個很小的點，可在耳機的上邊緣旁對齊，並在它已完全插入時顯示：
+
+![纜線頂端的小點](images/small-dot.jpg)
+
+## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>如何在仍在使用電腦的同時，關閉耳機電源
+
+從耳機纜線上的連結方塊中拔下 AC 連接介面卡，以移除耳機的電源。
