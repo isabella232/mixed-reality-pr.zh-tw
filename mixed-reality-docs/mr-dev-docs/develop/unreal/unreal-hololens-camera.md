@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 相機, PV 相機, MRC, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 15eba0c992d6d3d8895314f1a6128ace18c02483
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6f1301e0daeb44521dfb4e93a915d49d9aea8443
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010058"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247761"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal 中的 HoloLens 相片/影片相機
 
@@ -35,7 +35,7 @@ HoloLens 的面板上有相片/影片 (PV) 相機，不僅可用於混合實境�
 > [!div class="nextstepaction"]
 > [部署至裝置](unreal-deploying.md)
 
-您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#3-platform-capabilities-and-apis)。
+您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#3-advanced-features)。
 
 ## <a name="see-also"></a>另請參閱
 

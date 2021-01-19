@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, qr 代碼, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 1daa368ee9f98accec58c6621073bd7caefdfdcb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010008"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247741"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal 中的 QR 代碼
 
@@ -85,7 +85,7 @@ QR 代碼在幕後還有很多工作要做，因此您的體驗尚未結束。 �
 > [!div class="nextstepaction"]
 > [部署至裝置](unreal-deploying.md)
 
-您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#3-platform-capabilities-and-apis)。
+您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#3-advanced-features)。
 
 ## <a name="see-also"></a>另請參閱
 * [空間對應](../../design/spatial-mapping.md)
