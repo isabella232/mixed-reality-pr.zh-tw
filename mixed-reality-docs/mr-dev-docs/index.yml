@@ -13,12 +13,12 @@ metadata:
   author: hferrone
   ms.author: v-haferr
   ms.date: 07/23/2020
-  ms.openlocfilehash: 0ef4c230bb58d9be3c0d61822754c313ab8dab16
-  ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+  ms.openlocfilehash: a4a869ca70c630956427130b01928c3154164f46
+  ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
   ms.translationtype: HT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/08/2021
-  ms.locfileid: "98007552"
+  ms.lasthandoff: 01/20/2021
+  ms.locfileid: "98582866"
 highlightedContent:
   items:
   - title: 什麼是混合實境？
@@ -26,10 +26,10 @@ highlightedContent:
     url: discover/mixed-reality.md
   - title: HoloLens 2 簡介
     itemType: overview
-    url: https://docs.microsoft.com/hololens/hololens2-hardware
+    url: /hololens/hololens2-hardware
   - title: Dynamics 365 Mixed Reality 應用程式
     itemType: reference
-    url: https://docs.microsoft.com/dynamics365/mixed-reality/
+    url: /dynamics365/mixed-reality/
   - title: Azure 混合實境雲端服務
     itemType: whats-new
     url: develop/mixed-reality-cloud-services.md
@@ -38,13 +38,13 @@ highlightedContent:
     url: develop/development.md
   - title: IT 系統管理員
     itemType: quickstart
-    url: https://docs.microsoft.com/hololens/hololens-requirements
+    url: /hololens/hololens-requirements
   - title: VR 愛好者
     itemType: how-to-guide
-    url: https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey
+    url: /windows/mixed-reality/enthusiast-guide/vr-journey
   - title: 混合實境學習模組
     itemType: learn
-    url: develop/mr-learning-overview.md
+    url: ./discover/mr-learning-overview.md
 productDirectory:
   title: 深入了解混合實境
   summary: 無論您是設計師、開發人員、IT 專業人員，我們都有正確的策劃路徑，可讓您循序漸進。
@@ -82,17 +82,17 @@ productDirectory:
   - title: 部署
     imageSrc: images/icon-distribution.jpg
     links:
-    - url: https://docs.microsoft.com/hololens/hololens-requirements
+    - url: /hololens/hololens-requirements
       text: 準備進行商業部署
-    - url: https://docs.microsoft.com/hololens/hololens-identity
+    - url: /hololens/hololens-identity
       text: 管理使用者身分識別和登入
-    - url: https://docs.microsoft.com/hololens/hololens-enroll-mdm
+    - url: /hololens/hololens-enroll-mdm
       text: 註冊您的裝置
-    - url: https://docs.microsoft.com/hololens/hololens-updates
+    - url: /hololens/hololens-updates
       text: 管理您的 HoloLens 更新
-    - url: https://docs.microsoft.com/hololens/hololens2-cloud-connected-overview
+    - url: /hololens/hololens2-cloud-connected-overview
       text: 使用 Remote Assist 進行雲端連線部署
-    - url: https://docs.microsoft.com/hololens/hololens-troubleshooting
+    - url: /hololens/hololens-troubleshooting
       text: 疑難排解與支援
 conceptualContent:
   title: 架構

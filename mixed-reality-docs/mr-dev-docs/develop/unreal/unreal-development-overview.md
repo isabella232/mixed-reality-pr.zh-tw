@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, OpenXR
-ms.openlocfilehash: 3d9a33ca98734d40a37e24805f28f7f70b6a4ba9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
+ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
 ms.translationtype: HT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009758"
+ms.lasthandoff: 01/16/2021
+ms.locfileid: "98247731"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -54,7 +54,7 @@ ms.locfileid: "98009758"
 > [!NOTE]
 > 您可以深入探索 **[適用於 Unreal 的 UX 工具 GitHub](https://github.com/microsoft/MixedReality-UXTools-Unreal)** 存放庫，以取得更多詳細資料。
 
-### <a name="3-platform-capabilities-and-apis"></a>3.平台功能和 API
+### <a name="3-advanced-features"></a>3.進階功能
 
 在混合實境應用程式中各有作用的其他重要功能，不需要任何額外的封裝或設定即可使用。 這些功能可以新增至 Unreal 專案，且不一定需要先安裝 MRTK。 深入了解這些進階功能後，您將能夠建置更複雜的混合實境應用程式。
 
