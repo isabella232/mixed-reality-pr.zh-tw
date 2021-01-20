@@ -1,63 +1,66 @@
 ---
-title: 空間化按鈕互動音效
-description: 瞭解如何在混合現實應用程式中新增按鈕，以及 spatialize 按鈕互動音效。
+title: 空間音訊教學課程-2。 空間化按鈕互動音效
+description: 將按鈕加入至您的專案，並 spatialize 按鈕互動音效。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、head 相關的傳送函式、回音、Microsoft 空間定位器、prefabs、音量曲線
-ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007358"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578479"
 ---
-# <a name="spatializing-button-interaction-sounds"></a>空間化按鈕互動音效
+# <a name="2-spatializing-button-interaction-sounds"></a>2.空間化按鈕互動音效
+
+## <a name="overview"></a>概觀
+
+在本教學課程中，您將學習如何 spatialize 按鈕互動音效，以及瞭解如何使用音訊剪輯來測試 hrtf 按鈕互動。  
 
 ## <a name="objectives"></a>目標
 
-在 HoloLens 2 教學課程的空間音訊模組的第二章中，您將會：
-* 新增按鈕
-* Spatialize 按鈕的 click 聲
+* 新增並 Spatialize 按鈕的 click 聲
 
 ## <a name="add-a-button"></a>新增按鈕
 
-在 [ **專案** ] 窗格中，選取 [ **資產** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"：
+若要新增按鈕預製專案，請在 [ **專案** ] 視窗中選取 [ **資產** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"。
 
-![資產中的按鈕預製專案](images/spatial-audio/button-prefab-in-assets.png)
+![資產中的按鈕預製專案](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 
-按鈕預製專案是以藍色圖示（而非白色圖示）表示的專案。 將名為 **PressableButtonHoloLens2** 的預製專案拖曳到 [ **階層] 窗格** 中。 在新按鈕的 [偵測 **器** ] 窗格中，將 [ **位置** ] 屬性設定為 (0、-0.4、2) ，以便在應用程式啟動時出現在使用者前面。 按鈕的 **轉換** 元件看起來會像這樣：
+按鈕預製專案是以藍色圖示表示的專案。 按一下 [ **PressableButtonHoloLens2** ] 預製專案，並將其拖曳到階層中。 在仍選取 **PressableButtonHoloLens2** 物件的情況下，在 [偵測器] 視窗中設定 **轉換** 元件，如下所示：
 
-![按鈕轉換](images/spatial-audio/button-transform.png)
+* **Position**： X = 0，Y =-0.4，Z = 2
+* **旋轉**：X = 0、Y = 0、Z = 0
+* **縮放**：X = 1、Y = 1、Z = 1
+
+![按鈕轉換](images/spatial-audio/spatial-audio-02-section1-step1-2.png)
+
+若要將焦點放在場景中的物件上，您可以按兩下 **PressableButtonHoloLens2** 物件，然後再稍微放大：
 
 ## <a name="spatialize-button-feedback"></a>Spatialize 按鈕意見反應
 
-在此步驟中，您將 spatialize 按鈕的音訊意見反應。 如需相關的設計建議，請參閱 [空間音效設計](../../../design/spatial-sound-design.md)。 
+在此步驟中，您將 spatialize 按鈕的音訊意見反應。 如需相關的設計建議，請參閱 [空間音效設計](../../../design/spatial-sound-design.md)。
 
-您可以在 [**音訊混音** 器] 窗格中，為音訊 **來源** 元件定義音訊播放的目的地，稱為 **混音器群組**。 
-* 使用 **視窗-> 音訊 > 音訊混音** 器，從功能表列開啟 [**音訊混音** 器] 窗格
-* 按一下 [ **Mixers**] 旁邊的 [+]，以建立 **混音** 器。 新的混音器將包含稱為 **Master** 的預設 **群組**。
+在 [**音訊混音** 器] 視窗中，您將為音訊 **來源** 元件的音訊播放定義稱為 **混音器群組** 的目的地。
 
-您的 **混音** 器窗格現在看起來像這樣：
+若要開啟 [**音訊混音** 器] 視窗，請在 Unity 功能表中，選取 [**視窗**  >  **音訊**  >  **音訊混音** 器： ![ 開啟音訊混音器] 視窗](images/spatial-audio/spatial-audio-02-section2-step1-1.png)
 
-![具有第一個混音器的混音器面板](images/spatial-audio/mixer-panel-with-first-mixer.png)
+ 按一下 [ **Mixers** ] 旁邊的 [+]，並輸入適當的混音名稱（例如 _空間音訊混音_ 器）來建立 **混音** 器。 新的混音器將包含稱為 **Master** 的預設 **群組**。
 
-> [!NOTE]
-> 在 [第5章](unity-spatial-audio-ch5.md)啟用 [回條] 之前，混音器的音量計量不會顯示透過 Microsoft 空間定位器播放之音效的活動
-
-按一下 [**階層] 窗格中的 [** **PressableButtonHoloLens2** ]。 在 [偵測 **器** ] 窗格中：
-1. 尋找 **音訊來源** 元件
-2. 針對 [ **輸出** ] 屬性，按一下選取器並選擇混音器
-3. 核取 [ **Spatialize** ] 核取方塊
-4. 將 **空間 Blend** 滑杆移至 3d (1) 。
+![具有第一個混音器的混音器面板](images/spatial-audio/spatial-audio-02-section2-step1-2.png)
 
 > [!NOTE]
-> 在2019之前的 Unity 版本中，[Spatialize] 核取方塊位於 **音訊來源** 的 [偵測 **器**] 窗格底部。
+> 在第5章啟用回條之後 [：使用回音將距離新增至空間音訊](unity-spatial-audio-ch5.md)，混音器的音量計量不會顯示透過 Microsoft 空間定位器播放之音效的活動
 
-這些變更之後， **PressableButtonHoloLens2** 的 **音訊來源** 元件看起來會像這樣：
+在 [階層] 視窗中，選取 **PressableButtonHoloLens2** ，然後在 [偵測器] 視窗中尋找 **音訊來源** 元件，並設定音訊來源元件，如下所示：
 
-![按鈕音訊來源](images/spatial-audio/button-audio-source.png)
+1. 針對 [ **輸出** ] 屬性，按一下選取器，然後選擇您建立的 **混音** 器。
+2. 核取 [ **Spatialize** ] 核取方塊。
+3. 將 **空間 Blend** 滑杆移至 3d (1) 。
+
+![按鈕音訊來源](images/spatial-audio/spatial-audio-02-section2-step1-3.png)
 
 > [!NOTE]
 > 如果您在未核取 [ **Spatialize** ] 核取方塊的情況下，將 **空間 Blend** 移至 1 (3d) ，Unity 將會使用其移動流覽空間定位器，而不是使用 hrtf 的 **Microsoft 空間定位器**。
@@ -66,30 +69,33 @@ ms.locfileid: "98007358"
 
 根據預設，Unity 會在從接聽程式更遠的情況下 attenuate hrtf 音效。 當此衰減套用至互動回饋音效時，介面可能會變得更難使用。
 
-若要停用此衰減，請調整 **音量** 曲線。 在 **PressableButtonHoloLens2** 的 [偵測 **器**] 窗格的 [**音訊來源**] 元件中，有一個稱為 **3d 音效設定** 的區段。 在該區段中：
-1. 將 **Volume Rolloff** 屬性設定為線性
+若要停用此衰減，您需要調整 **音訊來源** 元件中的 **音量** 曲線。
+
+在 [階層] 視窗中，選取 [ **PressableButtonHoloLens2** ]，然後在 [偵測器] 視窗中流覽至 [**音訊來源**  >  **3d 音效] 設定**，並設定如下：
+
+1. 將 **Volume Rolloff** 屬性設定為線性 Rolloff
 2. 拖曳 **音量** 曲線上的端點 (紅色曲線) 從 y 軸上的 ' 0 ' 到 ' 1 '
 3. 若要將 **音量** 曲線的形狀調整為平面，請將白色曲線圖形控制項平行地拖曳至 X 軸
 
-這些變更之後， **PressableButtonHoloLens2** **音訊來源** 屬性的 [ **3d 音效設定**] 區段看起來會像這樣：
-
-![按鈕3D 音效設定](images/spatial-audio/button-3d-sound-settings.png)
+![按鈕3D 音效設定](images/spatial-audio/spatial-audio-02-section3-step1-1.png)
 
 ## <a name="testing-the-spatialize-audio"></a>測試 spatialize 音訊
 
-您可以隨意測試新的 hrtf 按鈕互動音效：
+若要在 unity 編輯器中測試 spatialize 音訊，您必須在 [**音訊來源** 元件] 中新增音訊剪輯，並在 **PressableButtonHoloLens2** 物件上簽入 **迴圈** 選項。
 
-* 在 Unity 編輯器中輸入遊戲模式，最好是場景中的迴圈音訊範例
-* 從左至右移動物件與音訊來源，並比較是否已啟用空間音訊。 您可以透過下列方式變更要測試的音訊來源設定：
-    * 將空間 Blend 屬性移至 0-1 (2D 非 hrtf 和 3D hrtf 音效) 
-    * 檢查和取消選取 Spatialize 屬性
+在 [播放] 模式中，將 **PressableButtonHoloLens2** 物件從左至右移動到右邊，並與您的工作站上未啟用空間音訊進行比較。 您也可以變更用於測試的音訊來源設定：
 
-## <a name="next-steps"></a>後續步驟
+* 將 **空間 Blend** 屬性移至 0-1 (2d 非 Hrtf 和 3d hrtf 音效) 
+* 檢查和取消選取 **Spatialize** 屬性
 
-在 HoloLens 2 或 Unity 編輯器中試用您的應用程式。 在應用程式中，您可以觸控按鈕，聽聽 hrtf 按鈕的互動音效。
+試用 HoloLens 2 上的應用程式。 在應用程式中，您可以按一下按鈕，聽聽 hrtf 按鈕的互動音效。
 
-在 Unity 編輯器中進行測試時，請按下空格鍵並以滾輪滾動，以啟動手動模擬。 如需詳細資訊，請參閱 [MRTK 檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。
+> [!TIP]
+> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱[對您的 HoloLens 2 建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。
+
+## <a name="congratulations"></a>恭喜！
+
+在本教學課程中，您已學會 spatialize 按鈕互動音效，並使用音訊剪輯來測試 hrtf 按鈕互動。 在下一個教學課程中，您將瞭解如何從影片來源 spatialize 音訊。
 
 > [!div class="nextstepaction"]
-> [第3章](unity-spatial-audio-ch3.md)
-
+> [下一個教學課程： 3. 從影片 Spatializing 音訊](unity-spatial-audio-ch3.md)
