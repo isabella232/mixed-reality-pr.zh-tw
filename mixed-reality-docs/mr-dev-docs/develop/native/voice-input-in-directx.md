@@ -6,36 +6,36 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 逐步解說、語音命令、片語、辨識、語音、directx、平臺、cortana、windows mixed reality
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613102"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583748"
 ---
-# <a name="voice-input-in-directx"></a><span data-ttu-id="26ada-104">DirectX 中的語音輸入</span><span class="sxs-lookup"><span data-stu-id="26ada-104">Voice input in DirectX</span></span>
+# <a name="voice-input-in-directx"></a><span data-ttu-id="029e7-104">DirectX 中的語音輸入</span><span class="sxs-lookup"><span data-stu-id="029e7-104">Voice input in DirectX</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="26ada-105">本文與舊版 WinRT 原生 Api 相關。</span><span class="sxs-lookup"><span data-stu-id="26ada-105">This article relates to the legacy WinRT native APIs.</span></span>  <span data-ttu-id="26ada-106">針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。</span><span class="sxs-lookup"><span data-stu-id="26ada-106">For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.</span></span>
+> <span data-ttu-id="029e7-105">本文與舊版 WinRT 原生 Api 相關。</span><span class="sxs-lookup"><span data-stu-id="029e7-105">This article relates to the legacy WinRT native APIs.</span></span>  <span data-ttu-id="029e7-106">針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。</span><span class="sxs-lookup"><span data-stu-id="029e7-106">For new native app projects, we recommend using the **[OpenXR API](openxr-getting-started.md)**.</span></span>
 
-<span data-ttu-id="26ada-107">本文說明如何在 Windows Mixed Reality 的 DirectX 應用程式中，執行 [語音命令](../../design/voice-input.md) 加上小型片語和句子辨識。</span><span class="sxs-lookup"><span data-stu-id="26ada-107">This article explains how to implement [voice commands](../../design/voice-input.md) plus small-phrase and sentence recognition in a DirectX app for Windows Mixed Reality.</span></span>
+<span data-ttu-id="029e7-107">本文說明如何在 Windows Mixed Reality 的 DirectX 應用程式中，執行 [語音命令](../../design/voice-input.md) 加上小型片語和句子辨識。</span><span class="sxs-lookup"><span data-stu-id="029e7-107">This article explains how to implement [voice commands](../../design/voice-input.md) plus small-phrase and sentence recognition in a DirectX app for Windows Mixed Reality.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="26ada-108">本文中的程式碼片段使用 c + +/CX，而不是 C + + 17 相容的 c + +/WinRT，它會用於 [c + + 全像專案範本](creating-a-holographic-directx-project.md)。</span><span class="sxs-lookup"><span data-stu-id="26ada-108">The code snippets in this article use C++/CX rather than C++17-compliant C++/WinRT, which is used in the [C++ holographic project template](creating-a-holographic-directx-project.md).</span></span>  <span data-ttu-id="26ada-109">這些概念對 c + +/WinRT 專案而言是相等的，但您需要轉譯程式碼。</span><span class="sxs-lookup"><span data-stu-id="26ada-109">The concepts are equivalent for a C++/WinRT project, but you need to translate the code.</span></span>
+><span data-ttu-id="029e7-108">本文中的程式碼片段使用 c + +/CX，而不是 C + + 17 相容的 c + +/WinRT，它會用於 [c + + 全像專案範本](creating-a-holographic-directx-project.md)。</span><span class="sxs-lookup"><span data-stu-id="029e7-108">The code snippets in this article use C++/CX rather than C++17-compliant C++/WinRT, which is used in the [C++ holographic project template](creating-a-holographic-directx-project.md).</span></span>  <span data-ttu-id="029e7-109">這些概念對 c + +/WinRT 專案而言是相等的，但您需要轉譯程式碼。</span><span class="sxs-lookup"><span data-stu-id="029e7-109">The concepts are equivalent for a C++/WinRT project, but you need to translate the code.</span></span>
 
-## <a name="use-speechrecognizer-for-continuous-speech-recognition"></a><span data-ttu-id="26ada-110">使用 SpeechRecognizer 進行連續語音辨識</span><span class="sxs-lookup"><span data-stu-id="26ada-110">Use SpeechRecognizer for continuous speech recognition</span></span>
+## <a name="use-speechrecognizer-for-continuous-speech-recognition"></a><span data-ttu-id="029e7-110">使用 SpeechRecognizer 進行連續語音辨識</span><span class="sxs-lookup"><span data-stu-id="029e7-110">Use SpeechRecognizer for continuous speech recognition</span></span>
 
-<span data-ttu-id="26ada-111">本節說明如何使用連續的語音辨識，在您的應用程式中啟用語音命令。</span><span class="sxs-lookup"><span data-stu-id="26ada-111">This section describes how to use continuous speech recognition to enable voice commands in your app.</span></span> <span data-ttu-id="26ada-112">本逐步解說會使用 [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) 範例中的程式碼。</span><span class="sxs-lookup"><span data-stu-id="26ada-112">This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample.</span></span> <span data-ttu-id="26ada-113">當範例正在執行時，請說出其中一個已註冊的色彩命令名稱，以變更旋轉 cube 的色彩。</span><span class="sxs-lookup"><span data-stu-id="26ada-113">When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.</span></span>
+<span data-ttu-id="029e7-111">本節說明如何使用連續的語音辨識，在您的應用程式中啟用語音命令。</span><span class="sxs-lookup"><span data-stu-id="029e7-111">This section describes how to use continuous speech recognition to enable voice commands in your app.</span></span> <span data-ttu-id="029e7-112">本逐步解說會使用 [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) 範例中的程式碼。</span><span class="sxs-lookup"><span data-stu-id="029e7-112">This walk-through uses code from the [HolographicVoiceInput](https://go.microsoft.com/fwlink/p/?LinkId=844964) sample.</span></span> <span data-ttu-id="029e7-113">當範例正在執行時，請說出其中一個已註冊的色彩命令名稱，以變更旋轉 cube 的色彩。</span><span class="sxs-lookup"><span data-stu-id="029e7-113">When the sample is running, speak the name of one of the registered color commands to change the color of the spinning cube.</span></span>
 
-<span data-ttu-id="26ada-114">首先，建立新的 *Windows：： Media：： SpeechRecognition：： SpeechRecognizer* 實例。</span><span class="sxs-lookup"><span data-stu-id="26ada-114">First, create a new *Windows::Media::SpeechRecognition::SpeechRecognizer* instance.</span></span>
+<span data-ttu-id="029e7-114">首先，建立新的 *Windows：： Media：： SpeechRecognition：： SpeechRecognizer* 實例。</span><span class="sxs-lookup"><span data-stu-id="029e7-114">First, create a new *Windows::Media::SpeechRecognition::SpeechRecognizer* instance.</span></span>
 
-<span data-ttu-id="26ada-115">從 *HolographicVoiceInputSampleMain：： CreateSpeechConstraintsForCurrentState*：</span><span class="sxs-lookup"><span data-stu-id="26ada-115">From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:</span></span>
+<span data-ttu-id="029e7-115">從 *HolographicVoiceInputSampleMain：： CreateSpeechConstraintsForCurrentState*：</span><span class="sxs-lookup"><span data-stu-id="029e7-115">From *HolographicVoiceInputSampleMain::CreateSpeechConstraintsForCurrentState*:</span></span>
 
 ```
 m_speechRecognizer = ref new SpeechRecognizer();
 ```
 
-<span data-ttu-id="26ada-116">建立可供辨識器接聽的語音命令清單。</span><span class="sxs-lookup"><span data-stu-id="26ada-116">Create a list of speech commands for the recognizer to listen for.</span></span> <span data-ttu-id="26ada-117">在這裡，我們會建立一組命令來變更全像影像的色彩。</span><span class="sxs-lookup"><span data-stu-id="26ada-117">Here, we construct a set of commands to change the color of a hologram.</span></span> <span data-ttu-id="26ada-118">為了方便起見，我們也會建立稍後將用於命令的資料。</span><span class="sxs-lookup"><span data-stu-id="26ada-118">For convenience, we also create the data that we'll use for the commands later.</span></span>
+<span data-ttu-id="029e7-116">建立可供辨識器接聽的語音命令清單。</span><span class="sxs-lookup"><span data-stu-id="029e7-116">Create a list of speech commands for the recognizer to listen for.</span></span> <span data-ttu-id="029e7-117">在這裡，我們會建立一組命令來變更全像影像的色彩。</span><span class="sxs-lookup"><span data-stu-id="029e7-117">Here, we construct a set of commands to change the color of a hologram.</span></span> <span data-ttu-id="029e7-118">為了方便起見，我們也會建立稍後將用於命令的資料。</span><span class="sxs-lookup"><span data-stu-id="029e7-118">For convenience, we also create the data that we'll use for the commands later.</span></span>
 
 ```
 m_speechCommandList = ref new Platform::Collections::Vector<String^>();
@@ -60,14 +60,14 @@ m_speechCommandList = ref new Platform::Collections::Vector<String^>();
    m_speechCommandData.push_back(float4(1.f, 0.f, 1.f, 1.f));
 ```
 
-<span data-ttu-id="26ada-119">您可以使用字典中可能不會有的語音字來指定命令。</span><span class="sxs-lookup"><span data-stu-id="26ada-119">You can use phonetic words that might not be in a dictionary to specify commands.</span></span>
+<span data-ttu-id="029e7-119">您可以使用字典中可能不會有的語音字來指定命令。</span><span class="sxs-lookup"><span data-stu-id="029e7-119">You can use phonetic words that might not be in a dictionary to specify commands.</span></span>
 
 ```
 m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-<span data-ttu-id="26ada-120">若要將命令清單載入語音辨識器的條件約束清單中，請使用 [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) 物件。</span><span class="sxs-lookup"><span data-stu-id="26ada-120">To load the commands list into the list of constraints for the speech recognizer, use a [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) object.</span></span>
+<span data-ttu-id="029e7-120">若要將命令清單載入語音辨識器的條件約束清單中，請使用 [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) 物件。</span><span class="sxs-lookup"><span data-stu-id="029e7-120">To load the commands list into the list of constraints for the speech recognizer, use a [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) object.</span></span>
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-<span data-ttu-id="26ada-121">在語音辨識器的[SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)上訂閱[ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx)事件。</span><span class="sxs-lookup"><span data-stu-id="26ada-121">Subscribe to the [ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx) event on the speech recognizer's [SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx).</span></span> <span data-ttu-id="26ada-122">此事件會在已辨識您的其中一個命令時通知您的應用程式。</span><span class="sxs-lookup"><span data-stu-id="26ada-122">This event notifies your app when one of your commands has been recognized.</span></span>
+<span data-ttu-id="029e7-121">在語音辨識器的[SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)上訂閱[ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)事件。</span><span class="sxs-lookup"><span data-stu-id="029e7-121">Subscribe to the [ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession) event on the speech recognizer's [SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession).</span></span> <span data-ttu-id="029e7-122">此事件會在已辨識您的其中一個命令時通知您的應用程式。</span><span class="sxs-lookup"><span data-stu-id="029e7-122">This event notifies your app when one of your commands has been recognized.</span></span>
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,9 +95,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-<span data-ttu-id="26ada-123">*OnResultGenerated* 事件處理常式會接收 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)實例中的事件資料。</span><span class="sxs-lookup"><span data-stu-id="26ada-123">Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx) instance.</span></span> <span data-ttu-id="26ada-124">如果信賴度大於您所定義的閾值，您的應用程式應該會注意到事件發生。</span><span class="sxs-lookup"><span data-stu-id="26ada-124">If the confidence is greater than the threshold you defined, your app should note that the event happened.</span></span> <span data-ttu-id="26ada-125">儲存事件資料，讓您可以在稍後的更新迴圈中使用它。</span><span class="sxs-lookup"><span data-stu-id="26ada-125">Save the event data so that you can use it in a later update loop.</span></span>
+<span data-ttu-id="029e7-123">*OnResultGenerated* 事件處理常式會接收 [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs)實例中的事件資料。</span><span class="sxs-lookup"><span data-stu-id="029e7-123">Your *OnResultGenerated* event handler receives event data in a [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs) instance.</span></span> <span data-ttu-id="029e7-124">如果信賴度大於您所定義的閾值，您的應用程式應該會注意到事件發生。</span><span class="sxs-lookup"><span data-stu-id="029e7-124">If the confidence is greater than the threshold you defined, your app should note that the event happened.</span></span> <span data-ttu-id="029e7-125">儲存事件資料，讓您可以在稍後的更新迴圈中使用它。</span><span class="sxs-lookup"><span data-stu-id="029e7-125">Save the event data so that you can use it in a later update loop.</span></span>
 
-<span data-ttu-id="26ada-126">從 *HolographicVoiceInputSampleMain .cpp*：</span><span class="sxs-lookup"><span data-stu-id="26ada-126">From *HolographicVoiceInputSampleMain.cpp*:</span></span>
+<span data-ttu-id="029e7-126">從 *HolographicVoiceInputSampleMain .cpp*：</span><span class="sxs-lookup"><span data-stu-id="029e7-126">From *HolographicVoiceInputSampleMain.cpp*:</span></span>
 
 ```
 // Change the cube color, if we get a valid result.
@@ -110,9 +110,9 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
    }
 ```
 
-<span data-ttu-id="26ada-127">在我們的範例程式碼中，我們會根據使用者的命令變更旋轉全息圖 cube 的色彩。</span><span class="sxs-lookup"><span data-stu-id="26ada-127">In our example code, we change the color of the spinning hologram cube according to the user's command.</span></span>
+<span data-ttu-id="029e7-127">在我們的範例程式碼中，我們會根據使用者的命令變更旋轉全息圖 cube 的色彩。</span><span class="sxs-lookup"><span data-stu-id="029e7-127">In our example code, we change the color of the spinning hologram cube according to the user's command.</span></span>
 
-<span data-ttu-id="26ada-128">從 *HolographicVoiceInputSampleMain：： Update*：</span><span class="sxs-lookup"><span data-stu-id="26ada-128">From *HolographicVoiceInputSampleMain::Update*:</span></span>
+<span data-ttu-id="029e7-128">從 *HolographicVoiceInputSampleMain：： Update*：</span><span class="sxs-lookup"><span data-stu-id="029e7-128">From *HolographicVoiceInputSampleMain::Update*:</span></span>
 
 ```
 // Check for new speech input since the last frame.
@@ -135,17 +135,17 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
    }
 ```
 
-## <a name="use-one-shot-recognition"></a><span data-ttu-id="26ada-129">使用「一次」辨識</span><span class="sxs-lookup"><span data-stu-id="26ada-129">Use "one-shot" recognition</span></span>
+## <a name="use-one-shot-recognition"></a><span data-ttu-id="029e7-129">使用「一次」辨識</span><span class="sxs-lookup"><span data-stu-id="029e7-129">Use "one-shot" recognition</span></span>
 
-<span data-ttu-id="26ada-130">您可以設定語音辨識器來接聽使用者說話的片語或句子。</span><span class="sxs-lookup"><span data-stu-id="26ada-130">You can configure a speech recognizer to listen for phrases or sentences that the user speaks.</span></span> <span data-ttu-id="26ada-131">在此情況下，我們會套用 *SpeechRecognitionTopicConstraint* ，告知語音辨識器預期的輸入類型。</span><span class="sxs-lookup"><span data-stu-id="26ada-131">In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect.</span></span> <span data-ttu-id="26ada-132">以下是此案例的應用程式工作流程：</span><span class="sxs-lookup"><span data-stu-id="26ada-132">Here's an app workflow for this scenario:</span></span>
-1. <span data-ttu-id="26ada-133">您的應用程式會建立 SpeechRecognizer、提供 UI 提示，並開始接聽語音命令。</span><span class="sxs-lookup"><span data-stu-id="26ada-133">Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.</span></span>
-2. <span data-ttu-id="26ada-134">使用者會說出片語或句子。</span><span class="sxs-lookup"><span data-stu-id="26ada-134">The user speaks a phrase or sentence.</span></span>
-3. <span data-ttu-id="26ada-135">使用者語音的辨識會發生，並將結果傳回給應用程式。</span><span class="sxs-lookup"><span data-stu-id="26ada-135">Recognition of the user's speech occurs, and a result is returned to the app.</span></span> <span data-ttu-id="26ada-136">此時，您的應用程式應該提供 UI 提示，指出已發生辨識。</span><span class="sxs-lookup"><span data-stu-id="26ada-136">At this point, your app should provide a UI prompt to indicate that recognition has occurred.</span></span>
-4. <span data-ttu-id="26ada-137">根據您想要回應的信賴等級和語音辨識結果的信賴等級，您的應用程式可以處理結果並適當地回應。</span><span class="sxs-lookup"><span data-stu-id="26ada-137">Depending on the confidence level that you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.</span></span>
+<span data-ttu-id="029e7-130">您可以設定語音辨識器來接聽使用者說話的片語或句子。</span><span class="sxs-lookup"><span data-stu-id="029e7-130">You can configure a speech recognizer to listen for phrases or sentences that the user speaks.</span></span> <span data-ttu-id="029e7-131">在此情況下，我們會套用 *SpeechRecognitionTopicConstraint* ，告知語音辨識器預期的輸入類型。</span><span class="sxs-lookup"><span data-stu-id="029e7-131">In this case, we apply a *SpeechRecognitionTopicConstraint* that tells the speech recognizer what type of input to expect.</span></span> <span data-ttu-id="029e7-132">以下是此案例的應用程式工作流程：</span><span class="sxs-lookup"><span data-stu-id="029e7-132">Here's an app workflow for this scenario:</span></span>
+1. <span data-ttu-id="029e7-133">您的應用程式會建立 SpeechRecognizer、提供 UI 提示，並開始接聽語音命令。</span><span class="sxs-lookup"><span data-stu-id="029e7-133">Your app creates the SpeechRecognizer, provides UI prompts, and starts listening for a spoken command.</span></span>
+2. <span data-ttu-id="029e7-134">使用者會說出片語或句子。</span><span class="sxs-lookup"><span data-stu-id="029e7-134">The user speaks a phrase or sentence.</span></span>
+3. <span data-ttu-id="029e7-135">使用者語音的辨識會發生，並將結果傳回給應用程式。</span><span class="sxs-lookup"><span data-stu-id="029e7-135">Recognition of the user's speech occurs, and a result is returned to the app.</span></span> <span data-ttu-id="029e7-136">此時，您的應用程式應該提供 UI 提示，指出已發生辨識。</span><span class="sxs-lookup"><span data-stu-id="029e7-136">At this point, your app should provide a UI prompt to indicate that recognition has occurred.</span></span>
+4. <span data-ttu-id="029e7-137">根據您想要回應的信賴等級和語音辨識結果的信賴等級，您的應用程式可以處理結果並適當地回應。</span><span class="sxs-lookup"><span data-stu-id="029e7-137">Depending on the confidence level that you want to respond to and the confidence level of the speech recognition result, your app can process the result and respond as appropriate.</span></span>
 
-<span data-ttu-id="26ada-138">本節說明如何建立 SpeechRecognizer、編譯條件約束，以及接聽語音輸入。</span><span class="sxs-lookup"><span data-stu-id="26ada-138">This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.</span></span>
+<span data-ttu-id="029e7-138">本節說明如何建立 SpeechRecognizer、編譯條件約束，以及接聽語音輸入。</span><span class="sxs-lookup"><span data-stu-id="029e7-138">This section describes how to create a SpeechRecognizer, compile the constraint, and listen for speech input.</span></span>
 
-<span data-ttu-id="26ada-139">下列程式碼會編譯主題條件約束，在此案例中是針對 web 搜尋進行優化。</span><span class="sxs-lookup"><span data-stu-id="26ada-139">The following code compiles the topic constraint, which in this case is optimized for web search.</span></span>
+<span data-ttu-id="029e7-139">下列程式碼會編譯主題條件約束，在此案例中是針對 web 搜尋進行優化。</span><span class="sxs-lookup"><span data-stu-id="029e7-139">The following code compiles the topic constraint, which in this case is optimized for web search.</span></span>
 
 ```
 auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::WebSearch, L"webSearch");
@@ -156,7 +156,7 @@ auto constraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScen
    {
 ```
 
-<span data-ttu-id="26ada-140">如果編譯成功，我們可以繼續進行語音辨識。</span><span class="sxs-lookup"><span data-stu-id="26ada-140">If compilation succeeds, we can continue with speech recognition.</span></span>
+<span data-ttu-id="029e7-140">如果編譯成功，我們可以繼續進行語音辨識。</span><span class="sxs-lookup"><span data-stu-id="029e7-140">If compilation succeeds, we can continue with speech recognition.</span></span>
 
 ```
 try
@@ -171,7 +171,7 @@ try
                {
 ```
 
-<span data-ttu-id="26ada-141">然後，結果會傳回給應用程式。</span><span class="sxs-lookup"><span data-stu-id="26ada-141">The result is then returned to the app.</span></span> <span data-ttu-id="26ada-142">如果有足夠的結果，我們可以處理這個命令。</span><span class="sxs-lookup"><span data-stu-id="26ada-142">If we're confident enough in the result, we can process the command.</span></span> <span data-ttu-id="26ada-143">這個程式碼範例會處理至少有中度信賴的結果。</span><span class="sxs-lookup"><span data-stu-id="26ada-143">This code example processes results with at least medium confidence.</span></span>
+<span data-ttu-id="029e7-141">然後，結果會傳回給應用程式。</span><span class="sxs-lookup"><span data-stu-id="029e7-141">The result is then returned to the app.</span></span> <span data-ttu-id="029e7-142">如果有足夠的結果，我們可以處理這個命令。</span><span class="sxs-lookup"><span data-stu-id="029e7-142">If we're confident enough in the result, we can process the command.</span></span> <span data-ttu-id="029e7-143">這個程式碼範例會處理至少有中度信賴的結果。</span><span class="sxs-lookup"><span data-stu-id="029e7-143">This code example processes results with at least medium confidence.</span></span>
 
 ```
 try
@@ -212,7 +212,7 @@ try
                    }
 ```
 
-<span data-ttu-id="26ada-144">當您使用語音辨識時，請監看是否有可能指出使用者已關閉系統隱私權設定中麥克風的例外狀況。</span><span class="sxs-lookup"><span data-stu-id="26ada-144">Whenever you use speech recognition, watch for exceptions that could indicate that the user has turned off the microphone in the system privacy settings.</span></span> <span data-ttu-id="26ada-145">這可能會在初始化或辨識期間發生。</span><span class="sxs-lookup"><span data-stu-id="26ada-145">This can happen during initialization or recognition.</span></span>
+<span data-ttu-id="029e7-144">當您使用語音辨識時，請監看是否有可能指出使用者已關閉系統隱私權設定中麥克風的例外狀況。</span><span class="sxs-lookup"><span data-stu-id="029e7-144">Whenever you use speech recognition, watch for exceptions that could indicate that the user has turned off the microphone in the system privacy settings.</span></span> <span data-ttu-id="029e7-145">這可能會在初始化或辨識期間發生。</span><span class="sxs-lookup"><span data-stu-id="029e7-145">This can happen during initialization or recognition.</span></span>
 
 ```
 catch (Exception^ exception)
@@ -256,16 +256,16 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> <span data-ttu-id="26ada-146">您可以使用數個預先定義的 [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) 來優化語音辨識。</span><span class="sxs-lookup"><span data-stu-id="26ada-146">There are several predefined [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) that you can use to optimize speech recognition.</span></span>
+> <span data-ttu-id="029e7-146">您可以使用數個預先定義的 [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) 來優化語音辨識。</span><span class="sxs-lookup"><span data-stu-id="029e7-146">There are several predefined [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) that you can use to optimize speech recognition.</span></span>
 
-* <span data-ttu-id="26ada-147">若要優化聽寫，請使用聽寫案例。</span><span class="sxs-lookup"><span data-stu-id="26ada-147">To optimize for dictation, use the dictation scenario.</span></span><br/>
+* <span data-ttu-id="029e7-147">若要優化聽寫，請使用聽寫案例。</span><span class="sxs-lookup"><span data-stu-id="029e7-147">To optimize for dictation, use the dictation scenario.</span></span><br/>
    ```
    // Compile the dictation topic constraint, which optimizes for speech dictation.
    auto dictationConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::Dictation, "dictation");
    m_speechRecognizer->Constraints->Append(dictationConstraint);
    ```
 
-* <span data-ttu-id="26ada-148">針對語音 web 搜尋，請使用下列 web 特定的案例條件約束。</span><span class="sxs-lookup"><span data-stu-id="26ada-148">For speech web searches, use the following web-specific scenario constraint.</span></span>
+* <span data-ttu-id="029e7-148">針對語音 web 搜尋，請使用下列 web 特定的案例條件約束。</span><span class="sxs-lookup"><span data-stu-id="029e7-148">For speech web searches, use the following web-specific scenario constraint.</span></span>
 
    ```
    // Add a web search topic constraint to the recognizer.
@@ -273,22 +273,22 @@ catch (Exception^ exception)
    speechRecognizer->Constraints->Append(webSearchConstraint);
    ```
 
-* <span data-ttu-id="26ada-149">使用表單條件約束來填滿表單。</span><span class="sxs-lookup"><span data-stu-id="26ada-149">Use the form constraint to fill out forms.</span></span> <span data-ttu-id="26ada-150">在此情況下，最好套用已針對填滿表單優化的文法。</span><span class="sxs-lookup"><span data-stu-id="26ada-150">In this case, it's best to apply your own grammar that's optimized for filling out the form.</span></span>
+* <span data-ttu-id="029e7-149">使用表單條件約束來填滿表單。</span><span class="sxs-lookup"><span data-stu-id="029e7-149">Use the form constraint to fill out forms.</span></span> <span data-ttu-id="029e7-150">在此情況下，最好套用已針對填滿表單優化的文法。</span><span class="sxs-lookup"><span data-stu-id="029e7-150">In this case, it's best to apply your own grammar that's optimized for filling out the form.</span></span>
 
    ```
    // Add a form constraint to the recognizer.
    auto formConstraint = ref new SpeechRecognitionTopicConstraint(SpeechRecognitionScenario::FormFilling, "formFilling");
    speechRecognizer->Constraints->Append(formConstraint );
    ```
-* <span data-ttu-id="26ada-151">您可以用 SRGS 格式提供自己的文法。</span><span class="sxs-lookup"><span data-stu-id="26ada-151">You can provide your own grammar in the SRGS format.</span></span>
+* <span data-ttu-id="029e7-151">您可以用 SRGS 格式提供自己的文法。</span><span class="sxs-lookup"><span data-stu-id="029e7-151">You can provide your own grammar in the SRGS format.</span></span>
 
-## <a name="use-continuous-recognition"></a><span data-ttu-id="26ada-152">使用連續辨識</span><span class="sxs-lookup"><span data-stu-id="26ada-152">Use continuous recognition</span></span>
+## <a name="use-continuous-recognition"></a><span data-ttu-id="029e7-152">使用連續辨識</span><span class="sxs-lookup"><span data-stu-id="029e7-152">Use continuous recognition</span></span>
 
-<span data-ttu-id="26ada-153">如需持續聽寫的案例，請參閱 [WINDOWS 10 UWP 語音程式碼範例](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)。</span><span class="sxs-lookup"><span data-stu-id="26ada-153">For the continuous-dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).</span></span>
+<span data-ttu-id="029e7-153">如需持續聽寫的案例，請參閱 [WINDOWS 10 UWP 語音程式碼範例](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)。</span><span class="sxs-lookup"><span data-stu-id="029e7-153">For the continuous-dictation scenario, see the [Windows 10 UWP speech code sample](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp).</span></span>
 
-## <a name="handle-quality-degradation"></a><span data-ttu-id="26ada-154">處理品質降低</span><span class="sxs-lookup"><span data-stu-id="26ada-154">Handle quality degradation</span></span>
+## <a name="handle-quality-degradation"></a><span data-ttu-id="029e7-154">處理品質降低</span><span class="sxs-lookup"><span data-stu-id="029e7-154">Handle quality degradation</span></span>
 
-<span data-ttu-id="26ada-155">環境條件有時會干擾語音辨識。</span><span class="sxs-lookup"><span data-stu-id="26ada-155">Environmental conditions sometimes interfere with speech recognition.</span></span> <span data-ttu-id="26ada-156">例如，房間可能太過雜訊，或使用者可能會說太過大的聲音。</span><span class="sxs-lookup"><span data-stu-id="26ada-156">For example, the room might be too noisy, or the user might speak too loudly.</span></span> <span data-ttu-id="26ada-157">語音辨識 API 可能會盡可能提供導致品質降低的狀況相關資訊。</span><span class="sxs-lookup"><span data-stu-id="26ada-157">Whenever possible, the speech recognition API provides information about the conditions that caused the quality degradation.</span></span> <span data-ttu-id="26ada-158">這項資訊會透過 WinRT 事件推送到您的應用程式。</span><span class="sxs-lookup"><span data-stu-id="26ada-158">This information is pushed to your app through a WinRT event.</span></span> <span data-ttu-id="26ada-159">下列範例顯示如何訂閱此事件。</span><span class="sxs-lookup"><span data-stu-id="26ada-159">The following example shows  how to subscribe to this event.</span></span>
+<span data-ttu-id="029e7-155">環境條件有時會干擾語音辨識。</span><span class="sxs-lookup"><span data-stu-id="029e7-155">Environmental conditions sometimes interfere with speech recognition.</span></span> <span data-ttu-id="029e7-156">例如，房間可能太過雜訊，或使用者可能會說太過大的聲音。</span><span class="sxs-lookup"><span data-stu-id="029e7-156">For example, the room might be too noisy, or the user might speak too loudly.</span></span> <span data-ttu-id="029e7-157">語音辨識 API 可能會盡可能提供導致品質降低的狀況相關資訊。</span><span class="sxs-lookup"><span data-stu-id="029e7-157">Whenever possible, the speech recognition API provides information about the conditions that caused the quality degradation.</span></span> <span data-ttu-id="029e7-158">這項資訊會透過 WinRT 事件推送到您的應用程式。</span><span class="sxs-lookup"><span data-stu-id="029e7-158">This information is pushed to your app through a WinRT event.</span></span> <span data-ttu-id="029e7-159">下列範例顯示如何訂閱此事件。</span><span class="sxs-lookup"><span data-stu-id="029e7-159">The following example shows  how to subscribe to this event.</span></span>
 
 ```
 m_speechRecognizer->RecognitionQualityDegrading +=
@@ -297,7 +297,7 @@ m_speechRecognizer->RecognitionQualityDegrading +=
            );
 ```
 
-<span data-ttu-id="26ada-160">在我們的程式碼範例中，我們會將條件資訊寫入至 debug 主控台。</span><span class="sxs-lookup"><span data-stu-id="26ada-160">In our code sample, we write the conditions information to the debug console.</span></span> <span data-ttu-id="26ada-161">應用程式可能會想要透過 UI、語音合成和另一種方法，為使用者提供意見反應。</span><span class="sxs-lookup"><span data-stu-id="26ada-161">An app might want to provide feedback to the user through the UI, speech synthesis, and another method.</span></span> <span data-ttu-id="26ada-162">或者，當語音因品質暫時降低而中斷時，可能需要不同的行為。</span><span class="sxs-lookup"><span data-stu-id="26ada-162">Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.</span></span>
+<span data-ttu-id="029e7-160">在我們的程式碼範例中，我們會將條件資訊寫入至 debug 主控台。</span><span class="sxs-lookup"><span data-stu-id="029e7-160">In our code sample, we write the conditions information to the debug console.</span></span> <span data-ttu-id="029e7-161">應用程式可能會想要透過 UI、語音合成和另一種方法，為使用者提供意見反應。</span><span class="sxs-lookup"><span data-stu-id="029e7-161">An app might want to provide feedback to the user through the UI, speech synthesis, and another method.</span></span> <span data-ttu-id="029e7-162">或者，當語音因品質暫時降低而中斷時，可能需要不同的行為。</span><span class="sxs-lookup"><span data-stu-id="029e7-162">Or it might need to behave differently when speech is interrupted by a temporary reduction in quality.</span></span>
 
 ```
 void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer^ recognizer, SpeechRecognitionQualityDegradingEventArgs^ args)
@@ -336,7 +336,7 @@ void HolographicSpeechPromptSampleMain::OnSpeechQualityDegraded(SpeechRecognizer
    }
 ```
 
-<span data-ttu-id="26ada-163">如果您不是使用 ref 類別來建立 DirectX 應用程式，則必須先取消訂閱事件，然後再發行或重新建立您的語音辨識器。</span><span class="sxs-lookup"><span data-stu-id="26ada-163">If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer.</span></span> <span data-ttu-id="26ada-164">HolographicSpeechPromptSample 具有可停止辨識和取消訂閱事件的常式。</span><span class="sxs-lookup"><span data-stu-id="26ada-164">The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events.</span></span>
+<span data-ttu-id="029e7-163">如果您不是使用 ref 類別來建立 DirectX 應用程式，則必須先取消訂閱事件，然後再發行或重新建立您的語音辨識器。</span><span class="sxs-lookup"><span data-stu-id="029e7-163">If you're not using ref classes to create your DirectX app, you must unsubscribe from the event before you release or recreate your speech recognizer.</span></span> <span data-ttu-id="029e7-164">HolographicSpeechPromptSample 具有可停止辨識和取消訂閱事件的常式。</span><span class="sxs-lookup"><span data-stu-id="029e7-164">The HolographicSpeechPromptSample has a routine to stop recognition and unsubscribe from events.</span></span>
 
 ```
 Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizerIfExists()
@@ -363,26 +363,26 @@ Concurrency::task<void> HolographicSpeechPromptSampleMain::StopCurrentRecognizer
    }
 ```
 
-## <a name="use-speech-synthesis-to-provide-audible-prompts"></a><span data-ttu-id="26ada-165">使用語音合成提供可聽見的提示</span><span class="sxs-lookup"><span data-stu-id="26ada-165">Use speech synthesis to provide audible prompts</span></span>
+## <a name="use-speech-synthesis-to-provide-audible-prompts"></a><span data-ttu-id="029e7-165">使用語音合成提供可聽見的提示</span><span class="sxs-lookup"><span data-stu-id="029e7-165">Use speech synthesis to provide audible prompts</span></span>
 
-<span data-ttu-id="26ada-166">「全像」語音範例會使用語音合成，為使用者提供有聲音的指示。</span><span class="sxs-lookup"><span data-stu-id="26ada-166">The holographic speech samples use speech synthesis to provide audible instructions to the user.</span></span> <span data-ttu-id="26ada-167">本節說明如何建立合成語音範例，然後透過 HRTF 音訊 Api 播放。</span><span class="sxs-lookup"><span data-stu-id="26ada-167">This section shows how to create a synthesized voice sample  and then play it back through the HRTF audio APIs.</span></span>
+<span data-ttu-id="029e7-166">「全像」語音範例會使用語音合成，為使用者提供有聲音的指示。</span><span class="sxs-lookup"><span data-stu-id="029e7-166">The holographic speech samples use speech synthesis to provide audible instructions to the user.</span></span> <span data-ttu-id="029e7-167">本節說明如何建立合成語音範例，然後透過 HRTF 音訊 Api 播放。</span><span class="sxs-lookup"><span data-stu-id="029e7-167">This section shows how to create a synthesized voice sample  and then play it back through the HRTF audio APIs.</span></span>
 
-<span data-ttu-id="26ada-168">建議您在要求片語輸入時提供自己的語音提示。</span><span class="sxs-lookup"><span data-stu-id="26ada-168">We recommend providing your own speech prompts when you request phrase input.</span></span> <span data-ttu-id="26ada-169">提示也有助於指出語音命令可用於連續辨識案例的時機。</span><span class="sxs-lookup"><span data-stu-id="26ada-169">Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario.</span></span> <span data-ttu-id="26ada-170">下列範例示範如何使用語音合成器來執行這項操作。</span><span class="sxs-lookup"><span data-stu-id="26ada-170">The following example demonstrates how to use a speech synthesizer to do this.</span></span> <span data-ttu-id="26ada-171">您也可以使用預先錄製的語音剪輯、視覺 UI 或其他指標，例如在提示不是動態的情況下。</span><span class="sxs-lookup"><span data-stu-id="26ada-171">You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt isn't dynamic.</span></span>
+<span data-ttu-id="029e7-168">建議您在要求片語輸入時提供自己的語音提示。</span><span class="sxs-lookup"><span data-stu-id="029e7-168">We recommend providing your own speech prompts when you request phrase input.</span></span> <span data-ttu-id="029e7-169">提示也有助於指出語音命令可用於連續辨識案例的時機。</span><span class="sxs-lookup"><span data-stu-id="029e7-169">Prompts can also help indicate when speech commands can be spoken for a continuous-recognition scenario.</span></span> <span data-ttu-id="029e7-170">下列範例示範如何使用語音合成器來執行這項操作。</span><span class="sxs-lookup"><span data-stu-id="029e7-170">The following example demonstrates how to use a speech synthesizer to do this.</span></span> <span data-ttu-id="029e7-171">您也可以使用預先錄製的語音剪輯、視覺 UI 或其他指標，例如在提示不是動態的情況下。</span><span class="sxs-lookup"><span data-stu-id="029e7-171">You could also use a pre-recorded voice clip, a visual UI, or another indicator of what to say, for example in scenarios where the prompt isn't dynamic.</span></span>
 
-<span data-ttu-id="26ada-172">首先，建立 SpeechSynthesizer 物件。</span><span class="sxs-lookup"><span data-stu-id="26ada-172">First, create the SpeechSynthesizer object.</span></span>
+<span data-ttu-id="029e7-172">首先，建立 SpeechSynthesizer 物件。</span><span class="sxs-lookup"><span data-stu-id="029e7-172">First, create the SpeechSynthesizer object.</span></span>
 
 ```
 auto speechSynthesizer = ref new Windows::Media::SpeechSynthesis::SpeechSynthesizer();
 ```
 
-<span data-ttu-id="26ada-173">您也需要包含要合成之文字的字串。</span><span class="sxs-lookup"><span data-stu-id="26ada-173">You also need a string that includes the text to  synthesize.</span></span>
+<span data-ttu-id="029e7-173">您也需要包含要合成之文字的字串。</span><span class="sxs-lookup"><span data-stu-id="029e7-173">You also need a string that includes the text to  synthesize.</span></span>
 
 ```
 // Phrase recognition works best when requesting a phrase or sentence.
    StringReference voicePrompt = L"At the prompt: Say a phrase, asking me to change the cube to a specific color.";
 ```
 
-<span data-ttu-id="26ada-174">語音會透過 SynthesizeTextToStreamAsync 以非同步方式合成。</span><span class="sxs-lookup"><span data-stu-id="26ada-174">Speech is synthesized asynchronously through SynthesizeTextToStreamAsync.</span></span> <span data-ttu-id="26ada-175">在這裡，我們會啟動非同步工作以合成語音。</span><span class="sxs-lookup"><span data-stu-id="26ada-175">Here, we start an async task to synthesize the speech.</span></span>
+<span data-ttu-id="029e7-174">語音會透過 SynthesizeTextToStreamAsync 以非同步方式合成。</span><span class="sxs-lookup"><span data-stu-id="029e7-174">Speech is synthesized asynchronously through SynthesizeTextToStreamAsync.</span></span> <span data-ttu-id="029e7-175">在這裡，我們會啟動非同步工作以合成語音。</span><span class="sxs-lookup"><span data-stu-id="029e7-175">Here, we start an async task to synthesize the speech.</span></span>
 
 ```
 create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_continuation_context::use_current())
@@ -392,7 +392,7 @@ create_task(speechSynthesizer->SynthesizeTextToStreamAsync(voicePrompt), task_co
        {
 ```
 
-<span data-ttu-id="26ada-176">語音合成會以位元組串流的形式傳送。</span><span class="sxs-lookup"><span data-stu-id="26ada-176">The speech synthesis is sent as a byte stream.</span></span> <span data-ttu-id="26ada-177">我們可以使用該位元組資料流程來初始化 XAudio2 聲音。</span><span class="sxs-lookup"><span data-stu-id="26ada-177">We can use that byte stream to initialize an XAudio2 voice.</span></span> <span data-ttu-id="26ada-178">針對我們的全像攝影程式碼範例，我們會以 HRTF 音訊效果的形式播放。</span><span class="sxs-lookup"><span data-stu-id="26ada-178">For our holographic code samples, we play it back as an HRTF audio effect.</span></span>
+<span data-ttu-id="029e7-176">語音合成會以位元組串流的形式傳送。</span><span class="sxs-lookup"><span data-stu-id="029e7-176">The speech synthesis is sent as a byte stream.</span></span> <span data-ttu-id="029e7-177">我們可以使用該位元組資料流程來初始化 XAudio2 聲音。</span><span class="sxs-lookup"><span data-stu-id="029e7-177">We can use that byte stream to initialize an XAudio2 voice.</span></span> <span data-ttu-id="029e7-178">針對我們的全像攝影程式碼範例，我們會以 HRTF 音訊效果的形式播放。</span><span class="sxs-lookup"><span data-stu-id="029e7-178">For our holographic code samples, we play it back as an HRTF audio effect.</span></span>
 
 ```
 Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStreamTask.get();
@@ -414,7 +414,7 @@ Windows::Media::SpeechSynthesis::SpeechSynthesisStream^ stream = synthesisStream
        }
 ```
 
-<span data-ttu-id="26ada-179">如同語音辨識，如果發生問題，語音合成會擲回例外狀況。</span><span class="sxs-lookup"><span data-stu-id="26ada-179">As with speech recognition, speech synthesis throws an exception if something goes wrong.</span></span>
+<span data-ttu-id="029e7-179">如同語音辨識，如果發生問題，語音合成會擲回例外狀況。</span><span class="sxs-lookup"><span data-stu-id="029e7-179">As with speech recognition, speech synthesis throws an exception if something goes wrong.</span></span>
 
 ```
 catch (Exception^ exception)
@@ -430,6 +430,6 @@ catch (Exception^ exception)
    });
 ```
 
-## <a name="see-also"></a><span data-ttu-id="26ada-180">另請參閱</span><span class="sxs-lookup"><span data-stu-id="26ada-180">See also</span></span>
-* [<span data-ttu-id="26ada-181">語音應用程式設計</span><span class="sxs-lookup"><span data-stu-id="26ada-181">Speech app design</span></span>](https://msdn.microsoft.com/library/dn596121.aspx)
-* [<span data-ttu-id="26ada-182">SpeechRecognitionAndSynthesis 範例</span><span class="sxs-lookup"><span data-stu-id="26ada-182">SpeechRecognitionAndSynthesis sample</span></span>](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
+## <a name="see-also"></a><span data-ttu-id="029e7-180">另請參閱</span><span class="sxs-lookup"><span data-stu-id="029e7-180">See also</span></span>
+* [<span data-ttu-id="029e7-181">語音應用程式設計</span><span class="sxs-lookup"><span data-stu-id="029e7-181">Speech app design</span></span>](/windows/uwp/design/input/speech-interactions)
+* [<span data-ttu-id="029e7-182">SpeechRecognitionAndSynthesis 範例</span><span class="sxs-lookup"><span data-stu-id="029e7-182">SpeechRecognitionAndSynthesis sample</span></span>](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)
