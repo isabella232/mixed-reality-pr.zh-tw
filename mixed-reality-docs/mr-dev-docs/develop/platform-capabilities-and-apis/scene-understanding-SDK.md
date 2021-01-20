@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 9520ad604125705c60624254b097de5fc93021ec
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009378"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583754"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -47,7 +47,7 @@ SceneUnderstanding 需要 Windows SDK 18362 版或更高版本。
 
 因為每個場景會將它的資料儲存在您應用程式的記憶體空間中，所以您可以假設場景物件的所有功能或其內部資料一律會在應用程式的進程中執行。
 
-### <a name="layout"></a>配置
+### <a name="layout"></a>Layout
 
 若要使用場景理解，瞭解並瞭解執行時間如何以邏輯和實際方式代表元件，可能會有價值。 場景代表具有特定版面配置的資料，並在維持 pliable 的基礎結構，而不需要進行重大修訂時，才會維持符合未來需求的基礎結構。 場景會藉由儲存所有元件， (一般清單中) 的所有場景物件的所有元件，並透過參考（特定元件參考其他元件）定義階層和組合。
 
@@ -131,7 +131,7 @@ SceneObjects 可以有下列任何一項：
 
 ### <a name="scenemesh"></a>SceneMesh
 
-SceneMesh 是一個 SceneComponent，使用三角形清單來近似任意幾何物件的幾何。 SceneMeshes 會在數個不同的內容中使用，它們可以代表防水資料格結構的元件或 WorldMesh，代表與場景相關聯的未系結空間對應網格。 每個網格所提供的索引和頂點資料，會使用與用來呈現所有新式轉譯 Api 中三角形網格的 [頂點和索引緩衝區](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) 相同的熟悉版面配置。 在場景理解中，網格會使用32位的索引，而且可能需要針對某些轉譯引擎分割成區塊。
+SceneMesh 是一個 SceneComponent，使用三角形清單來近似任意幾何物件的幾何。 SceneMeshes 會在數個不同的內容中使用，它們可以代表防水資料格結構的元件或 WorldMesh，代表與場景相關聯的未系結空間對應網格。 每個網格所提供的索引和頂點資料，會使用與用來呈現所有新式轉譯 Api 中三角形網格的 [頂點和索引緩衝區](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) 相同的熟悉版面配置。 在場景理解中，網格會使用32位的索引，而且可能需要針對某些轉譯引擎分割成區塊。
 
 #### <a name="winding-order-and-coordinate-systems"></a>纏繞順序和座標系統
 
@@ -265,7 +265,7 @@ foreach (var mesh in firstFloor.Meshes)
 
 在處理轉換時，場景理解已刻意嘗試配合傳統的3D 場景標記法。 因此，每個場景會限制為單一座標系統，就像是最常見的3D 環境表示一樣。 SceneObjects 每個都提供其相對於座標系統的位置。 如果您的應用程式處理的場景會延展單一來源提供的限制，讓它可以將 SceneObjects 錨定到 SpatialAnchors，或是產生數個場景並將它們合併在一起，但為了簡單起見，我們假設防水場景存在於自己的原點，並由場景所定義的一個來當地語系化。
 
-例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 如需有關取得與 Unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱 [SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](https://docs.microsoft.com//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](https://docs.microsoft.com//windows/mixed-reality/unity-xrdevice-advanced) 。
+例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 如需有關取得與 Unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](//windows/mixed-reality/unity-xrdevice-advanced) 。
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

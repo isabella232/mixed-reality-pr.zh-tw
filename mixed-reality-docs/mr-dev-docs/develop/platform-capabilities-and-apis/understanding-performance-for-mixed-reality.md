@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，效能，優化，CPU，GPU
-ms.openlocfilehash: ff3db5d49ddab13a20c4c32de8e5640fff4f0d81
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 68aae6408a59b197227ab8cd9042e11f8a255d10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008468"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583084"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>瞭解混合現實的效能
 
@@ -21,7 +21,7 @@ ms.locfileid: "98008468"
 
 | 平台 | 目標畫面播放速率 |
 |----------|-------------------|
-| [HoloLens](../../hololens-hardware-details.md) | 60 FPS |
+| [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
 | [Windows Mixed Reality Ultra 電腦](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality 電腦](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
@@ -46,7 +46,7 @@ ms.locfileid: "98008468"
 
 以下是一些常見的工具，可協助您收集應用程式的深入分析資訊：
 - [Intel 圖形效能分析器](https://software.intel.com/gpa)
-- [Visual Studio 圖形偵錯工具](https://docs.microsoft.com/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Visual Studio 圖形偵錯工具](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity 框架偵錯工具](https://docs.unity3d.com/Manual/FrameDebugger.html)
 
@@ -100,7 +100,7 @@ ms.locfileid: "98008468"
 
 #### <a name="reduce-polygon-count"></a>減少多邊形計數
 
-較高的多邊形計數會導致 GPU 的更多作業，因此減少場景中的 [多邊形數目](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) 可減少轉譯時間。 還有其他因素會讓幾何的陰影變得相當昂貴，但是多邊形計數是最簡單的度量，可判斷呈現場景所需的工作量。
+較高的多邊形計數會導致 GPU 的更多作業，因此減少場景中的 [多邊形數目](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets) 可減少轉譯時間。 還有其他因素會讓幾何的陰影變得相當昂貴，但是多邊形計數是最簡單的度量，可判斷呈現場景所需的工作量。
 
 #### <a name="limit-overdraw"></a>限制過度繪製
 
@@ -136,9 +136,8 @@ ms.locfileid: "98008468"
 
 物件共用是一種常用的技巧，可降低持續配置和物件取消配置的成本。 這是藉由配置相同物件的大型集區，並重複使用此集區中非使用中的可用實例來完成，而不是在一段時間內不斷產生和終結物件。 物件集區非常適合在應用程式期間有變數存留期的重複使用元件。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [對 Unity 的效能建議](../unity/performance-recommendations-for-unity.md)
 - [Unity 的建議設定](../unity/recommended-settings-for-unity.md)
-- [優化3D 模型](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [轉換和優化即時3D 模型的最佳作法](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
-
+- [優化3D 模型](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [轉換和優化即時3D 模型的最佳作法](/dynamics365/mixed-reality/import-tool/best-practices)

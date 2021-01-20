@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D、模型化、模型化指引、資產需求、撰寫指導方針、啟動器、3D 啟動器、材質、材質、複雜度、三角形、網格、多邊形、polycount、限制、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 17014e3deaaa161dd7949a55679b916e872ad5a7
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757782"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583816"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>建立用於住家的 3D 模型
 
@@ -101,7 +101,7 @@ Windows Mixed Reality home 不支援每個」 LOD 具有64節點或 32 submeshes
 Windows Mixed Reality home 在使用自訂延伸模組所定義的核心 glTF 規格之上，提供一系列的優化。 <= 1709 的 Windows 版本和建議在較新版本的 Windows 上，都需要進行這些優化。 您可以使用 [GitHub 上提供的 Windows Mixed Reality 資產轉換器](https://github.com/Microsoft/glTF-Toolkit/releases)，輕鬆地優化任何 glTF 2.0 模型。 此工具會執行正確的材質封裝和優化，如下所示。 針對一般使用方式，我們建議使用 WindowsMRAssetConverter，但如果您需要更充分掌控體驗，而且想要建立自己的優化管線，您可以參考以下的詳細規格。  
 
 > [!NOTE]
-> 如需確切的模型限制之可能性的完整清單，請參閱「 [3d 模型優化](https://docs.microsoft.com/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 」一文，以在 Dynamics 365 應用程式中使用。
+> 如需確切的模型限制之可能性的完整清單，請參閱「 [3d 模型優化](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 」一文，以在 Dynamics 365 應用程式中使用。
 
 ### <a name="materials"></a>材質
 
@@ -192,7 +192,7 @@ LODs 會根據每個」 LOD 上設定的螢幕涵蓋範圍值所驅動的系統�
 ## <a name="animation-guidelines"></a>動畫指導方針
 
 > [!NOTE]
-> 這項功能已新增為 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)的一部分。 在舊版的 Windows 上，這些動畫不會播放，不過，如果是根據本文中的指導方針來撰寫，它們仍會載入。  
+> 這項功能已新增為 [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)的一部分。 在舊版的 Windows 上，這些動畫不會播放，不過，如果是根據本文中的指導方針來撰寫，它們仍會載入。  
 
 混合實境首頁支援 HoloLens 和沉浸式 (VR) 耳機上的動畫 glTF 物件。 如果您想要在模型上觸發動畫，您必須使用 glTF 格式的動畫地圖延伸模組。 此延伸模組可讓您根據使用者在世界中的目前狀態，在 glTF 模型中觸發動畫，例如，當使用者接近物件或正在查看動畫時，觸發動畫。 如果您 glTF 物件具有動畫，但未定義觸發程式，則不會播放動畫。 下一節描述將這些觸發程式新增至任何動畫 glTF 物件的工作流程。
 
@@ -255,7 +255,7 @@ Windows Mixed Reality home 支援下列動畫觸發語義。
 
 Windows MR 不支援使用負面比例來翻轉幾何。 具有負值縮放的幾何很可能會導致視覺效果成品。
 
-GlTF 資產必須指向使用 Windows MR 轉譯的場景屬性的預設場景。 此外， [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)之前的 Windows MR glTF 載入器 **需要** 存取子：
+GlTF 資產必須指向使用 Windows MR 轉譯的場景屬性的預設場景。 此外， [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)之前的 Windows MR glTF 載入器 **需要** 存取子：
 * 必須具有最小值和最大值。
 * 型別純量必須為 componentType UNSIGNED_SHORT (5123) 或 UNSIGNED_INT (5125) 。
 * 類型 VEC2 和 VEC3 必須是 componentType FLOAT (5126) 。
@@ -289,7 +289,7 @@ Windows MR 不支援基本模式線和點。
 * [HoloLens 混合現實材質封裝延伸模組規格](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Microsoft DDS 紋理 glTF 延伸模組規格](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [實作 3D 應用程式啟動器 (UWP 應用程式)](implementing-3d-app-launchers.md)
 * [實作 3D 應用程式啟動器 (Win32 應用程式)](implementing-3d-app-launchers-win32.md)

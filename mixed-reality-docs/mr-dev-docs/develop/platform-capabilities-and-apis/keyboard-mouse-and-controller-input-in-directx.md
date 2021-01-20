@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality、鍵盤、滑鼠、遊戲控制器、xbox 控制器、HoloLens、桌面、逐步解說、範例程式碼
-ms.openlocfilehash: b7984c86b952612af020e2bd91063e0a9b0d92f6
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3cf35ba195e839332cbedb8b2c3945334a158cbc
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530043"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583632"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>DirectX 中的鍵盤、滑鼠及控制器輸入
 
@@ -60,7 +60,7 @@ ms.locfileid: "97530043"
 您也可以透過 UWP CoreWindow 輸入事件處理常式，再次使用滑鼠輸入。 以下是如何修改 Windows 全像投影應用程式範本，以支援滑鼠點擊的方式，就像按下的手勢一樣。 進行這種修改之後，當您戴著沉浸式耳機裝置時，按一下滑鼠就會重新放置 cube。
 
 > [!NOTE]
-> UWP 應用程式也可以使用 [MouseDevice](https://docs.microsoft.com/uwp/api/Windows.Devices.Input.MouseDevice) API 取得滑鼠的原始 XY 資料。
+> UWP 應用程式也可以使用 [MouseDevice](/uwp/api/Windows.Devices.Input.MouseDevice) API 取得滑鼠的原始 XY 資料。
 
 首先，在 AppView 中宣告新的 OnPointerPressed 處理常式：
 

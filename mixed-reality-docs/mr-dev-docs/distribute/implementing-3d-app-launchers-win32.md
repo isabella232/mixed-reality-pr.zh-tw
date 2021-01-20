@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D，標誌，圖示，模型，啟動器，3D 啟動器，磚，即時 cube，win32，混合現實耳機，windows mixed reality 耳機，虛擬實境耳機，資訊清單
-ms.openlocfilehash: 63b07664cb09f51e6d0588fdc50d141ad8985093
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 46d3419d3c8267291496d8f788103d7002e6f230
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009667"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583034"
 ---
 # <a name="implement-3d-app-launchers-win32-apps"></a>實作 3D 應用程式啟動器 (Win32 應用程式)
 
@@ -33,11 +33,11 @@ ms.locfileid: "98009667"
 
 ## <a name="configuring-the-3d-launcher"></a>設定3D 啟動器
 
-如果您為這些應用程式建立了3D 應用程式啟動器，Win32 應用程式將會出現在 Windows Mixed Reality [開始] 功能表的「所有應用程式」清單中。 若要這樣做，請依照下列步驟，建立參考3D 應用程式啟動器的 [視覺元素資訊清單](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) XML 檔案：
+如果您為這些應用程式建立了3D 應用程式啟動器，Win32 應用程式將會出現在 Windows Mixed Reality [開始] 功能表的「所有應用程式」清單中。 若要這樣做，請依照下列步驟，建立參考3D 應用程式啟動器的 [視覺元素資訊清單](/previous-versions/windows/apps/dn393983(v=win.10)) XML 檔案：
 
 1. 建立 **3D 應用程式啟動器資產 GLB** 檔 (查看 [模型和匯出](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)) 。
-2. 為您的應用程式建立 **[視覺元素資訊清單](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx)** 。
-    1. 您可以從 [下列範例](#sample-visual-elements-manifest)開始。  如需詳細資訊，請參閱完整的 [Visual Elements 資訊清單](https://msdn.microsoft.com/library/windows/apps/dn393983.aspx) 檔。
+2. 為您的應用程式建立 **[視覺元素資訊清單](/previous-versions/windows/apps/dn393983(v=win.10))** 。
+    1. 您可以從 [下列範例](#sample-visual-elements-manifest)開始。  如需詳細資訊，請參閱完整的 [Visual Elements 資訊清單](/previous-versions/windows/apps/dn393983(v=win.10)) 檔。
     2. 針對您的應用程式使用 PNG/JPG/GIF 更新 **Square150x150Logo** 和 **Square70x70Logo** 。
         * 這些將用於應用程式在 Windows Mixed Reality [所有應用程式] 清單和桌面的 [開始] 功能表中的2D 標誌。
         * 檔案路徑是以包含視覺元素資訊清單的資料夾為基礎。
@@ -165,7 +165,7 @@ IconFile=C:\Program Files (x86)\MyLauncher\apps\app-identifier\game.exe
 IconIndex=0
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * 包含3D 應用程式啟動器的[混合現實模型範例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel)。
 * [3D 應用程式啟動程式設計指引](3d-app-launcher-design-guidance.md)

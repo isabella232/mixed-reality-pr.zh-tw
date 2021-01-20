@@ -6,17 +6,17 @@ ms.author: thmignon
 ms.date: 05/04/2018
 ms.topic: article
 keywords: 3D，型號，放置於家裡、地點、世界、模型化、混合實境首頁、web、應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: c92ba7a3242b618b9ef9cef01ae400cf4dbf36b2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 58da61add35546331ff8199fa20885f9869a9f43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010098"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583800"
 ---
 # <a name="enable-placement-of-3d-models-in-the-mixed-reality-home"></a>在混合實境首頁中啟用 3D 模型的放置
 
 > [!NOTE]
-> 這項功能已新增為 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)的一部分。 較舊版本的 Windows 與這項功能不相容。
+> 這項功能已新增為 [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)的一部分。 較舊版本的 Windows 與這項功能不相容。
 
 [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)是使用者在啟動應用程式之前所居住的起點。 在某些案例中，2D 應用程式 (像是全像全像影像應用程式) 將3D 模型以裝飾的形式直接放入混合實境首頁，或以完整3D 進行進一步檢查。 「 *新增模型」通訊協定* 可讓您將來自您網站或應用程式的3d 模型直接傳送到 Windows Mixed Reality 首頁，它會保存為 [3d 應用程式啟動器](3d-app-launcher-design-guidance.md)、2d 應用程式和全像影像。 
 
@@ -32,7 +32,7 @@ ms.locfileid: "98010098"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
      <tr>
@@ -91,7 +91,7 @@ private async void launchURI_Click(object sender, RoutedEventArgs e)
 * 針對沉浸式 (VR) 耳機，混合實境入口不需要在叫用 *新增模型通訊協定* 之前執行。 在此情況下，「 *新增模型」通訊協定* 將會啟動混合實境入口，並在您抵達混合實境首頁之後，直接將物件放在耳機所要查看的位置。 
 * 從已執行混合實境入口的桌面叫用 *新增模型通訊協定* 時，請確定耳機為「喚醒」。 如果沒有，則放置將不會成功。 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [建立要在 Windows Mixed Reality 首頁中使用的3D 模型](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [瀏覽 Windows Mixed Reality 住家](../discover/navigating-the-windows-mixed-reality-home.md)

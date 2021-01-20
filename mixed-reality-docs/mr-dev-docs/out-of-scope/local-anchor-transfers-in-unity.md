@@ -6,19 +6,19 @@ ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、傳輸、本機錨定、錨點匯出、錨點匯入
-ms.openlocfilehash: 1048e6a3cfc41a04cd49e201e5d1841e805a4193
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4949dd49817d723729974fb5666d5defb64b72ba
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009638"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583869"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Unity 中的本機錨點傳輸
 
-在您無法使用 <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點轉移可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。
+在您無法使用 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點轉移可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。
 
 >[!NOTE]
->本機錨點傳輸可提供比 <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>更不健全的錨定回收，而且此方法不支援 IOS 和 Android 裝置。
+>本機錨點傳輸可提供比 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>更不健全的錨定回收，而且此方法不支援 IOS 和 Android 裝置。
 
 ### <a name="setting-the-spatialperception-capability"></a>設定 >spatialperception 功能
 
@@ -138,4 +138,3 @@ private void OnImportComplete(SerializationCompletionReason completionReason, Wo
 ```
 
 透過 *LockObject* 呼叫鎖定 *GameObject* 之後，它會有一個 *WorldAnchor* ，將它保留在世界各地的相同實體位置，但它可能與其他使用者位於 Unity 座標空間中的不同位置。
-

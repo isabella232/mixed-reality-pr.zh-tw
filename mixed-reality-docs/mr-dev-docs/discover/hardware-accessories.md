@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 05/20/2020
 ms.topic: article
 keywords: 作法、配件、藍牙、bt、控制器、遊戲台、clicker、xbox、硬體、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移動控制器
-ms.openlocfilehash: aaed865f3fd2f722ce287bd2362299f785af05dc
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: b9a58a34a88de01d1d2351ff0a5efbe4f99298db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757716"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583319"
 ---
 # <a name="hardware-accessories"></a>硬體配件
 
 Windows Mixed Reality 裝置支援配件。 您可以使用藍牙或 USB 埠，將支援的配件與您電腦上的沉浸式耳機配對。
 
-如需搭配 HoloLens 使用藍牙附屬元件的相關資訊，請參閱 [連接到 bluetooth 和 USB-C 裝置](https://docs.microsoft.com/hololens/hololens-connect-devices)。
+如需搭配 HoloLens 使用藍牙附屬元件的相關資訊，請參閱 [連接到 bluetooth 和 USB-C 裝置](/hololens/hololens-connect-devices)。
 
 Windows Mixed Reality 沉浸式耳機需要[輸入的附屬和](../design/gaze-and-commit.md)[聲音](../design/voice-input.md)以外的配件。 支援的配件包括 **鍵盤和滑鼠**、 **遊戲台** 和 **[移動控制器](../design/motion-controllers.md)**。
 

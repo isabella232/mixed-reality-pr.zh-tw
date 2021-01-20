@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、全像投影、設計、互動、混合現實耳機、windows Mixed reality 耳機、什麼是增強的現實
-ms.openlocfilehash: b390910fcece8e6263d19f52c80b784efb2561f6
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: cc6b4a4838e7a275b1ef3a45e54c4b894a04b9c2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757556"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583347"
 ---
 # <a name="what-is-a-hologram"></a>什麼是全像投影？
 
@@ -33,7 +33,7 @@ HoloLens 可讓您建立全像 **影像**，也就是像真實物件一樣，在
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -130,4 +130,3 @@ HoloLens 可讓您建立全像 **影像**，也就是像真實物件一樣，在
 
 > [!div class="nextstepaction"]
 > [展開您的設計程序](case-study-expanding-the-design-process-for-mixed-reality.md)
-

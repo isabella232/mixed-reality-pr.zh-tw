@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、注視、HoloLens、Mixed Reality 學院、unity、Mixed reality 耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 2cbbdba0a74ab94c6a291cbe6af1cd1ae9020fe4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677247"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583862"
 ---
 # <a name="mr-input-210-gaze"></a>MR Input 210：注視
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../../../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
 
 [注視](../../../design/gaze-and-commit.md) 是輸入的第一種形式，會顯示使用者的意圖和認知。 MR 輸入 210 (也稱為 Project Explorer) 是 Windows Mixed Reality 的注視相關概念深入探討。 我們會將內容感知新增至游標和全像投影，以充分利用您的應用程式對使用者的注視有何認識。
 
@@ -37,15 +37,15 @@ ms.locfileid: "94677247"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Input 210：注視</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。
@@ -271,7 +271,7 @@ void IFocusable.OnFocusExit()
 2. 如果使用者是在全像撥雲見日，則隱藏方向指標。
 3. 更新方向指標以指向全像影像。
 
-現在就開始吧。
+讓我們開始這次的教學。
 
 1. 按一下 [階層 **] 面板中的 [** **AstroMan** ] 物件，然後 **按一下箭** 號將其展開。
 2. **在 [階層**] 面板中，選取 [ **AstroMan**] 底下的 [ **DirectionalIndicator** ] 物件。

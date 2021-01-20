@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、沉浸式、移動控制器、學院、教學課程
-ms.openlocfilehash: c83fd4970e40919e146b0a4e8b4f0f516e9d0906
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 1f747c73846f59fdc62a0559068123a50f8a1b07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680109"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583054"
 ---
 # <a name="mr-input-213-motion-controllers"></a>MR Input 213：運動控制器
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../develop/unity/tutorials/mr-learning-base-01.md)。
 
 混合現實世界中的運動控制器會新增另一個層級的互動。 有了 [運動控制器](../design/motion-controllers.md)，我們就能以更自然的方式直接與物件互動，類似于真實生活中的實際互動，在您的應用程式體驗中增加深度和取悅。
 
@@ -33,15 +33,15 @@ ms.locfileid: "91680109"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Input 213：運動控制器</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
 請參閱 [此頁面](../develop/install-the-tools.md)上的沉浸式耳機安裝檢查清單。
 
@@ -64,24 +64,24 @@ ms.locfileid: "91680109"
 * 安裝混合實境相機
 * 設定環境
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 啟動 Unity。
-* 選取 [開啟]。
+* 選取 [開啟]  。
 * 流覽至您的桌面，並尋找您先前 unarchived 的 **MixedReality213 主** 資料夾。
-* 按一下 [選擇資料夾]  。
+* 按一下 [選擇資料夾]。
 * Unity 完成載入專案檔之後，您就能夠看到 Unity 編輯器。
-* 在 Unity 中，選取 [ **File > Build Settings** ]。
+* 在 Unity 中，選取 [ **File > Build Settings**]。
 
     ![MR213_BuildSettings](images/mr213-buildsettings-450px.png)
 
-* 在 [ **平臺** ] 清單中選取 **通用 Windows 平臺** ，然後按一下 [ **切換平臺** ] 按鈕。
+* 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**] 按鈕。
 * 將目標裝置設定為 **任何裝置**
 * 將組建類型設定為 **D3D**
 * 將 SDK 設定為 **最新安裝**
 * 檢查 **Unity c # 專案**
     * 這可讓您修改 Visual Studio 專案中的指令檔，而不需要重建 Unity 專案。
-* 按一下 [ **玩家設定** ]。
+* 按一下 [ **玩家設定**]。
 * 在 [偵測 **器** ] 面板中，向下滾動至底部
 * 在 [XR 設定] 中，檢查 **支援的虛擬實境**
 * 在 [虛擬實境 Sdk] 下，選取 **Windows Mixed Reality**
@@ -92,31 +92,31 @@ ms.locfileid: "91680109"
 
 ### <a name="project-structure"></a>專案結構
 
-本教學課程使用 **[混合現實工具組-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 。 您可以在 [此頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)上找到這些版本。
+本教學課程使用 **[混合現實工具組-Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)**。 您可以在 [此頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)上找到這些版本。
 
 ![ProjectStructure](images/mr213-projectstructure-650px.png)
 
 **針對您的參考完成的場景**
 
 * 您會在 **幕後** 資料夾中找到兩個已完成的 Unity 幕後。
-    * **MixedReality213** ：已完成場景與單一筆刷
-    * **MixedReality213Advanced** ：使用多筆刷完成適用于 advanced design 的場景
+    * **MixedReality213**：已完成場景與單一筆刷
+    * **MixedReality213Advanced**：使用多筆刷完成適用于 advanced design 的場景
 
 **教學課程的新場景設定**
 
 * 在 Unity 中，按一下 [檔案] **> 新增場景**
 * 刪除 **主要攝影機** 和 **方向光線**
 * 在 [ **專案] 面板** 中，搜尋下列 prefabs，並將 **其拖曳** 到 [階層] 面板中：
-    * 資產/HoloToolkit/Input/Prefabs/ **MixedRealityCamera**
-    * 資產/AppPrefabs/ **環境**
+    * 資產/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
+    * 資產/AppPrefabs/**環境**
 
     ![攝影機和環境](images/mr213-cameraenvironment-300px.jpg)
 
 * 混合現實工具組中有兩種攝影機 prefabs：
-    * **MixedRealityCamera. 預製專案** ：僅限相機
-    * **MixedRealityCameraParent. 預製專案** ：相機 + 遙傳 + 界限
+    * **MixedRealityCamera. 預製專案**：僅限相機
+    * **MixedRealityCameraParent. 預製專案**：相機 + 遙傳 + 界限
     * 在本教學課程中，我們將使用 **MixedRealityCamera** 而不使用遙傳功能。 因此，我們新增了簡單的 **環境** 預製專案，其中包含讓使用者感覺更接地的基本樓層。
-    * 若要深入瞭解遙傳 with **MixedRealityCameraParent** ，請參閱 [Advanced design-遙傳 and locomotion](#advanced-design---teleportation-and-locomotion)
+    * 若要深入瞭解遙傳 with **MixedRealityCameraParent**，請參閱 [Advanced design-遙傳 and locomotion](#advanced-design---teleportation-and-locomotion)
 
 **Skybox 設定**
 
@@ -153,7 +153,7 @@ Windows Mixed Reality 提供適用于控制器視覺效果的動畫控制器模�
 
 在本章中，我們將瞭解這些控制器自訂的範例。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案** ] 面板的 [搜尋] 方塊中，輸入 **MotionControllers** 。 您也可以在 [資產/HoloToolkit/輸入/Prefabs/] 下找到它。
 * 將 **MotionControllers** 預製專案拖曳到 [階層 **] 面板中** 。
@@ -189,7 +189,7 @@ protected override void Awake()
 
 在稍後的章節中，我們將瞭解如何使用這些腳本，將 UI 元素附加至控制器。
 
-*在某些腳本中，您會發現具有 #if 的程式碼區塊 **！UNITY_EDITOR** 或 **UNITY_WSA** 。這些程式碼區塊只會在您部署至 Windows 時于 UWP 執行時間上執行。這是因為 Unity 編輯器和 UWP 應用程式執行時間所使用的 Api 集不同。*
+*在某些腳本中，您會發現具有 #if 的程式碼區塊 **！UNITY_EDITOR** 或 **UNITY_WSA**。這些程式碼區塊只會在您部署至 Windows 時于 UWP 執行時間上執行。這是因為 Unity 編輯器和 UWP 應用程式執行時間所使用的 Api 集不同。*
 
 * **儲存** 場景，然後按一下 [ **播放** ] 按鈕。
 
@@ -208,7 +208,7 @@ protected override void Awake()
 
 在本章中，您將瞭解如何將使用者介面專案新增至控制器，讓使用者隨時都能輕鬆地存取和操作。 您也將瞭解如何使用觸控板輸入來新增簡單的色彩選擇器 UI。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案** ] 面板中，搜尋 **MotionControllerInfo** 腳本。
 * 從搜尋結果中，按兩下 [ **MotionControllerInfo** 腳本] 以查看 Visual Studio 中的程式碼。
@@ -279,7 +279,7 @@ private void AttachElementToController(MotionControllerInfo newController)
 
 **指示**
 
-* 在 [ **專案** ] 面板中，輸入搜尋方塊 **ColorPickerWheel** 。 您也可以在 [資產/AppPrefabs/] 下找到它。
+* 在 [ **專案** ] 面板中，輸入搜尋方塊 **ColorPickerWheel**。 您也可以在 [資產/AppPrefabs/] 下找到它。
 * 將 **ColorPickerWheel** 預製專案拖曳到 **[階層** ] 面板中。
 * 按一下 [階層 **] 面板中的 [** **ColorPickerWheel** ] 預製專案。
 * 在 [偵測 **器** ] 面板中，按兩下 [ **ColorPickerWheel** 腳本] 以查看 Visual Studio 中的程式碼。
@@ -288,7 +288,7 @@ private void AttachElementToController(MotionControllerInfo newController)
 
 **ColorPickerWheel 腳本**
 
-因為 **ColorPickerWheel** 會繼承 **AttachToController** ，所以它會在 [偵測 **器** ] 面板中顯示 **Handedness** 和 **元素** 。 我們會將 UI 附加至左方控制器上的「觸控板」元素。
+因為 **ColorPickerWheel** 會繼承 **AttachToController**，所以它會在 [偵測 **器**] 面板中顯示 **Handedness** 和 **元素**。 我們會將 UI 附加至左方控制器上的「觸控板」元素。
 
 ![ColorPickerWheel 腳本](images/mr213-attachtocontroller-300px.jpg)
 
@@ -318,7 +318,7 @@ public class ColorPickerWheel : AttachToController, IPointerTarget
 
 **將物件附加至控制器的替代方法**
 
-建議您的腳本繼承自 **AttachToController** 並覆寫 **OnAttachToController** 。 不過，這可能不一定可行。 替代方法是使用它作為獨立元件。 當您想要在不重構腳本的情況下，將現有的預製專案附加至控制器時，這會很有用。 您只需在執行任何安裝程式之前，讓您的類別等待 IsAttached 設為 true。 最簡單的方法是使用協同程式作為「開始」。
+建議您的腳本繼承自 **AttachToController** 並覆寫 **OnAttachToController**。 不過，這可能不一定可行。 替代方法是使用它作為獨立元件。 當您想要在不重構腳本的情況下，將現有的預製專案附加至控制器時，這會很有用。 您只需在執行任何安裝程式之前，讓您的類別等待 IsAttached 設為 true。 最簡單的方法是使用協同程式作為「開始」。
 
 ```cs
 private IEnumerator Start() {
@@ -341,10 +341,10 @@ private IEnumerator Start() {
 * 瞭解如何取得觸控板輸入資料事件
 * 瞭解如何為您的應用程式體驗使用觸控板軸位置資訊
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-* **在 [階層** ] 面板中，按一下 [ **ColorPickerWheel** ]
-* 在 [偵測 **器** ] 面板的 [ **Animator** ] 底下，按兩下 [ **ColorPickerWheelController** ]
+* **在 [階層**] 面板中，按一下 [ **ColorPickerWheel** ]
+* 在 [偵測 **器**] 面板的 [ **Animator**] 底下，按兩下 [ **ColorPickerWheelController** ]
 * 您將能夠看到開啟的 **Animator** 索引標籤
 
 **使用 Unity 的動畫控制器顯示/隱藏 UI**
@@ -355,7 +355,7 @@ private IEnumerator Start() {
 
 **指示**
 
-* **在 [階層** ] 面板中，選取 [ **ColorPickerWheel** 預製專案
+* **在 [階層**] 面板中，選取 [ **ColorPickerWheel** 預製專案
 * 在 [偵測 **器** ] 面板中，按兩下 [ **ColorPickerWheel** 腳本] 以查看 Visual Studio 中的程式碼
 
 **ColorPickerWheel 腳本**
@@ -364,10 +364,10 @@ private IEnumerator Start() {
 
 在 **InteractionSourceUpdated ( # B1** 中，腳本會先檢查以確定它：
 
-* 實際上是 (obj 的「觸控板」事件。 **touchpadTouched** ) 
-* 源自左方控制器 (的 obj。 **handedness** ) 
+* 實際上是 (obj 的「觸控板」事件。**touchpadTouched**) 
+* 源自左方控制器 (的 obj。**handedness**) 
 
-如果兩者都是 true，表示觸控板位置 (obj。 **touchpadPosition** ) 會指派給 **selectorPosition** 。
+如果兩者都是 true，表示觸控板位置 (obj。**touchpadPosition**) 會指派給 **selectorPosition**。
 
 ```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
@@ -439,16 +439,16 @@ if (visible != visibleLastFrame)
 
 ![MR213_BrushToolOverride](images/mr213-brushtooloverride-500px.jpg)
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-* 按一下 **[階層** ] 面板中的 [ **MotionControllers** ]。
+* 按一下 **[階層**] 面板中的 [ **MotionControllers** ]。
 * 按一下 **替代右邊控制器** 欄位右邊的圓形。
-* 輸入 **' BrushController** '，然後從結果中選取預製專案。 您可以在資產/AppPrefabs/ **BrushController** 中找到它。
-* 勾選 [ **一律使用替代模型** ]
+* 輸入 **' BrushController**'，然後從結果中選取預製專案。 您可以在資產/AppPrefabs/**BrushController** 中找到它。
+* 勾選 [**一律使用替代模型**]
 
 ![MR213_BrushToolOverrideSlot](images/mr213-motioncontrollersoverride-700px.jpg)
 
-**BrushController** 預製專案不一定要 **包含在階層面板中** 。 不過，若要簽出其子元件：
+**BrushController** 預製專案不一定要 **包含在階層面板中**。 不過，若要簽出其子元件：
 
 * 在 [ **專案** ] 面板中，輸入 **BrushController** ，並將 **BrushController** 預製專案拖曳 **到 [階層** ] 面板中。
 
@@ -467,9 +467,9 @@ if (visible != visibleLastFrame)
 
 * 瞭解如何使用選取按鈕事件來啟動和停止線條繪圖
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-* 在 [ **專案** ] 面板中搜尋 **BrushController** 預製專案。
+* 在 [**專案**] 面板中搜尋 **BrushController** 預製專案。
 * 在 [偵測 **器** ] 面板中，按兩下 [ **BrushController** 腳本] 以查看 Visual Studio 中的程式碼
 
 **BrushController 腳本**
@@ -535,7 +535,7 @@ private IEnumerator DrawOverTime()
 }
 ```
 
-若要從色彩選擇器滾輪 UI 使用目前選取的色彩， **BrushController** 需要有 **ColorPickerWheel** 物件的參考。 因為 **BrushController** 預製專案在執行時間具現化為取代控制器，所以在執行時間必須設定任何對場景中物件的參考。 在此情況下，我們會使用 **GameObject FindObjectOfType** 來找出 **ColorPickerWheel** ：
+若要從色彩選擇器滾輪 UI 使用目前選取的色彩， **BrushController** 需要有 **ColorPickerWheel** 物件的參考。 因為 **BrushController** 預製專案在執行時間具現化為取代控制器，所以在執行時間必須設定任何對場景中物件的參考。 在此情況下，我們會使用 **GameObject FindObjectOfType** 來找出 **ColorPickerWheel**：
 
 ```cs
 private void OnEnable()
@@ -560,11 +560,11 @@ private void OnEnable()
 * 瞭解如何使用 Select 和抓住按鈕輸入事件
 * 瞭解如何將物件具現化
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案** ] 面板的 [搜尋] 方塊中，輸入 **ObjectSpawner** 。 您也可以在資產/AppPrefabs/上找到它
 * 將 **ObjectSpawner** 預製專案拖曳到 [階層 **] 面板中** 。
-* 按一下 **[階層** ] 面板中的 [ **ObjectSpawner** ]。
+* 按一下 **[階層**] 面板中的 [ **ObjectSpawner** ]。
 * **ObjectSpawner** 有一個名為 **Color Source** 的欄位。
 * 從 [階層 **] 面板中** ，將 [ **ColorPickerWheel** ] 參考拖曳到此欄位中。
 
@@ -639,18 +639,18 @@ private void SpawnObject()
 
 ## <a name="build-and-deploy-app-to-mixed-reality-portal"></a>建立應用程式並部署到混合實境入口
 
-* 在 Unity 中，選取 [ **File > Build Settings** ]。
-* 按一下 [ **新增開啟的場景** ]，將目前的場景加入 **組建中的場景** 。
-* 按一下 [建置]  。
+* 在 Unity 中，選取 [ **File > Build Settings**]。
+* 按一下 [ **新增開啟的場景** ]，將目前的場景加入 **組建中的場景**。
+* 按一下 [建置]。
 * 建立名為 "App" 的 **新資料夾** 。
 * 按一下 **應用程式** 資料夾。
-* 按一下 [選擇資料夾]  。
+* 按一下 [選擇資料夾]。
 * 當 Unity 完成時，將會出現檔案總管視窗。
 * 開啟 **應用程式** 資料夾。
 * 按兩下 [ **YourSceneName** ] Visual Studio 方案檔。
-* 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X64** 。
-* 按一下 [裝置] 按鈕旁邊的下拉箭號，然後選取 [ **本機電腦** ]。
-* 按一下 [ **Debug-> 啟動但不** 在功能表中進行調試]，或按 **Ctrl + F5** 。
+* 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X64**。
+* 按一下 [裝置] 按鈕旁邊的下拉箭號，然後選取 [ **本機電腦**]。
+* 按一下 [ **Debug-> 啟動但不** 在功能表中進行調試]，或按 **Ctrl + F5**。
 
 現在，應用程式已建立並安裝在混合實境入口中。 您可以透過混合實境入口中的 [開始] 功能表再次啟動它。
 
@@ -658,26 +658,26 @@ private void SpawnObject()
 
 ![MixedReality213 Main](images/mr213-main-600px.jpg)
 
-在本章中，您將瞭解如何使用自訂筆刷工具集合來取代預設的動作控制器模型。 針對您的參考，您可以在 [ **場景** ] 資料夾下找到完成的場景 **MixedReality213Advanced** 。
+在本章中，您將瞭解如何使用自訂筆刷工具集合來取代預設的動作控制器模型。 針對您的參考，您可以在 [**場景**] 資料夾下找到完成的場景 **MixedReality213Advanced** 。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
 * 在 [ **專案** ] 面板的 [搜尋] 方塊中，輸入 **BrushSelector** 。 您也可以在資產/AppPrefabs/上找到它
 * 將 **BrushSelector** 預製專案拖曳到 [階層 **] 面板中** 。
 * 針對組織，建立稱為 **筆刷** 的空白 GameObject
 * 將下列 prefabs 從 [ **專案** ] 面板拖曳至 **筆刷**
-    * 資產/AppPrefabs/ **BrushFat**
-    * 資產/AppPrefabs/ **BrushThin**
-    * 資產/AppPrefabs/ **橡皮擦**
-    * 資產/AppPrefabs/ **MarkerFat**
-    * 資產/AppPrefabs/ **MarkerThin**
-    * 資產/AppPrefabs/ **鉛筆**
+    * 資產/AppPrefabs/**BrushFat**
+    * 資產/AppPrefabs/**BrushThin**
+    * 資產/AppPrefabs/**橡皮擦**
+    * 資產/AppPrefabs/**MarkerFat**
+    * 資產/AppPrefabs/**MarkerThin**
+    * 資產/AppPrefabs/**鉛筆**
 
     ![筆刷](images/mixedreality213-brushes-250px.png)
 
-* 按一下 **[階層** ] 面板中的 [ **MotionControllers** 預製專案]。
-* 在 [偵測 **器** ] 面板中，取消核取 [ **移動控制器] 視覺化檢視** 上的 [ **永遠使用替代模型** ]
-* **在 [階層** ] 面板中，按一下 [ **BrushSelector** ]
+* 按一下 **[階層**] 面板中的 [ **MotionControllers** 預製專案]。
+* 在 [偵測 **器**] 面板中，取消核取 [**移動控制器] 視覺化檢視** 上的 [**永遠使用替代模型**]
+* **在 [階層**] 面板中，按一下 [ **BrushSelector** ]
 * **BrushSelector** 有一個名為 **ColorPicker** 的欄位
 * 從 [階層] 面板中，將 [ **ColorPickerWheel** ] 拖曳至 [偵測 **器** **] 面板中** 的 [ **ColorPicker** ] 欄位。
 
@@ -691,12 +691,12 @@ private void SpawnObject()
 
 **BrushSelector 預製專案**
 
-因為 **BrushSelector** 會繼承 **AttachToController** ，所以它會在 [偵測 **器** ] 面板中顯示 **Handedness** 和 **元素** 選項。 我們選取了 [ **右** ]，並 **指向** [順向]，將筆刷工具附加至右邊控制器。
+因為 **BrushSelector** 會繼承 **AttachToController**，所以它會在 [偵測 **器**] 面板中顯示 **Handedness** 和 **元素** 選項。 我們選取了 [ **右** ]，並 **指向** [順向]，將筆刷工具附加至右邊控制器。
 
 **BrushSelector** 會使用兩個公用程式：
 
-* **橢圓形** ：用來沿著橢圓形圖形來產生空間中的點。
-* **LineObjectCollection** ：使用任何線條類別產生的點來散發物件 (例如橢圓形) 。 這是我們將用來沿著橢圓形圖形來放置筆刷的內容。
+* **橢圓形**：用來沿著橢圓形圖形來產生空間中的點。
+* **LineObjectCollection**：使用任何線條類別產生的點來散發物件 (例如橢圓形) 。 這是我們將用來沿著橢圓形圖形來放置筆刷的內容。
 
 結合之後，這些公用程式可以用來建立放射狀功能表。
 
@@ -799,19 +799,19 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 ## <a name="advanced-design---teleportation-and-locomotion"></a>Advanced design-遙傳和 locomotion
 
-如果您想要允許使用者透過遙傳使用操縱杆來移動場景，請使用 **MixedRealityCameraParent** 而不是 **MixedRealityCamera** 。 您也需要新增 **InputManager** 和 **DefaultCursor** 。 因為 **MixedRealityCameraParent** 已經將 **MotionControllers** 和 **界限** 包含為子元件，所以您應該移除現有的 **MotionControllers** 和 **環境** 預製專案。
+如果您想要允許使用者透過遙傳使用操縱杆來移動場景，請使用 **MixedRealityCameraParent** 而不是 **MixedRealityCamera**。 您也需要新增 **InputManager** 和 **DefaultCursor**。 因為 **MixedRealityCameraParent** 已經將 **MotionControllers** 和 **界限** 包含為子元件，所以您應該移除現有的 **MotionControllers** 和 **環境** 預製專案。
 
-### <a name="instructions"></a>Instructions
+### <a name="instructions"></a>指示
 
-* **在 [階層** ] 面板中，刪除 [ **MixedRealityCamera** ]、[ **環境** ] 和 [ **MotionControllers** ]
+* **在 [階層**] 面板中，刪除 [ **MixedRealityCamera**]、[**環境**] 和 [ **MotionControllers** ]
 * 在 [ **專案] 面板** 中，搜尋下列 prefabs，並將 **其拖曳** 到 [階層] 面板中：
-    * 資產/AppPrefabs/Input/Prefabs/ **MixedRealityCameraParent**
-    * 資產/AppPrefabs/Input/Prefabs/ **InputManager**
-    * 資產/AppPrefabs/Input/Prefabs/Cursor/ **DefaultCursor**
+    * 資產/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
+    * 資產/AppPrefabs/Input/Prefabs/**InputManager**
+    * 資產/AppPrefabs/Input/Prefabs/Cursor/**DefaultCursor**
 
     ![混合實境相機父系](images/mr213-cameraparent-300px.png)
 
-* **在 [階層** ] 面板中，按一下 [ **輸入管理員** ]
+* **在 [階層**] 面板中，按一下 [**輸入管理員**]
 * 在 [偵測 **器** ] 面板中，向下滾動至 **簡單的單一指標選取器** 區段
 * 從 [ **階層** ] 面板中，將 [ **DefaultCursor** ] 拖曳至 [ **游標** ] 欄位
 
@@ -832,9 +832,9 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 ## <a name="completed-scenes"></a>完成的場景
 
 * 在 Unity 的 [ **專案** ] 面板中，按一下 [ **場景** ] 資料夾。
-* 您會發現兩個 Unity 場景 **MixedReality213** 和 **MixedReality213Advanced** 。
-    * **MixedReality213** ：已完成場景與單一筆刷
-    * **MixedReality213Advanced** ：已完成場景，具有具有 select 按鈕的按量範例的多筆刷
+* 您會發現兩個 Unity 場景 **MixedReality213** 和 **MixedReality213Advanced**。
+    * **MixedReality213**：已完成場景與單一筆刷
+    * **MixedReality213Advanced**：已完成場景，具有具有 select 按鈕的按量範例的多筆刷
 
 ## <a name="see-also"></a>另請參閱
 

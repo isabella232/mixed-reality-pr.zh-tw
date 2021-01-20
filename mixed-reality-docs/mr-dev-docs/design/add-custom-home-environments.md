@@ -6,19 +6,19 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、自訂環境、地點、cliff 房子、skyloft、使用者、建立、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 2d88b4e20c2703b554572c0d39d5c69767164694
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848085"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583303"
 ---
 # <a name="design-your-own-immersive-environments"></a>設計自己的沉浸式環境
 
 >[!NOTE]
 >這是實驗性的功能。 請試試看，它很有趣，但如果一切沒有如預期般運作，則不會感到驚訝。 我們正在評估這項功能的可行性並對其使用感興趣，因此請告訴我們您的體驗 (以及您在 [開發人員論壇](https://forums.hololens.com/categories/custom-home-environments)) 找到的任何 bug。
 
-從 [2018 年4月更新 Windows 10](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)開始，我們已啟用實驗性功能，可讓您將自訂環境新增至 [開始] 功能表) 上的 [位置選擇器] (，以做為 [Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)使用。 Windows Mixed Reality 有兩個預設環境：懸崖之屋和 Skyloft，您可以選擇做為您的首頁。 建立自訂環境可讓您使用自己的建立來展開清單。 這項功能是以早期的狀態提供，以評估建立者和開發人員的興趣。 查看您所建立的各種領域，並瞭解如何使用不同的 authoring tools。
+從 [2018 年4月更新 Windows 10](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)開始，我們已啟用實驗性功能，可讓您將自訂環境新增至 [開始] 功能表) 上的 [位置選擇器] (，以做為 [Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)使用。 Windows Mixed Reality 有兩個預設環境：懸崖之屋和 Skyloft，您可以選擇做為您的首頁。 建立自訂環境可讓您使用自己的建立來展開清單。 這項功能是以早期的狀態提供，以評估建立者和開發人員的興趣。 查看您所建立的各種領域，並瞭解如何使用不同的 authoring tools。
 
 使用自訂環境時，您會注意到 teleporting、與應用程式互動，以及放置全像投影一樣的運作方式，與在懸崖之屋和 Skyloft 中一樣。 您可以在幻想環境中流覽 web，或使用全像幻想式道具城市來填滿，這可能是無限的。
 
@@ -32,7 +32,7 @@ ms.locfileid: "97848085"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
      <tr>
@@ -149,6 +149,5 @@ Windows Mixed Reality 會在載入環境時將 glTF 單位轉譯為1計量。 �
 
 當您建立自訂環境時，它會使用聲場呈現模擬，而不符合您所建立的實體空間。 音效可能來自錯誤的方向，而且可能音效 muffled。 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [GitHub 上的 Windows Mixed Reality 資產轉換器 () ](https://github.com/Microsoft/glTF-Toolkit/releases)
-

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 空間對應、HoloLens、混合現實、表面重建、網格、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、場景理解、世界網格、遮蔽、物理、流覽、表面觀察器、轉譯、網格處理
-ms.openlocfilehash: 4305a291a2a83f4425c5a80d25dd8145a7033492
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848202"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583278"
 ---
 # <a name="spatial-mapping"></a>空間對應
 
@@ -32,7 +32,7 @@ ms.locfileid: "97848202"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -78,7 +78,7 @@ ms.locfileid: "97848202"
 
 ## <a name="what-influences-spatial-mapping-quality"></a>什麼會影響空間對應品質？
 
-[這裡](../environment-considerations-for-hololens.md)詳述的數個因素可能會影響這些錯誤的頻率和嚴重性。  不過，您應該設計您的應用程式，讓使用者即使在空間對應資料中發生錯誤，也可以達成其目標。
+[這裡](/hololens/hololens-environment-considerations)詳述的數個因素可能會影響這些錯誤的頻率和嚴重性。  不過，您應該設計您的應用程式，讓使用者即使在空間對應資料中發生錯誤，也可以達成其目標。
 
 ## <a name="common-usage-scenarios"></a>常見使用案例
 
@@ -120,7 +120,7 @@ ms.locfileid: "97848202"
 
 您也必須考慮應用程式的 [掃描體驗](spatial-mapping.md#the-environment-scanning-experience) 會如何影響其物理模擬。 首先，遺漏的表面將不會與任何值衝突;當橡膠球在 corridor 和已知世界結束時，會發生什麼事？ 其次，您必須決定是否要在一段時間後繼續回應環境中的變更。 在某些情況下，您會想要儘快回應;比方說，如果使用者使用門和傢俱作為內送羅馬箭號 tempest 的可移動 barricades。 但在其他情況下，您可能會想要忽略新的更新;如果您的狗決定坐在播放軌的中間，讓您的全像 racetrack 在地面上推動您的全像運動車，可能突然不太有趣。
 
-### <a name="navigation"></a>瀏覽
+### <a name="navigation"></a>導覽
 
 應用程式可以使用空間對應資料來授與全息字元 (或代理程式) 能夠以真實人員的相同方式流覽真實世界。 這有助於加強全像攝影字元的存在，方法是將其限制為與使用者和朋友的相同自然、熟悉的行為集合。
 
@@ -209,13 +209,13 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
    * 有一點要注意的是，空間網格與3D 演出者可能建立的網格類型不同。 三角形拓撲不會像人類建立的拓撲一樣成為「乾淨」，而網格將會因 [各種錯誤](spatial-mapping.md#what-influences-spatial-mapping-quality)而受到影響。
    * 若要建立美觀的視覺效果美觀，您可能會想要進行一些 [網格處理](spatial-mapping.md#mesh-processing)，例如填滿孔或平滑表面法線。 您也可能想要使用著色器將演出者設計的材質投影到您的網狀架構，而不是直接視覺化網格拓朴和法線。
 * 適用于真實世界表面的遮蔽全息
-   * 空間介面可以在深度專用階段中轉譯，只會影響 [深度緩衝區](https://msdn.microsoft.com/library/windows/desktop/bb219616(v=vs.85).aspx) ，而不會影響色彩呈現目標。
+   * 空間介面可以在深度專用階段中轉譯，只會影響 [深度緩衝區](/windows/win32/direct3d9/depth-buffers) ，而不會影響色彩呈現目標。
    * 這會質數深度緩衝區，以遮蔽後續呈現空間介面背後的全像投影。 確切的全像遮蔽，可增強全像是在使用者的實體空間內真正存在的全像的意義。
-   * 若要啟用深度呈現，請更新您的 blend 狀態，以將所有色彩呈現目標的 [RenderTargetWriteMask](https://msdn.microsoft.com/library/windows/desktop/hh404492(v=vs.85).aspx) 設為零。
+   * 若要啟用深度呈現，請更新您的 blend 狀態，以將所有色彩呈現目標的 [RenderTargetWriteMask](/windows/win32/api/d3d11_1/ns-d3d11_1-d3d11_render_target_blend_desc1) 設為零。
 * 用於修改實際表面的全像 pixels occluded 影像外觀
-   * Pixels occluded 時，通常會隱藏呈現的幾何。 這是藉由將深度樣板狀態中的深度函 [式](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx) 設定為「小於或等於」來達成，這會使幾何只有在比先前轉譯的幾何 **更接近** 相機的位置才可見。
+   * Pixels occluded 時，通常會隱藏呈現的幾何。 這是藉由將深度樣板狀態中的深度函 [式](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc) 設定為「小於或等於」來達成，這會使幾何只有在比先前轉譯的幾何 **更接近** 相機的位置才可見。
    * 不過，將某些幾何保持 pixels occluded，以及在 pixels occluded 為提供視覺回饋給使用者的方式時修改其外觀可能會很有用。 例如，這可讓應用程式向使用者顯示物件的位置，同時讓它清楚地顯示在真實世界表面的背後。
-   * 若要達到此目的，請使用不同的著色器，以建立所需的「pixels occluded」外觀來第二次轉譯幾何。 第二次轉譯幾何之前，請對您的 [深度樣板狀態](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx)進行兩個變更。 首先，將深度函式設定為 [大於或等於]，如此一來，就只會顯示幾何與所有先前轉譯之幾何 **更遠** 的位置。 其次，將 DepthWriteMask 設定為零，如此就不會修改深度緩衝區， (深度緩衝區應繼續表示 **最接近** 相機) 的幾何深度。
+   * 若要達到此目的，請使用不同的著色器，以建立所需的「pixels occluded」外觀來第二次轉譯幾何。 第二次轉譯幾何之前，請對您的 [深度樣板狀態](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)進行兩個變更。 首先，將深度函式設定為 [大於或等於]，如此一來，就只會顯示幾何與所有先前轉譯之幾何 **更遠** 的位置。 其次，將 DepthWriteMask 設定為零，如此就不會修改深度緩衝區， (深度緩衝區應繼續表示 **最接近** 相機) 的幾何深度。
 
 轉譯空間對應網格時，[效能](../develop/platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)是很重要的考慮。 以下是轉譯空間對應網格專用的一些轉譯效能技術：
 * 調整三角形密度
@@ -227,11 +227,11 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
    * 由於會對每個網狀架構執行剔除，而空間介面可能很大，因此將每個空間介面網格分成較小的區塊，可能會導致更有效率的剔除 (在) 中呈現較少的三角形。 但是，您擁有的網格越多，您必須進行的繪製呼叫越多，就會增加 CPU 成本。 在極端情況下，以錐剔除計算本身甚至可以有可測量的 CPU 成本。
 * 調整轉譯順序
    * 空間表面通常很大，因為它們代表使用者在周圍的整個環境。 GPU 上的圖元處理成本可能很高，特別是在有多個可見幾何的層級 (包括空間表面和其他全像) 。 在此情況下，最接近使用者的圖層將會進一步遮蔽任何層級，因此任何花費在更遠距離圖層的 GPU 時間都不會浪費。
-   * 若要減少 GPU 上的這項重複工作，最好先將不透明的表面轉譯 (更接近的介面，最後) 。 「不透明」是指在 [深度樣板狀態](https://msdn.microsoft.com/library/windows/desktop/ff476110(v=vs.85).aspx)中，DepthWriteMask 設定為一個的表面。 轉譯最接近的介面時，它們會將深度緩衝區質數，讓 GPU 上的圖元處理器可以有效率地略過更遠的表面。
+   * 若要減少 GPU 上的這項重複工作，最好先將不透明的表面轉譯 (更接近的介面，最後) 。 「不透明」是指在 [深度樣板狀態](/windows/win32/api/d3d11/ns-d3d11-d3d11_depth_stencil_desc)中，DepthWriteMask 設定為一個的表面。 轉譯最接近的介面時，它們會將深度緩衝區質數，讓 GPU 上的圖元處理器可以有效率地略過更遠的表面。
 
 ## <a name="mesh-processing"></a>網格處理
 
-應用程式可能會想要在空間介面網格上進行 [各種作業](spatial-mapping.md#mesh-processing) ，以符合其需求。 每個空間介面網格所提供的索引和頂點資料，會使用與用來呈現所有新式轉譯 Api 中三角形網格的 [頂點和索引緩衝區](https://msdn.microsoft.com/library/windows/desktop/bb147325%28v=vs.85%29.aspx) 相同的熟悉版面配置。 不過，有一個要注意的關鍵事實是，空間對應三角形有 **正面的纏繞順序**。 每個三角形都是以網格的索引緩衝區中的三個頂點索引來表示，而這些索引將會在從 **前端** 看到三角形時，以 **順** 向順序識別三角形的頂點。 空間介面網格的前端 (或外) ，會與您預期的正面 (可見的真實世界表面) 相同。
+應用程式可能會想要在空間介面網格上進行 [各種作業](spatial-mapping.md#mesh-processing) ，以符合其需求。 每個空間介面網格所提供的索引和頂點資料，會使用與用來呈現所有新式轉譯 Api 中三角形網格的 [頂點和索引緩衝區](/windows/win32/direct3d9/rendering-from-vertex-and-index-buffers) 相同的熟悉版面配置。 不過，有一個要注意的關鍵事實是，空間對應三角形有 **正面的纏繞順序**。 每個三角形都是以網格的索引緩衝區中的三個頂點索引來表示，而這些索引將會在從 **前端** 看到三角形時，以 **順** 向順序識別三角形的頂點。 空間介面網格的前端 (或外) ，會與您預期的正面 (可見的真實世界表面) 相同。
 
 如果介面觀察器所提供的最粗略三角形密度仍能力不佳粗略，則應用程式應該只進行網格簡化，這項工作的計算成本很高，而且已經由執行時間執行，以產生各種提供的詳細資料層級。
 
@@ -292,7 +292,7 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
    * 應用程式可能需要掃描目前房間中的所有表面，包括使用者背後的所有表面。
    * 例如，遊戲可能會將使用者置於 Gulliver 的角色中，從數百個從所有方向接近的微小 Lilliputians siege。
    * 在這種情況下，應用程式必須判斷目前空間中已掃描的表面數量，並指示使用者的注視填滿顯著的間隙。
-   * 此程式的關鍵是提供視覺回饋，讓使用者清楚知道尚未掃描哪些表面。 例如，應用程式可以使用以 [距離為基礎的霧化](https://msdn.microsoft.com/library/windows/desktop/bb173401%28v=vs.85%29.aspx) ，以視覺方式反白顯示空間對應介面未涵蓋的區域。
+   * 此程式的關鍵是提供視覺回饋，讓使用者清楚知道尚未掃描哪些表面。 例如，應用程式可以使用以 [距離為基礎的霧化](/windows/win32/direct3d9/fog-formulas) ，以視覺方式反白顯示空間對應介面未涵蓋的區域。
 
 * **取得環境的初始快照集**
    * 在取得初始「快照集」之後，應用程式可能會想要忽略環境中的所有變更。
@@ -373,7 +373,7 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
 * 為了讓介面網格正確源，每個 GameObject 都必須在使用中，然後才會將它傳送至 SurfaceObserver，以建立其網格。 否則，網格會顯示在您的空間中，但以怪角度旋轉。
 * 執行與 SurfaceObserver 通訊之腳本的 GameObject 必須設定為來源。 否則，您建立並傳送給 SurfaceObserver 的所有 Gameobject 都有其格線，其位移等於父遊戲物件的位移。 這可以讓您的網格顯示數個計量，而這會讓您難以進行偵錯工具的處理。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [座標系統](coordinate-systems.md)
 * [DirectX 中的空間對應](../develop/native/spatial-mapping-in-directx.md)

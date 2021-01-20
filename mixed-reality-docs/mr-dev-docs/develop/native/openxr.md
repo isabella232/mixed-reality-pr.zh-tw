@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、DirectX、原生、原生應用程式、自訂引擎、中介軟體
-ms.openlocfilehash: ba03799ff42d3a4c27799dcf2f4035d408360120
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 76193cdf3c790037474b66de9fbbbd1da8f31199
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613124"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583791"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -80,7 +80,7 @@ OpenXR 規格定義了延伸機制，可讓執行時間實作者在<a href="http
 
 *Minecraft 的新 RenderDragon 引擎正在使用 OpenXR 建立其桌上型電腦 VR 支援*
 
-Microsoft 一直在使用 Unity 和複雜的遊戲，以確保混合現實的未來已開放使用，而不只是為了 HoloLens 2，還能橫跨電腦 VR 的完整廣度，包括 [HP 的新的「回音」 G2 耳機](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。  如需有關開發 HoloLens (第一代) 的詳細資訊，請參閱 [版本](https://docs.microsoft.com/hololens/hololens1-release-notes)資訊。
+Microsoft 一直在使用 Unity 和複雜的遊戲，以確保混合現實的未來已開放使用，而不只是為了 HoloLens 2，還能橫跨電腦 VR 的完整廣度，包括 [HP 的新的「回音」 G2 耳機](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。  如需有關開發 HoloLens (第一代) 的詳細資訊，請參閱 [版本](/hololens/hololens1-release-notes)資訊。
 
 若要瞭解如何在 Unity、Unreal Engine 或您自己的引擎中開始使用 OpenXR，請繼續閱讀！
 

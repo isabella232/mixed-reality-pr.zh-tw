@@ -5,12 +5,12 @@ author: mattwojo
 ms.author: mattwoj
 ms.date: 01/11/2021
 ms.topic: article
-ms.openlocfilehash: 8add6413b0ff4bb32c15d1fce10977397aa33ba1
-ms.sourcegitcommit: aa29b68603721e909f08f352feed24c65d2e505e
+ms.openlocfilehash: f60179c35f6103c4771ea2777e05829bfb7a8ce4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
-ms.locfileid: "98108851"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583044"
 ---
 # <a name="contributing-to-mixed-reality-developer-documentation"></a>參與混合現實開發人員檔
 
@@ -24,7 +24,7 @@ Mixed Reality 檔現在位於 docs.microsoft.com 平臺上，其使用具有 Mar
 
 | 儲存機制名稱 | URL |
 | --- | --- |
-| 混合實境 | [MicrosoftDocs/mixed-事實](https://docs.microsoft.com/windows/mixed-reality) |
+| 混合實境 | [MicrosoftDocs/mixed-事實](/windows/mixed-reality) |
 | VR 愛好者指南 | [MicrosoftDocs/mixed-現實/愛好者指南](https://github.com/MicrosoftDocs/mixed-reality/tree/docs/enthusiast-guide) |
 | HoloLens | [MicrosoftDocs/HoloLens](https://github.com/MicrosoftDocs/Hololens) |
 
@@ -131,13 +131,13 @@ Mixed Reality 檔現在位於 docs.microsoft.com 平臺上，其使用具有 Mar
 
 - [Markdown 基本概念](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown 的參考海報](images/MarkdownPoster.pdf)
-- [針對 docs.microsoft.com 撰寫 Markdown 的其他資源](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [針對 docs.microsoft.com 撰寫 Markdown 的其他資源](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>加入資料表
 
 由於 docs.microsoft.com 樣式表的方式，即使您嘗試內嵌 CSS，它們也不會有框線或自訂樣式。 這項作業會在一小段時間內正常運作，但最終平臺會從資料表中去除樣式。 所以事先規劃，讓您的資料表保持簡單明瞭。 [以下是讓 Markdown 資料表更簡單的網站](https://www.tablesgenerator.com/markdown_tables)。
 
-如果您使用 Visual Studio Code， [適用于 Visual Studio Code 的檔 Markdown 延伸](https://docs.microsoft.com/teamblog/docs-extension) 模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code) 以編輯檔。
+如果您使用 Visual Studio Code， [適用于 Visual Studio Code 的檔 Markdown 延伸](/teamblog/docs-extension) 模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code) 以編輯檔。
 
 ### <a name="adding-images"></a>新增影像
 
@@ -176,7 +176,7 @@ Microsoft 員工：一旦您的投稿合併到「主要」分支之後，您就�
 
 基於 [上述](#editing-in-the-browser-vs-editing-with-a-desktop-client)原因，您可能會偏好使用桌面用戶端來編輯檔，而不是使用網頁瀏覽器。 我們建議使用 [Visual Studio Code](https://code.visualstudio.com/)。
 
-### <a name="setup"></a>設定
+### <a name="setup"></a>安裝程式
 
 請依照下列步驟設定 Visual Studio Code，以使用此存放庫：
 

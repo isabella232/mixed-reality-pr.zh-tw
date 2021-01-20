@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、全息圖、學術、教學課程、模擬器、HoloLens、混合的現實學術、unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、Windows 10、注視、手勢、語音輸入、空間音效、空間對應
-ms.openlocfilehash: 3499011b8c91168bf27522e5f6f287b14295283e
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678307"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583697"
 ---
 # <a name="mr-basics-101e-complete-project-with-emulator"></a>MR Basics 101E：使用模擬器完成專案
 
@@ -28,15 +28,15 @@ ms.locfileid: "94678307"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Basics 101E：使用模擬器完成專案</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦。
 

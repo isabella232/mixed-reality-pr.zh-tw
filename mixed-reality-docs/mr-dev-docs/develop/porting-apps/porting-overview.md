@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植、unity、中介軟體、引擎、UWP、Win32
-ms.openlocfilehash: 5a57c73481e80e5ab6fac1bd02b83c5d3dfaabb6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 268d98b45aa659614e0266bfd1add7c7ed2f684a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007488"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583582"
 ---
 # <a name="porting-overview"></a>移植概觀
 
@@ -48,7 +48,7 @@ ms.locfileid: "98007488"
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>HoloLens (第1代) Unity 應用程式到 HoloLens 2
 
-如果您有現有的 HoloLens (第1代) Unity 應用程式，而您想要將其移植到 HoloLens 2，請依照 [HoloLens 移植文章](../unity/mrtk-porting-guide.md)中的指示進行。
+如果您有現有的 HoloLens (第1代) Unity 應用程式，而您想要將其移植到 HoloLens 2，請依照 [HoloLens 移植文章](./porting-hl1-hl2.md)中的指示進行。
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 頭戴式裝置
 
@@ -61,4 +61,3 @@ ms.locfileid: "98007488"
 ### <a name="2d-universal-windows-applications"></a>2D 通用 Windows 應用程式
 
 如果您有想要移植到 Windows Mixed Reality 沉浸式耳機或 HoloLens 的現有 2D UWP 應用程式，請遵循我們 [的移植 2D uwp 應用程式，以取得 Windows Mixed Reality 的](building-2d-apps.md) 指示。
-

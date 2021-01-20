@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 2D 應用程式、UWP、平面應用程式、HoloLens、沉浸式耳機、應用程式模型、上一頁按鈕、應用程式行、DPI、解析度、縮放、移植、HoloLens 1 代、HoloLens 2、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10
-ms.openlocfilehash: b2df0b0a7cb598fead09016c528bd6a81c6ea238
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612962"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583536"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>更新 Windows Mixed Reality 的 2D UWP 應用程式
 
@@ -25,7 +25,7 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 
 若要建立混合現實的新2D 應用程式，您可以建立標準2D 通用 Windows 平臺 (UWP) 應用程式。 應用程式不需要進行任何其他應用程式變更，就可以在混合現實中以平板的形式執行。
 
-若要開始建立 2D UWP 應用程式，請參閱 [建立您的第一個應用程式](https://docs.microsoft.com/windows/uwp/get-started/your-first-app) 文章。
+若要開始建立 2D UWP 應用程式，請參閱 [建立您的第一個應用程式](/windows/uwp/get-started/your-first-app) 文章。
 
 ### <a name="bringing-an-existing-2d-store-app-to-uwp"></a>將現有的2D 存放區應用程式帶入 UWP
 
@@ -34,10 +34,10 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 
 |  起點  |  AppX 資訊清單平臺目標  |  如何將此通用？ | 
 |----------|----------|----------|
-|  Windows Phone (Silverlight)  |  Silverlight 應用程式資訊清單 |  [遷移至 WinRT](https://msdn.microsoft.com/library/windows/apps/dn642486(v=vs.105).aspx) | 
-|  Windows Phone 8.1 通用  |  不包含平臺目標的 8.1 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8  |  8個不包含平臺目標的 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](https://msdn.microsoft.com/library/mt148501.aspx) | 
-|  Windows Store 8.1 通用  |  不包含平臺目標的 8.1 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](https://msdn.microsoft.com/library/mt148501.aspx) | 
+|  Windows Phone (Silverlight)  |  Silverlight 應用程式資訊清單 |  [遷移至 WinRT](/previous-versions/windows/apps/dn642486(v=vs.105)) | 
+|  Windows Phone 8.1 通用  |  不包含平臺目標的 8.1 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8  |  8個不包含平臺目標的 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
+|  Windows Store 8.1 通用  |  不包含平臺目標的 8.1 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
 如果您目前有 2D Unity 應用程式在電腦上以 Win32 應用程式的形式建立 **，Mac & Linux 獨立** 組建目標上，請切換至 **通用 Windows 平臺** 的組建目標，以瞭解混合的實際情況。
 
@@ -116,7 +116,7 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 
 ![從回應式設計](images/scale-500px.png)
 
-Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖元**。 這表示，開發人員會依照 Windows 10 的人類介面指導方針來設計其 UI 以取得有效的圖元，而 Windows 調整可確保這些有效的圖元在裝置、解析度、DPI 等方面都是正確的大小。 如需詳細資訊，請參閱 MSDN 和此[組建簡報](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)的這篇[絕佳閱讀](https://msdn.microsoft.com/library/windows/apps/Dn958435.aspx)。
+Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖元**。 這表示，開發人員會依照 Windows 10 的人類介面指導方針來設計其 UI 以取得有效的圖元，而 Windows 調整可確保這些有效的圖元在裝置、解析度、DPI 等方面都是正確的大小。 如需詳細資訊，請參閱 MSDN 和此[組建簡報](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)的這篇[絕佳閱讀](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design)。
 
 即使有獨特的能力可將世界各地的應用程式放在不同的距離，建議使用類似電視的觀賞距離，以產生最佳的可讀性，並與注視/手勢互動。 因此，Mixed Reality 首頁中的虛擬平板會在下列位置顯示您的平面 UWP 視圖：
 
@@ -131,7 +131,7 @@ Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖
 
 **任務**
 * 遵循 [Windows 10 的人體介面指導方針 (HIG) ](https://dev.windows.com/design) 樣式、字型大小和按鈕大小。 HoloLens 將會執行工作，以確保您的應用程式會有相容的應用程式模式、可讀取的文字大小，以及適當的點擊目標大小。
-* 確定您的 UI 遵循最佳作法，以提供最適合 HoloLens 的獨特解析度和 DPI 的 [回應式設計](https://msdn.microsoft.com/library/windows/apps/dn958435.aspx) 。
+* 確定您的 UI 遵循最佳作法，以提供最適合 HoloLens 的獨特解析度和 DPI 的 [回應式設計](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) 。
 * 使用來自 Windows 的「淺色」色彩主題建議。
 
 **不要：**
@@ -147,7 +147,7 @@ Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖
 
 **標題：** 顯示與應用程式實例相關聯之磚的 *displayname*
 
-[**上一頁] 按鈕：** 按下時，會引發 *[BackRequested](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.backrequested.aspx)* 事件。 [上一頁] 按鈕可見度是由 *[SystemNavigationManager. AppViewBackButtonVisibility](https://msdn.microsoft.com/library/windows/apps/windows.ui.core.systemnavigationmanager.aspx)* 所控制。
+[**上一頁] 按鈕：** 按下時，會引發 *[BackRequested](/uwp/api/Windows.UI.Core.SystemNavigationManager)* 事件。 [上一頁] 按鈕可見度是由 *[SystemNavigationManager. AppViewBackButtonVisibility](/uwp/api/Windows.UI.Core.SystemNavigationManager)* 所控制。
 
 ![2D 應用程式視圖中的應用程式行 UI](images/12697297-10104100857470613-1470416918759008487-o-500px.jpg)<br>
 *2D 應用程式視圖中的應用程式行 UI*
@@ -162,7 +162,7 @@ HoloLens 使用 advanced depth 感應器來查看世界並查看使用者。 這
 
 使用桌上型耳機時，使用者可以使用移動控制器來指向應用程式並採取動作。 他們也可以使用遊戲台，以物件作為其注視。
 
-Windows 會為 UWP 應用程式處理這種複雜性，並將您的 [注視](../../design/gaze-and-commit.md)、手勢、語音和移動控制器輸入轉譯成可抽象化輸入機制的 [指標事件](https://msdn.microsoft.com/library/windows/apps/mt404610#pointer_events) 。 比方說，使用者可能已在移動控制站上使用手或提取 Select 觸發程式，但是2D 應用程式不需要知道輸入的來源-它們只會看到2D 觸控按，如同在觸控式螢幕上一樣。
+Windows 會為 UWP 應用程式處理這種複雜性，並將您的 [注視](../../design/gaze-and-commit.md)、手勢、語音和移動控制器輸入轉譯成可抽象化輸入機制的 [指標事件](/windows/uwp/design/input/handle-pointer-input#pointer_events) 。 比方說，使用者可能已在移動控制站上使用手或提取 Select 觸發程式，但是2D 應用程式不需要知道輸入的來源-它們只會看到2D 觸控按，如同在觸控式螢幕上一樣。
 
 以下是將 UWP 應用程式帶入 HoloLens 時，應瞭解輸入的高階概念/案例：
 * [](../../design/gaze-and-commit.md)您可以透過在應用程式周圍撥雲見日，以非預期地觸發功能表、flyouts 或其他使用者介面元素，來切換到暫止事件。

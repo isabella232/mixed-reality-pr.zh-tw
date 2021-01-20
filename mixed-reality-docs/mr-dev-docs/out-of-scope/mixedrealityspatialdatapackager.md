@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe、MixedRealitySpatialDataPackager.exe、MixedRealitySpatialDataPackager
-ms.openlocfilehash: df6757730c8a5448d96811bfe4ce024f6942dc07
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680553"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583644"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>混合現實空間資料封裝工具檔
 
@@ -37,7 +37,7 @@ ms.locfileid: "91680553"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -71,8 +71,7 @@ ms.locfileid: "91680553"
 4. 將空白、textureless 的表面最小化，例如在白色牆上放置不同海報的範圍
 5. 對應場景中不含動態物件的空間，例如移動人員
 6. 透過 Insider Preview (可取得的匯入鎖定地圖) 
-7. 當追蹤品質降低，並（或）環境中有變更 (光源或物件配置中的變更時，將地圖解除鎖定並重新掃描環境) 
-***
+7. 當追蹤品質降低，並（或）環境中有變更 (光源或物件配置中的變更時，請解除鎖定地圖並重新掃描環境) * * _
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>使用隨附腳本執行混合現實空間資料封裝程式
 
@@ -154,7 +153,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 匯入會刪除現有的空間資料，並將其取代為指定之目錄中的資料。 應用程式名稱輸入會指定應匯入空間錨點的目標應用程式套件名稱，而目標使用者 SID 會指定應該具有已匯入空間錨點存取權的使用者。 目標套件系列名稱和使用者 Sid 必須符合電腦上現有的值，否則 exe 將會失敗。
 
 
-***
+_**
 ## <a name="error-messages"></a>錯誤訊息
 此外，下列錯誤訊息也會伴隨 HRESULT
 

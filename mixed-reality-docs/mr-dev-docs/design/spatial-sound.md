@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: 空間音效、環繞音效、3d 音訊、3d 音效、空間音訊、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、個案研究、聲場
-ms.openlocfilehash: b65a4ff3dc64863f02f1459fa0c3adc5d34b0703
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848167"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583256"
 ---
 # <a name="audio-in-mixed-reality"></a>混合現實的音效
 
@@ -43,7 +43,7 @@ ms.locfileid: "97848167"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第一代) </strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第一代) </strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -91,7 +91,7 @@ Hrtf 會操控各頻間的耳之間的層級和階段差異。 它們是以人�
 
 ### <a name="spatializer-platform-support"></a>空間定位器平臺支援
 
-Windows 透過 [ISPATIALAUDIOCLIENT API](https://docs.microsoft.com/windows/win32/coreaudio/spatial-sound)提供 spatialization，包括 hrtf。 此 API 會向應用程式公開 HoloLens 2 HRTF 硬體加速。
+Windows 透過 [ISPATIALAUDIOCLIENT API](/windows/win32/coreaudio/spatial-sound)提供 spatialization，包括 hrtf。 此 API 會向應用程式公開 HoloLens 2 HRTF 硬體加速。
 
 ### <a name="spatializer-middleware-support"></a>空間定位器中介軟體支援
 
@@ -103,7 +103,7 @@ Windows 透過 [ISPATIALAUDIOCLIENT API](https://docs.microsoft.com/windows/win3
 
 空間音訊大約是方向。 其他維度包括遮蔽、障礙物、回音、傳送和來源模型。 這些維度 *統稱為聲場。* 在沒有聲場的情況下，hrtf 音效缺乏認知距離。
 
-聲場的治療範圍從簡單到複雜。 您可以使用任何音訊引擎所支援的回音，將 hrtf 音效推送至接聽程式的環境。 聲場系統（例如 [聲場專案](https://aka.ms/acoustics)  ）提供更豐富且更吸引人的聲場處理。 聲場專案可以建立音效上牆、大門和其他場景幾何的效果模型。 在開發階段已知相關場景幾何的情況下，這是有效的選項。
+聲場的治療範圍從簡單到複雜。 您可以使用任何音訊引擎所支援的回音，將 hrtf 音效推送至接聽程式的環境。 聲場系統（例如 [聲場專案](/gaming/acoustics/what-is-acoustics)  ）提供更豐富且更吸引人的聲場處理。 聲場專案可以建立音效上牆、大門和其他場景幾何的效果模型。 在開發階段已知相關場景幾何的情況下，這是有效的選項。
 
 ## <a name="next-steps"></a>後續步驟
 

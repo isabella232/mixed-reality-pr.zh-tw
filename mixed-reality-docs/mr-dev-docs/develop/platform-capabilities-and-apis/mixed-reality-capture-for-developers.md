@@ -6,19 +6,19 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: 88b31d139f01c6cbe0567203e39f7640270f7716
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
+ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247721"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583670"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
 
 > [!NOTE]
 > 請參閱下面 [的 PV 攝影機](#render-from-the-pv-camera-opt-in) 轉譯，以取得 HoloLens 2 新的 MRC 功能的指引。
 
-您可以隨時 (的) 相片或影片進行 [混合的現實 capture](../../mixed-reality-capture.md) ，但在開發應用程式時，請記住幾件事。 這包括了 MRC 視覺品質的最佳作法，並在 MRCs 時回應系統變更。
+您可以隨時 (的) 相片或影片進行 [混合的現實 capture](/hololens/holographic-photos-and-videos) ，但在開發應用程式時，請記住幾件事。 這包括了 MRC 視覺品質的最佳作法，並在 MRCs 時回應系統變更。
 
 開發人員也可以將混合現實的捕獲和插入順暢地整合到他們的應用程式中。
 
@@ -61,7 +61,7 @@ HoloLens 2 新增了當混合的現實捕捉正在執行時，可讓沉浸式應
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-directx"></a>啟用 DirectX 中的 PhotoVideoCamera HolographicViewConfiguration
 
-若要選擇從 PV 攝影機轉譯，應用程式只會啟用 PhotoVideoCamera 的 [HolographicViewConfiguration](https://docs.microsoft.com/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)：
+若要選擇從 PV 攝影機轉譯，應用程式只會啟用 PhotoVideoCamera 的 [HolographicViewConfiguration](/uwp/api/Windows.Graphics.Holographic.HolographicViewConfiguration)：
 ```csharp
 var display = Windows.Graphics.Holographic.HolographicDisplay.GetDefault();
 var view = display.TryGetViewConfiguration(Windows.Graphics.Holographic.HolographicViewConfigurationKind.PhotoVideoCamera);
@@ -79,7 +79,7 @@ if (view != null)
 
 當混合式事實 capture (停止，或應用程式在混合式事實捕捉正在執行時停用 view 設定) ： HolographicCamera 將會出現在下一個 HolographicFrame 的 RemovedCameras 清單中，而且 HolographicSpace 的 CameraRemoved 事件將會引發。
 
-已將 [ViewConfiguration](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) 屬性新增至 HolographicCamera，以協助識別相機所屬的設定。
+已將 [ViewConfiguration](/uwp/api/windows.graphics.holographic.holographiccamera.viewconfiguration) 屬性新增至 HolographicCamera，以協助識別相機所屬的設定。
 
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>在 Unity 中啟用 PhotoVideoCamera HolographicViewConfiguration
 
@@ -121,15 +121,15 @@ Unreal 會自動為您完成這項操作。
 #### <a name="2d-app"></a>2D 應用程式
 
 當混合的現實捕捉正在執行時，2D 應用程式可以選擇將其視覺內容遮蔽：
-* 以 [DXGI_PRESENT_RESTRICT_TO_OUTPUT](https://docs.microsoft.com/windows/desktop/direct3ddxgi/dxgi-present) 旗標呈現
-* 使用 [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](https://docs.microsoft.com/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) 旗標來建立應用程式的交換鏈
-* 使用 Windows 10 2019 年5月更新，設定 ApplicationView 的 [IsScreenCaptureEnabled](https://docs.microsoft.com/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
+* 以 [DXGI_PRESENT_RESTRICT_TO_OUTPUT](/windows/desktop/direct3ddxgi/dxgi-present) 旗標呈現
+* 使用 [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) 旗標來建立應用程式的交換鏈
+* 使用 Windows 10 2019 年5月更新，設定 ApplicationView 的 [IsScreenCaptureEnabled](/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
 
 #### <a name="immersive-app"></a>沉浸式應用程式
 
 沉浸式應用程式可以選擇從混合現實捕捉中排除其視覺內容：
-* 設定 HolographicCameraRenderingParameter 的 [IsContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) ，以停用其相關聯框架的混合現實 capture
-* 設定 HolographicCamera 的 [IsHardwareContentProtectionEnabled](https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) ，以停用其相關聯的全像攝影相機的混合現實 capture
+* 設定 HolographicCameraRenderingParameter 的 [IsContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.iscontentprotectionenabled) ，以停用其相關聯框架的混合現實 capture
+* 設定 HolographicCamera 的 [IsHardwareContentProtectionEnabled](/uwp/api/windows.graphics.holographic.holographiccamera.ishardwarecontentprotectionenabled) ，以停用其相關聯的全像攝影相機的混合現實 capture
 
 #### <a name="password-keyboard"></a>密碼鍵盤
 
@@ -137,10 +137,10 @@ Unreal 會自動為您完成這項操作。
 
 ### <a name="knowing-when-mrc-is-active"></a>知道當 MRC 處於作用中狀態
 
-[AppCapture](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.AppCapture)類別可供應用程式用來知道系統 mixed reality capture (針對音訊或影片) 執行時。
+[AppCapture](/uwp/api/Windows.Media.Capture.AppCapture)類別可供應用程式用來知道系統 mixed reality capture (針對音訊或影片) 執行時。
 
 >[!NOTE]
->如果裝置上沒有混合現實 capture，AppCapture 的 [GetForCurrentView](https://docs.microsoft.com/uwp/api/windows.media.capture.appcapture.getforcurrentview) API 可能會傳回 null。 也請務必在您的應用程式暫停時，取消註冊 CapturingChanged 事件，否則，可能會進入封鎖狀態。
+>如果裝置上沒有混合現實 capture，AppCapture 的 [GetForCurrentView](/uwp/api/windows.media.capture.appcapture.getforcurrentview) API 可能會傳回 null。 也請務必在您的應用程式暫停時，取消註冊 CapturingChanged 事件，否則，可能會進入封鎖狀態。
 
 ### <a name="best-practices-hololens-specific"></a> (HoloLens 專用) 的最佳作法
 
@@ -196,7 +196,7 @@ Unreal 會自動為您完成這項操作。
 
 ### <a name="mrc-with-built-in-camera-ui"></a>使用內建相機 UI 的 MRC
 
-只要幾行程式碼，開發人員就可以使用 *[相機捕捉 UI API](https://docs.microsoft.com/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* 來取得使用者所取得的混合現實照片或影片。
+只要幾行程式碼，開發人員就可以使用 *[相機捕捉 UI API](/windows/uwp/audio-video-camera/capture-photos-and-video-with-cameracaptureui)* 來取得使用者所取得的混合現實照片或影片。
 
 此 API 會啟動內建的「MRC 攝影機」 UI，讓使用者可以拍攝相片或影片，並將產生的捕獲傳回您的應用程式。 如果您需要新增自己的攝影機 UI 或較低層級的存取權來捕捉串流，您可以建立自訂的混合實境擷取錄製器。
 
@@ -210,20 +210,20 @@ Unreal 會自動為您完成這項操作。
 
 Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/locatable-camera-in-unity.md) ，以啟用全像。
 
-其他應用程式也可以使用 [Windows Media Capture api](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaCapture) 來控制相機，並新增 MRC 影片和音訊效果，以在靜止和影片中包含虛擬全像影像和應用程式音訊。
+其他應用程式也可以使用 [Windows Media Capture api](/uwp/api/Windows.Media.Capture.MediaCapture) 來控制相機，並新增 MRC 影片和音訊效果，以在靜止和影片中包含虛擬全像影像和應用程式音訊。
 
 應用程式有兩個選項可新增效果：
-* 舊版 API： [MediaCapture. AddEffectAsync ( # B1 ](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* 新的 Microsoft 建議 API (會傳回物件，讓您可以操控動態屬性) ： [MediaCapture. AddVideoEffectAsync ( # B3](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync ( # B5](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) ，這需要應用程式建立自己的[IVideoEffectDefinition](https://docs.microsoft.com/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](https://docs.microsoft.com/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
+* 舊版 API： [MediaCapture. AddEffectAsync ( # B1 ](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* 新的 Microsoft 建議 API (會傳回物件，讓您可以操控動態屬性) ： [MediaCapture. AddVideoEffectAsync ( # B3](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync ( # B5](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) ，這需要應用程式建立自己的[IVideoEffectDefinition](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
 
 >[!NOTE]
 > Visual Studio 不會辨識 MixedRealityCapture 命名空間，但字串仍然有效。
 
 **MixedRealityCapture. MixedRealityCaptureVideoEffect**) 的 MRC 影片效果 (
 
-|  屬性名稱  |  類型  |  預設值  |  說明 |
+|  屬性名稱  |  類型  |  預設值  |  描述 |
 |----------|----------|----------|----------|
-|  StreamType  |  UINT32 ([MediaStreamType](https://docs.microsoft.com/uwp/api/Windows.Media.Capture.MediaStreamType))   |  1 (VideoRecord)   |  描述此效果用於哪個捕獲資料流程。 無法使用音訊。 |
+|  StreamType  |  UINT32 ([MediaStreamType](/uwp/api/Windows.Media.Capture.MediaStreamType))   |  1 (VideoRecord)   |  描述此效果用於哪個捕獲資料流程。 無法使用音訊。 |
 |  HologramCompositionEnabled  |  boolean  |  true  |  用來啟用或停用影片捕獲中全像影像的旗標。 |
 |  RecordingIndicatorEnabled  |  boolean  |  true  |  用來啟用或停用全息圖捕獲期間在螢幕上錄製指標的旗標。 |
 |  VideoStabilizationEnabled  |  boolean  |  FALSE  |  此旗標可啟用或停用由 HoloLens 追蹤器提供技術支援的影片穩定。 |
@@ -241,7 +241,7 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 **MixedRealityCapture. MixedRealityCaptureAudioEffect) 的** MRC 音訊效果 (
 
-| 屬性名稱 | 類型 | 預設值 | 說明 |
+| 屬性名稱 | 類型 | 預設值 | 描述 |
 |----------|----------|----------|----------|
 | MixerMode | UINT32 | 2 (Mic 和系統音訊)  | 用來指出應使用哪些音訊來源的列舉： 0 (僅限 Mic 音訊) 、1 (僅限系統音訊) 、2 (Mic 和系統音訊)  |
 | LoopbackGain | FLOAT | Windows 裝置入口網站中的 **應用程式音訊增益** 設定 | 適用于系統音訊音量的增益。 範圍從0.0 到5.0。 僅 HoloLens 2 支援 |
@@ -260,7 +260,7 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 在 HoloLens 1 上，當處理常式錄製影片或拍攝相片時，MRC 將無法拍攝相片或抓取影片。 反之亦然：如果 MRC 正在執行，應用程式將無法取得相機的存取權。 
 
-有了 HoloLens 2，您就可以共用相機的存取權。 如果您不需要直接控制解析度或畫面播放速率，您可以搭配 SharedReadOnly 使用 [SharedMode 屬性](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 來初始化 MediaCapture。  
+有了 HoloLens 2，您就可以共用相機的存取權。 如果您不需要直接控制解析度或畫面播放速率，您可以搭配 SharedReadOnly 使用 [SharedMode 屬性](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 來初始化 MediaCapture。  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>內建的 MRC 相片/攝影機存取
 
@@ -287,11 +287,11 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 使用 MRC 時，建議您一律要求相機的獨佔控制。 這可確保您的應用程式可以完全掌控相機的設定，只要您知道上面所列的限制即可。 
 
-* 使用[初始化設定](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)建立 media capture 物件
-* 將 [SharingMode](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 屬性設定為 **專有**
+* 使用[初始化設定](/uwp/api/windows.media.capture.mediacaptureinitializationsettings?view=winrt-19041)建立 media capture 物件
+* 將 [SharingMode](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#Windows_Media_Capture_MediaCaptureInitializationSettings_SharingMode) 屬性設定為 **專有**
 
 > [!CAUTION]
-> 請務必仔細閱讀 [SharingMode 備註](https://docs.microsoft.com/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) ，再繼續進行操作。
+> 請務必仔細閱讀 [SharingMode 備註](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041#remarks) ，再繼續進行操作。
 
 * 以您想要的方式設定您的相機
 * 啟動應用程式、使用啟動 API 來捕獲影片畫面，然後啟用 MRC
@@ -299,14 +299,14 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 > [!CAUTION]
 > 如果您在啟動應用程式之前啟動了您的應用程式，我們無法保證此功能將會如預期般運作。
 
-您可以在全像全像 [臉部追蹤範例](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicfacetracking)中找到上述程式的完整範例。
+您可以在全像全像 [臉部追蹤範例](/samples/microsoft/windows-universal-samples/holographicfacetracking)中找到上述程式的完整範例。
 
 > [!NOTE]
 > 在 Windows 10 2018 年4月更新之前，應用程式的自訂 MRC 錄製器會與系統 MRC 互斥 (捕獲相片、捕獲影片或從 Windows 裝置入口網站) 進行串流。
 
 ## <a name="see-also"></a>另請參閱
 
-* [混合實境擷取](../../mixed-reality-capture.md)
+* [混合實境擷取](/hololens/holographic-photos-and-videos)
 * [觀眾檢視](spectator-view.md)
 * [Unity 開發總覽](../unity/unity-development-overview.md)
 * [Unreal 開發概觀](../unreal/unreal-development-overview.md)

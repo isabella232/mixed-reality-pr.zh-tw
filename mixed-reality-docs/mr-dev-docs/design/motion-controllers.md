@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 6dof 控制器、移動控制器、配對、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、滾動、抓住、州
-ms.openlocfilehash: 94a9292b3a765131ae197fd9f91c27a52a463eef
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 367c9d9e0179c82af05af3fded9341ff7960d19e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192616"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583667"
 ---
 # <a name="motion-controllers"></a>運動控制器
 
@@ -41,7 +41,7 @@ ms.locfileid: "98192616"
 </colgroup>
 <tr>
      <td><strong>功能</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
 </tr>
@@ -80,14 +80,14 @@ Windows Mixed Reality 的動作控制器會使用沉浸式耳機中的感應器�
 
 **檢查 Windows、Unity 和驅動程式更新**
 * 請造訪安裝適用于 Windows、Unity 等慣用版本的 [工具](../develop/install-the-tools.md) ，以進行混合現實開發。
-* 請確定您有最新的 [耳機和移動控制器驅動程式](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)。
+* 請確定您有最新的 [耳機和移動控制器驅動程式](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)。
 
 ### <a name="pairing-controllers"></a>配對控制器
 
 您可以使用 Windows 設定（例如任何其他 Bluetooth 裝置）來將移動控制器與主機電腦進行綁定。
 
 1. 將兩個 AA 電池插入控制器的背面。 請暫時讓電池蓋住。
-2. 如果您使用的是外部 USB 藍牙介面卡，而不是內建的藍牙無線電，請先檢查 [藍牙的最佳作法](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) ，再繼續進行。 針對具有內建無線電的桌面設定，請確定天線已連線。
+2. 如果您使用的是外部 USB 藍牙介面卡，而不是內建的藍牙無線電，請先檢查 [藍牙的最佳作法](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) ，再繼續進行。 針對具有內建無線電的桌面設定，請確定天線已連線。
 3. 開啟 [ **Windows 設定**  ->  **裝置**  ->  ]，**新增藍牙或其他裝置**  ->  **藍牙**，並移除任何先前的「動作控制器–右方」和「移動控制器-左方」實例。 另請檢查清單底部的其他裝置類別。
 4. 選取 [ **新增藍牙或其他裝置** ]，並查看其開始探索藍牙裝置。
 5. 按住控制器的 Windows 按鈕以開啟控制器，在 buzzes 之後發行。
@@ -142,7 +142,7 @@ Windows Mixed Reality 的動作控制器會使用沉浸式耳機中的感應器�
 
 * 確認您的控制器正常運作：
     1. 啟動 **混合實境入口** ，然後輸入您的混合現實首頁。
-    2. 移動控制器並確認追蹤、測試按鈕，並確認 [遙傳](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) 可運作。 如果沒有，則請查看 [移動控制器的疑難排解](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)。
+    2. 移動控制器並確認追蹤、測試按鈕，並確認 [遙傳](../discover/navigating-the-windows-mixed-reality-home.md#getting-around-your-home) 可運作。 如果沒有，則請查看 [移動控制器的疑難排解](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers)。
 
 ## <a name="gazing-and-pointing"></a>撥雲見日和指標
 
@@ -257,7 +257,7 @@ Windows Mixed Reality 支援不同外型規格中的運動控制器，每個控�
 
 ### <a name="how-do-i-update-motion-controller-firmware"></a>如何? 更新移動控制器的固件？
 
-移動控制器固件是耳機驅動程式的一部分，並會在必要時自動更新。 根據藍牙無線電和連結品質，通常需要1-2 分鐘的時間才會更新。 在罕見的情況下，控制器固件更新最多可能需要10分鐘的時間，這可能表示藍牙連線能力或無線電干擾不佳。 請參閱 [《愛好者指南》中的藍牙最佳作法](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) ，以針對連線問題進行疑難排解。 在固件更新之後，控制器將會重新開機，並重新連線至主機電腦 (您可能會注意到，Led 會很亮以追蹤) 。 如果固件更新中斷 (例如，控制器會遺失電源) ，它會在下一次控制器開機時再次嘗試。
+移動控制器固件是耳機驅動程式的一部分，並會在必要時自動更新。 根據藍牙無線電和連結品質，通常需要1-2 分鐘的時間才會更新。 在罕見的情況下，控制器固件更新最多可能需要10分鐘的時間，這可能表示藍牙連線能力或無線電干擾不佳。 請參閱 [《愛好者指南》中的藍牙最佳作法](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#bluetooth-best-practices) ，以針對連線問題進行疑難排解。 在固件更新之後，控制器將會重新開機，並重新連線至主機電腦 (您可能會注意到，Led 會很亮以追蹤) 。 如果固件更新中斷 (例如，控制器會遺失電源) ，它會在下一次控制器開機時再次嘗試。
 
 ### <a name="how-i-can-check-battery-level"></a>我可以如何檢查電池計量？
 
@@ -269,17 +269,17 @@ Windows Mixed Reality 支援不同外型規格中的運動控制器，每個控�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-請參閱愛好者指南中的 [動作控制器疑難排解](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) 。
+請參閱愛好者指南中的 [動作控制器疑難排解](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#motion-controllers) 。
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>歸檔移動控制器意見反應/錯誤
 
-使用「混合現實-> 輸入」類別，在意見反應中樞中[提供意見反應給我們](../give-us-feedback.md)。
+使用「混合現實-> 輸入」類別，在意見反應中樞中[提供意見反應給我們](/hololens/hololens-feedback)。
 
 ## <a name="see-also"></a>另請參閱
 
 * [Unity 中的動作控制器](../develop/unity/motion-controllers-in-unity.md)
 * [DirectX 中的手部和運動控制器](../develop/native/hands-and-motion-controllers-in-directx.md)
 * [軌跡](gaze-and-commit.md#composite-gestures)
-* [愛好者指南：您的 Windows Mixed Reality 首頁](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
-* [愛好者指南：在 Windows Mixed Reality 中使用遊戲 & 應用程式](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
-* [內外追蹤的運作方式](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)
+* [愛好者指南：您的 Windows Mixed Reality 首頁](/windows/mixed-reality/enthusiast-guide/your-mixed-reality-home)
+* [愛好者指南：在 Windows Mixed Reality 中使用遊戲 & 應用程式](/windows/mixed-reality/enthusiast-guide/using-games-and-apps-in-windows-mixed-reality)
+* [內外追蹤的運作方式](/windows/mixed-reality/enthusiast-guide/tracking-system)

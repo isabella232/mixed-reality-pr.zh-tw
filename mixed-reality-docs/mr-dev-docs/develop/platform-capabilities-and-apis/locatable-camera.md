@@ -6,16 +6,16 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: 攝影機、hololens、彩色攝影機、正面、hololens 2、cv、電腦視覺、基準、標記、qr 代碼、qr、相片、影片
-ms.openlocfilehash: 9261465f362e6aa0e97d9f6b1f61af305c178079
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530380"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583625"
 ---
 # <a name="locatable-camera"></a>定位相機
 
-HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式查看使用者看到的內容。 開發人員可以存取和控制攝影機，就像在 smartphone、筆記本電腦或桌上型電腦上的彩色攝影機一樣。 適用于行動裝置和桌上型電腦的相同通用 windows [media capture](https://msdn.microsoft.com/library/windows/apps/windows.media.capture.mediacapture.aspx) 和 windows Media foundation api 可在 HoloLens 上運作。 Unity [已將這些 Windows api 包裝](../unity/locatable-camera-in-unity.md) 成可在 HoloLens 上抽象化相機使用功能。 功能工作包括將一般相片和影片 (與或不含全像投影) ，以及在場景中找出相機的位置和觀點。
+HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式查看使用者看到的內容。 開發人員可以存取和控制攝影機，就像在 smartphone、筆記本電腦或桌上型電腦上的彩色攝影機一樣。 適用于行動裝置和桌上型電腦的相同通用 windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture) 和 windows Media foundation api 可在 HoloLens 上運作。 Unity [已將這些 Windows api 包裝](../unity/locatable-camera-in-unity.md) 成可在 HoloLens 上抽象化相機使用功能。 功能工作包括將一般相片和影片 (與或不含全像投影) ，以及在場景中找出相機的位置和觀點。
 
 ## <a name="device-camera-information"></a>裝置相機資訊
 
@@ -37,7 +37,7 @@ HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式�
 
 * 自動聚焦相片/影片 (PV) 攝影機（具有自動白平衡、自動曝光和完整的影像處理管線）。
 * 當相機處於作用中狀態時，就會導致世界各地的白色隱私權燈亮著。
-* HoloLens 2 支援不同的相機設定檔。 瞭解如何 [探索並選取攝影機功能](https://docs.microsoft.com//windows/uwp/audio-video-camera/camera-profiles)。
+* HoloLens 2 支援不同的相機設定檔。 瞭解如何 [探索並選取攝影機功能](//windows/uwp/audio-video-camera/camera-profiles)。
 * 攝影機支援下列設定檔和解析度 (所有的影片模式都是16:9 的外觀比例) ：
   
   | 設定檔                                         | 影片     | 預覽   | 還     | 畫面播放速率 | 水準視圖 (H-FOV)  | 建議用法                             |
@@ -59,7 +59,7 @@ HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式�
   | 視訊會議，100 BalancedVideoAndPhoto，120 | 424x240   |           |           | 15、30       | 64.69                            | 視訊會議，長時間案例 |
 
 > [!NOTE]
-> 客戶可以利用 [混合的現實 capture](../../mixed-reality-capture.md) 來拍攝您應用程式的影片或相片，包括全像全像觀賞和影片穩定。
+> 客戶可以利用 [混合的現實 capture](/hololens/holographic-photos-and-videos) 來拍攝您應用程式的影片或相片，包括全像全像觀賞和影片穩定。
 >
 >開發人員在建立應用程式時，如果您想要在客戶捕獲內容時盡可能地查看，則有一些考慮需要考慮。 您也可以直接在應用程式內啟用 (和自訂) mixed reality capture。 深入瞭解 [適用于開發人員的混合現實開發](mixed-reality-capture-for-developers.md)。
 
@@ -75,20 +75,20 @@ HoloLens 檔中其他位置的「相機」可能參考「虛擬遊戲攝影機�
 
 ### <a name="using-mediaframereference"></a>使用 MediaFrameReference
 
-如果 you'r 使用 [MediaFrameReference](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference) 類別從相機讀取影像畫面格，則適用這些指示。
+如果 you'r 使用 [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) 類別從相機讀取影像畫面格，則適用這些指示。
 
-每個影像框架都會 (相片或影片) 是否包含在拍攝時根目錄于相機的[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem) ，可使用[MediaFrameReference](https://docs.microsoft.com//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)的[CoordinateSystem](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)屬性來存取。 每個畫面格都包含相機鏡頭模型的描述，可在 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 屬性中找到。 這些轉換會一起定義3D 空間中每個圖元的光線，代表產生圖元的光子所採用的路徑。 這些光線可以與應用程式中的其他內容相關，方法是從框架的座標系統取得轉換到其他的座標系統 (例如從 [固定的參考框架](../../design/coordinate-systems.md#stationary-frame-of-reference)) 。 
+每個影像框架都會 (相片或影片) 是否包含在拍攝時根目錄于相機的[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) ，可使用[MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)的[CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)屬性來存取。 每個畫面格都包含相機鏡頭模型的描述，可在 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 屬性中找到。 這些轉換會一起定義3D 空間中每個圖元的光線，代表產生圖元的光子所採用的路徑。 這些光線可以與應用程式中的其他內容相關，方法是從框架的座標系統取得轉換到其他的座標系統 (例如從 [固定的參考框架](../../design/coordinate-systems.md#stationary-frame-of-reference)) 。 
 
 每個影像框架都會提供下列各項：
 * 以 RGB/NV12/JPEG/etc 格式) 的圖元資料 (
-* 從 capture 的位置[SpatialCoordinateSystem](https://docs.microsoft.com//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
-* 包含相機鏡頭模式的 [CameraIntrinsics](https://docs.microsoft.com//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 類別
+* 從 capture 的位置[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
+* 包含相機鏡頭模式的 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 類別
 
 [HolographicFaceTracking 範例會示範](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)在相機座標系統和您自己的應用程式座標系統之間，查詢轉換的方式相當直接。
 
 ### <a name="using-media-foundation"></a>使用媒體基礎
 
-如果您直接使用媒體基礎從相機讀取影像畫面格，您可以使用每個畫面格的 [MFSampleExtension_CameraExtrinsics 屬性](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-cameraextrinsics) 和 [MFSampleExtension_PinholeCameraIntrinsics 屬性](https://docs.microsoft.com/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) 來找出相對於應用程式其他座標系統的相機畫面格，如下列範例程式碼所示：
+如果您直接使用媒體基礎從相機讀取影像畫面格，您可以使用每個畫面格的 [MFSampleExtension_CameraExtrinsics 屬性](/windows/win32/medfound/mfsampleextension-cameraextrinsics) 和 [MFSampleExtension_PinholeCameraIntrinsics 屬性](/windows/win32/medfound/mfsampleextension-pinholecameraintrinsics) 來找出相對於應用程式其他座標系統的相機畫面格，如下列範例程式碼所示：
 
 ```cpp
 #include <winrt/windows.perception.spatial.preview.h>
@@ -259,7 +259,7 @@ public static Vector3 ClosestPointBetweenRays(
 ## <a name="see-also"></a>另請參閱
 * [已定位相機範例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)
 * [Unity 中的定位相機](../unity/locatable-camera-in-unity.md)
-* [混合實境擷取](../../mixed-reality-capture.md)
+* [混合實境擷取](/hololens/holographic-photos-and-videos)
 * [適用於開發人員的混合實境擷取](mixed-reality-capture-for-developers.md)
-* [Media capture 簡介](https://msdn.microsoft.com/library/windows/apps/mt243896.aspx)
+* [Media capture 簡介](/windows/uwp/audio-video-camera/)
 * [全像臉部追蹤範例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)

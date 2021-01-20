@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 設計, 互動, 語音
-ms.openlocfilehash: 156927f43a09474c3dd6da8e400767f13700a7ce
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682785"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582832"
 ---
 # <a name="voice-commanding"></a>語音命令
 
@@ -29,7 +29,7 @@ ms.locfileid: "91682785"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -69,13 +69,13 @@ ms.locfileid: "91682785"
 
 ### <a name="see-it-say-it"></a>看到什麼就說什麼
 
-Windows Mixed Reality 採用「看到什麼就說什麼」語音模型， **按鈕上的標籤會與相關聯的語音命令完全相同** 。 因為標籤和語音命令沒有任何不一致，使用者會更加了解要說什麼才能控制系統。 為了強化這一項功能，當您停駐在某個按鈕上時，便會出現 **「語音停駐提示」** ，來讓您知道哪些按鈕有語音功能。
+Windows Mixed Reality 採用「看到什麼就說什麼」語音模型，**按鈕上的標籤會與相關聯的語音命令完全相同**。 因為標籤和語音命令沒有任何不一致，使用者會更加了解要說什麼才能控制系統。 為了強化這一項功能，當您停駐在某個按鈕上時，便會出現 **「語音停駐提示」**，來讓您知道哪些按鈕有語音功能。
 
 
 ![看到什麼就說什麼的範例 1](../design/images/voice-seeitsayit1-640px.jpg)
 
 ![看到什麼就說什麼的範例 2](../design/images/voice-seeitsayit2-640px.jpg)<br>
-「看到什麼就說什麼」的範例 
+「看到什麼就說什麼」的範例
 
 ### <a name="voices-strengths"></a>語音的優點
 
@@ -94,7 +94,7 @@ Windows Mixed Reality 採用「看到什麼就說什麼」語音模型， **按�
 
 ### <a name="voice-feedback-states"></a>語音反饋狀態
 
-當語音正確套用時，使用者會了解 **他們能說什麼並獲得清楚的反饋** 而知道系統 **正確聽懂他們的語音** 。 這兩個訊號會讓使用者有信心，確信他們可以使用語音作為主要輸入方式。 下圖顯示的是當系統辨識到語音輸入時會有什麼情形，以及系統會如何讓使用者知道這一點。
+當語音正確套用時，使用者會了解 **他們能說什麼並獲得清楚的反饋** 而知道系統 **正確聽懂他們的語音**。 這兩個訊號會讓使用者有信心，確信他們可以使用語音作為主要輸入方式。 下圖顯示的是當系統辨識到語音輸入時會有什麼情形，以及系統會如何讓使用者知道這一點。
 
 ![游標的語音反饋狀態](../design/images/voicefeedbackstates.png)<br>
 *游標的語音反饋狀態*

@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學術，unity，教學課程，api，機器學習，ml，machine learning studio，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 3bb50c146e11a340f4223d71dd401ac2b84dd6d4
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679477"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583394"
 ---
 # <a name="mr-and-azure-307-machine-learning"></a>MR 和 Azure 307：機器學習
 
@@ -42,7 +42,7 @@ ms.locfileid: "94679477"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td> MR 和 Azure 307：機器學習</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
@@ -51,7 +51,7 @@ ms.locfileid: "94679477"
 > [!NOTE]
 > 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更的注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 您可以隨意使用最新的軟體（如 [ 安裝工具文章](../../install-the-tools.md)中所列），但不應假設此課程中的資訊會完全符合您在較新軟體中找到的資訊，而不是以下所列的資訊。
@@ -63,10 +63,10 @@ ms.locfileid: "94679477"
 - [最新的 Windows 10 SDK](../../install-the-tools.md#installation-checklist)
 - [Unity 2017。4](../../install-the-tools.md#installation-checklist)
 - [Visual Studio 2017](../../install-the-tools.md#installation-checklist)
-- [Windows Mixed Reality 沉浸式 (VR) 耳機](../../../discover/immersive-headset-hardware-details.md)，或已啟用開發人員模式的[Microsoft HoloLens](../../../hololens-hardware-details.md)
+- [Windows Mixed Reality 沉浸式 (VR) 耳機](../../../discover/immersive-headset-hardware-details.md)，或已啟用開發人員模式的[Microsoft HoloLens](/hololens/hololens1-hardware)
 - 適用于 Azure 設定和 ML 資料抓取的網際網路存取
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。 
 
@@ -100,7 +100,7 @@ ms.locfileid: "94679477"
     7.  選取 [訂用帳戶]  。
     4. 選擇資源群組，或建立一個新的 **資源群組** 。 資源群組提供一種方式來監視、控制存取、布建及管理 Azure 資產集合的計費。 建議您保留與單一專案相關聯的所有 Azure 服務 (例如，) 一般資源群組下的實驗室，) 。
 
-        > 如果您想要閱讀更多有關 Azure 資源群組的資訊，請 [造訪資源群組文章](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)。
+        > 如果您想要閱讀更多有關 Azure 資源群組的資訊，請 [造訪資源群組文章](/azure/azure-resource-manager/resource-group-portal)。
     
     5.  如果您要建立新的資源群組) ，請判斷資源群組 (的 **位置** 。 位置最好是在應用程式執行所在的區域中。 某些 Azure 資產僅適用于某些區域。
 
@@ -132,7 +132,7 @@ ms.locfileid: "94679477"
 
     3. 選擇資源群組，或建立一個新的 **資源群組** 。 資源群組提供一種方式來監視、控制存取、布建及管理 Azure 資產集合的計費。 建議您保留與單一專案相關聯的所有 Azure 服務 (例如，) 一般資源群組下的實驗室，) 。 
 
-        > 如果您想要閱讀更多有關 Azure 資源群組的資訊，請 [造訪資源群組文章](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)。
+        > 如果您想要閱讀更多有關 Azure 資源群組的資訊，請 [造訪資源群組文章](/azure/azure-resource-manager/resource-group-portal)。
 
     4.  如果您要建立新的資源群組) ，請判斷資源群組 (的 **位置** 。 位置最好是在應用程式執行所在的區域中。 某些 Azure 資產僅適用于某些區域。 您應該使用您在上一章中用來建立 Azure 儲存體的相同資源群組。
 
@@ -146,7 +146,7 @@ ms.locfileid: "94679477"
 
     9.  您也必須確認您已瞭解套用到此服務的條款及條件。
 
-    10. 按一下 [建立]。
+    10. 按一下頁面底部的 [新增] 。
 
         ![Azure Machine Learning Studio (傳統) ](images/AzureLabs-Lab7-6.png)
 
@@ -252,7 +252,7 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
 
     ![Machine Learning Studio (傳統) ：實驗](images/AzureLabs-Lab7-22.png)
 
-11. 您將定型 **多元羅吉斯回歸** 演算法，以根據當天的小時和日期來預測最暢銷的 **產品** 。 這份檔涵蓋了 Azure Machine Learning studio 所提供之不同演算法的詳細資料，但您可以從[Machine Learning 演算法](https://docs.microsoft.com/azure/machine-learning/studio/algorithm-cheat-sheet)的功能提要中找到更多詳細資料
+11. 您將定型 **多元羅吉斯回歸** 演算法，以根據當天的小時和日期來預測最暢銷的 **產品** 。 這份檔涵蓋了 Azure Machine Learning studio 所提供之不同演算法的詳細資料，但您可以從[Machine Learning 演算法](/azure/machine-learning/studio/algorithm-cheat-sheet)的功能提要中找到更多詳細資料
 
 12. 從左側的實驗專案面板中，展開 [ **Machine Learning**  >  **初始化模型**  >  **分類**]，然後將 [**多元羅吉斯回歸**] 專案拖曳至實驗畫布。
 
@@ -821,7 +821,7 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
 
 若要建立：
 
-1.  按一下 [檔案 **File**  >  **儲存場景**] 以儲存目前的場景。
+1.  按一下 [檔案  >  **儲存場景**] 以儲存目前的場景。
 
 2.  移至 **檔案**  >  **組建設定**
 

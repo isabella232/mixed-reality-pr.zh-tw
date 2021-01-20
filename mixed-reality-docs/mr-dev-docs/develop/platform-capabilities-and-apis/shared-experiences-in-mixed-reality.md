@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: 共用體驗、混合現實、全息圖、空間錨點、多使用者、多重
-ms.openlocfilehash: 6db5bb13d7e04dbee6b4d9d6568b821347bd769a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530120"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583149"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>混合現實的共用體驗
 
@@ -95,7 +95,7 @@ ms.locfileid: "97530120"
 * **類似**：通常會有類似傢俱、環境燈和音效、實體房間大小的環境。 例如：教授在演講廳 A 中，學生在演講廳 B。課程廳 A 可能會有比 B 更少的椅子，但兩者都可能有實體桌來放置全像桌。
 * **不同：傢俱** 設定、房間大小、燈光和音效考慮中不同的環境。 例如：教授在焦點房間內，但學生在大型的課程廳中，並填寫了學生和老師。
 
-請務必 [考慮環境](../../environment-considerations-for-hololens.md)，因為它會影響：
+請務必 [考慮環境](/hololens/hololens-environment-considerations)，因為它會影響：
 
 * 人們將如何體驗這些物件。 例如：如果您的體驗在資料表上的效果最佳，而且使用者沒有資料表？ 或在平面表面，但使用者有雜亂的空間。
 * 物件的小數位數。 例如：在資料表上放置六英尺的人類模型可能會是一項挑戰，但是說出的模型很好用。
@@ -137,11 +137,11 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 共用體驗的關鍵是讓多個使用者在自己的裝置上看到相同的全像全球，並藉由共用錨點來調整跨裝置的座標來進行。
 
-若要共用錨點，請使用 [Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors)：
+若要共用錨點，請使用 [Azure 空間錨點](/azure/spatial-anchors)：
 
 * 使用者會先放置全像影像。
 * 應用程式會建立 [空間錨點](../../design/spatial-anchors.md)，以精確地在世界中釘選該全像影像。
-* 您可以透過 [Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors/)，將錨點共用到 HoloLens、IOS 和 Android 裝置。
+* 您可以透過 [Azure 空間錨點](/azure/spatial-anchors/)，將錨點共用到 HoloLens、IOS 和 Android 裝置。
 
 使用共用空間錨點時，每個裝置上的應用程式現在都有 [共同的座標系統](../../design/coordinate-systems.md) ，可放置內容。 現在，應用程式可以確保在相同位置放置並定位全像投影。
 
@@ -153,7 +153,7 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 ## <a name="shared-static-holograms-no-interactions"></a>共用靜態全像 (沒有互動) 
 
-在您的應用程式中運用 [Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors/) 。  在裝置上啟用和共用空間錨點，可讓您建立應用程式，讓使用者在相同的時間內看到全像位置。  需要跨裝置進行額外的同步處理，讓使用者能夠與全像影像互動，並查看影像的移動或狀態更新。
+在您的應用程式中運用 [Azure 空間錨點](/azure/spatial-anchors/) 。  在裝置上啟用和共用空間錨點，可讓您建立應用程式，讓使用者在相同的時間內看到全像位置。  需要跨裝置進行額外的同步處理，讓使用者能夠與全像影像互動，並查看影像的移動或狀態更新。
 
 ## <a name="share-first-person-perspective"></a>共用第一個人的觀點
 
@@ -172,7 +172,7 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 ## <a name="multi-user-collaborative-experience"></a>多使用者協同作業體驗
 
-從我們的 [多使用者學習教學課程](../../mrlearning-sharing(photon)-ch1.md)開始，此教學課程會利用適用于本機使用者的 [Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors/) 和 [Photon SDK](https://www.photonengine.com/PUN) ，在場景中同步處理內容/狀態。 建立在本機共同作業的應用程式，其中每位使用者都有自己在場景中的全像投影，而且每一位使用者都可以與全像全像全像全像  系統會在所有裝置上提供更新，並由 Photon 處理互動衝突管理。
+從我們的 [多使用者學習教學課程](../unity/tutorials/mr-learning-sharing-02.md)開始，此教學課程會利用適用于本機使用者的 [Azure 空間錨點](/azure/spatial-anchors/) 和 [Photon SDK](https://www.photonengine.com/PUN) ，在場景中同步處理內容/狀態。 建立在本機共同作業的應用程式，其中每位使用者都有自己在場景中的全像投影，而且每一位使用者都可以與全像全像全像全像  系統會在所有裝置上提供更新，並由 Photon 處理互動衝突管理。
 
 > [!NOTE]
 > 請注意， [Photon](https://www.photonengine.com/) 不是 Microsoft 的產品，因此可能需要與 Photon 的計費關係，才能 productize 和調整以獲得較高的使用量。
@@ -185,7 +185,7 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 ## <a name="see-also"></a>另請參閱
 
-* [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors)
+* [Azure Spatial Anchors](/azure/spatial-anchors)
 * [DirectX 中的共用空間錨點](shared-spatial-anchors-in-directx.md)
 * [Unity 中的共用體驗](../unity/shared-experiences-in-unity.md)
 * [觀眾檢視](spectator-view.md)

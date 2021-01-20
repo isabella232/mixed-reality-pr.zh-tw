@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、HoloLens、沉浸式、vr、mr、入門、全息圖、學術、教學課程、混合現實學術、unity、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 7b316314d7aa693e8be9006b2c5578c1bae7e3ff
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006508"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583733"
 ---
 # <a name="mr-basics-100-getting-started-with-unity"></a>MR Basics 100：開始使用 Unity
 
@@ -24,13 +24,13 @@ ms.locfileid: "98006508"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Basics 100：開始使用 Unity</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦。
 
@@ -154,7 +154,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 2. 開啟 **Window > XR >** 全像全像模擬。
 3. 將 **模擬模式** 從 [ **無** ] 變更為 [ **遠端] 至 [裝置**]。
 4. 在 [ **遠端電腦**] 中，輸入您先前記下的 HoloLens IP 位址。
-5. 按一下 [ **連接**]。
+5. 按一下 [連線]。
 6. 確定連線 **狀態** 變更為綠色 **已連線**。
 7. 現在您可以在 Unity 編輯器中按一下 [ **播放** ]。
 
@@ -223,7 +223,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 現在已部署您的應用程式，請嘗試在整個 cube 周圍移動，然後觀察它是否存在於世界的前方。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Unity 開發概觀](../unity-development-overview.md)
 * [使用 Unity 和 Visual Studio 的最佳作法](../best-practices-for-working-with-unity-and-visual-studio.md)

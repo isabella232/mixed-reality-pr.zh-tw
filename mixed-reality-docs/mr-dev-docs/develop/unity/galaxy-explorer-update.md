@@ -6,16 +6,16 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: d3a31204275b2d2a9f1f1ea1c283993d2e0285ed
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 4a5df06009d2c9c25b12c8e7f4bd1622821964c8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009578"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582897"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>進行 HoloLens 2 的 Galaxy Explorer
 
-歡迎使用 HoloLens 2 應用程式更新的 Galaxy Explorer！ [Galaxy Explorer](https://docs.microsoft.com/windows/mixed-reality/galaxy-explorer "星系探險") 最初開發為 HoloLens 的開放原始碼應用程式 (第一代) 透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新它，以獲得 [HoloLens 2 的全新且令人興奮的功能](https://www.microsoft.com/hololens/hardware)。
+歡迎使用 HoloLens 2 應用程式更新的 Galaxy Explorer！ [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "星系探險") 最初開發為 HoloLens 的開放原始碼應用程式 (第一代) 透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新它，以獲得 [HoloLens 2 的全新且令人興奮的功能](https://www.microsoft.com/hololens/hardware)。
 
 作為其中一個 [Microsoft Mixed Reality 工作室](galaxy-explorer-update.md#mixed-reality-studios)，我們通常會開發商業級的解決方案，並在整個創意和開發程式中開發 & 的目標平臺測試。 我們會使用登機的架構和 (工具來此專案，例如 [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) ，因為它們變成可供我們和社區使用，而我們想要讓您帶著。
 

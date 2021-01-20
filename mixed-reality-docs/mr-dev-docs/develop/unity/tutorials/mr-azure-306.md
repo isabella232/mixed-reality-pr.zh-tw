@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，混合的現實，學術，unity，教學課程，api，媒體服務，串流影片，360，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 1d53b260b2c4b00ff6bf985646a45948472a56a5
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679517"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583450"
 ---
 # <a name="mr-and-azure-306-streaming-video"></a>MR 和 Azure 306：串流視訊
 
@@ -43,13 +43,13 @@ ms.locfileid: "94679517"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td> MR 和 Azure 306：串流視訊</td><td style="text-align: center;"> </td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 您可以隨意使用最新的軟體（如 [ 安裝工具文章](../../install-the-tools.md)中所列），但不應假設此課程中的資訊會完全符合您在較新軟體中找到的資訊，而不是以下所列的資訊。
@@ -65,7 +65,7 @@ ms.locfileid: "94679517"
 - 適用于 Azure 設定和資料抓取的網際網路存取
 - 2 360 度影片採用的格式為， (您可以 [在此下載頁面](https://www.mettle.com/360vr-master-series-free-360-downloads-page) 找到一些免權利的影片) 
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
 2.  設定及測試您的混合現實沉浸式耳機。
@@ -142,7 +142,7 @@ ms.locfileid: "94679517"
 
     3. 選擇資源群組，或建立一個新的 **資源群組** 。 資源群組提供一種方式來監視、控制存取、布建及管理 Azure 資產集合的計費。 建議您保留與單一專案相關聯的所有 Azure 服務 (例如，) 一般資源群組下的實驗室，) 。 
     
-    > 如果您想要深入瞭解 Azure 資源群組，請遵循此 [連結，以瞭解如何管理 Azure 資源群組](https://docs.microsoft.com/azure/azure-resource-manager/resource-group-portal)。
+    > 如果您想要深入瞭解 Azure 資源群組，請遵循此 [連結，以瞭解如何管理 Azure 資源群組](/azure/azure-resource-manager/resource-group-portal)。
 
     4.  如果您要建立新的資源群組) ，請判斷資源群組 (的 **位置** 。 位置最好是在應用程式執行所在的區域中。 某些 Azure 資產僅適用于某些區域。
 
@@ -150,7 +150,7 @@ ms.locfileid: "94679517"
 
     6.  您也必須確認您已瞭解套用到此服務的條款及條件。
 
-    7.  按一下 [建立]。
+    7.  按一下頁面底部的 [新增] 。
 
         ![Azure 入口網站](images/AzureLabs-Lab6-08.png)
 
@@ -250,7 +250,7 @@ ms.locfileid: "94679517"
     2.  在此案例中，會將您的 **日期** 和 **時間** 設定為您目前的日期，到未來的時間 (100 年) 。 保持原狀，或將它變更為 [符合]。
 
     > [!NOTE]
-    > 如需定位器的詳細資訊，以及您可以選擇的內容，請造訪 [Azure 媒體服務檔](https://docs.microsoft.com/azure/media-services/media-services-concepts)。
+    > 如需定位器的詳細資訊，以及您可以選擇的內容，請造訪 [Azure 媒體服務檔](/azure/media-services/media-services-concepts)。
 
 24. 在該面板的底部，按一下 [ **新增** ] 按鈕。
 
@@ -285,7 +285,7 @@ ms.locfileid: "94679517"
 
     ![Azure 入口網站](images/AzureLabs-Lab6-30.png)
 
-4.  接下來，移至 [檔案 **_File_ *組建設定*** ]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移至 [檔案 ***組建設定*** ]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
 
 5.  也請確定：
 
@@ -606,7 +606,7 @@ ms.locfileid: "94679517"
     ```
 
     > [!TIP] 
-    > **ChangeScene ( # B1** 方法會使用一個方便 \# 的 C 功能，稱為 *條件運算子*。 如此一來，就可以檢查條件，然後根據檢查結果傳回值，全都在單一語句內。 請遵循此 [連結來深入瞭解條件運算子](https://docs.microsoft.com/dotnet/csharp/language-reference/operators/conditional-operator)。
+    > **ChangeScene ( # B1** 方法會使用一個方便 \# 的 C 功能，稱為 *條件運算子*。 如此一來，就可以檢查條件，然後根據檢查結果傳回值，全都在單一語句內。 請遵循此 [連結來深入瞭解條件運算子](/dotnet/csharp/language-reference/operators/conditional-operator)。
 
 11. 在回到 Unity 之前，請先將您的變更儲存在 Visual Studio 中。
 
@@ -888,5 +888,3 @@ ms.locfileid: "94679517"
 **練習2**
 
 使用 Azure 和 Unity 進行實驗，並嘗試執行應用程式自動選取不同檔案大小的影片，視網際網路連線的強度而定。
-
-

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、世界規模、世界、縮放、位置、方向、錨點、空間錨點、世界鎖定、全球鎖定、持續性、共用、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 2db88f9bc5d128f4a9eb42cfb5211d0597b43cfa
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009108"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583261"
 ---
 # <a name="spatial-anchors"></a>空間錨點
 
@@ -19,8 +19,8 @@ ms.locfileid: "98009108"
 
 您也可以跨應用程式會話和跨裝置來保存和共用空間錨點：
 * 藉由將本機空間錨點儲存到磁片，並于稍後再將其載入，您的應用程式可以在單一 HoloLens 上的多個應用程式會話之間計算相同的位置。
-* 藉由使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> 來建立雲端錨點，您的應用程式可以跨多個 HoloLens、IOS 和 Android 裝置共用空間錨點。 藉由讓每個裝置使用相同的空間錨點轉譯全像影像，使用者會看到在真實世界中的相同位置出現全像投影。 這可提供即時共用體驗。
-* 您也可以使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。 藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
+* 藉由使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> 來建立雲端錨點，您的應用程式可以跨多個 HoloLens、IOS 和 Android 裝置共用空間錨點。 藉由讓每個裝置使用相同的空間錨點轉譯全像影像，使用者會看到在真實世界中的相同位置出現全像投影。 這可提供即時共用體驗。
+* 您也可以使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。 藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
 
 您通常可以使用 [參考的階段框架](coordinate-systems.md#stage-frame-of-reference) （而不是空間錨點），針對行動網卡桌上型耳機提供固定規模或房間規模的體驗，這會提供您單一座標系統來轉譯所有內容。 但是，如果您的應用程式可讓使用者在 HoloLens 中穿梭超過5個計量，則可能在整個大樓的整個樓層中運作，您將需要空間錨點，以保持內容的穩定。
 
@@ -71,11 +71,11 @@ ms.locfileid: "98009108"
 
 對於雲端空間錨點，您的儲存體可以依照案例需要調整規模。 您可以儲存所需數量的雲端錨點，並在您知道使用者不再需要錨點時釋放它們。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [座標系統](coordinate-systems.md)
 * [混合實境中的共用體驗](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [Unity 中的持續性](../develop/unity/persistence-in-unity.md)
 * [DirectX 中的空間錨點](../develop/native/coordinate-systems-in-directx.md#place-holograms-in-the-world-using-spatial-anchors)
 * [案例研究 - 在實境中的的透視技術](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

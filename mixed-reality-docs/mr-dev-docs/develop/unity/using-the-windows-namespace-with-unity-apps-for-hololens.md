@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、WinRT、windows mixed reality、API、逐步解說、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、混合現實 Api
-ms.openlocfilehash: 2c57af72a10867b5ef4fc87ff96679e576d203f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2116f0025449fdf127998e605f87de456e9bdaf9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007318"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583558"
 ---
 # <a name="winrt-apis-with-unity-for-hololens"></a>適用于 HoloLens 的 WinRT Api 搭配 Unity
 
@@ -19,7 +19,7 @@ ms.locfileid: "98007318"
 
 ## <a name="mixed-reality-apis"></a>混合現實 Api
 
-Windows SDK 的混合現實焦點子集已在 .NET Standard 2.0 相容投射中提供，您可以在專案中使用，而不需要預處理器指示詞。 Windows 中大部分的 Api。 認知和 Windows. 輸入. 空間命名空間包含在內，未來可能會擴充以包含其他 Api。 在編輯器中執行時，可以使用所投射的 Api，以啟用 [播放模式](https://docs.microsoft.com//windows/mixed-reality/unity-play-mode)。 若要使用這項投射，請對您的專案進行下列修改：
+Windows SDK 的混合現實焦點子集已在 .NET Standard 2.0 相容投射中提供，您可以在專案中使用，而不需要預處理器指示詞。 Windows 中大部分的 Api。 認知和 Windows. 輸入. 空間命名空間包含在內，未來可能會擴充以包含其他 Api。 在編輯器中執行時，可以使用所投射的 Api，以啟用 [播放模式](//windows/mixed-reality/unity-play-mode)。 若要使用這項投射，請對您的專案進行下列修改：
 
 1) 使用[適用于 Unity 的 nuget](https://github.com/GlitchEnzo/NuGetForUnity)來新增[MixedReality DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT) nuget 套件的參考。
 2) 命名空間的前置詞參考 `Windows` `Microsoft.` ：
@@ -64,6 +64,6 @@ public class WinRTAPI : MonoBehaviour {
 
 當您按兩下 Unity 編輯器中的腳本時，它預設會在編輯器專案中啟動您的腳本。 WinRT Api 會顯示為未知，因為 Visual Studio 專案未參考 Windows 執行階段。 **ENABLE_WINMD_SUPPORT** 指示詞未定義，而且會忽略任何 *#if* 包裝程式碼，直到您將專案建立到 UWP Visual Studio 解決方案為止。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [匯出和建置 Unity Visual Studio 解決方案](exporting-and-building-a-unity-visual-studio-solution.md)
 * [Windows 執行階段支援 Unity](https://docs.unity3d.com/Manual/IL2CPP-WindowsRuntimeSupport.html)

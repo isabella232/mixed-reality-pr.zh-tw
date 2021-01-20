@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: SteamVR、相容性、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、串流、移動控制器、haptics
-ms.openlocfilehash: c67eed489f626c804583592e496fcfaff5d8c291
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: b6d92d558218f71af0e8c7693f64a50a44524c63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192626"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583828"
 ---
 # <a name="updating-steamvr-apps-for-windows-mixed-reality"></a>更新 Windows Mixed Reality 的 SteamVR 應用程式
 
@@ -19,7 +19,7 @@ ms.locfileid: "98192626"
 
 ## <a name="initial-setup-instructions"></a>初始安裝指示
 
-若要開始在 Windows Mixed Reality 上測試您的遊戲或應用程式，請務必先遵循我們的 [快速入門手冊。](https://aka.ms/WindowsMixedRealitySteamVR)
+若要開始在 Windows Mixed Reality 上測試您的遊戲或應用程式，請務必先遵循我們的 [快速入門手冊。](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)
 
 ## <a name="controller-models"></a>控制器模型
 
@@ -48,7 +48,7 @@ ms.locfileid: "98192626"
 
 ## <a name="haptics"></a>Haptics
 
-從 [Windows 10 2018 年4月更新](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)開始，現在支援在 Windows Mixed Reality 上使用 Haptics 的 SteamVR 體驗。 如果您的 SteamVR 應用程式或遊戲已包含對 haptics 的支援，現在應該就能 (與 Windows Mixed Reality 的 [動作控制器](../../design/motion-controllers.md)沒有額外的工作) 。
+從 [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)開始，現在支援在 Windows Mixed Reality 上使用 Haptics 的 SteamVR 體驗。 如果您的 SteamVR 應用程式或遊戲已包含對 haptics 的支援，現在應該就能 (與 Windows Mixed Reality 的 [動作控制器](../../design/motion-controllers.md)沒有額外的工作) 。
 
 Windows Mixed Reality 移動控制器使用標準 haptics 馬達，而不是在其他某些 SteamVR 運動控制器中找到的線性傳動器。 這可能會導致與預期的使用者體驗稍有不同。 因此，我們建議您使用 Windows Mixed Reality 的動作控制器來測試及調整您的 haptics 設計。 例如，有時候短 haptic 脈衝 (5-10 ms) 在 Windows Mixed Reality 的移動控制器上比較不明顯。 若要產生更顯著的脈衝，請試著傳送較長的「按一下」 (40-70 ms) ，讓馬達在被告知關閉電源之前，更有時間啟動。
 
@@ -62,16 +62,16 @@ Windows Mixed Reality 移動控制器使用標準 haptics 馬達，而不是在�
 
 ## <a name="bugs-and-feedback"></a>Bug 和意見反應
 
-在改善 Windows Mixed Reality SteamVR 體驗時，您的意見反應非常寶貴。 透過 [Windows 意見反應中樞](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/filing-feedback)提交所有意見反應和 bug。 以下是一些有關 [如何讓您的 SteamVR 意見反應更有説明的秘訣](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)。
+在改善 Windows Mixed Reality SteamVR 體驗時，您的意見反應非常寶貴。 透過 [Windows 意見反應中樞](/windows/mixed-reality/enthusiast-guide/filing-feedback)提交所有意見反應和 bug。 以下是一些有關 [如何讓您的 SteamVR 意見反應更有説明的秘訣](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality#sharing-feedback-on-steamvr)。
 
 如果您有任何問題或意見可以共用，您也可以在我們的串流 [論壇](https://steamcommunity.com/app/719950/discussions/)上聯繫我們。
 
 ## <a name="faqs-and-troubleshooting"></a>常見問題和疑難排解
 
-如果您遇到設定或播放體驗的一般問題，請 [參閱最新的疑難排解步驟](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr)。
+如果您遇到設定或播放體驗的一般問題，請 [參閱最新的疑難排解步驟](/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality#steamvr)。
 
 ## <a name="see-also"></a>另請參閱
 
 * [安裝工具](../install-the-tools.md)
-* [耳機和移動控制器驅動程式歷程記錄](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
-* [Windows Mixed Reality 最小電腦硬體相容性指導方針](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [耳機和移動控制器驅動程式歷程記錄](/windows/mixed-reality/enthusiast-guide/mixed-reality-software)
+* [Windows Mixed Reality 最小電腦硬體相容性指導方針](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)

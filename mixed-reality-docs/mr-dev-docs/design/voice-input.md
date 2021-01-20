@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv、語音、cortana、語音、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、注視
-ms.openlocfilehash: 09f99083d769be80d8c15016b3de8713eae76515
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848129"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583220"
 ---
 # <a name="voice-input"></a>語音輸入
 
@@ -19,7 +19,7 @@ ms.locfileid: "97848129"
 
 語音是 HoloLens 輸入的其中一種主要形式。 它可讓您直接命令全息圖，而不需要使用 [手手勢](gaze-and-commit.md#composite-gestures)。 語音輸入是溝通意圖的一種自然方式。 語音在往返複雜介面時特別有用，因為它可讓使用者使用一個命令來剪下整個嵌套功能表。
 
-語音輸入是由在所有 _通用 Windows 應用程式_ 中支援語音的 [相同引擎](https://msdn.microsoft.com/library/windows/apps/mt185615.aspx)所驅動。 在 HoloLens 上，語音辨識一律會以您裝置設定中所設定的 Windows 顯示語言運作。 
+語音輸入是由在所有 _通用 Windows 應用程式_ 中支援語音的 [相同引擎](/windows/uwp/design/input/speech-recognition)所驅動。 在 HoloLens 上，語音辨識一律會以您裝置設定中所設定的 Windows 顯示語言運作。 
 
 <br>
 
@@ -43,7 +43,7 @@ ms.locfileid: "97848129"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -59,7 +59,7 @@ ms.locfileid: "97848129"
 
 **HoloLens (第 1 代)**
 
-即使沒有特別為您的應用程式新增語音支援，您的使用者只要說出系統 voice 命令「select」就可以啟用全像。 這 [與在 hololens 上按](gaze-and-commit.md#composite-gestures) 下滑鼠的方式相同，在 [hololens clicker](https://docs.microsoft.com/hololens/hololens1-clicker)上按下 [選取] 按鈕，或按 [Windows Mixed Reality 運動控制器](motion-controllers.md)上的觸發程式。 您將聽到音效，並看到具有 [選取] 的工具提示顯示為 [確認]。 「選取」是由低功率關鍵字偵測演算法所啟用，這表示您可以隨時以最少的電池壽命來表示。 您甚至可以說：「選取」您的手邊。
+即使沒有特別為您的應用程式新增語音支援，您的使用者只要說出系統 voice 命令「select」就可以啟用全像。 這 [與在 hololens 上按](gaze-and-commit.md#composite-gestures) 下滑鼠的方式相同，在 [hololens clicker](/hololens/hololens1-clicker)上按下 [選取] 按鈕，或按 [Windows Mixed Reality 運動控制器](motion-controllers.md)上的觸發程式。 您將聽到音效，並看到具有 [選取] 的工具提示顯示為 [確認]。 「選取」是由低功率關鍵字偵測演算法所啟用，這表示您可以隨時以最少的電池壽命來表示。 您甚至可以說：「選取」您的手邊。
 
 <br>
 
@@ -266,7 +266,7 @@ ms.locfileid: "97848129"
 
 ## <a name="communication"></a>通訊
 
-如果應用程式想要利用 HoloLens 提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以使用的各種 [音訊串流類別](https://msdn.microsoft.com/library/windows/desktop/hh404178(v=vs.85).aspx) 。 Windows 10 支援數種不同的串流類別和 HoloLens，可讓您利用其中三種來啟用自訂處理，以優化專為語音、通訊和 (其他所量身打造的麥克風音訊品質，也就是「攝像機」 ) 案例。
+如果應用程式想要利用 HoloLens 提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以使用的各種 [音訊串流類別](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) 。 Windows 10 支援數種不同的串流類別和 HoloLens，可讓您利用其中三種來啟用自訂處理，以優化專為語音、通訊和 (其他所量身打造的麥克風音訊品質，也就是「攝像機」 ) 案例。
 * AudioCategory_Communications 的串流類別目錄已針對通話品質和旁白案例自訂，並為用戶端提供使用者語音的 16 kHz 24 位 mono 音訊串流
 * AudioCategory_Speech 串流類別是針對 HoloLens (Windows) 語音引擎自訂，並提供該使用者語音的 16 kHz 24 位 mono 串流。 如有需要，協力廠商語音引擎可以使用此類別。
 * AudioCategory_Other 串流類別目錄是針對環境環境音訊錄製自訂，並為用戶端提供 48 kHz 的24位身歷聲音訊串流。
@@ -275,7 +275,7 @@ ms.locfileid: "97848129"
 
 ## <a name="languages"></a>語言
 
-HoloLens 2 [支援多種語言](https://docs.microsoft.com/hololens/hololens2-language-support)。 請記住，即使安裝了多個鍵盤或應用程式嘗試以不同的語言建立語音辨識器，語音命令一律會以系統的顯示語言執行。
+HoloLens 2 [支援多種語言](/hololens/hololens2-language-support)。 請記住，即使安裝了多個鍵盤或應用程式嘗試以不同的語言建立語音辨識器，語音命令一律會以系統的顯示語言執行。
 
 ## <a name="troubleshooting"></a>疑難排解
 
@@ -294,7 +294,7 @@ HoloLens 2 [支援多種語言](https://docs.microsoft.com/hololens/hololens2-la
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [目光和行動](gaze-and-commit.md)
 * [本能互動](interaction-fundamentals.md)

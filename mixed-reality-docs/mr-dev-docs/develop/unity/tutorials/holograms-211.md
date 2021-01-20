@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、手勢、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 9f83e2f3b02cf8d83b2fb58a3a0d05dc8576b0e8
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678287"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583705"
 ---
 # <a name="mr-input-211-gesture"></a>MR Input 211：手勢
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../../../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
 
 [手勢](../../../design/gaze-and-commit.md#composite-gestures) 將使用者意圖變成行動。 透過手勢，使用者可以與全像投影互動。 在此課程中，我們將瞭解如何追蹤使用者的手、回應使用者輸入，並根據手邊的州和地點將意見反應提供給使用者。
 
@@ -38,15 +38,15 @@ ms.locfileid: "94678287"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Input 211：手勢</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。
@@ -346,7 +346,7 @@ GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
 1. 使用語音關鍵字 "**Move 太空人**" 來啟用 **操作** 手勢和「**旋轉太空人**」以停用它們。
 2. 切換以回應 **操作手勢辨識器**。
 
-現在就開始吧。
+讓我們開始這次的教學。
 
 1. **在 [階層**] 面板中，建立新的空白 GameObject。 將它命名為 "**AstronautManager**"。
 2. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
@@ -524,10 +524,10 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 7. 在功能表中，輸入搜尋方塊 **語音輸入處理常式**。 選取搜尋結果。
 8. 檢查 **是否為全域接聽程式**，因為我們想要讓這些命令運作，而不論我們所關注的 GameObject 為何。
 9. 按一下該 **+** 按鈕，然後從 [關鍵字] 下拉式清單中選取 [ **展開模型** ]。
-10. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後 **Hierarchy** 將階層中的 [ **AstronautManager** ] 拖曳到 [**無 (物件)** ] 欄位中。
+10. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後將階層中的 [  ] 拖曳到 [**無 (物件)** ] 欄位中。
 11. 現在，按一下 [ **沒有** 函式] 下拉式清單，選取 [ **AstronautManager**]，然後按一下 [ **ExpandModelCommand**]。
 12. 按一下 [語音輸入處理常式 **+** ] 按鈕，然後從 [關鍵字] 下拉式清單中選取 [ **重設模型** ]。
-13. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後 **Hierarchy** 將階層中的 [ **AstronautManager** ] 拖曳到 [**無 (物件)** ] 欄位中。
+13. 按一下 [ **+** 回應] 下的 [AstronautManager]，然後將階層中的 [  ] 拖曳到 [**無 (物件)** ] 欄位中。
 14. 現在，按一下 [ **沒有** 函式] 下拉式清單，選取 [ **AstronautManager**]，然後按一下 [ **ResetModelCommand**]。
 
 ![如何設定第5章的語音輸入來源和處理常式](images/holograms211-speechhandler.png)

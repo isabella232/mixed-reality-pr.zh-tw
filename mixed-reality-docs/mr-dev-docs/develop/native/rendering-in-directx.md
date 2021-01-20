@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全息圖、轉譯、3D 圖形、HolographicFrame、轉譯迴圈、更新迴圈、逐步解說、範例程式碼、Direct3D
-ms.openlocfilehash: aafead61b45550f499405ae63bda7d7f8e79d224
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f62df75f8febc3f3ee6e7c98f2c8fd91082a4466
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006718"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583784"
 ---
 # <a name="rendering-in-directx"></a>DirectX 中的呈現
 
@@ -25,7 +25,7 @@ Windows Mixed Reality 建基於 DirectX，為使用者產生豐富的3D 圖形�
 ## <a name="update-for-the-current-frame"></a>目前畫面格的更新
 
 若要更新影像的應用程式狀態，每個畫面格一次，應用程式將會：
-* 從顯示管理系統取得 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 。
+* 從顯示管理系統取得 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 。
 * 在轉譯完成時，使用相機視圖的目前預測來更新場景。 請注意，全像攝影場景可以有一個以上的相機。
 
 若要轉譯成全像攝影相機，每個畫面格一次，應用程式將會：
@@ -33,7 +33,7 @@ Windows Mixed Reality 建基於 DirectX，為使用者產生豐富的3D 圖形�
 
 ### <a name="create-a-new-holographic-frame-and-get-its-prediction"></a>建立新的全像攝影框架並取得其預測
 
-<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>具有應用程式更新和轉譯目前畫面格所需的資訊。 應用程式會藉由呼叫 **CreateNextFrame** 方法來開始每個新的框架。 當呼叫這個方法時，會使用最新可用的感應器資料來進行預測，並封裝在 **CurrentPrediction** 物件中。
+<a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>具有應用程式更新和轉譯目前畫面格所需的資訊。 應用程式會藉由呼叫 **CreateNextFrame** 方法來開始每個新的框架。 當呼叫這個方法時，會使用最新可用的感應器資料來進行預測，並封裝在 **CurrentPrediction** 物件中。
 
 必須針對每個呈現的框架使用新的框架物件，因為它只適用于及時的有效時間。 **CurrentPrediction** 屬性包含攝影機位置之類的資訊。 這項資訊會在預期使用者看到畫面格的確切時間點推斷。
 
@@ -73,7 +73,7 @@ for (HolographicCameraPose const& cameraPose : prediction.CameraPoses())
 
 ### <a name="get-the-coordinate-system-to-use-as-a-basis-for-rendering"></a>取得座標系統作為轉譯的基礎
 
-Windows Mixed Reality 可讓您的應用程式建立各種 [座標系統](coordinate-systems-in-directx.md)，例如在實體世界中追蹤位置的附加和固定的參考框架。 然後，您的應用程式可以使用這些座標系統，來指出要在哪裡轉譯每個畫面格。 從 API 要求座標時，您一律會傳入要在其中表示這些座標的 <a href="https://docs.microsoft.com/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> 。
+Windows Mixed Reality 可讓您的應用程式建立各種 [座標系統](coordinate-systems-in-directx.md)，例如在實體世界中追蹤位置的附加和固定的參考框架。 然後，您的應用程式可以使用這些座標系統，來指出要在哪裡轉譯每個畫面格。 從 API 要求座標時，您一律會傳入要在其中表示這些座標的 <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a> 。
 
 從 **AppMain：： Update**：
 
@@ -313,7 +313,7 @@ context->VSSetConstantBuffers(
 
 Windows Mixed Reality 包含影像穩定的功能，可讓開發人員或使用者在世界各地放置全 [像](../platform-capabilities-and-apis/hologram-stability.md) 位置。 影像穩定有助於隱藏轉譯管線固有的延遲，以確保最適合使用者的全像攝影體驗。 您可以指定焦點點來進一步增強影像穩定，或可以提供深度緩衝區來即時計算優化的影像穩定。
 
-為了獲得最佳結果，您的應用程式應該使用 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API 提供深度緩衝區。 Windows Mixed Reality 接著可以使用深度緩衝區的幾何資訊，即時優化影像穩定。 Windows 全像影像應用程式範本預設會認可應用程式的深度緩衝區，以協助優化全像全像全像是
+為了獲得最佳結果，您的應用程式應該使用 <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer" target="_blank">CommitDirect3D11DepthBuffer</a> API 提供深度緩衝區。 Windows Mixed Reality 接著可以使用深度緩衝區的幾何資訊，即時優化影像穩定。 Windows 全像影像應用程式範本預設會認可應用程式的深度緩衝區，以協助優化全像全像全像是
 
 從 **AppMain：： Render**：
 
@@ -600,7 +600,7 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 
 ### <a name="enable-the-holographic-frame-to-present-the-swap-chain"></a>讓全像畫面框架呈現交換鏈
 
-使用 Windows Mixed Reality 時，系統會控制交換鏈。 然後系統會管理呈現每個全像攝影攝影機的畫面，以確保高品質的使用者體驗。 它也會為每個相機提供一個可更新每個畫面格的區，以優化系統的各個層面，例如影像穩定或混合實境擷取。 因此，使用 DirectX 的全像全息應用程式不會在 DXGI 交換 **鏈上呼叫** 。 相反地，您會使用 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 類別，在完成繪製框架之後，顯示該框架的所有 swapchains。
+使用 Windows Mixed Reality 時，系統會控制交換鏈。 然後系統會管理呈現每個全像攝影攝影機的畫面，以確保高品質的使用者體驗。 它也會為每個相機提供一個可更新每個畫面格的區，以優化系統的各個層面，例如影像穩定或混合實境擷取。 因此，使用 DirectX 的全像全息應用程式不會在 DXGI 交換 **鏈上呼叫** 。 相反地，您會使用 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a> 類別，在完成繪製框架之後，顯示該框架的所有 swapchains。
 
 從 **DeviceResources：:P 重發**：
 
@@ -608,11 +608,11 @@ void main(triangle GeometryShaderInput input[3], inout TriangleStream<GeometrySh
 HolographicFramePresentResult presentResult = frame.PresentUsingCurrentPrediction();
 ```
 
-根據預設，這個 API 會等候框架在傳回之前完成。 在新的畫面上開始工作之前，全像攝影應用程式應該等候前一個畫面格完成，因為這樣可減少延遲，並允許來自全像攝影框架預測的較佳結果。 這不是一項困難的規則，如果您的畫面格需要超過一個螢幕重新整理才能轉譯，則可以將 HolographicFramePresentWaitBehavior 參數傳遞給 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>來停用這項等候。 在此情況下，您可能會使用非同步轉譯執行緒來維持 GPU 的連續負載。 HoloLens 裝置的重新整理頻率為 60 hz，其中一個框架的持續時間大約為16毫秒。 沉浸式耳機裝置的範圍可以從 60 hz 到 90 hz;在 90 hz 重新整理顯示器時，每個畫面的持續時間大約為11毫秒。
+根據預設，這個 API 會等候框架在傳回之前完成。 在新的畫面上開始工作之前，全像攝影應用程式應該等候前一個畫面格完成，因為這樣可減少延遲，並允許來自全像攝影框架預測的較佳結果。 這不是一項困難的規則，如果您的畫面格需要超過一個螢幕重新整理才能轉譯，則可以將 HolographicFramePresentWaitBehavior 參數傳遞給 <a href="/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction" target="_blank">PresentUsingCurrentPrediction</a>來停用這項等候。 在此情況下，您可能會使用非同步轉譯執行緒來維持 GPU 的連續負載。 HoloLens 裝置的重新整理頻率為 60 hz，其中一個框架的持續時間大約為16毫秒。 沉浸式耳機裝置的範圍可以從 60 hz 到 90 hz;在 90 hz 重新整理顯示器時，每個畫面的持續時間大約為11毫秒。
 
 ### <a name="handle-devicelost-scenarios-in-cooperation-with-the-holographicframe"></a>處理與 HolographicFrame 合作的 DeviceLost 案例
 
-DirectX 11 應用程式通常會想要檢查由 DXGI 交換鏈 **目前** 的函式所傳回的 HRESULT，以找出是否有 **DeviceLost** 錯誤。 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>類別會為您處理這種情況。 檢查傳回的 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> ，以瞭解您是否需要釋放並重新建立 Direct3D 裝置和裝置資源。
+DirectX 11 應用程式通常會想要檢查由 DXGI 交換鏈 **目前** 的函式所傳回的 HRESULT，以找出是否有 **DeviceLost** 錯誤。 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>類別會為您處理這種情況。 檢查傳回的 <a href="/uwp/api/windows.graphics.holographic.holographicframepresentresult" target="_blank">HolographicFramePresentResult</a> ，以瞭解您是否需要釋放並重新建立 Direct3D 裝置和裝置資源。
 
 ```cpp
 // The PresentUsingCurrentPrediction API will detect when the graphics device
@@ -625,7 +625,7 @@ if (presentResult == HolographicFramePresentResult::DeviceRemoved)
 }
 ```
 
-如果 Direct3D 裝置已遺失，而您已重新建立它，則必須告訴 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> 開始使用新的裝置。 將會重新建立此裝置的交換鏈。
+如果 Direct3D 裝置已遺失，而您已重新建立它，則必須告訴 <a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a> 開始使用新的裝置。 將會重新建立此裝置的交換鏈。
 
 從 **DeviceResources：： InitializeUsingHolographicSpace**：
 
@@ -641,7 +641,7 @@ Windows 10 Creators Update 的電腦可以設定為 **離散和** 整合式 gpu�
 
 最常見的 Direct3D 範例程式碼示範如何使用預設硬體配接器來建立 DirectX 裝置，該裝置在混合式系統上可能與用於耳機的不同。
 
-若要解決任何問題，請使用其中一個<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>的<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a> 。PrimaryAdapterId ( # A1 或<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>。AdapterId ( # A3。 然後，您可以使用這個 adapterId 來選取使用 IDXGIFactory4 EnumAdapterByLuid 的正確 DXGIAdapter。
+若要解決任何問題，請使用其中一個<a href="/uwp/api/windows.graphics.holographic.holographicspace" target="_blank">HolographicSpace</a>的<a href="/uwp/api/windows.graphics.holographic.holographicadapterid" target="_blank">HolographicAdapterID</a> 。PrimaryAdapterId ( # A1 或<a href="/uwp/api/windows.graphics.holographic.holographicdisplay" target="_blank">HolographicDisplay</a>。AdapterId ( # A3。 然後，您可以使用這個 adapterId 來選取使用 IDXGIFactory4 EnumAdapterByLuid 的正確 DXGIAdapter。
 
 從 **DeviceResources：： InitializeUsingHolographicSpace**：
 
@@ -711,7 +711,7 @@ const HRESULT hr = D3D11CreateDevice(
 
 使用混合式系統上的媒體基礎可能會導致無法轉譯影片的問題，或是因為媒體基礎預設為系統行為而損毀的視頻材質。 在某些情況下，需要建立個別的 ID3D11Device 來支援多執行緒處理，並設定正確的建立旗標。
 
-當您初始化 ID3D11Device 時，D3D11_CREATE_DEVICE_VIDEO_SUPPORT 旗標必須定義為 D3D11_CREATE_DEVICE_FLAG 的一部分。 一旦建立裝置和內容之後，請呼叫 <a href="https://docs.microsoft.com/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">SetMultithreadProtected</a> 來啟用多執行緒處理。 若要將裝置與 <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">IMFDXGIDeviceManager</a>建立關聯，請使用 <a href="https://docs.microsoft.com/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">IMFDXGIDeviceManager：： ResetDevice</a> 函式。
+當您初始化 ID3D11Device 時，D3D11_CREATE_DEVICE_VIDEO_SUPPORT 旗標必須定義為 D3D11_CREATE_DEVICE_FLAG 的一部分。 一旦建立裝置和內容之後，請呼叫 <a href="/windows/desktop/api/d3d10/nf-d3d10-id3d10multithread-setmultithreadprotected" target="_blank">SetMultithreadProtected</a> 來啟用多執行緒處理。 若要將裝置與 <a href="/windows/desktop/api/mfobjects/nn-mfobjects-imfdxgidevicemanager" target="_blank">IMFDXGIDeviceManager</a>建立關聯，請使用 <a href="/windows/desktop/api/mfobjects/nf-mfobjects-imfdxgidevicemanager-resetdevice" target="_blank">IMFDXGIDeviceManager：： ResetDevice</a> 函式。
 
 **將 ID3D11Device 與 IMFDXGIDeviceManager 建立關聯** 的程式碼：
 
@@ -746,6 +746,6 @@ if (FAILED(hr))
     return hr;
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [DirectX 中的座標系統](coordinate-systems-in-directx.md)
 * [使用 HoloLens 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md)

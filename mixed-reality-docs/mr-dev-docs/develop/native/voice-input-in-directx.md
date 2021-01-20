@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 逐步解說、語音命令、片語、辨識、語音、directx、平臺、cortana、windows mixed reality
-ms.openlocfilehash: c917fbc4215442bc66f52dc2c527e01b2c446594
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613102"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583748"
 ---
 # <a name="voice-input-in-directx"></a>DirectX 中的語音輸入
 
@@ -67,7 +67,7 @@ m_speechCommandList->Append(StringReference(L"SpeechRecognizer"));
    m_speechCommandData.push_back(float4(0.5f, 0.1f, 1.f, 1.f));
 ```
 
-若要將命令清單載入語音辨識器的條件約束清單中，請使用 [SpeechRecognitionListConstraint](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionlistconstraint.aspx) 物件。
+若要將命令清單載入語音辨識器的條件約束清單中，請使用 [SpeechRecognitionListConstraint](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionListConstraint) 物件。
 
 ```
 SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListConstraint(m_speechCommandList);
@@ -86,7 +86,7 @@ SpeechRecognitionListConstraint^ spConstraint = ref new SpeechRecognitionListCon
    });
 ```
 
-在語音辨識器的[SpeechContinuousRecognitionSession](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.aspx)上訂閱[ResultGenerated](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionsession.resultgenerated.aspx)事件。 此事件會在已辨識您的其中一個命令時通知您的應用程式。
+在語音辨識器的[SpeechContinuousRecognitionSession](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)上訂閱[ResultGenerated](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionSession)事件。 此事件會在已辨識您的其中一個命令時通知您的應用程式。
 
 ```
 m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
@@ -95,7 +95,7 @@ m_speechRecognizer->ContinuousRecognitionSession->ResultGenerated +=
            );
 ```
 
-*OnResultGenerated* 事件處理常式會接收 [SpeechContinuousRecognitionResultGeneratedEventArgs](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechcontinuousrecognitionresultgeneratedeventargs.aspx)實例中的事件資料。 如果信賴度大於您所定義的閾值，您的應用程式應該會注意到事件發生。 儲存事件資料，讓您可以在稍後的更新迴圈中使用它。
+*OnResultGenerated* 事件處理常式會接收 [SpeechContinuousRecognitionResultGeneratedEventArgs](/uwp/api/Windows.Media.SpeechRecognition.SpeechContinuousRecognitionResultGeneratedEventArgs)實例中的事件資料。 如果信賴度大於您所定義的閾值，您的應用程式應該會注意到事件發生。 儲存事件資料，讓您可以在稍後的更新迴圈中使用它。
 
 從 *HolographicVoiceInputSampleMain .cpp*：
 
@@ -256,7 +256,7 @@ catch (Exception^ exception)
 ```
 
 > [!NOTE]
-> 您可以使用數個預先定義的 [SpeechRecognitionScenarios](https://msdn.microsoft.com/library/windows/apps/windows.media.speechrecognition.speechrecognitionscenario.aspx) 來優化語音辨識。
+> 您可以使用數個預先定義的 [SpeechRecognitionScenarios](/uwp/api/Windows.Media.SpeechRecognition.SpeechRecognitionScenario) 來優化語音辨識。
 
 * 若要優化聽寫，請使用聽寫案例。<br/>
    ```
@@ -431,5 +431,5 @@ catch (Exception^ exception)
 ```
 
 ## <a name="see-also"></a>另請參閱
-* [語音應用程式設計](https://msdn.microsoft.com/library/dn596121.aspx)
+* [語音應用程式設計](/windows/uwp/design/input/speech-interactions)
 * [SpeechRecognitionAndSynthesis 範例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/SpeechRecognitionAndSynthesis)

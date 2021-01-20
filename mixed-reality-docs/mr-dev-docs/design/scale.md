@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、樣式、設計、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、調整、全像影像
-ms.openlocfilehash: 6711a58fb4dde2aa28272c3003e642c4f4d3e236
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848268"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583309"
 ---
 # <a name="scale"></a>調整
 
@@ -80,7 +80,7 @@ ms.locfileid: "97848268"
 
 ---
 
-## <a name="see-also"></a>請參閱
-* [色彩、光線和材質](../color,-light-and-materials.md)
+## <a name="see-also"></a>另請參閱
+* [色彩、光線和材質](./color-light-and-materials.md)
 * [印刷樣式](typography.md)
 * [空間音效設計](spatial-sound-design.md)

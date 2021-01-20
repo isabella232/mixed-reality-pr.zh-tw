@@ -6,12 +6,12 @@ ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens，測試
-ms.openlocfilehash: d26a3717da2ee9943e92e3602b6029435815262b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008538"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583768"
 ---
 # <a name="testing-your-app-on-hololens"></a>測試 HoloLens 上的應用程式
 
@@ -111,8 +111,8 @@ ms.locfileid: "98008538"
 
 ## <a name="windows-app-certification-kit"></a>Windows 應用程式認證套件
 
-若要為您的應用程式提供最有機會在 Windows 市集中 [發佈](../../distribute/submitting-an-app-to-the-microsoft-store.md)，請先在本機進行驗證並測試，再提交憑證以進行認證。 如果您的應用程式是以 Windows 全像裝置系列為目標， [Windows 應用程式認證套件](https://msdn.microsoft.com/library/windows/apps/xaml/mt186449.aspx) 只會在您的電腦上執行本機靜態分析測試。 您的 HoloLens 不會執行任何測試。
+若要為您的應用程式提供最有機會在 Windows 市集中 [發佈](../../distribute/submitting-an-app-to-the-microsoft-store.md)，請先在本機進行驗證並測試，再提交憑證以進行認證。 如果您的應用程式是以 Windows 全像裝置系列為目標， [Windows 應用程式認證套件](/windows/uwp/debug-test-perf/windows-app-certification-kit) 只會在您的電腦上執行本機靜態分析測試。 您的 HoloLens 不會執行任何測試。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [將應用程式提交到 Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)

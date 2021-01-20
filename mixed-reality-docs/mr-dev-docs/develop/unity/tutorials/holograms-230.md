@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間對應、表面重建、網格、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: dc96fbff43c21216e3b860f1dbbbaae330e1f176
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94677187"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582935"
 ---
 # <a name="mr-spatial-230-spatial-mapping"></a>MR Spatial 230：空間對應
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../../../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
 
 [空間對應](../../../design/spatial-mapping.md) 結合了真實世界和虛擬世界，藉由教授有關環境的影像。 在 MR 空間 230 (Project 天文館) 我們將瞭解如何：
 
@@ -32,15 +32,15 @@ ms.locfileid: "94677187"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Spatial 230：空間對應</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。
@@ -134,7 +134,7 @@ ms.locfileid: "94677187"
 * 在 Visual Studio 中，使用頂端工具列將設定變更為 [ **發行**]。
 * 將平臺變更為 **x86**。
 * 按一下 [本機電腦] 右邊的下拉箭號，然後選取 [ **遠端電腦**]。
-* 在 [位址] 欄位中輸入 [您裝置的 IP 位址](../../../connecting-to-wi-fi-on-hololens.md#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) ，並將驗證模式變更為 **通用 (未加密的通訊協定)**。
+* 在 [位址] 欄位中輸入 [您裝置的 IP 位址](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) ，並將驗證模式變更為 **通用 (未加密的通訊協定)**。
 * 按一下 [ **Debug-> 啟動但不進行調試]，** 或按 **Ctrl + F5**。
 * 觀賞 Visual Studio 中的 [ **輸出** ] 面板，以取得組建和部署狀態。
 * 當您的應用程式部署完成後，請四處移動空間。 您將會看到黑色和白色線框網格所涵蓋的周圍表面。
@@ -148,7 +148,7 @@ ms.locfileid: "94677187"
 * 按一下 [ **新增 Profiler > GPU**]。
 * 按一下 [ **Active Profiler <Enter IP> >**]。
 * 輸入 HoloLens 的 **IP 位址** 。
-* 按一下 [ **連接**]。
+* 按一下 [連線]。
 * 觀察 GPU 呈現框架所需的毫秒數。
 * 停止應用程式在裝置上執行。
 * 返回 Visual Studio 並開啟 **SpatialMappingObserver.cs**。 您會在 Assembly-CSharp (通用 Windows) 專案的 HoloToolkit\SpatialMapping 資料夾中找到它。

@@ -1,22 +1,22 @@
 ---
-title: MR 共用 240-多個 HoloLens 裝置
+title: MR Sharing 240 - 多重 HoloLens 裝置
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習共用全像影像的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、共用、網路、學術、教學課程、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: f57629e37463c9a05219ebae92bff8870728d688
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: 97f2067c043912e7608361e73e54fdf769b8bf51
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678257"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582928"
 ---
 # <a name="mr-sharing-240-multiple-hololens-devices"></a>MR Sharing 240：多個 HoloLens 裝置
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../../../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
 
 當我們在空間中移動時，我們會在世界各地提供全像投影。 HoloLens 會使用不同的 [座標系統](../../../design/coordinate-systems.md) 來追蹤物件的位置和方向，以就地保存全像影像。 當我們在裝置之間共用這些座標系統時，我們可以建立共用的體驗，讓我們參與共用的全像世界。
 
@@ -31,15 +31,15 @@ ms.locfileid: "94678257"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Sharing 240：多個 HoloLens 裝置</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * 使用隨網際網路存取安裝的正確 [工具](../../../develop/install-the-tools.md) 設定的 Windows 10 電腦。
 * 至少有兩個 HoloLens 裝置 [設定用於開發](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)。

@@ -6,12 +6,12 @@ ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer、HoloLens、Windows Mixed Reality、分享您的想法、個案研究
-ms.openlocfilehash: 0226c38e9fa21407a7a6529693a2adb3c5da7659
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009778"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583539"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>案例研究-在混合式事實下建立 galaxy
 
@@ -147,7 +147,7 @@ float3 ComputeStarPosition(StarDescriptor star)
 
 ### <a name="a-bit-of-context-first"></a>先有一點內容
 
-使用遊戲中的材質時，紋理大小很少會符合我們想要在其中使用的區域，但我們可以使用不同類型的材質篩選來取得圖形卡片，以從紋理的圖元 ([材質篩選](https://msdn.microsoft.com/library/dn642451.aspx)) 中插入所要的色彩。 感興趣的篩選是 [雙線性篩選](https://msdn.microsoft.com/library/windows/desktop/bb172357.aspx) ，會使用4個最接近的鄰近專案來計算任何圖元的值。
+使用遊戲中的材質時，紋理大小很少會符合我們想要在其中使用的區域，但我們可以使用不同類型的材質篩選來取得圖形卡片，以從紋理的圖元 ([材質篩選](/previous-versions/visualstudio/visual-studio-2015/debugger/point-bilinear-trilinear-and-anisotropic-texture-filtering-variants)) 中插入所要的色彩。 感興趣的篩選是 [雙線性篩選](/windows/win32/direct3d9/bilinear-texture-filtering) ，會使用4個最接近的鄰近專案來計算任何圖元的值。
 
 ![在篩選之前的原始](images/texture-1.png)
 
@@ -203,6 +203,6 @@ x3 精密回到完整解析度。
 </table>
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [GitHub 上的 Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer)
 * [YouTube 上的 Galaxy Explorer 專案更新](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)
