@@ -3,12 +3,12 @@ title: 使用 SteamVR 搭配 Windows Mixed Reality
 description: 瞭解如何在使用相容電腦的 Windows Mixed Reality 耳機和控制器上設定及播放 SteamVR 遊戲。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: 01fac0f6ce88e473da8a8d9300a4169b37b74078
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
+ms.openlocfilehash: 4a2d3065a12cdc413eae5b7ad164db6e820455ae
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98031964"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581795"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
 
@@ -163,6 +163,6 @@ Red = 動作 reprojection 是關閉的，因為應用程式的執行速度低於
 
 * [使用 Windows Mixed Reality 針對 SteamVR 進行疑難排解](steamvr-questions.md)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
-* [使用 Unity 中的 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-* [在 Unreal 中使用 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+* [使用 Unity 中的 HP 控制器](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+* [在 Unreal 中使用 HP 控制器](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 * [提出錯誤及意見反應](filing-feedback.md)

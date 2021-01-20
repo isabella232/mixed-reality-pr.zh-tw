@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: ffc9fd172f3e9a1cfd648e3fb431274690c9f190
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d603e2576856fe48080a1a1f06c1814a78381192
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009598"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582325"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -32,7 +32,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 </colgroup>
 <tr>
      <td><strong>功能</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
 </tr>
@@ -48,7 +48,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 ## <a name="calibration"></a>校正 
 
-為了讓眼睛追蹤能準確地運作，每位使用者都必須經過 [眼睛追蹤使用者校正](../calibration.md) ，讓使用者能夠查看一組全像全像一組的目標。 這可讓裝置為使用者調整系統，以獲得更舒適且更高品質的觀賞體驗，並同時確保一致的眼睛追蹤。 
+為了讓眼睛追蹤能準確地運作，每位使用者都必須經過 [眼睛追蹤使用者校正](/hololens/hololens-calibration) ，讓使用者能夠查看一組全像全像一組的目標。 這可讓裝置為使用者調整系統，以獲得更舒適且更高品質的觀賞體驗，並同時確保一致的眼睛追蹤。 
 
 目視追蹤應該適用于大部分的使用者，但在少數情況下，使用者無法成功校正。 校正可能會因各種原因而失敗，包括但不限於： 
 * 使用者先前退出宣告校正流程
@@ -59,13 +59,13 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 開發人員應務必為使用者提供適當的支援，讓他們能夠在無法順利校正)  (的情況之下，使用眼睛追蹤資料。 我們已在此頁面底部的區段中，提供回復解決方案的建議。 
 
-若要深入瞭解校正，以及如何確保順暢的體驗，請查看我們的 [眼睛追蹤使用者校正](../calibration.md) 頁面。
+若要深入瞭解校正，以及如何確保順暢的體驗，請查看我們的 [眼睛追蹤使用者校正](/hololens/hololens-calibration) 頁面。
 
 <br>
 
 ## <a name="available-eye-tracking-data"></a>可用的眼睛追蹤資料
 
-在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的 [眼睛追蹤 API](https://docs.microsoft.com/uwp/api/windows.perception.people.eyespose) 所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_。
+在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的 [眼睛追蹤 API](/uwp/api/windows.perception.people.eyespose) 所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_。
 如需有關如何存取眼睛追蹤資料的詳細資訊，請參閱我們的開發人員指南，以瞭解如何在您的 [DirectX](../develop/native/gaze-in-directx.md) 和 [Unity 中](https://aka.ms/mrtk-eyes)使用眼睛。
 
 預測的眼睛大約是在實際目標 (的視覺角度1.5 度以內，請參閱下圖) 。 由於預期會有些許的 imprecisions，因此開發人員應該規劃這項下限值周圍的一些邊界 (例如，2.0-3.0 度可能會導致) 更熟悉的體驗。 我們將在下方討論如何處理小型目標的選取。 為了讓眼球追蹤精準運作，每個使用者都必須接受眼球追蹤使用者校正。 
@@ -135,8 +135,8 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 
 在罕見的情況下，可能無法使用眼睛追蹤資料。
 這可能是因為下列各項最常見的原因：
-* 系統無法 [校正使用者](../calibration.md)。
-* 使用者略過 [校正](../calibration.md)。    
+* 系統無法 [校正使用者](/hololens/hololens-calibration)。
+* 使用者略過 [校正](/hololens/hololens-calibration)。   
 * 已校正使用者，但決定不授與應用程式使用其眼睛追蹤資料的許可權。    
 * 使用者有唯一的眼鏡或某些系統尚未支援的眼睛狀況。 
 * 外部因素抑制可靠的眼睛追蹤，例如 HoloLens 面板上的汙跡或眼鏡、密集的直接陽光和遮蔽，因為眼睛正面的頭髮。  
@@ -166,14 +166,12 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 
 此頁面希望您有大致的瞭解，讓您開始瞭解 HoloLens 2 的眼睛追蹤和眼睛輸入的角色。 若要開始進行開發，請查看有關眼睛的資訊，以瞭解如何與全像 [影像互動](eye-gaze-interaction.md)、 [在 Unity 中的眼睛](https://aka.ms/mrtk-eyes) ，以及 [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [校正](../calibration.md)
+* [校正](/hololens/hololens-calibration)
 * [舒適度](comfort.md)
 * [眼部目光導向的互動](eye-gaze-interaction.md)
 * [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)
 * [Unity 中的眼睛 (混合現實工具組) ](https://aka.ms/mrtk-eyes)
 * [目光和行動](gaze-and-commit.md)
 * [語音輸入](../out-of-scope/voice-design.md)
-
-

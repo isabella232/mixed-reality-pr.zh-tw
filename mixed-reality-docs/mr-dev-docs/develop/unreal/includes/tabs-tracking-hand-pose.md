@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c5a13798ca6a73f1a6410abe310c2166b67f4626
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: 21c29b2c8d540378259200cc834f7a36065f8ab3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717786"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581112"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -57,7 +57,7 @@ enum class EWMRHandKeypoint : uint8
 };
 ```
 
-您可以在 [HandJointKind](https://docs.microsoft.com/uwp/api/windows.perception.people.handjointkind) 資料表中找到每個列舉案例的數值。
+您可以在 [HandJointKind](/uwp/api/windows.perception.people.handjointkind) 資料表中找到每個列舉案例的數值。
 
 ### <a name="supporting-hand-tracking"></a>支援手動追蹤
 
@@ -95,4 +95,3 @@ static bool UWindowsMixedRealityHandTrackingFunctionLibrary::GetHandJointTransfo
 * **轉換** –骨骼基底的座標和方向。 您可以要求下一個骨骼的基底，以取得適用于骨骼結尾的轉換資料。 特殊的秘訣骨骼可提供 distal 的結尾。
 * * * 半徑：骨骼基底的半徑。
 * * * 傳回值-如果已追蹤此框架，則為 true; 如果未追蹤此骨骼，則為 false。
-

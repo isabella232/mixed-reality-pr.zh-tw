@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: 1eb2913f1953e334cfe75b786f96bb51a9852fc5
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 7d4702a21fccbb18c7c4b07675953c37785ae6db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578441"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580225"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. 將空間音訊新增至 Unity 專案
 
@@ -21,7 +21,7 @@ ms.locfileid: "98578441"
 
 [Microsoft 空間定位器 GitHub 存放庫](https://github.com/microsoft/spatialaudio-unity)已完成此教學課程順序的 Unity 專案。
 
-若要瞭解使用以 HRTF 為基礎的 spatialization 技術來 spatialize 音效的意義，以及它可能有説明的建議，請參閱 [空間音效設計](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)。
+若要瞭解使用以 HRTF 為基礎的 spatialization 技術來 spatialize 音效的意義，以及它可能有説明的建議，請參閱 [空間音效設計](/windows/mixed-reality/spatial-sound-design)。
 
 ## <a name="what-is-hrtf-offload"></a>什麼是 HRTF 卸載？
 

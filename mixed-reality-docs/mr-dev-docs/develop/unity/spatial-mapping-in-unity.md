@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: b4c45ba91a3e864c8cd29f3ebc3396d0250948f4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009288"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582544"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -34,7 +34,7 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens (第一代) </strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第一代) </strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -487,7 +487,7 @@ Import_UnderstandingMesh –
 如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊： 
 
 > [!div class="nextstepaction"]
-> [文字](text-in-unity.md)
+> [Text](text-in-unity.md)
 
 或者，直接跳到混合實境平台功能和 API 的主題：
 

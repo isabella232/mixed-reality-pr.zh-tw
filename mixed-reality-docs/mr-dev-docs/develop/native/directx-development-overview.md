@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: DirectX，全像攝影轉譯、原生、原生應用程式、WinRT、WinRT 應用程式、平臺 Api、自訂引擎、中介軟體、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 764cbe0a37501cc176e9bb05a9a7771b03666f0c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b137fad12740542deb4995485201a9bd0d1d7662
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006848"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581047"
 ---
 # <a name="native-development-overview"></a>原生開發概觀
 
@@ -32,7 +32,7 @@ Windows Mixed Reality 支援 [兩種類型的應用程式](../../design/app-view
 * UWP 或 Win32 **混合現實應用程式，這些應用程式** 會使用 [HolographicSpace API](getting-a-holographicspace.md)或 [OpenXR api](openxr.md)來呈現可填滿耳機顯示器的 [沉浸式視圖](../../design/app-views.md)
 * **2d 應用程式** (UWP) ，其使用 DIRECTX、XAML 或其他架構在 Windows Mixed Reality 首頁的平板上轉譯 [2d 視圖](../../design/app-views.md#2d-views)
 
-[2d 視圖和沉浸式視圖](../../design/app-views.md)的 DirectX 開發之間的差異，主要是要考慮全像攝影轉譯和空間輸入。 您的 UWP 應用程式 [IFrameworkView](https://msdn.microsoft.com/library/windows/apps/windows.applicationmodel.core.iframeworkview.aspx) 或您的 Win32 應用程式的 HWND 是必要的，而且維持在相同的狀態。 適用于您應用程式的 WinRT Api 也是如此。 但是，您必須使用這些 Api 的不同子集來利用全像全像的功能。 例如，「全像」應用程式的系統會管理 swapchain 和框架，以啟用姿勢預測的框架迴圈。
+[2d 視圖和沉浸式視圖](../../design/app-views.md)的 DirectX 開發之間的差異，主要是要考慮全像攝影轉譯和空間輸入。 您的 UWP 應用程式 [IFrameworkView](/uwp/api/Windows.ApplicationModel.Core.IFrameworkView) 或您的 Win32 應用程式的 HWND 是必要的，而且維持在相同的狀態。 適用于您應用程式的 WinRT Api 也是如此。 但是，您必須使用這些 Api 的不同子集來利用全像全像的功能。 例如，「全像」應用程式的系統會管理 swapchain 和框架，以啟用姿勢預測的框架迴圈。
 
 [!INCLUDE[](../includes/native-getting-started.md)]
 
@@ -68,6 +68,6 @@ Windows Mixed Reality 的應用程式會使用下列 Api 來建立 HoloLens 和�
 * [OpenXR 效能](openxr-performance.md)
 * [對 OpenXR 進行疑難排解](openxr-troubleshooting.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [應用程式模型](../../design/app-model.md)
 * [應用程式檢視](../../design/app-views.md)

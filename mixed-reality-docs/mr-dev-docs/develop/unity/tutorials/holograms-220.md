@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間音效、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 043443c0c197e3b606c4845966e0cf60102d0b85
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94678367"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582759"
 ---
 # <a name="mr-spatial-220-spatial-sound"></a>MR Spatial 220：空間音效
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../../../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
 
 [空間音效](../../../design/spatial-sound.md) breathes 生活進入全像全球，並讓他們在世界各地都存在。 全像投影是由光線和音效所組成，如果您似乎無法看見您的全像影像，空間音效可以協助您找到它們。 空間音效與您在無線電上聽到的一般音效不一樣，它是位於3D 空間的音效。 有了空間音效，您就可以讓像是在您後方、您或甚至是在您的頭上的全像投影一樣： 在此課程中，您將會：
 
@@ -30,15 +30,15 @@ ms.locfileid: "94678367"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../../../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Spatial 220：空間音效</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>先決條件
+### <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。
 * 一些基本的 c # 程式設計功能。

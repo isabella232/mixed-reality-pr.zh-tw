@@ -6,16 +6,16 @@ ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、設計、色彩、燈光、材質、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 5d99941f068e808ba14d97084ef840a66aded2a9
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bf64413793aa40d158fde9f9a416d9a9b66af236
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848057"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580065"
 ---
 # <a name="color-light-and-materials"></a>色彩、光線和材質
 
-![色彩、光線和材質](images/RemoteRendering.jpg)
+![色彩、燈光和材質](images/RemoteRendering.jpg)
 
 設計混合現實的內容時，必須仔細考慮所有虛擬資產的色彩、光源和材質。 美觀用途可能包括使用燈光和材質來設定沉浸式環境的色調，而功能性用途可包含使用驚人的色彩來警示使用者即將發生的動作。 每個決策都必須根據您體驗的目標裝置的商機和限制進行權衡。
 
@@ -100,9 +100,9 @@ Light 和 color 可協助讓您的全息體在使用者的環境中以更自然�
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [設計全像攝影顯示器的內容](designing-content-for-holographic-display.md)
 * [色彩分隔](../develop/platform-capabilities-and-apis/hologram-stability.md#color-separation)
 * [全像投影](../discover/hologram.md)
 * [Microsoft 設計語言-色彩](https://www.microsoft.com/design/color)
-* [通用 Windows 平臺-色彩](https://docs.microsoft.com/windows/uwp/style/color)
+* [通用 Windows 平臺-色彩](/windows/uwp/style/color)

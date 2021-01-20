@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 5f2e02c85b443497f539d1bfcbf165214e3ac3c1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007798"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580543"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的運動控制器
 
@@ -149,10 +149,10 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 
 使用「混合現實-> 輸入」類別，在意見反應中樞中提供意見反應給我們。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-- [Unity 中的 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-- [Unreal 中的 HP 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+- [Unity 中的 HP 控制器](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+- [Unreal 中的 HP 控制器](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 - [詢問社群](https://answers.microsoft.com)
 - [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
 - [疑難排解](troubleshooting-windows-mixed-reality.md)

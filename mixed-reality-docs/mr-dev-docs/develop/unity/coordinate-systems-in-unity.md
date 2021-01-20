@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、僅限方向、固定大小、固定規模、會議室規模、世界規模、360度、卡上、站上、房間、世界、縮放、位置、方向、Unity、錨定、空間錨點、世界錨點、全球鎖定、世界鎖定、內文鎖定、內文鎖定、追蹤損失、locatability、界限、recenter、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 900c393bf9ab09f1ac49e3108488d081f8025c19
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010279"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581068"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity 中的座標系統
 
@@ -163,15 +163,15 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>跨裝置共用錨點
 
-使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
+使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
 
-若要開始在 Unity 中建立共用體驗，請嘗試5分鐘的 <a href="https://docs.microsoft.com/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間錨點 Unity 快速入門</a>。
+若要開始在 Unity 中建立共用體驗，請嘗試5分鐘的 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間錨點 Unity 快速入門</a>。
 
-在您啟動並執行 Azure 空間錨點之後，您可以 <a href="https://docs.microsoft.com/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">在 Unity 中建立及尋找錨點</a>。
+在您啟動並執行 Azure 空間錨點之後，您可以 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-unity" target="_blank">在 Unity 中建立及尋找錨點</a>。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 您可以從這裡繼續進行下一個組建區塊：
+如果您正在遵循我們所配置的 Unity 開發檢查點旅程，您將會在探索混合現實核心構成要素。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [目光](gaze-in-unity.md)
@@ -190,5 +190,5 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 * [空間錨點](../../design/spatial-anchors.md)
 * [Unity 中的持續性](persistence-in-unity.md)
 * [Unity 中的共用體驗](shared-experiences-in-unity.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
-* <a href="https://docs.microsoft.com/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">適用于 Unity 的 Azure 空間錨點 SDK</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/dotnet/api/Microsoft.Azure.SpatialAnchors" target="_blank">適用于 Unity 的 Azure 空間錨點 SDK</a>

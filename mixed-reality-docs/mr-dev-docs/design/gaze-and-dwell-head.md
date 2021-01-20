@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、ux、指導方針、清單視圖
-ms.openlocfilehash: 2bfd984a466c1ccd3913e889ca57663800f46380
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e70536b7247153979b8650ba1f5bcbe1a7cd08af
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007078"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582201"
 ---
 # <a name="head-gaze-and-dwell"></a>頭部注視並佇留
 
@@ -32,7 +32,7 @@ ms.locfileid: "98007078"
     </colgroup>
     <tr>
         <td><strong>輸入模型</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -182,7 +182,7 @@ s
 
 ---
  
- ## <a name="see-also"></a>請參閱
+ ## <a name="see-also"></a>另請參閱
 
 * [目光和行動](gaze-and-commit.md)
 * [手 - 直接操作](direct-manipulation.md)

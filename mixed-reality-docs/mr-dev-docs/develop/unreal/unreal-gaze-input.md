@@ -6,12 +6,12 @@ ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: e546867fe02acd5e72ee76b4108a369ec25fd32f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010138"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98579984"
 ---
 # <a name="gaze-input"></a>注視輸入
 
@@ -117,7 +117,7 @@ void AEyeTracker::Tick(float DeltaTime)
 您可以隨時回到 [Unreal 開發檢查點](unreal-development-overview.md#2-core-building-blocks)。
 
 ## <a name="see-also"></a>另請參閱
-* [校正](../../calibration.md)
+* [校正](/hololens/hololens-calibration)
 * [舒適度](../../design/comfort.md)
 * [目光和行動](../../design/gaze-and-commit.md)
 * [語音輸入](../../out-of-scope/voice-design.md)

@@ -6,16 +6,16 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens，版本資訊，作業系統，功能，組建，平臺
-ms.openlocfilehash: db5e3b87eaf619a0f25e07d0698499a89a1b4b12
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 290369f94797a790ec0a2bb4227d84902d31eb43
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009498"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581527"
 ---
 # <a name="release-notes---may-2016"></a>版本資訊 - 2016 年 5 月
 
-HoloLens 團隊致力於提供您透過 Windows 測試人員計畫的最新功能更新和主要修正。 感謝您所有的建議，我們會將您的意見反應帶給您。 繼續透過意見反應中樞、[開發人員論壇](https://forums.hololens.com) [ @HoloLens 和 Twitter ](https://twitter.com/hololens)[提供意見](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)反應給我們。
+HoloLens 團隊致力於提供您透過 Windows 測試人員計畫的最新功能更新和主要修正。 感謝您所有的建議，我們會將您的意見反應帶給您。 繼續透過意見反應中樞、[開發人員論壇](https://forums.hololens.com) [ @HoloLens 和 Twitter ](https://twitter.com/hololens)[提供意見](/windows/mixed-reality/give-us-feedback)反應給我們。
 
 **發行版本：** Windows 全像2016更新 (**10.0.14342.1016**) 
 
@@ -34,7 +34,7 @@ HoloLens 團隊致力於提供您透過 Windows 測試人員計畫的最新功�
    * 請嘗試查看全像，然後說「臉部我」來旋轉
    * 藉由說出「更大」或「較小」來變更其大小
    * 藉由說出「嗨 Cortana，將 *應用程式名稱* 移至這裡」來移動應用程式。
-* 我們已 **在 HoloLens 上更輕鬆地進行開發**。 您現在可以透過 [Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)流覽、上傳和下載檔案。 您可以透過 Visual Studio，存取您側載或部署之任何應用程式的 [檔] 資料夾、[圖片] 資料夾和本機儲存體。
+* 我們已 **在 HoloLens 上更輕鬆地進行開發**。 您現在可以透過 [Windows 裝置入口網站](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)流覽、上傳和下載檔案。 您可以透過 Visual Studio，存取您側載或部署之任何應用程式的 [檔] 資料夾、[圖片] 資料夾和本機儲存體。
 * **模擬器現在支援使用 Microsoft 帳戶進行登入**，就像您在實際 HoloLens 上的方式一樣，您可以從 [其他工具] 功能表的 [>>] 啟用。
 * **2D 應用程式現在會在監看影片全螢幕時隱藏應用程式列和游標** ，以避免干擾。 您的影片監看體驗在 HoloLens 上將會更有樂趣。
 * 您也可以在 **沒有應用程式行的情況下釘選相片** 。
@@ -59,7 +59,7 @@ HoloLens 團隊致力於提供您透過 Windows 測試人員計畫的最新功�
 * 在 OOBE 期間讓 **應用程式註冊** 速度更快，並 **自動偵測** 時區，讓您獲得最佳的第一個使用者體驗。
 * **儲存體感知** 可讓您透過 [設定] 應用程式中的系統和應用程式，來查看剩餘和使用的磁碟空間。
 * 我們已將意見反應應用程式和內建整合至單一應用程式 **意見反應中樞**，這是可讓我們對您喜愛的功能 **提供意見** 反應、哪些是需要改進的功能，以及您可以執行哪些作業的工具。 當您加入測試人員計畫時，您可以趕上 **取得最新的 Insider 新聞**、 **費率組建** ，以及前往意見反應中樞的 **意見反應探索」** 。
-* 我們也 [發行了更新的 HoloLens 模擬器](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) 組建。
+* 我們也 [發行了更新的 HoloLens 模擬器](/windows/mixed-reality/develop/install-the-tools) 組建。
 * 您的混合現實影片現在看起來更好，因為會有自動 **影片穩定**。
 
 ## <a name="major-fixes"></a>主要修正
@@ -112,13 +112,13 @@ HoloLens 團隊致力於提供您透過 Windows 測試人員計畫的最新功�
 ## <a name="prior-release-notes"></a>先前的版本資訊
 * [版本資訊 - 2016 年 3 月](release-notes-march-2016.md)
 
-## <a name="see-also"></a>請參閱
-* [HoloLens 的已知問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [安裝工具](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [Shell](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
-* [更新混合實境的 2D UWP 應用程式](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/building-2d-apps)
-* [硬體配件](https://docs.microsoft.com/windows/mixed-reality/discover/hardware-accessories)
-* [混合實境擷取](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture)
-* [語音輸入](https://docs.microsoft.com/windows/mixed-reality/design/voice-input)
-* [將應用程式提交到 Windows Store](https://docs.microsoft.com/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
-* [使用 HoloLens 模擬器](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+## <a name="see-also"></a>另請參閱
+* [HoloLens 的已知問題](/windows/mixed-reality/hololens-known-issues)
+* [安裝工具](/windows/mixed-reality/develop/install-the-tools)
+* [Shell](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)
+* [更新混合實境的 2D UWP 應用程式](/windows/mixed-reality/develop/porting-apps/building-2d-apps)
+* [硬體配件](/windows/mixed-reality/discover/hardware-accessories)
+* [混合實境擷取](/windows/mixed-reality/mixed-reality-capture)
+* [語音輸入](/windows/mixed-reality/design/voice-input)
+* [將應用程式提交到 Windows Store](/windows/mixed-reality/distribute/submitting-an-app-to-the-microsoft-store)
+* [使用 HoloLens 模擬器](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

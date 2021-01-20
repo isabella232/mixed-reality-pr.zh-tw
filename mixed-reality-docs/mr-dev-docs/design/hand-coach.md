@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 07b42482d9258b4189ef43683370bd951f5c88e8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009158"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582278"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -173,11 +173,11 @@ ms.locfileid: "98009158"
     *   每個專案的設定
         *   設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [互動-基礎](interaction-fundamentals.md)
 * [資產建立流程](asset-creation-process.md)
-* [軌跡](../gestures.md)
+* [軌跡](./interaction-fundamentals.md)
 * [安裝工具](../develop/install-the-tools.md)
 * [設定 Unity 專案](../develop/unity/Configure-Unity-Project.md)
 * [Unity 開發概觀](../develop/unity/unity-development-overview.md)

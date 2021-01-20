@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6bcd6db30bf3a8a6e69d45c10be523d45ee4f82a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: f448cafe3d0952ada63d545e44b58001779a1470
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725409"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580518"
 ---
 # <a name="headset-display-faqs"></a>耳機顯示器常見問題
 
@@ -52,7 +52,7 @@ ms.locfileid: "97725409"
 
 ## <a name="my-headset-display-occasionally-turns-black-after-some-use"></a>我的耳機顯示器偶爾會在一些使用之後變成黑色
 
-* 請嘗試在您的電腦上停用任何 USB 暫止或省電功能。 例如，在 [ **設定] > 系統 > 電源 & 睡眠 > [USB 選擇性暫停](https://docs.microsoft.com/windows-hardware/drivers/usbcon/usb-selective-suspend)**]、[允許電腦關閉此裝置以節省電源] 裝置管理員設定，以及您電腦的固件中的任何 USB 省電設定。
+* 請嘗試在您的電腦上停用任何 USB 暫止或省電功能。 例如，在 [ **設定] > 系統 > 電源 & 睡眠 > [USB 選擇性暫停](/windows-hardware/drivers/usbcon/usb-selective-suspend)**]、[允許電腦關閉此裝置以節省電源] 裝置管理員設定，以及您電腦的固件中的任何 USB 省電設定。
 * 暫時中斷連接到您電腦的任何其他 USB 裝置和週邊設備。
 * 檢查您的 GPU 驅動程式版本是否為最新版本，並檢查新的驅動程式是否有任何新的效能和相容性問題和回歸。
 

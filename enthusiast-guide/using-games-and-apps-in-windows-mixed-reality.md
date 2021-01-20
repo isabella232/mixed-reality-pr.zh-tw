@@ -3,12 +3,12 @@ title: 在 Windows Mixed Reality 中使用遊戲和應用程式
 description: 如何啟動沉浸式和2D 應用程式和遊戲、觀看桌面，以及體驗 WebVR 和 SteamVR 內容。
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，應用程式，遊戲，桌面，SteamVR，WebVR，流
-ms.openlocfilehash: 24d8e0fcf93b40e21484c9b1dddd1adaaf75fb00
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: e277ede1af3e38d7f1525412431d9006092f93b6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725849"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581372"
 ---
 # <a name="using-games-and-apps-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中使用遊戲和應用程式
 
@@ -75,9 +75,9 @@ Windows Mixed Reality 只是 Windows，這表示您可以執行專為混合現�
 
 適用于 SteamVR 的 Windows Mixed Reality 可讓使用者在 Windows Mixed Reality 的沉浸式耳機上執行 SteamVR 體驗。 安裝適用于 SteamVR 的 Windows Mixed Reality 之後，您可以從桌面或串流庫啟動您最愛的 SteamVR 應用程式，並直接在其 Windows 耳機上播放。
 
-若要開始使用，請遵循 [Windows Mixed Reality 的 SteamVR 安裝指示](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)。
+若要開始使用，請遵循 [Windows Mixed Reality 的 SteamVR 安裝指示](./using-steamvr-with-windows-mixed-reality.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 如果您有興趣深入瞭解 Windows Mixed Reality 的運作方式，您可能也想瞭解：
 * [您的混合實境首頁](your-mixed-reality-home.md)

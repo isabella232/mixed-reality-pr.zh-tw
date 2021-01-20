@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 2daeea996251b1220ee4753567b42117fbb2126c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007638"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582133"
 ---
 # <a name="gaze-and-dwell"></a>目光和停駐
 
@@ -40,7 +40,7 @@ ms.locfileid: "98007638"
     </colgroup>
     <tr>
         <td><strong>輸入模型</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -63,7 +63,7 @@ ms.locfileid: "98007638"
 
 ---
 
- ## <a name="see-also"></a>請參閱
+ ## <a name="see-also"></a>另請參閱
 
 * [眼動式互動](eye-gaze-interaction.md)
 * [HoloLens 2 的眼球追蹤](eye-tracking.md)

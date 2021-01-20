@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、樣式、字型、印刷樣式、ui、ux、文字、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 38acc8c0d2c7dbd7bcb192f82bb1bb52838323ac
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007648"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580278"
 ---
 # <a name="typography"></a>印刷樣式
 
@@ -37,9 +37,9 @@ ms.locfileid: "98007648"
 
 ### <a name="limit-your-fonts"></a>限制字型
 
-避免在單一內容中使用兩個以上的不同字型系列。 太多字型會中斷您的體驗的顏色與一致性，並使其更難以取用資訊。 在 HoloLens 中，由於資訊是在實體環境的最上層進行重迭，因此使用太多字型樣式將會降低體驗。 Segoe UI 是所有 Microsoft 數位設計的字型。 它會在 Windows Mixed Reality shell 中一致地使用。 您可以從 [Windows 設計工具組頁面](https://docs.microsoft.com/windows/uwp/design-downloads/)下載 Segoe UI 字型檔案。
+避免在單一內容中使用兩個以上的不同字型系列。 太多字型會中斷您的體驗的顏色與一致性，並使其更難以取用資訊。 在 HoloLens 中，由於資訊是在實體環境的最上層進行重迭，因此使用太多字型樣式將會降低體驗。 Segoe UI 是所有 Microsoft 數位設計的字型。 它會在 Windows Mixed Reality shell 中一致地使用。 您可以從 [Windows 設計工具組頁面](/windows/uwp/design-downloads/)下載 Segoe UI 字型檔案。
 
-[Segoe UI 字樣的詳細資訊](https://docs.microsoft.com/windows/uwp/design/style/typography)
+[Segoe UI 字樣的詳細資訊](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>避免細字型粗細
 
@@ -129,7 +129,7 @@ Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 請
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Unity 中的文字](../develop/unity/text-in-unity.md)
-* [色彩、光線和材質](../color,-light-and-materials.md)
+* [色彩、光線和材質](./color-light-and-materials.md)

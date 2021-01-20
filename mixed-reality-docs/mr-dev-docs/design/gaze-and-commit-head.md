@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 03/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、注視目標、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、目標、焦點、平滑
-ms.openlocfilehash: 13a040a8309d084fcfdbfa91cbd9d63b595b004a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: a69b855e2246327affeeb0f771f565b94ea65cb2
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009448"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582284"
 ---
 # <a name="head-gaze-and-commit"></a>頭部注視並認可
 
@@ -28,7 +28,7 @@ ms.locfileid: "98009448"
     </colgroup>
     <tr>
         <td><strong>輸入模型</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -89,7 +89,7 @@ ms.locfileid: "98009448"
 
 當您決定要提供哪些鄰近的互動式元素、將焦點放在焦點時，焦點會對目前焦點的元素提供偏差。 這有助於減少不穩定的焦點切換行為（當兩個專案之間的中間點有自然雜訊時）。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [眼動式互動](eye-gaze-interaction.md)
 * [目光和停駐](gaze-and-dwell.md)
@@ -98,6 +98,3 @@ ms.locfileid: "98009448"
 * [手 - 指向和行動](point-and-commit.md)
 * [本能互動](interaction-fundamentals.md)
 * [語音輸入](voice-input.md)
-
-
-

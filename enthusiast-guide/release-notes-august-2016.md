@@ -6,30 +6,30 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens、版本資訊、os、平臺、功能、商用套件
-ms.openlocfilehash: 9d65d0a2454b5eb076e7c350a6d26e11660af9a5
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: c70da10043cfbcfa88105635f2467c8feaadbedf
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009258"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581642"
 ---
 # <a name="release-notes---august-2016"></a>版本資訊 - 2016 年 8 月
 
-HoloLens 團隊正在聆聽 Windows 測試人員計畫開發人員的意見反應，以排定工作的優先順序。 繼續透過意見反應中樞、[開發人員論壇](https://forums.hololens.com) [ @HoloLens 和 Twitter ](https://twitter.com/hololens)[提供意見](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)反應給我們。 由於 Windows 10 將周年年度更新，因此 HoloLens 團隊很高興能更能改進全像全像全像全像全像全像全像的 在這項更新中，我們將焦點放在企業要求的主要修正、改進和推出功能，並可在 Microsoft HoloLens Commercial Suite 中使用。
+HoloLens 團隊正在聆聽 Windows 測試人員計畫開發人員的意見反應，以排定工作的優先順序。 繼續透過意見反應中樞、[開發人員論壇](https://forums.hololens.com) [ @HoloLens 和 Twitter ](https://twitter.com/hololens)[提供意見](/windows/mixed-reality/give-us-feedback)反應給我們。 由於 Windows 10 將周年年度更新，因此 HoloLens 團隊很高興能更能改進全像全像全像全像全像全像全像的 在這項更新中，我們將焦點放在企業要求的主要修正、改進和推出功能，並可在 Microsoft HoloLens Commercial Suite 中使用。
 
 **最新版本：** Windows 全像2016年8月更新 (**10.0.14393.0**，Windows 10 周年版) 
 
 >[!VIDEO https://www.youtube.com/embed/tNd0e2CiAkE]
 
-若要 [更新為最新版本](https://docs.microsoft.com/windows/mixed-reality/updating-hololens)，請開啟 [ *設定* ] 應用程式，移至 [ *更新 & 安全性*]，然後選取 [ *檢查更新* ] 按鈕。
+若要 [更新為最新版本](/windows/mixed-reality/updating-hololens)，請開啟 [ *設定* ] 應用程式，移至 [ *更新 & 安全性*]，然後選取 [ *檢查更新* ] 按鈕。
 
 ## <a name="new-features"></a>新功能
 
-**附加至進程的調試** 程式HoloLens 現在支援附加至進程的偵錯工具。 您可以使用 Visual Studio 2015 Update 3 連接到 HoloLens 上的執行中應用程式，並 [開始進行調試](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app)程式。 這種運作方式不需要從 Visual Studio 專案進行部署。
+**附加至進程的調試** 程式HoloLens 現在支援附加至進程的偵錯工具。 您可以使用 Visual Studio 2015 Update 3 連接到 HoloLens 上的執行中應用程式，並 [開始進行調試](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-visual-studio#debugging-an-installed-or-running-app)程式。 這種運作方式不需要從 Visual Studio 專案進行部署。
 
 **已更新 HoloLens 模擬器** 我們也發行了 HoloLens 模擬器的更新版本。
 
-**遊戲台支援** 您現在可以將藍牙 gamepads 與 HoloLens 配對！ 新發行的 Xbox 無線控制器提供藍牙功能，可用來播放您最愛的遊戲和應用程式。 必須先套用 [控制器更新](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) ，才能將 Xbox 無線控制器連線至 HoloLens。 [XInput](https://msdn.microsoft.com/library/windows/desktop/hh405053(v=vs.85).aspx)和 Windows 的支援 Xbox 無線控制器。請[輸入](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx)api。 您可以透過 [Windows. 輸入](https://msdn.microsoft.com/library/windows/apps/windows.gaming.input.aspx) API 存取更多藍牙控制器模型。
+**遊戲台支援** 您現在可以將藍牙 gamepads 與 HoloLens 配對！ 新發行的 Xbox 無線控制器提供藍牙功能，可用來播放您最愛的遊戲和應用程式。 必須先套用 [控制器更新](https://support.xbox.com/xbox-one/accessories/update-controller-for-stereo-headset-adapter) ，才能將 Xbox 無線控制器連線至 HoloLens。 [XInput](/windows/win32/xinput/xinput-game-controller-apis-portal)和 Windows 的支援 Xbox 無線控制器。請[輸入](/uwp/api/Windows.Gaming.Input)api。 您可以透過 [Windows. 輸入](/uwp/api/Windows.Gaming.Input) API 存取更多藍牙控制器模型。
 
 ## <a name="improvements-and-fixes"></a>改良功能與修正
 
@@ -53,7 +53,7 @@ HoloLens 團隊正在聆聽 Windows 測試人員計畫開發人員的意見反�
 
 ## <a name="introducing-microsoft-hololens-commercial-suite"></a>Microsoft HoloLens Commercial Suite 簡介
 
-Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為早期商務夥伴新增了數個高度要求的 [商業功能](https://docs.microsoft.com/windows/mixed-reality/commercial-features) 。
+Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為早期商務夥伴新增了數個高度要求的 [商業功能](/windows/mixed-reality/commercial-features) 。
 
 請洽詢您的當地 Microsoft 帳戶管理員，購買 Microsoft HoloLens Commercial Suite。
 
@@ -72,13 +72,13 @@ Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為�
 
 <table>
 <tr>
-<th>功能</th><th>Development 版</th><th>商業套件</th>
+<th>特性</th><th>Development 版</th><th>商業套件</th>
 </tr><tr>
 <td>裝置加密 (Bitlocker) </td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>虛擬私人網路 (VPN)</td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Kiosk 模式</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal#kiosk-mode">Kiosk 模式</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 管理和部署</th>
 </tr><tr>
@@ -90,7 +90,7 @@ Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為�
 </tr><tr>
 <td>Microsoft Store (取用者) </td><td style="text-align: center;">消費者</td><td style="text-align: center;">透過 MDM 篩選</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/manage/working-with-line-of-business-apps">Business Store 入口網站</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/microsoft-store/working-with-line-of-business-apps">Business Store 入口網站</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 安全性及身分識別</th>
 </tr><tr>
@@ -100,13 +100,13 @@ Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為�
 </tr><tr>
 <td>使用 PIN 解除鎖定的新一代認證</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://msdn.microsoft.com/windows/hardware/commercialize/manufacture/desktop/secure-boot-overview">安全開機</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
+<td><a href="/windows-hardware/design/device-experiences/oem-secure-boot">安全開機</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <th colspan="3" style="text-align: left;"> 服務與支援</th>
 </tr><tr>
 <td>系統自動更新到達時</td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td>
 </tr><tr>
-<td><a href="https://technet.microsoft.com/itpro/windows/plan/windows-update-for-business">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
+<td><a href="/windows/deployment/update/waas-manage-updates-wufb">Windows Update for Business</a></td><td></td><td style="text-align: center;">✔️</td>
 </tr><tr>
 <td>長期維護分支</td><td></td><td style="text-align: center;">✔️</td>
 </tr>
@@ -116,8 +116,8 @@ Microsoft HoloLens Commercial Suite 已準備好進行企業部署。 我們為�
 * [版本資訊 - 2016 年 5 月](release-notes-may-2016.md)
 * [版本資訊 - 2016 年 3 月](release-notes-march-2016.md)
 
-## <a name="see-also"></a>請參閱
-* [HoloLens 的已知問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [商業功能](https://docs.microsoft.com/windows/mixed-reality/commercial-features)
-* [安裝工具](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [使用 HoloLens 模擬器](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)
+## <a name="see-also"></a>另請參閱
+* [HoloLens 的已知問題](/windows/mixed-reality/hololens-known-issues)
+* [商業功能](/windows/mixed-reality/commercial-features)
+* [安裝工具](/windows/mixed-reality/develop/install-the-tools)
+* [使用 HoloLens 模擬器](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)

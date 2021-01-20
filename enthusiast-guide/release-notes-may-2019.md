@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: 版本資訊、版本、windows 10、組建、19h1、os、5月2019
-ms.openlocfilehash: fd5688b7c68e0a16873ff153f3c158a3575e02e9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007118"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581499"
 ---
 # <a name="release-notes---may-2019"></a>版本資訊-2019 年5月
 
@@ -50,7 +50,7 @@ HoloLens (第1代) 正在進入長期服務 (LTS) 狀態。 未來的更新將�
 
 ## <a name="provide-feedback-and-report-issues"></a>提供意見反應和報告問題
 
-使用 Windows 10 電腦或 HoloLens 裝置 [上的意見反應中樞應用程式](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) ，以提供意見反應和報告問題。 使用意見反應中樞可確保包含所有必要的診斷資訊，以協助我們的工程師快速地偵測和解決問題。
+使用 Windows 10 電腦或 HoloLens 裝置 [上的意見反應中樞應用程式](/windows/mixed-reality/give-us-feedback) ，以提供意見反應和報告問題。 使用意見反應中樞可確保包含所有必要的診斷資訊，以協助我們的工程師快速地偵測和解決問題。
 
 >[!NOTE]
 >請務必接受提示，詢問您是否要意見反應中樞存取您的 [檔] 資料夾， (在出現提示時選取 **[是]**) 。
@@ -65,9 +65,8 @@ HoloLens (第1代) 正在進入長期服務 (LTS) 狀態。 未來的更新將�
 * [版本資訊 - 2016 年 5 月](release-notes-may-2016.md)
 * [版本資訊 - 2016 年 3 月](release-notes-march-2016.md)
 
-## <a name="see-also"></a>請參閱
-* [ (外部連結的沉浸式耳機支援) ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+## <a name="see-also"></a>另請參閱
+* [ (外部連結的沉浸式耳機支援) ](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens 支援 (外部連結) ](https://support.microsoft.com/products/hololens)
-* [安裝工具](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
+* [安裝工具](/windows/mixed-reality/develop/install-the-tools)
 * [提供意見反應] (https://docs.microsoft.com/windows/mixed-reality/give-us-feedback
-

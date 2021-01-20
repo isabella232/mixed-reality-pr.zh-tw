@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
-ms.openlocfilehash: b43b42567183ef77ef76b301212233eeeb7c04ca
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192659"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580570"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>將 VR 應用程式移植到 Windows Mixed Reality
 
@@ -37,8 +37,8 @@ Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立�
 Windows Mixed Reality 平臺仍在積極開發中。 建議您 [加入 Windows 測試人員計畫](https://insider.windows.com/) ，以存取「Windows 測試人員快速」飛行。
 1. 安裝 [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
 2. [加入](https://insider.windows.com/) Windows 測試人員計畫。
-3. 啟用 [開發人員模式](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
-4. 透過 [**設定] > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](https://blogs.technet.microsoft.com/uktechnet/2016/07/01/joining-insider-preview)
+3. 啟用 [開發人員模式](/windows/uwp/get-started/enable-your-device-for-development)
+4. 透過 [**設定] > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](/archive/blogs/uktechnet/joining-insider-preview)
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. 升級為最新組建的 Visual Studio
 * 如果您是使用 Visual Studio，請升級至最新的組建
@@ -57,7 +57,7 @@ Windows Mixed Reality 平臺仍在積極開發中。 建議您 [加入 Windows �
 > 如果您使用的是 HP 回 G2 控制器，請參閱 [本文以取得其他](../unreal/unreal-reverb-g2-controllers.md) 輸入對應指示。
 
 ## <a name="see-also"></a>另請參閱
-* [Windows Mixed Reality 最小電腦硬體相容性指導方針](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
+* [Windows Mixed Reality 最小電腦硬體相容性指導方針](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)
 * [瞭解混合現實的效能](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 * [Unity 的效能建議](../unity/performance-recommendations-for-unity.md)
 * [運動控制器](../../design/motion-controllers.md)

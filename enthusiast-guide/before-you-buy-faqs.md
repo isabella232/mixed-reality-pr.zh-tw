@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 在購買之前，Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、預先銷售、研究、購買
 appliesto:
 - Windows 10
-ms.openlocfilehash: e9b9254166b3ac4c188531d3651407ecfd853460
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725509"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580291"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>購買常見問題之前
 
@@ -63,7 +63,7 @@ ms.locfileid: "97725509"
 
 * **外部追蹤** Oculus、Vive 和其他人使用外部追蹤。  使用外部追蹤時，會由一或多個外部裝置追蹤耳機。 相機 (s) 內建在環境內的這些外部裝置內，用來根據環境判斷耳機的位置。
 
-深入瞭解 [內部追蹤](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system)。
+深入瞭解 [內部追蹤](./tracking-system.md)。
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>可能會因為相機 FOV 而影響遊戲的播放，追蹤動作控制器
 
@@ -368,7 +368,7 @@ ms.locfileid: "97725509"
 
 **快速解答：** 是的，即使您沒有太多空間，Windows Mixed Reality 也可以運作。 您可以在安裝期間選取「辦公桌規模」體驗來設定此設定。
 
-## <a name="content"></a>內容
+## <a name="content"></a>Content
 
 ### <a name="what-games-and-apps-run-on-windows-mixed-reality"></a>哪些遊戲和應用程式在 Windows Mixed Reality 上執行？
 

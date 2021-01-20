@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
 - Windows 10
-ms.openlocfilehash: 763814e7ab81feeb22c4cbe4f5daf02d62db38fa
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
+ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166753"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581650"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -24,7 +24,7 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 1. **混合實境入口**，提供主要 Windows Mixed Reality 體驗
     * 在 Windows 10 1709 和1803版中，混合實境入口是透過 Windows Update 更新之 Windows 10 作業系統的主要元件。
     * 在 Windows 10 1809 版和更新版本中，混合實境入口會透過 Microsoft Store 應用程式更新。
-2. **混合現實隨選封裝** (FOD) ，在混合實境入口首次執行時自動下載並安裝。 您可以在[這裡](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)找到 FOD 套件的詳細資訊
+2. **混合現實隨選封裝** (FOD) ，在混合實境入口首次執行時自動下載並安裝。 您可以在[這裡](/windows/application-management/manage-windows-mixed-reality)找到 FOD 套件的詳細資訊
 3. **混合現實耳機和移動控制器驅動程式**（也稱為 HoloLens 感應器驅動程式）是可讓 Windows Mixed Reality 耳機使用 Windows Mixed Reality 的重要驅動程式套件。 這項功能會在您第一次插入混合現實耳機時，透過 Windows Update 自動下載和安裝，並透過 Windows Update 定期更新
 4. * * 混合式事實移動控制器模型驅動程式包含混合現實移動控制器的3D 模型，以及協力廠商混合現實體驗所需的模型。 這項功能會在您第一次將混合現實移動控制器配對至您的電腦時自動下載並安裝 Windows Update，並透過 Windows Update 進行更新
 5. **Windows 10，版本 1709 (秋季建立者的更新) 或更新版本** ，包含可啟用的主要作業系統元件和技術 Windows Mixed Reality
@@ -50,7 +50,7 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 
 #### <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
 
-如 [先前所宣佈](https://docs.microsoft.com/windows/mixed-reality/new-microsoft-edge)，我們已使用 Windows Mixed Reality 中的新 Microsoft Edge 瀏覽器進行更新，以提供更好的支援。 新的 Microsoft Edge 採用 Chromium 的開放原始碼專案，為客戶建立更好的 web 相容性，並為所有 網頁程式開發人員建立較少的 web 片段。 它也支援 WebXR，這是用來建立適用于 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
+如 [先前所宣佈](/windows/mixed-reality/new-microsoft-edge)，我們已使用 Windows Mixed Reality 中的新 Microsoft Edge 瀏覽器進行更新，以提供更好的支援。 新的 Microsoft Edge 採用 Chromium 的開放原始碼專案，為客戶建立更好的 web 相容性，並為所有 網頁程式開發人員建立較少的 web 片段。 它也支援 WebXR，這是用來建立適用于 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
 
 #### <a name="improved-settings-for-wmr"></a>改良的 WMR 設定
 
@@ -167,14 +167,14 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
 
    | 版本            | 發行日期          | 重大變更                                                 |
    |--------------------|-----------------------|---------------------------------------------------------------|
-   | 2000.20111.1381.0  | 2020年12月10日        | <ul><li>更新混合實境入口的登陸頁面。</li><li>減少在固件更新期間的耳機連接錯誤。 </li></ul>  |    | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>支援 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 以暫停預覽視窗。</li></ul>  | 
-   | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>支援 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 以暫停預覽視窗。</li></ul>  | 
+   | 2000.20111.1381.0  | 2020年12月10日        | <ul><li>更新混合實境入口的登陸頁面。</li><li>減少在固件更新期間的耳機連接錯誤。 </li></ul>  |    | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>支援 [OpenXR](/windows/mixed-reality/openxr) 以暫停預覽視窗。</li></ul>  | 
+   | 2000.20071.1133.0  | 2020 年 8 月 5 日        | <ul><li>支援 [OpenXR](/windows/mixed-reality/openxr) 以暫停預覽視窗。</li></ul>  | 
    | 2000.20041.1212.0  | 2020 年 5 月 11 日          | <ul><li>解決造成不一致15-5 錯誤的計時問題。</li><li>改進了執行 Windows Mixed Reality 且沒有網際網路連線的支援。</li><li>改善透過 **安裝控制器** 配對動作控制器的支援。</li></ul>  | 
    | 2000.20031.1202.0  | 2020 年 4 月 14 日        | <ul><li>支援註冊 Windows Mixed Reality 的相關資訊、秘訣和優惠。</li></ul>  | 
-   | 2000.20011.1312.0  | 2020 年 2 月 11 日     | <ul><li>針對在2019年5月更新的裝置上使用 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 改善應用程式的支援。</li><li>解決存取範圍和鍵盤焦點問題</li></ul>  | 
+   | 2000.20011.1312.0  | 2020 年 2 月 11 日     | <ul><li>針對在2019年5月更新的裝置上使用 [OpenXR](/windows/mixed-reality/openxr) 改善應用程式的支援。</li><li>解決存取範圍和鍵盤焦點問題</li></ul>  | 
    | 2000.19101.1211.0  | 2019年11月11日     | <ul><li>解決防止您切換房間界限視覺效果的問題。</li><li>解決防止您在房間界限設定期間將耳機置中的問題。</li></ul>  | 
    | 2000.19081.1301.0  | 2019 年 9 月 23 日    | <ul><li>解決耳機有硬體問題的問題顯示錯誤訊息。 在先前的版本上收到1-4 錯誤碼的使用者，現在可能會收到更明確的裝置狀態錯誤碼。</li></ul>  |
-   | 2000.19071.1302.0  | 2019 年 8 月 13 日     | <ul><li>支援在5月2019更新的裝置上使用 [OpenXR](https://docs.microsoft.com/windows/mixed-reality/openxr) 的應用程式。</li></ul>  | 
+   | 2000.19071.1302.0  | 2019 年 8 月 13 日     | <ul><li>支援在5月2019更新的裝置上使用 [OpenXR](/windows/mixed-reality/openxr) 的應用程式。</li></ul>  | 
    | 2000.19061.1011.0  | 2019 年 7 月 16 日         | <ul><li>支援自訂應用程式行為的 JSON 設定選項。 深入瞭解 https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup 。</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>SteamVR 發行歷程記錄 ###

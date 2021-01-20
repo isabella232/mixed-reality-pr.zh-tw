@@ -1,19 +1,19 @@
 ---
-title: 使用 Unreal Insights 進行程式碼剖析
+title: 使用 Unreal Insights 進行剖析
 description: 瞭解如何在 HoloLens 2 上使用 Unreal 深入解析。
 author: sajidfarooq
 ms.author: v-hferrone
 ms.date: 12/10/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開發、分析、Unreal 見解、檔、指南、功能、全像投影、遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 20e620f147f2cf5ee05073467c8ce7335340d59d
-ms.sourcegitcommit: 53bde413a174712cb9d3794d02d96363a2d599cd
+ms.openlocfilehash: b41d36679adfb35b5cc3561b8d5e7734654e7fb5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/14/2020
-ms.locfileid: "97486339"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580833"
 ---
-# <a name="profiling-with-unreal-insights"></a>使用 Unreal Insights 進行程式碼剖析 
+# <a name="profiling-with-unreal-insights"></a>使用 Unreal Insights 進行剖析 
 
 [Unreal Insights](https://docs.unrealengine.com/TestingAndOptimization/PerformanceAndProfiling/UnrealInsights/Overview/index.html) 是一種分析系統，可從 Unreal 引擎收集、分析及視覺化資料。 程式碼剖析系統可協助您找出優化瓶頸和您的應用程式效能可能會提升的區域。 一般來說，您可以直接從編輯器啟用 Unreal Insights，但 HoloLens 2 您需要使用命令列。  
 

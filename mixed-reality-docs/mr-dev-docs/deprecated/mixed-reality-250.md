@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、沉浸式、移動控制器、共用、xbox 控制器、網路、跨裝置
-ms.openlocfilehash: a980441ee73cd8f45afff446d9315eaf08549575
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 8b6711ab3ee833306742fe938dfa501dc5b4ed0e
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680085"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580125"
 ---
 # <a name="mr-sharing-250-hololens-and-immersive-headsets"></a>MR Sharing 250：HoloLens 和沉浸式頭戴裝置
 
 >[!NOTE]
->混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../mr-learning-base-01.md)。
+>混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](../develop/unity/tutorials/mr-learning-base-01.md)。
 
 利用通用 Windows 平臺 (UWP) 的彈性，您可以輕鬆地建立跨多個裝置的應用程式。 有了這種彈性，我們可以建立利用每部裝置優勢的體驗。 本教學課程將涵蓋在 HoloLens 和 Windows Mixed Reality 沉浸式耳機上執行的基本共用體驗。 這項內容最初是在華盛頓州西雅圖的 Microsoft Build 2017 會議中提供。
 
@@ -31,17 +31,17 @@ ms.locfileid: "91680085"
 
 <table>
 <tr>
-<th>課程</th><th style="width:150px"> <a href="../hololens-hardware-details.md">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
+<th>課程</th><th style="width:150px"> <a href="/hololens/hololens1-hardware">HoloLens</a></th><th style="width:150px"> <a href="../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></th>
 </tr><tr>
 <td>MR Sharing 250：HoloLens 和沉浸式頭戴裝置</td><td style="text-align: center;"> ✔️</td><td style="text-align: center;"> ✔️</td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
-* 具有 [必要開發工具](../develop/install-the-tools.md) 並 [設定為支援 Windows Mixed Reality 沉浸式耳機](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)的 Windows 10 PC。
+* 具有 [必要開發工具](../develop/install-the-tools.md) 並 [設定為支援 Windows Mixed Reality 沉浸式耳機](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)的 Windows 10 PC。
 * 適用于您電腦的 Xbox 控制器。
 * 至少一個 HoloLens 裝置和一個沉浸式耳機。
 * 允許 UDP 廣播進行探索的網路。
@@ -69,32 +69,32 @@ ms.locfileid: "91680085"
 ### <a name="steps"></a>步驟
 
 * 開啟 Unity。
-    * 選取 [開啟]。
+    * 選取 [開啟]  。
     * 流覽至您解壓縮專案檔的位置。
-    * 按一下 [選擇資料夾]  。
+    * 按一下 [選擇資料夾]。
     * *Unity 需要一些時間才會第一次處理專案。*
 * 檢查 Unity 中是否已啟用 Mixed Reality。
-    * 開啟 [組建設定] 對話方塊， ( **Control + Shift + B** 或 **File > 組建設定 ...** ]) 。
-    * 選取 **通用 Windows 平臺** 然後按一下 [ **切換平臺** ]。
-    * 選取 [ **編輯>播放機設定** ]。
-    * 在右側的 [偵測 **器** ] 面板中，展開 [ **XR 設定** ]。
+    * 開啟 [組建設定] 對話方塊， (**Control + Shift + B** 或 **File > 組建設定 ...** ]) 。
+    * 選取 **通用 Windows 平臺** 然後按一下 [ **切換平臺**]。
+    * 選取 [ **編輯>播放機設定**]。
+    * 在右側的 [偵測 **器** ] 面板中，展開 [ **XR 設定**]。
     * 勾選 [ **支援虛擬實境** ] 方塊。
     * *Windows Mixed Reality 應為虛擬實境 SDK。*
 * 建立場景。
-    * 在階層中， **以滑鼠右鍵** 按一下 [ **主要攝影機** ] 選取 [ **刪除** ]。
+    * 在階層中， **以滑鼠右鍵** 按一下 [ **主要攝影機** ] 選取 [ **刪除**]。
     * 從 **HoloToolkit > 輸入 > Prefabs** 將 **MixedRealityCameraParent** 拖曳至 **階層。**
 * 將全像影像新增至場景
-    * 從 **AppPrefabs** 將 **Skybox** 拖曳至 **場景視圖** 。
+    * 從 **AppPrefabs** 將 **Skybox** 拖曳至 **場景視圖**。
     * 從 **AppPrefabs** 將 **管理員** 拖曳至 **階層。**
     * 從 **AppPrefabs** 將 **島** 拖曳至 **階層。**
 * 儲存並建立
-    * 儲存 ( **Control + S** 或 **File > 儲存場景** ) 
+    * 儲存 (**Control + S** 或 **File > 儲存場景**) 
     * 因為這是新的場景，所以您需要為它命名。 名稱並不重要，但我們使用 SharedMixedReality。
 * 匯出至 Visual Studio
-    * 開啟 [組建] 功能表 ( **Control + Shift + B** 或 **File > 組建設定** ) 
+    * 開啟 [組建] 功能表 (**Control + Shift + B** 或 **File > 組建設定**) 
     * 按一下 [ **新增開啟的場景]。**
     * 檢查 **Unity c # 專案**
-    * 按一下 [建置]  。
+    * 按一下 [建置]。
     * 在出現的 [檔案瀏覽器] 視窗中，建立名為 **App** 的新資料夾。
     * 按一下 **應用程式** 資料夾。
     * 按下 [ **選取資料夾]。**
@@ -102,8 +102,8 @@ ms.locfileid: "91680085"
     * 在出現的 [檔案瀏覽器] 視窗中，流覽至 **應用程式** 資料夾。
     * 按兩下 **SharedMixedReality .sln** 以啟動 Visual Studio
 * 從 Visual Studio 建立
-    * 使用頂端工具列變更目標為 **Release** 和 **x86** 。
-    * 按一下 [ **本機電腦** ] 旁邊的箭號，然後選取要部署到 HoloLens 的 **裝置**
+    * 使用頂端工具列變更目標為 **Release** 和 **x86**。
+    * 按一下 [**本機電腦**] 旁邊的箭號，然後選取要部署到 HoloLens 的 **裝置**
     * 按一下 [ **裝置** ] 旁的箭號，然後選取 [ **本機電腦** ] 以部署混合現實耳機。
     * 按一下 [ **Debug->啟動但不調試** ] 或 [ **Control + F5** ] 以啟動應用程式。
 
@@ -129,7 +129,7 @@ ms.locfileid: "91680085"
 
 以第1章的應用程式為基礎，我們將新增功能，讓使用者能夠挑選全像，然後將它放在 HoloLens 的真實世界表面，或放在沉浸式耳機的虛擬資料表中。
 
-**輸入複習：** 在 HoloLens 上，選取手勢是 **點擊** 。 在沉浸式耳機上，我們將使用 Xbox 控制器上 **的按鈕。** 如需詳細資訊，請參閱 [互動模型的總覽](../design/interaction-fundamentals.md)。
+**輸入複習：** 在 HoloLens 上，選取手勢是 **點擊**。 在沉浸式耳機上，我們將使用 Xbox 控制器上 **的按鈕。** 如需詳細資訊，請參閱 [互動模型的總覽](../design/interaction-fundamentals.md)。
 
 ### <a name="steps"></a>步驟
 
@@ -140,27 +140,27 @@ ms.locfileid: "91680085"
     * 從 **HoloToolkit > SpatialMapping > Prefabs** 將 **SpatialMapping** 拖曳至 **階層。**
 * 新增虛擬 Playspace
     * 在 **階層** 中展開 **MixedRealityCameraParent** 選取 **界限**
-    * 在 [偵測 **器** ] 面板中，核取 [啟用 **界限** ] 核取方塊
+    * 在 [偵測 **器**] 面板中，核取 [啟用 **界限**] 核取方塊
     * 從 **AppPrefabs** 將 **VRRoom** 拖曳至 **階層。**
 * 新增 WorldAnchorManager
-    * 在 **[階層] 中選取** [ **管理員** ]。
-    * 在 [偵測 **器** ] 中，按一下 [ **新增元件** ]。
-    * 輸入 **World 錨點管理員** 。
+    * 在 **[階層] 中選取**[ **管理員**]。
+    * 在 [偵測 **器**] 中，按一下 [ **新增元件**]。
+    * 輸入 **World 錨點管理員**。
     * 選取 [ **世界錨點管理員** ] 將它加入。
 * 將 TapToPlace 新增至島
-    * 在 **[階層] 中，** 展開 [ **島** ]。
-    * 選取 [ **MixedRealityLand** ]。
-    * 在 [偵測 **器** ] 中，按一下 [ **新增元件** ]。
+    * 在 **[階層] 中，** 展開 [ **島**]。
+    * 選取 [ **MixedRealityLand**]。
+    * 在 [偵測 **器**] 中，按一下 [ **新增元件**]。
     * 輸入點一下 **以放置** 並選取它。
-    * 選取 **[在點處放置父系** ]。
-    * 將 **放置位移** 設定為 **(0、0.1、0)** 。
+    * 選取 **[在點處放置父系**]。
+    * 將 **放置位移** 設定為 **(0、0.1、0)**。
 * 儲存並建立成先前的
 
 ### <a name="digging-into-the-code"></a>深入探討至程式碼
 
 **腳本 1-GamepadInput.cs**
 
-在 [專案] 面板中，流覽至 [ **Assets\HoloToolkit\Input\Scripts\InputSources** ]，然後按兩下 [ **GamepadInput.cs** ] 將它開啟。 在 [專案] 面板中的相同路徑中，也按兩下 [ **InteractionSourceInputSource.cs** ]。
+在 [專案] 面板中，流覽至 [ **Assets\HoloToolkit\Input\Scripts\InputSources** ]，然後按兩下 [ **GamepadInput.cs** ] 將它開啟。 在 [專案] 面板中的相同路徑中，也按兩下 [ **InteractionSourceInputSource.cs**]。
 
 請注意，這兩個腳本都有一個通用的基類 BaseInputSource。
 
@@ -195,8 +195,8 @@ BaseInputSource 會保留對 InputManager 的參考，讓腳本能夠觸發事�
 ### <a name="steps"></a>步驟
 
 * 移除島和 VRRoom
-    * 在 **階層中，以** 滑鼠右鍵按一下 [ **島** ] 選取 [ **刪除** ]
-    * 在 **階層中，以** 滑鼠右鍵按一下 **VRRoom** 選取 [ **刪除** ]
+    * 在 **階層中，以** 滑鼠右鍵按一下 [**島**] 選取 [**刪除**]
+    * 在 **階層中，以** 滑鼠右鍵按一下 **VRRoom** 選取 [**刪除**]
 * 新增 Usland
     * 從 **AppPrefabs** 將 **Usland** 拖曳至 **階層。**
 * 從 **AppPrefabs** 將下列各項拖曳至 **階層：**
@@ -208,7 +208,7 @@ BaseInputSource 會保留對 InputManager 的參考，讓腳本能夠觸發事�
 
 ### <a name="digging-into-the-code"></a>深入探討至程式碼
 
-在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\SharingWithUnet\Scripts** ]，然後按兩下 [ **UnetAnchorManager.cs** ]。 一個 HoloLens 與另一個 HoloLens 共用追蹤資訊的能力，使得這兩個裝置都可以共用相同的空間，幾乎神奇。 當有兩個以上的人員可以使用相同的數位資料共同作業時，混合現實的威力就會保持運作。
+在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\SharingWithUnet\Scripts** ]，然後按兩下 [ **UnetAnchorManager.cs**]。 一個 HoloLens 與另一個 HoloLens 共用追蹤資訊的能力，使得這兩個裝置都可以共用相同的空間，幾乎神奇。 當有兩個以上的人員可以使用相同的數位資料共同作業時，混合現實的威力就會保持運作。
 
 這段腳本中有幾點要指出：
 
@@ -258,19 +258,19 @@ BaseInputSource 會保留對 InputManager 的參考，讓腳本能夠觸發事�
 ### <a name="steps"></a>步驟
 
 * 將 MixedRealityTeleport 新增至 MixedRealityCameraParent
-    * 在 **[階層] 中選取** [ **Usland** ]。
-    * 在 [偵測 **器** ] 中，啟用 **層級控制** 。
-    * 在 **[階層] 中選取** [ **MixedRealityCameraParent** ]。
-    * 在 [偵測 **器** ] 中，按一下 [ **新增元件** ]。
+    * 在 **[階層] 中選取**[ **Usland**]。
+    * 在 [偵測 **器**] 中，啟用 **層級控制**。
+    * 在 **[階層] 中選取**[ **MixedRealityCameraParent**]。
+    * 在 [偵測 **器**] 中，按一下 [ **新增元件**]。
     * 輸入 **Mixed Reality 傳送** ，然後選取它。
 
 ### <a name="digging-into-the-code"></a>深入探討至程式碼
 
 沉浸式耳機使用者將使用纜線行動網卡到他們的電腦，但我們的島大於纜線的長度。 為了彌補這一點，我們需要能夠在使用者的動作之外獨立移動相機。 請參閱 [ [緩和] 頁面](../design/comfort.md) ，以取得設計混合現實應用程式 (特定的自我運動和 locomotion) 的詳細資訊。
 
-為了說明此程式，定義兩個詞彙將會很有説明。 首先， **dolly** 會是與使用者分開移動相機的物件。 **Dolly** 的子遊戲物件將會是 **主相機** 。 主要相機會附加至使用者的標頭。
+為了說明此程式，定義兩個詞彙將會很有説明。 首先， **dolly** 會是與使用者分開移動相機的物件。 **Dolly** 的子遊戲物件將會是 **主相機**。 主要相機會附加至使用者的標頭。
 
-在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\Scripts\GameLogic** ]，然後按兩下 [ **MixedRealityTeleport.cs** ]。
+在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\Scripts\GameLogic** ]，然後按兩下 [ **MixedRealityTeleport.cs**]。
 
 MixedRealityTeleport 有兩個作業。 首先，它會使用緩衝器來處理旋轉。 在 update 函數中，我們會在 LeftBumper 和 RightBumper 上輪詢 ' ButtonUp '。 GetButtonUp 只會在第一個畫面格上傳回 true。 如果已引發任一個按鈕，則我們知道使用者需要輪替。
 
@@ -280,7 +280,7 @@ MixedRealityTeleport 有兩個作業。 首先，它會使用緩衝器來處理�
 
 MixedRealityTeleport 的第二個工作是處理 **dolly** 的移動。 這是在 SetWorldPosition 中完成。 SetWorldPosition 會採用所需的世界位置，也就是使用者想要 percieve 占的位置。 我們需要將 **dolly** 放在該位置減去 **主要攝影機** 的本機位置，因為該位移將會新增至每個畫面格。
 
-第二個腳本會呼叫 SetWorldPosition。 讓我們來看看那個腳本。 在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\Scripts\GameLogic** ]，然後按兩下 [ **TeleportScript.cs** ]。
+第二個腳本會呼叫 SetWorldPosition。 讓我們來看看那個腳本。 在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\Scripts\GameLogic** ]，然後按兩下 [ **TeleportScript.cs**]。
 
 此腳本比 MixedRealityTeleport 更簡單。 腳本正在檢查 Xbox 控制器上的 Y 按鈕是否已關閉。 當按鈕關閉時，會轉譯傳送游標，而且腳本會將光線從使用者的注視位置轉換出來。 如果該光線與較多或較少指標的表面衝突，則會將介面視為適合用來傳送的介面，並且會啟用傳送游標上的動畫。 如果光線未與某個介面相較或更低，則會停用游標上的動畫。 當您放開 Y 按鈕，且光線的計算點是有效的位置時，腳本會使用與光線交集的位置來呼叫 SetWorldPosition。
 
@@ -311,14 +311,14 @@ MixedRealityTeleport 的第二個工作是處理 **dolly** 的移動。 這是�
 
 ### <a name="steps"></a>步驟
 
-* 在 **[階層] 中選取** [ **Usland** ]。
-* 在 [ **檢查** ] 的 [ **層級控制** ] 中，勾選 [ **啟用** 共同作業]。
+* 在 **[階層] 中選取**[ **Usland**]。
+* 在 [ **檢查**] 的 [ **層級控制**] 中，勾選 [ **啟用** 共同作業]。
 
 ### <a name="digging-into-the-code"></a>深入探討至程式碼
 
 現在讓我們看看 LevelControl.cs。 此腳本是遊戲邏輯的核心，可維持遊戲狀態。 由於這是使用 UNET 的多人遊戲，我們需要瞭解資料流程的運作方式，而且至少要有足夠的時間來修改本教學課程。 如需更完整的 UNET 總覽，請參閱 Unity 的檔。
 
-在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\Scripts\GameLogic** ]，然後按兩下 [ **LevelControl.cs** ]。
+在 [專案] 面板中，流覽至 [ **Assets\AppPrefabs\Support\Scripts\GameLogic** ]，然後按兩下 [ **LevelControl.cs**]。
 
 請讓我們瞭解沉浸式耳機如何表示已準備好開始 rocket。 Rocket 啟動準備工作的方式，是在對應到島上三個路徑的 bool 清單中設定三個 bool 的其中一個。 當指派給路徑的使用者位於 rocket 房間內棕色板的上方時，就會設定路徑的 bool。 好的，現在的詳細資料。
 

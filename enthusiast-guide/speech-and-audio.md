@@ -3,12 +3,12 @@ title: 語音和音訊常見問題
 description: 語音和音訊 Windows Mixed Reality 不超過標準取用者支援檔的疑難排解。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、音訊問題、語音問題
-ms.openlocfilehash: d685190248dd17792f941cf53e3a57499cd3e662
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fff5d661dbe61d4c9364c83e3bd0c6ddb8ab5cc6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725889"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581414"
 ---
 # <a name="speech-and-audio-faqs"></a>語音和音訊常見問題
 
@@ -35,7 +35,7 @@ ms.locfileid: "97725889"
 
 * 某些應用程式（例如透過 SteamVR 啟動的應用程式）可能會在音訊裝置隨您啟動或停止混合實境入口時，遺失音訊或停止回應。 若要更正此錯誤，請重新開啟混合實境入口，然後重新開機應用程式。
 * 如果另一個多媒體 USB 裝置 (例如網路凸輪) 與 Windows Mixed Reality 耳機共用相同的內部或外部 USB 集線器，則耳機音訊插孔或耳機有時可能會有噪音音效或音訊。 將您的耳機插入使用不同中樞或中斷連接/停用其他 USB 多媒體裝置的 USB 埠。
-* 如果您發現連接耳機有大量的雜訊，電腦的 USB 集線器可能無法提供足夠的電源給 Windows Mixed Reality 耳機。 如果發生這種情況，請提出 [意見反應中樞](https://docs.microsoft.com/hololens/hololens-feedback) 錯誤的錯誤，並嘗試：
+* 如果您發現連接耳機有大量的雜訊，電腦的 USB 集線器可能無法提供足夠的電源給 Windows Mixed Reality 耳機。 如果發生這種情況，請提出 [意見反應中樞](/hololens/hololens-feedback) 錯誤的錯誤，並嘗試：
     * 移除擴充功能纜線
     * 使用專用的外部驅動 USB 3.0 中樞
     * 電腦上的其他 USB 埠

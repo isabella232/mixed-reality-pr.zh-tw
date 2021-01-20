@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、僅限方向、固定規模、固定規模、室內規模、世界規模、360度、坐、上、房間、世界、縮放、位置、方向、固定、附加、階段、錨點、空間錨點、全球鎖定、世界鎖定、內文鎖定、內文鎖定、界限、持續性、共用、追蹤遺失、雲端空間錨點、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 42efc1444c030641ad215501c4a12d6315ea9857
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 6d4bddc17027ad32f82fbc8c37860e64b2bc57eb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848024"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582410"
 ---
 # <a name="coordinate-systems"></a>座標系統
 
@@ -32,9 +32,9 @@ ms.locfileid: "97848024"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="https://docs.microsoft.com/windows/mixed-reality/immersive-headset-hardware-details"><strong>沉浸式頭戴裝置</strong></a></td>
+        <td><a href="/windows/mixed-reality/immersive-headset-hardware-details"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
      <tr>
         <td><a href="coordinate-systems.md#stationary-frame-of-reference">固定的參考框架</a></td>
@@ -105,7 +105,7 @@ HoloLens 尚未支援參考的階段框架。 HoloLens 上的房間規模應用�
 
 ## <a name="spatial-coordinate-systems"></a>空間座標系統
 
-所有3D 圖形應用程式都會使用 [笛卡兒座標系統](https://docs.microsoft.com/windows/uwp/graphics-concepts/coordinate-systems) 來表示虛擬物件的位置和方向。 這些座標系統會建立3個垂直軸，以放置物件： X、Y 和 Z 軸。
+所有3D 圖形應用程式都會使用 [笛卡兒座標系統](/windows/uwp/graphics-concepts/coordinate-systems) 來表示虛擬物件的位置和方向。 這些座標系統會建立3個垂直軸，以放置物件： X、Y 和 Z 軸。
 
 在 [混合的現實](../discover/mixed-reality.md)情況下，您的應用程式會有虛擬和實體座標系統的原因。 Windows 呼叫的座標系統在實體世界中具有真正意義的 **空間座標系統**。
 
@@ -191,13 +191,13 @@ Windows Mixed Reality 解決上一節所述的問題，可讓您建立 [空間�
 
 藉由將錨點保存到存放區，您的使用者可以將個別的全像是放置在一起，或放置一個工作區，讓應用程式用來放置其各種不同的全像影像，然後在您的應用程式的許多用途之後，于預期的位置找到
 
-您也可以使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。  藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
+您也可以使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。  藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
 
 ### <a name="spatial-anchor-sharing"></a>空間錨點共用
 
 您的應用程式也可以與其他裝置即時共用空間錨點，以允許即時共用體驗。
 
-藉由使用 <a href="https://docs.microsoft.com/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，您的應用程式可以跨多個 HoloLens、IOS 和 Android 裝置共用空間錨點。 透過讓每個裝置使用同一個空間錨點轉譯全像投影，所有使用者將會看到全像投影出現在真實世界中的相同位置。
+藉由使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，您的應用程式可以跨多個 HoloLens、IOS 和 Android 裝置共用空間錨點。 透過讓每個裝置使用同一個空間錨點轉譯全像投影，所有使用者將會看到全像投影出現在真實世界中的相同位置。
 
 ## <a name="avoid-head-locked-content"></a>避免標頭鎖定的內容
 
@@ -233,11 +233,11 @@ Windows Mixed Reality 解決上一節所述的問題，可讓您建立 [空間�
 
 有時候，home 或其他空間可能有兩個相同的區域。 例如，兩個相同的會議室、兩個相同的角落區域、兩個完全相同的海報，涵蓋裝置的視圖欄位。 在這種情況下，裝置可能會在相同元件之間取得混淆，並將它們標示為其內部標記法中的相同部分。 這可能會導致某些區域的全像影像出現在其他位置。 裝置可能會開始因為環境的內部表示已損毀而無法經常發生追蹤。 在此情況下，建議您重設系統的環境理解。 重設地圖會導致所有空間錨點放置遺失。 這會導致耳機在環境的唯一區域中妥善追蹤。 但是，如果裝置再次在相同區域之間混淆，可能會發生此問題。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [GDC 2017 呈現空間座標系統和全像攝影轉譯](https://channel9.msdn.com/events/GDC/GDC-2017/GDC2017-008)
 * [Unity 中的座標系統](../develop/unity/coordinate-systems-in-unity.md)
 * [DirectX 中的座標系統](../develop/native/coordinate-systems-in-directx.md)
 * [空間錨點](spatial-anchors.md)
 * [混合實境中的共用體驗](../develop/platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md)
-* <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
+* <a href="/azure/spatial-anchors" target="_blank">Azure Spatial Anchors</a>
 * [案例研究 - 在實境中的的透視技術](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)

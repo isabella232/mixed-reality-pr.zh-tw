@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、注視目標、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: f9e79f8d600002f63e87316ea588741a21c0d68b
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847935"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582337"
 ---
 # <a name="gaze-and-commit"></a>注視並認可
 
@@ -40,7 +40,7 @@ ms.locfileid: "97847935"
     </colgroup>
     <tr>
         <td><strong>輸入模型</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -135,7 +135,7 @@ ms.locfileid: "97847935"
 支援的認可方法如下：
 - 點擊手勢 (也就是提高您手上的手，並將您的食指和 thumb 合在一起) 
 - 說「 _select_ 」或其中一個目標語音命令
-- 在[HoloLens Clicker](https://docs.microsoft.com/hololens/hololens1-clicker)上按單一按鈕
+- 在[HoloLens Clicker](/hololens/hololens1-clicker)上按單一按鈕
 - 按下 Xbox 遊戲台上的 [A] 按鈕
 - 按下 Xbox 適應性控制器上的 [A] 按鈕
 
@@ -253,7 +253,7 @@ Xbox 適應性控制器會使用 [A] 按鈕，以次要輸入的形式執行 cli
 當您想1:1 要讓全像全像移動、調整大小或旋轉全像移動、調整大小或旋轉影像時，可以使用操作手勢來移動、調整大小或旋轉。 這類 1:1 移動的用途之一是要讓使用者可以實際繪圖。
 操作手勢的初始定向應經由注視或指向來完成。 當點一下和按住開始之後，任何物件操作都會由手動移動處理，如此可讓使用者在操作時進行查詢。
 
-### <a name="navigation"></a>瀏覽
+### <a name="navigation"></a>導覽
 瀏覽手勢的運作方式如同虛擬搖桿，可用來瀏覽 UI 小工具，例如放射狀功能表。 您可點選並按住來啟動手勢，然後在標準化 3D Cube (在初次按壓時置中) 中移動您的手。 您可以將來自 X、Y 或 Z 軸的手移至從-1 到1的值，並將0視為起始點。
 瀏覽可用來建置以速度為基礎的連續捲動或縮放手勢，類似於藉由按一下滑鼠中間按鈕，然後上下移動滑鼠來捲動 2D UI。
 
@@ -286,7 +286,7 @@ HoloLens 可藉由追蹤裝置可見的任一手或雙手位置來辨識手勢�
 
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [眼動式互動](eye-gaze-interaction.md)
 * [HoloLens 2 的眼球追蹤](eye-tracking.md)
 * [目光和停駐](gaze-and-dwell.md)
@@ -295,4 +295,3 @@ HoloLens 可藉由追蹤裝置可見的任一手或雙手位置來辨識手勢�
 * [手 - 指向和行動](point-and-commit.md)
 * [本能互動](interaction-fundamentals.md)
 * [語音輸入](voice-input.md)
-

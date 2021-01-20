@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 0ef22142ac2efc3ef47ece2619d31dbeddcff8fe
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 6c33618e6d09da156bc4a4480fbecf3c0da94378
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192658"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580579"
 ---
 # <a name="project-settings"></a>[專案設定](#tab/project)
 
@@ -39,7 +39,7 @@ ms.locfileid: "98192658"
 > 如果您的應用程式對裝置特定服務具有任何相依性，例如從串流進行比對，您必須在此步驟停用它們。 您可以連結到 Windows 稍後提供的對等服務。
 
 ### <a name="5-setup-your-windows-mixed-reality-hardware"></a>5. 設定您的 Windows Mixed Reality 硬體
-1. 在[沉浸式耳機設定](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/before-you-start
+1. 在[沉浸式耳機設定](/windows/mixed-reality/enthusiast-guide/before-you-start
 )中檢查步驟
 2. 瞭解如何 [使用 Windows Mixed Reality](../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md) 模擬器和 [導覽 Windows Mixed Reality 首頁](../../../discover/navigating-the-windows-mixed-reality-home.md)
 
@@ -95,13 +95,13 @@ else
 
 以現有 HMD 為目標的每個遊戲或應用程式將會有一組其處理的輸入、體驗所需的輸入類型，以及它所呼叫以取得這些輸入的特定 Api。 我們致力於嘗試使其盡可能簡單明瞭，以充分利用 Windows Mixed Reality 中提供的輸入。
 
-請閱讀相鄰索引標籤中 Unity 的《 [輸入移植指南》](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=input) ，以取得 Windows Mixed Reality 如何公開輸入的詳細資料，以及該如何對應至您的應用程式目前所能執行的作業。
+請閱讀相鄰索引標籤中 Unity 的《 [輸入移植指南》](../porting-guides.md?tabs=input) ，以取得 Windows Mixed Reality 如何公開輸入的詳細資料，以及該如何對應至您的應用程式目前所能執行的作業。
 
 ### <a name="9-performance-testing-and-tuning"></a>9. 效能測試和微調
 
-Windows Mixed Reality 將可在各式各樣的裝置上使用，範圍從高終端遊戲電腦到廣大市場主流電腦都有。 根據您的目標市場，您應用程式的可用計算和圖形預算有很大的差異。 在此移植練習期間，您可能會運用高階電腦，而且您的應用程式可以使用大量的計算和圖形預算。 如果您想要讓您的應用程式可供更廣大的物件使用，您應該在想 [要作為目標的代表性硬體](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)上測試及分析您的應用程式。
+Windows Mixed Reality 將可在各式各樣的裝置上使用，範圍從高終端遊戲電腦到廣大市場主流電腦都有。 根據您的目標市場，您應用程式的可用計算和圖形預算有很大的差異。 在此移植練習期間，您可能會運用高階電腦，而且您的應用程式可以使用大量的計算和圖形預算。 如果您想要讓您的應用程式可供更廣大的物件使用，您應該在想 [要作為目標的代表性硬體](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)上測試及分析您的應用程式。
 
-[Unity](https://docs.unity3d.com/Manual/Profiler.html)和[Visual Studio](https://docs.microsoft.com/visualstudio/profiling/index)都包含效能分析工具，以及[Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)與[Intel](https://software.intel.com/articles/vr-content-developer-guide)發行有關效能分析和優化的指導方針。 在 [瞭解混合現實的效能](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)時，有廣泛的效能討論可供您使用。 此外，unity 的 [效能建議](../../unity/performance-recommendations-for-unity.md)下會有 unity 的特定詳細資料。
+[Unity](https://docs.unity3d.com/Manual/Profiler.html)和[Visual Studio](/visualstudio/profiling/index)都包含效能分析工具，以及[Microsoft](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)與[Intel](https://software.intel.com/articles/vr-content-developer-guide)發行有關效能分析和優化的指導方針。 在 [瞭解混合現實的效能](../../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)時，有廣泛的效能討論可供您使用。 此外，unity 的 [效能建議](../../unity/performance-recommendations-for-unity.md)下會有 unity 的特定詳細資料。
 
 # <a name="input-mapping"></a>[輸入對應](#tab/input)
 

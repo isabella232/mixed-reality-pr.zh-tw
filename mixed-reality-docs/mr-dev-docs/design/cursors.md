@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (第1代) 、HoloLens 2、混合的現實、游標、目標、注視、手勢、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、放射片、輸入
-ms.openlocfilehash: 3d1bc215f7f5c37f1c2c3ae33c3bc2e4031b354a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848003"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582405"
 ---
 # <a name="cursors"></a>資料指標
 
@@ -32,7 +32,7 @@ ms.locfileid: "97848003"
     </colgroup>
     <tr>
         <td><strong>功能</strong></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -163,7 +163,7 @@ ms.locfileid: "97848003"
 
 ## <a name="cursor-in-mrtk-mixed-reality-toolkit-for-unity"></a>適用于 Unity 的 MRTK (混合現實工具組) 的游標
 
-根據預設， [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) 會提供資料指標預製專案 ([DefaultCursor. 預製專案](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) 與 shell 的系統資料指標具有相同的視覺狀態。 它會在 MRTK 的輸入設定檔中，指派于指標下。 您可以針對您的體驗取代/自訂此資料指標。 針對眼睛追蹤輸入的體驗，MRTK 也提供 EyeGazeCursor，其具有微妙的視覺效果可將干擾降至最低。
+根據預設， [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) 會提供資料指標預製專案 ([DefaultCursor. 預製專案](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) 與 shell 的系統資料指標具有相同的視覺狀態。 其是在 MRTK 輸入設定檔的 [指標] 下進行指派。 您可以針對您的體驗取代/自訂此資料指標。 針對眼睛追蹤輸入的體驗，MRTK 也提供 EyeGazeCursor，其具有微妙的視覺效果可將干擾降至最低。
 
 * [MRTK - 指標設定檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
 * [MRTK - 輸入系統](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)

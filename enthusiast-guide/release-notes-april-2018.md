@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 05/21/2018
 ms.topic: article
 keywords: 版本資訊、版本、windows 10、組建、rs4、os
-ms.openlocfilehash: 8590cf8f813f22fb4f91fef0862b1e2e4ad43b1a
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cdaed2b653faeac81b539422aba6f6e0c7f6c064
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009238"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581622"
 ---
 # <a name="release-notes---april-2018"></a>版本資訊-2018 年4月
 
@@ -31,12 +31,12 @@ ms.locfileid: "98009238"
 
 Windows 10 2018 年4月更新包含許多對桌上型電腦使用 Windows Mixed Reality 沉浸式 (VR) 耳機的增強功能，例如： 
 
-* **混合實境首頁的新環境** -選取 [[開始] 功能表上的 **位置** ，在懸崖之屋和新的 Skyloft 環境之間選擇。 我們也新增 [了實驗性功能](https://docs.microsoft.com/windows/mixed-reality/design/add-custom-home-environments) ，可讓您使用您所建立的自訂環境。
+* **混合實境首頁的新環境** -選取 [[開始] 功能表上的 **位置** ，在懸崖之屋和新的 Skyloft 環境之間選擇。 我們也新增 [了實驗性功能](/windows/mixed-reality/design/add-custom-home-environments) ，可讓您使用您所建立的自訂環境。
 * **快速存取混合的現實 capture** -使用跨環境和應用程式的動作控制器來取得混合的現實相片，但不會捕捉受 DRM 保護的內容。 按住 [Windows] 按鈕，然後點擊觸發程式。 .
 * **啟動和調整大小內容的新選項** ：當您從 [開始] 功能表啟動應用程式時，現在會自動將應用程式放在您的前方。 您現在也可以拖曳視窗的邊緣和角落來調整2D 應用程式的大小。
 * **使用「傳送」聲音命令輕鬆跳到內容** -透過撥雲見日內容並說「傳送」來快速地在 Windows Mixed Reality 首頁中的內容上傳送。
-* **混合實境首頁的 [動畫3d 應用程式啟動器](https://docs.microsoft.com/windows/mixed-reality/distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home#animation-guidelines)和 [裝飾性3d 物件](https://docs.microsoft.com/windows/mixed-reality/distribute/enable-placement-of-3d-models-in-the-home)**。 您現在可以將動畫新增至3D 應用程式啟動器，並允許使用者將裝飾性3D 模型從網頁或2D 應用程式放入 Windows Mixed Reality 首頁。
-* 適用于 SteamVR 的 **[Windows Mixed Reality 的改善](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)**，在新的升級時不會有「早期存取」，包括：使用動作控制器時 haptic Windows Mixed Reality 的意見反應、改善的效能和可靠性，以及 SteamVR 中的動作控制器外觀改善。
+* **混合實境首頁的 [動畫3d 應用程式啟動器](/windows/mixed-reality/distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home#animation-guidelines)和 [裝飾性3d 物件](/windows/mixed-reality/distribute/enable-placement-of-3d-models-in-the-home)**。 您現在可以將動畫新增至3D 應用程式啟動器，並允許使用者將裝飾性3D 模型從網頁或2D 應用程式放入 Windows Mixed Reality 首頁。
+* 適用于 SteamVR 的 **[Windows Mixed Reality 的改善](/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)**，在新的升級時不會有「早期存取」，包括：使用動作控制器時 haptic Windows Mixed Reality 的意見反應、改善的效能和可靠性，以及 SteamVR 中的動作控制器外觀改善。
 * **其他改進** -更新的自動效能設定可提供更優化的體驗 (您可以 [手動覆寫](#visual-quality) 此設定) 。 安裝程式現在提供 USB 3.0 控制器和圖形配接器常見相容性問題的詳細資訊。
 
 ## <a name="new-features-for-hololens"></a>HoloLens 的新功能
@@ -50,7 +50,7 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
     <th>功能</th><th>詳細資料</th><th>指示</th>
   </tr>
   <tr>
-    <td>啟動時自動放置2D 和3D 內容</td><td>當您啟動2D 應用程式啟動器或 2D UWP 應用程式時，會以最佳的大小和距離在世界各地自動放置，而不需要使用者進行放置。 如果 <a href="https://docs.microsoft.com/windows/mixed-reality/design/app-views">沉浸式應用程式</a> 使用2d 應用程式啟動程式，而不是使用 <a href="https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d 應用程式啟動</a>程式，則沉浸式應用程式會從2d 應用程式啟動程式自動啟動，與 RS1 中的相同。<br><br>[開始] 功能表中的3D 應用程式啟動程式也會自動放在世界各地。 使用者可以按一下啟動器以啟動沉浸式應用程式，而不是自動啟動應用程式。 從全像全像是從「全像」應用程式開啟的3D 內容也會自動放在世界各地。</td><td>從 [開始] 功能表開啟應用程式時，系統不會要求您將它放在世界中。<br><br>如果2D 應用程式/<a href="https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d 應用程式啟動器</a> 放置位置不是最佳的，您可以使用以下所述的新的流暢應用程式操作輕鬆地移動它們。 您也可以藉由說出「移動這個」，然後使用「注視」來重新放置內容，來重新調整2D 應用程式啟動器/3D 內容的位置。</td>
+    <td>啟動時自動放置2D 和3D 內容</td><td>當您啟動2D 應用程式啟動器或 2D UWP 應用程式時，會以最佳的大小和距離在世界各地自動放置，而不需要使用者進行放置。 如果 <a href="/windows/mixed-reality/design/app-views">沉浸式應用程式</a> 使用2d 應用程式啟動程式，而不是使用 <a href="/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d 應用程式啟動</a>程式，則沉浸式應用程式會從2d 應用程式啟動程式自動啟動，與 RS1 中的相同。<br><br>[開始] 功能表中的3D 應用程式啟動程式也會自動放在世界各地。 使用者可以按一下啟動器以啟動沉浸式應用程式，而不是自動啟動應用程式。 從全像全像是從「全像」應用程式開啟的3D 內容也會自動放在世界各地。</td><td>從 [開始] 功能表開啟應用程式時，系統不會要求您將它放在世界中。<br><br>如果2D 應用程式/<a href="/windows/mixed-reality/distribute/3d-app-launcher-design-guidance">3d 應用程式啟動器</a> 放置位置不是最佳的，您可以使用以下所述的新的流暢應用程式操作輕鬆地移動它們。 您也可以藉由說出「移動這個」，然後使用「注視」來重新放置內容，來重新調整2D 應用程式啟動器/3D 內容的位置。</td>
   </tr>
   <tr>
     <td>流體應用程式操作</td><td>移動、調整大小和旋轉2D 和3D 內容，而不需要輸入「調整」模式。</td><td>若要移動 2D UWP 應用程式或2D 應用程式啟動器，只要看看它的應用程式行，然後使用點按 + 按住 + 拖曳手勢。 您可以撥雲見日物件上的任何位置來移動3D 內容，然後使用點按 + 按住 + 拖曳。<br><br>若要調整2D 內容的大小，請在其角落。 注視游標會變成調整大小游標，然後您可以按下 + 按住 + 拖曳以調整大小。 您也可以藉由查看邊緣和拖曳的方式，讓2D 內容變成高度或更寬。<br><br>若要調整3D 內容的大小，請將您的手抬起到手勢框架中，並在就緒的位置中向上手指。 您會看到資料指標變成有2個小手的狀態。 無論您的手，都能用兩個手勢來按住手勢。 將您的手移到更接近或更遠的變更物件的大小。 將您的手向前和向後移動彼此之間的關聯，將會旋轉物件。 您也可以透過這種方式來調整或旋轉2D 內容。</td>
@@ -59,7 +59,7 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
     <td>使用重排進行2D 應用程式水準調整大小</td><td>讓 2D UWP 應用程式更寬的外觀比例，以查看更多應用程式內容。 例如，讓郵件應用程式夠寬，以顯示預覽窗格。</td><td>只要注視 2D UWP 應用程式的左邊緣或右邊緣，即可看到調整大小游標，然後使用點按 + 按住 + 拖曳手勢來調整大小。</td>
   </tr>
   <tr>
-    <td>展開的語音命令支援</td><td>只要使用您的聲音就可以了。</td><td>請嘗試下列語音命令：<ul><li>「移至開始」-帶出 [開始] 功能表，或離開 <a href="https://docs.microsoft.com/windows/mixed-reality/design/app-views">沉浸式應用程式</a>。</li><li>"Move this"-可讓您移動物件。</li></ul></td>
+    <td>展開的語音命令支援</td><td>只要使用您的聲音就可以了。</td><td>請嘗試下列語音命令：<ul><li>「移至開始」-帶出 [開始] 功能表，或離開 <a href="/windows/mixed-reality/design/app-views">沉浸式應用程式</a>。</li><li>"Move this"-可讓您移動物件。</li></ul></td>
   </tr>
   <tr>
     <td>更新的全像影像和相片應用程式</td><td>已更新新的全像全像投影應用程式。 更新的相片應用程式。</td><td>您將會注意到「全像照片」應用程式已更新的外觀。 全像影像應用程式包含數個新的全像影像，以及一個標籤 maker，方便您建立文字。</td>
@@ -98,18 +98,18 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
     <td>空間對應改進</td><td>品質、簡化和效能改進。</td><td>空間對應網格會顯示為簡潔，需要較少的三角形來代表相同層級的詳細資料。 您可能會注意到場景中的三角形密度有所變更。</td>
   </tr>
   <tr>
-    <td>根據深度緩衝區自動選取焦點點</td><td>提交深度緩衝區至 Windows 可讓 HoloLens 自動選取焦點點，以優化全像全像</td><td>在 Unity 中，移至 [ <b>編輯 > 專案設定] > [播放 >] 通用 Windows 平臺索引標籤 > XR 設定]</b>，展開 [ <b>Windows Mixed Reality SDK</b> ] 專案，然後選取 [ <b>啟用深度緩衝區共用</b>]。 系統會自動檢查是否有新專案。<br><br>針對 DirectX 應用程式，請確定您在<b>HolographicRenderingParameters</b>每個畫面上呼叫<a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer">CommitDirect3D11DepthBuffer</a>方法，以提供深度緩衝區給 Windows。
+    <td>根據深度緩衝區自動選取焦點點</td><td>提交深度緩衝區至 Windows 可讓 HoloLens 自動選取焦點點，以優化全像全像</td><td>在 Unity 中，移至 [ <b>編輯 > 專案設定] > [播放 >] 通用 Windows 平臺索引標籤 > XR 設定]</b>，展開 [ <b>Windows Mixed Reality SDK</b> ] 專案，然後選取 [ <b>啟用深度緩衝區共用</b>]。 系統會自動檢查是否有新專案。<br><br>針對 DirectX 應用程式，請確定您在<b>HolographicRenderingParameters</b>每個畫面上呼叫<a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.commitdirect3d11depthbuffer">CommitDirect3D11DepthBuffer</a>方法，以提供深度緩衝區給 Windows。
 </td>
   </tr>
   <tr>
-    <td>全像 reprojection 模式</td><td>您現在可以停用 HoloLens 上的位置 reprojection，以改善高度受主體鎖定內容（例如360度的影片）的全像影像穩定性。</td><td>在 Unity 中，當 view 中的所有內容都是嚴格的主體鎖定時，將 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html">HolographicSettings. ReprojectionMode</a> 設定為 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html">HolographicReprojectionMode. OrientationOnly</a> 。<br><br>針對 DirectX 應用程式，當 view 中的所有內容都是嚴格的主體鎖定時，將 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.reprojectionmode"> HolographicCameraRenderingParameters ReprojectionMode</a> 設定為 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicreprojectionmode">HolographicReprojectionMode. OrientationOnly</a> 。</td>
+    <td>全像 reprojection 模式</td><td>您現在可以停用 HoloLens 上的位置 reprojection，以改善高度受主體鎖定內容（例如360度的影片）的全像影像穩定性。</td><td>在 Unity 中，當 view 中的所有內容都是嚴格的主體鎖定時，將 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.ReprojectionMode.html">HolographicSettings. ReprojectionMode</a> 設定為 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.HolographicReprojectionMode.html">HolographicReprojectionMode. OrientationOnly</a> 。<br><br>針對 DirectX 應用程式，當 view 中的所有內容都是嚴格的主體鎖定時，將 <a href="/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.reprojectionmode"> HolographicCameraRenderingParameters ReprojectionMode</a> 設定為 <a href="/uwp/api/windows.graphics.holographic.holographicreprojectionmode">HolographicReprojectionMode. OrientationOnly</a> 。</td>
   </tr>
   <tr>
-    <td>應用程式量身打造 Api</td><td>Windows Api 更深入瞭解您的應用程式執行所在的位置，像是裝置的顯示器是透明的 (HoloLens) 或不透明的 (沉浸式耳機) ，以及 UWP 應用程式的2D 視圖是否顯示在全像攝影介面中。</td><td>Unity 先前以手動方式公開了 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html">HolographicSettings</a> ，甚至是在此組建之前都能運作的方式。<br><br>針對 DirectX 應用程式，您現在可以存取現有的 Api，例如 <a href="https://docs.microsoft.com/uwp/api/windows.graphics.holographic.holographicdisplay.isopaque">HolographicDisplay. GetDefault ( # A1。IsOpaque</a> 和 <a href="https://docs.microsoft.com/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview.iscurrentviewpresentedonholographicdisplay">HolographicApplicationPreview</a> ，也會在 HoloLens 上 IsCurrentViewPresentedOnHolographicDisplay。
+    <td>應用程式量身打造 Api</td><td>Windows Api 更深入瞭解您的應用程式執行所在的位置，像是裝置的顯示器是透明的 (HoloLens) 或不透明的 (沉浸式耳機) ，以及 UWP 應用程式的2D 視圖是否顯示在全像攝影介面中。</td><td>Unity 先前以手動方式公開了 <a href="https://docs.unity3d.com/ScriptReference/XR.WSA.HolographicSettings.IsDisplayOpaque.html">HolographicSettings</a> ，甚至是在此組建之前都能運作的方式。<br><br>針對 DirectX 應用程式，您現在可以存取現有的 Api，例如 <a href="/uwp/api/windows.graphics.holographic.holographicdisplay.isopaque">HolographicDisplay. GetDefault ( # A1。IsOpaque</a> 和 <a href="/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview.iscurrentviewpresentedonholographicdisplay">HolographicApplicationPreview</a> ，也會在 HoloLens 上 IsCurrentViewPresentedOnHolographicDisplay。
 </td>
   </tr>
   <tr>
-      <td>研究模式</td><td>可讓開發人員在建立學術和產業應用程式時，存取重要的 HoloLens 感應器，以測試電腦視覺和機器人領域中的新想法，包括：<ul><li>四個環境追蹤攝影機</li><li>深度對應相機資料的兩個版本</li><li>IR 反射率串流的兩個版本</li></ul></td><td><a href="https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode">研究模式檔</a><br><a href="https://github.com/Microsoft/HoloLensForCV">研究模式範例應用程式</a></td>
+      <td>研究模式</td><td>可讓開發人員在建立學術和產業應用程式時，存取重要的 HoloLens 感應器，以測試電腦視覺和機器人領域中的新想法，包括：<ul><li>四個環境追蹤攝影機</li><li>深度對應相機資料的兩個版本</li><li>IR 反射率串流的兩個版本</li></ul></td><td><a href="/windows/mixed-reality/develop/platform-capabilities-and-apis/research-mode">研究模式檔</a><br><a href="https://github.com/Microsoft/HoloLensForCV">研究模式範例應用程式</a></td>
   </tr>
 </table>
 
@@ -120,7 +120,7 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
     <th>功能</th><th>詳細資料</th><th>指示</th>
   </tr>
   <tr>
-    <td>在單一裝置上使用多個 Azure Active Directory 使用者帳戶</td><td>與多位 Azure AD 使用者共用 HoloLens，每個使用者都有自己的使用者設定和裝置上的使用者資料。</td><td><a href="https://docs.microsoft.com/hololens/hololens-multiple-users">IT 專業人員中心：與多位人員共用 HoloLens</a></td>
+    <td>在單一裝置上使用多個 Azure Active Directory 使用者帳戶</td><td>與多位 Azure AD 使用者共用 HoloLens，每個使用者都有自己的使用者設定和裝置上的使用者資料。</td><td><a href="/hololens/hololens-multiple-users">IT 專業人員中心：與多位人員共用 HoloLens</a></td>
   </tr>
   <tr>
     <td>變更登入時 Wi-Fi 網路</td><td>先變更 Wi-Fi 網路再登入，讓另一位使用者第一次登入自己的 Azure AD 使用者帳戶，讓使用者能夠在不同的位置和工作地點共用裝置。</td><td>在登入畫面上，您可以使用 [密碼] 欄位底下的 [網路] 圖示來連線至網路。 當您第一次登入裝置時，這會很有説明。</td>
@@ -140,28 +140,28 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
     <th>功能</th><th>詳細資料</th><th>指示</th>
   </tr>
   <tr>
-    <td>新的 "Windows Holographic for Business" OS 名稱</td><td>清除版本命名，以在 HoloLens 上啟用商用套件功能時，減少版本升級授權應用程式的混淆。</td><td>您可以在 [ <b>> 系統 ></b>的 [設定] 中，查看您裝置上的「全像」版本的 Windows 電腦。 如果已套用版本更新以啟用商業套件功能，則會出現「Windows Holographic for Business」。 瞭解如何 <a href="https://docs.microsoft.com/hololens/hololens-upgrade-enterprise">解除鎖定 Windows Holographic for Business 功能</a>。</td>
+    <td>新的 "Windows Holographic for Business" OS 名稱</td><td>清除版本命名，以在 HoloLens 上啟用商用套件功能時，減少版本升級授權應用程式的混淆。</td><td>您可以在 [ <b>> 系統 ></b>的 [設定] 中，查看您裝置上的「全像」版本的 Windows 電腦。 如果已套用版本更新以啟用商業套件功能，則會出現「Windows Holographic for Business」。 瞭解如何 <a href="/hololens/hololens-upgrade-enterprise">解除鎖定 Windows Holographic for Business 功能</a>。</td>
   </tr>
   <tr>
-  <td>Windows 設定設計工具 (WCD) </td><td>建立和編輯布建套件，以透過更新的 WCD 應用程式設定 HoloLens。 適用于版本更新、可設定的 OOBE、區域/時區、大量 Azure AD 權杖、網路和開發人員 CSP 的 Simple HoloLens wizard。 Advanced editor 已篩選為支援 HoloLens 的選項，包括指派的存取和帳戶管理 Csp。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
+  <td>Windows 設定設計工具 (WCD) </td><td>建立和編輯布建套件，以透過更新的 WCD 應用程式設定 HoloLens。 適用于版本更新、可設定的 OOBE、區域/時區、大量 Azure AD 權杖、網路和開發人員 CSP 的 Simple HoloLens wizard。 Advanced editor 已篩選為支援 HoloLens 的選項，包括指派的存取和帳戶管理 Csp。</td><td><a href="/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
   </tr>
   <tr>
-    <td>可設定的設定 (OOBE) </td><td>在安裝期間隱藏校正、手勢/注視訓練和 Wi-Fi 設定畫面。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
+    <td>可設定的設定 (OOBE) </td><td>在安裝期間隱藏校正、手勢/注視訓練和 Wi-Fi 設定畫面。</td><td><a href="/hololens/hololens-provisioning#create-a-provisioning-package-for-hololens-using-the-hololens-wizard">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
   </tr>
   <tr>
-    <td>大量 Azure AD 權杖支援</td><td>預先註冊裝置至 Azure AD directory 租使用者，以加快使用者設定流程的速度。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
+    <td>大量 Azure AD 權杖支援</td><td>預先註冊裝置至 Azure AD directory 租使用者，以加快使用者設定流程的速度。</td><td><a href="/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
   </tr>
   <tr>
-  <td>DeveloperSetup CSP</td><td>部署設定檔以在開發人員模式中設定 HoloLens。 適用于開發和示範裝置。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
+  <td>DeveloperSetup CSP</td><td>部署設定檔以在開發人員模式中設定 HoloLens。 適用于開發和示範裝置。</td><td><a href="/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
   </tr>
   <tr>
-  <td>AccountManagement CSP</td><td>共用 HoloLens 裝置，並在登出或無活動/儲存閾值之後，移除暫時使用的使用者資料。 支援 Azure AD 帳戶。</td><td><a href="https://docs.microsoft.com/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
+  <td>AccountManagement CSP</td><td>共用 HoloLens 裝置，並在登出或無活動/儲存閾值之後，移除暫時使用的使用者資料。 支援 Azure AD 帳戶。</td><td><a href="/hololens/hololens-provisioning">IT 專業人員中心：使用布建套件設定 HoloLens</a></td>
   </tr>
   <tr>
-  <td>受指派的存取權</td><td>適用于第一行工作者或示範的 Windows 指派存取權。 單一或多個應用程式鎖定。 不需要開發人員解除鎖定。</td><td><a href="https://docs.microsoft.com/hololens/hololens-kiosk">IT 專業人員中心：以 kiosk 模式設定 HoloLens</a></td>
+  <td>受指派的存取權</td><td>適用于第一行工作者或示範的 Windows 指派存取權。 單一或多個應用程式鎖定。 不需要開發人員解除鎖定。</td><td><a href="/hololens/hololens-kiosk">IT 專業人員中心：以 kiosk 模式設定 HoloLens</a></td>
   </tr>
   <tr>
-  <td>Kiosk 裝置的來賓存取權</td><td>Windows 指派的存取權，包含無密碼的來賓帳戶以進行示範。 單一或多個應用程式鎖定。 不需要開發人員解除鎖定。</td><td><a href="https://docs.microsoft.com/hololens/hololens-kiosk#guest">IT 專業人員中心：以 kiosk 模式設定 HoloLens</a></td>
+  <td>Kiosk 裝置的來賓存取權</td><td>Windows 指派的存取權，包含無密碼的來賓帳戶以進行示範。 單一或多個應用程式鎖定。 不需要開發人員解除鎖定。</td><td><a href="/hololens/hololens-kiosk#guest">IT 專業人員中心：以 kiosk 模式設定 HoloLens</a></td>
   </tr>
   <tr>
     <td>設定 (OOBE) 診斷</td><td>從 HoloLens 取得診斷記錄，讓您可以在意見反應中樞登入失敗) 的使用者使用之前，對 Azure AD 登入失敗進行疑難排解 (。</td><td>當安裝或登入失敗時，請選擇 [新增 <b>收集資訊</b> ] 選項來取得診斷記錄以進行疑難排解。</td>
@@ -176,7 +176,7 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
 
 ## <a name="known-issues"></a>已知問題
 
-我們努力提供絕佳的 Windows Mixed Reality 經驗，但仍在追蹤一些已知問題。 如果您發現其他人，請 [提供意見反應給我們](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)。
+我們努力提供絕佳的 Windows Mixed Reality 經驗，但仍在追蹤一些已知問題。 如果您發現其他人，請 [提供意見反應給我們](/windows/mixed-reality/give-us-feedback)。
 
 ### <a name="hololens"></a>HoloLens
 
@@ -187,13 +187,13 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
 * **應用程式和已放置** 的全像調整大小調整應用程式會在更新之後移除，而且必須在整個空間中重新放置。 
 * **意見反應中樞可能不會立即啟動** -在更新之後，需要幾分鐘的時間，您才能啟動一些像是意見反應中樞的收件匣應用程式，而這些應用程式會自行更新。 
 * **公司 Wi-Fi 憑證需要重新同步** 處理-我們正在調查需要將 HoloLens 連線到不同網路的問題，才能讓公司憑證重新同步至裝置，然後才能使用憑證重新連接到公司網路。 
-* **H. HEVC 影片播放無法運作** -嘗試播放 h. 的應用程式將會收到錯誤訊息。 因應措施是 [存取 Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)，選取左側導覽列上的 [ **應用** 程式]，然後 **移除** HEVC 應用程式。 然後，從 Microsoft Store 安裝最新的 [HEVC 影片擴充](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) 功能。 我們正在調查此問題。 
+* **H. HEVC 影片播放無法運作** -嘗試播放 h. 的應用程式將會收到錯誤訊息。 因應措施是 [存取 Windows 裝置入口網站](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-device-portal)，選取左側導覽列上的 [ **應用** 程式]，然後 **移除** HEVC 應用程式。 然後，從 Microsoft Store 安裝最新的 [HEVC 影片擴充](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) 功能。 我們正在調查此問題。 
 
 #### <a name="for-developers-updating-hololens-apps-for-devices-running-windows-10-april-2018-update"></a>適用于開發人員：更新執行 Windows 10 2018 年4月更新之裝置的 HoloLens 應用程式
 
 除了一份絕佳的 [新功能](#new-features-for-hololens)清單之外，WINDOWS 10 2018 年4月更新 (RS4) 的 HoloLens 會強制執行先前版本沒有的一些程式程式碼為：
-* 在 HoloLens 上 **使用敏感性資源 (相機、麥克風等)** -RS4 上的許可權要求，將會針對要存取敏感資源的應用程式（例如相機或麥克風）強制執行許可權要求。 HoloLens 上的 RS1 未強制執行這些提示，因此，如果您的應用程式會立即存取這些資源，即使使用者將許可權授與要求的資源) ，也可能會在 RS4 (損毀。 如需詳細資訊，請參閱相關的 [UWP 應用程式功能聲明文章](https://docs.microsoft.com/windows/uwp/packaging/app-capability-declarations) 。
-* 在 HoloLens 上 RS4 的 **應用程式呼叫，** 將會強制適當使用 [ *Windows.System。*](https://docs.microsoft.com/uwp/api/Windows.System.Launcher)啟動另一個應用程式的啟動程式類別。 例如，我們發現呼叫Windows.System 的應用程式有問題 *。LaunchUriForResultsAsync* 從非 ASTA (UI) 執行緒。 在 RS1 上，這會在 HoloLens 上成功，但 RS4 需要在 UI 執行緒上執行呼叫。
+* 在 HoloLens 上 **使用敏感性資源 (相機、麥克風等)** -RS4 上的許可權要求，將會針對要存取敏感資源的應用程式（例如相機或麥克風）強制執行許可權要求。 HoloLens 上的 RS1 未強制執行這些提示，因此，如果您的應用程式會立即存取這些資源，即使使用者將許可權授與要求的資源) ，也可能會在 RS4 (損毀。 如需詳細資訊，請參閱相關的 [UWP 應用程式功能聲明文章](/windows/uwp/packaging/app-capability-declarations) 。
+* 在 HoloLens 上 RS4 的 **應用程式呼叫，** 將會強制適當使用 [ *Windows.System。*](/uwp/api/Windows.System.Launcher)啟動另一個應用程式的啟動程式類別。 例如，我們發現呼叫Windows.System 的應用程式有問題 *。LaunchUriForResultsAsync* 從非 ASTA (UI) 執行緒。 在 RS1 上，這會在 HoloLens 上成功，但 RS4 需要在 UI 執行緒上執行呼叫。
 
 ### <a name="windows-mixed-reality-on-desktop"></a>桌面上的 Windows Mixed Reality
 
@@ -254,7 +254,7 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
 
 ## <a name="provide-feedback-and-report-issues"></a>提供意見反應和報告問題
 
-使用 [HoloLens 或 WINDOWS 10 電腦上意見反應中樞應用程式](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback) 來提供意見反應和回報問題。 使用意見反應中樞可確保包含所有必要的診斷資訊，以協助我們的工程師快速地偵測和解決問題。
+使用 [HoloLens 或 WINDOWS 10 電腦上意見反應中樞應用程式](/windows/mixed-reality/give-us-feedback) 來提供意見反應和回報問題。 使用意見反應中樞可確保包含所有必要的診斷資訊，以協助我們的工程師快速地偵測和解決問題。
 
 >[!NOTE]
 >請務必接受提示，詢問您是否要意見反應中樞存取您的 [檔] 資料夾， (在出現提示時選取 **[是]**) 。
@@ -266,9 +266,8 @@ Windows 10 2018 年4月更新已抵達所有 HoloLens 客戶！ 此更新已封�
 * [版本資訊 - 2016 年 5 月](release-notes-may-2016.md)
 * [版本資訊 - 2016 年 3 月](release-notes-march-2016.md)
 
-## <a name="see-also"></a>請參閱
-* [ (外部連結的沉浸式耳機支援) ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
+## <a name="see-also"></a>另請參閱
+* [ (外部連結的沉浸式耳機支援) ](./troubleshooting-windows-mixed-reality.md)
 * [HoloLens 支援 (外部連結) ](https://support.microsoft.com/products/hololens)
-* [安裝工具](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [提供意見反應](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
-
+* [安裝工具](/windows/mixed-reality/develop/install-the-tools)
+* [提供意見反應](/windows/mixed-reality/give-us-feedback)

@@ -6,32 +6,32 @@ ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloLens，同步處理，空間錨點，傳輸，多人遊戲，視圖，案例，逐步解說，範例程式碼，傳輸，本機錨點傳輸，錨點匯出，錨點匯入
-ms.openlocfilehash: 5007220f480a3093864502e624737e9707bd3952
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009648"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582806"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX 中的本機錨點傳輸
 
-在您無法使用 <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點轉移可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。
+在您無法使用 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點轉移可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。
 
 >[!NOTE]
->本機錨點傳輸可提供比 <a href="https://docs.microsoft.com/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>更不健全的錨定回收，而且此方法不支援 IOS 和 Android 裝置。
+>本機錨點傳輸可提供比 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>更不健全的錨定回收，而且此方法不支援 IOS 和 Android 裝置。
 
 >[!NOTE]
 >本文中的程式碼片段目前示範如何使用 c + + [/cx，而](../develop/native/creating-a-holographic-directx-project.md)不是 c + + 全像 c + + 全像 c + + 的 + 17 相容 c + +/WinRT。  這些概念對 c + +/WinRT 專案而言是相等的，不過您必須轉譯程式碼。
 
 ## <a name="transferring-spatial-anchors"></a>傳輸空間錨點
 
-您可以使用 [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)，在 Windows Mixed Reality 裝置之間傳輸空間錨點。 此 API 可讓您將錨點與所有所需的支援感應器資料組合在一起，以找出世界中確切的位置，然後在另一個裝置上匯入該組合。 當第二部裝置上的應用程式匯入該錨點之後，每個應用程式都可以使用該共用空間錨點的座標系統轉譯影像，然後在真實世界中出現在相同的位置。
+您可以使用 [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)，在 Windows Mixed Reality 裝置之間傳輸空間錨點。 此 API 可讓您將錨點與所有所需的支援感應器資料組合在一起，以找出世界中確切的位置，然後在另一個裝置上匯入該組合。 當第二部裝置上的應用程式匯入該錨點之後，每個應用程式都可以使用該共用空間錨點的座標系統轉譯影像，然後在真實世界中出現在相同的位置。
 
 請注意，空間錨點無法在不同的裝置類型之間傳輸，例如，可能無法使用沉浸式耳機來定位 HoloLens 空間錨點。  轉移的錨點也與 iOS 或 Android 裝置不相容。
 
 ## <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>設定您的應用程式以使用 >spatialperception 功能
 
-您的應用程式必須先獲得使用 >spatialperception 功能的許可權，才能使用 [SpatialAnchorTransferManager](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.aspx)。 這是必要的，因為傳輸空間錨點牽涉到共用一段時間內所搜集的感應器映射（該錨點可能包含機密資訊）。
+您的應用程式必須先獲得使用 >spatialperception 功能的許可權，才能使用 [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)。 這是必要的，因為傳輸空間錨點牽涉到共用一段時間內所搜集的感應器映射（該錨點可能包含機密資訊）。
 
 在您應用程式的 package.appxmanifest 檔案中宣告這項功能。 以下為範例：
 
@@ -53,11 +53,11 @@ ms.locfileid: "98009648"
     >
 ```
 
-**注意：** 您的應用程式必須在執行時間要求功能，才可存取 SpatialAnchor 匯出/匯入 Api。 請參閱下列範例中的 [RequestAccessAsync](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchortransfermanager.requestaccessasync.aspx) 。
+**注意：** 您的應用程式必須在執行時間要求功能，才可存取 SpatialAnchor 匯出/匯入 Api。 請參閱下列範例中的 [RequestAccessAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) 。
 
 ## <a name="serialize-anchor-data-by-exporting-it-with-the-spatialanchortransfermanager"></a>使用 SpatialAnchorTransferManager 匯出錨點資料，以將其序列化
 
-Helper 函式包含在程式碼範例中，以匯出 (序列化) [SpatialAnchor](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx) 資料。 此匯出 API 會將索引鍵/值組集合中的所有錨點序列化，使字串與錨點產生關聯。
+Helper 函式包含在程式碼範例中，以匯出 (序列化) [SpatialAnchor](/uwp/api/Windows.Perception.Spatial.SpatialAnchor) 資料。 此匯出 API 會將索引鍵/值組集合中的所有錨點序列化，使字串與錨點產生關聯。
 
 ```
 // ExportAnchorDataAsync: Exports a byte buffer containing all of the anchors in the given collection.
@@ -274,7 +274,7 @@ return create_task(SpatialAnchorTransferManager::RequestAccessAsync()).then(
 
 ## <a name="special-considerations"></a>特殊考慮
 
-[TryExportAnchorsAsync](https://msdn.microsoft.com/library/windows/apps/mt592763.aspx) API 允許將多個[SpatialAnchors](https://msdn.microsoft.com/library/windows/apps/windows.perception.spatial.spatialanchor.aspx)匯出至相同的不透明二進位 blob。 不過，blob 將包含的資料會有些許差異，這取決於單一 SpatialAnchor 或多個 SpatialAnchors 是否會在單一呼叫中匯出。
+[TryExportAnchorsAsync](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager) API 允許將多個[SpatialAnchors](/uwp/api/Windows.Perception.Spatial.SpatialAnchor)匯出至相同的不透明二進位 blob。 不過，blob 將包含的資料會有些許差異，這取決於單一 SpatialAnchor 或多個 SpatialAnchors 是否會在單一呼叫中匯出。
 
 ### <a name="export-of-a-single-spatialanchor"></a>匯出單一 SpatialAnchor
 
@@ -674,7 +674,7 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 
 這樣就完成了！ 現在，您應該有足夠的資訊來嘗試找出網路上收到的錨點。 同樣地，請注意，用戶端必須要有足夠的視覺追蹤資料，才能成功地找出錨點;如果無法立即運作，請試著稍候一段時間。 如果仍然無法運作，請讓伺服器傳送更多錨點，並使用網路通訊來同意用戶端所適用的訊息。 您可以下載 HolographicSpatialAnchorTransferSample、設定用戶端和伺服器 Ip，以及將其部署至用戶端和伺服器 HoloLens 裝置，來嘗試此程式。
 
-## <a name="see-also"></a>請參閱
-* [平行模式程式庫 (PPL)](https://msdn.microsoft.com/library/dd492418.aspx)
-* [StreamSocket](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocket.aspx)
-* [StreamSocketListener](https://msdn.microsoft.com/library/windows/apps/windows.networking.sockets.streamsocketlistener.aspx)
+## <a name="see-also"></a>另請參閱
+* [平行模式程式庫 (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
+* [StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

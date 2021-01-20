@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
 keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal 引擎4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: e482c93233348325736d2c224788e9174c1f3b67
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010158"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581114"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal 中的手勢追蹤
 
@@ -156,7 +156,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ## <a name="gestures"></a>軌跡
 
-HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 軌跡追蹤是以訂用帳戶模型為基礎。 您應該使用「設定手勢」函式來告訴裝置您要追蹤的手勢。 您可以在 [HoloLens 2 基本使用](https://docs.microsoft.com/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
+HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 軌跡追蹤是以訂用帳戶模型為基礎。 您應該使用「設定手勢」函式來告訴裝置您要追蹤的手勢。 您可以在 [HoloLens 2 基本使用](/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

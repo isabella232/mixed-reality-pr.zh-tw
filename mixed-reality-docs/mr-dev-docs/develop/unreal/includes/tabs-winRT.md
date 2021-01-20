@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bed33ee9b41a4ee66ce4c1c579d398f0958143d
-ms.sourcegitcommit: db01faaf76bccd4f0432cf6b383fefa04ab7a085
+ms.openlocfilehash: 7d530b66596bb79a082b98e5417bd125a7c5687d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97745693"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580413"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -69,7 +69,7 @@ WinRT 程式碼只能在 Win64 和 HoloLens 平臺中進行編譯，而 if 語�
 </packages>
 ```
 
-現在您可以下載 NuGet、必要的套件，或參閱 NuGet [檔](https://docs.microsoft.com/nuget/consume-packages/install-use-packages-nuget-cli)。
+現在您可以下載 NuGet、必要的套件，或參閱 NuGet [檔](/nuget/consume-packages/install-use-packages-nuget-cli)。
 
 開啟 YourModule.Build.cs 並新增下列程式碼：
 
@@ -533,5 +533,4 @@ void AWinrtActor::OpenFileDialogue()
 
 ## <a name="summary"></a>摘要 
 
-當您需要使用與 Windows 相同的檔案對話方塊，將檔案儲存到 HoloLens 磁片時，建議您使用此教學課程作為 Unreal 中使用 WinRT 程式碼的起點。  相同的程式也適用于從 HoloLensWinrtDLL 標頭匯出額外的函式，並在 Unreal 中使用。  請特別注意在背景 MTA 執行緒中等候非同步 WinRT 程式碼的 DLL 程式碼，這樣可避免死結 Unreal 遊戲執行緒。 
-
+當您需要使用與 Windows 相同的檔案對話方塊，將檔案儲存到 HoloLens 磁片時，建議您使用此教學課程作為 Unreal 中使用 WinRT 程式碼的起點。  相同的程式也適用于從 HoloLensWinrtDLL 標頭匯出額外的函式，並在 Unreal 中使用。  請特別注意在背景 MTA 執行緒中等候非同步 WinRT 程式碼的 DLL 程式碼，這樣可避免死結 Unreal 遊戲執行緒。

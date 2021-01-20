@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 應用程式品質準則、混合現實、混合現實應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 8037b573f50ef1f1137a6c50913990fadf40e92e
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192676"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581260"
 ---
 # <a name="app-quality-criteria"></a>應用程式品質準則
 
@@ -36,7 +36,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -99,7 +99,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -161,7 +161,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -224,7 +224,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -281,7 +281,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -324,7 +324,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -382,7 +382,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -438,7 +438,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -479,7 +479,7 @@ ms.locfileid: "98192676"
 #### <a name="documentation"></a>文件
 
 * [互動設計](../../discover/hologram.md)
-* [色彩、燈光和材質](../../color,-light-and-materials.md)
+* [色彩、燈光和材質](../../design/color-light-and-materials.md)
 * [佈告板和常駐標籤](../../design/billboarding-and-tag-along.md)
 * [本能互動](../../design/interaction-fundamentals.md)
 * [自我運動和使用者運動](../../design/comfort.md#self-motion-and-user-locomotion)
@@ -497,7 +497,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -548,7 +548,7 @@ ms.locfileid: "98192676"
 * [Unity 中的動作控制器](../unity/motion-controllers-in-unity.md)
 * [Unity 中的手勢](../unity/gestures-in-unity.md)
 * [Unity 中的語音輸入](../unity/voice-input-in-unity.md)
-* [DirectX 中的鍵盤、滑鼠及控制器輸入](../../keyboard,-mouse,-and-controller-input-in-directx.md)
+* [DirectX 中的鍵盤、滑鼠及控制器輸入](./keyboard-mouse-and-controller-input-in-directx.md)
 * [DirectX 中的頭部和眼睛目光](../native/gaze-in-directx.md)
 * [DirectX 中的手部和運動控制器](../native/hands-and-motion-controllers-in-directx.md)
 * [DirectX 中的語音輸入](../native/voice-input-in-directx.md)
@@ -573,7 +573,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -628,7 +628,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -683,7 +683,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>
@@ -726,7 +726,7 @@ ms.locfileid: "98192676"
     <col width="33%" />
     </colgroup>
     <tr>
-        <td><a href="../../hololens-hardware-details.md"><strong>HoloLens</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens</strong></a></td>
         <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
         <td></td>
     </tr>

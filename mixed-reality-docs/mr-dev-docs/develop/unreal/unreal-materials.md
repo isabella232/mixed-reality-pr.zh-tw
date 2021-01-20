@@ -2,16 +2,16 @@
 title: Unreal 中的材質建議
 description: Unreal 引擎中的材質總覽。
 author: hferrone
-ms.author: v-hferrone
+ms.author: safarooq
 ms.date: 09/18/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、開發、教材、檔、指南、功能、全息表、遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 11c10577bd3946facb96fd77b09265ab5ca26f24
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+ms.openlocfilehash: bfe70e730c5fbd6e5d103737b03e76bfd0ab65f6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609569"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580795"
 ---
 # <a name="material-recommendations-in-unreal"></a>Unreal 中的材質建議
 
@@ -29,7 +29,7 @@ ms.locfileid: "96609569"
  *材質設定*
 
 Unreal 不建議的材質設定[ ![ 中不建議的材質設定 ](images/unreal-materials-img-01b.png) ](images/unreal-materials-img-01b.png#lightbox) 
- *Non-recommended material setup*
+ 
 
 ## <a name="changing-blend-mode"></a>變更 Blend 模式
 

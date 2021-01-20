@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 11/11/2020
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲、Microsoft Edge、chromium、Edge、360、360影片、360檢視器
-ms.openlocfilehash: d3ed8f95285eefacf43177915d512bfb41730243
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 26691dd3cf1b8e620373ef150de61cd2c7f461db
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725779"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581303"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality 和新的 Microsoft Edge
 
@@ -48,7 +48,7 @@ Windows 10 1903 版或更新版本之後，您就可以開始使用新的 Micros
 
 **發生這種情況的原因**
 
-[Windows 10 2019 年5月更新](https://docs.microsoft.com/windows/mixed-reality/release-notes-may-2019)引進 Windows Mixed Reality 中的傳統 Win32 應用程式支援。 若要啟用這種支援，必須建立虛擬監視器來裝載 Win32 應用程式。 每次啟動新的 Win32 應用程式時，都必須建立另一個虛擬監視器。 可惜的是，建立虛擬監視器是一項密集的工作，可能會使耳機顯示短暫地凍結。 客戶提供的意見反應是您的經驗和干擾性。 由於該意見反應和 Win32 應用程式的使用方式不斷增加，我們決定在 Windows Mixed Reality 啟動期間預先配置三個虛擬監視器以防止此中斷，並讓客戶可以啟動最多三個並行的 Win32 應用程式，而不會遇到耳機顯示凍結。
+[Windows 10 2019 年5月更新](/windows/mixed-reality/release-notes-may-2019)引進 Windows Mixed Reality 中的傳統 Win32 應用程式支援。 若要啟用這種支援，必須建立虛擬監視器來裝載 Win32 應用程式。 每次啟動新的 Win32 應用程式時，都必須建立另一個虛擬監視器。 可惜的是，建立虛擬監視器是一項密集的工作，可能會使耳機顯示短暫地凍結。 客戶提供的意見反應是您的經驗和干擾性。 由於該意見反應和 Win32 應用程式的使用方式不斷增加，我們決定在 Windows Mixed Reality 啟動期間預先配置三個虛擬監視器以防止此中斷，並讓客戶可以啟動最多三個並行的 Win32 應用程式，而不會遇到耳機顯示凍結。
 
 **因應措施**
 

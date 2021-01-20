@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、互動
-ms.openlocfilehash: b5091b92fd048f72184212401d54ad0b7353875c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008578"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582385"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 上的眼睛架構互動
 
 ![MRTK 中的眼睛追蹤示範](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLens 2 頁面上的 [眼睛追蹤](eye-tracking.md) 中，我們提到了每位使用者必須進行 [校正](https://docs.microsoft.com/hololens/hololens-calibration)的需求，並提供一些開發人員指導方針，並醒目提示使用案例來追蹤眼睛。 眼睛輸入仍然是一種新的使用者輸入，而且有很多需要學習。 
+HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLens 2 頁面上的 [眼睛追蹤](eye-tracking.md) 中，我們提到了每位使用者必須進行 [校正](/hololens/hololens-calibration)的需求，並提供一些開發人員指導方針，並醒目提示使用案例來追蹤眼睛。 眼睛輸入仍然是一種新的使用者輸入，而且有很多需要學習。 
 
 雖然眼睛的輸入只會在我們的「全像」 Shell 體驗中稍微使用 (您在啟動 HoloLens 2) 時所看到的使用者介面，但有數個應用程式（例如「 [HoloLens 遊樂場](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)」）會展示眼睛輸入如何新增至全像您的全像攝影體驗的絕佳範例。
 在這個頁面中，我們會討論整合眼睛輸入以與您的全像攝影應用程式互動的設計考慮。
@@ -35,7 +35,7 @@ HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLen
 </colgroup>
 <tr>
      <td><strong>功能</strong></td>
-     <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+     <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
      <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
 </tr>

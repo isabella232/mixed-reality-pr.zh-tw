@@ -6,12 +6,12 @@ ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 混合的現實、vr、lbe、位置、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、硬體、HoloLens、多玩家、雲端服務、azure
-ms.openlocfilehash: 323981d49c99f5cb175b71645851496bfa1f268c
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 41b35e7f92f8410357c685362ebc1714aea616e8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757826"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580669"
 ---
 # <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality 的位置型娛樂
 
@@ -98,11 +98,11 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
  
 **問：是否有設定 playspace 的任何指引？**
 
-答：設定 playspace 的方式應該與取用者設定體驗一樣。 房間設定程式也可讓您定義您的房間界線。 您可以在 [這裡](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)閱讀更多有關設定空間界限的詳細資料。
+答：設定 playspace 的方式應該與取用者設定體驗一樣。 房間設定程式也可讓您定義您的房間界線。 您可以在 [這裡](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)閱讀更多有關設定空間界限的詳細資料。
 
 如同上述檔中所述，最大合理的單一座標 playspace 大約是5mx5m。 如果您想要有更大的區域，您可以在 Windows 全像 API 堆疊中使用空間錨點功能。 使用此 API 時，您將需要在所產生的體驗中進行自訂工程。  
 
-您可以在 [這裡](https://docs.microsoft.com//windows/mixed-reality/coordinate-systems)閱讀更多有關如何將內容優化以取得不同空間大小的詳細資料。
+您可以在 [這裡](//windows/mixed-reality/coordinate-systems)閱讀更多有關如何將內容優化以取得不同空間大小的詳細資料。
  
 
 **問：我的空間太大，當我嘗試設定具有界限的長期體驗時遇到錯誤。我該怎麼做才能設定我的大型自由漫遊體驗？**
@@ -113,7 +113,7 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 應用程式開發人員負責顯示必要的保護措施，讓使用者不會與實體周圍發生衝突。  這些可能是在體驗或自訂遊戲界限視覺效果中的數位牆。 
 
-您可以在 [這裡](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)找到使用 WMR 設定房間界限的指引。
+您可以在 [這裡](//windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)找到使用 WMR 設定房間界限的指引。
 
 **問： playspace 的原點在哪裡？**
 
@@ -125,7 +125,7 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 答：如果您透過我們的測試人員計畫加入宣告 Windows 20H1 或更新版本的組建，您可以存取地圖共用的新介面。 這項新功能可透過 Windows 裝置入口網站的 [ [對應管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) ] 介面使用。 若要使用此工具，請依照下列步驟執行：
 * 請確定您加入宣告20H1 或更新版本-2019 年9月之後，這表示使用我們的測試人員計畫
-* 使用這些[指示](https://docs.microsoft.com/windows/uwp/debug-test-perf/device-portal-desktop)啟用 WINDOWS 裝置入口網站 (WDP) 
+* 使用這些[指示](/windows/uwp/debug-test-perf/device-portal-desktop)啟用 WINDOWS 裝置入口網站 (WDP) 
 * 插入您想要從 HMD 下載現有對應或匯入新對應的 Windows Mixed Reality
 * 使用 [設定] 畫面中提供的 URL，在您選擇的瀏覽器中流覽至 WDP。
     * 流覽至 [混合式事實] 區段，然後選取 [對應管理員]。
@@ -140,13 +140,13 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 問： Windows Mixed Reality 耳機中的追蹤技術如何運作？  
 
-混合現實與 HoloLens 共用相同的追蹤技術。 若要深入瞭解內部追蹤系統，請參閱 [此處](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/tracking-system)的檔。
+混合現實與 HoloLens 共用相同的追蹤技術。 若要深入瞭解內部追蹤系統，請參閱 [此處](//windows/mixed-reality/enthusiast-guide/tracking-system)的檔。
 
 如需更高層級空間對應系統運作方式的說明，請參閱 [這裡](../design/spatial-mapping.md)的說明。
 
 **問：是否有任何取得可靠追蹤磁片區的最佳作法？**
 
-若要以最佳方式設定追蹤成功的環境，您可以閱讀這 [篇文章](../environment-considerations-for-hololens.md)中的最佳做法。
+若要以最佳方式設定追蹤成功的環境，您可以閱讀這 [篇文章](/hololens/hololens-environment-considerations)中的最佳做法。
 
 **問：是否有任何特定的細微差異，可考慮在倉儲規模空間或優化中進行追蹤？**
 
@@ -188,13 +188,13 @@ LBE 保留與預約系統
 
 **問：我使用 SteamVR 來部署我的體驗。Windows Mixed Reality 可以搭配 SteamVR 使用嗎？**
 
-答：適用于 SteamVR 的 Windows Mixed Reality 可讓使用者在 Windows Mixed Reality 的沉浸式耳機上執行 SteamVR 體驗。 [在這裡](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)深入瞭解使用 WMR SteamVR。
+答：適用于 SteamVR 的 Windows Mixed Reality 可讓使用者在 Windows Mixed Reality 的沉浸式耳機上執行 SteamVR 體驗。 [在這裡](//windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)深入瞭解使用 WMR SteamVR。
 
 ### <a name="support-and-community"></a>支援和團體  
 
 我們有幾個實用的資源，可協助您與小組的主題專家交流、取得疑難排解支援，以及對更廣大的混合現實開發人員群體貢獻。  
 
-如果您遇到任何公開發行功能的問題，請使用意見反應中樞提出錯誤。如需指引，請參閱此 [頁面](https://docs.microsoft.com//windows/mixed-reality/enthusiast-guide/filing-feedback)。
+如果您遇到任何公開發行功能的問題，請使用意見反應中樞提出錯誤。如需指引，請參閱此 [頁面](//windows/mixed-reality/enthusiast-guide/filing-feedback)。
 
 如需 WMR 的其他疑難排解協助，請向我們的客戶支援小組 [提出支援要求](https://support.microsoft.com//supportforbusiness/productselection?sapId=96bfb202-bc79-741b-bf7a-774d8b767782) 。
 

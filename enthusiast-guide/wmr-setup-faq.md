@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2da2524ae09014b990ea4f0301a21d4aac963eb9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 87eb22e600ca2426bdd3fec1fd428c11d9c45313
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008628"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581813"
 ---
 # <a name="windows-mixed-reality-setup-faq"></a>Windows Mixed Reality 設定常見問題集
 
@@ -28,7 +28,7 @@ ms.locfileid: "98008628"
 * 請重新開機您的電腦，然後再試一次。 您可能需要重複數次，或執行 Windows Update 疑難排解員以清除暫止的更新。
 
 > [!NOTE]
-> * 如果您是在企業管理的網路上，請洽詢您的系統管理員。 他們可能需要啟用 Windows Mixed Reality。 尋找 IT 專業人員指示嗎？ 請參閱 **[這篇文章](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality)**。
+> * 如果您是在企業管理的網路上，請洽詢您的系統管理員。 他們可能需要啟用 Windows Mixed Reality。 尋找 IT 專業人員指示嗎？ 請參閱 **[這篇文章](/windows/application-management/manage-windows-mixed-reality)**。
 > * 如果您的 Wi-Fi 網路連線設定為 [計量付費]，請將其變更為 [未計費]。 **[深入了解](https://support.microsoft.com/help/4028458)**
 
 ## <a name="i-get-a-message-that-says-something-went-wrong-and-we-couldnt-start-windows-mixed-reality"></a>我收到一則訊息，指出「發生問題，無法開始 Windows Mixed Reality」。
@@ -158,7 +158,7 @@ Windows Mixed Reality 入口網站的畫面底部有一個 [ **播放** ] 按鈕
     3. 如果您的移動控制器已與您的電腦配對，請選取 [ **> 裝置] > 藍牙 & 其他裝置** 來將這些裝置的設定。 選取每個控制器，然後選取 [移除裝置]。 如果您的控制器與耳機配對，您可以略過此步驟。
     4. 將您的耳機插回電腦以重新安裝 Windows Mixed Reality。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

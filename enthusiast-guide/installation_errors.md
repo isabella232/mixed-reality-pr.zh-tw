@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，協助，支援，安裝
 appliesto:
 - Windows 10
-ms.openlocfilehash: 56ead28a5809eadef1797507168b68cbaf79953e
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 056caca0b7e562007178929d4a59c2faeaece450
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726059"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581664"
 ---
 # <a name="installation-errors"></a>安裝錯誤
 
@@ -31,7 +31,7 @@ Windows Mixed Reality 需要至少支援 WDDM 2.2 的圖形配接器驅動程式
 
 ## <a name="before-we-can-set-up-windows-mixed-reality-your-administrator-will-need-to-enable-it-for-your-organization-learn-more"></a>「在我們可以設定 Windows Mixed Reality 之前，您的系統管理員必須為您的組織啟用它。 深入瞭解」
 
-您可能是在企業管理的網路上，而且您的組織使用 Windows Server Update Services (WSUS) 。 這些和其他可能會封鎖下載的原則。 請洽詢貴組織的 IT 部門或系統管理員，以 [啟用 Windows Mixed Reality](https://docs.microsoft.com/windows/application-management/manage-windows-mixed-reality#enable)。
+您可能是在企業管理的網路上，而且您的組織使用 Windows Server Update Services (WSUS) 。 這些和其他可能會封鎖下載的原則。 請洽詢貴組織的 IT 部門或系統管理員，以 [啟用 Windows Mixed Reality](/windows/application-management/manage-windows-mixed-reality#enable)。
 
 ## <a name="we-couldnt-download-the-mixed-reality-software-or-hang-tight-while-we-do-some-downloading"></a>「我們無法下載 mixed reality 軟體」或「在我們進行一些下載時無阻礙」
 

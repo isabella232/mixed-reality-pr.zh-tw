@@ -3,12 +3,12 @@ title: 使用 WebVR 搭配 Windows Mixed Reality
 description: 瞭解 WebVR 的基本概念、如何搭配 Windows Mixed Reality 耳機的 Microsoft Edge 以及常見的疑難排解問題。
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，WebVR，Edge，Microsoft Edge，網頁流覽
-ms.openlocfilehash: 0b0d07383b43feaa11fb9bfac2b071d8d4d80b19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 89d9e51bf4adb63e7836968a0112849f7ac403d0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009438"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581757"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>使用 WebVR 搭配 Windows Mixed Reality
 
@@ -35,7 +35,7 @@ WebVR 是一種技術，可讓網站作者將 VR 功能新增至網頁。 頁面
 
 ## <a name="where-can-i-find-the-webvr-developer-documentation"></a>我可以在哪裡找到 WebVR 開發人員檔
 
-開發人員檔位於此處： [WebVR 開發人員檔](https://docs.microsoft.com/microsoft-edge/webvr/)。
+開發人員檔位於此處： [WebVR 開發人員檔](/microsoft-edge/webvr/)。
 
 ## <a name="ive-found-a-website-with-webvr-that-doesnt-work-in-windows-mixed-reality-what-do-i-do"></a>我發現有 WebVR 的網站在 Windows Mixed Reality 中無法運作。 我該怎麼辦
 
@@ -61,7 +61,7 @@ Microsoft Edge > 網站問題
 5. 當您第一次嘗試在特定網域上輸入 VR 時，瀏覽器會要求同意使用沉浸式視圖，請選取 [是]： ![第一次嘗試在特定網域上輸入 VR 時所顯示的同意 UI](images/1053px-Webvr-consent-ui.png)
 6. 您的耳機應該會開始顯示 WebVR 內容。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [針對 > WebVR 進行疑難排解](webvr-questions.md)
 * [如何進入您的第一個 WebVR 體驗](using-games-and-apps-in-windows-mixed-reality.md#how-to-get-into-your-first-webvr-experience)

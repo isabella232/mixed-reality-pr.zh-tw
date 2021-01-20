@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 沉浸式觀賞、2D 視圖、平板、應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: a9cd03212fcbb0d7b3d9e4d2b3108e4d09972455
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b6a16fc3b1ac45d74874f37ce44a36d3e144fee8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009628"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580106"
 ---
 # <a name="app-views"></a>應用程式檢視
 
@@ -24,7 +24,7 @@ Windows 應用程式可包含兩種視圖： **沉浸式視圖** 和 **2d 視圖
 ![當您在沉浸式觀賞時，可在世界各地放置全像移動。](images/designoverview-940px.jpg)<br>
 *當您在沉浸式觀賞時，可以在世界各地放置全像*
 
-在 [HoloLens](https://docs.microsoft.com/hololens/hololens1-hardware)上，您的應用程式會在使用者的真實世界周圍呈現其全像影像。 在 [Windows Mixed Reality 的沉浸式耳機](../discover/immersive-headset-hardware-details.md)上，使用者看不到真實的世界，因此您的應用程式必須呈現使用者會看到的所有內容。
+在 [HoloLens](/hololens/hololens1-hardware)上，您的應用程式會在使用者的真實世界周圍呈現其全像影像。 在 [Windows Mixed Reality 的沉浸式耳機](../discover/immersive-headset-hardware-details.md)上，使用者看不到真實的世界，因此您的應用程式必須呈現使用者會看到的所有內容。
 
 [Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md) (包括您在環境中所放置的 [開始] 功能表和全像投影，) 不會在沉浸式觀賞的情況下呈現。 在 HoloLens 上，Cortana 會轉送在顯示沉浸式視圖時所發生的任何系統通知，讓使用者可以用語音輸入回應。
 
@@ -43,7 +43,7 @@ Windows 應用程式可包含兩種視圖： **沉浸式視圖** 和 **2d 視圖
 
 應用程式可以在桌上型電腦監視器和桌上型電腦上的連接耳機中，擁有2D 的視圖。 例如，您可以使用主要2D 視圖來流覽桌面監視器上的邊緣，以找出360度的影片。 當您播放該影片時，Edge 將會在耳機內啟動次要的沉浸式觀賞，以顯示沉浸式影片內容。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [應用程式模型](app-model.md)
 * [更新混合實境的 2D UWP 應用程式](../develop/porting-apps/building-2d-apps.md)

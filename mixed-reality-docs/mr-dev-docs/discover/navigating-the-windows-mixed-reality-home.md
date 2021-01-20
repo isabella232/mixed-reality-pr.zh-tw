@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: shell、os、platform、cliff 房子、房屋、home、環境、開始、開始功能表、首頁功能表、釘選、應用程式、啟動應用程式、放置應用程式、傳送、移動、流覽、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: 06e28c9c1f0f6244f7f502382d61d4740b5fb71f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6b021aff20363f0e3efc1c2675df41ee5819aef6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009688"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582633"
 ---
 # <a name="navigating-the-windows-mixed-reality-home"></a>瀏覽 Windows Mixed Reality 住家
 
@@ -28,7 +28,7 @@ ms.locfileid: "98009688"
 * Cortana (在沉浸式耳機上，一個開始磚;在 HoloLens 上，于 [開始) ] 頂端
 * 釘選的應用程式
 * 所有應用程式按鈕 (加號) 
-* [混合現實 capture](../mixed-reality-capture.md)的相片和影片按鈕
+* [混合現實 capture](/hololens/holographic-photos-and-videos)的相片和影片按鈕
 
 藉由選取加號或減號按鈕，在釘選的應用程式和所有應用程式的視圖之間切換。 若要在 HoloLens 上開啟 [開始] 功能表，請使用 bloom 手勢。 在沉浸式耳機上，按下控制器上的 Windows 按鈕。
 
@@ -40,7 +40,7 @@ ms.locfileid: "98009688"
 1. 使用您的 [注視](../design/gaze-and-commit.md) 或控制器將應用程式放在您想要的位置。 它會自動調整大小和位置) 的 (，以符合您放置它的空間。
 2. 使用 (HoloLens) 或 [選取] 按鈕 (沉浸式耳機) 來放置應用程式。 若要取消並取回 [開始] 功能表，請使用 bloom 手勢或 Windows 按鈕。
 
-您可以使用[HOLOGRAPHICSPACE API](https://msdn.microsoft.com/library/windows/apps/windows.graphics.holographic.holographicspace.aspx)修改為桌面、行動裝置或 Xbox 建立的[2d 應用程式](../develop/porting-apps/building-2d-apps.md)，以混合現實的沉浸式應用程式執行。 沉浸式應用程式可讓使用者離開家裡，並獲得沉浸式體驗。 使用者可以使用 bloom 手勢 (HoloLens) 或按下其控制器上的 Windows 按鈕 (沉浸式耳機) ）來退回首頁。
+您可以使用[HOLOGRAPHICSPACE API](/uwp/api/Windows.Graphics.Holographic.HolographicSpace)修改為桌面、行動裝置或 Xbox 建立的[2d 應用程式](../develop/porting-apps/building-2d-apps.md)，以混合現實的沉浸式應用程式執行。 沉浸式應用程式可讓使用者離開家裡，並獲得沉浸式體驗。 使用者可以使用 bloom 手勢 (HoloLens) 或按下其控制器上的 Windows 按鈕 (沉浸式耳機) ）來退回首頁。
 
 您也可以透過應用程式對應用程式 API 或 Cortana 來啟動應用程式。
 
@@ -122,7 +122,7 @@ ms.locfileid: "98009688"
 Windows Mixed Reality 有數個內建應用程式，例如：
 * 取得應用程式和遊戲的 **Microsoft Store**
 * **意見反應中樞** 提交有關系統和系統應用程式的意見反應
-* **設定** 系統設定的設定 ([包括網路](../connecting-to-wi-fi-on-hololens.md) 和系統更新) 
+* **設定** 系統設定的設定 ([包括網路](/hololens/hololens-network) 和系統更新) 
 * **Microsoft Edge** 流覽網站
 * 觀看及分享相片和影片的 **相片**
 * **校正** (hololens 僅) 用來調整目前使用者的 hololens 體驗
@@ -134,10 +134,10 @@ Windows Mixed Reality 有數個內建應用程式，例如：
 * **桌面** (沉浸式耳機) ，可在沉浸式耳機中觀看桌上型電腦監視器
 * **檔案總管** 存取位於您裝置上的檔案和資料夾
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [應用程式檢視](../design/app-views.md)
 * [運動控制器](../design/motion-controllers.md)
 * [硬體配件](hardware-accessories.md)
-* [HoloLens 的環境考量](../environment-considerations-for-hololens.md)
+* [HoloLens 的環境考量](/hololens/hololens-environment-considerations)
 * [實作 3D 應用程式啟動器](../distribute/implementing-3d-app-launchers.md)
 * [建立要在 Windows Mixed Reality 首頁中使用的3D 模型](../distribute/creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)

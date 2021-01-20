@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像攝影遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、資料頻道
-ms.openlocfilehash: 6fd2bbd8ce2dedc3b13674576a23a0484ebe1419
-ms.sourcegitcommit: 99ae85159b7cf75f919021771ebb8299868beea9
+ms.openlocfilehash: a11fe0bb023ae34692015585f6e1689db4330ac7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/11/2020
-ms.locfileid: "97102903"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582612"
 ---
 # <a name="custom-holographic-remoting-data-channels"></a>自訂全像攝影遠端資料通道
 
@@ -118,5 +118,5 @@ m_customDataChannel.Close();
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
-* [全像攝影遠端軟體授權條款](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [全像攝影遠端軟體授權條款](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

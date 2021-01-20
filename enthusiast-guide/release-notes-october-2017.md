@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 版本資訊、版本、windows 10、組建、rs3、os
-ms.openlocfilehash: 83c16a40388960547cfcf7444e1ae630c2f5b7f2
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e3be8edab2aedd18013622c671283b71f95f98d8
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009488"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581445"
 ---
 # <a name="release-notes---october-2017"></a>版本資訊 - 2017 年 10 月
 
-Windows 歡迎畫面 Mixed Reality！ **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** 版引進了新的 [Windows Mixed Reality 沉浸式耳機](https://docs.microsoft.com/windows/mixed-reality/discover/immersive-headset-hardware-details)和 [移動控制器](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)的支援。 您現在可以在連接到 [Windows Mixed Reality 的電腦](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)時，探索新的世界、玩 VR 遊戲，以及體驗沉浸式娛樂功能。
+Windows 歡迎畫面 Mixed Reality！ **[Windows 10 Fall Creators Update](https://blogs.windows.com/windowsexperience/2017/10/17/whats-new-windows-10-fall-creators-update/)** 版引進了新的 [Windows Mixed Reality 沉浸式耳機](/windows/mixed-reality/discover/immersive-headset-hardware-details)和 [移動控制器](/windows/mixed-reality/design/motion-controllers)的支援。 您現在可以在連接到 [Windows Mixed Reality 的電腦](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)時，探索新的世界、玩 VR 遊戲，以及體驗沉浸式娛樂功能。
 
-Windows Mixed Reality 耳機和移動控制器版本是大規模團隊工作的高潮，也是 [Windows Mixed Reality 平臺](https://docs.microsoft.com/windows/mixed-reality/discover/mixed-reality)（包括 [Microsoft HoloLens](https://docs.microsoft.com/windows/mixed-reality/hololens-hardware-details)）向前邁進的一大步。 HoloLens 未收到 Windows 10 Fall Creators Update 的更新，所以在 HoloLens 上工作尚未停止。 我們將會有很多學習和深入解析，可從最近的工作套用到整體 Windows Mixed Reality 上。 事實上，Windows Mixed Reality 沉浸式耳機和移動控制器也是針對 HoloLens 開發的絕佳進入點，因為相同的 Api、工具和概念適用于兩者。
+Windows Mixed Reality 耳機和移動控制器版本是大規模團隊工作的高潮，也是 [Windows Mixed Reality 平臺](/windows/mixed-reality/discover/mixed-reality)（包括 [Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details)）向前邁進的一大步。 HoloLens 未收到 Windows 10 Fall Creators Update 的更新，所以在 HoloLens 上工作尚未停止。 我們將會有很多學習和深入解析，可從最近的工作套用到整體 Windows Mixed Reality 上。 事實上，Windows Mixed Reality 沉浸式耳機和移動控制器也是針對 HoloLens 開發的絕佳進入點，因為相同的 Api、工具和概念適用于兩者。
 
 若要更新為每個裝置的最新版本，請開啟 [ **設定** ] 應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新** ] 按鈕。 在 Windows 10 的電腦上，您也可以使用 [Windows media 建立工具](https://www.microsoft.com/software-download/windows10)手動安裝 Windows 10 Fall Creators Update。
 
@@ -30,16 +30,16 @@ Windows Mixed Reality 耳機和移動控制器版本是大規模團隊工作的�
 
 Windows 10 Fall Creators Update 正式推出 Windows Mixed Reality 耳機和移動控制器的支援，並 Windows 10 世界的第一個空間作業系統。 重點如下：
 * **[各種耳機](https://blogs.windows.com/windowsexperience/2017/10/03/how-to-pre-order-your-windows-mixed-reality-headset/)** -Windows Mixed Reality 可讓合作夥伴提供不同的耳機類型，起價為 $399 美元，與運動控制器配套。
-* **[移動控制器](https://docs.microsoft.com/windows/mixed-reality/design/motion-controllers)** -透過藍牙以無線方式與您的電腦搭配 Windows Mixed Reality 的動作控制器，並提供六個自由度的追蹤、大量的輸入方法和 IMUs。
-* **[簡易設定和可攜性](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/recommended-adapters-for-windows-mixed-reality-capable-pcs)** -在10分鐘內開始設定並開始使用。 沉浸式耳機使用內部追蹤來追蹤您的移動和您的運動控制器，並有六自由的程度。 不需要任何外部攝影機或 lighthouse 標記！
-* **[支援更廣泛的電腦](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines)** -Windows Mixed Reality 將可讓更多人體驗 desktop VR，而不支援從 $499 美元開始的全選整合式圖形卡和電腦。
-* **[Windows Mixed Reality home](https://docs.microsoft.com/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** -世界的第一個空間作業系統提供熟悉的主要環境，可供使用2d 應用程式進行多工處理、啟動 VR 遊戲和應用程式，以及放置裝飾性的全像影像。
+* **[移動控制器](/windows/mixed-reality/design/motion-controllers)** -透過藍牙以無線方式與您的電腦搭配 Windows Mixed Reality 的動作控制器，並提供六個自由度的追蹤、大量的輸入方法和 IMUs。
+* **[簡易設定和可攜性](./recommended-adapters-for-windows-mixed-reality-capable-pcs.md)** -在10分鐘內開始設定並開始使用。 沉浸式耳機使用內部追蹤來追蹤您的移動和您的運動控制器，並有六自由的程度。 不需要任何外部攝影機或 lighthouse 標記！
+* **[支援更廣泛的電腦](./windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)** -Windows Mixed Reality 將可讓更多人體驗 desktop VR，而不支援從 $499 美元開始的全選整合式圖形卡和電腦。
+* **[Windows Mixed Reality home](/windows/mixed-reality/discover/navigating-the-windows-mixed-reality-home)** -世界的第一個空間作業系統提供熟悉的主要環境，可供使用2d 應用程式進行多工處理、啟動 VR 遊戲和應用程式，以及放置裝飾性的全像影像。
 * Microsoft Store 的絕佳的 **[VR 遊戲和應用程式](https://www.microsoft.com/store/collections/MR-All-ImmersiveContent/)**，從 Hulu VR 和 360 video 等沉浸式娛樂，到 SUPERHOT VR 和亞利桑那州的像 Windows Mixed Reality 是 VR 和亞利桑那 Microsoft Store 州
-* **[SteamVR 早期存取](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)** -Windows 10 Fall Creators Update 可讓您使用 Windows Mixed Reality 耳機和控制器來播放 SteamVR 標題，使 VR 標題的最大目錄可供 Windows Mixed Reality 使用者使用。
+* **[SteamVR 早期存取](./using-steamvr-with-windows-mixed-reality.md)** -Windows 10 Fall Creators Update 可讓您使用 Windows Mixed Reality 耳機和控制器來播放 SteamVR 標題，使 VR 標題的最大目錄可供 Windows Mixed Reality 使用者使用。
 
 ## <a name="known-issues"></a>已知問題
 
-我們努力提供絕佳的 Windows Mixed Reality 經驗，但仍在追蹤一些已知問題。 如果您發現其他人，請 [提供意見反應給我們](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)。
+我們努力提供絕佳的 Windows Mixed Reality 經驗，但仍在追蹤一些已知問題。 如果您發現其他人，請 [提供意見反應給我們](/windows/mixed-reality/give-us-feedback)。
 
 ### <a name="desktop-app-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 首頁中的桌面應用程式
 * 剪取工具不適用於桌面應用程式。
@@ -94,8 +94,8 @@ Windows 10 Fall Creators Update 正式推出 Windows Mixed Reality 耳機和移�
 * [版本資訊 - 2016 年 5 月](release-notes-may-2016.md)
 * [版本資訊 - 2016 年 3 月](release-notes-march-2016.md)
 
-## <a name="see-also"></a>請參閱
-* [ (外部連結的沉浸式耳機支援) ](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/troubleshooting-windows-mixed-reality)
-* [HoloLens 的已知問題](https://docs.microsoft.com/windows/mixed-reality/hololens-known-issues)
-* [安裝工具](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools)
-* [提供意見反應](https://docs.microsoft.com/windows/mixed-reality/give-us-feedback)
+## <a name="see-also"></a>另請參閱
+* [ (外部連結的沉浸式耳機支援) ](./troubleshooting-windows-mixed-reality.md)
+* [HoloLens 的已知問題](/windows/mixed-reality/hololens-known-issues)
+* [安裝工具](/windows/mixed-reality/develop/install-the-tools)
+* [提供意見反應](/windows/mixed-reality/give-us-feedback)

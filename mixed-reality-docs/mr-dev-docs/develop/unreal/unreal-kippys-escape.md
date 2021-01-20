@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: df199b6a3215158e15fb1252dd75c58aea5bc2ab
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 7302e6c8d5de866b652ec4741fbef128eca616e0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010038"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580812"
 ---
 # <a name="the-making-of-kippys-escape"></a>製作 Kippy 的 Escape
 
@@ -22,7 +22,7 @@ Kippy 機器人喚醒以找出自己在島上的孤立狀態。 您可以自行�
 > [!IMPORTANT]
 > 如果您是從 GitHub 存放庫建立 Kippy 的 Escape，請確定您使用的是 **Unreal Engine 4.25 或更新版本** 。
 
-Kippy 的 Escape 是一個開放原始碼 [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware) 範例應用程式，使用 Unreal Engine 4 和 [混合現實 UX 工具進行 Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)。 在這篇文章中，我們將逐步引導您完成我們的程式，從第一個原則和視覺化設計，到實施和優化體驗。 您可以在 [Unreal 開發總覽](unreal-development-overview.md)中找到使用 MRTK UX 工具開發混合現實應用程式的詳細資訊。
+Kippy 的 Escape 是一個開放原始碼 [HoloLens 2](/hololens/hololens2-hardware) 範例應用程式，使用 Unreal Engine 4 和 [混合現實 UX 工具進行 Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)。 在這篇文章中，我們將逐步引導您完成我們的程式，從第一個原則和視覺化設計，到實施和優化體驗。 您可以在 [Unreal 開發總覽](unreal-development-overview.md)中找到使用 MRTK UX 工具開發混合現實應用程式的詳細資訊。
 
 ## <a name="first-principles"></a>第一個原則 
 
@@ -115,4 +115,4 @@ Kippy 的 Escape 高度依賴混合現實 UX 工具元件，讓遊戲成為互�
 </tr>
 </table>
 
-特別感謝我們的朋友 [Framestore](https://www.framestore.com/) ，協助我們將 Kippy 的轉換至生命。 從字元開發到資產設計，到遊戲程式設計，在此專案上進行共同作業的 pivotal。  
+特別感謝我們的朋友 [Framestore](https://www.framestore.com/) ，協助我們將 Kippy 的轉換至生命。 從字元開發到資產設計，到遊戲程式設計，在此專案上進行共同作業的 pivotal。

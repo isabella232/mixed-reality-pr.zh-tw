@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: afb559937c2bde06d3c74c1c572aefec50502884
-ms.sourcegitcommit: 9a93c9e9b3b088da942ac4386813ecf263c2e324
+ms.openlocfilehash: 28ca1653019252c749fe5977a06bff4503800c10
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/04/2021
-ms.locfileid: "97865433"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580188"
 ---
 # <a name="contributing-to-the-mixed-reality-enthusiast-guide"></a>參與混合現實愛好者指南
 
@@ -22,9 +22,9 @@ ms.locfileid: "97865433"
 > [!IMPORTANT]
 > 所有發佈至 docs.microsoft.com 的存放庫皆採用 [Microsoft 開放原始碼管理辦法](https://opensource.microsoft.com/codeofconduct/) \(英文\)。 如需詳細資訊，請參閱[管理辦法常見問題集](https://opensource.microsoft.com/codeofconduct/faq/) \(英文\)。如有任何問題或意見，請連絡 [opencode@microsoft.com](mailto:opencode@microsoft.com)。<br>
 >
-> 您在公用存放庫中針對文件和程式碼範例所提交的次要修正或釐清，將受到 [docs.microsoft.com 使用條款](https://docs.microsoft.com/legal/termsofuse)的約束。 如果您不是 Microsoft 的員工，在做出全新或重要的變更時，系統將會在提取要求中產生註解，要求您提交線上版的貢獻授權合約 (CLA)。 您必須先填寫線上表單，我們才會接受您的提取要求。
+> 您在公用存放庫中針對文件和程式碼範例所提交的次要修正或釐清，將受到 [docs.microsoft.com 使用條款](/legal/termsofuse)的約束。 如果您不是 Microsoft 的員工，在做出全新或重要的變更時，系統將會在提取要求中產生註解，要求您提交線上版的貢獻授權合約 (CLA)。 您必須先填寫線上表單，我們才會接受您的提取要求。
 
-## <a name="before-you-start"></a>開始之前
+## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 如果您還沒有帳戶，則必須 [建立一個 GitHub 帳戶](https://github.com/join)。
 
@@ -53,7 +53,7 @@ ms.locfileid: "97865433"
 | 5. 按一下 [預覽變更] 以確認格式如預期般顯示。 | ![預覽變更](images/edit-in-github.png)|
 | 6. 當您完成時，請滾動到頁面底部，然後按一下 [建議檔案變更]，您會看到 [比較變更] 頁面，讓您驗證變更。 然後按一下 [建立提取要求] 按鈕來提交您的變更。 而到這裡您就已經完成了！ | ![提議變更](images/propose.jpg)|
 
-當您透過提取) 要求 (提交變更之後，將會由檔團隊的成員進行審核。 如果接受您的要求，則會將更新發行至 [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide) 。
+當您透過提取) 要求 (提交變更之後，將會由檔團隊的成員進行審核。 如果接受您的要求，則會將更新發行至 [https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide](/windows/mixed-reality/enthusiast-guide) 。
 
 * 僅供內部審核之用，您可以在中看到您的變更 [https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide](https://review.docs.microsoft.com/en-us/windows/mixed-reality/enthusiast-guide/?branch=master) 。
 
@@ -128,7 +128,7 @@ ms.locfileid: "97865433"
 
 ## <a name="working-with-branches"></a>使用分支
 
-[混合現實愛好者指南 GitHub 存放庫](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide)會使用兩個主要的父分支：[主要](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master)，此內容可在[預備網站](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)上以及[即時](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)[網站](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide)上的內容中進行檢查。
+[混合現實愛好者指南 GitHub 存放庫](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide)會使用兩個主要的父分支：[主要](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/master)，此內容可在[預備網站](https://review.docs.microsoft.com/windows/mixed-reality/enthusiast-guide)上以及[即時](https://github.com/MicrosoftDocs/mixedreality-enthusiast-guide/tree/live)[網站](/windows/mixed-reality/enthusiast-guide)上的內容中進行檢查。
 
 參與時，請 (PR) 提交您的提取要求至 **主要** 分支。 此分支可在預備網站上檢視，且應只包含已準備好要即時發佈的投稿。 您也可以使用您自己的唯一分支名稱來建立並提交分支，以供在預備網站中選取和查看。  (**Live** 分支只允許供內容管理員使用。 ) 
 
@@ -138,13 +138,13 @@ ms.locfileid: "97865433"
 
 - [Markdown 基本概念](https://help.github.com/articles/basic-writing-and-formatting-syntax/)
 - [Markdown 的參考海報](images/MarkdownPoster.pdf)
-- [針對 docs.microsoft.com 撰寫 Markdown 的其他資源](https://docs.microsoft.com/contribute/how-to-write-use-markdown)
+- [針對 docs.microsoft.com 撰寫 Markdown 的其他資源](/contribute/how-to-write-use-markdown)
 
 ### <a name="adding-tables"></a>加入資料表
 
 由於 docs.microsoft.com 樣式表的方式，即使您嘗試內嵌 CSS，它們也不會有框線或自訂樣式。 這項作業會在一小段時間內正常運作，但最終平臺會從資料表中去除樣式。 所以事先規劃，讓您的資料表保持簡單明瞭。 [以下是讓 Markdown 資料表更簡單的網站](https://www.tablesgenerator.com/markdown_tables)。
 
-如果您使用 Visual Studio Code， [適用于 Visual Studio Code 的檔 Markdown 延伸](https://docs.microsoft.com/teamblog/docs-extension) 模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code) 以編輯檔。
+如果您使用 Visual Studio Code， [適用于 Visual Studio Code 的檔 Markdown 延伸](/teamblog/docs-extension) 模組也可讓您輕鬆地產生資料表， [ (請參閱下方) ](#using-visual-studio-code) 以編輯檔。
 
 ### <a name="adding-images"></a>新增影像
 
