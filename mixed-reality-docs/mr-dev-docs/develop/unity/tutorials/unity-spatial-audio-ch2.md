@@ -1,95 +1,101 @@
 ---
-title: 空間化按鈕互動音效
-description: 瞭解如何在混合現實應用程式中新增按鈕，以及 spatialize 按鈕互動音效。
+title: 空間音訊教學課程-2。 空間化按鈕互動音效
+description: 將按鈕加入至您的專案，並 spatialize 按鈕互動音效。
 author: kegodin
 ms.author: v-hferrone
 ms.date: 12/01/2019
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、head 相關的傳送函式、回音、Microsoft 空間定位器、prefabs、音量曲線
-ms.openlocfilehash: 1f54ba8cab55ba375a6b1499796761ae02b03a02
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007358"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578479"
 ---
-# <a name="spatializing-button-interaction-sounds"></a><span data-ttu-id="d482f-104">空間化按鈕互動音效</span><span class="sxs-lookup"><span data-stu-id="d482f-104">Spatializing button interaction sounds</span></span>
+# <a name="2-spatializing-button-interaction-sounds"></a><span data-ttu-id="47449-105">2.空間化按鈕互動音效</span><span class="sxs-lookup"><span data-stu-id="47449-105">2. Spatializing button interaction sounds</span></span>
 
-## <a name="objectives"></a><span data-ttu-id="d482f-105">目標</span><span class="sxs-lookup"><span data-stu-id="d482f-105">Objectives</span></span>
+## <a name="overview"></a><span data-ttu-id="47449-106">概觀</span><span class="sxs-lookup"><span data-stu-id="47449-106">Overview</span></span>
 
-<span data-ttu-id="d482f-106">在 HoloLens 2 教學課程的空間音訊模組的第二章中，您將會：</span><span class="sxs-lookup"><span data-stu-id="d482f-106">In this second chapter of the spatial audio module of the HoloLens 2 tutorials, you'll:</span></span>
-* <span data-ttu-id="d482f-107">新增按鈕</span><span class="sxs-lookup"><span data-stu-id="d482f-107">Add a button</span></span>
-* <span data-ttu-id="d482f-108">Spatialize 按鈕的 click 聲</span><span class="sxs-lookup"><span data-stu-id="d482f-108">Spatialize the button click sounds</span></span>
+<span data-ttu-id="47449-107">在本教學課程中，您將學習如何 spatialize 按鈕互動音效，以及瞭解如何使用音訊剪輯來測試 hrtf 按鈕互動。</span><span class="sxs-lookup"><span data-stu-id="47449-107">In this tutorial, you will learn how to spatialize the button interaction sounds and also learn how to use an audio clip to test spatialized button interaction.</span></span>  
 
-## <a name="add-a-button"></a><span data-ttu-id="d482f-109">新增按鈕</span><span class="sxs-lookup"><span data-stu-id="d482f-109">Add a button</span></span>
+## <a name="objectives"></a><span data-ttu-id="47449-108">目標</span><span class="sxs-lookup"><span data-stu-id="47449-108">Objectives</span></span>
 
-<span data-ttu-id="d482f-110">在 [ **專案** ] 窗格中，選取 [ **資產** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"：</span><span class="sxs-lookup"><span data-stu-id="d482f-110">In the **Project** pane, select **Assets** and type "PressableButtonHoloLens2" in the search bar:</span></span>
+* <span data-ttu-id="47449-109">新增並 Spatialize 按鈕的 click 聲</span><span class="sxs-lookup"><span data-stu-id="47449-109">Add and Spatialize the button click sounds</span></span>
 
-![資產中的按鈕預製專案](images/spatial-audio/button-prefab-in-assets.png)
+## <a name="add-a-button"></a><span data-ttu-id="47449-110">新增按鈕</span><span class="sxs-lookup"><span data-stu-id="47449-110">Add a button</span></span>
 
-<span data-ttu-id="d482f-112">按鈕預製專案是以藍色圖示（而非白色圖示）表示的專案。</span><span class="sxs-lookup"><span data-stu-id="d482f-112">The button prefab is the entry represented by a blue icon, rather than a white icon.</span></span> <span data-ttu-id="d482f-113">將名為 **PressableButtonHoloLens2** 的預製專案拖曳到 [ **階層] 窗格** 中。</span><span class="sxs-lookup"><span data-stu-id="d482f-113">Drag the prefab named **PressableButtonHoloLens2** into the **Hierarchy** pane.</span></span> <span data-ttu-id="d482f-114">在新按鈕的 [偵測 **器** ] 窗格中，將 [ **位置** ] 屬性設定為 (0、-0.4、2) ，以便在應用程式啟動時出現在使用者前面。</span><span class="sxs-lookup"><span data-stu-id="d482f-114">In the **Inspector** pane for your new button, set the **Position** property to (0, -0.4, 2) so that it will appear in front of the user when the application starts.</span></span> <span data-ttu-id="d482f-115">按鈕的 **轉換** 元件看起來會像這樣：</span><span class="sxs-lookup"><span data-stu-id="d482f-115">The **Transform** component of the button will look like this:</span></span>
+<span data-ttu-id="47449-111">若要新增按鈕預製專案，請在 [ **專案** ] 視窗中選取 [ **資產** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"。</span><span class="sxs-lookup"><span data-stu-id="47449-111">To add the Button prefab, in the **Project** window, select **Assets** and type "PressableButtonHoloLens2" in the search bar.</span></span>
 
-![按鈕轉換](images/spatial-audio/button-transform.png)
+![資產中的按鈕預製專案](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 
-## <a name="spatialize-button-feedback"></a><span data-ttu-id="d482f-117">Spatialize 按鈕意見反應</span><span class="sxs-lookup"><span data-stu-id="d482f-117">Spatialize button feedback</span></span>
+<span data-ttu-id="47449-113">按鈕預製專案是以藍色圖示表示的專案。</span><span class="sxs-lookup"><span data-stu-id="47449-113">The button prefab is the entry represented by a blue icon.</span></span> <span data-ttu-id="47449-114">按一下 [ **PressableButtonHoloLens2** ] 預製專案，並將其拖曳到階層中。</span><span class="sxs-lookup"><span data-stu-id="47449-114">Click and drag the **PressableButtonHoloLens2** prefab into the Hierarchy.</span></span> <span data-ttu-id="47449-115">在仍選取 **PressableButtonHoloLens2** 物件的情況下，在 [偵測器] 視窗中設定 **轉換** 元件，如下所示：</span><span class="sxs-lookup"><span data-stu-id="47449-115">With the **PressableButtonHoloLens2** object still selected, in the Inspector window, configure the **Transform** component as follows:</span></span>
 
-<span data-ttu-id="d482f-118">在此步驟中，您將 spatialize 按鈕的音訊意見反應。</span><span class="sxs-lookup"><span data-stu-id="d482f-118">In this step, you'll spatialize the audio feedback for the button.</span></span> <span data-ttu-id="d482f-119">如需相關的設計建議，請參閱 [空間音效設計](../../../design/spatial-sound-design.md)。</span><span class="sxs-lookup"><span data-stu-id="d482f-119">For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md).</span></span> 
+* <span data-ttu-id="47449-116">**Position**： X = 0，Y =-0.4，Z = 2</span><span class="sxs-lookup"><span data-stu-id="47449-116">**Position**: X = 0, Y = -0.4, Z = 2</span></span>
+* <span data-ttu-id="47449-117">**旋轉**：X = 0、Y = 0、Z = 0</span><span class="sxs-lookup"><span data-stu-id="47449-117">**Rotation**: X = 0, Y = 0, Z = 0</span></span>
+* <span data-ttu-id="47449-118">**縮放**：X = 1、Y = 1、Z = 1</span><span class="sxs-lookup"><span data-stu-id="47449-118">**Scale**: X = 1, Y = 1, Z = 1</span></span>
 
-<span data-ttu-id="d482f-120">您可以在 [**音訊混音** 器] 窗格中，為音訊 **來源** 元件定義音訊播放的目的地，稱為 **混音器群組**。</span><span class="sxs-lookup"><span data-stu-id="d482f-120">The **Audio Mixer** pane is where you'll define destinations, called **Mixer Groups**, for audio playback from **Audio Source** components.</span></span> 
-* <span data-ttu-id="d482f-121">使用 **視窗-> 音訊 > 音訊混音** 器，從功能表列開啟 [**音訊混音** 器] 窗格</span><span class="sxs-lookup"><span data-stu-id="d482f-121">Open the **Audio Mixer** pane from the menu bar using **Window -> Audio -> Audio Mixer**</span></span>
-* <span data-ttu-id="d482f-122">按一下 [ **Mixers**] 旁邊的 [+]，以建立 **混音** 器。</span><span class="sxs-lookup"><span data-stu-id="d482f-122">Create a **Mixer** by clicking the '+' next to **Mixers**.</span></span> <span data-ttu-id="d482f-123">新的混音器將包含稱為 **Master** 的預設 **群組**。</span><span class="sxs-lookup"><span data-stu-id="d482f-123">The new mixer will include a default **Group** called **Master**.</span></span>
+![按鈕轉換](images/spatial-audio/spatial-audio-02-section1-step1-2.png)
 
-<span data-ttu-id="d482f-124">您的 **混音** 器窗格現在看起來像這樣：</span><span class="sxs-lookup"><span data-stu-id="d482f-124">Your **Mixer** pane will now look like this:</span></span>
+<span data-ttu-id="47449-120">若要將焦點放在場景中的物件上，您可以按兩下 **PressableButtonHoloLens2** 物件，然後再稍微放大：</span><span class="sxs-lookup"><span data-stu-id="47449-120">To focus in on the objects in the scene, you can double-click on the **PressableButtonHoloLens2** object, and then zoom slightly in again:</span></span>
 
-![具有第一個混音器的混音器面板](images/spatial-audio/mixer-panel-with-first-mixer.png)
+## <a name="spatialize-button-feedback"></a><span data-ttu-id="47449-121">Spatialize 按鈕意見反應</span><span class="sxs-lookup"><span data-stu-id="47449-121">Spatialize button feedback</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="d482f-126">在 [第5章](unity-spatial-audio-ch5.md)啟用 [回條] 之前，混音器的音量計量不會顯示透過 Microsoft 空間定位器播放之音效的活動</span><span class="sxs-lookup"><span data-stu-id="d482f-126">Until reverb is enabled in [Chapter 5](unity-spatial-audio-ch5.md), the mixer's volume meter doesn't show activity for sounds played through the Microsoft Spatializer</span></span>
+<span data-ttu-id="47449-122">在此步驟中，您將 spatialize 按鈕的音訊意見反應。</span><span class="sxs-lookup"><span data-stu-id="47449-122">In this step, you'll spatialize the audio feedback for the button.</span></span> <span data-ttu-id="47449-123">如需相關的設計建議，請參閱 [空間音效設計](../../../design/spatial-sound-design.md)。</span><span class="sxs-lookup"><span data-stu-id="47449-123">For related design suggestions, see [spatial sound design](../../../design/spatial-sound-design.md).</span></span>
 
-<span data-ttu-id="d482f-127">按一下 [**階層] 窗格中的 [** **PressableButtonHoloLens2** ]。</span><span class="sxs-lookup"><span data-stu-id="d482f-127">Click the **PressableButtonHoloLens2** in the **Hierarchy** pane.</span></span> <span data-ttu-id="d482f-128">在 [偵測 **器** ] 窗格中：</span><span class="sxs-lookup"><span data-stu-id="d482f-128">In the **Inspector** pane:</span></span>
-1. <span data-ttu-id="d482f-129">尋找 **音訊來源** 元件</span><span class="sxs-lookup"><span data-stu-id="d482f-129">Find the **Audio Source** component</span></span>
-2. <span data-ttu-id="d482f-130">針對 [ **輸出** ] 屬性，按一下選取器並選擇混音器</span><span class="sxs-lookup"><span data-stu-id="d482f-130">For the **Output** property, click the selector and choose your mixer</span></span>
-3. <span data-ttu-id="d482f-131">核取 [ **Spatialize** ] 核取方塊</span><span class="sxs-lookup"><span data-stu-id="d482f-131">Check the **Spatialize** checkbox</span></span>
-4. <span data-ttu-id="d482f-132">將 **空間 Blend** 滑杆移至 3d (1) 。</span><span class="sxs-lookup"><span data-stu-id="d482f-132">Move the **Spatial Blend** slider to 3D (1).</span></span>
+<span data-ttu-id="47449-124">在 [**音訊混音** 器] 視窗中，您將為音訊 **來源** 元件的音訊播放定義稱為 **混音器群組** 的目的地。</span><span class="sxs-lookup"><span data-stu-id="47449-124">In the **Audio Mixer** window you will define destinations called **Mixer Groups**, for audio playback from **Audio Source** components.</span></span>
 
-> [!NOTE]
-> <span data-ttu-id="d482f-133">在2019之前的 Unity 版本中，[Spatialize] 核取方塊位於 **音訊來源** 的 [偵測 **器**] 窗格底部。</span><span class="sxs-lookup"><span data-stu-id="d482f-133">In versions of Unity prior to 2019, the 'Spatialize' checkbox is at the bottom of the **Inspector** pane for the **Audio Source**.</span></span>
+<span data-ttu-id="47449-125">若要開啟 [**音訊混音** 器] 視窗，請在 Unity 功能表中，選取 [**視窗**  >  **音訊**  >  **音訊混音** 器： ![ 開啟音訊混音器] 視窗](images/spatial-audio/spatial-audio-02-section2-step1-1.png)</span><span class="sxs-lookup"><span data-stu-id="47449-125">To open the **Audio Mixer** window, In the Unity menu, select **Window** > **Audio** > **Audio Mixer**: ![Open Audio Mixer Window](images/spatial-audio/spatial-audio-02-section2-step1-1.png)</span></span>
 
-<span data-ttu-id="d482f-134">這些變更之後， **PressableButtonHoloLens2** 的 **音訊來源** 元件看起來會像這樣：</span><span class="sxs-lookup"><span data-stu-id="d482f-134">After these changes, the **Audio Source** component of your **PressableButtonHoloLens2** will look like this:</span></span>
+ <span data-ttu-id="47449-126">按一下 [ **Mixers** ] 旁邊的 [+]，並輸入適當的混音名稱（例如 _空間音訊混音_ 器）來建立 **混音** 器。</span><span class="sxs-lookup"><span data-stu-id="47449-126">Create a **Mixer** by clicking the '+' next to **Mixers** and enter a suitable name to the Mixer for example, _Spatial Audio Mixer_.</span></span> <span data-ttu-id="47449-127">新的混音器將包含稱為 **Master** 的預設 **群組**。</span><span class="sxs-lookup"><span data-stu-id="47449-127">The new mixer will include a default **Group** called **Master**.</span></span>
 
-![按鈕音訊來源](images/spatial-audio/button-audio-source.png)
+![具有第一個混音器的混音器面板](images/spatial-audio/spatial-audio-02-section2-step1-2.png)
 
 > [!NOTE]
-> <span data-ttu-id="d482f-136">如果您在未核取 [ **Spatialize** ] 核取方塊的情況下，將 **空間 Blend** 移至 1 (3d) ，Unity 將會使用其移動流覽空間定位器，而不是使用 hrtf 的 **Microsoft 空間定位器**。</span><span class="sxs-lookup"><span data-stu-id="d482f-136">If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.</span></span>
+> <span data-ttu-id="47449-129">在第5章啟用回條之後 [：使用回音將距離新增至空間音訊](unity-spatial-audio-ch5.md)，混音器的音量計量不會顯示透過 Microsoft 空間定位器播放之音效的活動</span><span class="sxs-lookup"><span data-stu-id="47449-129">Until reverb is enabled in [5th Chapter: Using reverb to add distance to spatial audio](unity-spatial-audio-ch5.md), the mixer's volume meter doesn't show activity for sounds played through the Microsoft Spatializer</span></span>
 
-## <a name="adjust-the-volume-curve"></a><span data-ttu-id="d482f-137">調整音量曲線</span><span class="sxs-lookup"><span data-stu-id="d482f-137">Adjust the Volume curve</span></span>
+<span data-ttu-id="47449-130">在 [階層] 視窗中，選取 **PressableButtonHoloLens2** ，然後在 [偵測器] 視窗中尋找 **音訊來源** 元件，並設定音訊來源元件，如下所示：</span><span class="sxs-lookup"><span data-stu-id="47449-130">In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window find the **Audio Source** component and Configure the Audio Source component as follows:</span></span>
 
-<span data-ttu-id="d482f-138">根據預設，Unity 會在從接聽程式更遠的情況下 attenuate hrtf 音效。</span><span class="sxs-lookup"><span data-stu-id="d482f-138">By default, Unity will attenuate spatialized sounds as they get farther from the listener.</span></span> <span data-ttu-id="d482f-139">當此衰減套用至互動回饋音效時，介面可能會變得更難使用。</span><span class="sxs-lookup"><span data-stu-id="d482f-139">When this attenuation is applied to interaction feedback sounds, the interface can become more difficult to use.</span></span>
+1. <span data-ttu-id="47449-131">針對 [ **輸出** ] 屬性，按一下選取器，然後選擇您建立的 **混音** 器。</span><span class="sxs-lookup"><span data-stu-id="47449-131">For the **Output** property, click the selector and choose the **Mixer** that you created.</span></span>
+2. <span data-ttu-id="47449-132">核取 [ **Spatialize** ] 核取方塊。</span><span class="sxs-lookup"><span data-stu-id="47449-132">Check the **Spatialize** checkbox.</span></span>
+3. <span data-ttu-id="47449-133">將 **空間 Blend** 滑杆移至 3d (1) 。</span><span class="sxs-lookup"><span data-stu-id="47449-133">Move the **Spatial Blend** slider to 3D (1).</span></span>
 
-<span data-ttu-id="d482f-140">若要停用此衰減，請調整 **音量** 曲線。</span><span class="sxs-lookup"><span data-stu-id="d482f-140">To disable this attenuation, adjust the **Volume** curve.</span></span> <span data-ttu-id="d482f-141">在 **PressableButtonHoloLens2** 的 [偵測 **器**] 窗格的 [**音訊來源**] 元件中，有一個稱為 **3d 音效設定** 的區段。</span><span class="sxs-lookup"><span data-stu-id="d482f-141">In the **Audio Source** component of the **Inspector** pane for the **PressableButtonHoloLens2**, there is a section called **3D Sound Settings**.</span></span> <span data-ttu-id="d482f-142">在該區段中：</span><span class="sxs-lookup"><span data-stu-id="d482f-142">In that section:</span></span>
-1. <span data-ttu-id="d482f-143">將 **Volume Rolloff** 屬性設定為線性</span><span class="sxs-lookup"><span data-stu-id="d482f-143">Set the **Volume Rolloff** property to Linear</span></span>
-2. <span data-ttu-id="d482f-144">拖曳 **音量** 曲線上的端點 (紅色曲線) 從 y 軸上的 ' 0 ' 到 ' 1 '</span><span class="sxs-lookup"><span data-stu-id="d482f-144">Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'</span></span>
-3. <span data-ttu-id="d482f-145">若要將 **音量** 曲線的形狀調整為平面，請將白色曲線圖形控制項平行地拖曳至 X 軸</span><span class="sxs-lookup"><span data-stu-id="d482f-145">To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis</span></span>
+![按鈕音訊來源](images/spatial-audio/spatial-audio-02-section2-step1-3.png)
 
-<span data-ttu-id="d482f-146">這些變更之後， **PressableButtonHoloLens2** **音訊來源** 屬性的 [ **3d 音效設定**] 區段看起來會像這樣：</span><span class="sxs-lookup"><span data-stu-id="d482f-146">After these changes, the **3D Sound Settings** section of the **Audio Source** properties of the **PressableButtonHoloLens2** will look like this:</span></span>
+> [!NOTE]
+> <span data-ttu-id="47449-135">如果您在未核取 [ **Spatialize** ] 核取方塊的情況下，將 **空間 Blend** 移至 1 (3d) ，Unity 將會使用其移動流覽空間定位器，而不是使用 hrtf 的 **Microsoft 空間定位器**。</span><span class="sxs-lookup"><span data-stu-id="47449-135">If you move **Spatial Blend** to 1 (3D) without checking the **Spatialize** checkbox, Unity will use its panning spatializer, instead of the **Microsoft Spatializer** with HRTFs.</span></span>
 
-![按鈕3D 音效設定](images/spatial-audio/button-3d-sound-settings.png)
+## <a name="adjust-the-volume-curve"></a><span data-ttu-id="47449-136">調整音量曲線</span><span class="sxs-lookup"><span data-stu-id="47449-136">Adjust the Volume curve</span></span>
 
-## <a name="testing-the-spatialize-audio"></a><span data-ttu-id="d482f-148">測試 spatialize 音訊</span><span class="sxs-lookup"><span data-stu-id="d482f-148">Testing the spatialize audio</span></span>
+<span data-ttu-id="47449-137">根據預設，Unity 會在從接聽程式更遠的情況下 attenuate hrtf 音效。</span><span class="sxs-lookup"><span data-stu-id="47449-137">By default, Unity will attenuate spatialized sounds as they get farther from the listener.</span></span> <span data-ttu-id="47449-138">當此衰減套用至互動回饋音效時，介面可能會變得更難使用。</span><span class="sxs-lookup"><span data-stu-id="47449-138">When this attenuation is applied to interaction feedback sounds, the interface can become more difficult to use.</span></span>
 
-<span data-ttu-id="d482f-149">您可以隨意測試新的 hrtf 按鈕互動音效：</span><span class="sxs-lookup"><span data-stu-id="d482f-149">Feel free to test out the new spatialized button interaction sounds:</span></span>
+<span data-ttu-id="47449-139">若要停用此衰減，您需要調整 **音訊來源** 元件中的 **音量** 曲線。</span><span class="sxs-lookup"><span data-stu-id="47449-139">To disable this attenuation, you need to adjust the **Volume** curve In the **Audio Source** component.</span></span>
 
-* <span data-ttu-id="d482f-150">在 Unity 編輯器中輸入遊戲模式，最好是場景中的迴圈音訊範例</span><span class="sxs-lookup"><span data-stu-id="d482f-150">Enter game mode in the Unity editor, ideally with a looped audio sample in the scene</span></span>
-* <span data-ttu-id="d482f-151">從左至右移動物件與音訊來源，並比較是否已啟用空間音訊。</span><span class="sxs-lookup"><span data-stu-id="d482f-151">Move the object with the audio source from left to right and compare with and without spatial audio enabled.</span></span> <span data-ttu-id="d482f-152">您可以透過下列方式變更要測試的音訊來源設定：</span><span class="sxs-lookup"><span data-stu-id="d482f-152">You can change the Audio Source settings for testing by:</span></span>
-    * <span data-ttu-id="d482f-153">將空間 Blend 屬性移至 0-1 (2D 非 hrtf 和 3D hrtf 音效) </span><span class="sxs-lookup"><span data-stu-id="d482f-153">Moving the Spatial Blend property between 0 - 1 (2D non-spatialized and 3D spatialized sound)</span></span>
-    * <span data-ttu-id="d482f-154">檢查和取消選取 Spatialize 屬性</span><span class="sxs-lookup"><span data-stu-id="d482f-154">Checking and unchecking the Spatialize property</span></span>
+<span data-ttu-id="47449-140">在 [階層] 視窗中，選取 [ **PressableButtonHoloLens2** ]，然後在 [偵測器] 視窗中流覽至 [**音訊來源**  >  **3d 音效] 設定**，並設定如下：</span><span class="sxs-lookup"><span data-stu-id="47449-140">In the Hierarchy window, select the **PressableButtonHoloLens2** then in the Inspector window navigate to  **Audio Source** > **3D Sound Settings** and Configure as follows:</span></span>
 
-## <a name="next-steps"></a><span data-ttu-id="d482f-155">後續步驟</span><span class="sxs-lookup"><span data-stu-id="d482f-155">Next steps</span></span>
+1. <span data-ttu-id="47449-141">將 **Volume Rolloff** 屬性設定為線性 Rolloff</span><span class="sxs-lookup"><span data-stu-id="47449-141">Set the **Volume Rolloff** property to Linear Rolloff</span></span>
+2. <span data-ttu-id="47449-142">拖曳 **音量** 曲線上的端點 (紅色曲線) 從 y 軸上的 ' 0 ' 到 ' 1 '</span><span class="sxs-lookup"><span data-stu-id="47449-142">Drag the endpoint on the **Volume** curve (the red curve) from '0' on the y axis up to '1'</span></span>
+3. <span data-ttu-id="47449-143">若要將 **音量** 曲線的形狀調整為平面，請將白色曲線圖形控制項平行地拖曳至 X 軸</span><span class="sxs-lookup"><span data-stu-id="47449-143">To adjust the shape of the **Volume** curve to be flat, drag the white curve shape control to be parallel to the X axis</span></span>
 
-<span data-ttu-id="d482f-156">在 HoloLens 2 或 Unity 編輯器中試用您的應用程式。</span><span class="sxs-lookup"><span data-stu-id="d482f-156">Try out your app on a HoloLens 2, or in the Unity editor.</span></span> <span data-ttu-id="d482f-157">在應用程式中，您可以觸控按鈕，聽聽 hrtf 按鈕的互動音效。</span><span class="sxs-lookup"><span data-stu-id="d482f-157">In the app, you can touch the button and hear the spatialized button interaction sounds.</span></span>
+![按鈕3D 音效設定](images/spatial-audio/spatial-audio-02-section3-step1-1.png)
 
-<span data-ttu-id="d482f-158">在 Unity 編輯器中進行測試時，請按下空格鍵並以滾輪滾動，以啟動手動模擬。</span><span class="sxs-lookup"><span data-stu-id="d482f-158">When testing in the Unity editor, press the space bar and scroll with the scroll wheel to activate hand simulation.</span></span> <span data-ttu-id="d482f-159">如需詳細資訊，請參閱 [MRTK 檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。</span><span class="sxs-lookup"><span data-stu-id="d482f-159">For more info, see the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene).</span></span>
+## <a name="testing-the-spatialize-audio"></a><span data-ttu-id="47449-145">測試 spatialize 音訊</span><span class="sxs-lookup"><span data-stu-id="47449-145">Testing the spatialize audio</span></span>
+
+<span data-ttu-id="47449-146">若要在 unity 編輯器中測試 spatialize 音訊，您必須在 [**音訊來源** 元件] 中新增音訊剪輯，並在 **PressableButtonHoloLens2** 物件上簽入 **迴圈** 選項。</span><span class="sxs-lookup"><span data-stu-id="47449-146">To test the spatialize audio in the unity editor you have to add an audio clip in the **Audio Source** component with **Loop** option checked in on **PressableButtonHoloLens2** object.</span></span>
+
+<span data-ttu-id="47449-147">在 [播放] 模式中，將 **PressableButtonHoloLens2** 物件從左至右移動到右邊，並與您的工作站上未啟用空間音訊進行比較。</span><span class="sxs-lookup"><span data-stu-id="47449-147">In the play mode move the **PressableButtonHoloLens2** object from left to right and compare with and without spatial audio enabled on your workstation.</span></span> <span data-ttu-id="47449-148">您也可以變更用於測試的音訊來源設定：</span><span class="sxs-lookup"><span data-stu-id="47449-148">You can also change the Audio Source settings for testing by:</span></span>
+
+* <span data-ttu-id="47449-149">將 **空間 Blend** 屬性移至 0-1 (2d 非 Hrtf 和 3d hrtf 音效) </span><span class="sxs-lookup"><span data-stu-id="47449-149">Moving the **Spatial Blend** property between 0 - 1 (2D non-spatialized and 3D spatialized sound)</span></span>
+* <span data-ttu-id="47449-150">檢查和取消選取 **Spatialize** 屬性</span><span class="sxs-lookup"><span data-stu-id="47449-150">Checking and unchecking the **Spatialize** property</span></span>
+
+<span data-ttu-id="47449-151">試用 HoloLens 2 上的應用程式。</span><span class="sxs-lookup"><span data-stu-id="47449-151">Try out the app on HoloLens 2.</span></span> <span data-ttu-id="47449-152">在應用程式中，您可以按一下按鈕，聽聽 hrtf 按鈕的互動音效。</span><span class="sxs-lookup"><span data-stu-id="47449-152">In the app, you can click the button and hear the spatialized button interaction sounds.</span></span>
+
+> [!TIP]
+> <span data-ttu-id="47449-153">如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提醒，您可以參閱[對您的 HoloLens 2 建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。</span><span class="sxs-lookup"><span data-stu-id="47449-153">For a reminder on how to build and deploy your Unity project to HoloLens 2, you can refer to the [Building your app to your HoloLens 2](mr-learning-base-02.md#building-your-application-to-your-hololens-2) instructions.</span></span>
+
+## <a name="congratulations"></a><span data-ttu-id="47449-154">恭喜！</span><span class="sxs-lookup"><span data-stu-id="47449-154">Congratulations</span></span>
+
+<span data-ttu-id="47449-155">在本教學課程中，您已學會 spatialize 按鈕互動音效，並使用音訊剪輯來測試 hrtf 按鈕互動。</span><span class="sxs-lookup"><span data-stu-id="47449-155">In this tutorial you have learnt to spatialize the button interaction sounds and to use an audio clip to test spatialized button interaction.</span></span> <span data-ttu-id="47449-156">在下一個教學課程中，您將瞭解如何從影片來源 spatialize 音訊。</span><span class="sxs-lookup"><span data-stu-id="47449-156">In the next tutorial you will learn how to spatialize audio from an video source.</span></span>
 
 > [!div class="nextstepaction"]
-> [<span data-ttu-id="d482f-160">第3章</span><span class="sxs-lookup"><span data-stu-id="d482f-160">Chapter 3</span></span>](unity-spatial-audio-ch3.md)
-
+> [<span data-ttu-id="47449-157">下一個教學課程： 3. 從影片 Spatializing 音訊</span><span class="sxs-lookup"><span data-stu-id="47449-157">Next Tutorial: 3. Spatializing audio from a video</span></span>](unity-spatial-audio-ch3.md)
