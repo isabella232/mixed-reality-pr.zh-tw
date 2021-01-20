@@ -44,7 +44,7 @@
 ### [沉浸式頭戴裝置健全狀況、安全和舒適度](wmr-health-safety-comfort.md)
 ### [混合實境軟體概觀和發行歷程記錄](mixed-reality-software.md)
 ### [內外追蹤的運作方式](tracking-system.md)
-### [Unity 中的 HP Reverb G2 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
-### [Unreal 中的 HP Reverb G2 控制器](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
+### [Unity 中的 HP Reverb G2 控制器](/windows/mixed-reality/develop/unity/unity-reverb-g2-controllers)
+### [Unreal 中的 HP Reverb G2 控制器](/windows/mixed-reality/develop/unreal/unreal-reverb-g2-controllers)
 
 ## [參與指南](contributing.md)
