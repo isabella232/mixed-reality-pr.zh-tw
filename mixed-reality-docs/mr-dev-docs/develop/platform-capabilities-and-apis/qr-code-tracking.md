@@ -3,19 +3,19 @@ title: QR 代碼追蹤
 description: 瞭解如何在 HoloLens 2 上偵測 QR 代碼、新增網路攝影機功能，以及管理混合現實應用程式中的座標系統。
 author: dorreneb
 ms.author: dobrown
-ms.date: 05/15/2019
+ms.date: 01/21/2021
 ms.topic: article
 keywords: vr、lbe、以位置為基礎的娛樂、vr arcade、arcade、沉浸式、qr、qr 代碼、hololens2
-ms.openlocfilehash: 08ed651deaab0c230142f45b93858f41ee300323
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 0f53b8def268b2d501c6efe3c3e40ea18f9323e0
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583147"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98635430"
 ---
 # <a name="qr-code-tracking"></a>QR 代碼追蹤
 
-HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每個代碼的真實世界位置建立座標系統。
+HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每個代碼的真實世界位置建立座標系統。 啟用裝置的網路攝影機之後，您就能夠辨識 Unreal 或 Unity 專案最新版本中的 QR 代碼。 在進入生產環境之前，建議您遵循我們在本文結尾的 [最佳作法](#best-practices-for-qr-code-detection) 。
 
 ## <a name="device-support"></a>裝置支援
 
