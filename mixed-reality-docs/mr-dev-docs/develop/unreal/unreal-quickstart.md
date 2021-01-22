@@ -7,12 +7,12 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal、Unreal Engine 4、Unreal editor、UE4、HoloLens、HoloLens 2、mixed reality、開發、檔、指南、功能、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移植、升級
-ms.openlocfilehash: cd490c47479ba34bec942667afc8f34292bbb53c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
+ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98584704"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98672735"
 ---
 # <a name="creating-a-hololens-project"></a>建立 HoloLens 專案
 
@@ -29,7 +29,7 @@ ms.locfileid: "98584704"
 
 4. 在 **專案設定** 中，設定 **c + +、可擴充的3d 或2d、行動/平板** 電腦和 **無入門內容**，然後選擇 [儲存位置]，再按一下 [**建立專案**]。
 
-> 您使用的是 c + + 而非藍圖專案，以建立 UX 工具外掛程式，您稍後將會進行設定。
+> [!NOTE] 您使用的是 c + +，而不是藍圖專案，以便稍後準備使用 OpenXR 外掛程式。 本快速入門會使用 Unreal 引擎隨附的預設 OpenXR 外掛程式。 不過，建議您下載並使用官方 Microsoft OpenXR 外掛程式。 這需要專案是 c + + 專案。
 
 ![醒目提示專案、效能、目標平臺和入門內容選項的 [專案設定] 視窗](images/unreal-quickstart-img-03.png)
 

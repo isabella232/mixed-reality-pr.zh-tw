@@ -256,8 +256,14 @@
   items:
     - name: Unreal 開發概觀
       href: unreal/unreal-development-overview.md
+    - name: MRTK 簡介
+      href: unreal/unreal-mrtk-introduction.md
     - name: 在 Unreal 中升級專案
       href: unreal/unreal-porting.md
+    - name: 快速入門
+      items:
+        - name: 建立 HoloLens 專案
+          href: unreal/unreal-quickstart.md
     - name: 教學課程
       items:
         - name: 使用 MRTK UX 工具建置國際象棋應用程式
@@ -290,7 +296,19 @@
           href: unreal/unreal-azure-spatial-anchors.md
         - name: 語音輸入
           href: unreal/unreal-voice-input.md
-    - name: 進階功能
+    - name: 最佳作法
+      items:
+        - name: 一般最佳作法
+          href: unreal/unreal-best-practices.md
+        - name: Unreal 的效能建議
+          href: unreal/performance-recommendations-for-unreal.md
+        - name: Unreal 中的材質建議
+          href: unreal/unreal-materials.md
+        - name: 使用 Unreal Insights 進行剖析
+          href: unreal/unreal-insights.md
+        - name: Unreal 中的編輯器延伸模組
+          href: unreal/unreal-editor-extensions.md
+    - name: 平台功能和 API
       items:
         - name: HoloLens 相片/影片相機
           href: unreal/unreal-hololens-camera.md
@@ -300,6 +318,8 @@
           href: unreal/unreal-umg-keyboard.md
         - name: WinRT
           href: unreal/unreal-winrt.md
+        - name: Unreal 中的串流
+          href: unreal/unreal-streaming.md
     - name: 沉浸式 VR
       items:
         - name: HP Reverb G2 控制器
@@ -308,20 +328,12 @@
       items:
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
-    - name: 部署與效能
+    - name: 部署與發佈
       items:
         - name: 部署到裝置
           href: unreal/unreal-deploying.md
         - name: 發佈至 Microsoft Store
           href: unreal/unreal-publishing-to-store.md
-        - name: 效能建議
-          href: unreal/performance-recommendations-for-unreal.md
-        - name: 材質建議
-          href: unreal/unreal-materials.md
-        - name: 使用 Unreal Insights 進行剖析
-          href: unreal/unreal-insights.md
-        - name: 串流
-          href: unreal/unreal-streaming.md
 - name: Web
   items:
     - name: Web 開發概觀
@@ -387,7 +399,7 @@
         - name: 混合實境中的共用體驗
           href: platform-capabilities-and-apis/shared-experiences-in-mixed-reality.md
         - name: Azure Spatial Anchors
-          href: 'https://docs.microsoft.com/azure/spatial-anchors/'
+          href: /azure/spatial-anchors/
         - name: 觀眾檢視
           href: platform-capabilities-and-apis/spectator-view.md
         - name: WebRTC
@@ -423,9 +435,9 @@
         - name: 版本歷程記錄
           href: platform-capabilities-and-apis/holographic-remoting-version-history.md
         - name: 全像攝影遠端軟體授權條款
-          href: 'https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms'
+          href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: HoloLens 的全像攝影遠端處理 (第 1 代)
-          href: 'https://docs.microsoft.com'
+          href: null
         - name: 新增全像攝影遠端處理
           href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: 應用程式品質與測試
