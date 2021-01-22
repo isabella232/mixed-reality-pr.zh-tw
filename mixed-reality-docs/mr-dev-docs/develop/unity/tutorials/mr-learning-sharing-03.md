@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 8db3c4b7ed65e657ba433110921d3b287323e3d1
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669470"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699051"
 ---
 # <a name="3-connecting-multiple-users"></a>3.連線多個使用者
 
@@ -63,13 +63,13 @@ ms.locfileid: "98669470"
 
 在 [偵測器] 視窗中，使用 [新增元件] 按鈕，將 **Photon View (指令碼)** 元件新增至 PhotonUser 物件，並進行下列設定：
 
-* 針對 [觀察到的元件] 欄位，請指派 **Generic Net Sync (指令碼)** 元件
+* 確定已將 **一般 Net Sync (腳本)** 元件指派給觀察到的 **元件** 欄位
 
 ![已新增和設定 Photon View 元件的 Unity](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
 
 ### <a name="2-create-the-avatar"></a>2.建立虛擬人偶
 
-在 [專案] 視窗中，瀏覽至 [資產]  >  [MRTK]  >  [SDK]  >  [StandardAssets]  >  [材質] 資料夾，以找出 MRTK 材質。
+在 [專案] 視窗中，流覽至 [**資產**]  >  **MRTK**  >  **StandardAssets**  >  **材質**] 資料夾，以找出 MRTK 的材質。
 
 然後在 [階層] 視窗中，以滑鼠右鍵按一下 [PhotonUser] 物件，然後選取 [3D 物件]  >  [球體]，將球體物件建立為 PhotonUser 物件的子系，並依照下列方式進行設定：
 

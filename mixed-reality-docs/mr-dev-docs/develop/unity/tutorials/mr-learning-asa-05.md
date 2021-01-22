@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, android, ios, MRTK, 混合實境工具組, UWP, Azure 空間錨點, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 62481a0203eac873adfdb2a5dae8e08aaa16ffbe
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 741c000de0ab2feb3dcbff33e2a0b0acc70838e8
+ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582081"
+ms.lasthandoff: 01/22/2021
+ms.locfileid: "98699241"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 
@@ -28,7 +28,7 @@ ms.locfileid: "98582081"
 在本節中，您將升級及安裝下列內建套件：
 
 * AR Foundation 3.1.3
-* XR 舊版 Input Helpers 2.1.4
+* XR 舊版輸入協助程式2.1。6
 * 適用於 Android 的 ARCore XR 外掛程式 3.1.3 支援
 * 適用於 iOS 的 ARKit XR 外掛程式 3.1.3 支援
 
@@ -73,6 +73,10 @@ ms.locfileid: "98582081"
 > [!NOTE]
 > AR Session Origin (指令碼) 元件會在您新增 AR Reference Point Manager (指令碼) 元件時自動加入，因為這是 AR Reference Point Manager (指令碼) 元件的必要項目。
 
+
+
+藉由叫用功能表項目來更新 MRTK UnityAR 腳本定義：**混合現實工具** 組  >  **公用程式**  >  **UnityAR** > 更新腳本定義
+
 ## <a name="building-your-application-to-your-android-device"></a>在您的 Android 裝置上建置應用程式
 
 在本節中，您將了解如何設定您的專案，以在 Android 裝置中建置及部署該專案。
@@ -93,6 +97,10 @@ ms.locfileid: "98582081"
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [其他設定] 區段，選取 [Vulkan]，然後按一下 **"-"** 來將其移除：
 
 ![已選取 Vulcan 的 Unity [其他設定]](images/mr-learning-asa/asa-05-section3-step1-3.png)
+
+在 Unity 功能表中，選取 [**編輯**  >  **專案設定 ...**  > ]。**播放機** > **XR 設定** 時，請確定您是在 **Android** 平臺中，並勾選 [**支援虛擬實境**] 核取方塊，然後按一下 + 圖示，然後選取 [無]：
+
+![Unity [MRTK 專案設定程式] 視窗 Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
 
 關閉 [玩家設定] 視窗，然後再次開啟 [建置設定] 視窗。
 
