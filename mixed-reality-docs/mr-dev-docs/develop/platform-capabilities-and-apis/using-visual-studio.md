@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, 混合實境, 偵錯, 部署
-ms.openlocfilehash: 20bda2cd247f18680d3f9fe95284e238a32e1140
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
-ms.translationtype: HT
+ms.openlocfilehash: c4ffe3a426ad82c324efef20639cf836f16a7f63
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97529971"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583609"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>使用 Visual Studio 來部署和偵錯
 
@@ -129,7 +129,7 @@ ms.locfileid: "97529971"
 
 ## <a name="graphics-debugger-for-hololens-1st-gen"></a>HoloLens (第 1 代) 的圖形偵錯工具
 
-撰寫和最佳化全像攝影應用程式時，Visual Studio 圖形診斷工具很有幫助。 如需完整詳細資料，請參閱 [MSDN 上的 Visual Studio 圖形診斷](https://msdn.microsoft.com/library/hh315751.aspx)。
+撰寫和最佳化全像攝影應用程式時，Visual Studio 圖形診斷工具很有幫助。 如需完整詳細資料，請參閱 [MSDN 上的 Visual Studio 圖形診斷](/previous-versions/visualstudio/visual-studio-2015/debugger/visual-studio-graphics-diagnostics)。
 
 **啟動圖形偵錯工具**
 1. 遵循上述指示，以裝置或模擬器為目標
@@ -138,7 +138,7 @@ ms.locfileid: "97529971"
 
 ## <a name="profiling"></a>程式碼剖析
 
-Visual Studio 程式碼剖析工具可讓您分析應用程式的效能和資源使用。 包括將 CPU、記憶體、圖形和網路使用最佳化的工具。 如需完整詳細資料，請參閱 [MSDN 上的執行診斷工具而不進行偵錯](https://msdn.microsoft.com/library/dn957936.aspx)。
+Visual Studio 程式碼剖析工具可讓您分析應用程式的效能和資源使用。 包括將 CPU、記憶體、圖形和網路使用最佳化的工具。 如需完整詳細資料，請參閱 [MSDN 上的執行診斷工具而不進行偵錯](/previous-versions/visualstudio/visual-studio-2015/profiling/profiling-tools)。
 
 **使用 HoloLens 啟動程式碼剖析工具**
 1. 遵循上述指示，以裝置或模擬器為目標
@@ -175,5 +175,5 @@ Visual Studio 程式碼剖析工具可讓您分析應用程式的效能和資源
 ## <a name="see-also"></a>另請參閱
 * [安裝工具](../install-the-tools.md)
 * [使用 HoloLens 模擬器](using-the-hololens-emulator.md)
-* [部署和偵錯通用 Windows 平台 (UWP) app](https://msdn.microsoft.com/library/windows/apps/xaml/mt613243.aspx)
-* [啟用您的裝置以進行開發](https://docs.microsoft.com/windows/uwp/get-started/enable-your-device-for-development)
+* [部署和偵錯通用 Windows 平台 (UWP) app](/windows/uwp/debug-test-perf/deploying-and-debugging-uwp-apps)
+* [啟用您的裝置以進行開發](/windows/uwp/get-started/enable-your-device-for-development)

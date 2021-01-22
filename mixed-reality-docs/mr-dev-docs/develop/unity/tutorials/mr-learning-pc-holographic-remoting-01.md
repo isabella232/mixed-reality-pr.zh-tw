@@ -7,12 +7,12 @@ ms.date: 07/29/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 551c6427d9659dd7f5bad8558c777e918456b4d7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007918"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581966"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -46,7 +46,7 @@ ms.locfileid: "98007918"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
+為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 
@@ -56,7 +56,7 @@ ms.locfileid: "98007918"
 
 4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
 
-5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
 
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
 
@@ -67,7 +67,7 @@ ms.locfileid: "98007918"
 下載並 **匯入** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)。
 
 >[!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
 
 匯入教學課程資產之後，您的 [專案] 視窗看起來應該會像這樣：
 
@@ -191,7 +191,7 @@ ms.locfileid: "98007918"
 
 遵循相同的程序，並且將個別的工具提示物件指派給其相同的 **MarsCuriosityRover** 組件 **While Looking At Target ()** 和 **On Look Away ()** 事件。
 
-若要啟用眼球追蹤，請遵循這些[指導方針](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations)。
+若要啟用眼球追蹤，請遵循這些[指導方針](/windows/mixed-reality/mrlearning-base-ch5#5-enable-simulated-eye-tracking-for-in-editor-simulations)。
 
 ## <a name="congratulations"></a>恭喜！
 

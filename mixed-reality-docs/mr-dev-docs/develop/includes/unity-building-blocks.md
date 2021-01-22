@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d6d5f40f94f490901d95d70583da38bf393b2599
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
-ms.translationtype: HT
+ms.openlocfilehash: 8ca6c6b4eea1d49f98e7a04b091a4a08cb859ff3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98195316"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582987"
 ---
 # <a name="available-in-mrtk"></a>[適用於 MRTK](#tab/mrtk)
 
@@ -15,7 +15,7 @@ ms.locfileid: "98195316"
 | [目光](../unity/gaze-in-unity.md) | 讓使用者藉由注視全像投影而將其定為目標 |
 | [運動控制器](../unity/motion-controllers-in-unity.md) | 將空間動作新增至混合實境應用程式 |
 | [手勢](../unity/gestures-in-unity.md) | 在混合實境體驗中使用手勢作為輸入 |
-| [手部和眼睛追蹤](../unity/hand-eye-in-unit.md) | 將關節手部和眼睛追蹤輸入整合到您的使用者體驗中 |
+| [手部和眼睛追蹤](../unity/hand-eye-in-unity.md) | 將關節手部和眼睛追蹤輸入整合到您的使用者體驗中 |
 | [空間對應](../unity/spatial-mapping-in-unity.md) | 透過虛擬網格重疊對應您的實體空間，以標示環境的界限 |
 | [Text](../unity/text-in-unity.md) | 取得可管理大小且具有效轉譯的清晰、高品質文字 |
 | [語音輸入](../unity/voice-input-in-unity.md) | 擷取使用者說出的關鍵字、片語和指令|
@@ -34,5 +34,3 @@ ms.locfileid: "98195316"
 | [空間音效](../unity/spatial-sound-in-unity.md) | 利用沉浸式 3D 音訊增強您的應用程式 |
 | [Text](../unity/text-in-unity.md) | 取得可管理大小且具有效轉譯的清晰、高品質文字 |
 | [語音輸入](../unity/voice-input-in-unity.md) | 擷取使用者說出的關鍵字、片語和指令|
-
-

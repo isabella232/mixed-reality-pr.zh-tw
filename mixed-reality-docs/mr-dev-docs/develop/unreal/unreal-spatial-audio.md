@@ -7,12 +7,12 @@ ms.date: 06/15/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 空間音訊
-ms.openlocfilehash: 98c10e370cd4ca5e437a4677be6fce3d3aee53a9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: fdb4f401188a813b99884929cd835453dec5aaf0
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009968"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580436"
 ---
 # <a name="spatial-audio-in-unreal"></a>Unreal 中的空間音訊
 
@@ -124,6 +124,6 @@ Windows 桌面版依預設會停用空間音訊。 您可以透過下列方式�
 
 
 ## <a name="see-also"></a>另請參閱
-* [空間音效](https://docs.microsoft.com/windows/mixed-reality/spatial-sound)
-* [空間音效設計](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-design)
-* [MR Spatial 220：空間音效](https://docs.microsoft.com/windows/mixed-reality/holograms-220)
+* [空間音效](/windows/mixed-reality/spatial-sound)
+* [空間音效設計](/windows/mixed-reality/spatial-sound-design)
+* [MR Spatial 220：空間音效](/windows/mixed-reality/holograms-220)

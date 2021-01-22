@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 設計, 舒適度, HoloLens 2, HoloLens (第 1 代), 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 運動
-ms.openlocfilehash: 74ead209beb3396db83e5e446490efe17293b14e
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
-ms.translationtype: HT
+ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847493"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582494"
 ---
 # <a name="comfort"></a>舒適度
 
@@ -78,15 +78,15 @@ IPD 指的是個人眼睛瞳孔或中心之間的距離。 VO 是指對每個眼
 
 #### <a name="hololens-1st-gen"></a>HoloLens (第 1 代)
 
-對於 HoloLens (第 1 代)，IPD 會在裝置[校正](https://docs.microsoft.com/hololens/hololens-calibration)期間進行預估和設定。 對於已設定裝置的新使用者，必須執行校正，或者必須手動設定 IPD。 VO 完全取決於裝置的配戴合適與否。 具體來說，若要將 VO 降到最低，裝置必須戴在使用者的頭部，讓顯示器與使用者眼睛的軸線保持水平。 
+對於 HoloLens (第 1 代)，IPD 會在裝置[校正](/hololens/hololens-calibration)期間進行預估和設定。 對於已設定裝置的新使用者，必須執行校正，或者必須手動設定 IPD。 VO 完全取決於裝置的配戴合適與否。 具體來說，若要將 VO 降到最低，裝置必須戴在使用者的頭部，讓顯示器與使用者眼睛的軸線保持水平。 
 
 #### <a name="hololens-2"></a>HoloLens 2
 
-對於 HoloLens 2，IPD 是在眼睛/裝置[校正](https://docs.microsoft.com/hololens/hololens-calibration)期間進行預估和設定。 對於已設定裝置的新使用者，必須執行校正以確保已正確設定 IPD。 在 HoloLens 2 中，會自動將 VO 納入考量。 
+對於 HoloLens 2，IPD 是在眼睛/裝置[校正](/hololens/hololens-calibration)期間進行預估和設定。 對於已設定裝置的新使用者，必須執行校正以確保已正確設定 IPD。 在 HoloLens 2 中，會自動將 VO 納入考量。 
 
 ### <a name="guidance-for-immersive-devices"></a>沉浸式裝置的指引
 
-Windows Mixed Reality 沉浸式 HMD 沒有 IPD 或 VO 的自動校正。 IPD 可以在軟體中手動設定 (在混合實境入口網站設定底下，請參閱[校正](https://docs.microsoft.com/hololens/hololens-calibration))，或者某些 HMD 具有機械滑杆，可讓使用者將鏡頭的間距調整到舒適的位置 (亦即，大致符合其 IPD)。 
+Windows Mixed Reality 沉浸式 HMD 沒有 IPD 或 VO 的自動校正。 IPD 可以在軟體中手動設定 (在混合實境入口網站設定底下，請參閱[校正](/hololens/hololens-calibration))，或者某些 HMD 具有機械滑杆，可讓使用者將鏡頭的間距調整到舒適的位置 (亦即，大致符合其 IPD)。 
 
 ## <a name="rendering-rates"></a>轉譯速率
 
@@ -177,4 +177,4 @@ Windows Mixed Reality 沉浸式 HMD 沒有 IPD 或 VO 的自動校正。 IPD 可
 * [全像投影穩定性](../develop/platform-capabilities-and-apis/hologram-stability.md)
 * [本能互動](interaction-fundamentals.md)
 * [全像攝影框架](holographic-frame.md)
-* [校正](https://docs.microsoft.com/hololens/hololens-calibration)
+* [校正](/hololens/hololens-calibration)

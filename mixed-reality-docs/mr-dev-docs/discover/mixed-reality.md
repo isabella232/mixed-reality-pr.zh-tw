@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: 混合實境, 全像攝影, AR, VR, MR, XR, 擴增實境, 虛擬實境, 說明, 案例研究, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境
 ms.localizationpriority: high
-ms.openlocfilehash: 7f06909b12137598649d113697651277751bcb22
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
-ms.translationtype: HT
+ms.openlocfilehash: 2eac20b85ceeb9413dfc0b6820cceda2ddf335c5
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757696"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583012"
 ---
 # <a name="what-is-mixed-reality"></a>什麼是混合實境？
 
@@ -34,7 +34,7 @@ ms.locfileid: "97757696"
 
 過去數十年來，眾人持續探索人類與電腦輸入之間的關聯性，因而造就了所謂的 *人機互動* (或簡稱 HCI) 的專業領域。 人類輸入會透過各種不同的方式進行，包括鍵盤、滑鼠、觸控、筆跡、語音，甚至是 Kinect 的框架追蹤。
 
-在感應器和處理能力方面的提升，逐漸使環境中的電腦輸入形成新的區域。 電腦與環境之間的互動是環境理解或 *感知*，而正因如此，Windows 中顯示環境資訊的 API 名稱即稱為[認知 API](https://docs.microsoft.com/uwp/api/Windows.Perception)。 環境輸入會擷取諸多事物，像是使用者所處的位置 (例如[頭部追蹤](../design/coordinate-systems.md))、表面和界限 (例如[空間對應](../design/spatial-mapping.md)和[場景理解](../design/scene-understanding.md))、環境光源、環境音效、物件辨識和位置。
+在感應器和處理能力方面的提升，逐漸使環境中的電腦輸入形成新的區域。 電腦與環境之間的互動是環境理解或 *感知*，而正因如此，Windows 中顯示環境資訊的 API 名稱即稱為 [認知 API](/uwp/api/Windows.Perception)。 環境輸入會擷取諸多事物，像是使用者所處的位置 (例如[頭部追蹤](../design/coordinate-systems.md))、表面和界限 (例如[空間對應](../design/spatial-mapping.md)和[場景理解](../design/scene-understanding.md))、環境光源、環境音效、物件辨識和位置。
 
 <br>
 
@@ -117,5 +117,3 @@ ms.locfileid: "97757696"
 
 > [!div class="nextstepaction"]
 > [什麼是全像投影？](hologram.md)
-
-

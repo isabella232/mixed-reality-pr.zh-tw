@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 53d22260603c4e52096eccf1d7af6a3b0732124e
-ms.sourcegitcommit: 672a7a145cfc656273af4ea34f99583eb9fa849c
-ms.translationtype: HT
+ms.openlocfilehash: e79b14c19a452b5b78c6f8cf7ea24bd65bfa0eaa
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98225273"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605299"
 ---
 # <a name="426"></a>[4.26](#tab/426) 
 
@@ -197,7 +197,7 @@ void ACamCapture::Tick(float DeltaTime)
 然後，Unreal 會處理來自 MRC 的要求，以從 PV 相機的視角呈現。
 
 > [!NOTE]
-> 只有在觸發了[混合實境擷取](../../../mixed-reality-capture.md)時，才會要求應用程式從相片/影片相機的視角呈現。
+> 只有在觸發了[混合實境擷取](/hololens/holographic-photos-and-videos)時，才會要求應用程式從相片/影片相機的視角呈現。
 
 ## <a name="using-the-pv-camera"></a>使用 PV 相機
 
@@ -224,4 +224,3 @@ void ACamCapture::Tick(float DeltaTime)
 5. 確定材質有一個參數符合 **SetTextureParameterValue** 中繫結至色彩項目的名稱。 如果沒有參數，相機影像就無法正確顯示。
 
 ![相機紋理](../images/unreal-camera-material.PNG)
-

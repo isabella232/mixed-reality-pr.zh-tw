@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 應用程式工作階段
 ms.localizationpriority: high
-ms.openlocfilehash: abe0c8bc70469826e25f7016a3cc1ba971c1fcc1
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008358"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582055"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.儲存、擷取和共用 Azure Spatial Anchors
 
@@ -58,7 +58,7 @@ ms.locfileid: "98008358"
 8. 尋找 Azure 錨點 (將 Rover Explorer 置於步驟 3 的位置)
 
 > [!NOTE]
-> 若要完全重新啟動應用程式，在結束沉浸式應用程式檢視之後，您必須先關閉混合實境首頁中的應用程式視窗，然後再從 [開始] 功能表重新啟動應用程式。 如需其他詳細資料，您可以參閱[在 HoloLens 上使用應用程式](https://docs.microsoft.com/hololens/holographic-home#using-apps-on-hololens)一文。
+> 若要完全重新啟動應用程式，在結束沉浸式應用程式檢視之後，您必須先關閉混合實境首頁中的應用程式視窗，然後再從 [開始] 功能表重新啟動應用程式。 如需其他詳細資料，您可以參閱[在 HoloLens 上使用應用程式](/hololens/holographic-home#using-apps-on-hololens)一文。
 
 ## <a name="sharing-azure-spatial-anchors-between-devices"></a>在裝置之間共用 Azure Spatial Anchors
 

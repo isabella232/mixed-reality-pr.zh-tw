@@ -7,12 +7,12 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 觀眾檢視, iPhone, iOS, iPad, OpenCV, 相機, ARKit, HoloLens, 混合實境, MixedRealityToolkit, 示範, 錄製
-ms.openlocfilehash: 1f61d2094ec2762ab22576d2eac85ed6bf81d5c7
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: aa85b54283b260447c36072b74031554e1aa1939
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008608"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583113"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens 和 HoloLens 2 的觀眾檢視
 
@@ -60,6 +60,6 @@ ms.locfileid: "98008608"
 | 執行階段安裝持續時間               |         立即          |                     緩慢                    |
 ## <a name="see-also"></a>另請參閱
 
-* [混合實境擷取](../../mixed-reality-capture.md) 
+* [混合實境擷取](/hololens/holographic-photos-and-videos) 
 * [適用於開發人員的混合實境擷取](mixed-reality-capture-for-developers.md)
 * [混合實境中的共用體驗](shared-experiences-in-mixed-reality.md)

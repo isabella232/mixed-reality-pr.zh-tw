@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 自訂視覺, azure 認知服務, azure 雲端服務, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: bd99b2ca8f41c276db747dc7fc75328c31807512
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: aa3ad219ab2cd45b14d06881757ec776d3e098f3
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008208"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581932"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.整合 Azure 自訂視覺
 
@@ -28,13 +28,13 @@ ms.locfileid: "98008208"
 
 **Azure 自訂視覺** 是 **認知服務** 系列中的一部分，可用來訓練影像分類器。 影像分類器是一種 AI 服務，會使用訓練的模型來套用相符的標記。 我們的應用程式會使用此分類功能來偵測「追蹤物件」。
 
-深入了解 [Azure 自訂視覺](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/home)。
+深入了解 [Azure 自訂視覺](/azure/cognitive-services/custom-vision-service/home)。
 
 ## <a name="preparing-azure-custom-vision"></a>準備 Azure 自訂視覺
 
 開始之前，您必須建立自訂視覺專案，而最快的方式是使用入口網站。
 
-在＜上傳和標記影像＞區段之前，請遵循此[快速入門教學課程](https://docs.microsoft.com/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images)來設定帳戶和專案。
+在＜上傳和標記影像＞區段之前，請遵循此[快速入門教學課程](/azure/cognitive-services/custom-vision-service/getting-started-build-a-classifier#choose-training-images)來設定帳戶和專案。
 
 > [!WARNING]
 > 若要訓練模型，您必須至少有 2 個標記，且每個標記應有 5 個影像。 若要使用此應用程式，您應至少建立一個包含 5 個影像的標記，如此之後的訓練程序才不會失敗。

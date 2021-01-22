@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: c5b7683574378565c71e95bc6205be3dbf92fcaf
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
-ms.translationtype: HT
+ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226437"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582984"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
@@ -85,7 +85,7 @@ ms.locfileid: "98226437"
 
 如果您有想要移植的現有應用程式，您接下來即應參考下列文章：
 
-* [HoloToolkit/MRTK 至 MRTK v2](mrtk-porting-guide.md)
+* [HoloToolkit/MRTK 至 MRTK v2](../porting-apps/porting-hl1-hl2.md)
 * [沈浸式應用程式的移植指南](../porting-apps/porting-guides.md)
 * [輸入移植指南](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 

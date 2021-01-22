@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c74a6c0c22439376a84ecb8254b945295c8988a2
-ms.sourcegitcommit: b13c517df19179ca281362a1f006914289c58ad4
-ms.translationtype: HT
+ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98052735"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98605286"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,8 +17,8 @@ ms.locfileid: "98052735"
 使用 Unity 建置混合實境應用程式時，您有數個硬體和模擬器選項。 雖然我們的開發人員文件著重於 HoloLens 裝置，但您會在適用的情況下找到裝置支援章節，其中包含沉浸式頭戴裝置部署的詳細資料。
 
 **擴增實境裝置**
-* [HoloLens (第 1 代)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (第 1 代)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **沉浸式 VR 頭戴裝置**
 * HP Reverb 和 Reverb G2
@@ -48,7 +48,7 @@ ms.locfileid: "98052735"
 
 ## <a name="examples"></a>範例
 
-我們有數個開放原始碼[範例應用程式](../unity/samples.md)可供您下載和試用，以熟悉 Unity 中的混合實境最終產品。 您也可使用 MRTK 範例場景來試用特定功能：
+我們有數個開放原始碼[範例應用程式](../features-and-samples.md)可供您下載和試用，以熟悉 Unity 中的混合實境最終產品。 您也可使用 MRTK 範例場景來試用特定功能：
 * [Unity 的手部互動範例場景 (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) - HandInteractionExamples.unity 的範例場景包含各種類型的互動和 UI 控制項，其強調以關節連接的手部輸入。
 
 * [Unity 的眼球追蹤範例 (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 本頁面說明如何以我們提供的 MRTK 眼球追蹤範例為本，快速開始使用眼球追蹤。
@@ -67,8 +67,8 @@ ms.locfileid: "98052735"
 使用 Unreal Engine 建置混合實境應用程式時，您有數個硬體、模擬器和串流選項。 雖然我們的開發人員文件著重于 HoloLens 裝置，但您可以將 Unreal 專案封裝成 x64 桌面應用程式並直接在沉浸式頭戴裝置上執行。
 
 **擴增實境裝置**
-* [HoloLens (第 1 代)](https://docs.microsoft.com/hololens/hololens1-hardware)
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens (第 1 代)](/hololens/hololens1-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **沉浸式 VR 頭戴裝置**
 * HP Reverb 和 Reverb G2
@@ -84,7 +84,8 @@ ms.locfileid: "98052735"
 
 |  工具/SDK  |  說明  |
 | --- | --- |
-| [適用於 Unreal 的混合實境工具組](https://github.com/microsoft/MixedRealityToolkit-Unreal) | 適用於 Unreal 的混合實境工具組 (MRTK-Unreal) 是一組元件，形式為外掛程式、範例和文件，其設計目的是加速使用 Unreal Engine 的混合實境應用程式開發。 |
+| [適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX 工具是要發行的第一個外掛程式，目前只有 HoloLens 2 才支援。 外掛程式包含 C++ 程式碼、藍圖，以及用於輸入模擬、手部互動、表面磁性的常見 UX 功能的範例資產。 |
+| [適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | 圖形工具是一種 UE 遊戲外掛程式，其中包含程式碼、藍圖和範例資產，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。 |
 
 ## <a name="cloud-services"></a>雲端服務
 
@@ -119,7 +120,7 @@ WebXR 裝置 API 是一種開放的規格，可讓您在任何平台上您的瀏
 透過 OpenXR 開發建置混合實境應用程式時，您有數個硬體、模擬器和串流選項。 
 
 **擴增實境裝置**
-* [HoloLens 2](https://docs.microsoft.com/hololens/hololens2-hardware)
+* [HoloLens 2](/hololens/hololens2-hardware)
 
 **沉浸式 VR 頭戴裝置**
 * HP Reverb 和 Reverb G2

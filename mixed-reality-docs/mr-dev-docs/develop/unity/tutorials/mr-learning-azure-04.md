@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, Azure 空間錨點, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 50e5bccf09e03ebda8057dbb3ca9d83fc01694bd
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 75c3f98c2f40f03240906716d9b942a157994130
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008168"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581890"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.整合 Azure Spatial Anchors
 
@@ -28,12 +28,12 @@ ms.locfileid: "98008168"
 
  **Azure Spatial Anchors** 是 Azure 雲端服務系列中的一部分，可用來儲存錨點位置。 您可以根據雲端的「錨點識別碼」來擷取已儲存的錨點位置。 此錨點位置可以由多平台裝置共用及存取，例如 HoloLens、iOS 和 Android 裝置。
 
-深入了解 [Azure Spatial Anchors](https://docs.microsoft.com/azure/spatial-anchors/overview)。
+深入了解 [Azure Spatial Anchors](/azure/spatial-anchors/overview)。
 
 ## <a name="preparing-azure-spatial-anchors"></a>準備 Azure Spatial Anchors
 
 開始之前，您必須在 Azure 入口網站中建立空間錨點資源。
-了解如何建立[空間錨點資源](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)。
+了解如何建立[空間錨點資源](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)。
 
 ## <a name="preparing-the-scene"></a>準備場景
 

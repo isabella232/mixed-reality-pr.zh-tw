@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: a31d398621c581460e49ed81d23c446e60bc530f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: c5fc1d4dad554cdfed6b8fac5fe5a5207bbd834b
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008508"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669472"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -27,13 +27,13 @@ ms.locfileid: "98008508"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureSpatialAnchors
 
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：

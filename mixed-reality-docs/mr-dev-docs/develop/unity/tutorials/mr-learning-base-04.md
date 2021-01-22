@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器, 網格物件集合
 ms.localizationpriority: high
-ms.openlocfilehash: e09047e4f75697722f76301630c275f126b3cbda
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
-ms.translationtype: HT
+ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613252"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579207"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4.將物件置放在場景中
 
@@ -143,4 +143,5 @@ ms.locfileid: "97613252"
 
 在本教學課程中，您已了解如何將物件放置在場景中與使用者相對的位置，並使用 MRTK 的網格物件集合功能來組織集合中的物件。
 
-[下一個教學課程：5.使用解析器建立動態內容](mr-learning-base-05.md)
+> [!div class="nextstepaction"]
+>[下一個教學課程：5.使用解析器建立動態內容](mr-learning-base-05.md)

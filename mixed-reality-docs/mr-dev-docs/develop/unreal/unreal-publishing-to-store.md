@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 文件, 指南, 功能, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 發佈, 散發, Microsoft Store
-ms.openlocfilehash: 41f081f11cdb9ac2fdf96a81bb761a1321d1776f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 3a975d9c66e64f56919163e9d3aa65a3126d6379
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010018"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583596"
 ---
 # <a name="publishing-to-the-microsoft-store"></a>發佈至 Microsoft Store
 
@@ -111,4 +111,4 @@ if(Target.Platform == UnrealTargetPlatform.Win64)
 
 * [將應用程式提交到 Microsoft Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
 * [Windows 應用程式認證套件](https://developer.microsoft.com/windows/downloads/app-certification-kit)
-* [手動建立應用程式安裝程式檔案](https://docs.microsoft.com/windows/msix/app-installer/how-to-create-appinstaller-file)
+* [手動建立應用程式安裝程式檔案](/windows/msix/app-installer/how-to-create-appinstaller-file)

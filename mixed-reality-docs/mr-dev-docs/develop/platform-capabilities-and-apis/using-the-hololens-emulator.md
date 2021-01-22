@@ -7,12 +7,12 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 模擬器
-ms.openlocfilehash: c26048db18c482312472210c133b20a42fdecae6
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
-ms.translationtype: HT
+ms.openlocfilehash: 6770ce215fb846b7863b77e4b9fe6da7d7b0c98f
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166783"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583482"
 ---
 # <a name="using-the-hololens-emulator"></a>使用 HoloLens 模擬器
 
@@ -43,7 +43,7 @@ HoloLens 模擬器會使用 Hyper-V 與 RemoteFx (第 1 代模擬器) 或 GPU-PV
 * 64 位元 CPU
 * 4 核心 CPU (或有多個 CPU，且總共有 4 個核心)
 * 8 GB RAM 或更多
-* BIOS 必須[支援並啟用](https://blogs.technet.com/b/iftekhar/archive/2010/08/09/enable-hardware-settings-in-bios-to-run-hyper-v.aspx)下列功能：
+* BIOS 必須[支援並啟用](/archive/blogs/iftekhar/enable-hardware-settings-in-bios-to-run-hyper-v)下列功能：
    * 硬體協助虛擬化
    * 第二層位址轉譯 (SLAT)
    * 硬體型資料執行防止 (DEP)
@@ -255,7 +255,7 @@ HoloLens (第 1 代) 上的游標會跟著頭部的移動和旋轉。 在 HoloLe
 * 在解除安裝 HoloLens 2 模擬器時，硬碟映像 (Flash.vhdx) 可能會遺留在硬碟上的 Windows Kits\10\Emulation\HoloLens\<build number> 資料夾中。  您可以放心地刪除此檔案。
 * 硬體圖形加速可能會使全像攝影應用程式在某些搭載 AMD 或 Intel 顯示卡的系統上當機。  在模擬器的 [工具] 視窗中停用硬體圖形加速可解決此問題。
 * 安裝截至 2020 年 7 月為止的最新 Windows 更新之後，HoloLens 模擬器 (第一代) 中的硬體圖形加速功能可能無法再使用。
-硬體圖形加速所需的 RemoteFX 元件已經淘汰，將在未來的 Windows 版本中移除。  若要重新啟用硬體圖形加速，請使用 [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](https://docs.microsoft.com/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter)。  如需其他資訊，請參閱 [Windows 中 RemoteFX 支援淘汰和移除相關文件](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component)。
+硬體圖形加速所需的 RemoteFX 元件已經淘汰，將在未來的 Windows 版本中移除。  若要重新啟用硬體圖形加速，請使用 [Enable-VMRemoteFXPhysicalVideoAdapter PowerShell cmdlet](/powershell/module/hyper-v/enable-vmremotefxphysicalvideoadapter)。  如需其他資訊，請參閱 [Windows 中 RemoteFX 支援淘汰和移除相關文件](https://support.microsoft.com/help/4570006/update-to-disable-and-remove-the-remotefx-vgpu-component)。
 
 ## <a name="troubleshooting"></a>疑難排解
 

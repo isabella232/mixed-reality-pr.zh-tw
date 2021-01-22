@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, qr 代碼, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: d896af683a86a1b27e5d100df744222085574a93
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
-ms.translationtype: HT
+ms.openlocfilehash: d9f23bacf31b310da6d49e74de2153b50e642c7d
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247741"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582661"
 ---
 # <a name="qr-codes-in-unreal"></a>Unreal 中的 QR 代碼
 
@@ -22,7 +22,7 @@ HoloLens 2 可以使用網路攝影機查看世界空間中的 QR 代碼，這�
 - 光源和底圖
 - 大小、距離和角度位置
 
-將 QR 代碼放在您的應用程式時，請特別注意[環境考量](../../environment-considerations-for-hololens.md)。 您可以在其中每一個主題上找到詳細資訊，以及在主要 [QR 代碼追蹤](../platform-capabilities-and-apis/qr-code-tracking.md)文件中找到如何下載所需 NuGet 套件的指示。
+將 QR 代碼放在您的應用程式時，請特別注意[環境考量](/hololens/hololens-environment-considerations)。 您可以在其中每一個主題上找到詳細資訊，以及在主要 [QR 代碼追蹤](../platform-capabilities-and-apis/qr-code-tracking.md)文件中找到如何下載所需 NuGet 套件的指示。
 
 > [!CAUTION]
 > QR 代碼是現成可供 HoloLens 追蹤的唯一影像類型，HoloLens 上不支援 Unreal 的 **UARTrackedImage** 模組。 如果您需要追蹤自訂影像，則可以使用第三方影像辨識程式庫來存取裝置的[網路攝影機](unreal-hololens-camera.md)並處理影像。 
@@ -32,7 +32,7 @@ HoloLens 2 可以使用網路攝影機查看世界空間中的 QR 代碼，這�
 因為 HoloLens 2 需要使用網路攝影機來查看 QR 代碼，所以您必須在專案設定中將其啟用：
 - 開啟 [編輯] > [專案設定]捲動至 [平台] 區段，然後選取 [HoloLens]。
     + 展開 [功能] 區段，並勾選 [網路攝影機]。  
-- 您也必須[新增 ARSessionConfig 資產](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)，來加入 QR 代碼追蹤。
+- 您也必須[新增 ARSessionConfig 資產](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)，來加入 QR 代碼追蹤。
 
 [!INCLUDE[](includes/tabs-qr-codes-1.md)]
 
@@ -62,7 +62,7 @@ QR 代碼會透過 Unreal 的 AR 追蹤幾何系統呈現為追蹤的影像。 �
 1. 首先，追蹤的影像會強制轉型為 **ARTrackedQRCode**，以檢查目前更新的影像是否為 QR 代碼。  
 2. 編碼的資料是從 **QRCode** 變數中擷取的。 您可以從 **GetLocalToWorldTransform** 的位置，以及具有 **GetEstimateSize** 的維度，到達 QR 代碼的左上角。
 
-您也可以在程式碼中[取得 QR 代碼的座標系統](https://docs.microsoft.com/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)。
+您也可以在程式碼中[取得 QR 代碼的座標系統](/windows/mixed-reality/qr-code-tracking#getting-the-coordinate-system-for-a-qr-code)。
 
 ## <a name="finding-the-unique-id"></a>尋找唯一識別碼
 

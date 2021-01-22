@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 959ed164e566f5bee3db203437145fa08ce168d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008018"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98579149"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -141,4 +141,5 @@ ms.locfileid: "98008018"
 
 若要深入了解 MRTK 隨附的這些解算器和其他解算器，您可以參閱 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)的[解算器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)指南。
 
-[下一個教學課程：6.建立使用者介面](mr-learning-base-06.md)
+> [!div class="nextstepaction"]
+>[下一個教學課程：6.建立使用者介面](mr-learning-base-06.md)

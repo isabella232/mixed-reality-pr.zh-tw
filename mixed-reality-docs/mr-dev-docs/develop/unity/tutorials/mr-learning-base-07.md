@@ -7,21 +7,21 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 物件互動, 週框方塊
 ms.localizationpriority: high
-ms.openlocfilehash: c9acb72b2ad961737f5ce3f21c048fc80024b49d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
+ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007928"
+ms.lasthandoff: 01/19/2021
+ms.locfileid: "98578743"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
-在本教學課程中，您將了解如何對 3D 物件進行遠近操作，並限制允許的操作類型。 您也將了解如何在3D 物件周圍加入週框方塊，讓您更輕鬆地控制物件操作。
+在本教學課程中，您將了解如何對 3D 物件進行遠近操作，並限制允許的操作類型。 您也將瞭解如何在3D 物件周圍新增界限控制項，讓您更輕鬆地控制物件操作。
 
 ## <a name="objectives"></a>目標
 
 * 了解如何設定3D 物件，使其能夠進行互動
-* 了解如何將週框方塊加入 3D 物件
+* 瞭解如何將界限控制項新增至3D 物件
 
 ## <a name="manipulating-3d-objects"></a>操作 3D 物件
 
@@ -59,6 +59,9 @@ ms.locfileid: "98007928"
 > 若要選取非連續的多個物件，請按住 CTRL 鍵並使用滑鼠選取任何物件。
 
 > [!NOTE]
+> 當您加入物件操作工具 (腳本時) ，在此情況下，會自動加入條件約束管理員 (腳本) ，因為物件操作工具 (腳本) 相依于它。
+
+> [!NOTE]
 > 基於本教學課程的目的，碰撞器 (Collider) 已新增至 Rover 零件。 若要深入了解碰撞器，您可以造訪 Unity 的<a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">碰撞器 (Collider)</a> 文件。
 
 > [!NOTE]
@@ -73,7 +76,7 @@ ms.locfileid: "98007928"
 > [!NOTE]
 > 此時，您已針對所有 Rover 零件物件和 RoverAssembly 物件啟用物件操作。
 
-在 [專案] 視窗中，瀏覽至 [資產] > [MRTK] > [SDK] > [StandardAssets] > [Audio] 資料夾，以找出音訊剪輯：
+在 [專案] 視窗中，流覽至 [**資產**]  >  **MRTK**  >  **StandardAssets**[  >  **音訊**] 資料夾，以找出音訊剪輯：
 
 ![已選取 [音訊] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -114,24 +117,27 @@ ms.locfileid: "98007928"
 
 ## <a name="adding-bounding-boxes"></a>新增週框方塊
 
-周框方塊藉由提供可用於縮放和旋轉的控點，讓您能夠更輕鬆且更直覺地以單手操作可遠近互動的物件。
+周框方塊可提供可用於縮放和旋轉的控制碼，讓您更輕鬆且更直覺地操作物件。
 
-在此範例中，您會將週框方塊新增至 RoverExplorer 物件，以便您在整個體驗中可以輕鬆地移動、旋轉和縮放。 此外，您將設定「功能表」，讓您可以開啟和關閉週框方塊。
+在此範例中，您會將周框方塊新增至 RoverExplorer 物件，因此可以輕鬆地移動、旋轉和縮放整個體驗。 此外，您將設定功能表，讓您可以開啟和關閉周框方塊。
 
 在 [階層] 視窗中，選取 **RoverExplorer** 物件，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增下列元件：
 
 * **BoundingBox** 元件
 * **Object Manipulator (指令碼)** 元件
 
-然後 **取消核取** 這兩個元件旁的核取方塊，使其預設為 **停用**：
+然後 **取消** 核取所有元件旁的核取方塊，使其預設為 **停用** ：
 
 ![已選取 RoverExplorer 物件並已新增和停用元件的 Unity](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> 週框方塊視覺效果會在執行階段中建立，因此在您進入遊戲模式之前看不到該效果。
+> 周框方塊視覺效果是在執行時間建立的，因此，在您進入遊戲模式之前看不到。
 
 > [!NOTE]
-> BoundingBox 元件將會在執行階段尚自動新增 NearInteractionGrabbable 元件。 因此，我們不需要新增此元件，就能以追蹤的手部抓取框起來的物件。
+>BoundingBox 元件將會在執行階段尚自動新增 NearInteractionGrabbable 元件。 因此，我們不需要新增此元件，就能以追蹤的手部抓取框起來的物件。
+
+> [!NOTE]
+>物件操作工具 (腳本) 會自動加入條件約束管理員 (腳本) 
 
 在 [階層] 視窗中，展開功能表 > **ButtonCollection** 物件以顯示四個按鈕，並將第三個按鈕重新命名為 **BoundingBox_Enable**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
 
@@ -143,7 +149,7 @@ ms.locfileid: "98007928"
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [ObjectManipulator] > [bool Enabled] 以在觸發事件時更新此屬性值
 * 確認 **已核取** 引數核取方塊
-* 將 **圖示** 保留為 [具有週框的立方體] 圖示
+* 將 **圖示** 保留為「具有界限控制項的 cube」圖示
 
 ![已選取 BoundingBox_Enable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-2.png)
 
@@ -157,19 +163,19 @@ ms.locfileid: "98007928"
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [ObjectManipulator] > [bool Enabled] 以在觸發事件時更新此屬性值
 * 確認 **未核取** 引數核取方塊
-* 將 **圖示** 變更為 [具有週框的立方體] 圖示
+* 將 **圖示** 變更為「具有界限控制項的 cube」圖示
 
 ![已選取 BoundingBox_Disable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-3.png)
 
-如果您現在進入遊戲模式，並按一下 [啟用] 按鈕來啟用週框方塊，您就可以使用近或遠的互動來移動、旋轉和縮放週框方塊，然後使用 [停用] 按鈕再次停用週框方塊：
+如果您現在進入遊戲模式，並按一下 [啟用] 按鈕來啟用界限控制項，則可以使用接近或遠的互動來移動、旋轉和縮放周框方塊，然後使用 [停用] 按鈕再次停用周框方塊：
 
 ![正在操作週框方塊的 Unity 播放模式分割檢視](images/mr-learning-base/base-07-section2-step1-4.png)
 
-若要深入了解 Bounding Box 元件和其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[周框方塊](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)指南。
+若要深入瞭解周框方塊元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的周[框](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)方塊指南。
 
 ## <a name="congratulations"></a>恭喜！
 
-在本教學課程中，您已了解如何啟用 3D 物件的遠近操作，以及如何限制允許的操作類型。 您也了解如何在 3D 物件周圍加入週框方塊，讓您更輕鬆地控制物件操作。
+在本教學課程中，您已了解如何啟用 3D 物件的遠近操作，以及如何限制允許的操作類型。 您也已瞭解如何在3D 物件周圍新增周框方塊，讓您更輕鬆地控制物件操作。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：8.使用眼球追蹤](mr-learning-base-08.md)

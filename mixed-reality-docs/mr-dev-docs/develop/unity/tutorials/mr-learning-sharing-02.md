@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 8bf8d440cb47d817514e34c98ac45f34f495c2bb
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: e0bfd56c6900b84c2b8c2bda71e66aa40417bd5a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007298"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581355"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -28,13 +28,13 @@ ms.locfileid: "98007298"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 MultiUserCapabilities
 
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
@@ -48,7 +48,7 @@ ms.locfileid: "98007298"
 
 ![Unity 玩家設定](images/mr-learning-sharing/sharing-02-section2-step1-1.png)
 
-在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)所啟用的 **InternetClient**、**Microphone**、**SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
+在 [發佈設定] 中，向下捲動至 [功能] 區段，然後再次確認您在上述 [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)所啟用的 **InternetClient**、**Microphone**、**SpatialPerception** 和 **GazeInput** 功能是否皆已啟用。
 
 然後啟用下列其他功能：
 
@@ -83,7 +83,7 @@ ms.locfileid: "98007298"
 > 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組 ](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
 
 > [!NOTE]
-> 匯入 MultiUserCapabilities 教學課程資產套件之後，您會在主控台視窗中看到數個 [CS0246](https://docs.microsoft.com/dotnet/csharp/language-reference/compiler-messages/cs0246) 錯誤，其指出缺少類型或命名空間。 這是預期的情況，將在下一節匯入 PUN 資產時解決。
+> 匯入 MultiUserCapabilities 教學課程資產套件之後，您會在主控台視窗中看到數個 [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) 錯誤，其指出缺少類型或命名空間。 這是預期的情況，將在下一節匯入 PUN 資產時解決。
 
 ## <a name="importing-the-pun-assets"></a>匯入 PUN 資產
 

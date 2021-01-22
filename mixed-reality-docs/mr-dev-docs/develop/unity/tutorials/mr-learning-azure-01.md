@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: azure, 混合實境, unity, 教學課程, hololens, hololens 2, azure blob 儲存體, azure 表格儲存體，azure spatial anchors, azure bot framework, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 24f44e7ecef3aeab45978787bf09d1f947bc2411
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 8f8727074870d07ac9fcd7190f5f53931d75643f
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008318"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669495"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.適用於 HoloLens 2 的 Azure 雲端服務
 
@@ -82,13 +82,13 @@ ms.locfileid: "98008318"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-首先，請遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「Azure 雲端教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureCloudServices
 
 然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，將場景的 MRTK 組態設定檔變更為 **DefaultHoloLens2ConfigurationProfile**，並將空間感知網格的顯示選項變更為 [遮蔽]。
@@ -197,7 +197,7 @@ ms.locfileid: "98008318"
 您將在此教學課程系列中使用的所有功能並非都可以在 Unity 編輯器中執行，這表示您必須熟悉如何將應用程式部署至 HoloLens 2 裝置。
 
 > [!TIP]
-> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提示，您可以參閱[入門教學課程 - 對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示。
+> 如需有關如何建立 Unity 專案並將其部署至 HoloLens 2 的提示，您可以參閱[入門教學課程 - 對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示。
 
 ### <a name="3-run-the-app-on-your-hololens-2-and-follow-the-in-app-instructions"></a>3.在 HoloLens 2 上執行應用程式，並遵循應用程式內的指示
 

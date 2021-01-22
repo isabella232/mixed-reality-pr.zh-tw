@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: 251fd68d2a3fea79c1db160b6aaf64aad05c686f
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 725e41e94923f1738eb11064c772f9138a6be09a
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009568"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582699"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
@@ -66,10 +66,10 @@ ASA 是專為混合實境的常見使用案例設計的解決方案，這類案�
 
 :::row:::
     :::column:::
-       [![語音](../whats-new/images/speech.jpg)](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+       [![語音](../whats-new/images/speech.jpg)](/azure/cognitive-services/speech-service/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="speech"></a>[語音](https://docs.microsoft.com/azure/cognitive-services/speech-service/)
+        ### <a name="speech"></a>[語音](/azure/cognitive-services/speech-service/)
         探索「語音」如何讓語音處理功能整合到任何應用程式或服務中。 使用標準 (或可自訂) 的聲音字型，將口說的語言轉換為文字，或從文字產生自然發音的語音。 歡迎免費試用任何服務，並使用下列功能快速建置具備語音功能的應用程式和服務。
     :::column-end:::
 :::row-end:::
@@ -78,10 +78,10 @@ ASA 是專為混合實境的常見使用案例設計的解決方案，這類案�
 
 :::row:::
     :::column:::
-       [![視覺](../whats-new/images/vision.jpg)](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+       [![視覺](../whats-new/images/vision.jpg)](/azure/cognitive-services/computer-vision/)
     :::column-end:::
     :::column span="2":::
-        ### <a name="vision"></a>[視覺](https://docs.microsoft.com/azure/cognitive-services/computer-vision/)
+        ### <a name="vision"></a>[視覺](/azure/cognitive-services/computer-vision/)
         對您的圖片、影片和數位筆跡內容進行辨識、識別、製作字幕、編製索引和仲裁。了解「視覺」如何讓應用程式和服務正確識別和分析影像、影片和數位筆跡中的內容。
     :::column-end:::
 :::row-end:::
@@ -95,7 +95,7 @@ ASA 是專為混合實境的常見使用案例設計的解決方案，這類案�
 <table>
     <tr>
         <td><strong>Azure 雲端服務</strong></td>
-        <td><a href="../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
      <tr>
@@ -167,5 +167,5 @@ ASA 是專為混合實境的常見使用案例設計的解決方案，這類案�
 
 ## <a name="see-also"></a>另請參閱
 
-* HoloLens 2 的 Azure Spatial Anchor 教學課程 - [開始使用 Azure Spatial Anchors 3 之 1](../mrlearning-asa-ch1.md)
+* HoloLens 2 的 Azure Spatial Anchor 教學課程 - [開始使用 Azure Spatial Anchors 3 之 1](./unity/tutorials/mr-learning-asa-02.md)
 * HoloLens 2 的 Azure 語音服務教學課程 - [整合並使用語音辨識和文字記錄 4 之 1](../develop/unity/tutorials/mrlearning-speechSDK-ch1.md)

@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: f464ba4e08f1446f1d50eda577aedf9d070630ee
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 5efe1c54d9e3b4096dfec4221e4ce04e7370ca47
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007888"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669488"
 ---
 # <a name="8-using-eye-tracking"></a>8.使用眼球追蹤
 
@@ -33,7 +33,7 @@ ms.locfileid: "98007888"
 ![Unity [MRTK 專案設定程式] 視窗](images/mr-learning-base/base-08-section1-step1-1.png)
 
 > [!NOTE]
-> 當您在本教學課程系列開頭設定 Unity 時，「注視輸入」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#selecting-mrtk-and-project-settings)指示期間啟用。 不過如果未啟用，請確定您立即啟用。
+> 當您在本教學課程系列開頭設定 Unity 時，「注視輸入」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#creating-and-configuring-the-scene)指示期間啟用。 不過如果未啟用，請確定您立即啟用。
 
 ## <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>在注視提供者中啟用眼球型追蹤
 
@@ -55,9 +55,9 @@ ms.locfileid: "98007888"
 
 * 展開 [輸入資料提供者]  >  [輸入模擬服務] 區段
 * 複製 **DefaultMixedRealityInputSimulationProfile** 並為其指定適當的名稱，例如 _GettingStarted_MixedRealityInputSimulationProfile_
-* 找出 [眼球模擬] 區段，並且勾選 [模擬眼球位置] 核取方塊
+* 找出 **眼睛的模擬** ，並將 **預設眼睛的眼睛模擬模式** 設定為 **相機轉寄軸**
 
-![已套用新建立設定檔並已啟用眼求模擬的 Unity MixedRealityToolkit 元件](images/mr-learning-base/base-08-section3-step1-1.png)
+![已選取 TextMeshPro 物件的 Unity](images/mr-learning-base/base-08-section3-step1-1.png)
 
 ## <a name="adding-eye-tracking-to-objects"></a>將眼球追蹤新增至物件
 

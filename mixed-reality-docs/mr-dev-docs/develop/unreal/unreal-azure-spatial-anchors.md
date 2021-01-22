@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 開發, 空間錨點, 混合實境, 開發, 功能, 新專案, 模擬器, 文件, 指南, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 95e8ad708dd44a05fb306b2ea49f167fd400c5d8
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 5797cd48198b163b55f3724685126b1d4d85c69c
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009768"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583024"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal 中的 Azure Spatial Anchors
 
@@ -30,17 +30,17 @@ Azure Spatial Anchors 是 Microsoft Mixed Reality 服務，可讓擴增實境裝
 
 - 已安裝 [Unreal 4.25 版](https://www.unrealengine.com/get-now)或更新版本
 - 在 Unreal 中設定了 [HoloLens 2 專案](tutorials/unreal-uxt-ch1.md) 
-- 請參閱 [Azure Spatial Anchors 概觀](https://docs.microsoft.com/azure/spatial-anchors/overview)
+- 請參閱 [Azure Spatial Anchors 概觀](/azure/spatial-anchors/overview)
 - C++ 和 Unreal 的基本知識
 
 ## <a name="getting-azure-spatial-anchors-account-info"></a>取得 Azure Spatial Anchors 帳戶資訊
 
 在您的專案中使用 Azure Spatial Anchors 之前，您必須：
-* [建立空間錨點資源](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)並複製下列帳戶欄位。 這些值用來向您的應用程式帳戶驗證使用者：
+* [建立空間錨點資源](/azure/spatial-anchors/quickstarts/get-started-hololens#create-a-spatial-anchors-resource)並複製下列帳戶欄位。 這些值用來向您的應用程式帳戶驗證使用者：
     * **帳戶識別碼**
     * **帳戶金鑰**
 
-如需詳細資訊，請參閱 [Azure Spatial Anchors 驗證](https://docs.microsoft.com/azure/spatial-anchors/concepts/authentication?tabs=csharp)文件。
+如需詳細資訊，請參閱 [Azure Spatial Anchors 驗證](/azure/spatial-anchors/concepts/authentication?tabs=csharp)文件。
 
 > [!NOTE]
 > Unreal 4.25 中的 Azure Spatial Anchors 不支援 Azure AD 驗證權杖，但這項功能的支援將會在後續版本中推出。
@@ -65,7 +65,7 @@ Azure Spatial Anchors 工作階段可讓用戶端應用程式與 Azure Spatial A
 ![詳細資料面板的螢幕擷取畫面，其中已醒目提示 Azure Spatial Anchors 帳戶識別碼、金鑰和變數類型](images/asa-unreal/unreal-spatial-anchors-img-02.png)
 
 啟動 Azure Spatial Anchors 工作階段，方法如下：
-1. 檢查 [AR 工作階段] 是否正在 HoloLens 應用程式中執行，因為直到 AR 工作階段執行，才能啟動 Azure Spatial Anchors 工作階段。 如果您尚未設定工作階段，請[建立 AR 工作階段資產](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)。
+1. 檢查 [AR 工作階段] 是否正在 HoloLens 應用程式中執行，因為直到 AR 工作階段執行，才能啟動 Azure Spatial Anchors 工作階段。 如果您尚未設定工作階段，請[建立 AR 工作階段資產](/windows/mixed-reality/unreal-uxt-ch3#adding-the-session-asset)。
 2. 新增 [啟動 Azure Spatial Anchors 工作階段] 自訂事件並加以設定，如下列螢幕擷取畫面所示。
     * 建立工作階段時，依預設不會啟動工作階段，這可讓您使用 Azure Spatial Anchors 服務設定工作階段以進行驗證。
 
@@ -216,6 +216,6 @@ Azure Spatial Anchors 代表擴增實境應用程式空間中的實體世界姿�
 
 ## <a name="next-steps"></a>接下來的步驟
 * [本機空間錨點](unreal-spatial-anchors.md)
-* [空間錨點文件](https://docs.microsoft.com/azure/spatial-anchors/)
+* [空間錨點文件](/azure/spatial-anchors/)
 * [空間錨點功能](https://azure.microsoft.com/services/spatial-anchors/#features)
-* [有效的錨點體驗指導方針](https://docs.microsoft.com/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)
+* [有效的錨點體驗指導方針](/azure/spatial-anchors/concepts/guidelines-effective-anchor-experiences)

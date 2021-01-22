@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, prefab, 全像投影, 工具提示
 ms.localizationpriority: high
-ms.openlocfilehash: 989de4871332608448619e75ffd760c616332533
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008058"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669494"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
 
@@ -97,17 +97,17 @@ ms.locfileid: "98008058"
 
 ![已選取 Menu 物件並展開 ButtonCollection 物件的 Unity](images/mr-learning-base/base-06-section2-step1-2.png)
 
-將第一個按鈕重新命名為 **Indicator**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
+將 ButtonCollection 中的第一個按鈕重新命名為指標，然後在 [偵測器] 視窗中，設定按鈕設定 Helper (腳本) 元件，如下所示：
 
 * 將 **主要標籤文字** 變更為符合按鈕的名稱
-* 將 **Indicator** 物件指派給 **無 (物件)** 欄位
+* 將看起來像是箭號的指標物件指派給 None (物件) ] 欄位
 * 從 **沒有函式** 下拉式清單中，選取 GameObject > SetActive (bool)，以將此函式設定為觸發事件時所要執行的動作
 * 確認 **已核取** 引數核取方塊
 * 將 **圖示** 變更為「搜尋」圖示
 
 ![已設定 [指標] 按鈕物件按鈕設定協助程式的 Unity](images/mr-learning-base/base-06-section2-step1-3.png)
 
-在 [階層] 視窗中，選取 **Indicator** 物件，然後在 [偵測器] 視窗中：
+若要停用箭號指標物件，請在 [階層] 視窗中，選取看起來像是箭號的指標物件，然後在 [偵測器] 視窗中：
 
 * 取消核取其名稱旁的核取方塊，使其預設為非作用中
 * 使用 [新增元件] 按鈕來新增 **Directional Indicator Controller (指令碼)** 元件
@@ -115,7 +115,7 @@ ms.locfileid: "98008058"
 ![已選取、停用 Indicator 物件並已新增 DirectionalIndicatorController 元件的 Unity](images/mr-learning-base/base-06-section2-step1-4.png)
 
 > [!NOTE]
-> 現在，當應用程式啟動時，預設會停用指標，而且只要按下 [指標] 按鈕就能啟用。
+> 現在，當應用程式啟動時，預設會停用箭號指標，而且可以按下指標按鈕來啟用。
 
 將第二個按鈕重新命名為 **TapToPlace**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
 
@@ -169,7 +169,7 @@ ms.locfileid: "98008058"
 在階層視窗中，展開 RoverExplorer > **RoverParts** 物件，並選取其所有子 Rover 組件物件，然後在偵測器視窗中，使用 [新增元件] 按鈕新增 **ToolTipSpawner** 件並加以設定，如下所示：
 
 * 確定已核取 [已啟用焦點] 核取方塊，以要求使用者看向要顯示工具提示的位置
-* 從專案視窗中，將 **簡單線條工具提示** 預製物件指派給 **工具提示預製物件** 欄位
+* 將 [ **簡易行工具提示** ] 預製專案從 [專案] 視窗指派給 [ **預製專案** ] 欄位
 * 將工具提示覆寫設定 > **設定模式** 變更為 **覆寫**
 * 將工具提示覆寫設定 > **手動樞紐分析表本機位置 Y** 變更為 **1.5**
 
@@ -196,4 +196,5 @@ ms.locfileid: "98008058"
 
 在本教學課程中，您已了解如何使用 MRTK 提供的按鈕和功能表預製物件和 Unity 的 TextMeshPro 元件來建立簡單的使用者介面，以及如何設定按鈕以在按下時觸發事件。 您也已了解如何新增動態工具提示 UI 元素，以提供使用者其他資訊。
 
-[下一個教學課程：7.與 3D 物件互動](mr-learning-base-07.md)
+> [!div class="nextstepaction"]
+>[下一個教學課程：7.與 3D 物件互動](mr-learning-base-07.md)

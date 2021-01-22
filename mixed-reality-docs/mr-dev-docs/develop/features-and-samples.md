@@ -7,12 +7,12 @@ ms.date: 12/3/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 範例, MRTK, 研究模式, HoloLens 2, qr 代碼, WebRTC, 混合實境擷取, 全像攝影遠端處理, UX 工具
 ms.localizationpriority: high
-ms.openlocfilehash: 3aa0e51a92b909689ff97a07b45900ab65579c59
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007608"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583191"
 ---
 # <a name="samples-and-feature-apps"></a>範例和功能應用程式
 
@@ -30,7 +30,7 @@ ms.locfileid: "98007608"
 
 ### <a name="research-mode"></a>研究模式
 
-研究模式是在第 1 代 HoloLens 中導入的，可讓您存取裝置上的主要感應器，特別是並非供部署之用的研究應用程式。 以下範例應用程式是存取和記錄研究模式資料流以及使用[內部函式和外部函式](https://docs.microsoft.com/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)的範例。
+研究模式是在第 1 代 HoloLens 中導入的，可讓您存取裝置上的主要感應器，特別是並非供部署之用的研究應用程式。 以下範例應用程式是存取和記錄研究模式資料流以及使用[內部函式和外部函式](/windows/mixed-reality/locatable-camera#locating-the-device-camera-in-the-world)的範例。
 
 <br>
 
@@ -67,7 +67,7 @@ MixedReality-WebRTC 專案是多項元件的集合，可協助混合實境應用
 
 | 參考文章 | 範例 |
 | --- | --- |
-| [混合實境擷取](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [混合實境擷取範例](https://docs.microsoft.com/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
+| [混合實境擷取](platform-capabilities-and-apis/mixed-reality-capture-for-developers.md) | [混合實境擷取範例](/samples/microsoft/windows-universal-samples/holographicmixedrealitycapture/) |
 
 ### <a name="holographic-remoting"></a>全像攝影遠端處理
 

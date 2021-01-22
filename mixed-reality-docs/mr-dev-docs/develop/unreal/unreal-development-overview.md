@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, OpenXR
-ms.openlocfilehash: eb9ec39d663dec2b5bf4c9177524449f31aaf554
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
-ms.translationtype: HT
+ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
-ms.locfileid: "98247731"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98580047"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -49,6 +49,8 @@ ms.locfileid: "98247731"
 
 * [適用於 Unreal 的 UX 工具](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)是第一個要發行的外掛程式，目前僅在 HoloLens 2 上提供支援。 外掛程式包含 C++ 程式碼、藍圖，以及用於輸入模擬、手部互動、表面磁性的常見 UX 功能的範例資產。
 
+* [適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) 是一種 UE 遊戲外掛程式，其中包含程式碼、藍圖和範例資產，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。
+
 [!INCLUDE[](../includes/unreal-building-blocks.md)]
 
 > [!NOTE]
@@ -82,7 +84,7 @@ ms.locfileid: "98247731"
 
 ### <a name="debugging"></a>偵錯
 
-如果您想要使用 Visual Studio 對正在裝置上執行的應用程式進行偵錯，請依照這些[指示](https://docs.microsoft.com/visualstudio/debugger/debug-installed-app-package#remote)操作。
+如果您想要使用 Visual Studio 對正在裝置上執行的應用程式進行偵錯，請依照這些[指示](/visualstudio/debugger/debug-installed-app-package#remote)操作。
 
 ### <a name="performance"></a>效能
 
@@ -104,7 +106,7 @@ ms.locfileid: "98247731"
 | 空間音訊 | 4.23 | ✔️ |
 | 串流的觀眾螢幕支援 | 4.24 |
 | 透過串流的平面 LSR | 4.24 |
-| [範例應用程式](unreal-samples.md) | 4.24 | ✔️ |
+| [範例應用程式](../features-and-samples.md) | 4.24 | ✔️ |
 | 行動多重檢視：效能命中 60 fps | 4.25 | ✔️ |
 | 第三相機轉譯 | 4.25 |
 | 從已封裝的桌面應用程式串流 | 4.25.1 | ✔️ |

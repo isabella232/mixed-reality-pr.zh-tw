@@ -7,12 +7,12 @@ ms.date: 02/26/2019
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: d767cca4fbb88d0cfdd7c2fdea1a0621523ad236
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: b7e04a03f01beb1438f6f723c3938d05a60c9131
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010088"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98581162"
 ---
 # <a name="1-overview-and-objectives"></a>1.概觀和目標
 
@@ -27,7 +27,7 @@ ms.locfileid: "98010088"
     </colgroup>
     <tr>
         <td><strong>課程</strong></td>
-        <td><a href="../../../hololens-hardware-details.md"><strong>HoloLens (第 1 代)</strong></a></td>
+        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
         <td><a href="https://www.microsoft.com//hololens/hardware"><strong>HoloLens 2</strong></a></td>
         <td><a href="../../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
@@ -52,4 +52,4 @@ ms.locfileid: "98010088"
 > [!IMPORTANT]
 > 本教學課程系列的建議 Unity 版本是 Unity 2019.2. X。 這個版本能取代上述連結之必要條件中所述的任何 Unity 版本需求或建議。
 
-[下一課：2.初始化您的專案和第一個應用程式](../../../mrlearning-base-ch1.md)
+[下一課：2.初始化您的專案和第一個應用程式](./mr-learning-base-02.md)

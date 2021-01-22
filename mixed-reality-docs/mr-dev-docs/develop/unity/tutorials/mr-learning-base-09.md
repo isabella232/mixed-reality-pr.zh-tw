@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 語音命令, 語音輸入
 ms.localizationpriority: high
-ms.openlocfilehash: 8aea8ead6416787f2979e0deff46ee5d6d45eb19
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007908"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669469"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
 
@@ -30,7 +30,7 @@ ms.locfileid: "98007908"
 ![啟用麥克風功能](images/mr-learning-base/base-09-section1-step1-1.png)
 
 > [!NOTE]
-> 當您在本教學課程系列開頭設定 Unity 時，「麥克風」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#selecting-mrtk-and-project-settings)指示期間啟用。 不過如果未啟用，請務必立即啟用。
+> 當您在本教學課程系列開頭設定 Unity 時，「麥克風」功能應該在[套用 MRTK 專案設定程式設定](mr-learning-base-02.md#creating-and-configuring-the-scene)指示期間啟用。 不過如果未啟用，請務必立即啟用。
 
 ## <a name="creating-speech-commands"></a>建立語音命令
 
@@ -147,4 +147,3 @@ ms.locfileid: "98007908"
 > [基本互動](../mrtk-101.md)
 
 您可以隨時回到 [Unity 開發檢查點](../unity-development-overview.md#1-getting-started)。
-

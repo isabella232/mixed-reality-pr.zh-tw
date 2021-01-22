@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, android, ios, MRTK, 混合實境工具組, UWP, Azure 空間錨點, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 545373ed169a77614b0a00264f5ba1bf1f3deb8e
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 62481a0203eac873adfdb2a5dae8e08aaa16ffbe
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008388"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582081"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 
@@ -147,7 +147,7 @@ ms.locfileid: "98008388"
 
 ![具有 [儲存] 提示視窗 iOS 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section4-step1-5.png)
 
-當建置程序完成時，請遵循[ Xcode 專案](https://docs.microsoft.com/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)的指示，以了解如何將 Xcode 專案部署至您的 iOS 裝置。
+當建置程序完成時，請遵循[ Xcode 專案](/azure/spatial-anchors/quickstarts/get-started-unity-ios#export-the-xcode-project)的指示，以了解如何將 Xcode 專案部署至您的 iOS 裝置。
 
 ## <a name="congratulations"></a>恭喜！
 

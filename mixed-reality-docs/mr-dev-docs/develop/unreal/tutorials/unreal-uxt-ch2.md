@@ -7,19 +7,19 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 464df846d0fc6e1bd22ee3862adcdf110c377728
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
-ms.translationtype: HT
+ms.openlocfilehash: 9e02ea6cb2710b4661e97dc8b0d5f4f48ab09fa7
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609649"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583908"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2.初始化您的專案和第一個應用程式
 
 在第一個教學課程中，您將著手進行新的 Unreal 項目，並啟用 HoloLens 外掛程式、建立和亮顯層級，以及新增棋子。 您將對所有 3D 物件和材質使用預先製作的資產，因此無須擔心自行建立模型的問題。 在本教學課程結束時，您將會有一個可供混合實境使用的空白畫布。
 
 > [!IMPORTANT]
-> 請確定您擁有[開始使用](https://docs.microsoft.com/windows/mixed-reality/unreal-uxt-ch1)頁面中的所有必要項目。
+> 請確定您擁有[開始使用](/windows/mixed-reality/unreal-uxt-ch1)頁面中的所有必要項目。
 
 ## <a name="objectives"></a>目標
 
@@ -29,7 +29,7 @@ ms.locfileid: "96609649"
 
 ## <a name="creating-a-new-unreal-project"></a>建立新的 Unreal 專案
 
-您需要的第一個項目是供您使用的專案。 如果您是首次接觸的 Unreal 開發人員，則需要從 Epic Launcher [下載支援檔案](https://docs.microsoft.com/windows/mixed-reality/develop/unreal/tutorials/unreal-uxt-ch6#packaging-and-deploying-the-app-via-device-portal)。
+您需要的第一個項目是供您使用的專案。 如果您是首次接觸的 Unreal 開發人員，則需要從 Epic Launcher [下載支援檔案](./unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)。
 
 1. 啟動 Unreal Engine
 

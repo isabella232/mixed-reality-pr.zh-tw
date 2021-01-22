@@ -1,20 +1,22 @@
 ---
-title: 整合並使用語音辨識和文字記錄
-description: 完成此課程，以了解如何在混合實境應用程式中新增和使用 Azure 語音辨識和文字記錄。
+title: Azure 語音服務教學課程 - 1。 整合並使用語音辨識和文字記錄
+description: 完成此課程以了解如何在混合實境應用程式中實作 Azure 語音 SDK。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/26/2019
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: f0c26c861cb3400c552d17d45f77cfe3a5cc284c
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: c663bbf443c206750854c1b8f4cd8946eacd28b1
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010118"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669468"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1.整合並使用語音辨識和文字記錄
+
+## <a name="overview"></a>概觀
 
 在此教學課程系列中，您將建立一個混合實境應用程式，以探索 Azure 語音服務與 HoloLens 2 的使用方式。 當您完成本教學課程系列時，您將能夠使用裝置的麥克風即時將語音轉譯成文字、將語音翻譯成其他語言，以及利用意圖辨識功能來使用人工智慧了解語音命令。
 
@@ -41,16 +43,16 @@ ms.locfileid: "98010118"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-and-deploying-to-your-hololens-2)的指示)，其中包括下列步驟：
+為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
-2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
+2. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#selecting-mrtk-and-project-settings)
+5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
 6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureCloudServices
 
-然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，將場景的 MRTK 組態設定檔變更為 **DefaultHoloLens2ConfigurationProfile**，並將空間感知網格的顯示選項變更為 [遮蔽]。
+然後，遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 的指示，以確定您場景的 MRTK 設定檔是 **DefaultHoloLens2ConfigurationProfile**  ，並將空間感知網格的顯示選項變更為 **遮蔽**。
 
 ## <a name="configuring-the-speech-commands-start-behavior"></a>設定語音命令啟動行為
 
@@ -79,7 +81,7 @@ ms.locfileid: "98010118"
 
 * [Microsoft.CognitiveServices.Speech.N.N.N.unitypackage](https://aka.ms/csspeech/unitypackage) (最新版本)
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.3.0.3/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.3.0.3.unitypackage)
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.3.0.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-speech-services-v2.3.0.0/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.3.0.0.unitypackage)
+* [MRTK.HoloLens2，AzureSpeechServices. unitypackage。](https://github.com/microsoft/MixedRealityLearning/releases/download/2.5.1/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.1.unitypackage)
 
 > [!TIP]
 > 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
@@ -117,7 +119,7 @@ ms.locfileid: "98010118"
 
 ## <a name="connecting-the-unity-project-to-the-azure-resource"></a>將 Unity 專案連接至 Azure 資源
 
-若要使用 Azure 語音服務，您必須建立 Azure 資源，並取得語音服務的 API 金鑰。 請遵循[免費試用語音服務](https://docs.microsoft.com/azure/cognitive-services/speech-service/get-started)的指示，並記下您的服務區域 (也就是「位置」) 和 API 金鑰 (也就是 Key1 或 Key2)。
+若要使用 Azure 語音服務，您必須建立 Azure 資源，並取得語音服務的 API 金鑰。 請遵循[免費試用語音服務](/azure/cognitive-services/speech-service/get-started)的指示，並記下您的服務區域 (也就是「位置」) 和 API 金鑰 (也就是 Key1 或 Key2)。
 
 在 [階層] 視窗中選取 **Lunarcom** 物件，然後在 [偵測器] 視窗中尋找 **Lunarcom Controller (指令碼)** 元件的 [語音 SDK 認證] 區段並進行設定，如下所示：
 
@@ -142,7 +144,6 @@ ms.locfileid: "98010118"
 接下來，假設您的電腦有麥克風，當您說到某個項目時，您的語音會在終端機面板上進行轉譯：
 
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section7-step1-3.png)
-
 
 > [!CAUTION]
 > 應用程式必須連線到 Azure，因此請確定您的電腦/裝置已連線到網際網路。

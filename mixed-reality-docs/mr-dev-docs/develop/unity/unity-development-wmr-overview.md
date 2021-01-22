@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: edd75def71ad31a1d29a480d0b2a7f7ffbd8c037
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
-ms.translationtype: HT
+ms.openlocfilehash: 65b45d448854f8903ed37466ebaa3c427dea3089
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226427"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98582945"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>適用於 VR 和 Windows Mixed Reality 的 Unity 開發
 
@@ -66,14 +66,14 @@ ms.locfileid: "98226427"
 
 如果您有想要移植的現有應用程式，您接下來即應參考下列文章：
 
-* [將 VR 應用程式移植到 Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/porting-guides?tabs=project)
-* [更新 Windows Mixed Reality 的 SteamVR 應用程式](https://docs.microsoft.com/windows/mixed-reality/develop/porting-apps/updating-your-steamvr-application-for-windows-mixed-reality)
+* [將 VR 應用程式移植到 Windows Mixed Reality](../porting-apps/porting-guides.md?tabs=project)
+* [更新 Windows Mixed Reality 的 SteamVR 應用程式](../porting-apps/updating-your-steamvr-application-for-windows-mixed-reality.md)
 
 ### <a name="additional-resources"></a>其他資源
 
 在您自行進入混合實境的世界之前，建議您先參閱下列額外文件。 
 
-* [VR 愛好者指南](https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/vr-journey)
+* [VR 愛好者指南](/windows/mixed-reality/enthusiast-guide/vr-journey)
 * [Unity Asset Store](https://www.assetstore.unity3d.com)
 
 ## <a name="see-also"></a>另請參閱 

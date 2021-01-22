@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 12e94e880f8b681ed9c4720b841f8a44ae9e0fd7
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
-ms.translationtype: HT
+ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
+ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609579"
+ms.lasthandoff: 01/21/2021
+ms.locfileid: "98669471"
 ---
 # <a name="4-making-your-scene-interactive"></a>4.使場景成為互動式場景
 
@@ -56,7 +56,7 @@ ms.locfileid: "96609579"
 - 提供以關節連接的手部輸入事件，可透過 Pawn 操作。
 - 允許透過從虛擬手掌延伸的手部光線，進行遠距離互動輸入事件。
 
-建議您先閱讀手部互動的[文件](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)，再繼續進行。
+建議您先閱讀手部互動的[文件](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)，再繼續進行。
 
 一旦準備好，就開啟 **MRPawn** 藍圖，然後移至 [事件圖形]。
 
@@ -85,7 +85,7 @@ ms.locfileid: "96609579"
 
 ![完成 UXT 手部互動動作項目設定](images/unreal-uxt/4-fingerptrs.PNG)
 
-您可以在 [UX 工具文件](https://microsoft.github.io/MixedReality-UXTools-Unreal/version/public/0.9.x/Docs/HandInteraction.html)中找到關於手動互動動作項目的詳細資訊。
+您可以在 [UX 工具文件](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/HandInteraction.html)中找到關於手動互動動作項目的詳細資訊。
 
 現在，專案中的虛擬手部有一種方式可以選取物件，但仍然無法進行操作。 測試應用程式前的最後一項工作是將操作工具元件新增至場景中的動作項目。
 

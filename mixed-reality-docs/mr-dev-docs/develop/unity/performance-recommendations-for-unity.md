@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 圖形, cpu, gpu, 轉譯, 記憶體回收行程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 3508edae9fa0e60e9d9b60000186dfd3e49ff134
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
+ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009348"
+ms.lasthandoff: 01/20/2021
+ms.locfileid: "98583182"
 ---
 # <a name="performance-recommendations-for-unity"></a>對 Unity 的效能建議
 
@@ -84,7 +84,7 @@ public class ExampleClass : MonoBehaviour
 
 #### <a name="avoid-expensive-operations"></a>避免高成本的作業
 
-1) **避免使用 [LINQ](https://docs.microsoft.com/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
+1) **避免使用 [LINQ](/dotnet/csharp/programming-guide/concepts/linq/getting-started-with-linq)**
 
     雖然 LINQ 既簡潔有容易讀取和寫入，但所需的計算和記憶體數量一般會比手動撰寫演算法更多。
 
@@ -120,7 +120,7 @@ public class ExampleClass : MonoBehaviour
 
 3) **注意 Box 處理**
 
-    [Box 處理](https://docs.microsoft.com/dotnet/csharp/programming-guide/types/boxing-and-unboxing)是 C# 語言和執行時間的核心概念。 這是將實值類型變數 (例如 `char`、`int`、`bool` 等) 包裝成參考類型變數的程序。 實值類型變數為 "boxed" 時會包裝在儲存於 Managed 堆積上的 `System.Object` 中。 系統會配置記憶體，且最終在處置時必須由記憶體回收行程處理。 這些配置和取消配置會產生效能成本，且在許多情況下並不需要，或是可以輕鬆地以較不昂貴的替代方案來取代。
+    [Box 處理](/dotnet/csharp/programming-guide/types/boxing-and-unboxing)是 C# 語言和執行時間的核心概念。 這是將實值類型變數 (例如 `char`、`int`、`bool` 等) 包裝成參考類型變數的程序。 實值類型變數為 "boxed" 時會包裝在儲存於 Managed 堆積上的 `System.Object` 中。 系統會配置記憶體，且最終在處置時必須由記憶體回收行程處理。 這些配置和取消配置會產生效能成本，且在許多情況下並不需要，或是可以輕鬆地以較不昂貴的替代方案來取代。
 
     若要避免 Box 處理，請確定您用來儲存數值類型和結構 (包括 `Nullable<T>`) 的變數、欄位和屬性已強型別化為特定類型 (例如 `int`、`float?` 或 `MyStruct`)，而不是使用物件。  如果將這些物件放入清單中，請務必使用強型別清單 (例如 `List<int>`)，而不是 `List<object>` 或 `ArrayList`。
 
@@ -180,7 +180,7 @@ public class ExampleClass : MonoBehaviour
 
 4) **避免以傳值方式傳遞結構**
 
-    不同於類別，結構是實值類型，而當直接傳遞至函式時，會將其內容複製到新建立的實例。 此複本會增加 CPU 成本，以及堆疊上的額外記憶體。 針對小型結構，影響很小，因此可接受。 不過，對於每個畫面格重複叫用的函式，以及接受大型結構的函式，如果可能，請將函式定義修改為以傳址方式傳遞。 [請於此處深入了解](https://docs.microsoft.com/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
+    不同於類別，結構是實值類型，而當直接傳遞至函式時，會將其內容複製到新建立的實例。 此複本會增加 CPU 成本，以及堆疊上的額外記憶體。 針對小型結構，影響很小，因此可接受。 不過，對於每個畫面格重複叫用的函式，以及接受大型結構的函式，如果可能，請將函式定義修改為以傳址方式傳遞。 [請於此處深入了解](/dotnet/csharp/programming-guide/classes-and-structs/how-to-know-the-difference-passing-a-struct-and-passing-a-class-to-a-method)
 
 #### <a name="miscellaneous"></a>其他
 
@@ -337,9 +337,9 @@ Unity 提供了絕佳的頁面，詳細說明記憶體回收行程的運作方�
 導致過多記憶體回收行程最常見的做法之一，是不會快取 Unity 開發中元件和類別的參考。 任何參考都應該在 Start() 或 Awake() 期間加以擷取，然後在 Update() 或 LateUpdate() 等函式中重複使用。
 
 其他快速提示：
-- 使用 [StringBuilder](https://docs.microsoft.com/dotnet/api/system.text.stringbuilder) C# 類別，在執行時間以動態方式建置複雜字串
+- 使用 [StringBuilder](/dotnet/api/system.text.stringbuilder) C# 類別，在執行時間以動態方式建置複雜字串
 - 當您不再需要 Debug.Log() 的呼叫時，請加以移除，因為該函式仍會在應用程式的所有組建版本中執行
-- 如果您的全像攝影應用程式通常需要大量的記憶體，請考慮在載入階段 (例如，呈現載入或轉換畫面時) 呼叫 [_**System.GC.Collect()**_](https://docs.microsoft.com/dotnet/api/system.gc.collect)
+- 如果您的全像攝影應用程式通常需要大量的記憶體，請考慮在載入階段 (例如，呈現載入或轉換畫面時) 呼叫 [_**System.GC.Collect()**_](/dotnet/api/system.gc.collect)
 
 #### <a name="object-pooling"></a>物件集區
 
