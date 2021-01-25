@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 10cb96ffe0496a20c7244ba4c40dec097ebd4bd8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
+ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583754"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98758374"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -432,7 +432,7 @@ mesh.GetVertexPositions(positions);
 
 如果您沒有 HoloLens2 裝置，但想要在場景理解的情況下播放，您必須下載預先捕捉的場景。 場景理解範例目前隨附的序列化場景，可供您自行下載及使用。 您可以在這裡找到：
 
-[場景理解範例場景](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples/tree/master/Assets/Resources/SerializedScenesForPCPath)
+[場景理解範例場景](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples)
 
 ## <a name="see-also"></a>另請參閱
 
