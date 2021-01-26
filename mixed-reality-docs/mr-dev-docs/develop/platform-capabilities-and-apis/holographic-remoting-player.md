@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、診斷、效能
-ms.openlocfilehash: 7a7c7762f079dcc4ec05bacec8bd7ab0d3625e0e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 768ac55bdd117648977c64a1947254540ec7306a
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583159"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810149"
 ---
 # <a name="holographic-remoting-player"></a>全像攝影遠端播放程式
 
@@ -83,5 +83,5 @@ ms.locfileid: "98583159"
 * [HoloLens (第一代) ：新增全像的遠端處理](add-holographic-remoting.md)
 * [使用 Windows Mixed Reality Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
-* [全像攝影遠端軟體授權條款](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

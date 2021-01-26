@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 748ec444bfcbabb534f391a889fcc16c7671bf7d
-ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
+ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98758374"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810139"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -265,7 +265,7 @@ foreach (var mesh in firstFloor.Meshes)
 
 在處理轉換時，場景理解已刻意嘗試配合傳統的3D 場景標記法。 因此，每個場景會限制為單一座標系統，就像是最常見的3D 環境表示一樣。 SceneObjects 每個都提供其相對於座標系統的位置。 如果您的應用程式處理的場景會延展單一來源提供的限制，讓它可以將 SceneObjects 錨定到 SpatialAnchors，或是產生數個場景並將它們合併在一起，但為了簡單起見，我們假設防水場景存在於自己的原點，並由場景所定義的一個來當地語系化。
 
-例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 如需有關取得與 Unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱 [SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](//uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](//windows/mixed-reality/unity-xrdevice-advanced) 。
+例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 如需有關取得與 Unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](/windows/mixed-reality/unity-xrdevice-advanced) 。
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

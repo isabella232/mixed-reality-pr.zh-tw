@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: 攝影機、hololens、彩色攝影機、正面、hololens 2、cv、電腦視覺、基準、標記、qr 代碼、qr、相片、影片
-ms.openlocfilehash: bc478aa658b26eb3a4efb16c62d0874b12992e78
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583625"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810157"
 ---
 # <a name="locatable-camera"></a>定位相機
 
@@ -28,7 +28,7 @@ HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式�
   |  影片  |  預覽  |  還  |  水準視圖 (H-FOV)  |  建議用法 | 
   |----------|----------|----------|----------|----------|
   |  1280x720 |  1280x720 |  1280x720 |  45度  |  使用影片穩定)  (預設模式 | 
-  |  不適用 |  不適用 |  2048x1152 |  67度 |  最高解析度仍為影像 | 
+  |  N/A |  N/A |  2048x1152 |  67度 |  最高解析度仍為影像 | 
   |  1408x792 |  1408x792 |  1408x792 |  48度 |  Overscan (填補影片穩定之前的) 解析度 | 
   |  1344x756 |  1344x756 |  1344x756 |  67度 |  使用 overscan 的大型 FOV 影片模式 | 
   |  896x504 |  896x504 |  896x504 |  48度 |  影像處理工作的低電源/低解析度模式 | 
@@ -37,7 +37,7 @@ HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式�
 
 * 自動聚焦相片/影片 (PV) 攝影機（具有自動白平衡、自動曝光和完整的影像處理管線）。
 * 當相機處於作用中狀態時，就會導致世界各地的白色隱私權燈亮著。
-* HoloLens 2 支援不同的相機設定檔。 瞭解如何 [探索並選取攝影機功能](//windows/uwp/audio-video-camera/camera-profiles)。
+* HoloLens 2 支援不同的相機設定檔。 瞭解如何 [探索並選取攝影機功能](/windows/uwp/audio-video-camera/camera-profiles)。
 * 攝影機支援下列設定檔和解析度 (所有的影片模式都是16:9 的外觀比例) ：
   
   | 設定檔                                         | 影片     | 預覽   | 還     | 畫面播放速率 | 水準視圖 (H-FOV)  | 建議用法                             |
@@ -75,14 +75,14 @@ HoloLens 檔中其他位置的「相機」可能參考「虛擬遊戲攝影機�
 
 ### <a name="using-mediaframereference"></a>使用 MediaFrameReference
 
-如果 you'r 使用 [MediaFrameReference](//uwp/api/windows.media.capture.frames.mediaframereference) 類別從相機讀取影像畫面格，則適用這些指示。
+如果 you'r 使用 [MediaFrameReference](/uwp/api/windows.media.capture.frames.mediaframereference) 類別從相機讀取影像畫面格，則適用這些指示。
 
-每個影像框架都會 (相片或影片) 是否包含在拍攝時根目錄于相機的[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem) ，可使用[MediaFrameReference](//uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)的[CoordinateSystem](//uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)屬性來存取。 每個畫面格都包含相機鏡頭模型的描述，可在 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 屬性中找到。 這些轉換會一起定義3D 空間中每個圖元的光線，代表產生圖元的光子所採用的路徑。 這些光線可以與應用程式中的其他內容相關，方法是從框架的座標系統取得轉換到其他的座標系統 (例如從 [固定的參考框架](../../design/coordinate-systems.md#stationary-frame-of-reference)) 。 
+每個影像框架都會 (相片或影片) 是否包含在拍攝時根目錄于相機的[SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) ，可使用[MediaFrameReference](/uwp/api/Windows.Media.Capture.Frames.MediaFrameReference)的[CoordinateSystem](/uwp/api/windows.media.capture.frames.mediaframereference.coordinatesystem#Windows_Media_Capture_Frames_MediaFrameReference_CoordinateSystem)屬性來存取。 每個畫面格都包含相機鏡頭模型的描述，可在 [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 屬性中找到。 這些轉換會一起定義3D 空間中每個圖元的光線，代表產生圖元的光子所採用的路徑。 這些光線可以與應用程式中的其他內容相關，方法是從框架的座標系統取得轉換到其他的座標系統 (例如從 [固定的參考框架](../../design/coordinate-systems.md#stationary-frame-of-reference)) 。 
 
 每個影像框架都會提供下列各項：
 * 以 RGB/NV12/JPEG/etc 格式) 的圖元資料 (
-* 從 capture 的位置[SpatialCoordinateSystem](//uwp/api/windows.perception.spatial.spatialcoordinatesystem)
-* 包含相機鏡頭模式的 [CameraIntrinsics](//uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 類別
+* 從 capture 的位置[SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem)
+* 包含相機鏡頭模式的 [CameraIntrinsics](/uwp/api/windows.media.capture.frames.videomediaframe.cameraintrinsics#Windows_Media_Capture_Frames_VideoMediaFrame_CameraIntrinsics) 類別
 
 [HolographicFaceTracking 範例會示範](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicFaceTracking)在相機座標系統和您自己的應用程式座標系統之間，查詢轉換的方式相當直接。
 

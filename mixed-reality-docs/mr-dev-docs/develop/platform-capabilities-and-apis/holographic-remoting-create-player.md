@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像 Remoting、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: b6a0d65b8ec1f07f7ebaae17b9921d48105474a4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 391650025398b4bdd89e30db1df7df5e3d6ab5f2
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581239"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810121"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>撰寫自訂全像攝影遠端播放應用程式
 
@@ -22,12 +22,12 @@ ms.locfileid: "98581239"
 
 全像遠端播放機可讓您的應用程式顯示桌上型電腦或 UWP [裝置上轉譯的全](rendering.md) 像 Xbox One，並可存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，請使用 NuGet 套件將全像是在 UWP 應用程式中新增全像的遠端處理。 然後撰寫程式碼來處理連接，並顯示沉浸式視圖。 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 良好的起點是已以 Windows Mixed Reality API 為目標的可運作 DirectX 型 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 如果您沒有現有的應用程式，而且想要從頭開始，則 [c + +](../native/creating-a-holographic-directx-project.md) 全像的專案範本是不錯的起點。
 
 >[!IMPORTANT]
->使用「全像」遠端處理的任何應用程式都應該撰寫為使用 [多執行緒的單元](//windows/win32/com/multithreaded-apartments)。 支援使用 [單一執行緒的單元](//windows/win32/com/single-threaded-apartments) ，但會導致效能不佳，而且可能會在播放期間間斷情形。 使用 c + +/WinRT [WinRT：： init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) 多執行緒的單元是預設值。
+>使用「全像」遠端處理的任何應用程式都應該撰寫為使用 [多執行緒的單元](/windows/win32/com/multithreaded-apartments)。 支援使用 [單一執行緒的單元](/windows/win32/com/single-threaded-apartments) ，但會導致效能不佳，而且可能會在播放期間間斷情形。 使用 c + +/WinRT [WinRT：： init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) 多執行緒的單元是預設值。
 
 ## <a name="get-the-holographic-remoting-nuget-package"></a>取得全像 Remoting NuGet 套件
 
@@ -94,7 +94,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 >[!WARNING]
 >全像是以遠端處理特定執行時間取代 Windows 一部分的 Windows Mixed Reality 執行時間，來進行全像的遠端處理工作。 這是在建立播放程式內容期間完成的。 因此，在建立播放程式內容之前，對任何 Windows Mixed Reality API 進行的任何呼叫都會導致非預期的行為。 建議的方法是在與任何混合現實 API 互動之前儘早建立播放機內容。 在使用之前建立或抓取的物件來呼叫之前，絕對不會透過任何 Windows Mixed Reality API 來混合建立或抓取的物件 ```PlayerContext::Create``` 。
 
-接著，您可以藉由呼叫 [HolographicSpace CreateForCoreWindow](//uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)來建立 HolographicSpace。
+接著，您可以藉由呼叫 [HolographicSpace CreateForCoreWindow](/uwp/api/windows.graphics.holographic.holographicspace.createforcorewindow)來建立 HolographicSpace。
 
 ```cpp
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
@@ -177,9 +177,9 @@ winrt::Microsoft::Holographic::AppRemoting::ConnectionState state = m_playerCont
 
 ## <a name="display-the-remotely-rendered-frame"></a>顯示遠端呈現的框架
 
-若要顯示遠端呈現的內容，請 ```PlayerContext::BlitRemoteFrame``` 在呈現 [HolographicFrame](//uwp/api/windows.graphics.holographic.holographicframe)時呼叫。 
+若要顯示遠端呈現的內容，請 ```PlayerContext::BlitRemoteFrame``` 在呈現 [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe)時呼叫。 
 
-```BlitRemoteFrame``` 要求目前 HolographicFrame 的背景緩衝區必須系結為轉譯目標。 您可以透過[Direct3D11BackBuffer](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer)屬性從[HolographicCameraRenderingParameters](//uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters)接收背景緩衝區。
+```BlitRemoteFrame``` 要求目前 HolographicFrame 的背景緩衝區必須系結為轉譯目標。 您可以透過[Direct3D11BackBuffer](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.direct3d11backbuffer)屬性從[HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographicframe.getrenderingparameters)接收背景緩衝區。
 
 呼叫時，會 ```BlitRemoteFrame``` 從遠端應用程式將接收到的最新框架複製到 HolographicFrame 的背景緩衝區中。 此外，如果遠端應用程式在呈現遠端框架期間已指定焦點點，則會設定焦點點集合。
 
@@ -190,8 +190,8 @@ winrt::Microsoft::Holographic::AppRemoting::BlitResult result = m_playerContext.
 
 >[!NOTE]
 >```PlayerContext::BlitRemoteFrame``` 可能會覆寫目前框架的焦點點。 
->- 若要指定回溯焦點點，請先呼叫 [HolographicCameraRenderingParameters：： SetFocusPoint](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) ```PlayerContext::BlitRemoteFrame``` 。 
->- 若要覆寫遠端焦點點，請在之後呼叫 [HolographicCameraRenderingParameters：： SetFocusPoint](//uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) ```PlayerContext::BlitRemoteFrame``` 。
+>- 若要指定回溯焦點點，請先呼叫 [HolographicCameraRenderingParameters：： SetFocusPoint](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) ```PlayerContext::BlitRemoteFrame``` 。 
+>- 若要覆寫遠端焦點點，請在之後呼叫 [HolographicCameraRenderingParameters：： SetFocusPoint](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint) ```PlayerContext::BlitRemoteFrame``` 。
 
 成功時， ```BlitRemoteFrame``` 傳回 ```BlitResult::Success_Color``` 。 否則，它會傳回失敗原因：
 - ```BlitResult::Failed_NoRemoteFrameAvailable```：因為沒有可用的遠端框架，所以失敗。
@@ -237,7 +237,7 @@ m_playerContext.BlitRemoteFrameTimeout(500ms);
 
 ## <a name="optional-get-statistics-about-the-last-remote-frame"></a>選用：取得與最後一個遠端框架相關的統計資料
 
-若要診斷效能或網路問題，可以透過屬性抓取最後一個遠端框架的相關統計資料 ```PlayerContext::LastFrameStatistics``` 。 在呼叫 HolographicFrame 時，會更新統計資料 [：:P resentusingcurrentprediction](//uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)。
+若要診斷效能或網路問題，可以透過屬性抓取最後一個遠端框架的相關統計資料 ```PlayerContext::LastFrameStatistics``` 。 在呼叫 HolographicFrame 時，會更新統計資料 [：:P resentusingcurrentprediction](/uwp/api/windows.graphics.holographic.holographicframe.presentusingcurrentprediction)。
 
 ```cpp
 // Get statistics for the last presented frame.
@@ -256,5 +256,5 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 * [自訂全像攝影遠端資料通道](holographic-remoting-custom-data-channels.md)
 * [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
-* [全像攝影遠端軟體授權條款](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

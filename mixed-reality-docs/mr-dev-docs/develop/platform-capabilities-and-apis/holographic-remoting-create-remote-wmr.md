@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、NuGet
-ms.openlocfilehash: 65c76266c00f51cbe17f6bfd2991a6adf4103855
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6884c2679b155c36a21bcf89352524e4957a9f20
+ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583854"
+ms.lasthandoff: 01/26/2021
+ms.locfileid: "98810087"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>使用 HolographicSpace API 撰寫全像遠端執行遠端應用程式
 
@@ -22,12 +22,12 @@ ms.locfileid: "98583854"
 
 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>先決條件
 
 良好的起點是以 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)為目標的可運作 DirectX 型桌面或 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 [C + + 全息版專案範本](../native/creating-a-holographic-directx-project.md)是不錯的起點。
 
 >[!IMPORTANT]
->使用「全像」遠端處理的任何應用程式都應該撰寫為使用 [多執行緒的單元](//windows/win32/com/multithreaded-apartments)。 支援使用 [單一執行緒的單元](//windows/win32/com/single-threaded-apartments) ，但會導致效能不佳，而且可能會在播放期間間斷情形。 使用 c + +/WinRT [WinRT：： init_apartment](//windows/uwp/cpp-and-winrt-apis/get-started) 多執行緒的單元是預設值。
+>使用「全像」遠端處理的任何應用程式都應該撰寫為使用 [多執行緒的單元](/windows/win32/com/multithreaded-apartments)。 支援使用 [單一執行緒的單元](/windows/win32/com/single-threaded-apartments) ，但會導致效能不佳，而且可能會在播放期間間斷情形。 使用 c + +/WinRT [WinRT：： init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) 多執行緒的單元是預設值。
 
 
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >如同任何 c + +/WinRT API， ```Connect``` 可能會擲回需要處理的 WinRT：： hresult_error。
 
 >[!TIP]
->若要避免使用 [c + +/WinRT](//windows/uwp/cpp-and-winrt-apis/) 語言投射， ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` 可以包含位於全像「遠端處理 NuGet」套件內的檔案。 它包含基礎 COM 介面的宣告。 不過，我們建議使用 c + +/WinRT。
+>若要避免使用 [c + +/WinRT](/windows/uwp/cpp-and-winrt-apis/) 語言投射， ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` 可以包含位於全像「遠端處理 NuGet」套件內的檔案。 它包含基礎 COM 介面的宣告。 不過，我們建議使用 c + +/WinRT。
 
 您可以藉由呼叫方法來接聽遠端應用程式上的連入連線 ```Listen``` 。 交握埠和傳輸埠都可以在此呼叫期間指定。 交握埠用於初始交握。 然後，資料會透過傳輸埠來傳送。 預設會使用 **8265** 和 **8266** 。
 
@@ -197,7 +197,7 @@ if (auto remoteSpeech = m_remoteContext.GetRemoteSpeech())
 }
 ```
 
-您可以使用非同步協助程式方法來初始化遠端語音。 這應該會以非同步方式完成，因為初始化可能需要相當長的時間。 [使用 c + +/WinRT 的並行和非同步作業](//windows/uwp/cpp-and-winrt-apis/concurrency) 說明如何使用 c + +/winrt 撰寫非同步函式
+您可以使用非同步協助程式方法來初始化遠端語音。 這應該會以非同步方式完成，因為初始化可能需要相當長的時間。 [使用 c + +/WinRT 的並行和非同步作業](/windows/uwp/cpp-and-winrt-apis/concurrency) 說明如何使用 c + +/winrt 撰寫非同步函式
 
 ```cpp
 winrt::Windows::Foundation::IAsyncOperation<winrt::Windows::Storage::StorageFile> LoadGrammarFileAsync()
@@ -234,7 +234,7 @@ winrt::fire_and_forget InitializeSpeechAsync(
 ```
 
 有兩種方式可以指定要辨識的片語。
-1) 語音文法 xml 檔案內的規格。 如需詳細資料，請參閱 [如何建立基本的 XML 文法](//previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 。
+1) 語音文法 xml 檔案內的規格。 如需詳細資料，請參閱 [如何建立基本的 XML 文法](/previous-versions/office/developer/speech-technologies/hh361658(v=office.14)) 。
 2) 藉由將字典向量內的傳遞給來指定 ```ApplyParameters``` 。
 
 在 OnRecognizedSpeech 回呼中，可以處理語音事件：
@@ -362,5 +362,5 @@ void SampleRemoteMain::Render(HolographicFrame holographicFrame)
 * [自訂全像攝影遠端資料通道](holographic-remoting-custom-data-channels.md)
 * [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
-* [全像攝影遠端軟體授權條款](//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)
