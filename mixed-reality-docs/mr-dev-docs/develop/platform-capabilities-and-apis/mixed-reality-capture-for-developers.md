@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: cbdd99ab7ab405163fb7e0ba366ee85f8bcc634d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
+ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583670"
+ms.lasthandoff: 01/25/2021
+ms.locfileid: "98763715"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
 
@@ -84,7 +84,7 @@ if (view != null)
 ##### <a name="enable-the-photovideocamera-holographicviewconfiguration-in-unity"></a>在 Unity 中啟用 PhotoVideoCamera HolographicViewConfiguration
 
 > [!NOTE]
-> 這需要 **unity 2018.4.13 f1**、 **unity 2019.3.0 f1** 或更新版本。
+> 如果您使用的是 Unity 2018，則需要 **unity 2018.4.13 f1** 或更新版本。 如果您使用的是 Unity 2019，則需要 **unity 2019.4** 或更新版本。
 
 若要在使用 [Mixed Reality 工具](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)組時選擇從 pv 攝影機進行轉譯，請啟用 [Windows Mixed Reality 攝影機設定](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) 提供者，並檢查 **從 pv 攝影機** 轉譯。
 
