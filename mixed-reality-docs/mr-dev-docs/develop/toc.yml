@@ -24,6 +24,20 @@
       href: unity/unity-development-overview.md
     - name: 適用於 VR 的 Unity 開發
       href: unity/unity-development-wmr-overview.md
+    - name: 混合現實功能工具
+      items:
+        - name: 歡迎使用「MR」功能工具
+          href: unity/welcome-to-mr-feature-tool.md
+        - name: 設定
+          href: unity/configuring-feature-tool.md
+        - name: 探索
+          href: unity/discovering-features.md
+        - name: 匯入
+          href: unity/importing-features.md
+        - name: 套件詳細資料
+          href: unity/viewing-package-details.md
+        - name: 查看變更
+          href: unity/reviewing-changes.md
     - name: 教學課程
       items:
         - name: 總覽
