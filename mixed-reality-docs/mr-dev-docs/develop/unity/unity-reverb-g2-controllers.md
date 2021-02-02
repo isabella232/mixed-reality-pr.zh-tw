@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity、回音、回音、HP 回音、mixed reality、開發、移動控制器、使用者輸入、功能、新專案、模擬器、檔、指南、功能、全像遊戲開發
-ms.openlocfilehash: fa9b80076d65978ae1602fc4f9519d7e11c651b5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583571"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421389"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity 中的 HP 回音 G2 控制器
 
@@ -31,38 +31,11 @@ HP 運動控制器是一種全新的 Windows Mixed Reality 控制器類型：所
 
 您可以建立 *MotionControllerWatcher* 並訂閱其事件，以抓取 MotionController 實例，類似于使用 *InteractionManager* 事件來探索新的 *InteractionSource* 實例。 MotionController 的方法和屬性會描述控制器所支援的輸入，包括其按鈕、觸發程式、2D 軸和操縱杆。 MotionController 類別也會公開透過 *MotionControllerReading* 類別存取輸入狀態的方法。 MotionControllerReading 類別代表在給定時間的控制器狀態快照。 
 
-## <a name="installing-microsoftmixedrealityinput-using-the-unity-package-manager"></a>使用 Unity 封裝管理員安裝 MixedReality 
+## <a name="installing-microsoftmixedrealityinput-with-the-mixed-reality-feature-tool"></a>使用 Mixed Reality 功能工具安裝 MixedReality
 
-Unity 封裝管理員在) 上 ( # B0 使用 [資訊清單](https://docs.unity3d.com/Manual/upm-manifestPkg.html) 檔案來判斷要安裝的套件，以及可從中安裝的登錄 (伺服器) 。 在您可以使用 MixedReality 輸入套件之前，您必須先註冊混合現實元件伺服器。
+使用新的混合現實功能工具應用程式來安裝 MixedReality 輸入外掛程式。 遵循 [安裝和使用](welcome-to-mr-feature-tool.md) 方式的指示，然後在混合現實工具組類別中選取 **混合現實輸入** 套件：
 
-### <a name="registering-the-mixed-reality-component-server"></a>註冊混合現實元件伺服器 
-
-針對將使用 Mixed Reality 輸入套件的每個專案，[封裝] 資料夾中的 [檔案 (上的 manifest.js，) 需要新增混合的實際範圍登錄。 若要適當地修改 manifest.js，以支援混合現實： 
-    1. <projectRoot>在文字編輯器中開啟/Packages/manifest.js，例如 Visual Studio Code。 
-    2. 在資訊清單檔案的頂端，將 Mixed Reality 伺服器新增至範圍登錄區段，並儲存檔案。 
-    
-<pre>
-{ 
-  "scopedRegistries": [ 
-    { 
-      "name": "Microsoft Mixed Reality", 
-      "url": "https://pkgs.dev.azure.com/aipmr/MixedReality-Unity-Packages/_packaging/Unity-packages/npm/registry/", 
-      "scopes": [ 
-        "com.microsoft.mixedreality" 
-      ] 
-    } 
-  ], 
-</pre>
-
-### <a name="adding-the-microsoftmixedrealityinput-package"></a>新增 MixedReality 輸入套件 
-
-在文字編輯器中，修改/Packages/manifest.json 檔案的 [相依性] 區段， <projectRoot> 以新增 mixedreality，然後儲存檔案。 
-
-<pre>
-  "dependencies": { 
-    "com.microsoft.mixedreality.input": "0.9.2006", 
-  }
-</pre>
+![反白顯示混合現實輸入的混合現實功能工具套件視窗](images/feature-tool-mrinput.png)
 
 ## <a name="using-microsoftmixedrealityinput"></a>使用 MixedReality. 輸入 
 

@@ -1,5 +1,5 @@
 ---
-title: 建立 HoloLens 專案
+title: 建立您的第一個 HoloLens Unreal 應用程式
 description: 瞭解如何使用場景物件正確設定 Unreal 專案，並針對 HoloLens 混合現實開發進行輸入互動。
 author: hferrone
 ms.author: safarooq
@@ -7,14 +7,27 @@ ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal、Unreal Engine 4、Unreal editor、UE4、HoloLens、HoloLens 2、mixed reality、開發、檔、指南、功能、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移植、升級
-ms.openlocfilehash: 3b2b88ac897a8791fec1ca2942d0db34efcee598
-ms.sourcegitcommit: be33fcda10d1cb98df90b428a923289933d42c77
+ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98672735"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421427"
 ---
-# <a name="creating-a-hololens-project"></a>建立 HoloLens 專案
+# <a name="creating-your-first-hololens-unreal-application"></a>建立您的第一個 HoloLens Unreal 應用程式
+
+本指南將逐步引導您在 Unreal 引擎中取得在 HoloLens 上執行的第一個混合現實應用程式。 在 "Hello World" 的傳統中，您將建立簡單的應用程式，以在螢幕上顯示 cube。 為了讓它更有用，您也會建立第一個手勢來旋轉 cube，並結束應用程式。 
+
+## <a name="objectives"></a>目標
+
+* 開始 HoloLens 專案
+* 啟用正確的外掛程式
+* 建立 ARSessionConfig 資料資產
+* 設定手勢輸入
+* 建立基本層級
+* 執行縮小的手勢
+
+## <a name="creating-a-new-project"></a>建立新的專案
 
 您需要的第一個項目是供您使用的專案。 如果您是首次接觸的 Unreal 開發人員，則需要從 Epic Launcher [下載支援檔案](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)。
 
@@ -29,7 +42,8 @@ ms.locfileid: "98672735"
 
 4. 在 **專案設定** 中，設定 **c + +、可擴充的3d 或2d、行動/平板** 電腦和 **無入門內容**，然後選擇 [儲存位置]，再按一下 [**建立專案**]。
 
-> [!NOTE] 您使用的是 c + +，而不是藍圖專案，以便稍後準備使用 OpenXR 外掛程式。 本快速入門會使用 Unreal 引擎隨附的預設 OpenXR 外掛程式。 不過，建議您下載並使用官方 Microsoft OpenXR 外掛程式。 這需要專案是 c + + 專案。
+> [!NOTE] 
+> 您使用的是 c + +，而不是藍圖專案，以便稍後準備使用 OpenXR 外掛程式。 本快速入門會使用 Unreal 引擎隨附的預設 OpenXR 外掛程式。 不過，建議您下載並使用官方 Microsoft OpenXR 外掛程式。 這需要專案是 c + + 專案。
 
 ![醒目提示專案、效能、目標平臺和入門內容選項的 [專案設定] 視窗](images/unreal-quickstart-img-03.png)
 
@@ -131,14 +145,18 @@ Unreal 中的 AR 工作階段本身不會發生。 若要使用工作階段，�
 
 ![醒目提示 Open XR Msft 手型互動選項的動作對應](images/unreal-quickstart-img-16.jpg)
 
-4. 開啟 **層級藍圖** ，並新增 **InputAction RightPinch** 和 **InputAction LeftPinch**
+## <a name="setting-up-gestures"></a>設定手勢
+
+現在我們已設定好輸入，接下來我們可以看到有趣的部分：加入手勢！ 讓我們在右邊的縮小上旋轉 cube，並在剩餘的縮小時結束應用程式。
+
+1. 開啟 **層級藍圖** ，並新增 **InputAction RightPinch** 和 **InputAction LeftPinch**
 * 將適當的縮小事件連接到 **AddActorLocalRotation** ，並 **將目標** 和 **差異旋轉** 設定為 **X = 0、Y = 0** 和 **Z = 20**。 Cube 現在會在您每次縮小時以20度旋轉
 * 連接左方的縮小事件以結束 **遊戲**
 
 ![層級 bluprint 開啟，其中包含右和左縮小事件的輸入動作](images/unreal-quickstart-img-17.jpg)
 
-5. 在 cube 的 **轉換** 設定中，將 **行動性** 設定為 **可移動** ，使其可以動態移動：
+2. 在 cube 的 **轉換** 設定中，將 **行動性** 設定為 **可移動** ，使其可以動態移動：
 
 ![已反白顯示行動性屬性的轉換設定](images/unreal-quickstart-img-18.jpg)
 
-至此，您已準備好部署及測試應用程式！
+您現在已準備好部署和測試應用程式！

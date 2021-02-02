@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: fc444f4d40d8bc013253869fe77ddd563e889d85
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 59bb269bfb8d7e0a9cfd6963cf144ddb0e070c5f
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582984"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421407"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
@@ -36,6 +36,7 @@ ms.locfileid: "98582984"
 | [什麼是 MRTK？](mrtk-getting-started.md) | 熟悉混合實境工具組及其提供的功能，開始您的旅程 |
 | [安裝最新工具](../install-the-tools.md) | 下載並安裝最新的 Unity 套件，並設定您的混合實境專案 |
 | [HoloLens 2 教學課程系列](tutorials/mr-learning-base-01.md) | 進入 HoloLens 2 硬體的入門級 MRTK 教學課程 |
+| **選擇性**[下載 Mixed Reality 功能工具](welcome-to-mr-feature-tool.md) | 新的開發人員工具，可用於探索、更新和新增混合現實功能套件至 Unity 專案 |
 
 > [!IMPORTANT]
 > 如果您想要在未匯入混合實境工具組的情況下建立新的 Unity 專案，則您需要為 Windows Mixed Reality 手動變更一小組 Unity 設定。 這些設定分成兩個類別：每個專案和每個場景。 如需逐步程序，請參閱我們的[設定指南](configure-unity-project.md)。

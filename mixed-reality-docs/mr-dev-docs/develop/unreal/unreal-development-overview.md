@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, OpenXR
-ms.openlocfilehash: a5b65bbfe5a1f365a93836406365fdc395b73c47
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
+ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580047"
+ms.lasthandoff: 02/02/2021
+ms.locfileid: "99421417"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -38,6 +38,7 @@ ms.locfileid: "98580047"
 |  Checkpoint  |  結果  |
 | --- | --- |
 | [安裝最新工具](../install-the-tools.md) | 下載並安裝最新版的 Unreal Engine，並設定您的混合實境專案 |
+| [建立您的第一個 HoloLens Unreal 應用程式](unreal-quickstart.md) | 藉由建立基本的混合現實應用程式，開始您的 Unreal 和 HoloLens 開發旅程 |
 | [HoloLens 2 教學課程系列](tutorials/unreal-uxt-ch1.md) | 在 Unreal 中設定混合實境開發、使用 MRTK 建置您的第一個應用程式，並將您的應用程式部署至 HoloLens 2 |
 | (選擇性) 在 Unreal 中開始使用 [OpenXR](../native/openxr.md) | 如果您想要在 Unreal 中建置 OpenXR 應用程式，您應停用下列引擎外掛程式：<ul><li>Windows Mixed Reality</li></ul><br>從 GitHub 下載下列外掛程式，並在您的專案中啟用：<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>[以下](#supported-features)完整列出 OpenXR 中目前支援的功能。|
 
