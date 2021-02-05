@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: c18bd7c10ed042278053a51c2d1894564000dfe2
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 7f9164540b6d887dcb43bfd6bfa2cc074ee05ce2
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699017"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570221"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1.多使用者功能教學課程簡介
 
@@ -50,7 +50,7 @@ ms.locfileid: "98699017"
   * 已安裝 unity 2019 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a>，並已新增 IOS 組建支援模組
 
 > [!CAUTION]
-> 本教學課程系列的建議混合現實工具組版本是 MRTK 2.5.1。
+> 本教學課程系列的建議混合現實工具組版本是 MRTK 2.5.3。
 
 > [!CAUTION]
 > 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS 這會取代上述必要條件中所述的任何 Unity 版本需求。

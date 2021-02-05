@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: a917aea812c262e3589110a29e2399da4c1e5348
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 5534cba9c6ecc724f71c918398e068bf085a5231
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579267"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570231"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
 
@@ -46,7 +46,7 @@ ms.locfileid: "98579267"
 * 已安裝 Unity 2019 LTS 的 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，且已新增通用 Windows 平台組建支援模組
 
 > [!CAUTION]
-> 本教學課程系列的建議 MRTK 版本為 MRTK 2.5.1。
+> 本教學課程系列的建議 MRTK 版本為 MRTK 2.5.3。
 
 > [!CAUTION]
 > 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。

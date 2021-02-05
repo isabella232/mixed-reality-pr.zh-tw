@@ -7,12 +7,12 @@ ms.date: 07/01/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, ios, android, Windows 10, ARCore, macOS, Android 建置支援, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 9529b12968c5cbc985f4af8eb0053d277eb00c03
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: d973b114e87d060f66ff2033ffb1e54b027b2cf7
+ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699027"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99570241"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1.Azure Spatial Anchors 教學課程簡介
 
@@ -50,7 +50,7 @@ ms.locfileid: "98699027"
   * 已安裝 unity 2019 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a>，並已新增 IOS 組建支援模組
 
 > [!CAUTION]
-> 本教學課程系列的建議混合現實工具組版本是 MRTK 2.5.1。
+> 本教學課程系列的建議混合現實工具組版本是 MRTK 2.5.3。
 
 > [!CAUTION]
 > 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS 這會取代上述必要條件中所述的任何 Unity 版本需求。
