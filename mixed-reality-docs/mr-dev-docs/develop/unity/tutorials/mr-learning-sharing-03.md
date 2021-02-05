@@ -3,16 +3,16 @@ title: 連線多個使用者
 description: 完成此課程，以了解如何連線 HoloLens 2 混合實境應用程式中的多個使用者。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 0c6bf0871836ad7aae9c3906b2042f97ae003ebf
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699051"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590190"
 ---
 # <a name="3-connecting-multiple-users"></a>3.連線多個使用者
 
@@ -69,7 +69,7 @@ ms.locfileid: "98699051"
 
 ### <a name="2-create-the-avatar"></a>2.建立虛擬人偶
 
-在 [專案] 視窗中，流覽至 [**資產**]  >  **MRTK**  >  **StandardAssets**  >  **材質**] 資料夾，以找出 MRTK 的材質。
+在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **StandardAssets**  >  **材質**] 資料夾，以找出 MRTK 的材質。
 
 然後在 [階層] 視窗中，以滑鼠右鍵按一下 [PhotonUser] 物件，然後選取 [3D 物件]  >  [球體]，將球體物件建立為 PhotonUser 物件的子系，並依照下列方式進行設定：
 

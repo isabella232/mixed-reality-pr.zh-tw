@@ -3,15 +3,15 @@ title: 空間音訊教學課程-2。 空間化按鈕互動音效
 description: 將按鈕加入至您的專案，並 spatialize 按鈕互動音效。
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、head 相關的傳送函式、回音、Microsoft 空間定位器、prefabs、音量曲線
-ms.openlocfilehash: e4b2ed99f56fea82b1c72e4fce5205c14e1d3533
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 12d159cb162cbf136483f7be94b0d297319a0737
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578479"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590760"
 ---
 # <a name="2-spatializing-button-interaction-sounds"></a>2.空間化按鈕互動音效
 
@@ -25,7 +25,7 @@ ms.locfileid: "98578479"
 
 ## <a name="add-a-button"></a>新增按鈕
 
-若要新增按鈕預製專案，請在 [ **專案** ] 視窗中選取 [ **資產** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"。
+若要加入按鈕預製專案，請在 [ **專案** ] 視窗中選取 [ **封裝** ]，然後在搜尋列中輸入 "PressableButtonHoloLens2"。
 
 ![資產中的按鈕預製專案](images/spatial-audio/spatial-audio-02-section1-step1-1.png)
 

@@ -3,16 +3,16 @@ title: 建立使用者介面
 description: 本課程說明如何使用混合實境工具組 (MRTK) 來建立靜態和動態使用者介面。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, prefab, 全像投影, 工具提示
 ms.localizationpriority: high
-ms.openlocfilehash: 4fe4b016be36e04abffeb415f690cc0c01a6f767
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 3b32faab4be13d42f228659285244c206680466e
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669494"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590550"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
 
@@ -86,7 +86,7 @@ ms.locfileid: "98669494"
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>建立會跟隨使用者的動態功能表
 
-在 [專案] 視窗中，瀏覽至 [資產] > [MRTK] > [SDK] > [功能] > [UX] > [預製物件] > [功能表] 資料夾，按住 **NearMenu4x1** 預製物件並拖曳至 [階層] 視窗，將其轉換 [位置] 設為 X = 0、Y =-0.4、Z = 0，並依照下列方式進行設定：
+在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **功能表**] 資料夾，並按一下 [ **NearMenu4x1** 預製專案] 並將其拖曳到 [階層] 視窗中，將其轉換 **位置** 設定為 X = 0、Y =-0.4、Z = 0，並依照下列方式進行設定：
 
 * 確認 **SolverHandler** 元件的 [追蹤目標類型] 設定為 **頭部**
 * 核取 **RadialView** 規劃元件旁的核取方塊，使其預設為啟用
@@ -162,7 +162,7 @@ ms.locfileid: "98669494"
 
 ## <a name="adding-tooltips"></a>新增工具提示
 
-在專案視窗中，瀏覽至 **資產** > **MRTK** > **SDK** > **功能** > **UX** > **預製物件** > **工具提示** 資料夾以尋找具提示預製物件：
+在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **工具提示**] 資料夾，以找出工具提示 Prefabs：
 
 ![已選取 [工具提示] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-06-section4-step1-1.png)
 

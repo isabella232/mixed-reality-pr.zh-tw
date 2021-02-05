@@ -1,20 +1,22 @@
 ---
-title: 設定 MRTK 設定檔
-description: 本課程說明如何為混合實境應用程式設定混合實境工具組 (MRTK) 設定檔。
+title: 入門教學課程 - 3。 設定 MRTK 設定檔
+description: 本課程說明如何設定混合實境工具組 (MRTK) 設定檔。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 空間感知
 ms.localizationpriority: high
-ms.openlocfilehash: 9b0c914bd1f518d53abdd681b3a5f6959c9a6211
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 8a45037f7a73d9e74cd714ae4af49b58f44ce297
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579301"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590470"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.設定 MRTK 設定檔
+
+## <a name="overview"></a>概觀
 
 在本教學課程中，您將了解如何自訂和設定 MRTK 設定檔。
 
@@ -47,7 +49,7 @@ ms.locfileid: "98579301"
 > [!NOTE]
 > 組態設定檔是最上層的設定檔。 因此，若要編輯任何其他設定檔，您必須先複製組態設定檔。
 
-在 [階層] 視窗中，選取 [ **MixedRealityToolkit** ] 物件，然後在 [偵測器] 視窗中，確認 **MixedRealityToolkit** 設定設定檔已設定為 **DefaultXRSDKConfigurationProfile**：
+在 [階層] 視窗中選取 **MixedRealityToolkit** 物件，然後在 [偵測器] 視窗中，將 **MixedRealityToolkit** 組態設定檔變更為 **DefaultHoloLens2ConfigurationProfile**：
 
 ![已選取 DefaultHoloLens2ConfigurationProfile 的 Unity MixedRealityToolkit 元件](images/mr-learning-base/base-03-section1-step1-1.png)
 
@@ -55,7 +57,7 @@ ms.locfileid: "98579301"
 
 ![Unity MixedRealityToolkit 元件的 [複製與自訂] 按鈕](images/mr-learning-base/base-03-section1-step1-2.png)
 
-在 [複製設定檔] 視窗中，輸入適當的 **設定檔名稱**，例如 _GettingStarted_XRSDKConfigurationProfile_，然後按一下 [ **複製** ] 按鈕，以建立 **DefaultXRSDKConfigurationProfile** 的可編輯複本：
+在 [複製設定檔] 視窗中，輸入適當的 **設定檔名稱**，例如 _GettingStarted_HoloLens2ConfigurationProfile_，然後按一下 [複製] 按鈕，以建立 **DefaultHololens2ConfigurationProfile** 的可編輯複本：
 
 ![Unity MixedRealityToolkit 複製的 [組態設定檔] 快顯視窗](images/mr-learning-base/base-03-section1-step1-3.png)
 
@@ -83,7 +85,7 @@ ms.locfileid: "98579301"
 
 ![已選取 [空間感知] 索引標籤的 Unity MixedRealityToolkit 元件](images/mr-learning-base/base-03-section1-step3-1.png)
 
-在 [複製設定檔] 視窗中，輸入適當的 **設定檔名稱**，例如 _GettingStarted_XRSDKSpatialAwarenessSystemProfile_，然後按一下 [ **複製** ] 按鈕，以建立 **DefaultXRSDKSpatialAwarenessSystemProfile** 的可編輯複本：
+在 [複製設定檔] 視窗中，輸入適當的 **設定檔名稱**，例如 _GettingStarted_MixedRealitySpatialAwarenessSystemProfile_，然後按一下 [複製] 按鈕，以建立 **DefaultMixedRealitySpatialAwarenessSystemProfile** 的可編輯複本：
 
 ![Unity MixedRealityToolkit 複製的 [空間感知系統設定檔] 快顯視窗](images/mr-learning-base/base-03-section1-step3-2.png)
 
@@ -93,7 +95,7 @@ ms.locfileid: "98579301"
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4.複製預設的空間感知網格觀察器設定檔
 
-在仍選取 [ **空間感知** ] 索引標籤的情況下，展開 [ **XR SDK Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [ **複製** ] 按鈕以開啟 [複製設定檔] 視窗：
+在仍選取 [空間感知] 索引標籤的情況下，展開 [Windows Mixed Reality 空間網格觀察器] 區段，然後按一下 [複製] 按鈕來開啟 [複製設定檔] 視窗：
 
 ![已擴充 Windows Mixed Reality [空間網格觀察者] 區段的 Unity MixedRealityToolkit 元件](images/mr-learning-base/base-03-section1-step4-1.png)
 

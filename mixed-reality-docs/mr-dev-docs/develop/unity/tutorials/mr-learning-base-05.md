@@ -3,16 +3,16 @@ title: 使用解算器建立動態內容
 description: 本課程說明如何使用混合實境工具組 (MRTK) 解算器來建立動態內容。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 6006bf5e3edaee13c8ede0bdc04fd5ea928f1757
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579149"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590480"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -26,14 +26,14 @@ ms.locfileid: "98579149"
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>MRTK 中的解算器位置
 
- MRTK 的解算器位於 MRTK SDK 資料夾中。 若要查看專案中的可用解算器，請在 [專案] 視窗中瀏覽至 [資產]  >  [MRTK]  >  [SDK]  >  [功能]  >  [公用程式] >  [解算器]：
+ MRTK 的解算器位於 MRTK SDK 資料夾中。 若要查看專案中的可用解析器，請在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **公用程式**  >  **解析器**：
 
 ![已選取 [解算器] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-05-section1-step1-1.png)
 
 在本教學課程中，我們將檢閱「方向性指標解算器」和「點選放置解算器」的實作。 若要深入了解 MRTK 中可用的完整解算器範圍，您可以參閱 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[解算器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)指南。
 
 > [!NOTE]
-> 「方向性指標解算器」不會位於以上參考的 [解算器] 資料夾中，而是在 [資產] > [MRTK] > [SDK] > [實驗] > [功能] > [公用程式] 資料夾中，因為該解算器是實驗功能。
+> 方向性指標的求解器不在上述的解析器資料夾中，但在套件 > 混合現實工具組 Foundation > SDK > 實驗性 > 功能 > 公用程式資料夾，因為這是實驗性的功能。
 
 ## <a name="using-the-directional-indicator-solver-to-direct-the-user-to-objects"></a>使用「方向性指標解算器」將使用者導向至物件
 

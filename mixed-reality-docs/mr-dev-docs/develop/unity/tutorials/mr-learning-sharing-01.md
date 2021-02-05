@@ -3,16 +3,16 @@ title: 多使用者功能教學課程簡介
 description: 完成此課程以了解如何在 HoloLens 2 應用程式中實作共用的多使用者體驗。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 7f9164540b6d887dcb43bfd6bfa2cc074ee05ce2
-ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
+ms.openlocfilehash: 90c5b2ee3f25c39fc644aee0fbbf49643f7d2a59
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570221"
+ms.locfileid: "99590170"
 ---
 # <a name="1-introduction-to-the-multi-user-capabilities-tutorials"></a>1.多使用者功能教學課程簡介
 

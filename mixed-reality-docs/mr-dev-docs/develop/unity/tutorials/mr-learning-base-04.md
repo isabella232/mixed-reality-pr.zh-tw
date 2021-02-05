@@ -3,16 +3,16 @@ title: MRTK 教學課程 - 4. 將物件置放在場景中
 description: 本課程會說明如何將物件置放在場景中，以及如何使用混合實境工具組 (MRTK) 將物件組織到格線中。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器, 網格物件集合
 ms.localizationpriority: high
-ms.openlocfilehash: 27964cad03111a3f7dad89c66df0cb9a4f95a9e2
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 9087800eca3536704ed4ef01a5d8178720b6a875
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98579207"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590498"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4.將物件置放在場景中
 
@@ -27,16 +27,25 @@ ms.locfileid: "98579207"
 
 ## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
 
-下載並匯入下列 Unity 自訂套件：
+下載下列 Unity 自訂套件：
 
 * [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
 
-匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
+若要匯入 unity 自訂套件，請在 Unity 功能表中，選取 [**資產** 匯  >  **入套件**  >  **自訂套件 ...** ] 開啟 [匯入封裝 ...]視窗：
 
 ![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-04-section1-step1-1.png)
 
-> [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入 MRTK](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
+在 [匯入封裝 ...]視窗中，選取 **MRTK。HoloLens2** 您下載的 GettingStarted，然後按一下 [開啟] 按鈕：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-04-section1-step1-2.png)
+
+在 [匯入 Unity 套件] 視窗中，按一下 [全部] 按鈕以確保選取所有資產，然後按一下 [匯入] 按鈕來匯入資產：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-04-section1-step1-3.png)
+
+匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-04-section1-step1-4.png)
 
 ## <a name="creating-the-parent-object"></a>建立父物件
 

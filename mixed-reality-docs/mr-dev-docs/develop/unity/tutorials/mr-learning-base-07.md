@@ -3,16 +3,16 @@ title: 與 3D 物件互動
 description: 本課程說明如何使用混合實境工具組 (MRTK) 來與混合實境應用程式中的 3D 物件互動及進行操作。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
-keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 物件互動, 週框方塊
+keywords: 混合現實、unity、教學課程、hololens、MRTK、混合現實工具組、UWP、物件互動、界限會控制
 ms.localizationpriority: high
-ms.openlocfilehash: 23cfe3d3746d6ab6dbc0757f32b95ddc8637a366
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578743"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590428"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -76,7 +76,7 @@ ms.locfileid: "98578743"
 > [!NOTE]
 > 此時，您已針對所有 Rover 零件物件和 RoverAssembly 物件啟用物件操作。
 
-在 [專案] 視窗中，流覽至 [**資產**]  >  **MRTK**  >  **StandardAssets**[  >  **音訊**] 資料夾，以找出音訊剪輯：
+在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組標準資產**]  >  **音訊** 資料夾以找出音訊剪輯：
 
 ![已選取 [音訊] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-07-section1-step1-3.png)
 
@@ -115,15 +115,15 @@ ms.locfileid: "98578743"
 
 若要深入了解 Object Manipulator (物件操作工具) 元件及其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的 [Object Manipulator (物件操作工具)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 指南。
 
-## <a name="adding-bounding-boxes"></a>新增週框方塊
+## <a name="adding-bounds-control"></a>加入界限控制項
 
-周框方塊可提供可用於縮放和旋轉的控制碼，讓您更輕鬆且更直覺地操作物件。
+界限控制項可提供可用於縮放和旋轉的控制碼，讓您更輕鬆且更直覺地操作物件。
 
-在此範例中，您會將周框方塊新增至 RoverExplorer 物件，因此可以輕鬆地移動、旋轉和縮放整個體驗。 此外，您將設定功能表，讓您可以開啟和關閉周框方塊。
+在此範例中，您會將 BoundsControl 新增至 RoverExplorer 物件，如此即可輕鬆地移動、旋轉和縮放整個體驗。 此外，您將設定功能表，讓您可以開啟和關閉界限控制項。
 
 在 [階層] 視窗中，選取 **RoverExplorer** 物件，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增下列元件：
 
-* **BoundingBox** 元件
+* **BoundsControl** 元件
 * **Object Manipulator (指令碼)** 元件
 
 然後 **取消** 核取所有元件旁的核取方塊，使其預設為 **停用** ：
@@ -131,19 +131,19 @@ ms.locfileid: "98578743"
 ![已選取 RoverExplorer 物件並已新增和停用元件的 Unity](images/mr-learning-base/base-07-section2-step1-1.png)
 
 > [!NOTE]
-> 周框方塊視覺效果是在執行時間建立的，因此，在您進入遊戲模式之前看不到。
+> 界限控制項視覺效果是在執行時間建立的，因此，在您進入遊戲模式之前看不到。
 
 > [!NOTE]
->BoundingBox 元件將會在執行階段尚自動新增 NearInteractionGrabbable 元件。 因此，我們不需要新增此元件，就能以追蹤的手部抓取框起來的物件。
+>BoundsControl 元件會在執行時間自動新增 NearInteractionGrabbable 元件。 因此，我們不需要新增此元件，就能以追蹤的手部抓取框起來的物件。
 
 > [!NOTE]
 >物件操作工具 (腳本) 會自動加入條件約束管理員 (腳本) 
 
-在 [階層] 視窗中，展開功能表 > **ButtonCollection** 物件以顯示四個按鈕，並將第三個按鈕重新命名為 **BoundingBox_Enable**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
+在 [階層] 視窗中，展開功能表 > **ButtonCollection** 物件，以顯示四個按鈕，並將第三個按鈕重新命名為 **BoundsControl_Enable**，然後在 [偵測器] 視窗中，設定按鈕設定協助程式 **(腳本)** 元件，如下所示：
 
 * 將 [主要標籤文字] 變更為 [啟用]
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
-* 從 [沒有函式] 下拉式清單中，選取 [BoundingBox] >  [bool Enabled] 以在觸發事件時更新此屬性值
+* 從 [**沒有** 函式] 下拉式清單中，選取 [ **BoundsControl**  >  **bool Enabled** ]，以在觸發事件時更新此屬性值
 * 確認 **已核取** 引數核取方塊
 * 按一下小型 **+** 圖示，以新增另一個事件
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
@@ -151,13 +151,13 @@ ms.locfileid: "98578743"
 * 確認 **已核取** 引數核取方塊
 * 將 **圖示** 保留為「具有界限控制項的 cube」圖示
 
-![已選取 BoundingBox_Enable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-2.png)
+![已選取 BoundsControl_Enable 按鈕物件和設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-2.png)
 
-將第四個 (也就是最後一個) 按鈕重新命名為 **BoundingBox_Disable**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (Script)** 元件，如下所示：
+將 [向下] 和 [最後] 按鈕重新命名為 **BoundsControl_Disable**，然後在 [偵測器] 視窗中，設定 **按鈕設定 Helper (腳本)** 元件，如下所示：
 
 * 將 [主要標籤文字] 變更為 [停用]
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
-* 從 [沒有函式] 下拉式清單中，選取 [BoundingBox] >  [bool Enabled] 以在觸發事件時更新此屬性值
+* 從 [**沒有** 函式] 下拉式清單中，選取 [ **BoundsControl**  >  **bool Enabled** ]，以在觸發事件時更新此屬性值
 * 確認 **未核取** 引數核取方塊
 * 按一下小型 **+** 圖示，以新增另一個事件
 * 將 **RoverExplorer** 物件指派給 [無 (物件)] 欄位
@@ -165,17 +165,17 @@ ms.locfileid: "98578743"
 * 確認 **未核取** 引數核取方塊
 * 將 **圖示** 變更為「具有界限控制項的 cube」圖示
 
-![已選取 BoundingBox_Disable 按鈕物件並已設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-3.png)
+![已選取 BoundsControl_Disable 按鈕物件和設定按鈕設定協助程式元件的 Unity](images/mr-learning-base/base-07-section2-step1-3.png)
 
-如果您現在進入遊戲模式，並按一下 [啟用] 按鈕來啟用界限控制項，則可以使用接近或遠的互動來移動、旋轉和縮放周框方塊，然後使用 [停用] 按鈕再次停用周框方塊：
+如果您現在進入遊戲模式，並按一下 [啟用] 按鈕來啟用界限控制項，則可以使用接近或遠的互動來移動、旋轉和縮放界限控制項，然後使用 [停用] 按鈕再次停用界限控制項：
 
-![正在操作週框方塊的 Unity 播放模式分割檢視](images/mr-learning-base/base-07-section2-step1-4.png)
+![要操作界限控制項的 Unity 播放模式分割視圖](images/mr-learning-base/base-07-section2-step1-4.png)
 
-若要深入瞭解周框方塊元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的周[框](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)方塊指南。
+若要深入瞭解界限控制元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[界限控制](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)指南。
 
 ## <a name="congratulations"></a>恭喜！
 
-在本教學課程中，您已了解如何啟用 3D 物件的遠近操作，以及如何限制允許的操作類型。 您也已瞭解如何在3D 物件周圍新增周框方塊，讓您更輕鬆地控制物件操作。
+在本教學課程中，您已了解如何啟用 3D 物件的遠近操作，以及如何限制允許的操作類型。 您也已瞭解如何在3D 物件周圍新增界限控制項，讓您更輕鬆地控制物件操作。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：8.使用眼球追蹤](mr-learning-base-08.md)

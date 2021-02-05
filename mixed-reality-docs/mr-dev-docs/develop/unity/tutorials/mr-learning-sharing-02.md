@@ -3,16 +3,16 @@ title: 設定 Photon Unity 網路
 description: 完成此課程，以了解如何在 HoloLens 2 混合實境應用程式中實作 Photon Unity 網路。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 1c47da28b3ccdc706f372749f265ac0329a2327b
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699131"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590310"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -82,7 +82,7 @@ ms.locfileid: "98699131"
 ![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組 ](mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 > [!NOTE]
 > 匯入 MultiUserCapabilities 教學課程資產套件之後，您會在主控台視窗中看到數個 [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) 錯誤，其指出缺少類型或命名空間。 這是預期的情況，將在下一節匯入 PUN 資產時解決。

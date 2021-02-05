@@ -3,16 +3,16 @@ title: Azure 語音服務教學課程 - 1。 整合並使用語音辨識和文�
 description: 完成此課程以了解如何在混合實境應用程式中實作 Azure 語音 SDK。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 02/26/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: c663bbf443c206750854c1b8f4cd8946eacd28b1
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 818e4c7ab60a2b17b60bfc97f564a4a87bf33a9b
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669468"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590120"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1.整合並使用語音辨識和文字記錄
 
@@ -63,7 +63,7 @@ ms.locfileid: "98669468"
 ![mrlearning-speech](images/mrlearning-speech/tutorial1-section2-step1-1.png)
 
 > [!TIP]
-> 如需有關如何複製及設定 MRTK 設定檔的提示，您可以參閱[設定混合實境工具組設定檔](mr-learning-base-03.md)的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 ## <a name="configuring-the-capabilities"></a>設定功能
 

@@ -3,15 +3,15 @@ title: 空間音訊教學課程-1。 在專案中新增空間音訊
 description: 將 Microsoft 空間定位器外掛程式新增至您的 Unity 專案，以存取 HoloLens 2 HRTF 硬體卸載。
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: cc7a4db5a3b4d853f2912a5e8e022fddd372e105
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 7ed1355e3c522fcd94a96dd761a8a9ebb01c4c4c
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635386"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590040"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. 將空間音訊新增至 Unity 專案
 
@@ -70,7 +70,7 @@ ms.locfileid: "98635386"
 下載並匯入 Microsoft 空間定位器  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">SpatialAudio. 空間定位器. 1.0.18. unitypackage </a>
 
 >[!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](../../../mrlearning-base-ch1.md#import-the-mixed-reality-toolkit) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>啟用 Microsoft 空間定位器外掛程式
 

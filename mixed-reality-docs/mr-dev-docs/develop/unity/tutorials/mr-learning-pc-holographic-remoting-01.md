@@ -3,16 +3,16 @@ title: 開始使用電腦全像攝影遠端處理
 description: 完成此課程，以了解如何從遠端將混合實境應用程式從電腦串流到 HoloLens 2。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/29/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: d8c7de8a93a32107afe67a1d0375612ab6245be9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5a779ca03921701b2111e4ed5525b6f7bc250070
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581966"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590380"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -67,7 +67,7 @@ ms.locfileid: "98581966"
 下載並 **匯入** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)。
 
 >[!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](./mr-learning-base-02.md#importing-the-mixed-reality-toolkit) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 匯入教學課程資產之後，您的 [專案] 視窗看起來應該會像這樣：
 
@@ -129,9 +129,9 @@ ms.locfileid: "98581966"
 
 現在您的按鈕已設定為示範模型切換和裁剪功能。 現在可以將 3D 模型和裁剪物件新增至指令碼。
 
-我們提供六種不同的 3D 模型作為示範，請展開 *_ModelParentobject_* 以公開這些 3D 模型。
+我們提供六種不同的 3D 模型作為示範，請展開 ***ModelParentobject*** 以公開這些 3D 模型。
 
-在 [階層] 視窗中保持選取 ButtonParent 物件，在 [偵測器] 視窗中，找出 *View Button Control (指令碼)* 元件，然後展開 **Models** 變數。
+在 [階層] 視窗中保持選取 ButtonParent 物件，在 [偵測器] 視窗中，找出 **View Button Control (指令碼)** 元件，然後展開 **Models** 變數。
 
 在 [大小] 欄位中，輸入您想要在場景中擁有的 3D 模型數目。 在此案例中，此值會是 6。 會建立欄位以新增新的 3D 模型。
 
@@ -169,7 +169,7 @@ ms.locfileid: "98581966"
 
 ### <a name="1-identify-target-objects-and-associated-tooltips"></a>1.識別目標物件和相關聯的工具提示
 
-在 [階層] 視窗中，選取 [ModelParent] 物件。 展開 [MarsCuriosity] -> [Rover]***，以尋找 MarsCuriosityRover 的五個主要部分：* POI-Camera**、**POI-Wheels**、**POI-Antena**、**POI-Spectrometer**、**POI-RUHF Antenna**。
+在 [階層] 視窗中，選取 [ModelParent] 物件。 展開 ***MarsCuriosity-> Rover** _ 以找出 MarsCuriosityRover 的五個主要部分： _ * POI-攝影機 * *、 **POI-輪子**、 **POI-Antena**、 **POI-Spectrometer**、 **POI-RUHF 天線**。
 
 * 觀察與 [階層] 視窗中 MarsCuriosityRover 組件相關聯的五個對應工具提示物件。
 * 當您查看 MarsCuriosityRover 組件時，將會設定這些物件以醒目提示體驗。

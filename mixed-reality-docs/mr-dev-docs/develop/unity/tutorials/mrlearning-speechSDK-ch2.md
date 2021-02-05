@@ -3,16 +3,16 @@ title: 新增本機語音轉換文字翻譯離線模式
 description: 完成此課程，以了解如何在混合實境應用程式中新增離線模式以進行本機語音轉換文字翻譯。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 06/27/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: db495d6cdfa99721e68b4004535a5411bde9b17d
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98010078"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590150"
 ---
 # <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.新增本機語音轉換文字翻譯離線模式
 

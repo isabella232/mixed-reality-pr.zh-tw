@@ -3,16 +3,16 @@ title: 使用語音命令
 description: 本課程說明如何在混合實境應用程式中透過混合實境工具組 (MRTK) 來設定、建立及使用語音命令。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 語音命令, 語音輸入
 ms.localizationpriority: high
-ms.openlocfilehash: c052c3501ab34811f33f1f6464c8394669eebe77
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669469"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590390"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
 
@@ -59,7 +59,7 @@ ms.locfileid: "98669469"
 
 ## <a name="controlling-speech-commands"></a>控制語音命令
 
-在 [專案] 視窗中，瀏覽至 [資產] > [MRTK] > [SDK] > [功能] > [UX] > [Prefabs] > [ToolTip] 資料夾找出工具提示 Prefab：
+在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **工具提示**] 資料夾，以找出工具提示 Prefabs：
 
 ![開啟工具提示資料夾](images/mr-learning-base/base-09-section3-step1-1.png)
 

@@ -3,15 +3,15 @@ title: 空間音訊教學課程-3。 從影片空間化音訊
 description: 將影片資產匯入您的 Unity 專案，並從影片 spatialize 音訊。
 author: kegodin
 ms.author: v-hferrone
-ms.date: 12/01/2019
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器、影片匯入、影片播放工具
-ms.openlocfilehash: 6474da522e650d23349a21c3deeac00222b8ce93
-ms.sourcegitcommit: a56a551ebc59529a3683fe6db90d59f982ab0b45
+ms.openlocfilehash: 876918c3e886fae6cd2066d84c55a6e158e4c773
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/19/2021
-ms.locfileid: "98578569"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590050"
 ---
 # <a name="3-spatializing-audio-from-a-video"></a>3.從影片空間化音訊
 

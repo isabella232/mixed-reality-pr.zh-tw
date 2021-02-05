@@ -3,16 +3,16 @@ title: 建立全像攝影遠端處理電腦應用程式
 description: 完成此課程，以了解如何建立電腦應用程式，以遠端處理從您的電腦到 HoloLens 2 的混合實境體驗。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: fd357b0b487b948afb6ae15c9e84362e2bc1ef90
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 916a9396c0b29637d5619bac203718e05112b598
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007328"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590300"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.建立全像攝影遠端處理電腦應用程式
 
@@ -53,7 +53,7 @@ ms.locfileid: "98007328"
 
 在 Unity 功能表中，選取 [檔案] > [建置設定] 來開啟 [建置設定] 視窗。
 
-在 [建置設定] 視窗中，按一下 [新增開啟的場景] 按鈕，將您目前的場景新增至場景。 在 [建置] 清單中，按一下 [建置按鈕] 以開啟 [建置通用 Windows 平台] 視窗：
+在 [組建設定] 視窗中，按一下 [**新增開啟的場景** _] 按鈕，將您目前的場景新增至幕後。 在 [組建] 清單中，按一下 [_ *_組建] 按鈕_** 以開啟組建通用 Windows 平臺視窗：
 
 ![已新增場景的 Unity [建置設定] 視窗](images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step2-1.png)
 
@@ -86,7 +86,7 @@ ms.locfileid: "98007328"
 
 ### <a name="1-install-the-remoting-player-application-on-hololens-2-device"></a>1.在 HoloLens 2 裝置上安裝遠端播放程式應用程式
 
-在您的 HoloLens 2 上，瀏覽市集應用程式並搜尋「遠端播放程式」。
+* 在您的 HoloLens 2 上，瀏覽市集應用程式並搜尋「遠端播放程式」。
 * 選取 **遠端處理播放程式** 應用程式。
 * 請點選 [安裝] 來下載並安裝應用程式。
 

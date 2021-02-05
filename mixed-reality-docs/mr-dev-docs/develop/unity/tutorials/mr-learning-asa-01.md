@@ -3,16 +3,16 @@ title: Azure Spatial Anchors 教學課程簡介
 description: 完成此課程以了解如何在混合實境應用程式中實作 Azure Spatial Anchors。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, ios, android, Windows 10, ARCore, macOS, Android 建置支援, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: d973b114e87d060f66ff2033ffb1e54b027b2cf7
-ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
+ms.openlocfilehash: 6ef488dec38a918e0a3707b06644002a51c7d5e5
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570241"
+ms.locfileid: "99590690"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1.Azure Spatial Anchors 教學課程簡介
 

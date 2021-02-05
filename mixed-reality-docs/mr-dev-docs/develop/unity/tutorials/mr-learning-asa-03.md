@@ -3,16 +3,16 @@ title: 儲存、擷取和共用 Azure Spatial Anchors
 description: 完成此課程以了解如何在混合實境應用程式中儲存、擷取和共用 Azure Spatial Anchors。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 應用程式工作階段
 ms.localizationpriority: high
-ms.openlocfilehash: 4bae36bfb24130fc7914563af07c09374162f3cb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 91f1139181a5a77123e003fc0c64d0661220a143
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582055"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590680"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.儲存、擷取和共用 Azure Spatial Anchors
 

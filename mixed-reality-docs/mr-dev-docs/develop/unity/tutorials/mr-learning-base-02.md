@@ -3,16 +3,16 @@ title: 初始化您的專案並部署您的第一個應用程式
 description: 本課程說明如何為混合實境工具組 (MRTK) 設定 Unity 專案，以及如何將其部署到 HoloLens 2。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ff479df81316ab5ceeabf045ad1bbae007190ed4
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 39226105fa9cdbbe01defa37ec1bd3a64389056e
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99238146"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99590604"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -86,27 +86,46 @@ ms.locfileid: "99238146"
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>匯入混合實境工具組
 
-### <a name="using-the-mixed-reality-feature-tool"></a>使用 Mixed Reality 功能工具
+若要將混合現實工具組匯入 Unity 專案中，您必須使用「 [混合現實」功能工具](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) ，讓開發人員能夠探索、更新和新增混合現實功能套件至 unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。
 
-若要使用新的「混合現實」功能工具應用程式安裝 MRTK，請遵循我們的 [安裝和使用指示](../welcome-to-mr-feature-tool.md) ，然後在「混合現實工具組」類別中選取 [ **混合現實工具** 組] 基礎套件。
+請從 [Microsoft 下載中心](https://aka.ms/MRFeatureTool)下載最新版本的混合現實功能工具，下載完成後，請將檔案解壓縮，並將其儲存到您的桌面。
 
-### <a name="using-unity-packages"></a>使用 Unity 套件
+> [!NOTE]
+> 在您可以執行混合現實功能工具之前，請先定[.net 5.0 運行](https://dotnet.microsoft.com/download/dotnet/5.0)時間
 
-若要使用自訂套件安裝 MRTK：
+> [!NOTE]
+> 混合現實功能工具目前只在 Windows 上執行，若為 MacOS，請依照此程式下載並匯入混合現實工具 [組至 unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) 專案。
 
-* [MixedReality.... unitypackage](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/download/v2.5.1/Microsoft.MixedReality.Toolkit.Unity.Foundation.2.5.1.unitypackage)
+從下載的資料夾開啟可執行檔 **MixedRealityFeatureTool** ，以啟動「混合現實」功能工具。  
 
-在 Unity 功能表中，選取 [資產]  >  [匯入套件]  >  [自訂套件 ...] 以開啟 [匯入套件...] 視窗：
+![開啟 MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-![Unity 匯入 [自訂套件...] 功能表路徑](images/mr-learning-base/base-02-section4-step1-1.png)
+開啟 **MixedRealityFeatureTool** 之後，請按一下 [開始] 以開始使用混合現實功能工具。
 
-在 [匯入封裝 ...]視窗中，選取您下載的 **MixedReality unitypackage** ，然後按一下 [ **開啟** ] 按鈕：
+![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
 
-![具有 [開啟] 提示視窗的 Unity 匯入 [自訂套件]](images/mr-learning-base/base-02-section4-step1-2.png)
+功能會依類別目錄分組，讓您更容易找到這些專案，請按一下 [ **Mixed Reality 工具** 組] 下拉式清單，以尋找與混合現實工具組相關的套件。
 
-在 [匯入 Unity 套件] 視窗中，按一下 [全部] 按鈕以確保選取所有資產，然後按一下 [匯入] 按鈕來匯入資產：
+![MixedRealityFeatureTool 視窗](images/mr-learning-base/base-02-section4-step1-3.png)
 
-![Unity MRTK Foundation 匯入視窗](images/mr-learning-base/base-02-section4-step1-3.png)
+檢查 **Mixed Reality 工具組 Foundation**，然後按一下其旁邊的下拉式清單，以選取所需的 MRTK 版本，在此教學課程系列中，請選取 [ **2.5.3**]。 然後按一下 [ **取得功能** ] 按鈕，以下載選取的封裝。
+
+![選取混合的現實基礎](images/mr-learning-base/base-02-section4-step1-4.png)
+
+在 [匯 **入功能**] 視窗中會顯示選取的套件 **混合現實工具組 Foundation 2.5.3** ，以及其相依套件 **混合現實工具組標準資產 2.5.3** 。
+
+您也需要設定目標 unity 專案的位置以提供 **專案路徑**，按一下專案路徑旁的 **三個點** ，然後在 explorer 中流覽至您的專案資料夾，例如 _D:\MixedRealityLearning\MRTK 教學_ 課程。
+
+> [!NOTE]
+> 流覽 Unity 專案資料夾時顯示的對話方塊會包含 ' _ ' 作為檔案名。 檔案名必須有一個值，才能選取該資料夾。
+
+接下來按一下 [ **驗證** ] 按鈕以驗證選取的封裝，您會看到 [偵測 **不到驗證問題** 的快顯視窗 **] 按一下 [確定]** 關閉快顯視窗，然後按一下 [匯 **入** ] 按鈕。
+
+![驗證混合的現實基礎](images/mr-learning-base/base-02-section4-step1-5.png)
+
+按一下 [ **核准** ] 按鈕，將 **Mixed Reality 工具** 組新增至專案。
+
+![核准混合的現實基礎](images/mr-learning-base/base-02-section4-step1-6.png)
 
 ## <a name="configuring-the-unity-project"></a>設定 Unity 專案
 
@@ -130,17 +149,7 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 
 在 Unity 功能表中，選取 [編輯] >  [專案設定...] 來開啟 [專案設定] 視窗：
 
-![Unity [專案設定...] 功能表路徑](images/mr-learning-base/base-02-section5-step2-1.png)
-
-在 [專案設定] 視窗中，選取 [ **XR 外掛程式管理**  >  **安裝 XR 外掛程式管理**]，以安裝 XR 外掛程式管理：
-
-![已選取 XR 外掛程式管理的專案設定](images/mr-learning-base/base-02-section5-step2-2.png)
-
-Unity 完成安裝 XR 外掛程式管理之後。 確定您處於通用 Windows 平臺設定，並在啟動時檢查 Initialize XR。
-
-![Unity 設定 XR 外掛程式管理](images/mr-learning-base/base-02-section5-step2-3.png)
-
-在 [專案設定] 視窗中，選取 [播放程式] > [XR 設定]，按一下 **+** 圖示，然後選取 Windows Mixed Reality 來新增 Windows Mixed Reality SDK：
+在 [專案設定] 視窗中，選取 [ **Player**  >  **XR 設定**] 並選取 [**支援虛擬**] 核取方塊，然後按一下 **+** 圖示，然後選取 [Windows Mixed Reality] 以新增 Windows Mixed Reality SDK：
 
 ![已選取新增 [Windows Mixed Reality] SDK 的 Unity XR 設定](images/mr-learning-base/base-02-section5-step2-4.png)
 
@@ -148,10 +157,10 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 
 在 [MRTK 專案設定] 視窗中，使用 **Audio 空間定位器** 下拉式清單選取 [MS HRTF 空間定位器]，然後按一下 [套用] 按鈕來套用設定：
 
-![反白顯示 [音訊空間定位器] 屬性的 [MRTK 專案配置器] 視窗](images/mr-learning-base/base-02-section5-step2-5.png)
+![已選取新增 [Windows Mixed Reality] SDK 的 Unity XR 設定](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
->您可以選擇是否設定 [音訊空間定位器] 屬性，但這麼做可以改善專案中的音訊體驗。 如果您將此屬性設定為 [MS HRTF 空間定位器]，當 Unity 的 AudioSource.spatialize 屬性啟用時，便會使用此空間定位器外掛程式。 若要深入瞭解本主題，您可以參考  <a href="https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> 空間音訊教學</a>課程。
+>您可以選擇是否設定 [音訊空間定位器] 屬性，但這麼做可以改善專案中的音訊體驗。 如果您將此屬性設定為 [MS HRTF 空間定位器]，當 Unity 的 AudioSource.spatialize 屬性啟用時，便會使用此空間定位器外掛程式。 若要深入瞭解本主題，您可以參考  <a href="https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> 空間音訊教學</a>課程。
 
 在 [專案設定] 視窗中，選取 [播放程式] > [XR 設定]，然後使用 **深度格式** 下拉式清單選取 **16 位元深度**：
 

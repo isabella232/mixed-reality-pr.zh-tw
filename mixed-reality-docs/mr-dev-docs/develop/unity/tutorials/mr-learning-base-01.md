@@ -3,16 +3,16 @@ title: MRTK 教學課程簡介
 description: 本課程說明如何使用混合實境工具組 (MRTK) 從頭建立混合實境應用程式。
 author: jessemcculloch
 ms.author: jemccull
-ms.date: 07/01/2020
+ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: 5534cba9c6ecc724f71c918398e068bf085a5231
-ms.sourcegitcommit: d9f87635c87627adba7db37834e4627c149f9a28
+ms.openlocfilehash: 8bae8b821e7ffe67b745bbbab763193612a58485
+ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 02/05/2021
-ms.locfileid: "99570231"
+ms.locfileid: "99590410"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
 
