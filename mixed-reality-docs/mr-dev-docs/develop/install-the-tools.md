@@ -7,20 +7,22 @@ ms.date: 01/13/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: c45fa347768e5d35441f2c1fd59da815a80ec707
-ms.sourcegitcommit: 4b6815605e2ea3830052baed38df21af354d2f9b
-ms.translationtype: HT
+ms.openlocfilehash: 0b952922c7723bf0e2c87ddb7fed9a896d65e833
+ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98166773"
+ms.lasthandoff: 02/05/2021
+ms.locfileid: "99606123"
 ---
 # <a name="install-the-tools"></a>安裝工具
 
 取得為 Microsoft HoloLens 和 Windows Mixed Reality 沉浸式 (VR) 頭戴裝置建置應用程式所需的工具。 沒有個別的 SDK 可用於 Windows Mixed Reality 開發，您將使用 Visual Studio 搭配 Windows 10 SDK。
 
-沒有混合實境裝置嗎？ 您可以安裝 [HoloLens 模擬器](platform-capabilities-and-apis/using-the-hololens-emulator.md)，以在沒有 HoloLens 的情況下測試混合實境應用程式的一些功能。 您也可以使用 [Windows Mixed Reality 模擬器](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)，針對沉浸式頭戴裝置測試您的混合實境應用程式。 如果您正在使用 Unity，則可以使用[混合實境工具組 (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity) 的輸入模擬來測試各種類型的輸入互動，例如手勢追蹤和眼球追蹤輸入。
+沒有混合實境裝置嗎？ 您可以安裝 [HoloLens 模擬器](platform-capabilities-and-apis/using-the-hololens-emulator.md)，以在沒有 HoloLens 的情況下測試混合實境應用程式的一些功能。 您也可以使用 [Windows Mixed Reality 模擬器](platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)，針對沉浸式頭戴裝置測試您的混合實境應用程式。 
 
-我們建議您安裝 Unity 遊戲引擎，因為這是開始建立混合實境應用程式的最簡單方式。 不過，如果您想要使用自訂引擎，也可以針對 DirectX 進行建置。
+建議您將 Unity 或 Unreal 遊戲引擎安裝為開始建立混合現實應用程式的最簡單方式。 不過，如果您想要使用自訂引擎，也可以針對 DirectX 進行建置。
+
+如果您使用 Unity，則可以使用 [適用于 unity 的輸入模擬的混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity)組來測試各種類型的輸入互動，例如手動追蹤和眼睛追蹤輸入。 若為 Unreal 專案，請使用 [UX 工具外掛程式](https://github.com/microsoft/MixedReality-UXTools-Unreal) 來測試常見的輸入互動和使用者體驗功能。
 
 >[!TIP]
 >將這個頁面加入書籤並定期檢查，以在建議用於混合實境開發的每個工具最新版本上保持最新狀態。
