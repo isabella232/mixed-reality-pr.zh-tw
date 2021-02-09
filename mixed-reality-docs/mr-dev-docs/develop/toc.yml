@@ -116,54 +116,56 @@
                   href: unity/tutorials/mr-learning-pc-holographic-remoting-02.md
         - name: HoloLens (第 1 代) 和沉浸式頭戴裝置教學課程
           items:
-            - name: MR Basics 100 - 開始使用 Unity
-              href: unity/tutorials/holograms-100.md
-            - name: MR Basics 101 - 使用裝置完成專案
-              href: unity/tutorials/holograms-101.md
-            - name: MR Basics 101E - 使用模擬器完成專案
-              href: unity/tutorials/holograms-101e.md
-            - name: MR Input 210 - 目光
-              href: unity/tutorials/holograms-210.md
-            - name: MR Input 211 - 手勢
-              href: unity/tutorials/holograms-211.md
-            - name: MR Input 212 - 語音
-              href: unity/tutorials/holograms-212.md
-            - name: MR Spatial 220 - 空間音效
-              href: unity/tutorials/holograms-220.md
-            - name: MR Spatial 230 - 空間對應
-              href: unity/tutorials/holograms-230.md
-            - name: MR Sharing 240 - 多重 HoloLens 裝置
-              href: unity/tutorials/holograms-240.md
-        - name: 混合實境和 Azure 服務教學課程
-          items:
-            - name: MR 和 Azure 301 - 語言翻譯
-              href: unity/tutorials/mr-azure-301.md
-            - name: MR 和 Azure 302 - 電腦視覺
-              href: unity/tutorials/mr-azure-302.md
-            - name: MR 和 Azure 302b - 自訂視覺
-              href: unity/tutorials/mr-azure-302b.md
-            - name: MR 和 Azure 303 - 自然語言理解
-              href: unity/tutorials/mr-azure-303.md
-            - name: MR 和 Azure 304 - 臉部辨識
-              href: unity/tutorials/mr-azure-304.md
-            - name: MR 和 Azure 305 - 函式和儲存體
-              href: unity/tutorials/mr-azure-305.md
-            - name: MR 和 Azure 306 - 串流影片
-              href: unity/tutorials/mr-azure-306.md
-            - name: MR 和 Azure 307 - 機器學習
-              href: unity/tutorials/mr-azure-307.md
-            - name: MR 和 Azure 308 - 跨裝置通知
-              href: unity/tutorials/mr-azure-308.md
-            - name: MR 和 Azure 309 - 應用程式深入解析
-              href: unity/tutorials/mr-azure-309.md
-            - name: MR 和 Azure 310 - 物件偵測
-              href: unity/tutorials/mr-azure-310.md
-            - name: MR 和 Azure 311 - Microsoft Graph
-              href: unity/tutorials/mr-azure-311.md
-            - name: MR 和 Azure 312 - Bot 整合
-              href: unity/tutorials/mr-azure-312.md
-            - name: MR 和 Azure 313 - IoT 中樞服務
-              href: unity/tutorials/mr-azure-301.md
+            - name: 混合的現實功能
+              items:
+                - name: MR Basics 100 - 開始使用 Unity
+                  href: unity/tutorials/holograms-100.md
+                - name: MR Basics 101 - 使用裝置完成專案
+                  href: unity/tutorials/holograms-101.md
+                - name: MR Basics 101E - 使用模擬器完成專案
+                  href: unity/tutorials/holograms-101e.md
+                - name: MR Input 210 - 目光
+                  href: unity/tutorials/holograms-210.md
+                - name: MR Input 211 - 手勢
+                  href: unity/tutorials/holograms-211.md
+                - name: MR Input 212 - 語音
+                  href: unity/tutorials/holograms-212.md
+                - name: MR Spatial 220 - 空間音效
+                  href: unity/tutorials/holograms-220.md
+                - name: MR Spatial 230 - 空間對應
+                  href: unity/tutorials/holograms-230.md
+                - name: MR Sharing 240 - 多重 HoloLens 裝置
+                  href: unity/tutorials/holograms-240.md
+            - name: 混合的現實和 Azure 服務
+              items:
+                - name: MR 和 Azure 301 - 語言翻譯
+                  href: unity/tutorials/mr-azure-301.md
+                - name: MR 和 Azure 302 - 電腦視覺
+                  href: unity/tutorials/mr-azure-302.md
+                - name: MR 和 Azure 302b - 自訂視覺
+                  href: unity/tutorials/mr-azure-302b.md
+                - name: MR 和 Azure 303 - 自然語言理解
+                  href: unity/tutorials/mr-azure-303.md
+                - name: MR 和 Azure 304 - 臉部辨識
+                  href: unity/tutorials/mr-azure-304.md
+                - name: MR 和 Azure 305 - 函式和儲存體
+                  href: unity/tutorials/mr-azure-305.md
+                - name: MR 和 Azure 306 - 串流影片
+                  href: unity/tutorials/mr-azure-306.md
+                - name: MR 和 Azure 307 - 機器學習
+                  href: unity/tutorials/mr-azure-307.md
+                - name: MR 和 Azure 308 - 跨裝置通知
+                  href: unity/tutorials/mr-azure-308.md
+                - name: MR 和 Azure 309 - 應用程式深入解析
+                  href: unity/tutorials/mr-azure-309.md
+                - name: MR 和 Azure 310 - 物件偵測
+                  href: unity/tutorials/mr-azure-310.md
+                - name: MR 和 Azure 311 - Microsoft Graph
+                  href: unity/tutorials/mr-azure-311.md
+                - name: MR 和 Azure 312 - Bot 整合
+                  href: unity/tutorials/mr-azure-312.md
+                - name: MR 和 Azure 313 - IoT 中樞服務
+                  href: unity/tutorials/mr-azure-301.md
     - name: 設定您的專案
       items:
         - name: MRTK 簡介

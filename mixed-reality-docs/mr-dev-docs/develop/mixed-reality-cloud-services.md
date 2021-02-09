@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: e4ddfd5951945cc6a5bc9d7b71cad86a296fe725
-ms.sourcegitcommit: cd2987467044fde1e2eb227e6c25d00e744aabfc
+ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
+ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/27/2021
-ms.locfileid: "98923808"
+ms.lasthandoff: 02/08/2021
+ms.locfileid: "99973068"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
@@ -47,9 +47,9 @@ ARR 的連帶好處是，您可在應用程式中使用的使用者介面類型�
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure 空間錨點](https://docs.microsoft.com /azure/spatial-anchors/)（或 ASA）是一種跨平臺服務，可讓您建立空間感知的混合現實應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 
+[Azure 空間錨點](https://docs.microsoft.com /azure/spatial-anchors/)是一種跨平臺服務，可讓您建立空間感知的混合現實應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 
 
-ASA 是專為混合實境的常見使用案例設計的解決方案，這類案例包括：
+Azure 空間錨點是唯一量身打造的解決方案，適用于混合現實中的常見使用案例，包括：
 * **導向**：可以連接兩個或更多空間錨點，以建立使用者必須與其互動的工作清單或興趣點。
 * **多重使用者體驗**：使用者可與相同虛擬空間中的物件互動，而來回移動。
 * **在真實世界中保存虛擬內容**：使用者可在真實世界中放置能夠從其他支援裝置上檢視的虛擬物件。
