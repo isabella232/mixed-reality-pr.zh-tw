@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能
-ms.openlocfilehash: 70df0314cb714d78c2eeb17335f67d6d90134770
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 6a9bc0d9a565de1d25e1906c439e39773cb99244
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226447"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496076"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>在沒有 MRTK 的情況下設定專案
 
@@ -119,13 +119,13 @@ HoloLens 有行動類別 GPU。 如果您的應用程式是以 HoloLens 為目�
 > [!IMPORTANT]
 > 如果您刪除並建立新的相機，請確定您的新相機已標記為 **MainCamera**。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 現在您的專案已經準備就緒，您可以開始開發混合現實體驗：
 
 * 新增 [核心組建區塊](unity-development-overview.md#2-core-building-blocks)
 * 查看可用 [的平臺功能和 api](unity-development-overview.md#3-advanced-features)
-* 瞭解如何 [部署您的應用程式](../platform-capabilities-and-apis/using-visual-studio.md#deploying-an-app-to-your-local-pc---immersive-headset)
+* 瞭解如何 [部署您的應用程式](../platform-capabilities-and-apis/using-visual-studio.md#)
 * 使用[混合現實](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)模擬器
 
 ## <a name="see-also"></a>另請參閱

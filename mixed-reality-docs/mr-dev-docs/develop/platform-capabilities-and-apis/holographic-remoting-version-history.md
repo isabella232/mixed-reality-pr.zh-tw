@@ -6,17 +6,29 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: e1f80d0d2cbd02b78ed07e3ec60825ffe1059309
-ms.sourcegitcommit: 3dad2adfdb5bdb8100d8d864f7845e34a3ef912d
+ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/22/2021
-ms.locfileid: "98699007"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496036"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
 > [!IMPORTANT]
 > 本指南專為 HoloLens 2 上的全像攝影遠端所特有。
+
+## <a name="version-250-february-12-2021"></a>版本 2.5.0 (2021 年2月12日) <a name="v2.5.0"></a>
+* 使用 [OPENXR API](../native/openxr.md) 的全像攝影遠端功能現在支援：
+  * XR_MSFT_spatial_anchor 延伸模組。 此延伸模組可讓應用程式建立空間錨點，這是使用者的實體環境中，執行時間將追蹤的任意可空間點。
+  * XR_MSFT_controller_model 延伸模組。 此擴充功能會提供一種機制，以載入控制器的 GLTF 模型。
+  * 自訂資料通道是 XR_MSFT_holographic_remoting 擴充功能的一部分。 [OpenXR 遠端範例](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中顯示的範例。
+* 改進玩家與遠端端之間的同步處理。 這可讓您以動態方式變更姿勢和框架緩衝，以確保遠端轉譯的內容順暢地以預期的目標畫面播放速率到達顯示器。
+* 改進了可透過 Microsoft Store 使用的全像遠端播放播放程式效能。 在 HoloLens 2，播放現在會在每秒60個畫面格上執行。
+* 優化的空間介面網格傳輸，可透過遠端應用程式的 [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 來進行查詢。
+* 修正呼叫 SpatialAnchorManager 方法或釋出錨點在中斷連接時造成例外狀況的問題。
+* 修正關閉 PlayerCoNtext 或 RemoteCoNtext 實例時，導致損毀的執行緒問題。
+* 許多其他 bug 修正和穩定性改進。
 
 ## <a name="version-241-january-22-2021"></a>版本 2.4.1 (2021 年1月22日) <a name="v2.4.1"></a>
 

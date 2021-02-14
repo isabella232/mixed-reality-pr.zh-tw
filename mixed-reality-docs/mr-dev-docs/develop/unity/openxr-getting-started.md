@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 1adfb979cfc22be5da18ed990c9db55e6bad97f3
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: cae588acbcddeefae45a555f335f1c74389f1824
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99238126"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496166"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
@@ -20,7 +20,7 @@ ms.locfileid: "99238126"
 ## <a name="prerequisites"></a>必要條件
 
 * Unity 2020.2 或更新版本
-* Unity OpenXR 外掛程式0.1.2 或更新版本
+* Unity OpenXR 外掛程式0.1.3 或更新版本
 * Visual Studio 2019 或更新版本
 * 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
 
@@ -87,20 +87,6 @@ ms.locfileid: "99238126"
 MRTK Unity 支援從2.5.3 版本開始的 Mixed Reality OpenXR 外掛程式。  
 
 1. 再次開啟 [Mixed Reality 功能工具](welcome-to-mr-feature-tool.md) ，並在平臺支援類別中選取 **Mixed reality OpenXR 外掛程式** 套件
-
-<!-- MRTK plugins can be installed from the same scoped registries as you set up when [installing the Mixed Reality OpenXR plugin](#installing-the-mixed-reality-openxr-plugin). You can find more detailed information in the [MRTK documentation](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/usingupm.html#registering-the-mixed-reality-component-server).
-
-1. Add following packages in your **[projectRoot]/Packages/manifest.json** file:
-
-```json
-"dependencies": {
-    "com.microsoft.mixedreality.toolkit.foundation": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.tools": "2.5.3",
-    "com.microsoft.mixedreality.toolkit.examples": "2.5.3",
-    …
-}
-``` -->
-
 2. 移至偵測器中的 MixedReality 工具組元件腳本，並切換至 **DefaultOpenXRConfigurationProfile** 設定檔：
 
 ![在偵測器的混合現實工具組元件中切換 MRTK 設定的螢幕擷取畫面](images/openxr-img-11.png)

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、Windows Mixed Reality、OpenXR 開發人員工具、DirectX、原生、原生應用程式、自訂引擎、中介軟體、使用者入門、101、預覽延伸模組、OpenXR 執行階段版本、系統狀態
-ms.openlocfilehash: 918dfb1f336598548735b1699c61d1b350fed293
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 99bf2e19c0bd7708f8c2421d7a466e77a6a75d84
+ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97613192"
+ms.lasthandoff: 02/14/2021
+ms.locfileid: "100496066"
 ---
 # <a name="getting-started-with-openxr"></a>開始使用 OpenXR
 
@@ -35,7 +35,7 @@ ms.locfileid: "97613192"
 1. 請確定您至少執行 (1903) 的 Windows 10 2019 年5月更新，這是 Windows Mixed Reality 終端使用者執行 OpenXR 應用程式的最低需求。  如果您使用的是舊版的 Windows 10，您可以使用 <a href="https://www.microsoft.com/software-download/windows10" target="_blank">Windows 10 更新助理</a>進行升級。
 2. 設定 Windows Mixed Reality 耳機或遵循指示來 [啟用 Windows Mixed Reality](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)模擬器。
 
-這樣就完成了！  系統會為所有 Windows Mixed Reality 使用者安裝 Windows Mixed Reality OpenXR 執行時間，並自動使其成為作用中狀態。  Microsoft Store 接著會讓執行時間保持在最新狀態。
+大功告成！  系統會為所有 Windows Mixed Reality 使用者安裝 Windows Mixed Reality OpenXR 執行時間，並自動使其成為作用中狀態。  Microsoft Store 接著會讓執行時間保持在最新狀態。
 
 若要再次啟用 Windows Mixed Reality OpenXR 執行時間，請從 [開始] 功能表啟動混合實境入口，然後選取視窗頂端的 [修正]。  如果該按鈕遺失，表示 OpenXR 執行時間已在使用中。<br>
 
