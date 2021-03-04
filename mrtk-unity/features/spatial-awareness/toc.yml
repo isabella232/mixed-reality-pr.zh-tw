@@ -1,10 +1,12 @@
-- name: 設定空間感知網格觀察者
-  href: configuring-spatial-awareness-mesh-observer.md
-- name: 建立資料提供者
-  href: create-data-provider.md
 - name: 空間感知入門
   href: spatial-awareness-getting-started.md
+- name: 空間感知網格觀察者
+  href: configuring-spatial-awareness-mesh-observer.md
 - name: 空間物件網格觀察者
   href: spatial-object-mesh-observer.md
+- name: 場景理解觀察者
+  href: scene-understanding.md
 - name: 使用指南
   href: usage-guide.md
+- name: 建立資料提供者
+  href: create-data-provider.md
