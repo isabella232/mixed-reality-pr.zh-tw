@@ -1,25 +1,25 @@
 ---
-title: 進行 HoloLens 2 的 Galaxy Explorer
-description: 深入瞭解我們的團隊如何針對 GitHub 上的 HoloLens 2 更新 Galaxy Explorer 開放原始碼專案。
+title: 適用于 HoloLens 2 的 Galaxy Explorer 製作
+description: 瞭解我們的團隊如何在 GitHub 上更新適用于 HoloLens 2 的 Galaxy Explorer 開放原始碼專案。
 author: l-garrett
 ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4a5df06009d2c9c25b12c8e7f4bd1622821964c8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2d72e005bd955bbf2611f0724ba63b80c70f7dc1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582897"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759814"
 ---
-# <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>進行 HoloLens 2 的 Galaxy Explorer
+# <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>適用于 HoloLens 2 的 Galaxy Explorer 製作
 
-歡迎使用 HoloLens 2 應用程式更新的 Galaxy Explorer！ [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "星系探險") 最初開發為 HoloLens 的開放原始碼應用程式 (第一代) 透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新它，以獲得 [HoloLens 2 的全新且令人興奮的功能](https://www.microsoft.com/hololens/hardware)。
+歡迎使用更新版的 Galaxy Explorer for HoloLens 2 應用程式！ [Galaxy Explorer](/windows/mixed-reality/galaxy-explorer "星系探險") 最初開發為 HoloLens 的開放原始碼應用程式 (第一代) 透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新它，以取得 [HoloLens 2 的新功能與令人興奮的功能](https://www.microsoft.com/hololens/hardware)。
 
-作為其中一個 [Microsoft Mixed Reality 工作室](galaxy-explorer-update.md#mixed-reality-studios)，我們通常會開發商業級的解決方案，並在整個創意和開發程式中開發 & 的目標平臺測試。 我們會使用登機的架構和 (工具來此專案，例如 [MRTK](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html)) ，因為它們變成可供我們和社區使用，而我們想要讓您帶著。
+作為其中一個 [Microsoft Mixed Reality 工作室](galaxy-explorer-update.md#mixed-reality-studios)，我們通常會開發商業級的解決方案，並在整個創意和開發程式中開發 & 的目標平臺測試。 我們會使用登機的架構和 (工具來此專案，例如 [MRTK](mrtk-getting-started.md)) ，因為它們變成可供我們和社區使用，而我們想要讓您帶著。
 
-如同原始的 Galaxy Explorer， [我們的團隊](galaxy-explorer-update.md#meet-the-team) 會在 [GitHub 上開放專案](https://github.com/Microsoft/GalaxyExplorer) ，以確保該社區具有完整的存取權。 我們也將在此記錄我們的旅程，以完整的透明說明如何從 MRTK v1 移植到 MRTK v2、如何增強 HoloLens 2 中可用的新功能，以及確保 Galaxy Explorer 保持多平臺的體驗。 無論您是在 HoloLens 上觀看 Galaxy Explorer (第一代) 、HoloLens 2、Windows Mixed Reality 耳機或 Windows 10 桌上型電腦，我們都想要確定您已盡可能地享受旅程。
+如同原始的 Galaxy Explorer， [我們的團隊](galaxy-explorer-update.md#meet-the-team) 會在 [GitHub 上開放專案](https://github.com/Microsoft/GalaxyExplorer) ，以確保該社區具有完整的存取權。 我們也將在此記錄我們的旅程，以完整的透明說明如何從 MRTK v1 移植至 MRTK v2、增強 HoloLens 2 中可用新功能的體驗，以及確保 Galaxy Explorer 保持多平臺體驗。 無論您是在 HoloLens 上觀看 Galaxy Explorer (第一代) 、HoloLens 2、Windows Mixed Reality 耳機或您的 Windows 10 桌上型電腦，我們都想要確定您已盡可能享受旅程。
 
 此頁面將會隨著我們在專案中的進展而擴大，並提供更詳細的文章、程式碼、設計成品和其他 MRTK 檔的連結，以提供您 insider 的專案查看。
 
@@ -35,11 +35,11 @@ ms.locfileid: "98582897"
 
 作為創意工作室，我們 ecstatic 了將 Galaxy Explorer 移植到 HoloLens 2 的許可權。 我們從一開始就知道，我們希望體驗成為新裝置的一小部分，並示範混合的現實能力只受到夢想的限制。
 
-HoloLens 2 可讓使用者以自然的方式來觸控、抓住和移動全息影像，它們的回應方式很類似真正的物件。 完全表達的手模型很棒，因為它可讓使用者進行自然的操作。 例如，每個人都以稍微不同的方式來挑選杯，而不是強制執行這項工作，HoloLens 2 可讓您以自己的方式進行。
+HoloLens 2 可讓使用者以自然的方式來觸控、抓住和移動全息影像，它們的回應方式很類似真正的物件。 完全表達的手模型很棒，因為它可讓使用者進行自然的操作。 比方說，每個人都是以稍微不同的方式來挑選杯，而不是強制執行這項操作，而是由 HoloLens 2 讓您以自己的方式執行。
 
 >[!VIDEO https://www.youtube.com/embed/wogJv5v9x-s]
 
-這是第一代 HoloLens 裝置上以點點為基礎之介面的重大變更。 使用者現在可以「關閉」和「個人」，而不是從距離與全像全像之間的互動。 當您將現有的經驗移植到 HoloLens 2 或規劃新的體驗時，請務必讓自己熟悉全像投影的直接操作。
+這是第一代 HoloLens 裝置上以點點為基礎之介面的重大變更。 使用者現在可以「關閉」和「個人」，而不是從距離與全像全像之間的互動。 當您將現有的體驗移植到 HoloLens 2 或規劃新的體驗時，請務必熟悉直接操作的全像投影。
 
 ### <a name="direct-manipulation-vs-the-vast-distances-in-space"></a>直接操作與空間的大量距離
 
@@ -49,7 +49,7 @@ HoloLens 2 可讓使用者以自然的方式來觸控、抓住和移動全息影
 
 >[!VIDEO https://www.youtube.com/embed/Qol5OFNfN14]
 
-在原始版本的 Galaxy Explorer 中，使用者會以行星游標為地球，然後按下滑鼠來更接近。 將體驗移植到 HoloLens 2 的最簡單方式，就是採取這種行為，並使用手光線來選取行星。 雖然這是正常運作的，但仍會讓我們更有希望。
+在原始版本的 Galaxy Explorer 中，使用者會以行星游標為地球，然後按下滑鼠來更接近。 將體驗移植到 HoloLens 2 最簡單的方式，就是採取這種行為，並使用手光線來選取行星。 雖然這是正常運作的，但仍會讓我們更有希望。
 
 ### <a name="back-to-the-drawing-board"></a>從頭再來
 
@@ -190,7 +190,7 @@ __*--- NEEDS TO BE UPLOADED (TO YOUTUBE?) AND LINKED ---*__
 
 我們的混合現實 studio 小組是由設計人員、3D 演出者、UX 專家、開發人員、程式經理和 studio 標頭所組成。 我們從全球各地 hail：比利時、加拿大、德國、以色列、日本、英國和美國。 我們是來自各種背景的豐富團隊：遊戲-傳統與獨立製作、數位行銷、醫療保健和科學。
 
-我們很高興能建立 HoloLens 2 的 Galaxy Explorer，以及更新 HoloLens (first gen) 、VR 和 desktop 版本。 
+我們很高興能建立 HoloLens 2 的 Galaxy Explorer，以及更新 HoloLens (第一代) 、VR 和桌上出版本。 
 
 ![Galaxy Explorer 小組](images/ge-update-team-image.png)
 

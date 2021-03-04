@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、工具提示、MRTK、混合現實工具組
-ms.openlocfilehash: bed9e83cac381fceddbf94cd4048d36427a27874
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: ac8d12dbf681fb02df6fe70f3fd7b67615f4a5d6
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009408"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759774"
 ---
 # <a name="tooltip"></a>工具提示
 
@@ -25,13 +25,13 @@ ms.locfileid: "98009408"
 
 ## <a name="tooltip-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 的 MRTK (混合現實工具組) 的工具提示
 
-* [MRTK-工具提示](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Tooltip.html)
+* [MRTK-工具提示](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/tooltip.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

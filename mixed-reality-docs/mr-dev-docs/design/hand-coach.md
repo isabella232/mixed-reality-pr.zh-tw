@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 69afe767e01c57535b79575e4f25fabe4a9f6f39
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality、設計、手勢、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、Mixed Reality 工具組
+ms.openlocfilehash: ca23617e18c84f592ebd0575195b6bf4a98e80e5
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582278"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759474"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -169,15 +169,15 @@ ms.locfileid: "98582278"
 * 手中應只教授一次。 透過教學可能會造成混淆和 messiness
 *   將它帶入 Unity，請在這裡下載最新的 MRTK： https://github.com/microsoft/MixedRealityToolkit-Unity
     *   材質： Teaching_Hand2
-    *   腳本：請參閱 MRTK 指導方針以取得<a href= "https://github.com/MixedRealityToolkit-Unity/blob/'HandCoachUX'/Documentation/README_HandCoach.md">MRTK</a>的指導方針
+    *   腳本：請參閱 MRTK 指導方針以取得<a href= "https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md">MRTK</a>的指導方針
     *   每個專案的設定
-        *   設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
+        *   設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 的 Windows Mixed Reality 上找到指令。
 
 ## <a name="see-also"></a>另請參閱
 
 * [互動-基礎](interaction-fundamentals.md)
 * [資產建立流程](asset-creation-process.md)
-* [軌跡](./interaction-fundamentals.md)
+* [手勢](./interaction-fundamentals.md)
 * [安裝工具](../develop/install-the-tools.md)
 * [設定 Unity 專案](../develop/unity/Configure-Unity-Project.md)
 * [Unity 開發概觀](../develop/unity/unity-development-overview.md)

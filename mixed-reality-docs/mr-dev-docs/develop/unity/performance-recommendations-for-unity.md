@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 圖形, cpu, gpu, 轉譯, 記憶體回收行程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: 738f9032b0e0500e0f5daa3b59cc1740ef570928
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583182"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759724"
 ---
 # <a name="performance-recommendations-for-unity"></a>對 Unity 的效能建議
 
@@ -309,7 +309,7 @@ Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)�
 
 #### <a name="unity-standard-shader-alternatives"></a>Unity 標準著色器作業
 
-您不需要使用以實體為基礎的轉譯 (PBR) 或其他高品質的著色器，而是瞭解如何利用更高的效能及更低成本的著色器。 [混合實境工具組](https://github.com/Microsoft/MixedRealityToolkit-Unity)提供已針對混合實境專案進行最佳化的 [MRTK 標準著色器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)。
+您不需要使用以實體為基礎的轉譯 (PBR) 或其他高品質的著色器，而是瞭解如何利用更高的效能及更低成本的著色器。 [混合實境工具組](https://github.com/Microsoft/MixedRealityToolkit-Unity)提供已針對混合實境專案進行最佳化的 [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)。
 
 Unity 也提供無光、頂點光、擴散和其他簡化的著色器選項，相較於 Unity 標準著色器，速度會有所提升。 如需詳細資訊，請參閱[內建著色器的用法和效能](https://docs.unity3d.com/Manual/shader-Performance.html)。
 

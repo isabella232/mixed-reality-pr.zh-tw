@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI 設計、全像展示、內容設計、深色主題、淺色主題、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、圖元
-ms.openlocfilehash: 371d9aac610a765e7ecc6dd1f17401e5d7855672
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 6bf65b9e40e42f1609b1108b366ac65637fcf106
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009088"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759273"
 ---
 # <a name="designing-content-for-holographic-display"></a>設計全像攝影顯示器的內容
 
@@ -85,7 +85,7 @@ HolographicBackplate 材質會套用至 HoloLens shell 中的數個 UI 面板。
 
 根據預設，透明或透明物件不會寫入深度來允許適當的混合。 解決這個問題的方法包括：使用不透明的物件，確保透明物件靠近不透明的物件 (例如在不透明 backplate) 前面的半透明按鈕、強制透明物件寫入深度 (不適用於所有案例) 或轉譯 proxy 物件，這些物件只會在框架結尾提供深度值。
 
-MRTK 中的解決方案-Unity： https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/hologram-stabilization.html#depth-buffer-sharing-in-unity  
+MRTK 中的解決方案-Unity： https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/hologram-stabilization.md#depth-buffer-sharing-in-unity  
 
 藉由使用穩固且不透明的 backplate，我們可以保障可讀性和互動的信賴度。
 
@@ -103,15 +103,15 @@ MRTK 中的解決方案-Unity： https://microsoft.github.io/MixedRealityToolkit
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 會根據深色色彩配置提供許多 UI 建立區塊範例。
 
-* [近端功能表](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_NearMenu.html)
-* [對話方塊](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/Dialog/README_Dialog.html)
-* [手形功能表](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandMenu.html)
+* [近端功能表](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/near-menu.md)
+* [對話方塊](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/dialog.md)
+* [手形功能表](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/hand-menu.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [色彩、光線和材質](color-light-and-materials.md)
 * [游標](cursors.md)

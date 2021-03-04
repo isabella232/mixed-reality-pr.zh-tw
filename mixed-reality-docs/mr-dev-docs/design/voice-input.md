@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv、語音、cortana、語音、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、注視
-ms.openlocfilehash: 079a3d457da9403611d2f825dd6e599a4e9f0353
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: cc1ecd7d236748c3c4de77678e6f67c69a2c1af1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583220"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759139"
 ---
 # <a name="voice-input"></a>語音輸入
 
@@ -25,7 +25,7 @@ ms.locfileid: "98583220"
 
 ## <a name="voice-and-gaze"></a>語音和注視
 
-當您使用語音命令時，head 或眼睛是一般的目的機制，不論是否使用游標來「選取」或將您的命令通道處理至您要查看的應用程式。 您甚至可能還不需要顯示任何看過的游標 _( 「看起來」 )_。 某些語音命令完全不需要目標，例如「移至開始」或「嗨 Cortana」。
+當您使用語音命令時，head 或眼睛是一般的目的機制，不論是否使用游標來「選取」或將您的命令通道處理至您要查看的應用程式。 您甚至可能還不需要顯示任何看過的游標 _( 「看起來」 )_。 有些語音命令根本不需要目標，例如「移至開始」或「嗨 Cortana」。
 
 <br>
 
@@ -59,7 +59,7 @@ ms.locfileid: "98583220"
 
 **HoloLens (第 1 代)**
 
-即使沒有特別為您的應用程式新增語音支援，您的使用者只要說出系統 voice 命令「select」就可以啟用全像。 這 [與在 hololens 上按](gaze-and-commit.md#composite-gestures) 下滑鼠的方式相同，在 [hololens clicker](/hololens/hololens1-clicker)上按下 [選取] 按鈕，或按 [Windows Mixed Reality 運動控制器](motion-controllers.md)上的觸發程式。 您將聽到音效，並看到具有 [選取] 的工具提示顯示為 [確認]。 「選取」是由低功率關鍵字偵測演算法所啟用，這表示您可以隨時以最少的電池壽命來表示。 您甚至可以說：「選取」您的手邊。
+即使沒有特別為您的應用程式新增語音支援，您的使用者只要說出系統 voice 命令「select」就可以啟用全像。 這與在 HoloLens 上按下滑鼠的方式相同，在[hololens clicker](/hololens/hololens1-clicker)上按下 [選取] 按鈕，或在[Windows Mixed Reality 移動控制器](motion-controllers.md)上按下[觸發程式。](gaze-and-commit.md#composite-gestures) 您將聽到音效，並看到具有 [選取] 的工具提示顯示為 [確認]。 「選取」是由低功率關鍵字偵測演算法所啟用，這表示您可以隨時以最少的電池壽命來表示。 您甚至可以說：「選取」您的手邊。
 
 <br>
 
@@ -68,7 +68,7 @@ ms.locfileid: "98583220"
 :::row:::
     :::column:::
         **HoloLens 2**<br><br>
-        若要在 HoloLens 2 中使用 [選取] 語音命令，您必須先帶出注視游標以作為指標。 要讓它啟動的命令很容易記住，只要說「select」就可以了。<br><br>
+        若要在 HoloLens 2 中使用 "select" 語音命令，您必須先啟動注視游標以作為指標使用。 要讓它啟動的命令很容易記住，只要說「select」就可以了。<br><br>
         若要結束此模式，請使用您的手中，再按一次，並使用手指接近按鈕，或使用系統手勢。<br>
         <br> 
         *影像：說「選取」以使用語音命令進行選取*
@@ -84,7 +84,7 @@ ms.locfileid: "98583220"
 
 ## <a name="hey-cortana"></a>嗨 Cortana
 
-您可以說「嗨 Cortana」，隨時都能顯示 Cortana。 您不必等待她繼續詢問您的問題，或為她提供指示。 例如，請嘗試說「嗨 Cortana，天氣是什麼？」 作為單一句子。 如需 Cortana 和您可以做什麼的詳細資訊，請洽詢她的！ 說「嗨 Cortana，我可以說什麼？」 她將會提取一份工作和建議的命令清單。 如果您已經在 Cortana 應用程式中，請選取 [ **？** ] 圖示，以提取這個相同的功能表。
+您可以說「嘿 Cortana」隨時帶出 Cortana。 您不必等待她繼續詢問您的問題，或為她提供指示。 例如，請嘗試說「嘿 Cortana，什麼是天氣？」 作為單一句子。 如需 Cortana 和您可以做什麼的詳細資訊，請洽詢她的！ 說「嘿，我可以說什麼？」 她將會提取一份工作和建議的命令清單。 如果您已經在 Cortana 應用程式中，請選取 [ **？** ] 圖示，以提取這個相同的功能表。
 
 **HoloLens 專用的命令**
 * 「我可以說什麼？」
@@ -128,7 +128,7 @@ ms.locfileid: "98583220"
 
 :::row:::
     :::column:::
-        當應用程式遵循此規則時，使用者很容易就能瞭解如何控制系統。 在 HoloLens (第一代) 中的按鈕上撥雲見日時，您會看到「聲音停留」工具提示，如果按鈕已啟用語音，則會出現在第二個畫面上，並顯示要說「按」的命令。 若要顯示 HoloLens 2 中的語音工具提示，請說「選取」或「我可以說什麼」來顯示語音游標 (請參閱影像) 。 <br>
+        當應用程式遵循此規則時，使用者很容易就能瞭解如何控制系統。 在 HoloLens (第一代) 中的按鈕上撥雲見日時，您會看到「聲音停留」工具提示，如果按鈕已啟用語音，則會出現在第二個畫面上，並顯示要說「按」的命令。 若要在 HoloLens 2 中顯示語音工具提示，請說「選取」或「我可以說什麼」來顯示語音游標 (查看影像) 。 <br>
         <br>
         *影像：「看到它，假設」命令出現在按鈕下方*
     :::column-end:::
@@ -150,7 +150,7 @@ ms.locfileid: "98583220"
 * 更大 |提高
 * 小
 
-在 HoloLens 2 上，您也可以結合眼睛來建立更自然的互動，以隱含方式提供您所參考之內容的相關資訊。 例如，您可以查看一個全息圖，然後說 _「放入_」，然後查看您想要放置它的位置，然後說「在 _這裡_」。
+在 HoloLens 2 上，您也可以結合眼睛來建立更自然的互動，以隱含方式提供您所參考的內容相關資訊。 例如，您可以查看一個全息圖，然後說 _「放入_」，然後查看您想要放置它的位置，然後說「在 _這裡_」。
 或者，您可以在複雜的電腦上查看全像的部分，然後說：「給我更多關於 _這個_ 的資訊」。
 
 ## <a name="discovering-voice-commands"></a>探索語音命令
@@ -252,7 +252,7 @@ ms.locfileid: "98583220"
 
 * 以按鈕為目標時，請說「 **選取** 」 (您可以使用此位置來選取按鈕) 。
 * 在某些應用程式中，您可以說出 **應用程式列按鈕的標籤名稱** 來採取動作。 例如，在查看應用程式時，使用者可以說出「移除」命令以移除世界上的應用程式 (如此可節省時間，使其不需要隨您的手) 進行選取。
-* 您可以藉由說出「**嗨 Cortana** 」來開始進行 Cortana 接聽。 您可以向她問問題 (「嗨 Cortana，艾菲爾鐵塔有多高」)、請她開啟應用程式 (「嗨 Cortana，開啟 Netflix」)，或請她顯示 [開始] 功能表 (「嗨 Cortana，回到首頁」) 等等。
+* 您可以藉由說出「**嗨 cortana** 」來開始進行 cortana 接聽。 您可以向她問問題 (「嗨 Cortana，艾菲爾鐵塔有多高」)、請她開啟應用程式 (「嗨 Cortana，開啟 Netflix」)，或請她顯示 [開始] 功能表 (「嗨 Cortana，回到首頁」) 等等。
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>使用者會有的語音相關常見問題和疑慮
 
@@ -266,7 +266,7 @@ ms.locfileid: "98583220"
 
 ## <a name="communication"></a>通訊
 
-如果應用程式想要利用 HoloLens 提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以使用的各種 [音訊串流類別](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) 。 Windows 10 支援數種不同的串流類別和 HoloLens，可讓您利用其中三種來啟用自訂處理，以優化專為語音、通訊和 (其他所量身打造的麥克風音訊品質，也就是「攝像機」 ) 案例。
+如果應用程式想要利用 HoloLens 提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以使用的各種 [音訊串流類別](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) 。 Windows 10 支援數種不同的串流類別和 HoloLens，可讓您利用其中三種來啟用自訂處理，以優化針對語音、通訊和其他所量身打造的麥克風音訊品質 (也就是「攝影機」 ) 案例。
 * AudioCategory_Communications 的串流類別目錄已針對通話品質和旁白案例自訂，並為用戶端提供使用者語音的 16 kHz 24 位 mono 音訊串流
 * AudioCategory_Speech 串流類別是針對 HoloLens (Windows) 語音引擎自訂，並提供該使用者語音的 16 kHz 24 位 mono 串流。 如有需要，協力廠商語音引擎可以使用此類別。
 * AudioCategory_Other 串流類別目錄是針對環境環境音訊錄製自訂，並為用戶端提供 48 kHz 的24位身歷聲音訊串流。
@@ -279,9 +279,9 @@ HoloLens 2 [支援多種語言](/hololens/hololens2-language-support)。 請記�
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您在使用「選取」和「嗨 Cortana」時遇到任何問題，請嘗試移至更安靜的空間、關閉雜訊來源，或說出更遠。 目前，HoloLens 上的所有語音辨識都會專門針對美國英文的原生喇叭進行調整及優化。
+如果您在使用「選取」和「嘿 Cortana」時遇到任何問題，請嘗試移至更安靜的空間、關閉雜訊來源或更大的說話。 目前，HoloLens 上的所有語音辨識都會專門針對美國英文的原生喇叭進行調整及優化。
 
-針對 Windows Mixed Reality Developer Edition 2017 版，在初始 HMD 連線之後登出和重新登入電腦桌面之後，音訊端點管理邏輯將可正常運作 (永久) 。 在經過 WMR OOBE 之後第一次登出/進入事件之前，使用者可能會遇到各種音訊功能問題，範圍從沒有音訊到音訊切換，視系統在第一次連接 HMD 之前的設定方式而定。
+對於 Windows Mixed Reality Developer Edition 2017 版，音訊端點管理邏輯將可正常運作 (永久) 在初始 HMD 連線之後登出後再重新登入電腦桌面。 在經過 WMR OOBE 之後第一次登出/進入事件之前，使用者可能會遇到各種音訊功能問題，範圍從沒有音訊到音訊切換，視系統在第一次連接 HMD 之前的設定方式而定。
 
 <br>
 
@@ -290,7 +290,7 @@ HoloLens 2 [支援多種語言](/hololens/hololens2-language-support)。 請記�
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>MRTK 中的語音輸入 (適用于 Unity 的混合現實工具組) 
 透過 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**，您可以輕鬆地對任何物件指派語音命令。 使用 MRTK 的 **語音輸入設定檔** 來定義關鍵字。 藉由指派 **SpeechInputHandler** 腳本，您可以讓任何物件回應語音輸入設定檔中定義的關鍵字。 SpeechInputHandler 也會提供語音確認標籤，以提升使用者的信心。
 
-* [MRTK-Voice 命令](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Speech.html)
+* [MRTK-Voice 命令](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/speech.md)
 
 ---
 

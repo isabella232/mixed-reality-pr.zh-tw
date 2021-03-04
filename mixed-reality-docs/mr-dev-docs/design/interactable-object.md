@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、提示、ui、ux、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
-ms.openlocfilehash: d0dc8ce6425d597d04b47a6c8b08f72534488594
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007198"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759874"
 ---
 # <a name="interactable-object"></a>可互動的物件
 
@@ -41,19 +41,19 @@ ms.locfileid: "98007198"
 
 :::row:::
     :::column:::
-       ![interactibleobject-狀態-預設值](images/interactibleobject-states-default.jpg)<br>
+       ![具有預設狀態的互動物件](images/interactibleobject-states-default.jpg)<br>
        **預設 (觀察) 狀態**<br>
         物件的預設閒置狀態。
     資料指標不在物件上。 未偵測到手。
     :::column-end:::
     :::column:::
-       ![interactibleobject-狀態-目標](images/interactibleobject-states-targeted.jpg)<br>
+       ![具有目標和停留狀態的互動物件](images/interactibleobject-states-targeted.jpg)<br>
         **目標 (將滑鼠停留) 狀態**<br>
         當物件以注視游標、手指鄰近或移動控制器的指標為目標時。
     資料指標位於物件上。 偵測到手、準備就緒。
     :::column-end:::
     :::column:::
-       ![interactibleobject-狀態-已按下](images/interactibleobject-states-pressed.jpg)<br>
+       ![具有已按下狀態的互動物件](images/interactibleobject-states-pressed.jpg)<br>
        **已按下的狀態**<br>
         當您按下滑鼠按鍵時，按一下滑鼠右鍵或移動控制器的選取按鈕。
     資料指標位於物件上。 偵測到手，以空調的方式進行。
@@ -64,21 +64,21 @@ ms.locfileid: "98007198"
 
 ---
 
-您可以使用醒目提示或調整之類的技術，提供使用者輸入狀態的視覺提示。 在混合的現實情況下，您可以在 [開始] 功能表和使用應用程式列按鈕的情況下，找到將不同輸入狀態視覺化的範例。 
+您可以使用醒目提示或調整之類的技術，提供使用者輸入狀態的視覺提示。 在混合的現實情況下，您可以在 [開始] 功能表和 [應用程式] 工具列按鈕上找到視覺化不同輸入狀態的範例。 
 
 以下是這些狀態在「全像全像」 **按鈕** 上的樣子：
 
 :::row:::
     :::column:::
-       ![interactibleobject-狀態-預設值](images/MRTK_InteractableState-default.jpg)<br>
+       ![預設狀態的全像全像按鈕](images/MRTK_InteractableState-default.jpg)<br>
        **預設 (觀察) 狀態**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-狀態-目標](images/MRTK_InteractableState-targeted.jpg)<br>
+       ![目標和暫留狀態的全像按鈕](images/MRTK_InteractableState-targeted.jpg)<br>
         **目標 (將滑鼠停留) 狀態**<br>
     :::column-end:::
     :::column:::
-       ![interactibleobject-狀態-已按下](images/MRTK_InteractableState-pressed.jpg)<br>
+       ![處於已按下狀態的全像按鈕](images/MRTK_InteractableState-pressed.jpg)<br>
        **已按下的狀態**<br>
     :::column-end:::
 :::row-end:::
@@ -169,7 +169,7 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 :::row:::
     :::column:::
         ### <a name="the-ring-visual-cue-on-hololens-2br"></a>HoloLens 2 上的「環形」視覺提示<br>
-        在 HoloLens 2 上有一個額外的視覺提示，可協助使用者深入瞭解。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
+        在 HoloLens 2 上，有一個額外的視覺提示，可協助使用者對深度的認知。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
         <br>
         *影片迴圈：根據鄰近範圍方塊的視覺效果意見反應範例*
     :::column-end:::
@@ -264,12 +264,12 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 
 在 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 中，您可以使用腳本 [**互動**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 讓物件回應各種類型的輸入互動狀態。 它支援各種類型的主題，可讓您藉由控制物件屬性（例如色彩、大小、材質和著色器）來定義視覺狀態。
 
-* [互動](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html)
-* [按鈕](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)
+* [互動](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
+* [按鈕](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
 * [手邊互動範例場景](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit 的標準著色器提供各種選項，例如可協助您建立視覺和音訊提示的 **相近光源** 。
-* [MRTK 標準著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Documentation/README_MRTKStandardShader.md)
+* [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
 
 <br>
@@ -277,7 +277,7 @@ MixedRealityToolkit 的標準著色器提供各種選項，例如可協助您建
 ---
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

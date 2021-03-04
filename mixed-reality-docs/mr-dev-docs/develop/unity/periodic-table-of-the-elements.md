@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: fd525b0d41efa15ff55097456fb6b06dd3d60c25
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 19307b310d104f418e4f7739b0576c63407d83fd
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009358"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759734"
 ---
 # <a name="periodic-table-of-the-elements"></a>元素週期表
 
@@ -25,7 +25,7 @@ ms.locfileid: "98009358"
 ## <a name="demo-video"></a>示範影片 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
 
-使用混合實境擷取 HoloLens 2 記錄
+使用混合現實 Capture 以 HoloLens 2 錄製
 
 ## <a name="about-the-app"></a>關於應用程式
 
@@ -71,7 +71,7 @@ ms.locfileid: "98009358"
 
 ## <a name="porting-story-for-hololens-2"></a>HoloLens 2 的移植案例
 
-閱讀有關如何使用 HoloLens 2 的 instinctual 互動來更新專案應用程式之定期表格的案例。
+閱讀有關如何使用 HoloLens 2 的 instinctual 互動來更新專案應用程式週期性表格的案例。
 
 [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 
@@ -87,9 +87,9 @@ ms.locfileid: "98009358"
 </tr>
 </table>
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [MRTK 範例中樞](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ExampleHub.html) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [MRTK 範例中樞](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

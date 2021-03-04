@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 手勢、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 44c42abdd4628cacd6af334a916fb725da8bb022
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4c3db98e3047cdc74663c5cbee1c4607b77008e0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583890"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759079"
 ---
 # <a name="gestures-in-unity"></a>Unity 中的手勢
 
 您可以透過兩種主要方式，在您 [的 [Unity](gaze-in-unity.md)]、[ [手手勢](../../design/gaze-and-commit.md#composite-gestures) ] 和 [ [運動] 控制器](../../design/motion-controllers.md) 中針對 HoloLens 和沉浸式 HMD 採取行動。 您可以透過 Unity 中的相同 Api，存取兩個空間輸入來源的資料。
 
-Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資料。 常見的 *GetButton/GetAxis* api 可跨多個 Unity XR sdk 運作，而 Windows Mixed Reality 特定的 *InteractionManager/GestureRecognizer* api 會公開一組完整的空間輸入資料。
+Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資料。 常見的 *GetButton/GetAxis* api 可跨多個 Unity XR sdk 運作，而適用于 Windows Mixed Reality 的 *InteractionManager/GestureRecognizer* api 則會公開一組完整的空間輸入資料。
 
 ## <a name="high-level-composite-gesture-apis-gesturerecognizer"></a>高層級複合手勢 Api (GestureRecognizer) 
 
@@ -44,7 +44,7 @@ GestureRecognizer recognizer = new GestureRecognizer();
 
 ### <a name="specify-which-gestures-to-watch-for"></a>指定要監看的手勢
 
-透過 SetRecognizableGestures 指定您感興趣的手勢 *( # B1*：
+透過 *SetRecognizableGestures ()* 指定您感興趣的手勢：
 
 ```cs
 recognizer.SetRecognizableGestures(GestureSettings.Tap | GestureSettings.Hold);
@@ -69,7 +69,7 @@ void Start()
 
 ### <a name="start-capturing-gestures"></a>開始捕獲手勢
 
-根據預設， *GestureRecognizer* 會在呼叫 *StartCapturingGestures ( # B1* 之前，不會監視輸入。 如果在處理 *StopCapturingGestures ( # B3* 的框架之前執行輸入，則可能會在 StopCapturingGestures 之後產生手勢事件 *( # B1* 呼叫。 *GestureRecognizer* 會記得在先前的畫面格進行實際發生的情況下，它是開啟或關閉，因此可以根據此框架的監看式目標來開始和停止手勢監視。
+根據預設， *GestureRecognizer* 在呼叫 *StartCapturingGestures ()* 之前不會監視輸入。 如果在處理 *StopCapturingGestures ()* 的框架之前執行輸入，可能會在呼叫 *StopCapturingGestures ()* 後產生手勢事件。 *GestureRecognizer* 會記得在先前的畫面格進行實際發生的情況下，它是開啟或關閉，因此可以根據此框架的監看式目標來開始和停止手勢監視。
 
 ```cs
 recognizer.StartCapturingGestures();
@@ -104,8 +104,8 @@ void OnDestroy()
 
 若要在您的應用程式中轉譯與您的使用者所持有的實體控制器相符的移動控制站，並在按下各種按鈕時表達清楚，您可以在 [混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity/)組中使用 **MotionController 預製專案**。  這個預製專案會從系統已安裝的移動控制器驅動程式，在執行時間動態載入正確的 glTF 模型。  請務必以動態方式載入這些模型，而不是在編輯器中手動匯入這些模型，如此您的應用程式就會針對使用者可能擁有的任何目前和未來控制器顯示實際精確的3D 模型。
 
-1. 遵循 [消費者入門](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md) 指示下載 Mixed Reality 工具組，並將它新增至 Unity 專案。
-2. 如果您在消費者入門步驟中將相機替換成 *MixedRealityCameraParent* 預製專案，您就可以開始使用！  該預製專案包括移動控制器轉譯。  否則，請從 [專案] 窗格將 *資產/HoloToolkit/Input/Prefabs/MotionControllers* 加入場景中。  當使用者在場景中 teleports 時，您會想要將該預製專案新增為您用來移動攝影機之任何父物件的子系，以便讓控制器與使用者一起使用。  如果您的應用程式不需要 teleporting，只要在場景的根目錄新增預製專案即可。
+1. 遵循 [快速入門](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/GettingStarted.md) 指示下載 Mixed Reality 工具組，並將它新增至 Unity 專案。
+2. 如果您在「快速入門」步驟中將相機取代為 *MixedRealityCameraParent* 預製專案，您就可以開始使用！  該預製專案包括移動控制器轉譯。  否則，請從 [專案] 窗格將 *資產/HoloToolkit/Input/Prefabs/MotionControllers* 加入場景中。  當使用者在場景中 teleports 時，您會想要將該預製專案新增為您用來移動攝影機之任何父物件的子系，以便讓控制器與使用者一起使用。  如果您的應用程式不需要 teleporting，只要在場景的根目錄新增預製專案即可。
 
 ## <a name="throwing-objects"></a>擲回物件
 
@@ -131,11 +131,11 @@ void OnDestroy()
 
 未來的 Windows 更新將持續改善擲回，而您可以預期在此找到更多資訊。
 
-## <a name="gesture-and-motion-controllers-in-mrtk-v2"></a>MRTK v2 中的手勢和移動控制器
+## <a name="gesture-and-motion-controllers-in-mrtk"></a>MRTK 中的手勢和移動控制器
 
 您可以從輸入管理員存取手勢和移動控制器。
-* [MRTK v2 中的手勢](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Gestures.html)
-* [MRTK v2 中的動作控制器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html)
+* [MRTK 中的手勢](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/gestures.md)
+* [MRTK 中的動作控制器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md)
 
 
 ## <a name="follow-along-with-tutorials"></a>遵循教學課程

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、按鈕
-ms.openlocfilehash: b4e8388c4e3ea855c191cbdfc06621018274ff86
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 9e4d0637d8c10c3cd23bd2ee1369fd57137af795
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847595"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759424"
 ---
 # <a name="button"></a>Button
 
@@ -46,19 +46,19 @@ ms.locfileid: "97847595"
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>MRTK 中的按鈕 (混合現實工具組) for Unity
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種類型的按鈕 prefabs，包括 HoloLens 2 的 shell 樣式按鈕，以及 HoloLens (第1代) 。 HoloLens 2 按鈕預製專案包含數個詳細 affordances，可協助提升使用者的信心：
+**[適用于 Unity 的 MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種類型的按鈕 prefabs，包括 HoloLens 2 和 hololens (第1代) 的 shell 樣式按鈕。 HoloLens 2 按鈕預製專案包含數個詳細 affordances，可協助提升使用者的信心：
 
 * 鄰近性醒目提示
 * 壓縮 front 籠
 * 對觸發程式的脈衝效果。
 
-* 如需詳細指示和自訂的範例，請參閱 [MRTK 按鈕](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html) 。
+* 如需詳細指示和自訂的範例，請參閱 [MRTK 按鈕](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md) 。
 
 <br>
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

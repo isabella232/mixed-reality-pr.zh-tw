@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 0f9cdc218c6fe54b8892c39a6a76f023e203d334
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5e8ffbb90b1143cd4e11bf45a889c11c233232df
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009918"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759804"
 ---
 # <a name="spatial-mesh"></a>空間網格
 
@@ -21,7 +21,7 @@ ms.locfileid: "98009918"
 
 ## <a name="design-guideline"></a>設計指導方針
 
-請務必讓使用者專注並與內容互動。 背景中空間網格的連續視覺效果可能會造成干擾。 建議您在初始啟動時，或當使用者清楚地顯示其想要依目標和空中點擊空間來查看環境網格時，謹慎地視覺化環境。 您可以在混合實境入口中觀察這項行為。
+請務必讓使用者專注並與內容互動。 背景中空間網格的連續視覺效果可能會造成干擾。 建議您在初始啟動時，或當使用者清楚地顯示其想要依目標和空中點擊空間來查看環境網格時，謹慎地視覺化環境。 您可以在混合現實入口網站中觀察這項行為。
 <br>
 
 ## <a name="spatial-mesh-visualization-in-mrtk-mixed-reality-toolkit-for-unity"></a>適用于 Unity 的 MRTK (混合現實工具組) 的空間網格視覺效果
@@ -35,13 +35,13 @@ MRTK 為空間網格視覺效果提供數種材質。
 - **MRTK_SurfaceReconstruction** 的材質：此材質提供您對空間網格的動畫脈衝效果。 您可以使用這份資料，在特定時間或使用者的按兩下輸入時，將環境視覺化。 如需範例，請參閱 **PulseShaderExamples unity** 場景。
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
-* 如需詳細資訊，請參閱 [MRTK-空間感知](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html) 和 [MRTK-脈衝著色器](https://microsoft.github.io/MixedRealityToolkit-Unity/Assets/MRTK/SDK/Experimental/PulseShader/README.html)。
+* 如需詳細資訊，請參閱 [MRTK-空間感知](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md) 和 [MRTK-脈衝著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/experimental/pulse-shader.md)。
 
 <br>
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

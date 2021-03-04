@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、控制項、設計、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、物件集合、2D、3D、MRTK、混合現實工具組
-ms.openlocfilehash: a459d03246b8df4c17d523f57ece54997849c209
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality、控制項、設計、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、物件集合、2D、3D、MRTK、混合現實工具組
+ms.openlocfilehash: 53ec99b998f1c65fdd3ca8b5d935b43ff0070500
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847210"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759149"
 ---
 # <a name="object-collection"></a>物件集合
 
@@ -48,13 +48,13 @@ ms.locfileid: "97847210"
 
 ## <a name="object-collection-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 的 MRTK (混合現實工具組) 的物件集合
 
-* [MRTK-物件集合](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)
+* [MRTK-物件集合](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/object-collection.md)
 
 <br>
 
 ---
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [游標](cursors.md)
 * [手部光線](point-and-commit.md)

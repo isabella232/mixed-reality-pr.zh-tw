@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, MRTK, MRTK 第 2 版, HoloLens 2, unity, 移植, HoloLens (第 1 代), 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 移轉, 最佳做法, ARM
-ms.openlocfilehash: c55eb47c7fa8e87fd1fe96fd3b81f3cd3a3ee5a0
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.openlocfilehash: 6f3c12bf54a4f4339c54908a47369746e0d743a4
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009907"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759129"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>將 HoloLens (第1代) 應用程式移植到 HoloLens 2
 
@@ -80,26 +80,26 @@ HoloLens (第 1 代) 會在 x86 處理器上執行應用程式，HoloLens 2 則�
 
 如需使用 MRTK 第 2 版的詳細資訊，請查看下列資源：
 
-- [MRTK - 文件首頁 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
+- [MRTK-檔首頁](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)
 - [安裝指南 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-- [MRTK - 手部追蹤 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/HandTracking.html)
-- [MRTK - 眼球追蹤 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)
+- [MRTK - 手部追蹤 (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/hand-tracking.md)
+- [MRTK - 眼球追蹤 (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/eye-tracking/eye-tracking-main.md)
 
 ### <a name="prepare-for-the-migration"></a>準備移轉
 
-在嵌入新的 [*.unitypackage 檔案 (適用於 MRTK v2)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases) 之前，建議您清查 **1) 與 MRTK v1 整合的任何自訂建置程式碼** 和 **2) 用於輸入互動或 UX 元件的任何自訂建置程式碼**。 內嵌 MRTK v2 的混合實境開發人員會在輸入和互動方面遇到最常見也最普遍的衝突。 建議您開始閱讀並了解 [MRTK v2 輸入模型](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)。
+在嵌入新的 [*.unitypackage 檔案 (適用於 MRTK v2)](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases) 之前，建議您清查 **1) 與 MRTK v1 整合的任何自訂建置程式碼** 和 **2) 用於輸入互動或 UX 元件的任何自訂建置程式碼**。 內嵌 MRTK v2 的混合實境開發人員會在輸入和互動方面遇到最常見也最普遍的衝突。 建議您開始閱讀並了解 [MRTK v2 輸入模型](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)。
 
-終於，新的 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) 已從指令碼和場景中管理員物件的模型轉換為設定和服務提供者架構。 這會讓場景階層和架構模型更為簡潔，但需要花一段時間學習才能了解新的組態設定檔。 請閱讀[混合實境工具組設定指南](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html)來開始熟悉重要設定和設定檔，以調整為符合應用程式的需求。
+終於，新的 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) 已從指令碼和場景中管理員物件的模型轉換為設定和服務提供者架構。 這會讓場景階層和架構模型更為簡潔，但需要花一段時間學習才能了解新的組態設定檔。 請閱讀[混合實境工具組設定指南](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md)來開始熟悉重要設定和設定檔，以調整為符合應用程式的需求。
 
 ### <a name="migrating-the-project"></a>遷移專案
 
 匯入 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity) 之後，Unity 專案很可能會有許多編譯器相關錯誤。 之所以有這些錯誤，通常是因為使用了新的命名空間結構和新的元件名稱。 請繼續藉由將指令碼修改為新的命名空間和元件，來解決這些錯誤。
 
-如需 HTK/MRTK 和 MRTK 第 2 版之間特定 API 差異的詳細資訊，請參閱 [MRTK 第 2 版 Wiki](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html) 上的移植指南。
+如需 HTK/MRTK 和 MRTK 第 2 版之間特定 API 差異的詳細資訊，請參閱 [MRTK 第 2 版 Wiki](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md) 上的移植指南。
 
 ### <a name="best-practices"></a>最佳作法
 
-- 最好使用 [MRTK 標準著色器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_MRTKStandardShader.html)。
+- 最好使用 [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shading.md)。
 - 一次處理一個重大變更類型 (例如：IFocusable to [IMixedRealityFocusHandler](https://microsoft.github.io/MixedRealityToolkit-Unity/api/Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusHandler.html))。
 - 每次變更後都進行測試，並使用原始檔控制。
 - 盡可能使用預設的 MRTK UX (按鈕、靜態圖像等)。
@@ -109,7 +109,7 @@ HoloLens (第 1 代) 會在 x86 處理器上執行應用程式，HoloLens 2 則�
 - 重建有四色、collider 和 TextMeshPro 文字的畫布式 UI。
 - 啟用[深度緩衝區共用](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows)或[設定焦點點](../unity/focus-point-in-unity.md)；最好使用 16 位元深度緩衝區以提升效能。 在轉譯色彩時，請務必同時轉譯深度。 對於透明和文字 gameobject，Unity 通常不會寫入深度。 
 - 設定單一階段執行個體化轉譯路徑。
-- 使用 [Hololens 2 的 MRTK 組態設定檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Profiles/Profiles.html#hololens-2-profile)
+- 使用 [Hololens 2 的 MRTK 組態設定檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile)
 
 ### <a name="testing-your-application"></a>測試您的應用程式
 
@@ -152,8 +152,8 @@ HoloLens (第 1 代) 會在 x86 處理器上執行應用程式，HoloLens 2 則�
 ## <a name="see-also"></a>另請參閱
 * [安裝工具](../install-the-tools.md)
 * [MRTK - 安裝指南 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html)
-* [MRTK - 文件首頁 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)
-* [從 HoloToolkit/MRTK 移植到 MRTK 第 2 版 (GitHub)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/HTKToMRTKPortingGuide.html)
+* [MRTK-檔首頁](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)
+* [從 HoloToolkit/MRTK 移植到 MRTK 第2版 (GitHub) ] ([MRTK-檔首頁](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md)
 * [Unity 的建議設定](../unity/recommended-settings-for-unity.md)
 * [了解混合實境的效能](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)
 

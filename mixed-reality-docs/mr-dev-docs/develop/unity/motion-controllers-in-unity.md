@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 運動控制器、unity、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: db103e674a369f13e62aac5e8c0513b2c2c17f9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6dee5f03ab5fe84ac11a4eb10ef0483fea6e0083
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583500"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759059"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity 中的動作控制器
 
 您可以透過兩種主要方式，在您 [的 [Unity](gaze-in-unity.md)]、[ [手手勢](../../design/gaze-and-commit.md#composite-gestures) ] 和 [ [運動] 控制器](../../design/motion-controllers.md) 中針對 HoloLens 和沉浸式 HMD 採取行動。 您可以透過 Unity 中的相同 Api，存取兩個空間輸入來源的資料。
 
-Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資料。 常見的 *GetButton/GetAxis* api 可跨多個 Unity XR sdk 運作，而 Windows Mixed Reality 特定的 *InteractionManager/GestureRecognizer* api 會公開一組完整的空間輸入資料。
+Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資料。 常見的 *GetButton/GetAxis* api 可跨多個 Unity XR sdk 運作，而適用于 Windows Mixed Reality 的 *InteractionManager/GestureRecognizer* api 則會公開一組完整的空間輸入資料。
 
 ## <a name="unity-xr-input-apis"></a>Unity XR 輸入 Api
 
@@ -29,9 +29,9 @@ Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資
 
 Unity 的 Windows Mixed Reality 移動控制器的輸入管理員可透過 *GetButton/GetAxis* api 支援下列按鈕和軸識別碼。 「Windows MR 特定」資料行指的是 *InteractionSourceState* 類型可用的屬性。 下列各節將詳細說明每個 Api。
 
-Windows Mixed Reality 的按鈕/軸識別碼對應通常會符合 Oculus 按鈕/軸識別碼。
+適用于 Windows Mixed Reality 的按鈕/軸識別碼對應，通常會符合 Oculus 按鈕/軸識別碼。
 
-Windows Mixed Reality 的按鈕/軸識別碼對應有兩種不同于 OpenVR 的對應：
+適用于 Windows Mixed Reality 的按鈕/軸識別碼對應有兩種不同的 OpenVR 對應：
 1. 對應會使用與操縱杆不同的觸控板識別碼，以支援具有 thumbsticks 和 touchpads 的控制器。
 2. 對應可避免多載功能表按鈕的 A 和 X 按鈕識別碼，讓它們可用於實體 ABXY 按鈕。
 
@@ -115,7 +115,7 @@ Windows Mixed Reality 支援各種外型規格中的動作控制器。 每個控
 在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件**。 視覺化運動控制器時，也會使用底框姿勢。 Windows 為移動控制器提供的 **呈現模型** ，會使用底框姿勢作為其原點和旋轉中心。
 
 此底框姿勢的定義方式明確如下：
-* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 運動控制器上，此位置通常會與 [抓住] 按鈕對齊。
+* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 移動控制器上，此位置通常會與 [抓住] 按鈕對齊。
 * 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
 * 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
 * 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
@@ -132,7 +132,7 @@ Windows Mixed Reality 支援各種外型規格中的動作控制器。 每個控
 
 ## <a name="controller-tracking-state"></a>控制器追蹤狀態
 
-如同耳機，Windows Mixed Reality 運動控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。
+如同耳機，Windows Mixed Reality 移動控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。
 
 如果使用者將控制器移出耳機的觀賞欄位，Windows 會在大部分情況下繼續推斷控制器的位置。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。
 
@@ -173,7 +173,7 @@ Windows Mixed Reality 支援各種外型規格中的動作控制器。 每個控
 **Namespace：** *UnityEngine*， *UnityEngine. XR*<br>
 **類型**： *輸入*、 *XR。InputTracking*
 
-Unity 目前使用其一般 *輸入. GetButton/GetAxis* api 來公開 [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html)、 [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) 和 Windows Mixed Reality 的輸入，包括實習和移動控制器。 如果您的應用程式使用這些 Api 進行輸入，則可以輕鬆地支援跨多個 XR Sdk 的移動控制器，包括 Windows Mixed Reality。
+Unity 目前使用其一般 *輸入. GetButton/GetAxis* api 來公開 [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html)、 [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) 和 Windows Mixed Reality 的輸入，包括手和移動控制器。 如果您的應用程式使用這些 Api 進行輸入，則可以輕鬆地支援跨多個 XR Sdk 的動作控制器，包括 Windows Mixed Reality。
 
 ### <a name="getting-a-logical-buttons-pressed-state"></a>取得邏輯按鈕的按下狀態
 
@@ -227,7 +227,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 **命名空間：** *UnityEngine. XR。輸入*<br>
 **類型**： *InteractionManager*、 *InteractionSourceState*、 *InteractionSource*、 *InteractionSourceProperties*、 *InteractionSourceKind*、 *InteractionSourceLocation*
 
-若要取得 HoloLens) 和移動控制器的 Windows Mixed Reality 手輸入 (的詳細資訊，您可以選擇使用 *UnityEngine. XR* 底下的 Windows 特定空間輸入 api。 這可讓您存取額外的資訊，例如位置精確度或來源種類，讓您可以分辨手和控制器。
+若要取得適用于 HoloLens) 和移動控制器的 Windows Mixed Reality 手輸入 (的詳細資訊，您可以選擇使用 *UnityEngine. XR* 底下的 windows 特定空間輸入 api。 這可讓您存取額外的資訊，例如位置精確度或來源種類，讓您可以分辨手和控制器。
 
 ### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>輪詢實習和移動控制器的狀態
 
@@ -434,9 +434,9 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 }
 ```
 
-## <a name="motion-controllers-in-mrtk-v2"></a>MRTK v2 中的動作控制器
+## <a name="motion-controllers-in-mrtk"></a>MRTK 中的動作控制器
 
-您可以從輸入管理員存取 [手勢和移動控制器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Controllers.html) 。
+您可以從輸入管理員存取 [手勢和移動控制器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/controllers.md) 。
 
 ## <a name="follow-along-with-tutorials"></a>遵循教學課程
 

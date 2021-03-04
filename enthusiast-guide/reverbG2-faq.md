@@ -1,18 +1,18 @@
 ---
 title: HP 回音
-description: 透過 Windows Mixed Reality 的沉浸式耳機，隨時掌握有關使用 HP 殘響 G2 耳機的常見問題。
+description: 隨時掌握有關使用「HP 回音」 G2 耳機搭配 Windows Mixed Reality 沉浸式耳機的最新相關常見問題。
 ms.author: v-hferrone
 ms.date: 09/15/2020
 ms.topic: article
-keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、效能
+keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，協助，支援，效能
 appliesto:
 - Windows 10
-ms.openlocfilehash: 60854785d526c7abff6327ddbb8d39d4eef23ae4
-ms.sourcegitcommit: c904d47ab2ce03d433d5eff394ec4078f404a0f7
+ms.openlocfilehash: 9b477042ebed33600a007778cd534d3074e34770
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98242531"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759283"
 ---
 # <a name="hp-reverb-g2-frequently-asked-questions"></a>HP 的回音，常見問題
 
@@ -60,15 +60,15 @@ HP 建議：
 
 ## <a name="others-state-i-am-loud-or-that-my-audio-is-clipping-while-i-am-using-the-microphone-with-some-applications"></a>當我使用麥克風進行某些應用程式時，其他人會看到我的聲音，或是音訊正在剪切
 
-當 Windows 電腦第一次辨識出 HP 的「回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定的預期。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」的應用程式範例包括 Skype、縮放、小組和 Cisco WebEx，但並非所有的 VR 社交或廣播應用程式都有這項功能。
+當 Windows 電腦第一次辨識出 HP 的「回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」的應用程式範例包括 Skype、縮放、小組和 Cisco WebEx，但並非所有的 VR 社交或廣播應用程式都有這項功能。
 
-## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>混合實境入口指出「此耳機上無法執行混合的現實」，但這在先前的 WMR 耳機中運作正常
+## <a name="the-mixed-reality-portal-says-cant-run-mixed-reality-on-this-headset-but-this-worked-fine-with-my-previous-wmr-headset"></a>混合現實入口網站顯示「無法在此耳機上執行混合的現實」，但這在我先前的 WMR 耳機中也能正常運作
 
 發生這種情況的原因可能是您的 HP 回箱 G2 需要更強大的電腦，以確保獲得最佳體驗。 如需詳細資訊，請參閱最小的 [電腦需求](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)
 
 ## <a name="it-looks-like-my-left-display-is-stretched-and-the-right-display-is-off-centered-and-half-black"></a>我的左顯示器似乎已伸展，右邊的顯示顯示在中央和半黑色
 
-當耳機未以原生解析度執行時，就會發生這種情況。 由於高解析度的本質會顯示在 HP 回音 HMD 中，並非所有系統都可以轉譯原生解析度。 未來會有一個修正 Windows Update，當耳機不是原生解析度時，將會解決轉譯問題。
+當耳機未以原生解析度執行時，就會發生這種情況。 由於高解析度的本質會顯示在 HP 回音 HMD 中，並非所有系統都可以轉譯原生解析度。 未來的 Windows Update 中有一個修正程式，可在耳機不是原生解析度時解決轉譯問題。
 
 有幾個原因會導致您的系統無法以原生解析度轉譯：
 
@@ -82,7 +82,7 @@ HP 建議：
 
 ## <a name="my-steamvr-games-dont-appear-to-work-correctly-with-my-hp-motion-controllers"></a>我的 SteamVR 遊戲似乎無法正常搭配我的 HP 運動控制器運作
 
-雖然開發人員致力於更新其遊戲以進行 HP 運動控制器相容性，但我們為串流上許多最受歡迎的遊戲提供了自訂控制器系結。 使用 "Windows Mixed Reality for SteamVR" 完全更新至版本1.2.444 時，應會在遊戲執行時自動挑選這些系結。 但是，如果您的遊戲目前似乎沒有註冊您的動作，您可以使用 [SteamVR 設定] 功能表手動搜尋自訂系結設定檔。
+雖然開發人員致力於更新其遊戲以進行 HP 運動控制器相容性，但我們為串流上許多最受歡迎的遊戲提供了自訂控制器系結。 使用「適用于 SteamVR 的 Windows Mixed Reality」已完全更新為版本1.2.444 時，應該會在遊戲執行時自動挑選這些系結。 但是，如果您的遊戲目前似乎沒有註冊您的動作，您可以使用 [SteamVR 設定] 功能表手動搜尋自訂系結設定檔。
 作法
 
 - 按下右邊的動作控制器的功能表按鈕，開啟 [SteamVR] 功能表
@@ -102,3 +102,8 @@ HP 建議：
 ## <a name="how-can-i-power-down-the-headset-while-still-using-my-pc"></a>如何在仍在使用電腦的同時，關閉耳機電源
 
 從耳機纜線上的連結方塊中拔下 AC 連接介面卡，以移除耳機的電源。
+
+## <a name="the-image-of-the-displays-of-the-reverb-g2-is-smaller-and-only-in-the-upper-left"></a>「回音」 G2 顯示器的影像較小，而且只在左上方
+
+如果您有 AMD 電源 GPU，則必須停用自動消除倍增。 當您的耳機連線時，流覽至 [設定]-> 混合現實-> 耳機-> 解析度。
+在下拉式功能表中，選取 [4320 x 2160 (最佳品質) ] 選項。 選取 [自動消除倍增 (最佳效能) ] 時，您可能會遇到顯示的問題。

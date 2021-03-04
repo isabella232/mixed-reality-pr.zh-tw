@@ -5,17 +5,17 @@ author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 2D 應用程式、UWP、平面應用程式、HoloLens、沉浸式耳機、應用程式模型、上一頁按鈕、應用程式行、DPI、解析度、縮放、移植、HoloLens 1 代、HoloLens 2、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10
-ms.openlocfilehash: 2d6b03a8cca70ac2db810209263139ebdf3c22a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: 2D 應用程式、UWP、平面應用程式、HoloLens、沉浸式耳機、應用程式型號、上一頁按鈕、應用程式行、DPI、解析度、縮放、移植、HoloLens 第1代、HoloLens 2、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10
+ms.openlocfilehash: 6e8e000f694b40f637c932ee9764415ec3a57698
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583536"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759794"
 ---
 # <a name="updating-2d-uwp-apps-for-windows-mixed-reality"></a>更新 Windows Mixed Reality 的 2D UWP 應用程式
 
-Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世界中的圖片。 在其核心中，您將沉浸式耳機配件附加至的 HoloLens 和桌上型電腦都是 Windows 10 裝置。 您可以在存放區中執行幾乎所有通用 Windows 平臺 (UWP) 應用程式作為2D 應用程式。
+Windows Mixed Reality 讓您的使用者可以看到像是在實體和數位世界中的影像。 在其核心中，您將沉浸式耳機配件附加至的 HoloLens 和桌上型電腦都是 Windows 10 裝置。 您可以在存放區中執行幾乎所有的通用 Windows 平臺 (UWP) 應用程式作為2D 應用程式。
 
 ## <a name="creating-a-2d-uwp-app-for-mixed-reality"></a>為混合的現實建立 2D UWP 應用程式
 
@@ -23,7 +23,7 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 
 ### <a name="building-a-new-2d-uwp-app"></a>建立新的 2D UWP 應用程式
 
-若要建立混合現實的新2D 應用程式，您可以建立標準2D 通用 Windows 平臺 (UWP) 應用程式。 應用程式不需要進行任何其他應用程式變更，就可以在混合現實中以平板的形式執行。
+若要建立混合現實的新2D 應用程式，請建立標準2D 通用 Windows 平臺 (UWP) 應用程式。 應用程式不需要進行任何其他應用程式變更，就可以在混合現實中以平板的形式執行。
 
 若要開始建立 2D UWP 應用程式，請參閱 [建立您的第一個應用程式](/windows/uwp/get-started/your-first-app) 文章。
 
@@ -39,7 +39,7 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 |  Windows Store 8  |  8個不包含平臺目標的 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 |  Windows Store 8.1 通用  |  不包含平臺目標的 8.1 AppX 資訊清單  |  [將您的應用程式遷移至通用 Windows 平臺](/previous-versions/visualstudio/visual-studio-2015/misc/migrate-apps-to-the-universal-windows-platform-uwp) | 
 
-如果您目前有 2D Unity 應用程式在電腦上以 Win32 應用程式的形式建立 **，Mac & Linux 獨立** 組建目標上，請切換至 **通用 Windows 平臺** 的組建目標，以瞭解混合的實際情況。
+如果您目前已在電腦上以 Win32 應用程式的形式建立 2D Unity 應用程式 **，Mac & Linux 獨立** 組建目標，請切換至 **通用 Windows 平臺** 組建目標，以瞭解混合現實。
 
 我們會討論您可以使用 [以下](#publish-and-maintain-your-universal-app)的 Windows 全像裝置系列，將您的應用程式明確限制為 HoloLens 的方式。
 
@@ -47,20 +47,20 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 
 如果您已將2D 應用程式部署至桌上型電腦，並在您的監視器上試用它，您就可以在沉浸式桌面耳機上試用！
 
-請移至混合現實耳機內的 [開始] 功能表，然後從該處啟動應用程式。 Desktop shell 和全像全像全像一樣，都共用一組 UWP 應用程式，因此當您從 Visual Studio 部署之後，應用程式應該就已經存在。
+請移至混合現實耳機內的 [開始] 功能表，然後從該處啟動應用程式。 Desktop shell 和全像全像全像一樣的 UWP 應用程式，因此當您從 Visual Studio 部署之後，應用程式應該就已經存在。
 
 ## <a name="targeting-both-immersive-headsets-and-hololens"></a>以沉浸式耳機和 HoloLens 為目標
 
 恭喜！ 您的應用程式現在使用 Windows 10 通用 Windows 平臺 (UWP) 。
 
-您的應用程式現在可以在現今的 Windows 裝置上執行，例如桌上型、Mobile、Xbox、Windows Mixed Reality 沉浸式耳機、HoloLens 和未來的 Windows 裝置。 不過，若要實際將所有裝置設為目標，您必須確定您的應用程式是以 Windows 為目標。 通用裝置系列。
+您的應用程式現在可以在現今的 Windows 裝置上執行，例如桌上型電腦、行動裝置、Xbox、Windows Mixed Reality 沉浸式耳機、HoloLens 和未來的 Windows 裝置。 不過，若要實際將所有裝置設為目標，您必須確定您的應用程式是以 Windows 為目標。 通用裝置系列。
 
 ### <a name="change-your-device-family-to-windowsuniversal"></a>將您的裝置系列變更為 Windows 通用
 
 現在，讓我們跳到您的 AppX 資訊清單，以確保您的 Windows 10 UWP 應用程式可以在 HoloLens 上執行：
 * 使用 **Visual Studio** 開啟您的應用程式解決方案檔，然後流覽至應用程式套件資訊清單
 * 以滑鼠右鍵按一下方案中的 **package.appxmanifest** 檔案，然後移至 [ **View Code** ]<br>
-  ![方案總管中的 package.appxmanifest](images/openappxmanifest-500px.png)<br>
+  ![方案 Explorer 中的 package.appxmanifest](images/openappxmanifest-500px.png)<br>
 * 確定您的目標平臺為 Windows。 [相依性] 區段中的 [通用]
   ```
   <Dependencies>
@@ -69,13 +69,13 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
   ```
 * 救！
 
-如果您沒有針對開發環境使用 Visual Studio，就可以在您選擇的文字編輯器中開啟 **AppXManifest.xml** ，以確保您的目標是 **Windows 通用** *y*。
+如果您未將 Visual Studio 用於開發環境，您可以在您選擇的文字編輯器中開啟 **AppXManifest.xml** ，以確保您的目標是 **Windows 通用** *y*。
 
 ### <a name="run-in-the-hololens-emulator"></a>在 HoloLens 模擬器中執行
 
 現在，您的 UWP 應用程式是以 "Windows 通用" 為目標，讓我們建立您的應用程式，並在 [HoloLens 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md)中執行它。
 * 請確定您 [已安裝 HoloLens 模擬器](../install-the-tools.md)。
-* 在 Visual Studio 中，選取應用程式的 **x86** 組建設定
+* 在 Visual Studio 中，選取您應用程式的 **x86** 組建設定
 
   ![Visual Studio 中的 x86 組建設定](../platform-capabilities-and-apis/images/x86setting.png)<br>
 * 在 [部署目標] 下拉式功能表中，選取 [HoloLens 模擬器] 
@@ -87,7 +87,7 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 
   ![使用 UWP 範例載入 HoloLens 模擬器](images/hololensemulatorwithuwpsample-800px.png)<br>
 
-### <a name="next-steps"></a>後續步驟
+### <a name="next-steps"></a>下一步
 
 此時，可能會發生下列其中一種情況：
 1. 您的應用程式將會顯示其啟動顯示，並在放置於模擬器之後開始執行！ 好極了！
@@ -98,7 +98,7 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 ### <a name="running-your-uwp-app-in-the-debugger"></a>在偵錯工具中執行 UWP 應用程式
 
 這些步驟將逐步引導您使用 Visual Studio 偵錯工具來偵測 UWP 應用程式。
-* 如果您尚未這麼做，請在 Visual Studio 中開啟您的解決方案。 將目標變更為 **HoloLens 模擬器** ，並將組建設定變更為 **x86**。
+* 如果您尚未這麼做，請在 Visual Studio 中開啟您的方案。 將目標變更為 **HoloLens 模擬器** ，並將組建設定變更為 **x86**。
 * 選取 [ **Debug] > 開始調試** 程式，以部署您的應用程式並啟動偵錯工具。
 * 使用滑鼠、鍵盤或 Xbox 控制器將應用程式放在世界各地。
 * Visual Studio 現在應該會在應用程式程式碼中的某處中斷。
@@ -109,14 +109,14 @@ Windows Mixed Reality 可讓您的使用者看到全像是在實體和數位世�
 ## <a name="update-your-ui"></a>更新您的 UI
 
 現在您的 UWP 應用程式是在沉浸式耳機和 HoloLens 上以2D 全息圖的形式執行，接下來我們要確定它看起來美觀。 以下是要考量的一些事項：
-* Windows Mixed Reality 將會以固定的解析度和 DPI （相當於853x480 有效的圖元）執行所有2D 應用程式。 請考慮您的設計是否需要依此規模進行調整，並查看下列設計指引，以改善您的 HoloLens 和沉浸式耳機體驗。
+* Windows Mixed Reality 會以固定的解析度和 DPI （相當於853x480 有效的圖元）執行所有2D 應用程式。 請考慮您的設計是否需要依此規模進行調整，並查看下列設計指引，以改善您的 HoloLens 和沉浸式耳機體驗。
 * Windows Mixed Reality [不支援](../../design/app-model.md) 2d 動態磚。 如果您的核心功能顯示動態磚上的資訊，請考慮將該資訊移回您的應用程式，或探索 [3d 應用程式啟動器](../../distribute/3d-app-launcher-design-guidance.md)。
 
 ### <a name="2d-app-view-resolution-and-scale-factor"></a>2D 應用程式視圖解析度和縮放因數
 
 ![從回應式設計](images/scale-500px.png)
 
-Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖元**。 這表示，開發人員會依照 Windows 10 的人類介面指導方針來設計其 UI 以取得有效的圖元，而 Windows 調整可確保這些有效的圖元在裝置、解析度、DPI 等方面都是正確的大小。 如需詳細資訊，請參閱 MSDN 和此[組建簡報](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)的這篇[絕佳閱讀](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design)。
+Windows 10 會將所有視覺效果設計從真實螢幕圖元移至 **有效的圖元**。 這表示，開發人員會遵循 Windows 10 人類介面指導方針來設計其 UI 以取得有效的圖元，而 Windows 調整可確保這些有效的圖元在裝置、解析度、DPI 等各類的可用性上都是正確的。 如需詳細資訊，請參閱 MSDN 和此[組建簡報](https://video.ch9.ms/sessions/build/2015/2-63_Build_2015_Windows_Scaling.pptx)的這篇[絕佳閱讀](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design)。
 
 即使有獨特的能力可將世界各地的應用程式放在不同的距離，建議使用類似電視的觀賞距離，以產生最佳的可讀性，並與注視/手勢互動。 因此，Mixed Reality 首頁中的虛擬平板會在下列位置顯示您的平面 UWP 視圖：
 
@@ -124,13 +124,13 @@ Windows 10 將所有視覺效果設計從真實螢幕圖元移至 **有效的圖
 
 此解決方法有幾個優點：
 * 此有效的圖元配置將與 tablet 或 small desktop 具有相同的資訊密度。
-* 它會針對在 Xbox One 上執行的 UWP 應用程式，符合固定 DPI 和有效的圖元，讓裝置之間能無縫體驗。
+* 它會針對在 Xbox One 上執行的 UWP 應用程式，符合固定的 DPI 和有效圖元，讓裝置之間能無縫體驗。
 * 當您在世界各地的應用程式之間調整規模時，此大小會良好。
 
 ### <a name="2d-app-view-interface-design-best-practices"></a>2D 應用程式視圖介面設計最佳作法
 
 **任務**
-* 遵循 [Windows 10 的人體介面指導方針 (HIG) ](https://dev.windows.com/design) 樣式、字型大小和按鈕大小。 HoloLens 將會執行工作，以確保您的應用程式會有相容的應用程式模式、可讀取的文字大小，以及適當的點擊目標大小。
+* 遵循 [Windows 10 人體操作介面指導方針 (HIG) ](https://dev.windows.com/design) 的樣式、字型大小和按鈕大小。 HoloLens 將會執行工作，以確保您的應用程式會有相容的應用程式模式、可讀取的文字大小，以及適當的點擊目標大小。
 * 確定您的 UI 遵循最佳作法，以提供最適合 HoloLens 的獨特解析度和 DPI 的 [回應式設計](/windows/uwp/design/layout/screen-sizes-and-breakpoints-for-responsive-design) 。
 * 使用來自 Windows 的「淺色」色彩主題建議。
 
@@ -169,7 +169,7 @@ Windows 會為 UWP 應用程式處理這種複雜性，並將您的 [注視](../
 * 注視不像滑鼠輸入一樣精確。 針對 HoloLens 使用適當大小的點擊目標，類似于便於觸控的行動應用程式。 接近應用程式邊緣的小元素，特別難以與互動。
 * 使用者必須切換輸入模式，才能從滾動至拖曳至兩個手指移動。 如果您的應用程式是針對觸控輸入而設計，請考慮確定不會在兩個手指移動之後鎖定任何主要功能。 若是如此，請考慮採用替代輸入機制，例如可啟動兩個手指移動的按鈕。 例如，地圖應用程式可以使用兩個手指移動來縮放，但是有加號、減號和旋轉按鈕，只要按一下就能模擬相同的縮放互動。
 
-[語音輸入](../../design/voice-input.md) 是混合現實體驗的重要部分。 我們已啟用在使用耳機時，Windows 10 為 Cortana 提供的所有語音 Api。
+[語音輸入](../../design/voice-input.md) 是混合現實體驗的重要部分。 在使用耳機時，我們已啟用 Windows 10 中的所有語音 Api 來為 Cortana 提供支援。
 
 ## <a name="publish-and-maintain-your-universal-app"></a>發佈和維護您的通用應用程式
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens、MRTK、混合現實工具組、UWP、物件互動、界限會控制
 ms.localizationpriority: high
-ms.openlocfilehash: f92eca294e2114207a5e28ebe80aa480b9029b66
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 6a74512500446d949b8c2adcc10a84f6ac657435
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590428"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759994"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -113,7 +113,7 @@ ms.locfileid: "99590428"
 
 ![按下 [重設] 按鈕的 Unity 播放模式分割檢視](images/mr-learning-base/base-07-section1-step1-7.png)
 
-若要深入了解 Object Manipulator (物件操作工具) 元件及其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的 [Object Manipulator (物件操作工具)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 指南。
+若要深入了解 Object Manipulator (物件操作工具) 元件及其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)中的 [Object Manipulator (物件操作工具)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 指南。
 
 ## <a name="adding-bounds-control"></a>加入界限控制項
 
@@ -171,7 +171,7 @@ ms.locfileid: "99590428"
 
 ![要操作界限控制項的 Unity 播放模式分割視圖](images/mr-learning-base/base-07-section2-step1-4.png)
 
-若要深入瞭解界限控制元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[界限控制](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)指南。
+若要深入瞭解界限控制元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)中的[界限控制](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)指南。
 
 ## <a name="congratulations"></a>恭喜！
 

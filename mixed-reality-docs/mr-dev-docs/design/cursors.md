@@ -5,13 +5,13 @@ author: thetuvix
 ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
-keywords: HoloLens (第1代) 、HoloLens 2、混合的現實、游標、目標、注視、手勢、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、放射片、輸入
-ms.openlocfilehash: 0525bb9b30dfe71fba7b8ebf2afd2c87a8c97a27
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens (1 代) 、HoloLens 2、混合現實、游標、目標、注視、手勢、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、射線、輸入
+ms.openlocfilehash: 0b35c832e6d13ff10d14686909754de60b83fa23
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582405"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759414"
 ---
 # <a name="cursors"></a>資料指標
 
@@ -19,7 +19,7 @@ ms.locfileid: "98582405"
 
 資料指標會根據耳機認為使用者的最新焦點是在指定時間，提供持續的意見反應。 資料指標意見反應包括虛擬環境中的哪個區域、全息圖或點會回應輸入。 即使游標是裝置瞭解使用者注意的數位標記法，但這並不是判斷使用者的意圖。 資料指標意見反應也可讓使用者知道預期的系統回應。 您可以使用意見反應，將其意圖傳達給裝置，從而提高使用者的信心。
 
-有3種資料指標： **手指、光線** 和 **頭部**。 這些指標資料指標在 HoloLens、HoloLens 2 和沉浸式耳機上，使用不同的輸入形式。 以下是要針對每種類型的耳機和互動模型使用哪一種資料指標類型的指引。 在 (MRTK) 的混合現實工具組中，我們建立了拖放資料指標模組，以協助您建立正確的指標體驗。
+有3種資料指標： **手指、光線** 和 **頭部**。 這些指標會在 HoloLens、HoloLens 2 和沉浸式耳機上使用不同的輸入形式。 以下是要針對每種類型的耳機和互動模型使用哪一種資料指標類型的指引。 在 (MRTK) 的混合現實工具組中，我們建立了拖放資料指標模組，以協助您建立正確的指標體驗。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -58,14 +58,14 @@ ms.locfileid: "98582405"
 
 ## <a name="finger-cursor"></a>手指游標
 
-手指游標只能在 HoloLens 2 上使用，以增強「[直接操作](direct-manipulation.md)」互動模式。 我們已將環形連接至兩個索引手指的秘訣，以更清楚地瞭解手指指向的位置。 環形大小是以指向 UI 介面的手指近距離為基礎，這會在手指觸及 UI 時縮小為小點。 手指越接近，環形就越小。 <br>
+手指游標僅適用于 HoloLens 2，以增強「[手動操作的直接操作](direct-manipulation.md)」互動模式。 我們已將環形連接至兩個索引手指的秘訣，以更清楚地瞭解手指指向的位置。 環形大小是以指向 UI 介面的手指近距離為基礎，這會在手指觸及 UI 時縮小為小點。 手指越接近，環形就越小。 <br>
 
 ![手指游標](images/finger-cursor.png)<br>
 **手指游標1的視覺意見反應狀態** ：環形會縮小為點。 2：環形與 surface 對齊。 3：環形與手指向量垂直。 4：無環形。
 
 ## <a name="ray-cursor"></a>光線游標
 
-光線指標會附加至最接近的光線，以允許操作不在手中的物件。 在沉浸式耳機中，光線會從運動控制器和以點指標結束。 在 HoloLens 2 中，我們會套用這些移動控制器光線的精神模型，以及源自手掌和結尾的環形指標，而這些指標與直接操作中使用的手指指標一致。 <br>
+光線指標會附加至最接近的光線，以允許操作不在手中的物件。 在沉浸式耳機中，光線會從運動控制器和以點指標結束。 在 HoloLens 2 中，我們會套用這些移動控制器光線的精神模型，以及源自手掌和 end in 環形指標，且與直接操作中使用的手指指標一致的光線。 <br>
 :::row:::
     :::column:::
         ![光線游標控制器](images/ray-cursor-controller.png)<br>
@@ -83,7 +83,7 @@ ms.locfileid: "98582405"
 
 ## <a name="head-gaze-cursor"></a>頭部指標
 
-前端指標是一個點，它會附加至不可見的標頭看式向量的結尾，該向量會使用標頭的位置和旋轉來指向點。 若要執行動作，此指標會與各種認可輸入配對，例如點擊點、語音命令、停留，然後按下按鈕。 在 HoloLens 2 中，列印頭最適合與任何未按下的認可輸入配對，因為在攻點與遠光線之間會有互動衝突。 <br>
+前端指標是一個點，它會附加至不可見的標頭看式向量的結尾，該向量會使用標頭的位置和旋轉來指向點。 若要執行動作，此指標會與各種認可輸入配對，例如點擊點、語音命令、停留，然後按下按鈕。 在 HoloLens 2 中，列印頭最適合與任何未按下的認可輸入配對，因為空中點與遠光線之間會有互動衝突。 <br>
 :::row:::
     :::column:::
         ![頭部注視游標手](images/head-gaze-cursor-hand.png)<br>
@@ -165,13 +165,13 @@ ms.locfileid: "98582405"
 
 根據預設， [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) 會提供資料指標預製專案 ([DefaultCursor. 預製專案](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) 與 shell 的系統資料指標具有相同的視覺狀態。 其是在 MRTK 輸入設定檔的 [指標] 下進行指派。 您可以針對您的體驗取代/自訂此資料指標。 針對眼睛追蹤輸入的體驗，MRTK 也提供 EyeGazeCursor，其具有微妙的視覺效果可將干擾降至最低。
 
-* [MRTK - 指標設定檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - 輸入系統](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - 指標](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - 指標設定檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - 輸入系統](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - 指標](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 
 ## <a name="see-also"></a>請參閱
 
-* [軌跡](gaze-and-commit.md#composite-gestures)
+* [手勢](gaze-and-commit.md#composite-gestures)
 * [頭部目光和行動](gaze-and-commit.md)

@@ -1,17 +1,17 @@
 ---
 title: Unity 中的相機
-description: 瞭解如何設定及使用 Unity 的主要攝影機進行 Windows Mixed Reality 開發以進行全像轉譯。
+description: 瞭解如何設定及使用 Unity 的主要攝影機進行 Windows Mixed Reality 開發，以進行全像轉譯。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit，mixedrealitytoolkit，mixedrealitytoolkit-unity，全像轉譯，全像全像，全像投影、全像投影、聚焦點、深度緩衝區、僅限方向、位置、不透明、透明、剪輯、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ba42e8a384f62dddcf7b8e685859ddeff7b666bb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581125"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759764"
 ---
 # <a name="camera-in-unity"></a>Unity 中的相機
 
@@ -20,7 +20,7 @@ ms.locfileid: "98581125"
 ## <a name="setup"></a>安裝程式
 
 1. 移至 **Windows Store Player 設定** 的 [**其他設定**] 區段
-2. 選擇 [ **Windows Mixed Reality** ] 作為裝置，可能會列為舊版 Unity 的 **Windows** 全像攝影版
+2. 選擇 **Windows Mixed Reality** 作為裝置，可能會列為舊版 Unity 的 **windows** 全像攝影版
 3. 選取 **支援的虛擬實境**
 
 >[!NOTE]
@@ -81,19 +81,19 @@ HoloLens 和沉浸式耳機都會 reproject 您的應用程式所轉譯的每個
 將您的應用程式深度緩衝區共用到 Windows 每個畫面格，將會根據您要轉譯的耳機類型，為您的應用程式提供兩個最多的全像全像全像全像：
 
 * 當提供深度緩衝區時，**沉浸式耳機** 可以處理位置 reprojection，調整您的全像位置和方向的 misprediction。
-* 全像 **耳機** 有幾種不同的方法。 當提供深度緩衝區時，HoloLens 1 會自動選取 [焦點點](focus-point-in-unity.md) ，並在與大部分內容交集的平面上優化全像影像穩定性。 HoloLens 2 將會使用深度 LSR 來穩定內容 [ (請參閱備註) ](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
+* 全像 **耳機** 有幾種不同的方法。 當提供深度緩衝區時，HoloLens 1 會自動選取 [焦點點](focus-point-in-unity.md) ，並在與大部分內容交集的平面上優化全像影像穩定性。 HoloLens 2 會使用深度 LSR 來穩定內容 [ (請參閱備註) ](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
 
 設定您的 Unity 應用程式是否會提供 Windows 的深度緩衝區：
 
-1. 移至 [**編輯**  >  **專案設定**  >  **播放機**  >  **] 通用 Windows 平臺** 索引標籤  >  **XR 設定**]。
-2. 展開 **WINDOWS MIXED REALITY SDK** 專案。
+1. 移至 [**編輯**  >  **專案設定**  >  **播放機**  >  **通用 Windows 平臺]** 索引標籤  >  **XR 設定**。
+2. 展開 [ **Windows Mixed REALITY SDK** ] 專案。
 3. 核取或取消核取 [ **啟用深度緩衝區共用** ] 核取方塊。  預設會在新的專案中核取 [啟用深度緩衝區共用]，因為這項功能已新增至 Unity，而且預設會針對已升級的舊專案取消核取。
 
 深度緩衝區可以改善視覺品質，只要 Windows 可以精確地將深度緩衝區中的正規化的每個圖元深度值對應到量值，就可以使用您在主要攝影機上的 Unity 中所設定的近距離和最遠的平面。  如果您的轉譯階段以一般方式處理深度值，您通常應該會在這裡進行，不過在顯示到現有的色彩圖元時，透明轉譯會寫入深度緩衝區的行程可能會使 reprojection 混淆。  如果您知道您的轉譯行程將會離開許多具有不正確深度值的最終深度圖元，您可能會藉由取消核取 [啟用深度緩衝區共用]，以取得更佳的視覺品質。
 
 ## <a name="automatic-scene-and-camera-setup-with-mixed-reality-toolkit"></a>使用混合現實工具組的自動場景和攝影機設定 
 
-遵循 [逐步](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html) 指南，將混合現實工具組新增至 Unity 專案，它將會自動設定您的專案。 您也可以使用下一節中的指南，手動設定沒有 MRTK 的專案。
+遵循 [逐步](tutorials/mr-learning-base-01.md) 指南，將混合現實工具組新增至 Unity 專案，它將會自動設定您的專案。 您也可以使用下一節中的指南，手動設定沒有 MRTK 的專案。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

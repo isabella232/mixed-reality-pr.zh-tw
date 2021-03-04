@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 73fbbc64eadec1e3b83d6e10866bd227217f0c9c
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: d99e556dbfd1593a66b1cd90960c8fbaffdddee1
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590480"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760004"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -30,7 +30,7 @@ ms.locfileid: "99590480"
 
 ![已選取 [解算器] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-05-section1-step1-1.png)
 
-在本教學課程中，我們將檢閱「方向性指標解算器」和「點選放置解算器」的實作。 若要深入了解 MRTK 中可用的完整解算器範圍，您可以參閱 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[解算器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)指南。
+在本教學課程中，我們將檢閱「方向性指標解算器」和「點選放置解算器」的實作。 若要深入了解 MRTK 中可用的完整解算器範圍，您可以參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)中的[解算器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md)指南。
 
 > [!NOTE]
 > 方向性指標的求解器不在上述的解析器資料夾中，但在套件 > 混合現實工具組 Foundation > SDK > 實驗性 > 功能 > 公用程式資料夾，因為這是實驗性的功能。
@@ -72,7 +72,7 @@ ms.locfileid: "99590480"
 > 如果您沒有在場景視窗中看到相機光線，請確定您已啟用 [Gizmos] 功能表，如上圖中所示。
 
 > [!TIP]
-> 若要了解如何使用編輯器內的輸入模擬，您可以參考 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)中的[使用編輯器內的手動輸入模擬來測試場景](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。
+> 若要了解如何使用編輯器內的輸入模擬，您可以參考 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)中的[使用編輯器內的手動輸入模擬來測試場景](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。
 
 > [!TIP]
 > 如果您的電腦有麥克風，您可以使用語音命令「切換診斷」，輕鬆地切換出現在 [遊戲] 視窗中的 [診斷] 面板作用中狀態。 或者，您也可以在 [MRTK 組態設定檔] > [診斷] > [啟用診斷系統] 中加以停用。 不過，通常建議您在開發期間讓診斷系統保持作用中狀態。
@@ -139,7 +139,7 @@ ms.locfileid: "99590480"
 
 在本教學課程中，您已了解如何使用 MRTK 的方向性指標解算器，讓 UI 元素以直覺方式將使用者導向至物件。 您也了解如何使用點選放置解算器，輕易地調整物件的位置。
 
-若要深入了解 MRTK 隨附的這些解算器和其他解算器，您可以參閱 [MRTK 文件入口網站](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)的[解算器](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Solver.html)指南。
+若要深入了解 MRTK 隨附的這些解算器和其他解算器，您可以參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)的[解算器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md)指南。
 
 > [!div class="nextstepaction"]
 >[下一個教學課程：6.建立使用者介面](mr-learning-base-06.md)

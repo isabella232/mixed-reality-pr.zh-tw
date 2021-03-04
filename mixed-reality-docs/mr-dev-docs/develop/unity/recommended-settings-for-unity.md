@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity、設定、混合現實、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、效能、品質設定、照明設定、深度緩衝區、xr、追蹤損失
-ms.openlocfilehash: be85b592a6857c9dd40e2b3bb3f09dec0a6273be
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: cc1d2692a172c84274299580a0ce580264f65fcf
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009328"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759694"
 ---
 # <a name="recommended-settings-for-unity"></a>Unity 的建議設定
 
@@ -57,18 +57,18 @@ Unity 提供一組預設選項，通常是所有平臺的平均案例。 不過�
 
 ### <a name="enable-depth-buffer-sharing"></a>啟用深度緩衝區共用
 
-若要從使用者的觀點來達到更好的全像影像穩定性，建議您在 Unity 中啟用 **深度緩衝區共用** 屬性。 藉由開啟此項，Unity 將會與 Windows Mixed Reality 平臺共用您的應用程式所產生的深度對應。 然後，此平臺可以針對您的應用程式所呈現的任何特定框架，更妥善地優化全像場景的全像是您的場景。
+若要從使用者的觀點來達到更好的全像影像穩定性，建議您在 Unity 中啟用 **深度緩衝區共用** 屬性。 藉由開啟此項，Unity 將會共用您的應用程式所產生的深度對應和 Windows Mixed Reality 平臺。 然後，此平臺可以針對您的應用程式所呈現的任何特定框架，更妥善地優化全像場景的全像是您的場景。
 
 若要在 Unity 專案中啟用這項功能
 
 1) 開啟 [Player XR 設定] (移至 [編輯] > [專案設定] > [播放器] > [XR 設定])
-2) 選取 [在 **虛擬實境 sdk** Windows Mixed Reality 擴充] 下 **啟用深度緩衝區共用** 的核取方塊，  >   (必須核取 [**虛擬實境支援**] 核取方塊) 
+2) 選取 [**虛擬實境 sdk**] 下的 [**啟用深度緩衝區共用**] 的核取方塊 [  >  **Windows Mixed Reality** 擴充 (**虛擬實境支援**] 核取方塊) 
 
 此外，建議您在此面板中選取 [**深度格式**] 設定下的 **16 位深度**，特別是針對 HoloLens 開發。 相較于24位，選取16位會大幅減少頻寬需求，因為需要移動/處理的資料較少。
 
 為了讓 Windows Mixed Reality 平臺優化全像影像的穩定性，它依賴深度緩衝區來精確且符合螢幕上任何轉譯的全像影像。 因此，在上有深度緩衝區共用時，轉譯色彩時很重要，也就是呈現深度。 在 Unity 中，大部分的不透明或 TransparentCutout 材質預設會呈現深度，但透明和文字物件將不會呈現深度，雖然這是與著色器相依的情況等等。
 
-如果使用 [混合現實工具組標準著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md)來呈現透明物件的深度：
+如果使用 [混合現實工具組標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)來呈現透明物件的深度：
 
 1) 選取使用 MRTK 標準著色器的透明材質，然後開啟偵測器編輯器視窗
 2) 選取深度緩衝區共用警告內的 [ **立即修正** ] 按鈕。 您也可以將轉譯 **模式** 設定為 **Custom**，以手動方式執行這項作業。然後將 **模式** 設定為 [**透明**]，最後將 [**深度寫入**] 設定為 [**開啟**]
@@ -115,9 +115,9 @@ HoloLens 有行動類別的 CPU 和 GPU，這表示應用程式可能需要較�
 |  顯示 Unity 啟動顯示畫面  |  全像閃屏映射  |  行為 |
 |----------|----------|----------|
 |  開啟  |  無  |  顯示預設的 Unity 啟動顯示畫面5秒，或直到應用程式載入為止，以較長的時間為准。 |
-|  開啟  |  自訂  |  顯示自訂啟動顯示畫面5秒，或直到應用程式載入為止（以較長者為准）。 |
+|  開啟  |  Custom  |  顯示自訂啟動顯示畫面5秒，或直到應用程式載入為止（以較長者為准）。 |
 |  關閉  |  無  |  在載入應用程式之前，顯示透明的黑色 (沒有任何) 。 |
-|  關閉  |  自訂  |  顯示自訂啟動顯示畫面5秒，或直到應用程式載入為止（以較長者為准）。 |
+|  關閉  |  Custom  |  顯示自訂啟動顯示畫面5秒，或直到應用程式載入為止（以較長者為准）。 |
 
 如需詳細資訊，請參閱 [Unity 的啟動顯示畫面檔](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) 。
 
@@ -167,7 +167,7 @@ HoloLens 有行動類別的 CPU 和 GPU，這表示應用程式可能需要較�
 |  麥克風  |  VideoCapture 捕獲音訊) 、DictationRecognizer、GrammarRecognizer 和 KeywordRecognizer 時的 ( |
 |  InternetClient  |  DictationRecognizer (並使用 Unity Profiler)  |
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [Unity 開發概觀](unity-development-overview.md)
 * [了解混合實境的效能](../platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md)

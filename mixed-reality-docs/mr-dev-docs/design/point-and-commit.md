@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 互動, 設計, HoloLens, 手部, 遠方, 指向和行動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, 手部射線, 物件操作, MRTK, 混合實境工具組, DoF
-ms.openlocfilehash: 3351a38cad99089a60555ffe450447fc5c356fdc
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8196b67f103bae346ba4da065ee6045ff231b004
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583199"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759864"
 ---
 # <a name="point-and-commit-with-hands"></a>手部指向和行動
 
@@ -204,9 +204,9 @@ ms.locfileid: "98583199"
 
 根據預設，MRTK 會提供一個手部射線 prefab ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers))，其與命令介面的系統手部射線具有相同視覺狀態。 其是在 MRTK 輸入設定檔的 [指標] 下進行指派。 在沉浸式頭戴裝置中，相同的光線會用於運動控制器。
 
-* [MRTK - 指標設定檔](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/MixedRealityConfigurationGuide.html#pointer-configuration)
-* [MRTK - 輸入系統](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Overview.html)
-* [MRTK - 指標](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Input/Pointers.html)
+* [MRTK - 指標設定檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md#pointer-configuration)
+* [MRTK - 輸入系統](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)
+* [MRTK - 指標](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/pointers.md)
 
 ---
 

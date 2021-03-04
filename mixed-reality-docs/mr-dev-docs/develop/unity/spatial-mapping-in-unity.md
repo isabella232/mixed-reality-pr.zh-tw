@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 841cc1fa2a37884545ae12865f9b7cf56338dc07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582544"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759744"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -56,10 +56,10 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
 
 > [!NOTE]
-> 如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
+> 如果您已將 Unity 專案匯出至 Visual Studio 方案，則必須匯出至新資料夾，或在 [Visual studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
 
 空間對應也需要至少10.0.10586.0 的 MaxVersionTested：
-1. 在 Visual Studio 中，以滑鼠右鍵按一下方案總管中的 **package.appxmanifest** ，然後選取 [ **View Code** ]
+1. 在 Visual Studio 中，以滑鼠右鍵按一下 [方案 package.appxmanifest] 中的 [**封裝**]，然後選取 [ **View Code** ]
 2. 找出指定 **y** 的行，並將 **MaxVersionTested = "10.0.10240.0"** 變更為 **MaxVersionTested = "10.0.10586.0"**
 3. **儲存** package.appxmanifest。
 
@@ -125,7 +125,7 @@ void Start () {
 }
 ```
 
-當您呼叫 ( SurfaceObserver 時，您必須在空間對應系統具有新資訊的空間 SurfaceObserver 區域中，為每個空間介面提供處理常式。 處理常式會收到一個空間介面：
+當您呼叫 SurfaceObserver () 時，您必須針對空間對應系統具有新資訊的空間 SurfaceObserver 區域中的每個空間介面，提供一個處理常式。 處理常式會收到一個空間介面：
 
 ```cs
 private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
@@ -194,7 +194,7 @@ OnDataReady 處理常式會接收 SurfaceData 物件。 WorldAnchor、MeshFilter
 
 ### <a name="start-processing-on-updates"></a>開始處理更新
 
-SurfaceObserver 應該在延遲而非每個畫面上呼叫 ( # A1。
+SurfaceObserver 應該在延遲而不是每個畫面上呼叫更新 () 。
 
 ```cs
 void Start () {
@@ -480,7 +480,7 @@ Import_UnderstandingMesh –
 * 當追蹤遺失時，下一個 OnSurfaceChanged 事件將會移除所有的網格。
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>混合現實工具組中的空間對應
-如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/SpatialAwareness/SpatialAwarenessGettingStarted.html" target="_blank">空間感知一節</a> 。
+如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間感知一節</a> 。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

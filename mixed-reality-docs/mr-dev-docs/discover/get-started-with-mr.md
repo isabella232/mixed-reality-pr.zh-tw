@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 222c70882826e61d2b60e104c460156687f8b5df
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b10cb385d28be68a539eedced269204b8a1ac4d3
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583357"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101760210"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 
@@ -154,6 +154,7 @@ ms.locfileid: "98583357"
 | [HoloLens 硬體](https://www.microsoft.com//hololens/hardware) | HoloLens 2 提供最舒適且身歷其境的沈浸式混合實境體驗，採用領先業界的解決方案，可在數分鐘內實現價值 - 這些都由於 Microsoft 雲端與 AI 服務的可靠性、安全性及可擴展性而得到增強 |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | 探索各式各樣可讓員工使用 Dynamics 365 獲得能力並將作業最佳化的產品，包括[遠端協助](/dynamics365/mixed-reality/remote-assist/ra-overview)、配置和[指南](/dynamics365/mixed-reality/guides/)。 有意義的深入解析來自實際工作、實際裝置和實際使用者的親身體驗 |
 | [Azure 雲端服務](../develop/mixed-reality-cloud-services.md) | 藉由空間感知、空間錨點和複雜的 3D 模型轉譯，在各種平台上打造引人注目的沉浸式體驗 |
+| [Microsoft 網狀](/mesh/overview) | 網狀架構可讓人們透過具備網格功能的混合現實體驗，在世界各地與其他人共同作業、共用空間，以及彼此共同作業。 有了網格，您就可以增強虛擬會議、進行虛擬設計會話、協助其他人遠端處理，以及裝載虛擬的滿足 |
 
 ## <a name="what-would-you-like-to-do-next"></a>接著要執行什麼作業？
 

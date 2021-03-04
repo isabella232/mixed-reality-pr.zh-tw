@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: a0621403ec3c4d8d0fa6f13672530756bcb6da39
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: b2d3f29ad8ed50ee2a36302de9248837b6bac4c8
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590742"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101759934"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -43,7 +43,7 @@ ms.locfileid: "99590742"
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 
-在 Unity 功能表中，選取 [視窗] >  **[套件管理員]** 以開啟 [套件管理員] 視窗，然後選取 [AR 基本概念]，並按一下 [安裝] 按鈕以安裝套件：
+在 Unity 功能表中，選取 視窗 >  **套件管理員** 以開啟 套件管理員 視窗，然後選取 AR 基本概念，並按一下 安裝 按鈕以安裝套件：
 
 ![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-asa/asa-02-section2-step1-1.png)
 
@@ -129,7 +129,7 @@ ms.locfileid: "99590742"
 
 在 [階層] 視窗中，選取名為 **DeleteAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **DeleteAzureAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [DeleteAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 
 ![已設定 DeleteAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
