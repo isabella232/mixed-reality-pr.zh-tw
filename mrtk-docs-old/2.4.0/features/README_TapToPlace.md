@@ -1,0 +1,114 @@
+---
+title: README_TapToPlace
+description: TapToPlace MRTK 的檔
+author: CDiaz-MS
+ms.author: cadia
+ms.date: 01/12/2021
+ms.localizationpriority: high
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、點下
+ms.openlocfilehash: 352b1ce8fb2a587c2b58ccb9c48b75200bc1dea0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.translationtype: MT
+ms.contentlocale: zh-TW
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101780791"
+---
+# <a name="tap-to-place"></a><span data-ttu-id="fb4a4-104">點一下以放置</span><span class="sxs-lookup"><span data-stu-id="fb4a4-104">Tap to Place</span></span>
+
+![TapToPlace](Images/Solver/TapToPlace/TapToPlaceIntroGif.gif)
+
+<span data-ttu-id="fb4a4-106">點一下，就是用來將遊戲物件放在表面上的最互動元件。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-106">Tap to Place is a far interaction component that is used to place a game object on surface.</span></span> <span data-ttu-id="fb4a4-107">此元件適用于將物件放在空間網格上。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-107">This component is useful for placing objects on a spatial mesh.</span></span> <span data-ttu-id="fb4a4-108">點一下以使用兩個按鍵的組合，並使用前端移動來放置物件。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-108">Tap to Place uses a combination of two clicks and head movement to place an object.</span></span> <span data-ttu-id="fb4a4-109">按一下以開始放置、前端移動以控制物件的位置，然後按一下以將物件放在場景中。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-109">A click to start the placement, head movement to control the position of the object and a click to place the object in the scene.</span></span>
+
+## <a name="using-tap-to-place"></a><span data-ttu-id="fb4a4-110">使用攻點放置</span><span class="sxs-lookup"><span data-stu-id="fb4a4-110">Using Tap to Place</span></span>
+
+1. <span data-ttu-id="fb4a4-111">設定場景</span><span class="sxs-lookup"><span data-stu-id="fb4a4-111">Set up the scene</span></span>
+    - <span data-ttu-id="fb4a4-112">建立新的 unity 場景</span><span class="sxs-lookup"><span data-stu-id="fb4a4-112">Create a new unity scene</span></span>
+    - <span data-ttu-id="fb4a4-113">流覽至 **混合現實工具** 組  >  **新增至場景並設定**，以將 MRTK 新增至場景</span><span class="sxs-lookup"><span data-stu-id="fb4a4-113">Add MRTK to the scene by navigating to the **Mixed Reality Toolkit** > **Add to Scene and Configure**</span></span>
+    > [!NOTE]
+    > <span data-ttu-id="fb4a4-114">點擊以放置 MRTK 輸入系統所驅動的使用方式，但您也可以在不按下的情況下控制它，請參閱下面的點一下來放置程式碼可配置的部分。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-114">Tap to Place uses clicks driven by the MRTK Input System but it can also be controlled without clicks, see the Tap To Place Code Configurability section below.</span></span>
+    - <span data-ttu-id="fb4a4-115">將 cube 新增至場景，並將比例變更為0.2，並將位置變更為 (0、0、0.7) 。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-115">Add a cube to the scene and change the scale to 0.2 and change the position to (0, 0, 0.7).</span></span>
+1. <span data-ttu-id="fb4a4-116">使用碰撞器將 [點選連結至](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.TapToPlace) 遊戲物件</span><span class="sxs-lookup"><span data-stu-id="fb4a4-116">Attach [Tap to Place](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.TapToPlace) to a game object with a collider</span></span>
+
+    ![TapToPlaceInspector](Images/Solver/TapToPlace/TapToPlaceInspector2.png)
+
+    - <span data-ttu-id="fb4a4-118">當加入 [點選] 元件時，也會附加一個「規劃求解」處理常式。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-118">When the Tap to Place component is added, a Solver Handler will also be attached.</span></span> <span data-ttu-id="fb4a4-119">從需要規劃求解處理常式的 [求解](README_Solver.md) 器類別中，按一下以放置衍生的。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-119">Tap to Place derives from the [Solver](README_Solver.md) class which requires a Solver Handler.</span></span> <span data-ttu-id="fb4a4-120">點一下放置物件的位置是相對於 `TrackedTargetType` 求解器處理常式內的計算。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-120">The position of a Tap to Place object is calculated relative to the `TrackedTargetType` within the Solver Handler.</span></span> <span data-ttu-id="fb4a4-121">依預設，標頭會是，也就是 `TrackedTargetType` 當標頭移動時，如果已選取該物件，就會遵循該物件。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-121">By default the Head is the `TrackedTargetType`, i.e. when the head moves, the object follows if it is selected.</span></span>  <span data-ttu-id="fb4a4-122">`TrackedTargetType`也可以設定為控制器光線，並將物件跟隨在控制器上。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-122">The `TrackedTargetType` can also be set to Controller Ray which has the object follow the controller.</span></span> <span data-ttu-id="fb4a4-123">用來放置偵測器的第一個屬性群組是常見的 [求解器屬性](README_Solver.md#common-solver-properties)。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-123">The first group of properties in the Tap to Place inspector are the [Common Solver Properties](README_Solver.md#common-solver-properties).</span></span>  
+    > [!IMPORTANT]
+    > <span data-ttu-id="fb4a4-124">點一下放置是獨立的規劃，不能與其他解析器連結。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-124">Tap to Place is a stand alone Solver and cannot be chained with other Solvers.</span></span> <span data-ttu-id="fb4a4-125">它無法連結，因為 SolverHandler. UpdateSolvers 是用來在放置物件的位置時更新物件的位置。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-125">It cannot be chained because SolverHandler.UpdateSolvers is used to update the object's position while it is being placed.</span></span>
+    - <span data-ttu-id="fb4a4-126">點擊以放置屬性：</span><span class="sxs-lookup"><span data-stu-id="fb4a4-126">Tap to Place Properties:</span></span>
+        - <span data-ttu-id="fb4a4-127">`Auto Start`：若為 true，則點一下放置規劃求解將開始控制要放置遊戲物件的位置。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-127">`Auto Start`: If true, the Tap to Place solver will start out controlling the position of the game object to be placed.</span></span> <span data-ttu-id="fb4a4-128">物件將會立即開始遵循 TrackedTargetType (Head 或 Controller 光線) 。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-128">The object will immediately start following the TrackedTargetType (Head or Controller Ray).</span></span> <span data-ttu-id="fb4a4-129">在叫用開始 () 之前必須先修改此值，才能產生任何作用。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-129">This value must be modified before Start() is invoked in order to have any effect.</span></span>
+        - <span data-ttu-id="fb4a4-130">`Default Placement Distance`：) 物件的預設距離 (，會相對於 SolverHandler 中的 TrackedTargetType 向前放置。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-130">`Default Placement Distance`: The default distance (in meters) an object will be placed relative to the TrackedTargetType forward in the SolverHandler.</span></span> <span data-ttu-id="fb4a4-131">如果 raycast 未叫用介面，則遊戲物件將會放在預設的放置距離。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-131">The game object will be placed at the default placement distance if a surface is not hit by the raycast.</span></span>
+        - <span data-ttu-id="fb4a4-132">`Max Raycast Distance`： Raycast 的最大距離 (計量) 以 ' TrackedTargetType ' 的原點為基礎。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-132">`Max Raycast Distance`: The max distance (meters) for the raycast based on the 'TrackedTargetType' origin.</span></span> <span data-ttu-id="fb4a4-133">此 raycast 會尋找用來放置所選物件的介面。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-133">This raycast looks for a surface to place a selected object.</span></span>
+        - <span data-ttu-id="fb4a4-134">`Surface Normal Offset`：當 raycast 碰到介面時，要放置的遊戲物件中心與表面法線的表面之間的距離。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-134">`Surface Normal Offset`: The distance between the center of the game object to place and a surface along the surface normal, if the raycast hits a surface.</span></span> <span data-ttu-id="fb4a4-135">根據預設，表面標準位移是0，但在開始 () 會將介面的一般位移設定為沿著 Z 軸的碰撞器範圍。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-135">By default, the surface normal offset is 0 but after Start() the surface normal offset is set to the collider's extents along the z axis.</span></span>
+        - <span data-ttu-id="fb4a4-136">`Keep Orientation Vertical`：若為 true，要放置的遊戲物件將保持垂直，且與 Vector3 對齊。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-136">`Keep Orientation Vertical`: If true, the game object to place will remain upright and in line with Vector3.up.</span></span>
+        - <span data-ttu-id="fb4a4-137">`Rotate According to Surface`：若為 false，要放置的遊戲物件不會根據介面點擊變更其旋轉。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-137">`Rotate According to Surface`: If false, the game object to place will not change its rotation according to the surface hit.</span></span>  <span data-ttu-id="fb4a4-138">當 IsBeingPlaced 為 true 時，物件將會繼續面對相機。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-138">The object will remain facing the camera while IsBeingPlaced is true.</span></span>
+        - <span data-ttu-id="fb4a4-139">`Magnetic Surfaces`：要從最高到最低優先順序執行的 LayerMasks 陣列。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-139">`Magnetic Surfaces`: An array of LayerMasks to execute from highest to lowest priority.</span></span> <span data-ttu-id="fb4a4-140">提供 raycast 點擊的第一層遮罩將用於位置計算。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-140">First layer mask to provide a raycast hit will be used for position calculations.</span></span>
+        - <span data-ttu-id="fb4a4-141">`Debug Enabled`：如果為 true 且在 Unity 編輯器中，則會以黃色繪製 raycast 點擊的標準。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-141">`Debug Enabled`: If true and in the Unity Editor, the normal of the raycast hit will be drawn in yellow.</span></span> <span data-ttu-id="fb4a4-142">當為 true 時，[啟用偵錯工具] 會很有用， `RotateAccordingToSurface` 因為它會繪製介面點擊的一般視覺效果，以視覺方式說明物件是以其目前方向設定的原因。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-142">Debug enabled is useful when `RotateAccordingToSurface` is true because it draws the normal of the surface hit which visually explains why the object is set at its current orientation.</span></span>
+        - <span data-ttu-id="fb4a4-143">`On Placing Started`：當選取要放置的遊戲物件時，就會觸發此事件一次。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-143">`On Placing Started`: This event is triggered once when the game object to place is selected.</span></span>
+        - <span data-ttu-id="fb4a4-144">`On Placing Stopped`：當要放置的遊戲物件未選取時，就會觸發此事件一次。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-144">`On Placing Stopped`: This event is triggered once when the game object to place is unselected, placed.</span></span>
+
+1. <span data-ttu-id="fb4a4-145">測試點擊以在編輯器中放置行為</span><span class="sxs-lookup"><span data-stu-id="fb4a4-145">Testing Tap to Place behavior in editor</span></span>
+    - <span data-ttu-id="fb4a4-146">按下 [播放] 並按住空格鍵以顯示輸入模擬手。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-146">Press play and hold the space bar to show an input simulation hand.</span></span>
+    - <span data-ttu-id="fb4a4-147">將手移至立方體焦點為止，然後按一下滑鼠左鍵，模擬具有輸入模擬手的點擊。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-147">Move the hand until the cube is in focus and simulate a click with the input simulation hand by clicking with the left mouse.</span></span>
+        - <span data-ttu-id="fb4a4-148">如果場景中沒有 colliders，則物件會 `TrackedTargetType` 在已定義的上遵循 `Default Placement Distance` 。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-148">If colliders are not present in the scene, the object will follow the `TrackedTargetType` at the defined `Default Placement Distance`.</span></span>
+    - <span data-ttu-id="fb4a4-149">物件將會遵循 `TrackedTargetType` 選取範圍之後的移動。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-149">The object will follow the movement of the `TrackedTargetType` after selection.</span></span> <span data-ttu-id="fb4a4-150">若要在編輯器中模擬 head 移動，請按 WASD 鍵。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-150">To simulate head movement in editor, press the WASD keys.</span></span> <span data-ttu-id="fb4a4-151">按一下並按住滑鼠右鍵，以變更頭部旋轉。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-151">Change head rotation by clicking and holding the right mouse.</span></span>
+    - <span data-ttu-id="fb4a4-152">若要停止放置物件，請再按一次。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-152">To stop placing the object, click again.</span></span>  <span data-ttu-id="fb4a4-153">不需要將焦點放在「停用」點點按一下的物件。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-153">The object does not need to be in focus for the stop placement click.</span></span> <span data-ttu-id="fb4a4-154">只有開始放置程式的初始按一下才需要焦點。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-154">Focus is only required for the initial click that starts the placement process.</span></span>
+
+    <span data-ttu-id="fb4a4-155">`TrackedTargetType`： Head (預設) </span><span class="sxs-lookup"><span data-stu-id="fb4a4-155">`TrackedTargetType`: Head (Default)</span></span> |  <span data-ttu-id="fb4a4-156">`TrackedTargetType`：控制器光線</span><span class="sxs-lookup"><span data-stu-id="fb4a4-156">`TrackedTargetType`: Controller Ray</span></span>
+    :-------------------------:|:-------------------------:
+    ![TapToPlaceInputSimulationHead](Images/Solver/TapToPlace/TapToPlaceInputSimulationHead.gif)  |  ![TapToPlaceInputSimulationControllerRay](Images/Solver/TapToPlace/TapToPlaceInputSimulationControllerRay.gif)
+
+## <a name="tap-to-place-code-configurability"></a><span data-ttu-id="fb4a4-159">點擊以放置程式碼可配置</span><span class="sxs-lookup"><span data-stu-id="fb4a4-159">Tap to Place Code Configurability</span></span>
+
+<span data-ttu-id="fb4a4-160">點擊以放置物件選取時間，也可以透過來控制 `StartPlacement()` ， `StopPlacement()` 而不需要按下事件。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-160">Tap to Place object selection timing can also be controlled via `StartPlacement()` and `StopPlacement()` instead of requiring a click event.</span></span> <span data-ttu-id="fb4a4-161">這項功能適用于撰寫測試，並提供替代方法，在不使用 MRTK 輸入系統的情況下，將物件放在編輯器中。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-161">This capability is useful for writing tests and provides an alternative method to place an object in editor without using the MRTK Input System.</span></span>
+
+1. <span data-ttu-id="fb4a4-162">建立空的遊戲物件</span><span class="sxs-lookup"><span data-stu-id="fb4a4-162">Create an empty game object</span></span>
+1. <span data-ttu-id="fb4a4-163">建立下列範例腳本，並將其附加至空白的遊戲物件</span><span class="sxs-lookup"><span data-stu-id="fb4a4-163">Create and attach the following example script to the empty game object</span></span>
+
+    ```c#
+    using UnityEngine;
+    using Microsoft.MixedReality.Toolkit.Utilities.Solvers;
+
+    public class TapToPlaceInputExample : MonoBehaviour
+    {
+        private GameObject cube;
+        private TapToPlace tapToPlace;
+
+        void Start()
+        {
+            cube = GameObject.CreatePrimitive(PrimitiveType.Cube);
+            cube.transform.localScale = Vector3.one * 0.2f;
+            cube.transform.position = Vector3.forward * 0.7f;
+
+            tapToPlace = cube.AddComponent<TapToPlace>();
+        }
+
+        void Update()
+        {
+            if (Input.GetKeyDown(KeyCode.U))
+            {
+                tapToPlace.StartPlacement();
+            }
+            if (Input.GetKeyDown(KeyCode.I))
+            {
+                tapToPlace.StopPlacement();
+            }
+        }
+    }
+    ```
+
+1. <span data-ttu-id="fb4a4-164">在 [播放] 模式中，按 *U 鍵* 開始放置 cube</span><span class="sxs-lookup"><span data-stu-id="fb4a4-164">In play mode, press the *U key* to start placing the cube</span></span>
+1. <span data-ttu-id="fb4a4-165">按 *I 鍵* 以停止放置</span><span class="sxs-lookup"><span data-stu-id="fb4a4-165">Press the *I key* to stop the placement</span></span>
+
+## <a name="tap-to-place-example-scene"></a><span data-ttu-id="fb4a4-166">點擊以放置範例場景</span><span class="sxs-lookup"><span data-stu-id="fb4a4-166">Tap to Place Example Scene</span></span>
+
+<span data-ttu-id="fb4a4-167">點擊放置範例場景包含4個可放置的物件，每個都有不同的設定。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-167">The Tap to Place example scene consists of 4 placeable objects, each with a different configuration.</span></span> <span data-ttu-id="fb4a4-168">範例場景包含牆壁，以顯示階層中依預設停用的表面放置行為。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-168">The example scene contains walls to show the surface placement behavior that are disabled by default in the hierarchy.</span></span> <span data-ttu-id="fb4a4-169">您可以在 [ [發行] 頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)上找到範例場景範例中的 MixedReality。</span><span class="sxs-lookup"><span data-stu-id="fb4a4-169">The example scene can be found in the Microsoft.MixedReality.Toolkit.Unity.Examples unity package found on the [Release Page](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases).</span></span> <span data-ttu-id="fb4a4-170">場景位置是： *MRTK。範例/示範/解析器/場景/TapToPlaceExample unity*</span><span class="sxs-lookup"><span data-stu-id="fb4a4-170">The scene location is: *MRTK.Examples/Demos/Solvers/Scenes/TapToPlaceExample.unity*</span></span>
+
+![TapToPlaceExampleScene](Images/Solver/TapToPlace/TapToPlaceExampleScene.gif)
+
+## <a name="see-also"></a><span data-ttu-id="fb4a4-172">另請參閱</span><span class="sxs-lookup"><span data-stu-id="fb4a4-172">See also</span></span>
+
+- [<span data-ttu-id="fb4a4-173">解算器</span><span class="sxs-lookup"><span data-stu-id="fb4a4-173">Solvers</span></span>](README_Solver.md)
+- [<span data-ttu-id="fb4a4-174">空間感知</span><span class="sxs-lookup"><span data-stu-id="fb4a4-174">Spatial Awareness</span></span>](SpatialAwareness/SpatialAwarenessGettingStarted.md)
+- [<span data-ttu-id="fb4a4-175">輸入模擬</span><span class="sxs-lookup"><span data-stu-id="fb4a4-175">Input Simulation</span></span>](InputSimulation/InputSimulationService.md)
+- [<span data-ttu-id="fb4a4-176">手動追蹤</span><span class="sxs-lookup"><span data-stu-id="fb4a4-176">Hand Tracking</span></span>](Input/HandTracking.md)
+- [<span data-ttu-id="fb4a4-177">目光</span><span class="sxs-lookup"><span data-stu-id="fb4a4-177">Gaze</span></span>](Input/Gaze.md)
