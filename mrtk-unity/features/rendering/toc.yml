@@ -8,3 +8,5 @@
   href: mrtk-standard-shader.md
 - name: 近亮光
   href: proximity-light.md
+- name: 脈衝著色器
+  href: pulse-shader.md

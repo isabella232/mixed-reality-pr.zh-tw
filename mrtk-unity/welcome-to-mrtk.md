@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 3d580dd1d61b3771fa9d30d329f5540dae59f429
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: eee7ab759b13a11f0d4b0ef0ab51fa020c5fbf39
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780486"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883346"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -39,9 +39,6 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
   * Ultraleap 手部追蹤
   * IOS 和 Android 等行動裝置
 
-> [!div class="nextstepaction"]
-> [探索 GitHub 上的 MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)
-
 ## <a name="getting-started-with-mrtk"></a>開始使用 MRTK
 
 如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您安裝必要的工具，然後遵循 Unity 開發人員旅程。
@@ -50,13 +47,16 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 > [安裝工具](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [Unity 開發人員旅程](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)
+> [Unity 開發人員旅程](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
+想要看看幕後的進展嗎？
+> [!div class="nextstepaction"]
+> [探索 GitHub 上的 MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)
 
 ## <a name="documentation"></a>文件
 
-| [![版本資訊](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[版本資訊](release-notes/mrtk-26-release-notes.md)| [![API 參考](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 參考](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
-|:---|:---|
+| [![版本資訊](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[版本資訊](release-notes/mrtk-26-release-notes.md)| [![MRTK 總覽](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 總覽](architecture/overview.md)|[![API 參考](features/images/MRTK_Icon_APIReference.png)](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 參考](https://docs.microsoft.com/dotnet/api/Microsoft.MixedReality.Toolkit)|
+|:---|:---|:---|
 
 ## <a name="build-status"></a>組建狀態
 
@@ -86,7 +86,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
        [ ![ 手動追蹤 (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md) **[手追蹤 <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ Ui 控制項 1](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) **[ui 控制項 1](#ux-building-blocks)**<br>
+        [ ![ Ui 控制項](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) **[ui 控制項](#ux-building-blocks)**<br>
     :::column-end:::
     :::column:::
         [ ![ 解析器](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md) **[解析器](features/ux-building-blocks/solvers/solver.md)**<br>
@@ -98,7 +98,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 :::row:::
     :::column:::
-       [ ![ 空間感知 1](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) **[空間 <br/> 感知 2](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+       [ ![ 空間感知](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) **[空間 <br/> 感知](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
     :::column-end:::
     :::column:::
         [ ![ 診斷工具](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md) **[診斷 <br/> 工具](features/diagnostics/diagnostics-system-getting-started.md)**<br>
@@ -223,11 +223,11 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
         用於傳達資料處理或作業的視覺化指標
     :::column-end:::
     :::column:::
-        [ ![ 對話方塊](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/experimental/dialog.md) **[對話方塊 [實驗]](features/experimental/dialog.md)**<br>
+        [ ![ 對話方塊](features/images/Dialog/MRTK_UX_Dialog_Main.png)](features/ux-building-blocks/dialog.md) **[對話方塊](features/ux-building-blocks/dialog.md)**<br>
         要求使用者確認或確認的 UI
     :::column-end:::
     :::column:::
-        [ ![ 手動教練](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/experimental/hand-coach.md) **[指導 [實驗]](features/experimental/hand-coach.md)**<br>
+        [ ![ 手動指導](features/images/hand-coach/MRTK_UX_HandCoach_Main.jpg)](features/ux-building-blocks/hand-coach.md) **[](features/ux-building-blocks/hand-coach.md)**<br>
         當手勢未教授時，可協助引導使用者的元件
     :::column-end:::
 :::row-end:::

@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 3a25e598f69b6b7206057deebe94c4bb88af000e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fcd1b644eca2f81d84f15ec852ea70387f33062b
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779454"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883212"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
 
@@ -28,9 +28,12 @@ ms.locfileid: "101779454"
 
 下列指示說明2.5.0 升級路徑的2.4.0。 如果您的專案是在2.3.0 或更早版本上，請閱讀各 [版本之間](#updating-230-to-240) 的變更，以瞭解升級路徑，或閱讀先前版本 [的指示](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) ，以進行版本版本的升級。
 
+### <a name="mixed-reality-feature-tool"></a>混合現實功能工具
+將 MRTK 升級至較新版本的 MRTK 最簡單的方式，就是使用「 [混合現實」功能工具](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 來下載最新的套件，並將它們直接載入至 Unity 專案。
+
 ### <a name="unity-asset-unitypackage-files"></a>Unity 資產 (. unitypackage) 檔案
 
-如需最順暢的升級路徑，請使用下列步驟。
+另一個升級路徑是手動下載 MRTK Unity 套件，並將其套用至您的專案。 請參閱下列步驟：
 
 1. 如果您在升級步驟中的任何時間點遇到任何阻礙，請儲存目前專案的複本。
 1. 關閉 Unity
@@ -309,7 +312,7 @@ WindowsMixedRealityUtilities 的命名空間已從 MixedReality 變更為 Window
 
 手網格和聯合視覺效果現在有個別的編輯器和播放機設定。 已更新手形追蹤設定檔，以允許將這些視覺效果設定為;Nothing、所有專案、編輯器或播放機。
 
-![手形視覺效果模式](../features/images/release-notes/HandTrackingVisualizationModes.png)
+![手形視覺效果模式](../release-notes/images/HandTrackingVisualizationModes.png)
 
 自訂的手追蹤設定檔可能需要更新，才能與版本2.1.0 正常搭配運作。
 
@@ -396,11 +399,11 @@ GameObject playAreaVisualization = CoreServices.BoundarySystem?.GetPlayAreaVisua
 
 新增 IMixedRealityRaycastProvider 之後，就會變更輸入系統設定檔。 如果您有自訂設定檔，當您執行應用程式時，可能會收到下列影像中的錯誤。
 
-![選取 Raycast 提供者1](../features/images/release-notes/UnableToRegisterRaycastProvider.png)
+![選取 Raycast 提供者1](../release-notes/images/UnableToRegisterRaycastProvider.png)
 
 若要修正這些問題，請將 IMixedRealityRaycastProvider 實例新增至輸入系統設定檔。
 
-![選取 Raycast 提供者2](../features/images/release-notes/SelectRaycastProvider.png)
+![選取 Raycast 提供者2](../release-notes/images/SelectRaycastProvider.png)
 
 **事件系統**
 

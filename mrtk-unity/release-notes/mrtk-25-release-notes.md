@@ -1,22 +1,22 @@
 ---
-title: ReleaseNotes
+title: MRTK 2.5 版本資訊
 description: 目前 MRTK 版本的發行 nots
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 00a6bc326469032fee52ae8817302500d50e583e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2d93993ad6100adc0c9bb70067e6cb09d61c68b
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780176"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883266"
 ---
 # <a name="microsoft-mixed-reality-toolkit-254-release-notes"></a>Microsoft Mixed Reality 工具組2.5.4 版本資訊
 
 - [新功能](#whats-new)
-- [更新指導方針](updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
+- [更新指導方針](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [已知問題](#known-issues)
 
 > [!IMPORTANT]
@@ -40,7 +40,7 @@ ms.locfileid: "101780176"
 
 ### <a name="add-support-for-openxr"></a>新增對 OpenXR 的支援
 
-已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](https://aka.ms/openxr-unity-install) 。
+已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](../configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](https://aka.ms/openxr-unity-install) 。
 
 > [!IMPORTANT]
 > Unity 中的 OpenXR 僅支援 Unity 2020.2 和更新版本。
@@ -83,7 +83,7 @@ ms.locfileid: "101780176"
 - **視窗**  > **套件管理員** 已安裝一或多個 XR 套件
 - **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
 
-  ![選取音訊 Apatializer](features/images/release-notes/SpatializerSelection.png)
+  ![選取音訊 Apatializer](images/SpatializerSelection.png)
 
 ### <a name="nullreferenceexception-object-reference-not-set-to-an-instance-of-an-object-scenetransitionserviceinitialize"></a>NullReferenceException：物件參考未設定為物件的實例 (SceneTransitionService.Initialize) 
 
@@ -95,7 +95,7 @@ ms.locfileid: "101780176"
 - 如果未展開，請展開 `Scene Transition Service`
 - 將的值設定 `Configuration Profile` 為 **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="features/images/release-notes/FixSceneTransitionProfile.png" width="500px" alt="Fix Scene Transition">
+![修正場景轉換](images/FixSceneTransitionProfile.png)
 
 ### <a name="oculus-quest"></a>Oculus 的追求
 

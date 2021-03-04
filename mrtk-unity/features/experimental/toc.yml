@@ -1,14 +1,8 @@
-- name: 對話
-  href: dialog.md
 - name: Dock
   href: dock.md
-- name: 手指導
-  href: hand-coach.md
 - name: 手物理學服務
   href: hand-physics-service.md
 - name: 互動式元素
   href: interactive-element.md
 - name: 混合現實鍵盤
   href: mixed-reality-keyboard.md
-- name: 脈衝著色器
-  href: pulse-shader.md

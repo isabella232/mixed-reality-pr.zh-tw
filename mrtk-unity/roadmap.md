@@ -3,15 +3,15 @@ title: 藍圖
 description: 概述 MRTK 藍圖的檔。
 author: polar-kev
 ms.author: kesemple
-ms.date: 01/12/2021
+ms.date: 03/03/2021
 ms.localizationpriority: high
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 10447171b92d90c2ad8c6910956381ef3e75ecf2
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
+ms.openlocfilehash: 53cf7ffe786ea5cb650bfd04ff8d42d5bdd7cf09
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780837"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883123"
 ---
 # <a name="roadmap"></a>藍圖
 
@@ -19,13 +19,13 @@ ms.locfileid: "101780837"
 
 ## <a name="current-release"></a>目前的版本
 
-[Microsoft Mixed Reality 工具組 v 2.5。4](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases/tag/v2.5.4)
+Microsoft Mixed Reality 工具組2.6 版
 
 ## <a name="upcoming-releases"></a>即將推出的版本
 
 | 產品 | 描述 | 時間表 | 專案面板 |
 | --- | --- | --- | --- |
-| [MRTK 2.6 版](#260) | MRTK 的下一個反復專案 | 2021 年 1 月 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/13 |
+| [MRTK V 2。7](#270) | MRTK 的下一個反復專案 | 2021 年 5 月 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14 |
 
 版本是以主題為中心， (例如：大型功能區) ，而且排定為大約每8-12 周進行。
 
@@ -37,25 +37,30 @@ ms.locfileid: "101780837"
 
 > 當 Unity 釋出 LTS (長期支援) 產品時，Mixed Reality 工具組將會更新為 LTS 版本。 雖然混合現實工具組是在最新的非 Beta 版 (（例如： 2020.1) tech 分支版本的 Unity）上執行，但並未正式支援。
 
-### <a name="260"></a>2.6.0
+### <a name="270"></a>2.7.0
 
-如需版本的最新狀態，請造訪 [里程碑頁面]( https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/13)。
+我們目前正在規劃2.7.0 版本，且即將有更多更新可供您使用！
+如需版本的最新狀態，請造訪 [里程碑頁面](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14)。
 
-狀態：開發中
+狀態：規劃
 
-目標時間軸：2021年1月
+目標時程表：5月2021
 
 主題：
 
-- Stability
-- 使用者體驗
+- Stability 
 - 平臺擴充： OpenXR
+- 使用者體驗
 - 開發人員教育
 - 包裝
 
 **穩定性**
 
 品質和穩定性是此與所有 Microsoft Mixed Reality 工具組版本的最高優先順序。 我們會持續優先處理影響 MRTK 元件穩定性的客戶和合作夥伴問題。
+
+**平臺擴充： OpenXR**
+
+MRTK 團隊透過 [OpenXR](https://techcommunity.microsoft.com/t5/mixed-reality-blog/moving-forward-to-openxr/ba-p/1825672)支援混合現實的開放未來。 OpenXR 的支援目前正在開發中，並在 MRTK 2.5.2 中發行了初始預覽支援。
 
 **使用者體驗**
 
@@ -66,19 +71,14 @@ ms.locfileid: "101780837"
 - HoloLens Shell 同位
 - 測試以確保功能不會回歸
 
-**平臺擴充： OpenXR**
-
-MRTK 團隊透過 [OpenXR](https://techcommunity.microsoft.com/t5/mixed-reality-blog/moving-forward-to-openxr/ba-p/1825672)支援混合現實的開放未來。 OpenXR 的支援目前正在開發中，並在 MRTK 2.5.2 中發行了初始預覽支援。
-
 **開發人員教育**
 
-[開發人員檔](https://microsoft.github.io/MixedRealityToolkit-Unity) 和範例場景是 MRTK 團隊的持續性優先。
-
-藉由持續投資 [MRTK 教學](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials)課程，MRTK 小組致力於加速開發人員的使用者入門體驗，並改進如何運用 Azure 服務和其他延伸模組搭配 MRTK 的指示。
+我們已將開發人員檔從 Github 遷移至新的檔平臺！ 我們想要聽取您的意見反應，讓我們可以繼續改善開發人員的檔體驗。
+我們目前有 [MRTK 的教學](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) 課程存在於不同的混合現實檔區段中。我們會將這些教學課程與 MRTK 檔的其餘部分一起遷移。 
 
 **包裝**
 
-在 MRTK 2.5.0 中，我們發行了 Unity 套件管理員 (UPM) 的支援。 我們將繼續進行改進，讓您更輕鬆地使用 UPM 下載套件。
+「 [混合現實」功能工具](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 是一種新方法，可讓開發人員探索、更新和新增混合現實功能套件至 Unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 我們想要在回應功能要求和 bug 時，對混合現實功能工具進行更新。
 
 ## <a name="backlog"></a>Backlog
 

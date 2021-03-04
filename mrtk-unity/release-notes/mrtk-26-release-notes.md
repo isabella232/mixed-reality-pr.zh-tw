@@ -1,23 +1,23 @@
 ---
-title: ReleaseNotes
+title: MRTK 2.6 版本資訊
 description: MRTK 2.6 版的版本資訊
 author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: a232543da9b53969cb38c52a9cbd04a84e131561
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4d900686493d566e7c3af9d48c5f1e95f6017449
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780839"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883405"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Microsoft Mixed Reality 工具組2.6.0 版本資訊
 
 - [新功能](#whats-new)
 - [重大變更](#breaking-changes)
-- [更新指導方針](Updating.md#upgrading-to-a-new-version-of-mrtk)
+- [更新指導方針](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
 - [已知問題](#known-issues)
 
 > [!IMPORTANT]
@@ -27,7 +27,7 @@ ms.locfileid: "101780839"
 
 ### <a name="add-support-for-openxr"></a>新增對 OpenXR 的支援
 
-已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](https://aka.ms/openxr-unity-install) 。
+已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](../configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](https://aka.ms/openxr-unity-install) 。
 
 > [!IMPORTANT]
 > Unity 中的 OpenXR 僅支援 Unity 2020.2 和更新版本。
@@ -40,13 +40,24 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 
 ### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>所有平臺現在都支援使用「傳送」手勢進行遙傳
 
-使用者現在可以使用「傳送」手勢，在所有平臺上四處移動其播放空間。 若要使用預設設定在 MR 裝置上傳送控制器，請使用操縱杆。 若要透過明確的手進行傳送，請與您的手朝外手勢，並將索引和捲動方塊朝外，以 curling 食指來完成傳送。 若要使用輸入模擬來傳送，請參閱更新的 [輸入模擬服務檔](features/input-simulation/input-simulation-service.md)。
+使用者現在可以使用「傳送」手勢，在所有平臺上四處移動其播放空間。 若要使用預設設定在 MR 裝置上傳送控制器，請使用操縱杆。 若要透過明確的手進行傳送，請與您的手朝外手勢，並將索引和捲動方塊朝外，以 curling 食指來完成傳送。 若要使用輸入模擬來傳送，請參閱更新的 [輸入模擬服務檔](../features/input-simulation/input-simulation-service.md)。
 
   ![傳送手勢](images/handteleport.gif)
 
+### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>場景理解現在可在 MRTK 中作為實驗空間感知觀察者
+
+[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding)的實驗性支援是在 MRTK 2.6 中引進。 使用者可以在以 MRTK 為基礎的專案中，將 HoloLens 2 的場景理解功能納入為空間感知觀察者。 如需詳細資訊，請參閱 [場景理解檔](../features/spatial-awareness/scene-understanding.md) 。
+
+> [!IMPORTANT]
+> 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
+>
+> 這項功能需要場景理解套件，現在可透過「 [混合現實」功能工具](https://aka.ms/MRFeatureTool)取得。
+
+  ![場景理解](images/SceneUnderstanding.gif)
+
 ### <a name="runtime-profile-switching-support"></a>執行時間設定檔切換支援
 
-MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，預先 MRTK 初始化設定檔切換) ，以及在設定檔已在使用中時使用 (也就是使用中設定檔參數) 。 先前的參數可用來根據硬體的功能來啟用選取元件，而後者可以用來在使用者輸入應用程式子元件時修改體驗。 如需詳細資訊和程式碼範例，請閱讀 [設定檔切換的相關](configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) 檔。
+MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，預先 MRTK 初始化設定檔切換) ，以及在設定檔已在使用中時使用 (也就是使用中設定檔參數) 。 先前的參數可用來根據硬體的功能來啟用選取元件，而後者可以用來在使用者輸入應用程式子元件時修改體驗。 如需詳細資訊和程式碼範例，請閱讀 [設定檔切換的相關](../configuration/mixed-reality-configuration-guide.md#changing-profiles-at-runtime) 檔。
 
 ### <a name="directional-indicator-and-follow-solvers-graduated-from-experimental"></a>方向指標，並遵循實驗的解析器
 
@@ -54,9 +65,15 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
   ![方向性指標規劃求解](images/DirectionalIndicatorExampleScene.gif)
 
+### <a name="hand-coach-graduated-from-experimental"></a>從實驗性開始的手勢
+
+這項功能現在已準備好搭配主線 MRTK 使用。
+  ![手動指導範例](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+
 ### <a name="input-recording-service-improvements"></a>輸入記錄服務改進
 
-`InputRecordingService` 而且 `InputPlaybackService` 現在可以錄製並播放眼睛的眼睛輸入。 錄製已經過優化，可確保整段記錄期間的資料幀大小都一致，而記錄檔大小和節省時間也會降低大約50%。 現在可以非同步方式執行錄製檔案的儲存和載入作業。 請注意此 MRTK 版本中記錄的檔案格式已經變更，請參閱 [這裡](InputSimulation/InputAnimationFileFormat.md) 以取得新版本1.1 規格的詳細資訊。
+`InputRecordingService` 而且 `InputPlaybackService` 現在可以錄製並播放眼睛的眼睛輸入。 錄製已經過優化，可確保整段記錄期間的資料幀大小都一致，而記錄檔大小和節省時間也會降低大約50%。 現在可以非同步方式執行錄製檔案的儲存和載入作業。 請注意此 MRTK 版本中記錄的檔案格式已經變更，請參閱 [這裡](../features/input-simulation/input-animation-file-format.md) 以取得新版本1.1 規格的詳細資訊。
 
 ### <a name="reading-mode"></a>讀取模式
 
@@ -78,7 +95,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="input-animation-binary-file-has-an-updated-version-11-format"></a>輸入動畫二進位檔案具有更新版本1.1 格式
 
-輸入動畫二進位檔（由 `InputRecordingService` 和使用 `InputPlaybackService` ）現在具有更新的檔案格式，可讓您對這兩個服務進行優化。 如需新版本1.1 規格的詳細資訊，請參閱 [這裡](features/input-simulation/input-animation-file-format.md) 。
+輸入動畫二進位檔（由 `InputRecordingService` 和使用 `InputPlaybackService` ）現在具有更新的檔案格式，可讓您對這兩個服務進行優化。 如需新版本1.1 規格的詳細資訊，請參閱 [這裡](../features/input-simulation/input-animation-file-format.md) 。
 
 ### <a name="msbuild-for-unity-support"></a>適用于 Unity 的 MSBuild 支援
 
@@ -124,7 +141,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 - 如果未展開，請展開 `Scene Transition Service`
 - 將的值設定 `Configuration Profile` 為 **MRTKExamplesHubSceneTransitionServiceProfile**
 
-<img src="Images/ReleaseNotes/FixSceneTransitionProfile.png" width="500px">
+![修正場景轉換設定檔](images/FixSceneTransitionProfile.png)
 
 ### <a name="oculus-quest"></a>Oculus 的追求
 

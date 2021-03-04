@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: fdd426c0f994a72cd3914f37332600b4133eb0fb
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ba09b25bb4d4402375acf669e022d744af45fc70
+ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780068"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "101883373"
 ---
 # <a name="experimental-features"></a>實驗性功能
 
@@ -76,7 +76,7 @@ public static void MyCommand()
 
 請遵循下列步驟來新增實驗性功能的檔：
 
-1. 實驗性功能的任何檔都應該放在 `readme.md` 實驗資料夾的檔案中。 例如： [`MRTK/SDK/Experimental/PulseShader/readme.md`](../features/experimental/pulse-shader.md) 。
+1. 實驗性功能的任何檔都應該放在 `readme.md` 實驗資料夾的檔案中。 例如，MRTK/SDK/實驗/PulseShader/readme。
 
 1. 在 [ *功能概述* ] 下的 [ *實驗* ] 區段中，新增連結 [`Documentation/toc.yml`](../toc.yml) 。
 

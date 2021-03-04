@@ -8,8 +8,12 @@
   href: button.md
 - name: 條件約束管理員
   href: constraint-manager.md
+- name: 對話
+  href: dialog.md
 - name: Fingertip 視覺效果
   href: fingertip-visualization.md
+- name: 手指導
+  href: hand-coach.md
 - name: 手形功能表
   href: hand-menu.md
 - name: 互動
