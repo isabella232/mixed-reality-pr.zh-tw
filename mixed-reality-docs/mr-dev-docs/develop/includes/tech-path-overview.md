@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c61fda885b6cffba2a16b368aa48ad1426fd9fa6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6bcbb5894af2bbd99a42ae4fb49a4d047355c0f0
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98605286"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101882734"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ ms.locfileid: "98605286"
 |  工具/SDK  |  說明  |
 | --- | --- |
 | [適用於 Unity 的混合實境工具組](../unity/mrtk-getting-started.md) | 適用於 Unity 的混合實境工具組是一個開放原始碼跨平台開發套件，主要用於加速開發以 Microsoft HoloLens、Windows Mixed Reality 沉浸式 (VR) 頭戴裝置和 OpenVR 平台為目標的應用程式。 |
+| [Microsoft 網狀](/mesh/overview) 個人預覽版 | 完成 [Microsoft 網狀的註冊利息](https://aka.ms/meshsignup) 表單，以掌握最新的網狀通知和新聞。 有了網格，您就可以增強虛擬會議、進行虛擬設計會話、協助其他人遠端處理，以及裝載虛擬符合性。 |
 
 ## <a name="cloud-services"></a>雲端服務
 
@@ -84,7 +85,7 @@ ms.locfileid: "98605286"
 
 |  工具/SDK  |  說明  |
 | --- | --- |
-| [適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX 工具是要發行的第一個外掛程式，目前只有 HoloLens 2 才支援。 外掛程式包含 C++ 程式碼、藍圖，以及用於輸入模擬、手部互動、表面磁性的常見 UX 功能的範例資產。 |
+| [適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX 工具是要發行的第一個外掛程式，目前僅支援 HoloLens 2。 外掛程式包含 C++ 程式碼、藍圖，以及用於輸入模擬、手部互動、表面磁性的常見 UX 功能的範例資產。 |
 | [適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | 圖形工具是一種 UE 遊戲外掛程式，其中包含程式碼、藍圖和範例資產，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。 |
 
 ## <a name="cloud-services"></a>雲端服務

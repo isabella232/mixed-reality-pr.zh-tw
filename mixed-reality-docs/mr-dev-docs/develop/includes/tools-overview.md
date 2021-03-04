@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: c205e3b812eeb7a85bfe361d4fd83f9aec7b7999
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: e8eb162b1d2d1e416ba90530f41d2724a960ca11
+ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244917"
+ms.lasthandoff: 03/03/2021
+ms.locfileid: "101882320"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -150,6 +150,9 @@ Windows 10 SDK 最適合用於 Windows 10 作業系統。 Windows 8.1、Windows 
 ### <a name="1-download-the-latest-version"></a>1.下載最新版本
 
 建議您安裝 [Unreal Engine 4.25 版](https://docs.unrealengine.com//GettingStarted/Installation/index.html)或更新版本，以充分利用內建的 HoloLens 支援。
+
+移至長篇遊戲啟動器中的 [ **媒體** 櫃] 索引標籤，選取 [ **啟動** ] 旁的下拉箭號，然後按一下 [ **選項**]。 在 [目標平台] 中，選取 **HoloLens 2**，然後按一下 [套用]。
+![MRTK](../../develop/images/Unreal_Install_Option_HoloLens2.png)
 
 ### <a name="2-import-mixed-reality-toolkit-mrtk"></a>2.匯入混合實境工具組 (MRTK)
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
