@@ -1,17 +1,17 @@
 ---
 title: 安裝工具
-description: MRTK 安裝工具檔頁面
+description: MRTK-Unity，安裝工具檔頁面
 author: polar-kev
 ms.author: kesemple
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、混合現實工具組、安裝、最新、工具、入門、基本、unity、visual studio、工具組、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、安裝、Windows、HoloLens、模擬器
-ms.openlocfilehash: 4192b8e033b5d5e5234dc03ad9a0f624d0692567
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 313362d6257bf67da45e9b6b175855d49231941a
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883243"
+ms.locfileid: "102117612"
 ---
 # <a name="install-the-tools"></a>安裝工具
 
@@ -19,7 +19,7 @@ ms.locfileid: "101883243"
 
 沒有混合實境裝置嗎？ 您可以安裝 [hololens 模擬器](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)  來測試混合現實應用程式的某些功能，而不需要 HoloLens。 您也可以使用 [Windows Mixed reality](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)  模擬器來測試您的混合現實應用程式是否有沉浸式耳機。
 
-建議您將 Unity 安裝為開始建立混合現實應用程式的最簡單方式。
+本頁面將引導您安裝搭配 Unity 使用 MRTK 所需的工具。 如果您有興趣探索其他混合現實開發平臺，請查看 [混合現實開發](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity) 頁面的簡介。
 
 您可以針對 Unity 的輸入模擬使用 [混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity)組，來測試各種類型的輸入互動，例如手動追蹤和眼睛追蹤輸入。 
 
@@ -53,8 +53,6 @@ ms.locfileid: "101883243"
 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 驗證您想要的封裝之後，Mixed Reality 功能工具會將這些套件下載到您選擇的 Unity 專案。
 
 ##### <a name="importing-the-mixed-reality-toolkit"></a>匯入混合實境工具組
-建議您遵循策劃 [HoloLens](https://docs.microsoft.com/windows/mixed-reality/develop/unity/unity-development-overview?tabs=mrtk%2Carr%2Chl2#1-getting-started) 教學課程中的「開始使用」一節，以取得下載 MRTK 和初始化第一個專案的逐步指南。
-
 您可以遵循 [安裝和使用方式指示](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#system-requirements) ，並選取混合現實工具組 Foundation 套件，以下載 Mixed reality 工具組套件。
 
 如果您想要以手動方式從 Github 下載 MRTK 套件，請造訪 [Toolkit-Unity (Github) 的混合現實 ](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)版本頁面。
@@ -115,3 +113,9 @@ Memory | 8 GB 的 RAM 或更高 | 16 GB RAM 或更大
 存放裝置 | >10 GB 的額外可用空間
 USB 連接埠 | 適用於頭戴式裝置的 1x 可用 USB 連接埠 (USB 3.0 Type-A) 注意：USB 必須提供至少 900mA
 Bluetooth | Bluetooth 4.0 (適用於周邊連線)
+
+## <a name="next-development-checkpoint"></a>下一個開發檢查點
+
+既然您已安裝工具，建議您遵循我們的 MRTK HoloLens 2 教學課程系列。
+> [!div class="nextstepaction"]
+> [HoloLens 2 教學課程系列](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)

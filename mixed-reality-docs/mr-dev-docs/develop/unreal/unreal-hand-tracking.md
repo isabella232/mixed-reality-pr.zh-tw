@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal 引擎4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 1888258321af978ca52623008193e6dae94833a8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: ea4ba3ad5905e899eae474e4d571585fef77c0c2
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581114"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102117652"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal 中的手勢追蹤
 
@@ -21,7 +21,7 @@ ms.locfileid: "98581114"
 
 手姿勢可讓您追蹤並使用使用者的手和手指作為輸入，可在藍圖和 c + + 中存取。 Unreal API 會將資料傳送為座標系統，並與 Unreal 引擎同步處理刻度。
 
-![手形基本架構](../native/images/hand-skeleton.png)
+![手形基本架構](images/hand-tracking-skeleton-update.png)
 
 [!INCLUDE[](includes/tabs-tracking-hand-pose.md)]
 
@@ -29,9 +29,9 @@ ms.locfileid: "98581114"
 
 使用 [即時連結外掛程式](https://docs.unrealengine.com/Engine/Animation/LiveLinkPlugin/index.html)可對動畫公開手。
 
-如果已啟用 Windows Mixed Reality 和即時連結外掛程式：
+如果已啟用 Windows Mixed Reality 和 Live Link 外掛程式：
 1. 選取 [ **Window > 即時連結** ] 以開啟 [即時連結編輯器] 視窗。
-2. 選取 **來源** 並啟用 **Windows Mixed Reality 手追蹤來源**
+2. 選取 **來源** 並啟用 **Windows Mixed Reality 手動追蹤來源**
 
 ![即時連結來源](images/unreal/live-link-source.png)
 
@@ -156,7 +156,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ## <a name="gestures"></a>軌跡
 
-HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 軌跡追蹤是以訂用帳戶模型為基礎。 您應該使用「設定手勢」函式來告訴裝置您要追蹤的手勢。 您可以在 [HoloLens 2 基本使用](/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
+HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 軌跡追蹤是以訂用帳戶模型為基礎。 您應該使用「設定手勢」函式來告訴裝置您要追蹤的手勢。 您可以在 [HoloLens 2 基本使用](/hololens/hololens2-basic-usage) 方式檔中找到筆勢的更多詳細資料。
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

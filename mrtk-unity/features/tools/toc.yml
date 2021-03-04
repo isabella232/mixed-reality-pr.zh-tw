@@ -14,3 +14,5 @@
   href: optimize-window.md
 - name: 螢幕擷取畫面公用程式
   href: screenshot-utility.md
+- name: 著色器更新
+  href: update-mrtk-shaders.md

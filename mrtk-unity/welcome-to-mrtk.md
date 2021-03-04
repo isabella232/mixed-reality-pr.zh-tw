@@ -1,17 +1,17 @@
 ---
-title: MRTK_Documentation
-description: MRTK 使用者入門檔頁面
+title: MRTK-Unity 開發人員檔
+description: 瞭解 Unity 的混合現實工具組。
 author: polar-kev
 ms.author: kesemple
-ms.date: 03/02/2021
+ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: eee7ab759b13a11f0d4b0ef0ab51fa020c5fbf39
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: e763b603d7cbc1c0c07518126c26ad4efc8dbcc0
+ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883346"
+ms.locfileid: "102117672"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -41,13 +41,13 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="getting-started-with-mrtk"></a>開始使用 MRTK
 
-如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您安裝必要的工具，然後遵循 Unity 開發人員旅程。
+如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您安裝必要的工具，然後遵循 HoloLens 2 教學課程系列。
 
 > [!div class="nextstepaction"]
 > [安裝工具](install-the-tools.md)
 
 > [!div class="nextstepaction"]
-> [Unity 開發人員旅程](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [HoloLens 2 教學課程系列](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 想要看看幕後的進展嗎？
 > [!div class="nextstepaction"]
