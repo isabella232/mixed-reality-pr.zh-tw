@@ -3,83 +3,70 @@ title: 匯入功能
 description: 瞭解如何從 HoloLens 和 VR 開發的 MR 功能工具匯入和安裝功能。
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: a82eea93a07b662314f3a718eef0c1bd18a4ca4e
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244559"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230807"
 ---
-# <a name="importing-features"></a><span data-ttu-id="010f4-104">匯入功能</span><span class="sxs-lookup"><span data-stu-id="010f4-104">Importing features</span></span>
+# <a name="importing-features"></a><span data-ttu-id="be01b-104">匯入功能</span><span class="sxs-lookup"><span data-stu-id="be01b-104">Importing features</span></span>
 
-<span data-ttu-id="010f4-105">下載您的功能之後，您就可以檢查並匯入至 Unity 專案。</span><span class="sxs-lookup"><span data-stu-id="010f4-105">Once your features have been downloaded, they can be reviewed and imported into the Unity project.</span></span> <span data-ttu-id="010f4-106">在這個步驟中，您的應用程式視窗看起來應該如下圖所示：</span><span class="sxs-lookup"><span data-stu-id="010f4-106">At this step, your application window should look like the following image:</span></span>
+<span data-ttu-id="be01b-105">下載您的功能之後，您就可以檢查並匯入至 Unity 專案。</span><span class="sxs-lookup"><span data-stu-id="be01b-105">Once your features have been downloaded, they can be reviewed and imported into the Unity project.</span></span> <span data-ttu-id="be01b-106">在這個步驟中，您的應用程式視窗看起來應該如下圖所示：</span><span class="sxs-lookup"><span data-stu-id="be01b-106">At this step, your application window should look like the following image:</span></span>
 
 ![匯入功能](images/FeatureToolImport.png)
 
-## <a name="features-list"></a><span data-ttu-id="010f4-108">功能清單</span><span class="sxs-lookup"><span data-stu-id="010f4-108">Features list</span></span>
+## <a name="features-list"></a><span data-ttu-id="be01b-108">功能清單</span><span class="sxs-lookup"><span data-stu-id="be01b-108">Features list</span></span>
 
-<span data-ttu-id="010f4-109">[ **功能** ] 清單包含探索期間選取的封裝集合。</span><span class="sxs-lookup"><span data-stu-id="010f4-109">The **Features** list contains the collection of packages selected during discovery.</span></span> 
-* <span data-ttu-id="010f4-110">您可以在匯入之前選取或取消選取每項功能。</span><span class="sxs-lookup"><span data-stu-id="010f4-110">Each feature can be selected or deselected before importing.</span></span> <span data-ttu-id="010f4-111">您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="010f4-111">Package details can be viewed using the **Details** link shown below</span></span>
+<span data-ttu-id="be01b-109">[ **功能** ] 清單包含探索期間選取的封裝集合。</span><span class="sxs-lookup"><span data-stu-id="be01b-109">The **Features** list contains the collection of packages selected during discovery.</span></span> <span data-ttu-id="be01b-110">您可以在匯入之前選取或取消選取每項功能。</span><span class="sxs-lookup"><span data-stu-id="be01b-110">Each feature can be selected or deselected before importing.</span></span> <span data-ttu-id="be01b-111">您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="be01b-111">Package details can be viewed using the **Details** link shown below</span></span>
 
 ![功能清單](images/FeaturesList.png)
 
-## <a name="required-dependencies-list"></a><span data-ttu-id="010f4-113">必要相依性清單</span><span class="sxs-lookup"><span data-stu-id="010f4-113">Required dependencies list</span></span>
+## <a name="required-dependencies-list"></a><span data-ttu-id="be01b-113">必要相依性清單</span><span class="sxs-lookup"><span data-stu-id="be01b-113">Required dependencies list</span></span>
 
-<span data-ttu-id="010f4-114">**必要** 的相依性清單包含一或多個所選功能需要運作的封裝。</span><span class="sxs-lookup"><span data-stu-id="010f4-114">The **Required dependencies** list contains the packages that one or more of the selected features requires to function.</span></span> <span data-ttu-id="010f4-115">這份清單也會包含相依性的相依性。</span><span class="sxs-lookup"><span data-stu-id="010f4-115">This list will also contain dependencies of dependencies.</span></span>
-* <span data-ttu-id="010f4-116">您可以選取或取消選取每個相依性，然後再匯入。</span><span class="sxs-lookup"><span data-stu-id="010f4-116">Each dependency can be selected or deselected before importing.</span></span> <span data-ttu-id="010f4-117">您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="010f4-117">Package details can be viewed using the **Details** link shown below</span></span>
+<span data-ttu-id="be01b-114">**必要** 的相依性清單包含一或多個所選功能需要運作的封裝。</span><span class="sxs-lookup"><span data-stu-id="be01b-114">The **Required dependencies** list contains the packages that one or more of the selected features requires to function.</span></span> <span data-ttu-id="be01b-115">這份清單也會包含相依性的相依性。</span><span class="sxs-lookup"><span data-stu-id="be01b-115">This list will also contain dependencies of dependencies.</span></span> <span data-ttu-id="be01b-116">您可以選取或取消選取每個相依性，然後再匯入。</span><span class="sxs-lookup"><span data-stu-id="be01b-116">Each dependency can be selected or deselected before importing.</span></span> <span data-ttu-id="be01b-117">您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="be01b-117">Package details can be viewed using the **Details** link shown below</span></span>
 
 ![相依性清單](images/RequiredDependencyList.png)
 
 > [!NOTE]
-> <span data-ttu-id="010f4-119">當您在 Unity 中載入專案時，取消選擇必要的相依性將會導致一個或多個遺失的相依性錯誤。</span><span class="sxs-lookup"><span data-stu-id="010f4-119">Deselecting required dependencies will result in one or more missing dependency errors when loading the project in Unity.</span></span> <span data-ttu-id="010f4-120">這些功能無法在專案中使用。</span><span class="sxs-lookup"><span data-stu-id="010f4-120">These features won't be usable in the project.</span></span>
+> <span data-ttu-id="be01b-119">當您在 Unity 中載入專案時，取消選擇必要的相依性將會導致一個或多個遺失的相依性錯誤。</span><span class="sxs-lookup"><span data-stu-id="be01b-119">Deselecting required dependencies will result in one or more missing dependency errors when loading the project in Unity.</span></span> <span data-ttu-id="be01b-120">這些功能無法在專案中使用。</span><span class="sxs-lookup"><span data-stu-id="be01b-120">These features won't be usable in the project.</span></span>
 
-## <a name="specifying-the-unity-project-path"></a><span data-ttu-id="010f4-121">指定 Unity 專案路徑</span><span class="sxs-lookup"><span data-stu-id="010f4-121">Specifying the Unity project path</span></span>
+## <a name="validating-selections"></a><span data-ttu-id="be01b-121">驗證選取專案</span><span class="sxs-lookup"><span data-stu-id="be01b-121">Validating selections</span></span>
 
-<span data-ttu-id="010f4-122">在功能可以匯入至專案之前，您必須先使用「混合現實」功能工具來註冊該路徑。</span><span class="sxs-lookup"><span data-stu-id="010f4-122">Before features can be imported into the project, you need to register the path with the Mixed Reality Feature Tool.</span></span>
-
-![設定專案路徑](images/ProjectPath.png)
-
-## <a name="validating-selections"></a><span data-ttu-id="010f4-124">驗證選取專案</span><span class="sxs-lookup"><span data-stu-id="010f4-124">Validating selections</span></span>
-
-<span data-ttu-id="010f4-125">我們強烈建議您在匯入之前驗證特徵選取。</span><span class="sxs-lookup"><span data-stu-id="010f4-125">We highly recommend validating feature selections before importing.</span></span> <span data-ttu-id="010f4-126">此步驟會引發任何可能妨礙專案開發成功的問題。</span><span class="sxs-lookup"><span data-stu-id="010f4-126">This step will raise any issues that are likely to impede successful project development.</span></span>
+<span data-ttu-id="be01b-122">我們強烈建議您在匯入之前驗證特徵選取。</span><span class="sxs-lookup"><span data-stu-id="be01b-122">We highly recommend validating feature selections before importing.</span></span> <span data-ttu-id="be01b-123">此步驟會引發任何可能妨礙專案開發成功的問題。</span><span class="sxs-lookup"><span data-stu-id="be01b-123">This step will raise any issues that are likely to impede successful project development.</span></span>
 
 ![驗證問題](images/ValidationIssues.png)
 
-<span data-ttu-id="010f4-128">Mixed Reality 功能工具提供兩個自動問題解決方式，如下列各節) 所述，以及手動取消和解決問題的選項。</span><span class="sxs-lookup"><span data-stu-id="010f4-128">The Mixed Reality Feature Tool provides two automatic issue resolutions, described in the following sections), and the option to cancel and resolve issues manually.</span></span>
+<span data-ttu-id="be01b-125">Mixed Reality 功能工具提供兩個自動問題解決方式，如下列各節) 所述，以及手動取消和解決問題的選項。</span><span class="sxs-lookup"><span data-stu-id="be01b-125">The Mixed Reality Feature Tool provides two automatic issue resolutions, described in the following sections), and the option to cancel and resolve issues manually.</span></span>
+
+### <a name="enable-dependencies"></a><span data-ttu-id="be01b-126">啟用相依性</span><span class="sxs-lookup"><span data-stu-id="be01b-126">Enable dependencies</span></span>
+
+<span data-ttu-id="be01b-127">[ **啟用** 相依性] 按鈕將會自動重新選取遺失的相依性。</span><span class="sxs-lookup"><span data-stu-id="be01b-127">The **Enable dependencies** button will automatically re-select the missing dependencies.</span></span> <span data-ttu-id="be01b-128">這適用于明確選取的相依性 (出現在 [ **功能** 清單]) 中，以及根據所選功能的需求隱含選取的相依性。</span><span class="sxs-lookup"><span data-stu-id="be01b-128">This is true for dependencies that were explicitly selected (appear in the **Features** list) and those that were implicitly selected based on the requirements of the selected features.</span></span>
+
+### <a name="disable-features"></a><span data-ttu-id="be01b-129">停用功能</span><span class="sxs-lookup"><span data-stu-id="be01b-129">Disable features</span></span>
+
+<span data-ttu-id="be01b-130">選取 [ **停用功能** ] 將會自動取消選取相依于一或多個已取消選取之相依性的任何功能。</span><span class="sxs-lookup"><span data-stu-id="be01b-130">Selecting **Disable features** will automatically deselect any feature that depends on one or more of the dependencies that have been unchecked.</span></span> <span data-ttu-id="be01b-131">這適用于隱含選取的相依性封裝和明確選取的功能。</span><span class="sxs-lookup"><span data-stu-id="be01b-131">This is true for implicitly selected dependency packages and explicitly selected features.</span></span>
+
+## <a name="importing"></a><span data-ttu-id="be01b-132">匯入</span><span class="sxs-lookup"><span data-stu-id="be01b-132">Importing</span></span>
+
+<span data-ttu-id="be01b-133">選取 [匯 **入** ] 以新增您選取的功能，並在更新目標專案前提供 [最終核准](reviewing-changes.md) 。</span><span class="sxs-lookup"><span data-stu-id="be01b-133">Select **Import** to add your selected features and give [final approval](reviewing-changes.md) before updating your target project.</span></span>
 
 > [!IMPORTANT]
-> <span data-ttu-id="010f4-129">「混合現實」功能工具無法自動解決與所需版本的 Unity 相關的問題。</span><span class="sxs-lookup"><span data-stu-id="010f4-129">The Mixed Reality Feature Tool cannot automatically resolve issues related to required versions of Unity.</span></span> <span data-ttu-id="010f4-130">這些問題必須以手動方式處理，方法是升級專案所使用的 Unity 版本，或停用 (s) 需要較新版本的功能。</span><span class="sxs-lookup"><span data-stu-id="010f4-130">These issues must be handled manually by upgrading the version of Unity used by the project or disabling the feature(s) requiring a newer version.</span></span>
->
-> <span data-ttu-id="010f4-131">未來版本的混合現實功能工具將根據專案所使用的 Unity 版本，提供更佳的功能篩選。</span><span class="sxs-lookup"><span data-stu-id="010f4-131">A future release of the Mixed Reality Feature Tool will provide better filtering of features based upon the version of Unity being used by the project.</span></span>
-
-### <a name="enable-dependencies"></a><span data-ttu-id="010f4-132">啟用相依性</span><span class="sxs-lookup"><span data-stu-id="010f4-132">Enable dependencies</span></span>
-
-<span data-ttu-id="010f4-133">[ **啟用** 相依性] 按鈕將會自動重新選取遺失的相依性。</span><span class="sxs-lookup"><span data-stu-id="010f4-133">The **Enable dependencies** button will automatically re-select the missing dependencies.</span></span> <span data-ttu-id="010f4-134">這適用于明確選取的相依性 (出現在 [ **功能** 清單]) 中，以及根據所選功能的需求隱含選取的相依性。</span><span class="sxs-lookup"><span data-stu-id="010f4-134">This is true for dependencies that were explicitly selected (appear in the **Features** list) and those that were implicitly selected based on the requirements of the selected features.</span></span>
-
-### <a name="disable-features"></a><span data-ttu-id="010f4-135">停用功能</span><span class="sxs-lookup"><span data-stu-id="010f4-135">Disable features</span></span>
-
-<span data-ttu-id="010f4-136">選取 [ **停用功能** ] 將會自動取消選取相依于一或多個已取消選取之相依性的任何功能。</span><span class="sxs-lookup"><span data-stu-id="010f4-136">Selecting **Disable features** will automatically deselect any feature that depends on one or more of the dependencies that have been unchecked.</span></span> <span data-ttu-id="010f4-137">這適用于隱含選取的相依性封裝和明確選取的功能。</span><span class="sxs-lookup"><span data-stu-id="010f4-137">This is true for implicitly selected dependency packages and explicitly selected features.</span></span>
-
-## <a name="importing"></a><span data-ttu-id="010f4-138">匯入</span><span class="sxs-lookup"><span data-stu-id="010f4-138">Importing</span></span>
-
-<span data-ttu-id="010f4-139">選取 [匯 **入** ] 以新增您選取的功能，並在更新目標專案前提供 [最終核准](reviewing-changes.md) 。</span><span class="sxs-lookup"><span data-stu-id="010f4-139">Select **Import** to add your selected features and give [final approval](reviewing-changes.md) before updating your target project.</span></span>
-
-> [!IMPORTANT]
-> <span data-ttu-id="010f4-140">如果在匯入時仍有驗證問題，則會顯示警告訊息。</span><span class="sxs-lookup"><span data-stu-id="010f4-140">If a validation issue remains when importing, a warning message will be displayed.</span></span> <span data-ttu-id="010f4-141">建議您選取 [否]，然後按一下 [ **驗證** ] 並解決任何出現的問題。</span><span class="sxs-lookup"><span data-stu-id="010f4-141">It is recommended to select No, click **Validate** and resolve any issues presented.</span></span>
+> <span data-ttu-id="be01b-134">如果在匯入時仍有驗證問題，則會顯示警告訊息。</span><span class="sxs-lookup"><span data-stu-id="be01b-134">If a validation issue remains when importing, a warning message will be displayed.</span></span> <span data-ttu-id="be01b-135">建議您選取 [否]，然後按一下 [ **驗證** ] 並解決任何出現的問題。</span><span class="sxs-lookup"><span data-stu-id="be01b-135">It is recommended to select No, click **Validate** and resolve any issues presented.</span></span>
 >
 > ![繼續進行驗證問題](images/ValidationContinueAnyway.png)
 
-## <a name="going-back-to-the-previous-step"></a><span data-ttu-id="010f4-143">回到上一個步驟</span><span class="sxs-lookup"><span data-stu-id="010f4-143">Going back to the previous step</span></span>
+## <a name="going-back-to-the-previous-step"></a><span data-ttu-id="be01b-137">回到上一個步驟</span><span class="sxs-lookup"><span data-stu-id="be01b-137">Going back to the previous step</span></span>
 
-<span data-ttu-id="010f4-144">從匯 **入功能**，混合現實功能工具可讓您回頭流覽至 [探索](discovering-features.md)。</span><span class="sxs-lookup"><span data-stu-id="010f4-144">From **Import features**, the Mixed Reality Feature Tool allows for navigating back to [discovery](discovering-features.md).</span></span> <span data-ttu-id="010f4-145">選取 **返回** 下載其他功能套件。</span><span class="sxs-lookup"><span data-stu-id="010f4-145">Select **Go back** to download other feature packages.</span></span>
+<span data-ttu-id="be01b-138">從匯 **入功能**，混合現實功能工具可讓您回頭流覽至 [探索](discovering-features.md)。</span><span class="sxs-lookup"><span data-stu-id="be01b-138">From **Import features**, the Mixed Reality Feature Tool allows for navigating back to [discovery](discovering-features.md).</span></span> <span data-ttu-id="be01b-139">選取 [ **返回** 以下載其他功能套件]。</span><span class="sxs-lookup"><span data-stu-id="be01b-139">Select **Go back** to download other feature packages.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="010f4-146">另請參閱</span><span class="sxs-lookup"><span data-stu-id="010f4-146">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="be01b-140">另請參閱</span><span class="sxs-lookup"><span data-stu-id="be01b-140">See also</span></span>
 
-- [<span data-ttu-id="010f4-147">歡迎使用 Mixed Reality 功能工具</span><span class="sxs-lookup"><span data-stu-id="010f4-147">Welcome to the Mixed Reality Feature Tool</span></span>](welcome-to-mr-feature-tool.md)
-- [<span data-ttu-id="010f4-148">探索和收購</span><span class="sxs-lookup"><span data-stu-id="010f4-148">Discovery and acquisition</span></span>](discovering-features.md)
-- [<span data-ttu-id="010f4-149">查看功能套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="010f4-149">Viewing feature package details</span></span>](viewing-package-details.md)
-- [<span data-ttu-id="010f4-150">審核和核准專案修改</span><span class="sxs-lookup"><span data-stu-id="010f4-150">Reviewing and approving project modifications</span></span>](reviewing-changes.md)
+- [<span data-ttu-id="be01b-141">歡迎使用 Mixed Reality 功能工具</span><span class="sxs-lookup"><span data-stu-id="be01b-141">Welcome to the Mixed Reality Feature Tool</span></span>](welcome-to-mr-feature-tool.md)
+- [<span data-ttu-id="be01b-142">探索和收購</span><span class="sxs-lookup"><span data-stu-id="be01b-142">Discovery and acquisition</span></span>](discovering-features.md)
+- [<span data-ttu-id="be01b-143">查看功能套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="be01b-143">Viewing feature package details</span></span>](viewing-package-details.md)
+- [<span data-ttu-id="be01b-144">審核和核准專案修改</span><span class="sxs-lookup"><span data-stu-id="be01b-144">Reviewing and approving project modifications</span></span>](reviewing-changes.md)
