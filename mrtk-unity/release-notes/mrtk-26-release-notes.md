@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4d900686493d566e7c3af9d48c5f1e95f6017449
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 41d7b2fd1f1991608a2e89b4c0d3f561fdb01660
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883405"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230729"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Microsoft Mixed Reality 工具組2.6.0 版本資訊
 
@@ -37,6 +37,16 @@ ms.locfileid: "101883405"
 ### <a name="hp-motion-controllers-now-supported-with-mrtk"></a>MRTK 現在支援 HP 動作控制器
 
 HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
+
+### <a name="experimental-interactive-element--state-visualizer"></a>實驗性互動式元素 + 狀態視覺化 
+
+互動式元素是 MRTK 輸入系統的簡化集中進入點。 它包含狀態管理方法、事件管理，以及核心互動狀態的狀態設定邏輯。 如需詳細資訊，請參閱 [互動式元素檔](../features/experimental/interactive-element.md)集。
+
+![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
+
+狀態視覺化是相依于互動式元素的動畫元件。  此元件會建立動畫剪輯、設定主要畫面格，並產生 Animator 狀態機器。 如需詳細資訊，請參閱 [狀態視覺化檔](../features/experimental/interactive-element.md#state-visualizer-experimental)
+
+![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
 ### <a name="teleportation-with-the-teleport-gesture-now-supported-on-all-platforms"></a>所有平臺現在都支援使用「傳送」手勢進行遙傳
 
@@ -69,6 +79,12 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 這項功能現在已準備好搭配主線 MRTK 使用。
   ![手動指導範例](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+### <a name="pulse-shader-graduated-from-experimental"></a>從實驗性分級的脈衝著色器 
+
+脈衝著色器腳本已從實驗性進行分級。 如需詳細資訊，請參閱： [脈衝著色器檔](../features/rendering/pulse-shader.md)
+
+![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
 
 
 ### <a name="input-recording-service-improvements"></a>輸入記錄服務改進

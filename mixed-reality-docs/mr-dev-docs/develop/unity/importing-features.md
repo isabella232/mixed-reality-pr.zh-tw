@@ -3,16 +3,16 @@ title: 匯入功能
 description: 瞭解如何從 HoloLens 和 VR 開發的 MR 功能工具匯入和安裝功能。
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 01/27/2021
+ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: a82eea93a07b662314f3a718eef0c1bd18a4ca4e
-ms.sourcegitcommit: cef969ffd22dc1e5a1e9c3c32fbf0646206519a1
+ms.openlocfilehash: 0d9139835b9eb4e3e5ce3d1f378c56a4724bfa55
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/01/2021
-ms.locfileid: "99244559"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230807"
 ---
 # <a name="importing-features"></a>匯入功能
 
@@ -22,26 +22,18 @@ ms.locfileid: "99244559"
 
 ## <a name="features-list"></a>功能清單
 
-[ **功能** ] 清單包含探索期間選取的封裝集合。 
-* 您可以在匯入之前選取或取消選取每項功能。 您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料
+[ **功能** ] 清單包含探索期間選取的封裝集合。 您可以在匯入之前選取或取消選取每項功能。 您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料
 
 ![功能清單](images/FeaturesList.png)
 
 ## <a name="required-dependencies-list"></a>必要相依性清單
 
-**必要** 的相依性清單包含一或多個所選功能需要運作的封裝。 這份清單也會包含相依性的相依性。
-* 您可以選取或取消選取每個相依性，然後再匯入。 您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料
+**必要** 的相依性清單包含一或多個所選功能需要運作的封裝。 這份清單也會包含相依性的相依性。 您可以選取或取消選取每個相依性，然後再匯入。 您可以使用如下所示的 **詳細資料** 連結來查看套件詳細資料
 
 ![相依性清單](images/RequiredDependencyList.png)
 
 > [!NOTE]
 > 當您在 Unity 中載入專案時，取消選擇必要的相依性將會導致一個或多個遺失的相依性錯誤。 這些功能無法在專案中使用。
-
-## <a name="specifying-the-unity-project-path"></a>指定 Unity 專案路徑
-
-在功能可以匯入至專案之前，您必須先使用「混合現實」功能工具來註冊該路徑。
-
-![設定專案路徑](images/ProjectPath.png)
 
 ## <a name="validating-selections"></a>驗證選取專案
 
@@ -50,11 +42,6 @@ ms.locfileid: "99244559"
 ![驗證問題](images/ValidationIssues.png)
 
 Mixed Reality 功能工具提供兩個自動問題解決方式，如下列各節) 所述，以及手動取消和解決問題的選項。
-
-> [!IMPORTANT]
-> 「混合現實」功能工具無法自動解決與所需版本的 Unity 相關的問題。 這些問題必須以手動方式處理，方法是升級專案所使用的 Unity 版本，或停用 (s) 需要較新版本的功能。
->
-> 未來版本的混合現實功能工具將根據專案所使用的 Unity 版本，提供更佳的功能篩選。
 
 ### <a name="enable-dependencies"></a>啟用相依性
 
@@ -75,7 +62,7 @@ Mixed Reality 功能工具提供兩個自動問題解決方式，如下列各節
 
 ## <a name="going-back-to-the-previous-step"></a>回到上一個步驟
 
-從匯 **入功能**，混合現實功能工具可讓您回頭流覽至 [探索](discovering-features.md)。 選取 **返回** 下載其他功能套件。
+從匯 **入功能**，混合現實功能工具可讓您回頭流覽至 [探索](discovering-features.md)。 選取 [ **返回** 以下載其他功能套件]。
 
 ## <a name="see-also"></a>另請參閱
 

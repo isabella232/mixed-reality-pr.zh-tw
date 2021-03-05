@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 活動、行事曆、學院、排程、sf、三藩市、reactor
-ms.openlocfilehash: 2e7cb5d06cb0903e3dc3f850f452ded6597cd929
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760054"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230879"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 活動
 
@@ -30,5 +30,7 @@ ms.locfileid: "101760054"
 | HoloLens & 混合現實聚會|2020 年 9 月 8 日|[人類認知和混合現實](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Human-Perception-and-Mixed-Reality)|
 | 混合實境講者系列|2020 年 9 月 22 日|[Kippy 的 Escape：適用于 HoloLens 2 的 Unreal & MRTK 簡介](../develop/unreal/unreal-kippys-escape.md)|
 | 混合實境講者系列|2020年10月22日|[使用 BabylonJS 的 WebXR 簡介](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Adding-Augmented-Reality-to-your-Typescript-Project)|
+| 混合實境講者系列|2020 年 11 月 3 日|[混合現實的視覺效果](https://channel9.msdn.com/Shows/Mixed-Reality/Visual-Effects-in-Mixed-Reality)|
 | 混合實境講者系列|2020 年 11 月 17 日|[打造未來： MRTK 的新功能](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Building-the-Future-Whats-New-in-the-Mixed-Reality-Toolkit)|
 | 混合實境講者系列|2020 年 12 月 1 日|[設計全像影像](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Making-of-Designing-Holograms)|
+| 混合實境講者系列|2021年2月11日|[MR 的一天：每日生活的空間計算效應](https://channel9.msdn.com/Shows/Mixed-Reality/One-Day-In-MR-How-Spatial-Computing-Effects-Every-Day-Life)|

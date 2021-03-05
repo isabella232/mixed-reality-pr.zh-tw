@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: bad18c5f30465120bce370aa91c13ff3f229bef6
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 0501abe5a417c17283347455ccea8ec6f49a6a45
+ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496132"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102230739"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>混合現實 OpenXR Unity 中支援的功能
 
@@ -22,18 +22,19 @@ ms.locfileid: "100496132"
 目前支援下列功能：
 
 * 支援 HoloLens 2 的 UWP 應用程式，並針對 HoloLens 2 應用程式模型進行優化。
-* 支援適用于 Windows Mixed Reality 耳機的 Win32 VR 應用程式，具有最新的控制器設定檔和全像應用程式遠端。
+* 支援 Win32 VR 應用程式，適用于具有最新控制器設定檔的 Windows Mixed Reality 耳機以及全像應用程式遠端處理。
 * 使用錨點和未系結空間的世界規模追蹤。
-* [錨點儲存體 API，以將錨點保存](#anchors-and-anchor-persistence) 到 HoloLens 2 的本機儲存體。
+* [錨點儲存體 API，以將錨點保存](#anchors-and-anchor-persistence) 到 HoloLens 2 本機儲存體。
 * [移動控制器和手互動](#motion-controller-and-hand-interactions)，包括新的 HP 回音卡控制器。
 * 使用26個接點和聯合半徑輸入，以明確表述的手勢進行追蹤。
-* HoloLens 2 上的眼睛注視互動。
-* HoloLens 2 上尋找 (PV) 攝影機的相片/影片。
-* 混合實境擷取使用透過 PV 攝影機的第三種眼睛呈現。
-* 支援「播放」以使用全像「 [遠端處理」應用程式 HoloLens 2](#holographic-remoting-in-unity-editor-play-mode)，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
+* HoloLens 2 上的眼睛互動。
+* 在 HoloLens 2 上尋找相片/影片 (PV) 攝影機。
+* 混合現實捕捉使用透過 PV 攝影機的第三種視覺呈現。
+* 支援「 [Play」至 HoloLens 2 （含全像遠端應用程式](#holographic-remoting-in-unity-editor-play-mode)），讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
 * 透過 [MRTK OpenXR 提供者支援](openxr-getting-started.md#using-mrtk-with-openxr-support)，與 MRTK Unity 2.5.3 和更新版本相容。
 * 與 Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 或更新版本相容。
 *  (在 0.1.3) 中新增的功能，可支援從組建和部署的 Windows 獨立應用程式進行傳統型 [應用程式](#holographic-remoting-in-desktop-app) 全像開發。
+*  (在0.1.4 中新增) 透過 SpatialGraphNode 支援 HoloLens2 上的[QR 代碼追蹤](#qr-codes)
 
 ## <a name="holographic-remoting-setup"></a>全像遠端設定
 
@@ -45,7 +46,7 @@ ms.locfileid: "100496132"
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity 編輯器 play 模式的全像遠端功能
 
-在 Visual Studio 專案中建立 UWP Unity 專案，然後將它封裝並部署到 HoloLens 2 裝置，可能需要一些時間。 其中一個解決方法是啟用全像「全像」編輯器遠端功能，讓您透過網路直接使用「播放」模式來將 c # 腳本進行 HoloLens 2 裝置的偵測。 此案例可避免建立 UWP 套件並將其部署至遠端裝置的額外負荷。
+在 Visual Studio 專案中建立 UWP Unity 專案，然後將它封裝並部署到 HoloLens 2 裝置，可能需要一些時間。 其中一個解決方法是啟用全像「全像」編輯器遠端功能，讓您可以使用「播放」模式，將 c # 腳本直接透過您的網路上的 HoloLens 2 裝置來進行。 此案例可避免建立 UWP 套件並將其部署至遠端裝置的額外負荷。
 
 1. 遵循全像全像[遠端設定](#holographic-remoting-setup)的步驟
 2. 開啟 [ **編輯-> 專案設定**]，流覽至 **XR 外掛程式管理**，然後選取 [ **Windows Mixed Reality 功能集** ] 方塊：
@@ -205,13 +206,19 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 如需在 Unity 的 XR 輸入系統中使用 haptics 的相關資訊，請參閱 unity [Manual For UNITY XR 輸入-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)中的檔。
 
+## <a name="qr-codes"></a>QR 代碼
+
+HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每個代碼的真實世界位置建立座標系統。 您可以在我們的 [QR 代碼追蹤](../platform-capabilities-and-apis/qr-code-tracking.md) 檔中找到更多詳細資料。  使用 OpenXR 外掛程式時，請[ `SpatialGraphNodeId` 從 QR API](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference)抓取，並使用 `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API 來尋找 qr 代碼。
+
+如需參考，我們[在 GitHub 上有 QR 追蹤範例專案](https://github.com/yl-msft/QRTracking)，並有更詳細的[ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs)使用說明。
+
 ## <a name="whats-coming-soon"></a>即將推出的內容
 
 下列問題和遺漏的功能都是已知的混合現實 OpenXR 外掛程式 **版本 0.1.0**。 我們正在處理這些問題，並將在即將推出的版本中發行修正程式和新功能。
 
 * 尚不支援 **ARPlaneSubsystem** 。 HoloLens 2 也不支援 **ARPlaneManager**、 **ARRaycastManager** 和相關的 API，例如 **ARAnchorManager. AttachAnchor** 。
-* 目前尚未支援錨點，但不久的未來將會推出 **錨點**。
-* 目前尚不支援手上的 **網格** 追蹤、 **QR 代碼** 和 **XRMeshSubsystem** 。
+* 目前的「全像」遠端功能不支援 **錨定持續** 性，但不久的未來將會推出。
+* 目前尚不支援 **手形** 追蹤和 **XRMeshSubsystem** 。
 * **Azure 空間錨點** 支援即將在未來版本中推出。
 * **ARM64** 是 HoloLens 2 應用程式唯一支援的平臺。 **ARM** 平臺即將在未來版本中推出。
 
