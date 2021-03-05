@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: fad990fec79e73d5b5a1224907d1d8772685ffe8
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b67d21068a9d1e03e66b8c3f4121c11d6282790d
+ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780286"
+ms.lasthandoff: 03/04/2021
+ms.locfileid: "102126631"
 ---
 # <a name="holographic-remoting"></a>全像攝影遠端處理
 
@@ -73,7 +73,7 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 ### <a name="removing-hololens-2-specific-remoting-support"></a>移除 HoloLens 2 特定的遠端支援
 
-如果您因為 DotNetWinRT 介面卡的存在而遇到衝突或其他問題，請前往 [我們的其中一個說明資源](../../welcome-to-mrtk.md#getting-help)。
+如果您因為 DotNetWinRT 介面卡的存在而遇到衝突或其他問題，請前往 [我們的其中一個說明資源](../../index.md#getting-help)。
 
 ## <a name="xr-sdk-setup-instructions"></a>XR SDK 安裝指示
 
