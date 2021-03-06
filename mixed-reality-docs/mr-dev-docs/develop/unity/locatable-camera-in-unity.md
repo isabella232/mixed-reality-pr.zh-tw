@@ -6,12 +6,12 @@ ms.author: wguyman
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 相片、影片、hololens、攝影機、unity、定位、PVC、相片攝影機、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、網路攝影機、相片拍攝、影片捕獲
-ms.openlocfilehash: 8916b332774185e4453b514ca7b6916947bdcd81
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: ccf0c17a5f419341e64a87fb9ef04ef0a40c2a33
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226417"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236899"
 ---
 # <a name="locatable-camera-in-unity"></a>Unity 中的定位相機
 
@@ -26,7 +26,8 @@ ms.locfileid: "98226417"
 
 ## <a name="photo-capture"></a>相片捕獲
 
-**命名空間：** *UnityEngine. XR*<br>
+**命名空間：**  
+*UnityEngine. XR (Unity \~ 2018) UnityEngine (unity 2019 \~)*<br>
 **類型：** *PhotoCapture*
 
 *PhotoCapture* 型別可讓您以照片攝影機拍攝相片。 使用 *PhotoCapture* 拍攝相片的一般模式如下：
@@ -167,7 +168,7 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 
 若要與記憶體內框架中的原始位元組互動，請遵循上述相同的設定步驟，並 *OnPhotoModeStarted* 以將相片捕捉至 Texture2D。 差異是在 *OnCapturedPhotoToMemory* 中，您可以在其中取得原始位元組並與其互動。
 
-在此範例中，您將建立可透過 SetPixels 進一步處理或套用至材質的 *清單 <Color>* *( # B1*
+在此範例中，您將建立可透過 SetPixels 進一步處理或套用至材質的 *清單 <Color>* *()*
 
 ```cs
 void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptureFrame photoCaptureFrame)

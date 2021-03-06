@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 語音命令, 語音輸入
 ms.localizationpriority: high
-ms.openlocfilehash: bb238ee6ca4c657d7e2cb8e3c41f2cdebc7fc0de
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 65f989f6f587b236d7931c295e9375ad20a53218
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590390"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237205"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
 
@@ -49,8 +49,8 @@ ms.locfileid: "99590390"
 
 * 啟用指標
 * 啟用點選放置
-* 啟用週框方塊
-* 停用週框方塊
+* 啟用界限控制項
+* 停用界限控制項
 
 ![新增語音命令](images/mr-learning-base/base-09-section2-step1-2.png)
 
@@ -88,10 +88,10 @@ ms.locfileid: "99590390"
 
 展開 **元素 1** 並進行下列設定：
 
-* 在 [關鍵字] 欄位中輸入 **啟用週邊方塊**，以參考您在上一節中建立的啟用週邊方塊命令。
+* 在 [ **關鍵字** ] 欄位中，輸入 [ **啟用界限控制**]，以參考您在上一節中建立的 [啟用界限控制] 命令。
 * 按一下小型 **+** 圖示，以新增事件
 * 從 [階層] 視窗中，將 [RoverExplorer] 物件指派給 [無 (物件)] 欄位
-* 從 [沒有函式] 下拉式清單中，選取 [BoundingBox] >  [bool enabled] 以在觸發事件時更新此屬性值
+* 從 [**沒有** 函式] 下拉式清單中，選取 [ **BoundsControl**  >  **bool enabled** ]，以在觸發事件時更新此屬性值
 * 核取引數核取方塊，讓其呈現 **已核取** 狀態
 * 按一下小型 **+** 圖示，以新增另一個事件
 * 從 [階層] 視窗中，將 [RoverExplorer] 物件指派給 [無 (物件)] 欄位
@@ -102,10 +102,10 @@ ms.locfileid: "99590390"
 
 展開 **元素 2** 並進行下列設定：
 
-* 在 [關鍵字] 欄位中輸入 **停用週邊方塊**，以參考您在上一節中建立的停用週邊方塊命令
+* 在 [ **關鍵字** ] 欄位中，輸入 **停用界限控制項**，以參考您在上一節中建立的停用界限控制命令
 * 按一下小型 **+** 圖示，以新增事件
 * 從 [階層] 視窗中，將 [RoverExplorer] 物件指派給 [無 (物件)] 欄位
-* 從 [沒有函式] 下拉式清單中，選取 [BoundingBox] >  [bool enabled] 以在觸發事件時更新此屬性值
+* 從 [**沒有** 函式] 下拉式清單中，選取 [ **BoundsControl**  >  **bool enabled** ]，以在觸發事件時更新此屬性值
 * 確認 **未核取** 引數核取方塊
 * 按一下小型 **+** 圖示，以新增另一個事件
 * 從 [階層] 視窗中，將 [RoverExplorer] 物件指派給 [無 (物件)] 欄位

@@ -6,12 +6,12 @@ ms.author: wangmax
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: c8f82de2418b199220261fbae034acb3e5640362
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 622cdfebfe3f1356d0e8ced520cc355cc324d617
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101884049"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236929"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -31,6 +31,9 @@ ms.locfileid: "101884049"
 
 ## <a name="setup"></a>安裝程式
 
+> [!IMPORTANT]
+> 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
+
 1. 確定平臺已在組建設定中設定為 UWP。
 1. 透過 [混合現實功能工具](https://aka.ms/MRFeatureTool)取得場景理解套件。
 
@@ -41,6 +44,9 @@ ms.locfileid: "101884049"
 ### <a name="scene-understanding-sample-scene"></a>場景理解範例場景
 
 在 Unity 中，使用 Project Explorer 開啟場景檔案 `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` ，然後按下 [播放]！
+
+> [!IMPORTANT]
+> 使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
 
 場景會示範下列各項：
 
@@ -58,7 +64,7 @@ ms.locfileid: "101884049"
 
 ![場景瞭解階層中的位置](../images/spatial-awareness/MRTKHierarchy.png)
 
-![偵測器中的 mrkt 位置](../images/spatial-awareness/MRTKLocation.png)
+![偵測器中的 MRTK 位置](../images/spatial-awareness/MRTKLocation.png)
 
 這些選項可讓其中一個設定 `WindowsSceneUnderstandingObserver` 。
 
@@ -80,7 +86,7 @@ ms.locfileid: "101884049"
 
 以標準方式建立並部署至 HoloLens。 執行之後，您應該會有一些按鈕可以與功能一起播放。
 
-請注意，有一些 pit 正在對觀察者進行查詢。 提取要求的設定不正確會導致您的事件裝載中未包含預期的資料。 例如，如果一個 dosen't 要求四邊形，則不會出現任何遮蔽 mask 紋理。 如同明智的，如果觀察者未設定為要求網格，則不會出現任何世界網格。 `DemoSceneUnderstandingController`腳本會處理其中一些相依性，但並非全部。
+請注意，有一些 pit 正在對觀察者進行查詢。 提取要求的設定不正確會導致您的事件裝載中未包含預期的資料。 例如，如果其中一個不要求四邊形，則不會出現任何遮蔽 mask 紋理。 如同明智的，如果觀察者未設定為要求網格，則不會出現任何世界網格。 `DemoSceneUnderstandingController`腳本會處理其中一些相依性，但並非全部。
 
 您可以透過 [裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) 存取已儲存的場景檔案 `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` 。 這些場景檔案可以在編輯器中使用，方法是在偵測器中找到的觀察者設定檔中指定它們。
 

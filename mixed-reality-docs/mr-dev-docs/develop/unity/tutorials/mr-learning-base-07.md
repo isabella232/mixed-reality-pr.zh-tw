@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens、MRTK、混合現實工具組、UWP、物件互動、界限會控制
 ms.localizationpriority: high
-ms.openlocfilehash: 6a74512500446d949b8c2adcc10a84f6ac657435
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1ab7b3a334639be564717d77d3bbc478a25e8326
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759994"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237239"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -132,9 +132,6 @@ ms.locfileid: "101759994"
 
 > [!NOTE]
 > 界限控制項視覺效果是在執行時間建立的，因此，在您進入遊戲模式之前看不到。
-
-> [!NOTE]
->BoundsControl 元件會在執行時間自動新增 NearInteractionGrabbable 元件。 因此，我們不需要新增此元件，就能以追蹤的手部抓取框起來的物件。
 
 > [!NOTE]
 >物件操作工具 (腳本) 會自動加入條件約束管理員 (腳本) 

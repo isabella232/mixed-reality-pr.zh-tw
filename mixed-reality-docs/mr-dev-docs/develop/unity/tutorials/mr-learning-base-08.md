@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: e4104dfd0d7b27425217c8cb92fa36c807053081
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 08793622917ca977c51be56267d8710e5abb78e8
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590370"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237165"
 ---
 # <a name="8-using-eye-tracking"></a>8.使用眼球追蹤
 
@@ -61,35 +61,34 @@ ms.locfileid: "99590370"
 
 ## <a name="adding-eye-tracking-to-objects"></a>將眼球追蹤新增至物件
 
-在 [階層] 視窗中，展開 [RoverExplorer] > [按鈕] 物件，然後針對三個子按鈕物件都展開並選取 [SeeItSayItLabel] > [TextMeshPro] 物件：
+在 [階層] 視窗中，展開 [ **RoverExplorer**]  >  **按鈕**，然後選取三個子按鈕物件：
 
-![已選取 TextMeshPro 物件的 Unity](images/mr-learning-base/base-08-section4-step1-1.png)
+![已選取按鈕物件的 Unity](images/mr-learning-base/base-08-section4-step1-1.png)
 
-保持選取三個 TextMeshPro 物件，在 [偵測器] 視窗中，使用 [新增元件] 按鈕，將下列元件新增至所有選取的物件：
-
-* **Box Collider** 元件
-* **EyeTrackingTarget** 元件
+當所有三個按鈕物件仍為選取狀態時，在 [偵測器] 視窗中，使用 [ **新增元件** ] 按鈕將 **EyeTrackingTarget** 元件新增至所有選取的物件：
 
 ![已選取 TextMeshPro 物件並已新增元件的 Unity](images/mr-learning-base/base-08-section4-step1-2.png)
 
-在 [階層] 視窗中，選取 [提示] > [SeeItSayItLabel] > [TextMeshPro] 物件，然後設定 [EyeTrackingTarget] 元件，如下所示：
+在 [階層] 視窗中，展開 [ **RoverExplorer**  >  **按鈕**  >  **提示**  >  **SeeItSayItLabel**  >  **TextMeshPro**
+
+然後，在 [階層] 視窗中選取 [ **提示** ] 按鈕物件，並設定 **EyeTrackingTarget** 元件，如下所示：
 
 * 在 **On Look At Start ()** 事件區段中
   * 按一下小型 **+** 圖示，以新增另一個事件
-  * 將物件本身 (也就是相同的 **TextMeshPro** 物件) 新增至 [無 (物件)] 欄位
+  * 將  **TextMeshPro** 物件從 [ **提示** ] 按鈕指派給 [ **無 (物件)** ] 欄位
   * 從 [沒有函式] 下拉式清單中，選取 [TextMeshPro]  >  [float fontSize] 以在觸發事件時更新此屬性值
   * 將引數設定為 **0.06**，以將目前的字型大小增加 50% 成為 0.04
 * 在 **On Look Away ()** 事件區段中
   * 按一下小型 **+** 圖示，以新增另一個事件
-  * 將物件本身 (也就是相同的 **TextMeshPro** 物件) 新增至 [無 (物件)] 欄位
+  * 將  **TextMeshPro** 物件從 [ **提示** ] 按鈕指派給 [ **無 (物件)** ] 欄位
   * 從 [沒有函式] 下拉式清單中，選取 [TextMeshPro]  >  [float fontSize] 以在觸發事件時更新此屬性值
   * 將引數設定為 **0.04**，以將字型大小重設回 0.04
 
 ![已選取提示 TextMeshPro 物件並已設定 EyeTrackingTarget 元件的 Unity](images/mr-learning-base/base-08-section4-step1-3.png)
 
-針對 [Explode] > [SeeItSayItLabel] > [TextMeshPro] 物件，以及 [Reset] > [SeeItSayItLabel] > [TextMeshPro] 物件 **重複** 這個步驟。
+針對 [**分解**] 和 [**重設**] 按鈕物件 **重複** 此步驟，以設定其他按鈕的眼睛追蹤。
 
-如果您現在進入遊戲模式，然後在移動滑鼠時按住滑鼠右鍵，直到注視觸碰到其中一個標籤，您會看到字型大小增加 50%，並且在視線移開時重設回原始大小：
+如果您現在進入遊戲模式，然後在移動滑鼠時按住滑鼠右鍵，然後再移動滑鼠，直到看看看看看看它的其中一個按鈕時，您會看到文字字型大小增加50%，並在離開時重設回原始大小：
 
 ![具有注視點擊眼球追蹤目標 [分解] 按鈕標籤的 Unity 播放模式分割檢視](images/mr-learning-base/base-08-section4-step1-4.png)
 

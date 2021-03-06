@@ -6,12 +6,12 @@ ms.author: roliu
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0894eac3d1772d1d50c93b4ebe0da35301f7fea9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 9b4db83af7236c78978cf329ebdf96d49c50afa6
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781469"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102236999"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
 
@@ -67,7 +67,8 @@ ms.locfileid: "101781469"
     - [服務偵測器](#service-inspectors)
     - [深度緩衝區轉譯器](#depth-buffer-renderer)
   - [在執行時間變更設定檔](#changing-profiles-at-runtime)
-  - [在 MRTK 初始化之前交換設定檔](#swapping-profiles-prior-to-mrtk-initialization)
+    - [預先 MRTK 初始化設定檔參數](#pre-mrtk-initialization-profile-switch)
+    - [主動設定檔參數](#active-profile-switch)
   - [另請參閱](#see-also)
 
 這些設定檔的詳細資訊如下：
@@ -343,16 +344,15 @@ MRTK 也支援適用于 Windows Mixed Reality 和 OpenVR 的原生 SDK 控制器
 
 您可以在執行時間更新設定檔，而且在這種情況下，通常有兩個不同的案例和時間會有説明：
 
-1. 在啟動時，在 MRTK 初始化之前，根據裝置功能交換設定檔以啟用/停用不同的功能。 例如，如果在 VR 中執行的體驗沒有空間對應硬體，則啟用空間對應元件可能並不合理。
-1. 啟動之後，在 MRTK 初始化之後，請交換設定檔以變更特定功能的行為方式。 例如，在應用程式中，可能會有想要完全移除的手指標的特定子體驗。 **請注意** ，這種類型的交換目前無法運作，因為此問題： [https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/4289) 。
+1. **預先 MRTK 的初始化設定檔參數**：啟動時，在 MRTK 初始化且設定檔變成作用中之前，請取代尚未使用的設定檔，以根據裝置功能啟用/停用不同的功能。 例如，如果在 VR 中執行的體驗沒有空間對應硬體，則啟用空間對應元件可能並不合理。
+1. 使用中 **設定檔參數**：啟動後，在 MRTK 初始化且設定檔變成作用中之後，請將目前使用中的設定檔交換，以變更特定功能的行為方式。 例如，在應用程式中，可能會有想要完全移除的手指標的特定子體驗。
 
-## <a name="swapping-profiles-prior-to-mrtk-initialization"></a>在 MRTK 初始化之前交換設定檔
+### <a name="pre-mrtk-initialization-profile-switch"></a>預先 MRTK 初始化設定檔參數
 
-若要完成這項作業，您可以將 MonoBehaviour (範例附加在 MRTK 初始化之前執行的) ：
+若要完成這項作業，請將 MonoBehaviour (範例附加在 MRTK 初始化之前執行的) ， (也就是喚醒 () ) 。 請注意，腳本 (例如，呼叫 `SetProfileBeforeInitialization`) 必須比腳本早執行 `MixedRealityToolkit` ，這可以藉由設定 [腳本執行順序設定](https://docs.unity3d.com/Manual/class-MonoManager.html)來達成。
 
 ```csharp
 using Microsoft.MixedReality.Toolkit;
-using UnityEditor;
 using UnityEngine;
 
 /// <summary>
@@ -365,19 +365,36 @@ using UnityEngine;
 /// to that of MixedRealityToolkit.cs. See https://docs.unity3d.com/Manual/class-MonoManager.html
 /// for more information on script execution order.
 /// </remarks>
-public class ProfileSwapper : MonoBehaviour
+public class PreInitProfileSwapper : MonoBehaviour
 {
-    void Start()
+
+    [SerializeField]
+    private MixedRealityToolkitConfigurationProfile profileToUse = null;
+
+    private void Awake()
     {
         // Here you could choose any arbitrary MixedRealityToolkitConfigurationProfile (for example, you could
         // add some platform checking code here to determine which profile to load).
-        var profile = AssetDatabase.LoadAssetAtPath<MixedRealityToolkitConfigurationProfile>("Assets/MixedRealityToolkit.Generated/CustomProfiles/RuntimeSwapparoo.asset");
-        MixedRealityToolkit.Instance.ActiveProfile = profile;
+        MixedRealityToolkit.SetProfileBeforeInitialization(profileToUse);
     }
 }
 ```
 
-除了 "RuntimeSwapparoo" 之外，還可以有一組適用于特定平臺的任意設定檔 (例如，一個適用于 HoloLens 1、一個用於 VR、一個用於 HoloLens 2，依此類推) 。 您可以使用各種其他指標 (例如 [https://docs.unity3d.com/ScriptReference/SystemInfo.html](https://docs.unity3d.com/ScriptReference/SystemInfo.html) ，或是攝影機是否為不透明/透明) ，以找出要載入的設定檔。
+不是 "profileToUse"，您可以有一組適用于特定平臺的任意設定檔 (例如，一個適用于 HoloLens 1、一個用於 VR、一個適用于 HoloLens 2 等) 。 您可以使用各種其他指標 (例如 https://docs.unity3d.com/ScriptReference/SystemInfo.html ，或是攝影機是否為不透明/透明) ，以找出要載入的設定檔。
+
+### <a name="active-profile-switch"></a>主動設定檔參數
+
+這可以藉由將屬性設定 `MixedRealityToolkit.Instance.ActiveProfile` 為取代使用中設定檔的新設定檔來完成。
+
+```csharp
+MixedRealityToolkit.Instance.ActiveProfile = profileToUse;
+```
+
+注意：在執行時間期間進行設定時 `ActiveProfile` ，在所有服務的最後一個 LateUpdate () 之後，將會發生目前正在執行之服務的終結，以及與新設定檔相關聯之服務的具現化和初始化，將在所有服務的第一次更新 () 之前發生。
+
+在此程式期間，可能會發生明顯的應用程式 hesitation。 此外，任何優先順序高於腳本的腳本 `MixedRealityToolkit` 都可以先輸入更新，然後才能正確設定新的設定檔。 如需腳本優先順序的詳細資訊，請參閱 [腳本執行順序設定](https://docs.unity3d.com/Manual/class-MonoManager.html) 。
+
+在設定檔切換程式中，現有的 UI 相機將保持不變，以確保需要 canvas 的 Unity UI 元件在切換之後仍能運作。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
-ms.openlocfilehash: b2fdf1114e30afc3d34582ebb71dd24bb8bf324d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 58290169f1d6e9ccc4ad758d518e0be5009b007b
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759704"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237019"
 ---
 # <a name="introducing-mrtk-for-unity"></a>適用於 Unity 的 MRTK 簡介
 
@@ -22,7 +22,7 @@ ms.locfileid: "101759704"
 
 MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發行之後就已經存在。 沒有開發人員社群的努力，就不會達到今天的境界。 過去三年來，我們聽取了開發人員社群的意見反應，將最主要的考量納入，建置了 MRTK v2。  
 
-適用於 Unity 的 MRTK 是混合實境應用程式的開放原始碼跨平台開發套件。 安裝工具組最簡單的方式是使用新的混合現實功能工具應用程式。 遵循我們的 [安裝和使用方式指示](welcome-to-mr-feature-tool.md) ，然後在混合現實工具組分類中選取 **混合現實工具組基礎** 套件。 
+適用於 Unity 的 MRTK 是混合實境應用程式的開放原始碼跨平台開發套件。 安裝工具組最簡單的方式是使用新的混合現實功能工具應用程式。 遵循我們的 [安裝和使用方式指示](welcome-to-mr-feature-tool.md) ，然後在混合現實工具組分類中選取 **混合現實工具組基礎** 套件。
 
 適用于 Unity 的 MRTK 會提供跨平臺輸入系統、基礎元件，以及空間互動的常見組建區塊。 MRTK 第 2 版主要用於加速開發適用於 Microsoft HoloLens、Windows Mixed Reality 沈浸式 (VR) 頭戴裝置和 OpenVR 平台的應用程式。 此專案的目標是減少進入障礙、建立混合實境應用程式，以及回饋伴著我們成長的社群。
 
@@ -30,11 +30,11 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
 
-如需詳細的功能詳細資料，請參閱 [MRTK 的檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/) 。
+如需詳細的功能詳細資料，請參閱 [MRTK 的檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/) 。
 
 ## <a name="new-with-mrtk-v2"></a>MRTK v2 的新功能
 
-我們想要強調我們對這些平台工具的承諾。  事實上，我們使用 MRTK 第 2 版來開發收件匣體驗，例如全新安裝體驗 (OOBE) 和我們的混合實境提示應用程式。 您也可以預期新的 HoloLens 2 功能會先透過 MRTK 公開，因為我們認為這是在我們的平台上進行開發的最佳方式。 
+我們想要強調我們對這些平台工具的承諾。  事實上，我們使用 MRTK 第 2 版來開發收件匣體驗，例如全新安裝體驗 (OOBE) 和我們的混合實境提示應用程式。 您也可以預期新的 HoloLens 2 功能會先透過 MRTK 公開，因為我們認為這是在我們的平台上進行開發的最佳方式。
 
 ### <a name="modular"></a>模組化
 
@@ -53,5 +53,5 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 * [安裝工具](../install-the-tools.md)
 * [混合現實功能工具](welcome-to-mr-feature-tool.md)
 * [使用 MRTK for Unity 進行開發](unity-development-overview.md)
-* [MRTK-檔首頁](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/)
-* [從 HoloToolkit/MRTK 移植到 MRTK 第 2 版 (GitHub)](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/updates-deployment/hrtk-to-mrtk-porting-guide.md)
+* [MRTK-檔首頁](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)
+* [從 HoloToolkit/MRTK 移植至 MRTK 第2版](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)

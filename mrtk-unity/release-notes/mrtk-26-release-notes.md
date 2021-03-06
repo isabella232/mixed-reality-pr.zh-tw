@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 41d7b2fd1f1991608a2e89b4c0d3f561fdb01660
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: b2518ff5c714afa62bf1e3adb82297e54994ae1a
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230729"
+ms.locfileid: "102236939"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Microsoft Mixed Reality 工具組2.6.0 版本資訊
 
@@ -62,6 +62,7 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
 >
 > 這項功能需要場景理解套件，現在可透過「 [混合現實」功能工具](https://aka.ms/MRFeatureTool)取得。
+> 使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
 
   ![場景理解](images/SceneUnderstanding.gif)
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: d99e556dbfd1593a66b1cd90960c8fbaffdddee1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 11d25a13e679308ef7f0f4302dd7df29e413a435
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760004"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237051"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -82,6 +82,7 @@ ms.locfileid: "101760004"
 在 [階層] 視窗中選取 [RoverExplorer] > **RoverAssembly** 物件，然後在 [偵測器] 視窗中使用 [新增元件] 按鈕來新增 **Tap To Place (指令碼)** 元件，並進行以下設定：
 
 * 確認 **SolverHandler** 元件的 [追蹤目標類型] 設定為 [頭部]
+* 取消核取 [ **使用預設介面正常位移** ]，並確定 [ **表面一般位移** ] 設定為0。
 * 勾選 [保持垂直方向] 核取方塊
 * 從 [磁性表面]  >  [元素 0] 下拉式清單中，取消選取 [空間感知] 以外的所有選項
 

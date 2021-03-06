@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 3a1914fc6bc35b2ec4fb7364818a21522e01c6e1
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: e80c5411c7d180e0d78e031599455235dabaceb7
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126601"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237139"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>適用於 VR 和 Windows Mixed Reality 的 Unity 開發
 
@@ -29,7 +29,7 @@ ms.locfileid: "102126601"
 
 ### <a name="1-getting-started"></a>1.開始使用
 
-您需要針對 Windows Mixed Reality 和 VR 開發手動變更一小組 Unity 設定。 這些設定分成兩個類別：每個專案和每個場景。 在本節結束時，您將具有工具和專案設定，可以開始建立自己的應用程式！
+您需要針對 Windows Mixed Reality 和 VR 開發以手動方式進行變更的一小部分 Unity 設定。 這些設定分成兩個類別：每個專案和每個場景。 在本節結束時，您將具有工具和專案設定，可以開始建立自己的應用程式！
 
 |  Checkpoint  |  結果  |
 | --- | --- |

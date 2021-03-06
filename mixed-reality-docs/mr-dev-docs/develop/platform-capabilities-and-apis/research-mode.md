@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/31/2020
 ms.topic: article
 keywords: 研究模式、cv、rs4、電腦視覺、研究、HoloLens、HoloLens 2
-ms.openlocfilehash: c8e626969f87eda8b686ba759a167a2bf48e3277
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6737f9b668b73258e65f8d00e85dcd19c28ddfb5
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583138"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237129"
 ---
 # <a name="hololens-research-mode"></a>HoloLens 研究模式
 
@@ -24,7 +24,7 @@ ms.locfileid: "98583138"
 
 * **兩個版本的 IR 反射率串流** -由 HoloLens 用來計算深度。 這些影像會由紅外線發亮，並不受環境可見的光線影響。
 
-如果您是使用 HoloLens 2，您也可以存取下列其他輸入：
+如果您使用的是 HoloLens 2，您也可以存取下列其他輸入：
 
 * **加速** 計–由系統用來判斷沿著 X、Y 和 Z 軸和重力的線性加速。
 * **回轉** –系統用來判斷旋轉。
@@ -38,13 +38,13 @@ ms.locfileid: "98583138"
 
 ## <a name="usage"></a>使用方式
 
-研究模式是專為學術和產業研究人員所設計，可在電腦視覺和機器人的領域中探索新構想。  它不適用於企業環境中部署的應用程式，或可透過 Microsoft Store 或其他散發通道使用的應用程式。
+研究模式是專為學術與產業研究人員所設計，可探索電腦視覺和機器人領域中的新想法。  它不適用於企業環境中部署的應用程式，或可透過 Microsoft Store 或其他散發通道使用的應用程式。
 
 此外，Microsoft 不保證未來的硬體或作業系統更新將會支援研究模式或同等功能。 不過，請勿讓您使用它來開發和測試新的想法！
 
 ## <a name="security-and-performance"></a>安全性和效能
 
-即使使用研究模式功能的應用程式不在執行中，啟用 Research 模式仍會使用比使用 HoloLens 2 更高的電池電力。  啟用此模式也會降低裝置的整體安全性，因為應用程式可能會誤用感應器資料。  您可以在 [HoloLens 安全性常見問題](/hololens/hololens-faq-security)中找到裝置安全性的詳細資訊。  
+即使使用研究模式功能的應用程式未執行，在正常情況下，啟用 Research 模式仍會使用較高的電池電力。  啟用此模式也會降低裝置的整體安全性，因為應用程式可能會誤用感應器資料。  您可以在 [HoloLens 安全性常見問題](/hololens/hololens-faq-security)中找到裝置安全性的詳細資訊。  
 
 ## <a name="device-support"></a>裝置支援
 <table>
@@ -94,7 +94,7 @@ ms.locfileid: "98583138"
 
 啟用開發人員功能之後，請連線 [到裝置入口網站](/windows/uwp/debug-test-perf/device-portal-hololens) 以啟用研究模式功能：
 
-* 移至 **裝置入口網站** 中的 **系統 > 研究模式**。
+* 移至 **裝置入口網站** 中的 [**系統 > 研究模式]** 。
 * 選取 [ **允許存取感應器串流**]。
 * 從頁面頂端的 [ **電源** ] 功能表項目目重新開機裝置。
 
@@ -104,11 +104,11 @@ ms.locfileid: "98583138"
 *HoloLens 裝置入口網站中的研究強制回應視窗*
 
 > [!IMPORTANT]
-> 從組建19041.1356 開始提供 HoloLens 2 的研究模式。 如果您需要在先前的組建中存取，請註冊我們的 [Insider preview](/hololens/hololens-insider) 計畫。
+> 從組建19041.1364 開始，可取得 HoloLens 2 的研究模式。 如果您需要在先前的組建中存取，請註冊我們的 [Insider preview](/hololens/hololens-insider) 計畫。 您可以在 [研究模式 GitHub 存放庫](https://github.com/microsoft/HoloLens2ForCV)中找到更多詳細資料。
 
 ### <a name="using-sensor-data-in-your-apps"></a>在您的應用程式中使用感應器資料
 
-應用程式可以使用 [媒體基礎](/windows/win32/medfound/microsoft-media-foundation-sdk) 存取相片和攝影機串流的相同方式來存取感應器串流資料。 
+應用程式可存取感應器串流資料的方式，與 [媒體基礎](/windows/win32/medfound/microsoft-media-foundation-sdk) 存取相片和攝影機串流的方式相同。 
 
 所有適用于 HoloLens 開發的 Api 也都可在研究模式中取得。 尤其是，應用程式會準確知道 HoloLens 在每個感應器畫面格捕獲時間的6DoF 空間中。
 

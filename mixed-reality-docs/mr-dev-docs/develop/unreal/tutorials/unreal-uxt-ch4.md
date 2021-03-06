@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: c26f5579aad29624c9a8f374caa4799423d0637e
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
+ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98669471"
+ms.lasthandoff: 03/05/2021
+ms.locfileid: "102237149"
 ---
 # <a name="4-making-your-scene-interactive"></a>4.使場景成為互動式場景
 
@@ -69,7 +69,7 @@ ms.locfileid: "98669471"
 
 ![繁衍 UXT 手部互動動作項目](images/unreal-uxt/4-spawnactor.PNG)
 
-這兩個 Uxt 手部互動動作項目都需要擁有者和初始轉換位置。 初始轉換在此案例中並不重要，因為 UX 工具會在手動互動動作項目可見時立即使其跳到虛擬手部。 不過，`SpawnActor` 函式需要轉換輸入來避免編譯器錯誤，因此您將使用預設值。
+這兩個 Uxt 手部互動動作項目都需要擁有者和初始轉換位置。 在此情況下，初始轉換並不重要，因為 UX 工具會讓「手互動」動作專案在看到時立即跳到虛擬手。 不過，`SpawnActor` 函式需要轉換輸入來避免編譯器錯誤，因此您將使用預設值。
 
 1. 從其中一個 [繁衍轉換] 釘選拖曳並放開釘選，以放置新的節點。
     * 搜尋 [進行轉換] 節點，然後將 [傳回值] 拖曳至另一手的 [繁衍轉換]，讓兩個 **SpawnActor** 節點連線。
