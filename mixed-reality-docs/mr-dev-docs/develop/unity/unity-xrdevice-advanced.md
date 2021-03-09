@@ -3,63 +3,39 @@ title: Unity 中的混合實境原生物件
 description: 瞭解如何使用 XR 命名空間，取得 Unity 中基礎全像原生物件的存取權。
 author: vladkol
 ms.author: vladkol
-ms.date: 05/20/2018
+ms.date: 02/25/2021
 ms.topic: article
 keywords: unity、mixed reality、native、xrdevice、spatialcoordinatesystem、holographicframe、holographiccamera、ispatialcoordinatesystem、iholographicframe、iholographiccamera、getnativeptr、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 64e83e04e56b1296d5115353eed68baadeba193c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
+ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583566"
+ms.lasthandoff: 03/09/2021
+ms.locfileid: "102475069"
 ---
-# <a name="mixed-reality-native-objects-in-unity"></a>Unity 中的混合實境原生物件
+# <a name="mixed-reality-native-interop-in-unity"></a>Unity 中的混合現實原生 interop
 
 每個混合現實應用程式都會在開始接收攝影機資料和轉譯畫面之前 [取得 HolographicSpace](../native/getting-a-holographicspace.md) 。 在 Unity 中，引擎會為您處理這些步驟，並在其轉譯迴圈中處理全像攝影物件和內部更新。
 
-不過，在 advanced 案例中，您可能需要取得基礎原生物件的存取權，例如 <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 和目前的 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>。 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.html" target="_blank">UnityEngine. XR. XRDevice</a> 是提供這些原生物件存取權的物件。
+不過，在 advanced 案例中，您可能需要取得基礎原生物件的存取權，例如 <a href="/uwp/api/windows.graphics.holographic.holographiccamera" target="_blank">HolographicCamera</a> 和目前的 <a href="/uwp/api/windows.graphics.holographic.holographicframe" target="_blank">HolographicFrame</a>。
 
-## <a name="xrdevice"></a>XRDevice 
-
-**命名空間：** *UnityEngine. XR*<br>
-**類型：** *XRDevice*
-
-*XRDevice* 型別可讓您使用 <a href="https://docs.unity3d.com/ScriptReference/XR.XRDevice.GetNativePtr.html" target="_blank">GetNativePtr</a>方法來存取基礎原生物件。 不同平臺之間的 GetNativePtr 傳回會有所不同。 在通用 Windows 平臺上，以 Windows Mixed Reality XR SDK 為目標時，XRDevice. GetNativePtr 會將指標 (IntPtr) 傳回到下列結構： 
-
-```cs
-using System;
-using System.Runtime.InteropServices;
-
-[StructLayout(LayoutKind.Sequential)]
-struct HolographicFrameNativeData
-{
-    public uint VersionNumber;
-    public uint MaxNumberOfCameras;
-    public IntPtr ISpatialCoordinateSystemPtr; // Windows::Perception::Spatial::ISpatialCoordinateSystem
-    public IntPtr IHolographicFramePtr; // Windows::Graphics::Holographic::IHolographicFrame 
-    public IntPtr IHolographicCameraPtr; // // Windows::Graphics::Holographic::IHolographicCamera
-}
-```
-您可以使用 PtrToStructure 方法將它轉換成 HolographicFrameNativeData：
-```cs
-var nativePtr = UnityEngine.XR.XRDevice.GetNativePtr();
-HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativePtr);
-```
-***IHolographicCameraPtr** 是已封送處理為 Unmanagedtype.lpwstr 的 IntPtr 陣列，其長度等於 MaxNumberOfCameras* 
+[!INCLUDE[](includes/unity-native-ptrs.md)]
 
 ### <a name="unmarshaling-native-pointers"></a>封送原生指標
+
+`IntPtr`從上述其中一個方法取得之後 (不需要 MRTK) ，請使用下列程式碼片段將其封送處理至 managed 物件。
 
 如果您使用的是 [MixedReality DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)，您可以使用方法，從原生指標建立 managed 物件 `FromNativePtr()` ：
 
 ```cs
-var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(hfd.ISpatialCoordinateSystemPtr);
+var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(spatialCoordinateSystemPtr);
 ```
 
 否則，請使用 `Marshal.GetObjectForIUnknown()` 並轉換成您想要的類型：
 
 ```cs
 #if ENABLE_WINMD_SUPPORT
-var worldOrigin = (Windows.Perception.Spatial.SpatialCoordinateSystem)Marshal.GetObjectForIUnknown(hfd.ISpatialCoordinateSystemPtr);
+var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Windows.Perception.Spatial.SpatialCoordinateSystem;
 #endif
 ```
 
@@ -73,7 +49,7 @@ namespace NumericsConversion
     public static class NumericsConversionExtensions
     {
         public static UnityEngine.Vector3 ToUnity(this System.Numerics.Vector3 v) => new UnityEngine.Vector3(v.X, v.Y, -v.Z);
-        public static UnityEngine.Quaternion ToUnity(this System.Numerics.Quaternion q) => new UnityEngine.Quaternion(-q.X, -q.Y, q.Z, q.W);
+        public static UnityEngine.Quaternion ToUnity(this System.Numerics.Quaternion q) => new UnityEngine.Quaternion(q.X, q.Y, -q.Z, -q.W);
         public static UnityEngine.Matrix4x4 ToUnity(this System.Numerics.Matrix4x4 m) => new UnityEngine.Matrix4x4(
             new Vector4( m.M11,  m.M12, -m.M13,  m.M14),
             new Vector4( m.M21,  m.M22, -m.M23,  m.M24),
@@ -81,7 +57,7 @@ namespace NumericsConversion
             new Vector4( m.M41,  m.M42, -m.M43,  m.M44));
 
         public static System.Numerics.Vector3 ToSystem(this UnityEngine.Vector3 v) => new System.Numerics.Vector3(v.x, v.y, -v.z);
-        public static System.Numerics.Quaternion ToSystem(this UnityEngine.Quaternion q) => new System.Numerics.Quaternion(-q.x, -q.y, q.z, q.w);
+        public static System.Numerics.Quaternion ToSystem(this UnityEngine.Quaternion q) => new System.Numerics.Quaternion(q.x, q.y, -q.z, -q.w);
         public static System.Numerics.Matrix4x4 ToSystem(this UnityEngine.Matrix4x4 m) => new System.Numerics.Matrix4x4(
             m.m00,  m.m10, -m.m20,  m.m30,
             m.m01,  m.m11, -m.m21,  m.m31,
@@ -96,9 +72,9 @@ namespace NumericsConversion
 > [!NOTE]
 > 變更透過 HolographicFrameNativeData 接收之原生物件的狀態，可能會導致無法預期的行為和轉譯成品，特別是當 Unity 也有相同狀態的原因。  例如，您不應該呼叫 HolographicFrame UpdateCurrentPrediction，否則 Unity 以該畫面格呈現的姿勢預測將會與 Windows 預期的姿勢不同步，這 [會減少全](../platform-capabilities-and-apis/hologram-stability.md)像全像的情況。
 
-如果您需要存取原生介面以進行轉譯或偵錯工具，請使用原生外掛程式或 c # 程式碼中 HolographicFrameNativeData 的資料。 
+如果您需要存取原生介面以進行轉譯或偵錯工具，請使用原生外掛程式或 c # 程式碼中 HolographicFrameNativeData 的資料。
 
-以下範例示範如何使用 HolographicFrameNativeData 取得目前框架的 photon 時間預測。 
+以下範例示範如何使用 HolographicFrameNativeData，以使用 XR SDK 延伸模組取得目前框架的 photon 時間預測。
 
 ```cs
 using System;
@@ -106,27 +82,20 @@ using System.Runtime.InteropServices;
 
 public static bool GetCurrentFrameDateTime(out DateTime frameDateTime)
 {
-#if (!UNITY_EDITOR && UNITY_WSA) || ENABLE_WINMD_SUPPORT
-    IntPtr nativeStruct = UnityEngine.XR.XRDevice.GetNativePtr();
+#if ENABLE_WINMD_SUPPORT
+    IntPtr holographicFramePtr = UnityEngine.XR.WindowsMR.WindowsMREnvironment.CurrentHolographicRenderFrame;
 
-    if (nativeStruct != IntPtr.Zero)
+    if (holographicFramePtr != IntPtr.Zero)
     {
-        HolographicFrameNativeData hfd = Marshal.PtrToStructure<HolographicFrameNativeData>(nativeStruct);
-
-        if (hfd.IHolographicFramePtr != IntPtr.Zero)
-        {
-            var holographicFrame = (Windows.Graphics.Holographic.HolographicFrame)Marshal.GetObjectForIUnknown(hfd.IHolographicFramePtr);
-            frameDateTime = holographicFrame.CurrentPrediction.Timestamp.TargetTime.DateTime;
-            return true;
-        }
+        var holographicFrame = Marshal.GetObjectForIUnknown(holographicFramePtr) as Windows.Graphics.Holographic.HolographicFrame;
+        frameDateTime = holographicFrame.CurrentPrediction.Timestamp.TargetTime.DateTime;
+        return true;
     }
-
 #endif
 
     frameDateTime = DateTime.MinValue;
     return false;
 }
-
 ```
 
 ## <a name="see-also"></a>另請參閱
