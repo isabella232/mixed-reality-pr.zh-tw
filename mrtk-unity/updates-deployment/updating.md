@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: fcd1b644eca2f81d84f15ec852ea70387f33062b
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 27a790f0d711112122075bfff6eeed4b37c9ff4f
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883212"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547247"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
 
@@ -21,6 +21,20 @@ ms.locfileid: "101883212"
 - [2.1.0 至2.2。0](#updating-210-to-220)
 - [2.0.0 至2.1。0](#updating-200-to-210)
 - [RC2 至2.0。0](#updating-rc2-to-200)
+
+## <a name="finding-the-current-version"></a>尋找目前的版本 
+
+請遵循下列指示，找出您目前所使用的 MRTK 版本：
+
+1. 在 Unity 中開啟您的 MRTK 專案
+2. 在您的 [專案] 視窗中，流覽至 "MixedRealityToolkit" 資料夾
+3. 開啟名為「版本」的檔案
+
+如果上述的檔案和資料夾不存在，您就會使用較新版本的 MRTK。 在此情況下，請嘗試下列動作：
+
+1. 流覽至「混合現實工具組基礎」資料夾
+2. 按一下 [package.js開啟] 以查看 Unity 中的預覽，或使用文字編輯器來開啟該預覽版
+3. 尋找含有 "version：" 這個字的行 
 
 ## <a name="upgrading-to-a-new-version-of-mrtk"></a>升級至新版本的 MRTK
 

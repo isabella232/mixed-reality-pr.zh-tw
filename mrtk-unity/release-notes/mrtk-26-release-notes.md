@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b2518ff5c714afa62bf1e3adb82297e54994ae1a
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: 34fc73589bb8bb2c34e4d4b6611ba535f2551f17
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236939"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547217"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Microsoft Mixed Reality 工具組2.6.0 版本資訊
 
@@ -33,6 +33,10 @@ ms.locfileid: "102236939"
 > Unity 中的 OpenXR 僅支援 Unity 2020.2 和更新版本。
 >
 > 目前它也只支援 x64 和 ARM64 組建。
+
+### <a name="asset-swap-utility"></a>資產交換公用程式
+
+使用新的 [資產交換公用程式](../features/tools/asset-swap-utility.md)，在 Unity 場景中交換多個資產。
 
 ### <a name="hp-motion-controllers-now-supported-with-mrtk"></a>MRTK 現在支援 HP 動作控制器
 

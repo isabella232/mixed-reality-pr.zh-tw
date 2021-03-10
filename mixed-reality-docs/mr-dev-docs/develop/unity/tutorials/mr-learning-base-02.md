@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 847f6bfa0cc2906708effb29df655cae8b1dbbfe
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ed644bf7d91c27e9583411d3b46f2786a3c5feca
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101760034"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547257"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -149,7 +149,7 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 
 在 Unity 功能表中，選取 [編輯] >  [專案設定...] 來開啟 [專案設定] 視窗：
 
-在 [專案設定] 視窗中，選取 [ **Player**  >  **XR 設定**] 並選取 [**支援虛擬**] 核取方塊，然後按一下 **+** 圖示，然後選取 [windows mixed reality] 以新增 windows mixed reality SDK：
+在 [專案設定] 視窗中，選取 [ **Player**  >  **XR 設定**] 並勾選 [**支援虛擬實境**] 核取方塊，然後按一下 **+** 圖示，然後選取 [windows mixed reality] 以新增 windows mixed reality SDK：
 
 ![已選取新增 [Windows Mixed Reality] SDK 的 Unity XR 設定](images/mr-learning-base/base-02-section5-step2-4.png)
 

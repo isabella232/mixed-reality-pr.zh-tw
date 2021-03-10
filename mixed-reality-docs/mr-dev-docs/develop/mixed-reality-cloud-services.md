@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: abd1515b587842dbccb1747b606059e190559480
-ms.sourcegitcommit: 07d6a5c19c9f6ffd0316bce5629ab0e185e1d542
+ms.openlocfilehash: 0c123c2bca412589086799c41b183eb6f9364d0c
+ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/08/2021
-ms.locfileid: "99973068"
+ms.lasthandoff: 03/10/2021
+ms.locfileid: "102547227"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
@@ -27,7 +27,7 @@ ms.locfileid: "99973068"
 
 ### <a name="azure-remote-rendering"></a>Azure 遠端轉譯
 
-[Azure 遠端轉譯](https://docs.microsoft.com/azure/remote-rendering/)（或 ARR）是一項服務，可讓您即時轉譯高度複雜的3d 模型，並將其串流至裝置。 ARR 目前處於公開預覽階段，可新增至以 HoloLens 2 或 Windows 桌上型電腦為目標的 Unity 或原生 C++ 專案。
+[Azure 遠端](https://docs.microsoft.com/azure/remote-rendering/)轉譯（或 ARR）是一項服務，可讓您即時轉譯高度複雜的3d 模型，並將其串流至裝置。 ARR 目前處於公開預覽階段，可新增至以 HoloLens 2 或 Windows 桌上型電腦為目標的 Unity 或原生 C++ 專案。
 
 <br>
 
@@ -47,7 +47,7 @@ ARR 的連帶好處是，您可在應用程式中使用的使用者介面類型�
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure 空間錨點](https://docs.microsoft.com /azure/spatial-anchors/)是一種跨平臺服務，可讓您建立空間感知的混合現實應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 
+[Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors/)是一種跨平臺服務，可讓您建立空間感知的混合現實應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 
 
 Azure 空間錨點是唯一量身打造的解決方案，適用于混合現實中的常見使用案例，包括：
 * **導向**：可以連接兩個或更多空間錨點，以建立使用者必須與其互動的工作清單或興趣點。
