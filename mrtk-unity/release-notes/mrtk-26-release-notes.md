@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 34fc73589bb8bb2c34e4d4b6611ba535f2551f17
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: 8a97cef76fb1d93ab616888c2474904d7d14bb13
+ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547217"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103022860"
 ---
 # <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Microsoft Mixed Reality 工具組2.6.0 版本資訊
 
@@ -84,6 +84,13 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 這項功能現在已準備好搭配主線 MRTK 使用。
   ![手動指導範例](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+### <a name="dialog-controls-graduated-from-experimental"></a>從實驗性分級的對話方塊控制項
+
+對話方塊控制項現在已準備好搭配主線 MRTK 使用。
+
+  ![對話方塊控制項](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+
 
 ### <a name="pulse-shader-graduated-from-experimental"></a>從實驗性分級的脈衝著色器 
 

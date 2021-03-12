@@ -6,18 +6,18 @@ ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、解析器、
-ms.openlocfilehash: dfc97c213aa5a672acf40cf5a851dd1e83fd5e36
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a9ca6d025fa4261bb9b5398cb4c7b82a5f6ff8f0
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779460"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770340"
 ---
 # <a name="solvers"></a>解算器
 
 ![規劃主](../../images/solver/MRTK_Solver_Main.png)
 
-解析器是一種元件，可根據預先定義的演算法，協助計算物件的位置 & 方向。 例如，可能會將物件放在使用者的注視 raycast 目前點擊的表面上。  
+解析器是一種元件，可根據預先定義的演算法，協助計算物件的位置 & 方向。 例如，可能會將物件放在使用者的注視 raycast 目前點擊的表面上。
 
 此外，「規劃求解」系統會以決定性的方式定義這些轉換計算的作業順序，因為沒有可靠的方式可以指定元件的更新順序給 Unity。
 
@@ -35,9 +35,11 @@ ms.locfileid: "101779460"
 * [`Orbital`](#orbital)：鎖定至指定的位置，以及從參考的物件位移。
 * [`ConstantViewSize`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.ConstantViewSize)：調整以維持相對於參考物件之視圖的固定大小。
 * [`RadialView`](#radialview)：將物件保留在被參考物件轉換的視圖錐形內。
-* [`SurfaceMagnetism`](#surfacemagnetism)：將光線轉換成世界中的表面，並將物件對齊該介面。
-* [`Momentum`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Momentum)：套用加速度/速度/摩擦，以模擬其他解析器/元件正在移動之物件的動力和 springiness。
+* [`Follow`](#follow)：將物件保留在所參考物件的一組使用者定義界限內。
 * [`InBetween`](#inbetween)：將物件保留在兩個追蹤的物件之間。
+* [`SurfaceMagnetism`](#surfacemagnetism)：將光線轉換成世界中的表面，並將物件對齊該介面。
+* [`DirectionalIndicator`](#directionalindicator)：決定物件的位置和方向作為方向指標。 從 SolverHandler 追蹤目標的參考點來看，此指標會指向提供的 DirectionalTarget。
+* [`Momentum`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Momentum)：套用加速度/速度/摩擦，以模擬其他解析器/元件正在移動之物件的動力和 springiness。
 * [`HandConstraint`](#hand-menu-with-handconstraint-and-handconstraintpalmup)：限制物件，使其在不與 GameObject 的區域中的實際操作。 適用于手動限制的互動式內容，例如功能表等。這項規劃的目標是要與 [IMixedRealityHand](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) 搭配使用，但也可以搭配 [IMixedRealityController](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityController)使用。
 * [`HandConstraintPalmUp`](#hand-menu-with-handconstraint-and-handconstraintpalmup)：衍生自 HandConstraint，但會包含邏輯，以測試 palm 是否會在啟用前對使用者進行測試。 此規劃求解只適用于 [IMixedRealityHand](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) 控制器，而其他控制器類型則此規劃求解的行為就像其基類一樣。
 
@@ -61,8 +63,8 @@ ms.locfileid: "101779460"
 > [!NOTE]
 > 針對 *ControllerRay* 和 *HandJoint* 類型，規劃求解處理常式會先嘗試提供左方控制器/手的轉換，如果前者無法使用，則為右邊，除非 `TrackedHandedness` 屬性另有指定。
 
-![規劃求解追蹤的物件](../../images/solver/TrackedObjectType-Example.gif)  
-*與每個 TrackedTargetType 相關聯之各種屬性的範例*
+![](../../images/solver/TrackedObjectType-Example.gif) 
+*與每個 TrackedTargetType 相關聯之各種屬性的* 規劃求解追蹤物件範例
 
 > [!IMPORTANT]
 > 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量* ，亦即 綠色向量為向上、藍色向量向前) 。
@@ -144,6 +146,18 @@ public class InFront : Solver
 ![RadialView 範例](../../images/solver/RadialViewExample.png)  
 *RadialView 範例*
 
+### <a name="follow"></a>追隨
+
+類別會將專案放 [`Follow`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.Follow) 在相對於其本機向前軸之追蹤目標的前方。 元素可能會受到鬆散限制 (也稱為 加上標籤-沿著) ，使其不會在追蹤的目標超過使用者定義界限時進行追蹤。
+
+它的運作方式類似于 RadialView 的規劃求解，還有額外的控制項可管理 *最大水準 & 垂直視圖度數*，以及改變物件 *方向* 的機制。
+
+![遵循屬性](../../images/solver/FollowExample.png)  
+*遵循屬性*
+
+![遵循範例場景](../../images/solver/FollowExampleScene.gif)  
+*遵循範例場景 (資產/MRTK/範例/示範/解析器/場景/FollowSolverExample unity)*
+
 ### <a name="inbetween"></a>Receivebegindoc
 
 [`InBetween`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.InBetween)類別會在兩個轉換之間保留附加的 GameObject。 這兩個轉換端點是由 GameObject 本身的 [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) *追蹤目標型別* 和 [`InBetween`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.InBetween) 元件 *第二個追蹤的目標型別* 屬性所定義。 一般而言，這兩種類型都會設定為， [`CustomOverride`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedObjectType.CustomOverride) 而產生 `SolverHandler.TransformOverride` 和 `InBetween.SecondTransformOverride` 值會設定為兩個追蹤的端點。
@@ -185,27 +199,20 @@ public class InFront : Solver
 
 最後，raycasts 會忽略比屬性設定更遠的表面 `MaxRaycastDistance` `SurfaceMagnetism` 。
 
-### <a name="hand-menu-with-handconstraint-and-handconstraintpalmup"></a>具有 HandConstraint 和 HandConstraintPalmUp 的手功能表
+### <a name="directionalindicator"></a>DirectionalIndicator
 
-![手形功能表 UX 範例](../../images/solver/MRTK_UX_HandMenu.png)
+[`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.DirectionalIndicator)類別是沿著標記的元件，它會將自己導向至空間中所需的時間點方向。
 
-此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 安全區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
-
-如需使用手形條件約束規劃求解來建立快顯功能表的範例，[請參閱手形功能表頁](../hand-menu.md)。
-
-## <a name="experimental-solvers"></a>實驗性解析器
-
-這些解析器可在 MRTK 中使用，但目前為實驗性。 其 Api 和功能可能會變更。 此外，其穩定性和品質可能會比標準功能還低。
-
-### <a name="directional-indicator"></a>方向指標
-
-[`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Experimental.Utilities.DirectionalIndicator)類別是沿著標記的元件，它會將自己導向至空間中所需的時間點方向。
-
-當的 *追蹤目標型* 別設定為時，最常使用 [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) [`Head`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedObjectType.Head) 。 以這種方式，包含規劃求解的 UX 元件 [`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Experimental.Utilities.DirectionalIndicator)  會引導使用者查看空間中所需的時間點。
+當的 *追蹤目標型* 別設定為時，最常使用 [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) [`Head`](xref:Microsoft.MixedReality.Toolkit.Utilities.TrackedObjectType.Head) 。 以這種方式，包含規劃求解的 UX 元件 [`DirectionalIndicator`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.DirectionalIndicator)  會引導使用者查看空間中所需的時間點。
 
 需要的空間點是透過 *方向性目標* 屬性來決定。
 
 如果使用者可以看到方向性目標，或在中設定任何參考的畫面格 [`SolverHandler`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.SolverHandler) ，則此規劃求解將會停用 [`Renderer`](https://docs.unity3d.com/ScriptReference/Renderer.html) 其下的所有元件。 如果無法查看，則所有專案都會在指標上啟用。
+
+指標的大小會縮小使用者在其 FOV 中取得 *方向目標* 的更近距離。
+
+* *最小指標尺規* -指標物件的最小縮放比例
+* *最大指標刻度* -指標物件的最大刻度
 
 * *可見度比例因數* -乘數，以增加或減少決定 *方向性目標* 點是否可見的 FOV
 * *View Offset* -從參考框架的觀點來看 (例如 攝影機可能) ，此屬性會定義在指標方向中，物件是從區中央開始的距離。
@@ -213,9 +220,16 @@ public class InFront : Solver
 ![方向指標屬性](../../images/solver/DirectionalIndicatorExample.png)  
 *方向指標屬性*
 
-![方向指標範例場景](../../images/solver/DirectionalIndicatorExampleScene.gif)
+![方向指標範例場景](../../images/solver/DirectionalIndicatorExampleScene.gif)  
+*方向指標範例場景 (資產/MRTK/範例/示範/解析器/場景/DirectionalIndicatorSolverExample unity)*
 
-*方向指標範例場景 (資產/MRTK/範例/實驗/解析器/DirectionalIndicatorExample unity)*
+### <a name="hand-menu-with-handconstraint-and-handconstraintpalmup"></a>具有 HandConstraint 和 HandConstraintPalmUp 的手功能表
+
+![手形功能表 UX 範例](../../images/solver/MRTK_UX_HandMenu.png)
+
+此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 安全區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
+
+如需使用手形條件約束規劃求解來建立快顯功能表的範例，[請參閱手形功能表頁](../hand-menu.md)。
 
 ## <a name="see-also"></a>另請參閱
 

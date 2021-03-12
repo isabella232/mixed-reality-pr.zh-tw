@@ -7,12 +7,12 @@ ms.date: 06/25/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 設計, 舒適度, HoloLens 2, HoloLens (第 1 代), 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 運動
-ms.openlocfilehash: 9f366b2eb3ef33d3f63d3227d14aec642e8203b7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f8c62b8208ee756efd2fc217f4e4aa4a541f770d
+ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582494"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103022850"
 ---
 # <a name="comfort"></a>舒適度
 
@@ -166,7 +166,7 @@ Windows Mixed Reality 沉浸式 HMD 沒有 IPD 或 VO 的自動校正。 IPD 可
 * **避免** 注視角度超過低於水平 60 度 (垂直移動)
 * **避免** 頸部旋轉超過中心 45 度 (水平移動)
 
-最佳 (靜止) 注視角度是低於水平 10-20 度，因為頭部傾向於稍微向下傾斜，特別是在活動期間。
+最佳的 (停留) 注視的角度會被視為低於範圍的10-20 度，因為前端通常會稍微向下傾斜，特別是在活動期間。
 
 ## <a name="arm-positions"></a>手臂位置
 

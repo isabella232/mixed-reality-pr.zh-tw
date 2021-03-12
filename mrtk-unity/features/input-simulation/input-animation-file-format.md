@@ -6,12 +6,12 @@ ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5ec2b3f3ac83ee0ca1923cb62b36fe80edc22120
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: adc6bee83faacf20a1b8013bafb1cf50e1e3d419
+ms.sourcegitcommit: 210312f6be83745761eeb4f55827e1fc677d79ca
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780847"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "103147413"
 ---
 # <a name="input-animation-binary-file-format-specification"></a>輸入動畫二進位檔案格式規格
 
@@ -29,6 +29,24 @@ ms.locfileid: "101780847"
 | 主要版本號碼 | Int32 |
 | 次要版本號碼 | Int32 |
 | 動畫資料 | _請參閱版本區段_ |
+
+## <a name="version-11"></a>1.1 版
+
+輸入動畫資料包含三個布林值，指出動畫是否包含相機、手和眼睛等資料，後面接著一連串的動畫曲線。 出現的曲線取決於這些布林值的值。 每個曲線都可以有不同的主要畫面格數目。
+
+| 區段 | 類型 | 注意 |
+|---------|------|------|
+| 有相機姿勢 | Boolean | |
+| 有手資料 | Boolean | |
+| 具有眼睛| Boolean | |
+| 相機 | [姿勢曲線](#pose-curves) | 只有當攝影機姿勢為 true 時 |
+| 靠右追蹤 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
+| 右側追蹤 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
+| 向左捏合手 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
+| 右手捏合 Right | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
+| 左邊的接點 | [聯合姿勢曲線](#joint-pose-curves) | 只有在有手資料為 true 時 |
+| 右邊 | [聯合姿勢曲線](#joint-pose-curves) | 只有在有手資料為 true 時 |
+| 眼睛 | [光線曲線](#ray-curves)] | 只有當眼睛為 true 時 |
 
 ## <a name="version-10"></a>版本 1.0
 
@@ -91,6 +109,19 @@ ms.locfileid: "101780847"
 | 旋轉 Y | [浮點數曲線](#float-curve) |
 | 旋轉 Z | [浮點數曲線](#float-curve) |
 | 旋轉 W | [浮點數曲線](#float-curve) |
+
+### <a name="ray-curves"></a>光線曲線
+
+光線曲線是原點向量的三個動畫曲線序列，後面接著三個方向向量的動畫曲線。
+
+| 區段 | 類型 |
+|---------|------|
+| 原始 X | [浮點數曲線](#float-curve) |
+| 原點 Y | [浮點數曲線](#float-curve) |
+| 原點 Z | [浮點數曲線](#float-curve) |
+| 方向 X | [浮點數曲線](#float-curve) |
+| 方向 Y | [浮點數曲線](#float-curve) |
+| 方向 Z | [浮點數曲線](#float-curve) |
 
 ### <a name="float-curve"></a>浮點數曲線
 

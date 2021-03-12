@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: f8188cc8c417b60864cd963120ad004d6169c3c2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
+ms.sourcegitcommit: a2b1c75f25adcd238b6a93b103a13aa898a62c76
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583521"
+ms.lasthandoff: 03/11/2021
+ms.locfileid: "102770326"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 
@@ -69,3 +69,15 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 * 設定適用於 Azure 認知服務中語音服務的 Unity 專案
 * 將語音服務與 Windows Mixed Reality 應用程式整合
 * 使用語音辨識來翻譯文字
+
+### <a name="render-a-model-with-azure-remote-rendering"></a>[使用 Azure 遠端轉譯來呈現模型](/learn/modules/render-model-azure-remote-rendering-unity/)
+
+建立 Azure 遠端轉譯會話，並呈現3D 模型。
+
+**學習目標**
+
+在此課程模組結束時，您將可以：
+
+* 建立遠端轉譯會話
+* 載入 3D 模型
+* 轉譯3D 模型

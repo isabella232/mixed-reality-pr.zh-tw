@@ -6,16 +6,20 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 3ac16a1aae6681ddd7e144679b76b4d2b778306f
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: a774a5c08cb2d8bbaeebeca19cec366504efba58
+ms.sourcegitcommit: 5c81c19905b26818882e49679bd71f5dd7bc6d3b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102237249"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103202760"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
 ![混合實境工具組](features/images/Logo_MRTK_Unity_Banner.png)
+
+<br>
+
+<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能，可用來加快 Unity 中的跨平台 MR 應用程式開發。 以下是其中的一些功能：
 
@@ -68,58 +72,73 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 :::row:::
     :::column:::
-       [ ![ 輸入系統](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md) **[輸入系統](features/input/overview.md)**<br>
+       [![輸入系統](features/images/MRTK_Icon_InputSystem.png)](features/input/overview.md)<br>
+        **[輸入系統](features/input/overview.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ 手動追蹤 (hololens 2)](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md) **[手動追蹤 <br> (hololens 2)](features/input/hand-tracking.md)**<br>
+        [![手動追蹤 (HoloLens 2) ](features/images/MRTK_Icon_HandTracking.png)](features/input/overview.md)<br>
+        **[手動追蹤 <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ 眼睛追蹤 (hololens 2)](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md) **[眼睛追蹤 <br/> (hololens 2)](features/input/eye-tracking/eye-tracking-Main.md)**<br>
+        [![ (HoloLens 2) 的眼睛追蹤 ](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md)<br>
+        **[<br/> (HoloLens 2) 的眼睛追蹤](features/input/eye-tracking/eye-tracking-Main.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ 配置](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md)檔 **[設定檔](configuration/mixed-reality-configuration-guide.md)**<br>
-    :::column-end:::
-:::row-end:::
-
-:::row:::
-    :::column:::
-       [ ![ 手動追蹤 (Ultraleap)](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md) **[手追蹤 <br/> (Ultraleap)](features/cross-platform/leap-motion-mrtk.md)**<br>
-    :::column-end:::
-    :::column:::
-        [ ![ Ui 控制項](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks) **[ui 控制項](#ux-building-blocks)**<br>
-    :::column-end:::
-    :::column:::
-        [ ![ 解析器](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md) **[解析器](features/ux-building-blocks/solvers/solver.md)**<br>
-    :::column-end:::
-    :::column:::
-        [ ![ 多場景管理員](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md) **[多場景 <br/>](features/scene-system/scene-system-getting-started.md)管理員**<br>
+        [![配置 檔](features/images/MRTK_Icon_Profiles.png)](configuration/mixed-reality-configuration-guide.md)<br>
+        **[配置 檔](configuration/mixed-reality-configuration-guide.md)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ 空間感知](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md) **[空間 <br/> 感知](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
+       [![ (Ultraleap) 的手動追蹤 ](features/images/MRTK_Icon_HandTracking.png)](features/cross-platform/leap-motion-mrtk.md)<br>
+        **[<br/> (Ultraleap) 的手動追蹤](features/cross-platform/leap-motion-mrtk.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ 診斷工具](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md) **[診斷 <br/> 工具](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+        [![UI 控制項](features/images/MRTK_Icon_UIControls.png)](#ux-building-blocks)<br>
+        **[UI 控制項](#ux-building-blocks)**<br>
     :::column-end:::
     :::column:::
-        [ ![ MRTK 標準著色器視圖](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader) **[MRTK 標準著色器範例視圖](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+        [![解算器](features/images/MRTK_Icon_Solver.png)](features/ux-building-blocks/solvers/solver.md)<br>
+        **[解算器](features/ux-building-blocks/solvers/solver.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ 語音 & 聽寫](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md) **[語音](features/input/speech.md) <br/>  &  [聽寫](features/input/dictation.md)**<br>
+        [![多場景管理員](features/images/MRTK_Icon_SceneSystem.png)](features/scene-system/scene-system-getting-started.md)<br>
+        **[多場景 <br/> 管理員](features/scene-system/scene-system-getting-started.md)**<br>
     :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       [ ![ 界限系統](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md) **[界限 <br/> 系統](features/boundary/boundary-system-getting-started.md)**<br>
+       [![空間感知](features/images/MRTK_Icon_SpatialUnderstanding.png)](features/spatial-awareness/spatial-awareness-getting-started.md)<br>
+        **[空間 <br/> 感知](features/spatial-awareness/spatial-awareness-getting-started.md)**<br>
     :::column-end:::
     :::column:::
-        編輯器 [ ![ 內模擬](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md)的 **[編輯器 <br/> 模擬](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+        [![診斷工具](features/images/MRTK_Icon_Diagnostics.png)](features/diagnostics/diagnostics-system-getting-started.md)<br>
+        **[診斷 <br/> 工具](features/diagnostics/diagnostics-system-getting-started.md)**<br>
     :::column-end:::
     :::column:::
-        [ ![ 實驗性功能](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md) **[實驗性 <br/> 功能](contributing/experimental-features.md)**<br>
+        [![MRTK 標準著色器視圖](features/images/MRTK_Icon_StandardShader.png)](features/rendering/mrtk-standard-shader.md?q=shader)<br>
+        **[MRTK 標準著色器範例視圖](features/rendering/mrtk-standard-shader.md?q=shader)**<br>
+    :::column-end:::
+    :::column:::
+        [![語音 & 聽寫](features/images/MRTK_Icon_VoiceCommand.png)](features/scene-system/scene-system-getting-started.md)<br>
+        **[](features/input/speech.md) <br/> 語音  & [聽寫](features/input/dictation.md)**<br>
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [![界限系統](features/images/MRTK_Icon_Boundary.png)](features/boundary/boundary-system-getting-started.md)<br>
+        **[界限 <br/> 系統](features/boundary/boundary-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![編輯器內模擬](features/images/MRTK_Icon_InputSystem.png)](features/diagnostics/diagnostics-system-getting-started.md)<br>
+        **[編輯器內 <br/> 模擬](features/diagnostics/diagnostics-system-getting-started.md)**<br>
+    :::column-end:::
+    :::column:::
+        [![實驗性功能](features/images/MRTK_Icon_Experimental.png)](contributing/experimental-features.md)<br>
+        **[實驗性 <br/> 功能](contributing/experimental-features.md)**<br>
     :::column-end:::
     :::column:::
     :::column-end:::
