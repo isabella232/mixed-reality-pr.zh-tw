@@ -6,24 +6,35 @@ ms.author: kesemple
 ms.date: 02/28/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 8a97cef76fb1d93ab616888c2474904d7d14bb13
-ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
+ms.openlocfilehash: 274373db46b510453797dff7389bd09cbdcdf82e
+ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
-ms.locfileid: "103022860"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234544"
 ---
-# <a name="microsoft-mixed-reality-toolkit-260-release-notes"></a>Microsoft Mixed Reality 工具組2.6.0 版本資訊
-
-- [新功能](#whats-new)
-- [重大變更](#breaking-changes)
-- [更新指導方針](../updates-deployment/updating.md#upgrading-to-a-new-version-of-mrtk)
-- [已知問題](#known-issues)
+# <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Microsoft Mixed Reality 工具組2.6.1 版本資訊
 
 > [!IMPORTANT]
 > 有一個已知的編譯器問題，會影響使用 ARM64 針對 Microsoft HoloLens 2 所建立的應用程式。 將 Visual Studio 2019 更新至16.8 版或更新版本，即可修正此問題。 如果您無法更新 Visual Studio，請匯入套件以套用因應措施 `com.microsoft.mixedreality.toolkit.tools` 。
 
-## <a name="whats-new"></a>最新消息
+## <a name="whats-new-in-261"></a>2.6.1 的新功能
+
+### <a name="fixes-openxr-not-running-on-hololens-2--uwp"></a>修正 OpenXR 未在 HoloLens 2/UWP 上執行
+
+修正防止 MRTK 的 OpenXR 支援在 UWP 上執行的回歸。
+
+### <a name="fixes-leap-motion-objectmanipulator-not-rotating"></a>修正閏運動 ObjectManipulator 未旋轉
+
+修正 ObjectManipulator 腳本未將 Leap 運動手旋轉的回歸納入考慮。
+
+### <a name="sample-scene-updates"></a>範例場景更新
+
+更新場景理解範例場景，以正確地反映 Unity 外掛程式的出貨狀態。 也會更新此範例，使其不再相依于要匯入的空間感知範例場景。 更新至2.6.1 之前，您應該刪除已匯入的場景理解和空間感知範例（如果專案存在於您的專案中），以避免可能發生衝突。 如果您未移除這些範例，並在主控台中看到與這些範例相關的衝突，請 (或) 資料夾中移除兩個範例， `Assets/Samples/Mixed Reality Toolkit Examples` 然後再次嘗試匯入。
+
+更新對話範例場景，以正確描述目前的對話案例。
+
+## <a name="whats-new-in-260"></a>2.6.0 的新功能
 
 ### <a name="add-support-for-openxr"></a>新增對 OpenXR 的支援
 
@@ -42,7 +53,7 @@ ms.locfileid: "103022860"
 
 HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 
-### <a name="experimental-interactive-element--state-visualizer"></a>實驗性互動式元素 + 狀態視覺化 
+### <a name="experimental-interactive-element--state-visualizer"></a>實驗性互動式元素 + 狀態視覺化
 
 互動式元素是 MRTK 輸入系統的簡化集中進入點。 它包含狀態管理方法、事件管理，以及核心互動狀態的狀態設定邏輯。 如需詳細資訊，請參閱 [互動式元素檔](../features/experimental/interactive-element.md)集。
 
@@ -91,13 +102,11 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
   ![對話方塊控制項](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
-
-### <a name="pulse-shader-graduated-from-experimental"></a>從實驗性分級的脈衝著色器 
+### <a name="pulse-shader-graduated-from-experimental"></a>從實驗性分級的脈衝著色器
 
 脈衝著色器腳本已從實驗性進行分級。 如需詳細資訊，請參閱： [脈衝著色器檔](../features/rendering/pulse-shader.md)
 
 ![MRTK_SpatialMesh_Pulse](https://user-images.githubusercontent.com/13754172/68261851-3489e200-fff6-11e9-9f6c-5574a7dd8db7.gif)
-
 
 ### <a name="input-recording-service-improvements"></a>輸入記錄服務改進
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: ed644bf7d91c27e9583411d3b46f2786a3c5feca
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: 8a1d93f4cd321c23410f537e0577192421ef3af1
+ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547257"
+ms.lasthandoff: 03/12/2021
+ms.locfileid: "103234554"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -95,6 +95,10 @@ ms.locfileid: "102547257"
 
 > [!NOTE]
 > 混合現實功能工具目前只在 Windows 上執行，若為 MacOS，請依照此程式下載並匯入混合現實工具 [組至 unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) 專案。
+
+> [!NOTE]
+> 您也可以從 [MRTK Github 的 [發行] 頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)手動下載 MRTK 套件。 使用 Unity 的資產匯入 MRTK 套件-> 匯入套件-> 自訂套件] 功能表。 
+
 
 從下載的資料夾開啟可執行檔 **MixedRealityFeatureTool** ，以啟動「混合現實」功能工具。  
 
