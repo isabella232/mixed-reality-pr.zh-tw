@@ -192,24 +192,24 @@
               href: unity/reviewing-changes.md
     - name: 基本建置組塊
       items:
-        - name: 相機
+        - name: 相機設定
           href: unity/camera-in-unity.md
-        - name: 座標系統
-          href: unity/coordinate-systems-in-unity.md
-        - name: 持續性
-          href: unity/persistence-in-unity.md
-        - name: 頭部注視
-          href: unity/gaze-in-unity.md
+        - name: 空間錨點
+          href: unity/spatial-anchors-in-unity.md
+        - name: 互動
+          items:
+            - name: 運動控制器
+              href: unity/motion-controllers-in-unity.md
+            - name: 軌跡
+              href: unity/gestures-in-unity.md
+            - name: 手部和眼睛追蹤
+              href: unity/hand-eye-in-unity.md
+            - name: 頭部注視
+              href: unity/gaze-in-unity.md
+            - name: 語音輸入
+              href: unity/voice-input-in-unity.md
         - name: Text
           href: unity/text-in-unity.md
-        - name: 運動控制器
-          href: unity/motion-controllers-in-unity.md
-        - name: 軌跡
-          href: unity/gestures-in-unity.md
-        - name: 手部和眼睛追蹤
-          href: unity/hand-eye-in-unit.md
-        - name: 語音輸入
-          href: unity/voice-input-in-unity.md
         - name: 空間對應
           href: unity/spatial-mapping-in-unity.md
         - name: 空間音效
@@ -220,6 +220,8 @@
           href: unity/shared-experiences-in-unity.md
         - name: 定位相機
           href: unity/locatable-camera-in-unity.md
+        - name: 傳統型應用程式中的全像全像遠端
+          href: unity/holographic-remoting-desktop.md
         - name: 對焦點
           href: unity/focus-point-in-unity.md
         - name: 追蹤遺失
