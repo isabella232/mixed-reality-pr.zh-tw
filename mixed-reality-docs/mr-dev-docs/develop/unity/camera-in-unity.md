@@ -1,17 +1,17 @@
 ---
-title: Unity 中的相機
+title: Unity 中的攝影機設定
 description: 瞭解如何設定及使用 Unity 的主要攝影機進行 Windows Mixed Reality 開發，以進行全像轉譯。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit，mixedrealitytoolkit，mixedrealitytoolkit-unity，全像轉譯，全像全像，全像投影、全像投影、聚焦點、深度緩衝區、僅限方向、位置、不透明、透明、剪輯、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 865d19482e5f612eab95fa2f74cb2bad59171496
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 23f6f1c996ba71b1bcfa62e0c64136bc9fda34b7
+ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759764"
+ms.lasthandoff: 03/16/2021
+ms.locfileid: "103574964"
 ---
 # <a name="camera-in-unity"></a>Unity 中的相機
 
