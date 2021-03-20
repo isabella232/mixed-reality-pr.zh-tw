@@ -9,10 +9,10 @@ ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, unity, unreal, directx, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 虛擬實境, 擴增實境, 虛擬實境開發, 擴增實境開發
 ms.openlocfilehash: 9bb0f1c62315bf106a0d6d45b8a2a24203ac9296
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98007628"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>混合實境開發簡介
