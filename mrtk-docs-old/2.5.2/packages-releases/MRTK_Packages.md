@@ -4,20 +4,19 @@ description: MRTK 中的套件支援混合現實硬體和平臺。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity Pakage Manager、
-ms.openlocfilehash: 90bf986539272709c1bdadf087db4d20a7d1c97e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 64b35faad12e60209fd7d57def4a103989c50bf6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783496"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686591"
 ---
 # <a name="mixed-reality-toolkit-packages"></a>混合現實工具組套件
 
  (MRTK) 的混合現實工具組是封裝的集合，可提供混合現實硬體和平臺的支援，藉此啟用跨平臺混合現實應用程式開發。
 
-MRTK 可作為 [資產](#asset-packages) ( unitypackage) 套件和透過 [Unity 套件管理員](#unity-package-manager)。
+MRTK 可作為 [資產](#asset-packages) ( unitypackage) 套件和透過 [Unity 封裝管理員](#unity-package-manager)。
 
 ## <a name="asset-packages"></a>資產套件
 
@@ -75,7 +74,7 @@ MRTK Foundation 套件包含下列各項。
 | | OpenVR | OpenVR 裝置的支援。 |
 | | Oculus | Oculus 裝置的支援，例如尋找。 |
 | | [UnityAR](../features/camera-system/UnityArCameraSettings.md) |  (實驗性) 攝影機設定提供者，讓 MRTK 與行動 AR 裝置搭配使用。 |
-| | WindowsMixedReality | Windows Mixed Reality 裝置的支援，包括 Microsoft HoloLens 和沉浸式耳機。 |
+| | WindowsMixedReality | 支援 Windows Mixed Reality 的裝置，包括 Microsoft HoloLens 和沉浸式耳機。 |
 | | Windows | 支援 Microsoft Windows 特定 Api，例如語音和聽寫。 |
 | | XR SDK |  (unity 2019.3 和更新版本中 [unity 新 XR 架構](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 的實驗性) 支援。 |
 | MRTK/SDK | | |
@@ -159,14 +158,14 @@ MRTK Foundation 套件包含下列各項。
 | | 實驗 | 示範實驗性功能的示範場景。 |
 | | StandardAssets | 多個示範場景所共用的常見資產。 |
 
-## <a name="unity-package-manager"></a>Unity 套件管理員
+## <a name="unity-package-manager"></a>Unity 封裝管理員
 
-針對使用 Unity 2019.4 和更新版本所建立的體驗，MRTK 可透過 [Unity 套件管理員](https://docs.unity3d.com/Manual/Packages.html)取得。
+針對使用 Unity 2019.4 和更新版本所建立的體驗，MRTK 可透過 [unity 封裝管理員](https://docs.unity3d.com/Manual/Packages.html)取得。
 
 使用資產套件的一些優點包括：
 
 - 較小的專案
-  - 簡潔的 Visual Studio 解決方案
+  - 更清楚的 Visual Studio 解決方案
   - 要簽入的檔案越少 (MRTK 是檔案中的簡單參考 `Packages/manifest.json`) 
 - 更快速的編譯
   - Unity 不需要在建立期間重新編譯 MRTK
@@ -199,7 +198,7 @@ MRTK Foundation 套件包含下列各項。
 | | OpenVR | OpenVR 裝置的支援。 |
 | | Oculus | Oculus 裝置的支援，例如尋找。 |
 | | [UnityAR](../features/camera-system/UnityArCameraSettings.md) |  (實驗性) 攝影機設定提供者，讓 MRTK 與行動 AR 裝置搭配使用。 |
-| | WindowsMixedReality | Windows Mixed Reality 裝置的支援，包括 Microsoft HoloLens 和沉浸式耳機。 |
+| | WindowsMixedReality | 支援 Windows Mixed Reality 的裝置，包括 Microsoft HoloLens 和沉浸式耳機。 |
 | | Windows | 支援 Microsoft Windows 特定 Api，例如語音和聽寫。 |
 | | XR SDK |  (unity 2019.3 和更新版本中 [unity 新 XR 架構](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 的實驗性) 支援。 |
 | MRTK/SDK | | |
@@ -248,7 +247,7 @@ MRTK Foundation 套件包含下列各項。
 | | [SceneTransitionService](../features/extensions/scene-transition-service/SceneTransitionServiceOverview.md) | 簡化加入平滑場景轉換的服務。 |
 | | 範例 ~ | Unity 編輯器中隱藏的 () 資料夾，其中包含範例場景和資產。 |
 
-如需使用包含範例專案的封裝之程式的詳細資訊，請參閱 [混合現實工具組和 Unity 套件管理員](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) 文章。
+如需使用包含範例專案之封裝的詳細資訊，請參閱 [混合現實工具組和 Unity 封裝管理員](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) 文章。
 
 相依性：
 
@@ -293,7 +292,7 @@ MRTK Foundation 套件包含下列各項。
 
 範例封裝 (`com.microsoft.mixedreality.toolkit.examples`) ，其結構化可讓開發人員只匯入感興趣的範例。
 
-如需使用包含範例專案的封裝之程式的詳細資訊，請參閱 [混合現實工具組和 Unity 套件管理員](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) 文章。
+如需使用包含範例專案之封裝的詳細資訊，請參閱 [混合現實工具組和 Unity 封裝管理員](../configuration/usingupm.md#using-mixed-reality-toolkit-examples) 文章。
 
 | 資料夾 | 元件 | 描述 |
 | --- | --- | --- |
@@ -310,4 +309,4 @@ MRTK Foundation 套件包含下列各項。
 
 - [架構概觀](../architecture/Overview.md)
 - [系統、延伸模組服務和資料提供者](../architecture/SystemsExtensionsProviders.md)
-- [混合現實工具組和 Unity 套件管理員](../configuration/usingupm.md)
+- [混合現實工具組和 Unity 封裝管理員](../configuration/usingupm.md)

@@ -4,20 +4,19 @@ description: MRTKStandardShader 檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、材質著色器
-ms.openlocfilehash: fcbc61d35a8447187f75e204ac7fb90bbcc89d31
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 608710296ec9bcf9dcb8a7672cbe356c3b1a0603
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781482"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685211"
 ---
 # <a name="mrtk-standard-shader"></a>MRTK 標準著色器
 
 ![標準著色器範例](../images/mrtk-standard-shader/MRTK_StandardShader.jpg)
 
-MRTK 標準陰影系統利用單一、彈性的著色器，其可達成與 Unity 標準著色器類似的視覺效果、實行 [流暢的設計系統](https://www.microsoft.com/design/fluent/) 準則，並在混合現實裝置上維持效能。
+MRTK 標準陰影系統利用單一、彈性的著色器，其可達成與 Unity 標準著色器類似的視覺效果、實行 [Fluent Design 系統](https://www.microsoft.com/design/fluent/) 準則，並在混合現實裝置上維持效能。
 
 ## <a name="example-scenes"></a>範例場景
 
@@ -41,18 +40,18 @@ MRTK/標準著色器的自訂材質偵測器已被呼叫 [`MixedRealityStandardS
 
 偵測器的第一個部分會控制材質的呈現狀態。 轉譯 *模式* 會決定呈現材質的時間和方式。 MRTK/標準著色器的目的是要鏡像 [Unity/standard 著色器中所找到](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html)的轉譯模式。 MRTK/Standard 著色器也包含完整使用者控制項的 *加法* 轉譯模式和 *自訂* 呈現模式。
 
-| 轉譯模式 |         描述                                                                                                                                                                                                                                                                                                                                                           |
+| 轉譯模式 |         Description                                                                                                                                                                                                                                                                                                                                                           |
 |----------------|--------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | Opaque         |  (預設) 適用于沒有透明區域的一般純色物件。                                                                                                                                                                                                                                                                                             |
 | 剪影         | 允許建立透明效果，其在不透明和透明區域之間具有固定邊緣。 在此模式中，沒有半透明的區域，材質可能是100% 不透明或不可見。 使用透明度建立材質（例如植被指數）的形狀時，這非常有用。                                                              |
 | 淡化           | 允許透明度值完全淡化物件，包括任何高光或可能具有的反射。 如果您想要建立物件的動畫，讓物件淡入或淡出，這個模式就很有用。它不適合用來呈現逼真的透明材質，例如清晰的塑膠或玻璃，因為反射和醒目顯示也會淡出。 |
 | 透明    | 適用于呈現逼真的透明材質，例如清晰的塑膠或玻璃。 在此模式中，材質本身會根據材質的 Alpha 色板和色調色彩) 的 Alpha，來取得透明度值 (。 不過，反射和光源醒目顯示會以完全清楚的方式保持可見，就像是實際的透明材質一樣。 |
 | 加法       | 啟用加法混合模式，以目前的圖元色彩加總先前的圖元色彩。 這是慣用的透明度模式，可避免出現透明度排序問題。                                                                                                                                                                                  |
-| Custom         | 允許以手動方式控制轉譯模式的每個層面。 僅適用于先進的使用量。                                                                                                                                                                                                                                                                  |                                                                                                                                            |
+| 自訂         | 允許以手動方式控制轉譯模式的每個層面。 僅適用于先進的使用量。                                                                                                                                                                                                                                                                  |                                                                                                                                            |
 
 ![轉譯模式](../images/mrtk-standard-shader/MRTK_RenderingModes.jpg)
 
-| 挑選模式 |             描述                                                                                                                                                                       |
+| 挑選模式 |             Description                                                                                                                                                                       |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 關閉       | 停用臉部剔除。 只有在需要雙側邊網格時，才應該將剔除設定為 Off。                                                                                        |
 | Front     | 啟用 front 臉部剔除。                                                                                                                                                        |

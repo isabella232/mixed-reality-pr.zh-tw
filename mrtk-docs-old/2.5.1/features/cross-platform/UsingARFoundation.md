@@ -4,22 +4,21 @@ description: 在 unity 中使用 ARFoundation 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件
-ms.openlocfilehash: ecae14aa0556fb4668720b160b54ecbd09357e64
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4bb61f54209e7f027dd40ce873db605d058758e0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779765"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687338"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>如何設定 iOS 和 Android 的 MRTK [實驗]
 
 ## <a name="install-required-packages"></a>安裝必要的套件
 
-1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0)或 [Unity 套件管理員](../../configuration/usingupm.md)下載並匯入 **MixedReality 套件。**
+1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0)或 [Unity 封裝管理員](../../configuration/usingupm.md)下載並匯入 **MixedReality 的套件。**
 
-1. 在 Unity 套件管理員 (UPM) 中，安裝下列套件：
+1. 在 Unity 封裝管理員 (UPM) 中，安裝下列套件：
 
     **Unity 2018.4.x**
 

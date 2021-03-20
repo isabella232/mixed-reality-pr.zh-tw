@@ -4,14 +4,13 @@ description: 目前 MRTK 版本的發行 nots
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0d12f2cc88506af5034bfc224e45a2b59601044a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 300998965ac5e43282b6d18c0b9e71429a40cb50
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779586"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681601"
 ---
 # <a name="microsoft-mixed-reality-toolkit-251-release-notes"></a>Microsoft Mixed Reality 工具組2.5.1 版本資訊
 
@@ -45,15 +44,15 @@ ms.locfileid: "101779586"
 
 ### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>部分混合現實工具組標準著色器功能需要基礎封裝
 
-透過 Unity 套件管理員匯入時，MRTK 標準著色器公用程式腳本 (例如： HoverLight.cs) 不會與標準資產套件中的著色器共置。 若要存取此功能，應用程式將需要匯入基礎套件。
+透過 Unity 封裝管理員匯入時，MRTK 標準著色器公用程式腳本 (例如：) HoverLight 不會與標準資產套件中的著色器共置。 若要存取此功能，應用程式將需要匯入基礎套件。
 
 ### <a name="cameracache-may-create-a-new-camera-on-shutdown"></a>CameraCache 可能會在關機時建立新的攝影機
 
 在某些情況下 (例如在 Unity 編輯器) 中使用 LeapMotion 提供者時，CameraCache 可能會在關閉時重新建立 MainCamera。 如需詳細資訊，請參閱 [此問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) 。
 
-### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>透過 Unity 套件管理員匯入範例時的 FileNotFoundException
+### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException 透過 Unity 匯入範例的時機封裝管理員
 
-根據專案路徑的長度，透過 Unity 套件管理員匯入範例可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
+視專案路徑的長度而定，透過 Unity 匯入範例封裝管理員可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>未指定空間定位器。 應用程式將不支援空間音效
 
@@ -61,7 +60,7 @@ ms.locfileid: "101779586"
 
 若要解決此問題，請確定：
 
-- **視窗**  > **套件管理員** 已安裝一或多個 XR 套件
+- **視窗**  > **封裝管理員** 已安裝一或多個 XR 套件
 - **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
 
   ![選取音訊 Apatializer](../features/images/release-notes/SpatializerSelection.png)

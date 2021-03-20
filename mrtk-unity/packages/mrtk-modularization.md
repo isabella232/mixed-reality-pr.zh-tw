@@ -4,14 +4,13 @@ description: 描述 MRTK 中的元件化。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 2e95051672c9909d446516c0ad4b78c19b1a4a2a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7d8c78e3b6f6e119fcf767c9280ec276a3933d68
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779452"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682961"
 ---
 # <a name="mixed-reality-toolkit-componentization"></a>混合現實工具組元件化
 
@@ -23,7 +22,7 @@ MRTK v2 刻意開發成模組化，並將系統服務之間的相依性降到最
 
 由於某些系統服務的本質 (例如：輸入和遙傳) ，因此存在少量的相依性。
 
-雖然服務預期會需要一或多個資料提供者元件，但它們之間沒有直接連結。 SDK 功能也是如此， (例如：使用者介面元件) 。
+雖然服務預期會需要一或多個資料提供者元件，但它們之間沒有直接連結。 SDK 功能也同樣適用 (例如：消費者介面元件) 。
 
 ## <a name="component-communication"></a>元件通訊
 

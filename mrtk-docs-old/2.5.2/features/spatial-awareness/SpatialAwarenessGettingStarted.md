@@ -4,20 +4,19 @@ description: 描述 MRTK 中的空間感知
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 52310bef257605e50ac16ff77d37603d18467932
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8a476aa54ffe5a729b037471466b7a16319861ca
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780373"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686918"
 ---
 # <a name="spatial-awareness"></a>空間感知
 
 ![空間感知](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 
-空間感知系統可在混合現實應用程式中提供真實世界的環境感知。 當您在 Microsoft HoloLens 上引進時，空間感知會提供網格的集合，代表環境的幾何，可在全像全像全球的互動互動。
+空間感知系統可在混合現實應用程式中提供真實世界的環境感知。 當您在 Microsoft HoloLens 上引進時，空間感知會提供網格的集合，代表環境的幾何，可在全像全像全球的互動之間進行吸引人的互動。
 
 > [!NOTE]
 > 目前，「混合現實」工具組不會隨附空間理解演算法，如同最初封裝在 HoloToolkit 中。 空間理解通常涉及轉換空間網格資料，以建立簡化和/或群組的網格資料，例如平面、牆壁、樓層、上限等。
@@ -40,7 +39,7 @@ ms.locfileid: "101780373"
 | --- | --- |
 | `DefaultHoloLens1ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens1)  | 否 |
 | `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2)  | 否 |
-| `DefaultMixedRealityToolkitConfigurationProfile` (資產/MRTK/SDK/設定檔)  | 是 |
+| `DefaultMixedRealityToolkitConfigurationProfile` (資產/MRTK/SDK/設定檔)  | 對 |
 
 1. 在場景階層中選取要在 [偵測器] 面板中開啟的 MixedRealityToolkit 物件。
 
@@ -56,7 +55,7 @@ ms.locfileid: "101780373"
 
 ### <a name="register-observers"></a>註冊觀察者
 
-「混合現實」工具組中的服務可以有 [資料提供者服務](../../architecture/SystemsExtensionsProviders.md) ，可使用平臺專屬的資料和實行控制項來補充主要服務。 其中一個範例是混合的現實輸入系統，具有 [多個資料提供者](../Input/InputProviders.md) ，可從各種平臺特定 api 取得控制器和其他相關的輸入資訊。
+Mixed Reality 工具組中的服務可以有 [Data Provider 服務](../../architecture/SystemsExtensionsProviders.md) ，使用平臺特定資料和實行控制來補充主要服務。 其中一個範例是混合的現實輸入系統，具有 [多個資料提供者](../Input/InputProviders.md) ，可從各種平臺特定 api 取得控制器和其他相關的輸入資訊。
 
 空間感知系統很類似，因為資料提供者會為系統提供真實世界的網格資料。 空間感知設定檔至少必須註冊一個空間觀察者。 空間觀察者通常是平臺特定的元件，可作為提供者，從特定平臺的端點呈現各種類型的網格資料 (例如 HoloLens) 。
 

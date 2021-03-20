@@ -1,19 +1,19 @@
 ---
-title: MR Basics 101 - 使用裝置完成專案
+title: HoloLens (第1代) 基本概念 101-使用裝置完成專案
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解 Windows Mixed Reality 的基本概念。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、HoloLens、全息圖、學術、教學課程、HoloLens、混合的現實學術、unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 4ca16542060e1cee746ba5095a7bf68ca8136267
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5015dff1487dce9ff761a4ca606657eca6f75406
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583714"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730335"
 ---
-# <a name="mr-basics-101-complete-project-with-device"></a>MR Basics 101：使用裝置完成專案
+# <a name="hololens-1st-gen-basics-101-complete-project-with-device"></a>HoloLens (第1代) 基本概念101：使用裝置完成專案
 
 <br>
 
@@ -150,7 +150,7 @@ ms.locfileid: "98583714"
 * 在 [階層]**面板** 中選取資料 **指標** 物件。
 * 將 **WorldCursor** 腳本拖放到 [ **檢查] 面板** 中。
 * 按兩下 **WorldCursor** 腳本，在 Visual Studio 中開啟它。
-* 將此程式碼複製並貼到 **WorldCursor.cs** 中，並 **全部儲存**。
+* 將此程式碼複製並貼到 **WorldCursor** 中，並 **全部儲存**。
 
 ```cs
 using UnityEngine;
@@ -330,7 +330,7 @@ public class SphereCommands : MonoBehaviour
 * 在 [ **腳本** ] 資料夾中，建立名為 **SpeechManager** 的腳本。
 * 將 **SpeechManager** 腳本拖曳至階層中的 **OrigamiCollection** 物件
 * 在 Visual Studio 中開啟 **SpeechManager** 腳本。
-* 將此程式碼複製並貼到 **SpeechManager.cs** 中，並 **全部儲存**：
+* 將此程式碼複製並貼到 **SpeechManager** 中，並 **全部儲存**：
 
 ```cs
 using System.Collections.Generic;

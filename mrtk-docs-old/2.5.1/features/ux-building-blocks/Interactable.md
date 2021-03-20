@@ -4,14 +4,13 @@ description: MRTK 中的互動腳本元件總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、互動、Events、
-ms.openlocfilehash: 9215466cde8bb0240a119bfc8de5dff5b4b122f7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、互動、事件、
+ms.openlocfilehash: 6df44c35df0089e63f7865fc76418f7953c4e986
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780539"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684801"
 ---
 # <a name="interactable"></a>互動
 

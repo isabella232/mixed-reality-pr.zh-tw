@@ -4,14 +4,13 @@ description: 總覽 MRTK 中的接近功能表類型
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、近端功能表、
-ms.openlocfilehash: de420d6365516bf37604095b6cdc786e566e4652
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 19c9a99a4d83d2fb765b4127ce0477425deaeac8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780144"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686818"
 ---
 # <a name="near-menu"></a>近端功能表
 

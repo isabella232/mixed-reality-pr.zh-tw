@@ -4,14 +4,14 @@ description: 參與 MRTK 的群體。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Bug 報告、
-ms.openlocfilehash: 608e2bfd31cf25241de3aa0617fde5c9dce1f424
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 45a4919cfdefc15dc32a6a0db0a4d83a7da51bcf
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780674"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684441"
 ---
 # <a name="contributing"></a>參與
 

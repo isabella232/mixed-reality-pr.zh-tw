@@ -4,18 +4,17 @@ description: 將 singleton 轉換為服務 MRTK 的 Wizard 檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b888852a14ecedb84b5012363ef5ac1187da3fad
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8b28824b7226f02826d8962d763ef2ba7150aea2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781444"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684051"
 ---
 # <a name="extension-service-creation-wizard"></a>延伸模組服務建立嚮導
 
-將 singleton 轉換為服務可能很困難。 此嚮導可以補充我們的其他檔和範例程式碼，方法是讓開發人員建立新的服務， (大致上) 與建立新的 MonoBehaviour 腳本一樣簡單。 若要深入瞭解如何從頭開始建立服務，請參閱我們的 [指南以建立已註冊的服務](../../configuration/MixedRealityConfigurationGuide.md) (即將推出) 。
+將 singleton 轉換為服務可能很困難。 此嚮導可以補充我們的其他檔和範例程式碼，方法是讓開發人員建立新的服務， (大致上) 與建立新的 MonoBehaviour 腳本一樣簡單。 若要瞭解如何從頭開始建立服務，請參閱 (即將推出) [建立已註冊服務的指南](../../configuration/MixedRealityConfigurationGuide.md) 。
 
 ## <a name="launching-the-wizard"></a>啟動嚮導
 

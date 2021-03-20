@@ -4,14 +4,13 @@ description: MRTK 中的解析器總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、解析器、
-ms.openlocfilehash: affc62145fa46939cf12c71f0233df28f93e07dc
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8d1b5aa94379e54444e42e335265a2f7cbf8ea59
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780477"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686651"
 ---
 # <a name="solvers"></a>解算器
 
@@ -65,7 +64,7 @@ ms.locfileid: "101780477"
 *與每個 TrackedTargetType 相關聯之各種屬性的範例*
 
 > [!IMPORTANT]
-> 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量* ，亦即 綠色向量為向上、藍色向量向前) 。
+> 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量* ，亦即： 綠色向量為向上、藍色向量向前) 。
 >
 > ![規劃求解前移向量](../../images/solver/HandJoint_ForwardUpVectors.png)
 >

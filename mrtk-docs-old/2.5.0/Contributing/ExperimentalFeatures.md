@@ -4,14 +4,13 @@ description: 與 MRTK 中的實驗性功能相關的檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 3902b1d67d0d78df491db94eb38eae488f0d5f6d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 41c0effc191050a0a301b94ee9490f95be524d91
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780906"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687578"
 ---
 # <a name="experimental-features"></a>實驗性功能
 

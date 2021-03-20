@@ -4,14 +4,13 @@ description: 從較低版本的 MRTK 遷移的檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 27a790f0d711112122075bfff6eeed4b37c9ff4f
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: 71d9202f6d4f75d53554a5a5fb6221d7b86077e0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102547247"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685071"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
 

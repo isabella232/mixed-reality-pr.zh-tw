@@ -4,14 +4,13 @@ description: MRTK 中的手邊互動範例
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手互動、界限控制、Pressable 按鈕、
-ms.openlocfilehash: 1019c80a1681422278a48202285e478e40d3285b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4a24cb2a10180bfe37054e2d963f1ffeaa5704fa
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781433"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682991"
 ---
 # <a name="hand-interaction-examples-scene"></a>手邊互動範例場景
 

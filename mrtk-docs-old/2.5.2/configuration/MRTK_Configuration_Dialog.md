@@ -4,14 +4,13 @@ description: 在 Unity 專案中設定 MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity
-ms.openlocfilehash: baa2f5d113fa361ea93fe9c51127e61edf39ca53
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 417be7ec9eeec9ebb883cbdedb8d7d4d90c000b9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783413"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683661"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>MRTK 專案設定對話方塊
 
@@ -59,7 +58,7 @@ ms.locfileid: "101783413"
 
 - Microsoft 空間定位器
 
-Microsoft 提供的空間定位器支援在 HoloLens 2 上使用硬體加速。
+Microsoft 提供的空間定位器可支援 HoloLens 2 上硬體加速的使用。
 
 此空間定位器可透過 [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) 和 [GitHub](https://github.com/microsoft/spatialaudio-unity)取得。
 
@@ -67,7 +66,7 @@ Microsoft 提供的空間定位器支援在 HoloLens 2 上使用硬體加速。
 
 - MS HRTF 空間定位器
 
-Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality 和 Windows XR Platform 套件的一部分。
+Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality 和 Windows XR 平臺套件的一部分。
 
 - 共振音訊
 
@@ -112,7 +111,7 @@ MSBuild for Unity 是一種元件，可啟用特定 NuGet 套件的自動還原�
 **Unity 2019.3 和更新版本**
 
 在最新版的 Unity 2019 中，當啟用 [圖形工作] 時，應用程式會在部署到 HoloLens 2 時損毀。
-在 Unity 中，預設會啟用這項設定-雖然此錯誤存在，請參閱 [Unity bug](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)，設定程式會預設為將圖形作業設定為「false」 (因此允許部署到 HoloLens 2 的應用程式不會損毀) 。
+在 Unity 中，預設會啟用這項設定-雖然此錯誤存在，但此錯誤仍會顯示 [Unity bug](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)，但設定程式會預設為將圖形作業設定為「false」 (因此可讓部署至 HoloLens 2 的應用程式不會在) 損毀
 
 ## <a name="android-settings"></a>Android 設定
 

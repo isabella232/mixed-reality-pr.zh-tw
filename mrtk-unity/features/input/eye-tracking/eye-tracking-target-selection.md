@@ -4,14 +4,13 @@ description: 如何在 MRTK 中存取眼睛資料和眼睛的特定事件以選�
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 4663ee4716b8e7bb4dd5844a20299f84d23943fe
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f2a775bf0d76ef9c2a20b2e3d6802ee4d284066c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780203"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684711"
 ---
 # <a name="eye-supported-target-selection"></a>目視支援的目標選取範圍
 
@@ -44,7 +43,7 @@ ms.locfileid: "101780203"
 - 使用手光來鎖定按鈕，並在此情況下執行縮小時，最具彈性的解決方案是使用主要焦點處理常式，因為當目前優先排列的主要焦點指標觸發事件時，它會通知您。 請注意，如果已啟用 [手片]，則會在一開始觀看時立即停用 head 或眼睛的視覺焦點指標。
 
 > [!IMPORTANT]
-> 請注意，如果已啟用 [手片]，則會在一開始觀看時立即停用 head 或眼睛的視覺焦點指標。 如果您想要支援「 [_外觀和_ 縮小」的互動，您必須停用手光](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)。 在我們的眼睛追蹤範例場景中，我們停用了光線，以允許使用眼睛 + 手運動展示更豐富的互動-請參閱，以瞭解 [支援的視覺定位](eye-tracking-positioning.md)。
+> 請注意，如果已啟用 [手片]，則會在一開始觀看時立即停用 head 或眼睛的視覺焦點指標。 如果您想要支援「 [_外觀和_ 縮小」的互動，您必須停用手光](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)。 在我們的眼睛追蹤範例場景中，我們停用了光線，以允許使用眼睛 + 手運動展示更豐富的互動-請參閱，以瞭解 [支援的視覺定位](eye-tracking-eyes-and-hands.md)。
 
 [**2. 同時使用眼睛焦點和手光線：**](#2-independent-eye-gaze-specific-eyetrackingtarget)
 
@@ -62,7 +61,7 @@ ms.locfileid: "101780203"
 
 若要偵測影像的焦點時間，請使用可提供您兩個介面成員的 _' IMixedRealityFocusHandler '_ 介面： _OnFocusEnter_ 和 _OnFocusExit_。
 
-以下是 [ColorTap.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) 的簡單範例，可在查看時變更全像影像的色彩。
+以下是 [ColorTap](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) 的簡單範例，可在查看時變更全像影像的色彩。
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
@@ -222,7 +221,7 @@ public class OnLookAtRotateByEyeGaze : BaseEyeFocusHandler
 
 就像範例 #1 一樣，我們可以輕鬆地在 `EyeTrackingDemo-02-TargetSelection` (資產/MRTK/範例/示範/EyeTracking/場景)  (場景中，為我們的全像是在查看時，以較高的) 旋轉範例為例。 您只需要在 _EyeTrackingTarget_ 的 _WhileLookingAtTarget ()_ 事件中觸發全像寶物的旋轉。 以下是更多詳細資料：
 
-1. 建立泛型腳本，其中包含公開函式來旋轉其所連接的 GameObject。 以下是來自 _RotateWithConstSpeedDir.cs_ 的範例，我們可以從 Unity 編輯器調整旋轉方向和速度。
+1. 建立泛型腳本，其中包含公開函式來旋轉其所連接的 GameObject。 以下是來自 _RotateWithConstSpeedDir_ 的範例，我們可以從 Unity 編輯器調整旋轉方向和速度。
 
     ```c#
     using UnityEngine;
@@ -333,7 +332,7 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 若要變更預設資料指標 (不透明的白點) ，只要複製設定檔並建立您自己的自訂指標設定檔即可。
 然後以 _EyeGazeCursor_ 的 _指標預製專案_ 底下的 _DefaultCursor_ 取代。  
 - **根據現有的 _EyeTrackingDemoPointerProfile_：** 按兩下 [ _EyeTrackingDemoPointerProfile_ ]，然後在 [ _指標選項_] 底下新增下列專案：
-  - **控制器類型：** 「明確的手」，「Windows Mixed Reality」
+  - **控制器類型：** 「明確的手」、「Windows Mixed Reality」
   - **Handedness：** 任何
   - **指標預製專案：** DefaultControllerPointer
 

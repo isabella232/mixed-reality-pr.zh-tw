@@ -4,14 +4,14 @@ description: 在 Unity 專案中設定 MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity
-ms.openlocfilehash: 91c404b9835903e36e4743c4b878fc3af89e6af2
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7acb19d26ee8c3d0379f0ada4eb1374a0d3fd7cd
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779993"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681241"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>MRTK 專案設定對話方塊
 
@@ -59,7 +59,7 @@ ms.locfileid: "101779993"
 
 - Microsoft 空間定位器
 
-Microsoft 提供的空間定位器支援在 HoloLens 2 上使用硬體加速。
+Microsoft 提供的空間定位器可支援 HoloLens 2 上硬體加速的使用。
 
 此空間定位器可透過 [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) 和 [GitHub](https://github.com/microsoft/spatialaudio-unity)取得。
 
@@ -67,7 +67,7 @@ Microsoft 提供的空間定位器支援在 HoloLens 2 上使用硬體加速。
 
 - MS HRTF 空間定位器
 
-Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality 和 Windows XR Platform 套件的一部分。
+Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality 和 Windows XR 平臺套件的一部分。
 
 - 共振音訊
 

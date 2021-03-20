@@ -4,14 +4,13 @@ description: 如何在 MRTK 中存取眼睛資料和眼睛的特定事件以選�
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: d4ec5e472316f3871ebed85f0a81988d3207132b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a0131c882ee1677cfb2404208cfe8abb28a3c799
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779485"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684901"
 ---
 # <a name="eye-supported-target-selection"></a>目視支援的目標選取範圍
 
@@ -62,7 +61,7 @@ ms.locfileid: "101779485"
 
 若要偵測影像的焦點時間，請使用可提供您兩個介面成員的 _' IMixedRealityFocusHandler '_ 介面： _OnFocusEnter_ 和 _OnFocusExit_。
 
-以下是 [ColorTap.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) 的簡單範例，可在查看時變更全像影像的色彩。
+以下是 [ColorTap](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.ColorTap) 的簡單範例，可在查看時變更全像影像的色彩。
 
 ```c#
 public class ColorTap : MonoBehaviour, IMixedRealityFocusHandler
@@ -222,7 +221,7 @@ public class OnLookAtRotateByEyeGaze : BaseEyeFocusHandler
 
 就像範例 #1 一樣，我們可以輕鬆地在 `EyeTrackingDemo-02-TargetSelection` (資產/MRTK/範例/示範/EyeTracking/場景)  (場景中，為我們的全像是在查看時，以較高的) 旋轉範例為例。 您只需要在 _EyeTrackingTarget_ 的 _WhileLookingAtTarget ()_ 事件中觸發全像寶物的旋轉。 以下是更多詳細資料：
 
-1. 建立泛型腳本，其中包含公開函式來旋轉其所連接的 GameObject。 以下是來自 _RotateWithConstSpeedDir.cs_ 的範例，我們可以從 Unity 編輯器調整旋轉方向和速度。
+1. 建立泛型腳本，其中包含公開函式來旋轉其所連接的 GameObject。 以下是來自 _RotateWithConstSpeedDir_ 的範例，我們可以從 Unity 編輯器調整旋轉方向和速度。
 
     ```c#
     using UnityEngine;
@@ -333,7 +332,7 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 若要變更預設資料指標 (不透明的白點) ，只要複製設定檔並建立您自己的自訂指標設定檔即可。
 然後以 _EyeGazeCursor_ 的 _指標預製專案_ 底下的 _DefaultCursor_ 取代。  
 - **根據現有的 _EyeTrackingDemoPointerProfile_：** 按兩下 [ _EyeTrackingDemoPointerProfile_ ]，然後在 [ _指標選項_] 底下新增下列專案：
-  - **控制器類型：** 「明確的手」，「Windows Mixed Reality」
+  - **控制器類型：** 「明確的手」、「Windows Mixed Reality」
   - **Handedness：** 任何
   - **指標預製專案：** DefaultControllerPointer
 

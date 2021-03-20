@@ -4,14 +4,14 @@ description: 總覽視覺主題彈性地控制 MRTK 中的 UX 資產
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 主題、
-ms.openlocfilehash: dd9132fc70bec1d4d4cbaf857c10d24c7c4bab31
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5545643a8b122a8fe1e7fafb16b82d2d3a1cfd84
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779501"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687878"
 ---
 # <a name="visual-themes"></a>視覺主題
 

@@ -4,14 +4,13 @@ description: 與控制器、指標和焦點互動。
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、指標、控制器
-ms.openlocfilehash: 9e7fb6b78b9cffe25041a8019b99eee62de0c3e2
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 6316cc9c5bd3b050bd2ce6cb130a32d55f3ca5b3
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779980"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680871"
 ---
 # <a name="controllers-pointers-and-focus"></a>控制器、指標和焦點
 

@@ -4,14 +4,13 @@ description: MRTK 中的脈衝著色器描述。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 2861b86eddb6268ce348be753b795e9c294910cd
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 46146367176e03009d43c9b6a181a91d262de2e1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101884057"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702364"
 ---
 # <a name="pulse-shader"></a>脈衝著色器
 
@@ -28,7 +27,7 @@ ms.locfileid: "101884057"
 - **MRTK_Pulse_ArticulatedHandMeshBlue 的材料** 
 - **MRTK_Pulse_ArticulatedHandMeshPurple 的材料** 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 針對空間網格範例，請確定已在 [MRTK 設定] 下指派 MRTK_Pulse_ArticulatedHandMeshBlue 的材質或 MRTK_Pulse_ArticulatedHandMeshPurple （> 空間感知-> 顯示設定-> 可見的材質。
 
@@ -42,10 +41,10 @@ ms.locfileid: "101884057"
 
 類似于 HoloLens 2 的 shell 體驗，您可以用光點來點一下，以產生空間網格的閃爍效果。 範例場景包含 ExampleSpatialMesh 物件，此物件是 Unity 遊戲模式的測試空間網格資料。 此物件將會在裝置上停用並隱藏。
 
-如果為 true， **PulseShaderSpatialMeshHandler.cs** 腳本會在叫用點位置的空間網格上產生脈衝效果 `PulseOnSelect` 。 在  `Auto Pulse` 重複動畫的材質本身中，屬性也可以設定為 true。  在範例場景中，此腳本會附加至 PulseShaderSpatialMeshParent 預製專案。  空間感知設定檔會透過執行時間空間網格預製專案屬性來參考這個預製專案。 在執行時間期間，PulseShaderSpatialMeshParent 預製專案和會具現化，並新增至空間網狀階層 (只有在裝置上，在編輯器) 中無法觀察到此行為。
+若為 true，則 **PulseShaderSpatialMeshHandler** 會在叫用點位置的空間網格上產生脈衝效果 `PulseOnSelect` 。 在  `Auto Pulse` 重複動畫的材質本身中，屬性也可以設定為 true。  在範例場景中，此腳本會附加至 PulseShaderSpatialMeshParent 預製專案。  空間感知設定檔會透過執行時間空間網格預製專案屬性來參考這個預製專案。 在執行時間期間，PulseShaderSpatialMeshParent 預製專案和會具現化，並新增至空間網狀階層 (只有在裝置上，在編輯器) 中無法觀察到此行為。
 
 ## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>手形網格範例-PulseShaderHandMeshExample unity
 
 這個範例場景示範使用脈衝著色器的手網格視覺效果。 HoloLens 裝置偵測到手時，會觸發脈衝動畫一次。 這種視覺效果的意見反應可以提高使用者的互動信賴度。 
 
-**PulseShaderHandMeshHandler.cs** 腳本會針對指派的材質產生脈衝效果。 預設會核取 [手動偵測到的脈衝]。
+**PulseShaderHandMeshHandler .cs** 腳本會針對指派的材質產生脈衝效果。 預設會核取 [手動偵測到的脈衝]。

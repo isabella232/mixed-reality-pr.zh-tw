@@ -4,14 +4,13 @@ description: 描述可透過程式設計方式設定空間感知系統的主要�
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4b863acb7af4c731bff1aed0a28532f804bdf4e1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f1fd6620934c3936aa596eda52bab300a84a1acb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780805"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685051"
 ---
 # <a name="configuring-mesh-observers-via-code"></a>透過程式碼設定網格觀察者
 
@@ -158,6 +157,6 @@ public class MyMeshObservationExample : MonoBehaviour, SpatialAwarenessHandler
 
 ## <a name="see-also"></a>另請參閱
 
-- [空間感知入門](spatial-awareness-getting-started.md)
+- [空間感知開始使用](spatial-awareness-getting-started.md)
 - [設定空間感知網格觀察者](configuring-spatial-awareness-mesh-observer.md)
 - [空間感知 API 檔](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)

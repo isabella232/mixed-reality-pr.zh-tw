@@ -4,14 +4,13 @@ description: 修改 MRTK 中的設定檔。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 設定檔
-ms.openlocfilehash: 6eeab688ac4d4c22c29bf808be680fb48c008c4a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 98536341b854f834273107b76f67388189046196
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779981"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680881"
 ---
 # <a name="configuration-and-profiles"></a>設定和設定檔
 

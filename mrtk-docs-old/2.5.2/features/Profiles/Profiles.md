@@ -4,14 +4,13 @@ description: MRTK 中的檔設定檔
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、設定檔、
-ms.openlocfilehash: 151d122fdaca20603c517733b719c6a98a9710b4
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d072dfe71772c53565c0984506bce59bfe8c069c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780220"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687108"
 ---
 # <a name="profiles"></a>Profiles
 
@@ -33,7 +32,7 @@ MRTK 會提供一組預設設定檔，其中涵蓋 MRTK 支援的大部分平臺
 
 ## <a name="hololens-2-profile"></a>HoloLens 2 設定檔
 
-MRTK 也提供已針對 HoloLens 2： `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2) 優化部署和測試的預設設定檔。
+MRTK 也提供已針對 HoloLens 2： `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2) 進行部署和測試的預設設定檔。
 
 當系統提示您選擇 MixedRealityToolkit 物件的設定檔時，請使用此設定檔，而不是預設選取的設定檔。
 

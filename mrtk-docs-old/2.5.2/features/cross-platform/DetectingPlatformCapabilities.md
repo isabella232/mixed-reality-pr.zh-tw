@@ -4,18 +4,17 @@ description: MRTK 支援的不同功能詳細資料
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、功能、
-ms.openlocfilehash: 00d6cd822b261413d4b4270041966675bec4280a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 62e03c6d47deb079d3460759b5c694dd258a7767
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783499"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687098"
 ---
 # <a name="detecting-platform-capabilities"></a>偵測平臺功能
 
-MRTK 常見的問題是，您必須知道哪些特定的裝置 (例如： Microsoft HoloLens 2) 用來執行應用程式。 識別確切的硬體在不同的平臺上可能會有挑戰性。 相反地，MRTK 會提供一種方法來識別執行時間的特定功能， (例如，如果目前的裝置端點支援明確的手) 。
+MRTK 常見的問題是，您必須知道哪些特定裝置 (例如： Microsoft HoloLens 2) 用來執行應用程式。 識別確切的硬體在不同的平臺上可能會有挑戰性。 相反地，MRTK 會提供一種方法來識別執行時間的特定功能， (例如，如果目前的裝置端點支援明確的手) 。
 
 ## <a name="capabilities"></a>功能
 

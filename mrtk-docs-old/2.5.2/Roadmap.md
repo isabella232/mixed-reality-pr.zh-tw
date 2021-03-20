@@ -4,14 +4,13 @@ description: 概述 MRTK 藍圖的檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: e2a581ab52d5e5d854da485bf6c9b99ac7fa3500
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 939fc21df38ab1891db891bf876c510030860cfb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780690"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681541"
 ---
 # <a name="roadmap"></a>藍圖
 
@@ -23,7 +22,7 @@ ms.locfileid: "101780690"
 
 ## <a name="upcoming-releases"></a>即將推出的版本
 
-| 產品 | 描述 | 時間表 | 專案面板 |
+| 產品 | Description | 時間表 | 專案面板 |
 | --- | --- | --- | --- |
 | [MRTK 2.6 版](#260) | MRTK 的下一個反復專案 | 2021 年 1 月 | [https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/13](https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/13) |
 
@@ -78,7 +77,7 @@ MRTK 團隊透過 [OpenXR](https://techcommunity.microsoft.com/t5/mixed-reality-
 
 **包裝**
 
-在 MRTK 2.5.0 中，我們發行了 Unity 套件管理員 (UPM) 的支援。 我們將繼續進行改進，讓您更輕鬆地使用 UPM 下載套件。
+在 MRTK 2.5.0 中，我們發行了 Unity 封裝管理員 (UPM) 的支援。 我們將繼續進行改進，讓您更輕鬆地使用 UPM 下載套件。
 
 ## <a name="backlog"></a>Backlog
 

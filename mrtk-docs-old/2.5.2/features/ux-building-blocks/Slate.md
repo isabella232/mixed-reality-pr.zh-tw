@@ -4,14 +4,13 @@ description: MRTK 中的平板相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、平板、
-ms.openlocfilehash: 667558d0159c179edc9203738a2ddae90511013b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c7fdb66b3385df2f706e9f4d7c4b58e7bc736bad
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779704"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686681"
 ---
 # <a name="slate"></a>平板
 

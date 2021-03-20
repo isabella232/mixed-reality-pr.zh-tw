@@ -4,14 +4,13 @@ description: MRTK 中不同場景類型的檔
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 957369a32daca32cd091d5acd976f80c236679ae
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0187219a01e9cd31803ded2bd30a4f78c1802d5f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780844"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104702354"
 ---
 # <a name="scene-types"></a>場景類型
 
@@ -51,7 +50,7 @@ Unity 的光源設定-環境光源、skyboxes 等，在使用加法式載入時�
 
 您的設定檔會儲存光源設定的快取複本，並保留在燈光場景中。 如果這些設定在您的燈光場景中變更，您將需要更新快取，以確保光源在播放模式中如預期般顯示。 當您的設定檔懷疑快取設定已過期時，就會顯示警告。 按一下 `Update Cached Lighting Settings` 會載入每個光源場景、將其設定解壓縮，然後將它們儲存在您的設定檔中。
 
-![場景系統光源設定](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
+![場景系統快取光源設定](../images/scene-system/MRTK_SceneSystemCachedLightingSettings.PNG)
 
 ### <a name="editor-behavior"></a>編輯器行為
 

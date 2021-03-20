@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: 22d4eddc9a3b6d4b175a9d92af1b36b5cd96055a
-ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
+ms.openlocfilehash: 7fd4a641c87b13d09a25926cfe65fa7b8c66c2f0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103234534"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681695"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
 
@@ -44,6 +44,16 @@ ms.locfileid: "103234534"
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
 
 * <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 與 UNITY 2019 LTS (目前已安裝 2019.4) x，並已新增通用 Windows 平臺組建支援模組
+
+安裝 Unity 時，請務必檢查「 **平臺**」底下的下列元件。
+* **通用 Windows 平臺組建支援** 
+* **Windows Build 支援 (IL2CPP)**
+
+![Unity 通用 Windows 平臺組建支援選項](../../../develop/images/Unity_Install_Option_UWP.png)
+
+如果您已安裝 Unity 但未安裝這些選項，您可以透過 Unity Hub 中 **的 [新增模組** ] 功能表來新增這些選項。
+
+![Unity Windows Build 支援選項](../../../develop/images/Unity_Install_Option_UWP2.png)
 
 > [!CAUTION]
 > 本教學課程系列的建議 MRTK 版本為 MRTK 2.6。

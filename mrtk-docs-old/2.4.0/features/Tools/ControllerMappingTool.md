@@ -4,14 +4,14 @@ description: MRTK 中的控制器對應工具檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f73fcda8669e5a72f1eeb0ef5bf41131d33fe544
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 9008925869b7f7f4f219f056cee512651fe451b1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781449"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688008"
 ---
 # <a name="controller-mapping-tool"></a>控制器對應工具
 

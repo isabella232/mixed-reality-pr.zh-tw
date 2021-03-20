@@ -4,14 +4,13 @@ description: MRTK 中不同類型的輸入提供者相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 07ee853542205277d070a3a47319b87e387ea762
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 56b182f81e2dd1277050b8b1b3f7a7d7434ac92a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781140"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683391"
 ---
 # <a name="input-providers"></a>輸入提供者
 

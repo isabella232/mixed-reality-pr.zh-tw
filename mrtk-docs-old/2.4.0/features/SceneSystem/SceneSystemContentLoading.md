@@ -4,14 +4,14 @@ description: 使用 MRTK 載入場景系統的檔
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 54aa904d3d216030af25b87360055ccfe289e713
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 99d0d9fe4d0beafb71acf548e1636b7d673dec39
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780970"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681191"
 ---
 # <a name="content-scene-loading"></a>內容場景載入
 

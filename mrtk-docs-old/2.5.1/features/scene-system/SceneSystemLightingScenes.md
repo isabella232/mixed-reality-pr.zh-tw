@@ -4,14 +4,13 @@ description: 場景中光源的相關檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 753738d8ac1404bb4d959ede108bfd8f4ec4749b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4cd6b61172f03da99ba33a06d06e20f095572622
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779481"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684821"
 ---
 # <a name="lighting-scene-operations"></a>光源場景作業
 
@@ -35,7 +34,7 @@ sceneSystem.SetLightingScene("MiddayLighting", LightingSceneTransitionType.Cross
 
 可用的樣式如下：
 
-類型 | 描述 | 持續時間
+類型 | Description | 持續時間
 --- | --- | ---
 無 | 先前的光源場景已卸載，已載入新的光源場景。 沒有轉換。 | 忽略
 FadeToBlack | 上一個光源場景淡出為黑色。 已載入新的光源場景，然後從黑色淡出。 適用于在位置之間進行平滑轉換。 | 已使用

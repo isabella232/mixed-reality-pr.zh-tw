@@ -4,14 +4,14 @@ description: 從 HTK 遷移至 MRTK。
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、HTK、
-ms.openlocfilehash: fd9dab34ffb741b421b213489756940a6e1811e3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 60493e960140b73b2625fa7645052703352123d7
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783520"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687728"
 ---
 # <a name="porting-guide"></a>移植指南
 
@@ -22,7 +22,7 @@ ms.locfileid: "101783520"
 |          方法                 | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
 | 類型                      | 按鈕的特定事件，以及相關的輸入類型資訊。 | 動作/手勢型輸入，通過事件傳遞。 |
-| 安裝程式                     | 將 InputManager 放置在場景中。 | 在設定 [設定檔](../out-of-scope/MixedRealityConfigurationGuide.md) 中啟用輸入系統，並指定具體的輸入系統類型。 |
+| 設定                     | 將 InputManager 放置在場景中。 | 在設定 [設定檔](../out-of-scope/MixedRealityConfigurationGuide.md) 中啟用輸入系統，並指定具體的輸入系統類型。 |
 | 組態             | 設定于偵測器中，在場景中的每個個別腳本上。 | 透過混合現實輸入系統設定檔及其相關設定檔設定，如下所示。 |
 
 相關設定檔：
@@ -36,7 +36,7 @@ ms.locfileid: "101783520"
 
 在場景中的主要攝影機物件上，會修改[注視提供者](xref:Microsoft.MixedReality.Toolkit.Input.GazeProvider)設定。
 
-平臺支援元件 (例如，必須將 Windows Mixed Reality 裝置管理員) 新增至其對應的服務資料提供者。
+平臺支援元件 (例如，必須將 Windows Mixed Reality 裝置管理員) 新增至其對應服務的資料提供者。
 
 ### <a name="interface-and-event-mappings"></a>介面和事件對應
 
@@ -70,8 +70,8 @@ ms.locfileid: "101783520"
 
 |           方法                | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 刪除 MainCamera、將 MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera 預製專案新增至場景 **或** 使用混合現實工具組 > 設定 > 套用混合現實場景設定] 功能表項目。 | 透過混合現實工具組在 MixedRealityPlayspace 底下 MainCamera 父代 > 新增至場景並設定 .。。 |
-| 組態             | 在預製專案實例上執行的相機設定設定。 | [混合現實攝影機設定檔](xref:Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile)中設定的相機設定。 |
+| 設定                     | 刪除 MainCamera、將 MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera 預製專案新增至場景 **或** 使用混合現實工具組 > 設定 > 套用混合現實場景設定] 功能表項目。 | 透過混合現實工具組在 MixedRealityPlayspace 底下 MainCamera 父代 > 新增至場景並設定 .。。 |
+| 組態             | 在預製專案實例上執行的相機設定設定。 | 在 [混合實境相機設定檔](xref:Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile)中設定的相機設定。 |
 
 ## <a name="speech"></a>語音
 
@@ -79,7 +79,7 @@ ms.locfileid: "101783520"
 
 |      方法                     | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 將 SpeechInputSource 新增至您的場景。 | 關鍵字服務 (例如，Windows 語音輸入管理員) 必須加入至輸入系統的資料提供者。 |
+| 設定                     | 將 SpeechInputSource 新增至您的場景。 | 關鍵字服務 (例如，Windows 語音輸入管理員) 必須加入至輸入系統的資料提供者。 |
 | 組態             | 已辨識的關鍵字是在 SpeechInputSource 的偵測器中設定。 | 關鍵字是在 [Mixed Reality 語音命令設定檔](Input/Speech.md)中設定。 |
 | 事件處理常式            | `ISpeechHandler` | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
@@ -87,7 +87,7 @@ ms.locfileid: "101783520"
 
 |           方法                | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 將 DictationInputManager 新增至您的場景。 | 聽寫支援需要服務 (例如，Windows 聽寫輸入管理員) 要加入至輸入系統的資料提供者。 |
+| 設定                     | 將 DictationInputManager 新增至您的場景。 | 聽寫支援需要服務 (例如，Windows 聽寫輸入管理員) 要加入至輸入系統的資料提供者。 |
 | 事件處理常式            | `IDictationHandler` | `IMixedRealityDictationHandler`[`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
 ## <a name="spatial-awareness--mapping"></a>空間感知/對應
@@ -96,34 +96,34 @@ ms.locfileid: "101783520"
 
 |           方法                | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 將 SpatialMapping 預製專案加入場景。 | 在設定設定檔中啟用空間感知系統，並新增空間觀察器 (例如，Windows Mixed Reality 空間網格觀察者) 至空間感知系統的資料提供者。 |
+| 設定                     | 將 SpatialMapping 預製專案加入場景。 | 在設定設定檔中啟用空間感知系統，並新增空間觀察者 (例如 Windows Mixed Reality 空間網格觀察器) 至空間感知系統的資料提供者。 |
 | 組態             | 在偵測器中設定場景實例。 | 設定每個空間觀察者設定檔的設定。 |
 
 ### <a name="planes"></a>飛機
 
 |            方法               | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 使用 `SurfaceMeshesToPlanes` 腳本。 | 尚未實作。 |
+| 設定                     | 使用 `SurfaceMeshesToPlanes` 腳本。 | 尚未實作。 |
 
 ### <a name="spatial-understanding"></a>空間理解
 
 |         方法                  | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 將 SpatialUnderstanding 預製專案加入場景。 | 尚未實作。 |
+| 設定                     | 將 SpatialUnderstanding 預製專案加入場景。 | 尚未實作。 |
 | 組態             | 在偵測器中設定場景實例。 | 尚未實作。 |
 
 ## <a name="boundary"></a>界限
 
 |             方法              | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 將 `BoundaryManager` 腳本加入場景中。 | 在設定檔中啟用界限系統。 |
+| 設定                     | 將 `BoundaryManager` 腳本加入場景中。 | 在設定檔中啟用界限系統。 |
 | 組態             | 在偵測器中設定場景實例。 | 設定界限視覺效果設定檔中的設定。 |
 
 ## <a name="sharing"></a>共用
 
 |         方法                  | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 安裝程式                     | 共用服務：新增共用預製專案至場景。 UNet：使用 SharingWithUNET 範例。 | 進行中 |
+| 設定                     | 共用服務：新增共用預製專案至場景。 UNet：使用 SharingWithUNET 範例。 | 進行中 |
 | 組態             | 在偵測器中設定場景實例。 | 進行中 |
 
 ## <a name="ux"></a>Ux

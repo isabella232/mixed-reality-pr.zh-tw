@@ -1,19 +1,19 @@
 ---
-title: MR Spatial 230 - 空間對應
+title: HoloLens (第1代) 空間 230-空間對應
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解空間對應概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間對應、表面重建、網格、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 6b218de239da04190fbf08ff8668fa16009df949
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582935"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730135"
 ---
-# <a name="mr-spatial-230-spatial-mapping"></a>MR Spatial 230：空間對應
+# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (第1代) 空間230：空間對應
 
 >[!NOTE]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
@@ -151,8 +151,8 @@ ms.locfileid: "98582935"
 * 按一下 [連線]。
 * 觀察 GPU 呈現框架所需的毫秒數。
 * 停止應用程式在裝置上執行。
-* 返回 Visual Studio 並開啟 **SpatialMappingObserver.cs**。 您會在 Assembly-CSharp (通用 Windows) 專案的 HoloToolkit\SpatialMapping 資料夾中找到它。
-* 尋找 **喚醒的 ( # B1** 函數，並加入下列程式程式碼： **TrianglesPerCubicMeter = 1200;**
+* 返回 Visual Studio 並開啟 **SpatialMappingObserver。** 您會在 Assembly-CSharp (通用 Windows) 專案的 HoloToolkit\SpatialMapping 資料夾中找到它。
+* 尋找 **喚醒的 ()** 函式，並加入下列程式程式碼： **TrianglesPerCubicMeter = 1200;**
 * 將專案重新部署至您的裝置，然後 **重新連接** 分析工具。 觀察轉譯畫面格的毫秒數變更。
 * 停止應用程式在裝置上執行。
 
@@ -160,7 +160,7 @@ ms.locfileid: "98582935"
 
 最後，讓我們來儲存房間網格並將它載入 Unity 中。
 
-* 返回 Visual Studio，並移除您在上一節中于 **喚醒 ( # B1** 函數中新增的 **TrianglesPerCubicMeter** 行。
+* 返回 Visual Studio，並移除您在上一節中于 **喚醒 ()** 函數中新增的 **TrianglesPerCubicMeter** 行。
 * 將專案重新部署至您的裝置。 我們現在應該以每個三立方計量的 **500** 三角形來執行。
 * 開啟瀏覽器並輸入您的 HoloLens IPAddress，以流覽至 **Windows 裝置入口網站**。
 * 選取左面板中的 [ **3D 視圖** ] 選項。
@@ -231,15 +231,15 @@ Unity 有很大的預覽材質，但最好是在裝置中簽出轉譯的好主�
 * 在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpatialProcessing** 物件。
 * 將 **SpatialProcessing** 物件拖曳 & 放入 [階層 **] 面板中** 。
 
-SpatialProcessing 預製專案包含處理空間對應資料的元件。 **SurfaceMeshesToPlanes.cs** 會根據空間對應資料尋找並產生平面。 我們將在應用程式中使用平面來代表牆壁、樓層和上限。 此預製專案也包含可從空間對應網格中移除頂點的 **RemoveSurfaceVertices.cs** 。 這可以用來在網格中建立洞，或移除不再需要的多餘三角形 (因為可以改用平面來取代) 。
+SpatialProcessing 預製專案包含處理空間對應資料的元件。 **SurfaceMeshesToPlanes** 會根據空間對應資料尋找並產生平面。 我們將在應用程式中使用平面來代表牆壁、樓層和上限。 此預製專案也包含可從空間對應網格移除頂點的 **RemoveSurfaceVertices。** 這可以用來在網格中建立洞，或移除不再需要的多餘三角形 (因為可以改用平面來取代) 。
 
 * 在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpaceCollection** 物件。
 * 將 **SpaceCollection** 物件拖放 **到 [階層** ] 面板中。
 * **在 [階層] 面板中**，選取 [ **SpatialProcessing** ] 物件。
 * 在 [偵測 **器** ] 面板中，尋找 [ **播放空間管理員] (腳本)** 元件。
-* 按兩下 [ **PlaySpaceManager.cs** ]，在 Visual Studio 中開啟。
+* 按兩下 **PlaySpaceManager** ，在 Visual Studio 中開啟。
 
-PlaySpaceManager.cs 包含應用程式特定的程式碼。 我們將在此腳本中新增功能，以啟用下列行為：
+PlaySpaceManager 包含應用程式特定的程式碼。 我們將在此腳本中新增功能，以啟用下列行為：
 
 1. 超過掃描時間限制 (10 秒) 之後，停止收集空間對應資料。
 2. 處理空間對應資料：
@@ -247,7 +247,7 @@ PlaySpaceManager.cs 包含應用程式特定的程式碼。 我們將在此腳�
     2. 使用 RemoveSurfaceVertices 來移除落在平面邊界內的表面三角形。
 3. 產生世界各地的全像投影集合，並將它們放在靠近使用者的牆和地面平面上。
 
-完成標示于 PlaySpaceManager.cs 中的程式碼撰寫練習，或將腳本取代為以下的完成解決方案：
+完成標示在 PlaySpaceManager 中的程式碼撰寫練習，或將腳本取代為以下的完成解決方案：
 
 ```cs
 using System.Collections.Generic;
@@ -470,7 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * 在 [偵測 **器** ] 面板中，尋找 **平面網格以 (腳本)** 元件。
 * 將 [ **繪製平面** ] 屬性變更為 [ **Nothing** ] 以清除選取專案。
 * 將 **Draw 平面** 屬性變更為 **牆**，如此就只會轉譯牆壁平面。
-* 在 [ **專案** ] 面板的 [ **腳本** ] 資料夾中，按兩下 [ **Placeable.cs** ]，在 Visual Studio 中開啟。
+* 在 [ **專案** ] 面板的 [ **腳本** ] 資料夾中，按兩下可 **放置的 .cs** ，在 Visual Studio 中開啟。
 
 可 **放置** 的腳本已附加至在完成平面尋找之後所建立的海報和投影方塊。 我們只需要取消批註一些程式碼，這個腳本就能達成下列目標：
 
@@ -482,7 +482,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 6. 重新排列影像的方向，使其與具有親和性的表面類型 (垂直或水準) 對齊。
 7. 順暢地將全像放置在選取的介面上，以避免跳躍或貼齊行為。
 
-取消批註下列程式碼撰寫練習中的所有程式碼，或在 **Placeable.cs** 中使用此已完成的解決方案：
+取消批註下列程式碼撰寫練習中的所有程式碼，或在可放置的中使用這個已完成的解決方案 **。 .cs**：
 
 ```cs
 using System.Collections.Generic;
@@ -1098,13 +1098,13 @@ public class Placeable : MonoBehaviour
 * 在 [偵測 **器** ] 面板中，找出地球的材質 (底部的元件) 。
 * 在 [ **著色器] 下拉式** 清單中，將著色器變更為 **自訂 > OcclusionRim**。 如果有另一個物件 pixels occluded，這會在地球周圍呈現藍色醒目提示。
 
-最後，我們要為日光系統中的行星啟用 x 光線視覺效果。 我們必須編輯在 Scripts\SolarSystem 資料夾) 中找到的 **PlanetOcclusion.cs** (，才能達到下列目標：
+最後，我們要為日光系統中的行星啟用 x 光線視覺效果。 我們必須在 Scripts\SolarSystem 資料夾) 中編輯 **PlanetOcclusion** (，才能達到下列目標：
 
 1. 判斷 SpatialMapping 層是否 pixels occluded 行星 (房間網格和平面) 。
 2. 當 SpatialMapping 圖層 pixels occluded 時，顯示行星的線框表示。
 3. 隱藏 SpatialMapping 圖層未封鎖之行星的線框表示。
 
-遵循 PlanetOcclusion.cs 中的編碼練習，或使用下列解決方案：
+遵循 PlanetOcclusion 中的程式碼練習，或使用下列解決方案：
 
 ```cs
 using UnityEngine;

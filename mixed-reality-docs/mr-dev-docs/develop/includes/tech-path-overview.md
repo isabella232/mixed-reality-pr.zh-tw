@@ -1,9 +1,9 @@
 ---
 ms.openlocfilehash: 6bcbb5894af2bbd99a42ae4fb49a4d047355c0f0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "101882734"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
@@ -85,7 +85,7 @@ ms.locfileid: "101882734"
 
 |  工具/SDK  |  說明  |
 | --- | --- |
-| [適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX 工具是要發行的第一個外掛程式，目前僅支援 HoloLens 2。 外掛程式包含 C++ 程式碼、藍圖，以及用於輸入模擬、手部互動、表面磁性的常見 UX 功能的範例資產。 |
+| [適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedRealityToolkit-Unreal) | UX 工具是要發行的第一個外掛程式，目前只有 HoloLens 2 才支援。 外掛程式包含 C++ 程式碼、藍圖，以及用於輸入模擬、手部互動、表面磁性的常見 UX 功能的範例資產。 |
 | [適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/) | 圖形工具是一種 UE 遊戲外掛程式，其中包含程式碼、藍圖和範例資產，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。 |
 
 ## <a name="cloud-services"></a>雲端服務

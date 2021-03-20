@@ -4,18 +4,17 @@ description: 在 Unity pakage 管理員中使用 MRTK
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK 套件、
-ms.openlocfilehash: 61d080c8db98b0886b6cbbabcc48275d64cbf089
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a850d0a84f521681328375da86b4fffd351b411b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781223"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684731"
 ---
-# <a name="mixed-reality-toolkit-and-unity-package-manager"></a>混合現實工具組和 Unity 套件管理員
+# <a name="mixed-reality-toolkit-and-unity-package-manager"></a>混合現實工具組和 Unity 封裝管理員
 
-從版本2.5.0 開始，使用 [混合現實功能工具](https://aka.ms/MRFeatureToolDocs)，Microsoft 混合現實工具組會在使用 unity 2019.4 和更新版本時，與 Unity 套件管理員 (UPM) 整合。
+從版本2.5.0 開始，使用 [混合現實功能工具](https://aka.ms/MRFeatureToolDocs)，Microsoft 混合現實工具組會在使用 unity 2019.4 和更新版本時，與 unity 封裝管理員 (UPM) 整合。
 
 ## <a name="using-the-mixed-reality-feature-tool"></a>使用 Mixed Reality 功能工具
 
@@ -36,14 +35,14 @@ ms.locfileid: "101781223"
 
 ![必要的相依性](../features/images/packaging/RequiredDependencies.png)
 
-## <a name="managing-mixed-reality-features-with-the-unity-package-manager"></a>使用 Unity 套件管理員管理混合的現實功能
+## <a name="managing-mixed-reality-features-with-the-unity-package-manager"></a>利用 Unity 封裝管理員管理混合的現實功能
 
-一旦將混合現實工具組套件新增至套件資訊清單之後，就可以使用 Unity 套件管理員使用者介面進行管理。
+一旦將混合現實工具組套件新增至套件資訊清單之後，就可以使用 Unity 封裝管理員使用者介面進行管理。
 
 ![MRTK Foundation UPM 套件](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> 如果使用 Unity 套件管理員移除混合現實工具組套件，就必須使用 [先前所述的步驟](#using-the-mixed-reality-feature-tool)重新新增。
+> 如果使用 Unity 封裝管理員移除混合現實工具組套件，就必須使用 [先前所述的步驟](#using-the-mixed-reality-feature-tool)重新新增。
 
 ### <a name="using-mixed-reality-toolkit-examples"></a>使用混合現實工具組範例
 

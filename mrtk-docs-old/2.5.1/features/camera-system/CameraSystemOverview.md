@@ -4,18 +4,17 @@ description: MRTK 中相機系統的登陸頁面
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、攝影機、
-ms.openlocfilehash: 163d40d2b28d8c5d021daaa8a6b880af081b71c4
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d2c5a0a806d3f6fd6844eca716ca70ec233d1146
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783428"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683891"
 ---
 # <a name="camera-system"></a>攝影機系統
 
-攝影機系統可讓 Microsoft Mixed Reality 工具組設定和優化應用程式的攝影機，以用於混合現實應用程式。 您可以使用相機系統來撰寫應用程式，以支援不透明的 (例如：虛擬實境) 和透明的 (例如： Microsoft HoloLens) 裝置，而不需要撰寫程式碼來區分每種類型的顯示器並配合。
+攝影機系統可讓 Microsoft Mixed Reality 工具組設定和優化應用程式的攝影機，以用於混合現實應用程式。 您可以使用相機系統來撰寫應用程式，以支援不透明的 (例如：虛擬實境) 和透明的 (例如： Microsoft HoloLens) 裝置，而不需要撰寫程式碼來區分和容納各種類型的顯示。
 
 ## <a name="enabling-the-camera-system"></a>啟用相機系統
 
@@ -56,7 +55,7 @@ ms.locfileid: "101783428"
 
 ![攝影機顯示設定](../images/camera-system/CameraDisplaySettings.png)
 
-顯示設定是針對不透明的 (例如：虛擬實境) 和透明 (例如： Microsoft HoloLens) 顯示。 相機是在執行時間使用這些設定來設定。
+顯示設定是針對不透明的 (（例如：虛擬實境) 和透明的 (例如： Microsoft HoloLens) 顯示兩者指定的。 相機是在執行時間使用這些設定來設定。
 
 **近距離剪輯**
 

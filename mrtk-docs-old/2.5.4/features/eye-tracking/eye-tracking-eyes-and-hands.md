@@ -4,14 +4,13 @@ description: 如何搭配 MRTK 中的手運動使用眼睛目標作為主要指�
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: a09f18e1deec3668df8222acd47dcc9f4cb81782
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4cebcc5bde97f35d17d7f26233af2c2a140458e1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783465"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685431"
 ---
 # <a name="eyes--hand-interaction"></a>眼睛 + 手互動
 

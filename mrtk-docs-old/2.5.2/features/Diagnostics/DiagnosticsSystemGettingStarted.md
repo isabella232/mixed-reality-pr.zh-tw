@@ -4,14 +4,13 @@ description: 在 MRTK 中啟用和停用診斷的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 2ddf8449e6956283e2287f523ab424321775c631
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 928ca594017b942df1c21a2479d5b93f06b6ae9e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781250"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104681461"
 ---
 # <a name="diagnostic-system"></a>診斷系統
 

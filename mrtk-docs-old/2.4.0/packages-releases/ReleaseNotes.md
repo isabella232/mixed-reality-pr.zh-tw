@@ -4,14 +4,14 @@ description: 目前 MRTK 版本的發行 nots
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 850605855ff756939c334bf8116022a1340aa9f6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 262beea344b7b6a73328e6987acb60610e814f60
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781087"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104687768"
 ---
 # <a name="microsoft-mixed-reality-toolkit-release-notes"></a>Microsoft Mixed Reality 工具組版本資訊
 
@@ -34,8 +34,8 @@ ms.locfileid: "101781087"
 
 需要下列軟體。
 
-- [Microsoft Visual Studio](https://visualstudio.microsoft.com) (2017 或 2019) 3.x 版或更高版本
-- Visual Studio 安裝程式安裝的[Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 18362 或更新版本 () 
+- [Microsoft Visual Studio](https://visualstudio.microsoft.com) (2017 或 2019) 版或更高版本
+- Visual Studio 安裝程式安裝[WINDOWS 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 18362 或更新版本 () 
 - [Unity](https://unity3d.com/get-unity/download) 2018.4 LTS 或 2019 (2019.3 建議的) 
 
 **下載**
@@ -57,7 +57,7 @@ ms.locfileid: "101781087"
 
 **Ultraleap 手追蹤支援**
 
-[閏運動資料提供者](../features/CrossPlatform/LeapMotionMRTK.md)可讓您針對 VR 應用程式進行明確的追蹤，也適用于在編輯器中快速建立原型。  您可以將資料提供者設定為使用在耳機上掛接的 Leap 運動控制器，或放在桌上的上架。
+[閏運動 Data Provider](../features/CrossPlatform/LeapMotionMRTK.md)可針對 VR 應用程式進行明確的手動追蹤，也適用于在編輯器中快速建立原型。  您可以將資料提供者設定為使用在耳機上掛接的 Leap 運動控制器，或放在桌上的上架。
 
 需要 [Leap 移動控制器](https://www.ultraleap.com/product/leap-motion-controller/) 才能使用此資料提供者。
 
@@ -113,13 +113,13 @@ MRTK 現在隨附的遷移工具可協助您將已淘汰的元件升級至較新
 按鈕設定協助程式 **已新增至 Pressable 按鈕** 
  ![按鈕設定協助程式 ](https://user-images.githubusercontent.com/9789716/70167111-e3175600-167a-11ea-9c52-444509c06105.gif) 這項新功能可讓您輕鬆地變更按鈕的圖示和文字。 圖示支援四、sprite 和 TextMesh Pro 的 .SDF 字型材質。 如需詳細資料，請參閱 MRTK 的 [按鈕檔](../features/README_Button.md#how-to-change-the-icon-and-text) 。
 
-**新的 HoloLens 2 樣式切換按鈕-核取方塊、切換、無線電**
+**新的 HoloLens 2 樣式切換按鈕-核取方塊、切換、選項按鈕**
 <br/><img src="https://user-images.githubusercontent.com/13754172/75299797-df631d80-57ea-11ea-8857-8ef647df0aca.gif" width="450" alt="Button Config Helper">
 <br/><img src="https://user-images.githubusercontent.com/13754172/75299783-d6724c00-57ea-11ea-88b1-85e4a585212f.gif" width="450" alt="Pressabe button">
 
 **功能表的增強功能**
 
-在許多應用程式中，已調整了手中的功能表。 我們發現的最大問題之一，是在操作物件或與其他內容互動等情況下，發生意外的錯誤啟用。已將新的「注視啟用」選項新增至 HandConstraintPalmUp.cs，以防止啟用錯誤。 使用這個選項時，功能表不會不慎顯示，直到使用者查看為止。<br/>
+在許多應用程式中，已調整了手中的功能表。 我們發現的最大問題之一，是在操作物件或與其他內容互動等情況下，發生意外的錯誤啟用。新的「注視啟用」選項已新增至 HandConstraintPalmUp，以防止啟用錯誤。 使用這個選項時，功能表不會不慎顯示，直到使用者查看為止。<br/>
 ![0416_HandMenu_02](https://user-images.githubusercontent.com/13754172/79507261-4aabbd80-7fec-11ea-95c4-6e3f4bd18c11.gif)
 
 **手動功能表範例更新**
@@ -133,7 +133,7 @@ MRTK 現在隨附的遷移工具可協助您將已淘汰的元件升級至較新
 **實驗)  (對話方塊**
 <br/><img src="../features/Images/Dialog/MRTK_UX_Dialog_Main.png" width="450" alt="UX Dialog Box">
 
-對話方塊 UI 已使用新的 HoloLens 2 shell 樣式設計更新從 HoloToolkit 移植。
+對話方塊 UI 已使用新的 HoloLens 2 shell 樣式的設計更新，從 HoloToolkit 進行移植。
 
 **停駐 (實驗)**
 <br/><img src="https://user-images.githubusercontent.com/621574/76669327-65e86080-6548-11ea-85a3-f84f6b367f97.gif" width="450" alt="Dock">
@@ -156,7 +156,7 @@ MRTK 現在隨附的遷移工具可協助您將已淘汰的元件升級至較新
 
 <img src="https://user-images.githubusercontent.com/168492/77582981-86e07800-6e9d-11ea-86e5-bf2c0840296c.png" width="300" alt="MRTK Keyboard for unity" />
 
-我們引進了兩個協助程式元件， [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField) [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField) 可新增至 Unity UI 中的文字輸入欄位，讓 HoloLens 2 和 Windows Mixed Reality 鍵盤在按一下欄位時顯示。
+我們引進了兩個 helper 元件 [`UI_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.UI_KeyboardInputField) ， [`TMP_KeyboardInputField`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.TMP_KeyboardInputField) 可新增至 Unity UI 中的文字輸入欄位，以便在按一下欄位時，讓 HoloLens 2 和 Windows Mixed Reality 鍵盤顯示。
 
 如需詳細資訊，請參閱- [Mixed Reality 鍵盤](../reference-docs/MixedRealityKeyboard/README_MixedRealityKeyboard.md)協助程式。
 
@@ -277,7 +277,7 @@ MRTK 不完全支援在執行時間交換設定檔。 這項功能會在未來�
 
 **Unity 2018： .NET 後端和 AR Foundation**
 
-Unity 2018 有問題，在此使用 .NET 腳本後端建立通用 Windows 平臺專案時，Unity AR Foundation 套件將會失敗。
+Unity 2018 中有問題，使用 .NET 腳本後端建立通用 Windows 平臺專案時，Unity AR Foundation 套件將會失敗。
 
 若要解決此問題，請執行下列其中一個步驟：
 

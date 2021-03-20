@@ -4,20 +4,20 @@ description: 在 MRTK 中 Docummentation 手勢和其事件
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手勢、
-ms.openlocfilehash: 0cf20efbf6c75bfca75cef6cfaab99e89ecf4c0f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 96bf5fff8eb5941a3270aa0be481390beb5adf83
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779797"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682801"
 ---
 # <a name="gestures"></a>軌跡
 
 手勢是根據人為手的輸入活動。 有兩種類型的裝置會在 MRTK 中引發手勢輸入事件：
 
-- Windows Mixed Reality 裝置，例如 HoloLens。 這會描述捏合運動 ( 「點擊」 ) 和點擊和按住手勢。
+- Windows Mixed Reality 的裝置，例如 HoloLens。 這會描述捏合運動 ( 「點擊」 ) 和點擊和按住手勢。
 
   如需 HoloLens 手勢的詳細資訊，請參閱 [Windows Mixed Reality 手勢檔](https://docs.microsoft.com/windows/mixed-reality/gestures)。
 

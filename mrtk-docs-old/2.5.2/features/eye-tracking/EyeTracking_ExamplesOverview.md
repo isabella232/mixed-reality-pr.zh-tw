@@ -4,14 +4,13 @@ description: 在 MRTK 中建立 eyetracking 的範例
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 85b4cd12baff512933ec2111e3c280ecfd60025b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2b9d373363bee8d7ad3482fc234c8966f6258706
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780455"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683361"
 ---
 # <a name="eye-tracking-examples"></a>目視追蹤範例
 
@@ -66,11 +65,11 @@ MRTK 眼追蹤示範場景已 [載入額外](https://docs.unity3d.com/ScriptRefe
 
 ## <a name="setting-up-the-mrtk-eye-tracking-samples"></a>設定 MRTK 眼追蹤範例
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>Prerequisites
 
-請注意，在裝置上使用眼睛追蹤範例需要 HoloLens 2，以及以套件 Package.appxmanifest 上「注視輸入」功能建立的範例應用程式套件。
+請注意，在裝置上使用眼睛追蹤範例需要 HoloLens 2，以及使用套件 Package.appxmanifest 上的「注視輸入」功能建立的範例應用程式套件。
 
-為了在裝置上使用這些眼睛追蹤範例，請務必在 Visual Studio 中建立應用程式之前，先遵循 [這些步驟](EyeTracking_BasicSetup.md#testing-your-unity-app-on-a-hololens-2) 。
+為了在裝置上使用這些眼睛追蹤範例，請務必遵循 [這些步驟](EyeTracking_BasicSetup.md#testing-your-unity-app-on-a-hololens-2) ，然後再 Visual Studio 中建立應用程式。
 
 ### <a name="1-load-eyetrackingdemo-00-rootsceneunity"></a>1. Load EyeTrackingDemo-00-RootScene unity
 
@@ -109,7 +108,7 @@ _MixedRealityBasicSceneSetup_ (請參閱下面的螢幕擷取畫面) 包含會�
 當游標停留在 gem 上方時，您會發現它會貼齊到目前所觀看 gem 的中央。
 這是一個很好的方法，可以測試在目標上「 _尋找_ 」事件是否如預期般觸發。
 請注意，透過滑鼠控制的 _模擬眼睛_ 是對我們的快速和意外眼睛的補充，相當不良。
-不過，它很適合用來測試基本功能，然後再將其部署到 HoloLens 2 裝置，再逐一查看設計。
+不過，它很適合用來測試基本功能，然後再將其部署到 HoloLens 2 裝置上，然後再逐一查看設計。
 回到我們的眼睛追蹤範例場景： gem 會旋轉一段時間，只要經過查看，並可在其上「查看」和 .。。
 
 - 按 _enter_ (模擬說「select」 ) 
@@ -136,7 +135,7 @@ _MixedRealityBasicSceneSetup_ (請參閱下面的螢幕擷取畫面) 包含會�
 
 4. 按下 _播放_
 
-請注意，像這樣載入子場景並非持續性：這表示如果您將應用程式部署到 HoloLens 2 裝置，它只會載入根場景 (假設它出現在組建設定) 的最上方。
+請注意，載入這類的子場景並非持續性：這表示如果您將應用程式部署至 HoloLens 2 裝置，則只會載入根場景， (假設它出現在您的組建設定) 的上方。
 此外，當您與其他人共用您的專案時，不會自動載入子場景。
 
 ---

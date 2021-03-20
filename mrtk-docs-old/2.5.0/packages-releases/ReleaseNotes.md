@@ -4,14 +4,13 @@ description: 目前 MRTK 版本的發行 nots
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: da70601a0e1d2fc2b383a9cbcfcb4b9dd2de4323
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 08f3c7cb3baacc74f65723de9a74fe2c56829804
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780775"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684921"
 ---
 # <a name="microsoft-mixed-reality-toolkit-250-release-notes"></a>Microsoft Mixed Reality 工具組2.5.0 版本資訊
 
@@ -22,14 +21,14 @@ ms.locfileid: "101780775"
 
 ## <a name="whats-new"></a>最新消息
 
-### <a name="unity-package-manager-upm-support"></a>Unity 套件管理員 (UPM) 支援
+### <a name="unity-package-manager-upm-support"></a>Unity 封裝管理員 (UPM) 支援
 
-混合現實工具組現在可以使用 Unity 套件管理員來管理。
+混合現實工具組現在可以使用 Unity 封裝管理員進行管理。
 
 ![MRTK Foundation UPM 套件](../features/Images/Packaging/MRTK_FoundationUPM.png)
 
 > [!Note]
-> 匯入 MRTK UPM 套件需要一些手動步驟。 如需詳細資訊，請參閱 [混合現實工具組和 Unity 套件管理員](usingupm.md) 。
+> 匯入 MRTK UPM 套件需要一些手動步驟。 如需詳細資訊，請參閱 [混合現實工具組和 Unity 封裝管理員](usingupm.md) 。
 
 ### <a name="oculus-quest-xrsdk-support"></a>Oculus 追求 XRSDK 支援
 
@@ -123,7 +122,7 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 - 若要進行額外的整合步驟，請參閱 [Leap 動作手追蹤](../features/CrossPlatform/LeapMotionMRTK.md) 設定。
 - 針對使用 ARFoundation 的使用者，現在可以在其快速入門步驟中進行額外的手動步驟。
 如需新步驟，請參閱 [ARFoundation](../features/CrossPlatform/UsingARFoundation.md#install-required-packages) 。
-- 針對將在 HoloLens 2 上搭配 [舊版 XR 管線](../features/Tools/HolographicRemoting.md#legacy-xr-setup-instructions) 使用全像的使用者，現在有一個 [手動步驟](../features/Tools/HolographicRemoting.md#dotnetwinrt_present-define-written-into-player-settings) 可以執行。
+- 對於將在 HoloLens 2 上使用 [舊版 XR 管線](../features/Tools/HolographicRemoting.md#legacy-xr-setup-instructions) 的使用者，現在有一個 [手動步驟](../features/Tools/HolographicRemoting.md#dotnetwinrt_present-define-written-into-player-settings) 可以執行。
 
 ### <a name="bounds-control-graduated"></a>界限控制分級
 
@@ -167,7 +166,7 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 
 ### <a name="spatial-mesh-visualization---pulse-on-air-tap"></a>空間網格視覺效果-敲擊時的脈衝
 
-針對空間網格更新脈衝著色器範例，以符合 HoloLens 2 的 shell 行為。
+已更新空間網格的脈衝著色器範例，以符合 HoloLens 2 的 shell 行為。
 
 ![按兩下時的脈衝](https://user-images.githubusercontent.com/13754172/90310153-d0536180-df29-11ea-939a-e9572d4f5670.gif)
 
@@ -266,9 +265,9 @@ TargetTransform 屬性已標示為過時，因為條件約束系統未使用它�
 
 在某些情況下 (例如在 Unity 編輯器) 中使用 LeapMotion 提供者時，CameraCache 可能會在關閉時重新建立 MainCamera。 如需詳細資訊，請參閱 [此問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) 。
 
-### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>透過 Unity 套件管理員匯入範例時的 FileNotFoundException
+### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException 透過 Unity 匯入範例的時機封裝管理員
 
-根據專案路徑的長度，透過 Unity 套件管理員匯入範例可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
+視專案路徑的長度而定，透過 Unity 匯入範例封裝管理員可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>未指定空間定位器。 應用程式將不支援空間音效
 
@@ -276,7 +275,7 @@ TargetTransform 屬性已標示為過時，因為條件約束系統未使用它�
 
 若要解決此問題，請確定：
 
-- **視窗**  > **套件管理員** 已安裝一或多個 XR 套件
+- **視窗**  > **封裝管理員** 已安裝一或多個 XR 套件
 - **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
 
   ![選取音訊 Apatializer](../features/Images/ReleaseNotes/SpatializerSelection.png)

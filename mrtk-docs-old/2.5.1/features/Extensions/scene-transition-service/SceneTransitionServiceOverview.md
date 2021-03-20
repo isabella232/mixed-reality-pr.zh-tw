@@ -4,14 +4,13 @@ description: MRTK 中的場景轉換檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、SceneTransition、
-ms.openlocfilehash: bbaff0ab64db19a5518b6e286dafa0274fd246b7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 546facf53abe38e62176e32e9fb79728e6536d1b
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780316"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682511"
 ---
 # <a name="scene-transition-service"></a>場景轉換服務
 
@@ -46,7 +45,7 @@ ms.locfileid: "101780316"
 主要區段 | 將淡化效果套用至主要攝影機。
 UI | 將淡化效果套用至 UI 圖層上的相機。  (不會影響重迭 UI) 
 全部 | 適用于主要和 UI 攝影機。
-Custom | 適用于透過提供的一組自訂攝影機 `SetCustomFadeTargetCameras`
+自訂 | 適用于透過提供的一組自訂攝影機 `SetCustomFadeTargetCameras`
 
 ### <a name="fade-out-time--fade-in-time"></a>淡化時間/淡化時間
 

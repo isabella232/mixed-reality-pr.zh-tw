@@ -4,14 +4,13 @@ description: 適用于 MRTK 的開發人員入口網站 gudie。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、GitHub
-ms.openlocfilehash: e752508bf111169c91a2d7d96e1adaace86a64e7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: b18bf29dc0c2a308870ea6c6fa9f4d9f5814f97a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783408"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104683561"
 ---
 # <a name="developer-portal-generation-guide"></a>開發人員入口網站產生指南
 
@@ -26,7 +25,7 @@ Docfx 不只是轉換，也會檢查檔中所有已使用的本機連結。 如�
 
 MRTK 存放庫中的 docfx 組建檔案可以用來在專案根目錄的 doc/子資料夾中建立開發人員檔的本機版本。
 
-### <a name="setup"></a>安裝程式
+### <a name="setup"></a>設定
 
 * 取得[docfx](https://dotnet.github.io/docfx/index.html)的最新版本
 * 解壓縮電腦資料夾中的檔案

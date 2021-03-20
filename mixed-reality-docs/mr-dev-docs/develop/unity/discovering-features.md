@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
 ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102230711"
 ---
 # <a name="discovering-and-acquiring-features"></a>探索和取得功能
@@ -72,7 +72,7 @@ ms.locfileid: "102230711"
 
 ## <a name="going-back-to-the-previous-step"></a>回到上一個步驟
 
-從 **探索功能**，混合現實功能工具可讓您流覽回專案選取專案。 選取 [ **返回** ] 以重新開機。
+從 **探索功能**，混合現實功能工具可讓您流覽回專案選取專案。 選取 **返回** 重新開機。
 
 ## <a name="see-also"></a>另請參閱
 

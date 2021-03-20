@@ -4,14 +4,13 @@ description: 在 MRTK 中建立輸入系統與資料提供者的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 757a434b3d9ff92080e220e4562a492ecf27f361
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7a1a744602f791f26a4c1497c0853f0d370914b2
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781040"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104682341"
 ---
 # <a name="creating-an-input-system-data-provider"></a>建立輸入系統資料提供者
 
@@ -107,9 +106,9 @@ public class WindowsMixedRealityDeviceManager :
 
 > 您可以在 MRTK/Providers/WindowsMixedReality 資料夾中找到每個類別的原始程式碼。
 
-- WindowsMixedRealityArticulatedHand.cs
-- WindowsMixedRealityController.cs
-- WindowsMixedRealityGGVHand.cs
+- WindowsMixedRealityArticulatedHand .cs
+- WindowsMixedRealityController .cs
+- WindowsMixedRealityGGVHand .cs
 
 > [!Note]
 > 並非所有的裝置管理員都支援多個控制器類型。

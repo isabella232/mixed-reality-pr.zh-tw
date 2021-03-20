@@ -1,19 +1,19 @@
 ---
-title: MR Input 210 - 目光
+title: HoloLens (第1代) 輸入 210-注視
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解注視概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、注視、HoloLens、Mixed Reality 學院、unity、Mixed reality 耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 7e8d72bc4d37d76f8f9ec40956cb85591e237ac8
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 99c0d2ae00416f5d26e99e6d7d00c73ea07e5fb3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583862"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730325"
 ---
-# <a name="mr-input-210-gaze"></a>MR Input 210：注視
+# <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (第1代) 輸入210：注視
 
 >[!NOTE]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
@@ -206,8 +206,8 @@ ms.locfileid: "98583862"
 ### <a name="instructions"></a>指示
 
 1. **在 [階層] 面板中**，展開 [ **AstroMan** -> **GEO_G**] -> **Back_Center** 物件。
-2. 按兩下 [ **Interactible.cs** ]，在 Visual Studio 中開啟。
-3. 將 IFocusable. OnFocusEnter 中的行取消批註 **( # B1** 和 **IFocusable. OnFocusExit ( # B3** 回呼 in **Interactible.cs**。 當焦點 (于) 進入和結束特定 GameObject 的碰撞器時，混合現實工具組的 InputManager 就會呼叫這些方法。
+2. 按兩下 **Interactible** ，在 Visual Studio 中開啟。
+3. 取消批註 **IFocusable. OnFocusEnter ()** 中的行，以及 **Interactible** 中的 **IFocusable OnFocusExit ()** 回呼。 當焦點 (于) 進入和結束特定 GameObject 的碰撞器時，混合現實工具組的 InputManager 就會呼叫這些方法。
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 2.d */
@@ -265,7 +265,7 @@ void IFocusable.OnFocusExit()
 
 ### <a name="instructions"></a>指示
 
-我們將使用 **DirectionIndicator.cs** 檔案，此檔案將：
+我們將使用 **DirectionIndicator .cs** 檔案，此檔案將：
 
 1. 如果使用者不是在全像撥雲見日，則顯示方向指標。
 2. 如果使用者是在全像撥雲見日，則隱藏方向指標。
@@ -290,7 +290,7 @@ void IFocusable.OnFocusExit()
 
 * 使用 billboarding 讓全像投影都能朝您面對。
 
-我們將使用 **Billboard.cs** 檔案來維持 GameObject 導向，使其隨時都能與使用者互動。
+我們將使用 **佈告欄** 檔案來保持 GameObject 導向，讓使用者隨時都能與使用者互動。
 
 1. **在 [階層] 面板中**，選取 [ **AstroMan** ] 物件。
 2. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
@@ -318,15 +318,15 @@ void IFocusable.OnFocusExit()
 
 標記物件永遠不會完全離開使用者的觀點。 您可以將標籤與使用者的標頭相關聯的物件視為使用者的標頭。 當使用者移動時，內容會在觀看視野的邊緣時保持不變，而不需要完全離開。 當使用者 gazes 到加上標籤的物件時，它會更完整地顯示。
 
-我們將使用 **SimpleTagalong.cs** 檔案，此檔案將：
+我們將使用 **SimpleTagalong .cs** 檔案，此檔案將：
 
 1. 判斷 Tag-Along 物件是否在相機界限內。
 2. 如果不在 view （視圖）的範圍內，請將 Tag-Along 定位於 view （視圖）中的部分。
 3. 否則，請將 Tag-Along 定位至使用者的預設距離。
 
-若要這樣做，我們必須先變更 **Interactible.cs** 腳本來呼叫 **TagalongAction**。
+若要這樣做，我們必須先變更 **Interactible .cs** 腳本來呼叫 **TagalongAction**。
 
-1. 完成編碼練習6來編輯 **Interactible.cs** 。 a (取消批註行84至 87) 。
+1. 完成編碼練習6來編輯 **Interactible。** a (取消批註行84至 87) 。
 
 ```cs
 /* TODO: DEVELOPER CODING EXERCISE 6.a */
@@ -337,9 +337,9 @@ if (interactibleAction != null)
 }
 ```
 
-**InteractibleAction.cs** 腳本（與 **Interactible.cs** 配對）會在您點擊全像影像時執行自訂動作。 在此情況下，我們將特別針對標記使用一個。
+**InteractibleAction** 與 **Interactible** 配對的腳本會在您點擊全像影像時執行自訂動作。 在此情況下，我們將特別針對標記使用一個。
 
-* 在 [ **腳本** ] 資料夾中，按一下 [ **TagalongAction.cs** 資產] 以在 Visual Studio 中開啟。
+* 在 [ **腳本** ] 資料夾中，按一下 [ **TagalongAction** ] 資產以在 Visual Studio 中開啟。
 * 完成程式碼撰寫練習，或將其變更為：
   * 在階層 **頂端的搜尋列中，輸入** **ChestButton_Center** 並選取結果。
   * 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
@@ -357,7 +357,7 @@ if (interactibleAction != null)
 * 將 billboarding 加入至 gazed 物件，並將 pivot 軸設定為 XY。
 * 然後將簡單 Tag-Along 新增至物件。
 
-以下是來自 **TagalongAction.cs** 的解決方案：
+以下是 **TagalongAction** 的解決方案：
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

@@ -4,14 +4,13 @@ description: MRTK 中的 FingerTip 視覺效果總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Fingertip
-ms.openlocfilehash: 205c16f8868e659b87afd131047f7c91e765da37
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 11cb111288197f42d2616c3b07897b737f440f43
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781021"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104686391"
 ---
 # <a name="fingertip-visualization"></a>Fingertip 視覺效果
 
@@ -39,7 +38,7 @@ Fingertip affordance 可協助使用者辨識來自目標物件的距離。 「�
 
 <img src="../images/fingertip/MRTK_FingertipVisualization_Finger_Cursor_Inspector.png" width="600" alt="Cursor Inspector">
 
-**ProximityLight** 近亮光源設定會控制在表面接近或遠的光線外觀。 中央、中間和外部色彩會控制光線的漸層外觀，並且可以針對應用程式的色彩選擇區量身打造。 請注意，這些色彩是 HDR (高動態範圍) ，可讓使用者將接近度的光線調近一個以上的值。 針對其他屬性，請將滑鼠停留在偵測器工具提示上。
+**ProximityLight** 近亮光源設定會控制在表面接近或遠的光線外觀。 中央、中間和外部色彩會控制光線的漸層外觀，並且可以針對應用程式的色彩選擇區量身打造。 請注意，色彩為 HDR (高動態範圍) 可讓使用者將接近的光線調至上方的值。 針對其他屬性，請將滑鼠停留在偵測器工具提示上。
 
 **MixedRealityStandard 著色器** MixedRealityStandard 著色器用於 MRTK 中的許多效果。 Fingertip 視覺效果的兩項設定是「近乎淡化」和「近亮」。 近乎淡化可讓物件在相機或光線接近時淡入/放大。 請務必核取 [淺色]，以允許鄰近燈來推動淡化 (而不是相機) 。 您可以反轉「淡化開始」和「淡化完成」的值，以反轉淡出的值。 針對您想要讓鄰近光線亮亮的任何表面，請檢查「近亮」。 針對其他屬性，請將滑鼠停留在偵測器工具提示上。
 

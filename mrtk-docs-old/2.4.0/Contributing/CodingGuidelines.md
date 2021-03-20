@@ -4,14 +4,14 @@ description: 參與 MRTK 時要遵循的編碼準則和慣例。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、'
-ms.openlocfilehash: eb3a6f9f67cb754a60fb94d2ef98ba49a119b9fe
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: fb32f3330b9f53978de5cc06cccbc47b3dd4b6b6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780673"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684431"
 ---
 # <a name="coding-guidelines"></a>程式碼撰寫指導方針
 
@@ -349,7 +349,7 @@ public class MyClass
 
 #### <a name="do"></a>可行事項
 
-MyStruct.cs
+Mystruct>) .cs
 
 ```c#
 // Public Struct / Enum definitions for use in your class.  Try to make them generic for reuse.
@@ -360,7 +360,7 @@ public struct MyStruct
 }
 ```
 
-MyEnumType.cs
+MyEnumType .cs
 
 ```c#
 public enum MuEnumType
@@ -370,7 +370,7 @@ public enum MuEnumType
 }
 ```
 
-MyClass.cs
+MyClass
 
 ```c#
 public class MyClass
@@ -459,7 +459,7 @@ public enum SDKType
 
 如果列舉可能需要使用多個狀態作為值，例如 Handedness = Left & Right。 接著，必須使用位旗標正確裝飾列舉，才能讓它正確地使用
 
-Handedness.cs 檔案具有此的具體執行
+Handedness .cs 檔案有此的具體執行
 
 ### <a name="dont"></a>禁止事項
 

@@ -4,14 +4,13 @@ description: 將 MRTK 設定為 unity 的檔。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 9b4db83af7236c78978cf329ebdf96d49c50afa6
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: bc5a0e286a8be588e14b469b965a216cedca4df5
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236999"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104701924"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
 
@@ -168,7 +167,7 @@ MRTK 的選擇性但非常實用的功能是外掛程式診斷功能。
 
 ## <a name="scene-system-settings"></a>場景系統設定
 
-MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸載。 若要判斷場景系統是否適合您的專案，請閱讀「 [場景系統入門指南」。](../features/scene-system/scene-system-getting-started.md)
+MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸載。 若要判斷場景系統是否適合您的專案，請閱讀 [場景系統開始使用指南。](../features/scene-system/scene-system-getting-started.md)
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SceneSystemProfile.png" width="650px" alt="Scene System settings 1" style="display:block;">
 
@@ -261,13 +260,13 @@ MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸�
 
 ## <a name="speech-commands"></a>語音命令
 
-就像手勢一樣，某些執行時間平臺也提供智慧型的「語音轉換文字」功能，讓您能夠產生可由 Unity 專案接收的命令。 此設定檔可讓您設定下列各項：
+就像手勢一樣，某些執行時間平臺也提供智慧型「語音轉換文字」功能，讓您能夠產生可由 Unity 專案接收的命令。 此設定檔可讓您設定下列各項：
 
 1. 一般設定-設為自動啟動或手動啟動的 [啟動行為] 決定是否要在輸入系統啟動時初始化 KeywordRecognizer，或讓專案決定何時要初始化 KeywordRecognizer。 「辨識信賴等級」用來初始化 Unity 的 [KEYWORDRECOGNIZER API](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html)
 2. 語音命令-註冊「單字」，並將其轉譯成可由您的專案接收的輸入動作。 如有需要，也可以附加至鍵盤動作。
 
 > [!IMPORTANT]
-> 系統目前只支援在 Windows 10 平臺（例如 HoloLens 和 Windows 10 desktop）上執行時的語音，並將在未來新增至 MRTK 的其他系統進行增強， (沒有任何日期) 。
+> 系統目前僅支援在 Windows 10 平臺（例如 HoloLens 和 Windows 10 desktop）上執行的語音，並將在 (未來新增至 MRTK 的其他系統進行增強，而不) 任何日期。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpeechCommandsProfile.png" width="650px" alt="Configuration Profile screens" style="display:block;">
 
@@ -309,7 +308,7 @@ MRTK 會提供下列控制器/系統的預設設定：
 
 這可以設定在「全域」 (特定手) 或個別控制器類型/手特定的控制器實例。
 
-MRTK 也支援適用于 Windows Mixed Reality 和 OpenVR 的原生 SDK 控制器模型。 這些會以 Gameobject 的形式載入場景，並使用平臺的控制器追蹤來定位。
+MRTK 也支援 Windows Mixed Reality 和 OpenVR 的原生 SDK 控制器模型。 這些會以 Gameobject 的形式載入場景，並使用平臺的控制器追蹤來定位。
 
 如果場景中的控制器表示需要從實體控制器位置位移，則只要針對控制器模型的預製專案設定該位移 (例如，將控制器預製專案的轉換位置設定為位移位置) 。
 
@@ -380,7 +379,7 @@ public class PreInitProfileSwapper : MonoBehaviour
 }
 ```
 
-不是 "profileToUse"，您可以有一組適用于特定平臺的任意設定檔 (例如，一個適用于 HoloLens 1、一個用於 VR、一個適用于 HoloLens 2 等) 。 您可以使用各種其他指標 (例如 https://docs.unity3d.com/ScriptReference/SystemInfo.html ，或是攝影機是否為不透明/透明) ，以找出要載入的設定檔。
+不是 "profileToUse"，您可以有一組適用于特定平臺的任意設定檔 (例如，一個適用于 HoloLens 1、一個用於 VR、一個用於 HoloLens 2 等) 。 您可以使用各種其他指標 (例如 https://docs.unity3d.com/ScriptReference/SystemInfo.html ，或是攝影機是否為不透明/透明) ，以找出要載入的設定檔。
 
 ### <a name="active-profile-switch"></a>主動設定檔參數
 

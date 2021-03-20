@@ -4,14 +4,13 @@ description: MRTK 中的檔優化視窗
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c4b666655f26ec99eb007d1617bd81e75496c8d9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c26329e212af849bcdcee624e5440c96bf95f1cc
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780755"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684651"
 ---
 # <a name="optimize-window"></a>優化視窗
 

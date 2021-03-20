@@ -4,14 +4,13 @@ description: MRTK 中的眼睛注視提供者檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、EyeGaze、
-ms.openlocfilehash: c328350e6ae8f88628049871ff3eb979151c73db
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c696bb6ad6b7ecd0239ca5c50c27c44735ee685d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783466"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685451"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>存取 Unity 腳本中的眼睛追蹤資料
 
@@ -46,7 +45,7 @@ MRTK 中的眼睛追蹤設定是透過介面進行設定 [`IMixedRealityEyeGazeP
 
 ## <a name="examples-for-using-coreservicesinputsystemeyegazeprovider"></a>使用 CoreServices 的範例 InputSystem. EyeGazeProvider
 
-以下是來自 [FollowEyeGaze.cs](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze)的範例：
+以下是來自 [FollowEyeGaze](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.FollowEyeGaze)的範例：
 
 - 取得使用者所查看的全息圖點：
 
@@ -69,4 +68,4 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 - [MRTK 眼追蹤總覽](eye-tracking-main.md)
 - [MRTK 眼睛追蹤設定](eye-tracking-basic-setup.md)
 - [MRTK 眼睛追蹤校正](eye-tracking-is-user-calibrated.md)
-- [HoloLens 2 目視追蹤檔](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)
+- [HoloLens 2 眼睛追蹤檔](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)

@@ -4,14 +4,14 @@ description: MRTK-Unity 檔網站的登陸頁面。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 08/25/2020
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5e3efd0e5bf5ac045cf7c6da042fcb027e3e8ae8
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7c76456f7863286bc44058e28110ebe447f181cd
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780882"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104684291"
 ---
 # <a name="welcome-to-mrtk"></a>歡迎使用 MRTK
 

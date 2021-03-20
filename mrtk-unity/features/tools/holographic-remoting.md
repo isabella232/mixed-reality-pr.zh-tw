@@ -4,18 +4,17 @@ description: 檔全像全像遠端 MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b67d21068a9d1e03e66b8c3f4121c11d6282790d
-ms.sourcegitcommit: 5694cc472bde67c940204ebe6671b0598501e62a
+ms.openlocfilehash: 6d3804134d4b6c0a21aa62468aa39c446de52101
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102126631"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685081"
 ---
 # <a name="holographic-remoting"></a>全像攝影遠端處理
 
-全像是使用 Wi-Fi 或 USB 纜線連線，將電腦上的全像攝影內容從電腦即時串流處理至 Microsoft HoloLens。 當開發混合現實應用程式時，這項功能可以大幅提升開發人員的生產力。
+全像是，使用 Wi-Fi 或 USB 纜線連線，全像是即時的遠端處理將電腦上的全息內容串流處理到您的 Microsoft HoloLens。 當開發混合現實應用程式時，這項功能可以大幅提升開發人員的生產力。
 
 XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)。 如需搭配使用 XR SDK 與 MRTK 的詳細資訊，請參閱 [這裡](../../configuration/getting-started-with-mrtk-and-xrsdk.md) 。 舊版 XR 是指 unity 2018 中包含的現有 XR 管線，在 Unity 2019.3 中已被取代，並已在 Unity 2020 中移除。
 
@@ -23,29 +22,29 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 若要啟用 HoloLens 的遠端功能，請務必確定專案使用的是最新的遠端處理元件。
 
-1. 開啟 **視窗 > 套件管理員**
+1. 開啟 **視窗 > 封裝管理員**
     - 如果使用舊版 XR：確認已安裝最新版的 **Windows Mixed Reality** 套件。
     - 如果使用 XR SDK：請確認已安裝最新版的 **WINDOWS XR 外掛程式** 套件。
-1. 確定已在 HoloLens 上透過 Microsoft Store 安裝最新的全像全像遠端應用程式。
+1. 確定已在 HoloLens 上透過 Microsoft Store 安裝最新的全像全像遠端處理應用程式。
 
 請根據專案中使用的管線，繼續閱讀 [舊版 XR 安裝指示](#legacy-xr-setup-instructions) 或 [XR SDK 設定指示](#xr-sdk-setup-instructions) 。
 
 ## <a name="legacy-xr-setup-instructions"></a>舊版 XR 安裝指示
 
-下列指示僅適用于搭配 HoloLens 2 的遠端處理。 如果您只使用 HoloLens (第1代) 進行遠端處理，請跳至 [使用 wi-fi 連線到 hololens](#connecting-to-the-hololens-with-wi-fi)。
+下列指示僅適用于使用 HoloLens 2 的遠端處理。 如果您只使用 HoloLens (第1代) 進行遠端處理，請跳至 [使用 wi-fi 連線到 hololens](#connecting-to-the-hololens-with-wi-fi)。
 
-使用 HoloLens 2 時，已將對遠端處理明確和眼睛追蹤資料的支援新增至 MRTK。 若要啟用這些功能，請遵循將 DotNetWinRT 匯 [入到專案](#import-dotnetwinrt-into-the-project)中所述的步驟。
+使用 HoloLens 2 時，已將對遠端的已表達和眼睛追蹤資料的支援新增至 MRTK。 若要啟用這些功能，請遵循將 DotNetWinRT 匯 [入到專案](#import-dotnetwinrt-into-the-project)中所述的步驟。
 
-匯入後，下一個步驟是選取 **混合現實工具** 組  >  **公用程式**  >  **Windows mixed Reality**  >  **檢查** 設定。 此步驟會新增可啟用 DotNetWinRT 相依性的腳本定義。
+匯入之後，下一步是選取 **混合現實工具** 組  >  **公用程式**  >  **Windows Mixed Reality**  >  **檢查** 設定。 此步驟會新增可啟用 DotNetWinRT 相依性的腳本定義。
 
 > [!NOTE]
 > 使用 Unity 2019.4 和更新版本時，不需要執行檢查設定公用程式。
 
-若要啟用手動接點和眼睛追蹤的追蹤，請依照「透過 Unity 套件匯入和相關章節的 **偵錯工具 HoloLens 2 遠端處理** 」中的步驟進行。
+若要追蹤手接程式和眼睛追蹤，請依照 **HoloLens 2 透過 Unity 套件匯入** 和相關章節進行的偵錯工具中的步驟進行。
 
 ### <a name="debugging-hololens-2-remoting-via-unity-package-import"></a>透過 Unity 套件匯入進行 HoloLens 2 遠端處理的調試
 
-如果 HoloLens 2 的手接點和眼睛追蹤無法透過遠端處理，則有幾個常見的潛在問題點。 它們會依應檢查的順序列于下方。
+如果 HoloLens 2 的手接點和眼睛追蹤未在遠端處理，則有幾個常見的潛在問題點。 它們會依應檢查的順序列于下方。
 
 這些問題在 **Unity 2019.3** 或更新版本上執行時特別相關。
 
@@ -64,7 +63,7 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 > [!NOTE]
 > 使用 Unity 2019.4 和更新版本時，DOTNETWINRT_PRESENT 定義會包含在適當的 asmdef 檔案中，而不是包含在 Unity Player 設定中。 不需要檢查設定步驟。
 
-從 MRTK 版本2.5.0 開始，基於效能的考慮，不再自動設定此 #define。 若要啟用此旗標，請使用 **混合現實工具** 組  >  **公用程式**  >  **Windows Mixed reality**  >  **檢查** 設定功能表項目。
+從 MRTK 版本2.5.0 開始，基於效能的考慮，不再自動設定此 #define。 若要啟用此旗標，請使用 **Mixed Reality** 工具組  >  **公用程式**  >  **Windows Mixed Reality**  >  **檢查** 設定功能表項目。
 
 > [!Note]
 > 檢查設定專案不會顯示確認。 若要確認已設定定義，請流覽至 Unity Player 設定。 從該處的 [UWP] 索引標籤底下，檢查腳本定義符號的其他設定。 請確定已在該清單中正確寫入 DOTNETWINRT_PRESENT。 如果有的話，這個步驟就成功了。
@@ -77,13 +76,13 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 ## <a name="xr-sdk-setup-instructions"></a>XR SDK 安裝指示
 
-遵循「 [開始使用 MRTK 和 XR SDK」頁面上的 Windows Mixed Reality 設定指示](../../configuration/getting-started-with-mrtk-and-xrsdk.md#windows-mixed-reality) ，並確定執行編輯後 HoloLens 遠端處理所需的步驟。
+遵循 [[開始使用 MRTK 和 XR SDK] 頁面上的 Windows Mixed Reality 設定指示](../../configuration/getting-started-with-mrtk-and-xrsdk.md#windows-mixed-reality) ，並務必執行編輯器前 HoloLens 遠端處理所需的步驟。
 
 ## <a name="connecting-to-the-hololens-with-wi-fi"></a>使用 Wi-Fi 連接到 HoloLens
 
 設定好專案之後，就可以建立 HoloLens 的連接。
 
-1. 在 [檔案 **> 組建設定**] 中，確定 [專案組建類型] 已設定為 [**通用 Windows 平臺**]
+1. 在 [檔案 **> 組建設定**] 中，確定 [專案組建類型] 已設定為 [ **通用 Windows 平臺**
 1. 在 HoloLens 上啟動全像 **遠端處理** 應用程式。
 1. 在 Unity 中，如果使用 **XR SDK (，請選取 Window > XR (> 全像 XR) /WINDOWS XR 外掛程式遠端處理)**。
 

@@ -4,18 +4,17 @@ description: 在 MRTK 中使用範例的相近淺色檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 96b7271ea7bb7fdc7cefed5e258bb8ec0fe195f3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0bfffc8e6b95bb93cd37ec9060a22b1d044ebf8c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781479"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685191"
 ---
 # <a name="proximity-light"></a>近亮光
 
-[`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight)是一種[流暢的設計系統](https://www.microsoft.com/design/fluent/)典範，它會在物件的表面上模擬「漸層反轉點燈」。 通常用於近乎互動，應用程式可以透過元件控制近亮的屬性 [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) 。
+[`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight)是一種[Fluent Design 系統](https://www.microsoft.com/design/fluent/)架構，它會在接近物件的介面上模擬「漸層反向點亮」。 通常用於近乎互動，應用程式可以透過元件控制近亮的屬性 [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) 。
 
 若要由 [`ProximityLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.ProximityLight) *混合現實工具組/標準* 著色器所影響的材質，必須使用，且必須啟用 *鄰近性光線* 屬性。
 
