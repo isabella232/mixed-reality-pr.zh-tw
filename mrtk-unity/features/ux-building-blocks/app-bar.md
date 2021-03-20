@@ -4,14 +4,13 @@ description: MRTK 中的應用程式行總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、應用程式行、
-ms.openlocfilehash: 7f88306eedf9241a6a4a32357d62caf50f885bd5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5bb7f780cf49486c68ca6dc3efa6c8cccd55ab65
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780258"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693025"
 ---
 # <a name="app-bar"></a>應用程式列
 

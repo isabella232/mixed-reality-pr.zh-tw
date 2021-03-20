@@ -4,14 +4,13 @@ description: MRTK 中的檔 InputFeatureUsage 工具
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 61c57b51d82c16771fd58666b816638c004210c5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f25e30ee37f3e4d0449ea653d32366f5d7f46e86
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780281"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693115"
 ---
 # <a name="inputfeatureusage-tool"></a>InputFeatureUsage 工具
 

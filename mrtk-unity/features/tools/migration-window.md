@@ -4,14 +4,13 @@ description: 如何在 MRTK 中遷移至更新的相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0a69765d7cbb51d60d33ae104fd9ddf806bccd7e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 86598ae88291337cec4b5226e6db556a1e930c23
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780279"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693085"
 ---
 # <a name="migration-window"></a>遷移視窗
 
@@ -50,5 +49,5 @@ ms.locfileid: "101780279"
 ## <a name="see-also"></a>另請參閱
 
 - [從較早的版本更新](../../updates-deployment/updating.md)
-- [Microsoft Mixed Reality 工具組版本](../../release-notes.md)
+- [Microsoft Mixed Reality 工具組版本](../../release-notes/mrtk-26-release-notes.md)
 - [MRTK 藍圖](../../roadmap.md)

@@ -4,14 +4,13 @@ description: 如何在 MRTK 中使用視覺目標進行導覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 7865e756e195246cd1d3e6a3d92e313eaee34601
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d50d74af324cf357b7a666fc31733e845bea87dd
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780611"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689948"
 ---
 # <a name="eye-supported-navigation-in-mrtk"></a>MRTK 中的眼睛支援導覽
 

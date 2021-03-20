@@ -4,14 +4,13 @@ description: 在 MRTK 中設定診斷的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 234fc364b082b0a8549d7642a394bb4b6c23f96c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4f51ed409ccc49856a0fe0a1e11bb3e59ac7a727
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780651"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691945"
 ---
 # <a name="configuring-the-diagnostics-system"></a>設定診斷系統
 

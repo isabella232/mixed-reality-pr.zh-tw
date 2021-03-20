@@ -4,14 +4,13 @@ description: 如何更新 MRTK 標準著色器的相關檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5ed2c58a4ac0586cac9cae7513f7e27e9c8708ee
-ms.sourcegitcommit: fd19bf57607c7ed94a849d4cf606bba2bb93e668
+ms.openlocfilehash: e5ae9f12dfe4af899ae3d25af6dd0f076744b5c5
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "102118644"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689378"
 ---
 # <a name="updating-shaders"></a>更新著色器
 

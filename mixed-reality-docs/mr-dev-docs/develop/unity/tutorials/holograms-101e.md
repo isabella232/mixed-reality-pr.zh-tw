@@ -1,19 +1,19 @@
 ---
-title: MR Basics 101E - 使用模擬器完成專案
+title: HoloLens (第1代) 基本 101E-使用模擬器完成專案
 description: 遵循此程式碼逐步解說，以使用 Unity、Visual Studio 和 HoloLens 模擬器來學習全像全像攝影應用程式的基本概念。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、全息圖、學術、教學課程、模擬器、HoloLens、混合的現實學術、unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、Windows 10、注視、手勢、語音輸入、空間音效、空間對應
-ms.openlocfilehash: afe62dbc3385b41d08011bf7893672272f25485b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8d75ee610f352d11ac8396ad50c336b541a062a2
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583697"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730285"
 ---
-# <a name="mr-basics-101e-complete-project-with-emulator"></a>MR Basics 101E：使用模擬器完成專案
+# <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>HoloLens (第1代) 基本101E：使用模擬器完成專案
 
 >[!NOTE]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
@@ -141,7 +141,7 @@ ms.locfileid: "98583697"
 * 在 [階層]**面板** 中選取資料 **指標** 物件。
 * 將 **WorldCursor** 腳本拖放到 [ **檢查] 面板** 中。
 * 按兩下 **WorldCursor** 腳本，在 Visual Studio 中開啟它。
-* 將此程式碼複製並貼到 **WorldCursor.cs** 中，並 **全部儲存**。
+* 將此程式碼複製並貼到 **WorldCursor** 中，並 **全部儲存**。
 
 ```cs
 using UnityEngine;
@@ -321,7 +321,7 @@ public class SphereCommands : MonoBehaviour
 * 在 [ **腳本** ] 資料夾中，建立名為 **SpeechManager** 的腳本。
 * 將 **SpeechManager** 腳本拖曳至階層中的 **OrigamiCollection** 物件
 * 在 Visual Studio 中開啟 **SpeechManager** 腳本。
-* 將此程式碼複製並貼到 **SpeechManager.cs** 中，並 **全部儲存**：
+* 將此程式碼複製並貼到 **SpeechManager** 中，並 **全部儲存**：
 
 ```cs
 using System.Collections.Generic;

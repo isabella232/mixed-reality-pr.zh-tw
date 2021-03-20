@@ -4,18 +4,17 @@ description: MRTK 中的 TextPrefab 總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、TMP、
-ms.openlocfilehash: 96d4e78d8765d77228f464ca18eb26d94be131b8
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2a5e4bb6dd524ac8dcc89db46352938dec1927c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780215"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691275"
 ---
 # <a name="text-prefab"></a>文字預製專案
 
-這些 prefabs 已針對 Windows Mixed Reality 中的轉譯品質進行優化。 如需詳細資訊，請參閱 Microsoft Windows 開發人員中心的 Unity 指導方針 [文字](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) 。
+這些 prefabs 已針對 Windows Mixed Reality 中的轉譯品質進行優化。 如需詳細資訊，請參閱 Microsoft Windows 開發人員中心上 [Unity 中](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) 的指導方針文字。
 
 ## <a name="prefabs"></a>Prefabs
 

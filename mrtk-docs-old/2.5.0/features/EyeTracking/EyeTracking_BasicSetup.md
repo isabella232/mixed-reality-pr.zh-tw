@@ -4,14 +4,13 @@ description: 如何在 MRTK 中設定眼睛追蹤
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、眼睛追蹤、
-ms.openlocfilehash: ba8cb24380b253346a5d92f30d7ec310934cb68d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: cd299de6b731630162c398a2be7c3d929b372ce4
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780617"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690058"
 ---
 # <a name="getting-started-with-eye-tracking-in-mrtk"></a>開始在 MRTK 中使用眼睛追蹤
 
@@ -22,12 +21,12 @@ ms.locfileid: "101780617"
 ## <a name="eye-tracking-requirements-checklist"></a>目視追蹤需求檢查清單
 
 若要讓眼睛追蹤正常運作，必須符合下列需求。
-如果您不熟悉 HoloLens 2 的眼睛追蹤，以及如何在 MRTK 中設定眼睛追蹤，請別擔心！
+如果您不熟悉 HoloLens 2 上的眼睛追蹤，以及如何在 MRTK 中設定眼睛追蹤，請別擔心！
 我們將詳細說明如何解決這些問題。
 
-1. 「 _眼睛資料提供者_ 」必須新增至輸入系統。 這會從平臺提供眼睛追蹤資料。
+1. 您必須將「 _眼睛眼 Data Provider_ 」新增至輸入系統。 這會從平臺提供眼睛追蹤資料。
 2. 應用程式資訊清單中必須啟用 _' GazeInput '_ 功能。
-   **這項功能可以在 Unity 2019 中設定，但在 Unity 2018 和更早版本中，這項功能僅適用于 Visual Studio 和透過 MRTK build tool**
+   **這項功能可以在 Unity 2019 中設定，但在 Unity 2018 和更早版本中，這項功能僅適用于 Visual Studio 以及透過 MRTK build tool**
 3. HoloLens **必須** 針對目前的使用者進行眼睛校正。 請查看我們 [的範例，以偵測使用者是否已校正](EyeTracking_IsUserCalibrated.md)。
 
 ### <a name="a-note-on-the-gazeinput-capability"></a>GazeInput 功能的注意事項
@@ -41,8 +40,8 @@ MRTK 提供的組建工具 (，也就是混合現實工具組-> 公用程式-> �
 
 在 Unity 2019 之前，使用 Unity 的 [組建] 視窗時，必須在 Unity 組建之後以手動方式新增功能，如下所示：
 
-1. 開啟已編譯的 Visual Studio 專案，然後開啟方案中的 _' package.appxmanifest '_ 。
-2. 請務必勾選 [_功能_] 下的 [ _GazeInput_ ] 核取方塊。 如果您沒有看到「 _GazeInput_ 」功能，請確認您的系統符合 [使用 MRTK](../../Installation.md#prerequisites) (的必要條件，尤其是 Windows SDK 版本) 。
+1. 開啟您已編譯的 Visual Studio 專案，然後在您的方案中開啟 _' package.appxmanifest '_ 。
+2. 請務必勾選 [_功能_] 下的 [ _GazeInput_ ] 核取方塊。 如果您沒有看到「 _GazeInput_ 」功能，請確認您的系統符合 [使用 MRTK](../../Installation.md#prerequisites) (的必要條件，特別是 Windows SDK 版本) 。
 
 _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼做。
 這表示，如果您已經建立 Unity 專案，並在之前設定 package.appxmanifest，而且現在將目標設為相同的資料夾，您就不需要重新套用變更。
@@ -66,7 +65,7 @@ _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼�
 
 - 按一下 MRTK 設定檔中的 [ _輸入_ ] 索引標籤。
 - 若要編輯預設值 ( [ _DefaultMixedRealityInputSystemProfile_ ] ) ，請按一下其旁邊的 [ _複製_ ] 按鈕。 [ _複製設定檔_ ] 功能表隨即出現。 只要按一下該功能表底部的 [ _複製_ ] 即可。
-- 按兩下新的輸入設定檔，展開 [ _輸入資料提供者_]，然後選取 [ _+ 新增資料提供者_]。
+- 按兩下新的輸入設定檔，展開 [ _輸入資料提供者_]，然後選取 [ _+ 新增 Data Provider_]。
 - 建立新的資料提供者：
   - 在 [**類型**] 下，選取 [ _MixedReality] WindowsMixedReality。輸入 '_  ->  _' WindowsMixedRealityEyeGazeDataProvider '_
   - 針對 **平臺 (s)** 選取 [ _Windows 通用_]。
@@ -75,10 +74,10 @@ _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼�
 
 ### <a name="simulating-eye-tracking-in-the-unity-editor"></a>在 Unity 編輯器中模擬目視追蹤
 
-您可以在 Unity 編輯器中模擬眼睛追蹤輸入，以確保在將應用程式部署到 HoloLens 2 之前，正確觸發事件。
+您可以在 Unity 編輯器中模擬眼睛追蹤輸入，以確保在將應用程式部署到您的 HoloLens 2 之前，已正確觸發事件。
 您只需使用相機的位置做為眼睛眼睛，並將攝影機的正向向量視為眼睛的方向，即可模擬眼睛信號。
 雖然這很適合用於初始測試，但請注意，它不是快速眼移動的理想仿造。
-為了達到此效果，最好是確保在 HoloLens 2 上頻繁測試您的眼睛型互動。
+為了達到此效果，最好是確保經常測試 HoloLens 2 上的眼睛型互動。
 
 1. **啟用模擬的眼睛追蹤**：
     - 按一下 MRTK 設定檔中的 [ _輸入_ ] 索引標籤。

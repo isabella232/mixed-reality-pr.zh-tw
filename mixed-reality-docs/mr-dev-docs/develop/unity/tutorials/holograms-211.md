@@ -1,19 +1,19 @@
 ---
-title: MR Input 211 - 手勢
+title: HoloLens (第1代) 輸入 211-手勢
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習手勢概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、手勢、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: dfb31901001f760abd60bda3022902267b7c05cf
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe5d3d736c3ad460feeb7aaf66597344618bc1cb
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583705"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730455"
 ---
-# <a name="mr-input-211-gesture"></a>MR Input 211：手勢
+# <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (第1代) 輸入211：手勢
 
 >[!NOTE]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
@@ -129,7 +129,7 @@ ms.locfileid: "98583705"
 * **在 [階層] 面板中**，展開 [ **InputManager** ] 物件。
 * 尋找並選取 [ **GesturesInput** ] 物件。
 
-**InteractionInputSource.cs** 腳本會執行這些步驟：
+**InteractionInputSource .cs** 腳本會執行這些步驟：
 
 1. 訂閱 InteractionSourceDetected 和 InteractionSourceLost 事件。
 2. 設定 HandDetected 狀態。
@@ -172,7 +172,7 @@ ms.locfileid: "98583705"
 
 ### <a name="instructions"></a>指示
 
-若要在我們的應用程式中使用導覽手勢，我們將會在導覽手勢發生時，編輯 **GestureAction.cs** 來旋轉物件。 此外，我們會將意見反應新增至游標，以在流覽可供使用時顯示。
+若要在我們的應用程式中使用導覽手勢，我們將會在導覽手勢發生時，編輯 **GestureAction** 來旋轉物件。 此外，我們會將意見反應新增至游標，以在流覽可供使用時顯示。
 
 1. **在 [階層**] 面板中，展開 [ **CursorWithFeedback**]。
 2. 在 [全像 **] 資料夾中** ，尋找 **ScrollFeedback** 資產。
@@ -185,7 +185,7 @@ ms.locfileid: "98583705"
 9. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
 10. 在功能表中，輸入搜尋方塊的 **手勢動作**。 選取搜尋結果。
 
-接下來，在 Visual Studio 中開啟 **GestureAction.cs** 。 在編碼練習 2. c 中，編輯腳本以執行下列動作：
+接下來，在 Visual Studio 中開啟 **GestureAction。** 在編碼練習 2. c 中，編輯腳本以執行下列動作：
 
 1. 每當執行導覽手勢時 **，旋轉 AstroMan** 物件。
 2. 計算 **rotationFactor** 以控制套用至物件的旋轉量。
@@ -341,7 +341,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ### <a name="instructions"></a>指示
 
-GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
+GestureManager .cs 和 AstronautManager 可讓我們執行下列作業：
 
 1. 使用語音關鍵字 "**Move 太空人**" 來啟用 **操作** 手勢和「**旋轉太空人**」以停用它們。
 2. 切換以回應 **操作手勢辨識器**。
@@ -361,7 +361,7 @@ GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
 3. 輸入關鍵字做為 **移動太空人**。 如有需要，請隨意新增按鍵快捷方式。
 4. 按一下右側的， **+** 以加入新的關鍵字。
 5. 將關鍵字輸入為 **旋轉太空人**。 如有需要，請隨意新增按鍵快捷方式。
-6. 對應的處理常式程式碼可以在 **GestureAction.cs** 的 **ISpeechHandler. OnSpeechKeywordRecognized** 處理常式中找到。
+6. 對應的處理常式程式碼可以在 **GestureAction** 的 **ISpeechHandler. OnSpeechKeywordRecognized** 處理常式中找到。
 
 ![如何設定第4章的語音輸入來源](images/holograms211-speech.png)
 
@@ -372,13 +372,13 @@ GestureManager.cs 和 AstronautManager.cs 可讓我們執行下列作業：
 3. **在 [階層**] 面板中，按一下 [ **CursorWithFeedback**]。
 4. 從階層中，將 **PathingFeedback** **物件拖放至偵測****器** 的 [資料 **指標意見**] 元件中的 [偵測 **到的遊戲物件**] 屬性。
 
-現在，我們需要將程式碼新增至 **GestureAction.cs** ，以啟用下列各項：
+現在，我們需要將程式碼新增至 **GestureAction** ，以啟用下列各項：
 
 1. 將程式碼加入至 **IManipulationHandler. OnManipulationUpdated** 函式，這會在偵測到 **操作** 手勢時移動太空人。
 2. 計算 **移動向量** ，以根據手上的位置決定應將太空人移至何處。
 3. **將太空人移** 至新的位置。
 
-完成編碼練習 4. **GestureAction.cs**，或使用我們完成的解決方案：
+完成編碼練習 4. **GestureAction .cs**，或使用我們完成的解決方案：
 
 ```cs
 using HoloToolkit.Unity.InputModule;

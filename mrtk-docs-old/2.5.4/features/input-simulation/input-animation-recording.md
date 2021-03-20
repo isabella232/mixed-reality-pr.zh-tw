@@ -4,14 +4,13 @@ description: MRTK 中輸入動畫記錄系統的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f967d0eed0b8f26dbe189b7b419c1b35b89ecfbf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 21d765dcf7f7866edd33fc994de5a7e32f8c3e10
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779906"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690328"
 ---
 # <a name="input-animation-recording"></a>輸入動畫錄製
 

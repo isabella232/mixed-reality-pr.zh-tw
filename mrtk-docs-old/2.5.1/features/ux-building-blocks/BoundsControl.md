@@ -4,14 +4,13 @@ description: MRTK 中的界限控制項總覽
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限控制、
-ms.openlocfilehash: 1f9185cefb0b4dfc0538a0151665ebaf134a044c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c45256699d044b2bd2f8f08043eb5742c71b35fb
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781174"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691485"
 ---
 # <a name="bounds-control"></a>界限控制項
 
@@ -147,7 +146,7 @@ Box 設定會負責呈現一個具有透過碰撞器大小和方塊填補定義�
 
 ### <a name="proximity-effect-configuration"></a>鄰近效果設定
 
-以實際的距離來顯示及隱藏有動畫的控點。 它有兩個步驟的調整動畫。 預設值會設定為 HoloLens 2 樣式的行為。
+以實際的距離來顯示及隱藏有動畫的控點。 它有兩個步驟的調整動畫。 預設值會設定為 HoloLens 2 樣式行為。
 
 <img src="../images/bounds-control/MRTK_BoundsControl_Proximity.png" alt="Bounds Control proximity">
 
@@ -190,7 +189,7 @@ Box 設定會負責呈現一個具有透過碰撞器大小和方塊填補定義�
 
 ## <a name="handle-styles"></a>處理樣式
 
-依預設，當您只指派 [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) 腳本時，它會顯示 HoloLens 1 代樣式的控制碼。 若要使用 HoloLens 2 樣式控制碼，您需要指派適當的控制碼 prefabs 和材質。
+依預設，當您只指派 [`BoundsControl.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundsControl) 腳本時，它會顯示 HoloLens 1 代樣式的控制碼。 若要使用 HoloLens 2 樣式控點，您必須指派適當的控制碼 prefabs 和材質。
 
 ![界限控制項控點樣式1](../images/bounds-control/MRTK_BoundsControl_HandleStyles1.png)
 
@@ -223,7 +222,7 @@ Box 設定會負責呈現一個具有透過碰撞器大小和方塊填補定義�
 1. 將 Box 碰撞新增至物件
 2. 將 `BoundsControl` 腳本指派給物件
 3. 設定選項，例如「啟動」方法 (請參閱下面的偵測 [器屬性](#inspector-properties) 一節) 
-4.  (選擇性) 指派 HoloLens 2 樣式界限控制項的 prefabs 和材質 (請參閱下方的 [控制碼樣式](#handle-styles) 一節) 
+4.  (選擇性) 指派 HoloLens 2 樣式界限控制項的 prefabs 和材質 (請參閱下方的 [控制碼樣式](#handle-styles) 區段) 
 
 > [!NOTE]
 > 使用偵測器中的 [ *目標物件* 和 *界限覆寫* ] 欄位，即可指派具有多個子元件之物件中的特定物件和碰撞器。

@@ -4,14 +4,13 @@ description: MRTK 中的按鈕總覽
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 按鈕
-ms.openlocfilehash: 77f019296ee02850b010eafafe3452a17a7a800c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a3e639c02258fbdd4eab1f72d71256a4bf220091
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781173"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691475"
 ---
 # <a name="button"></a>按鈕
 
@@ -34,7 +33,7 @@ ms.locfileid: "101781173"
 
 |  ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 | ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated | ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular |
 |:--- | :--- | :--- |
-| HoloLens 2 的 shell 樣式按鈕，具有可支援各種視覺效果的 backplate，例如框線燈、近亮和壓縮的 front 盤子 | HoloLens 2 的 shell 樣式按鈕但不 backplate  | 具有圓形圖形的 HoloLens 2 的 shell 樣式按鈕  |
+| HoloLens 2 的 shell 樣式按鈕，其 backplate 支援各種視覺效果的意見反應，例如框線燈、相近光源和壓縮的 front 盤子 | 不含 backplate 的 HoloLens 2 shell 樣式按鈕  | 具有圓形圖形 HoloLens 2 的 shell 樣式按鈕  |
 |  ![PressableButtonHoloLens2_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96** | ![PressableButtonHoloLens2Bar3H ](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H** | ![PressableButtonHoloLens2Bar3V ](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V** |
 | 寬 HoloLens 2 的 shell 樣式按鈕32x96mm | 具有共用 backplate 的水準 HoloLens 2 按鈕列 | 具有共用 backplate 的垂直 HoloLens 2 按鈕列 |
 |  ![PressableButtonHoloLens2ToggleCheckBox_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** | ![PressableButtonHoloLens2ToggleSwitch_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32** | ![PressableButtonHoloLens2ToggleRadio_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32** |
@@ -54,7 +53,7 @@ ms.locfileid: "101781173"
 
 * 在實體環境中難以閱讀圖示和文字
 * 當事件觸發時，很難瞭解
-* 透過透明平面顯示的全像是 HoloLens 2 深度 LSR 穩定的全像影像
+* 透過透明平面顯示的全像 LSR，可能不穩定，HoloLens 2 的深度穩定
 
 ![按鈕](../images/button/MRTK_Button_UsePlated.png)
 
@@ -114,7 +113,7 @@ ms.locfileid: "101781173"
 
 **音訊來源** 音訊意見反應剪輯的 Unity 音訊來源。
 
-*NearInteractionTouchable.cs* 需要使用明確的手輸入進行任何物件可觸式。
+*NearInteractionTouchable* 需要使用明確的手輸入進行任何物件可觸式。
 
 ## <a name="prefab-layout"></a>預製專案版面配置
 
@@ -133,7 +132,7 @@ MRTK 按鈕會使用 `ButtonConfigHelper` 元件來協助您變更按鈕的圖�
 **圖示集** 是元件所使用的一組共用圖示資產 `ButtonConfigHelper` 。 支援三種圖示 *樣式* 。
 
 * **四** 個圖示會在使用的四個上呈現 `MeshRenderer` 。 這是預設的圖示樣式。
-* **Sprite** 圖示是使用來呈現 `SpriteRenderer` 。 如果您想要將圖示匯入為 sprite 工作表，或想要將圖示資產與 Unity UI 元件共用，這會很有用。 若要使用此樣式，您必須將 Sprite 編輯器套件安裝 **(Windows-> 套件管理員 > 2D Sprite)**
+* **Sprite** 圖示是使用來呈現 `SpriteRenderer` 。 如果您想要將圖示匯入為 sprite 工作表，或想要將圖示資產與 Unity UI 元件共用，這會很有用。 若要使用此樣式，您必須將 Sprite 編輯器套件安裝 **(Windows-> 封裝管理員 > 2D Sprite)**
 * **字元** 圖示會使用元件來呈現 `TextMeshPro` 。 如果您想要使用圖示字型，這會很有用。 若要使用 HoloLens 圖示字型，您將需要建立 `TextMeshPro` 字型資產。
 
 若要變更按鈕使用的樣式，請展開 ButtonConfigHelper 中的 [ *圖示* ] 下拉式清單，然後從 [ *圖示樣式* ] 下拉式清單中選取。

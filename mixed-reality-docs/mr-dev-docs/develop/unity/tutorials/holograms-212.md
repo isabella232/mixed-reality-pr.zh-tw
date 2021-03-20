@@ -1,19 +1,19 @@
 ---
-title: MR Input 212 - 語音
+title: HoloLens (第1代) 輸入 212-語音
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解語音概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、語音、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 6fb3e10cb440fdda941a6d68b106da1bbaaedbc9
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 3218585c8c485e05fc511cf06b32542709027493
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583683"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730445"
 ---
-# <a name="mr-input-212-voice"></a>MR Input 212：語音
+# <a name="hololens-1st-gen-input-212-voice"></a>HoloLens (第1代) 輸入212：語音
 
 >[!NOTE]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。
@@ -159,7 +159,7 @@ ms.locfileid: "98583683"
 * 在 [偵測 **器** ] 面板中，找出 **語音輸入來源 (腳本)** 元件。
 * 展開 [ **關鍵字** ] 區段以查看支援的語音命令： **開啟 Communicator**。
 * 按一下右邊的齒輪，然後選取 [ **編輯腳本**]。
-* 探索 **SpeechInputSource.cs** ，瞭解它如何使用 **KeywordRecognizer** 來新增語音命令。
+* 探索 **SpeechInputSource** ，瞭解它如何使用 **KeywordRecognizer** 來新增語音命令。
 
 ### <a name="build-and-deploy"></a>建置和部署
 
@@ -203,9 +203,9 @@ ms.locfileid: "98583683"
 * 請注意， **Communicator** 物件具有 **語音輸入處理常式 (腳本)** 元件，可回應 **傳送訊息** 命令。
 * 查看 **Communicator (腳本)** 元件，然後按兩下腳本，在 Visual Studio 中開啟它。
 
-Communicator.cs 負責在 communicator 裝置上設定適當的按鈕狀態。 這可讓我們的使用者記錄訊息、播放訊息，然後將訊息傳送至太空人。 它也會啟動和停止動畫 wave 表單，以向使用者確認他們的聲音聽到。
+Communicator 負責在 communicator 裝置上設定適當的按鈕狀態。 這可讓我們的使用者記錄訊息、播放訊息，然後將訊息傳送至太空人。 它也會啟動和停止動畫 wave 表單，以向使用者確認他們的聲音聽到。
 
-* 在 **Communicator.cs** 中，從 **Start** 方法 (81 和 82) 刪除下列幾行。 這會啟用 communicator 上的 [記錄] 按鈕。
+* 在 **Communicator** 中，刪除從 **Start** 方法 (81 和 82) 的下列幾行。 這會啟用 communicator 上的 [記錄] 按鈕。
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -250,7 +250,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 
 ### <a name="instructions"></a>指示
 
-我們將編輯 **MicrophoneManager.cs** 以使用聽寫辨識器。 這就是我們要新增的內容：
+我們將編輯 **MicrophoneManager** ，以使用聽寫辨識器。 這就是我們要新增的內容：
 
 1. 當您按下 [ **錄製] 按鈕** 時，我們會 **啟動 DictationRecognizer**。
 2. 顯示 DictationRecognizer 瞭解的 **假設** 。
@@ -259,7 +259,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 5. 當按下 [ **停止] 按鈕** 或 mic 會話超時時，請 **停止 DictationRecognizer**。
 6. 重新開機 **KeywordRecognizer**，它會接聽 **傳送訊息** 命令。
 
-讓我們開始這次的教學。 完成 3. a **MicrophoneManager.cs** 中的所有程式碼撰寫練習，或複製並貼上完成的程式碼，如下所示：
+讓我們開始這次的教學。 在 **MicrophoneManager** 中完成3的所有程式碼撰寫練習，或複製並貼上完成的程式碼，如下所示：
 
 ```cs
 // Copyright (c) Microsoft Corporation. All rights reserved.

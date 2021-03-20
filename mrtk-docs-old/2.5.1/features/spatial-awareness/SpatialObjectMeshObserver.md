@@ -4,18 +4,17 @@ description: MRTK 中的空間網格觀察器檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ab95878b62d4ee805e0445833db5e900425c912e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 90bff1b05555b56227b3abc7626a4ab97e7fdd0d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780900"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691575"
 ---
 # <a name="configuring-mesh-observers-for-the-editor"></a>設定編輯器的網格觀察器
 
-在 Unity 編輯器中提供環境網格資料的便利方式是使用 [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) 類別。 *空間物件網格觀察* 者是一種僅限編輯器的資料提供者，適用于 [空間感知系統](SpatialAwarenessGettingStarted.md)，可讓您匯入3d 模型資料來代表空間網格。 *空間物件網格觀察* 者的其中一種常見用法是匯入透過 Microsoft HoloLens 掃描的資料，以測試如何從 Unity 內調整到不同環境的體驗。
+在 Unity 編輯器中提供環境網格資料的便利方式是使用 [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) 類別。 *空間物件網格觀察* 者是一種僅限編輯器的資料提供者，適用于 [空間感知系統](SpatialAwarenessGettingStarted.md)，可讓您匯入3d 模型資料來代表空間網格。 *空間物件網格觀察* 者的其中一種常見用法是匯入透過 Microsoft HoloLens 掃描的資料，以測試如何從 Unity 內調整不同環境的體驗。
 
 ## <a name="getting-started"></a>開始使用
 
@@ -68,7 +67,7 @@ ms.locfileid: "101780900"
 
 ### <a name="windows-device-portal"></a>Windows 裝置入口網站
 
-您可以使用 [Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) ，從 Microsoft HoloLens 裝置下載空間網格（以 .obj 檔案的形式）。
+[Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)可以用來從 Microsoft HoloLens 裝置將空間網格下載為 .obj 檔。
 
 1. 藉由使用 HoloLens 來掃描及觀看所需的環境，進行掃描
 1. 使用 Windows 裝置入口網站連接到 HoloLens

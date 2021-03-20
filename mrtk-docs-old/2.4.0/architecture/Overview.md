@@ -4,14 +4,14 @@ description: MRTK 的架構總覽。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK 架構、
-ms.openlocfilehash: 569486924190de6e0310fff875fc6583053cfa74
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d124944badae3a96eafdfc146956a9405bf200ae
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779997"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692835"
 ---
 # <a name="architecture-overview"></a>架構概觀
 
@@ -27,7 +27,7 @@ ms.locfileid: "101779997"
 
 MRTK 沒有單一、統一的物件。 它是為了支援使用案例（範圍從第一次駭客松），到為企業建立複雜且共用體驗的人員所撰寫。 某些程式碼和 Api 可能已撰寫為比其他更多的 (，也就是 MRTK 的某些部分會比較適合「單鍵設定」 ) ，但請務必注意，某些程式碼和應用程式開發介面的原因較多。 隨著 MRTK 發展，所建的功能應該設計成可支援使用案例的範圍。
 
-MRTK 也具有在 VR 和 AR 體驗之間妥善調整的需求。 在 HoloLens 2 或 HoloLens 1 上部署應用程式時，您應該可以輕鬆地建立可正常回復行為的應用程式，而且可以輕鬆地建立以 OpenVR 和 WMR 為目標的應用程式，並)  (和其他平臺。 雖然團隊有時可能會將特定的反復專案放在特定的系統或平臺上，但長期目標是要在使用者建立混合現實體驗的任何地方建立廣泛的支援。
+MRTK 也具有在 VR 和 AR 體驗之間妥善調整的需求。 在 HoloLens 2 或 HoloLens 1 上部署應用程式時，您應該可以輕鬆地建立可正常回復行為的應用程式，而且建立以 OpenVR 和 (WMR 為目標的應用程式，以及) 的其他平臺，都應該很簡單。 雖然團隊有時可能會將特定的反復專案放在特定的系統或平臺上，但長期目標是要在使用者建立混合現實體驗的任何地方建立廣泛的支援。
 
 ## <a name="high-level-breakdown"></a>高層級明細
 

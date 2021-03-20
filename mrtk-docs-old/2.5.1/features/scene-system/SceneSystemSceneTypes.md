@@ -4,14 +4,13 @@ description: MRTK 中不同場景類型的檔
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: af56ceaca2960512c9f2a7e0b2b405bad9306621
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 157daefb03af088dbc80adaab5034e8bfed4024f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779546"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691677"
 ---
 # <a name="scene-types"></a>場景類型
 

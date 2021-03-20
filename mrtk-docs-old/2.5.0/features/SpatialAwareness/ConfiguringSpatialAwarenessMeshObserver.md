@@ -4,18 +4,17 @@ description: 如何在 MRTK 中設定現成的空間網格觀察者
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 755ccb2bcd0ea968209da12c9691670d94c2a2ab
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ecb3dd73c62215bdce6b70b550d7105e435c29d6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779716"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689778"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>設定裝置的網狀觀察器
 
-本指南將逐步說明如何在 MRTK 中設定現成可用的空間網格觀察器，以支援 Windows Mixed Reality 平臺 (例如 HoloLens) 。 混合現實工具組所提供的預設實作為 [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) 類別。 不過，本文中的許多屬性都適用于其他 [自訂觀察](CreateDataProvider.md)者的實施。
+本指南將逐步解說如何在 MRTK 中設定現成可用的空間網格觀察器，以支援 Windows Mixed Reality 平臺 (亦即 HoloLens) 。 混合現實工具組所提供的預設實作為 [WindowsMixedRealitySpatialMeshObserver](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.SpatialAwareness.WindowsMixedRealitySpatialMeshObserver) 類別。 不過，本文中的許多屬性都適用于其他 [自訂觀察](CreateDataProvider.md)者的實施。
 
 ## <a name="profile-settings"></a>設定檔設定
 

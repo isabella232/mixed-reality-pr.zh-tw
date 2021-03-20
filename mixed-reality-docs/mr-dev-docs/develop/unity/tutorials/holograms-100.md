@@ -1,19 +1,19 @@
 ---
-title: MR Basics 100 - 開始使用 Unity
+title: HoloLens (第1代) 基本概念 100-開始使用 Unity
 description: 瞭解如何建立您的第一個適用于 HoloLens 和 Windows Mixed Reality 裝置的基本混合現實 "hello world" 應用程式。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、HoloLens、沉浸式、vr、mr、入門、全息圖、學術、教學課程、混合現實學術、unity、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 86ac759cb73e39f88d62db5dab0c38108bb17d55
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583733"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730355"
 ---
-# <a name="mr-basics-100-getting-started-with-unity"></a>MR Basics 100：開始使用 Unity
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (第1代) 基本概念100：開始使用 Unity
 
 >[!IMPORTANT]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
@@ -30,7 +30,7 @@ ms.locfileid: "98583733"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 * [已安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦。
 

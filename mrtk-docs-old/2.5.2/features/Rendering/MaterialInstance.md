@@ -4,14 +4,13 @@ description: MRTK 中的材質實例和其使用方式檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MaterialInstance、
-ms.openlocfilehash: f804c62ac3655fbe754f4f268dd14d46497e4b51
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 27f411b13e796c99b0b881bdf46c5825dd985a01
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780217"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691325"
 ---
 # <a name="material-instance"></a>材質實例
 

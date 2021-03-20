@@ -4,14 +4,13 @@ description: MRTK 中的輸入系統總覽
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 6e59b49e79b2e2feb438fd9376ca116e1a06b005
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c1c2e5b8060e3e4764904256c76b9187ae42c8b0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779761"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689418"
 ---
 # <a name="input-overview"></a>輸入總覽
 
@@ -24,7 +23,7 @@ MRTK 中的輸入系統可讓您：
 <img src="../images/input/MRTK_InputSystem.png" style="display:block;margin-left:auto;margin-right:auto;" alt="MRTK Input System">
 <sup>MRTK 輸入系統的總覽</sup>
 
-[**輸入資料提供者會 (裝置管理員)**](InputProviders.md)產生輸入。 每個提供者都對應至特定的輸入來源： Open VR、Windows Mixed Reality (WMR) 、Unity 搖桿、Windows 語音等等。提供者會透過 *混合現實工具* 組元件中 **已註冊的服務提供者設定檔** 新增至專案，並會在提供對應的輸入來源時自動產生 [**輸入事件**](InputEvents.md) (例如，偵測到 WMR 控制器或遊戲台連線) 時。
+[**輸入資料提供者 (裝置管理員)**](InputProviders.md)產生輸入。 每個提供者都會對應至特定的輸入來源： Open VR、Windows Mixed Reality (WMR) 、Unity 操縱杆、Windows 語音等等。提供者會透過 *混合現實工具* 組元件中 **已註冊的服務提供者設定檔** 新增至專案，並會在提供對應的輸入來源時自動產生 [**輸入事件**](InputEvents.md) (例如，偵測到 WMR 控制器或遊戲台連線) 時。
 
 [**輸入動作**](InputActions.md) 是原始輸入的抽象概念，目的是要協助隔離應用程式邏輯與產生輸入的特定輸入來源。 例如，它可能很有用，例如，定義 *選取* 動作並將它對應至滑鼠左鍵、遊戲台中的按鈕，以及6個 DOF 控制器中的觸發程式。 然後，您可以讓應用程式邏輯接聽 *選取* 的輸入動作事件，而不需要知道可以產生的所有不同輸入。 輸入動作會定義在 **輸入動作設定檔** 中，可在 *混合現實工具* 組元件的 *輸入系統設定檔* 中找到。
 

@@ -4,14 +4,14 @@ description: 與 MRTK 和 XR SDK 相關的套件。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 28b6766eefbd782a232e5738b80095032c662e0b
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1236618db6b9447677c41bca26cf2c5577d8ace3
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780715"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690925"
 ---
 # <a name="mixed-reality-toolkit-packages"></a>混合現實工具組套件
 
@@ -33,7 +33,7 @@ MixedRealityToolkit 套件包含建立混合現實應用程式所需的核心元
 | | [ObjectMeshObserver](../features/SpatialAwareness/SpatialObjectMeshObserver.md) | 空間感知觀察者使用3D 模型做為資料。 |
 | | OpenVR | OpenVR 裝置的支援。 |
 | | [UnityAR](../features/CameraSystem/UnityArCameraSettings.md) |  (實驗性) 攝影機設定提供者，讓 MRTK 與行動 AR 裝置搭配使用。 |
-| | WindowsMixedReality | Windows Mixed Reality 裝置的支援，包括 Microsoft HoloLens 和沉浸式耳機。 |
+| | WindowsMixedReality | 支援 Windows Mixed Reality 的裝置，包括 Microsoft HoloLens 和沉浸式耳機。 |
 | | WindowsVoiceInput | 支援 Microsoft Windows 平臺上的語音和聽寫。 |
 | | XRSDK |  (unity 2019.3 中 [unity 新 XR 架構](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/) 的實驗性) 支援。 |
 | MRTK/SDK | | |

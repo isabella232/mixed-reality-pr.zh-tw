@@ -1,19 +1,19 @@
 ---
-title: MR 和 Azure 307-機器學習
+title: HoloLens (第1代) 和 Azure 307-機器學習
 description: 完成本課程，以瞭解如何在混合現實應用程式內執行 Azure Machine Learning Studio (傳統) 。
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學術，unity，教學課程，api，機器學習，ml，machine learning studio，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 95213c3d17bbe0f0f81438d4808db142ad21c595
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c9d6408d41340b1c0fcb1f41b61d84ba115258c3
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583394"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730515"
 ---
-# <a name="mr-and-azure-307-machine-learning"></a>MR 和 Azure 307：機器學習
+# <a name="hololens-1st-gen-and-azure-307-machine-learning"></a>HoloLens (第1代) 和 Azure 307：機器學習
 
 <br>
 
@@ -51,7 +51,7 @@ ms.locfileid: "98583394"
 > [!NOTE]
 > 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更的注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 您可以隨意使用最新的軟體（如 [ 安裝工具文章](../../install-the-tools.md)中所列），但不應假設此課程中的資訊會完全符合您在較新軟體中找到的資訊，而不是以下所列的資訊。
@@ -146,7 +146,7 @@ ms.locfileid: "98583394"
 
     9.  您也必須確認您已瞭解套用到此服務的條款及條件。
 
-    10. 按一下頁面底部的 [新增] 。
+    10. 按一下頁面底部的 [新增]  。
 
         ![Azure Machine Learning Studio (傳統) ](images/AzureLabs-Lab7-6.png)
 
@@ -242,7 +242,7 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
 
     ![Machine Learning Studio (傳統) ：實驗](images/AzureLabs-Lab7-20.png)
 
-8.  從 **_ 分割資料項目的 _左下方_*_*** 將連接拖曳至 **定型模型** 專案的 **右上方**。 定型模型會使用資料集的前70% 分割來訓練演算法。
+8.  從 _ *分割資料** 專案的 ***左下方** _ 將連接拖曳至 **定型模型** 專案的 **右上** 方。 定型模型會使用資料集的前70% 分割來訓練演算法。
 
     ![Machine Learning Studio (傳統) ：實驗](images/AzureLabs-Lab7-21.png)
 
@@ -338,11 +338,11 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
 
 2.  在 Unity 開啟的情況下，值得檢查預設 **腳本編輯器** 是否設定為 **Visual Studio**。 移至 [**編輯**  >  **喜好** 設定]，然後在新視窗中，流覽至 [**外部工具**]。 將 **外部腳本編輯器** 變更為 **Visual Studio 2017**。 關閉 [ **喜好** 設定] 視窗。
 
-3.  接下來，移 **至 [** 檔案  >  **組建設定**]，然後按一下 [*_切換平臺_* _] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+3.  接下來，移 **至 [** 檔案  >  **組建設定**]，然後按一下 [**_切換平臺_**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
 
 4.  也請確定：
 
-    1.  _ *目標裝置** 設定為 **任何裝置**。
+    1.  **目標裝置** 設定為 **任何裝置**。
 
         > 針對 Microsoft HoloLens，請將 **目標裝置** 設定為 *HoloLens*。
 
@@ -368,9 +368,9 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
 
         1.  **腳本****執行階段版本** 應該是 **實驗** ( .net 4.6 對等) 
 
-        2. **腳本後端** 應該是 **_.net_* _
+        2. **腳本後端** 應該是 **_.net_**
 
-        3. _ *API 相容性層級** 應為 **.net 4.6**
+        3. **API 相容性層級** 應為 **.net 4.6**
 
             ![設定 Unity 專案](images/AzureLabs-Lab7-36.png)
 
@@ -654,7 +654,7 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
     >
     > ![Machine Learning Studio (傳統) ：實驗](images/AzureLabs-Lab7-53-2.png)
 
-8.  在 **Start ( # B1** 方法中插入此程式碼。 當類別初始化時，會呼叫 **Start ( # B1** 方法：
+8.  在 **Start ()** 方法中插入此程式碼。 當類別初始化時，會呼叫 **Start ()** 方法：
 
     ```csharp
         void Start()
@@ -696,7 +696,7 @@ Machine Learning 演算法的其中一種方式就是分析現有的資料，然
         }
     ```
 
-10. 您可以 **刪除** **( # B1** 方法的更新，因為此類別將不會使用它。
+10. 您可以 **刪除****更新 ()** 方法，因為此類別不會使用它。
 
 11. 新增下列方法，以將目前的日期和時間傳達給 Machine Learning 端點，並接收 JSON 格式的回應。
 

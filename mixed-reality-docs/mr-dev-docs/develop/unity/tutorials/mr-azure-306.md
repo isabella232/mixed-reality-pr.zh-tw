@@ -1,19 +1,19 @@
 ---
-title: MR 和 Azure 306 - 串流影片
+title: HoloLens (第1代) 和 Azure 306-串流影片
 description: 完成本課程，以瞭解如何在混合現實應用程式內執行 Azure 媒體服務。
 author: drneil
 ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，混合的現實，學術，unity，教學課程，api，媒體服務，串流影片，360，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 3a0401b7503d8a783ba529cf24cdf6cc55c88311
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583450"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730565"
 ---
-# <a name="mr-and-azure-306-streaming-video"></a>MR 和 Azure 306：串流視訊
+# <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (第1代) 和 Azure 306：串流影片
 
 <br>
 
@@ -49,7 +49,7 @@ ms.locfileid: "98583450"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 您可以隨意使用最新的軟體（如 [ 安裝工具文章](../../install-the-tools.md)中所列），但不應假設此課程中的資訊會完全符合您在較新軟體中找到的資訊，而不是以下所列的資訊。
@@ -150,7 +150,7 @@ ms.locfileid: "98583450"
 
     6.  您也必須確認您已瞭解套用到此服務的條款及條件。
 
-    7.  按一下頁面底部的 [新增] 。
+    7.  按一下頁面底部的 [新增]  。
 
         ![Azure 入口網站](images/AzureLabs-Lab6-08.png)
 
@@ -455,7 +455,7 @@ ms.locfileid: "98583450"
     using UnityEngine.Video;
     ```
 
-6.  在 **VideoController** 類別中輸入下列變數，以及 **喚醒的 ( # B1** 方法：
+6.  在 **VideoController** 類別中輸入下列變數，以及 **喚醒的 ()** 方法：
 
     ```csharp
         /// <summary> 
@@ -508,7 +508,7 @@ ms.locfileid: "98583450"
     > [!WARNING]
     > 在 Unity 中使用 *HTTPs* 的已知問題，版本 2017.4.1 f1。 如果影片在播放時發生錯誤，請嘗試改為使用 ' HTTP '。
 
-8.  接下來，必須編輯 **Start ( # B1** 方法。 每次使用者切換場景時都會觸發這個方法， (藉由查看注視按鈕來切換影片) 。
+8.  接下來，必須編輯 **開始 ()** 方法。 每次使用者切換場景時都會觸發這個方法， (藉由查看注視按鈕來切換影片) 。
 
     ```csharp
         // Use this for initialization
@@ -519,7 +519,7 @@ ms.locfileid: "98583450"
         }
     ```
 
-9.  在 **Start ( # B1** 方法之後，插入 **>playvideo ( # B3** *IEnumerator* 方法，這個方法將用來順暢地啟動影片 (因此) 不會出現任何斷斷續續。
+9.  在 **Start ()** 方法之後，插入 **>playvideo ()** *IEnumerator* 方法，此方法將用來順暢地啟動影片 (因此) 不會出現任何斷斷續續。
 
     ```csharp
         private IEnumerator PlayVideo()
@@ -596,7 +596,7 @@ ms.locfileid: "98583450"
         }
     ```
 
-10. 這個類別所需的最後一個方法是 **ChangeScene ( # B1** 方法，它會用來在場景之間交換。
+10. 這個類別所需的最後一個方法是 **ChangeScene ()** 方法，它會用來在場景之間交換。
 
     ```csharp
         public void ChangeScene()
@@ -606,7 +606,7 @@ ms.locfileid: "98583450"
     ```
 
     > [!TIP] 
-    > **ChangeScene ( # B1** 方法會使用一個方便 \# 的 C 功能，稱為 *條件運算子*。 如此一來，就可以檢查條件，然後根據檢查結果傳回值，全都在單一語句內。 請遵循此 [連結來深入瞭解條件運算子](/dotnet/csharp/language-reference/operators/conditional-operator)。
+    > **ChangeScene ()** 方法會使用一個方便 \# 的 C 功能，稱為 *條件運算子*。 如此一來，就可以檢查條件，然後根據檢查結果傳回值，全都在單一語句內。 請遵循此 [連結來深入瞭解條件運算子](/dotnet/csharp/language-reference/operators/conditional-operator)。
 
 11. 在回到 Unity 之前，請先將您的變更儲存在 Visual Studio 中。
 
@@ -629,7 +629,7 @@ ms.locfileid: "98583450"
 
 2.  以滑鼠右鍵按一下 [ **專案** ] 面板中的 [*建立* * C \# 腳本]。 將腳本命名為 **注視**。
 
-3.  按兩下新的 [ **_注視_*_] 腳本，使用 _ Visual Studio 2017 來開啟它*。**
+3.  按兩下新的 ***注視** _ 腳本，使用 _ *Visual Studio 2017* 來開啟它。*
 
 4.  請確定下列命名空間位於腳本頂端，並移除任何其他命名空間：
 
@@ -667,7 +667,7 @@ ms.locfileid: "98583450"
         public bool Hit { get; private set; }
     ```
 
-6.  現在需要新增 **喚醒 ( # B1** 和 **Start ( # B3** 方法的程式碼。
+6.  現在需要新增 **喚醒 ()** 和 **啟動 ()** 方法的程式碼。
 
     ```csharp
         private void Awake()
@@ -682,7 +682,7 @@ ms.locfileid: "98583450"
         }
     ```
 
-7.  在 **Update ( # B1** 方法中新增下列程式碼，以投影 Raycast 並偵測目標點擊：
+7.  在 **Update ()** 方法中新增下列程式碼，以投影 Raycast 並偵測目標點擊：
 
     ```csharp
         void Update()

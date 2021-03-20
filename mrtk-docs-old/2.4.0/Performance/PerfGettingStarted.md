@@ -4,14 +4,14 @@ description: 在 MRTK 中瞭解及調整效能的檔。
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: d64b1f242b07ea1c7c8475848e29a98ef16e41f7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 83174dba8247f573f69363f757f5a9edd6ccdb26
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780884"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690985"
 ---
 # <a name="performance"></a>效能
 
@@ -26,7 +26,7 @@ ms.locfileid: "101780884"
 此外，在裝置上執行時，最好使用 Visual Profiler 來追蹤畫面播放速率，而不是在 Unity 編輯器或模擬器中執行。 在具有 [發行設定組建](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019)的裝置上執行時，會描述最精確的效能結果。
 
 > [!NOTE]
-> 如果是建立 Windows Mixed Reality，請使用[主要設定組建](https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)進行部署
+> 如果建立 Windows Mixed Reality，請使用[主要設定組建](https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)進行部署
 
 ![Visual Profiler 介面](../features//Images/Diagnostics/VisualProfiler.png)
 
@@ -118,7 +118,7 @@ Unity 提供預設值 [來控制](https://docs.unity3d.com/Manual/class-QualityS
 
 ### <a name="depth-buffer-sharing-hololens"></a> (HoloLens) 的深度緩衝區共用
 
-如果是針對 Windows Mixed Reality 平臺進行開發，而在特別的 HoloLens 中，啟用 [ *XR 設定*] 下的 *深度緩衝區共用* 有助於進行全像 [影像穩定](hologram-stabilization.md)。 不過，處理深度緩衝區可能會產生效能成本，特別是在使用 [24 位深度格式](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html)時。 因此， *強烈建議您* 將深度緩衝區設定為16位精確度。
+如果是針對 Windows Mixed Reality 平臺進行開發，而在特別的 HoloLens 中，啟用 *XR 設定* 下的 *深度緩衝區共用* 有助於進行全像 [影像穩定](hologram-stabilization.md)。 不過，處理深度緩衝區可能會產生效能成本，特別是在使用 [24 位深度格式](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html)時。 因此， *強烈建議您* 將深度緩衝區設定為16位精確度。
 
 如果因為較低的位格式而發生 [z](https://en.wikipedia.org/wiki/Z-fighting) 操作，請確認所有相機的最大 [剪輯平面](https://docs.unity3d.com/Manual/class-Camera.html) 都設為應用程式的最小可能值。 Unity 預設會設定變更為1000m 的裁剪平面。 在 HoloLens 上，50m 的剪輯平面通常比大部分的應用程式案例還多。
 

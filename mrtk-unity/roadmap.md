@@ -4,14 +4,13 @@ description: 概述 MRTK 藍圖的檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 53cf7ffe786ea5cb650bfd04ff8d42d5bdd7cf09
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: 0a3089d272542e4021bc77b324255830c7cb9c6a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101883123"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690138"
 ---
 # <a name="roadmap"></a>藍圖
 
@@ -23,7 +22,7 @@ Microsoft Mixed Reality 工具組2.6 版
 
 ## <a name="upcoming-releases"></a>即將推出的版本
 
-| 產品 | 描述 | 時間表 | 專案面板 |
+| 產品 | Description | 時間表 | 專案面板 |
 | --- | --- | --- | --- |
 | [MRTK V 2。7](#270) | MRTK 的下一個反復專案 | 2021 年 5 月 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/14 |
 

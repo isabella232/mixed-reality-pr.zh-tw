@@ -4,21 +4,21 @@ description: 在新專案中安裝 MRTK-Unity 的指南。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/8/2020
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 6de9291ab913517aa0e7c5f8f6068136ea6fbbc8
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 775001fe6a73274859230e774a913c0ad71727c1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779932"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692965"
 ---
 # <a name="installation-guide"></a>安裝指南
 
 > [!CAUTION]
 > 如果您不熟悉 Unity 中的 MRTK 或混合現實開發，我們建議您從 [unity 開發旅程](https://docs.microsoft.com/windows/mixed-reality/unity-development-overview?tabs=mrtk%2Chl2)的開端開始著手。 Unity 開發旅程是建議的 **MRTK 起始點**，特別是為了引導您完成安裝、核心概念，以及 Unity 中的 MRTK 使用。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 若要開始使用 Mixed Reality 工具組，您將需要：
 
@@ -27,9 +27,9 @@ ms.locfileid: "101779932"
 
   MRTK 支援 Unity 2018 上的 IL2CPP 和 .NET 腳本後端
 
-* [WINDOWS SDK 18362 +](https://developer.microsoft.com/windows/downloads/windows-10-sdk)。
+* [Windows SDK 18362 +](https://developer.microsoft.com/windows/downloads/windows-10-sdk)。
 
-  如果您要建立適用于 WMR、HoloLens 1 或 HoloLens 2 的 UWP 應用程式，這是必要的。 這在建立 OpenVR 時並不是必要的。
+  如果您要建立適用于 WMR、HoloLens 1 或 HoloLens 2 的 UWP 應用程式，則這是必要的。 這在建立 OpenVR 時並不是必要的。
 
 ## <a name="add-mrtk-to-your-unity-project"></a>將 MRTK 新增至您的 Unity 專案
 
@@ -90,7 +90,7 @@ MRTK 正在嘗試設定您的專案，藉由執行下列動作來建立混合的
 若要建立 **HoloLens 應用程式**，請切換至通用 Windows 平臺：
 
 1. 開啟功能表： File > 組建設定
-1. 選取 **平臺** 清單中的 **通用 Windows 平臺**
+1. 在 [**平臺**] 清單中選取 **通用 Windows 平臺**
 1. 按一下 [ **切換平臺** ] 按鈕
 
 ![切換平台](features/Images/getting_started/SwitchPlatform.png)
@@ -140,7 +140,7 @@ MRTK 正在嘗試設定您的專案，藉由執行下列動作來建立混合的
 
 ### <a name="learn-about-the-core-building-blocks-of-mrtk"></a>瞭解 MRTK 的核心構成要素
 
-請參閱 [MRTK 101：如何使用混合現實工具組 Unity 進行基本互動 (hololens 2、hololens、Windows Mixed Reality、OPEN VR) ， ](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) 以瞭解核心建立區塊。
+請參閱 [MRTK 101：如何使用混合現實工具組 Unity 進行基本互動 (HoloLens 2、HoloLens、Windows Mixed Reality、OPEN VR) ， ](https://docs.microsoft.com/windows/mixed-reality/mrtk-101) 以瞭解核心建立區塊。
 
 ### <a name="run-the-handinteractionexamples-scene-in-the-unity-editor"></a>在 Unity 編輯器中執行 HandInteractionExamples 場景
 

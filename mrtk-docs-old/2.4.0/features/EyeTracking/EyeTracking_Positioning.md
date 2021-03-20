@@ -4,14 +4,14 @@ description: 眼睛追蹤定位檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 73c919f8630de4d1f0aad1224957e19d2246da89
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 37d6728f3e3d95030e113f859b6723049434201e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780975"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692585"
 ---
 ![MRTK](../Images/EyeTracking/mrtk_et_positioning.png)
 

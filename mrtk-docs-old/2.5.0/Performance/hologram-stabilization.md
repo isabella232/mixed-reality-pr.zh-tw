@@ -4,14 +4,13 @@ description: 不同環境和畫面播放速率條件下的全像影像效能。
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、環境追蹤、TMP、
-ms.openlocfilehash: ca181de840e269923f1ea140844858ef8b4d76ea
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: f6d703ef1643bc683fcc45e1d654ca4cf37f2430
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779670"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692405"
 ---
 # <a name="hologram-stabilization"></a>全像穩定
 
@@ -33,11 +32,11 @@ Unity 開發人員可以選擇將應用程式的深度緩衝區與平臺共用�
 
 #### <a name="late-stage-reprojection"></a>延遲階段 reprojection
 
-在轉譯畫面格結束時，Windows Mixed Reality 平臺會採用應用程式所產生的色彩 & 深度轉譯目標，並轉換最後的畫面輸出，以考慮自從最後一個 head 姿勢預測之後的任何輕微移動。 應用程式的遊戲迴圈需要一些時間才能執行。 例如，在 60 FPS，這表示應用程式會採用 ~ 16.667 ms 來呈現畫面格。 雖然這看起來可能像是相比簡直小巫見大巫的時間，但使用者的位置和方向也會改變，而導致投影的新投射矩陣。 延遲階段 reprojection 會轉換最終影像中的圖元，以考慮這個新的觀點。
+在轉譯框架的結尾，Windows Mixed Reality 的平臺會採用應用程式所產生的色彩 & 深度轉譯目標，並轉換最後的畫面輸出，以考慮自從最後一個 head 姿勢預測之後的任何輕微移動。 應用程式的遊戲迴圈需要一些時間才能執行。 例如，在 60 FPS，這表示應用程式會採用 ~ 16.667 ms 來呈現畫面格。 雖然這看起來可能像是相比簡直小巫見大巫的時間，但使用者的位置和方向也會改變，而導致投影的新投射矩陣。 延遲階段 reprojection 會轉換最終影像中的圖元，以考慮這個新的觀點。
 
 #### <a name="per-pixel-vs-stabilization-plane-lsr"></a>每個圖元與穩定平面 LSR
 
-根據在 Windows Mixed Reality 裝置上執行的裝置端點和作業系統版本，Late-Stage 的 Reprojection 演算法會以圖元為單位執行，或經由 [穩定平面](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#stabilization-plane)執行。
+根據 Windows Mixed Reality 裝置上執行的裝置端點和作業系統版本，Late-Stage Reprojection 演算法將會以圖元或 [穩定平面](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#stabilization-plane)執行。
 
 ##### <a name="per-pixel-depth-based"></a>依圖元深度為基礎
 
@@ -135,7 +134,7 @@ public void RemoveAnchor()
 
 - [效能](../Performance/PerfGettingStarted.md)
 - [HoloLens 的環境考慮](https://docs.microsoft.com/windows/mixed-reality/environment-considerations-for-hololens)
-- [全像 Windows 混合式的穩定性](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
+- [全息圖穩定性 Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/hologram-stability)
 - [Unity 中的焦點](https://docs.microsoft.com/windows/mixed-reality/focus-point-in-unity)
 - [Unity 中的座標系統](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity)
 - [Unity 中的持續性](https://docs.microsoft.com/windows/mixed-reality/persistence-in-unity)

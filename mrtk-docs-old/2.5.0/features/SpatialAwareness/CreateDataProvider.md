@@ -4,14 +4,13 @@ description: 描述如何在 MRTK 中建立自訂資料提供者
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: e5af47e710a61c2ea08c01cdfff8dae6970b352e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7c68c3e2ca7b832bc4afb2398bd5f51403951e29
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779715"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689758"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>建立空間感知系統資料提供者
 

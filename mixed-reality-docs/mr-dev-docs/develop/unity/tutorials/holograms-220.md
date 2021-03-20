@@ -1,19 +1,19 @@
 ---
-title: MR Spatial 220 - 空間音效
+title: HoloLens (第1代) 空間 220-空間音效
 description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習空間音效概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間音效、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: da130a5a93ec261d2e767874faa31dbc50d51b12
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: aea093aa8f5e6c983cd66acf8cec89d8e7ecf52d
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582759"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730305"
 ---
-# <a name="mr-spatial-220-spatial-sound"></a>MR Spatial 220：空間音效
+# <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (第1代) 空間220：空間音效
 
 >[!NOTE]
 >混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。  這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。

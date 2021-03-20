@@ -4,14 +4,13 @@ description: 對話方塊控制項的描述。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 7c381cfd000d2f939889cffa8c4f2a47f0b4a2fe
-ms.sourcegitcommit: 7a8fa3257a13635ddad77d963e49440f62c19774
+ms.openlocfilehash: d1728d3e0efd30138697c4c2488e8f488f681242
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/04/2021
-ms.locfileid: "101884056"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104689298"
 ---
 # <a name="dialog"></a>對話
 
@@ -37,16 +36,16 @@ MRTK 提供三個對話方塊 prefabs：
 public static Dialog Open(GameObject dialogPrefab, DialogButtonType buttons, string title, string message, bool placeForNearInteraction, System.Object variable = null)
 ```
 
-### <a name="example-of-opening-large-dialog-with-single-ok-button-placed-at-far-interaction-range-gaze-hand-ray-motion-controller"></a>以單一 [確定] 按鈕開啟大型對話的範例，放在最遠的互動範圍 (注視、手光線、移動控制器) 
+### <a name="example-of-opening-a-large-dialog-with-a-single-ok-button-placed-at-far-interaction-range-gaze-hand-ray-motion-controller"></a>開啟具有單一 [確定] 按鈕的大型對話範例，放在最遠的互動範圍 (注視、手光線、移動控制器) 
 
 ```c#
 Dialog.Open(DialogPrefabLarge, DialogButtonType.OK, "Confirmation Dialog, Large, Far", "This is an example of a large dialog with only one button, placed at far interaction range", false);
 ```
 
-### <a name="example-of-opening-small-dialog-with-single-ok-button-placed-at-near-interaction-range-direct-hand-interaction"></a>以單一 [確定] 按鈕開啟小型對話的範例，放在接近互動範圍 (直接手互動) 
+### <a name="example-of-opening-a-small-dialog-containing-a-choice-message-for-the-user-placed-at-near-interaction-range-direct-hand-interaction"></a>開啟包含使用者選擇訊息的小型對話範例，放在接近互動範圍 (直接操作) 
 
 ```c#
-Dialog.Open(DialogPrefabSmall, DialogButtonType.Yes | DialogButtonType.No, "Confirmation Dialog, Small, Far", "This is an example of a small dialog with a choice message, placed at near interaction range", true);
+Dialog.Open(DialogPrefabSmall, DialogButtonType.Yes | DialogButtonType.No, "Confirmation Dialog, Small, Near", "This is an example of a small dialog with a choice message, placed at near interaction range", true);
 ```
 
 如需詳細資訊，請參閱 `DialogExampleController.cs` DialogExample unity 場景。

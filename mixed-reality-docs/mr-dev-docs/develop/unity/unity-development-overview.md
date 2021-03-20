@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: ed0f27822ab83baa2c1de6575067bdbd6b00a5e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
+ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102126611"
+ms.lasthandoff: 03/20/2021
+ms.locfileid: "104730485"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
@@ -27,7 +27,7 @@ ms.locfileid: "102126611"
 
 使用下列檢查點，將您的 Unity 遊戲和應用程式融入混合實境的世界中。 如果您尚未探索 [設計全像投影範例應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)，建議您下載並使用，以熟悉混合實境 UX 的基本概念。
 
-### <a name="1-getting-started"></a>1.開始使用
+## <a name="1-getting-started"></a>1.開始使用
 
 在 Unity 中開發最簡單的方式，就是使用混合實境工具組。 MRTK 可協助您自動設定混合實境的專案，並提供一組功能協助您加速開發流程。 閱讀本節的內容後，您大致上就已了解混合實境工具組、針對混合實境應用程式正確設定的開發環境，以及您自行建置且可在 Unity 中運作的 MRTK 專案。
 
@@ -44,13 +44,13 @@ ms.locfileid: "102126611"
 > [!NOTE]
 > 在您的專案中設定 MRTK V2 後，標準 Unity 遊戲物件 (例如相機) 會立即亮起，以提供坐姿級別體驗。 您可以在[座標系統](coordinate-systems-in-unity.md)頁面上找到變更應用程式體驗級別的指示。
 
-### <a name="2-core-building-blocks"></a>2.核心基本要素
+## <a name="2-core-building-blocks"></a>2.核心基本要素
 
 混合實境應用程式的所有核心建置組塊都會以與其他 Unity API 一致的方式公開。 這些建置組塊是透過混合實境工具組提供的獨立功能。 您目前可能不需用到所有功能，但建議您及早探索。 深入探討下列核心建置組塊後，您將了解如何讓包含多樣化功能的工具箱自行或透過 MRTK 整合到混合實境專案中。
 
 [!INCLUDE[](../includes/unity-building-blocks.md)]
 
-### <a name="3-advanced-features"></a>3.進階功能
+## <a name="3-advanced-features"></a>3.進階功能
 
 在混合實境應用程式中各有作用的其他重要功能可透過 Unity API 來使用，不需要任何額外的封裝或設定。 這些功能可以新增至 Unity 專案，且不一定需要先安裝 MRTK。 深入了解 Unity 提供的進階功能後，您將能夠建置更有深度的複雜混合實境應用程式。
 
@@ -62,7 +62,7 @@ ms.locfileid: "102126611"
 | [追蹤遺失](tracking-loss-in-unity.md) | 處理您的裝置無法在應用程式環境的空間中找到本身所在位置的狀況 |
 | [鍵盤輸入](keyboard-input-in-unity.md) | 在您的應用程式中取得實際環境和混合實境鍵盤的輸入 |
 
-### <a name="4-deploying-to-a-device-or-emulator"></a>4.部署至裝置或模擬器
+## <a name="4-deploying-to-a-device-or-emulator"></a>4.部署至裝置或模擬器
 
 當您的全像攝影 Unity 專案準備好進行測試之後，下一步就是匯出和建置 Unity Visual Studio 解決方案。 有了該 VS 解決方案，您就可以在真正或模擬的裝置上，以三種方式之一來執行應用程式。 在本節結束時，您將能夠在任何裝置或模擬器上部署您的應用程式，以符合您的開發需求。
 
@@ -70,7 +70,7 @@ ms.locfileid: "102126611"
 * [HoloLens 模擬器](../platform-capabilities-and-apis/using-the-hololens-emulator.md)
 * [Windows 混合實境沉浸式頭戴裝置模擬器](../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)
 
-### <a name="5-adding-services"></a>5.新增服務
+## <a name="5-adding-services"></a>5.新增服務
 
 到了開發旅程的這個階段，您可能會想要新增服務，或是需要商業部署方面的協助。 將 [Azure 雲端服務](../mixed-reality-cloud-services.md)與 Dynamics 365 功能整合，可以有效提升您的專案等級。 我們編譯了一些方便您探索及擴充混合實境知識的起點。
 

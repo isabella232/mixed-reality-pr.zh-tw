@@ -4,14 +4,13 @@ description: 如何搭配 MRTK 中的手運動使用眼睛目標作為主要指�
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 68381bec6f6b8d52b39ed94d0c0200cccc4d1d10
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2d339e292dbd227bce42ae7ea59d57741dd77317
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780564"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688478"
 ---
 # <a name="eyes--hand-interaction"></a>眼睛 + 手互動
 
@@ -21,7 +20,7 @@ ms.locfileid: "101780564"
 在我們的 [MRTK 眼追蹤示範](../../example-scenes/eye-tracking-examples-overview.md)中，我們會說明使用眼睛 + 手的數個範例，例如：
 
 - [選擇](eye-tracking-target-selection.md)：查看遙遠的全像全像，然後執行縮小的手勢來快速選取它。
-- [定位](eye-tracking-positioning.md)：流暢在您的場景中移動全像投影、捏合您的食指和 thumb 以抓取，然後使用您的手四處移動。
+- **(本文的定位)**：流暢在您的場景中移動全像，只要查看一下，就可以捏合您的食指，然後將它放在一起來抓取，然後使用您的手四處移動。
 - [導覽](eye-tracking-navigation.md)：只需查看您想要放大的位置，並將您的索引手指與 thumb 一起放大 _，並朝_ 您手上一步。
 
 請注意，MRTK 目前的設計方式，是以距離光線作為優先的焦點指標。

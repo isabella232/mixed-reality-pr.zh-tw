@@ -4,14 +4,14 @@ description: MRTK 中的描述滾動物件集合。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: dea20e9df9c00207b2a9b1c6b5a893fa357de755
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a8c81be94d155a125366a390e0032a099e2d80b9
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779506"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692685"
 ---
 # <a name="scrolling-object-collection"></a>滾動物件集合
 
@@ -25,7 +25,7 @@ ScrollingObjectCollection 是原生滾動3D 物件的物件集合。 它支援�
 
 只要將這些 prefabs 放入場景中，加入所需的物件，然後按 "UpdateCollection"，即可完成集合的設定和配置。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>Prerequisites
 
 - 集合中的所有物件都必須使用 MRTK 標準著色器
 - 集合中的每個物件都必須具有具有的碰撞 [`NearInteractionTouchable`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchable) 。 所有的衝突測試目前都是使用這些 colliders 來完成;ScrollingObjectCollection 尚不支援靜態/nonmoving 支援碰撞。

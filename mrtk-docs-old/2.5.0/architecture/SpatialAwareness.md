@@ -4,15 +4,14 @@ description: 混合現實應用程式中的空間 Awarness。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: dec70e8f895daaa723a0a6cb85cfcf4c30fb95d9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7b6de05b9dcccd380c9ba0073fae401089c6adb1
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781081"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692265"
 ---
 # <a name="spatial-awareness"></a>空間感知
 
-讀取[空間感知](../features/SpatialAwareness/SpatialAwarenessGettingStarted.md)開始使用
+讀取 [空間感知開始使用](../features/SpatialAwareness/SpatialAwarenessGettingStarted.md)

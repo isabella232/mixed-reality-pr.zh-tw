@@ -4,14 +4,13 @@ description: 手動指導的說明和範例。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 403904f9fcc268feb19b61655199d856b23317cf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a145b449842c7e2ff9dacaf3c2bed56594d6ff72
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780872"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690578"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -88,7 +87,7 @@ Animator 和腳本的設定方式應該盡可能簡化安裝程式。 若要加�
 
 ### <a name="movetotarget"></a>MoveToTarget
 
-MoveToTarget.cs 腳本提供將手提示從追蹤位置移至一段時間的目標位置的功能。
+MoveToTarget .cs 腳本提供了一段時間，將手提示從追蹤位置移至目標位置的功能。
 
 #### <a name="how-to-set-up-movetotarget"></a>如何設定 MoveToTarget
 
@@ -113,7 +112,7 @@ MoveToTarget.cs 腳本提供將手提示從追蹤位置移至一段時間的目�
 
 ### <a name="rotatearoundpoint"></a>RotateAroundPoint
 
-RotateAroundPoint.cs 腳本提供在一段時間內旋轉旋轉點提示的功能。
+RotateAroundPoint 可提供在一段時間內旋轉旋轉點提示的功能。
 
 #### <a name="how-to-set-up-rotatearoundpoint"></a>如何設定 RotateAroundPoint
 

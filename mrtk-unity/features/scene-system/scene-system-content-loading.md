@@ -4,14 +4,13 @@ description: 使用 MRTK 載入場景系統的檔
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ffa6d27e4f19357af663800cc6ec49e3475ece62
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: d2b1ec55c4dc715ade68e5c04981c252e6dc7b3a
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780736"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690208"
 ---
 # <a name="content-scene-loading"></a>內容場景載入
 
@@ -52,7 +51,7 @@ await sceneSystem.LoadContent("SingleContentScene", LoadSceneMode.Single);
 
 您可以依組建索引的順序來單一載入內容。 這適合用來展示應用程式，讓使用者逐一流覽一組示範場景。
 
-![MRTK_SceneSystemBuildSettings](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
+![Player 設定中組建的目前場景](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
 
 請注意，下一個/上一個內容載入預設會使用 LoadSceneMode，以確保會卸載先前的內容。
 
@@ -90,7 +89,7 @@ if (prevSceneRequested)
 
 ## <a name="loading-by-tag"></a>依標記載入
 
-![MRTK_SceneSystemLoadingByTag](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
+![依標記載入內容場景](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
 
 有時候，在群組中載入內容場景是很理想的做法。 例如，可能會由多個場景組成體驗的階段，這些都必須同時載入，才能運作。 為了方便此作業，您可以標記場景，然後將其載入，或使用該標記將其卸載。
 
@@ -143,4 +142,4 @@ Mountain | 地形 | •
 
 您可以使用場景系統的[服務偵測器](../../configuration/mixed-reality-configuration-guide.md#editor-utilities)，在 [編輯器] 和 [播放] 模式中執行上述所有作業。 在 [編輯] 模式中，場景載入將會立即進行，而在 [播放] 模式中，您可以觀察載入進度和使用 [啟用權杖。](scene-system-load-progress.md)
 
-![MRTK_SceneSystemServiceInspector](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)
+![已反白顯示內容載入的偵測器場景系統](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)

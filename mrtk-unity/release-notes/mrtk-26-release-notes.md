@@ -4,19 +4,18 @@ description: MRTK 2.6 版的版本資訊
 author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 274373db46b510453797dff7389bd09cbdcdf82e
-ms.sourcegitcommit: daad3dcce6381e2967fab634313dc7b2ea26d2bd
+ms.openlocfilehash: ab0928a0d919c4d3be13f25342f2244cf6afbc32
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/12/2021
-ms.locfileid: "103234544"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690178"
 ---
 # <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Microsoft Mixed Reality 工具組2.6.1 版本資訊
 
 > [!IMPORTANT]
-> 有一個已知的編譯器問題，會影響使用 ARM64 針對 Microsoft HoloLens 2 所建立的應用程式。 將 Visual Studio 2019 更新至16.8 版或更新版本，即可修正此問題。 如果您無法更新 Visual Studio，請匯入套件以套用因應措施 `com.microsoft.mixedreality.toolkit.tools` 。
+> 有一個已知的編譯器問題，會影響使用 ARM64 針對 Microsoft HoloLens 2 所建立的應用程式。 若要修正此問題，請將 Visual Studio 2019 更新至16.8 版或更新版本。 如果您無法更新 Visual Studio，請匯入套件以套用因應措施 `com.microsoft.mixedreality.toolkit.tools` 。
 
 ## <a name="whats-new-in-261"></a>2.6.1 的新功能
 
@@ -71,7 +70,7 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 
 ### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>場景理解現在可在 MRTK 中作為實驗空間感知觀察者
 
-[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding)的實驗性支援是在 MRTK 2.6 中引進。 使用者可以在以 MRTK 為基礎的專案中，將 HoloLens 2 的場景理解功能納入為空間感知觀察者。 如需詳細資訊，請參閱 [場景理解檔](../features/spatial-awareness/scene-understanding.md) 。
+[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding)的實驗性支援是在 MRTK 2.6 中引進。 使用者可以將 HoloLens 2 的場景理解功能納入以 MRTK 為基礎的專案中的空間感知觀察者。 如需詳細資訊，請參閱 [場景理解檔](../features/spatial-awareness/scene-understanding.md) 。
 
 > [!IMPORTANT]
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
@@ -114,7 +113,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="reading-mode"></a>讀取模式
 
-已新增在 HoloLens 2 上 [讀取模式](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) 的支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上投射的圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
+已新增 HoloLens 2 的 [讀取模式](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) 支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上的投射圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
 
   ![Windows Mixed Reality 閱讀模式](images/WMRReadingMode.gif)
 
@@ -147,15 +146,15 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>部分混合現實工具組標準著色器功能需要基礎封裝
 
-透過 Unity 套件管理員匯入時，MRTK 標準著色器公用程式腳本 (例如： HoverLight.cs) 不會與標準資產套件中的著色器共置。 若要存取此功能，應用程式將需要匯入基礎套件。
+透過 Unity 封裝管理員匯入時，MRTK 標準著色器公用程式腳本 (例如：) HoverLight 不會與標準資產套件中的著色器共置。 若要存取此功能，應用程式將需要匯入基礎套件。
 
 ### <a name="cameracache-may-create-a-new-camera-on-shutdown"></a>CameraCache 可能會在關機時建立新的攝影機
 
 在某些情況下 (例如在 Unity 編輯器) 中使用 LeapMotion 提供者時，CameraCache 可能會在關閉時重新建立 MainCamera。 如需詳細資訊，請參閱 [此問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8459) 。
 
-### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>透過 Unity 套件管理員匯入範例時的 FileNotFoundException
+### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException 透過 Unity 匯入範例的時機封裝管理員
 
-根據專案路徑的長度，透過 Unity 套件管理員匯入範例可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
+視專案路徑的長度而定，透過 Unity 匯入範例封裝管理員可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>未指定空間定位器。 應用程式將不支援空間音效
 
@@ -163,7 +162,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 若要解決此問題，請確定：
 
-- **視窗**  > **套件管理員** 已安裝一或多個 XR 套件
+- **視窗**  > **封裝管理員** 已安裝一或多個 XR 套件
 - **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
 
   ![選取音訊空間定位器](images/SpatializerSelection.png)

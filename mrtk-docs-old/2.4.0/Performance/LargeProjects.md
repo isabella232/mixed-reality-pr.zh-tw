@@ -4,14 +4,14 @@ description: MRTK 具有大型專案之取用者的秘訣。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 48efe34d735f1feff3f7b78e0b77d1454659ae59
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 66ed51ad793d402790f9a93529cb811c516487ad
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779931"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692945"
 ---
 # <a name="using-mrtk-in-large-projects"></a>在大型專案中使用 MRTK
 

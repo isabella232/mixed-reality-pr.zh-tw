@@ -4,14 +4,13 @@ description: 停駐控制項的描述。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ed1a5d2663826ce2300a4a179d9129716dbd77a7
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4b860977cb6d878e2bae4eff7c42f313900520fd
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779963"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690588"
 ---
 # <a name="dock"></a>Dock
 
@@ -32,7 +31,7 @@ ms.locfileid: "101779963"
 - 在場景中將可停駐元件新增至任意數目的物件，以允許它們固定。 它們也必須有 [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator) 元件和碰撞。
 - *選擇性：* 使用 [`GridObjectCollection`](xref:Microsoft.MixedReality.Toolkit.Utilities.GridObjectCollection) Dock 來自動設定 DockPositions。
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>Prerequisites
 
 - 每個可停駐的物件都必須具有或的碰撞 [`ObjectManipulator`](xref:Microsoft.MixedReality.Toolkit.UI.ObjectManipulator) [`ManipulationHandler`](xref:Microsoft.MixedReality.Toolkit.UI.ManipulationHandler) 。
 - 如果您想要物件在場景載入時啟動停駐，請將它指派給任何 DockPosition 的停駐物件屬性。

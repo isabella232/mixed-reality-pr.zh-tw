@@ -4,14 +4,13 @@ description: MRTK 中的脈衝著色器描述。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 2f288cd65cd66dd60cd4abdd8e966f0c9082c46d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 582c51c8ff57d5c8a9d835f508a8c277a480c527
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780633"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104691765"
 ---
 # <a name="pulse-shader"></a>脈衝著色器
 
@@ -27,9 +26,9 @@ ms.locfileid: "101780633"
 
 開啟 **PulseShaderExamples unity** 場景，並觀察球、表面重建和已說出之手形網格的影響。
 
-使用 SurfacePulse.cs 腳本，以動畫顯示指派之材質的脈衝效果，或在材質本身開啟「自動脈衝」。
+使用 SurfacePulse .cs 腳本對指派的材質產生脈衝效果的動畫，或在材質本身開啟「自動脈衝」。
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 針對 [表面重建]，請確定已在 [MRTK 設定] 下指派 MRTK_SurfaceReconstruction]-> 空間感知-> 顯示設定] > 可見的材質。
 

@@ -4,20 +4,19 @@ description: '>--run-unittests 以檢查 MRTK 的可靠性」。'
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: 958f6ae59736003141d0cc96a6706d211be5709c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1a09406eac09a2905bce1b9a7b9d0987a49905d0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780997"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104690795"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>在 MRTK 中撰寫和執行測試
 
 為了確保 MRTK 可靠，MRTK 有一組測試，以確保程式碼的變更不會回歸現有的行為。 在大型程式碼基底（例如 MRTK）中提供良好的測試涵蓋範圍，對穩定性很重要，並且在進行變更時具有自信。
 
-MRTK 會使用 [Unity 測試](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 執行器，其使用 [NUnit](https://nunit.org/)的 unity 整合。 本指南將提供如何將測試新增至 MRTK 的起點。 它不會說明 [Unity 測試](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 執行器和 [NUnit](https://nunit.org/) ，您可以在提供的連結中查閱。
+MRTK 會使用 [unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) ，其使用 [NUnit](https://nunit.org/)的 unity 整合。 本指南將提供如何將測試新增至 MRTK 的起點。 它不會說明 [Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html) 和 [NUnit](https://nunit.org/) ，可在提供的連結中查閱。
 
 提交提取要求之前，請務必：
 
@@ -33,7 +32,7 @@ MRTK 會使用 [Unity 測試](https://docs.unity3d.com/Manual/testing-editortest
 
 ### <a name="unity-editor"></a>Unity 編輯器
 
-您可以在 [視窗一般測試執行器 **]** 下找到 [Unity 測試](https://docs.unity3d.com/Manual/testing-editortestsrunner.html)執行器  >    >   ，將會顯示所有可用的 MRTK 播放和編輯模式測試。
+[Unity Test Runner](https://docs.unity3d.com/Manual/testing-editortestsrunner.html)可在 [視窗一般 **]**  >    >  **Test Runner** 下找到，並會顯示所有可用的 MRTK 播放和編輯模式測試。
 
 ### <a name="command-line"></a>命令列
 

@@ -4,14 +4,14 @@ description: MRTK 中的 NuGet 套件。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f4f4ceb48b9987f6a964879e95a75f8db58c145f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: eb41896977bded6dd5b1aec7c4b17632435c6b94
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780716"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692725"
 ---
 # <a name="mixed-reality-toolkit-nuget-package"></a>混合現實工具組 NuGet 套件
 
@@ -69,7 +69,7 @@ NuGet 封裝包含編譯過的二進位檔，而不是鬆散的腳本檔案，�
 
 ### <a name="debugging-mixed-reality-toolkit"></a>調試混合現實工具組
 
-Unity & Visual Studio Tools for Unity 有已知的問題，可防止在 Visual Studio 偵錯工具中輕鬆地進行 PDB 的偵錯工具。 因此，雖然封裝隨附 Pdb 和來源內嵌，但如果 Dll 是在本機建立的 (讀取) ，就可能會進行偵錯工具的偵錯工具。 有一項因應措施是建立為 [MSBuildForUnity](https://github.com/microsoft/MSBuildForUnity/)的一部分，稍後會有更多更新。
+Unity & 有已知的問題，Visual Studio Tools for Unity 防止 PDB 在 Visual Studio 偵錯工具中輕鬆地進行調試。 因此，雖然封裝隨附 Pdb 和來源內嵌，但如果 Dll 是在本機建立的 (讀取) ，就可能會進行偵錯工具的偵錯工具。 有一項因應措施是建立為 [MSBuildForUnity](https://github.com/microsoft/MSBuildForUnity/)的一部分，稍後會有更多更新。
 
 ## <a name="locally-building-the-nuget-package"></a>在本機建立 NuGet 套件
 

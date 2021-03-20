@@ -4,14 +4,13 @@ description: MRTK 中的注視類型 Docummentation
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、注視、
-ms.openlocfilehash: 3499eb2481434c913a46ccbc0976eb4e3db021b2
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: abdf41e45cbabbc0a0ca03b43af07c879bca6f93
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781039"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104688498"
 ---
 # <a name="gaze"></a>注視
 
@@ -41,7 +40,7 @@ ms.locfileid: "101781039"
 
 ### <a name="alternative-platform-provided-gaze-poses"></a>替代平臺提供的注視姿勢
 
-根據預設，MRTK GazeProvider 會使用相機的框架中心作為注視原點。 某些平臺（像是在 HoloLens 2 上的 Windows Mixed Reality）提供了一種定義的注視姿勢。 這是透過「 `Use Head Gaze Override` 注視設定」中的設定來管理。 啟用時，將會使用替代的注視覆寫。 停用時，將會使用預設的框架中心原點。 具體而言，在 HoloLens 2 中，將會產生數度的外觀，讓使用者可以輕鬆地使用其標頭來設定目標。
+根據預設，MRTK GazeProvider 會使用相機的框架中心作為注視原點。 某些平臺（例如 HoloLens 2 上的 Windows Mixed Reality）提供了一種定義的注視姿勢。 這是透過「 `Use Head Gaze Override` 注視設定」中的設定來管理。 啟用時，將會使用替代的注視覆寫。 停用時，將會使用預設的框架中心原點。 具體來說，就 HoloLens 2 來說，看看的外觀角度將會產生數度，以讓使用者在使用其標頭作為目標時感到舒適。
 
 ## <a name="usage"></a>使用方式
 
