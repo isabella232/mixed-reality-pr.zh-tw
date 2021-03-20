@@ -4,24 +4,24 @@ description: 描述可透過程式設計方式設定空間感知系統的主要�
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
+ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5e80e13f50fc4c701ad486f15bd67f98b1263067
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ba83df5151f47b75a934ade053a12e40d6d00428
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780326"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104692465"
 ---
-# <a name="configuring-mesh-observers-via-code"></a><span data-ttu-id="60651-104">透過程式碼設定網格觀察者</span><span class="sxs-lookup"><span data-stu-id="60651-104">Configuring mesh observers via code</span></span>
+# <a name="configuring-mesh-observers-via-code"></a><span data-ttu-id="ae026-104">透過程式碼設定網格觀察者</span><span class="sxs-lookup"><span data-stu-id="ae026-104">Configuring mesh observers via code</span></span>
 
-<span data-ttu-id="60651-105">本文將討論一些主要機制和 Api，以程式設計方式設定 [空間感知系統](SpatialAwarenessGettingStarted.md) 和相關的 *網格觀察* 者資料提供者。</span><span class="sxs-lookup"><span data-stu-id="60651-105">This article will discuss some of the key mechanisms and APIs to programmatically configure the [Spatial Awareness system](SpatialAwarenessGettingStarted.md) and related *Mesh Observer* data providers.</span></span>
+<span data-ttu-id="ae026-105">本文將討論一些主要機制和 Api，以程式設計方式設定 [空間感知系統](SpatialAwarenessGettingStarted.md) 和相關的 *網格觀察* 者資料提供者。</span><span class="sxs-lookup"><span data-stu-id="ae026-105">This article will discuss some of the key mechanisms and APIs to programmatically configure the [Spatial Awareness system](SpatialAwarenessGettingStarted.md) and related *Mesh Observer* data providers.</span></span>
 
-## <a name="accessing-mesh-observers"></a><span data-ttu-id="60651-106">存取網格觀察者</span><span class="sxs-lookup"><span data-stu-id="60651-106">Accessing mesh observers</span></span>
+## <a name="accessing-mesh-observers"></a><span data-ttu-id="ae026-106">存取網格觀察者</span><span class="sxs-lookup"><span data-stu-id="ae026-106">Accessing mesh observers</span></span>
 
-<span data-ttu-id="60651-107">執行介面的網格觀察者類別 [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) 可提供平臺特定的網格資料給空間感知系統。</span><span class="sxs-lookup"><span data-stu-id="60651-107">Mesh Observer classes that implement the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) interface provide platform-specific mesh data to the Spatial Awareness system.</span></span> <span data-ttu-id="60651-108">空間感知設定檔中可以設定多個觀察者。</span><span class="sxs-lookup"><span data-stu-id="60651-108">Multiple Observers can be configured in the Spatial Awareness profile.</span></span>
+<span data-ttu-id="ae026-107">執行介面的網格觀察者類別 [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) 可提供平臺特定的網格資料給空間感知系統。</span><span class="sxs-lookup"><span data-stu-id="ae026-107">Mesh Observer classes that implement the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) interface provide platform-specific mesh data to the Spatial Awareness system.</span></span> <span data-ttu-id="ae026-108">空間感知設定檔中可以設定多個觀察者。</span><span class="sxs-lookup"><span data-stu-id="ae026-108">Multiple Observers can be configured in the Spatial Awareness profile.</span></span>
 
-<span data-ttu-id="60651-109">存取空間感知系統的資料提供者，與其他任何混合現實工具組服務的存取方式大多相同。</span><span class="sxs-lookup"><span data-stu-id="60651-109">Accessing the data providers of the Spatial Awareness system is mostly the same as for any other Mixed Reality Toolkit service.</span></span> <span data-ttu-id="60651-110">空間感知服務必須轉換至 [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) 介面，才能透過 `GetDataProvider<T>` api 存取，然後在執行時間使用這些 api 直接存取網格觀察者物件。</span><span class="sxs-lookup"><span data-stu-id="60651-110">The Spatial Awareness service must be casted to the [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) interface to access via the `GetDataProvider<T>` APIs, which can then be utilized to access the Mesh Observer objects directly at runtime.</span></span>
+<span data-ttu-id="ae026-109">存取空間感知系統的資料提供者，與其他任何混合現實工具組服務的存取方式大多相同。</span><span class="sxs-lookup"><span data-stu-id="ae026-109">Accessing the data providers of the Spatial Awareness system is mostly the same as for any other Mixed Reality Toolkit service.</span></span> <span data-ttu-id="ae026-110">空間感知服務必須轉換至 [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) 介面，才能透過 `GetDataProvider<T>` api 存取，然後在執行時間使用這些 api 直接存取網格觀察者物件。</span><span class="sxs-lookup"><span data-stu-id="ae026-110">The Spatial Awareness service must be casted to the [`IMixedRealityDataProviderAccess`](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProviderAccess) interface to access via the `GetDataProvider<T>` APIs, which can then be utilized to access the Mesh Observer objects directly at runtime.</span></span>
 
 ```c#
 // Use CoreServices to quickly get access to the IMixedRealitySpatialAwarenessSystem
@@ -33,7 +33,7 @@ var dataProviderAccess = spatialAwarenessService as IMixedRealityDataProviderAcc
 var meshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>();
 ```
 
-<span data-ttu-id="60651-111">`CoreServices.GetSpatialAwarenessSystemDataProvider<T>()`Helper 可簡化此存取模式，如下所示。</span><span class="sxs-lookup"><span data-stu-id="60651-111">The `CoreServices.GetSpatialAwarenessSystemDataProvider<T>()` helper simplifies this access pattern as demonstrated below.</span></span>
+<span data-ttu-id="ae026-111">`CoreServices.GetSpatialAwarenessSystemDataProvider<T>()`Helper 可簡化此存取模式，如下所示。</span><span class="sxs-lookup"><span data-stu-id="ae026-111">The `CoreServices.GetSpatialAwarenessSystemDataProvider<T>()` helper simplifies this access pattern as demonstrated below.</span></span>
 
 ```c#
 // Get the first Mesh Observer available, generally we have only one registered
@@ -44,9 +44,9 @@ var meshObserverName = "Spatial Object Mesh Observer";
 var spatialObjectMeshObserver = dataProviderAccess.GetDataProvider<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
 ```
 
-## <a name="starting-and-stopping-mesh-observation"></a><span data-ttu-id="60651-112">啟動和停止網格觀察</span><span class="sxs-lookup"><span data-stu-id="60651-112">Starting and stopping mesh observation</span></span>
+## <a name="starting-and-stopping-mesh-observation"></a><span data-ttu-id="ae026-112">啟動和停止網格觀察</span><span class="sxs-lookup"><span data-stu-id="ae026-112">Starting and stopping mesh observation</span></span>
 
-<span data-ttu-id="60651-113">處理空間感知系統時最常見的工作之一，就是在執行時間動態地關閉/開啟此功能。</span><span class="sxs-lookup"><span data-stu-id="60651-113">One of the most common tasks when dealing with the Spatial Awareness system is turning the feature off/on dynamically at runtime.</span></span> <span data-ttu-id="60651-114">這會透過和 api 針對每個觀察者完成 [`IMixedRealitySpatialAwarenessObserver.Resume`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) [`IMixedRealitySpatialAwarenessObserver.Suspend`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Suspend) 。</span><span class="sxs-lookup"><span data-stu-id="60651-114">This is done per Observer via the [`IMixedRealitySpatialAwarenessObserver.Resume`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) and [`IMixedRealitySpatialAwarenessObserver.Suspend`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Suspend) APIs.</span></span>
+<span data-ttu-id="ae026-113">處理空間感知系統時最常見的工作之一，就是在執行時間動態地關閉/開啟此功能。</span><span class="sxs-lookup"><span data-stu-id="ae026-113">One of the most common tasks when dealing with the Spatial Awareness system is turning the feature off/on dynamically at runtime.</span></span> <span data-ttu-id="ae026-114">這會透過和 api 針對每個觀察者完成 [`IMixedRealitySpatialAwarenessObserver.Resume`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) [`IMixedRealitySpatialAwarenessObserver.Suspend`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Suspend) 。</span><span class="sxs-lookup"><span data-stu-id="ae026-114">This is done per Observer via the [`IMixedRealitySpatialAwarenessObserver.Resume`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Resume) and [`IMixedRealitySpatialAwarenessObserver.Suspend`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver.Suspend) APIs.</span></span>
 
 ```c#
 // Get the first Mesh Observer available, generally we have only one registered
@@ -59,16 +59,16 @@ observer.Suspend();
 observer.Resume();
 ```
 
-<span data-ttu-id="60651-115">這段程式碼功能也可以透過空間感知系統直接存取來簡化。</span><span class="sxs-lookup"><span data-stu-id="60651-115">This code functionality can also be simplified via access through the Spatial Awareness system directly.</span></span>
+<span data-ttu-id="ae026-115">這段程式碼功能也可以透過空間感知系統直接存取來簡化。</span><span class="sxs-lookup"><span data-stu-id="ae026-115">This code functionality can also be simplified via access through the Spatial Awareness system directly.</span></span>
 
 ```c#
 var meshObserverName = "Spatial Object Mesh Observer";
 CoreServices.SpatialAwarenessSystem.ResumeObserver<IMixedRealitySpatialAwarenessMeshObserver>(meshObserverName);
 ```
 
-### <a name="starting-and-stopping-all-mesh-observation"></a><span data-ttu-id="60651-116">啟動和停止所有網格觀察</span><span class="sxs-lookup"><span data-stu-id="60651-116">Starting and stopping all mesh observation</span></span>
+### <a name="starting-and-stopping-all-mesh-observation"></a><span data-ttu-id="ae026-116">啟動和停止所有網格觀察</span><span class="sxs-lookup"><span data-stu-id="ae026-116">Starting and stopping all mesh observation</span></span>
 
-<span data-ttu-id="60651-117">在應用程式中啟動/停止所有網格觀察通常很方便。</span><span class="sxs-lookup"><span data-stu-id="60651-117">It is generally convenient to start/stop all mesh observation in the application.</span></span> <span data-ttu-id="60651-118">這可以透過實用的空間感知系統 Api 和來達成 [`ResumeObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.ResumeObservers) [`SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers) 。</span><span class="sxs-lookup"><span data-stu-id="60651-118">This can be achieved through the helpful Spatial Awareness system APIs, [`ResumeObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.ResumeObservers) and [`SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers).</span></span>
+<span data-ttu-id="ae026-117">在應用程式中啟動/停止所有網格觀察通常很方便。</span><span class="sxs-lookup"><span data-stu-id="ae026-117">It is generally convenient to start/stop all mesh observation in the application.</span></span> <span data-ttu-id="ae026-118">這可以透過實用的空間感知系統 Api 和來達成 [`ResumeObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.ResumeObservers) [`SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers) 。</span><span class="sxs-lookup"><span data-stu-id="ae026-118">This can be achieved through the helpful Spatial Awareness system APIs, [`ResumeObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.ResumeObservers) and [`SuspendObservers()`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessSystem.SuspendObservers).</span></span>
 
 ```c#
 // Resume Mesh Observation from all Observers
@@ -78,13 +78,13 @@ CoreServices.SpatialAwarenessSystem.ResumeObservers();
 CoreServices.SpatialAwarenessSystem.SuspendObservers();
 ```
 
-## <a name="enumerating-and-accessing-the-meshes"></a><span data-ttu-id="60651-119">列舉和存取網格</span><span class="sxs-lookup"><span data-stu-id="60651-119">Enumerating and accessing the meshes</span></span>
+## <a name="enumerating-and-accessing-the-meshes"></a><span data-ttu-id="ae026-119">列舉和存取網格</span><span class="sxs-lookup"><span data-stu-id="ae026-119">Enumerating and accessing the meshes</span></span>
 
-<span data-ttu-id="60651-120">存取網格可以針對每個觀察者完成，然後透過 API 來列舉該網格觀察者已知的網格 [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) 。</span><span class="sxs-lookup"><span data-stu-id="60651-120">Accessing the meshes can be done per Observer and then enumerating through the meshes known to that Mesh Observer via the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) API.</span></span>
+<span data-ttu-id="ae026-120">存取網格可以針對每個觀察者完成，然後透過 API 來列舉該網格觀察者已知的網格 [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) 。</span><span class="sxs-lookup"><span data-stu-id="ae026-120">Accessing the meshes can be done per Observer and then enumerating through the meshes known to that Mesh Observer via the [`IMixedRealitySpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver) API.</span></span>
 
-<span data-ttu-id="60651-121">如果是在編輯器中執行，則可以使用將 [`AssetDatabase.CreateAsset()`](https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html) `Mesh` 物件儲存至資產檔案。</span><span class="sxs-lookup"><span data-stu-id="60651-121">If running in editor, one can use the [`AssetDatabase.CreateAsset()`](https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html) to save the `Mesh` object to an asset file.</span></span>
+<span data-ttu-id="ae026-121">如果是在編輯器中執行，則可以使用將 [`AssetDatabase.CreateAsset()`](https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html) `Mesh` 物件儲存至資產檔案。</span><span class="sxs-lookup"><span data-stu-id="ae026-121">If running in editor, one can use the [`AssetDatabase.CreateAsset()`](https://docs.unity3d.com/ScriptReference/AssetDatabase.CreateAsset.html) to save the `Mesh` object to an asset file.</span></span>
 
-<span data-ttu-id="60651-122">如果在裝置上執行，有許多可用的社區和存放外掛程式可將 `MeshFilter` 資料序列化為模型檔案類型 ([OBJ 範例](http://wiki.unity3d.com/index.php/ObjExporter)) 。</span><span class="sxs-lookup"><span data-stu-id="60651-122">If running on device, there are many community and store plugins available to serialize the `MeshFilter` data into a model file type([OBJ Example](http://wiki.unity3d.com/index.php/ObjExporter)).</span></span>
+<span data-ttu-id="ae026-122">如果在裝置上執行，有許多可用的社區和存放外掛程式可將 `MeshFilter` 資料序列化為模型檔案類型 ([OBJ 範例](http://wiki.unity3d.com/index.php/ObjExporter)) 。</span><span class="sxs-lookup"><span data-stu-id="ae026-122">If running on device, there are many community and store plugins available to serialize the `MeshFilter` data into a model file type([OBJ Example](http://wiki.unity3d.com/index.php/ObjExporter)).</span></span>
 
 ```c#
 // Get the first Mesh Observer available, generally we have only one registered
@@ -98,9 +98,9 @@ foreach (SpatialAwarenessMeshObject meshObject in observer.Meshes.Values)
 }
 ```
 
-## <a name="showing-and-hiding-the-spatial-mesh"></a><span data-ttu-id="60651-123">顯示和隱藏空間網格</span><span class="sxs-lookup"><span data-stu-id="60651-123">Showing and hiding the spatial mesh</span></span>
+## <a name="showing-and-hiding-the-spatial-mesh"></a><span data-ttu-id="ae026-123">顯示和隱藏空間網格</span><span class="sxs-lookup"><span data-stu-id="ae026-123">Showing and hiding the spatial mesh</span></span>
 
-<span data-ttu-id="60651-124">您可以使用下列範例程式碼，以程式設計方式隱藏/顯示網格：</span><span class="sxs-lookup"><span data-stu-id="60651-124">It's possible to programmatically hide/show meshes using the sample code below:</span></span>
+<span data-ttu-id="ae026-124">您可以使用下列範例程式碼，以程式設計方式隱藏/顯示網格：</span><span class="sxs-lookup"><span data-stu-id="ae026-124">It's possible to programmatically hide/show meshes using the sample code below:</span></span>
 
 ```c#
 // Get the first Mesh Observer available, generally we have only one registered
@@ -113,13 +113,13 @@ observer.DisplayOption = SpatialAwarenessMeshDisplayOptions.None;
 observer.DisplayOption = SpatialAwarenessMeshDisplayOptions.Occlusion;
 ```
 
-## <a name="registering-for-mesh-observation-events"></a><span data-ttu-id="60651-125">註冊網格觀察事件</span><span class="sxs-lookup"><span data-stu-id="60651-125">Registering for mesh observation events</span></span>
+## <a name="registering-for-mesh-observation-events"></a><span data-ttu-id="ae026-125">註冊網格觀察事件</span><span class="sxs-lookup"><span data-stu-id="ae026-125">Registering for mesh observation events</span></span>
 
-<span data-ttu-id="60651-126">元件可以執行 `IMixedRealitySpatialAwarenessObservationHandler<SpatialAwarenessMeshObject>` ，然後向空間感知系統註冊以接收網狀觀察事件。</span><span class="sxs-lookup"><span data-stu-id="60651-126">Components can implement the `IMixedRealitySpatialAwarenessObservationHandler<SpatialAwarenessMeshObject>` and then register with the Spatial Awareness system to receive Mesh Observation events.</span></span>
+<span data-ttu-id="ae026-126">元件可以執行 `IMixedRealitySpatialAwarenessObservationHandler<SpatialAwarenessMeshObject>` ，然後向空間感知系統註冊以接收網狀觀察事件。</span><span class="sxs-lookup"><span data-stu-id="ae026-126">Components can implement the `IMixedRealitySpatialAwarenessObservationHandler<SpatialAwarenessMeshObject>` and then register with the Spatial Awareness system to receive Mesh Observation events.</span></span>
 
-<span data-ttu-id="60651-127">`DemoSpatialMeshHandler` (資產/MRTK/範例/示範/SpatialAwareness/腳本) 腳本是接聽網格觀察者事件的實用範例和起點。</span><span class="sxs-lookup"><span data-stu-id="60651-127">The `DemoSpatialMeshHandler` (Assets/MRTK/Examples/Demos/SpatialAwareness/Scripts) script is a useful example and starting point for listening to Mesh Observer events.</span></span>
+<span data-ttu-id="ae026-127">`DemoSpatialMeshHandler` (資產/MRTK/範例/示範/SpatialAwareness/腳本) 腳本是接聽網格觀察者事件的實用範例和起點。</span><span class="sxs-lookup"><span data-stu-id="ae026-127">The `DemoSpatialMeshHandler` (Assets/MRTK/Examples/Demos/SpatialAwareness/Scripts) script is a useful example and starting point for listening to Mesh Observer events.</span></span>
 
-<span data-ttu-id="60651-128">這是 *DemoSpatialMeshHandler* 腳本和網格觀察事件接聽的簡化範例。</span><span class="sxs-lookup"><span data-stu-id="60651-128">This is a simplified example of *DemoSpatialMeshHandler* script and Mesh Observation event listening.</span></span>
+<span data-ttu-id="ae026-128">這是 *DemoSpatialMeshHandler* 腳本和網格觀察事件接聽的簡化範例。</span><span class="sxs-lookup"><span data-stu-id="ae026-128">This is a simplified example of *DemoSpatialMeshHandler* script and Mesh Observation event listening.</span></span>
 
 ```c#
 // Simplify type
@@ -156,8 +156,8 @@ public class MyMeshObservationExample : MonoBehaviour, SpatialAwarenessHandler
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="60651-129">另請參閱</span><span class="sxs-lookup"><span data-stu-id="60651-129">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="ae026-129">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ae026-129">See also</span></span>
 
-- [<span data-ttu-id="60651-130">空間感知入門</span><span class="sxs-lookup"><span data-stu-id="60651-130">Spatial Awareness Getting Started</span></span>](SpatialAwarenessGettingStarted.md)
-- [<span data-ttu-id="60651-131">設定空間感知網格觀察者</span><span class="sxs-lookup"><span data-stu-id="60651-131">Configuring the Spatial Awareness Mesh Observer</span></span>](ConfiguringSpatialAwarenessMeshObserver.md)
-- [<span data-ttu-id="60651-132">空間感知 API 檔</span><span class="sxs-lookup"><span data-stu-id="60651-132">Spatial Awareness API documentation</span></span>](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
+- [<span data-ttu-id="ae026-130">空間感知開始使用</span><span class="sxs-lookup"><span data-stu-id="ae026-130">Spatial Awareness Getting Started</span></span>](SpatialAwarenessGettingStarted.md)
+- [<span data-ttu-id="ae026-131">設定空間感知網格觀察者</span><span class="sxs-lookup"><span data-stu-id="ae026-131">Configuring the Spatial Awareness Mesh Observer</span></span>](ConfiguringSpatialAwarenessMeshObserver.md)
+- [<span data-ttu-id="ae026-132">空間感知 API 檔</span><span class="sxs-lookup"><span data-stu-id="ae026-132">Spatial Awareness API documentation</span></span>](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
