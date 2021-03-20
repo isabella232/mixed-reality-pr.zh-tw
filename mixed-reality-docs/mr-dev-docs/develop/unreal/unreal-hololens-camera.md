@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 開發, 功能, 文件, 指南, 全像投影, 相機, PV 相機, MRC, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
 ms.openlocfilehash: 6f1301e0daeb44521dfb4e93a915d49d9aea8443
-ms.sourcegitcommit: e24715fffa815c24ca411fa93eed9576ae729337
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/16/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98247761"
 ---
 # <a name="hololens-photovideo-camera-in-unreal"></a>Unreal 中的 HoloLens 相片/影片相機

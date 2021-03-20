@@ -4,14 +4,13 @@ description: MRTK 近乎互動的相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、近乎互動、
-ms.openlocfilehash: fed8846e4157240e38abf862f804f2311eb26dd5
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 4d74320c70a1d8228998a260986cd5d6a275529d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780393"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680651"
 ---
 # <a name="how-to-add-near-interaction-in-mrtk"></a>如何在 MRTK 中新增近乎互動
 
@@ -27,7 +26,7 @@ ms.locfileid: "101780393"
 
 1. 確定已在 *MRTK 指標設定檔* 中註冊 [SpherePointer](Pointers.md#spherepointer) 。
 
-    預設 MRTK 設定檔和預設的 HoloLens 2 設定檔已包含 *SpherePointer*。 您可以藉由選取 MRTK 設定檔並流覽至 **輸入**  >  **指標**  >  **指標選項**，來確認將會建立 SpherePointer。 預設的 `GrabPointer` 預製專案 (資產/MRTK/SDK/功能/UX/Prefabs/指標) 應以有向的 *控制器類型* 來列出。 只要自訂預製專案實作為類別，就可以使用它 [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer) 。
+    預設的 MRTK 設定檔和預設的 HoloLens 2 設定檔已包含 *SpherePointer*。 您可以藉由選取 MRTK 設定檔並流覽至 **輸入**  >  **指標**  >  **指標選項**，來確認將會建立 SpherePointer。 預設的 `GrabPointer` 預製專案 (資產/MRTK/SDK/功能/UX/Prefabs/指標) 應以有向的 *控制器類型* 來列出。 只要自訂預製專案實作為類別，就可以使用它 [`SpherePointer`](xref:Microsoft.MixedReality.Toolkit.Input.SpherePointer) 。
 
     ![抓取指標設定檔範例](../images/input/pointers/GrabPointer_MRTKProfile.png)
 
@@ -72,7 +71,7 @@ public class PrintPointerEvents : MonoBehaviour, IMixedRealityPointerHandler
 
 不過，對於 **這兩種** 類型的 UX 元素，請確定已在 *MRTK 指標設定檔* 中註冊 [PokePointer](Pointers.md#pokepointer) 。
 
-預設 MRTK 設定檔和預設的 HoloLens 2 設定檔已包含 *PokePointer*。 您可以藉由選取 MRTK 設定檔並流覽至 **輸入**  >  **指標**  >  **指標選項**，來確認將會建立 PokePointer。 預設的 `PokePointer` (資產/MRTK/SDK/Features/UX/Prefabs/指標) 預製專案應該會列出，且 *控制器類型* 為有向的 *手*。 只要自訂預製專案實作為類別，就可以使用它 [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) 。
+預設的 MRTK 設定檔和預設的 HoloLens 2 設定檔已包含 *PokePointer*。 您可以藉由選取 MRTK 設定檔並流覽至 **輸入**  >  **指標**  >  **指標選項**，來確認將會建立 PokePointer。 預設的 `PokePointer` (資產/MRTK/SDK/Features/UX/Prefabs/指標) 預製專案應該會列出，且 *控制器類型* 為有向的 *手*。 只要自訂預製專案實作為類別，就可以使用它 [`PokePointer`](xref:Microsoft.MixedReality.Toolkit.Input.PokePointer) 。
 
 ![移動指標設定檔範例](../images/input/pointers/PokePointer_MRTKProfile.png)
 

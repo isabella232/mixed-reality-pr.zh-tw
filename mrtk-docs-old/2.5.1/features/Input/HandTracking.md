@@ -4,14 +4,13 @@ description: 有關如何在 MRTK 中使用 HandTracking 的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手追蹤、
-ms.openlocfilehash: 97450faf8bc554f4518f1ca06edf5a87d2fe7cb1
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0a8f2896f83b85acd2a011ccc6354b2b2a40220f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780394"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680601"
 ---
 # <a name="hand-tracking"></a>手勢追蹤
 
@@ -188,7 +187,7 @@ public class MyHandMeshEventHandler : IMixedRealityHandMeshHandler
 
 ### <a name="net-native"></a>.NET Native
 
-目前使用 .NET 後端的主要組建有已知的問題。 在 .NET 原生中， `IInspectable` 無法使用將指標從原生封送處理至 managed 程式碼 `Marshal.GetObjectForIUnknown` 。 MRTK 會使用這個來取得，以便 `SpatialCoordinateSystem` 從平臺接收手和眼睛資料。
+目前使用 .NET 後端的主要組建有已知的問題。 在 .NET Native 中， `IInspectable` 無法使用將指標從原生封送處理至 managed 程式碼 `Marshal.GetObjectForIUnknown` 。 MRTK 會使用這個來取得，以便 `SpatialCoordinateSystem` 從平臺接收手和眼睛資料。
 
 我們已在 [原生混合現實工具](https://github.com/microsoft/MixedRealityToolkit/tree/master/DotNetNativeWorkaround)組存放庫中，提供 DLL 來源作為此問題的因應措施。 請遵循讀我檔案中的指示，並將產生的二進位檔複製到 Unity 資產中的 [外掛程式] 資料夾。 之後，MRTK 中提供的 WindowsMixedRealityUtilities 腳本將為您解決因應措施。
 

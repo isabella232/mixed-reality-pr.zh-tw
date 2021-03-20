@@ -4,14 +4,13 @@ description: 具有 MRTK 之場景系統的登陸頁面
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 92b0fa8df5e48d4a03ea168f18a77a49add255df
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e43bb401ea3c3175b5cb3805e7edf00d361eb4b6
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781157"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104680631"
 ---
 # <a name="scene-system-overview"></a>場景系統總覽
 
@@ -35,13 +34,13 @@ ms.locfileid: "101781157"
 
 下列各節將說明如何根據用來匯入混合現實工具組的方法，來解決此訊息。
 
-### <a name="unity-package-manager-upm"></a>Unity 套件管理員 (UPM) 
+### <a name="unity-package-manager-upm"></a>Unity 封裝管理員 (UPM) 
 
 在混合現實工具組 UPM 套件中，場景系統資源會封裝成範例。 由於 UPM 套件是不可變的，因此 Unity 無法開啟必要的場景檔案，除非它們明確地匯入至專案中。
 
 若要匯入，請使用下列步驟：
 
-- 選取 **視窗**  >  **套件管理員**
+- 選取 **視窗**  >  **封裝管理員**
 - 選取 **混合現實工具組基礎**
 - 在 [**範例**] 區段中找出 **場景系統資源**
 

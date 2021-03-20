@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 範例, MRTK, 研究模式, HoloLens 2, qr 代碼, WebRTC, 混合實境擷取, 全像攝影遠端處理, UX 工具
 ms.localizationpriority: high
 ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98583191"
 ---
 # <a name="samples-and-feature-apps"></a>範例和功能應用程式

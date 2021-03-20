@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 眼球追蹤, 混合實境, 輸入, 眼部注視, 眼部定向, HoloLens 2, 眼動式選取, Dwell, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 設計
 ms.openlocfilehash: 78f8dcec3c8368128ec5904df36ce1391aa8b879
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98007708"
 ---
 # <a name="eye-gaze-and-dwell"></a>眼部目光和停駐

@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 注視, 注視定向, 互動, 設計, hololens, MMR, 多樣式, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens
 ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97847293"
 ---
 # <a name="introducing-instinctual-interactions"></a>本能互動簡介

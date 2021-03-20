@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組
 ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
-ms.sourcegitcommit: 44d0f2873c75003caf9d8d244ceaeb3faa89df63
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/12/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "98110446"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型

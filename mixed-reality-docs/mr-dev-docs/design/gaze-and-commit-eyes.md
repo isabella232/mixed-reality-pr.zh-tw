@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 眼球追蹤, 混合實境, 輸入, 眼部注視, 眼部定向, HoloLens 2, 眼動式選取, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 注視
 ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
-ms.translationtype: HT
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "97847875"
 ---
 # <a name="eye-gaze-and-commit"></a>眼部注視並認可
