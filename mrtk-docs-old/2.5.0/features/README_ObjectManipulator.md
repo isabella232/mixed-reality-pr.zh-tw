@@ -4,14 +4,13 @@ description: 如何在 MRTK 中使用物件操作工具
 author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、物件操作、
-ms.openlocfilehash: bcfb4708ceafb74fd656a355857829cec5c9f7e3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 82984749dd13749c4621d195da81c3078d34fe65
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781069"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694925"
 ---
 # <a name="object-manipulator"></a>物件操作工具
 
@@ -19,7 +18,7 @@ ms.locfileid: "101781069"
 
 *ObjectManipulator* 是操作行為的新元件，先前在 *ManipulationHandler* 中找到。 物件操作工具可進行許多改進和簡化。 此元件取代了將被取代的操作處理常式。
 
-*ObjectManipulator* 腳本會使用一或兩個手來讓物件可移動、可擴充及 rotatable。 物件操作工具可以設定為控制物件將如何回應各種輸入。 腳本應可搭配大部分的互動形式使用，例如 HoloLens 2 的有向的手勢、HoloLens 2 手片片、HoloLens 1 注視和手勢，以及沉浸式耳機移動控制器輸入。
+*ObjectManipulator* 腳本會使用一或兩個手來讓物件可移動、可擴充及 rotatable。 物件操作工具可以設定為控制物件將如何回應各種輸入。 此腳本應該適用于大部分的互動形式，例如 HoloLens 2 有明確的手勢、HoloLens 2 手片、HoloLens 1 注視和手勢和沉浸式耳機移動控制器輸入。
 
 ## <a name="how-to-use-the-object-manipulator"></a>如何使用物件操作工具
 

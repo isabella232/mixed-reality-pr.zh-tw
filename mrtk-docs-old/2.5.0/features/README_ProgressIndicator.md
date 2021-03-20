@@ -4,14 +4,13 @@ description: MRTK 中的進度指標總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: fc986d4ebd8abc4f64ff3549b474806d761a9187
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: da27ce895f793694dcadcb468d090dbec1d4e912
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781067"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694935"
 ---
 # <a name="progress-indicators"></a>進度指標
 
@@ -64,7 +63,7 @@ private async void OpenProgressIndicator()
 
 指標的 `State` 屬性會決定哪些作業是有效的。 呼叫不正確方法通常會導致指標回報錯誤，而不採取任何動作。
 
-州 | 有效的作業
+狀態 | 有效的作業
 --- | ---
 `ProgressIndicatorState.Opening` | `AwaitTransitionAsync()`
 `ProgressIndicatorState.Open` | `CloseAsync()`

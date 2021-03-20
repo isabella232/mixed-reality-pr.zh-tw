@@ -4,14 +4,13 @@ description: MRTK 中的 LostTracking 服務總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 1aa00a5ac369f8703064d10053e209d661ca10e3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7fc588a4e54ce463c11c7bd38e5af782552b0a94
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780271"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695045"
 ---
 # <a name="lost-tracking-visualization"></a>遺失追蹤視覺效果
 

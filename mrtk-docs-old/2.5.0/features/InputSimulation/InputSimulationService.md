@@ -4,14 +4,13 @@ description: MRTK 中輸入模擬服務的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 09482851f0765c563b8295ff07e7cbfb19a50158
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: a8beefacdf63f815c3aad05af703bf115a0fb762
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781297"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695295"
 ---
 # <a name="input-simulation-service"></a>輸入模擬服務
 
@@ -19,8 +18,8 @@ ms.locfileid: "101781297"
 
 * HoloLens 或 VR 裝置標頭追蹤
 * HoloLens 手勢
-* HoloLens 2 已明確追蹤
-* HoloLens 2 目視追蹤
+* HoloLens 2 明確的手追蹤
+* HoloLens 2 眼追蹤
 * VR 裝置控制器
 
 使用者可以在執行時間使用傳統鍵盤和滑鼠組合來控制模擬的裝置。 這種方法可讓您在 Unity 編輯器中測試互動，而不需要先部署到裝置。

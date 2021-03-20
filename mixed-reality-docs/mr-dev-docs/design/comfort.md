@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 設計, 舒適度, HoloLens 2, HoloLens (第 1 代), 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 運動
 ms.openlocfilehash: f8c62b8208ee756efd2fc217f4e4aa4a541f770d
-ms.sourcegitcommit: 6ae047bf0d78819ee68681f7d9450961efbc8595
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/11/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "103022850"
 ---
 # <a name="comfort"></a>舒適度

@@ -4,14 +4,13 @@ description: MRTK 中的工具框總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 工具箱
-ms.openlocfilehash: 921bcdea2bc4e8c86aa01af264f625b3f3912e35
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: ec54706e6f79c9ce1fece25df9c7b932cff8c24f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781052"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694825"
 ---
 # <a name="toolbox-ui"></a>工具箱 UI
 

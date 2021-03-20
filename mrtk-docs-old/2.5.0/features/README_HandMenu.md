@@ -4,14 +4,13 @@ description: MRTK 中的手邊功能表範例場景
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、HandMenu、
-ms.openlocfilehash: 353e1d9c01e29437574f9b9fc6fc23cba6d892d0
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c4415e676d045d4e82d6e9a2ba45324a892c4d05
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780459"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695105"
 ---
 # <a name="hand-menu"></a>手部功能表
 

@@ -4,14 +4,13 @@ description: MRTK 中指標的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、指標、
-ms.openlocfilehash: cd9c238aec74532d5b5f9aebe06d2029029c0668
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 1cf4ec223d99a427b582d61970643aee5123fa6c
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780934"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695405"
 ---
 # <a name="pointers"></a>指標
 
@@ -65,7 +64,7 @@ ms.locfileid: "101780934"
 
  *LinePointer*（基底指標類別）會從輸入的來源繪製一條線 (亦即，控制器) 指標方向，並支援以此方向進行的單一光線轉換。 一般而言，子類別（例如 [`ShellHandRayPointer`](xref:Microsoft.MixedReality.Toolkit.Input.ShellHandRayPointer) 和傳送指標）會具現化並利用 (也會繪製線條來指出遙傳最後在) 的位置，而不是主要提供一般功能的類別。
 
-對於像是 Oculus、Vive 和 Windows Mixed Reality 的運動控制器，旋轉將符合控制器的旋轉。 針對其他控制器（例如 HoloLens 2 的明確表述），旋轉會符合系統提供的手邊指標。
+針對 Oculus、Vive 和 Windows Mixed Reality 等動作控制器，旋轉將符合控制器的旋轉。 針對其他控制器（例如 HoloLens 2 表達的手），旋轉會符合系統提供的手邊指標。
 
 <img src="../Images/Pointers/MRTK_Pointers_Line.png" width="400" alt="Pointer Line">
 
@@ -92,7 +91,7 @@ GGVPointer 也稱為「 *注視/手勢/語音」 (GGV)* 指標，其可支援 Ho
 ![滑鼠指標](../Images/Pointers/MRTK_MousePointer.png)
 
 > [!NOTE]
-> 依預設，在 MRTK 中並不提供滑鼠支援，但可以藉由將類型的新 *輸入資料提供者* 加入 [`MouseDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager) 至 MRTK 輸入設定檔，並將指派 [`MixedRealityMouseInputProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile) 給資料提供者來啟用。
+> 依預設，在 MRTK 中並不提供滑鼠支援，但可以藉由將類型的新 *輸入 Data Provider* 新增 [`MouseDeviceManager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.MouseDeviceManager) 至 MRTK 輸入設定檔，並將指派 [`MixedRealityMouseInputProfile`](xref:Microsoft.MixedReality.Toolkit.Input.MixedRealityMouseInputProfile) 給資料提供者來啟用。
 
 #### <a name="near-pointers"></a>近端指標
 

@@ -8,10 +8,10 @@ ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure bot 服務, luis, 自然語言, 對話 bot, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
 ms.openlocfilehash: 66737f798ef87e756cf1935b12a368bbd22a3423
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "99590580"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.整合 Azure Bot 服務

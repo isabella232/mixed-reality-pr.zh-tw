@@ -4,14 +4,13 @@ description: 滑杆 MRTK 簡介
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、滑杆、
-ms.openlocfilehash: e8983ffcb1f59f231bb4791cd516f6b2dd70cab6
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: af94da6e72a6dc87adef27d6f4a055b522f68155
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781065"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694895"
 ---
 # <a name="sliders"></a>滑桿
 

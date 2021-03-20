@@ -4,14 +4,13 @@ description: MRTK 中的手聯合 chaser
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 2417cf9c7710ef626d289089e4adc0635d983722
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 2305c4e288dc2d415dd92bcc4690f61b64738f3d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780603"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695095"
 ---
 # <a name="hand-joint-chaser-example"></a>手聯合 chaser 範例
 

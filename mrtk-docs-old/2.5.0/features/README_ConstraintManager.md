@@ -4,14 +4,13 @@ description: MRTK 中的條件約束管理員總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 593313e1b2af7520550e6e9bbd9cb17e4337312d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5f9c80918cd59ec727c2b822afab2ebc7a589c9d
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779614"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695205"
 ---
 # <a name="constraint-manager"></a>條件約束管理員
 

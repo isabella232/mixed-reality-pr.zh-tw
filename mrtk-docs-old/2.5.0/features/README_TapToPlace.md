@@ -4,14 +4,13 @@ description: TapToPlace MRTK 的檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、點下
-ms.openlocfilehash: 6a8ac4a5f65f25ffaea690733847e9e720fef294
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7398797ee30937922eb629e52a72591c1b2e8de5
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781054"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694855"
 ---
 # <a name="tap-to-place"></a>點一下以放置
 

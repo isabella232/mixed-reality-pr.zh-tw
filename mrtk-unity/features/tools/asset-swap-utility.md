@@ -4,14 +4,13 @@ description: 說明如何使用 MRTK for Unity 中的資產交換公用程式。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 03/9/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: bfdf0111d99f96c2b03f921da21368897d682d3d
-ms.sourcegitcommit: ece91dbba40981720fe7e1a7c3b93e8b75ff71ba
+ms.openlocfilehash: f052cb5e758ca1a9376c4344657478c2fd9ff2b3
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/10/2021
-ms.locfileid: "102583189"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104696045"
 ---
 # <a name="asset-swap-utility"></a>資產交換公用程式
 

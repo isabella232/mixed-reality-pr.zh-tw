@@ -4,18 +4,17 @@ description: 將 singleton 轉換為服務 MRTK 的 Wizard 檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: eb47880abf0f7c9f2bfd477431dab94f02e65ff9
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5ba857096605508df1173daa29736a5d2279acf8
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780290"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695955"
 ---
 # <a name="extension-service-creation-wizard"></a>延伸模組服務建立嚮導
 
-將 singleton 轉換為服務可能很困難。 此嚮導可以補充我們的其他檔和範例程式碼，方法是讓開發人員建立新的服務， (大致上) 與建立新的 MonoBehaviour 腳本一樣簡單。 若要深入瞭解如何從頭開始建立服務，請參閱我們的 [指南以建立已註冊的服務](../../configuration/mixed-reality-configuration-guide.md) (即將推出) 。
+將 singleton 轉換為服務可能很困難。 此嚮導可以補充我們的其他檔和範例程式碼，方法是讓開發人員建立新的服務， (大致上) 與建立新的 MonoBehaviour 腳本一樣簡單。 若要瞭解如何從頭開始建立服務，請參閱 (即將推出) [建立已註冊服務的指南](../../configuration/mixed-reality-configuration-guide.md) 。
 
 ## <a name="launching-the-wizard"></a>啟動嚮導
 
@@ -27,28 +26,30 @@ ms.locfileid: "101780290"
 
 產生的服務腳本包含一些類似于新 MonoBehaviour 腳本的提示。 它們可讓您知道要在哪裡初始化和更新您的服務。
 
-    namespace Microsoft.MixedReality.Toolkit.Extensions
+```csharp
+namespace Microsoft.MixedReality.Toolkit.Extensions
+{
+    [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
+    public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
     {
-        [MixedRealityExtensionService(SupportedPlatforms.WindowsStandalone|SupportedPlatforms.MacStandalone|SupportedPlatforms.LinuxStandalone|SupportedPlatforms.WindowsUniversal)]
-        public class NewService : BaseExtensionService, INewService, IMixedRealityExtensionService
+        private NewServiceProfile newServiceProfile;
+
+        public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
         {
-            private NewServiceProfile newServiceProfile;
-    
-            public NewService(IMixedRealityServiceRegistrar registrar,  string name,  uint priority,  BaseMixedRealityProfile profile) : base(registrar, name, priority, profile) 
-            {
-                newServiceProfile = (NewServiceProfile)profile;
-            }
-    
-            public override void Initialize()
-            {
-                // Do service initialization here.
-            }
-    
-            public override void Update()
-            {
-                // Do service updates here.
-            }
+            newServiceProfile = (NewServiceProfile)profile;
+        }
+
+        public override void Initialize()
+        {
+            // Do service initialization here.
+        }
+
+        public override void Update()
+        {
+            // Do service updates here.
         }
     }
+}
+```
 
 如果您選擇在嚮導中註冊您的服務，您只需要編輯此腳本，就會自動更新您的服務。 否則，您可以在 [這裡閱讀註冊新服務](../../configuration/mixed-reality-configuration-guide.md)的相關資訊。

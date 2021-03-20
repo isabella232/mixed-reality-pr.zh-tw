@@ -4,18 +4,17 @@ description: 描述 MRTK 中的場景理解
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 03/02/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: 622cdfebfe3f1356d0e8ced520cc355cc324d617
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: 991c8152baa138d241b0454d08de267eeaefcb05
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236929"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104696155"
 ---
 # <a name="scene-understanding"></a>場景理解
 
-[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) 會傳回場景實體的語義標記法，以及其在 __hololens 2__ 上的幾何形式 (hololens 第1代不支援) 。
+[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) 會傳回場景實體的語義標記法，以及其在 __HoloLens 2__ 的幾何形式 (HoloLens 第1代不支援) 。
 
 這項技術的一些預期使用案例如下：
 * 將物件放在特定種類的最接近表面 (例如牆壁和樓層) 
@@ -29,7 +28,7 @@ ms.locfileid: "102236929"
 
 當系統詢問時， [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 會傳回 [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) ，其中包含可讓應用程式瞭解其周圍的屬性。 觀察頻率、傳回的物件類型 (例如牆壁、floor) 和其他觀察器行為，都取決於透過設定檔的觀察者設定。 例如，如果需要遮蔽遮罩，則必須設定觀察者來產生四邊形。 觀察到的場景可以儲存為序列化檔案，稍後可以載入以在編輯器播放模式中重新建立場景。
 
-## <a name="setup"></a>安裝程式
+## <a name="setup"></a>設定
 
 > [!IMPORTANT]
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
@@ -70,7 +69,7 @@ ms.locfileid: "102236929"
 
 ### <a name="example-script"></a>範例指令碼
 
-範例腳本 _DemoSceneUnderstandingController.cs_ 示範使用場景理解服務的主要概念。
+範例腳本 _DemoSceneUnderstandingController_ 會示範使用場景理解服務的主要概念。
 
 * 訂閱場景理解事件
 * 處理場景理解事件
@@ -90,7 +89,7 @@ ms.locfileid: "102236929"
 
 您可以透過 [裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) 存取已儲存的場景檔案 `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` 。 這些場景檔案可以在編輯器中使用，方法是在偵測器中找到的觀察者設定檔中指定它們。
 
-![裝置入口網站位置位元組檔案](../images/spatial-awareness/BytesInDevicePortal.png)
+![位元組檔案裝置入口網站位置](../images/spatial-awareness/BytesInDevicePortal.png)
 
 ![觀察者中的序列化場景位元組](../images/spatial-awareness/BytesLocationInObserver.png)
 

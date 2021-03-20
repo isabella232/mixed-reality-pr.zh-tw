@@ -4,14 +4,13 @@ description: 在 MRTK 中建立輸入動作的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、InputActions、
-ms.openlocfilehash: e8d6fd4d68cabe82c3c3d9bf430ff9ac1e31ed43
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 538dbc1b5e2e6de7af62d556144899f285048217
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780420"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694375"
 ---
 # <a name="input-actions"></a>輸入動作
 
@@ -25,7 +24,7 @@ ms.locfileid: "101780420"
 
 這些是 **軸條件約束** 最常使用的值：
 
-軸條件約束 | 描述
+軸條件約束 | Description
 --- | ---
 Digital | 開啟/關閉輸入，例如遊戲台或滑鼠中的二進位按鈕。
 單一軸 | 單一軸將輸入與遊戲中的類比觸發程式相似。

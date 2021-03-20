@@ -4,20 +4,19 @@ description: MRTK 中操作處理常式的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、操作、
-ms.openlocfilehash: ac5ebe8e822dd87c36a058639c93b9c6da8e85ee
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 050751f1591081d60ef496db46441b9a178e7a29
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101781072"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695055"
 ---
 # <a name="manipulation-handler"></a>操作處理常式
 
 ![操作處理常式主](Images/ManipulationHandler/MRTK_Manipulation_Main.png)
 
-*ManipulationHandler* 腳本可讓您使用一或兩個手將物件設為可移動、可擴充和 rotatable。 可以限制操作，讓它只允許特定類型的轉換。 此腳本適用于各種類型的輸入，包括 HoloLens 2 的明確輸入、手片、HoloLens (第一代) 手勢輸入，以及沉浸式耳機移動控制器輸入。
+*ManipulationHandler* 腳本可讓您使用一或兩個手將物件設為可移動、可擴充和 rotatable。 可以限制操作，讓它只允許特定類型的轉換。 此腳本適用于各種類型的輸入，包括 HoloLens 2 明確的手寫輸入、手片、HoloLens (第一代) 手勢輸入，以及沉浸式耳機移動控制器輸入。
 
 ## <a name="how-to-use-the-manipulation-handler"></a>如何使用操作處理常式
 

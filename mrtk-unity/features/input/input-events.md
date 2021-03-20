@@ -4,14 +4,13 @@ description: MRTK 中的 InputEvents 檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、事件、
-ms.openlocfilehash: 2fa16d44a7658b7f55c8352b67bcd074b937f9cf
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7723ea65a8dfc174c90b83bb3c1a62474176796f
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780816"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104694325"
 ---
 # <a name="input-events"></a>輸入事件
 

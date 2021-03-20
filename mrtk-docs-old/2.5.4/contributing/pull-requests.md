@@ -4,18 +4,17 @@ description: 與提取要求相關的詳細資料。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、PR、
-ms.openlocfilehash: 26c3c6bfe7b04a6106fd2758b58fbac0530be18e
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: c49934139ae23b714addcb9c015e95377f47900e
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101779760"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693715"
 ---
 # <a name="pull-requests"></a>提取要求
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
 如果您之前尚未參與 Microsoft 專案，系統可能會要求您簽署 [投稿授權合約](https://cla.microsoft.com/)。
 PR 中的批註可讓您知道您的做法。

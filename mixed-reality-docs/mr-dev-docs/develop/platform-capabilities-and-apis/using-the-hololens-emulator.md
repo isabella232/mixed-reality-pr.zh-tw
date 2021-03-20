@@ -8,10 +8,10 @@ ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 模擬器
 ms.openlocfilehash: 866a6f169627b26c4c935e6799c17ece76cd1fd2
-ms.sourcegitcommit: 55dab2b9f2d9b98fdb1cb9f26d3d075bb8f95dcd
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
+ms.lasthandoff: 03/19/2021
 ms.locfileid: "102526025"
 ---
 # <a name="using-the-hololens-emulator"></a>使用 HoloLens 模擬器
@@ -28,7 +28,7 @@ HoloLens 模擬器可讓您在沒有實體 HoloLens 的電腦上測試全像攝�
 下載 HoloLens 模擬器。
 
 版本：
-* [HoloLens 2 模擬器 (Windows 全像 20H2 2021 年3月更新) ](https://go.microsoft.com/fwlink/?linkid=2156684)。
+* [HoloLens 2 模擬器 (Windows 全像20H2 版，2021年3月更新) ](https://go.microsoft.com/fwlink/?linkid=2156684)。
 * [HoloLens 模擬器 (第 1 代) 和全像攝影專案範本](https://go.microsoft.com/fwlink/?linkid=2065980)。
 
 您可以在 [HoloLens 模擬器封存](hololens-emulator-archive.md)頁面上找到版本資訊和 HoloLens 模擬器的舊版組建。
