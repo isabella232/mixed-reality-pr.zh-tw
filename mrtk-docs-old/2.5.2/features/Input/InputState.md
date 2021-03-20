@@ -4,24 +4,23 @@ description: MRTK 中輸入狀態的相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、InputState、
-ms.openlocfilehash: 2895645bd2fa9afdd641b4c7e0e535d893109a6d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 8ff3af6bdcc63e633025836226d50dcf95943fe0
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780504"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104693875"
 ---
-# <a name="accessing-input-state-in-mrtk"></a><span data-ttu-id="a7954-104">存取 MRTK 中的輸入狀態</span><span class="sxs-lookup"><span data-stu-id="a7954-104">Accessing input state in MRTK</span></span>
+# <a name="accessing-input-state-in-mrtk"></a><span data-ttu-id="09fbc-104">存取 MRTK 中的輸入狀態</span><span class="sxs-lookup"><span data-stu-id="09fbc-104">Accessing input state in MRTK</span></span>
 
-<span data-ttu-id="a7954-105">您可以逐一查看附加至輸入來源的控制器，以直接查詢 MRTK 中所有輸入的狀態。</span><span class="sxs-lookup"><span data-stu-id="a7954-105">It's possible to directly query the state of all inputs in MRTK by iterating over the controllers attached to the input sources.</span></span> <span data-ttu-id="a7954-106">MRTK 也提供便利的方法，讓您存取眼睛、手、head 和移動控制器的位置和旋轉。</span><span class="sxs-lookup"><span data-stu-id="a7954-106">MRTK also provides convenience methods for accessing the position and rotation of the eyes, hands, head, and motion controller.</span></span>
+<span data-ttu-id="09fbc-105">您可以逐一查看附加至輸入來源的控制器，以直接查詢 MRTK 中所有輸入的狀態。</span><span class="sxs-lookup"><span data-stu-id="09fbc-105">It's possible to directly query the state of all inputs in MRTK by iterating over the controllers attached to the input sources.</span></span> <span data-ttu-id="09fbc-106">MRTK 也提供便利的方法，讓您存取眼睛、手、head 和移動控制器的位置和旋轉。</span><span class="sxs-lookup"><span data-stu-id="09fbc-106">MRTK also provides convenience methods for accessing the position and rotation of the eyes, hands, head, and motion controller.</span></span>
 
-<span data-ttu-id="a7954-107">如需透過逐一查看控制器，以及使用類別來查詢輸入的範例，請參閱 InputDataExample 場景 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 。</span><span class="sxs-lookup"><span data-stu-id="a7954-107">See the InputDataExample scene for an example of querying input both via iterating over controllers, and by using the [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class.</span></span>
+<span data-ttu-id="09fbc-107">如需透過逐一查看控制器，以及使用類別來查詢輸入的範例，請參閱 InputDataExample 場景 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 。</span><span class="sxs-lookup"><span data-stu-id="09fbc-107">See the InputDataExample scene for an example of querying input both via iterating over controllers, and by using the [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class.</span></span>
 
-## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a><span data-ttu-id="a7954-108">範例：存取位置、列印頭的旋轉、手 MRTK 中的眼睛</span><span class="sxs-lookup"><span data-stu-id="a7954-108">Example: Access position, rotation of head, hands, eyes in MRTK</span></span>
+## <a name="example-access-position-rotation-of-head-hands-eyes-in-mrtk"></a><span data-ttu-id="09fbc-108">範例：存取位置、列印頭的旋轉、手 MRTK 中的眼睛</span><span class="sxs-lookup"><span data-stu-id="09fbc-108">Example: Access position, rotation of head, hands, eyes in MRTK</span></span>
 
-<span data-ttu-id="a7954-109">MRTK 的 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 類別提供便利的方法來存取手形、頭部光線、眼睛光線和移動控制器光線。</span><span class="sxs-lookup"><span data-stu-id="a7954-109">MRTK's [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class provides convenience methods for accessing the hand ray, head ray, eye gaze ray, and motion controller rays.</span></span>
+<span data-ttu-id="09fbc-109">MRTK 的 [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) 類別提供便利的方法來存取手形、頭部光線、眼睛光線和移動控制器光線。</span><span class="sxs-lookup"><span data-stu-id="09fbc-109">MRTK's [`InputRayUtils`](xref:Microsoft.MixedReality.Toolkit.Input.InputRayUtils) class provides convenience methods for accessing the hand ray, head ray, eye gaze ray, and motion controller rays.</span></span>
 
 ```c#
 // Get the head ray
@@ -39,7 +38,7 @@ else
 }
 ```
 
-## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a><span data-ttu-id="a7954-110">範例：存取位置、場景中所有作用中6DOF 控制器的旋轉</span><span class="sxs-lookup"><span data-stu-id="a7954-110">Example: Access position, rotation of all 6DOF controllers active in scene</span></span>
+## <a name="example-access-position-rotation-of-all-6dof-controllers-active-in-scene"></a><span data-ttu-id="09fbc-110">範例：存取位置、場景中所有作用中6DOF 控制器的旋轉</span><span class="sxs-lookup"><span data-stu-id="09fbc-110">Example: Access position, rotation of all 6DOF controllers active in scene</span></span>
 
 ```c#
 foreach(var controller in CoreServices.InputSystem.DetectedControllers)
@@ -64,8 +63,8 @@ foreach(var controller in CoreServices.InputSystem.DetectedControllers)
 }
 ```
 
-## <a name="see-also"></a><span data-ttu-id="a7954-111">另請參閱</span><span class="sxs-lookup"><span data-stu-id="a7954-111">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="09fbc-111">另請參閱</span><span class="sxs-lookup"><span data-stu-id="09fbc-111">See also</span></span>
 
-- [<span data-ttu-id="a7954-112">InputEvents</span><span class="sxs-lookup"><span data-stu-id="a7954-112">InputEvents</span></span>](InputEvents.md)
-- [<span data-ttu-id="a7954-113">指標</span><span class="sxs-lookup"><span data-stu-id="a7954-113">Pointers</span></span>](Pointers.md)
-- [<span data-ttu-id="a7954-114">HandTracking</span><span class="sxs-lookup"><span data-stu-id="a7954-114">HandTracking</span></span>](HandTracking.md)
+- [<span data-ttu-id="09fbc-112">InputEvents</span><span class="sxs-lookup"><span data-stu-id="09fbc-112">InputEvents</span></span>](InputEvents.md)
+- [<span data-ttu-id="09fbc-113">指標</span><span class="sxs-lookup"><span data-stu-id="09fbc-113">Pointers</span></span>](Pointers.md)
+- [<span data-ttu-id="09fbc-114">HandTracking</span><span class="sxs-lookup"><span data-stu-id="09fbc-114">HandTracking</span></span>](HandTracking.md)

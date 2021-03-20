@@ -4,23 +4,22 @@ description: MRTK 中的 LostTracking 服務總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 1aa00a5ac369f8703064d10053e209d661ca10e3
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7fc588a4e54ce463c11c7bd38e5af782552b0a94
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101780271"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104695045"
 ---
-# <a name="lost-tracking-visualization"></a><span data-ttu-id="94285-104">遺失追蹤視覺效果</span><span class="sxs-lookup"><span data-stu-id="94285-104">Lost tracking visualization</span></span>
+# <a name="lost-tracking-visualization"></a><span data-ttu-id="2d2be-104">遺失追蹤視覺效果</span><span class="sxs-lookup"><span data-stu-id="2d2be-104">Lost tracking visualization</span></span>
 
 ![遺失追蹤](Images/LostTracking/LostTrackingVisualization.jpg)
 
-<span data-ttu-id="94285-106">遺失追蹤延伸模組服務會為遺失的追蹤狀態提供 HoloLens shell 樣式的動畫視覺效果。</span><span class="sxs-lookup"><span data-stu-id="94285-106">Lost Tracking Extension Service provides HoloLens shell style animated visual for the lost tracking state.</span></span>
+<span data-ttu-id="2d2be-106">遺失追蹤延伸模組服務會為遺失的追蹤狀態提供 HoloLens shell 樣式的動畫視覺效果。</span><span class="sxs-lookup"><span data-stu-id="2d2be-106">Lost Tracking Extension Service provides HoloLens shell style animated visual for the lost tracking state.</span></span>
 
-## <a name="how-to-use-lost-tracking-extensions"></a><span data-ttu-id="94285-107">如何使用遺失的追蹤延伸模組</span><span class="sxs-lookup"><span data-stu-id="94285-107">How to use lost tracking extensions</span></span>
+## <a name="how-to-use-lost-tracking-extensions"></a><span data-ttu-id="2d2be-107">如何使用遺失的追蹤延伸模組</span><span class="sxs-lookup"><span data-stu-id="2d2be-107">How to use lost tracking extensions</span></span>
 
-<span data-ttu-id="94285-108">在 MRTK 設定檔中，將 **遺失的追蹤服務** 新增至延伸模組。</span><span class="sxs-lookup"><span data-stu-id="94285-108">In MRTK Profile, add **Lost Tracking Service** to the Extensions.</span></span> <span data-ttu-id="94285-109">指派包含 **LostTrackingVisualPrefab** 的 **DefaultLostTrackingServiceProfile** 。</span><span class="sxs-lookup"><span data-stu-id="94285-109">Assign **DefaultLostTrackingServiceProfile** which includes **LostTrackingVisualPrefab**.</span></span>
+<span data-ttu-id="2d2be-108">在 MRTK 設定檔中，將 **遺失的追蹤服務** 新增至延伸模組。</span><span class="sxs-lookup"><span data-stu-id="2d2be-108">In MRTK Profile, add **Lost Tracking Service** to the Extensions.</span></span> <span data-ttu-id="2d2be-109">指派包含 **LostTrackingVisualPrefab** 的 **DefaultLostTrackingServiceProfile** 。</span><span class="sxs-lookup"><span data-stu-id="2d2be-109">Assign **DefaultLostTrackingServiceProfile** which includes **LostTrackingVisualPrefab**.</span></span>
 
 <img src="Images/LostTracking/LostTracking_Extensions.png" width="550" alt="Lost Tracking extension">
