@@ -4,25 +4,24 @@ description: MRTK 和 Unity 中的程式碼去除
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: eaae57db83e2870f65f8febb2f46fa763b357716
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 7e80f25f6e5af7fe851bf9106ebbd07dece5dbad
+ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101783397"
+ms.lasthandoff: 03/19/2021
+ms.locfileid: "104685751"
 ---
-# <a name="mrtk-and-unity-managed-code-stripping"></a><span data-ttu-id="33b22-104">MRTK 和 Unity managed code 抽出</span><span class="sxs-lookup"><span data-stu-id="33b22-104">MRTK and Unity managed code stripping</span></span>
+# <a name="mrtk-and-unity-managed-code-stripping"></a><span data-ttu-id="a1196-104">MRTK 和 Unity managed code 抽出</span><span class="sxs-lookup"><span data-stu-id="a1196-104">MRTK and Unity managed code stripping</span></span>
 
-<span data-ttu-id="33b22-105">使用 Unity 的 IL2CPP 腳本後端時 (在 Unity 2018.4 中為選擇性，在2019和更新版本的) 中，需要進行 [managed 程式碼的去除](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) 。</span><span class="sxs-lookup"><span data-stu-id="33b22-105">When using Unity's IL2CPP scripting backend (optional in Unity 2018.4, required in 2019 and newer), [managed code stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) occurs.</span></span>
-<span data-ttu-id="33b22-106">Unity 的連結器會執行此程式，以減少二進位大小以及減少組建時間。</span><span class="sxs-lookup"><span data-stu-id="33b22-106">Unity's linker performs this process to reduce binary size as well as to decrease build times.</span></span>
+<span data-ttu-id="a1196-105">使用 Unity 的 IL2CPP 腳本後端時 (在 Unity 2018.4 中為選擇性，在2019和更新版本的) 中，需要進行 [managed 程式碼的去除](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) 。</span><span class="sxs-lookup"><span data-stu-id="a1196-105">When using Unity's IL2CPP scripting backend (optional in Unity 2018.4, required in 2019 and newer), [managed code stripping](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) occurs.</span></span>
+<span data-ttu-id="a1196-106">Unity 的連結器會執行此程式，以減少二進位大小以及減少組建時間。</span><span class="sxs-lookup"><span data-stu-id="a1196-106">Unity's linker performs this process to reduce binary size as well as to decrease build times.</span></span>
 
-<span data-ttu-id="33b22-107">混合現實工具組會使用檔案， `link.xml` 以影響 Unity 的連結器處理 MRTK 元件的方式。</span><span class="sxs-lookup"><span data-stu-id="33b22-107">The Mixed Reality Toolkit uses a file, `link.xml`, to influence how Unity's linker processes MRTK assemblies.</span></span> <span data-ttu-id="33b22-108">本檔案（完整于 [Unity 的](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)檔中所述）提供連結器指示，說明如何在無法推斷程式碼時保留程式碼 (例如：透過反映) 來使用。</span><span class="sxs-lookup"><span data-stu-id="33b22-108">This file, described in full in [Unity's documentation](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), provides the linker with instructions on how to preserve code when its usage cannot be inferred (ex: used via reflection).</span></span>
+<span data-ttu-id="a1196-107">混合現實工具組會使用檔案， `link.xml` 以影響 Unity 的連結器處理 MRTK 元件的方式。</span><span class="sxs-lookup"><span data-stu-id="a1196-107">The Mixed Reality Toolkit uses a file, `link.xml`, to influence how Unity's linker processes MRTK assemblies.</span></span> <span data-ttu-id="a1196-108">本檔案（完整于 [Unity 的](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)檔中所述）提供連結器指示，說明如何在無法推斷程式碼時保留程式碼 (例如：透過反映) 來使用。</span><span class="sxs-lookup"><span data-stu-id="a1196-108">This file, described in full in [Unity's documentation](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML), provides the linker with instructions on how to preserve code when its usage cannot be inferred (ex: used via reflection).</span></span>
 
-<span data-ttu-id="33b22-109">MRTK 是有彈性且可自訂的平臺，它會在匯入時建立檔案 `link.xml` `Assets/MixedRealityToolkit.Generated` （如果找不到的話）。</span><span class="sxs-lookup"><span data-stu-id="33b22-109">As a flexible and customizable platform, MRTK creates the `link.xml` file in `Assets/MixedRealityToolkit.Generated` on import, if it is found to not exist.</span></span> <span data-ttu-id="33b22-110">預先存在的 link.xml 檔案不會遭到覆寫。</span><span class="sxs-lookup"><span data-stu-id="33b22-110">Pre-existing link.xml files are not overwritten.</span></span> <span data-ttu-id="33b22-111">建議您將其 `link.xml` `link.xml.meta` 加入至版本控制。</span><span class="sxs-lookup"><span data-stu-id="33b22-111">It is recommended that `link.xml` and `link.xml.meta` be added to version control.</span></span> <span data-ttu-id="33b22-112">開發人員應該可以隨意自訂 `Assets/MixedRealityToolkit.Generated/link.xml` 以符合專案的需求。</span><span class="sxs-lookup"><span data-stu-id="33b22-112">Developers should feel free to customize `Assets/MixedRealityToolkit.Generated/link.xml` to meet the needs of the project.</span></span>
+<span data-ttu-id="a1196-109">MRTK 是有彈性且可自訂的平臺，它會在匯入時建立檔案 `link.xml` `Assets/MixedRealityToolkit.Generated` （如果找不到的話）。</span><span class="sxs-lookup"><span data-stu-id="a1196-109">As a flexible and customizable platform, MRTK creates the `link.xml` file in `Assets/MixedRealityToolkit.Generated` on import, if it is found to not exist.</span></span> <span data-ttu-id="a1196-110">預先存在的 link.xml 檔案不會遭到覆寫。</span><span class="sxs-lookup"><span data-stu-id="a1196-110">Pre-existing link.xml files are not overwritten.</span></span> <span data-ttu-id="a1196-111">建議您將其 `link.xml` `link.xml.meta` 加入至版本控制。</span><span class="sxs-lookup"><span data-stu-id="a1196-111">It is recommended that `link.xml` and `link.xml.meta` be added to version control.</span></span> <span data-ttu-id="a1196-112">開發人員應該可以隨意自訂 `Assets/MixedRealityToolkit.Generated/link.xml` 以符合專案的需求。</span><span class="sxs-lookup"><span data-stu-id="a1196-112">Developers should feel free to customize `Assets/MixedRealityToolkit.Generated/link.xml` to meet the needs of the project.</span></span>
 
-<span data-ttu-id="33b22-113">依預設，MRTK 所建立的 link.xml 檔會保留下列資料中所顯示的完整元件。</span><span class="sxs-lookup"><span data-stu-id="33b22-113">By default, the link.xml file created by MRTK preserves the entirety of the assemblies shown in the following data.</span></span>
+<span data-ttu-id="a1196-113">依預設，MRTK 所建立的 link.xml 檔會保留下列資料中所顯示的完整元件。</span><span class="sxs-lookup"><span data-stu-id="a1196-113">By default, the link.xml file created by MRTK preserves the entirety of the assemblies shown in the following data.</span></span>
 
 ``` xml
 <linker> 
@@ -62,9 +61,9 @@ ms.locfileid: "101783397"
 </linker>
 ```
 
-<span data-ttu-id="33b22-114">如需有關 link.xml 檔案格式的詳細資訊，請參閱 Unity 檔。</span><span class="sxs-lookup"><span data-stu-id="33b22-114">For more information on the link.xml file format, please refer to the Unity documentation.</span></span>
+<span data-ttu-id="a1196-114">如需有關 link.xml 檔案格式的詳細資訊，請參閱 Unity 檔。</span><span class="sxs-lookup"><span data-stu-id="a1196-114">For more information on the link.xml file format, please refer to the Unity documentation.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="33b22-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="33b22-115">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="a1196-115">另請參閱</span><span class="sxs-lookup"><span data-stu-id="a1196-115">See also</span></span>
 
-- [<span data-ttu-id="33b22-116">Unity： Managed Code 抽出</span><span class="sxs-lookup"><span data-stu-id="33b22-116">Unity: Managed Code Stripping</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
-- [<span data-ttu-id="33b22-117">Unity： Link XML 檔案</span><span class="sxs-lookup"><span data-stu-id="33b22-117">Unity: Link XML file</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)
+- [<span data-ttu-id="a1196-116">Unity： Managed Code 抽出</span><span class="sxs-lookup"><span data-stu-id="a1196-116">Unity: Managed Code Stripping</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html)
+- [<span data-ttu-id="a1196-117">Unity： Link XML 檔案</span><span class="sxs-lookup"><span data-stu-id="a1196-117">Unity: Link XML file</span></span>](https://docs.unity3d.com/Manual/ManagedCodeStripping.html#LinkXML)
