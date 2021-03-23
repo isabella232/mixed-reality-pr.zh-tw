@@ -6,12 +6,12 @@ ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、自訂環境、地點、cliff 房子、skyloft、使用者、建立、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: ca6a41f8388a767b1191ddc3b377822567a603a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583303"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881215"
 ---
 # <a name="design-your-own-immersive-environments"></a>設計自己的沉浸式環境
 
@@ -82,7 +82,7 @@ Windows Mixed Reality 依賴二進位 glTF (. glb) 做為環境的資產傳遞�
 
 匯出用來作為自訂家用環境之資產的第一個步驟是產生 glTF 2.0 模型。 GlTF 工作群組會維護一份 [支援的匯出工具和轉換器清單，](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) 以建立 glTF 2.0 模型。 若要開始使用，請使用此頁面上所列的其中一個程式來建立和匯出 glTF 2.0 模型，或使用其中一個支援的轉換器來轉換現有的模型。
 
-此外，請參閱 [這篇實用的文章，其中提供了直接從 Blender 和 3DS Max 匯出 glTF 模型的藝術工作流程總覽。 
+<!-- Additionally, check out [this helpful article, which provides an overview of an art workflow for exporting glTF models from Blender and 3DS Max directly.  -->
 
 ### <a name="environment-limits"></a>環境限制
 

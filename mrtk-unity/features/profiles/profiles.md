@@ -5,14 +5,16 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、設定檔、
-ms.openlocfilehash: c2f24360bc89b035f033c110dee021c5d73e7a65
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 384614f27c099af197ea8a9aedc72c711f0c099e
+ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702294"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104881225"
 ---
 # <a name="profiles"></a>Profiles
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Introduction-to-MRTK-Profiles/player]
 
 設定 MRTK 的主要方式之一是透過基礎套件中提供的設定檔。 [`MixedRealityToolkit`](xref:Microsoft.MixedReality.Toolkit.MixedRealityToolkit)場景中的主要物件會有使用中的設定檔，也就是 ScriptableObject。 最上層 MRTK 設定檔包含主要核心系統每個核心的子設定檔資料，每一個核心系統都是設計來設定其對應子系統的行為。 此外，這些子設定檔也會 ScriptableObjects，因此可包含其下一個層級之其他設定檔物件的參考。 基本上，有一個連線設定檔的整個樹狀結構，這些設定檔會組成設定資訊，以說明如何初始化 MRTK 子系統和功能。
 
