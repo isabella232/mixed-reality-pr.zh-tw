@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能
-ms.openlocfilehash: 8d247a6a5b7c8a3d8b7ea26ebc72e86ada5dc99f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 47ca4041e997d623d08fa1732f7039c655810bfc
+ms.sourcegitcommit: b0fb5497bf9f280ba5610c30e4b9e5aa1cda52c9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730165"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104837412"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>在沒有 MRTK 的情況下設定專案
 
@@ -57,8 +57,8 @@ Windows Mixed Reality (WMR) 是在 Windows 10 作業系統中引進的 Microsoft
 ![醒目提示 XR 外掛程式管理的 unity 編輯器中開啟之 [專案設定] 視窗的螢幕擷取畫面](images/wmr-config-img-7.png)
 
 4. 展開 [ **XR 外掛程式管理** ] 區段，然後選取 [ **通用 Windows 平臺設定** ] 索引標籤
-5. 如果您使用 Unity 2020 或更新版本，您會看到檢查 **OpenXR (preview)** 或 **Windows Mixed Reality** 的選項。 
-    * 您可以選擇任一執行時間。  如果您要特別針對 HoloLens 2 或 HP 錯誤的 G2 進行開發，並決定嘗試 **OpenXR (preview)**，請選取 [OpenXR (preview) ] 方塊，並參閱我們的指南，以 [使用 Unity 的 Mixed Reality OpenXR 外掛程式](openxr-getting-started.md) 為這些裝置正確設定，然後再返回本教學課程
+5. 如果您使用 Unity 2020 或更新版本，您會看到檢查 **OpenXR** 或 **Windows Mixed Reality** 的選項。 
+    * 您可以選擇任一執行時間。  如果您要特別針對 HoloLens 2 或 HP 回條 G2 進行開發，並決定嘗試 **OpenXR**，請選取 [OpenXR] 方塊，並查看我們的指南，以 [使用 Unity 的 Mixed Reality OpenXR 外掛程式](openxr-getting-started.md) ，以在返回本教學課程之前，為這些裝置正確設定
 
 > [!NOTE]
 > 從 Unity 2020 LTS 開始，Microsoft 正採用 OpenXR 進行開發。  當我們遷移至此路徑時，在 Unity 2021.1 中，Windows XR 外掛程式將會被取代，並在2021.2 中移除，讓 OpenXR 唯一支援的路徑。 您可以在中找到更多有關 [使用 Mixed Reality OpenXR 外掛程式](openxr-getting-started.md)的資訊。
