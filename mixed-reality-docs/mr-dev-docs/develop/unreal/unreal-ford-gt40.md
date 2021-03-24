@@ -8,14 +8,18 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: d610907123898471e92598da134e9c4d77a195e9
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: ca577bdc5bc30aebf80c9888345eb0e2d5c3ce6d
+ms.sourcegitcommit: cc9d90b046a9fce792058fea25ae13a9186e43e7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104909043"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105008923"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>製作 Ford GT40 體驗
+
+*「預先 MRTK，使用 Unreal 開發 HoloLens 2 的作業有點繁瑣，因為所有的空間互動都必須以 c + + 手動編碼。MRTK for Unreal 讓許多這些相同的工作變得很簡單。我估計它會將初始原型所需的時間剪下一半。」* -聖約瑟 Rodriguez，軟體發展人員
+
+*「Ford GT40 體驗證明，在短短幾個月內可以完成高精確度的 HoloLens 2 應用程式，並具有適度的預算，但仍可提供高度具影響力的結果。」*  -Daniel Cheetham，首席創新官員，快樂完成
 
 使用混合現實工具組 (MRTK) Unreal 的創意，創意的生產公司很高興完成提供 HoloLens 2 的體驗，提供 Ford GT40 的全新觀點，也就是在 Le 傳說的24小時內 Ferrari 的黑心遊記競爭汽車！
 
@@ -120,14 +124,6 @@ Lambert 也構思如何使用 Azure 中的應用程式 Azure 遠端轉譯或串�
 > [下載 Ford GT40 應用程式](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
 請參閱 GitHub 上的 HoloLens 2 或[MRTK For Unreal 的](https://github.com/microsoft/MixedRealityToolkit-Unreal)[混合現實開發簡介](../development.md)。
-
-## <a name="what-people-are-saying"></a>人們說
-
-*「預先 MRTK，使用 Unreal 開發 HoloLens 2 的作業有點繁瑣，因為所有的空間互動都必須以 c + + 手動編碼。MRTK for Unreal 讓許多這些相同的工作變得很簡單。我估計它會將初始原型所需的時間剪下一半。」*
-- Rodriguez，軟體發展人員
-
-*「Ford GT40 體驗證明，在短短幾個月內可以完成高精確度的 HoloLens 2 應用程式，並具有適度的預算，但仍可提供高度具影響力的結果。」*  
-- Daniel Cheetham，首席創新官員，快樂完成
 
 <!-- ## About the team
 

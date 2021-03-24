@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6bcbb5894af2bbd99a42ae4fb49a4d047355c0f0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1efce2eff4694626f913ef403427ef6eef0f66d6
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101882734"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104987802"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -107,7 +107,7 @@ Azure Spatial Anchors 涵蓋於 [Unreal 開發旅程](../unreal/unreal-developme
 
 ![網路](../images/javascript_logo_banner.png)
 
-WebXR 裝置 API 是一種開放的規格，可讓您在任何平台上您的瀏覽器中體驗混合實境應用程式。 請參閱 [Javascript 開發概觀](../web/javascript-development-overview.md)，開始為任何平台建立混合實境應用程式。
+WebXR 裝置 API 是一種開放的規格，可讓您在任何平台上您的瀏覽器中體驗混合實境應用程式。 請參閱 [Javascript 開發概觀](../javascript/javascript-development-overview.md)，開始為任何平台建立混合實境應用程式。
 
 
 # <a name="native-openxr"></a>[原生 (OpenXR)](#tab/native)

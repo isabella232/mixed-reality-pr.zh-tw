@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
 keywords: Windows Mixed Reality、HoloLens、個案研究、願景、情節、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 7d3e2f3bbbc6a89bf4f136e2657f8a9abe7b9560
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
+ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757646"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104895153"
 ---
 # <a name="case-study-gallery"></a>案例研究資源庫
 
@@ -19,23 +19,28 @@ ms.locfileid: "97757646"
 
 :::row:::
     :::column:::
-       [ ![ 3 HoloStudio ui 和互動設計學習](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 和互動設計學習](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio 是適用于 HoloLens 的第一個應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過使用者測試、原型設計和試用和錯誤來完成此操作。<br>
-        *2016 年 7 月*
+       [ ![ Ford GT40 experience](../develop/unreal/images/ford-gt40-img-01.jpg)](../develop/unreal/unreal-ford-gt40.md) **[Ford GT40 experience](../develop/unreal/unreal-ford-gt40.md)**<br>
+        這種案例研究可讓您傳說 racecar 在 Le 黑心遊記競賽中的 1966 24 小時內，讓 Ferrari 的時間更近，因為 Ford GT40 會在您之前的資料表上以生命的形式呈現。<br>
+        *2021年2月*
+    :::column-end:::
+    :::column:::
+       使用不同的效能調整 Datascape 跨裝置 [ ![ 調整 Datascape](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
+        此案例研究可讓您深入瞭解 Microsoft 開發人員如何將 Datascape 應用程式優化，以在具有各種效能功能的裝置上提供引人注目的體驗。<br>
+        *2017 年 8 月*
     :::column-end:::
     :::column:::
        [ ![ 打造 HoloSketch、適用于 hololens 大樓 HoloSketch 的空間配置和 ux 草圖應用程式](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[、空間配置，以及適用于 hololens 的 ux 草圖應用程式](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch 是適用于 HoloLens 的裝置空間配置和 UX 草圖工具，可協助打造全像攝影體驗。<br>
          *2017 年 7 月*
     :::column-end:::
-    :::column:::
-       [ ![ 建立片段中的沉浸式體驗](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)， **[在片段中建立沉浸式體驗](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
-        片段是 Microsoft HoloLens 的互動式犯罪戲劇，您可以在其中依照線索解決真實世界空間中發生的謎。<br>
-        *2016 年 8 月*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
+    :::column:::
+       [ ![ 使用穩定平面減少](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)全像 turbulence， **[使用穩定平面](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)減少全像 turbulence**<br>
+        使用全像投影可能有點棘手。 您可以四處移動空間並查看所有不同角度的全像投影，提供一層深度，讓您無法使用一般的電腦畫面。<br>
+        *2017 年 4 月*
+    :::column-end:::
     :::column:::
        [ ![ 擴充 hololens 的空間對應功能](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)，以 **[擴充 hololens 的空間對應功能](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
         當您建立第一個 Microsoft HoloLens 的應用程式時，我們會積極地查看我們可以在裝置上推送空間對應界限的程度。<br>
@@ -46,20 +51,18 @@ ms.locfileid: "97757646"
         HoloLens 團隊想要分享衍生自 Lowe HoloLens 專案的一些最佳作法。<br>
         *2016 年 9 月*
     :::column-end:::
-    :::column:::
-       [ ![ 使用穩定平面減少](images/holotour-stabilization-plane-500px.jpg)](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)全像 turbulence， **[使用穩定平面](../develop/platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md)減少全像 turbulence**<br>
-        使用全像投影可能有點棘手。 您可以四處移動空間並查看所有不同角度的全像投影，提供一層深度，讓您無法使用一般的電腦畫面。<br>
-        *2017 年 4 月*
-    :::column-end:::
 :::row-end:::
 
 :::row:::
     :::column:::
-       使用不同的效能調整 Datascape 跨裝置 [ ![ 調整 Datascape](images/cloud-steps-1-4-700px.jpg)](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md) **[](../out-of-scope/case-study-scaling-datascape-across-devices-with-different-performance.md)**<br>
-        此案例研究可讓您深入瞭解 Microsoft 開發人員如何將 Datascape 應用程式優化，以在具有各種效能功能的裝置上提供引人注目的體驗。<br>
-        *2017 年 8 月*
+       [ ![ 建立片段中的沉浸式體驗](images/surfacereconstruction.jpg)](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)， **[在片段中建立沉浸式體驗](../out-of-scope/case-study-creating-an-immersive-experience-in-fragments.md)**<br>
+        片段是 Microsoft HoloLens 的互動式犯罪戲劇，您可以在其中依照線索解決真實世界空間中發生的謎。<br>
+        *2016 年 8 月*
     :::column-end:::
     :::column:::
+       [ ![ 3 HoloStudio ui 和互動設計學習](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 和互動設計學習](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
+        HoloStudio 是適用于 HoloLens 的第一個應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過使用者測試、原型設計和試用和錯誤來完成此操作。<br>
+        *2016 年 7 月*
     :::column-end:::
     :::column:::
     :::column-end:::
