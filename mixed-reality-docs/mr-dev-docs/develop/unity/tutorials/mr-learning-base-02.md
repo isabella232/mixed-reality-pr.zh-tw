@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 93514e025f60d70db6a0983c5de0e382d602512e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: da1c61abab70ae30ba187c6ee255923a552f3562
+ms.sourcegitcommit: b01be2046d1e6728259568cb3e4ac7c677407b4b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681757"
+ms.lasthandoff: 03/23/2021
+ms.locfileid: "104890810"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -241,6 +241,9 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 
 設定 Visual Studio 以便用於 HoloLens，請選取 [Master] 或 [Release] 設定、[ARM64] 架構，選取 [裝置] 作為目標：
 
+> [!NOTE]
+> 根據您的部署方法選擇您的目標。
+
 ![已針對要部署至 HoloLens 2 來設定 Visual Studio](images/mr-learning-base/base-02-section8-step1-2.png)
 
 > [!TIP]
@@ -252,7 +255,7 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 > [!NOTE]
 > 如果您看不到 [裝置為目標] 選項，可能需要將 Visual Studio 解決方案的啟始專案從 IL2CPP 專案變更為 UWP 專案。 要這麼做，在方案總管中，以滑鼠右鍵按一下 YourProjectName (Universal Windows) 並選取 [設定為啟動專案]。
 
-將 HoloLens 與電腦連線，然後選取 [偵錯] > [啟動但不進行偵錯]，以建置並部署至您的裝置：
+使用 USB 纜線將 HoloLens 連接到您的電腦，**然後選取 [**  >  **啟動但不進行調試** 程式]，以建立並部署至您的裝置：
 
 ![Visual Studio [啟動但不進行偵錯] 功能表路徑](images/mr-learning-base/base-02-section8-step1-3.png)
 
