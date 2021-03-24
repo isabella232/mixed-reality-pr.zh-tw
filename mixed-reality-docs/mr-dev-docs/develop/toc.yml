@@ -348,6 +348,8 @@
       items:
         - name: Kippy's Escape
           href: unreal/unreal-kippys-escape.md
+        - name: Ford GT40 體驗
+          href: unreal/unreal-ford-gt40.md
     - name: 部署與發佈
       items:
         - name: 部署到裝置
@@ -357,11 +359,19 @@
 - name: JavaScript
   items:
     - name: JavaScript 開發概觀
-      href: web/javascript-development-overview.md
+      href: javascript/javascript-development-overview.md
     - name: WebXR
-      href: web/webxr-overview.md
-    - name: WebVR
-      href: web/webvr-overview.md
+      href: javascript/webxr-overview.md
+    - name: 教學課程
+      items:
+        - name: 使用 BabylonJS Hello World
+          items:
+            - name: 1. 簡介
+              href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
+            - name: 2. 使用基本3D 物件準備場景
+              href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
+            - name: 3. 與3D 物件互動
+              href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
 - name: 原生
   items:
     - name: 原生開發概觀
