@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
 - Windows 10
-ms.openlocfilehash: a5261303a8ba1c0ffbf87ec9e28bd392c19da9a7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: ea65dd2c6c821189b1248bf3b418e38fdd7a6d7f
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581650"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105029386"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -105,6 +105,7 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
 
    | 版本          | 發行日期          | 重大變更                                                 |
    |------------------|-----------------------|---------------------------------------------------------------|
+   | [10.0.19041.2041](https://www.microsoft.com/download/details.aspx?id=102903)  | 2021年3月23日  | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>更新「HP 回音」 G2 隱藏區網格的繞組順序，使其與其他耳機保持一致。</li><li>HP 回音的視覺效果品質改進。</li><li>Windows Mixed Reality 耳機平臺和可靠性改進。</li>|
    | [10.0.19041.2037](https://www.microsoft.com/en-us/download/details.aspx?id=102527)  | 2020年12月10日  | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>適用于 HP 控制器的新控制器固件，可解決某些控制器具有非正常運作觸發程式的問題。</li>|
    | [10.0.19041.2034](https://www.microsoft.com/en-us/download/details.aspx?id=102156)  | 2020年10月8日  | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>HP 殘響 G2、HP Omnicept 和新 HP 控制器的官方支援。</li><li>HP 回音和 Samsung 電影對白 + 耳機的次要顯示器校正。  (需要 [Os 組建 19041.546](https://support.microsoft.com/en-us/help/4577063/windows-10-update-kb4577063) 或更高版本 [，或 os 組建18362.1110 和 18363.1110](https://support.microsoft.com/en-us/help/4577062/windows-10-update-kb4577062) 或更高版本的) 。</li><li>電腦電源狀態從睡眠轉換成減少 SWW 1-4 錯誤的改進。</li><li>Windows Mixed Reality 耳機平臺的次要修正和可靠性改進。|
    | [10.0.19041.1009](https://www.microsoft.com/en-us/download/details.aspx?id=101260)  | 2020 5 月7日      | 與 Windows 10、1903版和更新版本相容。<br/><ul><li>Windows Mixed Reality 耳機平臺的次要修正和可靠性改進。</li></ul>  |
