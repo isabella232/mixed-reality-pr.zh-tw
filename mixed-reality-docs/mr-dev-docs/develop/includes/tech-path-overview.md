@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 1efce2eff4694626f913ef403427ef6eef0f66d6
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
+ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104987802"
+ms.lasthandoff: 03/24/2021
+ms.locfileid: "105105706"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -50,9 +50,10 @@ ms.locfileid: "104987802"
 ## <a name="examples"></a>範例
 
 我們有數個開放原始碼[範例應用程式](../features-and-samples.md)可供您下載和試用，以熟悉 Unity 中的混合實境最終產品。 您也可使用 MRTK 範例場景來試用特定功能：
-* [Unity 的手部互動範例場景 (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#open-and-run-the-handinteractionexamples-scene-in-editor) - HandInteractionExamples.unity 的範例場景包含各種類型的互動和 UI 控制項，其強調以關節連接的手部輸入。
 
-* [Unity 的眼球追蹤範例 (MRTK)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_ExamplesOverview.html) - 本頁面說明如何以我們提供的 MRTK 眼球追蹤範例為本，快速開始使用眼球追蹤。
+* [Unity 的手部互動範例場景 (MRTK)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples) - HandInteractionExamples.unity 的範例場景包含各種類型的互動和 UI 控制項，其強調以關節連接的手部輸入。
+
+* [Unity 的眼球追蹤範例 (MRTK)](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/eye-tracking-examples-overview) - 本頁面說明如何以我們提供的 MRTK 眼球追蹤範例為本，快速開始使用眼球追蹤。
 
 >[!NOTE]
 >這兩個 MRTK 範例場景都需要安裝 MRTK 基礎和範例 Unity 套件。
