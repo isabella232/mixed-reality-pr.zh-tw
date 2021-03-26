@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b47224bb28b18592692cdf450c7ce571929403b9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 47f74b66e597186b43354de6503d48f45eb9ede4
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696095"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550638"
 ---
 # <a name="spatial-awareness"></a>空間感知
 
@@ -78,7 +78,7 @@ Mixed Reality 工具組中的服務可以有 [Data Provider 服務](../../archit
 一旦空間感知系統設定為所需的觀察者 (s) ，就可以建立專案，並將其部署至目標平臺。
 
 > [!IMPORTANT]
-> 如果以 Windows Mixed Reality 平臺為目標 (例如： HoloLens) ，請務必確定已啟用 [空間感知功能](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-in-unity) ，才能在裝置上使用空間感知系統。
+> 如果以 Windows Mixed Reality 平臺為目標 (例如： HoloLens) ，請務必確定已啟用 [空間感知功能](/windows/mixed-reality/spatial-mapping-in-unity) ，才能在裝置上使用空間感知系統。
 
 > [!WARNING]
 > 某些平臺（包括 Microsoft HoloLens）提供從 Unity 內遠端執行的支援。 這項功能可讓您快速開發和測試，而不需要建立和部署步驟。 請務必使用在目標硬體和平臺上執行的應用程式建立和部署版本，進行最終的接受度測試。
@@ -100,5 +100,5 @@ Mixed Reality 工具組中的服務可以有 [Data Provider 服務](../../archit
 ## <a name="see-also"></a>另請參閱
 
 - [空間感知 API 檔](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness)
-- [空間對應總覽 WMR](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping)
-- [Unity WMR 中的空間對應](https://docs.microsoft.com/windows/mixed-reality/spatial-mapping-in-unity)
+- [空間對應總覽 WMR](/windows/mixed-reality/spatial-mapping)
+- [Unity WMR 中的空間對應](/windows/mixed-reality/spatial-mapping-in-unity)

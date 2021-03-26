@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 71d9202f6d4f75d53554a5a5fb6221d7b86077e0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0cad7b2cf2b9c2afc386467966bfe536e23891b2
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685071"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550818"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
 
@@ -42,7 +42,7 @@ ms.locfileid: "104685071"
 下列指示說明2.5.0 升級路徑的2.4.0。 如果您的專案是在2.3.0 或更早版本上，請閱讀各 [版本之間](#updating-230-to-240) 的變更，以瞭解升級路徑，或閱讀先前版本 [的指示](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) ，以進行版本版本的升級。
 
 ### <a name="mixed-reality-feature-tool"></a>混合現實功能工具
-將 MRTK 升級至較新版本的 MRTK 最簡單的方式，就是使用「 [混合現實」功能工具](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 來下載最新的套件，並將它們直接載入至 Unity 專案。
+將 MRTK 升級至較新版本的 MRTK 最簡單的方式，就是使用「 [混合現實」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 來下載最新的套件，並將它們直接載入至 Unity 專案。
 
 ### <a name="unity-asset-unitypackage-files"></a>Unity 資產 (. unitypackage) 檔案
 

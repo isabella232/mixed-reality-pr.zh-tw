@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、
-ms.openlocfilehash: dfdc5ca9a4e2d610f47660568ce6d4aabc0956b9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fa37535f3a01dbba76c99c3114ac23a03d75ec3a
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701934"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549968"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>開始使用 MRTK 和 XR SDK
 
 XR SDK 是 unity [2019.3 和以上的 unity 新 XR 管線](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)。 在 Unity 2019 中，它會提供現有 XR 管線的替代方案。 在 Unity 2020 中，它將成為 Unity 中唯一的 XR 管線。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要開始使用 Mixed Reality 工具組，請遵循 [提供的步驟](../install-the-tools.md#importing-the-mixed-reality-toolkit) 將 MRTK 新增至專案。
 
@@ -50,7 +50,7 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
 >
 > 目前它也只支援 x64 和 ARM64 組建。
 
-1. 遵循 [適用于 Unity 的 Mixed Reality OpenXR 外掛程式](https://aka.ms/openxr-unity-install) 指南，包括設定 XR 外掛程式管理與優化的步驟，以將 OpenXR 外掛程式安裝至您的專案。 確定已成功安裝下列各項：
+1. 遵循 [適用于 Unity 的 Mixed Reality OpenXR 外掛程式](/windows/mixed-reality/develop/unity/openxr-getting-started) 指南，包括設定 XR 外掛程式管理與優化的步驟，以將 OpenXR 外掛程式安裝至您的專案。 確定已成功安裝下列各項：
    1. XR 外掛程式管理
    1. OpenXR 外掛程式
    1. Mixed Reality OpenXR 外掛程式

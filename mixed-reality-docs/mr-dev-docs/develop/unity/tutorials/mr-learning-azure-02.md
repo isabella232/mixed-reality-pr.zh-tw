@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 儲存體, azure 雲端服務, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: cebf86901ec7b91888e1e46a13e5dee47f640c6c
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 189fea44da6d2da7cd98629a4a67c2f7c9340d2b
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590560"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550328"
 ---
 # <a name="2-integrating-azure-storage"></a>2.整合 Azure 儲存體
 
@@ -28,7 +28,7 @@ ms.locfileid: "99590560"
 
 **Azure 儲存體** 是 Microsoft 的雲端儲存體解決方案，可涵蓋許多案例和需求。 開發人員可以進行大規模調整並輕鬆運用。 所有服務都可以在 **Azure 儲存體帳戶** 之下使用。 在我們的使用案例中，將會使用「表格儲存體」和「Blob 儲存體」。
 
-深入了解 [Azure 儲存體服務](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-overview)。
+深入了解 [Azure 儲存體服務](/azure/storage/blobs/storage-blobs-overview)。
 
 ### <a name="azure-table-storage"></a>Azure 表格儲存體
 
@@ -36,18 +36,18 @@ ms.locfileid: "99590560"
 
 在示範應用程式的內容中，您需要兩個表格，其中一個用來儲存專案的相關資訊，其中包含有關已定型模型狀態 ([整合 Azure 自訂視覺](mr-learning-azure-03.md)) 教學課程的詳細資訊；第二個表格用來儲存「追蹤物件」的相關資訊。
 
-深入了解 [Azure 表格儲存體](https://docs.microsoft.com/azure/storage/tables/table-storage-overview)。
+深入了解 [Azure 表格儲存體](/azure/storage/tables/table-storage-overview)。
 
 ### <a name="azure-blob-storage"></a>Azure Blob 儲存體
 
 此服務可讓您儲存大型二進位檔案，您將使用此檔案將針對「追蹤物件」所拍攝的相片儲存為縮圖。
 針對示範應用程式，您需要一個 Blob 容器來儲存影像。
 
-深入了解 [Azure Blob 儲存體](https://docs.microsoft.com/azure/storage/blobs/storage-blobs-introduction)。
+深入了解 [Azure Blob 儲存體](/azure/storage/blobs/storage-blobs-introduction)。
 
 ## <a name="preparing-azure-storage"></a>準備 Azure 儲存體
 
-若要取用 Azure 儲存體服務，您需要 Azure 儲存體帳戶。 若要建立儲存體帳戶，請參閱[如何建立儲存體帳戶](https://docs.microsoft.com/azure/storage/common/storage-account-create?tabs=azure-portal)。 若要深入瞭解儲存體帳戶，請參閱 [Azure 儲存體帳戶概觀](https://docs.microsoft.com/azure/storage/common/storage-account-overview)。
+若要取用 Azure 儲存體服務，您需要 Azure 儲存體帳戶。 若要建立儲存體帳戶，請參閱[如何建立儲存體帳戶](/azure/storage/common/storage-account-create?tabs=azure-portal)。 若要深入瞭解儲存體帳戶，請參閱 [Azure 儲存體帳戶概觀](/azure/storage/common/storage-account-overview)。
 
 準備好儲存體帳戶後，您就可以從 **Azure 入口網站** 擷取連接字串，您會在本課程的下一節中用到此一資訊。
 
@@ -58,7 +58,7 @@ ms.locfileid: "99590560"
 > [!TIP]
 > 若要從 Unity 編輯器內部進行測試，您可以使用本機模擬器：
 >
-> * 在 Windows 10 上，您可以使用 [Azure 儲存體模擬器](https://docs.microsoft.com/azure/storage/common/storage-use-emulator)
+> * 在 Windows 10 上，您可以使用 [Azure 儲存體模擬器](/azure/storage/common/storage-use-emulator)
 > * 在 MacOS/Linux 上，您可以使用適用於 Docker 的 [Azurite Docker 影像](https://hub.docker.com/_/microsoft-azure-storage-azurite)
 
 ## <a name="preparing-the-scene"></a>準備場景

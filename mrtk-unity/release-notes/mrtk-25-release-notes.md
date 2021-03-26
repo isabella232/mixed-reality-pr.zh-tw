@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: dc06973112f21e4a88784586f20c872d6f49ec24
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4d16707ab09fda3cbc511fc96bb2d385c21e3898
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695945"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550908"
 ---
 # <a name="microsoft-mixed-reality-toolkit-254-release-notes"></a>Microsoft Mixed Reality 工具組2.5.4 版本資訊
 
@@ -39,7 +39,7 @@ ms.locfileid: "104695945"
 
 ### <a name="add-support-for-openxr"></a>新增對 OpenXR 的支援
 
-已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](../configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](https://aka.ms/openxr-unity-install) 。
+已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](../configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](/windows/mixed-reality/develop/unity/openxr-getting-started) 。
 
 > [!IMPORTANT]
 > Unity 中的 OpenXR 僅支援 Unity 2020.2 和更新版本。

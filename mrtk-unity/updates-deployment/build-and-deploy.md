@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Visual Studio、Android、IOS
-ms.openlocfilehash: 235255dcb94f2df3c1ab4c8e8ccc71ba53992b2f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6f014bbd1ffd5dc0214bc52e1d3d3861409f85f6
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690128"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550858"
 ---
 # <a name="building-and-deploying-mrtk"></a>建立和部署 MRTK
 
@@ -18,7 +18,7 @@ ms.locfileid: "104690128"
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-and-hololens-2-uwp"></a>建立及部署 MRTK 至 HoloLens 1 和 HoloLens 2 (UWP) 
 
-您可以在 [建立應用程式至裝置](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)時找到有關如何建立及部署 HoloLens 1 和 HOLOLENS 2 (UWP) 的指示。
+您可以在 [建立應用程式至裝置](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)時找到有關如何建立及部署 HoloLens 1 和 HOLOLENS 2 (UWP) 的指示。
 
 **秘訣：** 建立 WMR、HoloLens 1 或 HoloLens 2 時，建議組建設定「目標 SDK 版本」和「最低平臺版本」看起來像下圖所示：
 

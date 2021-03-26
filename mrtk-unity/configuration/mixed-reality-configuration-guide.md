@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: bc5a0e286a8be588e14b469b965a216cedca4df5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ba3ace347a34b477a9ba17a276feb0f639b1caf4
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701924"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550838"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
 
@@ -77,7 +77,7 @@ ms.locfileid: "104701924"
 
 ## <a name="experience-settings"></a>體驗設定
 
-在 [主要混合現實工具組設定] 頁面上，此設定會定義您專案的 [混合現實環境規模](https://docs.microsoft.com/windows/mixed-reality/coordinate-systems-in-unity) 的預設操作。
+在 [主要混合現實工具組設定] 頁面上，此設定會定義您專案的 [混合現實環境規模](/windows/mixed-reality/coordinate-systems-in-unity) 的預設操作。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ExperienceSettings.png" width="650px" alt="Experiance settings" style="display:block;">
 

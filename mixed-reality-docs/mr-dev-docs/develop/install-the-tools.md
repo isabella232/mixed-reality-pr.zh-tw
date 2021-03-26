@@ -7,12 +7,12 @@ ms.date: 02/09/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: ac8e4dab8b9d9021c834e0a9d673c81ac3b7f1dc
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+ms.openlocfilehash: 28546e751d3d8001eb2fe69a74624215a6619d4c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881235"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550038"
 ---
 # <a name="install-the-tools"></a>安裝工具
 
@@ -42,7 +42,6 @@ ms.locfileid: "104881235"
 
 現在您已準備好 Windows 10、Visual Studio 和 Windows 10 SDK，讓我們安裝並設定您所選擇的引擎。 
 
-如果您仍然需要選擇引擎，請參閱 [混合現實開發的簡介](https://docs.microsoft.com/windows/mixed-reality/develop/development?tabs=unity#what-technology-path-are-you-interested-in)。 
+如果您仍然需要選擇引擎，請參閱 [混合現實開發的簡介](./development.md?tabs=unity#what-technology-path-are-you-interested-in)。 
 
 [!INCLUDE[](includes/tools-overview.md)]
-

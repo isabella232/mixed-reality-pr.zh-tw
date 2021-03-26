@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、注視、
-ms.openlocfilehash: cd778f5986d6c6fcf186a3c1e7904ff0064705a5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7587a89b5784b4e1c2a0d8a858ffa0e84f1e86af
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688368"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550938"
 ---
 # <a name="gaze"></a>注視
 
-「[注視](https://docs.microsoft.com/windows/mixed-reality/gaze)」是一種輸入，可根據使用者的外觀與世界互動。 看看有兩種不同的類別
+「[注視](/windows/mixed-reality/gaze)」是一種輸入，可根據使用者的外觀與世界互動。 看看有兩種不同的類別
 
 ## <a name="head-gaze"></a>頭部注視
 

@@ -7,16 +7,16 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure bot 服務, luis, 自然語言, 對話 bot, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 66737f798ef87e756cf1935b12a368bbd22a3423
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2e4637af1b1745a8d2394bc4b57706ac106ddd6b
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590580"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550418"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.整合 Azure Bot 服務
 
-在本教學課程中，您將了解如何在 **HoloLens 2** 示範應用程式中使用 **Azure Bot 服務** 新增 Language Understanding (LUIS)，並在使用者搜尋 **追蹤物件** 時讓 Bot 協助使用者。 這是兩個部分的教學課程，在第一個部分中，您會使用 [Bot 編輯器](https://docs.microsoft.com/composer/introduction) 作為程式碼免費解決方案來建立 Bot，並快速查看 Azure 函式，以將所需的資料餵給 Bot。 在第二個部分中，您會使用 Unity 專案中的 **BotManager (指令碼)** 來取用託管的 Bot 服務。
+在本教學課程中，您將了解如何在 **HoloLens 2** 示範應用程式中使用 **Azure Bot 服務** 新增 Language Understanding (LUIS)，並在使用者搜尋 **追蹤物件** 時讓 Bot 協助使用者。 這是兩個部分的教學課程，在第一個部分中，您會使用 [Bot 編輯器](/composer/introduction) 作為程式碼免費解決方案來建立 Bot，並快速查看 Azure 函式，以將所需的資料餵給 Bot。 在第二個部分中，您會使用 Unity 專案中的 **BotManager (指令碼)** 來取用託管的 Bot 服務。
 
 ## <a name="objectives"></a>目標
 
@@ -33,9 +33,9 @@ ms.locfileid: "99590580"
 
 ## <a name="understanding-azure-bot-service"></a>了解 Azure Bot 服務
 
-**Azure Bot 服務** 運用 **LUIS**，讓開發人員能夠建立智慧型 Bot 並與使用者保持自然交談。 交談式 Bot 是促進使用者與您的應用程式互動的絕佳方式。 Bot 可以使用 [QnA 標記](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-qna?view=azure-bot-service-4.0&tabs=cs&preserve-view=true)作為知識庫，以 [Language Understanding (LUIS)](https://docs.microsoft.com/azure/bot-service/bot-builder-howto-v4-luis?view=azure-bot-service-4.0&tabs=csharp&preserve-view=true) 的功能來維持複雜的交談。
+**Azure Bot 服務** 運用 **LUIS**，讓開發人員能夠建立智慧型 Bot 並與使用者保持自然交談。 交談式 Bot 是促進使用者與您的應用程式互動的絕佳方式。 Bot 可以使用 [QnA 標記](/azure/bot-service/bot-builder-howto-qna?preserve-view=true&tabs=cs&view=azure-bot-service-4.0)作為知識庫，以 [Language Understanding (LUIS)](/azure/bot-service/bot-builder-howto-v4-luis?preserve-view=true&tabs=csharp&view=azure-bot-service-4.0) 的功能來維持複雜的交談。
 
-深入了解 [Azure Bot 服務](https://docs.microsoft.com/azure/bot-service/bot-service-overview-introduction?view=azure-bot-service-4.0&preserve-view=true)。
+深入了解 [Azure Bot 服務](/azure/bot-service/bot-service-overview-introduction?preserve-view=true&view=azure-bot-service-4.0)。
 
 ## <a name="part-1---creating-the-bot"></a>第 1 部分 - 建立 Bot
 
@@ -50,29 +50,29 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 此 Azure 函式有兩個動作，分別是 **Count** 和 **Find**，這兩者可透過基本的 HTTP GET 叫用。 您可以在 **Visual Studio** 中檢查程式碼。
 
-深入了解 [Azure Functions](https://docs.microsoft.com/azure/azure-functions/functions-overview)。
+深入了解 [Azure Functions](/azure/azure-functions/functions-overview)。
 
 **Count** 函式會從表格的 **表格儲存體** 查詢所有 **TrackedObjects**，非常簡單。 另一方面，**Find** 函式會從 GET 要求取得「名稱」查詢參數，並查詢 **表格儲存體** 以取得相符的 **TrackedObject** 並傳回 DTO 作為 JSON。
 
-若要直接從 **Visual Studio** 部署此 **Azure** 函式，請開啟下載的 AzureFunction_TrackedObjectsService 資料夾，並使用 Visual Studio  ![ Bot Framework 編輯器首頁開啟目前的 .sln 檔案](images/mr-learning-azure/tutorial5-section3-step1-1.png)
+若要直接從 **Visual Studio** 部署此 **Azure** 函式，請開啟下載的 AzureFunction_TrackedObjectsService 資料夾，然後以 Visual Studio AzureFunction_TrackedObjectsService 資料夾開啟目前的 **.sln** 檔案 ![](images/mr-learning-azure/tutorial5-section3-step1-1.png)
 
-在 visual studio 中載入檔案之後，在 [方案瀏覽器] 中以滑鼠右鍵按一下 **追蹤的物件** 管理，然後選取 [發行 ![ Bot Framework 編輯器首頁]](images/mr-learning-azure/tutorial5-section3-step1-2.png)
+在 visual studio 中載入檔案之後，在 [方案瀏覽器] 中以滑鼠右鍵按一下 **追蹤的物件** 服務，然後選取 [發行 ![ 發行追蹤物件服務]](images/mr-learning-azure/tutorial5-section3-step1-2.png)
 
 [發佈] 快顯視窗隨即顯示並要求目標 flatform 選取 [azure]，然後按一下 **[下一步]** 按鈕
 
-![Bot Framework Composer 首頁](images/mr-learning-azure/tutorial5-section3-step1-3.png)
+![選取目標平臺](images/mr-learning-azure/tutorial5-section3-step1-3.png)
 
 在特定目標中選取 [ **Azure 函數應用程式] (Windows)** ，然後按 **[下一步]** 按鈕
 
-![Bot Framework Composer 首頁](images/mr-learning-azure/tutorial5-section3-step1-4.png)
+![選取目標主機](images/mr-learning-azure/tutorial5-section3-step1-4.png)
 
 如果您未登入 azure，請透過 visual studio 登入，視窗看起來像這樣
 
-![Bot Framework Composer 首頁](images/mr-learning-azure/tutorial5-section3-step1-5.png)
+![選取或建立 Azure Function](images/mr-learning-azure/tutorial5-section3-step1-5.png)
 
 按一下 [脈衝] 按鈕，在 azure 帳戶中建立新的函數應用程式
 
-![Bot Framework Composer 首頁](images/mr-learning-azure/tutorial5-section3-step1-6.png)
+![建立新的函數應用程式](images/mr-learning-azure/tutorial5-section3-step1-6.png)
 
 * 針對 [ **名稱**]，輸入適合服務的名稱，例如， *TrackedObjectsService*
 * 針對 **方案類型**，選擇耗用量
@@ -81,11 +81,11 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 函數應用程式建立後，按一下 **[完成]** 按鈕 
 
-![Bot Framework Composer 首頁](images/mr-learning-azure/tutorial5-section3-step1-7.png)
+![完成建立函數應用程式](images/mr-learning-azure/tutorial5-section3-step1-7.png)
 
 發行快顯將在完成程式之後開啟，請按一下 [ **發佈** ] 按鈕發佈函式並等候發行
 
-![Bot Framework Composer 首頁](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+![Publish 函數](images/mr-learning-azure/tutorial5-section3-step1-8.png)
 
 一旦完成發佈，請在 [動作] 區段底下的 **Azure 入口網站中** 按一下 [管理]，就會帶您前往 Azure 入口網站中的特定函式，然後按一下 [設定] 區段 **底下的 [** *設定* ]。 在 **應用程式設定** 中， 您需要提供儲存 **追蹤物件** 之 **Azure 儲存體** 的「連接字串」。 按一下 [新增應用程式設定]，名稱請使用：**AzureStorageConnectionString**，並提供正確的「連接字串」。 之後，請按一下 [儲存]，**Azure 函式** 已準備好裝載您接下來會建立的 Bot。
 
@@ -93,7 +93,7 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 ### <a name="creating-a-conversation-bot"></a>建立交談 Bot
 
-有數種方式可開發以 Bot Framework 為基礎的對話式 Bot。 在本課程中，您將使用 [Bot Framework Composer](https://docs.microsoft.com/composer/) 桌面應用程式，這是一個適合快速開發的視覺化設計工具。
+有數種方式可開發以 Bot Framework 為基礎的對話式 Bot。 在本課程中，您將使用 [Bot Framework Composer](/composer/) 桌面應用程式，這是一個適合快速開發的視覺化設計工具。
 
 您可以從 [Github 存放庫](https://github.com/microsoft/BotFramework-Composer/releases)下載最新版本。 適用於 Windows、Mac 和 Linux。
 
@@ -109,7 +109,7 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 讓我們將焦點放在左側，您可以在這裡看到 **對話面板**。 在這裡有一個名為 **TrackedObjectsBot** 的對話，其下有數個 **觸發程式**。
 
-深入了解 [Bot Framework 概念](https://docs.microsoft.com/composer/concept-dialog)。
+深入了解 [Bot Framework 概念](/composer/concept-dialog)。
 
 這些觸發程式會執行下列動作：
 
@@ -129,7 +129,7 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 ![TrackedObjectsBot 專案對話方塊觸發程式 AskForCount](images/mr-learning-azure/tutorial5-section4-step1-4.png)
 
-[LUIS](https://docs.microsoft.com/composer/how-to-use-luis) 讓「使用者」不需要一字不漏地說出某個詞組，而是允許「使用者」自然交談。
+[LUIS](/composer/how-to-use-luis) 讓「使用者」不需要一字不漏地說出某個詞組，而是允許「使用者」自然交談。
 
 在此對話中，Bot 也會與 Azure 函式 **Count** 溝通，稍後會詳細說明。
 
@@ -162,7 +162,7 @@ Bot 會要求使用者提供 **追蹤物件** 的「名稱」以了解更詳細�
 
 一切都設定好之後，您就可以開始部署 Bot 了。 由於您已安裝 Bot Framework Composer，因此可以直接從該處發佈。
 
-深入了解 [從 Bot 編輯器發佈 Bot](https://docs.microsoft.com/composer/how-to-publish-bot)。
+深入了解 [從 Bot 編輯器發佈 Bot](/composer/how-to-publish-bot)。
 
 > [!TIP]
 > 您可以自由運用 Bot，例如新增更多觸發程式片語、新的回應或交談分支。

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ed88f677088b1e4194865e90db7c35bb58e3ecf0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 149d1226c6cfd18eebbe30e6dbc62adde9d4a91e
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696085"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549958"
 ---
 # <a name="configuring-mesh-observers-for-the-editor"></a>設定編輯器的網格觀察器
 
@@ -67,7 +67,7 @@ ms.locfileid: "104696085"
 
 ### <a name="windows-device-portal"></a>Windows 裝置入口網站
 
-[Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)可以用來從 Microsoft HoloLens 裝置將空間網格下載為 .obj 檔。
+[Windows 裝置入口網站](/windows/mixed-reality/using-the-windows-device-portal)可以用來從 Microsoft HoloLens 裝置將空間網格下載為 .obj 檔。
 
 1. 藉由使用 HoloLens 來掃描及觀看所需的環境，進行掃描
 1. 使用 Windows 裝置入口網站連接到 HoloLens
@@ -87,4 +87,4 @@ ms.locfileid: "104696085"
 - [空間感知入門](spatial-awareness-getting-started.md)
 - [設定裝置上的網狀觀察器](configuring-spatial-awareness-mesh-observer.md)
 - [透過程式碼設定網格觀察者](usage-guide.md)
-- [使用 Windows 裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal)
+- [使用 Windows 裝置入口網站](/windows/mixed-reality/using-the-windows-device-portal)

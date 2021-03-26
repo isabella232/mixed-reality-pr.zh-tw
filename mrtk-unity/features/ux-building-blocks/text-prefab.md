@@ -5,16 +5,16 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、TMP、
-ms.openlocfilehash: e20eabec190e5afd0c11184824f122be439b32a6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2428e6d91f9e3ab7267e5b7f26712f4a054a3b20
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689038"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550358"
 ---
 # <a name="text-prefab"></a>文字預製專案
 
-這些 prefabs 已針對 Windows Mixed Reality 中的轉譯品質進行優化。 如需詳細資訊，請參閱 Microsoft Windows 開發人員中心上 [Unity 中](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) 的指導方針文字。
+這些 prefabs 已針對 Windows Mixed Reality 中的轉譯品質進行優化。 如需詳細資訊，請參閱 Microsoft Windows 開發人員中心上 [Unity 中](/windows/mixed-reality/text-in-unity) 的指導方針文字。
 
 ## <a name="prefabs"></a>Prefabs
 

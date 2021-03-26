@@ -7,12 +7,12 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 0244c3de51a44ed6d37137a3206b61ca4911f622
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 990119b25aeffcb4ce786120659af8f290a6fde2
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102547237"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550198"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>歡迎使用 Mixed Reality 功能工具
 
@@ -42,7 +42,7 @@ ms.locfileid: "102547237"
     * 建議您建立可執行檔的快捷方式，以加快存取的速度
 
 > [!NOTE]
-> 如果您不熟悉使用 Unity 封裝管理員，請遵循我們的 [UPM 指示](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager)。
+> 如果您不熟悉使用 Unity 封裝管理員，請遵循我們的 [UPM 指示](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager)。
 
 ## <a name="changes-in-this-release"></a>此版本中的變更
 

@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: 5668a849653e0b3319f10423eafb922cececde47
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: b9e89174f3f4b0aca268d81513ea7e3537f79629
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104684473"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550138"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
@@ -27,7 +27,7 @@ ms.locfileid: "104684473"
 
 ### <a name="azure-remote-rendering"></a>Azure 遠端轉譯
 
-[Azure 遠端轉譯](https://docs.microsoft.com/azure/remote-rendering/)（或 ARR）是一項服務，可讓您即時轉譯高度複雜的3d 模型，並將其串流至裝置。 ARR 現在已正式推出，可新增至以 HoloLens 2 或 Windows 桌上型電腦為目標的 Unity 或原生 c + + 專案。
+[Azure 遠端轉譯](/azure/remote-rendering/)（或 ARR）是一項服務，可讓您即時轉譯高度複雜的3d 模型，並將其串流至裝置。 ARR 現在已正式推出，可新增至以 HoloLens 2 或 Windows 桌上型電腦為目標的 Unity 或原生 c + + 專案。
 
 <br>
 
@@ -47,7 +47,7 @@ ARR 的連帶好處是，您可在應用程式中使用的使用者介面類型�
 
 ### <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-[Azure 空間錨點](https://docs.microsoft.com/azure/spatial-anchors/)（或 ASA）是一種跨平臺服務，可讓您建立空間感知的混合現實應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 AOA 現已進入公開預覽階段，可讓您在應用程式中試用。
+[Azure 空間錨點](/azure/spatial-anchors/)（或 ASA）是一種跨平臺服務，可讓您建立空間感知的混合現實應用程式。 您可以使用 Azure Spatial Anchors，在全球規模的多個裝置之間對應、保存及共用全像攝影內容。 AOA 現已進入公開預覽階段，可讓您在應用程式中試用。
 
 Azure 空間錨點是唯一量身打造的解決方案，適用于混合現實中的常見使用案例，包括：
 * **導向**：可以連接兩個或更多空間錨點，以建立使用者必須與其互動的工作清單或興趣點。
@@ -68,7 +68,7 @@ Azure 空間錨點是唯一量身打造的解決方案，適用于混合現實�
 
 ### <a name="azure-object-anchors"></a>Azure 物件錨點
 
-[Azure 物件錨點](https://docs.microsoft.com/azure/object-anchors/)（或 AOA）是一項混合現實服務，可透過自動將3d 內容與實體物件對齊，來協助您建立豐富的沉浸式體驗。 取得物件的內容理解，而不需要標記或手動對齊。 藉由使用物件錨點建立混合的現實應用程式，省下大量觸控人力、減少對齊錯誤，以及改善使用者體驗。
+[Azure 物件錨點](/azure/object-anchors/)（或 AOA）是一項混合現實服務，可透過自動將3d 內容與實體物件對齊，來協助您建立豐富的沉浸式體驗。 取得物件的內容理解，而不需要標記或手動對齊。 藉由使用物件錨點建立混合的現實應用程式，省下大量觸控人力、減少對齊錯誤，以及改善使用者體驗。
 
 Azure 物件錨點特別適合一般混合現實使用案例，包括：
 * **訓練**：為您的員工建立混合現實訓練體驗，而不需要放置標記或花時間手動調整全像投影對齊。

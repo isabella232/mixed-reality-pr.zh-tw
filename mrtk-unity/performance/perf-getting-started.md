@@ -5,27 +5,27 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 385188c37d02a3efd1c6782fbfdff443c9890d21
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: d95a794c2f02ccc50f0a00dc0123921b8fd6177c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895141"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550178"
 ---
 # <a name="performance"></a>效能
 
 ## <a name="getting-started"></a>開始使用
 
-將效能合理化的最簡單方式是透過畫面播放速率，或應用程式每秒可轉譯影像的次數。 請務必符合目標的畫面播放速率，如目標平臺所述 (例如： [Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality)、 [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)等) 。 例如，在 HoloLens 上，目標畫面播放速率是 60 FPS。 低幀率的應用程式可能會導致日益惡化使用者體驗， [例如惡化全](../performance/hologram-stabilization.md)像、世界追蹤、手追蹤等。 為了協助開發人員追蹤和達成品質的畫面播放速率，Mixed Reality 工具組提供各種不同的工具和腳本。
+將效能合理化的最簡單方式是透過畫面播放速率，或應用程式每秒可轉譯影像的次數。 請務必符合目標的畫面播放速率，如目標平臺所述 (例如： [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality)、 [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)等) 。 例如，在 HoloLens 上，目標畫面播放速率是 60 FPS。 低幀率的應用程式可能會導致日益惡化使用者體驗， [例如惡化全](../performance/hologram-stabilization.md)像、世界追蹤、手追蹤等。 為了協助開發人員追蹤和達成品質的畫面播放速率，Mixed Reality 工具組提供各種不同的工具和腳本。
 
 ### <a name="visual-profiler"></a>Visual profiler
 
 若要在開發的存留期間持續追蹤效能，強烈建議您在執行 & 的應用程式偵錯工具時，一律顯示畫面播放速率的視覺效果。 Mixed Reality 工具組提供的 [Visual Profiler](../features/diagnostics/using-visual-profiler.md) 診斷工具，可提供應用程式視圖中目前 FPS 和記憶體使用量的即時資訊。 您可以透過 [ [MRTK 設定檔](../configuration/mixed-reality-configuration-guide.md)] 偵測器底下的 [[診斷系統] 設定](../features/diagnostics/diagnostics-system-getting-started.md)來設定 Visual Profiler。
 
-此外，在裝置上執行時，最好使用 Visual Profiler 來追蹤畫面播放速率，而不是在 Unity 編輯器或模擬器中執行。 在具有 [發行設定組建](https://docs.microsoft.com/visualstudio/debugger/how-to-set-debug-and-release-configurations?view=vs-2019&preserve-view=true)的裝置上執行時，會描述最精確的效能結果。
+此外，在裝置上執行時，最好使用 Visual Profiler 來追蹤畫面播放速率，而不是在 Unity 編輯器或模擬器中執行。 在具有 [發行設定組建](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019)的裝置上執行時，會描述最精確的效能結果。
 
 > [!NOTE]
-> 如果建立 Windows Mixed Reality，請使用[主要設定組建](https://docs.microsoft.com/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)進行部署
+> 如果建立 Windows Mixed Reality，請使用[主要設定組建](/windows/mixed-reality/exporting-and-building-a-unity-visual-studio-solution#building_and_deploying_a_unity_visual_studio_solution)進行部署
 
 ![Visual Profiler 介面](../features/images/Diagnostics/VisualProfiler.png)
 
@@ -227,9 +227,9 @@ MRTK 標準著色器統計資料範例
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-- [適用于 Unity 的建議設定](https://docs.microsoft.com/windows/mixed-reality/recommended-settings-for-unity)
-- [瞭解混合現實的效能](https://docs.microsoft.com/windows/mixed-reality/understanding-performance-for-mixed-reality)
-- [對 Unity 的效能建議](https://docs.microsoft.com/windows/mixed-reality/performance-recommendations-for-unity)
+- [適用于 Unity 的建議設定](/windows/mixed-reality/recommended-settings-for-unity)
+- [瞭解混合現實的效能](/windows/mixed-reality/understanding-performance-for-mixed-reality)
+- [對 Unity 的效能建議](/windows/mixed-reality/performance-recommendations-for-unity)
 - [適用于 Windows Unity 的事件追蹤指南](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### <a name="oculus"></a>Oculus
@@ -239,5 +239,5 @@ MRTK 標準著色器統計資料範例
 
 ### <a name="mesh-optimization"></a>網格優化
 
-- [優化3D 模型](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
-- [轉換和優化即時3D 模型的最佳作法](https://docs.microsoft.com/dynamics365/mixed-reality/import-tool/best-practices)
+- [優化3D 模型](/dynamics365/mixed-reality/import-tool/optimize-models#performance-targets)
+- [轉換和優化即時3D 模型的最佳作法](/dynamics365/mixed-reality/import-tool/best-practices)

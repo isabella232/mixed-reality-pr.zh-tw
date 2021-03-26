@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 6d3804134d4b6c0a21aa62468aa39c446de52101
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d9e470e7ad5a6229994c59e81615a6b90561b022
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685081"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549938"
 ---
 # <a name="holographic-remoting"></a>全像攝影遠端處理
 
@@ -56,7 +56,7 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
     ![選取 DotNetWinRT 套件](../images/tools/remoting/SelectDotNetWinRT.png)
 
-1. 按一下 [ **取得功能** ]，然後繼續匯 [入封裝](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages)。
+1. 按一下 [ **取得功能** ]，然後繼續匯 [入封裝](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool#3-importing-feature-packages)。
 
 #### <a name="dotnetwinrt_present-define-written-into-player-settings"></a>DOTNETWINRT_PRESENT 定義寫入播放機設定
 
@@ -120,5 +120,5 @@ USB 纜線連接可提供更佳的轉譯品質和穩定性。 若要使用 USB �
 
 ## <a name="see-also"></a>另請參閱
 
-- [全像遠端的疑難排解和限制](https://docs.microsoft.com/windows/mixed-reality/holographic-remoting-troubleshooting)
-- [Microsoft 全像遠端軟體授權條款](https://docs.microsoft.com/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+- [全像遠端的疑難排解和限制](/windows/mixed-reality/holographic-remoting-troubleshooting)
+- [Microsoft 全像遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

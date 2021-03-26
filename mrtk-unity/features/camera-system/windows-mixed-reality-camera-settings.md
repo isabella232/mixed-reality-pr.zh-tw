@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、攝影機、
-ms.openlocfilehash: a5d261d7ccadcd47b1697dd78f74013a343d1bbc
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 717d0f63cd20f85303b6da3779aaeb06beb0a0d5
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681871"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550008"
 ---
 # <a name="windows-mixed-reality-camera-settings-provider"></a>Windows Mixed Reality 相機設定提供者
 
@@ -66,5 +66,5 @@ reprojectionUpdater.ReprojectionMethod = HolographicDepthReprojectionMethod.Auto
 
 - [攝影機系統總覽](camera-system-overview.md)
 - [建立相機設定提供者](create-settings-provider.md)
-- [從 PV 攝影機轉譯混合實境擷取](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
-- [全像 reprojection](https://docs.microsoft.com/windows/mixed-reality/hologram-stability#reprojection)
+- [從 PV 攝影機轉譯混合實境擷取](/windows/mixed-reality/mixed-reality-capture-for-developers#render-from-the-pv-camera-opt-in)
+- [全像 reprojection](/windows/mixed-reality/hologram-stability#reprojection)

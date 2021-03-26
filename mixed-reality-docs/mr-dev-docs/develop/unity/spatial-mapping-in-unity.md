@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: a713497e0c5f061e9e81bf66197b3e2116218219
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759744"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549948"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -56,10 +56,10 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
 
 > [!NOTE]
-> 如果您已將 Unity 專案匯出至 Visual Studio 方案，則必須匯出至新資料夾，或在 [Visual studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
+> 如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
 
 空間對應也需要至少10.0.10586.0 的 MaxVersionTested：
-1. 在 Visual Studio 中，以滑鼠右鍵按一下 [方案 package.appxmanifest] 中的 [**封裝**]，然後選取 [ **View Code** ]
+1. 在 Visual Studio 中，以滑鼠右鍵按一下方案總管中的 **package.appxmanifest** ，然後選取 [ **View Code** ]
 2. 找出指定 **y** 的行，並將 **MaxVersionTested = "10.0.10240.0"** 變更為 **MaxVersionTested = "10.0.10586.0"**
 3. **儲存** package.appxmanifest。
 
@@ -311,7 +311,7 @@ struct TopologyResult
 ```
 
 > [!NOTE]
-> 在 Unity 範例中，每個查詢都會連結到虛擬 UI 面板中的按鈕。 此範例會將每個查詢的參數設為合理的值。 如需更多範例，請參閱範例程式碼中的 SpaceVisualizer.cs。
+> 在 Unity 範例中，每個查詢都會連結到虛擬 UI 面板中的按鈕。 此範例會將每個查詢的參數設為合理的值。 如需更多範例，請參閱範例程式碼中的 SpaceVisualizer。
 
 ### <a name="shape-queries"></a>圖形查詢
 
@@ -319,7 +319,7 @@ struct TopologyResult
 
 圖形分析僅適用于水準表面。 例如，一名沙發是由平面基座介面和沙發的一般頂端所定義。 圖形查詢會尋找特定大小、高度和外觀範圍的兩個表面，並將兩個表面對齊並連接。 使用 Api 術語時，沙發基座和上一頁是圖形元件，而對齊需求是圖形元件條件約束。
 
-Unity 範例中所定義的範例查詢 (ShapeDefinition.cs) ，適用于 "sittable" 物件，如下所示。
+在 Unity 範例 () ShapeDefinition 中定義的範例查詢，"sittable" 物件如下所示。
 
 ```cs
 shapeComponents = new List<ShapeComponent>()
@@ -350,7 +350,7 @@ shapeConstraints = new List<ShapeConstraint>()
 };
 ```
 
-Unity 模組中提供包裝函式，可讓您輕鬆地建立自訂圖形定義。 您可以在 "ShapeComponentConstraint" 和 "ShapeConstraint" 結構內的 "SpatialUnderstandingDll.cs" 中找到元件和圖形條件約束的完整清單。
+Unity 模組中提供包裝函式，可讓您輕鬆地建立自訂圖形定義。 您可以在 "ShapeComponentConstraint" 和 "ShapeConstraint" 結構內的 "SpatialUnderstandingDll" 中找到元件和圖形條件約束的完整清單。
 
 ![在此表面找到矩形圖形](images/su-shapequery-300px.jpg)<br>
 *在此表面找到矩形圖形*
@@ -421,7 +421,7 @@ Solver_PlaceObject(
     UnderstandingDLL.GetStaticObjectPlacementResultPtr());
 ```
 
-如果成功，則會傳回包含放置位置、維度和方向的 "ObjectPlacementResult" 結構。 此外，會將放置新增至 dll 的已放置物件的內部清單。 後續的放置查詢會將此物件列入考慮。 Unity 範例中的 "LevelSolver.cs" 檔案包含更多範例查詢。
+如果成功，則會傳回包含放置位置、維度和方向的 "ObjectPlacementResult" 結構。 此外，會將放置新增至 dll 的已放置物件的內部清單。 後續的放置查詢會將此物件列入考慮。 Unity 範例中的 "LevelSolver .cs" 檔案包含更多範例查詢。
 
 ![物件放置的結果](images/su-objectplacement-1000px.jpg)<br>
 *圖3：藍色方塊如何從三個位置查詢的結果，而不是相機位置規則*
@@ -441,7 +441,7 @@ One-time scan process –
     Query functions will not function until after the scan has been finalized.
 ```
 
-使用者導向 playspace 「繪製」–在掃描階段期間，使用者會四處移動並查看播放步調，有效地繪製應該包含的區域。 產生的網格很重要，可在此階段提供使用者意見反應。 室內家用或 office 設定–查詢函式是以適當角度的平面和牆為中心設計的。 這是一項軟性限制。 不過，在掃描階段期間，主要軸分析已完成，可將網格鑲嵌沿著主要和次要軸優化。 內含的 SpatialUnderstanding.cs 檔案會管理掃描階段程式。 它會呼叫下列函數。
+使用者導向 playspace 「繪製」–在掃描階段期間，使用者會四處移動並查看播放步調，有效地繪製應該包含的區域。 產生的網格很重要，可在此階段提供使用者意見反應。 室內家用或 office 設定–查詢函式是以適當角度的平面和牆為中心設計的。 這是一項軟性限制。 不過，在掃描階段期間，主要軸分析已完成，可將網格鑲嵌沿著主要和次要軸優化。 內含的 SpatialUnderstanding .cs 檔案會管理掃描階段程式。 它會呼叫下列函數。
 
 ```
 SpatialUnderstanding_Init – Called once at the start.
@@ -480,7 +480,7 @@ Import_UnderstandingMesh –
 * 當追蹤遺失時，下一個 OnSurfaceChanged 事件將會移除所有的網格。
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>混合現實工具組中的空間對應
-如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間感知一節</a> 。
+如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間感知一節</a> 。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

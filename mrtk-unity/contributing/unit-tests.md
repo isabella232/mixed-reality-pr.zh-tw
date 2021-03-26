@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: 7da98d44abf1d99cf22dc7f2782bba0849eadbf8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1c72306bd1026bc4692be6f10283eeefcedf2a53
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693255"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550788"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>在 MRTK 中撰寫和執行測試
 
@@ -36,7 +36,7 @@ MRTK 會使用 [unity Test Runner](https://docs.unity3d.com/Manual/testing-edito
 
 ### <a name="command-line"></a>命令列
 
-測試也可以透過位於的 [powershell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6&preserve-view=true) 腳本來執行 `Scripts\test\run_playmode_tests.ps1` 。 這會執行 playmode 測試，就如同在 github/CI 上執行一樣 (請參閱下面) ，並列印結果。 以下是一些如何執行腳本的範例
+測試也可以透過位於的 [powershell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6) 腳本來執行 `Scripts\test\run_playmode_tests.ps1` 。 這會執行 playmode 測試，就如同在 github/CI 上執行一樣 (請參閱下面) ，並列印結果。 以下是一些如何執行腳本的範例
 
 在位於 H:\mrtk.dev 的專案上執行測試，並使用 Unity 2018.4 (例如 Unity 2018.4.26 f1) 
 
@@ -77,7 +77,7 @@ MRTK 的 CI 將會建立所有設定的 MRTK，並執行所有的編輯和播放
 public IEnumerator MyTest() {...}
 ```
 
-建議您從命令列執行下列命令 ([PowerShell](https://docs.microsoft.com/powershell/scripting/install/installing-powershell?view=powershell-6#powershell-core&preserve-view=true)) 
+建議您從命令列執行下列命令 ([PowerShell](/powershell/scripting/install/installing-powershell?preserve-view=true&view=powershell-6#powershell-core)) 
 
 ```powershell
 cd scripts\tests
@@ -315,4 +315,3 @@ TestUtilities.ShutdownMixedRealityToolkit();
 ```
 
 請參閱的 API 檔 [`TestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.TestUtilities) 以及 [`PlayModeTestUtilities`](xref:Microsoft.MixedReality.Toolkit.Tests.PlayModeTestUtilities) 這些 util 類別的其他方法，因為它們會在新的測試新增至 MRTK 時定期擴充。
-

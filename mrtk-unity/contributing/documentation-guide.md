@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: a2f32f95b01f97b84bfc95b6d318aef8f80e2dd4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3f5737deb471396383c128a041a798df7f4c7bc7
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693325"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550608"
 ---
 # <a name="documentation-guidelines"></a>檔指導方針
 
@@ -297,7 +297,7 @@ Mixed Reality 讓您有機會建立全新的領域。 這可能牽涉到建立�
 
 **強烈** 建議您採用這種類型的檔，而且 **可能** 會在提取要求審核過程中要求。
 
-這不一定與[MS 開發人員網站](https://docs.microsoft.com/windows/mixed-reality/design)上的設計建議不同
+這不一定與[MS 開發人員網站](/windows/mixed-reality/design)上的設計建議不同
 
 ## <a name="performance-notes"></a>效能注意事項
 

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f268bfe18cf44129f88ebdaf4cd56e442c458b59
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3ff0a386248b50458788c59666be7e056139f284
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695765"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550808"
 ---
 # <a name="using-the-visual-profiler"></a>使用 visual profiler
 
@@ -47,7 +47,7 @@ Visual Profiler 介面包含下列元件：
 - Windows Mixed Reality Ultra：90
 
 > [!NOTE]
-> 由於在 [預設的 MRC 為使用中時，在 HoloLens 上的畫面播放速率節流](https://docs.microsoft.com/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)，因此當影片和相片被捕獲時，visual profiler 會自行隱藏。 這項設定可以在診斷系統設定檔中覆寫。
+> 由於在 [預設的 MRC 為使用中時，在 HoloLens 上的畫面播放速率節流](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)，因此當影片和相片被捕獲時，visual profiler 會自行隱藏。 這項設定可以在診斷系統設定檔中覆寫。
 
 ### <a name="frame-time"></a>畫面格時間
 

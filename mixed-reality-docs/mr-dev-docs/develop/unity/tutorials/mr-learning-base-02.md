@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: da1c61abab70ae30ba187c6ee255923a552f3562
-ms.sourcegitcommit: b01be2046d1e6728259568cb3e4ac7c677407b4b
+ms.openlocfilehash: c80074ffec3e1f90d5dfe2ea2e64a379b59c5af6
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104890810"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550458"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -89,7 +89,7 @@ ms.locfileid: "104890810"
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>匯入混合實境工具組
 
-若要將混合現實工具組匯入 Unity 專案中，您必須使用「 [混合現實」功能工具](https://docs.microsoft.com//windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) ，讓開發人員能夠探索、更新和新增混合現實功能套件至 unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。
+若要將混合現實工具組匯入 Unity 專案中，您必須使用「 [混合現實」功能工具](//windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) ，讓開發人員能夠探索、更新和新增混合現實功能套件至 unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。
 
 請從 [Microsoft 下載中心](https://aka.ms/MRFeatureTool)下載最新版本的混合現實功能工具，下載完成後，請將檔案解壓縮，並將其儲存到您的桌面。
 
@@ -171,14 +171,14 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 ![已選取 [新增 Windows Mixed Reality SDK] 選項的 Unity XR 設定](images/mr-learning-base/base-02-section5-step2-5.png)
 
 > [!TIP]
->您可以選擇是否設定 [音訊空間定位器] 屬性，但這麼做可以改善專案中的音訊體驗。 如果您將此屬性設定為 [MS HRTF 空間定位器]，當 Unity 的 AudioSource.spatialize 屬性啟用時，便會使用此空間定位器外掛程式。 若要深入瞭解本主題，您可以參考  <a href="https://docs.microsoft.com//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> 空間音訊教學</a>課程。
+>您可以選擇是否設定 [音訊空間定位器] 屬性，但這麼做可以改善專案中的音訊體驗。 如果您將此屬性設定為 [MS HRTF 空間定位器]，當 Unity 的 AudioSource.spatialize 屬性啟用時，便會使用此空間定位器外掛程式。 若要深入瞭解本主題，您可以參考  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> 空間音訊教學</a>課程。
 
 在 [專案設定] 視窗中，選取 [播放程式] > [XR 設定]，然後使用 **深度格式** 下拉式清單選取 **16 位元深度**：
 
 ![Unity 啟用16深度](images/mr-learning-base/base-02-section5-step2-6.png)
 
 > [!TIP]
-> 您可以選擇是否將 [深度格式] 減少為 16 位元，但這麼做可協助改善專案中的圖形效能。 若要深入瞭解本主題，您可以參考 MRTK 的<a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">效能</a>檔中的<a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering#depth-buffer-sharing-hololens" target="_blank">深度緩衝區共用 (HoloLens) </a>一節。
+> 您可以選擇是否將 [深度格式] 減少為 16 位元，但這麼做可協助改善專案中的圖形效能。 若要深入瞭解本主題，您可以參考 MRTK 的<a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">效能</a>檔中的<a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">深度緩衝區共用 (HoloLens) </a>一節。
 
 在 [專案設定] 視窗中，選取 [播放程式] > [發佈設定]，然後在 **套件名稱** 欄位中輸入適當的名稱，例如 _MRTKTutorials-GettingStarted_：
 
@@ -263,7 +263,7 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 > 在組建您的裝置之前，裝置必須處於「開發人員模式」，並與開發電腦配對。 請遵循[這些指示](../../platform-capabilities-and-apis/using-visual-studio.md)來完成這兩個步驟。
 
 > [!TIP]
-> 您也可以部署到 [HoloLens 模擬器](../../platform-capabilities-and-apis/using-the-hololens-emulator.md) 或為側載建立[應用程式套件](https://docs.microsoft.com/windows/uwp/packaging/packaging-uwp-apps)。
+> 您也可以部署到 [HoloLens 模擬器](../../platform-capabilities-and-apis/using-the-hololens-emulator.md) 或為側載建立[應用程式套件](/windows/uwp/packaging/packaging-uwp-apps)。
 
 使用 [啟動但不進行偵測] 會自動啟動您裝置上的應用程式，而不會附加 Visual Studio 偵錯工具。
 

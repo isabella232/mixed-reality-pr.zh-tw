@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、傳送系統、
-ms.openlocfilehash: 2dfccc009510183f6c6b60d46ef4df312d2dc046
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ff24ec720211e02071242f79260bd608fd1a02aa
+ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696065"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105555544"
 ---
 # <a name="teleport-system"></a>傳送系統
 
@@ -88,3 +88,9 @@ public class TeleportHandlerExample : MonoBehaviour, IMixedRealityTeleportHandle
     }
 }
 ```
+
+## <a name="teleporting-on-mrtk"></a>MRTK 上的 Teleporting
+
+若要使用預設設定在 MR 裝置上傳送控制器，請使用操縱杆。 若要透過明確的手進行傳送，請與您的手朝外手勢，並將索引和捲動方塊朝外，以 curling 食指來完成傳送。 若要使用輸入模擬來傳送，請參閱更新的 [輸入模擬服務檔](../input-simulation/input-simulation-service.md)。
+
+  ![傳送手勢](../images/teleport/handteleport.gif)

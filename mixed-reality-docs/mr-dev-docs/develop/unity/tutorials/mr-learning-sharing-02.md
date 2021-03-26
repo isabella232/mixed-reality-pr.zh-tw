@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 372cb7c9516a994cb7c3da1efb6cade792e862d1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: dd4eb8400a7aac491cb893d19e18afc6d6401d1b
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590310"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550238"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -68,7 +68,7 @@ ms.locfileid: "99590310"
 
 ## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
 
-將 >azurespatialanchors.unitypackage SDK V 2.7.1 新增至 unity 專案，若要新增套件，請遵循本[教學](https://docs.microsoft.com/en-us/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)課程
+將 >azurespatialanchors.unitypackage SDK V 2.7.1 新增至 unity 專案，若要新增套件，請遵循本[教學](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)課程
 
 
 下載並 **依列出順序** 來 **匯入** 下列 Unity 自訂套件：

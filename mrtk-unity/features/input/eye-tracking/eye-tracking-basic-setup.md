@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、眼睛追蹤、
-ms.openlocfilehash: 0a603ca293d66fea51b8fc22615f99324edeaca6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 24e389ad86d1544d7d05e0febf7633701009c616
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693135"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550158"
 ---
 # <a name="getting-started-with-eye-tracking-in-mrtk"></a>開始在 MRTK 中使用眼睛追蹤
 
@@ -41,7 +41,7 @@ MRTK 提供的組建工具 (，也就是混合現實工具組-> 公用程式-> �
 在 Unity 2019 之前，使用 Unity 的 [組建] 視窗時，必須在 Unity 組建之後以手動方式新增功能，如下所示：
 
 1. 開啟您已編譯的 Visual Studio 專案，然後在您的方案中開啟 _' package.appxmanifest '_ 。
-2. 請務必勾選 [_功能_] 下的 [ _GazeInput_ ] 核取方塊。 如果您沒有看到「 _GazeInput_ 」功能，請確認您的系統符合 [使用 MRTK](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools) (的必要條件，特別是 Windows SDK 版本) 。
+2. 請務必勾選 [_功能_] 下的 [ _GazeInput_ ] 核取方塊。 如果您沒有看到「 _GazeInput_ 」功能，請確認您的系統符合 [使用 MRTK](/windows/mixed-reality/develop/install-the-tools) (的必要條件，特別是 Windows SDK 版本) 。
 
 _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼做。
 這表示，如果您已經建立 Unity 專案，並在之前設定 package.appxmanifest，而且現在將目標設為相同的資料夾，您就不需要重新套用變更。

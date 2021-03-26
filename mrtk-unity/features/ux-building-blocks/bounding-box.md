@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、周框方塊
-ms.openlocfilehash: 864432349d31c5d0e8b8032a7ed0939e345521df
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1c5e0e4a03aa31d9df4f78613a05643840d70501
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702254"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549998"
 ---
 # <a name="bounding-box"></a>週框方塊
 
@@ -21,7 +21,7 @@ ms.locfileid: "104702254"
 
 [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox)腳本提供在混合現實中轉換物件的基本功能。 周框方塊會顯示全像影像周圍的立方體，表示它可以與互動。 Cube 角落和邊緣上的控點可讓您縮放或旋轉物件。 周框方塊也會對使用者輸入做出回應。 例如，在 HoloLens 2 上，周框方塊會回應手指附近，並提供視覺回饋以協助觀察物件的距離。 您可以輕鬆地自訂所有互動和視覺效果。
 
-如需詳細資訊，請參閱 Windows 開發人員中心中的周 [框方塊和應用程式行](https://docs.microsoft.com/windows/mixed-reality/app-bar-and-bounding-box) 。
+如需詳細資訊，請參閱 Windows 開發人員中心中的周 [框方塊和應用程式行](/windows/mixed-reality/app-bar-and-bounding-box) 。
 
 ## <a name="example-scene"></a>範例場景
 

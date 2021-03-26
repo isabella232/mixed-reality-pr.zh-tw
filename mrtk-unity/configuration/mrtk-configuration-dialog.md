@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity
-ms.openlocfilehash: 74c7f411f0be5ac4ecc2d70767335fb3a20ce8f4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6b0bad2322f70e0a5adbc0c34c1343d9213bde4c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701824"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550738"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>MRTK 專案設定對話方塊
 
@@ -62,7 +62,7 @@ Microsoft 提供的空間定位器可支援 HoloLens 2 上硬體加速的使用�
 
 此空間定位器可透過 [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) 和 [GitHub](https://github.com/microsoft/spatialaudio-unity)取得。
 
-如需 Microsoft 空間定位器的詳細資訊，請參閱 [空間音效檔](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-in-unity)。
+如需 Microsoft 空間定位器的詳細資訊，請參閱 [空間音效檔](/windows/mixed-reality/spatial-sound-in-unity)。
 
 - MS HRTF 空間定位器
 

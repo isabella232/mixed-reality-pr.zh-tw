@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手勢、
-ms.openlocfilehash: 8a91b2b79410809cde15cf3016d6d18f0ca95b57
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a26c7b9f51db2162daf2176e6d2125ffb6061c27
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104684701"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550928"
 ---
 # <a name="gestures"></a>軌跡
 
@@ -18,7 +18,7 @@ ms.locfileid: "104684701"
 
 - Windows Mixed Reality 的裝置，例如 HoloLens。 這會描述捏合運動 ( 「點擊」 ) 和點擊和按住手勢。
 
-  如需 HoloLens 手勢的詳細資訊，請參閱 [Windows Mixed Reality 手勢檔](https://docs.microsoft.com/windows/mixed-reality/gestures)。
+  如需 HoloLens 手勢的詳細資訊，請參閱 [Windows Mixed Reality 手勢檔](/windows/mixed-reality/gestures)。
 
   [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) 包裝 [UNITY XR。Wsa。GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html) ，以使用來自 HoloLens 裝置的 Unity 手勢事件。
 

@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/03/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 0a3089d272542e4021bc77b324255830c7cb9c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 767fd41287c68812d51826d32a99296b9cd33018
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690138"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550898"
 ---
 # <a name="roadmap"></a>藍圖
 
@@ -73,11 +73,11 @@ MRTK 團隊透過 [OpenXR](https://techcommunity.microsoft.com/t5/mixed-reality-
 **開發人員教育**
 
 我們已將開發人員檔從 Github 遷移至新的檔平臺！ 我們想要聽取您的意見反應，讓我們可以繼續改善開發人員的檔體驗。
-我們目前有 [MRTK 的教學](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials) 課程存在於不同的混合現實檔區段中。我們會將這些教學課程與 MRTK 檔的其餘部分一起遷移。 
+我們目前有 [MRTK 的教學](/windows/mixed-reality/develop/unity/tutorials) 課程存在於不同的混合現實檔區段中。我們會將這些教學課程與 MRTK 檔的其餘部分一起遷移。 
 
 **包裝**
 
-「 [混合現實」功能工具](https://docs.microsoft.com/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 是一種新方法，可讓開發人員探索、更新和新增混合現實功能套件至 Unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 我們想要在回應功能要求和 bug 時，對混合現實功能工具進行更新。
+「 [混合現實」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 是一種新方法，可讓開發人員探索、更新和新增混合現實功能套件至 Unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 我們想要在回應功能要求和 bug 時，對混合現實功能工具進行更新。
 
 ## <a name="backlog"></a>Backlog
 

@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 40863752e9c2d07100d2fa2ef6b5140d8cd2aeeb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: acba10baa64a535f36aca7aef8aeb0702304e7a1
+ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702424"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105555556"
 ---
 # <a name="input-simulation-service"></a>輸入模擬服務
 
@@ -104,7 +104,7 @@ ms.locfileid: "104702424"
 
 * *手手勢*：利用點擊和基本手勢模擬簡化的模型。
 
-   模擬 [HoloLens 互動模型](https://docs.microsoft.com/windows/mixed-reality/gestures)。
+   模擬 [HoloLens 互動模型](/windows/mixed-reality/gestures)。
 
    焦點是使用注視指標來控制。 「 *攻* 點」手勢用來與按鈕互動。
 
@@ -192,6 +192,14 @@ ms.locfileid: "104702424"
 1. 放開滑鼠按鍵以停止互動
 
 <iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+
+### <a name="raising-teleport-events"></a>引發傳送事件
+
+若要在輸入模擬中引發「傳送」事件，請在輸入模擬設定檔中設定手勢手勢設定，讓其中一個會執行 **「傳送」開始** 手勢，而另一個則執行「 **傳送」結束** 手勢。 **「傳送開始」** 手勢會顯示「傳送」指標，而「**傳送結束** gesure 將會完成傳送動作並移動使用者。
+
+產生的傳送的 y 位置取決於沿著 y 軸的相機位移。 在編輯器中，預設值為0，因此請使用 **Q** 和 **E** 鍵將它調整為適當的高度。
+
+![輸入模擬傳送設定](../images/input-simulation/InputSimulationTeleport.gif)
 
 ### <a name="motion-controller-interaction"></a>移動控制器互動
 

@@ -5,20 +5,20 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK 套件、
-ms.openlocfilehash: a231ae1d286541ae66ba4576b6eb11142a38170f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8a3752f6b8c3554aea32da347a4b7334fb1bd951
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701814"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550728"
 ---
 # <a name="mixed-reality-toolkit-and-unity-package-manager"></a>混合現實工具組和 Unity 封裝管理員
 
-從版本2.5.0 開始，使用 [混合現實功能工具](https://aka.ms/MRFeatureToolDocs)，Microsoft 混合現實工具組會在使用 unity 2019.4 和更新版本時，與 unity 封裝管理員 (UPM) 整合。
+從版本2.5.0 開始，使用 [混合現實功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)，Microsoft 混合現實工具組會在使用 unity 2019.4 和更新版本時，與 unity 封裝管理員 (UPM) 整合。
 
 ## <a name="using-the-mixed-reality-feature-tool"></a>使用 Mixed Reality 功能工具
 
-如「 [歡迎使用混合現實」功能](https://aka.ms/MRFeatureToolDocs) 所述，您可以使用 [此連結](https://aka.ms/MRFeatureTool)來下載工具。
+如「 [歡迎使用混合現實」功能](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 所述，您可以使用 [此連結](https://aka.ms/MRFeatureTool)來下載工具。
 
 > [!IMPORTANT]
 > 如果專案的資訊清單 `Microsoft Mixed Reality` 在區段中有一個專案 `scopedRegistries` ，建議您將它移除。

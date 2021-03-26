@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 8fa1671657a7cb057f88da24fe4cfe68b0401397
-ms.sourcegitcommit: 029f247a6c33068360d3a06f2a473a12586017e1
+ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/14/2021
-ms.locfileid: "100496036"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550128"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
@@ -25,7 +25,7 @@ ms.locfileid: "100496036"
   * 自訂資料通道是 XR_MSFT_holographic_remoting 擴充功能的一部分。 [OpenXR 遠端範例](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中顯示的範例。
 * 改進玩家與遠端端之間的同步處理。 這可讓您以動態方式變更姿勢和框架緩衝，以確保遠端轉譯的內容順暢地以預期的目標畫面播放速率到達顯示器。
 * 改進了可透過 Microsoft Store 使用的全像遠端播放播放程式效能。 在 HoloLens 2，播放現在會在每秒60個畫面格上執行。
-* 優化的空間介面網格傳輸，可透過遠端應用程式的 [SpatialSurfaceObserver](https://docs.microsoft.com/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 來進行查詢。
+* 優化的空間介面網格傳輸，可透過遠端應用程式的 [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 來進行查詢。
 * 修正呼叫 SpatialAnchorManager 方法或釋出錨點在中斷連接時造成例外狀況的問題。
 * 修正關閉 PlayerCoNtext 或 RemoteCoNtext 實例時，導致損毀的執行緒問題。
 * 許多其他 bug 修正和穩定性改進。

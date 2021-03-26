@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 02/28/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ab0928a0d919c4d3be13f25342f2244cf6afbc32
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4332f167b2cb532e858d8906654d008ea0dbb88d
+ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690178"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105555526"
 ---
 # <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Microsoft Mixed Reality 工具組2.6.1 版本資訊
 
@@ -37,7 +37,7 @@ ms.locfileid: "104690178"
 
 ### <a name="add-support-for-openxr"></a>新增對 OpenXR 的支援
 
-已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](../configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](https://aka.ms/openxr-unity-install) 。
+已新增 Unity OpenXR preview 套件和 Microsoft Mixed Reality OpenXR 封裝的初始支援。 如需詳細資訊，請參閱 [MRTK/XRSDK 開始使用頁面](../configuration/getting-started-with-mrtk-and-xrsdk.md)、 [Unity 的論壇文章](https://forum.unity.com/threads/unity-support-for-openxr-in-preview.1023613/)或 [Microsoft 的檔](/windows/mixed-reality/develop/unity/openxr-getting-started) 。
 
 > [!IMPORTANT]
 > Unity 中的 OpenXR 僅支援 Unity 2020.2 和更新版本。
@@ -66,11 +66,11 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 
 使用者現在可以使用「傳送」手勢，在所有平臺上四處移動其播放空間。 若要使用預設設定在 MR 裝置上傳送控制器，請使用操縱杆。 若要透過明確的手進行傳送，請與您的手朝外手勢，並將索引和捲動方塊朝外，以 curling 食指來完成傳送。 若要使用輸入模擬來傳送，請參閱更新的 [輸入模擬服務檔](../features/input-simulation/input-simulation-service.md)。
 
-  ![傳送手勢](images/handteleport.gif)
+  ![傳送手勢](../features/images/teleport/handteleport.gif)
 
 ### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>場景理解現在可在 MRTK 中作為實驗空間感知觀察者
 
-[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding)的實驗性支援是在 MRTK 2.6 中引進。 使用者可以將 HoloLens 2 的場景理解功能納入以 MRTK 為基礎的專案中的空間感知觀察者。 如需詳細資訊，請參閱 [場景理解檔](../features/spatial-awareness/scene-understanding.md) 。
+[場景理解](/windows/mixed-reality/scene-understanding)的實驗性支援是在 MRTK 2.6 中引進。 使用者可以將 HoloLens 2 的場景理解功能納入以 MRTK 為基礎的專案中的空間感知觀察者。 如需詳細資訊，請參閱 [場景理解檔](../features/spatial-awareness/scene-understanding.md) 。
 
 > [!IMPORTANT]
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
@@ -93,7 +93,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 ### <a name="hand-coach-graduated-from-experimental"></a>從實驗性開始的手勢
 
 這項功能現在已準備好搭配主線 MRTK 使用。
-  ![手動指導範例](https://docs.microsoft.com/windows/mixed-reality/design/images/handcoach/airtap.gif)
+  ![手動指導範例](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 ### <a name="dialog-controls-graduated-from-experimental"></a>從實驗性分級的對話方塊控制項
 
@@ -113,13 +113,13 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="reading-mode"></a>讀取模式
 
-已新增 HoloLens 2 的 [讀取模式](https://docs.microsoft.com/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) 支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上的投射圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
+已新增 HoloLens 2 的 [讀取模式](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) 支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上的投射圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
 
   ![Windows Mixed Reality 閱讀模式](images/WMRReadingMode.gif)
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>在 UWP 上支援3D 應用程式啟動器
 
-新增為 UWP 設定 [3d 應用程式啟動器](https://docs.microsoft.com/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) 的功能。 這項設定會在 [MRTK 組建] 視窗和 [MRTK] 專案設定的 [組建設定] 底下公開。 它會在 Unity 中的組建期間自動寫入至專案。
+新增為 UWP 設定 [3d 應用程式啟動器](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) 的功能。 這項設定會在 [MRTK 組建] 視窗和 [MRTK] 專案設定的 [組建設定] 底下公開。 它會在 Unity 中的組建期間自動寫入至專案。
 
   ![組建設定](images/ProjectBuildSettings.png)
 

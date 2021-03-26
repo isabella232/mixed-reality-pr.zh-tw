@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、'
-ms.openlocfilehash: 35f45966279f4e34609e4ea7eb40b801b4073682
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 46508a11c75caebd382993246b0ed56c3c4eeffb
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693345"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550648"
 ---
 # <a name="coding-guidelines"></a>程式碼撰寫指導方針
 
@@ -504,8 +504,8 @@ public enum Handedness
 
 產生字串檔案路徑時，特別是撰寫硬式編碼的字串路徑時，請執行下列動作：
 
-1. 盡可能使用 c # 的[ `Path` api](https://docs.microsoft.com/dotnet/api/system.io.path?view=netframework-4.8&preserve-view=true) ，例如 `Path.Combine` 或 `Path.GetFullPath` 。
-1. 使用/或 [`Path.DirectorySeparatorChar`](https://docs.microsoft.com/dotnet/api/system.io.path.directoryseparatorchar?view=netframework-4.8&preserve-view=true) ，而不是 \ 或 \\ \\ 。
+1. 盡可能使用 c # 的[ `Path` api](/dotnet/api/system.io.path?preserve-view=true&view=netframework-4.8) ，例如 `Path.Combine` 或 `Path.GetFullPath` 。
+1. 使用/或 [`Path.DirectorySeparatorChar`](/dotnet/api/system.io.path.directoryseparatorchar?preserve-view=true&view=netframework-4.8) ，而不是 \ 或 \\ \\ 。
 
 這些步驟可確保 MRTK 可在 Windows 和 Unix 系統上運作。
 
@@ -701,4 +701,4 @@ MRTK 程式碼基底的子集會使用 PowerShell 來進行管線基礎結構和
 
 ## <a name="see-also"></a>另請參閱
 
- [MSDN 的 c # 編碼慣例](https://docs.microsoft.com/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)
+ [MSDN 的 c # 編碼慣例](/dotnet/csharp/programming-guide/inside-a-program/coding-conventions)

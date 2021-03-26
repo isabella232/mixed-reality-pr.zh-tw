@@ -6,26 +6,26 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 9b95a0978522fb9fefaca3c4b96189131b88d0ec
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 61474ecf749b16c8c78352d9f28a6482bfa3334c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230845"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105549918"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
-從 Unity 2020.2 版開始，可以使用 Unity 套件管理員 (UPM) 來使用 Microsoft 的 Mixed Reality OpenXR 外掛程式套件。
+從 Unity 2020.2 版開始，可以使用 Unity 封裝管理員 (UPM) 提供 Microsoft 的 Mixed Reality OpenXR 外掛程式套件。
 
 ## <a name="prerequisites"></a>必要條件
 
 * Unity 2020.2 或更新版本
 * Unity OpenXR 外掛程式0.1.4 或更新版本
 * Visual Studio 2019 或更新版本
-* 在適用于 HoloLens 2 應用程式的 Unity 中安裝 **UWP** 平臺支援
+* 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
 
 > [!NOTE]
-> 如果您是在 Windows 電腦上建立 VR 應用程式，則不一定需要混合現實 OpenXR 外掛程式。 但是，如果您要自訂適用于 HP-UX 的控制器對應，或建立可在 HoloLens 2 和 VR 耳機上運作的應用程式，則您會想要安裝外掛程式。
+> 如果您是在 Windows 電腦上建立 VR 應用程式，則不一定需要混合現實 OpenXR 外掛程式。 但是，如果您要自訂適用于 HP 重設系的控制器對應，或建立可在 HoloLens 2 和 VR 耳機上運作的應用程式，則您會想要安裝外掛程式。
 
 ## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a>使用混合現實功能工具安裝 OpenXR
 
@@ -40,7 +40,7 @@ ms.locfileid: "102230845"
 1. 在 Unity 編輯器中，流覽至 [**編輯 > 專案設定**]
 2. 在設定清單中，選取 [ **XR 外掛程式管理**]
 3. 檢查 **啟動時初始化 XR** 和 **OpenXR (預覽)** 方塊
-4. 如果以 HoloLens 2 為目標，請確定您是在 UWP 平臺上，然後選取 [ **Microsoft HoloLens 功能組**]。
+4. 如果以 HoloLens 2 為目標，請確定您是在 UWP 平臺上，然後選取 [ **Microsoft HoloLens 功能集**]
 
 ![專案設定面板的螢幕擷取畫面，其中已醒目提示 XR 外掛程式管理的 Unity 編輯器中開啟](images/openxr-img-05.png)
 
@@ -53,23 +53,23 @@ ms.locfileid: "102230845"
 
 ## <a name="optimization"></a>Optimization
 
-如果您是針對 HoloLens 2 進行開發，請流覽至 **Mixed Reality> OpenXR > 套用適用于 hololens 2 的建議專案設定** ，以取得更佳的應用程式效能。
+如果您是針對 HoloLens 2 進行開發，請流覽至 **Mixed Reality> OpenXR > 套用建議的 HoloLens 2 專案設定** ，以取得更佳的應用程式效能。
 
 ![已選取 [OpenXR] 的 [混合現實] 功能表項目開啟的螢幕擷取畫面](images/openxr-img-08.png)
 
 ## <a name="try-out-the-unity-sample-scenes"></a>試用 Unity 範例場景
 
-若要利用一或多個範例，請從 **套件管理員** 安裝 [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) ：
+若要利用一或多個範例，請從 **封裝管理員** 安裝 [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) ：
 
-![Unity 編輯器中開啟的 Unity 套件管理員的螢幕擷取畫面，其中已醒目提示 AR Foundation](images/openxr-img-09.png)
+![Unity 封裝管理員在 Unity 編輯器中開啟，並醒目提示 AR Foundation 的螢幕擷取畫面](images/openxr-img-09.png)
 
 ### <a name="hololens-2-samples"></a>HoloLens 2 範例
 
-1. 在 Unity 編輯器中，流覽至 **Window > 套件管理員**
+1. 在 Unity 編輯器中，流覽至 [ **Window >] 封裝管理員**
 2. 在套件清單中，選取 **Mixed Reality OpenXR 外掛程式**
 3. 在 **範例** 清單中找出範例，然後選取 [匯 **入**]
 
-![Unity 編輯器中開啟的 Unity 套件管理員的螢幕擷取畫面，其中已選取混合現實 OpenXR 外掛程式，並醒目提示範例匯入按鈕](images/openxr-img-03.png)
+![Unity 封裝管理員在 Unity 編輯器中開啟的螢幕擷取畫面，其中已選取混合的現實 OpenXR 外掛程式，並醒目提示範例匯入按鈕](images/openxr-img-03.png)
 
 <!-- ### For all other OpenXR samples
 
@@ -91,7 +91,7 @@ MRTK-Unity 支援從2.5.3 版本開始的 Mixed Reality OpenXR 外掛程式。
 
     ![在偵測器的混合現實工具組元件中切換 MRTK 設定的螢幕擷取畫面](images/openxr-img-11.png)
 
-    1. 如需有關 [遷移至 OpenXR 的深入資訊](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)，請參閱 MRTK 檔。
+    1. 如需有關 [遷移至 OpenXR 的深入資訊](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)，請參閱 MRTK 檔。
 
 > [!NOTE]
 > 從舊版 MRTK 進行升級時，請確定 **資產/MixedRealityToolkit. 產生/link.xml** 檔案中有下列這一行：
@@ -108,7 +108,7 @@ MRTK-Unity 支援從2.5.3 版本開始的 Mixed Reality OpenXR 外掛程式。
 
 ## <a name="have-feedback"></a>有任何意見反應嗎？
 
-OpenXR 仍是實驗性的，因此我們會感謝您提供給我們的意見反應，以協助您更妥善地進行。 您可以透過 **Microsoft** [](https://aka.ms/unityforums)  +  **OpenXR** 和 **HoloLens 2** 或 **Windows Mixed Reality** 來標記您的論壇貼文，以在 Unity 論壇中找到我們。
+OpenXR 仍是實驗性的，因此我們會感謝您提供給我們的意見反應，以協助您更妥善地進行。 您可以使用 **Microsoft** OpenXR 標記您的論壇文章，並 [](https://aka.ms/unityforums)  +   **HoloLens 2** 或 **Windows Mixed Reality**，在 Unity 論壇中找到我們。
 
 ## <a name="see-also"></a>另請參閱
 

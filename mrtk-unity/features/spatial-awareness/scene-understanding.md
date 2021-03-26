@@ -5,16 +5,16 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 03/02/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: 991c8152baa138d241b0454d08de267eeaefcb05
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 404145b37a97eb9bd67d39f3db4060762044f772
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696155"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550948"
 ---
 # <a name="scene-understanding"></a>場景理解
 
-[場景理解](https://docs.microsoft.com/windows/mixed-reality/scene-understanding) 會傳回場景實體的語義標記法，以及其在 __HoloLens 2__ 的幾何形式 (HoloLens 第1代不支援) 。
+[場景理解](/windows/mixed-reality/scene-understanding) 會傳回場景實體的語義標記法，以及其在 __HoloLens 2__ 的幾何形式 (HoloLens 第1代不支援) 。
 
 這項技術的一些預期使用案例如下：
 * 將物件放在特定種類的最接近表面 (例如牆壁和樓層) 
@@ -87,7 +87,7 @@ ms.locfileid: "104696155"
 
 請注意，有一些 pit 正在對觀察者進行查詢。 提取要求的設定不正確會導致您的事件裝載中未包含預期的資料。 例如，如果其中一個不要求四邊形，則不會出現任何遮蔽 mask 紋理。 如同明智的，如果觀察者未設定為要求網格，則不會出現任何世界網格。 `DemoSceneUnderstandingController`腳本會處理其中一些相依性，但並非全部。
 
-您可以透過 [裝置入口網站](https://docs.microsoft.com/windows/mixed-reality/using-the-windows-device-portal) 存取已儲存的場景檔案 `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` 。 這些場景檔案可以在編輯器中使用，方法是在偵測器中找到的觀察者設定檔中指定它們。
+您可以透過 [裝置入口網站](/windows/mixed-reality/using-the-windows-device-portal) 存取已儲存的場景檔案 `User Folders/LocalAppData/[APP_NAME]/LocalState/PREFIX_yyyyMMdd_hhmmss.bytes` 。 這些場景檔案可以在編輯器中使用，方法是在偵測器中找到的觀察者設定檔中指定它們。
 
 ![位元組檔案裝置入口網站位置](../images/spatial-awareness/BytesInDevicePortal.png)
 

@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 15762ff7f12784b5132b80857c3751a18f9533b8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6884ae4a96731289fffc87cf35b1009e33df269c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694425"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550148"
 ---
 # <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>混合的現實和 HoloLens 鍵盤協助程式類別
 
 MRTK 提供數個實驗性 helper 元件，可協助您從 [系統鍵盤](../ux-building-blocks/system-keyboard.md)啟動和讀取文字。
 
-請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens 上的鍵盤 (第1代) 則會支援 GGV<sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>。 此外，從編輯器將 [Unity 遠端](../tools/holographic-remoting.md) 執行到 HoloLens 時，系統鍵盤也不會顯示。
+請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens 上的鍵盤 (第1代) 則會支援 GGV<sup>[1](/windows/mixed-reality/gaze)</sup>。 此外，從編輯器將 [Unity 遠端](../tools/holographic-remoting.md) 執行到 HoloLens 時，系統鍵盤也不會顯示。
 
 ## <a name="mixedrealitykeyboard"></a>MixedRealityKeyboard
 

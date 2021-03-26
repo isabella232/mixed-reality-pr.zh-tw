@@ -6,17 +6,17 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 7268a4df9c7fce03029937c72540ed274574067d
-ms.sourcegitcommit: 8c3af63fb49494f75c8ab46236fc3dd8533c1e9d
+ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99606113"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550378"
 ---
 # <a name="voice-input-in-unity"></a>Unity 中的語音輸入
 
 > [!CAUTION]
-> 開始之前，請考慮使用適用于認知語音服務 SDK 的 Unity 外掛程式。 此外掛程式具有更佳的語音精確度結果，並可輕鬆存取語音轉換文字解碼，以及快速的語音轉換功能，例如對話方塊、意圖型互動、轉譯、文字轉換語音，以及自然語言的語音辨識。 若要開始使用，請參閱 [範例和檔](https://docs.microsoft.com/azure/cognitive-services/speech-service/quickstart-csharp-unity)集。
+> 開始之前，請考慮使用適用于認知語音服務 SDK 的 Unity 外掛程式。 此外掛程式具有更佳的語音精確度結果，並可輕鬆存取語音轉換文字解碼，以及快速的語音轉換功能，例如對話方塊、意圖型互動、轉譯、文字轉換語音，以及自然語言的語音辨識。 若要開始使用，請參閱 [範例和檔](/azure/cognitive-services/speech-service/quickstart-csharp-unity)集。
 
 Unity 公開三種將 [語音輸入](../../design/voice-input.md) 新增至 Unity 應用程式的方式，其中前兩個是 PhraseRecognizer 類型：
 * 會為 `KeywordRecognizer` 您的應用程式提供要接聽的字串命令陣列
@@ -221,7 +221,7 @@ private void DictationRecognizer_DictationHypothesis(string text)
 
 **DictationComplete**
 
-此事件會在辨識器停止時引發，不論是從停止 ( # A1 呼叫、發生超時或其他錯誤。
+此事件會在辨識器停止時引發，不論是從停止 () 呼叫、發生超時或其他錯誤。
 
 首先，訂閱 `DictationComplete` 事件：
 

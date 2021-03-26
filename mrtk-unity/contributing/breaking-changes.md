@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 264be443544b51f453ed0001945b488698fb46f9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 579c22f1081b552a8e16d6d474b9133ba81b051f
+ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696235"
+ms.lasthandoff: 03/25/2021
+ms.locfileid: "105550718"
 ---
 # <a name="breaking-changes"></a>重大變更
 
@@ -81,6 +81,6 @@ MRTK 的取用者相依于擁有穩定的發行對發行 API 介面，讓它們�
 
 ### <a name="other-examples-of-things-that-could-help-in-the-future"></a>未來可能會有説明的其他專案範例
 
-- [Internal 關鍵字](https://docs.microsoft.com/dotnet/csharp/language-reference/keywords/internal)的使用方式。
+- [Internal 關鍵字](/dotnet/csharp/language-reference/keywords/internal)的使用方式。
   如此一來，我們就可以在自己的元件內擁有共用程式碼 (以便減少程式碼重複) ，而不需要對外部取用者公開任何東西。
 - 建立「內部」命名空間 (例如) MixedReality，我們會在其中公開記載該內部命名空間內所含的任何事物，隨時可能會變更，並可加以移除等等。這與 c + + 標頭程式庫使用：：內部命名空間來隱藏其實作為詳細資料的方式類似。
