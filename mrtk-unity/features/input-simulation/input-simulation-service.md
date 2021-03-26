@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: acba10baa64a535f36aca7aef8aeb0702304e7a1
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+ms.openlocfilehash: 16f8ad6de5b806630bb676e87a082f9acb825d63
+ms.sourcegitcommit: 14456a4f37ee3bfd122ae8b3110f0f18f8166685
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 03/25/2021
-ms.locfileid: "105555556"
+ms.locfileid: "105556866"
 ---
 # <a name="input-simulation-service"></a>輸入模擬服務
 
@@ -86,7 +86,7 @@ ms.locfileid: "105555556"
 
 您也可以在 [工具] 視窗中明確設定相機位置和旋轉角度。 您可以使用 [ **重設** ] 按鈕，將相機重設為其預設值。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Z7L4I1ET7GU" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ## <a name="controller-simulation"></a>控制器模擬
 
@@ -132,7 +132,7 @@ ms.locfileid: "105555556"
 * **預設控制器距離** 是來自相機的控制器初始距離。 按一下 [ **重設** ] 按鈕控制器也會將控制器放在這個距離。
 * **控制器抖動量** 會將隨機動作新增至控制器。 這項功能可用來模擬裝置上不正確的控制器追蹤，並確保互動適用于雜訊的輸入。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/uRYfwuqsjBQ" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="hand-gestures"></a>手勢
 
@@ -155,7 +155,7 @@ ms.locfileid: "105555556"
 4. 使用您的滑鼠移動物件
 5. 放開滑鼠按鍵以停止互動
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/rM0xaHam6wM" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="two-hand-manipulation"></a>雙手勢操作
 
@@ -170,7 +170,7 @@ ms.locfileid: "105555556"
 1. 以另一種方式重複此程式，在第二個位置抓取相同的物件。
 1. 現在這兩個手都會抓取相同的物件，您可以將其中一個物件移至兩個執行中的操作。
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/Qol5OFNfN14" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="ggv-gaze-gesture-and-voice-interaction"></a>GGV (注視、手勢和語音) 互動
 
@@ -191,7 +191,7 @@ ms.locfileid: "105555556"
 1. 使用您的滑鼠移動物件
 1. 放開滑鼠按鍵以停止互動
 
-<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen />
+<iframe width="560" height="315" src="https://www.youtube.com/embed/6841rRMdqWw" class="center" frameborder="0" allow="accelerometer; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 
 ### <a name="raising-teleport-events"></a>引發傳送事件
 
