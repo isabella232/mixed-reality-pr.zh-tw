@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 2ceb5f2b58cbd1571b2d9f4de79acfe45779bfea
-ms.sourcegitcommit: be7473bbebc1872d8c9df6f2da837efd3279dee6
+ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/15/2021
-ms.locfileid: "98226397"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636220"
 ---
 # <a name="focus-point-in-unity"></a>Unity 中的焦點
 
@@ -20,7 +20,7 @@ ms.locfileid: "98226397"
 
 使用 [焦點](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 來提供 HoloLens，並提供有關如何最好穩定目前顯示的全像投影的提示。
 
-如果您想要在 Unity 中設定焦點點，則必須使用 *HolographicSettings. SetFocusPointForFrame ( # B1* 來設定每個框架。 如果未設定框架的焦點點，則會使用預設穩定平面。
+如果您想要在 Unity 中設定焦點，必須使用 *HolographicSettings. SetFocusPointForFrame ()* 來設定每個框架。 如果未設定框架的焦點點，則會使用預設穩定平面。
 
 > [!NOTE]
 > 依預設，新的 Unity 專案會設定「啟用深度緩衝區共用」選項。  使用此選項時，在沉浸式桌上型耳機或執行 Windows 10 2018 年4月更新 (RS4) 或更新版本的 HoloLens 上執行的 Unity 應用程式，會將您的深度緩衝區提交至 Windows，以自動優化全像影像穩定性，而不需要您的應用程式指定焦點點：
@@ -49,7 +49,7 @@ void Update()
 ```
 
 > [!NOTE]
-> 上述的簡單程式碼可能會降低全像物件在使用者背後的焦點物件的穩定性。 我們通常會建議您設定 **[啟用深度緩衝區共用](camera-in-unity.md#sharing-your-depth-buffers-with-windows)** ，而不是手動指定焦點點。
+> 上述的簡單程式碼可能會降低全像物件在使用者背後的焦點物件的穩定性。 我們通常會建議您設定 **[啟用深度緩衝區共用](camera-in-unity.md#sharing-depth-buffers)** ，而不是手動指定焦點點。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

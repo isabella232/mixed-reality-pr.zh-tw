@@ -7,19 +7,18 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: c80074ffec3e1f90d5dfe2ea2e64a379b59c5af6
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 61bfc7c7e727efccf401082c6fbbedb539d9b2a1
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550458"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636410"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
 在本教學課程中，您將了解如何建立新的 Unity 專案、將其設定為<a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">混合實境工具組 (MRTK)</a>開發之用，以及匯入 MRTK。 您也將逐步了解如何設定和建置基本 Unity 場景，並將其從 Visual Studio 部署到 HoloLens 2。 將其部署到 HoloLens 2 之後，您應該會看到一個空間對應網格，其中涵蓋 HoloLens 所感知到的介面。 此外，您應該會看到雙手和手指上有用於手部追蹤的指標，還有用於留意應用程式效能的畫面播放速率計數器。
 
 ![MRTK](../../../develop/images/Unity_MRTK_MRFT_Flow.png)
-
 
 ## <a name="objectives"></a>目標
 
@@ -89,7 +88,7 @@ ms.locfileid: "105550458"
 
 ## <a name="importing-the-mixed-reality-toolkit"></a>匯入混合實境工具組
 
-若要將混合現實工具組匯入 Unity 專案中，您必須使用「 [混合現實」功能工具](//windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) ，讓開發人員能夠探索、更新和新增混合現實功能套件至 unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。
+若要將混合現實工具組匯入 Unity 專案中，您必須使用「 [混合現實」功能工具](../welcome-to-mr-feature-tool.md) ，讓開發人員能夠探索、更新和新增混合現實功能套件至 unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。
 
 請從 [Microsoft 下載中心](https://aka.ms/MRFeatureTool)下載最新版本的混合現實功能工具，下載完成後，請將檔案解壓縮，並將其儲存到您的桌面。
 

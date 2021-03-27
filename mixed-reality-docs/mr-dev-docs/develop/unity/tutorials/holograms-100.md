@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: mixed reality、Windows Mixed Reality、HoloLens、沉浸式、vr、mr、入門、全息圖、學術、教學課程、混合現實學術、unity、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 999ab7dc87a639f10aad9eaf2a7ef8de2cf92633
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: c764c28cea812314d9c83136fe771c5b4077adc5
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730355"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636170"
 ---
 # <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (第1代) 基本概念100：開始使用 Unity
 
@@ -30,7 +30,7 @@ ms.locfileid: "104730355"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 * [已安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦。
 
@@ -77,7 +77,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 第三，讓我們考慮 Unity 中的近接裁剪平面，並防止在使用者接近使用者的情況下，將物件呈現太接近使用者眼睛。
 
-**針對 hololens 應用程式**，接近的裁剪平面可以設定為 [hololens 建議](../camera-in-unity.md#clip-planes) 的0.85 計量。
+**針對 hololens 應用程式**，接近的裁剪平面可以設定為 [hololens 建議](../camera-in-unity.md#using-clipping-planes) 的0.85 計量。
 
 1. 當 **主要攝影機** 仍在 [階層]**面板中** 選取時，請在 [偵測 **器**] 面板中尋找 **相機** 元件，並將 **接近的剪輯平面** 欄位從預設的 **0.3** 變更為 HoloLens 建議的 **0.85**。
 

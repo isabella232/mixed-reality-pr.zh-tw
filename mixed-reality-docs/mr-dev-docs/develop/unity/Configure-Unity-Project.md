@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 07/29/2020
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能
-ms.openlocfilehash: 47ca4041e997d623d08fa1732f7039c655810bfc
-ms.sourcegitcommit: b0fb5497bf9f280ba5610c30e4b9e5aa1cda52c9
+ms.openlocfilehash: 5889a76941c36e24f600df5a459440d93bdd4c64
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104837412"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636390"
 ---
 # <a name="configuring-your-project-without-mrtk"></a>在沒有 MRTK 的情況下設定專案
 
@@ -117,7 +117,7 @@ HoloLens 有行動類別 GPU。 如果您的應用程式是以 HoloLens 為目�
 2. 在 [偵測 **器** ] 面板中，將轉換 **位置** 設定為 **0、0、0** ，讓使用者的標頭位置開始于 Unity world 來源。
 3. 將 **清除旗標** 變更為 **純色**。
 4. 將 **背景** 色彩變更為 **RGBA 0、0、0、0**。 在 HoloLens 中，黑色呈現為透明。
-5. 變更 **裁剪平面-接近** [HoloLens 建議](camera-in-unity.md#clip-planes) 的 0.85 (計量) 。
+5. 變更 **裁剪平面-接近** [HoloLens 建議](camera-in-unity.md#using-clipping-planes) 的 0.85 (計量) 。
 
 ![在 Unity 編輯器中開啟之偵測器索引標籤的螢幕擷取畫面](images/wmr-config-img-11.png)<br>
 *Unity 攝影機設定*

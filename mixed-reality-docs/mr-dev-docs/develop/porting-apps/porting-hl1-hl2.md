@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, MRTK, MRTK 第 2 版, HoloLens 2, unity, 移植, HoloLens (第 1 代), 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 移轉, 最佳做法, ARM
-ms.openlocfilehash: 6f3c12bf54a4f4339c54908a47369746e0d743a4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 52055f35df05c2cc69e960c681598adac7bd6f1c
+ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759129"
+ms.lasthandoff: 03/27/2021
+ms.locfileid: "105636230"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>將 HoloLens (第1代) 應用程式移植到 HoloLens 2
 
@@ -107,7 +107,7 @@ HoloLens (第 1 代) 會在 x86 處理器上執行應用程式，HoloLens 2 則�
     - 這麼做可減少日後需要內嵌和更新 MRTK。
 - 檢閱和探索 MRTK 中提供的場景範例，尤其是 HandInteractionExamples.scene。
 - 重建有四色、collider 和 TextMeshPro 文字的畫布式 UI。
-- 啟用[深度緩衝區共用](../unity/camera-in-unity.md#sharing-your-depth-buffers-with-windows)或[設定焦點點](../unity/focus-point-in-unity.md)；最好使用 16 位元深度緩衝區以提升效能。 在轉譯色彩時，請務必同時轉譯深度。 對於透明和文字 gameobject，Unity 通常不會寫入深度。 
+- 啟用[深度緩衝區共用](../unity/camera-in-unity.md#sharing-depth-buffers)或[設定焦點點](../unity/focus-point-in-unity.md)；最好使用 16 位元深度緩衝區以提升效能。 在轉譯色彩時，請務必同時轉譯深度。 對於透明和文字 gameobject，Unity 通常不會寫入深度。 
 - 設定單一階段執行個體化轉譯路徑。
 - 使用 [Hololens 2 的 MRTK 組態設定檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md#hololens-2-profile)
 
