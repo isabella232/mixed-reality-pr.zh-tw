@@ -218,7 +218,7 @@
       items:
         - name: 共用體驗
           href: unity/shared-experiences-in-unity.md
-        - name: 定位相機
+        - name: Unity 中的相片攝影機
           href: unity/locatable-camera-in-unity.md
         - name: 傳統型應用程式中的全像全像遠端
           href: unity/holographic-remoting-desktop.md
