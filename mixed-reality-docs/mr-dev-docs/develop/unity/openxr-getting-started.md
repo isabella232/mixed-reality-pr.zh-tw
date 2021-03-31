@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 61474ecf749b16c8c78352d9f28a6482bfa3334c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6e300c6117e04e2a49b060bcd7a6d268204f14da
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549918"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937446"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
@@ -19,19 +19,48 @@ ms.locfileid: "105549918"
 
 ## <a name="prerequisites"></a>必要條件
 
-* Unity 2020.2 或更新版本
-* Unity OpenXR 外掛程式0.1.4 或更新版本
+* Unity 2020.3 LTS 或更新版本
+* Unity OpenXR 外掛程式1.0.3 或更新版本
 * Visual Studio 2019 或更新版本
 * 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
 
 > [!NOTE]
 > 如果您是在 Windows 電腦上建立 VR 應用程式，則不一定需要混合現實 OpenXR 外掛程式。 但是，如果您要自訂適用于 HP 重設系的控制器對應，或建立可在 HoloLens 2 和 VR 耳機上運作的應用程式，則您會想要安裝外掛程式。
 
-## <a name="installing-openxr-with-the-mixed-reality-feature-tool"></a>使用混合現實功能工具安裝 OpenXR
+<!-- ## Setting up your project with MRTK
+
+MRTK for Unity provides a cross-platform input system, foundational components, and common building blocks for spatial interactions. MRTK version 2 intends to speed up application development for Microsoft HoloLens, Windows Mixed Reality immersive (VR) headsets, and OpenVR platform. The project is aimed at reducing barriers to entry, creating mixed reality applications, and contributing back to the community as we all grow.
+
+> [!div class="nextstepaction"]
+> [Set up your project using MRTK](tutorials/mr-learning-base-01.md)
+
+Take a look at [MRTK's documentation](/windows/mixed-reality/mrtk-unity) for more feature details. -->
+
+## <a name="manual-setup-without-mrtk"></a>手動設定而不 MRTK
 
 使用新的混合現實功能工具應用程式來安裝 OpenXR 外掛程式。 遵循 [安裝和使用](welcome-to-mr-feature-tool.md) 方式的指示，然後在混合現實工具組類別中選取 **Mixed reality OpenXR 外掛程式** 套件：
 
 ![醒目提示 open xr 外掛程式的混合現實功能工具套件視窗](images/feature-tool-openxr.png)
+
+## <a name="setting-your-build-target"></a>設定您的組建目標
+
+如果您的目標是 Desktop VR，建議您在新的 Unity 專案上使用預設選取的電腦獨立平臺：
+
+![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示 [電腦]、[Mac & 獨立平臺](images/wmr-config-img-3.png)
+
+如果您的目標是 HoloLens 2，則必須切換至通用 Windows 平臺：
+
+1.  選取 [檔案 **> 組建設定 ...** ]
+2.  選取 [平臺] 清單中的 [**通用 Windows 平臺**]，然後選取 [**切換平臺**]
+3.  將 **架構** 設定為 **ARM 64**
+4.  將 **目標裝置** 設定為 **HoloLens**
+5.  將 **組建類型** 設定為 **D3D**
+6.  將 **UWP SDK** 設定為 **最新安裝**
+7.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
+
+![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示通用 Windows 平臺](images/wmr-config-img-4.png)
+
+設定您的平臺之後，您需要讓 Unity 知道在匯出時建立一個 [沉浸式視圖](../../design/app-views.md) ，而不是2d 視圖。
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>設定 OpenXR 的 XR 外掛程式管理
 
@@ -39,10 +68,16 @@ ms.locfileid: "105549918"
 
 1. 在 Unity 編輯器中，流覽至 [**編輯 > 專案設定**]
 2. 在設定清單中，選取 [ **XR 外掛程式管理**]
-3. 檢查 **啟動時初始化 XR** 和 **OpenXR (預覽)** 方塊
+3. 檢查 Startup 和 **OpenXR** 方塊的 **Initialize XR**
 4. 如果以 HoloLens 2 為目標，請確定您是在 UWP 平臺上，然後選取 [ **Microsoft HoloLens 功能集**]
 
 ![專案設定面板的螢幕擷取畫面，其中已醒目提示 XR 外掛程式管理的 Unity 編輯器中開啟](images/openxr-img-05.png)
+
+## <a name="optimization"></a>Optimization
+
+如果您是針對 HoloLens 2 進行開發，請流覽至 **Mixed Reality> OpenXR > 套用建議的 HoloLens 2 專案設定** ，以取得更佳的應用程式效能。
+
+![已選取 [OpenXR] 的 [混合現實] 功能表項目開啟的螢幕擷取畫面](images/openxr-img-08.png)
 
 > [!IMPORTANT]
 > 如果您在 OpenXR 外掛程式旁邊看到紅色警告圖示 **(Preview)**，請按一下圖示並選取 [ **全部修正** ]，然後再繼續。 Unity 編輯器可能需要自行重新開機，變更才會生效。
@@ -51,17 +86,7 @@ ms.locfileid: "105549918"
 
 您現在已經準備好開始使用 Unity 中的 OpenXR 進行開發！  繼續進行下一節，以瞭解如何使用 OpenXR 範例。
 
-## <a name="optimization"></a>Optimization
-
-如果您是針對 HoloLens 2 進行開發，請流覽至 **Mixed Reality> OpenXR > 套用建議的 HoloLens 2 專案設定** ，以取得更佳的應用程式效能。
-
-![已選取 [OpenXR] 的 [混合現實] 功能表項目開啟的螢幕擷取畫面](images/openxr-img-08.png)
-
 ## <a name="try-out-the-unity-sample-scenes"></a>試用 Unity 範例場景
-
-若要利用一或多個範例，請從 **封裝管理員** 安裝 [ARFoundation 4.0 +](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html#installing-ar-foundation) ：
-
-![Unity 封裝管理員在 Unity 編輯器中開啟，並醒目提示 AR Foundation 的螢幕擷取畫面](images/openxr-img-09.png)
 
 ### <a name="hololens-2-samples"></a>HoloLens 2 範例
 

@@ -6,35 +6,38 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 1c9e185c63d3efef66cdc2782d8d8d4e3692c705
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103623628"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105937424"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>混合現實 OpenXR Unity 中支援的功能
 
-**Mixed Reality OpenXR 外掛程式** 套件是 Unity **OpenXR 外掛程式** 的延伸模組，並支援 HoloLens 2 和 Windows Mixed Reality 耳機的功能套件。 繼續之前，請確定您已安裝 **unity 2020.2** 或更新版本、 **OpenXR 外掛程式版本 0.1.3** 或更新版本，且您的 Unity 專案已 [設定 OpenXR](openxr-getting-started.md)。
+**Mixed Reality OpenXR 外掛程式** 套件是 Unity **OpenXR 外掛程式** 的延伸模組，並支援 HoloLens 2 和 Windows Mixed Reality 耳機的功能套件。 繼續之前，請確定您的 Unity 專案已 [設定為 OpenXR](openxr-getting-started.md)。
 
 ## <a name="whats-supported"></a>支援的項目
 
 目前支援下列功能：
 
 * 支援 HoloLens 2 的 UWP 應用程式，並針對 HoloLens 2 應用程式模型進行優化。
-* 支援 Win32 VR 應用程式，適用于具有最新控制器設定檔的 Windows Mixed Reality 耳機以及全像應用程式遠端處理。
+* 支援適用于 Windows Mixed Reality 耳機的 Win32 VR 應用程式，具有最新的控制器設定檔和全像應用程式遠端。
 * 使用錨點和未系結空間的世界規模追蹤。
-* [錨點儲存體 API，以將錨點保存](spatial-anchors-in-unity.md) 到 HoloLens 2 本機儲存體。
+* [錨點儲存體 API，以將錨點保存](spatial-anchors-in-unity.md) 到 HoloLens 2 的本機儲存體。
 * [移動控制器和手互動](#motion-controller-and-hand-interactions)，包括新的 HP 回音卡控制器。
 * 使用26個接點和聯合半徑輸入，以明確表述的手勢進行追蹤。
-* HoloLens 2 上的眼睛互動。
-* 在 HoloLens 2 上尋找相片/影片 (PV) 攝影機。
-* 混合現實捕捉使用透過 PV 攝影機的第三種視覺呈現。
-* 支援「 [Play」至 HoloLens 2 （含全像遠端應用程式](#holographic-remoting-in-unity-editor-play-mode)），讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
+* HoloLens 2 上的眼睛注視互動。
+* HoloLens 2 上尋找 (PV) 攝影機的相片/影片。
+* 混合實境擷取使用透過 PV 攝影機的第三種眼睛呈現。
+* 支援「播放」以使用全像「 [遠端處理」應用程式 HoloLens 2](#holographic-remoting-in-unity-editor-play-mode)，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
 * 透過 [MRTK OpenXR 提供者支援](openxr-getting-started.md#using-mrtk-with-openxr-support)，與 MRTK Unity 2.5.3 和更新版本相容。
 * 與 Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 或更新版本相容。
 *  (在 0.1.3) 中新增的功能，可支援從組建和部署的 Windows 獨立應用程式進行傳統型 [應用程式](holographic-remoting-desktop.md) 全像開發。
 *  (在0.1.4 中新增) 透過 SpatialGraphNode 支援 HoloLens2 上的[QR 代碼追蹤](#qr-codes)
+*  (在0.2.0 中新增) 在全像遠端處理中支援 **錨點**
+*  (在0.2.0 中新增) 支援 **手接頭和手形網格追蹤**
+*  (在0.2.0 中新增) 支援使用 **ARPlaneSubsystems** 進行平面偵測，並使用 **ARRaycastManager** 來放置全像影像。
 
 ## <a name="holographic-remoting-setup"></a>全像遠端設定
 
@@ -46,7 +49,7 @@ ms.locfileid: "103623628"
 
 ## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity 編輯器 play 模式的全像遠端功能
 
-在 Visual Studio 專案中建立 UWP Unity 專案，然後將它封裝並部署到 HoloLens 2 裝置，可能需要一些時間。 其中一個解決方法是啟用全像「全像」編輯器遠端功能，讓您可以使用「播放」模式，將 c # 腳本直接透過您的網路上的 HoloLens 2 裝置來進行。 此案例可避免建立 UWP 套件並將其部署至遠端裝置的額外負荷。
+在 Visual Studio 專案中建立 UWP Unity 專案，然後將它封裝並部署到 HoloLens 2 裝置，可能需要一些時間。 其中一個解決方法是啟用全像「全像」編輯器遠端功能，讓您透過網路直接使用「播放」模式來將 c # 腳本進行 HoloLens 2 裝置的偵測。 此案例可避免建立 UWP 套件並將其部署至遠端裝置的額外負荷。
 
 1. 遵循全像全像[遠端設定](#holographic-remoting-setup)的步驟
 2. 開啟 [ **編輯-> 專案設定**]，流覽至 **XR 外掛程式管理**，然後選取 [ **Windows Mixed Reality 功能集** ] 方塊：
@@ -112,9 +115,6 @@ HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每�
 
 下列問題和遺漏的功能都是已知的混合現實 OpenXR 外掛程式 **版本 0.1.0**。 我們正在處理這些問題，並將在即將推出的版本中發行修正程式和新功能。
 
-* 尚不支援 **ARPlaneSubsystem** 。 HoloLens 2 也不支援 **ARPlaneManager**、 **ARRaycastManager** 和相關的 API，例如 **ARAnchorManager. AttachAnchor** 。
-* 目前的「全像」遠端功能不支援 **錨定持續** 性，但不久的未來將會推出。
-* 目前尚不支援 **手形** 追蹤和 **XRMeshSubsystem** 。
 * **Azure 空間錨點** 支援即將在未來版本中推出。
 * **ARM64** 是 HoloLens 2 應用程式唯一支援的平臺。 **ARM** 平臺即將在未來版本中推出。
 
