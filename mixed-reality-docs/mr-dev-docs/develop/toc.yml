@@ -168,11 +168,13 @@
                   href: unity/tutorials/mr-azure-301.md
     - name: 設定您的專案
       items:
-        - name: MRTK 簡介
-          href: unity/mrtk-getting-started.md
-        - name: 在沒有 MRTK 的情況下設定專案
-          href: unity/configure-unity-project.md
-        - name: 使用 Mixed Reality OpenXR 外掛程式
+        - name: 選擇 Unity 版本和 XR 外掛程式
+          href: unity/choosing-unity-version.md
+        - name: 使用舊版內建 XR 支援
+          href: unity/legacy-xr-support.md
+        - name: 使用 Windows XR 外掛程式
+          href: unity/windows-xr-plugin.md
+        - name: 使用 OpenXR 外掛程式
           href: unity/openxr-getting-started.md
         - name: OpenXR 外掛程式支援的功能
           href: unity/openxr-supported-features.md

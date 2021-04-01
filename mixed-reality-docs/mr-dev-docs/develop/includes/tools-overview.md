@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: ceef0ce4d62201bfa961a7a181c9083a6f1882e1
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: d7e248788d4c4976acbb9ff23177d354894f57dd
+ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730228"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105958329"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -17,13 +17,10 @@ ms.locfileid: "104730228"
 > [!NOTE]
 >  如果您使用 Unity 2020 LTS，混合現實支援可供 HoloLens 2 開發之用。 不過，目前有一些已知問題。 這將會在今年稍後成為建議的 Unity 版本。 
 
-<!-- See [Choosing a Unity version and XR plugin](../unity/choosing-unity-version-xr.md) to learn what Mixed Reality support is available in different Unity engine and XR plugin versions.  -->
+請參閱 [選擇 unity 版本和 XR 外掛程式](../unity/choosing-unity-version.md) ，以瞭解有哪些混合現實支援可在不同的 Unity 引擎和 XR 外掛程式版本中使用。
 
 > [!div class="nextstepaction"]
 > [下載 Unity 中樞](https://unity3d.com/get-unity/download)
-
-> [!div class="nextstepaction"]
-> [下載 Unity 2019.4 LTS](https://unity3d.com/unity/qa/lts-releases?version=2019.4)
 
 安裝 Unity 時，請務必檢查「 **平臺**」底下的下列元件。
 * **通用 Windows 平臺組建支援** 
