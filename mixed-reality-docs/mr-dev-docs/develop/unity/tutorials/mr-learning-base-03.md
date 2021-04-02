@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 空間感知
 ms.localizationpriority: high
-ms.openlocfilehash: 994d2d42d8b6939496e84a730c4a73eff39c72e3
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 29292a5d9d6297dd90b0792daf105b4934f1b056
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550318"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983358"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.設定 MRTK 設定檔
 
@@ -20,16 +20,18 @@ ms.locfileid: "105550318"
 
 在本教學課程中，您將了解如何自訂和設定 MRTK 設定檔。
 
-<a href="/windows/mixed-reality/mrtk-docs/features/profiles/profiles.md" target="_blank">MRTK 設定檔</a>是巢狀設定檔的樹狀結構，其構成了 MRTK 系統和功能應如何初始化的組態設定資訊。 最上層設定檔 (組態設定檔) 包含每個主要核心系統的巢狀設定檔。 每個巢狀設定檔都是設計來設定其對應系統的行為。
+<a href="/windows/mixed-reality/mrtk-unity/features/profiles/profiles.md" target="_blank">MRTK 設定檔</a>是巢狀設定檔的樹狀結構，其構成了 MRTK 系統和功能應如何初始化的組態設定資訊。 最上層設定檔 (組態設定檔) 包含每個主要核心系統的巢狀設定檔。 每個巢狀設定檔都是設計來設定其對應系統的行為。
 
 此特定範例將示範如何藉由變更空間網格觀察器的設定，來隱藏空間感知網格。 不過，您也可以遵循這些相同原則，自訂 MRTK 設定檔中的任何設定或值。
 
-正如您在進行[上一個教學課程](mr-learning-base-02.md#congratulations)的期間將專案部署至 HoloLens 2 時所經歷的體驗，<a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間感知</a>網格是代表環境幾何的網格所形成的集合。 一開始，這樣的視覺效果很有用，但我們一般會將此功能關閉，以免遇到開啟此功能時所會遭遇的視覺干擾和額外的效能減損。
+正如您在進行[上一個教學課程](mr-learning-base-02.md#congratulations)的期間將專案部署至 HoloLens 2 時所經歷的體驗，<a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間感知</a>網格是代表環境幾何的網格所形成的集合。 一開始，這樣的視覺效果很有用，但我們一般會將此功能關閉，以免遇到開啟此功能時所會遭遇的視覺干擾和額外的效能減損。
 
 ## <a name="objectives"></a>目標
 
 * 了解如何自訂和設定 MRTK 設定檔
 * 隱藏空間感知網格
+
+[!INCLUDE[](includes/configuring-profile.md)]
 
 ## <a name="changing-the-spatial-awareness-display-option"></a>變更空間感知顯示選項
 
@@ -116,9 +118,7 @@ ms.locfileid: "105550318"
 > [!NOTE]
 > 雖然空間對應網格看不到，但仍存在且正常運作。 例如，空間對應網格後方的任何全像投影 (實體牆後方的全像投影等) 將不會顯示。
 
-您方才已了解如何修改 MRTK 設定檔中的設定。 如您所見，為了自訂 MRTK 設定，您必須先建立預設設定檔的複本。 由於預設設定檔無法編輯，因此當您想要還原為預設設定時，一律可以參考這些設定。 若要深入了解 MRTK 設定檔及其架構，您可以參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs)中的 [MRTK 設定檔設定指南](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mixed-reality-configuration-guide.md)。
-
-## <a name="congratulations"></a>恭喜！
+您方才已了解如何修改 MRTK 設定檔中的設定。 如您所見，為了自訂 MRTK 設定，您必須先建立預設設定檔的複本。 由於預設設定檔無法編輯，因此當您想要還原為預設設定時，一律可以參考這些設定。 若要深入瞭解 MRTK 設定檔及其架構，您可以參考[MRTK 檔入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)中的[MRTK 設定檔設定指南](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide.md)。 # # 恭喜
 
 在本教學課程中，您已了解如何複製、自訂和設定 MRTK 設定檔和設定。
 

@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Oculus 的追求、
-ms.openlocfilehash: 7d7be79926b75acb00f18d7f36be7abb7172366a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ba24acac19a46f899224cf4354bf9738c4d05d39
+ms.sourcegitcommit: 21265a99c47f8e6c76365fa04ab12d0940e9179a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104691095"
+ms.lasthandoff: 04/01/2021
+ms.locfileid: "106172845"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>如何使用 XR SDK 管線在 MRTK 中設定 Oculus 操作
 
@@ -61,7 +61,7 @@ MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR 管線和 Ocul
 
 1. 將您的設定檔設定為使用 **OCULUS XR SDK Data Provider**
     - 如果不打算修改設定設定檔
-        - 將您的設定檔變更為 DefaultXRSDKInputSystemProfile，然後移至 [ [組建]，並將專案部署至 Oculus 的追求](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
+        - 將您的設定檔變更為 DefaultMixedRealityToolkitConfigurationProfile，然後移至 [ [組建]，並將專案部署至 Oculus 的追求](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
 
     - 否則，請遵循下列步驟：
         - 選取階層中的 MixedRealityToolkit 遊戲物件，然後選取 [ **複製和自訂** ] 以複製預設的混合現實設定檔。

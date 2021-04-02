@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 4979c6f0f88544b4f00cd0859e5c807ddef137e5
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730485"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105982781"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
@@ -102,9 +102,9 @@ ms.locfileid: "104730485"
 
 |  主題  |  描述  |
 | --- | --- |
-| [MRTK 架構概觀](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Architecture/Overview.html) | 深入了解 MRTK SDK 在您的專案中如何運作 |
-| [設定和效能](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Performance/PerfGettingStarted.html) | 分析您的應用程式、更新 Unity 設定，並取得最理想的全像投影穩定效能 |
-| [開始使用 MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md) | 轉移至 Unity 所提供的替代 XR 管線 |
+| [MRTK 架構概觀](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | 深入了解 MRTK SDK 在您的專案中如何運作 |
+| [設定和效能](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | 分析您的應用程式、更新 Unity 設定，並取得最理想的全像投影穩定效能 |
+| [開始使用 MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | 轉移至 Unity 所提供的替代 XR 管線 |
 
 ### <a name="unity-resources"></a>Unity 資源
 

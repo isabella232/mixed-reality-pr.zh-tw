@@ -7,16 +7,16 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: 61bfc7c7e727efccf401082c6fbbedb539d9b2a1
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: a723de277d5ec07594db2c3e0b77b980ea1d9b9c
+ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636410"
+ms.lasthandoff: 03/30/2021
+ms.locfileid: "105983185"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
-在本教學課程中，您將了解如何建立新的 Unity 專案、將其設定為<a href="https://github.com/microsoft/MixedRealityToolkit-Unity" target="_blank">混合實境工具組 (MRTK)</a>開發之用，以及匯入 MRTK。 您也將逐步了解如何設定和建置基本 Unity 場景，並將其從 Visual Studio 部署到 HoloLens 2。 將其部署到 HoloLens 2 之後，您應該會看到一個空間對應網格，其中涵蓋 HoloLens 所感知到的介面。 此外，您應該會看到雙手和手指上有用於手部追蹤的指標，還有用於留意應用程式效能的畫面播放速率計數器。
+在本教學課程中，您將了解如何建立新的 Unity 專案、將其設定為<a href="https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/" target="_blank">混合實境工具組 (MRTK)</a>開發之用，以及匯入 MRTK。 您也將逐步了解如何設定和建置基本 Unity 場景，並將其從 Visual Studio 部署到 HoloLens 2。 將其部署到 HoloLens 2 之後，您應該會看到一個空間對應網格，其中涵蓋 HoloLens 所感知到的介面。 此外，您應該會看到雙手和手指上有用於手部追蹤的指標，還有用於留意應用程式效能的畫面播放速率計數器。
 
 ![MRTK](../../../develop/images/Unity_MRTK_MRFT_Flow.png)
 
@@ -98,10 +98,6 @@ ms.locfileid: "105636410"
 > [!NOTE]
 > 混合現實功能工具目前只在 Windows 上執行，若為 MacOS，請依照此程式下載並匯入混合現實工具 [組至 unity](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/Installation.html#1-get-the-latest-mrtk-unity-packages) 專案。
 
-> [!NOTE]
-> 您也可以從 [MRTK Github 的 [發行] 頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/releases)手動下載 MRTK 套件。 使用 Unity 的資產匯入 MRTK 套件-> 匯入套件-> 自訂套件] 功能表。 
-
-
 從下載的資料夾開啟可執行檔 **MixedRealityFeatureTool** ，以啟動「混合現實」功能工具。  
 
 ![開啟 MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
@@ -109,10 +105,6 @@ ms.locfileid: "105636410"
 開啟 **MixedRealityFeatureTool** 之後，請按一下 [開始] 以開始使用混合現實功能工具。
 
 ![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
-
-您必須設定目標 unity 專案的位置以提供 **專案路徑**，按一下專案路徑旁的 **三個點** ，然後在 explorer 中流覽至您的專案資料夾，例如 _D:\MixedRealityLearning\MRTK 教學_ 課程。 按一下 [探索功能] 以進行下一個步驟。
-
-![MixedRealityFeatureTool 專案路徑](images/mr-learning-base/base-02-section4-step1-2b.png)
 
 功能會依類別目錄分組，讓您更容易找到這些專案，請按一下 [ **Mixed Reality 工具** 組] 下拉式清單，以尋找與混合現實工具組相關的套件。
 
@@ -124,6 +116,8 @@ ms.locfileid: "105636410"
 
 在 [匯 **入功能**] 視窗中會顯示選取的套件 **混合現實工具組 Foundation 2.5.3** ，以及其相依套件 **混合現實工具組標準資產 2.5.3** 。
 
+您也需要設定目標 unity 專案的位置以提供 **專案路徑**，按一下專案路徑旁的 **三個點** ，然後在 explorer 中流覽至您的專案資料夾，例如 _D:\MixedRealityLearning\MRTK 教學_ 課程。
+
 > [!NOTE]
 > 流覽 Unity 專案資料夾時顯示的對話方塊會包含 ' _ ' 作為檔案名。 檔案名必須有一個值，才能選取該資料夾。
 
@@ -134,8 +128,6 @@ ms.locfileid: "105636410"
 按一下 [ **核准** ] 按鈕，將 **Mixed Reality 工具** 組新增至專案。
 
 ![核准混合的現實基礎](images/mr-learning-base/base-02-section4-step1-6.png)
-
-當您關閉 Mixed Reality 功能工具並返回 Unity 時，將會載入新的封裝。
 
 ## <a name="configuring-the-unity-project"></a>設定 Unity 專案
 
@@ -152,44 +144,14 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 > [!TIP]
 > 您可以選擇是否套用 MRTK 預設設定，但強烈建議您這麼做，因為這可協助您設定一些建議的 Unity 設定：
 
-> * 設定單一階段執行個體化轉譯路徑：藉由在相同的繪製呼叫中為雙眼執行轉譯管線，來改善圖形效能。 若要深入了解本主題，您可以參閱 MRTK [效能](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering)文件中的[單一階段執行個體化轉譯](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering)一節。
+> * 設定單一階段執行個體化轉譯路徑：藉由在相同的繪製呼叫中為雙眼執行轉譯管線，來改善圖形效能。 若要深入了解本主題，您可以參閱 MRTK [效能](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering)文件中的[單一階段執行個體化轉譯](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering)一節。
 > * 設定預設空間感知層：建立名為「空間感知」的 Unity 圖層，並將 MRTK 設定為將此圖層用於空間感知網格。 若要深入了解 Unity 圖層，您可以參閱 Unity 的<a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">自訂您的工作區</a>文件。
 
 ### <a name="2-configure-additional-project-settings"></a>2.設定其他專案設定
 
-在 Unity 功能表中，選取 [編輯] >  [專案設定...] 來開啟 [專案設定] 視窗：
+[!INCLUDE[](includes/configuring-additional-project-settings.md)]
 
-在 [專案設定] 視窗中，選取 [ **Player**  >  **XR 設定**]，然後勾選 [**支援虛擬實境**] 核取方塊。 這個程序需要一些時間。 核取 [ **支援虛擬事實** ] 之後，按一下 **+** 圖示，然後選取 [ **WINDOWS MIXED REALITY** 以新增 Windows Mixed Reality SDK：
-
-![已選取新增 [Windows Mixed Reality] SDK 的 Unity XR 設定](images/mr-learning-base/base-02-section5-step2-4.png)
-
-Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK 專案配置器] 視窗。 如果沒有，您可以從 Unity 功能表手動開啟它，方法是前往 **混合現實工具** 組  >  **公用程式**  >  **設定 Unity 專案**
-
-在 [MRTK 專案設定] 視窗中，使用 **Audio 空間定位器** 下拉式清單選取 [MS HRTF 空間定位器]，然後按一下 [套用] 按鈕來套用設定：
-
-![已選取 [新增 Windows Mixed Reality SDK] 選項的 Unity XR 設定](images/mr-learning-base/base-02-section5-step2-5.png)
-
-> [!TIP]
->您可以選擇是否設定 [音訊空間定位器] 屬性，但這麼做可以改善專案中的音訊體驗。 如果您將此屬性設定為 [MS HRTF 空間定位器]，當 Unity 的 AudioSource.spatialize 屬性啟用時，便會使用此空間定位器外掛程式。 若要深入瞭解本主題，您可以參考  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> 空間音訊教學</a>課程。
-
-在 [專案設定] 視窗中，選取 [播放程式] > [XR 設定]，然後使用 **深度格式** 下拉式清單選取 **16 位元深度**：
-
-![Unity 啟用16深度](images/mr-learning-base/base-02-section5-step2-6.png)
-
-> [!TIP]
-> 您可以選擇是否將 [深度格式] 減少為 16 位元，但這麼做可協助改善專案中的圖形效能。 若要深入瞭解本主題，您可以參考 MRTK 的<a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">效能</a>檔中的<a href="/windows/mixed-reality/mrtk-docs/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">深度緩衝區共用 (HoloLens) </a>一節。
-
-在 [專案設定] 視窗中，選取 [播放程式] > [發佈設定]，然後在 **套件名稱** 欄位中輸入適當的名稱，例如 _MRTKTutorials-GettingStarted_：
-
-![已設定 [套件名稱] 的 Unity [發佈設定]](images/mr-learning-base/base-02-section5-step2-7.png)
-
-> [!NOTE]
-> 「套件名稱」是應用程式的唯一識別碼。 您應該在部署應用程式之前變更此識別碼，以避免覆寫先前安裝的應用程式。
-
-> [!TIP]
-> 「產品名稱」是 HoloLens 開始功能表中顯示的名稱。 若要在開發期間更容易找到應用程式，請在名稱前面加上底線，將其排序到頂端。
-
-## <a name="creating-and-configuring-the-scene"></a>建立和設定場景
+## <a name="creating-the-scene-and-configuring-mrtk"></a>建立場景並設定 MRTK
 
 在 Unity 功能表中，選取 [檔案] > [新增場景] 以建立新場景：
 
@@ -199,17 +161,72 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 
 ![Unity [新增至場景並設定...] 功能表路徑](images/mr-learning-base/base-02-section6-step1-2.png)
 
-在 [階層] 視窗中選取 **MixedRealityToolkit** 物件後，在 [偵測器] 視窗中，驗證 **MixedRealityToolkit** 設定中的設定檔是否變更為 **DefaultMixedRealityToolkitConfigurationProfile**：
-
-![已選取 DefaultMixedRealityTookitConfigurationProfile 的 Unity MixedRealityToolkit 元件](images/mr-learning-base/base-02-section6-step1-3.png)
+[!INCLUDE[](includes/changing-profile.md)]
 
 在 Unity 功能表中，選取 [檔案] >  [另存新檔 ...] 以開啟 [儲存場景] 視窗：
 
 ![Unity [另存新檔...] 功能表路徑](images/mr-learning-base/base-02-section6-step1-4.png)
 
-在 [儲存場景] 視窗中，瀏覽至專案的 **Scenes** 資料夾，為您的場景取一個適當的名稱，例如 _GettingStarted_，然後按一下 [儲存] 按鈕以儲存場景：
+> [!TIP]
+> 您可以選擇是否將 [深度格式] 減少為 16 位元，但這麼做可協助改善專案中的圖形效能。 若要深入瞭解本主題，您可以參考 MRTK 的<a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">效能</a>檔中的<a href="/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering" target="_blank">深度緩衝區共用 (HoloLens) </a>一節。
 
 ![Unity [儲存場景] 的 [儲存] 提示視窗](images/mr-learning-base/base-02-section6-step1-5.png)
+
+## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
+
+下載下列 Unity 自訂套件：
+
+* [MRTK.HoloLens2. GettingStarted. 2.5.0.1. unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+若要匯入 unity 自訂套件，請在 Unity 功能表中，選取 [**資產** 匯  >  **入套件**  >  **自訂套件 ...** ] 開啟 [匯入封裝 ...]視窗：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-1.png)
+
+在 [匯入封裝 ...]視窗中，選取 **MRTK。HoloLens2** 您下載的 GettingStarted，然後按一下 [開啟] 按鈕：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-2.png)
+
+在 [匯入 Unity 套件] 視窗中，按一下 [全部] 按鈕以確保選取所有資產，然後按一下 [匯入] 按鈕來匯入資產：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-3.png)
+
+匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
+
+![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-4.png)
+
+## <a name="configuring-the-scene"></a>設定場景
+
+在 [專案] 視窗中，流覽至 [資產] > MRTK。GettingStarted > Prefabs 資料夾：
+
+在 [專案] 視窗中，按一下 [ **Cube** 預製專案] 並將其拖曳至 [階層] 視窗，然後在 [偵測器] 視窗中設定其 **轉換** 元件，如下所示
+
+* **Position**： X = 0、Y = 0、Z = 0。5
+* **旋轉**：X = 0、Y = 0、Z = 0
+* **縮放**：X = 1、Y = 1、Z = 1
+
+![將 cube 加入場景](images/mr-learning-base/base-02-section8-step1-1.png)
+
+若要將焦點放在場景中的物件上，您可以按兩下 **Cube** 物件，然後再稍微放大：
+
+若要與追蹤的手互動及抓取物件，物件必須具有碰撞元件，例如方塊 **碰撞**、物件操作工具  **(腳本)** 元件和 **NearInteractionGrabbable (腳本)** 元件。
+
+當 **Cube** 仍在 [階層] 視窗中選取時，在 [偵測器] 視窗中，按一下 [ **加入元件** ] 按鈕，然後搜尋並選取 [ **物件** 操作工具腳本]，將物件操作工具腳本加入 Cube 物件中。
+
+![將物件 manupulator 加入至 cube](images/mr-learning-base/base-02-section8-step1-2.png)
+
+重複相同的步驟，將 **接近互動的 Grabbable 腳本** 新增至 cube
+
+![將近乎互動的 Grabable 新增至 cube](images/mr-learning-base/base-02-section8-step1-3.png)
+
+> [!NOTE]
+> 當您加入物件操作工具 (腳本時) ，在此情況下，會自動加入條件約束管理員 (腳本) ，因為物件操作工具 (腳本) 相依于它。
+
+> [!NOTE]
+> 基於本教學課程的目的，colliders 已經加入 Cube 物件中。 若要深入了解碰撞器，您可以造訪 Unity 的<a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">碰撞器 (Collider)</a> 文件。
+
+若要在 Unity 編輯器中測試此項，您可以進入 [播放] 模式，並按住 **LeftShift** 或 **空格鍵** 以啟用控制器，滑鼠移動會移動控制器，也可以使用滑鼠滾輪移至或接近相機。 一旦指標位於 Cube 上，請按住 **滑鼠右鍵** 以移動 cube 物件。
+
+![遊戲模式](images/mr-learning-base/base-02-section8-step1-4.png)
 
 ## <a name="building-your-application-to-your-hololens-2"></a>在您的 HoloLens 2 上建置應用程式
 
@@ -219,31 +236,28 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 
 在 [組建設定] 視窗中，按一下 [新增開啟的場景] 按鈕，將您目前的場景新增至 [組建中的場景] 清單，然後按一下 [組建] 按鈕以開啟 [組建通用 Windows 平台] 視窗：
 
-![已選取 UWP 的 Unity [建置設定] 視窗](images/mr-learning-base/base-02-section7-step1-1.png)
+![已選取 UWP 的 Unity [建置設定] 視窗](images/mr-learning-base/base-02-section9-step1-1.png)
 
 在 [組建通用 Windows 平台] 視窗中，選擇適當的位置來儲存您的組建，例如 D:\MixedRealityLearning\Builds，建立新的資料夾並指定適當的名稱，例如 GettingStarted，然後按一下 [選取資料夾] 按鈕開始組建程序：
 
-![具有 [選取資料夾] 提示視窗的 Unity [建置設定] 視窗](images/mr-learning-base/base-02-section7-step1-2.png)
+![具有 [選取資料夾] 提示視窗的 Unity [建置設定] 視窗](images/mr-learning-base/base-02-section9-step1-2.png)
 
 等候 Unity 完成組建程序：
 
-![Unity 正在進行建置程序](images/mr-learning-base/base-02-section7-step1-3.png)
+![Unity 正在進行建置程序](images/mr-learning-base/base-02-section9-step1-3.png)
 
 ### <a name="2-build-and-deploy-the-application"></a>2.組建和部署應用程式
 
 當建置程序完成時，Unity 會提示 Windows 檔案總管開啟您儲存組建的位置。 瀏覽該資料夾，按兩下解決方案的檔案即可在 Visual Studio 中開啟該檔案：
 
-![Windows 檔案總管，其中已選取新建立的 Visual Studio 解決方案](images/mr-learning-base/base-02-section8-step1-1.png)
+![Windows 檔案總管，其中已選取新建立的 Visual Studio 解決方案](images/mr-learning-base/base-02-section10-step1-1.png)
 
 > [!NOTE]
 > 如果 Visual Studio 要求您安裝新元件，請花一些時間確認是否已安裝所有必要元件，如同 **[安裝工具](../../install-the-tools.md)** 文件中所述。
 
 設定 Visual Studio 以便用於 HoloLens，請選取 [Master] 或 [Release] 設定、[ARM64] 架構，選取 [裝置] 作為目標：
 
-> [!NOTE]
-> 根據您的部署方法選擇您的目標。
-
-![已針對要部署至 HoloLens 2 來設定 Visual Studio](images/mr-learning-base/base-02-section8-step1-2.png)
+![已針對要部署至 HoloLens 2 來設定 Visual Studio](images/mr-learning-base/base-02-section10-step1-2.png)
 
 > [!TIP]
 > 如果您要部署至 HoloLens (第1代)，請選取 **x86** 架構。
@@ -254,9 +268,9 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 > [!NOTE]
 > 如果您看不到 [裝置為目標] 選項，可能需要將 Visual Studio 解決方案的啟始專案從 IL2CPP 專案變更為 UWP 專案。 要這麼做，在方案總管中，以滑鼠右鍵按一下 YourProjectName (Universal Windows) 並選取 [設定為啟動專案]。
 
-使用 USB 纜線將 HoloLens 連接到您的電腦，**然後選取 [**  >  **啟動但不進行調試** 程式]，以建立並部署至您的裝置：
+將 HoloLens 與電腦連線，然後選取 [偵錯] > [啟動但不進行偵錯]，以建置並部署至您的裝置：
 
-![Visual Studio [啟動但不進行偵錯] 功能表路徑](images/mr-learning-base/base-02-section8-step1-3.png)
+![Visual Studio [啟動但不進行偵錯] 功能表路徑](images/mr-learning-base/base-02-section10-step1-3.png)
 
 > [!IMPORTANT]
 > 在組建您的裝置之前，裝置必須處於「開發人員模式」，並與開發電腦配對。 請遵循[這些指示](../../platform-capabilities-and-apis/using-visual-studio.md)來完成這兩個步驟。
@@ -273,7 +287,7 @@ Unity 完成匯入 Windows Mixed Reality SDK 後，應該會再次出現 [MRTK �
 
 ## <a name="congratulations"></a>恭喜！
 
-您現在已部署了第一個 HoloLens 應用程式。 當您隨處走動時，應該會看到空間對應網格涵蓋了所有 HoloLens 所感知到的表面。 此外，您應該會看到雙手和手指上有用於手部追蹤的指標，還有用於留意應用程式效能的畫面播放速率計數器。 這些功能只是 MRTK 所包含的幾個基本部分。 在接下來的教學課程中，您將會在場景中新增內容，以探索 HoloLens 和 MRTK 的功能。
+您現在已部署了第一個 HoloLens 應用程式。 開啟應用程式之後，您應該會看到 Cube 物件放在您面前，而且應該可以移動它來與 cube 互動，您應該也會看到一個空間對應網格，其中涵蓋 HoloLens 所察覺的表面。 此外，您應該會看到雙手和手指上有用於手部追蹤的指標，還有用於留意應用程式效能的畫面播放速率計數器。 這些功能只是 MRTK 所包含的幾個基本部分。 在接下來的教學課程中，您將會在場景中新增內容，以探索 HoloLens 和 MRTK 的功能。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：3.設定 MRTK 設定檔](mr-learning-base-03.md)
