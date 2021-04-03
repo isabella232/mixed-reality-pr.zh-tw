@@ -10,12 +10,12 @@ metadata:
   ms.technology: enthusiast-guide
   author: mattwojo
   ms.author: mattwoj
-  ms.openlocfilehash: ebe77df574235b7ddee2a4b65392836a39642d6c
-  ms.sourcegitcommit: 753f0ee94cf86be645cad8efd60f1b43ac529c96
-  ms.translationtype: HT
+  ms.openlocfilehash: b589b064aa598acd431909b8cb31a73fd8f757bc
+  ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+  ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 01/25/2021
-  ms.locfileid: "98758361"
+  ms.lasthandoff: 04/02/2021
+  ms.locfileid: "106223919"
 highlightedContent:
   items:
   - title: 關於 Windows Mixed Reality VR
@@ -33,9 +33,9 @@ highlightedContent:
   - title: 健康狀況與安全指引
     itemType: concept
     url: wmr-health-safety-comfort.md
-  - title: 混合實境軟體概觀和發行歷程記錄
-    itemType: concept
-    url: mixed-reality-software.md
+  - title: 探索 AltspaceVR
+    itemType: whats-new
+    url: https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application
 conceptualContent:
   title: 開始使用 Windows Mixed Reality
   summary: 尋找有關混合實境軟體、硬體和疑難排解的其他資訊。

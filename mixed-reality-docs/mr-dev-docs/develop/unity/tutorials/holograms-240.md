@@ -6,190 +6,190 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、共用、網路、學術、教學課程、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 8e3631c80702f04e9f7e50c98bed91d92c332841
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 446f82558781e47b5381ee3f59af70953954ad2a
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730145"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269914"
 ---
-# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a><span data-ttu-id="c5446-104">HoloLens (第1代) 共用240：多個 HoloLens 裝置</span><span class="sxs-lookup"><span data-stu-id="c5446-104">HoloLens (1st gen) Sharing 240: Multiple HoloLens devices</span></span>
+# <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a><span data-ttu-id="a50e1-104">HoloLens (第1代) 共用240：多個 HoloLens 裝置</span><span class="sxs-lookup"><span data-stu-id="a50e1-104">HoloLens (1st gen) Sharing 240: Multiple HoloLens devices</span></span>
 
->[!NOTE]
-><span data-ttu-id="c5446-105">混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。</span><span class="sxs-lookup"><span data-stu-id="c5446-105">The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.</span></span>  <span data-ttu-id="c5446-106">因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。</span><span class="sxs-lookup"><span data-stu-id="c5446-106">As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.</span></span>  <span data-ttu-id="c5446-107">這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。</span><span class="sxs-lookup"><span data-stu-id="c5446-107">These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.</span></span>  <span data-ttu-id="c5446-108">系統會保留這些資訊，以繼續在支援的裝置上運作。</span><span class="sxs-lookup"><span data-stu-id="c5446-108">They will be maintained to continue working on the supported devices.</span></span> <span data-ttu-id="c5446-109">已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。</span><span class="sxs-lookup"><span data-stu-id="c5446-109">[A new series of tutorials](./mr-learning-base-01.md) has been posted for HoloLens 2.</span></span>
+>[!IMPORTANT]
+><span data-ttu-id="a50e1-105">混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。</span><span class="sxs-lookup"><span data-stu-id="a50e1-105">The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.</span></span>  <span data-ttu-id="a50e1-106">因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。</span><span class="sxs-lookup"><span data-stu-id="a50e1-106">As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.</span></span> <span data-ttu-id="a50e1-107">這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-107">These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.</span></span>  <span data-ttu-id="a50e1-108">系統會保留這些資訊，以繼續在支援的裝置上運作。</span><span class="sxs-lookup"><span data-stu-id="a50e1-108">They will be maintained to continue working on the supported devices.</span></span> <span data-ttu-id="a50e1-109">已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-109">[A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.</span></span>
 
-<span data-ttu-id="c5446-110">當我們在空間中移動時，我們會在世界各地提供全像投影。</span><span class="sxs-lookup"><span data-stu-id="c5446-110">Holograms are given presence in our world by remaining in place as we move about in space.</span></span> <span data-ttu-id="c5446-111">HoloLens 會使用不同的 [座標系統](../../../design/coordinate-systems.md) 來追蹤物件的位置和方向，以就地保存全像影像。</span><span class="sxs-lookup"><span data-stu-id="c5446-111">HoloLens keeps holograms in place by using various [coordinate systems](../../../design/coordinate-systems.md) to keep track of the location and orientation of objects.</span></span> <span data-ttu-id="c5446-112">當我們在裝置之間共用這些座標系統時，我們可以建立共用的體驗，讓我們參與共用的全像世界。</span><span class="sxs-lookup"><span data-stu-id="c5446-112">When we share these coordinate systems between devices, we can create a shared experience that allows us to take part in a shared holographic world.</span></span>
+<span data-ttu-id="a50e1-110">當我們在空間中移動時，我們會在世界各地提供全像投影。</span><span class="sxs-lookup"><span data-stu-id="a50e1-110">Holograms are given presence in our world by remaining in place as we move about in space.</span></span> <span data-ttu-id="a50e1-111">HoloLens 會使用不同的 [座標系統](../../../design/coordinate-systems.md) 來追蹤物件的位置和方向，以就地保存全像影像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-111">HoloLens keeps holograms in place by using various [coordinate systems](../../../design/coordinate-systems.md) to keep track of the location and orientation of objects.</span></span> <span data-ttu-id="a50e1-112">當我們在裝置之間共用這些座標系統時，我們可以建立共用的體驗，讓我們參與共用的全像世界。</span><span class="sxs-lookup"><span data-stu-id="a50e1-112">When we share these coordinate systems between devices, we can create a shared experience that allows us to take part in a shared holographic world.</span></span>
 
-<span data-ttu-id="c5446-113">在此教學課程中，我們將：</span><span class="sxs-lookup"><span data-stu-id="c5446-113">In this tutorial, we will:</span></span>
+<span data-ttu-id="a50e1-113">在此教學課程中，我們將：</span><span class="sxs-lookup"><span data-stu-id="a50e1-113">In this tutorial, we will:</span></span>
 
-* <span data-ttu-id="c5446-114">設定共用體驗的網路。</span><span class="sxs-lookup"><span data-stu-id="c5446-114">Setup a network for a shared experience.</span></span>
-* <span data-ttu-id="c5446-115">跨 HoloLens 裝置共用全像影像。</span><span class="sxs-lookup"><span data-stu-id="c5446-115">Share holograms across HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-116">探索共用全像全球的其他人。</span><span class="sxs-lookup"><span data-stu-id="c5446-116">Discover other people in our shared holographic world.</span></span>
-* <span data-ttu-id="c5446-117">建立可讓您以其他播放程式為目標的共用互動式體驗，並在其上啟動炮彈！</span><span class="sxs-lookup"><span data-stu-id="c5446-117">Create a shared interactive experience where you can target other players - and launch projectiles at them!</span></span>
+* <span data-ttu-id="a50e1-114">設定共用體驗的網路。</span><span class="sxs-lookup"><span data-stu-id="a50e1-114">Setup a network for a shared experience.</span></span>
+* <span data-ttu-id="a50e1-115">跨 HoloLens 裝置共用全像影像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-115">Share holograms across HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-116">探索共用全像全球的其他人。</span><span class="sxs-lookup"><span data-stu-id="a50e1-116">Discover other people in our shared holographic world.</span></span>
+* <span data-ttu-id="a50e1-117">建立可讓您以其他播放程式為目標的共用互動式體驗，並在其上啟動炮彈！</span><span class="sxs-lookup"><span data-stu-id="a50e1-117">Create a shared interactive experience where you can target other players - and launch projectiles at them!</span></span>
 
-## <a name="device-support"></a><span data-ttu-id="c5446-118">裝置支援</span><span class="sxs-lookup"><span data-stu-id="c5446-118">Device support</span></span>
+## <a name="device-support"></a><span data-ttu-id="a50e1-118">裝置支援</span><span class="sxs-lookup"><span data-stu-id="a50e1-118">Device support</span></span>
 
 <table>
 <tr>
-<th><span data-ttu-id="c5446-119">課程</span><span class="sxs-lookup"><span data-stu-id="c5446-119">Course</span></span></th><th style="width:150px"> <span data-ttu-id="c5446-120"><a href="/hololens/hololens1-hardware">HoloLens</a></span><span class="sxs-lookup"><span data-stu-id="c5446-120"><a href="/hololens/hololens1-hardware">HoloLens</a></span></span></th><th style="width:150px"> <span data-ttu-id="c5446-121"><a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></span><span class="sxs-lookup"><span data-stu-id="c5446-121"><a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></span></span></th>
+<th><span data-ttu-id="a50e1-119">課程</span><span class="sxs-lookup"><span data-stu-id="a50e1-119">Course</span></span></th><th style="width:150px"> <span data-ttu-id="a50e1-120"><a href="/hololens/hololens1-hardware">HoloLens</a></span><span class="sxs-lookup"><span data-stu-id="a50e1-120"><a href="/hololens/hololens1-hardware">HoloLens</a></span></span></th><th style="width:150px"> <span data-ttu-id="a50e1-121"><a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></span><span class="sxs-lookup"><span data-stu-id="a50e1-121"><a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></span></span></th>
 </tr><tr>
-<td><span data-ttu-id="c5446-122">MR Sharing 240：多個 HoloLens 裝置</span><span class="sxs-lookup"><span data-stu-id="c5446-122">MR Sharing 240: Multiple HoloLens devices</span></span></td><td style="text-align: center;"> <span data-ttu-id="c5446-123">✔️</span><span class="sxs-lookup"><span data-stu-id="c5446-123">✔️</span></span></td><td style="text-align: center;"> </td>
+<td><span data-ttu-id="a50e1-122">MR Sharing 240：多個 HoloLens 裝置</span><span class="sxs-lookup"><span data-stu-id="a50e1-122">MR Sharing 240: Multiple HoloLens devices</span></span></td><td style="text-align: center;"> <span data-ttu-id="a50e1-123">✔️</span><span class="sxs-lookup"><span data-stu-id="a50e1-123">✔️</span></span></td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a><span data-ttu-id="c5446-124">在您開始使用 Intune 之前</span><span class="sxs-lookup"><span data-stu-id="c5446-124">Before you start</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="a50e1-124">在您開始使用 Intune 之前</span><span class="sxs-lookup"><span data-stu-id="a50e1-124">Before you start</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="c5446-125">必要條件</span><span class="sxs-lookup"><span data-stu-id="c5446-125">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="a50e1-125">必要條件</span><span class="sxs-lookup"><span data-stu-id="a50e1-125">Prerequisites</span></span>
 
-* <span data-ttu-id="c5446-126">使用隨網際網路存取安裝的正確 [工具](../../../develop/install-the-tools.md) 設定的 Windows 10 電腦。</span><span class="sxs-lookup"><span data-stu-id="c5446-126">A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md) with Internet access.</span></span>
-* <span data-ttu-id="c5446-127">至少有兩個 HoloLens 裝置 [設定用於開發](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)。</span><span class="sxs-lookup"><span data-stu-id="c5446-127">At least two HoloLens devices [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).</span></span>
+* <span data-ttu-id="a50e1-126">使用隨網際網路存取安裝的正確 [工具](../../../develop/install-the-tools.md) 設定的 Windows 10 電腦。</span><span class="sxs-lookup"><span data-stu-id="a50e1-126">A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md) with Internet access.</span></span>
+* <span data-ttu-id="a50e1-127">至少有兩個 HoloLens 裝置 [設定用於開發](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-127">At least two HoloLens devices [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).</span></span>
 
-### <a name="project-files"></a><span data-ttu-id="c5446-128">專案檔</span><span class="sxs-lookup"><span data-stu-id="c5446-128">Project files</span></span>
+### <a name="project-files"></a><span data-ttu-id="a50e1-128">專案檔</span><span class="sxs-lookup"><span data-stu-id="a50e1-128">Project files</span></span>
 
-* <span data-ttu-id="c5446-129">下載專案 [所需的](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) 檔案。</span><span class="sxs-lookup"><span data-stu-id="c5446-129">Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) required by the project.</span></span> <span data-ttu-id="c5446-130">需要 Unity 2017.2 或更新版本。</span><span class="sxs-lookup"><span data-stu-id="c5446-130">Requires Unity 2017.2 or later.</span></span>
-  * <span data-ttu-id="c5446-131">如果您仍然需要 Unity 5.6 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip)。</span><span class="sxs-lookup"><span data-stu-id="c5446-131">If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).</span></span>
-  * <span data-ttu-id="c5446-132">如果您仍然需要 Unity 5.5 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip)。</span><span class="sxs-lookup"><span data-stu-id="c5446-132">If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).</span></span>
-  * <span data-ttu-id="c5446-133">如果您仍然需要 Unity 5.4 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip)。</span><span class="sxs-lookup"><span data-stu-id="c5446-133">If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).</span></span>
-* <span data-ttu-id="c5446-134">取消將檔案封存到您的桌面或其他易於觸及的位置。</span><span class="sxs-lookup"><span data-stu-id="c5446-134">Un-archive the files to your desktop or other easy to reach location.</span></span> <span data-ttu-id="c5446-135">將資料夾名稱保留為 **SharedHolograms**。</span><span class="sxs-lookup"><span data-stu-id="c5446-135">Keep the folder name as **SharedHolograms**.</span></span>
+* <span data-ttu-id="a50e1-129">下載專案 [所需的](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) 檔案。</span><span class="sxs-lookup"><span data-stu-id="a50e1-129">Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-240-SharedHolograms.zip) required by the project.</span></span> <span data-ttu-id="a50e1-130">需要 Unity 2017.2 或更新版本。</span><span class="sxs-lookup"><span data-stu-id="a50e1-130">Requires Unity 2017.2 or later.</span></span>
+  * <span data-ttu-id="a50e1-131">如果您仍然需要 Unity 5.6 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-131">If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-240.zip).</span></span>
+  * <span data-ttu-id="a50e1-132">如果您仍然需要 Unity 5.5 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-132">If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-240.zip).</span></span>
+  * <span data-ttu-id="a50e1-133">如果您仍然需要 Unity 5.4 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-133">If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-240.zip).</span></span>
+* <span data-ttu-id="a50e1-134">取消將檔案封存到您的桌面或其他易於觸及的位置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-134">Un-archive the files to your desktop or other easy to reach location.</span></span> <span data-ttu-id="a50e1-135">將資料夾名稱保留為 **SharedHolograms**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-135">Keep the folder name as **SharedHolograms**.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c5446-136">如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms)取得。</span><span class="sxs-lookup"><span data-stu-id="c5446-136">If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms).</span></span>
+><span data-ttu-id="a50e1-136">如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms)取得。</span><span class="sxs-lookup"><span data-stu-id="a50e1-136">If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms).</span></span>
 
-## <a name="chapter-1---holo-world"></a><span data-ttu-id="c5446-137">第1章-Hololens World</span><span class="sxs-lookup"><span data-stu-id="c5446-137">Chapter 1 - Holo World</span></span>
+## <a name="chapter-1---holo-world"></a><span data-ttu-id="a50e1-137">第1章-Hololens World</span><span class="sxs-lookup"><span data-stu-id="a50e1-137">Chapter 1 - Holo World</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/c7qHYYW8rxQ]
 
-<span data-ttu-id="c5446-138">在本章中，我們將設定第一個 Unity 專案，並逐步執行組建和部署程式。</span><span class="sxs-lookup"><span data-stu-id="c5446-138">In this chapter, we'll setup our first Unity project and step through the build and deploy process.</span></span>
+<span data-ttu-id="a50e1-138">在本章中，我們將設定第一個 Unity 專案，並逐步執行組建和部署程式。</span><span class="sxs-lookup"><span data-stu-id="a50e1-138">In this chapter, we'll setup our first Unity project and step through the build and deploy process.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-139">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-139">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-139">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-139">Objectives</span></span>
 
-* <span data-ttu-id="c5446-140">設定 Unity 以開發全息型應用程式。</span><span class="sxs-lookup"><span data-stu-id="c5446-140">Setup Unity to develop holographic apps.</span></span>
-* <span data-ttu-id="c5446-141">查看您的全像影像！</span><span class="sxs-lookup"><span data-stu-id="c5446-141">See your hologram!</span></span>
+* <span data-ttu-id="a50e1-140">設定 Unity 以開發全息型應用程式。</span><span class="sxs-lookup"><span data-stu-id="a50e1-140">Setup Unity to develop holographic apps.</span></span>
+* <span data-ttu-id="a50e1-141">查看您的全像影像！</span><span class="sxs-lookup"><span data-stu-id="a50e1-141">See your hologram!</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-142">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-142">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-142">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-142">Instructions</span></span>
 
-* <span data-ttu-id="c5446-143">啟動 Unity。</span><span class="sxs-lookup"><span data-stu-id="c5446-143">Start Unity.</span></span>
-* <span data-ttu-id="c5446-144">選取 [開啟]  。</span><span class="sxs-lookup"><span data-stu-id="c5446-144">Select **Open**.</span></span>
-* <span data-ttu-id="c5446-145">輸入位置作為您先前 unarchived 的 **SharedHolograms** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-145">Enter location as the **SharedHolograms** folder you previously unarchived.</span></span>
-* <span data-ttu-id="c5446-146">選取 [ **專案名稱** ]，然後按一下 [ **選取資料夾**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-146">Select **Project Name** and click **Select Folder**.</span></span>
-* <span data-ttu-id="c5446-147">**在階層中，以** 滑鼠右鍵按一下 **主要攝影機**，然後選取 [**刪除**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-147">In the **Hierarchy**, right-click the **Main Camera** and select **Delete**.</span></span>
-* <span data-ttu-id="c5446-148">在 [ **HoloToolkit-共用-240/Prefabs/攝影機** ] 資料夾中，尋找 **主要相機** 預製專案。</span><span class="sxs-lookup"><span data-stu-id="c5446-148">In the **HoloToolkit-Sharing-240/Prefabs/Camera** folder, find the **Main Camera** prefab.</span></span>
-* <span data-ttu-id="c5446-149">將 [**主要攝影機**] 拖放到階層 **中。**</span><span class="sxs-lookup"><span data-stu-id="c5446-149">Drag and drop the **Main Camera** into the **Hierarchy**.</span></span>
-* <span data-ttu-id="c5446-150">在階層 **中，按一下**[ **建立** ] 並 **建立空白**。</span><span class="sxs-lookup"><span data-stu-id="c5446-150">In the **Hierarchy**, click on **Create** and **Create Empty**.</span></span>
-* <span data-ttu-id="c5446-151">以滑鼠右鍵按一下新的 **GameObject** ，然後選取 [ **重新命名**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-151">Right-click the new **GameObject** and select **Rename**.</span></span>
-* <span data-ttu-id="c5446-152">將 GameObject 重新命名為 **HologramCollection**。</span><span class="sxs-lookup"><span data-stu-id="c5446-152">Rename the GameObject to **HologramCollection**.</span></span>
-* <span data-ttu-id="c5446-153">選取階層中的 **HologramCollection** 物件 **。**</span><span class="sxs-lookup"><span data-stu-id="c5446-153">Select the **HologramCollection** object in the **Hierarchy**.</span></span>
-* <span data-ttu-id="c5446-154">在偵測 **器** 中，將 **轉換位置** 設定為： **X：0，Y：-0.25，Z： 2**。</span><span class="sxs-lookup"><span data-stu-id="c5446-154">In the **Inspector** set the **transform position** to: **X: 0, Y: -0.25, Z: 2**.</span></span>
-* <span data-ttu-id="c5446-155">在 [**專案] 面板** 的 [全像全像 **] 資料夾中**，尋找 **EnergyHub** 資產。</span><span class="sxs-lookup"><span data-stu-id="c5446-155">In the **Holograms** folder in the **Project panel**, find the **EnergyHub** asset.</span></span>
-* <span data-ttu-id="c5446-156">將 **EnergyHub** 物件從 **專案面板** 拖放到階層中， **做為** **HologramCollection 的子** 系。</span><span class="sxs-lookup"><span data-stu-id="c5446-156">Drag and drop the **EnergyHub** object from the **Project panel** to the **Hierarchy** as a **child of HologramCollection**.</span></span>
-* <span data-ttu-id="c5446-157">選取 [檔案 **> 另存場景為**...]</span><span class="sxs-lookup"><span data-stu-id="c5446-157">Select **File > Save Scene As...**</span></span>
-* <span data-ttu-id="c5446-158">命名場景 **SharedHolograms** ，然後按一下 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-158">Name the scene **SharedHolograms** and click **Save**.</span></span>
-* <span data-ttu-id="c5446-159">按下 Unity 中的 [ **播放** ] 按鈕，以預覽您的全像影像。</span><span class="sxs-lookup"><span data-stu-id="c5446-159">Press the **Play** button in Unity to preview your holograms.</span></span>
-* <span data-ttu-id="c5446-160">按第二次 [ **播放** ] 以停止預覽模式。</span><span class="sxs-lookup"><span data-stu-id="c5446-160">Press **Play** a second time to stop preview mode.</span></span>
+* <span data-ttu-id="a50e1-143">啟動 Unity。</span><span class="sxs-lookup"><span data-stu-id="a50e1-143">Start Unity.</span></span>
+* <span data-ttu-id="a50e1-144">選取 [開啟]  。</span><span class="sxs-lookup"><span data-stu-id="a50e1-144">Select **Open**.</span></span>
+* <span data-ttu-id="a50e1-145">輸入位置作為您先前 unarchived 的 **SharedHolograms** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-145">Enter location as the **SharedHolograms** folder you previously unarchived.</span></span>
+* <span data-ttu-id="a50e1-146">選取 [ **專案名稱** ]，然後按一下 [ **選取資料夾**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-146">Select **Project Name** and click **Select Folder**.</span></span>
+* <span data-ttu-id="a50e1-147">**在階層中，以** 滑鼠右鍵按一下 **主要攝影機**，然後選取 [**刪除**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-147">In the **Hierarchy**, right-click the **Main Camera** and select **Delete**.</span></span>
+* <span data-ttu-id="a50e1-148">在 [ **HoloToolkit-共用-240/Prefabs/攝影機** ] 資料夾中，尋找 **主要相機** 預製專案。</span><span class="sxs-lookup"><span data-stu-id="a50e1-148">In the **HoloToolkit-Sharing-240/Prefabs/Camera** folder, find the **Main Camera** prefab.</span></span>
+* <span data-ttu-id="a50e1-149">將 [**主要攝影機**] 拖放到階層 **中。**</span><span class="sxs-lookup"><span data-stu-id="a50e1-149">Drag and drop the **Main Camera** into the **Hierarchy**.</span></span>
+* <span data-ttu-id="a50e1-150">在階層 **中，按一下**[ **建立** ] 並 **建立空白**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-150">In the **Hierarchy**, click on **Create** and **Create Empty**.</span></span>
+* <span data-ttu-id="a50e1-151">以滑鼠右鍵按一下新的 **GameObject** ，然後選取 [ **重新命名**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-151">Right-click the new **GameObject** and select **Rename**.</span></span>
+* <span data-ttu-id="a50e1-152">將 GameObject 重新命名為 **HologramCollection**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-152">Rename the GameObject to **HologramCollection**.</span></span>
+* <span data-ttu-id="a50e1-153">選取階層中的 **HologramCollection** 物件 **。**</span><span class="sxs-lookup"><span data-stu-id="a50e1-153">Select the **HologramCollection** object in the **Hierarchy**.</span></span>
+* <span data-ttu-id="a50e1-154">在偵測 **器** 中，將 **轉換位置** 設定為： **X：0，Y：-0.25，Z： 2**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-154">In the **Inspector** set the **transform position** to: **X: 0, Y: -0.25, Z: 2**.</span></span>
+* <span data-ttu-id="a50e1-155">在 [**專案] 面板** 的 [全像全像 **] 資料夾中**，尋找 **EnergyHub** 資產。</span><span class="sxs-lookup"><span data-stu-id="a50e1-155">In the **Holograms** folder in the **Project panel**, find the **EnergyHub** asset.</span></span>
+* <span data-ttu-id="a50e1-156">將 **EnergyHub** 物件從 **專案面板** 拖放到階層中， **做為** **HologramCollection 的子** 系。</span><span class="sxs-lookup"><span data-stu-id="a50e1-156">Drag and drop the **EnergyHub** object from the **Project panel** to the **Hierarchy** as a **child of HologramCollection**.</span></span>
+* <span data-ttu-id="a50e1-157">選取 [檔案 **> 另存場景為**...]</span><span class="sxs-lookup"><span data-stu-id="a50e1-157">Select **File > Save Scene As...**</span></span>
+* <span data-ttu-id="a50e1-158">命名場景 **SharedHolograms** ，然後按一下 [ **儲存**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-158">Name the scene **SharedHolograms** and click **Save**.</span></span>
+* <span data-ttu-id="a50e1-159">按下 Unity 中的 [ **播放** ] 按鈕，以預覽您的全像影像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-159">Press the **Play** button in Unity to preview your holograms.</span></span>
+* <span data-ttu-id="a50e1-160">按第二次 [ **播放** ] 以停止預覽模式。</span><span class="sxs-lookup"><span data-stu-id="a50e1-160">Press **Play** a second time to stop preview mode.</span></span>
 
-<span data-ttu-id="c5446-161">**將專案從 Unity 匯出至 Visual Studio**</span><span class="sxs-lookup"><span data-stu-id="c5446-161">**Export the project from Unity to Visual Studio**</span></span>
+<span data-ttu-id="a50e1-161">**將專案從 Unity 匯出至 Visual Studio**</span><span class="sxs-lookup"><span data-stu-id="a50e1-161">**Export the project from Unity to Visual Studio**</span></span>
 
-* <span data-ttu-id="c5446-162">在 Unity 中，選取 [ **File > Build Settings**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-162">In Unity select **File > Build Settings**.</span></span>
-* <span data-ttu-id="c5446-163">按一下 [ **新增開啟場景** ] 以加入場景。</span><span class="sxs-lookup"><span data-stu-id="c5446-163">Click **Add Open Scenes** to add the scene.</span></span>
-* <span data-ttu-id="c5446-164">在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-164">Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.</span></span>
-* <span data-ttu-id="c5446-165">將 **SDK** 設定為 **通用 10**。</span><span class="sxs-lookup"><span data-stu-id="c5446-165">Set **SDK** to **Universal 10**.</span></span>
-* <span data-ttu-id="c5446-166">將 **目標裝置** 設定為 **HoloLens** ，並將 **UWP 組建類型** 設定為 **D3D**。</span><span class="sxs-lookup"><span data-stu-id="c5446-166">Set **Target device** to **HoloLens** and **UWP Build Type** to **D3D**.</span></span>
-* <span data-ttu-id="c5446-167">檢查 **Unity c # 專案**。</span><span class="sxs-lookup"><span data-stu-id="c5446-167">Check **Unity C# Projects**.</span></span>
-* <span data-ttu-id="c5446-168">按一下 [建置]。</span><span class="sxs-lookup"><span data-stu-id="c5446-168">Click **Build**.</span></span>
-* <span data-ttu-id="c5446-169">在出現的 [檔案瀏覽器] 視窗中，建立名為 "App" 的 **新資料夾** 。</span><span class="sxs-lookup"><span data-stu-id="c5446-169">In the file explorer window that appears, create a **New Folder** named "App".</span></span>
-* <span data-ttu-id="c5446-170">按一下 **應用程式** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-170">Single click the **App** folder.</span></span>
-* <span data-ttu-id="c5446-171">按下 [ **選取資料夾**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-171">Press **Select Folder**.</span></span>
-* <span data-ttu-id="c5446-172">當 Unity 完成時，將會出現檔案總管視窗。</span><span class="sxs-lookup"><span data-stu-id="c5446-172">When Unity is done, a File Explorer window will appear.</span></span>
-* <span data-ttu-id="c5446-173">開啟 **應用程式** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-173">Open the **App** folder.</span></span>
-* <span data-ttu-id="c5446-174">開啟 **SharedHolograms** 以啟動 Visual Studio。</span><span class="sxs-lookup"><span data-stu-id="c5446-174">Open **SharedHolograms.sln** to launch Visual Studio.</span></span>
-* <span data-ttu-id="c5446-175">使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X86**。</span><span class="sxs-lookup"><span data-stu-id="c5446-175">Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.</span></span>
-* <span data-ttu-id="c5446-176">按一下 [本機電腦] 旁的下拉箭號，然後選取 [ **遠端裝置**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-176">Click on the drop-down arrow next to Local Machine, and select **Remote Device**.</span></span>
-    * <span data-ttu-id="c5446-177">將 **位址** 設定為 HoloLens 的名稱或 IP 位址。</span><span class="sxs-lookup"><span data-stu-id="c5446-177">Set the **Address** to the name or IP address of your HoloLens.</span></span> <span data-ttu-id="c5446-178">如果您不知道您的裝置 IP 位址，請查看 [ **設定] > 網路 & 網際網路 > [Advanced Options** ] 或 [問 Cortana **] 嗨 Cortana，我的 IP 位址為何？**</span><span class="sxs-lookup"><span data-stu-id="c5446-178">If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**</span></span>
-    * <span data-ttu-id="c5446-179">將 [ **驗證模式]** 設定為 [ **通用**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-179">Leave the **Authentication Mode** set to **Universal**.</span></span>
-    * <span data-ttu-id="c5446-180">按一下 [**選取**]</span><span class="sxs-lookup"><span data-stu-id="c5446-180">Click **Select**</span></span>
-* <span data-ttu-id="c5446-181">按一下 [ **Debug > 啟動但不進行調試** ]，或按 **Ctrl + F5**。</span><span class="sxs-lookup"><span data-stu-id="c5446-181">Click **Debug > Start Without debugging** or press **Ctrl + F5**.</span></span> <span data-ttu-id="c5446-182">如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。</span><span class="sxs-lookup"><span data-stu-id="c5446-182">If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).</span></span>
-* <span data-ttu-id="c5446-183">放在 HoloLens 上，找出 EnergyHub 的全息圖。</span><span class="sxs-lookup"><span data-stu-id="c5446-183">Put on your HoloLens and find the EnergyHub hologram.</span></span>
+* <span data-ttu-id="a50e1-162">在 Unity 中，選取 [ **File > Build Settings**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-162">In Unity select **File > Build Settings**.</span></span>
+* <span data-ttu-id="a50e1-163">按一下 [ **新增開啟場景** ] 以加入場景。</span><span class="sxs-lookup"><span data-stu-id="a50e1-163">Click **Add Open Scenes** to add the scene.</span></span>
+* <span data-ttu-id="a50e1-164">在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-164">Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.</span></span>
+* <span data-ttu-id="a50e1-165">將 **SDK** 設定為 **通用 10**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-165">Set **SDK** to **Universal 10**.</span></span>
+* <span data-ttu-id="a50e1-166">將 **目標裝置** 設定為 **HoloLens** ，並將 **UWP 組建類型** 設定為 **D3D**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-166">Set **Target device** to **HoloLens** and **UWP Build Type** to **D3D**.</span></span>
+* <span data-ttu-id="a50e1-167">檢查 **Unity c # 專案**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-167">Check **Unity C# Projects**.</span></span>
+* <span data-ttu-id="a50e1-168">按一下 [建置]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-168">Click **Build**.</span></span>
+* <span data-ttu-id="a50e1-169">在出現的 [檔案瀏覽器] 視窗中，建立名為 "App" 的 **新資料夾** 。</span><span class="sxs-lookup"><span data-stu-id="a50e1-169">In the file explorer window that appears, create a **New Folder** named "App".</span></span>
+* <span data-ttu-id="a50e1-170">按一下 **應用程式** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-170">Single click the **App** folder.</span></span>
+* <span data-ttu-id="a50e1-171">按下 [ **選取資料夾**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-171">Press **Select Folder**.</span></span>
+* <span data-ttu-id="a50e1-172">當 Unity 完成時，將會出現檔案總管視窗。</span><span class="sxs-lookup"><span data-stu-id="a50e1-172">When Unity is done, a File Explorer window will appear.</span></span>
+* <span data-ttu-id="a50e1-173">開啟 **應用程式** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-173">Open the **App** folder.</span></span>
+* <span data-ttu-id="a50e1-174">開啟 **SharedHolograms** 以啟動 Visual Studio。</span><span class="sxs-lookup"><span data-stu-id="a50e1-174">Open **SharedHolograms.sln** to launch Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-175">使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X86**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-175">Using the top toolbar in Visual Studio, change the target from Debug to **Release** and from ARM to **X86**.</span></span>
+* <span data-ttu-id="a50e1-176">按一下 [本機電腦] 旁的下拉箭號，然後選取 [ **遠端裝置**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-176">Click on the drop-down arrow next to Local Machine, and select **Remote Device**.</span></span>
+    * <span data-ttu-id="a50e1-177">將 **位址** 設定為 HoloLens 的名稱或 IP 位址。</span><span class="sxs-lookup"><span data-stu-id="a50e1-177">Set the **Address** to the name or IP address of your HoloLens.</span></span> <span data-ttu-id="a50e1-178">如果您不知道您的裝置 IP 位址，請查看 [ **設定] > 網路 & 網際網路 > [Advanced Options** ] 或 [問 Cortana **] 嗨 Cortana，我的 IP 位址為何？**</span><span class="sxs-lookup"><span data-stu-id="a50e1-178">If you do not know your device IP address, look in **Settings > Network & Internet > Advanced Options** or ask Cortana **"Hey Cortana, What's my IP address?"**</span></span>
+    * <span data-ttu-id="a50e1-179">將 [ **驗證模式]** 設定為 [ **通用**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-179">Leave the **Authentication Mode** set to **Universal**.</span></span>
+    * <span data-ttu-id="a50e1-180">按一下 [**選取**]</span><span class="sxs-lookup"><span data-stu-id="a50e1-180">Click **Select**</span></span>
+* <span data-ttu-id="a50e1-181">按一下 [ **Debug > 啟動但不進行調試** ]，或按 **Ctrl + F5**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-181">Click **Debug > Start Without debugging** or press **Ctrl + F5**.</span></span> <span data-ttu-id="a50e1-182">如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-182">If this is the first time deploying to your device, you will need to [pair it with Visual Studio](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device).</span></span>
+* <span data-ttu-id="a50e1-183">放在 HoloLens 上，找出 EnergyHub 的全息圖。</span><span class="sxs-lookup"><span data-stu-id="a50e1-183">Put on your HoloLens and find the EnergyHub hologram.</span></span>
 
-## <a name="chapter-2---interaction"></a><span data-ttu-id="c5446-184">第2章-互動</span><span class="sxs-lookup"><span data-stu-id="c5446-184">Chapter 2 - Interaction</span></span>
+## <a name="chapter-2---interaction"></a><span data-ttu-id="a50e1-184">第2章-互動</span><span class="sxs-lookup"><span data-stu-id="a50e1-184">Chapter 2 - Interaction</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/W60xG15a8gc]
 
-<span data-ttu-id="c5446-185">在本章中，我們將會與我們的全像投影互動。</span><span class="sxs-lookup"><span data-stu-id="c5446-185">In this chapter, we'll interact with our holograms.</span></span> <span data-ttu-id="c5446-186">首先，我們會新增一個資料指標來視覺化我們的 [注視](../../../design/gaze-and-commit.md)。</span><span class="sxs-lookup"><span data-stu-id="c5446-186">First, we'll add a cursor to visualize our [Gaze](../../../design/gaze-and-commit.md).</span></span> <span data-ttu-id="c5446-187">接著，我們將新增 [手勢](../../../design/gaze-and-commit.md#composite-gestures) ，並使用我們的手將全息的空間放在空間中。</span><span class="sxs-lookup"><span data-stu-id="c5446-187">Then, we'll add [Gestures](../../../design/gaze-and-commit.md#composite-gestures) and use our hand to place our holograms in space.</span></span>
+<span data-ttu-id="a50e1-185">在本章中，我們將會與我們的全像投影互動。</span><span class="sxs-lookup"><span data-stu-id="a50e1-185">In this chapter, we'll interact with our holograms.</span></span> <span data-ttu-id="a50e1-186">首先，我們會新增一個資料指標來視覺化我們的 [注視](../../../design/gaze-and-commit.md)。</span><span class="sxs-lookup"><span data-stu-id="a50e1-186">First, we'll add a cursor to visualize our [Gaze](../../../design/gaze-and-commit.md).</span></span> <span data-ttu-id="a50e1-187">接著，我們將新增 [手勢](../../../design/gaze-and-commit.md#composite-gestures) ，並使用我們的手將全息的空間放在空間中。</span><span class="sxs-lookup"><span data-stu-id="a50e1-187">Then, we'll add [Gestures](../../../design/gaze-and-commit.md#composite-gestures) and use our hand to place our holograms in space.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-188">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-188">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-188">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-188">Objectives</span></span>
 
-* <span data-ttu-id="c5446-189">使用「注視輸入」來控制資料指標。</span><span class="sxs-lookup"><span data-stu-id="c5446-189">Use gaze input to control a cursor.</span></span>
-* <span data-ttu-id="c5446-190">使用手勢輸入與全像影像互動。</span><span class="sxs-lookup"><span data-stu-id="c5446-190">Use gesture input to interact with holograms.</span></span>
+* <span data-ttu-id="a50e1-189">使用「注視輸入」來控制資料指標。</span><span class="sxs-lookup"><span data-stu-id="a50e1-189">Use gaze input to control a cursor.</span></span>
+* <span data-ttu-id="a50e1-190">使用手勢輸入與全像影像互動。</span><span class="sxs-lookup"><span data-stu-id="a50e1-190">Use gesture input to interact with holograms.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-191">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-191">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-191">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-191">Instructions</span></span>
 
-<span data-ttu-id="c5446-192">**目光**</span><span class="sxs-lookup"><span data-stu-id="c5446-192">**Gaze**</span></span>
+<span data-ttu-id="a50e1-192">**目光**</span><span class="sxs-lookup"><span data-stu-id="a50e1-192">**Gaze**</span></span>
 
-* <span data-ttu-id="c5446-193">在 [階層] **面板** 中，選取 [ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-193">In the **Hierarchy panel** select the **HologramCollection** object.</span></span>
-* <span data-ttu-id="c5446-194">在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="c5446-194">In the **Inspector panel** click the **Add Component** button.</span></span>
-* <span data-ttu-id="c5446-195">在功能表中，于 [搜尋] 方塊中輸入 **注視 Manager**。</span><span class="sxs-lookup"><span data-stu-id="c5446-195">In the menu, type in the search box **Gaze Manager**.</span></span> <span data-ttu-id="c5446-196">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-196">Select the search result.</span></span>
-* <span data-ttu-id="c5446-197">在 [ **HoloToolkit-Sharing-240\Prefabs\Input** ] 資料夾中，尋找資料 **指標** 資產。</span><span class="sxs-lookup"><span data-stu-id="c5446-197">In the **HoloToolkit-Sharing-240\Prefabs\Input** folder, find the **Cursor** asset.</span></span>
-* <span data-ttu-id="c5446-198">將資料 **指標** 資產拖放到階層 **上。**</span><span class="sxs-lookup"><span data-stu-id="c5446-198">Drag and drop the **Cursor** asset onto the **Hierarchy**.</span></span>
+* <span data-ttu-id="a50e1-193">在 [階層] **面板** 中，選取 [ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-193">In the **Hierarchy panel** select the **HologramCollection** object.</span></span>
+* <span data-ttu-id="a50e1-194">在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="a50e1-194">In the **Inspector panel** click the **Add Component** button.</span></span>
+* <span data-ttu-id="a50e1-195">在功能表中，于 [搜尋] 方塊中輸入 **注視 Manager**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-195">In the menu, type in the search box **Gaze Manager**.</span></span> <span data-ttu-id="a50e1-196">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-196">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-197">在 [ **HoloToolkit-Sharing-240\Prefabs\Input** ] 資料夾中，尋找資料 **指標** 資產。</span><span class="sxs-lookup"><span data-stu-id="a50e1-197">In the **HoloToolkit-Sharing-240\Prefabs\Input** folder, find the **Cursor** asset.</span></span>
+* <span data-ttu-id="a50e1-198">將資料 **指標** 資產拖放到階層 **上。**</span><span class="sxs-lookup"><span data-stu-id="a50e1-198">Drag and drop the **Cursor** asset onto the **Hierarchy**.</span></span>
 
-<span data-ttu-id="c5446-199">**手勢**</span><span class="sxs-lookup"><span data-stu-id="c5446-199">**Gesture**</span></span>
+<span data-ttu-id="a50e1-199">**手勢**</span><span class="sxs-lookup"><span data-stu-id="a50e1-199">**Gesture**</span></span>
 
-* <span data-ttu-id="c5446-200">在 [階層] **面板** 中，選取 [ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-200">In the **Hierarchy panel** select the **HologramCollection** object.</span></span>
-* <span data-ttu-id="c5446-201">按一下 [ **新增元件** ]，然後在 [搜尋] 欄位中輸入 **手勢管理員** 。</span><span class="sxs-lookup"><span data-stu-id="c5446-201">Click **Add Component** and type **Gesture Manager** in the search field.</span></span> <span data-ttu-id="c5446-202">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-202">Select the search result.</span></span>
-* <span data-ttu-id="c5446-203">在 [階層] **面板** 中，展開 [ **HologramCollection**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-203">In the **Hierarchy panel**, expand **HologramCollection**.</span></span>
-* <span data-ttu-id="c5446-204">選取子 **EnergyHub** 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-204">Select the child **EnergyHub** object.</span></span>
-* <span data-ttu-id="c5446-205">在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="c5446-205">In the **Inspector panel** click the **Add Component** button.</span></span>
-* <span data-ttu-id="c5446-206">在功能表中，輸入搜尋方塊全息圖 **放置**。</span><span class="sxs-lookup"><span data-stu-id="c5446-206">In the menu, type in the search box **Hologram Placement**.</span></span> <span data-ttu-id="c5446-207">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-207">Select the search result.</span></span>
-* <span data-ttu-id="c5446-208">選取 [檔案] **> 儲存場景** 來儲存場景。</span><span class="sxs-lookup"><span data-stu-id="c5446-208">Save the scene by selecting **File > Save Scene**.</span></span>
+* <span data-ttu-id="a50e1-200">在 [階層] **面板** 中，選取 [ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-200">In the **Hierarchy panel** select the **HologramCollection** object.</span></span>
+* <span data-ttu-id="a50e1-201">按一下 [ **新增元件** ]，然後在 [搜尋] 欄位中輸入 **手勢管理員** 。</span><span class="sxs-lookup"><span data-stu-id="a50e1-201">Click **Add Component** and type **Gesture Manager** in the search field.</span></span> <span data-ttu-id="a50e1-202">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-202">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-203">在 [階層] **面板** 中，展開 [ **HologramCollection**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-203">In the **Hierarchy panel**, expand **HologramCollection**.</span></span>
+* <span data-ttu-id="a50e1-204">選取子 **EnergyHub** 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-204">Select the child **EnergyHub** object.</span></span>
+* <span data-ttu-id="a50e1-205">在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="a50e1-205">In the **Inspector panel** click the **Add Component** button.</span></span>
+* <span data-ttu-id="a50e1-206">在功能表中，輸入搜尋方塊全息圖 **放置**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-206">In the menu, type in the search box **Hologram Placement**.</span></span> <span data-ttu-id="a50e1-207">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-207">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-208">選取 [檔案] **> 儲存場景** 來儲存場景。</span><span class="sxs-lookup"><span data-stu-id="a50e1-208">Save the scene by selecting **File > Save Scene**.</span></span>
 
-<span data-ttu-id="c5446-209">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="c5446-209">**Deploy and enjoy**</span></span>
+<span data-ttu-id="a50e1-209">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="a50e1-209">**Deploy and enjoy**</span></span>
 
-* <span data-ttu-id="c5446-210">使用上一章的指示，建立並部署至您的 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="c5446-210">Build and deploy to your HoloLens, using the instructions from the previous chapter.</span></span>
-* <span data-ttu-id="c5446-211">在您的 HoloLens 上啟動應用程式後，請移至您的開端，並留意 EnergyHub 接在您注視的方式。</span><span class="sxs-lookup"><span data-stu-id="c5446-211">Once the app launches on your HoloLens, move your head around and notice how the EnergyHub follows your gaze.</span></span>
-* <span data-ttu-id="c5446-212">請注意，當您注視全像全像投影時，游標會如何出現，並在不撥雲見日于全像點時變更點燈。</span><span class="sxs-lookup"><span data-stu-id="c5446-212">Notice how the cursor appears when you gaze upon the hologram, and changes to a point light when not gazing at a hologram.</span></span>
-* <span data-ttu-id="c5446-213">執行點一下來放置全像。</span><span class="sxs-lookup"><span data-stu-id="c5446-213">Perform an air-tap to place the hologram.</span></span> <span data-ttu-id="c5446-214">目前，在我們的專案中，您只可以在 (重新部署時放置全像) ，然後再試一次。</span><span class="sxs-lookup"><span data-stu-id="c5446-214">At this time in our project, you can only place the hologram once (redeploy to try again).</span></span>
+* <span data-ttu-id="a50e1-210">使用上一章的指示，建立並部署至您的 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="a50e1-210">Build and deploy to your HoloLens, using the instructions from the previous chapter.</span></span>
+* <span data-ttu-id="a50e1-211">在您的 HoloLens 上啟動應用程式後，請移至您的開端，並留意 EnergyHub 接在您注視的方式。</span><span class="sxs-lookup"><span data-stu-id="a50e1-211">Once the app launches on your HoloLens, move your head around and notice how the EnergyHub follows your gaze.</span></span>
+* <span data-ttu-id="a50e1-212">請注意，當您注視全像全像投影時，游標會如何出現，並在不撥雲見日于全像點時變更點燈。</span><span class="sxs-lookup"><span data-stu-id="a50e1-212">Notice how the cursor appears when you gaze upon the hologram, and changes to a point light when not gazing at a hologram.</span></span>
+* <span data-ttu-id="a50e1-213">執行點一下來放置全像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-213">Perform an air-tap to place the hologram.</span></span> <span data-ttu-id="a50e1-214">目前，在我們的專案中，您只可以在 (重新部署時放置全像) ，然後再試一次。</span><span class="sxs-lookup"><span data-stu-id="a50e1-214">At this time in our project, you can only place the hologram once (redeploy to try again).</span></span>
 
-## <a name="chapter-3---shared-coordinates"></a><span data-ttu-id="c5446-215">第3章-共用座標</span><span class="sxs-lookup"><span data-stu-id="c5446-215">Chapter 3 - Shared Coordinates</span></span>
+## <a name="chapter-3---shared-coordinates"></a><span data-ttu-id="a50e1-215">第3章-共用座標</span><span class="sxs-lookup"><span data-stu-id="a50e1-215">Chapter 3 - Shared Coordinates</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/Ey8yBgWiqtg]
 
-<span data-ttu-id="c5446-216">您可以輕鬆查看全像影像，並與之互動，但讓我們繼續進行。</span><span class="sxs-lookup"><span data-stu-id="c5446-216">It's fun to see and interact with holograms, but let's go further.</span></span> <span data-ttu-id="c5446-217">我們會設定我們的第一個共用體驗，每個人都可以一起查看。</span><span class="sxs-lookup"><span data-stu-id="c5446-217">We'll set up our first shared experience - a hologram everyone can see together.</span></span>
+<span data-ttu-id="a50e1-216">您可以輕鬆查看全像影像，並與之互動，但讓我們繼續進行。</span><span class="sxs-lookup"><span data-stu-id="a50e1-216">It's fun to see and interact with holograms, but let's go further.</span></span> <span data-ttu-id="a50e1-217">我們會設定我們的第一個共用體驗，每個人都可以一起查看。</span><span class="sxs-lookup"><span data-stu-id="a50e1-217">We'll set up our first shared experience - a hologram everyone can see together.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-218">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-218">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-218">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-218">Objectives</span></span>
 
-* <span data-ttu-id="c5446-219">設定共用體驗的網路。</span><span class="sxs-lookup"><span data-stu-id="c5446-219">Setup a network for a shared experience.</span></span>
-* <span data-ttu-id="c5446-220">建立共同的參考點。</span><span class="sxs-lookup"><span data-stu-id="c5446-220">Establish a common reference point.</span></span>
-* <span data-ttu-id="c5446-221">跨裝置共用座標系統。</span><span class="sxs-lookup"><span data-stu-id="c5446-221">Share coordinate systems across devices.</span></span>
-* <span data-ttu-id="c5446-222">每個人都看到相同的全息圖！</span><span class="sxs-lookup"><span data-stu-id="c5446-222">Everyone sees the same hologram!</span></span>
+* <span data-ttu-id="a50e1-219">設定共用體驗的網路。</span><span class="sxs-lookup"><span data-stu-id="a50e1-219">Setup a network for a shared experience.</span></span>
+* <span data-ttu-id="a50e1-220">建立共同的參考點。</span><span class="sxs-lookup"><span data-stu-id="a50e1-220">Establish a common reference point.</span></span>
+* <span data-ttu-id="a50e1-221">跨裝置共用座標系統。</span><span class="sxs-lookup"><span data-stu-id="a50e1-221">Share coordinate systems across devices.</span></span>
+* <span data-ttu-id="a50e1-222">每個人都看到相同的全息圖！</span><span class="sxs-lookup"><span data-stu-id="a50e1-222">Everyone sees the same hologram!</span></span>
 
 >[!NOTE]
-><span data-ttu-id="c5446-223">您必須為應用程式宣告 **InternetClientServer** 和 **PrivateNetworkClientServer** 功能，才能連接到共用伺服器。</span><span class="sxs-lookup"><span data-stu-id="c5446-223">The **InternetClientServer** and **PrivateNetworkClientServer** capabilities must be declared for an app to connect to the sharing server.</span></span> <span data-ttu-id="c5446-224">這是針對您已在全像240的電腦上完成的，但請記住您自己的專案。</span><span class="sxs-lookup"><span data-stu-id="c5446-224">This is done for you already in Holograms 240, but keep this in mind for your own projects.</span></span>
+><span data-ttu-id="a50e1-223">您必須為應用程式宣告 **InternetClientServer** 和 **PrivateNetworkClientServer** 功能，才能連接到共用伺服器。</span><span class="sxs-lookup"><span data-stu-id="a50e1-223">The **InternetClientServer** and **PrivateNetworkClientServer** capabilities must be declared for an app to connect to the sharing server.</span></span> <span data-ttu-id="a50e1-224">這是針對您已在全像240的電腦上完成的，但請記住您自己的專案。</span><span class="sxs-lookup"><span data-stu-id="a50e1-224">This is done for you already in Holograms 240, but keep this in mind for your own projects.</span></span>
 
->1. <span data-ttu-id="c5446-225">在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定</span><span class="sxs-lookup"><span data-stu-id="c5446-225">In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"</span></span>
->2. <span data-ttu-id="c5446-226">按一下 [Windows 市存放區] 索引標籤</span><span class="sxs-lookup"><span data-stu-id="c5446-226">Click on the "Windows Store" tab</span></span>
->3. <span data-ttu-id="c5446-227">在 [發佈設定 > 功能] 區段中，檢查 **InternetClientServer** 功能和 **PrivateNetworkClientServer** 功能</span><span class="sxs-lookup"><span data-stu-id="c5446-227">In the "Publishing Settings > Capabilities" section, check the **InternetClientServer** capability and the **PrivateNetworkClientServer** capability</span></span>
+>1. <span data-ttu-id="a50e1-225">在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定</span><span class="sxs-lookup"><span data-stu-id="a50e1-225">In the Unity Editor, go to the player settings by navigating to "Edit > Project Settings > Player"</span></span>
+>2. <span data-ttu-id="a50e1-226">按一下 [Windows 市存放區] 索引標籤</span><span class="sxs-lookup"><span data-stu-id="a50e1-226">Click on the "Windows Store" tab</span></span>
+>3. <span data-ttu-id="a50e1-227">在 [發佈設定 > 功能] 區段中，檢查 **InternetClientServer** 功能和 **PrivateNetworkClientServer** 功能</span><span class="sxs-lookup"><span data-stu-id="a50e1-227">In the "Publishing Settings > Capabilities" section, check the **InternetClientServer** capability and the **PrivateNetworkClientServer** capability</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-228">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-228">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-228">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-228">Instructions</span></span>
 
-* <span data-ttu-id="c5446-229">在 [ **專案] 面板** 中，流覽至 [ **HoloToolkit-Sharing-240\Prefabs\Sharing** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-229">In the **Project panel** navigate to the **HoloToolkit-Sharing-240\Prefabs\Sharing** folder.</span></span>
-* <span data-ttu-id="c5446-230">將 **共用** 預製專案拖放到 [階層] **面板** 中。</span><span class="sxs-lookup"><span data-stu-id="c5446-230">Drag and drop the **Sharing** prefab into the **Hierarchy panel**.</span></span>
+* <span data-ttu-id="a50e1-229">在 [ **專案] 面板** 中，流覽至 [ **HoloToolkit-Sharing-240\Prefabs\Sharing** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-229">In the **Project panel** navigate to the **HoloToolkit-Sharing-240\Prefabs\Sharing** folder.</span></span>
+* <span data-ttu-id="a50e1-230">將 **共用** 預製專案拖放到 [階層] **面板** 中。</span><span class="sxs-lookup"><span data-stu-id="a50e1-230">Drag and drop the **Sharing** prefab into the **Hierarchy panel**.</span></span>
 
-<span data-ttu-id="c5446-231">接下來我們需要啟動共用服務。</span><span class="sxs-lookup"><span data-stu-id="c5446-231">Next we need to launch the sharing service.</span></span> <span data-ttu-id="c5446-232">只有 **一部電腦** 在共用體驗中需要執行這個步驟。</span><span class="sxs-lookup"><span data-stu-id="c5446-232">Only **one PC** in the shared experience needs to do this step.</span></span>
+<span data-ttu-id="a50e1-231">接下來我們需要啟動共用服務。</span><span class="sxs-lookup"><span data-stu-id="a50e1-231">Next we need to launch the sharing service.</span></span> <span data-ttu-id="a50e1-232">只有 **一部電腦** 在共用體驗中需要執行這個步驟。</span><span class="sxs-lookup"><span data-stu-id="a50e1-232">Only **one PC** in the shared experience needs to do this step.</span></span>
 
-* <span data-ttu-id="c5446-233">在 Unity 中-在最上層功能表中，選取 [ **HoloToolkit-共用-240] 功能表**。</span><span class="sxs-lookup"><span data-stu-id="c5446-233">In Unity - in the top-hand menu - select the **HoloToolkit-Sharing-240 menu**.</span></span>
-* <span data-ttu-id="c5446-234">在下拉式清單中選取 [ **啟動共用服務** ] 專案。</span><span class="sxs-lookup"><span data-stu-id="c5446-234">Select the **Launch Sharing Service** item in the drop-down.</span></span>
-* <span data-ttu-id="c5446-235">核取 [ **私人網路** ] 選項，然後在出現防火牆提示時按一下 [ **允許存取** ]。</span><span class="sxs-lookup"><span data-stu-id="c5446-235">Check the **Private Network** option and click **Allow Access** when the firewall prompt appears.</span></span>
-* <span data-ttu-id="c5446-236">記下 [共用服務主控台] 視窗中顯示的 IPv4 位址。</span><span class="sxs-lookup"><span data-stu-id="c5446-236">Note down the IPv4 address displayed in the Sharing Service console window.</span></span> <span data-ttu-id="c5446-237">這與執行服務的電腦是相同的 IP。</span><span class="sxs-lookup"><span data-stu-id="c5446-237">This is the same IP as the machine the service is being run on.</span></span>
+* <span data-ttu-id="a50e1-233">在 Unity 中-在最上層功能表中，選取 [ **HoloToolkit-共用-240] 功能表**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-233">In Unity - in the top-hand menu - select the **HoloToolkit-Sharing-240 menu**.</span></span>
+* <span data-ttu-id="a50e1-234">在下拉式清單中選取 [ **啟動共用服務** ] 專案。</span><span class="sxs-lookup"><span data-stu-id="a50e1-234">Select the **Launch Sharing Service** item in the drop-down.</span></span>
+* <span data-ttu-id="a50e1-235">核取 [ **私人網路** ] 選項，然後在出現防火牆提示時按一下 [ **允許存取** ]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-235">Check the **Private Network** option and click **Allow Access** when the firewall prompt appears.</span></span>
+* <span data-ttu-id="a50e1-236">記下 [共用服務主控台] 視窗中顯示的 IPv4 位址。</span><span class="sxs-lookup"><span data-stu-id="a50e1-236">Note down the IPv4 address displayed in the Sharing Service console window.</span></span> <span data-ttu-id="a50e1-237">這與執行服務的電腦是相同的 IP。</span><span class="sxs-lookup"><span data-stu-id="a50e1-237">This is the same IP as the machine the service is being run on.</span></span>
 
-<span data-ttu-id="c5446-238">遵循將加入共用體驗的 **所有電腦** 上的其他指示。</span><span class="sxs-lookup"><span data-stu-id="c5446-238">Follow the rest of the instructions on **all PCs** that will join the shared experience.</span></span>
+<span data-ttu-id="a50e1-238">遵循將加入共用體驗的 **所有電腦** 上的其他指示。</span><span class="sxs-lookup"><span data-stu-id="a50e1-238">Follow the rest of the instructions on **all PCs** that will join the shared experience.</span></span>
 
-* <span data-ttu-id="c5446-239">**在階層中，選取\*\*\*\*共用** 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-239">In the **Hierarchy**, select the **Sharing** object.</span></span>
-* <span data-ttu-id="c5446-240">在偵測 **器** 的 **共用階段** 元件上，將 **伺服器位址** 從 ' localhost ' 變更為執行 SharingService.exe 之電腦的 IPv4 位址。</span><span class="sxs-lookup"><span data-stu-id="c5446-240">In the **Inspector**, on the **Sharing Stage** component, change the **Server Address** from 'localhost' to the IPv4 address of the machine running SharingService.exe.</span></span>
-* <span data-ttu-id="c5446-241">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-241">In the **Hierarchy** select the **HologramCollection** object.</span></span>
-* <span data-ttu-id="c5446-242">在 [偵測 **器** ] 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="c5446-242">In the **Inspector** click the **Add Component** button.</span></span>
-* <span data-ttu-id="c5446-243">在搜尋方塊中，輸入匯 **入匯出錨點管理員**。</span><span class="sxs-lookup"><span data-stu-id="c5446-243">In the search box, type **Import Export Anchor Manager**.</span></span> <span data-ttu-id="c5446-244">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-244">Select the search result.</span></span>
-* <span data-ttu-id="c5446-245">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-245">In the **Project panel** navigate to the **Scripts** folder.</span></span>
-* <span data-ttu-id="c5446-246">按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="c5446-246">Double-click the **HologramPlacement** script to open it in Visual Studio.</span></span>
-* <span data-ttu-id="c5446-247">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="c5446-247">Replace the contents with the code below.</span></span>
+* <span data-ttu-id="a50e1-239">**在階層中，選取\*\*\*\*共用** 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-239">In the **Hierarchy**, select the **Sharing** object.</span></span>
+* <span data-ttu-id="a50e1-240">在偵測 **器** 的 **共用階段** 元件上，將 **伺服器位址** 從 ' localhost ' 變更為執行 SharingService.exe 之電腦的 IPv4 位址。</span><span class="sxs-lookup"><span data-stu-id="a50e1-240">In the **Inspector**, on the **Sharing Stage** component, change the **Server Address** from 'localhost' to the IPv4 address of the machine running SharingService.exe.</span></span>
+* <span data-ttu-id="a50e1-241">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-241">In the **Hierarchy** select the **HologramCollection** object.</span></span>
+* <span data-ttu-id="a50e1-242">在 [偵測 **器** ] 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="a50e1-242">In the **Inspector** click the **Add Component** button.</span></span>
+* <span data-ttu-id="a50e1-243">在搜尋方塊中，輸入匯 **入匯出錨點管理員**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-243">In the search box, type **Import Export Anchor Manager**.</span></span> <span data-ttu-id="a50e1-244">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-244">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-245">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-245">In the **Project panel** navigate to the **Scripts** folder.</span></span>
+* <span data-ttu-id="a50e1-246">按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="a50e1-246">Double-click the **HologramPlacement** script to open it in Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-247">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-247">Replace the contents with the code below.</span></span>
 
 ```cs
 using UnityEngine;
@@ -295,37 +295,37 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* <span data-ttu-id="c5446-248">回到 Unity，在 [階層]**面板** 中選取 **HologramCollection** 。</span><span class="sxs-lookup"><span data-stu-id="c5446-248">Back in Unity, select the **HologramCollection** in the **Hierarchy panel**.</span></span>
-* <span data-ttu-id="c5446-249">在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="c5446-249">In the **Inspector panel** click the **Add Component** button.</span></span>
-* <span data-ttu-id="c5446-250">在功能表中，輸入搜尋 box **應用程式狀態管理員**。</span><span class="sxs-lookup"><span data-stu-id="c5446-250">In the menu, type in the search box **App State Manager**.</span></span> <span data-ttu-id="c5446-251">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-251">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-248">回到 Unity，在 [階層]**面板** 中選取 **HologramCollection** 。</span><span class="sxs-lookup"><span data-stu-id="a50e1-248">Back in Unity, select the **HologramCollection** in the **Hierarchy panel**.</span></span>
+* <span data-ttu-id="a50e1-249">在 [偵測 **器] 面板** 中，按一下 [ **新增元件** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="a50e1-249">In the **Inspector panel** click the **Add Component** button.</span></span>
+* <span data-ttu-id="a50e1-250">在功能表中，輸入搜尋 box **應用程式狀態管理員**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-250">In the menu, type in the search box **App State Manager**.</span></span> <span data-ttu-id="a50e1-251">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-251">Select the search result.</span></span>
 
-<span data-ttu-id="c5446-252">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="c5446-252">**Deploy and enjoy**</span></span>
+<span data-ttu-id="a50e1-252">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="a50e1-252">**Deploy and enjoy**</span></span>
 
-* <span data-ttu-id="c5446-253">建立 HoloLens 裝置的專案。</span><span class="sxs-lookup"><span data-stu-id="c5446-253">Build the project for your HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-254">指定一個 HoloLens 以先部署到其中。</span><span class="sxs-lookup"><span data-stu-id="c5446-254">Designate one HoloLens to deploy to first.</span></span> <span data-ttu-id="c5446-255">您必須等待錨點上傳至服務，才能放置 EnergyHub (這可能需要大約30-60 秒的時間) 。</span><span class="sxs-lookup"><span data-stu-id="c5446-255">You will need to wait for the Anchor to be uploaded to the service before you can place the EnergyHub (this can take ~30-60 seconds).</span></span> <span data-ttu-id="c5446-256">在上傳完成之前，您的分流手勢將會被忽略。</span><span class="sxs-lookup"><span data-stu-id="c5446-256">Until the upload is done, your tap gestures will be ignored.</span></span>
-* <span data-ttu-id="c5446-257">放置 EnergyHub 之後，其位置會上傳至服務，然後您就可以部署到所有其他 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="c5446-257">After the EnergyHub has been placed, its location will be uploaded to the service and you can then deploy to all other HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-258">當新的 HoloLens 首次加入會話時，該裝置上的 EnergyHub 位置可能不正確。</span><span class="sxs-lookup"><span data-stu-id="c5446-258">When a new HoloLens first joins the session, the location of the EnergyHub may not be correct on that device.</span></span> <span data-ttu-id="c5446-259">不過，一旦從服務下載錨點和 EnergyHub 位置，EnergyHub 應該會跳至新的共用位置。</span><span class="sxs-lookup"><span data-stu-id="c5446-259">However, as soon as the anchor and EnergyHub locations have been downloaded from the service, the EnergyHub should jump to the new, shared location.</span></span> <span data-ttu-id="c5446-260">如果這不是在 ~ 30-60 秒內發生，請在設定錨點以收集更多環境線索時，逐步解說原始 HoloLens 的所在位置。</span><span class="sxs-lookup"><span data-stu-id="c5446-260">If this does not happen within ~30-60 seconds, walk to where the original HoloLens was when setting the anchor to gather more environment clues.</span></span> <span data-ttu-id="c5446-261">如果位置仍未鎖定，請重新部署至裝置。</span><span class="sxs-lookup"><span data-stu-id="c5446-261">If the location still does not lock on, redeploy to the device.</span></span>
-* <span data-ttu-id="c5446-262">當裝置都已就緒且正在執行應用程式時，請尋找 EnergyHub。</span><span class="sxs-lookup"><span data-stu-id="c5446-262">When the devices are all ready and running the app, look for the EnergyHub.</span></span> <span data-ttu-id="c5446-263">您是否同意全像全像全像全像全像全像全庫存的位置，以及文字面向的方向？</span><span class="sxs-lookup"><span data-stu-id="c5446-263">Can you all agree on the hologram's location and which direction the text is facing?</span></span>
+* <span data-ttu-id="a50e1-253">建立 HoloLens 裝置的專案。</span><span class="sxs-lookup"><span data-stu-id="a50e1-253">Build the project for your HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-254">指定一個 HoloLens 以先部署到其中。</span><span class="sxs-lookup"><span data-stu-id="a50e1-254">Designate one HoloLens to deploy to first.</span></span> <span data-ttu-id="a50e1-255">您必須等待錨點上傳至服務，才能放置 EnergyHub (這可能需要大約30-60 秒的時間) 。</span><span class="sxs-lookup"><span data-stu-id="a50e1-255">You will need to wait for the Anchor to be uploaded to the service before you can place the EnergyHub (this can take ~30-60 seconds).</span></span> <span data-ttu-id="a50e1-256">在上傳完成之前，您的分流手勢將會被忽略。</span><span class="sxs-lookup"><span data-stu-id="a50e1-256">Until the upload is done, your tap gestures will be ignored.</span></span>
+* <span data-ttu-id="a50e1-257">放置 EnergyHub 之後，其位置會上傳至服務，然後您就可以部署到所有其他 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-257">After the EnergyHub has been placed, its location will be uploaded to the service and you can then deploy to all other HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-258">當新的 HoloLens 首次加入會話時，該裝置上的 EnergyHub 位置可能不正確。</span><span class="sxs-lookup"><span data-stu-id="a50e1-258">When a new HoloLens first joins the session, the location of the EnergyHub may not be correct on that device.</span></span> <span data-ttu-id="a50e1-259">不過，一旦從服務下載錨點和 EnergyHub 位置，EnergyHub 應該會跳至新的共用位置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-259">However, as soon as the anchor and EnergyHub locations have been downloaded from the service, the EnergyHub should jump to the new, shared location.</span></span> <span data-ttu-id="a50e1-260">如果這不是在 ~ 30-60 秒內發生，請在設定錨點以收集更多環境線索時，逐步解說原始 HoloLens 的所在位置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-260">If this does not happen within ~30-60 seconds, walk to where the original HoloLens was when setting the anchor to gather more environment clues.</span></span> <span data-ttu-id="a50e1-261">如果位置仍未鎖定，請重新部署至裝置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-261">If the location still does not lock on, redeploy to the device.</span></span>
+* <span data-ttu-id="a50e1-262">當裝置都已就緒且正在執行應用程式時，請尋找 EnergyHub。</span><span class="sxs-lookup"><span data-stu-id="a50e1-262">When the devices are all ready and running the app, look for the EnergyHub.</span></span> <span data-ttu-id="a50e1-263">您是否同意全像全像全像全像全像全像全庫存的位置，以及文字面向的方向？</span><span class="sxs-lookup"><span data-stu-id="a50e1-263">Can you all agree on the hologram's location and which direction the text is facing?</span></span>
 
-## <a name="chapter-4---discovery"></a><span data-ttu-id="c5446-264">第4章-探索</span><span class="sxs-lookup"><span data-stu-id="c5446-264">Chapter 4 - Discovery</span></span>
+## <a name="chapter-4---discovery"></a><span data-ttu-id="a50e1-264">第4章-探索</span><span class="sxs-lookup"><span data-stu-id="a50e1-264">Chapter 4 - Discovery</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/5NxJWMV4BP8]
 
-<span data-ttu-id="c5446-265">每個人現在都可以看到相同的全息圖！</span><span class="sxs-lookup"><span data-stu-id="c5446-265">Everyone can now see the same hologram!</span></span> <span data-ttu-id="c5446-266">現在讓我們看看其他人連線到我們分享的全像全球。</span><span class="sxs-lookup"><span data-stu-id="c5446-266">Now let's see everyone else connected to our shared holographic world.</span></span> <span data-ttu-id="c5446-267">在本章中，我們將在相同的共用會話中抓取所有其他 HoloLens 裝置的前端位置和旋轉。</span><span class="sxs-lookup"><span data-stu-id="c5446-267">In this chapter, we'll grab the head location and rotation of all other HoloLens devices in the same sharing session.</span></span>
+<span data-ttu-id="a50e1-265">每個人現在都可以看到相同的全息圖！</span><span class="sxs-lookup"><span data-stu-id="a50e1-265">Everyone can now see the same hologram!</span></span> <span data-ttu-id="a50e1-266">現在讓我們看看其他人連線到我們分享的全像全球。</span><span class="sxs-lookup"><span data-stu-id="a50e1-266">Now let's see everyone else connected to our shared holographic world.</span></span> <span data-ttu-id="a50e1-267">在本章中，我們將在相同的共用會話中抓取所有其他 HoloLens 裝置的前端位置和旋轉。</span><span class="sxs-lookup"><span data-stu-id="a50e1-267">In this chapter, we'll grab the head location and rotation of all other HoloLens devices in the same sharing session.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-268">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-268">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-268">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-268">Objectives</span></span>
 
-* <span data-ttu-id="c5446-269">在我們的共用體驗中找到彼此。</span><span class="sxs-lookup"><span data-stu-id="c5446-269">Discover each other in our shared experience.</span></span>
-* <span data-ttu-id="c5446-270">選擇並分享玩家頭像。</span><span class="sxs-lookup"><span data-stu-id="c5446-270">Choose and share a player avatar.</span></span>
-* <span data-ttu-id="c5446-271">將玩家頭像附加到每個人的標題旁邊。</span><span class="sxs-lookup"><span data-stu-id="c5446-271">Attach the player avatar next to everyone's heads.</span></span>
+* <span data-ttu-id="a50e1-269">在我們的共用體驗中找到彼此。</span><span class="sxs-lookup"><span data-stu-id="a50e1-269">Discover each other in our shared experience.</span></span>
+* <span data-ttu-id="a50e1-270">選擇並分享玩家頭像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-270">Choose and share a player avatar.</span></span>
+* <span data-ttu-id="a50e1-271">將玩家頭像附加到每個人的標題旁邊。</span><span class="sxs-lookup"><span data-stu-id="a50e1-271">Attach the player avatar next to everyone's heads.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-272">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-272">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-272">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-272">Instructions</span></span>
 
-* <span data-ttu-id="c5446-273">在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-273">In the **Project panel** navigate to the **Holograms** folder.</span></span>
-* <span data-ttu-id="c5446-274">將 **PlayerAvatarStore** 拖放到階層中 **。**</span><span class="sxs-lookup"><span data-stu-id="c5446-274">Drag and drop the **PlayerAvatarStore** into the **Hierarchy**.</span></span>
-* <span data-ttu-id="c5446-275">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-275">In the **Project panel** navigate to the **Scripts** folder.</span></span>
-* <span data-ttu-id="c5446-276">按兩下 **AvatarSelector** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="c5446-276">Double-click the **AvatarSelector** script to open it in Visual Studio.</span></span>
-* <span data-ttu-id="c5446-277">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="c5446-277">Replace the contents with the code below.</span></span>
+* <span data-ttu-id="a50e1-273">在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-273">In the **Project panel** navigate to the **Holograms** folder.</span></span>
+* <span data-ttu-id="a50e1-274">將 **PlayerAvatarStore** 拖放到階層中 **。**</span><span class="sxs-lookup"><span data-stu-id="a50e1-274">Drag and drop the **PlayerAvatarStore** into the **Hierarchy**.</span></span>
+* <span data-ttu-id="a50e1-275">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-275">In the **Project panel** navigate to the **Scripts** folder.</span></span>
+* <span data-ttu-id="a50e1-276">按兩下 **AvatarSelector** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="a50e1-276">Double-click the **AvatarSelector** script to open it in Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-277">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-277">Replace the contents with the code below.</span></span>
 
 ```cs
 using UnityEngine;
@@ -367,14 +367,14 @@ public class AvatarSelector : MonoBehaviour
 }
 ```
 
-* <span data-ttu-id="c5446-278">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-278">In the **Hierarchy** select the **HologramCollection** object.</span></span>
-* <span data-ttu-id="c5446-279">在 [偵測 **器** ] 中按一下 [ **新增元件**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-279">In the **Inspector** click **Add Component**.</span></span>
-* <span data-ttu-id="c5446-280">在 [搜尋] 方塊中，輸入「 **本機播放機管理員**」。</span><span class="sxs-lookup"><span data-stu-id="c5446-280">In the search box, type **Local Player Manager**.</span></span> <span data-ttu-id="c5446-281">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-281">Select the search result.</span></span>
-* <span data-ttu-id="c5446-282">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-282">In the **Hierarchy** select the **HologramCollection** object.</span></span>
-* <span data-ttu-id="c5446-283">在 [偵測 **器** ] 中按一下 [ **新增元件**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-283">In the **Inspector** click **Add Component**.</span></span>
-* <span data-ttu-id="c5446-284">在 [搜尋] 方塊中，輸入 **Remote Player Manager**。</span><span class="sxs-lookup"><span data-stu-id="c5446-284">In the search box, type **Remote Player Manager**.</span></span> <span data-ttu-id="c5446-285">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-285">Select the search result.</span></span>
-* <span data-ttu-id="c5446-286">在 Visual Studio 中開啟 **HologramPlacement** 腳本。</span><span class="sxs-lookup"><span data-stu-id="c5446-286">Open the **HologramPlacement** script in Visual Studio.</span></span>
-* <span data-ttu-id="c5446-287">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="c5446-287">Replace the contents with the code below.</span></span>
+* <span data-ttu-id="a50e1-278">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-278">In the **Hierarchy** select the **HologramCollection** object.</span></span>
+* <span data-ttu-id="a50e1-279">在 [偵測 **器** ] 中按一下 [ **新增元件**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-279">In the **Inspector** click **Add Component**.</span></span>
+* <span data-ttu-id="a50e1-280">在 [搜尋] 方塊中，輸入「 **本機播放機管理員**」。</span><span class="sxs-lookup"><span data-stu-id="a50e1-280">In the search box, type **Local Player Manager**.</span></span> <span data-ttu-id="a50e1-281">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-281">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-282">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-282">In the **Hierarchy** select the **HologramCollection** object.</span></span>
+* <span data-ttu-id="a50e1-283">在 [偵測 **器** ] 中按一下 [ **新增元件**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-283">In the **Inspector** click **Add Component**.</span></span>
+* <span data-ttu-id="a50e1-284">在 [搜尋] 方塊中，輸入 **Remote Player Manager**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-284">In the search box, type **Remote Player Manager**.</span></span> <span data-ttu-id="a50e1-285">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-285">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-286">在 Visual Studio 中開啟 **HologramPlacement** 腳本。</span><span class="sxs-lookup"><span data-stu-id="a50e1-286">Open the **HologramPlacement** script in Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-287">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-287">Replace the contents with the code below.</span></span>
 
 ```cs
 using UnityEngine;
@@ -532,8 +532,8 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-* <span data-ttu-id="c5446-288">在 Visual Studio 中開啟 **AppStateManager** 腳本。</span><span class="sxs-lookup"><span data-stu-id="c5446-288">Open the **AppStateManager** script in Visual Studio.</span></span>
-* <span data-ttu-id="c5446-289">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="c5446-289">Replace the contents with the code below.</span></span>
+* <span data-ttu-id="a50e1-288">在 Visual Studio 中開啟 **AppStateManager** 腳本。</span><span class="sxs-lookup"><span data-stu-id="a50e1-288">Open the **AppStateManager** script in Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-289">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-289">Replace the contents with the code below.</span></span>
 
 ```cs
 using UnityEngine;
@@ -601,30 +601,30 @@ public class AppStateManager : Singleton<AppStateManager>
 }
 ```
 
-<span data-ttu-id="c5446-290">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="c5446-290">**Deploy and Enjoy**</span></span>
+<span data-ttu-id="a50e1-290">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="a50e1-290">**Deploy and Enjoy**</span></span>
 
-* <span data-ttu-id="c5446-291">建立專案，並將其部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="c5446-291">Build and deploy the project to your HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-292">當您聽到 ping 音效時，請尋找 [顯示圖片] 的 [選取專案] 功能表，並選取具有 [點一下] 手勢的圖片。</span><span class="sxs-lookup"><span data-stu-id="c5446-292">When you hear a pinging sound, find the avatar selection menu and select an avatar with the air-tap gesture.</span></span>
-* <span data-ttu-id="c5446-293">如果您不想查看任何全息體，則當 HoloLens 與服務進行通訊時，游標周圍的點燈將會變成不同的色彩：初始化 (深紫色) 、將錨點下載 (綠色) 、匯入/匯出位置資料 (黃色) 、將錨點上傳 (藍色) 。</span><span class="sxs-lookup"><span data-stu-id="c5446-293">If you're not looking at any holograms, the point light around your cursor will turn a different color when your HoloLens is communicating with the service: initializing (dark purple), downloading the anchor (green), importing/exporting location data (yellow), uploading the anchor (blue).</span></span> <span data-ttu-id="c5446-294">如果游標周圍的點燈是預設色彩 (淺紫色) ，您就可以開始與會話中的其他玩家互動！</span><span class="sxs-lookup"><span data-stu-id="c5446-294">If your point light around your cursor is the default color (light purple), then you are ready to interact with other players in your session!</span></span>
-* <span data-ttu-id="c5446-295">查看連接到您空間的其他人-將會有一位全像的機器人，並模擬其頭部運動！</span><span class="sxs-lookup"><span data-stu-id="c5446-295">Look at other people connected to your space - there will be a holographic robot floating above their shoulder and mimicking their head motions!</span></span>
+* <span data-ttu-id="a50e1-291">建立專案，並將其部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-291">Build and deploy the project to your HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-292">當您聽到 ping 音效時，請尋找 [顯示圖片] 的 [選取專案] 功能表，並選取具有 [點一下] 手勢的圖片。</span><span class="sxs-lookup"><span data-stu-id="a50e1-292">When you hear a pinging sound, find the avatar selection menu and select an avatar with the air-tap gesture.</span></span>
+* <span data-ttu-id="a50e1-293">如果您不想查看任何全息體，則當 HoloLens 與服務進行通訊時，游標周圍的點燈將會變成不同的色彩：初始化 (深紫色) 、將錨點下載 (綠色) 、匯入/匯出位置資料 (黃色) 、將錨點上傳 (藍色) 。</span><span class="sxs-lookup"><span data-stu-id="a50e1-293">If you're not looking at any holograms, the point light around your cursor will turn a different color when your HoloLens is communicating with the service: initializing (dark purple), downloading the anchor (green), importing/exporting location data (yellow), uploading the anchor (blue).</span></span> <span data-ttu-id="a50e1-294">如果游標周圍的點燈是預設色彩 (淺紫色) ，您就可以開始與會話中的其他玩家互動！</span><span class="sxs-lookup"><span data-stu-id="a50e1-294">If your point light around your cursor is the default color (light purple), then you are ready to interact with other players in your session!</span></span>
+* <span data-ttu-id="a50e1-295">查看連接到您空間的其他人-將會有一位全像的機器人，並模擬其頭部運動！</span><span class="sxs-lookup"><span data-stu-id="a50e1-295">Look at other people connected to your space - there will be a holographic robot floating above their shoulder and mimicking their head motions!</span></span>
 
-## <a name="chapter-5---placement"></a><span data-ttu-id="c5446-296">第5章-放置</span><span class="sxs-lookup"><span data-stu-id="c5446-296">Chapter 5 - Placement</span></span>
+## <a name="chapter-5---placement"></a><span data-ttu-id="a50e1-296">第5章-放置</span><span class="sxs-lookup"><span data-stu-id="a50e1-296">Chapter 5 - Placement</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/afFTwHQIw0s]
 
-<span data-ttu-id="c5446-297">在本章中，我們會讓錨點放在實際的表面上。</span><span class="sxs-lookup"><span data-stu-id="c5446-297">In this chapter, we'll make the anchor able to be placed on real-world surfaces.</span></span> <span data-ttu-id="c5446-298">我們將使用共用座標，將該錨點放在所有連線到共用體驗的人之間的中間點。</span><span class="sxs-lookup"><span data-stu-id="c5446-298">We'll use shared coordinates to place that anchor in the middle point between everyone connected to the shared experience.</span></span>
+<span data-ttu-id="a50e1-297">在本章中，我們會讓錨點放在實際的表面上。</span><span class="sxs-lookup"><span data-stu-id="a50e1-297">In this chapter, we'll make the anchor able to be placed on real-world surfaces.</span></span> <span data-ttu-id="a50e1-298">我們將使用共用座標，將該錨點放在所有連線到共用體驗的人之間的中間點。</span><span class="sxs-lookup"><span data-stu-id="a50e1-298">We'll use shared coordinates to place that anchor in the middle point between everyone connected to the shared experience.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-299">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-299">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-299">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-299">Objectives</span></span>
 
-* <span data-ttu-id="c5446-300">根據玩家的標頭位置，在空間對應網格上放置全像影像。</span><span class="sxs-lookup"><span data-stu-id="c5446-300">Place holograms on the spatial mapping mesh based on players’ head position.</span></span>
+* <span data-ttu-id="a50e1-300">根據玩家的標頭位置，在空間對應網格上放置全像影像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-300">Place holograms on the spatial mapping mesh based on players’ head position.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-301">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-301">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-301">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-301">Instructions</span></span>
 
-* <span data-ttu-id="c5446-302">在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-302">In the **Project panel** navigate to the **Holograms** folder.</span></span>
-* <span data-ttu-id="c5446-303">將 **CustomSpatialMapping** 預製專案拖放到階層上 **。**</span><span class="sxs-lookup"><span data-stu-id="c5446-303">Drag and drop the **CustomSpatialMapping** prefab onto the **Hierarchy**.</span></span>
-* <span data-ttu-id="c5446-304">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-304">In the **Project panel** navigate to the **Scripts** folder.</span></span>
-* <span data-ttu-id="c5446-305">按兩下 **AppStateManager** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="c5446-305">Double-click the **AppStateManager** script to open it in Visual Studio.</span></span>
-* <span data-ttu-id="c5446-306">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="c5446-306">Replace the contents with the code below.</span></span>
+* <span data-ttu-id="a50e1-302">在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-302">In the **Project panel** navigate to the **Holograms** folder.</span></span>
+* <span data-ttu-id="a50e1-303">將 **CustomSpatialMapping** 預製專案拖放到階層上 **。**</span><span class="sxs-lookup"><span data-stu-id="a50e1-303">Drag and drop the **CustomSpatialMapping** prefab onto the **Hierarchy**.</span></span>
+* <span data-ttu-id="a50e1-304">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-304">In the **Project panel** navigate to the **Scripts** folder.</span></span>
+* <span data-ttu-id="a50e1-305">按兩下 **AppStateManager** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="a50e1-305">Double-click the **AppStateManager** script to open it in Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-306">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-306">Replace the contents with the code below.</span></span>
 
 ```cs
 using UnityEngine;
@@ -729,9 +729,9 @@ public class AppStateManager : Singleton<AppStateManager>
 }
 ```
 
-* <span data-ttu-id="c5446-307">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-307">In the **Project panel** navigate to the **Scripts** folder.</span></span>
-* <span data-ttu-id="c5446-308">按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="c5446-308">Double-click the **HologramPlacement** script to open it in Visual Studio.</span></span>
-* <span data-ttu-id="c5446-309">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="c5446-309">Replace the contents with the code below.</span></span>
+* <span data-ttu-id="a50e1-307">在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-307">In the **Project panel** navigate to the **Scripts** folder.</span></span>
+* <span data-ttu-id="a50e1-308">按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。</span><span class="sxs-lookup"><span data-stu-id="a50e1-308">Double-click the **HologramPlacement** script to open it in Visual Studio.</span></span>
+* <span data-ttu-id="a50e1-309">使用以下列程式碼取代內容。</span><span class="sxs-lookup"><span data-stu-id="a50e1-309">Replace the contents with the code below.</span></span>
 
 ```cs
 using UnityEngine;
@@ -979,57 +979,57 @@ public class HologramPlacement : Singleton<HologramPlacement>
 }
 ```
 
-<span data-ttu-id="c5446-310">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="c5446-310">**Deploy and enjoy**</span></span>
+<span data-ttu-id="a50e1-310">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="a50e1-310">**Deploy and enjoy**</span></span>
 
-* <span data-ttu-id="c5446-311">建立專案，並將其部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="c5446-311">Build and deploy the project to your HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-312">當應用程式準備就緒時，請將其放在圓形中，並注意 EnergyHub 如何顯示在每個人的中心。</span><span class="sxs-lookup"><span data-stu-id="c5446-312">When the app is ready, stand in a circle and notice how the EnergyHub appears in the center of everyone.</span></span>
-* <span data-ttu-id="c5446-313">點擊以放置 EnergyHub。</span><span class="sxs-lookup"><span data-stu-id="c5446-313">Tap to place the EnergyHub.</span></span>
-* <span data-ttu-id="c5446-314">請嘗試語音命令「重設目標」來挑選 EnergyHub 備份，並以群組方式一起工作，以將全息圖移至新位置。</span><span class="sxs-lookup"><span data-stu-id="c5446-314">Try the voice command 'Reset Target' to pick the EnergyHub back up and work together as a group to move the hologram to a new location.</span></span>
+* <span data-ttu-id="a50e1-311">建立專案，並將其部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-311">Build and deploy the project to your HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-312">當應用程式準備就緒時，請將其放在圓形中，並注意 EnergyHub 如何顯示在每個人的中心。</span><span class="sxs-lookup"><span data-stu-id="a50e1-312">When the app is ready, stand in a circle and notice how the EnergyHub appears in the center of everyone.</span></span>
+* <span data-ttu-id="a50e1-313">點擊以放置 EnergyHub。</span><span class="sxs-lookup"><span data-stu-id="a50e1-313">Tap to place the EnergyHub.</span></span>
+* <span data-ttu-id="a50e1-314">請嘗試語音命令「重設目標」來挑選 EnergyHub 備份，並以群組方式一起工作，以將全息圖移至新位置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-314">Try the voice command 'Reset Target' to pick the EnergyHub back up and work together as a group to move the hologram to a new location.</span></span>
 
-## <a name="chapter-6---real-world-physics"></a><span data-ttu-id="c5446-315">第6章-Real-World 物理</span><span class="sxs-lookup"><span data-stu-id="c5446-315">Chapter 6 - Real-World Physics</span></span>
+## <a name="chapter-6---real-world-physics"></a><span data-ttu-id="a50e1-315">第6章-Real-World 物理</span><span class="sxs-lookup"><span data-stu-id="a50e1-315">Chapter 6 - Real-World Physics</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/XNpQVSyXwMo]
 
-<span data-ttu-id="c5446-316">在本章中，我們將新增可從真實世界表面中跳動的全息影像。</span><span class="sxs-lookup"><span data-stu-id="c5446-316">In this chapter we'll add holograms that bounce off real-world surfaces.</span></span> <span data-ttu-id="c5446-317">觀賞您和您的朋友所推出的專案，看看您的空間填滿！</span><span class="sxs-lookup"><span data-stu-id="c5446-317">Watch your space fill up with projects launched by both you and your friends!</span></span>
+<span data-ttu-id="a50e1-316">在本章中，我們將新增可從真實世界表面中跳動的全息影像。</span><span class="sxs-lookup"><span data-stu-id="a50e1-316">In this chapter we'll add holograms that bounce off real-world surfaces.</span></span> <span data-ttu-id="a50e1-317">觀賞您和您的朋友所推出的專案，看看您的空間填滿！</span><span class="sxs-lookup"><span data-stu-id="a50e1-317">Watch your space fill up with projects launched by both you and your friends!</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-318">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-318">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-318">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-318">Objectives</span></span>
 
-* <span data-ttu-id="c5446-319">啟動炮彈，以將實際表面彈開。</span><span class="sxs-lookup"><span data-stu-id="c5446-319">Launch projectiles that bounce off real-world surfaces.</span></span>
-* <span data-ttu-id="c5446-320">共用炮彈，讓其他玩家可以看到它們。</span><span class="sxs-lookup"><span data-stu-id="c5446-320">Share the projectiles so other players can see them.</span></span>
+* <span data-ttu-id="a50e1-319">啟動炮彈，以將實際表面彈開。</span><span class="sxs-lookup"><span data-stu-id="a50e1-319">Launch projectiles that bounce off real-world surfaces.</span></span>
+* <span data-ttu-id="a50e1-320">共用炮彈，讓其他玩家可以看到它們。</span><span class="sxs-lookup"><span data-stu-id="a50e1-320">Share the projectiles so other players can see them.</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-321">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-321">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-321">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-321">Instructions</span></span>
 
-* <span data-ttu-id="c5446-322">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="c5446-322">In the **Hierarchy** select the **HologramCollection** object.</span></span>
-* <span data-ttu-id="c5446-323">在 [偵測 **器** ] 中按一下 [ **新增元件**]。</span><span class="sxs-lookup"><span data-stu-id="c5446-323">In the **Inspector** click **Add Component**.</span></span>
-* <span data-ttu-id="c5446-324">在搜尋方塊中，輸入 **Projectile 啟動器**。</span><span class="sxs-lookup"><span data-stu-id="c5446-324">In the search box, type **Projectile Launcher**.</span></span> <span data-ttu-id="c5446-325">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-325">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-322">**在階層中選取**[ **HologramCollection** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="a50e1-322">In the **Hierarchy** select the **HologramCollection** object.</span></span>
+* <span data-ttu-id="a50e1-323">在 [偵測 **器** ] 中按一下 [ **新增元件**]。</span><span class="sxs-lookup"><span data-stu-id="a50e1-323">In the **Inspector** click **Add Component**.</span></span>
+* <span data-ttu-id="a50e1-324">在搜尋方塊中，輸入 **Projectile 啟動器**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-324">In the search box, type **Projectile Launcher**.</span></span> <span data-ttu-id="a50e1-325">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-325">Select the search result.</span></span>
 
-<span data-ttu-id="c5446-326">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="c5446-326">**Deploy and enjoy**</span></span>
+<span data-ttu-id="a50e1-326">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="a50e1-326">**Deploy and enjoy**</span></span>
 
-* <span data-ttu-id="c5446-327">建立並部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="c5446-327">Build and deploy to your HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-328">當應用程式在所有裝置上執行時，請執行點一下以在真實世界表面上啟動 projectile。</span><span class="sxs-lookup"><span data-stu-id="c5446-328">When the app is running on all devices, perform an air-tap to launch projectile at real world surfaces.</span></span>
-* <span data-ttu-id="c5446-329">查看當 projectile 與另一個玩家的頭像衝突時，會發生什麼事！</span><span class="sxs-lookup"><span data-stu-id="c5446-329">See what happens when your projectile collides with another player's avatar!</span></span>
+* <span data-ttu-id="a50e1-327">建立並部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-327">Build and deploy to your HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-328">當應用程式在所有裝置上執行時，請執行點一下以在真實世界表面上啟動 projectile。</span><span class="sxs-lookup"><span data-stu-id="a50e1-328">When the app is running on all devices, perform an air-tap to launch projectile at real world surfaces.</span></span>
+* <span data-ttu-id="a50e1-329">查看當 projectile 與另一個玩家的頭像衝突時，會發生什麼事！</span><span class="sxs-lookup"><span data-stu-id="a50e1-329">See what happens when your projectile collides with another player's avatar!</span></span>
 
-## <a name="chapter-7---grand-finale"></a><span data-ttu-id="c5446-330">第7章-總計 Finale</span><span class="sxs-lookup"><span data-stu-id="c5446-330">Chapter 7 - Grand Finale</span></span>
+## <a name="chapter-7---grand-finale"></a><span data-ttu-id="a50e1-330">第7章-總計 Finale</span><span class="sxs-lookup"><span data-stu-id="a50e1-330">Chapter 7 - Grand Finale</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/kDUPUvZEqRg]
 
-<span data-ttu-id="c5446-331">在本章中，我們將發現只能透過共同作業探索的入口網站。</span><span class="sxs-lookup"><span data-stu-id="c5446-331">In this chapter, we'll uncover a portal that can only be discovered with collaboration.</span></span>
+<span data-ttu-id="a50e1-331">在本章中，我們將發現只能透過共同作業探索的入口網站。</span><span class="sxs-lookup"><span data-stu-id="a50e1-331">In this chapter, we'll uncover a portal that can only be discovered with collaboration.</span></span>
 
-### <a name="objectives"></a><span data-ttu-id="c5446-332">目標</span><span class="sxs-lookup"><span data-stu-id="c5446-332">Objectives</span></span>
+### <a name="objectives"></a><span data-ttu-id="a50e1-332">目標</span><span class="sxs-lookup"><span data-stu-id="a50e1-332">Objectives</span></span>
 
-* <span data-ttu-id="c5446-333">共同作業以在錨點上啟動足夠的炮彈來發現秘密入口網站！</span><span class="sxs-lookup"><span data-stu-id="c5446-333">Work together to launch enough projectiles at the anchor to uncover a secret portal!</span></span>
+* <span data-ttu-id="a50e1-333">共同作業以在錨點上啟動足夠的炮彈來發現秘密入口網站！</span><span class="sxs-lookup"><span data-stu-id="a50e1-333">Work together to launch enough projectiles at the anchor to uncover a secret portal!</span></span>
 
-### <a name="instructions"></a><span data-ttu-id="c5446-334">指示</span><span class="sxs-lookup"><span data-stu-id="c5446-334">Instructions</span></span>
+### <a name="instructions"></a><span data-ttu-id="a50e1-334">指示</span><span class="sxs-lookup"><span data-stu-id="a50e1-334">Instructions</span></span>
 
-* <span data-ttu-id="c5446-335">在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="c5446-335">In the **Project panel** navigate to the **Holograms** folder.</span></span>
-* <span data-ttu-id="c5446-336">將 **Underworld** 資產拖放為 HologramCollection 的 **子** 系。</span><span class="sxs-lookup"><span data-stu-id="c5446-336">Drag and drop the **Underworld** asset as a **child of HologramCollection**.</span></span>
-* <span data-ttu-id="c5446-337">選取 **HologramCollection** 後，按一下 [**檢查**] 中的 [**新增元件**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="c5446-337">With **HologramCollection** selected, click the **Add Component** button in the **Inspector**.</span></span>
-* <span data-ttu-id="c5446-338">在功能表的 [搜尋] 方塊中，輸入 **ExplodeTarget**。</span><span class="sxs-lookup"><span data-stu-id="c5446-338">In the menu, type in the search box **ExplodeTarget**.</span></span> <span data-ttu-id="c5446-339">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="c5446-339">Select the search result.</span></span>
-* <span data-ttu-id="c5446-340">選取 **HologramCollection** 後，從階層中，將 **EnergyHub** **物件拖曳至** 偵測 **器** 中的 **目標** 欄位。</span><span class="sxs-lookup"><span data-stu-id="c5446-340">With **HologramCollection** selected, from the **Hierarchy** drag the **EnergyHub** object to the **Target** field in the **Inspector**.</span></span>
-* <span data-ttu-id="c5446-341">選取 **HologramCollection** 後，從階層中，將 **Underworld** **物件拖曳至** 偵測 **器** 中的 [ **Underworld** ] 欄位。</span><span class="sxs-lookup"><span data-stu-id="c5446-341">With **HologramCollection** selected, from the **Hierarchy** drag the **Underworld** object to the **Underworld** field in the **Inspector**.</span></span>
+* <span data-ttu-id="a50e1-335">在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。</span><span class="sxs-lookup"><span data-stu-id="a50e1-335">In the **Project panel** navigate to the **Holograms** folder.</span></span>
+* <span data-ttu-id="a50e1-336">將 **Underworld** 資產拖放為 HologramCollection 的 **子** 系。</span><span class="sxs-lookup"><span data-stu-id="a50e1-336">Drag and drop the **Underworld** asset as a **child of HologramCollection**.</span></span>
+* <span data-ttu-id="a50e1-337">選取 **HologramCollection** 後，按一下 [**檢查**] 中的 [**新增元件**] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="a50e1-337">With **HologramCollection** selected, click the **Add Component** button in the **Inspector**.</span></span>
+* <span data-ttu-id="a50e1-338">在功能表的 [搜尋] 方塊中，輸入 **ExplodeTarget**。</span><span class="sxs-lookup"><span data-stu-id="a50e1-338">In the menu, type in the search box **ExplodeTarget**.</span></span> <span data-ttu-id="a50e1-339">選取搜尋結果。</span><span class="sxs-lookup"><span data-stu-id="a50e1-339">Select the search result.</span></span>
+* <span data-ttu-id="a50e1-340">選取 **HologramCollection** 後，從階層中，將 **EnergyHub** **物件拖曳至** 偵測 **器** 中的 **目標** 欄位。</span><span class="sxs-lookup"><span data-stu-id="a50e1-340">With **HologramCollection** selected, from the **Hierarchy** drag the **EnergyHub** object to the **Target** field in the **Inspector**.</span></span>
+* <span data-ttu-id="a50e1-341">選取 **HologramCollection** 後，從階層中，將 **Underworld** **物件拖曳至** 偵測 **器** 中的 [ **Underworld** ] 欄位。</span><span class="sxs-lookup"><span data-stu-id="a50e1-341">With **HologramCollection** selected, from the **Hierarchy** drag the **Underworld** object to the **Underworld** field in the **Inspector**.</span></span>
 
-<span data-ttu-id="c5446-342">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="c5446-342">**Deploy and enjoy**</span></span>
+<span data-ttu-id="a50e1-342">**部署及享用**</span><span class="sxs-lookup"><span data-stu-id="a50e1-342">**Deploy and enjoy**</span></span>
 
-* <span data-ttu-id="c5446-343">建立並部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="c5446-343">Build and deploy to your HoloLens devices.</span></span>
-* <span data-ttu-id="c5446-344">當應用程式啟動時，請共同合作，以在 EnergyHub 上啟動炮彈。</span><span class="sxs-lookup"><span data-stu-id="c5446-344">When the app has launched, collaborate together to launch projectiles at the EnergyHub.</span></span>
-* <span data-ttu-id="c5446-345">當 underworld 出現時，請在 underworld 機器人上啟動炮彈 (按下機器人三次，以提供更有趣的) 。</span><span class="sxs-lookup"><span data-stu-id="c5446-345">When the underworld appears, launch projectiles at underworld robots (hit a robot three times for extra fun).</span></span>
+* <span data-ttu-id="a50e1-343">建立並部署到您的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="a50e1-343">Build and deploy to your HoloLens devices.</span></span>
+* <span data-ttu-id="a50e1-344">當應用程式啟動時，請共同合作，以在 EnergyHub 上啟動炮彈。</span><span class="sxs-lookup"><span data-stu-id="a50e1-344">When the app has launched, collaborate together to launch projectiles at the EnergyHub.</span></span>
+* <span data-ttu-id="a50e1-345">當 underworld 出現時，請在 underworld 機器人上啟動炮彈 (按下機器人三次，以提供更有趣的) 。</span><span class="sxs-lookup"><span data-stu-id="a50e1-345">When the underworld appears, launch projectiles at underworld robots (hit a robot three times for extra fun).</span></span>

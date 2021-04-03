@@ -6,248 +6,248 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間對應、表面重建、網格、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 933b5d331e814cdb2ced2689e06e0c8508f2d68a
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 24814925bfc154989822e326d2f088fe459c7aa0
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730135"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269903"
 ---
-# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a><span data-ttu-id="b1fb8-104">HoloLens (第1代) 空間230：空間對應</span><span class="sxs-lookup"><span data-stu-id="b1fb8-104">HoloLens (1st gen) Spatial 230: Spatial mapping</span></span>
+# <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a><span data-ttu-id="3a658-104">HoloLens (第1代) 空間230：空間對應</span><span class="sxs-lookup"><span data-stu-id="3a658-104">HoloLens (1st gen) Spatial 230: Spatial mapping</span></span>
 
->[!NOTE]
-><span data-ttu-id="b1fb8-105">混合實境學院教學課程的設計是以 HoloLens (第 1 代) 和混合實境沉浸式頭戴裝置為準。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-105">The Mixed Reality Academy tutorials were designed with HoloLens (1st gen) and Mixed Reality Immersive Headsets in mind.</span></span>  <span data-ttu-id="b1fb8-106">因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-106">As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.</span></span>  <span data-ttu-id="b1fb8-107">這些教學課程 **_不會_** 使用用於 HoloLens 2 的最新工具組或互動進行更新。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-107">These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2.</span></span>  <span data-ttu-id="b1fb8-108">系統會保留這些資訊，以繼續在支援的裝置上運作。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-108">They will be maintained to continue working on the supported devices.</span></span> <span data-ttu-id="b1fb8-109">已針對 HoloLens 2 公佈[一系列新的教學課程](./mr-learning-base-01.md)。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-109">[A new series of tutorials](./mr-learning-base-01.md) has been posted for HoloLens 2.</span></span>
+>[!IMPORTANT]
+><span data-ttu-id="3a658-105">混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。</span><span class="sxs-lookup"><span data-stu-id="3a658-105">The Mixed Reality Academy tutorials were designed with HoloLens (1st gen), Unity 2017, and Mixed Reality Immersive Headsets in mind.</span></span>  <span data-ttu-id="3a658-106">因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。</span><span class="sxs-lookup"><span data-stu-id="3a658-106">As such, we feel it is important to leave these tutorials in place for developers who are still looking for guidance in developing for those devices.</span></span> <span data-ttu-id="3a658-107">這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。</span><span class="sxs-lookup"><span data-stu-id="3a658-107">These tutorials will **_not_** be updated with the latest toolsets or interactions being used for HoloLens 2 and may not be compatible with newer versions of Unity.</span></span>  <span data-ttu-id="3a658-108">系統會保留這些資訊，以繼續在支援的裝置上運作。</span><span class="sxs-lookup"><span data-stu-id="3a658-108">They will be maintained to continue working on the supported devices.</span></span> <span data-ttu-id="3a658-109">已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。</span><span class="sxs-lookup"><span data-stu-id="3a658-109">[A new series of tutorials](mrlearning-base.md) has been posted for HoloLens 2.</span></span>
 
-<span data-ttu-id="b1fb8-110">[空間對應](../../../design/spatial-mapping.md) 結合了真實世界和虛擬世界，藉由教授有關環境的影像。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-110">[Spatial mapping](../../../design/spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment.</span></span> <span data-ttu-id="b1fb8-111">在 MR 空間 230 (Project 天文館) 我們將瞭解如何：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-111">In MR Spatial 230 (Project Planetarium) we'll learn how to:</span></span>
+<span data-ttu-id="3a658-110">[空間對應](../../../design/spatial-mapping.md) 結合了真實世界和虛擬世界，藉由教授有關環境的影像。</span><span class="sxs-lookup"><span data-stu-id="3a658-110">[Spatial mapping](../../../design/spatial-mapping.md) combines the real world and virtual world together by teaching holograms about the environment.</span></span> <span data-ttu-id="3a658-111">在 MR 空間 230 (Project 天文館) 我們將瞭解如何：</span><span class="sxs-lookup"><span data-stu-id="3a658-111">In MR Spatial 230 (Project Planetarium) we'll learn how to:</span></span>
 
-* <span data-ttu-id="b1fb8-112">掃描環境，並將資料從 HoloLens 傳送至您的開發電腦。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-112">Scan the environment and transfer data from the HoloLens to your development machine.</span></span>
-* <span data-ttu-id="b1fb8-113">探索著色器，並學習如何使用它們來視覺化您的空間。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-113">Explore shaders and learn how to use them for visualizing your space.</span></span>
-* <span data-ttu-id="b1fb8-114">使用網格處理將房間網格細分為簡單的平面。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-114">Break down the room mesh into simple planes using mesh processing.</span></span>
-* <span data-ttu-id="b1fb8-115">超越我們在 [MR 基礎 101](../../../develop/unity/tutorials/holograms-101.md)中學習到的放置技術，並提供可在環境中放置全息圖的相關意見反應。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-115">Go beyond the placement techniques we learned in [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md), and provide feedback about where a hologram can be placed in the environment.</span></span>
-* <span data-ttu-id="b1fb8-116">探索遮蔽效果，如此一來，當您的全像是真實世界的物件之後，您仍然可以透過 x 光線視覺來看到它！</span><span class="sxs-lookup"><span data-stu-id="b1fb8-116">Explore occlusion effects, so when your hologram is behind a real-world object, you can still see it with x-ray vision!</span></span>
+* <span data-ttu-id="3a658-112">掃描環境，並將資料從 HoloLens 傳送至您的開發電腦。</span><span class="sxs-lookup"><span data-stu-id="3a658-112">Scan the environment and transfer data from the HoloLens to your development machine.</span></span>
+* <span data-ttu-id="3a658-113">探索著色器，並學習如何使用它們來視覺化您的空間。</span><span class="sxs-lookup"><span data-stu-id="3a658-113">Explore shaders and learn how to use them for visualizing your space.</span></span>
+* <span data-ttu-id="3a658-114">使用網格處理將房間網格細分為簡單的平面。</span><span class="sxs-lookup"><span data-stu-id="3a658-114">Break down the room mesh into simple planes using mesh processing.</span></span>
+* <span data-ttu-id="3a658-115">超越我們在 [MR 基礎 101](../../../develop/unity/tutorials/holograms-101.md)中學習到的放置技術，並提供可在環境中放置全息圖的相關意見反應。</span><span class="sxs-lookup"><span data-stu-id="3a658-115">Go beyond the placement techniques we learned in [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md), and provide feedback about where a hologram can be placed in the environment.</span></span>
+* <span data-ttu-id="3a658-116">探索遮蔽效果，如此一來，當您的全像是真實世界的物件之後，您仍然可以透過 x 光線視覺來看到它！</span><span class="sxs-lookup"><span data-stu-id="3a658-116">Explore occlusion effects, so when your hologram is behind a real-world object, you can still see it with x-ray vision!</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/NSNYRkUX6Mw]
 
-## <a name="device-support"></a><span data-ttu-id="b1fb8-117">裝置支援</span><span class="sxs-lookup"><span data-stu-id="b1fb8-117">Device support</span></span>
+## <a name="device-support"></a><span data-ttu-id="3a658-117">裝置支援</span><span class="sxs-lookup"><span data-stu-id="3a658-117">Device support</span></span>
 
 <table>
 <tr>
-<th><span data-ttu-id="b1fb8-118">課程</span><span class="sxs-lookup"><span data-stu-id="b1fb8-118">Course</span></span></th><th style="width:150px"> <span data-ttu-id="b1fb8-119"><a href="/hololens/hololens1-hardware">HoloLens</a></span><span class="sxs-lookup"><span data-stu-id="b1fb8-119"><a href="/hololens/hololens1-hardware">HoloLens</a></span></span></th><th style="width:150px"> <span data-ttu-id="b1fb8-120"><a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></span><span class="sxs-lookup"><span data-stu-id="b1fb8-120"><a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></span></span></th>
+<th><span data-ttu-id="3a658-118">課程</span><span class="sxs-lookup"><span data-stu-id="3a658-118">Course</span></span></th><th style="width:150px"> <span data-ttu-id="3a658-119"><a href="/hololens/hololens1-hardware">HoloLens</a></span><span class="sxs-lookup"><span data-stu-id="3a658-119"><a href="/hololens/hololens1-hardware">HoloLens</a></span></span></th><th style="width:150px"> <span data-ttu-id="3a658-120"><a href="../../../discover/immersive-headset-hardware-details.md">沉浸式頭戴裝置</a></span><span class="sxs-lookup"><span data-stu-id="3a658-120"><a href="../../../discover/immersive-headset-hardware-details.md">Immersive headsets</a></span></span></th>
 </tr><tr>
-<td><span data-ttu-id="b1fb8-121">MR Spatial 230：空間對應</span><span class="sxs-lookup"><span data-stu-id="b1fb8-121">MR Spatial 230: Spatial mapping</span></span></td><td style="text-align: center;"> <span data-ttu-id="b1fb8-122">✔️</span><span class="sxs-lookup"><span data-stu-id="b1fb8-122">✔️</span></span></td><td style="text-align: center;"> </td>
+<td><span data-ttu-id="3a658-121">MR Spatial 230：空間對應</span><span class="sxs-lookup"><span data-stu-id="3a658-121">MR Spatial 230: Spatial mapping</span></span></td><td style="text-align: center;"> <span data-ttu-id="3a658-122">✔️</span><span class="sxs-lookup"><span data-stu-id="3a658-122">✔️</span></span></td><td style="text-align: center;"> </td>
 </tr>
 </table>
 
-## <a name="before-you-start"></a><span data-ttu-id="b1fb8-123">在您開始使用 Intune 之前</span><span class="sxs-lookup"><span data-stu-id="b1fb8-123">Before you start</span></span>
+## <a name="before-you-start"></a><span data-ttu-id="3a658-123">在您開始使用 Intune 之前</span><span class="sxs-lookup"><span data-stu-id="3a658-123">Before you start</span></span>
 
-### <a name="prerequisites"></a><span data-ttu-id="b1fb8-124">必要條件</span><span class="sxs-lookup"><span data-stu-id="b1fb8-124">Prerequisites</span></span>
+### <a name="prerequisites"></a><span data-ttu-id="3a658-124">必要條件</span><span class="sxs-lookup"><span data-stu-id="3a658-124">Prerequisites</span></span>
 
-* <span data-ttu-id="b1fb8-125">[已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-125">A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md).</span></span>
-* <span data-ttu-id="b1fb8-126">一些基本的 c # 程式設計功能。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-126">Some basic C# programming ability.</span></span>
-* <span data-ttu-id="b1fb8-127">您應已完成 [MR 基本的 101](../../../develop/unity/tutorials/holograms-101.md)。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-127">You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).</span></span>
-* <span data-ttu-id="b1fb8-128">[針對開發設定](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-128">A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).</span></span>
+* <span data-ttu-id="3a658-125">[已安裝正確工具](../../../develop/install-the-tools.md)的 Windows 10 電腦。</span><span class="sxs-lookup"><span data-stu-id="3a658-125">A Windows 10 PC configured with the correct [tools installed](../../../develop/install-the-tools.md).</span></span>
+* <span data-ttu-id="3a658-126">一些基本的 c # 程式設計功能。</span><span class="sxs-lookup"><span data-stu-id="3a658-126">Some basic C# programming ability.</span></span>
+* <span data-ttu-id="3a658-127">您應已完成 [MR 基本的 101](../../../develop/unity/tutorials/holograms-101.md)。</span><span class="sxs-lookup"><span data-stu-id="3a658-127">You should have completed [MR Basics 101](../../../develop/unity/tutorials/holograms-101.md).</span></span>
+* <span data-ttu-id="3a658-128">[針對開發設定](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 裝置。</span><span class="sxs-lookup"><span data-stu-id="3a658-128">A HoloLens device [configured for development](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode).</span></span>
 
-### <a name="project-files"></a><span data-ttu-id="b1fb8-129">專案檔</span><span class="sxs-lookup"><span data-stu-id="b1fb8-129">Project files</span></span>
+### <a name="project-files"></a><span data-ttu-id="3a658-129">專案檔</span><span class="sxs-lookup"><span data-stu-id="3a658-129">Project files</span></span>
 
-* <span data-ttu-id="b1fb8-130">下載專案 [所需的](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) 檔案。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-130">Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project.</span></span> <span data-ttu-id="b1fb8-131">需要 Unity 2017.2 或更新版本。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-131">Requires Unity 2017.2 or later.</span></span>
-  * <span data-ttu-id="b1fb8-132">如果您仍然需要 Unity 5.6 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip)。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-132">If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).</span></span>
-  * <span data-ttu-id="b1fb8-133">如果您仍然需要 Unity 5.5 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip)。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-133">If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).</span></span>
-  * <span data-ttu-id="b1fb8-134">如果您仍然需要 Unity 5.4 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip)。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-134">If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).</span></span>
-* <span data-ttu-id="b1fb8-135">取消將檔案封存到您的桌面或其他易於觸及的位置。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-135">Un-archive the files to your desktop or other easy to reach location.</span></span>
+* <span data-ttu-id="3a658-130">下載專案 [所需的](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) 檔案。</span><span class="sxs-lookup"><span data-stu-id="3a658-130">Download the [files](https://github.com/Microsoft/HolographicAcademy/archive/Holograms-230-SpatialMapping.zip) required by the project.</span></span> <span data-ttu-id="3a658-131">需要 Unity 2017.2 或更新版本。</span><span class="sxs-lookup"><span data-stu-id="3a658-131">Requires Unity 2017.2 or later.</span></span>
+  * <span data-ttu-id="3a658-132">如果您仍然需要 Unity 5.6 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip)。</span><span class="sxs-lookup"><span data-stu-id="3a658-132">If you still need Unity 5.6 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.6-230.zip).</span></span>
+  * <span data-ttu-id="3a658-133">如果您仍然需要 Unity 5.5 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip)。</span><span class="sxs-lookup"><span data-stu-id="3a658-133">If you still need Unity 5.5 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.5-230.zip).</span></span>
+  * <span data-ttu-id="3a658-134">如果您仍然需要 Unity 5.4 支援，請使用 [此版本](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip)。</span><span class="sxs-lookup"><span data-stu-id="3a658-134">If you still need Unity 5.4 support, please use [this release](https://github.com/Microsoft/HolographicAcademy/archive/v1.5.4-230.zip).</span></span>
+* <span data-ttu-id="3a658-135">取消將檔案封存到您的桌面或其他易於觸及的位置。</span><span class="sxs-lookup"><span data-stu-id="3a658-135">Un-archive the files to your desktop or other easy to reach location.</span></span>
 
 >[!NOTE]
-><span data-ttu-id="b1fb8-136">如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping)取得。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-136">If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping).</span></span>
+><span data-ttu-id="3a658-136">如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping)取得。</span><span class="sxs-lookup"><span data-stu-id="3a658-136">If you want to look through the source code before downloading, it's [available on GitHub](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping).</span></span>
 
-### <a name="notes"></a><span data-ttu-id="b1fb8-137">備註</span><span class="sxs-lookup"><span data-stu-id="b1fb8-137">Notes</span></span>
+### <a name="notes"></a><span data-ttu-id="3a658-137">備註</span><span class="sxs-lookup"><span data-stu-id="3a658-137">Notes</span></span>
 
-* <span data-ttu-id="b1fb8-138">在 Visual Studio 中必須停用 [啟用 Just My Code] (*取消* 核取 [工具] > [選項] > [選項] 下的) ，才能在程式碼中叫用中斷點。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-138">"Enable Just My Code" in Visual Studio needs to be disabled (*unchecked*) under Tools > Options > Debugging in order to hit breakpoints in your code.</span></span>
+* <span data-ttu-id="3a658-138">在 Visual Studio 中必須停用 [啟用 Just My Code] (*取消* 核取 [工具] > [選項] > [選項] 下的) ，才能在程式碼中叫用中斷點。</span><span class="sxs-lookup"><span data-stu-id="3a658-138">"Enable Just My Code" in Visual Studio needs to be disabled (*unchecked*) under Tools > Options > Debugging in order to hit breakpoints in your code.</span></span>
 
-## <a name="unity-setup"></a><span data-ttu-id="b1fb8-139">Unity 設定</span><span class="sxs-lookup"><span data-stu-id="b1fb8-139">Unity setup</span></span>
+## <a name="unity-setup"></a><span data-ttu-id="3a658-139">Unity 設定</span><span class="sxs-lookup"><span data-stu-id="3a658-139">Unity setup</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/y2Y4LhK6TEM]
 
-* <span data-ttu-id="b1fb8-140">啟動 **Unity**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-140">Start **Unity**.</span></span>
-* <span data-ttu-id="b1fb8-141">選取 [ **新增** ] 以建立新專案。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-141">Select **New** to create a new project.</span></span>
-* <span data-ttu-id="b1fb8-142">將專案命名為 **天文館**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-142">Name the project **Planetarium**.</span></span>
-* <span data-ttu-id="b1fb8-143">確認已選取 [ **3d** ] 設定。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-143">Verify that the **3D** setting is selected.</span></span>
-* <span data-ttu-id="b1fb8-144">按一下 [ **建立專案**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-144">Click **Create Project**.</span></span>
-* <span data-ttu-id="b1fb8-145">Unity 啟動後，請移至 **> Player 的 [編輯 > 專案設定**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-145">Once Unity launches, go to **Edit > Project Settings > Player**.</span></span>
-* <span data-ttu-id="b1fb8-146">在 [偵測 **器** ] 面板中，尋找並選取綠色的 **Windows 商店** 圖示。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-146">In the **Inspector** panel, find and select the green **Windows Store** icon.</span></span>
-* <span data-ttu-id="b1fb8-147">展開 [ **其他設定**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-147">Expand **Other Settings**.</span></span>
-* <span data-ttu-id="b1fb8-148">**在 [轉譯] 區段中**，檢查 **虛擬實境支援** 的選項。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-148">In the **Rendering** section, check the **Virtual Reality Supported** option.</span></span>
-* <span data-ttu-id="b1fb8-149">確認 **Windows** 全像是出現在 **虛擬實境 sdk** 清單中。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-149">Verify that **Windows Holographic** appears in the list of **Virtual Reality SDKs**.</span></span> <span data-ttu-id="b1fb8-150">如果沒有，請選取 **+** 清單底部的按鈕，然後選擇 [ **Windows** 全像]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-150">If not, select the **+** button at the bottom of the list and choose **Windows Holographic**.</span></span>
-* <span data-ttu-id="b1fb8-151">展開 [ **發行設定**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-151">Expand **Publishing Settings**.</span></span>
-* <span data-ttu-id="b1fb8-152">在 [ **功能** ] 區段中，檢查下列設定：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-152">In the **Capabilities** section, check the following settings:</span></span>
-    * <span data-ttu-id="b1fb8-153">InternetClientServer</span><span class="sxs-lookup"><span data-stu-id="b1fb8-153">InternetClientServer</span></span>
-    * <span data-ttu-id="b1fb8-154">PrivateNetworkClientServer</span><span class="sxs-lookup"><span data-stu-id="b1fb8-154">PrivateNetworkClientServer</span></span>
-    * <span data-ttu-id="b1fb8-155">麥克風</span><span class="sxs-lookup"><span data-stu-id="b1fb8-155">Microphone</span></span>
-    * <span data-ttu-id="b1fb8-156">SpatialPerception</span><span class="sxs-lookup"><span data-stu-id="b1fb8-156">SpatialPerception</span></span>
-* <span data-ttu-id="b1fb8-157">移至 [ **編輯] > 專案設定 > 品質**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-157">Go to **Edit > Project Settings > Quality**</span></span>
-* <span data-ttu-id="b1fb8-158">在 [偵測 **器** ] 面板的 [Windows 市集中] 圖示底下，選取 [預設] 資料列底下的黑色下拉箭號，並將預設設定變更為 [ **非常低**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-158">In the **Inspector** panel, under the Windows Store icon, select the black drop-down arrow under the 'Default' row and change the default setting to **Very Low**.</span></span>
-* <span data-ttu-id="b1fb8-159">移至 [ **資產] > 匯入套件 > 自訂套件**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-159">Go to **Assets > Import Package > Custom Package**.</span></span>
-* <span data-ttu-id="b1fb8-160">流覽至 **..\holographicacademy-holograms-230-SpatialMapping\Starting** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-160">Navigate to the **...\HolographicAcademy-Holograms-230-SpatialMapping\Starting** folder.</span></span>
-* <span data-ttu-id="b1fb8-161">按一下 [ **天文館 unitypackage**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-161">Click on **Planetarium.unitypackage**.</span></span>
-* <span data-ttu-id="b1fb8-162">按一下 [開啟]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-162">Click **Open**.</span></span>
-* <span data-ttu-id="b1fb8-163">隨即出現 [匯 **入 Unity 套件** ] 視窗，請按一下 [匯 **入** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-163">An **Import Unity Package** window should appear, click on the **Import** button.</span></span>
-* <span data-ttu-id="b1fb8-164">等候 Unity 匯入完成此專案所需的所有資產。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-164">Wait for Unity to import all of the assets that we will need to complete this project.</span></span>
-* <span data-ttu-id="b1fb8-165">**在 [階層] 面板中**，刪除 **主要攝影機**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-165">In the **Hierarchy** panel, delete the **Main Camera**.</span></span>
-* <span data-ttu-id="b1fb8-166">在 [ **專案** ] 面板的 [ **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** ] 資料夾中，尋找 [ **主要攝影機** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-166">In the **Project** panel, **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** folder, find the **Main Camera** object.</span></span>
-* <span data-ttu-id="b1fb8-167">將 **主要攝影機** 預製專案拖放到 [階層 **] 面板中** 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-167">Drag and drop the **Main Camera** prefab into the **Hierarchy** panel.</span></span>
-* <span data-ttu-id="b1fb8-168">**在 [階層] 面板中**，刪除 **方向光源** 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-168">In the **Hierarchy** panel, delete the **Directional Light** object.</span></span>
-* <span data-ttu-id="b1fb8-169">在 [ **專案** ] 面板的 [全像 **] 資料夾中，找** 出 **游標** 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-169">In the **Project** panel, **Holograms** folder, locate the **Cursor** object.</span></span>
-* <span data-ttu-id="b1fb8-170">拖曳 & 將資料 **指標** 預製專案拖放到階層 **中。**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-170">Drag & drop the **Cursor** prefab into the **Hierarchy**.</span></span>
-* <span data-ttu-id="b1fb8-171">**在 [階層] 面板中**，選取 [資料 **指標**] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-171">In the **Hierarchy** panel, select the **Cursor** object.</span></span>
-* <span data-ttu-id="b1fb8-172">在 [偵測 **器** ] 面板中，按一下 [ **圖層** ] 下拉式清單，然後選取 [ **編輯圖層**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-172">In the **Inspector** panel, click the **Layer** drop-down and select **Edit Layers...**.</span></span>
-* <span data-ttu-id="b1fb8-173">將 **使用者第 31** 名命名為 "**SpatialMapping**"。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-173">Name **User Layer 31** as "**SpatialMapping**".</span></span>
-* <span data-ttu-id="b1fb8-174">儲存新場景： **File > 另存場景為**.。。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-174">Save the new scene: **File > Save Scene As...**</span></span>
-* <span data-ttu-id="b1fb8-175">按一下 [ **新增資料夾** ]，然後將資料夾命名為 **幕後**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-175">Click **New Folder** and name the folder **Scenes**.</span></span>
-* <span data-ttu-id="b1fb8-176">將檔案命名為 "**天文館**"，並將它儲存在 **幕後** 資料夾中。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-176">Name the file "**Planetarium**" and save it in the **Scenes** folder.</span></span>
+* <span data-ttu-id="3a658-140">啟動 **Unity**。</span><span class="sxs-lookup"><span data-stu-id="3a658-140">Start **Unity**.</span></span>
+* <span data-ttu-id="3a658-141">選取 [ **新增** ] 以建立新專案。</span><span class="sxs-lookup"><span data-stu-id="3a658-141">Select **New** to create a new project.</span></span>
+* <span data-ttu-id="3a658-142">將專案命名為 **天文館**。</span><span class="sxs-lookup"><span data-stu-id="3a658-142">Name the project **Planetarium**.</span></span>
+* <span data-ttu-id="3a658-143">確認已選取 [ **3d** ] 設定。</span><span class="sxs-lookup"><span data-stu-id="3a658-143">Verify that the **3D** setting is selected.</span></span>
+* <span data-ttu-id="3a658-144">按一下 [ **建立專案**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-144">Click **Create Project**.</span></span>
+* <span data-ttu-id="3a658-145">Unity 啟動後，請移至 **> Player 的 [編輯 > 專案設定**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-145">Once Unity launches, go to **Edit > Project Settings > Player**.</span></span>
+* <span data-ttu-id="3a658-146">在 [偵測 **器** ] 面板中，尋找並選取綠色的 **Windows 商店** 圖示。</span><span class="sxs-lookup"><span data-stu-id="3a658-146">In the **Inspector** panel, find and select the green **Windows Store** icon.</span></span>
+* <span data-ttu-id="3a658-147">展開 [ **其他設定**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-147">Expand **Other Settings**.</span></span>
+* <span data-ttu-id="3a658-148">**在 [轉譯] 區段中**，檢查 **虛擬實境支援** 的選項。</span><span class="sxs-lookup"><span data-stu-id="3a658-148">In the **Rendering** section, check the **Virtual Reality Supported** option.</span></span>
+* <span data-ttu-id="3a658-149">確認 **Windows** 全像是出現在 **虛擬實境 sdk** 清單中。</span><span class="sxs-lookup"><span data-stu-id="3a658-149">Verify that **Windows Holographic** appears in the list of **Virtual Reality SDKs**.</span></span> <span data-ttu-id="3a658-150">如果沒有，請選取 **+** 清單底部的按鈕，然後選擇 [ **Windows** 全像]。</span><span class="sxs-lookup"><span data-stu-id="3a658-150">If not, select the **+** button at the bottom of the list and choose **Windows Holographic**.</span></span>
+* <span data-ttu-id="3a658-151">展開 [ **發行設定**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-151">Expand **Publishing Settings**.</span></span>
+* <span data-ttu-id="3a658-152">在 [ **功能** ] 區段中，檢查下列設定：</span><span class="sxs-lookup"><span data-stu-id="3a658-152">In the **Capabilities** section, check the following settings:</span></span>
+    * <span data-ttu-id="3a658-153">InternetClientServer</span><span class="sxs-lookup"><span data-stu-id="3a658-153">InternetClientServer</span></span>
+    * <span data-ttu-id="3a658-154">PrivateNetworkClientServer</span><span class="sxs-lookup"><span data-stu-id="3a658-154">PrivateNetworkClientServer</span></span>
+    * <span data-ttu-id="3a658-155">麥克風</span><span class="sxs-lookup"><span data-stu-id="3a658-155">Microphone</span></span>
+    * <span data-ttu-id="3a658-156">SpatialPerception</span><span class="sxs-lookup"><span data-stu-id="3a658-156">SpatialPerception</span></span>
+* <span data-ttu-id="3a658-157">移至 [ **編輯] > 專案設定 > 品質**</span><span class="sxs-lookup"><span data-stu-id="3a658-157">Go to **Edit > Project Settings > Quality**</span></span>
+* <span data-ttu-id="3a658-158">在 [偵測 **器** ] 面板的 [Windows 市集中] 圖示底下，選取 [預設] 資料列底下的黑色下拉箭號，並將預設設定變更為 [ **非常低**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-158">In the **Inspector** panel, under the Windows Store icon, select the black drop-down arrow under the 'Default' row and change the default setting to **Very Low**.</span></span>
+* <span data-ttu-id="3a658-159">移至 [ **資產] > 匯入套件 > 自訂套件**。</span><span class="sxs-lookup"><span data-stu-id="3a658-159">Go to **Assets > Import Package > Custom Package**.</span></span>
+* <span data-ttu-id="3a658-160">流覽至 **..\holographicacademy-holograms-230-SpatialMapping\Starting** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="3a658-160">Navigate to the **...\HolographicAcademy-Holograms-230-SpatialMapping\Starting** folder.</span></span>
+* <span data-ttu-id="3a658-161">按一下 [ **天文館 unitypackage**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-161">Click on **Planetarium.unitypackage**.</span></span>
+* <span data-ttu-id="3a658-162">按一下 [開啟]。</span><span class="sxs-lookup"><span data-stu-id="3a658-162">Click **Open**.</span></span>
+* <span data-ttu-id="3a658-163">隨即出現 [匯 **入 Unity 套件** ] 視窗，請按一下 [匯 **入** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="3a658-163">An **Import Unity Package** window should appear, click on the **Import** button.</span></span>
+* <span data-ttu-id="3a658-164">等候 Unity 匯入完成此專案所需的所有資產。</span><span class="sxs-lookup"><span data-stu-id="3a658-164">Wait for Unity to import all of the assets that we will need to complete this project.</span></span>
+* <span data-ttu-id="3a658-165">**在 [階層] 面板中**，刪除 **主要攝影機**。</span><span class="sxs-lookup"><span data-stu-id="3a658-165">In the **Hierarchy** panel, delete the **Main Camera**.</span></span>
+* <span data-ttu-id="3a658-166">在 [ **專案** ] 面板的 [ **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** ] 資料夾中，尋找 [ **主要攝影機** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-166">In the **Project** panel, **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** folder, find the **Main Camera** object.</span></span>
+* <span data-ttu-id="3a658-167">將 **主要攝影機** 預製專案拖放到 [階層 **] 面板中** 。</span><span class="sxs-lookup"><span data-stu-id="3a658-167">Drag and drop the **Main Camera** prefab into the **Hierarchy** panel.</span></span>
+* <span data-ttu-id="3a658-168">**在 [階層] 面板中**，刪除 **方向光源** 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-168">In the **Hierarchy** panel, delete the **Directional Light** object.</span></span>
+* <span data-ttu-id="3a658-169">在 [ **專案** ] 面板的 [全像 **] 資料夾中，找** 出 **游標** 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-169">In the **Project** panel, **Holograms** folder, locate the **Cursor** object.</span></span>
+* <span data-ttu-id="3a658-170">拖曳 & 將資料 **指標** 預製專案拖放到階層 **中。**</span><span class="sxs-lookup"><span data-stu-id="3a658-170">Drag & drop the **Cursor** prefab into the **Hierarchy**.</span></span>
+* <span data-ttu-id="3a658-171">**在 [階層] 面板中**，選取 [資料 **指標**] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-171">In the **Hierarchy** panel, select the **Cursor** object.</span></span>
+* <span data-ttu-id="3a658-172">在 [偵測 **器** ] 面板中，按一下 [ **圖層** ] 下拉式清單，然後選取 [ **編輯圖層**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-172">In the **Inspector** panel, click the **Layer** drop-down and select **Edit Layers...**.</span></span>
+* <span data-ttu-id="3a658-173">將 **使用者第 31** 名命名為 "**SpatialMapping**"。</span><span class="sxs-lookup"><span data-stu-id="3a658-173">Name **User Layer 31** as "**SpatialMapping**".</span></span>
+* <span data-ttu-id="3a658-174">儲存新場景： **File > 另存場景為**.。。</span><span class="sxs-lookup"><span data-stu-id="3a658-174">Save the new scene: **File > Save Scene As...**</span></span>
+* <span data-ttu-id="3a658-175">按一下 [ **新增資料夾** ]，然後將資料夾命名為 **幕後**。</span><span class="sxs-lookup"><span data-stu-id="3a658-175">Click **New Folder** and name the folder **Scenes**.</span></span>
+* <span data-ttu-id="3a658-176">將檔案命名為 "**天文館**"，並將它儲存在 **幕後** 資料夾中。</span><span class="sxs-lookup"><span data-stu-id="3a658-176">Name the file "**Planetarium**" and save it in the **Scenes** folder.</span></span>
 
-## <a name="chapter-1---scanning"></a><span data-ttu-id="b1fb8-177">第1章-掃描</span><span class="sxs-lookup"><span data-stu-id="b1fb8-177">Chapter 1 - Scanning</span></span>
+## <a name="chapter-1---scanning"></a><span data-ttu-id="3a658-177">第1章-掃描</span><span class="sxs-lookup"><span data-stu-id="3a658-177">Chapter 1 - Scanning</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/888oW51z_cE]
 
-<span data-ttu-id="b1fb8-178">**目標**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-178">**Objectives**</span></span>
+<span data-ttu-id="3a658-178">**目標**</span><span class="sxs-lookup"><span data-stu-id="3a658-178">**Objectives**</span></span>
 
-* <span data-ttu-id="b1fb8-179">瞭解 SurfaceObserver 及其設定如何影響體驗和效能。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-179">Learn about the SurfaceObserver and how its settings impact experience and performance.</span></span>
-* <span data-ttu-id="b1fb8-180">建立房間掃描體驗來收集房間的網格。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-180">Create a room scanning experience to collect the meshes of your room.</span></span>
+* <span data-ttu-id="3a658-179">瞭解 SurfaceObserver 及其設定如何影響體驗和效能。</span><span class="sxs-lookup"><span data-stu-id="3a658-179">Learn about the SurfaceObserver and how its settings impact experience and performance.</span></span>
+* <span data-ttu-id="3a658-180">建立房間掃描體驗來收集房間的網格。</span><span class="sxs-lookup"><span data-stu-id="3a658-180">Create a room scanning experience to collect the meshes of your room.</span></span>
 
-<span data-ttu-id="b1fb8-181">**指示**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-181">**Instructions**</span></span>
+<span data-ttu-id="3a658-181">**指示**</span><span class="sxs-lookup"><span data-stu-id="3a658-181">**Instructions**</span></span>
 
-* <span data-ttu-id="b1fb8-182">在 **專案** 面板的 [ **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** ] 資料夾中，尋找 **SpatialMapping** 預製專案。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-182">In the **Project** panel **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** folder, find the **SpatialMapping** prefab.</span></span>
-* <span data-ttu-id="b1fb8-183">將 [ **SpatialMapping** ] 預製專案拖曳 & 放入 [階層 **] 面板中** 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-183">Drag & drop the **SpatialMapping** prefab into the **Hierarchy** panel.</span></span>
+* <span data-ttu-id="3a658-182">在 **專案** 面板的 [ **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** ] 資料夾中，尋找 **SpatialMapping** 預製專案。</span><span class="sxs-lookup"><span data-stu-id="3a658-182">In the **Project** panel **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** folder, find the **SpatialMapping** prefab.</span></span>
+* <span data-ttu-id="3a658-183">將 [ **SpatialMapping** ] 預製專案拖曳 & 放入 [階層 **] 面板中** 。</span><span class="sxs-lookup"><span data-stu-id="3a658-183">Drag & drop the **SpatialMapping** prefab into the **Hierarchy** panel.</span></span>
 
-<span data-ttu-id="b1fb8-184">**組建和部署 (第1部)**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-184">**Build and Deploy (part 1)**</span></span>
+<span data-ttu-id="3a658-184">**組建和部署 (第1部)**</span><span class="sxs-lookup"><span data-stu-id="3a658-184">**Build and Deploy (part 1)**</span></span>
 
-* <span data-ttu-id="b1fb8-185">在 Unity 中，選取 [ **File > Build Settings**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-185">In Unity, select **File > Build Settings**.</span></span>
-* <span data-ttu-id="b1fb8-186">按一下 [ **新增開啟的場景** ]，將 **天文館** 場景新增至組建。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-186">Click **Add Open Scenes** to add the **Planetarium** scene to the build.</span></span>
-* <span data-ttu-id="b1fb8-187">在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-187">Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.</span></span>
-* <span data-ttu-id="b1fb8-188">將 **SDK** 設定為 **通用 10** ，並將 **UWP 組建類型** 設定為 **D3D**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-188">Set **SDK** to **Universal 10** and **UWP Build Type** to **D3D**.</span></span>
-* <span data-ttu-id="b1fb8-189">檢查 **Unity c # 專案**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-189">Check **Unity C# Projects**.</span></span>
-* <span data-ttu-id="b1fb8-190">按一下 [建置]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-190">Click **Build**.</span></span>
-* <span data-ttu-id="b1fb8-191">建立名為 "App" 的 **新資料夾** 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-191">Create a **New Folder** named "App".</span></span>
-* <span data-ttu-id="b1fb8-192">按一下 **應用程式** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-192">Single click the **App** folder.</span></span>
-* <span data-ttu-id="b1fb8-193">按下 [ **選取資料夾** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-193">Press the **Select Folder** button.</span></span>
-* <span data-ttu-id="b1fb8-194">當 Unity 完成建立時，將會出現檔案總管視窗。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-194">When Unity is done building, a File Explorer window will appear.</span></span>
-* <span data-ttu-id="b1fb8-195">按兩下 **應用程式** 資料夾以開啟它。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-195">Double-click on the **App** folder to open it.</span></span>
-* <span data-ttu-id="b1fb8-196">按兩下 [ **天文館** ]，在 Visual Studio 中載入專案。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-196">Double-click on **Planetarium.sln** to load the project in Visual Studio.</span></span>
-* <span data-ttu-id="b1fb8-197">在 Visual Studio 中，使用頂端工具列將設定變更為 [ **發行**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-197">In Visual Studio, use the top toolbar to change the Configuration to **Release**.</span></span>
-* <span data-ttu-id="b1fb8-198">將平臺變更為 **x86**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-198">Change the Platform to **x86**.</span></span>
-* <span data-ttu-id="b1fb8-199">按一下 [本機電腦] 右邊的下拉箭號，然後選取 [ **遠端電腦**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-199">Click on the drop-down arrow to the right of 'Local Machine', and select **Remote Machine**.</span></span>
-* <span data-ttu-id="b1fb8-200">在 [位址] 欄位中輸入 [您裝置的 IP 位址](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) ，並將驗證模式變更為 **通用 (未加密的通訊協定)**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-200">Enter [your device's IP address](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the Address field and change Authentication Mode to **Universal (Unencrypted Protocol)**.</span></span>
-* <span data-ttu-id="b1fb8-201">按一下 [ **Debug-> 啟動但不進行調試]，** 或按 **Ctrl + F5**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-201">Click **Debug -> Start Without debugging** or press **Ctrl + F5**.</span></span>
-* <span data-ttu-id="b1fb8-202">觀賞 Visual Studio 中的 [ **輸出** ] 面板，以取得組建和部署狀態。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-202">Watch the **Output** panel in Visual Studio for build and deploy status.</span></span>
-* <span data-ttu-id="b1fb8-203">當您的應用程式部署完成後，請四處移動空間。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-203">Once your app has deployed, walk around the room.</span></span> <span data-ttu-id="b1fb8-204">您將會看到黑色和白色線框網格所涵蓋的周圍表面。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-204">You will see the surrounding surfaces covered by black and white wireframe meshes.</span></span>
-* <span data-ttu-id="b1fb8-205">掃描您的環境。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-205">Scan your surroundings.</span></span> <span data-ttu-id="b1fb8-206">請務必查看牆、上限和樓層。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-206">Be sure to look at walls, ceilings, and floors.</span></span>
+* <span data-ttu-id="3a658-185">在 Unity 中，選取 [ **File > Build Settings**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-185">In Unity, select **File > Build Settings**.</span></span>
+* <span data-ttu-id="3a658-186">按一下 [ **新增開啟的場景** ]，將 **天文館** 場景新增至組建。</span><span class="sxs-lookup"><span data-stu-id="3a658-186">Click **Add Open Scenes** to add the **Planetarium** scene to the build.</span></span>
+* <span data-ttu-id="3a658-187">在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-187">Select **Universal Windows Platform** in the **Platform** list and click **Switch Platform**.</span></span>
+* <span data-ttu-id="3a658-188">將 **SDK** 設定為 **通用 10** ，並將 **UWP 組建類型** 設定為 **D3D**。</span><span class="sxs-lookup"><span data-stu-id="3a658-188">Set **SDK** to **Universal 10** and **UWP Build Type** to **D3D**.</span></span>
+* <span data-ttu-id="3a658-189">檢查 **Unity c # 專案**。</span><span class="sxs-lookup"><span data-stu-id="3a658-189">Check **Unity C# Projects**.</span></span>
+* <span data-ttu-id="3a658-190">按一下 [建置]。</span><span class="sxs-lookup"><span data-stu-id="3a658-190">Click **Build**.</span></span>
+* <span data-ttu-id="3a658-191">建立名為 "App" 的 **新資料夾** 。</span><span class="sxs-lookup"><span data-stu-id="3a658-191">Create a **New Folder** named "App".</span></span>
+* <span data-ttu-id="3a658-192">按一下 **應用程式** 資料夾。</span><span class="sxs-lookup"><span data-stu-id="3a658-192">Single click the **App** folder.</span></span>
+* <span data-ttu-id="3a658-193">按下 [ **選取資料夾** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="3a658-193">Press the **Select Folder** button.</span></span>
+* <span data-ttu-id="3a658-194">當 Unity 完成建立時，將會出現檔案總管視窗。</span><span class="sxs-lookup"><span data-stu-id="3a658-194">When Unity is done building, a File Explorer window will appear.</span></span>
+* <span data-ttu-id="3a658-195">按兩下 **應用程式** 資料夾以開啟它。</span><span class="sxs-lookup"><span data-stu-id="3a658-195">Double-click on the **App** folder to open it.</span></span>
+* <span data-ttu-id="3a658-196">按兩下 [ **天文館** ]，在 Visual Studio 中載入專案。</span><span class="sxs-lookup"><span data-stu-id="3a658-196">Double-click on **Planetarium.sln** to load the project in Visual Studio.</span></span>
+* <span data-ttu-id="3a658-197">在 Visual Studio 中，使用頂端工具列將設定變更為 [ **發行**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-197">In Visual Studio, use the top toolbar to change the Configuration to **Release**.</span></span>
+* <span data-ttu-id="3a658-198">將平臺變更為 **x86**。</span><span class="sxs-lookup"><span data-stu-id="3a658-198">Change the Platform to **x86**.</span></span>
+* <span data-ttu-id="3a658-199">按一下 [本機電腦] 右邊的下拉箭號，然後選取 [ **遠端電腦**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-199">Click on the drop-down arrow to the right of 'Local Machine', and select **Remote Machine**.</span></span>
+* <span data-ttu-id="3a658-200">在 [位址] 欄位中輸入 [您裝置的 IP 位址](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) ，並將驗證模式變更為 **通用 (未加密的通訊協定)**。</span><span class="sxs-lookup"><span data-stu-id="3a658-200">Enter [your device's IP address](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) in the Address field and change Authentication Mode to **Universal (Unencrypted Protocol)**.</span></span>
+* <span data-ttu-id="3a658-201">按一下 [ **Debug-> 啟動但不進行調試]，** 或按 **Ctrl + F5**。</span><span class="sxs-lookup"><span data-stu-id="3a658-201">Click **Debug -> Start Without debugging** or press **Ctrl + F5**.</span></span>
+* <span data-ttu-id="3a658-202">觀賞 Visual Studio 中的 [ **輸出** ] 面板，以取得組建和部署狀態。</span><span class="sxs-lookup"><span data-stu-id="3a658-202">Watch the **Output** panel in Visual Studio for build and deploy status.</span></span>
+* <span data-ttu-id="3a658-203">當您的應用程式部署完成後，請四處移動空間。</span><span class="sxs-lookup"><span data-stu-id="3a658-203">Once your app has deployed, walk around the room.</span></span> <span data-ttu-id="3a658-204">您將會看到黑色和白色線框網格所涵蓋的周圍表面。</span><span class="sxs-lookup"><span data-stu-id="3a658-204">You will see the surrounding surfaces covered by black and white wireframe meshes.</span></span>
+* <span data-ttu-id="3a658-205">掃描您的環境。</span><span class="sxs-lookup"><span data-stu-id="3a658-205">Scan your surroundings.</span></span> <span data-ttu-id="3a658-206">請務必查看牆、上限和樓層。</span><span class="sxs-lookup"><span data-stu-id="3a658-206">Be sure to look at walls, ceilings, and floors.</span></span>
 
-<span data-ttu-id="b1fb8-207">**組建和部署 (第2部分)**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-207">**Build and Deploy (part 2)**</span></span>
+<span data-ttu-id="3a658-207">**組建和部署 (第2部分)**</span><span class="sxs-lookup"><span data-stu-id="3a658-207">**Build and Deploy (part 2)**</span></span>
 
-<span data-ttu-id="b1fb8-208">現在讓我們來探索空間對應會如何影響效能。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-208">Now let's explore how Spatial Mapping can affect performance.</span></span>
+<span data-ttu-id="3a658-208">現在讓我們來探索空間對應會如何影響效能。</span><span class="sxs-lookup"><span data-stu-id="3a658-208">Now let's explore how Spatial Mapping can affect performance.</span></span>
 
-* <span data-ttu-id="b1fb8-209">在 Unity 中，選取 [ **Window > Profiler]**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-209">In Unity, select **Window > Profiler**.</span></span>
-* <span data-ttu-id="b1fb8-210">按一下 [ **新增 Profiler > GPU**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-210">Click **Add Profiler > GPU**.</span></span>
-* <span data-ttu-id="b1fb8-211">按一下 [ **Active Profiler <Enter IP> >**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-211">Click **Active Profiler > <Enter IP>**.</span></span>
-* <span data-ttu-id="b1fb8-212">輸入 HoloLens 的 **IP 位址** 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-212">Enter the **IP address** of your HoloLens.</span></span>
-* <span data-ttu-id="b1fb8-213">按一下 [連線]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-213">Click **Connect**.</span></span>
-* <span data-ttu-id="b1fb8-214">觀察 GPU 呈現框架所需的毫秒數。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-214">Observe the number of milliseconds it takes for the GPU to render a frame.</span></span>
-* <span data-ttu-id="b1fb8-215">停止應用程式在裝置上執行。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-215">Stop the application from running on the device.</span></span>
-* <span data-ttu-id="b1fb8-216">返回 Visual Studio 並開啟 **SpatialMappingObserver。**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-216">Return to Visual Studio and open **SpatialMappingObserver.cs**.</span></span> <span data-ttu-id="b1fb8-217">您會在 Assembly-CSharp (通用 Windows) 專案的 HoloToolkit\SpatialMapping 資料夾中找到它。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-217">You will find it in the HoloToolkit\SpatialMapping folder of the Assembly-CSharp (Universal Windows) project.</span></span>
-* <span data-ttu-id="b1fb8-218">尋找 **喚醒的 ()** 函式，並加入下列程式程式碼： **TrianglesPerCubicMeter = 1200;**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-218">Find the **Awake()** function, and add the following line of code: **TrianglesPerCubicMeter = 1200;**</span></span>
-* <span data-ttu-id="b1fb8-219">將專案重新部署至您的裝置，然後 **重新連接** 分析工具。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-219">Re-deploy the project to your device, and then **reconnect the profiler**.</span></span> <span data-ttu-id="b1fb8-220">觀察轉譯畫面格的毫秒數變更。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-220">Observe the change in the number of milliseconds to render a frame.</span></span>
-* <span data-ttu-id="b1fb8-221">停止應用程式在裝置上執行。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-221">Stop the application from running on the device.</span></span>
+* <span data-ttu-id="3a658-209">在 Unity 中，選取 [ **Window > Profiler]**。</span><span class="sxs-lookup"><span data-stu-id="3a658-209">In Unity, select **Window > Profiler**.</span></span>
+* <span data-ttu-id="3a658-210">按一下 [ **新增 Profiler > GPU**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-210">Click **Add Profiler > GPU**.</span></span>
+* <span data-ttu-id="3a658-211">按一下 [ **Active Profiler <Enter IP> >**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-211">Click **Active Profiler > <Enter IP>**.</span></span>
+* <span data-ttu-id="3a658-212">輸入 HoloLens 的 **IP 位址** 。</span><span class="sxs-lookup"><span data-stu-id="3a658-212">Enter the **IP address** of your HoloLens.</span></span>
+* <span data-ttu-id="3a658-213">按一下 [連線]。</span><span class="sxs-lookup"><span data-stu-id="3a658-213">Click **Connect**.</span></span>
+* <span data-ttu-id="3a658-214">觀察 GPU 呈現框架所需的毫秒數。</span><span class="sxs-lookup"><span data-stu-id="3a658-214">Observe the number of milliseconds it takes for the GPU to render a frame.</span></span>
+* <span data-ttu-id="3a658-215">停止應用程式在裝置上執行。</span><span class="sxs-lookup"><span data-stu-id="3a658-215">Stop the application from running on the device.</span></span>
+* <span data-ttu-id="3a658-216">返回 Visual Studio 並開啟 **SpatialMappingObserver。**</span><span class="sxs-lookup"><span data-stu-id="3a658-216">Return to Visual Studio and open **SpatialMappingObserver.cs**.</span></span> <span data-ttu-id="3a658-217">您會在 Assembly-CSharp (通用 Windows) 專案的 HoloToolkit\SpatialMapping 資料夾中找到它。</span><span class="sxs-lookup"><span data-stu-id="3a658-217">You will find it in the HoloToolkit\SpatialMapping folder of the Assembly-CSharp (Universal Windows) project.</span></span>
+* <span data-ttu-id="3a658-218">尋找 **喚醒的 ()** 函式，並加入下列程式程式碼： **TrianglesPerCubicMeter = 1200;**</span><span class="sxs-lookup"><span data-stu-id="3a658-218">Find the **Awake()** function, and add the following line of code: **TrianglesPerCubicMeter = 1200;**</span></span>
+* <span data-ttu-id="3a658-219">將專案重新部署至您的裝置，然後 **重新連接** 分析工具。</span><span class="sxs-lookup"><span data-stu-id="3a658-219">Re-deploy the project to your device, and then **reconnect the profiler**.</span></span> <span data-ttu-id="3a658-220">觀察轉譯畫面格的毫秒數變更。</span><span class="sxs-lookup"><span data-stu-id="3a658-220">Observe the change in the number of milliseconds to render a frame.</span></span>
+* <span data-ttu-id="3a658-221">停止應用程式在裝置上執行。</span><span class="sxs-lookup"><span data-stu-id="3a658-221">Stop the application from running on the device.</span></span>
 
-<span data-ttu-id="b1fb8-222">**在 Unity 中儲存和載入**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-222">**Save and load in Unity**</span></span>
+<span data-ttu-id="3a658-222">**在 Unity 中儲存和載入**</span><span class="sxs-lookup"><span data-stu-id="3a658-222">**Save and load in Unity**</span></span>
 
-<span data-ttu-id="b1fb8-223">最後，讓我們來儲存房間網格並將它載入 Unity 中。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-223">Finally, let's save our room mesh and load it into Unity.</span></span>
+<span data-ttu-id="3a658-223">最後，讓我們來儲存房間網格並將它載入 Unity 中。</span><span class="sxs-lookup"><span data-stu-id="3a658-223">Finally, let's save our room mesh and load it into Unity.</span></span>
 
-* <span data-ttu-id="b1fb8-224">返回 Visual Studio，並移除您在上一節中于 **喚醒 ()** 函數中新增的 **TrianglesPerCubicMeter** 行。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-224">Return to Visual Studio and remove the **TrianglesPerCubicMeter** line that you added in the **Awake()** function during the previous section.</span></span>
-* <span data-ttu-id="b1fb8-225">將專案重新部署至您的裝置。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-225">Redeploy the project to your device.</span></span> <span data-ttu-id="b1fb8-226">我們現在應該以每個三立方計量的 **500** 三角形來執行。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-226">We should now be running with **500** triangles per cubic meter.</span></span>
-* <span data-ttu-id="b1fb8-227">開啟瀏覽器並輸入您的 HoloLens IPAddress，以流覽至 **Windows 裝置入口網站**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-227">Open a browser and enter in your HoloLens IPAddress to navigate to the **Windows Device Portal**.</span></span>
-* <span data-ttu-id="b1fb8-228">選取左面板中的 [ **3D 視圖** ] 選項。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-228">Select the **3D View** option in the left panel.</span></span>
-* <span data-ttu-id="b1fb8-229">在 [ **表面重建** ] 下，選取 [ **更新** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-229">Under **Surface reconstruction** select the **Update** button.</span></span>
-* <span data-ttu-id="b1fb8-230">請注意，您在 HoloLens 上掃描的區域會出現在 [顯示] 視窗中。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-230">Watch as the areas that you have scanned on your HoloLens appear in the display window.</span></span>
-* <span data-ttu-id="b1fb8-231">若要儲存您的房間掃描，請按 [ **儲存** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-231">To save your room scan, press the **Save** button.</span></span>
-* <span data-ttu-id="b1fb8-232">開啟您的 [**下載**] 資料夾，以尋找已儲存的房間模型 **SRMesh。**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-232">Open your **Downloads** folder to find the saved room model **SRMesh.obj**.</span></span>
-* <span data-ttu-id="b1fb8-233">將 **SRMesh** 複製到 Unity 專案的 [ **資產** ] 資料夾中。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-233">Copy **SRMesh.obj** to the **Assets** folder of your Unity project.</span></span>
-* <span data-ttu-id="b1fb8-234">在 Unity 中，選取 **階層面板中的 [** **SpatialMapping** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-234">In Unity, select the **SpatialMapping** object in the **Hierarchy** panel.</span></span>
-* <span data-ttu-id="b1fb8-235">找出 **物件介面觀察器 (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-235">Locate the **Object Surface Observer (Script)** component.</span></span>
-* <span data-ttu-id="b1fb8-236">按一下 [ **房間模型** ] 屬性右邊的圓形。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-236">Click the circle to the right of the **Room Model** property.</span></span>
-* <span data-ttu-id="b1fb8-237">尋找並選取 [ **SRMesh** ] 物件，然後關閉視窗。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-237">Find and select the **SRMesh** object and then close the window.</span></span>
-* <span data-ttu-id="b1fb8-238">確認 [**檢查**] 面板中的 [**房間模型**] 屬性現在已設定為 [ **SRMesh**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-238">Verify that the **Room Model** property in the **Inspector** panel is now set to **SRMesh**.</span></span>
-* <span data-ttu-id="b1fb8-239">按下 [ **播放** ] 按鈕以進入 Unity 的預覽模式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-239">Press the **Play** button to enter Unity's preview mode.</span></span>
-* <span data-ttu-id="b1fb8-240">SpatialMapping 元件會從已儲存的房間模型載入網格，讓您可以在 Unity 中使用它們。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-240">The SpatialMapping component will load the meshes from the saved room model so you can use them in Unity.</span></span>
-* <span data-ttu-id="b1fb8-241">切換至 **場景** 視圖，以查看以線框著色器顯示的所有房間模型。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-241">Switch to **Scene** view to see all of your room model displayed with the wireframe shader.</span></span>
-* <span data-ttu-id="b1fb8-242">再按一次 [ **播放** ] 按鈕以結束預覽模式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-242">Press the **Play** button again to exit preview mode.</span></span>
+* <span data-ttu-id="3a658-224">返回 Visual Studio，並移除您在上一節中于 **喚醒 ()** 函數中新增的 **TrianglesPerCubicMeter** 行。</span><span class="sxs-lookup"><span data-stu-id="3a658-224">Return to Visual Studio and remove the **TrianglesPerCubicMeter** line that you added in the **Awake()** function during the previous section.</span></span>
+* <span data-ttu-id="3a658-225">將專案重新部署至您的裝置。</span><span class="sxs-lookup"><span data-stu-id="3a658-225">Redeploy the project to your device.</span></span> <span data-ttu-id="3a658-226">我們現在應該以每個三立方計量的 **500** 三角形來執行。</span><span class="sxs-lookup"><span data-stu-id="3a658-226">We should now be running with **500** triangles per cubic meter.</span></span>
+* <span data-ttu-id="3a658-227">開啟瀏覽器並輸入您的 HoloLens IPAddress，以流覽至 **Windows 裝置入口網站**。</span><span class="sxs-lookup"><span data-stu-id="3a658-227">Open a browser and enter in your HoloLens IPAddress to navigate to the **Windows Device Portal**.</span></span>
+* <span data-ttu-id="3a658-228">選取左面板中的 [ **3D 視圖** ] 選項。</span><span class="sxs-lookup"><span data-stu-id="3a658-228">Select the **3D View** option in the left panel.</span></span>
+* <span data-ttu-id="3a658-229">在 [ **表面重建** ] 下，選取 [ **更新** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="3a658-229">Under **Surface reconstruction** select the **Update** button.</span></span>
+* <span data-ttu-id="3a658-230">請注意，您在 HoloLens 上掃描的區域會出現在 [顯示] 視窗中。</span><span class="sxs-lookup"><span data-stu-id="3a658-230">Watch as the areas that you have scanned on your HoloLens appear in the display window.</span></span>
+* <span data-ttu-id="3a658-231">若要儲存您的房間掃描，請按 [ **儲存** ] 按鈕。</span><span class="sxs-lookup"><span data-stu-id="3a658-231">To save your room scan, press the **Save** button.</span></span>
+* <span data-ttu-id="3a658-232">開啟您的 [**下載**] 資料夾，以尋找已儲存的房間模型 **SRMesh。**</span><span class="sxs-lookup"><span data-stu-id="3a658-232">Open your **Downloads** folder to find the saved room model **SRMesh.obj**.</span></span>
+* <span data-ttu-id="3a658-233">將 **SRMesh** 複製到 Unity 專案的 [ **資產** ] 資料夾中。</span><span class="sxs-lookup"><span data-stu-id="3a658-233">Copy **SRMesh.obj** to the **Assets** folder of your Unity project.</span></span>
+* <span data-ttu-id="3a658-234">在 Unity 中，選取 **階層面板中的 [** **SpatialMapping** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-234">In Unity, select the **SpatialMapping** object in the **Hierarchy** panel.</span></span>
+* <span data-ttu-id="3a658-235">找出 **物件介面觀察器 (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="3a658-235">Locate the **Object Surface Observer (Script)** component.</span></span>
+* <span data-ttu-id="3a658-236">按一下 [ **房間模型** ] 屬性右邊的圓形。</span><span class="sxs-lookup"><span data-stu-id="3a658-236">Click the circle to the right of the **Room Model** property.</span></span>
+* <span data-ttu-id="3a658-237">尋找並選取 [ **SRMesh** ] 物件，然後關閉視窗。</span><span class="sxs-lookup"><span data-stu-id="3a658-237">Find and select the **SRMesh** object and then close the window.</span></span>
+* <span data-ttu-id="3a658-238">確認 [**檢查**] 面板中的 [**房間模型**] 屬性現在已設定為 [ **SRMesh**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-238">Verify that the **Room Model** property in the **Inspector** panel is now set to **SRMesh**.</span></span>
+* <span data-ttu-id="3a658-239">按下 [ **播放** ] 按鈕以進入 Unity 的預覽模式。</span><span class="sxs-lookup"><span data-stu-id="3a658-239">Press the **Play** button to enter Unity's preview mode.</span></span>
+* <span data-ttu-id="3a658-240">SpatialMapping 元件會從已儲存的房間模型載入網格，讓您可以在 Unity 中使用它們。</span><span class="sxs-lookup"><span data-stu-id="3a658-240">The SpatialMapping component will load the meshes from the saved room model so you can use them in Unity.</span></span>
+* <span data-ttu-id="3a658-241">切換至 **場景** 視圖，以查看以線框著色器顯示的所有房間模型。</span><span class="sxs-lookup"><span data-stu-id="3a658-241">Switch to **Scene** view to see all of your room model displayed with the wireframe shader.</span></span>
+* <span data-ttu-id="3a658-242">再按一次 [ **播放** ] 按鈕以結束預覽模式。</span><span class="sxs-lookup"><span data-stu-id="3a658-242">Press the **Play** button again to exit preview mode.</span></span>
 
-<span data-ttu-id="b1fb8-243">**注意：** 下次您在 Unity 中進入預覽模式時，預設會載入儲存的房間網格。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-243">**NOTE:** The next time that you enter preview mode in Unity, it will load the saved room mesh by default.</span></span>
+<span data-ttu-id="3a658-243">**注意：** 下次您在 Unity 中進入預覽模式時，預設會載入儲存的房間網格。</span><span class="sxs-lookup"><span data-stu-id="3a658-243">**NOTE:** The next time that you enter preview mode in Unity, it will load the saved room mesh by default.</span></span>
 
-## <a name="chapter-2---visualization"></a><span data-ttu-id="b1fb8-244">第2章-視覺效果</span><span class="sxs-lookup"><span data-stu-id="b1fb8-244">Chapter 2 - Visualization</span></span>
+## <a name="chapter-2---visualization"></a><span data-ttu-id="3a658-244">第2章-視覺效果</span><span class="sxs-lookup"><span data-stu-id="3a658-244">Chapter 2 - Visualization</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/RnkvXl-aXD4]
 
-<span data-ttu-id="b1fb8-245">**目標**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-245">**Objectives**</span></span>
+<span data-ttu-id="3a658-245">**目標**</span><span class="sxs-lookup"><span data-stu-id="3a658-245">**Objectives**</span></span>
 
-* <span data-ttu-id="b1fb8-246">瞭解著色器的基本概念。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-246">Learn the basics of shaders.</span></span>
-* <span data-ttu-id="b1fb8-247">視覺化您的環境。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-247">Visualize your surroundings.</span></span>
+* <span data-ttu-id="3a658-246">瞭解著色器的基本概念。</span><span class="sxs-lookup"><span data-stu-id="3a658-246">Learn the basics of shaders.</span></span>
+* <span data-ttu-id="3a658-247">視覺化您的環境。</span><span class="sxs-lookup"><span data-stu-id="3a658-247">Visualize your surroundings.</span></span>
 
-<span data-ttu-id="b1fb8-248">**指示**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-248">**Instructions**</span></span>
+<span data-ttu-id="3a658-248">**指示**</span><span class="sxs-lookup"><span data-stu-id="3a658-248">**Instructions**</span></span>
 
-* <span data-ttu-id="b1fb8-249">在 Unity 的 **階層面板中** ，選取 [ **SpatialMapping** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-249">In Unity's **Hierarchy** panel, select the **SpatialMapping** object.</span></span>
-* <span data-ttu-id="b1fb8-250">在 [偵測 **器** ] 面板中，尋找 **(腳本) 元件的空間對應管理員** 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-250">In the **Inspector** panel, find the **Spatial Mapping Manager (Script)** component.</span></span>
-* <span data-ttu-id="b1fb8-251">按一下 [ **Surface 材質** ] 屬性右邊的圓形。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-251">Click the circle to the right of the **Surface Material** property.</span></span>
-* <span data-ttu-id="b1fb8-252">尋找並選取 **BlueLinesOnWalls** 材質，然後關閉視窗。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-252">Find and select the **BlueLinesOnWalls** material and close the window.</span></span>
-* <span data-ttu-id="b1fb8-253">在 [ **專案** 面板 **著色** 器] 資料夾中，按兩下 [ **BlueLinesOnWalls** ] 以開啟 Visual Studio 中的著色器。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-253">In the **Project** panel **Shaders** folder, double-click on **BlueLinesOnWalls** to open the shader in Visual Studio.</span></span>
-* <span data-ttu-id="b1fb8-254">這是一個簡單的圖元 (頂點到片段) 著色器，它會完成下列工作：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-254">This is a simple pixel (vertex to fragment) shader, which accomplishes the following tasks:</span></span>
-    1. <span data-ttu-id="b1fb8-255">將頂點的位置轉換成世界空間。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-255">Converts a vertex's location to world space.</span></span>
-    2. <span data-ttu-id="b1fb8-256">檢查頂點的一般，以判斷圖元是否為垂直。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-256">Checks the vertex's normal to determine if a pixel is vertical.</span></span>
-    3. <span data-ttu-id="b1fb8-257">設定用來呈現的圖元色彩。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-257">Sets the color of the pixel for rendering.</span></span>
+* <span data-ttu-id="3a658-249">在 Unity 的 **階層面板中** ，選取 [ **SpatialMapping** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-249">In Unity's **Hierarchy** panel, select the **SpatialMapping** object.</span></span>
+* <span data-ttu-id="3a658-250">在 [偵測 **器** ] 面板中，尋找 **(腳本) 元件的空間對應管理員** 。</span><span class="sxs-lookup"><span data-stu-id="3a658-250">In the **Inspector** panel, find the **Spatial Mapping Manager (Script)** component.</span></span>
+* <span data-ttu-id="3a658-251">按一下 [ **Surface 材質** ] 屬性右邊的圓形。</span><span class="sxs-lookup"><span data-stu-id="3a658-251">Click the circle to the right of the **Surface Material** property.</span></span>
+* <span data-ttu-id="3a658-252">尋找並選取 **BlueLinesOnWalls** 材質，然後關閉視窗。</span><span class="sxs-lookup"><span data-stu-id="3a658-252">Find and select the **BlueLinesOnWalls** material and close the window.</span></span>
+* <span data-ttu-id="3a658-253">在 [ **專案** 面板 **著色** 器] 資料夾中，按兩下 [ **BlueLinesOnWalls** ] 以開啟 Visual Studio 中的著色器。</span><span class="sxs-lookup"><span data-stu-id="3a658-253">In the **Project** panel **Shaders** folder, double-click on **BlueLinesOnWalls** to open the shader in Visual Studio.</span></span>
+* <span data-ttu-id="3a658-254">這是一個簡單的圖元 (頂點到片段) 著色器，它會完成下列工作：</span><span class="sxs-lookup"><span data-stu-id="3a658-254">This is a simple pixel (vertex to fragment) shader, which accomplishes the following tasks:</span></span>
+    1. <span data-ttu-id="3a658-255">將頂點的位置轉換成世界空間。</span><span class="sxs-lookup"><span data-stu-id="3a658-255">Converts a vertex's location to world space.</span></span>
+    2. <span data-ttu-id="3a658-256">檢查頂點的一般，以判斷圖元是否為垂直。</span><span class="sxs-lookup"><span data-stu-id="3a658-256">Checks the vertex's normal to determine if a pixel is vertical.</span></span>
+    3. <span data-ttu-id="3a658-257">設定用來呈現的圖元色彩。</span><span class="sxs-lookup"><span data-stu-id="3a658-257">Sets the color of the pixel for rendering.</span></span>
 
-<span data-ttu-id="b1fb8-258">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-258">**Build and Deploy**</span></span>
+<span data-ttu-id="3a658-258">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="3a658-258">**Build and Deploy**</span></span>
 
-* <span data-ttu-id="b1fb8-259">返回 Unity，然後按下 [ **播放** ] 進入預覽模式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-259">Return to Unity and press **Play** to enter preview mode.</span></span>
-* <span data-ttu-id="b1fb8-260">系統會在房間網格的所有垂直表面上轉譯藍線 (這會從已儲存的掃描資料) 自動載入。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-260">Blue lines will be rendered on all vertical surfaces of the room mesh (which automatically loaded from our saved scanning data).</span></span>
-* <span data-ttu-id="b1fb8-261">切換至 [ **場景** ] 索引標籤，以調整您的房間視圖，並查看整個房間網格在 Unity 中的顯示方式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-261">Switch to the **Scene** tab to adjust your view of the room and see how the entire room mesh appears in Unity.</span></span>
-* <span data-ttu-id="b1fb8-262">在 [ **專案** ] 面板中，尋找 [ **材質** ] 資料夾，並選取 **BlueLinesOnWalls** 材質。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-262">In the **Project** panel, find the **Materials** folder and select the **BlueLinesOnWalls** material.</span></span>
-* <span data-ttu-id="b1fb8-263">修改某些屬性，並查看如何在 Unity 編輯器中顯示變更。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-263">Modify some properties and see how the changes appear in the Unity editor.</span></span>
-    * <span data-ttu-id="b1fb8-264">在 [偵測 **器** ] 面板中，調整 **LineScale** 值，讓線條顯示為較粗或更細。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-264">In the **Inspector** panel, adjust the **LineScale** value to make the lines appear thicker or thinner.</span></span>
-    * <span data-ttu-id="b1fb8-265">在 [偵測 **器** ] 面板中，調整 **LinesPerMeter** 值以變更每個牆上出現的行數。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-265">In the **Inspector** panel, adjust the **LinesPerMeter** value to change how many lines appear on each wall.</span></span>
-* <span data-ttu-id="b1fb8-266">按一下 [ **播放** ] 以結束預覽模式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-266">Click **Play** again to exit preview mode.</span></span>
-* <span data-ttu-id="b1fb8-267">建立並部署至 HoloLens，並觀察著色器轉譯如何顯示在實際表面上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-267">Build and deploy to the HoloLens and observe how the shader rendering appears on real surfaces.</span></span>
+* <span data-ttu-id="3a658-259">返回 Unity，然後按下 [ **播放** ] 進入預覽模式。</span><span class="sxs-lookup"><span data-stu-id="3a658-259">Return to Unity and press **Play** to enter preview mode.</span></span>
+* <span data-ttu-id="3a658-260">系統會在房間網格的所有垂直表面上轉譯藍線 (這會從已儲存的掃描資料) 自動載入。</span><span class="sxs-lookup"><span data-stu-id="3a658-260">Blue lines will be rendered on all vertical surfaces of the room mesh (which automatically loaded from our saved scanning data).</span></span>
+* <span data-ttu-id="3a658-261">切換至 [ **場景** ] 索引標籤，以調整您的房間視圖，並查看整個房間網格在 Unity 中的顯示方式。</span><span class="sxs-lookup"><span data-stu-id="3a658-261">Switch to the **Scene** tab to adjust your view of the room and see how the entire room mesh appears in Unity.</span></span>
+* <span data-ttu-id="3a658-262">在 [ **專案** ] 面板中，尋找 [ **材質** ] 資料夾，並選取 **BlueLinesOnWalls** 材質。</span><span class="sxs-lookup"><span data-stu-id="3a658-262">In the **Project** panel, find the **Materials** folder and select the **BlueLinesOnWalls** material.</span></span>
+* <span data-ttu-id="3a658-263">修改某些屬性，並查看如何在 Unity 編輯器中顯示變更。</span><span class="sxs-lookup"><span data-stu-id="3a658-263">Modify some properties and see how the changes appear in the Unity editor.</span></span>
+    * <span data-ttu-id="3a658-264">在 [偵測 **器** ] 面板中，調整 **LineScale** 值，讓線條顯示為較粗或更細。</span><span class="sxs-lookup"><span data-stu-id="3a658-264">In the **Inspector** panel, adjust the **LineScale** value to make the lines appear thicker or thinner.</span></span>
+    * <span data-ttu-id="3a658-265">在 [偵測 **器** ] 面板中，調整 **LinesPerMeter** 值以變更每個牆上出現的行數。</span><span class="sxs-lookup"><span data-stu-id="3a658-265">In the **Inspector** panel, adjust the **LinesPerMeter** value to change how many lines appear on each wall.</span></span>
+* <span data-ttu-id="3a658-266">按一下 [ **播放** ] 以結束預覽模式。</span><span class="sxs-lookup"><span data-stu-id="3a658-266">Click **Play** again to exit preview mode.</span></span>
+* <span data-ttu-id="3a658-267">建立並部署至 HoloLens，並觀察著色器轉譯如何顯示在實際表面上。</span><span class="sxs-lookup"><span data-stu-id="3a658-267">Build and deploy to the HoloLens and observe how the shader rendering appears on real surfaces.</span></span>
 
-<span data-ttu-id="b1fb8-268">Unity 有很大的預覽材質，但最好是在裝置中簽出轉譯的好主意。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-268">Unity does a great job of previewing materials, but it's always a good idea to check-out rendering in the device.</span></span>
+<span data-ttu-id="3a658-268">Unity 有很大的預覽材質，但最好是在裝置中簽出轉譯的好主意。</span><span class="sxs-lookup"><span data-stu-id="3a658-268">Unity does a great job of previewing materials, but it's always a good idea to check-out rendering in the device.</span></span>
 
-## <a name="chapter-3---processing"></a><span data-ttu-id="b1fb8-269">第3章-處理</span><span class="sxs-lookup"><span data-stu-id="b1fb8-269">Chapter 3 - Processing</span></span>
+## <a name="chapter-3---processing"></a><span data-ttu-id="3a658-269">第3章-處理</span><span class="sxs-lookup"><span data-stu-id="3a658-269">Chapter 3 - Processing</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/kaUKiNiDxwY]
 
-<span data-ttu-id="b1fb8-270">**目標**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-270">**Objectives**</span></span>
+<span data-ttu-id="3a658-270">**目標**</span><span class="sxs-lookup"><span data-stu-id="3a658-270">**Objectives**</span></span>
 
-* <span data-ttu-id="b1fb8-271">瞭解處理空間對應資料以在應用程式中使用的技術。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-271">Learn techniques to process spatial mapping data for use in your application.</span></span>
-* <span data-ttu-id="b1fb8-272">分析空間對應資料以尋找平面和移除三角形。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-272">Analyze spatial mapping data to find planes and remove triangles.</span></span>
-* <span data-ttu-id="b1fb8-273">使用平面來放置全息圖。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-273">Use planes for hologram placement.</span></span>
+* <span data-ttu-id="3a658-271">瞭解處理空間對應資料以在應用程式中使用的技術。</span><span class="sxs-lookup"><span data-stu-id="3a658-271">Learn techniques to process spatial mapping data for use in your application.</span></span>
+* <span data-ttu-id="3a658-272">分析空間對應資料以尋找平面和移除三角形。</span><span class="sxs-lookup"><span data-stu-id="3a658-272">Analyze spatial mapping data to find planes and remove triangles.</span></span>
+* <span data-ttu-id="3a658-273">使用平面來放置全息圖。</span><span class="sxs-lookup"><span data-stu-id="3a658-273">Use planes for hologram placement.</span></span>
 
-<span data-ttu-id="b1fb8-274">**指示**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-274">**Instructions**</span></span>
+<span data-ttu-id="3a658-274">**指示**</span><span class="sxs-lookup"><span data-stu-id="3a658-274">**Instructions**</span></span>
 
-* <span data-ttu-id="b1fb8-275">在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpatialProcessing** 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-275">In Unity's **Project** panel, **Holograms** folder, find the **SpatialProcessing** object.</span></span>
-* <span data-ttu-id="b1fb8-276">將 **SpatialProcessing** 物件拖曳 & 放入 [階層 **] 面板中** 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-276">Drag & drop the **SpatialProcessing** object into the **Hierarchy** panel.</span></span>
+* <span data-ttu-id="3a658-275">在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpatialProcessing** 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-275">In Unity's **Project** panel, **Holograms** folder, find the **SpatialProcessing** object.</span></span>
+* <span data-ttu-id="3a658-276">將 **SpatialProcessing** 物件拖曳 & 放入 [階層 **] 面板中** 。</span><span class="sxs-lookup"><span data-stu-id="3a658-276">Drag & drop the **SpatialProcessing** object into the **Hierarchy** panel.</span></span>
 
-<span data-ttu-id="b1fb8-277">SpatialProcessing 預製專案包含處理空間對應資料的元件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-277">The SpatialProcessing prefab includes components for processing the spatial mapping data.</span></span> <span data-ttu-id="b1fb8-278">**SurfaceMeshesToPlanes** 會根據空間對應資料尋找並產生平面。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-278">**SurfaceMeshesToPlanes.cs** will find and generate planes based on the spatial mapping data.</span></span> <span data-ttu-id="b1fb8-279">我們將在應用程式中使用平面來代表牆壁、樓層和上限。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-279">We will use planes in our application to represent walls, floors and ceilings.</span></span> <span data-ttu-id="b1fb8-280">此預製專案也包含可從空間對應網格移除頂點的 **RemoveSurfaceVertices。**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-280">This prefab also includes **RemoveSurfaceVertices.cs** which can remove vertices from the spatial mapping mesh.</span></span> <span data-ttu-id="b1fb8-281">這可以用來在網格中建立洞，或移除不再需要的多餘三角形 (因為可以改用平面來取代) 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-281">This can be used to create holes in the mesh, or to remove excess triangles that are no longer needed (because planes can be used instead).</span></span>
+<span data-ttu-id="3a658-277">SpatialProcessing 預製專案包含處理空間對應資料的元件。</span><span class="sxs-lookup"><span data-stu-id="3a658-277">The SpatialProcessing prefab includes components for processing the spatial mapping data.</span></span> <span data-ttu-id="3a658-278">**SurfaceMeshesToPlanes** 會根據空間對應資料尋找並產生平面。</span><span class="sxs-lookup"><span data-stu-id="3a658-278">**SurfaceMeshesToPlanes.cs** will find and generate planes based on the spatial mapping data.</span></span> <span data-ttu-id="3a658-279">我們將在應用程式中使用平面來代表牆壁、樓層和上限。</span><span class="sxs-lookup"><span data-stu-id="3a658-279">We will use planes in our application to represent walls, floors and ceilings.</span></span> <span data-ttu-id="3a658-280">此預製專案也包含可從空間對應網格移除頂點的 **RemoveSurfaceVertices。**</span><span class="sxs-lookup"><span data-stu-id="3a658-280">This prefab also includes **RemoveSurfaceVertices.cs** which can remove vertices from the spatial mapping mesh.</span></span> <span data-ttu-id="3a658-281">這可以用來在網格中建立洞，或移除不再需要的多餘三角形 (因為可以改用平面來取代) 。</span><span class="sxs-lookup"><span data-stu-id="3a658-281">This can be used to create holes in the mesh, or to remove excess triangles that are no longer needed (because planes can be used instead).</span></span>
 
-* <span data-ttu-id="b1fb8-282">在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpaceCollection** 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-282">In Unity's **Project** panel, **Holograms** folder, find the **SpaceCollection** object.</span></span>
-* <span data-ttu-id="b1fb8-283">將 **SpaceCollection** 物件拖放 **到 [階層** ] 面板中。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-283">Drag and drop the **SpaceCollection** object into the **Hierarchy** panel.</span></span>
-* <span data-ttu-id="b1fb8-284">**在 [階層] 面板中**，選取 [ **SpatialProcessing** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-284">In the **Hierarchy** panel, select the **SpatialProcessing** object.</span></span>
-* <span data-ttu-id="b1fb8-285">在 [偵測 **器** ] 面板中，尋找 [ **播放空間管理員] (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-285">In the **Inspector** panel, find the **Play Space Manager (Script)** component.</span></span>
-* <span data-ttu-id="b1fb8-286">按兩下 **PlaySpaceManager** ，在 Visual Studio 中開啟。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-286">Double-click on **PlaySpaceManager.cs** to open it in Visual Studio.</span></span>
+* <span data-ttu-id="3a658-282">在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpaceCollection** 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-282">In Unity's **Project** panel, **Holograms** folder, find the **SpaceCollection** object.</span></span>
+* <span data-ttu-id="3a658-283">將 **SpaceCollection** 物件拖放 **到 [階層** ] 面板中。</span><span class="sxs-lookup"><span data-stu-id="3a658-283">Drag and drop the **SpaceCollection** object into the **Hierarchy** panel.</span></span>
+* <span data-ttu-id="3a658-284">**在 [階層] 面板中**，選取 [ **SpatialProcessing** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-284">In the **Hierarchy** panel, select the **SpatialProcessing** object.</span></span>
+* <span data-ttu-id="3a658-285">在 [偵測 **器** ] 面板中，尋找 [ **播放空間管理員] (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="3a658-285">In the **Inspector** panel, find the **Play Space Manager (Script)** component.</span></span>
+* <span data-ttu-id="3a658-286">按兩下 **PlaySpaceManager** ，在 Visual Studio 中開啟。</span><span class="sxs-lookup"><span data-stu-id="3a658-286">Double-click on **PlaySpaceManager.cs** to open it in Visual Studio.</span></span>
 
-<span data-ttu-id="b1fb8-287">PlaySpaceManager 包含應用程式特定的程式碼。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-287">PlaySpaceManager.cs contains application-specific code.</span></span> <span data-ttu-id="b1fb8-288">我們將在此腳本中新增功能，以啟用下列行為：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-288">We will add functionality to this script to enable the following behavior:</span></span>
+<span data-ttu-id="3a658-287">PlaySpaceManager 包含應用程式特定的程式碼。</span><span class="sxs-lookup"><span data-stu-id="3a658-287">PlaySpaceManager.cs contains application-specific code.</span></span> <span data-ttu-id="3a658-288">我們將在此腳本中新增功能，以啟用下列行為：</span><span class="sxs-lookup"><span data-stu-id="3a658-288">We will add functionality to this script to enable the following behavior:</span></span>
 
-1. <span data-ttu-id="b1fb8-289">超過掃描時間限制 (10 秒) 之後，停止收集空間對應資料。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-289">Stop collecting spatial mapping data after we exceed the scanning time limit (10 seconds).</span></span>
-2. <span data-ttu-id="b1fb8-290">處理空間對應資料：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-290">Process the spatial mapping data:</span></span>
-    1. <span data-ttu-id="b1fb8-291">使用 SurfaceMeshesToPlanes 來建立更簡單的世界表示，作為平面 (牆壁、樓層、上限等) 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-291">Use SurfaceMeshesToPlanes to create a simpler representation of the world as planes (walls, floors, ceilings, etc).</span></span>
-    2. <span data-ttu-id="b1fb8-292">使用 RemoveSurfaceVertices 來移除落在平面邊界內的表面三角形。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-292">Use RemoveSurfaceVertices to remove surface triangles that fall within plane boundaries.</span></span>
-3. <span data-ttu-id="b1fb8-293">產生世界各地的全像投影集合，並將它們放在靠近使用者的牆和地面平面上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-293">Generate a collection of holograms in the world and place them on wall and floor planes near the user.</span></span>
+1. <span data-ttu-id="3a658-289">超過掃描時間限制 (10 秒) 之後，停止收集空間對應資料。</span><span class="sxs-lookup"><span data-stu-id="3a658-289">Stop collecting spatial mapping data after we exceed the scanning time limit (10 seconds).</span></span>
+2. <span data-ttu-id="3a658-290">處理空間對應資料：</span><span class="sxs-lookup"><span data-stu-id="3a658-290">Process the spatial mapping data:</span></span>
+    1. <span data-ttu-id="3a658-291">使用 SurfaceMeshesToPlanes 來建立更簡單的世界表示，作為平面 (牆壁、樓層、上限等) 。</span><span class="sxs-lookup"><span data-stu-id="3a658-291">Use SurfaceMeshesToPlanes to create a simpler representation of the world as planes (walls, floors, ceilings, etc).</span></span>
+    2. <span data-ttu-id="3a658-292">使用 RemoveSurfaceVertices 來移除落在平面邊界內的表面三角形。</span><span class="sxs-lookup"><span data-stu-id="3a658-292">Use RemoveSurfaceVertices to remove surface triangles that fall within plane boundaries.</span></span>
+3. <span data-ttu-id="3a658-293">產生世界各地的全像投影集合，並將它們放在靠近使用者的牆和地面平面上。</span><span class="sxs-lookup"><span data-stu-id="3a658-293">Generate a collection of holograms in the world and place them on wall and floor planes near the user.</span></span>
 
-<span data-ttu-id="b1fb8-294">完成標示在 PlaySpaceManager 中的程式碼撰寫練習，或將腳本取代為以下的完成解決方案：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-294">Complete the coding exercises marked in PlaySpaceManager.cs, or replace the script with the finished solution from below:</span></span>
+<span data-ttu-id="3a658-294">完成標示在 PlaySpaceManager 中的程式碼撰寫練習，或將腳本取代為以下的完成解決方案：</span><span class="sxs-lookup"><span data-stu-id="3a658-294">Complete the coding exercises marked in PlaySpaceManager.cs, or replace the script with the finished solution from below:</span></span>
 
 ```cs
 using System.Collections.Generic;
@@ -443,46 +443,46 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 }
 ```
 
-<span data-ttu-id="b1fb8-295">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-295">**Build and Deploy**</span></span>
+<span data-ttu-id="3a658-295">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="3a658-295">**Build and Deploy**</span></span>
 
-* <span data-ttu-id="b1fb8-296">部署到 HoloLens 之前，請按 Unity 中的 [ **播放** ] 按鈕進入播放模式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-296">Before deploying to the HoloLens, press the **Play** button in Unity to enter play mode.</span></span>
-* <span data-ttu-id="b1fb8-297">從檔案載入空間網格之後，請等候10秒鐘，然後在空間對應網格上開始處理。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-297">After the room mesh is loaded from file, wait for 10 seconds before processing starts on the spatial mapping mesh.</span></span>
-* <span data-ttu-id="b1fb8-298">當處理完成時，平面會顯示為代表樓層、牆壁、上限等等。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-298">When processing is complete, planes will appear to represent the floor, walls, ceiling, etc.</span></span>
-* <span data-ttu-id="b1fb8-299">找到所有的平面之後，您應該會看到日光系統出現在相機附近的桌子上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-299">After all of the planes have been found, you should see a solar system appear on a table of floor near the camera.</span></span>
-* <span data-ttu-id="b1fb8-300">兩個海報也應該出現在相機附近的牆上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-300">Two posters should appear on walls near the camera too.</span></span> <span data-ttu-id="b1fb8-301">如果您無法在 **遊戲** 模式中看到，請切換至 [**場景**] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-301">Switch to the **Scene** tab if you cannot see them in **Game** mode.</span></span>
-* <span data-ttu-id="b1fb8-302">再按一次 [ **播放** ] 按鈕以結束播放模式。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-302">Press the **Play** button again to exit play mode.</span></span>
-* <span data-ttu-id="b1fb8-303">照常建立並部署到 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-303">Build and deploy to the HoloLens, as usual.</span></span>
-* <span data-ttu-id="b1fb8-304">等候空間對應資料的掃描和處理完成。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-304">Wait for scanning and processing of the spatial mapping data to complete.</span></span>
-* <span data-ttu-id="b1fb8-305">一旦您看到了飛機，請試著找出您世界中的日光系統和海報。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-305">Once you see planes, try to find the solar system and posters in your world.</span></span>
+* <span data-ttu-id="3a658-296">部署到 HoloLens 之前，請按 Unity 中的 [ **播放** ] 按鈕進入播放模式。</span><span class="sxs-lookup"><span data-stu-id="3a658-296">Before deploying to the HoloLens, press the **Play** button in Unity to enter play mode.</span></span>
+* <span data-ttu-id="3a658-297">從檔案載入空間網格之後，請等候10秒鐘，然後在空間對應網格上開始處理。</span><span class="sxs-lookup"><span data-stu-id="3a658-297">After the room mesh is loaded from file, wait for 10 seconds before processing starts on the spatial mapping mesh.</span></span>
+* <span data-ttu-id="3a658-298">當處理完成時，平面會顯示為代表樓層、牆壁、上限等等。</span><span class="sxs-lookup"><span data-stu-id="3a658-298">When processing is complete, planes will appear to represent the floor, walls, ceiling, etc.</span></span>
+* <span data-ttu-id="3a658-299">找到所有的平面之後，您應該會看到日光系統出現在相機附近的桌子上。</span><span class="sxs-lookup"><span data-stu-id="3a658-299">After all of the planes have been found, you should see a solar system appear on a table of floor near the camera.</span></span>
+* <span data-ttu-id="3a658-300">兩個海報也應該出現在相機附近的牆上。</span><span class="sxs-lookup"><span data-stu-id="3a658-300">Two posters should appear on walls near the camera too.</span></span> <span data-ttu-id="3a658-301">如果您無法在 **遊戲** 模式中看到，請切換至 [**場景**] 索引標籤。</span><span class="sxs-lookup"><span data-stu-id="3a658-301">Switch to the **Scene** tab if you cannot see them in **Game** mode.</span></span>
+* <span data-ttu-id="3a658-302">再按一次 [ **播放** ] 按鈕以結束播放模式。</span><span class="sxs-lookup"><span data-stu-id="3a658-302">Press the **Play** button again to exit play mode.</span></span>
+* <span data-ttu-id="3a658-303">照常建立並部署到 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="3a658-303">Build and deploy to the HoloLens, as usual.</span></span>
+* <span data-ttu-id="3a658-304">等候空間對應資料的掃描和處理完成。</span><span class="sxs-lookup"><span data-stu-id="3a658-304">Wait for scanning and processing of the spatial mapping data to complete.</span></span>
+* <span data-ttu-id="3a658-305">一旦您看到了飛機，請試著找出您世界中的日光系統和海報。</span><span class="sxs-lookup"><span data-stu-id="3a658-305">Once you see planes, try to find the solar system and posters in your world.</span></span>
 
-## <a name="chapter-4---placement"></a><span data-ttu-id="b1fb8-306">第4章-放置</span><span class="sxs-lookup"><span data-stu-id="b1fb8-306">Chapter 4 - Placement</span></span>
+## <a name="chapter-4---placement"></a><span data-ttu-id="3a658-306">第4章-放置</span><span class="sxs-lookup"><span data-stu-id="3a658-306">Chapter 4 - Placement</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/Srhtpid1uZc]
 
-<span data-ttu-id="b1fb8-307">**目標**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-307">**Objectives**</span></span>
+<span data-ttu-id="3a658-307">**目標**</span><span class="sxs-lookup"><span data-stu-id="3a658-307">**Objectives**</span></span>
 
-* <span data-ttu-id="b1fb8-308">判斷是否要在表面上容納全像影像。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-308">Determine if a hologram will fit on a surface.</span></span>
-* <span data-ttu-id="b1fb8-309">當您的影像可在表面上無法容納時，為使用者提供意見反應。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-309">Provide feedback to the user when a hologram can/cannot fit on a surface.</span></span>
+* <span data-ttu-id="3a658-308">判斷是否要在表面上容納全像影像。</span><span class="sxs-lookup"><span data-stu-id="3a658-308">Determine if a hologram will fit on a surface.</span></span>
+* <span data-ttu-id="3a658-309">當您的影像可在表面上無法容納時，為使用者提供意見反應。</span><span class="sxs-lookup"><span data-stu-id="3a658-309">Provide feedback to the user when a hologram can/cannot fit on a surface.</span></span>
 
-<span data-ttu-id="b1fb8-310">**指示**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-310">**Instructions**</span></span>
+<span data-ttu-id="3a658-310">**指示**</span><span class="sxs-lookup"><span data-stu-id="3a658-310">**Instructions**</span></span>
 
-* <span data-ttu-id="b1fb8-311">在 Unity 的 **階層面板中** ，選取 [ **SpatialProcessing** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-311">In Unity's **Hierarchy** panel, select the **SpatialProcessing** object.</span></span>
-* <span data-ttu-id="b1fb8-312">在 [偵測 **器** ] 面板中，尋找 **平面網格以 (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-312">In the **Inspector** panel, find the **Surface Meshes To Planes (Script)** component.</span></span>
-* <span data-ttu-id="b1fb8-313">將 [ **繪製平面** ] 屬性變更為 [ **Nothing** ] 以清除選取專案。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-313">Change the **Draw Planes** property to **Nothing** to clear the selection.</span></span>
-* <span data-ttu-id="b1fb8-314">將 **Draw 平面** 屬性變更為 **牆**，如此就只會轉譯牆壁平面。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-314">Change the **Draw Planes** property to **Wall**, so that only wall planes will be rendered.</span></span>
-* <span data-ttu-id="b1fb8-315">在 [ **專案** ] 面板的 [ **腳本** ] 資料夾中，按兩下可 **放置的 .cs** ，在 Visual Studio 中開啟。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-315">In the **Project** panel, **Scripts** folder, double-click on **Placeable.cs** to open it in Visual Studio.</span></span>
+* <span data-ttu-id="3a658-311">在 Unity 的 **階層面板中** ，選取 [ **SpatialProcessing** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-311">In Unity's **Hierarchy** panel, select the **SpatialProcessing** object.</span></span>
+* <span data-ttu-id="3a658-312">在 [偵測 **器** ] 面板中，尋找 **平面網格以 (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="3a658-312">In the **Inspector** panel, find the **Surface Meshes To Planes (Script)** component.</span></span>
+* <span data-ttu-id="3a658-313">將 [ **繪製平面** ] 屬性變更為 [ **Nothing** ] 以清除選取專案。</span><span class="sxs-lookup"><span data-stu-id="3a658-313">Change the **Draw Planes** property to **Nothing** to clear the selection.</span></span>
+* <span data-ttu-id="3a658-314">將 **Draw 平面** 屬性變更為 **牆**，如此就只會轉譯牆壁平面。</span><span class="sxs-lookup"><span data-stu-id="3a658-314">Change the **Draw Planes** property to **Wall**, so that only wall planes will be rendered.</span></span>
+* <span data-ttu-id="3a658-315">在 [ **專案** ] 面板的 [ **腳本** ] 資料夾中，按兩下可 **放置的 .cs** ，在 Visual Studio 中開啟。</span><span class="sxs-lookup"><span data-stu-id="3a658-315">In the **Project** panel, **Scripts** folder, double-click on **Placeable.cs** to open it in Visual Studio.</span></span>
 
-<span data-ttu-id="b1fb8-316">可 **放置** 的腳本已附加至在完成平面尋找之後所建立的海報和投影方塊。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-316">The **Placeable** script is already attached to the posters and projection box that are created after plane finding completes.</span></span> <span data-ttu-id="b1fb8-317">我們只需要取消批註一些程式碼，這個腳本就能達成下列目標：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-317">All we need to do is uncomment some code, and this script will achieve the following:</span></span>
+<span data-ttu-id="3a658-316">可 **放置** 的腳本已附加至在完成平面尋找之後所建立的海報和投影方塊。</span><span class="sxs-lookup"><span data-stu-id="3a658-316">The **Placeable** script is already attached to the posters and projection box that are created after plane finding completes.</span></span> <span data-ttu-id="3a658-317">我們只需要取消批註一些程式碼，這個腳本就能達成下列目標：</span><span class="sxs-lookup"><span data-stu-id="3a658-317">All we need to do is uncomment some code, and this script will achieve the following:</span></span>
 
-1. <span data-ttu-id="b1fb8-318">從周框 cube 的中央和四個角落 raycasting，判斷是否要在表面上容納全像影像。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-318">Determine if a hologram will fit on a surface by raycasting from the center and four corners of the bounding cube.</span></span>
-2. <span data-ttu-id="b1fb8-319">檢查 surface normal，判斷是否有足夠的空間可讓全像影像排清。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-319">Check the surface normal to determine if it is smooth enough for the hologram to sit flush on.</span></span>
-3. <span data-ttu-id="b1fb8-320">轉譯影像周圍的周框 cube，以在放置時顯示其實際大小。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-320">Render a bounding cube around the hologram to show its actual size while being placed.</span></span>
-4. <span data-ttu-id="b1fb8-321">將陰影轉換下/後方的陰影，以顯示將放置在地面/牆上的位置。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-321">Cast a shadow under/behind the hologram to show where it will be placed on the floor/wall.</span></span>
-5. <span data-ttu-id="b1fb8-322">如果無法在表面上放置全像影像，則將陰影轉譯為紅色，如果可能的話，則呈現綠色。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-322">Render the shadow as red, if the hologram cannot be placed on the surface, or green, if it can.</span></span>
-6. <span data-ttu-id="b1fb8-323">重新排列影像的方向，使其與具有親和性的表面類型 (垂直或水準) 對齊。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-323">Re-orient the hologram to align with the surface type (vertical or horizontal) that it has affinity to.</span></span>
-7. <span data-ttu-id="b1fb8-324">順暢地將全像放置在選取的介面上，以避免跳躍或貼齊行為。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-324">Smoothly place the hologram on the selected surface to avoid jumping or snapping behavior.</span></span>
+1. <span data-ttu-id="3a658-318">從周框 cube 的中央和四個角落 raycasting，判斷是否要在表面上容納全像影像。</span><span class="sxs-lookup"><span data-stu-id="3a658-318">Determine if a hologram will fit on a surface by raycasting from the center and four corners of the bounding cube.</span></span>
+2. <span data-ttu-id="3a658-319">檢查 surface normal，判斷是否有足夠的空間可讓全像影像排清。</span><span class="sxs-lookup"><span data-stu-id="3a658-319">Check the surface normal to determine if it is smooth enough for the hologram to sit flush on.</span></span>
+3. <span data-ttu-id="3a658-320">轉譯影像周圍的周框 cube，以在放置時顯示其實際大小。</span><span class="sxs-lookup"><span data-stu-id="3a658-320">Render a bounding cube around the hologram to show its actual size while being placed.</span></span>
+4. <span data-ttu-id="3a658-321">將陰影轉換下/後方的陰影，以顯示將放置在地面/牆上的位置。</span><span class="sxs-lookup"><span data-stu-id="3a658-321">Cast a shadow under/behind the hologram to show where it will be placed on the floor/wall.</span></span>
+5. <span data-ttu-id="3a658-322">如果無法在表面上放置全像影像，則將陰影轉譯為紅色，如果可能的話，則呈現綠色。</span><span class="sxs-lookup"><span data-stu-id="3a658-322">Render the shadow as red, if the hologram cannot be placed on the surface, or green, if it can.</span></span>
+6. <span data-ttu-id="3a658-323">重新排列影像的方向，使其與具有親和性的表面類型 (垂直或水準) 對齊。</span><span class="sxs-lookup"><span data-stu-id="3a658-323">Re-orient the hologram to align with the surface type (vertical or horizontal) that it has affinity to.</span></span>
+7. <span data-ttu-id="3a658-324">順暢地將全像放置在選取的介面上，以避免跳躍或貼齊行為。</span><span class="sxs-lookup"><span data-stu-id="3a658-324">Smoothly place the hologram on the selected surface to avoid jumping or snapping behavior.</span></span>
 
-<span data-ttu-id="b1fb8-325">取消批註下列程式碼撰寫練習中的所有程式碼，或在可放置的中使用這個已完成的解決方案 **。 .cs**：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-325">Uncomment all code in the coding exercise below, or use this completed solution in **Placeable.cs**:</span></span>
+<span data-ttu-id="3a658-325">取消批註下列程式碼撰寫練習中的所有程式碼，或在可放置的中使用這個已完成的解決方案 **。 .cs**：</span><span class="sxs-lookup"><span data-stu-id="3a658-325">Uncomment all code in the coding exercise below, or use this completed solution in **Placeable.cs**:</span></span>
 
 ```cs
 using System.Collections.Generic;
@@ -1065,46 +1065,46 @@ public class Placeable : MonoBehaviour
 }
 ```
 
-<span data-ttu-id="b1fb8-326">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-326">**Build and Deploy**</span></span>
+<span data-ttu-id="3a658-326">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="3a658-326">**Build and Deploy**</span></span>
 
-* <span data-ttu-id="b1fb8-327">同樣地，建立專案並部署到 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-327">As before, build the project and deploy to the HoloLens.</span></span>
-* <span data-ttu-id="b1fb8-328">等候空間對應資料的掃描和處理完成。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-328">Wait for scanning and processing of the spatial mapping data to complete.</span></span>
-* <span data-ttu-id="b1fb8-329">當您看到日光系統時，請在下方的投射方塊中看看，並執行選取手勢來四處移動。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-329">When you see the solar system, gaze at the projection box below and perform a select gesture to move it around.</span></span> <span data-ttu-id="b1fb8-330">選取 [投射] 方塊時，會在投影方塊周圍顯示周框 cube。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-330">While the projection box is selected, a bounding cube will be visible around the projection box.</span></span>
-* <span data-ttu-id="b1fb8-331">將您移至房間的不同地點。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-331">Move you head to gaze at a different location in the room.</span></span> <span data-ttu-id="b1fb8-332">投影方塊應在您的注視之後。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-332">The projection box should follow your gaze.</span></span> <span data-ttu-id="b1fb8-333">當投影方塊下方的陰影變成紅色時，您就無法將全像放在表面上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-333">When the shadow below the projection box turns red, you cannot place the hologram on that surface.</span></span> <span data-ttu-id="b1fb8-334">當投影方塊下方的陰影變成綠色時，您可以藉由執行另一個選取手勢來放置全像投影。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-334">When the shadow below the projection box turns green, you can place the hologram by performing another select gesture.</span></span>
-* <span data-ttu-id="b1fb8-335">尋找並選取牆上的其中一個全息海報，將其移至新位置。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-335">Find and select one of the holographic posters on a wall to move it to a new location.</span></span> <span data-ttu-id="b1fb8-336">請注意，您不能將海報放在地面或最上方，而且當您四處移動時，它仍會正確地導向每個牆。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-336">Notice that you cannot place the poster on the floor or ceiling, and that it stays correctly oriented to each wall as you move around.</span></span>
+* <span data-ttu-id="3a658-327">同樣地，建立專案並部署到 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="3a658-327">As before, build the project and deploy to the HoloLens.</span></span>
+* <span data-ttu-id="3a658-328">等候空間對應資料的掃描和處理完成。</span><span class="sxs-lookup"><span data-stu-id="3a658-328">Wait for scanning and processing of the spatial mapping data to complete.</span></span>
+* <span data-ttu-id="3a658-329">當您看到日光系統時，請在下方的投射方塊中看看，並執行選取手勢來四處移動。</span><span class="sxs-lookup"><span data-stu-id="3a658-329">When you see the solar system, gaze at the projection box below and perform a select gesture to move it around.</span></span> <span data-ttu-id="3a658-330">選取 [投射] 方塊時，會在投影方塊周圍顯示周框 cube。</span><span class="sxs-lookup"><span data-stu-id="3a658-330">While the projection box is selected, a bounding cube will be visible around the projection box.</span></span>
+* <span data-ttu-id="3a658-331">將您移至房間的不同地點。</span><span class="sxs-lookup"><span data-stu-id="3a658-331">Move you head to gaze at a different location in the room.</span></span> <span data-ttu-id="3a658-332">投影方塊應在您的注視之後。</span><span class="sxs-lookup"><span data-stu-id="3a658-332">The projection box should follow your gaze.</span></span> <span data-ttu-id="3a658-333">當投影方塊下方的陰影變成紅色時，您就無法將全像放在表面上。</span><span class="sxs-lookup"><span data-stu-id="3a658-333">When the shadow below the projection box turns red, you cannot place the hologram on that surface.</span></span> <span data-ttu-id="3a658-334">當投影方塊下方的陰影變成綠色時，您可以藉由執行另一個選取手勢來放置全像投影。</span><span class="sxs-lookup"><span data-stu-id="3a658-334">When the shadow below the projection box turns green, you can place the hologram by performing another select gesture.</span></span>
+* <span data-ttu-id="3a658-335">尋找並選取牆上的其中一個全息海報，將其移至新位置。</span><span class="sxs-lookup"><span data-stu-id="3a658-335">Find and select one of the holographic posters on a wall to move it to a new location.</span></span> <span data-ttu-id="3a658-336">請注意，您不能將海報放在地面或最上方，而且當您四處移動時，它仍會正確地導向每個牆。</span><span class="sxs-lookup"><span data-stu-id="3a658-336">Notice that you cannot place the poster on the floor or ceiling, and that it stays correctly oriented to each wall as you move around.</span></span>
 
-## <a name="chapter-5---occlusion"></a><span data-ttu-id="b1fb8-337">第5章-遮蔽</span><span class="sxs-lookup"><span data-stu-id="b1fb8-337">Chapter 5 - Occlusion</span></span>
+## <a name="chapter-5---occlusion"></a><span data-ttu-id="3a658-337">第5章-遮蔽</span><span class="sxs-lookup"><span data-stu-id="3a658-337">Chapter 5 - Occlusion</span></span>
 
 >[!VIDEO https://www.youtube.com/embed/6Xrzh_w-7SE]
 
-<span data-ttu-id="b1fb8-338">**目標**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-338">**Objectives**</span></span>
+<span data-ttu-id="3a658-338">**目標**</span><span class="sxs-lookup"><span data-stu-id="3a658-338">**Objectives**</span></span>
 
-* <span data-ttu-id="b1fb8-339">判斷空間對應網格是否 pixels occluded 全像影像。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-339">Determine if a hologram is occluded by the spatial mapping mesh.</span></span>
-* <span data-ttu-id="b1fb8-340">套用不同的遮蔽技術，以達成有趣的效果。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-340">Apply different occlusion techniques to achieve a fun effect.</span></span>
+* <span data-ttu-id="3a658-339">判斷空間對應網格是否 pixels occluded 全像影像。</span><span class="sxs-lookup"><span data-stu-id="3a658-339">Determine if a hologram is occluded by the spatial mapping mesh.</span></span>
+* <span data-ttu-id="3a658-340">套用不同的遮蔽技術，以達成有趣的效果。</span><span class="sxs-lookup"><span data-stu-id="3a658-340">Apply different occlusion techniques to achieve a fun effect.</span></span>
 
-<span data-ttu-id="b1fb8-341">**指示**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-341">**Instructions**</span></span>
+<span data-ttu-id="3a658-341">**指示**</span><span class="sxs-lookup"><span data-stu-id="3a658-341">**Instructions**</span></span>
 
-<span data-ttu-id="b1fb8-342">首先，我們要讓空間對應網格遮蔽其他的全像不遮蔽真實世界的影像：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-342">First, we are going to allow the spatial mapping mesh to occlude other holograms without occluding the real world:</span></span>
+<span data-ttu-id="3a658-342">首先，我們要讓空間對應網格遮蔽其他的全像不遮蔽真實世界的影像：</span><span class="sxs-lookup"><span data-stu-id="3a658-342">First, we are going to allow the spatial mapping mesh to occlude other holograms without occluding the real world:</span></span>
 
-* <span data-ttu-id="b1fb8-343">**在 [階層] 面板中**，選取 [ **SpatialProcessing** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-343">In the **Hierarchy** panel, select the **SpatialProcessing** object.</span></span>
-* <span data-ttu-id="b1fb8-344">在 [偵測 **器** ] 面板中，尋找 [ **播放空間管理員] (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-344">In the **Inspector** panel, find the **Play Space Manager (Script)** component.</span></span>
-* <span data-ttu-id="b1fb8-345">按一下 **次要材質** 屬性右邊的圓形。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-345">Click the circle to the right of the **Secondary Material** property.</span></span>
-* <span data-ttu-id="b1fb8-346">尋找並選取 **遮蔽** 材質，然後關閉視窗。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-346">Find and select the **Occlusion** material and close the window.</span></span>
+* <span data-ttu-id="3a658-343">**在 [階層] 面板中**，選取 [ **SpatialProcessing** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-343">In the **Hierarchy** panel, select the **SpatialProcessing** object.</span></span>
+* <span data-ttu-id="3a658-344">在 [偵測 **器** ] 面板中，尋找 [ **播放空間管理員] (腳本)** 元件。</span><span class="sxs-lookup"><span data-stu-id="3a658-344">In the **Inspector** panel, find the **Play Space Manager (Script)** component.</span></span>
+* <span data-ttu-id="3a658-345">按一下 **次要材質** 屬性右邊的圓形。</span><span class="sxs-lookup"><span data-stu-id="3a658-345">Click the circle to the right of the **Secondary Material** property.</span></span>
+* <span data-ttu-id="3a658-346">尋找並選取 **遮蔽** 材質，然後關閉視窗。</span><span class="sxs-lookup"><span data-stu-id="3a658-346">Find and select the **Occlusion** material and close the window.</span></span>
 
-<span data-ttu-id="b1fb8-347">接下來，我們要將特殊行為新增至地球，使其在另一個全息圖 (（例如 sun) 或空間對應網格） pixels occluded 時有藍色反白顯示：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-347">Next, we are going to add a special behavior to Earth, so that it has a blue highlight whenever it becomes occluded by another hologram (like the sun), or by the spatial mapping mesh:</span></span>
+<span data-ttu-id="3a658-347">接下來，我們要將特殊行為新增至地球，使其在另一個全息圖 (（例如 sun) 或空間對應網格） pixels occluded 時有藍色反白顯示：</span><span class="sxs-lookup"><span data-stu-id="3a658-347">Next, we are going to add a special behavior to Earth, so that it has a blue highlight whenever it becomes occluded by another hologram (like the sun), or by the spatial mapping mesh:</span></span>
 
-* <span data-ttu-id="b1fb8-348">在 [ **專案** ] 面板的 [全像 **] 資料夾中** ，展開 [ **SolarSystem** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-348">In the **Project** panel, in the **Holograms** folder, expand the **SolarSystem** object.</span></span>
-* <span data-ttu-id="b1fb8-349">按一下 [ **地球**]。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-349">Click on **Earth**.</span></span>
-* <span data-ttu-id="b1fb8-350">在 [偵測 **器** ] 面板中，找出地球的材質 (底部的元件) 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-350">In the **Inspector** panel, find the Earth's material (bottom component).</span></span>
-* <span data-ttu-id="b1fb8-351">在 [ **著色器] 下拉式** 清單中，將著色器變更為 **自訂 > OcclusionRim**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-351">In the **Shader drop-down**, change the shader to **Custom > OcclusionRim**.</span></span> <span data-ttu-id="b1fb8-352">如果有另一個物件 pixels occluded，這會在地球周圍呈現藍色醒目提示。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-352">This will render a blue highlight around Earth whenever it is occluded by another object.</span></span>
+* <span data-ttu-id="3a658-348">在 [ **專案** ] 面板的 [全像 **] 資料夾中** ，展開 [ **SolarSystem** ] 物件。</span><span class="sxs-lookup"><span data-stu-id="3a658-348">In the **Project** panel, in the **Holograms** folder, expand the **SolarSystem** object.</span></span>
+* <span data-ttu-id="3a658-349">按一下 [ **地球**]。</span><span class="sxs-lookup"><span data-stu-id="3a658-349">Click on **Earth**.</span></span>
+* <span data-ttu-id="3a658-350">在 [偵測 **器** ] 面板中，找出地球的材質 (底部的元件) 。</span><span class="sxs-lookup"><span data-stu-id="3a658-350">In the **Inspector** panel, find the Earth's material (bottom component).</span></span>
+* <span data-ttu-id="3a658-351">在 [ **著色器] 下拉式** 清單中，將著色器變更為 **自訂 > OcclusionRim**。</span><span class="sxs-lookup"><span data-stu-id="3a658-351">In the **Shader drop-down**, change the shader to **Custom > OcclusionRim**.</span></span> <span data-ttu-id="3a658-352">如果有另一個物件 pixels occluded，這會在地球周圍呈現藍色醒目提示。</span><span class="sxs-lookup"><span data-stu-id="3a658-352">This will render a blue highlight around Earth whenever it is occluded by another object.</span></span>
 
-<span data-ttu-id="b1fb8-353">最後，我們要為日光系統中的行星啟用 x 光線視覺效果。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-353">Finally, we are going to enable an x-ray vision effect for planets in our solar system.</span></span> <span data-ttu-id="b1fb8-354">我們必須在 Scripts\SolarSystem 資料夾) 中編輯 **PlanetOcclusion** (，才能達到下列目標：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-354">We will need to edit **PlanetOcclusion.cs** (found in the Scripts\SolarSystem folder) in order to achieve the following:</span></span>
+<span data-ttu-id="3a658-353">最後，我們要為日光系統中的行星啟用 x 光線視覺效果。</span><span class="sxs-lookup"><span data-stu-id="3a658-353">Finally, we are going to enable an x-ray vision effect for planets in our solar system.</span></span> <span data-ttu-id="3a658-354">我們必須在 Scripts\SolarSystem 資料夾) 中編輯 **PlanetOcclusion** (，才能達到下列目標：</span><span class="sxs-lookup"><span data-stu-id="3a658-354">We will need to edit **PlanetOcclusion.cs** (found in the Scripts\SolarSystem folder) in order to achieve the following:</span></span>
 
-1. <span data-ttu-id="b1fb8-355">判斷 SpatialMapping 層是否 pixels occluded 行星 (房間網格和平面) 。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-355">Determine if a planet is occluded by the SpatialMapping layer (room meshes and planes).</span></span>
-2. <span data-ttu-id="b1fb8-356">當 SpatialMapping 圖層 pixels occluded 時，顯示行星的線框表示。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-356">Show the wireframe representation of a planet whenever it is occluded by the SpatialMapping layer.</span></span>
-3. <span data-ttu-id="b1fb8-357">隱藏 SpatialMapping 圖層未封鎖之行星的線框表示。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-357">Hide the wireframe representation of a planet when it is not blocked by the SpatialMapping layer.</span></span>
+1. <span data-ttu-id="3a658-355">判斷 SpatialMapping 層是否 pixels occluded 行星 (房間網格和平面) 。</span><span class="sxs-lookup"><span data-stu-id="3a658-355">Determine if a planet is occluded by the SpatialMapping layer (room meshes and planes).</span></span>
+2. <span data-ttu-id="3a658-356">當 SpatialMapping 圖層 pixels occluded 時，顯示行星的線框表示。</span><span class="sxs-lookup"><span data-stu-id="3a658-356">Show the wireframe representation of a planet whenever it is occluded by the SpatialMapping layer.</span></span>
+3. <span data-ttu-id="3a658-357">隱藏 SpatialMapping 圖層未封鎖之行星的線框表示。</span><span class="sxs-lookup"><span data-stu-id="3a658-357">Hide the wireframe representation of a planet when it is not blocked by the SpatialMapping layer.</span></span>
 
-<span data-ttu-id="b1fb8-358">遵循 PlanetOcclusion 中的程式碼練習，或使用下列解決方案：</span><span class="sxs-lookup"><span data-stu-id="b1fb8-358">Follow the coding exercise in PlanetOcclusion.cs, or use the following solution:</span></span>
+<span data-ttu-id="3a658-358">遵循 PlanetOcclusion 中的程式碼練習，或使用下列解決方案：</span><span class="sxs-lookup"><span data-stu-id="3a658-358">Follow the coding exercise in PlanetOcclusion.cs, or use the following solution:</span></span>
 
 ```cs
 using UnityEngine;
@@ -1197,21 +1197,21 @@ public class PlanetOcclusion : MonoBehaviour
 }
 ```
 
-<span data-ttu-id="b1fb8-359">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="b1fb8-359">**Build and Deploy**</span></span>
+<span data-ttu-id="3a658-359">**組建和部署**</span><span class="sxs-lookup"><span data-stu-id="3a658-359">**Build and Deploy**</span></span>
 
-* <span data-ttu-id="b1fb8-360">照常建立應用程式，並將其部署到 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-360">Build and deploy the application to HoloLens, as usual.</span></span>
-* <span data-ttu-id="b1fb8-361">等候空間對應資料的掃描和處理完成， (您應該會看到藍線出現在) 的牆上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-361">Wait for scanning and processing of the spatial mapping data to be complete (you should see blue lines appear on walls).</span></span>
-* <span data-ttu-id="b1fb8-362">尋找並選取日光系統的投射方塊，然後在某個牆旁邊或在計數器後方設定方塊。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-362">Find and select the solar system's projection box and then set the box next to a wall or behind a counter.</span></span>
-* <span data-ttu-id="b1fb8-363">您可以藉由在海報或投影方塊上隱藏對等的背後表面來查看基本遮蔽。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-363">You can view basic occlusion by hiding behind surfaces to peer at the poster or projection box.</span></span>
-* <span data-ttu-id="b1fb8-364">找出地球，每次出現在另一個全息圖或表面上時，應該會有藍色的強調效果。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-364">Look for the Earth, there should be a blue highlight effect whenever it goes behind another hologram or surface.</span></span>
-* <span data-ttu-id="b1fb8-365">當行星在房間後方或其他表面上移動時，請觀賞。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-365">Watch as the planets move behind the wall or other surfaces in the room.</span></span> <span data-ttu-id="b1fb8-366">您現在有 x 光願景，可以看到它們的線框骨架！</span><span class="sxs-lookup"><span data-stu-id="b1fb8-366">You now have x-ray vision and can see their wireframe skeletons!</span></span>
+* <span data-ttu-id="3a658-360">照常建立應用程式，並將其部署到 HoloLens。</span><span class="sxs-lookup"><span data-stu-id="3a658-360">Build and deploy the application to HoloLens, as usual.</span></span>
+* <span data-ttu-id="3a658-361">等候空間對應資料的掃描和處理完成， (您應該會看到藍線出現在) 的牆上。</span><span class="sxs-lookup"><span data-stu-id="3a658-361">Wait for scanning and processing of the spatial mapping data to be complete (you should see blue lines appear on walls).</span></span>
+* <span data-ttu-id="3a658-362">尋找並選取日光系統的投射方塊，然後在某個牆旁邊或在計數器後方設定方塊。</span><span class="sxs-lookup"><span data-stu-id="3a658-362">Find and select the solar system's projection box and then set the box next to a wall or behind a counter.</span></span>
+* <span data-ttu-id="3a658-363">您可以藉由在海報或投影方塊上隱藏對等的背後表面來查看基本遮蔽。</span><span class="sxs-lookup"><span data-stu-id="3a658-363">You can view basic occlusion by hiding behind surfaces to peer at the poster or projection box.</span></span>
+* <span data-ttu-id="3a658-364">找出地球，每次出現在另一個全息圖或表面上時，應該會有藍色的強調效果。</span><span class="sxs-lookup"><span data-stu-id="3a658-364">Look for the Earth, there should be a blue highlight effect whenever it goes behind another hologram or surface.</span></span>
+* <span data-ttu-id="3a658-365">當行星在房間後方或其他表面上移動時，請觀賞。</span><span class="sxs-lookup"><span data-stu-id="3a658-365">Watch as the planets move behind the wall or other surfaces in the room.</span></span> <span data-ttu-id="3a658-366">您現在有 x 光願景，可以看到它們的線框骨架！</span><span class="sxs-lookup"><span data-stu-id="3a658-366">You now have x-ray vision and can see their wireframe skeletons!</span></span>
 
-## <a name="the-end"></a><span data-ttu-id="b1fb8-367">結束</span><span class="sxs-lookup"><span data-stu-id="b1fb8-367">The End</span></span>
+## <a name="the-end"></a><span data-ttu-id="3a658-367">結束</span><span class="sxs-lookup"><span data-stu-id="3a658-367">The End</span></span>
 
-<span data-ttu-id="b1fb8-368">恭喜！</span><span class="sxs-lookup"><span data-stu-id="b1fb8-368">Congratulations!</span></span> <span data-ttu-id="b1fb8-369">您現在已完成 **MR 空間230：空間對應**。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-369">You have now completed **MR Spatial 230: Spatial mapping**.</span></span>
+<span data-ttu-id="3a658-368">恭喜！</span><span class="sxs-lookup"><span data-stu-id="3a658-368">Congratulations!</span></span> <span data-ttu-id="3a658-369">您現在已完成 **MR 空間230：空間對應**。</span><span class="sxs-lookup"><span data-stu-id="3a658-369">You have now completed **MR Spatial 230: Spatial mapping**.</span></span>
 
-* <span data-ttu-id="b1fb8-370">您知道如何掃描您的環境，並將空間對應資料載入至 Unity。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-370">You know how to scan your environment and load spatial mapping data to Unity.</span></span>
-* <span data-ttu-id="b1fb8-371">您瞭解著色器的基本概念，以及如何使用材質重新將世界視覺化。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-371">You understand the basics of shaders and how materials can be used to re-visualize the world.</span></span>
-* <span data-ttu-id="b1fb8-372">您已瞭解用來尋找平面和從網格中移除三角形的新處理技巧。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-372">You learned of new processing techniques for finding planes and removing triangles from a mesh.</span></span>
-* <span data-ttu-id="b1fb8-373">您可以移動影像並將其放在合理的表面上。</span><span class="sxs-lookup"><span data-stu-id="b1fb8-373">You were able to move and place holograms on surfaces that made sense.</span></span>
-* <span data-ttu-id="b1fb8-374">您遇到了不同的遮蔽技術，並和轉型了 x 光線願景的威力！</span><span class="sxs-lookup"><span data-stu-id="b1fb8-374">You experienced different occlusion techniques and harnessed the power of x-ray vision!</span></span>
+* <span data-ttu-id="3a658-370">您知道如何掃描您的環境，並將空間對應資料載入至 Unity。</span><span class="sxs-lookup"><span data-stu-id="3a658-370">You know how to scan your environment and load spatial mapping data to Unity.</span></span>
+* <span data-ttu-id="3a658-371">您瞭解著色器的基本概念，以及如何使用材質重新將世界視覺化。</span><span class="sxs-lookup"><span data-stu-id="3a658-371">You understand the basics of shaders and how materials can be used to re-visualize the world.</span></span>
+* <span data-ttu-id="3a658-372">您已瞭解用來尋找平面和從網格中移除三角形的新處理技巧。</span><span class="sxs-lookup"><span data-stu-id="3a658-372">You learned of new processing techniques for finding planes and removing triangles from a mesh.</span></span>
+* <span data-ttu-id="3a658-373">您可以移動影像並將其放在合理的表面上。</span><span class="sxs-lookup"><span data-stu-id="3a658-373">You were able to move and place holograms on surfaces that made sense.</span></span>
+* <span data-ttu-id="3a658-374">您遇到了不同的遮蔽技術，並和轉型了 x 光線願景的威力！</span><span class="sxs-lookup"><span data-stu-id="3a658-374">You experienced different occlusion techniques and harnessed the power of x-ray vision!</span></span>
