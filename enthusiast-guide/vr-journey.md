@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: 711c1b74b79ba510d29c17de0ec21270946ceb61
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007058"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223929"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -60,7 +60,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可
 
 <br>
 
-|  Checkpoint  |  特徵  |
+|  Checkpoint  |  功能  |
 | --- | --- |
 | [學習混合實境](learn-mixed-reality.md) | 瞭解如何使用您的注視、語音、控制器和鍵盤/滑鼠輸入 |
 | [流覽 Windows Mixed Reality 首頁](your-mixed-reality-home.md) | 探索 Windows Mixed Reality 首頁的虛擬環境  |
@@ -76,12 +76,13 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可
 
 <br>
 
-|  Checkpoint  |  特徵  |
+|  Checkpoint  |  功能  |
 | --- | --- |
 | [遊戲、360影片和應用程式](using-games-and-apps-in-windows-mixed-reality.md) | 開始使用您的第一個沉浸式遊戲、2D 商店平板、桌面應用程式及 WebVR 體驗 |
 | [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) | 連接您的裝置並播放 SteamVR 遊戲，瞭解 Windows 測試人員計畫 |
 | [使用 Microsoft Edge](using-microsoft-edge.md) | 在您的沉浸式裝置上安裝最新版本的 Microsoft Edge |
 | [使用 WebVR](webvr.md) | 在瀏覽器環境中取得安裝程式以體驗 VR |
+| [探索 AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | 探索使用 AltspaceVR 擴充的 VR 事件世界 |
 
 ## <a name="troubleshooting-tips--resources"></a>疑難排解、秘訣 & 資源
 

@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 按鈕
-ms.openlocfilehash: 6a1c6da0883bea4dba5dafbb64506a899fb90a2c
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: b0e8e9f8f3a04d467c389bb99f29ddc7dfde930c
+ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937484"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106098284"
 ---
 # <a name="button"></a>按鈕
 
@@ -238,6 +238,14 @@ HoloLens 2 的 shell 樣式按鈕大小為32x32mm。 若要自訂維度，請在
 當您按下按鈕時，它會移動並產生腳本中公開的適當事件， `PressableButton.cs` 例如 TouchBegin () 、TouchEnd () 、ButtonPressed () 、ButtonReleased () 。
 
 <img src="../images/button/MRTK_PressableButtonCubeRun1.jpg" alt="Pressable button cube run 1">
+
+#### <a name="troubleshooting"></a>疑難排解
+
+如果您的按鈕正在執行按兩下，請確定 [ **強制使用 Front push** ] 屬性為 [作用中]，而 [ **開始] 推播距離** 平面則放置在近接 **互動可觸式** 平面的前方。 **近端互動可觸式** 平面會以藍色平面表示，並放在下 gif 的白色箭號原點前面：
+
+![已反白顯示強制執行 Front Push 屬性的 Pressable 按鈕腳本元件](../images/button/MRTK_Button_Enforce_Push.png)
+
+![將開始推播距離移至接近互動可觸式平面前方的動畫範例](../images/button/MRTK_Button_Front_Touch.gif)
 
 ### <a name="2-adding-visual-feedback-to-the-basic-cube-button"></a>2. 將視覺效果意見反應新增至 [基本 cube] 按鈕
 

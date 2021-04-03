@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 10/12/2020
 ms.topic: article
 keywords: 活動、行事曆、學院、排程、sf、三藩市、reactor
-ms.openlocfilehash: f534a170594eb26e0d7f56e8694b9112cb0acbac
-ms.sourcegitcommit: 4647712788a91a2b26d4b01e62285c2942bb0bd2
+ms.openlocfilehash: 17db5ecac5953326eeb30c33693be18243579869
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102230879"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106270014"
 ---
 # <a name="microsoft-mixed-reality-events"></a>Microsoft Mixed Reality 活動
 
@@ -21,6 +21,7 @@ ms.locfileid: "102230879"
 
 |事件|Date|佈景主題|
 |-------------|-------------|-----|
+| 混合實境講者系列|2021年4月6日， @10 PST|[使用 Microsoft PowerApps 建立混合現實應用程式](https://www.meetup.com/hololens-mr/events/277257132)|
 | 混合實境講者系列|2020年4月23日|[擴充 web](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Augmenting-WebXR-Standards)|
 | 混合實境講者系列|2020年6月22日|[以 MR 創造教育體驗](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Educational-Experiences-in-MR)|
 | [Microsoft 虛擬實境活動](https://www.meetup.com/hololens-mr/events/272364822/)|2020年8月20日|VR 迷你高峰|

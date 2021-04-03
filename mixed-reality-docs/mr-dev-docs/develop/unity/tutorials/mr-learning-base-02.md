@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: a723de277d5ec07594db2c3e0b77b980ea1d9b9c
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 4363d3280036ef2cd93e75233005c00db17eb59b
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983185"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088614"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -57,21 +57,7 @@ ms.locfileid: "105983185"
 
 ## <a name="switching-the-build-platform"></a>切換建置平台
 
-在 Unity 功能表中，選取 [檔案] >  [組建設定...] 來開啟 [組建設定] 視窗：
-
-![Unity [建置設定] 功能表路徑](images/mr-learning-base/base-02-section2-step1-1.png)
-
-在 [組建設定] 視窗中，選取 [通用 Windows 平台]，然後按一下 [切換平台] 按鈕：
-
-![已選取 UWP 以從 [獨立式] 平台進行切換的 Unity [建置設定] 視窗](images/mr-learning-base/base-02-section2-step1-2.png)
-
-等候 Unity 完成平台的切換：
-
-![Unity 正在切換平台](images/mr-learning-base/base-02-section2-step1-3.png)
-
-當 Unity 完成平台切換之後，按一下紅色 **x** 圖示以關閉 [組建設定] 視窗：
-
-![已醒目提示 [關閉] 圖示的 Unity 建置視窗](images/mr-learning-base/base-02-section2-step1-4.png)
+[!INCLUDE[](includes/switching-build-platform.md)]
 
 ## <a name="importing-the-textmeshpro-essential-resources"></a>匯入 TextMeshPro 基本資源
 
@@ -102,32 +88,8 @@ ms.locfileid: "105983185"
 
 ![開啟 MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-1.png)
 
-開啟 **MixedRealityFeatureTool** 之後，請按一下 [開始] 以開始使用混合現實功能工具。
 
-![MixedRealityFeatureTool](images/mr-learning-base/base-02-section4-step1-2.png)
-
-功能會依類別目錄分組，讓您更容易找到這些專案，請按一下 [ **Mixed Reality 工具** 組] 下拉式清單，以尋找與混合現實工具組相關的套件。
-
-![MixedRealityFeatureTool 視窗](images/mr-learning-base/base-02-section4-step1-3.png)
-
-檢查 **Mixed Reality 工具組 Foundation**，然後按一下其旁邊的下拉式清單，以選取所需的 MRTK 版本，在此教學課程系列中，請選取 [ **2.5.3**]。 然後按一下 [ **取得功能** ] 按鈕，以下載選取的封裝。
-
-![選取混合的現實基礎](images/mr-learning-base/base-02-section4-step1-4.png)
-
-在 [匯 **入功能**] 視窗中會顯示選取的套件 **混合現實工具組 Foundation 2.5.3** ，以及其相依套件 **混合現實工具組標準資產 2.5.3** 。
-
-您也需要設定目標 unity 專案的位置以提供 **專案路徑**，按一下專案路徑旁的 **三個點** ，然後在 explorer 中流覽至您的專案資料夾，例如 _D:\MixedRealityLearning\MRTK 教學_ 課程。
-
-> [!NOTE]
-> 流覽 Unity 專案資料夾時顯示的對話方塊會包含 ' _ ' 作為檔案名。 檔案名必須有一個值，才能選取該資料夾。
-
-接下來按一下 [ **驗證** ] 按鈕以驗證選取的封裝，您會看到 [偵測 **不到驗證問題** 的快顯視窗 **] 按一下 [確定]** 關閉快顯視窗，然後按一下 [匯 **入** ] 按鈕。
-
-![驗證混合的現實基礎](images/mr-learning-base/base-02-section4-step1-5.png)
-
-按一下 [ **核准** ] 按鈕，將 **Mixed Reality 工具** 組新增至專案。
-
-![核准混合的現實基礎](images/mr-learning-base/base-02-section4-step1-6.png)
+[!INCLUDE[](includes/importing-mrtk.md)]
 
 ## <a name="configuring-the-unity-project"></a>設定 Unity 專案
 
@@ -144,7 +106,7 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 > [!TIP]
 > 您可以選擇是否套用 MRTK 預設設定，但強烈建議您這麼做，因為這可協助您設定一些建議的 Unity 設定：
 
-> * 設定單一階段執行個體化轉譯路徑：藉由在相同的繪製呼叫中為雙眼執行轉譯管線，來改善圖形效能。 若要深入了解本主題，您可以參閱 MRTK [效能](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering)文件中的[單一階段執行個體化轉譯](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started.md#single-pass-instanced-rendering)一節。
+> * 設定單一階段執行個體化轉譯路徑：藉由在相同的繪製呼叫中為雙眼執行轉譯管線，來改善圖形效能。 若要深入了解本主題，您可以參閱 MRTK [效能](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering)文件中的[單一階段執行個體化轉譯](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started#single-pass-instanced-rendering)一節。
 > * 設定預設空間感知層：建立名為「空間感知」的 Unity 圖層，並將 MRTK 設定為將此圖層用於空間感知網格。 若要深入了解 Unity 圖層，您可以參閱 Unity 的<a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">自訂您的工作區</a>文件。
 
 ### <a name="2-configure-additional-project-settings"></a>2.設定其他專案設定
@@ -180,19 +142,19 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 
 若要匯入 unity 自訂套件，請在 Unity 功能表中，選取 [**資產** 匯  >  **入套件**  >  **自訂套件 ...** ] 開啟 [匯入封裝 ...]視窗：
 
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-1.png)
+![匯入自訂套件](images/mr-learning-base/base-02-section7-step1-1.png)
 
 在 [匯入封裝 ...]視窗中，選取 **MRTK。HoloLens2** 您下載的 GettingStarted，然後按一下 [開啟] 按鈕：
 
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-2.png)
+![選取資產套件](images/mr-learning-base/base-02-section7-step1-2.png)
 
 在 [匯入 Unity 套件] 視窗中，按一下 [全部] 按鈕以確保選取所有資產，然後按一下 [匯入] 按鈕來匯入資產：
 
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-3.png)
+![選取要匯入的所有資產](images/mr-learning-base/base-02-section7-step1-3.png)
 
 匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
 
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-base/base-02-section7-step1-4.png)
+![匯入資產後的 Unity 專案視窗](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="configuring-the-scene"></a>設定場景
 

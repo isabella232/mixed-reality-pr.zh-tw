@@ -6,16 +6,21 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，效能，優化，CPU，GPU
-ms.openlocfilehash: eabc151382652bc2588249ef78d2f9f3b0f8cd99
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
+ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550118"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106269954"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>瞭解混合現實的效能
 
 本文是瞭解您的混合現實應用程式效能重要性的簡介。  如果您的應用程式不是以最佳的畫面播放速率執行，則使用者體驗可能會大幅降低。 全像是不穩定的，且環境的標頭追蹤將不穩定，而導致使用者體驗不佳。 您必須將效能視為混合現實開發的第一個類別功能，而不是波蘭文工作。
+
+我們最近發行了一個稱為「品質基礎」的應用程式，其中涵蓋了 HoloLens 2 應用程式的常見效能、設計和環境問題和解決方案。 此應用程式是下列內容的絕佳視覺效果示範。
+
+> [!div class="nextstepaction"]
+> [下載品質基礎應用程式](https://www.microsoft.com/en-us/p/quality-fundamentals/9mwz852q88fw)
 
 以下列出每個目標平臺的效能幀效能值。
 

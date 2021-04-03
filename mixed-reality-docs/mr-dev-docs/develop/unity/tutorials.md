@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: 教學課程
 description: 隨時掌握我們為 HoloLens 和 Azure 服務提供的混合實境開發教學課程。
 author: keveleigh
@@ -8,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 學院, 教學課程, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, unity, unreal, HoloLens, Azure 空間錨點, Azure 語音服務
-ms.openlocfilehash: 76c8cdcddd9617df8e823b4967593c37fa1e6bb9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c64ceb918cfec31b7ac934d9a1f9c719a4dde244
+ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98006518"
+ms.lasthandoff: 04/02/2021
+ms.locfileid: "106223939"
 ---
 # <a name="tutorials"></a>教學課程
 
@@ -25,12 +24,13 @@ ms.locfileid: "98006518"
 
 HoloLens 2 教學課程的設計目的是為了教導用於開發混合實境應用程式的技術和最佳做法。 Unity 教學課程是根據[混合實境工具組 2.0 (MRTK 2.0)](https://github.com/microsoft/MixedRealityToolkit-Unity)，Unreal 教學課程是根據[適用於 Unreal Engine 的 UX 工具 0.8](https://github.com/microsoft/MixedReality-UXTools-Unreal)。
 
-* 入門教學課程
-    * Unity - [9 之 1 簡介](tutorials/mr-learning-base-01.md)
-    * Unreal - [6 之 1 開始使用](../unreal/tutorials/unreal-uxt-ch1.md)
-* Azure Spatial Anchors 教學課程 - [5 之 1 簡介](tutorials/mr-learning-asa-01.md)
-* 多使用者功能教學課程 - [5 之 1 簡介](tutorials/mr-learning-sharing-01.md)
-* Azure 語音服務教學課程 - [整合並使用語音辨識和文字記錄 4 之 1](tutorials/mrlearning-speechSDK-ch1.md)
+* 初學者 MRTK 教學課程- [簡介 (1/9) ](tutorials/mr-learning-base-01.md)
+* Azure 空間錨點教學課程- [簡介 (1/5) ](tutorials/mr-learning-asa-01.md)
+* 多使用者功能教學課程- [簡介 (1/5) ](tutorials/mr-learning-sharing-01.md)
+* Azure 語音服務教學課程- [整合及使用語音辨識和轉譯 (1/4) ](tutorials/mrlearning-speechSDK-ch1.md)
+* 空間音訊教學課程- [新增空間音訊 (1/5) ](tutorials/unity-spatial-audio-ch1.md)
+* Azure 雲端服務教學課程- [簡介 (1/5) ](tutorials/mr-learning-azure-01.md)
+* 電腦全像遠端教學課程- [開始 (1/2) ](tutorials/mr-learning-pc-holographic-remoting-01.md)
 
 ## <a name="mixed-reality-academy"></a>混合實境學院 
 

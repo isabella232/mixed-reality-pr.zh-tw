@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 1fbc03fe446d9e9619348618c6d0b9aab828fe1a
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: d45cc9ab0c0c922c1946f4c188202a99f049f4fc
+ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105937424"
+ms.lasthandoff: 03/31/2021
+ms.locfileid: "106088487"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>混合現實 OpenXR Unity 中支援的功能
 
@@ -38,6 +38,7 @@ ms.locfileid: "105937424"
 *  (在0.2.0 中新增) 在全像遠端處理中支援 **錨點**
 *  (在0.2.0 中新增) 支援 **手接頭和手形網格追蹤**
 *  (在0.2.0 中新增) 支援使用 **ARPlaneSubsystems** 進行平面偵測，並使用 **ARRaycastManager** 來放置全像影像。
+*  (0.9.0) 支援空間對應的 **XRMeshSubsystem** 和 **ARMeshManager** 。
 
 ## <a name="holographic-remoting-setup"></a>全像遠端設定
 
@@ -113,7 +114,7 @@ HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每�
 
 ## <a name="whats-coming-soon"></a>即將推出的內容
 
-下列問題和遺漏的功能都是已知的混合現實 OpenXR 外掛程式 **版本 0.1.0**。 我們正在處理這些問題，並將在即將推出的版本中發行修正程式和新功能。
+下列問題和遺漏的功能都是已知的混合現實 OpenXR 外掛程式 **版本 0.9.0**。 我們正在處理這些問題，並將在即將推出的版本中發行修正程式和新功能。
 
 * **Azure 空間錨點** 支援即將在未來版本中推出。
 * **ARM64** 是 HoloLens 2 應用程式唯一支援的平臺。 **ARM** 平臺即將在未來版本中推出。
