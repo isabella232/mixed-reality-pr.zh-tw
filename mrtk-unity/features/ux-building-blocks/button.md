@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 按鈕
-ms.openlocfilehash: b0e8e9f8f3a04d467c389bb99f29ddc7dfde930c
-ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
+ms.openlocfilehash: 43570c225f25b9ea73c9d1fc4cc9b6c92b8c2dfc
+ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106098284"
+ms.lasthandoff: 04/07/2021
+ms.locfileid: "107003103"
 ---
 # <a name="button"></a>按鈕
 
@@ -31,19 +31,138 @@ ms.locfileid: "106098284"
 
 ### <a name="collider-based-buttons"></a>以碰撞式為基礎的按鈕
 
-|  ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 | ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated | ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular |
-|:--- | :--- | :--- |
-| HoloLens 2 的 shell 樣式按鈕，其 backplate 支援各種視覺效果的意見反應，例如框線燈、相近光源和壓縮的 front 盤子 | 不含 backplate 的 HoloLens 2 shell 樣式按鈕  | 具有圓形圖形 HoloLens 2 的 shell 樣式按鈕  |
-|  ![PressableButtonHoloLens2_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96** | ![PressableButtonHoloLens2Bar3H ](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H** | ![PressableButtonHoloLens2Bar3V ](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V** |
-| 寬 HoloLens 2 的 shell 樣式按鈕32x96mm | 具有共用 backplate 的水準 HoloLens 2 按鈕列 | 具有共用 backplate 的垂直 HoloLens 2 按鈕列 |
-|  ![PressableButtonHoloLens2ToggleCheckBox_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** | ![PressableButtonHoloLens2ToggleSwitch_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32** | ![PressableButtonHoloLens2ToggleRadio_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32** |
-| HoloLens 2 的 shell 樣式核取方塊32x32mm | HoloLens 2 的 shell 樣式參數32x32mm | HoloLens 2 的 shell 樣式選項按鈕32x32mm |
-|  ![PressableButtonHoloLens2ToggleCheckBox_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox_32x96.png) **PressableButtonHoloLens2ToggleCheckBox_32x96** | ![PressableButtonHoloLens2ToggleSwitch_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch_32x96.png) **PressableButtonHoloLens2ToggleSwitch_32x96** | ![PressableButtonHoloLens2ToggleRadio_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio_32x96.png) **PressableButtonHoloLens2ToggleRadio_32x96** |
-| HoloLens 2 的 shell 樣式核取方塊32x96mm | HoloLens 2 的 shell 樣式參數32x96mm | HoloLens 2 的 shell 樣式選項按鈕32x96mm |
-|  ![星形 ](../images/button/MRTK_Button_Radial.png) **放射狀** | ![核取方塊](../images/button/MRTK_Button_Checkbox.png) **核取方塊** | ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch** |
-| 放射狀按鈕 | 核取方塊  | 切換開關 |
-|  ![ButtonHoloLens1 ](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1** | ![PressableRoundButton ](../images/button/MRTK_Button_Round.png) **PressableRoundButton** | ![按鈕基底 ](../images/button/MRTK_Button_Base.png) **按鈕** |
-| HoloLens 1 gen 的 shell 樣式按鈕 | 圓形形狀推播按鈕 | 基本按鈕 |
+:::row:::
+    :::column:::
+    ![PressableButtonHoloLens2](../images/button/MRTK_Button_Prefabs_HoloLens2.png) PressableButtonHoloLens2 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Unplated](../images/button/MRTK_Button_Prefabs_HoloLens2Unplated.png) PressableButtonHoloLens2Unplated 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Circular](../images/button/MRTK_Button_Prefabs_HoloLens2Circular.png) PressableButtonHoloLens2Circular 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    HoloLens 2 的 shell 樣式按鈕，其 backplate 支援各種視覺效果的意見反應，例如框線燈、相近光源和壓縮的 front 盤子
+    :::column-end:::
+    :::column:::
+    不含 backplate 的 HoloLens 2 shell 樣式按鈕
+    :::column-end:::
+    :::column:::
+    具有圓形圖形 HoloLens 2 的 shell 樣式按鈕
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    ![PressableButtonHoloLens2_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_32x96.png) **PressableButtonHoloLens2_32x96**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Bar3H ](../images/button/MRTK_Button_Prefabs_HoloLens2BarH.png) **PressableButtonHoloLens2Bar3H**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2Bar3V ](../images/button/MRTK_Button_Prefabs_HoloLens2BarV.png) **PressableButtonHoloLens2Bar3V**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column::: 
+    寬 HoloLens 2 的 shell 樣式按鈕32x96mm
+    :::column-end:::
+    :::column:::
+    具有共用 backplate 的水準 HoloLens 2 按鈕列
+    :::column-end:::
+    :::column:::
+    具有共用 backplate 的垂直 HoloLens 2 按鈕列
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    ![PressableButtonHoloLens2ToggleCheckBox_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox.png) **PressableButtonHoloLens2ToggleCheckBox_32x32** 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleSwitch_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch.png) **PressableButtonHoloLens2ToggleSwitch_32x32**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleRadio_32x32 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio.png) **PressableButtonHoloLens2ToggleRadio_32x32**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    HoloLens 2 的 shell 樣式核取方塊32x32mm
+    :::column-end:::
+    :::column:::
+    HoloLens 2 的 shell 樣式參數32x32mm 
+    :::column-end:::
+    :::column:::
+    HoloLens 2 的 shell 樣式選項按鈕32x32mm
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::     
+    ![PressableButtonHoloLens2ToggleCheckBox_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Checkbox_32x96.png) **PressableButtonHoloLens2ToggleCheckBox_32x96**
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleSwitch_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Switch_32x96.png) **PressableButtonHoloLens2ToggleSwitch_32x96** 
+    :::column-end:::
+    :::column:::
+    ![PressableButtonHoloLens2ToggleRadio_32x96 ](../images/button/MRTK_Button_Prefabs_HoloLens2_Radio_32x96.png) **PressableButtonHoloLens2ToggleRadio_32x96** 
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    HoloLens 2 的 shell 樣式核取方塊32x96mm
+    :::column-end:::
+    :::column:::
+    HoloLens 2 的 shell 樣式參數32x96mm
+    :::column-end:::
+    :::column:::
+    HoloLens 2 的 shell 樣式選項按鈕32x96mm
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![星形 ](../images/button/MRTK_Button_Radial.png) **放射狀**
+    :::column-end:::
+    :::column:::
+    ![核取方塊](../images/button/MRTK_Button_Checkbox.png) **核取方塊**
+    :::column-end:::
+    :::column:::
+    ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    放射狀按鈕 
+    :::column-end:::
+    :::column:::
+    核取方塊 
+    :::column-end:::
+    :::column:::
+    切換開關
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    ![ButtonHoloLens1 ](../images/button/MRTK_Button_HoloLens1.png) **ButtonHoloLens1**
+    :::column-end:::
+    :::column:::
+    ![PressableRoundButton ](../images/button/MRTK_Button_Round.png) **PressableRoundButton** 
+    :::column-end:::
+    :::column:::
+    ![按鈕基底 ](../images/button/MRTK_Button_Base.png) **按鈕**
+    :::column-end:::
+:::row-end:::
+:::row:::
+    :::column:::  
+    HoloLens 1 gen 的 shell 樣式按鈕
+    :::column-end:::
+    :::column:::
+    圓形形狀推播按鈕
+    :::column-end:::
+    :::column:::
+    基本按鈕
+    :::column-end:::
+:::row-end:::
 
 `Button` (的資產/MRTK/SDK/Features/UX/互動/Prefabs/預製專案) 是以[互動](interactable.md)概念為基礎，可為按鈕或其他類型的互動表面提供簡單的 UI 控制項。 [基準] 按鈕支援所有可用的輸入方法，包括用於近距離互動的已表達手輸入，以及最遠互動的注視 + 無線電波。 您也可以使用語音命令來觸發按鈕。
 
@@ -284,11 +403,11 @@ MRTK 標準著色器提供各種功能，可讓您輕鬆地新增視覺效果的
 
 <img src="../images/button/MRTK_Button_Custom1.png" width="450" alt="Pressable Custom1">
 
-<img src = ".。。/images/button/MRTK_Button_Custom2.png "width =" 450 "alt =" Pressable 按鈕 Custom2>
+<img src="../images/button/MRTK_Button_Custom2.png" width="450" alt="Pressable Custom2">
 
 每個鋼琴按鍵都有一個 `PressableButton` 和一個已 `NearInteractionTouchable` 指派的腳本。 請務必確認的 *本機向前* 方向 `NearInteractionTouchable` 正確無誤。 它是以編輯器中的白色箭號表示。 請確定箭號指向按鈕的正面臉部：
 
-<img src = ".。。/images/button/MRTK_Button_Custom3.png "width =" 450 "alt =" Pressable 按鈕 custom3>
+<img src="../images/button/MRTK_Button_Custom3.png" width="450" alt="Pressable Custom3">
 
 ## <a name="see-also"></a>另請參閱
 
