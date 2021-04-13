@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組
-ms.openlocfilehash: f4a4ea50c45263f18079da76dd8dfd5f31e2af44
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
+ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98110446"
+ms.lasthandoff: 04/08/2021
+ms.locfileid: "107221560"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型
 
@@ -40,6 +40,7 @@ ms.locfileid: "98110446"
 | [混合實境應用程式的類型](types-of-mixed-reality-apps.md) | 決定您的應用程式體驗在混合實境頻譜上的位置 |
 | [Designing Holograms 應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd) | 深入了解混合實境 UX 設計的基本概念，方法是體驗如何建立絕佳 HoloLens 應用程式 (可從 HoloLens 2 的 Microsoft Store 下載) 的行為、秘訣和建議 |
 | [MRTK 範例中樞](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4) | 體驗適用於混合實境的一般空間互動和 UX 建構元素 (可從 HoloLens 2 中的 Microsoft Store 下載) |
+| **選擇性**[下載 Figma 工具](figma-toolkit.md)組 | Figma 工具組提供的資產可供您用來根據 MRTK 中可用的元件來繪製和配置 UI |
 
 ### <a name="2-core-concepts"></a>2.核心概念
 
