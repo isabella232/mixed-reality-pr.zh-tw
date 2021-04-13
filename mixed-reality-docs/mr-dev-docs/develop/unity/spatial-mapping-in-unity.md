@@ -6,18 +6,19 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: e2ef6ac43e81ff2b8e66a4bd197ea41c198a1626
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549948"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300163"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
 [空間對應](../../design/spatial-mapping.md) 可讓您取得代表 HoloLens 裝置周圍之表面的三角形網格。 您可以使用 surface 資料進行放置、遮蔽和房間分析，讓您的 Unity 專案有額外的深度劑量。
 
 Unity 包含空間對應的完整支援，可透過下列方式公開給開發人員：
+
 1. MixedRealityToolkit 中提供的空間對應元件，可為開始使用空間對應提供便利快速的路徑
 2. 較低層級的空間對應 Api，可提供完整控制權，並啟用更精密的應用程式特定自訂
 
@@ -51,6 +52,7 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 為了讓應用程式使用空間對應資料，必須啟用 >spatialperception 功能。
 
 如何啟用 >spatialperception 功能：
+
 1. 在 Unity 編輯器中，開啟 [ **播放機設定** ] 窗格 (編輯 > 專案設定 > 播放) 
 2. 選取 [ **Windows 存放區** ] 索引標籤
 3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
@@ -59,6 +61,7 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 > 如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](../native/spatial-mapping-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
 
 空間對應也需要至少10.0.10586.0 的 MaxVersionTested：
+
 1. 在 Visual Studio 中，以滑鼠右鍵按一下方案總管中的 **package.appxmanifest** ，然後選取 [ **View Code** ]
 2. 找出指定 **y** 的行，並將 **MaxVersionTested = "10.0.10240.0"** 變更為 **MaxVersionTested = "10.0.10586.0"**
 3. **儲存** package.appxmanifest。
@@ -84,6 +87,7 @@ Unity 提供兩個元件，可讓您輕鬆地將空間對應新增至您的應�
 如果您想要將這兩個元件視覺化並與實體介面互動，您可以將這兩個元件新增至您的應用程式。
 
 若要在 Unity 應用程式中使用這兩個元件：
+
 1. 在您想要偵測空間介面網格的區域中央選取 GameObject。
 2. 在 [偵測器] 視窗中，**加入元件**  >  **XR**  >  **空間對應碰撞** 器或 **空間對應** 轉譯器。
 
@@ -92,6 +96,7 @@ Unity 提供兩個元件，可讓您輕鬆地將空間對應新增至您的應�
 ### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>超越內建空間對應元件
 
 這些元件可讓您輕鬆地開始使用空間對應。  當您想要繼續進行時，有兩個主要的途徑可以探索：
+
 * 若要進行您自己的較低層級網格處理，請參閱下一節有關低層級空間對應腳本 API 的資訊。
 * 若要進行較高層級的網狀分析，請參閱下列有關 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>中 SpatialUnderstanding 程式庫的章節。
 
@@ -137,6 +142,7 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 ### <a name="handling-surface-changes"></a>處理介面變更
 
 有幾個主要案例要處理-新增和更新，可以使用相同的程式碼路徑，並移除。
+
 * 在新增和更新的案例中，我們會在字典中加入或取得代表這個網格的 GameObject、建立具有必要元件的 SurfaceData 結構，然後呼叫 RequestMeshDataAsync，以在場景中填入網格資料和位置的 GameObject。
 * 在移除的案例中，我們會從字典中移除代表這個網格的 GameObject，並將它終結。
 
@@ -268,7 +274,7 @@ struct RaycastResult
 
 ### <a name="topology-queries"></a>拓撲查詢
 
-在 DLL 內，拓撲管理員會處理環境的標籤。 如上所述，大部分的資料會儲存在 surfels 中，並包含在體素磁片區中。 此外，還會使用 "PlaySpaceInfos" 結構來儲存有關 playspace 的資訊，包括世界上的對齊 (更多有關以下) 、樓層和最高高度的詳細資料。 啟發學習法可用來決定樓層、上限和牆。 例如，具有大於 1-m2 介面區的最大和最低水準介面會被視為樓層。 
+在 DLL 內，拓撲管理員會處理環境的標籤。 如上所述，大部分的資料會儲存在 surfels 中，並包含在體素磁片區中。 此外，還會使用 "PlaySpaceInfos" 結構來儲存有關 playspace 的資訊，包括世界上的對齊 (更多有關以下) 、樓層和最高高度的詳細資料。 啟發學習法可用來決定樓層、上限和牆。 例如，具有大於 1-m2 介面區的最大和最低水準介面會被視為樓層。
 
 > [!NOTE]
 > 掃描過程中的攝影機路徑也會在此程式中使用。
@@ -470,21 +476,23 @@ Import_UnderstandingMesh –
 
 ### <a name="understanding-mesh"></a>瞭解網格
 
-瞭解 dll 會在內部將 playspace 儲存為 8 cm 大小體素 cube 的方格。 在掃描的初始部分期間，主要元件分析完成以判斷房間的座標軸。 就內部而言，它會儲存其體素空間與這些軸對齊。 從體素磁片區解壓縮 isosurface，大約每秒會產生一個網狀。 
+瞭解 dll 會在內部將 playspace 儲存為 8 cm 大小體素 cube 的方格。 在掃描的初始部分期間，主要元件分析完成以判斷房間的座標軸。 就內部而言，它會儲存其體素空間與這些軸對齊。 從體素磁片區解壓縮 isosurface，大約每秒會產生一個網狀。
 
 ![從體素磁片區產生的網狀](images/su-custommesh.jpg)<br>
 *從體素磁片區產生的網狀*
 
 ## <a name="troubleshooting"></a>疑難排解
+
 * 確定您已設定 [>spatialperception](#setting-the-spatialperception-capability) 功能
 * 當追蹤遺失時，下一個 OnSurfaceChanged 事件將會移除所有的網格。
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>混合現實工具組中的空間對應
-如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="/windows/mixed-reality/mrtk-docs/features/spatial-awareness/spatial-awareness-getting-started.md" target="_blank">空間感知一節</a> 。
+
+如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">空間感知一節</a> 。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊： 
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [Text](text-in-unity.md)
@@ -497,6 +505,7 @@ Import_UnderstandingMesh –
 您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。
 
 ## <a name="see-also"></a>另請參閱
+
 * [座標系統](../../design/coordinate-systems.md)
 * [Unity 中的座標系統](coordinate-systems-in-unity.md)
 * <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>

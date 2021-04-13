@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、
-ms.openlocfilehash: fa37535f3a01dbba76c99c3114ac23a03d75ec3a
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: d5ab9bf51828c84759b72e87e1c41f885c7d6738
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549968"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300407"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>開始使用 MRTK 和 XR SDK
 
@@ -26,18 +26,24 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-1. 進入 Unity 的封裝管理員，並安裝 Windows XR 外掛程式套件，以新增 XR SDK 上的 Windows Mixed Reality 支援。 這也會提取一些相依性套件。 確定已成功安裝下列各項：
-   1. XR 外掛程式管理
-   1. Windows XR 外掛程式
-   1. XR 舊版輸入協助程式
-1. 移至 [編輯 > 專案設定]。
-1. 在 [專案設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
-1. 移至 [通用 Windows 平臺設定]，並確定已核取 [外掛程式提供者] 下的 [Windows Mixed Reality]。
-1. 確定已核取 [啟動時初始化 XR]。
-1.  (**_編輯器中的 HoloLens 遠端處理需要，否則為選擇性_**) 移至獨立設定，並確定已在外掛程式提供者底下檢查 Windows Mixed Reality。 也請確定已核取 [啟動時初始化 XR]。
-1.  (**_選擇性_**) 按一下 [XR 外掛程式管理] 下的 [Windows Mixed Reality] 索引標籤，然後建立自訂設定設定檔來變更預設值。 如果設定清單已經存在，則不需要建立任何設定檔。
+進入 **Unity 的封裝管理員** ，並安裝 Windows XR 外掛程式套件，以新增 XR SDK 上的 Windows Mixed Reality 支援。 這也會提取一些相依性套件。 
 
-![外掛程式管理](../features/images/xrsdk/PluginManagement.png)
+1. 確定已成功安裝下列各項：
+   * XR 外掛程式管理
+   * Windows XR 外掛程式
+   * XR 舊版輸入協助程式
+
+2. 移至 [編輯] > [專案設定]。
+3. 在 [專案設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
+4. 移至 [通用 Windows 平臺設定]，並確定已核取 [外掛程式提供者] 下的 [Windows Mixed Reality]。
+5. 確定已核取 [啟動時初始化 XR]。
+6.  (**_編輯器中的 HoloLens 遠端處理需要，否則為選擇性_**) 移至獨立設定，並確定已在外掛程式提供者底下檢查 Windows Mixed Reality。 也請確定已核取 [啟動時初始化 XR]。
+
+![已選取獨立索引標籤的 XR 外掛程式管理](images/xr-management-img-02.png)
+
+7.  (**_選擇性_**) 按一下 [XR 外掛程式管理] 下的 [Windows Mixed Reality] 索引標籤，然後建立自訂設定設定檔來變更預設值。 如果設定清單已經存在，則不需要建立任何設定檔。
+
+![已選取 [Windows] 索引標籤的 XR 外掛程式管理](images/xr-management-img-01.png)
 
 ### <a name="oculus"></a>Oculus
 

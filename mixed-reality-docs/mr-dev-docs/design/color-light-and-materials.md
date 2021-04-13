@@ -5,13 +5,13 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、色彩、燈光、材質、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 6e5857436b0325537d0ea5d0321d296c58c09eae
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Windows Mixed Reality、設計、色彩、燈光、材質、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: b3ee769208bdcd0d86beb05760de377f2a776a47
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759263"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299743"
 ---
 # <a name="color-light-and-materials"></a>色彩、光線和材質
 
@@ -88,7 +88,7 @@ Light 和 color 可協助讓您的全息體在使用者的環境中以更自然�
     :::column:::
 材質是建立逼真全像影像的重要元素。 藉由提供適當的視覺特性，您可以建立吸引人的全像攝影物件，以便與實體環境完美結合。 對於為各種類型的使用者輸入互動提供視覺化意見反應，材質也很重要。  
 
-[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) 提供具有各種視覺效果選項的 MRTK 標準著色器，可用於視覺效果的意見反應。 例如，您可以使用「近亮」屬性，在使用者的手指接近物件的介面時，提供光源效果。 深入瞭解 [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
+[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) 提供具有各種視覺效果選項的 MRTK 標準著色器，可用於視覺效果的意見反應。 例如，您可以使用「近亮」屬性，在使用者的手指接近物件的介面時，提供光源效果。 深入瞭解 [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
     :::column-end:::
         :::column:::
     *影片迴圈：根據鄰近範圍* 

@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: f16652cd8ebbf1349dc3b04cb1b5f4751687ea6d
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 797e8d5ea4d72d1c19ee167ff655f99ab37da271
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759089"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300183"
 ---
 # <a name="lunar-module"></a>月球模組
 
@@ -23,7 +23,7 @@ ms.locfileid: "101759089"
 ## <a name="demo-video"></a>示範影片 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
 
-使用混合現實 Capture 以 HoloLens 2 錄製
+使用混合實境擷取 HoloLens 2 記錄
 
 ## <a name="rethinking-classic-experiences-for-windows-mixed-reality"></a>重新思考 Windows Mixed Reality 的傳統體驗
 
@@ -93,7 +93,7 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 
 雙重 thumbsticks 自然是控制出貨的旋轉。 可惜的是，出貨可以旋轉三個軸，而且兩個 thumbsticks 都支援兩個軸。 這種不相符的情形是，其中一個操縱杆控制一個軸;或 thumbsticks 的座標軸重迭。 先前的解決方案會覺得「中斷」，因為 thumbsticks 本質上是混合其區域 X 和 Y 值。 後者的解決方案需要進行一些測試，以找出哪些多餘的軸最自然的感覺。 最後一個範例會使用 *偏擺* 和 *變換 (的 Y 和 x* 軸) 適用于左邊的操縱杆，以及針對右邊的 *操縱杆，將 (Z* *軸和 x* 軸) 。 這認為最自然的情況 *是，* 與 *偏擺* 和 *推銷* 之間的表現完全獨立。 請注意，同時使用這兩個 thumbsticks 來進行 *變換也會* 發生兩倍的旋轉值;使用 lander do 迴圈相當有趣。
 
-這個範例應用程式會示範空間辨識和 tactile 深度如何大幅改變使用 Windows Mixed Reality 的可延伸輸入形式的體驗。 雖然陰曆 Lander 的年齡可能接近40年，但以幾乎的八邊形來公開的概念將會無限期地存留。 想像未來，為什麼看不到過去？
+這個範例應用程式會示範空間辨識和 tactile 深度如何大幅改變體驗，因為這是 Windows Mixed Reality 的可延伸輸入形式。 雖然陰曆 Lander 的年齡可能接近40年，但以幾乎的八邊形來公開的概念將會無限期地存留。 想像未來，為什麼看不到過去？
 
 ## <a name="technical-details"></a>技術詳細資訊
 
@@ -109,7 +109,8 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 </table>
 
 ## <a name="see-also"></a>另請參閱
-* [MRTK 範例中樞](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+
+* [MRTK 範例中樞](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 56a56893a7c5bc772268ab9980f25327eae83af5
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550068"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300043"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -157,7 +157,7 @@ ms.locfileid: "105550068"
 *   如果您至少教授過一次，只要偵測到使用者停滯，請只重複手勢。
 *   如果特定的手指/手位置很重要，請確保使用者可以清楚地在動畫中看到這些細微差異。 試著 angling 手，讓最重要的部分清楚可見。 
 * 如果您注意到手上的失真，您需要移至 Unity 的品質設定來提高骨骼數目。 
- 移至 Unity 的 [編輯] > 專案設定 > 品質 > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。 
+ 移至 Unity 的 [編輯] > 專案設定 > 品質 > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
 
    ![範例：專案設定視窗](images/HandCoach/ProjectSettings.png)<br>
 
@@ -167,11 +167,11 @@ ms.locfileid: "105550068"
 * 調整手太大
 * 把手放在使用者附近
 * 手中應只教授一次。 透過教學可能會造成混淆和 messiness
-*   將它帶入 Unity，請在這裡下載最新的 MRTK： https://github.com/microsoft/MixedRealityToolkit-Unity
-    *   材質： Teaching_Hand2
-    *   腳本：請參閱 MRTK 指導方針以取得<a href= "/windows/mixed-reality/mrtk-docs/features/experimental/hand-coach.md">MRTK</a>的指導方針
-    *   每個專案的設定
-        *   設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
+* 將它帶入 Unity，請在這裡下載最新的 MRTK： https://github.com/microsoft/MixedRealityToolkit-Unity
+  * 材質： Teaching_Hand2
+  * 腳本：請參閱 MRTK 指導方針以取得<a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach">MRTK</a>的指導方針
+  * 每個專案的設定
+    * 設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
 
 ## <a name="see-also"></a>另請參閱
 

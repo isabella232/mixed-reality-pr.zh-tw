@@ -6,24 +6,33 @@ ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
 keywords: Figma、素描、Adobe XD、設計、設計工具、設計檔、UX 設計、HoloLens、MRTK、Mixed Reality 工具組
-ms.openlocfilehash: 4e5b28a08d52ddc0b3a1311e51d71581a31cb0c0
-ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
+ms.openlocfilehash: 1386ce6238a406c2e2b45c9a6a551ae57c52cc59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107222025"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299939"
 ---
 # <a name="figma-toolkit"></a>Figma 工具組
 
-![Figma 工具組](images/UX_Tools_FigmaToolkit_Hero.png)<br>
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
 
 Figma 工具組提供可用來草繪和配置 UI 的資產。 所有 UI 控制項都是以 MRTK 中可用的元件為基礎。 
 
 > [!div class="nextstepaction"]
-> [下載 Figma 工具組](https://1drv.ms/u/s!ArqCGDZ4bpk7gRIA9QbpoQ5ln90B?e=qgc6YX)
+> [View Figma 工具組](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>如何使用 Figma 工具組
-匯入下載的檔案 (。使用右上角的 [匯 **入** ] 按鈕，以圖) 至 Figma。
+使用 [ **複製到您的草稿** ] 功能表來建立複本。
+<img src="images/UX_Figma_Use1.png" width="500px" alt="Menu duplicate 1"><br>
+
+按一下 [ **回到** 檔案] 以查看重複的複本。 您可以使用此複本來建立您自己的複本。
+
+<img src="images/UX_Figma_Use2.png" width="400px" alt="Menu duplicate 2"><br>
+
+<img src="images/UX_Figma_Use3.png" width="300px" alt="Menu duplicate 3"><br>
+
+若要下載並在本機工作，請使用 [檔案] **> 儲存本機複製** ] 功能表。 匯入下載的檔案 (。使用右上角的 [匯 **入** ] 按鈕，以圖) 至 Figma。
 
 <img src="images/UX_FigmaToolkit_Import.png" width="200px" alt="Import menu"><br>
 

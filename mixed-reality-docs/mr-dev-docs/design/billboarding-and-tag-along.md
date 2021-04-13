@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、billboarding、加上標籤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、Mixed Reality 工具組
-ms.openlocfilehash: f0a5c4fc66e287c04fe8fa42c0c671e895a26169
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Windows Mixed Reality、billboarding、加上標籤、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、Mixed Reality 工具組
+ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759404"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299883"
 ---
 # <a name="billboarding-and-tag-along"></a>佈告板和常駐標籤
 
@@ -34,7 +34,7 @@ Billboarding 是一種行為概念，可套用至混合現實中的物件。 具
 標記-也是可以新增至全像影像的行為概念。 以標記為物件的物件會嘗試停留在某個範圍內，讓使用者能夠輕鬆互動。
 
 ![HoloLens 釘選面板是標記的運作方式的絕佳範例](images/tagalong-1000px.jpg)<br>
-*HoloLens [開始] 功能表是標籤和行為的絕佳範例*
+*HoloLens [開始] 功能表是標記與行為的絕佳範例*
 
 加上標籤的物件有參數，可以微調其行為方式。 當使用者在其環境中四處移動時，內容可能會在使用者的看到行中或不存在。 當您移動時，內容會藉由滑動到視圖的邊緣來嘗試停留在使用者的其邊界中。 根據使用者的移動速度而定，內容可能會暫時無法觀看。 當使用者 gazes 到加上標籤的物件時，它會更完整地顯示。 您可以將內容視為「立即消失」，讓使用者永遠不會忘記其內容的方向。
 
@@ -47,9 +47,9 @@ Billboarding 是一種行為概念，可套用至混合現實中的物件。 具
 ---
 
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboarding 和標記-沿著 MRTK (Unity 的混合現實工具組) 
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 會提供 Billboarding 的腳本，以及標記的行為。 將 Billboard.cs 腳本指派給任何物件以新增 billboarding 行為，並讓物件永遠都有臉部。 若要加入標記的行為，請使用 RadialView.cs 腳本。 您可以調整各種選項，例如 lerping 時間、距離和角度。
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 會提供 Billboarding 的腳本，以及標記的行為。 將佈告欄腳本指派給任何物件，以新增 billboarding 行為，並讓物件永遠都有臉部。 若要加入標記的行為，請使用 RadialView .cs 腳本。 您可以調整各種選項，例如 lerping 時間、距離和角度。
 
-* [MRTK-星形視圖求解](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/solvers/solver.md#radialview)
+* [MRTK-星形視圖求解](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [MRTK-佈告欄腳本](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 

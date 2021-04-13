@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、提示、ui、ux、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
-ms.openlocfilehash: b93092b597d0267c1169cf823b1a5c1fa03c3c3f
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 0e9f4dc09e3c4a4c38ffeb1a9042f39996918e36
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759874"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300463"
 ---
 # <a name="interactable-object"></a>可互動的物件
 
@@ -64,7 +64,7 @@ ms.locfileid: "101759874"
 
 ---
 
-您可以使用醒目提示或調整之類的技術，提供使用者輸入狀態的視覺提示。 在混合的現實情況下，您可以在 [開始] 功能表和 [應用程式] 工具列按鈕上找到視覺化不同輸入狀態的範例。 
+您可以使用醒目提示或調整之類的技術，提供使用者輸入狀態的視覺提示。 在混合的現實情況下，您可以在 [開始] 功能表和使用應用程式列按鈕的情況下，找到將不同輸入狀態視覺化的範例。 
 
 以下是這些狀態在「全像全像」 **按鈕** 上的樣子：
 
@@ -169,7 +169,7 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 :::row:::
     :::column:::
         ### <a name="the-ring-visual-cue-on-hololens-2br"></a>HoloLens 2 上的「環形」視覺提示<br>
-        在 HoloLens 2 上，有一個額外的視覺提示，可協助使用者對深度的認知。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
+        在 HoloLens 2 上有一個額外的視覺提示，可協助使用者深入瞭解。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
         <br>
         *影片迴圈：根據鄰近範圍方塊的視覺效果意見反應範例*
     :::column-end:::
@@ -214,13 +214,11 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 
 ---
 
-
-## <a name="sizing-recommendations"></a>大小調整建議 
+## <a name="sizing-recommendations"></a>大小調整建議
 
 為了確保所有的互動物件都能輕易地觸及，建議您確定互動符合其與使用者的距離，以符合最小的大小。 視覺角度通常是以視覺弧線的角度來測量。視覺角度取決於使用者的眼睛和物件之間的距離，並保持不變，而目標的實體大小可能會隨著使用者的距離變更而改變。 若要根據與使用者之間的距離來判斷物件的必要實體大小，請嘗試使用視覺角度計算機（如 [這一](https://elvers.us/perception/visualAngle/)）。
 
 以下是互動內容的最小大小建議。
-
 
 ### <a name="target-size-for-direct-hand-interaction"></a>直接接觸互動的目標大小
 
@@ -254,28 +252,25 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 ![手動光線或注視互動的目標大小](images/TargetSizingFar.jpg)<br>
 *手動光線或注視互動的目標大小*
 
-
 <br>
 
 ---
-
 
 ## <a name="interactable-object-in-mrtk-mixed-reality-toolkit-for-unity"></a>MRTK 中的互動物件 (Unity 的混合現實工具組) 
 
 在 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 中，您可以使用腳本 [**互動**](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Interactable/Scripts) 讓物件回應各種類型的輸入互動狀態。 它支援各種類型的主題，可讓您藉由控制物件屬性（例如色彩、大小、材質和著色器）來定義視覺狀態。
 
-* [互動](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/interactable.md)
-* [按鈕](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/button.md)
+* [互動](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable)
+* [按鈕](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)
 * [手邊互動範例場景](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_HandInteractionExamples.md)
 
 MixedRealityToolkit 的標準著色器提供各種選項，例如可協助您建立視覺和音訊提示的 **相近光源** 。
-* [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/rendering/mrtk-standard-shader.md)
 
+* [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 
 ---
-
 
 ## <a name="see-also"></a>另請參閱
 

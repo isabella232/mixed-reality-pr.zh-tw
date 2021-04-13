@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f25e30ee37f3e4d0449ea653d32366f5d7f46e86
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 35b28557df37abee19a0c950b362117eb6a120b0
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693115"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300195"
 ---
 # <a name="inputfeatureusage-tool"></a>InputFeatureUsage 工具
 
@@ -39,7 +39,7 @@ InputFeatureUsage 工具是裝置上的執行時間 (或編輯器) 工具，可�
 
 ### <a name="panels"></a>窗格
 
-面板會顯示前兩個所偵測到之 Unity 輸入來源上所有回報 InputFeatureUsages 的目前狀態。
+面板會顯示所有已偵測到之 Unity 輸入來源上所有回報 InputFeatureUsages 的目前狀態。
 
 頂端較小的面板會列出所有偵測到的來源名稱。
 

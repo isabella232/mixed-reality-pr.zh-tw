@@ -7,12 +7,12 @@ ms.date: 03/26/2019
 ms.topic: article
 keywords: 圖形, cpu, gpu, 轉譯, 記憶體回收行程, hololens
 ms.localizationpriority: high
-ms.openlocfilehash: f8757e5a5f5c9163dc70d8c8d0e93848c49a6694
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2ff766c3fb2c9f8a91c3c8cc81bb21adae9956e8
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101759724"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300153"
 ---
 # <a name="performance-recommendations-for-unity"></a>對 Unity 的效能建議
 
@@ -301,15 +301,15 @@ Unity 中的[即時全域照明](https://docs.unity3d.com/Manual/GIIntro.html)�
 
 #### <a name="optimize-pixel-shaders"></a>最佳化像素著色器
 
-使用上述方法查看編譯的統計資料結果，[片段著色器](https://en.wikipedia.org/wiki/Shader#Pixel_shaders)通常會比 [頂點著色器](https://en.wikipedia.org/wiki/Shader#Vertex_shaders)平均執行更多作業。 片段著色器 (也稱為像素著色器) 會針對螢幕輸出上的每個像素執行，而頂點著色器只會針對繪製到螢幕的所有網格中每個頂點來執行。 
+使用上述方法查看編譯的統計資料結果，[片段著色器](https://en.wikipedia.org/wiki/Shader#Pixel_shaders)通常會比 [頂點著色器](https://en.wikipedia.org/wiki/Shader#Vertex_shaders)平均執行更多作業。 片段著色器 (也稱為像素著色器) 會針對螢幕輸出上的每個像素執行，而頂點著色器只會針對繪製到螢幕的所有網格中每個頂點來執行。
 
-因此，片段著色器不只會因所有光源計算而比頂點著色器有更多的指示，片段著色器通常還會在較大的資料集上執行。 例如，如果螢幕輸出是 2k 比 2k 影像，則片段著色器可執行 2,000*2,000 = 4,000,000 次。 如果呈現兩眼，這個數字會加倍，因為有兩個畫面。 如果混合實境應用程式有多個通道、全螢幕後置處理效果，或將多個網格轉譯為相同的像素，這個數字就會大幅增加。 
+因此，片段著色器不只會因所有光源計算而比頂點著色器有更多的指示，片段著色器通常還會在較大的資料集上執行。 例如，如果螢幕輸出是 2k 比 2k 影像，則片段著色器可執行 2,000*2,000 = 4,000,000 次。 如果呈現兩眼，這個數字會加倍，因為有兩個畫面。 如果混合實境應用程式有多個通道、全螢幕後置處理效果，或將多個網格轉譯為相同的像素，這個數字就會大幅增加。
 
 因此，減少片段著色器中的作業數目，通常可以在端點著色器中提供比最佳化更佳的效能提升。
 
 #### <a name="unity-standard-shader-alternatives"></a>Unity 標準著色器作業
 
-您不需要使用以實體為基礎的轉譯 (PBR) 或其他高品質的著色器，而是瞭解如何利用更高的效能及更低成本的著色器。 [混合實境工具組](https://github.com/Microsoft/MixedRealityToolkit-Unity)提供已針對混合實境專案進行最佳化的 [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md)。
+您不需要使用以實體為基礎的轉譯 (PBR) 或其他高品質的著色器，而是瞭解如何利用更高的效能及更低成本的著色器。 [混合實境工具組](https://github.com/Microsoft/MixedRealityToolkit-Unity)提供已針對混合實境專案進行最佳化的 [MRTK 標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)。
 
 Unity 也提供無光、頂點光、擴散和其他簡化的著色器選項，相較於 Unity 標準著色器，速度會有所提升。 如需詳細資訊，請參閱[內建著色器的用法和效能](https://docs.unity3d.com/Manual/shader-Performance.html)。
 

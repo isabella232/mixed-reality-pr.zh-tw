@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Windows Mixed Reality、應用程式橫條、周框方塊、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: aba2e318439fec2bbb9e986c2ff7cac7a8a5fb3a
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Windows Mixed Reality，應用程式橫條，周框方塊，混合現實耳機，windows Mixed Reality 耳機，虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 0ccec5240854de9a7db6a79d5b90b97f1e6b81de
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759434"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299903"
 ---
 # <a name="bounding-box-and-app-bar"></a>週框方塊和應用程式列
 ![「周框」是混合現實物件操作的標準介面。](images/UX_Hero_BoundingBox.jpg)<br>
@@ -53,8 +53,8 @@ ms.locfileid: "101759434"
 
 :::row:::
     :::column:::
-        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>HoloLens 2 上關於手近距離的視覺效果意見反應<br>
-        在 HoloLens 2 上，有一個額外的視覺提示，可協助使用者對深度的認知。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
+        ### <a name="visual-feedback-on-hand-proximity-on-hololens-2br"></a>HoloLens 2 上的手近距離視覺回饋<br>
+        在 HoloLens 2 上有一個額外的視覺提示，可協助使用者深入瞭解。 當 fingertip 接近物件時，靠近其 fingertip 的環形會顯示並縮小。 當觸達已按下的狀態時，環形最終會聚合成點。 此 visual affordance 可協助使用者瞭解它們與物件之間的距離。<br>
         <br>
         *影片迴圈：根據鄰近範圍方塊的視覺效果意見反應範例*
     :::column-end:::
@@ -93,9 +93,9 @@ ms.locfileid: "101759434"
 
 
 ## <a name="bounding-box-in-mrtk-mixed-reality-toolkit-for-unity"></a>Unity 的 MRTK (混合現實工具組) 中的周框方塊
-**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供周框方塊和應用程式行的腳本和 prefabs。 您可以藉由將 BoundingBox.cs 腳本指派給任何物件，來新增周框方塊。
+**[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供周框方塊和應用程式行的腳本和 prefabs。 您可以藉由將 BoundingBox .cs 腳本指派給任何物件，來新增周框方塊。
 
-* [MRTK 周框方塊](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/ux-building-blocks/bounding-box.md)
+* [MRTK 周框方塊](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)
 
 
 <br>

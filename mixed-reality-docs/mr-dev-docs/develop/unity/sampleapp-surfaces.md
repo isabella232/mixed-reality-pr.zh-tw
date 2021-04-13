@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: bd4ecabda749d4a2760fe0225caf7c53966a1b98
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 0e75a72ec518dea3513b6868aec56d1c7c89bd05
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759714"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300133"
 ---
 # <a name="surfaces"></a>表面
 
@@ -26,13 +26,14 @@ ms.locfileid: "101759714"
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IhWQ]
 
-使用混合現實 Capture 以 HoloLens 2 錄製
+使用混合實境擷取 HoloLens 2 記錄
 
 ## <a name="about-the-app"></a>關於應用程式
 
 介面示範如何使用混合現實工具組 (MRTK) 的輸入系統和建立區塊，以建立 HoloLens 2 的應用程式體驗。 在此專案中，您可以找到下列範例：
-- 使用 MRTK 的 [輸入系統](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md)，特別是手動/聯合追蹤。
-- 針對高效能圖形使用 MRTK 的 [標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/mrtk-standard-shader.md) 。
+
+- 使用 MRTK 的 [輸入系統](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)，特別是手動/聯合追蹤。
+- 針對高效能圖形使用 MRTK 的 [標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader) 。
 
 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
 
@@ -63,7 +64,7 @@ https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overview
 
 ## <a name="see-also"></a>另請參閱
 
-* [MRTK 範例中樞](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/example-scenes/example-hub.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
+* [MRTK 範例中樞](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
 * [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

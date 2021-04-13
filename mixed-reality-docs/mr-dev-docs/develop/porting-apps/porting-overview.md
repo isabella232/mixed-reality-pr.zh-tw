@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植、unity、中介軟體、引擎、UWP、Win32
-ms.openlocfilehash: 693891d67ae26098f0810a539059da8d34f4731c
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 5b89d3448a7baf12cc76dd3677140fcf6e297ee2
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759109"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107299783"
 ---
 # <a name="porting-overview"></a>移植概觀
 
-若要移植或升級現有的專案以實現混合的現實，您的移植旅程取決於您的應用程式是使用 Unity 或 Unreal 引擎所建立，並以 HoloLens (第1代) 或 HoloLens 2 或 SteamVR 為目標。 此總覽頁面包含我們針對每個平臺和裝置目前的建議-請務必回頭查看這些流程一律會變更。
+當您想要移植或升級現有的專案時，您的移植旅程取決於您的應用程式是使用 Unity 或 Unreal 引擎所建立，並以 HoloLens (第1代) 或 HoloLens 2 或 SteamVR 為目標。 此總覽頁面包含我們針對每個平臺和裝置目前的建議-請務必回頭查看這些流程一律會變更。
 
 首先，根據我們的 [Unity](#unity) 和 [Unreal](#unreal) 建議來設定您的專案目標，然後遵循一或多個移植案例：
 
@@ -33,14 +33,13 @@ ms.locfileid: "101759109"
 我們目前有混合現實的 Unity 開發建議，是 **使用舊版 XR 封裝的 unity 2019 LTS**。 如果您的專案使用 Mixed Reality 工具組，請再次檢查您是否使用最新版本，也就是目前的 **MRTK-Unity 2.5**。
 
 > [!CAUTION]
-> 雖然此版本的 Unity 可使用 XR SDK，但 Azure 空間錨點目前不與此設定相容。 這項建議將會更新為適用于 Unity 的 Azure 空間錨點套件未來版本。 
+> 雖然此版本的 Unity 可使用 XR SDK，但 Azure 空間錨點目前不與此設定相容。 這項建議將會更新為適用于 Unity 的 Azure 空間錨點套件未來版本。
 > 
-> * 如果您不需要 Azure 空間錨點，您可以 [設定您的 Unity 專案以進行 XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ，並 [開始使用 MRTK 和 XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/configuration/getting-started-with-mrtk-and-xrsdk.md)。
+> * 如果您不需要 Azure 空間錨點，您可以 [設定您的 Unity 專案以進行 XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ，並 [開始使用 MRTK 和 XR SDK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk)。
 > 
 > * 如果您目前在專案中使用 XR SDK，而且想要使用 Azure 空間錨點，請將 XR SDK 卸載，然後重新安裝舊版 XR 套件來還原您的專案設定。
 
-
-### <a name="unreal"></a>Unreal 
+### <a name="unreal"></a>Unreal
 
 我們目前對混合現實的 Unreal 開發建議是 **Unreal Engine 4.26**。 如果您的專案使用「混合現實工具組 UX 工具」，請確定您使用的是最新版本，其目前為 **UXT 0.10**。
 
@@ -48,7 +47,7 @@ ms.locfileid: "101759109"
 
 ### <a name="hololens-1st-gen-unity-apps-to-hololens-2"></a>HoloLens (第1代) Unity 應用程式到 HoloLens 2
 
-如果您有現有的 HoloLens (第1代) Unity 應用程式想要移植到 HoloLens 2，請遵循 [HoloLens 移植文章](./porting-hl1-hl2.md)中的指示。
+如果您有現有的 HoloLens (第1代) Unity 應用程式，而您想要將其移植到 HoloLens 2，請依照 [HoloLens 移植文章](./porting-hl1-hl2.md)中的指示進行。
 
 ### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 頭戴式裝置
 
@@ -56,8 +55,8 @@ ms.locfileid: "101759109"
 
 ### <a name="steamvr-applications"></a>SteamVR 應用程式
 
-如需任何您想要更新的 Windows Mixed Reality 耳機的 SteamVR 體驗，請參閱我們的 [SteamVR 更新指南](updating-your-steamvr-application-for-windows-mixed-reality.md)。
+如需任何您想要更新 Windows Mixed Reality 耳機的 SteamVR 體驗，請參閱我們的 [SteamVR 更新指南](updating-your-steamvr-application-for-windows-mixed-reality.md)。
 
 ### <a name="2d-universal-windows-applications"></a>2D 通用 Windows 應用程式
 
-如果您想要將現有的 2D UWP 應用程式移植到 Windows Mixed Reality 沉浸式耳機或 HoloLens，請遵循我們 [的移植 2D uwp 應用程式，以取得 Windows Mixed reality 的](building-2d-apps.md) 指示。
+如果您有想要移植到 Windows Mixed Reality 沉浸式耳機或 HoloLens 的現有 2D UWP 應用程式，請遵循我們 [的移植 2D uwp 應用程式，以取得 Windows Mixed Reality 的](building-2d-apps.md) 指示。

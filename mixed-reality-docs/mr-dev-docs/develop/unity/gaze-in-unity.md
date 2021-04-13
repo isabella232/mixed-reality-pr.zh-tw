@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 眼睛、中眼、unity、全息全像、混合式現實、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 7602eb27da19dc77e4eab1c1a428dc9a1cf8b252
-ms.sourcegitcommit: 97815006c09be0a43b3d9b33c1674150cdfecf2b
+ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/03/2021
-ms.locfileid: "101759684"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107300363"
 ---
 # <a name="head-gaze-in-unity"></a>Unity 中的頭部
 
@@ -51,8 +51,9 @@ void Update()
 
 就像電腦上的滑鼠指標一樣，您應該執行代表使用者前端的 [游標](../../design/cursors.md) 。 知道使用者的目標內容會讓他們即將與其互動的內容更加可靠。
 
-## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>混合現實工具組中的頭部 
-您可以從 MRTK 的 [輸入管理員](https://docs.microsoft.com/windows/mixed-reality/mrtk-docs/features/input/overview.md) 存取前端。
+## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>混合現實工具組中的頭部
+
+您可以從 MRTK 的 [輸入管理員](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) 存取前端。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

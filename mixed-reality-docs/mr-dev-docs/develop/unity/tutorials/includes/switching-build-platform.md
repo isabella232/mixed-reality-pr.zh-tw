@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 78605b17e93429ad974e1ca21e7859035f38d615
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 2a2dcb6ec9133eb5efa0dc04e4d757cabd48461a
+ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088645"
+ms.lasthandoff: 04/13/2021
+ms.locfileid: "107327544"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Windows XR 外掛程式](#tab/winxr)
 
@@ -34,7 +34,7 @@ ms.locfileid: "106088645"
 1.  將 **目標裝置** 設定為 **HoloLens**
 2.  將 **架構** 設定為 **ARM 64**
 3.  將 **組建類型** 設定為 **D3D**
-4.  將 **最低平臺版本** 設定為 **10.2.18362**
+4.  將 **最低平臺版本** 設定為 **10.0.18362**
 5.  將 **UWP SDK** 設定為 **最新安裝**
 6.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
 7.  按一下 [切換平臺] 按鈕
