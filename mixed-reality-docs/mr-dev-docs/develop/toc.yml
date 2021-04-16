@@ -196,8 +196,10 @@
       items:
         - name: 相機設定
           href: unity/camera-in-unity.md
-        - name: 空間錨點
+        - name: 世界鎖定和空間錨點
           href: unity/spatial-anchors-in-unity.md
+        - name: 共用體驗
+          href: unity/shared-experiences-in-unity.md
         - name: 互動
           items:
             - name: 運動控制器
@@ -218,8 +220,6 @@
           href: unity/spatial-sound-in-unity.md
     - name: 進階功能
       items:
-        - name: 共用體驗
-          href: unity/shared-experiences-in-unity.md
         - name: Unity 中的相片攝影機
           href: unity/locatable-camera-in-unity.md
         - name: 傳統型應用程式中的全像全像遠端

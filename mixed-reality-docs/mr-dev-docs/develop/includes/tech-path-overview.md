@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 5b99eda2ca8bc2ba48a46513b867e94c45b198c1
-ms.sourcegitcommit: 919bdc3e46325f3c44a022c8852cd38ffec33d33
+ms.openlocfilehash: ab95f0c89a4b77c6ea69fefa331bfbdccf35f79d
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105105706"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107564722"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -35,6 +35,7 @@ ms.locfileid: "105105706"
 |  工具/SDK  |  說明  |
 | --- | --- |
 | [適用於 Unity 的混合實境工具組](../unity/mrtk-getting-started.md) | 適用於 Unity 的混合實境工具組是一個開放原始碼跨平台開發套件，主要用於加速開發以 Microsoft HoloLens、Windows Mixed Reality 沉浸式 (VR) 頭戴裝置和 OpenVR 平台為目標的應用程式。 |
+| [Microsoft 世界鎖定工具](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/GettingStartedWithWorldLocking.html) | 提供穩定的座標系統和相機調整，以將可見的不一致降至最低。 |
 | [Microsoft 網狀](/mesh/overview) 個人預覽版 | 完成 [Microsoft 網狀的註冊利息](https://aka.ms/meshsignup) 表單，以掌握最新的網狀通知和新聞。 有了網格，您就可以增強虛擬會議、進行虛擬設計會話、協助其他人遠端處理，以及裝載虛擬符合性。 |
 
 ## <a name="cloud-services"></a>雲端服務
