@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 52c6fb57473255e440d9c2f795cc228cca44ea32
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982781"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528734"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
@@ -33,22 +33,34 @@ ms.locfileid: "105982781"
 
 |  Checkpoint  |  結果  |
 | --- | --- |
-| [什麼是 MRTK？](mrtk-getting-started.md) | 熟悉混合實境工具組及其提供的功能，開始您的旅程 |
-| [安裝最新工具](../install-the-tools.md) | 下載並安裝最新的 Unity 套件，並設定您的混合實境專案 |
-| [HoloLens 2 教學課程系列](tutorials/mr-learning-base-01.md) | 進入 HoloLens 2 硬體的入門級 MRTK 教學課程 |
-| **選擇性**[下載 Mixed Reality 功能工具](welcome-to-mr-feature-tool.md) | 新的開發人員工具，可用於探索、更新和新增混合現實功能套件至 Unity 專案 |
+| [混合現實工具組簡介](mrtk-getting-started.md) | 熟悉混合實境工具組及其提供的功能，開始您的旅程 |
+| [下載 Mixed Reality 功能工具](welcome-to-mr-feature-tool.md) | 新的開發人員工具，可用於探索、更新和新增混合現實功能套件至 Unity 專案 |
+| [設定開發人員環境](../install-the-tools.md) | 下載並安裝最新的 Unity 套件，並設定您的混合實境專案 |
+| [完成 HoloLens 2 教學課程系列](tutorials/mr-learning-base-01.md) | 進入 HoloLens 2 硬體的入門級 MRTK 教學課程 |
 
 > [!IMPORTANT]
-> 如果您想要在未匯入混合實境工具組的情況下建立新的 Unity 專案，則您需要為 Windows Mixed Reality 手動變更一小組 Unity 設定。 這些設定分成兩個類別：每個專案和每個場景。 如需逐步程序，請參閱我們的[設定指南](configure-unity-project.md)。
+> 如果您想要在未匯入混合實境工具組的情況下建立新的 Unity 專案，則您需要為 Windows Mixed Reality 手動變更一小組 Unity 設定。 如需詳細資訊，請參閱我們的設定 [指南](choosing-unity-version.md) 。
 
 > [!NOTE]
-> 在您的專案中設定 MRTK V2 後，標準 Unity 遊戲物件 (例如相機) 會立即亮起，以提供坐姿級別體驗。 您可以在[座標系統](coordinate-systems-in-unity.md)頁面上找到變更應用程式體驗級別的指示。
+> 當您在專案中設定 MRTK 之後，像是相機的標準 Unity 遊戲物件就會立即立即獲得大規模的體驗。 您可以在[座標系統](coordinate-systems-in-unity.md)頁面上找到變更應用程式體驗級別的指示。
 
 ## <a name="2-core-building-blocks"></a>2.核心基本要素
 
 混合實境應用程式的所有核心建置組塊都會以與其他 Unity API 一致的方式公開。 這些建置組塊是透過混合實境工具組提供的獨立功能。 您目前可能不需用到所有功能，但建議您及早探索。 深入探討下列核心建置組塊後，您將了解如何讓包含多樣化功能的工具箱自行或透過 MRTK 整合到混合實境專案中。
 
-[!INCLUDE[](../includes/unity-building-blocks.md)]
+|  功能  |  功能  |
+| --- | --- |
+| [相機](../unity/camera-in-unity.md) | 完整最佳化混合實境應用程式中的視覺品質和全像攝影穩定性 |
+| [世界鎖定和空間錨點](spatial-anchors-in-unity.md) | 解決穩定問題、攝影機調整，以及整合穩定的座標系統解決方案 |
+| [共用體驗](shared-experiences-in-unity.md) | 使用空間錨點共用，共同檢視空間中固定點上的相同全像投影，並與其互動 |
+| [目光](../unity/gaze-in-unity.md) | 讓使用者藉由注視全像投影而將其定為目標 |
+| [運動控制器](../unity/motion-controllers-in-unity.md) | 將空間動作新增至混合實境應用程式 |
+| [手勢](../unity/gestures-in-unity.md) | 在混合實境體驗中使用手勢作為輸入 |
+| [手部和眼睛追蹤](../unity/hand-eye-in-unity.md) | 將關節手部和眼睛追蹤輸入整合到您的使用者體驗中 |
+| [空間對應](../unity/spatial-mapping-in-unity.md) | 透過虛擬網格重疊對應您的實體空間，以標示環境的界限 |
+| [空間音效](../unity/spatial-sound-in-unity.md) | 利用沉浸式 3D 音訊增強您的應用程式 |
+| [Text](../unity/text-in-unity.md) | 取得可管理大小且具有效轉譯的清晰、高品質文字 |
+| [語音輸入](../unity/voice-input-in-unity.md) | 擷取使用者說出的關鍵字、片語和指令|
 
 ## <a name="3-advanced-features"></a>3.進階功能
 
@@ -56,8 +68,7 @@ ms.locfileid: "105982781"
 
 |  功能  |  功能  |
 | --- | --- |
-| [共用體驗](shared-experiences-in-unity.md) | 使用空間錨點共用，共同檢視空間中固定點上的相同全像投影，並與其互動 |
-| [定位相機](locatable-camera-in-unity.md) | 在您的混合實境應用程式中擷取相片和影片內容 |
+| [相片攝影機](locatable-camera-in-unity.md) | 在您的混合實境應用程式中擷取相片和影片內容 |
 | [對焦點](focus-point-in-unity.md) | 為 HoloLens 提供有關於如何對目前顯示的全像投影最有效地執行穩定性的提示 |
 | [追蹤遺失](tracking-loss-in-unity.md) | 處理您的裝置無法在應用程式環境的空間中找到本身所在位置的狀況 |
 | [鍵盤輸入](keyboard-input-in-unity.md) | 在您的應用程式中取得實際環境和混合實境鍵盤的輸入 |

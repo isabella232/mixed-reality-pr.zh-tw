@@ -6,18 +6,18 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、僅限方向、固定大小、固定規模、會議室規模、世界規模、360度、卡上、站上、房間、世界、縮放、位置、方向、Unity、錨定、空間錨點、世界錨點、全球鎖定、世界鎖定、內文鎖定、內文鎖定、追蹤損失、locatability、界限、recenter、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: aa68ae44e09dfe579f8ab8924d1b300506a1f00e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581068"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528742"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity 中的座標系統
 
-Windows Mixed Reality 透過房間規模的應用程式，支援橫跨各種 [體驗規模](../../design/coordinate-systems.md)的應用程式，從僅限方向和已安置規模的應用程式。 在 HoloLens 上，您可以進一步建立全球規模的應用程式，讓使用者超越5個計量，探索整個大樓的整個樓層。
+Windows Mixed Reality 透過房間規模的應用程式，支援橫跨各種體驗規模的應用程式，從僅限方向和已安置規模的應用程式。 在 HoloLens 上，您可以進一步建立全球規模的應用程式，讓使用者超越5個計量，探索整個大樓的整個樓層。
 
-在 Unity 中打造混合現實體驗的第一個步驟，是決定您的應用程式將設為目標的 [體驗規模](../../design/coordinate-systems.md) 。
+在 Unity 中建立混合現實體驗的第一個步驟，是瞭解 [座標系統，並選擇您的](../../design/coordinate-systems.md) 應用程式將會鎖定的體驗。
 
 ## <a name="building-an-orientation-only-or-seated-scale-experience"></a>打造僅限方向或內部規模的體驗
 
@@ -96,13 +96,13 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 
 ### <a name="adding-a-world-anchor"></a>新增世界錨點
 
-若要新增世界錨點，請 <WorldAnchor> 使用您要錨定到真實世界的轉換，在遊戲物件上呼叫 AddComponent ( # A1。
+若要新增世界錨點，請 <WorldAnchor> 使用您要錨定到真實世界的轉換，呼叫遊戲物件上的 AddComponent () 。
 
 ```cs
 WorldAnchor anchor = gameObject.AddComponent<WorldAnchor>();
 ```
 
-這樣就完成了！ 此遊戲物件現在會錨定在實體世界中的目前位置，您可能會看到其 Unity 全局座標在一段時間後會稍微調整，以確保實體對齊。 使用 [持續](persistence-in-unity.md) 性，在未來的應用程式會話中再次尋找此錨定的位置。
+大功告成！ 此遊戲物件現在會錨定在實體世界中的目前位置，您可能會看到其 Unity 全局座標在一段時間後會稍微調整，以確保實體對齊。 使用 [持續](persistence-in-unity.md) 性，在未來的應用程式會話中再次尋找此錨定的位置。
 
 ### <a name="removing-a-world-anchor"></a>移除世界錨點
 
@@ -155,7 +155,7 @@ private void Anchor_OnTrackingChanged(WorldAnchor self, bool located)
 }
 ```
 
-有時會立即找到錨點。 在此情況下，當 AddComponent ( # A1 傳回時，錨點的這個 isLocated 屬性會設定為 true <WorldAnchor> 。 因此，將不會觸發 OnTrackingChanged 事件。 清除模式是在附加錨點之後，以初始 IsLocated 狀態呼叫您的 OnTrackingChanged 處理常式。
+有時會立即找到錨點。 在此情況下，當 AddComponent () 傳回時，錨點的這個 isLocated 屬性會設定為 true <WorldAnchor> 。 因此，將不會觸發 OnTrackingChanged 事件。 清除模式是在附加錨點之後，以初始 IsLocated 狀態呼叫您的 OnTrackingChanged 處理常式。
 
 ```cs
 Anchor_OnTrackingChanged(anchor, anchor.isLocated);

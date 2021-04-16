@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、環境追蹤、TMP、
-ms.openlocfilehash: ae41135b8c27c8cef5ceef20573a7c8503c14b91
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 4ea3f62153676154188584221c83ac97b5589e05
+ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550548"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107528730"
 ---
 # <a name="hologram-stabilization"></a>全像穩定
 
@@ -129,6 +129,11 @@ public void RemoveAnchor()
     DestroyImmediate(m_anchor);
 }
 ```
+
+如果您想要以手動方式使用錨點的替代方法，請參閱 Microsoft 世界鎖定工具。 
+
+> [!div class="nextstepaction"]
+> [以 MR 功能工具定](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLTviaMRFeatureTool.html)
 
 ## <a name="see-also"></a>另請參閱
 
