@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: c4e068dda72c4dc2f22ca0a56a835b334d90c713
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
+ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102770326"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107581550"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 
@@ -20,7 +20,10 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 針對混合實境進行開發時，所擁有的工具越多越好。 雖然文件和撰寫的教學課程很重要，但如果您更喜歡視覺學習模組，那麼 Microsoft Learn 的影片內容就是理想的選擇。 目前正在新增更多模組，因此請務必回來查看是否有更多更新！
 
-我們的學習模組可讓您更精通混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure 混合實境服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。 開始使用混合實境學習模組，或查看我們的 Microsoft Learn 簡介[影片](https://channel9.msdn.com/Blogs/One-Dev-Minute/What-is-Microsoft-Learn)！
+我們的學習模組可讓您更精通混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure 混合實境服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。 
+
+> [!div class="nextstepaction"]
+> [開始使用我們的混合現實學習路徑](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
 
 ## <a name="general-modules"></a>一般模組
 

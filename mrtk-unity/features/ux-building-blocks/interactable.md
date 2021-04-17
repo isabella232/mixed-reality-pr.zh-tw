@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、互動、事件、
-ms.openlocfilehash: 52e37fd127bc2c50e3627b18c80657150841ec2b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f141a394ec9395e0a27cc964caeb66654fb6fe08
+ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689238"
+ms.lasthandoff: 04/16/2021
+ms.locfileid: "107581560"
 ---
 # <a name="interactable"></a>互動
 
@@ -225,7 +225,7 @@ public Vector3 EffectOffset = Vector3.zero;
 
 #### <a name="toggle-button"></a>切換按鈕
 
-若要讓按鈕可以切換，請將欄位變更 [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) 為 [類型] `Toggle` 。 在 [ *設定檔* ] 區段中，會針對 *互動* 切換時使用的每個設定檔新增切換的主題。
+若要切換按鈕，請將 [`Selection Mode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) 欄位變更為 [類型] `Toggle` 。 在 [ *設定檔* ] 區段中，會針對 *互動* 切換時使用的每個設定檔新增切換的主題。
 
 當 [`SelectionMode`](xref:Microsoft.MixedReality.Toolkit.UI.SelectionModes) 設定為切換時， *IsToggled* 核取方塊可以用來在執行時間初始化時設定控制項的預設值。
 
