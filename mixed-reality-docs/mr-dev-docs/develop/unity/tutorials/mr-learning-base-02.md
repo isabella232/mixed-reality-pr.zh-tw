@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, TextMeshPro,
 ms.localizationpriority: high
-ms.openlocfilehash: c9cf580b1123002e9e8cdfd5c3914c3aa39e2825
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: b0b8d97471dfae9d6dc6bbee26079af04f97de62
+ms.sourcegitcommit: 94ae851f78e5b861af601b445f8f0a3405197c40
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003127"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107716019"
 ---
 # <a name="2-initializing-your-project-and-deploying-your-first-application"></a>2.初始化您的專案並部署您的第一個應用程式
 
@@ -186,7 +186,7 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 > [!NOTE]
 > 基於本教學課程的目的，colliders 已經加入 Cube 物件中。 若要深入了解碰撞器，您可以造訪 Unity 的<a href="https://docs.unity3d.com/Manual/CollidersOverview.html" target="_blank">碰撞器 (Collider)</a> 文件。
 
-若要在 Unity 編輯器中測試此項，您可以進入 [播放] 模式，並按住 **LeftShift** 或 **空格鍵** 以啟用控制器，滑鼠移動會移動控制器，也可以使用滑鼠滾輪移至或接近相機。 一旦指標位於 Cube 上，請按住 **滑鼠右鍵** 以移動 cube 物件。
+若要在 Unity 編輯器中測試此項，您可以進入 [播放] 模式，並按住 **LeftShift** 或 **空格鍵** 以啟用控制器，滑鼠移動會移動控制器，也可以使用滑鼠滾輪移至或接近相機。 指標位於 Cube 上時，按住 **滑鼠** 左鍵以移動 cube 物件。
 
 ![遊戲模式](images/mr-learning-base/base-02-section8-step1-4.png)
 
