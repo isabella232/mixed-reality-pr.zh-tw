@@ -3,16 +3,16 @@ title: 探索和取得功能
 description: 探索並下載 Mixed Reality 功能。
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230711"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107731998"
 ---
 # <a name="discovering-and-acquiring-features"></a>探索和取得功能
 
@@ -37,6 +37,10 @@ ms.locfileid: "102230711"
 - 類別名稱 (例如：混合現實工具組) 
 - 選取的功能計數
 - 可用功能計數
+- 區段按鈕
+
+> [!NOTE]
+> 選取按鈕會區分內容。 根據類別內的特徵選取狀態，會顯示一或多個 `Select All` 和 `Select None` 按鈕。
 
 ### <a name="feature"></a>功能
 
@@ -49,6 +53,9 @@ ms.locfileid: "102230711"
 - 可用版本清單
 - [功能套件詳細資料](viewing-package-details.md)的連結
 
+> [!NOTE]
+> 如果功能是由早期存取提供 (也稱為私用預覽) 程式， ![ 則會顯示一則將會提早出現指標圖示 ](images/EarlyAccess.png) 。
+
 ## <a name="refresh-the-feature-catalog"></a>重新整理功能目錄
 
 若要檢查是否有新的和更新的功能，請按一下 [重新整理]。 ![重新整理按鈕](images/RefreshButton.png) 按鈕。 這會連接到目錄網站並取得最新資訊。 讀取目錄之後，就會顯示上次更新的日期和時間。
@@ -58,6 +65,8 @@ ms.locfileid: "102230711"
 藉由展開類別、選取版本，然後按一下核取方塊來選取功能：
 
 ![選取的功能](images/SelectedFeatures.png)
+
+若要選取類別內的每個封裝， `Select All` 則會提供按鈕。 `Select None` 將取消選取所有選取的封裝。 
 
 具有一或多個所選功能的每個類別都會更新，以顯示計數。
 
