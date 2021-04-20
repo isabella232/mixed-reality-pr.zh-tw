@@ -3,14 +3,14 @@ title: 更新
 description: 從較低版本的 MRTK 遷移的檔。
 author: polar-kev
 ms.author: kesemple
-ms.date: 01/12/2021
+ms.date: 04/19/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0cad7b2cf2b9c2afc386467966bfe536e23891b2
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 97f45328bc8f9b811e815da0240138790db699c6
+ms.sourcegitcommit: 0b09536c16f6802acc120a973d720aec7e30f617
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550818"
+ms.lasthandoff: 04/20/2021
+ms.locfileid: "107742234"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
 
@@ -44,6 +44,8 @@ ms.locfileid: "105550818"
 ### <a name="mixed-reality-feature-tool"></a>混合現實功能工具
 將 MRTK 升級至較新版本的 MRTK 最簡單的方式，就是使用「 [混合現實」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 來下載最新的套件，並將它們直接載入至 Unity 專案。
 
+如果專案先前使用 Unity 資產 ( unitypackage) 檔案，請參閱 [這些指示](#switching-from-unity-asset-files-to-mixed-reality-feature-tool)。 
+
 ### <a name="unity-asset-unitypackage-files"></a>Unity 資產 (. unitypackage) 檔案
 
 另一個升級路徑是手動下載 MRTK Unity 套件，並將其套用至您的專案。 請參閱下列步驟：
@@ -54,11 +56,12 @@ ms.locfileid: "105550818"
     - MRTK/核心
     - MRTK/範例
     - MRTK/擴充功能
-    > [!NOTE]
-    > 如果已安裝其他延伸模組，請在刪除這些資料夾之前進行備份。
     - MRTK/提供者
     - MRTK/SDK
     - MRTK/服務
+    - MRTK/StandardAssets
+    > [!IMPORTANT]
+    > 如果已對 MRTK 著色器進行修改，請在 deleteing MRTK/StandardAssets 資料夾之前，先建立本機備份。
     - MRTK/工具
     > [!IMPORTANT]
     > 請勿刪除 **MixedRealityToolkit 產生** 的資料夾或其中繼檔案。
@@ -86,6 +89,38 @@ ms.locfileid: "105550818"
    - 按一下 [遷移] 按鈕，如果找到任何 migrateable 物件，則應啟用此按鈕。
    - 針對下拉式清單中的每個遷移處理常式重複上述三個步驟。
       (看到 [此問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/8552) ，其中涵蓋可在未來版本中簡化此遷移程式的工作) 
+
+### <a name="switching-from-unity-asset-files-to-mixed-reality-feature-tool"></a>從 Unity 資產檔案切換至混合現實功能工具
+
+從 Unity 資產檔案切換至混合現實功能工具套件帶來許多優點：
+
+- 更新更容易
+- 更快速的編譯時間
+- Visual Studio 方案中的專案數較少
+
+變更為使用 Mixed Reality 功能工具需要一組手動步驟。
+
+1. 儲存目前專案的複本。
+1. 關閉 Unity
+1. 在 [ *資產* ] 資料夾內，刪除下列 **MRTK** 資料夾以及其 (專案可能沒有所有列出的資料夾) 
+    - MRTK/核心
+    - MRTK/範例
+    - MRTK/擴充功能
+    - MRTK/提供者
+    - MRTK/SDK
+    - MRTK/服務
+    - MRTK/StandardAssets
+    > [!IMPORTANT]
+    > 如果已對 MRTK 著色器進行修改，請在 deleteing MRTK/StandardAssets 資料夾之前，先建立本機備份。
+    - MRTK/工具
+    > [!IMPORTANT]
+    > 請勿刪除 **MixedRealityToolkit 產生** 的資料夾或其中繼檔案。
+1. 刪除連結 **庫** 資料夾
+    > [!IMPORTANT]
+    > 某些 Unity 工具（例如 Unity Collaboration）會將設定資訊儲存至程式庫資料夾。 如果使用執行這項工作的工具，請先從程式庫複製工具的 [資料] 資料夾，然後再進行刪除，然後在重新產生程式庫之後將其還原。
+1. 在 Unity 中重新開啟專案
+
+執行上述步驟之後，請執行 [混合現實功能工具](#mixed-reality-feature-tool) ，並匯入所需的混合現實工具組版本。
 
 ## <a name="updating-230-to-240"></a>將2.3.0 更新為2.4。0
 
