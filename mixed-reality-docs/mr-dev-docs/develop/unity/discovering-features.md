@@ -3,80 +3,89 @@ title: 探索和取得功能
 description: 探索並下載 Mixed Reality 功能。
 author: davidkline-ms
 ms.author: v-hferrone
-ms.date: 03/04/2021
+ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 859abd0c8e538392a7ba2a1adbb4387956c50028
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
+ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230711"
+ms.lasthandoff: 04/19/2021
+ms.locfileid: "107731998"
 ---
-# <a name="discovering-and-acquiring-features"></a><span data-ttu-id="76f88-104">探索和取得功能</span><span class="sxs-lookup"><span data-stu-id="76f88-104">Discovering and acquiring features</span></span>
+# <a name="discovering-and-acquiring-features"></a><span data-ttu-id="8fb91-104">探索和取得功能</span><span class="sxs-lookup"><span data-stu-id="8fb91-104">Discovering and acquiring features</span></span>
 
-<span data-ttu-id="76f88-105">本文中的各節概述如何在混合現實功能工具中尋找功能套件。</span><span class="sxs-lookup"><span data-stu-id="76f88-105">The sections in this article outline how to find feature packages in the Mixed Reality Feature Tool.</span></span> <span data-ttu-id="76f88-106">如果您需要指定區段的參考，請參閱下列螢幕擷取畫面：</span><span class="sxs-lookup"><span data-stu-id="76f88-106">Refer to the screenshot below if you need a reference for a given section:</span></span>
+<span data-ttu-id="8fb91-105">本文中的各節概述如何在混合現實功能工具中尋找功能套件。</span><span class="sxs-lookup"><span data-stu-id="8fb91-105">The sections in this article outline how to find feature packages in the Mixed Reality Feature Tool.</span></span> <span data-ttu-id="8fb91-106">如果您需要指定區段的參考，請參閱下列螢幕擷取畫面：</span><span class="sxs-lookup"><span data-stu-id="8fb91-106">Refer to the screenshot below if you need a reference for a given section:</span></span>
 
 ![探索功能](images/FeatureToolDiscovery.png)
 
-## <a name="available-features"></a><span data-ttu-id="76f88-108">可用的功能</span><span class="sxs-lookup"><span data-stu-id="76f88-108">Available features</span></span>
+## <a name="available-features"></a><span data-ttu-id="8fb91-108">可用的功能</span><span class="sxs-lookup"><span data-stu-id="8fb91-108">Available features</span></span>
 
-### <a name="category"></a><span data-ttu-id="76f88-109">類別</span><span class="sxs-lookup"><span data-stu-id="76f88-109">Category</span></span>
+### <a name="category"></a><span data-ttu-id="8fb91-109">類別</span><span class="sxs-lookup"><span data-stu-id="8fb91-109">Category</span></span>
 
-<span data-ttu-id="76f88-110">「混合現實」功能工具會顯示功能分類的集合，讓您輕鬆找到所需的內容。</span><span class="sxs-lookup"><span data-stu-id="76f88-110">The Mixed Reality Feature Tool displays a collection of feature categories to make it easy to find what you want.</span></span> <span data-ttu-id="76f88-111">展開任何類別以顯示其可用功能的集合。</span><span class="sxs-lookup"><span data-stu-id="76f88-111">Expand any of the categories to display its collection of available features.</span></span>
+<span data-ttu-id="8fb91-110">「混合現實」功能工具會顯示功能分類的集合，讓您輕鬆找到所需的內容。</span><span class="sxs-lookup"><span data-stu-id="8fb91-110">The Mixed Reality Feature Tool displays a collection of feature categories to make it easy to find what you want.</span></span> <span data-ttu-id="8fb91-111">展開任何類別以顯示其可用功能的集合。</span><span class="sxs-lookup"><span data-stu-id="8fb91-111">Expand any of the categories to display its collection of available features.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="76f88-112">如果找不到您要尋找的功能，請檢查 **其他功能**。</span><span class="sxs-lookup"><span data-stu-id="76f88-112">If you can't find the functionality you're looking for, check **Other features**.</span></span>
+> <span data-ttu-id="8fb91-112">如果找不到您要尋找的功能，請檢查 **其他功能**。</span><span class="sxs-lookup"><span data-stu-id="8fb91-112">If you can't find the functionality you're looking for, check **Other features**.</span></span>
 
 ![功能分類](images/FeatureCategory.png)
 
-<span data-ttu-id="76f88-114">上述螢幕擷取畫面中的分類標頭包含下列屬性，從左至右：</span><span class="sxs-lookup"><span data-stu-id="76f88-114">The category header in the above screenshot contains the following properties, from left to right:</span></span>
+<span data-ttu-id="8fb91-114">上述螢幕擷取畫面中的分類標頭包含下列屬性，從左至右：</span><span class="sxs-lookup"><span data-stu-id="8fb91-114">The category header in the above screenshot contains the following properties, from left to right:</span></span>
 
-- <span data-ttu-id="76f88-115">展開和折迭按鈕</span><span class="sxs-lookup"><span data-stu-id="76f88-115">Expand and collapse button</span></span>
-- <span data-ttu-id="76f88-116">類別名稱 (例如：混合現實工具組) </span><span class="sxs-lookup"><span data-stu-id="76f88-116">Category name (ex: Mixed Reality Toolkit)</span></span>
-- <span data-ttu-id="76f88-117">選取的功能計數</span><span class="sxs-lookup"><span data-stu-id="76f88-117">Count of selected features</span></span>
-- <span data-ttu-id="76f88-118">可用功能計數</span><span class="sxs-lookup"><span data-stu-id="76f88-118">Count of available features</span></span>
+- <span data-ttu-id="8fb91-115">展開和折迭按鈕</span><span class="sxs-lookup"><span data-stu-id="8fb91-115">Expand and collapse button</span></span>
+- <span data-ttu-id="8fb91-116">類別名稱 (例如：混合現實工具組) </span><span class="sxs-lookup"><span data-stu-id="8fb91-116">Category name (ex: Mixed Reality Toolkit)</span></span>
+- <span data-ttu-id="8fb91-117">選取的功能計數</span><span class="sxs-lookup"><span data-stu-id="8fb91-117">Count of selected features</span></span>
+- <span data-ttu-id="8fb91-118">可用功能計數</span><span class="sxs-lookup"><span data-stu-id="8fb91-118">Count of available features</span></span>
+- <span data-ttu-id="8fb91-119">區段按鈕</span><span class="sxs-lookup"><span data-stu-id="8fb91-119">Section buttons</span></span>
 
-### <a name="feature"></a><span data-ttu-id="76f88-119">功能</span><span class="sxs-lookup"><span data-stu-id="76f88-119">Feature</span></span>
+> [!NOTE]
+> <span data-ttu-id="8fb91-120">選取按鈕會區分內容。</span><span class="sxs-lookup"><span data-stu-id="8fb91-120">The selection buttons are context sensitive.</span></span> <span data-ttu-id="8fb91-121">根據類別內的特徵選取狀態，會顯示一或多個 `Select All` 和 `Select None` 按鈕。</span><span class="sxs-lookup"><span data-stu-id="8fb91-121">Based on the state of feature selection within the category, one or more of the `Select All` and `Select None` buttons will be displayed.</span></span>
+
+### <a name="feature"></a><span data-ttu-id="8fb91-122">功能</span><span class="sxs-lookup"><span data-stu-id="8fb91-122">Feature</span></span>
 
 ![功能專案](images/FeatureEntry.png)
 
-<span data-ttu-id="76f88-121">功能會列在適當的類別中。</span><span class="sxs-lookup"><span data-stu-id="76f88-121">Features are listed in their appropriate category.</span></span> <span data-ttu-id="76f88-122">在上述螢幕擷取畫面中，從左至右，功能專案包含：</span><span class="sxs-lookup"><span data-stu-id="76f88-122">From left to right in the above screenshot, feature entries contain:</span></span>
+<span data-ttu-id="8fb91-124">功能會列在適當的類別中。</span><span class="sxs-lookup"><span data-stu-id="8fb91-124">Features are listed in their appropriate category.</span></span> <span data-ttu-id="8fb91-125">在上述螢幕擷取畫面中，從左至右，功能專案包含：</span><span class="sxs-lookup"><span data-stu-id="8fb91-125">From left to right in the above screenshot, feature entries contain:</span></span>
 
-- <span data-ttu-id="76f88-123">選取核取方塊</span><span class="sxs-lookup"><span data-stu-id="76f88-123">Selection check box</span></span>
-- <span data-ttu-id="76f88-124">功能名稱 (例如：混合現實工具組 Foundation) </span><span class="sxs-lookup"><span data-stu-id="76f88-124">Feature name (ex: Mixed Reality Toolkit Foundation)</span></span>
-- <span data-ttu-id="76f88-125">可用版本清單</span><span class="sxs-lookup"><span data-stu-id="76f88-125">List of available versions</span></span>
-- <span data-ttu-id="76f88-126">[功能套件詳細資料](viewing-package-details.md)的連結</span><span class="sxs-lookup"><span data-stu-id="76f88-126">Link to the [feature package details](viewing-package-details.md)</span></span>
+- <span data-ttu-id="8fb91-126">選取核取方塊</span><span class="sxs-lookup"><span data-stu-id="8fb91-126">Selection check box</span></span>
+- <span data-ttu-id="8fb91-127">功能名稱 (例如：混合現實工具組 Foundation) </span><span class="sxs-lookup"><span data-stu-id="8fb91-127">Feature name (ex: Mixed Reality Toolkit Foundation)</span></span>
+- <span data-ttu-id="8fb91-128">可用版本清單</span><span class="sxs-lookup"><span data-stu-id="8fb91-128">List of available versions</span></span>
+- <span data-ttu-id="8fb91-129">[功能套件詳細資料](viewing-package-details.md)的連結</span><span class="sxs-lookup"><span data-stu-id="8fb91-129">Link to the [feature package details](viewing-package-details.md)</span></span>
 
-## <a name="refresh-the-feature-catalog"></a><span data-ttu-id="76f88-127">重新整理功能目錄</span><span class="sxs-lookup"><span data-stu-id="76f88-127">Refresh the feature catalog</span></span>
+> [!NOTE]
+> <span data-ttu-id="8fb91-130">如果功能是由早期存取提供 (也稱為私用預覽) 程式， ![ 則會顯示一則將會提早出現指標圖示 ](images/EarlyAccess.png) 。</span><span class="sxs-lookup"><span data-stu-id="8fb91-130">If a feature is provided by an Early Access (also called private preview) program, an indicator icon ![early access](images/EarlyAccess.png) will be displayed.</span></span>
 
-<span data-ttu-id="76f88-128">若要檢查是否有新的和更新的功能，請按一下 [重新整理]。</span><span class="sxs-lookup"><span data-stu-id="76f88-128">To check for new and updated features, click the refresh</span></span> ![重新整理按鈕](images/RefreshButton.png) <span data-ttu-id="76f88-130">按鈕。</span><span class="sxs-lookup"><span data-stu-id="76f88-130">button.</span></span> <span data-ttu-id="76f88-131">這會連接到目錄網站並取得最新資訊。</span><span class="sxs-lookup"><span data-stu-id="76f88-131">This will connect to the catalog site and retrieve the latest information.</span></span> <span data-ttu-id="76f88-132">讀取目錄之後，就會顯示上次更新的日期和時間。</span><span class="sxs-lookup"><span data-stu-id="76f88-132">Once the catalog has been read, the date and time of the last update will be displayed.</span></span>
+## <a name="refresh-the-feature-catalog"></a><span data-ttu-id="8fb91-131">重新整理功能目錄</span><span class="sxs-lookup"><span data-stu-id="8fb91-131">Refresh the feature catalog</span></span>
 
-## <a name="select-features"></a><span data-ttu-id="76f88-133">特性選取</span><span class="sxs-lookup"><span data-stu-id="76f88-133">Select features</span></span>
+<span data-ttu-id="8fb91-132">若要檢查是否有新的和更新的功能，請按一下 [重新整理]。</span><span class="sxs-lookup"><span data-stu-id="8fb91-132">To check for new and updated features, click the refresh</span></span> ![重新整理按鈕](images/RefreshButton.png) <span data-ttu-id="8fb91-134">按鈕。</span><span class="sxs-lookup"><span data-stu-id="8fb91-134">button.</span></span> <span data-ttu-id="8fb91-135">這會連接到目錄網站並取得最新資訊。</span><span class="sxs-lookup"><span data-stu-id="8fb91-135">This will connect to the catalog site and retrieve the latest information.</span></span> <span data-ttu-id="8fb91-136">讀取目錄之後，就會顯示上次更新的日期和時間。</span><span class="sxs-lookup"><span data-stu-id="8fb91-136">Once the catalog has been read, the date and time of the last update will be displayed.</span></span>
 
-<span data-ttu-id="76f88-134">藉由展開類別、選取版本，然後按一下核取方塊來選取功能：</span><span class="sxs-lookup"><span data-stu-id="76f88-134">Features are selected by expanding a category, selecting a version, and clicking the check box:</span></span>
+## <a name="select-features"></a><span data-ttu-id="8fb91-137">特性選取</span><span class="sxs-lookup"><span data-stu-id="8fb91-137">Select features</span></span>
+
+<span data-ttu-id="8fb91-138">藉由展開類別、選取版本，然後按一下核取方塊來選取功能：</span><span class="sxs-lookup"><span data-stu-id="8fb91-138">Features are selected by expanding a category, selecting a version, and clicking the check box:</span></span>
 
 ![選取的功能](images/SelectedFeatures.png)
 
-<span data-ttu-id="76f88-136">具有一或多個所選功能的每個類別都會更新，以顯示計數。</span><span class="sxs-lookup"><span data-stu-id="76f88-136">Each category with one or more selected features will update to display the count.</span></span>
+<span data-ttu-id="8fb91-140">若要選取類別內的每個封裝， `Select All` 則會提供按鈕。</span><span class="sxs-lookup"><span data-stu-id="8fb91-140">To select every package within a category, a `Select All` button is provided.</span></span> <span data-ttu-id="8fb91-141">`Select None` 將取消選取所有選取的封裝。</span><span class="sxs-lookup"><span data-stu-id="8fb91-141">`Select None` will deselect all selected packages.</span></span> 
 
-## <a name="acquiring-features"></a><span data-ttu-id="76f88-137">取得功能</span><span class="sxs-lookup"><span data-stu-id="76f88-137">Acquiring features</span></span>
+<span data-ttu-id="8fb91-142">具有一或多個所選功能的每個類別都會更新，以顯示計數。</span><span class="sxs-lookup"><span data-stu-id="8fb91-142">Each category with one or more selected features will update to display the count.</span></span>
 
-<span data-ttu-id="76f88-138">選擇您的功能之後，請選取 [ **取得功能** ] 以開始下載選取的功能套件檔案。</span><span class="sxs-lookup"><span data-stu-id="76f88-138">Once you've chosen your features, select **Get features** to start downloading the selected feature package files.</span></span>
+## <a name="acquiring-features"></a><span data-ttu-id="8fb91-143">取得功能</span><span class="sxs-lookup"><span data-stu-id="8fb91-143">Acquiring features</span></span>
+
+<span data-ttu-id="8fb91-144">選擇您的功能之後，請選取 [ **取得功能** ] 以開始下載選取的功能套件檔案。</span><span class="sxs-lookup"><span data-stu-id="8fb91-144">Once you've chosen your features, select **Get features** to start downloading the selected feature package files.</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="76f88-139">根據預設，先前取得的功能套件檔案不會重新下載。</span><span class="sxs-lookup"><span data-stu-id="76f88-139">By default, previously acquired feature package files won't be re-downloaded.</span></span> <span data-ttu-id="76f88-140">若要變更此行為，請參閱設定 [功能工具](configuring-feature-tool.md)。</span><span class="sxs-lookup"><span data-stu-id="76f88-140">To change this behavior please see [configuring the feature tool](configuring-feature-tool.md).</span></span>
+> <span data-ttu-id="8fb91-145">根據預設，先前取得的功能套件檔案不會重新下載。</span><span class="sxs-lookup"><span data-stu-id="8fb91-145">By default, previously acquired feature package files won't be re-downloaded.</span></span> <span data-ttu-id="8fb91-146">若要變更此行為，請參閱設定 [功能工具](configuring-feature-tool.md)。</span><span class="sxs-lookup"><span data-stu-id="8fb91-146">To change this behavior please see [configuring the feature tool](configuring-feature-tool.md).</span></span>
 
-<span data-ttu-id="76f88-141">下載完成之後，Mixed Reality 功能工具將移至 [匯 [入功能](importing-features.md) ] 步驟。</span><span class="sxs-lookup"><span data-stu-id="76f88-141">Once downloading is complete, the Mixed Reality Feature Tool will move to the [importing features](importing-features.md) step.</span></span>
+<span data-ttu-id="8fb91-147">下載完成之後，Mixed Reality 功能工具將移至 [匯 [入功能](importing-features.md) ] 步驟。</span><span class="sxs-lookup"><span data-stu-id="8fb91-147">Once downloading is complete, the Mixed Reality Feature Tool will move to the [importing features](importing-features.md) step.</span></span>
 
-## <a name="going-back-to-the-previous-step"></a><span data-ttu-id="76f88-142">回到上一個步驟</span><span class="sxs-lookup"><span data-stu-id="76f88-142">Going back to the previous step</span></span>
+## <a name="going-back-to-the-previous-step"></a><span data-ttu-id="8fb91-148">回到上一個步驟</span><span class="sxs-lookup"><span data-stu-id="8fb91-148">Going back to the previous step</span></span>
 
-<span data-ttu-id="76f88-143">從 **探索功能**，混合現實功能工具可讓您流覽回專案選取專案。</span><span class="sxs-lookup"><span data-stu-id="76f88-143">From **Discover features**, the Mixed Reality Feature Tool allows for navigating back to project selection.</span></span> <span data-ttu-id="76f88-144">選取 **返回** 重新開機。</span><span class="sxs-lookup"><span data-stu-id="76f88-144">Select **Go back** to start again.</span></span>
+<span data-ttu-id="8fb91-149">從 **探索功能**，混合現實功能工具可讓您流覽回專案選取專案。</span><span class="sxs-lookup"><span data-stu-id="8fb91-149">From **Discover features**, the Mixed Reality Feature Tool allows for navigating back to project selection.</span></span> <span data-ttu-id="8fb91-150">選取 **返回** 重新開機。</span><span class="sxs-lookup"><span data-stu-id="8fb91-150">Select **Go back** to start again.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="76f88-145">另請參閱</span><span class="sxs-lookup"><span data-stu-id="76f88-145">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="8fb91-151">另請參閱</span><span class="sxs-lookup"><span data-stu-id="8fb91-151">See also</span></span>
 
-- [<span data-ttu-id="76f88-146">歡迎使用 Mixed Reality 功能工具</span><span class="sxs-lookup"><span data-stu-id="76f88-146">Welcome to the Mixed Reality Feature Tool</span></span>](welcome-to-mr-feature-tool.md)
-- [<span data-ttu-id="76f88-147">設定功能工具</span><span class="sxs-lookup"><span data-stu-id="76f88-147">Configuring the feature tool</span></span>](configuring-feature-tool.md)
-- [<span data-ttu-id="76f88-148">查看功能套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="76f88-148">Viewing feature package details</span></span>](viewing-package-details.md)
-- [<span data-ttu-id="76f88-149">匯入選取的封裝</span><span class="sxs-lookup"><span data-stu-id="76f88-149">Importing selected packages</span></span>](importing-features.md)
+- [<span data-ttu-id="8fb91-152">歡迎使用 Mixed Reality 功能工具</span><span class="sxs-lookup"><span data-stu-id="8fb91-152">Welcome to the Mixed Reality Feature Tool</span></span>](welcome-to-mr-feature-tool.md)
+- [<span data-ttu-id="8fb91-153">設定功能工具</span><span class="sxs-lookup"><span data-stu-id="8fb91-153">Configuring the feature tool</span></span>](configuring-feature-tool.md)
+- [<span data-ttu-id="8fb91-154">查看功能套件詳細資料</span><span class="sxs-lookup"><span data-stu-id="8fb91-154">Viewing feature package details</span></span>](viewing-package-details.md)
+- [<span data-ttu-id="8fb91-155">匯入選取的封裝</span><span class="sxs-lookup"><span data-stu-id="8fb91-155">Importing selected packages</span></span>](importing-features.md)
