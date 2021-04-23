@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: ebe7d32b236e28259b2ed9a7915bd337f84f8762
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 97169507e2b61110d2d16580ba957feff3755258
+ms.sourcegitcommit: aca5fddb98fbbd9aa22bdf8174d7fdcdb9d4c08a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088501"
+ms.lasthandoff: 04/22/2021
+ms.locfileid: "107894012"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
 
@@ -20,7 +20,7 @@ ms.locfileid: "106088501"
 ## <a name="prerequisites"></a>必要條件
 
 * Unity 2020.3 LTS 或更新版本
-* Unity OpenXR 外掛程式1.0.3 或更新版本
+* Unity OpenXR 外掛程式1.1.1 或更新版本
 * Visual Studio 2019 或更新版本
 * 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
 
