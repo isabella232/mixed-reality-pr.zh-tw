@@ -3,12 +3,12 @@ title: 疑難排解 Windows Mixed Reality
 description: 使用超過標準取用者支援檔的 Windows Mixed Reality 疑難排解來保持最新狀態。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援
-ms.openlocfilehash: 6e685aac0919d920f47c2bd8954706da79dbc8c4
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 2fbdb434eb3ccc0a327af990b4f4854faafbdf85
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009478"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944639"
 ---
 # <a name="troubleshooting-windows-mixed-reality-faqs"></a>疑難排解 Windows Mixed Reality (常見問題) 
 
@@ -16,7 +16,7 @@ ms.locfileid: "98009478"
 
 ## <a name="whats-new"></a>新功能！
 
-在接受新發行的 HP 回音（即耳機和控制器）後，我們為所有專案的專案編譯了一個 [專屬的常見問題頁面](reverbG2-faq.md) 。 本文涵蓋連接問題和影像清楚的所有問題，以及動畫控制器問題和混合現實的運作。
+在接受新發行的 HP 回音（即耳機和控制器）後，我們為所有專案的專案編譯了一個 [專屬的常見問題頁面](reverbG2-faq.yml) 。 本文涵蓋連接問題和影像清楚的所有問題，以及動畫控制器問題和混合現實的運作。
 
 ## <a name="troubleshooting-topics"></a>疑難排解主題
 
@@ -27,7 +27,7 @@ ms.locfileid: "98009478"
 針對安裝、執行 Windows Mixed Reality、安裝程式錯誤、最小電腦需求或系統管理員許可權的問題，請參閱下列兩個常見問題：
 
 - [安裝錯誤](installation_errors.md)
-- [安裝程式](wmr-setup-faq.md)
+- [安裝程式](wmr-setup-faq.yml)
 
 ### <a name="hardware-issues"></a>硬體問題
 
@@ -58,5 +58,5 @@ ms.locfileid: "98009478"
 
 - [效能](performance-questions.md)
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 - [其他問題](other-questions.md)

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: f373e0a55557fe38dfa598912296252293fa6d34
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223929"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944649"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -47,7 +47,7 @@ ms.locfileid: "106223929"
 |  Checkpoint  |  結果  |
 | --- | --- |
 | [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md) | 熟悉您在新的 VR 裝置上的控制器、空間界限、語音輸入和 Microsoft Edge |
-| [Windows Mixed Reality 安裝程式常見問題](wmr-setup-faq.md) | 在設定 Windows Mixed Reality 時，取得已知問題的解答和疑難排解協助 |
+| [Windows Mixed Reality 安裝程式常見問題](wmr-setup-faq.yml) | 在設定 Windows Mixed Reality 時，取得已知問題的解答和疑難排解協助 |
 | [健全狀況、安全性和緩和方針](wmr-health-safety-comfort.md) | 在使用您的耳機之前使用 Windows Mixed Reality 保持安全的建議  |
 
 ### <a name="3-using-windows-mixed-reality"></a>3. 使用 Windows Mixed Reality
@@ -68,7 +68,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可
 | [使用語音輸入](using-speech-in-wmr.md) | 熟悉可與3D 物件、應用程式行、[開始] 功能表和 Cortana 互動的不同語音命令 |
 
 > [!NOTE]
-> 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.md)**。
+> 如果上述任何功能發生問題，請參閱 **[使用 WINDOWS MIXED REALITY 常見問題](using-wmr-faq.yml)**。
 
 ## <a name="4-discover-apps-and-content"></a>4. 探索應用程式和內容
 

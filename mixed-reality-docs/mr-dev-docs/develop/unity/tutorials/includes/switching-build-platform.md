@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2a2dcb6ec9133eb5efa0dc04e4d757cabd48461a
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d7232ca645c2a8cfb2508b090fdb7ae02c2ab010
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327544"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984384"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Windows XR 外掛程式](#tab/winxr)
 
@@ -33,11 +33,13 @@ ms.locfileid: "107327544"
 在 [組建設定] 視窗中，選取 **通用 Windows 平臺** 和：
 1.  將 **目標裝置** 設定為 **HoloLens**
 2.  將 **架構** 設定為 **ARM 64**
-3.  將 **組建類型** 設定為 **D3D**
-4.  將 **最低平臺版本** 設定為 **10.0.18362**
-5.  將 **UWP SDK** 設定為 **最新安裝**
-6.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
-7.  按一下 [切換平臺] 按鈕
+3.  將 [組建類型] 設定為 [D3D 專案]
+4.  將 **目標 SDK 版本** 設為 **最新安裝**
+5.  將 **最低平臺版本** 設定為 **10.0.18362**
+6.  將 **Visual Studio 版本** 設為 **最新安裝**
+7.  設定 **組建並在** **USB 裝置** 上執行
+8.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
+9.  按一下 [切換平臺] 按鈕
 
 
 ![設定通用 Windows 平臺設定的 Unity 組建設定](../images/mr-learning-base/base-02-section2-step1-2-openxr.png)

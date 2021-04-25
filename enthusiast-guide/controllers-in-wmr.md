@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 960b26d16e9edd387eb94c469d45b0c669fadc10
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 66b352696016577ab121520102dd766b030ccf0e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580543"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944629"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的運動控制器
 
@@ -36,7 +36,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 > * 對於直接與您的電腦配對的控制器，您必須將它們開啟，然後按下電池區間內的配對按鈕，直到燈開始閃爍，以使其進入配對模式。
 > * 動作控制器一次只支援配對一台電腦。 如果您需要使用不同的耳機，您需要經過配對程式。 請參閱 [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
-[取得連接説明](wmr-setup-faq.md#my-motion-controllers-arent-working)
+[取得連接説明](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **有 Xbox 控制器嗎？**
@@ -94,7 +94,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 |  作法  |  運動控制器  | 遊戲台 | 滑鼠 + 鍵盤 |
 | --- | --- | --- | --- |
 | 傳送 | 按下操縱杆，然後將控制器指向您要前往的位置。 釋放操縱杆。 | 將左側的操縱杆向前按，然後查看您想要前往的位置。 釋放操縱杆。 | 選取並按住右鍵，然後將滑鼠指向您要前往的位置。 放開按鈕。 |
-| Select | 指向控制器，然後提取觸發程式或使用觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
+| 選取 | 指向控制器，然後提取觸發程式或使用觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
 | 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按下 **Windows 標誌鍵**。 |
 | 離開沉浸式應用程式 | 按下 [ **Windows** ] 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ]。 | 按下 **Xbox** 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ] 按鈕。 | 按 * * Windows 標誌鍵。 然後，在顯示的 [快速動作] 功能表上選取 [ **混合現實首頁** ] 按鈕。 |
 | Rotate | 將操縱杆向左或向右移動。 | 將右邊的向左或向右移動。 | 不適用。 |

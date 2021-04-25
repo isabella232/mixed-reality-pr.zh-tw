@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 101061f69fcd4bd3885aa265f32ba2a8f93bf3dc
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 93ab38108d5ad557d61ad366ebb7aebd8cb65ab7
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550128"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944700"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
@@ -28,6 +28,7 @@ ms.locfileid: "105550128"
 * 優化的空間介面網格傳輸，可透過遠端應用程式的 [SpatialSurfaceObserver](/uwp/api/windows.perception.spatial.surfaces.spatialsurfaceobserver) 來進行查詢。
 * 修正呼叫 SpatialAnchorManager 方法或釋出錨點在中斷連接時造成例外狀況的問題。
 * 修正關閉 PlayerCoNtext 或 RemoteCoNtext 實例時，導致損毀的執行緒問題。
+* 桌上型電腦上的全像遠端播放機：未安裝 Windows Mixed Reality 時顯示錯誤訊息，而不是以無訊息方式關閉。
 * 許多其他 bug 修正和穩定性改進。
 
 ## <a name="version-241-january-22-2021"></a>版本 2.4.1 (2021 年1月22日) <a name="v2.4.1"></a>

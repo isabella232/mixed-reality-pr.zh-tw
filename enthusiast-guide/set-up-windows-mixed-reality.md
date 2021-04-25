@@ -3,12 +3,12 @@ title: 設定 Windows Mixed Reality
 description: 如何設定您的 Windows Mixed Reality 動作控制器、語音和音訊，以及定義安全播放空間的房間界限。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、入門、設定、移動控制器、控制器、語音、音訊、站上、站上、界限、圖形驅動程式、Microsoft Edge、chromium
-ms.openlocfilehash: 8cd313651665fe2e50deb21e2ba2434883dc873a
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: a08982112fea4d1b67b690233ae387b76afc2f90
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725939"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944749"
 ---
 # <a name="set-up-windows-mixed-reality"></a>設定 Windows Mixed Reality
 
@@ -177,12 +177,12 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 第二次進入混合的事實很容易，因為它會在連線到您的電腦時重新開啟耳機。 您也可以從 [開始] 功能表開啟混合實境入口的應用程式，藉以手動啟動該應用程式。 當您放置輸入和音訊時，輸入和音訊會自動路由傳送到耳機，您也可以按鍵盤上的 **Windows + Y** 手動觸發。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
 * [安裝疑難排解](installation_errors.md)
-* [疑難排解設定](wmr-setup-faq.md)
+* [疑難排解設定](wmr-setup-faq.yml)
 * [學習混合實境](learn-mixed-reality.md)
 * [運動控制器](controllers-in-wmr.md)
 * [內外追蹤的運作方式](tracking-system.md)

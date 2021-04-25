@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 63a1435c1a0e01ef3bf8fbcedb175a16035db65b
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 7c86356a960929839f36cf326c5dd1a1005e64d2
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088651"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984353"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Windows XR 外掛程式](#tab/winxr)
 
@@ -39,7 +39,7 @@ ms.locfileid: "106088651"
 
 ![MixedRealityFeatureTool](../images/mr-learning-base/base-02-section4-step1-2.png)
 
-在 [ **功能 Seetings**] 底下，選取 [ **包含預覽版本** ] 方塊，然後按一下 [ **確定]** 按鈕。
+在 [ **功能設定**] 下，選取 [ **包含預覽版本** ] 方塊，然後按一下 [ **確定]** 按鈕。
 
 ![MixedRealityFeatureTool 設定視窗](../images/mrft-settings.png)
 

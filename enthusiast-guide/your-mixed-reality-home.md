@@ -3,12 +3,12 @@ title: 您的混合實境首頁
 description: 如何在 Windows Mixed Reality 首頁內流覽和傳送、啟動應用程式和遊戲、個人化首頁，以及變更視覺效果、音訊和語音設定。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲
-ms.openlocfilehash: 4fd4fb70edf9aadb9b34187f4d8fd421ca1e8a95
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 440660b12b92e0c818cd3601be486d6fd1dfdb92
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725539"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944689"
 ---
 # <a name="your-windows-mixed-reality-home"></a>您的 Windows Mixed Reality 首頁
 
@@ -82,9 +82,9 @@ Windows Mixed Reality 首頁包含空間音效模擬，其中每個應用程式�
 > [!NOTE]
 > 這項功能會在具有整合式圖形的電腦上停用，因為它會放置在 GPU 上。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
-* [疑難排解 Windows Mixed Reality 首頁](wmr-setup-faq.md#my-motion-controllers-arent-working)
+* [疑難排解 Windows Mixed Reality 首頁](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 * [在 Windows Mixed Reality 中使用遊戲和應用程式](using-games-and-apps-in-windows-mixed-reality.md)
 * [內外追蹤的運作方式](tracking-system.md)
 * [運動控制器的運作方式](controllers-in-wmr.md)

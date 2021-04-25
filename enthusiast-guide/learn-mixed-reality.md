@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，教學課程，開始使用
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2cbfb171065b0f2cf616348194b286e37159d425
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 9210f9bb7dd4c922c0d202ddc114beab60e66de8
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726049"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944729"
 ---
 # <a name="learn-mixed-reality"></a>學習混合實境
 
@@ -51,8 +51,8 @@ ms.locfileid: "97726049"
 
 直接按混合實境入口應用程式底部的 **播放** 圖示。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [安裝疑難排解](installation_errors.md)
-* [疑難排解設定](wmr-setup-faq.md)
+* [疑難排解設定](wmr-setup-faq.yml)
 * [您的混合實境首頁](your-mixed-reality-home.md)

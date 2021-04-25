@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 2b0dc328a1a47d9a0bd385cac6a88563dcc3938d
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: d8d46da1a1a095074f059b53ebd997e1b6f89961
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107327518"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107984476"
 ---
 # <a name="unity-20192020--windows-xr-plugin"></a>[Unity 2019/2020 + Windows XR 外掛程式](#tab/winxr)
 
@@ -60,13 +60,13 @@ Unity 完成安裝 XR 外掛程式管理之後。 確定您處於通用 Windows 
 
 ![使用新增 OpenXR 和 Microsoft HoloLens 功能的 Unity XR 設定 selectedd](../images/mr-learning-base/base-02-section5-step2-2-1-openxr.png)
 
-在畫面頂端的功能表列中，流覽至 **Mixed Reality> OpenXR > 套用適用于 HoloLens 2 的建議專案設定** ，以取得更佳的應用程式效能。
-
-![混合的現實功能表與 OpenXR，並針對選取的 HoloLens 2 套用建議的專案設定](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
-
 >[!Important]
 >如果您在 OpenXR 外掛程式旁邊看到紅色警告圖示 (Preview) ，請按一下圖示並選取 [全部修正]，然後再繼續。 Unity 編輯器可能需要自行重新開機，變更才會生效。
 >![OpenXR 專案驗證功能表，其中已選取要修正的所有問題。](../images/mr-learning-base/base-02-section5-step2-openxr-3.png)
+
+在畫面頂端的功能表列中，流覽至 **Mixed Reality> OpenXR > 套用適用于 HoloLens 2 的建議專案設定** ，以取得更佳的應用程式效能。
+
+![混合的現實功能表與 OpenXR，並針對選取的 HoloLens 2 套用建議的專案設定](../images/mr-learning-base/base-02-section5-step2-openxr-2.png)
 
 Unity 完成匯入必要的檔案之後，[MRTK 專案配置器] 視窗應該會再次出現。 如果沒有出現，請使用 Unity 功能表開啟。
 

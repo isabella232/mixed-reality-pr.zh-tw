@@ -8,18 +8,18 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9c1863a3fb0c7d8681f82aa6e0d93400bef578c9
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
+ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007668"
+ms.lasthandoff: 04/24/2021
+ms.locfileid: "107944675"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中使用語音
 
 您可以使用語音來加快 Windows Mixed Reality 的速度。 拍攝快速的相片、開啟應用程式，甚至是沒有控制器的 teleporting，都只是一個字。 若要輕鬆地輸入，請在混合現實鍵盤上嘗試聽寫模式。 
 
-遇到語音問題嗎？ [取得協助](using-wmr-faq.md#speech-commands-arent-working)
+遇到語音問題嗎？ [取得協助](using-wmr-faq.yml#speech-commands-aren-t-working)
 
 <!-- NEED VIDEO: https://support.microsoft.com/en-us/help/4041322/windows-10-speech-in-windows-mixed-reality -->
 
@@ -38,7 +38,7 @@ ms.locfileid: "98007668"
 
 | 作法 | 請說這個 |
 | --- | --- |
-| Select | 說「選取」以顯示注視游標。 然後，將游標移至您要選取的內容，然後再按一次 [選取]。 |
+| 選取 | 說「選取」以顯示注視游標。 然後，將游標移至您要選取的內容，然後再按一次 [選取]。 |
 | 開啟 [開始] 功能表 | 移至 [開始] |
 | 離開沉浸式應用程式 | 說「移至開始」以顯示 [快速動作] 功能表，然後說「Mixed reality home」。 |
 | 開啟/關閉 [開] | 說「移至開始」以顯示 [快速動作] 功能表，然後說「Mixed reality home」。 |
@@ -152,7 +152,7 @@ ms.locfileid: "98007668"
 
 若要停止聽寫，請選取 [ **完成**]。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)
