@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、說明、支援、動作控制器
 appliesto:
 - Windows 10
-ms.openlocfilehash: 372e9ca294e7b65d3450e76b1dbd826a7b5b736b
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: cf45794d5c5c6c790578e76be4b222d851b5a73c
+ms.sourcegitcommit: 229c33afab7c70341982f48962028aad13956356
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726029"
+ms.lasthandoff: 04/27/2021
+ms.locfileid: "108069192"
 ---
 # <a name="motion-controller-faqs"></a>移動控制器常見問題
 
@@ -21,7 +21,7 @@ ms.locfileid: "97726029"
 
 LED constellation 環形和 haptics 指出移動控制器的狀態。
 
-| 州    | 與狀態相關聯的行為 | 如何進入/離開狀態 |
+| 狀態    | 與狀態相關聯的行為 | 如何進入/離開狀態 |
 |----------------------------|-----------------------------|----------------------------------------------------------------------|
 | **開啟電源**               | Led 會開啟和控制器震動一次。 | 按住控制器上的 Windows 按鈕兩秒，以開啟控制器。  |
 | **關閉電源**              |  Led 關閉和控制器震動兩次。 | 按住控制器上的 Windows 按鈕四秒，關閉控制器。   |
@@ -90,11 +90,9 @@ LED constellation 環形和 haptics 指出移動控制器的狀態。
 如果您可以在懸崖之屋中看到您的控制器，但不在 SteamVR 應用程式和遊戲中，則可能無法正確安裝移動控制器模型驅動程式。 若要檢查是否已正確安裝移動控制器模型驅動程式：
 
 1. 開啟這兩個動作控制器。 檢查是否已 [正確配對](controllers-in-wmr.md#pair-motion-controllers)您的運動控制器。
-2. 移至 **裝置管理員 > 藍牙** ，並尋找「移動控制器」。
-3. 選取裝置，然後移至 [ **依連接查看 > 裝置**]。
-4. 移至 [ **系統設定] > 裝置 > 藍牙 & 其他裝置 > 其他裝置** 以查看是否可見。 將會有兩個「Bluetooth HID 裝置」裝置，而且在每個藍牙隱藏裝置下都應該是名為「移動控制器」的裝置 (，並在與運動控制器相同的節點中) 灰色圖示。
-5. 按兩下每個「移動控制器」裝置，然後移至 [驅動程式] 索引標籤。確認列出的驅動程式版本對應到其中一個 [版本](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history)。
-6. 如果不是，請執行 Windows Update，這會自動下載並安裝驅動程式。 如果您是在具有企業原則的電腦上，或者如果 Windows Update 其他限制，則可能需要手動安裝動作控制器模型驅動程式。 若要這樣做，請造訪 [此頁面](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) ，並尋找與您的 Windows 10 版本對應的驅動程式版本。 您可以從下載頁面取得安裝指示。
+2. 移至 **裝置管理員 > 的人體介面裝置** ，並尋找「移動控制器」。
+3. 按兩下每個「移動控制器」裝置，然後移至 [驅動程式] 索引標籤。確認列出的驅動程式版本對應到其中一個 [版本](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history)。
+4. 如果驅動程式版本不相符，或找不到名為「移動控制器」的裝置，請執行 Windows Update。  這將會自動下載並安裝驅動程式。 如果您是在具有企業原則的電腦上，或者如果 Windows Update 其他限制，則可能需要手動安裝動作控制器模型驅動程式。 若要這樣做，請造訪 [此頁面](mixed-reality-software.md#mixed-reality-motion-controller-model-driver-release-history) ，並尋找與控制器硬體對應的驅動程式版本。 您可以從下載頁面取得安裝指示。
 
 ## <a name="the-controller-firmware-update-takes-longer-than-two-minutes"></a>控制器固件更新花費的時間超過2分鐘
 
