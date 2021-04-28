@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 85a203f22c62871265f7775c364f5388194b53a1
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6576eaedbfba11fae62e59fa9777fe928f0c6a69
+ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550968"
+ms.lasthandoff: 04/28/2021
+ms.locfileid: "108172560"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -26,32 +26,31 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 * 提供 **空間互動和 UI 的跨平臺輸入系統和建立區塊**。
 * 透過可讓您立即查看變更的編輯器內模擬，讓您能夠 **快速建立原型** 。
 * 以可擴充的 **架構** 運作，讓開發人員能夠交換核心元件。
-* **支援多種平臺**，包括
-  * OpenXR (Unity 2020.2 或更新版本) 
-    * Microsoft HoloLens 2
-    * Windows Mixed Reality 頭戴式裝置
-  * Windows Mixed Reality
-    * Microsoft HoloLens
-    * Microsoft HoloLens 2
-    * Windows Mixed Reality 頭戴式裝置
-  * Oculus (Unity 2019.3 或更新版本) 
-    * Oculus 的追求
-  * OpenVR
-    * Windows Mixed Reality 頭戴式裝置
-    * HTC Vive
-    * Oculus Rift
-  * Ultraleap 手部追蹤
-  * IOS 和 Android 等行動裝置
+* **支援多種平臺**：
+
+| 平台 | 支援的裝置 |
+|---|---|
+| OpenXR (Unity 2020.2 或更新版本)  | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置  |
+| Oculus (Unity 2019.3 或更新版本)  | Oculus 的追求 |
+| OpenVR |  Windows Mixed Reality 頭戴式裝置 <br> HTC Vive <br> Oculus Rift |
+| Ultraleap 手部追蹤 | Ultraleap Leap 移動控制器 |
+| 行動 | iOS 與 Android |
 
 ## <a name="getting-started-with-mrtk"></a>開始使用 MRTK
 
-如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您安裝必要的工具，然後遵循 HoloLens 2 的教學課程系列。
+如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您在裝置或模擬器上安裝和探索 MRTK 範例中樞範例應用程式。 
 
 > [!div class="nextstepaction"]
-> [安裝工具](install-the-tools.md)
+> [下載 MRTK 範例中樞應用程式](running-examples-hub.md)
+
+一旦您有了混合現實和 MRTK 所提供的功能，請安裝必要的工具，並遵循我們的初學者層級 HoloLens 2 教學課程系列。
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 教學課程系列](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [安裝工具](https://docs.microsoft.com/windows/mixed-reality/develop/install-the-tools?tabs=unity)
+
+> [!div class="nextstepaction"]
+> [HoloLens 2 教學課程系列](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 想要看看幕後的進展嗎？
 > [!div class="nextstepaction"]
@@ -59,7 +58,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="documentation"></a>文件
 
-| [![版本資訊](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[版本資訊](release-notes/mrtk-26-release-notes.md)| [![MRTK 總覽](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 總覽](architecture/overview.md)|[![應用程式開發介面參考](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 參考](/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![版本資訊](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[版本資訊](release-notes/mrtk-26-release-notes.md)| [![MRTK 總覽](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 總覽](architecture/overview.md)|[![API 參考](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 參考](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## <a name="build-status"></a>組建狀態
