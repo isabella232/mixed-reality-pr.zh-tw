@@ -6,18 +6,18 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: vr、硬體、規格、規格、技術、感應器、光學、顯示器、混合現實耳機、虛擬實境耳機、何謂虛擬實境、沉浸式耳機
-ms.openlocfilehash: c4c6457f3a32994dc242f603c48fe90eb8194ed0
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: a8febeb10dde40cbb4faba49881ee156544d698f
+ms.sourcegitcommit: 9ab1d2de03bb046bb73bddbaa38907d0890f6e66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757706"
+ms.lasthandoff: 04/30/2021
+ms.locfileid: "108293546"
 ---
 # <a name="immersive-headset-hardware-details"></a>沉浸式頭戴裝置硬體詳細資料
 
 ![各種 Windows Mixed Reality 耳機](images/MR-headsets.png)
 
-您可以從各種全球零售商購買任何公開可用的 Windows Mixed Reality 沉浸式耳機。 您也可以在 [線上 Microsoft Store](https://www.microsoft.com/store/collections/VRandMixedrealityheadsets)找到耳機，這些都可以用於混合的現實開發。 這些沉浸式耳機可提供內建的內建追蹤功能，這表示您不需要購買或安裝外部追蹤器，或將感應器放在牆上。 沒有複雜的設定，只是「隨插即用」。
+您可以從各種全球零售商購買任何公開可用的 Windows Mixed Reality 沉浸式耳機。 您也可以在 [線上 Microsoft Store](https://www.microsoft.com/en-us/store/collections/AR-MR-VRheadsets)找到耳機，這些都可以用於混合的現實開發。 這些沉浸式耳機可提供內建的內建追蹤功能，這表示您不需要購買或安裝外部追蹤器，或將感應器放在牆上。 沒有複雜的設定，只是「隨插即用」。
 
 ## <a name="device-specifications"></a>裝置規格
 
