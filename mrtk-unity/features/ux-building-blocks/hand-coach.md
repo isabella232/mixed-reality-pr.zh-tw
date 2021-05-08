@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b2b84ff5b5b5ba1d308391350733f3dc405f7b17
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8b4069f25692c4058c912ccd06ae678d67882fcd
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689288"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489268"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -31,11 +31,11 @@ ms.locfileid: "104689288"
 
 ## <a name="example-scene"></a>範例場景
 
-您可以在以下的 **HandCoachExample** 場景中找到範例： [MixedRealityToolkit. 範例/實驗/HandCoach/場景](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/HandCoach/Scenes)
+您可以在以下的 **HandCoachExample** 場景中找到範例： [MixedRealityToolkit. 範例/實驗/HandCoach/場景](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach/Scenes)
 
 ## <a name="hand-3d-assets"></a>手上立體資產
 
-您可以在下列檔中找到資產： [MixedRealityToolkit. SDK/實驗/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/HandCoach)
+您可以在下列檔中找到資產： [MixedRealityToolkit. SDK/實驗/HandCoach](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/HandCoach)
 
 ## <a name="quality"></a>品質
 

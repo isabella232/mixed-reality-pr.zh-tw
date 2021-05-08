@@ -141,7 +141,7 @@
     - name: 學習 Unity
       href: 'https://learn.unity.com/'
     - name: 混合實境工具組
-      href: 'https://github.com/Microsoft/MixedRealityToolkit-Unity'
+      href: 'https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/'
     - name: 混合實境設計實驗室
       href: 'https://github.com/microsoft/MixedRealityDesignLabs_Unity'
     - name: Microsoft Maquette

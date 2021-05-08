@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Bug 報告、
-ms.openlocfilehash: ccfacf87a4b3bad3adca965533b73ee50a51385f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 525e704ae2f09580c8c19ca7e8a25dad4aed2647
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693355"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489258"
 ---
 # <a name="contributing"></a>參與
 
@@ -45,7 +45,7 @@ ms.locfileid: "104693355"
 若要開始，只要遵循下列步驟即可：
 
 1. 分叉存放庫。 按一下頁面右上方的 [分支] 按鈕，然後遵循流程。
-1. 在您的分叉中建立分支 (從 [mrtk_development](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/mrtk_development) 分支) ，讓您能夠更輕鬆地隔離任何變更，直到準備好提交為止。 針對舊版 HoloToolkit，請使用 [htk_development](https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_development) 分支。
+1. 在您的分支中建立分支 (從 [主要](https://github.com/microsoft/mixedrealitytoolkit-unity/tree/main) 分支) ，讓您可以更輕鬆地隔離任何變更，直到準備好提交為止。 若要在發行穩定期間內修正錯誤，請尋找最新的 `prerelease/*` 分支。 新功能應該隨時進入 `main` 。
 
 如果您不熟悉 Git 工作流程，請 [參閱 Github 的簡介](https://guides.github.com/activities/hello-world/)。
 

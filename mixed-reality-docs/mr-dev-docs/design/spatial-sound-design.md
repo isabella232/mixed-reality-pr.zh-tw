@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/02/2019
 ms.topic: article
 keywords: Windows Mixed Reality、空間音效、設計、樣式、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、手勢、互動、衰減
-ms.openlocfilehash: fe77d62bcdfc67579deee619fc7f4949676aaed6
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: d51fbdf16d7186c386f124c773f75dacc8c157fd
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848182"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489208"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>如何在混合現實應用程式中使用音效
 
@@ -52,8 +52,8 @@ ms.locfileid: "97848182"
 ### <a name="gesture-interactions"></a>手勢互動
 
 在混合的現實情況下，使用者可以使用滑鼠與按鈕互動。 按鈕動作通常會在使用者釋放時，而不是按下按鈕來讓使用者有機會取消互動。 使用音效來強化這些階段。 若要協助使用者以較遠的按鈕為目標，也請考慮使用指標停留音效。
-* 按鈕-按下聲音應該是簡短的 tactile 「按一下」。<br/>範例： [MRTK_ButtonPress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* 按鈕-"unpress" 音效應該有類似的 tactile 風格。 比按音效更高的音調會強調完成的意義。<br/>範例： [MRTK_ButtonUnpress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* 按鈕-按下聲音應該是簡短的 tactile 「按一下」。<br/>範例： [MRTK_ButtonPress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* 按鈕-"unpress" 音效應該有類似的 tactile 風格。 比按音效更高的音調會強調完成的意義。<br/>範例： [MRTK_ButtonUnpress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 * 若為暫止音效，請考慮使用微妙且不危險的音效，例如低頻率的 thud 或凹凸效果。
 
 ### <a name="direct-manipulation"></a>直接操作
@@ -61,12 +61,12 @@ ms.locfileid: "97848182"
 在 HoloLens 2 上，可說的手追蹤支援直接操作使用者介面元素。 當沒有其他實體意見反應時，音效就很重要。
 
 *按鈕的按* 音效很重要，因為當使用者到達按鍵筆劃的底部時，不會收到任何其他指示。 關鍵旅遊的音效指標可能很小、微妙且 pixels occluded。 如同手勢互動，按下按鈕應該會得到短暫的 tactile 音效，像是按一下。 Unpresses 應該會有類似的點擊音效，但卻有凸起的音調。
-* 範例： [MRTK_ButtonPress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
-* 範例： [MRTK_ButtonUnpress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
+* 範例： [MRTK_ButtonPress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonPress.wav)
+* 範例： [MRTK_ButtonUnpress .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_ButtonUnpress.wav)
 
 很難以視覺化方式確認抓取或發行動作。 使用者的手通常會是任何視覺效果，而主體的物件缺乏真實的視覺類比「抓取」。 音效可以有效地傳達成功的抓取和發行互動。
-* 抓取動作應該有簡短、有點 muffled 的 tactile 音效，以提示在物件周圍關閉手指的概念。 有時候也有一個「竊竊私語」音效，會導致抓取音效傳達手中的動作。<br/>範例： [MRTK_Move_Start .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
-* 發行動作應該會得到類似的簡短和 tactile 音效。 它通常會比抓取音效更低，而反向順序則會有影響，然後是「竊竊私語」，以傳達物件正在進行的程式。<br/>範例： [MRTK_Move_End .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
+* 抓取動作應該有簡短、有點 muffled 的 tactile 音效，以提示在物件周圍關閉手指的概念。 有時候也有一個「竊竊私語」音效，會導致抓取音效傳達手中的動作。<br/>範例： [MRTK_Move_Start .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_Start.wav)
+* 發行動作應該會得到類似的簡短和 tactile 音效。 它通常會比抓取音效更低，而反向順序則會有影響，然後是「竊竊私語」，以傳達物件正在進行的程式。<br/>範例： [MRTK_Move_End .wav](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Audio/MRTK_Move_End.wav)
 
 *繪圖* 互動應該會以使用者的移動量來取得持續的迴圈音效。 當使用者的手仍在移動時，當手 loudest 時，它應該是無訊息的。
 
@@ -121,7 +121,7 @@ Spatialization 會帶來一些 CPU 成本。 許多應用程式都有兩個同�
 
 使用耳機或 HoloLens 喇叭， (以) 為基礎的 spatialization 技術，請使用前端相關的轉移功能。 這些技術會針對實體世界中的標頭，建立音效傳播的模型。 即使音效來源位於某一端的一端，音效也會隨著衰減和延遲而散佈到遙遠的 ear。 說話者的移動只依賴衰減，並且在當音效位於右邊時，在左方的 ear 中套用總衰減。 這項技術對於「一般聽力」接聽程式很不舒服，而且在一個 ear 中有聽力障礙的接聽程式無法存取。
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 * [在 Unity 中使用空間音效](../develop/unity/spatial-sound-in-unity.md)
 * [Roboraid 案例研究](case-study-using-spatial-sound-in-roboraid.md)

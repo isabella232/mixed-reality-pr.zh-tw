@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: 1c72306bd1026bc4692be6f10283eeefcedf2a53
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 51a485ff258ceafb8841ff1b86e715b1623f3255
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550788"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489238"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>在 MRTK 中撰寫和執行測試
 
@@ -60,7 +60,7 @@ MRTK 會使用 [unity Test Runner](https://docs.unity3d.com/Manual/testing-edito
 
 MRTK 的 CI 將會建立所有設定的 MRTK，並執行所有的編輯和播放模式測試。 如果使用者有足夠的許可權，就可以藉由在 github PR 上張貼批註來觸發 CI `/azp run mrtk_pr` 。 CI 執行可在 PR 的 [檢查] 索引標籤中看到。
 
-只有在成功通過所有測試之後，才可以將 PR 合併到 mrtk_development 中。
+只有在成功通過所有測試之後，才可以將 PR 合併到 main 中。
 
 ### <a name="stress-tests--bulk-tests"></a>壓力測試/大量測試
 

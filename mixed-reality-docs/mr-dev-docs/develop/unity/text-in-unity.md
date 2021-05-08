@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、控制項、字型、印刷樣式、ui、ux、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: da2932234793a6db160d3bc2bd6dba02318c83bd
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: dde8989998cf422c40ada927c0d8462cb4cd97b9
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010489"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489278"
 ---
 # <a name="text-in-unity"></a>Unity 中的文字
 
@@ -59,6 +59,7 @@ Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100%
 *調整 Unity 3D 文字和 UI 的值*
 
 ## <a name="recommended-text-size"></a>建議的文字大小
+
 如您所見，我們在電腦或 (平板電腦上使用的類型大小，通常是在12–32pt 填補) 在兩個度量之間的距離，通常介於12到。 這取決於每個字型的特性，但在一般情況下，建議的最小觀賞角度和字型高度會根據我們的使用者研究研究，在0.35 °-0.4 °/12.21 13.97 mm 周圍。 這大約是 35-40 pt 和上面介紹的縮放比例。
 
 針對在 0.45 m (45 cm) 的近距離互動，最小的可辨認字型的觀賞角度和高度是0.4 °-0.5 °/3.14 – 3.9 mm。 這大約是 9-12 pt 和上面介紹的縮放比例。
@@ -67,6 +68,7 @@ Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100%
  *內容*
 
 ### <a name="the-minimum-legible-font-size"></a>最小清晰度的字型大小
+
 | 距離 | 視角 | 文字高度 | 字型大小 |
 |---------|---------|---------|---------|
 | 45 cm (直接操作距離)  | 0.4 °-0.5 ° | 3.14 –3.9 分鐘 | 8.9 – 11.13 pt |
@@ -74,6 +76,7 @@ Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100%
 
 
 ### <a name="the-comfortably-legible-font-size"></a>方便閱讀的字型大小
+
 | 距離 | 視角 | 文字高度 | 字型大小 |
 |---------|---------|---------|---------|
 | 45 cm (直接操作距離)  | 0.65 °-0.8 ° | 5.1-6.3 mm | 14.47-17.8 pt |
@@ -88,21 +91,21 @@ Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 不
 
 ### <a name="sharp-text-rendering-quality-with-proper-dimension"></a>具有適當維度的清晰文字轉譯品質
 
-根據這些調整因素，我們 [使用了 UI 文字和3D 文字網格來建立文字 prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)。 開發人員可以使用這些 prefabs 來取得清晰的文字和一致的字型大小。
+根據這些調整因素，我們 [使用了 UI 文字和3D 文字網格來建立文字 prefabs](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)。 開發人員可以使用這些 prefabs 來取得清晰的文字和一致的字型大小。
 
 ![具有適當維度的清晰文字轉譯品質](images/hug-text-06-1000px.png)<br>
 *具有適當維度的清晰文字轉譯品質*
 
 ### <a name="shader-with-occlusion-support"></a>具有遮蔽支援的著色器
 
-Unity 的預設字型材質不支援遮蔽。 因此，根據預設，您會看到物件後面的文字。 我們已包含 [支援遮蔽的簡單著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader)。 下圖顯示具有預設字型材質 (左) 的文字，以及具有適當遮蔽 (右邊) 的文字。
+Unity 的預設字型材質不支援遮蔽。 因此，根據預設，您會看到物件後面的文字。 我們已包含 [支援遮蔽的簡單著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Shaders/Text3DShader.shader)。 下圖顯示具有預設字型材質 (左) 的文字，以及具有適當遮蔽 (右邊) 的文字。
 
 ![具有遮蔽支援的著色器](images/hug-text-07-1000px.png)<br>
 *具有遮蔽支援的著色器*
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 您可以從這裡繼續進行下一個組建區塊：
+如果您是遵循我們所配置的 Unity 開發旅程，您將會在探索 MRTK 核心構成要素的過程中進行。 接下來，您可以繼續進行下一個建置組塊：
 
 > [!div class="nextstepaction"]
 > [語音輸入](voice-input-in-unity.md)
@@ -114,7 +117,7 @@ Unity 的預設字型材質不支援遮蔽。 因此，根據預設，您會看�
 
 您可以隨時回到 [Unity 開發檢查點](unity-development-overview.md#2-core-building-blocks)。
 
-
 ## <a name="see-also"></a>另請參閱
-* [MRTK 中的文字預製專案](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
+
+* [MRTK 中的文字預製專案](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/SDK/StandardAssets/Prefabs/Text)
 * [印刷樣式](../../design/typography.md)

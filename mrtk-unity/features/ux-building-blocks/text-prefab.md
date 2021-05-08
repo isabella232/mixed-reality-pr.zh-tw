@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、TMP、
-ms.openlocfilehash: 2428e6d91f9e3ab7267e5b7f26712f4a054a3b20
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 7d50a35e3761cf2313a43fcc6ad43ed5bd3064a1
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550358"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489288"
 ---
 # <a name="text-prefab"></a>文字預製專案
 
@@ -67,12 +67,12 @@ Unity 會假設新增至場景的所有新元素都是1個 Unity 單位，或100
 
 ![具有縮放比例的字型大小](../images/text-prefab/TextPrefabInstructions07.png)
 
-### <a name="text3dselawikmat"></a>[Text3DSelawik](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/StandardAssets/Materials/)
+### <a name="text3dselawikmat"></a>[Text3DSelawik](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/StandardAssets/Materials/)
 
 具有遮蔽支援的3DTextPrefab 教材。 需要3DTextShader
 
 ![預設字型材質與3DTextSegoeUI 材質](../images/text-prefab/TextPrefabInstructions06.png)
 
-### <a name="text3dshadershader"></a>[Text3DShader 著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/StandardAssets/Shaders)
+### <a name="text3dshadershader"></a>[Text3DShader 著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/StandardAssets/Shaders)
 
 具有遮蔽支援之3DTextPrefab 的著色器。

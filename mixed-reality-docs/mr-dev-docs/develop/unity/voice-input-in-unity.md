@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: c062289a1a26365528a86761b6b68a9a24041f7c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 6b040443606e05843f85b2f74f5ea812daafba31
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550378"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489198"
 ---
 # <a name="voice-input-in-unity"></a>Unity 中的語音輸入
 
@@ -299,8 +299,8 @@ PhraseRecognitionSystem.Restart();
 ## <a name="voice-input-in-mixed-reality-toolkit"></a>混合現實工具組中的語音輸入
 
 您可以在下列示範場景中找到語音輸入的 MRTK 範例：
-* [聽寫](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
-* [語音](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
+* [聽寫](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Input/Scenes/Dictation)
+* [語音](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/Input/Scenes/Speech)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

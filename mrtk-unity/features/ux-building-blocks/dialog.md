@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: d1728d3e0efd30138697c4c2488e8f488f681242
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 729c3f6a6b9bc63a498c5d76205a0730f52c678a
+ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689298"
+ms.lasthandoff: 05/07/2021
+ms.locfileid: "109489188"
 ---
 # <a name="dialog"></a>對話
 
@@ -20,7 +20,7 @@ ms.locfileid: "104689298"
 
 ## <a name="example-scene"></a>範例場景
 
-您可以在 **DialogExample** 場景的 [ [MRTK/範例]/[示範]/[UX/] 對話方塊](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_development/Assets/MRTK/Examples/Demos/UX/Dialog)中找到範例。
+您可以在 **DialogExample** 場景的 [ [MRTK/範例]/[示範]/[UX/] 對話方塊](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MRTK/Examples/Demos/UX/Dialog)中找到範例。
 
 ## <a name="how-to-use-dialog-control"></a>如何使用對話方塊控制項
 

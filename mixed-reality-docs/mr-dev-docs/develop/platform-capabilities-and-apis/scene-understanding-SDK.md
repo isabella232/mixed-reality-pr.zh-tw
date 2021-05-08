@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 2a1bf87ae4ce13b47d373f44e398d02382674fe7
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810139"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644834"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -19,17 +19,13 @@ ms.locfileid: "98810139"
 
 ## <a name="where-do-i-get-the-sdk"></a>哪裡可以取得 SDK？
 
-您可以透過 NuGet 下載 SceneUnderstanding SDK。
-
-[SceneUnderstanding SDK](https://www.nuget.org/packages/Microsoft.MixedReality.SceneUnderstanding/)
+SceneUnderstanding SDK 可透過 [混合現實功能工具](../unity/welcome-to-mr-feature-tool.md)下載。
 
 **注意：** 最新版本取決於預覽套件，您將需要啟用發行前版本的套件才能看到它。
 
 針對 0.5.2022 rc 和更新版本，場景理解支援 c # 和 c + + 的語言投影，讓應用程式開發 Win32 或 UWP 平臺的應用程式。 從這個版本開始，SceneUnderstanding 支援支援 unity 的編輯器支援，而禁止使用 SceneObserver，這僅用於與 HoloLens2 通訊。 
 
 SceneUnderstanding 需要 Windows SDK 18362 版或更高版本。 
-
-如果您是在 Unity 專案中使用 SDK，請使用 [適用于 unity 的 NuGet](https://github.com/GlitchEnzo/NuGetForUnity) 將套件安裝到您的專案中。
 
 ## <a name="conceptual-overview"></a>概觀說明
 
@@ -117,7 +113,7 @@ SceneObjects 可以有下列任何一項：
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>描述</th>
+<th>SceneObjectKind</th> <th>Description</th>
 </tr>
 <tr><td>背景</td><td>已知 SceneObject <b>不</b> 是其他可辨識的場景物件類型之一。 此類別不應與未知的情況混淆，因為背景已知不是牆壁/樓層/上限等 .。。雖然不明尚未分類。</b></td></tr>
 <tr><td>牆</td><td>實體牆。 牆會假設為 immovable 環境結構。</td></tr>
@@ -167,7 +163,7 @@ if (!SceneObserver.IsSupported())
 await SceneObserver.RequestAccessAsync();
 ```
 
-如果未呼叫 RequestAccessAsync ( # A1，則計算新場景將會失敗。 接下來，我們將計算以混合現實耳機為基礎的新場景，並擁有10計量的半徑。
+如果未呼叫 RequestAccessAsync () ，則計算新場景將會失敗。 接下來，我們將計算以混合現實耳機為基礎的新場景，並擁有10計量的半徑。
 
 ```cs
 // Create Query settings for the scene update
@@ -222,7 +218,7 @@ foreach (var sceneObject in myScene.SceneObjects)
 
 ### <a name="component-update-and-refinding-components"></a>元件更新和 refinding 元件
 
-另外還有另一個函式可在場景中抓取元件，稱為 **_sys.application.findcomponent_* _。 當更新追蹤物件，並在稍後的場景中尋找時，此函式很有用。 下列程式碼會計算相對於前一個場景的新場景，然後在新場景中找出樓層。
+還有另一個函式可在場景中抓取元件，稱為 ***sys.application.findcomponent***。 當更新追蹤物件，並在稍後的場景中尋找時，此函式很有用。 下列程式碼會計算相對於前一個場景的新場景，然後在新場景中找出樓層。
 
 ```cs
 // Compute a new scene, and tell the system that we want to compute relative to the previous scene
@@ -239,7 +235,7 @@ if (firstFloor != null)
 
 ## <a name="accessing-meshes-and-quads-from-scene-objects"></a>從場景物件存取網格和四邊形
 
-一旦找到 SceneObjects，您的應用程式很可能會想要存取其所組成之四邊形/網格中所包含的資料。 這項資料是使用 _*_四邊形_*_ 和 _*_網格_*_ 屬性來存取。 下列程式碼將列舉 floor 物件的所有四邊形和網格。
+一旦找到 SceneObjects，您的應用程式很可能會想要存取其所組成之四邊形/網格中所包含的資料。 這項資料是使用 ***四邊形** _ 和 _ *_網格_** 屬性來存取。 下列程式碼將列舉 floor 物件的所有四邊形和網格。
 
 ```cs
 
@@ -351,7 +347,7 @@ SetUnityTransformFromMatrix4x4(unityObject.transform, converted4x4LocationMatrix
 
 四邊形的設計目的是要協助2D 放置案例，而且應該將其視為2D 畫布 UX 元素的延伸。 雖然四邊形是 SceneObjects 的元件，而且可以在3D 中轉譯，但四個 Api 本身會假設四邊形是2D 結構。 它們提供的資訊包括範圍、圖形，以及提供用於放置的 Api。
 
-四邊形具有矩形範圍，但代表任意成形的2D 表面。 若要啟用與3D 環境互動之2D 表面上的放置，四邊形提供公用程式以實現這種互動。 目前的場景理解提供兩種這類功能： _ *FindCentermostPlacement** 和 **GetSurfaceMask**。 FindCentermostPlacement 是高階 API，可找出四個位置上可放置物件的位置，並且會嘗試找出您的物件的最佳位置，以確保您提供的周框方塊會留在基礎介面上。
+四邊形具有矩形範圍，但代表任意成形的2D 表面。 若要啟用與3D 環境互動之2D 表面上的放置，四邊形提供公用程式以實現這種互動。 目前的場景理解提供兩種 **FindCentermostPlacement** 和 **GetSurfaceMask** 這類函數。 FindCentermostPlacement 是高階 API，可找出四個位置上可放置物件的位置，並且會嘗試找出您的物件的最佳位置，以確保您提供的周框方塊會留在基礎介面上。
 
 > [!NOTE]
 > 輸出的座標相對於「四個空間」中的四個十字，左上角的 (x = 0，y = 0) ，就如同其他 windows Rect 類型一樣。 使用您自己的物件的來源時，請務必將此納入考慮。 

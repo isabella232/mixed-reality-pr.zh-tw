@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、近乎互動、
-ms.openlocfilehash: b340341f34a1d9a2e2a91fb4215761c4e53ced86
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fc6fbb33e5a8e9aa6930f56f292f8ded51c53ff0
+ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694355"
+ms.lasthandoff: 05/06/2021
+ms.locfileid: "108644844"
 ---
 # <a name="how-to-add-near-interaction-in-mrtk"></a>如何在 MRTK 中新增近乎互動
 
@@ -119,6 +119,9 @@ public class PrintPointerEvents : MonoBehaviour, IMixedRealityPointerHandler
     1. 如果您在下方的元件腳本中使用介面，請設定 **要接收***觸控* 的事件 [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) 。
 
 1. 在該物件或其中一個祖系上，加入可執行介面的腳本元件 [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) 。 具有的物件的任何上階 [`NearInteractionTouchableUnityUI`](xref:Microsoft.MixedReality.Toolkit.Input.NearInteractionTouchableUnityUI) 也都可以接收指標事件。
+
+> [!IMPORTANT]
+> 如果物件位於重迭的畫布物件上，則物件的行為可能無法如預期般運作。 為了確保一致的行為，絕對不會在場景中重迭畫布物件。
 
 > [!IMPORTANT]
 > 在 `NearInteractionTouchable` 腳本元件中， *要接收* 的屬性事件有兩個選項： *指標* 和 *觸控*。 如果  [`IMixedRealityPointerHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityPointerHandler) 您在元件腳本中使用介面來回應/處理輸入事件，請設定要接收到指標的事件，並將其設定為 *觸控* [`IMixedRealityTouchHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityTouchHandler) 。
