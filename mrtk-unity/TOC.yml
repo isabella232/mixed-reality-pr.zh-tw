@@ -20,3 +20,5 @@
   href: roadmap.md
 - name: 參與
   href: contributing/toc.yml
+- name: '封存的檔 (2.6 之前的) '
+  href: 'https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/WelcomeToMRTK.html'
