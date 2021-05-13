@@ -1,8 +1,0 @@
-- name: 偵測平臺功能
-  href: detecting-platform-capabilities.md
-- name: Leap 運動 MRTK
-  href: leap-motion-mrtk.md
-- name: Oculus 的追求 MRTK
-  href: oculus-quest-mrtk.md
-- name: 使用 AR Foundation
-  href: using-ar-foundation.md
