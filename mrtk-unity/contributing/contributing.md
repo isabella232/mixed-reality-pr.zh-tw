@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 03/17/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Bug 報告、
-ms.openlocfilehash: 525e704ae2f09580c8c19ca7e8a25dad4aed2647
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 11a62708b4cb1a5acc3d230f933be2e88e0ac87b
+ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489258"
+ms.lasthandoff: 05/13/2021
+ms.locfileid: "109850364"
 ---
 # <a name="contributing"></a>參與
 
@@ -51,7 +51,7 @@ ms.locfileid: "109489258"
 
 新增 bug 修正或功能時，請遵循下列步驟：
 
-1. 執行 bug 修正或功能。 建立和部署 MRTK 的指示位於 [BuildAndDeploy](../updates-deployment/build-and-deploy.md)。 請記得遵循程式 [代碼撰寫方針](../contributing/coding-guidelines.md)。
+1. 執行 bug 修正或功能。 建立和部署 MRTK 的指示位於 [部署至 Hololens 和 WMR 裝置](../supported-devices/wmr-mrtk.md)。 請記得遵循程式 [代碼撰寫方針](../contributing/coding-guidelines.md)。
 1. 如果加入功能，也請新增示範功能的範例場景。
 1. 如果新增實驗性功能，則不需要撰寫測試和檔。 相反地，請依照 [實驗性功能指導方針](../contributing/experimental-features.md)進行。
 1. 加入測試以確認 bug 修正/功能。 撰寫和執行測試的指示位於 [>--run-unittests](../contributing/unit-tests.md)。
