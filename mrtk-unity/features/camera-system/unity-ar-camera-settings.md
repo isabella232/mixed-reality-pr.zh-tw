@@ -1,16 +1,16 @@
 ---
-title: UnityArCameraSettings
+title: Unity AR 相機設定
 description: 在 MRTK 中使用 AR 攝影機的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR 攝影機、
-ms.openlocfilehash: 15aacae4cb543a3a94660ef1ab057ad0febcb715
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: baa54f4a7c6238b136a108cf5adcbddd29c3ee1b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850414"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143459"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Unity AR 相機設定提供者
 
@@ -32,7 +32,7 @@ Unity AR 攝影機設定提供者可以設定如何執行追蹤的設定選項�
 
 下表說明可用的選項。
 
-| 選項 | 描述 |
+| 選項 | Description |
 | --- | --- |
 | Center | 前端掛接裝置的中心眼睛。 |
 | 彩色相機 | 行動裝置的色彩相機。 |
@@ -50,7 +50,7 @@ Unity AR 攝影機設定提供者可以設定如何執行追蹤的設定選項�
 
 下表說明可用的選項。
 
-| 選項 | 描述 |
+| 選項 | Description |
 | --- | --- |
 | 位置 | 裝置的位置。 |
 | 旋轉 | 裝置的旋轉。 |
@@ -64,7 +64,7 @@ Unity AR 攝影機設定提供者可以設定如何執行追蹤的設定選項�
 
 下表說明可用的選項。
 
-| 選項 | 描述 |
+| 選項 | Description |
 | --- | --- |
 | 轉譯前 | 緊接在轉譯之前。 |
 | 更新 | 在框架的更新階段。 |

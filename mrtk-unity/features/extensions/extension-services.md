@@ -1,16 +1,16 @@
 ---
-title: ExtensionServices
+title: 擴充服務
 description: MRTK 中擴充功能的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: cde5f92d8a85ad8161f0f549a9a98edd644cb183
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a39616a091a3f6800c429dc797ec2f3130e96f40
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694365"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144544"
 ---
 # <a name="extension-services"></a>擴充服務
 

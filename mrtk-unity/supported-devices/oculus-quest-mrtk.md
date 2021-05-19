@@ -1,16 +1,16 @@
 ---
-title: OculusQuestMRTK
+title: Oculus 的追求 MRTK
 description: 在 MRTK 中設定 Oculus 的相關檔
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Oculus 的追求、
-ms.openlocfilehash: 9350ed7c8426c3bb31cf41493056fb6fc1e26107
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852335"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143964"
 ---
 # <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>如何使用 XR SDK 管線在 MRTK 中設定 Oculus 操作
 

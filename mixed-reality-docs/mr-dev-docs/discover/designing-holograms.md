@@ -6,12 +6,12 @@ ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
 keywords: MRTK，混合的現實工具組，全像投影，設計全像投影、學習、範例應用程式、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: 2480b5e0b4dca502c746dad6f070226ffa8cd1f9
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+ms.openlocfilehash: 6e37c3f1ba98f202addb9c323632bca8bffae3b6
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757756"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143633"
 ---
 # <a name="the-making-of-designing-holograms"></a>設計全息製作
 
@@ -124,6 +124,18 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 ![互動式全息式功能表系統的動畫 GIF](images/designing-holograms/creative-process.gif)
 
 ## <a name="core-concepts"></a>核心概念
+
+**Head 追蹤和眼睛追蹤**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+**手動追蹤**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
+
+**空間感知**
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 **全像攝影框架**
 

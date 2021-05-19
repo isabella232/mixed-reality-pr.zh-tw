@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 3f601089132593b63cfa3f04cc62cb0775cc6e5e
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 963589cb221b7dba1c197fff06ccb8926e12f89c
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104946422"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143686"
 ---
 # <a name="tutorial-prepare-a-scene"></a>教學課程：準備場景
 
@@ -53,8 +53,8 @@ ms.locfileid: "104946422"
 
     ```html
     <script type="text/javascript">
-        var canvas = document.getElementById("renderCanvas");
-        var engine = new BABYLON.Engine(canvas, true);
+        const canvas = document.getElementById("renderCanvas");
+        const engine = new BABYLON.Engine(canvas, true);
         
         const createScene = function() {
             const scene = new BABYLON.Scene(engine);
@@ -62,7 +62,7 @@ ms.locfileid: "104946422"
             return scene;
         }
 
-        var sceneToRender = createScene();
+        const sceneToRender = createScene();
     </script>
     ```
 
@@ -125,10 +125,10 @@ ms.locfileid: "104946422"
     <body>
         <canvas id="renderCanvas"></canvas>
         <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
             
-            var createScene = function() {
+            const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
@@ -149,7 +149,7 @@ ms.locfileid: "104946422"
                 return scene;
             };
             
-            var sceneToRender = createScene();
+            const sceneToRender = createScene();
             engine.runRenderLoop(function(){
                 sceneToRender.render();
             });

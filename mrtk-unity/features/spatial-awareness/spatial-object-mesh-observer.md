@@ -1,16 +1,16 @@
 ---
-title: SpatialObjectMeshObserver
+title: 空間物件網格觀察者
 description: MRTK 中的空間網格觀察器檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 149d1226c6cfd18eebbe30e6dbc62adde9d4a91e
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 51963fca4fa76340089b84e400f2882763977f72
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549958"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144452"
 ---
 # <a name="configuring-mesh-observers-for-the-editor"></a>設定編輯器的網格觀察器
 

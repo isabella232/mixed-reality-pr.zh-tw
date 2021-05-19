@@ -1,16 +1,16 @@
 ---
-title: ShaderUpdateTool
+title: 著色器更新工具
 description: 如何更新 MRTK 標準著色器的相關檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: e5ae9f12dfe4af899ae3d25af6dd0f076744b5c5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ed9f9fa5e6337850f31ecce9d07bc82a8ea12060
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689378"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145129"
 ---
 # <a name="updating-shaders"></a>更新著色器
 

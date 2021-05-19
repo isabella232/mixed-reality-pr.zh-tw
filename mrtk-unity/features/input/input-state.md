@@ -1,16 +1,16 @@
 ---
-title: InputState
+title: 輸入狀態
 description: MRTK 中輸入狀態的相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、InputState、
-ms.openlocfilehash: 8035da588b16ef8f2149fd91abe9c811d317c114
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4c1bd115c63e25decf73c082546e75b0f276a7ef
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694265"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145256"
 ---
 # <a name="accessing-input-state-in-mrtk"></a>存取 MRTK 中的輸入狀態
 

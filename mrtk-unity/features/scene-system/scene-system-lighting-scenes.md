@@ -1,16 +1,16 @@
 ---
-title: SceneSystemLightingScenes
+title: 場景系統光源場景
 description: 場景中光源的相關檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4cd6b61172f03da99ba33a06d06e20f095572622
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fa7442bc968710a31ce3ca379c7fd73928e6e324
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688358"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144415"
 ---
 # <a name="lighting-scene-operations"></a>光源場景作業
 

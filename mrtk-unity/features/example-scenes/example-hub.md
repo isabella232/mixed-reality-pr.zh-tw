@@ -1,16 +1,16 @@
 ---
-title: ExampleHub
+title: 範例中樞
 description: MRTK 中的範例場景總覽
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4f55718e0fe9bebca2ff9e2850057e83a3f4b6bb
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 212fc6e1489a22995241368a9bf4db96d206c44a
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681821"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144757"
 ---
 # <a name="mrtk-examples-hub"></a>MRTK 範例中樞
 

@@ -1,16 +1,16 @@
 ---
-title: SpatialAwareness
+title: 空間感知
 description: 描述 MRTK 中的空間感知
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 47f74b66e597186b43354de6503d48f45eb9ede4
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 776033dbb4736ccaa44cdb683c4fce284758a51c
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550638"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144465"
 ---
 # <a name="spatial-awareness"></a>空間感知
 

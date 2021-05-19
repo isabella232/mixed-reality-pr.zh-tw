@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 50c491a12b4c1c8e21a2c1fa1ae61e213370d276
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 102f2f29141c7a48c07a1dc80f7b3b180bc5e436
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104946423"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143695"
 ---
 # <a name="tutorial-interact-with-3d-object"></a>教學課程：與3D 物件互動
 
@@ -41,10 +41,10 @@ ms.locfileid: "104946423"
 <body>
     <canvas id="renderCanvas"></canvas>
     <script>
-        var canvas = document.getElementById("renderCanvas");
-        var engine = new BABYLON.Engine(canvas, true);
+        const canvas = document.getElementById("renderCanvas");
+        const engine = new BABYLON.Engine(canvas, true);
         
-        var createScene = function() {
+        const createScene = function() {
             const scene = new BABYLON.Scene(engine);
             scene.clearColor = new BABYLON.Color3.Black;
             
@@ -65,7 +65,7 @@ ms.locfileid: "104946423"
             return scene;
         };
         
-        var sceneToRender = createScene();
+        const sceneToRender = createScene();
         engine.runRenderLoop(function(){
             sceneToRender.render();
         });
@@ -79,7 +79,7 @@ ms.locfileid: "104946423"
 1. 首先，讓我們更新建立 cube 的程式碼，以便使用隨機色彩來繪製 cube。 若要這樣做，我們會將 [材質](https://doc.babylonjs.com/divingDeeper/materials/using/materials_introduction) 新增至 cube。 材質可讓我們指定色彩和材質，也可以用來涵蓋其他物件。 材質的顯示方式取決於場景中使用的燈光或光線，以及它如何設定為回應。 例如，diffuseColor 會將色彩全部散佈在其所連接的網格上。 新增下列程式碼：
 
     ```javascript
-    var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+    const boxMaterial = new BABYLON.StandardMaterial("material", scene);
     boxMaterial.diffuseColor = BABYLON.Color3.Random();
     box.material = boxMaterial;
     ```
@@ -96,7 +96,7 @@ ms.locfileid: "104946423"
     box.actionManager.registerAction(new BABYLON.ExecuteCodeAction(
         BABYLON.ActionManager.OnPickTrigger, 
         function (evt) {
-            var sourceBox = evt.meshUnderPointer;
+            const sourceBox = evt.meshUnderPointer;
             
             //move the box upright
             sourceBox.position.x += 0.1;
@@ -120,10 +120,10 @@ ms.locfileid: "104946423"
     <body>
         <canvas id="renderCanvas"></canvas>
         <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
             
-            var createScene = function() {
+            const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
@@ -141,7 +141,7 @@ ms.locfileid: "104946423"
                 box.position.x = 0.5;
                 box.position.y = 1;
 
-                var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+                const boxMaterial = new BABYLON.StandardMaterial("material", scene);
                 boxMaterial.diffuseColor = BABYLON.Color3.Random();
                 box.material = boxMaterial;
  
@@ -149,7 +149,7 @@ ms.locfileid: "104946423"
                 box.actionManager.registerAction(
                     new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, 
                     function (evt) {
-                        var sourceBox = evt.meshUnderPointer;
+                        const sourceBox = evt.meshUnderPointer;
                         sourceBox.position.x += 0.1;
                         sourceBox.position.y += 0.1;
 
@@ -159,7 +159,7 @@ ms.locfileid: "104946423"
                 return scene;
             };
             
-            var sceneToRender = createScene();
+            const sceneToRender = createScene();
             engine.runRenderLoop(function(){
                 sceneToRender.render();
             });
@@ -175,7 +175,7 @@ ms.locfileid: "104946423"
 1. 在這個步驟中，我們將介紹一個 [基礎](https://doc.babylonjs.com/divingDeeper/mesh/creation/set/ground)。 Cube 將在空氣中掛斷，我們會在底部看到樓層。 以下列方式加入地面：
 
     ```javascript
-    var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
+    const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
     ```
 
     這會建立一個簡單的4x4 計量樓層。
@@ -183,7 +183,7 @@ ms.locfileid: "104946423"
 1. 為了加入 WebXR 支援，我們必須呼叫 *createDefaultXRExperienceAsync*，其具有 *承諾* 結果。 將此程式碼新增至 *createScene* 函式的結尾，而不是傳回 *場景;*：
 
     ```javascript
-    var xrPromise = scene.createDefaultXRExperienceAsync({
+    const xrPromise = scene.createDefaultXRExperienceAsync({
         floorMeshes: [ground]
     });
     return xrPromise.then((xrExperience) => {
@@ -205,10 +205,10 @@ ms.locfileid: "104946423"
     <body>
         <canvas id="renderCanvas"></canvas>
         <script>
-            var canvas = document.getElementById("renderCanvas");
-            var engine = new BABYLON.Engine(canvas, true);
+            const canvas = document.getElementById("renderCanvas");
+            const engine = new BABYLON.Engine(canvas, true);
             
-            var createScene = function() {
+            const createScene = function() {
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
@@ -226,7 +226,7 @@ ms.locfileid: "104946423"
                 box.position.x = 0.5;
                 box.position.y = 1;
 
-                var boxMaterial = new BABYLON.StandardMaterial("material", scene);
+                const boxMaterial = new BABYLON.StandardMaterial("material", scene);
                 boxMaterial.diffuseColor = BABYLON.Color3.Random();
                 box.material = boxMaterial;
  
@@ -234,16 +234,16 @@ ms.locfileid: "104946423"
                 box.actionManager.registerAction(
                     new BABYLON.ExecuteCodeAction(BABYLON.ActionManager.OnPickTrigger, 
                     function (evt) {
-                        var sourceBox = evt.meshUnderPointer;
+                        const sourceBox = evt.meshUnderPointer;
                         sourceBox.position.x += 0.1;
                         sourceBox.position.y += 0.1;
 
                         boxMaterial.diffuseColor = BABYLON.Color3.Random();
                     }));
                     
-                var ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
+                const ground = BABYLON.MeshBuilder.CreateGround("ground", {width: 4, height: 4});
                 
-                var xrPromise = scene.createDefaultXRExperienceAsync({
+                const xrPromise = scene.createDefaultXRExperienceAsync({
                     floorMeshes: [ground]
                 });
                 
@@ -278,7 +278,7 @@ ms.locfileid: "104946423"
 
 請執行下列步驟，在您的 Android 裝置上啟用偵錯工具：
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
 * 在安全內容中提供靜態 html 網頁的 web 伺服器 (HTTPs://，或在開發電腦上的 localhost) 透過埠轉送來提供服務。 例如，利用 *服務* npm 套件作為靜態 html 檔案的簡易輕量 web 伺服器，檢查更多 [npm 服務](https://github.com/vercel/serve#readme)
 * 最初隨 Google Play 商店出貨的裝置，必須執行 Android 7.0 或更新版本

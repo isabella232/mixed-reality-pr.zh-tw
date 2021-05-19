@@ -1,16 +1,16 @@
 ---
-title: ClippingPrimitive
+title: 裁剪基本
 description: 在 MRTK 中使用範例裁剪基本檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、裁剪基本、
-ms.openlocfilehash: 1341d4a3cb4121f3e05a042750db97dafcd3985e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 35b7166045986df34eaf2c23161efc6379160ead
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694225"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145202"
 ---
 # <a name="clipping-primitive"></a>裁剪基本
 

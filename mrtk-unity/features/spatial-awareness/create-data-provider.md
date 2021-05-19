@@ -1,16 +1,16 @@
 ---
-title: CreateSpatialAwarenessDataProvider
+title: 建立空間感知 Data Provider
 description: 描述如何在 MRTK 中建立自訂資料提供者
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 81df4d9fab82ae95e6d1de2dd43ecf4f4211691b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 04a0cdbd18f666b6a99c120eb28966234cc8c92d
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696135"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145158"
 ---
 # <a name="creating-a-spatial-awareness-system-data-provider"></a>建立空間感知系統資料提供者
 
@@ -287,11 +287,11 @@ ContosoInputEditor 元件定義會指定設定檔偵測器和任何編輯器特�
 
 - [空間感知系統](spatial-awareness-getting-started.md)
 - [`IMixedRealitySpatialAwarenessObject` 介面](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObject)
-- [`BaseSpatialAwarenessObject` 類](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
-- [`SpatialAwarenessMeshObject` 類](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
-- [`SpatialAwarenessPlanarObject` 類](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject)
+- [`BaseSpatialAwarenessObject` 類別](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialAwarenessObject)
+- [`SpatialAwarenessMeshObject` 類別](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessMeshObject)
+- [`SpatialAwarenessPlanarObject` 類別](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.SpatialAwarenessPlanarObject)
 - [`IMixedRealitySpatialAwarenessObserver` 介面](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessObserver)
-- [`BaseSpatialObserver` 類](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
+- [`BaseSpatialObserver` 類別](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.BaseSpatialObserver)
 - [`IMixedRealitySpatialAwarenessMeshObserver` 介面](xref:Microsoft.MixedReality.Toolkit.SpatialAwareness.IMixedRealitySpatialAwarenessMeshObserver)
 - [`IMixedRealityDataProvider` 介面](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)
 - [`IMixedRealityCapabilityCheck` 介面](xref:Microsoft.MixedReality.Toolkit.IMixedRealityCapabilityCheck)

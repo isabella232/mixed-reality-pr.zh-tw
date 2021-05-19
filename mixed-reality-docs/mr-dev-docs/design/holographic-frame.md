@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens、Windows Mixed Reality、全像攝影框架、FOV、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、互動、流覽、功能表
-ms.openlocfilehash: 5898f98054afadb58fb059ff54be23f015232d55
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fee6af6370f9f3d166768144e689e09fd3fda2db
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009588"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143254"
 ---
 # <a name="holographic-frame"></a>全像攝影框架
 
@@ -64,6 +64,10 @@ ms.locfileid: "98009588"
 全像攝影框架提供一種工具，可讓開發人員觸發互動並評估使用者的注意力 dwells。 「[注視](gaze-and-commit.md)」是 HoloLens 的其中一[項主要互動](interaction-fundamentals.md)，其中的注視可以與[手勢](gaze-and-commit.md#composite-gestures)配對 (例如，透過) 或[語音](voice-input.md) (允許較短、更自然的語音互動) 。 如此一來，就能讓全像攝影的框架成為觀察數位內容並與其互動的空間。 如果體驗在使用者的空間周圍與多個物件進行互動 (例如，在使用者的空間周圍，以注視 + 手勢) 來進行多個物件的選擇，請考慮將這些物件帶入使用者的觀點，或限制需要的前端移動量，以提升 [使用者](comfort.md)的能力。
 
 您也可以使用「注視」來追蹤使用者的體驗，並查看使用者最注意的部分物件或場景部分。 這特別適合用來偵測體驗，並可讓熱度圖等分析工具查看使用者花費最多時間或遺失某些物件或互動的位置。 注視追蹤也可以提供強大的 facilitators 體驗工具 (請參閱 [Lowe 的廚房](holographic-frame.md#lowes-kitchen) 範例) 。
+
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 [的設計全息圖-標頭追蹤和眼睛追蹤]() 影片示範：
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
 <br>
 
@@ -139,7 +143,7 @@ Lowe 的商店體驗邀請客戶進入廚房的全大規模原型，以展示透
 
 實際的口頭表達方式提供了功能強大的焦點，並利用微妙的技巧來將您的消息轉變成使用者，像是我說的一樣。 當使用者移動經驗時，如果使用者移到他的其邊界以外的範圍，則會在返回中性狀態之前，先將您導向至閾值。 如果使用者從內容中看起來完全 (比方說，若要查看場景中其他地方) 再回頭看看，朗讀程式的方向位置將會再次以使用者為主。 這類技術可提供強大的深度功能，並在全像全像的框架內建立焦點，減少過多的前端移動並提升 [使用者的舒適](comfort.md)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [本能互動](interaction-fundamentals.md)
 * [舒適度](comfort.md)
 * [縮放](scale.md)

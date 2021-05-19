@@ -1,16 +1,16 @@
 ---
-title: BoundarySystemGettingStarted
+title: 界限系統開始使用
 description: MRTK 中界限系統的登陸頁面
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 4f1fd3a3b990fa3a4bf5cb2260ca7762ed120292
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2858b770fb49a44d1e2d704e8d3a81affe74d272
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681941"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144738"
 ---
 # <a name="boundary-system"></a>界限系統
 

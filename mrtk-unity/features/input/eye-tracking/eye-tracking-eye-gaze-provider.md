@@ -1,16 +1,16 @@
 ---
-title: EyeTracking_EyeGazeProvider
+title: 眼睛追蹤眼睛注視提供者
 description: MRTK 中的眼睛注視提供者檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、EyeGaze、
-ms.openlocfilehash: 59bb981748eff5b50c10c74e346b7b3413e25843
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ef50a55d52a5dad9f424c8af8139565e02542b6c
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550568"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144020"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>存取 Unity 腳本中的眼睛追蹤資料
 

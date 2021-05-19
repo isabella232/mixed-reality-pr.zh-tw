@@ -5,12 +5,12 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 03/9/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: f052cb5e758ca1a9376c4344657478c2fd9ff2b3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c277cadffb356b93ffc359233b0b8307f43e8d57
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696045"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144133"
 ---
 # <a name="asset-swap-utility"></a>資產交換公用程式
 

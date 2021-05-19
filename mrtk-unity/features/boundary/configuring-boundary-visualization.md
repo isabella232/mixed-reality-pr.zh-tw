@@ -1,16 +1,16 @@
 ---
-title: ConfiguringBoundaryVisualization
+title: 設定界限視覺效果
 description: 在 MRTK 中設定界限系統的詳細資料
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 36e8ac69a76f3ec1483d8dd0404900972a8caee7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 36717493107b129a7200dd3f912bcbdc3337b9a1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681931"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144489"
 ---
 # <a name="configuring-the-boundary-visualization"></a>設定界限視覺效果
 

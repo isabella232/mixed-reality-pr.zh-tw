@@ -1,16 +1,16 @@
 ---
-title: GettingStartedWithMRTKAndXRSDK
+title: MRTK 和 XRSDK 的開始使用
 description: 具有 XRSDK 的 MRTK 登陸頁面
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、
-ms.openlocfilehash: fe50de31ae24b415738db64073822b2aff061636
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: ef6d8c9205a9d801e8cb0ec2690d77b74c72b5fb
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850424"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143521"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>開始使用 MRTK 和 XR SDK
 

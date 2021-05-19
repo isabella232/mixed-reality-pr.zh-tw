@@ -1,16 +1,16 @@
 ---
-title: EyeTracking_Main
+title: 眼球追蹤
 description: MRTK 中的眼睛追蹤登陸頁面
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 9319a26bf0507ed8a3159c1e2b2aa7953be307f7
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 2ee19cab7a7e8ec954f7694c8f06c836d5510644
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550958"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144015"
 ---
 # <a name="eye-tracking-in-the-mixed-reality-toolkit"></a>混合現實工具組中的眼睛追蹤
 

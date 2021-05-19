@@ -1,16 +1,16 @@
 ---
-title: HolographicRemoting
+title: 全像攝影遠端處理
 description: 檔全像全像遠端 MRTK
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: d9e470e7ad5a6229994c59e81615a6b90561b022
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 637f68e5ad5f360aea4b5c0603a682d61d152a89
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549938"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144584"
 ---
 # <a name="holographic-remoting"></a>全像攝影遠端處理
 

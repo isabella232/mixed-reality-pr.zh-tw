@@ -1,16 +1,16 @@
 ---
-title: MixedRealityConfigurationGuide
+title: 混合式事實設定指南
 description: 將 MRTK 設定為 unity 的檔。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ba3ace347a34b477a9ba17a276feb0f639b1caf4
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: fc97a2d7c6182b4836d644d91be237e2aef01feb
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550838"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143570"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
 

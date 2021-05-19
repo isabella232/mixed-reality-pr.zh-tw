@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 空間對應、HoloLens、混合現實、表面重建、網格、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、場景理解、世界網格、遮蔽、物理、流覽、表面觀察器、轉譯、網格處理
-ms.openlocfilehash: 1c41706abc0a393e8530b38be83fed49ed3e20a6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 941e72b441771849e48e8ebc4924605750804831
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583278"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143722"
 ---
 # <a name="spatial-mapping"></a>空間對應
 
@@ -63,6 +63,12 @@ ms.locfileid: "98583278"
 這些磁片區可能是固定位置中的固定 (（以真實世界) 為基礎），或者它們可能會附加到 HoloLens (，但不會在透過環境) 移至 HoloLens 的情況下輪替。 每個空間介面都會以少量的空間描述真實世界表面，以連接到世界鎖定 [空間座標系統](coordinate-systems.md)的三角形網格表示。
 
 當 HoloLens 收集有關環境的新資料，且發生環境變更時，空間介面會出現、消失及變更。
+
+## <a name="spatial-awareness-design-concepts-demo"></a>空間感知設計概念示範
+
+如果您想要看到空間感知設計概念的實際運作，請參閱下面 [的設計全像影像空間感知]() 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>空間對應與場景的比較理解 WorldMesh
 

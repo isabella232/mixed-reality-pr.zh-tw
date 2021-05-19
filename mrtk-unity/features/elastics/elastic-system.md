@@ -1,16 +1,16 @@
 ---
-title: ElasticSystem
+title: 彈性系統
 description: MRTK 中彈性模擬的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、ElasticsSystem、
-ms.openlocfilehash: c605bc59bb47ca30042911afb895ab0ff9a507ab
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 01a4c4a337593252e0955c03e883e35e1329fc45
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681801"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145183"
 ---
 # <a name="elastic-system-experimental"></a>彈性系統 (實驗性) 
 

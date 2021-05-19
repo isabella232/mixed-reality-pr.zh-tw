@@ -1,16 +1,16 @@
 ---
-title: PulseShader
+title: 脈衝著色器
 description: MRTK 中的脈衝著色器描述。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 46146367176e03009d43c9b6a181a91d262de2e1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e03c021689b6701b86ae25ba9fa253ece1368428
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702364"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144945"
 ---
 # <a name="pulse-shader"></a>脈衝著色器
 
@@ -27,7 +27,7 @@ ms.locfileid: "104702364"
 - **MRTK_Pulse_ArticulatedHandMeshBlue 的材料** 
 - **MRTK_Pulse_ArticulatedHandMeshPurple 的材料** 
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 針對空間網格範例，請確定已在 [MRTK 設定] 下指派 MRTK_Pulse_ArticulatedHandMeshBlue 的材質或 MRTK_Pulse_ArticulatedHandMeshPurple （> 空間感知-> 顯示設定-> 可見的材質。
 

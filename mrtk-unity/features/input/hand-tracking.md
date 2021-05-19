@@ -1,16 +1,16 @@
 ---
-title: HandTracking
+title: 手動追蹤
 description: 有關如何在 MRTK 中使用 HandTracking 的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手追蹤、
-ms.openlocfilehash: 958c148e115624cf76a9ac1b5399864fb2269c9e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6cd55bc76d9fba42640954bcbf50e62f66454a94
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682981"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143356"
 ---
 # <a name="hand-tracking"></a>手勢追蹤
 
@@ -24,7 +24,7 @@ ms.locfileid: "104682981"
 
 聯合 prefabs 會使用簡單的 prefabs 來視覺化。 _手掌_ 和 _食指_ 的接點具有特殊重要性，而且有自己的預製專案，而其他所有接點則共用相同的預製專案。
 
-根據預設，prefabs 是簡單的幾何基本專案。 您可以視需要取代這些。 如果未指定任何預製專案，則會改為建立空的 [gameobject](href:https://docs.unity3d.com/ScriptReference/GameObject.html) 。
+根據預設，prefabs 是簡單的幾何基本專案。 您可以視需要取代這些。 如果未指定任何預製專案，則會改為建立空的 [gameobject](https://docs.unity3d.com/ScriptReference/GameObject.html) 。
 
 > [!WARNING]
 > 避免在聯合 prefabs 中使用複雜的腳本或昂貴的轉譯，因為聯合物件會在每個框架上轉換，而且可能會有顯著的效能成本！

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/26/2021
 ms.topic: article
 keywords: mixedrealitytoolkit、mixedrealitytoolkit-unity、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機、unity
-ms.openlocfilehash: b8f5f0131da811393ee053541e0c2fa0c735472e
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: 3bdaa35f495d7a647a7cbf37ddcd4f85e96d74d0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105938115"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143677"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>選擇 Unity 版本和 XR 外掛程式
 
@@ -54,7 +54,6 @@ Microsoft 目前針對 HoloLens 2 和 Windows Mixed Reality 開發建議的 Unit
 
 不過，有一些已知的問題會影響全息圖穩定性以及 HoloLens 2 上的其他功能： 
 
-* 深度緩衝區提交回歸在最近的 Unity 2020 組建中，這會導致嚴重的全息圖不穩定。
 * 使用通用 Windows 平臺組建目標的全像應用程式遠端處理應用程式無法運作。
 * Unity 圖形工作系統預設為開啟，即使它與 HoloLens 專案不相容也是一樣。
 
@@ -69,7 +68,7 @@ Unity 2020.3 LTS 也支援 **Mixed Reality OpenXR** 外掛程式的公開預覽�
 
 Mixed Reality OpenXR 外掛程式完全支援 AR Foundation 4.0，提供 ARPlaneManager 和 ARRaycastManager 執行。 如此一來，您就可以撰寫點擊測試程式碼，然後跨越 HoloLens 2 和 ARCore/ARKit 的手機和平板電腦。 
 
-今年之後， **unity 2020.3 LTS 與 OpenXR 外掛程式** 會成為建議的 unity 設定，而 unity 中的未來 HoloLens 2 功能只會透過此外掛程式公開。  您現在可以在這裡開始您的專案-不過，如果您的專案是以 HoloLens 2 為目標，則您目前會遇到 Unity 2020 全息圖穩定性和上述的其他問題。  在交付您的應用程式之前，請務必先回來查看更新 Unity 組建和 OpenXR 外掛程式組建的未來幾個月。  這可確保您的使用者體驗適當的全息圖穩定性。 
+今年之後， **unity 2020.3 LTS 與 OpenXR 外掛程式** 會成為建議的 unity 設定，而 unity 中的未來 HoloLens 2 功能只會透過此外掛程式公開。
 
 > [!div class="nextstepaction"]
 > [使用 OpenXR 外掛程式](openxr-getting-started.md)

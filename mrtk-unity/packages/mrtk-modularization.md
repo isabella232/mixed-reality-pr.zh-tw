@@ -1,16 +1,16 @@
 ---
-title: MRTK_Modularization
+title: MRTK 模組化
 description: 描述 MRTK 中的元件化。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 7d8c78e3b6f6e119fcf767c9280ec276a3933d68
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 04b2e6155e591a918b95aed20961a0450afe5f43
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682961"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144420"
 ---
 # <a name="mixed-reality-toolkit-componentization"></a>混合現實工具組元件化
 

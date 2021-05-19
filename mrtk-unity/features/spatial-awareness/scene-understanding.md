@@ -1,16 +1,16 @@
 ---
-title: SceneUnderstanding
+title: 場景理解
 description: 描述 MRTK 中的場景理解
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 03/02/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: 404145b37a97eb9bd67d39f3db4060762044f772
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ac90359a71267dc64e659f446f35ec2510c42599
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550948"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143882"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -28,7 +28,7 @@ ms.locfileid: "105550948"
 
 當系統詢問時， [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 會傳回 [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) ，其中包含可讓應用程式瞭解其周圍的屬性。 觀察頻率、傳回的物件類型 (例如牆壁、floor) 和其他觀察器行為，都取決於透過設定檔的觀察者設定。 例如，如果需要遮蔽遮罩，則必須設定觀察者來產生四邊形。 觀察到的場景可以儲存為序列化檔案，稍後可以載入以在編輯器播放模式中重新建立場景。
 
-## <a name="setup"></a>設定
+## <a name="setup"></a>安裝程式
 
 > [!IMPORTANT]
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
@@ -95,5 +95,5 @@ ms.locfileid: "105550948"
 
 ## <a name="see-also"></a>另請參閱
 
-* https://docs.microsoft.com/windows/mixed-reality/scene-understanding
-* https://docs.microsoft.com/windows/mixed-reality/scene-understanding-sdk
+* [空間對應總覽 WMR](/windows/mixed-reality/scene-understanding)
+* [空間對應總覽 WMR](/windows/mixed-reality/scene-understanding-sdk)

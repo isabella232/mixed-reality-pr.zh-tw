@@ -1,16 +1,16 @@
 ---
-title: DetectingPlatformCapabilities
+title: 偵測平臺功能
 description: MRTK 支援的不同功能詳細資料
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、功能、
-ms.openlocfilehash: 62e03c6d47deb079d3460759b5c694dd258a7767
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: e6f5a70120b2634a4c8c75cdca3d8b369967c4b0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852370"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143861"
 ---
 # <a name="detecting-platform-capabilities"></a>偵測平臺功能
 

@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 注視, 注視定向, 互動, 設計, hololens, MMR, 多樣式, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens
-ms.openlocfilehash: 37ac7475172977c8741c17817568cc9b5ad2a4e5
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: cd879ff94896f503f70873f37a5c18866b0dbac7
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847293"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143538"
 ---
 # <a name="introducing-instinctual-interactions"></a>本能互動簡介
 
@@ -28,6 +28,12 @@ ms.locfileid: "97847293"
 * 特定指引，以三個主要互動模型以及每個模型所需的元件和模式為主。
 * 補充指引，說明我們的平台具備的其他優勢。
 * 一般指引，可針對您的開發案例協助您選取適當的互動模型。
+
+## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>基本的手追蹤和 instinctual 互動示範
+
+請參閱下面 [的設計影像-前端追蹤和眼睛追蹤]() 影片示範，然後移至更明確的主題：
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
 ## <a name="multimodal-interaction-models"></a>多樣式互動模型
 

@@ -1,17 +1,17 @@
 ---
-title: TeleportHotspot
+title: 傳送熱點
 description: MRTK 中 [傳送] 熱點元件的檔
 author: RogPodge
 ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、傳送系統、傳送熱點
-ms.openlocfilehash: 986105dd771c38b1e26fd9f86df90224110591a4
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+ms.openlocfilehash: 0cbdad3c038d457109077b742d3f453d63436ae4
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105582954"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144432"
 ---
 # <a name="teleport-hotspot-experimental"></a>傳送熱點 [實驗]
 

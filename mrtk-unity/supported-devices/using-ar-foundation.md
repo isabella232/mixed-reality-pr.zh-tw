@@ -1,16 +1,16 @@
 ---
-title: UsingARFoundation
+title: 使用 AR Foundation
 description: 在 unity 中使用 ARFoundation 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件
-ms.openlocfilehash: d96c5cab2439b581c0de9d59a1a349abccf34fb5
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1c39950e8b64968e182ddc551ef344dee42060e9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852334"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143948"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>如何設定 iOS 和 Android 的 MRTK [實驗]
 

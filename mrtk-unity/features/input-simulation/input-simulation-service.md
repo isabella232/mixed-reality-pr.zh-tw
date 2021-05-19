@@ -1,16 +1,16 @@
 ---
-title: InputSimulationServices
+title: 輸入模擬服務
 description: MRTK 中輸入模擬服務的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 16f8ad6de5b806630bb676e87a082f9acb825d63
-ms.sourcegitcommit: 14456a4f37ee3bfd122ae8b3110f0f18f8166685
+ms.openlocfilehash: 81e7dcab7e0f349d05521f93d75bba6927761fd1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105556866"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145091"
 ---
 # <a name="input-simulation-service"></a>輸入模擬服務
 

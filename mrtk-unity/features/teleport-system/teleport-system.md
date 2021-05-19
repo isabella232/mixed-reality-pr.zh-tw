@@ -1,16 +1,16 @@
 ---
-title: TeleportSystemOverview
+title: 傳送系統總覽
 description: 在 MRTK 中啟用和停用傳送系統的總覽
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、傳送系統、
-ms.openlocfilehash: ff24ec720211e02071242f79260bd608fd1a02aa
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+ms.openlocfilehash: a44ad1827597dd0b27bc88a9420a3b251f934afd
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105555544"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144139"
 ---
 # <a name="teleport-system"></a>傳送系統
 

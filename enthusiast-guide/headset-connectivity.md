@@ -8,14 +8,18 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，協助，支援，耳機
 appliesto:
 - Windows 10
-ms.openlocfilehash: f42994561d032245f4f0345ad494eb38015f3682
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 2d46275fd86eedbe93a81bc97c156f29794e8c42
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725589"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143229"
 ---
 # <a name="headset-connectivity-faqs"></a>耳機連接常見問題
+
+## <a name="my-headset-will-not-wake-up"></a>我的耳機無法喚醒
+
+如果您的耳機正在睡眠中，按一下 [喚醒] 按鈕無法運作，請重新開機您的電腦。
 
 ## <a name="my-computer-does-not-have-an-hdmi-andor-display-port"></a>我的電腦沒有 HDMI 和/或顯示埠
 
@@ -24,6 +28,7 @@ ms.locfileid: "97725589"
 ## <a name="can-i-use-usb-or-hdmi-andor-displayport-extension-cables-with-windows-mixed-reality-headsets"></a>我可以使用 USB 或 HDMI 及/或 DisplayPort 擴充纜線搭配 Windows Mixed Reality 耳機
 
 Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模組纜線的使用。 如果您使用這些纜線，混合現實體驗可能會受到影響，因為在電腦的 USB 控制器與混合現實耳機之間的信號完整性與匯流排電源之間有差異。 如果有下列情況，請嘗試使用沒有分機線的耳機：
+
 * 耳機顯示器會短暫顯示藍色畫面，然後在使用時開啟黑色和混合實境入口重新開機或完全解除列舉
 * 耳機音訊會剪出或變成 glitchy
 * 耳機在黑色和正確顯示器之間閃爍
@@ -38,7 +43,7 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 * 將電腦監視器連接到電腦的 HDMI 或 DisplayPort 埠。 請確定您的圖形驅動程式是最新的。 直接從 AMD、Nvidia 或 Intel 下載並安裝驅動程式，因為它們可能會比發佈至 Windows Update 的版本還新。
 * 如果您已將外部監視器插入至 HDMI 埠，請嘗試改為將其插入至 DisplayPort，並將 HDMI 埠用於耳機。
 * 請確定您已將耳機的 HDMI 纜線插入電腦上的「HDMI 輸出」埠，而不是「HDMI」埠。
-* Windows 可能無法偵測到顯示器纜線連接。 開啟裝置管理員，並查看耳機是否列在 [監視器] 之下。 如果沒有，請選取 [ **動作] > 掃描硬體變更**。 
+* Windows 可能無法偵測到顯示器纜線連接。 開啟裝置管理員，並查看耳機是否列在 [監視器] 之下。 如果沒有，請選取 [ **動作] > 掃描硬體變更**。
 
 ## <a name="a-message-says-put-on-your-headset-but-i-have-my-headset-on"></a>有一則訊息指出「放入您的耳機」，但我有耳機
 

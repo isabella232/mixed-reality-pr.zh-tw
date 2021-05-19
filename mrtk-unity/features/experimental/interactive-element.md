@@ -1,16 +1,16 @@
 ---
-title: InteractiveElement
+title: 互動式元素
 description: InteractiveElement MRTK 的檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Interactive 元素、互動
-ms.openlocfilehash: 7c3bc6810a6ac5b556384b2ab97bb3ecda783760
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694535"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144764"
 ---
 # <a name="interactive-element-experimental"></a>Interactive 元素 [實驗性]
 
@@ -162,12 +162,12 @@ defaultEvents.OnStateOff.AddListener(() =>
 **焦點狀態偵測器** 
  ![Inpsector 中的焦點狀態](../images/interactive-element/InEditor/FocusStateInspector.png)
 
-#### <a name="getting-focus-state-events"></a>取得焦點狀態事件
+#### <a name="getting-focus-state-events&quot;></a>取得焦點狀態事件
 
 焦點狀態的事件設定類型： `FocusEvents`
 
 ```c#
-FocusEvents focusEvents = interactiveElement.GetStateEvents<FocusEvents>("Focus");
+FocusEvents focusEvents = interactiveElement.GetStateEvents<FocusEvents>(&quot;Focus");
 
 focusEvents.OnFocusOn.AddListener((pointerEventData) =>
 {
@@ -194,12 +194,12 @@ focusEvents.OnFocusOff.AddListener((pointerEventData) =>
 **專注于狀態檢查** 
  ![在偵測器中將焦點放在元件附近](../images/interactive-element/InEditor/FocusNearStateInspector.png)
 
-#### <a name="getting-focusnear-state-events"></a>取得 FocusNear 狀態事件
+#### <a name="getting-focusnear-state-events&quot;></a>取得 FocusNear 狀態事件
 
 FocusNear 狀態的事件設定類型： `FocusEvents`
 
 ```c#
-FocusEvents focusNearEvents = interactiveElement.GetStateEvents<FocusEvents>("FocusNear");
+FocusEvents focusNearEvents = interactiveElement.GetStateEvents<FocusEvents>(&quot;FocusNear");
 
 focusNearEvents.OnFocusOn.AddListener((pointerEventData) =>
 {
@@ -222,12 +222,12 @@ focusNearEvents.OnFocusOff.AddListener((pointerEventData) =>
 **專注于目前狀態檢查** 
  ![在偵測器中將焦點放在元件上](../images/interactive-element/InEditor/FocusFarStateInspector.png)
 
-#### <a name="getting-focus-far-state-events"></a>取得焦點到目前狀態的事件
+#### <a name="getting-focus-far-state-events&quot;></a>取得焦點到目前狀態的事件
 
 FocusFar 狀態的事件設定類型： `FocusEvents`
 
 ```c#
-FocusEvents focusFarEvents = interactiveElement.GetStateEvents<FocusEvents>("FocusFar");
+FocusEvents focusFarEvents = interactiveElement.GetStateEvents<FocusEvents>(&quot;FocusFar");
 
 focusFarEvents.OnFocusOn.AddListener((pointerEventData) =>
 {
@@ -250,12 +250,12 @@ focusFarEvents.OnFocusOff.AddListener((pointerEventData) =>
 **觸控狀態偵測器** 
  ![偵測器中的觸控狀態元件](../images/interactive-element/InEditor/TouchStateInspector.png)
 
-#### <a name="getting-touch-state-events"></a>取得觸控狀態事件
+#### <a name="getting-touch-state-events&quot;></a>取得觸控狀態事件
 
 觸控狀態的事件設定類型： `TouchEvents`
 
 ```c#
-TouchEvents touchEvents = interactiveElement.GetStateEvents<TouchEvents>("Touch");
+TouchEvents touchEvents = interactiveElement.GetStateEvents<TouchEvents>(&quot;Touch");
 
 touchEvents.OnTouchStarted.AddListener((touchData) =>
 {
@@ -283,12 +283,12 @@ touchEvents.OnTouchUpdated.AddListener((touchData) =>
 **選取目前的狀態偵測器** 
  ![在偵測器中選取目前的元件](../images/interactive-element/InEditor/SelectFarStateInspector.png)
 
-#### <a name="getting-select-far-state-events"></a>取得全選狀態事件
+#### <a name="getting-select-far-state-events&quot;></a>取得全選狀態事件
 
 SelectFar 狀態的事件設定類型： `SelectFarEvents`
 
 ```c#
-SelectFarEvents selectFarEvents = interactiveElement.GetStateEvents<SelectFarEvents>("SelectFar");
+SelectFarEvents selectFarEvents = interactiveElement.GetStateEvents<SelectFarEvents>(&quot;SelectFar");
 
 selectFarEvents.OnSelectUp.AddListener((pointerEventData) =>
 {
@@ -329,12 +329,12 @@ selectFarEvents.OnSelectClicked.AddListener((pointerEventData) =>
 
 ![虛擬手互動的近乎和目前狀態](../images/interactive-element/InEditor/Gifs/NearFarClickedState.gif)
 
-#### <a name="getting-clicked-state-events"></a>取得按一下狀態事件
+#### <a name="getting-clicked-state-events&quot;></a>取得按一下狀態事件
 
 已按下狀態的事件設定類型： `ClickedEvents`
 
 ```c#
-ClickedEvents clickedEvent = interactiveElement.GetStateEvents<ClickedEvents>("Clicked");
+ClickedEvents clickedEvent = interactiveElement.GetStateEvents<ClickedEvents>(&quot;Clicked");
 
 clickedEvent.OnClicked.AddListener(() =>
 {
@@ -357,14 +357,14 @@ clickedEvent.OnClicked.AddListener(() =>
 
 ![使用虛擬手互動的近乎和遠切換](../images/interactive-element/InEditor/Gifs/NearFarToggleStates.gif)
 
-#### <a name="getting-toggle-on-and-toggle-off-state-events"></a>開啟和關閉狀態事件
+#### <a name="getting-toggle-on-and-toggle-off-state-events&quot;></a>開啟和關閉狀態事件
 
 ToggleOn 狀態的事件設定類型： `ToggleOnEvents`  
 ToggleOff 狀態的事件設定類型： `ToggleOffEvents`
 
 ```c#
 // Toggle On Events
-ToggleOnEvents toggleOnEvent = interactiveElement.GetStateEvents<ToggleOnEvents>("ToggleOn");
+ToggleOnEvents toggleOnEvent = interactiveElement.GetStateEvents<ToggleOnEvents>(&quot;ToggleOn");
 
 toggleOnEvent.OnToggleOn.AddListener(() =>
 {
@@ -426,12 +426,12 @@ toggleOffEvent.OnToggleOff.AddListener(() =>
 
 若要在編輯器中測試語音關鍵字狀態，請按步驟 6 (F5) 中定義的 KeyCode，以模擬語音關鍵字辨識的事件。
 
-#### <a name="getting-speech-keyword-state-events"></a>取得語音關鍵字狀態事件
+#### <a name="getting-speech-keyword-state-events&quot;></a>取得語音關鍵字狀態事件
 
 SpeechKeyword 狀態的事件設定類型： `SpeechKeywordEvents`
 
 ```c#
-SpeechKeywordEvents speechKeywordEvents = interactiveElement.GetStateEvents<SpeechKeywordEvents>("SpeechKeyword");
+SpeechKeywordEvents speechKeywordEvents = interactiveElement.GetStateEvents<SpeechKeywordEvents>(&quot;SpeechKeyword");
 
 speechKeywordEvents.OnAnySpeechKeywordRecognized.AddListener((speechEventData) =>
 {
@@ -470,10 +470,10 @@ keywordEvent.OnKeywordRecognized.AddListener(() =>
     ![互動式元素元件中顯示的新狀態](../images/interactive-element/InEditor/InteractiveElementCreateCustomStateEventConfig.png)
 
 
-### <a name="how-to-create-a-custom-state-via-script"></a>如何透過腳本建立自訂狀態
+### <a name="how-to-create-a-custom-state-via-script&quot;></a>如何透過腳本建立自訂狀態
 
 ```c#
-interactiveElement.AddNewState("MyNewState");
+interactiveElement.AddNewState(&quot;MyNewState");
 
 // A new state by default is initialized with a the default StateEvents configuration which contains the 
 // OnStateOn and OnStateOff events

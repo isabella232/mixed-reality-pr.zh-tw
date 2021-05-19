@@ -1,16 +1,16 @@
 ---
-title: CameraSystemOverview
+title: 攝影機系統總覽
 description: MRTK 中相機系統的登陸頁面
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、攝影機、
-ms.openlocfilehash: 93a7774b196b7f1657095e3f4b27c665e9d04911
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dc5328f2a6390246918063b6564837f150d28d8
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681921"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144477"
 ---
 # <a name="camera-system"></a>攝影機系統
 

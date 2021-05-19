@@ -1,16 +1,16 @@
 ---
-title: CodingGuidelines
+title: 撰寫指引
 description: 參與 MRTK 時要遵循的編碼準則和慣例。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、'
-ms.openlocfilehash: 46508a11c75caebd382993246b0ed56c3c4eeffb
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 8887e248bd550bdd7a59f19c16df1ec3647ceff7
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550648"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145244"
 ---
 # <a name="coding-guidelines"></a>程式碼撰寫指導方針
 

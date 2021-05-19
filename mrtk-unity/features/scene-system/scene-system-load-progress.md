@@ -1,16 +1,16 @@
 ---
-title: SceneSystemLoadProgress
+title: 場景系統載入進度
 description: 在 MRTK 中進行幕後內容載入的檔
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: d54349461583241d19f260964528786e58baf54d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 51b5d4d00d65491a0476068bbdc256ffce67412b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688348"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144399"
 ---
 # <a name="monitoring-content-loading"></a>監視內容載入
 

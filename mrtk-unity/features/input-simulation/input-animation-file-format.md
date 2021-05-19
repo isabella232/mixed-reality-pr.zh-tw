@@ -1,16 +1,16 @@
 ---
-title: InputAnimationFileFormat
+title: 輸入動畫檔案格式
 description: MRTK 中輸入動畫二進位檔案格式規格的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 25af173b911897bc10e632d0be418c89f01fda6f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ba232818c0a49d803ca6fae0b5adbc64e6deefa8
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702414"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145126"
 ---
 # <a name="input-animation-binary-file-format-specification"></a>輸入動畫二進位檔案格式規格
 
@@ -35,9 +35,9 @@ ms.locfileid: "104702414"
 
 | 區段 | 類型 | 注意 |
 |---------|------|------|
-| 有相機姿勢 | Boolean | |
-| 有手資料 | Boolean | |
-| 具有眼睛| Boolean | |
+| 有相機姿勢 | 布林值 | |
+| 有手資料 | 布林值 | |
+| 具有眼睛| 布林值 | |
 | 相機 | [姿勢曲線](#pose-curves) | 只有當攝影機姿勢為 true 時 |
 | 靠右追蹤 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
 | 右側追蹤 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
@@ -139,7 +139,7 @@ Float 主要畫面格會在基本時間和值的旁邊儲存正切值和加權�
 
 | 區段 | 類型 |
 |---------|------|
-| Time | Float32 |
+| 時間 | Float32 |
 | 值 | Float32 |
 | InTangent | Float32 |
 | OutTangent | Float32 |
@@ -164,7 +164,7 @@ Float 主要畫面格會在基本時間和值的旁邊儲存正切值和加權�
 
 | 區段 | 類型 |
 |---------|------|
-| Time | Float32 |
+| 時間 | Float32 |
 | 值 | Float32 |
 
 ### <a name="wrap-mode"></a>Wrap 模式

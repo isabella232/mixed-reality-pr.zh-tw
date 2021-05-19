@@ -1,16 +1,16 @@
 ---
-title: MRTK_Packages
+title: MRTK 套件
 description: MRTK 中的套件支援混合現實硬體和平臺。
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity 封裝管理員、
-ms.openlocfilehash: 4011c3aa90e9480e4e5e6d17be008cc74cb31395
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3c92448d99cd67efa0a06feff9b0c7561a6aea79
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702274"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143799"
 ---
 # <a name="mixed-reality-toolkit-packages"></a>混合現實工具組套件
 

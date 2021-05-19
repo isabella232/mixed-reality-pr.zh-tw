@@ -1,16 +1,16 @@
 ---
-title: CreateInputDataProvider
+title: 建立輸入資料提供者
 description: 在 MRTK 中建立輸入系統與資料提供者的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 87e8836192ba52326c2114dd4be439bd421e12a8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c164fa406ae6822f4d889aff3bf615cf7fa76337
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693145"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144075"
 ---
 # <a name="creating-an-input-system-data-provider"></a>建立輸入系統資料提供者
 
@@ -262,7 +262,7 @@ ContosoInputEditor 元件定義會指定設定檔偵測器和任何編輯器特�
 ## <a name="see-also"></a>另請參閱
 
 - [輸入系統](overview.md)
-- [`BaseInputDeviceManager` 類](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager)
+- [`BaseInputDeviceManager` 類別](xref:Microsoft.MixedReality.Toolkit.Input.BaseInputDeviceManager)
 - [`IMixedRealityInputDeviceManager` 介面](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputDeviceManager)
 - [`IMixedRealityInputHandler` 介面](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler)
 - [`IMixedRealityInputHandler<T>` 介面](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1)

@@ -1,16 +1,16 @@
 ---
-title: MRTK_and_managed_code_stripping
+title: MRTK 和 Managed Code 抽出
 description: MRTK 和 Unity 中的程式碼去除
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 7e80f25f6e5af7fe851bf9106ebbd07dece5dbad
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 09e5140fd9585c19eacac5ba937eaf4ea8f2a8ea
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695905"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143733"
 ---
 # <a name="mrtk-and-unity-managed-code-stripping"></a>MRTK 和 Unity managed code 抽出
 

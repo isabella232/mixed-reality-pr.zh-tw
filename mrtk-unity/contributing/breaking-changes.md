@@ -1,16 +1,16 @@
 ---
-title: BreakingChanges
+title: 重大變更
 description: 有關 MRTK 中之重大變更的原則。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 579c22f1081b552a8e16d6d474b9133ba81b051f
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 5f48503c4d28316cad49fbdf8bc163399ca9f7ad
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550718"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143495"
 ---
 # <a name="breaking-changes"></a>重大變更
 

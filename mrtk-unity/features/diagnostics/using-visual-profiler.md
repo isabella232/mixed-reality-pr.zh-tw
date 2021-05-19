@@ -1,16 +1,16 @@
 ---
-title: UsingVisualProfiler
+title: 使用 Visual Profiler
 description: 在 MRTK 中使用 Visual profiler 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 3ff0a386248b50458788c59666be7e056139f284
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 4830615fd55a39614dd775dd7628938ee3af1c3b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550808"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143709"
 ---
 # <a name="using-the-visual-profiler"></a>使用 visual profiler
 

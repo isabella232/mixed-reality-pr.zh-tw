@@ -1,16 +1,16 @@
 ---
-title: HandPhysicsExtensionService
+title: 手上物理延伸模組服務
 description: 描述手型物理延伸模組服務。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f958f964fcfd4880770dad3952ce69621c7dd931
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 401a9d31ed3fbbe0c3e02cb95ffebb024f882fd9
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685871"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143433"
 ---
 # <a name="hand-physics-extension-services"></a>手上物理延伸模組服務
 
@@ -22,7 +22,7 @@ ms.locfileid: "104685871"
 
 啟用之後，請使用任何碰撞器的 IsTrigger 屬性來接收來自所有10位數的衝突事件 (以及手掌是否已啟用) 。
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
 - 已啟用延伸模組服務
 - 將適當的預製專案指派給手指/掌接合。

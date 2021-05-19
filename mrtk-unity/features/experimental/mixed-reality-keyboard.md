@@ -1,16 +1,16 @@
 ---
-title: README_MixedRealityKeyboard
+title: 混合現實鍵盤
 description: 如何使用混合現實鍵盤的描述
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 6884ae4a96731289fffc87cf35b1009e33df269c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 9fa81db9a71f1d0ce32bdd80a123eb072fc26fc5
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550148"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143389"
 ---
 # <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>混合的現實和 HoloLens 鍵盤協助程式類別
 

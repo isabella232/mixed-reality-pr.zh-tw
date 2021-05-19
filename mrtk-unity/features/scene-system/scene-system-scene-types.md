@@ -1,16 +1,16 @@
 ---
-title: SceneSystemSceneTypes
+title: 場景系統場景類型
 description: MRTK 中不同場景類型的檔
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0187219a01e9cd31803ded2bd30a4f78c1802d5f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 06bfd1dbad3986044f099510c2de4d36cda50fc0
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702354"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144577"
 ---
 # <a name="scene-types"></a>場景類型
 

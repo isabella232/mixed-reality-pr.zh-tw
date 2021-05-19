@@ -1,16 +1,16 @@
 ---
-title: PerfGettingStarted
+title: 效能開始使用
 description: 在 MRTK 中瞭解及調整效能的檔。
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: d95a794c2f02ccc50f0a00dc0123921b8fd6177c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 1ddc057c7f3966375d512a5e4a714dce093412e6
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550178"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144866"
 ---
 # <a name="performance"></a>效能
 

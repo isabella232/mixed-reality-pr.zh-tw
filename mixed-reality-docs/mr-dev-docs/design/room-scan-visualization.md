@@ -6,12 +6,12 @@ ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、應用程式模式、設計、HoloLens、會議室掃描、空間對應、網格、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 0bef09d7f023127f1f5eedf28065758b4a438f3e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 8c7f1ae95cfdb520e84835f7fd5d78522e62e341
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583608"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143611"
 ---
 # <a name="room-scan-visualization"></a>空間位置掃描視覺效果
 
@@ -22,7 +22,9 @@ ms.locfileid: "98583608"
 * 要求使用者使用 bloom 手勢前往 Windows Mixed Reality 首頁，然後探索他們想要用於體驗的領域。 他們可以使用 [點一下] 來確認裝置已知所有必要的區域。
 * 在自己的應用程式中建立自訂的探索體驗。
 
-在這些情況下，在探索期間收集的實際資料會由系統儲存，而應用程式則不需要這麼做。
+在這些情況下，在探索期間收集的實際資料會由系統儲存，而應用程式則不需要這麼做。 如果您想要查看作用中的房間掃描視覺效果，請參閱下面 [的設計全像影像空間感知]() 影片示範：
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="device-support"></a>裝置支援
 
@@ -43,8 +45,6 @@ ms.locfileid: "98583608"
         <td>❌</td>
     </tr>
 </table>
-
-
 
 ## <a name="building-a-custom-scanning-experience"></a>建立自訂掃描體驗
 

@@ -1,16 +1,16 @@
 ---
-title: ExtensionServiceCreationWizard
+title: 延伸模組服務建立嚮導
 description: 將 singleton 轉換為服務 MRTK 的 Wizard 檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5ba857096605508df1173daa29736a5d2279acf8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 83797a9d6d465a150406b27162a5e84c157567f1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695955"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143548"
 ---
 # <a name="extension-service-creation-wizard"></a>延伸模組服務建立嚮導
 

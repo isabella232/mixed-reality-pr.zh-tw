@@ -1,16 +1,16 @@
 ---
-title: SceneSystemGettingStarted
+title: 場景系統開始使用
 description: 具有 MRTK 之場景系統的登陸頁面
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: e43bb401ea3c3175b5cb3805e7edf00d361eb4b6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 205b89d4defdeb5418a8a82896551d681cccde3d
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104680631"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144302"
 ---
 # <a name="scene-system-overview"></a>場景系統總覽
 

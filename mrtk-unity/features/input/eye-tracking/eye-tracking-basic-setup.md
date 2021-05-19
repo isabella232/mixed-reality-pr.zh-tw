@@ -1,16 +1,16 @@
 ---
-title: EyeTracking_BasicSetup
+title: 目視追蹤基本設定
 description: 如何在 MRTK 中設定眼睛追蹤
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、眼睛追蹤、
-ms.openlocfilehash: 24e389ad86d1544d7d05e0febf7633701009c616
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 0513161bf8151069296c39612cbcacd15cc5c6c1
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550158"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144094"
 ---
 # <a name="getting-started-with-eye-tracking-in-mrtk"></a>開始在 MRTK 中使用眼睛追蹤
 

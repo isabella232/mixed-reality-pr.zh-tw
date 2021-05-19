@@ -1,16 +1,16 @@
 ---
-title: DependencyWindow
+title: 相依性視窗
 description: 在 MRTK 中使用相依性視窗的相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c53989151123f61988160b74fa876b907264bdd4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 22ecbb09ebf759e15f1f21085a7b7696cb24bc6e
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104696015"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144445"
 ---
 # <a name="dependency-window"></a>相依性視窗
 

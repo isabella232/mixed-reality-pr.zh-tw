@@ -1,16 +1,16 @@
 ---
-title: MRTK_Configuration_Dialog
+title: MRTK 設定對話方塊
 description: 在 Unity 專案中設定 MRTK
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity
-ms.openlocfilehash: 6b0bad2322f70e0a5adbc0c34c1343d9213bde4c
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ef326a4e4c9e34479cebacf3f3f575cd902ff24e
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550738"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110144829"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>MRTK 專案設定對話方塊
 

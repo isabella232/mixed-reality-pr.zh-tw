@@ -6,16 +6,16 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、遮蔽、SDK
-ms.openlocfilehash: 1458ca9e70a52913ae150c58393c3e030e2c1add
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 06a4fdb6f3ad777c47151950acbd4ccdec9935ca
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583335"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110143594"
 ---
 # <a name="scene-understanding"></a>場景理解
 
-場景理解為混合的現實開發人員提供結構化、高階的環境標記法，其設計目的是為了讓環保感知應用程式的開發變得直覺。 場景理解藉由結合現有混合現實執行時間的強大功能，例如高度精確但較不具結構化的 [空間對應](spatial-mapping.md) 和全新的 AI 驅動執行時間。 藉由結合這些技術，場景理解會產生3D 環境的標記法，類似于您在 Unity 或 ARKit/ARCore 架構中所使用的環境。 場景理解進入點的開頭是場景觀察器，由您的應用程式呼叫以計算新場景。 現在，此技術可以產生3個相異但相關的物件類別： 
+場景理解為混合的現實開發人員提供結構化、高階的環境標記法，其設計目的是為了讓環保感知應用程式的開發變得直覺。 場景理解藉由結合現有混合現實執行時間的強大功能，例如高度精確但較不具結構化的 [空間對應](spatial-mapping.md) 和全新的 AI 驅動執行時間。 藉由結合這些技術，場景理解會產生3D 環境的標記法，類似于您在 Unity 或 ARKit/ARCore 架構中所使用的環境。 場景理解進入點的開頭是場景觀察器，由您的應用程式呼叫以計算新場景。 現在，此技術可以產生3個相異但相關的物件類別：
 
 * 簡化的防水環境網格，可推斷平面房間結構而不會雜亂
 * 用於放置的平面區域，我們稱之為四邊形
@@ -23,7 +23,9 @@ ms.locfileid: "98583335"
 
 ![空間對應網格、標示為平面介面、防水網格](images/SUScenarios.png)
 
-本檔的目的是要提供案例總覽，以及說明場景理解和空間對應共用的關聯性。
+本檔的目的是要提供案例總覽，以及說明場景理解和空間對應共用的關聯性。 如果您想要查看實際的場景理解，請參閱下面 [的設計全像影像空間感知]() 影片示範：
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
 ## <a name="developing-with-scene-understanding"></a>使用場景理解進行開發
 
