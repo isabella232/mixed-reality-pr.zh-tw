@@ -8,12 +8,12 @@ metadata:
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
   - Windows 10
-  ms.openlocfilehash: 7715af5f2a94378a0c56ddcdcb83d1d21fc83700
-  ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+  ms.openlocfilehash: a15a29f36d4ad053f9f76016239c94365695d7c3
+  ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 04/24/2021
-  ms.locfileid: "107953766"
+  ms.lasthandoff: 05/19/2021
+  ms.locfileid: "110143261"
 title: HP 的回音，常見問題
 summary: ''
 sections:
@@ -47,7 +47,7 @@ sections:
       - 由於有了先進的耳機設計，在啟動裝置時，前幾分鐘內可能會有一些小影像的重影，直到 Lcd 有機會準備好。
   - question: >
       我在插入耳機時遇到7-14 「發生錯誤」的錯誤
-    answer: "7-14 發生錯誤的程式碼表示找不到某些必要的 USB2 元件。  由於 HP 回音的額外纜線，所以 USB 信號的部分容能更緊密。  這表示您電腦上的一個埠可能會比其他埠更可靠地運作。\n\n如果您看到7-14 「發生錯誤」錯誤，請嘗試下列步驟：\n\n- 請確定您已為耳機和 USB 控制器安裝最新的驅動程式。\n- 請確定您使用的是 Microsoft USB 驅動程式。 「可擴充的主機控制器」裝置名稱中應該會有 \"Microsoft\"。\n- 請嘗試將纜線插入您電腦上的不同 USB-3.0 埠。  (嘗試 USB 類型-C 和類型埠) \n- 使用隨附的 USB C 來進行介面卡，以嘗試不同的埠。\n- 嘗試透過 USB 集線器將耳機插入您的電腦。\n\n> [!NOTE]\n> HP 建議僅使用內建于主機板的 USB 控制器，並搭配「裝置」 G2 裝置。\n> 如果您無法連線到您的裝置，請聯絡 [HP 支援](https://support.hp.com/us-en)\n"
+    answer: "7-14 發生錯誤的程式碼表示找不到某些必要的 USB2 元件。  由於 HP 回音的額外纜線，所以 USB 信號的部分容能更緊密。  這表示您電腦上的一個埠可能會比其他埠更可靠地運作。\n\n如果您看到7-14 「發生錯誤」錯誤，請嘗試下列步驟：\n\n- 請確定您已為耳機和 USB 控制器安裝最新的驅動程式。\n- 請確定您使用的是 Microsoft USB 驅動程式。 「可擴充的主機控制器」裝置名稱中應該會有 \"Microsoft\"。\n- 請嘗試將纜線插入您電腦上的不同 USB-3.0 埠。  (嘗試 USB 類型-C 和類型埠) \n- 使用隨附的 USB C 來進行介面卡，以嘗試不同的埠。\n- 嘗試透過 USB 集線器將耳機插入您的電腦。\n\n> [!NOTE]\n> 如果您無法連線到您的裝置，請聯絡 [HP 支援](https://support.hp.com/us-en)\n"
   - question: "我的電腦從休眠狀態 (S4 開始時，出現13-14 「發生錯誤」錯誤) \n"
     answer: >
       有時，在繼續程式期間，視訊卡無法建立連線，因此從您的電腦撥出 USB 類型 C 並將其重新插入，可能有助於建立連接。
