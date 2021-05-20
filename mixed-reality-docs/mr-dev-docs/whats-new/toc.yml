@@ -18,6 +18,8 @@
   href: new-microsoft-edge.md
 - name: 計畫和活動
   items:
+    - name: 組建 2021-混合現實
+      href: mr-build.md
     - name: 混合實境講者系列
       href: sf-academy-events.md
     - name: 混合實境開發日

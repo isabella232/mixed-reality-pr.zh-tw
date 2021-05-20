@@ -4,6 +4,8 @@
   href: oculus-quest-mrtk.md
 - name: 使用 Leap 動作
   href: leap-motion-mrtk.md
+- name: 在 MRTK 中偵測控制器
+  href: controllers-mrtk.md
 - name: 使用 AR Foundation
   href: using-ar-foundation.md
 - name: 偵測平臺功能
