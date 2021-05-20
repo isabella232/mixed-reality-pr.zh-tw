@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: a4010e5244539909d2b04cdb9e2044672d1decab
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b76fd2e05999e5807156714fcdf12ca2863501bc
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143241"
+ms.locfileid: "110196503"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -48,9 +48,11 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 ## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 [的設計全息圖-標頭追蹤和眼睛追蹤]() 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="calibration"></a>校正 
 

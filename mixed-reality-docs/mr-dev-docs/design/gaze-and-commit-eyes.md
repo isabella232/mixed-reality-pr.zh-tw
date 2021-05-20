@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 眼球追蹤, 混合實境, 輸入, 眼部注視, 眼部定向, HoloLens 2, 眼動式選取, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 注視
-ms.openlocfilehash: 1f337d3cbc1f82b4f69194d4b903687be067f9d6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "97847875"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196463"
 ---
 # <a name="eye-gaze-and-commit"></a>眼部注視並認可
 
@@ -26,8 +26,18 @@ _眼部注視並認可_ 是特殊的 [注視並認可](gaze-and-commit.md)輸入
    - 語音命令 (例如，「選取」)
    - 停駐 (亦即，使用者只需持續觀看要選取的目標)
 
-不過，眼部注視與頭部注視的行為方式在某些方面大異其趣，因此帶來許多獨特的挑戰。 在[眼部注視設計指導方針](eye-tracking.md)中，我們會摘要說明在全像攝影應用程式中使用眼動追蹤作為輸入時的一般優點和挑戰。 在本節中，我們著重於 _眼部目光和行動_ 的特定設計考量。
+不過，眼部注視與頭部注視的行為方式在某些方面大異其趣，因此帶來許多獨特的挑戰。 
+
+在[眼部注視設計指導方針](eye-tracking.md)中，我們會摘要說明在全像攝影應用程式中使用眼動追蹤作為輸入時的一般優點和挑戰。 在本節中，我們著重於 _眼部目光和行動_ 的特定設計考量。
 首先，我們的眼球移動極為快速，很適合在整個檢視中快速定向。 眼部注視很適合用於快速的注視和認可動作，尤其是在結合快速認可 (例如空中點選或按下按鈕) 使用時。
+
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
+
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>眼部注視並認可的設計指導方針
 

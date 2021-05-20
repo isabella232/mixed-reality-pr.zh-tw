@@ -1,3 +1,5 @@
+- name: 組建視窗
+  href: build-window.md
 - name: 資產交換公用程式
   href: asset-swap-utility.md
 - name: 控制器對應工具

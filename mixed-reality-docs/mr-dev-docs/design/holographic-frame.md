@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/25/2020
 ms.topic: article
 keywords: HoloLens、Windows Mixed Reality、全像攝影框架、FOV、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、互動、流覽、功能表
-ms.openlocfilehash: fee6af6370f9f3d166768144e689e09fd3fda2db
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 5edab22751b9f2196f02a500279c4de385b57b5d
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143254"
+ms.locfileid: "110196553"
 ---
 # <a name="holographic-frame"></a>全像攝影框架
 
@@ -65,9 +65,11 @@ ms.locfileid: "110143254"
 
 您也可以使用「注視」來追蹤使用者的體驗，並查看使用者最注意的部分物件或場景部分。 這特別適合用來偵測體驗，並可讓熱度圖等分析工具查看使用者花費最多時間或遺失某些物件或互動的位置。 注視追蹤也可以提供強大的 facilitators 體驗工具 (請參閱 [Lowe 的廚房](holographic-frame.md#lowes-kitchen) 範例) 。
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 [的設計全息圖-標頭追蹤和眼睛追蹤]() 影片示範：
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範：
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 <br>
 

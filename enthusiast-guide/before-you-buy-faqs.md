@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 在購買之前，Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、預先銷售、研究、購買
 appliesto:
 - Windows 10
-ms.openlocfilehash: 1f7eaa59a18598d1df2ecef611a9ea7d58e6a36a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 82ae2af5a8edd60317ba7d7c343c80a25b226301
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580291"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196613"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>購買常見問題之前
 
@@ -59,9 +59,9 @@ ms.locfileid: "98580291"
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>什麼是內部追蹤追蹤？ 它與外部追蹤或 lighthouse 追蹤有何不同
 
-* **內部追蹤** Windows Mixed Reality 使用內出追蹤。 使用內建的追蹤攝影機內建在耳機中，並追蹤環境中的變更，以根據您四處移動的環境判斷耳機位置。
+* **內部追蹤** Windows Mixed Reality、Oculus 的執行，以及 Vive/索引系統都會使用內部輸出追蹤。 使用內建的追蹤攝影機內建在耳機中，並追蹤環境中的變更，以根據您移動時的環境判斷耳機的位置。 有些系統（例如 HTC Vive 和閥門指數）使用紅外線感應器，而不是相機，並相依于外部的 "lighthouses" 或 "base 電臺"，以投射紅外線來追蹤其環境。
 
-* **外部追蹤** Oculus、Vive 和其他人使用外部追蹤。  使用外部追蹤時，會由一或多個外部裝置追蹤耳機。 相機 (s) 內建在環境內的這些外部裝置內，用來根據環境判斷耳機的位置。
+* **外部追蹤** Oculus Rift 和 PlayStation VR 等系統會使用外部追蹤。  使用外部追蹤時，會由一或多個外部裝置追蹤耳機。 相機 (s) 內建在環境內的這些外部裝置內，用來根據環境判斷耳機的位置。
 
 深入瞭解 [內部追蹤](./tracking-system.md)。
 

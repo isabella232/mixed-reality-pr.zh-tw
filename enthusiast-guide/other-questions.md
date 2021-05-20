@@ -1,5 +1,5 @@
 ---
-title: 其他問題
+title: 沉浸式硬體相關常見問題
 description: 其他 Windows Mixed Reality 超越標準取用者支援檔的疑難排解秘訣。
 ms.author: v-hferrone
 ms.date: 09/15/2020
@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、卸載 Windows Mixed Reality、支援的語言
 appliesto:
 - Windows 10
-ms.openlocfilehash: cf23d52fc72fa3b499b32d3770151306111afaa4
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: ede2620ca6a47b085a3d7b54fd6df073bfaa528e
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726009"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196593"
 ---
 # <a name="other-questions"></a>其他問題
 
@@ -69,7 +69,7 @@ Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung H
 * 切換至 5 GHz Wi-Fi 連接（如果有的話）。 [深入了解](https://support.microsoft.com/help/4000461)。
 * 使用個別的 Bluetooth 介面卡，將您的動作控制器連接到您的電腦。 請參閱 [建議的介面卡](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)。
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 原因為何？
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 為何會這樣？
 
 如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。
 

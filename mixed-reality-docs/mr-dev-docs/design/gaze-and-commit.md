@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、注視目標、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: bfbf58ad065f91b27208d36ba63672ee5c28dfdd
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: db394ab4aded7136550e8e88eb3d66e06f3eeb92
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582337"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196563"
 ---
 # <a name="gaze-and-commit"></a>注視並認可
 
@@ -58,6 +58,13 @@ ms.locfileid: "98582337"
     </tr>
 </table>
 
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
+
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="gaze"></a>注視
 

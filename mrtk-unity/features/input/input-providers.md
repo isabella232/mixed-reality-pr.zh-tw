@@ -1,16 +1,16 @@
 ---
-title: InputProviders
+title: 輸入提供者
 description: MRTK 中不同類型的輸入提供者相關檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: fdaec584849d6b609a2f6105d36cab3d83388a9e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ad4a643d0fb46cdb15cee3c37edaffb4f51ed44b
+ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104694285"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110145268"
 ---
 # <a name="input-providers"></a>輸入提供者
 
@@ -27,9 +27,9 @@ ms.locfileid: "104694285"
 | [`OpenVR Device Manager`](xref:Microsoft.MixedReality.Toolkit.OpenVR.Input.OpenVRDeviceManager) | 一般 OpenVR、Vive 棒、Vive Knuckles、Oculus Touch、Oculus Remote、Windows Mixed Reality OpenVR  |
 | [`Unity Joystick Manager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.UnityJoystickManager) | 一般搖桿  |
 | [`Unity Touch Device Manager`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput.UnityTouchDeviceManager) | Unity 觸控控制器  |
-| [`Windows Dictation Input Provider`](xref:Microsoft.MixedReality.Toolkit.Windows.Input.WindowsDictationInputProvider) | *None*  |
+| [`Windows Dictation Input Provider`](xref:Microsoft.MixedReality.Toolkit.Windows.Input.WindowsDictationInputProvider) | *無*  |
 | [`Windows Mixed Reality Device Manager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) | WMR 清楚的手、WMR 控制器、WMR GGV (注視、手勢和 Voice) 手 |
-| [`Windows Speech Input Provider`](xref:Microsoft.MixedReality.Toolkit.Windows.Input.WindowsSpeechInputProvider) | *None* |
+| [`Windows Speech Input Provider`](xref:Microsoft.MixedReality.Toolkit.Windows.Input.WindowsSpeechInputProvider) | *無* |
 
 聽寫和語音提供者不會建立任何控制器，而是會直接引發自己的特製化輸入事件。
 

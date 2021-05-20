@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 空間對應、HoloLens、混合現實、表面重建、網格、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、場景理解、世界網格、遮蔽、物理、流覽、表面觀察器、轉譯、網格處理
-ms.openlocfilehash: 941e72b441771849e48e8ebc4924605750804831
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 3268f25f86cdfea3aa1ae0b77c4fbeb9aa0ce1b9
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143722"
+ms.locfileid: "110196423"
 ---
 # <a name="spatial-mapping"></a>空間對應
 
@@ -66,9 +66,11 @@ ms.locfileid: "110143722"
 
 ## <a name="spatial-awareness-design-concepts-demo"></a>空間感知設計概念示範
 
-如果您想要看到空間感知設計概念的實際運作，請參閱下面 [的設計全像影像空間感知]() 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要看到空間感知設計概念的實際運作，請參閱下面 **的設計全像影像空間感知** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
+
+*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>空間對應與場景的比較理解 WorldMesh
 

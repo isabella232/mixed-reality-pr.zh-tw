@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、互動
-ms.openlocfilehash: db3cb774d72de13c2f1e51d446969ee7a4cdf2b7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 207f8d0f179f722a2e4dd6d6e2bdd9cbf75b2250
+ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582385"
+ms.lasthandoff: 05/19/2021
+ms.locfileid: "110196573"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 上的眼睛架構互動
 
@@ -47,6 +47,13 @@ HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLen
 </tr>
 </table>
 
+## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
+
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+
+> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
+
+*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="eye-gaze-input-design-guidelines"></a>眼睛輸入設計指導方針
 
