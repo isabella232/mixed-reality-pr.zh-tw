@@ -4,13 +4,13 @@ description: 在 unity 中使用 ARFoundation 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件
-ms.openlocfilehash: 1c39950e8b64968e182ddc551ef344dee42060e9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件、iOS、IOS、Android、AR Foundation
+ms.openlocfilehash: 0f02eb94d95c2900348adaa9e1a02c3e54832a96
+ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143948"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110207444"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>如何設定 iOS 和 Android 的 MRTK [實驗]
 
@@ -41,7 +41,10 @@ ms.locfileid: "110143948"
     | AR 基礎  <br/> 版本：3.1。3 |  AR 基礎  <br/> 版本：3.1。3 |
     | ARCore XR 外掛程式 <br/> 版本：3.1。4 | ARKit XR 外掛程式 <br/> 版本：3.1。3 |
 
-1. 藉由叫用功能表項目來更新 MRTK UnityAR 腳本定義： **混合現實工具組 > 公用程式 > UnityAR > 更新腳本定義**
+1. 藉由叫用功能表項目來更新 MRTK UnityAR 腳本定義： **混合現實 > 工具組 > 公用程式 > UnityAR > 更新腳本定義**
+
+    ![更新腳本定義](../features/images/UpdateScriptingDefineUnityAR.png)
+
 
 ## <a name="enabling-the-unity-ar-camera-settings-provider"></a>啟用 Unity AR 攝影機設定提供者
 
@@ -84,20 +87,9 @@ ms.locfileid: "110143948"
 
 1. 將平臺切換至 Unity 組建設定中的 Android 或 iOS
 
-    當您切換平臺時，您應該會看到 [MRTK 專案設定] 視窗，其中包含您所選平臺的設定。  按一下 [套用] 以啟用平臺特定設定。
+1. 確定已啟用相關聯的 XR 外掛程式管理提供者
 
-    iOS 專案設定器設定
-
-    ![iOS 專案配置器](../features/images/camera-system/MRTKProjectConfigurator.png)
-
-1. 切換 Android 的平臺後，不需要額外的步驟。
-
-1. 如果平臺是 iOS，請編輯 > 專案設定 > 播放程式 > 其他設定，請在優化標頭下， **取消** 核取 [去除引擎程式碼]
-
-    ![iOS 設定](../features/images/camera-system/UncheckStripEngineCodeiOS.png)
-
-    > [!NOTE]
-    > 取消核取區域引擎程式碼是 Xcode [#6646](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6646)的錯誤的短期解決方案。  我們正致力於長期解決方案。
+    iOS XR 外掛程式管理：  ![ XR 外掛程式管理 ios](../features/images/XRManagementiOS.png)
 
 1. 建立並執行場景
 

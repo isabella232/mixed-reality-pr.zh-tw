@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、閏運動、
-ms.openlocfilehash: 285328b1248f04504f30192f1294e9ae665b3fc9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 44593713f08a00fa53325eebfae2cf9042d386be
+ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145194"
+ms.lasthandoff: 05/20/2021
+ms.locfileid: "110207470"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>如何在 MRTK 中使用 Ultraleap) 手勢來設定 Leap 運動 (
 
@@ -22,15 +22,16 @@ ms.locfileid: "110145194"
 
 此提供者可在獨立平臺上的編輯器和裝置上使用。  它也可以在 UWP 平臺上的編輯器中使用，但不能在 UWP 組建中使用。
 
-|支援的 Leap 動作 Unity 模組版本|
-|---|
-|4.5.0|
-|4.5.1|
+| MRTK 版本 | 支援的 Leap 動作 Unity 模組版本 |
+| --- | --- |
+|2.6. x | 4.5.0，4.5。1|
+|2.7. x| 4.5.0、4.5.1、4.6.0、4.7.0、4.7。1|
+
 
 ## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>在 MRTK 中使用 Ultraleap) 手動追蹤 (的 Leap 動作
 
 1. 匯入 MRTK 和 Leap 動作 Unity 模組
-    - 如果尚未安裝，請安裝「 [Leap 動作 SDK 4.0.0](https://developer.leapmotion.com/releases/?category=orion) 」
+    - 安裝最新的 [Leap 動作 SDK](https://developer.leapmotion.com/releases/?category=orion) （如果尚未安裝）
     - 將 **MixedReality** 套件匯入 Unity 專案。
     - 下載最新版本的 [Leap 動作 Unity 模組](https://developer.leapmotion.com/unity) 並匯入到專案中
         - 僅在 Unity 模組內匯入 **核心** 套件
@@ -199,5 +200,5 @@ Copying assembly from 'Temp/com.unity.multiplayer-hlapi.Runtime.dll' to 'Library
 
 ## <a name="see-also"></a>另請參閱
 
--[輸入提供者](../features/input/input-providers.md) 
--[手動追蹤](../features/input/hand-tracking.md)
+- [輸入提供者](../features/input/input-providers.md)
+- [手動追蹤](../features/input/hand-tracking.md)
