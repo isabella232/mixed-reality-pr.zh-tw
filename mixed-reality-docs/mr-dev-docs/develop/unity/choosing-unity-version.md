@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/26/2021
 ms.topic: article
 keywords: mixedrealitytoolkit、mixedrealitytoolkit-unity、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機、unity
-ms.openlocfilehash: 3bdaa35f495d7a647a7cbf37ddcd4f85e96d74d0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: febeb46972935a02d9c945e2a0cafabebedd0715
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143677"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333380"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>選擇 Unity 版本和 XR 外掛程式
 
@@ -57,7 +57,7 @@ Microsoft 目前針對 HoloLens 2 和 Windows Mixed Reality 開發建議的 Unit
 * 使用通用 Windows 平臺組建目標的全像應用程式遠端處理應用程式無法運作。
 * Unity 圖形工作系統預設為開啟，即使它與 HoloLens 專案不相容也是一樣。
 
-如果您選擇在目前的 Unity 2020 中開始新的專案，請務必在交付您的應用程式之前，先追蹤更新 Unity 組建和 Windows XR 外掛程式組建的未來數個月。  這可確保您的使用者體驗適當的全息圖穩定性。
+如果您選擇使用 Unity 2020，請務必升級至 Unity 2020.3.6 f1 或更新版本，以確保您的使用者體驗適當的全像全像全像是。
 
 > [!div class="nextstepaction"]
 > [使用 Windows XR 外掛程式](windows-xr-plugin.md)

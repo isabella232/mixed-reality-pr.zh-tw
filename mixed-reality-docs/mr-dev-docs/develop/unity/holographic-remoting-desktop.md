@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/16/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門、全像桌面
-ms.openlocfilehash: f3cf43d59b74b0f47e701acc1d7312544867b0df
-ms.sourcegitcommit: d5e4eb94c87b86a7774a639f11cd9e35a7050107
+ms.openlocfilehash: 18557af1f08ea05715b92b5072460871bb05a329
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/17/2021
-ms.locfileid: "103624315"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333412"
 ---
 # <a name="holographic-remoting-in-desktop-app"></a>傳統型應用程式中的全像全像遠端
 
@@ -19,7 +19,7 @@ ms.locfileid: "103624315"
 > 0.1.3 套件版本已新增 Windows 獨立應用程式遠端支援。
 > 從版本0.1.3，此功能不支援 UWP 組建。
 
-1. 遵循全像全像[遠端設定](openxr-supported-features.md#holographic-remoting-setup)的步驟
+1. 遵循全像全像[遠端設定](unity-play-mode.md#holographic-remoting-setup)的步驟
 2. 開啟 [ **編輯-> 專案設定**]，流覽至 **XR 外掛程式管理**，然後選取 [ **Windows Mixed Reality 功能集** ] 方塊。 此外，取消核取 [ **啟動時初始化 XR**]：
 
     ![未核取 [啟動時，在 Unity 編輯器中開啟初始化 XR] 的 [專案設定] 面板螢幕擷取畫面](images/openxr-features-img-02-app.png)
@@ -29,7 +29,7 @@ ms.locfileid: "103624315"
 
     ![在 Unity 編輯器中開啟的 [專案設定] 面板的螢幕擷取畫面，其中已啟用應用程式遠端功能](images/openxr-features-img-03-app.png)
 
-5. 接下來，撰寫一些程式碼來設定遠端設定，並觸發 XR 初始化。 使用 [Mixed Reality OpenXR 外掛程式](openxr-getting-started.md#hololens-2-samples) 散發的範例應用程式包含 AppRemoting，其中顯示在執行時間連接到特定 IP 位址的範例案例。 此時將範例應用程式部署到本機電腦，將會顯示具有 [連接] 按鈕的 IP 位址輸入欄位。 輸入 IP 位址，然後按一下 [連線]，將會初始化 XR 並嘗試連線到目標裝置：
+5. 接下來，撰寫一些程式碼來設定遠端設定，並觸發 XR 初始化。 使用 [Mixed Reality OpenXR 外掛程式](openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2) 散發的範例應用程式包含 AppRemoting，其中顯示在執行時間連接到特定 IP 位址的範例案例。 此時將範例應用程式部署到本機電腦，將會顯示具有 [連接] 按鈕的 IP 位址輸入欄位。 輸入 IP 位址，然後按一下 [連線]，將會初始化 XR 並嘗試連線到目標裝置：
 
     ![顯示範例應用程式遠端 UI 範例應用程式的螢幕擷取畫面](images/openxr-sample-app-remoting.png)
 

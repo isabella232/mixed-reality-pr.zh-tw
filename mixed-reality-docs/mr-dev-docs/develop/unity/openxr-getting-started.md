@@ -1,28 +1,29 @@
 ---
-title: 使用 Unity 的 Mixed Reality OpenXR 外掛程式
+title: 使用 Mixed Reality OpenXR 外掛程式
 description: 瞭解如何啟用 Unity 專案的 Mixed Reality OpenXR 外掛程式。
 author: hferrone
 ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 4c220deeca13c6807857375b71640207823b94ed
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 733bbbd75dd170241e8781e24989d23902781fb9
+ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944659"
+ms.lasthandoff: 05/24/2021
+ms.locfileid: "110333440"
 ---
-# <a name="using-the-mixed-reality-openxr-plugin-for-unity"></a>使用 Unity 的 Mixed Reality OpenXR 外掛程式
+# <a name="using-the-mixed-reality-openxr-plugin"></a>使用 Mixed Reality OpenXR 外掛程式
 
-從 Unity 2020.2 版開始，Microsoft 的 Mixed Reality OpenXR 外掛程式封裝可使用「 [混合現實」功能工具](welcome-to-mr-feature-tool.md)取得。
+針對以 Unity 2020 為目標的開發人員建立 HoloLens 2 或混合的現實應用程式，OpenXR 外掛程式可以用來取代 WindowsXR 外掛程式，以獲得更好的跨平臺相容性。  Mixed Reality OpenXR 外掛程式也適用于最新的 [混合現實功能工具](welcome-to-mr-feature-tool.md)。
 
 ## <a name="prerequisites"></a>必要條件
 
-* Unity 2020.3 LTS 或更新版本
-* Unity OpenXR 外掛程式1.1.1 或更新版本
-* Visual Studio 2019 或更新版本
-* 在 Unity 中為 HoloLens 2 應用程式安裝 **UWP** 平臺支援
+* 最新的 Unity 2020.3 LTS，建議 2020.3.6 f1 或更新版本。
+* 最新的 Unity OpenXR 外掛程式，建議1.2 或更新版本
+* [適用于 HoloLens 2 開發的](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)最新工具
+* 最新的 MRTK (選用) ，建議2.6 版或更新版本
+* 最新的混合現實 OpenXR 外掛程式，建議版本0.9.5 或更新版本
 
 > [!NOTE]
 > 如果您是在 Windows 電腦上建立 VR 應用程式，則不一定需要混合現實 OpenXR 外掛程式。 但是，如果您要自訂適用于 HP 重設系的控制器對應，或建立可在 HoloLens 2 和 VR 耳機上運作的應用程式，則您會想要安裝外掛程式。
@@ -32,7 +33,7 @@ ms.locfileid: "107944659"
 適用于 Unity 的 MRTK 會提供跨平臺輸入系統、基礎元件，以及空間互動的常見組建區塊。 MRTK 第 2 版主要用於加速開發適用於 Microsoft HoloLens、Windows Mixed Reality 沈浸式 (VR) 頭戴裝置和 OpenVR 平台的應用程式。 此專案的目標是減少進入障礙、建立混合實境應用程式，以及回饋伴著我們成長的社群。
 
 > [!div class="nextstepaction"]
-> [使用 MRTK 設定您的專案](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
+> [使用 MRTK 設定您的專案](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
 
 如需詳細的功能詳細資料，請參閱 [MRTK 的檔](/windows/mixed-reality/mrtk-unity) 。
 
@@ -50,17 +51,14 @@ ms.locfileid: "107944659"
 
 如果您的目標是 HoloLens 2，則必須切換至通用 Windows 平臺：
 
-1.  選取 [檔案 **> 組建設定 ...** ]
-2.  選取 [平臺] 清單中的 [**通用 Windows 平臺**]，然後選取 [**切換平臺**]
-3.  將 **架構** 設定為 **ARM 64**
-4.  將 **目標裝置** 設定為 **HoloLens**
-5.  將 **組建類型** 設定為 **D3D**
-6.  將 **UWP SDK** 設定為 **最新安裝**
-7.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
+1. 選取 [檔案 **> 組建設定 ...** ]
+2. 選取 [平臺] 清單中的 [**通用 Windows 平臺**]，然後選取 [**切換平臺**]
+3. 將 **架構** 設定為 **ARM 64**
+4. 將 **目標裝置** 設定為 **HoloLens**
+5. 將 **組建類型** 設定為 **D3D**
+6. 將 **UWP SDK** 設定為 **最新安裝**
 
 ![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示通用 Windows 平臺](images/wmr-config-img-4.png)
-
-設定您的平臺之後，您需要讓 Unity 知道在匯出時建立一個 [沉浸式視圖](../../design/app-views.md) ，而不是2d 視圖。
 
 ## <a name="configuring-xr-plugin-management-for-openxr"></a>設定 OpenXR 的 XR 外掛程式管理
 
@@ -86,26 +84,9 @@ ms.locfileid: "107944659"
 
 您現在已經準備好開始使用 Unity 中的 OpenXR 進行開發！  繼續進行下一節，以瞭解如何使用 OpenXR 範例。
 
-## <a name="try-out-the-unity-sample-scenes"></a>試用 Unity 範例場景
+## <a name="unity-sample-projects-for-openxr-and-hololens-2"></a>適用于 OpenXR 和 HoloLens 2 的 Unity 範例專案
 
-### <a name="hololens-2-samples"></a>HoloLens 2 範例
-
-1. 在 Unity 編輯器中，流覽至 [ **Window >] 封裝管理員**
-2. 在套件清單中，選取 **Mixed Reality OpenXR 外掛程式**
-3. 在 **範例** 清單中找出範例，然後選取 [匯 **入**]
-
-![Unity 封裝管理員在 Unity 編輯器中開啟的螢幕擷取畫面，其中已選取混合的現實 OpenXR 外掛程式，並醒目提示範例匯入按鈕](images/openxr-img-03.png)
-
-<!-- ### For all other OpenXR samples
-
-1. In the Unity Editor, navigate to **Window > Package Manager**
-2. In the list of packages, select **OpenXR Plugin**
-3. Locate the sample in the **Samples** list and select **Import**
-
-![Screenshot of Unity Package Manager open in Unity editor with OpenXR Plugin selected and samples import button highlighted](images/openxr-img-10.png) -->
-
-> [!NOTE]
-> 更新套件時，Unity 會提供選項來更新匯入的範例。  更新匯入的範例將會覆寫對範例和相關資產所做的任何變更。
+查看範例 unity 專案的 [OpenXR Mixed Reality 範例](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) 存放庫展示如何使用 Mixed reality OpenXR 外掛程式建立 HoloLens 2 或混合現實耳機的 unity 應用程式。
 
 ## <a name="using-mrtk-with-openxr-support"></a>搭配使用 MRTK 與 OpenXR 支援
 
