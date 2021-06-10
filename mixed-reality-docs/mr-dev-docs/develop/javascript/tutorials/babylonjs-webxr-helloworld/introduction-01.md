@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 945d27d13ac731447bd20e93805900605bc86f43
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 2d3f59b2769f99a756c4f0c10df1d8a8604a595e
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104946420"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600117"
 ---
 # <a name="tutorial-create-your-first-webxr-application-using-babylonjs"></a>教學課程：使用 babylon.js 建立您的第一個 WebXR 應用程式
 
@@ -25,15 +25,15 @@ ms.locfileid: "104946420"
 > * 與3D 元素互動
 > * 在 Windows Mixed Reality 模擬器中執行應用程式
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
-* WebXR 支援的瀏覽器，例如 [Microsoft Edge](https://docs.microsoft.com/windows/mixed-reality/whats-new/new-microsoft-edge)
+* WebXR 支援的瀏覽器，例如 [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 或更高版本
 * [NodeJS](https://nodejs.org/)
 * 選擇性：如果您想要使用 Windows Mixed Reality 模擬器， [Windows 10 建立者更新](https://www.microsoft.com/software-download/windows10)
-* 選用： [Windows Mixed Reality](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator)模擬器
+* 選用： [Windows Mixed Reality](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)模擬器
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 若要從頭開始建立此專案，請從 Visual Studio Code (VSCode) 專案開始。
 

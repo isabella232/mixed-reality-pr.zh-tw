@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 7470690a96380184ead7319d4461005042c6db82
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636271"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748520"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-遵循這個 [逐步教學](../../tutorials/mr-learning-base-01.md) 課程，在您的 Unity 專案中新增和自動設定混合現實工具組。 您也可以直接從 MRTK for Unity 使用 [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 類別，並將 **目標規模** 設定為 **World**：
+遵循這個 [逐步教學](../../tutorials/mr-learning-base-01.md) 課程，在您的 Unity 專案中新增和自動設定混合現實工具組。 您也可以直接從 MRTK for Unity 使用 [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 類別，並將 **目標規模** 設定為 **World**：
 
 ![MRTK 設定視窗](../../images/mrtk-target-scale.png)
 

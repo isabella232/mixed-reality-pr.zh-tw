@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 102f2f29141c7a48c07a1dc80f7b3b180bc5e436
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a3dbab0572cd50105dac3d877a0d72c5cbc504b6
+ms.sourcegitcommit: 29a43366d5969f1a895bd184ebe272168d9be1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143695"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110584517"
 ---
 # <a name="tutorial-interact-with-3d-object"></a>教學課程：與3D 物件互動
 
@@ -48,12 +48,12 @@ ms.locfileid: "110143695"
             const scene = new BABYLON.Scene(engine);
             scene.clearColor = new BABYLON.Color3.Black;
             
-            const alpha =  Math.PI;
-            const beta = Math.PI;
-            const radius = 5;
+            const alpha =  Math.PI/4;
+            const beta = Math.PI/3;
+            const radius = 8;
+            const target = new BABYLON.Vector3(0, 0, 0);
             
-            const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-            camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+            const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
             camera.attachControl(canvas, true);
             
             const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
@@ -127,12 +127,12 @@ ms.locfileid: "110143695"
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                const alpha =  Math.PI;
-                const beta = Math.PI;
-                const radius = 5;
+                const alpha =  Math.PI/4;
+                const beta = Math.PI/3;
+                const radius = 8;
+                const target = new BABYLON.Vector3(0, 0, 0);
                 
-                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+                const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
@@ -192,6 +192,14 @@ ms.locfileid: "110143695"
     });
     ```
 
+1. 因為 *createScene* 函式現在會傳回承諾而不是場景，所以我們需要修改 *CreateScene* 和 *engine runRenderLoop* 的呼叫方式。 以下列程式碼取代這些函式的目前呼叫（位於標記之前） *\</script>* ：
+
+    ```javascript
+    createScene().then(sceneToRender => {
+        engine.runRenderLoop(() => sceneToRender.render());
+    });
+    ```
+
 1. 網頁的最後一個程式碼看起來會如下所示：
 
     ```html
@@ -212,12 +220,12 @@ ms.locfileid: "110143695"
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                const alpha =  Math.PI;
-                const beta = Math.PI;
-                const radius = 5;
+                const alpha =  Math.PI/4;
+                const beta = Math.PI/3;
+                const radius = 8;
+                const target = new BABYLON.Vector3(0, 0, 0);
                 
-                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+                const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));
@@ -265,6 +273,8 @@ ms.locfileid: "110143695"
 
 ## <a name="run-on-a-windows-mixed-reality-simulator"></a>在 Windows Mixed Reality 模擬器上執行
 
+1. 如果您先前未執行過，請[啟用 Windows Mixed Reality](../../../platform-capabilities-and-apis/using-the-windows-mixed-reality-simulator.md)模擬器。
+
 1. 選取右下角的沉浸式-VR 按鈕： ![ 沉浸式 Vr 按鈕](../images/immersive-vr-button.png)
 
 1. 此動作會啟動 Windows Mixed Reality 模擬器視窗，如下所示： ![ 混合實境入口](../images/mixed-reality-portal.png)
@@ -272,7 +282,7 @@ ms.locfileid: "110143695"
 1. 您可以使用鍵盤上的 W、A、S 和 D 鍵，據以向前、向左和向右向前復原。 使用模擬手將目標設為 cube，然後按鍵盤上的 Enter 鍵以執行按一下動作。 Cube 會變更其色彩並移至新位置。
 
 > [!NOTE]
-> 以 cube 為目標時，請確定右邊的光線 (白色圓圈) 與 cube 交集，如上圖所示。 深入瞭解如何 [使用手上的 Point 和 commit](https://docs.microsoft.com/windows/mixed-reality/design/point-and-commit)。
+> 以 cube 為目標時，請確定右邊的光線 (白色圓圈) 與 cube 交集，如上圖所示。 深入瞭解如何 [使用手上的 Point 和 commit](../../../../design/point-and-commit.md)。
 
 ## <a name="run-and-debug-on-android-device"></a>在 Android 裝置上執行和調試
 

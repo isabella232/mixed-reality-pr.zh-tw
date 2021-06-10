@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、表面磁性
-ms.openlocfilehash: e3cf8511a2486c8ea862fcc70a20f5956e5095c4
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: 4afed1ff9a1e8a7cb46f4810ac388739bca1b19e
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489218"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600617"
 ---
 # <a name="surface-magnetism"></a>表面磁性
 
@@ -27,7 +27,7 @@ Surface 磁性可讓您將全息型物件放在真實世界的實體表面上。
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供 surface 磁性技術的腳本和範例幕後。 您可以使用表面磁性搭配各種類型的輸入，例如手型、眼睛和移動控制器。
 
-* [MRTK 表面的磁性規劃求解](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
+* [MRTK 表面的磁性規劃求解](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#surfacemagnetism)
 * [MRTK-空間感知 + Surface 磁性範例場景](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/Solvers/Scenes/SurfaceMagnetismSpatialAwarenessExample.unity)
 
 <br>

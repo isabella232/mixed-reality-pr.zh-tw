@@ -5,18 +5,18 @@ author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、控制器、HP 回音、Oculus、HTC Vive、手
-ms.openlocfilehash: 953b1cd56dbf7d7a548a3aba8da07ce5875fec74
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145459"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743587"
 ---
 # <a name="controllers-in-mrtk"></a>MRTK 中的控制器
 
 MRTK 具有許多不同控制器的支援。 許多控制器，例如 HTC Vive Knuckles 和 HTC Vive Wands，在相容裝置上啟動使用 MRTK 建立的應用程式時，將會以原生方式運作。 其他控制器（例如，在 Oculus 的要求和 HP 的回音控制器上進行明確的操作），在 MRTK 辨識這些控制器之前，需要額外的套件。
 
-本檔將說明需要安裝額外套件的一般案例。 如需控制器的詳細資訊，請造訪 [**功能頁面**](../features/input/controllers.md)。 若要偵測控制器的問題，請參閱 [**控制器對應工具**](../features/tools/controller-mapping-tool.md)
+本檔將說明需要安裝額外套件的一般案例。 如需如何部署至裝置的指示，請參閱 [**Hololens/WMR**](./wmr-mrtk.md) 或 [**Oculus**](/windows/mixed-reality/mrtk-unity/supported-devices/oclus-quest-mrtk) 的部署頁面。 如需控制器的詳細資訊，請造訪 [**功能頁面**](../features/input/controllers.md)。 若要偵測控制器的問題，請參閱 [**控制器對應工具**](../features/tools/controller-mapping-tool.md)
 
 ## <a name="hp-reverb-g2-controllers"></a>HP 回音（G2）控制器
 

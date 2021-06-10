@@ -3,19 +3,25 @@ title: MRTK 2.6 版本資訊
 description: MRTK 2.6 版的版本資訊
 author: polar-kev
 ms.author: kesemple
-ms.date: 02/28/2021
+ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4332f167b2cb532e858d8906654d008ea0dbb88d
-ms.sourcegitcommit: 4be6f36df9063ccfdce2662e299accc7406b6779
+ms.openlocfilehash: 4ac82f7e07135e840886fef810844ff00ef1ac1e
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105555526"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647196"
 ---
-# <a name="microsoft-mixed-reality-toolkit-261-release-notes"></a>Microsoft Mixed Reality 工具組2.6.1 版本資訊
+# <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Microsoft Mixed Reality 工具組2.6 版本資訊
 
 > [!IMPORTANT]
 > 有一個已知的編譯器問題，會影響使用 ARM64 針對 Microsoft HoloLens 2 所建立的應用程式。 若要修正此問題，請將 Visual Studio 2019 更新至16.8 版或更新版本。 如果您無法更新 Visual Studio，請匯入套件以套用因應措施 `com.microsoft.mixedreality.toolkit.tools` 。
+
+## <a name="whats-new-in-262"></a>2.6.2 的新功能
+
+### <a name="corrects-parenting-of-the-spatial-mesh"></a>更正空間網格的父代
+
+修正在混合現實 Playspace 物件移動之後，空間網格未正確定位的 [問題](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9819) (例如：透過傳送) 。
 
 ## <a name="whats-new-in-261"></a>2.6.1 的新功能
 
@@ -34,6 +40,8 @@ ms.locfileid: "105555526"
 更新對話範例場景，以正確描述目前的對話案例。
 
 ## <a name="whats-new-in-260"></a>2.6.0 的新功能
+<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+<br>
 
 ### <a name="add-support-for-openxr"></a>新增對 OpenXR 的支援
 

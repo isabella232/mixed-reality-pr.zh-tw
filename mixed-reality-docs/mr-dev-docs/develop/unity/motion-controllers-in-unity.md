@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 運動控制器、unity、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: d3df49c2f6c626e9f4eb47c38f4a8e61059a8438
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300473"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743481"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity 中的動作控制器
 
@@ -138,11 +138,11 @@ Windows Mixed Reality 支援各種外型規格中的動作控制器。 每個控
 
 此時，系統會將控制器主體鎖定給使用者，在移動時追蹤使用者的位置，同時仍會使用其內部方向感應器來公開控制器的真實方向。 許多使用控制器來指向和啟動 UI 元素的應用程式，可以正常運作，而不會察覺到使用者注意。
 
-若要瞭解這一點，最好的方法就是親自試試看。 請觀看這段影片，其中包含可搭配各種追蹤狀態的運動控制器使用的沉浸式內容範例：
+<!-- The best way to get a feel for this is to try it yourself. Check out this video with examples of immersive content that works with motion controllers across various tracking states:
 
 <br>
 
- >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g]
+ >[!VIDEO https://www.youtube.com/embed/QK_fOFDHj0g] -->
 
 ### <a name="reasoning-about-tracking-state-explicitly"></a>明確追蹤狀態的原因
 
@@ -436,7 +436,7 @@ void InteractionManager_InteractionSourceUpdated(InteractionSourceUpdatedEventAr
 
 ## <a name="motion-controllers-in-mrtk"></a>MRTK 中的動作控制器
 
-您可以從輸入管理員存取 [手勢和移動控制器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers) 。
+您可以從輸入管理員存取 [手勢和移動控制器](/windows/mixed-reality/mrtk-unity/features/input/controllers) 。
 
 ## <a name="follow-along-with-tutorials"></a>遵循教學課程
 

@@ -1,16 +1,16 @@
 ---
 title: 使用 Unity 封裝管理員
-description: 在 Unity pakage 管理員中使用 MRTK
+description: 在 Unity 中使用 MRTK 封裝管理員
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK 套件、
-ms.openlocfilehash: 8a3752f6b8c3554aea32da347a4b7334fb1bd951
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: e3e7a2d06cd38d7a9e8daf579f1a312904a86280
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550728"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345071"
 ---
 # <a name="mixed-reality-toolkit-and-unity-package-manager"></a>混合現實工具組和 Unity 封裝管理員
 

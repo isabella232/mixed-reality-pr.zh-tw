@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: c7e5be36420ef14fe5aaeaafb49c0a990942339f
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 3bffb5db8f4a36d04c2b408c939cbd2010a7def7
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636281"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748486"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-使用 MRTK for Unity 中的 [MixedRealityPlayspace](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 類別，並將 **目標縮放** 設定為 [已 **安裝**]：
+使用 MRTK for Unity 中的 [MixedRealityPlayspace](/dotnet/api/microsoft.mixedreality.toolkit.mixedrealityplayspace) 類別，並將 **目標縮放** 設定為 [已 **安裝**]：
 
 ![MRTK 設定視窗](../../images/mrtk-target-scale.png)
 

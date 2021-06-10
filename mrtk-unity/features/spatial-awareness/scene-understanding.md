@@ -3,14 +3,14 @@ title: 場景理解
 description: 描述 MRTK 中的場景理解
 author: MaxWang-MS
 ms.author: wangmax
-ms.date: 03/02/2021
+ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: ac90359a71267dc64e659f446f35ec2510c42599
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143882"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743553"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -22,13 +22,16 @@ ms.locfileid: "110143882"
 * 提供物理引擎易記幾何作為四邊形
 * 避免需要撰寫類似的演算法來加速開發
 
-從 MRTK 2.6 開始，場景理解會以 __實驗__ 性功能的形式提供。 它會整合到 MRTK 中，作為名為的 [空間觀察](spatial-awareness-getting-started.md#register-observers) 者 [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 。 場景理解適用于舊版 XR 管線和 XR SDK 管線。 在這兩種情況下， `WindowsSceneUnderstandingObserver` 都會使用。
+場景理解會在 MRTK 2.6 中引進為 __實驗__ 性功能。 它會整合到 MRTK 中，作為名為的 [空間觀察](spatial-awareness-getting-started.md#register-observers) 者 [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 。 場景理解適用于舊版 XR 管線和 XR SDK 管線 (從 MRTK 2.7) 和 Windows XR 外掛程式) 開始的 OpenXR (。 在這兩種情況下， `WindowsSceneUnderstandingObserver` 都會使用。
+
+> [!NOTE] 
+> 不支援在遠端處理中使用場景理解。
 
 ## <a name="observer-overview"></a>觀察者總覽
 
 當系統詢問時， [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 會傳回 [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) ，其中包含可讓應用程式瞭解其周圍的屬性。 觀察頻率、傳回的物件類型 (例如牆壁、floor) 和其他觀察器行為，都取決於透過設定檔的觀察者設定。 例如，如果需要遮蔽遮罩，則必須設定觀察者來產生四邊形。 觀察到的場景可以儲存為序列化檔案，稍後可以載入以在編輯器播放模式中重新建立場景。
 
-## <a name="setup"></a>安裝程式
+## <a name="setup"></a>設定
 
 > [!IMPORTANT]
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
@@ -44,9 +47,11 @@ ms.locfileid: "110143882"
 
 在 Unity 中，使用 Project Explorer 開啟場景檔案 `Examples/Experimental/SceneUnderstanding/Scenes/SceneUnderstandingExample.unity` ，然後按下 [播放]！
 
+::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> 使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
+> 僅適用于 MRTK 2.6.0-使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
 
+::: moniker-end
 場景會示範下列各項：
 
 * 在應用程式 UI 中使用觀察到的場景物件來設定觀察者的視覺效果
@@ -54,8 +59,18 @@ ms.locfileid: "110143882"
 * 將場景資料儲存至裝置以進行離線開發
 * 將先前儲存的場景資料載入 ( 的位元組檔案) 以支援編輯器開發工作流程
 
+> [!IMPORTANT]
+> 根據預設， `ShouldLoadFromFile` 觀察者的屬性會設定為 false。 若要查看序列化範例房間的視覺效果，請參閱下面的「設定 [觀察者服務](#configuring-the-observer-service) 」一節，並在編輯器中將屬性設為 true。
+::: moniker range="< mrtkunity-2021-05"
+
 > [!NOTE] 
 > 範例場景是以舊版 XR 管線為基礎。 如果您使用 XR SDK 管線，則應該據以修改設定檔。 提供的場景瞭解空間感知系統設定檔 (`DemoSceneUnderstandingSystemProfile`) 和場景瞭解觀察者設定檔 (`DefaultSceneUnderstandingObserverProfile` 和 `DemoSceneUnderstandingObserverProfile`) 適用于這兩個管線。
+::: moniker-end
+::: moniker range="= mrtkunity-2021-05"
+
+> [!NOTE] 
+> 範例場景會 `There is no active AsyncCoroutineRunner when an action is posted.` 在特定情況下，根據初始化/執行緒執行順序來記錄警告。 如果您可以確認 `AsyncCoroutineRunner` 元件已附加至「示範控制器」 GameObject，且元件/GameObject 在場景中保持啟用/作用中 (預設案例) ，則可以放心忽略該警告。
+::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>設定觀察者服務
 
@@ -95,5 +110,5 @@ ms.locfileid: "110143882"
 
 ## <a name="see-also"></a>另請參閱
 
-* [空間對應總覽 WMR](/windows/mixed-reality/scene-understanding)
-* [空間對應總覽 WMR](/windows/mixed-reality/scene-understanding-sdk)
+* [場景理解總覽](/windows/mixed-reality/scene-understanding)
+* [場景理解 SDK 總覽](/windows/mixed-reality/scene-understanding-sdk)

@@ -5,24 +5,23 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Oculus 的追求、
-ms.openlocfilehash: c0eccd0b366d39529eafc51d23031fc30144b1ae
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0892e0d416cd07d1bedbeea0ddb316e3eb012b94
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143964"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441171"
 ---
-# <a name="how-to-configure-oculus-quest-in-mrtk-using-the-xr-sdk-pipeline"></a>如何使用 XR SDK 管線在 MRTK 中設定 Oculus 操作
+# <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>使用 XR SDK 管線來建立和部署 MRTK 至 Oculus 的尋找
 
 需要進行 [Oculus](https://www.oculus.com/quest/) 。
 
-MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR 管線和 Oculus Integration Unity 套件。 **OCULUS XRSDK Data Provider** 可讓您同時使用這兩個來源，而且必須用來在 Oculus 上使用 MRTK。
+MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR SDK 管線和 Oculus Integration Unity 套件。 **OCULUS XRSDK Data Provider** 可讓您同時使用這兩個來源，而且必須用來在 Oculus 上部署 MRTK。
 
-[Unity 的 XR 管線](https://docs.unity3d.com/Manual/XR.html)可讓您使用 Oculus 觸控控制器並搭配 Oculus 的進行追蹤。
-此管線是在 Unity 2019.3 和更多功能中開發 XR 應用程式的標準。 若要使用此管線，請確定您使用的是 **Unity 2019.3 或更新版本**。
+[UNITY XR SDK 管線](https://docs.unity3d.com/Manual/XR.html)可讓您使用 Oculus 觸控控制器並搭配 Oculus 的進行追蹤。
+此管線是在 Unity 2019.3 和更多功能中開發 XR 應用程式的標準。 若要使用此管線，請確定您使用的是 **Unity 2019.3 或更新版本**。 這是將 MRTK 應用程式部署到 Oculus 的 **要求所需** 的。 
 
-[Oculus Integration Unity 封裝](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022)可讓您搭配 Oculus 的執行來使用 **手動追蹤**。
-此資料提供者 **不會使用 unity** 的 **XR 管線** 或 **舊版 XR 管線**，但因為控制器和 Headtracking 是由 Unity 的 XR 管線處理，所以必須遵循為 **Oculus 執行設定專案** 的步驟，以確保您使用的是 **XR 管線** ，而不是即將淘汰的 **舊版 XR 管線**。
+[Oculus Integration Unity 封裝](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022)可讓您搭配 Oculus 的執行來使用 **手動追蹤**。 此資料提供者 **不會使用 Unity** 的 **XR SDK 管線** 或 **舊版 XR 管線**。
 
 ## <a name="setting-up-project-for-the-oculus-quest"></a>設定專案以進行 Oculus 的尋找
 
@@ -30,7 +29,7 @@ MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR 管線和 Ocul
 
 1. 確定已在您的裝置上啟用 [開發人員模式](https://developer.oculus.com/documentation/native/android/mobile-device-setup/) 。 安裝 Oculus ADB 驅動程式是選擇性的。
 
-## <a name="setting-up-the-xr-pipeline-for-oculus-quest"></a>設定 XR 管線以進行 Oculus 的尋找
+## <a name="setting-up-the-xr-sdk-pipeline-for-oculus-quest"></a>設定 XR SDK 管線以進行 Oculus 的尋找
 
 1. 確定 **OCULUS XR 外掛程式** 已安裝在視窗下 **--> 封裝管理員**
 

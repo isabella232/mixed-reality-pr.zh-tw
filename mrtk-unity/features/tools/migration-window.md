@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 8e03848097c313a518f638de591f692ab71f0985
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a6e268dd28be2a3d485f937ec5b5ce6b1f29851f
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143873"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647117"
 ---
 # <a name="migration-window"></a>遷移視窗
 
@@ -21,7 +21,7 @@ ms.locfileid: "110143873"
 
 ## <a name="usage"></a>使用方式
 
-若要開啟視窗，請選取 [*混合的實際* 工具組  >  *公用程式*  >  *遷移] 視窗*。 一旦開啟 [遷移] 視窗，您可以選擇遷移處理常式的元件特定執行方式來啟用 [選取模式] 流覽索引標籤。  
+若要開啟視窗，請選取 [**混合的實際**  >  **工具組**  >  **公用程式**  >  **遷移] 視窗**。 一旦開啟 [遷移] 視窗，您可以選擇遷移處理常式的元件特定執行方式來啟用 [選取模式] 流覽索引標籤。  
 
 ![遷移選取模式](../images/migration-window/MRTK_Migration_Modes.png)
 

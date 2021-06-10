@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 637f68e5ad5f360aea4b5c0603a682d61d152a89
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 196bbb7027389ea75ddc577e4efc397ca779d550
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144584"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647177"
 ---
 # <a name="holographic-remoting"></a>全像攝影遠端處理
 
@@ -35,7 +35,7 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 使用 HoloLens 2 時，已將對遠端的已表達和眼睛追蹤資料的支援新增至 MRTK。 若要啟用這些功能，請遵循將 DotNetWinRT 匯 [入到專案](#import-dotnetwinrt-into-the-project)中所述的步驟。
 
-匯入之後，下一步是選取 **混合現實工具** 組  >  **公用程式**  >  **Windows Mixed Reality**  >  **檢查** 設定。 此步驟會新增可啟用 DotNetWinRT 相依性的腳本定義。
+匯入之後，下一步是選取 **混合現實**  >  **工具** 組  >  **公用程式**  >  **Windows Mixed Reality**  >  **檢查** 設定。 此步驟會新增可啟用 DotNetWinRT 相依性的腳本定義。
 
 > [!NOTE]
 > 使用 Unity 2019.4 和更新版本時，不需要執行檢查設定公用程式。

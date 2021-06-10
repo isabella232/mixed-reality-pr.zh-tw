@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
 keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 0d8d2811c2fae96f679eeb1df2f1053e7ecf5def
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 5bdcba60f38ac67bbf0f394337735f4a2d4ec423
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300343"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600627"
 ---
 # <a name="spatial-mesh"></a>空間網格
 
@@ -36,7 +36,7 @@ MRTK 為空間網格視覺效果提供數種材質。
 <br>
 <img src="images/MRTK_SRMesh_Pulse.jpg" alt="Pulse spatial mesh visualization" width="640px">
 
-* 如需詳細資訊，請參閱 [MRTK-空間感知](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) 和 [MRTK-脈衝著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader)。
+* 如需詳細資訊，請參閱 [MRTK-空間感知](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) 和 [MRTK-脈衝著色器](/windows/mixed-reality/mrtk-unity/features/experimental/pulse-shader)。
 
 <br>
 

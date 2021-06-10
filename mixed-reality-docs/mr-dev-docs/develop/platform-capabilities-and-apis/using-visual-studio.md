@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, 混合實境, 偵錯, 部署
-ms.openlocfilehash: 2ab89311163a48ee3c14511446a1498ce883a232
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100496088"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543224"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>使用 Visual Studio 來部署和偵錯
 
@@ -37,7 +37,7 @@ ms.locfileid: "100496088"
 3. 選取 [設定]  磚，在您的環境中啟動應用程式。
 4. 選取 [更新]  功能表項目。
 5. 選取 [適用於開發人員]  功能表項目。
-6. 啟用 [開發人員模式] 以將應用程式從 Visual Studio 部署到 HoloLens。
+6. 啟用 [ **使用開發人員功能** ]，將應用程式從 Visual Studio 部署到 HoloLens。 如果您的裝置正在執行 Windows 全像21H1 版或更新版本，也可以啟用 **裝置探索**。
 7. 選擇性：向下捲動而且啟用 [裝置入口網站]，可讓您從網頁瀏覽器連線到您 HoloLens 上的 [Windows 裝置入口網站](using-the-windows-device-portal.md)。
 
 ### <a name="windows-pc"></a>Windows PC

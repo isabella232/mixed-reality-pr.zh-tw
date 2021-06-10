@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 963589cb221b7dba1c197fff06ccb8926e12f89c
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8213c445da9c1bbf0eeb591b7995fb61bc6d5b5f
+ms.sourcegitcommit: 29a43366d5969f1a895bd184ebe272168d9be1e2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143686"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110584500"
 ---
 # <a name="tutorial-prepare-a-scene"></a>教學課程：準備場景
 
@@ -90,15 +90,27 @@ ms.locfileid: "110143686"
 
 ## <a name="add-a-camera"></a>新增相機
 
-1. 若要允許使用者輸入，相機必須附加至畫布。 讓我們新增 BABYLON 類型的相機 [。ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera) 可讓我們四處查看，也就是可以旋轉我們剛才新增至場景的物件。 建立相機實例所需的參數是 longitudinal 軸的名稱、Alpha (旋轉) 、沿著 latitudinal 軸的 Beta (旋轉) 、半徑 (距離目標) 的距離，以及相機應查看 (的目標目標) 。 將下列程式碼新增至 *createScene* 函式：
+1. 若要觀看虛擬世界並與其互動，必須將攝影機連接至畫布。 讓我們新增 BABYLON 類型的相機 [。ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera)，可在目標周圍旋轉。 建立相機實例所需的參數如下：
+    1. **名稱**：相機的名稱
+    1. **Alpha**：沿著 longitudinal 軸的角度定位 (弧度) 
+    1. **Beta**：沿著 latitudinal 軸的角度定位 (弧度) 
+    1. **半徑**：與目標的距離
+    1. **目標**：相機一律會面對 (x y z 座標所定義的點) 
+    1. **場景**：相機所在的場景
+
+    [Alpha]、[Beta]、[半徑] 和 [目標] 一起定義相機在空間中的位置，如下圖所示：
+
+    ![攝影機 Alpha Beta 半徑](../images/camera-alpha-beta-radius.jpg)
+
+    將下列程式碼新增至 *createScene* 函式：
 
     ```javascript
-    const alpha =  Math.PI;
-    const beta = Math.PI;
-    const radius = 5;
+    const alpha =  Math.PI/4;
+    const beta = Math.PI/3;
+    const radius = 8;
+    const target = new BABYLON.Vector3(0, 0, 0);
     
-    const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-    camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+    const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
     camera.attachControl(canvas, true);
     ```
 
@@ -132,12 +144,12 @@ ms.locfileid: "110143686"
                 const scene = new BABYLON.Scene(engine);
                 scene.clearColor = new BABYLON.Color3.Black;
                 
-                const alpha =  Math.PI;
-                const beta = Math.PI;
-                const radius = 5;
+                const alpha =  Math.PI/4;
+                const beta = Math.PI/3;
+                const radius = 8;
+                const target = new BABYLON.Vector3(0, 0, 0);
                 
-                const camera = new BABYLON.ArcRotateCamera("Camera", 0, 0, 0);
-                camera.setPosition(new BABYLON.Vector3(alpha, beta, radius));
+                const camera = new BABYLON.ArcRotateCamera("Camera", alpha, beta, radius, target, scene);
                 camera.attachControl(canvas, true);
                 
                 const light = new BABYLON.HemisphericLight("light", new BABYLON.Vector3(1, 1, 0));

@@ -7,12 +7,12 @@ ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 990119b25aeffcb4ce786120659af8f290a6fde2
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550198"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772411"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>歡迎使用 Mixed Reality 功能工具
 
@@ -21,7 +21,7 @@ ms.locfileid: "105550198"
 > [!IMPORTANT]
 > Mixed Reality 功能工具目前僅適用于 Unity。 如果您是在 Unreal 中進行開發，請參閱 [工具安裝](../install-the-tools.md) 檔。
 
-「混合現實」功能工具是一種新方法，可讓開發人員探索、更新和新增混合現實功能套件至 Unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 如果您之前從未使用過資訊清單檔，它就是包含所有專案套件的 JSON 檔案。 驗證您想要的封裝之後，混合現實功能工具會將這些套件下載到您選擇的專案。
+「混合現實」功能工具是一種新方法，可讓開發人員探索、更新和新增混合現實功能套件至 Unity 專案。 您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 如果您之前從未使用過資訊清單檔，這是包含所有專案套件的 JSON 檔案。 驗證您想要的套件之後，混合實境功能工具會將這些套件下載到您選擇的專案。
 
 ## <a name="system-requirements"></a>系統需求
 
@@ -63,7 +63,7 @@ ms.locfileid: "105550198"
 
 從可執行檔啟動「混合現實」功能工具，其會在第一次啟動時顯示起始頁：
 
-![開始使用](images/FeatureToolStart.png)
+![使用者入門](images/FeatureToolStart.png)
 
 從 [開始] 頁面，您可以：
 
@@ -73,7 +73,7 @@ ms.locfileid: "105550198"
 
 ## <a name="2-selecting-your-unity-project"></a>2. 選取您的 Unity 專案
 
-為確保您專案的 Unity 版本支援所有探索到的功能，第一個步驟是使用 [專案路徑] 欄位) 左邊的 **省略號** 按鈕 (，將 [Mixed Reality] 功能工具指向您的專案。
+為了確保您專案的 Unity 版本支援所有探索到的功能，第一個步驟是使用 [專案路徑] 欄位) 右邊的 **省略號** 按鈕 (，將 [Mixed Reality] 功能工具指向您的專案。
 
 ![選取 Unity 專案](images/FeatureToolSelectUnityProject.png)
 

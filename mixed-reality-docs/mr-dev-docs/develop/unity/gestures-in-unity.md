@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 手勢、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 523f05f9b3dd05a140bb40168b654a2dc0b00bb5
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 87666c120686547b1a07f6da41519219d4a47720
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299713"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600637"
 ---
 # <a name="gestures-in-unity"></a>Unity 中的手勢
 
@@ -135,8 +135,8 @@ void OnDestroy()
 
 您可以從輸入管理員存取手勢和移動控制器。
 
-* [MRTK 中的手勢](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/gestures)
-* [MRTK 中的動作控制器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/controllers)
+* [MRTK 中的手勢](/windows/mixed-reality/mrtk-unity/features/input/gestures)
+* [MRTK 中的動作控制器](/windows/mixed-reality/mrtk-unity/features/input/controllers)
 
 ## <a name="follow-along-with-tutorials"></a>遵循教學課程
 

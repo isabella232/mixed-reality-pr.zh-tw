@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, android, ios, MRTK, 混合實境工具組, UWP, Azure 空間錨點, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 699c7689fcd23543f4d4b0e86f64cdbf98debc1f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 67bda33f8d2d0711c83791be2e76d91b53ff934f
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590710"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403410"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 
@@ -25,24 +25,7 @@ ms.locfileid: "99590710"
 
 ## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
 
-在本節中，您將升級及安裝下列內建套件：
-
-* AR Foundation 3.1.3
-* XR 舊版輸入協助程式2.1。6
-* 適用於 Android 的 ARCore XR 外掛程式 3.1.3 支援
-* 適用於 iOS 的 ARKit XR 外掛程式 3.1.3 支援
-
-> [!CAUTION]
-> 並非所有版本都與 MRTK 相容，而且只有特定版本能夠一起使用，因此請務必安裝上列確切版本。
-
-在 Unity 功能表中，選取 [視窗] > [套件管理員] 以開啟 [套件管理員] 視窗，然後選取 [AR Foundation] > [3.1.3]，並按一下 [更新為 3.1.3] 按鈕以更新套件：
-
-![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-asa/asa-05-section1-step1-1.png)
-
-若有需要，遵循相同程序來匯入其餘套件。
-
-> [!NOTE]
-> 如果您正針對 Android 開發本專案，則不需要安裝 ARKit XR 外掛程式套件。 同樣地，如果您要針對 iOS 開發本專案，就不需要安裝 ARCore XR 外掛程式。
+[!INCLUDE[](includes/installing-inbuilt-unity-packages-for-asa-android-and-ios.md)]
 
 ## <a name="configure-mrtk-for-ar-foundation-camera"></a>針對 AR Foundation 相機設定 MRTK
 
@@ -55,27 +38,19 @@ ms.locfileid: "99590710"
 > [!TIP]
 > 如需有關如何複製 MRTK 設定檔的提示，您可以參閱[設定混合實境工具組設定檔](mr-learning-base-03.md)的指示。
 
-在仍選取 [相機] 索引標籤的 [偵測器] 視窗中展開 [相機設定提供者]，然後按一下 [+ 新增相機設定提供者] 按鈕，再展開新增的 [新資料提供者 1]：
+仍在 [偵測器] 視窗中選取 [ **相機** ] 索引標籤，展開 **相機設定提供者** ，然後按一下 [-] 移除 **WINDOWS MIXED REALITY 相機設定** 或 **XR SDK Windows Mixed Reality 相機設定**：
 
-![已新增新資料提供者的 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-2.png)
+![已新增新資料提供者的 Unity ARCameraProfile ](images/mr-learning-asa/asa-05-section2-step1-2.png)
+
+然後按一下 [ **+ 新增相機設定提供者** ] 按鈕，再展開新加入的 **新資料提供者**：
+
+![已新增適用于 Android 的 AR 攝影機](images/mr-learning-asa/asa-05-section2-step1-3.png)
 
 使用 [類型] 下拉式清單，將類型變更為 [Microsoft.MixedReality.Toolkit.Experimental.UnityAR] > [UnityARCameraSettings]：
 
-![具有資料提供者類型選取路徑的 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-3.png)
+![具有資料提供者類型選取路徑的 Unity ARCameraProfile](images/mr-learning-asa/asa-05-section2-step1-4.png)
 
-在仍然選取 **MixedRealityToolkit** 物件的 [階層] 視窗中，使用 [新增元件] 按鈕來新增下列元件：
-
-* AR Anchor Manager (指令碼)
-* DisableDiagnosticsSystem (指令碼)
-
-![已新增 AR 錨點管理員和 DisableDiagnosticsSystem 元件的 Unity MixedRealityToolkit 物件 ](images/mr-learning-asa/asa-05-section2-step1-4.png)
-
-> [!NOTE]
-> AR Session Origin (指令碼) 元件會在您新增 AR Reference Point Manager (指令碼) 元件時自動加入，因為這是 AR Reference Point Manager (指令碼) 元件的必要項目。
-
-
-
-藉由叫用功能表項目來更新 MRTK UnityAR 腳本定義：**混合現實工具** 組  >  **公用程式**  >  **UnityAR** > 更新腳本定義
+藉由叫用功能表項目來更新 MRTK UnityAR 腳本定義：**混合現實**  >  **工具** 組  >  **公用程式**  >  **UnityAR** > 更新腳本定義
 
 ## <a name="building-your-application-to-your-android-device"></a>在您的 Android 裝置上建置應用程式
 
@@ -90,19 +65,15 @@ ms.locfileid: "99590710"
 
 關閉 [建置設定] 視窗。
 
-在 Unity 功能表中，選取 [混合實境工具組] > [公用程式] > [設定 Unity 專案] 來開啟 [MRTK 專案設定程式] 視窗，並確定已選取所有選項，然後按一下 [套用] 按鈕來套用設定：
+在 Unity 功能表中，選取 [**混合現實**  >  **工具組**  >  **公用程式**  >  ]**設定專案以供 MRTK** 開啟 [ **MRTK 專案** 設定程式] 視窗，確認已選取 [所有選項]，然後按一下 [套用] 按鈕以套用設定：
 
-![Unity [MRTK 專案設定程式] 視窗 Android](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![Unity MRTK 專案配置器1](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [其他設定] 區段，選取 [Vulkan]，然後按一下 **"-"** 來將其移除：
 
 ![已選取 Vulcan 的 Unity [其他設定]](images/mr-learning-asa/asa-05-section3-step1-3.png)
 
-在 Unity 功能表中，選取 [**編輯**  >  **專案設定 ...**  > ]。**播放機** > **XR 設定** 時，請確定您是在 **Android** 平臺中，並勾選 [**支援虛擬實境**] 核取方塊，然後按一下 + 圖示，然後選取 [無]：
-
-![Unity [MRTK 專案設定程式] 視窗 Android](images/mr-learning-asa/asa-05-section3-step1-2-1.png)
-
-關閉 [玩家設定] 視窗，然後再次開啟 [建置設定] 視窗。
+[!INCLUDE[](includes/project-setting-for-asa-android.md)]
 
 在 [建置設定] 視窗中，按一下 [新增開啟的場景] 按鈕，將您目前的場景加入至 [建置中的場景] 清單。 然後，使用 USB 纜線，將您的 Android 裝置連接到您的電腦，並從 [執行裝置] 下拉式清單中將其選取：
 
@@ -118,7 +89,7 @@ ms.locfileid: "99590710"
 ![具有 [儲存] 提示視窗 Android 的 Unity [建置設定] 視窗](images/mr-learning-asa/asa-05-section3-step1-5.png)
 
 > [!NOTE]
-如果您在 Unity 主控台視窗中遇到與 Android SDK、NDK 或 JDK 模組相關的任何錯誤，則需要開啟 Unity Hub，並安裝相關聯的 Android 建置支援模組。
+> 如果您在 Unity 主控台視窗中遇到與 Android SDK、NDK 或 JDK 模組相關的任何錯誤，則需要開啟 Unity Hub，並安裝相關聯的 Android 建置支援模組。
 
 當建置程序完成時，應用程式應該會自動載入您的 Android 裝置。
 
@@ -135,9 +106,11 @@ ms.locfileid: "99590710"
 
 關閉 [建置設定] 視窗。
 
-在 Unity 功能表中，選取 [混合實境工具組] > [公用程式] > [設定 Unity 專案] 來開啟 [MRTK 專案設定程式] 視窗，並確定已選取所有選項，然後按一下 [套用] 按鈕來套用設定：
+在 Unity 功能表中，選取 [**混合現實**  >  **工具組**  >  **公用程式**  >  ]**設定專案以供 MRTK** 開啟 [ **MRTK 專案** 設定程式] 視窗，確認已選取 [所有選項]，然後按一下 [套用] 按鈕以套用設定：
 
 ![Unity [MRTK 專案設定程式] 視窗 iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
+
+[!INCLUDE[](includes/project-setting-for-asa-ios.md)]
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [其他設定] 區段，取消核取 [Strip Engine Code] 核取方塊來將其停用：
 

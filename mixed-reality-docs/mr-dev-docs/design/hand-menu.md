@@ -6,12 +6,12 @@ ms.author: nobarr
 ms.date: 08/27/2019
 ms.topic: article
 keywords: 手、功能表、按鈕、快速存取、版面配置、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: e222d792d883ccacc71b177fbde21979c8dfcc77
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: f007ada2d7a594f141d30a3619d4d80ac74621d8
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299913"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600327"
 ---
 # <a name="hand-menu"></a>手部功能表
 
@@ -21,13 +21,13 @@ ms.locfileid: "107299913"
 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4AJAg]
 
-您會在下列清單中找到使用手形功能表的建議最佳作法。 您也可以在 [MRTK](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)中找到示範手形功能表的範例場景。
+您會在下列清單中找到使用手形功能表的建議最佳作法。 您也可以在 [MRTK](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)中找到示範手形功能表的範例場景。
 
 <br>
 
 ---
 
-## <a name="best-practices"></a>最佳作法
+## <a name="best-practices"></a>最佳做法
 
 **將按鈕數目維持在最小** 
 
@@ -170,7 +170,7 @@ ms.locfileid: "107299913"
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供快顯功能表的腳本和範例幕後。 HandConstraintPalmUp 求解腳本可讓您使用各種可設定的選項，將任何物件附加至手。 MRTK 的功能表範例包含實用的選項，例如，用來防止啟用錯誤的一般棕櫚和注視需求。
 
-* [手形功能表檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [手形功能表檔](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 * [手形功能表範例場景](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/main/Assets/MRTK/Examples/Demos/HandTracking/Scenes/HandMenuExamples.unity)
 
 您可以使用 MRTK 範例中樞應用程式，在 HoloLens 2 中試用手中的功能表範例。

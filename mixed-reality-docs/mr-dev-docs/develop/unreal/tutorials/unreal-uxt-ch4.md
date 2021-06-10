@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 2ceb16d31c793629e93c3dca00cb215fcbe38c6a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102237149"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712595"
 ---
 # <a name="4-making-your-scene-interactive"></a>4.使場景成為互動式場景
 
@@ -20,26 +20,28 @@ ms.locfileid: "102237149"
 
 ## <a name="objectives"></a>目標
 
-* 從 GitHub 安裝混合實境 UX 工具外掛程式
+* 安裝 Mixed Reality UX 工具外掛程式
 * 將手部互動動作項目新增至您的指尖
 * 建立操作工具並將其新增到場景中的物件
 * 使用輸入模擬來驗證專案
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>下載混合實境 UX 工具外掛程式
-開始處理使用者輸入之前，您必須先將外掛程式新增至專案。
+開始使用使用者輸入之前，您必須先將 Mixed Reality UX 工具外掛程式新增至專案。 若要深入瞭解 UX 工具，您可以在 [GitHub](https://aka.ms/uxt-unreal)上查看專案。
 
-1. 在 GitHub 的混合實境 UX 工具 [版本頁面](https://github.com/microsoft/MixedReality-UXTools-Unreal/releases)上，瀏覽至適用於 Unreal 的 UX 工具 v0.10.0 版本，並下載 **UXTools.0.10.0.zip**。 將檔案解壓縮。
+1. 開啟 [長篇比賽] 啟動器。 流覽至 Unreal Engine Marketplace 並搜尋「[混合現實 UX 工具](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)」。 將外掛程式安裝到您的引擎。
 
-2.  在專案的根資料夾中，建立名為 **Plugins** 的新資料夾。 將解壓縮的 UXTools 外掛程式複製到這個資料夾中，然後重新啟動 Unreal 編輯器。
+![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-![建立專案外掛程式資料夾](images/unreal-uxt/4-plugins.PNG)
+2. 回到 [Unreal 編輯器]，移至 [**專案設定**]  >  **外掛程式**，並搜尋「混合式現實 UX 工具」。 確定已啟用外掛程式，並在出現提示時重新開機編輯器。
 
-3.  UXTools 外掛程式有一個內容資料夾，內含 **按鈕**、**輸入模擬** 和 **指標** 等元件的子資料夾，且具有包含額外程式碼的 C++ 類別資料夾。  
+![啟用混合式現實 UX 工具外掛程式](images/unreal-uxt/2-enable-uxt.PNG)
+
+3.  UXTools 外掛程式的 Content 資料夾具有元件的子資料夾，包括 **按鈕**、 **XR 模擬** 和 **指標**，以及具有額外程式碼的 c + + 類別資料夾。  
 
 > [!NOTE]
-> 如果您在 [內容瀏覽器] 中沒有看到 [UXTools 內容] 區段，請按一下 [檢視選項] > [顯示外掛程式內容]。
+> 如果您在 **內容瀏覽器** 中看不到 [ **UXTools 內容**] 區段，請按一下 [**視圖選項] > 顯示引擎內容**]。
 
-![顯示外掛程式內容](images/unreal-uxt/4-showplugincontent.PNG)
+![顯示引擎內容](images/unreal-uxt/4-showenginecontent.PNG)
 
 如需其他外掛程式文件，可以從混合實境 UX 工具 GitHub [存放庫](https://aka.ms/uxt-unreal)取得。
 

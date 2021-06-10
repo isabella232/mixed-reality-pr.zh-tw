@@ -1,16 +1,16 @@
 ---
-title: MRTK 和 XRSDK 的開始使用
-description: 具有 XRSDK 的 MRTK 登陸頁面
+title: 開始使用 MRTK 和 XR SDK
+description: 使用 XR SDK 的 MRTK 登陸頁面
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、
-ms.openlocfilehash: ef6d8c9205a9d801e8cb0ec2690d77b74c72b5fb
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、XR SDK
+ms.openlocfilehash: d3ff4306205cc6548bc5617d727f32a780855439
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143521"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647205"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>開始使用 MRTK 和 XR SDK
 
@@ -76,7 +76,73 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
 > 在 MRTK 和 OpenXR 的初始版本中，僅原生支援 HoloLens 2 表達的手和 Windows Mixed Reality 的移動控制器。 即將推出的版本中將會新增其他硬體的支援。
 
 ## <a name="configuring-mrtk-for-the-xr-sdk-pipeline"></a>設定 XR SDK 管線的 MRTK
+::: moniker range=">= mrtkunity-2021-05" 
+如果使用 OpenXR，請選擇 "DefaultOpenXRConfigurationProfile" 作為使用中的設定檔，或將其複製以進行自訂。
 
+如果在 XR 外掛程式管理設定中使用其他 XR 執行時間（例如 Windows Mixed Reality 或 Oculus），請選擇 "DefaultXRSDKConfigurationProfile" 作為使用中的設定檔，或將其複製以進行自訂。
+
+您可以視需要使用正確的系統和提供者來設定這些設定檔。 如需有關使用 XR SDK 的設定檔和範例支援的詳細資訊，請參閱 [設定檔](../features/profiles/profiles.md#xr-sdk) 檔。
+
+若要將現有的設定檔遷移至 XR SDK，應新增下列服務和資料提供者。 您將能夠在 [XR SDK] 索引標籤下看到新的資料提供者
+
+![[XR SDK] 索引標籤](../features/images/xrsdk/XrsdkTabView.png)
+
+### <a name="camera"></a>相機
+
+新增下列資料提供者 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings)**和**[`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
+
+![XR SDK 攝影機設定](../features/images/xrsdk/CameraSystemXRSDK.png)
+
+### <a name="input"></a>輸入
+
+新增下列資料提供者 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
+
+__OpenXR__：
+
+![OpenXR 輸入設定](../features/images/xrsdk/InputSystemOpenXR.png)
+
+__Windows Mixed Reality__：
+
+![XR SDK 輸入設定](../features/images/xrsdk/InputSystemWMRXRSDK.png)
+
+### <a name="boundary"></a>界限
+
+新增下列資料提供者 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
+
+![XR SDK 界限設定](../features/images/xrsdk/BoundarySystemXRSDK.png)
+
+### <a name="spatial-awareness"></a>空間感知
+
+新增下列資料提供者 
+
+| OpenXR | Windows Mixed Reality |
+|--------|-----------------------|
+| 正在進行 | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
+
+![XR SDK 空間感知設定](../features/images/xrsdk/SpatialAwarenessXRSDK.png)
+
+### <a name="controller-mappings"></a>控制器對應
+
+如果使用自訂控制器對應設定檔，請開啟其中一個設定檔，並執行混合現實工具組-> 公用程式-> 更新 > 控制器對應設定檔] 功能表項目，以確保已定義新的 XR SDK 控制器類型。
+
+## <a name="see-also"></a>另請參閱
+
+* [Unity 中的 AR 開發使用者入門](https://docs.unity3d.com/Manual/AROverview.html)
+* [Unity 中的 VR 開發使用者入門](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 如果使用 OpenXR，請選擇 "DefaultOpenXRConfigurationProfile" 作為使用中的設定檔，或將其複製以進行自訂。
 
 如果在 XR 外掛程式管理設定中使用其他 XR 執行時間（例如 Windows Mixed Reality 或 Oculus），請選擇 "DefaultXRSDKConfigurationProfile" 作為使用中的設定檔，或將其複製以進行自訂。
@@ -155,3 +221,4 @@ to
 
 * [Unity 中的 AR 開發使用者入門](https://docs.unity3d.com/Manual/AROverview.html)
 * [Unity 中的 VR 開發使用者入門](https://docs.unity3d.com/Manual/VROverview.html)
+::: moniker-end

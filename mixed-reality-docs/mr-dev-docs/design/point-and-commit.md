@@ -7,12 +7,12 @@ ms.date: 04/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 互動, 設計, HoloLens, 手部, 遠方, 指向和行動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, 手部射線, 物件操作, MRTK, 混合實境工具組, DoF
-ms.openlocfilehash: 78a3ff87a48bbff838df4ee8baab7f8ea80203c0
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: a33927396d0d9a349d655245355733d24ea7d9ad
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299803"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600607"
 ---
 # <a name="point-and-commit-with-hands"></a>手部指向和行動
 
@@ -32,7 +32,7 @@ ms.locfileid: "107299803"
 <tr>
      <td><strong>輸入模型</strong></td>
      <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
-     <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+     <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
      <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
 </tr>
 <tr>
@@ -204,9 +204,9 @@ ms.locfileid: "107299803"
 
 根據預設，MRTK 會提供一個手部射線 prefab ([DefaultControllerPointer.prefab](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/main/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Pointers))，其與命令介面的系統手部射線具有相同視覺狀態。 其是在 MRTK 輸入設定檔的 [指標] 下進行指派。 在沉浸式頭戴裝置中，相同的光線會用於運動控制器。
 
-* [MRTK - 指標設定檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
-* [MRTK - 輸入系統](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
-* [MRTK - 指標](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
+* [MRTK - 指標設定檔](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - 輸入系統](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - 指標](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

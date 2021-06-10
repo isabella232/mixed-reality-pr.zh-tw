@@ -5,12 +5,12 @@ author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、閏運動、
-ms.openlocfilehash: 44593713f08a00fa53325eebfae2cf9042d386be
-ms.sourcegitcommit: 62beb626b2db6ce7df86014bd22bf1946b8906b9
+ms.openlocfilehash: 8ef5d26512d50a93691932789e84c099c6246bc3
+ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/20/2021
-ms.locfileid: "110207470"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110543234"
 ---
 # <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>如何在 MRTK 中使用 Ultraleap) 手勢來設定 Leap 運動 (
 
@@ -25,7 +25,7 @@ ms.locfileid: "110207470"
 | MRTK 版本 | 支援的 Leap 動作 Unity 模組版本 |
 | --- | --- |
 |2.6. x | 4.5.0，4.5。1|
-|2.7. x| 4.5.0、4.5.1、4.6.0、4.7.0、4.7。1|
+|2.7. x| 4.5.0、4.5.1、4.6.0、4.7.0、4.7.1、4.8。0|
 
 
 ## <a name="using-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>在 MRTK 中使用 Ultraleap) 手動追蹤 (的 Leap 動作
@@ -91,7 +91,7 @@ ms.locfileid: "110207470"
 1. 建立您的專案
     - 流覽至檔案 **> 組建設定**
     - 如果使用 Data Provider 的 Leap 動作，只支援獨立組建。
-    - 如需有關如何使用獨立組建 Windows Mixed Reality 耳機的指示，請參閱 [建立和部署 MRTK (獨立) ](wmr-mrtk.md#building-and-deploying-mrtk-standalone)。
+    - 如需有關如何使用適用于獨立組建的 Windows Mixed Reality 耳機的指示，請參閱 [建立和部署 MRTK 至 WMR 耳機 (獨立) ](wmr-mrtk.md#building-and-deploying-mrtk-to-wmr-headsets-standalone)。
 
 ## <a name="getting-the-hand-joints"></a>取得手接點
 

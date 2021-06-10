@@ -6,12 +6,12 @@ ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
 keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: ec302cecb106b339828adf1c8777c2ea7ec7fa30
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300043"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600427"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -146,7 +146,7 @@ ms.locfileid: "107300043"
 
 ## <a name="implementing-hands-into-your-unity-project"></a>實際執行您的 Unity 專案
 
-### <a name="best-practices"></a>最佳作法
+### <a name="best-practices"></a>最佳做法
 
 * 建議您將 unity 中的手縮小至0。6
 * 雙手應該播放兩次，如果未完成，則會持續迴圈直到手勢完成為止。 雙手應迴圈兩次，以確保使用者有時間註冊並查看手勢。 手應該在迴圈之間淡入和縮小。 
@@ -181,4 +181,4 @@ ms.locfileid: "107300043"
 * [安裝工具](../develop/install-the-tools.md)
 * [設定 Unity 專案](../develop/unity/Configure-Unity-Project.md)
 * [Unity 開發概觀](../develop/unity/unity-development-overview.md)
-* [MRTK 101](../out-of-scope/mrtk-101.md)
+* [MRTK 101](/windows/mixed-reality/mrtk-unity/)

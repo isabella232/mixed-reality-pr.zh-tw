@@ -1,24 +1,33 @@
 ---
-title: 部署至 Hololens 和 WMR 裝置
+title: 部署到 Hololens 和 WMR 耳機
 description: 用來建立及部署應用程式至各種裝置的檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Visual Studio
-ms.openlocfilehash: ec66c6ccb8cf1c702fed804230f5cf3ca0526139
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 1547f0630d307e9e87505890adef4cad366d6c00
+ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109852373"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110441156"
 ---
-# <a name="building-and-deploying-mrtk-uwp"></a>建立及部署 MRTK (UWP) 
+# <a name="deploying-to-hololens-and-wmr-headsets"></a>部署到 Hololens 和 WMR 耳機
 
-若要在裝置上執行應用程式作為獨立應用程式 (HoloLens、Android、iOS 等 ) ，必須在 unity 專案中執行組建和部署步驟。 建立及部署使用 MRTK 的應用程式，就像是建立和部署任何其他 Unity 應用程式一樣。 沒有任何 MRTK 特定的指示。 請參閱下面的詳細步驟，以瞭解如何建立及部署適用于 HoloLens 的 Unity 應用程式。 深入瞭解如何在 [發行組建](https://docs.unity3d.com/Manual/PublishingBuilds.html)中建立其他平臺。
+有兩種方式可將使用 MRTK 建立的應用程式部署至您的 windows 裝置、通用 Windows 平臺 (UWP) 和獨立平臺。 針對 HoloLens 1 或 HoloLens 2 所建立的應用程式必須以 UWP 為目標，而針對 WMR 耳機所建立的應用程式可能會以 UWP 或獨立式為目標。
 
 ## <a name="building-and-deploying-mrtk-to-hololens-1-hololens-2-and-wmr-headsets-uwp"></a>建立和部署 MRTK 至 HoloLens 1、HoloLens 2 和 WMR 耳機 (UWP) 
 
 您可以在 [建立應用程式至裝置](/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)時找到有關如何建立及部署 **HoloLens 1** 和 **HoloLens 2** (UWP) 的指示。 這些步驟也可讓您部署至 **WMR 耳機**。
+
+> [!NOTE]
+> 在 Visual Studio 中將應用程式部署至您的裝置時，您需要根據裝置設定 Visual Studio 稍有不同。 設定如下所示
+>
+>| 平台 | 組態 | 架構 | 目標 |
+|---|---|---|---|
+| HoloLens 2 | Release 或 Master | ARM64 | 裝置 |
+| HoloLens 1 | Release 或 Master | x86 | 裝置 |
+| WMR 耳機 | Release 或 Master | x64 | 本機電腦 |
 
 **秘訣：** 建立 HoloLens 1、HoloLens 2 或 WMR 時，建議組建設定「目標 SDK 版本」和「最低平臺版本」看起來像下圖所示：
 
@@ -50,7 +59,7 @@ ms.locfileid: "109852373"
 >
 > 如果需要 ARM 架構，請流覽至 [ **編輯] > 專案設定**]、[播放程式]，然後在 [ **其他設定** ] 功能表下，停用 **圖形作業**。 停用 **圖形作業** 可讓應用程式使用 Unity 2019.3. x 的 ARM 組建架構進行部署，但建議使用 ARM64。
 
-## <a name="building-and-deploying-mrtk-standalone"></a>建立及部署 MRTK (獨立) 
+## <a name="building-and-deploying-mrtk-to-wmr-headsets-standalone"></a>建立 MRTK，並將其部署至 WMR 耳機 (獨立) 
 
 MRTK 的獨立組建可用於 WMR 耳機。 WMR 耳機的獨立組建需要下列額外步驟：
 

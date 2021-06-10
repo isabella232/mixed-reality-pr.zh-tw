@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、著色器、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、視覺效果
-ms.openlocfilehash: 4bf8205ac9dfbd22a0deb9ffe796fd4e33a96f89
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 9a60c5065ddb5bcf410bb43b318575da50f7ccf8
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300383"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600177"
 ---
 # <a name="shader"></a>著色器
 
@@ -38,7 +38,7 @@ ms.locfileid: "107300383"
 
 ## <a name="standard-shader-in-mrtk-for-unity"></a>適用于 Unity 的 MRTK 中的標準著色器
 
-* [MRTK-標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
+* [MRTK-標準著色器](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)
 
 <br>
 

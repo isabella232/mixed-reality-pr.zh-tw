@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, unity, unreal, directx, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 虛擬實境, 擴增實境, 虛擬實境開發, 擴增實境開發
-ms.openlocfilehash: fb470fe0ec146346d18b353b5d359956d2fd28ac
-ms.sourcegitcommit: 728f4523188628950478cc03ec7145e89569e0d3
+ms.openlocfilehash: 0ff9c5bbf4c7da7c3d2c40d825ab92058b3eb3b1
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/28/2021
-ms.locfileid: "108172540"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743402"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>混合實境開發簡介
 
@@ -25,7 +25,7 @@ ms.locfileid: "108172540"
 
 **Unity** -Unity 是市場上領先業界的其中一個即時開發平台，包含以 C++ 撰寫的基礎執行階段程式碼，並在 C# 中完成所有開發指令碼。 無論您想要打造遊戲、電影和動畫電影藝術，甚至要在虛擬世界中轉譯架構或工程概念，Unity 都有可支援您的基礎結構。
 
-**Unreal** - Unreal Engine 4 是功能強大的開放原始碼建立引擎，具備對 C++ 和 Blueprints 混合實境的完整支援。 從 Unreal Engine 4.25 開始，HoloLens 支援已具備完整功能且可供生產環境使用。 藉由使用靈活的 Blueprints Visual Scripting 系統功能，設計人員幾乎可以使用通常僅適用於程式設計人員的完整概念和工具。 各行各業的建立者可以利用自由和控制來提供最先進的內容、互動式體驗和沉浸式虛擬世界。
+**Unreal** -Unreal Engine 是功能強大的開放原始碼建立引擎，在 c + + 和 Unreal 的藍圖視覺腳本系統中都有混合現實的完整支援。 從 Unreal Engine 4.25 開始，HoloLens 支援已具備完整功能且可供生產環境使用。 有了彈性藍圖視覺腳本系統所提供的功能，設計人員就不需要撰寫程式碼，就能使用通常僅供程式設計師使用的完整概念和工具。 各行各業的建立者可以利用自由和控制來提供最先進的內容、互動式體驗和沉浸式虛擬世界。
 
 **原生 (OpenXR)** - OpenXR 是 Khronos 中開放且免權利金的 API 標準，可讓引擎以原生方式對多個跨混合實境頻譜的廠商存取其中各種裝置。 您可以在 HoloLens 2 上使用 OpenXR 或在電腦上使用 Windows Mixed Reality 沉浸式頭戴裝置進行開發。 如果您無法存取頭戴式裝置，則可使用適用於 HoloLens 2 和 Windows Mixed Reality 頭戴式裝置的模擬器。
 

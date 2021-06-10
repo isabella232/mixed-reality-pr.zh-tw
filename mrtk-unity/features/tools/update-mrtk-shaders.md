@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ed9f9fa5e6337850f31ecce9d07bc82a8ea12060
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1f943d8ac7050b8607ae3a85af0a377a7460eb3b
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145129"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647096"
 ---
 # <a name="updating-shaders"></a>更新著色器
 
@@ -23,10 +23,10 @@ ms.locfileid: "110145129"
 > [!IMPORTANT]
 > 覆寫著色器檔案時，將會遺失任何自訂修改。 在升級之前，請務必先備份任何已修改的著色器檔案。
 >
-> 如果專案已設定為使用通用轉譯管線 (URP) 先前的輕量轉譯管線 (LWRP) ，請針對輕量轉譯管線重新執行 **混合現實工具** 組 > **公用程式** >
+> 如果專案已設定為使用通用轉譯管線 (URP) 先前的輕量轉譯管線 (LWRP) ，請針對輕量轉譯管線重新執行 **混合現實** > **工具** 組 > **公用程式** >
 >  **升級 MRTK 標準著色器**。
 
-您也可以在 Unity 編輯器的功能表列上，使用 **混合現實工具** 組  >  **公用程式**  >  **檢查著色器更新**，隨時檢查著色器更新。
+您也可以在  >    >  Unity 編輯器的功能表列上，使用混合現實工具組 **公用程式**  >  **檢查著色器更新**，隨時檢查著色器更新。
 
 ![檢查著色器更新](../images/tools/ShaderUpdateMenu.png)
 

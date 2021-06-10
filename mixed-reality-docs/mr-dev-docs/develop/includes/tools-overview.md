@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d7e248788d4c4976acbb9ff23177d354894f57dd
-ms.sourcegitcommit: 6272d086a2856e8b514a719e1f9e3b78554be5be
+ms.openlocfilehash: 41d87aa3bbf65ddb743c17d9d1f86a41e8dae876
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105958329"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772334"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,7 +12,7 @@ ms.locfileid: "105958329"
 
 ### <a name="1-download-the-recommended-unity-version"></a>1. 下載建議的 Unity 版本 
 
-目前的混合現實開發建議版本是 **Unity 2019.4 LTS (長期支援)**。 安裝和管理 Unity 的最佳方式是透過 **Unity 中樞**。 
+目前的混合現實開發建議版本是 **Unity 2020.3 LTS (長期支援)**。 安裝和管理 Unity 的最佳方式是透過 **Unity 中樞**。 
 
 > [!NOTE]
 >  如果您使用 Unity 2020 LTS，混合現實支援可供 HoloLens 2 開發之用。 不過，目前有一些已知問題。 這將會在今年稍後成為建議的 Unity 版本。 
@@ -37,7 +37,7 @@ ms.locfileid: "105958329"
 
 「 [混合現實」功能工具](../unity/welcome-to-mr-feature-tool.md) 是一種新的方法，讓開發人員可以探索並將混合現實功能套件新增至 Unity 專案。 
 
-您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 驗證您想要的封裝之後，混合現實功能工具會將這些套件下載到您選擇的專案。
+您可以依名稱或類別搜尋套件、查看其相依性，甚至在匯入之前查看專案資訊清單檔的建議變更。 驗證您想要的套件之後，混合實境功能工具會將這些套件下載到您選擇的專案。
 
 #### <a name="importing-the-mixed-reality-toolkit"></a>匯入混合實境工具組
 
@@ -50,7 +50,7 @@ ms.locfileid: "105958329"
 建議您在策劃 [HoloLens](../unity/unity-development-overview.md#1-getting-started) 或 [VR](../unity/unity-development-wmr-overview.md#1-getting-started) 開發旅程中完成「開始使用」一節。 依循適用於 HoloLens 的 Unity 開發旅程，接下來請完成下列其餘的設定步驟，並繼續進行 [HoloLens 2 開始使用教學課程](../unity/tutorials/mr-learning-base-01.md)。
 
 > [!IMPORTANT]
-> 請注意，安裝指示的目標是 MRTK 和 Unity 版本的最新穩定組合，也就是 **MRTK 2.6.1** 和 **unity 2019.4 LTS**。
+> 請注意，安裝指示的目標是 MRTK 和 Unity 版本的最新穩定組合，也就是 **MRTK 2.7** 和 **unity 2020.3 LTS**。
 
 > [!NOTE]
 > 如果您不想要使用適用于 Unity 的 MRTK，您必須 [自行編寫所有互動和行為的腳本](../unity/configure-unity-project.md)。

@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR、WinMR、WebAR、WebVR、WindowsMixedReality、HoloLens、windows mixed reality、web vr、web xr、web mr、web ar、360、360影片、360影片、360相片、360相片、360內容、沉浸式 web、immersiveweb、IW
-ms.openlocfilehash: 0954d6554acea8474548a3703de35971a76f7770
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: fa4d11fac59e25f43d9d55de16d3b0c35e8166b7
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088477"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600107"
 ---
 # <a name="webxr-overview"></a>WebXR 總覽
 
@@ -21,17 +21,17 @@ ms.locfileid: "106088477"
 
 ## <a name="viewing-webxr"></a>觀看 WebXR
 
-您可以在 Windows Mixed Reality 上查看 WebXR experinces， [以及新的 Microsoft Edge](/windows/mixed-reality/whats-new/new-microsoft-edge) 和 [Firefox 事實](https://mixedreality.mozilla.org/firefox-reality/)。
+您可以在 Windows Mixed Reality 上查看 WebXR experinces， [以及新的 Microsoft Edge](../../whats-new/new-microsoft-edge.md) 和 [Firefox 事實](https://mixedreality.mozilla.org/firefox-reality/)。
 若要測試您的瀏覽器是否支援 WebXR，您可以在瀏覽器中流覽至 [WebXR 範例](https://immersive-web.github.io/webxr-samples/) 。
 
 ## <a name="see-also"></a>另請參閱
 
-* [使用 Babylon.js 建立 WebXR 體驗](/windows/mixed-reality/develop/javascript/tutorials/babylonjs-webxr-helloworld/introduction-01)
+* [使用 Babylon.js 建立 WebXR 體驗](./tutorials/babylonjs-webxr-helloworld/introduction-01.md)
 * [WebXR 裝置 API 規格](https://immersive-web.github.io/webxr/)
 * [WebXR 裝置 API 檔](https://developer.mozilla.org/en-US/docs/Web/API/WebXR_Device_API)
 * [Immersiveweb.dev](https://immersiveweb.dev/)
 * [WebXR 範例](https://immersive-web.github.io/webxr-samples/)
-* [Windows Mixed Reality 和新的 Microsoft Edge](/windows/mixed-reality/whats-new/new-microsoft-edge)
+* [Windows Mixed Reality 和新的 Microsoft Edge](../../whats-new/new-microsoft-edge.md)
 * [沉浸式 Web W3C Github](https://github.com/immersive-web)
 * [WebGL API](/previous-versions/windows/internet-explorer/ie-developer/dev-guides/bg182648(v=vs.85))
 * [遊戲台 API](https://msdn.microsoft.com/library/dn743630(v=vs.85).aspx)和[遊戲台擴充](https://w3c.github.io/gamepad/extensions.html)功能

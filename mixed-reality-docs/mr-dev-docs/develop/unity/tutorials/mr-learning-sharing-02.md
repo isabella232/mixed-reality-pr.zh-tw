@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: 4b81ed3a78cc47f4ad0463cab085621102060dc8
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: dc50ec9fcdbef1ce5f6a6e954c4bbb6f3fb10256
+ms.sourcegitcommit: 1d8fa82b5ca6d17cf03a5cf11d0669f32a31e5d0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982761"
+ms.lasthandoff: 06/07/2021
+ms.locfileid: "111575735"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -28,14 +28,13 @@ ms.locfileid: "105982761"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-首先，請遵循[初始化您的專案和部署第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
+首先，請遵循 [初始化您的專案和部署第一個應用程式](mr-learning-base-02.md)，但不包括設定 [場景](mr-learning-base-02.md#configuring-the-scene) ，並將 [您的應用程式建立到您的裝置](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 指示，其中包含下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
-6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 MultiUserCapabilities
+4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [建立場景並設定 MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) ，並為場景提供適當的名稱，例如 *MultiUserCapabilities*
 
 然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
 

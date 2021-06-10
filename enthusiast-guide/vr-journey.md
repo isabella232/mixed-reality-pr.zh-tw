@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/15/2020
 ms.topic: overview
 keywords: Windows Mixed Reality，Mixed Reality，虛擬實境，VR，MR，
-ms.openlocfilehash: c238ec41c75e565cc3eb2bb8bcb9b68eff015f59
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 88aab47a943fd004ef0a90a8c6749da1a403ff2f
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944649"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600507"
 ---
 # <a name="start-your-vr-journey"></a>開始您的 VR 旅程
 
@@ -82,7 +82,7 @@ Windows Mixed Reality 和沉浸式的 VR 耳機都有不同的功能和服務可
 | [使用 SteamVR](using-steamvr-with-windows-mixed-reality.md) | 連接您的裝置並播放 SteamVR 遊戲，瞭解 Windows 測試人員計畫 |
 | [使用 Microsoft Edge](using-microsoft-edge.md) | 在您的沉浸式裝置上安裝最新版本的 Microsoft Edge |
 | [使用 WebVR](webvr.md) | 在瀏覽器環境中取得安裝程式以體驗 VR |
-| [探索 AltspaceVR](https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey) | 探索使用 AltspaceVR 擴充的 VR 事件世界 |
+| [探索 AltspaceVR](/windows/mixed-reality/altspace-vr/journey) | 探索使用 AltspaceVR 擴充的 VR 事件世界 |
 
 ## <a name="troubleshooting-tips--resources"></a>疑難排解、秘訣 & 資源
 

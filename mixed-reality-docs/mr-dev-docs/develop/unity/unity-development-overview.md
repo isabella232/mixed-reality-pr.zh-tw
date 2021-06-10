@@ -7,18 +7,23 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: ba68c3d74f58fc43af3de039e5eba1712d195cc0
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 7ecc111f6dfe2cc66091b0ed8fc959819c4da897
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528734"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741956"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
 ![Unity 橫幅標誌](../images/unity_logo_banner.png)
 
-要在 [Unity](https://unity.com) 中建置 HoloLens [混合實境應用程式](../../design/app-views.md)，使用混合實境工具組是最快速的途徑。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 您也可以造訪內容豐富的[資產存放區](https://assetstore.unity.com)和 [Unity 混合實境論壇](https://forum.unity3d.com/forums/hololens.102/)，與建置混合實境應用程式的線上社群交流。 您絕對想不到在這裡會發現哪些絕佳的資產或解決方案。 當您準備好開始使用 MRTK 時，請前往以下開發檢查點！
+在 Unity 中建立 HoloLens 混合現實應用程式最快速的途徑，是使用混合現實工具組 (MRTK) 。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 
+
+如果您是 Unity 中混合現實開發的新功能，而且想要使用 MRTK 啟動並執行專案，請查看我們的 Microsoft Learn 課程模組。 當您取得專案的停止回應之後，您隨時都可以回到這裡，以取得更多的中繼和高級主題！
+
+> [!div class="nextstepaction"]
+> [使用 MRTK 設定混合現實 Unity 專案](/learn/modules/mixed-reality-toolkit-project-unity)
 
 > [!IMPORTANT]
 > 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。 我們針對使用 HTK、MRTK v1 或 SteamVR 的專案提供了指南。
@@ -83,11 +88,15 @@ ms.locfileid: "107528734"
 
 ## <a name="5-adding-services"></a>5.新增服務
 
-到了開發旅程的這個階段，您可能會想要新增服務，或是需要商業部署方面的協助。 將 [Azure 雲端服務](../mixed-reality-cloud-services.md)與 Dynamics 365 功能整合，可以有效提升您的專案等級。 我們編譯了一些方便您探索及擴充混合實境知識的起點。
+到了開發旅程的這個階段，您可能會想要新增服務，或是需要商業部署方面的協助。 整合 [Azure 雲端服務](../mixed-reality-cloud-services.md) 可讓您以主要方式來設定專案的等級。 我們編譯了一些方便您探索及擴充混合實境知識的起點。
 
 [!INCLUDE[](../includes/unity-cloud-services-d365.md)]
 
 針對其他可供您以自助方式新增至 Unity 專案的其他 Azure 服務，我們也提供了[完整的支援文件清單](../mixed-reality-cloud-services.md#standalone-unity-services)。
+
+## <a name="6-low-code-alternatives"></a>6. 低程式碼替代方案
+
+[!INCLUDE[](../includes/unity-low-code.md)]
 
 ## <a name="whats-next"></a>接下來要做什麼？
 
@@ -113,9 +122,9 @@ ms.locfileid: "107528734"
 
 |  主題  |  描述  |
 | --- | --- |
-| [MRTK 架構概觀](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/architecture/overview) | 深入了解 MRTK SDK 在您的專案中如何運作 |
-| [設定和效能](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | 分析您的應用程式、更新 Unity 設定，並取得最理想的全像投影穩定效能 |
-| [開始使用 MRTK + XR](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | 轉移至 Unity 所提供的替代 XR 管線 |
+| [MRTK 架構概觀](/windows/mixed-reality/mrtk-unity/architecture/overview) | 深入了解 MRTK SDK 在您的專案中如何運作 |
+| [設定和效能](/windows/mixed-reality/mrtk-unity/performance/perf-getting-started) | 分析您的應用程式、更新 Unity 設定，並取得最理想的全像投影穩定效能 |
+| [開始使用 MRTK + XR](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk) | 轉移至 Unity 所提供的替代 XR 管線 |
 
 ### <a name="unity-resources"></a>Unity 資源
 

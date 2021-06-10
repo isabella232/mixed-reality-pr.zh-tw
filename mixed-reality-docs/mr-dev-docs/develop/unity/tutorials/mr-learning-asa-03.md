@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 應用程式工作階段
 ms.localizationpriority: high
-ms.openlocfilehash: 91f1139181a5a77123e003fc0c64d0661220a143
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4a435702e87dc34ed96d5493a67905b8ab372a38
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590680"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403349"
 ---
 # <a name="3-saving-retrieving-and-sharing-azure-spatial-anchors"></a>3.儲存、擷取和共用 Azure Spatial Anchors
 

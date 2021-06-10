@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 58ea52332485a3e0ca460322f6af60266b119ede
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590190"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772421"
 ---
 # <a name="3-connecting-multiple-users"></a>3.連線多個使用者
 
@@ -69,7 +69,7 @@ ms.locfileid: "99590190"
 
 ### <a name="2-create-the-avatar"></a>2.建立虛擬人偶
 
-在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **StandardAssets**  >  **材質**] 資料夾，以找出 MRTK 的材質。
+在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組標準資產**  >  **材質**] 資料夾，以找出 MRTK 的材質。
 
 然後在 [階層] 視窗中，以滑鼠右鍵按一下 [PhotonUser] 物件，然後選取 [3D 物件]  >  [球體]，將球體物件建立為 PhotonUser 物件的子系，並依照下列方式進行設定：
 

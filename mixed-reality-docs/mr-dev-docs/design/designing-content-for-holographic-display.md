@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI 設計、全像展示、內容設計、深色主題、淺色主題、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、圖元
-ms.openlocfilehash: 325b7bf6318d1b54c4b4c33aa58faea7388e0864
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300033"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600317"
 ---
 # <a name="designing-content-for-holographic-display"></a>設計全像攝影顯示器的內容
 
@@ -85,7 +85,7 @@ HolographicBackplate 材質會套用至 HoloLens shell 中的數個 UI 面板。
 
 根據預設，透明或透明物件不會寫入深度來允許適當的混合。 解決這個問題的方法包括：使用不透明的物件，確保透明物件靠近不透明的物件 (例如在不透明 backplate) 前面的半透明按鈕、強制透明物件寫入深度 (不適用於所有案例) 或轉譯 proxy 物件，這些物件只會在框架結尾提供深度值。
 
-MRTK 中的解決方案-Unity： https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization#depth-buffer-sharing-in-unity  
+MRTK 中的解決方案-Unity：/windows/mixed-reality/mrtk-unity/performance/hologram-stabilization # 深度-緩衝區-共用-unity  
 
 藉由使用穩固且不透明的 backplate，我們可以保障可讀性和互動的信賴度。
 
@@ -103,9 +103,9 @@ MRTK 中的解決方案-Unity： https://docs.microsoft.com/windows/mixed-realit
 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 會根據深色色彩配置提供許多 UI 建立區塊範例。
 
-* [近端功能表](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
-* [對話方塊](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
-* [手形功能表](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
+* [近端功能表](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [對話方塊](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/dialog)
+* [手形功能表](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-menu)
 
 <br>
 

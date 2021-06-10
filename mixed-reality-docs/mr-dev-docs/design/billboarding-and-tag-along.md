@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、billboarding、加上標籤、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、Mixed Reality 工具組
-ms.openlocfilehash: 48c7aa28217a38c6c226b65a6e16ed7c950cec59
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299883"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600337"
 ---
 # <a name="billboarding-and-tag-along"></a>佈告板和常駐標籤
 
@@ -49,7 +49,7 @@ Billboarding 是一種行為概念，可套用至混合現實中的物件。 具
 ## <a name="billboarding-and-tag-along-in-mrtk-mixed-reality-toolkit-for-unity"></a>Billboarding 和標記-沿著 MRTK (Unity 的混合現實工具組) 
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 會提供 Billboarding 的腳本，以及標記的行為。 將佈告欄腳本指派給任何物件，以新增 billboarding 行為，並讓物件永遠都有臉部。 若要加入標記的行為，請使用 RadialView .cs 腳本。 您可以調整各種選項，例如 lerping 時間、距離和角度。
 
-* [MRTK-星形視圖求解](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
+* [MRTK-星形視圖求解](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver#radialview)
 * [MRTK-佈告欄腳本](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Scripts/Utilities/Billboard.cs)
 
 

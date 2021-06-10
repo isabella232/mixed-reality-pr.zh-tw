@@ -22,7 +22,7 @@
 ### [什麼是 WebVR](webvr.md)
 ### [使用 Windows Mixed Reality 常見問題集](using-wmr-faq.yml)
 
-## 支援和協助選項
+## 疑難排解與常見問題集
 ### [Windows Mixed Reality 中的疑難排解](troubleshooting-windows-mixed-reality.md)
 ### [提出錯誤及意見反應](filing-feedback.md)
 ### [錯誤碼](error-codes.md)
@@ -41,6 +41,7 @@
 ### [HP Reverb G2 常見問題](reverbG2-faq.yml)
 
 ## 資源
+### [取得 Windows Mixed Reality 的相關資訊](get-wmr-info.md)
 ### [沉浸式頭戴裝置健全狀況、安全和舒適度](wmr-health-safety-comfort.md)
 ### [混合實境軟體概觀和發行歷程記錄](mixed-reality-software.md)
 ### [內外追蹤的運作方式](tracking-system.md)

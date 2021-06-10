@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 22ecbb09ebf759e15f1f21085a7b7696cb24bc6e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: fd17db3f365d8bd97b8cd9c43a6111e2b82a61fe
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144445"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647027"
 ---
 # <a name="dependency-window"></a>相依性視窗
 
@@ -20,7 +20,7 @@ ms.locfileid: "110144445"
 
 ## <a name="usage"></a>使用方式
 
-若要開啟此視窗，請選取 [ *混合現實工具組->公用程式->相依性] 視窗* ，此視窗會開啟視窗並自動開始建立專案的相依性圖形。 建立相依性圖形之後，您可以在 [專案] 索引標籤中選取資產來檢查其相依性。
+若要開啟視窗，請選取 [**混合現實**  >  **工具** 組  >  **公用程式** 相依性  >  **] 視窗**，這會開啟視窗並自動開始建立專案的相依性圖形。 建立相依性圖形之後，您可以在 [專案] 索引標籤中選取資產來檢查其相依性。
 
 ![相依性視窗](../images/dependency-window/MRTK_Dependency_Window.png)
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, prefab, 全像投影, 工具提示
 ms.localizationpriority: high
-ms.openlocfilehash: 4400ce669863b719b409e11076ceb5689e21893e
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 1d5a86ca87b8d65254607c787ac9f01c007c2b4b
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982971"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743656"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
 
@@ -67,7 +67,7 @@ ms.locfileid: "105982971"
 ![已設定 [提示] 按鈕物件 OnClick 事件的 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Interactable 元件是一個全方位容器，可讓任何物件輕鬆地進行互動及回應輸入。 Interactable 可作為所有輸入類型的概括，包括觸控、手部射線、語音等，並可將這些互動注入事件和視覺主題回應。 若要了解如何針對不同的輸入類型進行設定，並自訂其視覺化主題，您可參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)中的 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 指南。
+> Interactable 元件是一個全方位容器，可讓任何物件輕鬆地進行互動及回應輸入。 Interactable 可作為所有輸入類型的概括，包括觸控、手部射線、語音等，並可將這些互動注入事件和視覺主題回應。 若要了解如何針對不同的輸入類型進行設定，並自訂其視覺化主題，您可參閱 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity/)中的 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 指南。
 
 在階層視窗中，選取 [分解] 按鈕物件，然後在偵測器視窗中，設定 **Interactable.OnClick ()** 事件，如下所示：
 
@@ -116,6 +116,9 @@ ms.locfileid: "105982971"
 
 > [!NOTE]
 > 現在，當應用程式啟動時，預設會停用箭號指標，而且可以按下指標按鈕來啟用。
+
+> [!NOTE]
+> Directional Indicator Controller (指令碼) 不是 MRTK 的一部分，但已包含在教學課程資產中。
 
 將第二個按鈕重新命名為 **TapToPlace**，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件，如下所示：
 
@@ -175,7 +178,7 @@ ms.locfileid: "105982971"
 
 ![已選取所有 Rover 組件物件並已新增和設定 ToolTipSpawner 元件的 Unity](images/mr-learning-base/base-06-section4-step1-2.png)
 
-在階層視窗中，選取第一個 Rover 元件、RoverParts > **Camera_Part**，然後設定 **ToolTipSpawner** 元件，如下所示：
+在 [階層] 視窗中，選取 [Camera_Part]、[RoverParts > **Camera_Part**]，然後設定 **ToolTipSpawner** 元件，如下所示：
 
 * 變更 **工具提示文字** 以反映組件的名稱，例如 **攝影機**
 
@@ -197,4 +200,4 @@ ms.locfileid: "105982971"
 在本教學課程中，您已了解如何使用 MRTK 提供的按鈕和功能表預製物件和 Unity 的 TextMeshPro 元件來建立簡單的使用者介面，以及如何設定按鈕以在按下時觸發事件。 您也已了解如何新增動態工具提示 UI 元素，以提供使用者其他資訊。
 
 > [!div class="nextstepaction"]
->[下一個教學課程：7.與 3D 物件互動](mr-learning-base-07.md)
+> [下一個教學課程：7.與 3D 物件互動](mr-learning-base-07.md)

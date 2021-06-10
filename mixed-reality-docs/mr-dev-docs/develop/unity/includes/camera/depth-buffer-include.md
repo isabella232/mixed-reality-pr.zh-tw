@@ -1,15 +1,15 @@
 ---
-ms.openlocfilehash: 3306a9925c55c24c4d72ecb58d7c744dd64b283e
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 481a063cac3cb4d7e5ef7521ad19af43cb68e2cf
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636270"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110631378"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-[MRTK 的 [設定] 對話方塊](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mrtk-configuration-dialog) 會嘗試設定 XR SDK 和舊版 WSA 的深度緩衝區設定，但最好是檢查這些索引標籤，並確認 Unity 中的設定。
+[MRTK 的 [設定] 對話方塊](/windows/mixed-reality/mrtk-unity/configuration/mrtk-configuration-dialog) 會嘗試設定 XR SDK 和舊版 WSA 的深度緩衝區設定，但最好是檢查這些索引標籤，並確認 Unity 中的設定。
 
 # <a name="xr-sdk"></a>[XR SDK](#tab/xr)
 <!-- NEVER CHANGE THE ABOVE LINE! -->

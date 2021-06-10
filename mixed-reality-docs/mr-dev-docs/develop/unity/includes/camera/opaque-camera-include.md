@@ -1,20 +1,20 @@
 ---
-ms.openlocfilehash: 0dfbe2cda2779c2eafe54b01d2d28e703444fd1a
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 76f72ac81b677acabf98444f626b7a6b908c29fb
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636279"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110748519"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-MRTK 會根據 [相機系統設定檔中](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings)的設定，自動處理特定的相機設定。
+MRTK 會根據 [相機系統設定檔中](/windows/mixed-reality/mrtk-unity/features/camera-system/camera-system-overview#display-settings)的設定，自動處理特定的相機設定。
 
 **命名空間：** *MixedReality。 CameraSystem*<br>
 **類型：** *MixedRealityCameraSystem*
 
-若要檢查攝影機的 opaqueness，MixedRealityCamera 系統有 [一個 `IsOpaque` 屬性](https://docs.microsoft.com/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque)。
+若要檢查攝影機的 opaqueness，MixedRealityCamera 系統有 [一個 `IsOpaque` 屬性](/dotnet/api/microsoft.mixedreality.toolkit.camerasystem.mixedrealitycamerasystem.isopaque)。
 
 ```cs
 CoreServices.CameraSystem.IsOpaque;

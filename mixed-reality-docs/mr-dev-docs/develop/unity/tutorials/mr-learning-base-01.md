@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: 7fd4a641c87b13d09a25926cfe65fa7b8c66c2f0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0af75341aa1c90f38ac679dd1ff2db6ab2796839
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681695"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403339"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
 
@@ -43,10 +43,11 @@ ms.locfileid: "104681695"
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 或更新版本
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 與 UNITY 2019 LTS (目前已安裝 2019.4) x，並已新增通用 Windows 平臺組建支援模組
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 與 UNITY 2020 LTS (目前已 2020.3) 或 UNITY 2019 LTS (目前已安裝 2019.4. x) ，且已新增通用 Windows 平臺組建支援模組
 
 安裝 Unity 時，請務必檢查「 **平臺**」底下的下列元件。
-* **通用 Windows 平臺組建支援** 
+
+* **通用 Windows 平臺組建支援**
 * **Windows Build 支援 (IL2CPP)**
 
 ![Unity 通用 Windows 平臺組建支援選項](../../../develop/images/Unity_Install_Option_UWP.png)
@@ -55,11 +56,11 @@ ms.locfileid: "104681695"
 
 ![Unity Windows Build 支援選項](../../../develop/images/Unity_Install_Option_UWP2.png)
 
-> [!CAUTION]
-> 本教學課程系列的建議 MRTK 版本為 MRTK 2.6。
+> [!Important]
+> 本教學課程系列的建議 MRTK 版本為 MRTK 2.7。
 
-> [!CAUTION]
-> 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS (目前的 2019.4) 。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
+> [!Important]
+> 本教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 Unity 2019 LTS (目前的 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：2.初始化您的專案並部署您的第一個應用程式](mr-learning-base-02.md)

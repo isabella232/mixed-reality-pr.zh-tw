@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 眼睛、中眼、unity、全息全像、混合式現實、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 98eb4445d04b236dea74917d9c51108b66d6df3b
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: f10079d36f737e5d8a2ee74a88ca0f8b2b3d791c
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300363"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600147"
 ---
 # <a name="head-gaze-in-unity"></a>Unity 中的頭部
 
@@ -43,7 +43,7 @@ void Update()
 }
 ```
 
-### <a name="best-practices"></a>最佳作法
+### <a name="best-practices"></a>最佳做法
 
 雖然上述範例會從更新迴圈引發單一 raycast，以找出使用者的標頭的目標，我們建議使用單一物件來管理所有的前端進程。 結合您的列印頭邏輯可節省您的應用程式珍貴處理能力，並將您的 raycasting 限制為每個畫面一個。
 
@@ -53,7 +53,7 @@ void Update()
 
 ## <a name="head-gaze-in-the-mixed-reality-toolkit"></a>混合現實工具組中的頭部
 
-您可以從 MRTK 的 [輸入管理員](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview) 存取前端。
+您可以從 MRTK 的 [輸入管理員](/windows/mixed-reality/mrtk-unity/features/input/overview) 存取前端。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

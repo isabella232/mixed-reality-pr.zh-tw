@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能，舊版，mrtk，Windows
-ms.openlocfilehash: 81d1c3113dcf2c301077bcfec44afa80bd5d9be3
-ms.sourcegitcommit: 8d386bf6c82ec9860815e873e1f2870ea410f40f
+ms.openlocfilehash: 44de6b418995b75d9e199f03922f89016b76c5cd
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106088577"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743644"
 ---
 # <a name="using-windows-xr-plugin"></a>使用 Windows XR 外掛程式
 
@@ -24,7 +24,7 @@ ms.locfileid: "106088577"
 適用于 Unity 的 MRTK 會提供跨平臺輸入系統、基礎元件，以及空間互動的常見組建區塊。 MRTK 第 2 版主要用於加速開發適用於 Microsoft HoloLens、Windows Mixed Reality 沈浸式 (VR) 頭戴裝置和 OpenVR 平台的應用程式。 此專案的目標是減少進入障礙、建立混合實境應用程式，以及回饋伴著我們成長的社群。
 
 > [!div class="nextstepaction"]
-> [試用我們的 MRTK 教學課程](https://docs.microsoft.com/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=winxr)
+> [試用我們的 MRTK 教學課程](./tutorials/mr-learning-base-02.md?tabs=winxr)
 
 如需詳細的功能詳細資料，請參閱 [MRTK 的檔](/windows/mixed-reality/mrtk-unity) 。
 

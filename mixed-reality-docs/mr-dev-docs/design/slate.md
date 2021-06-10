@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、平板、MRTK、混合現實工具組
-ms.openlocfilehash: 30d5e63eecb45aa8eb1a59d1a288f084a6937764
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 2988419e44b21f6655a71d726dabd5091569f7ac
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299683"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600127"
 ---
 # <a name="slate"></a>平板
 
@@ -25,7 +25,7 @@ ms.locfileid: "107299683"
 
 ## <a name="slate-in-mrtk-mixed-reality-toolkit-for-unity"></a>適用于 Unity 的 MRTK (混合現實工具組) 的平板
 
-* [MRTK-平板](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
+* [MRTK-平板](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/slate)
 
 <br>
 

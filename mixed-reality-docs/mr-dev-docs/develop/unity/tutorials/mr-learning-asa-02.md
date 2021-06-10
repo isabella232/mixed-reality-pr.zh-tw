@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 5f16d3c12e6dbb977ecedc1598a28073cfb39222
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 6b317afd4be6ed58a6e5ff7fe7075b5379a1caa1
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983141"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403478"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -32,42 +32,14 @@ ms.locfileid: "105983141"
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
-5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
-6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如 AzureSpatialAnchors
+4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如 AzureSpatialAnchors
 
-然後遵循[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)的指示，以執行下列動作：
+然後，遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 的指示，以確定您場景的 MRTK 設定檔是 **DefaultHoloLens2ConfigurationProfile**  ，並將空間感知網格的顯示選項變更為 **遮蔽**。
 
-1. 將 **MRTK 設定檔** 變更為 **DefaultHoloLens2ConfigurationProfile**
-1. 將 **空間感知網格顯示選項** 變更為 **遮蔽**。
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>安裝內建 Unity 套件並匯入教學課程資產
 
-## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
-
-在 Unity 功能表中，選取 視窗 >  **套件管理員** 以開啟 套件管理員 視窗，然後選取 AR 基本概念，並按一下 安裝 按鈕以安裝套件：
-
-![已選取 AR Foundation 的 Unity 套件管理員](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> 您正在安裝 AR Foundation 套件，因為 Azure Spatial Anchors SDK 需要此套件，您將在下一節中匯入。
-
-## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
-
-將 >azurespatialanchors.unitypackage SDK V 2.7.1 新增至 unity 專案，若要新增套件，請遵循本[教學](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)課程
-
-下載並 **依列出順序** 來 **匯入** 下列 Unity 自訂套件：
-
-* [MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.4.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.4.0.unitypackage)
-* [MRTK.HoloLens2. >azurespatialanchors.unitypackage. 2.5.3. unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-spatial-anchors-v2.5.3/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpatialAnchors.2.5.3.unitypackage)
-
-匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
-
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-asa/asa-02-section3-step1-1.png)
-
-> [!NOTE]
-> 如果您看到任何有關於 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' 已過時的 CS0618 警告，您可以忽略這些警告。
-
-> [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-02.md#importing-the-tutorial-assets) 的指示。
+[!INCLUDE[](includes/installing-packages-for-asa.md)]
 
 ## <a name="preparing-the-scene"></a>準備場景
 
@@ -84,6 +56,20 @@ ms.locfileid: "105983141"
 
 > [!TIP]
 > 如果您發現場景中的大圖示 (例如大型邊框的 'T' 圖示) 會造成干擾，您可以藉由將 <a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">Gizmo 切換</a>到關閉位置來將其隱藏，如上圖所示。
+
+在 [階層] 視窗中選取 [ **MixedRealityToolkit** 物件]，使用 [偵測器] 視窗中的 [ **新增元件** ] 按鈕來新增下列元件：
+
+* AR Anchor Manager (指令碼)
+* DisableDiagnosticsSystem (指令碼)
+
+![已新增 AR 錨點管理員和 DisableDiagnosticsSystem 元件的 Unity MixedRealityToolkit 物件 ](images/mr-learning-asa/asa-02-section4-step1-2.PNG)
+
+> [!WARNING]
+> ASA v 2.9.0 版和 v 2.10.0-preview 有已知的問題。1需要在場景中放置兩個額外的物件。 請使用 [偵測器] 視窗中的 [ **新增元件** ] 按鈕，將 Ar 攝影機管理員 (腳本) 和 ar 會話 (腳本) 加入至 **MixedRealityToolkit** 物件。 在 [偵測器] 視窗中，取消核取 [相機] 物件旁的核取方塊，以在新增 AR 相機管理員 (腳本) 時停用自動建立的相機。 此問題將在完整版 ASA v 2.10.0 中解決。
+> 
+
+> [!NOTE]
+> 當您新增 AR 錨點管理員 (腳本) 元件時，會自動加入 AR 會話來源 (腳本) 元件，因為 AR 錨點管理員 (腳本) 元件需要它。
 
 ## <a name="configuring-the-buttons-to-operate-the-scene"></a>設定按鈕以操作場景
 
@@ -153,15 +139,15 @@ Azure Spatial Anchors 無法在 Unity 中執行，因此若要測試 Azure Spati
 當應用程式在您的裝置上執行時，請遵循 Azure Spatial Anchor 教學課程指示面板上顯示的螢幕指示：
 
 1. 將立方體移至不同的位置
-1. 啟動 Azure 工作階段
-1. 建立 Azure 錨點 (在立方體的位置上建立錨點)。
-1. 停止 Azure 工作階段
-1. 移除區域錨點 (允許使用者移動立方體)
-1. 將立方體移至其他地方
-1. 啟動 Azure 工作階段
-1. 尋找 Azure 錨點 (將立方體置於步驟 3 的位置)
-1. 刪除 Azure 錨點
-1. 停止 Azure 工作階段
+2. 啟動 Azure 工作階段
+3. 建立 Azure 錨點 (在立方體的位置上建立錨點)。
+4. 停止 Azure 工作階段
+5. 移除區域錨點 (允許使用者移動立方體)
+6. 將立方體移至其他地方
+7. 啟動 Azure 工作階段
+8. 尋找 Azure 錨點 (將立方體置於步驟 3 的位置)
+9. 刪除 Azure 錨點
+10. 停止 Azure 工作階段
 
 ![已選取指示物件的 Unity](images/mr-learning-asa/asa-02-section7-step1-1.png)
 

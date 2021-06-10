@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 9e02ea6cb2710b4661e97dc8b0d5f4f48ab09fa7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f7cf43e8f1c040660b6a2688e234a271bc071b00
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583908"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712641"
 ---
 # <a name="2-initializing-your-project-and-first-application"></a>2.初始化您的專案和第一個應用程式
 
@@ -52,22 +52,17 @@ ms.locfileid: "98583908"
 
 ## <a name="enabling-required-plugins"></a>啟用必要的外掛程式
 
-在您開始將物件新增至場景之前，必須啟用兩個外掛程式。
+若要使用可透過 Microsoft 的混合現實平臺取得的功能，您必須先安裝並啟用 Microsoft OpenXR 外掛程式。 若要深入瞭解此外掛程式，您可以在 [GitHub](https://github.com/microsoft/Microsoft-OpenXR-Unreal)上查看專案。
 
-1. 開啟 [編輯] > [外掛程式]，然後從內建選項清單中選取 [擴增實境]。 
-    * 向下捲動至 **HoloLens**，並勾選 [啟用]。 
+1. 開啟 [長篇比賽] 啟動器。 流覽至 Unreal Engine Marketplace 並搜尋「[Microsoft OpenXR](https://www.unrealengine.com/marketplace/product/ef8930ca860148c498b46887da196239)」。 將外掛程式安裝到您的引擎。
 
-![啟用 HoloLens 外掛程式](images/unreal-uxt/2-plugins.PNG)
+![Unreal Marketplace](images/unreal-uxt/2-openxr-plugin.PNG)
 
-2. 從內建選項清單中選取 [虛擬實境]。 
-    * 向下捲動至 **Microsoft Windows Mixed Reality**、勾選 [啟用]，然後重新啟動您的編輯器。 
+2. 回到 [Unreal 編輯器]，移至 [**專案設定**]  >  **外掛程式**，然後搜尋 "Microsoft OpenXR"。 確定已啟用外掛程式，並在出現提示時重新開機編輯器。
 
-![啟用 Windows Mixed Reality 外掛程式](images/unreal-uxt/2-virtual-reality-plugin.PNG)
+![啟用 Microsoft OpenXR 外掛程式](images/unreal-uxt/2-enable-plugin.PNG)
 
-> [!NOTE]
-> 這兩個外掛程式都是進行 HoloLens 2 開發的必要項目。
-
-啟用外掛程式後，您的空白層級即可供公司使用。
+啟用 Microsoft OpenXR 外掛程式將會自動啟用混合現實開發所需的所有其他外掛程式。 請注意，必須停用 "Microsoft Windows Mixed Reality" 外掛程式，才能使用 OpenXR。 
 
 ## <a name="creating-a-level"></a>建立層級
 您的下一個工作是建立玩家設定，其中包含一個起點和一個用於參考和調整的立方體。

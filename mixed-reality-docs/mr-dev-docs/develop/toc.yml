@@ -178,7 +178,7 @@
           href: unity/openxr-getting-started.md
         - name: OpenXR 外掛程式支援的功能
           href: unity/openxr-supported-features.md
-        - name: 混合現實功能工具
+        - name: 混合實境功能工具
           items:
             - name: 歡迎使用「MR」功能工具
               href: unity/welcome-to-mr-feature-tool.md
@@ -234,7 +234,7 @@
           href: unity/udp-packets-in-unity.md
         - name: 搭配使用 HoloLens 的 Windows 命名空間和 Unity 應用程式
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
-        - name: 混合實境原生物件
+        - name: Unity 中的混合現實原生 interop
           href: unity/unity-xrdevice-advanced.md
         - name: 使用 Vuforia
           href: unity/vuforia-development-overview.md
@@ -469,9 +469,9 @@
         - name: 全像攝影遠端軟體授權條款
           href: /legal/mixed-reality/microsoft-holographic-remoting-software-license-terms
         - name: HoloLens 的全像攝影遠端處理 (第 1 代)
-          href: null
-        - name: 新增全像攝影遠端處理
-          href: platform-capabilities-and-apis/add-holographic-remoting.md
+          items:
+            - name: 新增全像攝影遠端處理
+              href: platform-capabilities-and-apis/add-holographic-remoting.md
     - name: 應用程式品質與測試
       items:
         - name: 應用程式品質準則

@@ -4,12 +4,12 @@ description: 使用超過標準取用者支援檔的 Windows Mixed Reality 疑�
 ms.topic: article
 ms.author: rajhawar
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援
-ms.openlocfilehash: b347145e73c3e3f96d9a387edbfdb6dc0360b094
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 24120e9c1bb34b8b32c00e2b677f530c4ba563ab
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196643"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345081"
 ---
 # <a name="troubleshooting-in-windows-mixed-reality"></a>Windows Mixed Reality 中的疑難排解
 

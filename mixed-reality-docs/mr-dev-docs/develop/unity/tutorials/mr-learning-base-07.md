@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens、MRTK、混合現實工具組、UWP、物件互動、界限會控制
 ms.localizationpriority: high
-ms.openlocfilehash: c2cca67afe19665ea899eb56140011bd9c756a7f
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 1c90abe0b3b41694b6e1e826d86161cc189b60cd
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982861"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743661"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -88,7 +88,7 @@ ms.locfileid: "105982861"
 
 ![已選取所有 Rover 組件並已新增和設定音訊來源元件的 Unity](images/mr-learning-base/base-07-section1-step1-4.png)
 
-在 [階層] 視窗中，展開 RoverAssembly > RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 物件，以顯示所有位置提示物件，選取第一個 Rover 零件 RoverParts > **Camera_Part**，然後設定 **Part Assembly Controller (指令碼)** 元件，如下所示：
+在 [階層] 視窗中，展開 [RoverAssembly >] RoverModel_PlacementHints_XRay > **Parts_PlacementHints** 物件以顯示所有的放置提示物件，然後選取 Camera_part rover 元件、RoverParts > **Camera_Part**，然後設定元件 **元件控制器 (腳本)** 元件，如下所示：
 
 * 將 **Camera_PlacementHint** 物件指派給 [要放置的位置] 欄位
 
@@ -113,7 +113,7 @@ ms.locfileid: "105982861"
 
 ![按下 [重設] 按鈕的 Unity 播放模式分割檢視](images/mr-learning-base/base-07-section1-step1-7.png)
 
-若要深入了解 Object Manipulator (物件操作工具) 元件及其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)中的 [Object Manipulator (物件操作工具)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 指南。
+若要深入了解 Object Manipulator (物件操作工具) 元件及其相關聯的屬性，您可以瀏覽 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity/)中的 [Object Manipulator (物件操作工具)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectManipulator.html) 指南。
 
 ## <a name="adding-bounds-control"></a>加入界限控制項
 
@@ -134,7 +134,7 @@ ms.locfileid: "105982861"
 > 界限控制項視覺效果是在執行時間建立的，因此，在您進入遊戲模式之前看不到。
 
 > [!NOTE]
->物件操作工具 (腳本) 會自動加入條件約束管理員 (腳本) 
+> 物件操作工具 (腳本) 會自動加入條件約束管理員 (腳本) 
 
 在 [階層] 視窗中，展開功能表 > **ButtonCollection** 物件，以顯示四個按鈕，並將第三個按鈕重新命名為 **BoundsControl_Enable**，然後在 [偵測器] 視窗中，設定按鈕設定協助程式 **(腳本)** 元件，如下所示：
 
@@ -168,7 +168,7 @@ ms.locfileid: "105982861"
 
 ![要操作界限控制項的 Unity 播放模式分割視圖](images/mr-learning-base/base-07-section2-step1-4.png)
 
-若要深入瞭解界限控制元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)中的[界限控制](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)指南。
+若要深入瞭解界限控制元件與其相關聯的屬性，您可以造訪[MRTK 檔入口網站](/windows/mixed-reality/mrtk-unity/)中的[界限控制](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundsControl.html)指南。
 
 ## <a name="congratulations"></a>恭喜！
 

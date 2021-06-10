@@ -6,24 +6,26 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: 733bbbd75dd170241e8781e24989d23902781fb9
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: 65b79aadeb52db6be61edcc90a5d4a44c12384a1
+ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333440"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111547073"
 ---
 # <a name="using-the-mixed-reality-openxr-plugin"></a>使用 Mixed Reality OpenXR 外掛程式
 
-針對以 Unity 2020 為目標的開發人員建立 HoloLens 2 或混合的現實應用程式，OpenXR 外掛程式可以用來取代 WindowsXR 外掛程式，以獲得更好的跨平臺相容性。  Mixed Reality OpenXR 外掛程式也適用于最新的 [混合現實功能工具](welcome-to-mr-feature-tool.md)。
+針對以 Unity 2020 為目標的開發人員建立 HoloLens 2 或混合的現實應用程式，OpenXR 外掛程式可以用來取代 WindowsXR 外掛程式，以獲得更好的跨平臺相容性。  Mixed Reality OpenXR 外掛程式也適用于最新的 [混合現實工具組 2.7](/windows/mixed-reality/mrtk-unity)。
 
 ## <a name="prerequisites"></a>必要條件
 
-* 最新的 Unity 2020.3 LTS，建議 2020.3.6 f1 或更新版本。
-* 最新的 Unity OpenXR 外掛程式，建議1.2 或更新版本
+* 最新的 Unity 2020.3 LTS， (我們建議 2020.3.8 f1 或更新版本) 
+* 最新的 Unity OpenXR 外掛程式， (建議1.2 或更新版本) 
 * [適用于 HoloLens 2 開發的](/windows/mixed-reality/develop/install-the-tools?tabs=unity#installation-checklist)最新工具
-* 最新的 MRTK (選用) ，建議2.6 版或更新版本
-* 最新的混合現實 OpenXR 外掛程式，建議版本0.9.5 或更新版本
+* 最新的 MRTK (選用的) ， (建議2.7 版或更新版本) 
+* 最新的混合現實 OpenXR 外掛程式， (我們建議版本 1.0.0-preview. 1 或更新版本) 
+
+![在 HoloLens 上執行的 open xr unity basic 範例螢幕擷取畫面](images/openxr-example.png)
 
 > [!NOTE]
 > 如果您是在 Windows 電腦上建立 VR 應用程式，則不一定需要混合現實 OpenXR 外掛程式。 但是，如果您要自訂適用于 HP 重設系的控制器對應，或建立可在 HoloLens 2 和 VR 耳機上運作的應用程式，則您會想要安裝外掛程式。
@@ -33,7 +35,7 @@ ms.locfileid: "110333440"
 適用于 Unity 的 MRTK 會提供跨平臺輸入系統、基礎元件，以及空間互動的常見組建區塊。 MRTK 第 2 版主要用於加速開發適用於 Microsoft HoloLens、Windows Mixed Reality 沈浸式 (VR) 頭戴裝置和 OpenVR 平台的應用程式。 此專案的目標是減少進入障礙、建立混合實境應用程式，以及回饋伴著我們成長的社群。
 
 > [!div class="nextstepaction"]
-> [使用 MRTK 設定您的專案](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02?tabs=openxr)
+> [使用 MRTK 設定您的專案](./tutorials/mr-learning-base-02.md?tabs=openxr)
 
 如需詳細的功能詳細資料，請參閱 [MRTK 的檔](/windows/mixed-reality/mrtk-unity) 。
 
@@ -90,14 +92,11 @@ ms.locfileid: "110333440"
 
 ## <a name="using-mrtk-with-openxr-support"></a>搭配使用 MRTK 與 OpenXR 支援
 
-MRTK-Unity 支援從2.5.3 版本開始的 Mixed Reality OpenXR 外掛程式。
+MRTK for Unity 2.7 版現已正式支援 Mixed Reality OpenXR 外掛程式。
 
-1. 如果您還沒有這麼做，請再次開啟 [Mixed Reality 功能工具](welcome-to-mr-feature-tool.md) 以安裝混合現實工具組。 **基礎** 套件中的 OpenXR 支援。
-2. 移至偵測器中的 MixedReality 工具組元件腳本，並切換至 **DefaultOpenXRConfigurationProfile** 設定檔：
+如果您還沒有這麼做，請再次開啟 [Mixed Reality 功能工具](welcome-to-mr-feature-tool.md) 以安裝混合現實工具組。 **基礎** 套件中的 OpenXR 支援。
 
-    ![在偵測器的混合現實工具組元件中切換 MRTK 設定的螢幕擷取畫面](images/openxr-img-11.png)
-
-    1. 如需有關 [遷移至 OpenXR 的深入資訊](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk#configuring-mrtk-for-the-xr-sdk-pipeline)，請參閱 MRTK 檔。
+![混合現實功能工具探索具有醒目提示標準資產的功能視窗](images/mrft-install-openxr.png)
 
 > [!NOTE]
 > 從舊版 MRTK 進行升級時，請確定 **資產/MixedRealityToolkit. 產生/link.xml** 檔案中有下列這一行：

@@ -7,12 +7,12 @@ ms.date: 06/10/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 7b706cf2a8685954ed916c825c3617ade190f1e0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7dbf72a477f376e338d346965b5276eba00ab543
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583656"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110711557"
 ---
 # <a name="6-packaging--deploying-to-device-or-emulator"></a>6.封裝並部署至裝置或模擬器
 
@@ -34,7 +34,7 @@ ms.locfileid: "98583656"
 
 ![預設 RHI](../images/unreal/performance-recommendations-img-09.png)
 
-2.  回到 Unreal 編輯器，移至 [編輯] > [專案設定]，然後勾選 [全像攝影遠端處理] 區段中的 [啟用遠端處理]。
+2.  回到 [Unreal 編輯器] 中，移至 [**編輯 > 專案設定**]，然後核取 [**開啟 XR** 全像 remoting] 區段中的 [**啟用遠端** 功能]。
 
 3.  重新啟動編輯器，然後輸入您裝置的 IP 位址 (如全像遠端處理播放程式中所顯示)，接著按一下 [連線]。
 

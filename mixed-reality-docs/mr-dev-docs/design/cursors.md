@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens (第1代) 、HoloLens 2、混合的現實、游標、目標、注視、手勢、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、放射片、輸入
-ms.openlocfilehash: 744e75f4212046b7c237a6c6634a4980e9148b0e
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 829d7b3f766f848228946ee0a623f9f3013adca3
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300083"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600377"
 ---
 # <a name="cursors"></a>資料指標
 
@@ -33,7 +33,7 @@ ms.locfileid: "107300083"
     <tr>
         <td><strong>功能</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
      <tr>
@@ -141,7 +141,7 @@ ms.locfileid: "107300083"
 * 我們可以使用游標來顯示使用者的輸入狀態或意圖。 例如，我們可以顯示一個圖示，告訴使用者系統看到其手上的狀態，而應用程式知道他們已經準備好採取行動。
 * 我們也可以使用資料指標來顯示使用者透過暫時的色彩變更聽到的聲音命令
 
-* 下列資料指標狀態可以用不同的方式來執行。 您可以藉由建立資料指標模型（例如狀態機器）來執行這些不同的狀態。 例如：
+* 下列資料指標狀態可以用不同的方式來執行。 您可以藉由建立資料指標模型（例如狀態機器）來執行這些不同的狀態。 例如︰
     * 閒置狀態是您顯示預設資料指標的位置。
     * [就緒] 狀態是當您在 [就緒] 位置偵測到使用者的手時。
     * 互動狀態是使用者執行特定互動的時候。
@@ -165,9 +165,9 @@ ms.locfileid: "107300083"
 
 根據預設， [MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity) 會提供資料指標預製專案 ([DefaultCursor. 預製專案](https://github.com/microsoft/MixedRealityToolkit-Unity/tree/mrtk_release/Assets/MixedRealityToolkit.SDK/Features/UX/Prefabs/Cursors)) 與 shell 的系統資料指標具有相同的視覺狀態。 其是在 MRTK 輸入設定檔的 [指標] 下進行指派。 您可以針對您的體驗取代/自訂此資料指標。 針對眼睛追蹤輸入的體驗，MRTK 也提供 EyeGazeCursor，其具有微妙的視覺效果可將干擾降至最低。
 
-* [MRTK - 指標設定檔](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
-* [MRTK - 輸入系統](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/overview)
-* [MRTK - 指標](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/pointers)
+* [MRTK - 指標設定檔](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide#pointer-configuration)
+* [MRTK - 輸入系統](/windows/mixed-reality/mrtk-unity/features/input/overview)
+* [MRTK - 指標](/windows/mixed-reality/mrtk-unity/features/input/pointers)
 
 ---
 

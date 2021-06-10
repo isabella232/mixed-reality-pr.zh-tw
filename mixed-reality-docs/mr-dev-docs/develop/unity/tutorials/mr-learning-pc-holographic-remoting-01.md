@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 3c564c28485ca7e0595b9fd438af961dc5bc5986
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: 95a11ce855091a3711152f2c4147d835d10edb8f
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105982961"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110713717"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -54,11 +54,9 @@ ms.locfileid: "105982961"
 
 3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
 
-4. [匯入混合實境工具組](mr-learning-base-02.md#importing-the-mixed-reality-toolkit)
+4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
-5. [設定 Unity 專案](mr-learning-base-02.md#configuring-the-unity-project)
-
-6. [建立和設定場景](mr-learning-base-02.md#creating-and-configuring-the-scene)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
+5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) ，並為場景提供適當的名稱，例如電腦全像 *遠端*
 
 然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示，將場景的 MRTK 設定檔變更為 **DefaultHoloLens2ConfigurationProfile**。 將空間感知網格的顯示選項變更為 **遮蔽**。
 

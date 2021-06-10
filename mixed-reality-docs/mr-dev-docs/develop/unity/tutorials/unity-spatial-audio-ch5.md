@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器、音訊混音器、SFX 回音
-ms.openlocfilehash: f7a5270d969f2e462db0244bd6c68b99347ae1a7
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 6f41fe904c21591915e0ef13b61dc6bff04527fe
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590720"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712679"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5.使用殘響增加空間音訊的距離
 
@@ -28,11 +28,11 @@ ms.locfileid: "99590720"
 
 在 [Spatializing 按鈕互動音效教學](unity-spatial-audio-ch2.md)課程中，我們新增了混音器。 混音器依預設會包含一個名為 **Master** 的 **群組**。 因為我們只想要將回音效果套用至某些音效，所以讓我們為這些音效新增第二個群組。 若要加入群組，請以滑鼠右鍵按一下 **音訊混音** 器中的主要群組，選擇 [ **新增子群組** ]，然後提供適當的名稱來取得範例 _房間效果_：
 
-![新增子群組](images/spatial-audio/spatial-audio-05-section1-step1-1.png)
+![新增子群組](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 
 每個 **群組** 都有自己的一組效果。 按一下新群組上的 [新增 **...** ]，然後選擇 [ **SFX 回音**：
 
-![新增 SFX 回音](images/spatial-audio/spatial-audio-05-section1-step1-2.png)
+![新增 SFX 回音](images/spatial-audio/spatial-audio-05-section1-step1-2.PNG)
 
 在音訊術語中，原始的 unreverberated 音訊稱為「 _乾路徑_」，而以「回音」篩選篩選之後的音訊則稱為「 _潮濕」路徑_。 這兩個路徑都會傳送至音訊輸出，而其在這種混合中的相對強度稱為 _濕/幹組合_。 濕/幹混合對距離的意義有強烈的影響。
 
@@ -41,7 +41,7 @@ ms.locfileid: "99590720"
 * 將 [ **乾等級** ] 屬性設定為最低的設定 (-10000 mB) 
 * 將 [ **空間] 屬性** 設定為最高的設定 (0 mB) 
 
-![SFX 回音屬性](images/spatial-audio/spatial-audio-05-section1-step1-3.png)
+![SFX 回音屬性](images/spatial-audio/spatial-audio-05-section1-step1-3.PNG)
 
 其他設定則控制模擬房間的感覺。 尤其是， **衰減時間** 與認知的房間大小有關。
 
@@ -56,14 +56,14 @@ ms.locfileid: "99590720"
 
 在階層中選取的 **四** 個步驟中，按一下 [偵測器] 視窗上的 [ **新增元件** ]，然後將 **房間效果的傳送層級 (腳本)**：
 
-![新增傳送層級腳本](images/spatial-audio/spatial-audio-05-section2-step1-1.png)
+![新增傳送層級腳本](images/spatial-audio/spatial-audio-05-section2-step1-1.PNG)
 
 > [!NOTE]
 > 除非您啟用 **Microsoft 空間定位器** 外掛程式的 **房間效果傳送層級** 功能，否則它不會將任何音訊傳回至 Unity 音訊引擎以進行效果處理。
 
 **房間效果傳送層級** 元件包含圖形控制項，可將傳送至 Unity 音訊引擎的音訊層級設定為進行回音處理。 若要開啟圖形控制項，請按一下 **房間效果傳送層級**。  按一下並向下拖曳綠色曲線，將層級設定為 [30dB]：
 
-![調整回音曲線](images/spatial-audio/spatial-audio-05-section2-step1-2.png)
+![調整回音曲線](images/spatial-audio/spatial-audio-05-section2-step1-2.PNG)
 
 接下來，將 **SpatializeOnOff** 腳本中的4個批註行取消批註。 腳本現在看起來會像這樣：
 
@@ -129,7 +129,7 @@ public class SpatializeOnOff : MonoBehaviour
 * 將 [ **會議室效果群組** ] 屬性設定為新的房間效果混音器群組
 * 將 [ **主要群組** ] 屬性設定為主要混音器群組
 
-![Spatialize 關閉擴充](images/spatial-audio/spatial-audio-05-section2-step1-3.png)
+![Spatialize 關閉擴充](images/spatial-audio/spatial-audio-05-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>恭喜！
 

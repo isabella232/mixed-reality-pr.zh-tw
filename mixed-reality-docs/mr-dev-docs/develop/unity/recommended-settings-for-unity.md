@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 07/29/2020
 ms.topic: article
 keywords: unity、設定、混合現實、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、效能、品質設定、照明設定、深度緩衝區、xr、追蹤損失
-ms.openlocfilehash: b8da51bdc57d8586706d11e86ca3b7543023c119
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 7516ec89c49a12e7cb143d7e53d00efde0e44c4e
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300123"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743378"
 ---
 # <a name="recommended-settings-for-unity"></a>Unity 的建議設定
 
@@ -68,7 +68,7 @@ Unity 提供一組預設選項，通常是所有平臺的平均案例。 不過�
 
 為了讓 Windows Mixed Reality 平臺優化全像影像的穩定性，它依賴深度緩衝區來精確且符合螢幕上任何轉譯的全像影像。 因此，在上有深度緩衝區共用時，轉譯色彩時很重要，也就是呈現深度。 在 Unity 中，大部分的不透明或 TransparentCutout 材質預設會呈現深度，但透明和文字物件將不會呈現深度，雖然這是與著色器相依的情況等等。
 
-如果使用 [混合現實工具組標準著色器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)來呈現透明物件的深度：
+如果使用 [混合現實工具組標準著色器](/windows/mixed-reality/mrtk-unity/features/rendering/mrtk-standard-shader)來呈現透明物件的深度：
 
 1) 選取使用 MRTK 標準著色器的透明材質，然後開啟偵測器編輯器視窗
 2) 選取深度緩衝區共用警告內的 [ **立即修正** ] 按鈕。 您也可以將轉譯 **模式** 設定為 **Custom**，以手動方式執行這項作業。然後將 **模式** 設定為 [**透明**]，最後將 [**深度寫入**] 設定為 [**開啟**]
@@ -114,9 +114,9 @@ HoloLens 有行動類別的 CPU 和 GPU，這表示應用程式可能需要較�
 
 |  顯示 Unity 啟動顯示畫面  |  全像閃屏映射  |  行為 |
 |----------|----------|----------|
-|  開啟  |  無  |  顯示預設的 Unity 啟動顯示畫面5秒，或直到應用程式載入為止，以較長的時間為准。 |
+|  開啟  |  None  |  顯示預設的 Unity 啟動顯示畫面5秒，或直到應用程式載入為止，以較長的時間為准。 |
 |  開啟  |  自訂  |  顯示自訂啟動顯示畫面5秒，或直到應用程式載入為止（以較長者為准）。 |
-|  關閉  |  無  |  在載入應用程式之前，顯示透明的黑色 (沒有任何) 。 |
+|  關閉  |  None  |  在載入應用程式之前，顯示透明的黑色 (沒有任何) 。 |
 |  關閉  |  自訂  |  顯示自訂啟動顯示畫面5秒，或直到應用程式載入為止（以較長者為准）。 |
 
 如需詳細資訊，請參閱 [Unity 的啟動顯示畫面檔](https://docs.unity3d.com/Manual/class-PlayerSettingsSplashScreen.html) 。

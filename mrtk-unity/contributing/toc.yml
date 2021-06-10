@@ -1,3 +1,5 @@
+- name: Authors
+  href: authors.md
 - name: 參與總覽
   href: contributing.md
 - name: 撰寫指引

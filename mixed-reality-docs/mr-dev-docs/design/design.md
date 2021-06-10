@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 核心概念, 互動, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組
-ms.openlocfilehash: 36af6b1c439c47eef2126408d1185ecfe151cf8b
-ms.sourcegitcommit: e9a0ba97fd288479ad324cdaabee9b6abc9f4dc2
+ms.openlocfilehash: c4d9f9b4c4be1c5012ac8dc84fb55e6c5fa9eaee
+ms.sourcegitcommit: 85ba3af69ec2a9056f759bab7b66f79f09a016b2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/08/2021
-ms.locfileid: "107221560"
+ms.lasthandoff: 06/05/2021
+ms.locfileid: "111454762"
 ---
 # <a name="start-designing-and-prototyping"></a>開始設計並建立原型
 
@@ -89,20 +89,20 @@ ms.locfileid: "107221560"
 
 :::row:::   
     :::column:::    
-       [![學習 Unity](images/logo-unity.png)](https://learn.unity.com/)<br>
+        [![MRTK Figma 工具組](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
+        **[Figma 工具組](figma-toolkit.md)**<br>   
+        Figma 工具組提供可用來草繪和配置 UI 的資產。 所有 UI 控制項都是以 MRTK 中可用的元件為基礎。
+    :::column-end:::        
+    :::column:::    
+       [![學習 Unity](../images/Final_unity_logo.png)](https://learn.unity.com/)<br>
         **[學習 Unity](https://learn.unity.com/)**<br>
         瞭解如何使用 Unity 建立互動式體驗。 邊做邊學，從開始到完成。
     :::column-end:::    
     :::column:::    
         [![混合實境工具組 (MRTK)](images/74-12.png)](https://github.com/Microsoft/MixedRealityToolkit-Unity)<br>
-        **[混合實境工具組 (MRTK)](https://github.com/Microsoft/MixedRealityToolkit-Unity)**<br>  
+        **[混合實境工具組 (MRTK)](/windows/mixed-reality/mrtk-unity/)**<br>  
         透過混合實境工具組的空間互動和 UI 基本要素，您可以使用 Unity 快速進行混合實境的設計和開發。   
     :::column-end:::
-    :::column:::    
-        [![混合實境設計實驗室](images/74-13.png)](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)<br>
-        **[混合實境設計實驗室](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)**<br>  
-        取得範例應用程式，示範如何使用 MRTK 的建置元素來建立美觀的混合實境體驗。
-    :::column-end:::        
     :::column:::    
         [![Microsoft Maquette](images/74-14.png)](https://www.maquette.ms/)<br>
         **[Microsoft Maquette](https://www.maquette.ms/)**<br>  

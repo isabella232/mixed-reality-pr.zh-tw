@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure spatial anchors, 語音辨識, Windows 10, LUIS, LUIS 入口網站, 意圖, 實體, 語句, 自然語言理解
 ms.localizationpriority: high
-ms.openlocfilehash: 49e2b44000add22e924d9552f60b63ac1ac30288
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ab9c1db7ca90a59e4ef688a8faa3d294e433cff6
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590360"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403459"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.設定意圖和自然語言理解
 
@@ -27,18 +27,18 @@ ms.locfileid: "99590360"
 
 在 [階層] 視窗中選取 **Lunarcom** 物件，然後在 [偵測器] 視窗中使用 [新增元件]  按鈕來將 **Lunarcom Intent Recognizer (指令碼)** 元件新增至 Lunarcom 物件：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-1.png)
+![mrlearning-語音1](images/mrlearning-speech/tutorial4-section1-step1-1.png)
 
 在 [專案] 視窗中，瀏覽至 [資產]   > [MRTK.Tutorials.GettingStarted]   > [Prefabs]   > [RocketLauncher]  資料夾，將 **RocketLauncher_Complete** Prefab 拖曳到您的 [階層] 視窗中，並將其放在相機前方的適當位置，例如：
 
 * 變形 **位置** X = 0、Y = -0.4、Z = 1
 * 變形 **旋轉** X = 0、Y = 90、Z = 0
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-2.png)
+![mrlearning-語音2](images/mrlearning-speech/tutorial4-section1-step1-2.png)
 
 在 [階層] 視窗中，再次選取 [Lunarcom]  物件，然後展開 [RocketLauncher_Complete]   > [按鈕]  物件，並將每個 **按鈕** 物件的子物件指派至對應的 [月球發射器按鈕]  欄位：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section1-step1-3.png)
+![mrlearning-語音3](images/mrlearning-speech/tutorial4-section1-step1-3.png)
 
 ## <a name="creating-the-azure-language-understanding-resource"></a>建立 Azure Language Understanding 資源
 
@@ -46,18 +46,18 @@ ms.locfileid: "99590360"
 
 登入 <a href="https://portal.azure.com" target="_blank">Azure</a>，然後按一下 [建立資源]  。 然後搜尋並選取 **Language Understanding**：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-1.png)
+![mrlearning-語音4](images/mrlearning-speech/tutorial4-section2-step1-1.png)
 
 按一下 [建立]  按鈕，以建立此服務的執行個體：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-2.png)
+![mrlearning-語音5](images/mrlearning-speech/tutorial4-section2-step1-2.png)
 
 在 [建立] 頁面上，按一下 [預測]  選項，並輸入下列值：
 
 * 針對 **訂用帳戶**，如果您有試用版訂用帳戶，請選取 [免費試用]  ，否則請選取其他訂用帳戶的其中一個
 * 針對 **資源群組**，按一下 [**建立新** 的] 連結，輸入適當的名稱，例如 *MRKT-教學* 課程，然後按一下 **[確定]** 。
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-3.png)
+![mrlearning-語音6](images/mrlearning-speech/tutorial4-section2-step1-3.png)
 
 > [!NOTE]
 > 從撰寫本文的時間起，您不需要建立撰寫資源，因為當您在下一節中建立 Language Understanding Intelligent Service (LUIS) 時，系統會在 LUIS 內自動產生撰寫試用版金鑰。
@@ -71,18 +71,18 @@ ms.locfileid: "99590360"
 * 針對 [預測位置]  ，請選擇接近應用程式使用者實體位置的位置，例如 [(美國) 美國西部] 
 * 針對 [預測定價層]  ，基於本教學課程的目的，請選取 [F0 (每秒 5 個呼叫，每月 10K 個呼叫)] 
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-4.png)
+![mrlearning-語音7](images/mrlearning-speech/tutorial4-section2-step1-4.png)
 
 接著，按一下 [ **審核 + 建立** ] 索引標籤，檢查詳細資料，然後按一下位於頁面底部的 [ **建立** ] 按鈕，以建立資源，以及建立新的資源群組（如果您已設定要建立的資源群組的話）：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-5.png)
+![mrlearning-語音8](images/mrlearning-speech/tutorial4-section2-step1-5.png)
 
 > [!NOTE]
 > 按一下 [建立] 按鈕之後，您必須等候服務建立，這可能需要幾分鐘的時間。
 
 資源建立程序完成後，您會看到 **部署已完成** 的訊息：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section2-step1-6.png)
+![mrlearning-語音9](images/mrlearning-speech/tutorial4-section2-step1-6.png)
 
 ## <a name="creating-the-language-understanding-intelligent-service-luis"></a>建立 Language Understanding Intelligent Service (LUIS)
 
@@ -118,11 +118,11 @@ ms.locfileid: "99590360"
 
 然後按一下 [完成]  按鈕來建立新的應用程式：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step1-1.png)
+![mrlearning-語音10](images/mrlearning-speech/tutorial4-section3-step1-1.png)
 
 建立新的應用程式之後，您會進入該應用程式的 **儀表板** 頁面：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step1-2.png)
+![mrlearning-語音11](images/mrlearning-speech/tutorial4-section3-step1-2.png)
 
 ### <a name="2-create-intents"></a>2.建立意圖
 
@@ -132,14 +132,14 @@ ms.locfileid: "99590360"
 
 然後按一下 [完成]  按鈕來建立新的意圖：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-1.png)
+![mrlearning-語音12](images/mrlearning-speech/tutorial4-section3-step2-1.png)
 
 > [!CAUTION]
 > 基於本教學課程的目的，您的 Unity 專案會依據名稱來參考此意圖，亦即：'PressButton'。 因此，請務必將您的意圖命名為完全相同的名稱。
 
 建立新的意圖之後，您會進入該意圖的頁面：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step2-2.png)
+![mrlearning-語音14](images/mrlearning-speech/tutorial4-section3-step2-2.png)
 
 ### <a name="3-create-example-utterances"></a>3.建立範例語句
 
@@ -158,7 +158,7 @@ ms.locfileid: "99590360"
 
 新增所有範例語句之後，您的 PressButton 意圖頁面看起來應該像這樣：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step3-1.png)
+![mrlearning-語音15](images/mrlearning-speech/tutorial4-section3-step3-1.png)
 
 > [!CAUTION]
 > 基於本教學課程的目的，您的 Unity 專案會參考以下單字：'hint' (提示)、'hints' (提示)、'reset' (重設) 和 'launch' (發射)。 因此，請務必以完全相同的方式來拼寫這些單字。
@@ -172,11 +172,11 @@ ms.locfileid: "99590360"
 
 然後按一下 [ **建立** ] 按鈕來建立新的實體：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-1.png)
+![mrlearning-語音16](images/mrlearning-speech/tutorial4-section3-step4-1.png)
 
 **重複** 上一個步驟來建立名為 **目標** 的另一個實體，因此您有名為「動作」和「目標」的兩個實體：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step4-2.png)
+![mrlearning-語音17](images/mrlearning-speech/tutorial4-section3-step4-2.png)
 
 > [!CAUTION]
 > 基於本教學課程的目的，您的 Unity 專案會依據名稱來參考這些實體，亦即：「動作」與「目標」。 因此，請務必將您的實體命名為完全相同的名稱。
@@ -187,22 +187,22 @@ ms.locfileid: "99590360"
 
 回到 PressButton 意圖頁面之後，按一下單字 **go**，然後再按一下單字 **ahead**，接著從內容快顯功能表中選取 [動作 (簡單)]  ，將 **go ahead** 標示為 **動作** 實體值：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-1.png)
+![mrlearning-語音18](images/mrlearning-speech/tutorial4-section3-step5-1.png)
 
 **go ahead** 片語現在已定義為 **動作** 實體值。 現在您可以注意到這個字下的動作實體值：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-2.png)
+![mrlearning-語音19](images/mrlearning-speech/tutorial4-section3-step5-2.png)
 
 > [!NOTE]
 > 上圖中顯示在標籤底下的紅線表示尚未對實體值進行預測，當您在下一節中訓練模型時，此問題就會解決。
 
 接下來，按一下單字 **launch**，然後從內容快顯功能表中選取 [目標 (簡單)]  ，將  標記為 **目標** 實體值：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-3.png)
+![mrlearning-語音20](images/mrlearning-speech/tutorial4-section3-step5-3.png)
 
 **啟動** 單字現在已定義為 **目標** 實體值。現在您可以在啟動時看到 [目標實體] 值：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-4.png)
+![mrlearning-語音21](images/mrlearning-speech/tutorial4-section3-step5-4.png)
 
 PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定為可進行預測，如下所示：
 
@@ -219,20 +219,20 @@ PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定�
 
 標記所有範例語句之後，您的 PressButton 意圖頁面看起來應該像這樣：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step5-5.png)
+![mrlearning-語音22](images/mrlearning-speech/tutorial4-section3-step5-5.png)
 
 ### <a name="6-train-test-and-publish-the-app"></a>6.訓練、測試及發佈應用程式
 
 若要訓練應用程式，請按一下 [訓練]  按鈕，並等候訓練程序完成：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-1.png)
+![mrlearning-語音23](images/mrlearning-speech/tutorial4-section3-step6-1.png)
 
 > [!NOTE]
 > 如您在上圖中所見，所有標籤底下的紅線都已移除，這表示我們已對所有實體值進行預測。 另請注意，[訓練] 按鈕左邊的狀態圖示已從紅色變更為綠色。
 
 當訓練程序完成時，請按一下 [測試]  按鈕，然後輸入 **go ahead and launch the rocket** 並按下 Enter 鍵：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-2.png)
+![mrlearning-語音24](images/mrlearning-speech/tutorial4-section3-step6-2.png)
 
 測試語句處理完成後，請按一下 [檢查]  來查看測試結果：
 
@@ -240,41 +240,41 @@ PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定�
 * 動作實體：go ahead
 * 目標實體：launch
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-3.png)
+![mrlearning-語音25](images/mrlearning-speech/tutorial4-section3-step6-3.png)
 
 若要發佈應用程式，請按一下右上方的 [ **發佈** ] 按鈕，然後在 [ **選擇您的發行位置和設定** ] 快顯視窗中，選取 [ **生產** ]，然後按一下 [ **完成** ] 按鈕：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-4.png)
+![mrlearning-語音26](images/mrlearning-speech/tutorial4-section3-step6-4.png)
 
 等待發佈程序完成：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-5.png)
+![mrlearning-語音27](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
 流覽至 [管理 > 的應用程式設定 > **Azure 資源** ] 頁面上，您的 azure 資源頁面看起來應該像這樣：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section3-step6-6.png)
+![mrlearning-語音28](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 
 ## <a name="connecting-the-unity-project-to-the-luis-app"></a>將 Unity 專案連線至 LUIS 應用程式
 
 在 [管理] > [應用程式設定] > [Azure 資源]  頁面上，按一下 **複製** 圖示來複製 **查詢範例**：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-1.png)
+![mrlearning-語音29](images/mrlearning-speech/tutorial4-section4-step1-1.png)
 
 回到 Unity 專案，在 [階層] 視窗中選取 **Lunarcom** 物件，然後在 [偵測器] 視窗中尋找 **Lunarcom Intent Recognizer (指令碼)** 元件並進行設定，如下所示：
 
 * 在 [LUIS 端點]  欄位中，貼上您在上一個步驟中複製的 **查詢範例**：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section4-step1-2.png)
+![mrlearning-語音30](images/mrlearning-speech/tutorial4-section4-step1-2.png)
 
 ## <a name="testing-and-improving-the-intent-recognition"></a>測試和改善意圖辨識
 
 若要直接在 Unity 編輯器中使用意圖辨識，您必須允許您的開發電腦使用聽寫。 若要確認此設定是否開啟，請開啟 Windows 的 [設定]  ，然後選擇 [隱私權]   > [語音]  ，並確定 [線上語音辨識]  已開啟：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-1.png)
+![mrlearning-語音31](images/mrlearning-speech/tutorial4-section5-step1-1.png)
 
 如果您現在進入遊戲模式，您可以先按下火箭按鈕來測試意圖辨識。 然後，假設您的電腦有麥克風，當您說出第一個範例語句：**go ahead and launch the rocket** 時，您就會看到 LunarModule 發射至太空中：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-2.png)
+![mrlearning-語音32](images/mrlearning-speech/tutorial4-section5-step1-2.png)
 
 請嘗試所有 **範例語句**，然後嘗試一些 **有變化的範例語句** 變體，以及幾個 **隨機語句**。
 
@@ -286,7 +286,7 @@ PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定�
 
 當您依據需求檢閱多個語句之後，請按一下 [訓練]  按鈕來重新訓練模型，然後按一下 [發佈]  按鈕來重新發佈更新的應用程式：
 
-![mrlearning-speech](images/mrlearning-speech/tutorial4-section5-step1-3.png)
+![mrlearning-語音33](images/mrlearning-speech/tutorial4-section5-step1-3.png)
 
 > [!NOTE]
 > 如果端點語句未與 PressButton 意圖一致，但您希望模型知道語句沒有意圖，您可以將符合的意圖變更為 [無]。

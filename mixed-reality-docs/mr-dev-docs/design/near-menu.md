@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、功能表、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 2536652f78c0643f8b527878565c1a4f0328ce9a
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: ecee6182d64ab1c843a9948984565d49ae313923
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107299693"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600167"
 ---
 # <a name="near-menu"></a>近端功能表
 
@@ -26,7 +26,7 @@ ms.locfileid: "107299693"
 ## <a name="near-menu-in-mrtk-mixed-reality-toolkit-for-unity"></a>適用于 Unity 的 MRTK (混合現實工具組) 附近的功能表
 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種鄰近的功能表預製專案範例。
 
-* [MRTK-近端功能表](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
+* [MRTK-近端功能表](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/near-menu)
 
 <br>
 

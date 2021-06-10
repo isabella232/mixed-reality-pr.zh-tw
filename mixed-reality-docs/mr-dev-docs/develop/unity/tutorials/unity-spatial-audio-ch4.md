@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: 26143975707b2cd6141803a6335cec89db5bbd26
-ms.sourcegitcommit: 68140e9ce84e69a99c2b3d970c7b8f2927a7fc93
+ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
+ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/05/2021
-ms.locfileid: "99590730"
+ms.lasthandoff: 05/29/2021
+ms.locfileid: "110712745"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. 在執行時間啟用和停用 spatialization
 
@@ -28,7 +28,7 @@ ms.locfileid: "99590730"
 
  以滑鼠右鍵按一下 [專案] 視窗，然後選擇 [**建立**  >  **c # 腳本**] 來建立新的 c # 腳本，輸入適合腳本的名稱，例如 _SpatializeOnOff_：
 
-![建立腳本](images/spatial-audio/spatial-audio-04-section1-step1-1.png)
+![建立指令碼](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
 按兩下 [專案] 視窗中的腳本，在 Visual Studio 中開啟它。 以下列內容取代預設腳本內容：
 
@@ -98,23 +98,23 @@ public class SpatializeOnOff : MonoBehaviour
 
 選取階層中的 [ **四** ]，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **SpatializeOnOff (腳本)**
 
-![將腳本新增至四個](images/spatial-audio/spatial-audio-04-section2-step1-1.png)
+![將腳本新增至四個](images/spatial-audio/spatial-audio-04-section2-step1-1.PNG)
 
 在階層中，找到 **PressableButtonHoloLens2**  >  **IconAndText**  >  **TextMeshPro**。
 
 在階層中仍選取了 **四** 個物件時，請在 [偵測器] 視窗中，找 **出 (腳本)** 元件的 Spatialize，然後拖放 PressableButtonHoloLens2 的 **TextMeshPro** 元件。
 
-![尋找階層中的 PressableButtonHoloLens2 物件](images/spatial-audio/spatial-audio-04-section2-step1-2.png)
+![尋找階層中的 PressableButtonHoloLens2 物件](images/spatial-audio/spatial-audio-04-section2-step1-2.PNG)
 
 若要在放開按鈕時設定按鈕以呼叫 **SpatializeOnOff** 腳本，您必須設定互動腳本。
 
-在 [階層] 視窗中，選取 **PressableButtonHoloLens2**。 在 [偵測器] 視窗中，找出 [ **互動 (腳本)** 元件]，然後按一下 [OnClick ( # A3 事件] 底下的 + 圖示。
+在 [階層] 視窗中，選取 **PressableButtonHoloLens2**。 在 [偵測器] 視窗中，找出 [ **互動 (腳本)** 元件]，然後按一下 [OnClick () 事件] 底下的 + 圖示。
 
 * 在 [階層] 視窗中仍選取 [ **PressableButtonHoloLens2** ] 物件，然後從 [階層] 視窗中，將 [ **四** 個物件] 拖曳至您剛剛加入之事件的 [ **無 (物件])** 欄位，讓 ButtonParent 物件從此按鈕接聽按鈕 click 事件：
 
-* 按一下相同事件的 [沒有函式] 下拉式清單。 然後選取 **SpatializeOnOff**  >  **SwapSpatialization ( # B1** 來開啟和關閉空間音訊
+* 按一下相同事件的 [沒有函式] 下拉式清單。 然後選取 [ **SpatializeOnOff**  >  **SwapSpatialization ()** 以開啟和關閉空間音訊
 
-![按鈕動作設定](images/spatial-audio/spatial-audio-04-section2-step1-3.png)
+![按鈕動作設定](images/spatial-audio/spatial-audio-04-section2-step1-3.PNG)
 
 ## <a name="congratulations"></a>恭喜！
 

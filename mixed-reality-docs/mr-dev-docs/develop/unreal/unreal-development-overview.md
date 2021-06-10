@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, OpenXR
-ms.openlocfilehash: 99540b9cd3473097896d847943b9736300000305
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1b5959db028e78670a933188101084e6035805fc
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99421417"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772321"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -40,7 +40,7 @@ ms.locfileid: "99421417"
 | [安裝最新工具](../install-the-tools.md) | 下載並安裝最新版的 Unreal Engine，並設定您的混合實境專案 |
 | [建立您的第一個 HoloLens Unreal 應用程式](unreal-quickstart.md) | 藉由建立基本的混合現實應用程式，開始您的 Unreal 和 HoloLens 開發旅程 |
 | [HoloLens 2 教學課程系列](tutorials/unreal-uxt-ch1.md) | 在 Unreal 中設定混合實境開發、使用 MRTK 建置您的第一個應用程式，並將您的應用程式部署至 HoloLens 2 |
-| (選擇性) 在 Unreal 中開始使用 [OpenXR](../native/openxr.md) | 如果您想要在 Unreal 中建置 OpenXR 應用程式，您應停用下列引擎外掛程式：<ul><li>Windows Mixed Reality</li></ul><br>從 GitHub 下載下列外掛程式，並在您的專案中啟用：<ul><li> [Microsoft OpenXR](https://github.com/microsoft/Microsoft-OpenXR-Unreal)</li></ul><br>[以下](#supported-features)完整列出 OpenXR 中目前支援的功能。|
+| 開始在 Unreal 中使用[OpenXR](../native/openxr.md) | 從 Unreal 引擎 Marketplace 安裝和啟用下列外掛程式：<ul><li> [Microsoft OpenXR](https://www.unrealengine.com/marketplace/en-US/product/ef8930ca860148c498b46887da196239)</li></ul>確定已停用 Microsoft Windows Mixed Reality 外掛程式。<br><br>[以下](#supported-features)完整列出 OpenXR 中目前支援的功能。|
 
 ### <a name="2-core-building-blocks"></a>2.核心基本要素
 
@@ -75,9 +75,13 @@ ms.locfileid: "99421417"
 
 ### <a name="5-adding-services"></a>5.新增服務
 
-到了開發旅程的這個階段，您可能會想要新增服務，或是需要商業部署方面的協助。 將 [Azure 雲端服務](../mixed-reality-cloud-services.md)與 Dynamics 365 功能整合，可以有效提升您的專案等級。 我們編譯了一些方便您探索及擴充混合實境知識的起點。
+到了開發旅程的這個階段，您可能會想要新增服務，或是需要商業部署方面的協助。 整合 [Azure 雲端服務](../mixed-reality-cloud-services.md) 可讓您以主要方式來設定專案的等級。 我們編譯了一些方便您探索及擴充混合實境知識的起點。
 
 [!INCLUDE[](../includes/unreal-cloud-services-d365.md)]
+
+### <a name="6-low-code-alternatives"></a>6. 低程式碼替代方案
+
+[!INCLUDE[](../includes/unreal-low-code.md)]
 
 ## <a name="whats-next"></a>接下來要做什麼？
 
@@ -93,7 +97,7 @@ ms.locfileid: "99421417"
 
 ## <a name="supported-features"></a>支援的功能
 
-| HoloLens 2 功能 | 最早支援的 Unreal Engine 版本 | 在 OpenXR 中支援 (4.26) |
+| HoloLens 2 功能 | 最早支援的 Unreal Engine 版本 | OpenXR (4.26 +) 支援 |
 | ----------- | ----------- | ----------- |
 | ARM64 支援 | 4.23 | ✔️ |
 | 來自電腦的串流 | 4.23 | ✔️ |
@@ -102,21 +106,21 @@ ms.locfileid: "99421417"
 | 眼球追蹤 | 4.23 | ✔️ |
 | 語音輸入 | 4.23 | ✔️ |
 | 空間錨點 | 4.23 | ✔️ |
-| 相機存取 | 4.23 |
+| 相機存取 | 4.23 | ✔️ |
 | QR 代碼 | 4.23 | ✔️ |
 | 空間音訊 | 4.23 | ✔️ |
 | 串流的觀眾螢幕支援 | 4.24 |
 | 透過串流的平面 LSR | 4.24 |
 | [範例應用程式](../features-and-samples.md) | 4.24 | ✔️ |
 | 行動多重檢視：效能命中 60 fps | 4.25 | ✔️ |
-| 第三相機轉譯 | 4.25 |
+| 第三相機轉譯 | 4.25 | ✔️ |
 | 從已封裝的桌面應用程式串流 | 4.25.1 | ✔️ |
-| 適用於 HoloLens 2 的 Azure Spatial Anchors 搶鮮版 (Beta) | 4.25 |
+| 適用于 HoloLens 2 的 Azure 空間錨點 | 4.25 | ✔️ |
 | 混合實境 UX 工具支援 | 4.25 | ✔️ |
 | 開發人員文件和教學課程 | 4.25 | ✔️ |
 | 系統鍵盤 | 4.26 | ✔️ |
 | HoloLens 媒體播放器外掛程式 | 4.26 | ✔️ |
-| 適用於 iOS 和 Android 的 Azure Spatial Anchors (Beta) | 4.26 |
+| 適用于 iOS 和 Android 的 Azure 空間錨點 | 4.26 |
 | 具有 Microsoft 廠商特定 OpenXR 擴充功能的 Microsoft OpenXR 外掛程式 | 4.26 | ✔️ |
 | 從 Azure 串流至 HoloLens 2 | 4.26 | ✔️ |
 | 適用於已封裝應用程式的 Windows 應用程式認證套件合規性 | 4.26 | ✔️ |

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 0254b7c4ac6a9602517adb3d9e5c024ebd69db4e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944675"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647024"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中使用語音
 
@@ -41,7 +41,7 @@ ms.locfileid: "107944675"
 | 選取 | 說「選取」以顯示注視游標。 然後，將游標移至您要選取的內容，然後再按一次 [選取]。 |
 | 開啟 [開始] 功能表 | 移至 [開始] |
 | 離開沉浸式應用程式 | 說「移至開始」以顯示 [快速動作] 功能表，然後說「Mixed reality home」。 |
-| 開啟/關閉 [開] | 說「移至開始」以顯示 [快速動作] 功能表，然後說「Mixed reality home」。 |
+| 開啟/關閉 [開] | 關閉/關閉 |
 | 傳送 | 將您的頭部移至您想要的位置，然後說「傳送」。  (若要更精確的目標，請先說「選取」來顯示注視游標，然後說「傳送」。)  |
 | 向左或向右切換 | 左/向右 |
 | 開啟180度 | 轉身 |

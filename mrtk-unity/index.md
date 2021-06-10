@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: cef4bcf671caaaf8d5cb7cdc639446c6c6e91fa0
-ms.sourcegitcommit: 8e1a1d48d9c7cd94dab4ce6246aa2c0f49ff5308
+ms.openlocfilehash: 4d00d9e94ad4e4a300fead30b52b9a78253885c3
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/13/2021
-ms.locfileid: "109850434"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772431"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -19,7 +19,7 @@ ms.locfileid: "109850434"
 
 <br>
 
-<iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWyXHW]
 
 MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能，可用來加快 Unity 中的跨平台 MR 應用程式開發。 以下是其中的一些功能：
 
@@ -28,18 +28,30 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 * 以可擴充的 **架構** 運作，讓開發人員能夠交換核心元件。
 * **支援多種平臺**：
 
+::: moniker range=">= mrtkunity-2021-05"
 | 平台 | 支援的裝置 |
 |---|---|
-| OpenXR (Unity 2020.2 或更新版本)  | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
+| OpenXR (Unity 2020.3)  | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置  |
 | Oculus (Unity 2019.3 或更新版本)  | Oculus 的追求 |
 | OpenVR |  Windows Mixed Reality 頭戴式裝置 <br> HTC Vive <br> Oculus Rift |
 | Ultraleap 手部追蹤 | Ultraleap Leap 移動控制器 |
 | 行動 | iOS 與 Android |
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+| 平台 | 支援的裝置 |
+|---|---|
+| MRTK 2.6、Unity 2020.3) 的 OpenXR (預覽版 | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
+| Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置  |
+| Oculus (Unity 2019.3 或更新版本)  | Oculus 的追求 |
+| OpenVR |  Windows Mixed Reality 頭戴式裝置 <br> HTC Vive <br> Oculus Rift |
+| Ultraleap 手部追蹤 | Ultraleap Leap 移動控制器 |
+| 行動 | iOS 與 Android |
+::: moniker-end
 
 ## <a name="getting-started-with-mrtk"></a>開始使用 MRTK
 
-如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您在裝置或模擬器上安裝和探索 MRTK 範例中樞範例應用程式。 
+如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您在裝置或 [模擬器](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)上安裝和探索 MRTK 範例中樞範例應用程式。 
 
 > [!div class="nextstepaction"]
 > [下載 MRTK 範例中樞應用程式](running-examples-hub.md)
@@ -58,7 +70,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="documentation"></a>文件
 
-| [![版本資訊](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-26-release-notes.md)<br/>[版本資訊](release-notes/mrtk-26-release-notes.md)| [![MRTK 總覽](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 總覽](architecture/overview.md)|[![API 參考](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 參考](/dotnet/api/Microsoft.MixedReality.Toolkit)|
+| [![版本資訊](features/images/MRTK_Icon_ReleaseNotes.png)](release-notes/mrtk-27-release-notes.md)<br/>[版本資訊](release-notes/mrtk-26-release-notes.md)| [![MRTK 總覽](features/images/MRTK_Icon_ArchitectureOverview.png)](architecture/overview.md)<br/>[MRTK 總覽](architecture/overview.md)|[![API 參照](features/images/MRTK_Icon_APIReference.png)](/dotnet/api/Microsoft.MixedReality.Toolkit)<br/>[API 參考](/dotnet/api/Microsoft.MixedReality.Toolkit)|
 |:---|:---|:---|
 
 ## <a name="build-status"></a>組建狀態
@@ -282,7 +294,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="tools"></a>工具
 
-|  [ ![ 優化視窗](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md)[優化視窗](features/tools/optimize-window.md) | 相依性[ ![ 視窗](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md)相依性[視窗](features/tools/dependency-window.md) | ![組建視窗](features/images/MRTK_Icon_BuildWindow.png) 組建視窗 | [ ![ 輸入錄製](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md)[輸入記錄](features/input-simulation/input-animation-recording.md) |
+|  [ ![ 優化視窗](features/images/MRTK_Icon_OptimizeWindow.png)](features/tools/optimize-window.md)[優化視窗](features/tools/optimize-window.md) | 相依性[ ![ 視窗](features/images/MRTK_Icon_DependencyWindow.png)](features/tools/dependency-window.md)相依性[視窗](features/tools/dependency-window.md) | [ ![ 組建視窗](features/images/MRTK_Icon_BuildWindow.png)](features/tools/build-window.md)[組建視窗](features/tools/build-window.md) | [ ![ 輸入錄製](features/images/MRTK_Icon_InputRecording.png)](features/input-simulation/input-animation-recording.md)[輸入記錄](features/input-simulation/input-animation-recording.md) |
 |:--- | :--- | :--- | :--- |
 | 自動設定混合現實專案以進行效能優化 | 分析資產之間的相依性，並找出未使用的資產 |  設定及執行混合現實應用程式的端對端組建程式 | 在編輯器中錄製並播放前端移動和手動追蹤資料 |
 
@@ -336,7 +348,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="useful-resources-on-azure"></a>Azure 上的實用資源
 
-| ![Spatial Anchors](features/images/mrdevcenter/icon-azurespatialanchors.png)<br> [Spatial Anchors](/azure/spatial-anchors/)| ![語音服務](features/images/mrdevcenter/icon-azurespeechservices.png) [語音服務](/azure/cognitive-services/speech-service/)| ![視覺服務 ](features/images/mrdevcenter/icon-azurevisionservices.png) [視覺服務](/azure/cognitive-services/computer-vision/)|
+| ![Spatial Anchors](features/images/mrdevcenter/icon-azurespatialanchors.png)<br> [Spatial Anchors](/azure/spatial-anchors/)| ![語音服務 ](features/images/mrdevcenter/icon-azurespeechservices.png) [語音服務](/azure/cognitive-services/speech-service/)| ![視覺服務 ](features/images/mrdevcenter/icon-azurevisionservices.png) [視覺服務](/azure/cognitive-services/computer-vision/)|
 | :------------------------| :--------------------- | :---------------------- |
 | 空間錨點是一種跨平臺服務，可讓您使用在一段時間內跨裝置保存其位置的物件，建立混合的現實體驗。| 探索及整合 Azure 提供的語音功能，例如語音轉換文字、說話者辨識或語音翻譯至您的應用程式。| 使用視覺服務識別並分析您的影像或視訊內容，例如電腦視覺、臉部偵測、表情辨識或影片索引器。 |
 

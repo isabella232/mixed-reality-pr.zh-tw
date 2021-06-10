@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv、語音、cortana、語音、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、注視
-ms.openlocfilehash: 3f178442d892e284ed3e3454d2d54ed68c732313
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 6773bb71da7d98b1dd00d2246084d469e5e7c6ba
+ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300293"
+ms.lasthandoff: 05/27/2021
+ms.locfileid: "110600577"
 ---
 # <a name="voice-input"></a>語音輸入
 
@@ -44,7 +44,7 @@ ms.locfileid: "107300293"
     <tr>
         <td><strong>功能</strong></td>
         <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第 1 代)</strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
+        <td><a href="/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
         <td><a href="../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
     </tr>
      <tr>
@@ -172,7 +172,7 @@ ms.locfileid: "107300293"
 
 請考慮對您所建置的任何體驗新增語音命令。 語音是控制系統和應用程式的強大方式。 因為使用者會說出不同種類的方言和重音，所以適當的語音關鍵字選擇，可確保您的使用者命令可以明確地解讀。
 
-### <a name="best-practices"></a>最佳作法
+### <a name="best-practices"></a>最佳做法
 
 以下是有助於順利辨識語音的一些做法。
 * **使用精簡的命令** - 盡可能選擇有兩個以上音節的關鍵字。 口音不同的人在說單音節的單字時往往會使用不同的元音。 範例：「播放影片」優於「播放目前選取的影片」
@@ -264,7 +264,7 @@ ms.locfileid: "107300293"
 * 如何讓我的語音以特定應用程式或應用程式命令作為目標？
 * 在 HoloLens 上的全像攝影畫面外，是否可以使用語音來命令物件？
 
-## <a name="communication"></a>通訊
+## <a name="communication"></a>溝通
 
 如果應用程式想要利用 HoloLens 提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以使用的各種 [音訊串流類別](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) 。 Windows 10 支援數種不同的串流類別和 HoloLens，可讓您利用其中三種來啟用自訂處理，以優化專為語音、通訊和 (其他所量身打造的麥克風音訊品質，也就是「攝像機」 ) 案例。
 * AudioCategory_Communications 的串流類別目錄已針對通話品質和旁白案例自訂，並為用戶端提供使用者語音的 16 kHz 24 位 mono 音訊串流
@@ -290,7 +290,7 @@ HoloLens 2 [支援多種語言](/hololens/hololens2-language-support)。 請記�
 ## <a name="voice-input-in-mrtk-mixed-reality-toolkit-for-unity"></a>MRTK 中的語音輸入 (適用于 Unity 的混合現實工具組) 
 透過 **[MRTK](https://github.com/Microsoft/MixedRealityToolkit-Unity)**，您可以輕鬆地對任何物件指派語音命令。 使用 MRTK 的 **語音輸入設定檔** 來定義關鍵字。 藉由指派 **SpeechInputHandler** 腳本，您可以讓任何物件回應語音輸入設定檔中定義的關鍵字。 SpeechInputHandler 也會提供語音確認標籤，以提升使用者的信心。
 
-* [MRTK-Voice 命令](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/input/speech)
+* [MRTK-Voice 命令](/windows/mixed-reality/mrtk-unity/features/input/speech)
 
 ---
 

@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens、模擬器、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
-ms.openlocfilehash: 3af8aaad722715bfcac279a2ad9cd0f2382ae6bb
-ms.sourcegitcommit: f77adfa23a98ccc0412eb6be5871ad4b1da0f755
+ms.openlocfilehash: 4e01cf05782223a88bc90743daea20000e7597d1
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/11/2021
-ms.locfileid: "109740619"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772311"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 模擬器保存
 
@@ -19,6 +19,8 @@ HoloLens 模擬器 (第一代) 和 HoloLens 2 模擬器組建並存安裝。 我
 
 |  組建 |  發行日期 |  備註 |
 |----------|----------|----------|
+|  [HoloLens 2 模擬器組建10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 2021年6月8日 | Windows 全像21H1 版，2021年6月更新。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 模擬器組建10.0.19041.1154](https://go.microsoft.com/fwlink/?linkid=2165269) | 2021年6月8日 | Windows 全像20H2 版，2021年6月更新。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.20346.1002](https://go.microsoft.com/fwlink/?linkid=2162581) | 2021 5 月11日 | Windows 全像21H1 版可能會更新2021。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.19041.1146](https://go.microsoft.com/fwlink/?linkid=2162751) | 2021 5 月11日 | Windows 全像20H2 版可能會更新2021。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 模擬器組建10.0.19041.1144](https://go.microsoft.com/fwlink/?linkid=2160829) | 2021 年 4 月 13 日 | Windows 全像版本 20H2 2021 年4月更新。  如需一般 HoloLens 2 版本資訊，請參閱 https://docs.microsoft.com/hololens/hololens-release-notes |

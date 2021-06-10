@@ -1,16 +1,16 @@
 ---
 title: 混合式事實設定指南
-description: 將 MRTK 設定為 unity 的檔。
+description: 將 MRTK 設定為 Unity 的檔。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: fc97a2d7c6182b4836d644d91be237e2aef01feb
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b714e01a0969b88a4ca7a3a5047bc5d61516e3f3
+ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143570"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110345141"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
 
@@ -193,8 +193,8 @@ MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸�
 
 | 軸條件約束 | 資料類型 | 描述 | 範例用法 |
 | :--- | :--- | :--- | :--- |
-| 無 | 無資料 | 用於空的動作或事件 | 事件觸發程式 |
-| 原始 (保留)  | 物件 (object) | 保留供日後使用 | N/A |
+| None | 無資料 | 用於空的動作或事件 | 事件觸發程式 |
+| 原始 (保留)  | object | 保留供日後使用 | N/A |
 | Digital | bool | 布林值 on 或 off 型別資料 | 控制器按鈕 |
 | 單一軸 | FLOAT | 單一精確度資料值 | 範圍輸入，例如觸發程式 |
 | 雙軸 | Vector2 | 多軸的雙重 float 類型日期 | Dpad 或操縱杆 |

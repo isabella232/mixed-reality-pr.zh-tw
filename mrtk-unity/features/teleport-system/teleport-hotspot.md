@@ -6,14 +6,15 @@ ms.author: roliu
 ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、傳送系統、傳送熱點
-ms.openlocfilehash: 0cbdad3c038d457109077b742d3f453d63436ae4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+monikerRange: '>= mrtkunity-2021-05'
+ms.openlocfilehash: 2d6160570b43ca931d46f4ec04c604b53b18d731
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144432"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647046"
 ---
-# <a name="teleport-hotspot-experimental"></a>傳送熱點 [實驗]
+# <a name="teleport-hotspot"></a>傳送熱點
 
 「傳送」熱點是您可以新增至 gameobject 的元件，可確保使用者在傳送至該位置時，在特定的位置和方向。
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: b2d23601419c36f2a79a0c6e19d06eda6dc54d09
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 1d148fc31d2009c6843882bf9b9cd9fc99c3322a
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300393"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743686"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -30,7 +30,7 @@ ms.locfileid: "107300393"
 
 ![已選取 [解算器] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-05-section1-step1-1.png)
 
-在本教學課程中，我們將檢閱「方向性指標解算器」和「點選放置解算器」的實作。 若要深入了解 MRTK 中可用的完整解算器範圍，您可以參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)中的[解算器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)指南。
+在本教學課程中，我們將檢閱「方向性指標解算器」和「點選放置解算器」的實作。 若要深入了解 MRTK 中可用的完整解算器範圍，您可以參閱 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity)中的[解算器](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)指南。
 
 > [!NOTE]
 > 方向性指標的求解器不在上述的解析器資料夾中，但在套件 > 混合現實工具組 Foundation > SDK > 實驗性 > 功能 > 公用程式資料夾，因為這是實驗性的功能。
@@ -44,15 +44,12 @@ ms.locfileid: "107300393"
 > [!TIP]
 > 如果您發現場景中的相機或任何其他圖示隱藏了物件，或造成混亂，您可以藉由<a href="https://docs.unity3d.com/2019.1/Documentation/Manual/GizmosMenu.html" target="_blank">切換 Gizmos</a> 為關閉位置來隱藏這些物件，如上圖所示。 若要深入了解 Gizmos 功能表，以及如何使用其來最佳化場景檢視，您可以參閱 Unity 的 <a href="https://docs.unity3d.com/Manual/GizmosMenu.html" target="_blank">Gizmos 功能表</a>文件。
 
-將新增的 Chevron 物件 **Indicator** 重新命名，然後在 [偵測器] 視窗中，使用 [新增元件] 按鈕來新增 **DirectionalIndicator**：
+將新增的箭號物件重新命名為 **指標**，然後在 [偵測器] 視窗中，使用 [ **新增元件** ] 按鈕來新增 **DirectionalIndicator**：
 
 ![已新增 DirectionalIndicator 解算器元件的 Unity](images/mr-learning-base/base-05-section2-step1-2.png)
 
 > [!NOTE]
 > 當您新增解算器時 (在此案例中為 DirectionalIndicator 元件)，Solver Handler 元件也會自動新增，因為解算器需要此元件。
-
-> [!NOTE]
-> Directional Indicator Controller (指令碼) 不是 MRTK 的一部分，但已包含在教學課程資產中。
 
 設定 DirectionalIndicator 和 SolverHandler 元件，如下所示：
 
@@ -72,7 +69,7 @@ ms.locfileid: "107300393"
 > 如果您沒有在場景視窗中看到相機光線，請確定您已啟用 [Gizmos] 功能表，如上圖中所示。
 
 > [!TIP]
-> 若要了解如何使用編輯器內的輸入模擬，您可以參考 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)中的[使用編輯器內的手動輸入模擬來測試場景](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。
+> 若要了解如何使用編輯器內的輸入模擬，您可以參考 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity)中的[使用編輯器內的手動輸入模擬來測試場景](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。
 
 > [!TIP]
 > 如果您的電腦有麥克風，您可以使用語音命令「切換診斷」，輕鬆地切換出現在 [遊戲] 視窗中的 [診斷] 面板作用中狀態。 或者，您也可以在 [MRTK 組態設定檔] > [診斷] > [啟用診斷系統] 中加以停用。 不過，通常建議您在開發期間讓診斷系統保持作用中狀態。
@@ -91,7 +88,7 @@ ms.locfileid: "107300393"
 > [!NOTE]
 > [磁性表面] 設定會決定放置物件時，Tap To Place (指令碼) 元件可以偵測哪些物件。 藉由將設定變更為僅限 [空間感知]，Tap To Place (指令碼) 元件就只能將 Rover 放在名為「空間感知」的 Unity 層物件上，其預設為 HoloLens 所產生的空間感知網格。
 >
->若要深入了解層級，您可以參閱 Unity 的<a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">層</a>文件。
+> 若要深入了解層級，您可以參閱 Unity 的<a href="https://docs.unity3d.com/Manual/Layers.html" target="_blank">層</a>文件。
 
 > [!TIP]
 > 如果您想要在 HoloLens 上測試「點選放置」功能時查看「空間感知網格」，您可以暫時將空間網格觀察器的顯示選項設定為 [可見]。 如需有關如何變更顯示選項的提醒，您可以參閱[變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示。
@@ -140,7 +137,7 @@ ms.locfileid: "107300393"
 
 在本教學課程中，您已了解如何使用 MRTK 的方向性指標解算器，讓 UI 元素以直覺方式將使用者導向至物件。 您也了解如何使用點選放置解算器，輕易地調整物件的位置。
 
-若要深入了解 MRTK 隨附的這些解算器和其他解算器，您可以參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/)的[解算器](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)指南。
+若要深入了解 MRTK 隨附的這些解算器和其他解算器，您可以參閱 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity/)的[解算器](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/solvers/solver)指南。
 
 > [!div class="nextstepaction"]
->[下一個教學課程：6.建立使用者介面](mr-learning-base-06.md)
+> [下一個教學課程：6.建立使用者介面](mr-learning-base-06.md)

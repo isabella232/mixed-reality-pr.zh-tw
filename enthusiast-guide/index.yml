@@ -29,52 +29,43 @@ highlightedContent:
       url: wmr-health-safety-comfort.md
     - title: 探索 AltspaceVR
       itemType: whats-new
-      url: 'https://docs.microsoft.com/windows/mixed-reality/altspace-vr/journey?tabs=application'
-conceptualContent:
+      url: /windows/mixed-reality/altspace-vr/journey?tabs=application
+productDirectory:
   title: 開始使用 Windows Mixed Reality
   summary: 尋找有關混合實境軟體、硬體和疑難排解的其他資訊。
   items:
     - title: 操作說明
+      imageSrc: images/WMR_Docs_Landing_How-To's.png
       links:
         - url: plug-in-your-headset.md
-          itemType: quickstart
           text: 連接您的頭戴式裝置
         - url: install-windows-mixed-reality.md
-          itemType: quickstart
           text: 安裝 Windows Mixed Reality 軟體
         - url: learn-mixed-reality.md
-          itemType: quickstart
           text: 執行學習體驗
         - url: using-games-and-apps-in-windows-mixed-reality.md
-          itemType: quickstart
           text: 使用遊戲和應用程式
     - title: 參考
+      imageSrc: images/WMR_Docs_Landing_References.png
       links:
         - url: your-mixed-reality-home.md
-          itemType: concept
           text: 您的混合實境首頁
         - url: controllers-in-wmr.md
-          itemType: concept
           text: Windows Mixed Reality 中的運動控制器
         - url: using-steamvr-with-windows-mixed-reality.md
-          itemType: concept
           text: 具有 Windows Mixed Reality 的 SteamVR
         - url: using-speech-in-wmr.md
-          itemType: concept
           text: Windows Mixed Reality 中的語音
     - title: 疑難排解
+      imageSrc: images/WMR_Docs_Landing_TroubleShooting.png
       links:
         - url: troubleshooting-windows-mixed-reality.md
-          itemType: concept
           text: 支援和協助選項
         - url: filing-feedback.md
-          itemType: concept
           text: 提出錯誤及意見反應
         - url: error-codes.md
-          itemType: concept
           text: 錯誤碼
         - url: installation_errors.md
-          itemType: concept
           text: 安裝錯誤
 additionalContent:
   sections:

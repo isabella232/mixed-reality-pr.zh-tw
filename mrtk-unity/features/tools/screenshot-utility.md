@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 59bf0df2a32030281c8bf0a1a8574b4dd9bf4607
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a0c66969a9058adc790919f0054783b7368da8f6
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143798"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647084"
 ---
 # <a name="screenshot-utility"></a>螢幕擷取畫面公用程式
 
@@ -20,7 +20,7 @@ ScreenshotUtility 類別有助於在 Unity 編輯器中透過功能表項目和�
 
 ## <a name="taking-screenshots"></a>拍攝螢幕擷取畫面
 
-您可以在編輯器中選取 [ *混合現實工具組->公用程式->拍攝螢幕擷取畫面* ，然後選取您想要的選項，輕鬆地捕捉螢幕擷取畫面。 如果未播放，請務必顯示 [遊戲視窗] 索引標籤，否則可能不會儲存螢幕擷取畫面。
+您可以在編輯器中選取 [**混合現實**  >  **工具** 組  >  **公用程式**]  >  ，然後選取您想要的選項，輕鬆地捕捉螢幕擷取畫面。 如果未播放，請務必顯示 [遊戲視窗] 索引標籤，否則可能不會儲存螢幕擷取畫面。
 
 根據預設，所有螢幕擷取畫面都會儲存在您的暫存快取 [路徑](https://docs.unity3d.com/ScriptReference/Application-temporaryCachePath.html)中，並顯示在 Unity 主控台中的螢幕擷取畫面路徑。
 

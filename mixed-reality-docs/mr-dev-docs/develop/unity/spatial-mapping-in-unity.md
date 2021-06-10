@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: f7fe6e86f9672f36a34f9d7c32d25fccd7760f5e
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: fa571a13ce192b29b2a35033b55061f3ffb707da
+ms.sourcegitcommit: ec80ef1e496bf0b17a161735535517e87ffdd364
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300163"
+ms.lasthandoff: 05/25/2021
+ms.locfileid: "110351776"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -26,26 +26,9 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 
 ## <a name="device-support"></a>裝置支援
 
-<table>
-    <colgroup>
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    <col width="25%" />
-    </colgroup>
-    <tr>
-        <td><strong>功能</strong></td>
-        <td><a href="/hololens/hololens1-hardware"><strong>HoloLens (第一代) </strong></a></td>
-        <td><a href="https://docs.microsoft.com/hololens/hololens2-hardware"><strong>HoloLens 2</strong></td>
-        <td><a href="../../discover/immersive-headset-hardware-details.md"><strong>沉浸式頭戴裝置</strong></a></td>
-    </tr>
-     <tr>
-        <td>空間對應</td>
-        <td>✔️</td>
-        <td>✔️</td>
-        <td>❌</td>
-    </tr>
-</table>
+| 功能 | [HoloLens (第一代) ](/hololens/hololens1-hardware) | [HoloLens 2](/hololens/hololens2-hardware) | [沉浸式頭戴裝置](../../discover/immersive-headset-hardware-details.md) |
+| ---- | ---- | ---- | ---- |
+| 空間對應 | ✔️ | ✔️ | ❌ |
 
 ## <a name="setting-the-spatialperception-capability"></a>設定 >spatialperception 功能
 
@@ -116,17 +99,18 @@ Unity 提供兩個元件，可讓您輕鬆地將空間對應新增至您的應�
 ```cs
 SurfaceObserver surfaceObserver;
 
- void Start () {
-     surfaceObserver = new SurfaceObserver();
- }
+private void Start()
+{
+    surfaceObserver = new SurfaceObserver();
+}
 ```
 
 藉由呼叫 SetVolumeAsSphere、SetVolumeAsAxisAlignedBox、SetVolumeAsOrientedBox 或 SetVolumeAsFrustum，指定每個 SurfaceObserver 物件將提供資料的空間區域。 您可以直接呼叫其中一個方法，在未來重新定義空間的區域。
 
 ```cs
-void Start () {
-    ...
-     surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
+private void Start()
+{
+    surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
 }
 ```
 
@@ -134,9 +118,9 @@ void Start () {
 
 ```cs
 private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
- {
-    //see Handling Surface Changes
- }
+{
+    // see Handling Surface Changes
+}
 ```
 
 ### <a name="handling-surface-changes"></a>處理介面變更
@@ -147,51 +131,51 @@ private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bou
 * 在移除的案例中，我們會從字典中移除代表這個網格的 GameObject，並將它終結。
 
 ```cs
-System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects = 
+System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects =
     new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
 
-   private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
-   {
-       switch (changeType)
-       {
-           case SurfaceChange.Added:
-           case SurfaceChange.Updated:
-               if (!spatialMeshObjects.ContainsKey(surfaceId))
-               {
-                   spatialMeshObjects[surfaceId] = new GameObject("spatial-mapping-" + surfaceId);
-                   spatialMeshObjects[surfaceId].transform.parent = this.transform;
-                   spatialMeshObjects[surfaceId].AddComponent<MeshRenderer>();
-               }
-               GameObject target = spatialMeshObjects[surfaceId];
-               SurfaceData sd = new SurfaceData(
-                   //the surface id returned from the system
-                   surfaceId,
-                   //the mesh filter that is populated with the spatial mapping data for this mesh
-                   target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
-                   //the world anchor used to position the spatial mapping mesh in the world
-                   target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
-                   //the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
-                   target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
-                   //triangles per cubic meter requested for this mesh
-                   1000,
-                   //bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
-                   true
-                   );
+private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
+{
+    switch (changeType)
+    {
+        case SurfaceChange.Added:
+        case SurfaceChange.Updated:
+            if (!spatialMeshObjects.ContainsKey(surfaceId))
+            {
+                spatialMeshObjects[surfaceId] = new GameObject("spatial-mapping-" + surfaceId);
+                spatialMeshObjects[surfaceId].transform.parent = this.transform;
+                spatialMeshObjects[surfaceId].AddComponent<MeshRenderer>();
+            }
+            GameObject target = spatialMeshObjects[surfaceId];
+            SurfaceData sd = new SurfaceData(
+                // the surface id returned from the system
+                surfaceId,
+                // the mesh filter that is populated with the spatial mapping data for this mesh
+                target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
+                // the world anchor used to position the spatial mapping mesh in the world
+                target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
+                // the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
+                target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
+                // triangles per cubic meter requested for this mesh
+                1000,
+                // bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
+                true
+            );
 
-               SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
-               break;
-           case SurfaceChange.Removed:
-               var obj = spatialMeshObjects[surfaceId];
-               spatialMeshObjects.Remove(surfaceId);
-               if (obj != null)
-               {
-                   GameObject.Destroy(obj);
-               }
-               break;
-           default:
-               break;
-       }
-   }
+            SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
+            break;
+        case SurfaceChange.Removed:
+            var obj = spatialMeshObjects[surfaceId];
+            spatialMeshObjects.Remove(surfaceId);
+            if (obj != null)
+            {
+                GameObject.Destroy(obj);
+            }
+            break;
+        default:
+            break;
+    }
+}
 ```
 
 ### <a name="handling-data-ready"></a>處理資料就緒
@@ -203,23 +187,26 @@ OnDataReady 處理常式會接收 SurfaceData 物件。 WorldAnchor、MeshFilter
 SurfaceObserver 應該在延遲而不是每個畫面上呼叫更新 () 。
 
 ```cs
-void Start () {
-    ...
-     StartCoroutine(UpdateLoop());
+void Start ()
+{
+    StartCoroutine(UpdateLoop());
 }
 
- IEnumerator UpdateLoop()
+IEnumerator UpdateLoop()
+{
+    var wait = new WaitForSeconds(2.5f);
+    while(true)
     {
-        var wait = new WaitForSeconds(2.5f);
-        while(true)
-        {
-            surfaceObserver.Update(OnSurfaceChanged);
-            yield return wait;
-        }
+        surfaceObserver.Update(OnSurfaceChanged);
+        yield return wait;
     }
+}
 ```
 
-## <a name="higher-level-mesh-analysis-spatialunderstanding"></a>較高層級的網狀分析： SpatialUnderstanding
+## <a name="higher-level-mesh-analysis-spatial-understanding"></a>更高層級的網狀分析：空間理解
+
+> [!CAUTION]
+> 空間理解已淘汰，以促進 [場景理解](../../design/scene-understanding.md)。
 
 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity" target="_blank">MixedRealityToolkit</a>是以 Unity 的全像內嵌式 api 為基礎進行全像開發的公用程式程式碼集合。
 
@@ -237,7 +224,7 @@ void Start () {
 
 ### <a name="ray-casting"></a>光線轉換
 
-當房間掃描完成之後，就會在內部產生標籤，例如樓層、上限和牆。 "PlayspaceRaycast" 函式會使用光線，並在光線與已知表面衝突時傳回，如果是，則以 "RaycastResult" 的形式呈現該介面的相關資訊。
+當房間掃描完成之後，就會在內部產生標籤，例如樓層、上限和牆。 此函式 `PlayspaceRaycast` 會使用光線，並在光線與已知表面衝突時傳回，如果是，則會傳回該介面的相關資訊（以形式表示） `RaycastResult` 。
 
 ```cpp
 struct RaycastResult
@@ -247,18 +234,18 @@ struct RaycastResult
         Invalid,    // No intersection
         Other,
         Floor,
-        FloorLike,  // Not part of the floor topology, 
+        FloorLike,  // Not part of the floor topology,
                     //  but close to the floor and looks like the floor
-        Platform,   // Horizontal platform between the ground and 
+        Platform,   // Horizontal platform between the ground and
                     //  the ceiling
         Ceiling,
         WallExternal,
-        WallLike,   // Not part of the external wall surface, 
-                    //  but vertical surface that looks like a 
+        WallLike,   // Not part of the external wall surface,
+                    //  but vertical surface that looks like a
                     //  wall structure
     };
     SurfaceTypes SurfaceType;
-    float SurfaceArea;  // Zero if unknown 
+    float SurfaceArea;  // Zero if unknown
                         //  (i.e. if not part of the topology analysis)
     DirectX::XMFLOAT3 IntersectPoint;
     DirectX::XMFLOAT3 IntersectNormal;
@@ -307,11 +294,11 @@ EXTERN_C __declspec(dllexport) int QueryTopology_FindPositionsOnWalls(
 "TopologyResult" 包含傳回之磁片區的中心位置、面向方向 (例如正常) ，以及所找到空間的維度。
 
 ```cpp
-struct TopologyResult 
-{ 
-    DirectX::XMFLOAT3 position; 
-    DirectX::XMFLOAT3 normal; 
-    float width; 
+struct TopologyResult
+{
+    DirectX::XMFLOAT3 position;
+    DirectX::XMFLOAT3 normal;
+    float width;
     float length;
 };
 ```
@@ -380,17 +367,17 @@ public static int Solver_PlaceObject(
 
 ```cpp
 public enum PlacementType
-            {
-                Place_OnFloor,
-                Place_OnWall,
-                Place_OnCeiling,
-                Place_OnShape,
-                Place_OnEdge,
-                Place_OnFloorAndCeiling,
-                Place_RandomInAir,
-                Place_InMidAir,
-                Place_UnderFurnitureEdge,
-            };
+{
+    Place_OnFloor,
+    Place_OnWall,
+    Place_OnCeiling,
+    Place_OnShape,
+    Place_OnEdge,
+    Place_OnFloorAndCeiling,
+    Place_RandomInAir,
+    Place_InMidAir,
+    Place_UnderFurnitureEdge,
+};
 ```
 
 每個放置類型都有一組唯一類型的參數。 "ObjectPlacementDefinition" 結構包含一組靜態 helper 函式，可用於建立這些定義。 例如，若要尋找將物件放在樓層的位置，您可以使用下列函數。 公用靜態 ObjectPlacementDefinition Create_OnFloor (Vector3) halfDims 除了放置類型以外，您也可以提供一組規則和條件約束。 無法違反規則。 接著，滿足型別和規則的可能放置位置會針對一組條件約束進行優化，以便選取最佳放置位置。 每個規則和條件約束都可以透過提供的靜態建立函式來建立。 以下提供範例規則和條件約束結構函數。
@@ -405,12 +392,12 @@ public static ObjectPlacementConstraint Create_NearPoint(
 下列物件放置查詢正在尋找在介面邊緣放置半計量立方體的位置，而不是從其他先前放置的物件和靠近房間的中央。
 
 ```cs
-List<ObjectPlacementRule> rules = 
+List<ObjectPlacementRule> rules =
     new List<ObjectPlacementRule>() {
         ObjectPlacementRule.Create_AwayFromOtherObjects(1.0f),
     };
 
-List<ObjectPlacementConstraint> constraints = 
+List<ObjectPlacementConstraint> constraints =
     new List<ObjectPlacementConstraint> {
         ObjectPlacementConstraint.Create_NearCenter(),
     };
@@ -418,7 +405,7 @@ List<ObjectPlacementConstraint> constraints =
 Solver_PlaceObject(
     “MyCustomObject”,
     new ObjectPlacementDefinition.Create_OnEdge(
-        new Vector3(0.25f, 0.25f, 0.25f), 
+        new Vector3(0.25f, 0.25f, 0.25f),
         new Vector3(0.25f, 0.25f, 0.25f)),
     rules.Count,
     UnderstandingDLL.PinObject(rules.ToArray()),
@@ -438,37 +425,37 @@ Solver_PlaceObject(
 
 雖然 HoloLens 提供的空間對應解決方案設計成足以滿足整個問題空間的需求，但空間理解模組的設計是為了支援兩項特定遊戲的需求。 它的解決方案是以特定程式和假設集為依據，如下所摘要。
 
-```
+```txt
 Fixed size playspace – The user specifies the maximum playspace size in the init call.
 
-One-time scan process – 
+One-time scan process –
     The process requires a discrete scanning phase where the user walks around,
-    defining the playspace. 
+    defining the playspace.
     Query functions will not function until after the scan has been finalized.
 ```
 
 使用者導向 playspace 「繪製」–在掃描階段期間，使用者會四處移動並查看播放步調，有效地繪製應該包含的區域。 產生的網格很重要，可在此階段提供使用者意見反應。 室內家用或 office 設定–查詢函式是以適當角度的平面和牆為中心設計的。 這是一項軟性限制。 不過，在掃描階段期間，主要軸分析已完成，可將網格鑲嵌沿著主要和次要軸優化。 內含的 SpatialUnderstanding .cs 檔案會管理掃描階段程式。 它會呼叫下列函數。
 
-```
+```txt
 SpatialUnderstanding_Init – Called once at the start.
 
 GeneratePlayspace_InitScan – Indicates that the scan phase should begin.
 
-GeneratePlayspace_UpdateScan_DynamicScan – 
-    Called each frame to update the scanning process. The camera position and 
-    orientation is passed in and is used for the playspace painting process, 
+GeneratePlayspace_UpdateScan_DynamicScan –
+    Called each frame to update the scanning process. The camera position and
+    orientation is passed in and is used for the playspace painting process,
     described above.
 
-GeneratePlayspace_RequestFinish – 
-    Called to finalize the playspace. This will use the areas “painted” during 
-    the scan phase to define and lock the playspace. The application can query 
-    statistics during the scanning phase as well as query the custom mesh for 
+GeneratePlayspace_RequestFinish –
+    Called to finalize the playspace. This will use the areas “painted” during
+    the scan phase to define and lock the playspace. The application can query
+    statistics during the scanning phase as well as query the custom mesh for
     providing user feedback.
 
-Import_UnderstandingMesh – 
-    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by 
-    the module and placed on the understanding prefab will periodically query the 
-    custom mesh generated by the process. In addition, this is done once more 
+Import_UnderstandingMesh –
+    During scanning, the “SpatialUnderstandingCustomMesh” behavior provided by
+    the module and placed on the understanding prefab will periodically query the
+    custom mesh generated by the process. In addition, this is done once more
     after scanning has been finalized.
 ```
 
@@ -488,7 +475,7 @@ Import_UnderstandingMesh –
 
 ## <a name="spatial-mapping-in-mixed-reality-toolkit"></a>混合現實工具組中的空間對應
 
-如需有關搭配使用空間對應與混合現實工具組 v2 的詳細資訊，請參閱 MRTK 檔的 <a href="/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started" target="_blank">空間感知一節</a> 。
+如需有關搭配使用空間對應與混合現實工具組的詳細資訊，請參閱 MRTK 檔的 [空間感知一節](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/spatial-awareness-getting-started) 。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

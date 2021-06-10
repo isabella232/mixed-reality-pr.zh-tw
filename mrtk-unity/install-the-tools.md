@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/02/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、混合現實工具組、安裝、最新、工具、入門、基本、unity、visual studio、工具組、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、安裝、Windows、HoloLens、模擬器
-ms.openlocfilehash: 117b34ae858e789b1366ce5338e23b8f366377ae
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 402693ca06e00a4c6c4ad7f2a81b38d443c4346f
+ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550558"
+ms.lasthandoff: 06/09/2021
+ms.locfileid: "111772401"
 ---
 # <a name="install-the-tools"></a>安裝工具
 
@@ -120,6 +120,6 @@ Bluetooth | Bluetooth 4.0 (適用於周邊連線)
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 
-既然您已安裝工具，建議您遵循我們的 MRTK HoloLens 2 教學課程系列。
+現在您已安裝工具，建議您遵循我們的 MRTK HoloLens 2 教學課程系列。
 > [!div class="nextstepaction"]
 > [HoloLens 2 教學課程系列](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)

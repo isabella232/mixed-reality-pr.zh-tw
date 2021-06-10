@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: 1dee5448448cca83d96eee352765ddc33b37d606
-ms.sourcegitcommit: 47c402dc8e588817ce60229bf019170fa36f3045
+ms.openlocfilehash: da0506c38975bf5b5aa7a4e5aed8385dd697aa91
+ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107581550"
+ms.lasthandoff: 06/02/2021
+ms.locfileid: "110743574"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 
@@ -23,7 +23,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 我們的學習模組可讓您更精通混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure 混合實境服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。 
 
 > [!div class="nextstepaction"]
-> [開始使用我們的混合現實學習路徑](https://docs.microsoft.com/learn/browse/?terms=mixed%20reality)
+> [開始使用我們的混合現實學習路徑](/learn/browse/?terms=mixed+reality)
 
 ## <a name="general-modules"></a>一般模組
 
@@ -46,6 +46,22 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 ## <a name="unity-modules"></a>Unity 模組
 
 無論您是新手或經驗豐富的專業人員，我們在 Unity 中進行混合實境開發的實際操作方法，都能協助您更快、更安心地以自己的步調達到目標。
+
+### <a name="build-mixed-reality-digital-twins-with-azure-digital-twins-and-unity"></a>[使用 Azure Digital Twins 和 Unity 打造混合實境數位對應項](https://docs.microsoft.com/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+
+瞭解如何使用 Azure Digital Twins 和 Unity (即時 3D 平台) 來建立混合實境 HoloLens 2 應用程式。
+
+**學習目標**
+
+在本學習路徑結束之後，您將能夠：
+
+* 安裝並設定您的開發環境，以使用 Azure Digital Twins 和 Unity 建立 HoloLens 2 的混合實境解決方案
+* 在 Unity 中使用靜態和動態地形資料搭配 Microsoft 的 Maps SDK 來建立3D 場景
+* 使用 MRTK 互動來提供豐富的使用者體驗
+* 連接至 Azure 上的數位對應項資料來源
+* 使用包括 ADT 的 Azure 服務將遙測資料串流至 Unity 場景中的資產
+* 透過 SignalR 將 HoloLens 2 上的資料視覺化
+* 從 HoloLens 2 應用程式將資料更新傳送回 Azure Digital Twin
 
 ### <a name="set-up-a-mixed-reality-project-in-unity-with-the-mixed-reality-toolkit"></a>[在 Unity 中使用混合實境工具組來設定混合實境專案](/learn/modules/mixed-reality-toolkit-project-unity/)
 
@@ -73,9 +89,9 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 * 將語音服務與 Windows Mixed Reality 應用程式整合
 * 使用語音辨識來翻譯文字
 
-### <a name="render-a-model-with-azure-remote-rendering"></a>[使用 Azure 遠端轉譯呈現模型](/learn/modules/render-model-azure-remote-rendering-unity/)
+### <a name="render-a-model-with-azure-remote-rendering"></a>[使用 [Azure 遠端轉譯] 來轉譯模型](/learn/modules/render-model-azure-remote-rendering-unity/)
 
-建立 Azure 遠端轉譯會話並轉譯3D 模型。
+建立 [Azure 遠端轉譯] 工作階段並轉譯 3D 模型。
 
 **學習目標**
 
@@ -83,4 +99,4 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 * 建立遠端轉譯會話
 * 載入 3D 模型
-* 轉譯3D 模型
+* 轉譯 3D 模型

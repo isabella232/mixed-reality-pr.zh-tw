@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d9b8bc79859ab74c799188326731b3c8722bc49a
-ms.sourcegitcommit: b9d0155ae0d37a9f55f2cf0bcd954a2b148a26e0
+ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
+ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/13/2021
-ms.locfileid: "98181735"
+ms.lasthandoff: 05/28/2021
+ms.locfileid: "110647009"
 ---
 ![虛擬的蜂鳥與手](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -12,16 +12,16 @@ ms.locfileid: "98181735"
 
 ## <a name="contributing"></a>參與
 
-如果您要參與或更新檔內容，請將您的提取要求的目標設為正確的子 docset (mr-開發檔、愛好者指南等等) 。 新的投稿人應查看每個 subdocset 的詳細投稿指導方針：
+如果您要參與或更新檔內容，請確定您的提取要求的目標是正確的子 docset (mr-開發檔、愛好者指南等等) 。 新的投稿人應查看每個 subdocset 的詳細投稿指導方針：
 
 * [混合現實參與者](mixed-reality-docs/mr-dev-docs/CONTRIBUTING.md)
-* [VR 愛好者指南參與者](mixed-reality-docs/enthusiast-guide/CONTRIBUTING.md)
+* [VR 愛好者指南參與者](enthusiast-guide/CONTRIBUTING.md)
 
 針對檔相關的問題，請使用每個檔底部的頁尾，或直接提交至 [MicrosoftDocs/mixed-現實/問題](https://github.com/MicrosoftDocs/mixed-reality/issues)。
 
 您可以透過小組或電子郵件，將有關投稿原則或流程的任何問題傳送給 Harrison Ferrone 或小紅 Kerawala。 
 
-## <a name="getting-started"></a>開始使用 
+## <a name="getting-started"></a>使用者入門 
 
 整個檔的每個路徑都有策劃的旅程，可協助您找出占。 無論是設計、開發還是將您的應用程式散發到全球，我們都有您的涵蓋範圍。 
 

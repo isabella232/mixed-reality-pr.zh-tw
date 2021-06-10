@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: b10cb385d28be68a539eedced269204b8a1ac4d3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
+ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "101760210"
+ms.lasthandoff: 06/04/2021
+ms.locfileid: "111403379"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 
@@ -20,35 +20,12 @@ ms.locfileid: "101760210"
 
 混合實境生態系統是一種新興的實體和數位互動態勢，其可能性只會受想像力所限制。 無論您是經驗豐富的開發人員還是新的歸附者，我們都建議您利用我們在下面所安排的資源，來開始您的混合實境旅程。 新的路途還很長，讓我們立刻出發吧！ 
 
-## <a name="choose-your-track"></a>選擇適合您的主題
-
-如果您已經知道想要探索的混合實境領域，歡迎您直接前往下面任何一項主題。 不過，請將此頁面保留在您的書簽中，以便之後可以參考基本的概念內容。
-
-:::row:::
-    :::column:::
-       [![我是混合實境的新手](images/Tile-New.jpg)](#understand-the-basics)<br>
-        **[我是混合實境的新手](#understand-the-basics)**<br>
-        了解基本概念
-    :::column-end:::
-    :::column:::
-       [![我是設計人員](images/Tile-Create.jpg)](../design/design.md)<br>
-        **[我是設計人員](../design/design.md)**<br>
-        開始設計並建立原型
-    :::column-end:::
-    :::column:::
-       [![我是開發人員](images/Tile-Develop.jpg)](../develop/development.md)<br>
-        **[我是開發人員](../develop/development.md)**<br>
-        了解工具和架構
-    :::column-end:::
-:::row-end:::
-
-<br>
-
----
-
 ## <a name="understand-the-basics"></a>了解基本概念
 
-如果您從未接觸過混合實境，請務必從基礎著手，然後逐步了解其核心概念、體驗和功能。 我們打造了一趟循序漸進的旅程來協助您奠定堅實的基礎，以便在混合實境中設計和開發自己的想法。
+如果您從未接觸過混合實境，請務必從基礎著手，然後逐步了解其核心概念、體驗和功能。 您在這裡有兩個選項：我們在 Microsoft Learn 上有一個專注的課程模組，可讓您隨時掌握最新資訊，也可以流覽我們在下方設定的一種 la 旅程圖。 這兩個路徑都可協助您設定穩固的基礎，以在混合現實中設計和開發您的想法。
+
+> [!div class="nextstepaction"]
+> [混合現實課程模組簡介](/learn/modules/intro-to-mixed-reality)
 
 ### <a name="what-is-mixed-reality"></a>什麼是混合實境？
 
@@ -154,17 +131,17 @@ ms.locfileid: "101760210"
 | [HoloLens 硬體](https://www.microsoft.com//hololens/hardware) | HoloLens 2 提供最舒適且身歷其境的沈浸式混合實境體驗，採用領先業界的解決方案，可在數分鐘內實現價值 - 這些都由於 Microsoft 雲端與 AI 服務的可靠性、安全性及可擴展性而得到增強 |
 | [Dynamics 365](https://dynamics.microsoft.com/mixed-reality/overview/) | 探索各式各樣可讓員工使用 Dynamics 365 獲得能力並將作業最佳化的產品，包括[遠端協助](/dynamics365/mixed-reality/remote-assist/ra-overview)、配置和[指南](/dynamics365/mixed-reality/guides/)。 有意義的深入解析來自實際工作、實際裝置和實際使用者的親身體驗 |
 | [Azure 雲端服務](../develop/mixed-reality-cloud-services.md) | 藉由空間感知、空間錨點和複雜的 3D 模型轉譯，在各種平台上打造引人注目的沉浸式體驗 |
-| [Microsoft 網狀](/mesh/overview) | 網狀架構可讓人們透過具備網格功能的混合現實體驗，在世界各地與其他人共同作業、共用空間，以及彼此共同作業。 有了網格，您就可以增強虛擬會議、進行虛擬設計會話、協助其他人遠端處理，以及裝載虛擬的滿足 |
+| [Microsoft Mesh](/mesh/overview) | 網狀架構可讓人們透過具備網格功能的混合現實體驗，在世界各地與其他人共同作業、共用空間，以及彼此共同作業。 有了網格，您就可以增強虛擬會議、進行虛擬設計會話、協助其他人遠端處理，以及裝載虛擬的滿足 |
 
 ## <a name="what-would-you-like-to-do-next"></a>接著要執行什麼作業？
 
 :::row:::
     :::column:::
-        [![成為建立者](images/icon-design.png)](../design/design.md)<br>
-        **[成為建立者](../design/design.md)**<br>
+        [![開始設計](images/icon-design.png)](../design/design.md)<br>
+        **[開始設計](../design/design.md)**<br>
         學習所需的基本概念以開始設計並建立原型。
     :::column-end:::
-        :::column:::
+    :::column:::
         [![開始進行開發](images/icon-developer.png)](../develop/development.md)<br>
         **[開始進行開發](../develop/development.md)**<br>
         根據您的技能層級、工作風格或感興趣的平台，選擇開發路徑。
@@ -175,9 +152,6 @@ ms.locfileid: "101760210"
         參觀硬體並取得實際操作教學課程，製作您的第一個 HoloLens 2 應用程式。
     :::column-end:::
 :::row-end:::
-
-
-<br>
 
 <br>
 

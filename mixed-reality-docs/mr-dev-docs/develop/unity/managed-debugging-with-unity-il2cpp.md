@@ -1,19 +1,19 @@
 ---
-title: 使用 Unity IL2CPP 進行管理偵錯
+title: 使用 Unity 的 Managed 調試
 description: 本文涵蓋如何在 Unity IL2CPP UWP 專案上執行 managed 偵錯工具。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: unity、visual studio、調試、il2cpp、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP
-ms.openlocfilehash: 4b21e4888e467e6bd5f1938024a1b8312d8ecbcb
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: 8e3967971220fa453f4e60639bd08f2554a8dd7e
+ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010239"
+ms.lasthandoff: 06/06/2021
+ms.locfileid: "111547075"
 ---
-# <a name="managed-debugging-with-unity-il2cpp"></a>使用 Unity IL2CPP 進行管理偵錯
+# <a name="managed-debugging-with-unity"></a>使用 Unity 的 Managed 調試
 
 遵循下列步驟將 managed 偵錯工具附加至適用于 HoloLens 和 HoloLens 2 的 Unity IL2CPP UWP 組建。
 

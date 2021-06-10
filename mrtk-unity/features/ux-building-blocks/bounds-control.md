@@ -5,12 +5,12 @@ author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限控制、
-ms.openlocfilehash: 4c2607f9d1d5c064ec841493dbaaf21c0da0be7a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 65558861955f782cf9d81a8bb4ec3a31dee03fde
+ms.sourcegitcommit: 95ea5f3cf873acc93c4614fbccaa093e0f5186f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693035"
+ms.lasthandoff: 05/26/2021
+ms.locfileid: "110487725"
 ---
 # <a name="bounds-control"></a>界限控制項
 
@@ -30,7 +30,7 @@ ms.locfileid: "104693035"
 
 ### <a name="target-object"></a>目標物件
 
-這個屬性會指定界限控制項操作要轉換的物件。 如果未 setit 物件，則預設為擁有者物件。
+這個屬性會指定界限控制項操作要轉換的物件。 如果未設定物件，則會預設為擁有者物件。
 
 ### <a name="activation-behavior"></a>啟用行為
 

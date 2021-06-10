@@ -3,16 +3,16 @@ title: 範例和功能應用程式
 description: 隨時掌握所有可用的 Microsoft 範例以及 HoloLens 的混合實境功能應用程式。
 author: hferrone
 ms.author: jemccull
-ms.date: 12/3/2020
+ms.date: 6/7/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 範例, MRTK, 研究模式, HoloLens 2, qr 代碼, WebRTC, 混合實境擷取, 全像攝影遠端處理, UX 工具
 ms.localizationpriority: high
-ms.openlocfilehash: 78cfc726bdffdb461a83bd1e9805d8f0e64b0f01
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5738c26366b3c1aafd86b20dc70a4d078fbffb1f
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98583191"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741940"
 ---
 # <a name="samples-and-feature-apps"></a>範例和功能應用程式
 
@@ -27,6 +27,17 @@ ms.locfileid: "98583191"
 ## <a name="feature-samples"></a>功能範例
 
 下列功能範例對應於我們的文件中說明的特定實作，並涵蓋各種開發平臺和硬體裝置。
+
+### <a name="openxr"></a>OpenXR
+
+針對以 Unity 2020 為目標的開發人員建立 HoloLens 2 或混合的現實應用程式，OpenXR 外掛程式可以用來取代 WindowsXR 外掛程式，以獲得更好的跨平臺相容性。 Mixed Reality OpenXR 外掛程式也適用于最新的混合現實工具組2.7。
+
+<br>
+
+| 參考文章 | 範例 |
+| --- | --- |
+| [使用 OpenXR 外掛程式](unity/openxr-getting-started.md) | [混合現實 OpenXR 與 Unity 範例](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| N/A | [OpenXR MRTK Base Unity 專案](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### <a name="research-mode"></a>研究模式
 
@@ -47,7 +58,17 @@ HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每�
 
 | 參考文章 | 範例 |
 | --- | --- |
-| [QR 代碼](platform-capabilities-and-apis/qr-code-tracking.md) | [Unity 中的 QR 代碼追蹤](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes) |
+| [QR 代碼](platform-capabilities-and-apis/qr-code-tracking.md) | [Unity 中的 QR 代碼追蹤](https://github.com/microsoft/MixedReality-QRCode-Sample) |
+
+### <a name="scene-understanding"></a>場景理解
+
+場景理解為混合的現實開發人員提供結構化、高階的環境標記法，其設計目的是為了讓環保感知應用程式的開發變得直覺。 場景理解藉由結合現有混合現實執行時間的強大功能，例如高度精確但較不具結構化的空間對應和全新的 AI 驅動執行時間。
+
+<br>
+
+| 參考文章 | 範例 |
+| --- | --- |
+| [場景理解](../design/scene-understanding.md) | [混合現實場景理解範例](https://github.com/microsoft/MixedReality-SceneUnderstanding-Samples) |
 
 ### <a name="webrtc"></a>WebRTC
 
