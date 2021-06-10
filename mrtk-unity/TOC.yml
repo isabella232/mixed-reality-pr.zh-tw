@@ -2,6 +2,8 @@
   href: index.md
 - name: 試用範例中樞
   href: running-examples-hub.md
+- name: 範例場景
+  href: running-example-scenes.md
 - name: 組態
   href: configuration/toc.yml
 - name: 支援的裝置總覽
