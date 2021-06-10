@@ -7,44 +7,40 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
-ms.openlocfilehash: 4aa21cbee75c4c362abfd609add922ad9c922682
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bb690cf4770924e9627f25bf0ff47472582535d3
+ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98584714"
+ms.lasthandoff: 06/08/2021
+ms.locfileid: "111741930"
 ---
-# <a name="introducing-mrtk-for-unreal"></a><span data-ttu-id="92322-104">適用于 Unreal 的 MRTK 簡介</span><span class="sxs-lookup"><span data-stu-id="92322-104">Introducing MRTK for Unreal</span></span>
+# <a name="introducing-mrtk-for-unreal"></a><span data-ttu-id="ceba4-104">適用于 Unreal 的 MRTK 簡介</span><span class="sxs-lookup"><span data-stu-id="ceba4-104">Introducing MRTK for Unreal</span></span>
 
 ![MRTK](../../design/images/MRTK_UX_Hero.png)
 
-## <a name="what-is-mixed-reality-toolkit-mrtk"></a><span data-ttu-id="92322-106">混合實境工具組 (MRTK) 是什麼？</span><span class="sxs-lookup"><span data-stu-id="92322-106">What is Mixed Reality Toolkit (MRTK)?</span></span>
+## <a name="what-is-mixed-reality-toolkit-mrtk"></a><span data-ttu-id="ceba4-106">混合實境工具組 (MRTK) 是什麼？</span><span class="sxs-lookup"><span data-stu-id="ceba4-106">What is Mixed Reality Toolkit (MRTK)?</span></span>
 
-<span data-ttu-id="92322-107">MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發行之後就已經存在。</span><span class="sxs-lookup"><span data-stu-id="92322-107">MRTK is an amazing open-source toolkit that has been around since the HoloLens was first released.</span></span> <span data-ttu-id="92322-108">沒有開發人員社群的努力，就不會達到今天的境界。</span><span class="sxs-lookup"><span data-stu-id="92322-108">The toolkit wouldn't be where it is today without the hard work of our contributing developer community.</span></span> 
+<span data-ttu-id="ceba4-107">MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發行之後就已經存在。</span><span class="sxs-lookup"><span data-stu-id="ceba4-107">MRTK is an amazing open-source toolkit that has been around since the HoloLens was first released.</span></span> <span data-ttu-id="ceba4-108">沒有開發人員社群的努力，就不會達到今天的境界。</span><span class="sxs-lookup"><span data-stu-id="ceba4-108">The toolkit wouldn't be where it is today without the hard work of our contributing developer community.</span></span> 
 
-<span data-ttu-id="92322-109">適用于 Unreal (MRTK-Unreal) 的混合現實工具組是一組元件（以外掛程式、範例和檔的形式），其設計目的是要協助使用 Unreal 引擎開發混合現實應用程式。</span><span class="sxs-lookup"><span data-stu-id="92322-109">The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to help development of Mixed Reality applications using the Unreal Engine.</span></span> <span data-ttu-id="92322-110">目前，此工具組包含：</span><span class="sxs-lookup"><span data-stu-id="92322-110">Currently, the toolkit consists of:</span></span>
-* <span data-ttu-id="92322-111">[適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedReality-UXTools-Unreal)，可提供程式碼、藍圖和範例，以針對 Hololens 2 應用程式執行 UX 功能。</span><span class="sxs-lookup"><span data-stu-id="92322-111">[UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), which provides code, blueprints, and examples to implement UX features for Hololens 2 applications.</span></span>
-* <span data-ttu-id="92322-112">[適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal)，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。</span><span class="sxs-lookup"><span data-stu-id="92322-112">[Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal), which helps improve the visual fidelity of Mixed Reality applications while staying within performance budgets.</span></span>
+<span data-ttu-id="ceba4-109">適用于 Unreal (MRTK-Unreal) 的混合現實工具組是一組元件（以外掛程式、範例和檔的形式），其設計目的是要協助使用 Unreal 引擎開發混合現實應用程式。</span><span class="sxs-lookup"><span data-stu-id="ceba4-109">The Mixed Reality Toolkit for Unreal (MRTK-Unreal) is a set of components, in the form of plugins, samples and documentation, designed to help development of Mixed Reality applications using the Unreal Engine.</span></span> <span data-ttu-id="ceba4-110">目前，此工具組包含：</span><span class="sxs-lookup"><span data-stu-id="ceba4-110">Currently, the toolkit consists of:</span></span>
+* <span data-ttu-id="ceba4-111">[適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedReality-UXTools-Unreal)，可提供程式碼、藍圖和範例，以針對 Hololens 2 應用程式執行 UX 功能。</span><span class="sxs-lookup"><span data-stu-id="ceba4-111">[UX Tools for Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal), which provides code, blueprints, and examples to implement UX features for Hololens 2 applications.</span></span>
+* <span data-ttu-id="ceba4-112">[適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal)，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。</span><span class="sxs-lookup"><span data-stu-id="ceba4-112">[Graphics Tools for Unreal](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal), which helps improve the visual fidelity of Mixed Reality applications while staying within performance budgets.</span></span>
 
-<br>
+<span data-ttu-id="ceba4-113">請參閱 [GitHub 上的 MRTK 檔](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) ，並開始使用 [UX 工具](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) 或 [圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) 安裝指南。</span><span class="sxs-lookup"><span data-stu-id="ceba4-113">Take a look at [MRTK's documentation on GitHub](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) and get started with [UX Tools](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) or [Graphics Tools](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) installation guides.</span></span>
 
-> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCG]
+### <a name="modular"></a><span data-ttu-id="ceba4-114">模組化</span><span class="sxs-lookup"><span data-stu-id="ceba4-114">Modular</span></span>
 
-<span data-ttu-id="92322-113">請參閱 [GitHub 上的 MRTK 檔](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) ，並開始使用 [UX 工具](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) 或 [圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) 安裝指南。</span><span class="sxs-lookup"><span data-stu-id="92322-113">Take a look at [MRTK's documentation on GitHub](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) and get started with [UX Tools](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) or [Graphics Tools](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) installation guides.</span></span>
+<span data-ttu-id="ceba4-115">我們以模組化的方式建立了 MRTK Unreal，因此您不需要將工具組的每個專案都帶到您的專案中。</span><span class="sxs-lookup"><span data-stu-id="ceba4-115">We've built MRTK Unreal in a modular way, so you don't need to take every bit of the toolkit into your project.</span></span> <span data-ttu-id="ceba4-116">您可以選擇並選擇所需的外掛程式，並在每次看到合適的時候新增或移除它們。</span><span class="sxs-lookup"><span data-stu-id="ceba4-116">You can pick and choose the plugins you need, and add or remove them whenever you see fit.</span></span> <span data-ttu-id="ceba4-117">這種方法可讓您的專案大小保持較小，而且更容易管理。</span><span class="sxs-lookup"><span data-stu-id="ceba4-117">This approach keeps your project size smaller and makes it easier to manage.</span></span>  
 
-### <a name="modular"></a><span data-ttu-id="92322-114">模組化</span><span class="sxs-lookup"><span data-stu-id="92322-114">Modular</span></span>
+### <a name="performant"></a><span data-ttu-id="ceba4-118">效能</span><span class="sxs-lookup"><span data-stu-id="ceba4-118">Performant</span></span>
 
-<span data-ttu-id="92322-115">我們以模組化的方式建立了 MRTK Unreal，因此您不需要將工具組的每個專案都帶到您的專案中。</span><span class="sxs-lookup"><span data-stu-id="92322-115">We've built MRTK Unreal in a modular way, so you don't need to take every bit of the toolkit into your project.</span></span> <span data-ttu-id="92322-116">您可以選擇並選擇所需的外掛程式，並在每次看到合適的時候新增或移除它們。</span><span class="sxs-lookup"><span data-stu-id="92322-116">You can pick and choose the plugins you need, and add or remove them whenever you see fit.</span></span> <span data-ttu-id="92322-117">這種方法可讓您的專案大小保持較小，而且更容易管理。</span><span class="sxs-lookup"><span data-stu-id="92322-117">This approach keeps your project size smaller and makes it easier to manage.</span></span>  
+<span data-ttu-id="ceba4-119">使用行動平臺時，我們已將效能考慮到 MRTK Unreal。</span><span class="sxs-lookup"><span data-stu-id="ceba4-119">Working with mobile platforms, we constructed MRTK Unreal with performance in mind.</span></span> <span data-ttu-id="ceba4-120">這是非常重要的，我們想要確保工具不會與您合作。</span><span class="sxs-lookup"><span data-stu-id="ceba4-120">This is super important and we wanted to ensure that the tools aren't going to work against you.</span></span>
 
-### <a name="performant"></a><span data-ttu-id="92322-118">效能</span><span class="sxs-lookup"><span data-stu-id="92322-118">Performant</span></span>
+## <a name="see-also"></a><span data-ttu-id="ceba4-121">另請參閱</span><span class="sxs-lookup"><span data-stu-id="ceba4-121">See also</span></span>
 
-<span data-ttu-id="92322-119">使用行動平臺時，我們已將效能考慮到 MRTK Unreal。</span><span class="sxs-lookup"><span data-stu-id="92322-119">Working with mobile platforms, we constructed MRTK Unreal with performance in mind.</span></span> <span data-ttu-id="92322-120">這是非常重要的，我們想要確保工具不會與您合作。</span><span class="sxs-lookup"><span data-stu-id="92322-120">This is super important and we wanted to ensure that the tools aren't going to work against you.</span></span>
-
-## <a name="see-also"></a><span data-ttu-id="92322-121">另請參閱</span><span class="sxs-lookup"><span data-stu-id="92322-121">See also</span></span>
-
-* [<span data-ttu-id="92322-122">安裝工具</span><span class="sxs-lookup"><span data-stu-id="92322-122">Install the tools</span></span>](../install-the-tools.md)
-* [<span data-ttu-id="92322-123">使用 MRTK for Unreal 進行開發</span><span class="sxs-lookup"><span data-stu-id="92322-123">Developing with MRTK for Unreal</span></span>](unreal-development-overview.md)
-* [<span data-ttu-id="92322-124">UX 工具- (GitHub) 的安裝指南 </span><span class="sxs-lookup"><span data-stu-id="92322-124">UX Tools - Installation guide (GitHub)</span></span>](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html)
-* [<span data-ttu-id="92322-125">UX 工具-檔首頁 (GitHub) </span><span class="sxs-lookup"><span data-stu-id="92322-125">UX Tools- Documentation home (GitHub)</span></span>](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html)
-* [<span data-ttu-id="92322-126">圖形工具- (GitHub) 的安裝指南 </span><span class="sxs-lookup"><span data-stu-id="92322-126">Graphics Tools - Installation guide (GitHub)</span></span>](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md)
-* [<span data-ttu-id="92322-127">圖形工具-檔首頁 (GitHub) </span><span class="sxs-lookup"><span data-stu-id="92322-127">Graphics Tools - Documentation home (GitHub)</span></span>](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/)
+* [<span data-ttu-id="ceba4-122">安裝工具</span><span class="sxs-lookup"><span data-stu-id="ceba4-122">Install the tools</span></span>](../install-the-tools.md)
+* [<span data-ttu-id="ceba4-123">使用 MRTK for Unreal 進行開發</span><span class="sxs-lookup"><span data-stu-id="ceba4-123">Developing with MRTK for Unreal</span></span>](unreal-development-overview.md)
+* [<span data-ttu-id="ceba4-124">UX 工具- (GitHub) 的安裝指南 </span><span class="sxs-lookup"><span data-stu-id="ceba4-124">UX Tools - Installation guide (GitHub)</span></span>](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html)
+* [<span data-ttu-id="ceba4-125">UX 工具-檔首頁 (GitHub) </span><span class="sxs-lookup"><span data-stu-id="ceba4-125">UX Tools- Documentation home (GitHub)</span></span>](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html)
+* [<span data-ttu-id="ceba4-126">圖形工具- (GitHub) 的安裝指南 </span><span class="sxs-lookup"><span data-stu-id="ceba4-126">Graphics Tools - Installation guide (GitHub)</span></span>](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md)
+* [<span data-ttu-id="ceba4-127">圖形工具-檔首頁 (GitHub) </span><span class="sxs-lookup"><span data-stu-id="ceba4-127">Graphics Tools - Documentation home (GitHub)</span></span>](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/)
