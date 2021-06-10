@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Oculus 的追求、
-ms.openlocfilehash: 0892e0d416cd07d1bedbeea0ddb316e3eb012b94
-ms.sourcegitcommit: 4c1dd5c22af69eeb192425118c2bfb95344b8dd9
+ms.openlocfilehash: 6b9c3a8f51388785f685714ef02be680bb98e14c
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110441171"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908396"
 ---
 # <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>使用 XR SDK 管線來建立和部署 MRTK 至 Oculus 的尋找
 
@@ -19,7 +19,7 @@ ms.locfileid: "110441171"
 MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR SDK 管線和 Oculus Integration Unity 套件。 **OCULUS XRSDK Data Provider** 可讓您同時使用這兩個來源，而且必須用來在 Oculus 上部署 MRTK。
 
 [UNITY XR SDK 管線](https://docs.unity3d.com/Manual/XR.html)可讓您使用 Oculus 觸控控制器並搭配 Oculus 的進行追蹤。
-此管線是在 Unity 2019.3 和更多功能中開發 XR 應用程式的標準。 若要使用此管線，請確定您使用的是 **Unity 2019.3 或更新版本**。 這是將 MRTK 應用程式部署到 Oculus 的 **要求所需** 的。 
+此管線是在 Unity 2019.3 和更多功能中開發 XR 應用程式的標準。 若要使用此管線，請確定您使用的是 **Unity 2019.3 或更新版本**。 這是將 MRTK 應用程式部署到 Oculus 的 **要求所需** 的。
 
 [Oculus Integration Unity 封裝](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022)可讓您搭配 Oculus 的執行來使用 **手動追蹤**。 此資料提供者 **不會使用 Unity** 的 **XR SDK 管線** 或 **舊版 XR 管線**。
 
@@ -41,7 +41,7 @@ MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR SDK 管線和 
 
 ## <a name="setting-up-the-oculus-integration-unity-package-to-enable-handtracking"></a>設定 Oculus Integration Unity 套件以啟用 handtracking
 
-1. 從 Unity 資產存放區下載並匯入 [Oculus 整合](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) 。 測試的最新版本是20.0.0。 您[可以從此封存](https://developer.oculus.com/downloads/package/unity-integration-archive/)中找到較舊的版本
+1. 從 Unity 資產存放區下載並匯入 [Oculus 整合](https://assetstore.unity.com/packages/tools/integration/oculus-integration-82022) 。 測試的最新版本是20.0.0。 您 [可以從此封存](https://developer.oculus.com/downloads/package/unity-integration-archive/)中找到較舊的版本。
 
 1. 流覽至混合現實工具組 > 公用程式 > Oculus > 整合 Oculus Integration Unity 模組。 這麼做會使用相關 Oculus 執行程式碼運作所需的定義和參考，來更新 asmdefs。 它也會更新 csc 檔案，以篩選出 Oculus 整合資產所產生的過時警告。 MRTK 存放庫包含將警告轉換成錯誤的 csc 檔案，這種轉換會中止 MRTK-Quest 設定程式。
 
@@ -53,21 +53,23 @@ MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR SDK 管線和 
 
 ## <a name="setting-up-the-scene"></a>設定場景
 
-1. 建立新的 Unity 場景，或開啟預先存在的場景，例如 HandInteractionExamples
-1. 流覽至 **混合現實工具** 組  >  **新增至場景並設定**，以將 MRTK 新增至場景
+1. 建立新的 Unity 場景，或開啟預先存在的場景（例如 HandInteractionExamples）。
+1. 藉由流覽至 **混合現實工具** 組  >  **加入場景並設定**，將 MRTK 新增至場景。
 
 ## <a name="using-the-oculus-xr-sdk-data-provider"></a>使用 Oculus XR SDK Data Provider
 
+::: moniker range=">= mrtkunity-2021-05"
+
 1. 將您的設定檔設定為使用 **OCULUS XR SDK Data Provider**
     - 如果不打算修改設定設定檔
-        - 將您的設定檔變更為 DefaultXRSDKConfigurationProfile，然後移至 [ [組建]，並將專案部署至 Oculus 的追求](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)
-
+        - 使用任何預設的 MRTK 設定檔，這些設定檔全都在 Unity 的 XR 管線中設定。 先前的 DefaultXRSDKConfigurationProfile 現在標示為過時。
+        - 移至 [ [組建]，並將專案部署至 Oculus 的尋找](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)。
     - 否則，請遵循下列步驟：
         - 選取階層中的 MixedRealityToolkit 遊戲物件，然後選取 [ **複製和自訂** ] 以複製預設的混合現實設定檔。
 
         ![複製設定檔](../images/cross-platform/CloneProfile.png)
 
-        - 選取 **輸入** 設定設定檔
+        - 選取 **輸入** 設定設定檔。
 
         ![輸入設定設定檔](../images/cross-platform/InputConfigurationProfile.png)
 
@@ -75,9 +77,33 @@ MRTK 對 Oculus 的支援有兩個不同的來源： Unity 的 XR SDK 管線和 
 
         ![複製輸入系統設定檔](../images/cross-platform/CloneInputSystemProfile.png)
 
-        - 開啟 [ **輸入資料提供者** ] 區段，選取頂端的 [ **新增 Data Provider** ，然後在清單結尾加入新的資料提供者。  開啟新的資料提供者，並將類型設為 MixedReality，並將 **類型** 設定為 **XRSDK. Oculus > OculusXRSDKDeviceManager**
+        - 開啟 [ **輸入資料提供者** ] 區段，選取頂端的 [ **新增 Data Provider** ，然後在清單結尾加入新的資料提供者。  開啟新的資料提供者，並將類型設定為 MixedReality，然後將 **類型** 設定為 **XRSDK. Oculus > OculusXRSDKDeviceManager**。
 
         ![Oculus 新增 XRSDK Data Provider](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
+
+1. 將您的設定檔設定為使用 **OCULUS XR SDK Data Provider**
+    - 如果不打算修改設定設定檔
+        - 將設定檔變更為 DefaultXRSDKConfigurationProfile。
+        - 移至 [ [組建]，並將專案部署至 Oculus 的尋找](oculus-quest-mrtk.md#build-and-deploy-your-project-to-oculus-quest)。
+    - 否則，請遵循下列步驟：
+        - 選取階層中的 MixedRealityToolkit 遊戲物件，然後選取 [ **複製和自訂** ] 以複製預設的混合現實設定檔。
+
+        ![複製設定檔](../images/cross-platform/CloneProfile.png)
+
+        - 選取 **輸入** 設定設定檔。
+
+        ![輸入設定設定檔](../images/cross-platform/InputConfigurationProfile.png)
+
+        - 在輸入系統設定檔中選取 [ **複製** ]，以啟用修改。
+
+        ![複製輸入系統設定檔](../images/cross-platform/CloneInputSystemProfile.png)
+
+        - 開啟 [ **輸入資料提供者** ] 區段，選取頂端的 [ **新增 Data Provider** ，然後在清單結尾加入新的資料提供者。  開啟新的資料提供者，並將類型設定為 MixedReality，然後將 **類型** 設定為 **XRSDK. Oculus > OculusXRSDKDeviceManager**。
+
+        ![Oculus 新增 XRSDK Data Provider](../images/cross-platform/oculus-quest/OculusAddDataXRSDKProvider.png)
+::: moniker-end
 
 1. Oculus XR SDK Data Provider 包含 OVR 相機 Rig 預製專案，此會使用 OVR 攝影機 Rig 自動設定專案，並 OVR 手以正確地路由輸入。 手動將 OVR 攝影機裝備新增至場景需要手動設定設定和輸入。
 

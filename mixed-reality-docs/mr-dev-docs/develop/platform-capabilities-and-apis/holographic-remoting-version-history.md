@@ -3,20 +3,39 @@ title: 全像遠端版本歷程記錄
 description: 隨時掌握 HoloLens 2 的全像「全像」遠端功能的版本歷程記錄。
 author: florianbagarmicrosoft
 ms.author: flbagar
-ms.date: 12/01/2020
+ms.date: 06/10/2021
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 93ab38108d5ad557d61ad366ebb7aebd8cb65ab7
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: dae7bc0dac792cbe1a8472415d5e9fa34532e918
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944700"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908225"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
 > [!IMPORTANT]
 > 本指南專為 HoloLens 2 上的全像攝影遠端所特有。
+
+## <a name="version-260-june-10-2021"></a>版本 2.6.0 (2021 年6月10日) <a name="v2.6.0"></a>
+* 使用 OpenXR API 的全像攝影遠端功能現在支援：
+  * 新的 XR_MSFT_holographic_remoting_speech 延伸模組，可讓應用程式以各種語言接聽自訂語音命令。
+  * XR_MSFT_scene_understanding 擴充功能，可在使用者的環境中為應用程式提供平面、網格和物件的結構化、高階標記法，以啟用空間感知應用程式的開發。 不過，有一點要注意的是，XR_SCENE_COMPUTE_CONSISTENCY_OCCLUSION_OPTIMIZED_MSFT 是 xrComputeNewSceneMSFT 唯一支援的一致性。
+  * XR_MSFT_spatial_graph_bridge 擴充功能，可讓應用程式建立 XrSpace 控制碼，以追蹤其他 Windows Mixed Reality 裝置平臺程式庫或 Api 的空間圖形節點。 不過，有一點要注意的是，XR_SPATIAL_GRAPH_NODE_TYPE_STATIC_MSFT 是 xrCreateSpatialGraphNodeSpaceMSFT 唯一支援的節點類型。 
+* 使用 Mixed Reality API 的全像攝影遠端功能現在支援：
+  * SpatialGraphInteropPreview CreateCoordinateSystemForNode 多載，可讓應用程式追蹤靜態空間圖形節點，讓使用者可以在其環境中考慮位置和專案。
+* 使用 OpenXR 和 Mixed Reality Api 的全像是，現在支援：
+  * MixedReality. SceneUnderstanding SDK 可讓應用程式計算使用者 (的場景描述，例如牆壁、地面和表面，) 提供四邊形、網格和內容放置提示。
+  * MixedReality，可讓應用程式追蹤偵測到的 QR 代碼的位置、大小和內容。
+* OpenXR 遠端範例已更新為包含： 
+  * 使用 XR_MSFT_holographic_remoting_speech 擴充功能的範例。
+* 混合現實遠端範例已更新為包含：  
+  * 使用 MixedReality. SceneUnderstanding SDK 的範例。
+  *  (使用 MixedReality 的範例，其會取代先前的 QR 代碼偵測機制) 。
+* 「全像遠端播放」播放程式現在會在建立連接時顯示載入動畫。
+* 修正 OpenXR API 執行時間與混合現實 API 範例中 RenderDoc 相容性的問題。
+* 各種 bug 修正和穩定性改進。
 
 ## <a name="version-250-february-12-2021"></a>版本 2.5.0 (2021 年2月12日) <a name="v2.5.0"></a>
 * 使用 [OPENXR API](../native/openxr.md) 的全像攝影遠端功能現在支援：

@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 4d00d9e94ad4e4a300fead30b52b9a78253885c3
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: fa2338545186f4eeb56ed6689d30f21f765064e2
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772431"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908423"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -300,13 +300,13 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="example-scenes"></a>範例場景
 
-探索 MRTK 在 [此範例場景](features/example-scenes/hand-interaction-examples.md)中的各種互動和 UI 控制項類型。
+MRTK 提供範例場景，示範如何使用 MRTK 的功能。 您可以在 [資產/MRTK/範例/示範] 資料夾下找到範例場景。 閱讀 [範例場景](running-example-scenes.md) 頁面，以瞭解如何取得和執行範例幕後。 「[手動互動範例」場景](features/example-scenes/hand-interaction-examples.md)是開始 MRTK 互動和 UI 之建立區塊的絕佳起點。
 
 [![範例場景2](features/images/MRTK_Examples.png)](features/example-scenes/hand-interaction-examples.md)
 
 ## <a name="mrtk-examples-hub"></a>MRTK 範例中樞
 
-您可以使用 MRTK 範例中樞來嘗試 MRTK 中的各種範例場景。
+您可以使用 MRTK 範例中樞來嘗試 MRTK 中的各種範例場景，而不需要建立及部署每個場景。
 您可以在「 [MR」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)中選取「混合現實工具組範例」套件，以下載預先建立的 HoloLens (x86) 、HOLOLENS 2 (ARM) 和 Windows Mixed Reality 沉浸式耳機 (x64) 。 請務必 [使用 Windows 裝置入口網站在 HoloLens (第1代) 上安裝應用程式 ](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens)。 在 HoloLens 2 上，您可以 [透過 Microsoft Store 應用程式下載並安裝 MRTK 範例中樞](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)。
 
 請參閱 [範例中樞的讀我檔案頁面](features/example-scenes/example-hub.md) ，以瞭解如何使用 MRTK 的場景系統和場景轉換服務建立多場景中樞的詳細資料。

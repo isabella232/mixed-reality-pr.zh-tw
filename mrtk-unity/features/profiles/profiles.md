@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、設定檔、
-ms.openlocfilehash: 384614f27c099af197ea8a9aedc72c711f0c099e
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
+ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881225"
+ms.lasthandoff: 06/10/2021
+ms.locfileid: "111908242"
 ---
 # <a name="profiles"></a>Profiles
 
@@ -31,9 +31,14 @@ ms.locfileid: "104881225"
 
 ## <a name="xr-sdk"></a>XR SDK
 
+::: moniker range=">= mrtkunity-2021-05"
+使用任何預設的 MRTK 設定檔，這些設定檔全都在 Unity 的 XR 管線中設定。 先前的 "DefaultOpenXRConfigurationProfile" 和 "DefaultXRSDKConfigurationProfile" 現在標示為過時。
+::: moniker-end
+::: moniker range="< mrtkunity-2021-05"
 目前有兩個設定檔提供給 XR SDK `DefaultXRSDKConfigurationProfile` 和 `DefaultHoloLens2XRSDKConfigurationProfile` 。 如此一來，就不會因為場景和案例特定的設定而完全支援所有的範例場景。 任何使用和的範例都 `DefaultMixedRealityToolkitConfigurationProfile` `DefaultHoloLens2ConfigurationProfile` _可以_ 交換至其對應的 XR SDK 設定檔。 如果您是使用 OpenXR 搭配 XR SDK，請改用 `DefaultOpenXRConfigurationProfile` 。
 
 正在進行額外的工作，以簡化設定並支援所有範例場景，讓舊版 XR 和 XR SDK 可以並存設定。 請參閱追蹤的問題 [#9419](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9419) 。
+::: moniker-end
 
 如需在舊版 XR 和 XR SDK 之間轉換設定檔的詳細資訊，請參閱設定 [XR SDK 管線的 MRTK](../../configuration/getting-started-with-mrtk-and-xrsdk.md#configuring-mrtk-for-the-xr-sdk-pipeline) 。
 
