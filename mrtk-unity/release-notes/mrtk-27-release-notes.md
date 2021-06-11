@@ -4,15 +4,15 @@ description: MRTK 2.7 版的版本資訊
 author: RogPodge
 ms.author: roliu
 ms.date: 05/27/2021
-ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap
+ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 92c8705c70a2a6c1e25f1ed6b1f87eac1e5726e0
-ms.sourcegitcommit: 11d5d7c3fdd59c1ebcfca34dbb6d84c05b481e5f
+ms.openlocfilehash: 782cf9de11e1535b79a861306e45300b8e4c1f25
+ms.sourcegitcommit: 1e2a6ae0e03124ce4de1df1249e0d65f3d5abfd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111897401"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112008487"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
 
@@ -135,10 +135,10 @@ ms.locfileid: "111897401"
 - 將複製的檔案重新命名為範例
 - 開啟範例檔案
 - 在 [名稱] 方塊中，將內容取代為範例
-- 按一下 [套用]
+- 按一下 [套用]。
 - 建置及部署
 
-即將推出的 MRTK 版本將會修正此問題。
+未來的 Visual Studio 2017 版本將會修正這個問題。
 
 ### <a name="mrtk-build-window-triggers-indefinite-importing-assets-dialog-in-unity-20203"></a>Unity 2020.3 中的 MRTK 組建視窗觸發程式未限制的「匯入資產」對話方塊
 
