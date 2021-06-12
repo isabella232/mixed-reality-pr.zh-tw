@@ -1,14 +1,14 @@
 ---
-ms.openlocfilehash: cd8a8229c7f70891a8f01d39ee1d6315c47429f6
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 464b65e2e66d283a825eaed43c60050ac016ef2f
+ms.sourcegitcommit: 1e2a6ae0e03124ce4de1df1249e0d65f3d5abfd5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104988084"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112041429"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
-開放原始碼範例應用程式是由我們的小組所建立的，可協助您先獲得處理混合實境開發的第一手資料。 我們已提供專案和完整的原始程式碼作為學習參考。
+開放原始碼範例應用程式是由我們的小組所建立，可協助您取得混合現實開發的一句。 我們已提供專案和完整的原始程式碼作為學習參考。
 
 ### <a name="hololens-2-open-source-sample-apps"></a>HoloLens 2 開放原始碼範例應用程式
 
