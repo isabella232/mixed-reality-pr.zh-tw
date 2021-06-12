@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 41d87aa3bbf65ddb743c17d9d1f86a41e8dae876
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1dc5f548df0c7628ade629c4b384c4d6144941eb
+ms.sourcegitcommit: cf1c1a7cb67c850c61d3907a2519b51cd890a392
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772334"
+ms.lasthandoff: 06/11/2021
+ms.locfileid: "112022808"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,7 +12,7 @@ ms.locfileid: "111772334"
 
 ### <a name="1-download-the-recommended-unity-version"></a>1. 下載建議的 Unity 版本 
 
-目前的混合現實開發建議版本是 **Unity 2020.3 LTS (長期支援)**。 安裝和管理 Unity 的最佳方式是透過 **Unity 中樞**。 
+目前的混合現實開發建議版本是 **Unity 2019.4 LTS (長期支援)**。 安裝和管理 Unity 的最佳方式是透過 **Unity 中樞**。 
 
 > [!NOTE]
 >  如果您使用 Unity 2020 LTS，混合現實支援可供 HoloLens 2 開發之用。 不過，目前有一些已知問題。 這將會在今年稍後成為建議的 Unity 版本。 
