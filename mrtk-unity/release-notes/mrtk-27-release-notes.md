@@ -7,12 +7,12 @@ ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 782cf9de11e1535b79a861306e45300b8e4c1f25
-ms.sourcegitcommit: 1e2a6ae0e03124ce4de1df1249e0d65f3d5abfd5
+ms.openlocfilehash: 418831cd4563a1a3ea03b87410ac72065c831a10
+ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/11/2021
-ms.locfileid: "112008487"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112064133"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
 
@@ -28,6 +28,8 @@ ms.locfileid: "112008487"
 - [支援 HoloLens 2 上的已表達的手網格](#support-for-hololens-2-articulated-hand-mesh-on-openxr)
 - 支援 HoloLens 2 [#9567](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9567)上的空間對應， [#9827](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9827)
 - HoloLens 2 [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)上的場景理解支援
+
+如果您的目標是透過 OpenXR HoloLens 2 或 Windows Mixed Reality 耳機，請務必透過 [混合現實功能工具](https://aka.ms/MRFeatureTool)安裝/更新至 **混合現實 OpenXR 外掛程式版本0.9.5 或** 更新版本，否則您可能會錯過上述一些改良功能。
 
 ### <a name="legacy-xr-and-xr-sdk-data-providers-can-now-be-used-within-the-same-profile"></a>舊版 XR 和 XR SDK 資料提供者現在可在相同的設定檔中使用
 
@@ -135,10 +137,10 @@ ms.locfileid: "112008487"
 - 將複製的檔案重新命名為範例
 - 開啟範例檔案
 - 在 [名稱] 方塊中，將內容取代為範例
-- 按一下 [套用]。
+- 按一下 [套用]
 - 建置及部署
 
-未來的 Visual Studio 2017 版本將會修正這個問題。
+即將推出的 MRTK 版本將會修正此問題。
 
 ### <a name="mrtk-build-window-triggers-indefinite-importing-assets-dialog-in-unity-20203"></a>Unity 2020.3 中的 MRTK 組建視窗觸發程式未限制的「匯入資產」對話方塊
 

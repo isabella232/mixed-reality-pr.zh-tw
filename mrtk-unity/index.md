@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: fa2338545186f4eeb56ed6689d30f21f765064e2
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: bf0a97547aa482e5c206916faea2b2de41d28a7b
+ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908423"
+ms.lasthandoff: 06/14/2021
+ms.locfileid: "112064143"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -31,7 +31,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 ::: moniker range=">= mrtkunity-2021-05"
 | 平台 | 支援的裝置 |
 |---|---|
-| OpenXR (Unity 2020.3)  | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
+| OpenXR (Unity 2020.3.8 +)  | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置  |
 | Oculus (Unity 2019.3 或更新版本)  | Oculus 的追求 |
 | OpenVR |  Windows Mixed Reality 頭戴式裝置 <br> HTC Vive <br> Oculus Rift |
@@ -41,7 +41,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 ::: moniker range="< mrtkunity-2021-05"
 | 平台 | 支援的裝置 |
 |---|---|
-| MRTK 2.6、Unity 2020.3) 的 OpenXR (預覽版 | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
+| MRTK 2.6、Unity 2020.3.8 +) 的 OpenXR (預覽版 | Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置 |
 | Windows Mixed Reality | Microsoft HoloLens <br> Microsoft HoloLens 2 <br> Windows Mixed Reality 頭戴式裝置  |
 | Oculus (Unity 2019.3 或更新版本)  | Oculus 的追求 |
 | OpenVR |  Windows Mixed Reality 頭戴式裝置 <br> HTC Vive <br> Oculus Rift |
