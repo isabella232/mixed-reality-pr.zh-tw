@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 252bd3d406e797ed219fade0438869e5253d5e5f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9170a376812901cb063038a5513d4fbf79ad0a28
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689100"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110129"
 ---
 # <a name="progress-indicators"></a>進度指標
 
@@ -18,7 +18,7 @@ ms.locfileid: "104689100"
 
 ## <a name="example-scene"></a>範例場景
 
-您可以在場景中找到如何使用進度指標的範例 `ProgressIndicatorExamples` 。 此場景示範 SDK 中包含的每個進度指標 prefabs。
+您可以在場景中找到如何使用進度指標的範例 `ProgressIndicatorExamples` 。 此場景示範 SDK 中包含的每個進度指標 prefabs。 它也會示範如何搭配一些常見的非同步工作（例如場景載入）來使用進度指示器。
 
 <img src="../images/progress-indicator/MRTK_ProgressIndicator_Examples.png" alt="Progress Indicator Examples 1">
 
@@ -38,6 +38,8 @@ private void Start()
 ```
 
 和方法會傳回工作 `IProgressIndicator.OpenAsync()` `IProgressIndicator.CloseAsync()` 。 [](xref:System.Threading.Tasks.Task) 建議您在非同步方法中等候這些工作。
+
+MRTK 的預設進度指標 prefabs 在放置於場景時應為非使用中。 當其 `IProgressIndicator.OpenAsync()` 方法被呼叫時，進度指示器將會自動啟用並停用其 gameobject。  (此模式不是 IProgressIndicator 介面的需求。 ) 
 
 將指標的 `Progress` 屬性設定為0-1 的值，以更新其顯示的進度。 設定其 `Message` 屬性，以更新其顯示的訊息。 不同的實施方式可能會以不同的方式顯示此內容。
 

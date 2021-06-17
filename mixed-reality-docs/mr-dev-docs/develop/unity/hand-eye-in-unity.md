@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 手勢、移動控制器、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: ff4c4b064e11e0cad45f4b0c1aaa90c61eda51d7
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 2daa02a0681fe4f3da24fa32379e10877750af7e
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600657"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110221"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity 中的明確和眼睛追蹤
 
@@ -35,12 +35,12 @@ MRTK v2 提供一組 UI 控制項和建立區塊，可協助您加速開發。
 | 各種物件定位行為，例如標記-沿著標記、主體鎖定、常數視圖大小和表面磁性 | 用於在三維圖形中設定物件陣列的腳本 | 具有彈性錨點/pivot 系統的注釋 UI，可用來標記動作控制器和物件。 |
 |  [ ![ 應用程式行](images/MRTK_AppBar_Main.png)](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar)[應用程式行](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/app-bar) | [ ![ 指標](images/MRTK_Pointer_Main.png)](/windows/mixed-reality/mrtk-unity/features/input/pointers)[指標](/windows/mixed-reality/mrtk-unity/features/input/pointers) | [ ![ Fingertip 視覺效果](images/MRTK_FingertipVisualization_Main.png)](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization) [Fingertip 視覺效果](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/fingertip-visualization) |
 | 周框方塊手動啟用的 UI | 瞭解各種類型的指標 | Fingertip 上的視覺效果 affordance，可改善直接互動的信賴度 |
-|  [ ![ 眼睛追蹤：目標選擇](images/mrtk_et_targetselect.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection)[眼睛追蹤：目標選取範圍](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) | [ ![ 眼睛追蹤：導覽](images/mrtk_et_navigation.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation)[眼睛追蹤：導覽](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) | [ ![ 眼睛追蹤：熱度圖](images/mrtk_et_heatmaps.png)](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html)[視覺追蹤：熱度圖](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Visualization.html) |
+|  [ ![ 眼睛追蹤：目標選擇](images/mrtk_et_targetselect.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection)[眼睛追蹤：目標選取範圍](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection) | [ ![ 眼睛追蹤：導覽](images/mrtk_et_navigation.png)](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation)[眼睛追蹤：導覽](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation) |
 | 結合眼睛、語音和手邊輸入，以快速且輕鬆地在場景中選取全像影像 | 瞭解如何根據您要查看的內容，自動滾動文字或放大焦點內容| 記錄、載入和視覺化使用者在您的應用程式中查看的範例 |
 
 ## <a name="example-scenes"></a>範例場景
 
-探索 MRTK 在 [此範例場景](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_HandInteractionExamples.html)中的各種互動和 UI 控制項類型。
+探索 MRTK 在 [此範例場景](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)中的各種互動和 UI 控制項類型。
 
 您可以在 [資產/MixedRealityToolkit] 底下的 [ [混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity) 組] GitHub 中找到其他範例場景： [ **範例/示範**] 資料夾。
 

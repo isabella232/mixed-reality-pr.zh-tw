@@ -3,12 +3,12 @@ title: 使用 SteamVR 搭配 Windows Mixed Reality
 description: 瞭解如何在使用相容電腦的 Windows Mixed Reality 耳機和控制器上設定及播放 SteamVR 遊戲。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: 641f2b7db890229b88c0614b6b2bc2e3e88ec309
-ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
+ms.openlocfilehash: 0d79b0c2079875b32387d616e77c5f497ab4aa59
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112064115"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110141"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
 
@@ -43,9 +43,18 @@ ms.locfileid: "112064115"
 
 **在目的電腦上執行 SteamVR**
 1. 將便攜存放裝置插入目的電腦之後，請將 SteamVR、MixedRealityVRDriver 及其他資料夾移至目的電腦上方便使用的位置。
-2. 確保 SteamVR 和 MixedRealityVRDriver 位於相同的資料夾中，將 [steamvr-add-wmr-driver.bat](scripts/steamvr-add-wmr-driver.bat) 下載到包含資料夾，然後按兩下該資料夾。 這可讓執行時間在您的自訂安裝中尋找 SteamVR 驅動程式的 Windows Mixed Reality。
 ![目的電腦上安裝之 SteamVR 的 SteamVR 和 Windows Mixed Reality](images/steamvr-install-files.png)
-3. 若要執行 SteamVR，您應該按兩下位於 *SteamVR\bin\win64\vrstartup.exe* 的檔案 "vrstartup.exe"，或 *SteamVR\bin\win32\vrstartup.exe* 如果目的電腦執行的是32位版本的 Windows。
+
+2. 確保 SteamVR 和 MixedRealityVRDriver 位於相同的資料夾中，然後開啟命令提示字元。 基於這個範例，我們會假設包含資料夾位於 *C:\SteamVRInstall*。 在此情況下，您應該在命令提示字元中執行：
+```powershell
+chdir "C:\SteamVRInstall"
+.\SteamVR\bin\win64\vrpathreg.exe adddriver "C:\SteamVRInstall\MixedRealityVRDriver"
+```
+ (請注意，如果您執行的是32位版本的 Windows，則 `win64` 應該改為使用上述路徑的部分 `win32` 。 ) 
+
+這可讓執行時間在您的自訂安裝中尋找 SteamVR 驅動程式的 Windows Mixed Reality。
+
+4. 若要執行 SteamVR，您應該按兩下位於 *SteamVR\bin\win64\vrstartup.exe* 的檔案 "vrstartup.exe"，或 *SteamVR\bin\win32\vrstartup.exe* 如果目的電腦執行的是32位版本的 Windows。
 
 如需 [詳細資訊和疑難排解，請參閱 Steamworks 檔頁面](https://partner.steamgames.com/doc/features/steamvr/enterprise#2)。
 

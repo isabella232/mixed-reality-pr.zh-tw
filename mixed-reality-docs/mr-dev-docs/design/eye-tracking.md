@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: b76fd2e05999e5807156714fcdf12ca2863501bc
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 4dac059f72dd043802286081a54137c392c1e912
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196503"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110111"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -87,13 +87,13 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 眼球追蹤可讓應用程式即時追蹤使用者的視線方向。 下列使用案例說明在混合現實 HoloLens 2 上進行眼追蹤時可能發生的一些互動。
 這些使用案例還不是全像 Shell 體驗的一部分 (也就是當您啟動 HoloLens 2) 時所看到的介面。
-您可以在「 [混合現實」工具](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)組中試用其中一部分，這會提供數個有趣且功能強大的範例來使用眼睛追蹤，例如快速且輕鬆地顯示支援的目標選取專案，並根據使用者的外觀自動滾動文字。 
+您可以在「 [混合現實」工具](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)組中試用其中一部分，這會提供數個有趣且功能強大的範例來使用眼睛追蹤，例如快速且輕鬆地顯示支援的目標選取專案，並根據使用者的外觀自動滾動文字。 
 
 ### <a name="user-intent"></a>使用者意圖
 
 使用者查看位置和內容的相關資訊，可 **為其他輸入** 提供功能強大的內容，例如語音、手和控制器。
 這可以運用在各種不同的工作上。
-比方說，這可以透過查看一組影像並說「*選取*」 (也可以快速且輕鬆地以場景為 **目標**，也就是查看 [和認可](gaze-and-commit.md)) 或「 *put this ...*」，然後查看使用者想要放置全像 *有*。 您可以在[混合實境工具組 - 視線導向目標選取](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_TargetSelection.html)和[混合實境工具組 - 視線導向目標定位](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Positioning.html)中找到相關範例。
+比方說，這可以透過查看一組影像並說「*選取*」 (也可以快速且輕鬆地以場景為 **目標**，也就是查看 [和認可](gaze-and-commit.md)) 或「 *put this ...*」，然後查看使用者想要放置全像 *有*。 您可以在[混合實境工具組 - 視線導向目標選取](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-target-selection)和[混合實境工具組 - 視線導向目標定位](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-positioning)中找到相關範例。
 
 此外，使用者意圖的範例可能包括使用使用者查看的相關資訊，以增強與各有虛擬專員和互動式全息的互動。 例如，虛擬專員可能會根據目前已查看的內容，來調整可用的選項和其行為。 
 
@@ -103,7 +103,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 它的概念是，全像是全像是 instinctual 的影像或使用者介面專案，可能不會覺得使用者完全與系統互動，而是由系統和使用者保持同步。其中一個範例是以 **眼睛為基礎的自動滾動** ，其中使用者可以讀取長文字，這會在使用者到達文字方塊底部時自動開始滾動，以將使用者保持在閱讀流程中，而不需要抬起手指。  
 其中一個重要層面是，捲動速度會調整為使用者的閱讀速度。
 另一個範例是 **眼睛支援的縮放和平移** ，讓使用者可以覺得完全朝著他或她的焦點。 觸發和控制縮放速度可透過聲音或手寫輸入來控制，這對於提供使用者感覺來掌控控制項，同時避免發生大量的情況相當重要。 我們將在下面更詳細討論這些設計考慮。 放大之後，使用者可以順暢地遵循，例如，街道的某一堂，使用眼睛的眼睛來探索其鄰近地區。
-您可以在[混合實境工具組 - 視線導向瀏覽](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Navigation.html)範例中找到這類互動的示範。
+您可以在[混合實境工具組 - 視線導向瀏覽](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-navigation)範例中找到這類互動的示範。
 
 其他 _隱含動作_ 的使用案例可能包括：
 - **智慧型通知：** 在您想要的位置上快顯通知的感到苦惱？ 考慮到使用者所注意的內容，您可以藉由從使用者目前撥雲見日的位置來抵銷通知，讓這項體驗更好。 這會限制分散注意力，並在使用者完成閱讀之後自動將其關閉。 
@@ -112,7 +112,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 ### <a name="attention-tracking"></a>注意力追蹤
 
 使用者所查看之位置或位置的資訊，是一種功能強大的工具。 它有助於評估設計的可用性，並識別工作流程中的問題，使其更有效率。
-目視追蹤視覺效果和分析是各種應用程式區域中常見的作法。 有了 HoloLens 2，我們會提供新的維度來瞭解這一點，因為3D 全息圖可放置在真實世界的內容中，並據以進行評估。 [Mixed Reality 工具](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/EyeTracking/EyeTracking_Main.html)組提供記錄和載入眼睛追蹤資料的基本範例，以及如何將其視覺化。
+目視追蹤視覺效果和分析是各種應用程式區域中常見的作法。 有了 HoloLens 2，我們會提供新的維度來瞭解這一點，因為3D 全息圖可放置在真實世界的內容中，並據以進行評估。 [Mixed Reality 工具](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)組提供記錄和載入眼睛追蹤資料的基本範例，以及如何將其視覺化。
 Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊的使用方式有明智且透明的體驗。  我們將與我們的開發人員和 UX 小組合作，為協力廠商提供指導方針，以確保體驗是以使用者為中心。  
 
 同屬此領域的其他應用程式包括： 

@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、控制項、設計、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、物件集合、2D、3D、MRTK、混合現實工具組
-ms.openlocfilehash: 9648f3bd22a09c53de2f903ed8ba0274c634db7c
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: fd5629f58e092b33410c833885037582ba5ca4a1
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600197"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110135"
 ---
 # <a name="object-collection"></a>物件集合
 
 ![專案應用程式的定期資料表中所使用的物件集合](images/UX_Hero_ObjectCollection.jpg)<br>
 
-物件集合是版面配置控制項，可協助您配置預先定義之三維圖形中的物件陣列。 它支援各種表面樣式-* * 平面、圓柱圖、球體和 **放射狀** 樣式。 您可以調整物件的半徑和大小，以及兩者之間的空間。 物件集合支援 Unity （2D 和3D）中的任何物件。 在 **[混合現實工具](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_ObjectCollection.html)** 組中，我們建立了 Unity 腳本和範例，可協助您建立物件集合。
+物件集合是版面配置控制項，可協助您配置預先定義之三維圖形中的物件陣列。 它支援各種表面樣式-* * 平面、圓柱圖、球體和 **放射狀** 樣式。 您可以調整物件的半徑和大小，以及兩者之間的空間。 物件集合支援 Unity （2D 和3D）中的任何物件。 在 **[混合現實工具](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/object-collection)** 組中，我們建立了 Unity 腳本和範例，可協助您建立物件集合。
 
 ## <a name="object-collection-examples"></a>物件集合範例
 

@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: 2539c8e2a6f26ba1f36cd28502bf8d0f50803657
-ms.sourcegitcommit: bd9b2734903652b106db86686428c03acf104707
+ms.openlocfilehash: ec1a53d2f623a8047c2ee1973d8d6f20458ade88
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/25/2021
-ms.locfileid: "98763715"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110249"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
 
@@ -86,7 +86,7 @@ if (view != null)
 > [!NOTE]
 > 如果您使用的是 Unity 2018，則需要 **unity 2018.4.13 f1** 或更新版本。 如果您使用的是 Unity 2019，則需要 **unity 2019.4** 或更新版本。
 
-若要在使用 [Mixed Reality 工具](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)組時選擇從 pv 攝影機進行轉譯，請啟用 [Windows Mixed Reality 攝影機設定](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/CameraSystem/WindowsMixedRealityCameraSettings.html) 提供者，並檢查 **從 pv 攝影機** 轉譯。
+若要在使用 [Mixed Reality 工具](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)組時選擇從 pv 攝影機進行轉譯，請啟用 [Windows Mixed Reality 攝影機設定](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings) 提供者，並檢查 **從 pv 攝影機** 轉譯。
 
 如果您不是使用「混合現實」工具組，您可以使用元件以 [手動方式加入宣告](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) ，如上面的 DirectX 所述。
 
@@ -176,7 +176,7 @@ Unreal 會自動為您完成這項操作。
 **解決方案**：
 * 將顯示為不透明黑色的任何內容變更為具有 Alpha 值0。
 * 確定應用程式已清除為透明的黑色。
-* Unity 預設會自動使用 MixedRealityToolkit 來清除，但如果它是非 Unity 應用程式，您應該修改與 ID3D11DeiceCoNtext：： ClearRenderTargetView 搭配使用的色彩， ( # A1。 您想要確保清楚透明的黑色 (0、0、0、0) ，而不是不透明的黑色 (0、0、0、1) 。
+* Unity 預設會自動使用 MixedRealityToolkit 來清除，但如果它是非 Unity 應用程式，則您應該修改與 ID3D11DeiceCoNtext：： ClearRenderTargetView () 搭配使用的色彩。 您想要確保清楚透明的黑色 (0、0、0、0) ，而不是不透明的黑色 (0、0、0、1) 。
 
 如果您想要的話，現在可以調整資產的 Alpha 值，但通常不需要這麼做。 大部分的情況下，MRCs 都看起來不錯。 MRC 假設預乘 Alpha。 Alpha 值只會影響 MRC 捕捉。
 
@@ -213,8 +213,8 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 其他應用程式也可以使用 [Windows Media Capture api](/uwp/api/Windows.Media.Capture.MediaCapture) 來控制相機，並新增 MRC 影片和音訊效果，以在靜止和影片中包含虛擬全像影像和應用程式音訊。
 
 應用程式有兩個選項可新增效果：
-* 舊版 API： [MediaCapture. AddEffectAsync ( # B1 ](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* 新的 Microsoft 建議 API (會傳回物件，讓您可以操控動態屬性) ： [MediaCapture. AddVideoEffectAsync ( # B3](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync ( # B5](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync) ，這需要應用程式建立自己的[IVideoEffectDefinition](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
+* 舊版 API： [MediaCapture. AddEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* 新的 Microsoft 建議 API (會傳回物件，讓您能夠操作動態屬性) ： [MediaCapture. AddVideoEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)需要應用程式建立自己的[IVideoEffectDefinition](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
 
 >[!NOTE]
 > Visual Studio 不會辨識 MixedRealityCapture 命名空間，但字串仍然有效。

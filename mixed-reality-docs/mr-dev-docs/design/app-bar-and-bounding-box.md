@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
 keywords: Windows Mixed Reality，應用程式橫條，周框方塊，混合現實耳機，windows Mixed Reality 耳機，虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 750fb238e5b7f22998a86f71607498c8f6982076
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600517"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110092"
 ---
 # <a name="bounding-box-and-app-bar"></a>週框方塊和應用程式列
 ![「周框」是混合現實物件操作的標準介面。](images/UX_Hero_BoundingBox.jpg)<br>
@@ -66,7 +66,7 @@ ms.locfileid: "110600517"
 
 <br>
 
-**針對 Unity 應用程式開發，請參閱 [混合現實工具組-Unity 中的周框方塊。](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_BoundingBox.html)**
+**針對 Unity 應用程式開發，請參閱 [混合現實工具組-Unity 中的周框方塊。](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/bounding-box)**
 
 <br>
 

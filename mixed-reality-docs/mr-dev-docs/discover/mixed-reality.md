@@ -1,5 +1,5 @@
 ---
-title: 混合現實？
+title: 什麼是混合實境？
 description: 討論混合現實，demomstrating 在混合的現實範圍上使用 AR 和 VR 裝置。
 author: brandonbray
 ms.author: branbray
@@ -7,12 +7,12 @@ ms.date: 08/26/2020
 ms.topic: article
 keywords: 混合實境, 全像攝影, AR, VR, MR, XR, 擴增實境, 虛擬實境, 說明, 案例研究, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境
 ms.localizationpriority: high
-ms.openlocfilehash: 0ff9fcd79c778c2b056cd0c6035ddf8cb005273a
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: e524312b2e479b1c3d05039403aba10de864ae18
+ms.sourcegitcommit: 5603dc9f6511707cb8b215f20f6c6485ef480538
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547105"
+ms.lasthandoff: 06/16/2021
+ms.locfileid: "112230204"
 ---
 # <a name="what-is-mixed-reality"></a>什麼是混合實境？
 

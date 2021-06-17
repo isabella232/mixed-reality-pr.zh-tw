@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, prefab, 全像投影, 工具提示
 ms.localizationpriority: high
-ms.openlocfilehash: 1d5a86ca87b8d65254607c787ac9f01c007c2b4b
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743656"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110271"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
 
@@ -67,7 +67,7 @@ ms.locfileid: "110743656"
 ![已設定 [提示] 按鈕物件 OnClick 事件的 Unity](images/mr-learning-base/base-06-section1-step1-5.png)
 
 > [!TIP]
-> Interactable 元件是一個全方位容器，可讓任何物件輕鬆地進行互動及回應輸入。 Interactable 可作為所有輸入類型的概括，包括觸控、手部射線、語音等，並可將這些互動注入事件和視覺主題回應。 若要了解如何針對不同的輸入類型進行設定，並自訂其視覺化主題，您可參閱 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity/)中的 [Interactable](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Interactable.html) 指南。
+> Interactable 元件是一個全方位容器，可讓任何物件輕鬆地進行互動及回應輸入。 Interactable 可作為所有輸入類型的概括，包括觸控、手部射線、語音等，並可將這些互動注入事件和視覺主題回應。 若要了解如何針對不同的輸入類型進行設定，並自訂其視覺化主題，您可參閱 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity/)中的 [Interactable](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/interactable) 指南。
 
 在階層視窗中，選取 [分解] 按鈕物件，然後在偵測器視窗中，設定 **Interactable.OnClick ()** 事件，如下所示：
 

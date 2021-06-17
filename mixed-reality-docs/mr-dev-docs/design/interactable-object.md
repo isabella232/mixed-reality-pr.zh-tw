@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、提示、ui、ux、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
-ms.openlocfilehash: 8a68006d68b985f8d26a3d1a11e4d52fcfb5acb5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: b25c25a6dd48bcc85a556787099734d147d18df2
+ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600437"
+ms.lasthandoff: 06/15/2021
+ms.locfileid: "112110216"
 ---
 # <a name="interactable-object"></a>可互動的物件
 
@@ -135,7 +135,7 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 
 ---
 
-[HoloLens 2 上的按鈕](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/README_Button.html)是如何視覺化不同輸入互動狀態的範例：
+[HoloLens 2 上的按鈕](/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/button)是如何視覺化不同輸入互動狀態的範例：
 
 :::row:::
     :::column:::
