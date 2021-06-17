@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 1d148fc31d2009c6843882bf9b9cd9fc99c3322a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
+ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743686"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112270423"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -69,7 +69,7 @@ ms.locfileid: "110743686"
 > 如果您沒有在場景視窗中看到相機光線，請確定您已啟用 [Gizmos] 功能表，如上圖中所示。
 
 > [!TIP]
-> 若要了解如何使用編輯器內的輸入模擬，您可以參考 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity)中的[使用編輯器內的手動輸入模擬來測試場景](https://microsoft.github.io/MixedRealityToolkit-Unity/Documentation/GettingStartedWithTheMRTK.html#using-the-in-editor-hand-input-simulation-to-test-a-scene)。
+> 若要了解如何使用編輯器內的輸入模擬，您可以參考 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity)中的[使用編輯器內的手動輸入模擬來測試場景](/windows/mixed-reality/mrtk-unity/features/input-simulation/input-simulation-service)。
 
 > [!TIP]
 > 如果您的電腦有麥克風，您可以使用語音命令「切換診斷」，輕鬆地切換出現在 [遊戲] 視窗中的 [診斷] 面板作用中狀態。 或者，您也可以在 [MRTK 組態設定檔] > [診斷] > [啟用診斷系統] 中加以停用。 不過，通常建議您在開發期間讓診斷系統保持作用中狀態。
