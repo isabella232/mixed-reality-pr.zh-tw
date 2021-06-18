@@ -3,18 +3,47 @@ title: MRTK 2.7 版本資訊
 description: MRTK 2.7 版的版本資訊
 author: RogPodge
 ms.author: roliu
-ms.date: 05/27/2021
+ms.date: 06/16/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 418831cd4563a1a3ea03b87410ac72065c831a10
-ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
+ms.openlocfilehash: 7e4ddc4b97a6e580a7832ff2e86ee267246cce0d
+ms.sourcegitcommit: c9d52f9529cabeaf912fffa6efc6599a9041a929
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112064133"
+ms.lasthandoff: 06/17/2021
+ms.locfileid: "112305232"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
+
+## <a name="whats-new-in-271"></a>2.7.1 的新功能
+
+### <a name="show-version"></a>顯示版本
+
+`Mixed Reality`  >  `Toolkit` 功能表現在包含一個 `Show version...` 專案，該專案會檢查混合現實工具組 Foundation 套件，以判斷專案所使用的 MRTK 版本。
+
+![顯示版本功能表](images/ShowVersionMenu.png)
+
+![MRTK 版本對話方塊](images/VersionDialog.png)
+
+> [!NOTE]
+> 如果 MRTK 是從 GitHub 存放 [庫](https://aka.ms/mrtk)複製的，則不會設定版本資訊。
+>
+> ![無法判斷版本](images/CannotDetermineVersion.png)
+
+### <a name="authors-list"></a>作者清單
+
+從 MRTK 2.7.1 開始，作者清單檔案包含在 Mixed Reality 工具組 Foundation 套件中。
+
+### <a name="notable-bugfixes-and-changes"></a>值得注意的錯誤修正與變更
+
+- 已標示 XR SDK 管線[#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)支援的 Unity 操縱杆管理員
+- 已新增檢查以互動偵測器程式碼，以防止 null 錯誤 [#9943](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
+- 將 OpenXR 網狀提供者新增至脈衝著色器範例場景 [#9902](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
+- 將手型物理配置檔案還原至範例場景 [#9915](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
+- HandConstraint * 腳本的一些清除 [#9935](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
+- 體驗設定設定檔現在可設定為 None [#9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
+
 
 ## <a name="whats-new-in-270"></a>2.7.0 的新功能
 
