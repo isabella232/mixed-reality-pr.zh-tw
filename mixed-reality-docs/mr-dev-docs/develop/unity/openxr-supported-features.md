@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 01/11/2021
 ms.topic: article
 keywords: openxr、unity、hololens、hololens 2、mixed reality、MRTK、Mixed Reality 工具組、增強的現實、虛擬實境、混合現實耳機、學習、教學課程、快速入門
-ms.openlocfilehash: e622cd617ccf67c0877b9064efe791743e4c34b6
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: 371815d6410a7add8ee9c62f72d746d74ad397b0
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333370"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392666"
 ---
 # <a name="mixed-reality-openxr-supported-features-in-unity"></a>混合現實 OpenXR Unity 中支援的功能
 
@@ -30,7 +30,7 @@ ms.locfileid: "110333370"
 * HoloLens 2 上的眼睛注視互動。
 * HoloLens 2 上尋找 (PV) 攝影機的相片/影片。
 * 混合實境擷取使用透過 PV 攝影機的第三種眼睛呈現。
-* 支援「播放」以使用全像「 [遠端處理」應用程式 HoloLens 2](unity-play-mode.md#holographic-remoting-in-unity-editor-play-mode)，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
+* 支援「播放」以使用全像「 [遠端處理」應用程式 HoloLens 2](unity-play-mode.md#unity-play-mode-with-holographic-remoting)，讓開發人員不需要建立及部署到裝置，即可將腳本進行偵錯工具。
 * 透過 [MRTK OpenXR 提供者支援](openxr-getting-started.md#using-mrtk-with-openxr-support)，與 MRTK Unity 2.5.3 和更新版本相容。
 * 與 Unity [ARFoundation 4.0](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@4.1/manual/index.html) 或更新版本相容。
 *  (在 0.1.3) 中新增的功能，可支援從組建和部署的 Windows 獨立應用程式進行傳統型 [應用程式](holographic-remoting-desktop.md) 全像開發。

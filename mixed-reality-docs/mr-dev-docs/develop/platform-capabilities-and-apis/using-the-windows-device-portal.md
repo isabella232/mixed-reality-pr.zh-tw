@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 4b422325540e594cc5b715184555f44be9bd4010
-ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
+ms.openlocfilehash: 30d0e9295bd58eceb784eeeda8d548bafba8a756
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112270445"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392305"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 
@@ -64,7 +64,7 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 1. 如果您的 HoloLens 2 正在執行 Windows 全像21H1 版或更高版本，請移至 [設定] 應用程式中的 [適用于開發人員]，並確定已開啟 [裝置探索]。 
 2. 使用 USB 纜線將您的 HoloLens 2 連接到您的電腦。
-3. 尋找您的 UsbNcm IP。 作法有二：
+3. 尋找您的 UsbNcm IP。 有幾種方式可以執行此作業：
   * 在裝置上的 [設定] 應用程式中 (此方法僅適用于執行 Windows 全像21H1 或更高版本的 HoloLenses，並開啟 [裝置探索]。 ) 
     1. 移至裝置上的 [設定] 應用程式。
     2. 移至開發人員的「更新 & 安全性」 >」。 這是您裝置入口網站啟用的相同位置。
@@ -75,7 +75,13 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
     1. 在您的裝置上，使用 HoloLens 的 WiFi 位址開啟裝置入口網站。 如果您不知道 HoloLens 的 WiFi 位址，可以使用語音命令「我的 IP 位址為何？」
     2. 移至系統 > 網路
     3. 在 [IP 設定] 面板中頁面的最右側，找出開頭為 "Description： UsbNcm Function" 的區段。
-    4. 您的 UsbNcm IP 是 [IPv4 位址] 行。 您可以複製位址或直接按一下位址-它是超連結，會使用 UsbNcm IP 重新開啟裝置入口網站。 
+    4. 您的 UsbNcm IP 是 [IPv4 位址] 行。 您可以複製位址或直接按一下位址-它是超連結，會使用 UsbNcm IP 重新開啟裝置入口網站。
+  
+  * 在命令提示字元中
+    1. 在任何命令提示字元中，流覽至 \<SDK version> 安裝 WINDOWS 10 SDK 的 bin \x86 資料夾，例如 C:\Program Files (x86) \Windows Kits\10\bin\10.0.19041.0\x86。
+    2. 輸入 "winappdeploycmd.exe devices"，然後按 Enter 鍵。
+    3. 在輸出中，尋找模型/名稱資料行是 HoloLens 裝置名稱的專案，例如 HOLOLENS-xxxxxx。 UsbNcm IP 位於這一行的開頭，且將會是 169.254.. x.x. 格式的自動私人 IP 位址。 複製此位址。 
+ 
 4. 如果您複製了 UsbNcm IP，請從您電腦上的網頁瀏覽器移至 HTTPs://，然後再移至您的 UsbNcm IP。
 
 ### <a name="moving-files-over-usb"></a>透過 USB 移動檔案

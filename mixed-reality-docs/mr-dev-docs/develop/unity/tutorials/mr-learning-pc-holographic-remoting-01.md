@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 95a11ce855091a3711152f2c4147d835d10edb8f
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 4702a9987a2018b848e53e03f9e5b37356d52088
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110713717"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392335"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -34,13 +34,12 @@ ms.locfileid: "110713717"
 * 已[安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦
 * 基本 C# 程式設計知識
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，已掛接 Unity 2019 LTS，且已新增通用 Windows 平台組建支援模組
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 已掛接 UNITY 2020/2019 LTS，並已新增通用 Windows 平臺組建支援模組
 
 **強烈建議** 先完成 [使用者入門](mr-learning-base-01.md)教學課程系列或一些基本的 Unity 和 MRTK 體驗，再繼續執行。
 
 > [!IMPORTANT]
-> * 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求或建議。
-> * 透過 MRTK 專案進行全像攝影遠端處理只會使用舊版 XR。 目前不支援 XR SDK。
+> * 此教學課程系列支援目前2020.3 的 Unity 2020 LTS () 如果您使用 Open XR 和 Unity 2019 LTS (目前的 2019.4. x) 如果您使用舊版的 WSA，則會取代上述必要條件中所述的任何 Unity 版本需求。
 
 ## <a name="creating-and-preparing-the-unity-project"></a>建立和準備 Unity 專案
 
@@ -56,20 +55,13 @@ ms.locfileid: "110713717"
 
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 
-5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) ，並為場景提供適當的名稱，例如電腦全像 *遠端*
+5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
 
 然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示，將場景的 MRTK 設定檔變更為 **DefaultHoloLens2ConfigurationProfile**。 將空間感知網格的顯示選項變更為 **遮蔽**。
 
 ## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
 
-下載並 **匯入** [MRTK.Tutorials.PCHolographicRemoting.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/pc-holographic-remoting-v2.4.0/MRTK.Tutorials.PCHolographicRemoting.unitypackage)。
-
->[!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-02.md#importing-the-tutorial-assets) 的指示。
-
-匯入教學課程資產之後，您的 [專案] 視窗看起來應該會像這樣：
-
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mrlearning-pc-holographic-remoting/Tutorial1-Section2-Step1-1.png)
+[!INCLUDE[](includes/importing-tutorial-assets-pc-holographic-remoting.md)]
 
 ## <a name="configuring-and-preparing-the-scene"></a>設定和準備場景
 

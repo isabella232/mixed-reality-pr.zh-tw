@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 05/21/2021
 ms.topic: article
 keywords: Unity、遠端處理、全像全像攝影、全像遠端播放機、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、unity play 模式
-ms.openlocfilehash: caa9d7bf11104ee168fda24fc369de490feb7817
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: b998233fda34beee0c98795a1efa2c86a53541ba
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547103"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112392287"
 ---
 # <a name="unity-play-mode"></a>Unity 播放模式
 
@@ -24,24 +24,6 @@ ms.locfileid: "111547103"
     * 您將需要2.4 或更新版本才能使用 OpenXR 外掛程式
 
     ![HoloLens 中執行的全像 Remoting 播放程式的螢幕擷取畫面](images/openxr-features-img-01.png)
-
-## <a name="holographic-remoting-in-unity-editor-play-mode"></a>Unity 編輯器 play 模式的全像遠端功能
-
-在 Visual Studio 專案中建立 UWP Unity 專案，然後將它封裝並部署到 HoloLens 2 裝置，可能需要一些時間。 其中一個解決方法是啟用全像「全像」編輯器遠端功能，讓您透過網路直接使用「播放」模式來將 c # 腳本進行 HoloLens 2 裝置的偵測。 此案例可避免建立 UWP 套件並將其部署至遠端裝置的額外負荷。
-
-1. 遵循全像全像[遠端設定](#holographic-remoting-setup)的步驟
-2. 開啟 **Windows > XR > OpenXR 編輯器遠端** 執行：
-
-    ![醒目提示 XR 外掛程式管理的 Unity 編輯器中開啟之 [專案設定] 面板的螢幕擷取畫面](images/openxr-features-img-02.png)
-
-3. 輸入您從全像全像遠端應用程式取得的 IP 位址，然後選取 [**啟用編輯器遠端**]
-
-    ![在 Unity 編輯器中開啟專案設定面板的螢幕擷取畫面，其中已醒目提示功能](images/openxr-features-img-03.png)
-
-現在您可以按一下 [播放] 按鈕，以在 HoloLens 上的全像遠端應用程式中播放 Unity 應用程式。 您也可以 [將 Visual Studio 附加至 Unity](/visualstudio/gamedev/unity/get-started/using-visual-studio-tools-for-unity?pivots=windows) ，以在播放模式中進行 c # 腳本的調試。
-
-> [!NOTE]
-> 從0.1.0 版起，全像「全像」遠端執行時間不支援錨點，而 ARAnchorManager 功能將無法透過遠端處理。  這項功能會在未來的版本中推出。
 
 ## <a name="unity-play-mode-with-holographic-remoting"></a>使用全像攝影遠端的 Unity 播放模式
 
