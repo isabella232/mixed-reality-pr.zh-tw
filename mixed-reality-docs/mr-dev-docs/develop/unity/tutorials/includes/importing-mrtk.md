@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6c1c769d082399b02556d9b92f34326f7a53024c
-ms.sourcegitcommit: 1d8fa82b5ca6d17cf03a5cf11d0669f32a31e5d0
+ms.openlocfilehash: 0c25f726c391c1485efab26828d2bfe4a6468f8b
+ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "111594372"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112396995"
 ---
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
@@ -273,7 +273,7 @@ Unity 完成上一節中提到的匯入封裝後，應該會出現 [MRTK 專案�
 > [!TIP]
 > 您可以選擇是否設定 [音訊空間定位器] 屬性，但這麼做可以改善專案中的音訊體驗。 如果您將此屬性設定為 [MS HRTF 空間定位器]，當 Unity 的 AudioSource.spatialize 屬性啟用時，便會使用此空間定位器外掛程式。 若要深入瞭解本主題，您可以參考  <a href="//windows/mixed-reality/develop/unity/tutorials/unity-spatial-audio-ch1" target="_blank"> 空間音訊教學</a>課程。
 
-按一下 **[下一步** ]，然後按一下 [MRTK 專案設定] 視窗中的 [**完成** ] 按鈕，完成 Legecy XR 的 Unity 專案設定。
+按一下 **[下一步** ]，然後按一下 [MRTK 專案設定] 視窗中的 [**完成** ] 按鈕，完成舊版 XR 的 Unity 專案設定。
 
 ### <a name="configure-additional-project-settings"></a>設定其他專案設定
 

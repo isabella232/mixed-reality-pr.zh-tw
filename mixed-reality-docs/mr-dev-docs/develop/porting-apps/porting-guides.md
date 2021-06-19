@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
-ms.openlocfilehash: dd09c6479bfcf3659b3e9355be898d77bccc6dc6
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: bb76325c0a2d10150cff6604e29c7ead8a97df8e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580570"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394462"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>將 VR 應用程式移植到 Windows Mixed Reality
 
@@ -30,7 +30,7 @@ Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立�
 
 ### <a name="1-make-sure-you-have-the-right-development-hardware"></a>1. 請確定您有正確的開發硬體
 
-[ [安裝工具](../install-the-tools.md#immersive-vr-headset-requirements) ] 頁面會列出建議的開發硬體。
+[ [VR 愛好者指南](/windows/mixed-reality/enthusiast-guide/windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines) ] 頁面會列出建議的開發硬體。
 
 ### <a name="2-upgrade-to-the-latest-flight-of-windows-10"></a>2. 升級到 Windows 10 的最新航班
 

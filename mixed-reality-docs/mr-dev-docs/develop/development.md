@@ -1,5 +1,4 @@
 ---
-layout: LandingPage
 title: 了解工具和架構
 description: 了解您開始製作 HoloLens 和沉浸式頭戴裝置應用程式所需的混合實境開發工具。
 author: grbury
@@ -8,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, unity, unreal, directx, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 虛擬實境, 擴增實境, 虛擬實境開發, 擴增實境開發
-ms.openlocfilehash: 0ff9c5bbf4c7da7c3d2c40d825ab92058b3eb3b1
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: b47970de15451ea3bd0c121edd7dc61438fa115c
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743402"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394322"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>混合實境開發簡介
 
@@ -21,27 +20,30 @@ ms.locfileid: "110743402"
 
 混合實境是一個很大的地方，也就是真實和虛擬世界碰撞的交會點。 無限可能，從您開始。 選擇您的引擎、下載您的工具，以及備好鍵盤待用。 歡迎使用混合實境生態系統 - 該是建立的時候了。
 
-## <a name="development-options"></a>開發選項
+我們有三個可能的路徑，可在混合的現實開發中開始進行，其中每一個都是在下一節中說明：
+* [Microsoft Learn](#microsoft-learn)
+* [混合現實工具組教學課程系列](#mixed-reality-toolkit-tutorials)
+* [自我引導式探索](#self-guided-exploration)
 
-**Unity** -Unity 是市場上領先業界的其中一個即時開發平台，包含以 C++ 撰寫的基礎執行階段程式碼，並在 C# 中完成所有開發指令碼。 無論您想要打造遊戲、電影和動畫電影藝術，甚至要在虛擬世界中轉譯架構或工程概念，Unity 都有可支援您的基礎結構。
+## <a name="microsoft-learn"></a>Microsoft Learn
 
-**Unreal** -Unreal Engine 是功能強大的開放原始碼建立引擎，在 c + + 和 Unreal 的藍圖視覺腳本系統中都有混合現實的完整支援。 從 Unreal Engine 4.25 開始，HoloLens 支援已具備完整功能且可供生產環境使用。 有了彈性藍圖視覺腳本系統所提供的功能，設計人員就不需要撰寫程式碼，就能使用通常僅供程式設計師使用的完整概念和工具。 各行各業的建立者可以利用自由和控制來提供最先進的內容、互動式體驗和沉浸式虛擬世界。
+Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學習途徑，在短短幾分鐘內探索新技能、尋找認證並讓事業更上層樓。
 
-**原生 (OpenXR)** - OpenXR 是 Khronos 中開放且免權利金的 API 標準，可讓引擎以原生方式對多個跨混合實境頻譜的廠商存取其中各種裝置。 您可以在 HoloLens 2 上使用 OpenXR 或在電腦上使用 Windows Mixed Reality 沉浸式頭戴裝置進行開發。 如果您無法存取頭戴式裝置，則可使用適用於 HoloLens 2 和 Windows Mixed Reality 頭戴式裝置的模擬器。
+我們的學習模組可讓您更精通混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure 混合實境服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。
 
-## <a name="what-technology-path-are-you-interested-in"></a>您對哪像技術主題感興趣？ 
+> [!div class="nextstepaction"]
+> [Microsoft Learn 上的混合現實簡介](/learn/modules/intro-to-mixed-reality)
 
-您可以透過我們的文件採用數個開發路徑。 第一個步驟是尋找最適合您的技術。 如果您已有屬意的技術，請直接跳到下方與其對應的索引標籤。 如果您抱持觀望態度或才剛開始，請逐一查看每項技術並了解其所提供的內容、可用的平台和工具，然後開始建立！
+## <a name="mixed-reality-toolkit-tutorials"></a>混合現實工具組教學課程
 
-> [!IMPORTANT]
-> 如果您有現有專案要帶到 HoloLens 2 或沉浸式 VR頭戴式裝置 (例如 Reverb G2)，請參閱我們的 **[移植指南概觀](porting-apps/porting-overview.md)** 。 對於使用 HTK、MRTK v1、SteamVR 的專案，或針對沉浸式頭戴裝置 (例如 Oculus Rift 或 HTC Vive) 開發的專案，我們都提供了相關指南。
+如果您是更深入瞭解使用者，請參閱我們的混合現實工具組 (MRTK) 的教學課程系列。 您將建立混合的現實體驗，讓使用者可以在 NASA 的 Mars 好奇心 Rover 之後，探索模型化的全息圖，並取得 MRTK，以及它如何加速開發流程。
 
-[!INCLUDE[](includes/tech-path-overview.md)]
+> [!div class="nextstepaction"]
+> [MRTK 教學課程](unity/tutorials/mr-learning-base-01.md)
 
-## <a name="whats-next"></a>接下來要做什麼？
+## <a name="self-guided-exploration"></a>自我引導式探索
 
-既然您已有屬意的技術路徑，讓我們為您提供開始旅程所需的工具。
+如果您是經驗豐富的開發人員，而且想要直接進入我們的檔，請先安裝必要的工具。 從該處選擇您的 Unity 開發設定，並遵循我們的策劃 Unity 開發路徑（HoloLens），或流覽我們的內容庫。
 
 > [!div class="nextstepaction"]
 > [安裝工具](install-the-tools.md)
-

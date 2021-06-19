@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: unity、visual studio、調試、il2cpp、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP
-ms.openlocfilehash: 8e3967971220fa453f4e60639bd08f2554a8dd7e
-ms.sourcegitcommit: 5617575cf550dd03fba0bfd5263e97972dcc646b
+ms.openlocfilehash: 48f5fbd4b2ac217a3f840117595aa36fb3d7c10e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/06/2021
-ms.locfileid: "111547075"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394502"
 ---
 # <a name="managed-debugging-with-unity"></a>使用 Unity 的 Managed 調試
 
@@ -41,3 +41,7 @@ ms.locfileid: "111547075"
 10. 在清單中選取您的裝置，然後按一下 [確定] 以連接。
 
     ![裝置清單](images/il2cpp-debugging-machines.png)
+
+## <a name="see-also"></a>另請參閱 
+
+* [C # 調試](/visualstudio/get-started/csharp/tutorial-debugger)

@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: vr、lbe、以位置為基礎的娛樂、vr arcade、arcade、沉浸式、qr、qr 代碼、hololens2
-ms.openlocfilehash: 2617d5f811b9d437ece0d5ba2e7dbc909eb16988
-ms.sourcegitcommit: e51e18e443d73a74a9c0b86b3ca5748652cd1b24
+ms.openlocfilehash: 9d3a5d9696fbf875b2e6a890ed837efc055a9e6e
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/16/2021
-ms.locfileid: "103574944"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394332"
 ---
 # <a name="qr-code-tracking"></a>QR 代碼追蹤
 
@@ -28,11 +28,17 @@ HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每�
 </table>
 
 >[!NOTE]
->Windows 10 2004 版和更新版本支援在桌上型電腦上使用沉浸式 Windows Mixed Reality 耳機的 QR 代碼追蹤。 使用 MixedReality. QRCodeWatcher. IsSupported () API 來判斷目前的裝置是否支援此功能。
+>Windows 10 2004 版和更高版本支援在桌上型電腦上使用沉浸式 Windows Mixed Reality 耳機進行 QR 代碼追蹤。 使用 MixedReality. QRCodeWatcher. IsSupported () API 來判斷目前的裝置是否支援此功能。
 
 ## <a name="getting-the-qr-package"></a>取得 QR 套件
 
 您可以在 [這裡](https://nuget.org/Packages/Microsoft.MixedReality.QR)下載適用于 QR 代碼偵測的 NuGet 套件。
+
+## <a name="using-openxr"></a>使用 OpenXR
+
+使用 OpenXR 外掛程式時，請[ `SpatialGraphNodeId` 從 QR API](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference)抓取，並使用 `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API 來尋找 qr 代碼。
+
+如需參考，我們[在 GitHub 上有 QR 追蹤範例專案](https://github.com/yl-msft/QRTracking)，並有更詳細的[ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs)使用說明。
 
 ## <a name="detecting-qr-codes"></a>偵測 QR 代碼
 
@@ -200,7 +206,7 @@ QR 代碼偵測品質很容易受到不同的照明和背景影響。
 如果程式碼的背景為深色，如果您的偵測速率很低，請嘗試黑色的灰色程式碼。 如果背景相對較輕，則一般程式碼應該會正常運作。
 
 ### <a name="size-of-qr-codes"></a>QR 代碼的大小
-Windows Mixed Reality 裝置不會使用每個邊小於 5 cm 的 QR 代碼。
+Windows Mixed Reality 裝置無法處理每個邊小於 5 cm 的 QR 代碼。
 
 若為 5 cm 到 10-cm 長度之間的 QR 代碼，您必須非常接近偵測程式碼。 也需要較長的時間來偵測這種大小的代碼。 
 
@@ -218,7 +224,7 @@ Windows Mixed Reality 裝置不會使用每個邊小於 5 cm 的 QR 代碼。
 具有標誌的 QR 代碼尚未經過測試，且目前不受支援。
 
 ### <a name="managing-qr-code-data"></a>管理 QR 代碼資料
-Windows Mixed Reality 裝置會偵測驅動程式系統層級的 QR 代碼。 當裝置重新開機時，偵測到的 QR 代碼將會消失，並且會在下一次重新檢測為新物件。
+Windows Mixed Reality 裝置會在驅動程式中偵測系統層級的 QR 代碼。 當裝置重新開機時，偵測到的 QR 代碼將會消失，並且會在下一次重新檢測為新物件。
 
 建議您將應用程式設定為略過超過特定時間戳記的 QR 代碼。 目前，API 不支援清除 QR 代碼歷程記錄。
 

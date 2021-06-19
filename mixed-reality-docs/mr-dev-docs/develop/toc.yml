@@ -1,11 +1,15 @@
 - name: 混合實境開發簡介
-  href: development.md
+  items:
+    - name: 使用者入門
+      href: development.md
+    - name: 安裝工具
+      href: install-the-tools.md
+    - name: 選擇引擎
+      href: choosing-an-engine.md
 - name: Azure 混合實境雲端服務概觀
   href: mixed-reality-cloud-services.md
 - name: 範例和功能應用程式
   href: features-and-samples.md
-- name: 安裝工具
-  href: install-the-tools.md
 - name: 移植應用程式
   items:
     - name: 移植概觀
@@ -170,14 +174,8 @@
       items:
         - name: 選擇 Unity 版本和 XR 外掛程式
           href: unity/choosing-unity-version.md
-        - name: 使用舊版內建 XR 支援
-          href: unity/legacy-xr-support.md
-        - name: 使用 Windows XR 外掛程式
-          href: unity/windows-xr-plugin.md
-        - name: 使用 OpenXR 外掛程式
-          href: unity/openxr-getting-started.md
-        - name: OpenXR 外掛程式支援的功能
-          href: unity/openxr-supported-features.md
+        - name: 設定您的 XR 設定
+          href: unity/xr-project-setup.md
         - name: 混合實境功能工具
           items:
             - name: 歡迎使用「MR」功能工具
@@ -262,7 +260,7 @@
               href: unity/lunar-module.md
     - name: 偵錯和效能
       items:
-        - name: 使用 Unity IL2CPP 進行管理偵錯
+        - name: 使用 Unity 的 Managed 調試
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Unity 的建議設定
           href: unity/recommended-settings-for-unity.md
@@ -274,12 +272,18 @@
           href: unity/exporting-and-building-a-unity-visual-studio-solution.md
         - name: 使用 Unity 和 Visual Studio 的最佳作法
           href: unity/best-practices-for-working-with-unity-and-visual-studio.md
+    - name: 版本資訊
+      items:
+        - name: Mixed Reality OpenXR 外掛程式
+          href: unity/openxr-release-notes.md
 - name: Unreal
   items:
     - name: Unreal 開發概觀
       href: unreal/unreal-development-overview.md
     - name: MRTK 簡介
       href: unreal/unreal-mrtk-introduction.md
+    - name: 設定您的專案
+      href: unreal/unreal-project-setup.md
     - name: 在 Unreal 中升級專案
       href: unreal/unreal-porting.md
     - name: 快速入門
@@ -361,12 +365,10 @@
 - name: JavaScript
   items:
     - name: JavaScript 開發概觀
-      href: javascript/javascript-development-overview.md
-    - name: WebXR
       href: javascript/webxr-overview.md
     - name: 教學課程
       items:
-        - name: 使用 BabylonJS Hello World
+        - name: 使用 BabylonJS 的 VR Hello World
           items:
             - name: 1. 簡介
               href: javascript/tutorials/babylonjs-webxr-helloworld/introduction-01.md
@@ -374,9 +376,9 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. 與3D 物件互動
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
-- name: 原生
+- name: 自訂引擎
   items:
-    - name: 原生開發概觀
+    - name: 自訂引擎開發總覽
       href: native/directx-development-overview.md
     - name: OpenXR
       items:

@@ -7,23 +7,18 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 空間對應, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 7ecc111f6dfe2cc66091b0ed8fc959819c4da897
-ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
+ms.openlocfilehash: b6d8d44851813f340997c41b2f25104b51dee2fa
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111741956"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394292"
 ---
 # <a name="unity-development-for-hololens"></a>適用於 HoloLens 的 Unity 開發
 
 ![Unity 橫幅標誌](../images/unity_logo_banner.png)
 
-在 Unity 中建立 HoloLens 混合現實應用程式最快速的途徑，是使用混合現實工具組 (MRTK) 。 如果您是首次接觸 Unity，建議您先探索 Unity 學習平台上的入門級[教學課程](https://unity3d.com/learn/tutorials)，再繼續操作。 
-
-如果您是 Unity 中混合現實開發的新功能，而且想要使用 MRTK 啟動並執行專案，請查看我們的 Microsoft Learn 課程模組。 當您取得專案的停止回應之後，您隨時都可以回到這裡，以取得更多的中繼和高級主題！
-
-> [!div class="nextstepaction"]
-> [使用 MRTK 設定混合現實 Unity 專案](/learn/modules/mixed-reality-toolkit-project-unity)
+Unity 是市場上領先的即時開發平臺之一，其基礎執行時間程式碼是以 c + + 撰寫，而所有開發腳本都是在 c # 中完成。 無論您想要打造遊戲、電影和動畫電影藝術，甚至要在虛擬世界中轉譯架構或工程概念，Unity 都有可支援您的基礎結構。 當您準備好開始使用時，請前往下面的開發檢查點！
 
 > [!IMPORTANT]
 > 如果您想要將現有的 Unity 專案導入 HoloLens 2 中，請參閱我們的 **[移植指南](../porting-apps/porting-overview.md)** 。 我們針對使用 HTK、MRTK v1 或 SteamVR 的專案提供了指南。
@@ -146,7 +141,7 @@ ms.locfileid: "111741956"
 * Windows Mixed Reality
 * OpenXR
 * XRSDK
-* 傳統 XR 
+* 傳統 XR
 
 ## <a name="see-also"></a>另請參閱
 

@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: 50300ff08dd06c5fc250bc93979d537e10b38044
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: bef2e3288730fdc4fa79494d441941a0bcfede2a
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528716"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394452"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>適用於 VR 和 Windows Mixed Reality 的 Unity 開發
 
@@ -25,7 +25,7 @@ ms.locfileid: "107528716"
 
 ## <a name="development-checkpoints"></a>開發檢查點
 
-使用下列檢查點，將您的 Unity 遊戲和應用程式融入混合實境的世界中。 
+使用下列檢查點，將您的 Unity 遊戲和應用程式融入混合實境的世界中。
 
 ### <a name="1-getting-started"></a>1.開始使用
 
@@ -34,7 +34,7 @@ ms.locfileid: "107528716"
 |  Checkpoint  |  結果  |
 | --- | --- |
 | [安裝最新工具](../install-the-tools.md) | 下載並安裝最新的 Unity 套件，並設定您的混合實境專案 |
-| [針對 WMR 設定您的專案](windows-xr-plugin.md) | 了解如何建置可在全像攝影和 VR 顯示裝置上呈現數位內容的應用程式 |
+| [針對 VR 和 Windows Mixed Reality 耳機設定您的專案](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr) | 了解如何建置可在全像攝影和 VR 顯示裝置上呈現數位內容的應用程式 |
 
 > [!IMPORTANT]
 > 如需設定專案的詳細資訊，請參閱我們的 Unity 專案設定 [指南](choosing-unity-version.md) 。

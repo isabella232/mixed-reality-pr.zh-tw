@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 運動控制器、unity、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: ff1eedcc337edd2d7edfe8d961bb88bcb859cd23
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743481"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394512"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity 中的動作控制器
 
@@ -101,6 +101,23 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 </tr>
 </table> -->
 
+### <a name="openxr"></a>OpenXR
+
+若要瞭解 Unity 中混合現實互動的基本概念，請流覽 unity [Manual For UNITY XR 輸入](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html)。 這項 Unity 檔涵蓋從控制器專屬輸入到更一般化 **InputFeatureUsage** 的對應、如何識別和分類可用的 XR 輸入、如何從這些輸入讀取資料等等。
+
+Mixed Reality OpenXR 外掛程式提供額外的輸入互動設定檔，對應至標準 **InputFeatureUsage** s，如下所述：
+
+| InputFeatureUsage | HP 回音 (OpenXR)  | HoloLens (OpenXR)  |
+| ---- | ---- | ---- |
+| primary2DAxis | 操縱 杆 | |
+| primary2DAxisClick | 搖桿-按一下 | |
+| 觸發程序 (trigger) | 觸發程序  | |
+| 握 | 握 | 點擊或擠壓 |
+| primaryButton | [X/A]-按下 | 空中點選 |
+| secondaryButton | [Y/B]-按下 | |
+| gripButton | 握住-按 | |
+| triggerButton | 觸發程式-按下 | |
+| menuButton | 功能表 | |
 
 ## <a name="grip-pose-vs-pointing-pose"></a>底姿勢與指標姿勢
 
@@ -129,6 +146,27 @@ Windows Mixed Reality 支援各種外型規格中的動作控制器。 每個控
 系統提供的指標姿勢最適合用來在您 **呈現控制器模型本身** 時 raycast。 如果您要轉譯某個其他的虛擬物件來取代控制器，例如虛擬的機槍，您應該指向該虛擬物件最自然的光線，例如沿著應用程式定義的機槍模型的圓柱移動光線。 因為使用者可以看到虛擬物件，而不是實體控制器，所以指向虛擬物件可能會比使用您的應用程式更自然。
 
 目前，只有透過 Windows MR 專屬 API （ *sourceState. sourcePose. TryGetPosition/旋轉*）在 Unity 中提供指標姿勢，並傳入 *InteractionSourceNode* 作為引數。
+
+### <a name="openxr"></a>OpenXR 
+
+您可以透過 OpenXR 輸入互動存取兩組姿勢：
+
+* 抓手中呈現物件的底框
+* 目標是指向世界。
+
+有關此設計的詳細資訊，以及這兩個姿勢之間的差異，請參閱 [OpenXR 規格-輸入子路徑](https://www.khronos.org/registry/OpenXR/specs/1.0/html/xrspec.html#semantic-path-input)。
+
+InputFeatureUsages **DevicePosition**、 **DeviceRotation**、 **DeviceVelocity** 和 **DeviceAngularVelocity** 提供 **的姿勢全都代表 OpenXR 的** 把手姿勢。 與框姿勢相關的 InputFeatureUsages 是在 Unity 的 [CommonUsages](https://docs.unity3d.com/2020.2/Documentation/ScriptReference/XR.CommonUsages.html)中定義。
+
+InputFeatureUsages **PointerPosition**、 **PointerRotation**、 **PointerVelocity** 和 **PointerAngularVelocity** 提供的姿勢全都代表 OpenXR 的 **目標** 。 這些 InputFeatureUsages 不會定義在任何包含的 c # 檔案中，因此您必須定義您自己的 InputFeatureUsages，如下所示：
+
+``` cs
+public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFeatureUsage<Vector3>("PointerPosition");
+```
+
+## <a name="haptics"></a>Haptics
+
+如需在 Unity 的 XR 輸入系統中使用 haptics 的相關資訊，請參閱 unity [Manual For UNITY XR 輸入-haptics](https://docs.unity3d.com/2020.2/Documentation/Manual/xr_input.html#Haptics)中的檔。
 
 ## <a name="controller-tracking-state"></a>控制器追蹤狀態
 

@@ -7,16 +7,16 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
-ms.openlocfilehash: bb690cf4770924e9627f25bf0ff47472582535d3
-ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
+ms.openlocfilehash: 3d46b92dbf3182ca5a50a8e106d2b947e4f7120f
+ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111741930"
+ms.lasthandoff: 06/19/2021
+ms.locfileid: "112394282"
 ---
 # <a name="introducing-mrtk-for-unreal"></a>適用于 Unreal 的 MRTK 簡介
 
-![MRTK](../../design/images/MRTK_UX_Hero.png)
+![MRTK 橫幅影像](../../design/images/MRTK_UX_Hero.png)
 
 ## <a name="what-is-mixed-reality-toolkit-mrtk"></a>混合實境工具組 (MRTK) 是什麼？
 
@@ -35,6 +35,11 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 ### <a name="performant"></a>效能
 
 使用行動平臺時，我們已將效能考慮到 MRTK Unreal。 這是非常重要的，我們想要確保工具不會與您合作。
+
+## <a name="project-setup"></a>專案設定
+
+> [!div class="nextstepaction"]
+> [下載 Unreal Engine 和 MRTK](unreal-project-setup.md)
 
 ## <a name="see-also"></a>另請參閱
 
