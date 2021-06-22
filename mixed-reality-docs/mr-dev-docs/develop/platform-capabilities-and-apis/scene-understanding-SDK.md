@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: 2f6e0c9d0370caed2b2bc01399b9e4fc00836556
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644834"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449727"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -113,7 +113,7 @@ SceneObjects 可以有下列任何一項：
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>Description</th>
+<th>SceneObjectKind</th> <th>描述</th>
 </tr>
 <tr><td>背景</td><td>已知 SceneObject <b>不</b> 是其他可辨識的場景物件類型之一。 此類別不應與未知的情況混淆，因為背景已知不是牆壁/樓層/上限等 .。。雖然不明尚未分類。</b></td></tr>
 <tr><td>牆</td><td>實體牆。 牆會假設為 immovable 環境結構。</td></tr>
@@ -144,6 +144,9 @@ SceneQuad 是代表佔用3d 世界之2d 表面的 SceneComponent。 SceneQuads �
 SceneQuads 在2d 中定義界限矩形介面。 不過，SceneQuads 代表具有任意且可能複雜圖形 (例如環圈圖的圖形 ) 。若要代表四顆環的複雜圖形，您可以使用 GetSurfaceMask API 將介面的形狀轉譯至您提供的影像緩衝區。 如果具有四個的 SceneObject 也有網格，則網格三角形應該相當於這個呈現的影像，它們都代表介面的真實幾何，不論是2d 或3d 座標。
 
 ## <a name="scene-understanding-sdk-details-and-reference"></a>場景理解 SDK 詳細資料和參考
+
+> [!NOTE] 
+> 使用 MRTK 時，請注意，您將會與 MRTK 互動， [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 因此在大部分情況下可能會略過本節。 如需詳細資訊，請參閱 [MRTK 場景理解](/windows/mixed-reality/mrtk-unity/features/spatial-awareness/scene-understanding) 檔。
 
 下一節將協助您熟悉 SceneUnderstanding 的基本概念。 本節應提供您基本概念，此時您應該有足夠的內容可流覽範例應用程式，以瞭解如何使用 SceneUnderstanding 全面性地型。
 

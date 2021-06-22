@@ -1,22 +1,22 @@
 ---
-title: 'Android 和 iOS MRTK Configuration (ARFoundation) '
+title: 透過 AR Foundation 建立及部署至 Android 和 iOS
 description: 在 unity 中為 Android 和 iOS (ARFoundation) 設定 MRTK 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件、iOS、IOS、Android、AR Foundation
-ms.openlocfilehash: 9f621008db76e3f8e443545b795db442d7c17dda
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345131"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449737"
 ---
-# <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>如何設定 iOS 和 Android 的 MRTK [實驗]
+# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>透過 AR Foundation 建立及部署至 Android 和 iOS [實驗]
 
 ## <a name="install-required-packages"></a>安裝必要的套件
 
-1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0)或 [Unity 封裝管理員](../configuration/usingupm.md)下載並匯入 **MixedReality 的套件。**
+1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/)或 [Unity 封裝管理員](../configuration/usingupm.md)下載並匯入 **MixedReality 的套件。**
 
 1. 在 Unity 封裝管理員 (UPM) 中，安裝下列套件：
 
@@ -34,12 +34,12 @@ ms.locfileid: "110345131"
     | AR 基礎  <br/> 版本：2.1。8 |  AR 基礎  <br/> 版本：2.1。8 |
     | ARCore XR 外掛程式 <br/> 版本：2.1.11 | ARKit XR 外掛程式 <br/> 版本：2.1。9 |
 
-    **Unity 2020.1 (目前尚未正式支援，僅包含供資訊用途之用)**
+    **Unity 2020.3. x**
 
     | **Android** | **iOS** |
     | --- | --- |
-    | AR 基礎  <br/> 版本：3.1。3 |  AR 基礎  <br/> 版本：3.1。3 |
-    | ARCore XR 外掛程式 <br/> 版本：3.1。4 | ARKit XR 外掛程式 <br/> 版本：3.1。3 |
+    | AR 基礎  <br/> 版本：3.1。3 |  AR 基礎  <br/> 版本：4.0.12 |
+    | ARCore XR 外掛程式 <br/> 版本：3.1。4 | ARKit XR 外掛程式 <br/> 版本：4.1。7 |
 
 1. 藉由叫用功能表項目來更新 MRTK UnityAR 腳本定義： **混合現實 > 工具組 > 公用程式 > UnityAR > 更新腳本定義**
 

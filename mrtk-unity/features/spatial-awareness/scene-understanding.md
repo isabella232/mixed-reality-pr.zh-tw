@@ -5,12 +5,12 @@ author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: 1ed6f93216fc90e7c6332f2b9c40911d25d96d2a
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743553"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449747"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -69,7 +69,7 @@ ms.locfileid: "110743553"
 ::: moniker range="= mrtkunity-2021-05"
 
 > [!NOTE] 
-> 範例場景會 `There is no active AsyncCoroutineRunner when an action is posted.` 在特定情況下，根據初始化/執行緒執行順序來記錄警告。 如果您可以確認 `AsyncCoroutineRunner` 元件已附加至「示範控制器」 GameObject，且元件/GameObject 在場景中保持啟用/作用中 (預設案例) ，則可以放心忽略該警告。
+> 範例場景會 `There is no active AsyncCoroutineRunner when an action is posted.` 在特定情況下，根據初始化/執行緒執行順序來記錄警告。 如果您可以確認 `AsyncCoroutineRunner` 元件已附加至「示範控制器」 GameObject，且元件/GameObject 在場景中保持啟用/作用中 (預設案例) ，則可以放心忽略該警告。 **不過，在建立具有場景理解的新場景時，請務必在根目錄建立空白的 GameObject，並將 `AsyncCoroutineRunner` 腳本附加至該場景，否則場景理解可能無法正常運作。**
 ::: moniker-end
 
 #### <a name="configuring-the-observer-service"></a>設定觀察者服務

@@ -1,18 +1,18 @@
 ---
-title: Oculus 的追求 MRTK
+title: 建立與部署 Oculus 的追求
 description: 在 MRTK 中設定 Oculus 的相關檔
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Oculus 的追求、
-ms.openlocfilehash: 6b9c3a8f51388785f685714ef02be680bb98e14c
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Oculus 的追求
+ms.openlocfilehash: 96b4b5b8a68c3b61d54b6796ba01c9e2516ba959
+ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908396"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112449757"
 ---
-# <a name="building-and-deploying-mrtk-to-oculus-quest-using-the-xr-sdk-pipeline"></a>使用 XR SDK 管線來建立和部署 MRTK 至 Oculus 的尋找
+# <a name="building-and-deploying-to-oculus-quest-using-the-xr-sdk-pipeline"></a>使用 XR SDK 管線建立和部署 Oculus 的使用
 
 需要進行 [Oculus](https://www.oculus.com/quest/) 。
 
