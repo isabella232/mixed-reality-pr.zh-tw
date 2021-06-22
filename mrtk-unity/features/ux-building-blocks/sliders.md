@@ -1,16 +1,16 @@
 ---
 title: 滑桿
 description: 滑杆 MRTK 簡介
-author: CDiaz-MS
-ms.author: cadia
-ms.date: 01/12/2021
+author: RogPodge
+ms.author: roliu
+ms.date: 06/18/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、滑杆、
-ms.openlocfilehash: d0ef491c25383e3a192c3e76d6d4ae38ffa075ce
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: be19806e0202f6cb3ddcea1a80c2c40811aff4f2
+ms.sourcegitcommit: e9661d3bab061f9499134226ef3b87751ec56277
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689101"
+ms.lasthandoff: 06/22/2021
+ms.locfileid: "112426874"
 ---
 # <a name="sliders"></a>滑桿
 
@@ -32,6 +32,7 @@ ms.locfileid: "104689101"
 我們也建議使用下列階層
 
 - PinchSlider-包含 sliderComponent
+  - TouchCollider-碰撞，包含滑杆的整個可選取區域。 啟用 [貼齊至位置] 行為。
   - SliderThumb-包含可移動的拇指
   - TrackVisuals-包含曲目和任何其他視覺效果
   - OtherVisuals-包含任何其他視覺效果
@@ -60,7 +61,19 @@ ms.locfileid: "104689101"
 
 **Thumb 根目錄** 包含滑杆 thumb 的 gameobject。
 
+**貼齊至位置** 此滑杆是否貼齊滑杆上的指定位置
+
+**為可觸式** 此滑杆是否可透過觸控事件進行控制
+
+**Thumb 碰撞** 控制滑杆捲軸的碰撞程式
+
+**可觸式碰撞** 當貼齊至位置為 true 時，可以觸及或選取的滑杆區域。
+
 **滑杆值** 滑杆的值。
+
+**使用滑杆步驟的部門** 控制此滑杆是否會在步驟中或連續遞增。
+
+**滑杆步驟部門** 啟用 [使用滑杆步驟] 區域時，滑杆分割至的子分割數目。
 
 **追蹤視覺效果** Gameobject，其中包含沿著滑杆的所需追蹤視覺效果。
 
@@ -78,3 +91,15 @@ ms.locfileid: "104689101"
 具體而言，其本機位置會重設，而其本機旋轉會設定為符合滑杆軸的方向。
 未修改其規模。
 如果刻度具有方格物件集合元件，則版面配置和 CellWidth 或 CellHeight 會隨之更新，以符合滑杆軸。
+
+## <a name="example-slider-configurations"></a>範例滑杆設定
+
+具有貼齊位置連續滑杆的連續滑杆 ![](https://user-images.githubusercontent.com/39840334/122488212-d410a400-cf91-11eb-8d31-fc7584ddc465.gif)
+
+貼齊位置的步驟滑杆
+
+![步驟滑杆](https://user-images.githubusercontent.com/39840334/122488226-dc68df00-cf91-11eb-9459-89655bbb054d.gif)
+
+觸控滑杆
+
+![觸控滑杆](https://user-images.githubusercontent.com/39840334/122488221-d8d55800-cf91-11eb-91a1-bb12debe2797.gif)
