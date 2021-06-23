@@ -4,15 +4,15 @@ description: MRTK 2.7 版的版本資訊
 author: RogPodge
 ms.author: roliu
 ms.date: 06/16/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap、OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 7e4ddc4b97a6e580a7832ff2e86ee267246cce0d
-ms.sourcegitcommit: c9d52f9529cabeaf912fffa6efc6599a9041a929
+ms.openlocfilehash: d8fe446f99a4969e684bb4d2041c4ad4364c2eba
+ms.sourcegitcommit: 72ddda03b13abc02bcea951a371ab4e4ccee3147
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112305232"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112536771"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
 
@@ -35,14 +35,20 @@ ms.locfileid: "112305232"
 
 從 MRTK 2.7.1 開始，作者清單檔案包含在 Mixed Reality 工具組 Foundation 套件中。
 
+### <a name="integrated-openxr-project-setup-into-the-configurator-setup-flow"></a>整合式 OpenXR 專案設定至設定流程
+
+從 MRTK 2.7.1 開始，Mixed Reality OpenXR 外掛程式的使用者將會收到如何使用 MRTK 設定該外掛程式的指示。 有一個選項可讓使用者以 HoloLens 2 為目標，以自動套用建議的設定。
+
+![具有 OpenXR 安裝指示的設定程式視窗](images/configuratorMROpenXR.png)
+
 ### <a name="notable-bugfixes-and-changes"></a>值得注意的錯誤修正與變更
 
-- 已標示 XR SDK 管線[#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)支援的 Unity 操縱杆管理員
+- 已標示 XR SDK 管線 [#9954](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9954)所支援的 Unity 操縱杆管理員， [#9994](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9994)
 - 已新增檢查以互動偵測器程式碼，以防止 null 錯誤 [#9943](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9943)
 - 將 OpenXR 網狀提供者新增至脈衝著色器範例場景 [#9902](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9902)
 - 將手型物理配置檔案還原至範例場景 [#9915](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9915)
 - HandConstraint * 腳本的一些清除 [#9935](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9935)
-- 體驗設定設定檔現在可設定為 None [#9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
+- 修正會影響建立和複製設定檔的一些 bug [#9982](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9982)
 
 
 ## <a name="whats-new-in-270"></a>2.7.0 的新功能
