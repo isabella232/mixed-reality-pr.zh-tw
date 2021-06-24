@@ -5,14 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 81e7dcab7e0f349d05521f93d75bba6927761fd1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 5420f3f2d20d07585007a58f5cf70d8e2027efc6
+ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145091"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112588830"
 ---
 # <a name="input-simulation-service"></a>輸入模擬服務
+
+![MRTK 輸入模擬](../images/input-simulation/MRTK_InputSimulation_Hero.jpg)
+
+使用 MRTK 的輸入模擬，您可以在 Unity 編輯器中測試各種類型的互動，而不需要建立及部署到裝置。 這可讓您快速地在設計和開發程式中反復查看您的想法。 使用鍵盤和滑鼠組合來控制模擬的輸入。
 
 輸入模擬服務會模擬可能無法在 Unity 編輯器中使用的裝置和平臺行為。 範例包括：
 
@@ -22,14 +26,29 @@ ms.locfileid: "110145091"
 * HoloLens 2 眼追蹤
 * VR 裝置控制器
 
-使用者可以在執行時間使用傳統鍵盤和滑鼠組合來控制模擬的裝置。 這種方法可讓您在 Unity 編輯器中測試互動，而不需要先部署到裝置。
-
 > [!WARNING]
 > 使用 Unity 的 XR 全像 > 模擬模式 = 「在編輯器中模擬」時，這無法運作。 Unity 的編輯器內模擬將從 MRTK 的輸入模擬中取得控制權。 若要使用 MRTK 輸入模擬服務，您必須將 XR 全像模擬模式設定為模擬模式 = *"None"*
 
-## <a name="enabling-the-input-simulation-service"></a>啟用輸入模擬服務
+## <a name="how-to-use-mrtk-input-simulation"></a>如何使用 MRTK 輸入模擬 
 
-在 MRTK 隨附的設定檔中，預設會啟用輸入模擬。
+在 MRTK 隨附的設定檔中，預設會啟用輸入模擬。 您只需按一下 [ **播放** ] 按鈕，就可以執行具有輸入模擬支援的場景。
+
+* 按 **W、A、S、D、Q、E** 鍵以移動相機。
+* 按住滑鼠 **右鍵** ，並將滑鼠移至 [四處尋找]。
+* 若要啟動模擬的手，請按 **空格鍵 (右手)** 或 **左 Shift 鍵 (左邊)**
+* 若要讓模擬手保持在視野中，請按 **T** 或 **Y** 鍵
+* 若要旋轉模擬的手，請按住 **Ctrl 鍵** 並移動滑鼠
+
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4OYrm]
+
+## <a name="in-editor-input-simulation-cheat-sheet"></a>在編輯器中輸入模擬功能提要
+
+在 HandInteractionExamples 場景中按 **左 Ctrl + H** ，以顯示具有輸入模擬控制項的提要表。
+
+> ![MRTK 輸入模擬功能提要](../images/input-simulation/MRTK_InputSimulation_CheatSheet.png)
+
+
+## <a name="enabling-the-input-simulation-service"></a>啟用輸入模擬服務
 
 在輸入系統資料提供者設定下，可以使用下列設定輸入模擬服務。
 
@@ -38,31 +57,7 @@ ms.locfileid: "110145091"
 
 > [!NOTE]
 > 輸入模擬服務可用於其他平臺端點（例如獨立式），方法是變更 **支援的平臺 (s)** 屬性，以包含所需的目標。
-> ![輸入模擬支援的平臺](../images/input-simulation/InputSimulationSupportedPlatforms.gif)
-
-## <a name="input-simulation-tools-window"></a>輸入模擬工具視窗
-
-從 **混合現實** 工具組  >  **公用程式**  >  **輸入模擬** 功能表啟用輸入模擬工具視窗。 此視窗可讓您存取在播放模式期間的輸入模擬狀態。
-
-## <a name="viewport-buttons"></a>視口按鈕
-
-在 [指標] **預製專案** 下的輸入模擬設定檔中，可以指定用於控制基本放置之編輯器中按鈕的預製專案。 這是選擇性的公用程式，可以在 [ [輸入模擬工具] 視窗](#input-simulation-tools-window)中存取相同的功能。
-
-> [!NOTE]
-> 依預設會停用視口指標，因為它們目前有時可能會干擾 Unity UI 互動。 請參閱問題 [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106)。 若要啟用，請將 InputSimulationIndicators 預製專案新增至指標 **預製專案**。
-
-手圖示會顯示模擬手的狀態：
-
-* ![未追蹤的手圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) 手中沒有追蹤。 按一下以啟用手。
-* ![追蹤的手形圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "追蹤的手形圖示") 這會受到追蹤，但不是由使用者控制。 按一下以隱藏手。
-* ![控制的手圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "控制的手圖示") 手由使用者追蹤及控制。 按一下以隱藏手。
-* ![重設手形圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "重設手形圖示") 按一下可將手重設為預設位置。
-
-## <a name="in-editor-input-simulation-cheat-sheet"></a>在編輯器中輸入模擬功能提要
-
-在 HandInteractionExamples 場景中按左 Ctrl + H，以顯示具有輸入模擬控制項的提要表。
-
-![輸入模擬功能提要](https://user-images.githubusercontent.com/39840334/86066480-13637f00-ba27-11ea-8814-d222d548f684.gif)
+> <br/><img src="../images/input-simulation/InputSimulationSupportedPlatforms.gif" alt="Input Simulation Supported Platforms" width="550px">
 
 ## <a name="camera-control"></a>攝影機控制項
 
@@ -208,6 +203,25 @@ ms.locfileid: "110145091"
 ### <a name="eye-tracking"></a>眼球追蹤
 
 您可以藉由檢查 [輸入模擬設定檔](#enabling-the-input-simulation-service)中的 [**模擬眼睛位置**] 選項來啟用 [眼睛追蹤模擬](../input/eye-tracking/eye-tracking-basic-setup.md#simulating-eye-tracking-in-the-unity-editor)。 這不應該與 GGV 或移動控制器樣式互動一起使用 (因此，請確定 **預設控制器模擬模式** 已設定為 [ *已) ]* 。
+
+## <a name="input-simulation-tools-window"></a>輸入模擬工具視窗
+
+從 **混合現實** 工具組  >    >  **公用程式**  >  **輸入模擬** 功能表啟用輸入模擬工具視窗。 此視窗可讓您存取在播放模式期間的輸入模擬狀態。
+
+## <a name="viewport-buttons-optional"></a>選擇區按鈕 (選用) 
+
+在 [指標] **預製專案** 下的輸入模擬設定檔中，可以指定用於控制基本放置之編輯器中按鈕的預製專案。 這是選擇性的公用程式，可以在 [ [輸入模擬工具] 視窗](#input-simulation-tools-window)中存取相同的功能。
+
+> [!NOTE]
+> 依預設會停用視口指標，因為它們目前有時可能會干擾 Unity UI 互動。 請參閱問題 [#6106](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/6106)。 若要啟用，請將 InputSimulationIndicators 預製專案新增至指標 **預製專案**。
+
+手圖示會顯示模擬手的狀態：
+
+* ![未追蹤的手圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Untracked.png) 手中沒有追蹤。 按一下以啟用手。
+* ![追蹤的手形圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Tracked.png "追蹤的手形圖示") 這會受到追蹤，但不是由使用者控制。 按一下以隱藏手。
+* ![控制的手圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Controlled.png "控制的手圖示") 手由使用者追蹤及控制。 按一下以隱藏手。
+* ![重設手形圖示](../images/input-simulation/MRTK_InputSimulation_HandIndicator_Reset.png "重設手形圖示") 按一下可將手重設為預設位置。
+
 
 ## <a name="see-also"></a>另請參閱
 

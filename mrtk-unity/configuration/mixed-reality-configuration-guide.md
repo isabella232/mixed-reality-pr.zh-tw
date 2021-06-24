@@ -5,16 +5,14 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b714e01a0969b88a4ca7a3a5047bc5d61516e3f3
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: a8aca05b4a4bc154061d6f7594e5128ab91d5f0e
+ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345141"
+ms.lasthandoff: 06/24/2021
+ms.locfileid: "112588862"
 ---
 # <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
-
-![MRTK 標誌](../features/images/MRTK_Logo_Rev.png)
 
 「混合現實」工具組盡可能集中管理工具組所需的設定， (除了真正的「事物」 ) 。
 
@@ -193,7 +191,7 @@ MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸�
 
 | 軸條件約束 | 資料類型 | 描述 | 範例用法 |
 | :--- | :--- | :--- | :--- |
-| None | 無資料 | 用於空的動作或事件 | 事件觸發程式 |
+| 無 | 無資料 | 用於空的動作或事件 | 事件觸發程式 |
 | 原始 (保留)  | object | 保留供日後使用 | N/A |
 | Digital | bool | 布林值 on 或 off 型別資料 | 控制器按鈕 |
 | 單一軸 | FLOAT | 單一精確度資料值 | 範圍輸入，例如觸發程式 |
