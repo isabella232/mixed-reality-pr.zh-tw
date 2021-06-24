@@ -7,14 +7,21 @@ ms.date: 06/16/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap、OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: d8fe446f99a4969e684bb4d2041c4ad4364c2eba
-ms.sourcegitcommit: 72ddda03b13abc02bcea951a371ab4e4ccee3147
+ms.openlocfilehash: e257fd95d01eab249201a0f412842d20164e7e5c
+ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
 ms.lasthandoff: 06/23/2021
-ms.locfileid: "112536771"
+ms.locfileid: "112562478"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
+
+## <a name="whats-new-in-272"></a>2.7.2 的新功能
+
+### <a name="fixed-a-upm-package-dependency-issue"></a>已修正 UPM 套件相依性問題
+
+未正確設定相依性的 MRTK 2.7.1 UPM 套件有問題。 此問題造成 Mixed Reality 功能的工具無法正確匯入 MRTK 2.7.1 套件。 此問題現在已在2.7.2 中解決。 相較于2.7.1，此版本沒有變更程式碼。
+
 
 ## <a name="whats-new-in-271"></a>2.7.1 的新功能
 
@@ -105,7 +112,7 @@ ms.locfileid: "112536771"
 
 ### <a name="added-support-for-leap-motion-unity-modules-version-460-470-471-and-480"></a>已新增對4.6.0、4.7.0、4.7.1 和4.8.0 之 Leap 動作 Unity 模組的支援
 
-最新版本的 [Leap 動作 Unity 模組](https://developer.leapmotion.com/unity) 支援現在與 MRTK 2.7.0 相容。  如需詳細資訊，請參閱 [如何設定 MRTK 以進行 Leap 動作](../supported-devices/leap-motion-mrtk.md) 。
+最新版本的 [Leap 動作 Unity 模組](https://developer.leapmotion.com/unity) 支援現在與 MRTK 2.7.0 相容。 如需詳細資訊，請參閱 [如何設定 MRTK 以進行 Leap 動作](../supported-devices/leap-motion-mrtk.md) 。
 
 感謝您 @jackyangzzh 參與新的 LeapMotionOrientationExample 場景！
 
@@ -189,4 +196,4 @@ Unity 2020.3 上的 MRTK build 視窗有一個已知 [問題](https://github.com
 Please remove the CanvasRenderer component from the [TextMeshPro] GameObject as this component is no longer necessary.
 ```
 
-[TextMeshPro 版本 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3)中新增了 Canvas 轉譯器警告。  這些警告不會影響 MRTK 的範例場景，而且可以從主控台中清除。 如需詳細資訊，請參閱 [問題 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811) 。
+[TextMeshPro 版本 3.0.3](https://docs.unity3d.com/Packages/com.unity.textmeshpro@3.0/changelog/CHANGELOG.html#changes-3)中新增了 Canvas 轉譯器警告。 這些警告不會影響 MRTK 的範例場景，而且可以從主控台中清除。 如需詳細資訊，請參閱 [問題 9811](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9811) 。

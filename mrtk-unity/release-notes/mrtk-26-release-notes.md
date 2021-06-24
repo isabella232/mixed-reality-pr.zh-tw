@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4ac82f7e07135e840886fef810844ff00ef1ac1e
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: c172e5d071bba22626e9c35b2b4318f1ff779335
+ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647196"
+ms.lasthandoff: 06/23/2021
+ms.locfileid: "112562508"
 ---
 # <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Microsoft Mixed Reality 工具組2.6 版本資訊
 
@@ -40,6 +40,7 @@ ms.locfileid: "110647196"
 更新對話範例場景，以正確描述目前的對話案例。
 
 ## <a name="whats-new-in-260"></a>2.6.0 的新功能
+
 <iframe width="940" height="530" src="https://www.youtube.com/embed/qfONlUCSWdg" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
 <br>
 
@@ -66,7 +67,7 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 
 ![InteractiveElementAddCoreState](../features/images/interactive-element/InEditor/Gifs/InspectorHighlightEditor.gif)
 
-狀態視覺化是相依于互動式元素的動畫元件。  此元件會建立動畫剪輯、設定主要畫面格，並產生 Animator 狀態機器。 如需詳細資訊，請參閱 [狀態視覺化檔](../features/experimental/interactive-element.md#state-visualizer-experimental)
+狀態視覺化是相依于互動式元素的動畫元件。 此元件會建立動畫剪輯、設定主要畫面格，並產生 Animator 狀態機器。 如需詳細資訊，請參閱 [狀態視覺化檔](../features/experimental/interactive-element.md#state-visualizer-experimental)
 
 ![StateVisualizerColorChangeOnFocus](../features/images/interactive-element/InEditor/Gifs/FocusColorChange.gif)
 
@@ -74,7 +75,7 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 
 使用者現在可以使用「傳送」手勢，在所有平臺上四處移動其播放空間。 若要使用預設設定在 MR 裝置上傳送控制器，請使用操縱杆。 若要透過明確的手進行傳送，請與您的手朝外手勢，並將索引和捲動方塊朝外，以 curling 食指來完成傳送。 若要使用輸入模擬來傳送，請參閱更新的 [輸入模擬服務檔](../features/input-simulation/input-simulation-service.md)。
 
-  ![傳送手勢](../features/images/teleport/handteleport.gif)
+![傳送手勢](../features/images/teleport/handteleport.gif)
 
 ### <a name="scene-understanding-now-available-in-mrtk-as-an-experimental-spatial-awareness-observer"></a>場景理解現在可在 MRTK 中作為實驗空間感知觀察者
 
@@ -86,7 +87,7 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 > 這項功能需要場景理解套件，現在可透過「 [混合現實」功能工具](https://aka.ms/MRFeatureTool)取得。
 > 使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
 
-  ![場景理解](images/SceneUnderstanding.gif)
+![場景理解](images/SceneUnderstanding.gif)
 
 ### <a name="runtime-profile-switching-support"></a>執行時間設定檔切換支援
 
@@ -96,18 +97,19 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 有兩個新的解析器可供搭配主線 MRTK 使用。
 
-  ![方向性指標規劃求解](images/DirectionalIndicatorExampleScene.gif)
+![方向性指標規劃求解](images/DirectionalIndicatorExampleScene.gif)
 
 ### <a name="hand-coach-graduated-from-experimental"></a>從實驗性開始的手勢
 
 這項功能現在已準備好搭配主線 MRTK 使用。
-  ![手動指導範例](/windows/mixed-reality/design/images/handcoach/airtap.gif)
+
+![手動指導範例](/windows/mixed-reality/design/images/handcoach/airtap.gif)
 
 ### <a name="dialog-controls-graduated-from-experimental"></a>從實驗性分級的對話方塊控制項
 
 對話方塊控制項現在已準備好搭配主線 MRTK 使用。
 
-  ![對話方塊控制項](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
+![對話方塊控制項](https://user-images.githubusercontent.com/13754172/101927792-3326e200-3c18-11eb-88d3-44b4b50c7f7d.png)
 
 ### <a name="pulse-shader-graduated-from-experimental"></a>從實驗性分級的脈衝著色器
 
@@ -123,13 +125,13 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 已新增 HoloLens 2 的 [讀取模式](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) 支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上的投射圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
 
-  ![Windows Mixed Reality 閱讀模式](images/WMRReadingMode.gif)
+![Windows Mixed Reality 閱讀模式](images/WMRReadingMode.gif)
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>在 UWP 上支援3D 應用程式啟動器
 
 新增為 UWP 設定 [3d 應用程式啟動器](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) 的功能。 這項設定會在 [MRTK 組建] 視窗和 [MRTK] 專案設定的 [組建設定] 底下公開。 它會在 Unity 中的組建期間自動寫入至專案。
 
-  ![組建設定](images/ProjectBuildSettings.png)
+![組建設定](images/ProjectBuildSettings.png)
 
 ## <a name="breaking-changes"></a>重大變更
 
@@ -150,7 +152,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 ### <a name="openxr"></a>OpenXR
 
 目前有一個已知的全像是「全像」遠端和 OpenXR 的問題，也就是沒有一直可用的手接點。
-此外，眼睛追蹤範例場景目前不相容，不過眼睛追蹤 *的確* 可以運作。
+此外，眼睛追蹤範例場景目前不相容，不過眼睛追蹤 _的確_ 可以運作。
 
 ### <a name="some-mixed-reality-toolkit-standard-shader-features-require-the-foundation-package"></a>部分混合現實工具組標準著色器功能需要基礎封裝
 
@@ -189,7 +191,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="oculus-quest"></a>Oculus 的追求
 
-目前在 [以獨立平臺為目標時，使用 OCULUS XR 外掛程式](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/)的已知問題。  查看 Oculus bug 追蹤程式/論壇/版本資訊以取得更新。
+目前在 [以獨立平臺為目標時，使用 OCULUS XR 外掛程式](https://forum.unity.com/threads/unable-to-start-oculus-xr-plugin.913883/)的已知問題。 查看 Oculus bug 追蹤程式/論壇/版本資訊以取得更新。
 
 Bug 會以這一組3個錯誤表示：
 
