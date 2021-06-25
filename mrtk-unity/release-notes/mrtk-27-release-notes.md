@@ -7,12 +7,12 @@ ms.date: 06/16/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap、OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: e257fd95d01eab249201a0f412842d20164e7e5c
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: 8f6c68c067df735761dd9c162c71fd85f1f3e132
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562478"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906974"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
 
@@ -165,7 +165,7 @@ ms.locfileid: "112562478"
 - 減少視覺化手中的每個畫面格配置數目 [#9756](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9756)
 - 新增功能表項目以啟動 Unity 中的 MRTK 範例套件 (封裝管理員) ，讓您更輕鬆地匯入範例 [#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
 - 減少使用 Unity 2020.3 時的載入時間警告數目。
-- 已新增組建視窗功能檔： [造訪頁面](/windows/mixed-reality/mrtk-unity/features/tools/build-window)
+- 已新增組建視窗功能檔： [造訪頁面](../features/tools/build-window.md)
 
 ## <a name="known-issues"></a>已知問題
 

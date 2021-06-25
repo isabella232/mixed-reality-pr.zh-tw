@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR、藍圖、延伸模組、Khronos、BasicXRApp、DirectX、原生、原生應用程式、自訂引擎、中介軟體
-ms.openlocfilehash: 98b75f8b6059e6537d4cb4a10ecf8d057ad19a07
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 8374cda738cc5b257338728f7d777f546768e71b
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110711537"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906834"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -87,7 +87,7 @@ Microsoft 一直在使用 Unity 和複雜的遊戲，以確保混合現實的未
 
 ### <a name="openxr-in-unity"></a>Unity 中的 OpenXR
 
-現今 HoloLens 2、HoloLens (第一代) 和 Windows Mixed Reality 耳機的支援 Unity 開發路徑，是現有的 WinRT API 後端的 **unity 2019 LTS** 。  您可以 [使用 Unity](../unity/openxr-getting-started.md)跳到 OpenXR;如果您將目標設為 Unity 2019 應用程式中的新 HP 回音 G2 控制器，請參閱我們的 Hp 的「 [回音」輸入](../unity/unity-reverb-g2-controllers.md)檔。
+現今 HoloLens 2、HoloLens (第一代) 和 Windows Mixed Reality 耳機的支援 Unity 開發路徑，是現有的 WinRT API 後端的 **unity 2019 LTS** 。  您可以 [使用 Unity](../unity/xr-project-setup.md)跳到 OpenXR;如果您將目標設為 Unity 2019 應用程式中的新 HP 回音 G2 控制器，請參閱我們的 Hp 的「 [回音」輸入](../unity/unity-reverb-g2-controllers.md)檔。
 
 從 **unity 2020 LTS** 開始，unity 提供了支援 HoloLens 2 和 Windows Mixed Reality 耳機的 [OpenXR 後端](https://forum.unity.com/threads/unitys-plans-for-openxr.993225/) 。  這包括對 OpenXR 延伸模組的支援，這些擴充 [功能可讓 HoloLens 2 和 Windows Mixed Reality 耳機的完整功能](#roadmap)，包括手上/眼睛追蹤、空間錨點和 HP 等號 G2 控制器。  MRTK-Unity 支援從 [MRTK 2.7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)的 OpenXR。  如需有關 HoloLens 2 的 Unity 2020 LTS 支援目前狀態的詳細資訊，請參閱 [選擇 Unity 版本](../unity/choosing-unity-version.md)。
 

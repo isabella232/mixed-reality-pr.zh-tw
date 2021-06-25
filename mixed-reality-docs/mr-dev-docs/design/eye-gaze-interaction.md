@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、互動
-ms.openlocfilehash: 207f8d0f179f722a2e4dd6d6e2bdd9cbf75b2250
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 3067f5533dbe70d4decb6b5cf94a3f1c5029115a
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196573"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906864"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 上的眼睛架構互動
 
@@ -123,13 +123,13 @@ HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLen
   
 <br>
 
-此頁面提供您良好的總覽，讓您開始瞭解混合現實中的輸入。 若要開始進行開發，請查看有關 [Unity 中眼睛](https://aka.ms/mrtk-eyes) 的資訊，以及 [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)。
+此頁面提供您良好的總覽，讓您開始瞭解混合現實中的輸入。 若要開始進行開發，請查看有關 [Unity 中眼睛](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) 的資訊，以及 [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)。
 
 
 ## <a name="see-also"></a>另請參閱
 * [舒適度](comfort.md)
 * [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)
-* [Unity 中的眼睛 (混合現實工具組) ](https://aka.ms/mrtk-eyes)
+* [Unity 中的眼睛 (混合現實工具組) ](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [HoloLens 2 的眼球追蹤](eye-tracking.md)
 * [目光和行動](gaze-and-commit.md)
 * [目光和停駐](gaze-and-dwell.md)

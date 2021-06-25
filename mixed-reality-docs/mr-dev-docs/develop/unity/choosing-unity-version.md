@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/18/2021
 ms.topic: article
 keywords: mixedrealitytoolkit、mixedrealitytoolkit-unity、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機、unity
-ms.openlocfilehash: 452692b1be98459cc242833149b1cfd91f0f4d4a
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: f37dbdccf175a5cea9a647f0c14b90682b19dfb3
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394408"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906852"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>選擇 Unity 版本和 XR 外掛程式
 
@@ -41,7 +41,7 @@ Microsoft 目前針對 HoloLens 2 和 Windows Mixed Reality 開發建議的 Unit
 若要開始使用 Unity 2019.4 LTS 中的舊版內建 XR，請按一下這裡：
 
 > [!div class="nextstepaction"]
-> [設定舊版內建 XR](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=legacy)
+> [設定舊版內建 XR](./xr-project-setup.md?tabs=legacy)
 
 > [!NOTE]
 > Unity 已淘汰自 Unity 2019 起的舊版內建 XR 支援。  雖然 Unity 2019 提供新的 XR 外掛程式架構，但 Microsoft 目前不建議在 Unity 2019 中使用該路徑，因為 Azure 空間錨點與 AR Foundation 2 不相容。  在 Unity 2020 中，XR 外掛程式架構內支援 Azure 空間錨點。
@@ -61,7 +61,7 @@ Mixed Reality OpenXR 外掛程式完全支援 AR Foundation 4.0，提供 ARPlane
 如果您選擇在目前的 Unity 2020 中開始新的專案，請務必在推出您的應用程式之前，先追蹤更新 Unity 組建和 URP 套件的後續幾周。  這可確保您的使用者體驗適當的全息圖穩定性。
 
 > [!div class="nextstepaction"]
-> [使用 OpenXR 外掛程式](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr)
+> [使用 OpenXR 外掛程式](./xr-project-setup.md?tabs=openxr)
 
 ## <a name="unity-20211"></a>Unity 2021。1
 

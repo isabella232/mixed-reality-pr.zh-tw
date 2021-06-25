@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: 4dac059f72dd043802286081a54137c392c1e912
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 6bcd64a0ecc6e5c92966569d0675703afde5cbd5
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110111"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906844"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -74,7 +74,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 ## <a name="available-eye-tracking-data"></a>可用的眼睛追蹤資料
 
 在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的 [眼睛追蹤 API](/uwp/api/windows.perception.people.eyespose) 所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_。
-如需有關如何存取眼睛追蹤資料的詳細資訊，請參閱我們的開發人員指南，以瞭解如何在您的 [DirectX](../develop/native/gaze-in-directx.md) 和 [Unity 中](https://aka.ms/mrtk-eyes)使用眼睛。
+如需有關如何存取眼睛追蹤資料的詳細資訊，請參閱我們的開發人員指南，以瞭解如何在您的 [DirectX](../develop/native/gaze-in-directx.md) 和 [Unity 中](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)使用眼睛。
 
 預測的眼睛大約是在實際目標 (的視覺角度1.5 度以內，請參閱下圖) 。 由於預期會有些許的 imprecisions，因此開發人員應該規劃這項下限值周圍的一些邊界 (例如，2.0-3.0 度可能會導致) 更熟悉的體驗。 我們將在下方討論如何處理小型目標的選取。 為了讓眼球追蹤精準運作，每個使用者都必須接受眼球追蹤使用者校正。 
 
@@ -169,7 +169,7 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 
 <br>
 
-此頁面希望您有大致的瞭解，讓您開始瞭解 HoloLens 2 的眼睛追蹤和眼睛輸入的角色。 若要開始進行開發，請查看有關眼睛的資訊，以瞭解如何與全像 [影像互動](eye-gaze-interaction.md)、 [在 Unity 中的眼睛](https://aka.ms/mrtk-eyes) ，以及 [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)。
+此頁面希望您有大致的瞭解，讓您開始瞭解 HoloLens 2 的眼睛追蹤和眼睛輸入的角色。 若要開始進行開發，請查看有關眼睛的資訊，以瞭解如何與全像 [影像互動](eye-gaze-interaction.md)、 [在 Unity 中的眼睛](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main) ，以及 [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -177,6 +177,6 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 * [舒適度](comfort.md)
 * [眼部目光導向的互動](eye-gaze-interaction.md)
 * [DirectX 中的眼睛](../develop/native/gaze-in-directx.md)
-* [Unity 中的眼睛 (混合現實工具組) ](https://aka.ms/mrtk-eyes)
+* [Unity 中的眼睛 (混合現實工具組) ](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)
 * [目光和行動](gaze-and-commit.md)
 * [語音輸入](../out-of-scope/voice-design.md)

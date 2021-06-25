@@ -7,12 +7,12 @@ ms.date: 6/7/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 範例, MRTK, 研究模式, HoloLens 2, qr 代碼, WebRTC, 混合實境擷取, 全像攝影遠端處理, UX 工具
 ms.localizationpriority: high
-ms.openlocfilehash: 5738c26366b3c1aafd86b20dc70a4d078fbffb1f
-ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
+ms.openlocfilehash: 78a9e343fde4a6cbc23268f0be353577498d67b6
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111741940"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906894"
 ---
 # <a name="samples-and-feature-apps"></a>範例和功能應用程式
 
@@ -36,7 +36,7 @@ ms.locfileid: "111741940"
 
 | 參考文章 | 範例 |
 | --- | --- |
-| [使用 OpenXR 外掛程式](unity/openxr-getting-started.md) | [混合現實 OpenXR 與 Unity 範例](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
+| [使用 OpenXR 外掛程式](./unity/xr-project-setup.md) | [混合現實 OpenXR 與 Unity 範例](https://github.com/microsoft/OpenXR-Unity-MixedReality-Samples) |
 | N/A | [OpenXR MRTK Base Unity 專案](https://github.com/microsoft/UnityOpenXRMRTKBase) |
 
 ### <a name="research-mode"></a>研究模式

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 空間感知
 ms.localizationpriority: high
-ms.openlocfilehash: 676d5c1b96a8b216f9da094c21b546d178a85999
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: dc30997bbb43b29bf2495aa98be392af6885f6b8
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110711626"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112907004"
 ---
 # <a name="3-configuring-the-mrtk-profiles"></a>3.設定 MRTK 設定檔
 
@@ -104,7 +104,7 @@ ms.locfileid: "110711626"
 > [!NOTE]
 > 雖然空間對應網格看不到，但仍存在且正常運作。 例如，空間對應網格後方的任何全像投影 (實體牆後方的全像投影等) 將不會顯示。
 
-您方才已了解如何修改 MRTK 設定檔中的設定。 如您所見，為了自訂 MRTK 設定，您必須先建立預設設定檔的複本。 由於預設設定檔無法編輯，因此當您想要還原為預設設定時，一律可以參考這些設定。 若要深入了解 MRTK 設定檔及其架構，您可以參閱 [MRTK 文件入口網站](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity)中的 [MRTK 設定檔設定指南](https://docs.microsoft.com/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide)。
+您方才已了解如何修改 MRTK 設定檔中的設定。 如您所見，為了自訂 MRTK 設定，您必須先建立預設設定檔的複本。 由於預設設定檔無法編輯，因此當您想要還原為預設設定時，一律可以參考這些設定。 若要深入了解 MRTK 設定檔及其架構，您可以參閱 [MRTK 文件入口網站](/windows/mixed-reality/mrtk-unity)中的 [MRTK 設定檔設定指南](/windows/mixed-reality/mrtk-unity/configuration/mixed-reality-configuration-guide)。
 
 ## <a name="congratulations"></a>恭喜！
 

@@ -7,12 +7,12 @@ ms.date: 12/11/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unity, 混合實境, 開發, 開始使用, 新專案, 移植, 功能, 相機, 模擬, 模擬, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語音輸入, 定位相機, 模擬器, Azure, 教學課程
-ms.openlocfilehash: bef2e3288730fdc4fa79494d441941a0bcfede2a
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 074f42fd077d888523c2cf0a7da5bcafcfadb0f0
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394452"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906964"
 ---
 # <a name="unity-development-for-vr-and-windows-mixed-reality"></a>適用於 VR 和 Windows Mixed Reality 的 Unity 開發
 
@@ -34,7 +34,7 @@ ms.locfileid: "112394452"
 |  Checkpoint  |  結果  |
 | --- | --- |
 | [安裝最新工具](../install-the-tools.md) | 下載並安裝最新的 Unity 套件，並設定您的混合實境專案 |
-| [針對 VR 和 Windows Mixed Reality 耳機設定您的專案](/windows/mixed-reality/develop/unity/xr-project-setup?tabs=openxr) | 了解如何建置可在全像攝影和 VR 顯示裝置上呈現數位內容的應用程式 |
+| [針對 VR 和 Windows Mixed Reality 耳機設定您的專案](./xr-project-setup.md?tabs=openxr) | 了解如何建置可在全像攝影和 VR 顯示裝置上呈現數位內容的應用程式 |
 
 > [!IMPORTANT]
 > 如需設定專案的詳細資訊，請參閱我們的 Unity 專案設定 [指南](choosing-unity-version.md) 。

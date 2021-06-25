@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: bf0a97547aa482e5c206916faea2b2de41d28a7b
-ms.sourcegitcommit: 65f58055c831d58a3d38fb333f09b323ee2ac9b7
+ms.openlocfilehash: 4339349bd6b9d2dabf9fcbdbb276e2a7265a7f23
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/14/2021
-ms.locfileid: "112064143"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906987"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -51,7 +51,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 ## <a name="getting-started-with-mrtk"></a>開始使用 MRTK
 
-如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您在裝置或 [模擬器](https://docs.microsoft.com/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)上安裝和探索 MRTK 範例中樞範例應用程式。 
+如果您不熟悉 Unity 中的 MRTK 或混合現實開發，建議您在裝置或 [模擬器](/windows/mixed-reality/develop/platform-capabilities-and-apis/using-the-hololens-emulator)上安裝和探索 MRTK 範例中樞範例應用程式。 
 
 > [!div class="nextstepaction"]
 > [下載 MRTK 範例中樞應用程式](running-examples-hub.md)

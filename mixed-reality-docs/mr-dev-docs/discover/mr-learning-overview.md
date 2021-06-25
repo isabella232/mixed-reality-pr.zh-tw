@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: da0506c38975bf5b5aa7a4e5aed8385dd697aa91
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: e21f6245be5a47797c2b58fd8f57c4c6179b1751
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743574"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112906874"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 
@@ -47,7 +47,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 無論您是新手或經驗豐富的專業人員，我們在 Unity 中進行混合實境開發的實際操作方法，都能協助您更快、更安心地以自己的步調達到目標。
 
-### <a name="build-mixed-reality-digital-twins-with-azure-digital-twins-and-unity"></a>[使用 Azure Digital Twins 和 Unity 打造混合實境數位對應項](https://docs.microsoft.com/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
+### <a name="build-mixed-reality-digital-twins-with-azure-digital-twins-and-unity"></a>[使用 Azure Digital Twins 和 Unity 打造混合實境數位對應項](/learn/paths/build-mixed-reality-azure-digital-twins-unity/)
 
 瞭解如何使用 Azure Digital Twins 和 Unity (即時 3D 平台) 來建立混合實境 HoloLens 2 應用程式。
 
