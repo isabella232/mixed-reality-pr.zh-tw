@@ -5,7 +5,7 @@
 - name: 了解 Azure 混合實境雲端服務
   href: ../develop/mixed-reality-cloud-services.md
 - name: 開始使用 Unity 中的 OpenXR
-  href: ../develop/unity/openxr-getting-started.md
+  href: ../develop/unity/xr-project-setup.md
 - name: 使用全新的 HP Reverb G2 控制器
   items:
     - name: Unity

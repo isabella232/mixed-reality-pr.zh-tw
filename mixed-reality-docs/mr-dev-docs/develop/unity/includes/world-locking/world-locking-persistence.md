@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 96da41f28533c227fb106d8842907747f34098ec
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
+ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110349734"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112908112"
 ---
 # <a name="world-locking-tools-recommended"></a>[ (建議) 的世界鎖定工具 ](#tab/wlt)
 
@@ -99,7 +99,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.TryGetAnchorStoreAsync();
 ```
 
-若要查看保存/unpersisting 錨點的完整範例，請查看 [混合現實 OpenXR 外掛程式範例場景](../../openxr-getting-started.md#unity-sample-projects-for-openxr-and-hololens-2)中的錨點 > 錨點範例 GameObject 和 AnchorsSample .cs 腳本：
+若要查看保存/unpersisting 錨點的完整範例，請查看 [混合現實 OpenXR 外掛程式範例場景](../../xr-project-setup.md#unity-sample-projects-for-openxr-and-hololens-2)中的錨點 > 錨點範例 GameObject 和 AnchorsSample .cs 腳本：
 
 ![在 Unity 編輯器中開啟之 [階層] 面板的螢幕擷取畫面，其中已醒目提示錨點範例](../../images/openxr-features-img-04.png)
 
