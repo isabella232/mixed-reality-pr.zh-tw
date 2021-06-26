@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: 30d0e9295bd58eceb784eeeda8d548bafba8a756
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
+ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392305"
+ms.lasthandoff: 06/25/2021
+ms.locfileid: "112919809"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 
@@ -49,8 +49,9 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 1. [將您的 HoloLens 連線到 Wi-Fi](/hololens/hololens-network)。
 2. 尋找裝置的 IP 位址，可行方式如下：
-   * 移至 [設定] > [網路和網際網路] > [Wi-Fi] > [進階選項]。
-   * 移至 [設定] > [網路和網際網路]，然後選取 [硬體屬性]。
+  * 移至 [設定] > [網路和網際網路] > [Wi-Fi] > [進階選項]。
+  * 移至 [設定] > [網路和網際網路]，然後選取 [硬體屬性]。
+  * 使用「我的 IP 位址是什麼？」 語音命令。
 
 ![HoloLens 2 設定](images/using-windows-portal-img-02.jpg)
 
