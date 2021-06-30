@@ -1,6 +1,6 @@
 - name: 從 HTK 升級
   href: htk-to-mrtk-porting-guide.md
-- name: MRTK 和 Managed Code 抽出
+- name: MRTK 和 managed code 抽出
   href: mrtk-and-managed-code-stripping.md
 - name: 從較早的版本更新
   href: updating.md
