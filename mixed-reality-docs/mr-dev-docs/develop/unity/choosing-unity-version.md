@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 06/24/2021
 ms.topic: article
 keywords: mixedrealitytoolkit、mixedrealitytoolkit-unity、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機、unity
-ms.openlocfilehash: 646a0ec3b3b332b038509cba39caa085c1590c1a
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: 11f930f014ff579db1f8845d52b7a2d65dd85d6b
+ms.sourcegitcommit: 4ea9ba1ca1cde426b016111c4176a4b0a9c17553
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112921420"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113080695"
 ---
 # <a name="choosing-a-unity-version-and-xr-plugin"></a>選擇 Unity 版本和 XR 外掛程式
 
@@ -25,12 +25,9 @@ Microsoft 目前針對 HoloLens 2 和 Windows Mixed Reality 開發建議的 Unit
 > Unity 2020 不支援以 HoloLens (第1代) 為目標。 **[Unity 2019 LTS](#unity-20194-lts)** 中仍支援這些耳機，具有舊版內建 XR，可在 UNITY 2019 LTS 的完整生命週期內透過中2022。
 >
 > [!NOTE]
-> 某些封裝尚未與 Unity 2020 LTS 中的混合現實專案相容：
-> 
-> * 通用轉譯管線 (URP) 10.5.0 或較舊版本在 HoloLens 2 裝置上有已知的效能問題。 _(在下一個 URP 版本中修正)_
-> * Azure 遠端轉譯尚未隨附支援 Unity 2020 的更新版本。
+> Azure 遠端轉譯尚未隨附支援 Unity 2020 的更新版本。
 >
-> 如果您的 Unity 專案使用通用轉譯管線或 Azure 遠端轉譯，建議您將專案升級至 Unity 2020，直到有可用的更新套件為止。
+> 如果您的 Unity 專案使用 Azure 遠端轉譯，建議您將專案升級至 Unity 2020，直到有可用的更新套件為止。
 
 安裝和管理 Unity 的最佳方式是透過 <a href="https://unity3d.com/get-unity/download" target="_blank">Unity 中樞</a>。 安裝之後，請開啟 Unity Hub：
 
