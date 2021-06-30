@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、ElasticsSystem、
-ms.openlocfilehash: 01a4c4a337593252e0955c03e883e35e1329fc45
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 1f90864ee6d3b6756b863de600ade8423a44cacc
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145183"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121236"
 ---
 # <a name="elastic-system-experimental"></a>彈性系統 (實驗性) 
 

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 36717493107b129a7200dd3f912bcbdc3337b9a1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144489"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121246"
 ---
 # <a name="configuring-the-boundary-visualization"></a>設定界限視覺效果
 
@@ -36,7 +36,7 @@ ms.locfileid: "110144489"
 
 指出建立 floor 平面時應該使用的材質。
 
-**縮放**
+**調整**
 
 表示要建立之樓層平面的大小（以量值為單位）。 預設小數位數為3計量 x 3 計量方塊。
 

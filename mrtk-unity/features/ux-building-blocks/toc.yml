@@ -1,4 +1,4 @@
-- name: 應用程式行
+- name: 應用程式列
   href: app-bar.md
 - name: 週框方塊
   href: bounding-box.md
@@ -14,9 +14,9 @@
   href: dwell.md
 - name: Fingertip 視覺效果
   href: fingertip-visualization.md
-- name: 手指導
+- name: 手勢指導
   href: hand-coach.md
-- name: 手形功能表
+- name: 手部功能表
   href: hand-menu.md
 - name: 互動
   href: interactable.md

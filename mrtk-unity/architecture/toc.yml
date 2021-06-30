@@ -8,7 +8,7 @@
       href: terminology.md
     - name: 核心系統
       href: core-system.md
-    - name: 控制器指標和焦點
+    - name: 控制器、指標和焦點
       href: controllers-pointers-and-focus.md
 - name: 系統、延伸模組服務和資料提供者
   href: systems-extensions-providers.md

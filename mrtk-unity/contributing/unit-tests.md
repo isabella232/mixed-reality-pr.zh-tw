@@ -1,16 +1,16 @@
 ---
 title: 單元測試
-description: '>--run-unittests 以檢查 MRTK 的可靠性」。'
+description: 檢查 MRTK 可靠性的單元測試。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: 76d246634cf190787fcfd78c849a0bd6da3a2135
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144718"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121346"
 ---
 # <a name="writing-and-running-tests-in-mrtk"></a>在 MRTK 中撰寫和執行測試
 

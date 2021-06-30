@@ -1,16 +1,16 @@
 ---
-title: 界限系統開始使用
+title: 界限系統總覽
 description: MRTK 中界限系統的登陸頁面
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 2858b770fb49a44d1e2d704e8d3a81affe74d272
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144738"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121356"
 ---
 # <a name="boundary-system"></a>界限系統
 
@@ -18,7 +18,7 @@ ms.locfileid: "110144738"
 
 許多虛擬實境平臺會提供自動顯示，例如，當使用者或其控制器接近界限時，在虛擬世界上重迭的白色輪廓。 混合現實工具組的界限系統會擴充這項功能，讓您能夠顯示追蹤區域的大綱、地面平面，以及可用來提供其他資訊給使用者的其他功能。
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 新增界限的支援需要混合現實工具組的兩個主要元件：界限系統和使用界限設定的虛擬實境平臺。
 

@@ -1,16 +1,16 @@
 ---
-title: 撰寫指引
+title: 程式碼撰寫指導方針
 description: 參與 MRTK 時要遵循的編碼準則和慣例。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、'
-ms.openlocfilehash: 8887e248bd550bdd7a59f19c16df1ec3647ceff7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145244"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121436"
 ---
 # <a name="coding-guidelines"></a>程式碼撰寫指導方針
 
@@ -687,7 +687,7 @@ public class MyClass
 | `WINDOWS_UWP` | True | True | False |
 | `UNITY_WSA && !UNITY_EDITOR` | True | True | False |
 | `ENABLE_WINMD_SUPPORT` | True | True | False |
-| `NETFX_CORE` | False | True | 否 |
+| `NETFX_CORE` | False | True | False |
 
 ### <a name="prefer-datetimeutcnow-over-datetimenow"></a>偏好 UtcNow 超過 DateTime。現在
 

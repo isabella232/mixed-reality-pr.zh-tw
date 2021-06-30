@@ -1,16 +1,16 @@
 ---
 title: 詞彙
-description: MRTK 中的不同輸入系統。
+description: MRTK 中的不同輸入系統詞彙。
 author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、輸入、
-ms.openlocfilehash: d06e37185b44796d2a95645f78c735e849bab7b4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 33f423fba286e9e85e6d0bedac82bff0b7aae81f
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701854"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121456"
 ---
 # <a name="input-system"></a>輸入系統
 
@@ -35,7 +35,7 @@ ms.locfileid: "104701854"
 
     請注意，控制器可以同時與許多不同的指標相關聯。 為了確保這不會 devolve 混亂，有一個指標中繼程式可控制哪些指標可供使用 (例如，當偵測到接近互動時，中繼程式將會停用目前的互動指標) 。
 
-- **重點**
+- **焦點**
 
     指標事件會傳送至 **焦點** 的物件。 焦點選取專案將依指標類型而有所不同;手光線指標會使用 raycasts，而指標會使用 spherecasts。 物件必須執行 IMixedRealityFocusHandler 以取得焦點。 您可以全域註冊物件以接收未篩選的指標事件，但不建議使用此方法。
 

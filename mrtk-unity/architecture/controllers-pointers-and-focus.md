@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、指標、控制器
-ms.openlocfilehash: 0d0e31a84de37b2caabfb073e3ccb7b7df982cab
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: b3e4438c1318abbc60606bcbca42854edae28167
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550748"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121616"
 ---
 # <a name="controllers-pointers-and-focus"></a>控制器、指標和焦點
 

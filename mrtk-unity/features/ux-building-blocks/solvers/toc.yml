@@ -1,4 +1,4 @@
-- name: 解析器總覽
+- name: 規劃求解總覽
   href: solver.md
 - name: 點一下以放置
   href: tap-to-place.md

@@ -8,7 +8,7 @@
   href: gaze.md
 - name: 軌跡
   href: gestures.md
-- name: 手動追蹤
+- name: 手勢追蹤
   href: hand-tracking.md
 - name: 如何新增近乎互動
   href: how-to-add-near-interactivity.md

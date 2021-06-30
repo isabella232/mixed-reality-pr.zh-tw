@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5f48503c4d28316cad49fbdf8bc163399ca9f7ad
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 713cb5a0965d713c7073004059218ab2ab37201d
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143495"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121546"
 ---
 # <a name="breaking-changes"></a>重大變更
 

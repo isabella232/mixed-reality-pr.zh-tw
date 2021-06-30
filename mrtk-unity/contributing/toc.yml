@@ -2,7 +2,7 @@
   href: authors.md
 - name: 參與總覽
   href: contributing.md
-- name: 撰寫指引
+- name: 程式碼撰寫指導方針
   href: coding-guidelines.md
 - name: 撰寫和執行測試
   href: unit-tests.md

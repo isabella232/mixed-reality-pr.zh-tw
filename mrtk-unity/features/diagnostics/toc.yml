@@ -1,6 +1,6 @@
 - name: 設定診斷
   href: configuring-diagnostics.md
-- name: 診斷系統開始使用
+- name: 診斷系統總覽
   href: diagnostics-system-getting-started.md
-- name: 使用 Visual Profiler
+- name: 使用 visual profiler
   href: using-visual-profiler.md

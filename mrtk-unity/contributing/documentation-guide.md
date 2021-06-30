@@ -1,16 +1,16 @@
 ---
-title: 檔指南
+title: 文件指南
 description: MRTK 的檔指導方針和標準。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: cc5572e65540fa40cb1b8db56afbdd0986c467b9
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144792"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121386"
 ---
 # <a name="documentation-guidelines"></a>檔指導方針
 

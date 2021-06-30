@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 27247a6a6bf8cbe89417a794217da34fcf5e5e34
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a44e5f32cda2803091e27ae1a2c30a1976385a2f
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104701894"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121606"
 ---
 # <a name="framework-and-runtime"></a>架構和執行時間
 

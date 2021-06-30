@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、攝影機、
-ms.openlocfilehash: 1dc5328f2a6390246918063b6564837f150d28d8
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: e3b7caacaa9baa67fd81f6d32f3fd8c9f123e66d
+ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144477"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113121286"
 ---
 # <a name="camera-system"></a>攝影機系統
 
