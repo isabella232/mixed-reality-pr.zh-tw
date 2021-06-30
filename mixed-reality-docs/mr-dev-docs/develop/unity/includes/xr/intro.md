@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: d39f6032eaf9a59ca52a6e7ae9b8e4d227175738
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 550ad2b9fa92894cdf4dad86def4cd3a9b450fb1
+ms.sourcegitcommit: e9a1510984d00dc40ffd39239349e500f5737a0d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906937"
+ms.lasthandoff: 06/30/2021
+ms.locfileid: "113103892"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 
@@ -23,8 +23,8 @@ Mixed Reality OpenXR 外掛程式完全支援 AR Foundation 4.0，提供 ARPlane
 
 * 最新的 Unity OpenXR 外掛程式， (建議1.2 或更新版本) 
 * 最新的混合現實 OpenXR 外掛程式， (建議1.0.0 版或更新版本) 
-* **(選擇性)** 最新的 MRTK， (建議2.7 版或更新版本) 
-* **(選擇性)** 最新的通用轉譯管線套件， (我們建議10.5.1 版或更新版本) 
+* 如果您的專案使用 MRTK，建議使用版本2.7.2 或更新版本
+* 如果您的專案使用通用轉譯管線 (URP) 封裝，我們建議使用10.5.1 或更新版本
 
 <!-- ![Screenshot of the open xr unity basic sample running on a HoloLens](../../images/openxr-example.png) -->
 
