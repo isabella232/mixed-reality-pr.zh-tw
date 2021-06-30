@@ -6,12 +6,12 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 部署、unity、visual studio、HoloLens、HoloLens 2、沉浸式耳機、最佳作法、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP、Visual Studio Tools Windows SDK
-ms.openlocfilehash: 6940382af605c28686cec862cf2d9b6cb8411387
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: edd79b95d02cfeb1da4effc485fc57078e3d24a3
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583464"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042259"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>使用 Unity 和 Visual Studio 的最佳作法
 
@@ -19,7 +19,7 @@ ms.locfileid: "98583464"
 
 ## <a name="improving-iteration-time"></a>改善反復專案時間
 
-Unity 2018 中的 .NET 腳本後端支援已被取代，並已在 Unity 2019 + 中移除。 因此建議您改用 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)。 不過，您可能會遇到從 Unity 到 Visual Studio 的較長組建時間。 為了改進以加快反覆運算速度，請設定您的環境以獲得最佳編譯結果：
+Unity 中的 .NET 腳本後端支援已在 Unity 2018 中淘汰並從 Unity 2019 + 移除，因此建議您改用 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)。 不過，您可能會遇到從 Unity 到 Visual Studio 的較長組建時間。 為了改進以加快反覆運算速度，請設定您的環境以獲得最佳編譯結果：
 
 1) 每次在相同的目錄中建立您的專案，並在該處重複使用預先建立的檔案，藉以使用增量建立
 2) 針對您的專案停用反惡意程式碼軟體掃描 & 組建資料夾

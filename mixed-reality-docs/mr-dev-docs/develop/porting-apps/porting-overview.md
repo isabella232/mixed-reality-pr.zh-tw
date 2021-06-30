@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 移植、unity、中介軟體、引擎、UWP、Win32
-ms.openlocfilehash: 9b056bd81a725fea23c1e7f3bfcd9844680086c6
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 167559d69cc4e65f971a8970b56e41e6e3ca8b22
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600497"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042269"
 ---
 # <a name="porting-overview"></a>移植概觀
 
@@ -20,8 +20,7 @@ ms.locfileid: "110600497"
 首先，根據我們的 [Unity](#unity) 和 [Unreal](#unreal) 建議來設定您的專案目標，然後遵循一或多個移植案例：
 
 - [HoloLens (第1代) 至 HoloLens 2](#hololens-1st-gen-unity-apps-to-hololens-2)
-- [Windows Mixed Reality 頭戴式裝置](#windows-mixed-reality-headsets)
-- [SteamVR 應用程式](#steamvr-applications)
+- [沉浸式 VR 頭戴裝置](#immersive-vr-headsets)
 - [2D UWP 應用程式](#2d-universal-windows-applications)
 
 ## <a name="recommended-project-targets"></a>建議的專案目標
@@ -30,18 +29,11 @@ ms.locfileid: "110600497"
 
 ### <a name="unity"></a>Unity
 
-我們目前有混合現實的 Unity 開發建議，是 **使用舊版 XR 封裝的 unity 2019 LTS**。 如果您的專案使用 Mixed Reality 工具組，請再次檢查您是否使用最新版本，也就是目前的 **MRTK-Unity 2.5**。
-
-> [!CAUTION]
-> 雖然此版本的 Unity 可使用 XR SDK，但 Azure 空間錨點目前不與此設定相容。 這項建議將會更新為適用于 Unity 的 Azure 空間錨點套件未來版本。
-> 
-> * 如果您不需要 Azure 空間錨點，您可以 [設定您的 Unity 專案以進行 XR](https://docs.unity3d.com/Manual/configuring-project-for-xr.html) ，並 [開始使用 MRTK 和 XR SDK](/windows/mixed-reality/mrtk-unity/configuration/getting-started-with-mrtk-and-xrsdk)。
-> 
-> * 如果您目前在專案中使用 XR SDK，而且想要使用 Azure 空間錨點，請將 XR SDK 卸載，然後重新安裝舊版 XR 套件來還原您的專案設定。
+如需建議的 Unity 和 MRTK 版本的最新指引，請參閱 [選擇 Unity 版本](../unity/choosing-unity-version.md) 頁面。
 
 ### <a name="unreal"></a>Unreal
 
-我們目前對混合現實的 Unreal 開發建議是 **Unreal Engine 4.26**。 如果您的專案使用「混合現實工具組 UX 工具」，請確定您使用的是最新版本，其目前為 **UXT 0.10**。
+如需建議的 Unreal 和 MRTK 版本的最新指引，請參閱 [設定 Unreal 專案](../unreal/unreal-project-setup.md) 頁面。
 
 ## <a name="porting-scenarios"></a>移植案例
 
@@ -49,13 +41,11 @@ ms.locfileid: "110600497"
 
 如果您有現有的 HoloLens (第1代) Unity 應用程式，而您想要將其移植到 HoloLens 2，請依照 [HoloLens 移植文章](./porting-hl1-hl2.md)中的指示進行。
 
-### <a name="windows-mixed-reality-headsets"></a>Windows Mixed Reality 頭戴式裝置
+### <a name="immersive-vr-headsets"></a>沉浸式 VR 頭戴裝置
 
-如果您已建立其他裝置的內容（例如 Oculus Rift 或 HP 回送 G2），則您必須將廠商專屬的 VR Sdk 和可能的輸入對應 Api 重定目標。 您可以在「 [沉浸式應用程式移植指南](porting-guides.md)」中找到 Unity 和 Unreal 移植案例的相關資訊。
+如果您已建立其他 VR 裝置的內容，則必須將任何廠商專屬的 VR Sdk 和可能的輸入對應 Api 重定目標。 您可以在「 [沉浸式應用程式移植指南](porting-guides.md)」中找到 Unity 和 Unreal 移植案例的相關資訊。
 
-### <a name="steamvr-applications"></a>SteamVR 應用程式
-
-如需任何您想要更新 Windows Mixed Reality 耳機的 SteamVR 體驗，請參閱我們的 [SteamVR 更新指南](updating-your-steamvr-application-for-windows-mixed-reality.md)。
+如需您想要更新 Windows Mixed Reality 耳機的 SteamVR 體驗，請參閱我們的 [SteamVR 更新指南](updating-your-steamvr-application-for-windows-mixed-reality.md)。
 
 ### <a name="2d-universal-windows-applications"></a>2D 通用 Windows 應用程式
 

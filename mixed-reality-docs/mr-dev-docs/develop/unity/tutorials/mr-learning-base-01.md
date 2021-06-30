@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: 0af75341aa1c90f38ac679dd1ff2db6ab2796839
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 69a6bf0ed4d4efc946eebc1941838bfff7d7343c
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403339"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042279"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
 
@@ -43,7 +43,7 @@ ms.locfileid: "111403339"
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 或更新版本
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
 
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 與 UNITY 2020 LTS (目前已 2020.3) 或 UNITY 2019 LTS (目前已安裝 2019.4. x) ，且已新增通用 Windows 平臺組建支援模組
+* 已安裝 unity 2020.3 LTS 或 Unity 2019.4 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a>，並已新增通用 Windows 平臺組建支援模組
 
 安裝 Unity 時，請務必檢查「 **平臺**」底下的下列元件。
 

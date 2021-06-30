@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, MRTK, MRTK 第 2 版, HoloLens 2, unity, 移植, HoloLens (第 1 代), 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 移轉, 最佳做法, ARM
-ms.openlocfilehash: 7789e9207f3c4fec7a0bbd6a824a4ae48a5741cd
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 512bd3e841d40ffd606d59ee4bb4d955306cc2d0
+ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600537"
+ms.lasthandoff: 06/29/2021
+ms.locfileid: "113042249"
 ---
 # <a name="porting-hololens-1st-gen-apps-to-hololens-2"></a>將 HoloLens (第1代) 應用程式移植到 HoloLens 2
 
@@ -36,26 +36,13 @@ ms.locfileid: "110600537"
 
 ## <a name="migrate-project-to-the-latest-version-of-unity"></a>將專案遷移至最新版的 Unity
 
-如果您使用 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)，則 [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) 會是最佳的長期支援途徑，因為 Unity 或 MRTK 沒有重大變更。 評估任何目前存在於您專案中的[外掛程式相依性](https://docs.unity3d.com/Manual/Plugins.html)，並決定是否可針對 ARM64 建置這些 DLL。 針對具有硬性 ARM64 相依外掛程式的專案，您可能需要繼續針對 ARM 建置您的應用程式。
-
-<!-- MRTK v2 always guarantees support for Unity 2018 LTS, but does not necessarily guarantee support for every iteration of Unity 2019.x.
-
-To help clarify additional differences between [Unity 2018 LTS](https://unity3d.com/unity/qa/lts-releases) and Unity 2019.x, the following table outlines the trade-offs between the two versions. The primary difference between the two is the ability to compile for ARM64 in Unity 2019.
-
-| Unity 2018 LTS | Unity 2019.x |
-|----------|-------------------|
-| ARM32 build support | ARM32 and ARM64 build support |
-| Stable LTS build release | Beta stability |
-| [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *deprecated* | [.NET Scripting back-end](https://docs.unity3d.com/2018.4/Documentation/Manual/windowsstore-dotnet.html) *removed* |
-| UNET Networking *deprecated* | UNET Networking *deprecated* |
-
--->
+如果您使用的是 [MRTK v2](https://github.com/microsoft/MixedRealityToolkit-Unity)，建議您在將專案升級至 [Unity 2020.3 LTS](../unity/choosing-unity-version.md)之前，先更新至 MRTK 2.7。 MRTK 2.7 支援 Unity 2018、2019和2020，可讓您在升級 Unity 之前，確保您的專案已準備好 Unity 2020。 評估任何目前存在於您專案中的[外掛程式相依性](https://docs.unity3d.com/Manual/Plugins.html)，並決定是否可針對 ARM64 建置這些 DLL。 針對具有硬性 ARM64 相依外掛程式的專案，您可能需要繼續針對 ARM 建置您的應用程式。
 
 ## <a name="update-sceneproject-settings-in-unity"></a>更新 Unity 中的場景/專案設定
 
-在更新至 [Unity 2019 LTS](https://unity3d.com/unity/qa/lts-releases) 之後，建議您更新 Unity 中的特殊設定，以便在裝置上獲得最佳結果。 [Unity 的建議設定](../unity/Recommended-settings-for-Unity.md)底下會詳述這些設定。
+更新至 [unity 2020.3 LTS](https://unity3d.com/unity/qa/lts-releases)之後，建議您更新 unity 中的特定設定，以在裝置上獲得最佳結果。 [Unity 的建議設定](../unity/Recommended-settings-for-Unity.md)底下會詳述這些設定。
 
-再次重申，[.NET 指令碼處理後端](https://docs.unity3d.com/Manual/windowsstore-dotnet.html)在 Unity 2018 中即將過時，且在 Unity 2019 中「已移除」。 開發人員應積極考慮將其專案轉換至 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)。
+再次重申， [.net 腳本後端](https://docs.unity3d.com/Manual/windowsstore-dotnet.html) 會在 unity 2018 中淘汰，並從 unity 2019 **移除** 。 開發人員應積極考慮將其專案轉換至 [IL2CPP](https://docs.unity3d.com/Manual/IL2CPP.html)。
 
 > [!NOTE]
 > IL2CPP 指令碼處理後端會讓從 Unity 到 Visual Studio 的建置時間變長，開發人員應設定其開發人員機器，以[最佳化 IL2CPP 建置時間](https://docs.unity3d.com/Manual/IL2CPP-OptimizingBuildTimes.html)。
@@ -65,7 +52,7 @@ To help clarify additional differences between [Unity 2018 LTS](https://unity3d.
 
 ## <a name="compile-dependenciesplugins-for-arm-processor"></a>針對 ARM 處理器編譯相依性/外掛程式
 
-HoloLens (第 1 代) 會在 x86 處理器上執行應用程式，HoloLens 2 則會使用 ARM 處理器。 現有的 HoloLens 應用程式必須移植過去才能支援 ARM。 如前所述，Unity 2018 LTS 支援編譯 ARM32 的應用程式，而 Unity 2019.x 則支援編譯 ARM32 和 ARM64 的應用程式。 偏好開發 ARM64 應用程式，因為效能差異極大。 但要這麼做，所有的[外掛程式相依性](https://docs.unity3d.com/Manual/Plugins.html)也必須針對 ARM64 來建置。
+HoloLens (第 1 代) 會在 x86 處理器上執行應用程式，HoloLens 2 則會使用 ARM 處理器。 現有的 HoloLens 應用程式必須移植過去才能支援 ARM。 如先前所述，Unity 2018 LTS 支援編譯 ARM32 應用程式，而 Unity 2019 和更新版本支援編譯 ARM32 和 ARM64 應用程式。 偏好開發 ARM64 應用程式，因為效能差異極大。 但要這麼做，所有的[外掛程式相依性](https://docs.unity3d.com/Manual/Plugins.html)也必須針對 ARM64 來建置。
 
 請檢閱您的應用程式中所有的 DLL 相依性。 建議移除專案不再需要的相依性。 至於其餘的必要外掛程式，則請將個別的 ARM32 或 ARM64 二進位檔案嵌入至您的 Unity 專案中。
 
