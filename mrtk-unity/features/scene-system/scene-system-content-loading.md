@@ -5,20 +5,20 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f310b3687a6773404c7a998a3764163daf159857
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145139"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177580"
 ---
-# <a name="content-scene-loading"></a><span data-ttu-id="09bb0-104">內容場景載入</span><span class="sxs-lookup"><span data-stu-id="09bb0-104">Content scene loading</span></span>
+# <a name="scene-system-content-loading"></a><span data-ttu-id="4b3db-104">場景系統內容載入</span><span class="sxs-lookup"><span data-stu-id="4b3db-104">Scene system content loading</span></span>
 
-<span data-ttu-id="09bb0-105">所有內容載入作業都是非同步，而且依預設，所有內容載入都是附加的。</span><span class="sxs-lookup"><span data-stu-id="09bb0-105">All content load operations are asynchronous, and by default all content loading is additive.</span></span> <span data-ttu-id="09bb0-106">管理員和燈光場景永遠不會受到內容載入作業的影響。</span><span class="sxs-lookup"><span data-stu-id="09bb0-106">Manager and lighting scenes are never affected by content loading operations.</span></span> <span data-ttu-id="09bb0-107">如需監視載入進度和場景啟用的相關資訊，請參閱 [監視內容載入](scene-system-load-progress.md)。</span><span class="sxs-lookup"><span data-stu-id="09bb0-107">For information about monitoring load progress and scene activation, see [Monitoring Content Loading](scene-system-load-progress.md).</span></span>
+<span data-ttu-id="4b3db-105">所有內容載入作業都是非同步，而且依預設，所有內容載入都是附加的。</span><span class="sxs-lookup"><span data-stu-id="4b3db-105">All content load operations are asynchronous, and by default all content loading is additive.</span></span> <span data-ttu-id="4b3db-106">管理員和燈光場景永遠不會受到內容載入作業的影響。</span><span class="sxs-lookup"><span data-stu-id="4b3db-106">Manager and lighting scenes are never affected by content loading operations.</span></span> <span data-ttu-id="4b3db-107">如需監視載入進度和場景啟用的相關資訊，請參閱 [監視內容載入](scene-system-load-progress.md)。</span><span class="sxs-lookup"><span data-stu-id="4b3db-107">For information about monitoring load progress and scene activation, see [Monitoring Content Loading](scene-system-load-progress.md).</span></span>
 
-## <a name="loading-content"></a><span data-ttu-id="09bb0-108">正在載入內容</span><span class="sxs-lookup"><span data-stu-id="09bb0-108">Loading content</span></span>
+## <a name="loading-content"></a><span data-ttu-id="4b3db-108">正在載入內容</span><span class="sxs-lookup"><span data-stu-id="4b3db-108">Loading content</span></span>
 
-<span data-ttu-id="09bb0-109">若要載入內容場景，請使用 `LoadContent` 方法：</span><span class="sxs-lookup"><span data-stu-id="09bb0-109">To load content scenes use the `LoadContent` method:</span></span>
+<span data-ttu-id="4b3db-109">若要載入內容場景，請使用 `LoadContent` 方法：</span><span class="sxs-lookup"><span data-stu-id="4b3db-109">To load content scenes use the `LoadContent` method:</span></span>
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -30,9 +30,9 @@ await sceneSystem.LoadContent("MyContentScene");
 await sceneSystem.LoadContent(new string[] { "MyContentScene1", "MyContentScene2", "MyContentScene3" });
 ```
 
-## <a name="single-scene-loading"></a><span data-ttu-id="09bb0-110">單一場景載入</span><span class="sxs-lookup"><span data-stu-id="09bb0-110">Single scene loading</span></span>
+## <a name="single-scene-loading"></a><span data-ttu-id="4b3db-110">單一場景載入</span><span class="sxs-lookup"><span data-stu-id="4b3db-110">Single scene loading</span></span>
 
-<span data-ttu-id="09bb0-111">您可以透過選擇性引數來達到單一場景負載的對等專案 `mode` 。</span><span class="sxs-lookup"><span data-stu-id="09bb0-111">The equivalent of a single scene load can be achieved via the optional `mode` argument.</span></span> <span data-ttu-id="09bb0-112">`LoadSceneMode.Single` 會先卸載所有載入的內容幕後，再繼續載入。</span><span class="sxs-lookup"><span data-stu-id="09bb0-112">`LoadSceneMode.Single` will first unload all loaded content scenes before proceeding with the load.</span></span>
+<span data-ttu-id="4b3db-111">您可以透過選擇性引數來達到單一場景負載的對等專案 `mode` 。</span><span class="sxs-lookup"><span data-stu-id="4b3db-111">The equivalent of a single scene load can be achieved via the optional `mode` argument.</span></span> <span data-ttu-id="4b3db-112">`LoadSceneMode.Single` 會先卸載所有載入的內容幕後，再繼續載入。</span><span class="sxs-lookup"><span data-stu-id="4b3db-112">`LoadSceneMode.Single` will first unload all loaded content scenes before proceeding with the load.</span></span>
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -47,13 +47,13 @@ await sceneSystem.LoadContent("ContentScene3");
 await sceneSystem.LoadContent("SingleContentScene", LoadSceneMode.Single);
 ```
 
-## <a name="next--previous-scene-loading"></a><span data-ttu-id="09bb0-113">下一個/先前的場景載入</span><span class="sxs-lookup"><span data-stu-id="09bb0-113">Next / previous scene loading</span></span>
+## <a name="next--previous-scene-loading"></a><span data-ttu-id="4b3db-113">下一個/先前的場景載入</span><span class="sxs-lookup"><span data-stu-id="4b3db-113">Next / previous scene loading</span></span>
 
-<span data-ttu-id="09bb0-114">您可以依組建索引的順序來單一載入內容。</span><span class="sxs-lookup"><span data-stu-id="09bb0-114">Content can be singly loaded in order of build index.</span></span> <span data-ttu-id="09bb0-115">這適合用來展示應用程式，讓使用者逐一流覽一組示範場景。</span><span class="sxs-lookup"><span data-stu-id="09bb0-115">This is useful for showcase applications that take users through a set of demonstration scenes one-by-one.</span></span>
+<span data-ttu-id="4b3db-114">您可以依組建索引的順序來單一載入內容。</span><span class="sxs-lookup"><span data-stu-id="4b3db-114">Content can be singly loaded in order of build index.</span></span> <span data-ttu-id="4b3db-115">這適合用來展示應用程式，讓使用者逐一流覽一組示範場景。</span><span class="sxs-lookup"><span data-stu-id="4b3db-115">This is useful for showcase applications that take users through a set of demonstration scenes one-by-one.</span></span>
 
 ![Player 設定中組建的目前場景](../images/scene-system/MRTK_SceneSystemBuildSettings.png)
 
-<span data-ttu-id="09bb0-117">請注意，下一個/上一個內容載入預設會使用 LoadSceneMode，以確保會卸載先前的內容。</span><span class="sxs-lookup"><span data-stu-id="09bb0-117">Note that next / prev content loading uses LoadSceneMode.Single by default to ensure that the previous content is unloaded.</span></span>
+<span data-ttu-id="4b3db-117">請注意，下一個/上一個內容載入預設會使用 LoadSceneMode，以確保會卸載先前的內容。</span><span class="sxs-lookup"><span data-stu-id="4b3db-117">Note that next / prev content loading uses LoadSceneMode.Single by default to ensure that the previous content is unloaded.</span></span>
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -69,9 +69,9 @@ if (prevSceneRequested && sceneSystem.PrevContentExists)
 }
 ```
 
-<span data-ttu-id="09bb0-118">`PrevContentExists` 如果至少有一個內容場景的組建索引較小，但目前載入的組建索引較小，則會傳回 true。</span><span class="sxs-lookup"><span data-stu-id="09bb0-118">`PrevContentExists` will return true if there is at least one content scene that has a lower build index than the lowest build index currently loaded.</span></span> <span data-ttu-id="09bb0-119">`NextContentExists` 如果至少有一個內容場景具有比目前載入的最高組建索引更高的組建索引，則會傳回 true。</span><span class="sxs-lookup"><span data-stu-id="09bb0-119">`NextContentExists` will return true if there is at least one content scene that has a higher build index than the highest build index currently loaded.</span></span>
+<span data-ttu-id="4b3db-118">`PrevContentExists` 如果至少有一個內容場景的組建索引較小，但目前載入的組建索引較小，則會傳回 true。</span><span class="sxs-lookup"><span data-stu-id="4b3db-118">`PrevContentExists` will return true if there is at least one content scene that has a lower build index than the lowest build index currently loaded.</span></span> <span data-ttu-id="4b3db-119">`NextContentExists` 如果至少有一個內容場景具有比目前載入的最高組建索引更高的組建索引，則會傳回 true。</span><span class="sxs-lookup"><span data-stu-id="4b3db-119">`NextContentExists` will return true if there is at least one content scene that has a higher build index than the highest build index currently loaded.</span></span>
 
-<span data-ttu-id="09bb0-120">如果 `wrap` 引數為 true，內容將會迴圈回到第一個/最後一個組建索引。</span><span class="sxs-lookup"><span data-stu-id="09bb0-120">If the `wrap` argument is true, content will loop back to the first / last build index.</span></span> <span data-ttu-id="09bb0-121">這樣就不需要檢查下一個/先前的內容：</span><span class="sxs-lookup"><span data-stu-id="09bb0-121">This removes the need to check for next / previous content:</span></span>
+<span data-ttu-id="4b3db-120">如果 `wrap` 引數為 true，內容將會迴圈回到第一個/最後一個組建索引。</span><span class="sxs-lookup"><span data-stu-id="4b3db-120">If the `wrap` argument is true, content will loop back to the first / last build index.</span></span> <span data-ttu-id="4b3db-121">這樣就不需要檢查下一個/先前的內容：</span><span class="sxs-lookup"><span data-stu-id="4b3db-121">This removes the need to check for next / previous content:</span></span>
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -87,11 +87,11 @@ if (prevSceneRequested)
 }
 ```
 
-## <a name="loading-by-tag"></a><span data-ttu-id="09bb0-122">依標記載入</span><span class="sxs-lookup"><span data-stu-id="09bb0-122">Loading by tag</span></span>
+## <a name="loading-by-tag"></a><span data-ttu-id="4b3db-122">依標記載入</span><span class="sxs-lookup"><span data-stu-id="4b3db-122">Loading by tag</span></span>
 
 ![依標記載入內容場景](../images/scene-system/MRTK_SceneSystemLoadingByTag.png)
 
-<span data-ttu-id="09bb0-124">有時候，在群組中載入內容場景是很理想的做法。</span><span class="sxs-lookup"><span data-stu-id="09bb0-124">It's sometimes desirable to load content scenes in groups.</span></span> <span data-ttu-id="09bb0-125">例如，可能會由多個場景組成體驗的階段，這些都必須同時載入，才能運作。</span><span class="sxs-lookup"><span data-stu-id="09bb0-125">Eg, a stage of an experience may be composed of multiple scenes, all of which must be loaded simultaneously to function.</span></span> <span data-ttu-id="09bb0-126">為了方便此作業，您可以標記場景，然後將其載入，或使用該標記將其卸載。</span><span class="sxs-lookup"><span data-stu-id="09bb0-126">To facilitate this, you can tag your scenes and then load them or unload them with that tag.</span></span>
+<span data-ttu-id="4b3db-124">有時候，在群組中載入內容場景是很理想的做法。</span><span class="sxs-lookup"><span data-stu-id="4b3db-124">It's sometimes desirable to load content scenes in groups.</span></span> <span data-ttu-id="4b3db-125">例如，可能會由多個場景組成體驗的階段，這些都必須同時載入，才能運作。</span><span class="sxs-lookup"><span data-stu-id="4b3db-125">Eg, a stage of an experience may be composed of multiple scenes, all of which must be loaded simultaneously to function.</span></span> <span data-ttu-id="4b3db-126">為了方便此作業，您可以標記場景，然後將其載入，或使用該標記將其卸載。</span><span class="sxs-lookup"><span data-stu-id="4b3db-126">To facilitate this, you can tag your scenes and then load them or unload them with that tag.</span></span>
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -104,7 +104,7 @@ await UnloadContentByTag("Stage1");
 await LoadContentByTag("Stage2);
 ```
 
-<span data-ttu-id="09bb0-127">如果您想要在不修改腳本的情況下，從體驗中併入/移除專案，則依標記載入也會很有用。</span><span class="sxs-lookup"><span data-stu-id="09bb0-127">Loading by tag can also be useful if artists want to incorporate / remove elements from an experience without having to modify scripts.</span></span> <span data-ttu-id="09bb0-128">例如，使用下列兩組標記來執行此腳本會產生不同的結果：</span><span class="sxs-lookup"><span data-stu-id="09bb0-128">For instance, running this script with the following two sets of tags produces different results:</span></span>
+<span data-ttu-id="4b3db-127">如果您想要在不修改腳本的情況下，從體驗中併入/移除專案，則依標記載入也會很有用。</span><span class="sxs-lookup"><span data-stu-id="4b3db-127">Loading by tag can also be useful if artists want to incorporate / remove elements from an experience without having to modify scripts.</span></span> <span data-ttu-id="4b3db-128">例如，使用下列兩組標記來執行此腳本會產生不同的結果：</span><span class="sxs-lookup"><span data-stu-id="4b3db-128">For instance, running this script with the following two sets of tags produces different results:</span></span>
 
 ```c#
 IMixedRealitySceneSystem sceneSystem = MixedRealityToolkit.Instance.GetService<IMixedRealitySceneSystem>();
@@ -114,32 +114,32 @@ await LoadContentByTag("Structures");
 await LoadContentByTag("Vegetation");
 ```
 
-### <a name="testing-content"></a><span data-ttu-id="09bb0-129">測試內容</span><span class="sxs-lookup"><span data-stu-id="09bb0-129">Testing content</span></span>
+### <a name="testing-content"></a><span data-ttu-id="4b3db-129">測試內容</span><span class="sxs-lookup"><span data-stu-id="4b3db-129">Testing content</span></span>
 
-<span data-ttu-id="09bb0-130">場景名稱</span><span class="sxs-lookup"><span data-stu-id="09bb0-130">Scene Name</span></span> | <span data-ttu-id="09bb0-131">場景標記</span><span class="sxs-lookup"><span data-stu-id="09bb0-131">Scene Tag</span></span> | <span data-ttu-id="09bb0-132">由腳本載入</span><span class="sxs-lookup"><span data-stu-id="09bb0-132">Loaded by script</span></span>
+<span data-ttu-id="4b3db-130">場景名稱</span><span class="sxs-lookup"><span data-stu-id="4b3db-130">Scene Name</span></span> | <span data-ttu-id="4b3db-131">場景標記</span><span class="sxs-lookup"><span data-stu-id="4b3db-131">Scene Tag</span></span> | <span data-ttu-id="4b3db-132">由腳本載入</span><span class="sxs-lookup"><span data-stu-id="4b3db-132">Loaded by script</span></span>
 ---|---|---
-<span data-ttu-id="09bb0-133">DebugTerrainPhysics</span><span class="sxs-lookup"><span data-stu-id="09bb0-133">DebugTerrainPhysics</span></span> | <span data-ttu-id="09bb0-134">地形</span><span class="sxs-lookup"><span data-stu-id="09bb0-134">Terrain</span></span> | <span data-ttu-id="09bb0-135">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-135">•</span></span>
-<span data-ttu-id="09bb0-136">StructureTesting</span><span class="sxs-lookup"><span data-stu-id="09bb0-136">StructureTesting</span></span> | <span data-ttu-id="09bb0-137">結構</span><span class="sxs-lookup"><span data-stu-id="09bb0-137">Structures</span></span> | <span data-ttu-id="09bb0-138">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-138">•</span></span>
-<span data-ttu-id="09bb0-139">VegetationTools</span><span class="sxs-lookup"><span data-stu-id="09bb0-139">VegetationTools</span></span> | <span data-ttu-id="09bb0-140">植被</span><span class="sxs-lookup"><span data-stu-id="09bb0-140">Vegetation</span></span> | <span data-ttu-id="09bb0-141">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-141">•</span></span>
-<span data-ttu-id="09bb0-142">Mountain</span><span class="sxs-lookup"><span data-stu-id="09bb0-142">Mountain</span></span> | <span data-ttu-id="09bb0-143">地形</span><span class="sxs-lookup"><span data-stu-id="09bb0-143">Terrain</span></span> | <span data-ttu-id="09bb0-144">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-144">•</span></span>
-<span data-ttu-id="09bb0-145">小屋</span><span class="sxs-lookup"><span data-stu-id="09bb0-145">Cabin</span></span> | <span data-ttu-id="09bb0-146">結構</span><span class="sxs-lookup"><span data-stu-id="09bb0-146">Structures</span></span> | <span data-ttu-id="09bb0-147">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-147">•</span></span>
-<span data-ttu-id="09bb0-148">樹木</span><span class="sxs-lookup"><span data-stu-id="09bb0-148">Trees</span></span> | <span data-ttu-id="09bb0-149">植被</span><span class="sxs-lookup"><span data-stu-id="09bb0-149">Vegetation</span></span> | <span data-ttu-id="09bb0-150">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-150">•</span></span>
+<span data-ttu-id="4b3db-133">DebugTerrainPhysics</span><span class="sxs-lookup"><span data-stu-id="4b3db-133">DebugTerrainPhysics</span></span> | <span data-ttu-id="4b3db-134">地形</span><span class="sxs-lookup"><span data-stu-id="4b3db-134">Terrain</span></span> | <span data-ttu-id="4b3db-135">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-135">•</span></span>
+<span data-ttu-id="4b3db-136">StructureTesting</span><span class="sxs-lookup"><span data-stu-id="4b3db-136">StructureTesting</span></span> | <span data-ttu-id="4b3db-137">結構</span><span class="sxs-lookup"><span data-stu-id="4b3db-137">Structures</span></span> | <span data-ttu-id="4b3db-138">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-138">•</span></span>
+<span data-ttu-id="4b3db-139">VegetationTools</span><span class="sxs-lookup"><span data-stu-id="4b3db-139">VegetationTools</span></span> | <span data-ttu-id="4b3db-140">植被</span><span class="sxs-lookup"><span data-stu-id="4b3db-140">Vegetation</span></span> | <span data-ttu-id="4b3db-141">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-141">•</span></span>
+<span data-ttu-id="4b3db-142">Mountain</span><span class="sxs-lookup"><span data-stu-id="4b3db-142">Mountain</span></span> | <span data-ttu-id="4b3db-143">地形</span><span class="sxs-lookup"><span data-stu-id="4b3db-143">Terrain</span></span> | <span data-ttu-id="4b3db-144">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-144">•</span></span>
+<span data-ttu-id="4b3db-145">小屋</span><span class="sxs-lookup"><span data-stu-id="4b3db-145">Cabin</span></span> | <span data-ttu-id="4b3db-146">結構</span><span class="sxs-lookup"><span data-stu-id="4b3db-146">Structures</span></span> | <span data-ttu-id="4b3db-147">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-147">•</span></span>
+<span data-ttu-id="4b3db-148">樹木</span><span class="sxs-lookup"><span data-stu-id="4b3db-148">Trees</span></span> | <span data-ttu-id="4b3db-149">植被</span><span class="sxs-lookup"><span data-stu-id="4b3db-149">Vegetation</span></span> | <span data-ttu-id="4b3db-150">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-150">•</span></span>
 
-### <a name="final-content"></a><span data-ttu-id="09bb0-151">最終內容</span><span class="sxs-lookup"><span data-stu-id="09bb0-151">Final content</span></span>
+### <a name="final-content"></a><span data-ttu-id="4b3db-151">最終內容</span><span class="sxs-lookup"><span data-stu-id="4b3db-151">Final content</span></span>
 
-<span data-ttu-id="09bb0-152">場景名稱</span><span class="sxs-lookup"><span data-stu-id="09bb0-152">Scene Name</span></span> | <span data-ttu-id="09bb0-153">場景標記</span><span class="sxs-lookup"><span data-stu-id="09bb0-153">Scene Tag</span></span> | <span data-ttu-id="09bb0-154">由腳本載入</span><span class="sxs-lookup"><span data-stu-id="09bb0-154">Loaded by script</span></span>
+<span data-ttu-id="4b3db-152">場景名稱</span><span class="sxs-lookup"><span data-stu-id="4b3db-152">Scene Name</span></span> | <span data-ttu-id="4b3db-153">場景標記</span><span class="sxs-lookup"><span data-stu-id="4b3db-153">Scene Tag</span></span> | <span data-ttu-id="4b3db-154">由腳本載入</span><span class="sxs-lookup"><span data-stu-id="4b3db-154">Loaded by script</span></span>
 ---|---|---
-<span data-ttu-id="09bb0-155">DebugTerrainPhysics</span><span class="sxs-lookup"><span data-stu-id="09bb0-155">DebugTerrainPhysics</span></span> | <span data-ttu-id="09bb0-156">DoNotInclude</span><span class="sxs-lookup"><span data-stu-id="09bb0-156">DoNotInclude</span></span> |
-<span data-ttu-id="09bb0-157">StructureTesting</span><span class="sxs-lookup"><span data-stu-id="09bb0-157">StructureTesting</span></span> | <span data-ttu-id="09bb0-158">DoNotInclude</span><span class="sxs-lookup"><span data-stu-id="09bb0-158">DoNotInclude</span></span> |
-<span data-ttu-id="09bb0-159">VegetationTools</span><span class="sxs-lookup"><span data-stu-id="09bb0-159">VegetationTools</span></span> | <span data-ttu-id="09bb0-160">DoNotInclude</span><span class="sxs-lookup"><span data-stu-id="09bb0-160">DoNotInclude</span></span> |
-<span data-ttu-id="09bb0-161">Mountain</span><span class="sxs-lookup"><span data-stu-id="09bb0-161">Mountain</span></span> | <span data-ttu-id="09bb0-162">地形</span><span class="sxs-lookup"><span data-stu-id="09bb0-162">Terrain</span></span> | <span data-ttu-id="09bb0-163">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-163">•</span></span>
-<span data-ttu-id="09bb0-164">小屋</span><span class="sxs-lookup"><span data-stu-id="09bb0-164">Cabin</span></span> | <span data-ttu-id="09bb0-165">結構</span><span class="sxs-lookup"><span data-stu-id="09bb0-165">Structures</span></span> | <span data-ttu-id="09bb0-166">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-166">•</span></span>
-<span data-ttu-id="09bb0-167">樹木</span><span class="sxs-lookup"><span data-stu-id="09bb0-167">Trees</span></span> | <span data-ttu-id="09bb0-168">植被</span><span class="sxs-lookup"><span data-stu-id="09bb0-168">Vegetation</span></span> | <span data-ttu-id="09bb0-169">•</span><span class="sxs-lookup"><span data-stu-id="09bb0-169">•</span></span>
+<span data-ttu-id="4b3db-155">DebugTerrainPhysics</span><span class="sxs-lookup"><span data-stu-id="4b3db-155">DebugTerrainPhysics</span></span> | <span data-ttu-id="4b3db-156">DoNotInclude</span><span class="sxs-lookup"><span data-stu-id="4b3db-156">DoNotInclude</span></span> |
+<span data-ttu-id="4b3db-157">StructureTesting</span><span class="sxs-lookup"><span data-stu-id="4b3db-157">StructureTesting</span></span> | <span data-ttu-id="4b3db-158">DoNotInclude</span><span class="sxs-lookup"><span data-stu-id="4b3db-158">DoNotInclude</span></span> |
+<span data-ttu-id="4b3db-159">VegetationTools</span><span class="sxs-lookup"><span data-stu-id="4b3db-159">VegetationTools</span></span> | <span data-ttu-id="4b3db-160">DoNotInclude</span><span class="sxs-lookup"><span data-stu-id="4b3db-160">DoNotInclude</span></span> |
+<span data-ttu-id="4b3db-161">Mountain</span><span class="sxs-lookup"><span data-stu-id="4b3db-161">Mountain</span></span> | <span data-ttu-id="4b3db-162">地形</span><span class="sxs-lookup"><span data-stu-id="4b3db-162">Terrain</span></span> | <span data-ttu-id="4b3db-163">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-163">•</span></span>
+<span data-ttu-id="4b3db-164">小屋</span><span class="sxs-lookup"><span data-stu-id="4b3db-164">Cabin</span></span> | <span data-ttu-id="4b3db-165">結構</span><span class="sxs-lookup"><span data-stu-id="4b3db-165">Structures</span></span> | <span data-ttu-id="4b3db-166">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-166">•</span></span>
+<span data-ttu-id="4b3db-167">樹木</span><span class="sxs-lookup"><span data-stu-id="4b3db-167">Trees</span></span> | <span data-ttu-id="4b3db-168">植被</span><span class="sxs-lookup"><span data-stu-id="4b3db-168">Vegetation</span></span> | <span data-ttu-id="4b3db-169">•</span><span class="sxs-lookup"><span data-stu-id="4b3db-169">•</span></span>
 
 ---
 
-## <a name="editor-behavior"></a><span data-ttu-id="09bb0-170">編輯器行為</span><span class="sxs-lookup"><span data-stu-id="09bb0-170">Editor behavior</span></span>
+## <a name="editor-behavior"></a><span data-ttu-id="4b3db-170">編輯器行為</span><span class="sxs-lookup"><span data-stu-id="4b3db-170">Editor behavior</span></span>
 
-<span data-ttu-id="09bb0-171">您可以使用場景系統的[服務偵測器](../../configuration/mixed-reality-configuration-guide.md#editor-utilities)，在 [編輯器] 和 [播放] 模式中執行上述所有作業。</span><span class="sxs-lookup"><span data-stu-id="09bb0-171">You can perform all these operations in editor and in play mode by using the Scene System's [service inspector.](../../configuration/mixed-reality-configuration-guide.md#editor-utilities)</span></span> <span data-ttu-id="09bb0-172">在 [編輯] 模式中，場景載入將會立即進行，而在 [播放] 模式中，您可以觀察載入進度和使用 [啟用權杖。](scene-system-load-progress.md)</span><span class="sxs-lookup"><span data-stu-id="09bb0-172">In edit mode scene loads will be instantaneous, while in play mode you can observe loading progress and use [activation tokens.](scene-system-load-progress.md)</span></span>
+<span data-ttu-id="4b3db-171">您可以使用場景系統的[服務偵測器](../../configuration/mixed-reality-configuration-guide.md#editor-utilities)，在 [編輯器] 和 [播放] 模式中執行上述所有作業。</span><span class="sxs-lookup"><span data-stu-id="4b3db-171">You can perform all these operations in editor and in play mode by using the Scene System's [service inspector.](../../configuration/mixed-reality-configuration-guide.md#editor-utilities)</span></span> <span data-ttu-id="4b3db-172">在 [編輯] 模式中，場景載入將會立即進行，而在 [播放] 模式中，您可以觀察載入進度和使用 [啟用權杖。](scene-system-load-progress.md)</span><span class="sxs-lookup"><span data-stu-id="4b3db-172">In edit mode scene loads will be instantaneous, while in play mode you can observe loading progress and use [activation tokens.](scene-system-load-progress.md)</span></span>
 
 ![已反白顯示內容載入的偵測器場景系統](../images/scene-system/MRTK_SceneSystemServiceInspector.PNG)

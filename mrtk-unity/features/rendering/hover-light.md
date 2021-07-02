@@ -5,36 +5,36 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、停留燈、
-ms.openlocfilehash: b98dff0dd3ff0312f6ce607a5fb8a26f94959ff2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145171"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176733"
 ---
-# <a name="hover-light"></a><span data-ttu-id="d73b4-104">停留燈</span><span class="sxs-lookup"><span data-stu-id="d73b4-104">Hover Light</span></span>
+# <a name="hover-light"></a><span data-ttu-id="7dce4-104">停留燈</span><span class="sxs-lookup"><span data-stu-id="7dce4-104">Hover light</span></span>
 
-<span data-ttu-id="d73b4-105">[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)是一種[Fluent Design 系統](https://www.microsoft.com/design/fluent/)範例，會模擬停留在物件介面附近的[點光線](https://docs.unity3d.com/Manual/Lighting.html)。</span><span class="sxs-lookup"><span data-stu-id="d73b4-105">A [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object.</span></span> <span data-ttu-id="d73b4-106">通常用於遠離互動，應用程式可以透過元件來控制停留光的屬性 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 。</span><span class="sxs-lookup"><span data-stu-id="d73b4-106">Often used for far away interactions, the application can control the properties of a Hover Light via the [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) component.</span></span>
+<span data-ttu-id="7dce4-105">[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)是一種[Fluent Design 系統](https://www.microsoft.com/design/fluent/)的典範，會模擬停留在物件介面附近的[點淺色](https://docs.unity3d.com/Manual/Lighting.html)。</span><span class="sxs-lookup"><span data-stu-id="7dce4-105">A [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) is a [Fluent Design System](https://www.microsoft.com/design/fluent/) paradigm that mimics a [point light](https://docs.unity3d.com/Manual/Lighting.html) hovering near the surface of an object.</span></span> <span data-ttu-id="7dce4-106">通常用於遠離互動，應用程式可以透過元件來控制停留光的屬性 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 。</span><span class="sxs-lookup"><span data-stu-id="7dce4-106">Often used for far away interactions, the application can control the properties of a Hover Light via the [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) component.</span></span>
 
-<span data-ttu-id="d73b4-107">您 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 必須使用「 *混合現實工具* 組」/「標準著色器」所影響的材質，而且必須啟用「暫止 *燈* 」屬性。</span><span class="sxs-lookup"><span data-stu-id="d73b4-107">For a material to be influenced by a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) the *Mixed Reality Toolkit/Standard* shader must be used and the *Hover Light* property must be enabled.</span></span>
-
-> [!Note]
-> <span data-ttu-id="d73b4-108">MRTK/Standard 著色器預設支援最多兩個 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) ，但將會調整為支援四個，然後在場景中新增更多燈光時調整為10。</span><span class="sxs-lookup"><span data-stu-id="d73b4-108">The MRTK/Standard shader supports up to two [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) by default, but will scale to support four and then ten as more lights are added to the scene.</span></span>
-
-## <a name="examples"></a><span data-ttu-id="d73b4-109">範例</span><span class="sxs-lookup"><span data-stu-id="d73b4-109">Examples</span></span>
-
-<span data-ttu-id="d73b4-110">MRTK 內的大部分場景會利用 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 。</span><span class="sxs-lookup"><span data-stu-id="d73b4-110">Most scenes within the MRTK utilize a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight).</span></span> <span data-ttu-id="d73b4-111">最常見的使用案例可以在 MRTK/SDK/Features/UX/Prefabs/cursor/DefaultCursor 上找到。預製專案</span><span class="sxs-lookup"><span data-stu-id="d73b4-111">The most common use case can be found on the MRTK/SDK/Features/UX/Prefabs/Cursors/DefaultCursor.prefab</span></span>
-
-<span data-ttu-id="d73b4-112">**HoverLightExamples** 場景也會示範行為的用法 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) ，您可以在下列位置找到： MRTK/範例/示範/StandardShader/場景/</span><span class="sxs-lookup"><span data-stu-id="d73b4-112">The **HoverLightExamples** scene also demonstrates usage of [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/</span></span>
-
-## <a name="advanced-usage"></a><span data-ttu-id="d73b4-113">進階使用方式</span><span class="sxs-lookup"><span data-stu-id="d73b4-113">Advanced Usage</span></span>
-
-<span data-ttu-id="d73b4-114">[`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)一次只能對一個[材質](https://docs.unity3d.com/ScriptReference/Material.html)進行一次亮妥。</span><span class="sxs-lookup"><span data-stu-id="d73b4-114">Only ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time.</span></span> <span data-ttu-id="d73b4-115">如果您的專案需要十個以上的資料 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 來影響 [材質](https://docs.unity3d.com/ScriptReference/Material.html) ，下列範例程式碼示範如何達成此目的。</span><span class="sxs-lookup"><span data-stu-id="d73b4-115">If your project requires more than ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.</span></span>
+<span data-ttu-id="7dce4-107">您 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 必須使用「 *混合現實工具* 組」/「標準著色器」所影響的材質，而且必須啟用「暫止 *燈* 」屬性。</span><span class="sxs-lookup"><span data-stu-id="7dce4-107">For a material to be influenced by a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) the *Mixed Reality Toolkit/Standard* shader must be used and the *Hover Light* property must be enabled.</span></span>
 
 > [!Note]
-> <span data-ttu-id="d73b4-116">有許多 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 亮亮的 [材質](https://docs.unity3d.com/ScriptReference/Material.html) 將會增加圖元著色器的指示，而且會影響效能。</span><span class="sxs-lookup"><span data-stu-id="d73b4-116">Having many [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) will increase pixel shader instructions and will impact performance.</span></span> <span data-ttu-id="d73b4-117">**請在您的專案內分析這些變更。**</span><span class="sxs-lookup"><span data-stu-id="d73b4-117">**Please profile these changes within your project.**</span></span>
+> <span data-ttu-id="7dce4-108">MRTK/Standard 著色器預設支援最多兩個 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) ，但將會調整為支援四個，然後在場景中新增更多燈光時調整為10。</span><span class="sxs-lookup"><span data-stu-id="7dce4-108">The MRTK/Standard shader supports up to two [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) by default, but will scale to support four and then ten as more lights are added to the scene.</span></span>
 
-<span data-ttu-id="d73b4-118">*如何將可用的數目增加 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 至12個。*</span><span class="sxs-lookup"><span data-stu-id="d73b4-118">*How to increase the number of available [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) from ten to twelve.*</span></span>
+## <a name="examples"></a><span data-ttu-id="7dce4-109">範例</span><span class="sxs-lookup"><span data-stu-id="7dce4-109">Examples</span></span>
+
+<span data-ttu-id="7dce4-110">MRTK 內的大部分場景會利用 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 。</span><span class="sxs-lookup"><span data-stu-id="7dce4-110">Most scenes within the MRTK utilize a [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight).</span></span> <span data-ttu-id="7dce4-111">最常見的使用案例可以在 MRTK/SDK/Features/UX/Prefabs/cursor/DefaultCursor 上找到。預製專案</span><span class="sxs-lookup"><span data-stu-id="7dce4-111">The most common use case can be found on the MRTK/SDK/Features/UX/Prefabs/Cursors/DefaultCursor.prefab</span></span>
+
+<span data-ttu-id="7dce4-112">**HoverLightExamples** 場景也會示範行為的用法 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) ，您可以在下列位置找到： MRTK/範例/示範/StandardShader/場景/</span><span class="sxs-lookup"><span data-stu-id="7dce4-112">The **HoverLightExamples** scene also demonstrates usage of [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) behaviors, and can be found at: MRTK/Examples/Demos/StandardShader/Scenes/</span></span>
+
+## <a name="advanced-usage"></a><span data-ttu-id="7dce4-113">進階使用方式</span><span class="sxs-lookup"><span data-stu-id="7dce4-113">Advanced Usage</span></span>
+
+<span data-ttu-id="7dce4-114">[`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)一次只能對一個[材質](https://docs.unity3d.com/ScriptReference/Material.html)進行一次亮妥。</span><span class="sxs-lookup"><span data-stu-id="7dce4-114">Only ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) can illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) at a time.</span></span> <span data-ttu-id="7dce4-115">如果您的專案需要十個以上的資料 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 來影響 [材質](https://docs.unity3d.com/ScriptReference/Material.html) ，下列範例程式碼示範如何達成此目的。</span><span class="sxs-lookup"><span data-stu-id="7dce4-115">If your project requires more than ten [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) to influence a [material](https://docs.unity3d.com/ScriptReference/Material.html) the sample code below demonstrates how to achieve this.</span></span>
+
+> [!Note]
+> <span data-ttu-id="7dce4-116">有許多 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 亮亮的 [材質](https://docs.unity3d.com/ScriptReference/Material.html) 將會增加圖元著色器的指示，而且會影響效能。</span><span class="sxs-lookup"><span data-stu-id="7dce4-116">Having many [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) illuminate a [material](https://docs.unity3d.com/ScriptReference/Material.html) will increase pixel shader instructions and will impact performance.</span></span> <span data-ttu-id="7dce4-117">**請在您的專案內分析這些變更。**</span><span class="sxs-lookup"><span data-stu-id="7dce4-117">**Please profile these changes within your project.**</span></span>
+
+<span data-ttu-id="7dce4-118">*如何將可用的數目增加 [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 至12個。*</span><span class="sxs-lookup"><span data-stu-id="7dce4-118">*How to increase the number of available [`HoverLights`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) from ten to twelve.*</span></span>
 
 ```C#
 // 1) Within MRTK/Core/StandardAssets/Shaders/MixedRealityStandard.shader change:
@@ -57,10 +57,10 @@ private const int hoverLightCountHigh = 12;
 ```
 
 > [!NOTE]
-> <span data-ttu-id="d73b4-119">如果 Unity 記錄類似下面的警告，您必須先重新開機 Unity，變更才會生效。</span><span class="sxs-lookup"><span data-stu-id="d73b4-119">If Unity logs a warning similar to below then you must restart Unity before your changes will take effect.</span></span>
+> <span data-ttu-id="7dce4-119">如果 Unity 記錄類似下面的警告，您必須先重新開機 Unity，變更才會生效。</span><span class="sxs-lookup"><span data-stu-id="7dce4-119">If Unity logs a warning similar to below then you must restart Unity before your changes will take effect.</span></span>
 >
 > `Property (_HoverLightData) exceeds previous array size (24 vs 20). Cap to previous >size.`
 
-## <a name="see-also"></a><span data-ttu-id="d73b4-120">另請參閱</span><span class="sxs-lookup"><span data-stu-id="d73b4-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="7dce4-120">另請參閱</span><span class="sxs-lookup"><span data-stu-id="7dce4-120">See also</span></span>
 
-* [<span data-ttu-id="d73b4-121">MRTK 標準著色器</span><span class="sxs-lookup"><span data-stu-id="d73b4-121">MRTK Standard Shader</span></span>](mrtk-standard-shader.md)
+* [<span data-ttu-id="7dce4-121">MRTK 標準著色器</span><span class="sxs-lookup"><span data-stu-id="7dce4-121">MRTK Standard Shader</span></span>](mrtk-standard-shader.md)

@@ -5,21 +5,21 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MaterialInstance、
-ms.openlocfilehash: 216fa72af6bb6caaf47e30c156f7caf1b1dab71e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ecd8f9e14564cbd03cb6faa848b06ca55a024207
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145214"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176721"
 ---
-# <a name="material-instance"></a><span data-ttu-id="d32a7-104">材質實例</span><span class="sxs-lookup"><span data-stu-id="d32a7-104">Material instance</span></span>
+# <a name="material-instance"></a><span data-ttu-id="1b635-104">材質實例</span><span class="sxs-lookup"><span data-stu-id="1b635-104">Material instance</span></span>
 
-<span data-ttu-id="d32a7-105">[`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance)行為有助於在追蹤實例材質存留期，並自動終結使用者的實例材料。</span><span class="sxs-lookup"><span data-stu-id="d32a7-105">The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user.</span></span> <span data-ttu-id="d32a7-106">這個公用程式元件可以用來取代轉譯器[。材質](https://docs.unity3d.com/ScriptReference/Renderer-material.html)[或轉譯](https://docs.unity3d.com/ScriptReference/Renderer-materials.html)器的材質。</span><span class="sxs-lookup"><span data-stu-id="d32a7-106">This utility component can be used as a replacement to [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) or [Renderer.materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html).</span></span>
+<span data-ttu-id="1b635-105">[`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance)行為有助於在追蹤實例材質存留期，並自動終結使用者的實例材料。</span><span class="sxs-lookup"><span data-stu-id="1b635-105">The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior aides in tracking instance material lifetime and automatically destroys instanced materials for the user.</span></span> <span data-ttu-id="1b635-106">這個公用程式元件可以用來取代轉譯器[。材質](https://docs.unity3d.com/ScriptReference/Renderer-material.html)[或轉譯](https://docs.unity3d.com/ScriptReference/Renderer-materials.html)器的材質。</span><span class="sxs-lookup"><span data-stu-id="1b635-106">This utility component can be used as a replacement to [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) or [Renderer.materials](https://docs.unity3d.com/ScriptReference/Renderer-materials.html).</span></span>
 
 > [!NOTE]
-> <span data-ttu-id="d32a7-107">[MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) 優先于材質實例，但在所有案例中都不會提供。</span><span class="sxs-lookup"><span data-stu-id="d32a7-107">[MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) are preferred over material instancing but are not always available  in all scenarios.</span></span>
+> <span data-ttu-id="1b635-107">[MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) 優先于材質實例，但在所有案例中都不會提供。</span><span class="sxs-lookup"><span data-stu-id="1b635-107">[MaterialPropertyBlocks](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) are preferred over material instancing but are not always available  in all scenarios.</span></span>
 
-<span data-ttu-id="d32a7-108">為何要使用轉譯器 [。材質](https://docs.unity3d.com/ScriptReference/Renderer-material.html) 有問題？</span><span class="sxs-lookup"><span data-stu-id="d32a7-108">Why can using [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) be an issue?</span></span> <span data-ttu-id="d32a7-109">如果您將下列程式碼新增至 Unity 場景，而點擊播放記憶體使用量將會繼續進行順向和順向：</span><span class="sxs-lookup"><span data-stu-id="d32a7-109">If you add the below code to a Unity scene and hit play memory usage will continue to climb and climb:</span></span>
+<span data-ttu-id="1b635-108">為何要使用轉譯器 [。材質](https://docs.unity3d.com/ScriptReference/Renderer-material.html) 有問題？</span><span class="sxs-lookup"><span data-stu-id="1b635-108">Why can using [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html) be an issue?</span></span> <span data-ttu-id="1b635-109">如果您將下列程式碼新增至 Unity 場景，而點擊播放記憶體使用量將會繼續進行順向和順向：</span><span class="sxs-lookup"><span data-stu-id="1b635-109">If you add the below code to a Unity scene and hit play memory usage will continue to climb and climb:</span></span>
 
 ```c#
 public class Leak : MonoBehaviour
@@ -36,9 +36,9 @@ public class Leak : MonoBehaviour
 ```
 
 > [!NOTE]
-> <span data-ttu-id="d32a7-110">如果執行太久，上述的洩漏行為 **將會損毀** 。</span><span class="sxs-lookup"><span data-stu-id="d32a7-110">The above Leak behavior **will crash Unity** if ran for too long!</span></span>
+> <span data-ttu-id="1b635-110">如果執行太久，上述的洩漏行為 **將會損毀** 。</span><span class="sxs-lookup"><span data-stu-id="1b635-110">The above Leak behavior **will crash Unity** if ran for too long!</span></span>
 
-<span data-ttu-id="d32a7-111">另一種方法是使用 [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) 下列行為：</span><span class="sxs-lookup"><span data-stu-id="d32a7-111">As an alternative try using the [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior:</span></span>
+<span data-ttu-id="1b635-111">另一種方法是使用 [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) 下列行為：</span><span class="sxs-lookup"><span data-stu-id="1b635-111">As an alternative try using the [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior:</span></span>
 
 ```c#
 public class NoLeak : MonoBehaviour
@@ -54,11 +54,11 @@ public class NoLeak : MonoBehaviour
 }
 ```
 
-## <a name="usage"></a><span data-ttu-id="d32a7-112">使用方式</span><span class="sxs-lookup"><span data-stu-id="d32a7-112">Usage</span></span>
+## <a name="usage"></a><span data-ttu-id="1b635-112">使用方式</span><span class="sxs-lookup"><span data-stu-id="1b635-112">Usage</span></span>
 
-<span data-ttu-id="d32a7-113">當叫用 Unity [的轉譯](https://docs.unity3d.com/ScriptReference/Renderer-material.html) 器時， (s) ，Unity 會自動將新的資料具現化。</span><span class="sxs-lookup"><span data-stu-id="d32a7-113">When invoking Unity's [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s), Unity automatically instantiates new materials.</span></span> <span data-ttu-id="d32a7-114">當不再需要材質或遊戲物件損毀時，呼叫者必須負責終結材質。</span><span class="sxs-lookup"><span data-stu-id="d32a7-114">It is the caller's responsibility to destroy the materials when a material is no longer needed or the game object is destroyed.</span></span> <span data-ttu-id="d32a7-115">此 [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) 行為有助於避免材質流失，並在編輯和執行時間期間讓材質配置路徑保持一致。</span><span class="sxs-lookup"><span data-stu-id="d32a7-115">The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior helps avoid material leaks and keeps material allocation paths consistent during edit and run time.</span></span>
+<span data-ttu-id="1b635-113">當叫用 Unity [的轉譯](https://docs.unity3d.com/ScriptReference/Renderer-material.html) 器時， (s) ，Unity 會自動將新的資料具現化。</span><span class="sxs-lookup"><span data-stu-id="1b635-113">When invoking Unity's [Renderer.material](https://docs.unity3d.com/ScriptReference/Renderer-material.html)(s), Unity automatically instantiates new materials.</span></span> <span data-ttu-id="1b635-114">當不再需要材質或遊戲物件損毀時，呼叫者必須負責終結材質。</span><span class="sxs-lookup"><span data-stu-id="1b635-114">It is the caller's responsibility to destroy the materials when a material is no longer needed or the game object is destroyed.</span></span> <span data-ttu-id="1b635-115">此 [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) 行為有助於避免材質流失，並在編輯和執行時間期間讓材質配置路徑保持一致。</span><span class="sxs-lookup"><span data-stu-id="1b635-115">The [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) behavior helps avoid material leaks and keeps material allocation paths consistent during edit and run time.</span></span>
 
-<span data-ttu-id="d32a7-116">當無法使用 [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) 且必須具現化資料時， [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) 可以使用如下所示的內容：</span><span class="sxs-lookup"><span data-stu-id="d32a7-116">When a [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) can not be used and a material must be instanced, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) can be used as follows:</span></span>
+<span data-ttu-id="1b635-116">當無法使用 [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) 且必須具現化資料時， [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) 可以使用如下所示的內容：</span><span class="sxs-lookup"><span data-stu-id="1b635-116">When a [MaterialPropertyBlock](https://docs.unity3d.com/ScriptReference/MaterialPropertyBlock.html) can not be used and a material must be instanced, [`MaterialInstance`](xref:Microsoft.MixedReality.Toolkit.Rendering.MaterialInstance) can be used as follows:</span></span>
 
 ```c#
 public class MyBehaviour : MonoBehaviour
@@ -75,7 +75,7 @@ public class MyBehaviour : MonoBehaviour
 }
 ```
 
-<span data-ttu-id="d32a7-117">如果有多個物件需要材質實例的擁有權，最好是取得參考追蹤的明確擁有權。</span><span class="sxs-lookup"><span data-stu-id="d32a7-117">If multiple objects need ownership of the material instance it's best to take explicit ownership for reference tracking.</span></span> <span data-ttu-id="d32a7-118"> ([`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) 具有擁有權之且有助於的選擇性介面。以下 ) 範例使用方式：</span><span class="sxs-lookup"><span data-stu-id="d32a7-118">(An optional interface called [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) exists to aide with ownership.) Below is example usage:</span></span>
+<span data-ttu-id="1b635-117">如果有多個物件需要材質實例的擁有權，最好是取得參考追蹤的明確擁有權。</span><span class="sxs-lookup"><span data-stu-id="1b635-117">If multiple objects need ownership of the material instance it's best to take explicit ownership for reference tracking.</span></span> <span data-ttu-id="1b635-118"> ([`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) 具有擁有權之且有助於的選擇性介面。以下 ) 範例使用方式：</span><span class="sxs-lookup"><span data-stu-id="1b635-118">(An optional interface called [`IMaterialInstanceOwner`](xref:Microsoft.MixedReality.Toolkit.Rendering.IMaterialInstanceOwner) exists to aide with ownership.) Below is example usage:</span></span>
 
 ```c#
 public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
@@ -103,8 +103,8 @@ public class MyBehaviour : MonoBehaviour,  IMaterialInstanceOwner
 }
 ```
 
-<span data-ttu-id="d32a7-119">如需詳細資訊，請參閱在行為中示範的範例使用 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 方式。</span><span class="sxs-lookup"><span data-stu-id="d32a7-119">For more information please see the example usage demonstrated within the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behavior.</span></span>
+<span data-ttu-id="1b635-119">如需詳細資訊，請參閱在行為中示範的範例使用 [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) 方式。</span><span class="sxs-lookup"><span data-stu-id="1b635-119">For more information please see the example usage demonstrated within the [`ClippingPrimitive`](xref:Microsoft.MixedReality.Toolkit.Utilities.ClippingPrimitive) behavior.</span></span>
 
-## <a name="see-also"></a><span data-ttu-id="d32a7-120">另請參閱</span><span class="sxs-lookup"><span data-stu-id="d32a7-120">See also</span></span>
+## <a name="see-also"></a><span data-ttu-id="1b635-120">另請參閱</span><span class="sxs-lookup"><span data-stu-id="1b635-120">See also</span></span>
 
-* [<span data-ttu-id="d32a7-121">MRTK 標準著色器</span><span class="sxs-lookup"><span data-stu-id="d32a7-121">MRTK Standard Shader</span></span>](mrtk-standard-shader.md)
+* [<span data-ttu-id="1b635-121">MRTK 標準著色器</span><span class="sxs-lookup"><span data-stu-id="1b635-121">MRTK Standard Shader</span></span>](mrtk-standard-shader.md)

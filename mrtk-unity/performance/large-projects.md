@@ -1,28 +1,28 @@
 ---
-title: 大型專案
-description: MRTK 具有大型專案之取用者的秘訣。
+title: 在大型專案中使用 MRTK
+description: MRTK 具有大型專案之取用者的提示。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5db750048cf996b10062e638572b578ba383d5ee
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 28ba272a48b0a0c524185ac7114a09cf8e0e91f8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144550"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177120"
 ---
-# <a name="using-mrtk-in-large-projects"></a><span data-ttu-id="0b98c-104">在大型專案中使用 MRTK</span><span class="sxs-lookup"><span data-stu-id="0b98c-104">Using MRTK in large projects</span></span>
+# <a name="using-mrtk-in-large-projects"></a><span data-ttu-id="80550-104">在大型專案中使用 MRTK</span><span class="sxs-lookup"><span data-stu-id="80550-104">Using MRTK in large projects</span></span>
 
-<span data-ttu-id="0b98c-105">此頁面包含一些實用的秘訣，適用于 MRTK 的取用者，這些取用者會將其提取至現有的大型專案，或設定將會受到原始檔控制且擁有多個開發人員的新專案。</span><span class="sxs-lookup"><span data-stu-id="0b98c-105">This page contains some useful tips for consumers of MRTK that are pulling it into existing large projects, or setting up something new that will be source controlled and have multiple developers.</span></span>
+<span data-ttu-id="80550-105">此頁面包含一些實用的秘訣，適用于 MRTK 的取用者，這些取用者會將其提取至現有的大型專案，或設定將會受到原始檔控制且擁有多個開發人員的新專案。</span><span class="sxs-lookup"><span data-stu-id="80550-105">This page contains some useful tips for consumers of MRTK that are pulling it into existing large projects, or setting up something new that will be source controlled and have multiple developers.</span></span>
 
-<span data-ttu-id="0b98c-106">*建議您閱讀下列所有指導方針，並遵循這些指導方針，以協助避免在使用較大的程式碼基底時遇到一些棘手的問題*</span><span class="sxs-lookup"><span data-stu-id="0b98c-106">*We recommend reading all of the guidelines below, following them will help avoid some tricky issues when working on larger codebases*</span></span>
+<span data-ttu-id="80550-106">*建議您閱讀下列所有指導方針，並遵循這些指導方針，以協助避免在使用較大的程式碼基底時遇到一些棘手的問題*</span><span class="sxs-lookup"><span data-stu-id="80550-106">*We recommend reading all of the guidelines below, following them will help avoid some tricky issues when working on larger codebases*</span></span>
 
-## <a name="gitignore"></a><span data-ttu-id="0b98c-107">gitignore</span><span class="sxs-lookup"><span data-stu-id="0b98c-107">gitignore</span></span>
+## <a name="gitignore"></a><span data-ttu-id="80550-107">gitignore</span><span class="sxs-lookup"><span data-stu-id="80550-107">gitignore</span></span>
 
-<span data-ttu-id="0b98c-108">使用 MRTK 時，建議使用下列 .gitignore 檔來提取-有一些 MRTK 的部分會建立可由原始檔控制安全地忽略的本機狀態，而這種情況會導致本機 git 狀態變更。</span><span class="sxs-lookup"><span data-stu-id="0b98c-108">The following .gitignore file is a recommended base to pull in when consuming MRTK - there parts of MRTK that creates local state that can be safely ignored by source control, which would otherwise dirty local git state.</span></span>
+<span data-ttu-id="80550-108">使用 MRTK 時，建議使用下列 .gitignore 檔來提取-有一些 MRTK 的部分會建立可由原始檔控制安全地忽略的本機狀態，而這種情況會導致本機 git 狀態變更。</span><span class="sxs-lookup"><span data-stu-id="80550-108">The following .gitignore file is a recommended base to pull in when consuming MRTK - there parts of MRTK that creates local state that can be safely ignored by source control, which would otherwise dirty local git state.</span></span>
 
-<span data-ttu-id="0b98c-109">請注意，這的開頭部分是取自預設的 github Unity. .gitignore，稍後會有 MRTK 特定的新增專案。</span><span class="sxs-lookup"><span data-stu-id="0b98c-109">Note that the beginning parts of this are taken from the default github Unity .gitignore with MRTK-specific additions later.</span></span> <span data-ttu-id="0b98c-110">也請注意，其中有些規則會採用特定路徑，而且可以根據 MRTK 在專案中的位置加以修改。</span><span class="sxs-lookup"><span data-stu-id="0b98c-110">Also note that some of these rules assume certain paths, and can be modified based on where MRTK is located within your project.</span></span>
+<span data-ttu-id="80550-109">請注意，這的開頭部分是取自預設的 github Unity. .gitignore，稍後會有 MRTK 特定的新增專案。</span><span class="sxs-lookup"><span data-stu-id="80550-109">Note that the beginning parts of this are taken from the default github Unity .gitignore with MRTK-specific additions later.</span></span> <span data-ttu-id="80550-110">也請注意，其中有些規則會採用特定路徑，而且可以根據 MRTK 在專案中的位置加以修改。</span><span class="sxs-lookup"><span data-stu-id="80550-110">Also note that some of these rules assume certain paths, and can be modified based on where MRTK is located within your project.</span></span>
 
 ```
 # This .gitignore file should be placed at the root of your Unity project directory
@@ -99,18 +99,18 @@ crashlytics-build.properties
 !/scripts/Packaging/NuGetRestoreProject.csproj
 ```
 
-## <a name="projectpreferencesasset-file"></a><span data-ttu-id="0b98c-111">ProjectPreferences 資產檔案</span><span class="sxs-lookup"><span data-stu-id="0b98c-111">ProjectPreferences.asset file</span></span>
+## <a name="projectpreferencesasset-file"></a><span data-ttu-id="80550-111">ProjectPreferences 資產檔案</span><span class="sxs-lookup"><span data-stu-id="80550-111">ProjectPreferences.asset file</span></span>
 
-<span data-ttu-id="0b98c-112">您可以在編輯 > 專案設定下找到整個專案的 MRTK 設定-> Mixed Reality 工具組位置。</span><span class="sxs-lookup"><span data-stu-id="0b98c-112">Project-wide MRTK settings can be found under the Edit -> Project Settings -> Mixed Reality Toolkit location.</span></span> <span data-ttu-id="0b98c-113">這些設定會儲存至 [資產] 資料夾中位於此位置的檔案：</span><span class="sxs-lookup"><span data-stu-id="0b98c-113">These settings will be saved to a file at this location in the Assets folder:</span></span>
+<span data-ttu-id="80550-112">您可以在 [編輯->] Project 中找到整個 Project 的 MRTK 設定設定 > 混合現實工具組位置。</span><span class="sxs-lookup"><span data-stu-id="80550-112">Project-wide MRTK settings can be found under the Edit -> Project Settings -> Mixed Reality Toolkit location.</span></span> <span data-ttu-id="80550-113">這些設定會儲存至 [資產] 資料夾中位於此位置的檔案：</span><span class="sxs-lookup"><span data-stu-id="80550-113">These settings will be saved to a file at this location in the Assets folder:</span></span>
 
 ```
 Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset
 ```
 
-<span data-ttu-id="0b98c-114">如果您的專案將會有多個共同作業者，建議您在初始設定 MRTK 設定之後，簽入此資產檔案。</span><span class="sxs-lookup"><span data-stu-id="0b98c-114">If your project will have multiple collaborators, it is recommended that this asset file be checked in after doing an initial setup of MRTK settings.</span></span> <span data-ttu-id="0b98c-115">特別是，請考慮 **選取下列設定**：</span><span class="sxs-lookup"><span data-stu-id="0b98c-115">In particular, consider having the **following settings checked**:</span></span>
+<span data-ttu-id="80550-114">如果您的專案將會有多個共同作業者，建議您在初始設定 MRTK 設定之後，簽入此資產檔案。</span><span class="sxs-lookup"><span data-stu-id="80550-114">If your project will have multiple collaborators, it is recommended that this asset file be checked in after doing an initial setup of MRTK settings.</span></span> <span data-ttu-id="80550-115">特別是，請考慮 **選取下列設定**：</span><span class="sxs-lookup"><span data-stu-id="80550-115">In particular, consider having the **following settings checked**:</span></span>
 
-<span data-ttu-id="0b98c-116">**鎖定 SDK 設定檔** -如果停用此功能，預設的 MRTK 設定檔將可供全域編輯，使 MRTK 升級變得很具挑戰性， (可能會導致架構本身的合併衝突) </span><span class="sxs-lookup"><span data-stu-id="0b98c-116">**Lock SDK Profiles** - If this is disabled, the default MRTK profiles will be globally editable, which will make MRTK upgrades challenging (it can lead to merge conflicts in the framework itself)</span></span>
+<span data-ttu-id="80550-116">**鎖定 SDK 設定檔** -如果停用此功能，預設的 MRTK 設定檔將可供全域編輯，使 MRTK 升級變得很具挑戰性， (可能會導致架構本身的合併衝突) </span><span class="sxs-lookup"><span data-stu-id="80550-116">**Lock SDK Profiles** - If this is disabled, the default MRTK profiles will be globally editable, which will make MRTK upgrades challenging (it can lead to merge conflicts in the framework itself)</span></span>
 
-<span data-ttu-id="0b98c-117">**略過 MRTK 專案** 設定程式-如果已停用，則專案設定程式會顯示目前的 MRTK 設定是否與 MRTK 的建議預設值不符。</span><span class="sxs-lookup"><span data-stu-id="0b98c-117">**Ignore MRTK project configurator** - If this is disabled, the project configurator will show if the current MRTK settings do not match MRTK recommended defaults.</span></span> <span data-ttu-id="0b98c-118">因為您的專案可能已明確選擇不啟用某些設定，所以核取此設定可防止其他共同作業者不慎看到此對話方塊的變更設定。</span><span class="sxs-lookup"><span data-stu-id="0b98c-118">Since your project may have explicitly chosen not to have some settings enabled, having this setting checked will prevent other collaborators from seeing this dialog an changing settings inadvertently.</span></span> <span data-ttu-id="0b98c-119">這些設定應該由設定專案的人員來設定，然後由其他共同作業者略過。</span><span class="sxs-lookup"><span data-stu-id="0b98c-119">These settings should be configured by the person setting up the project and then ignored by the other collaborators.</span></span>
+<span data-ttu-id="80550-117">**略過 MRTK 專案** 設定程式-如果已停用，則專案設定程式會顯示目前的 MRTK 設定是否與 MRTK 的建議預設值不符。</span><span class="sxs-lookup"><span data-stu-id="80550-117">**Ignore MRTK project configurator** - If this is disabled, the project configurator will show if the current MRTK settings do not match MRTK recommended defaults.</span></span> <span data-ttu-id="80550-118">因為您的專案可能已明確選擇不啟用某些設定，所以核取此設定可防止其他共同作業者不慎看到此對話方塊的變更設定。</span><span class="sxs-lookup"><span data-stu-id="80550-118">Since your project may have explicitly chosen not to have some settings enabled, having this setting checked will prevent other collaborators from seeing this dialog an changing settings inadvertently.</span></span> <span data-ttu-id="80550-119">這些設定應該由設定專案的人員來設定，然後由其他共同作業者略過。</span><span class="sxs-lookup"><span data-stu-id="80550-119">These settings should be configured by the person setting up the project and then ignored by the other collaborators.</span></span>
 
-<span data-ttu-id="0b98c-120">**自動啟用 UWP 功能** -如果停用此功能，某些功能 (例如，當部署至裝置時) ，會以無訊息方式失敗，因為 Unity 不會自動將所需的執行時間功能新增至應用程式資訊清單。</span><span class="sxs-lookup"><span data-stu-id="0b98c-120">**Auto-enable UWP capabilities** - If this is disabled, certain functionality (for example, eye tracking) may silently fail when deployed to a device because Unity won't automatically add the required runtime capabilities to the application manifest.</span></span> <span data-ttu-id="0b98c-121">核取此設定可保護您的應用程式部署體驗，使其不受這個類別的問題。</span><span class="sxs-lookup"><span data-stu-id="0b98c-121">Having this setting checked will safeguard your application deployment experience from this class of issues.</span></span>
+<span data-ttu-id="80550-120">**自動啟用 UWP 功能** -如果停用此功能，某些功能 (例如，當部署至裝置時) ，會以無訊息方式失敗，因為 Unity 不會自動將所需的執行時間功能新增至應用程式資訊清單。</span><span class="sxs-lookup"><span data-stu-id="80550-120">**Auto-enable UWP capabilities** - If this is disabled, certain functionality (for example, eye tracking) may silently fail when deployed to a device because Unity won't automatically add the required runtime capabilities to the application manifest.</span></span> <span data-ttu-id="80550-121">核取此設定可保護您的應用程式部署體驗，使其不受這個類別的問題。</span><span class="sxs-lookup"><span data-stu-id="80550-121">Having this setting checked will safeguard your application deployment experience from this class of issues.</span></span>
