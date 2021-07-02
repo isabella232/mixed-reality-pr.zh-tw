@@ -1,16 +1,16 @@
 ---
-title: HandMenu
+title: 手部功能表
 description: MRTK 中的手邊功能表範例場景
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、HandMenu、
-ms.openlocfilehash: 4f59f218acb569a996d18f4cd458c634807e9929
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9bb0276c048912b4f463dd93d3303c9a3af8fe29
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689268"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177522"
 ---
 # <a name="hand-menu"></a>手部功能表
 
@@ -48,13 +48,13 @@ Backplate `ManipulationHandler` 可讓它 grabbable 和可移動。 **在操作�
 
 ## <a name="scripts"></a>指令碼
 
-此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 安全區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
+此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 保管庫區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
 
 如需其他檔，請參閱每個屬性可用的工具提示 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 。 以下會更詳細地定義幾個屬性。
 
 <img src="../images/solver/MRTK_Solver_HandConstraintPalmUp.png" width="450" alt="HandMenu_ExampleScene Palm up">
 
-* **安全區域**：安全區域會指定要限制內容的位置。 建議將內容放在 Ulnar 端，以避免與手邊和改進的互動品質重迭。 安全區域的計算方式是將手投射到平面的平面上，並以圍繞手的周框方塊 raycasting。 安全區域的定義可搭配使用， [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) 但也適用于其他控制器類型。 建議您探索每個安全區域代表不同控制器類型的內容。
+* **保管庫區域**：安全區域會指定要限制內容的位置。 建議將內容放在 Ulnar 端，以避免與手邊和改進的互動品質重迭。 保管庫區域的計算方式，是將手投射投影到與相機的角度相反的平面，並針對手中的周框方塊 raycasting。 保管庫區域會定義為使用， [`IMixedRealityHand`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHand) 但也可搭配其他控制器類型使用。 建議您探索每個安全區域代表不同控制器類型的內容。
 
 * 在 **面對相機之前接手** 使用這個活動時，將會在功能表充分配合臉部的位置之後，進行規劃，並在該時間點面對攝影機。 這項作業的運作方式是將 HandConstraintSolver 中的 SolverRotationBehavior，從 LookAtTrackedObject 變更為 LookAtMainCamera，因為 GazeAlignment 角度與規劃求解會有所不同。
 

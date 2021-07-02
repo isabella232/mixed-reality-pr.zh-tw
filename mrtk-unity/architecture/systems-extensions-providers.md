@@ -1,16 +1,16 @@
 ---
-title: 系統擴充提供者
+title: 系統、延伸模組服務和資料提供者
 description: MRTK 延伸模組和資料提供者
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、系統擴充功能、
-ms.openlocfilehash: 358294702971b7d9e8de1b842d3bc1844e5dc9bf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 668df40cec9b9443b37f63d80fcf8a1ca2e0bcbc
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121466"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177423"
 ---
 # <a name="systems-extension-services-and-data-providers"></a>系統、延伸模組服務和資料提供者
 

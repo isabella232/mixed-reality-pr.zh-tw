@@ -1,18 +1,18 @@
 ---
-title: MRTK 和 Managed Code 抽出
+title: MRTK 和 managed code 抽出
 description: MRTK 和 Unity 中的程式碼去除
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 09e5140fd9585c19eacac5ba937eaf4ea8f2a8ea
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8b8e0f4488a6e955e599084c0b59d8c80f553a78
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143733"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176294"
 ---
-# <a name="mrtk-and-unity-managed-code-stripping"></a>MRTK 和 Unity managed code 抽出
+# <a name="mrtk-and-managed-code-stripping"></a>MRTK 和 managed code 抽出
 
 使用 Unity 的 IL2CPP 腳本後端時 (在 Unity 2018.4 中為選擇性，在2019和更新版本的) 中，需要進行 [managed 程式碼的去除](https://docs.unity3d.com/Manual/ManagedCodeStripping.html) 。
 Unity 的連結器會執行此程式，以減少二進位大小以及減少組建時間。

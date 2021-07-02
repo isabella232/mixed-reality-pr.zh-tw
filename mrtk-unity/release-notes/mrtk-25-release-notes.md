@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 536a37b56b4c7de9875ce1e1642922bd363fecb1
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562488"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177511"
 ---
 # <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Microsoft Mixed Reality 工具組2.5 版本資訊
 
@@ -47,15 +47,15 @@ ms.locfileid: "112562488"
 
 界限視覺效果（例如 floor 或牆壁）現在將會正確設定，並在執行時間根據界限設定檔顯示。
 
-### <a name="msbuild-for-unity-support"></a>適用于 Unity 的 MSBuild 支援
+### <a name="msbuild-for-unity-support"></a>Unity 支援的 MSBuild
 
-從2.5.2 版本開始，已移除對 MSBuild for Unity 的支援，以配合 [Unity 的新套件指引](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)。
+2.5.2 版本已移除對 unity 的 MSBuild 的支援，以配合[unity 的新套件指引](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)。
 
 ## <a name="whats-new-in-251"></a>2.5.1 的新功能
 
 ### <a name="package-dependency-errors-fixed"></a>已修正套件相依性錯誤
 
-此版本修正不正確的套件間檔案相依性 (例如：標準資產中的檔案不再于基礎) 中正確參考檔案。 2.5.1 版也會在文字網格 Pro 上新增明確的相依性。
+此版本修正不正確的套件間檔案相依性 (例如：標準資產中的檔案不再于基礎) 中正確參考檔案。 2.5.1 版也會在文字網狀 Pro 上新增明確的相依性。
 
 ### <a name="standard-assets-package-shaders-copied-to-assetsmrtkshaders"></a>複製到資產/MRTK/著色器的標準資產套件著色器
 
@@ -74,7 +74,7 @@ ms.locfileid: "112562488"
 ![MRTK Foundation UPM 套件](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> 匯入 MRTK UPM 套件需要一些手動步驟。 如需詳細資訊，請參閱 [混合現實工具組和 Unity 封裝管理員](../configuration/usingupm.md) 。
+> 匯入 MRTK UPM 套件需要一些手動步驟。 如需詳細資訊，請參閱[混合現實工具組和 Unity 封裝管理員](../configuration/usingupm.md)。
 
 ### <a name="oculus-quest-xr-sdk-support"></a>Oculus 追求 XR SDK 支援
 
@@ -154,8 +154,8 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 
 ### <a name="unity-20193-mrtk-configuration-dialog-no-longer-attempts-to-enable-legacy-xr-support"></a>Unity 2019.3 +： MRTK configuration 對話方塊不再嘗試啟用舊版 XR 支援
 
-為了避免在使用 Unity 的 XR 平臺時可能發生衝突，已從 [MRTK 設定] 對話方塊中移除啟用舊版 XR 支援的選項。 如有需要，您可以在 Unity 2019 中使用 [**編輯**  >  **專案設定**  >
- **播放機**]  >  **XR 設定**  >  **虛擬實境支援** 的舊版 XR 支援。
+為了避免在使用 Unity 的 XR 平臺時可能發生衝突，已從 [MRTK 設定] 對話方塊中移除啟用舊版 XR 支援的選項。 如有需要，您可以在 Unity 2019 中使用 **編輯**  >  **Project 設定**  >
+ **Player**  >  **XR**  >  **支援設定虛擬實境**，以啟用舊版 XR 支援。
 
 ### <a name="reduction-in-initializeonload-overhead"></a>減少 InitializeOnLoad 額外負荷
 
@@ -166,7 +166,7 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 - 若要進行額外的整合步驟，請參閱 [Leap 動作手追蹤](../supported-devices/leap-motion-mrtk.md) 設定。
 - 針對使用 ARFoundation 的使用者，現在可以在其快速入門步驟中進行額外的手動步驟。
   如需新步驟，請參閱 [ARFoundation](../supported-devices/using-ar-foundation.md#install-required-packages) 。
-- 對於將在 HoloLens 2 上使用 [舊版 XR 管線](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions) 的使用者，現在有一個 [手動步驟](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings) 可以執行。
+- 對於將在 HoloLens 2 上使用[舊版 XR 管線](../features/tools/holographic-remoting.md#legacy-xr-setup-instructions)的使用者，現在有一個[手動步驟](../features/tools/holographic-remoting.md#dotnetwinrt_present-define-written-into-player-settings)可以執行。
 
 ### <a name="bounds-control-graduated"></a>界限控制分級
 
@@ -219,7 +219,7 @@ yield return leftHand.SetGesture(ArticulatedHandPose.GestureId.Open);
 
 ![彈性 System2](../features/images/elastics/Elastics_Main.gif)
 
-MRTK 現在隨附彈性的 [模擬系統](../features/elastics/elastic-system.md) ，其中包含各種可延伸和彈性的子類別，提供4維四元數的系結、三維的成交量彈簧和簡單線性彈簧系統。
+MRTK 現在隨附彈性的 [模擬系統](../features/experimental/elastic-system.md) ，其中包含各種可延伸和彈性的子類別，提供4維四元數的系結、三維的成交量彈簧和簡單線性彈簧系統。
 
 目前支援 [彈性 manager](xref:Microsoft.MixedReality.Toolkit.Experimental.Physics.ElasticsManager) 的下列 MRTK 元件可利用彈性功能：
 
@@ -277,7 +277,7 @@ DevicePortal.UseSSL = true
 
 ### <a name="linkxml"></a>Link.xml
 
-如果應用程式先前使用 MRTK 的 NuGet 散發套件，則已 `link.xml` 從基礎封裝中移除該檔案。 若要還原程式碼保留規則，請在 Unity 中開啟專案一次，並在中建立預設檔案 `link.xml` `Assets/MixedRealityToolkit.Generated` 。 建議將此檔案 (，並 `link.xml.meta`) 新增至原始檔控制。
+如果應用程式先前使用了 MRTK 的 NuGet 分佈，則已 `link.xml` 從基礎封裝中移除該檔案。 若要還原程式碼保留規則，請在 Unity 中開啟專案一次，並在中建立預設檔案 `link.xml` `Assets/MixedRealityToolkit.Generated` 。 建議將此檔案 (，並 `link.xml.meta`) 新增至原始檔控制。
 
 ### <a name="transform-constraint-changes"></a>轉換條件約束變更
 
@@ -311,7 +311,7 @@ TargetTransform 屬性已標示為過時，因為條件約束系統未使用它�
 
 ### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException 透過 Unity 匯入範例的時機封裝管理員
 
-視專案路徑的長度而定，透過 Unity 匯入範例封裝管理員可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
+視專案路徑的長度而定，透過 unity 匯入範例封裝管理員可能會在 unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>未指定空間定位器。 應用程式將不支援空間音效
 
@@ -320,7 +320,7 @@ TargetTransform 屬性已標示為過時，因為條件約束系統未使用它�
 若要解決此問題，請確定：
 
 - **視窗**  > **封裝管理員** 已安裝一或多個 XR 套件
-- **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
+- **混合現實工具**  >  組 **公用程式**  > **設定 Unity Project** 並為 **音訊空間定位器** 進行選取
 
   ![選取音訊空間定位器](images/SpatializerSelection.png)
 

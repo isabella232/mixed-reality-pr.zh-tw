@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c3238aed60f6bbf824c74c034ddf506f49f436c7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 018d6bf2087b73697a1e1f43e206c96ae25e1f21
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121646"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177218"
 ---
 # <a name="using-the-visual-profiler"></a>使用 visual profiler
 
@@ -34,7 +34,7 @@ Visual Profiler 介面包含下列元件：
 
 - [畫面播放速率](#frame-rate)
 - [畫面格時間](#frame-time)
-- [框架圖形](#frame-graph)
+- [框架 Graph](#frame-graph)
 - [記憶體使用率](#memory-utilization)
 
 ### <a name="frame-rate"></a>畫面播放速率
@@ -47,7 +47,7 @@ Visual Profiler 介面包含下列元件：
 - Windows Mixed Reality Ultra：90
 
 > [!NOTE]
-> 由於在 [預設的 MRC 為使用中時，在 HoloLens 上的畫面播放速率節流](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)，因此當影片和相片被捕獲時，visual profiler 會自行隱藏。 這項設定可以在診斷系統設定檔中覆寫。
+> 由於[預設的 MRC 為使用中時，HoloLens 的畫面播放速率節流](/windows/mixed-reality/mixed-reality-capture-for-developers#what-to-expect-when-mrc-is-enabled-on-hololens)，因此當影片和相片被捕獲時，visual profiler 會自行隱藏。 這項設定可以在診斷系統設定檔中覆寫。
 
 ### <a name="frame-time"></a>畫面格時間
 
@@ -62,7 +62,7 @@ Visual Profiler 介面包含下列元件：
 
 框架圖形提供應用程式框架速率歷程記錄的圖形顯示。
 
-![Visual Profiler 缺少框架圖形](../images/diagnostics/VisualProfilerMissedFrames.png)
+![Visual Profiler 缺少框架 Graph](../images/diagnostics/VisualProfilerMissedFrames.png)
 
 使用應用程式時，請尋找遺漏的框架，指出應用程式未達到其目標畫面播放速率，而且可能需要優化工作。
 
@@ -70,7 +70,7 @@ Visual Profiler 介面包含下列元件：
 
 記憶體使用量顯示可讓您輕鬆瞭解目前的視圖如何影響應用程式的記憶體耗用量。
 
-![Visual Profiler 記憶體圖表](../images/diagnostics/VisualProfilerMemory.png)
+![Visual Profiler 記憶體 Graph](../images/diagnostics/VisualProfilerMemory.png)
 
 使用應用程式時，請尋找總記憶體使用量。 關鍵指標包括接近記憶體限制，以及快速變更使用方式。
 

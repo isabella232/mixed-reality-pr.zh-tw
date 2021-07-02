@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、裁剪基本、
-ms.openlocfilehash: 35b7166045986df34eaf2c23161efc6379160ead
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c3331084f87ccc57208426910d84ed7bef457bc1
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145202"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176744"
 ---
 # <a name="clipping-primitive"></a>裁剪基本
 

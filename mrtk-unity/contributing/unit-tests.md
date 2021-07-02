@@ -1,18 +1,18 @@
 ---
-title: 單元測試
+title: 撰寫和執行測試
 description: 檢查 MRTK 可靠性的單元測試。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: a915b005a69de1864a5674bbb0363f18d1c74b19
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121346"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177109"
 ---
-# <a name="writing-and-running-tests-in-mrtk"></a>在 MRTK 中撰寫和執行測試
+# <a name="writing-and-running-tests"></a>撰寫和執行測試
 
 為了確保 MRTK 可靠，MRTK 有一組測試，以確保程式碼的變更不會回歸現有的行為。 在大型程式碼基底（例如 MRTK）中提供良好的測試涵蓋範圍，對穩定性很重要，並且在進行變更時具有自信。
 
@@ -270,7 +270,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 ```
 
 請考慮將測試放置在類似于其對應的非測試檔案的資料夾階層中。
-例如：
+例如︰
 
 ```md
 Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs

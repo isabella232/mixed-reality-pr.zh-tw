@@ -1,18 +1,18 @@
 ---
-title: 更新
+title: 從較早的版本更新
 description: 從較低版本的 MRTK 遷移的檔。
 author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 97f45328bc8f9b811e815da0240138790db699c6
-ms.sourcegitcommit: 0b09536c16f6802acc120a973d720aec7e30f617
+ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/20/2021
-ms.locfileid: "107742234"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175098"
 ---
-# <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
+# <a name="updating-from-earlier-versions"></a>從較早的版本更新
 
 - [升級至新版本的 MRTK](#upgrading-to-a-new-version-of-mrtk)
 - [2.3.0 至2.4。0](#updating-230-to-240)
@@ -26,7 +26,7 @@ ms.locfileid: "107742234"
 請遵循下列指示，找出您目前所使用的 MRTK 版本：
 
 1. 在 Unity 中開啟您的 MRTK 專案
-2. 在您的 [專案] 視窗中，流覽至 "MixedRealityToolkit" 資料夾
+2. 流覽至 Project 視窗中的 "MixedRealityToolkit" 資料夾
 3. 開啟名為「版本」的檔案
 
 如果上述的檔案和資料夾不存在，您就會使用較新版本的 MRTK。 在此情況下，請嘗試下列動作：
@@ -41,7 +41,7 @@ ms.locfileid: "107742234"
 
 下列指示說明2.5.0 升級路徑的2.4.0。 如果您的專案是在2.3.0 或更早版本上，請閱讀各 [版本之間](#updating-230-to-240) 的變更，以瞭解升級路徑，或閱讀先前版本 [的指示](https://microsoft.github.io/MixedRealityToolkit-Unity/version/releases/2.4.0/Documentation/Updating.html) ，以進行版本版本的升級。
 
-### <a name="mixed-reality-feature-tool"></a>混合現實功能工具
+### <a name="mixed-reality-feature-tool"></a>混合實境功能工具
 將 MRTK 升級至較新版本的 MRTK 最簡單的方式，就是使用「 [混合現實」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool) 來下載最新的套件，並將它們直接載入至 Unity 專案。
 
 如果專案先前使用 Unity 資產 ( unitypackage) 檔案，請參閱 [這些指示](#switching-from-unity-asset-files-to-mixed-reality-feature-tool)。 
@@ -81,10 +81,10 @@ ms.locfileid: "107742234"
     - 從階層中刪除 **MixedRealityToolkit** 和 **MixedRealityPlayspace**（如果有的話）。 這將會刪除主要相機，但會在下一個步驟中重新建立。 如果已手動變更主要相機的任何內容，則在建立新的相機之後，必須手動重新套用這些屬性。
     - 選取 **MixedRealityToolkit-> 新增至場景並設定**
     - 選取 **MixedRealityToolkit-> 公用程式-> update-> 控制器對應設定檔** (只需要進行一次) -這會以更新的座標軸和資料更新任何自訂控制器對應設定檔，同時讓您的自訂指派輸入動作保持不變
-1. 執行 [遷移工具](../features/tools/migration-window.md) 並在 *完整的專案* 上執行工具，以確保您的所有程式碼都更新為最新版本。
+1. 執行 [遷移工具](../features/tools/migration-window.md)並在 *完整的 Project* 上執行工具，以確保您的所有程式碼都更新為最新版本。
    [遷移] 視窗包含許多不同的遷移處理常式，每個處理常式都必須自行執行。 此步驟包含：
    - 從 [ **遷移處理常式選取專案** ] 下拉式清單中，選取第一個遷移處理常式。
-   - 按一下 [完整專案] 按鈕。
+   - 按一下 [完整 Project] 按鈕。
    - 按一下 [新增要遷移的完整專案] 按鈕 (這會掃描整個專案以取得要遷移) 的物件。
    - 按一下 [遷移] 按鈕，如果找到任何 migrateable 物件，則應啟用此按鈕。
    - 針對下拉式清單中的每個遷移處理常式重複上述三個步驟。
@@ -228,7 +228,7 @@ Gltf 網格基本屬性是用來設定的，現在它們是唯讀的。 還原�
 
 **適用于 Unity 的 MSBuild**
 
-此版本的 MRTK 使用與舊版 MSBuild for Unity 的較新版本。 在專案載入期間，如果較舊的版本列在 Unity 套件管理員資訊清單中，則會顯示 [設定] 對話方塊，並核取 [啟用 MSBuild for Unity] 選項。 應用程式將會執行升級。
+此版本的 MRTK 會針對 Unity 使用較舊版本的 MSBuild，而不是先前的版本。 在專案載入期間，如果較舊的版本列在 Unity 套件管理員資訊清單中，則會顯示 [設定] 對話方塊，並核取 [啟用 Unity 的 MSBuild] 選項。 應用程式將會執行升級。
 
 **ScriptingUtilities**
 

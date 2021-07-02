@@ -1,18 +1,18 @@
 ---
-title: 場景系統開始使用
+title: 場景系統入門
 description: 具有 MRTK 之場景系統的登陸頁面
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 205b89d4defdeb5418a8a82896551d681cccde3d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 16adf431498f8146ca2cc60565e59dc8ae03fd92
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144302"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177574"
 ---
-# <a name="scene-system-overview"></a>場景系統總覽
+# <a name="scene-system-getting-started"></a>場景系統入門
 
 ## <a name="when-to-use-the-scene-system"></a>使用場景系統的時機
 
@@ -69,7 +69,7 @@ ms.locfileid: "110144302"
 
 ## <a name="editor-settings"></a>編輯器設定
 
-根據預設，場景系統會在 Unity 編輯器中強制執行數個行為。 如果您發現任何這些行為很繁重，可以在場景系統設定檔的 **編輯器設定** 區段中加以停用。
+根據預設，場景系統會在 Unity 編輯器中強制執行數個行為。 如果您發現任何這些行為繁重，可以在場景系統設定檔的 **編輯器設定** 區段中加以停用。
 
 - `Editor Manage Build Settings:` 若為 true，服務會自動更新您的組建設定，以確保所有管理員、光源和內容場景都會加入。 如果您想要完全掌控組建設定，請停用此值。
 

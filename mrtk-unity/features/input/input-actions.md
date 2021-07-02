@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、InputActions、
-ms.openlocfilehash: 071d4bc8bb4193a3d60cb53852c192ae975d79df
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: cf6ce2af304ee1cd706d0111d66a97018113fb09
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144151"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176813"
 ---
 # <a name="input-actions"></a>輸入動作
 
@@ -24,7 +24,7 @@ ms.locfileid: "110144151"
 
 這些是 **軸條件約束** 最常使用的值：
 
-軸條件約束 | Description
+軸條件約束 | 描述
 --- | ---
 Digital | 開啟/關閉輸入，例如遊戲台或滑鼠中的二進位按鈕。
 單一軸 | 單一軸將輸入與遊戲中的類比觸發程式相似。

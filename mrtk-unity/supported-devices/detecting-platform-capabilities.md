@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、功能、
-ms.openlocfilehash: e6f5a70120b2634a4c8c75cdca3d8b369967c4b0
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 70d320e178f4635d74b5be6a1874eb4254801719
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143861"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175521"
 ---
 # <a name="detecting-platform-capabilities"></a>偵測平臺功能
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 6b317afd4be6ed58a6e5ff7fe7075b5379a1caa1
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403478"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175566"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -31,7 +31,7 @@ ms.locfileid: "111403478"
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
-3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如 AzureSpatialAnchors
 

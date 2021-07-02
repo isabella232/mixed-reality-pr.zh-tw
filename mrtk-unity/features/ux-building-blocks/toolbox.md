@@ -5,14 +5,14 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 工具箱
-ms.openlocfilehash: cddd18dbba2acad532a9fd86b6e4a67c10243575
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7f223d092caa546ffdb91d32ec28c4c9ef827d85
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104688998"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175615"
 ---
-# <a name="toolbox-ui"></a>工具箱 UI
+# <a name="toolbox"></a>工具箱
 
 MRTK 工具箱是 Unity 編輯器視窗公用程式，可讓您輕鬆地探索 MRTK UX 預製專案元件並產生到目前的場景中。 您可以使用視窗頂端的搜尋列，在 view 中篩選項目。 [工具箱] 視窗的設計目的是要將 MRTK 的現成 prefabs 產生到目前的場景中。 還有其他 "UX" 元件可以加入為腳本元件，例如 [界限控制項](bounds-control.md) 或 [物件](object-manipulator.md) 操作工具控制項。
 

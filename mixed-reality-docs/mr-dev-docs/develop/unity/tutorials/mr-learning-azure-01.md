@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, 混合實境, unity, 教學課程, hololens, hololens 2, azure blob 儲存體, azure 表格儲存體，azure spatial anchors, azure bot framework, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e01cbc329236b1d0f32dc0534e0f3472dcd88be
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: c38f3102adfb5178a4d2b5429eeb24c0733db50a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110711997"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175537"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.適用於 HoloLens 2 的 Azure 雲端服務
 
@@ -86,7 +86,7 @@ ms.locfileid: "110711997"
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「Azure 雲端教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
-3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如 AzureCloudServices
 
@@ -111,7 +111,7 @@ ms.locfileid: "110711997"
 * [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-02.md#importing-the-tutorial-assets) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
 

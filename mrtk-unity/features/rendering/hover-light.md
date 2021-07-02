@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、停留燈、
-ms.openlocfilehash: b98dff0dd3ff0312f6ce607a5fb8a26f94959ff2
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ed45d3345931376283cfca2372ac57459c777f6e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145171"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176733"
 ---
 # <a name="hover-light"></a>停留燈
 
-[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)是一種[Fluent Design 系統](https://www.microsoft.com/design/fluent/)範例，會模擬停留在物件介面附近的[點光線](https://docs.unity3d.com/Manual/Lighting.html)。 通常用於遠離互動，應用程式可以透過元件來控制停留光的屬性 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 。
+[`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight)是一種[Fluent Design 系統](https://www.microsoft.com/design/fluent/)的典範，會模擬停留在物件介面附近的[點淺色](https://docs.unity3d.com/Manual/Lighting.html)。 通常用於遠離互動，應用程式可以透過元件來控制停留光的屬性 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 。
 
 您 [`HoverLight`](xref:Microsoft.MixedReality.Toolkit.Utilities.HoverLight) 必須使用「 *混合現實工具* 組」/「標準著色器」所影響的材質，而且必須啟用「暫止 *燈* 」屬性。
 

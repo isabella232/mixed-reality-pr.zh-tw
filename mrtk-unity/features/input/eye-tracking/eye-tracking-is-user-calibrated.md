@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、校正、
-ms.openlocfilehash: d7ae9885b77798b44b3d63bb7f92283658e05411
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: a2023a2d7f6a0254e8fef32f4faf09def956e94f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144003"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177207"
 ---
 # <a name="eye-calibration"></a>眼睛校正
 
@@ -92,4 +92,4 @@ MRTK 中的眼睛追蹤設定是透過介面進行設定 [`IMixedRealityEyeGazeP
 - [MRTK 眼追蹤總覽](eye-tracking-main.md)
 - [MRTK 眼睛追蹤設定](eye-tracking-basic-setup.md)
 - [透過程式碼 MRTK 眼睛追蹤](eye-tracking-eye-gaze-provider.md)
-- [HoloLens 2 眼睛追蹤檔](/windows/mixed-reality/eye-tracking)
+- [HoloLens 2目視追蹤檔](/windows/mixed-reality/eye-tracking)

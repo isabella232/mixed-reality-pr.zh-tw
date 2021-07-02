@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器, 網格物件集合
 ms.localizationpriority: high
-ms.openlocfilehash: 28cebe871e1046e8668a079affabf6167632cfa4
-ms.sourcegitcommit: 4fb961beeebd158e2f65b7c714c5e471454400a3
+ms.openlocfilehash: d5d10893ba8274139c6e09b8cd426d58a0b3a0cb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/30/2021
-ms.locfileid: "105983019"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175476"
 ---
 # <a name="4-positioning-objects-in-the-scene"></a>4.將物件置放在場景中
 
@@ -24,6 +24,37 @@ ms.locfileid: "105983019"
 
 * 了解如何將物件放置在場景中
 * 了解如何使用 MRTK 的網格物件集合功能
+
+## <a name="importing-the-textmeshpro-essential-resources"></a>匯入 TextMeshPro 基本資源
+MRTK 的 UI 元素需要 TextMeshPro 基本資源。 在 Unity 功能表中，選取 [視窗] >  [TextMeshPro]  >  [匯入 TMP 基本資源] 以開啟 [匯入 Unity 套件] 視窗：
+
+![Unity [匯入 TMP 基本資源] 功能表路徑](images/mr-learning-base/base-02-section3-step1-1.png)
+
+在 [匯入 Unity 套件] 視窗中，按一下 [全部] 按鈕以確保選取所有資產，然後按一下 [匯入] 按鈕來匯入資產：
+
+![Unity [TMP 基本資源] 匯入視窗](images/mr-learning-base/base-02-section3-step1-2.png)
+
+## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
+
+下載下列 Unity 自訂套件。 此套件包含您將在本教學課程中使用的3D 資產，例如 Mars Rover。
+
+* [MRTK.HoloLens2. GettingStarted. 2.5.0.1. unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/getting-started-v2.5.0/MRTK.HoloLens2.Unity.Tutorials.Assets.GettingStarted.2.5.0.1.unitypackage)
+
+若要匯入 unity 自訂套件，請在 Unity 功能表中，選取 [**資產** 匯  >  **入套件**  >  **自訂套件 ...** ] 開啟 [匯入封裝 ...]視窗：
+
+![匯入自訂套件](images/mr-learning-base/base-02-section7-step1-1.png)
+
+在 [匯入封裝 ...]視窗中，選取 **MRTK。HoloLens2** 您下載的 GettingStarted，然後按一下 [開啟] 按鈕：
+
+![選取資產套件](images/mr-learning-base/base-02-section7-step1-2.png)
+
+在 [匯入 Unity 封裝] 視窗中，按一下 [全部] 按鈕以確保所有資產都已選取，然後按一下 [匯入] 按鈕以匯入資產：
+
+![選取要匯入的所有資產](images/mr-learning-base/base-02-section7-step1-3.png)
+
+匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
+
+![匯入資產後的 Unity 專案視窗](images/mr-learning-base/base-02-section7-step1-4.png)
 
 ## <a name="creating-the-parent-object"></a>建立父物件
 

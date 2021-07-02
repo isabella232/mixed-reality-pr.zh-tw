@@ -1,16 +1,16 @@
 ---
-title: ManipulationHandler
+title: 操作處理常式
 description: MRTK 中操作處理常式的相關檔
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、操作、
-ms.openlocfilehash: bd5a073aa763da2c13e64436f8a4785db1219690
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 179ef40ba054b0fda3b13e9d578905eb064a58ab
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689228"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176629"
 ---
 # <a name="manipulation-handler"></a>操作處理常式
 
@@ -67,10 +67,10 @@ ms.locfileid: "104689228"
 
 **發行行為** 釋放物件時，請指定其實體移動行為。 要求 rigidbody 元件必須在該物件上。
 
-* *Nothing*
+* *什麼*
 * *所有項目*
 * *保持速度*
-* *保持角度速度*
+* *維持 Angular 速度*
 
 **旋轉的條件約束** 指定當互動時，物件將旋轉的軸。
 

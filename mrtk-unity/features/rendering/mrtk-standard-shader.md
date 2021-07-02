@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、材質著色器
-ms.openlocfilehash: 8b570ebb023305cecbeca16b32832417a3f57cce
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0a92388bc9be7c11967501709031f559f17f8966
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145113"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176444"
 ---
 # <a name="mrtk-standard-shader"></a>MRTK 標準著色器
 
 ![標準著色器範例](../images/mrtk-standard-shader/MRTK_StandardShader.jpg)
 
-MRTK 標準陰影系統利用單一、彈性的著色器，其可達成與 Unity 標準著色器類似的視覺效果、實行 [Fluent Design 系統](https://www.microsoft.com/design/fluent/) 準則，並在混合現實裝置上維持效能。
+MRTK 標準陰影系統利用單一、彈性的著色器，其可達成與 Unity 標準著色器類似的視覺效果、實行[Fluent Design 系統](https://www.microsoft.com/design/fluent/)準則，並在混合現實裝置上維持效能。
 
 ## <a name="example-scenes"></a>範例場景
 
@@ -40,7 +40,7 @@ MRTK/標準著色器的自訂材質偵測器已被呼叫 [`MixedRealityStandardS
 
 偵測器的第一個部分會控制材質的呈現狀態。 轉譯 *模式* 會決定呈現材質的時間和方式。 MRTK/標準著色器的目的是要鏡像 [Unity/standard 著色器中所找到](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html)的轉譯模式。 MRTK/Standard 著色器也包含完整使用者控制項的 *加法* 轉譯模式和 *自訂* 呈現模式。
 
-| 轉譯模式 |         Description                                                       |
+| 轉譯模式 |         描述                                                       |
 |----------------|---------------------------------------------------------------------------|
 | Opaque         |  (預設) 適用于沒有透明區域的一般純色物件。    |
 | 剪影         | 允許建立透明效果，其在不透明和透明區域之間具有固定邊緣。 在此模式中，沒有半透明的區域，材質可能是100% 不透明或不可見。 使用透明度建立材質（例如植被指數）的形狀時，這非常有用。 |
@@ -51,7 +51,7 @@ MRTK/標準著色器的自訂材質偵測器已被呼叫 [`MixedRealityStandardS
 
 ![轉譯模式](../images/mrtk-standard-shader/MRTK_RenderingModes.jpg)
 
-| 挑選模式 |             Description                                                                                                                                                                       |
+| 挑選模式 |             描述                                                                                                                                                                       |
 |-----------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|
 | 關閉       | 停用臉部剔除。 只有在需要雙側邊網格時，才應該將剔除設定為 Off。                                                                                        |
 | Front     | 啟用 front 臉部剔除。                                                                                                                                                        |
@@ -118,13 +118,13 @@ MRTK 標準陰影系統可與 Unity 的內建 [UI 系統](https://docs.unity3d.c
 
 ## <a name="texture-combiner"></a>材質結合器
 
-若要改善每個圖元金屬的 Unity 標準著色器的同位，可透過 [通道封裝](http://wiki.polycount.com/wiki/ChannelPacking)來控制平滑度、放射和遮蔽值。 例如：
+若要改善每個圖元金屬的 Unity 標準著色器的同位，可透過 [通道封裝](http://wiki.polycount.com/wiki/ChannelPacking)來控制平滑度、放射和遮蔽值。 例如︰
 
 ![通道對應範例](../images/mrtk-standard-shader/MRTK_ChannelMap.gif)
 
 當您使用通道封裝時，您只需要將一個材質取樣並載入到記憶體中，而不是四個不同的材質。 當您在諸如材質或 Photoshop 的程式中撰寫材質地圖時，您可以將它們封裝如下：
 
-| 通路 | 屬性             |
+| 管道 | 屬性             |
 |---------|----------------------|
 | 紅色     | 金屬             |
 | 綠色   | 遮蔽            |

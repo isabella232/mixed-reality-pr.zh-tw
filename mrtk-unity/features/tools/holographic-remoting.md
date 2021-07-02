@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 196bbb7027389ea75ddc577e4efc397ca779d550
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 0fbde863185a9f51b53192a338e9403dc79248db
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647177"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176644"
 ---
 # <a name="holographic-remoting"></a>全像攝影遠端處理
 
@@ -24,14 +24,14 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 1. 開啟 **視窗 > 封裝管理員**
     - 如果使用舊版 XR：確認已安裝最新版的 **Windows Mixed Reality** 套件。
-    - 如果使用 XR SDK：請確認已安裝最新版的 **WINDOWS XR 外掛程式** 套件。
-1. 確定已在 HoloLens 上透過 Microsoft Store 安裝最新的全像全像遠端處理應用程式。
+    - 如果使用 XR SDK：請確認已安裝最新版的 **Windows XR 外掛程式** 套件。
+1. 透過 Microsoft Store，確定已在 HoloLens 上安裝最新的全像全像遠端處理應用程式。
 
 請根據專案中使用的管線，繼續閱讀 [舊版 XR 安裝指示](#legacy-xr-setup-instructions) 或 [XR SDK 設定指示](#xr-sdk-setup-instructions) 。
 
 ## <a name="legacy-xr-setup-instructions"></a>舊版 XR 安裝指示
 
-下列指示僅適用于使用 HoloLens 2 的遠端處理。 如果您只使用 HoloLens (第1代) 進行遠端處理，請跳至 [使用 wi-fi 連線到 hololens](#connecting-to-the-hololens-with-wi-fi)。
+下列指示僅適用于使用 HoloLens 2 的遠端處理。 如果您只使用 HoloLens (第1代) 執行遠端處理，請跳至[使用 wi-fi 連接到 HoloLens](#connecting-to-the-hololens-with-wi-fi)。
 
 使用 HoloLens 2 時，已將對遠端的已表達和眼睛追蹤資料的支援新增至 MRTK。 若要啟用這些功能，請遵循將 DotNetWinRT 匯 [入到專案](#import-dotnetwinrt-into-the-project)中所述的步驟。
 
@@ -61,12 +61,12 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 #### <a name="dotnetwinrt_present-define-written-into-player-settings"></a>DOTNETWINRT_PRESENT 定義寫入播放機設定
 
 > [!NOTE]
-> 使用 Unity 2019.4 和更新版本時，DOTNETWINRT_PRESENT 定義會包含在適當的 asmdef 檔案中，而不是包含在 Unity Player 設定中。 不需要檢查設定步驟。
+> 使用 Unity 2019.4 和更新版本時，DOTNETWINRT_PRESENT 定義會包含在適當的 asmdef 檔案中，而不是 Unity Player 設定。 不需要檢查設定步驟。
 
 從 MRTK 版本2.5.0 開始，基於效能的考慮，不再自動設定此 #define。 若要啟用此旗標，請使用 **Mixed Reality** 工具組  >  **公用程式**  >  **Windows Mixed Reality**  >  **檢查** 設定功能表項目。
 
 > [!Note]
-> 檢查設定專案不會顯示確認。 若要確認已設定定義，請流覽至 Unity Player 設定。 從該處的 [UWP] 索引標籤底下，檢查腳本定義符號的其他設定。 請確定已在該清單中正確寫入 DOTNETWINRT_PRESENT。 如果有的話，這個步驟就成功了。
+> 檢查設定專案不會顯示確認。 若要確認已設定定義，請流覽至 Unity Player 設定。 從該處的 [UWP] 索引標籤下，檢查腳本定義符號的 [其他設定] 下的。 請確定已在該清單中正確寫入 DOTNETWINRT_PRESENT。 如果有的話，這個步驟就成功了。
 
 ![DotNetWinRT 存在](../images/tools/remoting/DotNetWinRTPresent.png)
 
@@ -76,15 +76,15 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 ## <a name="xr-sdk-setup-instructions"></a>XR SDK 安裝指示
 
-遵循 [[開始使用 MRTK 和 XR SDK] 頁面上的 Windows Mixed Reality 設定指示](../../configuration/getting-started-with-mrtk-and-xrsdk.md#windows-mixed-reality) ，並務必執行編輯器前 HoloLens 遠端處理所需的步驟。
+遵循[[開始使用 MRTK 和 XR SDK] 頁面上的 Windows Mixed Reality 設定指示](../../configuration/getting-started-with-mrtk-and-xrsdk.md#windows-mixed-reality)，並務必執行編輯器 HoloLens 遠端處理所需的步驟。
 
 ## <a name="connecting-to-the-hololens-with-wi-fi"></a>使用 Wi-Fi 連接到 HoloLens
 
 設定好專案之後，就可以建立 HoloLens 的連接。
 
-1. 在 [檔案 **> 組建設定**] 中，確定 [專案組建類型] 已設定為 [ **通用 Windows 平臺**
-1. 在 HoloLens 上啟動全像 **遠端處理** 應用程式。
-1. 在 Unity 中，如果使用 **XR SDK (，請選取 Window > XR (> 全像 XR) /WINDOWS XR 外掛程式遠端處理)**。
+1. 在 [檔案 **> 組建設定** 中，確定專案組建類型設定為 [**通用 Windows 平臺**
+1. 在 HoloLens 上，啟動全像的 **遠端處理** 應用程式。
+1. 在 Unity 中，如果使用 XR SDK Windows，請選取 [ **Window > XR] > [全像 XR] () / (XR 外掛程式遠端)**。
 
     ![開始全像模擬](../images/tools/remoting/StartHolographicEmulation.png)
 
@@ -107,11 +107,11 @@ XR SDK （如下所述）是 unity [2019.3 及更高的 unity 新 XR 管線](htt
 
 ## <a name="connecting-to-the-hololens-with-usb-cable"></a>使用 USB 纜線連接到 HoloLens
 
-USB 纜線連接可提供更佳的轉譯品質和穩定性。 若要使用 USB 纜線連線，請從 Wi-Fi HoloLens 與 HoloLens 的設定中斷連線，並啟動全像遠端播放機應用程式。 它會顯示開頭為169的 IP 位址。 在 Unity 的全像模擬設定中使用此 IP 位址來連接。 一旦識別出 USB 纜線的 IP 位址之後，就可以安全地將 HoloLens 連接到 Wi-Fi。
+USB 纜線連接可提供更佳的轉譯品質和穩定性。 若要使用 USB 纜線連線，請在 HoloLens 的設定中中斷與 Wi-Fi HoloLens 的連線，並啟動全像遠端播放機應用程式。 它會顯示開頭為169的 IP 位址。 在 Unity 的全像模擬設定中使用此 IP 位址來連接。 一旦識別出 USB 纜線的 IP 位址之後，就可以安全地將 HoloLens 連接到 Wi-Fi。
 
 ## <a name="starting-a-remoting-session"></a>啟動遠端會話
 
-將 Unity 連接到 HoloLens 之後，請在編輯器中輸入播放模式。
+當 Unity 連接到 HoloLens，請在編輯器中輸入播放模式。
 
 當會話完成時，結束播放模式。
 

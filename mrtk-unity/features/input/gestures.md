@@ -5,28 +5,28 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手勢、
-ms.openlocfilehash: a26c7b9f51db2162daf2176e6d2125ffb6061c27
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: 7bbc97ab5e23a69356d523c463aa37c013d70337
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550928"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176878"
 ---
 # <a name="gestures"></a>軌跡
 
 手勢是根據人為手的輸入活動。 有兩種類型的裝置會在 MRTK 中引發手勢輸入事件：
 
-- Windows Mixed Reality 的裝置，例如 HoloLens。 這會描述捏合運動 ( 「點擊」 ) 和點擊和按住手勢。
+- Windows Mixed Reality 裝置，例如 HoloLens。 這會描述捏合運動 ( 「點擊」 ) 和點擊和按住手勢。
 
-  如需 HoloLens 手勢的詳細資訊，請參閱 [Windows Mixed Reality 手勢檔](/windows/mixed-reality/gestures)。
+  如需 HoloLens 手勢的詳細資訊，請參閱[Windows Mixed Reality 手勢檔](/windows/mixed-reality/gestures)。
 
-  [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager) 包裝 [UNITY XR。Wsa。GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html) ，以使用來自 HoloLens 裝置的 Unity 手勢事件。
+  [`WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityDeviceManager)包裝[UNITY XR。Wsa。GestureRecognizer](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.GestureRecognizer.html)從 HoloLens 裝置取用 Unity 的手勢事件。
 
 - 觸控式螢幕裝置。
 
   [`UnityTouchController`](xref:Microsoft.MixedReality.Toolkit.Input.UnityInput) 包裝支援實體觸控畫面的 [Unity 觸控類別](https://docs.unity3d.com/ScriptReference/Touch.html) 。
 
-這兩個輸入來源都使用 _手勢設定_ 設定檔，分別將 Unity 的觸控和手勢事件轉譯成 MRTK 的 [輸入動作](input-actions.md)。 此設定檔可在 _輸入系統設定_ 設定檔下找到。
+這兩個輸入來源都使用 _手勢設定_ 設定檔，分別將 Unity 的觸控和手勢事件轉譯成 MRTK 的 [輸入動作](input-actions.md)。 您可以在 _輸入系統設定_ 設定檔中找到此設定檔。
 
 <img src="../images/input/GestureProfile.png" alt="Gesture Profile" style="max-width:100%;">
 
@@ -39,7 +39,7 @@ ms.locfileid: "105550928"
 在執行泛型版本時， *OnGestureCompleted* 和 *OnGestureUpdated* 事件可以接收下列類型的類型資料：
 
 - `Vector2` -2D 位置手勢。 由觸控畫面產生，以通知他們 [`deltaPosition`](https://docs.unity3d.com/ScriptReference/Touch-deltaPosition.html) 。
-- `Vector3` -3D 位置手勢。 由 HoloLens 產生以通知：
+- `Vector3` -3D 位置手勢。 由 HoloLens 所產生，告知：
   - [`cumulativeDelta`](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.ManipulationUpdatedEventArgs-cumulativeDelta.html) 操作事件的
   - [`normalizedOffset`](https://docs.unity3d.com/ScriptReference/XR.WSA.Input.NavigationUpdatedEventArgs-normalizedOffset.html) 流覽事件的
 - `Quaternion` -3D 旋轉手勢。 可供自訂輸入來源使用，但目前不是由任何現有專案所產生。

@@ -5,20 +5,20 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 0f1a9edd9f9a31e7ba20f630406b299909a4864c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 77bdaedb60700bac27643ae718c795c02e5ee7e7
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121246"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177096"
 ---
-# <a name="configuring-the-boundary-visualization"></a>設定界限視覺效果
+# <a name="configuring-boundary-visualization"></a>設定界限視覺效果
 
 *界限視覺效果設定檔* 提供的選項可用來設定界限系統的視覺效果美學和其他相關參數。 界限視覺效果會附加至場景中的 Mixed Reality Playspace 物件，並隨使用者傳送。
 
 ## <a name="general-settings"></a>一般設定
 
-![界限視覺效果一般設定](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![界限視覺效果的一般設定](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>界限高度
 
@@ -97,7 +97,7 @@ ms.locfileid: "113121246"
 
 ## <a name="boundary-ceiling-settings"></a>界限上限設定
 
-![界限視覺效果界限上限設定](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![界限視覺效果邊界上限設定](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **顯示**
 

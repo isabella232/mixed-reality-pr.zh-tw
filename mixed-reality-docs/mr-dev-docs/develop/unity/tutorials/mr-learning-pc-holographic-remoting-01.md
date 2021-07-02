@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 4702a9987a2018b848e53e03f9e5b37356d52088
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392335"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175431"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
@@ -34,7 +34,7 @@ ms.locfileid: "112392335"
 * 已[安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦
 * 基本 C# 程式設計知識
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 已掛接 UNITY 2020/2019 LTS，並已新增通用 Windows 平臺組建支援模組
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">unity 中樞</a>已掛接 unity 2020/2019 LTS，並已新增通用 Windows 平臺組建支援模組
 
 **強烈建議** 先完成 [使用者入門](mr-learning-base-01.md)教學課程系列或一些基本的 Unity 和 MRTK 體驗，再繼續執行。
 
@@ -48,13 +48,9 @@ ms.locfileid: "112392335"
 為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
-
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
-
-3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
-
 5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如「電腦全像攝影遠端處理」
 
 然後遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option)指示，將場景的 MRTK 設定檔變更為 **DefaultHoloLens2ConfigurationProfile**。 將空間感知網格的顯示選項變更為 **遮蔽**。

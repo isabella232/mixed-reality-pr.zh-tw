@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 62475f32ac0a91583bc80456c1b9d1b0d8bbb539
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 0a89ef77bee7eff83d4599c46ffd2681c99b2165
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403477"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175568"
 ---
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
@@ -26,7 +26,7 @@ ms.locfileid: "111403477"
 ![匯入教學課程資產後的 Unity 階層、場景和專案視窗](../images/mr-learning-asa/asa-02-section3-step1-2-OpenXR.png)
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](../mr-learning-base-02.md#importing-the-tutorial-assets)的   指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](../mr-learning-base-04.md#importing-the-tutorial-assets)的   指示。
 
 # <a name="unity-2020--windows-xr-plugin"></a>[Unity 2020 + Windows XR 外掛程式](#tab/winxr)
 
@@ -48,7 +48,7 @@ ms.locfileid: "111403477"
 ![匯入教學課程資產後的 Unity 階層、場景和專案視窗](../images/mr-learning-asa/asa-02-section3-step1-2-XRSDK.PNG)
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](../mr-learning-base-02.md#importing-the-tutorial-assets)的   指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](../mr-learning-base-04.md#importing-the-tutorial-assets)的   指示。
 
 # <a name="legacy-wsa"></a>[舊版 WSA](#tab/wsa)
 
@@ -73,4 +73,4 @@ ms.locfileid: "111403477"
 > 如果您看到任何有關於 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' 已過時的 CS0618 警告，您可以忽略這些警告。
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](../mr-learning-base-02.md#importing-the-tutorial-assets)的   指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](../mr-learning-base-04.md#importing-the-tutorial-assets)的   指示。

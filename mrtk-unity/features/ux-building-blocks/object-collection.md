@@ -1,16 +1,16 @@
 ---
-title: ObjectCollection
+title: 物件集合
 description: MRTK 中的物件集合總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、物件集合、
-ms.openlocfilehash: 5fb9eea82a7e6dd17aabea006378e790abeed3a3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8390e9c4a7bd419f99a5c8c4af7e7a2eca1d8f3f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689178"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177048"
 ---
 # <a name="object-collection"></a>物件集合
 

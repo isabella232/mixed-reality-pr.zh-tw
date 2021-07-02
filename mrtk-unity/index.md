@@ -6,12 +6,12 @@ ms.author: kesemple
 ms.date: 03/03/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK
-ms.openlocfilehash: 4339349bd6b9d2dabf9fcbdbb276e2a7265a7f23
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: cf2aa536087af659abe7d124a4dd35ff0175de49
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906987"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177365"
 ---
 # <a name="what-is-the-mixed-reality-toolkit"></a>何謂混合現實工具組
 
@@ -62,7 +62,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 > [安裝工具](/windows/mixed-reality/develop/install-the-tools?tabs=unity)
 
 > [!div class="nextstepaction"]
-> [HoloLens 2 教學課程系列](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
+> [HoloLens 2教學課程系列](/windows/mixed-reality/develop/unity/tutorials/mr-learning-base-02)
 
 想要看看幕後的進展嗎？
 > [!div class="nextstepaction"]
@@ -91,7 +91,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
         **[手動追蹤 <br> (HoloLens 2)](features/input/hand-tracking.md)**<br>
     :::column-end:::
     :::column:::
-        [![ (HoloLens 2) 的眼睛追蹤 ](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md)<br>
+        [![ (HoloLens 2) 的眼睛追蹤](features/images/MRTK_Icon_EyeTracking.png)](features/input/eye-tracking/eye-tracking-Main.md)<br>
         **[<br/> (HoloLens 2) 的眼睛追蹤](features/input/eye-tracking/eye-tracking-Main.md)**<br>
     :::column-end:::
     :::column:::
@@ -209,7 +209,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
     :::column-end:::
     :::column:::
         [ ![ MRTK 標準著色器](features/images/mrtk-standard-shader/MRTK_StandardShader.jpg)](features/rendering/mrtk-standard-shader.md) **[MRTK 標準著色器](features/rendering/mrtk-standard-shader.md)**<br>
-        MRTK 的標準著色器可支援各種流暢的設計項目與效能
+        MRTK 的標準著色器支援各種 Fluent 的設計項目效能
     :::column-end:::
     :::column:::
         [ ![ 手形功能表](features/images/solver/MRTK_UX_HandMenu.png)](features/ux-building-blocks/hand-menu.md) **[](features/ux-building-blocks/hand-menu.md)功能表**<br>
@@ -264,7 +264,7 @@ MRTK-Unity 是由 Microsoft 所推動的專案，其提供一組元件與功能�
 
 :::row:::
     :::column:::
-       [ ![ 手物理服務](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/experimental/hand-physics-service.md)的 **[物理服務 [實驗]](features/experimental/hand-physics-service.md)**<br>
+       [ ![ 手物理服務](features/images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)](features/extensions/hand-physics-service.md)的 **[物理服務 [實驗]](features/extensions/hand-physics-service.md)**<br>
         實際的物理服務可讓您透過明確的方式進行固定的內文衝突事件和互動
     :::column-end:::
     :::column:::
@@ -307,7 +307,7 @@ MRTK 提供範例場景，示範如何使用 MRTK 的功能。 您可以在 [資
 ## <a name="mrtk-examples-hub"></a>MRTK 範例中樞
 
 您可以使用 MRTK 範例中樞來嘗試 MRTK 中的各種範例場景，而不需要建立及部署每個場景。
-您可以在「 [MR」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)中選取「混合現實工具組範例」套件，以下載預先建立的 HoloLens (x86) 、HOLOLENS 2 (ARM) 和 Windows Mixed Reality 沉浸式耳機 (x64) 。 請務必 [使用 Windows 裝置入口網站在 HoloLens (第1代) 上安裝應用程式 ](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens)。 在 HoloLens 2 上，您可以 [透過 Microsoft Store 應用程式下載並安裝 MRTK 範例中樞](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)。
+您可以在「 [MR」功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)中選取「混合現實工具組範例」套件，以下載適用于 HoloLens (x86) 、HoloLens 2 (ARM) 和 Windows Mixed Reality 沉浸式耳機 (x64) 的預先建立應用程式套件。 請務必[使用 Windows 裝置入口網站，在 HoloLens (第1代) 上安裝應用程式](/hololens/hololens-install-apps#use-the-windows-device-portal-to-install-apps-on-hololens)。 在 HoloLens 2 上，您可以[透過 Microsoft Store 應用程式下載並安裝 MRTK 範例中樞](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)。
 
 請參閱 [範例中樞的讀我檔案頁面](features/example-scenes/example-hub.md) ，以瞭解如何使用 MRTK 的場景系統和場景轉換服務建立多場景中樞的詳細資料。
 
@@ -317,7 +317,7 @@ MRTK 提供範例場景，示範如何使用 MRTK 的功能。 您可以在 [資
 
 | [![元素週期表](features/images/MRDL_PeriodicTable.jpg)](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)| [![星系探險](features/images/MRTK_GalaxyExplorer.jpg)](/windows/mixed-reality/galaxy-explorer-update)| [![表面範例應用程式](features/images/MRDL_Surfaces.jpg)](/windows/mixed-reality/sampleapp-surfaces)|
 |:--- | :--- | :--- |
-| 專案的[定期資料表](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)是開放原始碼範例應用程式，示範如何使用 MRTK 的輸入系統和建立區塊來建立 HoloLens 和沉浸式耳機的應用程式體驗。 閱讀移植案例：將專案 [應用程式的定期資料表帶入 MRTK v2 以 HoloLens 2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer) 是一種開放原始碼範例應用程式，最初是在2016年3月的「分享您的想法」活動中所開發。 已使用 MRTK v2，以 HoloLens 2 的新功能更新了 Galaxy Explorer。 閱讀這篇文章： [HoloLens 2 的 Galaxy Explorer](/windows/mixed-reality/galaxy-explorer-update) |介面是 HoloLens 2 的開放原始碼範例應用程式，[它會探索](https://github.com/microsoft/MRDL_Unity_Surfaces)如何使用視覺效果、音訊和完全帶清楚方式的手動追蹤來建立 tactile 刺痛。 查看 Microsoft MR Dev Days session [學習 from surface 應用程式](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) ，以取得詳細的設計和開發案例。 |
+| 專案的[定期資料表](https://github.com/Microsoft/MRDL_Unity_PeriodicTable)是開放原始碼範例應用程式，示範如何使用 MRTK 的輸入系統和建立區塊來建立 HoloLens 和沉浸式耳機的應用程式體驗。 閱讀移植案例：將專案[應用程式的定期資料表帶入 MRTK v2 以 HoloLens 2](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158) |[Galaxy Explorer](https://github.com/Microsoft/GalaxyExplorer)是一種開放原始碼範例應用程式，最初是在2016年3月的 HoloLens 「分享您的想法」活動的一部分進行開發。 已使用 MRTK v2，以 HoloLens 2 的新功能更新了 Galaxy Explorer。 閱讀這篇文章： [HoloLens 2 的 Galaxy Explorer](/windows/mixed-reality/galaxy-explorer-update) |介面是 HoloLens 2 的開放原始碼範例應用程式，[它會探索](https://github.com/microsoft/MRDL_Unity_Surfaces)如何使用視覺效果、音訊和完全帶清楚方式的手動追蹤來建立 tactile 刺痛。 查看 Microsoft MR Dev Days session [學習 from surface 應用程式](https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Learnings-from-the-MR-Surfaces-App) ，以取得詳細的設計和開發案例。 |
 
 ## <a name="session-videos-from-mixed-reality-dev-days-2020"></a>來自混合現實開發日2020的研討會影片
 
@@ -340,11 +340,11 @@ MRTK 提供範例場景，示範如何使用 MRTK 的功能。 您可以在 [資
 此專案採用了 [Microsoft 開放原始碼管理辦法](https://opensource.microsoft.com/codeofconduct/)。
 如需詳細資訊，請參閱[管理辦法常見問題集](https://opensource.microsoft.com/codeofconduct/faq/)，如有其他問題或意見，請連絡 [opencode@microsoft.com](mailto:opencode@microsoft.com)。
 
-## <a name="useful-resources-on-the-mixed-reality-dev-center"></a>混合現實開發人員中心上的實用資源
+## <a name="useful-resources-on-the-mixed-reality-dev-center"></a>混合現實開發人員中心的實用資源
 
 | ![探索 ](features/images/mrdevcenter/icon-discover.png) [探索](/windows/mixed-reality/)| ![設計 ](features/images/mrdevcenter/icon-design.png) [設計](/windows/mixed-reality/design)| ![開發 ](features/images/mrdevcenter/icon-develop.png) [開發](/windows/mixed-reality/development)| ![散發) ](features/images/mrdevcenter/icon-distribute.png) [散發](/windows/mixed-reality/implementing-3d-app-launchers)|
 | :--------------------- | :----------------- | :------------------ | :------------------------ |
-| 瞭解如何建立 HoloLens 和沉浸式耳機的混合現實體驗 (VR) 。          | 取得設計指南。 建立使用者介面。 瞭解互動和輸入。     | 取得開發指南。 學習技術。 瞭解科學。       | 準備好您的應用程式以供其他人使用，並考慮建立 3D 啟動器。 |
+| 瞭解如何建立 HoloLens 和沉浸式耳機 (VR) 的混合現實體驗。          | 取得設計指南。 建立使用者介面。 瞭解互動和輸入。     | 取得開發指南。 學習技術。 瞭解科學。       | 準備好您的應用程式以供其他人使用，並考慮建立 3D 啟動器。 |
 
 ## <a name="useful-resources-on-azure"></a>Azure 上的實用資源
 
@@ -360,5 +360,5 @@ MRTK 提供範例場景，示範如何使用 MRTK 的功能。 您可以在 [資
 
 如果您遇到 MRTK 所造成的問題，或是有關于如何執行某些問題的問題，有一些資源可以提供協助：
 
-* 針對錯誤報表，請在 GitHub 存放庫上提出 [問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new/choose) 。
+* 針對錯誤報表，請在 GitHub 存放庫中提出[問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/new/choose)。
 * 如有任何問題，請在 [StackOverflow](https://stackoverflow.com/questions/tagged/mrtk) 或「 [混合現實」工具組頻道](https://holodevelopers.slack.com/messages/C2H4HT858) 的時差上聯繫。 您可以透過 [自動邀請寄件者](https://holodevelopersslack.azurewebsites.net/)來加入「時差」群。

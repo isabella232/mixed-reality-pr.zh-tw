@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: e03c021689b6701b86ae25ba9fa253ece1368428
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 087806d48c7304d43f8383285cbaa2a12d8bf99a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144945"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176313"
 ---
 # <a name="pulse-shader"></a>脈衝著色器
 
@@ -27,11 +27,11 @@ ms.locfileid: "110144945"
 - **MRTK_Pulse_ArticulatedHandMeshBlue 的材料** 
 - **MRTK_Pulse_ArticulatedHandMeshPurple 的材料** 
 
-## <a name="prerequisites"></a>必要條件
+## <a name="prerequisites"></a>Prerequisites
 
-針對空間網格範例，請確定已在 [MRTK 設定] 下指派 MRTK_Pulse_ArticulatedHandMeshBlue 的材質或 MRTK_Pulse_ArticulatedHandMeshPurple （> 空間感知-> 顯示設定-> 可見的材質。
+針對空間網格範例，請確定已在 [MRTK] 下指派 MRTK_Pulse_ArticulatedHandMeshBlue 的 MRTK_Pulse_ArticulatedHandMeshPurple 設定-> 空間感知-> 顯示設定 > 可見的材質。
 
-若為手寫範例，請確定已在 ArticulatedHandMesh 中指派 MRTK_Pulse_SpatialMeshBlue 的 MRTK_Pulse_SpatialMeshPurple。您應該在 MRTK 設定中指派它本身-> 輸入 > 的追蹤-> 的手型網格預製專案。
+若為手寫範例，請確定已在 ArticulatedHandMesh 中指派 MRTK_Pulse_SpatialMeshBlue 的 MRTK_Pulse_SpatialMeshPurple。預製專案，其本身應指派于 MRTK 設定-> 輸入 > 手動追蹤-> 的手型網格預製專案。
 
 ## <a name="how-it-works"></a>運作方式
 
@@ -45,6 +45,6 @@ ms.locfileid: "110144945"
 
 ## <a name="hand-mesh-example---pulseshaderhandmeshexampleunity"></a>手形網格範例-PulseShaderHandMeshExample unity
 
-這個範例場景示範使用脈衝著色器的手網格視覺效果。 HoloLens 裝置偵測到手時，會觸發脈衝動畫一次。 這種視覺效果的意見反應可以提高使用者的互動信賴度。 
+這個範例場景示範使用脈衝著色器的手網格視覺效果。 當 HoloLens 裝置偵測到手時，會觸發脈衝動畫一次。 這種視覺效果的意見反應可以提高使用者的互動信賴度。 
 
 **PulseShaderHandMeshHandler .cs** 腳本會針對指派的材質產生脈衝效果。 預設會核取 [手動偵測到的脈衝]。

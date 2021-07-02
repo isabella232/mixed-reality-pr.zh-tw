@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, 解算器, 眼球追蹤, 語音命令
 ms.localizationpriority: high
-ms.openlocfilehash: 69a6bf0ed4d4efc946eebc1941838bfff7d7343c
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: abee2163c3b92897396ea35cc43ae025e8e7b804
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042279"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175495"
 ---
 # <a name="1-introduction-to-the-mrtk-tutorials"></a>1.MRTK 教學課程簡介
 
@@ -43,24 +43,24 @@ ms.locfileid: "113042279"
 * [Windows 10 SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk/) 10.0.18362.0 或更新版本
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
 
-* 已安裝 unity 2020.3 LTS 或 Unity 2019.4 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a>，並已新增通用 Windows 平臺組建支援模組
+* Unity <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">中樞</a>已安裝 UNITY 2020.3 LTS 或 UNITY 2019.4 LTS (**OpenXR 需要2020.3.8 或更新版本，以防止錯誤**) 
 
 安裝 Unity 時，請務必檢查「 **平臺**」底下的下列元件。
 
 * **通用 Windows 平臺組建支援**
-* **Windows Build 支援 (IL2CPP)**
+* **Windows組建支援 (IL2CPP)**
 
-![Unity 通用 Windows 平臺組建支援選項](../../../develop/images/Unity_Install_Option_UWP.png)
+<img src="../../../develop/images/Unity_Install_Option_UWP.png" alt="Unity Universal Windows Platform Build Support option" width="600px">
 
 如果您已安裝 Unity 但未安裝這些選項，您可以透過 Unity Hub 中 **的 [新增模組** ] 功能表來新增這些選項。
 
-![Unity Windows Build 支援選項](../../../develop/images/Unity_Install_Option_UWP2.png)
+<img src="../../../develop/images/Unity_Install_Option_UWP2.png" alt="Unity Hub - Add Module" width="600px">
 
 > [!Important]
-> 本教學課程系列的建議 MRTK 版本為 MRTK 2.7。
+> 本教學課程系列的建議 MRTK 版本為 MRTK 2.7。2
 
 > [!Important]
-> 本教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 Unity 2019 LTS (目前的 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
+> 此教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 unity 2019 LTS (目前 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：2.初始化您的專案並部署您的第一個應用程式](mr-learning-base-02.md)

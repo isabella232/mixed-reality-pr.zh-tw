@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、環境追蹤、TMP、
-ms.openlocfilehash: 338ae2719764b84b7c58c1422e08fe02176eccf0
-ms.sourcegitcommit: b195b82f7e83e2ac4f5d8937d169e9dcb865d46d
+ms.openlocfilehash: 7aab167f2d850a4bca88a2cc40aae4f3cc50fb4b
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/24/2021
-ms.locfileid: "110333430"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176483"
 ---
 # <a name="hologram-stabilization"></a>全像穩定
 
@@ -20,11 +20,11 @@ ms.locfileid: "110333430"
 
 ## <a name="environment-tracking"></a>環境追蹤
 
-穩定的全像攝影轉譯非常依賴平臺 & 裝置的 head 姿勢追蹤。 Unity 將會從相機中的每個畫面格呈現每個畫面格，並由基礎平臺進行預估和提供。 如果此追蹤未正確遵循實際的 head 移動，則會以視覺化方式呈現全像影像。 這對 AR 裝置（例如 HoloLens）來說特別明顯，也很重要，因為使用者可以將虛擬全像是真實世界的關聯性。 效能對於可靠的標頭追蹤很重要，但也有 [其他重要功能](/windows/mixed-reality/environment-considerations-for-hololens)。 影響使用者體驗的環境元素類型將取決於目標平臺細節。
+穩定的全像攝影轉譯非常依賴平臺 & 裝置的 head 姿勢追蹤。 Unity 將會從相機中的每個畫面格呈現每個畫面格，並由基礎平臺進行預估和提供。 如果此追蹤未正確遵循實際的 head 移動，則會以視覺化方式呈現全像影像。 這對 AR 裝置（例如 HoloLens，可讓使用者將虛擬全像地方與真實世界建立關聯）特別明顯和重要。 效能對於可靠的標頭追蹤很重要，但也有 [其他重要功能](/windows/mixed-reality/environment-considerations-for-hololens)。 影響使用者體驗的環境元素類型將取決於目標平臺細節。
 
 ## <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-Windows Mixed Reality 平臺提供一些在平臺上穩定全息的 [參考](/windows/mixed-reality/hologram-stability) 資料。 不過，開發人員可以利用一些重要的工具來改善使用者的全像影像視覺體驗。
+Windows Mixed Reality 平臺提供一些在平臺上穩定全息的[參考](/windows/mixed-reality/hologram-stability)資料。 不過，開發人員可以利用一些重要的工具來改善使用者的全像影像視覺體驗。
 
 ### <a name="depth-buffer-sharing"></a>深度緩衝區共用
 
@@ -36,7 +36,7 @@ Unity 開發人員可以選擇將應用程式的深度緩衝區與平臺共用�
 
 #### <a name="per-pixel-vs-stabilization-plane-lsr"></a>每個圖元與穩定平面 LSR
 
-根據 Windows Mixed Reality 裝置上執行的裝置端點和作業系統版本，Late-Stage Reprojection 演算法將會以圖元或 [穩定平面](/windows/mixed-reality/hologram-stability#stabilization-plane)執行。
+根據 Windows Mixed Reality 裝置上執行的裝置端點和作業系統版本，Late-Stage Reprojection 演算法將會以圖元或[穩定平面](/windows/mixed-reality/hologram-stability#stabilization-plane)執行。
 
 ##### <a name="per-pixel-depth-based"></a>依圖元深度為基礎
 
@@ -48,7 +48,7 @@ Unity 開發人員可以選擇將應用程式的深度緩衝區與平臺共用�
 
 #### <a name="depth-buffer-format"></a>深度緩衝區格式
 
-如果以 HoloLens 為目標以進行開發，強烈建議使用16位深度緩衝區格式（相較于24位）。 這可節省效能，但深度值的精確度較低。 若要補償較低的精確度，並避免進行 [z 對](https://en.wikipedia.org/wiki/Z-fighting)，建議您從 Unity 所設定的變更為1000m 預設值減少最 [遠的剪輯平面](https://docs.unity3d.com/Manual/class-Camera.html) 。
+如果以開發為目標 HoloLens，強烈建議使用16位深度緩衝區格式（相較于24位）。 這可節省效能，但深度值的精確度較低。 若要補償較低的精確度，並避免進行 [z 對](https://en.wikipedia.org/wiki/Z-fighting)，建議您從 Unity 所設定的變更為1000m 預設值減少最 [遠的剪輯平面](https://docs.unity3d.com/Manual/class-Camera.html) 。
 
 > [!NOTE]
 > 如果使用 *16 位深度格式*，則樣板緩衝區所需的效果將無法運作，因為 Unity 不會在此設定中 [建立樣板緩衝區](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) 。 相反地，選取 *24 位深度格式* 通常會建立 [8 位的樣板緩衝區](https://docs.unity3d.com/Manual/SL-Stencil.html)（如果適用于端點圖形平台）。
@@ -57,14 +57,14 @@ Unity 開發人員可以選擇將應用程式的深度緩衝區與平臺共用�
 
 為了利用深度型 LSR，開發人員必須採取兩個重要的步驟。
 
-1. 在 [**編輯**  >  **專案設定**  >  **播放機**  >  **XR 設定**  >  **虛擬實境 sdk** ] 下，> 啟用 **深度緩衝區共用**
-    1. 如果以 HoloLens 為目標，建議您也選取 **16 位深度格式** 。
+1. 在 [**編輯**]  >  **Project 設定**  >  **Player**  >  **XR 設定**  >  **虛擬實境 sdk** > 啟用 **深度緩衝區共用**
+    1. 如果目標 HoloLens，建議您也選取 **16 位深度格式**。
 1. 在螢幕上轉譯色彩時，也會呈現深度
 
-Unity 中的不[透明 gameobject](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html)通常會自動寫入深度。 不過，透明的 & 文字物件通常不會根據預設寫入深度。 如果使用 MRTK 標準著色器或文字網格 Pro，可以輕鬆地補救。
+Unity 中的不[透明 gameobject](https://docs.unity3d.com/Manual/StandardShaderMaterialParameterRenderingMode.html)通常會自動寫入深度。 不過，透明的 & 文字物件通常不會根據預設寫入深度。 如果利用 MRTK 標準著色器或文字網格 Pro，就可以輕鬆地補救。
 
 > [!NOTE]
-> 若要快速判斷場景中的哪些物件不會以視覺化方式寫入深度緩衝區，可以使用 MRTK 設定檔中 *編輯器設定* 下的轉譯 [*深度緩衝區* 公用程式](../configuration/mixed-reality-configuration-guide.md#editor-utilities)。
+> 若要快速判斷場景中的哪些物件不會以視覺化方式寫入深度緩衝區，可以在 MRTK 設定檔中使用 *編輯器設定* 的轉譯 [*深度緩衝區* 公用程式](../configuration/mixed-reality-configuration-guide.md#editor-utilities)。
 
 ##### <a name="transparent-mrtk-standard-shader"></a>透明 MRTK 標準著色器
 
@@ -80,7 +80,7 @@ After
 
 ##### <a name="text-mesh-pro"></a>文字網格 Pro
 
-若為文字網格 Pro 物件，請選取 TMP GameObject 以在偵測器中加以查看。 在 [材質] 元件下，將指派之材質的著色器切換為使用 MRTK TextMeshPro 著色器。
+針對文字網格 Pro 物件，請選取 TMP GameObject 以在偵測器中加以查看。 在 [材質] 元件下，將指派之材質的著色器切換為使用 MRTK TextMeshPro 著色器。
 
 ![文字網格 Pro 深度緩衝區修正](../features/images/performance/TextMeshPro-DepthBuffer-Fix.PNG)
 
@@ -111,7 +111,7 @@ Shader "Custom/MyShader"
 
 除了確保符合正確的設定，以確保視覺穩定性，請務必確保全像地理位置在正確的實體位置維持穩定。 若要在實體空間中通知平臺的重要位置，開發人員可以在需要保持在同一處的 Gameobject 上利用 [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) 。 [WorldAnchor](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html)是新增至 GameObject 的元件，可對該物件的轉換取得絕對控制權。
 
-HoloLens 這類裝置會不斷地掃描和學習環境。 因此，當 HoloLens 追蹤移動 & 空間中的位置時，將會更新其估價，並 [調整 Unity 座標系統](/windows/mixed-reality/coordinate-systems-in-unity)。 例如，如果在一開始就將 GameObject 從相機放置1百萬個，則在 HoloLens 追蹤環境時，可能會發現 GameObject 所在的實體點實際上是 1.1 m。 這會導致全息全像離開。 將 WorldAnchor 套用至 GameObject，可讓錨點控制物件的轉換，讓物件保持在正確的實體位置 (也就是 在執行時間) 更新為 1.1 m 而不是1m。 若要跨應用程式會話保存 [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) ，開發人員可以使用 [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) 來 [儲存和載入 WorldAnchors](/windows/mixed-reality/persistence-in-unity)。
+HoloLens 的裝置會不斷地掃描和學習環境。 因此，當 HoloLens 追蹤空間中的移動 & 位置時，將會更新其估計值，並[調整 Unity 座標系統](/windows/mixed-reality/coordinate-systems-in-unity)。 例如，如果 GameObject 在一開始就將從相機放置1百萬個，當 HoloLens 追蹤環境時，可能會發現 GameObject 所在的實體點實際上是 1.1 m 離開。 這會導致全息全像離開。 將 WorldAnchor 套用至 GameObject，可讓錨點控制物件的轉換，讓物件保持在正確的實體位置 (也就是 在執行時間) 更新為 1.1 m 而不是1m。 若要跨應用程式會話保存 [WorldAnchors](https://docs.unity3d.com/ScriptReference/XR.WSA.WorldAnchor.html) ，開發人員可以使用 [WorldAnchorStore](https://docs.unity3d.com/ScriptReference/XR.WSA.Persistence.WorldAnchorStore.html) 來 [儲存和載入 WorldAnchors](/windows/mixed-reality/persistence-in-unity)。
 
 > [!NOTE]
 > 將 WorldAnchor 元件新增至 GameObject 之後，就無法修改該 GameObject 的轉換 (例如 transform。 position = x) 。 開發人員必須移除 WorldAnchor 來編輯轉換。

@@ -1,16 +1,16 @@
 ---
-title: 文件指南
+title: 檔指導方針
 description: MRTK 的檔指導方針和標準。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 37233141bd43f27db47935574bac7630b8bea8d7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121386"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175356"
 ---
 # <a name="documentation-guidelines"></a>檔指導方針
 
@@ -136,7 +136,7 @@ int SampleFunction(int i)
 
 ### <a name="mentioning-menu-entries"></a>提及功能表項目
 
-提及使用者應該按一下的功能表項目時，目前的慣例是： *Project > Files > 建立 > 分葉*
+提及使用者應該按一下的功能表項目時，目前的慣例是： *Project > 檔案 > 建立 > 分葉*
 
 ### <a name="links"></a>連結
 
@@ -303,7 +303,7 @@ Mixed Reality 讓您有機會建立全新的領域。 這可能牽涉到建立�
 
 有一些重要功能會產生效能成本。 這段程式碼通常會根據其設定方式而定。
 
-例如：
+例如︰
 
 ```md
 When using the spatial mapping component, the performance impact will increase with the level of detail requested.  
@@ -318,7 +318,7 @@ It is recommended to use the least detail possible for the desired experience.
 
 功能區 breaking-changes.md 檔包含特定版本的所有已知中斷變更清單 **，以及過去** 版本的重大變更歷程記錄。
 
-例如：
+例如︰
 
 ```md
 Spatial sound breaking changes
@@ -340,7 +340,7 @@ No known breaking changes
 
 ## <a name="tools-for-editing-markdown"></a>用來編輯 MarkDown 的工具
 
-[Visual Studio Code](https://code.visualstudio.com/) 是很棒的工具，可讓您編輯屬於 MRTK 檔的 markdown 檔案。
+[Visual Studio Code](https://code.visualstudio.com/)是很棒的工具，可讓您編輯屬於 MRTK 檔的 markdown 檔案。
 
 撰寫檔時，也強烈建議您安裝下列兩個延伸模組：
 
@@ -350,6 +350,6 @@ No known breaking changes
 
 這兩個套件都封裝在 Microsoft 發行的檔撰寫套件中。
 
-## <a name="see-also"></a>另請參閱 
+## <a name="see-also"></a>另請參閱
 
-* [範例連結](https://www.google.com)
+- [檔的範例「另請參閱」連結](https://www.microsoft.com)

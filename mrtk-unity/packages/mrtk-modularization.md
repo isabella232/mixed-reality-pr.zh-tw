@@ -5,14 +5,14 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 04b2e6155e591a918b95aed20961a0450afe5f43
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: eac96e309afc21f9a2b6efe9c3aef5975e4f0dff
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144420"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177016"
 ---
-# <a name="mixed-reality-toolkit-componentization"></a>混合現實工具組元件化
+# <a name="mrtk-modularization"></a>MRTK 模組化
 
 混合現實工具組 v2 有一項絕佳的新功能，元件化改善。 可能的話，個別的元件會與所有基礎的核心層隔離。
 

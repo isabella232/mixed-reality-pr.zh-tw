@@ -1,20 +1,20 @@
 ---
-title: 場景理解
+title: 場景理解觀察者
 description: 描述 MRTK 中的場景理解
 author: MaxWang-MS
 ms.author: wangmax
 ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、場景理解
-ms.openlocfilehash: 67a8b99a281b6deecd621edb5600578806812d8a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: d5430e7885055a550347c4ccebc1452f68125922
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449747"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176235"
 ---
-# <a name="scene-understanding"></a>場景理解
+# <a name="scene-understanding-observer"></a>場景理解觀察者
 
-[場景理解](/windows/mixed-reality/scene-understanding) 會傳回場景實體的語義標記法，以及其在 __HoloLens 2__ 的幾何形式 (HoloLens 第1代不支援) 。
+[場景理解](/windows/mixed-reality/scene-understanding)會傳回場景實體的語義表示以及它們在 __HoloLens 2__ (HoloLens 第1代不支援) 。
 
 這項技術的一些預期使用案例如下：
 * 將物件放在特定種類的最接近表面 (例如牆壁和樓層) 
@@ -31,7 +31,7 @@ ms.locfileid: "112449747"
 
 當系統詢問時， [`WindowsSceneUnderstandingObserver`](xref:Microsoft.MixedReality.Toolkit.WindowsSceneUnderstanding.Experimental.WindowsSceneUnderstandingObserver) 會傳回 [SpatialAwarenessSceneObject](xref:Microsoft.MixedReality.Toolkit.Experimental.SpatialAwareness.SpatialAwarenessSceneObject) ，其中包含可讓應用程式瞭解其周圍的屬性。 觀察頻率、傳回的物件類型 (例如牆壁、floor) 和其他觀察器行為，都取決於透過設定檔的觀察者設定。 例如，如果需要遮蔽遮罩，則必須設定觀察者來產生四邊形。 觀察到的場景可以儲存為序列化檔案，稍後可以載入以在編輯器播放模式中重新建立場景。
 
-## <a name="setup"></a>設定
+## <a name="setup"></a>安裝程式
 
 > [!IMPORTANT]
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
@@ -49,7 +49,7 @@ ms.locfileid: "112449747"
 
 ::: moniker range="< mrtkunity-2021-05"
 > [!IMPORTANT]
-> 僅適用于 MRTK 2.6.0-使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
+> 僅適用于 MRTK 2.6.0-使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱[此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)。
 
 ::: moniker-end
 場景會示範下列各項：

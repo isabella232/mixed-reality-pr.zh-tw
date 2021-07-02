@@ -5,14 +5,14 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0f2d3d3eb07d8b631f3f11a8b497a22a028a2f24
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 413d2a3105294411f9c08f4a2add9365389ea783
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145010"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176125"
 ---
-# <a name="inputfeatureusage-tool"></a>InputFeatureUsage 工具
+# <a name="input-feature-usage-tool"></a>輸入功能使用方式工具
 
 InputFeatureUsage 工具是裝置上的執行時間 (或編輯器) 工具，可讓開發人員快速判斷所偵測到之輸入來源的可用 Unity InputFeatureUsages， (例如：移動控制器或明確的) 。
 
@@ -29,7 +29,7 @@ InputFeatureUsage 工具是裝置上的執行時間 (或編輯器) 工具，可�
 
 檢查控制器的 Unity 對應：
 
-- 連接控制器
+- 連線控制器
 - 按下每個按鈕並移動每個軸
 - 請注意顯示中的功能使用方式
 - 更新控制器的輸入系統資料提供者中的控制項對應

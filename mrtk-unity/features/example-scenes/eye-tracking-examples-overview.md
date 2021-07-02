@@ -5,14 +5,14 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: b5fd3ee35e54c54f2f6b21dc1ce53625c68f65b4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 4cdeaa10725e00ac1a041c3692d64c1bd6488854
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144680"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175543"
 ---
-# <a name="eye-tracking-examples"></a>目視追蹤範例
+# <a name="eye-tracking-examples-overview"></a>目視追蹤範例總覽
 
 本主題說明如何在 MRTK 中建立 MRTK 眼睛追蹤範例（ (資產/MRTK/範例/示範/EyeTracking) ），以快速開始使用眼睛追蹤。
 這些範例可讓您體驗其中一個新的神奇輸入功能： **眼睛追蹤**！
@@ -39,7 +39,7 @@ MRTK 眼追蹤示範場景已 [載入額外](https://docs.unity3d.com/ScriptRefe
 
 ### <a name="eye-supported-navigation"></a>[**目視支援的導覽**](../input/eye-tracking/eye-tracking-navigation.md)
 
-假設您正在閱讀有關遠處顯示器或電子讀者的一些資訊，當您到達顯示文字的結尾時，文字會自動向上滾動以顯示更多內容。
+Imagine 您正在閱讀有關遠處顯示器或電子讀者的部分資訊，而且當您到達顯示文字的結尾時，文字會自動向上滾動以顯示更多內容。
 或者，如何以神奇的方式直接縮放至您所看到的位置？
 以下是本教學課程中展示有關眼睛支援導覽的一些範例。
 此外，也有一個範例，可讓您根據目前的焦點自動旋轉，來旋轉3D 全像投影。
@@ -65,11 +65,11 @@ MRTK 眼追蹤示範場景已 [載入額外](https://docs.unity3d.com/ScriptRefe
 
 ## <a name="setting-up-the-mrtk-eye-tracking-samples"></a>設定 MRTK 眼追蹤範例
 
-### <a name="prerequisites"></a>必要條件
+### <a name="prerequisites"></a>Prerequisites
 
-請注意，在裝置上使用眼睛追蹤範例需要 HoloLens 2，以及使用套件 Package.appxmanifest 上的「注視輸入」功能建立的範例應用程式套件。
+請注意，在裝置上使用眼睛追蹤範例需要 HoloLens 2，以及使用套件 package.appxmanifest 上的「注視輸入」功能建立的範例應用程式套件。
 
-為了在裝置上使用這些眼睛追蹤範例，請務必遵循 [這些步驟](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2) ，然後再 Visual Studio 中建立應用程式。
+為了在裝置上使用這些眼睛追蹤範例，請務必遵循[這些步驟](../input/eye-tracking/eye-tracking-basic-setup.md#testing-your-unity-app-on-a-hololens-2)，然後再 Visual Studio 中建立應用程式。
 
 ### <a name="1-load-eyetrackingdemo-00-rootsceneunity"></a>1. Load EyeTrackingDemo-00-RootScene unity
 
@@ -87,10 +87,10 @@ _MixedRealityBasicSceneSetup_ (請參閱下面的螢幕擷取畫面) 包含會�
 
 ### <a name="2-adding-scenes-to-the-build-menu"></a>2. 將場景新增至 [組建] 功能表
 
-若要在執行時間載入加法場景，您必須先在組建功能表中將這些場景新增至 _組建設定-> 場景_ 。
+若要在執行時間載入加法場景，您必須先在組建功能表中將這些場景新增至 _組建設定 > 場景_。
 將根場景顯示為清單中的第一個場景是很重要的：
 
-![目視追蹤範例的組建設定場景功能表](../images/eye-tracking/mrtk_et_build_settings.jpg)
+![視覺追蹤範例的組建設定場景功能表](../images/eye-tracking/mrtk_et_build_settings.jpg)
 
 ### <a name="3-play-the-eye-tracking-samples-in-the-unity-editor"></a>3. 在 Unity 編輯器中播放眼睛追蹤範例
 
@@ -135,7 +135,7 @@ _MixedRealityBasicSceneSetup_ (請參閱下面的螢幕擷取畫面) 包含會�
 
 4. 按下 _播放_
 
-請注意，載入這類的子場景並非持續性：這表示如果您將應用程式部署至 HoloLens 2 裝置，則只會載入根場景， (假設它出現在您的組建設定) 的上方。
+請注意，載入這類的子場景並非持續性：這表示如果您將應用程式部署至 HoloLens 2 裝置，則只會載入根場景， (假設它出現在組建設定) 的最上方。
 此外，當您與其他人共用您的專案時，不會自動載入子場景。
 
 ---

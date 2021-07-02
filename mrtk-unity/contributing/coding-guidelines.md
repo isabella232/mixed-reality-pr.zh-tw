@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、'
-ms.openlocfilehash: 122c51962c55796c037302c7b79cc4df643a47b7
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121436"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175337"
 ---
 # <a name="coding-guidelines"></a>程式碼撰寫指導方針
 

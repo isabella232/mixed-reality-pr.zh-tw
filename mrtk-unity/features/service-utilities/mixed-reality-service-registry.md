@@ -1,18 +1,18 @@
 ---
-title: Mixed Reality Service Registry 和 IMixedRealityServiceRegistrar
+title: Mixed Reality service registry
 description: MixedRealityServiceRegistry 和 IMixedRealityServiceRegistrar 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 09b20537824af42d241b6c33496cedcb4f530bc7
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 061e4233d61de817b1aaed7faaa6d461427d6f07
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145237"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176700"
 ---
-# <a name="what-are-the-mixedrealityserviceregistry-and-imixedrealityserviceregistrar"></a>MixedRealityServiceRegistry 和 IMixedRealityServiceRegistrar 有哪些？
+# <a name="mixed-reality-service-registry"></a>Mixed Reality service registry
 
 混合現實工具組有兩個類似的命名元件，可執行相關工作： MixedRealityServiceRegistry 和 IMixedRealityServiceRegistrar。
 

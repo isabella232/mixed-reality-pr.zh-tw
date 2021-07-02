@@ -1,18 +1,18 @@
 ---
-title: 手形物理服務總覽
+title: 手物理學服務
 description: 在 MRTK 中使用手物理延伸模組服務的檔
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 751aec148d3a40da4728d2fdd60a60402b59a4de
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: af7ea753d52b5e478c54ca19d6d8e391401eea6d
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145084"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176254"
 ---
-# <a name="hand-physics-extension-service"></a>手上物理延伸模組服務
+# <a name="hand-physics-service"></a>手物理學服務
 
 ![手上物理延伸模組服務](../images/hand-physics/MRTK_UX_HandPhysics_Main.jpg)
 

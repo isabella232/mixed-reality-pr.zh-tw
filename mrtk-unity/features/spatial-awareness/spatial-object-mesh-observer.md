@@ -5,18 +5,18 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 51963fca4fa76340089b84e400f2882763977f72
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: db0b2f14d0a5d65140223d3fa3f4f5324ef2ba76
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144452"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176693"
 ---
-# <a name="configuring-mesh-observers-for-the-editor"></a>設定編輯器的網格觀察器
+# <a name="spatial-object-mesh-observer"></a>空間物件網格觀察者
 
 在 Unity 編輯器中提供環境網格資料的便利方式是使用 [`SpatialObjectMeshObserver`](xref:Microsoft.MixedReality.Toolkit.SpatialObjectMeshObserver.SpatialObjectMeshObserver) 類別。 *空間物件網格觀察* 者是一種僅限編輯器的資料提供者，適用于 [空間感知系統](spatial-awareness-getting-started.md)，可讓您匯入3d 模型資料來代表空間網格。 *空間物件網格觀察* 者的其中一種常見用法是匯入透過 Microsoft HoloLens 掃描的資料，以測試如何從 Unity 內調整不同環境的體驗。
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 本指南將逐步解說如何設定 *空間物件網格觀察* 者。 啟用這項功能有三個主要步驟。
 
@@ -36,7 +36,7 @@ ms.locfileid: "110144452"
 
     ![選取空間物件網格觀察者](../images/spatial-awareness/SelectObjectObserver.png)
 
-1. 選取所需的 *空間網格物件*。 根據預設，系統會使用範例模型來設定觀察者。 此模型是使用 Microsoft HoloLens 建立的，但您可以 [建立新的掃描網格物件](#acquiring-environment-scans)。
+1. 選取所需的 *空間網格物件*。 根據預設，系統會使用範例模型來設定觀察者。 此模型是使用 Microsoft HoloLens 建立的，但您可以[建立新的掃描網格物件](#acquiring-environment-scans)。
 1. [設定其他網格觀察者配置檔案屬性](configuring-spatial-awareness-mesh-observer.md)
 
     ![選取網格物件](../images/spatial-awareness/ObjectObserverProfile.png)
@@ -69,8 +69,8 @@ ms.locfileid: "110144452"
 
 [Windows 裝置入口網站](/windows/mixed-reality/using-the-windows-device-portal)可以用來從 Microsoft HoloLens 裝置將空間網格下載為 .obj 檔。
 
-1. 藉由使用 HoloLens 來掃描及觀看所需的環境，進行掃描
-1. 使用 Windows 裝置入口網站連接到 HoloLens
+1. 使用 HoloLens 來進行掃描並查看所需的環境
+1. 使用 Windows 裝置入口網站連線至 HoloLens
 1. 流覽至 *3D 視圖* 頁面
 1. 按一下 [*空間對應*] 區段底下的 [*更新*] 按鈕
 1. 按一下 [*空間對應*] 區段下的 [*儲存*] 按鈕，將 OBJ 檔案儲存至 PC

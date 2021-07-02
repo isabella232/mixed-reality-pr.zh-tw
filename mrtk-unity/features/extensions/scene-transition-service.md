@@ -1,16 +1,16 @@
 ---
-title: 場景轉換服務總覽
+title: 場景轉換服務
 description: MRTK 中的場景轉換檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、SceneTransition、
-ms.openlocfilehash: 5ea76b572b3cddc097e8266d3c31f152b63a13aa
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b645012a055f693fdac794b79e24fd20154fdb65
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144282"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176209"
 ---
 # <a name="scene-transition-service"></a>場景轉換服務
 

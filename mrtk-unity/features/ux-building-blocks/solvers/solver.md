@@ -1,19 +1,19 @@
 ---
-title: Solver
+title: 規劃求解總覽
 description: MRTK 中的解析器總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 ms.localizationpriority: high
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、解析器、
-ms.openlocfilehash: a9ca6d025fa4261bb9b5398cb4c7b82a5f6ff8f0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bf9bbfe578ace576fca8870f038f145037a6838d
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102770340"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176454"
 ---
-# <a name="solvers"></a>解算器
+# <a name="solver-overview"></a>規劃求解總覽
 
 ![規劃主](../../images/solver/MRTK_Solver_Main.png)
 
@@ -67,7 +67,7 @@ ms.locfileid: "102770340"
 *與每個 TrackedTargetType 相關聯之各種屬性的* 規劃求解追蹤物件範例
 
 > [!IMPORTANT]
-> 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量* ，亦即： 綠色向量為向上、藍色向量向前) 。
+> 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量*，亦即： 綠色向量為向上、藍色向量向前) 。
 >
 > ![上往上向量](../../images/solver/HandJoint_ForwardUpVectors.png)
 >
@@ -227,7 +227,7 @@ public class InFront : Solver
 
 ![手形功能表 UX 範例](../../images/solver/MRTK_UX_HandMenu.png)
 
-此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 安全區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
+此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 保管庫區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
 
 如需使用手形條件約束規劃求解來建立快顯功能表的範例，[請參閱手形功能表頁](../hand-menu.md)。
 

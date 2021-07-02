@@ -5,14 +5,14 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f310b3687a6773404c7a998a3764163daf159857
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: c6bc6474afd50fe265853e53c0f29009d816cf51
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145139"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177580"
 ---
-# <a name="content-scene-loading"></a>內容場景載入
+# <a name="scene-system-content-loading"></a>場景系統內容載入
 
 所有內容載入作業都是非同步，而且依預設，所有內容載入都是附加的。 管理員和燈光場景永遠不會受到內容載入作業的影響。 如需監視載入進度和場景啟用的相關資訊，請參閱 [監視內容載入](scene-system-load-progress.md)。
 

@@ -1,16 +1,16 @@
 ---
-title: 手動追蹤
+title: 手勢追蹤
 description: 有關如何在 MRTK 中使用 HandTracking 的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手追蹤、
-ms.openlocfilehash: 6cd55bc76d9fba42640954bcbf50e62f66454a94
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 68e936cb4121027008f37aae72496fe59445b636
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143356"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176896"
 ---
 # <a name="hand-tracking"></a>手勢追蹤
 

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 020c88bb7a872f11b5802b55e14201f4f60edb8d
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: a728e3520539723c4b38849eeb60524995e572eb
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403389"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175448"
 ---
 # <a name="1-integrating-and-using-speech-recognition-and-transcription"></a>1.整合並使用語音辨識和文字記錄
 
@@ -34,10 +34,10 @@ ms.locfileid: "111403389"
 * Windows 10 SDK 10.0.18362.0 或更新版本
 * 基本的 C# 程式設計能力
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* 已安裝 unity 2020/2019 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a>，並已新增通用 Windows 平臺組建支援模組
+* 已安裝 unity 2020/2019 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">unity 中樞</a>，並已新增通用 Windows 平臺組建支援模組
 
 > [!Important]
-> 本教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 Unity 2019 LTS (目前的 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
+> 此教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 unity 2019 LTS (目前 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 ## <a name="creating-and-preparing-the-unity-project"></a>建立和準備 Unity 專案
 
@@ -47,7 +47,7 @@ ms.locfileid: "111403389"
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
-3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如 AzureCloudServices
 
@@ -67,7 +67,7 @@ ms.locfileid: "111403389"
 
 ![mrlearning-語音2](images/mrlearning-speech/tutorial1-section3-step1-1.png)
 
-在 [  **發行設定**] 中，向下滾動至 [ **功能** ] 區段，並再次確認已啟用 [ **InternetClient**]、[ **麥克風**] 和 [ **>spatialperception** ] 功能（當您在教學課程開頭建立專案時所啟用）。 然後，啟用 **InternetClientServer** 和 **PrivateNetworkClientServer** 功能：
+在 [**發行設定** 中，向下滾動至 [**功能**] 區段，並再次確認已啟用 [ **InternetClient**]、[**麥克風**] 和 [ **>spatialperception** ] 功能（當您在教學課程開頭建立專案時所啟用）。 然後，啟用 **InternetClientServer** 和 **PrivateNetworkClientServer** 功能：
 
 ![mrlearning-語音3](images/mrlearning-speech/tutorial1-section3-step1-2.png)
 
@@ -80,13 +80,13 @@ ms.locfileid: "111403389"
 * [MRTK.HoloLens2. AzureSpeechServices. 2.5.2. unitypackage](https://github.com/onginnovations/MixedRealityLearning/releases/download/azure-speech-services-v2.5.2/MRTK.HoloLens2.Unity.Tutorials.Assets.AzureSpeechServices.2.5.2.unitypackage)
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](mr-learning-base-02.md#importing-the-tutorial-assets) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提示，您可以參閱[匯入混合實境工具組](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
 
 ![mrlearning-語音4](images/mrlearning-speech/tutorial1-section4-step1-1.png)
 
-您必須設定 Unity 專案以發佈適用于 ARM64 的 Azure 語音外掛程式，若要在專案視窗中這麼做，請流覽至 [**資產**]  >  **>speechsdk.quickstart**  >  **外掛程式** 的 [  >  **WSA**  >  **ARM64** ]，然後選取 [ **CognitiveServices]。**
+您必須設定 Unity 專案以發佈適用于 ARM64 的 Azure 語音外掛程式，若要在 Project 視窗中進行這項作業，請流覽至 [**資產**]  >  **>speechsdk.quickstart**  >  **外掛程式** 的 [  >  **WSA**  >  **ARM64** ]，然後選取 [ **CognitiveServices]。**
 
 ![mrlearning-語音5](images/mrlearning-speech/tutorial1-section4-step1-2.PNG)
 

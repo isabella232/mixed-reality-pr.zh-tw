@@ -1,18 +1,18 @@
 ---
-title: MRTK 中的控制器
+title: 在 MRTK 中偵測控制器
 description: 搭配使用各種控制器與 MRTK 的相關檔
 author: RogPodge
 ms.author: roliu
 ms.date: 05/13/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、控制器、HP 回音、Oculus、HTC Vive、手
-ms.openlocfilehash: 111ebf2b1eb26bbef8cde16832f780acfa758595
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 2bb749f4e2f6294c4feb74f97af55ecb857d5f76
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743587"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175592"
 ---
-# <a name="controllers-in-mrtk"></a>MRTK 中的控制器
+# <a name="detecting-controllers-in-mrtk"></a>在 MRTK 中偵測控制器
 
 MRTK 具有許多不同控制器的支援。 許多控制器，例如 HTC Vive Knuckles 和 HTC Vive Wands，在相容裝置上啟動使用 MRTK 建立的應用程式時，將會以原生方式運作。 其他控制器（例如，在 Oculus 的要求和 HP 的回音控制器上進行明確的操作），在 MRTK 辨識這些控制器之前，需要額外的套件。
 

@@ -5,14 +5,14 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、近乎互動、
-ms.openlocfilehash: fc0d6d4013392db74e5c8637574c258bee857865
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 241425f0c158d684cad6dad8c88c8d692cbec42f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144181"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176873"
 ---
-# <a name="how-to-add-near-interaction-in-mrtk"></a>如何在 MRTK 中新增近乎互動
+# <a name="how-to-add-near-interactivity"></a>如何新增近乎互動
 
 近距離互動的形式為觸控和抓取。 觸控和抓取事件會分別由 [PokePointer](pointers.md#pokepointer) 和 [SpherePointer](pointers.md#spherepointer)以指標事件的形式引發。
 

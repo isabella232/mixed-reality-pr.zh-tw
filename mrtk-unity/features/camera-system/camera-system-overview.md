@@ -5,14 +5,14 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、攝影機、
-ms.openlocfilehash: e3b7caacaa9baa67fd81f6d32f3fd8c9f123e66d
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: cfb40b00d81133ad40e0e4d7a7b2ad87ee645e36
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121286"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177044"
 ---
-# <a name="camera-system"></a>攝影機系統
+# <a name="camera-system-overview"></a>攝影機系統總覽
 
 攝影機系統可讓 Microsoft Mixed Reality 工具組設定和優化應用程式的攝影機，以用於混合現實應用程式。 您可以使用相機系統來撰寫應用程式，以支援不透明的 (例如：虛擬實境) 和透明的 (例如： Microsoft HoloLens) 裝置，而不需要撰寫程式碼來區分和容納各種類型的顯示。
 
@@ -46,14 +46,14 @@ ms.locfileid: "113121286"
 
 攝影機設定提供者會啟用相機的平臺特定設定。 這些設定可能包含自訂設定步驟和/或元件。
 
-您可以按一下 [ **新增相機設定提供者** ] 按鈕來加入提供者。 您可以按一下 **-** 提供者名稱右邊的按鈕來移除它們。
+按一下 [**新增相機設定提供者**] 按鈕即可加入提供者。 您可以按一下 **-** 提供者名稱右邊的按鈕來移除它們。
 
 > [!Note]
 > 並非所有平臺都需要相機設定提供者。 如果沒有任何提供者與應用程式執行所在的平臺相容，Microsoft Mixed Reality 工具組將會套用基本的預設值。
 
 ### <a name="display-settings"></a>顯示器設定
 
-![攝影機顯示設定](../images/camera-system/CameraDisplaySettings.png)
+![攝影機顯示器設定](../images/camera-system/CameraDisplaySettings.png)
 
 顯示設定是針對不透明的 (（例如：虛擬實境) 和透明的 (例如： Microsoft HoloLens) 顯示兩者指定的。 相機是在執行時間使用這些設定來設定。
 

@@ -1,20 +1,20 @@
 ---
-title: 傳送系統總覽
+title: 傳送系統
 description: 在 MRTK 中啟用和停用傳送系統的總覽
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、傳送系統、
-ms.openlocfilehash: a44ad1827597dd0b27bc88a9420a3b251f934afd
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 7a49b1fea36eb1809c57abee4cede1216c07d5bf
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144139"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176187"
 ---
 # <a name="teleport-system"></a>傳送系統
 
-當應用程式使用不透明的顯示時，傳送系統是處理 teleporting 使用者的 MRTK 子系統。 針對 (如 HoloLens) 的 AR 體驗，遙傳系統不在使用中。 針對沉浸式 HMD 體驗 (OpenVR、WMR) 可啟用「傳送」系統。
+當應用程式使用不透明的顯示時，傳送系統是處理 teleporting 使用者的 MRTK 子系統。 針對 AR 體驗 (例如 HoloLens) ，遙傳系統不在使用中。 針對沉浸式 HMD 體驗 (OpenVR、WMR) 可啟用「傳送」系統。
 
 ## <a name="enabling-and-disabling"></a>啟用和停用
 

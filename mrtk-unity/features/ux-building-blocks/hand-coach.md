@@ -1,16 +1,16 @@
 ---
-title: README_HandCoach
+title: 手勢指導
 description: 手動指導的說明和範例。
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 8b4069f25692c4058c912ccd06ae678d67882fcd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: f6042fce7c95c106de9c72adc854e2b7112da63c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489268"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177148"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -40,8 +40,8 @@ ms.locfileid: "109489268"
 ## <a name="quality"></a>品質
 
 如果您注意到 skinned 網格上的扭曲，您需要確定您的專案使用適當的接點數量。
-移至 Unity 的 [編輯] > 專案設定 > 品質 > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
-![專案設定](../images/hand-coach/MRTK_ProjectSettings.png)
+移至 Unity 的 [編輯] > Project 設定 > 品質] > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
+![Project設置](../images/hand-coach/MRTK_ProjectSettings.png)
 
 ## <a name="scripts"></a>指令碼
 

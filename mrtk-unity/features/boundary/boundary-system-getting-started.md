@@ -5,14 +5,14 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 405a2d06be5d929d5c276fc8cd7ab36b6b3cf68c
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: fd70479e5183e9a7557de5c5a532cc87161be017
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121356"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177080"
 ---
-# <a name="boundary-system"></a>界限系統
+# <a name="boundary-system-overview"></a>界限系統總覽
 
 界限系統提供在混合現實應用程式中視覺化虛擬實境界限元件的支援。 界限定義使用者可以在佩戴 VR 耳機時安全地四處移動的區域。 界限是混合現實體驗的重要元件，可協助使用者在佩戴 VR 耳機時避免看不見的障礙。
 

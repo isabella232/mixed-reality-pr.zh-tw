@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點, PUN
 ms.localizationpriority: high
-ms.openlocfilehash: dc50ec9fcdbef1ce5f6a6e954c4bbb6f3fb10256
-ms.sourcegitcommit: 1d8fa82b5ca6d17cf03a5cf11d0669f32a31e5d0
+ms.openlocfilehash: 2b925457128989933615686ee45ffa6eaa7d20ef
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/07/2021
-ms.locfileid: "111575735"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175427"
 ---
 # <a name="2-setting-up-photon-unity-networking"></a>2.設定 Photon Unity 網路
 
@@ -28,11 +28,11 @@ ms.locfileid: "111575735"
 
 在本節中，您將建立新的 Unity 專案，並使該專案準備好進行 MRTK 開發。
 
-首先，請遵循 [初始化您的專案和部署第一個應用程式](mr-learning-base-02.md)，但不包括設定 [場景](mr-learning-base-02.md#configuring-the-scene) ，並將 [您的應用程式建立到您的裝置](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 指示，其中包含下列步驟：
+首先，請遵循 [初始化您的專案和部署第一個應用程式](mr-learning-base-02.md)，但 [不包括對物件的手動互動](mr-learning-base-02.md#adding-hand-interaction-to-an-object) ，以及將 [您的應用程式建立到您的裝置](mr-learning-base-02.md#building-your-application-to-your-hololens-2) 指示中，其中包含下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
 2. [切換建置平台](mr-learning-base-02.md#switching-the-build-platform)
-3. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [建立場景並設定 MRTK](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) ，並為場景提供適當的名稱，例如 *MultiUserCapabilities*
 
@@ -81,7 +81,7 @@ ms.locfileid: "111575735"
 ![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-sharing/sharing-02-section4-step1-1.png)
 
 > [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-02.md#importing-the-tutorial-assets) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 > [!NOTE]
 > 匯入 MultiUserCapabilities 教學課程資產套件之後，您會在主控台視窗中看到數個 [CS0246](/dotnet/csharp/language-reference/compiler-messages/cs0246) 錯誤，其指出缺少類型或命名空間。 這是預期的情況，將在下一節匯入 PUN 資產時解決。

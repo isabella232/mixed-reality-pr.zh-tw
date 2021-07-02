@@ -1,18 +1,18 @@
 ---
-title: 手聯合 Chaser
+title: 手聯合 chaser
 description: MRTK 中的手聯合 chaser
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f9db1c4a2ca1959a35c541e87c9a4a01bc41637e
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0beac2dae5aa12cf07f193dab9a6db7bc7ddf2e5
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144627"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175365"
 ---
-# <a name="hand-joint-chaser-example"></a>手聯合 chaser 範例
+# <a name="hand-joint-chaser"></a>手聯合 chaser
 
 ![手聯合 chasers ](../images/hand-joint-chaser/MRTK_HandJointChaser_Main.jpg) 這個範例場景示範如何使用「規劃求解」將物件附加至手接點。
 

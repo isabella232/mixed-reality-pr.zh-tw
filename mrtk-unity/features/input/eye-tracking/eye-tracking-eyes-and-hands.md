@@ -1,18 +1,18 @@
 ---
-title: 眼睛追蹤眼睛和手
+title: 眼睛和手
 description: 如何搭配 MRTK 中的手運動使用眼睛目標作為主要指標
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: c9d5f23610d821aa1e50a3217a4be736601dc14d
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ff464c6f2381a9df020a9ccf807672d4463d662c
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143989"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175115"
 ---
-# <a name="eyes--hand-interaction"></a>眼睛 + 手互動
+# <a name="eyes-and-hands"></a>眼睛和手
 
 ## <a name="how-to-support-_look--hand-motions_-eye-gaze--hand-gestures"></a>如何支援 _外觀 + 手運動_ (眼睛 & 手勢) 
 

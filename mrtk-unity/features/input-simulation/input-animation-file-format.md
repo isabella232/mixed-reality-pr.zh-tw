@@ -5,14 +5,14 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: ba232818c0a49d803ca6fae0b5adbc64e6deefa8
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110145126"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177000"
 ---
-# <a name="input-animation-binary-file-format-specification"></a>輸入動畫二進位檔案格式規格
+# <a name="input-animation-file-format"></a>輸入動畫檔案格式
 
 ## <a name="overall-structure"></a>整體結構
 
@@ -35,9 +35,9 @@ ms.locfileid: "110145126"
 
 | 區段 | 類型 | 注意 |
 |---------|------|------|
-| 有相機姿勢 | 布林值 | |
-| 有手資料 | 布林值 | |
-| 具有眼睛| 布林值 | |
+| 有相機姿勢 | Boolean | |
+| 有手資料 | Boolean | |
+| 具有眼睛| Boolean | |
 | 相機 | [姿勢曲線](#pose-curves) | 只有當攝影機姿勢為 true 時 |
 | 靠右追蹤 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |
 | 右側追蹤 | [布林曲線](#boolean-curve) | 只有在有手資料為 true 時 |

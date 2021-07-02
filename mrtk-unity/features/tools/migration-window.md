@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: a6e268dd28be2a3d485f937ec5b5ce6b1f29851f
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 9d960d01e738736edd452a124db5c306b5d752ce
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647117"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176135"
 ---
 # <a name="migration-window"></a>遷移視窗
 
@@ -40,7 +40,7 @@ ms.locfileid: "110647117"
 
 ![選取用於遷移的場景](../images/migration-window/MRTK_Scene_Selection.png)
 
-### <a name="project-mode"></a>專案模式
+### <a name="project-mode"></a>Project 模式
 
 按下 [ *遷移* ] 按鈕將會針對專案中的所有 prefabs 和場景，更新遷移處理常式執行的目標群組件。
 

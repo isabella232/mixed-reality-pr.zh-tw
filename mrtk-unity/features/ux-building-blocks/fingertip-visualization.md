@@ -1,16 +1,16 @@
 ---
-title: FingertipVisualization
+title: Fingertip 視覺效果
 description: MRTK 中的 FingerTip 視覺效果總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Fingertip
-ms.openlocfilehash: 11cb111288197f42d2616c3b07897b737f440f43
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: af23fdb9b618e276b7442405e54b7dccd141e4ee
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104689318"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177532"
 ---
 # <a name="fingertip-visualization"></a>Fingertip 視覺效果
 

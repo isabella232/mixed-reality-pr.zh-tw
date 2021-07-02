@@ -7,12 +7,12 @@ ms.date: 03/25/2021
 ms.localizationpriority: medium
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、傳送系統、傳送熱點
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 2d6160570b43ca931d46f4ec04c604b53b18d731
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 01ae900800c4a13ca7bafc3391ff51b752a95ae0
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647046"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176200"
 ---
 # <a name="teleport-hotspot"></a>傳送熱點
 

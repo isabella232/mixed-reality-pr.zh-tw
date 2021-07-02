@@ -1,18 +1,18 @@
 ---
-title: 混合式事實設定指南
+title: MRTK 設定檔設定指南
 description: 將 MRTK 設定為 Unity 的檔。
 author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: a8aca05b4a4bc154061d6f7594e5128ab91d5f0e
-ms.sourcegitcommit: c08997a75acfe4ac1d044c0fb9112e6817eb3d45
+ms.openlocfilehash: b7ec8d9ca2213ff998f94a6a2d029900ff886a2f
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/24/2021
-ms.locfileid: "112588862"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176417"
 ---
-# <a name="mixed-reality-toolkit-profile-configuration-guide"></a>混合現實工具組設定檔設定指南
+# <a name="mrtk-profile-configuration-guide"></a>MRTK 設定檔設定指南
 
 「混合現實」工具組盡可能集中管理工具組所需的設定， (除了真正的「事物」 ) 。
 
@@ -42,7 +42,7 @@ ms.locfileid: "112588862"
 
 您可以從這裡流覽至 MRTK 的所有設定設定檔，包括：
 
-- [混合現實工具組設定檔設定指南](#mixed-reality-toolkit-profile-configuration-guide)
+- [混合現實工具組設定檔設定指南](#mrtk-profile-configuration-guide)
   - [主要混合現實工具組設定檔](#the-main-mixed-reality-toolkit-configuration-profile)
   - [體驗設定](#experience-settings)
   - [攝影機設定](#camera-settings)
@@ -93,7 +93,7 @@ ms.locfileid: "112588862"
 
 ## <a name="input-system-settings"></a>輸入系統設定
 
-Mixed Reality 專案提供健全且妥善定型的輸入系統，以路由傳送預設選取之專案周圍的所有輸入事件。
+Mixed Reality Project 提供健全且妥善定型的輸入系統，以路由傳送預設選取之專案周圍的所有輸入事件。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_InputSystemSelection.png" width="650px" alt="Input System settings 1" style="display:block;">
 
@@ -126,7 +126,7 @@ Mixed Reality 專案提供健全且妥善定型的輸入系統，以路由傳送
 
 ## <a name="teleportation-system-selection"></a>遙傳系統選擇
 
-Mixed Reality 專案提供一個功能完整的遙傳系統，可用於管理專案中依預設選取的遙傳事件。
+Mixed Reality Project 提供一個功能完整的遙傳系統，可用於管理專案中預設選取的遙傳事件。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_TeleportationSystemSelection.png" width="650px" alt="Teleport System settings" style="display:block;">
 
@@ -135,7 +135,7 @@ Mixed Reality 專案提供一個功能完整的遙傳系統，可用於管理專
 
 ## <a name="spatial-awareness-settings"></a>空間感知設定
 
-Mixed Reality 專案提供重建的空間感知系統，以便在預設選取的專案中使用空間掃描系統。
+Mixed Reality Project 提供重建的空間感知系統，以便在預設選取的專案中使用空間掃描系統。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpatialAwarenessSystemSelection.png" width="650px" alt="Spatial Awareness settings 1" style="display:block;">
 
@@ -246,10 +246,10 @@ MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸�
 
 ## <a name="gestures-configuration"></a>手勢設定
 
-手勢是系統特定的執行，可讓您將輸入動作指派給各種 Sdk 所提供的各種「手勢」輸入方法 (例如 HoloLens) 。
+手勢是系統專屬的執行，可讓您將輸入動作指派給各種 sdk 所提供的各種「手勢」輸入方法， (例如 HoloLens) 。
 
 > [!NOTE]
-> 目前的手勢實作為僅適用于 HoloLens，並且將在未來新增至工具組的其他系統中增強， (沒有任何日期) 。
+> 目前的手勢實作為僅適用于 HoloLens，並將在未來新增至工具組的其他系統進行增強， (尚未) 任何日期。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_GesturesProfile.png" width="650px" alt="Gesture configuration" style="display:block;">
 
@@ -260,11 +260,11 @@ MRTK 會提供此選用服務，協助您管理複雜的加法場景載入/卸�
 
 就像手勢一樣，某些執行時間平臺也提供智慧型「語音轉換文字」功能，讓您能夠產生可由 Unity 專案接收的命令。 此設定檔可讓您設定下列各項：
 
-1. 一般設定-設為自動啟動或手動啟動的 [啟動行為] 決定是否要在輸入系統啟動時初始化 KeywordRecognizer，或讓專案決定何時要初始化 KeywordRecognizer。 「辨識信賴等級」用來初始化 Unity 的 [KEYWORDRECOGNIZER API](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html)
+1. 一般設定-將 [啟動行為] 設定為 [自動啟動] 或 [手動啟動] 會決定是否要在輸入系統啟動時初始化 KeywordRecognizer，或讓專案決定何時要初始化 KeywordRecognizer。 「辨識信賴等級」用來初始化 Unity 的 [KEYWORDRECOGNIZER API](https://docs.unity3d.com/ScriptReference/Windows.Speech.KeywordRecognizer-ctor.html)
 2. 語音命令-註冊「單字」，並將其轉譯成可由您的專案接收的輸入動作。 如有需要，也可以附加至鍵盤動作。
 
 > [!IMPORTANT]
-> 系統目前僅支援在 Windows 10 平臺（例如 HoloLens 和 Windows 10 desktop）上執行的語音，並將在 (未來新增至 MRTK 的其他系統進行增強，而不) 任何日期。
+> 系統目前僅支援在 Windows 10 平臺上執行的語音，例如 HoloLens 和 Windows 10 桌面，並且將在未來新增至 MRTK 的其他系統進行增強， (尚未) 日期。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_SpeechCommandsProfile.png" width="650px" alt="Configuration Profile screens" style="display:block;">
 
@@ -285,7 +285,7 @@ MRTK 會提供下列控制器/系統的預設設定：
 - 觸控式螢幕
 - Xbox 控制器
 - Windows Mixed Reality 控制器
-- HoloLens 手勢
+- HoloLens手勢
 - HTC Vive 杆控制器
 - Oculus 觸控控制器
 - Oculus 遠端控制器
@@ -326,13 +326,13 @@ MRTK 也支援 Windows Mixed Reality 和 OpenVR 的原生 SDK 控制器模型。
 
 <img src="../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_ServiceInspectors.PNG" width="350px" alt="Service Inspectors" style="display:block;">
 
-您可以勾選設定設定檔中的 [*編輯器設定*] 下的 [*使用服務* 偵測器]，以啟用服務偵測器。
+您可以勾選設定設定檔中的 [使用編輯器下的 *服務* 偵測器]*設定*，以啟用服務偵測器。
 
 ### <a name="depth-buffer-renderer"></a>深度緩衝區轉譯器
 
 與一些混合的現實平臺共用深度緩衝區可以改善全像 [影像的穩定](../performance/hologram-stabilization.md)。 例如，Windows Mixed Reality 平臺可以修改每圖元轉譯的場景，以在轉譯框架所需的時間內進行微妙的移動。 不過，這些技術需要具有精確資料的深度緩衝區，以瞭解幾何與使用者之間的位置和距離。
 
-為了確保場景會將所有必要的資料轉譯至深度緩衝區，開發人員可以在設定檔中的 *編輯器設定* 下切換轉譯 *深度緩衝區* 功能。 這將會採用目前的深度緩衝區，並藉由將後置處理效果套用 [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) 至主要攝影機，將其轉譯為場景視圖的色彩。
+為了確保場景會將所有必要的資料轉譯至深度緩衝區，開發人員可以在設定設定檔中的 [*設定編輯器*] 底下切換 [轉譯 *深度緩衝區*] 功能。 這將會採用目前的深度緩衝區，並藉由將後置處理效果套用 [`DepthBufferRenderer`](xref:Microsoft.MixedReality.Toolkit.Rendering.DepthBufferRenderer) 至主要攝影機，將其轉譯為場景視圖的色彩。
 
 ![轉譯深度緩衝區公用程式 ](../features/images/mixed-reality-toolkit-configuration-profile-screens/MRTK_DepthBufferExample.gif)
  <sup>場景中的藍色圓柱具有 ZWrite 關閉的材質，因此未寫入任何深度資料</sup>

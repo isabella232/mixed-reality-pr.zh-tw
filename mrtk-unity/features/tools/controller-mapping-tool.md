@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f00dc01555ef158dab21334761bd23ef6a70dba4
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 8c1da7ae6a46bd00599a77b1c4cbb0b2f7baa632
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144085"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176177"
 ---
 # <a name="controller-mapping-tool"></a>控制器對應工具
 
@@ -26,7 +26,7 @@ ms.locfileid: "110144085"
 
 檢查控制器的 Unity 對應：
 
-- 連接控制器
+- 連線控制器
 - 按下每個按鈕並移動每個軸
 - 請注意顯示中的對應
 - 更新控制器的輸入系統資料提供者中的控制項對應

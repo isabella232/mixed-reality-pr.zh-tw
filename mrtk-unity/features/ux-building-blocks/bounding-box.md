@@ -1,16 +1,16 @@
 ---
-title: BoundingBox
+title: 週框方塊
 description: MRTK 中的周框方塊總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、周框方塊
-ms.openlocfilehash: 1c5e0e4a03aa31d9df4f78613a05643840d70501
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: e8e3587ba871e127590a975b688a70db337daa19
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105549998"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177544"
 ---
 # <a name="bounding-box"></a>週框方塊
 
@@ -21,7 +21,7 @@ ms.locfileid: "105549998"
 
 [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox)腳本提供在混合現實中轉換物件的基本功能。 周框方塊會顯示全像影像周圍的立方體，表示它可以與互動。 Cube 角落和邊緣上的控點可讓您縮放或旋轉物件。 周框方塊也會對使用者輸入做出回應。 例如，在 HoloLens 2 上，周框方塊會回應手指附近，並提供視覺回饋以協助觀察物件的距離。 您可以輕鬆地自訂所有互動和視覺效果。
 
-如需詳細資訊，請參閱 Windows 開發人員中心中的周 [框方塊和應用程式行](/windows/mixed-reality/app-bar-and-bounding-box) 。
+如需詳細資訊，請參閱 Windows 開發人員中心中的周[框方塊和應用程式行](/windows/mixed-reality/app-bar-and-bounding-box)。
 
 ## <a name="example-scene"></a>範例場景
 
@@ -34,7 +34,7 @@ ms.locfileid: "105549998"
 1. 將 Box 碰撞新增至物件
 2. 將 `BoundingBox` 腳本指派給物件
 3. 設定選項，例如「啟動」方法 (請參閱下面的偵測 [器屬性](#inspector-properties) 一節) 
-4.  (選擇性) 為 HoloLens 2 樣式周框方塊指派 prefabs 和材質 (請參閱下方的 [控制碼樣式](#handle-styles) 區段) 
+4.  (選擇性) 為 HoloLens 2 樣式周框方塊指派 prefabs 和材質 (請參閱下方的[控制碼樣式](#handle-styles)區段) 
 
 > [!NOTE]
 > 使用偵測器中的 [ *目標物件* 和 *界限覆寫* ] 欄位，即可指派具有多個子元件之物件中的特定物件和碰撞器。
@@ -161,7 +161,7 @@ private void PutABoxAroundIt(GameObject target)
 
 ## <a name="handle-styles"></a>處理樣式
 
-依預設，當您只指派 [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) 腳本時，它會顯示 HoloLens 1 代樣式的控制碼。 若要使用 HoloLens 2 樣式控點，您必須指派適當的控制碼 prefabs 和材質。
+依預設，當您只指派 [`BoundingBox.cs`](xref:Microsoft.MixedReality.Toolkit.UI.BoundingBox) 腳本時，它會顯示 HoloLens 第一代樣式的控制碼。 若要使用 HoloLens 2 樣式控點，您必須指派適當的控制碼 prefabs 和材質。
 
 ![周框方塊控制碼樣式](../images/bounding-box/MRTK_BoundingBox_HandleStyles1.png)
 

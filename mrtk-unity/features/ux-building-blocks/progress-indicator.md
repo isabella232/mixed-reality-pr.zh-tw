@@ -1,18 +1,18 @@
 ---
-title: ProgressIndicator
+title: 進度指示器
 description: MRTK 中的進度指標總覽
 author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 9170a376812901cb063038a5513d4fbf79ad0a28
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 268d13d00bc0bcf1d522eaa6809dab9892624e11
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110129"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176576"
 ---
-# <a name="progress-indicators"></a>進度指標
+# <a name="progress-indicator"></a>進度指示器
 
 ![進度指標](../images/progress-indicator/MRTK_ProgressIndicator_Main.png)
 

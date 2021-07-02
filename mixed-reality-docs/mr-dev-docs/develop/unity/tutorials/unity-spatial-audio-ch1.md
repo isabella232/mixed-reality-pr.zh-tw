@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: 112531a3248461a5b380ad4b93de34545a2f2c3f
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: a61e709f24c2162bc6e6e1248de658128674d49e
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403359"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113175369"
 ---
 # <a name="1-adding-spatial-audio-to-your-unity-project"></a>1. 將空間音訊新增至 Unity 專案
 
@@ -37,12 +37,12 @@ ms.locfileid: "111403359"
 * 已[安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦
 * 基本 C# 程式設計知識
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
-* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity 中樞</a> 已掛接 UNITY 2020/2019 LTS，並已新增通用 Windows 平臺組建支援模組
+* <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">unity 中樞</a>已掛接 unity 2020/2019 LTS，並已新增通用 Windows 平臺組建支援模組
 
 我們 **強烈建議您** 先完成 [快速](mr-learning-base-01.md) 入門教學課程系列，或先利用 Unity 和 MRTK 的一些基本經驗，再繼續進行。
 
 > [!Important]
-> 本教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 Unity 2019 LTS (目前的 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
+> 此教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 unity 2019 LTS (目前 2019.4. x) 如果您使用舊版的 WSA 或 Windows XR 外掛程式。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 ## <a name="creating-and-preparing-the-unity-project"></a>建立和準備 Unity 專案
 
@@ -51,37 +51,33 @@ ms.locfileid: "111403359"
 為此，請先遵循[初始化您的專案和第一個應用程式](mr-learning-base-02.md) (但不包括[對您的裝置建置應用程式](mr-learning-base-02.md#building-your-application-to-your-hololens-2)的指示)，其中包括下列步驟：
 
 1. [建立 Unity 專案](mr-learning-base-02.md#creating-the-unity-project)，並為其提供適當的名稱，例如「MRTK 教學課程」
-
-1. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
-
-1. [匯入 TextMeshPro 基本資源](mr-learning-base-02.md#importing-the-textmeshpro-essential-resources)
-
-1. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
-
-1. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) ，並為場景提供適當的名稱，例如 *SpatialAudio*
+2. [切換建置平台](mr-learning-base-02.md#configuring-the-unity-project)
+3. [匯入 TextMeshPro 基本資源](mr-learning-base-04.md#importing-the-textmeshpro-essential-resources)
+4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
+5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk) ，並為場景提供適當的名稱，例如 *SpatialAudio*
 
 然後，遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 的指示，以確定您場景的 MRTK 設定檔是 **DefaultHoloLens2ConfigurationProfile** ，並將空間感知網格的顯示選項變更為 **遮蔽**。
 
-## <a name="adding-microsoft-spatializer-to-the-project"></a>將 Microsoft 空間定位器新增至專案
+## <a name="adding-microsoft-spatializer-to-the-project"></a>將 Microsoft 空間定位器新增至 Project
 
 下載並匯入 Microsoft 空間定位器  <a href="https://github.com/microsoft/spatialaudio-unity/releases/download/v1.0.18/Microsoft.SpatialAudio.Spatializer.Unity.1.0.18.unitypackage" target="_blank">SpatialAudio. 空間定位器. 1.0.18. unitypackage </a>
 
 >[!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-02.md#importing-the-tutorial-assets) 的指示。
+> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
 
 ## <a name="enable-the-microsoft-spatializer-plugin"></a>啟用 Microsoft 空間定位器外掛程式
 
-將 Microsoft 空間定位器匯入您的 unity 專案之後，[ **MRTK 專案** 設定程式] 視窗隨即出現，請使用 [ **音訊空間定位器** ] 下拉式清單選取 **Microsoft 空間定位器**，然後按一下 [套用] 按鈕以套用設定：
+將 Microsoft 空間定位器匯入您的 unity 專案之後， **MRTK Project** 的 [設定器] 視窗隨即出現，請使用 [**音訊空間定位器**] 下拉式清單選取 **Microsoft 空間定位器**，然後按一下 [套用] 按鈕以套用設定：
 
-![MRTK 專案配置器](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
+![MRTK Project 的配置器](images/spatial-audio/spatial-audio-01-section3-step1-1.PNG)
 
-您也可以手動啟用 Microsoft 空間定位器：開啟 **編輯 > 專案設定-> 音訊**，然後將 **空間定位器外掛程式** 變更為 "Microsoft 空間定位器"。
+您也可以手動啟用 Microsoft 空間定位器：開啟 **編輯 > Project 設定 > 音訊**，然後將 **空間定位器外掛程式** 變更為 "Microsoft 空間定位器"。
 
-![顯示空間定位器外掛程式的專案設定](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
+![顯示空間定位器外掛程式的 Project 設定](images/spatial-audio/spatial-audio-01-section3-step1-2.PNG)
 
 ## <a name="enable-spatial-audio-on-your-workstation"></a>在您的工作站上啟用空間音訊
 
-在桌上出版本的 Windows 上，預設會停用空間音訊。 以滑鼠右鍵按一下工作列中的音量圖示來啟用它。 若要取得您在 HoloLens 2 上聽到的最佳表示，請選擇 [ **空間音效-> 耳機用 Windows Sonic**]。
+在 Windows 的桌上出版本上，預設會停用空間音訊。 以滑鼠右鍵按一下工作列中的音量圖示來啟用它。 若要取得您在 HoloLens 2 上聽到的最佳表示，請選擇 [**空間音效-> 耳機用 Windows Sonic**]。
 
 ![桌面空間音訊設定](images/spatial-audio/spatial-audio-01-section4-step1-1.PNG)
 

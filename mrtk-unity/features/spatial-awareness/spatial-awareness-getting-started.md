@@ -1,18 +1,18 @@
 ---
-title: 空間感知
+title: 空間感知入門
 description: 描述 MRTK 中的空間感知
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 776033dbb4736ccaa44cdb683c4fce284758a51c
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 46bb78bc4e2574fd4da14f19edf52624b7b301c2
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144465"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176714"
 ---
-# <a name="spatial-awareness"></a>空間感知
+# <a name="spatial-awareness-getting-started"></a>空間感知入門
 
 ![空間感知](../images/spatial-awareness/MRTK_SpatialAwareness_Main.png)
 
@@ -21,7 +21,7 @@ ms.locfileid: "110144465"
 > [!NOTE]
 > 目前，「混合現實」工具組不會隨附空間理解演算法，如同最初封裝在 HoloToolkit 中。 空間理解通常涉及轉換空間網格資料，以建立簡化和/或群組的網格資料，例如平面、牆壁、樓層、上限等。
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 新增空間感知的支援需要混合現實工具組的兩個主要元件：空間感知系統和支援的平臺提供者。
 
@@ -37,9 +37,9 @@ ms.locfileid: "110144465"
 
 | 設定檔 | 預設啟用的系統 |
 | --- | --- |
-| `DefaultHoloLens1ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens1)  | 否 |
-| `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2)  | 否 |
-| `DefaultMixedRealityToolkitConfigurationProfile` (資產/MRTK/SDK/設定檔)  | 對 |
+| `DefaultHoloLens1ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens1)  | False |
+| `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2)  | False |
+| `DefaultMixedRealityToolkitConfigurationProfile` (資產/MRTK/SDK/設定檔)  | True |
 
 1. 在場景階層中選取要在 [偵測器] 面板中開啟的 MixedRealityToolkit 物件。
 
@@ -55,7 +55,7 @@ ms.locfileid: "110144465"
 
 ### <a name="register-observers"></a>註冊觀察者
 
-Mixed Reality 工具組中的服務可以有 [Data Provider 服務](../../architecture/systems-extensions-providers.md) ，使用平臺特定資料和實行控制來補充主要服務。 其中一個範例是混合的現實輸入系統，具有 [多個資料提供者](../input/input-providers.md) ，可從各種平臺特定 api 取得控制器和其他相關的輸入資訊。
+Mixed Reality 工具組中的服務可以有[Data Provider 服務](../../architecture/systems-extensions-providers.md)，使用平臺特定資料和實行控制來補充主要服務。 其中一個範例是混合的現實輸入系統，具有 [多個資料提供者](../input/input-providers.md) ，可從各種平臺特定 api 取得控制器和其他相關的輸入資訊。
 
 空間感知系統很類似，因為資料提供者會為系統提供真實世界的網格資料。 空間感知設定檔至少必須註冊一個空間觀察者。 空間觀察者通常是平臺特定的元件，可作為提供者，從特定平臺的端點呈現各種類型的網格資料 (例如 HoloLens) 。
 
@@ -78,7 +78,7 @@ Mixed Reality 工具組中的服務可以有 [Data Provider 服務](../../archit
 一旦空間感知系統設定為所需的觀察者 (s) ，就可以建立專案，並將其部署至目標平臺。
 
 > [!IMPORTANT]
-> 如果以 Windows Mixed Reality 平臺為目標 (例如： HoloLens) ，請務必確定已啟用 [空間感知功能](/windows/mixed-reality/spatial-mapping-in-unity) ，才能在裝置上使用空間感知系統。
+> 如果以 Windows Mixed Reality 平臺為目標 (例如： HoloLens) ，請務必確定已啟用[空間感知功能](/windows/mixed-reality/spatial-mapping-in-unity)，才能在裝置上使用空間感知系統。
 
 > [!WARNING]
 > 某些平臺（包括 Microsoft HoloLens）提供從 Unity 內遠端執行的支援。 這項功能可讓您快速開發和測試，而不需要建立和部署步驟。 請務必使用在目標硬體和平臺上執行的應用程式建立和部署版本，進行最終的接受度測試。

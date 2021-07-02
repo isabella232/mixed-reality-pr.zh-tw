@@ -1,18 +1,18 @@
 ---
-title: Leap 運動 MRTK
+title: 使用 Leap 動作
 description: 針對閏運動設定的檔
 author: CDiaz-ms
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、閏運動、
-ms.openlocfilehash: 8ef5d26512d50a93691932789e84c099c6246bc3
-ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
+ms.openlocfilehash: 3ddf039f8409022d8aa2e425c46cd4d47ede16a0
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110543234"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113176510"
 ---
-# <a name="how-to-configure-leap-motion-by-ultraleap-hand-tracking-in-mrtk"></a>如何在 MRTK 中使用 Ultraleap) 手勢來設定 Leap 運動 (
+# <a name="using-leap-motion"></a>使用 Leap 動作
 
 需要 [Leap 移動控制器](https://www.ultraleap.com/product/leap-motion-controller/) 才能使用此資料提供者。
 
@@ -58,7 +58,7 @@ ms.locfileid: "110543234"
 
     ![LeapMotionInputProfileClone](../images/cross-platform/CloneInputSystemProfile.png)
 
-    - 開啟 [ **輸入資料提供者** ] 區段，選取頂端的 [ **加入 Data Provider** ，將會在清單結尾加入新的資料提供者。  開啟新的資料提供者，並將類型設為 MixedReality，並將 **類型** 設定為 **LeapMotion，> LeapMotionDeviceManager**
+    - 開啟 [**輸入資料提供者**] 區段，選取頂端的 [**加入 Data Provider** ，將會在清單結尾加入新的資料提供者。  開啟新的資料提供者，並將類型設為 MixedReality，並將 **類型** 設定為 **LeapMotion，> LeapMotionDeviceManager**
 
     ![Leap 新增 Data Provider](../images/cross-platform/leap-motion/LeapAddDataProvider.png)
 
@@ -89,9 +89,9 @@ ms.locfileid: "110543234"
     - 將 Data Provider 新增至輸入系統設定檔之後，請按下 [播放]，將您的手移至 [Leap] 運動控制器前面，您應該會看到該手的接點表示。
 
 1. 建立您的專案
-    - 流覽至檔案 **> 組建設定**
+    - 流覽至 **File > Build 設定**
     - 如果使用 Data Provider 的 Leap 動作，只支援獨立組建。
-    - 如需有關如何使用適用于獨立組建的 Windows Mixed Reality 耳機的指示，請參閱 [建立和部署 MRTK 至 WMR 耳機 (獨立) ](wmr-mrtk.md#building-and-deploying-mrtk-to-wmr-headsets-standalone)。
+    - 如需有關如何使用適用于獨立組建的 Windows Mixed Reality 耳機的指示，請參閱[建立和部署 MRTK 至 WMR 耳機 (獨立) ](wmr-mrtk.md#building-and-deploying-mrtk-to-wmr-headsets-standalone)。
 
 ## <a name="getting-the-hand-joints"></a>取得手接點
 
@@ -152,7 +152,7 @@ public class LeapHandJoints : MonoBehaviour, IMixedRealityHandJointHandler
 > [!NOTE]
 > 如果相機是在編輯器中使用 WASD 按鍵移動，且 `LeapControllerOrientation` 是 **耳機**，則手不會跟隨相機。 如果在設定耳機的情況下插入 VR 耳機，則只會在相機移動之後進行 `LeapControllerOrientation` 。   如果設定為 [桌上]，則會在編輯器中追蹤相機移動 `LeapControllerOrientation` 。 
 
-## <a name="removing-leap-motion-from-the-project"></a>從專案移除 Leap 動作
+## <a name="removing-leap-motion-from-the-project"></a>從 Project 移除 Leap 移動
 
 1. 流覽至 **混合現實工具** 組的  >  **閏動作**  >  **個別的 leap 動作 Unity 模組**
     - 讓 Unity 重新整理為 MixedReality 中的參考，在此步驟中修改 **LeapMotion asmdef** 檔案

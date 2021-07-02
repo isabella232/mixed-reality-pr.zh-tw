@@ -5,16 +5,16 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK 套件、
-ms.openlocfilehash: e3e7a2d06cd38d7a9e8daf579f1a312904a86280
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 524783c48b82722aec26648ea54477a6c7bcd4ae
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345071"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177327"
 ---
-# <a name="mixed-reality-toolkit-and-unity-package-manager"></a>混合現實工具組和 Unity 封裝管理員
+# <a name="using-the-unity-package-manager"></a>使用 Unity 封裝管理員
 
-從版本2.5.0 開始，使用 [混合現實功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)，Microsoft 混合現實工具組會在使用 unity 2019.4 和更新版本時，與 unity 封裝管理員 (UPM) 整合。
+從版本2.5.0 開始，使用[混合現實功能工具](/windows/mixed-reality/develop/unity/welcome-to-mr-feature-tool)，Microsoft 混合現實工具組會在使用 unity 2019.4 和更新版本時，與 unity 封裝管理員 (UPM) 整合。
 
 ## <a name="using-the-mixed-reality-feature-tool"></a>使用 Mixed Reality 功能工具
 
@@ -42,7 +42,7 @@ ms.locfileid: "110345071"
 ![MRTK Foundation UPM 套件](../features/images/packaging/MRTK_FoundationUPM.png)
 
 > [!NOTE]
-> 如果使用 Unity 封裝管理員移除混合現實工具組套件，就必須使用 [先前所述的步驟](#using-the-mixed-reality-feature-tool)重新新增。
+> 如果使用 Unity 封裝管理員移除混合現實工具組套件，就必須使用[先前所述的步驟](#using-the-mixed-reality-feature-tool)重新新增。
 
 ### <a name="using-mixed-reality-toolkit-examples"></a>使用混合現實工具組範例
 

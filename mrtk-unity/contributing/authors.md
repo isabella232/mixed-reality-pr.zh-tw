@@ -4,13 +4,13 @@ description: MRTK 作者清單
 author: cadia
 ms.author: cadia
 ms.date: 05/27/2021
-keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、參與者、社區'
-ms.openlocfilehash: e952926f067cb6be10621b2914372aaa47af5b7d
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、Contributors、Community'
+ms.openlocfilehash: ae8cc8b1ab26a12188622a2c846dddd381491dc2
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647778"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177293"
 ---
 # <a name="authors"></a>Authors
 

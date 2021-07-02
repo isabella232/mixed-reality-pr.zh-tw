@@ -5,14 +5,14 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手互動、界限控制、Pressable 按鈕、
-ms.openlocfilehash: 229933dfd2414e485da6c1a77a2ffb08c9982249
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: 7926c8bdd525af24a26e2f4c87257dca7628956a
+ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908400"
+ms.lasthandoff: 07/01/2021
+ms.locfileid: "113177438"
 ---
-# <a name="hand-interaction-examples-scene"></a>手邊互動範例場景
+# <a name="hand-interaction-examples"></a>手上互動範例
 
 ![手形互動範例1](../images/hand-interaction-examples/MRTK_HandInteractionExamples.png)
 
@@ -22,7 +22,7 @@ ms.locfileid: "111908400"
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_MRFT.png" width="550" alt="Example Package 1"><br/>
 
-在 Unity 中，使用功能表視窗 > 專案中的封裝管理員 > > 自訂，並選取 **混合的現實工具組範例**。 按一下 [**示範-HandTracking**] 旁邊的 [匯 **入到專案**] 按鈕。 您將可以在 [資產 > 範例] 資料夾下找到 **HandInteractionExamples** 場景。
+在 Unity 中，使用功能表視窗 > Project > 自訂中封裝管理員 >，然後選取 [**混合的現實工具組範例**]。 按一下 [HandTracking] 旁 **的**[匯 **入] Project** 按鈕。 您將可以在 [資產 > 範例] 資料夾下找到 **HandInteractionExamples** 場景。
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_2.png" width="300" alt="Example Package 2"><br/>
 
@@ -30,10 +30,10 @@ ms.locfileid: "111908400"
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_Package_4.png" width="650" alt="Example Package 4"><br/>
 
-* 如果您未使用混合的現實功能工具，您可以直接從 [MRTK GitHub 的 [發行] 頁面](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)下載並匯入 **MixedReality unitypackage** 。
+* 如果您未使用混合的現實功能工具，您可以直接從 [MRTK GitHub 的 [發行] 頁面](https://github.com/microsoft/MixedRealityToolkit-Unity/releases)下載並匯入 **unitypackage** 。
 
 > [!NOTE]
-> 這個範例場景使用 *TextMesh Pro*。 若要開啟場景，請在匯入場景期間顯示個別的提示時，按一下 [匯 *入 TMP 基本* ]。 Unity 接著會匯入 TextMesh Pro 套件。
+> 這個範例場景會使用 *TextMesh Pro*。 若要開啟場景，請在匯入場景期間顯示個別的提示時，按一下 [匯 *入 TMP 基本* ]。 Unity 接著會匯入 TextMesh Pro 套件。
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_TMP2.png" width="450" alt="Example TMP2">
 
