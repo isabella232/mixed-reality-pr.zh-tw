@@ -4,8 +4,6 @@
   href: camera-system/toc.yml
 - name: 診斷
   href: diagnostics/toc.yml
-- name: 彈性
-  href: elastics/toc.yml
 - name: 範例場景
   href: example-scenes/toc.yml
 - name: 體驗設定
