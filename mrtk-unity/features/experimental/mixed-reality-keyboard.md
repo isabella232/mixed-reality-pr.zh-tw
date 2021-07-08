@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 9fa81db9a71f1d0ce32bdd80a123eb072fc26fc5
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6a33ed5b021e90cba56344f32a9c9a33e8fcc476
+ms.sourcegitcommit: c260aed8a37855faf9575d968e615959a56a13fc
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143389"
+ms.lasthandoff: 07/07/2021
+ms.locfileid: "113466228"
 ---
-# <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>混合的現實和 HoloLens 鍵盤協助程式類別
+# <a name="mixed-reality-and-hololens-keyboard-helper-classes"></a>Mixed Reality 和 HoloLens 鍵盤協助程式類別
 
 MRTK 提供數個實驗性 helper 元件，可協助您從 [系統鍵盤](../ux-building-blocks/system-keyboard.md)啟動和讀取文字。
 
-請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens 上的鍵盤 (第1代) 則會支援 GGV<sup>[1](/windows/mixed-reality/gaze)</sup>。 此外，從編輯器將 [Unity 遠端](../tools/holographic-remoting.md) 執行到 HoloLens 時，系統鍵盤也不會顯示。
+請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens (第一代) 上的鍵盤則支援 GGV<sup>[1](/windows/mixed-reality/gaze)</sup>。 此外，從編輯器執行[Unity 遠端處理](../tools/holographic-remoting.md)至 HoloLens 時，不會顯示系統鍵盤。
 
 ## <a name="mixedrealitykeyboard"></a>MixedRealityKeyboard
 
@@ -25,7 +25,7 @@ MRTK 提供數個實驗性 helper 元件，可協助您從 [系統鍵盤](../ux-
 ### <a name="how-to-use"></a>如何使用
 
 1. 將 [`MixedRealityKeyboard`](xref:Microsoft.MixedReality.Toolkit.Experimental.UI.MixedRealityKeyboard) 元件附加至任何物件。
-2. 呼叫 `Show()` `Hide()` 以顯示和隱藏鍵盤，以及處理 `OnShowKeyboard` 、 `OnHideKeyboard` 和事件， `OnCommitText` 以在顯示、隱藏鍵盤及按下 enter 鍵時處理。
+2. 呼叫 `ShowKeyboard(string text = "", bool multiLine = false)` `HideKeyboard()` 以顯示和隱藏鍵盤，以及處理 `OnShowKeyboard` 、 `OnHideKeyboard` 和事件， `OnCommitText` 以在顯示、隱藏鍵盤及按下 enter 鍵時處理。
 
 ## <a name="input-fields-tmp_keyboardinputfield-and-ui_keyboardinputfield"></a>輸入欄位 TMP_KeyboardInputField 和 UI_KeyboardInputField
 
