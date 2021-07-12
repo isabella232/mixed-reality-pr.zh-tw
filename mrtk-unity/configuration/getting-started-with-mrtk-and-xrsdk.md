@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、XR SDK
-ms.openlocfilehash: 01aca42ab4e883d26a814a1572d39eda7576ab57
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: bc2924f8e080b0c202f7c3e394a5382cf306431c
+ms.sourcegitcommit: e380d56f5504be4e4f069394a58cf0147eb33b66
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908384"
+ms.lasthandoff: 07/11/2021
+ms.locfileid: "113603689"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>開始使用 MRTK 和 XR SDK
 
 XR SDK 是 unity [2019.3 和以上的 unity 新 XR 管線](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)。 在 Unity 2019 中，它會提供現有 XR 管線的替代方案。 在 Unity 2020 中，它是 Unity 中唯一的 XR 管線。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 若要開始使用 Mixed Reality 工具組，請遵循 [提供的步驟](../install-the-tools.md#importing-the-mixed-reality-toolkit) 將 MRTK 新增至專案。
 
@@ -26,30 +26,30 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
 
 ### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-進入 **Unity 的封裝管理員** ，並安裝 Windows XR 外掛程式套件，以新增 XR SDK 上的 Windows Mixed Reality 支援。 這也會提取一些相依性套件。
+進入 **Unity 的封裝管理員**，並安裝 Windows XR 外掛程式套件，以新增對 XR SDK Windows Mixed Reality 的支援。 這也會提取一些相依性套件。
 
 1. 確定已成功安裝下列各項：
    * XR 外掛程式管理
-   * Windows XR 外掛程式
+   * WindowsXR 外掛程式
    * XR 舊版輸入協助程式
 
 2. 移至 [編輯] > [專案設定]。
-3. 在 [專案設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
+3. 在 Project 設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
 4. 移至 [通用 Windows 平臺設定]，並確定已核取 [外掛程式提供者] 下的 [Windows Mixed Reality]。
 5. 確定已核取 [啟動時初始化 XR]。
-6.  (**_編輯器中的 HoloLens 遠端處理需要，否則為選擇性_**) 移至獨立設定，並確定已在外掛程式提供者底下檢查 Windows Mixed Reality。 也請確定已核取 [啟動時初始化 XR]。
+6. **_在編輯器 HoloLens 遠端處理中需要 (，否則為選擇性_**) 移至 [獨立設定]，並確定已核取 [外掛程式提供者] 下的 Windows Mixed Reality。 也請確定已核取 [啟動時初始化 XR]。
 
     ![已選取獨立索引標籤的 XR 外掛程式管理](images/xr-management-img-02.png)
 
 7.  (**_選擇性_**) 按一下 [XR 外掛程式管理] 下的 [Windows Mixed Reality] 索引標籤，然後建立自訂設定設定檔來變更預設值。 如果設定清單已經存在，則不需要建立任何設定檔。
 
-    ![已選取 [Windows] 索引標籤的 XR 外掛程式管理](images/xr-management-img-01.png)
+    ![已選取 Windows 索引標籤的 XR 外掛程式管理](images/xr-management-img-01.png)
 
 ### <a name="oculus"></a>Oculus
 
 1. 請遵循最後的 [XR SDK 管線指南，以瞭解如何在 MRTK 中設定 Oculus 的使用方式](../supported-devices/oculus-quest-mrtk.md) 。 本指南概述設定 Unity 和 MRTK 以使用 XR SDK 管線進行 Oculus 的要求所需的步驟。
 
-### <a name="openxr-preview"></a>OpenXR (Preview) 
+### <a name="openxr"></a>OpenXR
 
 > [!IMPORTANT]
 > Unity 中的 OpenXR 僅支援 Unity 2020.2 和更新版本。
@@ -59,8 +59,8 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
    1. XR 外掛程式管理
    1. OpenXR 外掛程式
    1. Mixed Reality OpenXR 外掛程式
-1. 移至 [編輯 > 專案設定]。
-1. 在 [專案設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
+1. 移至 [編輯] > Project 設定。
+1. 在 Project 設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
 1. 確定已核取 [啟動時初始化 XR]。
 1.  (**_選擇性_**) 如果以 HoloLens 2 為目標，請確定您是在 UWP 平臺上，然後選取 [Microsoft HoloLens 功能組]
 
@@ -108,13 +108,13 @@ to
 ::: moniker-end
 
 ::: moniker range=">= mrtkunity-2021-05"
-| OpenXR 外掛程式 | Windows XR 外掛程式 |
+| OpenXR 外掛程式 | WindowsXR 外掛程式 |
 |---------------|-------------------|
 | [`XRSDK.OpenXR.OpenXRCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRCameraSettings) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) |
 | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-| OpenXR 外掛程式 | Windows XR 外掛程式 |
+| OpenXR 外掛程式 | WindowsXR 外掛程式 |
 |---------------|-------------------|
 | | [`XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityCameraSettings) |
 | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) | [`GenericXRSDKCameraSettings`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKCameraSettings) |
@@ -135,7 +135,7 @@ to
 to
 ::: moniker-end
 
-| OpenXR 外掛程式 | Windows XR 外掛程式 |
+| OpenXR 外掛程式 | WindowsXR 外掛程式 |
 |---------------|-------------------|
 | [`OpenXRDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRDeviceManager) | [`XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealityDeviceManager) |
 
@@ -160,7 +160,7 @@ __Windows Mixed Reality__：
 to
 ::: moniker-end
 
-| OpenXR 外掛程式 | Windows XR 外掛程式 |
+| OpenXR 外掛程式 | WindowsXR 外掛程式 |
 |---------------|-------------------|
 | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) | [`XRSDKBoundarySystem`](xref:Microsoft.MixedReality.Toolkit.XRSDK.XRSDKBoundarySystem) |
 
@@ -180,13 +180,13 @@ to
 ::: moniker-end
 
 ::: moniker range=">= mrtkunity-2021-05"
-| OpenXR 外掛程式 | Windows XR 外掛程式 |
+| OpenXR 外掛程式 | WindowsXR 外掛程式 |
 |---------------|-------------------|
 | [`XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.OpenXR.OpenXRSpatialAwarenessMeshObserver) UWP) 的 ( | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) UWP) 的 ( |
 | [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver) 非 UWP) 的 ( | |
 ::: moniker-end
 ::: moniker range="< mrtkunity-2021-05"
-| OpenXR 外掛程式 | Windows XR 外掛程式 |
+| OpenXR 外掛程式 | WindowsXR 外掛程式 |
 |---------------|-------------------|
 | [`XRSDK.GenericXRSDKSpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.GenericXRSDKSpatialMeshObserver) | [`XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver`](xref:Microsoft.MixedReality.Toolkit.XRSDK.WindowsMixedReality.WindowsMixedRealitySpatialMeshObserver) |
 ::: moniker-end
