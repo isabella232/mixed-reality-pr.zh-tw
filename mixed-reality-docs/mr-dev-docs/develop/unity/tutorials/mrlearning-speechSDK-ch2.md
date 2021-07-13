@@ -1,20 +1,20 @@
 ---
-title: 新增本機語音轉換文字翻譯離線模式
-description: 完成此課程，以了解如何在混合實境應用程式中新增離線模式以進行本機語音轉換文字翻譯。
+title: 使用 Azure 語音辨識執行命令
+description: 完成本課程，以瞭解如何在混合現實應用程式中使用 Azure 語音辨識來執行命令。
 author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e7a48dc4bb64eb177e6fa290f4918345c3d642f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590150"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656626"
 ---
-# <a name="2-adding-an-offline-mode-for-local-speech-to-text-translation"></a>2.新增本機語音轉換文字翻譯離線模式
+# <a name="2-execute-commands-using-azure-speech-recognition"></a>2. 使用 Azure 語音辨識執行命令
 
 在本教學課程中，您將新增使用 Azure 語音辨識執行命令的功能，這可讓您根據所定義的單字或片語進行一些動作。
 

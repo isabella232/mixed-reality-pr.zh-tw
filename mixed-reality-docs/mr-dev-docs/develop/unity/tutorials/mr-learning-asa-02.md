@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: eddde9b827dcf2a2f054f48a50f38946e5d98533
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 9c3ae23c39bf4d0b32d8a5d82716f93fee48b6db
+ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175566"
+ms.lasthandoff: 07/13/2021
+ms.locfileid: "113656641"
 ---
 # <a name="2-getting-started-with-azure-spatial-anchors"></a>2.開始使用 Azure Spatial Anchors
 
@@ -66,7 +66,7 @@ ms.locfileid: "113175566"
 
 > [!WARNING]
 > ASA v 2.9.0 版和 v 2.10.0-preview 有已知的問題。1需要在場景中放置兩個額外的物件。 請使用 [偵測器] 視窗中的 [ **新增元件** ] 按鈕，將 Ar 攝影機管理員 (腳本) 和 ar 會話 (腳本) 加入至 **MixedRealityToolkit** 物件。 在 [偵測器] 視窗中，取消核取 [相機] 物件旁的核取方塊，以在新增 AR 相機管理員 (腳本) 時停用自動建立的相機。 此問題將在完整版 ASA v 2.10.0 中解決。
-> 
+>
 
 > [!NOTE]
 > 當您新增 AR 錨點管理員 (腳本) 元件時，會自動加入 AR 會話來源 (腳本) 元件，因為 AR 錨點管理員 (腳本) 元件需要它。
@@ -77,21 +77,21 @@ ms.locfileid: "113175566"
 
 在 [階層] 視窗中，展開 **ButtonParent** 物件，並選取名為 **StartAzureSession** 的第一個子物件，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件從 [階層] 視窗拖曳到 [ **無] (物件)** 欄位，以將其指派為 On Click () 事件的接聽程式
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [StartAzureSession ()]，以將此函式設定為觸發事件時所要執行的動作
 
 ![已設定 StartAzureSession 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-1.png)
 
 在 [階層] 視窗中，選取名為 **StopAzureSession** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件從 [階層] 視窗拖曳到 [ **無] (物件)** 欄位，以將其指派為 On Click () 事件的接聽程式
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [StopAzureSession ()]，以將此函式設定為觸發事件時所要執行的動作
 
 ![已設定 StopAzureSession 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-2.png)
 
 在 [階層] 視窗中，選取名為 **CreateAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件從 [階層] 視窗拖曳到 [ **無] (物件)** 欄位，以將其指派為 On Click () 事件的接聽程式
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [CreateAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 * 將 **ParentAnchor** 物件指派給空的 [無 (遊戲物件)] 欄位，使其成為 CreateAzureAnchor () 函式的引數
 
@@ -99,7 +99,7 @@ ms.locfileid: "113175566"
 
 在 [階層] 視窗中，選取名為 **RemoveLocalAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件從 [階層] 視窗拖曳到 [ **無] (物件)** 欄位，以將其指派為 On Click () 事件的接聽程式
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [RemoveLocalAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 * 將 **ParentAnchor** 物件指派給空的 [無 (遊戲物件)] 欄位，使其成為 RemoveLocalAnchor () 函式的引數
 
@@ -107,14 +107,14 @@ ms.locfileid: "113175566"
 
 在 [階層] 視窗中，選取名為 **FindAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件從 [階層] 視窗拖曳到 [ **無] (物件)** 欄位，以將其指派為 On Click () 事件的接聽程式
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [FindAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 
 ![已設定 FindAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-5.png)
 
 在 [階層] 視窗中，選取名為 **DeleteAzureAnchor** 的下一個按鈕，然後在 [偵測器] 視窗中，設定 **Button Config Helper (指令碼)** 元件的 **On Click ()** 事件，如下所示：
 
-* 將 **ParentAnchor** 物件指派給 [無 (物件)] 欄位
+* 將 **ParentAnchor** 物件從 [階層] 視窗拖曳到 [ **無] (物件)** 欄位，以將其指派為 On Click () 事件的接聽程式
 * 從 [沒有函式] 下拉式清單中，選取 [AnchorModuleScript] > [DeleteAzureAnchor ()]，以將此函式設定為觸發事件時所要執行的動作
 
 ![已設定 DeleteAzureAnchor 按鈕 OnClick 事件的 Unity](images/mr-learning-asa/asa-02-section5-step1-6.png)
