@@ -1,10 +1,10 @@
-- name: 概觀
+- name: 架構概觀
   href: overview.md
 - name: 架構和執行時間
   href: framework-and-runtime.md
 - name: 輸入系統
   items:
-    - name: 詞彙
+    - name: 術語
       href: terminology.md
     - name: 核心系統
       href: core-system.md

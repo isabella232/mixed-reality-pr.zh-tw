@@ -1,16 +1,16 @@
 ---
-title: 設定空間感知網格觀察者
+title: 設定裝置的網狀觀察器
 description: 如何在 MRTK 中設定現成的空間網格觀察者
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 0d71a32d76624698e78b8123f427ddefc08f3d0b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: aba49e88d4fc555a88fe42e4b09858f1d2453ddc
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144962"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281935"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>設定裝置的網狀觀察器
 
@@ -30,7 +30,7 @@ ms.locfileid: "110144962"
 
 ### <a name="general-settings"></a>一般設定
 
-![網格觀察者一般設定一般設定](../images/spatial-awareness/MeshObserverGeneralSettings.png)
+![網格觀察器一般設定一般設定](../images/spatial-awareness/MeshObserverGeneralSettings.png)
 
 **啟動行為**
 

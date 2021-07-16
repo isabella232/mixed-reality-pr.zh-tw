@@ -5,22 +5,22 @@ author: dongpark
 ms.author: dongpark
 ms.date: 03/29/2021
 ms.topic: article
-keywords: Figma、素描、Adobe XD、設計、設計工具、設計檔、UX 設計、HoloLens、MRTK、Mixed Reality 工具組
-ms.openlocfilehash: a24f06b29accaa64a9095054f1e6f8df13a9162e
-ms.sourcegitcommit: 0c717ed0043c7a65e2caf1452eb0f49059cdf154
+keywords: Figma、素描、Adobe XD、設計、設計工具、設計檔、UX 設計、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: ef36e68e7340bc0a1500a9468db35d1e0b417ed6
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/06/2021
-ms.locfileid: "108644854"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224320"
 ---
 # <a name="figma-toolkit"></a>Figma 工具組
 
-> [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Figma-Toolkit-MRTK/player]
+> [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RWGqke]
 
-Figma 工具組提供可用來草繪和配置 UI 的資產。 所有 UI 控制項都是以 MRTK 中可用的元件為基礎。 
+MRTK Figma 工具組提供2d 版本的 HoloLens 2 樣式 UI 控制項，您可以在 Unity 的 MRTK 或 MRTK for Unreal 中找到這些控制項。 您可以在建立 UI 版面配置和分鏡腳本的設計流程中使用此功能。
 
 > [!div class="nextstepaction"]
-> [View Figma 工具組](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Mixed-Reality-Toolkit-for-Figma?node-id=116%3A4)
+> [View Figma 工具組](https://www.figma.com/file/ltLag9SxjUIyLQFsp7NNE7/Figma-Toolkit-for-MRTK-%2F-HoloLens%2C-Windows-Mixed-Reality?node-id=116%3A4)
 
 ## <a name="how-to-use-figma-toolkit"></a>如何使用 Figma 工具組
 使用 [ **複製到您的草稿** ] 功能表來建立複本。
@@ -50,6 +50,9 @@ Figma 工具組提供可用來草繪和配置 UI 的資產。 所有 UI 控制�
 
 ![Figma 工具組範例-功能表 UI 2](images/UX_FigmaToolkit_Components_Menu2.png)<br>
 
+
+![Figma 工具組範例-功能表 UI 4](images/UX_FigmaToolkit_Components_Menu3a.png)<br>
+
 您可以使用 [ **資產** ] 索引標籤流覽這些元件，並將其拖曳到頁面中。
 
 <img src="images/UX_FigmaToolkit_Components_Menu3.png" width="200px" alt="Assets tab"><br>
@@ -59,7 +62,7 @@ Figma 工具組提供可用來草繪和配置 UI 的資產。 所有 UI 控制�
 
 Figma 工具組對於草圖功能表 UI 可能很有用。 
 
-![Figma 工具組範例-功能表 UI 3](images/UX_FigmaToolkit_Examples_Menu.png)<br>
+![Figma 工具組範例-功能表 UI 5](images/UX_FigmaToolkit_Examples_Menu.png)<br>
 
 
 資產可以用於分鏡腳本。

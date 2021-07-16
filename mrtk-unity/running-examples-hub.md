@@ -1,19 +1,19 @@
 ---
-title: 執行 MRTK 範例中樞應用程式
-description: 瞭解如何在 HoloLens 裝置上載入並使用混合現實工具組範例中樞應用程式。
+title: 試用 MRTK 範例中樞
+description: 瞭解如何在您的 HoloLens 裝置上載入和使用混合現實工具組範例中樞應用程式。
 author: polar-kev
 ms.author: v-hferrone
 ms.date: 01/14/2021
 ms.topic: article
 keywords: 混合現實工具組、MRTK、範例、HoloLens、HoloLens 2、著色器、工具提示、手互動、剪輯、周框方塊、按鈕、手形功能表、平板、滑杆
-ms.openlocfilehash: afce5da9f574f8788df3691451e30bb22d373e20
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: c748b0cc87e1f25ee3de62ef4f5c056f82db74ad
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908255"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281909"
 ---
-# <a name="running-the-mrtk-examples-hub-app"></a>執行 MRTK 範例中樞應用程式
+# <a name="try-out-the-mrtk-examples-hub"></a>試用 MRTK 範例中樞
 
 MRTK 範例中樞應用程式可讓您在 HoloLens 裝置上體驗 MRTK 的重要範例場景，而不需要建立及部署它們。 應用程式包含了手動追蹤互動、眼睛追蹤互動、剪輯、工具提示、著色器、周框方塊、pressable 按鈕、手形功能表、平板、滑杆等的範例！
 

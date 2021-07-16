@@ -1,22 +1,22 @@
 ---
-title: 透過 AR Foundation 建立及部署至 Android 和 iOS
+title: 部署至 Android 和 iOS (AR Foundation) [實驗]
 description: 在 unity 中為 Android 和 iOS (ARFoundation) 設定 MRTK 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件、iOS、IOS、Android、AR Foundation
-ms.openlocfilehash: 352afbbc11c7cc6fcd2557395c5dd36d956f396d
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、ar 套件、ios、ios、Android、ar Foundation
+ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449737"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281944"
 ---
-# <a name="building-and-deploying-to-android-and-ios-via-ar-foundation-experimental"></a>透過 AR Foundation 建立及部署至 Android 和 iOS [實驗]
+# <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>部署至 Android 和 iOS (AR Foundation) [實驗]
 
 ## <a name="install-required-packages"></a>安裝必要的套件
 
-1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/)或 [Unity 封裝管理員](../configuration/usingupm.md)下載並匯入 **MixedReality 的套件。**
+1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/)或 [Unity 封裝管理員](../configuration/usingupm.md)下載並匯入 MixedReality 的套件 **。**
 
 1. 在 Unity 封裝管理員 (UPM) 中，安裝下列套件：
 
@@ -62,11 +62,11 @@ ms.locfileid: "112449737"
 
     ![複製 MRTK 攝影機設定檔](../features/images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. 將 [偵測器] 面板移至 [相機系統] 區段，然後展開 [ **相機設定提供者** ] 區段。
+1. 將 [偵測器] 面板移至 [相機系統] 區段，然後展開 [**相機設定提供者**] 區段。
 
     ![展開設定提供者](../features/images/camera-system/ExpandProviders.png)
 
-1. 按一下 [新增 **相機設定提供者** ]，並展開新加入的 **新相機設定** 專案。
+1. 按一下 [新增 **相機設定提供者**]，並展開新加入的 **新相機設定** 專案。
 
     ![展開新的設定提供者](../features/images/camera-system/ExpandNewProvider.png)
 
@@ -83,9 +83,9 @@ ms.locfileid: "112449737"
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>建立適用于 Android 和 iOS 裝置的場景
 
-1. 確定您已將 UnityAR 攝影機設定提供者新增至您的場景。
+1. 請確定您已將 UnityAR 攝影機設定提供者新增至您的場景。
 
-1. 將平臺切換至 Unity 組建設定中的 Android 或 iOS
+1. 將平臺切換至 Unity 組建中的 Android 或 iOS 設定
 
 1. 確定已啟用相關聯的 XR 外掛程式管理提供者
 
@@ -95,4 +95,4 @@ ms.locfileid: "112449737"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Unity AR 相機設定](../features/camera-system/unity-ar-camera-settings.md)
+- [Unity AR 攝影機設定](../features/camera-system/unity-ar-camera-settings.md)

@@ -1,16 +1,16 @@
 ---
-title: 效能開始使用
+title: 效能
 description: 在 MRTK 中瞭解及調整效能的檔。
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 1ddc057c7f3966375d512a5e4a714dce093412e6
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6c8e060af585d7994774ea0bb575b6e5172b9558
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144866"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281764"
 ---
 # <a name="performance"></a>效能
 
@@ -20,7 +20,7 @@ ms.locfileid: "110144866"
 
 ### <a name="visual-profiler"></a>Visual profiler
 
-若要在開發的存留期間持續追蹤效能，強烈建議您在執行 & 的應用程式偵錯工具時，一律顯示畫面播放速率的視覺效果。 Mixed Reality 工具組提供的 [Visual Profiler](../features/diagnostics/using-visual-profiler.md) 診斷工具，可提供應用程式視圖中目前 FPS 和記憶體使用量的即時資訊。 您可以透過 [ [MRTK 設定檔](../configuration/mixed-reality-configuration-guide.md)] 偵測器底下的 [[診斷系統] 設定](../features/diagnostics/diagnostics-system-getting-started.md)來設定 Visual Profiler。
+若要在開發的存留期間持續追蹤效能，強烈建議您在執行 & 的應用程式偵錯工具時，一律顯示畫面播放速率的視覺效果。 Mixed Reality 工具組提供的 [Visual Profiler](../features/diagnostics/using-visual-profiler.md) 診斷工具，可提供應用程式視圖中目前 FPS 和記憶體使用量的即時資訊。 您可以透過 [ [MRTK 設定檔偵測器](../configuration/mixed-reality-configuration-guide.md)] 下的 [[診斷系統] 設定](../features/diagnostics/diagnostics-system-getting-started.md)設定 Visual Profiler。
 
 此外，在裝置上執行時，最好使用 Visual Profiler 來追蹤畫面播放速率，而不是在 Unity 編輯器或模擬器中執行。 在具有 [發行設定組建](/visualstudio/debugger/how-to-set-debug-and-release-configurations?preserve-view=true&view=vs-2019)的裝置上執行時，會描述最精確的效能結果。
 
@@ -45,7 +45,7 @@ ms.locfileid: "110144866"
 
 #### <a name="time-spent-on-the-cpu"></a>CPU 花費的時間
 
-![範例 Unity Profiler 圖形](../features/images/performance/UnityProfilerGraph.png)
+![範例 Unity Profiler Graph](../features/images/performance/UnityProfilerGraph.png)
 
 若要維持理想的畫面播放速率 (通常是每秒60個畫面格) ，應用程式必須達到16.6 毫秒的 CPU 時間最大畫面格時間。 為了協助識別 MRTK 功能的成本，Microsoft Mixed Reality 工具組包含每個畫面格 () 程式碼路徑的內部迴圈標記。 這些標記會使用下列格式，以協助您瞭解所使用的特定功能：
 
@@ -110,16 +110,16 @@ v2f vert (appdata v)
 Unity 提供預設值 [來控制](https://docs.unity3d.com/Manual/class-QualitySettings.html) 每個平臺端點的轉譯品質。 這些預設值可控制哪些圖形功能可以啟用，例如陰影、消除鋸齒、全球照明等等。 建議您降低這些設定，並優化轉譯期間所執行的計算數目。
 
 *步驟1：* 更新混合現實 Unity 專案以使用 *低品質* 層級設定  
-**編輯**  > **專案設定**，然後選取 [**品質**] 類別 > 選取 UWP 平臺的 *低品質*
+**編輯**  > **Project 設定**，然後選取 [**品質**] 類別 > 選取 UWP 平臺的 *低品質*
 
 *步驟2：* 針對每個 Unity 場景檔案，停用 [即時全域照明](https://docs.unity3d.com/Manual/LightMode-Realtime.html)  
 **視窗**  > 轉譯  > **光源設定**  > [取消核取 *即時全域照明*](https://docs.unity3d.com/Manual/GlobalIllumination.html)
 
-### <a name="depth-buffer-sharing-hololens"></a> (HoloLens) 的深度緩衝區共用
+### <a name="depth-buffer-sharing-hololens"></a>深度緩衝區共用 (HoloLens) 
 
-如果是針對 Windows Mixed Reality 平臺進行開發，而在特別的 HoloLens 中，啟用 *XR 設定* 下的 *深度緩衝區共用* 有助於進行全像 [影像穩定](../performance/hologram-stabilization.md)。 不過，處理深度緩衝區可能會產生效能成本，特別是在使用 [24 位深度格式](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html)時。 因此， *強烈建議您* 將深度緩衝區設定為16位精確度。
+如果是針對 Windows Mixed Reality 平臺進行開發，而在特定 HoloLens 中啟用 *XR 設定* 的 *深度緩衝區共用* 有助於進行全像 [影像穩定](../performance/hologram-stabilization.md)。 不過，處理深度緩衝區可能會產生效能成本，特別是在使用 [24 位深度格式](https://docs.unity3d.com/ScriptReference/PlayerSettings.VRWindowsMixedReality-depthBufferFormat.html)時。 因此， *強烈建議您* 將深度緩衝區設定為16位精確度。
 
-如果因為較低的位格式而發生 [z](https://en.wikipedia.org/wiki/Z-fighting) 操作，請確認所有相機的最大 [剪輯平面](https://docs.unity3d.com/Manual/class-Camera.html) 都設為應用程式的最小可能值。 Unity 預設會設定變更為1000m 的裁剪平面。 在 HoloLens 上，50m 的剪輯平面通常比大部分的應用程式案例還多。
+如果因為較低的位格式而發生 [z](https://en.wikipedia.org/wiki/Z-fighting) 操作，請確認所有相機的最大 [剪輯平面](https://docs.unity3d.com/Manual/class-Camera.html) 都設為應用程式的最小可能值。 Unity 預設會設定變更為1000m 的裁剪平面。 在 HoloLens 上，50m 的裁剪平面通常比大部分的應用程式案例還多。
 
 > [!NOTE]
 > 如果使用 *16 位深度格式*，則樣板緩衝區所需的效果將無法運作，因為 Unity 不會在此設定中 [建立樣板緩衝區](https://docs.unity3d.com/ScriptReference/RenderTexture-depth.html) 。 相反地，選取 *24 位深度格式* 通常會建立8位的樣板緩衝區（如果適用于端點圖形平台）。
@@ -127,13 +127,13 @@ Unity 提供預設值 [來控制](https://docs.unity3d.com/Manual/class-QualityS
 > 如果使用需要樣板緩衝區的 [遮罩元件](https://docs.unity3d.com/Manual/script-Mask.html) ，請考慮改用 [RectMask2D](https://docs.unity3d.com/Manual/script-RectMask2D.html) ，這不需要樣板緩衝區，因此可與 *16 位深度格式* 搭配使用。
 
 > [!NOTE]
-> 若要快速判斷場景中的哪些物件不會以視覺化方式寫入深度緩衝區，可以使用 MRTK 設定檔中 *編輯器設定* 下的轉譯 [*深度緩衝區* 公用程式](../configuration/mixed-reality-configuration-guide.md#editor-utilities)。
+> 若要快速判斷場景中的哪些物件不會以視覺化方式寫入深度緩衝區，可以在 MRTK 設定檔中使用 *編輯器設定* 的轉譯 [*深度緩衝區* 公用程式](../configuration/mixed-reality-configuration-guide.md#editor-utilities)。
 
 ### <a name="optimize-mesh-data"></a>優化網格資料
 
 [優化網格資料](https://docs.unity3d.com/ScriptReference/PlayerSettings-stripUnusedMeshComponents.html)設定會嘗試在您的應用程式中移除未使用的頂點屬性。 這項設定會藉由在組建中每個網格上每個資料的每個著色器上執行，來執行這項設定。 這適用于遊戲資料大小和執行時間效能，但可能會大幅阻礙組建時間。
 
-建議您在開發期間停用此設定，並在建立「主要」組建期間重新啟用。 您可以在 [**編輯**  >  **專案設定**  >  **播放機**  >  **其他設定**  >  **優化網格資料**] 下找到此設定。
+建議您在開發期間停用此設定，並在建立「主要」組建期間重新啟用。 您可以在 [編輯]   >  **Project 設定**  >  **Player**  >  **其他設定**  >  **優化網格資料**）中找到此設定。
 
 ## <a name="general-recommendations"></a>一般建議
 
@@ -143,7 +143,7 @@ Unity 提供預設值 [來控制](https://docs.unity3d.com/Manual/class-QualityS
 
 ### <a name="gpu-bounded"></a>GPU 界限
 
-由於混合現實應用程式大部分的平臺都是利用 [stereoscopic](https://en.wikipedia.org/wiki/Stereoscopy)轉譯，因此因為轉譯「全半寬」畫面的本質，所以通常是 GPU 限定的。 Futhermore，行動混合現實平臺（例如 HoloLens 或 Oculus）會受到行動類別 CPU & GPU 處理能力的限制。
+由於混合現實應用程式大部分的平臺都是利用 [stereoscopic](https://en.wikipedia.org/wiki/Stereoscopy)轉譯，因此因為轉譯「全半寬」畫面的本質，所以通常是 GPU 限定的。 Futhermore，行動裝置混合現實平臺（例如 HoloLens 或 Oculus）會受到行動類別 CPU & GPU 處理能力的限制。
 
 將焦點放在 GPU 上時，通常會有兩個重要的階段，應用程式必須完成每個畫面格。
 
@@ -230,7 +230,7 @@ MRTK 標準著色器統計資料範例
 - [適用于 Unity 的建議設定](/windows/mixed-reality/recommended-settings-for-unity)
 - [瞭解混合現實的效能](/windows/mixed-reality/understanding-performance-for-mixed-reality)
 - [對 Unity 的效能建議](/windows/mixed-reality/performance-recommendations-for-unity)
-- [適用于 Windows Unity 的事件追蹤指南](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
+- [Windows Unity 指南的事件追蹤](https://docs.unity3d.com/uploads/ExpertGuides/Analyzing_your_game_performance_using_Event_Tracing_for_Windows.pdf)
 
 ### <a name="oculus"></a>Oculus
 

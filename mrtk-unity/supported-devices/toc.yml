@@ -1,8 +1,8 @@
-- name: 部署至 HoloLens 和 WMR
+- name: 部署到 HoloLens 和 WMR 耳機
   href: wmr-mrtk.md
 - name: 部署至 Oculus 的追求
   href: oculus-quest-mrtk.md
-- name: '部署至 Android 和 iOS (AR Foundation) '
+- name: '部署至 Android 和 iOS (AR Foundation) [實驗]'
   href: using-ar-foundation.md
 - name: 使用 Leap 動作
   href: leap-motion-mrtk.md

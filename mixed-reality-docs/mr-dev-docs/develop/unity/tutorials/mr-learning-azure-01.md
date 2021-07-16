@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: azure, 混合實境, unity, 教學課程, hololens, hololens 2, azure blob 儲存體, azure 表格儲存體，azure spatial anchors, azure bot framework, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: c38f3102adfb5178a4d2b5429eeb24c0733db50a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 3c52384b118a72b1c2f2dfaa2205e4f890e2e5a7
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175537"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224363"
 ---
 # <a name="1-azure-cloud-services-for-hololens-2"></a>1.適用於 HoloLens 2 的 Azure 雲端服務
 
@@ -73,10 +73,10 @@ ms.locfileid: "113175537"
 * 基本的 C# 程式設計能力
 * 已[針對開發而設定](../../platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)的 HoloLens 2 裝置
 * 連線的網路攝影機 (如果想要從 Unity 編輯器進行測試)
-* 已安裝 Unity 2019 LTS 的 <a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">Unity Hub</a>，且已新增通用 Windows 平台組建支援模組
+* 已安裝 unity 2020/2019 LTS 的<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">unity 中樞</a>，並已新增通用 Windows 平臺組建支援模組
 
-> [!CAUTION]
-> 本教學課程系列的建議 Unity 版本是 Unity 2019 LTS。 這個版本能取代上述連結之必要條件中所述的任何 Unity 版本需求或建議。
+> [!Important]
+> 此教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 unity 2019 LTS (目前 2019.4. x) 如果您使用舊版的 WSA。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 ## <a name="creating-and-preparing-the-unity-project"></a>建立和準備 Unity 專案
 
@@ -90,38 +90,13 @@ ms.locfileid: "113175537"
 4. [匯入混合現實工具組和設定 Unity 專案](mr-learning-base-02.md#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)
 5. [建立和設定場景](mr-learning-base-02.md#creating-the-scene-and-configuring-mrtk)並為場景提供適當的名稱，例如 AzureCloudServices
 
-然後，遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 的指示，以確定您場景的 MRTK 設定檔是 **DefaultXRSDKConfigurationProfile** ，並將空間感知網格的顯示選項變更為 **遮蔽**。
+然後，遵循 [變更空間感知顯示選項](mr-learning-base-03.md#changing-the-spatial-awareness-display-option) 的指示，以確定您場景的 MRTK 設定檔是 **DefaultHololens2ConfigurationProfile** ，並將空間感知網格的顯示選項變更為 **遮蔽**。
 
-## <a name="installing-inbuilt-unity-packages"></a>安裝內建的 Unity 套件
+## <a name="installing-inbuilt-unity-packages-and-importing-the-tutorial-assets"></a>安裝內建 Unity 套件並匯入教學課程資產
 
-在 Unity 功能表中，選取 視窗 >  **套件管理員** 以開啟 套件管理員 視窗，然後選取 AR 基本概念，並按一下 安裝 按鈕以安裝套件：
-
-![已選取 AR Foundation 的 Unity 套件管理員視窗](images/mr-learning-asa/asa-02-section2-step1-1.png)
-
-> [!NOTE]
-> 您正在安裝 AR Foundation 套件，因為 Azure Spatial Anchors SDK 需要此套件，您將在下一節中匯入。
-
-## <a name="importing-the-tutorial-assets"></a>匯入教學課程資產
-
-將 >azurespatialanchors.unitypackage SDK V 2.7.1 新增至 unity 專案，若要新增套件，請遵循本[教學](/azure/spatial-anchors/how-tos/setup-unity-project?tabs=UPMPackage)課程
-
-下載並 **依列出順序** 來 **匯入** 下列 Unity 自訂套件：
-
-* [AzureStorageForUnity.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/AzureStorageForUnity.unitypackage)
-* [MRTK.Tutorials.AzureCloudServices.unitypackage](https://github.com/microsoft/MixedRealityLearning/releases/download/azure-cloud-services-v2.4.0/MRTK.Tutorials.AzureCloudServices.unitypackage)
-
-> [!TIP]
-> 如需有關如何匯入 Unity 自訂套件的提醒，您可以參考匯 [入教學課程資產](mr-learning-base-04.md#importing-the-tutorial-assets) 的指示。
-
-匯入教學課程資產之後，您的專案視窗看起來應該會像這樣：
-
-![匯入教學課程資產後的 Unity 階層、場景和專案視窗](images/mr-learning-azure/tutorial1-section4-step1-1.png)
-
-> [!NOTE]
-> 如果您看到任何有關於 'WorldAnchor.SetNativeSpatialAnchorPtr(IntPtr)' 和 'WorldAnchor.GetNativeSpatialAnchorPtr()' 已過時的 CS0618 警告，則可以忽略這些警告。
+[!INCLUDE[](includes/installing-packages-for-azure-cloud-services.md)]
 
 ## <a name="creating-and-preparing-the-scene"></a>建立和準備場景
-<!-- TODO: Consider renaming to 'Preparing the scene' -->
 
 在本節中，您將藉由新增一些教學課程 Prefab 來準備場景。
 
@@ -129,7 +104,7 @@ ms.locfileid: "113175537"
 
 ![已選取 SceneController、RootMenu 和 DataManager prefabs 的 Unity](images/mr-learning-azure/tutorial1-section5-step1-1.png)
 
-**SceneController (預製物件)** 包含兩個指令碼，也就是 **SceneController (指令碼)** 和 **UnityDispatcher (指令碼)** 。 **SceneController** 指令碼元件包含數個 UX 函式，並可協助相片擷取功能，而 **UnityDispatcher** 是允許 Unity 主執行緒執行動作的協助程式類別。
+**SceneController (預製專案)** 包含兩個腳本： **SceneController (腳本)** 和 **AppDispatcher (腳本)**。 **SceneController** 腳本元件包含數個 UX 函式，可協助相片捕捉功能，而 **AppDispatcher** 則是協助程式類別，可允許 Unity 主執行緒執行動作。
 
 **RootMenu (預製物件)** 是主要的 UI 預製物件，其中包含透過各種小型指令碼元件彼此連繫的所有 UI 視窗，並會控制應用程式的一般 UX 流程。
 

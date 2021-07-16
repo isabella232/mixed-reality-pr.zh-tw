@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure bot 服務, luis, 自然語言, 對話 bot, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 2e4637af1b1745a8d2394bc4b57706ac106ddd6b
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: bade124dff639e6f30fb67039debfddef54a22db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550418"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224518"
 ---
 # <a name="5-integrating-azure-bot-service"></a>5.整合 Azure Bot 服務
 
@@ -62,7 +62,7 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 
 ![選取目標平臺](images/mr-learning-azure/tutorial5-section3-step1-3.png)
 
-在特定目標中選取 [ **Azure 函數應用程式] (Windows)** ，然後按 **[下一步]** 按鈕
+在特定目標中選取 **Azure 函數應用程式 (Windows)** 然後按 **[下一步]** 按鈕
 
 ![選取目標主機](images/mr-learning-azure/tutorial5-section3-step1-4.png)
 
@@ -77,19 +77,26 @@ Bot 的目標是要能夠分辨儲存在資料庫中的「追蹤物件」數目�
 * 針對 [ **名稱**]，輸入適合服務的名稱，例如， *TrackedObjectsService*
 * 針對 **方案類型**，選擇耗用量
 * 針對 [ **位置**]，選擇接近應用程式使用者實體位置的位置，例如 *(Us) 美國西部*
-* 針對 **資源群組** 和 **儲存體**，請選擇個別的 azure 群組，並在舊章節中建立儲存體帳戶。
+* 針對 **資源群組** 和 **儲存體**，請在舊章節中選擇個別的 azure 群組和儲存體帳戶。
 
-函數應用程式建立後，按一下 **[完成]** 按鈕 
+函數應用程式建立後，請按一下 **[完成]** 按鈕。
 
 ![完成建立函數應用程式](images/mr-learning-azure/tutorial5-section3-step1-7.png)
 
-發行快顯將在完成程式之後開啟，請按一下 [ **發佈** ] 按鈕發佈函式並等候發行
+若要更新連接字串，請按一下 [**主機**] 索引標籤上的 **3 個點**，然後選取 [**管理 Azure App Service 設定**
 
-![Publish 函數](images/mr-learning-azure/tutorial5-section3-step1-8.png)
+![開啟應用程式設定](images/mr-learning-azure/tutorial5-section3-step1-8.png)
 
-一旦完成發佈，請在 [動作] 區段底下的 **Azure 入口網站中** 按一下 [管理]，就會帶您前往 Azure 入口網站中的特定函式，然後按一下 [設定] 區段 **底下的 [** *設定* ]。 在 **應用程式設定** 中， 您需要提供儲存 **追蹤物件** 之 **Azure 儲存體** 的「連接字串」。 按一下 [新增應用程式設定]，名稱請使用：**AzureStorageConnectionString**，並提供正確的「連接字串」。 之後，請按一下 [儲存]，**Azure 函式** 已準備好裝載您接下來會建立的 Bot。
+這會開啟 **應用程式設定** 視窗聽到您的 AzureStorageConnectionString 將 **本機** 和 **遠端** 的 AzureStorageConnectionString 取代。 一旦取代，請按一下 [確定]。
 
-若要取得 count 和 Find 的 URL， **請選取 [** *函數* ] 區段下的函式。 您可以在這裡找到 Count 和 Find 函式，select Count function on top 您可以找到 [ *取得* 函式 Url] 按鈕。 遵循相同的程式來取得尋找函式 Url。
+![更新連接字串](images/mr-learning-azure/tutorial5-section3-step1-8a.png)
+
+現在舔 [ **發佈** ] 按鈕，以發佈函式並等候發佈。
+
+一旦完成發佈，請在 [動作] 區段底下的 **Azure 入口網站中** 按一下 [管理]，就會帶您前往 Azure 入口網站中的特定功能，然後按一下 [*設定*] 區段 **下的 [** 設定]。 在 **應用程式設定** 中， 您需要提供儲存 **追蹤物件** 之 **Azure 儲存體** 的「連接字串」。 按一下 [新增應用程式設定]，名稱請使用：**AzureStorageConnectionString**，並提供正確的「連接字串」。 之後，請按一下 [儲存]，**Azure 函式** 已準備好裝載您接下來會建立的 Bot。
+
+若要取得 count 和 Find 的 URL， **請選取 [** *函數* ] 區段下的函式。 您可以在這裡找到 Count 和 Find 函式，select Count function on top 您可以找到 [ *取得* 函式 Url] 按鈕。
+遵循相同的程式來取得尋找函式 Url。
 
 ### <a name="creating-a-conversation-bot"></a>建立交談 Bot
 

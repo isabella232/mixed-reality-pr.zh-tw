@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, azure 自訂視覺, azure 認知服務, azure 雲端服務, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: cb391aa2cdb7944234cdeede7dd05825c008d0d8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 7624ed28c337f3621a29f15f1ab3b0e98aeb89db
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590570"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224224"
 ---
 # <a name="3-integrating-azure-custom-vision"></a>3.整合 Azure 自訂視覺
 
@@ -50,7 +50,7 @@ ms.locfileid: "99590570"
 ![在偵測器中顯示了 ObjectDetectionManager 指令碼元件設定欄位的 Unity](images/mr-learning-azure/tutorial3-section4-step1-2.png)
 
 在 [階層] 視窗中，找出 **ObjectDetectionManager** 物件並加以選取。
-**ObjectDetectionManager** 預製專案包含 **ObjectDetectionManager (腳本)** 元件，您可以從 [偵測器] 視窗看到它相依于 Azure 設定和專案設定。
+**ObjectDetectionManager** 預製專案包含 **ObjectDetectionManager (腳本)** 元件，您可以從 [偵測器] 視窗看到它相依于 Azure 設定和 Project 設定。
 
 ## <a name="retrieving-azure-api-resource-credentials"></a>擷取 Azure API 資源認證
 
@@ -60,7 +60,7 @@ ms.locfileid: "99590570"
 
 尋找並找出您已在本教學課程的「*準備場景*」一節中建立的 **認知服務** 類型的自訂視覺資源 (選取自訂視覺資源名稱，然後按下 *預測*) 。 按一下 *[總覽* ] 或 [ *金鑰和端點* ]，以取得所需的認證。
 
-### <a name="retrieving-project-settings-credentials"></a>正在抓取專案設定認證
+### <a name="retrieving-project-settings-credentials"></a>正在 Project 設定認證中抓取
 
 在[自訂視覺](https://www.customvision.ai/projects)儀表板中，開啟您在本教學課程中建立的專案，然後按一下頁面右上角的齒輪圖示，以開啟設定頁面。 您會在右側的＜資源＞區段中找到所需的認證。
 
@@ -87,10 +87,6 @@ ms.locfileid: "99590570"
 > **ObjectDetectionManager (指令碼)** 會直接將拍攝的影像上傳至自訂視覺服務。 另一種方式是使用自訂視覺 API 接受影像的 URL，作為練習，您可以修改 **ObjectDetectionManager (指令碼)** ，改為將影像上傳至 Blob 儲存體。
 
 ## <a name="detect-objects"></a>偵測物件
-
-在偵測物件之前，我們必須在已使用自訂視覺金鑰指派的專案設定下，變更  **ObjectDetectionManager (腳本)** 中所存在的 Api 金鑰。
-
-在 Azure 入口網站中尋找並找出自訂視覺資源。在 [專案設定] 下，按一下 [ *金鑰和端點* ] 以取得 Api 金鑰，並以舊的 Api 金鑰取代。
 
 您現在可以將訓練的模型放到測試中、執行應用程式，然後從 [主功能表] 中按一下 [搜尋物件]，接著輸入有問題的 **追蹤物件** 名稱。 **物件卡片** 會隨即出現，然後請按一下 [自訂視覺] 按鈕。 在這裡，**ObjectDetectionManager** 會開始在背景中取得相機中的拍攝影像，並在功能表上顯示進度。 將相機指向您用來訓練模型的物件，您將在不久後看到其已偵測到該物件。
 

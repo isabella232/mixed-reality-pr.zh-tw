@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, hololens 2, Azure 空間錨點, azure 雲端服務, azure 自訂視覺, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 0837ebd9d34ba12d660098fc765824da3c561d07
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ab5bcfe92e5de2149e844fc02164f5079e215142
+ms.sourcegitcommit: 114c304a416bfe9d9b294c4adbb4c23cbe60ea4e
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590540"
+ms.lasthandoff: 07/15/2021
+ms.locfileid: "114224274"
 ---
 # <a name="4-integrating-azure-spatial-anchors"></a>4.整合 Azure Spatial Anchors
 
@@ -39,9 +39,16 @@ ms.locfileid: "99590540"
 
 在本節中，您將了解如何設定場景，並進行必要的變更。
 
+在 [階層] 視窗中選取 [ **MixedRealityToolkit** 物件]，然後使用 [偵測器] 視窗中的 [ **新增元件** ] 按鈕來新增 **AR 錨點管理員 (腳本)**
+
+![已新增 AR 錨點管理員元件的 Unity MixedRealityToolkit 物件 ](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+
+> [!NOTE]
+> 當您新增 AR 錨點管理員 (腳本) 元件時，會自動加入 AR 會話來源 (腳本) 元件，因為 AR 錨點管理員 (腳本) 元件需要它。
+
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTKMRTK.Tutorials.AzureCloudServices] > [Prefabs] > [Manager]
 
-![已選取 AnchorManager Prefab 的 Unity](images/mr-learning-azure/tutorial4-section1-step1-1.png)
+![已選取 AnchorManager Prefab 的 Unity](images/mr-learning-azure/tutorial4-section1-step1-2.png)
 
 從 [Manager] 資料夾，將 Prefab **Anchor Manager** 拖放到場景階層中。
 

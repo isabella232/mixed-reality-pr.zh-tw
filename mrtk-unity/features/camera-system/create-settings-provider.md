@@ -1,16 +1,16 @@
 ---
-title: 建立設定提供者
+title: 建立相機設定提供者
 description: MRTK 中相機設定的資料提供者
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: d07b84c3cf550f9a235e58286b4cd239ac43b649
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 2151887a6162239e993634d5d346065362f1c428
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121186"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282030"
 ---
 # <a name="creating-a-camera-settings-provider"></a>建立相機設定提供者
 

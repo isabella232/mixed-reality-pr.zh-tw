@@ -5,14 +5,14 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 按鈕
-ms.openlocfilehash: 43570c225f25b9ea73c9d1fc4cc9b6c92b8c2dfc
-ms.sourcegitcommit: 848b4b7bb8514c2e088a3a55512b1a8075d29093
+ms.openlocfilehash: 16baeede2c63437e933eb1367f01af7f372cd62f
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/07/2021
-ms.locfileid: "107003103"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281853"
 ---
-# <a name="button"></a>按鈕
+# <a name="buttons"></a>按鈕
 
 ![按鈕主要](../images/button/MRTK_Button_Main.png)
 
@@ -124,7 +124,7 @@ ms.locfileid: "107003103"
     ![星形 ](../images/button/MRTK_Button_Radial.png) **放射狀**
     :::column-end:::
     :::column:::
-    ![核取方塊](../images/button/MRTK_Button_Checkbox.png) **核取方塊**
+    ![核取方塊 ](../images/button/MRTK_Button_Checkbox.png) **核取方塊**
     :::column-end:::
     :::column:::
     ![ToggleSwitch ](../images/button/MRTK_Button_ToggleSwitch.png) **ToggleSwitch**
@@ -154,7 +154,7 @@ ms.locfileid: "107003103"
 :::row-end:::
 :::row:::
     :::column:::  
-    HoloLens 1 gen 的 shell 樣式按鈕
+    HoloLens 第1代的 shell 樣式按鈕
     :::column-end:::
     :::column:::
     圓形形狀推播按鈕
@@ -172,7 +172,7 @@ ms.locfileid: "107003103"
 
 * 在實體環境中難以閱讀圖示和文字
 * 當事件觸發時，很難瞭解
-* 透過透明平面顯示的全像 LSR，可能不穩定，HoloLens 2 的深度穩定
+* 透過透明平面顯示的全像投影可能不穩定，因為 HoloLens 2 的深度 LSR 穩定
 
 ![按鈕 plated](../images/button/MRTK_Button_UsePlated.png)
 
@@ -228,7 +228,7 @@ ms.locfileid: "107003103"
 **實體按事件路由器** 此腳本會將事件從手形的互動傳送至 [互動](interactable.md)。
 
 **互動** 
-[互動](interactable.md)可處理各種類型的互動狀態和事件。 HoloLens 的注視、手勢和語音輸入，以及沉浸式耳機移動控制器輸入都會由這個腳本直接處理。
+[互動](interactable.md)可處理各種類型的互動狀態和事件。 此腳本直接處理 HoloLens 的注視、手勢和語音輸入和沉浸式耳機移動控制器輸入。
 
 **音訊來源** 音訊意見反應剪輯的 Unity 音訊來源。
 
@@ -236,7 +236,7 @@ ms.locfileid: "107003103"
 
 ## <a name="prefab-layout"></a>預製專案版面配置
 
-*ButtonContent* 物件包含 front 板、文字標籤和圖示。 *FrontPlate* 會使用 *Button_Box* 著色器，回應索引 fingertip 的鄰近程度。 它會顯示對觸控的燈光框線、相近光源和脈衝效果。 文字標籤會使用 TextMesh Pro 進行。 *SeeItSayItLabel* 的可見度由 [互動](interactable.md)的主題控制。
+*ButtonContent* 物件包含 front 板、文字標籤和圖示。 *FrontPlate* 會使用 *Button_Box* 著色器，回應索引 fingertip 的鄰近程度。 它會顯示對觸控的燈光框線、相近光源和脈衝效果。 文字標籤是使用 TextMesh Pro 所建立。 *SeeItSayItLabel* 的可見度由 [互動](interactable.md)的主題控制。
 
 ![按鈕版面配置](../images/button/MRTK_Button_Layout.png)
 
@@ -251,7 +251,7 @@ MRTK 按鈕會使用 `ButtonConfigHelper` 元件來協助您變更按鈕的圖�
 **圖示集** 是元件所使用的一組共用圖示資產 `ButtonConfigHelper` 。 支援三種圖示 *樣式* 。
 
 * **四** 個圖示會在使用的四個上呈現 `MeshRenderer` 。 這是預設的圖示樣式。
-* **Sprite** 圖示是使用來呈現 `SpriteRenderer` 。 如果您想要將圖示匯入為 sprite 工作表，或想要將圖示資產與 Unity UI 元件共用，這會很有用。 若要使用此樣式，您必須將 Sprite 編輯器套件安裝 **(Windows-> 封裝管理員 > 2D Sprite)**
+* **Sprite** 圖示是使用來呈現 `SpriteRenderer` 。 如果您想要將圖示匯入為 sprite 工作表，或想要將圖示資產與 Unity UI 元件共用，這會很有用。 若要使用此樣式，您將必須安裝 Sprite 編輯器封裝 **(Windows > 封裝管理員 > 2d Sprite)**
 * **字元** 圖示會使用元件來呈現 `TextMeshPro` 。 如果您想要使用圖示字型，這會很有用。 若要使用 HoloLens 圖示字型，您將需要建立 `TextMeshPro` 字型資產。
 
 若要變更按鈕使用的樣式，請展開 ButtonConfigHelper 中的 [ *圖示* ] 下拉式清單，然後從 [ *圖示樣式* ] 下拉式清單中選取。
@@ -272,9 +272,9 @@ MRTK 按鈕會使用 `ButtonConfigHelper` 元件來協助您變更按鈕的圖�
 
 ### <a name="creating-a-hololens-icon-font-asset"></a>建立 HoloLens 圖示字型資產
 
-首先，將圖示字型匯入 Unity。 在 Windows 電腦上，您可以在 *windows/font-family/holomdl2. ttf* 中找到預設的 HoloLens 字型。 將此檔案複製並貼到您的 [資產] 資料夾中。
+首先，將圖示字型匯入 Unity。 在 Windows 機上，您可以在 Windows 中找到預設 HoloLens 字型 */Fonts/holomdl2.ttf.* 將此檔案複製並貼到您的 [資產] 資料夾中。
 
-接下來，透過 **Window > TextMeshPro > 字型建立者** 來開啟 [TextMeshPro 字型資產建立者]。 以下是用來產生 HoloLens 字型塔的建議設定。 若要包含所有圖示，請在 [ *字元順序* ] 欄位中貼上下列 Unicode 範圍：
+接下來，透過 **Window > TextMeshPro > 字型建立者** 來開啟 [TextMeshPro 字型資產建立者]。 以下是產生 HoloLens font-size 的建議設定。 若要包含所有圖示，請在 [ *字元順序* ] 欄位中貼上下列 Unicode 範圍：
 
 ```c#
 E700-E702,E706,E70D-E70E,E710-E714,E718,E71A,E71D-E71E,E720,E722,E728,E72A-E72E,E736,E738,E73F,E74A-E74B,E74D,E74F-E752,E760-E761,E765,E767-E769,E76B-E76C,E770,E772,E774,E777,E779-E77B,E782-E783,E785-E786,E799,E7A9-E7AB,E7AF-E7B1,E7B4,E7C8,E7E8-E7E9,E7FC,E80F,E821,E83F,E850-E859,E872-E874,E894-E895,E8A7,E8B2,E8B7,E8B9,E8D5,E8EC,E8FB,E909,E91B,E92C,E942,E95B,E992-E995,E9E9-E9EA,EA37,EA40,EA4A,EA55,EA96,EB51-EB52,EB65,EB9D-EBB5,EBCB-EBCC,EBCF-EBD3,EC03,EC19,EC3F,EC7A,EC8E-EC98,ECA2,ECD8-ECDA,ECE0,ECE7-ECEB,ED17,EE93,EFA9,F114-F120,F132,F181,F183-F186
@@ -328,7 +328,7 @@ HoloLens 2 的 shell 樣式按鈕大小為32x32mm。 若要自訂維度，請在
 
 <img src="../images/button/MRTK_Button_Speech2.png" width="450" alt="Button speech 2">
 
-**請參閱-it，例如 it 標籤** Pressable 按鈕預製專案在 *SeeItSayItLabel* 物件下具有預留位置 TextMesh Pro 標籤。 您可以使用此標籤，將按鈕的 voice 命令關鍵字傳達給使用者。
+**請參閱-it，例如 it 標籤** pressable 按鈕預製專案在 *SeeItSayItLabel* 物件下具有預留位置 TextMesh Pro 標籤。 您可以使用此標籤，將按鈕的 voice 命令關鍵字傳達給使用者。
 
 <img src="../images/button/MRTK_Button_Speech3.png" width="450" alt="Button Speech 3">
 
@@ -372,7 +372,7 @@ MRTK 標準著色器提供各種功能，可讓您輕鬆地新增視覺效果的
 
 <img src="../images/button/MRTK_PressableButtonCube4.png" width="450" alt="Pressable button cube 4">
 
-核取 [ `Hover Light` `Proximity Light` 流暢的 **選項**]。 這可讓您近乎接近的視覺效果回饋 (鄰近性光線) 和目前的指標 (停留) 互動。
+勾選 `Hover Light` `Proximity Light` **Fluent 選項**。 這可讓您近乎接近的視覺效果回饋 (鄰近性光線) 和目前的指標 (停留) 互動。
 
 <img src="../images/button/MRTK_PressableButtonCube5.png" width="450" alt="pressable button cube 5">
 

@@ -1,16 +1,16 @@
 ---
-title: 範例中樞
+title: MRTK 範例中樞
 description: MRTK 中的範例場景總覽
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 212fc6e1489a22995241368a9bf4db96d206c44a
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: b7a55e46b2c283b5a75395b9e99874af6020a171
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144757"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114282003"
 ---
 # <a name="mrtk-examples-hub"></a>MRTK 範例中樞
 
@@ -41,7 +41,7 @@ MRTK 範例中樞使用 [場景轉換服務](../extensions/scene-transition-serv
 
 ## <a name="running-the-scene"></a>執行場景
 
-此場景適用于 Unity 的遊戲模式和裝置。 在 Unity 編輯器中執行 **MRTKExamplesHub** 場景，並使用 MRTK 的輸入模擬來與場景內容互動。 若要建立和部署，只要使用場景系統清單中所包含的其他場景來建立 **MRTKExamplesHub** 場景即可。 偵測器也可讓您輕鬆地將場景新增至組建設定。 在 [建築設定] 中，確定 **MRTKExamplesHub** 場景位於清單的最上方（索引0）。
+此場景適用于 Unity 的遊戲模式和裝置。 在 Unity 編輯器中執行 **MRTKExamplesHub** 場景，並使用 MRTK 的輸入模擬來與場景內容互動。 若要建立和部署，只要使用場景系統清單中所包含的其他場景來建立 **MRTKExamplesHub** 場景即可。 偵測器也可讓您輕鬆地將場景新增至組建設定。 在 [建築物設定] 中，確定 **MRTKExamplesHub** 場景位於清單的最上方（索引0）。
 
 <img src="../images/examples-hub/MRTK_ExamplesHub_BuildSettings.png" width="450" alt="Build settings">
 

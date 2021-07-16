@@ -1,16 +1,16 @@
 ---
-title: 建立輸入資料提供者
+title: 建立輸入系統資料提供者
 description: 在 MRTK 中建立輸入系統與資料提供者的檔
 author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c164fa406ae6822f4d889aff3bf615cf7fa76337
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 0b6012871a4d4988fdb70336a3c33455f479bcac
+ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144075"
+ms.lasthandoff: 07/16/2021
+ms.locfileid: "114281929"
 ---
 # <a name="creating-an-input-system-data-provider"></a>建立輸入系統資料提供者
 
