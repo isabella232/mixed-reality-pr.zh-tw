@@ -1,6 +1,6 @@
 - name: Authors
   href: authors.md
-- name: 參與總覽
+- name: 參與 MRTK
   href: contributing.md
 - name: 程式碼撰寫指導方針
   href: coding-guidelines.md

@@ -1,6 +1,6 @@
 - name: 歡迎使用 MRTK
   href: index.md
-- name: 試用範例中樞
+- name: 試用 MRTK 範例中樞
   href: running-examples-hub.md
 - name: 範例場景
   href: running-example-scenes.md
