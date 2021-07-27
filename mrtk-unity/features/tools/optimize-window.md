@@ -5,16 +5,19 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: f9f8ad638b8f7cb1007c923f6b568dffc4340360
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 8b8928e9c723ffa9fd08d22866b8ee5748e38ace
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177567"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713575"
 ---
 # <a name="optimize-window"></a>優化視窗
 
 [MRTK 優化] 視窗是一種公用程式，可協助自動化和通知設定混合現實專案的程式，以達到 Unity 的最佳 [效能](../../performance/perf-getting-started.md) 。 此工具通常著重于將設定設為正確預設值的設定，可節省處理的毫秒數。
+
+> [!NOTE]
+> 您可以從 Unity 編輯器的頂端列功能表流覽至 [**混合現實** 公用程式  >    >  **優化視窗]** 來開啟 [優化] 視窗。
 
 作用中的 *組建目標* 是目前由專案進行編譯的 [組建平臺](https://docs.unity3d.com/Manual/BuildSettings.html) 。
 

@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: HoloLens, 模擬器
-ms.openlocfilehash: a9ecb121652dde39be0f91a24a4d57856a874071
-ms.sourcegitcommit: eb39526f9620f0459bd30e4484307892f4609334
+ms.openlocfilehash: 701cffbe576c64333874fc88c3cd6a6b821bc458
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201629"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713592"
 ---
 # <a name="using-the-hololens-emulator"></a>使用 HoloLens 模擬器
 
@@ -283,20 +283,6 @@ HoloLens (第 1 代) 上的游標會跟著頭部的移動和旋轉。 在 HoloLe
 
 如果系統在模擬器啟動時停止回應，請停用模擬器圖形的硬體加速。
 * 在 HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\XDE\10.0 建立名為 "DisableGPU" 的登錄 DWORD 值，並將其值設定為 1。
-
-## <a name="next-development-checkpoint"></a>下一個開發檢查點
-
-依循我們配置的 Unity 開發檢查點旅程，此時您會進入部署階段。 接下來，您可以繼續進行下一個主題：
-
-> [!div class="nextstepaction"]
-> [部署至 HoloLens 模擬器](using-the-hololens-emulator.md)
-
-或者，直接跳到新增進階服務的主題：
-
-> [!div class="nextstepaction"]
-> [進階服務](../../develop/unity/unity-development-overview.md#5-adding-services)
-
-您可以隨時回到 [Unity 開發檢查點](../../develop/unity/unity-development-overview.md#4-deploying-to-a-device-or-emulator)。
 
 ## <a name="see-also"></a>另請參閱
 * [進階 HoloLens 模擬器和混合實境模擬器輸入](advanced-hololens-emulator-and-mixed-reality-simulator-input.md)

@@ -1,5 +1,5 @@
 ---
-title: Windows Mixed Reality 電腦相容性指導方針
+title: Windows Mixed Reality電腦相容性指導方針
 description: 總覽圖表列出與 Windows Mixed Reality 相容性的最低電腦系統需求。
 author: hferrone
 ms.author: v-hferrone
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，Ultra，相容，相容性，系統需求，電腦
 appliesto:
 - Windows 10
-ms.openlocfilehash: e73b00dcf8d6974f06c22c3b0ab0771a8e1a5969
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
+ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143327"
+ms.lasthandoff: 07/27/2021
+ms.locfileid: "114713572"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality 最小電腦硬體相容性指導方針
 
@@ -29,16 +29,16 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 
 ## <a name="minimum-pc-hardware-guidelines"></a>最低電腦硬體指導方針
 
-查看下列硬體指導方針並執行 [混合實境入口](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) 應用程式，以查看您的電腦是否可以執行 Windows Mixed Reality。
+查看下列硬體指導方針並執行[混合實境入口](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M)應用程式，以查看您的電腦是否可以執行 Windows Mixed Reality。
 
-請記住，您的效能將視確切的設定而有所不同。 您也必須確定您的電腦具有適用于您所使用之 Windows Mixed Reality 沉浸式耳機的 [正確埠](recommended-adapters-for-windows-mixed-reality-capable-pcs.md) 。
+請記住，您的效能將視確切的設定而有所不同。 您也必須確定您的電腦具有適用于您所使用之 Windows Mixed Reality 沉浸式耳機的[正確埠](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。
 
 >[!NOTE]
 >開發電腦的指導方針高於執行混合現實應用程式之取用者電腦的指導方針。 如果您是混合現實開發人員， [請參閱建議的開發電腦規格](https://developer.microsoft.com/en-us/windows/mixed-reality/install_the_tools#immersive_headset_development)。
 
 ## <a name="mixed-reality-portal-app"></a>混合實境入口應用程式
 
-[混合實境入口](https://www.microsoft.com/store/productid/9ng1h8b3zc7m) 是確保您的電腦已準備好執行 Windows Mixed Reality 的最佳方式。
+[混合實境入口](https://www.microsoft.com/store/productid/9ng1h8b3zc7m)是確保您的電腦已準備好執行 Windows Mixed Reality 的最佳方式。
 
 執行應用程式之後，您會收到下列其中一則訊息：
 
@@ -47,7 +47,7 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 * **無法執行混合的事實。** 此電腦不符合執行 Windows Mixed Reality 所需的最低需求。
 
 然後，您將會針對所需的硬體、驅動程式和作業系統，取得電腦的分析。
-![Windows Mixed Reality PC Check 的螢幕擷取畫面](images/screenshot-mr-pc-check.jpg)
+![Windows Mixed Reality 電腦檢查的螢幕擷取畫面](images/screenshot-mr-pc-check.jpg)
 
 <table>
 <tr>
@@ -73,12 +73,12 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 因為解析度較高，所以下列需求適用于 HP 的「回音」 G1、G2 和 Omnicept 產品線，以確保最佳的 90 Hz、完整的解析度體驗：
 
 <ul>
-<li> Intel Core i5、i7、Intel Xenon E3-1240 v5，相當於或更好。 AMD Ryzen 5 等於或更好。 </li>
+<li> Intel Core i5、i7、Intel （r） E3-1240 v5，相當於或更好。 AMD Ryzen 5 等於或更好。 </li>
 <li> NVIDIA GeForce GTX 1080、AMD Radeon RX 5700、等於或更佳 </li>
 <li> 記憶體： 8 GB RAM 或更多 </li>
 <li> 1x 顯示埠1。3 </li>
 <li> 具有電源傳遞的 1x USB 3.0 類型-C (或包含的電源配接器) </li>
-<li> Windows 10 可能是2019更新或更新版本 </li>
+<li> Windows 105月2019更新或更新版本 </li>
 </ul>
 
 **所有其他 WMR 相容的耳機** <br>
@@ -87,9 +87,9 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 <table>
 <tr>
     <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 90Hz 的電腦</th>
-    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60Hz 電腦</th>
+    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60hz 電腦</th>
 </tr><tr>
-    <td style="vertical-align: middle">作業系統</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) 或更新版本-家用版、專業版、商務版、教育版。<br/>     (<b>附注</b>： N 版或 S 模式中的 Windows 10 專業版不支援) </td>
+    <td style="vertical-align: middle">作業系統</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) 或更新版本-首頁、Pro、商務、教育。<br/>     (<b>附注</b>： N 版或 S 模式中的 Windows 10 專業版不支援) </td>
 </tr><tr>
     <td style="vertical-align: middle">處理器</td>
     <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (第4代) 、四核心 (或更好的)  <br>AMD Ryzen 5 1400 3.4 Ghz (桌面) 、四核心 (或更好的) </td>
@@ -121,7 +121,7 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
     </td>
 </tr><tr>
     <td style="vertical-align: middle">圖形驅動程式</td>
-    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows 顯示驅動程式模型 (WDDM) 2。2</td>
+    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows顯示驅動程式模型 (WDDM) 2。2</td>
 </tr><tr>
     <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">圖形顯示埠</a></td>
     <td style="vertical-align: middle; text-align: center;">HDMI 2.0 或 DisplayPort 1。2</td>
@@ -133,7 +133,7 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
     <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">USB 連線能力</a></td>
     <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3.0 </td>
 </tr><tr>
-    <td style="vertical-align: middle">適用于 <a href="controllers-in-wmr.md">動作控制器</a> 的藍牙連線 () </td>
+    <td style="vertical-align: middle">藍牙<a href="controllers-in-wmr.md">動作控制器</a>的連接 () </td>
     <td colspan="3" style="vertical-align: middle; text-align: center;">藍牙4。0</td>
 </tr><tr>
     <td style="vertical-align: middle">預期的耳機幀率</td>
@@ -151,7 +151,7 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 
 * 具有至少15個畫面的較大型膝上型電腦最適合。
 * 混合式圖形設定只與 Windows Mixed Reality 90Hz 相容。 任何混合式設定中的離散圖形介面卡，都必須符合在個別圖形介面卡的 Windows Mixed Reality 指導方針中列出的所有需求。
-* 如果您有不應該執行 Windows Mixed Reality 90Hz 的離散圖形配接器，但預設為每秒 60Hz (60 畫面格) 重新整理頻率，請使用 DisplayPort 到 HDMI 2.0 介面卡的全形來插上耳機並啟用90Hz 重新整理頻率。
+* 如果您有不應該執行 Windows Mixed Reality 90Hz 的離散圖形配接器，但預設為每秒 60hz (60 畫面格) 重新整理頻率，請使用 DisplayPort 到 HDMI 2.0 介面卡的全形來插上耳機並啟用90Hz 重新整理頻率。
 * 不同的耳機可能需要不同的硬體埠，因此請確定您的電腦具有正確的埠或 [需要的介面卡](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) ，才能連接到您的耳機。
 
 >[!NOTE]
@@ -163,8 +163,8 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 
 **需求：**
 
-* Surface 產品需要驅動程式更新，才能與 Windows Mixed Reality 相容。 您可以前往 [ **設定] > 更新和安全性] > 檢查是否有更新，** 將這些驅動程式安裝在您的介面上。
-* Surface 產品需要從影片埠 (迷你 DisplayPort 或 USB-C 的 [介面卡](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) ，視 surface PC) 至 Windows Mixed Reality 耳機的 HDMI 2.0 而定。 最新版本的介面 Mini-DisplayPort 至 HDMI AV 介面卡與 HDMI 2.0 相容 (舊版不) 。 同樣地， <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C 至 Hdmi 介面卡</a> 也與 hdmi 2.0 相容。
+* Surface 產品需要驅動程式更新，才能與 Windows Mixed Reality 相容。 您可以在介面上安裝這些驅動程式，方法是前往 **設定 > 更新和安全性 > 檢查是否有更新**。
+* surface 產品需要從影片埠 (迷你 DisplayPort 或 USB-C 的[介面卡](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md)，視 surface PC) 至 Windows Mixed Reality 耳機的 HDMI 2.0 而定。 最新版本的介面 Mini-DisplayPort 至 HDMI AV 介面卡與 HDMI 2.0 相容 (舊版不) 。 同樣地， <a href="https://www.microsoft.com/en-us/store/d/surface-usb-c-to-hdmi-adapter/94chb2m80s54/4gj5">SURFACE USB-C 至 Hdmi 介面卡</a> 也與 hdmi 2.0 相容。
 
 ## <a name="see-also"></a>另請參閱
 

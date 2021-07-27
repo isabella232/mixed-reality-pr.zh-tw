@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: 976593fd2f107d456da4f04da19621dd253f2ae1
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 207c451ee616ee4065e948ca78c17ad59f7dd190
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772421"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702469"
 ---
 # <a name="3-connecting-multiple-users"></a>3.連線多個使用者
 
@@ -39,63 +39,9 @@ ms.locfileid: "111772421"
 
 ![已選取新增 DebugWindow Prefab 的 Unity](images/mr-learning-sharing/sharing-03-section1-step1-2.png)
 
-## <a name="creating-the-user-prefab"></a>建立使用者預製物件
-
-在本節中，您將建立一個預製物件來代表共用體驗中的使用者。
-
-### <a name="1-create-and-configure-the-user"></a>1.建立並設定使用者
-
-在 [階層] 視窗中，以滑鼠右鍵按一下空白區域，然後選取 [建立空物件] 以將空的物件新增至場景，並將物件命名為 **PhotonUser**，然後進行下列設定：
-
-* 請確定變形的 **位置** 已設定為 X = 0、Y = 0、Z = 0：
-
-![已選取新建立 PhotonUser 物件的 Unity](images/mr-learning-sharing/sharing-03-section2-step1-1.png)
-
-在 [階層] 視窗中選取 [PhotonUser] 物件，在 [偵測器] 視窗中，使用 [新增元件] 按鈕，將 **Photon User (指令碼)** 元件新增至 PhotonUser 物件：
-
-![已新增 Photon 使用者元件的 Unity](images/mr-learning-sharing/sharing-03-section2-step1-2.png)
-
-在 [偵測器] 視窗中，使用 [新增元件] 按鈕，將 **Generic Net Sync (指令碼)** 元件新增至 PhotonUser 物件，並進行下列設定：
-
-* 勾選 [是使用者] 核取方塊
-
-![已新增和設定 Generic Net Sync 元件的 Unity](images/mr-learning-sharing/sharing-03-section2-step1-3.png)
-
-在 [偵測器] 視窗中，使用 [新增元件] 按鈕，將 **Photon View (指令碼)** 元件新增至 PhotonUser 物件，並進行下列設定：
-
-* 確定已將 **一般 Net Sync (腳本)** 元件指派給觀察到的 **元件** 欄位
-
-![已新增和設定 Photon View 元件的 Unity](images/mr-learning-sharing/sharing-03-section2-step1-4.png)
-
-### <a name="2-create-the-avatar"></a>2.建立虛擬人偶
-
-在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組標準資產**  >  **材質**] 資料夾，以找出 MRTK 的材質。
-
-然後在 [階層] 視窗中，以滑鼠右鍵按一下 [PhotonUser] 物件，然後選取 [3D 物件]  >  [球體]，將球體物件建立為 PhotonUser 物件的子系，並依照下列方式進行設定：
-
-* 請確定變形的 **位置** 已設定為 X = 0、Y = 0、Z = 0
-* 將變形 **縮放** 變更為適當大小，例如 X = 0.15、Y = 0.15 和 Z = 0.15
-* 對 [MeshRenderer] > [材質] > [元素 0] 欄位，指派 **MRTK_Standard_White** 材質
-
-![具有新建立和已設定頭像球體的 Unity](images/mr-learning-sharing/sharing-03-section2-step2-1.png)
-
-### <a name="3-create-the-prefab"></a>3.建立預製物件
-
-在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.MultiUserCapabilities] > [Resources] 資料夾：
-
-![已選取 [資源] 資料夾的 Unity [專案] 視窗](images/mr-learning-sharing/sharing-03-section2-step3-1.png)
-
-在仍選取 [資源] 資料夾的情況下，從 [階層] 視窗中 **按一下並拖曳** **PhotonUser** 物件到 [Resources] 資料夾，讓 PhotonUser 物件成為預製物件：
-
-![已選取新建立 PhotonUser Prefab 的 Unity](images/mr-learning-sharing/sharing-03-section2-step3-2.png)
-
-在 [階層] 視窗中，以滑鼠右鍵按一下 [PhotonUser] 物件，然後選取 [刪除]，從場景中將其移除：
-
-![已從場景中移除新建立 PhotonUser Prefab 物件的 Unity](images/mr-learning-sharing/sharing-03-section2-step3-3.png)
-
 ## <a name="configuring-pun-to-instantiate-the-user-prefab"></a>設定 PUN 以具現化使用者預製物件
 
-在本節中，您會將專案設定為使用上一節中建立的 PhotonUser 預製物件。
+在本節中，您會將專案設定為使用 PhotonUser 預製專案。
 
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.MultiUserCapabilities] > [Resources] 資料夾。
 

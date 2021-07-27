@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 多使用者功能, Photon, MRTK, 混合實境工具組, UWP, Azure 空間錨點
 ms.localizationpriority: high
-ms.openlocfilehash: d4dc943c8ca57331b4916e40db67df3cd3d6d2e6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4be0fc30b6d1b401bf137be4060704f54515ceb1
+ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99590060"
+ms.lasthandoff: 07/26/2021
+ms.locfileid: "114702491"
 ---
 # <a name="4-sharing-object-movements-with-multiple-users"></a>4.與多個使用者共用物件移動
 
@@ -27,9 +27,17 @@ ms.locfileid: "99590060"
 
 在本節中，您將藉由新增教學課程預製物件 (Prefab) 來準備場景。
 
+在 [階層] 視窗中，展開 [ **MixedRealityPlayspace** ] 物件，並選取 [ **主要攝影機** ] 子物件，然後在 [偵測器] 視窗中，使用 [ **新增元件** ] 按鈕將 **AR 攝影機管理員 (腳本)** 元件新增至 **主要攝影機** 物件：
+
+![Unity 與 AR 攝影機管理員元件部分設定](images/mr-learning-sharing/sharing-04-section1-step1-0.png)
+
 在 [專案] 視窗中，瀏覽至 [資產] > [MRTK.Tutorials.MultiUserCapabilities] > [Prefabs] 資料夾，並將 **TableAnchor** 預製物件 (Prefab) 拖曳到階層視窗中的 **SharedPlayground** 物件上方，以將其作為 SharedPlayground 物件的子系來新增至您的場景：
 
 ![已選取新增 TableAnchor Prefab 的 Unity](images/mr-learning-sharing/sharing-04-section1-step1-1.png)
+
+在 [階層] 視窗中，確定已展開 [ **MixedRealityPlayspace** ] 物件，並已選取 [ **TableAnchor** ] 物件。 將 **主要攝影機** 元件拖曳至 **TableAnchor** 之 **AR 會話來源** 元件的 **相機** 欄位：
+
+![已設定 AR 會話原始的 Unity 指派](images/mr-learning-sharing/sharing-04-section1-step1-2.png)
 
 ## <a name="configuring-pun-to-instantiate-the-objects"></a>設定 PUN 以具現化物件
 
