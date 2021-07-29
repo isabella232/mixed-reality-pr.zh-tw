@@ -5,22 +5,25 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ed8c35fc6467322c25b92924b134f176fa4a9b47
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 2856d9052f9e1d07b2f796cafeb96fb0cdef63e8
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743414"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757302"
 ---
 # <a name="periodic-table-of-the-elements"></a>元素週期表
+![Elements 應用程式的期間資料表](../images/MRDL_PeriodicTable_HL1.jpg)
 
 >[!NOTE]
 >本文討論我們在 [混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity)中建立的探索範例，這是我們分享學習的地方，並提供混合現實應用程式開發的建議。 我們的設計相關文章和程式碼將隨著我們進行新探索而演進。
 
+>[!NOTE]
+>這個範例應用程式是針對 HoloLens 第1代所設計。 請參閱[元素2.0 的定期表格](periodic-table-of-the-elements-2.md)，以取得 HoloLens 2 版本。
+
 專案的[定期資料表](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)是來自 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 瞭解如何使用 **[物件集合](../../design/object-collection.md)**，在3d 空間中配置具有各種介面類別型的物件陣列。 同時瞭解如何建立互動物件，以回應 HoloLens 的標準輸入。 您可以使用此專案的元件來建立您自己的混合現實應用程式體驗。
 
-![Elements 應用程式的期間資料表](images/640px-periodictable-hero.jpg)
 
 ## <a name="demo-video"></a>示範影片 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IkCF]
@@ -33,7 +36,7 @@ ms.locfileid: "110743414"
 
 ## <a name="background"></a>背景
 
-在我第一次體驗 HoloLens 之後，我知道我想要在混合的情況下實驗定期資料表應用程式。 由於每個專案都有許多以文字顯示的資料點，因此我認為在3D 空間中探索印刷樣式組合是很重要的主題。 讓使用者有機會將元素的 electron 模型視覺化是此專案的另一個有趣部分。
+在我第一次經驗 HoloLens 之後，我知道我想要在混合現實中試驗定期資料表應用程式。 由於每個專案都有許多以文字顯示的資料點，因此我認為在3D 空間中探索印刷樣式組合是很重要的主題。 讓使用者有機會將元素的 electron 模型視覺化是此專案的另一個有趣部分。
 
 ## <a name="design"></a>設計
 
@@ -55,7 +58,7 @@ ms.locfileid: "110743414"
 
 ### <a name="interactable-object-button"></a>互動物件 (按鈕) 
 
-[互動物件](../../design/interactable-object.md) 是物件，可回應基本的 HoloLens 輸入。 它是以預製專案/腳本的形式提供，您可以輕鬆地將它套用到任何物件。 例如，您可以在場景中製作咖啡杯互動，並回應像是注視、碰點、導覽和操作手勢等輸入。 [深入了解](../../design/interactable-object.md)
+[互動物件](../../design/interactable-object.md)是一個物件，可以回應基本的 HoloLens 輸入。 它是以預製專案/腳本的形式提供，您可以輕鬆地將它套用到任何物件。 例如，您可以在場景中製作咖啡杯互動，並回應像是注視、碰點、導覽和操作手勢等輸入。 [深入了解](../../design/interactable-object.md)
 
 ![nteractable 物件](images/640px-periodictable-interactableobject.jpg)
 
@@ -67,7 +70,7 @@ ms.locfileid: "110743414"
 
 ## <a name="technical-details"></a>技術詳細資訊
 
-您可以在 [混合式現實設計實驗室 GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)上，找到專案應用程式的定期表格的腳本和 prefabs。
+您可以在[混合現實設計實驗室的 GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_PeriodicTable)上，尋找專案應用程式的定期表格的腳本和 prefabs。
 
 ## <a name="porting-story-for-hololens-2"></a>HoloLens 2 的移植案例
 
@@ -83,7 +86,7 @@ ms.locfileid: "110743414"
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>UX 設計者 @Microsoft</td>
+<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon 公園</b></a><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>
 
@@ -91,5 +94,5 @@ ms.locfileid: "110743414"
 
 * [MRTK 範例中樞](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
-* [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [元素週期表 2.0](periodic-table-of-the-elements-2.md)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

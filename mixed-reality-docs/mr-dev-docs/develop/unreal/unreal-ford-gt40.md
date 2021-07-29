@@ -8,14 +8,15 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: ca577bdc5bc30aebf80c9888345eb0e2d5c3ce6d
-ms.sourcegitcommit: cc9d90b046a9fce792058fea25ae13a9186e43e7
+ms.openlocfilehash: e634d75af92509372209d8e7c0cde2833127c128
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/24/2021
-ms.locfileid: "105008923"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757192"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>製作 Ford GT40 體驗
+![Ford GT40 主圖影像](images/ford-gt40-hero_1920.jpg)
 
 *「預先 MRTK，使用 Unreal 開發 HoloLens 2 的作業有點繁瑣，因為所有的空間互動都必須以 c + + 手動編碼。MRTK for Unreal 讓許多這些相同的工作變得很簡單。我估計它會將初始原型所需的時間剪下一半。」* -聖約瑟 Rodriguez，軟體發展人員
 
@@ -25,10 +26,11 @@ ms.locfileid: "105008923"
 
 使用者可以使用一系列的自然且直覺的空間互動，探索 GT40's 的有利、效能和工程，這些都是以利用 Unreal 引擎所提供的高視覺精確度的方式來提供。 整個專案的軟體發展是由單一開發人員在三個月內完成，並可透過 MRTK Unreal 的 visual 腳本和設計環境來達成。
 
-> [!div class="nextstepaction"]
-> [下載 Ford GT40 應用程式](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>從 HoloLens 2 的 Microsoft Store 下載應用程式
+如果您有 HoloLens 2 的裝置，您可以直接在裝置中下載並安裝應用程式。
 
-![Ford GT40 主圖影像](images/ford-gt40-hero.jpg)
+<a href='//www.microsoft.com/store/apps/9p4vllktfvfp?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
+
 
 ## <a name="the-ask"></a>Ask
 
@@ -88,7 +90,7 @@ Ford GT40 Experience 的 **工程** 部門展示了其中一個協助 Ford 贏�
 
 ![在裝置上執行之 GT40 工程體驗的動畫 GIF](images/ford-gt40-img-07.gif)
 
-您可以 [從 Microsoft 網上商店下載](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp?activetab=pivot:overviewtab)Ford GT40 體驗，讓任何人都能利用 HoloLens 2 探索如何完成，讓傳說的賽車更有新的觀點。
+您可以[從 Microsoft 網上商店下載](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp?activetab=pivot:overviewtab)Ford GT40 體驗，讓任何人都能利用 HoloLens 2 探索如何完成，讓傳說的賽車更有新的觀點。
 
 ### <a name="getting-impressive-visual-fidelity"></a>取得令人印象深刻的視覺精確度
 
@@ -123,7 +125,7 @@ Lambert 也構思如何使用 Azure 中的應用程式 Azure 遠端轉譯或串�
 > [!div class="nextstepaction"]
 > [下載 Ford GT40 應用程式](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)
 
-請參閱 GitHub 上的 HoloLens 2 或[MRTK For Unreal 的](https://github.com/microsoft/MixedRealityToolkit-Unreal)[混合現實開發簡介](../development.md)。
+請參閱 GitHub 上的 HoloLens 2 或[MRTK for Unreal 的](https://github.com/microsoft/MixedRealityToolkit-Unreal)[混合現實開發簡介](../development.md)。
 
 <!-- ## About the team
 

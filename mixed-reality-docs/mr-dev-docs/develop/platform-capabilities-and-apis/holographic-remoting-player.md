@@ -1,38 +1,36 @@
 ---
 title: 全像攝影遠端播放程式
-description: 深入瞭解全像是全像您的 HoloLens，從電腦到 HoloLens 的全像攝影遠端播放機，以及將全像攝影內容串流處理。
+description: 您可以透過 wi-fi，瞭解全像攝影的遠端播放機，以及從電腦即時將全像攝影內容串流至您的 HoloLens。
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 07/27/2021
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、診斷、效能
-ms.openlocfilehash: 768ac55bdd117648977c64a1947254540ec7306a
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: f467b32ddab231286fc916916b0a40f210a66eb1
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810149"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757016"
 ---
 # <a name="holographic-remoting-player"></a>全像攝影遠端播放程式
 
+[瞭解全像攝影的基本概念。](platform-capabilities-and-apis/holographic-remoting-overview.md)
+
 >[!IMPORTANT]
->HoloLens 2 的全像是主要版本變更。 [ **HoloLens (第1代)** 的遠端應用程式](add-holographic-remoting.md)必須使用 NuGet 套件 1.x. x 和 [遠端應用程式， **HoloLens 2**](holographic-remoting-create-remote-wmr.md) **必須使用 2.x**. x. x. x. x. x. x. x 版。 這表示針對 HoloLens 2 所撰寫的遠端應用程式與 HoloLens (第1代) 並不相容，反之亦然。
+>HoloLens 2 的全像是主要版本變更。 [ **HoloLens (第1代)** 的遠端應用程式](add-holographic-remoting.md)必須使用 NuGet 套件 1.x. x **. x** 和 [遠端應用程式 **HoloLens 2**](holographic-remoting-create-remote-wmr.md)必須 **使用 2.x**. x. x. x. x. x. x. x 版。 這表示針對 HoloLens 2 撰寫的遠端應用程式與 HoloLens (第一代) 並不相容，反之亦然。
 
-全像 [遠端播放機](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 是一個附屬應用程式，可連線到支援全像攝影的電腦應用程式和遊戲。 全像攝影的遠端處理會使用 Wi-Fi 連線，即時將電腦上的全像攝影內容串流處理至您的 Microsoft HoloLens。
-
-全像「全像」遠端播放程式只能搭配設計用來支援全像攝影遠端的電腦應用程式使用。
-
-「全像」 (第一代) 和 HoloLens 2 都可使用全像遠端播放機。  支援 HoloLens 的電腦應用程式必須進行更新，以支援使用 HoloLens 2 的全像全像進行遠端處理。 如果您有關于支援哪些版本的問題，請洽詢您的應用程式提供者。
+全像 [遠端播放機](https://www.microsoft.com/p/holographic-remoting-player/9nblggh4sv40) 是一個附屬應用程式，可連線到支援全像攝影的電腦應用程式和遊戲。 播放程式適用于 HoloLens (第一代) 和 HoloLens 2。  需要更新 HoloLens 的電腦應用程式，以支援使用 HoloLens 2 的全像的遠端功能。 如果您有關于支援哪些版本的問題，請洽詢您的應用程式提供者。
 
 >[!TIP]
->從版本 [2.2.0](holographic-remoting-version-history.md#v2.2.0) 開始，您也可以在執行 [Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)的 Windows 電腦上使用全像遠端播放機。
+>從版本[2.2.0](holographic-remoting-version-history.md#v2.2.0)開始，您也可以在執行[Windows Mixed Reality](../../discover/navigating-the-windows-mixed-reality-home.md)的 Windows 電腦上使用全像遠端播放機。
 
 >[!TIP]
 >從版本 [2.4.0](holographic-remoting-version-history.md#v2.4.0) 使用 [OpenXR API](../native/openxr.md) 的遠端應用程式可以建立。 若要開始使用，請參閱 [使用 OpenXR Api 撰寫全像遠端處理遠端應用程式](holographic-remoting-create-remote-openxr.md)。
 
 ## <a name="connecting-to-the-holographic-remoting-player"></a>連接到全像遠端播放機
 
-依照您應用程式的指示，連接到全像遠端播放機。 您必須輸入 HoloLens 裝置的 IP 位址，您可以在遠端播放程式的主畫面上看到該位址，如下所示：
+依照您應用程式的指示，連接到全像遠端播放機。 您將需要輸入 HoloLens 裝置的 IP 位址，您可以在遠端播放程式的主畫面上看到該位址，如下所示：
 
 ![全像攝影遠端播放程式](images/holographicremotingplayer.png)
 
@@ -49,10 +47,10 @@ ms.locfileid: "98810149"
 
 ## <a name="diagnostics"></a>診斷
 
-若要測量您的連線品質，請在全像全像的遠端播放播放程式的主畫面上，說「 **啟用診斷** 」。 啟用診斷時，在 **HoloLens (第一代)** 應用程式將會顯示：
+若要測量您的連線品質，請在全像全像的遠端播放播放程式的主畫面上，說「 **啟用診斷** 」。 當啟用診斷時，在 **HoloLens (第一代)** 應用程式將會顯示：
 
 * **FPS** -遠端播放程式每秒接收和轉譯的平均轉譯框架數目。 理想的情況是 60 FPS。
-* **延遲** -框架從電腦移到 HoloLens 所花費的平均時間量。 愈小越好。 這主要取決於您的 Wi-Fi 網路。
+* **延遲**-框架從電腦移至 HoloLens 所需的平均時間量。 愈小越好。 這主要取決於您的 Wi-Fi 網路。
 
 在 **HoloLens 2** 應用程式將會顯示：
 
@@ -69,19 +67,19 @@ ms.locfileid: "98810149"
     >當面對網路抖動時，略過和重複使用的框架通常會是相同的。 相反地，如果您只看到略過的畫面格，這就是播放程式未達到其目標畫面播放速率的指標。 在這種情況下，您應該在診斷問題時留意最大轉譯時間差異時間。
 
 * **影片畫面差異** -上一秒收到的影片畫面之間的最小/最大差異。 此數目通常會與略過/重複使用的框架相互關聯，以防網路抖動所造成的問題。
-* **延遲** -上一秒的平均週期（以毫秒為單位）。 此內容中的周轉表示從 HoloLens 傳送姿勢/感應器資料到遠端/遠端端的時間，直到顯示 HoloLens 顯示器上該姿勢/遙測資料的影片畫面為止。
+* **延遲** -上一秒的平均週期（以毫秒為單位）。 此內容中的周轉表示從 HoloLens 將姿勢/感應器資料傳送至遠端/遠端端的時間，直到顯示 HoloLens 顯示器上該姿勢/遙測資料的影片畫面為止。
 * 已 **捨棄的影片框架**-上一秒捨棄的影片畫面數，以及自從建立連線之後的次數。 捨棄的影片畫面的主要原因是影片框架未按順序抵達，因此需要捨棄，因為已有較新的影片畫面。 這類似于 *捨棄的框架* ，但原因是在遠端堆疊中較低的層級。 只有在不正確的網路狀況下，才會出現已捨棄的影片畫面。
 
 在主畫面上，您可以說「 **停用診斷** 」來關閉診斷。
 
 ## <a name="pc-system-requirements"></a>電腦系統需求
-* 您的電腦 **必須** 執行 Windows 10 年度更新版或更新版本。
+* 您的電腦 **必須** 執行 Windows 10 周年更新或更新版本。
 * 我們建議使用 GeForce GTX 970 或 AMD Radeon Junos r 9 290 或更佳的圖形配接器。
 * 建議您透過乙太網路將您的電腦連線到您的網路，以減少無線躍點數目。
 
 ## <a name="see-also"></a>另請參閱
 * [HoloLens (第一代) ：新增全像的遠端處理](add-holographic-remoting.md)
-* [使用 Windows Mixed Reality Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

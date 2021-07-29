@@ -8,14 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，Ultra，相容，相容性，系統需求，電腦
 appliesto:
 - Windows 10
-ms.openlocfilehash: 754110c3fa0b5e98508f843d251c24c04b8c0a89
-ms.sourcegitcommit: 78746bef0e1ffe1480e89fed8cd30f6f8b389e8d
+ms.openlocfilehash: b7c2b4b84440e7cdd22c2c0cd7d5f9830d55625f
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/27/2021
-ms.locfileid: "114713572"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757028"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality 最小電腦硬體相容性指導方針
+
+![電腦相容性主圖影像](images/pc-comp-hero.png)
 
 ## <a name="features-and-experiences"></a>功能和經驗
 

@@ -8,25 +8,32 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: eca0b12cd9ba4e3d5d4033790184ffd770b44280
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98635396"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757108"
 ---
 # <a name="the-making-of-kippys-escape"></a>製作 Kippy 的 Escape
+![Kippy 的 Escape 主圖影像](images/KippysEscape_1920.jpg)
 
-Kippy 機器人喚醒以找出自己在島上的孤立狀態。 您可以自行專注于問題解決 hat，以協助 it 尋找 rocket 出貨的途徑！ 在您的 HoloLens 2 上，從 Microsoft Store [下載應用程式](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) ，或從 GitHub 複製存放 [庫](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) ，並取得 Kippy 家用安全！  
+Kippy 機器人喚醒以找出自己在島上的孤立狀態。 您可以自行專注于問題解決 hat，以協助 it 尋找 rocket 出貨的途徑！ 在您的 HoloLens 2 上，從 Microsoft Store[下載應用程式](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd)，或從 GitHub 複製存放[庫](https://github.com/microsoft/MixedReality-Unreal-KippysEscape)，並取得 Kippy 家用安全！  
 
 > [!IMPORTANT]
-> 如果您是從 GitHub 存放庫建立 Kippy 的 Escape，請確定您使用的是 **Unreal Engine 4.25 或更新版本** 。
+> 如果您要從 GitHub 存放庫建立 Kippy 的 Escape，請確定您使用的是 **Unreal Engine 4.25 或更新版本**。
 
-Kippy 的 Escape 是一個開放原始碼 [HoloLens 2](/hololens/hololens2-hardware) 範例應用程式，使用 Unreal Engine 4 和 [混合現實 UX 工具進行 Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)。 在這篇文章中，我們將逐步引導您完成我們的程式，從第一個原則和視覺化設計，到實施和優化體驗。 您可以在 [Unreal 開發總覽](unreal-development-overview.md)中找到使用 MRTK UX 工具開發混合現實應用程式的詳細資訊。
+Kippy 的 Escape 是一個開放原始碼[HoloLens 2](/hololens/hololens2-hardware)範例應用程式，使用 Unreal Engine 4 和[混合現實 UX 工具進行 Unreal](https://github.com/microsoft/MixedReality-UXTools-Unreal)。 在這篇文章中，我們將逐步引導您完成我們的程式，從第一個原則和視覺化設計，到實施和優化體驗。 您可以在 [Unreal 開發總覽](unreal-development-overview.md)中找到使用 MRTK UX 工具開發混合現實應用程式的詳細資訊。
+
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>從 HoloLens 2 的 Microsoft Store 下載應用程式
+如果您有 HoloLens 2 的裝置，您可以直接在裝置中下載並安裝應用程式。
+
+<a href='//www.microsoft.com/store/apps/9nbd7gl86vkd?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
+
 
 ## <a name="first-principles"></a>第一個原則 
 
-在設定以建立 Kippy 的轉型時，我們的目標是要建立一項體驗來強調 [Unreal 引擎的 HoloLens 2 支援](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html)、HoloLens 2 的功能，以及混合現實工具組。 我們想要讓開發人員能夠想像他們可以使用 Unreal 和 HoloLens 2 來建立的功能。  
+在設定以建立 Kippy 的轉型時，我們的目標是要建立一項體驗來強調[Unreal 引擎的 HoloLens 2 支援](https://docs.unrealengine.com/Platforms/AR/HoloLens2/index.html)、HoloLens 2 的功能，以及混合現實工具組。 我們想要讓開發人員能夠想像他們可以使用 Unreal 和 HoloLens 2 來建立的功能。  
 
 我們針對此體驗有三個指導準則：它需要有趣、互動，而且進入的障礙很低。 我們希望體驗的視覺效果足夠，即使是首次的混合現實使用者也不需要教學課程。  
 
@@ -82,7 +89,7 @@ Kippy 的 Escape 高度依賴混合現實 UX 工具元件，讓遊戲成為互�
 
 ## <a name="optimizing-for-hololens-2"></a>HoloLens 2 的優化 
 
-在行動裝置上建立的任何體驗中，請注意效能很重要。 Unreal 4.25 包含支援行動多重視圖的重大更新，可大幅減少轉譯的負荷並提高畫面播放速率。 建議您在優化時，查看其他 [建議的效能設定](performance-recommendations-for-unreal.md) ，以使用 Unreal 進行 HoloLens 2 開發。  
+在行動裝置上建立的任何體驗中，請注意效能很重要。 Unreal 4.25 包含支援行動多重視圖的重大更新，可大幅減少轉譯的負荷並提高畫面播放速率。 建議您在優化時，查看其他[建議的效能設定](performance-recommendations-for-unreal.md)，以使用 Unreal 進行 HoloLens 2 開發。  
 
 物理物件的效能仍維持昂貴，因此使用了一些聰明的因應措施。 比方說，第三個「橋接器」需要吹出一些阻礙 stairway 的碎屑。 因為炸彈引爆會觸發交換、切換靜態石子以進行爆炸式物件效果，而不會強制將石子視為物理物件。 
 
@@ -97,14 +104,14 @@ Kippy 的 Escape 高度依賴混合現實 UX 工具元件，讓遊戲成為互�
 
 ## <a name="try-it-out"></a>試試看！ 
 
-啟動您的 HoloLens 2 並從 Microsoft Store [下載](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) 應用程式，或從 GitHub 複製存放 [庫](https://github.com/microsoft/MixedReality-Unreal-KippysEscape) ，自行建立應用程式！  
+啟動您的 HoloLens 2 並從 Microsoft Store[下載](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd)應用程式，或從 GitHub 複製存放[庫](https://github.com/microsoft/MixedReality-Unreal-KippysEscape)，並自行建立應用程式！  
 
 ## <a name="about-the-team"></a>關於小組
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Jack Caron" width="60" height="60" src="images/kippys-escape/jack-caron.jpg"></td>
-<td style="border-style: none"><b>插座</b><br><i>領導遊戲設計工具</i><br>目前的「插座」適用于 Microsoft 的混合現實體驗，包括 HoloLens 2 專案和 AltspaceVR，而且之前是 HoloLens 平臺小組的設計工具。</td>
+<td style="border-style: none"><b>插座</b><br><i>領導遊戲設計工具</i><br>目前的「插座」適用于 Microsoft 的混合現實體驗，包括 HoloLens 2 專案和 AltspaceVR，而且之前是 HoloLens 平臺團隊的設計工具。</td>
 </tr>
 </table>
 

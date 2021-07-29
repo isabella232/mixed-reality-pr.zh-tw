@@ -2,25 +2,27 @@
 title: 開始使用電腦全像攝影遠端處理
 description: 完成此課程，以了解如何從遠端將混合實境應用程式從電腦串流到 HoloLens 2。
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, 工具提示, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: 05831ff19a998bd5e99ab5d20c3fb045a09c55e9
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 53ede3db405e6f6f4ccaa20ff35847ecc9081dca
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175431"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757350"
 ---
 # <a name="1-getting-started-with-pc-holographic-remoting"></a>1.開始使用電腦全像攝影遠端處理
 
-歡迎使用 HoloLens 2 教學課程。 在這個兩部分的教學課程系列中，您將了解如何建立混合實境體驗示範，以及如何建立適用於全像攝影遠端的電腦應用程式。
+歡迎使用 HoloLens 2 教學課程。 在這兩個部分的教學課程系列中，您將瞭解如何建立混合現實體驗示範，以及適用于全像攝影的電腦應用程式。
+
+[瞭解全像攝影的基本概念。](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 在本教學課程中，您將了解如何建立混合實境體驗。 本教學課程將示範 UI 元素、3D 模型操作、模型裁剪，以及眼球追蹤功能。
 
-在第二個教學課程 ([建立全像攝影遠端處理應用程式](mr-learning-pc-holographic-remoting-02.md)) 中，您將了解如何建立適用於全像攝影遠端處理的電腦應用程式。 並且隨時連線至 HoloLens 2，以提供在混合實境中視覺化 3D 內容的方法。
+在第二個教學課程中，您將瞭解如何建立使用全像全像的遠端處理[應用程式](mr-learning-pc-holographic-remoting-02.md)，讓您可以將進行中的工作串流至 HoloLens 並加以查看，而不需要先建立它。
 
 ## <a name="objectives"></a>目標
 

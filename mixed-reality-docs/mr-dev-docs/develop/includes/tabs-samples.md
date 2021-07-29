@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f540c1cb417f64c412657ce291c0a0822961e55d
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: d7b025ebc362a441ef45860b946a7a0f30b99b1e
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112255448"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757377"
 ---
 # <a name="unity"></a>[Unity](#tab/unity)
 
@@ -12,10 +12,23 @@ ms.locfileid: "112255448"
 
 ### <a name="hololens-2-open-source-sample-apps"></a>HoloLens 2 開放原始碼範例應用程式
 
-* [MRTK 範例中樞](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/p/mrtk-examples-hub/9mv8c39l2sj4)
-* [表面](../unity/sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/p/surfaces/9nvkpv3sk3x0)
-* [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
-* [Galaxy Explorer 2.0](../unity/galaxy-explorer-update.md)
+:::row:::
+    :::column:::
+       元素 [ ![ 2.0](../images/MRDL_PeriodicTable.jpg)](../unity/periodic-table-of-the-elements-2.md)專案的定期資料表 **[2.0](../unity/periodic-table-of-the-elements-2.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ MRTK 範例中樞](../images/MRTKExamplesHub.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) **[MRTK 範例中樞](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [ ![](../images/MRDL_Surfaces.jpg)](../unity/sampleapp-surfaces.md)介面 **[表面](../unity/sampleapp-surfaces.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ Galaxy explorer 2.0](../images/GalaxyExplorer2.jpg)](../unity/galaxy-explorer-update.md) **[galaxy explorer 2.0](../unity/galaxy-explorer-update.md)**
+    :::column-end:::
+:::row-end:::
 
 ### <a name="hololens-1st-gen-open-source-sample-apps"></a>HoloLens (第 1 代) 開啟原始碼範例應用程式
 
@@ -36,9 +49,23 @@ ms.locfileid: "112255448"
 
 部分範例會使用互動式 UX 元件 (例如按鈕和滑桿)，而 [UX 工具外掛程式](https://aka.ms/uxt-unreal)會將這些元件隨附於[適用於 Unreal 的混合實境工具組](https://aka.ms/mrtk-unreal)中。
 
-* [國際象棋應用程式](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)
-* [Kippy's Escape](../unreal/unreal-kippys-escape.md) - 在 HoloLens 2 中從 [Microsoft Store](https://www.microsoft.com/p/kippys-escape/9nbd7gl86vkd) 下載
-* [FORD GT40](../unreal/unreal-ford-gt40.md) -從[Microsoft Store](https://www.microsoft.com/p/ford-gt40/9p4vllktfvfp)下載
+:::row:::
+    :::column:::
+       [ ![ Kippy 的 escape](../unreal/images/KippysEscape_1920.jpg)](../unreal/unreal-kippys-escape.md) **[Kippy escape](../unreal/unreal-kippys-escape.md)**
+    :::column-end:::
+    :::column:::
+       [ ![ Ford GT40](../unreal/images/ford-gt40-hero_1920.jpg)](../unreal/unreal-ford-gt40.md) **[Ford GT40](../unreal/unreal-ford-gt40.md)**
+    :::column-end:::
+:::row-end:::
+
+:::row:::
+    :::column:::
+       [ ![ 國際象棋 app](../images/Unreal_ChessApp.png)](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp) **[國際象棋應用程式](https://github.com/microsoft/MixedReality-Unreal-Samples/tree/master/ChessApp)**
+    :::column-end:::
+    :::column:::
+
+    :::column-end:::
+:::row-end:::
 
 ### <a name="made-by-epic-games"></a>由 Epic Games 建立
 

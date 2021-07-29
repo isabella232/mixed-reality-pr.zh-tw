@@ -6,23 +6,24 @@ ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 7ab439a1248895975c5ebff676862515ee79ecf0
-ms.sourcegitcommit: 87b54c75044f433cfadda68ca71c1165608e2f4b
+ms.openlocfilehash: c1294a197878ecf0c6672b028284ad51eaef6955
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/10/2020
-ms.locfileid: "97010299"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757332"
 ---
 # <a name="galaxy-explorer"></a>星系探險
+![Galaxy explorer](../images/HTK_GalaxyExplorer.jpg)
 
 **您分享您的想法。我們正在共用程式碼。**
 
-Galaxy Explorer 專案已準備就緒。 您已與您分享您的想法、選擇應用程式、監看 team build，現在您可以取得原始程式碼。 如果您有裝置，則可以從 Windows 市集中下載 Microsoft HoloLens 的 [Galaxy Explorer] 專案。
+Galaxy Explorer 專案已準備就緒。 您已與您分享您的想法、選擇應用程式、監看 team build，現在您可以取得原始程式碼。 如果您有裝置，則可以從 Microsoft HoloLens 的 Windows 存放區下載 Galaxy Explorer Project。
 
->[!TIP]
->[取得](https://github.com/Microsoft/GalaxyExplorer) GitHub 上的程式碼
+>[!NOTE]
+>這個範例應用程式是針對 HoloLens 第1代所設計。 請參閱適用于 HoloLens 2 版本的[Galaxy Explorer 2.0](galaxy-explorer-update.md) 。
 
-我們的 HoloLens [開發團隊](galaxy-explorer.md#meet-the-team) （設計人員、演出者和開發人員）建立了 Galaxy Explorer，並且受邀讓您成為這一旅程的一部分。 經過六周的核心開發和兩周的改進之後，此應用程式現在已準備就緒！ 您也可以透過下列影片系列來依照整個旅程進行。
+我們 HoloLens 開發人員、演出者和開發人員的[開發團隊](galaxy-explorer.md#meet-the-team)，建立了 Galaxy Explorer，並且受邀讓您成為這一旅程的一部分。 經過六周的核心開發和兩周的改進之後，此應用程式現在已準備就緒！ 您也可以透過下列影片系列來依照整個旅程進行。
 
 <br>
 
@@ -36,11 +37,11 @@ Galaxy Explorer 旅程開始于「分享您的想法」活動。
 
 >[!VIDEO https://www.youtube.com/embed/ZxGdW_ASrRc]
 
-Microsoft HoloLens 的產業有大量的相關想法，可讓您瞭解全像電腦運算如何轉換我們的世界。 我們相信最出色的 HoloLens 應用程式將會有您想像的創意。
+Microsoft HoloLens 的產業有大量的相關想法，可讓您瞭解全像電腦運算如何轉換我們的世界。 我們相信最驚人的 HoloLens 應用程式將會有您想像的想法。
 
 您在這幾周內分享了超過5000的精彩構想！ 我們的開發小組已複習出最成功且可行的概念，並提供最多三個概念。
 
-在24小時的 Twitter 輪詢之後，Galaxy Explorer 就是獲獎的想法！ 我們的 HoloLens 開發團隊（設計人員、演出者和開發人員）建立了 Galaxy Explorer，並且受邀讓您成為這一旅程的一部分。 您可以遵循以下影片中的開發程式。
+在24小時的 Twitter 輪詢之後，Galaxy Explorer 就是獲獎的想法！ 我們 HoloLens 開發人員、演出者和開發人員的開發團隊，建立了 Galaxy Explorer，並且受邀讓您成為這一旅程的一部分。 您可以遵循以下影片中的開發程式。
 
 ## <a name="ep-1-trust-the-process"></a>Ep 1：信任流程
 
@@ -99,7 +100,7 @@ Microsoft HoloLens 的產業有大量的相關想法，可讓您瞭解全像電�
 
 我們有三個開發人員–在 Jon 與 Jessica) 、Mike (左邊) 的第二個數據列之間，以及 Karim (第二個數據列中間的 [BJ]) 旁的 (。 他們知道要實現這種創意構想所需的技術解決方案。
 
-我們一開始有四個演出者：概念演出者 (Jedd，第二個是從上一頁的) 開始，一個是從背面的) 開始，一個建模者 (說，第三個則是技術演出者 (Alex () # A7 和 animator (Steve (最左方的人) 。 這兩個方法都不會這麼做，但它們是其主要責任。
+我們一開始有四個演出者：概念演出者 (Jedd，第二個是從上一頁的) 開始，一個是從後) 開始的建模者 (的，第三個則是技術演出者 (Alex (最適合的人員) ) 和 animator (Steve (最左邊) 。 這兩個方法都不會這麼做，但它們是其主要責任。
 
 我們每天都有一個全職測試人員-Lena-誰每天測試組建、設定組建評論，以及在線上時複習功能。 雖然我們一直都在查看組建，但每個人都經常進行測試。 Lena 是 leather 夾克滾輪的人。
 
@@ -108,3 +109,4 @@ Microsoft HoloLens 的產業有大量的相關想法，可讓您瞭解全像電�
 ## <a name="see-also"></a>另請參閱
 * [案例研究-在混合式事實下建立 galaxy](../../out-of-scope/case-study-creating-a-galaxy-in-mixed-reality.md)
 * [Galaxy Explorer GitHub 存放庫](https://github.com/Microsoft/GalaxyExplorer)
+* [Galaxy Explorer 2.0](galaxy-explorer-update.md)

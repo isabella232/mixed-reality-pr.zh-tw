@@ -5,22 +5,27 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
-keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 28f8bc1e1f30573936067a83b1ad26133c23c5b8
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: a4259148926ec20bca53a23074a6d1ea285f0aa2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743397"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114756998"
 ---
 # <a name="surfaces"></a>表面
+
+![表面](images/MRDL_Surfaces_1.jpg)
 
 >[!NOTE]
 >本文討論我們在 [混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity)中建立的探索範例，這是我們分享學習的地方，並提供混合現實應用程式開發的建議。 我們的設計相關文章和程式碼將隨著我們進行新探索而演進。
 
 [表面](https://github.com/microsoft/MRDL_Unity_Surfaces)  是 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 它會探索如何使用視覺效果、音訊和完全明確的手動追蹤來建立 tactile 刺痛。
 
-![表面](images/MRDL_Surfaces_1.jpg)
+## <a name="download-app-from-microsoft-store-in-hololens-2"></a>從 HoloLens 2 的 Microsoft Store 下載應用程式
+如果您有 HoloLens 2 的裝置，您可以直接在裝置中下載並安裝應用程式。
+
+<a href='//www.microsoft.com/store/apps/9nvkpv3sk3x0?cid=storebadge&ocid=badge'><img src='https://developer.microsoft.com/store/badges/images/English_get-it-from-MS.png' alt='English badge' width="284px" height="104px" style='width: 284px; height: 104px;'/></a>
 
 ## <a name="demo-video"></a>示範影片 
 
@@ -43,22 +48,17 @@ ms.locfileid: "110743397"
 
 Lars Simkins 是 MRDL 表面應用程式背後的資深設計師，會討論應用程式的設計案例和技術重點。
 
-## <a name="project-repository-on-github"></a>GitHub 上的專案儲存機制
+## <a name="project-repository-on-github"></a>GitHub 上的 Project 存放庫
 
 [https://github.com/microsoft/MRDL_Unity_Surfaces](https://github.com/microsoft/MRDL_Unity_Surfaces)
 
-## <a name="download-app-from-microsoft-store-in-hololens-2"></a>從 HoloLens 2 的 Microsoft Store 下載應用程式
-
-https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0#activetab=pivot:overviewtab
-
- (應用程式僅適用于 HoloLens 2) 
 
 ## <a name="about-the-author"></a>關於作者
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60px"><img alt="Picture of Dong Yoon Park" width="60" height="60" src="images/dongyoonpark.jpg"></td>
-<td style="border-style: none"><b>Dong Yoon Park</b><br>UX 設計者 @Microsoft</td>
+<td style="border-style: none"><a href="http://dongyoonpark.com" target="_blank"><b>Yoon 公園</b></a><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>
 

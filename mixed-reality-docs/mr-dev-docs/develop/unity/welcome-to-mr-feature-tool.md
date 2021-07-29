@@ -1,22 +1,22 @@
 ---
 title: 歡迎使用 Mixed Reality 功能工具
-description: 瞭解 HoloLens 和 VR 開發的 MR 功能工具的基本概念。
+description: 瞭解 HoloLens 和 VR 開發之 MR 功能工具的基本概念。
 author: davidkline-ms
 ms.author: v-hferrone
 ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 4e822f2dda2a314ce06bc394a4d92b1aa6953af3
-ms.sourcegitcommit: 943489923c69c3a28bc152f1cb516dcdcea2880a
+ms.openlocfilehash: 1244f9cd4da0d6ae0b5c6f92698f87f0edd812e2
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/09/2021
-ms.locfileid: "111772411"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757088"
 ---
 # <a name="welcome-to-the-mixed-reality-feature-tool"></a>歡迎使用 Mixed Reality 功能工具
 
-![混合現實功能工具橫幅影像](images/feature-tool-banner.png)
+![混合現實功能工具橫幅影像](images/feature-tool-banner.jpg)
 
 > [!IMPORTANT]
 > Mixed Reality 功能工具目前僅適用于 Unity。 如果您是在 Unreal 中進行開發，請參閱 [工具安裝](../install-the-tools.md) 檔。
@@ -31,7 +31,7 @@ ms.locfileid: "111772411"
 * [Windows 10](https://www.microsoft.com/software-download/windows10ISO)
 
 > [!NOTE]
-> Mixed Reality 功能工具目前僅在 Windows 上執行，但 MacOS 支援即將推出！
+> Mixed Reality 功能工具目前只在 Windows 上執行，但 MacOS 支援即將推出！
 
 ## <a name="download"></a>下載
 
@@ -42,7 +42,7 @@ ms.locfileid: "111772411"
     * 建議您建立可執行檔的快捷方式，以加快存取的速度
 
 > [!NOTE]
-> 如果您不熟悉使用 Unity 封裝管理員，請遵循我們的 [UPM 指示](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager)。
+> 如果您不熟悉使用 Unity 封裝管理員，請遵循我們的[UPM 指示](/windows/mixed-reality/mrtk-unity/configuration/usingupm#managing-mixed-reality-features-with-the-unity-package-manager)。
 
 ## <a name="changes-in-this-release"></a>此版本中的變更
 
@@ -128,11 +128,11 @@ ms.locfileid: "111772411"
 
 如需詳細資訊，請參閱 [審核和核准專案修改](reviewing-changes.md)。
 
-## <a name="6-project-updated"></a>6. 更新專案
+## <a name="6-project-updated"></a>6. Project 更新
 
 當建議的變更經過核准後，您的目標 Unity 專案就會更新，以參考選取的混合現實功能。
 
-![專案已更新](images/FeatureToolProjectUpdated.png)
+![Project 更新](images/FeatureToolProjectUpdated.png)
 
 Unity 專案的 [ **套件** ] 資料夾現在有一個 **MixedReality** 子資料夾，其中包含功能套件檔案 (s) ，資訊清單會包含適當的參考 (s) 。
 

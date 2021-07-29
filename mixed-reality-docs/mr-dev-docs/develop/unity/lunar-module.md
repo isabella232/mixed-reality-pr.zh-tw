@@ -1,24 +1,24 @@
 ---
 title: 月球模組
-description: 瞭解如何使用雙向追蹤和 Xbox 控制器輸入擴充 HoloLens 的基本手勢、建立回應物件，以及執行功能表系統。
+description: 瞭解如何使用雙向追蹤和 Xbox 控制器輸入來延伸 HoloLens 的基本手勢、建立回應物件，以及執行功能表系統。
 author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ebac2c5680524b408d6dde8635d2585236fa0b08
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 4a736990a94d7f5c97a1bfc2edf998e327071bcb
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743517"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757220"
 ---
 # <a name="lunar-module"></a>月球模組
 
 >[!NOTE]
 >本文討論我們在 [混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity)中建立的探索範例，這是我們分享學習的地方，並提供混合現實應用程式開發的建議。 我們的設計相關文章和程式碼將隨著我們進行新探索而演進。
 
-[陰曆模組](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) 是 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 瞭解如何使用雙向追蹤和 Xbox 控制器輸入擴充 HoloLens 的基本手勢、建立會回應表面對應和平面尋找的物件，以及執行簡單的功能表系統。 所有專案的元件都可以在您自己的混合現實應用程式體驗中使用。
+[陰曆模組](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) 是 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 瞭解如何使用雙向追蹤和 Xbox 控制器輸入來擴充 HoloLens 的基本手勢、建立回應表面對應和平面尋找的物件，以及執行簡單的功能表系統。 所有專案的元件都可以在您自己的混合現實應用程式體驗中使用。
 
 ## <a name="demo-video"></a>示範影片 
 > [!VIDEO https://www.microsoft.com/en-us/videoplayer/embed/RE4IcIP]
@@ -53,19 +53,19 @@ Tactile 深度是感應式意見反應以進行重複動作的體驗。 在此�
 
 我們會如何將 tactile 深度套用至 Atari 傳統的已更新體積型 sequel？ 在處理輸入配置之前，必須先定址三維空間的遊戲結構。
 
-![將 HoloLens 中的介面對應視覺化](images/surfacemapping.png)<br>
-*將 HoloLens 中的空間對應視覺化*
+![視覺化 HoloLens 中的介面對應](images/surfacemapping.png)<br>
+*視覺化 HoloLens 中的空間對應*
 
 藉由運用使用者的環境，我們實際上有無限的地形選項可登陸我們的陰曆課程模組。 為了讓遊戲最喜歡原始標題，使用者可能會在環境中操作並放置不同問題的登陸板。
 
 ![飛行陰曆課程模組](images/640px-lm-hero.jpg)<br>
 *飛行陰曆課程模組*
 
-要求使用者瞭解輸入配置、控制出貨，以及要使用的小型目標是很多人。 成功的遊戲體驗具有適當的挑戰與獎勵組合。 使用者可以選擇的難度層級，而最簡單的模式就是要求使用者成功地在 HoloLens 掃描的介面上進入使用者定義區域。 一旦使用者取得遊戲的停止回應後，他們就可以迅速地建立所見的困難。
+要求使用者瞭解輸入配置、控制出貨，以及要使用的小型目標是很多人。 成功的遊戲體驗具有適當的挑戰與獎勵組合。 使用者可以選擇一個難度層級，而最簡單的模式就是要求使用者成功地在 HoloLens 所掃描的介面上，進入使用者定義區域。 一旦使用者取得遊戲的停止回應後，他們就可以迅速地建立所見的困難。
 
 ### <a name="adding-input-for-hand-gestures"></a>新增手形手勢的輸入
 
-HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and-commit.md#composite-gestures)。 使用者不需要記住內容相關的細微差異或特定手勢的總清單，可讓平臺的介面變得更多功能且容易學習。 雖然系統可能只會公開這兩個手勢，但 HoloLens 作為裝置可以一次追蹤兩個手。 我們的 node.js 至陰曆 Lander 是 [沉浸式應用程式，這表示我們可以擴充一組基本的手勢來利用兩個手勢，並新增我們自己的令人愉快 tactile 表示陰曆的模組導覽。
+HoloLens 基底輸入只有兩個手勢-[攻點和 Bloom](../../design/gaze-and-commit.md#composite-gestures)。 使用者不需要記住內容相關的細微差異或特定手勢的總清單，可讓平臺的介面變得更多功能且容易學習。 雖然系統可能只會公開這兩個手勢，但 HoloLens 的裝置可以一次追蹤兩次手。 我們的 node.js 至陰曆 Lander 是 [沉浸式應用程式，這表示我們可以擴充一組基本的手勢來利用兩個手勢，並新增我們自己的令人愉快 tactile 表示陰曆的模組導覽。
 
 回頭看一下原始的控制項配置， **我們需要解決天生和旋轉的** 問題。 特別注意的是，新內容中的旋轉會將額外的座標軸新增 (技術的兩個軸，但是 Y 軸對於登陸) 來說比較不重要。 這兩個不同的出貨移動自然會使自己能夠對應到每個手：
 
@@ -80,11 +80,11 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 
 這會比較複雜一點。 讓全像「旋轉」按鈕，以提供更豐富的體驗。 沒有實際的控制項可供使用，因此其行為必須來自操作代表 lander 的物件，或使用 lander 本身。 我們會利用點一下和拖曳方法，讓使用者能夠以他們想要的方向，有效地「推送和提取」。 每當使用者點擊並保存時，開始手勢的空間就會變成旋轉的原點。 從原點拖曳可將手平移的差異轉換 (X、Y、Z) ，並將其套用至 lander 旋轉值的差異。 或者更簡單地說，將 *左拖曳 <-> 右邊、向上 <-> 向下、在空間中向前 <->，則會據以旋轉出貨*。
 
-由於 HoloLens 可以追蹤兩個手，因此可以在天生由左方控制時，將旋轉指派給右手邊。 Finesse 是此遊戲中成功的驅動因素。 這些互動的 *風格* 是絕對最高的優先順序。 尤其是在 tactile 深度的內容中。 如果出貨的回應速度太快，就很難吸引人，而速度太慢時，使用者必須在出貨時「推送和提取」一段滑雪的時間。
+由於 HoloLens 可以追蹤兩次手，因此天生由左方控制，可以將旋轉指派給右手邊。 Finesse 是此遊戲中成功的驅動因素。 這些互動的 *風格* 是絕對最高的優先順序。 尤其是在 tactile 深度的內容中。 如果出貨的回應速度太快，就很難吸引人，而速度太慢時，使用者必須在出貨時「推送和提取」一段滑雪的時間。
 
 ### <a name="adding-input-for-game-controllers"></a>新增遊戲控制器的輸入
 
-雖然 HoloLens 上的手手勢提供了一種精細控制的新穎方法，但仍有某些缺乏「true」 tactile 的意見反應可從類比控制項獲得。 連接 Xbox 遊戲控制器可讓我們回頭 physicality，同時利用控制杆來維持精細的控制。
+雖然 HoloLens 的手手勢可提供精細控制的新穎方法，但仍有某些缺乏「true」 tactile 的意見反應，您可以從類比控制項獲得。 連接 Xbox 遊戲控制器可讓我們回頭 physicality，同時利用控制杆來維持精細的控制。
 
 有多種方式可將相對的直接控制項配置套用至 Xbox 控制器。 由於我們想要盡可能保持最接近原始 arcade 的設定， **天生** 對應最適合 [觸發程式] 按鈕。 這些按鈕是類比控制項，也就是它們有一個以上的「 *開」和「關閉* 」狀態，實際上會回應其壓力的程度。 如此一來，我們就可以像 **天生杆** 一樣地建立類似的結構。 與原始遊戲和手手勢不同的是，當使用者停止對觸發程式造成壓力時，此控制項將會剪下出貨的天生。 它仍然提供使用者與原始 arcade 遊戲一樣的 finesse 程度。
 
@@ -97,7 +97,7 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 
 ## <a name="technical-details"></a>技術詳細資訊
 
-您可以在「 [混合式現實設計實驗室」 GitHub](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule)中找到陰曆模組範例應用程式的腳本和 prefabs。
+您可以在[GitHub 的混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule)中找到陰曆模組範例應用程式的腳本和 prefabs。
 
 ## <a name="about-the-author"></a>關於作者
 
@@ -112,5 +112,5 @@ HoloLens 基底輸入只有兩個手勢- [攻點和 Bloom](../../design/gaze-and
 
 * [MRTK 範例中樞](/windows/mixed-reality/mrtk-unity/features/example-scenes/example-hub) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/mrtk-examples-hub/9mv8c39l2sj4)
 * [表面](sampleapp-surfaces.md) - [ (從 HoloLens 2 中的 Microsoft Store 下載)](https://www.microsoft.com/en-us/p/surfaces/9nvkpv3sk3x0)
-* [元素週期表 2.0](https://medium.com/@dongyoonpark/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158)
+* [元素週期表 2.0](periodic-table-of-the-elements-2.md)
 * [Galaxy Explorer 2.0](galaxy-explorer-update.md)

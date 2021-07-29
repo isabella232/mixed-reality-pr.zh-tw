@@ -2,31 +2,33 @@
 title: 建立全像攝影遠端處理電腦應用程式
 description: 完成此課程，以了解如何建立電腦應用程式，以遠端處理從您的電腦到 HoloLens 2 的混合實境體驗。
 author: jessemcculloch
-ms.author: jemccull
-ms.date: 02/05/2021
+ms.author: v-vtieto
+ms.date: 07/26/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: ca0efe13acac4408a05ab89eb98b508e9993c5a4
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
+ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392495"
+ms.lasthandoff: 07/29/2021
+ms.locfileid: "114757230"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.建立全像攝影遠端處理電腦應用程式
 
-在本教學課程中，您將了解如何建立電腦應用程式來進行全像攝影遠端處理，並在任何時間點連線 HoloLens 2，進而提供一種在混合實境中將 3D 內容視覺化的方式。
+在本教學課程中，您將瞭解如何建立使用內建遠端的電腦應用程式，讓您可以將進行中的工作串流至 HoloLens 並加以查看，而不需要先建立它。
+
+[瞭解全像攝影的基本概念。](../../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 ## <a name="objectives"></a>目標
 
 * 設定適用於全像攝影遠端處理的 Unity
 * 了解如何使用 Visual Studio 建立及部署應用程式
-* 開發全像攝影遠端處理應用程式並連線到 HoloLens
+* 開發全像遠端應用程式並連接到 HoloLens
 
 ## <a name="configuring-the-capabilities"></a>設定功能
 
-在 [ **專案設定** ] 視窗中，展開 [ **發行設定**]，向下滾動至 [功能] 區段，並選取 [除了現有的功能之外] 下顯示的 [功能] 核取方塊。
+在 [ **Project 設定**] 視窗中，展開 [**發佈設定**]，向下滾動至 [功能] 區段，然後選取 [下一項功能] 核取方塊，除了現有的功能以外。
 
 * 網際網路用戶端伺服器
 * 私人網路用戶端伺服器
