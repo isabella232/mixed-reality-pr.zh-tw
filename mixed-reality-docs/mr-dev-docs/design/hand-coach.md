@@ -5,13 +5,13 @@ author: grayclee
 ms.author: glee
 ms.date: 09/25/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 0fe0d87e26d06838c0d1b7935573d9bd8ce258ee
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality、設計、手輔導、沉浸式耳機、MRTK、手、協助手、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: baf1dab7d73f4e5fca9078717b43dab7b71632f4aa7c36dcac280c029b05d58b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208485"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -85,7 +85,7 @@ ms.locfileid: "110600427"
 
 ## <a name="can-i-create-my-own"></a>我可以建立自己的嗎？
 
-可以！ 建議您為您的遊戲建立自己的獨特手勢，並貢獻回該社區！
+是！ 建議您為您的遊戲建立自己的獨特手勢，並貢獻回該社區！
 我們提供 Rigged 手的 Maya 檔，可用於您的應用程式，您可以在這裡下載： <a href="files/HandCoach_MRTK.zip"> 下載 HandCoach_MRTK.zip </a>
 
 ![Maya 中的動畫指標範例](images/HandCoach/MayaSelect_Gif.gif)<br>
@@ -94,7 +94,7 @@ ms.locfileid: "110600427"
 
 **建議的 authoring tool**
 
-在3D 演出者之間，許多選擇使用 [Autodesk 的 Maya，可以使用 HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 來轉換資產的建立方式。 提供的手入檔案是 Maya 二進位檔案，因此建議使用 Maya 來建立動畫和匯出手。 如果您想要使用其他3D 程式，以下是 <b>。FBX</b>： <a href="files/HandCoachMRTK_FBX.zip"> 下載 HandCoachMRTK_FBX.zip </a> 以建立您自己的控制器設定。 
+在3d 演出者之間，許多選擇使用[Autodesk 的 Maya，可以使用 HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA)來轉換資產的建立方式。 提供的手入檔案是 Maya 二進位檔案，因此建議使用 Maya 來建立動畫和匯出手。 如果您想要使用其他3D 程式，以下是 <b>。FBX</b>： <a href="files/HandCoachMRTK_FBX.zip"> 下載 HandCoachMRTK_FBX.zip </a> 以建立您自己的控制器設定。 
 
 如果使用提供的可下載 maya 檔，建議您將 unity 中的手縮小為0.6。
 
@@ -141,7 +141,7 @@ ms.locfileid: "110600427"
  當匯出為 FBX 並帶入 Unity 時，請將手向下調整為0.6。 我們發現這是實際顯示的完美平衡。 
 
 ![範例： Unity 設定](images/HandCoach/HandHintScale.png)<br>
-*在 MRTK 中找到 HandCoach_R 預製專案的 Unity 設定*
+*在 MRTK 中找到的 HandCoach_R 預製專案 Unity 設定*
 
 
 ## <a name="implementing-hands-into-your-unity-project"></a>實際執行您的 Unity 專案
@@ -157,9 +157,9 @@ ms.locfileid: "110600427"
 *   如果您至少教授過一次，只要偵測到使用者停滯，請只重複手勢。
 *   如果特定的手指/手位置很重要，請確保使用者可以清楚地在動畫中看到這些細微差異。 試著 angling 手，讓最重要的部分清楚可見。 
 * 如果您注意到手上的失真，您需要移至 Unity 的品質設定來提高骨骼數目。 
- 移至 Unity 的 [編輯] > 專案設定 > 品質 > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
+ 移至 Unity 的 [編輯] > Project 設定 > 品質] > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
 
-   ![範例：專案設定視窗](images/HandCoach/ProjectSettings.png)<br>
+   ![範例： Project 設定視窗](images/HandCoach/ProjectSettings.png)<br>
 
 
 ### <a name="what-to-avoid"></a>避免事項
@@ -171,7 +171,7 @@ ms.locfileid: "110600427"
   * 材質： Teaching_Hand2
   * 腳本：請參閱 MRTK 指導方針以取得<a href= "/windows/mixed-reality/mrtk-unity/features/ux-building-blocks/hand-coach">MRTK</a>的指導方針
   * 每個專案的設定
-    * 設定為 UWP 的場景：您可以在設定 [Unity 專案](../develop/unity/Configure-Unity-Project.md) 中找到 Windows Mixed Reality 的指示。
+    * 設定為 UWP 的場景：您可以在設定[Unity Project](../develop/unity/Configure-Unity-Project.md)的 Windows Mixed Reality 上找到指示。
 
 ## <a name="see-also"></a>另請參閱
 
@@ -179,6 +179,6 @@ ms.locfileid: "110600427"
 * [資產建立流程](asset-creation-process.md)
 * [手勢](./interaction-fundamentals.md)
 * [安裝工具](../develop/install-the-tools.md)
-* [設定 Unity 專案](../develop/unity/Configure-Unity-Project.md)
+* [設定 Unity Project](../develop/unity/Configure-Unity-Project.md)
 * [Unity 開發概觀](../develop/unity/unity-development-overview.md)
 * [MRTK 101](/windows/mixed-reality/mrtk-unity/)

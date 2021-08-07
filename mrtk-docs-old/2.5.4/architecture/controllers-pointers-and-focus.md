@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、指標、控制器
-ms.openlocfilehash: f656089b8ecd78e0f847c777baf63ae67f957802
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: cc759c827f864c7c53d4b12b284ad4b89d2db9fdebe9e08a25dd3d62b16b6e4a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685671"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187628"
 ---
 # <a name="controllers-pointers-and-focus"></a>控制器、指標和焦點
 
@@ -20,7 +20,7 @@ ms.locfileid: "104685671"
 
 控制器是實體控制器的代表 (6 度的自由、明確的手) 等等。 它們是由裝置管理員所建立，負責與對應的基礎系統進行通訊，並將該資料轉譯成 MRTK 狀的資料和事件。
 
-例如，在 Windows Mixed Reality 平臺上， [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) 是負責與基礎 Windows [手形追蹤 api](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate) 互動的控制器，以取得關於接點、姿勢和其他屬性的資訊。 它負責將這項資料轉換成相關的 MRTK 事件 (例如，藉由呼叫 RaisePoseInputChanged 或 RaiseHandJointsUpdated) ，以及藉由更新其本身的內部狀態，讓的查詢傳回 [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose(TrackedHandJoint,Handedness,MixedRealityPose@)) 正確的資料。
+例如，在 Windows Mixed Reality 平臺上， [`WindowsMixedRealityArticulatedHand`](xref:Microsoft.MixedReality.Toolkit.WindowsMixedReality.Input.WindowsMixedRealityArticulatedHand) 是負責與基礎 Windows[手追蹤 api](https://docs.microsoft.com/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate)互動的控制器，以取得關於接點、姿勢和其他屬性的資訊。 它負責將這項資料轉換成相關的 MRTK 事件 (例如，藉由呼叫 RaisePoseInputChanged 或 RaiseHandJointsUpdated) ，以及藉由更新其本身的內部狀態，讓的查詢傳回 [`TryGetJointPose`](xref:Microsoft.MixedReality.Toolkit.Input.HandJointUtils.TryGetJointPose(TrackedHandJoint,Handedness,MixedRealityPose@)) 正確的資料。
 
 一般而言，控制器的生命週期會涉及：
 

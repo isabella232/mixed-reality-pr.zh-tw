@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 66b352696016577ab121520102dd766b030ccf0e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: bc5983706d75d6c66bb8de375b38f2ebe0d3f0aba0d90be5ef1e39d5a6949743
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187982"
 ---
 # <a name="motion-controllers-in-windows-mixed-reality"></a>Windows Mixed Reality 中的運動控制器
 
@@ -25,7 +25,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 
 ## <a name="motion-controller-setup"></a>移動控制器設定
 
-大部分耳機都會直接配對到耳機，但有些早期耳機需要使用藍牙4.0 將移動控制器配對到您的電腦。 當您第一次連接沉浸式耳機時，將會逐步引導您在安裝期間開啟您的動作控制器。 但是，如果您稍後需要重新配對它們，以下是：
+大部分耳機都會直接配對到耳機，但有些早期耳機需要將移動控制器與您的電腦搭配藍牙4.0。 當您第一次連接沉浸式耳機時，將會逐步引導您在安裝期間開啟您的動作控制器。 但是，如果您稍後需要重新配對它們，以下是：
 
 1. 啟動已連線到耳機的 **混合實境入口** 。  
 2. 在左下角選取 [ **...] > 設定控制器**。
@@ -34,14 +34,14 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 
 > [!NOTE]
 > * 對於直接與您的電腦配對的控制器，您必須將它們開啟，然後按下電池區間內的配對按鈕，直到燈開始閃爍，以使其進入配對模式。
-> * 動作控制器一次只支援配對一台電腦。 如果您需要使用不同的耳機，您需要經過配對程式。 請參閱 [設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
+> * 動作控制器一次只支援配對一台電腦。 如果您需要使用不同的耳機，您需要經過配對程式。 請參閱[設定 Windows Mixed Reality](set-up-windows-mixed-reality.md)
 
 [取得連接説明](wmr-setup-faq.yml#my-motion-controllers-aren-t-working)
 
 > [!IMPORTANT]
 > **有 Xbox 控制器嗎？**
 > 
-> 如果您有 Bluetooth Xbox 控制器，請將它與您的電腦配對，以搭配您的耳機使用。
+> 如果您有藍牙 Xbox 控制器，請將它與您的電腦配對，以搭配您的耳機使用。
 > 
 > 如果您有有線 Xbox 控制器，請將它插入您的電腦。
 > 
@@ -49,11 +49,11 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 
 ## <a name="pair-motion-controllers"></a>配對移動控制器
 
-如果您使用包含整合式藍牙控制器的耳機，例如 Samsung 電影對白 + 或 HP 回音，您的控制器應該已經配對。 但是您仍然可以使用安裝應用程式來配對控制器 (在設定 HMD 時應該已經安裝。 您也可以從 Microsoft store) 取得。
+如果您使用包含整合式藍牙控制器的耳機，例如 Samsung 電影對白 + 或 HP 的回音，您的控制器應該已經配對。 但是您仍然可以使用安裝應用程式來配對控制器 (在設定 HMD 時應該已經安裝。 您也可以從 Microsoft store) 取得。
 
 ### <a name="pair-motion-controllers-to-hmd"></a>將移動控制器配對至 HMD
 
-藉由按下 [Windows] 按鈕2秒，讓控制器開啟，直到 Led 亮起為止。
+藉由按下 [Windows] 按鈕2秒，讓控制器開啟，直到 led 亮起為止。
 
 從您的控制器中移除電池蓋，然後在控制器邊緣找出小配對按鈕。 按住此按鈕以與您的電腦配對。
     ![移動控制器配對](images/connect_controller.png)
@@ -75,10 +75,10 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 
 ### <a name="common-issues"></a>常見問題
 
-* 確認您的電腦上只有一個可用的藍牙無線電。 如果您有一個以上的藍牙無線電，則必須停用裝置管理員中的其他無線電。
-* 將您的 Bluetooth 狗放在對控制器有清楚的埠，而不是插入 USB 3.0 裝置。 已知 USB 3.0 與藍牙有 RF 干擾 (如需更多詳細資料，請從 Intel 閱讀 [這](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf) 份檔) 。 USB 2.0 埠可能更適合您的藍牙轉換器。
-* 確定您的藍牙電源接頭未插入 HMD USB 纜線旁的 USB 埠。 也知道耳機纜線也會造成與藍牙連接器的干擾。 將轉換器插入電腦上的前端 USB 埠，以獲得最佳結果。
-* 針對筆記本，請確定 WiFi 已連線到 5 GHz 頻外，以獲得最佳體驗。 選取位於右下方的無線網路圖示，然後選取您要使用之網路的 [內容]。 設計用來共用藍牙和 WiFi 連線的 2.4 GHz 天線的筆記本，會看到資料擁塞的網路速度慢或移動控制器追蹤效能不良。
+* 確認您的電腦上只有一個作用中的藍牙無線電。 如果您有多個藍牙無線電，則必須停用裝置管理員中的其他無線電。
+* 將您的藍牙的轉換器放在對控制器有清楚限制的埠中，而不是插入 USB 3.0 裝置。 已知 USB 3.0 有與藍牙的 RF 干擾 (如需更多詳細資料) ，請參閱 Intel 的[這](https://www.intel.com/content/dam/www/public/us/en/documents/white-papers/usb3-frequency-interference-paper.pdf)份檔。 USB 2.0 埠可能更適合您的藍牙的轉換器。
+* 確定您的藍牙品牌未插入 HMD USB 纜線旁的 USB 埠。 也知道耳機纜線也會造成藍牙的加密器干擾。 將轉換器插入電腦上的前端 USB 埠，以獲得最佳結果。
+* 針對筆記本，請確定 WiFi 已連線到 5 GHz 頻外，以獲得最佳體驗。 選取位於右下方的無線網路圖示，然後選取您要使用之網路的 [內容]。 針對藍牙和 WiFi 連線能力共用 2.4 GHz 天線的筆記本，會看到資料擁塞的速度很慢的網路速度或移動控制器追蹤效能不良。
 * 您的移動控制器將會定期從 Microsoft 接收新的軟體更新。 控制器會在收到這些新的軟體更新時，顯示閃爍燈的交替模式。 這是正常現象。 等到軟體升級完成，再使用控制器。 控制器將會震動，而固定光源則會在完成時取代交替閃爍模式。
 * 在控制器完成更新程式之前，您可能會被告知「放在耳機上並使用操縱杆來傳送」。 在更新完成之前，控制器將無法看到或無法使用。 大部分的更新會在兩分鐘內進行，但更新可能需要10分鐘以上的時間。 等候更新完成，再繼續進行下一個步驟。
 
@@ -95,7 +95,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 | --- | --- | --- | --- |
 | 傳送 | 按下操縱杆，然後將控制器指向您要前往的位置。 釋放操縱杆。 | 將左側的操縱杆向前按，然後查看您想要前往的位置。 釋放操縱杆。 | 選取並按住右鍵，然後將滑鼠指向您要前往的位置。 放開按鈕。 |
 | 選取 | 指向控制器，然後提取觸發程式或使用觸控板。 | 注視目標，然後按 A。 | 指向滑鼠，然後按一下滑鼠左鍵。 |
-| 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按下 **Windows 標誌鍵**。 |
+| 開啟 [開始] 功能表 | 按下 [ **Windows** ] 按鈕。 | 按下 **Xbox** 按鈕。 | 按 **Windows 標誌鍵**。 |
 | 離開沉浸式應用程式 | 按下 [ **Windows** ] 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ]。 | 按下 **Xbox** 按鈕。 然後選取 [快速動作] 功能表上的 [ **混合現實首頁** ] 按鈕。 | 按 * * Windows 標誌鍵。 然後，在顯示的 [快速動作] 功能表上選取 [ **混合現實首頁** ] 按鈕。 |
 | Rotate | 將操縱杆向左或向右移動。 | 將右邊的向左或向右移動。 | 不適用。 |
 | 備份 | 將操縱杆向後移動。 | 向左移動。 | 不適用。 |
@@ -127,7 +127,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 ## <a name="updating-motion-controllers-firmware"></a>正在更新移動控制器的固件
 
 * 如果沉浸式耳機連接到您的電腦，且有新的控制器固件可供使用，則會在下一次開啟時自動將該固件推送到您的動作控制器。
-* 控制器固件更新會以一種顯示在迴圈中的 LED 象限模式顯示，且需要1-2 分鐘。 固件更新有時可能需要較長的時間（最多10分鐘），這可能表示藍牙連線或無線電干擾不佳。
+* 控制器固件更新會以一種顯示在迴圈中的 LED 象限模式顯示，且需要1-2 分鐘。 固件更新有時可能需要較長的時間（最多10分鐘），這可能表示藍牙連接或無線電干擾不佳。
 * 如果固件更新中斷 (控制器電源關閉或電池) 將會在下一次開啟電源時再試一次。
 * 在固件更新完成後，控制器將會重新開機並重新連線。
 * 這兩個控制器都應該立即連接。 流覽至混合實境入口以檢查控制器的狀態。
@@ -143,7 +143,7 @@ Windows Mixed Reality 的移動控制器會透過沉浸式耳機感應器，在�
 
 ### <a name="can-you-use-these-controllers-without-a-headset-just-for-the-joysticktriggeretc-input"></a>您可以在沒有耳機的情況下使用這些控制器嗎？ 僅適用于搖桿/觸發程式/etc 輸入？
 
-*答：不適用於通用 Windows 應用程式*
+*答：非通用 Windows 應用程式*
 
 ## <a name="filing-motion-controller-feedbackbugs"></a>歸檔移動控制器意見反應/錯誤
 

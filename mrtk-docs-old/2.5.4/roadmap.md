@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b69894f4b392c87282c6aa7c095a77d2ffc392ce
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 21615d8ca2ae16d4bd747a380f4b92f6f6dbfa1cf269c13c60073249b85bd477
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690248"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186590"
 ---
 # <a name="roadmap"></a>藍圖
 
@@ -22,13 +22,13 @@ ms.locfileid: "104690248"
 
 ## <a name="upcoming-releases"></a>即將推出的版本
 
-| 產品 | Description | 時間表 | 專案面板 |
+| 產品 | Description | 時間表 | Project 面板 |
 | --- | --- | --- | --- |
 | [MRTK 2.6 版](#260) | MRTK 的下一個反復專案 | 2021 年 1 月 | https://github.com/microsoft/MixedRealityToolkit-Unity/milestone/13 |
 
 版本是以主題為中心， (例如：大型功能區) ，而且排定為大約每8-12 周進行。
 
-您可以在 [GitHub 里程碑頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/milestones)上找到發行詳細資料，包括待處理專案（backlog）。 您也可以在 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)上找到一組完整的開啟問題。
+您可以在[GitHub 里程碑頁面](https://github.com/Microsoft/MixedRealityToolkit-Unity/milestones)找到發行詳細資料，包括待處理專案（backlog）。 您也可以在[GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/issues)上找到一組完整的開啟問題。
 
 ## <a name="mixed-reality-toolkit-mrtk-roadmap"></a>混合現實工具組 (MRTK) 藍圖
 
@@ -62,7 +62,7 @@ ms.locfileid: "104690248"
 
 - 錯誤修正
 - 讓 MRTK UX 控制項更容易瞭解
-- HoloLens Shell 同位
+- HoloLensShell 同位
 - 測試以確保功能不會回歸
 
 **平臺擴充： OpenXR**

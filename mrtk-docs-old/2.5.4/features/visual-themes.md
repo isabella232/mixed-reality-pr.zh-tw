@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 主題、
-ms.openlocfilehash: 319859a935989bb8890cc87199672b5cbbd32987
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6e09540f090a2964c0bc2ec154c0bf3f294c59adba5fd9a7d45e2ff110260527
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213396"
 ---
 # <a name="visual-themes"></a>視覺主題
 
@@ -24,7 +24,7 @@ ms.locfileid: "104686051"
 
 若要建立新的 [`Theme`](xref:Microsoft.MixedReality.Toolkit.UI.Theme) 資產：
 
-1) 以滑鼠右鍵按一下 [ *專案] 視窗*
+1) 以滑鼠右鍵按一下 *Project 視窗*
 1) 選取 [**建立**  >  **混合現實工具** 組]  >  **主題**
 
 您可以在下方找到範例主題設定資產 `MRTK/SDK/Features/UX/Interactable/Themes` 。
@@ -37,7 +37,7 @@ ms.locfileid: "104686051"
 
 若要建立新的 [`State`](xref:Microsoft.MixedReality.Toolkit.UI.States) 資產：
 
-1) 以滑鼠右鍵按一下 [ *專案] 視窗*
+1) 以滑鼠右鍵按一下 *Project 視窗*
 1) 選取 [**建立**  >  **混合的實際工具** 組  >  **狀態**]
 
 ![偵測器中的狀態 ScriptableObject 範例](images/interactable/DefaultInteractableStates.png)

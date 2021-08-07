@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 3db7db3e861bc894a54e793041d734dafb798a04
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: cad9f39215dc6f2c33492493a720d2297a498a5d442ea03273c87541c5bcea3a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686001"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213157"
 ---
 # <a name="microsoft-mixed-reality-toolkit-254-release-notes"></a>Microsoft Mixed Reality 工具組2.5.4 版本資訊
 
@@ -50,9 +50,9 @@ ms.locfileid: "104686001"
 
 界限視覺效果（例如 floor 或牆壁）現在將會正確設定，並在執行時間根據界限設定檔顯示。
 
-### <a name="msbuild-for-unity-support"></a>適用于 Unity 的 MSBuild 支援
+### <a name="msbuild-for-unity-support"></a>Unity 支援的 MSBuild
 
-從2.5.2 版本開始，已移除對 MSBuild for Unity 的支援，以配合 [Unity 的新套件指引](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)。
+2.5.2 版本已移除對 unity 的 MSBuild 的支援，以配合[unity 的新套件指引](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)。
 
 ## <a name="known-issues"></a>已知問題
 
@@ -71,7 +71,7 @@ ms.locfileid: "104686001"
 
 ### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException 透過 Unity 匯入範例的時機封裝管理員
 
-視專案路徑的長度而定，透過 Unity 匯入範例封裝管理員可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
+視專案路徑的長度而定，透過 unity 匯入範例封裝管理員可能會在 unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>未指定空間定位器。 應用程式將不支援空間音效
 
@@ -80,7 +80,7 @@ ms.locfileid: "104686001"
 若要解決此問題，請確定：
 
 - **視窗**  > **封裝管理員** 已安裝一或多個 XR 套件
-- **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
+- **混合現實工具**  >  組 **公用程式**  > **設定 Unity Project** 並為 **音訊空間定位器** 進行選取
 
   ![選取音訊 Apatializer](../features/images/release-notes/SpatializerSelection.png)
 

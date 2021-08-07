@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、注視、
-ms.openlocfilehash: 898ae30a579a40a9faff4383b5a9cc61849e2d52
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 00b3cf9e56f40f72f722793883dfec0090086f5530c05305f050998478917eb8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209234"
 ---
 # <a name="gaze"></a>注視
 
@@ -20,7 +20,7 @@ ms.locfileid: "104685391"
 
 這種類型的注視是以前端/攝影機查看的方向為基礎。 在不支援眼睛的系統上，或在硬體可能支援眼睛的情況下，但未執行正確的 [許可權集和](../eye-tracking/eye-tracking-basic-setup.md#eye-tracking-requirements-checklist) 設定的情況下，前端看起來是作用中的。
 
-前端看起來通常會與 HoloLens 1 樣式互動相關，包括將物件放在全像攝影框架的中央，然後執行 [點一下] 手勢。
+前端看起來通常與與查看物件相關的 HoloLens 1 種樣式互動有關，方法是將它放在全像攝影框架的中央，然後執行 [點一下手勢]。
 
 ## <a name="eye-gaze"></a>眼睛目光
 

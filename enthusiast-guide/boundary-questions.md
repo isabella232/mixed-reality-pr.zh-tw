@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，說明，支援，界限
 appliesto:
 - Windows 10
-ms.openlocfilehash: 8dba6ebb5f74b229cea4ea2d5e1ac0a5e70a3f57
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: c1d6a10ae6ed50f7b9088b26c78cde4ccf8386ea0603c39e107ed23910db9308
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725279"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187968"
 ---
 # <a name="boundary-faqs"></a>界限常見問題
 
@@ -103,7 +103,7 @@ Windows Mixed Reality 可能無法識別您的現有界限。 您可以建立新
 
 如果您選擇 [所有體驗]，您將會設定界限，而且可以使用適用于和沒有界限的應用程式和體驗。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

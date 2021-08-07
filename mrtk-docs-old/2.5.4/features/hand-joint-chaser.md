@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4e95f5a6f6019bed617bac55064c8c3984d9386e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: be7be3d2a37898ca8ceb0cbf9a51de58b6e25487cd17338bf0a5f55951d01eb5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213167"
 ---
 # <a name="hand-joint-chaser-example"></a>手聯合 chaser 範例
 

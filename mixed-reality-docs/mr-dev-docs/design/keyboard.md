@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、鍵盤、MRTK、混合現實工具組
-ms.openlocfilehash: 096a408a8106ec5ee6a820865e158c3cd019f702
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: f0045f6008384f5ed709597d625dc4526723921df51a6a1c6d25641ac95f0b34
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600137"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208342"
 ---
 # <a name="keyboard"></a>鍵盤
 
 ![鍵盤](images/UX_Hero_Keyboard.jpg)
 
-您的混合現實應用程式可以隨時叫用系統鍵盤，其行為會根據目標平臺的功能而定。 例如，HoloLens 2 上的鍵盤支援直接的互動，而 HoloLens (第一代) 鍵盤則支援注視和空中點擊。
+您的混合現實應用程式可以隨時叫用系統鍵盤，其行為會根據目標平臺的功能而定。 例如，HoloLens 2 上的鍵盤支援直接的互動，而 HoloLens (第一代) 鍵盤支援注視和點擊。
 
 <br>
 

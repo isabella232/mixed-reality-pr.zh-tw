@@ -1,22 +1,22 @@
 ---
 title: HoloLens (第1代) 空間 230-空間對應
-description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解空間對應概念的詳細資料。
+description: 遵循此程式碼逐步解說使用 Unity、Visual Studio 和 HoloLens 來瞭解空間對應概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間對應、表面重建、網格、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 24814925bfc154989822e326d2f088fe459c7aa0
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+ms.openlocfilehash: 6806fd8c717d47ff4ea5340e6a2d70ba2c798960af8fe3103daa11d0a8e2bf74
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269903"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208708"
 ---
 # <a name="hololens-1st-gen-spatial-230-spatial-mapping"></a>HoloLens (第1代) 空間230：空間對應
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
 [空間對應](../../../design/spatial-mapping.md) 結合了真實世界和虛擬世界，藉由教授有關環境的影像。 在 MR 空間 230 (Project 天文館) 我們將瞭解如何：
 
@@ -56,7 +56,7 @@ ms.locfileid: "106269903"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-230-SpatialMapping)取得。
 
 ### <a name="notes"></a>備註
 
@@ -70,31 +70,31 @@ ms.locfileid: "106269903"
 * 選取 [ **新增** ] 以建立新專案。
 * 將專案命名為 **天文館**。
 * 確認已選取 [ **3d** ] 設定。
-* 按一下 [ **建立專案**]。
-* Unity 啟動後，請移至 **> Player 的 [編輯 > 專案設定**]。
-* 在 [偵測 **器** ] 面板中，尋找並選取綠色的 **Windows 商店** 圖示。
-* 展開 [ **其他設定**]。
+* 按一下 [**建立] Project**。
+* Unity 啟動後，請移至 [**編輯] > Project 設定 > 播放機**。
+* 在 [偵測 **器**] 面板中，尋找並選取綠色的 **Windows 存放區** 圖示。
+* 展開 [**其他設定**]。
 * **在 [轉譯] 區段中**，檢查 **虛擬實境支援** 的選項。
-* 確認 **Windows** 全像是出現在 **虛擬實境 sdk** 清單中。 如果沒有，請選取 **+** 清單底部的按鈕，然後選擇 [ **Windows** 全像]。
-* 展開 [ **發行設定**]。
+* 確認 **Windows 全息** 版出現在 **虛擬實境 sdk** 清單中。 如果沒有，請選取 **+** 清單底部的按鈕，然後選擇 [ **Windows** 全像]。
+* 展開 [**發行設定**]。
 * 在 [ **功能** ] 區段中，檢查下列設定：
     * InternetClientServer
     * PrivateNetworkClientServer
     * 麥克風
     * SpatialPerception
-* 移至 [ **編輯] > 專案設定 > 品質**
-* 在 [偵測 **器** ] 面板的 [Windows 市集中] 圖示底下，選取 [預設] 資料列底下的黑色下拉箭號，並將預設設定變更為 [ **非常低**]。
+* 移至 **編輯 > Project 設定 > 品質**
+* 在 [偵測 **器**] 面板的 Windows 存放區] 圖示底下，選取 [預設] 資料列底下的黑色下拉箭號，並將預設設定變更為 [**非常低**]。
 * 移至 [ **資產] > 匯入套件 > 自訂套件**。
-* 流覽至 **..\holographicacademy-holograms-230-SpatialMapping\Starting** 資料夾。
+* 流覽至 **..\HolographicAcademy-全像投影-230-SpatialMapping\Starting** 資料夾。
 * 按一下 [ **天文館 unitypackage**]。
 * 按一下 [開啟]。
 * 隨即出現 [匯 **入 Unity 套件** ] 視窗，請按一下 [匯 **入** ] 按鈕。
 * 等候 Unity 匯入完成此專案所需的所有資產。
 * **在 [階層] 面板中**，刪除 **主要攝影機**。
-* 在 [ **專案** ] 面板的 [ **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** ] 資料夾中，尋找 [ **主要攝影機** ] 物件。
+* 在 **Project** 面板的 [ **HoloToolkit-SpatialMapping-230\Utilities\Prefabs** ] 資料夾中，尋找 [**主要攝影機**] 物件。
 * 將 **主要攝影機** 預製專案拖放到 [階層 **] 面板中** 。
 * **在 [階層] 面板中**，刪除 **方向光源** 物件。
-* 在 [ **專案** ] 面板的 [全像 **] 資料夾中，找** 出 **游標** 物件。
+* 在 **Project** 面板中，**全像投影**] 資料夾，找出資料 **指標** 物件。
 * 拖曳 & 將資料 **指標** 預製專案拖放到階層 **中。**
 * **在 [階層] 面板中**，選取 [資料 **指標**] 物件。
 * 在 [偵測 **器** ] 面板中，按一下 [ **圖層** ] 下拉式清單，然後選取 [ **編輯圖層**]。
@@ -114,12 +114,12 @@ ms.locfileid: "106269903"
 
 **指示**
 
-* 在 **專案** 面板的 [ **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** ] 資料夾中，尋找 **SpatialMapping** 預製專案。
+* 在 **Project** 面板 **HoloToolkit-SpatialMapping-230\SpatialMapping\Prefabs** 資料夾中，尋找 **SpatialMapping** 預製專案。
 * 將 [ **SpatialMapping** ] 預製專案拖曳 & 放入 [階層 **] 面板中** 。
 
 **組建和部署 (第1部)**
 
-* 在 Unity 中，選取 [ **File > Build Settings**]。
+* 在 Unity 中，選取 [ **File > Build 設定**]。
 * 按一下 [ **新增開啟的場景** ]，將 **天文館** 場景新增至組建。
 * 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
 * 將 **SDK** 設定為 **通用 10** ，並將 **UWP 組建類型** 設定為 **D3D**。
@@ -130,13 +130,13 @@ ms.locfileid: "106269903"
 * 按下 [ **選取資料夾** ] 按鈕。
 * 當 Unity 完成建立時，將會出現檔案總管視窗。
 * 按兩下 **應用程式** 資料夾以開啟它。
-* 按兩下 [ **天文館** ]，在 Visual Studio 中載入專案。
-* 在 Visual Studio 中，使用頂端工具列將設定變更為 [ **發行**]。
+* 按兩下 [**天文館**]，在 Visual Studio 中載入專案。
+* 在 Visual Studio 中，使用頂端工具列將設定變更為 [**發行**]。
 * 將平臺變更為 **x86**。
 * 按一下 [本機電腦] 右邊的下拉箭號，然後選取 [ **遠端電腦**]。
 * 在 [位址] 欄位中輸入 [您裝置的 IP 位址](/hololens/hololens-network#identifying-the-ip-address-of-your-hololens-on-the-wi-fi-network) ，並將驗證模式變更為 **通用 (未加密的通訊協定)**。
 * 按一下 [ **Debug-> 啟動但不進行調試]，** 或按 **Ctrl + F5**。
-* 觀賞 Visual Studio 中的 [ **輸出** ] 面板，以取得組建和部署狀態。
+* 觀賞 Visual Studio 中的 [**輸出**] 面板，以取得組建和部署狀態。
 * 當您的應用程式部署完成後，請四處移動空間。 您將會看到黑色和白色線框網格所涵蓋的周圍表面。
 * 掃描您的環境。 請務必查看牆、上限和樓層。
 
@@ -147,11 +147,11 @@ ms.locfileid: "106269903"
 * 在 Unity 中，選取 [ **Window > Profiler]**。
 * 按一下 [ **新增 Profiler > GPU**]。
 * 按一下 [ **Active Profiler <Enter IP> >**]。
-* 輸入 HoloLens 的 **IP 位址** 。
+* 輸入您 HoloLens 的 **IP 位址**。
 * 按一下 [連線]。
 * 觀察 GPU 呈現框架所需的毫秒數。
 * 停止應用程式在裝置上執行。
-* 返回 Visual Studio 並開啟 **SpatialMappingObserver。** 您會在 Assembly-CSharp (通用 Windows) 專案的 HoloToolkit\SpatialMapping 資料夾中找到它。
+* 返回 Visual Studio 並開啟 **SpatialMappingObserver。** 您會在 Assembly-CSharp (通用 Windows) 專案的 [HoloToolkit\SpatialMapping] 資料夾中找到它。
 * 尋找 **喚醒的 ()** 函式，並加入下列程式程式碼： **TrianglesPerCubicMeter = 1200;**
 * 將專案重新部署至您的裝置，然後 **重新連接** 分析工具。 觀察轉譯畫面格的毫秒數變更。
 * 停止應用程式在裝置上執行。
@@ -196,7 +196,7 @@ ms.locfileid: "106269903"
 * 在 [偵測 **器** ] 面板中，尋找 **(腳本) 元件的空間對應管理員** 。
 * 按一下 [ **Surface 材質** ] 屬性右邊的圓形。
 * 尋找並選取 **BlueLinesOnWalls** 材質，然後關閉視窗。
-* 在 [ **專案** 面板 **著色** 器] 資料夾中，按兩下 [ **BlueLinesOnWalls** ] 以開啟 Visual Studio 中的著色器。
+* 在 [ **Project** 面板 **著色** 器] 資料夾中，按兩下 [ **BlueLinesOnWalls** ] 以開啟 Visual Studio 中的著色器。
 * 這是一個簡單的圖元 (頂點到片段) 著色器，它會完成下列工作：
     1. 將頂點的位置轉換成世界空間。
     2. 檢查頂點的一般，以判斷圖元是否為垂直。
@@ -207,7 +207,7 @@ ms.locfileid: "106269903"
 * 返回 Unity，然後按下 [ **播放** ] 進入預覽模式。
 * 系統會在房間網格的所有垂直表面上轉譯藍線 (這會從已儲存的掃描資料) 自動載入。
 * 切換至 [ **場景** ] 索引標籤，以調整您的房間視圖，並查看整個房間網格在 Unity 中的顯示方式。
-* 在 [ **專案** ] 面板中，尋找 [ **材質** ] 資料夾，並選取 **BlueLinesOnWalls** 材質。
+* 在 **Project** 面板中，尋找 [**材質**] 資料夾並選取 **BlueLinesOnWalls** 材質。
 * 修改某些屬性，並查看如何在 Unity 編輯器中顯示變更。
     * 在 [偵測 **器** ] 面板中，調整 **LineScale** 值，讓線條顯示為較粗或更細。
     * 在 [偵測 **器** ] 面板中，調整 **LinesPerMeter** 值以變更每個牆上出現的行數。
@@ -228,12 +228,12 @@ Unity 有很大的預覽材質，但最好是在裝置中簽出轉譯的好主�
 
 **指示**
 
-* 在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpatialProcessing** 物件。
+* 在 Unity 的 **Project** 面板中，**全像投影**] 資料夾中，尋找 **SpatialProcessing** 物件。
 * 將 **SpatialProcessing** 物件拖曳 & 放入 [階層 **] 面板中** 。
 
 SpatialProcessing 預製專案包含處理空間對應資料的元件。 **SurfaceMeshesToPlanes** 會根據空間對應資料尋找並產生平面。 我們將在應用程式中使用平面來代表牆壁、樓層和上限。 此預製專案也包含可從空間對應網格移除頂點的 **RemoveSurfaceVertices。** 這可以用來在網格中建立洞，或移除不再需要的多餘三角形 (因為可以改用平面來取代) 。
 
-* 在 Unity 的 [ **專案** ] **面板中，** [全像] 資料夾中，尋找 **SpaceCollection** 物件。
+* 在 Unity 的 **Project** 面板中，**全像投影**] 資料夾中，尋找 **SpaceCollection** 物件。
 * 將 **SpaceCollection** 物件拖放 **到 [階層** ] 面板中。
 * **在 [階層] 面板中**，選取 [ **SpatialProcessing** ] 物件。
 * 在 [偵測 **器** ] 面板中，尋找 [ **播放空間管理員] (腳本)** 元件。
@@ -445,13 +445,13 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 
 **組建和部署**
 
-* 部署到 HoloLens 之前，請按 Unity 中的 [ **播放** ] 按鈕進入播放模式。
+* 在部署到 HoloLens 之前，請按 Unity 中的 [**播放**] 按鈕進入播放模式。
 * 從檔案載入空間網格之後，請等候10秒鐘，然後在空間對應網格上開始處理。
 * 當處理完成時，平面會顯示為代表樓層、牆壁、上限等等。
 * 找到所有的平面之後，您應該會看到日光系統出現在相機附近的桌子上。
 * 兩個海報也應該出現在相機附近的牆上。 如果您無法在 **遊戲** 模式中看到，請切換至 [**場景**] 索引標籤。
 * 再按一次 [ **播放** ] 按鈕以結束播放模式。
-* 照常建立並部署到 HoloLens。
+* 像平常一樣，建立並部署至 HoloLens。
 * 等候空間對應資料的掃描和處理完成。
 * 一旦您看到了飛機，請試著找出您世界中的日光系統和海報。
 
@@ -470,7 +470,7 @@ public class PlaySpaceManager : Singleton<PlaySpaceManager>
 * 在 [偵測 **器** ] 面板中，尋找 **平面網格以 (腳本)** 元件。
 * 將 [ **繪製平面** ] 屬性變更為 [ **Nothing** ] 以清除選取專案。
 * 將 **Draw 平面** 屬性變更為 **牆**，如此就只會轉譯牆壁平面。
-* 在 [ **專案** ] 面板的 [ **腳本** ] 資料夾中，按兩下可 **放置的 .cs** ，在 Visual Studio 中開啟。
+* 在 [ **Project** 面板的 [**腳本**] 資料夾中，按兩下可 **放置的 .cs** ，在 Visual Studio 中開啟它。
 
 可 **放置** 的腳本已附加至在完成平面尋找之後所建立的海報和投影方塊。 我們只需要取消批註一些程式碼，這個腳本就能達成下列目標：
 
@@ -1067,7 +1067,7 @@ public class Placeable : MonoBehaviour
 
 **組建和部署**
 
-* 同樣地，建立專案並部署到 HoloLens。
+* 同樣地，建立專案並部署至 HoloLens。
 * 等候空間對應資料的掃描和處理完成。
 * 當您看到日光系統時，請在下方的投射方塊中看看，並執行選取手勢來四處移動。 選取 [投射] 方塊時，會在投影方塊周圍顯示周框 cube。
 * 將您移至房間的不同地點。 投影方塊應在您的注視之後。 當投影方塊下方的陰影變成紅色時，您就無法將全像放在表面上。 當投影方塊下方的陰影變成綠色時，您可以藉由執行另一個選取手勢來放置全像投影。
@@ -1093,7 +1093,7 @@ public class Placeable : MonoBehaviour
 
 接下來，我們要將特殊行為新增至地球，使其在另一個全息圖 (（例如 sun) 或空間對應網格） pixels occluded 時有藍色反白顯示：
 
-* 在 [ **專案** ] 面板的 [全像 **] 資料夾中** ，展開 [ **SolarSystem** ] 物件。
+* 在 [ **Project** ] 面板的 [**全像投影**] 資料夾中，展開 [ **SolarSystem** ] 物件。
 * 按一下 [ **地球**]。
 * 在 [偵測 **器** ] 面板中，找出地球的材質 (底部的元件) 。
 * 在 [ **著色器] 下拉式** 清單中，將著色器變更為 **自訂 > OcclusionRim**。 如果有另一個物件 pixels occluded，這會在地球周圍呈現藍色醒目提示。
@@ -1199,7 +1199,7 @@ public class PlanetOcclusion : MonoBehaviour
 
 **組建和部署**
 
-* 照常建立應用程式，並將其部署到 HoloLens。
+* 像平常一樣，建立應用程式並部署至 HoloLens。
 * 等候空間對應資料的掃描和處理完成， (您應該會看到藍線出現在) 的牆上。
 * 尋找並選取日光系統的投射方塊，然後在某個牆旁邊或在計數器後方設定方塊。
 * 您可以藉由在海報或投影方塊上隱藏對等的背後表面來查看基本遮蔽。

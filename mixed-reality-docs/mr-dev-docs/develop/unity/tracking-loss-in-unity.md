@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、追蹤遺失、追蹤遺失影像、輪詢、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 39ce4e079886b27ed35c419a3b3913c6700e0d32
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: fe11c88bec60042901bd7ebb5c55116da97b6e28f0e44e889ef517a03d67245a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009848"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211350"
 ---
 # <a name="tracking-loss-in-unity"></a>Unity 中的追蹤遺失
 
@@ -21,11 +21,11 @@ ms.locfileid: "98009848"
 
 ## <a name="default-handling"></a>預設處理
 
-根據預設，更新迴圈和所有訊息和事件將會在追蹤遺失期間停止。 如此一來，使用者就會看到一個影像。 您可以從 [編輯->設定->播放程式]、按一下 [啟動顯示影像]，然後設定全像攝影追蹤損失影像來自訂此映射。
+根據預設，更新迴圈和所有訊息和事件將會在追蹤遺失期間停止。 如此一來，使用者就會看到一個影像。 您可以藉由前往 [編輯->設定 >播放程式]，按一下 [啟動顯示影像]，並設定全像攝影追蹤損失影像來自訂此映射。
 
 ## <a name="manual-handling"></a>手動處理
 
-若要手動處理追蹤遺失，您需要移至 [**編輯**  >  **專案設定**  >  **播放機**  >  **] 通用 Windows 平臺設定]** 索引標籤  >  **啟動顯示映射**  >  **Windows** 全像，然後取消核取 [追蹤遺失暫停和顯示影像]。 之後，您必須使用下列指定的 Api 來處理追蹤變更。
+若要手動處理追蹤遺失，您必須移至 [**編輯**  >  ]**Project 設定**  >  **Player**  >  **通用 Windows 平臺設定]** 索引標籤的 [設定] 索引標籤啟動顯示  >  **影像**  >  **Windows** 全像，然後取消選取 [追蹤遺失暫停和顯示 之後，您必須使用下列指定的 Api 來處理追蹤變更。
 
 **命名空間：** *UnityEngine. XR*<br>
 **類型：** *WorldManager*
@@ -81,6 +81,6 @@ private void WorldManager_OnPositionalLocatorStateChanged(PositionalLocatorState
 }
 ```
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [處理 DirectX 中的追蹤遺失](../native/coordinate-systems-in-directx.md#handling-tracking-loss)

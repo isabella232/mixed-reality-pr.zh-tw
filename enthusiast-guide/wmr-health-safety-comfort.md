@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 32b29d11585bae4e803e516ae3733e1165f45587
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 1c28a049c966cf50fd711da3e71cceff65cbbe8558769fc643f3e2065539caf4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187808"
 ---
 # <a name="windows-mixed-reality-immersive-headset-health-safety-and-comfort"></a>Windows Mixed Reality 沉浸式耳機健康情況、安全且舒適
 
@@ -23,7 +23,7 @@ ms.locfileid: "98008998"
 
 ## <a name="warning"></a>WARNING
 
-遵循 Windows Mixed Reality 耳機和移動控制器製造商所提供的所有設定、使用者指導方針和指示 (每個 **裝置**) ，以及任何軟體應用程式或2D 或3d 內容的發行者，或 (**內容**) 的體驗。
+遵循 Windows Mixed Reality 耳機和移動控制器製造商所提供的所有設定、使用者指導方針和指示 (每個 **裝置**) ，以及任何軟體應用程式或2d 或3d 內容的發行者，或 (**內容**) 的體驗。
 
 若無法設定、使用及適當地處理您的裝置，可能會增加嚴重傷害、死亡、財產損毀或產品或相關附屬應用程式損毀的風險。
 
@@ -57,6 +57,6 @@ ms.locfileid: "98008998"
 **為了協助管理您的環境**（如果有的話），裝置的功能可以用來設定裝置使用的界限，以協助您避免阻礙。
 
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [詢問社群](https://answers.microsoft.com)
 * [與我們聯繫以取得支援](https://support.microsoft.com/contactus/)

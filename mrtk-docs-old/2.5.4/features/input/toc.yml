@@ -1,6 +1,6 @@
 - name: 控制器
   href: controllers.md
-- name: 建立資料提供者
+- name: 建立 Data Provider
   href: create-data-provider.md
 - name: 聽寫
   href: dictation.md

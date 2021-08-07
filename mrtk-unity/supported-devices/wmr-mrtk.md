@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Visual Studio
-ms.openlocfilehash: 137e1b699e9a0cda1e8a454a6c3219b581fa71b4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 622c7ca4b9c527630b5677fe377d1d3108bdfe08c9dc616bfd4d3256b83b9ab0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176374"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209470"
 ---
 # <a name="deploying-to-hololens-and-wmr-headsets"></a>部署到 HoloLens 和 WMR 耳機
 

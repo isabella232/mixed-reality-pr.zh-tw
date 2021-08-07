@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3f65fa90279e9a10c1aad9bd46f02233808936b8
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 97ef4f466355f39e01ce0b916b4d0f45fb4c40f3fd6f0cb001b1bcccb35740eb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647009"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188018"
 ---
 ![虛擬的蜂鳥與手](mixed-reality-docs/mr-dev-docs/discover/images/01_MixedReality.png)
 
@@ -19,7 +19,7 @@ ms.locfileid: "110647009"
 
 針對檔相關的問題，請使用每個檔底部的頁尾，或直接提交至 [MicrosoftDocs/mixed-現實/問題](https://github.com/MicrosoftDocs/mixed-reality/issues)。
 
-您可以透過小組或電子郵件，將有關投稿原則或流程的任何問題傳送給 Harrison Ferrone 或小紅 Kerawala。 
+您可以隨時透過 Teams 或電子郵件，將有關投稿原則或流程的任何問題傳送給 Harrison Ferrone 或小紅 Kerawala。 
 
 ## <a name="getting-started"></a>使用者入門 
 

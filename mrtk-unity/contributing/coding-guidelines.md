@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: 'Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、c #、'
-ms.openlocfilehash: c14f5f72d391c5474a01c798bfdaa5529700a509
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: fe54a9fe1f906a31ac7ed0417dd3a57fee167314b4b2db29eadcd1eaa22f97b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210734"
 ---
 # <a name="coding-guidelines"></a>程式碼撰寫指導方針
 
@@ -687,7 +687,7 @@ public class MyClass
 | `WINDOWS_UWP` | True | True | False |
 | `UNITY_WSA && !UNITY_EDITOR` | True | True | False |
 | `ENABLE_WINMD_SUPPORT` | True | True | False |
-| `NETFX_CORE` | False | True | False |
+| `NETFX_CORE` | False | True | 否 |
 
 ### <a name="prefer-datetimeutcnow-over-datetimenow"></a>偏好 UtcNow 超過 DateTime。現在
 

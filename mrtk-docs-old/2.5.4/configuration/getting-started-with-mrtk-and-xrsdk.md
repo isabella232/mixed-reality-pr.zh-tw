@@ -5,18 +5,18 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、
-ms.openlocfilehash: 825641616047c920b677cb93662438389f1f3506
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: be4a15fbf178ca46c283285a9b29efe8837f46bf6b76cb3211be6f4d87073454
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209194"
 ---
 # <a name="getting-started-with-mrtk-and-xr-sdk"></a>開始使用 MRTK 和 XR SDK
 
 XR SDK 是 unity [2019.3 和以上的 unity 新 XR 管線](https://blogs.unity3d.com/2020/01/24/unity-xr-platform-updates/)。 在 Unity 2019 中，它會提供現有 XR 管線的替代方案。 在 Unity 2020 中，它將成為 Unity 中唯一的 XR 管線。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 若要開始使用 Mixed Reality 工具組，請遵循 [提供的步驟](../../2.5.4/welcome-to-mrtk.md) 將 MRTK 新增至專案。
 
@@ -26,15 +26,15 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
 
 #### <a name="windows-mixed-reality"></a>Windows Mixed Reality
 
-1. 進入 Unity 的封裝管理員，並安裝 Windows XR 外掛程式套件，以新增 XR SDK 上的 Windows Mixed Reality 支援。 這也會提取一些相依性套件。 確定已成功安裝下列各項：
+1. 進入 Unity 的封裝管理員，並安裝 Windows XR 外掛程式套件，以新增對 XR SDK Windows Mixed Reality 的支援。 這也會提取一些相依性套件。 確定已成功安裝下列各項：
    1. XR 外掛程式管理
-   1. Windows XR 外掛程式
+   1. WindowsXR 外掛程式
    1. XR 舊版輸入協助程式
-1. 移至 [編輯 > 專案設定]。
-1. 在 [專案設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
+1. 移至 [編輯] > Project 設定。
+1. 在 Project 設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
 1. 移至 [通用 Windows 平臺設定]，並確定已核取 [外掛程式提供者] 下的 [Windows Mixed Reality]。
 1. 確定已核取 [啟動時初始化 XR]。
-1.  (**_編輯器中的 HoloLens 遠端處理需要，否則為選擇性_**) 移至獨立設定，並確定已在外掛程式提供者底下檢查 Windows Mixed Reality。 也請確定已核取 [啟動時初始化 XR]。
+1. **_在編輯器 HoloLens 遠端處理中需要 (，否則為選擇性_**) 移至 [獨立設定]，並確定已核取 [外掛程式提供者] 下的 Windows Mixed Reality。 也請確定已核取 [啟動時初始化 XR]。
 1.  (**_選擇性_**) 按一下 [XR 外掛程式管理] 下的 [Windows Mixed Reality] 索引標籤，然後建立自訂設定設定檔來變更預設值。 如果設定清單已經存在，則不需要建立任何設定檔。
 
 ![外掛程式管理](../features/images/xrsdk/PluginManagement.png)
@@ -54,8 +54,8 @@ XR SDK 管線目前支援3個平臺： Windows Mixed Reality、Oculus 和 OpenXR
    1. XR 外掛程式管理
    1. OpenXR 外掛程式
    1. Mixed Reality OpenXR 外掛程式
-1. 移至 [編輯 > 專案設定]。
-1. 在 [專案設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
+1. 移至 [編輯] > Project 設定。
+1. 在 Project 設定] 視窗中，按一下 [XR 外掛程式管理] 索引標籤。
 1. 確定已核取 [啟動時初始化 XR]。
 1.  (**_選擇性_**) 如果以 HoloLens 2 為目標，請確定您是在 UWP 平臺上，然後選取 [Microsoft HoloLens 功能組]
 

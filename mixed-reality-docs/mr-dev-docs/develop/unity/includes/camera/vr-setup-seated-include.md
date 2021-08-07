@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 3bffb5db8f4a36d04c2b408c939cbd2010a7def7
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: f55de39af8c9bc59bb23136203bfc093a4e29f1ea9ddc5ccd147f8c81d6f0020
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748486"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212240"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
@@ -36,8 +36,8 @@ xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
 # <a name="legacy-wsa"></a>[舊版 WSA](#tab/wsa)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
 
-1. 移至 **Windows Store Player 設定** 的 [**其他設定**] 區段
-2. 選擇 [ **Windows Mixed Reality** ] 作為裝置，可能會列為舊版 Unity 的 **Windows** 全像攝影版
+1. 移至 **Windows 存放區播放** 程式的 **其他設定** 區段設定
+2. 選擇 [ **Windows Mixed Reality** ] 作為裝置，可能會列為舊版 Unity 中的 **Windows 全息** 版
 3. 選取 **支援的虛擬實境**
 
 由於主攝影機物件會自動標記為相機，因此 Unity 可支援所有移動和轉譯。

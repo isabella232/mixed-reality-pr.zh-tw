@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學術，unity，教學課程，api，電腦視覺，hololens，沉浸，vr，microsoft bot framework v4，web 應用程式 bot，bot framework，microsoft bot，Windows 10，Visual Studio
-ms.openlocfilehash: 5bef129b9ccbbba6bf2bce835bd1567d4f596932
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 61a39806c2b434cb85d39a9b208ea8659ec8cbc301d8955ee1330bda4149f0db
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730315"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189730"
 ---
 # <a name="hololens-1st-gen-and-azure-312-bot-integration"></a>HoloLens (第1代) 和 Azure 312： Bot 整合
 
@@ -22,7 +22,7 @@ ms.locfileid: "104730315"
 
 ![](images/AzureLabs-Lab312-00.png)
 
-**Microsoft Bot Framework V4** 是一組 api，旨在為開發人員提供工具，以建立可擴充且可調整的 Bot 應用程式。 如需詳細資訊，請造訪 [Microsoft Bot Framework 頁面](https://dev.botframework.com/) 或 [V4 Git 儲存](https://github.com/Microsoft/botbuilder-dotnet/wiki)機制。
+**Microsoft Bot Framework V4** 是一組 api，旨在為開發人員提供工具，以建立可擴充且可調整的 Bot 應用程式。 如需詳細資訊，請造訪[Microsoft Bot Framework 頁面](https://dev.botframework.com/)或[V4 Git 儲存](https://github.com/Microsoft/botbuilder-dotnet/wiki)機制。
 
 完成本課程之後，您將會建立 Windows Mixed Reality 的應用程式，讓您能夠執行下列作業：
 
@@ -43,9 +43,9 @@ ms.locfileid: "104730315"
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 HoloLens，您也可以將本課程中所學到的內容套用到 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
+> 雖然本課程主要著重于 HoloLens，但您也可以在本課程中套用您學到的內容，以 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和書面指示，代表在撰寫 (2018 年7月) 時已經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
@@ -63,32 +63,32 @@ ms.locfileid: "104730315"
 ### <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
-2.  設定及測試 HoloLens。 如果您需要設定 HoloLens 的支援， [請務必造訪 HoloLens 安裝文章](/hololens/hololens-setup)。 
-3.  開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助針對每個使用者) 執行這些工作。 
+2.  設定及測試您的 HoloLens。 如果您需要設定 HoloLens 的支援，[請務必造訪 HoloLens 安裝程式文章](/hololens/hololens-setup)。 
+3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。 
 
-如需有關校正的說明，請遵循此 [與 HoloLens 校正文章相關的連結](/hololens/hololens-calibration#hololens-2)。
+如需有關校正的說明，請遵循此[連結來 HoloLens 校正文章](/hololens/hololens-calibration#hololens-2)。
 
-如需有關感應器微調的說明，請依照此 [連結來進行「HoloLens 感應器微調」文章](/hololens/hololens-updates)。
+如需有關感應器微調的說明，請依照此[連結前往 HoloLens 感應器微調文章](/hololens/hololens-updates)。
 
 ## <a name="chapter-1--create-the-bot-application"></a>第1章-建立 Bot 應用程式
 
 第一個步驟是將您的 bot 建立為本機 ASP.Net Core Web 應用程式。 完成並測試之後，您會將它發佈至 Azure 入口網站。
 
-1.  開啟 Visual Studio。 建立新的專案，選取 [ **ASP NET Core Web 應用程式** ] 作為專案類型 (您將會在 [.Net) Core] 子區段下找到它，並將其命名為 **MyBot**。 按一下 [確定]  。
+1.  開啟 Visual Studio。 建立新的專案，選取 [ **ASP NET Core Web 應用程式** ] 作為專案類型 (您將會在 [.Net) Core] 子區段下找到它，並將其命名為 **MyBot**。 按一下 [確定]。
 
-2.  在將出現的視窗中，選取 [ **空白**]。 此外，請確定目標設定為 [ **ASP NET Core 2.0** ]，並將 [驗證] 設定為 [ **無驗證**]。 按一下 [確定]  。  
+2.  在將出現的視窗中，選取 [ **空白**]。 此外，請確定目標設定為 [ **ASP NET Core 2.0** ]，並將 [驗證] 設定為 [ **無驗證**]。 按一下 [確定]。  
 
     ![建立 bot 應用程式](images/AzureLabs-Lab312-01.png)
 
-3.  方案現在將會開啟。 以滑鼠右鍵按一下 **方案總管** 中的 [方案 **Mybot** ]，然後按一下 [**管理方案的 NuGet 套件**]。 
+3.  方案現在將會開啟。 在 **方案總管** 中，以滑鼠右鍵按一下 [方案 **Mybot** ]，然後按一下 [**管理解決方案的 NuGet 套件**]。 
 
     ![建立 Bot 應用程式](images/AzureLabs-Lab312-02.png)
 
-4.  在 [ **流覽** ] 索引標籤中， **搜尋 (確定** 您已核取 [ **包含發行前版本** ]) 。 選取套件版本 **4.0.1-preview**，然後將專案方塊勾選。 然後按一下 [ **安裝**]。 您現在已安裝 **Bot Framework v4** 所需的程式庫。 關閉 [NuGet] 頁面。
+4.  在 [ **流覽** ] 索引標籤中， **搜尋 (確定** 您已核取 [ **包含發行前版本** ]) 。 選取套件版本 **4.0.1-preview**，然後將專案方塊勾選。 然後按一下 [ **安裝**]。 您現在已安裝 **Bot Framework v4** 所需的程式庫。 關閉 NuGet] 頁面。
 
     ![建立 bot 應用程式](images/AzureLabs-Lab312-03.png)
 
-5.  以滑鼠右鍵按一下您在方案總管 **中的***專案*， 然後按一下 [**加入** **|** **類別**]。
+5.  以滑鼠右鍵按一下 **方案總管** 中的 *Project* **MyBot**，然後按一下 [**新增** **|** **類別**]。
 
     ![建立 Bot 應用程式](images/AzureLabs-Lab312-04.png)
 
@@ -98,7 +98,7 @@ ms.locfileid: "104730315"
 
 7.  重複先前的點，以建立另一個名為 **ConversationCoNtext** 的類別。 
 
-8.  以滑鼠右鍵按一下 **方案總管** 中的 **wwwroot** ，然後按一下 [**加入** **|** **新專案**]。 選取 [  **HTML 網頁** ] (您將會在 Web) 小節下找到它。 將檔案命名為 **default.html**。 按一下 **[新增]** 。
+8.  以滑鼠右鍵按一下 **方案總管** 中的 **wwwroot** ，然後按一下 [**加入** **|** **新專案**]。 選取 [  **HTML 網頁** ] (您將會在 Web) 小節下找到它。 將檔案命名為 **default.html**。 按一下 [新增]。
 
     ![建立 bot 應用程式](images/AzureLabs-Lab312-06.png)
 
@@ -280,7 +280,7 @@ ms.locfileid: "104730315"
     6. **應用程式名稱** 可以與 *Bot 名稱* 一樣保持不變。 
     7. 將 *Bot 範本* 保留為 **基本 (c # )**。
     8. *App service 方案/位置* 應該已自動填入您的帳戶。
-    9. 設定您想要用來裝載 Bot 的 **Azure 儲存體** 。 如果您還沒有帳戶，可以在此建立。
+    9. 設定您想要用來裝載 Bot 的 **Azure 儲存體**。 如果您還沒有帳戶，可以在此建立。
     10. 您也必須確認您已瞭解套用到此服務的條款及條件。
     11. 按一下 [建立]。
  
@@ -325,7 +325,7 @@ ms.locfileid: "104730315"
     ![將 Bot 發佈至 Azure Web 應用程式 Bot 服務](images/AzureLabs-Lab312-17.png)
 
 4. 如果您尚未登入您的 Microsoft 帳戶，您必須在此進行。
-5. 在 [**發佈**] 頁面上，您將會發現必須設定用於 *Web 應用程式 Bot* 服務建立的相同 **訂** 用帳戶。 然後，將 **View** 設定為 **資源群組** ，然後在下拉式資料夾結構中，選取您先前建立的 **資源群組** 。 按一下 [確定]  。 
+5. 在 [**發佈**] 頁面上，您將會發現必須設定用於 *Web 應用程式 Bot* 服務建立的相同 **訂** 用帳戶。 然後，將 **View** 設定為 **資源群組** ，然後在下拉式資料夾結構中，選取您先前建立的 **資源群組** 。 按一下 [確定]。 
 
     ![將 Bot 發佈至 Azure Web 應用程式 Bot 服務](images/AzureLabs-Lab312-18.png)
 
@@ -350,11 +350,11 @@ ms.locfileid: "104730315"
 
     ![設定 Unity 專案](images/AzureLabs-Lab312-22.png)
 
-4.  接下來，移至 [檔案 **> 組建設定** ]，選取 [ **通用 Windows 平臺**]，然後按一下 [ **切換平臺** ] 按鈕以套用您的選取專案。
+4.  接著，移至 [檔案 **> 組建] 設定** 然後選取 [**通用 Windows 平臺**]，再按一下 [**切換平臺**] 按鈕以套用您的選取專案。
 
     ![設定 Unity 專案](images/AzureLabs-Lab312-23.png)
 
-5.  在檔案中仍 **> 組建設定** ，並確定：
+5.  在檔案中仍 **> 建立設定** 並確定：
 
     1.  **目標裝置** 設定為 **HoloLens**
 
@@ -382,15 +382,15 @@ ms.locfileid: "104730315"
 
             ![設定 Unity 專案](images/AzureLabs-Lab312-26.png)
 
-    7. [ **組建設定**] 中的其餘設定，現在應該保持為預設值。
+    7. [**組建設定**] 中的其餘設定，現在應該保持為預設值。
 
-6. 在 [ *組建設定* ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
+6. 在 [*組建設定*] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
 
     ![設定 Unity 專案](images/AzureLabs-Lab312-27.png)
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1. 在 [ **其他設定** ] 索引標籤中：
+    1. 在 [**其他設定**] 索引標籤中：
 
         1. **腳本執行階段版本** 應該是 **實驗 (NET 4.6 對等)**;變更此項將需要重新開機編輯器。
         2. **腳本後端** 應該是 **.net**
@@ -398,18 +398,18 @@ ms.locfileid: "104730315"
 
             ![設定 Unity 專案](images/AzureLabs-Lab312-28.png)
       
-    2. 在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2. 在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         - **InternetClient**
         - **麥克風**
 
             ![設定 Unity 專案](images/AzureLabs-Lab312-29.png)
 
-    3. 在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3. 接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
         ![設定 Unity 專案](images/AzureLabs-Lab312-30.png)
 
-8.  回到 *組建設定*： _Unity c #_ 專案不再呈現灰色;勾選此方塊旁邊的核取方塊。 
+8.  回到 *組建設定* _Unity c #_ 專案不再呈現灰色;勾選此方塊旁邊的核取方塊。 
 9.  關閉 [建置設定] 視窗。
 10. 將場景和專案儲存 (檔 **> 儲存場景/檔案 > 儲存專案**) 。
 
@@ -486,7 +486,7 @@ ms.locfileid: "104730315"
 
 若要建立此類別： 
 
-1.  在 [ *專案] 面板* 中按一下滑鼠右鍵，然後 **建立 > 資料夾**。 將資料夾命名為 **腳本**。 
+1.  在 *Project 面板* 中按一下滑鼠右鍵，然後 **建立 > 資料夾**。 將資料夾命名為 **腳本**。 
 
     ![建立腳本資料夾。](images/AzureLabs-Lab312-36.png)
 
@@ -1037,7 +1037,7 @@ ms.locfileid: "104730315"
 
 ## <a name="chapter-11--create-the-interactions-class"></a>第11章-建立互動類別
 
-您即將建立的類別稱為 **互動**。 此類別用來偵測來自使用者的 HoloLens 點擊輸入。 
+您即將建立的類別稱為 **互動**。 這個類別是用來偵測 HoloLens 從使用者中的輸入。 
 
 如果使用者在查看場景中的 *bot* 物件時點擊，且 bot 已準備好接聽語音輸入，則 bot 物件會將色彩變更為 **紅色** ，並開始接聽語音輸入。 
 
@@ -1083,7 +1083,7 @@ ms.locfileid: "104730315"
         }
     ```
 
-7.  新增當使用者在 HoloLens 攝影機前方執行點按手勢時，將觸發的處理常式
+7.  新增當使用者在 HoloLens 攝影機前面執行點一下手勢時，將會觸發的處理常式。
 
     ```csharp
         /// <summary>
@@ -1226,7 +1226,7 @@ ms.locfileid: "104730315"
 
 ## <a name="chapter-13--before-building"></a>第13章-建立之前
 
-若要執行應用程式的完整測試，您必須將它側載到 HoloLens。
+若要執行應用程式的完整測試，您必須將它側載到您的 HoloLens。
 在執行之前，請確定：
 
 -   [**第4章**](#chapter-4--set-up-the-unity-project)中所述的所有設定都已正確設定。 
@@ -1237,8 +1237,8 @@ ms.locfileid: "104730315"
 
 此專案的 Unity 區段所需的所有專案現在都已完成，因此您可以從 Unity 建立它。
 
-1.  流覽至 [ **組建設定**]、[檔案 **> 組建設定 ...**]。
-2.  從 [ **組建設定** ] 視窗中，按一下 [ **建立**]。
+1.  流覽至 **build 設定**、 **File > build 設定 ...**。
+2.  從 [**組建設定**] 視窗中，按一下 [**建立**]。
 
     ![從 Unity 建立應用程式](images/AzureLabs-Lab312-38.png)
 
@@ -1251,12 +1251,12 @@ ms.locfileid: "104730315"
 
 若要在 HoloLens 上部署：
 
-1.  您將需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保 HoloLens 處於 **開發人員模式**。 若要這樣做：
+1.  您需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保您的 HoloLens 處於 **開發人員模式**。 若要這樣做：
 
-    1. 在設置 HoloLens 的同時，開啟 **設定**。
+    1. 在 HoloLens 時，請開啟 **設定**。
     2. 前往 **Network & Internet > Wi-Fi > Advanced Options**
     3. 記下 **IPv4** 位址。
-    4. 接下來，流覽回到 [ **設定**]，然後 **更新開發人員 & 的安全性 >** 
+    4. 接下來，流覽回到 **設定**，然後為 **開發人員更新 & 安全性 >** 
     5. 設定 [開發人員模式]。
 
 2.  流覽至您的新 Unity 組建 (**應用程式** 資料夾) ，然後以 **Visual Studio** 開啟方案檔。
@@ -1265,13 +1265,13 @@ ms.locfileid: "104730315"
 
     ![從 Visual Studio 部署方案。](images/AzureLabs-Lab312-39.png)
  
-5.  移至 [ **組建] 功能表** ，然後按一下 [ **部署方案**]，將應用程式側載至 HoloLens。
-6.  您的應用程式現在應該會出現在 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
+5.  移至 [**組建] 功能表**，然後按一下 [**部署方案**]，將應用程式側載到您的 HoloLens。
+6.  您的應用程式現在應該會出現在您 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
 
     > [!NOTE]
     > 若要部署到沉浸式耳機，請將 **解決方案平臺****設定為 [** *本機電腦*]，並將 [設定] 設定為 [以 *x86* 作為 **平臺**] 來進行 *Debug*。 然後使用 [ **組建] 功能表** 選取 [ *部署方案*]，部署到本機電腦。 
 
-## <a name="chapter-16--using-the-application-on-the-hololens"></a>第16章–在 HoloLens 上使用應用程式
+## <a name="chapter-16--using-the-application-on-the-hololens"></a>第16章–使用 HoloLens 上的應用程式
 
 - 當您啟動應用程式之後，您會在前方看到 Bot 成為藍色球體。
 
@@ -1303,10 +1303,10 @@ how much are raincoats?
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 此實驗室中的交談結構非常基本。 使用 Microsoft LUIS 為您的 bot 提供自然語言理解功能。
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 此範例不包含終止交談並重新啟動新的交談。 若要讓 Bot 功能完成，請嘗試將結束的情況執行到交談。

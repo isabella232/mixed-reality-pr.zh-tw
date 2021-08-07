@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、混合實境入口
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2beb063afb3aea5f44be116e6cb906312447dbd8
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: c85030da129d90bb0a150ad50a6990e30b68c21bc7a3899c4182e87acd4b4fa5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97726039"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186868"
 ---
 # <a name="mixed-reality-portal-error-messages"></a>混合實境入口錯誤訊息
 
@@ -34,18 +34,18 @@ ms.locfileid: "97726039"
 2. 從 Windows Update 檢查是否有最新的軟體更新。
 3. 卸載並重新安裝 Windows Mixed Reality：
     1. 從電腦中斷連接耳機纜線。
-    2. 選取 [ **> 混合現實 > 卸載] 設定**。
-    3. 選取 **> 裝置 > 藍牙 & 其他裝置的設定** ，以將您的動作控制器。 選取每個控制器，然後選取 [移除裝置]。
+    2. 選取 **設定 > 混合現實 > 卸載**]。
+    3. 選取 **設定 > 裝置 > 藍牙 & 其他裝置** 將您的動作控制器。 選取每個控制器，然後選取 [移除裝置]。
     4. 將您的耳機插回電腦以重新安裝 Windows Mixed Reality。
     
 ## <a name="im-getting-a-check-your-usb-cable-error-message"></a>我收到「檢查您的 USB 纜線」錯誤訊息。
 
-將您的耳機連接至不同的 USB 埠 (，並確定它是 SuperSpeed USB 3.0) 。 此外，請嘗試移除耳機與電腦之間的任何擴充項或中樞。
+連線您的耳機至不同的 USB 埠 (，並確定它是 SuperSpeed USB 3.0) 。 此外，請嘗試移除耳機與電腦之間的任何擴充項或中樞。
 
 ## <a name="im-getting-a-check-your-display-cable-error-message"></a>我收到 [檢查您的顯示器纜線] 錯誤訊息。
 
 使用下列步驟來針對問題進行疑難排解：
-* 將您的耳機連接至 DisplayPort 1.2 或更新版本，或 HDMI 1.4 或更新版本。 請確定埠與您電腦上最先進的圖形配接器相對應。
+* 連線您的耳機至 DisplayPort 1.2 或更新版本，或 HDMI 1.4 或更新版本。 請確定埠與您電腦上最先進的圖形配接器相對應。
 * 如果您使用介面卡，請確定其4K 能夠使用。
 * 請嘗試使用不同的 HDMI 埠。
 * 如果您已將外部監視器插入至 HDMI 埠，請嘗試改為將其插入至 DisplayPort，並將 HDMI 埠用於耳機。

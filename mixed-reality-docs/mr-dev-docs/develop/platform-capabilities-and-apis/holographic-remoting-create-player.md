@@ -5,42 +5,42 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: HoloLens、遠端、全像全像 Remoting、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 391650025398b4bdd89e30db1df7df5e3d6ab5f2
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+keywords: HoloLens、遠端處理、全像攝影遠端處理、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: b395f94f6c98b20f7c0c188f11a718e6da9394de5df3404e7c703558daf526f2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190162"
 ---
 # <a name="writing-a-custom-holographic-remoting-player-app"></a>撰寫自訂全像攝影遠端播放應用程式
 
 >[!IMPORTANT]
->本檔說明如何建立 HoloLens 2 的自訂播放程式應用程式。 針對 HoloLens 2 撰寫的自訂播放程式與針對 HoloLens 1 所撰寫的遠端應用程式不相容。 這表示這兩個應用程式都必須使用 NuGet 套件 **2.x 版。**
+>本檔說明如何建立 HoloLens 2 的自訂播放程式應用程式。 針對 HoloLens 2 撰寫的自訂播放程式與針對 HoloLens 1 撰寫的遠端應用程式不相容。 這表示這兩個應用程式都必須使用 NuGet 套件 **2.x 版。**
 
-藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以便在 HoloLens 2 上的遠端電腦上顯示 [沉浸式視圖](../../design/app-views.md) 。 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
+藉由建立自訂的全像遠端播放程式應用程式，您可以建立自訂應用程式，以便在 HoloLens 2 上的遠端電腦上顯示[沉浸式視圖](../../design/app-views.md)。 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
 
-全像遠端播放機可讓您的應用程式顯示桌上型電腦或 UWP [裝置上轉譯的全](rendering.md) 像 Xbox One，並可存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，請使用 NuGet 套件將全像是在 UWP 應用程式中新增全像的遠端處理。 然後撰寫程式碼來處理連接，並顯示沉浸式視圖。 
+全像遠端播放機可讓您的應用程式顯示桌上型電腦或 UWP[裝置上轉譯的全](rendering.md)像 Xbox One，並可存取更多系統資源。 全像遠端播放機應用程式會將輸入資料串流至全像的遠端處理遠端應用程式，並將沉浸式觀賞視為影片和音訊串流。 連接是使用標準 Wi-fi 進行的。 若要建立播放程式應用程式，請使用 NuGet 套件將全像攝影版新增至 UWP 應用程式。 然後撰寫程式碼來處理連接，並顯示沉浸式視圖。 
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 良好的起點是已以 Windows Mixed Reality API 為目標的可運作 DirectX 型 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 如果您沒有現有的應用程式，而且想要從頭開始，則 [c + +](../native/creating-a-holographic-directx-project.md) 全像的專案範本是不錯的起點。
 
 >[!IMPORTANT]
 >使用「全像」遠端處理的任何應用程式都應該撰寫為使用 [多執行緒的單元](/windows/win32/com/multithreaded-apartments)。 支援使用 [單一執行緒的單元](/windows/win32/com/single-threaded-apartments) ，但會導致效能不佳，而且可能會在播放期間間斷情形。 使用 c + +/WinRT [WinRT：： init_apartment](/windows/uwp/cpp-and-winrt-apis/get-started) 多執行緒的單元是預設值。
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>取得全像 Remoting NuGet 套件
+## <a name="get-the-holographic-remoting-nuget-package"></a>取得全像 NuGet 套件的全像遠端
 
 若要將 NuGet 套件新增至 Visual Studio 中的專案，必須執行下列步驟。
 1. 在 Visual Studio 中開啟專案。
-2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
+2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 封裝**.。。
 3. 在出現的面板中，選取 **[流覽]** ，然後搜尋「全像的遠端處理」。
 4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後選取 [ **安裝**]。
 5. 如果出現 [ **預覽** ] 對話方塊，請選取 **[確定]**。
 6. 當 [授權合約] 對話方塊出現時，選取 [ **我接受** ]。
 
 >[!IMPORTANT]
-><a name="idl"></a>NuGet 套件內的包含適用于全像全像攝影的 ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` API 的詳細檔。
+><a name="idl"></a>NuGet 套件內的會包含由全像全像的應用 ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` 程式所公開之 API 的詳細檔。
 
 ## <a name="modify-the-packageappxmanifest-of-the-application"></a>修改應用程式的 package.appxmanifest
 
@@ -100,7 +100,7 @@ m_playerContext = winrt::Microsoft::Holographic::AppRemoting::PlayerContext::Cre
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(window);
 ```
 
-## <a name="connect-to-the-remote-app"></a>連接至遠端應用程式
+## <a name="connect-to-the-remote-app"></a>連線至遠端應用程式
 
 一旦播放程式應用程式準備好可轉譯內容，就可以建立遠端應用程式的連接。
 
@@ -251,7 +251,7 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 自訂資料通道可以用來透過已建立的遠端連線來傳送使用者資料。 如需詳細資訊，請參閱 [自訂資料通道](holographic-remoting-custom-data-channels.md) 。
 
 ## <a name="see-also"></a>另請參閱
-* [使用 Windows Mixed Reality Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [自訂全像攝影遠端資料通道](holographic-remoting-custom-data-channels.md)
 * [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)

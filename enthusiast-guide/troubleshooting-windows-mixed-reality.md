@@ -4,12 +4,12 @@ description: 使用超過標準取用者支援檔的 Windows Mixed Reality 疑�
 ms.topic: article
 ms.author: rajhawar
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援
-ms.openlocfilehash: 24120e9c1bb34b8b32c00e2b677f530c4ba563ab
-ms.sourcegitcommit: bb9f54f3e872a5464a5d9ba88b7ab5b8896efd82
+ms.openlocfilehash: 2610ab12e19bd7011cba171b5acdaeed6a7834c358e9c4bae3ded301aa452353
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/25/2021
-ms.locfileid: "110345081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212456"
 ---
 # <a name="troubleshooting-in-windows-mixed-reality"></a>Windows Mixed Reality 中的疑難排解
 
@@ -25,7 +25,7 @@ ms.locfileid: "110345081"
 - [取得您的社區説明選項](#community-help-options)
 - [取得自助選項](#troubleshooting-topics)
 
-## <a name="community-help-options"></a>社區說明選項
+## <a name="community-help-options"></a>Community 説明選項
 
 如需您的開發人員問題（來自于您的開發人員生態系統）的解答，請在 Stack Overflow 或 Reddit 上提出問題。
 
@@ -72,7 +72,7 @@ ms.locfileid: "110345081"
 
 ### <a name="vr-experience-issues"></a>VR 體驗問題
 
-如果您在瀏覽器中遇到 SteamVR 遊戲、安裝 Windows 開發人員模式或查看 WebVR 內容的問題，以下是您可以使用的文章：
+如果您在 SteamVR 遊戲中遇到問題、安裝 Windows 開發人員模式，或在瀏覽器中觀看 WebVR 內容，下列文章就是：
 
 - [支援 SteamVR](steamvr-questions.md)
 - [支援 WebVR](webvr-questions.md)

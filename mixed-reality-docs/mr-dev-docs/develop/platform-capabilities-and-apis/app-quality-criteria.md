@@ -6,12 +6,12 @@ ms.author: crderr
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 應用程式品質準則、混合現實、混合現實應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 3f6752c0a15ae7db21be1f4a6d2843339ab28a5c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 858b0782c4e6754ee6753d463d5fe498e3a893f6c21b3f1c86ac14f8c0e6c8cf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581260"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189378"
 ---
 # <a name="app-quality-criteria"></a>應用程式品質準則
 
@@ -20,12 +20,12 @@ ms.locfileid: "98581260"
 * 裝置影響-受影響的視窗混合現實裝置類型。
 * 品質準則–如何評估品質因素。
 * 如何測量–測量問題 (或) 經驗的方法。
-* 建議-提供更佳使用者體驗的方法摘要。
+* 建議–提供更佳使用者體驗的方法摘要。
 * 資源-相關的開發人員和設計資源，可用於建立更好的應用程式體驗。
 
 ## <a name="frame-rate"></a>畫面播放速率
 
-畫面播放速率是全像全像要件的第一次，也是使用者的舒適。 低於建議目標的畫面播放速率可能會導致全息圖顯得抖動、對體驗的 believability 造成負面影響，並可能造成眼睛疲勞。 您 Windows Mixed Reality 沉浸式耳機的目標畫面播放速率是 60 Hz 或 90 Hz，視您支援的 Windows Mixed Reality 相容電腦而定。 HoloLens 的目標畫面播放速率是 60 Hz。
+畫面播放速率是全像全像要件的第一次，也是使用者的舒適。 低於建議目標的畫面播放速率可能會導致全息圖顯得抖動、對體驗的 believability 造成負面影響，並可能造成眼睛疲勞。 您 Windows Mixed Reality 沉浸式耳機的目標畫面播放速率是 60 hz 或 90 Hz，視您支援的 Windows Mixed Reality 相容電腦而定。 針對 HoloLens，目標畫面播放速率為 60 Hz。
 
 ### <a name="device-impact"></a>裝置影響
 
@@ -55,7 +55,7 @@ ms.locfileid: "98581260"
 
 ### <a name="how-to-measure"></a>如何測量
 
-* 「系統效能」下的 [Windows 裝置入口網站](using-the-windows-device-portal.md#system-performance) 會提供即時的畫面播放速率圖形。
+* 「系統效能」下的[Windows 裝置入口網站](using-the-windows-device-portal.md#system-performance)會提供即時的畫面播放速率圖形。
 * 針對開發的偵錯工具，請在應用程式中新增畫面播放速率診斷計數器。 請參閱範例計數器的資源。
 * 當應用程式正在執行時，可能會在裝置上經歷畫面播放速率下降，方法是將您的標題從側邊移動 如果全息圖顯示非預期的抖動移動，則低畫面播放速率或穩定性平面可能是原因。
 
@@ -114,7 +114,7 @@ ms.locfileid: "98581260"
 
 |  最佳  |  會見 |  失敗 |
 --- | --- | ---
-|  全像投影一樣穩定。 | 次要內容顯示非預期的移動;或非預期的移動不會妨礙整體應用程式體驗。 | 框架中的主要內容會顯示非預期的移動。 |
+|  全像投影一致地顯示穩定。 | 次要內容顯示非預期的移動;或非預期的移動不會妨礙整體應用程式體驗。 | 框架中的主要內容會顯示非預期的移動。 |
 
 ### <a name="how-to-measure"></a>如何測量
 
@@ -146,9 +146,9 @@ ms.locfileid: "98581260"
 
 #### <a name="tools-and-tutorials"></a>工具和教學課程
 
-* [MR IPD 套件，Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
+* [MR 配套套件，Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
-## <a name="holograms-position-on-real-surfaces"></a>在實際表面上的全息圖位置
+## <a name="holograms-position-on-real-surfaces"></a>在實際表面上全像投影位置
 
 不一致具有實體 (物件的全像地理位置的，如果要放置在彼此之間的關聯，) 會清楚指出非全像的非等量和真實世界。 放置的精確度應該相對於案例的需求;例如，一般表面放置可以使用空間地圖，但是更準確的放置將需要使用標記和校正。
 
@@ -176,12 +176,12 @@ ms.locfileid: "98581260"
 
 |  最佳  |  會見 |  失敗 |
 --- | --- | ---
-| 全像平面的全像平面的圖格對齊。 如果您需要更多精確度，應用程式應該提供有效率的方法，讓您在應用程式規格內共同作業。 | NA | 將表面平面中斷或遠離表面，以將實體目標物件顯示為未對齊。 如果需要精確度，則全像全像全像）會符合案例的相近規格。 | 
+| 全像投影對齊表面通常是以英寸為單位的範圍。 如果您需要更多精確度，應用程式應該提供有效率的方法，讓您在應用程式規格內共同作業。 | NA | 將表面平面中斷或遠離表面，以將實體目標物件顯示為未對齊。 如果需要精確度，全像投影應符合案例的相近規格。 | 
 
 ### <a name="how-to-measure"></a>如何測量
 
-* 放在空間地圖上的全像全像，不應該在表面上方或下方動態浮動。
-* 需要精確放置的全像投影必須有某種形式的標記和校正系統，才能精確地因應案例需求。
+* 放在空間對應上的全像投影應該不會明顯地浮動在表面上方或下方。
+* 需要正確放置的全像投影應該具有某種形式的標記和校正系統，以精確地因應案例需求。
 
 ### <a name="recommendations"></a>建議
 
@@ -205,7 +205,7 @@ ms.locfileid: "98581260"
 
 * [MR 工具組、空間對應庫](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit/SpatialMapping/README.md)
 * [MR 配套套件，海報校正範例](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/PosterCalibrationSample)
-* [MR IPD 套件，Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
+* [MR 配套套件，Kinect IPD](https://github.com/Microsoft/MixedRealityCompanionKit/tree/master/KinectIPD)
 
 #### <a name="external-references"></a>外部參考
 
@@ -213,7 +213,7 @@ ms.locfileid: "98581260"
 
 ## <a name="viewing-zone-of-comfort"></a>觀賞緩和區域
 
-應用程式開發人員藉由在不同的深度放置內容和全息，來控制使用者的眼睛。 使用 HoloLens 的使用者永遠都能容納 2.0 m 來維持清晰的影像，因為 HoloLens 顯示器是固定的，而與使用者之間的距離大約是 2.0 m。 不當的內容深度可能會導致 visual 不適感或疲勞。
+應用程式開發人員藉由在不同的深度放置內容和全息，來控制使用者的眼睛。 戴 HoloLens 的使用者永遠都能容納 2.0 m 來維持清晰的影像，因為 HoloLens 顯示器是固定的，而不是使用者的距離 2.0 m。 不當的內容深度可能會導致 visual 不適感或疲勞。
 
 ### <a name="device-impact"></a>裝置影響
 
@@ -252,7 +252,7 @@ ms.locfileid: "98581260"
 ### <a name="how-to-measure"></a>如何測量
 
 * 內容通常應該是 2 m，但無法接近1.25 或超過 5 m。
-* 在少數例外狀況下，您應該將 HoloLens 裁剪轉譯距離設定為85CM，並從 1 m 開始淡出內容。 處理內容並記下裁剪平面效果。
+* 有幾個例外狀況，HoloLens 剪切轉譯距離應該設定為85CM，且從 1 m 開始的內容淡出。 處理內容並記下裁剪平面效果。
 * 固定內容不應接近 50 cm。
 
 ### <a name="recommendations"></a>建議
@@ -313,7 +313,7 @@ ms.locfileid: "98581260"
 
 ## <a name="use-of-spatial-sound"></a>使用空間音效
 
-在 Windows Mixed Reality 中，音訊引擎會使用方向、距離和環境模擬來模擬3D 音效，以提供混合現實體驗的 aural 元件。 在應用程式中使用空間音效，可讓開發人員 convincingly 將聲音放在三維空間 (球體) 在使用者周圍。 這些音效看起來就像是來自真實的實體物件，或是使用者的環境中的混合現實全息。 空間音效是深度、協助工具和 UX 設計在混合現實應用程式中的強大工具。
+在 Windows Mixed Reality 中，音訊引擎會使用方向、距離和環境模擬來模擬3d 音效，以提供混合現實體驗的 aural 元件。 在應用程式中使用空間音效，可讓開發人員 convincingly 將聲音放在三維空間 (球體) 在使用者周圍。 這些音效看起來就像是來自真實的實體物件，或是使用者的環境中的混合現實全息。 空間音效是深度、協助工具和 UX 設計在混合現實應用程式中的強大工具。
 
 ### <a name="device-impact"></a>裝置影響
 
@@ -417,7 +417,7 @@ ms.locfileid: "98581260"
 #### <a name="documentation"></a>文件
 
 * [全像攝影框架](../../design/holographic-frame.md)
-* [案例研究、HoloStudio UI 和互動設計學習](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
+* [案例研究，HoloStudio UI 和互動設計學習](../../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md?#problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame)
 * [物件和環境的規模](../../design/scale.md)
 * [資料指標，視覺提示](../../design/cursors.md#visual-cues)
 
@@ -427,7 +427,7 @@ ms.locfileid: "98581260"
 
 ## <a name="content-reacts-to-user-position"></a>內容會回應使用者位置
 
-全像「真實」物件的方式，全像是對使用者的位置做出回應。 值得注意的設計考慮是 UI 元素，這些元素不一定會假設使用者的位置是固定的，而且會適應使用者的動作。 設計可正確調整為使用者位置的應用程式，將會建立更可信的體驗，並讓您更容易使用。
+全像投影應以與「真實」物件相同的方式來回應使用者的位置。 值得注意的設計考慮是 UI 元素，這些元素不一定會假設使用者的位置是固定的，而且會適應使用者的動作。 設計可正確調整為使用者位置的應用程式，將會建立更可信的體驗，並讓您更容易使用。
 
 ### <a name="device-impact"></a>裝置影響
 
@@ -512,7 +512,7 @@ ms.locfileid: "98581260"
 
 |  最佳  |  會見 |  失敗 |
 --- | --- | ---
-|  輸入互動方法與 Windows Mixed Reality 提供的 [指導](../../design/interaction-fundamentals.md)方針一致。 任何自訂輸入都不應是標準輸入的多餘 (而是使用標準的互動) ，而且必須清楚地傳達並向使用者展示。 | 類似于最佳，但自訂輸入是具有標準輸入方法的多餘。 使用者仍然可以透過應用程式體驗來達成目標和進度。 | 難以瞭解輸入方法或按鈕對應。 輸入經過大量自訂，不支援標準輸入、沒有指示，或可能造成疲勞和緩和問題。 | 
+|  輸入互動方法與 Windows Mixed Reality 提供的[指導](../../design/interaction-fundamentals.md)方針一致。 任何自訂輸入都不應是標準輸入的多餘 (而是使用標準的互動) ，而且必須清楚地傳達並向使用者展示。 | 類似于最佳，但自訂輸入是具有標準輸入方法的多餘。 使用者仍然可以透過應用程式體驗來達成目標和進度。 | 難以瞭解輸入方法或按鈕對應。 輸入經過大量自訂，不支援標準輸入、沒有指示，或可能造成疲勞和緩和問題。 | 
 
 ### <a name="how-to-measure"></a>如何測量
 

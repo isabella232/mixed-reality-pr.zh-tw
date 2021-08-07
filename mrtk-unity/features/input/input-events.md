@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、事件、
-ms.openlocfilehash: c8871aa575e2aa4507e9dbbdcc8bdf0fc0604633
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 25ac5bd4a4f5d5678a80ec362512ce7daac791a17e93944aa4832d9d09c02ee2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176786"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208330"
 ---
 # <a name="input-events"></a>輸入事件
 
@@ -27,7 +27,7 @@ ms.locfileid: "113176786"
 | [`IMixedRealityInputHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityInputHandler`1) | 輸入已變更 | 在對指定類型的輸入變更時引發。 **T** 可以採用下列值： <br/> - *float* (例如傳回類比觸發程式) <br/> - *Vector2* (例如會傳回游戲杆杆方向)  <br/> - *Vector3* (例如追蹤裝置的傳回位置)  <br/> - *四元數* (例如會傳回追蹤裝置的方向) <br/> - [MixedRealityPose](xref:Microsoft.MixedReality.Toolkit.Utilities.MixedRealityPose) (例如會傳回完整追蹤的裝置)  |
 | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) | 語音關鍵字已辨認 | 在識別 *語音命令設定檔* 中所設定的其中一個關鍵字時引發。 |
 | [`IMixedRealityDictationHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityDictationHandler) | 聽寫<br/> 假設 <br/> 結果 <br/> 完成 <br/> 錯誤 | 由聽寫系統引發，以報告聽寫會話的結果。 |
-| [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | 手勢事件： <br/> 已開始 <br/> 已更新 <br/> Completed <br/> 已取消 | 在筆勢偵測時引發。 |
+| [`IMixedRealityGestureHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler) | 手勢事件： <br/> 已開始 <br/> 已更新 <br/> 已完成 <br/> 已取消 | 在筆勢偵測時引發。 |
 | [`IMixedRealityGestureHandler<T>`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGestureHandler`1) | 已更新/完成手勢 | 在偵測包含指定類型之其他資料的手勢時引發。 如需 **T** 可能值的詳細資訊，請參閱 [**手勢事件**](gestures.md#gesture-events)。 |
 | [`IMixedRealityHandJointHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandJointHandler) | 手動接點已更新 | 當手動接點更新時，透過明確的手控制器來引發。 |
 | [`IMixedRealityHandMeshHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityHandMeshHandler) | 已更新手形網格 | 在更新手勢時，透過明確的手勢控制器來引發。 |

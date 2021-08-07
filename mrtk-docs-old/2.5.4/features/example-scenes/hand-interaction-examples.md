@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手互動、界限控制、Pressable 按鈕、
-ms.openlocfilehash: 4a24cb2a10180bfe37054e2d963f1ffeaa5704fa
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fc6e763e3977da805d83d3db0cdee7390c51b7caae5e905d61e98994d7abb568
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682991"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211662"
 ---
 # <a name="hand-interaction-examples-scene"></a>手邊互動範例場景
 
@@ -19,7 +19,7 @@ ms.locfileid: "104682991"
 `HandInteractionExamples` (資產/MRTK/範例/示範/HandTracking/場景/HandInteractionExamples unity) 範例場景包含各種類型的互動和 UI 控制項，可反白顯示明確的手輸入。
 
 > [!NOTE]
-> 這個範例場景使用 *TextMesh Pro*。 若要開啟場景，請在匯入場景期間顯示個別的提示時，按一下 [匯 *入 TMP 基本* ]。 Unity 接著會匯入 TextMesh Pro 套件。
+> 這個範例場景會使用 *TextMesh Pro*。 若要開啟場景，請在匯入場景期間顯示個別的提示時，按一下 [匯 *入 TMP 基本* ]。 Unity 接著會匯入 TextMesh Pro 套件。
 
 <img src="../images/hand-interaction-examples/MRTK_Examples_TMP2.png" width="450" alt="Example TMP2">
 

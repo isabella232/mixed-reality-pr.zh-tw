@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、操作、
-ms.openlocfilehash: 179ef40ba054b0fda3b13e9d578905eb064a58ab
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 24034c43bf8ce1f1ef463e894e9ca5293c2b0d2a146284535b161f8b4277dfa9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176629"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190200"
 ---
 # <a name="manipulation-handler"></a>操作處理常式
 
@@ -74,7 +74,7 @@ ms.locfileid: "113176629"
 
 **旋轉的條件約束** 指定當互動時，物件將旋轉的軸。
 
-* *None*
+* *無*
 * *僅限 X 軸*
 * *僅 Y 軸*
 * *僅 Z 軸*
@@ -83,7 +83,7 @@ ms.locfileid: "113176629"
 
 **移動時的條件約束**
 
-* *None*
+* *無*
 * *修正與 head 之間的距離*
 
 **啟用平滑** 指定是否啟用平滑處理。

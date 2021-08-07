@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、billboarding、加上標籤、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、Mixed Reality 工具組
-ms.openlocfilehash: 0bd1ac2168284d714240c6775468a61ed3e665b8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality、billboarding、標記以及混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 7ffcbe1d3401601e92eb1ac81dfd84f2af9e8e79eeea809b01a1e943a85f0db9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600337"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214156"
 ---
 # <a name="billboarding-and-tag-along"></a>佈告板和常駐標籤
 
@@ -24,7 +24,7 @@ ms.locfileid: "110600337"
 
 Billboarding 是一種行為概念，可套用至混合現實中的物件。 具有 billboarding 的物件一律會導向至臉部給使用者。 文字和功能表系統是常見的使用案例，也就是在使用者環境中放置的靜態物件 (世界鎖定的) 在使用者四處移動時，會隱藏或無法讀取。
 
-啟用 billboarding 的物件可以在使用者的環境中自由旋轉。 根據設計考慮，也可以限制為單一軸。 請記住，billboarded 物件可能會在放置太接近其他物件的位置，或在 HoloLens 中太接近掃描的表面時，自行裁剪或遮蔽。 若要避免這種情況，請考慮物件在啟用軸旋轉以進行 billboarding 時，可能會產生的總使用量。
+啟用 billboarding 的物件可以在使用者的環境中自由旋轉。 根據設計考慮，也可以限制為單一軸。 請記住，billboarded 物件可能會在放置太接近其他物件或 HoloLens 中太接近掃描的介面時，自行裁剪或遮蔽。 若要避免這種情況，請考慮物件在啟用軸旋轉以進行 billboarding 時，可能會產生的總使用量。
 
 <br>
 
@@ -34,7 +34,7 @@ Billboarding 是一種行為概念，可套用至混合現實中的物件。 具
 標記-也是可以新增至全像影像的行為概念。 以標記為物件的物件會嘗試停留在某個範圍內，讓使用者能夠輕鬆互動。
 
 ![HoloLens 釘選面板是標記的運作方式的絕佳範例](images/tagalong-1000px.jpg)<br>
-*HoloLens [開始] 功能表是標記與行為的絕佳範例*
+*HoloLens [開始] 功能表是一種標記式行為的絕佳範例*
 
 加上標籤的物件有參數，可以微調其行為方式。 當使用者在其環境中四處移動時，內容可能會在使用者的看到行中或不存在。 當您移動時，內容會藉由滑動到視圖的邊緣來嘗試停留在使用者的其邊界中。 根據使用者的移動速度而定，內容可能會暫時無法觀看。 當使用者 gazes 到加上標籤的物件時，它會更完整地顯示。 您可以將內容視為「立即消失」，讓使用者永遠不會忘記其內容的方向。
 

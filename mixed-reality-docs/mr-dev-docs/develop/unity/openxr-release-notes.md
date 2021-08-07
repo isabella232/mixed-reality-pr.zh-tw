@@ -7,12 +7,12 @@ ms.date: 06/18/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: c926fbb758d7cfaa2e73b5357cacdab7a5d15e27
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 568d5f25eceed385a1331cd2cf5fe6e3adb6f8228e85d6d2d316749fc2ee431c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187619"
 ---
 # <a name="mixed-reality-openxr-plugin-release-notes"></a>Mixed Reality OpenXR 外掛程式版本資訊
 
@@ -51,7 +51,7 @@ ms.locfileid: "112394646"
 * 已新增新的 c # API，以使用 XRMeshSubsystem 來設定計算網格的其他設定。
 * 已新增新的 c # API 來設定和訂閱手勢辨識事件。
 * 已新增 Windows->XR->編輯器遠端設定] 對話方塊。
-* 已新增適用于 HoloLens UWP 應用程式的 ARM 支援。
+* 已新增 HoloLens UWP 應用程式的 ARM 支援。
 
 ## <a name="093---2021-04-29"></a>0.9.3-2021-04-29
 
@@ -75,7 +75,7 @@ ms.locfileid: "112394646"
 
 * 已新增透過 XRMeshSubsystem 和 ARMeshManager 的空間對應支援。
 * 已新增新的 c # API 來取得 OpenXR 控制碼，以支援其他 Unity 套件使用 OpenXR 擴充功能。
-* 已新增新的 c # API 與 Windows 的互通性。認知 Api 可支援使用認知 WinRT Api 的其他 Unity 套件。
+* 已將新的 c # API 新增至 Windows 的 interop。認知 Api，以支援使用認知 WinRT Api 的其他 Unity 套件。
 * 從 Windows Mixed Reality 功能集中的必要功能移除互動設定檔，讓開發人員可以選擇所測試的動作控制器。
 * 已新增全像「編輯遠端功能」驗證程式，可協助使用者正確設定編輯器的遠端功能。
 * 修正當連線失敗後，Unity 編輯器在離開全像 editor 遠端處理模式時損毀的 bug。

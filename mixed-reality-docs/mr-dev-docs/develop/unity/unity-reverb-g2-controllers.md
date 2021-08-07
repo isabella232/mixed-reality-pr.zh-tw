@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/14/2020
 ms.topic: article
 keywords: Unity、回音、回音、HP 回音、mixed reality、開發、移動控制器、使用者輸入、功能、新專案、模擬器、檔、指南、功能、全像遊戲開發
-ms.openlocfilehash: 26435ef57c9baf59b1008fb4750aedd913a19814
-ms.sourcegitcommit: 1304f8f0a838290c1ae3db34670b67c75ea9bdaa
+ms.openlocfilehash: 4e561cb1e46fe487f1b25ed526f0adeafc2de6c525835ffe3b1871d7516b233e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 02/02/2021
-ms.locfileid: "99421389"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215616"
 ---
 # <a name="hp-reverb-g2-controllers-in-unity"></a>Unity 中的 HP 回音 G2 控制器
 
@@ -20,10 +20,10 @@ HP 運動控制器是一種全新的 Windows Mixed Reality 控制器類型：所
 * 觸控板已由兩個按鈕取代：適用于右邊控制器的 A 和 B，以及左邊控制器的 X 和 Y。 
 * 我們現在已有一個觸發程式，此觸發程式會在0.0 和1.0 之間發行值的資料流程，而不是在按下和未按下狀態的按鈕。 
 
-由於新的輸入無法透過現有的 Windows 和 Unity Api 來存取，因此您需要專用的 **MixedReality。輸入** UPM 套件。 
+由於新的輸入無法透過現有的 Windows 和 Unity api 來存取，因此您需要專用的 **MixedReality。輸入** UPM 套件。 
 
 > [!IMPORTANT]
-> **此套件中的類別不會取代現有的 Windows 和 Unity Api，但會加以補充。** 傳統 Windows Mixed Reality 控制器和 HP 運動控制器通常都可以使用的功能，可透過使用現有 Api 的相同程式碼路徑來存取。 只有新的輸入需要使用額外的 MixedReality 輸入套件。 
+> **此套件中的類別不會取代現有的 Windows 和 Unity api，但會加以補充。** 傳統 Windows Mixed Reality 控制器和 HP 運動控制器通常都可以使用的功能，可透過使用現有 api 的相同程式碼路徑來存取。 只有新的輸入需要使用額外的 MixedReality 輸入套件。 
 
 ## <a name="hp-motion-controller-overview"></a>HP 運動控制器總覽
 
@@ -47,12 +47,12 @@ MotionController 可以公開兩種類型的輸入：
     * 當您按下) 時，按鈕只能傳回 0.0 () 或 1.0 (，而觸發程式可能會傳回 () 完整發行 (至 1.0) 完全按的連續0.0 值。 
 * 操縱杆狀態是由其 X 和 Y 元件介於-1.0 和1.0 之間的 Vector2 來表示。 
 
-您可以使用 *MotionController. GetPressableInputs ( # B1* 傳回輸入值的清單， (按鈕和觸發程式傳回已按下的值) 或 *MotionController. GetXYInputs ( # B5* 方法，以傳回傳回2軸值的輸入清單。 
+您可以使用 *MotionController. GetPressableInputs ()* 傳回輸入值的清單， (按鈕和觸發程式傳回已按下的值) 或 *MotionController. GetXYInputs ()* 方法，以傳回傳回2軸值的輸入清單。 
 
 MotionControllerReading 實例代表指定時間的控制器狀態： 
 
-* *GetPressedValue ( # B1* 會抓取按鈕或觸發程式的狀態。 
-* *GetXYValue ( # B1* 會抓取操縱杆的狀態。 
+* *GetPressedValue ()* 會抓取按鈕或觸發程式的狀態。 
+* *GetXYValue ()* 會抓取操縱杆的狀態。 
 
 ### <a name="creating-a-cache-to-maintain-a-collection-of-motioncontroller-instances-and-their-states"></a>建立快取以維護 MotionController 實例及其狀態的集合 
 
@@ -259,7 +259,7 @@ void Update()
 
 ### <a name="generating-events-from-the-new-inputs"></a>從新的輸入產生事件 
 
-您可以選擇將所有狀態變更作為事件來處理，而不是輪詢控制器的狀態一次，讓您可以處理最快速的動作，使其維持小於框架。 為了讓這個方法能夠運作，行動電話控制器的快取需要處理自最後一個畫面格之後由控制器所發行的所有狀態，您可以將最後一次 MotionControllerReading 的時間戳記儲存在 MotionController 中，然後呼叫 *MotionController. TryGetReadingAfterTime ( # B1*： 
+您可以選擇將所有狀態變更作為事件來處理，而不是輪詢控制器的狀態一次，讓您可以處理最快速的動作，使其維持小於框架。 為了讓這個方法能夠運作，行動電話控制器的快取需要處理自最後一個畫面格之後由控制器所發行的所有狀態，您可以藉由儲存上次從 MotionController 中取出的 MotionControllerReading 時間戳記，然後呼叫 *MotionController () TryGetReadingAfterTime* 來執行此作業： 
 
 ```csharp
 private class MotionControllerState 
@@ -346,7 +346,7 @@ private class MotionControllerState
 } 
 ```
 
-現在您已更新快取內部類別，MonoBehavior 類別可以公開兩個事件–已按下並釋出，並從其更新 ( # A1 方法中引發它們： 
+現在您已更新快取內部類別，MonoBehavior 類別可以公開兩個事件–已按下並釋出，並從其更新 () 方法中引發它們： 
 
 ```csharp
 /// <summary> 

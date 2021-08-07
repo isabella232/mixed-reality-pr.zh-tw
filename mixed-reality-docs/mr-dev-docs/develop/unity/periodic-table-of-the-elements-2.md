@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
 keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、OpenXR、open XR、Unity
-ms.openlocfilehash: 29dc4c99505d3f8e2d9bab70e54da25c1ab6c87b
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 78961c73ee01efcd097d2dcc4456bce156287691fa6dc8e2121c817e4812bfac
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757402"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211848"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>元素週期表 2.0
 ![Elements 應用程式的期間資料表](../images/MRDL_PeriodicTable.jpg)

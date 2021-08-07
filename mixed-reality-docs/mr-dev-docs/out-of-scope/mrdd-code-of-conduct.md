@@ -6,13 +6,13 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 02/21/2020
 ms.topic: article
-keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 9ff4d53b277f23a0b9abc6de7531db11240b800b
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: 混合的現實、會議、高峰、開發人員、HoloLens、HoloLens 2 Kinect
+ms.openlocfilehash: b456455b95dc225a012133d22fc5fb04c5a6d0cfe81ea91e016b79712f80d449
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91680548"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209426"
 ---
 ![混合實境開發日](../whats-new/images/MRDD/MRDevDaysBanner.png)  
 

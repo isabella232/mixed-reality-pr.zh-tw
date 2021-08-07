@@ -1,24 +1,24 @@
 ---
-title: HoloLens (第1代) 共用 240-多個 HoloLens 裝置
-description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習共用全像影像的詳細資料。
+title: HoloLens (第1代) 共用 240-多部 HoloLens 裝置
+description: 遵循此程式碼逐步解說使用 Unity、Visual Studio 和 HoloLens 來瞭解共用全像影像的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、共用、網路、學術、教學課程、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 446f82558781e47b5381ee3f59af70953954ad2a
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、共用、網路、學術、教學課程、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: 1714c9cf1b64953ff319eefb8633b1891568d5a50f2ed778e6e890d3149d3908
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269914"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208698"
 ---
 # <a name="hololens-1st-gen-sharing-240-multiple-hololens-devices"></a>HoloLens (第1代) 共用240：多個 HoloLens 裝置
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
-當我們在空間中移動時，我們會在世界各地提供全像投影。 HoloLens 會使用不同的 [座標系統](../../../design/coordinate-systems.md) 來追蹤物件的位置和方向，以就地保存全像影像。 當我們在裝置之間共用這些座標系統時，我們可以建立共用的體驗，讓我們參與共用的全像世界。
+當我們在空間中移動時，我們會在世界中提供全像投影的狀態。 HoloLens 藉由使用各種[座標系統](../../../design/coordinate-systems.md)來追蹤物件的位置和方向，來維持全像位置。 當我們在裝置之間共用這些座標系統時，我們可以建立共用的體驗，讓我們參與共用的全像世界。
 
 在此教學課程中，我們將：
 
@@ -41,8 +41,8 @@ ms.locfileid: "106269914"
 
 ### <a name="prerequisites"></a>必要條件
 
-* 使用隨網際網路存取安裝的正確 [工具](../../../develop/install-the-tools.md) 設定的 Windows 10 電腦。
-* 至少有兩個 HoloLens 裝置 [設定用於開發](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)。
+* 使用隨網際網路存取安裝的正確[工具](../../../develop/install-the-tools.md)設定的 Windows 10 電腦。
+* 至少有兩個[設定為開發的](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#enabling-developer-mode)HoloLens 裝置。
 
 ### <a name="project-files"></a>專案檔
 
@@ -53,7 +53,7 @@ ms.locfileid: "106269914"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。 將資料夾名稱保留為 **SharedHolograms**。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-240-SharedHolograms)取得。
 
 ## <a name="chapter-1---holo-world"></a>第1章-Hololens World
 
@@ -71,7 +71,7 @@ ms.locfileid: "106269914"
 * 啟動 Unity。
 * 選取 [開啟]  。
 * 輸入位置作為您先前 unarchived 的 **SharedHolograms** 資料夾。
-* 選取 [ **專案名稱** ]，然後按一下 [ **選取資料夾**]。
+* 選取 **Project 名稱**]，然後按一下 [**選取資料夾**]。
 * **在階層中，以** 滑鼠右鍵按一下 **主要攝影機**，然後選取 [**刪除**]。
 * 在 [ **HoloToolkit-共用-240/Prefabs/攝影機** ] 資料夾中，尋找 **主要相機** 預製專案。
 * 將 [**主要攝影機**] 拖放到階層 **中。**
@@ -80,8 +80,8 @@ ms.locfileid: "106269914"
 * 將 GameObject 重新命名為 **HologramCollection**。
 * 選取階層中的 **HologramCollection** 物件 **。**
 * 在偵測 **器** 中，將 **轉換位置** 設定為： **X：0，Y：-0.25，Z： 2**。
-* 在 [**專案] 面板** 的 [全像全像 **] 資料夾中**，尋找 **EnergyHub** 資產。
-* 將 **EnergyHub** 物件從 **專案面板** 拖放到階層中， **做為** **HologramCollection 的子** 系。
+* 在 **Project 面板** 的 **全像投影** 資料夾中，尋找 **EnergyHub** 資產。
+* 將 **EnergyHub** 物件從 **Project 面板** 拖放到階層中，**做為** **HologramCollection 的子** 系。
 * 選取 [檔案 **> 另存場景為**...]
 * 命名場景 **SharedHolograms** ，然後按一下 [ **儲存**]。
 * 按下 Unity 中的 [ **播放** ] 按鈕，以預覽您的全像影像。
@@ -89,7 +89,7 @@ ms.locfileid: "106269914"
 
 **將專案從 Unity 匯出至 Visual Studio**
 
-* 在 Unity 中，選取 [ **File > Build Settings**]。
+* 在 Unity 中，選取 [ **File > Build 設定**。
 * 按一下 [ **新增開啟場景** ] 以加入場景。
 * 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
 * 將 **SDK** 設定為 **通用 10**。
@@ -104,11 +104,11 @@ ms.locfileid: "106269914"
 * 開啟 **SharedHolograms** 以啟動 Visual Studio。
 * 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X86**。
 * 按一下 [本機電腦] 旁的下拉箭號，然後選取 [ **遠端裝置**]。
-    * 將 **位址** 設定為 HoloLens 的名稱或 IP 位址。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > 網路 & 網際網路 > [Advanced Options** ] 或 [問 Cortana **] 嗨 Cortana，我的 IP 位址為何？**
+    * 將 **位址** 設定為您 HoloLens 的名稱或 IP 位址。 如果您不知道您的裝置 IP 位址，請查看 **設定 > 網路 & 網際網路 > Advanced 選項**，或詢問 Cortana 「**我的 IP 位址是什麼？** 」
     * 將 [ **驗證模式]** 設定為 [ **通用**]。
     * 按一下 [**選取**]
-* 按一下 [ **Debug > 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
-* 放在 HoloLens 上，找出 EnergyHub 的全息圖。
+* 按一下 [ **Debug > 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將[它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+* 放在您的 HoloLens 上，尋找 EnergyHub 的全像投影。
 
 ## <a name="chapter-2---interaction"></a>第2章-互動
 
@@ -143,8 +143,8 @@ ms.locfileid: "106269914"
 
 **部署及享用**
 
-* 使用上一章的指示，建立並部署至您的 HoloLens。
-* 在您的 HoloLens 上啟動應用程式後，請移至您的開端，並留意 EnergyHub 接在您注視的方式。
+* 使用上一章的指示，建立並部署到您的 HoloLens。
+* 當應用程式在您的 HoloLens 上啟動後，請移至您的開端，並留意 EnergyHub 接在您注視的方式。
 * 請注意，當您注視全像全像投影時，游標會如何出現，並在不撥雲見日于全像點時變更點燈。
 * 執行點一下來放置全像。 目前，在我們的專案中，您只可以在 (重新部署時放置全像) ，然後再試一次。
 
@@ -162,15 +162,15 @@ ms.locfileid: "106269914"
 * 每個人都看到相同的全息圖！
 
 >[!NOTE]
->您必須為應用程式宣告 **InternetClientServer** 和 **PrivateNetworkClientServer** 功能，才能連接到共用伺服器。 這是針對您已在全像240的電腦上完成的，但請記住您自己的專案。
+>您必須為應用程式宣告 **InternetClientServer** 和 **PrivateNetworkClientServer** 功能，才能連接到共用伺服器。 您已在全像投影240中完成這項操作，但請記住您自己的專案。
 
->1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定
->2. 按一下 [Windows 市存放區] 索引標籤
->3. 在 [發佈設定 > 功能] 區段中，檢查 **InternetClientServer** 功能和 **PrivateNetworkClientServer** 功能
+>1. 在 Unity 編輯器中，流覽至 [編輯 > Project 設定 > 播放機]，移至播放機設定
+>2. 按一下 [Windows 存放區] 索引標籤
+>3. 在「發行設定 > 功能」一節中，檢查 **InternetClientServer** 功能和 **PrivateNetworkClientServer** 功能
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案] 面板** 中，流覽至 [ **HoloToolkit-Sharing-240\Prefabs\Sharing** ] 資料夾。
+* 在 **Project 面板** 中，流覽至 **HoloToolkit-Sharing-240\Prefabs\Sharing** 資料夾。
 * 將 **共用** 預製專案拖放到 [階層] **面板** 中。
 
 接下來我們需要啟動共用服務。 只有 **一部電腦** 在共用體驗中需要執行這個步驟。
@@ -187,7 +187,7 @@ ms.locfileid: "106269914"
 * **在階層中選取**[ **HologramCollection** ] 物件。
 * 在 [偵測 **器** ] 中，按一下 [ **新增元件** ] 按鈕。
 * 在搜尋方塊中，輸入匯 **入匯出錨點管理員**。 選取搜尋結果。
-* 在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。
+* 在 **Project 面板** 中，流覽至 [**腳本**] 資料夾。
 * 按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。
 * 使用以下列程式碼取代內容。
 
@@ -301,10 +301,10 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 **部署及享用**
 
-* 建立 HoloLens 裝置的專案。
-* 指定一個 HoloLens 以先部署到其中。 您必須等待錨點上傳至服務，才能放置 EnergyHub (這可能需要大約30-60 秒的時間) 。 在上傳完成之前，您的分流手勢將會被忽略。
-* 放置 EnergyHub 之後，其位置會上傳至服務，然後您就可以部署到所有其他 HoloLens 裝置。
-* 當新的 HoloLens 首次加入會話時，該裝置上的 EnergyHub 位置可能不正確。 不過，一旦從服務下載錨點和 EnergyHub 位置，EnergyHub 應該會跳至新的共用位置。 如果這不是在 ~ 30-60 秒內發生，請在設定錨點以收集更多環境線索時，逐步解說原始 HoloLens 的所在位置。 如果位置仍未鎖定，請重新部署至裝置。
+* 為您的 HoloLens 裝置建立專案。
+* 指定一個要先部署到其中的 HoloLens。 您必須等待錨點上傳至服務，才能放置 EnergyHub (這可能需要大約30-60 秒的時間) 。 在上傳完成之前，您的分流手勢將會被忽略。
+* 放置 EnergyHub 之後，其位置將會上傳至服務，然後您便可以部署到其他所有 HoloLens 裝置。
+* 當新的 HoloLens 第一次加入會話時，該裝置上的 EnergyHub 位置可能不正確。 不過，一旦從服務下載錨點和 EnergyHub 位置，EnergyHub 應該會跳至新的共用位置。 如果這不是在 ~ 30-60 秒內發生，請在設定錨點以收集更多環境線索時，逐步解說原始 HoloLens 的位置。 如果位置仍未鎖定，請重新部署至裝置。
 * 當裝置都已就緒且正在執行應用程式時，請尋找 EnergyHub。 您是否同意全像全像全像全像全像全像全庫存的位置，以及文字面向的方向？
 
 ## <a name="chapter-4---discovery"></a>第4章-探索
@@ -321,9 +321,9 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。
+* 在 **Project 面板** 中，流覽至 **全像投影** 資料夾。
 * 將 **PlayerAvatarStore** 拖放到階層中 **。**
-* 在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。
+* 在 **Project 面板** 中，流覽至 [**腳本**] 資料夾。
 * 按兩下 **AvatarSelector** 腳本，在 Visual Studio 中開啟它。
 * 使用以下列程式碼取代內容。
 
@@ -605,7 +605,7 @@ public class AppStateManager : Singleton<AppStateManager>
 
 * 建立專案，並將其部署到您的 HoloLens 裝置。
 * 當您聽到 ping 音效時，請尋找 [顯示圖片] 的 [選取專案] 功能表，並選取具有 [點一下] 手勢的圖片。
-* 如果您不想查看任何全息體，則當 HoloLens 與服務進行通訊時，游標周圍的點燈將會變成不同的色彩：初始化 (深紫色) 、將錨點下載 (綠色) 、匯入/匯出位置資料 (黃色) 、將錨點上傳 (藍色) 。 如果游標周圍的點燈是預設色彩 (淺紫色) ，您就可以開始與會話中的其他玩家互動！
+* 如果您不想查看任何全息體，當您的 HoloLens 正在與服務通訊時，游標周圍的點燈將會變成不同的色彩：初始化 (暗紫色) 、將錨點下載到 (綠色) 、匯入/匯出位置資料 (黃色) 、將錨點上傳 (藍色) 。 如果游標周圍的點燈是預設色彩 (淺紫色) ，您就可以開始與會話中的其他玩家互動！
 * 查看連接到您空間的其他人-將會有一位全像的機器人，並模擬其頭部運動！
 
 ## <a name="chapter-5---placement"></a>第5章-放置
@@ -620,9 +620,9 @@ public class AppStateManager : Singleton<AppStateManager>
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。
+* 在 **Project 面板** 中，流覽至 **全像投影** 資料夾。
 * 將 **CustomSpatialMapping** 預製專案拖放到階層上 **。**
-* 在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。
+* 在 **Project 面板** 中，流覽至 [**腳本**] 資料夾。
 * 按兩下 **AppStateManager** 腳本，在 Visual Studio 中開啟它。
 * 使用以下列程式碼取代內容。
 
@@ -729,7 +729,7 @@ public class AppStateManager : Singleton<AppStateManager>
 }
 ```
 
-* 在 [ **專案] 面板** 中，流覽至 [ **腳本** ] 資料夾。
+* 在 **Project 面板** 中，流覽至 [**腳本**] 資料夾。
 * 按兩下 **HologramPlacement** 腳本，在 Visual Studio 中開啟它。
 * 使用以下列程式碼取代內容。
 
@@ -1001,7 +1001,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 * **在階層中選取**[ **HologramCollection** ] 物件。
 * 在 [偵測 **器** ] 中按一下 [ **新增元件**]。
-* 在搜尋方塊中，輸入 **Projectile 啟動器**。 選取搜尋結果。
+* 在 [搜尋] 方塊中，輸入 **Projectile Launcher**。 選取搜尋結果。
 
 **部署及享用**
 
@@ -1021,7 +1021,7 @@ public class HologramPlacement : Singleton<HologramPlacement>
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案] 面板** 中，流覽至 [ **全息** 全像] 資料夾。
+* 在 **Project 面板** 中，流覽至 **全像投影** 資料夾。
 * 將 **Underworld** 資產拖放為 HologramCollection 的 **子** 系。
 * 選取 **HologramCollection** 後，按一下 [**檢查**] 中的 [**新增元件**] 按鈕。
 * 在功能表的 [搜尋] 方塊中，輸入 **ExplodeTarget**。 選取搜尋結果。

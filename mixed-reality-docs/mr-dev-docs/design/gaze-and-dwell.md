@@ -6,18 +6,18 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: aa4fceeb8875da89fd7f84c3709ff6db07fd96f4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: c65c13b06df70ed5471b283ad349dd72e1575018a98913177983d7a13571d666
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582133"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213672"
 ---
 # <a name="gaze-and-dwell"></a>目光和停駐
 
 當手上拿著工具和組件時，手勢可以很繁瑣或不可能進行。
 在某些內容中，語音命令也可能不可靠，例如在過高的情況下。
-「注視」和「停留」提供了一種熟悉且簡單的主要機制，可讓您在 HoloLens 上使用並無人參與。
+「注視」和「停留」提供了一種熟悉且簡單的主要機制，讓您在 HoloLens 上運作並無人參與。
 此外，「注視」和「停留」是很棒的回復，與操作環境中的雜訊干擾或無回應條件無關。
 我們將看看兩種不同的眼睛 _和停留_： [前端和停留](gaze-and-dwell-head.md) ，以及 [眼睛和停留](gaze-and-dwell-eyes.md)。
 
@@ -27,7 +27,7 @@ ms.locfileid: "98582133"
 穿戴 HoloLens 的人員在修理汽車引擎時覆疊參考資訊就是個不錯的範例。
 他們的雙手忙著拿起工具，或在靠向引擎室時支撐其身體。
 車庫空間很吵雜，充斥著工具的碰撞和唧唧聲，讓語音命令變得難以使用。
-注視和停留可讓使用 HoloLens 的人安心地流覽其參考資料，而不會中斷其工作流程。
+注視和停留可讓使用 HoloLens 的人員安心地流覽其參考資料，而不會中斷其工作流程。
 
 ## <a name="device-support"></a>裝置支援
 

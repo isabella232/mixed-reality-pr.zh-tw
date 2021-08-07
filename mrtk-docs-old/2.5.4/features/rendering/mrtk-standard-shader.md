@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、材質著色器
-ms.openlocfilehash: 608710296ec9bcf9dcb8a7672cbe356c3b1a0603
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4bfabf974db5f82768ba793ab9bfab544ea35143ab3bc12f611ebcbd7fa2045b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685211"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208326"
 ---
 # <a name="mrtk-standard-shader"></a>MRTK 標準著色器
 
 ![標準著色器範例](../images/mrtk-standard-shader/MRTK_StandardShader.jpg)
 
-MRTK 標準陰影系統利用單一、彈性的著色器，其可達成與 Unity 標準著色器類似的視覺效果、實行 [Fluent Design 系統](https://www.microsoft.com/design/fluent/) 準則，並在混合現實裝置上維持效能。
+MRTK 標準陰影系統利用單一、彈性的著色器，其可達成與 Unity 標準著色器類似的視覺效果、實行[Fluent Design 系統](https://www.microsoft.com/design/fluent/)準則，並在混合現實裝置上維持效能。
 
 ## <a name="example-scenes"></a>範例場景
 

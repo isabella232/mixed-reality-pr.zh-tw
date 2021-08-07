@@ -1,21 +1,21 @@
 ---
 title: 開始手勢
-description: 瞭解如何使用開始手勢來呼叫 HoloLens 上的 [開始] 功能表，以及 Windows Mixed Reality 沉浸式耳機。
+description: 瞭解如何使用 [開始] 手勢來呼叫 HoloLens 上的 [開始] 功能表，以及 Windows Mixed Reality 沉浸式耳機。
 author: shengkait
 ms.author: cmeekhof
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 混合的現實、手勢、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、bloom
-ms.openlocfilehash: d0f3bd81cab945a01a523806ebaf4546752d74c1
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f3ad9309c7232f20a25060b1d98d7374272ceea00f24be18d7263b8ec7002fb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213732"
 ---
 # <a name="start-gesture"></a>開始手勢
 
-開始手勢是用來叫用 [開始] 功能表的手手勢。 這相當於按下鍵盤上的 Windows 鍵、Xbox 控制器上的 Xbox 按鈕，或沉浸式耳機移動控制器上的 Windows 按鈕。 請特別注意每個混合現實裝置上的保留系統手勢，以避免在設計互動時產生衝突。
+開始手勢是用來叫用 [開始] 功能表的手手勢。 這相當於按下鍵盤上的 Windows 鍵、xbox 控制器上的 xbox 按鈕，或沉浸式耳機運動控制器上的 Windows 按鈕。 請特別注意每個混合現實裝置上的保留系統手勢，以避免在設計互動時產生衝突。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -54,7 +54,7 @@ ms.locfileid: "98583229"
 
 ## <a name="bloom"></a>盛開
 
-我們設計了 "Bloom"，將 HoloLens 中的 [開始] 功能表 (第一代) ，也就是模擬花卉櫻花的符號手勢。 它是確定-footed 互動、簡單易用以及快速重新叫用的獨特方式。 若要使用手勢，請將您的手中的手朝您手上一處，然後散佈手指來開啟您的手。
+我們設計了 "Bloom"，以在 HoloLens (第一個 gen) 中顯示 [開始] 功能表，也就是模擬花卉櫻花的符號手勢。 它是確定-footed 互動、簡單易用以及快速重新叫用的獨特方式。 若要使用手勢，請將您的手中的手朝您手上一處，然後散佈手指來開啟您的手。
 
 :::row:::
     :::column:::

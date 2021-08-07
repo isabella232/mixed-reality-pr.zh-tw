@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 8213c445da9c1bbf0eeb591b7995fb61bc6d5b5f
-ms.sourcegitcommit: 29a43366d5969f1a895bd184ebe272168d9be1e2
+ms.openlocfilehash: 9d74104924aa859f5ab18248a487a7e80392809adb09361e84c5ad386f1321c4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110584500"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212380"
 ---
 # <a name="tutorial-prepare-a-scene"></a>教學課程：準備場景
 
@@ -22,7 +22,7 @@ ms.locfileid: "110584500"
 
 > [!div class="checklist"]
 > * 建立場景
-> * 新增相機
+> * 新增攝影機
 > * 新增燈光
 > * 新增基本3D 元素
 
@@ -86,9 +86,9 @@ ms.locfileid: "110584500"
     box.position.y = 1;
     ```
 
-1. 在 Microsoft Edge 瀏覽器中開啟網頁，並檢查輸出。 瀏覽器視窗會顯示空白頁面。 使用鍵盤開啟 DevTools，然後選取 F12 或 Ctrl + Shift + I (Windows、Linux) 或命令 + 選項 + I (macOS) 。 開啟 [ *主控台* ] 索引標籤之後，您就可以開始尋找錯誤。 將會顯示錯誤：「未攔截的錯誤：未定義相機」。 現在，我們必須將攝影機加入場景中。
+1. 在 Microsoft Edge 瀏覽器中開啟網頁，並檢查輸出。 瀏覽器視窗會顯示空白頁面。 使用鍵盤開啟 DevTools，然後選取 F12 或 ctrl + Shift + I (Windows、Linux) 或命令 + 選項 + i (macOS) 。 開啟 [ *主控台* ] 索引標籤之後，您就可以開始尋找錯誤。 將會顯示錯誤：「未攔截的錯誤：未定義相機」。 現在，我們必須將攝影機加入場景中。
 
-## <a name="add-a-camera"></a>新增相機
+## <a name="add-a-camera"></a>新增攝影機
 
 1. 若要觀看虛擬世界並與其互動，必須將攝影機連接至畫布。 讓我們新增 BABYLON 類型的相機 [。ArcRotateCamera](https://doc.babylonjs.com/divingDeeper/cameras/camera_introduction#arc-rotate-camera)，可在目標周圍旋轉。 建立相機實例所需的參數如下：
     1. **名稱**：相機的名稱

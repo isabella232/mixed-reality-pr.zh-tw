@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、操作、
-ms.openlocfilehash: 2731e66c09a7c207a709f1073d9f3f09c59233b0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3e036883feb826f465f15d7926ff179ec02212e838438df30bc7ff8163fd54f7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686311"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209454"
 ---
 # <a name="manipulation-handler"></a>操作處理常式
 
@@ -67,14 +67,14 @@ ms.locfileid: "104686311"
 
 **發行行為** 釋放物件時，請指定其實體移動行為。 要求 rigidbody 元件必須在該物件上。
 
-* *Nothing*
+* *什麼*
 * *所有項目*
 * *保持速度*
-* *保持角度速度*
+* *維持 Angular 速度*
 
 **旋轉的條件約束** 指定當互動時，物件將旋轉的軸。
 
-* *None*
+* *無*
 * *僅限 X 軸*
 * *僅 Y 軸*
 * *僅 Z 軸*
@@ -83,7 +83,7 @@ ms.locfileid: "104686311"
 
 **移動時的條件約束**
 
-* *None*
+* *無*
 * *修正與 head 之間的距離*
 
 **啟用平滑** 指定是否啟用平滑處理。

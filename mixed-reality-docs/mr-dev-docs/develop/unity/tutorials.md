@@ -7,12 +7,12 @@ ms.date: 07/30/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: mixedrealitytoolkit, mixedrealitytoolkit-unity, 學院, 教學課程, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, unity, unreal, HoloLens, Azure 空間錨點, Azure 語音服務
-ms.openlocfilehash: c64ceb918cfec31b7ac934d9a1f9c719a4dde244
-ms.sourcegitcommit: b8a3367bf6dfed01de1ffa10f635385a92ca06b5
+ms.openlocfilehash: 3dfe5c0243b0cfce58d3e00f60c3ab321dd6d293ec24e1e33751c6788b110fc7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106223939"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208738"
 ---
 # <a name="tutorials"></a>教學課程
 

@@ -1,6 +1,6 @@
 ---
-title: Windows Mixed Reality PC Check 應用程式
-description: 如何在購買 Windows Mixed Reality 耳機之前，尋找並使用 Windows Mixed Reality PC Check 應用程式來測試電腦的相容性。
+title: Windows Mixed Reality電腦檢查應用程式
+description: 如何在購買 Windows Mixed Reality 耳機之前，尋找並使用 Windows Mixed Reality pc 檢查應用程式來測試電腦的相容性。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,16 +8,16 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、相容、相容性、電腦、系統需求
 appliesto:
 - Windows 10
-ms.openlocfilehash: 6dc187b14950f1446fd5e60c3e6db10fd2c3ce25
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 463e7dfc2c95ed9efc70a87ebbb0dac08b134251401a1114f3b9a364aa197073
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725429"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188040"
 ---
-# <a name="windows-mixed-reality-pc-check-app"></a>Windows Mixed Reality PC Check 應用程式
+# <a name="windows-mixed-reality-pc-check-app"></a>Windows Mixed Reality電腦檢查應用程式
 
-**[Windows Mixed Reality PC Check](https://www.microsoft.com/store/p/windows-mixed-reality-pc-check/9nzvl19n7cnc)** 應用程式是確保您的電腦已準備好執行 Windows Mixed Reality 的最佳方式。 Windows Mixed Reality PC Check 應用程式僅適用于至少安裝 Windows 10 1607 版的電腦。 若要檢查您的 Windows 版本，請在搜尋列中輸入 "winver"，然後執行命令。 針對早于1607的 Windows 10 版本，應用程式仍會顯示在存放區中，但您會在嘗試安裝時收到錯誤。
+**[Windows Mixed Reality pc 檢查](https://www.microsoft.com/store/p/windows-mixed-reality-pc-check/9nzvl19n7cnc)** 應用程式是確保您的電腦已準備好執行 Windows Mixed Reality 的最佳方式。 Windows Mixed Reality PC 檢查應用程式僅適用于至少已安裝 Windows 10 1607 版的電腦。 若要檢查您的 Windows 版本，請在搜尋列中輸入 "winver"，然後執行命令。 針對早于1607的 Windows 10 版本，應用程式仍會顯示在存放區中，但您會在嘗試安裝時收到錯誤。
 
 <a href="https://www.microsoft.com/store/productid/9NZVL19N7CNC"><img alt="Download Windows Mixed Reality PC Check app" src="images/WMR-PC-Check-app.png"/></a>
 
@@ -28,7 +28,7 @@ ms.locfileid: "97725429"
 * **無法執行混合的事實。** 此電腦不符合執行 Windows Mixed Reality 所需的最低需求。
 
 然後，您將會針對所需的硬體、驅動程式和作業系統，取得電腦的分析。
-![Windows Mixed Reality PC Check 的螢幕擷取畫面](images/screenshot-mr-pc-check.jpg) 
+![Windows Mixed Reality 電腦檢查的螢幕擷取畫面](images/screenshot-mr-pc-check.jpg) 
 
 <table>
 <tr>
@@ -42,9 +42,9 @@ ms.locfileid: "97725429"
 </tr>
 </table>
 
-## <a name="get-help-with-windows-mixed-reality-pc-check-results"></a>取得 Windows Mixed Reality PC Check 結果的協助
+## <a name="get-help-with-windows-mixed-reality-pc-check-results"></a>取得 Windows Mixed Reality 電腦檢查結果的協助
 
-當您在電腦上設定 Windows Mixed Reality 或執行 Windows Mixed Reality PC Check 應用程式時，將會收到相容性報告。 以下是您可能會看到的一些詳細資料。
+當您在電腦上設定 Windows Mixed Reality 或執行 Windows Mixed Reality PC 檢查應用程式時，將會收到相容性報告。 以下是您可能會看到的一些詳細資料。
 
 ### <a name="youre-good-to-go"></a>![您已經準備好了](images/glyph-succeeded.png)
 
@@ -73,13 +73,13 @@ PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器
 
 #### <a name="this-pcs-graphics-driver-might-not-work-well-with-windows-mixed-reality"></a>此電腦的圖形驅動程式可能無法搭配 Windows Mixed Reality
 
-如果您遇到問題，請嘗試使用 Windows Update 下載新的圖形驅動程式 (**啟動 > 設定 > 更新 & 安全性 > 檢查更新**) -或移至您的電腦製造商或圖形配接器製造商的網站。
+如果您遇到問題，請嘗試使用 Windows Update 下載新的圖形驅動程式 (**開始 > 設定 > 更新 & 安全性 > 檢查更新**) -或移至您的電腦製造商或圖形配接器製造商的網站。
 
 如果無法運作，您將需要新增 [相容的圖形配接器](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 或切換至 [相容的電腦](https://www.microsoft.com/windows/windows-mixed-reality-devices)。
 
 #### <a name="this-pcs-processor-might-not-work-well-with-windows-mixed-reality"></a>此電腦的處理器可能無法搭配 Windows Mixed Reality
 
-此電腦的處理器可能無法與 Windows Mixed Reality 搭配運作，因為它沒有足夠的核心。 如果 Windows Mixed Reality 無法正常執行，請更新為 [相容](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 的電腦，或切換至 [相容的電腦](https://www.microsoft.com/windows/windows-mixed-reality-devices)。
+此電腦的處理器可能無法與 Windows Mixed Reality 搭配運作，因為它沒有足夠的核心。 如果 Windows Mixed Reality 無法正常執行，請更新為[相容](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)的電腦，或切換至[相容的電腦](https://www.microsoft.com/windows/windows-mixed-reality-devices)。
 
 #### <a name="this-pc-might-not-have-a-compatible-usb-configuration"></a>這部電腦可能沒有相容的 USB 設定
 
@@ -97,7 +97,7 @@ PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器
 1. 返回裝置管理員，然後再次找出可延伸的主機控制器專案。 如果您現在在裝置名稱的結尾看到「Microsoft」，您就可以開始了。 如果沒有，請重複執行卸載步驟，以移除任何其他非 Microsoft 版本的驅動程式。
 * 如果仍然無法運作，請將 PCIe USB 卡新增至您的電腦。
 
-#### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>這部電腦沒有藍牙4.0 適用于控制器。
+#### <a name="this-pc-doesnt-have-bluetooth-40-for-controllers"></a>這部電腦沒有適用于控制器的藍牙4.0。
 
 #### <a name="this-pc-doesnt-have-a-self-powered-usb-port"></a>這部電腦沒有自我供電的 USB 埠。
 
@@ -105,4 +105,4 @@ PCIe 代表 *周邊元件連接 Express*。 這是電腦用來與圖形配接器
 
 ### <a name="cant-run-mixed-reality"></a>![無法執行混合現實](images/glyph-error.png)
 
- [取得 Windows Mixed Reality PC Check 結果的協助](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)
+ [取得 Windows Mixed Reality 電腦檢查結果的協助](https://support.microsoft.com/en-us/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality)

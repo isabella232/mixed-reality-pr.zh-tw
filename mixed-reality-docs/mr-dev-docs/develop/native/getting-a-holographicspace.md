@@ -5,13 +5,13 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows Mixed Reality、HolographicSpace、CoreWindow、空間輸入、轉譯、交換鏈、全像攝影框架、更新迴圈、遊戲迴圈、參考框架、locatability、範例程式碼、逐步解說、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 215c3cbacd4c7975d05b3a1b3f3992c9198642f7
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality、HolographicSpace、CoreWindow、空間輸入、轉譯、交換鏈、全像攝影框架、更新迴圈、遊戲迴圈、參考框架、locatability、範例程式碼、逐步解說、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 986ccdc6e81d1ac7c7b401a427da548218a68eb0352a0057bf7d7aba3c1d6d6a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580912"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212166"
 ---
 # <a name="getting-a-holographicspace"></a>取得 HolographicSpace
 
@@ -137,9 +137,9 @@ m_cameraRemovedToken = m_holographicSpace.CameraRemoved(
 
 您應用程式的內容必須放置在要在 HolographicSpace 中轉譯的 [空間座標系統](coordinate-systems-in-directx.md) 中。 系統提供兩個主要的參考框架，您可以用來建立您的全像影像的座標系統。
 
-Windows 內建的參考框架有兩種：連結至裝置的參考框架，以及裝置在使用者的環境中移動時仍保持靜止的參考框架。 全像「全像」應用程式範本預設會使用固定的參考框架;這是呈現全球鎖定的全像是最簡單的方式之一。
+Windows 全息版中有兩種參考框架：連結至裝置的參考框架，以及裝置在使用者的環境中移動時仍保持靜止的參考框架。 全像「全像」應用程式範本預設會使用固定的參考框架;這是呈現全球鎖定的全像是最簡單的方式之一。
 
-固定的參考框架是針對裝置目前位置附近的穩定位置所設計。 這表示，從裝置進一步的座標可能會稍微偏離使用者的環境，因為裝置會深入瞭解它周圍的空間。 有兩種方式可以建立固定的參考框架：從 [空間階段](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)取得座標系統，或使用預設 <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>。 如果您要建立沉浸式耳機的 Windows Mixed Reality 應用程式，建議的起點是 [空間階段](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)。 空間階段也會提供玩家所磨損之沉浸式耳機功能的相關資訊。 在這裡，我們會示範如何使用預設 <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>。
+固定的參考框架是針對裝置目前位置附近的穩定位置所設計。 這表示，從裝置進一步的座標可能會稍微偏離使用者的環境，因為裝置會深入瞭解它周圍的空間。 有兩種方式可以建立固定的參考框架：從 [空間階段](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)取得座標系統，或使用預設 <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>。 如果您要建立沉浸式耳機的 Windows Mixed Reality 應用程式，建議的起點是[空間階段](coordinate-systems-in-directx.md#place-holograms-in-the-world-using-a-spatial-stage)。 空間階段也會提供玩家所磨損之沉浸式耳機功能的相關資訊。 在這裡，我們會示範如何使用預設 <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>。
 
 空間定位器代表 Windows Mixed Reality 裝置，並會追蹤裝置的動作，並提供可理解的座標系統（相對於其位置）。
 

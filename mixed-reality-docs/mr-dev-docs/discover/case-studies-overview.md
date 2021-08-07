@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 08/24/2019
 ms.topic: overview
-keywords: Windows Mixed Reality、HoloLens、個案研究、願景、情節、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 696223d2c5d122a1b1c092a2769d27ac0e94046c
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+keywords: Windows Mixed Reality、HoloLens、個案研究、願景、案例、個案研究、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: a9a2cc3ed32d6a0f28a639fbbbb468930941e47afc5b8a0d35bb43b2c86144ff
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104895153"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209906"
 ---
 # <a name="case-study-gallery"></a>案例研究資源庫
 
@@ -29,7 +29,7 @@ ms.locfileid: "104895153"
         *2017 年 8 月*
     :::column-end:::
     :::column:::
-       [ ![ 打造 HoloSketch、適用于 hololens 大樓 HoloSketch 的空間配置和 ux 草圖應用程式](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[、空間配置，以及適用于 hololens 的 ux 草圖應用程式](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
+       [ ![ 建立 HoloSketch，這是一個空間配置和 ux 草圖應用程式，用於 HoloLens](images/holosketch-image-01-640px.png)](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md) **[建立 HoloSketch、空間配置，以及適用于 HoloLens 的 ux 草繪應用程式](../out-of-scope/case-study-building-holosketch,-a-spatial-layout-and-ux-sketching-app-for-hololens.md)**<br>
         HoloSketch 是適用于 HoloLens 的裝置空間配置和 UX 草圖工具，可協助打造全像攝影體驗。<br>
          *2017 年 7 月*
     :::column-end:::
@@ -42,13 +42,13 @@ ms.locfileid: "104895153"
         *2017 年 4 月*
     :::column-end:::
     :::column:::
-       [ ![ 擴充 hololens 的空間對應功能](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)，以 **[擴充 hololens 的空間對應功能](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)**<br>
+       [ ![ 擴充 HoloLens](images/away-from-camera-position-500px.png)](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md) **[擴充 HoloLens 空間對應功能](../out-of-scope/case-study-expanding-the-spatial-mapping-capabilities-of-hololens.md)的空間對應功能**<br>
         當您建立第一個 Microsoft HoloLens 的應用程式時，我們會積極地查看我們可以在裝置上推送空間對應界限的程度。<br>
         *2016 年 12 月*
     :::column-end:::
     :::column:::
        來自 Lowe 廚房的 [ ![ Lowe 廚房](images/lowes.jpg)](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md) **[課程](../out-of-scope/case-study-lessons-from-the-lowes-kitchen.md)課程**<br>
-        HoloLens 團隊想要分享衍生自 Lowe HoloLens 專案的一些最佳作法。<br>
+        HoloLens 團隊想要分享衍生自 Lowe 的 HoloLens 專案的一些最佳作法。<br>
         *2016 年 9 月*
     :::column-end:::
 :::row-end:::
@@ -61,7 +61,7 @@ ms.locfileid: "104895153"
     :::column-end:::
     :::column:::
        [ ![ 3 HoloStudio ui 和互動設計學習](images/thought-bubble-500px.jpg)](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md) **[3 HoloStudio ui 和互動設計學習](../out-of-scope/case-study-3-holostudio-ui-and-interaction-design-learnings.md)**<br>
-        HoloStudio 是適用于 HoloLens 的第一個應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過使用者測試、原型設計和試用和錯誤來完成此操作。<br>
+        HoloStudio 是 HoloLens 的第一個應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過使用者測試、原型設計和試用和錯誤來完成此操作。<br>
         *2016 年 7 月*
     :::column-end:::
     :::column:::
@@ -82,7 +82,7 @@ ms.locfileid: "104895153"
     :::column-end:::
     :::column:::
        [ ![ HoloLens 2](../develop/unity/images/ge-update-interactions-concept-force-grab.png)](../develop/unity/galaxy-explorer-update.md) galaxy explorer 進行 **[HoloLens 2](../develop/unity/galaxy-explorer-update.md)的工作**<br>
-        歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 Galaxy Explorer 最初開發為 HoloLens (第一代) 的開放原始碼應用程式，並透過分享您的構想方案，而且是許多人的第一個混合現實體驗。 現在我們要更新 HoloLens 2 的新功能。<br>
+        歡迎使用我們更新 HoloLens 2 的 Galaxy Explorer 的旅程。 Galaxy Explorer 最初是以開放原始碼應用程式的形式開發，可透過「分享您的構想」方案來 HoloLens (第一代) ，也是許多人的第一個混合現實體驗。 現在我們要更新 HoloLens 2 的新功能。<br>
         *2019 年 6 月*
     :::column-end:::
     :::column:::
@@ -93,17 +93,17 @@ ms.locfileid: "104895153"
 
 ## <a name="holotour"></a>HoloTour
 
-HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人導覽。 當設計人員、演出者、生產者、音訊設計工具和開發人員參與此專案時，為已知位置建立 convincingly 的實際3D 轉譯，會採用獨特的創意與技術 wizardry 融合。
+HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3d 個人導覽。 當設計人員、演出者、生產者、音訊設計工具和開發人員參與此專案時，為已知位置建立 convincingly 的實際3D 轉譯，會採用獨特的創意與技術 wizardry 融合。
 
 :::row:::
     :::column:::
        適用于 HoloTour 之 HoloTour 空間音效設計 [ ![ 的空間音效設計](../out-of-scope/images/recreated-colosseum-holotour-500px.png)](../design/case-study-spatial-sound-design-for-holotour.md) **[](../design/case-study-spatial-sound-design-for-holotour.md)**<br>
-        若要為 Microsoft HoloLens 建立真正的沉浸式3D 虛擬導覽，全景影片和全像攝影景象只是公式的一部分。<br>
+        若要為 Microsoft HoloLens 建立真正的沉浸式3d 虛擬導覽，全景影片和全像攝影景象只是公式的一部分。<br>
          *2016 年 8 月*
     :::column-end:::
     :::column:::
        [ ![ 針對 HoloTour](../out-of-scope/images/rome-colosseum-overlay-500px.png)](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)建立不可能的觀點來 **[HoloTour](../out-of-scope/case-study-creating-impossible-perspectives-for-holotour.md)**<br>
-        我們想要在 HoloTour 中難忘您的體驗。 除了傳統旅遊停止時，我們還計畫了一些「不可能的觀點」。<br>
+        我們希望您的 HoloTour 體驗成為難忘的 HoloLens。 除了傳統旅遊停止時，我們還計畫了一些「不可能的觀點」。<br>
         *2016 年 8 月*
     :::column-end:::
     :::column:::
@@ -127,7 +127,7 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
     :::column-end:::
     :::column:::
        [ ![ 查看](../develop/unity/images/roboraid-640px.png)](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)您現實中的漏洞， **[查看實際的漏洞](../out-of-scope/case-study-looking-through-holes-in-your-reality.md)**<br>
-        此案例研究說明如何在 HoloLens 上實行「魔術視窗」效果，讓使用者可以在其實際環境內的幕後、下面和虛擬的進入範圍內查看。<br>
+        此案例研究說明如何在 HoloLens 上執行「魔術視窗」效果，讓使用者可以在其實際環境內的幕後、下面和虛擬的進入範圍內查看。<br>
         *2016 年 2 月*
     :::column-end:::
     :::column:::
@@ -147,8 +147,8 @@ HoloTour for Microsoft HoloLens 提供全球 iconic 地點的沉浸式3D 個人�
          *2017 年 11 月*
     :::column-end:::
     :::column:::
-       [ ![ 我](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)在 hololens 設計團隊第一年的第一年 **[](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)**<br>
-        當我在2016年1月加入 HoloLens 設計小組時，從 2D flatland 到3D 世界的旅程已開始。<br>
+       我第一 [ ![ 年的 HoloLens 設計](../develop/unity/images/MotionController.jpg)](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)團隊在 **[HoloLens 設計團隊的第](../out-of-scope/case-study-my-first-year-on-the-hololens-design-team.md)一年**<br>
+        當我在2016年1月加入 HoloLens 設計小組時，從 2d flatland 到3d 世界的旅程已開始。<br>
         *2016 年 1 月*
     :::column-end:::
     :::column:::

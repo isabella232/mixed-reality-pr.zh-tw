@@ -5,16 +5,16 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 6c8e060af585d7994774ea0bb575b6e5172b9558
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 50128100d058b5ec3bca7eac523c78287ce657925c3ac116e4336174e34e75c8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211174"
 ---
 # <a name="performance"></a>效能
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 將效能合理化的最簡單方式是透過畫面播放速率，或應用程式每秒可轉譯影像的次數。 請務必符合目標的畫面播放速率，如目標平臺所述 (例如： [Windows Mixed Reality](/windows/mixed-reality/understanding-performance-for-mixed-reality)、 [Oculus](https://developer.oculus.com/documentation/pcsdk/latest/concepts/dg-performance-guidelines/)等) 。 例如，在 HoloLens 上，目標畫面播放速率是 60 FPS。 低幀率的應用程式可能會導致日益惡化使用者體驗， [例如惡化全](../performance/hologram-stabilization.md)像、世界追蹤、手追蹤等。 為了協助開發人員追蹤和達成品質的畫面播放速率，Mixed Reality 工具組提供各種不同的工具和腳本。
 

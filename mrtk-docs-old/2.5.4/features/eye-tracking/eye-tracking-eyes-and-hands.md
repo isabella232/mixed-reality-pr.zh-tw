@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 4cebcc5bde97f35d17d7f26233af2c2a140458e1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d2bc65f3fb26c0df6985f83ee4cecdaa94bb5ff9bca62a7c3c863faf4a5c5d07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685431"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212722"
 ---
 # <a name="eyes--hand-interaction"></a>眼睛 + 手互動
 

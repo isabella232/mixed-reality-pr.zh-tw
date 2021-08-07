@@ -7,12 +7,12 @@ ms.date: 05/15/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
-ms.openlocfilehash: 69b7bbf073e278c17be42241e8c6e3a47be60ee9
-ms.sourcegitcommit: 1c9035487270af76c6eaba11b11f6fc56c008135
+ms.openlocfilehash: 6d9e43a3e5ef59226dc6396de46d1295181c07f950ab9255eaf8503f973a2f43
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/13/2021
-ms.locfileid: "107300443"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187641"
 ---
 # <a name="introducing-mrtk-for-unity"></a>適用於 Unity 的 MRTK 簡介
 
@@ -54,7 +54,7 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 ## <a name="see-also"></a>另請參閱
 
 * [安裝工具](../install-the-tools.md)
-* [混合現實功能工具](welcome-to-mr-feature-tool.md)
+* [混合實境功能工具](welcome-to-mr-feature-tool.md)
 * [使用 MRTK for Unity 進行開發](unity-development-overview.md)
 * [MRTK-檔首頁](/windows/mixed-reality/mrtk-unity/)
 * [從 HoloToolkit/MRTK 移植至 MRTK 第2版](/windows/mixed-reality/mrtk-unity/updates-deployment/htk-to-mrtk-porting-guide)

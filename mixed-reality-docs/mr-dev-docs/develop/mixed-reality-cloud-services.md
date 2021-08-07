@@ -8,12 +8,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, 雲端服務, Azure, 遠端轉譯, 空間錨點, 認知服務, 認知, unity, 機器學習, 語音翻譯, 電腦視覺, Microsoft Graph
-ms.openlocfilehash: b9e89174f3f4b0aca268d81513ea7e3537f79629
-ms.sourcegitcommit: ac315c1d35f2b9c431e79bc3f1212215301bb867
+ms.openlocfilehash: ac4ce3d1bef426682450da69e9c8ffcd9e317e2a7853365e1af082a1913e1ecc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/25/2021
-ms.locfileid: "105550138"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189007"
 ---
 # <a name="azure-mixed-reality-cloud-services-overview"></a>Azure 混合實境雲端服務概觀
 
@@ -66,7 +66,7 @@ Azure 空間錨點是唯一量身打造的解決方案，適用于混合現實�
 * 適用於 iOS 的 Xamarin
 * 適用於 Android 的 Xamarin
 
-### <a name="azure-object-anchors"></a>Azure 物件錨點
+### <a name="azure-object-anchors"></a>Azure Object Anchors
 
 [Azure 物件錨點](/azure/object-anchors/)（或 AOA）是一項混合現實服務，可透過自動將3d 內容與實體物件對齊，來協助您建立豐富的沉浸式體驗。 取得物件的內容理解，而不需要標記或手動對齊。 藉由使用物件錨點建立混合的現實應用程式，省下大量觸控人力、減少對齊錯誤，以及改善使用者體驗。
 

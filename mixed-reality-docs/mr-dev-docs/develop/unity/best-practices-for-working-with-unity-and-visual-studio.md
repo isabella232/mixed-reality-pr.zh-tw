@@ -1,21 +1,21 @@
 ---
 title: Unity 和 Visual Studio 的最佳作法
-description: 使用 Unity 和 Visual Studio 來簡化建立混合現實應用程式之工作流程的秘訣和訣竅。
+description: 提示和訣竅，以利用 Unity 和 Visual Studio 簡化建立混合現實應用程式的工作流程。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 部署、unity、visual studio、HoloLens、HoloLens 2、沉浸式耳機、最佳作法、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP、Visual Studio Tools Windows SDK
-ms.openlocfilehash: edd79b95d02cfeb1da4effc485fc57078e3d24a3
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: cc1ef6448ebabd1729dbe056cdccc40ab7444466701094cc942f2a20fbe81a65
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042259"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186878"
 ---
 # <a name="best-practices-for-working-with-unity-and-visual-studio"></a>使用 Unity 和 Visual Studio 的最佳作法
 
-當您使用 Unity 建立混合現實應用程式時，您需要在 Unity 與 Visual Studio 之間切換，以建立應用程式套件，並將其部署到 HoloLens 或沉浸式耳機。 根據預設，需要 Visual Studio 的兩個實例-一個可修改 Unity 腳本的實例，另一個則是要部署至裝置和偵錯工具。 下列指示可讓您使用單一 Visual Studio 實例進行開發，減少匯出 Unity 專案的頻率，並改善偵錯工具的體驗。
+當您使用 unity 建立混合現實應用程式時，您需要在 unity 和 Visual Studio 之間切換，以建立應用程式套件，並將其部署至 HoloLens 或沉浸式耳機。 根據預設，需要 Visual Studio 的兩個實例-一個可修改 Unity 腳本的實例，另一個則是要部署至裝置和偵錯工具。 下列指示可讓您使用單一 Visual Studio 實例進行開發，減少匯出 Unity 專案的頻率，並改善偵錯工具的體驗。
 
 ## <a name="improving-iteration-time"></a>改善反復專案時間
 
@@ -24,7 +24,7 @@ Unity 中的 .NET 腳本後端支援已在 Unity 2018 中淘汰並從 Unity 2019
 1) 每次在相同的目錄中建立您的專案，並在該處重複使用預先建立的檔案，藉以使用增量建立
 2) 針對您的專案停用反惡意程式碼軟體掃描 & 組建資料夾
    - 在您的 Windows 10 設定應用程式下開啟 **病毒 & 威脅防護**
-   - 選取 [**病毒 & 威脅防護設定**] 下的 [**管理設定**]
+   - 選取 [**病毒 & 威脅防護設定**] 下的 [**管理設定**
    - 選取 [**排除**] 區段底下的 [**新增或移除排除** 專案]
    - 選取 [ **新增排除** ]，然後選取包含 Unity 專案程式碼和組建輸出的資料夾
 3) 使用 SSD 來建立
@@ -35,11 +35,11 @@ Unity 中的 .NET 腳本後端支援已在 Unity 2018 中淘汰並從 Unity 2019
 
 ## <a name="visual-studio-tools-for-unity"></a>Visual Studio Tools for Unity
 
-下載 [Visual Studio Tools for Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
+下載[Visual Studio Tools for Unity](/visualstudio/cross-platform/getting-started-with-visual-studio-tools-for-unity)
 
 **Visual Studio Tools for Unity 的優點**
 * 藉由放置中斷點、評估變數和複雜運算式，從 Visual Studio 中調試 Unity in 編輯器播放模式。
-* 使用 Unity Project Explorer 找出您的腳本，其與 Unity 所顯示的完全相同階層。
+* 使用 unity Project Explorer 來尋找您的腳本，其與 Unity 所顯示的完全相同階層。
 * 直接在 Visual Studio 內取得 Unity 主控台。
 * 使用 [嚮導] 快速建立或流覽至腳本。
 
@@ -55,7 +55,7 @@ Unity 中的 .NET 腳本後端支援已在 Unity 2018 中淘汰並從 Unity 2019
 
 ## <a name="use-text-format-assets-for-easy-comparison-of-content-changes"></a>使用文字格式資產來輕鬆比較內容變更
 
-以文字格式儲存資產可讓您更輕鬆地查看 Visual Studio 中的內容變更差異。 您可以選取 [ **編輯 > 專案設定] > 編輯器** ，並變更 **資產序列化** 模式來 **強制文字**，以將資產儲存成文字格式。 不過，合併文字資產檔案變更很容易出錯且不建議使用，因此請考慮在原始檔控制中啟用獨佔二進位簽出。
+以文字格式儲存資產可讓您更輕鬆地查看 Visual Studio 中的內容變更差異。 您可以選取 [**編輯] > Project 設定 > 編輯器**，並變更 **資產序列化** 模式來 **強制文字**，來儲存文字格式的資產。 不過，合併文字資產檔案變更很容易出錯且不建議使用，因此請考慮在原始檔控制中啟用獨佔二進位簽出。
 
 ## <a name="see-also"></a>另請參閱
 - [Visual Studio Tools for Unity](https://visualstudiogallery.msdn.microsoft.com/8d26236e-4a64-4d64-8486-7df95156aba9)

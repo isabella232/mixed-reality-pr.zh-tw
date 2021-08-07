@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR 攝影機、
-ms.openlocfilehash: e1c032805bc4b733cfcc51e1ceac5096c73715cf
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: a2d145823557b473bd7d34170b283e782151c24277b8f16586516ffe78f8e735
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121196"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210060"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Unity AR 相機設定提供者
 
@@ -32,7 +32,7 @@ Unity AR 攝影機設定提供者可以設定如何執行追蹤的設定選項�
 
 下表說明可用的選項。
 
-| 選項 | 描述 |
+| 選項 | Description |
 | --- | --- |
 | Center | 前端掛接裝置的中心眼睛。 |
 | 彩色相機 | 行動裝置的色彩相機。 |
@@ -50,7 +50,7 @@ Unity AR 攝影機設定提供者可以設定如何執行追蹤的設定選項�
 
 下表說明可用的選項。
 
-| 選項 | 描述 |
+| 選項 | Description |
 | --- | --- |
 | 位置 | 裝置的位置。 |
 | 旋轉 | 裝置的旋轉。 |
@@ -64,7 +64,7 @@ Unity AR 攝影機設定提供者可以設定如何執行追蹤的設定選項�
 
 下表說明可用的選項。
 
-| 選項 | 描述 |
+| 選項 | Description |
 | --- | --- |
 | 轉譯前 | 緊接在轉譯之前。 |
 | 更新 | 在框架的更新階段。 |

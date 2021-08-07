@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 04/19/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 5a914d6408d346dac0bf6c683f401564e875f4d8
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: a5d1e914fcbc44572e06c1fc3cbaba7ea0363287b9e670a423a4e63b17cb20a6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175098"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210614"
 ---
 # <a name="updating-from-earlier-versions"></a>從較早的版本更新
 
@@ -253,10 +253,10 @@ ShellHandRayPointer 類別的 lineRendererSelected 和 lineRendererNoTarget 成�
 下列 prefabs 現在使用 PressableButton 元件，而不是 TouchHandler 接近互動 ([7070](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/7070)) 
 
 - AnimationButton
-- 按鈕
+- Button
 - ButtonHoloLens1
 - ButtonHoloLens1Toggle
-- 核取方塊
+- CheckBox
 - RadialSet
 - ToggleButton
 - ToggleSwitch

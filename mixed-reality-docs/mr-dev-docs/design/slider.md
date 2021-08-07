@@ -1,17 +1,17 @@
 ---
-title: 滑桿
+title: Slider
 description: 瞭解如何使用滑杆 UI 元件，藉由使用「混合現實」工具組移動播放軌上的旋鈕或杠杆來設定值。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、滑杆、MRTK、混合現實工具組
-ms.openlocfilehash: c1619a90b7df1a34fa1541663a3f521ba5e75662
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 5d07960566630afac0addd10585d885f33a80b46613c1a9f19374c9afa71bd7e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186910"
 ---
 # <a name="slider"></a>Slider
 

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、手勢、
-ms.openlocfilehash: 7bbc97ab5e23a69356d523c463aa37c013d70337
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: db6be5845c11efd5bfb199db9c53c867ea315f65bff0a799cd6bf63b9c50a3d1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209160"
 ---
 # <a name="gestures"></a>軌跡
 

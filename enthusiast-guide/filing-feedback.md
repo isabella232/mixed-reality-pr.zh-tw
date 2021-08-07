@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9237a9e4d537a15ffe4369d589e1fd80e3881891
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: b4ba5cf16aec84fa6c34ae2454ebfefa56512a04e4845dee0c3c894c4976cc53
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188940"
 ---
 # <a name="filing-bugs-and-feedback"></a>提出錯誤及意見反應
 
@@ -25,9 +25,9 @@ ms.locfileid: "97725689"
 
 確定您的電腦已設定為提供我們完整的意見反應與診斷資料。 以下是在提出意見反應之前，如何再次檢查電腦上的設定：
 
-1. 開啟 [Windows **設定** ] 應用程式。
+1. 開啟 Windows **設定** 應用程式。
 2. 選取 [ **隱私權**]。
-3. 移至左側窗格中的 [ **意見 & 診斷** ]，其已重新命名為 [診斷]，& 最 Windows 測試人員新的 Windows 組建中的 **意見** 反應。
+3. 移至左側窗格中的 [**意見 & 診斷**]，其已重新命名為 [診斷]，& Windows 最新的 Windows 測試人員組建中的 **意見** 反應。
 4. 在 [ **選取您傳送給 Microsoft 的資料量**] 底下，選取 [ **完整** ] （如果尚未選取）。
 5. 請務必重新開機您的電腦，並重複這些步驟，以在提出意見之前重現您的問題。
 
@@ -42,7 +42,7 @@ ms.locfileid: "97725689"
 7. 在 [ **提供給我們更多詳細資料** ] 方塊中提供重現問題的詳細資料和步驟。
 8. 選取 [ **混合現實** ] 作為最上層類別，然後挑選適用的子類別：
 
-   | 子類別      | 描述                                                                           |
+   | 子類別      | Description                                                                           |
    |------------------|---------------------------------------------------------------------------------------|
    | 應用程式             | 特定應用程式的問題。                                                   |
    | 開發人員        | 撰寫/執行混合現實的應用程式時遇到問題。                               |
@@ -70,6 +70,6 @@ ms.locfileid: "97725689"
 
 在提出意見反應之後，請務必定期向意見反應中樞回來查看！ 在大部分的情況下，我們會嘗試儘快回應。 如果您未在提出意見反應時與我們聯繫，我們可以透過意見反應中樞中的批註系統，與您聯繫以取得疑難排解建議或更多問題的唯一方法。 可惜的是，此時不會將通知傳送給您意見反應中樞以外的時間。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [疑難排解](troubleshooting-windows-mixed-reality.md)

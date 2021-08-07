@@ -1,6 +1,6 @@
 ---
 title: 購買之前-常見問題
-description: 在購買 Windows Mixed reality 耳機和相容電腦之前，可能會有的常見問題解答。
+description: 在購買 Windows 的混合現實耳機和相容電腦之前，潛在購買者可能會遇到的常見問題答案。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: 在購買之前，Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、預先銷售、研究、購買
 appliesto:
 - Windows 10
-ms.openlocfilehash: 82ae2af5a8edd60317ba7d7c343c80a25b226301
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 180269a86bbe5133944411b42c79018ca1e81d07d407bcbc11a9787408674740
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196613"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188008"
 ---
 # <a name="before-you-buy-frequently-asked-questions"></a>購買常見問題之前
 
@@ -21,11 +21,11 @@ ms.locfileid: "110196613"
 
 ### <a name="where-can-i-buy-a-windows-mixed-reality-ready-pc-or-headset"></a>我可以在哪裡購買 Windows Mixed Reality ready 的電腦或耳機
 
-**快速解答：** 您可以在核准的當地零售商或從不同零售商（包括 Microsoft Store）的線上購買 Windows Mixed Reality ready 的電腦或耳機。 尋找 Windows Mixed Reality ready PC 或線上耳機： <https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
+**快速解答：** 您可以在核准的當地零售商或從不同零售商（包括 Microsoft Store）的線上購買 Windows Mixed Reality ready 的電腦或耳機。 尋找 Windows Mixed Reality ready PC 或線上耳機：<https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1>
 
 ### <a name="where-can-i-try-windows-mixed-reality"></a>我可以在哪裡嘗試 Windows Mixed Reality
 
-**快速解答：** 您可以在您附近的 [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet) 嘗試 Windows Mixed Reality。
+**快速解答：** 您可以在您附近的 [Microsoft Reactor](https://developer.microsoft.com/reactor/?WT.mc_id=docs-faq-ayyonet)嘗試 Windows Mixed Reality。
 
 * 在 Meetup.com 上尋找 Microsoft Reactor 活動： <https://www.meetup.com/pro/microsoft-reactor>
 
@@ -39,17 +39,17 @@ ms.locfileid: "110196613"
 
 ### <a name="what-is-the-difference-between-a-windows-mixed-reality-pc-and-a-windows-mixed-reality-ultra-pc"></a>Windows Mixed Reality 電腦與 Windows Mixed Reality Ultra 電腦之間的差異為何
 
-**快速解答：** Windows Mixed Reality 電腦和 Ultra 電腦的詳細資料可在這裡獲得： <https://aka.ms/mrcompat>
+**快速解答：** Windows Mixed Reality 電腦和 Ultra 電腦的詳細資料可在這裡獲得：<https://aka.ms/mrcompat>
 
-### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>為什麼當裝置看起來像是 Windows 的「混合式事實」時，這會提供「虛擬實境」體驗
+### <a name="why-is-this-called-windows-mixed-reality-when-the-devices-look-like-they-provide-a-virtual-reality-experience"></a>當裝置看起來像是「虛擬實境」體驗時，為什麼這稱為「混合現實」 Windows
 
-**快速解答：** Mixed Reality 指的是完整的空間運算範圍，從增強的現實和全像是虛擬生活。 Windows Mixed Reality 平臺可支援跨虛擬實境的裝置 (VR) 和增強的現實 (AR) 。 我們目前在該頻譜上支援兩種具有類似技術的裝置類型： HoloLens (AR) 和 Windows Mixed Reality (的 VR) 耳機與移動控制器一起使用。
+**快速解答：** Mixed Reality 指的是完整的空間運算範圍，從增強的現實和全像是虛擬生活。 Windows Mixed Reality 平臺可支援跨虛擬實境的裝置 (VR) 和增強的現實 (AR) 。 我們目前在該頻譜上支援兩種具有類似技術的裝置類型： HoloLens (AR) ，並 Windows Mixed Reality 使用運動控制器 (VR) 耳機。
 
 在此深入瞭解混合現實： <https://docs.microsoft.com/windows/mixed-reality/mixed-reality>
 
 ### <a name="what-is-the-difference-between-windows-mixed-reality-and-other-vr-headsets"></a>Windows Mixed Reality 與其他的 VR 耳機之間有何差異
 
-**快速解答：** Windows Mixed Reality 耳機功能 (追蹤攝影機位於耳機) ，以及 Windows 10 的隨插即用安裝。
+**快速解答：** Windows Mixed Reality 耳機功能 (追蹤相機位於耳機) ，以及 Windows 10 的隨插即用安裝。
 
 **更多詳細資料**： Windows Mixed Reality 提供數個功能，包括簡單的安裝 (不需要外部感應器來追蹤您和您的控制器) 、您選擇的耳機可符合您的舒適和價位、具有競爭解決方案的耳機，最後是功能空間介面的獨特使用者體驗，可讓您從 Microsoft Store 使用數以千計的應用程式。
 
@@ -59,7 +59,7 @@ ms.locfileid: "110196613"
 
 ### <a name="what-is-inside-out-tracking-how-is-it-different-than-outside-in-tracking-or-lighthouse-tracking"></a>什麼是內部追蹤追蹤？ 它與外部追蹤或 lighthouse 追蹤有何不同
 
-* **內部追蹤** Windows Mixed Reality、Oculus 的執行，以及 Vive/索引系統都會使用內部輸出追蹤。 使用內建的追蹤攝影機內建在耳機中，並追蹤環境中的變更，以根據您移動時的環境判斷耳機的位置。 有些系統（例如 HTC Vive 和閥門指數）使用紅外線感應器，而不是相機，並相依于外部的 "lighthouses" 或 "base 電臺"，以投射紅外線來追蹤其環境。
+* **內部追蹤** Windows Mixed Reality、Oculus 的執行，以及 Vive/索引系統使用內部追蹤追蹤。 使用內建的追蹤攝影機內建在耳機中，並追蹤環境中的變更，以根據您移動時的環境判斷耳機的位置。 有些系統（例如 HTC Vive 和閥門指數）使用紅外線感應器，而不是相機，並相依于外部的 "lighthouses" 或 "base 電臺"，以投射紅外線來追蹤其環境。
 
 * **外部追蹤** Oculus Rift 和 PlayStation VR 等系統會使用外部追蹤。  使用外部追蹤時，會由一或多個外部裝置追蹤耳機。 相機 (s) 內建在環境內的這些外部裝置內，用來根據環境判斷耳機的位置。
 
@@ -67,11 +67,11 @@ ms.locfileid: "110196613"
 
 ### <a name="can-inside-out-tracking-of-motion-controllers-impact-my-game-play-due-to-camera-fov"></a>可能會因為相機 FOV 而影響遊戲的播放，追蹤動作控制器
 
- 如同耳機，Windows Mixed Reality 的動作控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。 如果使用者將控制器移出耳機的觀賞欄位，在大部分情況下，Windows 會繼續推斷控制器位置，並將其提供給應用程式。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。 此時，系統會將控制器主體鎖定給使用者，在移動時追蹤使用者的位置，同時仍會使用其內部方向感應器來公開控制器的真實方向。 許多使用控制器來指向和啟動 UI 元素的應用程式，都可以正常運作，而不需要使用者注意。 若要瞭解這一點，最好的方法就是親自試試看。
+ 如同耳機，Windows Mixed Reality 的動作控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。 如果使用者將控制器移出耳機的視圖，在大部分情況下，Windows 將會繼續推斷控制器位置，並將其提供給應用程式。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。 此時，系統會將控制器主體鎖定給使用者，在移動時追蹤使用者的位置，同時仍會使用其內部方向感應器來公開控制器的真實方向。 許多使用控制器來指向和啟動 UI 元素的應用程式，都可以正常運作，而不需要使用者注意。 若要瞭解這一點，最好的方法就是親自試試看。
 
 ### <a name="how-is-windows-mixed-reality-different-from-samsung-gear-vr"></a>Windows Mixed Reality 與 Samsung 齒輪 VR 有何不同
 
-**快速解答：** 所有 smartphone 型的 VR 產品（包括 Samsung 齒輪 VR 和 Google Daydream）都使用三種自由度 (3DOF) 標頭位置追蹤系統。 以3DOF 為基礎的系統，可讓您 **只** 從虛擬世界中的頸部移動您的頭部。 另一方面，Windows MR (6DOF) head 和控制器定位追蹤系統。 以6DOF 為基礎的系統可讓您在虛擬世界中移動整個主體;因此，您可以從不同的觀點來討論物件並查看它，就像在實體世界中一樣。 Rift 和 Vive 也是以6DOF 為基礎的系統。
+**快速解答：** 所有 smartphone 型的 VR 產品（包括 Samsung 齒輪 VR 和 Google Daydream）都使用三種自由度 (3DOF) 標頭位置追蹤系統。 以3DOF 為基礎的系統，可讓您 **只** 從虛擬世界中的頸部移動您的頭部。 Windows另一方面，MR (6DOF) head 和控制器定位追蹤系統。 以6DOF 為基礎的系統可讓您在虛擬世界中移動整個主體;因此，您可以從不同的觀點來討論物件並查看它，就像在實體世界中一樣。 Rift 和 Vive 也是以6DOF 為基礎的系統。
 
 * 如需3DOF 和6DOF 的詳細資訊，請參閱： <https://docs.microsoft.com/windows/mixed-reality/enthusiast-guide/tracking-system#what-is-the-difference-between-3dof-and-6dof> 
 * 請在這裡深入瞭解位置追蹤和自由度 (DOF) ： <https://www.roadtovr.com/introduction-positional-tracking-degrees-freedom-dof/>
@@ -81,12 +81,12 @@ ms.locfileid: "110196613"
 <table>
 <tr>
 <th style="width:25%"> Headset </th>
-<th style="width:15%"> 解決方案 </th>
+<th style="width:15%"> 解決方法 </th>
 <th style="width:10%"> 顯示 </th>
 <th style="width:10%"> 重新整理速率 </th>
 <th style="width:10%"> FOV </th>
 <th style="width:15%"> 音訊 </th>
-<th style="width:10%"> Bluetooth </th>
+<th style="width:10%"> 藍牙 </th>
 <th style="width:10%"> IPD 調整 </th>
 <th style="width:10%"> 發行日期 </th>
 <th style="width:25%"> 其他資訊 </th>
@@ -257,7 +257,7 @@ ms.locfileid: "110196613"
 
 ### <a name="do-the-mixed-reality-headsets-have-ipd-adjustment"></a>Mixed reality 耳機有 IPD 調整嗎？
 
-**快速解答：** 根據耳機，某些混合現實耳機功能機械 IPD 調整。 其他耳機功能軟體 IPD 調整，可根據您的 IPD 改善影像失真和深度精確度。 使用者可以透過 [設定] **> 混合現實 > 耳機顯示 > 校正** 來設定其自訂 IPD。
+**快速解答：** 根據耳機，某些混合現實耳機功能機械 IPD 調整。 其他耳機功能軟體 IPD 調整，可根據您的 IPD 改善影像失真和深度精確度。 使用者可以透過 **設定 > 混合現實 > 耳機顯示 > 校正** 來設定其自訂 IPD。
 
 ### <a name="do-the-mixed-reality-headsets-have-eye-relief-adjustment"></a>混合現實耳機有眼睛的調整嗎？
 
@@ -287,7 +287,7 @@ ms.locfileid: "110196613"
 
 ### <a name="will-my-pc-work-with-windows-mixed-reality-what-are-the-minimum-specs"></a>我的電腦可以使用 Windows Mixed Reality 嗎？ 最低規格有哪些？
 
-**快速解答：** 您可以在 [這裡](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) 找到最小規格，也可以下載並執行 [混合實境入口](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) ，以查看您的電腦是否可以使用 Windows Mixed Reality。
+**快速解答：** 您可以在 [這裡](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)找到最小規格，也可以下載並執行 [混合實境入口](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab)，以查看您的電腦是否可以使用 Windows Mixed Reality。
 
 ### <a name="will-windows-mixed-reality-work-with-my-xbox"></a>Windows Mixed Reality 可以與我的 Xbox 合作嗎？
 
@@ -309,10 +309,10 @@ ms.locfileid: "110196613"
 
 ### <a name="how-do-motion-controllers-work-with-my-pc"></a>移動控制器如何與我的電腦搭配運作？
 
-**快速解答：** Windows Mixed Reality 移動控制器使用藍牙。 根據耳機，移動控制器會與耳機上的藍牙無線電配對 (（如果配備) ），或電腦上的藍牙無線電。
+**快速解答：** Windows Mixed Reality 移動控制器使用藍牙。 根據耳機，移動控制器會與耳機上的藍牙無線電 (（如果配備) ）或電腦上的藍牙無線電配對。
 
-* 某些 Windows Mixed Reality 耳機，包括 Acer OJO 500、Samsung 電影對白 +、HP 的回音，以及與運動控制器搭配使用的內建藍牙無線電功能。 隨附于這些耳機的移動控制器會預先配對至原廠的耳機，不需要您的電腦具有個別的藍牙無線電。
-* 其他 Windows Mixed Reality 耳機將必須與您電腦上的藍牙無線電配對。
+* 某些 Windows Mixed Reality 耳機，包括 Acer OJO 500、Samsung 電影對白 +、hp 的回音，以及與運動控制器搭配使用的內建藍牙無線電。 隨附于這些耳機的移動控制器會從工廠預先配對到耳機，而不需要您的電腦具有個別的藍牙無線電。
+* 其他 Windows Mixed Reality 耳機必須與您電腦上的藍牙電臺配對。
 
 ### <a name="are-windows-mixed-reality-motion-controllers-cross-compatible-between-windows-mixed-reality-headsets"></a>Windows Mixed Reality 耳機之間的 Windows Mixed Reality 動作控制器是否跨相容？
 
@@ -320,15 +320,15 @@ ms.locfileid: "110196613"
 
 ### <a name="how-do-i-connect-motion-controllers-if-i-do-not-have-built-in-bluetooth"></a>如果我沒有內建藍牙，如何? 連接移動控制器嗎？
 
-**快速解答：** 如果您的電腦沒有內建的藍牙支援，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。
+**快速解答：** 如果您的電腦沒有內建的藍牙支援，您必須插入支援藍牙4.0 的 USB 藍牙介面卡，以啟用您的動作控制器。
 
-### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>控制器是否可與藍牙3.1 搭配運作，或需要藍牙4.0？
+### <a name="will-the-controllers-work-with-bluetooth-31-or-do-i-need-bluetooth-40"></a>控制器的工作是否會使用藍牙3.1，還是需要藍牙4.0？
 
-**快速解答：** Windows Mixed Reality 的最低支援規格為藍牙4.0。 如果您的電腦具有藍牙3.1，您將不會遭到封鎖而無法使用控制器，但最佳體驗是在 BT 4.0 上。 下載並執行 [混合實境入口](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) ，以查看您的電腦是否已 WMR 就緒。
+**快速解答：** Windows Mixed Reality 的最低支援規格為藍牙4.0。 如果您的電腦已藍牙3.1，您將不會遭到封鎖而無法使用控制器，但最佳體驗是在 BT 4.0 上。 下載並執行 [混合實境入口](https://www.microsoft.com/en-us/p/mixed-reality-portal/9ng1h8b3zc7m?activetab=pivot:overviewtab) ，以查看您的電腦是否已 WMR 就緒。
 
-### <a name="will-windows-mixed-reality-controllers-work-with-hololens"></a>Windows Mixed Reality 控制器是否可與 HoloLens 搭配運作？
+### <a name="will-windows-mixed-reality-controllers-work-with-hololens"></a>Windows Mixed Reality 控制器會與 HoloLens 搭配使用嗎？
 
-**快速解答：** 否，Windows Mixed Reality 的動作控制器無法使用 HoloLens。
+**快速解答：** 否，Windows Mixed Reality 移動控制器無法與 HoloLens 搭配使用。
 
 ### <a name="will-windows-mixed-reality-work-with-my-oculus-touch-controllers-or-htc-vive-headsets--controllers"></a>Windows Mixed Reality 可以與我的 Oculus Touch 控制器或 HTC Vive 耳機/控制器搭配使用嗎？
 
@@ -350,7 +350,7 @@ ms.locfileid: "110196613"
 
 ### <a name="does-windows-mixed-reality-support-productivity-within-a-vr-headset-on-a-desktop-environment"></a>Windows Mixed Reality 是否在電腦環境上的 VR 耳機內支援生產力？
 
-**快速解答：** 在 Windows Mixed Reality 耳機內，您可以使用 Windows UWP 應用程式（例如 Mail & Calendar）來執行工作，並使用桌面預覽版應用程式存取在桌面上執行的完整 Win32 應用程式。
+**快速解答：** 在 Windows Mixed Reality 耳機內，您可以使用 Windows UWP 應用程式（例如 Mail & 行事曆）進行工作，並使用桌面預覽版應用程式存取在桌面上執行的完整 Win32 應用程式。
 
 ### <a name="can-i-see-my-keyboard-from-inside-a-windows-mixed-reality-headset"></a>我可以在 Windows Mixed Reality 耳機內看到我的鍵盤嗎？
 
@@ -380,7 +380,7 @@ ms.locfileid: "110196613"
 
 ### <a name="can-i-play-my-xbox-one-games-in-windows-mixed-reality"></a>我可以在 Windows Mixed Reality 玩 Xbox One 遊戲嗎？
 
-**快速解答：** 您可以使用 Windows 10 Xbox 應用程式的串流功能，在 Windows Mixed Reality 中播放所有您最愛的 Xbox One 遊戲。 您可以調整 Windows Mixed Reality 首頁內的應用程式大小，以填滿牆。 若要瞭解如何設定 Xbox One 遊戲串流，您可以在此查看我們的指示： <http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
+**快速解答：** 您可以使用 Windows 10 Xbox 應用程式的串流功能，在 Windows Mixed Reality 中播放所有您最愛的 Xbox One 遊戲。 您可以調整 Windows Mixed Reality 首頁內的應用程式大小，以填滿牆。 若要瞭解如何設定 Xbox One 遊戲串流，您可以在此查看我們的指示：<http://support.xbox.com/en-US/games/game-setup/how-to-use-game-streaming>
 
 ## <a name="steamvr"></a>SteamVR
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 08/03/2020
 ms.topic: article
 keywords: lbe、MixedRealitySpatialDataPackager.exe、MixedRealitySpatialDataPackager
-ms.openlocfilehash: 93d598a6add8350850faadab241b254e9cb341aa
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 914e22c4e80385c93696ebd978000978e1e03f57706d466bdbb3cfcd5843f69e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583644"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213162"
 ---
 # <a name="mixed-reality-spatial-data-packager-documentation"></a>混合現實空間資料封裝工具檔
 
@@ -20,7 +20,7 @@ ms.locfileid: "98583644"
 > 
 > 從8/1/2020 開始，這項工具現在已淘汰，且在任何平臺上都不再有作用。 建議您改為使用裝置入口網站中的 [對應管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) 工具。 
 > 
-> 此工具和其作業會依原樣提供。 這項變更可能會隨時變更，恕不另行通知，且可能與未來的 Windows 或 Windows Mixed Reality HMD 版本不相容。 
+> 此工具和其作業會依原樣提供。 這項變更可能會隨時變更，恕不另行通知，且可能無法與未來 Windows 或 Windows Mixed Reality HMD 版本相容。 
 
 
 ## <a name="download"></a>下載
@@ -65,13 +65,14 @@ ms.locfileid: "98583644"
 
 ## <a name="mapping-best-practices"></a>對應最佳作法
 
-1. 清除主控台 (設定中的現有對應-> 混合現實-> 環境-> 清除環境資料) 
+1. 清除主控台 (中的現有對應設定-> 混合現實-> 環境-> 清楚的環境資料) 
 2. 確定有足夠的光源可進行良好的追蹤，而且如果執行鎖定的地圖模式嘗試維持相同的光源
 3. 可能的話，請避免深色、陰影區域旁邊的高照明區域，讓燈光動態範圍減少
 4. 將空白、textureless 的表面最小化，例如在白色牆上放置不同海報的範圍
 5. 對應場景中不含動態物件的空間，例如移動人員
 6. 透過 Insider Preview (可取得的匯入鎖定地圖) 
-7. 當追蹤品質降低，並（或）環境中有變更 (光源或物件配置中的變更時，請解除鎖定地圖並重新掃描環境) * * _
+7. 當追蹤品質降低，並（或）環境中有變更 (光源或物件配置中的變更時，將地圖解除鎖定並重新掃描環境) 
+***
 
 ## <a name="running-mixed-reality-spatial-data-packager-with-companion-script"></a>使用隨附腳本執行混合現實空間資料封裝程式
 
@@ -153,7 +154,7 @@ MixedRealitySpatialDataPackager.exe import <folderpath to mapx files> <target pa
 匯入會刪除現有的空間資料，並將其取代為指定之目錄中的資料。 應用程式名稱輸入會指定應匯入空間錨點的目標應用程式套件名稱，而目標使用者 SID 會指定應該具有已匯入空間錨點存取權的使用者。 目標套件系列名稱和使用者 Sid 必須符合電腦上現有的值，否則 exe 將會失敗。
 
 
-_**
+***
 ## <a name="error-messages"></a>錯誤訊息
 此外，下列錯誤訊息也會伴隨 HRESULT
 

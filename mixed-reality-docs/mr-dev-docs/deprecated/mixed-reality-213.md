@@ -6,12 +6,12 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、沉浸式、移動控制器、學院、教學課程
-ms.openlocfilehash: 1f747c73846f59fdc62a0559068123a50f8a1b07
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 1cb53ed619a978e2aef17b5006b6254e5c7d3b9f53a39fbcb5932ebcc44ca98b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210107"
 ---
 # <a name="mr-input-213-motion-controllers"></a>MR Input 213：運動控制器
 
@@ -52,7 +52,7 @@ ms.locfileid: "98583054"
 * [下載](https://github.com/Microsoft/MixedReality213/archive/master.zip) 專案所需的檔案，並將檔案解壓縮至桌面。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/MixedReality213)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/MixedReality213)取得。
 
 ## <a name="unity-setup"></a>Unity 設定
 
@@ -71,7 +71,7 @@ ms.locfileid: "98583054"
 * 流覽至您的桌面，並尋找您先前 unarchived 的 **MixedReality213 主** 資料夾。
 * 按一下 [選擇資料夾]。
 * Unity 完成載入專案檔之後，您就能夠看到 Unity 編輯器。
-* 在 Unity 中，選取 [ **File > Build Settings**]。
+* 在 Unity 中，選取 [ **File > Build 設定**]。
 
     ![MR213_BuildSettings](images/mr213-buildsettings-450px.png)
 
@@ -81,14 +81,14 @@ ms.locfileid: "98583054"
 * 將 SDK 設定為 **最新安裝**
 * 檢查 **Unity c # 專案**
     * 這可讓您修改 Visual Studio 專案中的指令檔，而不需要重建 Unity 專案。
-* 按一下 [ **玩家設定**]。
+* 按一下 [**播放設定**]。
 * 在 [偵測 **器** ] 面板中，向下滾動至底部
-* 在 [XR 設定] 中，檢查 **支援的虛擬實境**
-* 在 [虛擬實境 Sdk] 下，選取 **Windows Mixed Reality**
+* 在 XR 設定中，檢查 **支援的虛擬實境**
+* 在 [虛擬實境 sdk] 下，選取 **Windows Mixed Reality**
 
     ![MR213_XRSettings](images/mr213-xrsettings-500px.png)
 
-* 關閉 [ **組建設定** ] 視窗。
+* 關閉 **組建設定** 視窗。
 
 ### <a name="project-structure"></a>專案結構
 
@@ -106,7 +106,7 @@ ms.locfileid: "98583054"
 
 * 在 Unity 中，按一下 [檔案] **> 新增場景**
 * 刪除 **主要攝影機** 和 **方向光線**
-* 在 [ **專案] 面板** 中，搜尋下列 prefabs，並將 **其拖曳** 到 [階層] 面板中：
+* 從 **Project 面板** 中，搜尋下列 prefabs，並將其拖曳到 [階層 **] 面板中**：
     * 資產/HoloToolkit/Input/Prefabs/**MixedRealityCamera**
     * 資產/AppPrefabs/**環境**
 
@@ -120,7 +120,7 @@ ms.locfileid: "98583054"
 
 **Skybox 設定**
 
-* 按一下 [ **視窗] > 光源 > 設定**
+* 按一下 [**視窗] > 光源 > 設定**
 * 按一下 [ **Skybox 材質] 欄位** 右邊的圓形
 * 輸入「灰色」並選取 **SkyboxGray** (資產/AppPrefabs/支援/材質/SkyboxGray) 
 
@@ -155,7 +155,7 @@ Windows Mixed Reality 提供適用于控制器視覺效果的動畫控制器模�
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案** ] 面板的 [搜尋] 方塊中，輸入 **MotionControllers** 。 您也可以在 [資產/HoloToolkit/輸入/Prefabs/] 下找到它。
+* 在 **Project** 面板的 [搜尋] 方塊中，輸入 **MotionControllers** 。 您也可以在 [資產/HoloToolkit/輸入/Prefabs/] 下找到它。
 * 將 **MotionControllers** 預製專案拖曳到 [階層 **] 面板中** 。
 * 按一下 [階層 **] 面板中的 [** **MotionControllers** ] 預製專案。
 
@@ -167,7 +167,7 @@ Windows Mixed Reality 提供適用于控制器視覺效果的動畫控制器模�
 
 **指示**
 
-* 在 [偵測 **器** ] 面板中，按兩下 [ **MotionControllerVisualizer** 腳本] 以查看 Visual Studio 中的程式碼
+* 在 [偵測 **器**] 面板中，按兩下 [ **MotionControllerVisualizer** 腳本] 以查看 Visual Studio 中的程式碼
 
 **MotionControllerVisualizer 腳本**
 
@@ -189,7 +189,7 @@ protected override void Awake()
 
 在稍後的章節中，我們將瞭解如何使用這些腳本，將 UI 元素附加至控制器。
 
-*在某些腳本中，您會發現具有 #if 的程式碼區塊 **！UNITY_EDITOR** 或 **UNITY_WSA**。這些程式碼區塊只會在您部署至 Windows 時于 UWP 執行時間上執行。這是因為 Unity 編輯器和 UWP 應用程式執行時間所使用的 Api 集不同。*
+*在某些腳本中，您會發現具有 #if 的程式碼區塊 **！UNITY_EDITOR** 或 **UNITY_WSA**。當您部署至 Windows 時，這些程式碼區塊只會在 UWP 執行時間上執行。這是因為 Unity 編輯器和 UWP 應用程式執行時間所使用的 Api 集不同。*
 
 * **儲存** 場景，然後按一下 [ **播放** ] 按鈕。
 
@@ -210,12 +210,12 @@ protected override void Awake()
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案** ] 面板中，搜尋 **MotionControllerInfo** 腳本。
+* 在 **Project** 面板中，搜尋 **MotionControllerInfo** 腳本。
 * 從搜尋結果中，按兩下 [ **MotionControllerInfo** 腳本] 以查看 Visual Studio 中的程式碼。
 
 **MotionControllerInfo 腳本**
 
-第一個步驟是選擇您要讓 UI 附加至哪個控制器元素。 這些元素是在 **MotionControllerInfo.cs** 的 **ControllerElementEnum** 中定義。
+第一個步驟是選擇您要讓 UI 附加至哪個控制器元素。 這些元素是在 **MotionControllerInfo** 的 **ControllerElementEnum** 中定義。
 
 ![MR213 MotionControllerElements](images/mr213-motioncontrollerelements-1000px.jpg)
 
@@ -229,17 +229,17 @@ protected override void Awake()
 
 **指示**
 
-* 在 [ **專案** ] 面板中，搜尋 **AttachToController** 腳本。
+* 在 **Project** 面板中，搜尋 **AttachToController** 腳本。
 * 從搜尋結果中，按兩下 [ **AttachToController** 腳本] 以查看 Visual Studio 中的程式碼。
 
 **AttachToController 腳本**
 
 **AttachToController** 腳本提供簡單的方式，將任何物件附加至指定的控制器 handedness 和元素。
 
-在 **AttachElementToController ( # B1** 中，
+在 **AttachElementToController ()** 中，
 
 * 使用 **MotionControllerInfo. handedness** 檢查 handedness
-* 使用 MotionControllerInfo. TryGetElement 取得控制器的特定元素 **( # B1**
+* 使用 **MotionControllerInfo. TryGetElement** 取得控制器的特定元素 () 
 * 從控制器模型中抓取專案的轉換之後，父物件下的物件和設定物件的本機位置 & 旋轉為零。
 
 ```cs
@@ -251,7 +251,7 @@ private void AttachElementToController(MotionControllerInfo newController)
      {
           if (!newController.TryGetElement(element, out elementTransform))
           {
-               Debug.LogError("Unable to find element of type " + element + " under controller " + newController.ControllerParent.name + "; not attaching.");
+               Debug.LogError("Unable to find element of type &quot; + element + &quot; under controller &quot; + newController.ControllerParent.name + &quot;; not attaching.");
                return;
           }
 
@@ -279,10 +279,10 @@ private void AttachElementToController(MotionControllerInfo newController)
 
 **指示**
 
-* 在 [ **專案** ] 面板中，輸入搜尋方塊 **ColorPickerWheel**。 您也可以在 [資產/AppPrefabs/] 下找到它。
+* 在 **Project** 面板中，于 [搜尋] 方塊中輸入 **ColorPickerWheel**。 您也可以在 [資產/AppPrefabs/] 下找到它。
 * 將 **ColorPickerWheel** 預製專案拖曳到 **[階層** ] 面板中。
 * 按一下 [階層 **] 面板中的 [** **ColorPickerWheel** ] 預製專案。
-* 在 [偵測 **器** ] 面板中，按兩下 [ **ColorPickerWheel** 腳本] 以查看 Visual Studio 中的程式碼。
+* 在 [偵測 **器**] 面板中，按兩下 [ **ColorPickerWheel** 腳本] 以查看 Visual Studio 中的程式碼。
 
 ![ColorPickerWheel 預製專案](images/mr213-colorpickerwheel-1000px.jpg)
 
@@ -356,13 +356,13 @@ private IEnumerator Start() {
 **指示**
 
 * **在 [階層**] 面板中，選取 [ **ColorPickerWheel** 預製專案
-* 在 [偵測 **器** ] 面板中，按兩下 [ **ColorPickerWheel** 腳本] 以查看 Visual Studio 中的程式碼
+* 在 [偵測 **器**] 面板中，按兩下 [ **ColorPickerWheel** 腳本] 以查看 Visual Studio 中的程式碼
 
 **ColorPickerWheel 腳本**
 
 **ColorPickerWheel** 訂閱 Unity 的 **InteractionSourceUpdated** 事件以接聽觸控板事件。
 
-在 **InteractionSourceUpdated ( # B1** 中，腳本會先檢查以確定它：
+在 **InteractionSourceUpdated ()** 中，腳本會先檢查以確定它：
 
 * 實際上是 (obj 的「觸控板」事件。**touchpadTouched**) 
 * 源自左方控制器 (的 obj。**handedness**) 
@@ -380,7 +380,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 }
 ```
 
-在 **Update ( # B1** 中，根據 **visible** 屬性，它會觸發在色彩選擇器的 animator 元件中顯示和隱藏動畫觸發程式
+在 [ **更新 ()**] 中，根據 **visible** 屬性，它會觸發在色彩選擇器的 animator 元件中顯示和隱藏動畫觸發程式
 
 ```cs
 if (visible != visibleLastFrame)
@@ -396,7 +396,7 @@ if (visible != visibleLastFrame)
 }
 ```
 
-在 **Update ( # B1** 中， **selectorPosition** 是用來將光線轉換成色輪的網格碰撞器，它會傳回一個 UV 位置。 然後，您可以使用這個位置來尋找色輪材質的圖元座標和色彩值。 透過 **SelectedColor** 屬性可存取其他腳本的這個值。
+在 **Update ()** 中， **selectorPosition** 是用來在色輪的網格碰撞器上轉換光線，以傳回 UV 位置。 然後，您可以使用這個位置來尋找色輪材質的圖元座標和色彩值。 透過 **SelectedColor** 屬性可存取其他腳本的這個值。
 
 ![色彩選擇器滾輪 Raycasting](images/mr213-colorpickerwheel-raycast-700px.png)
 
@@ -450,7 +450,7 @@ if (visible != visibleLastFrame)
 
 **BrushController** 預製專案不一定要 **包含在階層面板中**。 不過，若要簽出其子元件：
 
-* 在 [ **專案** ] 面板中，輸入 **BrushController** ，並將 **BrushController** 預製專案拖曳 **到 [階層** ] 面板中。
+* 在 **Project** 面板中，輸入 **BrushController** ，並將 **BrushController** 預製專案拖曳到 **階層面板中**。
 
 ![MR213_BrushTool_Prefab2](images/mr213-brushtool-prefab-1000px.jpg)
 
@@ -469,8 +469,8 @@ if (visible != visibleLastFrame)
 
 ### <a name="instructions"></a>指示
 
-* 在 [**專案**] 面板中搜尋 **BrushController** 預製專案。
-* 在 [偵測 **器** ] 面板中，按兩下 [ **BrushController** 腳本] 以查看 Visual Studio 中的程式碼
+* 搜尋 **Project** 面板中的 [ **BrushController** ] 預製專案。
+* 在 [偵測 **器**] 面板中，按兩下 [ **BrushController** 腳本] 以查看 Visual Studio 中的程式碼
 
 **BrushController 腳本**
 
@@ -562,7 +562,7 @@ private void OnEnable()
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案** ] 面板的 [搜尋] 方塊中，輸入 **ObjectSpawner** 。 您也可以在資產/AppPrefabs/上找到它
+* 在 **Project** 面板的 [搜尋] 方塊中，輸入 **ObjectSpawner** 。 您也可以在資產/AppPrefabs/上找到它
 * 將 **ObjectSpawner** 預製專案拖曳到 [階層 **] 面板中** 。
 * 按一下 **[階層**] 面板中的 [ **ObjectSpawner** ]。
 * **ObjectSpawner** 有一個名為 **Color Source** 的欄位。
@@ -571,7 +571,7 @@ private void OnEnable()
     ![物件 Spawner 偵測器](images/mr213-objectspawnercolorpickerwheel-650px.jpg)
 
 * 按一下 [階層 **] 面板中的 [** **ObjectSpawner** ] 預製專案。
-* 在 [偵測 **器** ] 面板中，按兩下 [ **ObjectSpawner** 腳本] 以查看 Visual Studio 中的程式碼。
+* 在 [偵測 **器**] 面板中，按兩下 [ **ObjectSpawner** 腳本] 以查看 Visual Studio 中的程式碼。
 
 **ObjectSpawner 腳本**
 
@@ -615,7 +615,7 @@ private void InteractionSourcePressed(InteractionSourcePressedEventArgs obj)
 }
 ```
 
-針對 **Select** 事件，在 **SpawnObject ( # B1** 中，會具現化新的物件，並將其具現化，並釋出到全世界。
+針對 **Select** 事件，在 **SpawnObject ()** 中，會將新的物件具現化、取消父代並釋出到世界中。
 
 ```cs
 private void SpawnObject()
@@ -639,7 +639,7 @@ private void SpawnObject()
 
 ## <a name="build-and-deploy-app-to-mixed-reality-portal"></a>建立應用程式並部署到混合實境入口
 
-* 在 Unity 中，選取 [ **File > Build Settings**]。
+* 在 Unity 中，選取 [ **File > Build 設定**]。
 * 按一下 [ **新增開啟的場景** ]，將目前的場景加入 **組建中的場景**。
 * 按一下 [建置]。
 * 建立名為 "App" 的 **新資料夾** 。
@@ -662,10 +662,10 @@ private void SpawnObject()
 
 ### <a name="instructions"></a>指示
 
-* 在 [ **專案** ] 面板的 [搜尋] 方塊中，輸入 **BrushSelector** 。 您也可以在資產/AppPrefabs/上找到它
+* 在 **Project** 面板的 [搜尋] 方塊中，輸入 **BrushSelector** 。 您也可以在資產/AppPrefabs/上找到它
 * 將 **BrushSelector** 預製專案拖曳到 [階層 **] 面板中** 。
 * 針對組織，建立稱為 **筆刷** 的空白 GameObject
-* 將下列 prefabs 從 [ **專案** ] 面板拖曳至 **筆刷**
+* 將下列 prefabs 從 **Project** 面板拖曳至 **筆刷**
     * 資產/AppPrefabs/**BrushFat**
     * 資產/AppPrefabs/**BrushThin**
     * 資產/AppPrefabs/**橡皮擦**
@@ -751,7 +751,7 @@ private void Update()
 
 **使用 selectPressedAmount 的筆觸粗細**
 
-而不是 **InteractionSourcePressType。請選取** **InteractionSourcePressed ( # B1** 中的事件，您可以透過 **selectPressedAmount** 取得按下數量的類比值。 您可以在 **InteractionSourceUpdated ( # B1** 中取出此值。
+而不是 **InteractionSourcePressType。請選取** **InteractionSourcePressed ()** 中的事件，您可以透過 **selectPressedAmount** 取得按下數量的類比值。 此值可在 **InteractionSourceUpdated ()** 中取出。
 
 ```cs
 private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
@@ -795,7 +795,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 **橡皮擦腳本**
 
-**橡皮擦** 是一種特殊類型的筆刷，會覆寫基底 **筆刷** 的 **DrawOverTime ( # B1** 函數。 當 Draw 為 true 時，橡皮擦會檢查其提示是否與任何現有的筆刷筆劃相交。 如果有，則會將它們加入至要壓縮和刪除的佇列。
+**橡皮擦** 是一種特殊類型的筆刷，會覆寫基底 **筆刷** 的 **DrawOverTime ()** 函數。 當 Draw 為 true 時，橡皮擦會檢查其提示是否與任何現有的筆刷筆劃相交。 如果有，則會將它們加入至要壓縮和刪除的佇列。
 
 ## <a name="advanced-design---teleportation-and-locomotion"></a>Advanced design-遙傳和 locomotion
 
@@ -804,7 +804,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 ### <a name="instructions"></a>指示
 
 * **在 [階層**] 面板中，刪除 [ **MixedRealityCamera**]、[**環境**] 和 [ **MotionControllers** ]
-* 在 [ **專案] 面板** 中，搜尋下列 prefabs，並將 **其拖曳** 到 [階層] 面板中：
+* 從 **Project 面板** 中，搜尋下列 prefabs，並將其拖曳到 [階層 **] 面板中**：
     * 資產/AppPrefabs/Input/Prefabs/**MixedRealityCameraParent**
     * 資產/AppPrefabs/Input/Prefabs/**InputManager**
     * 資產/AppPrefabs/Input/Prefabs/Cursor/**DefaultCursor**
@@ -831,7 +831,7 @@ private void InteractionSourceUpdated(InteractionSourceUpdatedEventArgs obj)
 
 ## <a name="completed-scenes"></a>完成的場景
 
-* 在 Unity 的 [ **專案** ] 面板中，按一下 [ **場景** ] 資料夾。
+* 在 Unity 的 **Project** 面板中，按一下 [**場景**] 資料夾。
 * 您會發現兩個 Unity 場景 **MixedReality213** 和 **MixedReality213Advanced**。
     * **MixedReality213**：已完成場景與單一筆刷
     * **MixedReality213Advanced**：已完成場景，具有具有 select 按鈕的按量範例的多筆刷

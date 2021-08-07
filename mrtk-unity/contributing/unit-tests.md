@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: c8efb192982a1cb9ca07e91d29a69b11aaffc290
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177109"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216254"
 ---
 # <a name="writing-and-running-tests"></a>撰寫和執行測試
 
@@ -270,7 +270,7 @@ namespace Microsoft.MixedReality.Toolkit.Tests.Input
 ```
 
 請考慮將測試放置在類似于其對應的非測試檔案的資料夾階層中。
-例如︰
+例如：
 
 ```md
 Non-Test: Assets/MRTK/Core/Utilities/InterestingUtilityClass.cs

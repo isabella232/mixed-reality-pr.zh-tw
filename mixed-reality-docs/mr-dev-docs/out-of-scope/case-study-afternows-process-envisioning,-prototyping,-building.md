@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、AfterNow、構想、原型設計、建築
-ms.openlocfilehash: d8779f78f78963bd769b0f1f4ca2e3ec34099be6
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 95dd30347a0e621f3ad322db7f6cebf5bb82fa786da18904ef595e0477aedcc2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682905"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190396"
 ---
 # <a name="case-study---afternows-process"></a>案例研究-AfterNow 的流程
 
@@ -35,17 +35,17 @@ ms.locfileid: "91682905"
 
 請務必為此程式選取正確的參與者。 此數目可能會有所不同，但建議您將其保留在七人之下，以提升效率。
 
-**Decider (重要)** -Decider 是群組中的重要人員。 他或她是進行最後決策的人，如果在程式 (期間有判定，通常是創辦人、產品經理或設計) 的負責人。 如果他們無法參與整個程式，請將他最適合用來處理該角色。
+**Decider (重要)**-Decider 是群組中的重要人員。 他或她是進行最後決策的人，如果在程式 (期間有判定，通常是創辦人、產品經理或設計) 的負責人。 如果他們無法參與整個程式，請將他最適合用來處理該角色。
 
-**財務 (選擇性)** -可解釋如何投資專案的人員。
+**財務 (選擇性)**-可解釋如何投資專案的人員。
 
-**行銷 (選擇性)** -負責公司訊息的人員。
+**行銷 (選擇性)**-負責公司訊息的人員。
 
-**客戶 (重要)** -經常與客戶交談的人，也可以是他們的提倡者。
+**客戶 (重要)**-經常與客戶交談的人，也可以是他們的提倡者。
 
-**技術/物流 (重要)** -瞭解公司可建立及交付內容的人員。
+**技術/物流 (重要)**-瞭解公司可建立及交付內容的人員。
 
-**設計 (重要)** -設計貴公司所做產品的人員。
+**設計 (重要)**-設計貴公司所做產品的人員。
 
 ## <a name="day-1---map"></a>第1天-地圖
 

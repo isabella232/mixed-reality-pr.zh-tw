@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 82d6b35fbd442229398ec91aca9e4f10fc3277d7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 02b63e25d8f1b651b7b98815b113fd63d6ec5626be8bb91f80352c319b635528
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702084"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190330"
 ---
 # <a name="eye-supported-target-selection"></a>目視支援的目標選取範圍
 
@@ -20,7 +20,7 @@ ms.locfileid: "104702084"
 
 - & 說「 _Select_ 」 (預設的語音命令) 
 - & _說 (_ 自訂語音命令的「分裂」或「 _Pop_ 」) 
-- 查看 & 藍牙按鈕
+- 藍牙按鈕 & 查看
 - & 縮小 (，也就是將您的手放在最前面，並將您的 thumb 和索引指標結合在一起) 
   - 請注意，若要這樣做，必須 [停用光片](eye-tracking-eyes-and-hands.md#how-to-disable-the-hand-ray)
 
@@ -332,7 +332,7 @@ public class HitBehaviorDestroyOnSelect : MonoBehaviour
 若要變更預設資料指標 (不透明的白點) ，只要複製設定檔並建立您自己的自訂指標設定檔即可。
 然後以 _EyeGazeCursor_ 的 _指標預製專案_ 底下的 _DefaultCursor_ 取代。  
 - **根據現有的 _EyeTrackingDemoPointerProfile_：** 按兩下 [ _EyeTrackingDemoPointerProfile_ ]，然後在 [ _指標選項_] 底下新增下列專案：
-  - **控制器類型：** 「明確的手」、「Windows Mixed Reality」
+  - **控制器類型：**「明確的手」、「Windows Mixed Reality」
   - **Handedness：** 任何
   - **指標預製專案：** DefaultControllerPointer
 

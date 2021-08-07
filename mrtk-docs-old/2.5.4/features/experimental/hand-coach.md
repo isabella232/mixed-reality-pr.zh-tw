@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b2b84ff5b5b5ba1d308391350733f3dc405f7b17
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: d18f9f0a6e499d18a7775f9d4c64f3f5beca46494a95f4a27a56527d9bc97767
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685631"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190332"
 ---
 # <a name="hand-coach"></a>手勢指導
 
@@ -40,8 +40,8 @@ ms.locfileid: "104685631"
 ## <a name="quality"></a>品質
 
 如果您注意到 skinned 網格上的扭曲，您需要確定您的專案使用適當的接點數量。
-移至 Unity 的 [編輯] > 專案設定 > 品質 > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
-![專案設定](../images/hand-coach/MRTK_ProjectSettings.png)
+移至 Unity 的 [編輯] > Project 設定 > 品質] > 其他 > Blend 加權。 確定已選取「4個骨骼」以查看平滑接點。
+![Project設置](../images/hand-coach/MRTK_ProjectSettings.png)
 
 ## <a name="scripts"></a>指令碼
 

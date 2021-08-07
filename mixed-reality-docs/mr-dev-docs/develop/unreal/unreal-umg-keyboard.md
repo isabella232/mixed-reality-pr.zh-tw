@@ -5,13 +5,13 @@ author: hferrone
 ms.author: suwu
 ms.date: 11/25/2020
 ms.topic: article
-keywords: Windows Mixed Reality、全像移動、HoloLens 2、眼睛追蹤、眼睛輸入、前端掛載顯示器、Unreal 引擎、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、widget、UI、UMG、Unreal 運動圖形、Unreal 引擎、UE、UE4
-ms.openlocfilehash: 59ad108a0e27298256f4f0d1661381a4f1748777
-ms.sourcegitcommit: 32cb81eee976e73cd661c2b347691c37865a60bc
+keywords: Windows Mixed Reality、全像移動、HoloLens 2、眼睛追蹤、眼睛輸入、前端掛載顯示器、Unreal 引擎、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、widget、UI、UMG、Unreal 運動圖形、Unreal 引擎、UE、UE4
+ms.openlocfilehash: 8cb1c804757332ce7b78f0cb92cf895b873c1835208962b20d5bbbfae4684785
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/04/2020
-ms.locfileid: "96609759"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212802"
 ---
 # <a name="umg-and-keyboard-in-unreal"></a>Unreal 中的 UMG 和鍵盤
 
@@ -27,7 +27,7 @@ Unreal 動畫圖形 (UMG) 是 Unreal 引擎的內建 UI 系統，用來建立功
 
 ![醒目提示和展開文字 widget 元件之階層視窗的螢幕擷取畫面](images/unreal-umg-img-02.png)
 
-- 在 [階層] 或 [設計工具] 視窗中選取 widget，並修改 [詳細資料] 面板中的參數。  在此情況下，我們新增了一些預設的「提示文字」，以及當您將滑鼠停留在文字方塊上時所顯示的淡色色彩。  當您進行互動時，文字方塊將會顯示 HoloLens 上的虛擬鍵盤：
+- 在 [階層] 或 [設計工具] 視窗中選取 widget，並修改 [詳細資料] 面板中的參數。  在此情況下，我們新增了一些預設的「提示文字」，以及當您將滑鼠停留在文字方塊上時所顯示的淡色色彩。  當虛擬鍵盤與互動時，文字方塊會顯示 HoloLens 上的虛擬鍵盤：
 
 ![階層視窗中已修改之參數的螢幕擷取畫面](images/unreal-umg-img-03.png)
 

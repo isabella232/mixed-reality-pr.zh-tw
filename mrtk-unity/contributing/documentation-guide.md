@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 95af19b71a9fe06dabad058e75f78d951262ba4a
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: aa583876d4ca9e115d4ea4507638eebab838207230693cb7c24b781d8f0b020b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175356"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210716"
 ---
 # <a name="documentation-guidelines"></a>檔指導方針
 
@@ -303,7 +303,7 @@ Mixed Reality 讓您有機會建立全新的領域。 這可能牽涉到建立�
 
 有一些重要功能會產生效能成本。 這段程式碼通常會根據其設定方式而定。
 
-例如︰
+例如：
 
 ```md
 When using the spatial mapping component, the performance impact will increase with the level of detail requested.  
@@ -318,7 +318,7 @@ It is recommended to use the least detail possible for the desired experience.
 
 功能區 breaking-changes.md 檔包含特定版本的所有已知中斷變更清單 **，以及過去** 版本的重大變更歷程記錄。
 
-例如︰
+例如：
 
 ```md
 Spatial sound breaking changes

@@ -3,12 +3,12 @@ title: 您的混合實境首頁
 description: 如何在 Windows Mixed Reality 首頁內流覽和傳送、啟動應用程式和遊戲、個人化首頁，以及變更視覺效果、音訊和語音設定。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲
-ms.openlocfilehash: 440660b12b92e0c818cd3601be486d6fd1dfdb92
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 274c5ca4826ef0c4e05a1dd380f54f3487264a36755966678f5c1c0719d81b0b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944689"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211064"
 ---
 # <a name="your-windows-mixed-reality-home"></a>您的 Windows Mixed Reality 首頁
 
@@ -35,17 +35,17 @@ Windows Mixed Reality 是第一個空間作業系統。 它會使用我們的 in
 
 ## <a name="browse-the-web"></a>瀏覽 Web
 
-1. 按您控制器上的 [Windows] 按鈕，開啟 [開始] 功能表。
+1. 按下控制器上的 Windows 按鈕，以開啟 [開始] 功能表。
 2. 啟動 Microsoft Edge。
 
 ## <a name="play-music"></a>播放音樂
 
-1. 按您控制器上的 [Windows] 按鈕，開啟 [開始] 功能表。
+1. 按下控制器上的 Windows 按鈕，以開啟 [開始] 功能表。
 2. 啟動 Groove 音樂。
 
 ## <a name="download-an-app"></a>下載應用程式
 
-1. 按您控制器上的 [Windows] 按鈕，開啟 [開始] 功能表。
+1. 按下控制器上的 Windows 按鈕，以開啟 [開始] 功能表。
 2. 啟動 Microsoft Store。
 3. 流覽您想要的應用程式或遊戲，然後選取 [取得] 或 [購買]。
 
@@ -57,19 +57,19 @@ Windows Mixed Reality 是第一個空間作業系統。 它會使用我們的 in
 
 ## <a name="personalize-my-home"></a>個人化首頁
 
-您可以使用應用程式和全息商店裝飾您的首頁。 您可以從 Microsoft Store 下載應用程式。 您也可以使用「全像」應用程式，將物件放在家裡。
+您可以使用應用程式和全息商店裝飾您的首頁。 您可以從 Microsoft Store 下載應用程式。 您也可以使用全像投影應用程式將物件放在家裡。
 
 您可以使用 [調整] 按鈕來調整您家中的專案位置和大小。 您也可以使用兩個移動控制器來快速移動和調整專案大小，方法是指向全像影像的任何部分，或指向應用程式視窗的功能表列，其中包含兩個控制器，然後將它們更接近或更遠地移動。
 
 ## <a name="reset-my-homes-furniture-and-app-placement-back-to-default"></a>將我的家用傢俱和應用程式位置重設回預設值
 
-移至 [ **設定] > Mixed Reality > 環境 > 重設我的首頁** ![ Windows 設定面板以重設我的首頁](images/1050px-environmentreset.png)
+移至 **設定 > Mixed Reality > 環境 > 重設我的首頁** ![ Windows 設定面板以重設首頁](images/1050px-environmentreset.png)
 
 ## <a name="uninstall-windows-mixed-reality"></a>卸載 Windows Mixed Reality
 
 1. 拔掉您的耳機
 2. 關閉 Windows Mixed Reality 入口網站
-3. 移至 [ **設定 > Mixed reality] > 卸載 >** 卸載 ![ Windows 設定面板以卸載混合現實](images/1050px-uninstall2.png)
+3. 移至 **設定 > 混合現實 > 卸載 > 卸載** ![ Windows 設定面板以卸載混合現實](images/1050px-uninstall2.png)
 
 ## <a name="turn-off-the-boundary"></a>關閉界限
 

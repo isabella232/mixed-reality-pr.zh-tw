@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、傳輸、本機錨定、錨點匯出、錨點匯入
-ms.openlocfilehash: 4949dd49817d723729974fb5666d5defb64b72ba
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: eaf25edbae39aab628277aa29f975f3d4d9d7374c796fd1b7b159053d4a46b95
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189125"
 ---
 # <a name="local-anchor-transfers-in-unity"></a>Unity 中的本機錨點傳輸
 
-在您無法使用 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點轉移可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。
+在您無法使用<a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點傳輸可讓一個 HoloLens 裝置匯出錨點，以供第二個 HoloLens 裝置匯入。
 
 >[!NOTE]
 >本機錨點傳輸可提供比 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>更不健全的錨定回收，而且此方法不支援 IOS 和 Android 裝置。
@@ -25,12 +25,12 @@ ms.locfileid: "98583869"
 為了讓應用程式能夠傳送空間錨點，必須啟用 *>spatialperception* 功能。
 
 如何啟用 *>spatialperception* 功能：
-1. 在 Unity 編輯器中，開啟 [ **播放機設定** ] 窗格 (編輯 > 專案設定 > 播放) 
-2. 按一下 [ **Windows 市存放區** ] 索引標籤
+1. 在 Unity 編輯器中，開啟 [**播放設定**] 窗格 (編輯 > Project 設定 > 播放機) 
+2. 按一下 [ **Windows 存放區**] 索引標籤
 3. 展開 [**發行設定]** ，並檢查 [**功能]** 清單中的 [ **>spatialperception]** 功能
 
 >[!NOTE]
->如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在 [Visual Studio 的 package.appxmanifest 中手動設定這項功能](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
+>如果您已將 Unity 專案匯出至 Visual Studio 的解決方案，您必須匯出至新資料夾，或在[Visual Studio 的 package.appxmanifest 中手動設定這項功能](local-anchor-transfers-in-directx.md#set-up-your-app-to-use-the-spatialperception-capability)。
 
 ### <a name="anchor-transfer"></a>錨點傳輸
 
@@ -39,7 +39,7 @@ ms.locfileid: "98583869"
 
 若要傳送 [WorldAnchor](../develop/unity/coordinate-systems-in-unity.md)，必須建立要傳送的錨點。 其中一個 HoloLens 的使用者會掃描其環境，並以手動或程式設計方式選擇空間中的點來作為共用體驗的錨點。 接著可以將代表這點的資料序列化，並傳輸至體驗中共用的其他裝置。 然後每個裝置都會將錨點資料還原序列化，並嘗試找出空間中的那個點。 為了讓錨點傳送正常運作，每個裝置都必須掃描出足夠的環境，讓錨點表示的點可以識別。
 
-### <a name="setup"></a>安裝程式
+### <a name="setup"></a>設定
 
 此頁面上的範例程式碼會有幾個需要初始化的欄位：
 1. *GameObject rootGameObject* 是 Unity 中具有 *WorldAnchor* 元件的 *GameObject* 。 共用體驗中的一位使用者將會放置此 *GameObject* ，並將資料匯出給其他使用者。

@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
 keywords: 輸入、unity、移植
-ms.openlocfilehash: d6bef0f10cf1fc20d5067ac77a126bb793385f59
-ms.sourcegitcommit: a1bb77f729ee2e0b3dbd1c2c837bb7614ba7b9bd
+ms.openlocfilehash: b2c328152d681a4c8753e29babf0f3ece6bdc0d3f21f9df6dd8de150c3fb47f0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/14/2021
-ms.locfileid: "98192646"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212076"
 ---
 # <a name="input-porting-guide-for-unity"></a>Unity 的輸入移植指南
 
-您可以使用兩種方法的其中一種，將輸入邏輯移植至 Windows Mixed Reality。 第一個是使用 Unity 的一般 GetButton/GetAxis Api 跨越多個平臺。 第二個是 Windows 特定的 XR。Wsa。輸入 Api，專為運動控制器和 HoloLens 手提供更豐富的資料。
+您可以使用兩種方法的其中一種，將輸入邏輯移植至 Windows Mixed Reality。 第一個是使用 Unity 的一般 GetButton/GetAxis Api 跨越多個平臺。 第二個是 Windows 特定的 XR。Wsa。輸入 api，專為運動控制器和 HoloLens 手提供更豐富的資料。
 
 ## <a name="general-inputgetbuttongetaxis-apis"></a>一般輸入. GetButton/GetAxis Api
 
@@ -23,9 +23,9 @@ Unity 目前使用其一般輸入. GetButton/GetAxis Api 來公開 [OCULUS SDK](
 
 如需詳細資訊，請參閱 [unity 按鈕/軸對應表](../unity/motion-controllers-in-unity.md#unity-buttonaxis-mapping-table) 和 [通用 Unity api 的總覽](../unity/motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis)。
 
-## <a name="windows-specific-xrwsainput-apis"></a>Windows 特定 XR。Wsa。輸入 Api
+## <a name="windows-specific-xrwsainput-apis"></a>Windows 特定的 XR。Wsa。輸入 Api
 
-如果您的應用程式已經為每個平臺建立自訂輸入邏輯，您可以使用 **UnityEngine. XR** 命名空間中的 Windows 特定空間輸入 api。 從該處，您可以存取其他資訊（例如位置精確度或來源種類），讓您知道 HoloLens 上的實習和控制器。
+如果您的應用程式已經為每個平臺建立自訂輸入邏輯，您可以在 **UnityEngine. XR** 命名空間中使用 Windows 特定的空間輸入 api。 從該處，您可以存取其他資訊（例如，位置精確度或來源種類），讓您在 HoloLens 上分辨出手和控制器。
 
 如需詳細資訊，請參閱 [UnityEngine. XR. 輸入 api 的總覽](../unity/motion-controllers-in-unity.md#windows-specific-apis-xrwsainput)。
 
@@ -35,16 +35,16 @@ Windows Mixed Reality 支援不同外型規格的移動控制器。 每個控制
 
 為了更妥善地表示這些控制器，您可以針對每個互動來源進行兩種調查：
 
-* 底框 **姿勢**，代表 HoloLens 所偵測到的掌上的位置，或是持有運動控制器的掌上。
+* 底框 **姿勢**，代表 HoloLens 所偵測到的掌上邊的位置，或包含運動控制器的掌上。
     * 在沉浸式耳機上，這個姿勢最適合用 **來呈現使用者手** 或 **使用者手中所持有的物件**，例如寶劍或機槍。
     * 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。
     * 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
     * 底圖 **方向的順向軸**：當您部分關閉時，就像是按住控制器一樣，光線會以非拇指手指所形成的電子管「轉寄」。
     * 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
-    * 您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 **[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替**) 或透過 Windows 特定 API (**SourceState. SourcePose. TryGetPosition/旋轉**，要求底框姿勢) 。
+    * 您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 **[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/旋轉**) 或透過 Windows 特定 API (**sourceState. sourcePose. TryGetPosition/旋轉**，要求底框姿勢) 。
 * **指標姿勢**，代表指向轉寄之控制器的秘訣。
     * 當您在呈現控制器模型本身時 **指向 UI** 時，最好使用這個姿勢來 raycast。
-    * 目前，指標姿勢只能透過 Windows 特定 API 來使用 (**sourceState. sourcePose. TryGetPosition/旋轉**，要求指標姿勢) 。
+    * 目前，指標姿勢僅可透過 Windows 專屬的 API (**sourceState. sourcePose. TryGetPosition/旋轉**，要求指標姿勢) 。
 
 這些姿勢座標全都以 Unity 全局座標表示。
 

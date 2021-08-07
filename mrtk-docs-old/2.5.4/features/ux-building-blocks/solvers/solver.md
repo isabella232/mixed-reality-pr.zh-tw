@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、解析器、
-ms.openlocfilehash: 1af6825598ae8e948d03428464a2016205871a33
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3d192a3535a446ce818881dedbb85852780a57c813eb1efa97d294f8a81ba355
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186588"
 ---
 # <a name="solvers"></a>解算器
 
@@ -64,7 +64,7 @@ ms.locfileid: "104686161"
 *與每個 TrackedTargetType 相關聯之各種屬性的範例*
 
 > [!IMPORTANT]
-> 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量* ，亦即： 綠色向量為向上、藍色向量向前) 。
+> 大部分的解析器會使用所提供之追蹤轉換目標的正向向量 `SolverHandler` 。 使用 *手聯合* 追蹤的目標型別時，掌上接點的正向向量可能會指向手指，而不是透過棕櫚。 這取決於提供手聯合資料的平臺。 針對輸入模擬和 Windows Mixed Reality，它是指向多個 palm (的 *向上向量*，亦即： 綠色向量為向上、藍色向量向前) 。
 >
 > ![上往上向量](../../images/solver/HandJoint_ForwardUpVectors.png)
 >
@@ -188,7 +188,7 @@ public class InFront : Solver
 
 ![手形功能表 UX 範例](../../images/solver/MRTK_UX_HandMenu.png)
 
-此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 安全區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
+此 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint) 行為提供的規劃求解會將追蹤的物件限制為可安全的 (，例如，手動 UI、功能表等) 。 保管庫區域會被視為不會與手相交的區域。 [`HandConstraint`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraint)另外也包含了呼叫的衍生類別 [`HandConstraintPalmUp`](xref:Microsoft.MixedReality.Toolkit.Utilities.Solvers.HandConstraintPalmUp) ，以示範當掌上有使用者時啟動規劃求解追蹤物件的常見行為。
 
 如需使用手形條件約束規劃求解來建立快顯功能表的範例，[請參閱手形功能表頁](../hand-menu.md)。
 

@@ -7,12 +7,12 @@ ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 5b61924ccf4d3eb5f5433c9042582ff2a850bb04
-ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
+ms.openlocfilehash: 419f26f79ca8bdd1998955a2bdf72dfabf73976c89b1abce175ef2cf60c9597b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "107731940"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210880"
 ---
 # <a name="configuring-the-mixed-reality-feature-tool"></a>設定 Mixed Reality 功能工具
 
@@ -71,7 +71,7 @@ ms.locfileid: "107731940"
 
 * 取消核取此設定以保留所有版本
 
-### <a name="project-relative-import-path"></a>專案相對匯入路徑
+### <a name="project-relative-import-path"></a>Project 相對匯入路徑
 
 將此設定變更為更新匯入時複製功能套件的專案資料夾路徑。 
 

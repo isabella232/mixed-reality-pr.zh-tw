@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4d1b6921e1f5c55555b6fae448a88dbd0c3a31d7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 04bf662f8ea23829d5f9f6f3854be9d2ad9867664624f5bb08b9eb94be4af637
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210766"
 ---
 # <a name="updating-the-microsoft-mixed-reality-toolkit"></a>更新 Microsoft Mixed Reality 工具組
 
@@ -61,10 +61,10 @@ ms.locfileid: "104702024"
     - 從階層中刪除 **MixedRealityToolkit** 和 **MixedRealityPlayspace**（如果有的話）。 這將會刪除主要相機，但會在下一個步驟中重新建立。 如果已手動變更主要相機的任何內容，則在建立新的相機之後，必須手動重新套用這些屬性。
     - 選取 **MixedRealityToolkit-> 新增至場景並設定**
     - 選取 **MixedRealityToolkit-> 公用程式-> update-> 控制器對應設定檔** (只需要進行一次) -這會以更新的座標軸和資料更新任何自訂控制器對應設定檔，同時讓您的自訂指派輸入動作保持不變
-1. 執行 [遷移工具](../features/tools/migration-window.md) 並在 *完整的專案* 上執行工具，以確保您的所有程式碼都更新為最新版本。
+1. 執行 [遷移工具](../features/tools/migration-window.md)並在 *完整的 Project* 上執行工具，以確保您的所有程式碼都更新為最新版本。
    [遷移] 視窗包含許多不同的遷移處理常式，每個處理常式都必須自行執行。 此步驟包含：
    - 從 [ **遷移處理常式選取專案** ] 下拉式清單中，選取第一個遷移處理常式。
-   - 按一下 [完整專案] 按鈕。
+   - 按一下 [完整 Project] 按鈕。
    - 按一下 [新增要遷移的完整專案] 按鈕 (這會掃描整個專案以取得要遷移) 的物件。
    - 按一下 [遷移] 按鈕，如果找到任何 migrateable 物件，則應啟用此按鈕。
    - 針對下拉式清單中的每個遷移處理常式重複上述三個步驟。
@@ -176,7 +176,7 @@ Gltf 網格基本屬性是用來設定的，現在它們是唯讀的。 還原�
 
 **適用于 Unity 的 MSBuild**
 
-此版本的 MRTK 使用與舊版 MSBuild for Unity 的較新版本。 在專案載入期間，如果較舊的版本列在 Unity 套件管理員資訊清單中，則會顯示 [設定] 對話方塊，並核取 [啟用 MSBuild for Unity] 選項。 應用程式將會執行升級。
+此版本的 MRTK 會針對 Unity 使用較舊版本的 MSBuild，而不是先前的版本。 在專案載入期間，如果較舊的版本列在 Unity 套件管理員資訊清單中，則會顯示 [設定] 對話方塊，並核取 [啟用 Unity 的 MSBuild] 選項。 應用程式將會執行升級。
 
 **ScriptingUtilities**
 
@@ -201,10 +201,10 @@ ShellHandRayPointer 類別的 lineRendererSelected 和 lineRendererNoTarget 成�
 下列 prefabs 現在使用 PressableButton 元件，而不是 TouchHandler 接近互動 ([7070](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/7070)) 
 
 - AnimationButton
-- 按鈕
+- Button
 - ButtonHoloLens1
 - ButtonHoloLens1Toggle
-- 核取方塊
+- CheckBox
 - RadialSet
 - ToggleButton
 - ToggleSwitch

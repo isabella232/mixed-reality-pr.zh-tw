@@ -5,13 +5,13 @@ author: jessemcculloch
 ms.author: jemccull
 ms.date: 10/30/2020
 ms.topic: article
-keywords: 混合的現實、會議、峰峰、developer、HoloLens、HoloLens 2、Kinect
-ms.openlocfilehash: 93bafae605640a0576fd273f761eaec0a8994d86
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: 混合的現實、會議、高峰、開發人員、HoloLens、HoloLens 2 Kinect
+ms.openlocfilehash: 9ad907cef86a1fbdb1a9ff01cd01d88f88fadaa640f34d8f270073ce5446646a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190369"
 ---
 # <a name="mixed-reality-dev-days-japan"></a>Mixed Reality Dev Days Japan
 
@@ -23,7 +23,7 @@ ms.locfileid: "97757596"
 
 **日期-2020 年12月16日**
 
-**位置-Microsoft 小組實況活動**
+**位置 Microsoft Teams 實況活動**
 
 **免註冊**
 
@@ -53,8 +53,8 @@ ms.locfileid: "97757596"
 |1： 50pm-2：00|**中斷 (10 分鐘)**||||
 |2： 00-2：25pm|[HoloLens 2 開發的](https://youtu.be/_z0CwAVkbiQ)*課程 3* 總覽|Madoka Chiyoda|JA|200|
 |2： 30pm-2：55pm|*Session 4* [MRTK UX 元件 v 2.5.0](https://youtu.be/If5R9diyF50)|Yoon 公園|JA|300|
-|3： 00-3：25pm|*第5階段* [：開始使用 HoloLens 2 和 UNREAL 引擎 (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|EN|300|
-|3： 30pm-3：55pm|*會話 6* [製作](https://youtu.be/jHn9yydiRTw)全像影像|Daniel Escudero|EN|300|
+|3： 00-3：25pm|*第5階段* [：開始使用 HoloLens 2 和 Unreal 引擎 (MRTK-Unreal)](https://youtu.be/AsAuPx0iz3o)|Cameron Micka|EN|300|
+|3： 30pm-3：55pm|[進行設計全像投影](https://youtu.be/jHn9yydiRTw)的 *會話 6*|Daniel Escudero|EN|300|
 |3： 55pm-4：下午5:15|**中斷 (20 分鐘)**||||
 |4：下午 5:15-4：40pm|*會話 7* [Azure 物件錨點](https://youtu.be/dZCb6VJlaaU)|Jesse McCulloch|EN|300|
 |4：下午5:45 執行-5：下午10點|*會話 8* [Azure 遠端轉譯](https://youtu.be/MEhL12WGOW0)|: Atsushi Suzuki|JA|300|
@@ -70,15 +70,15 @@ Futo Horio ([@Futo_Horio](https://twitter.com/Futo_Horio)) 、Takahiro Miyaura (
 ## <a name="frequently-asked-questions"></a>常見問題集
 當我們從您取得更多問題時，將會經常更新此區段！
 
-**問：** 誰應該參與混合現實開發日
+**問** 神秘應該參加 Mixed Reality Dev Day
 
 **答** ：此活動包含在混合現實空間中運作或扮演的每個人。 雖然大部分的內容都是以開發人員為焦點，但我們也知道有許多不同角色的內容有興趣。 請記得檢查更新的排程，以查看我們將提供的內容類型。  
 
-**問** ：我在團隊實況活動中找不到活動
+**問**：我在 Teams 實況活動中找不到事件
 
-**答** ：若要參與，請選取您註冊活動之後收到的電子郵件中的連結。 我們建議您在「小組電腦」應用程式上觀賞，也可以參與小組行動應用程式或桌面瀏覽器。
+**答** ：若要參與，請選取您註冊活動之後收到的電子郵件中的連結。 建議您觀賞 Teams PC 應用程式，也可以參與 Teams 行動裝置應用程式或桌面瀏覽器。
 
-如果您因為某些原因而無法登入小組，請檢查 YouTube 頻道，此活動將會同時廣播。 不過，您無法與喇叭參與 QA。
+如果基於某些原因而無法登入 Teams，請檢查要同時廣播事件的 YouTube 通道。 不過，您無法與喇叭參與 QA。
 
 **問** ：在活動之後，簡報教材和研討會影片是否可供使用？
 

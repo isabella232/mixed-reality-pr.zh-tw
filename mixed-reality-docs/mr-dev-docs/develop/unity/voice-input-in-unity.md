@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 語音輸入、KeywordRecognizer、GrammarRecognizer、麥克風、聽寫、語音、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 6b040443606e05843f85b2f74f5ea812daafba31
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+ms.openlocfilehash: e436c320a2f4393eeae86a7a936a6afa8e8a15f91ba803e95e6a318b117ee81c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489198"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216404"
 ---
 # <a name="voice-input-in-unity"></a>Unity 中的語音輸入
 
@@ -29,10 +29,10 @@ Unity 公開三種將 [語音輸入](../../design/voice-input.md) 新增至 Unit
 ## <a name="enabling-the-capability-for-voice"></a>啟用語音的功能
 
 必須為應用程式宣告 **麥克風** 功能，才能使用語音輸入。
-1. 在 Unity 編輯器中，流覽至 **> Player 編輯 > 專案設定**
-2. 選取 [ **Windows 存放區** ] 索引標籤
-3. 在 [ **發佈設定 > 功能** ] 區段中，檢查 **麥克風** 功能
-4. 在 HoloLens 裝置上將許可權授與應用程式以進行麥克風存取
+1. 在 Unity 編輯器中，流覽至 [**編輯] > Project 設定 > 播放機**
+2. 選取 **Windows 存放區**] 索引標籤
+3. 在 [**發行設定 > 功能**] 區段中，檢查 **麥克風** 功能
+4. 將許可權授與應用程式，以在您的 HoloLens 裝置上進行麥克風存取
     * 系統會要求您在裝置啟動時這麼做，但如果您不小心按一下 [否]，您可以變更裝置設定中的許可權
 
 ## <a name="phrase-recognition"></a>片語辨識
@@ -43,7 +43,7 @@ Unity 公開三種將 [語音輸入](../../design/voice-input.md) 新增至 Unit
 
 ### <a name="keywordrecognizer"></a>KeywordRecognizer
 
-**命名空間：** *UnityEngine*<br>
+**命名空間：** *UnityEngine. Windows。語音*<br>
 **類型：** *KeywordRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
 我們需要一些 using 語句來節省一些按鍵：
@@ -105,7 +105,7 @@ keywordRecognizer.Start();
 
 ### <a name="grammarrecognizer"></a>GrammarRecognizer
 
-**命名空間：** *UnityEngine*<br>
+**命名空間：** *UnityEngine. Windows。語音*<br>
 **類型**： *GrammarRecognizer*、 *PhraseRecognizedEventArgs*、 *SpeechError*、 *SpeechSystemStatus*
 
 如果您要使用 SRGS 指定辨識文法，則會使用 GrammarRecognizer。 如果您的應用程式有多個關鍵字，如果您想要辨識更複雜的片語，或是想要輕鬆開啟和關閉命令集，這會很有用。 請參閱： [使用 SRGS XML 建立](/previous-versions/office/developer/speech-technologies/hh378349(v=office.14)) 檔案格式資訊的文法。
@@ -147,7 +147,7 @@ grammarRecognizer.Start();
 
 ## <a name="dictation"></a>聽寫
 
-**命名空間：** *UnityEngine*<br>
+**命名空間：** *UnityEngine. Windows。語音*<br>
 **類型**： *DictationRecognizer*、 *SpeechError*、 *SpeechSystemStatus*
 
 使用將 `DictationRecognizer` 使用者的語音轉換成文字。 DictationRecognizer 會公開 [聽寫](../../design/voice-input.md#dictation) 功能，並支援註冊和接聽假設和片語完成的事件，讓您可以在使用者說話和之後，將意見反應提供給您的使用者。 `Start()` 和 `Stop()` 方法分別啟用和停用聽寫識別。 完成辨識器之後，應該使用來處置它 `Dispose()` 所使用的資源。 如果未在這之前釋出這些資源，它會在垃圾收集期間自動釋出這些資源。
@@ -160,11 +160,11 @@ grammarRecognizer.Start();
 ### <a name="enabling-the-capability-for-dictation"></a>啟用聽寫功能
 
 您必須為應用程式宣告 **網際網路用戶端** 和 **麥克風** 功能，才能使用聽寫：
-1. 在 Unity 編輯器中，移至 **> Player 編輯 > 專案設定**
-2. 在 Windows [ **存放區** ] 索引標籤上選取
-3. 在 [ **發佈設定 > 功能** ] 區段中，檢查 **InternetClient** 功能
+1. 在 Unity 編輯器中，移至 [**編輯] > Project 設定 > 播放機**
+2. 選取 [ **Windows 存放區**] 索引標籤
+3. 在 [**發行設定 > 功能**] 區段中，檢查 **InternetClient** 功能
     * （選擇性）如果您還未啟用麥克風，請檢查 **麥克風** 功能
-4. 在 HoloLens 裝置上將許可權授與應用程式以進行麥克風存取（如果您尚未這樣做）
+4. 將許可權授與應用程式，以在您的 HoloLens 裝置上進行麥克風存取（如果您尚未這樣做）
     * 系統會要求您在裝置啟動時這麼做，但如果您不小心按一下 [否]，您可以變更裝置設定中的許可權
 
 ### <a name="dictationrecognizer"></a>DictationRecognizer

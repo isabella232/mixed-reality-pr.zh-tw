@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 81c83fe88b4943f4857898a6d0beebb3f5c05ba9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0f7823cb989c63376517eca963dc4828b1b6ffe83056778e6a41a9b6f6636c56
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690338"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209236"
 ---
 # <a name="input-animation-binary-file-format-specification"></a>輸入動畫二進位檔案格式規格
 
@@ -108,7 +108,7 @@ Float 主要畫面格會在基本時間和值的旁邊儲存正切值和加權�
 
 | 區段 | 類型 |
 |---------|------|
-| Time | Float32 |
+| 時間 | Float32 |
 | 值 | Float32 |
 | InTangent | Float32 |
 | OutTangent | Float32 |
@@ -133,7 +133,7 @@ Float 主要畫面格會在基本時間和值的旁邊儲存正切值和加權�
 
 | 區段 | 類型 |
 |---------|------|
-| Time | Float32 |
+| 時間 | Float32 |
 | 值 | Float32 |
 
 ### <a name="wrap-mode"></a>Wrap 模式

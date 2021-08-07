@@ -5,17 +5,17 @@ author: JBrentJ
 ms.author: alexturn
 ms.date: 12/9/2020
 ms.topic: article
-keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第1代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
-ms.openlocfilehash: bb76325c0a2d10150cff6604e29c7ead8a97df8e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: 埠、unity、unreal、中介軟體、引擎、UWP、Win32、移植、HoloLens 第一代、混合現實耳機、windows mixed reality 耳機、遷移、Windows 10、輸入對應、
+ms.openlocfilehash: c8f0ed76fc7288ed406e2044eb2f3edb8982865b5c956f460d2bc1b815e503df
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394462"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213506"
 ---
 # <a name="porting-vr-apps-to-windows-mixed-reality"></a>將 VR 應用程式移植到 Windows Mixed Reality
 
-Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立其他裝置的內容（例如 Oculus Rift 或 HTC Vive），它們就會相依于存在於作業系統平臺 API 之上的程式庫。 將現有的 Win32 Unity VR 應用程式帶入 Windows Mixed Reality 牽涉到將廠商專屬的 VR Sdk 重定目標使用於 Unity 的跨廠商 VR Api。
+Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立其他裝置的內容（例如 Oculus Rift 或 HTC Vive），它們就會相依于存在於作業系統平臺 API 之上的程式庫。 將現有的 Win32 Unity vr 應用程式帶入 Windows Mixed Reality 牽涉到將廠商專屬的 vr sdk 重定目標使用於 Unity 的跨廠商 vr api。
 
 ## <a name="porting-requirements"></a>移植需求
 
@@ -23,7 +23,7 @@ Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立�
 1. **確定您的電腦正在執行 Windows 10 Fall Creators Update (16299) 。** 我們不再建議從 Insider Skip 通道接收預覽版，因為這些組建對於混合現實開發來說不是最穩定的。
 2. **升級至最新版本的圖形或遊戲引擎。** 遊戲引擎將需要支援2017年4月) 或更高版本的 Windows 10 SDK 版本 10.0.15063.0 (。
 3. **升級任何中介軟體、外掛程式或元件。** 如果您的應用程式包含任何元件，最好是升級到最新版本。
-4. **移除重複 sdk 的** 相依性。 視內容的目標裝置而定，您必須移除或有條件地編譯該 SDK，讓您可以改為以 Windows Api 為目標。 此案例的範例將會 SteamVR。
+4. **移除重複 sdk 的** 相依性。 視內容的目標裝置而定，您必須移除或有條件地編譯該 SDK，讓您可以改為以 Windows api 為目標。 此案例的範例將會 SteamVR。
 5. **解決組建問題。** 此時，移植練習是您的應用程式、引擎和您擁有的元件相依性所特有的。
 
 ## <a name="common-porting-steps"></a>常見的移植步驟
@@ -34,15 +34,15 @@ Windows 10 包含沉浸式和全像攝影耳機的支援。 如果您已建立�
 
 ### <a name="2-upgrade-to-the-latest-flight-of-windows-10"></a>2. 升級到 Windows 10 的最新航班
 
-Windows Mixed Reality 平臺仍在積極開發中。 建議您 [加入 Windows 測試人員計畫](https://insider.windows.com/) ，以存取「Windows 測試人員快速」飛行。
-1. 安裝 [Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
-2. [加入](https://insider.windows.com/) Windows 測試人員計畫。
+Windows Mixed Reality 平臺仍在積極開發中。 建議您[加入 Windows 測試人員計畫](https://insider.windows.com/)，以存取「Windows 測試人員快速」飛行。
+1. 安裝[Windows 10 Creators Update](https://www.microsoft.com/software-download/windows10)
+2. [加入](https://insider.windows.com/)Windows 測試人員計畫。
 3. 啟用 [開發人員模式](/windows/uwp/get-started/enable-your-device-for-development)
-4. 透過 [**設定] > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](/archive/blogs/uktechnet/joining-insider-preview)
+4. 透過 **設定 > 更新 & 安全性] 區段** 切換至 [Windows 測試人員快速航班](/archive/blogs/uktechnet/joining-insider-preview)
 
 ### <a name="3-upgrade-to-the-most-recent-build-of-visual-studio"></a>3. 升級為最新組建的 Visual Studio
 * 如果您是使用 Visual Studio，請升級至最新的組建
-* 請參閱 Visual Studio 2019 下 [的安裝工具](../install-the-tools.md#installation-checklist) 頁面
+* 請參閱 Visual Studio 2019 下[的安裝工具](../install-the-tools.md#installation-checklist)頁面
 
 ### <a name="4-choose-the-correct-adapter"></a>4. 選擇正確的介面卡
 * 在具有兩個 Gpu 的筆記本系統中，以 [正確的介面卡為目標](../native/rendering-in-directx.md#hybrid-graphics-pcs-and-mixed-reality-applications)。 這適用于 Unity 和原生 DirectX 應用程式，其中會以明確或隱含的方式 (媒體基礎) ）來建立 ID3D11Device，以供其功能使用。

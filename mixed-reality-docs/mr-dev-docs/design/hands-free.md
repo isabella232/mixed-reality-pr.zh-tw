@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 04/20/2019
 ms.topic: article
-keywords: Mixed Reality、免持手、注視、注視目標、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、語音輸入、可用性
-ms.openlocfilehash: 2864e58fdd8a29ae8f981b42f50735eb13a50869
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: mixed reality、免持手、注視、注視目標、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、語音輸入、可用性
+ms.openlocfilehash: 725d8886d21b42ee4643680c0dc91c1d29c25f8409b0ed0828256564dde7545c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213532"
 ---
 # <a name="hands-free"></a>免持式
 
@@ -47,7 +47,7 @@ ms.locfileid: "97847679"
 如果您的目標使用者需要自行決定是否要親自切換，則請務必考慮下列準則。
 
 ### <a name="assume-the-user-is-already-in-the-mode-that-they-want-to-switch-to"></a>假設使用者已經處於想要切換的模式
-比方說，如果使用者是在工廠，在 HoloLens 上觀賞影片參考，並決定挑選扳手以開始工作，她最有可能開始操作，而不需要減少扳手來按下按鈕。 她可以使用語音命令叫用語音會話、停留在已可見的 UI 上以開始停留，或說「選取」這個字。
+比方說，如果使用者是在工廠，在她的 HoloLens 上觀賞影片參考，並決定挑選扳手以開始工作，她最有可能開始操作，而不需要減少扳手以按下按鈕。 她可以使用語音命令叫用語音會話、停留在已可見的 UI 上以開始停留，或說「選取」這個字。
 
 使用者可以： 
 * 無人參與，請切換為無人參與
@@ -90,7 +90,7 @@ ms.locfileid: "97847679"
 * 範例：使用物件反白顯示時，語音目標更好
 * 範例：語音互動優於需要開啟的標題
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [HoloLens 2 的眼球追蹤](eye-tracking.md)
 * [目光和行動](gaze-and-commit.md)

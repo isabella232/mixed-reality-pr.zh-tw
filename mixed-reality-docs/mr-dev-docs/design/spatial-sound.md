@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 11/07/2019
 ms.topic: article
 keywords: 空間音效、環繞音效、3d 音訊、3d 音效、空間音訊、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、個案研究、聲場
-ms.openlocfilehash: 335ff8acf036591bbbf9868f591ca2c3cef1386c
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 75b87098f90611140d2c43bb596e7c5d50dab9c47fc49426d5bcbbe0095c3847
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188818"
 ---
 # <a name="audio-in-mixed-reality"></a>混合現實的音效
 
@@ -73,7 +73,7 @@ RoboRaid 是適用于 HoloLens 的高能源射擊。 RoboRaid 案例研究的 [�
 
 ## <a name="spatialization"></a>空間化
 
-Spatialization 是空間音訊的方向元件。 若為7.1 家用劇院設定，spatialization 就像在 loudspeakers 之間移動一樣簡單。 但對於混合式的耳機，使用 HRTF 型技術很重要且舒適。 Windows 提供以 HRTF 為基礎的 spatialization，這項支援在 HoloLens 2 的硬體加速。
+Spatialization 是空間音訊的方向元件。 若為7.1 家用劇院設定，spatialization 就像在 loudspeakers 之間移動一樣簡單。 但對於混合式的耳機，使用 HRTF 型技術很重要且舒適。 Windows 提供以 HRTF 為基礎的 spatialization，而且這項支援是 HoloLens 2 的硬體加速。
 
 <br>
 
@@ -87,15 +87,15 @@ Spatialization 可以改善混合現實應用程式中的許多音效。 Spatial
 
 Hrtf 會操控各頻間的耳之間的層級和階段差異。 它們是以人類 head、torso 和 ear (pinnae) 的實體模型和測量為基礎。 我們的大腦會回應這些差異，以提供音效的觀察方向。
 
-每個人都有獨特的 ear 形狀、前端大小和 ear 定位。 因此最適合您的 Hrtf。 為了提高 spatialization 準確度，HoloLens 會使用您的 pupilary 距離，從耳機顯示器 (IPD) ，以調整您的前端大小 Hrtf。
+每個人都有獨特的 ear 形狀、前端大小和 ear 定位。 因此最適合您的 Hrtf。 為了提高 spatialization 精確度，HoloLens 會使用您的 pupilary 間距離，從耳機顯示 (IPD) ，以調整您的前端大小 hrtf。
 
 ### <a name="spatializer-platform-support"></a>空間定位器平臺支援
 
-Windows 透過 [ISPATIALAUDIOCLIENT API](/windows/win32/coreaudio/spatial-sound)提供 spatialization，包括 hrtf。 此 API 會向應用程式公開 HoloLens 2 HRTF 硬體加速。
+Windows 透過[ISpatialAudioClient API](/windows/win32/coreaudio/spatial-sound)提供 spatialization，包括 hrtf。 此 API 會向應用程式公開 HoloLens 2 HRTF 硬體加速。
 
 ### <a name="spatializer-middleware-support"></a>空間定位器中介軟體支援
 
-下列協力廠商音訊引擎可使用 Windows 的 Hrtf 支援。
+下列協力廠商音訊引擎可使用 Windows hrtf 的支援。
 * [Unity 音訊引擎外掛程式](../develop/unity/spatial-sound-in-unity.md)
 * [Wwise 音訊引擎外掛程式](https://www.audiokinetic.com/products/plug-ins/msspatial/)
 
@@ -103,7 +103,7 @@ Windows 透過 [ISPATIALAUDIOCLIENT API](/windows/win32/coreaudio/spatial-sound)
 
 空間音訊大約是方向。 其他維度包括遮蔽、障礙物、回音、傳送和來源模型。 這些維度 *統稱為聲場。* 在沒有聲場的情況下，hrtf 音效缺乏認知距離。
 
-聲場的治療範圍從簡單到複雜。 您可以使用任何音訊引擎所支援的回音，將 hrtf 音效推送至接聽程式的環境。 聲場系統（例如 [聲場專案](/gaming/acoustics/what-is-acoustics)  ）提供更豐富且更吸引人的聲場處理。 聲場專案可以建立音效上牆、大門和其他場景幾何的效果模型。 在開發階段已知相關場景幾何的情況下，這是有效的選項。
+聲場的治療範圍從簡單到複雜。 您可以使用任何音訊引擎所支援的回音，將 hrtf 音效推送至接聽程式的環境。 聲場系統（例如[聲場專案](/gaming/acoustics/what-is-acoustics)）提供更豐富且更吸引人的聲場處理。 Project聲場可將牆、大門和其他場景幾何的效果模型在音效上。 在開發階段已知相關場景幾何的情況下，這是有效的選項。
 
 ## <a name="next-steps"></a>後續步驟
 

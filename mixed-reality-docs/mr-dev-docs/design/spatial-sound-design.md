@@ -5,13 +5,13 @@ author: kegodin
 ms.author: v-hferrone
 ms.date: 11/02/2019
 ms.topic: article
-keywords: Windows Mixed Reality、空間音效、設計、樣式、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、手勢、互動、衰減
-ms.openlocfilehash: d51fbdf16d7186c386f124c773f75dacc8c157fd
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: Windows Mixed Reality、空間音效、設計、樣式、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、手勢、互動、衰減
+ms.openlocfilehash: 687811f23e11cadf6e75129098c9feb0393009f819eb961cf2f55a3208cc5f96
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489208"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208958"
 ---
 # <a name="how-to-use-sound-in-mixed-reality-applications"></a>如何在混合現實應用程式中使用音效
 
@@ -119,7 +119,7 @@ Spatialization 會帶來一些 CPU 成本。 許多應用程式都有兩個同�
 
 ### <a name="which-spatialization-technology-to-use"></a>要使用的 spatialization 技術
 
-使用耳機或 HoloLens 喇叭， (以) 為基礎的 spatialization 技術，請使用前端相關的轉移功能。 這些技術會針對實體世界中的標頭，建立音效傳播的模型。 即使音效來源位於某一端的一端，音效也會隨著衰減和延遲而散佈到遙遠的 ear。 說話者的移動只依賴衰減，並且在當音效位於右邊時，在左方的 ear 中套用總衰減。 這項技術對於「一般聽力」接聽程式很不舒服，而且在一個 ear 中有聽力障礙的接聽程式無法存取。
+使用耳機或 HoloLens 喇叭， (以) 為基礎的 spatialization 技術，使用與 head 相關的傳送功能。 這些技術會針對實體世界中的標頭，建立音效傳播的模型。 即使音效來源位於某一端的一端，音效也會隨著衰減和延遲而散佈到遙遠的 ear。 說話者的移動只依賴衰減，並且在當音效位於右邊時，在左方的 ear 中套用總衰減。 這項技術對於「一般聽力」接聽程式很不舒服，而且在一個 ear 中有聽力障礙的接聽程式無法存取。
 
 ## <a name="next-steps"></a>下一步
 

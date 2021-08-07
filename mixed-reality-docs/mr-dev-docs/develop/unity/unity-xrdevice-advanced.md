@@ -6,12 +6,12 @@ ms.author: vladkol
 ms.date: 02/25/2021
 ms.topic: article
 keywords: unity、mixed reality、native、xrdevice、spatialcoordinatesystem、holographicframe、holographiccamera、ispatialcoordinatesystem、iholographicframe、iholographiccamera、getnativeptr、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: c202c698fe55bcd3215850579166ebcb8d4b8910
-ms.sourcegitcommit: 441ef99e6090081c6cd3aa88ed21e13e941f0cc6
+ms.openlocfilehash: 63ee9c33a972cb918f141df3b4c1608a561b96dc5c37910deb77b089f7be69b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/09/2021
-ms.locfileid: "102475069"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208397"
 ---
 # <a name="mixed-reality-native-interop-in-unity"></a>Unity 中的混合現實原生 interop
 
@@ -25,7 +25,7 @@ ms.locfileid: "102475069"
 
 `IntPtr`從上述其中一個方法取得之後 (不需要 MRTK) ，請使用下列程式碼片段將其封送處理至 managed 物件。
 
-如果您使用的是 [MixedReality DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)，您可以使用方法，從原生指標建立 managed 物件 `FromNativePtr()` ：
+如果您使用的是[Microsoft，Windows。MixedReality. DotNetWinRT](https://www.nuget.org/packages/Microsoft.Windows.MixedReality.DotNetWinRT)，您可以使用方法，從原生指標建立 managed 物件 `FromNativePtr()` ：
 
 ```cs
 var worldOrigin = Microsoft.Windows.Perception.Spatial.SpatialCoordinateSystem.FromNativePtr(spatialCoordinateSystemPtr);
@@ -41,7 +41,7 @@ var worldOrigin = Marshal.GetObjectForIUnknown(spatialCoordinateSystemPtr) as Wi
 
 ### <a name="converting-between-coordinate-systems"></a>在座標系統之間轉換
 
-Unity 使用左手型座標系統，而 Windows 感知 Api 則使用右手座標系統。 若要在這兩個慣例之間轉換，您可以使用下列協助程式：
+Unity 使用左手型座標系統，而 Windows 認知 api 使用右手座標系統。 若要在這兩個慣例之間轉換，您可以使用下列協助程式：
 
 ```cs
 namespace NumericsConversion
@@ -70,7 +70,7 @@ namespace NumericsConversion
 ### <a name="using-holographicframe-native-data"></a>使用 HolographicFrame 的原生資料
 
 > [!NOTE]
-> 變更透過 HolographicFrameNativeData 接收之原生物件的狀態，可能會導致無法預期的行為和轉譯成品，特別是當 Unity 也有相同狀態的原因。  例如，您不應該呼叫 HolographicFrame UpdateCurrentPrediction，否則 Unity 以該畫面格呈現的姿勢預測將會與 Windows 預期的姿勢不同步，這 [會減少全](../platform-capabilities-and-apis/hologram-stability.md)像全像的情況。
+> 變更透過 HolographicFrameNativeData 接收之原生物件的狀態，可能會導致無法預期的行為和轉譯成品，特別是當 Unity 也有相同狀態的原因。  例如，您不應該呼叫 HolographicFrame UpdateCurrentPrediction，否則 Unity 以該畫面格轉譯的姿勢預測，將不會與 Windows 預期的結果同步，這[會減少全](../platform-capabilities-and-apis/hologram-stability.md)像全像。
 
 如果您需要存取原生介面以進行轉譯或偵錯工具，請使用原生外掛程式或 c # 程式碼中 HolographicFrameNativeData 的資料。
 

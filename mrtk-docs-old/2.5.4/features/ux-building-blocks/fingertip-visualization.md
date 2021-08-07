@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Fingertip
-ms.openlocfilehash: 11cb111288197f42d2616c3b07897b737f440f43
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f6da8562ac1d575f934061b22466be0653bcb245b3711c557f484df4dd59db2a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686391"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188826"
 ---
 # <a name="fingertip-visualization"></a>Fingertip 視覺效果
 

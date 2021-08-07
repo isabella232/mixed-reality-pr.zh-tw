@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，入門，設定，混合實境入口
 appliesto:
 - Windows 10
-ms.openlocfilehash: a0ce559372d854e5f0bd51d25d112ba285e4d81e
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 1ac7ab79b6d28a44636fc16859456eb7af329a215e2d6718d0190b86281d0b67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944739"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115186936"
 ---
 # <a name="install-windows-mixed-reality-software"></a>安裝 Windows Mixed Reality 軟體
 
@@ -22,7 +22,7 @@ ms.locfileid: "107944739"
 
 ## <a name="launch-mixed-reality-portal"></a>啟動混合實境入口
 
-當您插入 Windows Mixed Reality 耳機並成功安裝驅動程式之後，混合實境入口 (的 MRP) 將會在您的桌面上自動啟動。 如果入口網站未啟動，您隨時都可以從 [ **開始 >] 混合實境入口** 開啟 [混合現實入口網站]。 入口網站啟動後，請選取 **開始**
+當您插入 Windows Mixed Reality 耳機並成功安裝驅動程式之後，混合實境入口 (的 MRP) 將會在您的桌面上自動啟動。 如果入口網站未啟動，您隨時都可以從 [ **開始 >] 混合實境入口** 開啟 [混合現實入口網站]。 入口網站啟動後，請選取 **入門**
 
 ![歡迎來到混合實境](images/1050px-mixedrealityportal.png)
 
@@ -56,11 +56,11 @@ Windows Mixed Reality 的大小為 1 GB，而您的下載時間會視您的網�
 如果未列出，請嘗試下列動作：
 
 * 將耳機插入電腦上的不同埠（如果有的話）。
-* 從 [Windows Update](https://support.microsoft.com/help/12373)檢查是否有最新的軟體更新。
+* 從[Windows Update](https://support.microsoft.com/help/12373)檢查是否有最新的軟體更新。
 * 卸載並重新安裝 Windows Mixed Reality：
     1. 將您的耳機與電腦中斷連線， (兩個纜線) 。
-    2. 選取 [ **> 混合現實 > 卸載] 設定**。
-    3. 將您的動作控制器：選取 **> 裝置 > 藍牙 & 其他裝置的設定**。 選取每個控制器，然後選取 [ **移除裝置**]。
+    2. 選取 **設定 > 混合現實 > 卸載**]。
+    3. 將您的動作控制器：選取 **設定 > 裝置 > 藍牙 & 其他裝置**。 選取每個控制器，然後選取 [ **移除裝置**]。
     4. 若要重新安裝 Windows Mixed Reality，請將您的耳機插回您的電腦。
 
 ## <a name="common-error-messages"></a>常見的錯誤訊息
@@ -69,8 +69,8 @@ Windows Mixed Reality 的大小為 1 GB，而您的下載時間會視您的網�
 
 | 如果您看到此訊息 | 請嘗試這樣做 |
 | --- | --- |
-| 檢查 USB 纜線 | 將您的耳機連接至不同的 USB 埠 (，並確定它是 SuperSpeed USB 3.0) 。 此外，請嘗試移除耳機與電腦之間的任何擴充項或中樞。 |
-| 檢查您的顯示器纜線 | 請嘗試下列步驟： <ul><li>將您的耳機連接至 DisplayPort 1.2 或更新版本，或 HDMI 1.4 或更新版本。 請確定埠與您電腦上最先進的圖形配接器相對應。</li><li>如果您是使用介面卡，請確定其4K 能夠使用</li><li>嘗試使用不同的 HDMI 埠</li><li>如果您已將外部監視器插入至 HDMI 埠，請嘗試將它插入 DisplayPort，然後將 HDMI 埠用於您的耳機</li></ul> |
+| 檢查 USB 纜線 | 連線您的耳機至不同的 USB 埠 (，並確定它是 SuperSpeed USB 3.0) 。 此外，請嘗試移除耳機與電腦之間的任何擴充項或中樞。 |
+| 檢查您的顯示器纜線 | 請嘗試下列步驟： <ul><li>連線您的耳機至 DisplayPort 1.2 或更新版本，或 HDMI 1.4 或更新版本。 請確定埠與您電腦上最先進的圖形配接器相對應。</li><li>如果您是使用介面卡，請確定其4K 能夠使用</li><li>嘗試使用不同的 HDMI 埠</li><li>如果您已將外部監視器插入至 HDMI 埠，請嘗試將它插入 DisplayPort，然後將 HDMI 埠用於您的耳機</li></ul> |
 | 發生錯誤 | 遵循上述的一般疑難排解步驟。 |
 
 ## <a name="review-and-accept-terms-and-conditions"></a>審核並接受條款及條件

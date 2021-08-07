@@ -3,17 +3,17 @@ title: 使用 WebVR 搭配 Windows Mixed Reality
 description: 瞭解 WebVR 的基本概念、如何搭配 Windows Mixed Reality 耳機的 Microsoft Edge 以及常見的疑難排解問題。
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，WebVR，Edge，Microsoft Edge，網頁流覽
-ms.openlocfilehash: 89d9e51bf4adb63e7836968a0112849f7ac403d0
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: f61fff3c8d5083236c10d79d3824c489111f8d2be2138984f5613f295849bdf2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581757"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214122"
 ---
 # <a name="using-webvr-with-windows-mixed-reality"></a>使用 WebVR 搭配 Windows Mixed Reality
 
 >[!IMPORTANT]
->大部分的新式網頁瀏覽器都已淘汰 WebVR 的支援，以促進 WebXR，這是建立 VR 耳機之沉浸式 web 體驗的新標準。 請安裝 [新的 Microsoft Edge](using-microsoft-edge.md) 以 WebXR 支援。
+>大部分的新式網頁瀏覽器都已淘汰 WebVR 的支援，以促進 WebXR，這是建立 VR 耳機之沉浸式 web 體驗的新標準。 請安裝[新的 Microsoft Edge](using-microsoft-edge.md)以 WebXR 支援。
 
 ## <a name="what-is-webvr"></a>什麼是 WebVR
 
@@ -39,7 +39,7 @@ WebVR 是一種技術，可讓網站作者將 VR 功能新增至網頁。 頁面
 
 ## <a name="ive-found-a-website-with-webvr-that-doesnt-work-in-windows-mixed-reality-what-do-i-do"></a>我發現有 WebVR 的網站在 Windows Mixed Reality 中無法運作。 我該怎麼辦
 
-您可以直接向 [問題追蹤](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/)程式中的 Microsoft Edge 瀏覽器小組報告已中斷的網站，或使用 [#EdgeBug](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/)主題標籤，透過 twitter 來回報。
+您可以直接向[問題追蹤](https://developer.microsoft.com/en-us/microsoft-edge/platform/issues/)程式中的 Microsoft Edge 瀏覽器小組報告已中斷的網站，或使用[#EdgeBug](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/)主題標籤，透過 twitter 來回報。
 
 您也可以使用類別目錄下的 Windows 意見反應中樞應用程式來記錄 bug：
 

@@ -5,13 +5,13 @@ author: yonet
 ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
-keywords: JavaScript、WebXR、WinMR、WebAR、WebVR、WindowsMixedReality、HoloLens、windows mixed reality、web vr、web xr、web mr、web ar、360、360影片、360影片、360相片、360相片、360內容、沉浸式網路、沉浸式 web、IW、immersiveweb
-ms.openlocfilehash: 311241d9dec6f5d086a45766c040b1b2b9eb4128
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+keywords: JavaScript、WebXR、WinMR、WebAR、WebVR、WindowsMixedReality、HoloLens、windows mixed reality、web vr、web xr、web mr、web ar、360、360影片、360影片、360相片、360相片、360內容、沉浸式 web、沉浸式 web、IW、immersiveweb
+ms.openlocfilehash: de6314b5651740eca23a9078d4b05e1d92344d1742ea433d7b924cbde4457b8c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394342"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210496"
 ---
 # <a name="javascript-development-overview"></a>JavaScript 開發概觀
 
@@ -35,7 +35,7 @@ JavaScript 是世界上最受歡迎的程式設計語言之一！ 它在網路�
 |[**Three.js**](https://threejs.org) <br/><br/>Three.js 是一種熱門的3D 程式庫，可讓您建立沉浸式體驗。 深入瞭解檔頁面中的 [three.js](https://threejs.org/docs/index.html#manual/en/introduction/Creating-a-scene) ，以及探索 [範例](https://threejs.org/examples/#webgl_animation_cloth)。 |![Three.js](images/three.js.example.png)  |
 |[**WebGL**](https://developer.mozilla.org/en-US/docs/Web/API/WebGL_API)  <br/><br/>您可以使用 WebGL Api 直接存取 WebXR 裝置 Api。 WebGL (Web 圖形程式庫) 是一種 JavaScript API，可在任何相容的網頁瀏覽器內轉譯高效能的互動式3D 和2D 圖形，而不需要使用外掛程式。 |![WebGL](images/webgl.example.png)  |
 
-## <a name="next-steps"></a>後續步驟
+## <a name="next-steps"></a>下一步
 
 深入瞭解如何開始使用我們的教學課程。
 

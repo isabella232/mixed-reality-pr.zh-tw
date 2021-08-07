@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器
-ms.openlocfilehash: 9d0fa432f2e653cdd6820cb6c779cc1acc5c4b15
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 2599e2f360afa4518102ab9535608e9d378264ae87f84a36823d460f934d6a05
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213214"
 ---
 # <a name="4-enabling-and-disabling-spatialization-at-run-time"></a>4. 在執行時間啟用和停用 spatialization
 
@@ -26,11 +26,11 @@ ms.locfileid: "110712745"
 
 ## <a name="add-spatialization-control-script"></a>新增 spatialization 控制項腳本
 
- 以滑鼠右鍵按一下 [專案] 視窗，然後選擇 [**建立**  >  **c # 腳本**] 來建立新的 c # 腳本，輸入適合腳本的名稱，例如 _SpatializeOnOff_：
+ 在 [Project] 視窗中按一下滑鼠右鍵，然後選擇 [**建立**  >  **c # 腳本**] 來建立新的 c # 腳本，輸入適合腳本的名稱，例如 _SpatializeOnOff_：
 
 ![建立指令碼](images/spatial-audio/spatial-audio-04-section1-step1-1.PNG)
 
-按兩下 [專案] 視窗中的腳本，在 Visual Studio 中開啟它。 以下列內容取代預設腳本內容：
+按兩下 Project 視窗中的腳本，在 Visual Studio 中開啟它。 以下列內容取代預設腳本內容：
 
 > [!NOTE]
 > 腳本的幾行批註化。下一章將取消批註這些行 [：使用回音來增加空間音訊的距離](unity-spatial-audio-ch5.md)。

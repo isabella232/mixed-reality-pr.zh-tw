@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、校正、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、意圖、動作
-ms.openlocfilehash: 6bcd64a0ecc6e5c92966569d0675703afde5cbd5
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ce8ffcb6b8b59b6b0484ba4b3db256a8df5810ea2719416bea9e3f4366ad6afe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906844"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214137"
 ---
 # <a name="eye-tracking-on-hololens-2"></a>HoloLens 2 的眼球追蹤
 
@@ -48,11 +48,11 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 ## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全像投影標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="calibration"></a>校正 
 
@@ -63,7 +63,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 * 使用者有注意力，未遵循校正目標
 * 使用者有特定類型的 contact 鏡頭和眼鏡，系統尚不支援 
 * 使用者有特定的眼睛生理學、眼睛狀況，或有系統尚未支援的眼睛外科  
-* 外部因素抑制可靠的眼睛追蹤，例如 HoloLens 面板上的汙跡或眼鏡、密集的直接陽光和遮蔽，因為眼睛正面的頭髮
+* 外部因素抑制可靠的眼睛追蹤，例如 HoloLens 面板或眼鏡上的塗抹、密集的直接陽光和遮蔽，因為眼睛正面的頭髮
 
 開發人員應務必為使用者提供適當的支援，讓他們能夠在無法順利校正)  (的情況之下，使用眼睛追蹤資料。 我們已在此頁面底部的區段中，提供回復解決方案的建議。 
 
@@ -73,7 +73,7 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 ## <a name="available-eye-tracking-data"></a>可用的眼睛追蹤資料
 
-在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的 [眼睛追蹤 API](/uwp/api/windows.perception.people.eyespose) 所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_。
+在深入探討眼睛輸入的特定使用案例之前，我們想要簡短指出 HoloLens 2 的[眼睛追蹤 API](/uwp/api/windows.perception.people.eyespose)所提供的功能。 開發人員可存取單一眼睛的光線 (注視的原點和方向) 大約 _30 FPS (30 Hz)_。
 如需有關如何存取眼睛追蹤資料的詳細資訊，請參閱我們的開發人員指南，以瞭解如何在您的 [DirectX](../develop/native/gaze-in-directx.md) 和 [Unity 中](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)使用眼睛。
 
 預測的眼睛大約是在實際目標 (的視覺角度1.5 度以內，請參閱下圖) 。 由於預期會有些許的 imprecisions，因此開發人員應該規劃這項下限值周圍的一些邊界 (例如，2.0-3.0 度可能會導致) 更熟悉的體驗。 我們將在下方討論如何處理小型目標的選取。 為了讓眼球追蹤精準運作，每個使用者都必須接受眼球追蹤使用者校正。 
@@ -107,12 +107,12 @@ HoloLens 2 讓開發人員能夠使用使用者所查看的資訊，讓開發人
 
 其他 _隱含動作_ 的使用案例可能包括：
 - **智慧型通知：** 在您想要的位置上快顯通知的感到苦惱？ 考慮到使用者所注意的內容，您可以藉由從使用者目前撥雲見日的位置來抵銷通知，讓這項體驗更好。 這會限制分散注意力，並在使用者完成閱讀之後自動將其關閉。 
-- **用心全像影像：** Gazed 時，會稍微反應的全像投影。 這可以從稍微照亮的 UI 元素範圍內，以緩慢的綻放花卉為虛擬狗，從使用者回頭看看，並 wagging 它的結尾。 這項互動可能會在您的應用程式中提供連線能力和滿意度的有趣意義。
+- 用心的全像 **：** 在 gazed 時稍微反應的全像投影。 這可以從稍微照亮的 UI 元素範圍內，以緩慢的綻放花卉為虛擬狗，從使用者回頭看看，並 wagging 它的結尾。 這項互動可能會在您的應用程式中提供連線能力和滿意度的有趣意義。
 
 ### <a name="attention-tracking"></a>注意力追蹤
 
 使用者所查看之位置或位置的資訊，是一種功能強大的工具。 它有助於評估設計的可用性，並識別工作流程中的問題，使其更有效率。
-目視追蹤視覺效果和分析是各種應用程式區域中常見的作法。 有了 HoloLens 2，我們會提供新的維度來瞭解這一點，因為3D 全息圖可放置在真實世界的內容中，並據以進行評估。 [Mixed Reality 工具](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)組提供記錄和載入眼睛追蹤資料的基本範例，以及如何將其視覺化。
+目視追蹤視覺效果和分析是各種應用程式區域中常見的作法。 有了 HoloLens 2，我們會提供新的維度來瞭解這一點，因為3d 全息圖可放置在真實世界的內容中，並據以進行評估。 [Mixed Reality 工具](/windows/mixed-reality/mrtk-unity/features/input/eye-tracking/eye-tracking-main)組提供記錄和載入眼睛追蹤資料的基本範例，以及如何將其視覺化。
 Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊的使用方式有明智且透明的體驗。  我們將與我們的開發人員和 UX 小組合作，為協力廠商提供指導方針，以確保體驗是以使用者為中心。  
 
 同屬此領域的其他應用程式包括： 
@@ -123,7 +123,7 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 
 ### <a name="other-use-cases"></a>其他使用案例
 
-- **遊戲：** 希望有超能力嗎？ 機會來了！ 您可以透過開始來 levitate 全像投影。 從您的眼睛放大鐳射字形狀-在 RoboRaid 中試用以 [進行 HoloLens 2](https://www.microsoft.com/p/roboraid/9nblggh5fv3j)。
+- **遊戲：** 希望有超能力嗎？ 機會來了！ 您可以透過開始來 levitate 全像投影。 從您的眼睛放大鐳射字形狀-在 RoboRaid 中試用以[進行 HoloLens 2](https://www.microsoft.com/p/roboraid/9nblggh5fv3j)。
 將敵人變成石頭或凍結它們。 您可以用 X 光視線掃描建築物。 您想得到的都行！
 要注意的是，不讓使用者覺得更多，請查看我們的 [眼睛型輸入設計指導方針](eye-gaze-interaction.md)。
 
@@ -146,7 +146,7 @@ Microsoft 致力於促進創新，同時確保使用者對其眼睛追蹤資訊�
 * 使用者略過 [校正](/hololens/hololens-calibration)。   
 * 已校正使用者，但決定不授與應用程式使用其眼睛追蹤資料的許可權。    
 * 使用者有唯一的眼鏡或某些系統尚未支援的眼睛狀況。 
-* 外部因素抑制可靠的眼睛追蹤，例如 HoloLens 面板上的汙跡或眼鏡、密集的直接陽光和遮蔽，因為眼睛正面的頭髮。
+* 外部因素抑制可靠的眼睛追蹤，例如 HoloLens 面板或眼鏡上的塗抹、密集的直接陽光和遮蔽，因為眼睛正面的頭髮。
 
 開發人員應該確保這些使用者有適當的回溯支援。 在 [ [DirectX 中的眼睛追蹤](../develop/native/gaze-in-directx.md#fallback-when-eye-tracking-isnt-available) ] 頁面上，我們會說明偵測是否有眼睛追蹤資料的必要 api。 
 

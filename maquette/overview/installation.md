@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
 keywords: Windows Mixed Reality、Maquette、原型設計、混合現實、虛擬實境、VR、MR、意見反應、意見反應中樞、bug
-ms.openlocfilehash: ba0064326e83f04b056c0baa2f86f718e41bedfe
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: c31f461adbe553a5c10e7acfff3037ea0c2b65caf2bbe63bfc234e067a6369e8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935361"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214757"
 ---
 # <a name="installing-maquette"></a>安裝 Maquette
 
@@ -25,7 +25,7 @@ MaquetteScript 開發主要是在 VSCode 中完成。 MaquetteScript 可以從�
 
 * 下載並安裝 [VSCode](https://code.visualstudio.com)。 
 
-Maquette javascript 延伸模組位於 [Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-maquette.vscode-maquette-javascript)中。
+Maquette javascript 延伸模組位於[Visual Studio Marketplace](https://marketplace.visualstudio.com/items?itemName=ms-maquette.vscode-maquette-javascript)中。
 
 * 執行擴充功能的 [安裝程式](vscode:extension/ms-maquette.vscode-maquette-javascript)。
 

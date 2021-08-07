@@ -1,21 +1,21 @@
 ---
 title: 測試 HoloLens 上的應用程式
-description: 深入瞭解您的 HoloLens 混合現實應用程式測試和效能優化的一般指引和建議。
+description: 瞭解 HoloLens 混合現實應用程式的測試和效能優化的一般指引和建議。
 author: jonmlyons
 ms.author: jlyons
 ms.date: 02/24/2019
 ms.topic: article
 keywords: HoloLens，測試
-ms.openlocfilehash: b6f1c6bcff9f9db1a1fb7f5b3ea9d2c4c2be969a
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2f423560191fea8b516db80d533898b5a1f15973442e7bb6cd8878d486e0ffba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583768"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212090"
 ---
 # <a name="testing-your-app-on-hololens"></a>測試 HoloLens 上的應用程式
 
-測試 HoloLens 應用程式類似于測試 Windows 應用程式。 您仍然需要考慮功能、互通性、效能、安全性、可靠性等等。 不過，某些不會在電腦或電話應用程式中快顯的區域需要進行特殊處理。 全像攝影應用程式需要在各式各樣的環境中順利執行。 他們也需要隨時維護效能和使用者的緩和。 本指南可協助您測試這些區域。
+測試 HoloLens 的應用程式類似于測試 Windows 應用程式。 您仍然需要考慮功能、互通性、效能、安全性、可靠性等等。 不過，某些不會在電腦或電話應用程式中快顯的區域需要進行特殊處理。 全像攝影應用程式需要在各式各樣的環境中順利執行。 他們也需要隨時維護效能和使用者的緩和。 本指南可協助您測試這些區域。
 
 ## <a name="performance"></a>效能
 
@@ -35,7 +35,7 @@ ms.locfileid: "98583768"
 
 ### <a name="environmental-test-matrix"></a>環境測試矩陣
 
-![適用于 HoloLens 應用程式開發的環境測試矩陣](images/environment-matrix-600px.png)
+![HoloLens 應用程式開發的環境測試矩陣](images/environment-matrix-600px.png)
 
 ## <a name="comfort"></a>舒適度
 
@@ -88,7 +88,7 @@ ms.locfileid: "98583768"
 
 ## <a name="telemetry"></a>遙測
 
-使用遙測和分析來引導您。 將分析整合到您的應用程式，可協助您深入瞭解您的應用程式，並瞭解您的 Beta 測試人員和使用者。 這種資料可以用來在提交至存放區之前，以及在未來的更新中，協助您將應用程式優化。 其中有許多分析選項。 如果您不確定要從何處著手，請參閱 [App Insights](https://www.visualstudio.com/products/application-insights-vs.aspx)。
+使用遙測和分析來引導您。 將分析整合到您的應用程式，可協助您深入瞭解您的應用程式，並瞭解您的 Beta 測試人員和使用者。 這種資料可以用來在提交至存放區之前，以及在未來的更新中，協助您將應用程式優化。 其中有許多分析選項。 如果您不確定要從何處著手，請查看[應用程式 Insights](https://www.visualstudio.com/products/application-insights-vs.aspx)。
 
 要考慮的問題：
 1. 使用者使用空間的方式為何？
@@ -98,21 +98,21 @@ ms.locfileid: "98583768"
 5. 使用者嘗試的最常見使用路徑為何？
 6. 使用者是否碰到非預期的狀態或錯誤？
 
-## <a name="emulator-and-simulated-input"></a>模擬器和模擬輸入
+## <a name="emulator-and-simulated-input"></a>Emulator 和模擬輸入
 
 [HoloLens 模擬器](using-the-hololens-emulator.md)是使用不同類型的模擬使用者特性和空間有效率地測試您的全像攝影應用程式的絕佳方式。 以下是有效使用模擬器來測試應用程式的一些建議：
 1. **使用模擬器的虛擬房間來擴展您的測試。** 模擬器隨附一組虛擬房間，您可用來在更多的環境中測試您的應用程式。
 2. **使用模擬器來查看所有角度的應用程式。** PageUp/PageDn 金鑰會讓您的模擬使用者變得更高或更短。
-3. **使用實際 HoloLens 測試您的應用程式。** HoloLens 模擬器是一個絕佳的工具，可協助您快速地逐一查看應用程式並攔截新的錯誤，但請確定您也先在實體 HoloLens 上進行測試，然後再提交至 Windows Store。 這一點很重要，可確保效能和經驗在真正的硬體上很有説明。
+3. **使用實際的 HoloLens 測試您的應用程式。** HoloLens 的 Emulator 是一個絕佳的工具，可協助您快速地逐一查看應用程式並攔截新的錯誤，但請確定您也先在實體 HoloLens 上進行測試，然後再提交至 Windows 存放區。 這一點很重要，可確保效能和經驗在真正的硬體上很有説明。
 
 ## <a name="automated-testing-with-perception-simulation"></a>使用認知模擬進行自動化測試
 
-有些應用程式開發人員可能會想要將應用程式的測試自動化。 除了簡單的單元測試之外，您還可以使用 HoloLens 中的 [認知模擬](perception-simulation.md) 堆疊，將人類和世界的輸入自動化至您的應用程式。 認知模擬 API 可以將模擬的輸入傳送到 HoloLens 模擬器或實體 HoloLens。
+有些應用程式開發人員可能會想要將應用程式的測試自動化。 除了簡單的單元測試之外，您還可以使用 HoloLens 中的[認知模擬](perception-simulation.md)堆疊，將人類和世界的輸入自動化至您的應用程式。 認知模擬 API 可以將模擬的輸入傳送至 HoloLens 模擬器或實體 HoloLens。
 
 ## <a name="windows-app-certification-kit"></a>Windows 應用程式認證套件
 
-若要為您的應用程式提供最有機會在 Windows 市集中 [發佈](../../distribute/submitting-an-app-to-the-microsoft-store.md)，請先在本機進行驗證並測試，再提交憑證以進行認證。 如果您的應用程式是以 Windows 全像裝置系列為目標， [Windows 應用程式認證套件](/windows/uwp/debug-test-perf/windows-app-certification-kit) 只會在您的電腦上執行本機靜態分析測試。 您的 HoloLens 不會執行任何測試。
+若要為您的應用程式提供最有機會在[Windows 存放區上發佈](../../distribute/submitting-an-app-to-the-microsoft-store.md)，請在提交憑證之前，先在本機進行驗證和測試。 如果您的應用程式以 Windows 為目標。全像裝置系列一樣， [Windows 應用程式認證套件](/windows/uwp/debug-test-perf/windows-app-certification-kit)只會在您的電腦上執行本機靜態分析測試。 HoloLens 不會執行任何測試。
 
 ## <a name="see-also"></a>另請參閱
 
-* [將應用程式提交到 Windows Store](../../distribute/submitting-an-app-to-the-microsoft-store.md)
+* [將應用程式提交至 Windows 存放區](../../distribute/submitting-an-app-to-the-microsoft-store.md)

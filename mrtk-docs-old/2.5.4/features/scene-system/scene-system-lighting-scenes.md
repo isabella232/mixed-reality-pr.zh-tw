@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4cd6b61172f03da99ba33a06d06e20f095572622
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5dfb8337d14c5d361e4a6ff21030a3b7c738908a4cfcd43b07aa006b91b9f8e1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685091"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213156"
 ---
 # <a name="lighting-scene-operations"></a>光源場景作業
 

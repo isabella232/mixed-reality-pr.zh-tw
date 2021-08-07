@@ -1,26 +1,26 @@
 ---
 title: 建立您的第一個 HoloLens Unreal 應用程式
-description: 瞭解如何使用場景物件正確設定 Unreal 專案，並針對 HoloLens 混合現實開發進行輸入互動。
+description: 瞭解如何使用場景物件和 HoloLens 混合現實開發的輸入互動，來正確設定 Unreal 專案。
 author: hferrone
 ms.author: safarooq
 ms.date: 01/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal、Unreal Engine 4、Unreal editor、UE4、HoloLens、HoloLens 2、mixed reality、開發、檔、指南、功能、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移植、升級
-ms.openlocfilehash: 467987f69b50c0ec635c99899d6bcecab5a62af0
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 07ec2760d691938015619d097d214d205cdbab78f250ff9dd8a793dd27f10c4a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "99421427"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209566"
 ---
 # <a name="creating-your-first-hololens-unreal-application"></a>建立您的第一個 HoloLens Unreal 應用程式
 
-本指南將逐步引導您在 Unreal 引擎中取得在 HoloLens 上執行的第一個混合現實應用程式。 在 "Hello World" 的傳統中，您將建立簡單的應用程式，以在螢幕上顯示 cube。 為了讓它更有用，您也會建立第一個手勢來旋轉 cube，並結束應用程式。 
+本指南將逐步引導您瞭解如何在 Unreal 引擎的 HoloLens 上執行您的第一個混合現實應用程式。 在 "Hello World" 的傳統中，您將建立簡單的應用程式，以在螢幕上顯示 cube。 為了讓它更有用，您也會建立第一個手勢來旋轉 cube，並結束應用程式。 
 
 ## <a name="objectives"></a>目標
 
-* 開始 HoloLens 專案
+* 啟動 HoloLens Project
 * 啟用正確的外掛程式
 * 建立 ARSessionConfig 資料資產
 * 設定手勢輸入
@@ -32,7 +32,7 @@ ms.locfileid: "99421427"
 您需要的第一個項目是供您使用的專案。 如果您是首次接觸的 Unreal 開發人員，則需要從 Epic Launcher [下載支援檔案](tutorials/unreal-uxt-ch6.md#packaging-and-deploying-the-app-via-device-portal)。
 
 1. 啟動 Unreal Engine
-2. 在 **新的專案類別** 中，選取 [ **遊戲** ]，然後按一下 **[下一步]**：
+2. 在 **新的 Project 類別** 中，選取 [**遊戲**]，然後按一下 **[下一步]**：
 
 ![已反白顯示遊戲的 [最近使用的專案] 視窗開啟](images/unreal-quickstart-img-01.png)
 
@@ -40,12 +40,12 @@ ms.locfileid: "99421427"
 
 ![醒目提示空白範本的 Unreal 專案瀏覽器視窗](images/unreal-quickstart-img-02.png)
 
-4. 在 **專案設定** 中，設定 **c + +、可擴充的3d 或2d、行動/平板** 電腦和 **無入門內容**，然後選擇 [儲存位置]，再按一下 [**建立專案**]。
+4. 在 **Project 設定** 中，設定 **c + +、可擴充的3d 或2d、行動/平板** 電腦和 **無入門內容**，然後選擇儲存位置，然後按一下 [**建立] Project**
 
 > [!NOTE] 
 > 您使用的是 c + +，而不是藍圖專案，以便稍後準備使用 OpenXR 外掛程式。 本快速入門會使用 Unreal 引擎隨附的預設 OpenXR 外掛程式。 不過，建議您下載並使用官方 Microsoft OpenXR 外掛程式。 這需要專案是 c + + 專案。
 
-![醒目提示專案、效能、目標平臺和入門內容選項的 [專案設定] 視窗](images/unreal-quickstart-img-03.png)
+![醒目提示 [專案]、[效能]、[目標平臺] 和 [入門內容] 選項的 Project 設定] 視窗](images/unreal-quickstart-img-03.png)
 
 您的新專案應該會自動在 [Unreal 編輯器] 中開啟，這表示您已經準備好進行下一節。
 
@@ -54,9 +54,9 @@ ms.locfileid: "99421427"
 在您開始將物件新增至場景之前，必須啟用兩個外掛程式。
 
 1. 開啟 [編輯] > [外掛程式]，然後從內建選項清單中選取 [擴增實境]。
-* 向下滾動至 **HoloLens** 並勾選 [**啟用**]
+* 向下滾動至 **HoloLens** 並核取 [**已啟用**]
 
-![開啟並醒目提示 [增強的事實] 區段的 [外掛程式] 視窗](images/unreal-quickstart-img-04.png)
+![開啟 [增強的現實] 區段並醒目提示 HoloLens 的 [外掛程式] 視窗](images/unreal-quickstart-img-04.png)
 
 2. 在右上方的搜尋方塊中輸入 **OpenXR** ，並啟用 **OpenXR** 和 **OpenXRMsftHandInteraction** 外掛程式：
 
@@ -136,7 +136,7 @@ Unreal 中的 AR 工作階段本身不會發生。 若要使用工作階段，�
 
 ## <a name="setting-up-inputs"></a>設定輸入
 
-1. 選取 [ **編輯] > 專案設定** ，並移至 **引擎 > 輸入**
+1. 選取 [**編輯] > Project 設定** 並移至 **引擎 > 輸入**
 2. 選取 [ **+** **動作** 對應] 旁的圖示，然後建立 **RightPinch** 和 **LeftPinch** 動作：
 
 ![醒目提示右邊和左方縮小動作對應的系結輸入設定](images/unreal-quickstart-img-15.jpg)
@@ -150,8 +150,8 @@ Unreal 中的 AR 工作階段本身不會發生。 若要使用工作階段，�
 現在我們已設定好輸入，接下來我們可以看到有趣的部分：加入手勢！ 讓我們在右邊的縮小上旋轉 cube，並在剩餘的縮小時結束應用程式。
 
 1. 開啟 **層級藍圖** ，並新增 **InputAction RightPinch** 和 **InputAction LeftPinch**
-* 將適當的縮小事件連接到 **AddActorLocalRotation** ，並 **將目標** 和 **差異旋轉** 設定為 **X = 0、Y = 0** 和 **Z = 20**。 Cube 現在會在您每次縮小時以20度旋轉
-* 連接左方的縮小事件以結束 **遊戲**
+* 連線適當的縮小事件至 **AddActorLocalRotation** ，並將您的 **Cube** 設定為 **X = 0、Y = 0** 和 **Z = 20** 的目標和 **差異旋轉**。 Cube 現在會在您每次縮小時以20度旋轉
+* 連線左方的縮小事件以結束 **遊戲**
 
 ![層級 bluprint 開啟，其中包含右和左縮小事件的輸入動作](images/unreal-quickstart-img-17.jpg)
 

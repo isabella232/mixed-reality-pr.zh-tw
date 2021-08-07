@@ -6,16 +6,16 @@ ms.author: alexturn
 ms.date: 12/1/2020
 ms.topic: article
 keywords: 運動控制器、unity、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: d8f9ce292c0ab1cfa89faf58f0e5b90322192b35
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: ccda5b11190e829ccc655989a6f679ef6ef647a920c01a3182548b23a3d85084
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394512"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216236"
 ---
 # <a name="motion-controllers-in-unity"></a>Unity 中的動作控制器
 
-您可以透過兩種主要方式，在您 [的 [Unity](gaze-in-unity.md)]、[ [手手勢](../../design/gaze-and-commit.md#composite-gestures) ] 和 [ [運動] 控制器](../../design/motion-controllers.md) 中針對 HoloLens 和沉浸式 HMD 採取行動。 您可以透過 Unity 中的相同 Api，存取兩個空間輸入來源的資料。
+您可以透過兩種主要方式，在您[的「Unity](gaze-in-unity.md)」、「[手手勢](../../design/gaze-and-commit.md#composite-gestures)」和「[運動控制器](../../design/motion-controllers.md)」中採取行動，HoloLens 和沉浸式 HMD。 您可以透過 Unity 中的相同 Api，存取兩個空間輸入來源的資料。
 
 Unity 提供兩種主要方式來存取 Windows Mixed Reality 的空間輸入資料。 常見的 *GetButton/GetAxis* api 可跨多個 Unity XR sdk 運作，而 Windows Mixed Reality 特定的 *InteractionManager/GestureRecognizer* api 會公開一組完整的空間輸入資料。
 
@@ -37,7 +37,7 @@ Windows Mixed Reality 的按鈕/軸識別碼對應有兩種不同于 OpenVR 的�
 
 <table>
 <tr>
-<th rowspan="2">輸入 </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">通用 Unity API</a><br /> (輸入. GetButton/GetAxis)  </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">Windows MR 專用輸入 API</a><br /> (XR。Wsa。輸入) </th>
+<th rowspan="2">輸入 </th><th colspan="2"><a href="motion-controllers-in-unity.md#common-unity-apis-inputgetbuttongetaxis">通用 Unity API</a><br /> (輸入. GetButton/GetAxis)  </th><th rowspan="2"><a href="motion-controllers-in-unity.md#windows-specific-apis-xrwsainput">WindowsMR 專用輸入 API</a><br /> (XR。Wsa。輸入) </th>
 </tr><tr>
 <th> 左手 </th><th> 右手</th>
 </tr><tr>
@@ -107,7 +107,7 @@ If you're using the HP Reverb G2 controllers, refer to the table below for butto
 
 Mixed Reality OpenXR 外掛程式提供額外的輸入互動設定檔，對應至標準 **InputFeatureUsage** s，如下所述：
 
-| InputFeatureUsage | HP 回音 (OpenXR)  | HoloLens (OpenXR)  |
+| InputFeatureUsage | HP 回音 (OpenXR)  | HoloLens手 (OpenXR)  |
 | ---- | ---- | ---- |
 | primary2DAxis | 操縱 杆 | |
 | primary2DAxisClick | 搖桿-按一下 | |
@@ -127,17 +127,17 @@ Windows Mixed Reality 支援各種外型規格中的動作控制器。 每個控
 
 ### <a name="grip-pose"></a>握住姿勢
 
-底框 **姿勢** 代表使用者棕櫚的位置（由 HoloLens 偵測或保留移動控制器）。
+底框 **姿勢** 代表使用者棕櫚的位置，由 HoloLens 或按住移動控制器來偵測。
 
-在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件**。 視覺化運動控制器時，也會使用底框姿勢。 Windows 為移動控制器提供的 **呈現模型** ，會使用底框姿勢作為其原點和旋轉中心。
+在沉浸式耳機上，把手姿勢最適合用來 **呈現使用者手或****使用者手中所持有的物件**。 視覺化運動控制器時，也會使用底框姿勢。 移動控制器 Windows 所提供的 **呈現模型**，會使用底框姿勢作為其原點和旋轉中心。
 
 此底框姿勢的定義方式明確如下：
-* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 運動控制器上，此位置通常會與 [抓住] 按鈕對齊。
+* 把手 **位置**：自然地按住控制器時的棕櫚距心，向左或向右調整以將位置置中置中。 在 Windows Mixed Reality 動作控制器上，此位置通常會與 [抓住] 按鈕對齊。
 * 底 **圖方向的右軸**：當您完全開啟手來形成平面的5形姿勢時，您的掌上光 (的光線會從左至右向前復原，從右邊的棕櫚) 
 * 底圖 **方向的向前軸**：當您關閉手部分 (時，如同按住控制器) 一樣，也就是由非拇指手指所形成的電子管「轉寄」的光線。
 * 底圖 **方向的向上軸**：右邊和向前定義所隱含的向上軸。
 
-您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 *[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替*) 或透過 WINDOWS MR 專屬 API (*SourceState. SourcePose. TryGetPosition/輪替*，要求 **) 的** 的資料。
+您可以透過 Unity 的跨廠商輸入 API (XR 來存取抓住姿勢 *[。InputTracking](https://docs.unity3d.com/ScriptReference/XR.InputTracking.html)。GetLocalPosition/輪替*) ，或透過 Windows MR 專屬 API (*sourceState. sourcePose. TryGetPosition/輪替*，**要求將資料** 用於底框節點) 。
 
 ### <a name="pointer-pose"></a>指標姿勢
 
@@ -170,9 +170,9 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 
 ## <a name="controller-tracking-state"></a>控制器追蹤狀態
 
-如同耳機，Windows Mixed Reality 運動控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。
+如同耳機，Windows Mixed Reality 移動控制器不需要設定外部追蹤感應器。 相反地，控制器是由耳機本身的感應器追蹤。
 
-如果使用者將控制器移出耳機的觀賞欄位，Windows 會在大部分情況下繼續推斷控制器的位置。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。
+如果使用者將控制器移出耳機的觀賞欄位，Windows 在大部分情況下都會繼續推斷控制器的位置。 如果控制器的長時間遺失視覺追蹤，控制器的位置將會降到大約精確度的位置。
 
 此時，系統會將控制器主體鎖定給使用者，在移動時追蹤使用者的位置，同時仍會使用其內部方向感應器來公開控制器的真實方向。 許多使用控制器來指向和啟動 UI 元素的應用程式，可以正常運作，而不會察覺到使用者注意。
 
@@ -211,13 +211,13 @@ public static readonly InputFeatureUsage<Vector3> PointerPosition = new InputFea
 **Namespace：** *UnityEngine*， *UnityEngine. XR*<br>
 **類型**： *輸入*、 *XR。InputTracking*
 
-Unity 目前使用其一般 *輸入. GetButton/GetAxis* api 來公開 [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html)、 [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html) 和 Windows Mixed Reality 的輸入，包括實習和移動控制器。 如果您的應用程式使用這些 Api 進行輸入，則可以輕鬆地支援跨多個 XR Sdk 的移動控制器，包括 Windows Mixed Reality。
+Unity 目前使用其一般 *輸入. GetButton/GetAxis* api 來公開 [Oculus SDK](https://docs.unity3d.com/Manual/OculusControllers.html)、 [OpenVR SDK](https://docs.unity3d.com/Manual/OpenVRControllers.html)和 Windows Mixed Reality 的輸入，包括實習和移動控制器。 如果您的應用程式使用這些 Api 進行輸入，則可以輕鬆地支援跨多個 XR Sdk 的移動控制器，包括 Windows Mixed Reality。
 
 ### <a name="getting-a-logical-buttons-pressed-state"></a>取得邏輯按鈕的按下狀態
 
 若要使用一般 Unity 輸入 Api，您通常會先將按鈕和軸連結到 [Unity 輸入管理員](https://docs.unity3d.com/Manual/ConventionalGameInput.html)中的邏輯名稱，然後將按鈕或軸識別碼系結至每個名稱。 然後，您可以撰寫參考該邏輯按鈕/軸名稱的程式碼。
 
-例如，若要將左移動控制器的 [觸發程式] 按鈕對應至 [提交] 動作，請移至 Unity 內的 [ **編輯 > 專案設定] > 輸入** ，並展開 [軸] 下的 [提交] 區段的屬性。 將 **正面按鈕** 或 **Alt 正按鈕** 屬性變更為讀取 **搖桿按鈕 14**，如下所示：
+例如，若要將左移動控制器的 [觸發程式] 按鈕對應至 [提交] 動作，請移至 [**編輯] > Project 設定** 在 Unity 中 > 輸入，然後在 [軸] 下展開 [提交] 區段的屬性。 將 **正面按鈕** 或 **Alt 正按鈕** 屬性變更為讀取 **搖桿按鈕 14**，如下所示：
 
 ![Unity 的 InputManager](images/unity-input-manager.png)<br>
 *Unity InputManager*
@@ -257,7 +257,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 > 
 > 此底框的關聯性和指標姿勢 (，控制器的提示會指向控制器之間的) 可能不同。 目前，只能透過 MR 專屬的輸入 API 來存取控制器的指標姿勢，如下一節所述。
 
-## <a name="windows-specific-apis-xrwsainput"></a>Windows 特定 Api (XR。Wsa。輸入) 
+## <a name="windows-specific-apis-xrwsainput"></a>Windows 特定的 api (XR。Wsa。輸入) 
 
 > [!CAUTION]
 > 如果您的專案使用任何 XR。WSA Api 在未來的 Unity 版本中，將會以 XR SDK 的方式來淘汰這些 Api。 針對新的專案，我們建議您從一開始就使用 XR SDK。 您可以在 [這裡找到 XR 輸入系統和 api](https://docs.unity3d.com/Manual/xr_input.html)的詳細資訊。
@@ -265,7 +265,7 @@ Quaternion leftRotation = InputTracking.GetLocalRotation(XRNode.LeftHand);
 **命名空間：** *UnityEngine. XR。輸入*<br>
 **類型**： *InteractionManager*、 *InteractionSourceState*、 *InteractionSource*、 *InteractionSourceProperties*、 *InteractionSourceKind*、 *InteractionSourceLocation*
 
-若要取得 HoloLens) 和移動控制器的 Windows Mixed Reality 手輸入 (的詳細資訊，您可以選擇使用 *UnityEngine. XR* 底下的 Windows 特定空間輸入 api。 這可讓您存取額外的資訊，例如位置精確度或來源種類，讓您可以分辨手和控制器。
+若要取得 HoloLens) 和移動控制器 Windows Mixed Reality 手輸入 (的詳細資訊，您可以選擇在 *UnityEngine. XR* 底下使用 Windows 特定的空間輸入 api。 這可讓您存取額外的資訊，例如位置精確度或來源種類，讓您可以分辨手和控制器。
 
 ### <a name="polling-for-the-state-of-hands-and-motion-controllers"></a>輪詢實習和移動控制器的狀態
 
@@ -376,7 +376,7 @@ InteractionManager.InteractionSourcePressed -= InteractionManager_InteractionSou
 * 當使用者按下控制器上的按鈕時，可能會有大約20毫秒的無線延遲超過藍牙，系統才會收到按下的動作。
 * 然後，如果您使用向前預測的姿勢，則會有另一個10-20 毫秒的向前預測套用到目標，也就是目前框架的光子到達使用者眼睛的時間。
 
-這表示輪詢會提供來源姿勢或 head 的原因，從使用者的標頭開始，到按下或放開時，都30-40 是從使用者的標頭開始。  針對 HoloLens 手輸入，雖然沒有無線傳輸延遲，但偵測到按下的處理延遲也很類似。
+這表示輪詢會提供來源姿勢或 head 的原因，從使用者的標頭開始，到按下或放開時，都30-40 是從使用者的標頭開始。  針對 HoloLens 手輸入，在沒有無線傳輸延遲的情況下，會有類似的處理延遲來偵測按下。
 
 若要根據使用者的原始意圖來精確地鎖定目標，請按下該 *InteractionSourcePressed* 或 *InteractionSourceReleased* 輸入事件的歷程記錄來源姿勢或 head 姿勢。
 

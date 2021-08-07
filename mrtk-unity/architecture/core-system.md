@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、事件
-ms.openlocfilehash: 79ebd3855cd991db168233f00058ab5d42f87d83
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: ff4c23b796374940de1a1de6b72e08702d6fd24f79234e8ef80dc1210d13d103
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121596"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190178"
 ---
 # <a name="core-system"></a>核心系統
 
@@ -23,7 +23,7 @@ ms.locfileid: "113121596"
 
 - 讀取 [輸入系統設定檔](../configuration/mixed-reality-configuration-guide.md#input-system-settings)
 - 例如，啟動已設定的 [資料提供者](../features/input/input-providers.md) (， `Windows Mixed Reality Device Manager` 並 `OpenVR Device Manager`) 。
-- [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider)的具現化，它是一種元件，負責提供 HoloLens (第一代) 樣式的前端資訊，以及 HoloLens 2 風格眼睛資訊。
+- [GazeProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityGazeProvider)的具現化，它是一種元件，除了 HoloLens 2 風格眼睛資訊之外，還負責提供 HoloLens (第一代) 樣式的資訊。
 - [FocusProvider](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealityFocusProvider)的具現化，這是負責判斷具有焦點之物件的元件。 這在檔的 [ [指標和焦點](controllers-pointers-and-focus.md#pointers-and-focus) ] 區段中有更深入的說明。
 - 將所有輸入事件的登錄點提供給 ([全域](#global-listeners) 接聽程式) 。
 - 提供這些輸入事件的事件分派功能。
@@ -56,11 +56,11 @@ ms.locfileid: "113121596"
 
 ## <a name="device-managers-and-data-providers"></a>裝置管理員和資料提供者
 
-這些實體負責與較低層級的 Api (例如 Windows Mixed Reality Api，或 OpenVR Api) ，並將這些系統中的資料轉譯成符合 MRTK 較高層級輸入抽象的資料。 它們負責偵測、建立和管理 [控制器](controllers-pointers-and-focus.md#controllers)的存留期。
+這些實體負責與較低層級的 api (例如 Windows Mixed Reality api，或 OpenVR api) ，並將這些系統中的資料轉譯成符合 MRTK 較高層級輸入抽象的資料。 它們負責偵測、建立和管理 [控制器](controllers-pointers-and-focus.md#controllers)的存留期。
 
 裝置管理員的基本流程包括：
 
 1. 裝置管理員由輸入系統服務具現化。
-2. 裝置管理員會向其基礎系統註冊 (例如，Windows Mixed Reality 裝置管理員將會註冊 [輸入](../features/input/input-events.md) 和 [手勢](../features/input/gestures.md#gesture-events) 事件。
+2. 裝置管理員會向其基礎系統註冊 (例如，Windows Mixed Reality 裝置管理員將會註冊[輸入](../features/input/input-events.md)和[手勢](../features/input/gestures.md#gesture-events)事件。
 3. 它會建立它從基礎系統中探索的控制器 (例如，提供者可以偵測出有明確的手) 
 4. 在其更新 () 迴圈中，呼叫 UpdateController () 輪詢基礎系統的新狀態，並更新其控制器標記法。

@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、遮蔽、SDK
-ms.openlocfilehash: dd54be85ed71c3359408c02914470e97ab42b90e
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 4dd5a2c96478e50b2e9eda35be22c15c1db07f88cfc4d25d753c4860a1283f55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196393"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213458"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -23,11 +23,11 @@ ms.locfileid: "110196393"
 
 ![空間對應網格、標示為平面介面、防水網格](images/SUScenarios.png)
 
-本檔的目的是要提供案例總覽，以及說明場景理解和空間對應共用的關聯性。 如果您想要查看實際的場景理解，請參閱下面 **的設計全像影像空間感知** 影片示範：
+本檔的目的是要提供案例總覽，以及說明場景理解和空間對應共用的關聯性。 如果您想要查看實際的場景理解，請參閱下面 **的設計全像投影空間感知** 影片示範：
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="developing-with-scene-understanding"></a>使用場景理解進行開發
 

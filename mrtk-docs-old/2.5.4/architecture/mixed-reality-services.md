@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c23c16e7dac54ff209beca24bd8b8b857967f697
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 06b003e78387ba3ae6dc3c39eaba05c514f6c58cd474cc26a14ef12b561a2914
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690368"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187634"
 ---
 # <a name="what-makes-a-mixed-reality-feature"></a>什麼是混合的現實功能
 

@@ -5,13 +5,13 @@ author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、3D 應用程式啟動器、沉浸式耳機、即時立方體、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、UWP、Win32、光源、色彩
-ms.openlocfilehash: 2edb09e47da5bcbae34a37f004853002f3f65cf3
-ms.sourcegitcommit: 8d3b84d2aa01f078ecf92cec001a252e3ea7b24d
+keywords: Windows Mixed Reality、設計、3d 應用程式啟動器、沉浸式耳機、即時立方體、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、UWP、Win32、光源、色彩
+ms.openlocfilehash: 2d93930d63b251aa91d77c96b4d5250baba54c51de50388f690b3588b1580761
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/23/2020
-ms.locfileid: "97757726"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188486"
 ---
 # <a name="3d-app-launcher-design-guidance"></a>3D 應用程式啟動程式設計指引
 
@@ -80,14 +80,14 @@ ms.locfileid: "97757726"
     :::column-end:::
 :::row-end:::
 
-## <a name="tips-for-good-3d-models"></a>良好3D 模型的秘訣
+## <a name="tips-for-good-3d-models"></a>適用于良好3D 模型的提示
 
 * 規劃應用程式啟動器的維度時，大約會有 30 cm 的 cube。 因此，1:1:1 大小的比率。
 * 模型必須在10000多邊形下。 [深入瞭解 (LODs 的三角形計數和詳細資料層級) ](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#triangle-counts-and-levels-of-detail-lods)
 * 在沉浸式耳機上測試。
 * 盡可能在您的模型幾何中建立詳細資料–不依賴材質取得詳細資料。
 * 建立「水緊密」封閉幾何。 沒有任何未模型化的漏洞。
-* 在您的物件中使用自然材質。 想像一下在現實世界中製作它。
+* 在您的物件中使用自然材質。 Imagine 在真實世界中打造它。
 * 確定您的模型在不同的距離和大小都能妥善閱讀。
 * 當您的模型已準備好開始時，請閱讀 [匯出資產的指導方針](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md#asset-requirements-overview)。
 
@@ -166,7 +166,7 @@ ms.locfileid: "97757726"
 
 如果您更熟悉上述其中一項，則 ([Coat](https://3dcoat.com/home/)、 [Quixel Suite 2](https://quixel.se/suite2/)或 [Marmoset Toolbag](https://www.marmoset.co/toolbag/) 也可以使用。 ) 
 
-### <a name="best-practices"></a>最佳作法
+### <a name="best-practices"></a>最佳做法
 
 * 如果您的應用程式啟動程式物件是針對 .PBR 而撰寫的，則將它轉換為懸崖之屋環境應該很簡單。
 * 我們的著色器預期會有金屬/粗糙度的工作流程– Unreal 的 .PBR 著色器是關閉的傳真。
@@ -176,7 +176,7 @@ ms.locfileid: "97757726"
   * 避免紋理中的內建光源
   * 使用其中一個 .PBR 材質撰寫套件來取得為著色器產生的正確對應
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [建立要在混合實境首頁中使用的3D 模型](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [實作 3D 應用程式啟動器 (UWP 應用程式)](implementing-3d-app-launchers.md)

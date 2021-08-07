@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6b9223481ed909961dbb88d03e4b55ef68448525
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fa21b1a5c3c89cf3c1c63c7ed8ebbdc3d8547661443853987ee3713e50c50e5c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97718124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187258"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -14,12 +14,12 @@ ms.locfileid: "97718124"
 
 然後，您應該加入程式碼以訂閱下列事件：
 
-![Windows 空間輸入的藍圖、點擊和左側操作手勢 ](../images/unreal/key-events.png)
- ![ 螢幕擷取畫面： [詳細資料] 面板中的 [windows 空間輸入] 點擊手勢選項](../images/unreal/key-events2.png)
+![Windows 空間輸入的藍圖、點擊和左操作手勢 ](../images/unreal/key-events.png)
+ ![ 螢幕擷取畫面： [詳細資料] 面板中 Windows 空間輸入的手勢選項](../images/unreal/key-events2.png)
 
 ### <a name="openxr"></a>OpenXR
 
-在 OpenXR 中，手勢事件是透過輸入管線來追蹤。 裝置可以使用手邊互動，自動辨識點擊和按住手勢，而不是其他筆勢。 這些名稱會命名為 OpenXRMsftHandInteraction Select 和框對應。 您不需要啟用訂用帳戶，您應該在專案設定/引擎/輸入中宣告事件，就像這樣：
+在 OpenXR 中，手勢事件是透過輸入管線來追蹤。 裝置可以使用手邊互動，自動辨識點擊和按住手勢，而不是其他筆勢。 這些名稱會命名為 OpenXRMsftHandInteraction Select 和框對應。 您不需要啟用訂用帳戶，您應該在 Project 設定/Engine/Input 中宣告事件，就像這樣：
 
 ![OpenXR 動作對應的螢幕擷取畫面](../images/unreal-hand-tracking-img-12.png)
 

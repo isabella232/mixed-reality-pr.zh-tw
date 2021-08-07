@@ -8,28 +8,28 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、相容、相容性、入門、安裝程式、電腦、系統需求
 appliesto:
 - Windows 10
-ms.openlocfilehash: b7e90477ed16170a5661f34798a5af822ad8e945
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 026f36caf3eebaee8f883235284a1beaf870bb89c5bb27eb565abbd89fcf4f21
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006878"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187958"
 ---
-# <a name="before-you-start"></a>開始之前
+# <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 ## <a name="what-youll-need-to-run-windows-mixed-reality"></a>您需要執行的工作 Windows Mixed Reality
 
-* Windows [Mixed Reality 前端裝載的顯示器 (HMD) ](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)。
-* Windows 10 1709 版或更新版本執行的新 [Windows Mixed Reality READY pc](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines) 或 Windows Mixed Reality 相容的電腦。
+* Windows 的[混合現實前端裝載的顯示器 (HMD) ](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)。
+* Windows 10 1709 版或更新版本執行的新[Windows Mixed Reality ready pc](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)或 Windows Mixed Reality 相容的電腦。
 * 網際網路連接
-* 如果未內建在耳機或電腦中，則顯示、USB 和藍牙介面卡 () 
+* 如果未內建在耳機或電腦中， (顯示、USB 和藍牙介面卡) 
 * 移動控制器、Xbox 控制器或滑鼠和鍵盤
 * 具有麥克風的耳機 (如果您的 HMD 沒有內建) 
 * 大型的開放空間
 
 ## <a name="make-sure-your-pc-is-compatible-with-windows-mixed-reality"></a>請確定您的電腦與 Windows Mixed Reality 相容
 
-請檢查 [Windows Mixed Reality 的最小電腦硬體需求](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md) ，或在您的電腦上執行 [Windows Mixed Reality 入口網站](install-windows-mixed-reality.md#launch-mixed-reality-portal) ，以檢查 Windows Mixed Reality 相容性。
+請檢查[Windows Mixed Reality 的最小電腦硬體需求](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)，或在您的電腦上執行[Windows Mixed Reality 入口網站](install-windows-mixed-reality.md#launch-mixed-reality-portal)，以檢查 Windows Mixed Reality 相容性。
 
 如需詳細資訊，請參閱 [電腦相容性問題](https://support.microsoft.com/help/4045777/windows-10-get-help-with-pc-compatibility-in-windows-mixed-reality) 。
 
@@ -37,14 +37,14 @@ ms.locfileid: "98006878"
 
 您必須執行 Windows 10 1903 版或更新版本，才能使用 Windows Mixed Reality。 Windows 10 的相容版本包括：
 
-* Windows 10 版本1903
-* Windows 10 版本1909
-* Windows 10 版本2004
-* Windows 10 版本20H2
+* Windows 10版本1903
+* Windows 10版本1909
+* Windows 10版本2004
+* Windows 10版本20H2
 
-若要查看您的裝置目前執行的 Windows 10 版本，請選取 [ **開始** ] 按鈕，然後選取 [ **系統 > > 的設定**。
+若要查看您的裝置目前執行的 Windows 10 版本，請選取 [**開始**] 按鈕，然後選取 [**設定 > 系統 >**。
 
-若要確保電腦上的 Windows 10 為最新狀態，請選取 [ **開始** ] 按鈕，然後選取 [ **設定] > 更新 & 安全性 > Windows Update**。  選取 [檢查更新]。 如果有可用的更新，請加以安裝。
+若要確保電腦上的 Windows 10 為最新狀態，請選取 [**開始**] 按鈕，然後選取 [**設定 > 更新 & 安全性**] > Windows Update。  選取 [檢查更新]。 如果有可用的更新，請加以安裝。
 
 查看 [讓您的電腦保持最新](https://support.microsoft.com/help/12373/windows-update-faq) 狀態，以取得詳細資訊。
 
@@ -56,7 +56,7 @@ ms.locfileid: "98006878"
 
 您的電腦需要 WDDM 2.2 或更新版本的圖形驅動程式，才能完成 Windows Mixed Reality 安裝程式。 如果它還沒有相容的圖形驅動程式，請嘗試下列來源：
 
-* 使用 Windows Update 檢查是否有最新的重要驅動程式更新 (**開始 > Windows 設定 > 更新和安全性 > 檢查更新**) 
+* 使用 Windows Update 檢查最新的重要驅動程式更新 (**開始 > Windows 設定 > 更新和安全性 > 檢查更新**) 
 * 檢查是否有最新的選用驅動程式更新：
     1. 以滑鼠右鍵按一下 [ **開始] > 裝置管理員**]。
     2. 展開 [ **顯示介面卡**]。
@@ -66,7 +66,7 @@ ms.locfileid: "98006878"
 
 ## <a name="make-sure-that-you-have-any-required-adapters"></a>請確定您有任何必要的介面卡
 
-您 Windows Mixed Reality 相容的電腦可能沒有連線到沉浸式耳機所需的全尺寸 HDMI 和 USB 3.0 埠。 您可能也需要藍牙介面卡，以符合 Windows Mixed Reality 入口網站需求。  如果是這種情況，您將需要介面卡來連接耳機和移動控制器。 請務必查看介面卡類型清單 [以及特定介面卡型號的建議](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。
+您 Windows Mixed Reality 相容的電腦可能沒有連線到沉浸式耳機所需的全尺寸 HDMI 和 USB 3.0 埠。 您可能也需要藍牙介面卡，才能符合 Windows Mixed Reality 入口網站需求。  如果是這種情況，您將需要介面卡來連接耳機和移動控制器。 請務必查看介面卡類型清單 [以及特定介面卡型號的建議](recommended-adapters-for-windows-mixed-reality-capable-pcs.md)。
 
 ## <a name="make-sure-that-you-have-input-devices"></a>請確定您有輸入裝置
 
@@ -84,7 +84,7 @@ Windows Mixed Reality 的設計最適合搭配 Windows Mixed Reality 的動作�
 
 如果您選擇 [所有體驗]，您將會設定界限，而且可以四處移動使用界限的應用程式體驗，以及不需要的範圍。 確定您要使用的領域（包括您的上層）沒有任何阻礙、危險或脆弱的專案，以準備您的空間。 請勿在樓梯的頂端，或在額外的低上限風扇下設定。 從區域中移除 breakables 和阻礙，並確定使用您耳機的每個人都能閱讀並瞭解 [安全指導方針](https://support.microsoft.com/en-us/help/4039969/windows-10-mixed-reality-immersive-headset-health-safety-comfort)。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [插入您的 HMD](plug-in-your-headset.md)
 * [最小電腦硬體需求](windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines.md)

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6229b258233f7a80ef6530edd6eb94774a0e54cf
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528766"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208858"
 ---
 # <a name="world-locking-tools-recommended"></a>[ (建議) 的世界鎖定工具 ](#tab/wlt)
 
@@ -39,7 +39,7 @@ Mixed Reality OpenXR 外掛程式透過 Unity 的 ARFoundation **ARAnchorManager
 **命名空間：** *UnityEngine. XR*<br>
 **類型：** *WorldAnchor*
 
-若要在 HoloLens 上讓使用者穿梭超過5個度量的真實 **世界規模體驗** ，您將需要新的技術，而不是用於會議室規模的體驗。 您將使用的一項重要技巧是建立 [空間錨點](../../../../design/coordinate-systems.md#spatial-anchors) ，以在實體世界中精確地鎖定大量的全像位置，而不論使用者漫遊的程度為何，然後 [在後續的會話中再次找出這些影像](../../../../design/coordinate-systems.md#spatial-anchor-persistence)。
+若要取得 HoloLens 的真實 **世界規模體驗**，讓使用者穿梭超過5個計量，您將需要新的技術，而不是用於房間規模的體驗。 您將使用的一項重要技巧是建立 [空間錨點](../../../../design/coordinate-systems.md#spatial-anchors) ，以在實體世界中精確地鎖定大量的全像位置，而不論使用者漫遊的程度為何，然後 [在後續的會話中再次找出這些影像](../../../../design/coordinate-systems.md#spatial-anchor-persistence)。
 
 在 Unity 中，您可以藉由將 **WorldAnchor** Unity 元件新增至 GameObject 來建立空間錨點。
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: f937b705f10cc4a287600349283ecaed4ae44666
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112908112"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208845"
 ---
 # <a name="world-locking-tools-recommended"></a>[ (建議) 的世界鎖定工具 ](#tab/wlt)
 
@@ -29,7 +29,7 @@ ms.locfileid: "112908112"
 using Microsoft.MixedReality.ARSubsystems.XRAnchorStore
 ```
 
-或 **Unity 2019/2020 + WINDOWS XR 外掛程式**： 
+或 **Unity 2019/2020 + Windows XR 外掛程式**： 
 
 ```cs 
 using UnityEngine.XR.WindowsMR.XRAnchorStore
@@ -68,7 +68,7 @@ using UnityEngine.XR.WindowsMR.XRAnchorStore
 public static Task<XRAnchorStore> LoadAnchorStoreAsync(this XRAnchorSubsystem anchorSubsystem)
 ```
 
-若要使用 **unity 2019/2020 和 WINDOWS XR 外掛程式** 載入 XRAnchorStore，請在 XRReferencePointSubsystem (unity 2019) 或 XRAnchorSubsystem (unity 2020) （ARReferencePointManager/ARAnchorManager 的子系統）上使用擴充方法：
+若要載入 XRAnchorStore 與 **Unity 2019/2020 和 Windows XR 外掛程式**，請在 XRReferencePointSubsystem (unity 2019) 或 XRAnchorSubsystem (unity 2020) （ARReferencePointManager/ARAnchorManager 的子系統）上使用擴充方法：
 
 ```cs
 // Unity 2019 + Windows XR Plugin
@@ -87,7 +87,7 @@ ARAnchorManager arAnchorManager = GetComponent<ARAnchorManager>();
 XRAnchorStore anchorStore = await arAnchorManager.subsystem.LoadAnchorStoreAsync();
 ```
 
-或使用 **Unity 2019/2020 和 WINDOWS XR 外掛程式**：
+或使用 **Unity 2019/2020 和 Windows XR 外掛程式**：
 
 ``` cs
 // Unity 2019
@@ -193,7 +193,7 @@ for (int index = 0; index < ids.Length; index++)
 
 ## <a name="persisting-holograms-for-multiple-devices"></a>保存多個裝置的全像影像
 
-您可以使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可以在多個 HoloLens、IOS 和 Android 裝置上找到，即使這些裝置不會同時出現在同一時間。  由於雲端錨點是持續性的，因此每一段時間的多個裝置都可以看到相對於相同實體位置中錨點轉譯的內容。
+您可以使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可以在多個 HoloLens、iOS 和 Android 裝置上找到，即使這些裝置不會同時出現在同一時間。  由於雲端錨點是持續性的，因此每一段時間的多個裝置都可以看到相對於相同實體位置中錨點轉譯的內容。
 
 若要開始在 Unity 中建立共用體驗，請嘗試5分鐘的 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間錨點 Unity 快速入門</a>。
 

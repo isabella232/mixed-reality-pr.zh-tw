@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, android, ios, MRTK, 混合實境工具組, UWP, Azure 空間錨點, AR Foundation, ARCore, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 67bda33f8d2d0711c83791be2e76d91b53ff934f
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 6e9ae377a11d74fd9cdfca7ddb0379542d365e3365bdf07319bc8580b2e87420
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403410"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115215763"
 ---
 # <a name="5-azure-spatial-anchors-for-android-and-ios"></a>5.適用於 Android 和 iOS 的 Azure Spatial Anchors
 
@@ -38,7 +38,7 @@ ms.locfileid: "111403410"
 > [!TIP]
 > 如需有關如何複製 MRTK 設定檔的提示，您可以參閱[設定混合實境工具組設定檔](mr-learning-base-03.md)的指示。
 
-仍在 [偵測器] 視窗中選取 [ **相機** ] 索引標籤，展開 **相機設定提供者** ，然後按一下 [-] 移除 **WINDOWS MIXED REALITY 相機設定** 或 **XR SDK Windows Mixed Reality 相機設定**：
+仍在 [偵測器] 視窗中選取 [**相機**] 索引標籤，展開 **相機設定提供者**，然後按一下 [-] 移除 **Windows Mixed Reality 相機設定** 或 **XR SDK Windows Mixed Reality 相機設定**：
 
 ![已新增新資料提供者的 Unity ARCameraProfile ](images/mr-learning-asa/asa-05-section2-step1-2.png)
 
@@ -65,9 +65,9 @@ ms.locfileid: "111403410"
 
 關閉 [建置設定] 視窗。
 
-在 Unity 功能表中，選取 [**混合現實**  >  **工具組**  >  **公用程式**  >  ]**設定專案以供 MRTK** 開啟 [ **MRTK 專案** 設定程式] 視窗，確認已選取 [所有選項]，然後按一下 [套用] 按鈕以套用設定：
+在 Unity 功能表中，選取 [**混合的現實**  >  **工具** 組  >  **公用程式**  >  ]，**設定 MRTK Project** 以開啟 **MRTK Project** [設定] 視窗，確認已選取所有選項，然後按一下 [套用] 按鈕以套用設定：
 
-![Unity MRTK 專案配置器1](images/mr-learning-asa/asa-05-section3-step1-2.png)
+![Unity MRTK Project 的配置器1](images/mr-learning-asa/asa-05-section3-step1-2.png)
 
 在 Unity 功能表中，選取 [編輯] > [專案設定...] 來開啟 [玩家設定] 視窗，然後找出 [玩家] >  [其他設定] 區段，選取 [Vulkan]，然後按一下 **"-"** 來將其移除：
 
@@ -106,7 +106,7 @@ ms.locfileid: "111403410"
 
 關閉 [建置設定] 視窗。
 
-在 Unity 功能表中，選取 [**混合現實**  >  **工具組**  >  **公用程式**  >  ]**設定專案以供 MRTK** 開啟 [ **MRTK 專案** 設定程式] 視窗，確認已選取 [所有選項]，然後按一下 [套用] 按鈕以套用設定：
+在 Unity 功能表中，選取 [**混合的現實**  >  **工具** 組  >  **公用程式**  >  ]，**設定 MRTK Project** 以開啟 **MRTK Project** [設定] 視窗，確認已選取所有選項，然後按一下 [套用] 按鈕以套用設定：
 
 ![Unity [MRTK 專案設定程式] 視窗 iOS](images/mr-learning-asa/asa-05-section4-step1-2.png)
 

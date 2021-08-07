@@ -1,17 +1,17 @@
 ---
 title: 設計全像攝影顯示器的內容
-description: 瞭解在 HoloLens 裝置上進行全像顯示器的設計指導方針和最佳作法。
+description: 瞭解 HoloLens 裝置上的全像顯示器的設計方針和最佳作法。
 author: yoonpark
 ms.author: dongpark
 ms.date: 06/18/2020
 ms.topic: article
 keywords: UI 設計、全像展示、內容設計、深色主題、淺色主題、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、圖元
-ms.openlocfilehash: 2c68acb5478bfbd438c8bbb9dd2f8d9686bcefc5
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 1fab172f6d737b25e95b10a6dded2a5ab805e0086de8d0fae40c5a6a4ef7d805
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600317"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212940"
 ---
 # <a name="designing-content-for-holographic-display"></a>設計全像攝影顯示器的內容
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 18ccbf3e28eaa2f61157bd9585d633c987e9af48
-ms.sourcegitcommit: 13ef9f89ee61fbfe547ecf5fdfdb97560a0de833
+ms.openlocfilehash: fb8b5b509ef83e2a4f9d978dbf0faebbf3e0be1d10d6697f16cfb9366d7a2edb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/21/2020
-ms.locfileid: "97717997"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187262"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
@@ -16,7 +16,7 @@ ms.locfileid: "97717997"
 
 # <a name="425"></a>[4.25](#tab/425)
 
-若要在藍圖中使用手片，請搜尋 **WINDOWS MIXED REALITY HMD** 下的任何動作：
+若要在藍圖中使用手片，請搜尋 **Windows Mixed Reality HMD** 下的任何動作：
 
 ![手中的最佳光線](../images/unreal/hand-rays-bp.png)
 
@@ -41,7 +41,7 @@ enum class EHMDInputControllerButtons : uint8
 以下是兩個適用列舉案例的明細：
 
 * **選取** 使用者觸發的選取事件。
-    * 在 HoloLens 2 中，藉由按下按鍵、注視和認可，或藉由在啟用 [語音輸入](../unreal-voice-input.md) 時說出「選取」來觸發。
+    * 在 HoloLens 2 中，藉由按下按鍵、注視和認可，或藉由在啟用[語音輸入](../unreal-voice-input.md)時說出「選取」來觸發。
 * **理解** 使用者觸發的理解事件。
     * 在 HoloLens 2 中，藉由關閉使用者的手指來觸發。
 

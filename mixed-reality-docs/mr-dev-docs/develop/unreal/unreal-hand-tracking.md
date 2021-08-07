@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 06/10/2020
 ms.topic: article
-keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal 引擎4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 415a0773586ab232e925fd0f18a3a8e6f8217e88
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Windows Mixed Reality、手形追蹤、Unreal、Unreal 引擎4、UE4、HoloLens、HoloLens 2、混合現實、開發、功能、檔、指南、全像投影、遊戲開發、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 4c3b86c842fc875ebedbdf2527bf962fd8afd4d19cef90d168293cc85b664f70
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104695797"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187184"
 ---
 # <a name="hand-tracking-in-unreal"></a>Unreal 中的手勢追蹤
 
@@ -67,7 +67,7 @@ ms.locfileid: "104695797"
 ![手上網格](images/unreal/hand-mesh.png)
 
 在您可以存取手中的資料之前，您必須：
-- 選取您的 **ARSessionConfig** 資產，展開 [ **AR 設定-> 世界對應** 設定]，然後核取 [ **從追蹤的幾何產生網格資料**]。
+- 選取您的 **ARSessionConfig** 資產，展開 [ **AR 設定-> 世界對應** 設定]，然後核取 [**從追蹤的幾何產生網格資料**]。
 
 以下是預設的網格參數：
 
@@ -124,7 +124,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ![ARTrackable 通知2](images/unreal/ar-trackable-notify2.png)
 
-3. 在事件圖中使用下列節點覆寫新增/更新/移除追蹤幾何：
+3. 在事件 Graph 中，使用下列節點覆寫新增/更新/移除追蹤幾何：
 
 ![ARTrackable 通知時](images/unreal/on-artrackable-notify.png)
 
@@ -157,7 +157,7 @@ UMRMeshComponent* UARTrackedGeometry::GetUnderlyingMesh()
 
 ## <a name="gestures"></a>軌跡
 
-HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 軌跡追蹤是以訂用帳戶模型為基礎。 您應該使用「設定手勢」函式來告訴裝置您要追蹤的手勢。 您可以在 [HoloLens 2 基本使用](/hololens/hololens2-basic-usage) 方式檔中找到手勢的詳細資料。
+HoloLens 2 會追蹤空間手勢，這表示您可以將這些手勢捕捉為輸入。 軌跡追蹤是以訂用帳戶模型為基礎。 您應該使用「設定手勢」函式來告訴裝置您要追蹤的手勢。 您可以在[HoloLens 2 基本使用](/hololens/hololens2-basic-usage)方式檔中找到手勢的詳細資料。
 
 [!INCLUDE[](includes/tabs-tracking-gestures.md)]
 

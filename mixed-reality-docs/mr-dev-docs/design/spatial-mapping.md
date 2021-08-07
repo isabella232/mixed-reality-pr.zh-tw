@@ -1,21 +1,21 @@
 ---
 title: 空間對應
-description: 空間對應提供在 HoloLens 周圍環境中實際表面的詳細標記法。
+description: 空間對應可針對 HoloLens 中的環境，提供真實世界表面的詳細標記法。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 03/21/2018
 ms.topic: article
-keywords: 空間對應、HoloLens、混合現實、表面重建、網格、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、場景理解、世界網格、遮蔽、物理、流覽、表面觀察器、轉譯、網格處理
-ms.openlocfilehash: 3268f25f86cdfea3aa1ae0b77c4fbeb9aa0ce1b9
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: 空間對應、HoloLens、混合現實、表面重建、網格、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、場景理解、世界網格、遮蔽、物理、流覽、介面觀察器、轉譯、網格處理
+ms.openlocfilehash: 342ba116a5e33073acf2d4dbe563e74bccbf7053ec96d9b3f2f7ba88bd13da90
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212412"
 ---
 # <a name="spatial-mapping"></a>空間對應
 
-空間對應可在 HoloLens 的環境中提供真實世界表面的詳細表示，讓開發人員能夠建立令人信服的混合現實體驗。 藉由將真實世界與虛擬世界合併，應用程式可以讓全像是真實的。 應用程式也可以藉由提供熟悉的真實世界行為和互動，更自然地配合使用者期望。
+空間對應提供在 HoloLens 環境中的真實世界表面的詳細表示，讓開發人員能夠建立令人信服的混合現實體驗。 藉由將真實世界與虛擬世界合併，應用程式可以讓全像是真實的。 應用程式也可以藉由提供熟悉的真實世界行為和互動，更自然地配合使用者期望。
 
 <br>
 
@@ -47,7 +47,7 @@ ms.locfileid: "110196423"
 
 ## <a name="why-is-spatial-mapping-important"></a>為什麼空間對應很重要？
 
-空間對應可以讓使用者將物件放置在實際的表面上。 這有助於錨定使用者世界中的物件，並充分利用真實的深度提示。根據其他的全像全像遮蔽和真實世界物件來您的全像，有助於說服使用者這些全像是在空間中。 以空間浮動的全像移動空間或與使用者移動並不會覺得真實的。 可能的話，請將專案放在更舒適的位置。
+空間對應可以讓使用者將物件放置在實際的表面上。 這有助於錨定使用者世界中的物件，並充分利用真實的深度提示。根據其他的全像全像遮蔽和真實世界物件來您的全像，有助於說服使用者這些全像是在空間中。 全像投影浮動在空間中，或與使用者移動並不會覺得真正的感覺。 可能的話，請將專案放在更舒適的位置。
 
 在放置或移動全像移動 (使用投影出的方格) 時，將表面視覺化。 這可協助使用者知道其最適合放置全息的位置，並顯示他們嘗試放置全像全像的地方是否未對應。 如果使用者的角度太多，您可以向使用者「佈告欄專案」。
 
@@ -60,21 +60,21 @@ ms.locfileid: "110196423"
 
 應用程式會提供具有一或多個周框磁片區的空間介面觀察器，以定義應用程式希望接收空間對應資料的空間區域。 針對上述每個磁片區，空間對應將會為應用程式提供一組空間表面。
 
-這些磁片區可能是固定位置中的固定 (（以真實世界) 為基礎），或者它們可能會附加到 HoloLens (，但不會在透過環境) 移至 HoloLens 的情況下輪替。 每個空間介面都會以少量的空間描述真實世界表面，以連接到世界鎖定 [空間座標系統](coordinate-systems.md)的三角形網格表示。
+這些磁片區可能是固定位置中的固定 (（以真實世界) 為基礎），或者它們可能會附加至 HoloLens (移動，但不會隨著 HoloLens 在環境) 中移動而旋轉。 每個空間介面都會以少量的空間描述真實世界表面，以連接到世界鎖定 [空間座標系統](coordinate-systems.md)的三角形網格表示。
 
-當 HoloLens 收集有關環境的新資料，且發生環境變更時，空間介面會出現、消失及變更。
+當 HoloLens 收集有關環境的新資料，且發生環境變更時，空間介面將會出現、消失及變更。
 
 ## <a name="spatial-awareness-design-concepts-demo"></a>空間感知設計概念示範
 
-如果您想要看到空間感知設計概念的實際運作，請參閱下面 **的設計全像影像空間感知** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要看到空間感知設計概念的實際運作，請參閱下面 **的設計全像投影空間感知** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="spatial-mapping-vs-scene-understanding-worldmesh"></a>空間對應與場景的比較理解 WorldMesh
 
-針對 HoloLens 2，可以使用 [場景理解 SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (EnableWorldMesh 設定) 查詢靜態版本的空間對應資料。 以下是存取空間對應資料的兩種方式之間的差異：
+針對 HoloLens 2，可以使用[場景理解 SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) (EnableWorldMesh 設定) 查詢靜態版本的空間對應資料。 以下是存取空間對應資料的兩種方式之間的差異：
 * 空間對應 API：
    * 有限範圍：適用于應用程式的空間對應資料，以有限大小的快取「反升」方式提供給使用者。
    * 透過 SurfacesChanged 事件提供變更網格區域的低延遲更新。
@@ -151,7 +151,7 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
 空間對應所提供的介面網格可能不是特別的「清除」。 請務必適當地將它們視覺化。 傳統的光源計算可能會以視覺化方式反白顯示 surface 法線中的錯誤，而「清理」紋理則投射在表面上可能有助於提供整齊的外觀。 您也可以在呈現介面之前，進行 [網格處理](spatial-mapping.md#mesh-processing) 以改善網格屬性。
 
 > [!NOTE]
-> HoloLens 2 會採用新的 [場景理解運行](scene-understanding.md)時間，為混合的現實開發人員提供結構化、高階的環境標記法，其設計目的是要簡化放置、遮蔽、物理和流覽的執行。
+> HoloLens 2 會採用新的[場景理解運行](scene-understanding.md)時間，為混合的現實開發人員提供結構化、高階的環境標記法，其設計目的是要簡化放置、遮蔽、物理和流覽的執行。
 
 ## <a name="using-the-surface-observer"></a>使用介面觀察者
 
@@ -274,7 +274,7 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
 * **沒有掃描體驗**
    * 應用程式在沒有任何引導式掃描體驗的情況下可以完美運作;它會瞭解在自然使用者移動過程中觀察到的表面。
    * 例如，讓使用者在具有全像油漆油漆的表面上繪製的應用程式，只需要知道使用者目前可見的表面。
-   * 如果環境是使用者已使用 HoloLens 花了很多時間，則可能會掃描環境。
+   * 如果環境是使用者已使用 HoloLens 花了很多時間，則可能已經掃描過該環境。
    * 請記住，空間對應所使用的相機只能在使用者前方看到 3.1 m，因此空間對應將不會知道任何較遠的表面，除非使用者從較接近的距離觀察到它們。
    * 因此，使用者瞭解哪些表面已經過掃描，應用程式應該提供視覺效果回饋給這個效果，例如，將虛擬遮蔽轉換成掃描的表面，可能有助於使用者將影像放在這些表面上。
    * 在此情況下，應該將每個畫面格的空間介面觀察器界限磁片區更新為主體鎖定的 [空間座標系統](coordinate-systems.md)，使其符合使用者的限制。
@@ -365,16 +365,16 @@ Unity 中的內建 NavMesh 功能無法搭配空間對應介面使用。 這是�
 
 ### <a name="useful-tools"></a>有用的工具
 
-* [HoloLens 模擬器](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)可以用來開發使用空間對應的應用程式，而不需要存取實體 HoloLens。 它可讓您在實際的環境中，使用您的應用程式通常會取用的所有資料（包括 HoloLens 動作、空間座標系統和空間對應網格）來模擬 HoloLens 上的即時會話。 這可以用來提供可靠、可重複的輸入，這對您的程式碼所做的變更和評估程式碼的變更可能很有用。
+* [HoloLens 模擬器](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)可以用來開發使用空間對應的應用程式，而不需要存取實體 HoloLens。 它可讓您在實際環境中模擬 HoloLens 的即時會話，以及您的應用程式通常會使用的所有資料，包括 HoloLens 動作、空間座標系統和空間對應網格。 這可以用來提供可靠、可重複的輸入，這對您的程式碼所做的變更和評估程式碼的變更可能很有用。
 * 若要重現案例，請從即時 HoloLens 的網路上抓取空間對應資料，然後將它儲存至磁片，並在稍後的偵測會話中重複使用。
-* [Windows 裝置入口網站3d 視圖](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view)會提供一種方式，讓您查看目前可透過空間對應系統使用的所有空間表面。 這會針對應用程式內的空間表面提供比較的基礎例如，您可以輕鬆地分辨是否有任何空間表面遺失或顯示在錯誤的位置。
+* [Windows 裝置入口網站3d 視圖](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#3d-view)可讓您查看目前可透過空間對應系統使用的所有空間表面。 這會針對應用程式內的空間表面提供比較的基礎例如，您可以輕鬆地分辨是否有任何空間表面遺失或顯示在錯誤的位置。
 
 ### <a name="general-prototyping-guidance"></a>一般原型設計指導方針
 
 * 因為空間對應資料中的 [錯誤](spatial-mapping.md#what-influences-spatial-mapping-quality) 可能會對您的使用者體驗造成強烈影響，所以建議您在各種環境中測試您的應用程式。
 * 不要習慣在相同位置（例如您的辦公桌）進行永遠測試的習慣。 請務必在不同位置、圖形、大小和材質的各種表面上進行測試。
 * 同樣地，雖然綜合或記錄的資料很適合用來進行偵錯工具，但不太依賴相同的測試案例。 這可能會延遲尋找更多測試較早所攔截到的重要問題。
-* 使用實際的 (和理想的 uncoached) 使用者進行測試是個不錯的主意，因為它們可能不會像您一樣使用 HoloLens 或您的應用程式。 事實上，這可能會令人驚訝的是，人們的行為、知識和假設可以是什麼？
+* 使用實際的 (和理想的 uncoached) 使用者來執行測試是個不錯的主意，因為它們可能不像您一樣使用 HoloLens 或您的應用程式。 事實上，這可能會令人驚訝的是，人們的行為、知識和假設可以是什麼？
 
 ## <a name="troubleshooting"></a>疑難排解
 

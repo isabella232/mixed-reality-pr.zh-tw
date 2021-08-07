@@ -6,23 +6,23 @@ ms.author: kurtie
 ms.date: 03/25/2021
 ms.topic: article
 keywords: holotoolkit，mixedrealitytoolkit，mixedrealitytoolkit-unity，全像轉譯，全像全像，全像投影、全像投影、聚焦點、深度緩衝區、僅限方向、位置、不透明、透明、剪輯、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: d3f69c6cf1889587b23b68259f22b34b89b925a4
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 1ac8c16e7bdd6b85b05c837e1a27fbd1e4cf4489ccb03d10ea5e952b2656cbe8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636268"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212229"
 ---
 # <a name="camera-setup-in-unity"></a>Unity 中的攝影機設定
 
 當您磨損混合現實耳機時，它就會變成您的全像世界的中心。 Unity [攝影機](https://docs.unity3d.com/Manual/class-Camera.html) 元件會自動處理 stereoscopic 轉譯，並遵循您的頭部移動和旋轉。 不過，若要充分優化視覺品質和全像全像的 [穩定性](../platform-capabilities-and-apis/hologram-stability.md)，您應該設定如下所述的相機設定。
 
-## <a name="hololens-vs-vr-immersive-headsets"></a>HoloLens 與 VR 沉浸式耳機
+## <a name="hololens-vs-vr-immersive-headsets"></a>HoloLens vs VR 沉浸式耳機
 
 Unity 攝影機元件上的預設設定適用于傳統3D 應用程式，因為它們沒有真實世界，所以需要像 skybox 的背景。
 
 * 在 **[沉浸式耳機](../../discover/immersive-headset-hardware-details.md)** 上執行時，您正在轉譯使用者看到的所有內容，因此您可能會想要保留 skybox。
-* 不過，在 [HoloLens](/hololens/hololens2-hardware)這類的全像攝影 **耳機** 上執行時，真實世界應該會出現在相機轉譯的所有內容後方。 將攝影機背景設定為 HoloLens (在 HoloLens 中，黑色呈現為透明) ，而不是 Skybox 材質：
+* 不過，在 [HoloLens](/hololens/hololens2-hardware)的全像攝影 **耳機** 上執行時，真實世界應該會出現在相機所呈現的所有內容後方。 將相機背景設定為 HoloLens 的透明 (，黑色會轉譯為透明) 而不是 Skybox 材質：
     1. 選取階層面板中的主要攝影機
     2. 在 [檢查] 面板中，尋找相機元件，並將 [清除旗標] 下拉式清單從 [Skybox] 變更為 [純色]
     3. 選取背景色彩選擇器，並將 RGBA 值變更為 (0、0、0、0) 
@@ -34,17 +34,17 @@ Unity 攝影機元件上的預設設定適用于傳統3D 應用程式，因為�
 
 無論您正在開發何種體驗，主要攝影機一律是連接到您裝置之前端掛接顯示器的主要身歷聲轉譯元件。 如果您想像使用者的開始位置是 (X：0，Y：0，Z： 0) ，將會比較容易配置您的應用程式。 因為主要攝影機正在追蹤使用者的標頭移動，所以可以設定主要攝影機的開始位置來設定使用者的開始位置。
 
-您需要做的主要選擇是您是要針對 HoloLens 或 VR 沉浸式耳機進行開發。 當您取得該內容之後，請跳至適用的任何安裝程式區段。
+您需要做的主要選擇是您是針對 HoloLens 或 VR 沉浸式耳機進行開發。 當您取得該內容之後，請跳至適用的任何安裝程式區段。
 
 ### <a name="hololens-camera-setup"></a>HoloLens 攝影機設定
 
-針對 HoloLens 應用程式，您必須針對想要鎖定場景環境的任何物件使用錨點。 我們建議使用未系結的空間來最大化穩定性，並在多個房間內建立錨點。
+針對 HoloLens 的應用程式，您必須針對想要鎖定場景環境的任何物件使用錨點。 我們建議使用未系結的空間來最大化穩定性，並在多個房間內建立錨點。
 
 [!INCLUDE[](includes/camera/hololens-setup-include.md)]
 
 ### <a name="vr-camera-setup"></a>VR 攝影機設定
 
-Windows Mixed Reality 透過房間規模的應用程式，支援橫跨各種 [體驗規模](../../design/coordinate-systems.md#mixed-reality-experience-scales)的應用程式，從僅限方向和已安置規模的應用程式。 在 HoloLens 上，您可以進一步建立全球規模的應用程式，讓使用者超越5個計量，探索整個大樓的整個樓層。
+Windows Mixed Reality 透過房間規模的應用程式，支援橫跨各種[體驗規模](../../design/coordinate-systems.md#mixed-reality-experience-scales)的應用程式，從僅限方向和已安置規模的應用程式。 在 HoloLens 上，您可以進一步建立全球規模的應用程式，讓使用者超越5個計量，探索整個大樓的整個樓層。
 
 在 Unity 中打造混合現實體驗的第一步，是要判斷您的應用程式將設為目標的 [體驗調整](../../design/coordinate-systems.md) ：
 
@@ -73,10 +73,10 @@ Windows Mixed Reality 透過房間規模的應用程式，支援橫跨各種 [�
 
 ## <a name="sharing-depth-buffers"></a>共用深度緩衝區
 
-將您的應用程式深度緩衝區共用到 Windows 每個畫面格，將會根據您要轉譯的耳機類型，為您的應用程式提供兩個最多的全像全像全像全像：
+共用您的應用程式深度緩衝區來 Windows 每個畫面格，將會根據您要轉譯的耳機類型，為您的應用程式提供兩種影像內的增強功能：
 
 * 當提供深度緩衝區時， **VR 沉浸式耳機** 可以處理位置 reprojection，調整您的全像位置和方向的 misprediction。
-* **HoloLens 耳機** 有幾種不同的方法。 當提供深度緩衝區時，HoloLens 1 會自動選取 [焦點點](focus-point-in-unity.md) ，並在與大部分內容交集的平面上優化全像影像穩定性。 HoloLens 2 將會使用深度 LSR 來穩定內容 [ (請參閱備註) ](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
+* **HoloLens 耳機** 有幾個不同的方法。 當提供深度緩衝區時，HoloLens 1 會自動選取[焦點點](focus-point-in-unity.md)，並在與大部分內容交集的平面上優化全像全像的穩定性。 HoloLens 2 將會使用深度 LSR 來穩定內容[ (請參閱備註) ](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters.setfocuspoint)。
 
 [!INCLUDE[](includes/camera/depth-buffer-include.md)]
 
@@ -104,7 +104,7 @@ HoloLens 和沉浸式耳機都會 reproject 您的應用程式所轉譯的每個
 依照預設：
 
 * 如果應用程式為指定的框架提供深度緩衝區，則 **VR 沉浸式耳機** 會負責定位 reprojection。 沉浸式耳機也會調整您的全像位置和方向的 misprediction。 如果未提供深度緩衝區，則系統只會正確地校正 mispredictions。
-* HoloLens 2 的全像 **耳機** 一樣，會負責處理應用程式是否提供深度緩衝區的位置 reprojection。 在 HoloLens 上可能沒有深度緩衝區的位置 reprojection，因為轉譯通常會因為真實世界提供的穩定背景而稀疏。
+* HoloLens 2 的全像 **耳機** 一樣，會負責處理應用程式是否提供深度緩衝區的位置 reprojection。 HoloLens 的位置 reprojection 可能沒有深度緩衝區，因為轉譯通常會因為真實世界提供的穩定背景而稀疏。
 
 [!INCLUDE[](includes/camera/reprojection-include.md)]
 

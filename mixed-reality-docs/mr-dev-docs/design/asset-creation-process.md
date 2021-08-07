@@ -6,16 +6,16 @@ ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 資產、建立、處理、預算、多邊形、材質、著色器、效能、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、資產
-ms.openlocfilehash: a5f4271de522111b0ef994869b9ecf4910582562
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: 5c5dcdbe24a8028bb8a3c57e57b9d95079f9e832954d12aa31421dd75f1b6982
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009616"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115214104"
 ---
 # <a name="asset-creation-process"></a>資產建立程序
 
-Windows Mixed Reality 是以 Microsoft 在 DirectX 中所做的投資數十年為基礎。 開發人員在建立3D 圖形時，所擁有的所有經驗和技能，會持續對 HoloLens 有價值。
+Windows Mixed Reality 是以 Microsoft 在 DirectX 中所做的投資數十年為基礎。 開發人員在建立3D 圖形時，所擁有的所有經驗和技能，都能持續對 HoloLens 有價值。
 
 您為專案建立的資產有許多圖形和表單。 它們可以由一連串的材質/影像、音訊、影片、3D 模型和動畫組成。 我們無法開始討論可用來建立專案中不同類型資產的所有工具。 在本文中，我們將著重于3D 資產建立方法。
 
@@ -77,10 +77,10 @@ Windows Mixed Reality 是以 Microsoft 在 DirectX 中所做的投資數十年�
 ### <a name="creating-assets"></a>建立資產
 
 **Authoring tools**<br>
-首先，您可以用數種不同的方式建立自己的資產。 3D 演出者使用各種應用程式和工具來建立包含 **網格**、 **材質** 和 **材質** 的模型。 然後，這會以檔案格式儲存，讓應用程式使用的圖形引擎可以匯入或使用，例如 **。FBX** 或 **。OBJ**。 任何產生您所選圖形引擎支援之模型的工具，都可以在 **HoloLens** 上運作。 在3D 演出者之間，許多選擇使用 [Autodesk 的 Maya，因為它可以使用 HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA) 來轉換資產的建立方式。 如果您想要快速取得東西，也可以使用 Windows 所附的 [3D Builder](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) 來匯出。要在應用程式中使用的 OBJ。
+首先，您可以用數種不同的方式建立自己的資產。 3D 演出者使用各種應用程式和工具來建立包含 **網格**、 **材質** 和 **材質** 的模型。 然後，這會以檔案格式儲存，讓應用程式使用的圖形引擎可以匯入或使用，例如 **。FBX** 或 **。OBJ**。 任何產生所選圖形引擎所支援模型的工具，都可以在 **HoloLens** 上運作。 在3d 演出者之間，許多選擇使用[Autodesk 的 Maya，因為它可以使用 HoloLens](https://www.youtube.com/watch?v=q0K3n0Gf8mA)來轉換資產的建立方式。 如果您想要快速取得東西，也可以使用 Windows 所附的[3D Builder](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources)來匯出。要在應用程式中使用的 OBJ。
 
 **物件捕獲**<br>
-另外還有在3D 中捕捉物件的選項。 使用數位內容建立軟體來捕捉3D 中的無生命物件，並使用數位內容建立軟體進行編輯，在3D 列印的增加方面越來越普遍。 使用 **Kinect 2** 感應器和 [3D Builder](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) 您可以使用「捕捉」功能，從真實世界的物件建立資產。 這也是一 [套工具](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) ，可透過處理數個影像來拼接以及網格和紋理來進行 **攝影測量** 。
+另外還有在3D 中捕捉物件的選項。 使用數位內容建立軟體來捕捉3D 中的無生命物件，並使用數位內容建立軟體進行編輯，在3D 列印的增加方面越來越普遍。 使用 **Kinect 2** 感應器和 [3D Builder](https://developer.microsoft.com/windows/hardware/3d-print/3d-builder-resources) ，您可以使用「捕捉」功能從真實世界的物件建立資產。 這也是一 [套工具](https://en.wikipedia.org/wiki/Comparison_of_photogrammetry_software) ，可透過處理數個影像來拼接以及網格和紋理來進行 **攝影測量** 。
 
 ### <a name="purchasing-assets"></a>購買資產
 
@@ -103,7 +103,7 @@ Windows Mixed Reality 是以 Microsoft 在 DirectX 中所做的投資數十年�
 
 在某些情況下，您將會取得原本為其他裝置和不同應用程式建立的現有資產。 在大部分情況下，這些資產可以轉換成與應用程式所使用之圖形引擎相容的格式。
 
-在您的 HoloLens 應用程式中移植要使用的資產時，您會想要詢問下列問題：
+當您在 HoloLens 應用程式中移植要使用的資產時，您會想要詢問下列問題：
 * **您可以直接匯入或需要轉換成另一種格式嗎？** 使用您所使用的圖形引擎來檢查您要匯入的格式。
 * **如果轉換成相容的格式，是否有任何遺失？** 有時詳細資料可能會遺失或匯入，可能會導致需要在 3D authoring tool 中清除的成品。
 * **資產的三角形/多邊形計數為何？** 根據您的應用程式預算，您可以使用 [Simplygon](https://www.simplygon.com/) 或類似的工具來刪減 (cti，或手動減少) 原始資產的 poly 計數，以符合您應用程式預算的範圍。
@@ -119,7 +119,7 @@ Windows Mixed Reality 是以 Microsoft 在 DirectX 中所做的投資數十年�
 * **提供預算**
   * Poly 計數範圍
   * 紋理數目
-  * Unity 和 HoloLens 的著色器 (類型，一律預設為行動著色器優先) 
+  * Unity 和 HoloLens 的著色器 (類型，您應該一律預設為行動著色器優先) 
 * **瞭解成本**
   * 變更要求的外包原則是什麼？
 

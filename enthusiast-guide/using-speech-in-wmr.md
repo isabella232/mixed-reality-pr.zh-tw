@@ -1,6 +1,6 @@
 ---
 title: 在 Windows Mixed Reality 中使用語音
-description: 瞭解如何使用語音輸入來控制 Windows Mixed Reality 應用程式中的命令、3D 物件和聽寫。
+description: 瞭解如何使用語音輸入來控制 Windows Mixed Reality 應用程式中的命令、3d 物件和聽寫。
 author: hferrone
 ms.author: v-hferrone
 ms.date: 09/16/2020
@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
 - Windows 10
-ms.openlocfilehash: 23e3ea9014612d5df8935552d7b767454b9eefa7
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: bda846e1e54d34824c0461b92506408264d5cf06b0101cf7bbbcce9e4fa7fa61
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647024"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190150"
 ---
 # <a name="using-speech-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中使用語音
 
@@ -100,7 +100,7 @@ ms.locfileid: "110647024"
 
 | 作法 | 請說這個 |
 | --- | --- |
-| 瞭解您可以對 Cortana 的看法 | 我可以說什麼？ |
+| 瞭解您可以說的 Cortana | 我可以說什麼？ |
 | 增加/減少音量 | 開啟/減少音量 |
 | 靜音/取消靜音 | 靜音/取消靜音 |
 | 啟動應用程式 | 啟動 [應用程式名稱] |
@@ -115,15 +115,15 @@ ms.locfileid: "110647024"
 
 > [!NOTE]
 > * Cortana 在所有區域和語言中都無法使用。 [深入了解](https://support.microsoft.com/help/4026948)。
-> * 如果 Cortana 未回應「嗨 Cortana」，請選取 [ **隱私權 >] > 的設定** ，並讓線上語音辨識開啟。
-> * 如果您關閉 Cortana，將無法使用「嗨 Cortana」語音命令，但是您仍然可以使用其他命令 (例如「選取」和「傳送」 ) 
+> * 如果 Cortana 沒有回應「嗨 Cortana」，請選取 [**設定 > 隱私權] > [語音**]，並讓線上語音辨識開啟。
+> * 如果您關閉 Cortana，「嗨 Cortana」語音命令將無法使用，但您仍然可以使用其他命令 (例如「選取」和「傳送」 ) 
 
 ## <a name="keyboard-dictation"></a>鍵盤聽寫
 
 只要鍵盤處於作用中狀態，就可以切換到聽寫模式，以方便輸入。 選取鍵盤上的麥克風（或單純說「開始聽寫」）開始使用。
 
 > [!NOTE]
-> Mixed reality 鍵盤僅提供英文版，但您可以使用任何支援的 [Windows Mixed Reality 語言](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)的聽寫。
+> mixed reality 鍵盤僅提供英文版，但您可以使用任何支援的[Windows Mixed Reality 語言](other-questions.md#what-languages-are-supported-in-windows-mixed-reality)的聽寫。
 
 ### <a name="keyboard-dictation-commands"></a>鍵盤聽寫命令
 

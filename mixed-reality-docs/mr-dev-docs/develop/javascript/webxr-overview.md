@@ -6,12 +6,12 @@ ms.author: ayyonet
 ms.date: 04/10/2020
 ms.topic: article
 keywords: WebXR、WinMR、WebAR、WebVR、WindowsMixedReality、HoloLens、windows mixed reality、web vr、web xr、web mr、web ar、360、360影片、360影片、360相片、360相片、360內容、沉浸式 web、immersiveweb、IW
-ms.openlocfilehash: f29be9af3a2dd1d13b301988845d0cc322e9d4de
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: e670135cb00db26082b73f8465390a686de6a3e946bbffa561f9df90085970f8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394372"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216264"
 ---
 # <a name="webxr-overview"></a>WebXR 總覽
 
@@ -30,7 +30,7 @@ JavaScript 是世界上最受歡迎的程式設計語言之一！ 它在網路�
 
 ### <a name="viewing-webxr"></a>觀看 WebXR
 
-您可以在 Windows Mixed Reality 上查看 WebXR experinces， [以及新的 Microsoft Edge](../../whats-new/new-microsoft-edge.md) 和 [Firefox 事實](https://mixedreality.mozilla.org/firefox-reality/)。
+您可以在 Windows Mixed Reality 上查看 WebXR experinces，[以及新的 Microsoft Edge](../../whats-new/new-microsoft-edge.md)和[Firefox 事實](https://mixedreality.mozilla.org/firefox-reality/)。
 若要測試您的瀏覽器是否支援 WebXR，您可以在瀏覽器中流覽至[WebXR 範例](https://immersive-web.github.io/webxr-samples/)
 
 ## <a name="what-can-i-use-to-develop-immersive-web-experiences"></a>我可以使用哪些功能來開發沉浸式 web 體驗？

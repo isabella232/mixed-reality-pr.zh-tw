@@ -1,16 +1,16 @@
 ---
 title: LargeProjects
-description: MRTK 具有大型專案之取用者的秘訣。
+description: MRTK 具有大型專案之取用者的提示。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 8beb11876eab01d0d4f448e39128b09ec24da4fe
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: b8a70f40a60e5b9a22c4d91d46b20ea59b155d316e730c1dc0677887e71dd5ad
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104681981"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212730"
 ---
 # <a name="using-mrtk-in-large-projects"></a>在大型專案中使用 MRTK
 
@@ -101,7 +101,7 @@ crashlytics-build.properties
 
 ## <a name="projectpreferencesasset-file"></a>ProjectPreferences 資產檔案
 
-您可以在編輯 > 專案設定下找到整個專案的 MRTK 設定-> Mixed Reality 工具組位置。 這些設定會儲存至 [資產] 資料夾中位於此位置的檔案：
+您可以在 [編輯->] Project 中找到整個 Project 的 MRTK 設定設定 > 混合現實工具組位置。 這些設定會儲存至 [資產] 資料夾中位於此位置的檔案：
 
 ```
 Assets/MixedRealityToolkit.Generated/ProjectPreferences.asset

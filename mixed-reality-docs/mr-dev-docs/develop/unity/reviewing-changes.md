@@ -1,18 +1,18 @@
 ---
 title: 授權專案變更
-description: 瞭解如何授權專案變更適用于 HoloLens 和 VR 開發的 MR 功能工具。
+description: 瞭解如何授權專案變更 HoloLens 和 VR 開發的 MR 功能工具。
 author: davidkline-ms
 ms.author: v-hferrone
 ms.date: 03/04/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: db7ae079e19c7739f57f0b9e4a375a3e6f9a3cdd
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 67c3b0cd5dbfcc2d0858a098aa3c80f4a8105c5637d26b4e33268d4b830b218e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "102230758"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211744"
 ---
 # <a name="authorizing-project-changes"></a>授權專案變更
 

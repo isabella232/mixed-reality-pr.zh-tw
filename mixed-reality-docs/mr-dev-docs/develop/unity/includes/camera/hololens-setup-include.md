@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 6e751f5376110ddc6ae92c75b4182fba8240a356
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 78596197af6c2e7c329e7a7c99281f8debee13b973a212709f5be1ec34e04eea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110748520"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212230"
 ---
 # <a name="mrtk"></a>[MRTK](#tab/mrtk)
 <!-- NEVER CHANGE THE ABOVE LINE! -->
@@ -30,7 +30,7 @@ xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Device);
 xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Unbounded); // Recommendation for OpenXR
 ```
 
-您可以針對 HoloLens 應用程式使用 [ARSession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation) ，其搭配錨點和 ARKit/ARCore 更好用。
+您可以使用[ARSession](https://docs.unity3d.com/Packages/com.unity.xr.arfoundation@2.1/manual/index.html#installing-ar-foundation)進行 HoloLens 的應用程式，其可搭配錨點和 ARKit/ARCore 更好用。
 
 ![階層中的 AR 會話](../../images/xrsdk-arsession.png)
 
@@ -56,8 +56,8 @@ xrInputSubsystem.TrySetTrackingOriginMode(TrackingOriginModeFlags.Unbounded); //
    ![Unity 中的 [偵測器] 窗格中的相機](../../images/maincamera-350px.png)  
    *Unity 中的 [偵測器] 窗格中的相機*
 
-1. 移至 **Windows Store Player 設定** 的 [**其他設定**] 區段
-1. 選擇 [ **Windows Mixed Reality** ] 作為裝置，可能會列為舊版 Unity 的 **Windows** 全像攝影版
+1. 移至 **Windows 存放區播放** 程式的 **其他設定** 區段設定
+1. 選擇 [ **Windows Mixed Reality** ] 作為裝置，可能會列為舊版 Unity 中的 **Windows 全息** 版
 1. 選取 **支援的虛擬實境**
 
 由於主攝影機物件會自動標記為相機，因此 Unity 可支援所有移動和轉譯。

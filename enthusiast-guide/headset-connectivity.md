@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，協助，支援，耳機
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2d46275fd86eedbe93a81bc97c156f29794e8c42
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: ed8708d39953e79d445f3794d335d9a9451c9bf9fe8c2fca1feb792ee3f9b2a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143229"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189220"
 ---
 # <a name="headset-connectivity-faqs"></a>耳機連接常見問題
 
@@ -35,12 +35,12 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 
 ## <a name="i-am-getting-a-check-your-display-cable-error"></a>我收到「檢查您的顯示器纜線」錯誤
 
-* 如果您是使用任何介面卡將耳機連接到您的電腦，請確定其支援 Windows Mixed Reality 且支援4K。 此外，在將耳機連接至介面卡之前，請先嘗試將介面卡連線到電腦。
+* 如果您是使用任何介面卡將耳機連接到您的電腦，請確定其支援 Windows Mixed Reality 且支援4k。 此外，在將耳機連接至介面卡之前，請先嘗試將介面卡連線到電腦。
 * 請嘗試使用不同的 HDMI 或 DisplayPort 埠。
-* 將您的耳機連接至 DisplayPort 1.2 或更新版本，或 HDMI 1.4 或更新版本。 請確定埠與您電腦上最先進的圖形配接器相對應。
+* 連線您的耳機至 DisplayPort 1.2 或更新版本，或 HDMI 1.4 或更新版本。 請確定埠與您電腦上最先進的圖形配接器相對應。
 * 如果您的電腦同時具有整合式和離散圖形，請確定您使用的是使用中的圖形配接器上的 HDMI 或 DisplayPort 埠。 這可能表示您必須將您的電腦顯示器連接至非 HDMI 埠。
 * 如果您的電腦同時具有整合式和離散圖形，且整合式圖形較舊且不支援 Windows Mixed Reality，請嘗試停用整合式 GPU。
-* 將電腦監視器連接到電腦的 HDMI 或 DisplayPort 埠。 請確定您的圖形驅動程式是最新的。 直接從 AMD、Nvidia 或 Intel 下載並安裝驅動程式，因為它們可能會比發佈至 Windows Update 的版本還新。
+* 連線電腦監視器連接到您電腦的 HDMI 或 DisplayPort 埠。 請確定您的圖形驅動程式是最新的。 直接從 AMD、Nvidia 或 Intel 下載並安裝驅動程式，因為它們可能會比發佈至 Windows Update 的版本還新。
 * 如果您已將外部監視器插入至 HDMI 埠，請嘗試改為將其插入至 DisplayPort，並將 HDMI 埠用於耳機。
 * 請確定您已將耳機的 HDMI 纜線插入電腦上的「HDMI 輸出」埠，而不是「HDMI」埠。
 * Windows 可能無法偵測到顯示器纜線連接。 開啟裝置管理員，並查看耳機是否列在 [監視器] 之下。 如果沒有，請選取 [ **動作] > 掃描硬體變更**。
@@ -49,7 +49,7 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 
 當您放入耳機時，Windows Mixed Reality 可能需要幾秒鐘的時間才能重載您的空間。 如果此訊息未消失，請確定已從鏡頭間耳機內的鄰近性感應器移除保護不乾膠條。 如果問題持續發生，請洽詢您的耳機製造商。
 
-## <a name="a-message-says-connect-your-headset-but-ive-plugged-in-my-headset"></a>有一則訊息顯示「連接您的耳機」，但我已接上耳機
+## <a name="a-message-says-connect-your-headset-but-ive-plugged-in-my-headset"></a>有一則訊息顯示「連線您的耳機」，但我已接上耳機
 
 - 請確定耳機的 USB 和 HDMI 或 DisplayPort 纜線已連接到您電腦上正確的埠。 以下說明如何識別正確的埠：
 
@@ -59,20 +59,20 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 - 拔掉並插上耳機的 USB 和 HDMI 或 DisplayPort 纜線，以確定它們已安全地連線。 插入 USB 纜線時，請不要在插入 USB 纜線期間暫停。
 - 如果您看到耳機的部分列舉，例如一系列 USB 裝置列舉，但裝置管理員中的「混合現實耳機」底下沒有任何內容，請嘗試使用外部電源的 USB 3.0 中樞。
 - 移至耳機製造商的網站，並更新您耳機的驅動程式和固件。
-- 將您的耳機連接至另一部電腦，然後開啟裝置管理員。 即使該電腦未與 Windows Mixed Reality 完全相容，您仍可查看耳機是否列舉。 如果您的耳機未在多部電腦上列舉，則可能發生硬體問題。
+- 連線您的耳機至另一部電腦，然後開啟裝置管理員。 即使該電腦未與 Windows Mixed Reality 完全相容，您仍可查看耳機是否列舉。 如果您的耳機未在多部電腦上列舉，則可能發生硬體問題。
 
 > [!NOTE]
-> 針對 Surface 使用者：較舊版本的 Surface Dock 和 Surface Book USB Hub 固件更新軟體與混合現實耳機不相容。 如果您在 Surface PC 上收到「連接耳機」訊息，請檢查裝置管理員中是否有任何裝置回報「程式碼10：裝置無法啟動」錯誤。 如果是，請 [移除衝突的驅動程式](https://support.microsoft.com/en-us/help/4032123/kinect-sensor-is-not-recognized-on-a-surface-book)。 您應該只需要做一次。
+> 針對 surface 使用者：較舊版本的 surface Dock 和 Surface Book USB Hub 固件更新軟體與混合現實耳機不相容。 如果您在 Surface PC 上收到「連線您的耳機」訊息，請在裝置管理員中檢查是否有任何裝置回報「程式碼10：裝置無法啟動」錯誤。 如果是，請 [移除衝突的驅動程式](https://support.microsoft.com/en-us/help/4032123/kinect-sensor-is-not-recognized-on-a-surface-book)。 您應該只需要做一次。
 
-注意：如果您 Windows 10 的電腦執行 Windows 10 N，在插入您的混合現實耳機之後，裝置管理員會看到「代碼28：安裝類別不存在或無效」錯誤。 Windows Mixed Reality 不支援 N 版的 Windows 10。 如需詳細資訊，請遵循下列 [指示](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) 。
+注意：如果您 Windows 10 的電腦執行 Windows 10 n，在插入您的混合現實耳機之後，裝置管理員會看到「代碼28：安裝類別不存在或無效」錯誤。 Windows Mixed Reality 不支援 N 版的 Windows 10。 如需詳細資訊，請遵循下列 [指示](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) 。
 
 ## <a name="a-message-says-check-your-usb-cable-or-insufficient-usb-speed"></a>顯示「檢查 USB 纜線」或「USB 速度不足」的訊息
 
 * 確定您是在電腦上使用支援的 USB 3.0 埠：
 
     * 請確定您的耳機 USB 纜線已插入。
-    * 執行 [Windows Mixed Reality 入口網站](install-windows-mixed-reality.md#launch-mixed-reality-portal) ，以確定您的電腦 USB 3.0 控制器受到支援。
-    * 將您的耳機連接到電腦上的其他 USB 3.0 埠。 有些電腦有一個以上的 USB 3.0 控制器。
+    * 執行[Windows Mixed Reality 入口網站](install-windows-mixed-reality.md#launch-mixed-reality-portal)，以確定您的電腦 USB 3.0 控制器受到支援。
+    * 連線您的耳機前往電腦上的其他 USB 3.0 埠。 有些電腦有一個以上的 USB 3.0 控制器。
     * 暫時中斷連接到您電腦的所有 USB 裝置，並只連接您的耳機。
     * 在自訂的電腦上，即使埠可能標示為 USB 3.0 埠，它還是可能連接到 USB 2.0 控制器。 連接耳機之後，開啟裝置管理員，找出並按一下任何從您的耳機列舉的裝置，然後移至 [ **依連接查看 > 裝置**]。
 * 試用另一台電腦上的耳機。 如果其他電腦與 Windows Mixed Reality 不完全相容，請簽入裝置管理員以查看是否看到「USB 速度不足」訊息。 如果未在多部電腦上正確列舉，您的耳機可能會有問題。
@@ -104,6 +104,6 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 1. 移至 [ **開始] > 裝置管理員** ，並查看耳機的 [混合的現實裝置]。 裝置狀態應該會指出「裝置運作正常」。
 2. 在裝置上按一下滑鼠右鍵，然後選取 [卸載裝置]。
 3. 在出現的新快顯視窗中，選取 [刪除此裝置的驅動程式軟體] 核取方塊，然後選取 [卸載]。
-4. 完成時，請從您的電腦拔下耳機，然後將它插回。 Windows Update 現在將會下載並安裝新的驅動程式。
+4. 完成時，請從您的電腦拔下耳機，然後將它插回。 Windows更新現在會下載並安裝新的驅動程式。
 
-注意：如果您有 N 版的 Windows，則必須切換至一般版本的 Windows 10，才能使用 Windows Mixed Reality。
+注意：如果您有 N 版的 Windows，您必須切換至一般版本的 Windows 10，才能使用 Windows Mixed Reality。

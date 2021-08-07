@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MRTK 設定檔
-ms.openlocfilehash: 6b71ded75a9a2f3baf51db37c05fca91608f95a1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 1c6c909dcfd6f553419f050dd35a8fe7a3b82f2d56c761a55b184dc4d45d4cd2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115187632"
 ---
 # <a name="configuration-and-profiles"></a>設定和設定檔
 
@@ -22,7 +22,7 @@ MRTK 必須可設定，才能支援各式各樣的需求，並使用稱為「設
 
 設定檔儲存服務的設定。 您可以使用它們來控制要執行哪些服務，以及這些服務在執行時的行為。 它們在您的專案中是儲存為 [ScriptableObject](https://docs.unity3d.com/Manual/class-ScriptableObject.html) 資產。 您可以在 [專案] 視窗中選取設定檔來加以查看和編輯。
 
-例如，MRTK 有一個攝影機服務，這會根據顯示器是否為透明而定，將不同的屬性套用至主要相機 (例如 HoloLens) 或不透明 (例如 VR 耳機) 的情況。 攝影機服務會獲得 [相機設定檔](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Core/Definitions/CameraSystem/MixedRealityCameraProfile.cs)，其中包含不同的透明與不透明的設定。
+例如，MRTK 有一個攝影機服務，這會根據顯示器是否透明而定，將不同的屬性套用至主要攝影機 (例如 HoloLens) 或不透明的 (，例如在 VR 耳機) 的情況下。 攝影機服務會獲得 [相機設定檔](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Core/Definitions/CameraSystem/MixedRealityCameraProfile.cs)，其中包含不同的透明與不透明的設定。
 
 更複雜的設定檔範例是 [InputSystem](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_development/Assets/MRTK/Core/Definitions/InputSystem/MixedRealityInputSystemProfile.cs)。
 該設定檔上的部分屬性 (例如 MixedRealityInputDataProviderConfiguration 實體) 控制將在執行時間具現化的物件，這是輸入系統知道如何建立 OpenVR、WMR 和 Unity 輸入子系統的方式。 此設定檔不只是一組屬性，可設定是否啟用或停用特定的輸入子功能，這也是 MRTK 在執行時間用來「新增」其他類別的插入機制 (例如，輸入系統設定檔包含具有序列化型別資訊的「輸入資料提供者」清單。這些物件是由輸入系統在執行時間具現化的) 

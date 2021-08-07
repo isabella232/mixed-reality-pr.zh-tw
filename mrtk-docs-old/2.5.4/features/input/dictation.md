@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 26aaa6ceab029a42716afa6157ebf95011d4753b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 8b70369581186ab9cf9627475fe174167478fc54649f826bff5b0c4fd8ed4618
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702044"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115209762"
 ---
 # <a name="dictation"></a>聽寫
 
@@ -18,10 +18,10 @@ ms.locfileid: "104702044"
 
 ## <a name="requirements"></a>規格需求
 
-聽寫系統會使用 Unity 的 [DictationRecognizer](https://docs.unity3d.com/ScriptReference/Windows.Speech.DictationRecognizer.html) ，其本身會使用基礎 Windows 語音 api 來處理聽寫。 請注意，這表示這項功能只存在於 Windows 架構的平臺上。
+聽寫系統會使用 Unity 的[DictationRecognizer](https://docs.unity3d.com/ScriptReference/Windows.Speech.DictationRecognizer.html) ，其本身會使用基礎 Windows 語音 api 來處理聽寫。 請注意，這表示這項功能只存在於 Windows 架構的平臺上。
 
 使用聽寫系統需要 [PlayerSettings 功能一節](https://docs.unity3d.com/Manual/class-PlayerSettingsWSA.html#Capabilities)中的「網際網路用戶端」和「麥克風」應用程式功能。
-如需 Unity 中語音輸入的詳細資訊，請參閱 [Windows Mixed Reality 檔](https://docs.microsoft.com/windows/mixed-reality/voice-input-in-unity#dictation) 。
+如需 Unity 中語音輸入的詳細資訊，請參閱[Windows Mixed Reality 檔](https://docs.microsoft.com/windows/mixed-reality/voice-input-in-unity#dictation)。
 
 ## <a name="configuration"></a>組態
 

@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、GitHub
-ms.openlocfilehash: 543b65017770337a2e9d6156ca067c1cbdfbe9b9
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 62e995ed5db468dc669c98456dd506aaf14d7b5078734ba300d37f70b8e67aab
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686441"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115212770"
 ---
 # <a name="developer-portal-generation-guide"></a>開發人員入口網站產生指南
 
@@ -67,7 +67,7 @@ Docfx 支援 crefs in///記錄的程式碼。 它會將這些參考轉譯成指�
 
 ## <a name="linking-in-md-documentation-files"></a>連結 md 檔檔案
 
-Docfx 正在轉譯和驗證產生的所有相對本機連結，不需要特殊的語法。 參考另一篇檔文章的方法應該一律是參考對應的 md 檔案，永遠不是自動產生的 .html 檔案。 請注意，本機檔案的所有連結都必須相對於您要修改的檔案。
+Docfx 正在轉譯和驗證產生的所有相對本機連結，不需要特殊的語法。 參考另一篇檔的文章應該一律透過參考對應的 md 檔案來完成，而不是自動產生的 .html 檔案。 請注意，本機檔案的所有連結都必須相對於您要修改的檔案。
 
 您可以使用 [交互參照](https://dotnet.github.io/docfx/tutorial/links_and_cross_references.html)來完成連結至 API 檔。 Docfx 會藉由重整簽章，為所有 API 檔自動產生 Uid。
 

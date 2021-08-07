@@ -5,18 +5,18 @@ author: maxwang-ms
 ms.author: wangmax
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、系統鍵盤、
-ms.openlocfilehash: bade7d1774b331ae7d58587f2691b96187cc2c79
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: fed51da13a58f61c3b1d1ea9e99a23b124da81c6268d5da64e98e986f138a583
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115189238"
 ---
 # <a name="system-keyboard"></a>系統鍵盤
 
 ![系統鍵盤](../images/system-keyboard/MRTK_SystemKeyboard_Main.png)
 
-Unity 應用程式可以在任何時間叫用系統鍵盤。 請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens 上的鍵盤 (第1代) 則會支援 GGV (注視、手勢和語音) <sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>。 此外，從編輯器將 [Unity 遠端](../tools/holographic-remoting.md) 執行到 HoloLens 時，系統鍵盤也不會顯示。
+Unity 應用程式可以在任何時間叫用系統鍵盤。 請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens (第一代) 上的鍵盤則支援 GGV (注視、手勢和語音) <sup>[1](https://docs.microsoft.com/windows/mixed-reality/gaze)</sup>。 此外，從編輯器執行[Unity 遠端處理](../tools/holographic-remoting.md)至 HoloLens 時，不會顯示系統鍵盤。
 
 ## <a name="how-to-invoke-the-system-keyboard"></a>如何叫用系統鍵盤
 

@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/26/2019
 ms.topic: article
 keywords: 混合的現實、手、運動控制器、互動、設計、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 1dffdd5f3471993dfdb5e504e4c5b87ec0bfef7d
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+ms.openlocfilehash: 3a54d707260a3e5aebd83a53b62098504c86c9fea7b2ecbb49d3dbd8b72400dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847320"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115213688"
 ---
 # <a name="hands-and-motion-controllers"></a>手部與運動控制器
 

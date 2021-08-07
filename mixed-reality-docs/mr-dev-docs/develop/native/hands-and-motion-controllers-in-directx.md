@@ -6,21 +6,21 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 手、移動控制器、directx、輸入、全像全像、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 2f14cb06e440787bbd6541a05a983e0614293727
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 13988df80052ef85662dcf9834406baa91d48f7c0b70242d1c904548c2707105
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810164"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115210952"
 ---
 # <a name="hands-and-motion-controllers-in-directx"></a>DirectX 中的手部和運動控制器
 
 > [!NOTE]
 > 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
-在 Windows Mixed Reality 中，會透過空間輸入 Api 來處理手和 [移動控制器](../../design/motion-controllers.md) 的輸入，這些都是在 [ [輸入](/uwp/api/windows.ui.input.spatial) ] 命名空間中找到。 這可讓您輕鬆地處理常見的動作，例如 **選取** 在雙手和移動控制器之間按相同方式。
+在 Windows Mixed Reality 中，會透過空間輸入 api （可在 Windows 中找到）來處理手和[移動控制器](../../design/motion-controllers.md)輸入[。Ui。輸入. 空間](/uwp/api/windows.ui.input.spatial)命名空間。 這可讓您輕鬆地處理常見的動作，例如 **選取** 在雙手和移動控制器之間按相同方式。
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 若要存取 Windows Mixed Reality 中的空間輸入，請從 SpatialInteractionManager 介面開始。  您可以藉由呼叫  [SpatialInteractionManager：： GetForCurrentView](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.getforcurrentview)來存取此介面，通常是在應用程式啟動期間的一段時間。
 
@@ -31,7 +31,7 @@ SpatialInteractionManager interactionManager = SpatialInteractionManager::GetFor
 ```
 
 SpatialInteractionManager 的工作是提供 [SpatialInteractionSources](/uwp/api/windows.ui.input.spatial.spatialinteractionsource)（代表輸入來源）的存取權。  系統中有三種可用的 SpatialInteractionSources。
-* **手** 代表使用者偵測到的手。 手來源提供以裝置為基礎的不同功能，範圍從 HoloLens 上的基本手勢，到 HoloLens 2 上的完整明確表述的手動追蹤。 
+* **手** 代表使用者偵測到的手。 手來源提供以裝置為基礎的不同功能，範圍從 HoloLens 上的基本手勢，到 HoloLens 2 上完全明確的手追蹤。 
 * **控制器** 代表配對的移動控制器。 移動控制器可提供不同的功能，例如，[選取觸發程式]、[功能表] 按鈕、[功能表]、[touchpads] 和 [thumbsticks]。
 * **語音** 代表使用者的語音說話系統偵測到的關鍵字。 例如，每當使用者說「選取」時，此來源就會插入 Select 按下和放開。
 
@@ -91,7 +91,7 @@ for (auto& sourceState : sourceStates)
 ### <a name="predicted-vs-historical-poses"></a>預測與歷程記錄
 GetDetectedSourcesAtTimestamp 具有時間戳記參數。 這可讓您要求狀態，並提出預測或歷程記錄的資料，讓您可以將空間互動與其他輸入來源相互關聯。 例如，在目前的框架中呈現手的位置時，您可以傳入 [HolographicFrame](/uwp/api/windows.graphics.holographic.holographicframe)所提供的預測時間戳記。 這可讓系統向前預測手的位置，以便與轉譯的畫面格輸出緊密對齊，並將察覺的延遲降至最低。
 
-不過，這類預測的姿勢並不會產生以互動來源為目標的理想指標光線。 例如，按下 [移動控制器] 按鈕時，該事件最多可能需要20毫秒的時間，才能透過藍牙向上到作業系統。 同樣地，在使用者進行手勢手勢之後，某些時間可能會在系統偵測到手勢之前通過，而您的應用程式則會進行輪詢。 當您的應用程式輪詢狀態變更時，用來鎖定的 head 和手也會實際發生在過去。 如果您的目標是將目前的 HolographicFrame 時間戳記傳遞給 GetDetectedSourcesAtTimestamp，則會改為在畫面格顯示時，將姿勢預測到目標光線（未來可能超過20毫秒）。 這種未來的原因適用于 *呈現* 互動來源，但會將我們的時間問題轉譯為 *目標* ，因為使用者的目標是在過去發生。
+不過，這類預測的姿勢並不會產生以互動來源為目標的理想指標光線。 例如，按下 [移動控制器] 按鈕時，該事件最多可能需要20毫秒的時間，才能透過藍牙到作業系統。 同樣地，在使用者進行手勢手勢之後，某些時間可能會在系統偵測到手勢之前通過，而您的應用程式則會進行輪詢。 當您的應用程式輪詢狀態變更時，用來鎖定的 head 和手也會實際發生在過去。 如果您的目標是將目前的 HolographicFrame 時間戳記傳遞給 GetDetectedSourcesAtTimestamp，則會改為在畫面格顯示時，將姿勢預測到目標光線（未來可能超過20毫秒）。 這種未來的原因適用于 *呈現* 互動來源，但會將我們的時間問題轉譯為 *目標* ，因為使用者的目標是在過去發生。
 
 幸運的是， [SourcePressed](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourcepressed)、[SourceReleased 和 [SourceUpdated](/uwp/api/windows.ui.input.spatial.spatialinteractionmanager.sourceupdated) 事件會提供與每個輸入事件相關聯的歷程記錄 [狀態](/uwp/api/windows.ui.input.spatial.spatialinteractionsourceeventargs.state) 。  這會直接包括歷程記錄，以及可透過 [TryGetPointerPose](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.trygetpointerpose)取得的歷史時間戳記，以及您可以傳遞給其他 api 來與此事件相互關聯的歷程 [時間戳記](/uwp/api/windows.ui.input.spatial.spatialinteractionsourcestate.timestamp) 。
 
@@ -149,7 +149,7 @@ Windows Mixed Reality API 會提供對已進行的明確追蹤支援，例如 Ho
 
 每個聯合都會提供下列資訊：
 
-| 名稱 | 描述 |
+| Name | 描述 |
 |--- |--- |
 |位置 | 聯合的3D 位置，適用于任何要求的座標系統。 |
 |Orientation | 適用于骨骼的3D 方向，適用于任何要求的座標系統。 |
@@ -223,7 +223,7 @@ if (handPose)
 相對於基本架構接點，手形 API 不允許您指定頂點的座標系統。  相反地， [HandMeshVertexState](/uwp/api/windows.perception.people.handmeshvertexstate) 會指定在中提供頂點的座標系統。  然後您可以藉由呼叫 [TryGetTransformTo](/uwp/api/windows.perception.spatial.spatialcoordinatesystem.trygettransformto#Windows_Perception_Spatial_SpatialCoordinateSystem_TryGetTransformTo_Windows_Perception_Spatial_SpatialCoordinateSystem_) 並指定您想要的座標系統，來取得網格轉換。  每當您使用頂點時，都必須使用這個網格轉換。  這種方法可減少 CPU 額外負荷，尤其是當您只是為了轉譯而使用網格時更是如此。
 
 ## <a name="gaze-and-commit-composite-gestures"></a>注視和認可複合手勢
-針對使用「注視認可」輸入模型的應用程式，特別是在 HoloLens (第一代) 上，空間輸入 API 會提供選擇性的 [SpatialGestureRecognizer](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer) ，可用來啟用以「選取」事件為基礎的複合手勢。  藉由將互動從 SpatialInteractionManager 路由傳送至全像 SpatialGestureRecognizer，應用程式可以跨手、語音和空間輸入裝置，以一致的方式來偵測點擊、保存、操作和導覽事件，而不需要手動處理按下和釋出。
+針對使用「注視」和「認可」輸入模型的應用程式，特別是在第一代) 的 HoloLens (，空間輸入 API 會提供選擇性的[SpatialGestureRecognizer](/uwp/api/Windows.UI.Input.Spatial.SpatialGestureRecognizer) ，可用來啟用以「選取」事件為基礎的複合手勢。  藉由將互動從 SpatialInteractionManager 路由傳送至全像 SpatialGestureRecognizer，應用程式可以跨手、語音和空間輸入裝置，以一致的方式來偵測點擊、保存、操作和導覽事件，而不需要手動處理按下和釋出。
 
 SpatialGestureRecognizer 只會在您要求的手勢集合之間進行最短的混淆。 例如，如果您只要求點一下，使用者可能會在想要的時間點按下手指，且仍然會出現點一下。 如果您要求點一下和按住，則在大約第二個按住手指時，手勢會升階為按住，且不會再進行點碰。
 

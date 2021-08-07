@@ -5,16 +5,16 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、TMP、
-ms.openlocfilehash: 8640d49511f5535226e7c8e758afd621ba26de95
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9e51c296d897e6bb494f3c9fc23a7af269a8d9b8bbd2d18006721acdbe2d9ea3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104691125"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115188352"
 ---
 # <a name="text-prefab"></a>文字預製專案
 
-這些 prefabs 已針對 Windows Mixed Reality 中的轉譯品質進行優化。 如需詳細資訊，請參閱 Microsoft Windows 開發人員中心上 [Unity 中](https://docs.microsoft.com/windows/mixed-reality/text-in-unity) 的指導方針文字。
+這些 prefabs 已針對 Windows Mixed Reality 中的轉譯品質進行優化。 如需詳細資訊，請參閱 Microsoft Windows 開發人員中心上[Unity 中](https://docs.microsoft.com/windows/mixed-reality/text-in-unity)的指導方針文字。
 
 ## <a name="prefabs"></a>Prefabs
 
@@ -51,7 +51,7 @@ UI 文字網格預製專案 (資產/MRTK/SDK/StandardAssets/Prefabs/文字) ，�
 
 當您將新的 3D TextMesh 新增至 Unity 中的場景時，有兩個視覺效果明顯的問題。 一個，字型出現很大，而兩個字型出現很模糊的外觀。 另外也請注意，在偵測器中，預設的字型大小值會設定為零。 將此零值取代為13，將不會顯示大小的差異，因為13實際上是預設值。
 
-Unity 會假設新增至場景的所有新元素都是1個 Unity 單位，或100% 的轉換縮放比例，這會在 HoloLens 上轉譯為約1個計量。 在字型的案例中，3D TextMesh 的周框方塊預設會出現在大約1個度量的高度。
+Unity 會假設新增至場景的所有新元素都是1個 Unity 單位，或100% 的轉換縮放比例，這會在 HoloLens 上轉譯為大約1個計量。 在字型的案例中，3D TextMesh 的周框方塊預設會出現在大約1個度量的高度。
 
 ### <a name="font-scale-and-font-sizes"></a>字型比例和字型大小
 

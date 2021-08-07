@@ -6,12 +6,12 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: 品質基本概念、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: e91ea1c69aeafaafa9c9bae30af6e5a288754764
-ms.sourcegitcommit: cf8df1720ddb8236207ab581bc149edcc76e6199
+ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/26/2021
-ms.locfileid: "114702902"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211952"
 ---
 # <a name="quality-fundamentals"></a>品質基本概念
 

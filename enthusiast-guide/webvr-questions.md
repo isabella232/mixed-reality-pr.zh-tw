@@ -3,12 +3,12 @@ title: WebVR 常見問題
 description: 針對超越標準取用者支援檔的 web 應用程式，保持最新的混合現實疑難排解。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、WebVR
-ms.openlocfilehash: dc7a0b28e19f4f1fc029489aae2ea375e43b8d3b
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d0f91af9cf14d8019707e504a9f8bc076bbe39db566895f17e1e56d6b906336d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98008658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211090"
 ---
 # <a name="webvr-faqs"></a>WebVR 常見問題
 
@@ -41,7 +41,7 @@ ms.locfileid: "98008658"
 
 ## <a name="can-i-use-webvr-on-the-hololens"></a>我可以在 HoloLens 上使用 WebVR
 
-Microsoft 目前尚未在 HoloLens 上宣佈任何關於 WebVR 的資訊。
+Microsoft 目前尚未在 HoloLens 宣佈任何關於 WebVR 的資訊。
 
 ## <a name="why-is-my-view-at-floor-level-when-viewing-webvr-content-from-edge"></a>當您從邊緣觀看 WebVR 內容時，為什麼我的視圖位於樓層層級
 
@@ -68,7 +68,7 @@ Microsoft 目前尚未在 HoloLens 上宣佈任何關於 WebVR 的資訊。
 
 網站可能使用 OGG 音訊檔案格式，Microsoft Edge 目前不支援此格式。
 
-您可以直接向 [問題追蹤](https://developer.microsoft.com/microsoft-edge/platform/issues/)程式中的 Microsoft Edge 瀏覽器小組報告已中斷的網站，或使用 [#EdgeBug](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/)主題標籤，透過 twitter 來回報。
+您可以直接向[問題追蹤](https://developer.microsoft.com/microsoft-edge/platform/issues/)程式中的 Microsoft Edge 瀏覽器小組報告已中斷的網站，或使用[#EdgeBug](https://blogs.windows.com/msedgedev/2016/08/11/edgebug-twitter/)主題標籤，透過 twitter 來回報。
 
 ## <a name="why-does-haptic-feedback-not-work-in-webvr-with-motion-controllers"></a>為什麼 haptic 意見反應無法在使用移動控制器的 WebVR 中運作
 

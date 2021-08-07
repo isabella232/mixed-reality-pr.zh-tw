@@ -5,12 +5,12 @@ author: cDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、輸入、
-ms.openlocfilehash: 33f423fba286e9e85e6d0bedac82bff0b7aae81f
-ms.sourcegitcommit: 8b4c2b1aac83bc8adf46acfd92b564f899ef7735
+ms.openlocfilehash: 8046501fdab0a7594800a75ad0306a131adaaa6924ffa870c299571cbd4d8e13
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/30/2021
-ms.locfileid: "113121456"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115211152"
 ---
 # <a name="input-system"></a>輸入系統
 
@@ -21,11 +21,11 @@ ms.locfileid: "113121456"
 
 - **資料提供者**
 
-    輸入設定檔中的輸入設定會參考稱為資料提供者的實體，另一個描述這些專案的單字是裝置管理員。 這些元件的工作是藉由與特定基礎系統互動來擴充 MRTK 輸入系統。 提供者的範例是 Windows Mixed Reality 的提供者，它的工作是要與基礎 Windows Mixed Reality Api 溝通，然後將這些 Api 的資料轉譯為下面的 MRTK 特定輸入概念。 另一個範例是 OpenVR 提供者 (其作業是與 Unity 抽象版本的 OpenVR Api 溝通，然後將該資料轉譯成 MRTK 輸入概念) 。
+    輸入設定檔中的輸入設定會參考稱為資料提供者的實體，另一個描述這些專案的單字是裝置管理員。 這些元件的工作是藉由與特定基礎系統互動來擴充 MRTK 輸入系統。 提供者的範例是 Windows Mixed Reality 的提供者，它的工作是要與基礎 Windows Mixed Reality api 溝通，然後將這些 api 的資料轉譯為下面的 MRTK 特定輸入概念。 另一個範例是 OpenVR 提供者 (其作業是與 Unity 抽象版本的 OpenVR Api 溝通，然後將該資料轉譯成 MRTK 輸入概念) 。
 
 - **控制器**
 
-    實體控制器的表示 (是否為6度自由度控制器、具有手勢支援的 HoloLens 1 樣式的手、是否有完全明確陳述的手、閏運動控制器等 ) 。 控制器是由裝置管理員所產生 (亦即，WMR 裝置管理員會產生一個控制器，並在看到有明確的手) 時管理其存留期。
+    實體控制器的標記法 (是否為6度自由度的控制器、具有手勢支援的 HoloLens 1 樣式的手、完全有向的手勢、閏運動控制器等 ) 。 控制器是由裝置管理員所產生 (亦即，WMR 裝置管理員會產生一個控制器，並在看到有明確的手) 時管理其存留期。
 
 - **指標**
 
