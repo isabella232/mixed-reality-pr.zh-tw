@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、近乎互動、
-ms.openlocfilehash: b340341f34a1d9a2e2a91fb4215761c4e53ced86
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 32b1cd78328a76713c011b48f49aa4fb7fea90f325ffdf24da9c7321c92ccad0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685331"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197034"
 ---
 # <a name="how-to-add-near-interaction-in-mrtk"></a>如何在 MRTK 中新增近乎互動
 

@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、EyeGaze、
-ms.openlocfilehash: c696bb6ad6b7ecd0239ca5c50c27c44735ee685d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 943ac8d4bdd7943e337d832aeef7239a254c3e1f3086620d561de1daa7a23080
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685451"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197688"
 ---
 # <a name="accessing-eye-tracking-data-in-your-unity-script"></a>存取 Unity 腳本中的眼睛追蹤資料
 
@@ -68,4 +68,4 @@ CoreServices.InputSystem.EyeGazeProvider.GazeDirection.normalized * defaultDista
 - [MRTK 眼追蹤總覽](eye-tracking-main.md)
 - [MRTK 眼睛追蹤設定](eye-tracking-basic-setup.md)
 - [MRTK 眼睛追蹤校正](eye-tracking-is-user-calibrated.md)
-- [HoloLens 2 眼睛追蹤檔](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)
+- [HoloLens 2目視追蹤檔](https://docs.microsoft.com/windows/mixed-reality/eye-tracking)

@@ -1,24 +1,24 @@
 ---
 title: 實作 3D 應用程式啟動器 (UWP 應用程式)
-description: 瞭解如何在 HoloLens 和 VR 耳機上建立 Windows Mixed Reality UWP 應用程式和遊戲的3D 應用程式啟動器和標誌。
+description: 瞭解如何在 HoloLens 和 VR 耳機上建立 Windows Mixed Reality UWP 應用程式和遊戲的3d 應用程式啟動器和標誌。
 author: thmignon
 ms.author: thmignon
 ms.date: 07/12/2018
 ms.topic: article
 keywords: 3D、標誌、圖示、模型、啟動器、3D 啟動器、磚、即時立方體、深層連結、secondarytile、次要磚、UWP、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、XML、周框方塊、unity
-ms.openlocfilehash: 7a0b73a0b3638c1aa2c9cbffacd548fb461589ea
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b0ccff2aaba9c4693f58b134cdb3af9190b59befec0b31851273ed6a3bc1fc04
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582970"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196416"
 ---
 # <a name="implement-3d-app-launchers-uwp-apps"></a>實作 3D 應用程式啟動器 (UWP 應用程式)
 
 > [!NOTE]
-> 這項功能是在2017的「建立者」更新中新增的， (RS3) 適用于沉浸式耳機，並支援 HoloLens 與 Windows 10 2018 年4月更新。 確定您的應用程式是以10.0.16299 的版本為目標，在沉浸式耳機上使用大於或等於的 Windows SDK 版本，並在 HoloLens 上進行10.0.17125。 您可以在 [這裡](https://developer.microsoft.com/windows/downloads/windows-10-sdk)找到最新的 Windows SDK。
+> 這項功能已新增為2017的「建立者」更新 (RS3) 適用于沉浸式耳機，HoloLens 與 Windows 10 2018 年4月更新。 確定您的應用程式是以10.0.16299 的版本為目標，而該版本的 Windows SDK 大於或等於沉浸式耳機上的或 HoloLens 上的10.0.17125。 您可以在[這裡](https://developer.microsoft.com/windows/downloads/windows-10-sdk)找到最新的 Windows SDK。
 
-[Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)是使用者在啟動應用程式之前所居住的起點。 針對 Windows Mixed Reality 建立 UWP 應用程式時，根據預設，應用程式會以2D 平板的形式啟動，並使用其應用程式的標誌。 開發 Windows Mixed Reality 的體驗時，可以選擇性地定義3D 啟動器以覆寫應用程式的預設2D 啟動器。 一般情況下，建議使用3D 啟動器來啟動讓使用者離開 Windows Mixed Reality 首頁的沉浸式應用程式。 當應用程式準備就緒時，建議採用預設2D 啟動器。 您也可以建立 [3d 深層連結 (secondaryTile) ](#3d-deep-links-secondarytiles) 作為 2d UWP 應用程式中內容的3d 啟動器。
+[Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)是使用者在啟動應用程式之前所居住的起點。 針對 Windows Mixed Reality 建立 UWP 應用程式時，根據預設，應用程式會以2d 平板的形式啟動，並使用其應用程式的標誌。 開發 Windows Mixed Reality 的體驗時，可以選擇性地定義3d 啟動器以覆寫應用程式的預設2d 啟動器。 一般情況下，建議使用3d 啟動器來啟動讓使用者離開 Windows Mixed Reality 首頁的沉浸式應用程式。 當應用程式準備就緒時，建議採用預設2D 啟動器。 您也可以建立 [3d 深層連結 (secondaryTile) ](#3d-deep-links-secondarytiles) 作為 2d UWP 應用程式中內容的3d 啟動器。
 
 >[!VIDEO https://www.youtube.com/embed/TxIslHsEXno]
 
@@ -29,7 +29,7 @@ ms.locfileid: "98582970"
 2. [模型化和匯出](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 3.  (本文中將其整合到您的應用程式) 
 
-要做為應用程式的啟動器使用的3D 資產，應使用 [Windows Mixed Reality 撰寫指導方針](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) ，以確保相容性。 無法符合此撰寫規格的資產不會在 Windows Mixed Reality 首頁轉譯。
+要做為應用程式的啟動器使用的3d 資產，應使用[Windows Mixed Reality 撰寫指導方針](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)，以確保相容性。 無法符合此撰寫規格的資產不會在 Windows Mixed Reality 首頁轉譯。
 
 ## <a name="configuring-the-3d-launcher"></a>設定3D 啟動器
 
@@ -37,7 +37,7 @@ ms.locfileid: "98582970"
 
 ### <a name="xml"></a>XML
 
-首先，找出目前專案中的應用程式套件資訊清單。 根據預設，資訊清單會命名為 package.appxmanifest。 如果您使用 Visual Studio，請以滑鼠右鍵按一下方案檢視器中的資訊清單，然後選取 [ **視圖來源** ] 以開啟 xml 進行編輯。 
+首先，找出目前專案中的應用程式套件資訊清單。 根據預設，資訊清單會命名為 package.appxmanifest。 如果您使用 Visual Studio，請以滑鼠右鍵按一下方案檢視器中的資訊清單，然後選取 [**視圖來源**] 以開啟 xml 進行編輯。 
 
 在資訊清單頂端，加入 uap5 架構，並將它包含為可忽略的命名空間：
 
@@ -72,7 +72,7 @@ ms.locfileid: "98582970"
 </Applications>
 ```
 
-MixedRealityModel 元素接受指向儲存在應用程式套件中的3D 資產的檔案路徑。 目前只支援使用 glb 檔案格式所提供的3D 模型，並針對 [Windows Mixed Reality 3d 資產撰寫指示](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md) 來撰寫。 資產必須儲存在應用程式套件中，而且目前不支援動畫。 如果 "Path" 參數保留空白，Windows 將會顯示2D 的平板，而不是3D 啟動器。 **注意：** 在建立並執行您的應用程式之前，必須先將 glb 資產標示為組建設定中的「內容」。
+MixedRealityModel 元素接受指向儲存在應用程式套件中的3D 資產的檔案路徑。 目前只支援使用 glb 檔案格式所提供的3d 模型，並針對[Windows Mixed Reality 3d 資產撰寫指示](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)來撰寫。 資產必須儲存在應用程式套件中，而且目前不支援動畫。 如果 "Path" 參數保留空白 Windows 將會顯示2d 石板，而不是3d 啟動器。 **注意：** 在建立並執行您的應用程式之前，必須先將 glb 資產標示為組建設定中的「內容」。
 
 
 ![在您的 [方案 glb] 中選取 []，並使用 [屬性] 區段，在組建設定中將其標示為 [內容]](images/buildsetting-content-300px.png)<br>
@@ -108,17 +108,17 @@ MixedRealityModel 元素接受指向儲存在應用程式套件中的3D 資產�
 使用 Unity 時，必須先在 Visual Studio 中建立並開啟專案，然後才能編輯應用程式資訊清單。 
 
 >[!NOTE]
->從 Unity 建立和部署新的 Visual Studio 解決方案時，必須在資訊清單中重新定義3D 啟動器。
+>從 Unity 建立和部署新的 Visual Studio 解決方案時，必須在資訊清單中重新定義3d 啟動器。
 
 ## <a name="3d-deep-links-secondarytiles"></a>3D 深層連結 (secondaryTiles) 
 
 > [!NOTE]
-> 這項功能已新增為2017秋季建立者更新的一部分 (RS3) 適用于沉浸式 (VR) 耳機，以及屬於2018年4月更新 (RS4) 的 HoloLens。 確定您的應用程式是以10.0.16299 在沉浸式 (VR) 耳機和10.0.17125 上的版本為目標，而該版本的 Windows SDK 大於或等於。 您可以在 [這裡](https://developer.microsoft.com/windows/downloads/windows-10-sdk)找到最新的 Windows SDK。
+> 這項功能已新增為2017秋季建立者更新的一部分 (RS3) 適用于沉浸式 (VR) 耳機，以及做為 (的2018年4月更新) RS4 HoloLens 的一部分。 確定您的應用程式是以10.0.16299 上的 Windows SDK 大於或等於沉浸式 (VR) 耳機和 10.0.17125 HoloLens 上的版本。 您可以在[這裡](https://developer.microsoft.com/windows/downloads/windows-10-sdk)找到最新的 Windows SDK。
 
 >[!IMPORTANT]
->3D 深層連結 (secondaryTiles) 僅適用于 2D UWP 應用程式。 不過，您可以建立 [3d 應用程式啟動器](implementing-3d-app-launchers.md) ，從 Windows Mixed Reality 首頁啟動專屬應用程式。
+>3D 深層連結 (secondaryTiles) 僅適用于 2D UWP 應用程式。 不過，您可以建立[3d 應用程式啟動器](implementing-3d-app-launchers.md)，從 Windows Mixed Reality 首頁啟動專屬應用程式。
 
-您可以藉由將3D 模型從您的應用程式放入 [Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md) 作為2d 應用程式內的內容深層連結（如同 Windows [開始] 功能表上的 [2d 次要磚](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles) ），來增強您的2d 應用程式以進行 Windows Mixed Reality。 例如，您可以建立可直接連結至360相片檢視器應用程式的360° photospheres，或讓使用者從開啟有關作者詳細資料頁面的資產集合中放置3D 內容。 這些只是利用3D 內容擴充2D 應用程式功能的幾種方式。
+您可以藉由將3d 模型從您的應用程式放入[Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)作為2d 應用程式內的內容深層連結（如同 Windows [開始] 功能表上的[2d 次要磚](/windows/uwp/controls-and-patterns/tiles-and-notifications-secondary-tiles)），來增強您的2d 應用程式以進行 Windows Mixed Reality。 例如，您可以建立可直接連結至360相片檢視器應用程式的360° photospheres，或讓使用者從開啟有關作者詳細資料頁面的資產集合中放置3D 內容。 這些只是利用3D 內容擴充2D 應用程式功能的幾種方式。
 
 ### <a name="creating-a-3d-secondarytile"></a>建立 3D "secondaryTile"
 
@@ -162,7 +162,7 @@ await tile.RequestCreateAsync();
 ### <a name="activation-behavior"></a>啟用行為
 
 > [!NOTE]
-> Windows RS4 update 將支援這項功能。 如果您打算使用這項功能，請確定您的應用程式的目標版本 Windows SDK 大於或等於10.0.17125
+> Windows 的 RS4 更新將支援此功能。 如果您打算使用這項功能，請確定您的應用程式的目標版本 Windows SDK 大於或等於10.0.17125
 
 您可以定義 3D secondaryTile 的啟用行為，以控制使用者選取時的回應方式。 這可以用來將3D 物件放在純資訊或裝飾性的混合現實首頁中。 以下是支援的啟用行為類型：
 1. 預設值：當使用者選取 3D secondaryTile 時，應用程式會啟用
@@ -170,7 +170,7 @@ await tile.RequestCreateAsync();
 
 ### <a name="obtaining-and-updating-an-existing-secondarytile"></a>取得和更新現有的 "secondaryTile"
 
-開發人員可以取回其現有的次要磚清單，其中包括先前指定的屬性。 它們也可以藉由變更值，然後呼叫 >updateasync ( # A1 來更新屬性。
+開發人員可以取回其現有的次要磚清單，其中包括先前指定的屬性。 它們也可以藉由變更值，然後呼叫 >updateasync () 來更新屬性。
 
 ```cs
 // Grab the existing secondary tile
@@ -191,7 +191,7 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 ### <a name="checking-that-the-user-is-in-windows-mixed-reality"></a>檢查使用者是否位於 Windows Mixed Reality
 
-只有在 Windows Mixed Reality 耳機中顯示視圖時，才可以建立3D 深層連結 (secondaryTiles) 。 當您的觀點未顯示在 Windows Mixed Reality 耳機時，建議您隱藏進入點或顯示錯誤訊息，以正常方式處理。 您可以查詢 [IsCurrentViewPresentedOnHolographic ( # B1 ](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)來檢查這一點。
+只有在 Windows Mixed Reality 耳機中顯示視圖時，才可以建立3d 深層連結 (secondaryTiles) 。 當您的觀點未顯示在 Windows Mixed Reality 耳機時，建議您隱藏進入點或顯示錯誤訊息，以正常方式處理。 您可以藉由查詢 [IsCurrentViewPresentedOnHolographic () ](/uwp/api/windows.applicationmodel.preview.holographic.holographicapplicationpreview#Windows_ApplicationModel_Preview_Holographic_HolographicApplicationPreview_IsCurrentViewPresentedOnHolographicDisplay_)來檢查。
 
 ## <a name="tile-notifications"></a>磚通知
 
@@ -207,6 +207,6 @@ if (!tile.VisualElements.MixedRealityModel.Uri.Equals(updatedUri))
 
 * 包含3D 應用程式啟動器的[混合現實模型範例](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/MixedRealityModel)。
 * [3D 應用程式啟動程式設計指引](3d-app-launcher-design-guidance.md)
-* [建立要在 Windows Mixed Reality 首頁中使用的3D 模型](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
+* [建立要在 Windows Mixed Reality 首頁中使用的3d 模型](creating-3d-models-for-use-in-the-windows-mixed-reality-home.md)
 * [ (Win32 應用程式執行3D 應用程式啟動器) ](implementing-3d-app-launchers-win32.md)
 * [瀏覽 Windows Mixed Reality 住家](../discover/navigating-the-windows-mixed-reality-home.md)

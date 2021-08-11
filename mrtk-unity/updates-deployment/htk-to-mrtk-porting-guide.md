@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、HTK、
-ms.openlocfilehash: b54445dc5ca7a6c01c968929e243a1fc4ca2d107
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: d6a8170ff9b0a9c1c3ba1461a3e297ffd2f89979864de2fbac056f22dcbb8e2f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281750"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197408"
 ---
 # <a name="upgrading-from-holotoolkit"></a>從 HoloToolkit 升級
 
@@ -131,7 +131,7 @@ ms.locfileid: "114281750"
 
 |         方法                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 按鈕                     | [互動物件](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [按鈕](../features/ux-building-blocks/Button.md) |
+| Button                     | [互動物件](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [按鈕](../features/ux-building-blocks/Button.md) |
 | 互動                     | [互動物件](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [互動](../features/ux-building-blocks/Interactable.md) |
 | 週框方塊             | [周框方塊](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [周框方塊](../features/ux-building-blocks/bounding-box.md) |
 | 應用程式行             | [應用程式行](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [應用程式行](../features/ux-building-blocks/app-bar.md) |

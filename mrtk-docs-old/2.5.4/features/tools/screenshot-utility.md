@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4fbd5457dd0af502ddedf30a10482690cd8e1a1d
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 4afcfb1971947b7f802e5b87d72c91c7164367e0d8a094090b2b39e1208c2a17
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196410"
 ---
 # <a name="screenshot-utility"></a>螢幕擷取畫面公用程式
 

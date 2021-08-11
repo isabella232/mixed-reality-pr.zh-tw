@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: b9c9e9191b72efd05c7cb11396ec5b202ad051a1
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6a8979b42af9ce8e12875c8bd24ecc4fdc20df46650192fceb8b7a25707571ac
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685551"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197031"
 ---
 # <a name="pulse-shader"></a>脈衝著色器
 
@@ -28,11 +28,11 @@ ms.locfileid: "104685551"
 
 使用 SurfacePulse .cs 腳本對指派的材質產生脈衝效果的動畫，或在材質本身開啟「自動脈衝」。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
-針對 [表面重建]，請確定已在 [MRTK 設定] 下指派 MRTK_SurfaceReconstruction]-> 空間感知-> 顯示設定] > 可見的材質。
+針對 [表面重建]，請確定已在 [MRTK] 設定 > 空間感知-> 顯示設定可見的材質中指派 MRTK_SurfaceReconstruction。
 
-針對明確的手，請確定已在 ArticulatedHandMesh 中指派 MRTK_ArticulatedHandMeshPulse。預製專案，其本身應指派于 MRTK 設定-> 輸入 > 手形追蹤-> 手勢網格預製專案。
+針對明確的手，請確定已在 ArticulatedHandMesh 中指派 MRTK_ArticulatedHandMeshPulse。預製專案，其本身應指派于 MRTK 設定-> 輸入-> 手動追蹤-> 手型網格預製專案。
 
 ## <a name="how-it-works"></a>運作方式
 

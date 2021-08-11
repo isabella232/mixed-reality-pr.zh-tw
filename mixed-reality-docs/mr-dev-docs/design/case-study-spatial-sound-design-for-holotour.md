@@ -1,17 +1,17 @@
 ---
 title: 案例研究 - HoloTour 的空間音效設計
-description: 若要為 Microsoft HoloLens 建立真正的沉浸式3D 虛擬導覽，全景影片和全像攝影景象只是公式的一部分。
+description: 若要為 Microsoft HoloLens 建立真正的沉浸式3d 虛擬導覽，全景影片和全像攝影景象只是公式的一部分。
 author: jsyltebo
 ms.author: jsylte
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、HoloLens、HoloTour、空間音效、個案研究、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
-ms.openlocfilehash: 7f2474ba6edbdd54c31b24d38bb60e170b65b25a
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality、HoloLens、HoloTour、空間音效、個案研究、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
+ms.openlocfilehash: b398ea7b3ddd85db85018da1852ed0c5ae410f625ff88bdda286e750a517d260
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97848011"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196441"
 ---
 # <a name="case-study-spatial-sound-design-for-holotour"></a>案例研究： HoloTour 的空間音效設計
 
@@ -19,7 +19,7 @@ ms.locfileid: "97848011"
 
 ## <a name="the-tech"></a>技術
 
-您在 HoloTour 中看到的美觀影像和全像攝影場景，只是可信混合現實體驗的一部分。 雖然全像是在使用者之前出現，但 HoloLens 可以從所有方向提供 [空間音效](spatial-sound.md) ，以提供更完整的感應式體驗。
+您在 HoloTour 中看到的美觀影像和全像攝影場景，只是可信混合現實體驗的一部分。 雖然全像是出現在使用者面前，HoloLens 可以從所有方向提供[空間音效](spatial-sound.md)，以提供更完整的感應式體驗。
 
 空間音效提供提示，指出使用者應該輪流的方向，或讓使用者知道有更多的全像影像可在其空間內查看。 我們也可以直接將音效附加至全像影像，並持續更新來自使用者的全息圖方向和距離。 這項技術讓它看起來就像是直接來自該物件的音效。
 
@@ -56,16 +56,16 @@ ms.locfileid: "97848011"
 
 在不同的方法中，我們有時會使用放置於場景周圍的空間音效發射器來播放迴圈身歷聲環境。 這些發射器會播放隨機音量、音調和觸發頻率的一次性音效。 這項技術會建立具有更強方向的環境。 例如，在 Aguas Alienates 中，您可以聽到全景的每個象限如何具有特定的發射器，以反白顯示地理位置的特定區域，但共同合作來建立整體的沉浸式環境。
 
-## <a name="tips-and-tricks"></a>秘訣和訣竅
+## <a name="tips-and-tricks"></a>秘訣與技巧
 
-還有其他方式可以反白顯示方向和改善深度，以充分利用 HoloLens 的空間音效功能。 我們在此提供了一份清單。 下一次嘗試 HoloTour 時，請聆聽這些效果。
+還有其他方式可以反白顯示方向性並改善深度，以充分利用 HoloLens 的空間音效功能。 我們在此提供了一份清單。 下一次嘗試 HoloTour 時，請聆聽這些效果。
 * **尋找目標：** 當您查看全像攝影框架的特定物件或區域時，就會觸發這些音效。 例如，看看羅馬的 Piazza Navona 中的街道咖啡，以稍微觸發忙碌餐廳的聲音。
 * **區域視覺：** HoloTour 的旅程包含特定的「勝過」，而您的導覽指南（以全像是輔助）可以深入探索主題。 比方說，在 Pantheon 的外觀上，會顯示從 Pantheon 內放置為3D 發射器的 oculus reverberating 音訊，鼓勵使用者探索內部。
 * **增強的方向：** 在許多場景中，我們會以各種不同的方式來放置音效，以新增到方向。 例如，在 Pantheon 場景中，fountain 的音效是以個別的發射器來放置，足以讓使用者在接近播放空間時，能夠瞭解「sonic 視差」。 在秘魯的 Salinas de Maras 場景中，每個小型串流的音效都放在不同的發射器上，以建立更好的環境環境，以該位置的真實音效來圍繞使用者。
 * **曲線發射器：** 這些發射器會根據其所連線物件的視覺化位置，移至3D 空間中。 其中一個範例是 Machu Picchu 中的訓練，我們使用曲線發射器來提供不同的方向和移動意義。
 * **音樂和 SFX：** HoloTour 中表示更具樣式或 cinematic 方法的某些層面，會使用音樂和音效效果來提高情緒影響。 例如，在羅馬導覽結束時，gladiator 工作會使用 whooshes 和 stingers 等特殊效果，來強化幕後出現之標籤的效果。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 
 * [空間音效](spatial-sound.md)
 * [空間音效設計](spatial-sound-design.md)

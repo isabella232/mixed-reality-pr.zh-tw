@@ -6,28 +6,28 @@ ms.author: alexturn
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 混合的現實、空間定位器、空間參考框架、空間座標系統、空間階段、範例程式碼、影像穩定、空間錨點、空間錨點存放區、追蹤遺失、逐步解說、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 7cf463e4c3bb9b2fe06c834376eb46e3ee20c1ee
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5da521568ef15f0c512984c96846939bd30063d3485709d4b6568dc9b155052a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581078"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196440"
 ---
 # <a name="coordinate-systems-in-directx"></a>DirectX 中的座標系統
 
 > [!NOTE]
 > 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
-[座標系統](../../design/coordinate-systems.md) 形成 Windows Mixed Reality api 所提供的空間理解基礎。
+[座標系統](../../design/coordinate-systems.md)形成 Windows Mixed Reality api 所提供的空間理解基礎。
 
-現今的上建的 VR 或單一房間的 VR 裝置會為其追蹤空間建立一個主要座標系統。 HoloLens 這類的混合現實裝置是針對大型未定義的環境所設計，而裝置會在使用者四處四處探索和學習其周圍。 裝置可調整以持續改善使用者房間的知識，但會導致在應用程式存留期內，改變彼此之間關聯性的座標系統。 Windows Mixed Reality 支援各式各樣的裝置，範圍從內建的沉浸式耳機到世界附加的參考框架。
+現今的上建的 VR 或單一房間的 VR 裝置會為其追蹤空間建立一個主要座標系統。 混合的現實裝置（例如 HoloLens）是針對大型未定義的環境而設計，而裝置會在使用者四處四處探索和學習其周圍。 裝置可調整以持續改善使用者房間的知識，但會導致在應用程式存留期內，改變彼此之間關聯性的座標系統。 Windows Mixed Reality 支援各式各樣的裝置，範圍從內建的沉浸式耳機到世界附加的參考框架。
 
 >[!NOTE]
 >本文中的程式碼片段目前示範如何使用 c + + [/cx，而](creating-a-holographic-directx-project.md)不是 c + + 全像 c + + 全像 c + + 的 + 17 相容 c + +/WinRT。  這些概念對 c + +/WinRT 專案而言是相等的，不過您必須轉譯程式碼。
 
 ## <a name="spatial-coordinate-systems-in-windows"></a>Windows 中的空間座標系統
 
-在 Windows 中用來因應實際座標系統原因的核心類型是 <a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>。 此類型的實例代表任意座標系統，提供取得轉換矩陣資料的方法，您可以使用此方法在兩個座標系統之間進行轉換，而不需要瞭解每個座標系統的詳細資料。
+在 Windows 中，用來因應真實全局座標系統原因的核心類型是<a href="/uwp/api/windows.perception.spatial.spatialcoordinatesystem" target="_blank">SpatialCoordinateSystem</a>。 此類型的實例代表任意座標系統，提供取得轉換矩陣資料的方法，您可以使用此方法在兩個座標系統之間進行轉換，而不需要瞭解每個座標系統的詳細資料。
 
 傳回空間資訊的方法會接受 SpatialCoordinateSystem 參數，讓您決定最適合傳回這些座標的座標系統。 空間資訊以點、光線或磁片區的形式表示在使用者的環境中，而這些座標的單位一律會是計量。
 
@@ -43,11 +43,11 @@ SpatialCoordinateSystem 與其他座標系統有動態的關聯性，包括代�
 ![左側和右側座標系統](images/left-hand-right-hand.gif)<br>
 *左側和右側座標系統*
 
-您可以使用 <a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a> 類別，根據 HoloLens 位置，在 SpatialCoordinateSystem 中建立附加或固定的參考框架。 若要深入瞭解此程式，請繼續下一節。
+您可以使用<a href="/uwp/api/windows.perception.spatial.spatiallocator" target="_blank">SpatialLocator</a>類別，根據 HoloLens 位置，在 SpatialCoordinateSystem 中建立附加或固定的參考框架。 若要深入瞭解此程式，請繼續下一節。
 
 ## <a name="place-holograms-in-the-world-using-a-spatial-stage"></a>使用空間階段來放置全球的全像影像
 
-透明的座標系統 Windows Mixed Reality 沉浸式耳機是使用 static <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference：： Current</a> 屬性來存取。 此 API 提供：
+透明的座標系統 Windows Mixed Reality 沉浸式耳機是使用 static <a href="/uwp/api/windows.perception.spatial.spatialstageframeofreference.current" target="_blank">SpatialStageFrameOfReference：： Current</a>屬性來存取。 此 API 提供：
 
 * 座標系統
 * 玩家是否在裝置上或行動裝置的相關資訊
@@ -293,7 +293,7 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 若要取得 SpatialStationaryFrameOfReference，請使用 [SpatialLocator](/uwp/api/Windows.Perception.Spatial.SpatialLocator) 類別並呼叫 [CreateStationaryFrameOfReferenceAtCurrentLocation](/uwp/api/Windows.Perception.Spatial.SpatialLocator)。
 
-從 Windows 全像應用程式範本程式碼：
+從 Windows 全息的應用程式範本程式碼：
 
 ```
            // The simplest way to render world-locked holograms is to create a stationary reference frame
@@ -320,19 +320,19 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 ### <a name="persist-and-share-spatial-anchors"></a>保存和共用空間錨點
 
-您可以使用 [SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore) 類別在本機保存 SpatialAnchor，然後在相同 HoloLens 裝置上的未來應用程式會話中取回。
+您可以使用[SpatialAnchorStore](/uwp/api/Windows.Perception.Spatial.SpatialAnchorStore)類別在本機保存 SpatialAnchor，然後在相同 HoloLens 裝置上的未來應用程式會話中取回。
 
-藉由使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，您可以從本機 SpatialAnchor 建立持久的雲端錨點，然後您的應用程式就可以在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置即時看到相對於該錨點轉譯的內容。 
+藉由使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，您可以從本機 SpatialAnchor 建立持久的雲端錨點，然後您的應用程式就可以在多個 HoloLens、iOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置即時看到相對於該錨點轉譯的內容。 
 
-您也可以使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。  藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
+您也可以在 HoloLens、iOS 和 Android 裝置上，使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>來取得非同步全像持續性。  藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
 
-若要開始在您的 HoloLens 應用程式中建立共用體驗，請嘗試5分鐘的 <a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure 空間錨點 HoloLens 快速入門</a>。
+若要開始在您的 HoloLens 應用程式中建立共用體驗，請嘗試5分鐘的<a href="/azure/spatial-anchors/quickstarts/get-started-hololens" target="_blank">Azure 空間錨點 HoloLens 快速入門</a>。
 
-當您啟動並執行 Azure 空間錨點之後，您就可以 <a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">在 HoloLens 上建立並找出錨點</a>。  適用于 <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android 和 iOS</a> 的逐步解說也可讓您在所有裝置上共用相同的錨點。
+當您啟動並執行 Azure 空間錨點之後，您就可以<a href="/azure/spatial-anchors/concepts/create-locate-anchors-cpp-winrt" target="_blank">在 HoloLens 上建立並找出錨點</a>。  適用于 <a href="/azure/spatial-anchors/create-locate-anchors-overview" target="_blank">Android 和 iOS</a> 的逐步解說也可讓您在所有裝置上共用相同的錨點。
 
 ### <a name="create-spatialanchors-for-holographic-content"></a>建立全像攝影內容的 SpatialAnchors
 
-在此程式碼範例中，我們已修改 Windows 全像應用程式範本，以在偵測到已 **按下** 的手勢時建立錨點。 Cube 接著會在轉譯階段放置於錨點。
+在此程式碼範例中，我們修改了 Windows 全息型應用程式範本，以在偵測到已 **按下** 的手勢時建立錨點。 Cube 接著會在轉譯階段放置於錨點。
 
 因為協助程式類別支援多個錨點，所以我們可以將多個 cube 放在我們想要使用此程式碼範例的位置！
 
@@ -497,7 +497,7 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 若要從 SpatialAnchorStore 還原錨點，請將您感興趣的每一個錨點還原到您自己的記憶體中集合。
 
-您需要 SpatialAnchors 的記憶體內部資料庫，以將字串與您建立的 SpatialAnchors 產生關聯。 在我們的範例程式碼中，我們選擇使用 Windows：： Foundation：： collection：： IMap 來儲存錨點，這樣可讓您輕鬆地針對 SpatialAnchorStore 使用相同的索引鍵和資料值。
+您需要 SpatialAnchors 的記憶體內部資料庫，以將字串與您建立的 SpatialAnchors 產生關聯。 在我們的範例程式碼中，我們選擇使用 Windows：： Foundation：： collection：： IMap 來儲存錨點，這樣可讓您輕鬆地將相同的索引鍵和資料值用於 SpatialAnchorStore。
 
 ```
    // This is an in-memory anchor list that is separate from the anchor store.
@@ -588,7 +588,7 @@ std::vector<unsigned short> SpatialStageManager::TriangulatePoints(std::vector<f
 
 SpatialLocatorAttachedFrameOfReference 類別會定義座標系統（相對於裝置），而不是真實世界。 這個框架有一個固定的標題，相對於使用者的周圍面，指向建立參考框架時使用者面對的方向。 然後，此參考框架中的所有方向都會相對於該固定標題，即使使用者旋轉裝置也是一樣。
 
-就 HoloLens 而言，此框架座標系統的原點是位於使用者頭部的旋轉中心，因此其位置不會受到頭部旋轉的影響。 您的應用程式可以指定相對於這個點的位移，以在使用者之前放置全像影像。
+針對 HoloLens，此框架座標系統的原點位於使用者頭部的旋轉中心，因此其位置不會受到頭部旋轉的影響。 您的應用程式可以指定相對於這個點的位移，以在使用者之前放置全像影像。
 
 若要取得 SpatialLocatorAttachedFrameOfReference，請使用 SpatialLocator 類別並呼叫 CreateAttachedFrameOfReferenceAtCurrentHeading。
 
@@ -596,7 +596,7 @@ SpatialLocatorAttachedFrameOfReference 類別會定義座標系統（相對於�
 
 ### <a name="use-a-reference-frame-attached-to-the-device"></a>使用附加至裝置的參考框架
 
-這些章節會討論在 Windows 全像應用程式範本中所做的變更，以使用此 API 啟用裝置連結的參考框架。 這種「附加」的全像是固定或錨定的全像投影，也可以在裝置暫時無法在世界中尋找其位置時使用。
+這些章節會討論在 Windows 的全像攝影應用程式範本中所做的變更，以使用此 API 啟用裝置連結的參考框架。 這種「附加」的全像是固定或錨定的全像投影，也可以在裝置暫時無法在世界中尋找其位置時使用。
 
 首先，我們變更了範本來儲存 SpatialLocatorAttachedFrameOfReference，而不是 SpatialStationaryFrameOfReference：
 
@@ -740,7 +740,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
        );
 ```
 
-這樣就完成了！ 現在，全像是在使用者的注視方向之前，將2個計量的位置「定位」。
+大功告成！ 現在，全像是在使用者的注視方向之前，將2個計量的位置「定位」。
 
 >[!NOTE]
 >此範例也會載入其他內容-請參閱 StationaryQuadRenderer .cpp。
@@ -762,7 +762,7 @@ SpatialPointerPose^ pose = SpatialPointerPose::TryGetAtTimestamp(currentCoordina
 
 當您的應用程式收到 LocatabilityChanged 事件時，它可以視需要變更行為。 例如，在 PositionalTrackingInhibited 狀態下，您的應用程式可以暫停正常作業，並轉譯顯示警告訊息的 [標記沿著全像影像](coordinate-systems-in-directx.md#create-holograms-using-a-device-attached-frame-of-reference) 。
 
-Windows 全像應用程式範本隨附已為您建立的 LocatabilityChanged 處理常式。 根據預設，當位置追蹤無法使用時，它會在 debug 主控台中顯示警告。 您可以將程式碼加入這個處理常式，以視需要提供應用程式的回應。
+Windows 全息版應用程式範本隨附已為您建立的 LocatabilityChanged 處理常式。 根據預設，當位置追蹤無法使用時，它會在 debug 主控台中顯示警告。 您可以將程式碼加入這個處理常式，以視需要提供應用程式的回應。
 
 從 **AppMain .cpp：**
 

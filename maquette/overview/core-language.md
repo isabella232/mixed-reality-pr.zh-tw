@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 10/26/2020
 ms.topic: article
 keywords: Windows Mixed Reality、Maquette、原型設計、混合現實、虛擬實境、VR、MR、意見反應、意見反應中樞、bug
-ms.openlocfilehash: e0c0b2f204aa32245cc13aff4c64fa641313de51
-ms.sourcegitcommit: fae413a2b0420e787671af90f14ee39cde51640f
+ms.openlocfilehash: 290b1442c3cc7fed10b315f4beeebfe2eab4a775d4909d5411c651362e24d94e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/19/2020
-ms.locfileid: "94935417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197398"
 ---
 # <a name="maquettescript-core-language-details"></a>MaquetteScript 核心語言詳細資料
 

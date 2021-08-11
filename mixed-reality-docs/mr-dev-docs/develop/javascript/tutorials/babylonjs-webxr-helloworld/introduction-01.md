@@ -7,12 +7,12 @@ ms.date: 03/05/2021
 ms.topic: article
 keywords: mixed reality、javascript、教學課程、BabylonJS、hololens、mixed reality、UWP、Windows 10、WebXR、沉浸式網路
 ms.localizationpriority: high
-ms.openlocfilehash: 2d3f59b2769f99a756c4f0c10df1d8a8604a595e
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: e2006e911ad9dae00252c929c7739ff2209f4bf7796f1c49e713cfaf53267cd2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600117"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196822"
 ---
 # <a name="tutorial-create-your-first-webxr-application-using-babylonjs"></a>教學課程：使用 babylon.js 建立您的第一個 WebXR 應用程式
 
@@ -27,7 +27,7 @@ ms.locfileid: "110600117"
 
 ## <a name="prerequisites"></a>必要條件
 
-* WebXR 支援的瀏覽器，例如 [Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
+* WebXR 支援的瀏覽器，例如[Microsoft Edge](../../../../whats-new/new-microsoft-edge.md)
 * [Babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 4.2 或更高版本
 * [NodeJS](https://nodejs.org/)
 * 選擇性：如果您想要使用 Windows Mixed Reality 模擬器， [Windows 10 建立者更新](https://www.microsoft.com/software-download/windows10)
@@ -38,9 +38,9 @@ ms.locfileid: "110600117"
 若要從頭開始建立此專案，請從 Visual Studio Code (VSCode) 專案開始。
 
 > [!NOTE]
-> 使用 VSCode 並非必要，但我們將在整個教學課程中使用它來方便使用。 更有經驗的 JavaScript 開發人員可以使用他們選擇的任何其他編輯器，甚至是最簡單的 [記事本]。
+> 使用 VSCode 並非必要，但我們將在整個教學課程中使用它來方便使用。 更有經驗的 JavaScript 開發人員可以使用他們選擇的任何其他編輯器，甚至是最簡單的記事本。
 
-1. 請下載 [babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 單一檔案，或使用可在 [官方 babylon.js 網站](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers)上找到的線上版本。 您也可以從[GitHub](https://github.com/BabylonJS/Babylon.js)複製整個 babylon.js 專案
+1. 請下載 [babylon.js](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers) 單一檔案，或使用可在 [官方 babylon.js 網站](https://doc.babylonjs.com/divingDeeper/developWithBjs/frameworkVers)上找到的線上版本。 您也可以從[GitHub](https://github.com/BabylonJS/Babylon.js)複製整個 babylon.js 專案。
 1. 建立空的檔案，並將它儲存為 html 網頁，例如 index.html
 1. 建立基本的 html 標記，並參考 babylon.js 的 javascript 檔案。 最後的程式碼如下所示：
 

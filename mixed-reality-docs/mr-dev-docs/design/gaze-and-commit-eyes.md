@@ -7,12 +7,12 @@ ms.date: 05/05/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 眼球追蹤, 混合實境, 輸入, 眼部注視, 眼部定向, HoloLens 2, 眼動式選取, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens, MRTK, 混合實境工具組, 注視
-ms.openlocfilehash: 1dff0ded282678a695070feca2b578004610d2c7
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 12ffc24c39a9f8be329972516d42730dc98899d3ebba8359e9fea6ebbf6d02c2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196463"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197822"
 ---
 # <a name="eye-gaze-and-commit"></a>眼部注視並認可
 
@@ -33,11 +33,11 @@ _眼部注視並認可_ 是特殊的 [注視並認可](gaze-and-commit.md)輸入
 
 ## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全像投影標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
    
 ## <a name="design-guidelines-for-eye-gaze-and-commit"></a>眼部注視並認可的設計指導方針
 

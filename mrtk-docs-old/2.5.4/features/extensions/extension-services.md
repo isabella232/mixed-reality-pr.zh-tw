@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: cde5f92d8a85ad8161f0f549a9a98edd644cb183
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 273fa4bfe9ca350baa4f6ce238f40f00bc70e6346db423ba4c502579c3d40f8b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685541"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196746"
 ---
 # <a name="extension-services"></a>擴充服務
 

@@ -6,19 +6,19 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: unity、visual studio、調試、il2cpp、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、UWP
-ms.openlocfilehash: 48f5fbd4b2ac217a3f840117595aa36fb3d7c10e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 92b730768b6402b356e550d8f01d85e654832aef1ac382d8f992df615a9ce1b4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394502"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196532"
 ---
 # <a name="managed-debugging-with-unity"></a>使用 Unity 的 Managed 調試
 
-遵循下列步驟將 managed 偵錯工具附加至適用于 HoloLens 和 HoloLens 2 的 Unity IL2CPP UWP 組建。
+依照下列步驟將 managed 偵錯工具附加至您的 Unity IL2CPP UWP 組建，以 HoloLens 和 HoloLens 2。
 
 1. 您需要在支援 [多播](https://en.wikipedia.org/wiki/Multicast)的網路上。
-2. 移至 **UWP 發行設定功能** ，並查看 **InternetClientServer** 和 **PrivateNetworkClientServer**：
+2. 前往 **UWP 發行設定的功能**，並查看 **InternetClientServer** 和 **PrivateNetworkClientServer**：
 
     ![UWP 發行設定功能](images/il2cpp-debugging-capabilities.png)
 

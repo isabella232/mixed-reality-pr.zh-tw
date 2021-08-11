@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 353df2f2f5bc9a1d70fc354fd3014f10c0ba95d9
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 96799de948cf9e1cbca89b7e781f3f830fbc005810680d1164d04acb757b1a09
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757108"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208184"
 ---
 # <a name="the-making-of-kippys-escape"></a>製作 Kippy 的 Escape
 ![Kippy 的 Escape 主圖影像](images/KippysEscape_1920.jpg)

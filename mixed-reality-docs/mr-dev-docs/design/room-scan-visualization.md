@@ -5,13 +5,13 @@ author: mattzmsft
 ms.author: alexpf
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、應用程式模式、設計、HoloLens、會議室掃描、空間對應、網格、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 87312a5d5361ac0e8c24a622cf69fe3e9b147ff5
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+keywords: Windows Mixed Reality、應用程式模式、設計、HoloLens、會議室掃描、空間對應、網格、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: 0ebfbd9a1f07ffd0671d36dcc63dbd5303a2cdbceb906839be9736f43de76937
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196403"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207826"
 ---
 # <a name="room-scan-visualization"></a>空間位置掃描視覺效果
 
@@ -22,11 +22,11 @@ ms.locfileid: "110196403"
 * 要求使用者使用 bloom 手勢前往 Windows Mixed Reality 首頁，然後探索他們想要用於體驗的領域。 他們可以使用 [點一下] 來確認裝置已知所有必要的區域。
 * 在自己的應用程式中建立自訂的探索體驗。
 
-在這些情況下，在探索期間收集的實際資料會由系統儲存，而應用程式則不需要這麼做。 如果您想要查看作用中的房間掃描視覺效果，請參閱下面 **的設計全像影像空間感知** 影片示範：
+在這些情況下，在探索期間收集的實際資料會由系統儲存，而應用程式則不需要這麼做。 如果您想要查看作用中的房間掃描視覺效果，請參閱下面 **的設計全像投影空間感知** 影片示範：
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Spatial-Awareness-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="device-support"></a>裝置支援
 

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、ar 套件、ios、ios、Android、ar Foundation
-ms.openlocfilehash: d127b9b39cbaa90f0c8c5a8a6ac7955f33404cbf
-ms.sourcegitcommit: 912fa204ef79e9b973eab9b862846ba5ed5cd69f
+ms.openlocfilehash: 109241da4137664510aab27094bd508aabaee1d145e387d80da9df259dc730a1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/16/2021
-ms.locfileid: "114281944"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196707"
 ---
 # <a name="deploying-to-android-and-ios-ar-foundation-experimental"></a>部署至 Android 和 iOS (AR Foundation) [實驗]
 

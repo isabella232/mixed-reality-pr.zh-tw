@@ -1,22 +1,22 @@
 ---
-title: HoloLens (第1代) 基本概念 100-開始使用 Unity
-description: 瞭解如何建立您的第一個適用于 HoloLens 和 Windows Mixed Reality 裝置的基本混合現實 "hello world" 應用程式。
+title: HoloLens (第1代) 基本 100-開始使用 Unity
+description: 瞭解如何為 HoloLens 和 Windows Mixed Reality 裝置建立您的第一個基本 mixed reality "hello world" 應用程式。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: mixed reality、Windows Mixed Reality、HoloLens、沉浸式、vr、mr、入門、全息圖、學術、教學課程、混合現實學術、unity、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 68939eda0a18e2d49948d2a87b9f709389857bf3
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: mixed reality、Windows Mixed Reality、HoloLens、沉浸式、vr、mr、開始使用、全息圖、學院、教學課程、混合現實學術、unity、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: 518be5642304b6307f0b26f30f37315eba4164448493d928f6effb3027f7d611
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196498"
 ---
-# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (第1代) 基本概念100：開始使用 Unity
+# <a name="hololens-1st-gen-basics-100-getting-started-with-unity"></a>HoloLens (第1代) 基礎100：開始使用 Unity
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
 本教學課程將逐步引導您建立以 Unity 建立的基本混合現實應用程式。
 
@@ -34,11 +34,11 @@ ms.locfileid: "106269974"
 
 * [已安裝正確工具](../../install-the-tools.md)的 Windows 10 電腦。
 
-## <a name="chapter-1---create-a-new-project"></a>第1章-建立新專案
+## <a name="chapter-1---create-a-new-project"></a>第1章-建立新的 Project
 
 >[!VIDEO https://www.youtube.com/embed/2L5IFO0hnYA]
 
-若要使用 Unity 建立應用程式，您必須先建立專案。 此專案會組織成幾個資料夾，最重要的就是您的資產資料夾。 此資料夾會保存您從數位內容建立工具（例如 Maya、最大電影4D 或 Photoshop）匯入的所有資產、使用 Visual Studio 或您最愛的程式碼編輯器建立的所有程式碼，以及當您在編輯器中撰寫場景、動畫和其他 Unity 資產類型時，Unity 所建立的任何內容檔案數目。
+若要使用 Unity 建立應用程式，您必須先建立專案。 此專案會組織成幾個資料夾，最重要的就是您的資產資料夾。 此資料夾會保存您從數位內容建立工具（例如 Maya、最大電影4d 或 Photoshop）匯入的所有資產、使用 Visual Studio 或您最愛的程式碼編輯器建立的所有程式碼，以及當您在編輯器中撰寫場景、動畫和其他 unity 資產類型時，Unity 所建立的任何內容檔案數目。
 
 若要建立及部署 UWP 應用程式，Unity 可以將專案匯出為 Visual Studio 方案，其中包含所有必要的資產和程式碼檔案。
 
@@ -66,7 +66,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 其次，預設攝影機背景需要一些思考。
 
-**針對 HoloLens 應用程式**，真實世界應該會出現在相機呈現的所有專案，而不是 Skybox 材質的後方。
+**針對 HoloLens 的應用程式**，真實世界應該會出現在相機呈現的所有專案，而不是 Skybox 材質的後方。
 
 1. 當 **主要攝影機** 仍在 [階層]**面板中** 選取時，請在 [**檢查**] 面板中尋找 **相機** 元件，並將 [**清除旗標**] 下拉式清單從 [ **Skybox** ] 變更為 [**純色**]。
 2. 選取 **背景** 色彩選擇器，並將 **RGBA** 值變更為 (0、0、0、0) 
@@ -77,7 +77,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 第三，讓我們考慮 Unity 中的近接裁剪平面，並防止在使用者接近使用者的情況下，將物件呈現太接近使用者眼睛。
 
-**針對 hololens 應用程式**，接近的裁剪平面可以設定為 [hololens 建議](../camera-in-unity.md#using-clipping-planes) 的0.85 計量。
+**針對 HoloLens 的應用程式**，接近的裁剪平面可以設定為 [HoloLens 建議](../camera-in-unity.md#using-clipping-planes)的0.85 計量。
 
 1. 當 **主要攝影機** 仍在 [階層]**面板中** 選取時，請在 [偵測 **器**] 面板中尋找 **相機** 元件，並將 **接近的剪輯平面** 欄位從預設的 **0.3** 變更為 HoloLens 建議的 **0.85**。
 
@@ -87,35 +87,35 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 最後，讓我們來節省目前的進度。 若要儲存場景變更，請選取 [檔案] **> [另存場景**]、將場景命名為 **主要**，然後選取 [ **儲存**]。
 
-## <a name="chapter-3---setup-the-project-settings"></a>第3章-設定專案設定
+## <a name="chapter-3---setup-the-project-settings"></a>第3章-設定 Project 設定
 
 >[!VIDEO https://www.youtube.com/embed/ItRoiXccC0g]
 
-在本章中，我們將設定一些 Unity 專案設定，以協助我們以 Windows 全像開發版 SDK 為目標。 我們也會為應用程式設定一些品質設定。 最後，我們會確保組建目標設定為通用 Windows 平臺。
+在本章中，我們將設定一些 Unity 專案設定，以協助我們以適用于開發的 Windows 全息型 SDK 為目標。 我們也會為應用程式設定一些品質設定。 最後，我們會確保組建目標設定為通用 Windows 平臺。
 
 ### <a name="unity-performance-and-quality-settings"></a>Unity 效能和品質設定
 
-**適用于 HoloLens 的 Unity 品質設定**
+**HoloLens 的 Unity 品質設定**
 
-![適用于 HoloLens 的 Unity 品質設定](images/qualitysettings.png)
+![HoloLens 的 Unity 品質設定](images/qualitysettings.png)
 
-由於在 HoloLens 上維持高幀率很重要，我們想要調整品質設定以獲得最快的效能。 如需更詳細的效能資訊，請瞭解 [Unity 的效能建議](../performance-recommendations-for-unity.md)。
+由於在 HoloLens 上維持高幀率很重要，因此我們想要調整品質設定以獲得最快的效能。 如需更詳細的效能資訊，請瞭解 [Unity 的效能建議](../performance-recommendations-for-unity.md)。
 
-1. 選取 [ **編輯] > 專案設定 > 品質**
+1. 選取 [**編輯] > Project 設定 > 品質**
 2. 選取 **通用 Windows 平臺** 標誌底下的 **下拉式清單**，然後選取 [**非常低**]。 當通用 Windows 平臺資料行中的方塊和 **非常低** 的資料列都是綠色時，您將會知道此設定已正確套用。
 
 **對於以 pixels occluded 顯示為目標的混合現實應用程式**，您可以將品質設定保留為其預設值。
 
 ### <a name="target-windows-10-sdk"></a>目標 Windows 10 SDK
 
-**以 Windows 全像攝影 SDK 為目標**
+**以全像攝影 SDK 為目標 Windows**
 
-![以 Windows 全像攝影 SDK 為目標](../images/xrsettings.png)
+![以全像攝影 SDK 為目標 Windows](../images/xrsettings.png)
 
 我們需要讓 Unity 知道我們想要匯出的應用程式應該建立一個 [沉浸式視圖](../../../design/app-views.md) ，而不是2d 視圖。 若要這麼做，請在以 Windows 10 SDK 為目標的 Unity 上啟用虛擬實境支援。
 
-1. 移至 **> Player 的 [編輯 > 專案設定**]。
-2. 在 [播放程式設定] 的 [偵測 **器] 面板** 中，選取 **通用 Windows 平臺** 圖示。
+1. 移至 [**編輯] > Project 設定 > 播放機**。
+2. 在播放程式設定的 [偵測 **器] 面板** 中，選取 **通用 Windows 平臺** 圖示。
 3. 展開 [XR 設定] 群組。
 4. 在 [轉譯] 區段中核取 [支援虛擬實境] 核取方塊，以新增 [虛擬實境 SDK] 清單。
 5. 確認 **Windows Mixed Reality** 出現在清單中。 如果沒有，請選取清單底部的 **+** 按鈕，然後選擇 [Windows Mixed Reality]。
@@ -145,15 +145,15 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 ### <a name="initial-setup"></a>初始設定
 
-1. 在您的開發電腦上，于 Unity 的 [ **組建設定** ] 視窗中開啟 [檔案] >。
+1. 在您的開發電腦上，于 Unity 中開啟 [檔案 **> 組建] 設定** 視窗。
 2. 將 **平臺** 變更為 **通用 Windows 平臺**，然後按一下 [**切換平臺**]
 
-### <a name="for-hololens-use-unity-remoting"></a>針對 HoloLens，請使用 Unity Remoting
+### <a name="for-hololens-use-unity-remoting"></a>針對 HoloLens 使用 Unity Remoting
 
-1. 在 HoloLens 上，安裝並執行可從 Windows 市集中取得的全像 [遠端播放機](../../platform-capabilities-and-apis/holographic-remoting-player.md)。 在裝置上啟動應用程式，它會進入等候狀態，並顯示裝置的 IP 位址。 記下 IP。
+1. 在您的 HoloLens 上，安裝並執行可從 Windows 存放區取得的全像[遠端播放機](../../platform-capabilities-and-apis/holographic-remoting-player.md)。 在裝置上啟動應用程式，它會進入等候狀態，並顯示裝置的 IP 位址。 記下 IP。
 2. 開啟 **Window > XR >** 全像全像模擬。
 3. 將 **模擬模式** 從 [ **無** ] 變更為 [ **遠端] 至 [裝置**]。
-4. 在 [ **遠端電腦**] 中，輸入您先前記下的 HoloLens IP 位址。
+4. 在 [**遠端電腦**] 中，輸入您稍早記下的 HoloLens IP 位址。
 5. 按一下 [連線]。
 6. 確定連線 **狀態** 變更為綠色 **已連線**。
 7. 現在您可以在 Unity 編輯器中按一下 [ **播放** ]。
@@ -162,7 +162,7 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 ### <a name="for-other-mixed-reality-supported-headsets"></a>適用于其他 mixed reality 支援的耳機
 
-1. 使用 USB 纜線和 HDMI 或顯示器埠纜線，將耳機連接到您的開發電腦。
+1. 使用 USB 纜線和 HDMI 或顯示器埠纜線，連線耳機連接到您的開發電腦。
 2. 啟動 **混合實境入口** ，並確定您已完成第一次執行體驗。
 3. 您現在可以從 Unity 按下 [播放] 按鈕。
 
@@ -176,11 +176,11 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 
 ### <a name="export-to-the-visual-studio-solution"></a>匯出至 Visual Studio 解決方案
 
-1. 開啟 [檔案 **> 組建設定** ] 視窗。
+1. 開啟檔案 **> 建立設定** 視窗。
 1. 按一下 [ **新增開啟場景** ] 以加入場景。
-1. 將 **平臺** 變更為 **通用 Windows 平臺** ，然後按一下 [ **切換平臺**]。
-1. 在 **通用 Windows 平臺** 設定] 中，確定 [ **SDK** ] 是 [ **通用] 10**。
-1. 針對目標裝置，請離開 **任何裝置** 以進行 pixels occluded 顯示或切換至 **HoloLens**。
+1. 將 **平臺** 變更為 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
+1. 在 **通用 Windows 平臺** 設定] 中，確定 [ **SDK** ] 是 [**通用] 10**。
+1. 針對目標裝置，請離開 **任何裝置** 以進行 pixels occluded 顯示，或切換至 **HoloLens**。
 1. **UWP 組建類型** 應該是 **D3D**。
 1. **UWP SDK** 可以保留 **最新的安裝**。
 1. 按一下 [建置]。
@@ -201,22 +201,22 @@ Unity 主要攝影機會處理前端追蹤和 stereoscopic 轉譯。 主要攝�
 ### <a name="deploy-to-mixed-reality-device-over-wi-fi"></a>透過 Wi-Fi 部署至混合現實裝置
 
 1. 按一下 [ **本機電腦** ] 按鈕旁的箭號，然後將部署目標變更為 [ **遠端電腦**]。
-2. 輸入您的混合現實裝置的 IP 位址，並將 **驗證模式** 變更為適用于 HoloLens 和 **Windows** 的通用 (未加密通訊協定) 的其他裝置。
+2. 輸入混合現實裝置的 IP 位址，並將 **驗證模式** 變更為通用 (未加密的通訊協定) ，以 HoloLens 和 **Windows** 其他裝置。
 3. 按一下 [ **Debug] > 啟動但不進行調試**。
 
-**針對 HoloLens**，如果這是您第一次部署至您的裝置，您必須 [使用 Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md)配對。
+**針對 HoloLens**，如果這是您第一次部署至您的裝置，您將需要 [使用 Visual Studio](../../platform-capabilities-and-apis/using-visual-studio.md)配對。
 
 ### <a name="deploy-to-mixed-reality-device-over-usb"></a>透過 USB 部署至混合現實裝置
 
 確定您已透過 USB 纜線插入裝置。
 
-1. 若 **為 HoloLens**，請按一下 [**本機電腦**] 按鈕旁的箭號，然後將部署目標變更為 [**裝置**]。
+1. **針對 HoloLens**，請按一下 [**本機電腦**] 按鈕旁的箭號，然後將部署目標變更為 [**裝置**]。
 2. **針對連接到您電腦的 pixels occluded 裝置**，將設定保留在 [本機電腦]。 確定您的 **混合實境入口** 正在執行。
 3. 按一下 [ **Debug] > 啟動但不進行調試**。
 
-### <a name="deploy-to-emulator"></a>部署至模擬器
+### <a name="deploy-to-emulator"></a>部署至 Emulator
 
-1. 按一下 [ **裝置** ] 按鈕旁邊的箭號，然後從下拉式清單中選取 [ **HoloLens 模擬器**]。
+1. 按一下 [**裝置**] 按鈕旁邊的箭號，然後從下拉式清單中選取 [ **HoloLens Emulator**]。
 2. 按一下 [ **Debug] > 啟動但不進行調試**。
 
 ### <a name="try-out-your-app"></a>試用您的應用程式

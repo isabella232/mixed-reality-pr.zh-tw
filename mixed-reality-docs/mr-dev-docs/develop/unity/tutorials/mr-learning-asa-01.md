@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, ios, android, Windows 10, ARCore, macOS, Android 建置支援, ARKit
 ms.localizationpriority: high
-ms.openlocfilehash: 2d664c79c0e2d111dc4a0b7b449399682cda1f06
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 4d753546fd8fd0779e7614ca11e4668e359d8f9dcdc8db9d62e95267747471db
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403449"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197358"
 ---
 # <a name="1-introduction-to-the-azure-spatial-anchors-tutorials"></a>1.Azure Spatial Anchors 教學課程簡介
 
@@ -50,7 +50,7 @@ ms.locfileid: "111403449"
   * 已安裝 unity<a href="https://docs.unity3d.com/Manual/GettingStartedInstallingHub.html" target="_blank">中樞</a>與 unity 2020/2019 LTS，並已新增 IOS 組建支援模組
 
 > [!Important]
-> 此教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 Unity 2019 LTS (目前的 2019.4. x) 如果您使用舊版的 WSA。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
+> 此教學課程系列支援 Unity 2020 LTS (目前的 2020.3) 如果您使用 Open XR 或 Windows XR 外掛程式，以及 unity 2019 LTS (目前 2019.4. x) 如果您使用舊版的 WSA。 這個版本能取代上述連結必要條件中所述的任何 Unity 版本需求。
 
 > [!div class="nextstepaction"]
 > [下一個教學課程：2.開始使用 Azure Spatial Anchors](mr-learning-asa-02.md)

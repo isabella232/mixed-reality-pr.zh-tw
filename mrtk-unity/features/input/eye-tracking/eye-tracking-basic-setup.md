@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、眼睛追蹤、
-ms.openlocfilehash: 0513161bf8151069296c39612cbcacd15cc5c6c1
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: d8b47639729381a41e4fe1e1db86700bf9323860553934a6da4dfa4b15de49eb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197448"
 ---
 # <a name="getting-started-with-eye-tracking-in-mrtk"></a>開始在 MRTK 中使用眼睛追蹤
 
@@ -24,9 +24,9 @@ ms.locfileid: "110144094"
 如果您不熟悉 HoloLens 2 上的眼睛追蹤，以及如何在 MRTK 中設定眼睛追蹤，請別擔心！
 我們將詳細說明如何解決這些問題。
 
-1. 您必須將「 _眼睛眼 Data Provider_ 」新增至輸入系統。 這會從平臺提供眼睛追蹤資料。
+1. 您必須將「_眼睛眼 Data Provider_ 」新增至輸入系統。 這會從平臺提供眼睛追蹤資料。
 2. 應用程式資訊清單中必須啟用 _' GazeInput '_ 功能。
-   **這項功能可以在 Unity 2019 中設定，但在 Unity 2018 和更早版本中，這項功能僅適用于 Visual Studio 以及透過 MRTK build tool**
+   **這項功能可以在 unity 2019 中設定，但在 unity 2018 和更早版本中，這項功能僅適用于 Visual Studio 以及透過 MRTK build tool**
 3. HoloLens **必須** 針對目前的使用者進行眼睛校正。 請查看我們 [的範例，以偵測使用者是否已校正](eye-tracking-is-user-calibrated.md)。
 
 ### <a name="a-note-on-the-gazeinput-capability"></a>GazeInput 功能的注意事項
@@ -36,7 +36,7 @@ MRTK 提供的組建工具 (，也就是混合現實工具組-> 公用程式-> �
 ![MRTK Build Tools](../../images/eye-tracking/mrtk_et_buildsetup.png)
 
 此工具會在 Unity 組建完成後找到 AppX 資訊清單，並以手動方式新增 GazeInput 功能。
-**在 unity 2019 之前，使用 unity 的內建組建視窗時，此工具不會處於使用中狀態， (也就是** > 的組建設定) 。
+**在 unity 2019 之前，使用 unity 的內建組建視窗時，此工具不會處於使用中狀態， (也就是**> 組建設定) 。
 
 在 Unity 2019 之前，使用 Unity 的 [組建] 視窗時，必須在 Unity 組建之後以手動方式新增功能，如下所示：
 
@@ -65,7 +65,7 @@ _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼�
 
 - 按一下 MRTK 設定檔中的 [ _輸入_ ] 索引標籤。
 - 若要編輯預設值 ( [ _DefaultMixedRealityInputSystemProfile_ ] ) ，請按一下其旁邊的 [ _複製_ ] 按鈕。 [ _複製設定檔_ ] 功能表隨即出現。 只要按一下該功能表底部的 [ _複製_ ] 即可。
-- 按兩下新的輸入設定檔，展開 [ _輸入資料提供者_]，然後選取 [ _+ 新增 Data Provider_]。
+- 按兩下新的輸入設定檔，展開 [_輸入資料提供者_]，然後選取 [ _+ 新增 Data Provider_]。
 - 建立新的資料提供者：
   - 在 [**類型**] 下，選取 [ _MixedReality] WindowsMixedReality。輸入 '_  ->  _' WindowsMixedRealityEyeGazeDataProvider '_
   - 針對 **平臺 (s)** 選取 [ _Windows 通用_]。
@@ -91,11 +91,11 @@ _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼�
 建議您根據預設，隱藏附加至 MRTK 注視指標設定檔的預設標頭注視游標。
     - 流覽至您的 MRTK 設定設定檔-> _' Input '_  ->  _' 指標 '_
     - 複製 _' DefaultMixedRealityInputPointerProfile '_ 以進行變更。
-    - 在 [ _指標設定_] 的頂端，您應該將不可見的資料指標預製專案指派給 _' GazeCursor '_。 若要這麼做，您可以從 MRTK Foundation 中選取 [ _EyeGazeCursor_ ] 預製專案。
+    - 在 _' 指標設定 '_ 的頂端，您應該將不可見的資料指標預製專案指派給 _' GazeCursor '_。 若要這麼做，您可以從 MRTK Foundation 中選取 [ _EyeGazeCursor_ ] 預製專案。
 
 ### <a name="enabling-eye-based-gaze-in-the-gaze-provider"></a>在注視提供者中啟用以眼睛為基礎的注視
 
-在 HoloLens v1 中，用來做為主要指標技術的標頭。
+在 HoloLens v1 中，使用前端作為主要指標技術。
 雖然仍可透過連接到 [相機](https://docs.unity3d.com/ScriptReference/Camera.html)的 MRTK 中的 _GazeProvider_ 來使用前端，但您可以改為勾選輸入指標設定檔的眼睛設定中的 [ _IsEyeTrackingEnabled_ ] 核取方塊。
 
 >[!NOTE]
@@ -118,7 +118,7 @@ _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼�
 如果未校正使用者，則眼睛追蹤系統將不會傳回任何輸入。
 取得校正最簡單的方式，就是向上復原面板和向下切換。
 系統通知應該會出現，歡迎您成為新的使用者，並要求您完成眼睛校正。
-或者，您可以在 [系統設定：設定 > 系統 > 校正] 中找到視覺校正 > 執行眼睛校正。
+或者，您可以在 [系統設定] 中找到眼睛校正：設定 > 系統 > 校正 > 執行眼睛校正。
 
 #### <a name="eye-tracking-permission"></a>目視追蹤許可權
 
@@ -126,7 +126,7 @@ _請注意：_ 如果您建立的是新的組建資料夾，就只需要這麼�
 如果未顯示，則這通常表示未設定「 _GazeInput_ 」功能。
 
 許可權提示出現一次之後，就不會再自動顯示。
-如果您「已 _拒絕眼追蹤」許可權_，您可以在 [設定-> 隱私權-> 應用程式] 中重設此項。
+如果您「已 _拒絕眼追蹤」許可權_，您可以在設定 > 的隱私權 > 應用程式中重設此項。
 
 ---
 

@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、控制項、ui、ux、進度指標、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 01f032efb887ecfc6f8d66683fb954cd0574a4f3
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality、設計、控制項、ui、ux、進度指標、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 8d397f627b55409d640ac6925a72d6bf169e207c27cb2a90bcee990c7a8d7683
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600547"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207874"
 ---
 # <a name="progress-indicator"></a>進度指示器
 
@@ -34,7 +34,7 @@ ms.locfileid: "110600547"
         ### <a name="progress-barbr"></a>進度列<br>
         進度列會顯示工作的完成百分比。 它應該在其持續時間已知 (確定) 的作業期間使用，但其進度不應封鎖使用者與應用程式的互動。<br>
         <br>
-        *影像： HoloLens 的進度列範例*
+        *影像： HoloLens 中的進度列範例*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -51,7 +51,7 @@ ms.locfileid: "110600547"
         ### <a name="progress-ringbr"></a>進度環<br>
         進度環形只有不定狀態，而且應該在作業完成之前封鎖使用者互動時使用。<br>
         <br>
-        *影像： HoloLens 的進度環形範例*
+        *影像： HoloLens 中的進度環形範例*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
@@ -68,11 +68,11 @@ ms.locfileid: "110600547"
         ### <a name="progress-with-a-custom-objectbr"></a>使用自訂物件的進度<br>
         您可以使用自己的自訂 2D/3D 物件自訂進度控制項，以新增至您應用程式的個人和品牌身分識別。<br>
         <br>
-        *影像：在 HoloLens 中使用自訂網格範例的進度*
+        *影像： HoloLens 中使用自訂網格範例的進度*
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens 中自訂網格範例的進度](images/640px-progresscustom.jpg)<br>
+       ![HoloLens 中使用自訂網格範例的進度](images/640px-progresscustom.jpg)<br>
     :::column-end:::
 :::row-end:::
 

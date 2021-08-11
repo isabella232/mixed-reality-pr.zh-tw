@@ -1,19 +1,19 @@
 ---
-title: 以位置為基礎的娛樂和 Windows Mixed Reality
-description: 瞭解以位置為基礎的娛樂的 Windows Mixed Reality —硬體、背包」的電腦、追蹤、設定和支援。
+title: Windows Mixed Reality 的位置型娛樂
+description: 瞭解以位置為基礎的娛樂 Windows Mixed Reality —硬體、背包」的電腦、追蹤、設定和支援。
 author: jessemcculloch
 ms.author: ishitak
 ms.date: 08/03/2020
 ms.topic: article
 keywords: 混合的現實、vr、lbe、位置、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、硬體、HoloLens、多玩家、雲端服務、azure
-ms.openlocfilehash: 49e96b99d3f74bd24a4a0e71f212018108148ad2
-ms.sourcegitcommit: ad1e0c6a31f938a93daa2735cece24d676384f3f
+ms.openlocfilehash: e9cff1184ca60f4b64be5346a187666e7b401aab06fee87c179917e300aa07f3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/05/2021
-ms.locfileid: "102236909"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196782"
 ---
-# <a name="location-based-entertainment-with-windows-mixed-reality"></a>以位置為基礎的娛樂和 Windows Mixed Reality
+# <a name="location-based-entertainment-with-windows-mixed-reality"></a>Windows Mixed Reality 的位置型娛樂
 
 在過去幾年來，我們在以位置為基礎的娛樂類別中看到大量的成長和創新。 傳統的場地（例如主題公園和劇院）已開始提供沉浸式、多玩家體驗，作為現有乘車點和安裝的免費體驗。 新的操作員和場地為 masses 帶來了獨特的多 sensorial、多玩家體驗。 所有這些經驗都會將信封推播到混合現實的可能原因。
 
@@ -37,11 +37,11 @@ Acer： [詳細資料](https://www.acer.com/ac/en/US/content/model/VD.R05AP.002)
 
 如果您的地點是以混合或增強的現實體驗來學習，請查看 Microsoft HoloLens 2。  
 
-HoloLens 2： [預先訂購的興趣](https://www.microsoft.com//hololens/buy)
+HoloLens 2：[預先訂購的興趣](https://www.microsoft.com//hololens/buy)
 
-如果您想要試驗使用先進的電腦視覺、語音和內文追蹤的體驗，Azure Kinect 深色適合。  
+如果您想要試驗使用先進的電腦視覺、語音和內文追蹤的體驗，Azure Kinect DK 相當適合。  
 
-Azure Kinect： [詳細資料](https://azure.microsoft.com//services/kinect-dk/)
+Azure Kinect：[詳細資料](https://azure.microsoft.com//services/kinect-dk/)
 
 **問：我可以使用哪些背包」電腦的組合來執行電腦行動網卡的 VR 體驗？**
 
@@ -49,16 +49,16 @@ Azure Kinect： [詳細資料](https://azure.microsoft.com//services/kinect-dk/)
 
 HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 PC –針對自由漫遊體驗進行優化，現在提供了30% 以上的 RTX 2080 GPU 功能。 [詳細資料](https://www8.hp.com/us/en/vr/vr-backpack.html)
 
-### <a name="setup"></a>安裝程式
+### <a name="setup"></a>設定
 
-**問：如何可以更輕鬆地設定和自訂 LBE 的混合現實入口網站？**
+**問：如何可以更輕鬆地設定安裝程式，並自訂 LBE 的混合實境入口？**
 
 >[!NOTE]
 >這項功能需要版本2000.19061.1011.0 或更高版本。  
 
-您可能會發現您需要更多的混合現實入口網站自訂，而不是透過應用程式，將應用程式部署到 kiosk 或自訂體驗。 混合現實入口網站的最新七月更新支援數個 advanced 設定，您可以透過設定檔來設定這些設定：  
+您可能會發現您需要更多的混合實境入口自訂，而不是透過應用程式，將應用程式部署到 kiosk 或自訂體驗。 混合實境入口最新的7月更新支援數個可透過設定檔設定的 advanced settings：  
 
-允許失敗的系統檢查-在完成安裝之前，安裝程式通常會檢查電腦是否與 Windows Mixed Reality 相容。 如果發生相容性問題，略過相容性檢查可能會在嘗試執行 Windows Mixed Reality 時發生問題。  
+允許失敗的系統檢查–安裝程式通常會先檢查電腦是否與 Windows Mixed Reality 相容，再完成安裝程式。 如果發生相容性問題，略過相容性檢查可能會在嘗試執行 Windows Mixed Reality 時發生問題。  
 
 略過裝置附屬應用程式– DCA 提供製造商提供的耳機專屬設定步驟，並允許更新耳機的固件。  
 
@@ -66,9 +66,9 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 略過從存放區安裝應用程式-一般安裝程式會安裝數個存放區應用程式，包括3D 檢視器和 Edge 360 檢視器附加元件。 這會略過這些應用程式的安裝，但您可能遺失裝置功能。  
 
-以全螢幕顯示預覽：混合現實入口網站會預設為在使用耳機時，于桌上型電腦的全螢幕中顯示耳機預覽。  
+以全螢幕顯示預覽–混合實境入口預設為在使用耳機時，于桌上型電腦的全螢幕中顯示耳機預覽。  
 
-隱藏您的 [新增] 側邊面板-防止在啟動混合現實入口網站時，擴充您的新面板。  
+隱藏您的 [新增] 側邊面板-防止在啟動混合實境入口時展開新的 [您的] 面板。  
 
 #### <a name="how-to-configure"></a>如何設定：  
 
@@ -100,7 +100,7 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 答：設定 playspace 的方式應該與取用者設定體驗一樣。 房間設定程式也可讓您定義您的房間界線。 您可以在 [這裡](/windows/mixed-reality/enthusiast-guide/set-up-windows-mixed-reality#set-up-your-room-boundary)閱讀更多有關設定空間界限的詳細資料。
 
-如同上述檔中所述，最大合理的單一座標 playspace 大約是5mx5m。 如果您想要有更大的區域，您可以在 Windows 全像 API 堆疊中使用空間錨點功能。 使用此 API 時，您將需要在所產生的體驗中進行自訂工程。  
+如同上述檔中所述，最大合理的單一座標 playspace 大約是5mx5m。 如果您想要有更大的區域，您可以使用 Windows 全息型 API 堆疊中的空間錨點功能。 使用此 API 時，您將需要在所產生的體驗中進行自訂工程。  
 
 您可以在 [這裡](/windows/mixed-reality/coordinate-systems)閱讀更多有關如何將內容優化以取得不同空間大小的詳細資料。
  
@@ -123,14 +123,14 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 **問：我在的地點部署了多玩家體驗。Windows Mixed Reality 是否支援？**
 
-答：如果您透過我們的測試人員計畫加入宣告 Windows 20H1 或更新版本的組建，您可以存取地圖共用的新介面。 這項新功能可透過 Windows 裝置入口網站的 [ [對應管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager) ] 介面使用。 若要使用此工具，請依照下列步驟執行：
+答：如果您透過我們的測試人員計畫加入宣告 Windows 20H1 或更新版本的組建，您可以存取地圖共用的新介面。 這項新功能可透過 Windows 裝置入口網站的[地圖管理員](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#map-manager)介面取得。 若要使用此工具，請依照下列步驟執行：
 * 請確定您加入宣告20H1 或更新版本-2019 年9月之後，這表示使用我們的測試人員計畫
 * 使用這些[指示](/windows/uwp/debug-test-perf/device-portal-desktop)啟用 Windows 裝置入口網站 (WDP) 
-* 插入您想要從下載現有對應或匯入新對應的 Windows Mixed Reality HMD
+* 插入您想要從 HMD 下載現有對應或匯入新對應的 Windows Mixed Reality
 * 使用 [設定] 畫面中提供的 URL，在您選擇的瀏覽器中流覽至 WDP。
     * 流覽至 [混合式事實] 區段，然後選取 [對應管理員]。
     * 您現在可以使用 [下載] 按鈕，從電腦匯出現有的對應。
-    * 您可以使用 [上傳對應檔] 按鈕，從先前的匯出匯入對應 (可能在不同的電腦上) 。
+    * 您可以使用 [Upload 對應檔] 按鈕，從先前的匯出 (匯入對應，可能是在不同的電腦) 上。
     * 您可以使用 [匯入]，讓系統在這部電腦上針對此 HMD 使用該對應。
 
 > [!NOTE] 
@@ -160,9 +160,9 @@ HP 剛剛推出了其 HP VR 背包」 G2，這是世界上最強大的穿戴式 
 
 ### <a name="mixed-reality-cloud-services-and-azure"></a>混合現實雲端服務與 AZURE 
 
-**問： Microsoft Azure 如何協助我的企業規模？**
+**問：如何 Microsoft Azure 協助我的企業規模？**
 
-答：以 Azure 為基礎的現場和遠端系統管理，可協助您的業務成為資料驅動、降低營運成本，並在現有和新的地點調整部署規模。 Azure 雲端服務（例如 Azure 儲存體、Azure 函式、App Service、Azure 網路和 IOT 中樞）有助於下列使用案例：  
+答：以 Azure 為基礎的現場和遠端系統管理，可協助您的業務成為資料驅動、降低營運成本，並在現有和新的地點調整部署規模。 Azure 雲端服務（例如 Azure 儲存體、Azure Functions、App Service、Azure 網路和 IOT 中樞）可協助您進行下列使用案例：  
 
 遠端裝置部署 & 管理 
 
@@ -186,9 +186,9 @@ LBE 保留與預約系統
 
 ### <a name="misc"></a>其他
 
-**問：我使用 SteamVR 來部署我的體驗。Windows Mixed Reality 是否與 SteamVR 搭配運作？**
+**問：我使用 SteamVR 來部署我的體驗。Windows Mixed Reality 可以搭配 SteamVR 使用嗎？**
 
-答：適用于 SteamVR 的 Windows Mixed Reality 可讓使用者在 Windows Mixed Reality 沉浸式耳機上執行 SteamVR 體驗。 [在這裡](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)深入瞭解使用 WMR SteamVR。
+答：適用于 SteamVR 的 Windows Mixed Reality 可讓使用者在 Windows Mixed Reality 的沉浸式耳機上執行 SteamVR 體驗。 [在這裡](/windows/mixed-reality/enthusiast-guide/using-steamvr-with-windows-mixed-reality)深入瞭解使用 WMR SteamVR。
 
 ### <a name="support-and-community"></a>支援和團體  
 

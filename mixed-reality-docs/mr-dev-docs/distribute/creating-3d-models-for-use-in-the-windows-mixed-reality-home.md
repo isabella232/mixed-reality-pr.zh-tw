@@ -1,30 +1,30 @@
 ---
 title: 建立用於住家的 3D 模型
-description: HoloLens 和沉浸式 (VR) 耳機上的 Windows Mixed Reality 首頁中使用之3D 模型的資產需求和撰寫指導方針。
+description: 適用于3d 模型的資產需求和撰寫指導方針，可用於 HoloLens 和沉浸式 (VR) 耳機的 Windows Mixed Reality 首頁。
 author: thmignon
 ms.author: thmignon
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 3D、模型化、模型化指引、資產需求、撰寫指導方針、啟動器、3D 啟動器、材質、材質、複雜度、三角形、網格、多邊形、polycount、限制、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: c5447661bdbe6aeb59a3e7a524863d68b717ee0e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 9fdd485c67a757d40b049c08f114ce9982aafc27e9103c4b31c21fd8af08d186
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583816"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207678"
 ---
 # <a name="create-3d-models-for-use-in-the-home"></a>建立用於住家的 3D 模型
 
-[Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)是使用者在啟動應用程式之前所居住的起點。 針對 Windows Mixed Reality 耳機設計您的應用程式時，請使用 [3d 模型作為應用程式啟動器](implementing-3d-app-launchers.md) ，並將 [3d 深層連結放入 Windows Mixed Reality 首頁](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles)。 本文概述建立與 Windows Mixed Reality 首頁相容之3D 模型的指導方針。
+[Windows Mixed Reality home](../discover/navigating-the-windows-mixed-reality-home.md)是使用者在啟動應用程式之前所居住的起點。 針對 Windows Mixed Reality 耳機設計您的應用程式時，請使用[3d 模型作為應用程式啟動器](implementing-3d-app-launchers.md)，並將[3d 深層連結放入 Windows Mixed Reality 首頁](implementing-3d-app-launchers.md#3d-deep-links-secondarytiles)。 本文概述建立與 Windows Mixed Reality 首頁相容之3d 模型的指導方針。
 
 ## <a name="asset-requirements-overview"></a>資產需求總覽
 
-建立 Windows Mixed Reality 的3D 模型時，有一些資產必須符合的需求： 
+建立 Windows Mixed Reality 的3d 模型時，有一些資產必須符合的需求： 
 1. [匯出](#exporting-models) -資產必須以 glb 檔案格式傳遞 (二進位 glTF) 
 2. [模型](#modeling-guidelines) 化-資產必須小於1萬個三角形，每個」 lod 不能超過64個節點和 32 submeshes
 3. [材質-紋理](#material-guidelines) 不能大於 4096 x 4096，且最小的 mip 地圖在任一維度上都不能大於4
 4. [動畫](#animation-guidelines) -動畫的長度不能超過20分鐘， (36000 的主要畫面格) 且必須包含 <= 8192 的變形目標頂點
-5. [優化](#optimizations) -資產應使用 [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases)進行優化。 *在 WINDOWS 作業系統版本 <= 1709** 上，建議在 windows 作業系統版本 >= 1803 上使用
+5. [優化](#optimizations) -資產應使用 [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases)進行優化。 *必須在 Windows os 版本 <= 1709** 上，並且建議在 Windows 作業系統版本 >= 1803 上使用
 
 本文的其餘部分將詳細說明這些需求和額外的指導方針，以確保您的模型可與 Windows Mixed Reality 首頁正常搭配運作。 
 
@@ -32,7 +32,7 @@ ms.locfileid: "98583816"
 
 ### <a name="exporting-models"></a>匯出模型
 
-Windows Mixed Reality 首頁預期會使用 glb 檔案格式搭配內嵌影像和二進位資料來傳遞3D 資產。 Glb 是 glTF 格式的二進位版本，這是 Khronos 群組所維護之3D 資產傳遞的專利免費開放標準。 隨著 glTF 發展成為互通3D 內容的產業標準，Microsoft 會在 Windows 應用程式和經驗中支援此格式。 如果您尚未建立 glTF 資產，您可以在 [glTF 工作群組 github] 頁面上找到 [支援的匯出工具和轉換器清單](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) 。  
+Windows Mixed Reality 首頁預期會使用 glb 檔案格式搭配內嵌影像和二進位資料來傳遞3d 資產。 Glb 是 glTF 格式的二進位版本，這是 Khronos 群組所維護之3D 資產傳遞的專利免費開放標準。 隨著 glTF 發展成為互通3d 內容的產業標準，Microsoft 將會支援跨 Windows 應用程式和體驗的格式。 如果您尚未建立 glTF 資產，您可以在 [glTF 工作群組 github] 頁面上找到 [支援的匯出工具和轉換器清單](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) 。  
 
 ### <a name="modeling-guidelines"></a>模型指導方針
 
@@ -49,7 +49,7 @@ Windows 預期會使用下列模型化指導方針來產生資產，以確保與
 
 ### <a name="triangle-counts-and-levels-of-detail-lods"></a> (LODs) 的三角形計數和詳細資料層級
 
-Windows Mixed Reality home 不支援10000三角形以上的模型。 建議您先分成三角形網格再進行匯出，以確保它們不會超過此計數。 Windows MR 也支援選擇性幾何等級的詳細 (LODs) ，以確保效能和高品質的體驗。 [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases) 可協助您將模型的三個版本結合成單一 glb 模型。 Windows 會根據模型所佔用的螢幕實際空間量來決定要顯示的」 LOD。 只有3個」 LOD 層級支援下列建議的三角形計數：
+Windows Mixed Reality home 不支援10000三角形以上的模型。 建議您先分成三角形網格再進行匯出，以確保它們不會超過此計數。 WindowsMR 也支援詳細 (LODs) 的選擇性幾何層級，以確保高效能和高品質的體驗。 [WindowsMRAssetConverter](https://github.com/Microsoft/glTF-Toolkit/releases) 可協助您將模型的三個版本結合成單一 glb 模型。 Windows 根據模型所佔用的螢幕實際空間量來決定要顯示的」 lod。 只有3個」 LOD 層級支援下列建議的三角形計數：
 <br>
 
 |  」 LOD 層級  |  建議的三角形計數  |  最大三角形計數 | 
@@ -60,7 +60,7 @@ Windows Mixed Reality home 不支援10000三角形以上的模型。 建議您�
 
 ### <a name="node-counts-and-submesh-limits"></a>節點計數和 submesh 限制
 
-Windows Mixed Reality home 不支援每個」 LOD 具有64節點或 32 submeshes 的模型。 節點是 [glTF 規格](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) 中的概念，可定義場景中的物件。 Submeshes 是在物件之網格的 [基本](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) 陣列中定義。 
+Windows Mixed Reality home 不支援每個」 lod 具有64節點或 32 submeshes 的模型。 節點是 [glTF 規格](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#nodes-and-hierarchy) 中的概念，可定義場景中的物件。 Submeshes 是在物件之網格的 [基本](https://github.com/KhronosGroup/glTF/tree/master/specification/2.0#meshes) 陣列中定義。 
 
 |  功能 |  描述  |  支援的最大值 | 文件 |
 |------|------|------|------|
@@ -76,7 +76,7 @@ Windows Mixed Reality home 不支援每個」 LOD 具有64節點或 32 submeshes
 |----|----|----|
 |  512x512  |  4096x4096 | 最大4x4|
 
-### <a name="albedo-base-color-map"></a>>albedo (基本色彩) 地圖
+### <a name="albedo-base-color-map"></a>>Albedo (基本色彩) 地圖
 
 沒有光源資訊的原始色彩。 此地圖也包含金屬圖中金屬 (白色的反射率和擴散資訊，) 和 insulator 在金屬地圖) 表面中 (黑色。
 
@@ -98,18 +98,18 @@ Windows Mixed Reality home 不支援每個」 LOD 具有64節點或 32 submeshes
 
 ## <a name="optimizations"></a>最佳化
 
-Windows Mixed Reality home 在使用自訂延伸模組所定義的核心 glTF 規格之上，提供一系列的優化。 <= 1709 的 Windows 版本和建議在較新版本的 Windows 上，都需要進行這些優化。 您可以使用 [GitHub 上提供的 Windows Mixed Reality 資產轉換器](https://github.com/Microsoft/glTF-Toolkit/releases)，輕鬆地優化任何 glTF 2.0 模型。 此工具會執行正確的材質封裝和優化，如下所示。 針對一般使用方式，我們建議使用 WindowsMRAssetConverter，但如果您需要更充分掌控體驗，而且想要建立自己的優化管線，您可以參考以下的詳細規格。  
+Windows Mixed Reality home 在使用自訂延伸模組所定義的核心 glTF 規格之上，提供一系列的優化。 Windows 版本 <= 1709 時需要這些優化，並且建議在較新版本的 Windows 上使用。 您可以使用[GitHub 上提供的 Windows Mixed Reality 資產轉換器](https://github.com/Microsoft/glTF-Toolkit/releases)，輕鬆地優化任何 glTF 2.0 模型。 此工具會執行正確的材質封裝和優化，如下所示。 針對一般使用方式，我們建議使用 WindowsMRAssetConverter，但如果您需要更充分掌控體驗，而且想要建立自己的優化管線，您可以參考以下的詳細規格。  
 
 > [!NOTE]
 > 如需確切的模型限制之可能性的完整清單，請參閱「 [3d 模型優化](/dynamics365/mixed-reality/guides/3d-content-guidelines/optimize-models) 」一文，以在 Dynamics 365 應用程式中使用。
 
 ### <a name="materials"></a>材質
 
-為了改善混合現實環境中的資產載入時間，Windows MR 支援根據本節中定義的材質封裝配置來呈現壓縮的 DDS 紋理。 使用 [MSFT_texture_dds 擴充](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds)功能參考 DDS 紋理。 強烈建議您壓縮紋理。 
+若要改善混合現實環境中的資產載入時間 Windows MR 支援根據本節中定義的材質封裝配置來呈現壓縮的 DDS 紋理。 使用 [MSFT_texture_dds 擴充](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_texture_dds)功能參考 DDS 紋理。 強烈建議您壓縮紋理。 
 
 #### <a name="hololens"></a>HoloLens
 
-HoloLens 型混合現實體驗預期會使用下列封裝規格，以使用雙紋理設定來封裝紋理：
+以 HoloLens 為基礎的混合現實體驗會使用下列封裝規格，利用雙紋理設定來封裝紋理：
 <br>
 
 |  glTF 屬性  |  紋理  |  封裝配置 | 
@@ -129,7 +129,7 @@ HoloLens 型混合現實體驗預期會使用下列封裝規格，以使用雙�
 
 以電腦為 Windows Mixed Reality 的沉浸式 (VR) 耳機預期紋理會使用採用下列封裝規格的3紋理設定來封裝：
 
-##### <a name="windows-os--1803"></a>Windows 作業系統 >= 1803
+##### <a name="windows-os--1803"></a>Windows作業系統 >= 1803
 
 <br>
 
@@ -147,7 +147,7 @@ HoloLens 型混合現實體驗預期會使用下列封裝規格，以使用雙�
 |  normalTexture  |  BC5 | 
 |  baseColorTexture, occlusionRoughnessMetallicTexture  |  BC7 | 
 
-##### <a name="windows-os--1709"></a>Windows 作業系統 <= 1709
+##### <a name="windows-os--1709"></a>Windows作業系統 <= 1709
 <br>
 
 |  glTF 屬性  |  紋理  |  封裝配置 | 
@@ -166,7 +166,7 @@ HoloLens 型混合現實體驗預期會使用下列封裝規格，以使用雙�
 
 ### <a name="adding-mesh-lods"></a>新增網狀 LODs
 
-Windows MR 使用幾何節點 LODs，根據螢幕上的涵蓋範圍，以不同的詳細資料層級呈現3D 模型。 雖然這項功能在技術上並不是必要的，但建議用於所有資產。 Windows 目前支援三個層級的詳細資料。 預設」 LOD 為0，表示最高品質。 其他 LODs 會依序編號，例如1、2，而且品質會逐漸降低。 [Windows Mixed Reality 資產轉換器](https://github.com/Microsoft/glTF-Toolkit/releases)可接受多個 glTF 模型，並將其合併至具有有效」 lod 層級的單一資產，藉此支援產生符合此」 lod 規格的資產。 下表概述預期的」 LOD 順序和三角形目標：
+WindowsMR 使用幾何節點 LODs，根據螢幕上的涵蓋範圍，以不同的詳細資料層級呈現3D 模型。 雖然這項功能在技術上並不是必要的，但建議用於所有資產。 目前 Windows 支援三個層級的詳細資料。 預設」 LOD 為0，表示最高品質。 其他 LODs 會依序編號，例如1、2，而且品質會逐漸降低。 [Windows Mixed Reality 資產轉換器](https://github.com/Microsoft/glTF-Toolkit/releases)可接受多個 glTF 模型，並將其合併至具有有效」 lod 層級的單一資產，藉此支援產生符合此」 lod 規格的資產。 下表概述預期的」 LOD 順序和三角形目標：
 <br>
 
 |  」 LOD 層級  |  建議的三角形計數  |  最大三角形計數 | 
@@ -179,7 +179,7 @@ Windows MR 使用幾何節點 LODs，根據螢幕上的涵蓋範圍，以不同�
 
 ### <a name="screen-coverage"></a>螢幕涵蓋範圍
 
-LODs 會根據每個」 LOD 上設定的螢幕涵蓋範圍值所驅動的系統，在 Windows Mixed Reality 中顯示。 目前耗用較大部分螢幕空間的物件會顯示在較高的」 LOD 層級上。 螢幕涵蓋範圍不是核心 glTF 2.0 規格的一部分，而且必須使用 [MSFT_lod 擴充](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod)功能的 [額外專案] 區段中的 MSFT_ScreenCoverage 來指定。
+LODs 會根據每個」 lod 上設定的螢幕涵蓋範圍值所驅動的系統，在 Windows Mixed Reality 中顯示。 目前耗用較大部分螢幕空間的物件會顯示在較高的」 LOD 層級上。 螢幕涵蓋範圍不是核心 glTF 2.0 規格的一部分，而且必須使用 [MSFT_lod 擴充](https://github.com/sbtron/glTF/tree/MSFT_lod/extensions/Vendor/MSFT_lod)功能的 [額外專案] 區段中的 MSFT_ScreenCoverage 來指定。
 <br>
 
 |  」 LOD 層級  |  建議的範圍  |  預設範圍 | 
@@ -192,7 +192,7 @@ LODs 會根據每個」 LOD 上設定的螢幕涵蓋範圍值所驅動的系統�
 ## <a name="animation-guidelines"></a>動畫指導方針
 
 > [!NOTE]
-> 這項功能已新增為 [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)的一部分。 在舊版的 Windows 上，這些動畫不會播放，不過，如果是根據本文中的指導方針來撰寫，它們仍會載入。  
+> 這項功能已在[2018 年4月更新 Windows 10](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)中新增。 在舊版 Windows 這些動畫不會播放，不過，如果是根據本文中的指導方針來撰寫，它們仍會載入。  
 
 混合實境首頁支援 HoloLens 和沉浸式 (VR) 耳機上的動畫 glTF 物件。 如果您想要在模型上觸發動畫，您必須使用 glTF 格式的動畫地圖延伸模組。 此延伸模組可讓您根據使用者在世界中的目前狀態，在 glTF 模型中觸發動畫，例如，當使用者接近物件或正在查看動畫時，觸發動畫。 如果您 glTF 物件具有動畫，但未定義觸發程式，則不會播放動畫。 下一節描述將這些觸發程式新增至任何動畫 glTF 物件的工作流程。
 
@@ -211,7 +211,7 @@ LODs 會根據每個」 LOD 上設定的螢幕涵蓋範圍值所驅動的系統�
 
 ### <a name="adding-the-triggers"></a>新增觸發程式
 
-動畫觸發程式會使用動畫地圖延伸模組加入至 glTF 模型 JSON。 動畫地圖延伸模組會 [在 GitHub 上](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) 公開記載 (注意：這是) 的草稿延伸模組。 若要將擴充功能新增至您的模型，只需在編輯器中 glTF 檔案的結尾，並將 "extensionsUsed" 和 "extension" 區塊新增至檔案（如果它們還不存在的話）。 在 "extensionsUsed" 區段中，您會新增 "EXT_animation_map" 擴充功能的參考，而在 "extensions" 區塊中，您會將對應加入至模型中的動畫。
+動畫觸發程式會使用動畫地圖延伸模組加入至 glTF 模型 JSON。 動畫地圖延伸模組會[在此公開記載于 GitHub](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) (注意：這是草稿延伸) 。 若要將擴充功能新增至您的模型，只需在編輯器中 glTF 檔案的結尾，並將 "extensionsUsed" 和 "extension" 區塊新增至檔案（如果它們還不存在的話）。 在 "extensionsUsed" 區段中，您會新增 "EXT_animation_map" 擴充功能的參考，而在 "extensions" 區塊中，您會將對應加入至模型中的動畫。
 
 如同 [在規格中](https://github.com/msfeldstein/glTF/blob/04f7005206257cf97b215df5e3f469d7838c1fee/extensions/Vendor/FB_animation_map/README.md) 所述，您定義了在 "動畫" 清單上使用 "語義" 字串觸發動畫的結果，這是動畫索引的陣列。 在下列範例中，我們已指定在物件上撥雲見日使用者時要播放的動畫：
 
@@ -253,9 +253,9 @@ Windows Mixed Reality home 支援下列動畫觸發語義。
 
 ## <a name="gltf-implementation-notes"></a>glTF 執行注意事項
 
-Windows MR 不支援使用負面比例來翻轉幾何。 具有負值縮放的幾何很可能會導致視覺效果成品。
+WindowsMR 不支援使用負面比例來翻轉幾何。 具有負值縮放的幾何很可能會導致視覺效果成品。
 
-GlTF 資產必須指向使用 Windows MR 轉譯的場景屬性的預設場景。 此外， [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)之前的 Windows MR glTF 載入器 **需要** 存取子：
+glTF 資產必須指向使用場景屬性 Windows MR 來呈現的預設場景。 此外， [Windows 10 2018 年4月更新](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)之前的 Windows MR glTF 載入器 **需要** 存取子：
 * 必須具有最小值和最大值。
 * 型別純量必須為 componentType UNSIGNED_SHORT (5123) 或 UNSIGNED_INT (5125) 。
 * 類型 VEC2 和 VEC3 必須是 componentType FLOAT (5126) 。
@@ -275,7 +275,7 @@ GlTF 資產必須指向使用 Windows MR 轉譯的場景屬性的預設場景。
 * occlusionTexture：必須改為使用下列定義的 Microsoft 優化材質封裝
 * occlusionStrength
 
-Windows MR 不支援基本模式線和點。 
+WindowsMR 不支援基本模式線條和點。 
 
 僅支援單一 UV 頂點屬性。
 
@@ -286,7 +286,7 @@ Windows MR 不支援基本模式線和點。
 * [glTF 2.0 規格](https://github.com/KhronosGroup/glTF/blob/master/README.md)
 * [Microsoft glTF」 LOD 延伸模組規格](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_lod/README.md)
 * [PC Mixed Reality 材質封裝延伸模組規格](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_occlusionRoughnessMetallic/README.md)
-* [HoloLens 混合現實材質封裝延伸模組規格](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
+* [HoloLens混合現實材質封裝延伸模組規格](https://github.com/KhronosGroup/glTF/blob/master/extensions/2.0/Vendor/MSFT_packing_normalRoughnessMetallic/README.md)
 * [Microsoft DDS 紋理 glTF 延伸模組規格](https://github.com/KhronosGroup/glTF/tree/master/extensions/2.0/Vendor/MSFT_texture_dds)
 
 ## <a name="see-also"></a>另請參閱

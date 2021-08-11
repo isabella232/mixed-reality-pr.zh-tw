@@ -5,24 +5,24 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、控制項、字型、印刷樣式、ui、ux、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: dde8989998cf422c40ada927c0d8462cb4cd97b9
-ms.sourcegitcommit: e89431d12b5fe480c9bc40e176023798fc35001b
+keywords: Windows Mixed Reality、設計、控制項、字型、印刷樣式、ui、ux、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
+ms.openlocfilehash: 3e5f296e9526e62bde7d03a0fee7847f4664e4a67187fcda1e66e22aa03053b4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/07/2021
-ms.locfileid: "109489278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207934"
 ---
 # <a name="text-in-unity"></a>Unity 中的文字
 
-文字是全像攝影應用程式中最重要的元件之一。 若要在 Unity 中顯示文字，有三種類型的文字元件可供您使用： UI 文字、3D 文字網格和文字網格 Pro。 根據預設，UI 文字和3D 文字網格會顯示為模糊且太大。 變更幾個變數會產生更清晰、品質較高的文字，並在 HoloLens 中提供可管理的大小。 使用 UI 文字和3D 文字網格元件時，您可以套用縮放比例來取得適當的維度，以達到更佳的轉譯品質。
+文字是全像攝影應用程式中最重要的元件之一。 若要在 Unity 中顯示文字，有三種類型的文字元件可供您使用： UI 文字、3D 文字網格和文字網格 Pro。 根據預設，UI 文字和3D 文字網格會顯示為模糊且太大。 變更幾個變數會使 HoloLens 中可管理的大小變得更清晰、品質較高的文字。 使用 UI 文字和3D 文字網格元件時，您可以套用縮放比例來取得適當的維度，以達到更佳的轉譯品質。
 
 ![如何取得清晰且美觀的文字](images/hug-text-02-640px.png)<br>
 *Unity 中的模糊預設文字*
 
 ## <a name="working-with-unitys-3d-text-text-mesh-and-ui-text"></a>使用 Unity 的3D 文字 (文字網格) 和 UI 文字
 
-Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100% 的轉換縮放比例。 一個 Unity 單位會在 HoloLens 上轉譯為約1個計量。 若是字型，3D TextMesh 的周框方塊預設會以大約1計量的高度來提供。
+Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100% 的轉換縮放比例。 一個 Unity 單位會在 HoloLens 上轉譯為大約1個計量。 若是字型，3D TextMesh 的周框方塊預設會以大約1計量的高度來提供。
 
 ![使用 Unity 中的字型](images/640px-hug-text-03.png)<br>
 *預設的 Unity 3D 文字 (文字網格) 佔用一個 Unity 單位，也就是1個計量*
@@ -53,7 +53,7 @@ Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100%
 
 ## <a name="working-with-text-mesh-pro"></a>使用文字網格 Pro
 
-您可以使用 Unity 的文字網格 Pro 來保護文字轉譯品質。 無論使用 [ [帶正負號的距離] 欄位 (.sdf) ](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) 技術的距離為何，它都支援清晰的文字外框。 使用我們針對3D 文字網格和 UI 文字所使用的相同計算方法，我們可以找到適當的縮放比例值，以搭配傳統的印刷點使用。 因為大小為36的預設3D 文字網格 Pro 字型，其周框大小為 2.5 Unity 單位 (2.5 m) ，所以我們可以使用0.005 值來取得點大小。 UI 功能表下的文字網格 Pro，預設的周框大小為25個 Unity 單位 (25 m) 。 這可為我們提供0.0005 的調整值。
+您可以使用 Unity 的文字網格 Pro，保護文字轉譯品質。 無論使用 [ [帶正負號的距離] 欄位 (.sdf) ](https://steamcdn-a.akamaihd.net/apps/valve/2007/SIGGRAPH2007_AlphaTestedMagnification.pdf) 技術的距離為何，它都支援清晰的文字外框。 使用我們針對3D 文字網格和 UI 文字所使用的相同計算方法，我們可以找到適當的縮放比例值，以搭配傳統的印刷點使用。 由於預設的3d 文字網格 Pro 字型的大小為36，因此其大小為 2.5 Unity 單位 (2.5 m) ，我們可以使用縮放比例值0.005 來取得點大小。 UI 功能表下的文字網格 Pro 有25個 Unity 單位的預設周框大小 (25 m) 。 這可為我們提供0.0005 的調整值。
 
 ![調整 Unity 3D 文字和 UI 的值](images/Text_In_Unity_Measurements2.png)<br>
 *調整 Unity 3D 文字和 UI 的值*
@@ -82,7 +82,7 @@ Unity 假設所有新增至場景的新元素都是一個 Unity 單位，或100%
 | 45 cm (直接操作距離)  | 0.65 °-0.8 ° | 5.1-6.3 mm | 14.47-17.8 pt |
 | 2分鐘 | 0.6 °-0.75 ° | 20.9-26.2 mm | 59.4-74.2 pt |
 
-Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 不過，請避免使用較小的淺色或半淺色字型系列，因為精簡型垂直筆觸會震動，而且會降低可讀性。 具有足夠筆觸粗細的新式字型可正常運作。 例如，Helvetica 和 Arial 外觀美觀，而且在 HoloLens 中會使用一般或粗體權數來辨認。
+Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 不過，請避免使用較小的淺色或半淺色字型系列，因為精簡型垂直筆觸會震動，而且會降低可讀性。 具有足夠筆觸粗細的新式字型可正常運作。 例如，Helvetica 和 Arial 外觀美觀，而且在具有一般或粗體權數的 HoloLens 中很清晰。
 
 ![視圖角度 ](images/Text_In_Unity_ViewingAngle.jpg)
  *觀賞距離、角度和文字高度*

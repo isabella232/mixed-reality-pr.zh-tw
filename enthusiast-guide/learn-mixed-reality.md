@@ -8,24 +8,24 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，教學課程，開始使用
 appliesto:
 - Windows 10
-ms.openlocfilehash: 9210f9bb7dd4c922c0d202ddc114beab60e66de8
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: f11aa13b3bcbe1f0f1410fe4572436e51d69554b747415986a9a06036d95f64b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944729"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207618"
 ---
 # <a name="learn-mixed-reality"></a>學習混合實境
 
 ## <a name="running-the-learning-experience-for-the-first-time"></a>第一次執行學習體驗
 
-完成設定之後，混合實境入口應用程式應該會在名為 **學習混合實境** 的 HMD 中啟動沉浸式體驗。 這種沉浸式體驗將告訴您如何使用 Windows Mixed Reality。 在 [載入] 畫面的 gem 中看看，開始使用。 您應該會在耳機中聽到 Cortana 的語音，以提供接下來要做什麼的指示。
+完成設定之後，混合實境入口應用程式應該會在名為 **學習混合實境** 的 HMD 中啟動沉浸式體驗。 這種沉浸式體驗將告訴您如何使用 Windows Mixed Reality。 在 [載入] 畫面的 gem 中看看，開始使用。 您應該會聽到耳機 Cortana 的聲音，提供您接下來要做什麼的指示。
 
 ![學習混合實境](images/file-learnmixedrealitystart.png)
 
 ## <a name="rerun-the-learning-experience"></a>重新執行學習體驗
 
-學習混合實境是應用程式。 您可以隨時從 [混合實境首頁](your-mixed-reality-home.md) 中的 [開始] 功能表啟動應用程式。 使用您的動作控制器或鍵盤：
+學習混合實境是應用程式。 您可以隨時從[混合實境首頁](your-mixed-reality-home.md)中的 [開始] 功能表啟動應用程式。 使用您的動作控制器或鍵盤：
 
 ### <a name="use-your-motion-controllers"></a>使用您的動作控制器
 
@@ -43,7 +43,7 @@ ms.locfileid: "107944729"
 
 若要深入瞭解如何使用移動控制器來解決混合現實的情況，請查看 [混合現實中的動作控制器](controllers-in-wmr.md)
 
-## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>在 Windows Mixed Reality 首頁內使用語音命令和 Cortana
+## <a name="use-voice-commands-and-cortana-inside-of-the-windows-mixed-reality-home"></a>使用 Windows Mixed Reality 首頁內的語音命令和 Cortana
 
 [瞭解您可以在 Windows Mixed Reality 首頁中使用的語音命令](https://support.microsoft.com/help/4041322/windows-10-speech-in-windows-mixed-reality)
 

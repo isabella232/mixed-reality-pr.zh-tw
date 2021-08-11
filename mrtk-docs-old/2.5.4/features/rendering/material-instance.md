@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、MaterialInstance、
-ms.openlocfilehash: 45537cc7b6103626be6461a80e9d2da25f34c126
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 2f1a0cd430abc651ab4af911b4d3cb307301df17c8dce48a985dd2545009e81a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208304"
 ---
 # <a name="material-instance"></a>材質實例
 

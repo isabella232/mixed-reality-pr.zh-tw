@@ -1,17 +1,17 @@
 ---
 title: 案例研究-在混合式事實下建立 galaxy
-description: 瞭解「Galaxy Explorer」應用程式，以及它如何針對 Microsft HoloLens 和在24小時的 Twitter 輪詢之後，由社區開發人員進行。
+description: 瞭解「Galaxy Explorer」應用程式，以及它如何針對 Microsft HoloLens，以及在一小時的 Twitter 輪詢之後，由社區開發人員進行。
 author: karimluccin
 ms.author: kaluccin
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Galaxy Explorer、HoloLens、Windows Mixed Reality、分享您的想法、個案研究
-ms.openlocfilehash: ef97920d22df65a9d4fa5e630840759e58c80b53
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5891fbc052c52cd90176214d1eff8ef019a2bcfc80dbd5264489deced0fb1664
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583539"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115208044"
 ---
 # <a name="case-study---creating-a-galaxy-in-mixed-reality"></a>案例研究-在混合式事實下建立 galaxy
 
@@ -23,11 +23,11 @@ Zibits 是專案的尖端領導人，而 Karim Luccin 是團隊的圖形工程�
 
 由兩個設計人員組成的[小組](../develop/unity/galaxy-explorer.md#meet-the-team)（三名開發人員、四個演出者、生產者和一個測試人員）有六周的時間來建立功能完整的應用程式，可讓人們瞭解及探索銀河的 Vastness 和方式的優點。
 
-我們想要充分利用 HoloLens 在您的生活空間中直接轉譯3D 物件的能力，因此我們決定要建立實際的查看 galaxy，讓人們可以放大並查看個別的星星，每一個都是各自的軌跡。
+我們想要充分利用 HoloLens 在您的生活空間中直接轉譯3d 物件的能力，因此我們決定要建立實際的查看 galaxy，讓人們可以放大並查看個別的星星，每一個都是各自的軌跡。
 
 在第一周的開發過程中，我們提供了銀河方法的一些目標，也就是 Galaxy：需要有深度、移動和感覺體積型—全星形，可協助建立 Galaxy 的形式。
 
-建立具有數十億顆星的動畫 galaxy 的問題，就是需要更新的大量單一元素會是每個畫面格太大的問題，以使用 CPU 建立動畫。 我們的解決方案牽涉到複雜的藝術與科學組合。
+建立具有數十億顆星的動畫 galaxy 有個問題，那就是需要更新的單一元素數量可能太大，以致 HoloLens 使用 CPU 建立動畫。 我們的解決方案牽涉到複雜的藝術與科學組合。
 
 ## <a name="behind-the-scenes"></a>在幕後
 
@@ -37,7 +37,7 @@ Zibits 是專案的尖端領導人，而 Karim Luccin 是團隊的圖形工程�
 
 目前的 Cpu 很適合用來處理序列工作，且一次最多可以進行一些平行工作 (視它們) 的核心數目而定，但 Gpu 在以平行方式處理上千個作業時更有效率。 不過，因為它們通常不會與 CPU 共用相同的記憶體，所以在 CPU<>GPU 之間交換資料可能很快就會變成瓶頸。 我們的解決方案是在 GPU 上建立 galaxy，而且必須完全存留在 GPU 上。
 
-我們開始使用各種模式的數千點粒子來進行壓力測試。 如此一來，我們就可以在 HoloLens 上取得 galaxy，看看有什麼作用和不是什麼。
+我們開始使用各種模式的數千點粒子來進行壓力測試。 如此一來，我們就可以在 HoloLens 上取得 galaxy，以查看哪些工作和不是什麼。
 
 ### <a name="creating-the-position-of-the-stars"></a>建立星星的位置
 
@@ -185,9 +185,9 @@ x3 精密回到完整解析度。
 
 ### <a name="more-to-explore"></a>深入瞭解
 
-我們已開放建立 Galaxy Explorer 應用程式的程式碼，並使其可在 [GitHub](https://github.com/Microsoft/GalaxyExplorer) 上提供，以供開發人員使用。
+我們已開放建立 Galaxy Explorer 應用程式的程式碼，並讓開發人員可以在[GitHub](https://github.com/Microsoft/GalaxyExplorer)上進行建立。
 
-有興趣找出有關 Galaxy Explorer 開發流程的詳細資訊嗎？ 查看 [Microsoft HoloLens YouTube 頻道](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)上所有過去的專案更新。
+有興趣找出有關 Galaxy Explorer 開發流程的詳細資訊嗎？ 查看[Microsoft HoloLens YouTube 頻道](https://www.youtube.com/playlist?list=PLZCHH_4VqpRj0Nl46J0LNRkMyBNU4knbL)上所有過去的專案更新。
 
 ## <a name="about-the-authors"></a>關於作者
 

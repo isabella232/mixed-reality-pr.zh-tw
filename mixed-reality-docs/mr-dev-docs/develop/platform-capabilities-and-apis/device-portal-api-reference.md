@@ -1,17 +1,17 @@
 ---
 title: 裝置入口網站 API 參照
-description: 隨時掌握適用于 HoloLens 開發的 Windows 裝置入口網站 API。
+description: 隨時掌握最新的 Windows 裝置入口網站 API，以進行 HoloLens 開發。
 author: hamalawi
 ms.author: moelhama
 ms.date: 08/03/2020
 ms.topic: article
 keywords: HoloLens、Windows 裝置入口網站、API、混合現實耳機、Windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: cdbe9635fc51a0d19c978b72fdc8d5db6b8e8e01
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 6b41c569917150c303da933a75d354f574fb579ba676dac281e9cde2bfc59818
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581256"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207836"
 ---
 # <a name="device-portal-api-reference"></a>裝置入口網站 API 參照
 
@@ -177,7 +177,7 @@ Payload
 
 取得目前使用者的已保存錨點清單。 
 
-### <a name="downloaduploaddelete-files"></a>下載/上傳/刪除檔案
+### <a name="downloaduploaddelete-files"></a>下載/Upload/delete 檔案
 **/api/holographic/mapmanager/download (取得)**
 
 下載地圖、錨點或空間重建資料庫檔案。 檔案必須先前已上傳或匯出。
@@ -355,7 +355,7 @@ $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 
 取得 Windows 裝置入口網站內混合現實捕捉的狀態。
 
-**_回應_* _
+***回應***
 
 回應包含 JSON 屬性，指出 Windows 裝置入口網站是否錄製影片。
 
@@ -363,7 +363,7 @@ $.post("/api/holographic/mapmanager/resetmapandanchorsandsrdb")
 {"IsRecording" : boolean}
 ```
 
-_ */api/holographic/mrc/thumbnail (取得)**
+**/api/holographic/mrc/thumbnail (取得)**
 
 取得指定檔案的縮圖影像。
 
@@ -487,7 +487,7 @@ HoloLens 透過區塊下載分散的數量，支援混合現實的即時預覽�
 
 **/api/holographic/simulation/playback/file (POST)**
 
-上傳錄製。
+Upload 錄製。
 
 **/api/holographic/simulation/playback/files (取得)**
 

@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、表面磁性
-ms.openlocfilehash: 4afed1ff9a1e8a7cb46f4810ac388739bca1b19e
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: c3f1a390d6abe259c9cb825a41f757809c85c9565a1280cf82d8badc262cbf30
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600617"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196227"
 ---
 # <a name="surface-magnetism"></a>表面磁性
 

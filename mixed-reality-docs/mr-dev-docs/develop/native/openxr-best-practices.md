@@ -6,22 +6,22 @@ ms.author: alexturn
 ms.date: 2/28/2020
 ms.topic: article
 keywords: OpenXR、Khronos、BasicXRApp、DirectX、原生、原生應用程式、自訂引擎、中介軟體、最佳作法、效能、品質、穩定性
-ms.openlocfilehash: ee600cfc22ab1fb7ee43c5727d8e19cf3a1b1463
-ms.sourcegitcommit: 2bf79eef6a9b845494484f458443ef4f89d7efc0
+ms.openlocfilehash: 2cbd05417f62f7380b048f692295bbbe98ceba5bce69c4f1dae21aec812ec450
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/17/2020
-ms.locfileid: "97612982"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207846"
 ---
 # <a name="openxr-app-best-practices"></a>OpenXR 應用程式最佳作法
 
-您可以在 <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a>的 OpenXRProgram .cpp 檔案中看到下列最佳作法的範例。 開頭的 Run ( # A1 函式會從初始化到事件和轉譯迴圈，來捕獲一般的 OpenXR 應用程式程式碼流程。
+您可以在 <a href="https://github.com/microsoft/OpenXR-MixedReality/tree/master/samples/BasicXrApp" target="_blank">BasicXrApp</a>的 OpenXRProgram .cpp 檔案中看到下列最佳作法的範例。 開頭的 Run () 函式會從初始化到事件和轉譯迴圈，來捕獲一般的 OpenXR 應用程式程式碼流程。
 
 ## <a name="best-practices-for-visual-quality-and-stability"></a>視覺品質和穩定性的最佳作法
 
 本節中的最佳作法說明如何在任何 OpenXR 應用程式中取得最佳的視覺品質和穩定性。
 
-如需 HoloLens 2 特定的效能建議，請參閱下面 HoloLens 2 一節中的 [效能最佳做法](#best-practices-for-performance-on-hololens-2) 。
+如需 HoloLens 2 特定的效能建議，請參閱下面 HoloLens 2 一節中的[效能最佳做法](#best-practices-for-performance-on-hololens-2)。
 
 ### <a name="gamma-correct-rendering"></a>Gamma-正確轉譯
 
@@ -35,7 +35,7 @@ ms.locfileid: "97612982"
 
 ### <a name="choose-a-reasonable-depth-range"></a>選擇合理的深度範圍
 
-偏好較窄的深度範圍，以界定虛擬內容的範圍，以協助將 HoloLens 的穩定性。
+偏好較窄的深度範圍，以界定虛擬內容的範圍，以協助在 HoloLens 上建立影像穩定性。
 例如，OpenXrProgram .cpp 範例使用0.1 計量至20個計量。
 使用 [反向 z](https://developer.nvidia.com/content/depth-precision-visualized) 可獲得更一致的深度解析。
 在 HoloLens 2 上，使用慣用的 `DXGI_FORMAT_D16_UNORM` 深度格式將有助於達到更好的畫面播放速率和效能，雖然16位深度緩衝區比24位深度緩衝區提供的深度解析度更低。
@@ -44,7 +44,7 @@ ms.locfileid: "97612982"
 ### <a name="prepare-for-different-environment-blend-modes"></a>針對不同的環境 blend 模式進行準備
 
 如果您的應用程式也會在完全封鎖世界的沉浸式耳機上執行，請務必使用 API 列舉支援的環境 blend 模式， `xrEnumerateEnvironmentBlendModes` 並正確地準備您的轉譯內容。
-例如，針對具有 `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` 諸如 HoloLens 的系統，應用程式應該使用透明的透明色彩，而針對系統使用 `XR_ENVIRONMENT_BLEND_MODE_OPAQUE` ，應用程式應該在背景中轉譯一些不透明的色彩或某些虛擬房間。
+例如，對於具有例如 HoloLens 的系統而言， `XR_ENVIRONMENT_BLEND_MODE_ADDITIVE` 應用程式應該以透明的方式使用透明的色彩，而針對系統使用 `XR_ENVIRONMENT_BLEND_MODE_OPAQUE` ，應用程式應該在背景中轉譯一些不透明的色彩或某些虛擬房間。
 
 ### <a name="choose-unbounded-reference-space-as-applications-root-space"></a>選擇未系結的參考空間作為應用程式的根空間
 
@@ -59,7 +59,7 @@ ms.locfileid: "97612982"
 
 ### <a name="support-mixed-reality-capture"></a>支援 mixed reality capture
 
-雖然 HoloLens 2 的主顯示器會使用加法的環境混合，但是當使用者啟動 [mixed reality capture](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)時，應用程式的轉譯內容將會與環境影片串流進行 Alpha 混合。
+雖然 HoloLens 2 的主顯示器會使用加法的環境混合，但是當使用者啟動[mixed reality capture](../platform-capabilities-and-apis/mixed-reality-capture-for-developers.md)時，應用程式的轉譯內容將會與環境影片串流進行 Alpha 混合。
 若要在 mixed reality capture 影片中達成最佳的視覺品質，最好是 `XR_COMPOSITION_LAYER_BLEND_TEXTURE_SOURCE_ALPHA_BIT` 在投射圖層中設定 `layerFlags` 。
 
 ## <a name="best-practices-for-performance-on-hololens-2"></a>HoloLens 2 效能的最佳作法
@@ -76,7 +76,7 @@ ms.locfileid: "97612982"
 
 一律使用建議的 view configuration width/height (`recommendedImageRectWidth` 和 `recommendedImageRectHeight` 從) 轉譯，並且在轉譯之前， `XrViewConfigurationView` 一律使用 `xrLocateViews` API 來查詢建議的視圖姿勢、FOV 和其他轉譯參數。
 `XrFrameEndInfo.predictedDisplayTime` `xrWaitFrame` 當查詢姿勢和 views 時，請一律使用來自最新的呼叫。
-這可讓 HoloLens 調整轉譯的品質，並針對正在佩戴 HoloLens 的人員優化視覺品質。
+這可讓 HoloLens 針對正在佩戴 HoloLens 的人員調整轉譯和優化視覺品質。
 
 ### <a name="use-a-single-projection-layer"></a>使用單一投射層
 
