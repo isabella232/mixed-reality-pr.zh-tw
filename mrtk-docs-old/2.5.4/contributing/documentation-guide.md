@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 4f11f83e9cf2ca30b82c5a440a809fe27307c9dd
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: f80b954aff9cfc6c687fe9ea6328a6fc18d3659d6f4bce46837cfd02076f26dc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193184"
 ---
 # <a name="documentation-guidelines"></a>檔指導方針
 
@@ -136,7 +136,7 @@ int SampleFunction(int i)
 
 ### <a name="mentioning-menu-entries"></a>提及功能表項目
 
-提及使用者應該按一下的功能表項目時，目前的慣例是： *Project > Files > 建立 > 分葉*
+提及使用者應該按一下的功能表項目時，目前的慣例是： *Project > 檔案 > 建立 > 分葉*
 
 ### <a name="links"></a>連結
 
@@ -340,7 +340,7 @@ No known breaking changes
 
 ## <a name="tools-for-editing-markdown"></a>用來編輯 MarkDown 的工具
 
-[Visual Studio Code](https://code.visualstudio.com/) 是很棒的工具，可讓您編輯屬於 MRTK 檔的 markdown 檔案。
+[Visual Studio Code](https://code.visualstudio.com/)是很棒的工具，可讓您編輯屬於 MRTK 檔的 markdown 檔案。
 
 撰寫檔時，也強烈建議您安裝下列兩個延伸模組：
 

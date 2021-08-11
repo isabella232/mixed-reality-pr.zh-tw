@@ -7,12 +7,12 @@ ms.date: 04/10/2020
 ms.topic: article
 keywords: WebVR、WebXR、WinMR、WebAR、web vr、web xr、web mr、web ar、360、360影片、360影片、360相片、360相片、360內容、沉浸式 web、immersiveweb、IW
 ROBOTS: NOINDEX
-ms.openlocfilehash: dba3ca6b0cb9404f488db0b69a5bd89d6093a3ef
-ms.sourcegitcommit: cbfd1c37612aa6904fa41642ede6281d491e478d
+ms.openlocfilehash: 546108f1093f1437daca37d6be35cccb6dcd62820984b0e52fd45979d4af6e55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104909030"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192012"
 ---
 # <a name="webvr-overview"></a>WebVR 總覽
 

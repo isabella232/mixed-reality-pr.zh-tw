@@ -6,16 +6,16 @@ ms.author: v-hferrone
 ms.date: 3/26/2019
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，效能，優化，CPU，GPU
-ms.openlocfilehash: d0218902864586e678f6d51dfade58bd567bcc02
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+ms.openlocfilehash: 394198011c40f0b90e2c5579f7e0ad8c4019b2a8cefcb1859c544afcbce47df6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269954"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193554"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>瞭解混合現實的效能
 
-本文是瞭解您的混合現實應用程式效能重要性的簡介。  如果您的應用程式不是以最佳的畫面播放速率執行，則使用者體驗可能會大幅降低。 全像是不穩定的，且環境的標頭追蹤將不穩定，而導致使用者體驗不佳。 您必須將效能視為混合現實開發的第一個類別功能，而不是波蘭文工作。
+本文是瞭解您的混合現實應用程式效能重要性的簡介。  如果您的應用程式不是以最佳的畫面播放速率執行，則使用者體驗可能會大幅降低。 全像投影將會顯示不穩定，而且環境的標頭追蹤將會不正確，而導致使用者體驗不佳。 您必須將效能視為混合現實開發的第一個類別功能，而不是波蘭文工作。
 
 我們最近發行了一個稱為「品質基礎」的應用程式，其中涵蓋了 HoloLens 2 應用程式的常見效能、設計和環境問題和解決方案。 此應用程式是下列內容的絕佳視覺效果示範。
 
@@ -27,8 +27,8 @@ ms.locfileid: "106269954"
 | 平台 | 目標畫面播放速率 |
 |----------|-------------------|
 | [HoloLens](/hololens/hololens1-hardware) | 60 FPS |
-| [Windows Mixed Reality Ultra 電腦](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
-| [Windows Mixed Reality 電腦](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
+| [Windows Mixed Reality Ultra個人電腦](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
+| [Windows Mixed Reality個人電腦](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
 下列架構概述達到目標畫面播放速率的最佳作法。 建議您閱讀 [unity 文章的效能建議](../unity/performance-recommendations-for-unity.md) ，以取得在 unity 環境中測量及改善畫面播放速率的秘訣。
 
@@ -43,7 +43,7 @@ ms.locfileid: "106269954"
 
 ![框架的存留期](images/lifetime-of-a-frame.png)
 
-通常，HoloLens 應用程式將會有 GPU 界限，但不一定會。 您可以使用下列工具和技術，來瞭解您的特定應用程式瓶頸的位置。
+一般來說，HoloLens 的應用程式會有 GPU 系結，但不一定如此。 您可以使用下列工具和技術，來瞭解您的特定應用程式瓶頸的位置。
 
 ## <a name="how-to-analyze-your-application"></a>如何分析您的應用程式
 
@@ -51,10 +51,10 @@ ms.locfileid: "106269954"
 
 以下是一些常見的工具，可協助您收集應用程式的深入分析資訊：
 - [Intel 圖形效能分析器](https://software.intel.com/gpa)
-- [Visual Studio 圖形偵錯工具](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
+- [Visual Studio圖形偵錯工具](/visualstudio/debugger/graphics/visual-studio-graphics-diagnostics)
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity 框架偵錯工具](https://docs.unity3d.com/Manual/FrameDebugger.html)
-- [Unreal 見解](../unreal/unreal-insights.md)
+- [Unreal Insights](../unreal/unreal-insights.md)
 - [Pix](https://devblogs.microsoft.com/pix/)
 - [Unreal 中的 GPU Pofiling](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
@@ -91,7 +91,7 @@ ms.locfileid: "106269954"
 
 - **記憶體頻寬** 是 GPU 可從記憶體進行的讀取和寫入速率
     - 若要找出頻寬限制，請減少材質品質，並檢查畫面播放速率是否已改善。
-    - 在 Unity 中，變更 [**編輯**   >  **專案設定**  >  **[品質] 設定](https://docs.unity3d.com/Manual/class-QualitySettings.html)** 中的材質品質。
+    - 在 Unity 中，在 **編輯**   >  **Project 設定**  >  **[品質設定](https://docs.unity3d.com/Manual/class-QualitySettings.html)** 變更材質品質。
 - **填滿率** 是指 GPU 每秒可繪製的圖元。
     - 若要識別填滿速率限制，請降低顯示器解析度，並檢查是否已改善幀。 
     - 在 Unity 中，使用  *[XRSettings. renderViewportScale](https://docs.unity3d.com/ScriptReference/XR.XRSettings-renderViewportScale.html)* 屬性
@@ -112,7 +112,7 @@ ms.locfileid: "106269954"
 
 #### <a name="limit-overdraw"></a>限制過度繪製
 
-當轉譯多個物件但未在螢幕上顯示時，如果遮蔽物件隱藏了多個物件，就會發生高過度繪製。 想像一下一下有物件背後的牆。 所有幾何都會處理以進行轉譯，但只需要轉譯不透明的牆，這會導致不必要的作業。
+當轉譯多個物件但未在螢幕上顯示時，如果遮蔽物件隱藏了多個物件，就會發生高過度繪製。 Imagine 查看有物件背後的牆。 所有幾何都會處理以進行轉譯，但只需要轉譯不透明的牆，這會導致不必要的作業。
 
 #### <a name="shaders"></a>著色器
 

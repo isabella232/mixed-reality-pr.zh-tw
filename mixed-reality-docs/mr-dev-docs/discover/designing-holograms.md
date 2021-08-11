@@ -1,27 +1,27 @@
 ---
 title: 設計全像投影
-description: 透過 Microsoft 全新的設計全像影像應用程式，瞭解混合的現實。
+description: 透過 Microsoft 全新設計全像投影應用程式，瞭解混合的現實。
 author: hferrone
 ms.author: daescu
 ms.date: 11/24/2020
 ms.topic: article
-keywords: MRTK，混合的現實工具組，全像投影，設計全像投影、學習、範例應用程式、混合現實耳機、虛擬實境耳機、何謂虛擬實境
-ms.openlocfilehash: 6e37c3f1ba98f202addb9c323632bca8bffae3b6
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+keywords: MRTK，混合現實工具組，全像投影，設計全像投影，學習，範例應用程式，混合現實耳機，虛擬實境耳機，何謂虛擬實境
+ms.openlocfilehash: fb60dabcd03d276a7d901ee5b2f061460fbfa05acfbdf226a8aee9325f160cff
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110143633"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192370"
 ---
-# <a name="the-making-of-designing-holograms"></a>設計全息製作
+# <a name="the-making-of-designing-holograms"></a>設計全像投影
 
 > [!NOTE]
 > 請在此頁面上，允許小型載入視窗，以將所有酷炫的 Gif 和 embedded 影片全部考慮。
 
-學習如何設計混合的現實可能很困難，因為媒體不一定會轉譯成2D 設計流程。 在 Microsoft，我們為 HoloLens 2 建立了免費的應用程式，協助您瞭解混合現實 UX 設計第一手的基本概念。 設計全像影像應用程式的獨特方法是探討混合現實行為、秘訣和建議，以協助您建立自己的吸引人和出色的 HoloLens 應用程式。 從 Microsoft Store 免費下載應用程式，並從 Microsoft 的混合現實設計小組學習！
+Learning 如何設計混合的現實可能很困難，因為媒體不一定會正確地轉譯成2d 設計流程。 在 Microsoft，我們為 HoloLens 2 建立了免費的應用程式，協助您瞭解混合現實 UX 設計第一手的基本概念。 設計全像投影應用程式的唯一方法是探討混合現實行為、秘訣和建議，以協助您建立吸引人且令人驚奇的 HoloLens 應用程式。 從 Microsoft Store 免費下載應用程式，並從 Microsoft 的混合現實設計小組學習！
 
 > [!div class="nextstepaction"]
-> [下載設計全像影像應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
+> [下載設計全像投影應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
 
 <br>
 
@@ -42,13 +42,13 @@ ms.locfileid: "110143633"
 
 它一開始並不明顯，但有一個絕佳的機會，可以使用 mixed reality 作為媒體來教授。
 
-設計全像影像是一種視覺體驗，可解釋混合的現實設計概念和建議。 這只是您和一個示範混合現實設計概念的虛擬老師。 所有專案都是從第三個人的觀點來看，在您自己的空間中有很穩固的體驗。
+設計全像投影是說明混合現實設計概念和建議的視覺體驗。 這只是您和一個示範混合現實設計概念的虛擬老師。 所有專案都是從第三個人的觀點來看，在您自己的空間中有很穩固的體驗。
 
 <br>
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Designing-Holograms-app-trailer/player]
 
-*設計全像投影片影片*
+*設計全像投影的尾端影片*
 
 ## <a name="exploring-the-doll-house"></a>探索娃娃房子
 
@@ -163,7 +163,7 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 
 ## <a name="try-it-out-moments"></a>「立即試用」分鐘
 
-設計全像混合的現實概念，但也可讓您在您的房間內試用。 在這些說明中，我們會暫停並讓您離開娃娃房子並進入互動式時刻。 以下是這些互動式時刻的一些範例：
+設計全像投影教授混合的現實概念，但也可讓您在您的房間內試用。 在這些說明中，我們會暫停並讓您離開娃娃房子並進入互動式時刻。 以下是這些互動式時刻的一些範例：
 
 ![手形追蹤框架的動畫 GIF，顯示當偵測到手時以及何時進入 view 欄位時](images/designing-holograms/try-out-1.gif)
 
@@ -182,18 +182,18 @@ Headgaze 調整可讓您在執行時間移動已捕捉的人員頭部，這表�
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Daniel Escudero" width="60" height="60" src="images/designing-holograms/daniel-escudero.jpeg"></td>
-<td style="border-style: none"><b>Daniel Escudero</b><br><i>首席技術設計人員</i><br>Dan 是設計全像市的創意總監，目前也是在三藩市的 Microsoft Mixed Reality 學術設計組長的設計，而且之前是 Microsoft 在倫敦的混合現實工作室之一。</td>
+<td style="border-style: none"><b>Daniel Escudero</b><br><i>首席技術設計人員</i><br>Dan 是設計全像投影的創意總監，目前以三藩市的 microsoft mixed reality 學術設計組長的形式運作，而且之前是 microsoft 在倫敦的混合現實工作室之一的設計工具。</td>
 </tr>
 </table>
 
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Martin Wettig" width="60" height="60" src="images/designing-holograms/martin-wettig.jpeg"></td>
-<td style="border-style: none"><b>聖馬丁 Wettig</b><br><i>資深3D 演出者</i><br>聖馬丁在設計全像全像是 Microsoft 的混合現實工作室的其中一位資深3D 演出者的時候，會導致3D 藝術和 UI 設計。</td>
+<td style="border-style: none"><b>聖馬丁 Wettig</b><br><i>資深3D 演出者</i><br>聖馬丁在設計全像投影時，會導致3d 藝術和 UI 設計，而且先前是在柏林的 Microsoft 混合現實工作室中的一位資深3d 演出者。</td>
 </tr>
 </table>
 
 這項寶貴的感謝，讓您瞭解混合的現實設計小組，以分享更多的知識，以及 [物件理論](https://objecttheory.com/) 上令人驚奇的人，在專案的每個步驟中都是重要的成員。 感謝您的熱情，讓您在設計上有出色的關注。
 
 > [!div class="nextstepaction"]
-> [下載設計全像影像應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)
+> [下載設計全像投影應用程式](https://www.microsoft.com/p/designing-holograms/9nxwnjklrzwd)

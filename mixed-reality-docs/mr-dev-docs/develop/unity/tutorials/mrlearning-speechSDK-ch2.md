@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure 空間錨點, 語音辨識, Windows 10
 ms.localizationpriority: high
-ms.openlocfilehash: 8d031896a1725c0121272b68578016edf38a36cf
-ms.sourcegitcommit: fd1964ec6c645e8088ec120661f73739bb7775a9
+ms.openlocfilehash: ea5f1bed8fefe692de55a10c791530f22f295f454da1925902e03d5fcb169ffd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/13/2021
-ms.locfileid: "113656626"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193030"
 ---
 # <a name="2-execute-commands-using-azure-speech-recognition"></a>2. 使用 Azure 語音辨識執行命令
 

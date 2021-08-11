@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 07/27/2021
 ms.topic: article
 keywords: Windows Mixed Reality、設計、範例應用程式、控制項、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、OpenXR、open XR、Unity
-ms.openlocfilehash: 78961c73ee01efcd097d2dcc4456bce156287691fa6dc8e2121c817e4812bfac
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: ccfd443bb103f6ac051de84d3a321f3ffd5be2f5bafdc6479e9f67a03771d386
+ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211848"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "116862593"
 ---
 # <a name="periodic-table-of-the-elements-20"></a>元素週期表 2.0
 ![Elements 應用程式的期間資料表](../images/MRDL_PeriodicTable.jpg)
@@ -26,6 +26,8 @@ ms.locfileid: "115211848"
 
 使用混合實境擷取 HoloLens 2 記錄
 
+## <a name="download-the-app-package-from-github"></a>從 GitHub 下載應用程式套件
+簽出 GitHub 上的 [<a href="https://github.com/microsoft/MRDL_Unity_PeriodicTable/releases" target="_blank">**發行**</a>] 頁面。
 
 ## <a name="upgrading-the-project-for-hololens-2-with-mrtk"></a>使用 MRTK 升級 HoloLens 2 的專案
 您可以從文章中找到 HoloLens 2 移植案例：將專案 <a href="https://dongyoonpark.medium.com/bringing-the-periodic-table-of-the-elements-app-to-hololens-2-with-mrtk-v2-a6e3d8362158" target="_blank">**應用程式的定期資料表帶入使用 MRTK v2 的 HoloLens 2 (2019)**</a>

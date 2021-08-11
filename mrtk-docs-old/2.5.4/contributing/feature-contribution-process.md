@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: afc20c9764fe7fa8d10b10bdc34d952e657a20a6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 3d9cc25c8a69e5b2b5acc31e758d747d4a6f3015b30da7f49a055a20535f3150
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693735"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192540"
 ---
 # <a name="feature-contribution-process"></a>功能貢獻流程
 
@@ -48,7 +48,7 @@ ms.locfileid: "104693735"
 
 >TODO：新增架構草稿範本的連結
 
-完成草稿之後，您可以將這項功能附加至 GitHub 上的提案/工作問題，以進行最終公開評論。
+完成草稿之後，您可以將其附加至 GitHub 的提案/工作問題，以進行最終公開評論。
 
 ### <a name="architecture-documentation"></a>架構檔
 

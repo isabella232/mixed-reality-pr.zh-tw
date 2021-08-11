@@ -1,21 +1,21 @@
 ---
 title: 個案研究-我在 HoloLens 設計團隊的第一年
-description: 當我在2016年1月加入 HoloLens 設計小組時，從 2D flatland 到3D 世界的旅程已開始。
+description: 當我加入2016年1月的 HoloLens 設計小組時，從 2d flatland 到3d 世界的旅程已開始。
 author: designnomad
 ms.author: v-hferrone
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、HoloLens、設計、編輯、個人
-ms.openlocfilehash: 3c6444094663498ef4b253df6ed8dd7e82cc8319
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: 2defa24b8e53b28f90a8eb613afcbae7d1b9b1f2d12caaf885e405593df01ffe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681124"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192872"
 ---
 # <a name="case-study---my-first-year-on-the-hololens-design-team"></a>個案研究-我在 HoloLens 設計團隊的第一年
 
-當我在2016年1月加入 HoloLens 設計小組時，從 2D flatland 到3D 世界的旅程已開始。 加入小組之前，我的3D 設計經驗很少。 這就像是從單一步驟開始，數千英里旅程的中文句耳熟能詳諺語，除了我的案例中，第一個步驟是閏的！
+當我加入2016年1月的 HoloLens 設計小組時，從 2d flatland 到3d 世界的旅程已開始。 加入小組之前，我的3D 設計經驗很少。 這就像是從單一步驟開始，數千英里旅程的中文句耳熟能詳諺語，除了我的案例中，第一個步驟是閏的！
 
 ![從2D 到3D 的飛躍](../develop/platform-capabilities-and-apis/images/2D_to_3D-800px.gif)<br>
 *從2D 到3D 的飛躍*
@@ -27,7 +27,7 @@ ms.locfileid: "91681124"
 
 ## <a name="good-bye-frame-hello-spatial--diegetic-ui"></a>良好的框架。 Hello 空間/diegetic UI
 
-當我設計海報、雜誌、網站或應用程式畫面時，定義的框架 (通常會是每個問題的常數) 。 除非您是在 HoloLens 或其他的 VR 裝置中閱讀這篇文章，否則您會 *從外部* 透過2d 螢幕安全地保護框架。 內容不在您的外部。 不過，混合現實耳機可 *消除框架* ，因此您可以在內容空間中，查看並逐步解說內容。
+當我設計海報、雜誌、網站或應用程式畫面時，定義的框架 (通常會是每個問題的常數) 。 除非您是在 HoloLens 或其他的 VR 裝置中閱讀這篇文章，否則您會 *從外部* 透過2d 螢幕安全地受到保護，以防止框架內受到保護。 內容不在您的外部。 不過，混合現實耳機可 *消除框架*，因此您可以在內容空間中，查看並逐步解說內容。
 
 我在概念上瞭解這一點，但在開始之前，我犯了錯誤，只是把2D 思考轉移到3D 空間。 這顯然無法正常運作，因為3D 空間有自己的唯一屬性，例如根據使用者的前端) 移動 (的視圖變更，而使用者可以使用) ，以裝置的屬性和人類的 [使用者緩和 (的不同需求](https://www.youtube.com/watch?v=-606oZKLa_s/) 。 例如，在 2D UI 設計空間中，鎖定螢幕角落的 UI 元素是一個非常常見的模式，但這個抬頭顯示器 (Head Up 顯示) 樣式 UI 在 MR/VR 體驗中並不自然，它會阻礙使用者深度空間並造成使用者不適感。 就像是在眼鏡上有令人討厭的灰塵，也就是您要定生死的。 經過一段時間之後，我瞭解到將內容放在3D 空間中，並新增以主體鎖定的行為，讓內容以相對固定的距離來追蹤使用者，是很自然的。
 
@@ -41,7 +41,7 @@ ms.locfileid: "91681124"
 
 ### <a name="fragments-an-example-of-great-diegetic-ui"></a>片段：絕佳 Diegetic UI 的範例
 
-[片段](https://www.microsoft.com/p/fragments/9nblggh5ggm8)是 [Asobo Studio](https://www.asobostudio.com/) for HoloLens 所開發的第一個人犯罪 thriller，示範絕佳的 Diegetic UI。 在這個遊戲中，使用者會成為主要的字元，也就是嘗試解決謎題的偵探。 在使用者的實體室中解決這個謎試想的 pivotal 線索，通常是內嵌于虛構物件內，而不是本身的現有時間。 此 diegetic UI 比主體鎖定的 UI 更容易探索，因此 Asobo 小組巧妙地使用許多提示，包括虛擬字元的注視方向、音效、燈光和導軌 (例如，指向指示) 位置的箭號，以吸引使用者的注意力。
+[片段](https://www.microsoft.com/p/fragments/9nblggh5ggm8)是由[Asobo Studio](https://www.asobostudio.com/) for HoloLens 所開發的第一個人犯罪 thriller 示範絕佳的 Diegetic UI。 在這個遊戲中，使用者會成為主要的字元，也就是嘗試解決謎題的偵探。 在使用者的實體室中解決這個謎試想的 pivotal 線索，通常是內嵌于虛構物件內，而不是本身的現有時間。 此 diegetic UI 比主體鎖定的 UI 更容易探索，因此 Asobo 小組巧妙地使用許多提示，包括虛擬字元的注視方向、音效、燈光和導軌 (例如，指向指示) 位置的箭號，以吸引使用者的注意力。
 
 ![片段-Diegetic UI 範例](../develop/platform-capabilities-and-apis/images/fragments-game-example-1.jpg)<br>
 *片段-Diegetic UI 範例*
@@ -56,7 +56,7 @@ Skeuomorphism，模仿真實世界物件圖形的數位介面，在設計產業�
 
 ### <a name="job-simulator-an-example-of-skeuomorphic-vr-design"></a>作業模擬器： skeuomorphic VR 設計範例
 
-[作業](https://jobsimulatorgame.com/)模擬器是 [Owlchemy Labs](https://owlchemylabs.com/) 所開發的比較古怪遊戲，是 skeuomorphic VR 設計最受歡迎的範例之一。 在此遊戲中，播放程式會傳輸到未來，機器人會將人們取代為在下列四項作業中的其中一項作業中執行的工作：自動技師修理、Gourmet Chef、商店職員或 Office Worker。
+[作業](https://jobsimulatorgame.com/)模擬器是 [Owlchemy Labs](https://owlchemylabs.com/) 所開發的比較古怪遊戲，是 skeuomorphic VR 設計最受歡迎的範例之一。 在此遊戲中，播放程式會傳輸到未來，機器人會將人們取代為在下列四項作業中的其中一項作業中執行的工作：自動技師修理、Gourmet Chef、商店職員或 Office 背景工作。
 
 Skeuomorphism 的優點很清楚。 這項遊戲中熟悉的環境與物件可協助新的 VR 使用者感覺更舒適，並且在虛擬空間中呈現。 它也會將熟悉的知識和行為與物件及其對應的實體反應產生關聯，讓他們感覺像是控制。 例如，若要飲料咖啡，人們只需要走到咖啡機、按下按鈕、抓住杯把手，並將其朝向嘴，就像在現實世界中一樣。
 
@@ -101,13 +101,13 @@ Skeuomorphism 的優點很清楚。 這項遊戲中熟悉的環境與物件可�
 
 ## <a name="sketch-the-scene-and-test-in-the-headset"></a>在耳機中草擬場景並測試
 
-當我在2D 中工作時，大部分的內容都是直接草繪。 不過，在混合的現實空間中，並不夠。 我必須草擬整個場景，以充分想像使用者和虛擬物件之間的關聯性。 為了協助我的空間思考，我開始在 [電影院 4d](https://www.maxon.net/en/products/cinema-4d/overview/) 中草擬場景，有時會建立簡單的資產，以在 [Maya](https://www.autodesk.com/products/maya/overview/)中建立原型。 我從未在加入 HoloLens 團隊之前使用過這兩種程式，但仍是新手，但使用這些3D 程式絕對可説明我熟悉新術語，例如 [著色器](https://en.wikipedia.org/wiki/Shader) 和 [IK (反向運動) ](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/)。
+當我在2D 中工作時，大部分的內容都是直接草繪。 不過，在混合的現實空間中，並不夠。 我必須草擬整個場景，以充分想像使用者和虛擬物件之間的關聯性。 為了協助我的空間思考，我開始在 [電影院 4d](https://www.maxon.net/en/products/cinema-4d/overview/) 中草擬場景，有時會建立簡單的資產，以在 [Maya](https://www.autodesk.com/products/maya/overview/)中建立原型。 我從未在加入 HoloLens 團隊之前使用過這兩種程式，但仍新手，但是使用這些3d 程式絕對可説明我熟悉新術語，例如[著色器](https://en.wikipedia.org/wiki/Shader)和[IK (反向運動) ](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-07C3BA47-32BB-477B-B6C5-1090E5C9B81C-htm.html/)。
 
 **「無論如何緊密地在3D 中描繪場景，耳機的實際體驗幾乎都不會與草圖一樣。這就是為什麼要在目標耳機中測試場景是很重要的。」— Hae 金**
 
-針對 HoloLens 原型設計，我試著在 [混合現實教學](../develop/unity/tutorials.md) 課程中開始進行所有教學課程。 然後我開始使用 [HoloToolkit](https://github.com/Microsoft/HoloToolkit-Unity/) ，讓 Microsoft 提供給開發人員，以加速開發全息的應用程式。 當我遇到問題時，我將問題張貼到 [HoloLens 問題 & 回應論壇](https://forums.hololens.com/categories/questions-and-answers/)。
+針對 HoloLens 原型設計，我試著在[混合現實教學](../develop/unity/tutorials.md)課程中開始的所有教學課程。 然後我開始使用 [HoloToolkit](https://github.com/Microsoft/HoloToolkit-Unity/) ，讓 Microsoft 提供給開發人員，以加速開發全息的應用程式。 當我遇到問題時，我將問題張貼到[HoloLens 問題 & 回應論壇](https://forums.hololens.com/categories/questions-and-answers/)。
 
-在取得 HoloLens 原型設計的基本概念之後，我想要讓其他非半截成為原型。 我製作了一段影片教學課程，教您如何使用 HoloLens 開發簡單的 projectile。 我會簡短說明基本概念，因此即使您在 HoloLens 開發中有零經驗，也應該能夠跟著做。
+在取得 HoloLens 原型設計的基本概念之後，我想要讓其他非半截成為原型。 我製作了一段影片教學課程，教您如何使用 HoloLens 開發簡單的 projectile。 我會簡短說明基本概念，因此即使您 HoloLens 開發的經驗，也應該能夠跟著做。
 
 <br>
 
@@ -125,7 +125,7 @@ Skeuomorphism 的優點很清楚。 這項遊戲中熟悉的環境與物件可�
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Hae Jin Lee" width="60" height="60" src="../develop/platform-capabilities-and-apis/images/haejinlee.jpg"></td>
-<td style="border-style: none"><b>Hae 金先生</b><br>UX 設計工具 @Microsoft</td>
+<td style="border-style: none"><b>Hae 金先生</b><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>
 

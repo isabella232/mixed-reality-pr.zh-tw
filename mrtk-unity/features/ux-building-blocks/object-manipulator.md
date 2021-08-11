@@ -5,12 +5,12 @@ author: thalbern
 ms.author: bethalha
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、物件操作、
-ms.openlocfilehash: f9b644c1447d6776389e227bfe49c27f82a3cf31
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 4c43a35e164d3e66e662afc927d28f84463e1586250e9847a2d88c219ba27f23
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176648"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191604"
 ---
 # <a name="object-manipulator"></a>物件操作工具
 

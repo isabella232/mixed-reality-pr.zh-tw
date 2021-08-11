@@ -6,12 +6,12 @@ ms.author: dobrown
 ms.date: 01/21/2021
 ms.topic: article
 keywords: vr、lbe、以位置為基礎的娛樂、vr arcade、arcade、沉浸式、qr、qr 代碼、hololens2
-ms.openlocfilehash: 9d3a5d9696fbf875b2e6a890ed837efc055a9e6e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: f6d2f224b9f477cf78ba4f0a5b6ce362f629d06988e966d71ed03bc48eda41d9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394332"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193706"
 ---
 # <a name="qr-code-tracking"></a>QR 代碼追蹤
 
@@ -32,13 +32,13 @@ HoloLens 2 可以偵測頭戴式裝置周圍環境中的 QR 代碼，而在每�
 
 ## <a name="getting-the-qr-package"></a>取得 QR 套件
 
-您可以在 [這裡](https://nuget.org/Packages/Microsoft.MixedReality.QR)下載適用于 QR 代碼偵測的 NuGet 套件。
+您可以在[這裡](https://nuget.org/Packages/Microsoft.MixedReality.QR)下載適用于 QR 代碼偵測的 NuGet 套件。
 
 ## <a name="using-openxr"></a>使用 OpenXR
 
 使用 OpenXR 外掛程式時，請[ `SpatialGraphNodeId` 從 QR API](../platform-capabilities-and-apis/qr-code-tracking.md#qr-api-reference)抓取，並使用 `Microsoft.MixedReality.OpenXR.SpatialGraphNode` API 來尋找 qr 代碼。
 
-如需參考，我們[在 GitHub 上有 QR 追蹤範例專案](https://github.com/yl-msft/QRTracking)，並有更詳細的[ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs)使用說明。
+如需參考，我們有[GitHub 的 QR 追蹤範例專案](https://github.com/yl-msft/QRTracking)，並詳細說明[ `SpatialGraphNode` API](https://github.com/yl-msft/QRTracking/blob/main/SampleQRCodes/Assets/Scripts/SpatialGraphNodeTracker.cs)的使用方式說明。
 
 ## <a name="detecting-qr-codes"></a>偵測 QR 代碼
 
@@ -64,7 +64,7 @@ co_await QRCodeWatcher.RequestAccessAsync();
 
 ### <a name="detecting-qr-codes-in-unity"></a>在 Unity 中偵測 QR 代碼
 
-您可以在 Unity 中使用 QR 代碼偵測 API，而不需要匯入 MRTK，方法是使用 [nuget For Unity](https://github.com/GlitchEnzo/NuGetForUnity)安裝 nuget 套件。 如果您想要瞭解其運作方式，請下載 [範例 Unity 應用程式](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes)。 範例應用程式中的範例會顯示 QR 代碼的全像正方形，以及相關聯的資料，例如 GUID、實體大小、時間戳記和已解碼的資料。
+您可以在 unity 中使用 QR 代碼偵測 API，而不需要匯入 MRTK，方法是使用[適用于 unity 的 NuGet](https://github.com/GlitchEnzo/NuGetForUnity)安裝 NuGet 套件。 如果您想要瞭解其運作方式，請下載 [範例 Unity 應用程式](https://github.com/chgatla-microsoft/QRTracking/tree/master/SampleQRCodes)。 範例應用程式中的範例會顯示 QR 代碼的全像正方形，以及相關聯的資料，例如 GUID、實體大小、時間戳記和已解碼的資料。
 
 ### <a name="detecting-qr-codes-in-c"></a>在 c + + 中偵測 QR 代碼
 
@@ -229,7 +229,7 @@ Windows Mixed Reality 裝置會在驅動程式中偵測系統層級的 QR 代碼
 建議您將應用程式設定為略過超過特定時間戳記的 QR 代碼。 目前，API 不支援清除 QR 代碼歷程記錄。
 
 ### <a name="qr-code-placement-in-a-space"></a>將 QR 代碼放置在空間中
-如需在何處及如何放置 QR 代碼的建議，請參閱 [HoloLens 的環境考慮](/hololens/hololens-environment-considerations)。
+如需在何處及如何放置 QR 代碼的建議，請參閱[HoloLens 的環境考慮](/hololens/hololens-environment-considerations)。
 
 ## <a name="qr-api-reference"></a>QR API 參考
 

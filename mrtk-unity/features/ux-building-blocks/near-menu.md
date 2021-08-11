@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、近端功能表、
-ms.openlocfilehash: 15f53ad4e67a0b281750fd1df7f894c49f546531
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 75e7ee195a5838e88c42b7547e7b75205bfe1ee2fa1c8b1ba0a868b294883347
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175648"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190618"
 ---
 # <a name="near-menu"></a>近端功能表
 
@@ -80,7 +80,7 @@ ms.locfileid: "113175648"
 
 - [**按鈕**](button.md)
 - [**界限控制項**](bounds-control.md)
-- [**滑桿**](sliders.md)
+- [**Slider**](sliders.md)
 - [**方格物件集合**](object-collection.md)
 - [**操作處理常式**](manipulation-handler.md)
 - [**RadialView 規劃**](solvers/solver.md)

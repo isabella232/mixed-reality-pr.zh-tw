@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合的現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器、音訊混音器、SFX 回音
-ms.openlocfilehash: 6f41fe904c21591915e0ef13b61dc6bff04527fe
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 8adc92eb96cb8ebd2cc5fff14d522bcfe72733cc5748183dd6db59d753e12a3e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712679"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192966"
 ---
 # <a name="5-using-reverb-to-add-distance-to-spatial-audio"></a>5.使用殘響增加空間音訊的距離
 
@@ -26,7 +26,7 @@ ms.locfileid: "110712679"
 
 ## <a name="add-a-mixer-group-and-a-reverb-effect"></a>新增混音器群組和回音效果
 
-在 [Spatializing 按鈕互動音效教學](unity-spatial-audio-ch2.md)課程中，我們新增了混音器。 混音器依預設會包含一個名為 **Master** 的 **群組**。 因為我們只想要將回音效果套用至某些音效，所以讓我們為這些音效新增第二個群組。 若要加入群組，請以滑鼠右鍵按一下 **音訊混音** 器中的主要群組，選擇 [ **新增子群組** ]，然後提供適當的名稱來取得範例 _房間效果_：
+在 [Spatializing 按鈕互動音效教學](unity-spatial-audio-ch2.md)課程中，我們新增了混音器。 混音器依預設會包含一個名為 **Master** 的 **群組**。 因為我們只想要將回音效果套用至某些音效，所以讓我們為這些音效新增第二個群組。 若要加入群組，請以滑鼠右鍵按一下 **音訊 Mixer** 中的主要群組，選擇 [**新增子群組**]，然後提供適當的名稱來取得範例 _房間效果_：
 
 ![新增子群組](images/spatial-audio/spatial-audio-05-section1-step1-1.PNG)
 

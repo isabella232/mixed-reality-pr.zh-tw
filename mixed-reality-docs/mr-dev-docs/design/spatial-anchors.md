@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、世界規模、世界、縮放、位置、方向、錨點、空間錨點、世界鎖定、全球鎖定、持續性、共用、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: b11dc8cada8b67a21795dd9838579fc5dd735e6d
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: dc9b57d51f4202499d82abb8d210261d2ee36dc60bb90ed039a7554f82af79a0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193512"
 ---
 # <a name="spatial-anchors"></a>空間錨點
 
@@ -19,14 +19,14 @@ ms.locfileid: "98583261"
 
 您也可以跨應用程式會話和跨裝置來保存和共用空間錨點：
 * 藉由將本機空間錨點儲存到磁片，並于稍後再將其載入，您的應用程式可以在單一 HoloLens 上的多個應用程式會話之間計算相同的位置。
-* 藉由使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> 來建立雲端錨點，您的應用程式可以跨多個 HoloLens、IOS 和 Android 裝置共用空間錨點。 藉由讓每個裝置使用相同的空間錨點轉譯全像影像，使用者會看到在真實世界中的相同位置出現全像投影。 這可提供即時共用體驗。
-* 您也可以使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，在 HoloLens、IOS 和 Android 裝置上進行非同步全像保存。 藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
+* 藉由使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>來建立雲端錨點，您的應用程式可以跨多個 HoloLens、iOS 和 Android 裝置共用空間錨點。 藉由讓每個裝置使用相同的空間錨點轉譯全像影像，使用者會看到在真實世界中的相同位置出現全像投影。 這可提供即時共用體驗。
+* 您也可以在 HoloLens、iOS 和 Android 裝置上，使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>來取得非同步全像持續性。 藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
 
-您通常可以使用 [參考的階段框架](coordinate-systems.md#stage-frame-of-reference) （而不是空間錨點），針對行動網卡桌上型耳機提供固定規模或房間規模的體驗，這會提供您單一座標系統來轉譯所有內容。 但是，如果您的應用程式可讓使用者在 HoloLens 中穿梭超過5個計量，則可能在整個大樓的整個樓層中運作，您將需要空間錨點，以保持內容的穩定。
+您通常可以使用 [參考的階段框架](coordinate-systems.md#stage-frame-of-reference) （而不是空間錨點），針對行動網卡桌上型耳機提供固定規模或房間規模的體驗，這會提供您單一座標系統來轉譯所有內容。 但是，如果您的應用程式可讓使用者在 HoloLens 中穿梭超過5個量，可能會在整個大樓的整個樓層進行作業，您將需要空間錨點來保持內容的穩定。
 
 雖然空間錨點對於在真實世界中應保持固定的全像投影非常有用，但是一旦將錨點放至定位，就無法移動它。 錨點有一些替代方式，更適合用來與使用者一起標記的動態全像投影。 最好使用固定的參考框架來定位動態全像， (Unity 的全局座標) 或附加的參考框架。
 
-## <a name="best-practices"></a>最佳作法
+## <a name="best-practices"></a>最佳做法
 
 這些空間錨點指南將協助您轉譯穩定、且能準確追蹤現實世界的全像投影。
 
@@ -34,7 +34,7 @@ ms.locfileid: "98583261"
 
 一般而言，使用者是明確放置空間錨點的使用者。
 
-例如，在 HoloLens 上，應用程式可以將使用者的 [注視](gaze-and-commit.md) 光線與 [空間對應](spatial-mapping.md) 網格相交，讓使用者決定要放置全像影像的位置。 當使用者按下該影像時，請在交集點建立空間錨點，然後將全像位置放在錨點座標系統的原點。
+例如，在 HoloLens 上，應用程式可以將使用者的[注視](gaze-and-commit.md)光線與[空間對應](spatial-mapping.md)網格相交，讓使用者決定要放置全像影像的位置。 當使用者按下該影像時，請在交集點建立空間錨點，然後將全像位置放在錨點座標系統的原點。
 
 本機空間錨點很容易就能建立。 如果有多個錨點可以共用其基礎感應器資料，系統就會合並內部資料。 建議您為使用者明確放置的每個全息圖建立新的本機空間錨點，但以下所述的案例除外，例如固定的全像投影群組。
 
@@ -52,7 +52,7 @@ ms.locfileid: "98583261"
 
 ### <a name="render-highly-dynamic-holograms-using-the-stationary-frame-of-reference-instead-of-a-local-spatial-anchor"></a>使用靜止的參考架構而不是本機空間錨點來轉譯高動態全像投影
 
-如果您有高度動態的全像點，例如沿著使用者附近的房間或浮動 UI 的字元，則最好略過本機空間錨點，並直接在 [參考的靜止框架](coordinate-systems.md#stationary-frame-of-reference)所提供的座標系統中轉譯這些全像投影。 在 Unity 中，您可以直接在全局座標中放入全像無 WorldAnchor，以達到這個目的。 當使用者離全像全像全像全像一樣，在固定的參考框架中的全息圖可能會發生漂移。 但這對動態的全像是較不明顯的現象：可能是因為全像全像全像移動的全像移動一樣，也可能是因為動態的移動會讓它接近最小化漂移的使用者。
+如果您有高度動態的全像點，例如沿著使用者附近的房間或浮動 UI 的字元，則最好略過本機空間錨點，並直接在 [參考的靜止框架](coordinate-systems.md#stationary-frame-of-reference)所提供的座標系統中轉譯這些全像投影。 在 Unity 中，您可以直接在全局座標中放入全像無 WorldAnchor，以達到這個目的。 在固定的參考框架中全像投影可能會在使用者離全像全像全像投影時遇到漂移。 但這對動態的全像是較不明顯的現象：可能是因為全像全像全像移動的全像移動一樣，也可能是因為動態的移動會讓它接近最小化漂移的使用者。
 
 動態全像投影的一個有趣的例子是一個物件從某個錨定座標系統移動至另一個座標系統的動畫。 例如，您可能會有兩個 castles 的10個計量，每個都在自己的空間錨點，而一個 castle 引發另一個 castle 的 cannonball。 當 cannonball 引發時，您可以將它呈現在固定的參考框架中的適當位置，以與第一個 castle 的錨定座標系統中的 cannon 一致。 然後它可以在靜止的參考架構中追蹤砲彈在空中飛行 10 公尺的軌跡。 當 cannonball 到達其他 castle 時，您可以將它移到第二個 castle 的錨定座標系統，以允許使用該 castle 固定主體的物理計算。
 

@@ -5,19 +5,19 @@ author: rwinj
 ms.author: marcghal
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloLens、HoloStudio、Windows Mixed Reality
-ms.openlocfilehash: 55fc9cea93582612abb5e0f8955deb5629da3093
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+keywords: HoloLens、HoloStudio Windows Mixed Reality
+ms.openlocfilehash: 1b384a10d3fe53cf7e69c2e8437904040322dc213d9473d9ae9abf272c08ec5e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681213"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195862"
 ---
 # <a name="case-study---3-holostudio-ui-and-interaction-design-learnings"></a>案例研究-3 HoloStudio UI 和互動設計學習
 
-[HoloStudio](https://www.youtube.com/watch?v=BRIJG0x_We8) 是適用于 HoloLens 的第一個 Microsoft 應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過許多使用者測試、原型設計和試用和錯誤來完成這項工作。
+[HoloStudio](https://www.youtube.com/watch?v=BRIJG0x_We8)是第一個 HoloLens 的 Microsoft 應用程式。 因此，我們必須建立新的 3D UI 和互動設計最佳作法。 我們透過許多使用者測試、原型設計和試用和錯誤來完成這項工作。
 
-我們知道，並非每個人都具有可進行這類研究的資源，因此我們的 Marcus Ghaly 會分享我們在開發 HoloStudio 時所學到的三件事。
+我們知道，並非每個人都具有可進行這類研究的資源，因此我們在開發 HoloStudio 時，分享我們在 HoloLens 應用程式的 UI 和互動設計方面所學到的三件事。
 
 ## <a name="watch-the-video"></a>觀賞影片
 
@@ -25,9 +25,9 @@ ms.locfileid: "91681213"
 
 ## <a name="problem-1-people-didnt-want-to-move-around-their-creations"></a>問題 #1：人們不希望四處移動
 
-我們最初將 HoloStudio 中的工作臺設計為矩形，就像您在真實世界中所找到的一樣。 問題在於，人們有經驗的存留期，讓他們在離開辦公桌或在電腦前方工作時仍能保持不變，因此他們不會四處移動，也不會從所有的邊緣探索其3D 建立。
+我們原先將 HoloStudio 中的工作臺設計成一個矩形，就像您在現實世界中所找到的一樣。 問題在於，人們有經驗的存留期，讓他們在離開辦公桌或在電腦前方工作時仍能保持不變，因此他們不會四處移動，也不會從所有的邊緣探索其3D 建立。
 
-![HoloStudio 中工作臺的矩形設計 dissuaded 使用者四處移動並查看其在所有邊的建立。](images/rectangular-workbench-500px.jpg)
+![HoloStudio 中工作臺的矩形設計，dissuaded 使用者無法四處移動並查看其在所有邊的建立。](images/rectangular-workbench-500px.jpg)
 
 我們的見解是讓工作臺輪回，因此沒有任何「正面」或明確的地方。 經過測試後，突然有人開始不斷地四處探索自己的作品。
 
@@ -35,7 +35,7 @@ ms.locfileid: "91681213"
 
 **我們學到了什麼**
 
-請一律考慮使用者的熟悉功能。 利用其實體空間是 HoloLens 的絕佳功能，而您無法使用其他裝置來執行這項功能。
+請一律考慮使用者的熟悉功能。 利用其實體空間是 HoloLens 的絕佳功能，以及其他裝置無法執行的動作。
 
 ## <a name="problem-2-modal-dialogs-are-sometimes-out-of-the-holographic-frame"></a>問題 #2：強制回應對話方塊有時候不在全像攝影框架中
 
@@ -53,7 +53,7 @@ ms.locfileid: "91681213"
 
 有時候，使用者想要與一張全像和其相關聯的 UI 控制項進行互動，但因為有其他的全息圖，所以會被封鎖而無法查看。 當我們開發 HoloStudio 時，我們使用了試用版和錯誤來解決這個問題。
 
-![如果有另一個全息圖與使用者戴上 HoloLens，則會封鎖與全像影像相關聯的 UI 控制項。](images/ui-blocked-500px.jpg)
+![如果影像之間有另一個全息圖，而使用者的 HoloLens，則會封鎖與全息圖相關聯的 UI 控制項。](images/ui-blocked-500px.jpg)
 
 我們嘗試將 UI 控制項移到更接近使用者的位置，使其無法被封鎖，但發現它不適合用戶查看靠近您的控制項，同時查看離離的全像位置。 但是，如果我們將最接近的全像全像投影的控制項移至使用者，他們就認為它是從它所影響的全像是卸離的。
 

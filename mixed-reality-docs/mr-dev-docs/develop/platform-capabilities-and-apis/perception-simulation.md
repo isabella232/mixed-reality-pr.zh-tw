@@ -6,39 +6,39 @@ ms.author: pbarnett
 ms.date: 05/12/2020
 ms.topic: article
 keywords: HoloLens、模擬、測試
-ms.openlocfilehash: 64028c3a1ad58cecfebc93aee325b73c3a6a649a
-ms.sourcegitcommit: c41372e0c6ca265f599bff309390982642d628b8
+ms.openlocfilehash: 8d2999868bfdcf67c1174209566e67fe937005946ef82dd50337d9098c1e1971
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/15/2020
-ms.locfileid: "97530399"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193768"
 ---
 # <a name="perception-simulation"></a>感知模擬
 
 您是否要為您的應用程式建立自動化測試？ 您是否想要讓您的測試超越元件層級的單元測試，並讓您的應用程式端對端實際執行？ 認知模擬就是您要尋找的內容。 認知模擬程式庫會將人類和世界的輸入資料傳送到您的應用程式，以便讓您的測試自動化。 例如，您可以模擬人們的輸入，查看特定、可重複的位置，然後使用手勢或移動控制器。
 
-認知模擬可將這類模擬輸入傳送給實體 HoloLens、HoloLens 模擬器 (第一代) 、HoloLens 2 模擬器或已安裝混合實境入口的電腦。 認知模擬會略過混合現實裝置上的即時感應器，並將模擬的輸入傳送給裝置上執行的應用程式。 應用程式會透過其一律使用的相同 Api 來接收這些輸入事件，而且無法分辨與實際感應器的執行與認知模擬之間的差異。 認知模擬是 HoloLens 模擬器用來將模擬的輸入傳送到 HoloLens 虛擬機器的相同技術。
+認知模擬可將如下所示的模擬輸入傳送給實體 HoloLens、HoloLens 模擬器 (第一代) 、HoloLens 2 Emulator 或已安裝混合實境入口的電腦。 認知模擬會略過混合現實裝置上的即時感應器，並將模擬的輸入傳送給裝置上執行的應用程式。 應用程式會透過其一律使用的相同 Api 來接收這些輸入事件，而且無法分辨與實際感應器的執行與認知模擬之間的差異。 認知模擬是 HoloLens 模擬器用來將模擬的輸入傳送至 HoloLens 虛擬機器的相同技術。
 
 若要開始在程式碼中使用模擬，請先建立 IPerceptionSimulationManager 物件。 您可以從該物件發出命令，以控制模擬「人」的屬性，包括頭部位置、手形位置和手勢。 您也可以啟用和操作移動控制器。
 
-## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>設定 Visual Studio 專案以進行感知模擬
+## <a name="setting-up-a-visual-studio-project-for-perception-simulation"></a>設定感知模擬的 Visual Studio Project
 1. 在您的開發電腦上[安裝 HoloLens 模擬器](../install-the-tools.md)。 模擬器包含您用來感知模擬的程式庫。
-2. 建立新的 Visual Studio c # 桌面專案 (主控台專案的效果很好，可以開始) 。
-3. 將下列二進位檔新增至您的專案，做為參考 (專案 >的 [新增 >參考 ...] ) 。您可以在% ProgramFiles (x86) % \ Microsoft XDE \\ (版本) 中找到它們，例如 (模擬器的 **% ProgramFiles) x86 HoloLens 2% \ microsoft XDE \\ 10.0.18362.0** 。   (注意：雖然二進位檔是 HoloLens 2 模擬器的一部分，但它們也適用于桌面上的 Windows Mixed Reality。 ) a。 用於感知模擬的 PerceptionSimulationManager.Interop.dll 受控 c # 包裝函式。
-    b. PerceptionSimulationRest.dll 程式庫，可將 web 通訊端通道設定為 HoloLens 或模擬器。
+2. 建立新的 Visual Studio c # 桌面專案 (主控台 Project 非常適合開始) 。
+3. 將下列二進位檔新增至您的專案，做為參考 (Project >的 [新增 >參考 ...] ) 。您可以在% ProgramFiles (x86) % \ microsoft XDE \\ (版本) 中找到它們，例如 () 的 **% ProgramFiles HoloLens 2 x86 Emulator% \ microsoft XDE \\ 10.0.18362.0** 。   (注意：雖然二進位檔是 HoloLens 2 Emulator 的一部分，但它們也適用于桌面上的 Windows Mixed Reality。 ) a。 用於感知模擬的 PerceptionSimulationManager.Interop.dll 受控 c # 包裝函式。
+    b. PerceptionSimulationRest.dll 程式庫，用來設定 HoloLens 或模擬器的 web 通訊端通道。
     c. SimulationStream.Interop.dll-用於模擬的共用類型。
-4. 將「執行二進位 PerceptionSimulationManager.dll」新增至您的專案 a。 首先，將它新增為專案的二進位檔 (專案 >加入 >現有專案 ... ) 。將它儲存為連結，讓它不會將它複製到您的專案源資料夾。 ![將 PerceptionSimulationManager.dll 新增至專案做為連結 ](images/saveaslink.png) b。 然後，請確定它會複製到組建上的輸出檔案夾中。 這是在二進位檔的屬性工作表中。 ![標示 PerceptionSimulationManager.dll 複製到輸出目錄](images/copyalways.png)
-5. 將使用中的方案平臺設定為 x64。   (使用 Configuration Manager 來建立 x64 的平臺專案（如果尚不存在的話）。 ) 
+4. 將「執行二進位 PerceptionSimulationManager.dll」新增至您的專案 a。 首先，將它新增為專案的二進位檔 (Project >加入 >現有專案 ... ) 。將它儲存為連結，讓它不會將它複製到您的專案源資料夾。 ![將 PerceptionSimulationManager.dll 新增至專案做為連結 ](images/saveaslink.png) b。 然後，請確定它會複製到組建上的輸出檔案夾中。 這是在二進位檔的屬性工作表中。 ![標示 PerceptionSimulationManager.dll 複製到輸出目錄](images/copyalways.png)
+5. 將使用中的方案平臺設定為 x64。   (使用設定管理員來建立 x64 的平臺專案（如果尚不存在的話）。 ) 
 
 ## <a name="creating-an-iperceptionsimulation-manager-object"></a>建立 IPerceptionSimulation 管理員物件
 
 若要控制模擬，您要對從 IPerceptionSimulationManager 物件取出的物件發出更新。 第一個步驟是取得該物件，並將它連接到您的目標裝置或模擬器。 您可以按一下[工具列](using-the-hololens-emulator.md)中的裝置入口網站按鈕，取得模擬器的 IP 位址
 
-![開啟裝置入口網站圖示 ](images/emulator-deviceportal.png) **開啟裝置入口網站**：在模擬器中開啟 HoloLens OS 的 Windows 裝置入口網站。  針對 Windows Mixed Reality，可以在 [設定 & 安全性] 底下的 [設定] 應用程式中，然後在 [啟用裝置入口網站] 下的 [使用下列方式連接：] 區段中，取得「適用于開發人員」。  請務必記下 IP 位址和埠。
+![開啟裝置入口網站圖示 ](images/emulator-deviceportal.png) **開啟裝置入口網站**：在模擬器中開啟 HoloLens OS 的 Windows 裝置入口網站。  針對 Windows Mixed Reality，可在設定應用程式中，于 [更新 & 安全性] 下抓取，然後在 [啟用裝置入口網站] 下的 [連線使用：] 區段中，取得「適用于開發人員」。  請務必記下 IP 位址和埠。
 
-首先，您會呼叫 RestSimulationStreamSink 來取得 RestSimulationStreamSink 物件。 這是您將透過 HTTP 連接控制的目標裝置或模擬器。 您的命令將會傳遞至裝置或模擬器上執行的 [Windows 裝置入口網站](using-the-windows-device-portal.md) ，並由其處理。 建立物件所需的四個參數如下：
-* Uri uri-目標裝置的 IP 位址 (例如 " https://123.123.123.123 " 或 " https://123.123.123.123:50080 " ) 
-* NetworkCredential 認證-用來連接到目標裝置或模擬器上 [Windows 裝置入口網站](using-the-windows-device-portal.md) 的使用者名稱/密碼。 如果您是透過本機位址連接到模擬器 (例如，168。*.*.* ) 在同一部電腦上，將會接受任何認證。
+首先，您會呼叫 RestSimulationStreamSink 來取得 RestSimulationStreamSink 物件。 這是您將透過 HTTP 連接控制的目標裝置或模擬器。 您的命令將會傳遞至裝置或模擬器上執行的[Windows 裝置入口網站](using-the-windows-device-portal.md)，並由其處理。 建立物件所需的四個參數如下：
+* Uri uri-目標裝置的 IP 位址 (例如 " https://123.123.123.123 &quot; 或 &quot; https://123.123.123.123:50080 " ) 
+* NetworkCredential 認證-用來連接到目標裝置或模擬器上[Windows 裝置入口網站](using-the-windows-device-portal.md)的使用者名稱/密碼。 如果您是透過本機位址連接到模擬器 (例如，168。*.*.* ) 在同一部電腦上，將會接受任何認證。
 * bool 標準-True 表示正常優先順序，false 表示低優先順序。 您通常會想要在測試案例中將此設為 *true* ，以允許您的測試取得控制權。  模擬器與 Windows Mixed Reality 模擬會使用低優先順序的連接。  如果您的測試也會使用低優先順序的連接，則最近建立的連接將會受到控制。
 * CancellationToken token-Token，以取消非同步作業。
 
@@ -219,7 +219,7 @@ namespace ConsoleApplication1
 ## <a name="note-on-6-dof-controllers"></a>6 DOF 控制器上的附注
 
 在模擬的 6 DOF 控制器上呼叫方法上的任何屬性之前，您必須先啟用控制器。  若未這麼做，將會導致例外狀況。  從 Windows 10 2019 年5月更新開始，只要將 ISimulatedSixDofController 物件的 Status 屬性設為 SimulatedSixDofControllerStatus，就可以安裝和啟用模擬的 DOF 控制器。
-在 Windows 10 2018 年10月更新及更早的版本中，您必須先呼叫 PerceptionSimulationDevice 工具（位於 \Windows\System32 資料夾中），以個別安裝模擬的 6 DOF 控制器。  這項工具的使用方式如下：
+在 Windows 10 2018 年10月更新及更早的版本中，您必須先呼叫 PerceptionSimulationDevice 工具（位於 \ Windows \System32 資料夾）來個別安裝模擬的 6 DOF 控制器。  這項工具的使用方式如下：
 
 
 ```
@@ -250,7 +250,7 @@ namespace ConsoleApplication1
 
 
 
-## <a name="api-reference"></a>應用程式開發介面參考
+## <a name="api-reference"></a>API 參照
 
 ### <a name="microsoftperceptionsimulationsimulateddevicetype"></a>PerceptionSimulation. SimulatedDeviceType
 
@@ -1396,7 +1396,7 @@ public interface ISimulationStreamSinkFactory
 }
 ```
 
-**PerceptionSimulation. ISimulationStreamSinkFactory. CreateSimulationStreamSink ( # B1**
+**PerceptionSimulation. ISimulationStreamSinkFactory. CreateSimulationStreamSink ()**
 
 建立 ISimulationStreamSink 的單一實例。
 

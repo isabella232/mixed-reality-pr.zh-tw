@@ -7,12 +7,12 @@ ms.date: 04/02/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 混合實境, 注視, 注視定向, 互動, 設計, 手部接近, HoloLens, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, MRTK, 混合實境工具組, 按鈕, 碰撞器, 週框方塊, 2D, 本能手勢
-ms.openlocfilehash: 7a689f887bfd358b0d6e0826d41ef409bf887042
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 30b7a3c343ff044595beb6dfe2b62b1c70ff5a2ff3f6dd51563018ceee2fb995
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600467"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192583"
 ---
 # <a name="direct-manipulation-with-hands"></a>手部直接操作
 
@@ -53,11 +53,11 @@ ms.locfileid: "110600467"
 
 ## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>基本的手追蹤和 instinctual 互動示範
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全像投影標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="collidable-fingertip"></a>可碰撞的指尖
 

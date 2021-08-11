@@ -6,12 +6,12 @@ ms.author: cmeekhof
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 眼睛、頭部眼、前端追蹤、眼睛追蹤、directx、輸入、全像投影、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 8b3c63ac7a7edba0ce3173e024139e29d49757ab
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 0e32c9f24b56d938b5c6f9cbdf28e9959b190abc22591a26d1dfcfa0af2f5f4d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810180"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193202"
 ---
 # <a name="head-gaze-and-eye-gaze-input-in-directx"></a>DirectX 中的列印頭和眼睛輸入
 
@@ -107,7 +107,7 @@ requestAccessThread.detach();
 ```
 啟動卸離的執行緒只是一個處理非同步呼叫的選項。 您也可以使用 c + + 所支援的新 [co_await](/windows/uwp/cpp-and-winrt-apis/concurrency) 功能/winrt
 以下是要求使用者權限的另一個範例：
--   EyesPose：： IsSupported ( # A1 可讓應用程式只有在有眼睛追蹤器時，才會觸發許可權對話方塊。
+-   EyesPose：： IsSupported () 只有在有眼睛追蹤器時，才允許應用程式觸發許可權對話方塊。
 -   GazeInputAccessStatus m_gazeInputAccessStatus;這是為了防止再次彈出許可權提示。
 
 ```cpp
@@ -183,13 +183,13 @@ if (pointerPose)
 資料無法使用的原因有很多種：
 * 未進行校正的使用者
 * 使用者已拒絕應用程式存取其眼睛追蹤資料
-* 暫時干擾差異性，例如 HoloLens 面板上的塗抹，或遮蔽使用者眼睛的頭髮。 
+* 暫時干擾差異性，例如在 HoloLens 面板上塗抹，或遮蔽使用者的眼睛。 
 
 雖然本檔中已提及部分 Api，但我們將在下列內容中提供一份摘要，說明如何偵測如何以快速參考的方式來使用眼睛追蹤： 
 
-* 檢查系統是否支援眼睛追蹤。 呼叫下列 *方法*： [EyesPose. IsSupported ( # B1](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
+* 檢查系統是否支援眼睛追蹤。 呼叫下列 *方法*： [Windows。EyesPose. IsSupported ()](/uwp/api/windows.perception.people.eyespose.issupported#Windows_Perception_People_EyesPose_IsSupported)
 
-* 檢查使用者是否已校正。 呼叫下列 *屬性*： [EyesPose. IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
+* 檢查使用者是否已校正。 呼叫下列 *屬性*： [Windows。EyesPose. IsCalibrationValid](/uwp/api/windows.perception.people.eyespose.iscalibrationvalid#Windows_Perception_People_EyesPose_IsCalibrationValid)   
 
 * 確認使用者已為您的應用程式提供使用其眼睛追蹤資料的許可權：取出目前的 _' GazeInputAccessStatus '_。 有關如何進行這項操作的範例，請參閱 [要求存取注視輸入](/windows/mixed-reality/gaze-in-directX#requesting-access-to-gaze-input)的說明。 
 
@@ -213,7 +213,7 @@ if (pointerPose)
 * 使用者先前退出宣告校正流程
 * 上次使用者使用裝置時，校正程式未成功
 
-開發人員應務必為可能無法使用眼睛追蹤資料的使用者提供適當的支援。 深入瞭解 [HoloLens 2 上的眼睛追蹤](../../design/eye-tracking.md)之回溯解決方案的考慮。
+開發人員應務必為可能無法使用眼睛追蹤資料的使用者提供適當的支援。 深入瞭解[HoloLens 2 上的眼睛追蹤](../../design/eye-tracking.md)之回溯解決方案的考慮。
 
 <br>
 

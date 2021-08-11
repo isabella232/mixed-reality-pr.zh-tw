@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 773e7b647db3498d88e1cf10c05429d518b3ed3f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 5e9bf98c9584e780bdeb79d7ca172f67a62a7601c289612a40082ecaa90e9448
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693455"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196100"
 ---
 # <a name="what-are-the-mixedrealityserviceregistry-and-imixedrealityserviceregistrar"></a>MixedRealityServiceRegistry 和 IMixedRealityServiceRegistrar 有哪些？
 

@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/26/2021
 ms.topic: article
 keywords: Unity，混合的現實，開發，使用者入門，新專案，Windows Mixed Reality，UWP，XR，效能，舊版，mrtk
-ms.openlocfilehash: b5faa48ec913c5095b12361318729b6f14276f30
-ms.sourcegitcommit: 719682f70a75f732b573442fae8987be1acaaf19
+ms.openlocfilehash: 534df0b9c4efbe62b00af6cccb74f4203c1557e9479b2101320bab3bbdb5e565
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/02/2021
-ms.locfileid: "110743498"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192048"
 ---
 # <a name="using-legacy-built-in-xr-support"></a>使用舊版內建 XR 支援
 
@@ -28,11 +28,11 @@ ms.locfileid: "110743498"
 
 如果您的目標是 Desktop VR，建議您在新的 Unity 專案上使用預設選取的電腦獨立平臺：
 
-![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示 [電腦]、[Mac & 獨立平臺](images/wmr-config-img-3.png)
+![在 unity 編輯器中開啟的 [組建設定] 視窗螢幕擷取畫面，其中已醒目提示 [電腦]、[Mac & 獨立平臺](images/wmr-config-img-3.png)
 
 如果您的目標是 HoloLens 2，則必須切換至通用 Windows 平臺：
 
-1.  選取 [檔案 **> 組建設定 ...** ]
+1.  選取檔案 **> 組建設定**.。。
 2.  選取 [平臺] 清單中的 [**通用 Windows 平臺**]，然後選取 [**切換平臺**]
 3.  將 **架構** 設定為 **ARM 64**
 4.  將 **目標裝置** 設定為 **HoloLens**
@@ -40,17 +40,17 @@ ms.locfileid: "110743498"
 6.  將 **UWP SDK** 設定為 **最新安裝**
 7.  將 **組建** 設定設為 **發行** ，因為 Debug 有已知的效能問題
 
-![在 unity 編輯器中開啟 [組建設定] 視窗的螢幕擷取畫面，其中已醒目提示通用 Windows 平臺](images/wmr-config-img-4.png)
+![在 unity 編輯器中開啟組建設定視窗的螢幕擷取畫面，其中已醒目提示通用 Windows 平臺](images/wmr-config-img-4.png)
 
 設定您的平臺之後，您需要讓 Unity 知道在匯出時建立一個 [沉浸式視圖](../../design/app-views.md) ，而不是2d 視圖。
 
 > [!CAUTION]
 > Unity 2019 中的舊版 XR 已被取代，並已在 Unity 2020 中移除。
 
-1. 從組建設定開啟 **播放機設定** ... **視窗** 並展開 [ **XR 設定** ] 群組
-2. 在 [ **XR 設定** ] 區段中，選取 [ **支援的虛擬實境** 新增虛擬實境裝置] 清單
+1. 從組建設定開啟 **Player 設定**... **視窗** 並展開 **XR 設定** 群組
+2. 在 [ **XR 設定**] 區段中，選取 [**支援的虛擬實境**] 以新增虛擬實境裝置清單
 3. 將 **深度格式** 設定為 **16 位深度** ，並啟用 **深度緩衝區共用**
 4. 將 **身歷聲轉譯模式** 設定為 **單一傳遞實例**
 5. 如果您想要使用全像攝影的遠端處理，請選取 [不 **支援的 WSA** 全像 
 
-![醒目提示 [播放程式設定] 區段的 [在 unity 編輯器中開啟專案設定] 視窗的螢幕擷取畫面](images/wmr-config-img-9.png)
+![醒目提示 [播放程式設定] 區段的 unity 編輯器中開啟 Project 設定視窗的螢幕擷取畫面](images/wmr-config-img-9.png)

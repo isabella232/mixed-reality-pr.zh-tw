@@ -5,17 +5,17 @@ author: mikeriches
 ms.author: mriches
 ms.date: 03/21/2018
 ms.topic: article
-keywords: HoloLens，同步處理，空間錨點，傳輸，多人遊戲，視圖，案例，逐步解說，範例程式碼，傳輸，本機錨點傳輸，錨點匯出，錨點匯入
-ms.openlocfilehash: 5d539338a25657441ee07acac38a4edd6cd86e58
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens、同步處理、空間錨點、傳輸、多人遊戲、觀看、案例、逐步解說、範例程式碼、傳輸、本機錨點傳輸、錨點匯出、錨點匯入
+ms.openlocfilehash: df00e323267aa398ba45cfd7a7234c04ce8eca85f2ff3be9b6c9ddee67264085
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582806"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195656"
 ---
 # <a name="local-anchor-transfers-in-directx"></a>DirectX 中的本機錨點傳輸
 
-在您無法使用 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點轉移可讓一部 hololens 裝置匯出錨點，以供第二個 hololens 裝置匯入。
+在您無法使用<a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>的情況下，本機錨點傳輸可讓一個 HoloLens 裝置匯出錨點，以供第二個 HoloLens 裝置匯入。
 
 >[!NOTE]
 >本機錨點傳輸可提供比 <a href="/azure/spatial-anchors" target="_blank">Azure 空間錨點</a>更不健全的錨定回收，而且此方法不支援 IOS 和 Android 裝置。
@@ -25,7 +25,7 @@ ms.locfileid: "98582806"
 
 ## <a name="transferring-spatial-anchors"></a>傳輸空間錨點
 
-您可以使用 [SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)，在 Windows Mixed Reality 裝置之間傳輸空間錨點。 此 API 可讓您將錨點與所有所需的支援感應器資料組合在一起，以找出世界中確切的位置，然後在另一個裝置上匯入該組合。 當第二部裝置上的應用程式匯入該錨點之後，每個應用程式都可以使用該共用空間錨點的座標系統轉譯影像，然後在真實世界中出現在相同的位置。
+您可以使用[SpatialAnchorTransferManager](/uwp/api/Windows.Perception.Spatial.SpatialAnchorTransferManager)，在 Windows Mixed Reality 裝置之間傳輸空間錨點。 此 API 可讓您將錨點與所有所需的支援感應器資料組合在一起，以找出世界中確切的位置，然後在另一個裝置上匯入該組合。 當第二部裝置上的應用程式匯入該錨點之後，每個應用程式都可以使用該共用空間錨點的座標系統轉譯影像，然後在真實世界中出現在相同的位置。
 
 請注意，空間錨點無法在不同的裝置類型之間傳輸，例如，可能無法使用沉浸式耳機來定位 HoloLens 空間錨點。  轉移的錨點也與 iOS 或 Android 裝置不相容。
 
@@ -288,7 +288,7 @@ Blob 會在 SpatialAnchor 的鄰近區域中包含環境的標記法，以便在
 
 ![使用單一 TryExportAnchorsAsync 呼叫匯出的多個錨點](images/multipleanchors.png) ![針對每個錨點使用個別 TryExportAnchorsAsync 呼叫匯出多個錨點](images/separateanchors.png)
 
-## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>範例：使用 Windows：：網路：： StreamSocket 傳送錨點資料
+## <a name="example-send-anchor-data-using-a-windowsnetworkingstreamsocket"></a>範例：使用 Windows：：網路：： StreamSocket 來傳送錨點資料
 
 在這裡，我們會提供一個範例，說明如何藉由在 TCP 網路上傳送來使用匯出的錨定資料。 這是來自 HolographicSpatialAnchorTransferSample。
 
@@ -460,7 +460,7 @@ void SampleAnchorTcpServer::HandleException(Exception^ exception)
 }
 ```
 
-### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>使用具有 TCP 的 Windows：：網路：： StreamSocket 來接收匯出的錨點資料
+### <a name="use-a-windowsnetworkingstreamsocket-with-tcp-to-receive-exported-anchor-data"></a>使用 Windows：：網路：： StreamSocket 搭配 TCP 來接收匯出的錨點資料
 
 首先，我們必須連接到伺服器。 此程式碼範例示範如何建立和設定 StreamSocket，並建立可讓您使用通訊端連接取得網路資料的 DataReader。
 
@@ -672,9 +672,9 @@ void SampleAnchorTcpClient::HandleException(Exception^ exception)
 }
 ```
 
-這樣就完成了！ 現在，您應該有足夠的資訊來嘗試找出網路上收到的錨點。 同樣地，請注意，用戶端必須要有足夠的視覺追蹤資料，才能成功地找出錨點;如果無法立即運作，請試著稍候一段時間。 如果仍然無法運作，請讓伺服器傳送更多錨點，並使用網路通訊來同意用戶端所適用的訊息。 您可以下載 HolographicSpatialAnchorTransferSample、設定用戶端和伺服器 Ip，以及將其部署至用戶端和伺服器 HoloLens 裝置，來嘗試此程式。
+大功告成！ 現在，您應該有足夠的資訊來嘗試找出網路上收到的錨點。 同樣地，請注意，用戶端必須要有足夠的視覺追蹤資料，才能成功地找出錨點;如果無法立即運作，請試著稍候一段時間。 如果仍然無法運作，請讓伺服器傳送更多錨點，並使用網路通訊來同意用戶端所適用的訊息。 您可以下載 HolographicSpatialAnchorTransferSample、設定用戶端和伺服器 ip，然後將它部署至用戶端和伺服器 HoloLens 裝置，來嘗試此程式。
 
 ## <a name="see-also"></a>另請參閱
 * [平行模式程式庫 (PPL)](/cpp/parallel/concrt/parallel-patterns-library-ppl)
-* [StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
-* [StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)
+* [Windows。網路功能。 StreamSocket](/uwp/api/Windows.Networking.Sockets.StreamSocket)
+* [Windows。網路功能。 StreamSocketListener](/uwp/api/Windows.Networking.Sockets.StreamSocketListener)

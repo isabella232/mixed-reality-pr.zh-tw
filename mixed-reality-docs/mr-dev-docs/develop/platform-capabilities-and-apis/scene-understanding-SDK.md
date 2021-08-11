@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 12/14/2020
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity
-ms.openlocfilehash: dee561e49a9457aa35c44037f4573caaefd00f2a
-ms.sourcegitcommit: 86fafb3a7ac6a5f60340ae5041619e488223f4f0
+ms.openlocfilehash: 1b93f3137e1ac1309ee56e974a0fa33608114f16dfb65a13e369490f45d6beb3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/22/2021
-ms.locfileid: "112449727"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193634"
 ---
 # <a name="scene-understanding-sdk-overview"></a>場景理解 SDK 總覽
 
@@ -113,7 +113,7 @@ SceneObjects 可以有下列任何一項：
 
 <table>
 <tr>
-<th>SceneObjectKind</th> <th>描述</th>
+<th>SceneObjectKind</th> <th>Description</th>
 </tr>
 <tr><td>背景</td><td>已知 SceneObject <b>不</b> 是其他可辨識的場景物件類型之一。 此類別不應與未知的情況混淆，因為背景已知不是牆壁/樓層/上限等 .。。雖然不明尚未分類。</b></td></tr>
 <tr><td>牆</td><td>實體牆。 牆會假設為 immovable 環境結構。</td></tr>
@@ -264,7 +264,7 @@ foreach (var mesh in firstFloor.Meshes)
 
 在處理轉換時，場景理解已刻意嘗試配合傳統的3D 場景標記法。 因此，每個場景會限制為單一座標系統，就像是最常見的3D 環境表示一樣。 SceneObjects 每個都提供其相對於座標系統的位置。 如果您的應用程式處理的場景會延展單一來源提供的限制，讓它可以將 SceneObjects 錨定到 SpatialAnchors，或是產生數個場景並將它們合併在一起，但為了簡單起見，我們假設防水場景存在於自己的原點，並由場景所定義的一個來當地語系化。
 
-例如，下列 Unity 程式碼示範如何使用 Windows 感知和 Unity Api 來調整座標系統的組合。 如需有關取得與 Unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱 [SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem) 和 [SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及 [Unity 中的混合現實原生物件](/windows/mixed-reality/unity-xrdevice-advanced) 。
+例如，下列 Unity 程式碼顯示如何使用 Windows 認知和 Unity api，將座標系統對齊。 如需有關取得與 unity 世界原點對應之 SpatialCoordinateSystem 的詳細資訊，請參閱[SpatialCoordinateSystem](/uwp/api/windows.perception.spatial.spatialcoordinatesystem)和[SpatialGraphInteropPreview](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview) ，以取得有關 Windows 認知 api 的詳細資料，以及[Unity 中的混合現實原生物件](/windows/mixed-reality/unity-xrdevice-advanced)。
 
 ```cs
 private System.Numerics.Matrix4x4? GetSceneToUnityTransformAsMatrix4x4(SceneUnderstanding.Scene scene)

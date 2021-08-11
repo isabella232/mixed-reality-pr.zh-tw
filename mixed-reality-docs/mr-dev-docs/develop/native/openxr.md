@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 7/29/2019
 ms.topic: article
 keywords: OpenXR、藍圖、延伸模組、Khronos、BasicXRApp、DirectX、原生、原生應用程式、自訂引擎、中介軟體
-ms.openlocfilehash: e9071f8b15f19be564b7c246244a5b7561aa5968
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: 66ef972e09617e596a7d1d097073183943037e29b462ed3070d4defac91ca6b6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042239"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193738"
 ---
 # <a name="openxr"></a>OpenXR
 
@@ -19,7 +19,7 @@ ms.locfileid: "113042239"
 
 OpenXR 是 <a href="https://www.khronos.org/" target="_blank">Khronos</a>的開放免權利 API 標準，提供可在 [混合現實](../../discover/mixed-reality.md)範圍內原生存取各種裝置的引擎。
 
-您可以在 HoloLens 2 上使用 OpenXR 進行開發，或在桌面上 Windows Mixed Reality 沉浸式的 VR 耳機。  如果您沒有耳機的存取權，您可以改用 HoloLens 2 模擬器或 Windows Mixed Reality 模擬器。
+您可以在 HoloLens 2 上使用 OpenXR 進行開發，或在桌面上 Windows Mixed Reality 沉浸式的 VR 耳機。  如果您沒有耳機的存取權，您可以改為使用 HoloLens 2 Emulator 或 Windows Mixed Reality 模擬器。
 
 ## <a name="why-openxr"></a>為什麼要 OpenXR？
 
@@ -81,27 +81,27 @@ Windows Mixed Reality OpenXR 執行時間支援一組 `MSFT` 和 `EXT` 延伸模
 
 *Minecraft 的新 RenderDragon 引擎已使用 OpenXR 建立其桌上型電腦 VR 支援！*
 
-Microsoft 一直在使用 Unity 和複雜的遊戲，以確保混合現實的未來已開放使用，而不只是為了 HoloLens 2，還能橫跨電腦 VR 的完整廣度，包括 [HP 的新的「回音」 G2 耳機](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。  OpenXR 會提供現今主要貨物運送的跨廠商 VR 支援，例如 Minecraft 和 Microsoft 航班模擬器！  如需有關開發 HoloLens (第一代) 的詳細資訊，請參閱 [版本](/hololens/hololens1-release-notes)資訊。
+Microsoft 一直在使用 Unity 和複雜的遊戲，以確保混合現實的未來已開放使用，而不只是為了 HoloLens 2，還能橫跨電腦 VR 的完整廣度，包括[HP 的新的「回音」 G2 耳機](https://www.microsoft.com/mixed-reality/windows-mixed-reality?rtc=1)。  OpenXR 提供現今主要貨物運送的跨廠商 VR 支援，例如 Minecraft 和 Microsoft 航班模擬器！  如需有關針對 HoloLens (第1代) 進行開發的詳細資訊，請參閱[版本](/hololens/hololens1-release-notes)資訊。
 
 若要瞭解如何在 Unity、Unreal Engine 或您自己的引擎中開始使用 OpenXR，請繼續閱讀！
 
 ### <a name="openxr-in-unity"></a>Unity 中的 OpenXR
 
-Microsoft 目前針對 HoloLens 2 和 Windows Mixed Reality 開發建議的 Unity 設定是 **unity 2020.3 LTS** 與最新的 Mixed Reality OpenXR 外掛程式。  此外掛程式包含 OpenXR 延伸模組的支援，這些擴充功能可讓 [HoloLens 2 和 Windows Mixed Reality 耳機的完整功能](#roadmap)，包括手/眼睛追蹤、空間錨點和 HP 等號 G2 控制器。  MRTK-Unity 支援從 [MRTK 2.7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)的 OpenXR。  如需開始使用 Unity 2020 和 OpenXR 的詳細資訊，請參閱 [選擇 unity 版本](../unity/choosing-unity-version.md)。
+Microsoft 目前針對 HoloLens 2 和 Windows Mixed Reality 開發建議的 unity 設定是 **unity 2020.3 LTS** 與最新的 Mixed Reality OpenXR 外掛程式。  此外掛程式包含 OpenXR 延伸模組的支援，這些擴充功能可讓[HoloLens 2 和 Windows Mixed Reality 耳機的完整功能](#roadmap)，包括手/眼睛追蹤、空間錨點和 HP 等號 G2 控制器。  MRTK-Unity 支援從 [MRTK 2.7](../unity/tutorials/mr-learning-base-02.md?tabs=openxr#importing-the-mixed-reality-toolkit-and-configuring-the-unity-project)的 OpenXR。  如需開始使用 Unity 2020 和 OpenXR 的詳細資訊，請參閱 [選擇 unity 版本](../unity/choosing-unity-version.md)。
 
-如果您要針對 HoloLens (第1代) 進行開發，您必須繼續使用 **Unity 2019.4 LTS** 搭配舊版 WinRT API 後端。  如果您將目標設為 Unity 2019 應用程式中的新 HP 回音 G2 控制器，請參閱我們的 Hp 的「 [回音」輸入](../unity/unity-reverb-g2-controllers.md)檔。
+如果您正在針對 HoloLens (第1代) 進行開發，則必須繼續使用 **Unity 2019.4 LTS** 搭配舊版 WinRT API 後端。  如果您將目標設為 Unity 2019 應用程式中的新 HP 回音 G2 控制器，請參閱我們的 Hp 的「 [回音」輸入](../unity/unity-reverb-g2-controllers.md)檔。
 
 從 **Unity 2021.2** 開始，OpenXR 將是唯一支援的 Unity 後端，適用于目標 HoloLens 2 和 Windows Mixed Reality 耳機。
 
 ### <a name="openxr-in-unreal-engine"></a>Unreal 引擎中的 OpenXR
 
-Unreal Engine 4.23 是第一個提供 OpenXR 1.0 預覽支援的主要遊戲引擎版本！  現在在 **Unreal engine 4.26** 中，HoloLens 2、Windows Mixed Reality 和其他 desktop VR 耳機的支援可透過 Unreal 引擎的內建 OpenXR 支援提供。  Unreal Engine 4.26 也支援 [Microsoft 的 OpenXR 延伸模組外掛程式](https://github.com/microsoft/Microsoft-OpenXR-Unreal)、啟用手互動和 HP 迴響 G2 控制器支援、HoloLens 2 的 [完整功能集，以及 Windows Mixed Reality 耳機](#roadmap)。  Unreal Engine 4.26 目前可在長篇的 [遊戲啟動器](https://www.unrealengine.com/download/creators)上取得，MRTK-Unreal 0.12 支援 OpenXR 專案。
+Unreal Engine 4.23 是第一個提供 OpenXR 1.0 預覽支援的主要遊戲引擎版本！  現在在 **Unreal engine 4.26** 中，HoloLens 2、Windows Mixed Reality 和其他 desktop VR 耳機的支援可透過 Unreal 引擎的內建 OpenXR 支援提供。  Unreal Engine 4.26 也支援[Microsoft 的 OpenXR 延伸模組外掛程式](https://github.com/microsoft/Microsoft-OpenXR-Unreal)、啟用手互動和 HP 迴響 G2 控制器支援、HoloLens 2 的[完整功能集，以及 Windows Mixed Reality 耳機](#roadmap)。  Unreal Engine 4.26 目前可在長篇的[遊戲 Launcher](https://www.unrealengine.com/download/creators)上取得，MRTK-Unreal 0.12 支援 OpenXR 專案。
 
 ### <a name="openxr-for-native-development"></a>適用于原生開發的 OpenXR
 
-您可以在 HoloLens 2 上使用 OpenXR 進行開發，或在桌面上 Windows Mixed Reality 沉浸式的 VR 耳機。  如果您沒有耳機的存取權，您可以改用 HoloLens 2 模擬器或 Windows Mixed Reality 模擬器。
+您可以在 HoloLens 2 上使用 OpenXR 進行開發，或在桌面上 Windows Mixed Reality 沉浸式的 VR 耳機。  如果您沒有耳機的存取權，您可以改為使用 HoloLens 2 Emulator 或 Windows Mixed Reality 模擬器。
 
-若要開始開發 HoloLens 2 或 Windows Mixed Reality VR 耳機的 OpenXR 應用程式，請參閱 [如何開始使用 OpenXR 開發](openxr-getting-started.md)。
+若要開始開發 HoloLens 2 或 Windows Mixed Reality VR 耳機的 OpenXR 應用程式，請參閱[如何開始使用 OpenXR 開發](openxr-getting-started.md)。
 
 如需 OpenXR API 的所有主要元件的教學課程，以及目前使用 OpenXR 的真實世界應用程式範例，請參閱此60分鐘逐步解說影片：
 

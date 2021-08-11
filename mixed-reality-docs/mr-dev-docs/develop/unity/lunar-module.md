@@ -6,17 +6,21 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 4a736990a94d7f5c97a1bfc2edf998e327071bcb
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 50ca50acd2960ac7bfbd3a3595d7a3dfa4e69f06848919afe7c8f430c41aeaaf
+ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757220"
+ms.lasthandoff: 08/07/2021
+ms.locfileid: "116862606"
 ---
 # <a name="lunar-module"></a>月球模組
+![陰曆模組](../images/MRDL_LunarModule.jpg)
 
 >[!NOTE]
 >本文討論我們在 [混合現實設計實驗室](https://github.com/Microsoft/MRDesignLabs_Unity)中建立的探索範例，這是我們分享學習的地方，並提供混合現實應用程式開發的建議。 我們的設計相關文章和程式碼將隨著我們進行新探索而演進。
+
+>[!NOTE]
+>這個範例應用程式是針對 HoloLens 第1代所設計。
 
 [陰曆模組](https://github.com/Microsoft/MRDesignLabs_Unity_LunarModule) 是 Microsoft 混合現實設計實驗室的開放原始碼範例應用程式。 瞭解如何使用雙向追蹤和 Xbox 控制器輸入來擴充 HoloLens 的基本手勢、建立回應表面對應和平面尋找的物件，以及執行簡單的功能表系統。 所有專案的元件都可以在您自己的混合現實應用程式體驗中使用。
 
@@ -57,9 +61,6 @@ Tactile 深度是感應式意見反應以進行重複動作的體驗。 在此�
 *視覺化 HoloLens 中的空間對應*
 
 藉由運用使用者的環境，我們實際上有無限的地形選項可登陸我們的陰曆課程模組。 為了讓遊戲最喜歡原始標題，使用者可能會在環境中操作並放置不同問題的登陸板。
-
-![飛行陰曆課程模組](images/640px-lm-hero.jpg)<br>
-*飛行陰曆課程模組*
 
 要求使用者瞭解輸入配置、控制出貨，以及要使用的小型目標是很多人。 成功的遊戲體驗具有適當的挑戰與獎勵組合。 使用者可以選擇一個難度層級，而最簡單的模式就是要求使用者成功地在 HoloLens 所掃描的介面上，進入使用者定義區域。 一旦使用者取得遊戲的停止回應後，他們就可以迅速地建立所見的困難。
 

@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、界限系統、
-ms.openlocfilehash: 36e8ac69a76f3ec1483d8dd0404900972a8caee7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: b8aa53307da37b558a1b844a83c5baa8cffcc2868056ad68d35336b23bfbe43b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683161"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195225"
 ---
 # <a name="configuring-the-boundary-visualization"></a>設定界限視覺效果
 
@@ -18,7 +18,7 @@ ms.locfileid: "104683161"
 
 ## <a name="general-settings"></a>一般設定
 
-![界限視覺效果一般設定](../images/boundary/BoundaryVisualizationGeneralSettings.png)
+![界限視覺效果的一般設定](../images/boundary/BoundaryVisualizationGeneralSettings.png)
 
 ### <a name="boundary-height"></a>界限高度
 
@@ -36,7 +36,7 @@ ms.locfileid: "104683161"
 
 指出建立 floor 平面時應該使用的材質。
 
-**縮放**
+**調整**
 
 表示要建立之樓層平面的大小（以量值為單位）。 預設小數位數為3計量 x 3 計量方塊。
 
@@ -97,7 +97,7 @@ ms.locfileid: "104683161"
 
 ## <a name="boundary-ceiling-settings"></a>界限上限設定
 
-![界限視覺效果界限上限設定](../images/boundary/BoundaryVisualizationCeilingSettings.png)
+![界限視覺效果邊界上限設定](../images/boundary/BoundaryVisualizationCeilingSettings.png)
 
 **顯示**
 

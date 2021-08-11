@@ -6,23 +6,23 @@ ms.author: mazeller
 ms.date: 02/24/2019
 ms.topic: article
 keywords: mrc、相片、影片、捕捉、攝影機
-ms.openlocfilehash: ec1a53d2f623a8047c2ee1973d8d6f20458ade88
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: af585cd212ba8f2ddc3ea812c1fff2a5da8603bff0e77d8fc2ad794486821685
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110249"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192096"
 ---
 # <a name="mixed-reality-capture-for-developers"></a>適用于開發人員的混合現實 capture
 
 > [!NOTE]
-> 請參閱下面 [的 PV 攝影機](#render-from-the-pv-camera-opt-in) 轉譯，以取得 HoloLens 2 新的 MRC 功能的指引。
+> 請參閱下面[的 PV 攝影機](#render-from-the-pv-camera-opt-in)轉譯，以取得 HoloLens 2 新的 MRC 功能的指引。
 
 您可以隨時 (的) 相片或影片進行 [混合的現實 capture](/hololens/holographic-photos-and-videos) ，但在開發應用程式時，請記住幾件事。 這包括了 MRC 視覺品質的最佳作法，並在 MRCs 時回應系統變更。
 
 開發人員也可以將混合現實的捕獲和插入順暢地整合到他們的應用程式中。
 
-HoloLens (第一代) 支援最高720p 的影片和相片，而 HoloLens 2 上的 MRC 可支援最高1080p 和最高4K 解析度的影像。
+HoloLens (第一代) 上的 mrc 可支援最高720p 的影片和相片，而 HoloLens 2 支援的影片最高可達1080p，最高可達4k 解析度的影像。
 
 ## <a name="the-importance-of-quality-mrc"></a>品質 MRC 的重要性
 
@@ -42,7 +42,7 @@ HoloLens (第一代) 支援最高720p 的影片和相片，而 HoloLens 2 上的
 
 #### <a name="set-the-focus-point"></a>設定焦點點
 
-在) HoloLens 上 (的沉浸式應用程式，應該將其穩定平面的 [焦點放](../unity/focus-point-in-unity.md) 在您要的位置。 這可確保耳機和混合式現實捕捉中的最佳對齊。
+HoloLens) 上的沉浸式應用程式 (應該將其穩定平面的[焦點放](../unity/focus-point-in-unity.md)在其上。 這可確保耳機和混合式現實捕捉中的最佳對齊。
 
 如果未設定焦點點，穩定平面會預設為2個計量。
 
@@ -86,7 +86,7 @@ if (view != null)
 > [!NOTE]
 > 如果您使用的是 Unity 2018，則需要 **unity 2018.4.13 f1** 或更新版本。 如果您使用的是 Unity 2019，則需要 **unity 2019.4** 或更新版本。
 
-若要在使用 [Mixed Reality 工具](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)組時選擇從 pv 攝影機進行轉譯，請啟用 [Windows Mixed Reality 攝影機設定](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings) 提供者，並檢查 **從 pv 攝影機** 轉譯。
+若要在使用 [Mixed Reality 工具](https://microsoft.github.io/MixedRealityToolkit-Unity/README.html)組時選擇從 pv 攝影機進行轉譯，請啟用 [Windows Mixed Reality 攝影機設定](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings)提供者，並檢查 **從 pv 攝影機** 轉譯。
 
 如果您不是使用「混合現實」工具組，您可以使用元件以 [手動方式加入宣告](#enable-the-photovideocamera-holographicviewconfiguration-in-directx) ，如上面的 DirectX 所述。
 
@@ -123,7 +123,7 @@ Unreal 會自動為您完成這項操作。
 當混合的現實捕捉正在執行時，2D 應用程式可以選擇將其視覺內容遮蔽：
 * 以 [DXGI_PRESENT_RESTRICT_TO_OUTPUT](/windows/desktop/direct3ddxgi/dxgi-present) 旗標呈現
 * 使用 [DXGI_SWAP_CHAIN_FLAG_HW_PROTECTED](/windows/desktop/api/dxgi/ne-dxgi-dxgi_swap_chain_flag) 旗標來建立應用程式的交換鏈
-* 使用 Windows 10 2019 年5月更新，設定 ApplicationView 的 [IsScreenCaptureEnabled](/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
+* 使用 Windows 10 2019 年5月更新，設定 ApplicationView 的[IsScreenCaptureEnabled](/uwp/api/windows.ui.viewmanagement.applicationview.isscreencaptureenabled)
 
 #### <a name="immersive-app"></a>沉浸式應用程式
 
@@ -142,7 +142,7 @@ Unreal 會自動為您完成這項操作。
 >[!NOTE]
 >如果裝置上沒有混合現實 capture，AppCapture 的 [GetForCurrentView](/uwp/api/windows.media.capture.appcapture.getforcurrentview) API 可能會傳回 null。 也請務必在您的應用程式暫停時，取消註冊 CapturingChanged 事件，否則，可能會進入封鎖狀態。
 
-### <a name="best-practices-hololens-specific"></a> (HoloLens 專用) 的最佳作法
+### <a name="best-practices-hololens-specific"></a> (HoloLens 特定) 的最佳作法
 
 在不需要其他開發工作的情況下，必須留意到 MRC 的工作，但在提供最佳的混合現實捕獲經驗時，有幾件事要注意。
 
@@ -169,7 +169,7 @@ Unreal 會自動為您完成這項操作。
 
 ![將背景 Alpha 值設定為1會導致黑色背景](images/clearopaqueblack-300px.png)
 
-**預期的結果**：如果清除透明) 黑色，則會以真實世界 (預期的結果來適當地混合影像：
+**預期的結果**：如果清除透明黑色，全像投影會與真實世界 (的預期結果正確地混合) 
 
 ![如果清除透明黑色，則預期的結果](images/cleartransparentblack-300px.png)
 
@@ -180,15 +180,15 @@ Unreal 會自動為您完成這項操作。
 
 如果您想要的話，現在可以調整資產的 Alpha 值，但通常不需要這麼做。 大部分的情況下，MRCs 都看起來不錯。 MRC 假設預乘 Alpha。 Alpha 值只會影響 MRC 捕捉。
 
-### <a name="what-to-expect-when-mrc-is-enabled-on-hololens"></a>HoloLens 在 HoloLens 上啟用時的預期結果
+### <a name="what-to-expect-when-mrc-is-enabled-on-hololens"></a>在 HoloLens 上啟用 MRC 時的預期結果
 
-下列適用于 HoloLens (第一代) 和 HoloLens 2，除非另有注明：
+除非另有說明，否則下列內容適用于第一代) 和 HoloLens 2 (HoloLens：
 
 * 系統會將應用程式節流至 30-Hz 轉譯。 這會建立一些可供 MRC 執行的空間，因此應用程式不需要保留固定的預算保留，也不需要符合每 30 fps 的 MRC 影片記錄幀率
 * 錄製/串流處理常式時，裝置上的全息圖內容可能會顯示為「閃爍」：文字可能會變得更難閱讀，而全息圖邊緣可能會變得更 jaggy (選擇在 **HoloLens 2** 上進行第三個攝影機轉譯，以避免此折衷) 
-* 如果應用程式已啟用，則 MRC 照片和影片將會遵循應用程式的 [焦點點](../unity/focus-point-in-unity.md) ，以協助確保全像投影正確放置。 針對影片，焦點會經過平滑處理，如此一來，如果焦點深度的變更大幅改變，則可能會出現緩慢的漂移。 來自焦點點之不同深度的全像影像可能會顯示在現實世界的位移 (請參閱下方的範例，其中焦點點是設定為2個計量，但全像是放置在1個計量) 。
+* 如果應用程式已啟用，則 MRC 照片和影片將會遵循應用程式的 [焦點點](../unity/focus-point-in-unity.md) ，以協助確保全像投影正確放置。 針對影片，焦點會經過平滑處理，如此一來，如果焦點深度的變更大幅改變，則可能會出現緩慢的漂移。 來自焦點點之不同深度的全像投影可能會顯示在現實世界的位移 (請參閱以下範例，其中焦點點是設定為2個計量，但全像是位於1計量) 。
 
-![2米的全像全像全球的全像投影。 接近或遠距離的全像投影可能會稍微位移。](images/hologramaccuracydistancemrc-1000px.png)
+![以2計量為單位的全像投影將會完全向全球註冊。 接近或遠距離的全像投影可能會稍微位移。](images/hologramaccuracydistancemrc-1000px.png)
 
 ## <a name="integrating-mrc-functionality-from-within-your-app"></a>從您的應用程式內整合 MRC 功能
 
@@ -210,23 +210,23 @@ Unreal 會自動為您完成這項操作。
 
 Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/locatable-camera-in-unity.md) ，以啟用全像。
 
-其他應用程式也可以使用 [Windows Media Capture api](/uwp/api/Windows.Media.Capture.MediaCapture) 來控制相機，並新增 MRC 影片和音訊效果，以在靜止和影片中包含虛擬全像影像和應用程式音訊。
+其他應用程式可以使用[Windows 媒體抓取 api](/uwp/api/Windows.Media.Capture.MediaCapture)來控制相機，並新增 MRC 影片和音訊效果，以在靜止和影片中包含虛擬全像影像和應用程式音訊，來達成此目的。
 
 應用程式有兩個選項可新增效果：
-* 舊版 API： [MediaCapture. AddEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
-* 新的 Microsoft 建議 API (會傳回物件，讓您能夠操作動態屬性) ： [MediaCapture. AddVideoEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [MediaCapture.. AddAudioEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)需要應用程式建立自己的[IVideoEffectDefinition](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition)和[IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition)執行。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
+* 舊版 API： [Windows。MediaCapture. AddEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addeffectasync)
+* 新的 Microsoft 建議 API (會傳回物件，讓您可以操控動態屬性) ： [Windows。MediaCapture. AddVideoEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addvideoeffectasync)  /  [Windows。MediaCapture. AddAudioEffectAsync () ](/uwp/api/windows.media.capture.mediacapture.addaudioeffectasync)需要應用程式自行建立 IVideoEffectDefinition 和[IAudioEffectDefinition](/uwp/api/windows.media.effects.iaudioeffectdefinition)的[](/uwp/api/Windows.Media.Effects.IVideoEffectDefinition) 。 如需範例，請參閱 [MRC 範例應用程式](https://github.com/microsoft/Windows-universal-samples/tree/master/Samples/HolographicMixedRealityCapture) 。
 
 >[!NOTE]
-> Visual Studio 不會辨識 MixedRealityCapture 命名空間，但字串仍然有效。
+> Windows。Visual Studio 不會辨識 MixedRealityCapture 命名空間，但字串仍然有效。
 
-**MixedRealityCapture. MixedRealityCaptureVideoEffect**) 的 MRC 影片效果 (
+ (Windows 的 MRC 影片效果 **。MixedRealityCapture. MixedRealityCaptureVideoEffect**) 
 
 |  屬性名稱  |  類型  |  預設值  |  描述 |
 |----------|----------|----------|----------|
 |  StreamType  |  UINT32 ([MediaStreamType](/uwp/api/Windows.Media.Capture.MediaStreamType))   |  1 (VideoRecord)   |  描述此效果用於哪個捕獲資料流程。 無法使用音訊。 |
 |  HologramCompositionEnabled  |  boolean  |  true  |  用來啟用或停用影片捕獲中全像影像的旗標。 |
 |  RecordingIndicatorEnabled  |  boolean  |  true  |  用來啟用或停用全息圖捕獲期間在螢幕上錄製指標的旗標。 |
-|  VideoStabilizationEnabled  |  boolean  |  FALSE  |  此旗標可啟用或停用由 HoloLens 追蹤器提供技術支援的影片穩定。 |
+|  VideoStabilizationEnabled  |  boolean  |  FALSE  |  此旗標可啟用或停用 HoloLens 追蹤器所支援的影片穩定。 |
 |  VideoStabilizationBufferLength  |  UINT32  |  0  |  設定用於視頻穩定的歷程記錄畫面格數目。 0從電源和效能的觀點來看，有0延遲且幾乎「免費」。 針對最高品質 (，建議使用15，但延遲和記憶體) 的15個框架成本。 |
 |  GlobalOpacityCoefficient  |  FLOAT  |  0.9 (HoloLens) 1.0 (沉浸式耳機)   |  在 0.0 (完全透明) 至 1.0 (完全不透明的) ，設定全像影像的全域不透明度係數。 |
 |  BlankOnProtectedContent  |  boolean  |  FALSE  |  如果有 2d UWP 應用程式顯示受保護的內容，則為啟用或停用會傳回空框架的旗標。 如果此旗標為 false，而 2d UWP 應用程式顯示受保護的內容，則會在耳機和混合式現實捕捉中，以受保護的內容材質取代 2d UWP 應用程式。 |
@@ -235,11 +235,11 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 | PreferredHologramPerspective | UINT32 | **從** Windows 裝置入口網站中的相機設定轉譯 | 列舉用來指出應捕捉的全像攝影相機視圖設定： 0 (顯示) 表示不會要求應用程式從相片/攝影機轉譯，1 (PhotoVideoCamera) 將會要求應用程式從相片/視頻攝影機轉譯 (如果應用程式支援) 。 僅 HoloLens 2 支援 |
 
 >[!NOTE]
-> 您可以在 Windows 裝置入口網站中變更 **PreferredHologramPerspective** 的預設值，方法是前往 [ [混合實境擷取] 頁面](using-the-windows-device-portal.md#mixed-reality-capture) ，並取消核取 [ **從相機** 轉譯]。 此設定預設為 **1 (PhotoVideoCamera)**，但可以取消核取，將它設為 **0 (顯示)**。
+> 您可以在 Windows 裝置入口網站中變更 **PreferredHologramPerspective** 的預設值，方法是前往 [[混合實境擷取] 頁面](using-the-windows-device-portal.md#mixed-reality-capture)，並取消核取 [**從相機** 轉譯]。 此設定預設為 **1 (PhotoVideoCamera)**，但可以取消核取，將它設為 **0 (顯示)**。
 >
-> **PreferredHologramPerspective** 的預設值為 **0 (顯示** 2020 年6月更新 (Windows 全像2004版組建19041.1106 和 windows 全像1903組建 18362.1064) 的) 。
+> **PreferredHologramPerspective** 的預設值為 **0 () 顯示** 2020 年6月更新 (Windows 全像2004版組建19041.1106 和 Windows 全像1903組建 18362.1064) 。
 
-**MixedRealityCapture. MixedRealityCaptureAudioEffect) 的** MRC 音訊效果 (
+ (Windows 的 MRC 音訊效果 **。MixedRealityCapture. MixedRealityCaptureAudioEffect**) 
 
 | 屬性名稱 | 類型 | 預設值 | 描述 |
 |----------|----------|----------|----------|
@@ -248,9 +248,9 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 | MicrophoneGain | FLOAT | Windows 裝置入口網站中的 **Mic 音訊增益** 設定 | 適用于 mic 音量的增益。 範圍從0.0 到5.0。 僅 HoloLens 2 支援 |
 
 >[!NOTE]
-> 您可以在 Windows 裝置入口網站中變更 **LoopbackGain** 或 **MicrophoneGain** 的預設值，方法是移至 [ [混合實境擷取] 頁面](using-the-windows-device-portal.md#mixed-reality-capture) ，然後調整其各自設定旁邊的滑杆。 這兩個設定預設為 **1.0**，但可以設定為 **0.0** 與 **5.0** 之間的任何值。
+> 您可以在 Windows 裝置入口網站中變更 **LoopbackGain** 或 **MicrophoneGain** 的預設值，方法是移至 [[混合實境擷取] 頁面](using-the-windows-device-portal.md#mixed-reality-capture)，然後調整其各自設定旁邊的滑杆。 這兩個設定預設為 **1.0**，但可以設定為 **0.0** 與 **5.0** 之間的任何值。
 >
-> 在2020年6月的更新中，您可以使用 Windows 裝置入口網站來設定預設增益值 (Windows 全像2004組建19041.1106 和 Windows 全像版本1903組建 18362.1064) 。
+> 使用 Windows 裝置入口網站來設定預設增益值的新增日期為2020年6月的更新 (Windows 全像2004版組建19041.1106 和 Windows 全像版本1903組建 18362.1064) 。
 
 ### <a name="simultaneous-mrc-limitations"></a>同時 MRC 限制
 
@@ -258,13 +258,13 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 
 #### <a name="photovideo-camera-access"></a>相片/攝影機存取
 
-在 HoloLens 1 上，當處理常式錄製影片或拍攝相片時，MRC 將無法拍攝相片或抓取影片。 反之亦然：如果 MRC 正在執行，應用程式將無法取得相機的存取權。 
+在 HoloLens 1 上，當處理常式錄製影片或拍攝相片時，MRC 將無法抓住相片或抓取影片。 反之亦然：如果 MRC 正在執行，應用程式將無法取得相機的存取權。 
 
 有了 HoloLens 2，您就可以共用相機的存取權。 如果您不需要直接控制解析度或畫面播放速率，您可以搭配 SharedReadOnly 使用 [SharedMode 屬性](/uwp/api/windows.media.capture.mediacaptureinitializationsettings.sharingmode?view=winrt-19041) 來初始化 MediaCapture。  
 
 ##### <a name="built-in-mrc-photovideo-camera-access"></a>內建的 MRC 相片/攝影機存取
 
-內建于透過 Cortana、[開始] 功能表、硬體快捷方式、Miracast、Windows 裝置入口網站) 的 Windows 10 (的 MRC 功能：
+內建于 Windows 10 (透過 Cortana、[開始] 功能表、硬體快速鍵、Miracast Windows 裝置入口網站) 的 MRC 功能：
 
 * 預設會以 ExclusiveControl 執行
 
@@ -302,7 +302,7 @@ Unity 應用程式應該會看到屬性 [Locatable_camera_in_Unity](../unity/loc
 您可以在全像全像 [臉部追蹤範例](/samples/microsoft/windows-universal-samples/holographicfacetracking)中找到上述程式的完整範例。
 
 > [!NOTE]
-> 在 Windows 10 2018 年4月更新之前，應用程式的自訂 MRC 錄製器會與系統 MRC 互斥 (捕獲相片、捕獲影片或從 Windows 裝置入口網站) 進行串流。
+> 在 Windows 10 2018 年4月更新之前，應用程式的自訂 MRC 錄製器與系統 MRC 的互斥 (捕獲相片、捕獲影片或從 Windows 裝置入口網站) 進行串流。
 
 ## <a name="see-also"></a>另請參閱
 

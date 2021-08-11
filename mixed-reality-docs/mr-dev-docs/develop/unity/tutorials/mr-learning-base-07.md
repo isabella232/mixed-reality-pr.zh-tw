@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens、MRTK、混合現實工具組、UWP、物件互動、界限會控制
 ms.localizationpriority: high
-ms.openlocfilehash: cbf2bbf78a34cfdd4856b7b8d192e4ac7c2f0154
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: d620e0150510bd7d882036786f90db8f74229e6d139a313dc6f026dc10be8047
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110263"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191383"
 ---
 # <a name="7-interacting-with-3d-objects"></a>7.與 3D 物件互動
 
@@ -76,7 +76,7 @@ ms.locfileid: "112110263"
 > [!NOTE]
 > 此時，您已針對所有 Rover 零件物件和 RoverAssembly 物件啟用物件操作。
 
-在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組標準資產**]  >  **音訊** 資料夾以找出音訊剪輯：
+在 [Project] 視窗中，流覽至 [**封裝**  >  **混合現實工具組標準資產**]  >  **音訊** 資料夾以找出音訊剪輯：
 
 ![已選取 [音訊] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-07-section1-step1-3.png)
 

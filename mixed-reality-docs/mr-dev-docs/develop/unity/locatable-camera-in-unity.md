@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 03/21/2021
 ms.topic: article
 keywords: 相片、影片、hololens、攝影機、unity、定位、PVC、相片攝影機、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、網路攝影機、相片拍攝、影片捕獲
-ms.openlocfilehash: 1cae796a793036ed59c1d0805df76cb8ac143027
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 4fdf895e6b2b7ed1fc051b45b07ce49052f8a95587178caddfc71a0cfd364eee
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193502"
 ---
 # <a name="photo-video-camera-in-unity"></a>Unity 中的相片攝影機
 
@@ -19,16 +19,16 @@ ms.locfileid: "105636210"
 
 必須為應用程式宣告「網路攝影機」功能才能使用 [相機](../platform-capabilities-and-apis/locatable-camera.md)。
 
-1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定] 頁面，移至播放機設定
+1. 在 Unity 編輯器中，流覽至 [編輯 > Project 設定 > 播放機] 頁面，移至播放機設定
 2. 選取 [Windows 存放區] 索引標籤
-3. 在 [發佈設定 > 功能] 區段中，檢查 **網路** 攝影機和 **麥克風** 功能
+3. 在 [發行設定 > 功能] 區段中，檢查 **網路** 攝影機和 **麥克風** 功能
 
 攝影機一次只能有一種操作。 您可以 `UnityEngine.XR.WSA.WebCam.Mode` 在 unity 2018 及更早版本或 `UnityEngine.Windows.WebCam.Mode` unity 2019 和更新版本中，檢查相機目前所在的模式。 可用的模式為 [相片]、[影片] 或 [無]。
 
 ## <a name="photo-capture"></a>相片捕獲
 
 **Unity 2019) ： UnityEngine 之前的命名空間 (：** *. XR*<br>
-**命名空間 (Unity 2019 和更新版本) ：** *UnityEngine*<br>
+**命名空間 (Unity 2019 和更新版本) ：** *UnityEngine. Windows。網路* 攝影機<br>
 **類型：** *PhotoCapture*
 
 *PhotoCapture* 型別可讓您以照片攝影機拍攝相片。 使用 *PhotoCapture* 拍攝相片的一般模式如下：
@@ -225,10 +225,10 @@ void OnCapturedPhotoToMemory(PhotoCapture.PhotoCaptureResult result, PhotoCaptur
 ## <a name="video-capture"></a>視訊擷取
 
 **Unity 2019) ： UnityEngine 之前的命名空間 (：** *. XR*<br>
-**命名空間 (Unity 2019 和更新版本) ：** *UnityEngine*<br>
+**命名空間 (Unity 2019 和更新版本) ：** *UnityEngine. Windows。網路* 攝影機<br>
 **類型：** *VideoCapture*
 
-*VideoCapture* 的功能類似于 *PhotoCapture*。 唯一的兩個差異是您必須指定每秒的畫面格 (FPS) 值，而且您只能將磁片直接儲存為磁片磁碟機。 使用 *VideoCapture* 的步驟如下：
+*VideoCapture* 的功能類似于 *PhotoCapture*。 唯一的兩個差異是您必須指定每秒的畫面格 (FPS) 值，而且只能以 .mp4 檔的方式直接儲存到磁片。 使用 *VideoCapture* 的步驟如下：
 
 1. 建立 *VideoCapture* 物件
 2. 使用您想要的設定來建立 *CameraParameters* 物件

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 語音命令, 語音輸入
 ms.localizationpriority: high
-ms.openlocfilehash: 9422c16781af33fa3d68d7f6046e3a86c4b36b44
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 448dafbbfdea7ebec26cdafe6c638c37333bcf01399a8272d5637730469ab579
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403369"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115192255"
 ---
 # <a name="9-using-speech-commands"></a>9.使用語音命令
 
@@ -25,7 +25,7 @@ ms.locfileid: "111403369"
 
 ## <a name="ensuring-the-microphone-capability-is-enabled"></a>確定已啟用麥克風功能
 
-在 Unity 功能表中，選取 [混合式事實 > 工具組] > 公用程式 > **設定 MRTK 專案** 以開啟 [ **MRTK 專案** 設定] 視窗，然後在 [ **UWP 功能** ] 區段中，確認 [ **啟用麥克風] 功能** 呈現灰色：
+在 Unity 功能表中，選取 [混合式事實 > 工具組] > 公用程式 >**設定 MRTK Project** 以開啟 [ **MRTK Project** 設定] 視窗，然後在 [ **UWP 功能**] 區段中，確認 [**啟用麥克風] 功能** 呈現灰色：
 
 ![啟用麥克風功能](images/mr-learning-base/base-09-section1-step1-1.png)
 
@@ -59,7 +59,7 @@ ms.locfileid: "111403369"
 
 ## <a name="controlling-speech-commands"></a>控制語音命令
 
-在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **工具提示**] 資料夾，以找出工具提示 Prefabs：
+在 [Project] 視窗中，流覽至 **套件**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **工具提示** 資料夾，以找出工具提示 Prefabs：
 
 ![開啟工具提示資料夾](images/mr-learning-base/base-09-section3-step1-1.png)
 

@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, unity, unreal, directx, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 虛擬實境, 擴增實境, 虛擬實境開發, 擴增實境開發
-ms.openlocfilehash: b47970de15451ea3bd0c121edd7dc61438fa115c
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 2020ceb898f6badaec56a599348c8633c4cb90ba22eaf53df0e097d4fc3e110e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394322"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195952"
 ---
 # <a name="introduction-to-mixed-reality-development"></a>混合實境開發簡介
 
@@ -43,7 +43,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 ## <a name="self-guided-exploration"></a>自我引導式探索
 
-如果您是經驗豐富的開發人員，而且想要直接進入我們的檔，請先安裝必要的工具。 從該處選擇您的 Unity 開發設定，並遵循我們的策劃 Unity 開發路徑（HoloLens），或流覽我們的內容庫。
+如果您是經驗豐富的開發人員，而且想要直接進入我們的檔，請先安裝必要的工具。 從該處選擇您的 unity 開發設定，並遵循我們的策劃 Unity 開發路徑 HoloLens，或流覽我們的內容庫。
 
 > [!div class="nextstepaction"]
 > [安裝工具](install-the-tools.md)

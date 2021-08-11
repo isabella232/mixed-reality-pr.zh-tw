@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 沉浸式耳機，效能優化，VR，個案研究
-ms.openlocfilehash: 37a40a67dbe41ba9a53fccaff1dee76d56f7b178
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: d1c54f5fbe6843f9bf61af20b611c6aeb22b0704c209bfdb555fe57b95805cf9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681101"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115195756"
 ---
 # <a name="case-study---scaling-datascape-across-devices-with-different-performance"></a>案例研究-在具有不同效能的裝置間調整 Datascape
 
@@ -29,11 +29,11 @@ Datascape 是在 Microsoft 內部開發的 Windows Mixed Reality 應用程式，
 
 透明幾何必須重新排序為 front，並且依賴將圖元著色器的輸出與螢幕上目前的圖元混合。 這可能會導致畫面上的每個圖元每個畫面格繪製到多次，稱為過度繪製。
 
-對於 HoloLens 和主流電腦而言，畫面只能填滿幾次，使透明呈現有問題。
+針對 HoloLens 和主流的電腦，畫面只能填滿幾次，使透明呈現有問題。
 
 ## <a name="introduction-to-datascape-scene-components"></a>Datascape 場景元件簡介
 
-我們的場景有三個主要元件; **UI、地圖** 和 **天氣** 。 我們提早知道，我們的氣象效應會需要所有可能取得的 GPU 時間，因此我們刻意以可減少任何過度繪製的方式來設計 UI 和地形。
+我們的場景有三個主要元件; **UI、地圖** 和 **天氣**。 我們提早知道，我們的氣象效應會需要所有可能取得的 GPU 時間，因此我們刻意以可減少任何過度繪製的方式來設計 UI 和地形。
 
 我們已修改 UI 數次，以將所產生的過度繪製量降至最低。 我們大錯特錯人了更複雜幾何的側邊，而不是針對發光按鈕和地圖總覽等元件，在彼此之上重迭透明圖案。
 
@@ -102,7 +102,7 @@ fixed4 frag (g2f i) : SV_Target
 
 ![幾何雲端](images/datascape-geometry-clouds-700px.jpg)
 
-由於雲端是穩固幾何，因此可以在地形之前轉譯，以在下方隱藏任何昂貴的地圖圖元，以進一步改善幀速度。 此解決方案在所有圖形配接器上都能順利執行，從最小規格到高階圖形卡片，以及 HoloLens，因為有固態的幾何轉譯方法。
+由於雲端是穩固幾何，因此可以在地形之前轉譯，以在下方隱藏任何昂貴的地圖圖元，以進一步改善幀速度。 此解決方案可在最小規格至高端圖形卡片的所有圖形卡上執行，以及在 HoloLens 上，因為有固態的幾何呈現方法。
 
 ## <a name="solid-particle-clouds"></a>穩固的粒子雲
 

@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、指標、
-ms.openlocfilehash: 96d7e1c14361fdce94efcdef07b02a51f06ce599
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 9fec02e7866aaf867c7145491bfd84f727e039cdd7a4323ace9c65f74e49480a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115191752"
 ---
 # <a name="pointers"></a>指標
 
@@ -78,7 +78,7 @@ ms.locfileid: "104685261"
 
 ##### [`GGVPointer`](xref:Microsoft.MixedReality.Toolkit.Input.GGVPointer)
 
-GGVPointer 也稱為「 *注視/手勢/語音」 (GGV)* 指標，其可支援 HoloLens 1 樣式的外觀和點一下互動，主要是透過注視和點擊，或注視和語音選取互動。 GGV 指標的位置和方向是由標頭的位置和旋轉所驅動。
+GGVPointer 也稱為「*注視/手勢/語音」 (GGV)* 指標，它可 HoloLens 1 樣式的外觀和點一下互動，主要是透過注視和點擊，或注視和語音選取互動。 GGV 指標的位置和方向是由標頭的位置和旋轉所驅動。
 
 ##### [`TouchPointer`](xref:Microsoft.MixedReality.Toolkit.Input.TouchPointer)
 

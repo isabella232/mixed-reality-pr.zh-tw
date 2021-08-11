@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、HTK、
-ms.openlocfilehash: d6372870adb2ec4175c30a8e1594b04b0c5beae2
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 37776ffca5872db4c55fd52fec09adc56779d736bcbe9b5a707d7b7e1685f669
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702054"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115190910"
 ---
 # <a name="porting-guide"></a>移植指南
 
@@ -69,7 +69,7 @@ ms.locfileid: "104702054"
 
 |        方法                    | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 設定                     | 刪除 MainCamera、將 MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera 預製專案新增至場景 **或** 使用混合現實工具組 > 設定 > 套用混合現實場景設定] 功能表項目。 | 透過混合現實工具組在 MixedRealityPlayspace 底下 MainCamera 父代 > 新增至場景並設定 .。。 |
+| 設定                     | 刪除 MainCamera、將 MixedRealityCameraParent/MixedRealityCamera/HoloLensCamera 預製專案新增至場景 **或** 使用混合現實工具組 > 設定 > 套用混合現實場景設定功能表項目。 | 透過混合現實工具組在 MixedRealityPlayspace 底下 MainCamera 父代 > 新增至場景並設定 .。。 |
 | 組態             | 在預製專案實例上執行的相機設定設定。 | 在 [混合實境相機設定檔](xref:Microsoft.MixedReality.Toolkit.MixedRealityCameraProfile)中設定的相機設定。 |
 
 ## <a name="speech"></a>語音
@@ -78,7 +78,7 @@ ms.locfileid: "104702054"
 
 |         方法                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 設定                     | 將 SpeechInputSource 新增至您的場景。 | 關鍵字服務 (例如，Windows 語音輸入管理員) 必須加入至輸入系統的資料提供者。 |
+| 設定                     | 將 SpeechInputSource 新增至您的場景。 | 關鍵字服務 (例如 Windows 語音輸入管理員) 必須新增至輸入系統的資料提供者。 |
 | 組態             | 已辨識的關鍵字是在 SpeechInputSource 的偵測器中設定。 | 關鍵字是在 [Mixed Reality 語音命令設定檔](../features/input/speech.md)中設定。 |
 | 事件處理常式            | `ISpeechHandler` | [`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
@@ -86,7 +86,7 @@ ms.locfileid: "104702054"
 
 |         方法                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 設定                     | 將 DictationInputManager 新增至您的場景。 | 聽寫支援需要服務 (例如，Windows 聽寫輸入管理員) 要加入至輸入系統的資料提供者。 |
+| 設定                     | 將 DictationInputManager 新增至您的場景。 | 聽寫支援需要服務 (例如 Windows 聽寫輸入管理員) 新增至輸入系統的資料提供者。 |
 | 事件處理常式            | `IDictationHandler` | `IMixedRealityDictationHandler`[`IMixedRealitySpeechHandler`](xref:Microsoft.MixedReality.Toolkit.Input.IMixedRealitySpeechHandler) |
 
 ## <a name="spatial-awareness--mapping"></a>空間感知/對應
@@ -129,7 +129,7 @@ ms.locfileid: "104702054"
 
 |         方法                   | HTK 2017 |  MRTK v2  |
 |---------------------------|----------|-----------|
-| 按鈕                     | [互動物件](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [按鈕](../features/ux-building-blocks/Button.md) |
+| Button                     | [互動物件](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [按鈕](../features/ux-building-blocks/Button.md) |
 | 互動                     | [互動物件](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_InteractableObjectExample.md) | [互動](../features/ux-building-blocks/Interactable.md) |
 | 週框方塊             | [周框方塊](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [周框方塊](../features/ux-building-blocks/bounding-box.md) |
 | 應用程式行             | [應用程式行](https://github.com/Microsoft/MixedRealityToolkit-Unity/blob/htk_release/Assets/HoloToolkit-Examples/UX/Readme/README_BoundingBoxGizmoExample.md) | [應用程式行](../features/ux-building-blocks/app-bar.md) |

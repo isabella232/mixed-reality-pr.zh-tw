@@ -1,27 +1,27 @@
 ---
 title: 混合現實的共用體驗
-description: 全像攝影應用程式可能會在一部 HoloLens 之間共用空間錨點，讓使用者能夠在真實世界中的相同位置，跨多個裝置轉譯全像投影。
+description: 全像攝影應用程式可能會從某個 HoloLens 共用空間錨點，讓使用者能夠在真實世界中的相同位置，跨多個裝置轉譯全像投影。
 author: thetuvix
 ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: 共用體驗、混合現實、全息圖、空間錨點、多使用者、多重
-ms.openlocfilehash: 3383bcd8b87dad6e817262d96b8ac1ebb3d0c8f5
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: fe738d07e57bd2f62cab8036a09ca6ab31d6544bdd9b6dacc8dde3445fa58214
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583149"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193582"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>混合現實的共用體驗
 
-全像是一位使用者，全像是不需要保持私用。 全像攝影應用程式可能會從一個 HoloLens、iOS 或 Android 裝置共用 [空間錨點](../../design/spatial-anchors.md) 到另一個裝置，讓使用者能夠在真實世界中的相同位置轉譯多個裝置。
+全像投影不需要只對一位使用者保持私用。 全像攝影應用程式可能會從一個 HoloLens、iOS 或 Android 裝置共用[空間錨點](../../design/spatial-anchors.md)到另一個裝置，讓使用者能夠在真實世界中的相同位置轉譯多個裝置。
 
 ## <a name="six-questions-to-define-shared-scenarios"></a>定義共用案例的六個問題
 
 在您開始設計共用體驗之前，請務必定義目標案例。 這些案例有助於說明您所設計的內容，並建立共同詞彙來協助比較和對比您的體驗所需的功能。 瞭解核心問題和解決方案的不同途徑，是發現這個新媒體固有的機會的關鍵。
 
-透過來自 HoloLens 夥伴機關的內部原型和探勘，我們建立了六個問題來協助您定義共用案例。 這些問題都是一種架構，而不是完整的架構，可協助您將您案例的重要屬性。
+透過 HoloLens 夥伴機關的內部原型和探勘，我們建立了六個問題來協助您定義共用案例。 這些問題都是一種架構，而不是完整的架構，可協助您將您案例的重要屬性。
 
 ### <a name="1-how-are-they-sharing"></a>1. 它們共用的方式為何？
 
@@ -71,7 +71,7 @@ ms.locfileid: "98583149"
 
 ### <a name="4-when-are-they-sharing"></a>4. 他們何時共用？
 
-我們通常會考慮共用體驗的 **同步** 體驗：我們會將它們全部一起執行。 但是，如果我們包含由其他人新增的單一虛擬元素，就會有 **非同步** 案例。 想像一下虛擬環境中留下的附注或語音備忘錄。 您要如何處理您的設計中剩餘的100虛擬備忘錄？ 如果他們來自具有不同隱私權等級的數十個人呢？
+我們通常會考慮共用體驗的 **同步** 體驗：我們會將它們全部一起執行。 但是，如果我們包含由其他人新增的單一虛擬元素，就會有 **非同步** 案例。 Imagine 在虛擬環境中留下的附注或語音備忘錄。 您要如何處理您的設計中剩餘的100虛擬備忘錄？ 如果他們來自具有不同隱私權等級的數十個人呢？
 
 請考慮您的體驗，這是其中一種類別的時間：
 
@@ -108,9 +108,9 @@ ms.locfileid: "98583149"
 
 您可以結合上述問題的答案，以進一步瞭解您的共用案例，並在擴充體驗時 crystallizing 挑戰。 針對 Microsoft 的團隊，這有助於建立藍圖，以改善我們目前使用的體驗、瞭解這些複雜問題的細微之處，以及如何在混合現實中利用共用體驗。
 
-例如，假設有一家 Skype 推出的 Skype 案例中有一項：使用者已完成 [如何修正損壞的燈光切換](https://www.youtube.com/watch?v=iBfzs3G8BEA) ，以及來自遠端位置的專家的協助。
+例如，請考慮 HoloLens 啟動中的其中一個 Skype 案例：使用者已完成[如何修正中斷的燈光切換](https://www.youtube.com/watch?v=iBfzs3G8BEA)，以及來自遠端位置的專家的協助。
 
-![透過 Skype for HoloLens 修正燈光開關以取得協助](images/fix-a-broken-switch-with-hololens-640px.jpg)
+![透過適用于 HoloLens 的 Skype，以協助修正燈光開關](images/fix-a-broken-switch-with-hololens-640px.jpg)
 
 *專家提供從 **2d**、桌上型電腦到 **3d、混合式** 裝置使用者的 **1:1** 指引。這是 **同步** 的 **指導** 方針，而且實體環境是 **不同** 的。*
 
@@ -141,7 +141,7 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 * 使用者會先放置全像影像。
 * 應用程式會建立 [空間錨點](../../design/spatial-anchors.md)，以精確地在世界中釘選該全像影像。
-* 您可以透過 [Azure 空間錨點](/azure/spatial-anchors/)，將錨點共用到 HoloLens、IOS 和 Android 裝置。
+* 您可以透過[Azure 空間錨點](/azure/spatial-anchors/)，將錨點共用至 HoloLens、iOS 和 Android 裝置。
 
 使用共用空間錨點時，每個裝置上的應用程式現在都有 [共同的座標系統](../../design/coordinate-systems.md) ，可放置內容。 現在，應用程式可以確保在相同位置放置並定位全像投影。
 
@@ -157,16 +157,16 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 ## <a name="share-first-person-perspective"></a>共用第一個人的觀點
 
-當您有支援的 Miracast 接收器（例如電腦或電視）時，可利用內建的 Miracast 支援（例如電腦或電視），不需要額外的應用程式程式碼。
+當您有支援的 Miracast 接收器（例如電腦或電視）時，請為本機使用者利用內建的 Miracast 支援，而不需要額外的應用程式程式碼。
 
-在您的應用程式中、遠端使用者或您想要共用的非 Miracast 裝置上，利用 [MixedReality WebRTC](https://github.com/microsoft/mixedreality-webrtc) 。  啟用 WebRTC 連接可讓使用者之間的1:1 音訊/影片串流，以及跨裝置進行訊息的資料通道。  混合現實實行可針對 HoloLens 進行優化，方法是將 HoloLens 使用者的觀點的混合現實捕獲影片串流提供給其他人。  如果您想要將影片串流擴充至多個遠端用戶端，通常會使用 [MCU 服務提供者](https://webrtcglossary.com/mcu/) (Multipoint 會議單位) ，例如 [SignalWire](https://signalwire.com/)。  單鍵 SignalWire 部署至 Azure 可透過 [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows)取得。
+在您的應用程式中、遠端使用者或您想要共用的非 Miracast 裝置上，利用[MixedReality WebRTC](https://github.com/microsoft/mixedreality-webrtc) 。  啟用 WebRTC 連接可讓使用者之間的1:1 音訊/影片串流，以及跨裝置進行訊息的資料通道。  混合現實實行可針對 HoloLens 進行優化，方法是將 HoloLens 使用者的觀點，提供給其他人的混合現實捕獲影片串流。  如果您想要將影片串流擴充至多個遠端用戶端，通常會使用 [MCU 服務提供者](https://webrtcglossary.com/mcu/) (Multipoint 會議單位) ，例如 [SignalWire](https://signalwire.com/)。  單鍵 SignalWire 部署至 Azure 可透過 [Freeswitch](https://github.com/andywolk/azure-freeswitch-gpu-windows)取得。
 
 > [!NOTE]
 > 請注意，SignalWire 是付費服務，而且不是 Microsoft 擁有/附屬的服務。
 
 ## <a name="presenter-spectator-applications-and-demos"></a>Presenter-Spectator 的應用程式和示範
 
-利用 [MixedReality SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) 將 [spectator view 功能](spectator-view.md) 帶到您的應用程式。  啟用其他裝置 (HL、Android、iOS 和攝影機) 以查看 HoloLens 從相同位置中的不同觀點看到的內容，以及接收與全像全像的主機 HoloLens 使用者互動的更新。  使用相同應用程式的 spectator 附屬，觀賞、拍攝圖片，並記錄主機從您自己的空間觀點來處理應用程式中的全像影像的影片。
+利用 [MixedReality SpectatorView](https://github.com/microsoft/MixedReality-SpectatorView) 將 [spectator view 功能](spectator-view.md) 帶到您的應用程式。  啟用 (HL、Android、iOS 和攝影機的其他裝置) 查看 HoloLens 從相同位置的不同觀點來看，以及接收主機互動的更新，HoloLens 使用者與全像全像的互動。  使用相同應用程式的 spectator 附屬，觀賞、拍攝圖片，並記錄主機從您自己的空間觀點來處理應用程式中的全像影像的影片。
 
 **注意：** 圖片會透過 iOS/Android 裝置上的螢幕擷取畫面取得。
 
@@ -181,7 +181,7 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 
 元件功能和介面可協助提供各種案例和基礎技術的一般一致性和強大支援。  在那之前，請選擇符合您要在應用程式中達成之案例的最佳路徑。
 
-不同的案例或想要使用不同的技術/服務？ 請在此頁面底部的對應存放庫中，將意見反應提供給 GitHub 問題，或在 [HoloDevelopers 的時差](https://holodevelopers.slack.com/)上提供聯繫。
+不同的案例或想要使用不同的技術/服務？ 請在此頁面底部的對應存放庫中，提供意見反應作為 GitHub 問題，或在[HoloDevelopers 的閒置時間](https://holodevelopers.slack.com/)內觸及。
 
 ## <a name="see-also"></a>另請參閱
 

@@ -6,12 +6,12 @@ ms.author: miharnis
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 片段、HoloLens、Windows Mixed Reality
-ms.openlocfilehash: a212f5e9f3b95ccf047c7a6118d59c74c6edc719
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: e7ab28b40a5f168439f1140b04ab81879d7fbe840d53e41e88db8c243d95d477
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009658"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115196136"
 ---
 # <a name="case-study---creating-an-immersive-experience-in-fragments"></a>案例研究-在片段中建立沉浸式體驗
 

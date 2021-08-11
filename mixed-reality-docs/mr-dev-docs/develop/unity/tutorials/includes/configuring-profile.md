@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: e7a04b0d5beb6f5901c07d0cfa721d9b9546a557
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 83a8b878dd93afa01bebe5e7db8be024c2f4b765f58d0067581d39092fd3a849
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111430366"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115193388"
 ---
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4.複製預設的空間感知網格觀察器設定檔
 
-在仍選取 [ **空間感知** ] 索引標籤的情況下，展開 [ **XR SDK Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [ **複製** ] 按鈕以開啟 [複製設定檔] 視窗：
+在仍選取 [**空間感知**] 索引標籤的情況下，展開 [ **XR SDK Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [**複製**] 按鈕以開啟 [複製設定檔] 視窗：
 
 ![已擴充 Windows Mixed Reality [空間網格觀察者] 區段的 Unity MixedRealityToolkit 元件](../images/mr-learning-base/base-03-section1-step4-1xrsdk.png)
 
@@ -26,7 +26,7 @@ ms.locfileid: "111430366"
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4.複製預設的空間感知網格觀察器設定檔
 
-在仍選取 [ **空間感知** ] 索引標籤的情況下，展開 [ **XR SDK Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [ **複製** ] 按鈕以開啟 [複製設定檔] 視窗：
+在仍選取 [**空間感知**] 索引標籤的情況下，展開 [ **XR SDK Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [**複製**] 按鈕以開啟 [複製設定檔] 視窗：
 
 ![已擴充 Windows Mixed Reality [空間網格觀察者] 區段的 Unity MixedRealityToolkit 元件](../images/mr-learning-base/base-03-section1-step4-1xrsdk.png)
 
@@ -45,7 +45,7 @@ ms.locfileid: "111430366"
 
 ### <a name="4-clone-the-default-spatial-awareness-mesh-observer-profile"></a>4.複製預設的空間感知網格觀察器設定檔
 
-在仍選取 [ **空間感知** ] 索引標籤的情況下，確定您位於 [ **舊版 XR** ] 索引標籤，並展開 **Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [ **複製** ] 按鈕以開啟 [複製設定檔] 視窗：
+在仍選取 [**空間感知**] 索引標籤的情況下，確定您位於 [**舊版 XR** ] 索引標籤，並展開 **Windows Mixed Reality 空間網格觀察** 者] 區段，然後按一下 [**複製**] 按鈕以開啟 [複製設定檔] 視窗：
 
 ![已擴充 Windows Mixed Reality [空間網格觀察者] 區段的 Unity MixedRealityToolkit 元件](../images/mr-learning-base/base-03-section1-step4-1.png)
 
