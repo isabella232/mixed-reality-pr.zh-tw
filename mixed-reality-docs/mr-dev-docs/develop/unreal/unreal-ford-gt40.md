@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: e634d75af92509372209d8e7c0cde2833127c128
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 17314cca69148e73ee11fcd4cdc5359a5dbae4cf84b609bafb6cc75d477ec26f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757192"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200608"
 ---
 # <a name="the-making-of-the-ford-gt40-experience"></a>製作 Ford GT40 體驗
 ![Ford GT40 主圖影像](images/ford-gt40-hero_1920.jpg)

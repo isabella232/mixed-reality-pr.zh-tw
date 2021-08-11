@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、mixed reality、部署至裝置、電腦、檔、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
 appliesto:
 - HoloLens 2
-ms.openlocfilehash: 24b2c013e1c9f25f54be9a6fefec8a86846c1746
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+ms.openlocfilehash: d6df3f9af21a0759c98306c28696d21eac7687b92d3cb74a9cd9948122cbcbcc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009748"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226634"
 ---
 # <a name="deploy-to-device-in-unreal"></a>在 Unreal 中部署至裝置
 
@@ -21,15 +21,15 @@ ms.locfileid: "98009748"
 * 直接從 Unreal 編輯器
 * 作為透過裝置入口網站上傳的套件
 
-這兩個選項都需要您設定 HoloLens，才能使用 [裝置入口網站](../platform-capabilities-and-apis/using-the-windows-device-portal.md) 進行開發。
+這兩個選項都需要您設定 HoloLens，才能使用[裝置入口網站](../platform-capabilities-and-apis/using-the-windows-device-portal.md)進行開發。
 
 ## <a name="deploying-to-device-from-the-unreal-editor"></a>從 Unreal 編輯器部署至裝置
 
-1. 選取 [ **啟動** ] 按鈕旁的下拉式箭號。 一開始，HoloLens 裝置選項將會呈現灰色。
+1. 選取 [ **啟動** ] 按鈕旁的下拉式箭號。 一開始，HoloLens 裝置] 選項將會呈現灰色。
 
 ![啟動下拉式選項](images/unreal/launch-dropdown.png)
 
-2. 開啟 **裝置管理員** ，請注意，您的 HoloLens 不會自動出現在裝置清單中。
+2. 開啟 **裝置管理員**，並請注意，您的 HoloLens 不會自動出現在裝置清單中。
 
 3. 展開 [ **新增未列出的裝置** ] 區段。
 
@@ -42,7 +42,7 @@ ms.locfileid: "98009748"
 
 ![新增未列出的裝置](images/unreal/add-unlisted-device.png)
 
-7. 再次選取 [ **啟動** ] 按鈕旁的下拉箭號，這次您應該會看到您剛剛新增的 HoloLens 裝置。 選取要建立並部署到 HoloLens 的 HoloLens 裝置。
+7. 再次選取 [**啟動**] 按鈕旁的下拉箭號，這次您應該會看到您剛剛新增的 HoloLens 裝置。 選取 HoloLens 裝置，以建立並部署至您的 HoloLens。
 
 >[!NOTE]
 >建立裝置可能需要重新編譯著色器 (特別是在第一次執行) 上-這可能需要一些時間。 請勿讓裝置進入睡眠狀態，直到應用程式正在執行 (您可能必須將其磨損) 。 否則著色器編譯將會失敗！

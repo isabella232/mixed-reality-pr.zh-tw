@@ -1,21 +1,21 @@
 ---
 title: Unreal 中的 WinRT
-description: 瞭解如何在適用于 HoloLens 裝置的 Unreal 混合現實應用程式中撰寫和管理自訂 WinRT 功能。
+description: 瞭解如何在 HoloLens 裝置的 Unreal 混合現實應用程式中撰寫和管理自訂 WinRT 功能。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、串流、遠端處理、混合現實、開發、入門、功能、新專案、模擬器、檔、指南、功能、全像投影、遊戲開發、混合現實耳機、windows 混合現實耳機、虛擬實境耳機、WinRT、DLL
-ms.openlocfilehash: f32b5b3ddbee2e24e61d08b0a1b887b7b06e6da4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Unreal、Unreal Engine 4、UE4、HoloLens、HoloLens 2、串流、遠端處理、混合現實、開發、入門、功能、新專案、模擬器、檔、指南、功能、全像投影、遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、WinRT、DLL
+ms.openlocfilehash: b00886908f51804650220b6dbb7b3bfe4184cf33b505e3bd278327d1669c5067
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580417"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198378"
 ---
 # <a name="winrt-in-unreal"></a>Unreal 中的 WinRT
 
-在您的 HoloLens 開發過程中，您可能需要使用 WinRT 來撰寫功能。 例如，在 HoloLens 應用程式中開啟檔案對話方塊，需要 FileSavePicker 在 winrt 標頭檔中。 從4.26 版開始，Unreal 的組建系統支援 WinRT。
+在您的 HoloLens 開發過程中，您可能需要使用 WinRT 來撰寫功能。 例如，在 HoloLens 應用程式中開啟檔案對話方塊需要 winrt/Windows 中的 FileSavePicker。儲存體。選擇器 .h 標頭檔。 從4.26 版開始，Unreal 的組建系統支援 WinRT。
 
 [!INCLUDE[](includes/tabs-winRT.md)]
 

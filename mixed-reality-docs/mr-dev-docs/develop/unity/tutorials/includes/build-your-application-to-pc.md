@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: be4a3243bc00f29f992957de0dfa29416c13284d
-ms.sourcegitcommit: bdf4babd13e021f41fb04cdb3611bb759bd77537
+ms.openlocfilehash: 2886a9ad26ff38a2051d4ea6961286e1e190588128a2f045ae39841470113157
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112392534"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197954"
 ---
 # <a name="unity-2020--openxr"></a>[Unity 2020 + OpenXR](#tab/openxr)
 
@@ -12,19 +12,19 @@ ms.locfileid: "112392534"
 
 在 Unity 功能表中，選取 [檔案] > [建置設定] 來開啟 [建置設定] 視窗。
 
-在 [組建設定] 視窗中，選取 [ **PC、Mac & Linux 獨立** 平臺]，然後按一下 [ **切換平臺** ] 按鈕以變更組建平臺：
+在 [組建設定] 視窗中，選取 [ **PC、Mac & Linux 獨立** 平臺]，然後按一下 [**切換平臺**] 按鈕以變更組建平臺：
 
 ![切換組建平臺](../images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step4-1.PNG)
 
-當 Unity 完成切換平臺時，請按一下 x 圖示以關閉 [組建設定] 視窗。
+當 Unity 完成切換平臺時，請按一下 x 圖示以關閉組建設定視窗。
 
 ### <a name="2-set-the-project-settings"></a>2. 設定專案設定
 
-在 Unity 功能表中，選取 [**編輯**  >  **專案設定**  >  **XR 外掛程式管理**]，確定您位於 [Windows 獨立] 索引標籤，然後核取 [ **OpenXR** ] 和 [ **Windows Mixed Reality 功能集**] 核取方塊。
+在 Unity 功能表中，選取 [**編輯**  >  **Project 設定**  >  **XR 外掛程式管理**]，確定您是在 [Windows 獨立] 索引標籤中，然後選取 [ **OpenXR** ] 和 [ **Windows Mixed Reality 功能集**] 核取方塊。
 
 ![啟用 OpenXR 和 Windows Mixed Reality 功能集](../images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step4-2.PNG)
 
-在 [專案設定] 視窗中，選取 [ **OpenXR** ] 並確認您處於 [Windows 獨立] 索引標籤，並將 **深度提交模式** 從 [無] 變更為 [ **深度16位**]。
+在 Project 設定] 視窗中，選取 [ **OpenXR** ]，並確定您處於 [Windows 獨立] 索引標籤，並將 **深度提交模式** 從 [無] 變更為 [**深度16位**]。
 
 在 [互動設定檔] 索引標籤中，按一下 + 符號，以新增 **眼睛的眼睛互動設定檔** 和 **Microsoft 手互動設定檔** 。
 
@@ -38,7 +38,7 @@ ms.locfileid: "112392534"
 
 ![啟用 Windows Mixed Reality 全息版應用程式遠端處理](../images/mrlearning-pc-holographic-remoting/Tutorial2-Section2-Step4-5.PNG)
 
-### <a name="3-build-the-unity-project"></a>3. 建立 Unity 專案
+### <a name="3-build-the-unity-project"></a>3. 建立 Unity Project
 
 在 Unity 功能表中，選取 [檔案] > [建置設定] 來開啟 [建置設定] 視窗。
 
@@ -57,7 +57,7 @@ ms.locfileid: "112392534"
 按兩下可執行檔，以在您的電腦上開啟電腦全像遠端應用程式。
 
 > [!NOTE]
-> 由於電腦上建作為 UWP 的電腦應用程式的一些已知問題，我們會將電腦應用程式建立為 Windows 獨立進行 OpenXR。
+> 由於電腦應用程式在「全像」內建為 UWP 的一些已知問題，我們會將電腦應用程式建立成獨立于 OpenXR 的 Windows。
 
 
 # <a name="legacy-wsa"></a>[舊版 WSA](#tab/wsa)

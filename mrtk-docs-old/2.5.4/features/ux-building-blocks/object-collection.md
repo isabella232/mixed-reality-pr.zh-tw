@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、物件集合、
-ms.openlocfilehash: 5fb9eea82a7e6dd17aabea006378e790abeed3a3
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6eb55028b7c615221bae25203d84529a3292129b4b82856fefb90ea31b294b55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686261"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224730"
 ---
 # <a name="object-collection"></a>物件集合
 

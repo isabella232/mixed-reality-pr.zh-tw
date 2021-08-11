@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, prefab, 全像投影, 工具提示
 ms.localizationpriority: high
-ms.openlocfilehash: 0abfb4ea2fac3a2e50837c219a465c4ab002e69d
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 605379be0e2f3238ddb5de5c47b6df005c4bf2eb82a2e04156f1317e0e7659fe
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110271"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227733"
 ---
 # <a name="6-creating-user-interfaces"></a>6.建立使用者介面
 
@@ -86,7 +86,7 @@ ms.locfileid: "112110271"
 
 ## <a name="creating-a-dynamic-menu-that-follows-the-user"></a>建立會跟隨使用者的動態功能表
 
-在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **功能表**] 資料夾，並按一下 [ **NearMenu4x1** 預製專案] 並將其拖曳到 [階層] 視窗中，將其轉換 **位置** 設定為 X = 0、Y =-0.4、Z = 0，並依照下列方式進行設定：
+在 [Project] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **功能表**] 資料夾，並按一下 [ **NearMenu4x1** 預製專案] 並將其拖曳到 [階層] 視窗中，將其轉換 **位置** 設定為 X = 0、Y =-0.4、Z = 0，並依照下列方式進行設定：
 
 * 確認 **SolverHandler** 元件的 [追蹤目標類型] 設定為 **頭部**
 * 核取 **RadialView** 規劃元件旁的核取方塊，使其預設為啟用
@@ -165,14 +165,14 @@ ms.locfileid: "112110271"
 
 ## <a name="adding-tooltips"></a>新增工具提示
 
-在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **工具提示**] 資料夾，以找出工具提示 Prefabs：
+在 [Project] 視窗中，流覽至 [**套件**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **UX**  >  **Prefabs**  >  **工具提示**] 資料夾，以找出工具提示 Prefabs：
 
 ![已選取 [工具提示] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-06-section4-step1-1.png)
 
 在階層視窗中，展開 RoverExplorer > **RoverParts** 物件，並選取其所有子 Rover 組件物件，然後在偵測器視窗中，使用 [新增元件] 按鈕新增 **ToolTipSpawner** 件並加以設定，如下所示：
 
 * 確定已核取 [已啟用焦點] 核取方塊，以要求使用者看向要顯示工具提示的位置
-* 將 [ **簡易行工具提示** ] 預製專案從 [專案] 視窗指派給 [ **預製專案** ] 欄位
+* 將 Project 視窗中的 **簡單行工具提示** 預製專案指派給 **預製專案** 欄位
 * 將工具提示覆寫設定 > **設定模式** 變更為 **覆寫**
 * 將工具提示覆寫設定 > **手動樞紐分析表本機位置 Y** 變更為 **1.5**
 

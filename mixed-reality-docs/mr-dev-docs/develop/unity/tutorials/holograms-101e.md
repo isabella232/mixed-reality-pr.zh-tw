@@ -1,28 +1,28 @@
 ---
 title: HoloLens (第1代) 基本 101E-使用模擬器完成專案
-description: 遵循此程式碼逐步解說，以使用 Unity、Visual Studio 和 HoloLens 模擬器來學習全像全像攝影應用程式的基本概念。
+description: 遵循這項程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens Emulator 來學習全像全像的應用程式的基本概念。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: mixed reality、Windows Mixed Reality、全息圖、學術、教學課程、模擬器、HoloLens、混合的現實學術、unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、Windows 10、注視、手勢、語音輸入、空間音效、空間對應
-ms.openlocfilehash: b1099c7db8c320c456c8eb726caef44cb5b52def
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: 混合的現實、Windows Mixed Reality、全息圖、學術、教學課程、模擬器、HoloLens、混合的現實學院、unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、Windows 10、注視、手勢、語音輸入、空間音效、空間對應
+ms.openlocfilehash: 3cbd1fbba8d4dac4a1d3d0ac1b78a38ed7c8bfa5a7f0b5b3b8d61e9a87f924dd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269934"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200838"
 ---
 # <a name="hololens-1st-gen-basics-101e-complete-project-with-emulator"></a>HoloLens (第1代) 基本101E：使用模擬器完成專案
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
 <br>
 
  >[!VIDEO https://www.youtube.com/embed/Xzm8_s05mm8]
 
-本教學課程將逐步引導您完成內建 Unity 的完整專案，以示範 HoloLens 上的核心 Windows Mixed Reality 功能，包括 [注視](../../../design/gaze-and-commit.md)、 [手勢](../../../design/gaze-and-commit.md#composite-gestures)、 [語音輸入](../../../design/voice-input.md)、 [空間音效](../../../design/spatial-sound.md) 和 [空間對應](../../../design/spatial-mapping.md)。 本教學課程需要大約1小時才能完成。
+本教學課程將逐步引導您完成內建 Unity 的完整專案，示範 HoloLens 的核心 Windows Mixed Reality 功能，包括[注視](../../../design/gaze-and-commit.md)、[手勢](../../../design/gaze-and-commit.md#composite-gestures)、[語音輸入](../../../design/voice-input.md)、[空間音效](../../../design/spatial-sound.md)和[空間對應](../../../design/spatial-mapping.md)。 本教學課程需要大約1小時才能完成。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -49,7 +49,7 @@ ms.locfileid: "106269934"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。 將資料夾名稱保留為 **日式**。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-101)取得。
 
 ## <a name="chapter-1---holo-world"></a>第1章-「Hololens」世界
 
@@ -84,12 +84,12 @@ ms.locfileid: "106269934"
 
 * 在 [階層] **面板** 中，按一下 [ **建立** ] 並 **建立空白**。
 * 以滑鼠右鍵按一下新的 **GameObject** ，然後選取 [重新命名]。 將 GameObject 重新命名為 **OrigamiCollection**。
-* 從 [**專案] 面板** 中 **的 [全** 像全像] 資料夾：
+* 從 **Project 面板** 中的 **全像投影** 資料夾：
   * 將 [ **階段** ] 拖曳到階層中，成為 **OrigamiCollection** 的子系。
   * 將 **Sphere1** 拖曳到階層中，以成為 **OrigamiCollection** 的子系。
   * 將 **Sphere2** 拖曳到階層中，以成為 **OrigamiCollection** 的子系。
 * 以滑鼠右鍵按一下 [階層]**面板** 中的 **方向光源** 物件，然後選取 [**刪除**]。
-* 從 [全像 **] 資料夾，將****燈光** 拖曳到階層 **面板** 的根目錄中。
+* 從 **全像投影**] 資料夾中，將 **燈光** 拖曳至 [階層]**面板** 的根目錄中。
 * **在階層中，選取** **OrigamiCollection**。
 * 在偵測 **器** 中，將轉換位置設定為 **0、-0.5、2.0**。
 * 按下 Unity 中的 [ **播放** ] 按鈕，以預覽您的全像影像。
@@ -98,23 +98,23 @@ ms.locfileid: "106269934"
 
 #### <a name="export-the-project-from-unity-to-visual-studio"></a>將專案從 Unity 匯出至 Visual Studio
 
-* 在 Unity 中，選取 [ **File > Build Settings**]。
-* 在 [**平臺**] 清單中選取 [ **Windows 存放區**]，然後按一下 [**切換平臺**]。
+* 在 Unity 中，選取 [ **File > Build 設定**。
+* 在 [**平臺**] 清單中選取 **Windows 儲存區**，然後按一下 [**切換平臺**]。
 * 將 **SDK** 設定為 **通用 10** ，並將 **組建類型** 設定為 **D3D**。
 * 檢查 **Unity c # 專案**。
 * 按一下 [ **新增開啟場景** ] 以加入場景。
-* 按一下 [ **播放的設定 ...**]。
-* 在 [偵測器] 面板中，選取 [ **Windows Store] 標誌**。 然後選取 [ **發佈設定**]。
+* 按一下 [**播放設定**]。
+* 在 [偵測器] 面板中，選取 **Windows 儲存標誌**。 然後選取 [**發行設定**]。
 * 在 [ **功能** ] 區段中，選取 [ **麥克風** ] 和 [ **>spatialperception** ] 功能。
-* 回到 [組建設定] 視窗中，按一下 [ **建立**]。
+* 回到 [組建設定] 視窗中，按一下 [**建立**]。
 * 建立名為 "App" 的 **新資料夾** 。
 * 按一下 **應用程式資料夾**。
 * 按下 [ **選取資料夾**]。
 * 當 Unity 完成時，將會出現檔案總管視窗。
 * 開啟 **應用程式** 資料夾。
-* 開啟 [ **日式 Visual Studio] 方案**。
+* 開啟 [**日式 Visual Studio] 方案**。
 * 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **X86**。
-  * 按一下 [裝置] 按鈕旁邊的箭號，然後選取 [ **HoloLens 模擬器**]。
+  * 按一下 [裝置] 按鈕旁邊的箭號，然後選取 [ **HoloLens Emulator**]。
   * 按一下 [ **Debug-> 啟動但不進行調試]，** 或按 **Ctrl + F5**。
   * 經過一段時間之後，模擬器就會以日式的專案開始。 第一次啟動 [模擬器](../../platform-capabilities-and-apis/using-the-hololens-emulator.md)時，可能需要15分鐘的時間來啟動模擬器。 一旦啟動，請不要關閉它。
 
@@ -130,11 +130,11 @@ ms.locfileid: "106269934"
 
 ### <a name="instructions"></a>指示
 
-* 返回至您的 Unity 專案，如果仍然開啟 [組建設定] 視窗，請加以關閉。
-* 在 [**專案] 面板** 中，選取 [全像 **] 資料夾。**
+* 返回至您的 Unity 專案，並關閉組建設定視窗（如果仍然開啟）。
+* 選取 **Project 面板** 中的 **全像投影** 資料夾。
 * 將資料 **指標** 物件拖曳至根層級的階層 **面板** 中。
 * 按兩下資料 **指標** 物件，深入瞭解它。
-* 以滑鼠右鍵按一下 [專案] 面板中的 [ **腳本** ] 資料夾。
+* 以滑鼠右鍵按一下 Project 面板中的 [**腳本**] 資料夾。
 * 按一下 [ **建立** ] 子功能表。
 * 選取 **c # 腳本**。
 * 將腳本命名為 **WorldCursor**。 注意：名稱會區分大小寫。 您不需要新增 .cs 副檔名。
@@ -301,7 +301,7 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* 匯出、建立應用程式，並將其部署到 HoloLens 模擬器。
+* 匯出、建立應用程式，並將其部署至 HoloLens 模擬器。
 * 查看場景，並將其中一個球體置中。
 * 按下 Xbox 控制器上 **的按鈕，** 或按空格鍵以模擬選取手勢。
 
@@ -424,7 +424,7 @@ public class SphereCommands : MonoBehaviour
 }
 ```
 
-* 匯出、建立應用程式，並將其部署到 HoloLens 模擬器。
+* 匯出、建立應用程式，並將其部署至 HoloLens 模擬器。
 * 模擬器將支援您電腦的麥克風，並回應您的聲音：調整視圖，讓游標位於其中一個球體上，然後說出「捨棄球體」。
 * 說「**重設世界**」將它們帶回其初始位置。
 
@@ -440,15 +440,15 @@ public class SphereCommands : MonoBehaviour
 
 ### <a name="instructions"></a>指示
 
-* 在 Unity 中，選取上方功能表的 [ **編輯] > 專案設定 > 音訊**
+* 在 Unity 中，選取上方功能表的 [**編輯] > Project 設定 > 音訊**
 * 尋找 **空間定位器外掛程式** 設定，然後選取 **MS HRTF 空間定位器**。
-* 從 [全像 **] 資料夾，將 [** **環境** ] 物件拖曳至 [階層] 面板中的 **OrigamiCollection** 物件。
+* 從 **全像投影**] 資料夾中，將 [**環境**] 物件拖曳至 [階層] 面板中的 **OrigamiCollection** 物件。
 * 選取 [ **OrigamiCollection** ]，然後尋找 **音訊來源** 元件。 變更這些屬性：
   * 檢查 **Spatialize** 屬性。
   * 檢查是否 **在喚醒時播放**。
   * 將滑杆向右拖曳，以將 **空間 Blend** 變更為 **3d** 。
   * 檢查 **迴圈** 屬性。
-  * 展開 [ **3D 音效設定**]，然後輸入 **0.1** 作為 **Doppler 等級**。
+  * 展開 [ **3d 音效設定**]，然後針對 [ **Doppler] 層級** 輸入 **0.1** 。
   * 將 **Volume Rolloff** 設為 **對數 Rolloff**。
   * 將 **最大距離** 設定為 **20**。
 * 在 [ **腳本** ] 資料夾中，建立名為 **SphereSounds** 的腳本。
@@ -534,7 +534,7 @@ public class SphereSounds : MonoBehaviour
 ```
 
 * 儲存腳本，並回到 Unity。
-* 匯出、建立應用程式，並將其部署到 HoloLens 模擬器。
+* 匯出、建立應用程式，並將其部署至 HoloLens 模擬器。
 * 戴耳機以取得完整效果，並從階段更接近且更深入地聆聽音效變更。
 
 ## <a name="chapter-6---spatial-mapping"></a>第6章-空間對應
@@ -550,13 +550,13 @@ public class SphereSounds : MonoBehaviour
 
 ### <a name="instructions"></a>指示
 
-* 在 [專案] 面板中，按一下 [全像全像 **] 資料夾。**
+* 按一下 Project 面板中的 **全像投影** 資料夾。
 * 將 **空間對應** 資產拖曳至 **階層的根目錄。**
 * 按一下階層中的 **空間對應** 物件。
 * 在 [偵測 **器] 面板** 中，變更下列屬性：
   * 選取 [ **繪製視覺網格** ] 方塊。
   * 找出 **繪製材質** ，然後按一下右側的圓形。 在頂端的搜尋欄位中輸入「**線框**」。 按一下結果，然後關閉視窗。
-* 匯出、建立應用程式，並將其部署到 HoloLens 模擬器。
+* 匯出、建立應用程式，並將其部署至 HoloLens 模擬器。
 * 當應用程式執行時，系統會以線框呈現先前掃描的真實世界空間網格。
 * 觀賞輪流球體將如何落在此階段，並進入地面上！
 

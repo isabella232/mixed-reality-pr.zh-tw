@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 06/30/2019
 ms.topic: article
 keywords: galaxy explorer、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 1e19f63f493eba2559cf60ef7c1224b7323ec825
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: c3d9c6da13446816f3fd75f83e5a9088661c9604ef4d86ea805202f538d395b5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757068"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200464"
 ---
 # <a name="the-making-of-galaxy-explorer-for-hololens-2"></a>進行 HoloLens 2 的 Galaxy Explorer
 

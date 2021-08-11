@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 407a5b2c815f4f7a06daf1ad297bdde42f5d14ae
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 145731f3b4088026fddafed62d9a0a749918d583dc14314c8adaf57c6ee6f9bd
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683081"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199890"
 ---
 # <a name="creating-a-camera-settings-provider"></a>建立相機設定提供者
 
@@ -212,6 +212,6 @@ ContosoCameraEditor 元件定義會指定設定檔偵測器和任何編輯器特
 ## <a name="see-also"></a>另請參閱
 
 - [攝影機系統總覽](camera-system-overview.md)
-- [`BaseCameraSettingsProvider` 類](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)
+- [`BaseCameraSettingsProvider` 類別](xref:Microsoft.MixedReality.Toolkit.CameraSystem.BaseCameraSettingsProvider)
 - [`IMixedRealityCameraSettingsProvider` 介面](xref:Microsoft.MixedReality.Toolkit.CameraSystem.IMixedRealityCameraSettingsProvider)
 - [`IMixedRealityDataProvider` 介面](xref:Microsoft.MixedReality.Toolkit.IMixedRealityDataProvider)

@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 眼球追蹤
 ms.localizationpriority: high
-ms.openlocfilehash: a5b93b9e66ffb1e4e9f60251cdc146f48005ae8b
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 8a12bf37547466a07cd47e34d7fbc41e88ca87d345e2ef4fcd73b749bdfd0322
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110713744"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227459"
 ---
 # <a name="8-using-eye-tracking"></a>8.使用眼球追蹤
 
@@ -28,7 +28,7 @@ ms.locfileid: "110713744"
 
 ## <a name="ensuring-the-eye-gaze-input-capability-is-enabled"></a>確保已啟用「眼球注視輸入」功能
 
-在 Unity 功能表中，選取 [混合式事實 > 工具組] > 公用程式 > **設定 Project FOR MRTK** 以開啟 [ **MRTK 專案** 設定程式] 視窗，然後在 [ **UWP 功能** ] 區段中，確認 **啟用眼睛的輸入功能** 呈現灰色：
+在 Unity 功能表中，選取 [混合式事實 > 工具組] > 公用程式 >**設定 MRTK 的 Project** 以開啟 [ **MRTK Project** 設定程式] 視窗，然後在 [ **UWP 功能**] 區段中，確認 **啟用眼睛的輸入功能** 呈現灰色：
 
 ![Unity [MRTK 專案設定程式] 視窗](images/mr-learning-base/base-08-section1-step1-1.png)
 

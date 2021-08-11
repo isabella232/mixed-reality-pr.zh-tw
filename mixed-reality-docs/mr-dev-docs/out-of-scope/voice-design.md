@@ -6,12 +6,12 @@ ms.author: shentan
 ms.date: 04/21/2019
 ms.topic: article
 keywords: Windows Mixed Reality, 設計, 互動, 語音
-ms.openlocfilehash: d027dd32e1d7ea0391d2d9262e164a671a57bd29
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2a988ad50a8b20a256b0d7208187785778447cc08109fbf55d4ae83e820a76ba
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582832"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225362"
 ---
 # <a name="voice-commanding"></a>語音命令
 
@@ -47,7 +47,7 @@ ms.locfileid: "98582832"
 
 請考慮對您所建置的任何體驗新增語音命令。 語音是控制系統和應用程式的功能強大且方便的方式。 因為使用者說話時的語調和口音各異，適當選擇語音關鍵字才能確保系統會分毫不差地解讀出使用者的命令。
 
-### <a name="best-practices"></a>最佳作法
+### <a name="best-practices"></a>最佳做法
 
 以下是有助於順利辨識語音的一些做法。
 * **使用精簡的命令** - 盡可能選擇有兩個以上音節的關鍵字。 口音不同的人在說單音節的單字時往往會使用不同的元音。 範例：「播放影片」優於「播放目前選取的影片」
@@ -114,5 +114,5 @@ Windows Mixed Reality 採用「看到什麼就說什麼」語音模型，**按�
 * 在 HoloLens 上的全像攝影畫面外，是否可以使用語音來命令物件？
 
 ## <a name="see-also"></a>另請參閱
-* [軌跡](../design/gaze-and-commit.md#composite-gestures)
+* [手勢](../design/gaze-and-commit.md#composite-gestures)
 * [頭部目光和停駐](../design/gaze-and-dwell.md)

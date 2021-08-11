@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens 2, azure, azure 開發, 空間錨點, 混合實境, 開發, 功能, 新專案, 模擬器, 文件, 指南, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 01d7217f038519d68eabfbf4f273c7ff8cbe7193
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: ed8062436bccb1fe818075bde626e2e50b13b7ae200580d0084521ca6dde5cff
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "100496189"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227111"
 ---
 # <a name="azure-spatial-anchors-in-unreal"></a>Unreal 中的 Azure Spatial Anchors
 
@@ -47,9 +47,9 @@ Azure Spatial Anchors 是 Microsoft Mixed Reality 服務，可讓擴增實境裝
 
 ## <a name="enabling-internet-access"></a>啟用網際網路存取
 
-**> HoloLens 開啟專案設定**，並啟用 **網際網路用戶端** 功能：
+開啟 **Project 設定 > HoloLens** 並啟用 **網際網路用戶端** 功能：
 
-![已反白顯示功能的 HoloLens 專案設定](images/asa-enable-wifi-connection.jpg)
+![醒目提示功能的 HoloLens 專案設定](images/asa-enable-wifi-connection.jpg)
 
 ## <a name="adding-azure-spatial-anchors-plugins"></a>新增 Azure Spatial Anchors 外掛程式
 

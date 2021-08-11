@@ -5,13 +5,13 @@ author: radicalad
 ms.author: adlinv
 ms.date: 06/07/2019
 ms.topic: article
-keywords: Windows Mixed Reality，應用程式橫條，周框方塊，混合現實耳機，windows Mixed Reality 耳機，虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 5c437b303ec5462179a1ddf43687aa1653419b08
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Windows Mixed Reality，應用程式橫條，周框方塊，混合現實耳機，Windows Mixed Reality 耳機，虛擬實境耳機，HoloLens，MRTK，混合現實工具組
+ms.openlocfilehash: d7cacdcffeb552595e4ffd5ea5d1a734efb0451e03c5b6d5d39e5ea8caf3bd94
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110092"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198702"
 ---
 # <a name="bounding-box-and-app-bar"></a>週框方塊和應用程式列
 ![「周框」是混合現實物件操作的標準介面。](images/UX_Hero_BoundingBox.jpg)<br>
@@ -30,7 +30,7 @@ ms.locfileid: "112110092"
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens 透過周框方塊調整物件的觀點](images/HoloLens2_BoundingBox.gif)<br>
+       ![HoloLens 透過周框方塊調整物件的視角](images/HoloLens2_BoundingBox.gif)<br>
     :::column-end:::
 :::row-end:::
 
@@ -45,7 +45,7 @@ ms.locfileid: "112110092"
     :::column-end:::
         :::column:::
         ![space](images/spacer-20x582.png)<br>
-       ![HoloLens 透過周框方塊旋轉物件的觀點](images/HoloLens2_BoundingBox_Rotate.gif)<br>
+       ![HoloLens 透過周框方塊旋轉物件的視角](images/HoloLens2_BoundingBox_Rotate.gif)<br>
     :::column-end:::
 :::row-end:::
 

@@ -6,16 +6,16 @@ ms.author: daaske
 ms.date: 03/21/2018
 ms.topic: article
 keywords: HoloTour、HoloLens、Windows Mixed Reality
-ms.openlocfilehash: f3ca07dfab1e4477039481c268e418aac9034bc5
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: bf1f2b3c9c82e4b649a75efc0275a063ea5a2363dfa15b818c0159b947f6b515
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91682889"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199910"
 ---
 # <a name="case-study---creating-impossible-perspectives-for-holotour"></a>案例研究-針對 HoloTour 建立不可能的觀點
 
-我們希望您的 HoloTour 體驗成為難忘的 Microsoft HoloLens。 除了傳統的旅遊以外，我們還規劃了一些「不可能的觀點」，也就是不可能在任何導覽上體驗，而是透過 HoloLens 中的技術，可以直接帶到您的客廳。 建立這些體驗的內容需要一些不同的技術，而不是標準的捕獲程式。
+我們希望您的 HoloTour 體驗成為難忘的 Microsoft HoloLens。 除了傳統的旅遊以外，我們還規劃了一些「不可能的觀點」，也就是不可能在任何導覽上體驗，但透過 HoloLens 的技術，我們可以直接帶到您的客廳。 建立這些體驗的內容需要一些不同的技術，而不是標準的捕獲程式。
 
 ## <a name="the-content-challenge"></a>內容挑戰
 

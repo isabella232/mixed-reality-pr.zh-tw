@@ -1,16 +1,16 @@
 ---
-ms.openlocfilehash: cc29a6e9d358ba35d1e1ddd336b9df88ba68739b
-ms.sourcegitcommit: 04927427226928bd9178da0049d4cef626a6b0bf
+ms.openlocfilehash: 555360092a65b80a1298eb779736b29360f8c6e13bd1834994f316043843b47a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/21/2021
-ms.locfileid: "98690088"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198385"
 ---
 # <a name="426"></a>[4.26](#tab/426)
 
 ## <a name="the-standard-winrt-apis"></a>標準 WinRT Api
 
-使用 WinRT 最常見且最簡單的方式，就是從 WinSDK 呼叫方法。 若要這樣做，請開啟 YourModule.Build.cs 檔案，並新增下列幾行：
+使用 WinRT 最常見且最簡單的方式，就是從 WinSDK 呼叫方法。 若要這樣做，請開啟 YourModule 檔案，並新增下列幾行：
 
 ```csharp
 if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTargetPlatform.HoloLens)
@@ -49,14 +49,14 @@ if (Target.Platform == UnrealTargetPlatform.Win64 || Target.Platform == UnrealTa
 #endif
 ```
 
-WinRT 程式碼只能在 Win64 和 HoloLens 平臺中進行編譯，而 if 語句會防止將 WinRT 程式庫包含在其他平臺上。 已新增 unknwn 來取得 IUnknown 介面。 
+winrt 程式碼只能在 Win64 和 HoloLens 平臺中進行編譯，而 if 語句會防止將 WinRT 程式庫包含在其他平臺上。 已新增 unknwn 來取得 IUnknown 介面。 
 
 
 ## <a name="winrt-from-a-nuget-package"></a>從 NuGet 套件 WinRT
 
-如果您需要新增具有 WinRT 支援的 NuGet 套件，則會稍微複雜一點。 在此情況下，Visual Studio 可以為您完成所有工作，但 Unreal 組建系統則無法這麼做。 幸運的是，這並不難。 以下範例說明如何下載 MixedReality 的 < </< QR 套件。 您可以將它取代為另一個，只要確定您不會遺失 winmd 檔案並複製正確的 dll。 
+如果您需要使用 WinRT 支援新增 NuGet 套件，則會稍微複雜一點。 在此情況下，Visual Studio 可以為您完成所有工作，但 Unreal 組建系統則無法這麼做。 幸運的是，這並不難。 以下範例說明如何下載 MixedReality 的 < </< QR 套件。 您可以將它取代為另一個，只要確定您不會遺失 winmd 檔案並複製正確的 dll。 
 
-從上一節 Windows SDK dll 是由作業系統處理。 NuGet 的 dll 必須由模組中的程式碼管理。 建議您新增程式碼來下載它們、複製到二進位檔資料夾，然後載入模組啟動時的進程記憶體。
+Windows上一節中的 SDK dll 是由作業系統處理。 NuGet 的 dll 必須由模組中的程式碼管理。 建議您新增程式碼來下載它們、複製到二進位檔資料夾，然後載入模組啟動時的進程記憶體。
 
 在第一個步驟中，您應該將 packages.config (新增 https://docs.microsoft.com/nuget/reference/packages-config) 至模組的根資料夾。 您應該新增所有您想要下載的套件，包括其所有相依性。 我在這裡新增了 MixedReality 做為主要承載，並將其他兩個專案作為相依性。 該檔案的格式與 Visual Studio 中的格式相同：
 
@@ -69,9 +69,9 @@ WinRT 程式碼只能在 Win64 和 HoloLens 平臺中進行編譯，而 if 語�
 </packages>
 ```
 
-現在您可以下載 NuGet、必要的套件，或參閱 NuGet [檔](/nuget/consume-packages/install-use-packages-nuget-cli)。
+現在您可以下載 NuGet、必要的套件，或參閱 NuGet[檔](/nuget/consume-packages/install-use-packages-nuget-cli)。
 
-開啟 YourModule.Build.cs 並新增下列程式碼：
+開啟 YourModule，並加入下列程式碼：
 
 ```csharp
 // WinRT with Nuget support
@@ -231,7 +231,7 @@ private void SafeCopy(string source, string destination)
 }
 ```
 
-需要以手動方式將 NuGet Dll 載入您的 Win32 進程記憶體;建議您將手動載入新增至模組的啟動方法：
+NuGetDll 需要以手動方式載入您的 Win32 進程記憶體;建議您將手動載入新增至模組的啟動方法：
 
 ```cpp
 void StartupModule() override
@@ -261,13 +261,13 @@ Unreal 不會以原生方式編譯4.25 版中的 WinRT 程式碼，因此您可�
 
 - 建立會開啟 FileSaveDialogue 的通用 Windows DLL
 - 將該 DLL 連結至 Unreal 遊戲專案
-- 使用新的 DLL，從 Unreal 藍圖將檔案儲存在 HoloLens 上
+- 使用新的 DLL，從 Unreal 藍圖將檔案儲存在 HoloLens
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 1. 檢查您是否已安裝所有[必要的工具](../tutorials/unreal-uxt-ch1.md)
 2. [建立新的 Unreal 專案](../tutorials/unreal-uxt-ch2.md#creating-a-new-unreal-project) ，並將其命名為 **Consumewinrt**
-3. 啟用 [所需的外掛程式](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins) 以進行 HoloLens 開發
+3. 啟用 HoloLens 開發[所需的外掛程式](../tutorials/unreal-uxt-ch2.md#enabling-required-plugins)
 4. [設定部署](../tutorials/unreal-uxt-ch6.md) 至裝置或模擬器
 
 ## <a name="creating-a-winrt-dll"></a>建立 WinRT DLL 
@@ -329,7 +329,7 @@ public:
 > [!NOTE]
 > 所有 WinRT 程式碼都會儲存在 **HoloLensWinrtDLL** 中，因此在參考標頭時，Unreal 不會嘗試包含任何 WinRT 程式碼。 
 
-3. 仍在 **HoloLensWinrtDLL .cpp** 中，為 OpenFileDialogue ( # A1 和所有支援的程式碼新增函式主體： 
+3. 仍在 **HoloLensWinrtDLL .cpp** 中，為 OpenFileDialogue () 和所有支援的程式碼新增函數主體： 
 
 ```cpp
 // sgm is declared outside of OpenFileDialogue so it doesn't
@@ -422,12 +422,12 @@ private:
 > [!NOTE]
 > 現在已在與 uproject 檔案相同的目錄中建立方案，以及名為 Source/ConsumeWinRT/ConsumeWinRT 的新組建腳本。
 
-2. 開啟方案、流覽 **遊戲/ConsumeWinRT/來源/ConsumeWinRT** 資料夾，然後開啟 **ConsumeWinRT.build.cs**：
+2. 開啟方案、流覽 **遊戲/ConsumeWinRT/來源/ConsumeWinRT** 資料夾，然後開啟 **ConsumeWinRT**：
 
-![開啟 ConsumeWinRT.build.cs 檔案](../images/unreal-winrt-img-05.png)
+![開啟 ConsumeWinRT .cs 檔案](../images/unreal-winrt-img-05.png)
 
 ### <a name="linking-the-dll"></a>連結 DLL
-1. 在 **ConsumeWinRT.build.cs** 中，新增屬性以找出 DLL (目錄中包含 HoloLensWinrtDLL) 的 include 路徑。 DLL 位於 include 路徑的子目錄中，因此此屬性將用來作為二進位根目錄目錄：
+1. 在 **ConsumeWinRT** 中，加入一個屬性來尋找 DLL 的 include 路徑， (包含 HoloLensWinrtDLL 的目錄) 。 DLL 位於 include 路徑的子目錄中，因此此屬性將用來作為二進位根目錄目錄：
 
 ```cs
 using System.IO;
@@ -533,10 +533,10 @@ void AWinrtActor::OpenFileDialogue()
 
 ![設定層級藍圖中的節點](../images/unreal-winrt-img-08.png)
 
-4. 將[此遊戲封裝到 HoloLens](../tutorials/unreal-uxt-ch6.md)、加以部署，然後執行。  
+4. [封裝此遊戲以進行 HoloLens](../tutorials/unreal-uxt-ch6.md)、部署和執行。  
 
-當 Unreal 呼叫 OpenFileDialogue 時，會在 HoloLens 提示輸入 .txt 檔案名時開啟 [檔案] 對話方塊。  儲存檔案之後，請移至裝置入口網站中的 [檔案 **瀏覽器** ] 索引標籤，以查看 "Hello WinRT" 內容。 
+當 Unreal 呼叫 OpenFileDialogue 時，[檔案] 對話方塊會開啟 HoloLens 提示輸入 .txt 的檔案名。  儲存檔案之後，請移至裝置入口網站中的 [檔案 **瀏覽器** ] 索引標籤，以查看 "Hello WinRT" 內容。 
 
-## <a name="summary"></a>[摘要] 
+## <a name="summary"></a>總結 
 
-當您需要使用與 Windows 相同的檔案對話方塊，將檔案儲存到 HoloLens 磁片時，建議您使用此教學課程作為 Unreal 中使用 WinRT 程式碼的起點。  相同的程式也適用于從 HoloLensWinrtDLL 標頭匯出額外的函式，並在 Unreal 中使用。  請特別注意在背景 MTA 執行緒中等候非同步 WinRT 程式碼的 DLL 程式碼，這樣可避免死結 Unreal 遊戲執行緒。
+當您需要使用相同的檔案對話作為 Windows，將檔案儲存到 HoloLens 磁片時，建議您使用本教學課程做為在 Unreal 中使用 WinRT 程式碼的起點。  相同的程式也適用于從 HoloLensWinrtDLL 標頭匯出額外的函式，並在 Unreal 中使用。  請特別注意在背景 MTA 執行緒中等候非同步 WinRT 程式碼的 DLL 程式碼，這樣可避免死結 Unreal 遊戲執行緒。

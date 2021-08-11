@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 84ba719ca931dbb06809377a31d0b69f3ac63e33
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6ba7263b2c6eac703d62ec2533409587a2fbb05a97edeb1f295753e4e8882ed3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693435"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224002"
 ---
 # <a name="configuring-mesh-observers-for-device"></a>設定裝置的網狀觀察器
 
@@ -30,7 +30,7 @@ ms.locfileid: "104693435"
 
 ### <a name="general-settings"></a>一般設定
 
-![網格觀察者一般設定一般設定](../images/spatial-awareness/MeshObserverGeneralSettings.png)
+![網格觀察器一般設定一般設定](../images/spatial-awareness/MeshObserverGeneralSettings.png)
 
 **啟動行為**
 

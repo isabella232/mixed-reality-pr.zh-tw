@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，混合的現實，學術，unity，教學課程，api，媒體服務，串流影片，360，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: c6afedfd2dae9da3bcd6b044381a6dc20604ded8
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 3f3567c140c3162258475c28c2ef149039e3c40ed418ed2801ac8c40dda00a8f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730565"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224135"
 ---
 # <a name="hololens-1st-gen-and-azure-306-streaming-video"></a>HoloLens (第1代) 和 Azure 306：串流影片
 
@@ -27,7 +27,7 @@ ms.locfileid: "104730565"
 
 在此課程中，您將瞭解如何將您的 Azure 媒體服務連線到 Windows Mixed Reality 的 VR 體驗，以允許在沉浸式耳機上播放串流360度的影片。 
 
-**Azure 媒體服務** 是一組服務，可為您提供廣播品質的影片串流服務，以觸及現今最受歡迎的行動裝置上的更大觀眾。 如需詳細資訊，請造訪 [Azure 媒體服務頁面](https://azure.microsoft.com/services/media-services)。
+**Azure 媒體服務** 是一組服務，可為您提供廣播品質的影片串流服務，以觸及現今最受歡迎的行動裝置上的更大觀眾。 如需詳細資訊，請造訪[Azure 媒體服務頁面](https://azure.microsoft.com/services/media-services)。
 
 完成本課程之後，您將會有一個混合現實的沉浸式耳機應用程式，它將能夠執行下列作業：
 
@@ -37,7 +37,7 @@ ms.locfileid: "104730565"
 
 3. 使用兩個不同的影片在兩個場景之間流覽。
 
-在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何整合 Azure 服務與您的 Unity 專案。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。
+在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何將 Azure 服務與 Unity Project 整合。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -49,7 +49,7 @@ ms.locfileid: "104730565"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 您可以隨意使用最新的軟體（如 [ 安裝工具文章](../../install-the-tools.md)中所列），但不應假設此課程中的資訊會完全符合您在較新軟體中找到的資訊，而不是以下所列的資訊。
@@ -71,22 +71,22 @@ ms.locfileid: "104730565"
 2.  設定及測試您的混合現實沉浸式耳機。
 
     > [!NOTE]
-    > 在此課程中，您將 **不** 需要移動控制器。 如果您需要設定沉浸式耳機的支援，請按一下 [如何設定 Windows Mixed Reality 的連結](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality)。
+    > 在此課程中，您將 **不** 需要移動控制器。 如果您需要設定沉浸式耳機的支援，請按一下[如何設定 Windows Mixed Reality 的連結](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality)。
 
 ## <a name="chapter-1---the-azure-portal-creating-the-azure-storage-account"></a>第1章-Azure 入口網站：建立 Azure 儲存體帳戶
 
-若要使用 **Azure 儲存體服務**，您將需要在 Azure 入口網站中建立及設定 **儲存體帳戶** 。
+若要使用 **Azure 儲存體服務**，您將需要在 Azure 入口網站中建立並設定 **儲存體帳戶**。
 
 1.  登入 [Azure 入口網站](https://portal.azure.com)。
 
     > [!NOTE]
     > 如果您還沒有 Azure 帳戶，您將需要建立一個帳戶。 如果您在課堂或實驗室的情況下進行本教學課程，請洽詢講師或其中一個 proctors，協助您設定新的帳戶。
 
-2.  登入後，按一下左側功能表中的 [ **儲存體帳戶** ]。
+2.  登入後，按一下左側功能表中的 **儲存體帳戶**。
 
     ![Azure 儲存體帳戶設定](images/AzureLabs-Lab6-02.png)
 
-3.  在 [ **儲存體帳戶** ] 索引標籤上，按一下 [ **新增**]。
+3.  在 [**儲存體帳戶**] 索引標籤上，按一下 [**新增**]。
 
     ![Azure 儲存體帳戶設定](images/AzureLabs-Lab6-03.png)
 
@@ -96,7 +96,7 @@ ms.locfileid: "104730565"
 
     2.  在 [ **部署模型] 中，** 選取 [ **資源管理員**]。
 
-    3.  針對 [ **帳戶類型**]，選取 **[儲存體 (一般用途 v1)**。
+    3.  For **Account kind**, select **Storage (general purpose v1)**.
 
     4.  針對 [ **效能**]，請選取 [ **標準 *]。**
 
@@ -146,11 +146,11 @@ ms.locfileid: "104730565"
 
     4.  如果您要建立新的資源群組) ，請判斷資源群組 (的 **位置** 。 位置最好是在應用程式執行所在的區域中。 某些 Azure 資產僅適用于某些區域。
 
-    5.  在 [ **儲存體帳戶** ] 區段中，按一下 [ **請選取 ...** ] 區段，然後按一下您在上一章建立的 **儲存體帳戶** 。
+    5.  在 [**儲存體帳戶**] 區段中，按一下 [**請選取 ...** ] 區段，然後按一下您在上一章中建立的 **儲存體帳戶**。
 
     6.  您也必須確認您已瞭解套用到此服務的條款及條件。
 
-    7.  按一下頁面底部的 [新增]  。
+    7.  按一下 [建立]。
 
         ![Azure 入口網站](images/AzureLabs-Lab6-08.png)
 
@@ -168,7 +168,7 @@ ms.locfileid: "104730565"
 
 8.  在 [新的媒體服務] 頁面中，按一下左側面板中的 [ **資產** ] 連結，這是大約的一半。
 
-9.  在下一個頁面的頁面左上角，按一下 [ **上傳**]。
+9.  在下一個頁面的頁面左上角，按一下 [ **Upload**]。
 
     ![Azure 入口網站](images/AzureLabs-Lab6-11.png)
 
@@ -250,7 +250,7 @@ ms.locfileid: "104730565"
     2.  在此案例中，會將您的 **日期** 和 **時間** 設定為您目前的日期，到未來的時間 (100 年) 。 保持原狀，或將它變更為 [符合]。
 
     > [!NOTE]
-    > 如需定位器的詳細資訊，以及您可以選擇的內容，請造訪 [Azure 媒體服務檔](/azure/media-services/media-services-concepts)。
+    > 如需定位器的詳細資訊，以及您可以選擇的內容，請造訪[Azure 媒體服務檔](/azure/media-services/media-services-concepts)。
 
 24. 在該面板的底部，按一下 [ **新增** ] 按鈕。
 
@@ -269,7 +269,7 @@ ms.locfileid: "104730565"
 
 27. 這兩個影片都發佈之後，您就可以開始進行下一章。
 
-## <a name="chapter-3---setting-up-the-unity-project"></a>第3章-設定 Unity 專案
+## <a name="chapter-3---setting-up-the-unity-project"></a>第3章-設定 Unity Project
 
 以下是使用混合式開發進行開發的一般設定，因此，它是適用于其他專案的絕佳範本。
 
@@ -277,7 +277,7 @@ ms.locfileid: "104730565"
 
     ![Azure 入口網站](images/AzureLabs-Lab6-28.png)
 
-2.  您現在將需要提供 Unity 專案名稱，請插入 **MR \_ 360VideoStreaming。** 請確定專案類型設定為 **3d**。 將位置設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  您現在將需要提供 Unity Project 名稱，請插入 **MR \_ 360VideoStreaming。** 請確定專案類型設定為 **3d**。 將位置設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![Azure 入口網站](images/AzureLabs-Lab6-29.png)
 
@@ -285,7 +285,7 @@ ms.locfileid: "104730565"
 
     ![Azure 入口網站](images/AzureLabs-Lab6-30.png)
 
-4.  接下來，移至 [檔案 ***組建設定*** ]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移至 [檔案 ***組建設定*** ]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 [**通用 Windows 平臺**]。
 
 5.  也請確定：
 
@@ -295,7 +295,7 @@ ms.locfileid: "104730565"
 
     3.  **SDK** 設定為 [ **最新安裝]。**
 
-    4.  **Visual Studio 版本** 設定為 [ **最新安裝]。**
+    4.  **Visual Studio 版本** 設定為 [**最新安裝]。**
 
     5.  **組建並執行** 設定為 [ **本機電腦]。**
 
@@ -303,13 +303,13 @@ ms.locfileid: "104730565"
 
     7.  其餘設定應該保留為預設值。
 
-        ![設定 Unity 專案](images/AzureLabs-Lab6-31.png)
+        ![設定 Unity Project](images/AzureLabs-Lab6-31.png)
 
-6.  在 [ **組建設定** ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。 
+6.  在 [**組建設定**] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。 
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1.  在 [ **其他設定** ] 索引標籤中：
+    1.  在 [**其他設定**] 索引標籤中：
 
         1.  **腳本****執行階段版本** 應該是 **穩定** 的 ( .net 3.5 對等) 。
 
@@ -317,28 +317,28 @@ ms.locfileid: "104730565"
 
         3. **API 相容性層級** 應為 **.net 4.6。**
 
-            ![設定 Unity 專案](images/AzureLabs-Lab6-32.png)
+            ![設定 Unity Project](images/AzureLabs-Lab6-32.png)
 
-    2.  在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    2.  接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
-        ![設定 Unity 專案](images/AzureLabs-Lab6-33.png)
+        ![設定 Unity Project](images/AzureLabs-Lab6-33.png)
 
-    3.  在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    3.  在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         - **InternetClient**
 
-            ![設定 Unity 專案](images/AzureLabs-Lab6-34.png)
+            ![設定 Unity Project](images/AzureLabs-Lab6-34.png)
 
-8.  進行這些變更之後，請關閉 [ **組建設定** ] 視窗。
+8.  進行這些變更之後，請關閉 **組建設定** 視窗。
 
-9.  儲存您的專案 **File* * save project * *。
+9.  儲存您的 Project **File* * save Project * *。
 
 
 
 ## <a name="chapter-4---importing-the-insideoutsphere-unity-package"></a>第4章-匯入 InsideOutSphere Unity 套件
 
 > [!IMPORTANT]
-> 如果您想要略過此課程的 *Unity 設定* 元件，並直接繼續進行程式碼，請隨意下載 [unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage)，並將其匯入到您的專案中做為 [**自訂套件**](https://docs.unity3d.com/Manual/AssetPackages.html)，然後繼續進行 **第5章**。 您仍然需要建立 Unity 專案。
+> 如果您想要略過此課程的 *Unity 設定* 元件，並直接繼續進行程式碼，請隨意下載 [unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/Azure-MR-306.unitypackage)，並將其匯入到您的專案中做為 [**自訂套件**](https://docs.unity3d.com/Manual/AssetPackages.html)，然後繼續進行 **第5章**。 您仍然需要建立 Unity Project。
 
 在此課程中，您將需要下載名為 [**InsideOutSphere. unitypackage**](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20306%20-%20Streaming%20video/InsideOutSphere.unitypackage)的 Unity 資產套件。
 
@@ -430,7 +430,7 @@ ms.locfileid: "104730565"
 
 若要建立此類別：
 
-1.  在 [**專案**] 面板中的 [**資產] 資料夾** 上按一下滑鼠右鍵，然後按一下 [**建立] > 資料夾**。 將資料夾命名為 **腳本**。
+1.  以滑鼠右鍵按一下 [**資產] 資料夾**，位於 **Project** 面板中，然後按一下 [**建立] > 資料夾**。 將資料夾命名為 **腳本**。
 
     ![建立 VideoController 類別](images/AzureLabs-Lab6-43.png)
 
@@ -627,7 +627,7 @@ ms.locfileid: "104730565"
 
 1.  移至您先前建立的 **腳本** 資料夾。
 
-2.  以滑鼠右鍵按一下 [ **專案** ] 面板中的 [*建立* * C \# 腳本]。 將腳本命名為 **注視**。
+2.  在 **Project** 面板中按一下滑鼠右鍵，**建立** C \# 腳本 * *。 將腳本命名為 **注視**。
 
 3.  按兩下新的 ***注視** _ 腳本，使用 _ *Visual Studio 2017* 來開啟它。*
 
@@ -756,14 +756,14 @@ ms.locfileid: "104730565"
 
     >  您應具備 **VideoScene1** 和 **VideoScene2**。
 
-7.  在您的兩個場景中，移至 [檔案 **> 組建設定**]。 在 [ **組建設定** ] 視窗開啟的情況下，將您的場景拖曳至 [組建] 區段 **中的場景** 。
+7.  使用您的兩個場景，移至 [檔案 **> 組建設定**。 在 [**組建設定**] 視窗開啟時，將您的場景拖曳至 [組建] 區段 **中的場景**。
 
     ![第7章--設定兩個 Unity 場景](images/AzureLabs-Lab6-50.png)
 
     > [!TIP] 
     > 您可以透過按住 **Ctrl** 鍵，然後在每個場景上按一下滑鼠左鍵，然後將兩者拖曳，以從您的 **場景** 資料夾選取這兩個場景。
 
-8.  關閉 [ **組建設定** ] 視窗，然後按兩下 [ **VideoScene2**]。
+8.  關閉 **組建設定** 視窗，然後按兩下 **VideoScene2**。
 
 9.  開啟第二個場景時，按一下 **InsideOutSphere** 的 **GazeButton** 子物件，並設定其轉換，如下所示：
 
@@ -797,7 +797,7 @@ ms.locfileid: "104730565"
 
 14. **GazeButton** 現在已部分更新，看起來會不同，不過，您現在會建立新的 **材質**，讓它看起來完全不同，而且比第一個場景中的物件更容易辨識為不同的物件。
 
-15. 流覽至 [**專案] 面板** 中的 [**材質**] 資料夾。 複製 **ButtonMaterial** 材質 (按下鍵盤上的 **Ctrl**  +  **D** ，或以滑鼠左鍵按一下 **材質**，然後從 [**編輯** 檔案] 功能表選項中，選取 [**複製**) 。
+15. 流覽至 [ **Project 面板** 中的 [**材質**] 資料夾。 複製 **ButtonMaterial** 材質 (按下鍵盤上的 **Ctrl**  +  **D** ，或以滑鼠左鍵按一下 **材質**，然後從 [**編輯** 檔案] 功能表選項中，選取 [**複製**) 。
 
     ![第7章--設定兩個 Unity 場景 ](images/AzureLabs-Lab6-55.png)
      ![ 第7章--設定兩個 unity 場景](images/AzureLabs-Lab6-56.png)
@@ -828,7 +828,7 @@ ms.locfileid: "104730565"
 
 2.  核取稱為 **Unity C \# Projects** 的方塊 (這很重要，因為它可讓您在組建完成) 之後編輯類別。
 
-3.  移至 [檔案 **> 組建設定**] 中，按一下 [ **組建**]。
+3.  移至 [檔案 **> 組建] 設定** 中，按一下 [**組建**]。
 
 4.  系統會提示您選取要在其中建立解決方案的資料夾。
 
@@ -881,10 +881,10 @@ ms.locfileid: "104730565"
 
 ## <a name="bonus-exercises"></a>額外練習
 
-**練習1**
+**練習 1**
 
 您可以在本教學課程中，只使用單一場景來變更影片。 試驗您的應用程式，並使其進入單一場景！ 或許甚至可以將另一部影片新增至混合。
 
-**練習2**
+**練習 2**
 
 使用 Azure 和 Unity 進行實驗，並嘗試執行應用程式自動選取不同檔案大小的影片，視網際網路連線的強度而定。

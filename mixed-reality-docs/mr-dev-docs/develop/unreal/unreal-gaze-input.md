@@ -1,17 +1,17 @@
 ---
 title: Unreal 中的注視輸入
-description: 瞭解如何在 Unreal 中使用適用于 HoloLens 的眼睛追蹤和頭部方向來設定和使用注視輸入。
+description: 瞭解如何在 Unreal 中使用 HoloLens 應用程式的眼睛追蹤和頭部方向來設定和使用注視輸入。
 author: hferrone
 ms.author: jacksonf
 ms.date: 12/9/2020
 ms.topic: article
-keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 0c5191534313b94a5382d1065f5a5dd1a208bb49
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality、全像 HoloLens 2、眼睛追蹤、注視輸入、前端掛接顯示器、Unreal 引擎、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機
+ms.openlocfilehash: e423086e293629e3dfadb49b52a376c0b93f5e465328b93f47c2f1e3e0790b63
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98579984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200668"
 ---
 # <a name="gaze-input"></a>注視輸入
 
@@ -19,14 +19,14 @@ ms.locfileid: "98579984"
 
 ## <a name="enabling-eye-tracking"></a>啟用眼睛追蹤
 
-- 在 [ **> HoloLens 的專案設定**] 中，啟用 [ **注視輸入** ] 功能：
+- 在 **Project 設定 > HoloLens** 中，啟用「**注視輸入**」功能：
 
-![已反白顯示注視輸入的 HoloLens 專案設定功能螢幕擷取畫面](images/unreal-gaze-img-01.png)
+![醒目提示輸入注視輸入的 HoloLens 專案設定功能的螢幕擷取畫面](images/unreal-gaze-img-01.png)
 
 - 建立新的動作專案並將其新增至您的場景
 
 > [!NOTE]
-> Unreal 中的 HoloLens 眼睛追蹤只會有一個眼睛光線。 不支援 Stereoscopic 追蹤（需要兩個光線）。
+> Unreal 中的眼睛追蹤在中只會有一個眼睛光線。 HoloLens 不支援 Stereoscopic 追蹤（需要兩個光線）。
 
 ## <a name="using-eye-tracking"></a>使用眼球追蹤
 
@@ -52,7 +52,7 @@ ms.locfileid: "98579984"
 
 ## <a name="using-c"></a>使用 C++
 
-- 在您遊戲的 **build.cs** 檔案中，將 **EyeTracker** 新增至 **PublicDependencyModuleNames** 清單：
+- 在您遊戲的 **build .cs** 檔案中，將 **EyeTracker** 新增至 **PublicDependencyModuleNames** 清單：
 
 ```cpp
 PublicDependencyModuleNames.AddRange(

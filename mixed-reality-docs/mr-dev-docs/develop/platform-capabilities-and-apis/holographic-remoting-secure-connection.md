@@ -1,17 +1,17 @@
 ---
 title: 針對全像遠端功能啟用連接安全性
 description: 此頁面說明如何設定全像遠端處理，以在播放程式和遠端應用程式之間使用加密和已驗證的連線。
-author: markkeinz
-ms.author: makei
-ms.date: 10/29/2020
+author: florianbagarmicrosoft
+ms.author: flbagar
+ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、安全性、驗證、伺服器對用戶端
-ms.openlocfilehash: 4004c7534092c73fe478130b9d957461bb34bcfa
-ms.sourcegitcommit: dd13a32a5bb90bd53eeeea8214cd5384d7b9ef76
+ms.openlocfilehash: fa23994ff4ab49d313fe24a67974bf4d90454e511658e0663c61d7b129b10f9e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 11/17/2020
-ms.locfileid: "94679587"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223578"
 ---
 # <a name="enabling-connection-security-for-holographic-remoting"></a>針對全像遠端功能啟用連接安全性
 
@@ -24,13 +24,13 @@ ms.locfileid: "94679587"
 * 根據不同使用案例的建議量值
 * 在您的全像遠端處理解決方案中實施安全性
 
-## <a name="overview"></a>概觀
+## <a name="holographic-remoting-security"></a>全像遠端處理安全性
 
 全像網路的全像遠端交換資訊。 如果沒有任何安全性措施，在相同網路上敵人可能會危害通訊的完整性或存取機密資訊。
 
-Windows 市集中的範例應用程式和全像全像遠端播放播放程式會停用安全性。 這樣做會讓範例更容易瞭解。 它也可協助您更快速地開始開發。
+Windows 存放區中的範例應用程式和全像攝影遠端播放程式會停用安全性。 這樣做會讓範例更容易瞭解。 它也可協助您更快速地開始開發。
 
-不過，若要進行現場測試或生產環境，我們強烈建議在您的全像遠端處理解決方案中啟用安全性。
+對於現場測試或生產環境，我們強烈建議您在全像遠端處理解決方案中啟用安全性。
 
 全像全像是針對您的使用案例正確設定時，可提供下列保證：
 
@@ -38,8 +38,11 @@ Windows 市集中的範例應用程式和全像全像遠端播放播放程式會
 * **機密性：** 沒有任何協力廠商可以讀取播放程式與遠端應用程式之間交換的資訊
 * **完整性：** player 和 remote 可以偵測到對其通訊的任何傳輸中變更
 
->[!TIP]
->若要能夠使用安全性功能，您必須同時執行[自訂播放](holographic-remoting-create-player.md)[程式和自訂遠端應用程式](holographic-remoting-create-host.md)。
+>[!IMPORTANT]
+>若要能夠使用安全性功能，您必須使用[Windows Mixed Reality](holographic-remoting-create-remote-wmr.md)或[OpenXR](holographic-remoting-create-remote-openxr.md) api 來執行[自訂播放](holographic-remoting-create-player.md)程式和自訂遠端應用程式。
+
+>[!NOTE]
+> 從版本 [2.4.0](holographic-remoting-version-history.md#v2.4.0) 使用 [OpenXR API](../native/openxr.md) 的遠端應用程式可以建立。 如需如何在 OpenXR 環境中建立安全連線的總覽，請參閱 [下方](#secure-connection-using-the-openxr-api)。
 
 ## <a name="planning-the-security-implementation"></a>規劃安全性實行
 
@@ -63,7 +66,7 @@ Windows 市集中的範例應用程式和全像全像遠端播放播放程式會
 
 **使用案例1：** 伺服器主機名稱不是固定的，或伺服器完全不是由主機名稱所定址。
 
-在此使用案例中， (或甚至可能) 對伺服器的主機名稱發出憑證並不實用。 此處的建議是改為驗證憑證的指紋。 指紋和人為指紋一樣，可唯一識別憑證。
+在此使用案例中， (或甚至可能) 對伺服器的主機名稱發出憑證並不實用。 建議您改為驗證憑證的指紋。 指紋和人為指紋一樣，可唯一識別憑證。
 
 請務必將指紋傳達給超出範圍的用戶端。 這表示，您無法透過用於遠端處理的相同網路連接來傳送它。 相反地，您可以手動將它輸入用戶端的設定，或讓用戶端掃描 QR 代碼。
 
@@ -94,7 +97,7 @@ Windows 市集中的範例應用程式和全像全像遠端播放播放程式會
 * 用戶端會透過全像的遠端處理將此權杖傳送給伺服器
 * 伺服器會根據身分識別提供者來驗證用戶端的權杖
 
-身分識別提供者的其中一個範例是 [Microsoft 身分識別平臺](https://docs.microsoft.com/azure/active-directory/develop/)。
+身分識別提供者的其中一個範例是[Microsoft 身分識別平臺](/azure/active-directory/develop/)。
 
 如同在先前的使用案例中，請確定這些權杖不會透過不安全的通道傳送或公開。
 
@@ -112,10 +115,10 @@ Windows 市集中的範例應用程式和全像全像遠端播放播放程式會
 所有介面都有一個要求您採取動作的函式，它會以參數的形式接收回呼物件。 使用這個物件，您就可以輕鬆地執行要求的非同步處理。 保留這個物件的參考，並在非同步動作完成時呼叫完成函式。 您可以從任何執行緒呼叫完成函數。
 
 >[!TIP]
->使用 c + +/Winrt 可以輕鬆地執行 WinRT 介面 [作者 api 與 c + +/WinRT](https://docs.microsoft.com//windows/uwp/cpp-and-winrt-apis/author-apis)章節會詳細說明這一點。
+>使用 c + +/Winrt 可以輕鬆地執行 WinRT 介面 [作者 api 與 c + +/WinRT](/windows/uwp/cpp-and-winrt-apis/author-apis)章節會詳細說明這一點。
 
 >[!IMPORTANT]
->`build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl`NuGet 套件內的包含與安全連線相關的 API 詳細檔。
+>`build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl`NuGet 套件內的會包含與安全連線相關的 API 詳細檔。
 
 ### <a name="implementing-a-certificate-provider"></a>執行憑證提供者
 
@@ -153,10 +156,10 @@ Windows 市集中的範例應用程式和全像全像遠端播放播放程式會
 
 若要驗證憑證，您可以使用基礎系統的驗證邏輯。 此系統驗證可以支援您自己的驗證邏輯，或將其取代為全部。 如果您在要求安全連線時未傳遞自己的憑證驗證程式，系統會自動使用系統驗證。
 
-在 Windows 中，系統驗證將會檢查：
+在 Windows 上，系統驗證將會檢查：
 
 * 憑證鏈的完整性：憑證形成以受信任根憑證結尾的一致鏈
-* 憑證有效性：伺服器的憑證在其有效時間範圍內，並基於伺服器驗證的目的發出
+* 憑證有效性：伺服器的憑證在其有效時間範圍內，並且針對伺服器驗證發出
 * 撤銷：尚未撤銷憑證
 * 名稱相符：伺服器的主機名稱符合憑證發出的其中一個主機名稱
 
@@ -168,9 +171,27 @@ Windows 市集中的範例應用程式和全像全像遠端播放播放程式會
 >[!NOTE]
 >如果您的使用案例需要不同形式的驗證 (請參閱上述) 的憑證使用案例 #1，完全略過系統驗證。 相反地，請使用任何可以處理以 DER 編碼的 x.509 憑證的 API 或程式庫，以解碼憑證鏈，並執行您的使用案例所需的檢查。
 
+## <a name="secure-connection-using-the-openxr-api"></a>使用 OpenXR API 的安全連線
+
+使用 [OPENXR API](../native/openxr.md) 時，所有安全連線相關的 API 都可作為 OpenXR 擴充功能的一部分 `XR_MSFT_holographic_remoting` 。
+
+>[!IMPORTANT]
+>To learn about the Holographic Remoting OpenXR extension API, check out the [specification](https://htmlpreview.github.io/?https://github.com/microsoft/MixedReality-HolographicRemoting-Samples/blob/master/remote_openxr/specification.html) which can be found in the [Holographic Remoting samples github repository](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples).
+
+使用 OpenXR 擴充功能的安全連線的重要元素 `XR_MSFT_holographic_remoting` 是下列回呼。
+- `xrRemotingRequestAuthenticationTokenCallbackMSFT`、產生或抓取要傳送的驗證權杖。
+- `xrRemotingValidateServerCertificateCallbackMSFT`，驗證憑證鏈。
+- `xrRemotingValidateAuthenticationTokenCallbackMSFT`，驗證用戶端驗證 token。
+- `xrRemotingRequestServerCertificateCallbackMSFT`，為伺服器應用程式提供要使用的憑證。
+
+您可以透過和將這些回呼提供給遠端 OpenXR 執行時間 `xrRemotingSetSecureConnectionClientCallbacksMSFT` `xrRemotingSetSecureConnectionServerCallbacksMSFT` 。 此外，您必須透過結構或結構上的 secureConnection 參數來啟用安全連線， `XrRemotingConnectInfoMSFT` `XrRemotingListenInfoMSFT` 這取決於您使用 `xrRemotingConnectMSFT` 的是或 `xrRemotingListenMSFT` 。
+
+此 API 與以 IDL 為基礎的 API 類似，此 API 是在實裡建的 [遠端安全性](#implementing-holographic-remoting-security)中所述。 不過，您應該提供回呼，而不是執行介面。 您可以在 [OpenXR 範例應用程式](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到詳細的範例。
+
 ## <a name="see-also"></a>另請參閱
-* [撰寫全像攝影遠端應用程式](holographic-remoting-create-host.md)
+* [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
-* [全像攝影遠端軟體授權條款](https://docs.microsoft.com//legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
 * [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

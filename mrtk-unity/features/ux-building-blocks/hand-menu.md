@@ -5,12 +5,12 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、HandMenu、
-ms.openlocfilehash: 9bb0276c048912b4f463dd93d3303c9a3af8fe29
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: ecf05b687c52dab68302b9b66b3890aca31b5635b803084abd6845f31de974e0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226466"
 ---
 # <a name="hand-menu"></a>手部功能表
 

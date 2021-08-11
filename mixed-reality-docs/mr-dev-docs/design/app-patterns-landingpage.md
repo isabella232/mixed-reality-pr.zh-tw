@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: overview
-keywords: UX 設計、混合現實 UX、UX、應用程式模式、控制項、樣式、HoloLens、互動、空間互動、空間 UI、UX 元素、行為、建立區塊、印刷、色彩、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: a1b087230b5a744cb6194c5cb791e4085aa791c6
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: ux 設計、混合現實 ux、ux、應用程式模式、控制項、樣式、HoloLens、互動、空間互動、空間 UI、UX 元素、行為、建立區塊、印刷、色彩、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: d6f5193c7863f44f6f8b55f874f5f4339396b6c7d1dcef8ae9f8839cb2b8c26e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98009698"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225846"
 ---
 # <a name="ux-elements-overview"></a>UX 元素總覽
 

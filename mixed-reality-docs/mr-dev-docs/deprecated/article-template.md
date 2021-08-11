@@ -6,12 +6,12 @@ ms.author: randyw
 ms.date: 10/22/2019
 ms.topic: article
 keywords: 無
-ms.openlocfilehash: 246e87ace1c0b3edf5e9f4829a5a0879cddf7279
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 4e08f015000fe214438879cd6433248d444f3d659b6338505495bebb76309a67
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583175"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199525"
 ---
 # <a name="title-be-as-specific-as-possible-use-human-terms"></a>標題 (盡可能地指定，請使用人類詞彙)  
 

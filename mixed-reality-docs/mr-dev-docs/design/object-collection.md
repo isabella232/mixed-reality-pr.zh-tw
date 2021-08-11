@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、控制項、設計、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、物件集合、2D、3D、MRTK、混合現實工具組
-ms.openlocfilehash: fd5629f58e092b33410c833885037582ba5ca4a1
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: Windows Mixed Reality、控制項、設計、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、物件集合、2d、3d、MRTK、混合現實工具組
+ms.openlocfilehash: be8f175ac58163eedfbf5fdee88c489f81abb90acbf4a9e04710be8443f070f0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110135"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225720"
 ---
 # <a name="object-collection"></a>物件集合
 

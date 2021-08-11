@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 46e985f4f5665e7e26a8ca131db7b57abb1ec2d4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 73622534439069135e97c97afbd1088c3e733a8d761ebe8bec051999a0029c45
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685151"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115224942"
 ---
 # <a name="content-scene-loading"></a>內容場景載入
 
@@ -122,7 +122,7 @@ DebugTerrainPhysics | 地形 | •
 StructureTesting | 結構 | •
 VegetationTools | 植被 | •
 Mountain | 地形 | •
-小屋 | 結構 | •
+船艙 | 結構 | •
 樹木 | 植被 | •
 
 ### <a name="final-content"></a>最終內容
@@ -133,7 +133,7 @@ DebugTerrainPhysics | DoNotInclude |
 StructureTesting | DoNotInclude |
 VegetationTools | DoNotInclude |
 Mountain | 地形 | •
-小屋 | 結構 | •
+船艙 | 結構 | •
 樹木 | 植被 | •
 
 ---

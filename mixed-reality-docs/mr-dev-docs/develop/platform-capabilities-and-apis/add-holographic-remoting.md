@@ -1,36 +1,36 @@
 ---
 title: 新增全像遠端
-description: 瞭解如何安裝、設定和使用全像全像的遠端處理，透過網路將全像是的 HoloLens 裝置呈現。
+description: 瞭解如何安裝、設定和使用全像的遠端處理，透過網路將全像是 HoloLens 裝置呈現。
 author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Windows Mixed Reality，全像全像全像全像，遠端轉譯、網路轉譯、HoloLens、遠端全息全像、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 68c1dd43dac4830da061d4900ce768692057e781
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality、全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: ecfc49477e202b08303160e54ce986577a9d79eb387dc1edb1bc33c63644615f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98006668"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198854"
 ---
-# <a name="add-holographic-remoting-hololens-first-gen"></a>新增全像 (HoloLens (first gen) # A3
+# <a name="add-holographic-remoting-hololens-first-gen"></a>新增全像遠端 (HoloLens (第一代) ) 
 
 >[!IMPORTANT]
-> 本檔說明如何建立 HoloLens 1 的主機應用程式。 適用于 HoloLens 的主機應用程式 **(第1代)** 必須使用 NuGet 套件1.x 版。 這表示針對 HoloLens 1 所撰寫的主機應用程式與 HoloLens 2 不相容，反之亦然。
+> 本檔說明如何建立 HoloLens 1 的主應用程式。 **HoloLens (第1代)** 的主機應用程式必須使用 NuGet 套件1.x 版。 這表示針對 HoloLens 1 所撰寫的主機應用程式與 HoloLens 2 不相容，反之亦然。
 
 ## <a name="hololens-2"></a>HoloLens 2
 
-HoloLens 開發人員必須更新應用程式，才能使其與 HoloLens 2 相容。 這需要新版本的全像「全像」版本的 NuGet 套件。 連接到 HoloLens 2 上的全像遠端播放程式時，請務必使用「全像」、「全像」的「全像」、「全像」、「全像」、「
+使用全像攝影版的 HoloLens 開發人員必須更新其應用程式，使其與 HoloLens 2 相容。 這需要新版本的全像攝影遠端 NuGet 套件。 連接到 HoloLens 2 上的全像遠端播放程式時，請務必使用「全像」 NuGet 套件的2.0.0.0 版或更高版本，否則連線將會失敗。
 
 >[!NOTE]
-> 您可以在 [這裡](holographic-remoting-create-remote-wmr.md)找到 HoloLens 2 的特定指引。
+> 您可以在[這裡](holographic-remoting-create-remote-wmr.md)找到 HoloLens 2 的特定指引。
 
 
 ## <a name="add-holographic-remoting-to-your-desktop-or-uwp-app"></a>在您的桌面或 UWP 應用程式中新增全像遠端處理
 
 此頁面說明如何在桌面或 UWP 應用程式中新增「全像」遠端處理。
 
-全像「全像」遠端功能可讓您的應用程式以 HoloLens 取代在桌上型電腦或 UWP 裝置（例如 Xbox One）上裝載的全息內容。 您也可以存取更多系統資源，讓您能夠將遠端 [沉浸式視圖](../../design/app-views.md) 整合至現有的桌上型電腦軟體。 遠端主機應用程式會從 HoloLens 接收輸入資料流程、在虛擬沉浸式視圖中轉譯內容，並將內容框架串流回 HoloLens。 連接是使用標準 Wi-fi 進行的。 若要使用遠端處理，請使用 NuGet 套件將全像遠端處理新增至您的桌面或 UWP 應用程式，然後撰寫程式碼以處理連接並轉譯沉浸式視圖。 Helper 程式庫包含在程式碼範例中，可簡化處理裝置連線的工作。
+全像「全像」遠端功能可讓您的應用程式以 HoloLens，其中包含桌上型電腦或 UWP 裝置（例如 Xbox One）上的全像內容。 您也可以存取更多系統資源，讓您能夠將遠端 [沉浸式視圖](../../design/app-views.md) 整合至現有的桌上型電腦軟體。 遠端主機應用程式會從 HoloLens 接收輸入資料流程、在虛擬沉浸式視圖中轉譯內容，並將內容框架串流回 HoloLens。 連接是使用標準 Wi-fi 進行的。 若要使用遠端處理，請使用 NuGet 套件將全像遠端處理新增至您的桌面或 UWP 應用程式，然後撰寫程式碼以處理連接並呈現沉浸式視圖。 Helper 程式庫包含在程式碼範例中，可簡化處理裝置連線的工作。
 
 一般的遠端連線的延遲將會降到50毫秒。 播放程式應用程式可以即時報告延遲時間。
 
@@ -41,7 +41,7 @@ HoloLens 開發人員必須更新應用程式，才能使其與 HoloLens 2 相�
 
 遵循下列步驟來取得適用于全像攝影的 NuGet 套件，並從您的專案新增參考：
 1. 在 Visual Studio 中移至您的專案。
-2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
+2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 封裝 ...**
 3. 在出現的面板中，選取 **流覽]** ，然後搜尋「全像全像」。
 4. 選取 [選取 **安裝**]，然後選取 [ **Microsoft** ]。
 5. 如果出現 [ **預覽** ] 對話方塊，請選取 **[確定]**。
@@ -58,7 +58,7 @@ HoloLens 開發人員必須更新應用程式，才能使其與 HoloLens 2 相�
        Microsoft::Holographic::HolographicStreamerHelpers^ m_streamerHelpers;
 ```
 
-您也需要追蹤連接狀態。 如果您想要轉譯預覽，您必須要有材質才能將它複製到。 您也需要一些像是線上狀態鎖定、一些儲存 HoloLens IP 位址等專案的方式。
+您也需要追蹤連接狀態。 如果您想要轉譯預覽，您必須要有材質才能將它複製到。 您也需要一些東西，例如線上狀態鎖定、一些儲存 HoloLens IP 位址的方法等等。
 
 ```cpp
 private:
@@ -77,7 +77,7 @@ private:
 
 ### <a name="initialize-holographicstreamerhelpers-and-connect-to-hololens"></a>初始化 HolographicStreamerHelpers 並連接到 HoloLens
 
-若要連接到 HoloLens 裝置，請建立 HolographicStreamerHelpers 的實例，並連接到目標 IP 位址。 您必須設定影片畫面格大小，使其符合 HoloLens 顯示器的寬度和高度，因為全像是「全像」遠端程式庫預期編碼器和解碼器解析度必須完全相符。
+若要連線到 HoloLens 裝置，請建立 HolographicStreamerHelpers 的實例，並連接到目標 IP 位址。 您必須設定影片畫面格大小，以符合 HoloLens 顯示寬度和高度，因為全像全像遠端程式庫預期編碼器和解碼器解析度必須完全相符。
 
 ```cpp
 m_streamerHelpers = ref new HolographicStreamerHelpers();
@@ -180,7 +180,7 @@ m_streamerHelpers->OnSendFrame += ref new SendFrameEvent(
 
 ### <a name="render-holographic-content"></a>轉譯全息內容
 
-若要使用遠端處理來轉譯內容，您可以在桌面或 UWP 應用程式內設定虛擬 IFrameworkView，並處理來自遠端的全像攝影框架。 此視圖使用所有的 Windows 全像攝影 Api，但設定方式稍有不同。
+若要使用遠端處理來轉譯內容，您可以在桌面或 UWP 應用程式內設定虛擬 IFrameworkView，並處理來自遠端的全像攝影框架。 此視圖使用相同的方式來使用所有 Windows 全息型 api，但設定方式稍有不同。
 
 全像是 HolographicRemotingHelpers 類別，而不是自行建立：
 
@@ -200,7 +200,7 @@ void DesktopWindow::Tick()
    }
 ```
 
-全像應用程式視圖的刻度 ( # A1 方法會完成 update、draw、現在時迴圈的一個反復專案。
+全像 app view 的 Tick () 方法會完成 update、draw、現在時迴圈的一個反復專案。
 
 ```cpp
 void AppView::Tick()
@@ -224,7 +224,7 @@ void AppView::Tick()
 
 ### <a name="disconnect-and-end-the-remote-session"></a>中斷連線並結束遠端會話
 
-若要中斷連線-例如，當使用者按一下 UI 按鈕進行中斷連線時 ( # A1 HolographicStreamerHelpers，然後釋放物件。
+若要中斷連線-例如，當使用者按一下 UI 按鈕來中斷 HolographicStreamerHelpers 的連線中斷 () ，然後釋放物件。
 
 ```cpp
 void DesktopWindow::DisconnectFromRemoteDevice()
@@ -244,7 +244,7 @@ void DesktopWindow::DisconnectFromRemoteDevice()
 
 ## <a name="get-the-remoting-player"></a>取得遠端播放機
 
-Windows app store 中提供的 Windows 全像遠端存取播放程式，可作為遠端主機應用程式連接的端點。 若要取得 Windows 全像遠端播放播放程式，請從您的 HoloLens 流覽 Windows app store、搜尋遠端處理，然後下載應用程式。 遠端處理播放套裝程式含在螢幕上顯示統計資料的功能，這在對遠端主機應用程式進行偵錯工具時很有用。
+Windows app store 中提供 Windows 的全像遠端播放機，作為遠端主機應用程式連接的端點。 若要取得 Windows 的全像遠端播放程式，請從您的 HoloLens 流覽 Windows app store、搜尋遠端處理，然後下載應用程式。 遠端處理播放套裝程式含在螢幕上顯示統計資料的功能，這在對遠端主機應用程式進行偵錯工具時很有用。
 
 ## <a name="notes-and-resources"></a>注意事項和資源
 

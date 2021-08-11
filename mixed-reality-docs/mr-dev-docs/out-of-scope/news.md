@@ -5,13 +5,13 @@ author: grbury
 ms.author: grbury
 ms.date: 10/21/2019
 ms.topic: article
-keywords: 混合的現實、開發、開發、設計、HoloLens、Azure 服務、新聞 HoloLens 2
-ms.openlocfilehash: 8fc2f7c54cdc941150558aac59dd240ee293d1f8
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+keywords: 混合的現實、開發、開發、設計、HoloLens、Azure 服務、新聞、HoloLens 2
+ms.openlocfilehash: 0144a4ed804dacf2f6120b1e93ee054a71dbadf3efe6689d19ded3f14233c31f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110086"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226212"
 ---
 # <a name="mixed-reality-news-and-notes"></a>混合現實新聞和注意事項
 
@@ -41,7 +41,7 @@ ms.locfileid: "112110086"
 <td>HoloLens 2 的 MRTK</td><td>2019 年 10 月</td><td> <ul><li><a href=/windows/mixed-reality/mrtk-unity>MRTK 文件</a><li><a href=https://github.com/Microsoft/MixedRealityToolkit-Unity/releases>MRTK release 2.1。0</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/mrtk-getting-started>開始使用 MRTK 第 2 版</a></td>
 </tr>
 <tr>
-<td>多使用者應用程式公用程式</td><td>2019 年 10 月</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>示範的 SpectatorView</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>適用于 HoloLens 的 WebRTC 優化</a>></td>
+<td>多使用者應用程式公用程式</td><td>2019 年 10 月</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/spectator-view>示範的 SpectatorView</a><li><a href=https://github.com/microsoft/MixedReality-WebRTC>針對 HoloLens 優化的 WebRTC</a>></td>
 </tr>
 <tr>
 <td>HoloLens 2 的設計和開發指引</td><td>2019 年 10 月</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/>混合現實總覽</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/design>設計與原型設計</a><li><a href=https://docs.microsoft.com/windows/mixed-reality/development>開發人員工具和架構</a></td>
@@ -50,6 +50,6 @@ ms.locfileid: "112110086"
   <td>Unreal 上的新資訊</td><td>2019 年 10 月</td><td> <ul><li><a href=https://docs.microsoft.com/windows/mixed-reality/unreal-development-overview>Unreal 開發概觀</a></td>
 </tr>
 <tr>
-  <td>Microsoft 流暢設計</td><td>2019 年 10 月</td><td> <ul><li><a href=https://www.microsoft.com/design/fluent/>混合現實設計頁面</a></td>
+  <td>Microsoft Fluent 設計</td><td>2019 年 10 月</td><td> <ul><li><a href=https://www.microsoft.com/design/fluent/>混合現實設計頁面</a></td>
 </tr>
 </table>

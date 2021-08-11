@@ -5,13 +5,13 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/03/2019
 ms.topic: article
-keywords: Windows Mixed Reality、設計、樣式、字型、印刷樣式、ui、ux、文字、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 015273c84462e48e145af77421da4131bb650d9e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality、設計、樣式、字型、印刷樣式、ui、ux、文字、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: 7df2386f3478c0b0b79d198a3342bc9a9a061f6e5a305baedcd91be9c2f09f04
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98580278"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200282"
 ---
 # <a name="typography"></a>印刷樣式
 
@@ -22,7 +22,7 @@ ms.locfileid: "98580278"
 
 當我們談到3D 中的型別時，我們傾向于將體積型的3D 文字視為已延伸。 除了部分商標設計和一些其他有限的應用程式以外，已拉伸的文字通常會降低文字的可讀性。 雖然我們正在設計3D 的體驗，但我們使用2D 作為型別，因為它比較清楚且更容易閱讀。
 
-在 HoloLens 中，類型是使用以加法色彩系統為基礎的輕量來建立。 就像其他的全像投影一樣，可以將型別放在實際的環境中，讓它可以從任何角度鎖定並觀察到。 型別和環境之間的 [視差](https://en.wikipedia.org/wiki/Parallax) 效果，也增加了體驗的深度。
+在 HoloLens 中，類型是使用以加總色彩系統為基礎的輕量來構成。 就像其他的全像投影一樣，可以將型別放在實際的環境中，讓它可以從任何角度鎖定並觀察到。 型別和環境之間的 [視差](https://en.wikipedia.org/wiki/Parallax) 效果，也增加了體驗的深度。
 
 ## <a name="typography-in-mixed-reality"></a>混合現實中的印刷樣式
 
@@ -37,17 +37,17 @@ ms.locfileid: "98580278"
 
 ### <a name="limit-your-fonts"></a>限制字型
 
-避免在單一內容中使用兩個以上的不同字型系列。 太多字型會中斷您的體驗的顏色與一致性，並使其更難以取用資訊。 在 HoloLens 中，由於資訊是在實體環境的最上層進行重迭，因此使用太多字型樣式將會降低體驗。 Segoe UI 是所有 Microsoft 數位設計的字型。 它會在 Windows Mixed Reality shell 中一致地使用。 您可以從 [Windows 設計工具組頁面](/windows/uwp/design-downloads/)下載 Segoe UI 字型檔案。
+避免在單一內容中使用兩個以上的不同字型系列。 太多字型會中斷您的體驗的顏色與一致性，並使其更難以取用資訊。 在 HoloLens 中，由於資訊會重迭在實體環境的最上方，因此使用太多字型樣式將會降低體驗。 Segoe UI 是所有 Microsoft 數位設計的字型。 它會在 Windows Mixed Reality shell 中一致地使用。 您可以從[Windows 設計工具組頁面](/windows/uwp/design-downloads/)下載 Segoe UI 字型檔。
 
 [Segoe UI 字樣的詳細資訊](/windows/uwp/design/style/typography)
 
 ### <a name="avoid-thin-font-weights"></a>避免細字型粗細
 
-請避免針對 42 pt 的類型大小使用淺色或 semilight 做字型粗細，因為精簡型垂直筆觸會震動並降低可讀性。 具有足夠筆觸粗細的新式字型可正常運作。 例如，使用標準或粗體權數，HoloLens 中的 Helvetica 和 Arial 可以清晰地顯示。
+請避免針對 42 pt 的類型大小使用淺色或 semilight 做字型粗細，因為精簡型垂直筆觸會震動並降低可讀性。 具有足夠筆觸粗細的新式字型可正常運作。 例如，在使用一般或粗體權數的 HoloLens 中，可以辨認 Helvetica 和 Arial。
 
 ### <a name="color"></a>Color
 
-在 HoloLens 中，因為全像是以加總的燈光系統來建造全像系統，所以白色文字很清晰。 您可以在 [開始] 功能表和應用程式行中找到白色文字的範例。 即使白色文字在 HoloLens 沒有背面的情況下正常運作，但複雜的實體背景也可能使類型難以閱讀。 我們建議您在深色或彩色背板上使用白色文字，以改善使用者的焦點，並將實體背景的干擾降至最低。
+在 HoloLens 中，由於會使用加總的燈光系統來建立全像影像，因此可高度辨認白色文字。 您可以在 [開始] 功能表和應用程式行中找到白色文字的範例。 即使白色文字沒有 HoloLens 的後置板也沒用，但是複雜的實體背景可能會使類型難以閱讀。 我們建議您在深色或彩色背板上使用白色文字，以改善使用者的焦點，並將實體背景的干擾降至最低。
 
 <br>
 
@@ -97,7 +97,7 @@ ms.locfileid: "98580278"
 | 2分鐘 | 0.6 °-0.75 ° | 20.9-26.2 mm | 59.4-74.2 pt |
 
 
-Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 請避免使用較小的淺色或半淺色字型系列，因為精簡型垂直筆觸會震動，而且會降低可讀性。 具有足夠筆觸粗細的新式字型可正常運作。 例如，Helvetica 和 Arial 外觀美觀，而且在 HoloLens 中會使用一般或粗體權數來辨認。
+Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 請避免使用較小的淺色或半淺色字型系列，因為精簡型垂直筆觸會震動，而且會降低可讀性。 具有足夠筆觸粗細的新式字型可正常運作。 例如，Helvetica 和 Arial 外觀美觀，而且在具有一般或粗體權數的 HoloLens 中很清晰。
 
 **如需 Unity 中文字大小計算的詳細資訊，請參閱 [unity 中的文字](../develop/unity/text-in-unity.md)**
 
@@ -117,7 +117,7 @@ Segoe UI (Windows) 的預設字型在大部分情況下都能順利運作。 請
     ### <a name="hololens-fontbr"></a>[HoloLens 字型](https://download.microsoft.com/download/3/8/D/38D659E2-4B9C-413A-B2E7-1956181DC427/Hololens%20font.zip)<br>
      (Zip 檔案) <br>
     <br>
-    *影像： HoloLens 字型提供 Windows Mixed Reality 中使用的符號圖像。*
+    *影像： HoloLens 字型可提供您在 Windows Mixed Reality 中使用的符號圖像。*
     :::column-end:::
         :::column:::
         ![HoloLens 字型可提供您在 Windows Mixed Reality 中使用的符號字元](images/hololensmdl2symbols.jpg)<br>

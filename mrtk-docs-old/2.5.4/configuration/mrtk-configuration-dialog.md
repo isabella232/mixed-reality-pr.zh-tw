@@ -1,16 +1,16 @@
 ---
 title: MRTK_Configuration_Dialog
-description: 在 Unity 專案中設定 MRTK
+description: 在 Unity 中設定 MRTK Project
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity
-ms.openlocfilehash: 74c7f411f0be5ac4ecc2d70767335fb3a20ce8f4
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Unity
+ms.openlocfilehash: ac3dac7e73cca7c600db6aea4bef304870a42e6765dc318854dc1233ee9e8ed5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104682181"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225350"
 ---
 # <a name="mrtk-project-configuration-dialog"></a>MRTK 專案設定對話方塊
 
@@ -21,7 +21,7 @@ ms.locfileid: "104682181"
 若要套用變更，請按一下 **[套用** ] 按鈕。 **稍後** 的按鈕會延後變更，直到未來重新載入專案為止。
 
 > [!NOTE]
-> 如果有一或多個建議的設定保持未核取狀態，則 [設定] 對話方塊會再次出現。 若要避免發生這種情況，請套用所需的選項，然後透過 **混合現實工具** 組公用程式來重新開機對話方塊，  >    >  **設定 Unity 專案**，然後按一下 [**忽略**]。 這可防止設定對話方塊自動再次出現。
+> 如果有一或多個建議的設定保持未核取狀態，則 [設定] 對話方塊會再次出現。 若要避免發生這種情況，請套用所需的選項，然後透過 **混合現實工具** 組  >  **公用程式**  >  **設定 Unity Project** 重新開機對話方塊，然後按一下 [**略** 過]。 這可防止設定對話方塊自動再次出現。
 
 ## <a name="common-settings"></a>一般設定
 
@@ -37,11 +37,11 @@ ms.locfileid: "104682181"
 
 **Unity 2018**
 
-在 **Player 設定**  >  **XR 設定中設定** 虛擬實境支援的虛擬實境 SDK 選項。
+在 **Player 設定**  >  **XR 設定** 中設定虛擬實境支援的虛擬實境 SDK 選項。
 
 ### <a name="set-single-pass-instanced-rendering-path"></a>設定單一傳遞實例轉譯路徑
 
-將 **播放機設定**  >  **XR 設定**  >  **身歷聲轉譯模式** 設定為 **單一階段實例**。
+將 **玩家設定**  >  **XR 設定**  >  **身歷聲轉譯模式** 設定為 **單一階段實例**。
 
 ### <a name="set-default-spatial-awareness-layer"></a>設定預設空間感知層
 
@@ -60,13 +60,13 @@ ms.locfileid: "104682181"
 
 Microsoft 提供的空間定位器可支援 HoloLens 2 上硬體加速的使用。
 
-此空間定位器可透過 [NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/) 和 [GitHub](https://github.com/microsoft/spatialaudio-unity)取得。
+此空間定位器可透過[NuGet](https://www.nuget.org/packages/Microsoft.SpatialAudio.Spatializer.Unity/)和[GitHub](https://github.com/microsoft/spatialaudio-unity)取得。
 
 如需 Microsoft 空間定位器的詳細資訊，請參閱 [空間音效檔](https://docs.microsoft.com/windows/mixed-reality/spatial-sound-in-unity)。
 
 - MS HRTF 空間定位器
 
-Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality 和 Windows XR 平臺套件的一部分。
+由 Unity 提供的 Microsoft Windows 空間定位器，作為 Windows Mixed Reality 和 Windows XR 平臺套件的一部分。
 
 - 共振音訊
 
@@ -105,7 +105,7 @@ Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality �
 **Unity 2019.3 和更新版本**
 
 在最新版的 Unity 2019 中，當啟用 [圖形工作] 時，應用程式會在部署到 HoloLens 2 時損毀。
-在 Unity 中，預設會啟用這項設定，但此錯誤存在 (查看 [Unity bug](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)) ，設定程式會預設為將圖形作業設定為 [false] (因此可讓部署到 HoloLens 2 的應用程式不會損毀) 。
+在 Unity 中，預設會啟用這項設定，但此錯誤存在 (查看[Unity bug](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)) ，設定程式會預設為將圖形作業設定為 [false] (因此可讓部署到 HoloLens 2 的應用程式不會損毀) 。
 
 ## <a name="android-settings"></a>Android 設定
 
@@ -115,11 +115,11 @@ Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality �
 
 ### <a name="disable-multi-threaded-rendering"></a>停用多執行緒轉譯
 
-停  >    >  用由 Android 的 AR 支援所需的其他設定 **多執行緒** 轉譯的播放程式設定。
+停用 **播放機設定**  >  **其他設定**  >  **多執行緒** 轉譯，如 Android 的 AR 支援所要求。
 
 ### <a name="set-minimum-api-level"></a>設定最小 API 層級
 
-將 [   >  **其他設定** 的  >  **最小 API 層級**] 設定的值設定為強制執行 AR 應用程式的作業系統需求。
+將 Player 的值設定 **設定**  >  **其他設定** 的  >  **最小 API 層級**，以強制執行 AR 應用程式的作業系統需求。
 
 ## <a name="ios-settings"></a>iOS 設定
 
@@ -129,12 +129,12 @@ Unity 提供的 Microsoft Windows 空間定位器，是 Windows Mixed Reality �
 
 ### <a name="set-required-os-version"></a>設定必要的 OS 版本
 
-設定 [播放程式 **設定**] 的值 [  >  **其他設定**  >  **目標最小 iOS 版本**]，以強制執行 AR 應用程式的作業系統需求。
+將 [播放程式] 的值設定 **設定**  >  **其他設定**  >  **目標最小 iOS 版本**，以強制執行 AR 應用程式的作業系統需求。
 
 ### <a name="set-required-architecture"></a>設定必要的架構
 
-設定 [ **Player 設定**  >  **其他設定**]  >  **架構** 的值，以強制執行 AR 應用程式的平臺需求。
+設定 **Player 設定**  >  **其他設定**  >  **架構** 的值，以強制執行 AR 應用程式的平臺需求。
 
 ### <a name="set-camera-usage-descriptions"></a>設定相機使用方式描述
 
-設定 [播放程式 **設定**] 的值  >  **其他設定**  >  **相機** 使用方式描述，以要求使用裝置相機的許可權。
+設定播放程式的值 **設定**  >  **其他設定**  >  **相機** 使用方式描述，用來要求許可權以使用裝置的相機。

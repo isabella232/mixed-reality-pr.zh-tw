@@ -7,12 +7,12 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal、Unreal Engine 4、editor extensions、Unreal editor、UE4、HoloLens、HoloLens 2、mixed reality、開發、檔、指南、功能、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、移植、升級
-ms.openlocfilehash: ee0ba5d1d60b83dc334204e12283c76a877b4ec8
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 91d9a84e4e19cb7f0f2bf54060b45da1767b8d50cdfeb5655f5e58a29d45a702
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "98584796"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226620"
 ---
 # <a name="editor-extensions-in-unreal"></a>Unreal 中的編輯器延伸模組
 
@@ -43,7 +43,7 @@ Unreal 提供一組豐富的功能，可讓您自訂引擎以滿足您的需求�
 
 每當您想要加入新的 UI 元素，以修改 Unreal 編輯器的消費者介面 (UI) 時，您都可以使用 [編輯器公用程式小工具](https://docs.unrealengine.com/InteractiveExperiences/UMG/UserGuide/EditorUtilityWidgets/index.html) 。 編輯器公用程式 widget 以 Unreal 動畫圖形為基礎， (UMG) ，因此您可以在藍圖中設定 widget，如同任何其他 UMG Widget 藍圖一樣。
 
-這些小工具專為編輯器 UI 而設計，您可以使用它們來建立自訂編輯器索引標籤。 然後，您可以從 Windows 功能表選取這些自訂索引標籤，就像您選取現有的編輯器索引標籤一樣。
+這些小工具專為編輯器 UI 而設計，您可以使用它們來建立自訂編輯器索引標籤。 然後，您可以從 Windows] 功能表中選取這些自訂索引標籤，就像您選取現有的編輯器索引標籤一樣。
 
 ## <a name="plugins"></a>外掛程式
 

@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 51c62468f0f13b390bf003e05d44cbe2e2f3be05
-ms.sourcegitcommit: c199872c11adae7de24929ed043ea90dea087b3e
+ms.openlocfilehash: a359bf0101c579bbad8a2671b84d019a6ac53a36a53679bcaff5774694901850
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/28/2020
-ms.locfileid: "92903123"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200154"
 ---
 # <a name="openxr"></a>[OpenXR](#tab/openxr)
 

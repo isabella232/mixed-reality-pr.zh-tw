@@ -1,24 +1,24 @@
 ---
 title: HoloLens (第1代) 空間 220-空間音效
-description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來學習空間音效概念的詳細資料。
+description: 遵循此程式碼逐步解說使用 Unity、Visual Studio 和 HoloLens 來瞭解空間音效概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間音效、HoloLens、混合現實學院、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 789f4da924c00554042ad991cc5610d3e816f12d
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、空間音效、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: d53b449916405d8bf42bb8dd63cc1d3cb5d6127bbf9b2989ce7cb09c3762a6e6
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269994"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115200372"
 ---
 # <a name="hololens-1st-gen-spatial-220-spatial-sound"></a>HoloLens (第1代) 空間220：空間音效
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
-[空間音效](../../../design/spatial-sound.md) breathes 生活進入全像全球，並讓他們在世界各地都存在。 全像投影是由光線和音效所組成，如果您似乎無法看見您的全像影像，空間音效可以協助您找到它們。 空間音效與您在無線電上聽到的一般音效不一樣，它是位於3D 空間的音效。 有了空間音效，您就可以讓像是在您後方、您或甚至是在您的頭上的全像投影一樣： 在此課程中，您將會：
+[空間音效](../../../design/spatial-sound.md) breathes 生活進入全像全球，並讓他們在世界各地都存在。 全像投影是由燈光和音效所組成，而且如果您似乎無法看見您的全像照片，空間音效可以協助您找到它們。 空間音效與您在無線電上聽到的一般音效不一樣，它是位於3D 空間的音效。 有了空間音效，您就可以讓像是在您後方、您或甚至是在您的頭上的全像投影一樣： 在此課程中，您將會：
 
 * 設定您的開發環境以使用 Microsoft 空間音效。
 * 使用空間音效來增強互動。
@@ -54,7 +54,7 @@ ms.locfileid: "106269994"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-220-SpatialSound)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-220-SpatialSound)取得。
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
@@ -74,13 +74,13 @@ ms.locfileid: "106269994"
 * 流覽至您的桌面，並尋找您先前取消封存的資料夾。
 * 按一下 [ **Starting\Decibel** ] 資料夾，然後按下 [ **選取資料夾** ] 按鈕。
 * 等候專案在 Unity 中載入。
-* 在 [ **專案** ] 面板中，開啟 [ **Scenes\Decibel.unity**]。
+* 在 **Project** 面板中，開啟 **Scenes\Decibel.unity**。
 * **在 [階層**] 面板中，展開 [ **HologramCollection** ]，然後選取 [ **P0LY**]。
 * 在 [偵測器] 中，展開 [ **spatialize** ]，並注意 [沒有 **Spatialize** ] 核取方塊。
 
 根據預設，Unity 不會載入空間定位器外掛程式。 下列步驟將會在專案中啟用空間音效。
 
-* 在 Unity 的頂端功能表中，移至 [ **編輯 > 專案設定 > 音訊**]。
+* 在 Unity 的頂端功能表中，移至 [**編輯] > Project 設定 > 音訊**]。
 * 尋找 [ **空間定位器外掛程式** ] 下拉式清單，然後選取 [ **MS HRTF 空間定位器**]。
 * **在 [階層**] 面板中，選取 [ **HologramCollection > P0LY**]。
 * 在 [偵測 **器** ] 面板中，尋找 **音訊來源** 元件。
@@ -89,10 +89,10 @@ ms.locfileid: "106269994"
 
 我們現在會在 Unity 中建立專案，並在 Visual Studio 中設定解決方案。
 
-1. 在 Unity 中，選取 [ **File > Build Settings**]。
+1. 在 Unity 中，選取 [ **File > Build 設定**]。
 2. 按一下 [ **新增開啟場景** ] 以加入場景。
 3. 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
-4. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
+4. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設為 **HoloLens**。 否則，請將它保留在 **任何裝置** 上。
 5. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
 6. 按一下 [建置]。
 7. 建立名為 "App" 的 **新資料夾** 。
@@ -102,14 +102,14 @@ ms.locfileid: "106269994"
 當 Unity 完成時，將會出現檔案總管視窗。
 
 1. 開啟 **應用程式** 資料夾。
-2. 開啟 [ **分貝 Visual Studio] 解決方案**。
+2. 開啟 [**分貝 Visual Studio] 解決方案**。
 
-如果要部署到 HoloLens：
+如果部署至 HoloLens：
 
 1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
 2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+3. 輸入 **您的 HoloLens 裝置 IP 位址**，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 **設定 > 網路 & 網際網路 > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將[它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 
 如果部署到沉浸式耳機：
 
@@ -142,7 +142,7 @@ ms.locfileid: "106269994"
 * 在 [偵測 **器** ] 面板的 [ **spatialize**] 中，按一下 [ **AudioClip** ] 旁的圓形，然後從快顯視窗中選取 [ **PolyHover** ]。
 * 按一下 [ **輸出** ] 旁的圓形，然後從快顯視窗中選取 [ **SoundEffects** ]。
 
-專案分貝會使用 Unity **AudioMixer** 元件來調整音效群組的音效等級。 藉由以這種方式將聲音分組，可以調整整體磁片區，同時維持每個音效的相對音量。
+Project分貝使用 Unity **AudioMixer** 元件來調整音效群組的音效等級。 藉由以這種方式將聲音分組，可以調整整體磁片區，同時維持每個音效的相對音量。
 
 * 在 **spatialize** 中，展開 [ **3d 音效設定**]。
 * 將 **Doppler 層級** 設定為 **0**。
@@ -194,7 +194,7 @@ ms.locfileid: "106269994"
 
 #### <a name="build-and-deploy"></a>建置和部署
 
-1. 在 Unity 中，選取 [ **File > Build Settings**]。
+1. 在 Unity 中，選取 [ **File > Build 設定**]。
 2. 按一下 [建置]。
 3. 按一下 **應用程式** 資料夾。
 4. 按下 [ **選取資料夾**]。
@@ -266,7 +266,7 @@ RaycastNonAlloc 方法會用來做為效能優化，以限制配置以及傳回�
 * 針對每個遇到的 **IAudioInfluencer** ，會呼叫 **ApplyEffect** 方法。
 * 針對不再遇到的每個先前 **IAudioInfluencer** ，請呼叫 **RemoveEffect** 方法。
 
-請注意，AudioEmitter 會更新人為時間刻度，而不是每個畫面上的。 這樣做的原因是因為人們通常不會移動到足夠的速度，因此效果必須比每一季或半秒更頻繁地更新。 從某個位置快速傳送到另一個位置的全像影像，可能會破壞假像。
+請注意，AudioEmitter 會更新人為時間刻度，而不是每個畫面上的。 這樣做的原因是因為人們通常不會移動到足夠的速度，因此效果必須比每一季或半秒更頻繁地更新。 從某個位置快速傳送到另一個位置的全像投影，可能會破壞假像。
 
 * **在 [階層**] 面板中，展開 [ **HologramCollection**]。
 * 展開 [ **EnergyHub** ]，然後選取 [ **BlobOutside**]。
@@ -377,11 +377,11 @@ HoloLens 是完全獨立的非網路共用全像電腦。 在移動時，您的�
 
 ### <a name="part-2---sound-mixing"></a>第2部分-音效混合
 
-#### <a name="target-your-mix-for-70-volume-on-the-hololens"></a>將您在 HoloLens 上的70% 磁片區混合設為目標
+#### <a name="target-your-mix-for-70-volume-on-the-hololens"></a>針對 HoloLens 上的70% 磁片區混合設定目標
 
 混合現實體驗可讓您在真實世界中看到全像影像。 它們也應該讓真實的聲音聽起來。 70% 的磁片區目標可讓使用者在世界各地聆聽您的體驗。
 
-#### <a name="hololens-at-100-volume-should-drown-out-external-sounds"></a>100% 磁片區的 HoloLens 應下拉式清單外部聲音
+#### <a name="hololens-at-100-volume-should-drown-out-external-sounds"></a>位於100% 的 HoloLens 磁片區應下拉式清單外部聲音
 
 磁片區層級100% 類似于虛擬實境體驗。 使用者會以視覺化方式傳送到不同的世界。 相同的語音也是如此。
 
@@ -409,7 +409,7 @@ HoloLens 是完全獨立的非網路共用全像電腦。 在移動時，您的�
 
 ### <a name="part-3--performance"></a>第3部分-效能
 
-#### <a name="cpu-usage"></a>CPU 使用量
+#### <a name="cpu-usage"></a>CPU 使用率
 
 使用空間音效時，10-12 發射器將耗用大約12% 的 CPU。
 
@@ -425,10 +425,10 @@ HoloLens 是完全獨立的非網路共用全像電腦。 在移動時，您的�
 
 ### <a name="objectives"></a>目標
 
-* 將深度新增至「魔術視窗」。
+* 將深度新增至「魔術 Windows」。
 * 將使用者帶入虛擬世界。
 
-### <a name="magic-windows"></a>魔術視窗
+### <a name="magic-windows"></a>魔術 Windows
 
 #### <a name="key-concepts"></a>重要概念
 
@@ -443,7 +443,7 @@ HoloLens 是完全獨立的非網路共用全像電腦。 在移動時，您的�
 
 **Spatialize** 元件將會新增至 **VoiceSource**。
 
-* 在 **spatialize** 中，將 [ **輸出** ] 設定為 **UserVoice (混音器)**。
+* 在 **spatialize** 中，將 [**輸出**] 設定為 **UserVoice (Mixer)**。
 * 核取 [ **Spatialize** ] 核取方塊。
 * 將 **空間 Blend** 滑杆拖曳至 **3d**，或在編輯方塊中輸入 **1** 。
 * 展開 [ **3D 音效設定**]。

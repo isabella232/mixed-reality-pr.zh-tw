@@ -8,20 +8,20 @@ ms.topic: article
 keywords: 全像投影、穩定性、hololens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、畫面播放速率、轉譯、reprojection、色彩分隔
 appliesto:
 - HoloLens
-ms.openlocfilehash: a4a22221d3238bb7dfed711e6ee1f11edc70238e
-ms.sourcegitcommit: 12ea3fb2df4664c5efd07dcbb9040c2ff173afb6
+ms.openlocfilehash: a9a260208764db86d3a2d945cb6a1a611e66848889dfc228d9341f10b8e054ef
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/29/2021
-ms.locfileid: "113042289"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198810"
 ---
 # <a name="hologram-stability"></a>全像投影穩定性
 
-為了達成穩定的全像，HoloLens 有內建的影像穩定管線。 穩定管線會在背景中自動運作，因此您不需要採取任何額外的步驟來啟用它。 不過，您應該練習改善全像全像的技術，並避免降低穩定性的案例。
+為了達成穩定的全像，HoloLens 擁有內建的影像穩定管線。 穩定管線會在背景中自動運作，因此您不需要採取任何額外的步驟來啟用它。 不過，您應該練習改善全像全像的技術，並避免降低穩定性的案例。
 
 ## <a name="hologram-quality-terminology"></a>全像影像品質術語
 
-全像是環境和良好應用程式開發的結果。 在 HoloLens 可以追蹤周圍的環境中，每秒在常數60畫面格上執行的應用程式，可確保全像影像和相符的座標系統都處於同步狀態。從使用者的觀點來看，要成為固定的全像全像，不會隨著環境而移動。
+全像是環境和良好應用程式開發的結果。 在 HoloLens 可追蹤周圍的環境中，每秒在常數60畫面格執行的應用程式，可確保全像全像座標系統同步。從使用者的觀點來看，要成為固定的全像全像，不會隨著環境而移動。
 
 當您識別環境的問題、不一致或低轉譯率，或其他任何情況時，下列術語可以協助您。
 * **精度。** 一旦全像世界鎖定並放在現實世界中，就應該將它放在相對於周圍環境的位置，以及與使用者移動或小型和稀疏的環境變更無關。 如果在非預期的位置中出現的全息圖，則是 *精確度* 問題。 如果兩個不同的房間看起來相同，就會發生這種情況。
@@ -29,21 +29,21 @@ ms.locfileid: "113042289"
 * **Judder.** 低轉譯頻率會導致不平均的移動和雙空間影像。 Judder 在具有移動功能的全像影像中特別明顯。 開發人員必須維持 [固定的 60 FPS](hologram-stability.md#frame-rate)。
 * **漂移。** 使用者會看到因為全像全像投影一樣的漂移。 當您放置離 [空間錨點遠離空間錨點](../../design/spatial-anchors.md)（尤其是在環境未對應的部分）時，就會發生漂移。 建立接近空間錨點的全像影像，可降低漂移的可能性。
 * **Jumpiness.** 當全像的位置，而不是在它的位置， Jumpiness 可能會隨著追蹤調整，以符合對您環境的更新理解。
-* **游泳。** 當與使用者前端的動作相對應的全像是 sway 時。 當應用程式未完全實 [reprojection](hologram-stability.md#reprojection)，且未針對目前使用者 [校正](/hololens/hololens-calibration) HoloLens 時，就會發生泳道。 使用者可以重新執行 [校正](/hololens/hololens-calibration) 應用程式以修正問題。 開發人員可以更新穩定平面來進一步增強穩定性。
-* **色彩分隔。** HoloLens 中的顯示為彩色順序顯示，可在 60 Hz 將紅色-綠色-藍色-綠色的色頻閃爍 (個別的色彩欄位會顯示在 240 Hz) 。 每當使用者以眼睛來追蹤移動全息圖時，該全息圖的開頭和尾端邊緣會以其構成色彩分隔，產生彩虹效果。 分隔程度取決於全息圖的速度。 在某些罕見的情況下，在查看固定的全像點時快速移動一次，也會造成彩虹的效果，稱為 *[色彩分隔](hologram-stability.md#color-separation)*。
+* **游泳。** 當與使用者前端的動作相對應的全像是 sway 時。 當應用程式未完全實[reprojection](hologram-stability.md#reprojection)，且未針對目前使用者[校正](/hololens/hololens-calibration)HoloLens 時，就會發生泳道。 使用者可以重新執行 [校正](/hololens/hololens-calibration) 應用程式以修正問題。 開發人員可以更新穩定平面來進一步增強穩定性。
+* **色彩分隔。** HoloLens 中的顯示器是以色彩順序顯示，可在 60 hz 將紅色-綠色-藍色-綠色的色頻閃爍 (在 240 hz) 顯示個別的色彩欄位。 每當使用者以眼睛來追蹤移動全息圖時，該全息圖的開頭和尾端邊緣會以其構成色彩分隔，產生彩虹效果。 分隔程度取決於全息圖的速度。 在某些罕見的情況下，在查看固定的全像點時快速移動一次，也會造成彩虹的效果，稱為 *[色彩分隔](hologram-stability.md#color-separation)*。
 
 ## <a name="frame-rate"></a>畫面播放速率
 
-畫面播放速率是全像全像要件的第一次的影像。 若要讓全像全球的影像顯示穩定，則呈現給使用者的每個影像都必須以正確的位置繪製影像。 HoloLens 重新整理240次時，會顯示四個不同的色彩欄位給每個新轉譯的影像，讓使用者體驗 60 FPS (每秒畫面格) 。 為了盡可能提供最佳體驗，應用程式開發人員必須維持 60 FPS，這會轉譯成每16毫秒都能以一致的方式提供新的映射給作業系統。
+畫面播放速率是全像全像要件的第一次的影像。 若要讓全像全球的影像顯示穩定，則呈現給使用者的每個影像都必須以正確的位置繪製影像。 顯示 HoloLens 重新整理240次，並顯示每個新轉譯影像四個不同的色彩欄位，讓使用者體驗 60 FPS (每秒畫面格) 。 為了盡可能提供最佳體驗，應用程式開發人員必須維持 60 FPS，這會轉譯成每16毫秒都能以一致的方式提供新的映射給作業系統。
 
-**60 FPS** 為了繪製像是坐在現實世界的全像桌，HoloLens 需要從使用者的位置呈現影像。 由於影像轉譯需要一些時間，因此 HoloLens 會預測使用者的標頭在顯示中顯示時的位置。 不過，此預測演算法是近似值。 HoloLens 的硬體會調整轉譯的影像，以考慮預測的標頭位置與實際的 head 定位之間的差異。 調整會讓使用者看到的影像看起來像是從正確的位置轉譯，而全像是穩定的。 映射更新最適用于小型變更，而且無法完整修正轉譯影像中的特定專案，例如視差。
+**60 FPS** 若要繪製像是坐在現實世界的全像桌，HoloLens 需要從使用者的位置轉譯影像。 由於影像轉譯需要一些時間，HoloLens 預測當顯示器顯示影像時，使用者的標頭會在哪裡。 不過，此預測演算法是近似值。 HoloLens 的硬體會調整轉譯的影像，以考慮預測的標頭位置與實際的 head 定位之間的差異。 調整會讓使用者看到的影像看起來像是從正確的位置轉譯，而全像是穩定的。 映射更新最適用于小型變更，而且無法完整修正轉譯影像中的特定專案，例如視差。
 
 藉由轉譯 60 FPS，您會執行三個動作來協助您建立穩定的全像：
 1. 將轉譯影像和使用者看到的影像之間的整體延遲降至最低。 在具有遊戲的引擎和在密集建置中執行的轉譯執行緒中，在30FPS 上執行時，可能會增加33.3 毫秒的額外延遲。 減少延遲可減少預測錯誤，並增加全像全像的穩定性。
 2. 讓每個影像觸達使用者的眼睛，都有一致的延遲時間。 如果您在 30 fps 的情況下轉譯，顯示器仍會以 60 FPS 顯示影像，這表示相同的影像會顯示在資料列中兩次。 第二個框架的延遲比第一個畫面的延遲16.6 還要高，且必須更正更顯著的錯誤數量。 這種錯誤的大小不一致可能會造成不必要的 60 Hz judder。
 3. 減少出現顫抖，它的特色是不平均的運動和雙重影像。 更快的全像投影動作和更低的轉譯率與更明顯的顫抖相關聯。 隨時致力於維護 60 FPS，將有助於避免特定移動全息圖的 judder。
 
-**畫面播放速率一致性** 畫面播放速率一致性就像每秒高框架一樣重要。 針對任何內容豐富的應用程式，偶爾會捨棄的框架是不可避免的，而 HoloLens 會實行一些精密的演算法來從偶爾的問題中復原。 不過，不斷變動的畫面播放速率對使用者而言，比以較低的畫面播放速率一致地執行更為明顯。 例如，在這五個畫面的持續時間內，針對五個框架順暢轉譯的應用程式 (60 FPS) 然後卸載接下來10個畫面格的每個其他畫面格 (30 FPS，在這10個畫面的持續時間內，) 將會比一致呈現 30 FPS 的應用程式更不穩定。
+**畫面播放速率一致性** 畫面播放速率一致性就像每秒高框架一樣重要。 針對任何內容豐富的應用程式，偶爾會捨棄的框架是不可避免的，而 HoloLens 則會實行一些精密的演算法來從偶爾的問題中復原。 不過，不斷變動的畫面播放速率對使用者而言，比以較低的畫面播放速率一致地執行更為明顯。 例如，在這五個畫面的持續時間內，針對五個框架順暢轉譯的應用程式 (60 FPS) 然後卸載接下來10個畫面格的每個其他畫面格 (30 FPS，在這10個畫面的持續時間內，) 將會比一致呈現 30 FPS 的應用程式更不穩定。
 
 在相關的附注中，當 [混合的現實 capture](/hololens/holographic-photos-and-videos) 正在執行時，作業系統會將應用程式限制為 30 FPS。
 
@@ -64,7 +64,7 @@ ms.locfileid: "113042289"
 
 聚合和便利的獨特之處在于，其視網膜的提示與眼睛如何變化來觀察不同距離的物件有關。 在自然觀賞中，聚合和住宿都已連結。 當眼睛接近 (例如，您的鼻子) 、眼睛交叉及接近接近的點。 當眼睛是無限大的地方時，眼睛會變成平行，而眼睛則會容納到無限大。 
 
-使用 HoloLens 的使用者永遠都能容納 2.0 m，以維護清楚的影像，因為 HoloLens 顯示器是固定的，而與使用者之間的距離大約是 2.0 m。 應用程式開發人員藉由在不同的深度放置內容和全息，來控制使用者的眼睛。 當使用者配合並融合至不同的距離時，兩個提示之間的自然連結會中斷，而這可能會導致 visual 不適感或疲勞，特別是當衝突的程度很大時。 
+戴 HoloLens 的使用者永遠都能容納 2.0 m 來維持清晰的影像，因為 HoloLens 顯示器是固定的，而不是使用者的距離 2.0 m。 應用程式開發人員藉由在不同的深度放置內容和全息，來控制使用者的眼睛。 當使用者配合並融合至不同的距離時，兩個提示之間的自然連結會中斷，而這可能會導致 visual 不適感或疲勞，特別是當衝突的程度很大時。 
 
 不適感自 vergence-住宿衝突可以避免或最小化，方法是將交集內容保持在接近 2.0 m 的位置， (也就是，在有許多深度放置接近 2.0 m 的地方時，可能) 。 當內容不能放在 2.0 m 附近時，當使用者在不同距離之間回頭看時，從 vergence-住宿衝突的不適感是最大的。 換句話說，觀看保持在 50 公分距離的固定全像投影，比觀看在 50 公分距離而隨著時間離您忽遠忽近的全像投影，要來得舒適。
 
@@ -85,17 +85,17 @@ HoloLens 有一種精密的硬體輔助全像全像 reprojection。 Reprojection
 Reprojection 有四種主要類型
 * **深度 Reprojection：**  從應用程式產生最少投入量的最佳結果。  轉譯的場景的所有元件都是根據與使用者的距離而獨立穩定。  某些呈現構件可能會顯示在深度的清晰變更。  此選項僅適用于 HoloLens 2 和沉浸式耳機。
 * **平面 Reprojection：**  允許應用程式精確控制穩定。  平面是由應用程式所設定，而該平面上的所有專案都是場景中最穩定的部分。  另外一個全像是平面，也就是較不穩定的平面。  此選項適用于所有 Windows MR 平臺。
-* **自動平面 Reprojection：**  系統會使用深度緩衝區中的資訊設定穩定平面。  此選項可在 HoloLens 世代1和 HoloLens 2 上使用。
+* **自動平面 Reprojection：**  系統會使用深度緩衝區中的資訊設定穩定平面。  此選項可在 HoloLens 層代1和 HoloLens 2 上取得。
 * **無：** 如果應用程式沒有執行任何動作，就會在使用者的前端的方向以2個計量器固定的穩定平面使用平面 Reprojection，通常會產生 substandard 的結果。
 
 應用程式必須採取特定動作來啟用不同類型的 reprojection
-* **深度 Reprojection：** 應用程式會針對每個呈現的畫面格，將其深度緩衝區提交至系統。  在 Unity 上，會使用 [ **XR 外掛程式管理**] 下 [ **Windows Mixed Reality 設定**] 窗格中的 [**共用深度緩衝區**] 選項來完成深度 Reprojection。  DirectX 應用程式呼叫 CommitDirect3D11DepthBuffer。  應用程式不應呼叫 SetFocusPoint。
+* **深度 Reprojection：** 應用程式會針對每個呈現的畫面格，將其深度緩衝區提交至系統。  在 Unity 上，會使用 [ **XR 外掛程式管理**] 的 [ **Windows Mixed Reality 設定**] 窗格中的 [**共用深度緩衝區**] 選項來完成深度 Reprojection。  DirectX 應用程式呼叫 CommitDirect3D11DepthBuffer。  應用程式不應呼叫 SetFocusPoint。
 * **平面 Reprojection：** 在每個畫面上，應用程式會將平面的位置告訴系統穩定。  Unity 應用程式會呼叫 SetFocusPointForFrame，且應該停用 **共用深度緩衝區** 。  DirectX 應用程式呼叫 SetFocusPoint，不應呼叫 CommitDirect3D11DepthBuffer。
-* **自動平面 Reprojection：** 若要啟用，應用程式必須將其深度緩衝區提交至系統，因為它們會進行深度 Reprojection。 使用混合現實工具組的應用程式 (MRTK) 可將 [相機設定提供者](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) 設定為使用 AutoPlanar Reprojection。 原生應用程式應該 `DepthReprojectionMode` 在 [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 中將設定為 `AutoPlanar` 每個框架。 若為 HoloLens 第1代，應用程式不應該呼叫 SetFocusPoint。
+* **自動平面 Reprojection：** 若要啟用，應用程式必須將其深度緩衝區提交至系統，因為它們會進行深度 Reprojection。 使用混合現實工具組的應用程式 (MRTK) 可將 [相機設定提供者](/windows/mixed-reality/mrtk-unity/features/camera-system/windows-mixed-reality-camera-settings#hololens-2-reprojection-method) 設定為使用 AutoPlanar Reprojection。 原生應用程式應該 `DepthReprojectionMode` 在 [HolographicCameraRenderingParameters](/uwp/api/windows.graphics.holographic.holographiccamerarenderingparameters) 中將設定為 `AutoPlanar` 每個框架。 針對 HoloLens 層代1，應用程式不應該呼叫 SetFocusPoint。
 
 ### <a name="choosing-reprojection-technique"></a>選擇 Reprojection 技術
 
-穩定類型 |    沉浸式耳機 |    HoloLens 第1代 | HoloLens 2
+穩定類型 |    沉浸式耳機 |    HoloLens 層代1 | HoloLens 2
 --- | --- | --- | ---
 深度 Reprojection |    建議 |   N/A |   建議<br/><br/>Unity 應用程式必須使用 Unity 2018.4.12 +、Unity 2019.3 + 或 Unity 2020.3 +。 否則，請使用自動平面 Reprojection。
 自動平面 Reprojection | N/A |   建議的預設值 |   如果深度 Reprojection 未提供最佳結果，則建議使用<br/><br/>建議使用 unity 應用程式來使用 Unity 2018.4.12 +、Unity 2019.3 + 或 Unity 2020.3 +。  先前的 Unity 版本將會使用稍微降低的 reprojection 結果。
@@ -118,9 +118,9 @@ HoloLens 2 具有可顯示深度為和未設定的視覺化效果，可從裝置
 
 ![3D 物件的穩定平面](images/stab-plane-500px.jpg)
 
-裝置會自動嘗試選擇此平面，但應用程式應該在場景中選取焦點點來提供協助。 在 HoloLens 上執行的 Unity 應用程式應該根據您的場景選擇最佳焦點點，並將它傳遞至 [SetFocusPoint () ](../unity/focus-point-in-unity.md)。 預設的旋轉 cube 範本中包含設定 DirectX 中焦點點的範例。
+裝置會自動嘗試選擇此平面，但應用程式應該在場景中選取焦點點來提供協助。 在 HoloLens 上執行的 Unity 應用程式應該根據您的場景選擇最佳焦點點，並將它傳遞至[SetFocusPoint () ](../unity/focus-point-in-unity.md)。 預設的旋轉 cube 範本中包含設定 DirectX 中焦點點的範例。
 
-Unity 會將您的深度緩衝區提交至 Windows，以在連線到桌上型電腦的沉浸式耳機上執行應用程式時啟用每圖元 reprojection，如此可提供更佳的影像品質，而不會由應用程式明確運作。 當您的應用程式在 HoloLens 上執行時，您應該只提供焦點點，否則將會覆寫每圖元 reprojection。
+Unity 會將您的深度緩衝區提交給 Windows，以在連線到桌上型電腦的沉浸式耳機上執行應用程式時啟用每圖元 reprojection，如此可提供更佳的影像品質，而不會由應用程式明確運作。 當您的應用程式在 HoloLens 上執行時，您應該只提供焦點點，否則將會覆寫每圖元 reprojection。
 
 
 ```cs
@@ -155,11 +155,11 @@ renderingParameters.SetFocusPoint(
 * 不要在極端之間來回變更穩定平面
 * 不要讓穩定平面設定為固定距離/方向
 * 不要讓穩定平面剪下使用者
-* 在桌上型電腦上執行時，請勿設定焦點，而是改為依賴每個圖元的深度型 reprojection。
+* 請勿在桌上型電腦上執行時設定焦點點，而不是在 HoloLens 上執行，而是改為依賴每圖元深度型 reprojection。
 
 ## <a name="color-separation"></a>色彩分隔 
 
-由於 HoloLens 顯示器的本質，有時可能會察覺稱為「色彩分隔」的成品。 它會將影像列為分隔為個別基底色彩的影像-紅色、綠色和藍色。 顯示白色物件時，可能會特別看到構件，因為它們有大量的紅色、綠色和藍色。 最重要的是，當使用者以視覺化方式追蹤在全像全像全像全像的全像影像畫面上移動的全像影像。 成品可以資訊清單的另一種方式是物件的變形/變形。 如果物件具有高對比及/或純粹的色彩（例如紅色、綠色、藍色），色彩分隔將會被視為物件的不同部分的變形。
+由於 HoloLens 的本質，有時可能會察覺稱為「色彩分隔」的成品。 它會將影像列為分隔為個別基底色彩的影像-紅色、綠色和藍色。 顯示白色物件時，可能會特別看到構件，因為它們有大量的紅色、綠色和藍色。 最重要的是，當使用者以視覺化方式追蹤在全像全像全像全像的全像影像畫面上移動的全像影像。 成品可以資訊清單的另一種方式是物件的變形/變形。 如果物件具有高對比及/或純粹的色彩（例如紅色、綠色、藍色），色彩分隔將會被視為物件的不同部分的變形。
 
 **當標頭鎖定的白色圓形游標的色彩分離時，可能看起來像是使用者將其頭部旋轉到側邊的範例：**
 

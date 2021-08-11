@@ -6,12 +6,12 @@ ms.author: hakons
 ms.date: 10/03/2019
 ms.topic: article
 keywords: ggv、語音、cortana、語音、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、注視
-ms.openlocfilehash: 6773bb71da7d98b1dd00d2246084d469e5e7c6ba
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: f7ae7ddd40fff3da660cc747d01d258b9fb0eb31f3b024ec77efd2b560e037d7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600577"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223692"
 ---
 # <a name="voice-input"></a>語音輸入
 
@@ -19,7 +19,7 @@ ms.locfileid: "110600577"
 
 語音是 HoloLens 輸入的其中一種主要形式。 它可讓您直接命令全息圖，而不需要使用 [手手勢](gaze-and-commit.md#composite-gestures)。 語音輸入是溝通意圖的一種自然方式。 語音在往返複雜介面時特別有用，因為它可讓使用者使用一個命令來剪下整個嵌套功能表。
 
-語音輸入是由在所有 _通用 Windows 應用程式_ 中支援語音的 [相同引擎](/windows/uwp/design/input/speech-recognition)所驅動。 在 HoloLens 上，語音辨識一律會以您裝置設定中所設定的 Windows 顯示語言運作。 
+語音輸入是由支援所有 _通用 Windows 應用程式_ 中語音的 [相同引擎](/windows/uwp/design/input/speech-recognition)所驅動。 在 HoloLens 上，語音辨識一律會以您裝置設定中設定的 Windows 顯示語言運作。 
 
 <br>
 
@@ -59,7 +59,7 @@ ms.locfileid: "110600577"
 
 **HoloLens (第 1 代)**
 
-即使沒有特別為您的應用程式新增語音支援，您的使用者只要說出系統 voice 命令「select」就可以啟用全像。 這 [與在 hololens 上按](gaze-and-commit.md#composite-gestures) 下滑鼠的方式相同，在 [hololens clicker](/hololens/hololens1-clicker)上按下 [選取] 按鈕，或按 [Windows Mixed Reality 運動控制器](motion-controllers.md)上的觸發程式。 您將聽到音效，並看到具有 [選取] 的工具提示顯示為 [確認]。 「選取」是由低功率關鍵字偵測演算法所啟用，這表示您可以隨時以最少的電池壽命來表示。 您甚至可以說：「選取」您的手邊。
+即使沒有特別為您的應用程式新增語音支援，您的使用者只要說出系統 voice 命令「select」就可以啟用全像。 這與在 HoloLens、按下[HoloLens clicker](/hololens/hololens1-clicker)上的 [選取] 按鈕，或在[Windows Mixed Reality 移動控制器](motion-controllers.md)上按下[觸發程式的](gaze-and-commit.md#composite-gestures)方式相同。 您將聽到音效，並看到具有 [選取] 的工具提示顯示為 [確認]。 「選取」是由低功率關鍵字偵測演算法所啟用，這表示您可以隨時以最少的電池壽命來表示。 您甚至可以說：「選取」您的手邊。
 
 <br>
 
@@ -84,9 +84,9 @@ ms.locfileid: "110600577"
 
 ## <a name="hey-cortana"></a>嗨 Cortana
 
-您可以說「嗨 Cortana」，隨時都能顯示 Cortana。 您不必等待她繼續詢問您的問題，或為她提供指示。 例如，請嘗試說「嗨 Cortana，天氣是什麼？」 作為單一句子。 如需 Cortana 和您可以做什麼的詳細資訊，請洽詢她的！ 說「嗨 Cortana，我可以說什麼？」 她將會提取一份工作和建議的命令清單。 如果您已經在 Cortana 應用程式中，請選取 [ **？** ] 圖示，以提取這個相同的功能表。
+您可以說「嗨 Cortana」，隨時啟動 Cortana。 您不必等待她繼續詢問您的問題，或為她提供指示。 例如，請嘗試說「嗨 Cortana，天氣是什麼？」 作為單一句子。 如需 Cortana 的詳細資訊和您可以做的事，請詢問她！ 說「嗨 Cortana，我可以說什麼？」 她將會提取一份工作和建議的命令清單。 如果您已經在 Cortana 應用程式中，請選取 [ **？** ] 圖示，以提取這個相同的功能表。
 
-**HoloLens 專用的命令**
+**HoloLens 特定的命令**
 * 「我可以說什麼？」
 * 「移至開始」-而不是 [bloom](system-gesture.md#bloom) 來進入 [開始功能表](../discover/navigating-the-windows-mixed-reality-home.md#start-menu)
 * 「啟動 <app> 」
@@ -104,7 +104,7 @@ ms.locfileid: "110600577"
 * 「關閉裝置」
 * 「重新開機裝置」
 * 「移至睡眠」
-* 「這是什麼時候？」
+* "What time is it?" (現在幾點？)
 * 「我剩下多少電池？」
 
 <br>
@@ -114,7 +114,7 @@ ms.locfileid: "110600577"
 :::row:::
     :::column:::
         ## <a name="see-it-say-itbr"></a>「看它，說它」<br>
-        HoloLens 具有語音輸入的「查看」模型，其中按鈕上的標籤會告訴使用者他們可以說的語音命令。 例如，查看 HoloLens 中的應用程式視窗時 (第1代) ，使用者可以說「調整」命令來調整應用程式在世界中的位置。<br>
+        HoloLens 具有語音輸入的「查看」模型，其中按鈕上的標籤會告訴使用者他們可以說的語音命令。 例如，在 (第1代) 的 HoloLens 查看應用程式視窗時，使用者可以說「調整」命令來調整應用程式在世界中的位置。<br>
         <br>
         *影像：使用者可以說出「調整」命令，它們會在應用程式行中看到，以調整應用程式的位置。*
     :::column-end:::
@@ -128,7 +128,7 @@ ms.locfileid: "110600577"
 
 :::row:::
     :::column:::
-        當應用程式遵循此規則時，使用者很容易就能瞭解如何控制系統。 在 HoloLens (第一代) 中的按鈕上撥雲見日時，您會看到「聲音停留」工具提示，如果按鈕已啟用語音，則會出現在第二個畫面上，並顯示要說「按」的命令。 若要顯示 HoloLens 2 中的語音工具提示，請說「選取」或「我可以說什麼」來顯示語音游標 (請參閱影像) 。 <br>
+        當應用程式遵循此規則時，使用者很容易就能瞭解如何控制系統。 當您在 HoloLens (第1代) 的按鈕時，您會看到「聲音停留」工具提示，如果按鈕已啟用語音，則會出現在第二個畫面上，並顯示要說「按」的命令。 若要顯示 HoloLens 2 中的語音工具提示，請說「選取」或「我可以說什麼」來顯示語音游標 (請參閱影像) 。 <br>
         <br>
         *影像：「看到它，假設」命令出現在按鈕下方*
     :::column-end:::
@@ -215,7 +215,7 @@ ms.locfileid: "110600577"
 
 **唯一或未知單字的語音輸入** 當使用者聽寫可能對系統不明的字詞（例如昵稱、某些俚語單字或縮寫）時，也會發生語音輸入的問題。 
 
-**學習語音命令** 雖然最終目標是自然地與您的系統對話，但應用程式通常仍依賴特定的預先定義語音命令。
+**Learning voice 命令** 雖然最終目標是自然地與您的系統對話，但應用程式通常仍依賴特定的預先定義語音命令。
 與大量語音命令相關的挑戰是，如何在不多載使用者的情況下教授這些問題，以及如何協助使用者進行保留。 
 
 <br>
@@ -252,7 +252,7 @@ ms.locfileid: "110600577"
 
 * 以按鈕為目標時，請說「 **選取** 」 (您可以使用此位置來選取按鈕) 。
 * 在某些應用程式中，您可以說出 **應用程式列按鈕的標籤名稱** 來採取動作。 例如，在查看應用程式時，使用者可以說出「移除」命令以移除世界上的應用程式 (如此可節省時間，使其不需要隨您的手) 進行選取。
-* 您可以藉由說出「**嗨 Cortana** 」來開始進行 Cortana 接聽。 您可以向她問問題 (「嗨 Cortana，艾菲爾鐵塔有多高」)、請她開啟應用程式 (「嗨 Cortana，開啟 Netflix」)，或請她顯示 [開始] 功能表 (「嗨 Cortana，回到首頁」) 等等。
+* 您可以藉由說出「**嗨 Cortana** 」開始 Cortana 接聽。 您可以向她問問題 (「嗨 Cortana，艾菲爾鐵塔有多高」)、請她開啟應用程式 (「嗨 Cortana，開啟 Netflix」)，或請她顯示 [開始] 功能表 (「嗨 Cortana，回到首頁」) 等等。
 
 ## <a name="common-questions-and-concerns-users-have-about-voice"></a>使用者會有的語音相關常見問題和疑慮
 
@@ -266,20 +266,20 @@ ms.locfileid: "110600577"
 
 ## <a name="communication"></a>溝通
 
-如果應用程式想要利用 HoloLens 提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以使用的各種 [音訊串流類別](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category) 。 Windows 10 支援數種不同的串流類別和 HoloLens，可讓您利用其中三種來啟用自訂處理，以優化專為語音、通訊和 (其他所量身打造的麥克風音訊品質，也就是「攝像機」 ) 案例。
+如果應用程式想要充分利用 HoloLens 所提供的自訂音訊輸入處理選項，請務必瞭解您的應用程式可以取用的各種[音訊串流類別](/windows/win32/api/audiosessiontypes/ne-audiosessiontypes-audio_stream_category)。 Windows 10 支援數個不同的串流類別，而 HoloLens 利用其中三種來啟用自訂處理，以優化專為語音、通訊和其他所量身打造的麥克風音訊品質，可用於環境環境音訊捕捉 (也就是「攝影機」 ) 案例。
 * AudioCategory_Communications 的串流類別目錄已針對通話品質和旁白案例自訂，並為用戶端提供使用者語音的 16 kHz 24 位 mono 音訊串流
-* AudioCategory_Speech 串流類別是針對 HoloLens (Windows) 語音引擎自訂，並提供該使用者語音的 16 kHz 24 位 mono 串流。 如有需要，協力廠商語音引擎可以使用此類別。
+* AudioCategory_Speech 的串流類別目錄已針對 HoloLens (Windows) 語音引擎自訂，並提供該使用者語音的 16 kHz 24 位 mono 串流。 如有需要，協力廠商語音引擎可以使用此類別。
 * AudioCategory_Other 串流類別目錄是針對環境環境音訊錄製自訂，並為用戶端提供 48 kHz 的24位身歷聲音訊串流。
 
-所有的音訊處理都是硬體加速的，這表示在 HoloLens CPU 上執行相同的處理功能時，這些功能的耗電量會少很多。 避免在 CPU 上執行其他音訊輸入處理，以將系統電池壽命最大化，並充分利用內建的卸載音訊輸入處理。
+所有的音訊處理都是硬體加速的，也就是說，這些功能的耗電量會比在 HoloLens CPU 上執行相同的處理能力少得多。 避免在 CPU 上執行其他音訊輸入處理，以將系統電池壽命最大化，並充分利用內建的卸載音訊輸入處理。
 
 ## <a name="languages"></a>語言
 
-HoloLens 2 [支援多種語言](/hololens/hololens2-language-support)。 請記住，即使安裝了多個鍵盤或應用程式嘗試以不同的語言建立語音辨識器，語音命令一律會以系統的顯示語言執行。
+HoloLens 2[支援多種語言](/hololens/hololens2-language-support)。 請記住，即使安裝了多個鍵盤或應用程式嘗試以不同的語言建立語音辨識器，語音命令一律會以系統的顯示語言執行。
 
 ## <a name="troubleshooting"></a>疑難排解
 
-如果您在使用「選取」和「嗨 Cortana」時遇到任何問題，請嘗試移至更安靜的空間、關閉雜訊來源，或說出更遠。 目前，HoloLens 上的所有語音辨識都會專門針對美國英文的原生喇叭進行調整及優化。
+如果您在使用「選取」和「嗨 Cortana」時遇到任何問題，請嘗試移至更安靜的空間、關閉雜訊來源，或說出更遠。 目前，HoloLens 上的所有語音辨識都已針對美國英文的原生喇叭進行調整及優化。
 
 針對 Windows Mixed Reality Developer Edition 2017 版，在初始 HMD 連線之後登出和重新登入電腦桌面之後，音訊端點管理邏輯將可正常運作 (永久) 。 在經過 WMR OOBE 之後第一次登出/進入事件之前，使用者可能會遇到各種音訊功能問題，範圍從沒有音訊到音訊切換，視系統在第一次連接 HMD 之前的設定方式而定。
 

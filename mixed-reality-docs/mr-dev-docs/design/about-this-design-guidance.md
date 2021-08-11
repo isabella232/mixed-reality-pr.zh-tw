@@ -5,13 +5,13 @@ author: mrwied
 ms.author: jonwie
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、簡介、指引、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、ux、資源
-ms.openlocfilehash: f731ad91d48cdb50ad12b6a9cc250b6561eebaff
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality、設計、簡介、指引、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、ux、資源
+ms.openlocfilehash: 0bd70e08d55f8d556ff3a612dbbc979dc895cebbfc9950f18d8d474ff347407b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847688"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198636"
 ---
 # <a name="about-this-design-guidance"></a>關於本設計指南
 
@@ -19,11 +19,11 @@ ms.locfileid: "97847688"
 
 **您好，歡迎使用混合現實的設計指引。**
 
-本指南是由 Microsoft 設計人員、開發人員、程式經理和研究人員所撰寫。 來自我們的作者的工作橫跨全像攝影裝置，包括 HoloLens、沉浸式裝置、andAcer 和 HP Windows Mixed Reality 耳機。 建議您將這篇文章視為一組適用于 Windows head 裝載設計的主題。
+本指南是由 Microsoft 設計人員、開發人員、程式經理和研究人員所撰寫。 從我們的作者進行的工作橫跨全像裝置，包括 HoloLens、沉浸式裝置、andAcer 和 HP Windows Mixed Reality 耳機。 建議您將這篇文章視為一組用於 Windows 前端裝載設計的主題。
 
 我們會與您一起進入一個極具影響力的新時代。 突破在前端掛接的顯示器、空間音效、感應器、環境感知、輸入和3D 圖形潛在客戶，以及挑戰我們定義新的體驗類型。 新的新領域更具個人化、直覺化、沉浸式及內容。
 
-在可行的情況下，我們將在 GitHub 上提供可操作的設計指引與相關程式碼。 話雖如此，因為我們正與您一起學習，所以我們無法在此提供特定、可採取動作的指引。 我們分享的部分將會是「我們學到的課程」的精神，而「避免」該路徑。
+在可能的情況下，我們將會提供可操作的設計指引，以及 GitHub 的相關程式碼。 話雖如此，因為我們正與您一起學習，所以我們無法在此提供特定、可採取動作的指引。 我們分享的部分將會是「我們學到的課程」的精神，而「避免」該路徑。
 
 而且我們知道許多創新將由較大型的設計團體產生。 因此，我們期待收到您的意見、向您學習，並與您密切合作。 我們會盡力分享我們的見解，即使它們是先行探索和早期的。 我們的目標是協助開發人員和設計人員使用自己的設計思考、最佳作法，以及相關的開放原始碼控制項、模式，以及您可以直接在自己的工作中使用的範例應用程式。
 
@@ -59,7 +59,7 @@ ms.locfileid: "97847688"
 
 ![認識他們的擁有者](images/500px-creators.jpg) <br>
 
-我們希望許多觀眾都能找到此指引，以提供説明。 您有不同的技能集 (開始、中繼、advanced) 、使用不同的工具 (Unity、DirectX、c + +、c #、其他) 、熟悉各種不同的平臺 (Windows、iOS、Android) 、來自不同的背景 (行動裝置、企業版、遊戲) ，以及在不同大小的小組中工作， (單點、小型、中型、大型) 。 因此，您可以使用不同的觀點和需求來查看此指引。 可能的話，我們會嘗試將這項多樣性保持在考慮，並盡可能將我們的指導方針盡可能地與多人相關。 我們知道許多您已經在 GitHub 上。 因此，我們將直接連結至 GitHub 存放庫和論壇，以符合您的需求。 
+我們希望許多觀眾都能找到此指引，以提供説明。 您有不同的技能集 (開始、中繼、advanced) 、使用不同的工具 (Unity、DirectX、c + +、c #、其他) 、熟悉各種平臺 (Windows、iOS、Android) 、來自不同的背景 (行動裝置、企業版、遊戲) ，以及處理不同大小的小組 (單點、小型、中型、大型) 。 因此，您可以使用不同的觀點和需求來查看此指引。 可能的話，我們會嘗試將這項多樣性保持在考慮，並盡可能將我們的指導方針盡可能地與多人相關。 我們知道許多人已經在 GitHub。 因此，我們會直接連結到 GitHub 存放庫和論壇，以符合您的需求。 
 
 ### <a name="share-as-much-as-possible-from-experimental-to-explicit"></a>從實驗性到明確的共用越多
 
@@ -71,7 +71,7 @@ ms.locfileid: "97847688"
 
 ![全域和本機設計的正確平衡](images/500px-fluentdesign.jpg) <br>
 
-我們將提供兩個層級的設計指引： global 和 local。 [Fluent Design 系統](https://fluent.microsoft.com)中包含我們的「全域」設計指引。 深入瞭解我們如何在所有 Microsoft 設計（我們的裝置、產品、工具和服務）之間瞭解基本概念，例如燈光、深度、移動、材質和規模。 話雖如此，此大型系統之間存在顯著的裝置特定差異。 因此，適用于 head 掛接顯示器的「本機」設計指導方針，說明了通常會有不同的輸入和輸出方法和不同使用者需求和案例的全像全像裝置和沉浸式裝置設計。 本機設計指引涵蓋 Hmd 特有的主題。 例如：3D 環境和物件;共用環境;使用感應器、眼睛追蹤和空間對應;以及空間音訊的機會。 在我們的整個指引中，您可能會看到我們指的是全域和本機方面。 希望這可協助您在更大的設計基礎中進行工作，同時利用特定裝置之間的設計差異。
+我們將提供兩個層級的設計指引： global 和 local。 [Fluent Design 系統](https://fluent.microsoft.com)包含我們的「全域」設計指引。 Fluent 詳細說明我們在所有 Microsoft 設計（我們的裝置、產品、工具和服務）之間的基本概念，例如燈光、深度、移動、材質和規模。 話雖如此，此大型系統之間存在顯著的裝置特定差異。 因此，適用于 head 掛接顯示器的「本機」設計指導方針，說明了通常會有不同的輸入和輸出方法和不同使用者需求和案例的全像全像裝置和沉浸式裝置設計。 本機設計指引涵蓋 Hmd 特有的主題。 例如：3D 環境和物件;共用環境;使用感應器、眼睛追蹤和空間對應;以及空間音訊的機會。 在我們的整個指引中，您可能會看到我們指的是全域和本機方面。 希望這可協助您在更大的設計基礎中進行工作，同時利用特定裝置之間的設計差異。
 
 ### <a name="have-a-discussion"></a>討論
 
@@ -81,4 +81,4 @@ ms.locfileid: "97847688"
 
 ## <a name="dive-in"></a>深入瞭解
 
-我們希望這篇簡介文章會在您探索我們的設計指引時，提供一些有意義的內容。 深入瞭解，並讓我們知道您在 GitHub 論壇中所討論的專案，您可以在我們的文章中找到，或在 [Twitter](https://twitter.com/MicrosoftDesign) 和 [Facebook](https://www.facebook.com/microsoftdesign/)的 Microsoft 設計中找到您的想法。 讓我們共同設計未來的合作！
+我們希望這篇簡介文章會在您探索我們的設計指引時，提供一些有意義的內容。 深入瞭解，並讓我們知道您在本文中所找到的 GitHub 論壇，或在[Twitter](https://twitter.com/MicrosoftDesign)和[Facebook](https://www.facebook.com/microsoftdesign/)上的 Microsoft 設計中所述的想法。 讓我們共同設計未來的合作！

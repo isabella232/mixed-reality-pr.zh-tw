@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: 手勢、移動控制器、unity、注視、輸入、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 2daa02a0681fe4f3da24fa32379e10877750af7e
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 005b817574e6d3600b9c43e443432203418b58a2258e2938614cc549ab7539c2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110221"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223796"
 ---
 # <a name="articulated-hand-and-eye-tracking-in-unity"></a>Unity 中的明確和眼睛追蹤
 
@@ -42,7 +42,7 @@ MRTK v2 提供一組 UI 控制項和建立區塊，可協助您加速開發。
 
 探索 MRTK 在 [此範例場景](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)中的各種互動和 UI 控制項類型。
 
-您可以在 [資產/MixedRealityToolkit] 底下的 [ [混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity) 組] GitHub 中找到其他範例場景： [ **範例/示範**] 資料夾。
+您可以在 [資產/MixedRealityToolkit] 下方的 [[混合現實工具](https://github.com/Microsoft/MixedRealityToolkit-Unity)組] 中找到其他範例場景 GitHub [**範例/示範**] 資料夾。
 
 [![範例場景](images/MRTK_Examples.png)](/windows/mixed-reality/mrtk-unity/features/example-scenes/hand-interaction-examples)
 

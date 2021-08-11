@@ -3,12 +3,12 @@ title: 內外追蹤的運作方式
 description: Windows Mixed Reality 耳機中所使用之以相機為基礎之內部追蹤系統的相關資訊。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、內部、內部、追蹤、攝影機
-ms.openlocfilehash: af7553b27bec63c2ae83bed390c17e1fcf006954
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: 579ef23c1eca2c184d07878c4e71ce298c5ad9922255b5e43643458a256b61bf
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725869"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197861"
 ---
 # <a name="inside-out-tracking"></a>內外追蹤
 
@@ -18,7 +18,7 @@ ms.locfileid: "97725869"
 
 **更多詳細資料：** 追蹤系統使用兩個低解析度的黑色和白色攝影機，以可見的光線識別您環境中的功能。 系統會根據觀察到的功能分成三角形其位置，然後藉由融合高比率 IMU 資料來補充資訊，以針對您的環境中的 HMD 產生連續的估計。 這兩個應用程式會使用姿勢資訊來呈現場景和系統，以針對任何時間和位置的錯誤預測修正此轉譯。 您的電腦會儲存環境資訊，讓追蹤系統可以召回環境特定的資料，例如空間界限的實體位置。 如果您在多個房間內使用您的裝置，您可以在每個房間內設定不同的界限，而追蹤系統可以召回特定空間的特定界限。
 
-由於追蹤 Windows Mixed Reality 沉浸式耳機的運作方式就像是在 [Microsoft HoloLens](https://www.microsoft.com/en-us/hololens)上追蹤，您可能會發現這段影片很實用：
+由於追蹤 Windows Mixed Reality 沉浸式耳機的運作方式就像是在[Microsoft HoloLens](https://www.microsoft.com/en-us/hololens)上追蹤，您可能會發現這段影片很實用：
 
 >[!VIDEO https://www.youtube.com/embed/TneGSeqVAXQ]
 
@@ -68,9 +68,9 @@ Windows Mixed Reality 中的追蹤很容易使用，因此不需要基礎結構�
 
 ## <a name="how-do-i-clear-tracking-and-environment-data"></a>如何? 清除追蹤和環境資料嗎？
 
-追蹤系統會儲存某些環境資料，讓它能夠重新叫用實際的實際位置，例如您的安全界限。 您可以隨時移除此資訊，包括您的安全界限。 如果移除此資訊，系統將無法再辨識您的空間或重新叫用您的安全界限。 如果您想要在清除環境資料之後使用安全性範圍，您必須再次設定它。 請參閱設定 [界限](set-up-windows-mixed-reality.md#set-up-your-room-boundary) 以設定新界限的一節。 若要移除所有資料，請開啟 [設定]，流覽至 [混合式事實]，然後選取左側功能表的 [環境] 區段。 選取標示為「清除環境資料」的按鈕，以移除所有環境和追蹤資料。
+追蹤系統會儲存某些環境資料，讓它能夠重新叫用實際的實際位置，例如您的安全界限。 您可以隨時移除此資訊，包括您的安全界限。 如果移除此資訊，系統將無法再辨識您的空間或重新叫用您的安全界限。 如果您想要在清除環境資料之後使用安全性範圍，您必須再次設定它。 請參閱設定 [界限](set-up-windows-mixed-reality.md#set-up-your-room-boundary) 以設定新界限的一節。 若要移除所有資料，請開啟設定，流覽至 [混合式事實]，然後選取左側功能表的 [環境] 區段。 選取標示為「清除環境資料」的按鈕，以移除所有環境和追蹤資料。
 
-## <a name="see-also"></a>請參閱
+## <a name="see-also"></a>另請參閱
 * [追蹤系統疑難排解](tracking.md)
 * [運動控制器](controllers-in-wmr.md)
 * [您的 Windows Mixed Reality 首頁](your-mixed-reality-home.md)

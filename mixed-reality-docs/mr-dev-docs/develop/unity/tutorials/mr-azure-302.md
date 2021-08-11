@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學院，unity，教學課程，api，電腦視覺，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 119d83ec9fef97b4e4017b2226a9593404847a71
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 5cac40c2613187776ea9ec5ba1268f1422a084d32322e9c4aca6742ed75d05b2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730535"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225958"
 ---
 # <a name="hololens-1st-gen-and-azure-302-computer-vision"></a>HoloLens (第1代) 和 Azure 302：電腦視覺
 
@@ -30,9 +30,9 @@ ms.locfileid: "104730535"
 
 Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供影像處理和分析 (，其中包含從雲端使用的最先進演算法) 的傳回信息。 開發人員上傳影像或影像 URL，而 Microsoft 電腦視覺 API 演算法會根據輸入使用者的輸入，分析視覺內容，然後傳回信息，包括識別影像的類型和品質、偵測人臉 (傳回其座標) 、標記或分類影像。 如需詳細資訊，請造訪 [Azure 電腦視覺 API 頁面](https://azure.microsoft.com/services/cognitive-services/computer-vision/)。
 
-完成本課程之後，您將會有混合現實 HoloLens 應用程式，它將能夠執行下列作業：
+完成本課程之後，您將會有 HoloLens 應用程式的混合現實，這將能夠執行下列作業：
 
-1.  使用點一下手勢，HoloLens 的攝影機將會捕獲映射。
+1.  使用點一下手勢，HoloLens 的攝影機將會捕獲影像。
 2.  映射將會傳送至 Azure 電腦視覺 API 服務。 
 3.  辨識的物件將會列在位於 Unity 場景中的簡單 UI 群組中。
 
@@ -49,9 +49,9 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 HoloLens，您也可以將本課程中所學到的內容套用到 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
+> 雖然本課程主要著重于 HoloLens，但您也可以在本課程中套用您學到的內容，以 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
@@ -70,12 +70,12 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
-2.  設定及測試 HoloLens。 如果您需要設定 HoloLens 的支援， [請務必造訪 HoloLens 安裝文章](/hololens/hololens-setup)。 
-3.  開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助針對每個使用者) 執行這些工作。 
+2.  設定及測試您的 HoloLens。 如果您需要設定 HoloLens 的支援，[請務必造訪 HoloLens 安裝程式文章](/hololens/hololens-setup)。 
+3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。 
 
-如需有關校正的說明，請遵循此 [與 HoloLens 校正文章相關的連結](/hololens/hololens-calibration#hololens-2)。
+如需有關校正的說明，請遵循此[連結來 HoloLens 校正文章](/hololens/hololens-calibration#hololens-2)。
 
-如需有關感應器微調的說明，請依照此 [連結來進行「HoloLens 感應器微調」文章](/hololens/hololens-updates)。
+如需有關感應器微調的說明，請依照此[連結前往 HoloLens 感應器微調文章](/hololens/hololens-updates)。
 
 ## <a name="chapter-1--the-azure-portal"></a>第1章-Azure 入口網站
 
@@ -145,7 +145,7 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
     ![開始新的 Unity 專案。](images/AzureLabs-Lab2-06.png)
 
-2.  您現在將需要提供 Unity 專案名稱。 插入 **MR_ComputerVision**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  現在您將需要提供 Unity Project 名稱。 插入 **MR_ComputerVision**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![提供新 Unity 專案的詳細資料。](images/AzureLabs-Lab2-07.png)
 
@@ -153,11 +153,11 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
     ![更新腳本編輯器喜好設定。](images/AzureLabs-Lab2-08.png)
 
-4.  接下來，移至 [檔案 **> 組建設定** ]，選取 [ **通用 Windows 平臺**]，然後按一下 [ **切換平臺** ] 按鈕以套用您的選取專案。
+4.  接著，移至 [檔案 **> 組建] 設定** 然後選取 [**通用 Windows 平臺**]，再按一下 [**切換平臺**] 按鈕以套用您的選取專案。
 
-    ![[組建設定] 視窗，將平臺切換至 UWP。](images/AzureLabs-Lab2-10.png)
+    ![建立設定視窗、將平臺切換至 UWP。](images/AzureLabs-Lab2-10.png)
 
-5.  在檔案中仍 **> 組建設定** ，並確定：
+5.  在檔案中仍 **> 建立設定** 並確定：
 
     1. **目標裝置** 設定為 **HoloLens**
 
@@ -181,17 +181,17 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
             ![提供新場景的名稱。](images/AzureLabs-Lab2-13.png)
 
-            > 請注意，您必須將 Unity 場景儲存在 [ *資產* ] 資料夾中，因為它們必須與 Unity 專案相關聯。 建立幕後資料夾 (和其他類似的資料夾) 是結構化 Unity 專案的典型方式。
+            > 請注意，您必須將 Unity 場景儲存在 [*資產*] 資料夾中，因為它們必須與 Unity Project 相關聯。 建立幕後資料夾 (和其他類似的資料夾) 是結構化 Unity 專案的典型方式。
 
-    7. [ *組建設定*] 中的其餘設定，現在應該保持為預設值。
+    7. [*組建設定*] 中的其餘設定，現在應該保持為預設值。
 
-6. 在 [ *組建設定* ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
+6. 在 [*組建設定*] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
 
     ![開啟 [播放玩家設定]。](images/AzureLabs-Lab2-14.png)
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1. 在 [ **其他設定** ] 索引標籤中：
+    1. 在 [**其他設定**] 索引標籤中：
 
         1. **腳本執行階段版本** 應該是 **穩定** 的 ( .net 3.5 對等) 。
         2. **腳本後端** 應該是 **.net**
@@ -199,20 +199,20 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
             ![更新其他設定。](images/AzureLabs-Lab2-15.png)
       
-    2. 在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2. 在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         1. **InternetClient**
         2. **網路攝影機**
 
             ![正在更新發行設定。](images/AzureLabs-Lab2-16.png)
 
-    3. 在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3. 接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
         ![更新 X R 設定。](images/AzureLabs-Lab2-17.png)
 
-8.  回到 *組建設定*： _Unity c #_ 專案不再呈現灰色;勾選此方塊旁邊的核取方塊。 
+8.  回到 *組建設定* _Unity c #_ 專案不再呈現灰色;勾選此方塊旁邊的核取方塊。 
 9.  關閉 [建置設定] 視窗。
-10. 將場景和專案儲存 (檔 **> 儲存場景/檔案 > 儲存專案**) 。
+10. 儲存場景並 Project (檔 **> 儲存場景/檔案 > 儲存專案**) 。
 
 ## <a name="chapter-3--main-camera-setup"></a>第3章-主要攝影機設定
 
@@ -249,7 +249,7 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
   
 ## <a name="chapter-4--setup-the-label-system"></a>第4章-設定標籤系統
 
-一旦您已使用 HoloLens 的相機來取得映射，該映射將會傳送至您的 *Azure 電腦視覺 API* 服務實例進行分析。 
+當您使用 HoloLens 相機來捕捉映射之後，該映射將會傳送至您的 *Azure 電腦視覺 API* 服務實例進行分析。 
 
 該分析的結果將會是已辨識的物件清單，稱為 **標記**。 
 
@@ -275,7 +275,7 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
     ![文字元件](images/AzureLabs-Lab2-21-5.png)
 
-3.  將 **LabelText** 從 [階層]*面板* 拖曳至 [*專案] 面板* 中的 [資產]*資料夾* 內。 這會使 **LabelText** 成為預製專案，讓它可以在程式碼中具現化。
+3.  將 [ **LabelText** ] 從 [階層]*面板* 拖曳至 [*資產] 資料夾* 中的 [ *Project] 面板* 內。 這會使 **LabelText** 成為預製專案，讓它可以在程式碼中具現化。
 
     ![建立 LabelText 物件的預製專案。](images/AzureLabs-Lab2-22.png)
  
@@ -293,7 +293,7 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
 若要建立此類別： 
 
-1.  在 [ *專案] 面板* 中按一下滑鼠右鍵，然後 **建立 > 資料夾**。 將資料夾命名為 **腳本**。 
+1.  在 *Project 面板* 中按一下滑鼠右鍵，然後 **建立 > 資料夾**。 將資料夾命名為 **腳本**。 
 
     ![建立腳本資料夾。](images/AzureLabs-Lab2-24.png)
 
@@ -366,7 +366,7 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 您會發現，從您剛剛拖曳至相機的腳本中，有兩個欄位： **Cursor** 和 **Label 預製專案**。
 
 9.  將名為 **cursor** 的物件從階層 *面板* 拖曳至名為 **cursor** 的位置，如下圖所示。
-10. 從 [*專案] 面板* 中的 [*資產] 資料夾*，將名為 **LabelText** 的物件拖曳至名為 **Label 預製專案** 的位置，如下圖所示。 
+10. 從 *Project 面板* 中的 [*資產] 資料夾*，將名為 **LabelText** 的物件拖曳至名為 **Label 預製專案** 的位置，如下圖所示。 
 
     ![設定 Unity 中的參考目標。](images/AzureLabs-Lab2-25.png)
 
@@ -683,7 +683,7 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
 ## <a name="chapter-8--before-building"></a>第8章-建立之前
 
-若要執行應用程式的完整測試，您必須將它側載到 HoloLens。
+若要執行應用程式的完整測試，您必須將它側載到您的 HoloLens。
 在執行之前，請確定：
 
 -   [第2章](#chapter-2--set-up-the-unity-project)中所述的所有設定都已正確設定。 
@@ -695,8 +695,8 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 ## <a name="chapter-9--build-the-uwp-solution-and-sideload-the-application"></a>第9章–建立 UWP 解決方案並側載應用程式
 此專案的 Unity 區段所需的所有專案現在都已完成，因此您可以從 Unity 建立它。
 
-1.  流覽至 *組建* 配置  -  **檔案 > 組建設定 ...**
-2.  從 [ *組建設定* ] 視窗中，按一下 [ **建立**]。
+1.  流覽至 *組建設定* 檔案  -  **> 組建設定 ...**
+2.  從 [*組建設定*] 視窗中，按一下 [**建立**]。
 
     ![從 Unity 建立應用程式](images/AzureLabs-Lab2-26.png)
 
@@ -709,12 +709,12 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
 若要在 HoloLens 上部署：
 
-1.  您將需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保 HoloLens 處於 **開發人員模式**。 若要這樣做：
+1.  您需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保您的 HoloLens 處於 **開發人員模式**。 若要這樣做：
 
-    1. 在設置 HoloLens 的同時，開啟 **設定**。
+    1. 在 HoloLens 時，請開啟 **設定**。
     2. 前往 **Network & Internet > Wi-Fi > Advanced Options**
     3. 記下 **IPv4** 位址。
-    4. 接下來，流覽回到 [ **設定**]，然後 **更新開發人員 & 的安全性 >** 
+    4. 接下來，流覽回到 **設定**，然後為 **開發人員更新 & 安全性 >** 
     5. 設定 [開發人員模式]。
 
 2.  流覽至您的新 Unity 組建 (*應用程式* 資料夾) ，然後以 *Visual Studio* 開啟方案檔。
@@ -723,8 +723,8 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
     ![從 Visual Studio 部署方案。](images/AzureLabs-Lab2-27.png)
  
-5.  移至 [ **組建] 功能表** ，然後按一下 [ **部署方案**]，將應用程式側載至 HoloLens。
-6.  您的應用程式現在應該會出現在 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
+5.  移至 [**組建] 功能表**，然後按一下 [**部署方案**]，將應用程式側載到您的 HoloLens。
+6.  您的應用程式現在應該會出現在您 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
 
 > [!NOTE]
 > 若要部署到沉浸式耳機，請將 **解決方案平臺****設定為 [** *本機電腦*]，並將 [設定] 設定為 [以 *x86* 作為 **平臺**] 來進行 *Debug*。 然後使用 [ **組建] 功能表** 選取 [ *部署方案*]，部署到本機電腦。 
@@ -737,10 +737,10 @@ Microsoft 電腦視覺是一組 Api，其設計目的是要為開發人員提供
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 就像您在 *VisionManager*) 內使用的 *端點* 中使用 *標記* 參數 (為證明，請擴充應用程式以偵測其他資訊;看看您在 [這裡](https://westus.dev.cognitive.microsoft.com/docs/services/56f91f2d778daf23d8ec6739/operations/56f91f2e778daf14a499e1fa)可以存取的其他參數。
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 以更有對話、更容易閱讀的方式來顯示傳回的 Azure 資料，或許隱藏了數位。 如同 bot 可能對使用者說話。

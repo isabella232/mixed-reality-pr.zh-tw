@@ -7,12 +7,12 @@ ms.date: 07/26/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 電腦全像攝影遠端處理, Visual Studio
 ms.localizationpriority: high
-ms.openlocfilehash: 19c10ad0cdad70b38663f9da0f7d2a1f1702d94d
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: d395801c20d95ee0fdddc144b4e28c841554fb5116f847574ec4a931d116026e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757230"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115197921"
 ---
 # <a name="2-creating-a-holographic-remoting-pc-application"></a>2.建立全像攝影遠端處理電腦應用程式
 

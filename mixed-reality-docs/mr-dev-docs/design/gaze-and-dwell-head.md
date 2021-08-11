@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 05/13/2019
 ms.topic: article
 keywords: 混合的現實、注視、停留、互動、設計、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、ux、指導方針、清單視圖
-ms.openlocfilehash: e70536b7247153979b8650ba1f5bcbe1a7cd08af
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e069b0815f69848b7632cb7b1b85d85f328441b7156ae22ffe097fedc3ed6fc1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582201"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223614"
 ---
 # <a name="head-gaze-and-dwell"></a>頭部注視並佇留
 
@@ -106,10 +106,10 @@ s
   * 高頻率按鈕應該很大，而且可以更輕鬆地使用列印頭
   * 保持近乎眼睛的高度，以避免人體工學緊張。<br>
         <br>
-*影像： Microsoft Dynamics 365 指南 [下一步] 按鈕*
+*影像： Microsoft Dynamics 365 Guides [下一步] 按鈕*
     :::column-end:::
         :::column:::
-       ![Microsoft Dynamics 365 指南 [下一步] 按鈕](images/GuideNextButton.png)<br>
+       ![Microsoft Dynamics 365 Guides 下一步] 按鈕](images/GuideNextButton.png)<br>
     :::column-end:::
 :::row-end:::
 
@@ -139,10 +139,10 @@ s
   * 與選取醒目提示同時顯示佇留目標。
   * 對於次要按鈕，顯示頭部注視的佇留目標。<br>
         <br>
-*影像： Microsoft Dynamics 365 指南確認對話方塊*
+*影像： Microsoft Dynamics 365 Guides 確認對話方塊*
     :::column-end:::
         :::column:::
-       ![Microsoft Dynamics 365 指南確認對話方塊](images/GuidesConfirmation.png)<br>
+       ![Microsoft Dynamics 365 Guides 確認對話方塊](images/GuidesConfirmation.png)<br>
     :::column-end:::
 :::row-end:::
         
@@ -171,10 +171,10 @@ s
   * 請勿同時顯示所有停留目標，以避免重複的 UI。
   * 盡可能重複使用相同的模式，以建立 UX 熟悉度。<br>
         <br>
-*影像： Microsoft Dynamics 365 指南清單*
+*影像： Microsoft Dynamics 365 Guides 清單*
     :::column-end:::
         :::column:::
-       ![Microsoft Dynamics 365 指南清單](images/GuidesListView.png)<br>
+       ![Microsoft Dynamics 365 Guides 清單](images/GuidesListView.png)<br>
     :::column-end:::
 :::row-end:::
 

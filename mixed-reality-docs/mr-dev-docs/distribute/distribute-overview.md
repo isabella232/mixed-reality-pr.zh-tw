@@ -5,13 +5,13 @@ author: hferrone
 ms.author: v-hferrone
 ms.date: 12/9/2020
 ms.topic: article
-keywords: HoloLens、Mixed Reality、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品化
-ms.openlocfilehash: eb06ff46be6fbe6e480f9b43fa7f23ee47982192
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: HoloLens、混合的現實、沉浸式耳機、應用程式、uwp、提交、提交、篩選、中繼資料、系統需求、關鍵字、wack、認證、套件、appx、商品化
+ms.openlocfilehash: 7d4fbc1a7a5767ad8276017c7cdc38e9bb436bc83b12a4d8caeb9a8d84f1caca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582855"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198778"
 ---
 # <a name="distributing-your-apps"></a>散發您的應用程式
 
@@ -28,7 +28,7 @@ ms.locfileid: "98582855"
 >     * 如果您是使用應用程式安裝程式，也需要與使用者共用憑證。
 > 
 > * 如果您要與組織共用，您需要公司或學校帳戶，以及存取組織 [MDM (行動裝置管理) ](/hololens/hololens-enroll-mdm) 基礎結構。  
->    * 如果您是共用合作物件，您必須是租使用者中的系統管理員，並使用 [Microsoft 端點管理員系統管理中心](/mem/intune/apps/apps-deploy) 來讓應用程式可供使用。 另一個選項是與您的終端使用者共用 appx 檔案和應用程式相依性。
+>    * 如果您是共用合作物件，您必須是租使用者中的系統管理員，並使用[Microsoft 端點管理員系統管理中心](/mem/intune/apps/apps-deploy)來讓應用程式可供使用。 另一個選項是與您的終端使用者共用 appx 檔案和應用程式相依性。
 >    * 如果您是使用者，當您註冊共用組織的租使用者之後，應用程式會自動下載或可供下載。 
 
 <table>
@@ -89,15 +89,15 @@ ms.locfileid: "98582855"
 </table>
 
 > [!IMPORTANT]
-> 應用程式安裝程式目前不適用於受管理的裝置，或 (第1代) 裝置的 HoloLens。
+> 應用程式安裝程式目前不適用於受管理的裝置或 HoloLens (第一代) 裝置。
 
 ## <a name="other-scenarios"></a>其他案例
 
-* 您可以產生 Win32。EXE 檔案：使用來自 Unity 的電腦獨立組建目標進行 Win32 應用程式部署，包括流和遊戲通過。 一旦您擁有。EXE，您可以像平常一樣將應用程式提交至您選擇的平臺。 
+* 您可以使用適用于 Win32 應用程式部署的電腦獨立組建目標來產生 Win32 .EXE 檔案，包括流和 Game Pass。 .EXE 之後，您可以將應用程式照常提交到您選擇的平臺。 
 
-* 如果您在離線時需要安裝 HoloLens 2 的應用程式，請參閱 [離線安全 HoloLens 2](/hololens/hololens-common-scenarios-offline-secure) 指示，或透過布建套件安裝應用程式，而不需啟用開發人員模式。
+* 如果您在離線時需要安裝 HoloLens 2 的應用程式，請參閱[離線安全 HoloLens 2](/hololens/hololens-common-scenarios-offline-secure)指示，或透過布建套件安裝應用程式，而不需啟用開發人員模式。
 
-* 您也可以將組建部署到您的裝置，並與其他已啟用開發人員模式的開發人員共用，方法是 [使用 Visual Studio 部署和偵錯工具，](../develop/platform-capabilities-and-apis/using-visual-studio.md) 或 [使用裝置入口網站安裝應用程式套件](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications)。
+* 您也可以將組建部署到您的裝置，並與其他已啟用開發人員模式的開發人員共用，方法是[使用 Visual Studio 部署和偵錯工具，](../develop/platform-capabilities-and-apis/using-visual-studio.md)或[使用裝置入口網站安裝應用程式套件](../develop/platform-capabilities-and-apis/using-the-windows-device-portal.md#sideloading-applications)。
 
 ## <a name="see-also"></a>另請參閱
 * [從 Microsoft Store 尋找、安裝和卸載應用程式](/hololens/holographic-store-apps)

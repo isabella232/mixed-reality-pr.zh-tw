@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/22/2021
 ms.topic: article
 keywords: mixedrealitytoolkit、mixedrealitytoolkit-unity、mixed reality 耳機、windows mixed reality 耳機、虛擬實境耳機、unity
-ms.openlocfilehash: c91a4df9db8ef71778421750bca48d81d4b4a02e
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 14235852f8c90e7ccc4f105f2938ce514ae2933973469db9a0e01bd03d2c1b6d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394522"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115227547"
 ---
 # <a name="choosing-your-engine"></a>選擇您的引擎
 
@@ -82,11 +82,11 @@ ms.locfileid: "112394522"
 | 雲端服務 | Unity | Unreal | JavaScript | 自訂引擎 <br>使用 OpenXR)  ( |
 |---|---|---|---|---|
 | Azure Spatial Anchors | ✔️ | ✔️ | ❌ | ✔️ |
-| Azure 物件錨點 | ✔️ | ❌ | ❌ | ✔️ |
+| Azure Object Anchors | ✔️ | ❌ | ❌ | ✔️ |
 | Azure 遠端轉譯 | ✔️ * | ❌ | ❌ | ✔️ * |
 
 > [!NOTE]
-> * 在 Unity) 中使用舊版 WinRT Api (Windows XR 外掛程式的應用程式目前支援 Azure 遠端轉譯。 OpenXR apps 的 ARR 支援即將推出。
+> * 使用舊版 WinRT api 的應用程式目前支援 Azure 遠端轉譯在 Unity) 中 (Windows XR 外掛程式。 OpenXR apps 的 ARR 支援即將推出。
 
 ## <a name="next-steps"></a>後續步驟
 

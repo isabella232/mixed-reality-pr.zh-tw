@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 05/20/2021
 keywords: 停留、Unity、HoloLens、HoloLens 2、混合現實、開發、MRTK
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 18e69f001c8989234d1b75fb713796f079cacbdf
-ms.sourcegitcommit: a5afc24a4887880e394ef57216b8fd9de9760004
+ms.openlocfilehash: 8ac63ee723cdd524ee7abbad7fd2658b446156adbd5ddee06ae1795edb3b68d1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/28/2021
-ms.locfileid: "110647767"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226898"
 ---
 # <a name="dwell"></a>住
 

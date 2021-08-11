@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 7e80f25f6e5af7fe851bf9106ebbd07dece5dbad
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6b341f51b07da215269e3c3e0dee10ff151956b9d7e7b0c47e25fbbe9d4694c0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702034"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199782"
 ---
 # <a name="mrtk-and-unity-managed-code-stripping"></a>MRTK 和 Unity managed code 抽出
 

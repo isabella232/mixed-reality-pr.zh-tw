@@ -7,18 +7,18 @@ ms.date: 4/28/2021
 ms.topic: tutorial
 ms.localizationpriority: high
 keywords: Unreal、Unreal Engine 4、UE4、HoloLens 2、mixed reality、開發、功能、新專案、模擬器、檔、指南、全息全像、遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 8201e97ed35d11404928c1dfe94ad9b7e626e51b
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 546dcbac09600402b50408e016507b4d15fac22c58be8c1b3d68331dc5320252
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394642"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225400"
 ---
 # <a name="setting-up-your-unreal-project"></a>設定您的 Unreal 專案
 
 建議您安裝 [Unreal Engine 4.25 版](https://docs.unrealengine.com//GettingStarted/Installation/index.html)或更新版本，以充分利用內建的 HoloLens 支援。
 
-移至長篇遊戲啟動器中的 [ **媒體** 櫃] 索引標籤，選取 [ **啟動** ] 旁的下拉箭號，然後按一下 [ **選項**]。 在 [目標平台] 中，選取 **HoloLens 2**，然後按一下 [套用]。
+移至長篇遊戲 Launcher 中的 [**媒體** 櫃] 索引標籤，選取 [**啟動**] 旁的下拉箭號，然後按一下 [**選項**]。 在 [目標平台] 中，選取 **HoloLens 2**，然後按一下 [套用]。
 ![Unreal 安裝選項 HoloLens 2](../images/Unreal_Install_Option_HoloLens2.png)
 
 ## <a name="import-mixed-reality-toolkit-for-unreal"></a>匯入 Unreal 的混合現實工具組

@@ -5,20 +5,20 @@ author: thmignon
 ms.author: thmignon
 ms.date: 04/30/2018
 ms.topic: article
-keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、自訂環境、地點、cliff 房子、skyloft、使用者、建立、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 2a626b91b79eadb49c9da95c9d61f92a375015a0
-ms.sourcegitcommit: f74d33d50c1fbfebe8571695d631ce78dd599f74
+keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、自訂環境、地點、cliff 房子、skyloft、使用者、建立、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: c0f006d3e05cb0892a0a9b2014a4d46a0668f628cf369e38c63c83756148d778
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/23/2021
-ms.locfileid: "104881215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198596"
 ---
 # <a name="design-your-own-immersive-environments"></a>設計自己的沉浸式環境
 
 >[!NOTE]
 >這是實驗性的功能。 請試試看，它很有趣，但如果一切沒有如預期般運作，則不會感到驚訝。 我們正在評估這項功能的可行性並對其使用感興趣，因此請告訴我們您的體驗 (以及您在 [開發人員論壇](https://forums.hololens.com/categories/custom-home-environments)) 找到的任何 bug。
 
-從 [2018 年4月更新 Windows 10](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)開始，我們已啟用實驗性功能，可讓您將自訂環境新增至 [開始] 功能表) 上的 [位置選擇器] (，以做為 [Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)使用。 Windows Mixed Reality 有兩個預設環境：懸崖之屋和 Skyloft，您可以選擇做為您的首頁。 建立自訂環境可讓您使用自己的建立來展開清單。 這項功能是以早期的狀態提供，以評估建立者和開發人員的興趣。 查看您所建立的各種領域，並瞭解如何使用不同的 authoring tools。
+從[2018 年4月更新 Windows 10](/windows/mixed-reality/enthusiast-guide/release-notes-april-2018)開始，我們已啟用實驗性功能，可讓您將自訂環境新增至 [開始] 功能表) 上的 [位置選擇器] (，以做為[Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)使用。 Windows Mixed Reality 有兩個預設環境：懸崖之屋和 Skyloft，您可以選擇做為您的首頁。 建立自訂環境可讓您使用自己的建立來展開清單。 這項功能是以早期的狀態提供，以評估建立者和開發人員的興趣。 查看您所建立的各種領域，並瞭解如何使用不同的 authoring tools。
 
 使用自訂環境時，您會注意到 teleporting、與應用程式互動，以及放置全像投影一樣的運作方式，與在懸崖之屋和 Skyloft 中一樣。 您可以在幻想環境中流覽 web，或使用全像幻想式道具城市來填滿，這可能是無限的。
 
@@ -53,12 +53,12 @@ ms.locfileid: "104881215"
 2. 執行您所下載的 **Fantasy_Island.exe** 檔案。
 
     > [!NOTE]
-    > 當您嘗試執行從 web (下載的 .exe 檔案，就像這樣的) ，您可能會遇到「Windows 已保護您的電腦」快顯視窗。 若要從此快顯視窗執行 Fantasy_Island.exe，請選取 [ **更多資訊** ]，然後 **繼續執行**。 此安全性設定的目的是要防止您下載不想要信任的檔案，因此當您信任檔案的來源時，請選擇此選項。
+    > 當嘗試執行從 web)  (下載的 .exe 檔案時，您可能會遇到「Windows 保護您的電腦」快顯視窗。 若要從此快顯視窗執行 Fantasy_Island.exe，請選取 [ **更多資訊** ]，然後 **繼續執行**。 此安全性設定的目的是要防止您下載不想要信任的檔案，因此當您信任檔案的來源時，請選擇此選項。
 
 3. 開啟 **檔案總管** 並在網址列中貼上下列檔案位置，以流覽至 [環境] 資料夾： `%LOCALAPPDATA%\Packages\EnvironmentsApp_cw5n1h2txyewy\LocalState` 。
 4. 將您下載的範例環境複製到此資料夾。
 5. 重新開機 **混合實境入口** ，以重新整理位置選擇器中的環境清單。
-6. 放在您的耳機上。 一旦您在家中，請使用 [Windows] 按鈕來開啟 **[開始] 功能表** 。
+6. 放在您的耳機上。 一旦您在家中，請使用您的控制器 Windows 按鈕來開啟 **[開始] 功能表**。
 7. 選取釘選應用程式清單上方的 [ **地點** ] 圖示，以選擇主環境。
 8. 您會在您的地點清單中找到您下載的幻想島環境。 選取 [ **幻想島** ] 以進入新的自訂家用環境！
 
@@ -78,7 +78,7 @@ ms.locfileid: "104881215"
 
 ### <a name="exporting-your-environment"></a>匯出您的環境
 
-Windows Mixed Reality 依賴二進位 glTF (. glb) 做為環境的資產傳遞格式。 glTF 是 Khronos 群組所維護之3D 資產傳遞的專利免費開放標準。 Microsoft 對 Windows 應用程式和體驗的格式支援將隨著 glTF 發展成為互通3D 內容的產業標準。
+Windows Mixed Reality 依賴二進位 glTF (. glb) 做為環境的資產傳遞格式。 glTF 是 Khronos 群組所維護之3D 資產傳遞的專利免費開放標準。 Microsoft 對於跨 Windows 應用程式和體驗的格式支援將隨著 glTF 發展成為互通3d 內容的產業標準。
 
 匯出用來作為自訂家用環境之資產的第一個步驟是產生 glTF 2.0 模型。 GlTF 工作群組會維護一份 [支援的匯出工具和轉換器清單，](https://github.com/KhronosGroup/glTF/blob/master/README.md#converters-and-exporters) 以建立 glTF 2.0 模型。 若要開始使用，請使用此頁面上所列的其中一個程式來建立和匯出 glTF 2.0 模型，或使用其中一個支援的轉換器來轉換現有的模型。
 
@@ -92,11 +92,11 @@ Windows Mixed Reality 依賴二進位 glTF (. glb) 做為環境的資產傳遞�
 
 Windows Mixed Reality 支援許多可大幅降低環境載入時間的選擇性優化。 請特別注意具有許多材質的環境，因為它們有時候會在載入時出現。 一般來說，我們建議所有資產都使用此步驟，不過，只有少數或低解析度紋理的較小環境並不一定需要它。 
 
-為了簡化此程式，我們建立了 Windows Mixed Reality 的 [資產轉換器 (可在 GitHub) 上 ](https://github.com/Microsoft/glTF-Toolkit/releases) 取得，以進行優化。 這項工具會使用 Microsoft glTF 工具組中提供的一組公用程式，藉由執行額外的材質封裝、壓縮和解析度向下調整，來優化任何標準 2.0 glTF 或 glb。 
+為了簡化此程式，我們建立了 Windows Mixed Reality 的[資產轉換器 (可在 GitHub) 上](https://github.com/Microsoft/glTF-Toolkit/releases)取得以進行優化。 這項工具會使用 Microsoft glTF 工具組中提供的一組公用程式，藉由執行額外的材質封裝、壓縮和解析度向下調整，來優化任何標準 2.0 glTF 或 glb。 
 
 轉換器目前支援數個旗標，以調整優化的確切行為。 建議您以下列旗標執行，以獲得最佳結果：
 
-旗標|建議值 (s) |描述
+旗標|建議值 (s) |Description
 ---|---|---
 -最大材質-大小|1024或2048| 調整值以改善紋理的品質，預設值為512x512。 較大的值會大幅影響環境的檔案大小，因此請記住 256-mb 的限制
 -最小-版本|1803|只有在 windows >= 1803 的版本上才支援自訂環境。 此旗標會移除較舊版本的材質，並減少最終資產的檔案大小
@@ -131,7 +131,7 @@ WindowsMRAssetConverter FileToConvert.gltf -max-texture-size 1024 -min-version 1
 
 ### <a name="i-spawn-into-a-blank-space"></a>我產生了一個空格
 
-Windows Mixed Reality [不支援超過 256 mb 的環境](#environment-limits)。 當環境超過此限制時，您會進入空白的天空方塊，而不需要模型。
+Windows Mixed Reality[不支援超過 256 mb 的環境](#environment-limits)。 當環境超過此限制時，您會進入空白的天空方塊，而不需要模型。
 
 ### <a name="it-takes-a-long-time-to-load-my-environment"></a>載入我的環境需要很長的時間
 
@@ -150,4 +150,4 @@ Windows Mixed Reality 會在載入環境時將 glTF 單位轉譯為1計量。 �
 當您建立自訂環境時，它會使用聲場呈現模擬，而不符合您所建立的實體空間。 音效可能來自錯誤的方向，而且可能音效 muffled。 
 
 ## <a name="see-also"></a>另請參閱
-* [GitHub 上的 Windows Mixed Reality 資產轉換器 () ](https://github.com/Microsoft/glTF-Toolkit/releases)
+* [Windows Mixed RealityGitHub) 上的資產轉換器 (](https://github.com/Microsoft/glTF-Toolkit/releases)

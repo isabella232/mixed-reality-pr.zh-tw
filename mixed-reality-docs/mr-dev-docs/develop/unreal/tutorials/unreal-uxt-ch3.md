@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 26bb874578e56b21d319741b8b1c1ff6decebe4b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 491e17c5a85ed05f2e324a4f346cc82d207440469fae97fc88fee7065fae0495
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "96609699"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226807"
 ---
 # <a name="3-setting-up-your-project-for-mixed-reality"></a>3.設定您的專案以進行混合實境
 

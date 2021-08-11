@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c9458e5236cc7de18eb27c3c3e13221a366c89a4
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 7d3e158bc7e4b0125f264aa9abc8f369a6e825562266891b0528066d8b8b9b71
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177511"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198115"
 ---
 # <a name="microsoft-mixed-reality-toolkit-25-release-notes"></a>Microsoft Mixed Reality 工具組2.5 版本資訊
 

@@ -3,12 +3,12 @@ title: 追蹤常見問題
 description: 追蹤超出標準取用者支援檔的 Windows Mixed Reality 疑難排解。
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，協助，支援，追蹤
-ms.openlocfilehash: 2634b95cf876a5b540710f80d3dd7f9d48b3bad9
-ms.sourcegitcommit: 1b90f27af091dffd4fba63d69a89873aa0f75079
+ms.openlocfilehash: fe5462a53de7b196db37edbbf0e56199a17c4c99b54ea1e7d9edf72e0845c9e5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 12/22/2020
-ms.locfileid: "97725829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115199474"
 ---
 # <a name="tracking-faqs"></a>追蹤常見問題
 
@@ -38,7 +38,7 @@ ms.locfileid: "97725829"
 這可能是因為應用程式或系統層級元件發生嚴重錯誤或暫時性缺乏記憶體或 CPU 資源所造成。 若要檢查：
 
 1. 開啟工作管理員並確定至少有20% 的 CPU 可用、400 MB 的記憶體可供使用，而磁片 IO 應低於80%。
-2. 移至 **事件檢視器 > Windows 記錄 > 應用程式** ，以尋找凍結時間前後的任何錯誤。 尋找任何參考 HoloLens 感應器、混合現實或您在該時間執行之應用程式的任何事物。 這些記錄檔可能會說明造成失敗的原因。
+2. 移至 **事件檢視器 > Windows 記錄 > 應用程式**，以查看凍結期間的任何錯誤。 尋找任何參考 HoloLens 感應器、混合現實或您在該時間執行之應用程式的相關事項。 這些記錄檔可能會說明造成失敗的原因。
 3. 如果問題持續發生，請重新開機電腦。
 
 ## <a name="the-world-flipped-upside-down-momentarily-and-returned-to-normal"></a>世界會短暫反轉並回到正常狀態

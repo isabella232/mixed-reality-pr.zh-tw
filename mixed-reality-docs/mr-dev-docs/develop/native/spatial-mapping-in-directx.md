@@ -5,20 +5,20 @@ author: mikeriches
 ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
-keywords: Windows mixed reality、空間對應、環境、互動、directx、winrt、api、範例程式碼、UWP、SDK、逐步解說
-ms.openlocfilehash: 19479a4efb577bad629e46b59334f0d23b0b2db4
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows 混合的現實、空間對應、環境、互動、directx、winrt、api、範例程式碼、UWP、SDK、逐步解說
+ms.openlocfilehash: e7f0735ea28703d3a9f18198901ffa5f06676f78b7b8962bf20824e05f793061
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583778"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115198844"
 ---
 # <a name="spatial-mapping-in-directx"></a>DirectX 中的空間對應
 
 > [!NOTE]
 > 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
-本主題說明如何在 DirectX 應用程式中執行 [空間對應](../../design/spatial-mapping.md) ，包括使用通用 Windows 平臺 SDK 封裝的空間對應範例應用程式的詳細說明。
+本主題說明如何在 DirectX 應用程式中執行[空間對應](../../design/spatial-mapping.md)，包括使用通用 Windows 平臺 SDK 封裝的空間對應範例應用程式的詳細說明。
 
 本主題使用 [HolographicSpatialMapping](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) UWP 程式碼範例中的程式碼。
 
@@ -50,7 +50,7 @@ ms.locfileid: "98583778"
 
 ## <a name="directx-development-overview"></a>DirectX 開發概觀
 
-空間對應的原生應用程式開發會使用 [Windows](/uwp/api/Windows.Perception.Spatial) 中的 api。空間命名空間。 這些 Api 可讓您完全掌控空間對應功能，與 [Unity](../unity/spatial-mapping-in-unity.md)公開空間對應 api 的方式相同。
+空間對應的原生應用程式開發會使用 Windows 中的 Api [。認知。空間](/uwp/api/Windows.Perception.Spatial)命名空間。 這些 Api 可讓您完全掌控空間對應功能，與 [Unity](../unity/spatial-mapping-in-unity.md)公開空間對應 api 的方式相同。
 
 ### <a name="perception-apis"></a>認知 Api
 
@@ -84,7 +84,7 @@ ms.locfileid: "98583778"
 
 全像 [空間對應](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) 程式碼範例包含的程式碼，可讓您開始將 surface 網格載入您的應用程式中，包括用來管理和呈現介面網格的基礎結構。
 
-現在，我們將逐步解說如何將介面對應功能新增至您的 DirectX 應用程式。 您可以將此程式碼新增至您的 Windows 全像 [應用程式範本](creating-a-holographic-directx-project.md) 專案，也可以依照上述的程式碼範例流覽。 這個程式碼範例是以 Windows 全像應用程式範本為基礎。
+現在，我們將逐步解說如何將介面對應功能新增至您的 DirectX 應用程式。 您可以將此程式碼新增至 Windows 的全像攝影[應用程式範本](creating-a-holographic-directx-project.md)專案中，也可以透過流覽上述的程式碼範例來追蹤。 這個程式碼範例是以 Windows 的全像攝影應用程式範本為基礎。
 
 ### <a name="set-up-your-app-to-use-the-spatialperception-capability"></a>設定您的應用程式以使用 >spatialperception 功能
 
@@ -112,9 +112,9 @@ ms.locfileid: "98583778"
 
 Windows Mixed Reality 支援各式各樣的裝置，包括不支援空間對應的裝置。 如果您的應用程式可以使用空間對應，或必須使用空間對應來提供功能，則應該先檢查以確定支援空間對應，然後再嘗試使用它。 例如，如果您的混合現實應用程式需要空間對應，當使用者嘗試在沒有空間對應的裝置上執行時，它應該會顯示一則訊息。 或者，您的應用程式可以轉譯自己的虛擬環境來取代使用者的環境，以提供類似空間對應可用時所發生的體驗。 在任何事件中，此 API 可讓您的應用程式知道其何時無法取得空間對應資料，並以適當的方式回應。
 
-若要檢查目前的裝置是否支援空間對應，請先確認 UWP 合約位於層級4或更高，然後呼叫 SpatialSurfaceObserver：： IsSupported ( # A1。 以下是如何在全像 [空間對應](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) 程式碼範例的內容中進行這項操作。 在要求存取之前，只會檢查支援。
+若要檢查目前的裝置是否支援空間對應，請先確認 UWP 合約位於層級4或更高，然後呼叫 SpatialSurfaceObserver：： IsSupported () 。 以下是如何在全像 [空間對應](https://github.com/Microsoft/Windows-universal-samples/tree/master/Samples/HolographicSpatialMapping) 程式碼範例的內容中進行這項操作。 在要求存取之前，只會檢查支援。
 
-從 SDK 15063 版開始，可以使用 SpatialSurfaceObserver：： IsSupported ( # A1 API。 如有必要，請在使用此 API 之前，將專案的目標重定為平臺15063版。
+從 SDK 15063 版開始，可以使用 SpatialSurfaceObserver：： IsSupported () API。 如有必要，請在使用此 API 之前，將專案的目標重定為平臺15063版。
 
 ```cpp
 if (m_surfaceObserver == nullptr)
@@ -169,7 +169,7 @@ Windows::Perception::Spatial::Surfaces::SpatialSurfaceObserver^     m_surfaceObs
 Windows::Perception::Spatial::Surfaces::SpatialSurfaceMeshOptions^  m_surfaceMeshOptions;
 ```
 
-如上一節所述，您必須先要求存取空間對應資料，您的應用程式才能使用它。 此存取權會在 HoloLens 上自動授與。
+如上一節所述，您必須先要求存取空間對應資料，您的應用程式才能使用它。 此存取權會在 HoloLens 自動授與。
 
 ```cpp
 // The surface mapping API reads information about the user's environment. The user must
@@ -372,7 +372,7 @@ Windows::Storage::Streams::IBuffer^ positions = m_surfaceMesh->VertexPositions->
     Windows::Storage::Streams::IBuffer^ indices   = m_surfaceMesh->TriangleIndices->Data;
 ```
 
-然後，我們會使用 HoloLens 提供的網格資料來建立 Direct3D 裝置緩衝區：
+然後，我們會使用 HoloLens 所提供的網格資料來建立 Direct3D 裝置緩衝區：
 
 ```cpp
 CreateDirectXBuffer(device, D3D11_BIND_VERTEX_BUFFER, positions, m_vertexPositions.GetAddressOf());
@@ -517,7 +517,7 @@ for (auto& pair : m_meshCollection)
 }
 ```
 
-個別網格必須負責設定頂點和索引緩衝區、跨距和模型轉換常數緩衝區。 就像 Windows 全像應用程式範本中的旋轉 cube 一樣，我們會使用實例轉譯為 stereoscopic 緩衝區。
+個別網格必須負責設定頂點和索引緩衝區、跨距和模型轉換常數緩衝區。 如同 Windows 全息型應用程式範本中的旋轉 cube 一樣，我們會使用實例轉譯為 stereoscopic 緩衝區。
 
 從 **SurfaceMesh：:D raw**：
 
@@ -678,4 +678,4 @@ m_meshCollection->Render(pCameraResources->IsRenderingStereoscopic(), false);
 
 ## <a name="see-also"></a>另請參閱
 * [建立全像攝影 DirectX 專案](creating-a-holographic-directx-project.md)
-* [Windows 感知空間 API](/uwp/api/Windows.Perception.Spatial)
+* [Windows。感知的空間 API](/uwp/api/Windows.Perception.Spatial)

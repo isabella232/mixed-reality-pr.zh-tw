@@ -5,50 +5,50 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Visual Studio、Android、IOS
-ms.openlocfilehash: 235255dcb94f2df3c1ab4c8e8ccc71ba53992b2f
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a1ee13b083d980896dc5f6d531dc3602f10687825e7013b0b68051eab37b5734
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690218"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223956"
 ---
 # <a name="building-and-deploying-mrtk"></a>建立和部署 MRTK
 
-若要在裝置上執行應用程式作為獨立應用程式 (HoloLens、Android、iOS 等 ) ，必須在 unity 專案中執行組建和部署步驟。 建立及部署使用 MRTK 的應用程式，就像是建立和部署任何其他 Unity 應用程式一樣。 沒有任何 MRTK 特定的指示。 請參閱下面的詳細步驟，以瞭解如何建立及部署適用于 HoloLens 的 Unity 應用程式。  深入瞭解如何在 [發行組建](https://docs.unity3d.com/Manual/PublishingBuilds.html)中建立其他平臺。
+若要在裝置上執行應用程式作為獨立應用程式 (HoloLens、Android、) iOS 等），您必須在 unity 專案中執行組建和部署步驟。 建立及部署使用 MRTK 的應用程式，就像是建立和部署任何其他 Unity 應用程式一樣。 沒有任何 MRTK 特定的指示。 如需如何建立及部署適用于 HoloLens 之 Unity 應用程式的詳細步驟，請參閱下方。  深入瞭解如何在 [發行組建](https://docs.unity3d.com/Manual/PublishingBuilds.html)中建立其他平臺。
 
-## <a name="building-and-deploying-mrtk-to-hololens-1-and-hololens-2-uwp"></a>建立及部署 MRTK 至 HoloLens 1 和 HoloLens 2 (UWP) 
+## <a name="building-and-deploying-mrtk-to-hololens-1-and-hololens-2-uwp"></a>建立 MRTK，並將其部署到 HoloLens 1 和 HoloLens 2 (UWP) 
 
-您可以在 [建立應用程式至裝置](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)時找到有關如何建立及部署 HoloLens 1 和 HOLOLENS 2 (UWP) 的指示。
+您可以在[建立應用程式至裝置](https://docs.microsoft.com/windows/mixed-reality/mrlearning-base-ch1#build-your-application-to-your-device)時，找到 HoloLens 1 和 HoloLens 2 (UWP) 如何建立和部署的指示。
 
-**秘訣：** 建立 WMR、HoloLens 1 或 HoloLens 2 時，建議組建設定「目標 SDK 版本」和「最低平臺版本」看起來像下圖所示：
+**秘訣：** 建立 WMR、HoloLens 1 或 HoloLens 2 時，建議組建設定「目標 SDK 版本」和「最低平臺版本」如下圖所示：
 
 ![組建視窗](../features/images/getting-started/BuildWindow.png)
 
 其他設定可以是不同的 (例如，組建設定/架構/組建類型，而其他設定則一律可在 Visual Studio 解決方案) 內變更。
 
-請確定 [目標 SDK 版本] 下拉式清單包含 [10.0.18362.0] 選項-如果缺少此選項，則必須安裝 [最新的 Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 。
+請確定 [目標 SDK 版本] 下拉式清單包含 [10.0.18362.0] 選項-如果缺少此選項，則必須安裝[最新的 Windows SDK](https://developer.microsoft.com/windows/downloads/windows-10-sdk) 。
 
 ### <a name="unity-20193-and-hololens"></a>Unity 2019.3 和 HoloLens
 
-如果 HoloLens 應用程式在裝置上顯示為2D 面板，在部署 UWP 應用程式之前，請確定已在 Unity 2019.3 中設定下列設定：
+如果 HoloLens 應用程式在裝置上顯示為2d 面板，請確定已在 Unity 2019.3 中設定下列設定，然後再部署您的 UWP 應用程式：
 
 如果使用舊版 XR：
 
-1. 流覽至 [編輯] > 專案設定、播放機
-1. 在 [UWP] 索引標籤的 [ **XR 設定** ] 下，確定已啟用 [ **虛擬實境支援** ]，並已將 **Windows Mixed Reality** sdk 新增至 sdk。
+1. 流覽至 [編輯] > Project 設定、播放機
+1. 在 [UWP] 索引標籤中的 [ **XR 設定**] 下，確定已啟用 [**虛擬實境支援**]，並已將 **Windows Mixed Reality** sdk 新增至 sdk。
 1. 在 Visual Studio 中建立和部署
 
 如果使用 XR 外掛程式：
 
 1. 遵循開始使用中找到的步驟 [XRSDK](../configuration/getting-started-with-mrtk-and-xrsdk.md)
 1. 請確定設定設定檔是 **DefaultXRSDKConfigurationProfile**
-1. 流覽至 [ **編輯 > 專案設定]，XR-Plugin 管理** ]，並確定 **Windows Mixed Reality** 已啟用。
+1. 流覽至 [**編輯] > Project 設定，XR-Plugin 管理**]，並確定已啟用 **Windows Mixed Reality** 。
 1. 在 Visual Studio 中建立和部署
 
 >[!IMPORTANT]
-> 如果使用 Unity 2019.3，請選取 [ **ARM64** ]，而非 [ **ARM** ] 作為 Visual Studio 中的組建架構。 使用 Unity 2019.3 中的預設 Unity 設定時，如果因為 Unity bug 而選取 ARM，Unity 應用程式將不會部署到 HoloLens。 您可以在 [Unity 的問題追蹤](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)程式上追蹤此資訊。
+> 如果使用 Unity 2019.3，請選取 [ **ARM64** ]，而非 [ **ARM** ] 作為 Visual Studio 中的組建架構。 使用 unity 2019.3 中的預設 unity 設定時，如果因為 unity bug 而選取 ARM，unity 應用程式將不會部署至 HoloLens。 您可以在 [Unity 的問題追蹤](https://issuetracker.unity3d.com/issues/enabling-graphics-jobs-in-2019-dot-3-x-results-in-a-crash-or-nothing-rendering-on-hololens-2)程式上追蹤此資訊。
 >
-> 如果需要 ARM 架構，請流覽至 [ **編輯] > 專案設定**]、[播放程式]，然後在 [ **其他設定** ] 功能表下，停用 **圖形作業**。 停用 **圖形作業** 可讓應用程式使用 Unity 2019.3. x 的 ARM 組建架構進行部署，但建議使用 ARM64。
+> 如果需要 ARM 架構，請流覽至 [**編輯] > Project 設定、播放** 程式，然後在 **其他設定** 功能表下，停用 **圖形作業**。 停用 **圖形作業** 可讓應用程式使用 Unity 2019.3. x 的 ARM 組建架構進行部署，但建議使用 ARM64。
 
 ## <a name="building-and-deploying-mrtk-to-a-windows-mixed-reality-headset"></a>建立 MRTK 並部署到 Windows Mixed Reality 耳機
 
@@ -69,16 +69,16 @@ Windows Mixed Reality (WMR) 耳機可用於通用 Windows 平臺 (UWP) 和獨立
 
     ![WMR 外掛程式搜尋](../features/images/build-deploy/WMR/SteamSearchWMRPlugin.png)
 
-1. 針對 SteamVR 外掛程式的 Windows Mixed Reality 選取 [ **啟動** ]。
+1. 針對 SteamVR 外掛程式的 Windows Mixed Reality 選取 [**啟動**]。
 
     ![WMR 外掛程式](../features/images/build-deploy/WMR/WMRPlugin.png)
 
     - SteamVR 和 WMR 外掛程式將會啟動，並顯示 WMR 耳機的新追蹤狀態視窗。
-    - 如需詳細資訊，請造訪 [Windows Mixed Reality 流檔](https://support.microsoft.com/help/4053622/windows-10-play-steamvr-games-in-windows-mixed-reality)
+    - 如需詳細資訊，請造訪[Windows Mixed Reality 流檔](https://support.microsoft.com/help/4053622/windows-10-play-steamvr-games-in-windows-mixed-reality)
 
         ![WMR 啟動外觀](../features/images/build-deploy/WMR/WMRPluginActive.png)
 
-1. 在 Unity 中，開啟您的 MRTK 場景，然後流覽至 [檔案 **> 組建設定**]
+1. 在 Unity 中，開啟您的 MRTK 場景，然後流覽至檔案 **> 組建設定**
 
 1. 建立場景
     - 選取 [**新增開啟的場景**]

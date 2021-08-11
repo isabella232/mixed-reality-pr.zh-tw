@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、設定檔、
-ms.openlocfilehash: 785d402e924a534627dfd1d742d2019d9ce9dd5a
-ms.sourcegitcommit: 2f69fb62eb81f91e655d7b55306b0550a1162496
+ms.openlocfilehash: b3ba5aa9ac08dcfe0eecdb479db075b39b43a0e376239822432df872b0775d27
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/10/2021
-ms.locfileid: "111908242"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115225652"
 ---
 # <a name="profiles"></a>Profiles
 
@@ -27,7 +27,7 @@ ms.locfileid: "111908242"
 
 設定檔主要是用來支援跨多個裝置的特定案例，這些裝置會透過資料提供者來處理。 如此一來，應用程式就可以盡可能地設計為裝置 agnosticly，並讓 MRTK 和設定檔的資料提供者處理跨平臺支援。
 
-另外還有一些設定檔是根據特定裝置的輸入功能來建立的，例如預設為 GGV 樣式互動的 HoloLens 1 設定檔。
+另外還有一些設定檔是根據特定裝置的輸入功能來建立的，例如 HoloLens 1 設定檔，預設為 GGV 樣式的互動。
 
 ## <a name="xr-sdk"></a>XR SDK
 

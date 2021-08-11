@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/26/2021
 ms.topic: article
 keywords: Unity、遠端、全像全像遠端、全像遠端播放機、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、unity play 模式
-ms.openlocfilehash: 0c71791c80a5e84ee48241baa756064a800e5a41
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: cd9dca9d1ddf17b78e8c317fa3a58093c9b5837de379510148c6e645b31120ca
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757210"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115226230"
 ---
 # <a name="preview-your-work-with-holographic-remoting"></a>預覽您的工作與全像攝影遠端
 
