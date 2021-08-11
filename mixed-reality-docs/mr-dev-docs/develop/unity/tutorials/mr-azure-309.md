@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學院，unity，教學課程，api，application insights，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: efd6a3f8bf526dcf6a7eaee199f5c22ffa1dd639
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 549afbd1e5a3f42bb0540714500d31edf022d36511961e887ac9e927b9af1ea3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730375"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222089"
 ---
 # <a name="hololens-1st-gen-and-azure-309-application-insights"></a>HoloLens (第1代) 和 Azure 309： Application insights
 
@@ -26,7 +26,7 @@ ms.locfileid: "104730375"
 
 在此課程中，您將瞭解如何使用 Azure 應用程式 Insights API 來收集有關使用者行為的分析，以將 Application Insights 功能新增至混合現實應用程式。
 
-Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用程式收集分析，並從便於使用的入口網站進行管理。 分析可以是從效能到您想要收集之自訂資訊的任何內容。 如需詳細資訊，請造訪 [Application Insights 頁面](https://azure.microsoft.com/services/application-insights/)。
+Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用程式收集分析，並從便於使用的入口網站進行管理。 分析可以是從效能到您想要收集之自訂資訊的任何內容。 如需詳細資訊，請造訪[Application Insights 頁面](https://azure.microsoft.com/services/application-insights/)。
 
 完成本課程之後，您將會有一個混合現實的沉浸式耳機應用程式，可以執行下列動作：
 
@@ -47,9 +47,9 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更的注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
+> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和書面指示，代表在撰寫 (2018 年7月) 時已經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
@@ -74,14 +74,14 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 ## <a name="chapter-1---the-azure-portal"></a>第1章-Azure 入口網站
 
-若要使用 *Application Insights*，您將需要在 Azure 入口網站中建立和設定 *Application Insights 服務* 。
+若要使用 *Application Insights*，您將需要在 Azure 入口網站中建立和設定 *Application Insights 服務*。
 
 1.  登入 [Azure 入口網站](https://portal.azure.com)。
 
     > [!NOTE]
     > 如果您還沒有 Azure 帳戶，您將需要建立一個帳戶。 如果您在課堂或實驗室的情況下進行本教學課程，請洽詢講師或其中一個 proctors，協助您設定新的帳戶。
 
-2.  登入後，按一下左上角的 [ **新增** ]，並搜尋 *Application Insights*，然後按一下 **Enter 鍵**。
+2.  登入後，按一下左上角的 [**新增**]，並搜尋 *Application Insights*，然後按一下 **Enter 鍵**。
 
     > [!NOTE]
     > 在較新的入口網站中，[**建立資源**] 可能已取代 **新** 的文字。
@@ -130,7 +130,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
     >  將此網頁保持在開啟狀態且容易存取，您會經常回到這裡查看所收集的資料。
 
     > [!IMPORTANT]
-    > 若要執行 Application Insights，您必須使用三個 (3) 特定值： **檢測金鑰**、 **應用程式識別碼** 和 **API 金鑰**。 在下方，您將瞭解如何從您的服務取得這些值。 請務必在空白的 [ *記事本* ] 頁面上記下這些值，因為您很快就會在程式碼中使用這些值。
+    > 若要執行 Application Insights，您必須使用三個 (3) 特定值：**檢測金鑰**、**應用程式識別碼** 和 **API 金鑰**。 在下方，您將瞭解如何從您的服務取得這些值。 請務必記下空白 *記事本* 頁面上的這些值，因為您很快就會在程式碼中使用這些值。
 
 9.  若要尋找 **檢測金鑰**，您必須將服務功能清單向下移動，然後按一下 [ **屬性**]，顯示的索引標籤會顯示 **服務金鑰**。
 
@@ -159,21 +159,21 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 1.  開啟 *Unity* ，然後按一下 [ **新增**]。
 
-    ![設定 Unity 專案](images/AzureLabs-Lab309-11.png)
+    ![設定 Unity Project](images/AzureLabs-Lab309-11.png)
 
-2.  您現在將需要提供 Unity 專案名稱，請插入 **MR \_ Azure \_ application \_ Insights**。 請確定 *範本* 已設定為 **3d**。 將 *位置* 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  您現在將需要提供 Unity Project 名稱，請插入 **MR \_ Azure \_ 應用程式 \_ Insights**。 請確定 *範本* 已設定為 **3d**。 將 *位置* 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
-    ![設定 Unity 專案](images/AzureLabs-Lab309-12.png)
+    ![設定 Unity Project](images/AzureLabs-Lab309-12.png)
 
 3.  在 Unity 開啟的情況下，值得檢查預設 **腳本編輯器** 是否設定為 **Visual Studio**。 移至 [ **編輯 \> 喜好** 設定]，然後在新視窗中，流覽至 [ **外部工具**]。 將 **外部腳本編輯器** 變更為 **Visual Studio 2017**。 關閉 [ **喜好** 設定] 視窗。
 
-    ![設定 Unity 專案](images/AzureLabs-Lab309-13.png)
+    ![設定 Unity Project](images/AzureLabs-Lab309-13.png)
 
-4.  接下來，移至 [檔案 **\> 組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移至 [檔案 **\> 組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 [**通用 Windows 平臺**]。
 
-    ![設定 Unity 專案](images/AzureLabs-Lab309-14.png)
+    ![設定 Unity Project](images/AzureLabs-Lab309-14.png)
 
-5.  移至 **檔案 \> 組建設定** ，並確定：
+5.  移至 [檔案 **\> 組建設定** 並確定：
 
     1.  **目標裝置** 已設定為 **任何裝置**
 
@@ -189,25 +189,25 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
         1.  若要這麼做，請選取 [ **新增開啟的場景**]。 [儲存] 視窗隨即出現。
 
-            ![設定 Unity 專案](images/AzureLabs-Lab309-15.png)
+            ![設定 Unity Project](images/AzureLabs-Lab309-15.png)
 
         2. 為此建立新的資料夾，以及任何未來的場景，然後按一下 [ **新增資料夾** ] 按鈕，建立新的資料夾，將它命名為 **場景**。
 
-            ![設定 Unity 專案](images/AzureLabs-Lab309-16.png)
+            ![設定 Unity Project](images/AzureLabs-Lab309-16.png)
 
         3. 開啟新建立的 **場景** 資料夾，然後在 [ *檔案名：* 文字] 欄位中，輸入 **ApplicationInsightsScene**，然後按一下 [ **儲存**]。
 
-            ![設定 Unity 專案](images/AzureLabs-Lab309-17.png)
+            ![設定 Unity Project](images/AzureLabs-Lab309-17.png)
 
-6.  [ **組建設定**] 中的其餘設定，現在應該保持為預設值。
+6.  [**組建設定**] 中的其餘設定，現在應該保持為預設值。
 
-7.  在 [ **組建設定** ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。
+7.  在 [**組建設定**] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。
 
-    ![設定 Unity 專案](images/AzureLabs-Lab309-18.png)
+    ![設定 Unity Project](images/AzureLabs-Lab309-18.png)
 
 8. 在此面板中，需要驗證幾個設定：
 
-    1.  在 [ **其他設定** ] 索引標籤中：
+    1.  在 [**其他設定**] 索引標籤中：
 
         1.  **腳本****執行階段版本** 應該是 **實驗 ( .net 4.6 對等)**，這會觸發重新開機編輯器的需求。
 
@@ -215,23 +215,23 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
         3.  **API 相容性層級** 應為 **.net 4.6**
 
-        ![設定 Unity 專案](images/AzureLabs-Lab309-19.png)
+        ![設定 Unity Project](images/AzureLabs-Lab309-19.png)
 
-    2.  在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2.  在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         - **InternetClient**     
 
-            ![設定 Unity 專案](images/AzureLabs-Lab309-20.png)
+            ![設定 Unity Project](images/AzureLabs-Lab309-20.png)
 
-    3.  在面板的 [ **XR 設定** ] 中，在 [設定] () 的 [ **發佈設定** ] 下方找到 [支援的滴答 **虛擬事實**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3.  接下來的面板中，在 **XR 設定** (在 **[發佈設定**) ] 底下的 [發行] **，請確定** 已新增 **Windows Mixed Reality SDK** 。
 
-        ![設定 Unity 專案](images/AzureLabs-Lab309-21.png)
+        ![設定 Unity Project](images/AzureLabs-Lab309-21.png)
 
-9.  回到 **組建設定**， **Unity c # 專案** 不再呈現灰色;勾選此方塊旁邊的核取方塊。
+9.  回到 **Build 設定**， **Unity c # 專案** 不再呈現灰色;勾選此方塊旁邊的核取方塊。
 
 10.  關閉 [建置設定] 視窗。
 
-11.  儲存場景和專案 (**檔**  >  **儲存場景/** 檔案  >  **儲存專案**) 。
+11.  儲存場景，並 **Project (檔**  >  **儲存場景/** 檔案  >  **儲存專案**) 。
 
 
 ## <a name="chapter-3---import-the-unity-package"></a>第3章-匯入 Unity 套件
@@ -240,9 +240,9 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 > 如果您想要略過 *Unity 設定* 此課程的元件，並直接繼續進行程式碼，您可以隨意下載此 [Azure-MR. unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/Azure-MR-309.unitypackage)，並將其匯入到您的專案中做為 [**自訂套件**](https://docs.unity3d.com/Manual/AssetPackages.html)。 這也會包含下一章中的 Dll。 匯入之後，請從 [**第6章**](#chapter-6---create-the-applicationinsightstracker-class)繼續。
 
 > [!IMPORTANT]
-> 若要在 Unity 中使用 Application Insights，您需要匯入其 DLL 以及 Newtonsoft DLL。 Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程式。 在解決 bug 之後，將不再需要這一節中的這些步驟 (4-7) 。
+> 若要在 Unity 中使用 Application Insights，您需要匯入其 dll 以及 Newtonsoft dll。 Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程式。 在解決 bug 之後，將不再需要這一節中的這些步驟 (4-7) 。
 
-若要將 Application Insights 匯入您自己的專案中，請確定您已 [下載包含外掛程式的 ' unitypackage '](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage)。 然後執行下列動作：
+若要將 Application Insights 匯入您自己的專案中，請確定您已[下載包含外掛程式的 ' unitypackage '](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20309%20-%20Application%20insights/AppInsights_LabPlugins.unitypackage)。 然後執行下列動作：
 
 1.  使用 [**資產匯 \> 入封裝 \> 自訂套件**] 功能表選項，將 **unitypackage** 新增至 Unity。
 
@@ -252,7 +252,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 3.  按一下 [匯 **入** ] 按鈕，將專案加入至您的專案。
 
-4.  移至專案視圖中 [**外掛程式**] 下的 [ **Insights** ] 資料夾，並 *只* 選取下列外掛程式：
+4.  移至 Project 視圖中 [**外掛程式**] 下的 [ **Insights** ] 資料夾，並 *只* 選取下列外掛程式：
 
     -   Microsoft.ApplicationInsights
 
@@ -265,7 +265,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
     > [!NOTE]
     > 標記這類外掛程式，會將其設定為僅用於 Unity 編輯器。 在 [WSA] 資料夾中有一組不同的 Dll，會在從 Unity 匯出專案之後使用。
 
-6.  接下來，您必須開啟 [ **Insights** ] 資料夾內的 [ **WSA** ] 資料夾。 您會看到您剛剛設定的相同檔案的複本。 選取此檔案，然後在 [偵測器] 中，確定已 **取消選取****任何平臺**，然後 **確定只****選取**[ **WSAPlayer** ]。 按一下 [套用]。
+6.  接下來，您必須開啟 **Insights** 資料夾內的 [ **WSA** ] 資料夾。 您會看到您剛剛設定的相同檔案的複本。 選取此檔案，然後在 [偵測器] 中，確定已 **取消選取****任何平臺**，然後 **確定只****選取**[ **WSAPlayer** ]。 按一下 [套用]。
 
     ![匯入 Unity 封裝](images/AzureLabs-Lab309-25.png)
 
@@ -319,7 +319,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
     ![設定 Unity 場景中的物件](images/AzureLabs-Lab309-33.png)
 
-4.  建立要與 **平面** 物件搭配使用的基本材質，讓其他圖形更容易查看。 流覽至您的 [*專案] 面板*，然後以滑鼠右鍵按一下，然後 **建立****資料夾**，再建立新的資料夾。 命名 it **教材**。
+4.  建立要與 **平面** 物件搭配使用的基本材質，讓其他圖形更容易查看。 流覽至您的 *Project 面板*，然後以滑鼠右鍵按一下，然後建立 **資料夾**，再建立新的資料夾。 命名 it **教材**。
 
     ![設定 Unity 場景中的物件](images/AzureLabs-Lab309-34.png) ![設定 Unity 場景中的物件](images/AzureLabs-Lab309-35.png)
 
@@ -371,7 +371,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 您需要建立的第一個腳本是 **ApplicationInsightsTracker**，其負責：
 
-1.  根據使用者互動建立事件，以提交給 Azure 應用程式見解。
+1.  根據使用者互動建立事件，以提交給 Azure 應用程式 Insights。
 
 2. 根據使用者互動建立適當的事件名稱。
 
@@ -379,7 +379,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 若要建立此類別：
 
-1.  在 [*專案] 面板* 中按一下滑鼠右鍵，然後 **建立**  >  **資料夾**。 將資料夾命名為 **腳本**。
+1.  在 *Project 面板* 中按一下滑鼠右鍵，然後 **建立**  >  **資料夾**。 將資料夾命名為 **腳本**。
 
     ![建立 ApplicationInsightsTracker 類別](images/AzureLabs-Lab309-46.png)  ![建立 ApplicationInsightsTracker 類別](images/AzureLabs-Lab309-47.png)
 
@@ -1195,7 +1195,7 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 在本章中，您必須將 **移動** 腳本放到 **相機父系** ，並設定其參考目標。 該腳本接著會處理將其他腳本放在需要的位置。
 
-1.  從 [*專案] 面板* 中的 [**腳本**] 資料夾，將 **移動** 腳本拖曳至位於 [階層]*面板* 中的 [**相機] 父** 物件。
+1.  從 *Project 面板* 中的 [**腳本**] 資料夾，將 **移動** 腳本拖曳至位於 [階層]*面板* 中的 [**相機] 父** 物件。
 
     ![在 Unity 場景中設定腳本參考](images/AzureLabs-Lab309-48.png)
 
@@ -1207,35 +1207,35 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 此專案的 Unity 區段所需的所有專案現在都已完成，因此您可以從 Unity 建立它。
 
-1.  流覽至 **組建設定** **， (檔案**  >  **組建設定**) 。
+1.  流覽至 **build 設定**， (**File**  >  **build 設定**) 。
 
-2.  從 [ **組建設定** ] 視窗中，按一下 [ **建立**]。
+2.  從 [**組建設定**] 視窗中，按一下 [**建立**]。
 
-    ![將 Unity 專案建立到 UWP 方案](images/AzureLabs-Lab309-50.png)
+    ![建立 Project 到 UWP 解決方案的 Unity](images/AzureLabs-Lab309-50.png)
 
 3.  **檔案總管** 視窗會隨即顯示，提示您輸入組建的位置。 按一下左上角的 [ **新增資料夾** ]，以建立新的資料夾 () ，並為其 **建立** 名稱。
 
-    ![將 Unity 專案建立到 UWP 方案](images/AzureLabs-Lab309-51.png)
+    ![建立 Project 到 UWP 解決方案的 Unity](images/AzureLabs-Lab309-51.png)
 
-    1.  開啟 [新 **組建** ] 資料夾，然後使用 **新) 資料夾** (建立另一個資料夾，並將它命名為 **\_ Azure \_ Application \_ Insights 的 MR**。
+    1.  開啟 [新 **組建**] 資料夾，然後再使用新) **資料夾** (建立另一個資料夾，並將它命名為 **\_ Azure \_ 應用程式 \_ Insights** 的「MR」。
 
-        ![將 Unity 專案建立到 UWP 方案](images/AzureLabs-Lab309-52.png)
+        ![建立 Project 到 UWP 解決方案的 Unity](images/AzureLabs-Lab309-52.png)
 
-    2.  選取 [ **MR \_ Azure \_ application \_ Insights** ] 資料夾，然後按一下 [ **選取資料夾**]。 專案需要一分鐘的時間才能建立。
+    2.  選取 [ **MR \_ Azure \_ 應用程式 \_ Insights** ] 資料夾，然後按一下 [**選取資料夾**]。 專案需要一分鐘的時間才能建立。
 
 4.  下列 *組建* 之後， **檔案總管** 將會顯示新專案的位置。
 
 ## <a name="chapter-13---deploy-mr_azure_application_insights-app-to-your-machine"></a>第13章-將 MR_Azure_Application_Insights 應用程式部署至您的電腦
 
-若要在本機電腦上部署 **MR \_ Azure \_ application \_ Insights** 應用程式：
+若要在本機電腦上部署 **MR \_ Azure \_ 應用程式 \_ Insights 應用程式**：
 
-1.  在 **Visual Studio** 中開啟 **MR \_ Azure \_ application \_ Insights** 應用程式的解決方案檔案。
+1.  在 **Visual Studio** 中開啟 **MR \_ Azure \_ 應用程式 \_ Insights 應用程式** 的解決方案檔案。
 
 2.  在 [ **方案平臺**] 中，選取 [ **x86]、[本機電腦**]。
 
 3.  在 [ **方案** 設定] 中選取 [ **Debug**]。
 
-    ![將 Unity 專案建立到 UWP 方案](images/AzureLabs-Lab309-53.png)
+    ![建立 Project 到 UWP 解決方案的 Unity](images/AzureLabs-Lab309-53.png)
 
 4.  移至 [ **組建] 功能表** ，然後按一下 [ **部署方案** ]，將應用程式側載至您的電腦。
 
@@ -1274,10 +1274,10 @@ Application Insights 是一項 Microsoft 服務，可讓開發人員從其應用
 
 ## <a name="bonus-exercises"></a>額外練習
 
-**練習1**
+**練習 1**
 
 嘗試產生，而不是以手動方式建立 ObjectInScene 物件，並在您的腳本內的平面上設定其座標。 如此一來，您就可以向 Azure 詢問 Azure 最受歡迎的物件 (從注視或鄰近的結果) ，然後產生 *額外* 的其中一個物件。
 
-**練習2**
+**練習 2**
 
 依時間排序您的 Application Insights 結果，以便取得最相關的資料，並在您的應用程式中執行該時間敏感的資料。

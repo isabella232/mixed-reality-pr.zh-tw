@@ -5,13 +5,13 @@ author: shengkait
 ms.author: shentan
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、樣式、設計、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、調整、全像影像
-ms.openlocfilehash: 12b1c96146f76274831c9bc3427cef93bb326f70
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality、樣式、設計、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、調整、全息影線
+ms.openlocfilehash: 0b643b7f4b53795afa6bac9b54e55565233ac1d96a6a58d5389a8a4b7db8d7cc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583309"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223000"
 ---
 # <a name="scale"></a>調整
 
@@ -23,7 +23,7 @@ ms.locfileid: "98583309"
 
 ## <a name="how-to-suggest-the-scale-of-objects-and-environments"></a>如何建議物件和環境的規模
 
-有許多方式可以建議物件的小數位數，其中有些可能會影響其他可感知的因素。 第一個按鍵是以「真實」大小顯示物件，並在使用者移動時維持實際大小。 在使用者的視覺角度更近或更近或更近的情況下，全像是真實物件的方式。
+有許多方式可以建議物件的小數位數，其中有些可能會影響其他可感知的因素。 第一個按鍵是以「真實」大小顯示物件，並在使用者移動時維持實際大小。 當使用者的視覺角度更近或更近時，全像投影將會佔用不同的使用者視覺角度，與實際物件的方式相同。
 
 ### <a name="use-the-distance-of-objects-as-theyre-presented-to-the-user"></a>使用物件在呈現給使用者時的距離
 
@@ -33,10 +33,10 @@ ms.locfileid: "98583309"
     :::column:::
         **[Volvo 使用這項技術來建立](https://www.youtube.com/watch?v=DilzwF90vec)** 新車輛的 showroom 體驗，並使用全像全像直覺的方式，利用全像直覺的方式來為使用者提供體驗。 體驗是從實體資料表上的車輛全息表開始，讓使用者瞭解模型的總大小和形狀。 稍後在此體驗中，汽車會擴充至超出裝置視野的大小。 因為使用者已從較小的模型取得參考的畫面格，所以可充分地四處流覽車輛的功能。<br>
         <br>
-        *影像： Volvo 適用于 HoloLens 的車輛體驗*
+        *影像： Volvo HoloLens 的車輛體驗*
     :::column-end:::
         :::column:::
-       ![HoloLens 的 Volvo Cars 體驗](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)<br>
+       ![HoloLens 的車輛體驗 Volvo](images/volvo-cars-microsoft-hololens-experience01-640px.jpg)<br>
     :::column-end:::
 :::row-end:::
 
@@ -53,7 +53,7 @@ ms.locfileid: "98583309"
     :::column:::
         Minecraft 使用類似的技巧 **[開發了概念體驗](https://minecraft.net/)**。 藉由將虛擬視窗新增至實體介面，房間內的現有物件將會放在相當大的環境內容中，但不超過空間的實體規模限制。<br>
         <br>
-        *影像： Minecraft 適用于 HoloLens 的概念體驗*
+        *影像： HoloLens 的 Minecraft 概念體驗*
     :::column-end:::
         :::column:::
        ![HoloLens 的 Minecraft 概念體驗](images/800px-minecraftwindow-640px.jpg)<br><br>

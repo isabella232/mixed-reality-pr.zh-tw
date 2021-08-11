@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c2810f6f1f90b32ee7621f52e3911da23a86a983
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 18e936ec4a896e7e0087023c8ed71899cbe5ab129389f6f715ac03d038d1cfb5
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693745"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220292"
 ---
 # <a name="experimental-features"></a>實驗性功能
 
@@ -98,7 +98,7 @@ public static void MyCommand()
 
 使用您的元件不應中斷按鈕、ManipulationHandler、BoundingBox 或互動。
 
-例如，在 [此 SCROLLABLEOBJECTCOLLECTION PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)中，新增 ScrollableObjectCollection 會導致人員無法使用 HoloLens 按鈕 prefabs。 雖然這不是因為 PR 中的 bug 所造成 (，而是公開現有的錯誤) ，但是它會使 PR 無法進入簽入狀態。
+例如，在[這個 ScrollableObjectCollection PR](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/6001)中，新增 ScrollableObjectCollection 會導致人員無法使用 HoloLens 按鈕 prefabs。 雖然這不是因為 PR 中的 bug 所造成 (，而是公開現有的錯誤) ，但是它會使 PR 無法進入簽入狀態。
 
 ### <a name="provide-an-example-scene-that-demonstrates-how-to-use-the-feature"></a>提供示範如何使用此功能的範例場景
 

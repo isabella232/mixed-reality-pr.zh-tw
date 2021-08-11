@@ -4,19 +4,19 @@ description: 在 unity 中使用 ARFoundation 的檔
 author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
-keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、AR 套件
-ms.openlocfilehash: 4a0e57fa3f8b00ac9867689b9c8fe49a560dbe11
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR Core、ar 套件
+ms.openlocfilehash: 4fea85981b8f8ff770ffa62906a20f7fa40215e33218a5665c2fa8a88010d07e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683051"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219826"
 ---
 # <a name="how-to-configure-mrtk-for-ios-and-android-experimental"></a>如何設定 iOS 和 Android 的 MRTK [實驗]
 
 ## <a name="install-required-packages"></a>安裝必要的套件
 
-1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0)或 [Unity 封裝管理員](../../configuration/usingupm.md)下載並匯入 **MixedReality 的套件。**
+1. 從 [GitHub](https://github.com/microsoft/MixedRealityToolkit-Unity/releases/tag/v2.3.0)或 [Unity 封裝管理員](../../configuration/usingupm.md)下載並匯入 MixedReality 的套件 **。**
 
 1. 在 Unity 封裝管理員 (UPM) 中，安裝下列套件：
 
@@ -59,11 +59,11 @@ ms.locfileid: "104683051"
 
     ![複製 MRTK 攝影機設定檔](../images/camera-system/CloneCameraProfileARFoundation.png)
 
-1. 將 [偵測器] 面板移至 [相機系統] 區段，然後展開 [ **相機設定提供者** ] 區段。
+1. 將 [偵測器] 面板移至 [相機系統] 區段，然後展開 [**相機設定提供者**] 區段。
 
     ![展開設定提供者](../images/camera-system/ExpandProviders.png)
 
-1. 按一下 [新增 **相機設定提供者** ]，並展開新加入的 **新相機設定** 專案。
+1. 按一下 [新增 **相機設定提供者**]，並展開新加入的 **新相機設定** 專案。
 
     ![展開新的設定提供者](../images/camera-system/ExpandNewProvider.png)
 
@@ -80,19 +80,19 @@ ms.locfileid: "104683051"
 
 ## <a name="building-a-scene-for-android-and-ios-devices"></a>建立適用于 Android 和 iOS 裝置的場景
 
-1. 確定您已將 UnityAR 攝影機設定提供者新增至您的場景。
+1. 請確定您已將 UnityAR 攝影機設定提供者新增至您的場景。
 
-1. 將平臺切換至 Unity 組建設定中的 Android 或 iOS
+1. 將平臺切換至 Unity 組建中的 Android 或 iOS 設定
 
-    當您切換平臺時，您應該會看到 [MRTK 專案設定] 視窗，其中包含您所選平臺的設定。  按一下 [套用] 以啟用平臺特定設定。
+    當您切換平臺時，應該會看到 [MRTK Project 設定] 視窗，其中包含您所選平臺的設定。  按一下 [套用] 以啟用平臺特定設定。
 
-    iOS 專案設定器設定
+    iOS Project 配置器設定
 
-    ![iOS 專案配置器](../images/camera-system/MRTKProjectConfigurator.png)
+    ![iOS Project 的配置器](../images/camera-system/MRTKProjectConfigurator.png)
 
 1. 切換 Android 的平臺後，不需要額外的步驟。
 
-1. 如果平臺是 iOS，請編輯 > 專案設定 > 播放程式 > 其他設定，請在優化標頭下， **取消** 核取 [去除引擎程式碼]
+1. 如果平臺是 iOS，請編輯 > Project 設定 > 播放程式 > 其他設定，在優化標頭下，**取消** 核取 [去除引擎程式碼]
 
     ![iOS 設定](../images/camera-system/UncheckStripEngineCodeiOS.png)
 
@@ -103,4 +103,4 @@ ms.locfileid: "104683051"
 
 ## <a name="see-also"></a>另請參閱
 
-- [Unity AR 相機設定](../camera-system/unity-ar-camera-settings.md)
+- [Unity AR 攝影機設定](../camera-system/unity-ar-camera-settings.md)

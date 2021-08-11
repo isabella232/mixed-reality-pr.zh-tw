@@ -5,13 +5,13 @@ author: mavitazk
 ms.author: pinkb
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、色彩、燈光、材質、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 2e1626e72d49107c2a83bf1123b306d3ee5c8640
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: Windows Mixed Reality、設計、色彩、燈光、材質、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 50789faa44e6786c0d9fd0b146daa84f459df451bedc52f06073e742ea8064a0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600357"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219854"
 ---
 # <a name="color-light-and-materials"></a>色彩、光線和材質
 
@@ -23,17 +23,17 @@ ms.locfileid: "110600357"
 
 ## <a name="rendering-on-immersive-vs-holographic-devices"></a>在沉浸式和全像攝影裝置上轉譯
 
-相較于全像攝影耳機中轉譯的內容，在沉浸式耳機中轉譯的內容會以視覺化方式呈現。 雖然沉浸式耳機通常會像在2D 螢幕上一樣地轉譯內容，但 HoloLens 這類的全息耳機會使用色彩順序，請參閱-透過 RGB 顯示來轉譯全像投影。
+相較于全像攝影耳機中轉譯的內容，在沉浸式耳機中轉譯的內容會以視覺化方式呈現。 雖然沉浸式耳機通常會像在2d 螢幕上一樣地轉譯內容，但是像是 HoloLens 的全像投影耳機一樣使用色彩順序，請參閱-透過 RGB 顯示來轉譯全像影像。
 
 永遠花時間在全像攝影耳機中測試您的全像攝影體驗。 即使是專門針對全像攝影裝置所建立的內容外觀，也會隨著次要監視器、快照和 spectator view 中的不同而有所不同。 請記住，您可以使用裝置的體驗、測試全像投影的燈光，以及觀察所有邊的 (以及上方和下方，) 內容呈現的方式。 請務必使用裝置上的一系列亮度設定進行測試。 所有使用者不太可能會共用假設的預設值，以及一組不同的光源條件。
 
 ## <a name="fundamentals-of-rendering-on-holographic-devices"></a>在全像裝置上呈現的基本概念
 
-* 全像 **裝置具有** 加總顯示器–將燈光從真實世界的光線中增加，以建立全像白色，白色會顯示為明亮，而黑色會顯示為透明。
+* 全像 **裝置有加法顯示器**–全像投影是藉由將光線從真實世界的光線來建立的，白色會顯示為明亮，而黑色會顯示為透明。
 
 * **色彩影響會隨著使用者的環境而有所不同** -使用者的房間內有許多不同的光源。 建立具有適當對比層級的內容，以利清楚說明。
 
-* **避免動態照明** –在全像全像全像全像全像的全像全像全像全像全像 使用 advanced、動態光源可能會超過行動裝置的功能。 當需要動態光源時，建議使用 [混合現實工具組標準著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md)。 
+* **避免動態光源**–在全像全像全像全像在全像全像在全像全像的全像投影。 使用 advanced、動態光源可能會超過行動裝置的功能。 當需要動態光源時，建議使用 [混合現實工具組標準著色器](https://github.com/microsoft/MixedRealityToolkit-Unity/blob/mrtk_release/Documentation/README_MRTKStandardShader.md)。 
 
 ## <a name="designing-with-color"></a>使用色彩設計
 
@@ -45,7 +45,7 @@ ms.locfileid: "110600357"
 
 * **色彩一致性** ：通常會將全像影像呈現為明亮，使其維持色彩一致性，無論背景為何。 大型區域可能會變成 blotchy。 避免大型區域的明亮、單色。
 
-* 從 **色彩的「** 寬範圍」來獲益，在概念上類似 Adobe RGB。 因此，某些色彩可能會在裝置中顯示不同的品質和標記法。
+* 寬範圍 HoloLens 從色彩的「寬範圍」獲益，在概念上類似 Adobe RGB。 因此，某些色彩可能會在裝置中顯示不同的品質和標記法。
 
 * **Gamma** -轉譯影像的亮度和對比在沉浸式和全像全像裝置之間會有所不同。 這些裝置的差異通常會讓色彩和陰影的暗區出現、更多或更不亮。
 

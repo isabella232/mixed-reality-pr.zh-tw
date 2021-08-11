@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens、Emulator、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
-ms.openlocfilehash: c6c5f011297809d51a3b5d830f19b5d80a582d2b
-ms.sourcegitcommit: eb39526f9620f0459bd30e4484307892f4609334
+ms.openlocfilehash: ca5338a0104c5551d96cb7ea4d7dfef3e38432c14dc75ee41a32874e71f1fb01
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114201609"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223551"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 Emulator 封存
 

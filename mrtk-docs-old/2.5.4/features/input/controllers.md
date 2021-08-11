@@ -5,12 +5,12 @@ author: keveleigh
 ms.author: kurtie
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、控制器、
-ms.openlocfilehash: 302dafce202a42801f1b501e070e65ddf042727c
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 87b3ed98ebd5b16b62e8cf36364c350580ba38ac1c7dbb549858ed8bec2e1eea
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104690298"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219782"
 ---
 # <a name="controllers"></a>控制器
 

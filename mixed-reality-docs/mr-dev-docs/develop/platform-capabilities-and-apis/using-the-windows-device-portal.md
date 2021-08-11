@@ -7,12 +7,12 @@ ms.date: 08/03/2020
 ms.topic: article
 keywords: Windows 裝置入口網站, HoloLens
 ms.localizationpriority: high
-ms.openlocfilehash: d772175683208ac0e3ed4b3163ca561da416c1cf
-ms.sourcegitcommit: 593e8f80297ac0b5eccb2488d3f333885eab9adf
+ms.openlocfilehash: edcd1796598b558f42232bf54ae3d40d3c509bb9515d8dcbe7f3cf9f2b7dfd62
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112919809"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221473"
 ---
 # <a name="using-the-windows-device-portal"></a>使用 Windows 裝置入口網站
 
@@ -27,6 +27,8 @@ ms.locfileid: "112919809"
 HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來設定及管理您的裝置。 Device Portal 是您 HoloLens 上的網頁伺服器，您可以從電腦上的網頁瀏覽器與它連線。 裝置入口網站包含許多工具，可協助您管理 HoloLens，並對應用程式進行偵錯及最佳化。
 
 本文件特別說明適用於 HoloLens 的 Windows 裝置入口網站。 若要使用適用於傳統型 Windows 裝置入口網站 (包括 Windows Mixed Reality)，請參閱 [Windows 裝置入口網站概觀](/windows/uwp/debug-test-perf/device-portal)
+
+> [注意！]不建議使用裝置入口網站來 HoloLens 您要部署至組織的裝置。
 
 ## <a name="setting-up-hololens-to-use-windows-device-portal"></a>設定 HoloLens 以使用 Windows 裝置入口網站
 
@@ -63,25 +65,25 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 > [!IMPORTANT]
 > 基於新的瀏覽器標準，不再建議使用 IpOverUsb，因為它需要使用埠10080。 如果您仍然想要使用 IpOverUsb，請在 Visual Studio 安裝期間檢查 [USB 裝置連線能力] 方塊（預設不會核取）。 相反地，我們建議使用 UsbNcm 連接，HoloLens 2 上預設支援此功能。 如果您使用 HoloLens 1，建議您使用 WiFi 連接到您的電腦。
 
-1. 如果您的 HoloLens 2 正在執行 Windows 全像21H1 版或更高版本，請移至 [設定] 應用程式中的 [適用于開發人員]，並確定已開啟 [裝置探索]。 
-2. 使用 USB 纜線將您的 HoloLens 2 連接到您的電腦。
+1. 如果您的 HoloLens 2 執行 Windows 全像21H1 或更高版本，請移至設定應用程式中的 [適用于開發人員]，並確定已開啟 [裝置探索]。 
+2. 使用 USB 纜線連線您的電腦 HoloLens 2。
 3. 尋找您的 UsbNcm IP。 有幾種方式可以執行此作業：
-  * 在裝置上的 [設定] 應用程式中 (此方法僅適用于執行 Windows 全像21H1 或更高版本的 HoloLenses，並開啟 [裝置探索]。 ) 
-    1. 移至裝置上的 [設定] 應用程式。
+  * 在裝置上的設定應用程式中 (此方法僅適用于執行 Windows 全像21H1 或更高版本的 HoloLenses，並已開啟「裝置探索」。 ) 
+    1. 移至裝置上的設定應用程式。
     2. 移至開發人員的「更新 & 安全性」 >」。 這是您裝置入口網站啟用的相同位置。
     3. 在頁面底部複製您的 **乙太** 網路 IP 位址。 這是您的 UsbNcm IP。 
     ![HoloLens 2 設定-UsbNcm IP](images/deviceportal_usbncm_ipaddress.jpg)
 
   * 在裝置入口網站 
-    1. 在您的裝置上，使用 HoloLens 的 WiFi 位址開啟裝置入口網站。 如果您不知道 HoloLens 的 WiFi 位址，可以使用語音命令「我的 IP 位址為何？」
+    1. 在您的裝置上，使用 HoloLens 的 WiFi 位址開啟裝置入口網站。 如果您不知道您 HoloLens 的 WiFi 位址，您可以使用語音命令「我的 IP 位址為何？」
     2. 移至系統 > 網路
     3. 在 [IP 設定] 面板中頁面的最右側，找出開頭為 "Description： UsbNcm Function" 的區段。
     4. 您的 UsbNcm IP 是 [IPv4 位址] 行。 您可以複製位址或直接按一下位址-它是超連結，會使用 UsbNcm IP 重新開啟裝置入口網站。
   
   * 在命令提示字元中
-    1. 在任何命令提示字元中，流覽至 \<SDK version> 安裝 WINDOWS 10 SDK 的 bin \x86 資料夾，例如 C:\Program Files (x86) \Windows Kits\10\bin\10.0.19041.0\x86。
+    1. 在任何命令提示字元中，流覽至 \<SDK version> 安裝 Windows 10 SDK 的 bin \x86 資料夾，例如 C:\Program Files (x86) \ Windows Kits\10\bin\10.0.19041.0\x86。
     2. 輸入 "winappdeploycmd.exe devices"，然後按 Enter 鍵。
-    3. 在輸出中，尋找模型/名稱資料行是 HoloLens 裝置名稱的專案，例如 HOLOLENS-xxxxxx。 UsbNcm IP 位於這一行的開頭，且將會是 169.254.. x.x. 格式的自動私人 IP 位址。 複製此位址。 
+    3. 在輸出中，尋找模型/名稱資料行是 HoloLens 裝置名稱的專案，例如 HoloLens-xxxxxx。 UsbNcm IP 位於這一行的開頭，且將會是 169.254.. x.x. 格式的自動私人 IP 位址。 複製此位址。 
  
 4. 如果您複製了 UsbNcm IP，請從您電腦上的網頁瀏覽器移至 HTTPs://，然後再移至您的 UsbNcm IP。
 
@@ -175,6 +177,8 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 ![Microsoft HoloLens 上的 Windows 裝置入口網站首頁](images/using-windows-portal-img-04.png)<br>
 *Microsoft HoloLens 上的 Windows 裝置入口網站首頁*
 
+> 記裝置入口網站中設定的設定會套用至整個裝置，並在重新開機時持續保存。 建議您只在開發時使用裝置入口網站，而不是在部署的裝置上使用。
+
 您的 Device Portal 工作階段從首頁開始。 從首頁左側的瀏覽列中存取其他頁面。
 
 頁面頂端的工具列能讓您存取常用狀態與功能。
@@ -241,6 +245,8 @@ HoloLens 的 Windows 裝置入口網站能讓您從遠端透 Wi-Fi 或 USB 來�
 
 ![Microsoft HoloLens 上 Windows 裝置入口網站的混合實境擷取頁面](images/using-windows-portal-img-07.png)<br>
 *Microsoft HoloLens 上 Windows 裝置入口網站的混合實境擷取頁面*
+
+> 須知裝置入口網站中設定的設定會套用至整個裝置，並在重新開機時持續保存。 在裝置入口網站中修改的任何設定，都會套用至混合的現實捕獲和應用程式。 因為這些設定是持續性的，建議您只在開發時使用裝置入口網站，而不是在部署的裝置上使用。
 
 使用 [混合實境擷取] 頁面來儲存來自 HoloLens 的媒體串流。
 * **擷取設定**：藉由檢查下列設定來控制所擷取的媒體串流：

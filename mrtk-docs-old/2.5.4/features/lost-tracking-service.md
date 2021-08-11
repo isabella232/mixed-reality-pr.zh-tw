@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 1465f1fe934e55f8bd8a5ce6d680e438e436380a
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: bd4aed64ce9a6d05f42891024c051e8ba7771073a29c1b40f93ccc7e6d35f30c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693545"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223166"
 ---
 # <a name="lost-tracking-visualization"></a>遺失追蹤視覺效果
 

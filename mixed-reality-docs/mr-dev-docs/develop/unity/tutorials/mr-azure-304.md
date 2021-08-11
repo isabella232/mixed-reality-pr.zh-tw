@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學院，unity，教學課程，api，臉部辨識，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 6266cb206a0686745bcd7a92f64d78436c71a228
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 2547b61669884c524fdd605240322dc9d568039b5a202d0a411317b0e83bd547
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730505"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219443"
 ---
 # <a name="hololens-1st-gen-and-azure-304-face-recognition"></a>HoloLens (第1代) 和 Azure 304：臉部辨識
 
@@ -28,16 +28,16 @@ ms.locfileid: "104730505"
 
 *Azure 臉部 API* 是一項 Microsoft 服務，可為開發人員提供最先進的臉部演算法，全都在雲端中。 *臉部 API* 有兩個主要功能：使用屬性進行臉部偵測，以及臉部辨識。 這可讓開發人員只為臉部設定一組群組，然後在稍後將查詢影像傳送至服務，以判斷臉部所屬的人。 如需詳細資訊，請造訪 [Azure 臉部辨識頁面](https://azure.microsoft.com/services/cognitive-services/face/)。
 
-完成本課程之後，您將會有混合現實 HoloLens 應用程式，它將能夠執行下列作業：
+完成本課程之後，您將會有 HoloLens 應用程式的混合現實，這將能夠執行下列作業：
 
-1. 您可以使用點一下 **手勢** 來起始使用板載 HoloLens 攝影機的影像抓取。 
+1. 使用點一下 **手勢**，利用 HoloLens 攝影機來起始影像的捕獲。 
 2. 將已捕獲的映射傳送至 *Azure 臉部 API* 服務。
 3. 接收 *臉部 API* 演算法的結果。
 4. 使用簡單的消費者介面，以顯示相符人員的名稱。
 
 這將告訴您如何將臉部 API 服務的結果取得至 Unity 型混合現實應用程式。
 
-在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何整合 Azure 服務與您的 Unity 專案。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。
+在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何將 Azure 服務與 Unity Project 整合。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -50,9 +50,9 @@ ms.locfileid: "104730505"
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 HoloLens，您也可以將本課程中所學到的內容套用到 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
+> 雖然本課程主要著重于 HoloLens，但您也可以在本課程中套用您學到的內容，以 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
@@ -71,12 +71,12 @@ ms.locfileid: "104730505"
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
-2.  設定及測試 HoloLens。 如果您需要設定 HoloLens 的支援， [請務必造訪 HoloLens 安裝文章](/hololens/hololens-setup)。 
-3.  開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助針對每個使用者) 執行這些工作。 
+2.  設定及測試您的 HoloLens。 如果您需要設定 HoloLens 的支援，[請務必造訪 HoloLens 安裝程式文章](/hololens/hololens-setup)。 
+3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。 
 
-如需有關校正的說明，請遵循此 [與 HoloLens 校正文章相關的連結](/hololens/hololens-calibration#hololens-2)。
+如需有關校正的說明，請遵循此[連結來 HoloLens 校正文章](/hololens/hololens-calibration#hololens-2)。
 
-如需有關感應器微調的說明，請依照此 [連結來進行「HoloLens 感應器微調」文章](/hololens/hololens-updates)。
+如需有關感應器微調的說明，請依照此[連結前往 HoloLens 感應器微調文章](/hololens/hololens-updates)。
 
 ## <a name="chapter-1---the-azure-portal"></a>第1章-Azure 入口網站
 
@@ -163,11 +163,11 @@ ms.locfileid: "104730505"
 請注意，若要將此應用程式定型以辨識人員，您將需要 10 (10) 您想要新增至人員群組的每個人的近接相片。 Windows 10 凸輪應用程式可協助您進行這些工作。 您必須確保每個相片都清楚明瞭 (避免模糊、遮蔽或太遠，從主題) ，以 jpg 或 png 檔案格式的相片，而且影像檔案的大小不會超過 **4 MB**，而且不小於 **1 KB**。
 
 > [!NOTE]
-> 如果您遵循本教學課程，請勿使用您自己的臉部進行訓練，如同當您將 HoloLens 放在時一樣，您無法自行查看。 使用同事或學生的臉部。
+> 如果您遵循本教學課程，請勿使用您自己的臉部進行訓練，如同當您將 HoloLens 開啟時，您無法自行查看。 使用同事或學生的臉部。
 
 正在執行 **Person Maker**：
 
-1.  開啟 [ **PersonMaker** ] 資料夾，然後按兩下 [ *PersonMaker] 方案* ，以 *Visual Studio* 開啟該資料夾。
+1.  開啟 [ **PersonMaker** ] 資料夾，然後按兩下 [ *PersonMaker] 方案*，以 *Visual Studio* 開啟該資料夾。
 
 2.  *PersonMaker 解決方案* 開啟後，請確定：
 
@@ -177,7 +177,7 @@ ms.locfileid: "104730505"
 
     3. *目標平臺* 是 **本機電腦**。
 
-    4.  您也可能需要 *還原 Nuget 套件* (在 *解決方案* 上按一下滑鼠右鍵，然後選取 [ **還原 nuget 套件** ]) 。
+    4.  您也可能需要 *還原 NuGet 套件* (以滑鼠右鍵按一下 *方案*，然後選取 [**還原 NuGet 封裝**]) 。
 
 3.  按一下 [ *本機電腦* ]，應用程式就會啟動。 請注意，在較小的螢幕上，所有內容都可能無法顯示，不過您可以進一步向下移動以查看。
 
@@ -209,7 +209,7 @@ ms.locfileid: "104730505"
 
 8.  確定您知道想要新增至群組之人員的 10 (10) 相片的位置。
 
-9.  按下 [ **建立] 和 [開啟資料夾** ] 以開啟與該人員相關聯之資料夾的 Windows 檔案總管。 將 10 (10) 影像新增至資料夾。 這些必須是 *JPG* 或 *PNG* 檔案格式。
+9.  按下 [**建立] 和 [開啟資料夾**] 以開啟與該人員相關聯之資料夾的 Windows 檔案總管。 將 10 (10) 影像新增至資料夾。 這些必須是 *JPG* 或 *PNG* 檔案格式。
 
 10. 按一下 [ **提交至 Azure**]。 計數器會顯示提交的狀態，後面接著訊息完成時的訊息。
 
@@ -225,7 +225,7 @@ ms.locfileid: "104730505"
 
     ![開始新的 Unity 專案。](images/AzureLabs-Lab4-08.png)
 
-2.  您現在將需要提供 Unity 專案名稱。 插入 **MR_FaceRecognition**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  現在您將需要提供 Unity Project 名稱。 插入 **MR_FaceRecognition**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![提供新 Unity 專案的詳細資料。](images/AzureLabs-Lab4-09.png)
 
@@ -233,11 +233,11 @@ ms.locfileid: "104730505"
 
     ![更新腳本編輯器喜好設定。](images/AzureLabs-Lab4-10.png)
 
-4.  接著，移至 [檔案 **> 組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移至 [檔案 **> 建立設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
 
-    ![[組建設定] 視窗，將平臺切換至 UWP。](images/AzureLabs-Lab4-11.png)
+    ![建立設定視窗、將平臺切換至 UWP。](images/AzureLabs-Lab4-11.png)
 
-5.  移至 [檔案 **> 組建設定** ]，並確定：
+5.  移至 [檔案 **> 組建設定** 並確定：
 
     1. **目標裝置** 設定為 **HoloLens**
 
@@ -261,15 +261,15 @@ ms.locfileid: "104730505"
 
             ![提供新場景的名稱。](images/AzureLabs-Lab4-14.png)
 
-    7. [ *組建設定*] 中的其餘設定，現在應該保持為預設值。
+    7. [*組建設定*] 中的其餘設定，現在應該保持為預設值。
 
-6. 在 [ *組建設定* ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
+6. 在 [*組建設定*] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
 
     ![開啟 [播放玩家設定]。](images/AzureLabs-Lab4-15.png)
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1. 在 [ **其他設定** ] 索引標籤中：
+    1. 在 [**其他設定**] 索引標籤中：
 
         1. **腳本****執行階段版本** 應該是 **實驗** ( .net 4.6 對等) 。 變更此變更將會觸發重新開機編輯器的需求。
         2. **腳本後端** 應該是 **.net**
@@ -277,20 +277,20 @@ ms.locfileid: "104730505"
 
             ![更新其他設定。](images/AzureLabs-Lab4-16.png)
       
-    2. 在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2. 在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         - **InternetClient**
         - **網路攝影機**
 
             ![正在更新發行設定。](images/AzureLabs-Lab4-17.png)
 
-    3. 在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3. 接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
         ![更新 X R 設定。](images/AzureLabs-Lab4-18.png)
 
-8.  回到 *組建設定*， **Unity c # 專案** 不再呈現灰色;勾選此方塊旁邊的核取方塊。 
+8.  回到 *Build 設定*， **Unity c # 專案** 不再呈現灰色;勾選此方塊旁邊的核取方塊。 
 9.  關閉 [建置設定] 視窗。
-10. 將場景和專案儲存 (檔 **> 儲存場景/檔案 > 儲存專案**) 。
+10. 儲存場景並 Project (檔 **> 儲存場景/檔案 > 儲存專案**) 。
 
 ## <a name="chapter-4---main-camera-setup"></a>第4章-主要攝影機設定
 
@@ -341,7 +341,7 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 
 若要建立 *FaceAnalysis* 類別：
 
- 1. 以滑鼠右鍵按一下位於 [專案] 面板中的 [*資產] 資料夾*，然後按一下 [**建立**  >  **資料夾**]。 呼叫資料夾 **腳本**。 
+ 1. 在位於 Project 面板中的 [*資產] 資料夾* 上按一下滑鼠右鍵，然後按一下 [**建立**  >  **資料夾**]。 呼叫資料夾 **腳本**。 
 
     ![建立 FaceAnalysis 類別。](images/AzureLabs-Lab4-22.png)
 
@@ -638,7 +638,7 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
     ```
 
 14.  請記得先 **儲存** 變更，然後再返回 Unity 編輯器。
-15.  在 Unity 編輯器中，將 FaceAnalysis 腳本從 [專案] 面板中的 [腳本] 資料夾，拖曳至 [階層] *面板* 中的 [主要攝影機] 物件。 新的腳本元件將會新增到主要攝影機中。 
+15.  在 Unity 編輯器中，將 FaceAnalysis 腳本從 Project 面板中的 [腳本] 資料夾，拖曳至 [階層]*面板* 中的 [主要攝影機] 物件。 新的腳本元件將會新增到主要攝影機中。 
 
 ![將 FaceAnalysis 放在主要攝影機上](images/AzureLabs-Lab4-23.png)
 
@@ -685,7 +685,7 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
         private GestureRecognizer recognizer;
     ```
 
-5.  新增 *喚醒的 ()* ，並啟動初始化類別所需的 *()* 方法，並允許 HoloLens 捕獲使用者的手勢：
+5.  新增 *喚醒的 ()* ，並啟動初始化類別所需的 *()* 方法，並允許 HoloLens 捕捉使用者的手勢：
 
     ```csharp
         /// <summary>
@@ -787,7 +787,7 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 
 ## <a name="chapter-8---building-the-solution"></a>第8章-建立解決方案
 
-若要執行應用程式的完整測試，您必須將它側載到 HoloLens。
+若要執行應用程式的完整測試，您必須將它側載到您的 HoloLens。
 
 在執行之前，請確定：
 
@@ -800,7 +800,7 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 若要開始建立程式：
 
 1.  按一下 [檔案]、[儲存]，以儲存目前的場景。
-2.  移至 [檔案]、[組建設定]，然後按一下 [新增開啟的場景]。
+2.  移至 [檔案]、[建立設定]，然後按一下 [新增開啟的場景]。
 3.  請務必勾選 Unity c # 專案。
 
     ![部署 Visual Studio 解決方案](images/AzureLabs-Lab4-24.png)
@@ -811,19 +811,19 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 
     ![從 Visual Studio 部署解決方案](images/AzureLabs-Lab4-25.png)
 
-7.  開啟您的應用程式資料夾，然後開啟 [新增專案方案] (如上所示，MR_FaceRecognition .sln) 。
+7.  開啟您的應用程式資料夾，然後開啟新的 Project 方案 (如上所示，MR_FaceRecognition .sln) 。
 
 
 ## <a name="chapter-9---deploying-your-application"></a>第9章-部署應用程式
 
 若要在 HoloLens 上部署：
 
-1.  您將需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保 HoloLens 處於 **開發人員模式**。 若要這樣做：
+1.  您需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保您的 HoloLens 處於 **開發人員模式**。 若要這樣做：
 
-    1. 在設置 HoloLens 的同時，開啟 **設定**。
+    1. 在 HoloLens 時，請開啟 **設定**。
     2. 前往 **Network & Internet > Wi-Fi > Advanced Options**
     3. 記下 **IPv4** 位址。
-    4. 接下來，流覽回到 [ **設定**]，然後 **更新開發人員 & 的安全性 >** 
+    4. 接下來，流覽回到 **設定**，然後為 **開發人員更新 & 安全性 >** 
     5. 設定 [開發人員模式]。
 
 2.  流覽至您的新 Unity 組建 (*應用程式* 資料夾) ，然後以 *Visual Studio* 開啟方案檔。
@@ -832,8 +832,8 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 
     ![變更解決方案設定](images/AzureLabs-Lab4-26.png)
  
-5.  移至 [ **組建] 功能表** ，然後按一下 [ **部署方案**]，將應用程式側載至 HoloLens。
-6.  您的應用程式現在應該會出現在 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
+5.  移至 [**組建] 功能表**，然後按一下 [**部署方案**]，將應用程式側載到您的 HoloLens。
+6.  您的應用程式現在應該會出現在您 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
 
 > [!NOTE]
 > 若要部署到沉浸式耳機，請將 **解決方案平臺****設定為 [** *本機電腦*]，並將 [設定] 設定為 [以 *x86* 作為 **平臺**] 來進行 *Debug*。 然後使用 [ **組建] 功能表** 選取 [ *部署方案*]，部署到本機電腦。 
@@ -841,8 +841,8 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 
 ## <a name="chapter-10---using-the-application"></a>第10章-使用應用程式
 
-1.  戴上 HoloLens，啟動應用程式。
-2.  查看您向 *臉部 API* 註冊的人員。 請確認：
+1.  戴 HoloLens，啟動應用程式。
+2.  查看您向 *臉部 API* 註冊的人員。 請務必達成以下事項：
 
     -  人物的臉部不太遠，而且看得清楚
     -  環境光源不太暗
@@ -860,10 +860,10 @@ FaceAnalysis 類別的目的是裝載與您的 Azure 臉部辨識服務通訊所
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 **Azure 臉部 API** 的功能強大，足以偵測單一映射中最多64的臉部。 擴充應用程式，讓它能夠辨識出兩個或三個臉部，在其他許多人之間。
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 **Azure 臉部 API** 也可以提供回所有種類的屬性資訊。 將此整合至應用程式。 相較于 [表情 API](https://azure.microsoft.com/services/cognitive-services/emotion/)，這可能更有趣。

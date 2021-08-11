@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 07/20/2021
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ec810683a556bebfe92615e9085d26bf33cf7f2c
-ms.sourcegitcommit: ebc22c5adee0e785e45fb25fade83191e920f92b
+ms.openlocfilehash: 21ba89e477872f5dfa41468f1a7f2d7507affd681556d79843c195d7d5839e7b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/23/2021
-ms.locfileid: "114585721"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223550"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 

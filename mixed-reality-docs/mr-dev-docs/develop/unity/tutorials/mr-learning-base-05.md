@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, 解算器
 ms.localizationpriority: high
-ms.openlocfilehash: 8398c4d6fdc69801beff1b7c6de5e4c3847dd5e4
-ms.sourcegitcommit: adbe3baa6b1c284ed1c4fd796d8b5612c3ca3f42
+ms.openlocfilehash: 3060e6f6b1e04f356f2b9d7466c0f8f3481c53ba090f6d8a62405a4da3dc21a4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/17/2021
-ms.locfileid: "112270423"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221202"
 ---
 # <a name="5-creating-dynamic-content-using-solvers"></a>5.使用解算器建立動態內容
 
@@ -26,7 +26,7 @@ ms.locfileid: "112270423"
 
 ## <a name="location-of-solvers-in-the-mrtk"></a>MRTK 中的解算器位置
 
- MRTK 的解算器位於 MRTK SDK 資料夾中。 若要查看專案中的可用解析器，請在 [專案] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **公用程式**  >  **解析器**：
+ MRTK 的解算器位於 MRTK SDK 資料夾中。 若要在您的專案中查看可用的解析器，請在 [Project] 視窗中，流覽至 [**封裝**  >  **混合現實工具組 Foundation**  >  **SDK**  >  **功能**  >  **公用程式**  >  **解析器**：
 
 ![已選取 [解算器] 資料夾的 Unity [專案] 視窗](images/mr-learning-base/base-05-section1-step1-1.png)
 

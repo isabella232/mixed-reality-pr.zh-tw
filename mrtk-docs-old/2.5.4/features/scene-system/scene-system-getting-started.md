@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: e43bb401ea3c3175b5cb3805e7edf00d361eb4b6
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 47787e8ab8b41583233eec9b8522ee87b280d4c78b2bc61b873907b5b84c006c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685121"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223164"
 ---
 # <a name="scene-system-overview"></a>場景系統總覽
 
@@ -69,7 +69,7 @@ ms.locfileid: "104685121"
 
 ## <a name="editor-settings"></a>編輯器設定
 
-根據預設，場景系統會在 Unity 編輯器中強制執行數個行為。 如果您發現任何這些行為很繁重，可以在場景系統設定檔的 **編輯器設定** 區段中加以停用。
+根據預設，場景系統會在 Unity 編輯器中強制執行數個行為。 如果您發現任何這些行為繁重，可以在場景系統設定檔的 **編輯器設定** 區段中加以停用。
 
 - `Editor Manage Build Settings:` 若為 true，服務會自動更新您的組建設定，以確保所有管理員、光源和內容場景都會加入。 如果您想要完全掌控組建設定，請停用此值。
 

@@ -5,17 +5,17 @@ author: cre8ivepark
 ms.author: dongpark
 ms.date: 06/19/2020
 ms.topic: article
-keywords: 混合的現實、HoloLens、UI 控制項、互動、UI、ux、UX 設計、空間 UI、空間互動、3D UI、3D UX、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: aa85402f765e8b02842054db0c2fb37ca4fa9d93
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+keywords: 混合的現實、HoloLens、ui 控制項、互動、UI、ux、ux 設計、空間 UI、空間互動、3d UI、3d ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
+ms.openlocfilehash: 044953b1ac4af60c413f177cac13d9411cf9dc9523e7def74c99487eb5ee6102
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600307"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219248"
 ---
 # <a name="dialog"></a>對話
 
-![以 [是] 且沒有任何按鈕顯示在 HoloLens 上的對話方塊重迭螢幕擷取畫面](images/MRTK_UX_Dialog.jpg)
+![對話方塊的螢幕擷取畫面，其中顯示 [是]，而且沒有顯示在 HoloLens 上的按鈕](images/MRTK_UX_Dialog.jpg)
 
 對話方塊控制項是 UI 重迭，可提供內容相關的應用程式資訊，通常會要求使用者動作。 您可以使用對話方塊來提供使用者重要資訊，以及要求確認或額外資訊，才能完成動作。
 

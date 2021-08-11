@@ -1,16 +1,16 @@
 ---
 title: 貢獻
-description: 參與 MRTK 的群體。
+description: Community 對 MRTK 有所貢獻。
 author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Bug 報告、
-ms.openlocfilehash: f7d6dbcd3e27401afdc6d2eb33474065f4914f62
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 6e50ef0c0a7b599ce95bd90c51fcfa7669c7d6877a5fb123196d4342eeaab1f1
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693755"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222768"
 ---
 # <a name="contributing"></a>參與
 
@@ -56,5 +56,5 @@ ms.locfileid: "104693755"
 1. 如果新增實驗性功能，則不需要撰寫測試和檔。 相反地，請依照 [實驗性功能指導方針](../contributing/experimental-features.md)進行。
 1. 加入測試以確認 bug 修正/功能。 撰寫和執行測試的指示位於 [>--run-unittests](../contributing/unit-tests.md)。
 1. 請確定) 的程式碼和功能 (記載于 [檔指導方針](../contributing/documentation-guide.md)中所述。
-1. 確定程式碼在所有平臺上都能以預期的方式運作。 請參閱 [版本](../packages-releases/release-notes.md) 資訊以取得支援的平臺清單。 針對 Windows UWP 專案，程式碼必須 [符合 WACK 規範](https://developer.microsoft.com/windows/develop/app-certification-kit)。 若要這樣做，請產生 Visual Studio 方案，以滑鼠右鍵按一下專案;**存放區**  > **建立應用程式套件**。 遵循提示並執行 WACK 測試。 請確定它們都成功。
+1. 確定程式碼在所有平臺上都能以預期的方式運作。 請參閱 [版本](../packages-releases/release-notes.md) 資訊以取得支援的平臺清單。 針對 Windows UWP 專案，程式碼必須[符合 WACK 規範](https://developer.microsoft.com/windows/develop/app-certification-kit)。 若要這樣做，請產生 Visual Studio 方案，以滑鼠右鍵按一下專案;**存放區**  > **建立應用程式套件**。 遵循提示並執行 WACK 測試。 請確定它們都成功。
 1. 提出提取要求時，請遵循 [提取要求](../contributing/pull-requests.md) 中的指示。

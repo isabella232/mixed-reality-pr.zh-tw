@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學術，unity，教學課程，api，翻譯工具文字、hololens、沉浸式、vr、語言翻譯、Windows 10、Visual Studio
-ms.openlocfilehash: d02b86b6e62a46cd3ed4ebe7e6188cfda18e0d49
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 8eeeab45c6e7d93c1b04afa4db811f220b0c2f9c85400fc93a81ac413164a6b7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730575"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115229510"
 ---
 # <a name="hololens-1st-gen-and-azure-301-language-translation"></a>HoloLens (第1代) 和 Azure 301：語言轉譯
 
@@ -26,15 +26,15 @@ ms.locfileid: "104730575"
 
 ![最終產品](images/AzureLabs-Lab1-00.png)
 
-翻譯工具文字 API 是一種可近乎即時運作的轉譯服務。 服務是以雲端為基礎，且使用 REST API 呼叫，應用程式可以使用類神經機器翻譯技術，將文字翻譯成另一種語言。 如需詳細資訊，請造訪 [Azure 翻譯工具文字 API 頁面](https://azure.microsoft.com/services/cognitive-services/translator-text-api/)。
+翻譯工具文字 API 是一種可近乎即時運作的轉譯服務。 服務是以雲端為基礎，且使用 REST API 呼叫，應用程式可以使用類神經機器翻譯技術，將文字翻譯成另一種語言。 如需詳細資訊，請造訪[Azure 翻譯工具文字 API 頁面](https://azure.microsoft.com/services/cognitive-services/translator-text-api/)。
 
 完成本課程之後，您將會有一個混合現實應用程式，可以執行下列動作：
 
-1.  使用者將會說到連接到沉浸式 (VR) 耳機 (或內建的 HoloLens) 的麥克風。
+1.  使用者會說到連接到沉浸式 (VR) 耳機 (或 HoloLens) 內建麥克風的麥克風。
 2.  應用程式將會捕捉聽寫，並將其傳送至 Azure 翻譯工具文字 API。
 3.  轉譯結果將會顯示在 Unity 場景的簡單 UI 群組中。
 
-本課程將指導您如何將 Translator 服務的結果取得以 Unity 為基礎的範例應用程式。 您必須將這些概念套用至您可能正在建立的自訂應用程式。
+本課程將告訴您如何將翻譯工具服務的結果取得 Unity 型範例應用程式。 您必須將這些概念套用至您可能正在建立的自訂應用程式。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -47,9 +47,9 @@ ms.locfileid: "104730575"
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更的注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
+> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
@@ -69,8 +69,8 @@ ms.locfileid: "104730575"
 
 - 為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
 - 本教學課程中的程式碼可讓您從連接到您電腦的預設麥克風裝置記錄。 請確定預設的麥克風裝置已設定為您打算用來捕捉聲音的裝置。
-- 若要允許您的電腦啟用聽寫，請移至 [ **設定] > 隱私權] > 語音]，& 輸入]，** 然後選取 [ **開啟語音服務] 和 [輸入建議**] 按鈕。
-- 如果您使用連接到 (或內建的麥克風和耳機) 耳機，請確定已在 [設定] 中開啟 [當我磨損耳機、切換到耳機 mic] 選項 **> 混合現實 > 音訊和語音**。
+- 若要允許您的電腦啟用聽寫，請移至 **設定 > 隱私權 > 語音，筆墨 & 輸入**，然後選取 [**開啟語音服務] 和 [輸入建議**] 按鈕。
+- 如果您使用連接到 (或內建的麥克風和耳機) 耳機，請在設定中開啟 [當我磨損耳機時，切換到耳機 mic] 選項， **> 混合現實 > 音訊和語音**。
 
    ![混合現實設定](images/AzureLabs-Lab1-00-5.png)
 
@@ -81,14 +81,14 @@ ms.locfileid: "104730575"
 
 ## <a name="chapter-1--the-azure-portal"></a>第1章-Azure 入口網站
 
-若要使用 Azure Translator API，您必須將服務的實例設定為可供應用程式使用。
+若要使用 Azure 翻譯工具 API，您必須將服務的實例設定為可供應用程式使用。
 
 1.  登入  [Azure 入口網站](https://portal.azure.com)。
 
     > [!NOTE]
     > 如果您還沒有 Azure 帳戶，您將需要建立一個帳戶。 如果您在課堂或實驗室的情況下進行本教學課程，請洽詢講師或其中一個 proctors，協助您設定新的帳戶。
 
-2.  登入後，按一下左上角的 [ **新增** ]，並搜尋「翻譯工具文字 API」。 選取 **Enter**。
+2.  登入後，按一下左上角的 [**新增**]，並搜尋「翻譯工具文字 API」。 選取 **Enter**。
 
     ![新增資源](images/AzureLabs-Lab1-02.png)
 
@@ -103,7 +103,7 @@ ms.locfileid: "104730575"
 
     1. 為此服務實例插入您想要的 **名稱** 。
     2. 選取適當的 **訂** 用帳戶。
-    3. 選取適合您的 **定價層** ，如果這是您第一次建立 *翻譯工具文字服務*，則應可使用名為 F0) 的免費層 (。
+    3. 選取適合您的 **定價層**，如果這是您第一次建立 *翻譯工具文字服務*，則應可使用名為 F0) 的免費層 (。
     4. 選擇資源群組，或建立一個新的 **資源群組** 。 資源群組提供一種方式來監視、控制存取、布建及管理 Azure 資產集合的計費。 建議您保留與單一專案相關聯的所有 Azure 服務 (例如，) 一般資源群組下的實驗室，) 。
 
         > 如果您想要閱讀更多有關 Azure 資源群組的資訊，請 [造訪資源群組文章](/azure/azure-resource-manager/resource-group-portal)。
@@ -144,7 +144,7 @@ ms.locfileid: "104730575"
 
     ![開始新的 Unity 專案。](images/AzureLabs-Lab1-08.png)
 
-2.  您現在將需要提供 Unity 專案名稱。 插入 **MR_Translation**。 請確定專案類型設定為 **3d**。 將 *位置* 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  現在您將需要提供 Unity Project 名稱。 插入 **MR_Translation**。 請確定專案類型設定為 **3d**。 將 *位置* 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![提供新 Unity 專案的詳細資料。](images/AzureLabs-Lab1-09.png)
 
@@ -152,11 +152,11 @@ ms.locfileid: "104730575"
 
     ![更新腳本編輯器喜好設定。](images/AzureLabs-Lab1-10.png)
 
-4.  接著，移至 [檔案 **> 組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移至 [檔案 **> 建立設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
 
-    ![[組建設定] 視窗，將平臺切換至 UWP。](images/AzureLabs-Lab1-11.png)
+    ![建立設定視窗、將平臺切換至 UWP。](images/AzureLabs-Lab1-11.png)
 
-5.  移至 [檔案 **> 組建設定** ]，並確定：
+5.  移至 [檔案 **> 組建設定** 並確定：
 
     1. **目標裝置** 設定為 **任何裝置**。
 
@@ -180,17 +180,17 @@ ms.locfileid: "104730575"
 
             ![提供新場景的名稱。](images/AzureLabs-Lab1-14.png)
 
-            > 請注意，您必須將 Unity 場景儲存在 [ *資產* ] 資料夾中，因為它們必須與 Unity 專案相關聯。 建立幕後資料夾 (和其他類似的資料夾) 是結構化 Unity 專案的典型方式。
+            > 請注意，您必須將 Unity 場景儲存在 [*資產*] 資料夾中，因為它們必須與 Unity Project 相關聯。 建立幕後資料夾 (和其他類似的資料夾) 是結構化 Unity 專案的典型方式。
 
-    7. [ *組建設定*] 中的其餘設定，現在應該保持為預設值。
+    7. [*組建設定*] 中的其餘設定，現在應該保持為預設值。
 
-6. 在 [ *組建設定* ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
+6. 在 [*組建設定*] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
 
     ![開啟 [播放玩家設定]。](images/AzureLabs-Lab1-15.png)
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1. 在 [ **其他設定** ] 索引標籤中：
+    1. 在 [**其他設定**] 索引標籤中：
 
         1. **腳本執行階段版本** 應該是 **穩定** 的 ( .net 3.5 對等) 。
         2. **腳本後端** 應該是 **.net**
@@ -198,25 +198,25 @@ ms.locfileid: "104730575"
 
             ![更新其他設定。](images/AzureLabs-Lab1-16.png)
       
-    2. 在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2. 在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         1. **InternetClient**
         2. **麥克風**
 
             ![正在更新發行設定。](images/AzureLabs-Lab1-17.png)
 
-    3. 在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3. 接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
         ![更新 X R 設定。](images/AzureLabs-Lab1-18.png)
 
-8.  回到 **組建設定**， *Unity c # 專案* 不再呈現灰色;勾選此方塊旁邊的核取方塊。 
+8.  回到 **Build 設定**， *Unity c # 專案* 不再呈現灰色;勾選此方塊旁邊的核取方塊。 
 9.  關閉 [建置設定] 視窗。
-10. 將場景和專案儲存 (檔 **> 儲存場景/檔案 > 儲存專案**) 。
+10. 儲存場景並 Project (檔 **> 儲存場景/檔案 > 儲存專案**) 。
 
 ## <a name="chapter-3--main-camera-setup"></a>第3章-主要攝影機設定
 
 > [!IMPORTANT]
-> 如果您想要略過此課程的 *Unity 設定* 元件，並直接繼續進行程式碼，請隨意 [下載 unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20301%20-%20Language%20translation/Azure-MR-301.unitypackage)，並將其匯入到您的專案中做為 [*自訂套件*](https://docs.unity3d.com/Manual/AssetPackages.html)，然後繼續進行 [第5章](#chapter-5--create-the-results-class)。 您仍然需要建立 Unity 專案。
+> 如果您想要略過此課程的 *Unity 設定* 元件，並直接繼續進行程式碼，請隨意 [下載 unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20301%20-%20Language%20translation/Azure-MR-301.unitypackage)，並將其匯入到您的專案中做為 [*自訂套件*](https://docs.unity3d.com/Manual/AssetPackages.html)，然後繼續進行 [第5章](#chapter-5--create-the-results-class)。 您仍然需要建立 Unity Project。
 
 1.  在 [階層] *面板* 中，您會找到一個稱為「 **主要攝影機**」的物件，此物件代表您在應用程式「內」之後的「頭部」觀點。
 2.  使用 Unity 儀表板，選取 **主要攝影機 GameObject**。 您將會注意到，在儀錶) 板內 (的 [偵測 *器] 面板* 通常會顯示該 *GameObject* 的各種元件，並在頂端、*相機* 和一些其他元件中顯示 *轉換*。 您必須重設主要攝影機的轉換，才能正確定位。
@@ -344,7 +344,7 @@ ms.locfileid: "104730575"
 
 若要建立此類別： 
 
-1.  在 [ *專案] 面板* 中按一下滑鼠右鍵，然後 **建立 > 資料夾**。 將資料夾命名為 **腳本**。 
+1.  在 *Project 面板* 中按一下滑鼠右鍵，然後 **建立 > 資料夾**。 將資料夾命名為 **腳本**。 
  
     ![建立腳本資料夾。](images/AzureLabs-Lab1-31.png)
 
@@ -448,7 +448,7 @@ ms.locfileid: "104730575"
 
 - 偵測連接到耳機或電腦的錄製裝置 (以預設) 為准。
 - 捕捉音訊 (語音) 並使用聽寫將其儲存為字串。
-- 聲音暫停之後，請將聽寫提交至 Translator 類別。
+- 聲音暫停之後，請將聽寫提交至翻譯工具類別。
 - 裝載可在需要時停止語音捕捉的方法。
 
 若要建立此類別： 
@@ -504,7 +504,7 @@ ms.locfileid: "104730575"
     ```
 
 7.  您可以 *刪除**更新 ()* 方法，因為此類別不會使用它。
-8.  現在您需要應用程式用來啟動和停止語音捕捉的方法，並將它傳遞給 *Translator* 類別，您很快就會建立這些方法。 複製下列程式碼，並將它貼到 *Start ()* 方法底下。
+8.  現在您需要應用程式用來啟動和停止語音捕捉的方法，並將它傳遞給 *翻譯工具* 類別，您很快就會建立這些方法。 複製下列程式碼，並將它貼到 *Start ()* 方法底下。
 
     ```csharp
         /// <summary> 
@@ -539,7 +539,7 @@ ms.locfileid: "104730575"
     > [!TIP]
     > 雖然此應用程式不會使用它，但如果您想要在應用程式中執行停止捕獲音訊的能力，也可以在這裡提供 *StopCapturingAudio ()* 方法。
 
-9.  您現在需要加入語音停止時將叫用的聽寫處理常式。 然後，這個方法會將聽寫的文字傳遞給 *Translator* 類別。
+9.  您現在需要加入語音停止時將叫用的聽寫處理常式。 然後，這個方法會將聽寫的文字傳遞給 *翻譯工具* 類別。
 
     ```csharp
         /// <summary>
@@ -559,11 +559,11 @@ ms.locfileid: "104730575"
 10. 返回 Unity 之前，請務必將您的變更儲存在 Visual Studio 中。
 
 > [!WARNING]  
-> 此時您會注意到 *Unity 編輯器主控台* 面板中出現錯誤 ( 「名稱 ' Translator ' 不存在 ...」 ) 。 這是因為程式碼會參考 *Translator* 類別，您將在下一章中建立。
+> 此時您會注意到 *Unity 編輯器主控台* 面板中出現錯誤 ( 「名稱 ' 翻譯工具 ' 不存在 ...」 ) 。 這是因為程式碼會參考您將在下一章中建立的 *翻譯工具* 類別。
 
 ## <a name="chapter-7--call-to-azure-and-translator-service"></a>第7章-對 Azure 和 translator service 的呼叫
 
-您需要建立的最後一個腳本是 *Translator* 類別。 
+您需要建立的最後一個腳本是 *翻譯工具* 類別。 
 
 此類別負責：
 
@@ -573,7 +573,7 @@ ms.locfileid: "104730575"
 
 若要建立此類別： 
 1.  移至您先前建立的 **腳本** 資料夾。 
-2.  在 [ **專案] 面板** 中按一下滑鼠右鍵， **建立 > c # 腳本**。 呼叫腳本 *翻譯工具*。
+2.  在 **Project 面板** 中按一下滑鼠右鍵，**建立 > c # 腳本**。 呼叫腳本 *翻譯工具*。
 3.  按兩下新的 *翻譯工具* 腳本，以 **Visual Studio** 開啟。
 4.  將下列命名空間新增至檔案頂端：
 
@@ -585,7 +585,7 @@ ms.locfileid: "104730575"
         using UnityEngine.Networking;
     ```
 
-5.  然後，在 *Translator* 類別內新增下列變數：
+5.  然後，在 *翻譯工具* 類別內新增下列變數：
 
     ```csharp
         public static Translator instance; 
@@ -718,7 +718,7 @@ ms.locfileid: "104730575"
 
     ![使用指定的值來更新目標參考。](images/AzureLabs-Lab1-34.png)
   
-4.  接下來，在 [階層]*面板* 中，從 [**腳本**] 資料夾，按一下 [ *Translator* ] 類別並拖曳至 [**主要攝影機**] 物件。 
+4.  接著，按一下 [**腳本**] 資料夾中的 [*翻譯工具*] 類別，並將其拖曳至 [階層]*面板* 中的 [**主要攝影機**] 物件。 
 5.  然後，按一下 [**腳本**] 資料夾中的 [ *MicrophoneManager* ] 類別，並將其拖曳至 [階層]*面板* 中的 [**主要攝影機**] 物件。 
 6.  最後，按一下 **主要攝影機** ，然後查看 [偵測 *器] 面板*。 您會發現，您在拖曳的腳本中有兩個下拉式方塊，可讓您設定語言。
  
@@ -731,10 +731,10 @@ ms.locfileid: "104730575"
 請確定：
 
 - [第1章](#chapter-1--the-azure-portal)中所述的所有設定都已正確設定。 
-- *結果*、 *Translator* 和 *MicrophoneManager*，腳本會附加至 **主要攝影機** 物件。 
-- 您已將 *Azure 翻譯工具文字 API* 服務 **金鑰** 放在 *Translator* 腳本內的 **authorizationKey** 變數內。  
+- *結果*、*翻譯工具* 和 *MicrophoneManager*，腳本會附加至 **主要攝影機** 物件。 
+- 您已將 *Azure 翻譯工具文字 API* 服務 **金鑰** 放在 *翻譯工具* 腳本內的 **authorizationKey** 變數內。  
 - *主要相機偵測器面板* 中的所有欄位都已正確指派。
-- 您的麥克風在執行場景時正在運作 (如果不是，請檢查您的連接麥克風是否為 *預設* 裝置，並在 [Windows) 中正確設定](https://support.microsoft.com/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10) 。
+- 您的麥克風在執行場景時正在運作 (如果未執行，請檢查連結的麥克風是否為 *預設* 裝置，並在 [Windows) 中正確設定](https://support.microsoft.com/help/4027981/windows-how-to-set-up-and-test-microphones-in-windows-10)。
 
 您可以在 *Unity 編輯器* 中按下 [**播放**] 按鈕，以測試沉浸式耳機。
 應用程式應該透過附加的沉浸式耳機運作。
@@ -746,8 +746,8 @@ ms.locfileid: "104730575"
 
 此專案的 Unity 區段所需的所有專案現在都已完成，因此您可以從 Unity 建立它。
 
-1.  流覽至 **組建設定**： **File > 組建設定 ...**
-2.  從 [ **組建設定** ] 視窗中，按一下 [ **建立**]。
+1.  流覽至 **build 設定**： **File > build 設定 ...**
+2.  從 [**組建設定**] 視窗中，按一下 [**建立**]。
 
     ![建立 Unity 場景。](images/AzureLabs-Lab1-36.png)
   
@@ -765,8 +765,8 @@ ms.locfileid: "104730575"
 3.  在 [方案平臺] 中，選取 [ **x86**]、[ **本機電腦**]。 
 
     > 在 Microsoft HoloLens 中，您可能會發現將此設定為 *遠端電腦* 較容易，因此不會行動網卡到您的電腦。 不過，您也必須執行下列動作：
-    > - 知道您 HoloLens 的 **IP 位址** ，您可以在 *設定 > 網路 & 網際網路 > Wi-Fi > Advanced 選項* 中找到此位址;IPv4 是您應該使用的位址。 
-    > - 確定已 **開啟***開發人員模式*;在 [設定] 中找到 *> 為開發人員更新 & 安全性 >*。
+    > - 知道您 HoloLens 的 **IP 位址**，您可以在 *設定 > 網路 & Internet > Wi-Fi > Advanced 選項* 中找到此位址;IPv4 是您應該使用的位址。 
+    > - 確定已 **開啟***開發人員模式*;*設定 > 為開發人員更新 & 安全性 >*。
 
     ![從 Visual Studio 部署方案。](images/AzureLabs-Lab1-37.png)
     
@@ -784,10 +784,10 @@ ms.locfileid: "104730575"
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 您是否可以在應用程式中新增文字轉換語音功能，以便說出傳回的文字？
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 讓使用者可以在應用程式本身變更來源和輸出語言 ( ' from ' 和 ' to ' ) ，因此應用程式不需要在每次想要變更語言時重建。

@@ -8,12 +8,12 @@ ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
 - Windows 10
-ms.openlocfilehash: 2d11a43e96843073bf86919f1c4a10425fa12c00
-ms.sourcegitcommit: 62e5909b837c9c7ecedd040164f2308868db4723
+ms.openlocfilehash: 51c13326d2ad8aebe164e64d0bfc380923a91d1be02cea840cec4addd062533f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/08/2021
-ms.locfileid: "111741910"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219724"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -27,22 +27,22 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 2. **混合現實隨選封裝** (FOD) ，在混合實境入口首次執行時自動下載並安裝。 您可以在[這裡](/windows/application-management/manage-windows-mixed-reality)找到 FOD 套件的詳細資訊
 3. **混合現實耳機和移動控制器驅動程式**（也稱為 HoloLens 感應器驅動程式）是可讓 Windows Mixed Reality 耳機使用 Windows Mixed Reality 的重要驅動程式套件。 這項功能會在您第一次插入混合現實耳機時，透過 Windows Update 自動下載和安裝，並透過 Windows Update 定期更新
 4. * * 混合式事實移動控制器模型驅動程式包含混合現實移動控制器的3D 模型，以及協力廠商混合現實體驗所需的模型。 這項功能會在您第一次將混合現實移動控制器配對至您的電腦時自動下載並安裝 Windows Update，並透過 Windows Update 進行更新
-5. **Windows 10，版本 1709 (秋季建立者的更新) 或更新版本** ，包含可啟用的主要作業系統元件和技術 Windows Mixed Reality
+5. **Windows 10，版本 1709 (秋季建立者的更新) 或更新版本**，包含可啟用的主要作業系統元件和技術 Windows Mixed Reality
 
 在 SteamVR 中使用 Windows Mixed Reality 需要下列軟體：
 
 6. **SteamVR**，由閥門 Corporation 開發和維護，可在串流上啟用虛擬實境應用程式和遊戲。 您可以在[這裡](https://go.microsoft.com/fwlink/?linkid=862788)找到更多資訊
-7. SteamVR 元件的 **Windows Mixed Reality** ，可橋接 SteamVR 與 Windows Mixed Reality。 如需此元件的詳細資訊，請參閱 [Windows Mixed Reality For SteamVR 頁面。](http://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)
+7. SteamVR 元件的 **Windows Mixed Reality** ，可橋接 SteamVR 與 Windows Mixed Reality。 如需此元件的詳細資訊，請參閱[Windows Mixed Reality for SteamVR 頁面。](http://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)
 
 管理您的 Windows Mixed Reality 耳機：
 
-8. 每個耳機製造商開發和維護的 **裝置附屬應用程式**，提供您 Windows Mixed Reality 耳機的快速簡介。 在具有內建藍牙功能的耳機上，裝置附屬應用程式可讓您將動作控制器還原為其原廠藍牙配對。 某些耳機 (例如 Samsung 電影對白和 Samsung 電影對白 +) 也會使用裝置附屬應用程式，從耳機製造商提供耳機固件更新。 此應用程式會在第一次插入耳機時自動下載，而且可以在 Windows [開始] 功能表中找到。
+8. 每個耳機製造商開發和維護的 **裝置附屬應用程式**，提供您 Windows Mixed Reality 耳機的快速簡介。 在具有內建藍牙功能的耳機上，裝置附屬應用程式可讓您將動作控制器還原至其藍牙配對的工廠。 某些耳機 (例如 Samsung 電影對白和 Samsung 電影對白 +) 也會使用裝置附屬應用程式，從耳機製造商提供耳機固件更新。 此應用程式會在第一次插入耳機時自動下載，而且可以在 Windows 開始] 功能表中找到。
 
 ## <a name="windows-10-release-notes---may-2020"></a>Windows 10 版本資訊-5 月2020
 
-**Windows 10 5 月2020更新 (v2004)** 包含 WINDOWS MIXED REALITY (VR) 耳機的新功能，例如在混合實境首頁中啟動 Win32 應用程式的能力。 HoloLens (第1代) 長期維護 (LTS) ，每月發行服務更新。
+**Windows 10 5 月2020更新 (v2004)** 包含 Windows Mixed Reality (VR) 耳機的新功能，例如在混合實境首頁中啟動 Win32 應用程式的能力。 HoloLens (第1代) 長期維護 (LTS) ，每月發行服務更新。
 
-升級至 Windows Mixed Reality 沉浸式 (VR) 耳機的最新電腦版本，開啟 [ **設定] > 更新 & 安全性** ]，然後選取 [ **檢查更新**]。 在 Windows 10 的電腦上，您也可以使用 [Windows media 建立工具](https://www.microsoft.com/software-download/windows10)，以手動方式安裝 **Windows 10 2020 更新**。
+升級至 Windows Mixed Reality 沉浸式 (VR) 耳機的最新電腦版本、開啟 **設定 > 更新 & 安全性**，然後選取 [**檢查更新**]。 在 Windows 10 的電腦上，您也可以使用 [Windows 媒體建立工具](https://www.microsoft.com/software-download/windows10)，以手動方式安裝 **Windows 10 2020 更新**。
 
 **Desktop 的最新版本**： Windows 10 v2004 (10.0.19041.264) 
 
@@ -50,9 +50,9 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 
 #### <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
 
-如 [先前所宣佈](/windows/mixed-reality/new-microsoft-edge)，我們已使用 Windows Mixed Reality 中的新 Microsoft Edge 瀏覽器進行更新，以提供更好的支援。 新的 Microsoft Edge 採用 Chromium 的開放原始碼專案，為客戶建立更好的 web 相容性，並為所有 網頁程式開發人員建立較少的 web 片段。 它也支援 WebXR，這是用來建立適用于 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
+如[先前所宣佈](/windows/mixed-reality/new-microsoft-edge)，我們已使用 Windows Mixed Reality 中的新 Microsoft Edge 瀏覽器進行更新，以提供更好的支援。 新的 Microsoft Edge 採用 Chromium 的開放原始碼專案，為客戶建立更好的 web 相容性，並為所有 網頁程式開發人員建立較少的 web 片段。 它也支援 WebXR，這是用來建立適用于 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
 
-#### <a name="improved-settings-for-wmr"></a>改良的 WMR 設定
+#### <a name="improved-settings-for-wmr"></a>改善 WMR 的設定
 
 感謝您的意見反應，我們已新增並闡明耳機顯示頁面上的設定：
 
@@ -62,17 +62,17 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 
 * **變更應用程式視窗解析度** -根據預設，在首頁中啟動的大部分2d 視窗都會以 720-p 解析度啟動。 雖然您可以手動手動調整它們的大小 &，您也可以選擇讓它們全都以1080p 的方式啟動。 先前，此選項是以視覺品質 (搶鮮版（Beta）) 選項的形式提供。 我們已適當地將它分割為個別設定。
 
-* **體驗選項** -這些選項會調整混合現實體驗，以降低硬體可能難以跟上不受限制 90 fps 的系統負載。 您可以明確地啟用或停用這些額外的設定，或選擇 [讓 Windows 決定]，讓啟發學習法繼續決定何時要切換這些設定。
+* **體驗選項** -這些選項會調整混合現實體驗，以降低硬體可能難以跟上不受限制 90 fps 的系統負載。 您可以明確地啟用或停用這些額外的設定，或選擇 [Let Windows 決定]，並讓啟發學習法繼續決定何時要切換這些設定。
 
 * **解決方案** -如果您有高解析度耳機（如 HP 的回音），我們支援以原生解析度執行，或基於效能考慮減少解析度。 先前的耳機（像是 Samsung 電影對白和電影對白 +）只支援單一解析度，因此您無法在那些耳機上變更此設定。
 
-* **畫面播放速率** -您現在可以手動設定耳機顯示器的畫面播放速率，或繼續讓 Windows 使用其啟發學習法來判斷 60 hz 或 90 Hz 是否更適當。
+* **畫面播放速率**-您現在可以手動設定耳機顯示器的畫面播放速率，或繼續讓 Windows 使用其啟發學習法來判斷 60 hz 或 90 Hz 是否更適合。
 
 * **校正** -如同之前，如果您的耳機支援，您可以調整 IPD (interpupillary 距離) 。
 
 * **輸入切換** -切換輸入焦點切換 (Win + Y) 行為，根據狀態感應器回饋) 或手動 (自動。
 
-#### <a name="new-cortana-app"></a>新 Cortana 應用程式
+#### <a name="new-cortana-app"></a>新增 Cortana 應用程式
 
 Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限英文），不再支援特定的混合現實特定命令，例如「拍攝相片」和「拍攝影片」。 您可以使用新的 Cortana 來啟動應用程式，而且它也支援以生產力為焦點的新命令，例如「我的下一個會議是什麼時候」。 或「傳送電子郵件給 <name> 我遲到的時候。」
     
@@ -85,7 +85,7 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
 
 #### <a name="help-us-improve"></a>協助我們改進！
 
-我們會持續尋找改善相容性。  如果您認為慣用的傳統 Win32 應用程式在 Windows Mixed Reality 時無法正常運作，請透過我們的 [意見反應中樞](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)提交意見反應。
+我們會持續尋找改善相容性。  如果您認為慣用的傳統 Win32 應用程式在 Windows Mixed Reality 時無法正常運作，請透過我們的[意見反應中樞](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)提交意見反應。
 
 ### <a name="prior-release-notes"></a>先前的版本資訊
 
@@ -162,7 +162,7 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
 
 ### <a name="mixed-reality-portal-release-history"></a>混合實境入口發行歷程記錄 ###
 
-在 Windows 10 版本1809和更新版本中， [混合實境入口](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M) 會透過 Microsoft Store 應用程式更新。
+在 Windows 10 版本1809和更新版本中，[混合實境入口](https://www.microsoft.com/store/apps/9NG1H8B3ZC7M)會透過 Microsoft Store 應用程式更新。
 
 #### <a name="windows-10-version-1809-and-newer"></a>Windows 10 版本1809和更新版本 ####
 
@@ -186,4 +186,4 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
 
 ### <a name="windows-mixed-reality-for-steamvr-release-history"></a>SteamVR 發行歷程記錄的 Windows Mixed Reality ###
 
-您可以在這裡找到 SteamVR 元件 Windows Mixed Reality 的版本資訊： [http://steamcommunity.com/games/719950/announcements/](http://steamcommunity.com/games/719950/announcements/)
+您可以在這裡找到 SteamVR 元件 Windows Mixed Reality 的版本資訊：[http://steamcommunity.com/games/719950/announcements/](http://steamcommunity.com/games/719950/announcements/)

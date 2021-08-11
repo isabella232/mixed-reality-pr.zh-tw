@@ -7,12 +7,12 @@ ms.date: 04/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: Mixed Reality, 注視, 注視定向, 互動, 設計, hololens, MMR, 多樣式, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, HoloLens
-ms.openlocfilehash: 55e23ac2fb802af599fb9cc7d771d89d6ba36c47
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 6fddec8b0ed9b8f2230b963d1a795b7309473d7f91e32dd8382b747b6f3655da
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196413"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222778"
 ---
 # <a name="introducing-instinctual-interactions"></a>本能互動簡介
 
@@ -31,11 +31,11 @@ ms.locfileid: "110196413"
 
 ## <a name="basic-hand-tracking-and-instinctual-interactions-demo"></a>基本的手追蹤和 instinctual 互動示範
 
-請參閱下面 **的設計影像-前端追蹤和眼睛追蹤** 影片示範，然後移至更明確的主題：
+請參閱下面 **的設計全像投影-Head 追蹤和眼睛追蹤** 影片示範，然後移至更具體的主題：
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Hand-Tracking-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="multimodal-interaction-models"></a>多樣式互動模型
 

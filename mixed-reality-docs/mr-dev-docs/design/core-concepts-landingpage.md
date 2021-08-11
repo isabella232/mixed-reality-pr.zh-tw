@@ -1,17 +1,17 @@
 ---
-title: 混合現實核心概念
+title: 混合實境核心概念
 description: 瞭解核心概念，以及它們如何影響您為使用者建立的混合現實體驗品質。
 author: grbury
 ms.author: grbury
 ms.date: 10/02/2019
 ms.topic: overview
-keywords: Windows Mixed Reality、設計、應用程式模式、控制項、樣式、HoloLens、互動、UX 元素、行為、建立區塊、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、緩和、應用程式模型、座標、全像全像全像框架
-ms.openlocfilehash: 60fa024769ee0f81e4c2cc1c16550d296b4f646f
-ms.sourcegitcommit: d340303cda71c31e6c3320231473d623c0930d33
+keywords: Windows Mixed Reality、設計、應用程式模式、控制項、樣式、HoloLens、互動、UX 元素、行為、建立區塊、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、緩和、應用程式模型、座標、全像攝影框架
+ms.openlocfilehash: 2cac725c62cb435b458deb2716edb7a07aa450ae9e0295a6bfe0cb7c1fabceb8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/01/2021
-ms.locfileid: "97847567"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219356"
 ---
 # <a name="core-concepts-overview"></a>核心概念總覽
 

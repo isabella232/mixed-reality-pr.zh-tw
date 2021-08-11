@@ -6,16 +6,16 @@ ms.author: jemccull
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、人類、頭像、Mixed Reality capture、體積型影片
-ms.openlocfilehash: 1a14759a6292a0fcc1e6fd36f518fff537c67dca
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: db21b6b02ce76403c2c59e37384c1c1602d8a63e003a8b5b6601c5daf7b9c2a7
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91681120"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228520"
 ---
 # <a name="case-study---representing-humans-in-mixed-reality"></a>個案研究-以混合現實表示人類
 
-使用 light 的 James Turrell 設計。 逐步執行他的工作，使其深度和焦點都有意義。 牆壁看起來都是封閉且無限的，亮度提供了陰影的方式。 藉由仔細平衡光線的色彩和擴散來設計陌生的認知。 [Turrell 將這些 sensations 描述](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) 為「 *感受您的眼睛* 」，這是一種擴充其實際瞭解的方法。 很棒的世界（像是 Turrell imagines）是強大的工具，可利用我們的想法，而不像現今混合現實的沉浸式環境。
+使用 light 的 James Turrell 設計。 逐步執行他的工作，使其深度和焦點都有意義。 牆壁看起來都是封閉且無限的，亮度提供了陰影的方式。 藉由仔細平衡光線的色彩和擴散來設計陌生的認知。 [Turrell 將這些 sensations 描述](https://www.sculpture.org/documents/scmag02/nov02/turrell/turrell.shtml) 為「 *感受您的眼睛*」，這是一種擴充其實際瞭解的方法。 很棒的世界（像是 Turrell imagines）是強大的工具，可利用我們的想法，而不像現今混合現實的沉浸式環境。
 
 ![Wide Out-James Turrell (1998) ](../develop/platform-capabilities-and-apis/images/wide-out-james-turrell.jpg)
 
@@ -51,7 +51,7 @@ Turrell 的 stark、surreal minimalism 是其工作的特徵，但如果我們�
 
 ![在 VR 中 Mindshow](../develop/platform-capabilities-and-apis/images/mindshow-in-vr-640px.jpg)
 
-虛擬人偶在沉浸式體驗中，可在故事行銷中啟用一種新的 embodiment。 最新的應用程式會重新思考虛擬主體擁有權的概念，並設定新一代的飛躍，以消除人們之間的距離。 像 [Mindshow](https://mindshow.com/) 這樣的公司開發了可利用虛擬人偶的創意工具，讓使用者完全採用新的角色和字元。 其他人正在探索 [藝術運算式的方法](https://en.wikipedia.org/wiki/Uncanny_valley)，這是一項可能無限制的創意機會，可以探索本質 (以及類似人類的屬性) 。 目前，這種缺乏的真實性有助於避免 [人類 likeness 的 uncanny](https://en.wikipedia.org/wiki/Uncanny_valley) ，以及針對日常開發人員提供的技術問題。 基於這些理由 (和更) ，很可能非實際的虛擬人偶會成為可預見的未來的預設值。 此外，雖然真實性對於混合的現實有很大的挑戰，但還是 *需要在3d 空間中真正表示人類的重要案例* 。
+虛擬人偶在沉浸式體驗中，可在故事行銷中啟用一種新的 embodiment。 最新的應用程式會重新思考虛擬主體擁有權的概念，並設定新一代的飛躍，以消除人們之間的距離。 像 [Mindshow](https://mindshow.com/) 這樣的公司開發了可利用虛擬人偶的創意工具，讓使用者完全採用新的角色和字元。 其他人正在探索 [藝術運算式的方法](https://en.wikipedia.org/wiki/Uncanny_valley)，這是一項可能無限制的創意機會，可以探索本質 (以及類似人類的屬性) 。 目前，這種缺乏的真實性有助於避免 [人類 likeness 的 uncanny](https://en.wikipedia.org/wiki/Uncanny_valley) ，以及針對日常開發人員提供的技術問題。 基於這些理由 (和更) ，很可能非實際的虛擬人偶會成為可預見的未來的預設值。 此外，雖然真實性對於混合的現實有很大的挑戰，但還是 *需要在3d 空間中真正表示人類的重要案例*。
 
 在 Microsoft，從 Microsoft Research 中散播的小型團隊花了過去幾年的時間，透過體積型影片的形式來開發學習人類的方法。 今日的程式類似于影片生產： sculpted 資產是完整的3D 錄製。 效能和影像會以即時方式進行，這並不是演出者的工作，而是真實的標記法。 雖然這項技術剛開始擴展到商業應用程式，但體積型影片的含意對 [Microsoft 對更個人](https://www.youtube.com/watch?v=tcyj-_IEWt8)化運算的願景很重要。
 
@@ -69,7 +69,7 @@ Turrell 的 stark、surreal minimalism 是其工作的特徵，但如果我們�
 
 ![交談的未來](../develop/platform-capabilities-and-apis/images/girl-with-dress.jpg)
 
-從將新的深度層級分層到每日應用程式（例如 Skype），到徹底改變數字會議和企業旅遊的概念—體積型影片開啟了獨特的案例：一位專家，是一位各地的大陸或數位朋友，坐在您生活中的 couches 和椅。 將真實的人類標記法新增至混合現實體驗，將會徹底改變數字會議和企業旅遊的概念。
+從將新的深度層級分層到日常的應用程式（例如 Skype），到徹底改變數字會議和企業旅遊的概念—體積型影片開啟了獨特的案例：一位專家，是一位各地的大陸或數位朋友，坐在您生活中的 couches 和椅。 將真實的人類標記法新增至混合現實體驗，將會徹底改變數字會議和企業旅遊的概念。
 
 就像 James Turrell 的抽象藝術和 Ai Weiwei 的重大真實感一樣，它也提供自己獨特的技術挑戰，因此，將人類視為創意的虛擬人偶和實際的捕獲方法。 您無法在另一種情況下略過，並探索每一項的潛能，以協助我們瞭解這個新空間中的人為互動。
 
@@ -78,6 +78,6 @@ Turrell 的 stark、surreal minimalism 是其工作的特徵，但如果我們�
 <table style="border-collapse:collapse" padding-left="0px">
 <tr>
 <td style="border-style: none" width="60"><img alt="Picture of Mark Vitazko" width="60" height="60" src="images/mark-vitazko.jpg"></td>
-<td style="border-style: none"><b>Mark Vitazko</b><br>UX 設計工具 @Microsoft</td>
+<td style="border-style: none"><b>Mark Vitazko</b><br>UX 設計者 @Microsoft</td>
 </tr>
 </table>

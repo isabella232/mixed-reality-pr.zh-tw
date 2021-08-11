@@ -3,12 +3,12 @@ title: 設定 Windows Mixed Reality
 description: 如何設定您的 Windows Mixed Reality 動作控制器、語音和音訊，以及定義安全播放空間的房間界限。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、入門、設定、移動控制器、控制器、語音、音訊、站上、站上、界限、圖形驅動程式、Microsoft Edge、chromium
-ms.openlocfilehash: a08982112fea4d1b67b690233ae387b76afc2f90
-ms.sourcegitcommit: 95fbb851336b6c5977a2ce4d4ac10f0eeb0df31f
+ms.openlocfilehash: 436818ee662f9beb1c445ea5b22c5d168bb4142a7b49a116a4f5fa138e3a5595
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/24/2021
-ms.locfileid: "107944749"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221048"
 ---
 # <a name="set-up-windows-mixed-reality"></a>設定 Windows Mixed Reality
 
@@ -44,11 +44,11 @@ ms.locfileid: "107944749"
 
 如果您只打算使用 Xbox 遊戲台或鍵盤和滑鼠，您就不需要配對控制器。  如果您打算使用控制器，您應該將它們配對。
 
-**注意**： Windows Mixed Reality 移動控制器需要藍牙4.0。 如果您的電腦沒有內建藍牙，您必須插入支援藍牙4.0 的 USB Bluetooth 介面卡，以啟用您的動作控制器。 您不需要 Bluetooth 介面卡，就能在耳機中使用內建的收音機。
+**注意**： Windows Mixed Reality 移動控制器需要藍牙4.0。 如果您的電腦沒有內建的藍牙，您必須插入支援藍牙4.0 的 USB 藍牙介面卡，以啟用您的動作控制器。 您不需要藍牙介面卡來使用耳機中的內建無線電。
 
 ![熟悉您的動作控制器](images/get_to_know_controllers.png)
 
-如果您需要配對運動控制器，請參閱 [Windows Mixed Reality 文章中的控制器](controllers-in-wmr.md) 。
+如果您需要配對運動控制器，請參閱[Windows Mixed Reality 文章中的控制器](controllers-in-wmr.md)。
 
 ## <a name="set-up-your-room-boundary"></a>設定您的房間界限
 
@@ -94,7 +94,7 @@ Windows Mixed Reality 中支援的界限大小上限是 18x18ft (5.7 x 5.7 m) �
 
 ## <a name="set-up-speech"></a>設定語音
 
-您可以在混合現實中啟用 Cortana 命令，讓您可以使用語音命令來傳送和開啟應用程式。 您將在 [學習混合實境](learn-mixed-reality.md) 章節中深入瞭解這些動作。
+您可以在混合現實中啟用 Cortana 命令，讓您可以使用語音命令來傳送和開啟應用程式。 您將在[學習混合實境](learn-mixed-reality.md)章節中深入瞭解這些動作。
 
 ![混合的現實更適合使用語音](images/1050px-betterwithspeech.png)
 
@@ -104,13 +104,13 @@ Windows Mixed Reality 中支援的界限大小上限是 18x18ft (5.7 x 5.7 m) �
 
 ## <a name="adjusting-your-headsets-display-settings"></a>調整您的耳機顯示設定
 
-Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡品質和效能的顯示設定。 若要調整這些設定，請移至 [ **設定] > Mixed Reality > 耳機顯示**。
+Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡品質和效能的顯示設定。 若要調整這些設定，請移至 **設定 > 混合現實 > 耳機顯示**。
 
 ### <a name="visuals"></a>視覺效果
 
 這項設定會控制您的混合現實首頁的視覺品質。 預設值為「自動」。
 
-### <a name="resolution"></a>解決方案
+### <a name="resolution"></a>解決方法
 
 您的耳機原生解析度如下所示。
 
@@ -143,14 +143,14 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 此設定會控制 Windows Mixed Reality 的行為，以回應您的耳機狀態感應器：
 
-* **使用耳機狀態感應器自動切換** (預設) ： Windows 會在您佩戴耳機時，自動將輸入 (鍵盤、滑鼠 ... ) 到 Windows Mixed Reality。 您可以隨時使用 Win + Y 覆寫此項。
-* **使用 windows 標誌鍵 + Y 手動切換**： windows 將不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
+* **使用耳機目前狀態感應器自動切換** (預設) ： Windows 會在您佩戴耳機時，自動將輸入 (鍵盤、滑鼠 ... ) 轉換成 Windows Mixed Reality。 您可以隨時使用 Win + Y 覆寫此項。
+* **使用 Windows 標誌鍵 + Y 手動切換**： Windows 不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
 
 這項設定可在 Windows 10、1903版或更新版本上使用。
 
 ## <a name="installing-microsoft-edge"></a>安裝 Microsoft Edge 
 
-若要使用 Windows Mixed Reality home 的新 Chromium 型 Microsoft Edge，請升級至 Windows 10 1903 版或更新版本，以提供 Win32 應用程式的原生支援， (Microsoft Edge home 中的新) Windows Mixed Reality。 請檢查 Windows Update 或 [手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)。
+若要在 Windows Mixed Reality home 中使用新的 Chromium 型 Microsoft Edge，請升級至 Windows 10 1903 版或更新版本，以支援 Win32 應用程式的原生支援，例如 (home 的新 Microsoft Edge) 。 請檢查 Windows Update 或[手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)。
 
 >[!IMPORTANT]
 >新的 Microsoft Edge 推出 WebXR 的支援，這是為 VR 耳機建立沉浸式 web 體驗的新標準。 如果您安裝新的 Microsoft Edge，您將無法在 Microsoft Edge 中播放 WebVR 體驗。
@@ -171,11 +171,11 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 - 在 Windows Mixed Reality 中開啟的網站將會在混合實境入口關閉時遺失，不過 Microsoft Edge 視窗仍會保留在混合實境首頁中的位置。
 - Microsoft Edge windows 的音訊不會 hrtf。
 - 修正于360檢視器延伸模組版本2.3.8：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 [展開] 按鈕，以確認您擁有的延伸模組版本。
-- 在 Windows Mixed Reality 會話期間，虛擬監視器會顯示為 [設定] **> 系統 > 顯示** 中的一般實體監視器。
+- 在 Windows Mixed Reality 會話期間，虛擬監視器會顯示為 **設定 > 系統 > 顯示** 中的一般實體監視器。
 
 ## <a name="launching-mixed-reality-after-the-first-time"></a>第一次啟動混合現實
 
-第二次進入混合的事實很容易，因為它會在連線到您的電腦時重新開啟耳機。 您也可以從 [開始] 功能表開啟混合實境入口的應用程式，藉以手動啟動該應用程式。 當您放置輸入和音訊時，輸入和音訊會自動路由傳送到耳機，您也可以按鍵盤上的 **Windows + Y** 手動觸發。
+第二次進入混合的事實很容易，因為它會在連線到您的電腦時重新開啟耳機。 您也可以從 [開始] 功能表開啟混合實境入口的應用程式，藉以手動啟動該應用程式。 當您放置輸入和音訊時，輸入和音訊會自動路由傳送到耳機，或者，您可以按鍵盤上的 **Windows + Y** ，以手動方式觸發。
 
 ## <a name="see-also"></a>另請參閱
 

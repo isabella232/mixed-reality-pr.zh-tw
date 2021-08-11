@@ -5,12 +5,12 @@ author: vaoliva
 ms.author: vaolivaa
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、滾動物件
-ms.openlocfilehash: c3d3f72b1dabcf913ec7f21a21bdcf45aab4d66b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 06ad2d8ac19ac7784a9b83ea5c9801612fb24842d8e4c64433394eac416080fc
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104686231"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222769"
 ---
 # <a name="scrolling-object-collection"></a>滾動物件集合
 

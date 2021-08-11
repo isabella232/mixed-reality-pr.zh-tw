@@ -6,20 +6,20 @@ ms.author: sostel
 ms.date: 10/29/2019
 ms.topic: article
 keywords: 眼睛追蹤、混合現實、輸入、眼睛、混合現實耳機、windows Mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、設計、互動
-ms.openlocfilehash: 3067f5533dbe70d4decb6b5cf94a3f1c5029115a
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: aec41c6654ce10254648e90e08a09ff9adade75a3dc63af81a0953b67b95729f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906864"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220954"
 ---
 # <a name="eye-gaze-based-interaction-on-hololens-2"></a>HoloLens 2 上的眼睛架構互動
 
 ![MRTK 中的眼睛追蹤示範](images/mrtk_et_scenemenu.jpg)
 
-HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLens 2 頁面上的 [眼睛追蹤](eye-tracking.md) 中，我們提到了每位使用者必須進行 [校正](/hololens/hololens-calibration)的需求，並提供一些開發人員指導方針，並醒目提示使用案例來追蹤眼睛。 眼睛輸入仍然是一種新的使用者輸入，而且有很多需要學習。 
+HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLens 2 頁面上的[眼睛追蹤](eye-tracking.md)中，我們提到了每位使用者必須進行[校正](/hololens/hololens-calibration)的需求，並提供一些開發人員指導方針，並醒目提示使用案例來追蹤眼睛。 眼睛輸入仍然是一種新的使用者輸入，而且有很多需要學習。 
 
-雖然眼睛的輸入只會在我們的「全像」 Shell 體驗中稍微使用 (您在啟動 HoloLens 2) 時所看到的使用者介面，但有數個應用程式（例如「 [HoloLens 遊樂場](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)」）會展示眼睛輸入如何新增至全像您的全像攝影體驗的絕佳範例。
+雖然眼睛的輸入只會在我們的「全像」 Shell 體驗中稍微使用 (您在啟動 HoloLens 2) 時所看到的使用者介面，但有數個應用程式（例如「 [HoloLens 遊樂場](https://www.microsoft.com/p/mr-playground/9nb31lh723s2)」）展示了眼睛輸入如何新增至全像您的全像攝影體驗的絕佳範例。
 在這個頁面中，我們會討論整合眼睛輸入以與您的全像攝影應用程式互動的設計考慮。
 
 您將瞭解重要的優點，以及眼睛輸入所帶來的獨特挑戰。 根據這些，我們會提供數個設計建議，以協助您建立滿足眼睛的支援使用者介面。 
@@ -49,11 +49,11 @@ HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLen
 
 ## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全像投影標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="eye-gaze-input-design-guidelines"></a>眼睛輸入設計指導方針
 
@@ -83,7 +83,7 @@ HoloLens 2 的其中一個令人興奮的新功能是眼睛追蹤。 在 HoloLen
 此解決方案也可讓使用者自由地查看，而不會因為 involuntarily 觸發某個東西而不會產生任何負荷。 當您在查看目標時設計視覺和聽覺的意見反應時，也應該考慮這個問題。
 不要讓使用者使用立即的彈出效果或暫留音效。 奧妙是索引鍵。 我們將在討論 [設計建議](eye-gaze-interaction.md#design-recommendations)時，討論下面的一些最佳作法。
 
-- **觀察與控制項** 假設您想要精確地拉出牆上的相片。 您檢視了相框及其周圍環境，看看是否妥善對齊。 現在想像一下，當您想要使用眼睛做為輸入來移動圖片時，該怎麼做。 很難對吧？ 當輸入和控制需要這兩種方式時，這會描述眼睛的雙重角色。 
+- **觀察與控制** Imagine 您希望精確地拉出牆上的相片。 您檢視了相框及其周圍環境，看看是否妥善對齊。 現在想像一下，當您想要使用眼睛做為輸入來移動圖片時，該怎麼做。 很難對吧？ 當輸入和控制需要這兩種方式時，這會描述眼睛的雙重角色。 
 
 - **按一下前保留：** 針對快速目標選取，研究顯示使用者的眼睛可以在結束手動按一下 (例如，按一下 [) ] 來繼續。 請特別注意以較慢的控制項輸入來同步處理快速眼睛指標 (例如語音、實習、控制器) 。
 

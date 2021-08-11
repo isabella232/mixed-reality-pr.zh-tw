@@ -1,17 +1,17 @@
 ---
-title: 按鈕
+title: Button
 description: 瞭解如何使用按鈕觸發立即動作，這是其中一個混合現實的基礎元件。
 author: cre8ivepark
 ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、按鈕
-ms.openlocfilehash: ddad8b23950bddd03dd4024497c212d1cc950fb0
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: 602d5b8784c97676e29574e4a5b0ffb7b240f07c2c43bbe68e0f8bc49db9dd1f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600367"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219310"
 ---
 # <a name="button"></a>Button
 
@@ -46,7 +46,7 @@ ms.locfileid: "110600367"
 ---
 
 ## <a name="button-in-mrtkmixed-reality-toolkit-for-unity"></a>MRTK 中的按鈕 (混合現實工具組) for Unity
-**[MRTK For Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種類型的按鈕 prefabs，包括適用于 HoloLens 2 的 shell 樣式按鈕，以及 (第1代) 的 HoloLens。 HoloLens 2 按鈕預製專案包含數個詳細 affordances，可協助提升使用者的信心：
+**[MRTK for Unity](https://github.com/Microsoft/MixedRealityToolkit-Unity)** 提供各種類型的按鈕 prefabs，包括 HoloLens 2 的 shell 樣式按鈕，以及 (第1代) 的 HoloLens。 HoloLens 2 按鈕預製專案包含數個詳細 affordances，可協助提升使用者的信心：
 
 * 鄰近性醒目提示
 * 壓縮 front 籠

@@ -1,24 +1,24 @@
 ---
 title: 應用程式模型
-description: Windows Mixed Reality 使用通用 Windows 平臺所提供的應用程式模型，也就是新式 Windows 應用程式的模型和環境。
+description: Windows Mixed Reality 使用通用 Windows 平臺所提供的應用程式模型、新式 Windows 應用程式的模型和環境。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: UWP、應用程式模型、生命週期、暫停、繼續、磚、視圖、合約、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: 941c0f3f81596e8465157121462b4150cefd8ac2
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 5f15f0a2516a21cd6432e7f09df7950f8d832acc77ac77056f5bf1382500024e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583215"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221896"
 ---
 # <a name="app-model"></a>應用程式模型
 
-Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) (UWP) 所提供的應用程式模型，也就是新式 Windows 應用程式的模型和環境。 UWP 應用程式模型定義了如何安全地安裝、更新、設定版本，以及完全移除應用程式。 它也會控制應用程式的生命週期，也就是應用程式執行、睡眠和停止的方式，以及它們如何保留狀態。 最後，應用程式模型涵蓋與作業系統、檔案和其他應用程式的整合和互動。
+Windows Mixed Reality 使用[通用 Windows 平臺](/windows/uwp/get-started/) (UWP) 所提供的應用程式模型，這是新式 Windows 應用程式的模型和環境。 UWP 應用程式模型定義了如何安全地安裝、更新、設定版本，以及完全移除應用程式。 它也會控制應用程式的生命週期，也就是應用程式執行、睡眠和停止的方式，以及它們如何保留狀態。 最後，應用程式模型涵蓋與作業系統、檔案和其他應用程式的整合和互動。
 
-![在早餐區域 Windows Mixed Reality 首頁中排列的2D 應用程式](images/20160112-055908-hololens-500px.jpg)<br>
-*在 Windows Mixed Reality 首頁中排列2D 視圖的應用程式*
+![在早餐區域 Windows Mixed Reality 首頁中排列的2d 應用程式](images/20160112-055908-hololens-500px.jpg)<br>
+*在 Windows Mixed Reality 首頁中排列2d 視圖的應用程式*
 
 ## <a name="app-lifecycle"></a>應用程式週期
 
@@ -26,12 +26,12 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 
 ### <a name="placement-is-launch"></a>放置開始
 
-每個應用程式都是以混合現實的方式啟動，方法是將應用程式磚放 ([Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)中) 的[Windows 次要磚](/uwp/api/Windows.UI.StartScreen.SecondaryTile)。 這些應用程式圖格會在放置時開始執行應用程式。 這些應用程式磚會保存並保持在其放置位置，如同您想要傳回給應用程式的啟動器。
+每個應用程式都是以混合現實的方式啟動，方法是將應用程式磚放 ([Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)中的[Windows 次要磚](/uwp/api/Windows.UI.StartScreen.SecondaryTile)) 。 這些應用程式圖格會在放置時開始執行應用程式。 這些應用程式磚會保存並保持在其放置位置，如同您想要傳回給應用程式的啟動器。
 
 ![放置會將次要磚放在世界中](images/slide1-600px.png)<br>
 *放置會將次要磚放在世界中*
 
-放置完成之後 ([除非應用程式](app-model.md#protocols) 啟動應用程式啟動) ，否則應用程式會開始啟動。 Windows Mixed Reality 可以一次執行有限數量的應用程式。 一旦您放置並啟動應用程式，其他作用中的應用程式可能會暫停。 已暫停的應用程式會在您放置應用程式的任何位置，讓應用程式的上次狀態螢幕擷取畫面。 如需處理繼續和其他生命週期事件的詳細資訊，請參閱 [WINDOWS 10 UWP 應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)。
+放置完成之後 ([除非應用程式](app-model.md#protocols) 啟動應用程式啟動) ，否則應用程式會開始啟動。 Windows Mixed Reality 可以一次執行有限數量的應用程式。 一旦您放置並啟動應用程式，其他作用中的應用程式可能會暫停。 已暫停的應用程式會在您放置應用程式的任何位置，讓應用程式的上次狀態螢幕擷取畫面。 如需處理繼續和其他生命週期事件的詳細資訊，請參閱[Windows 10 UWP 應用程式生命週期](/windows/uwp/launch-resume/app-lifecycle)。
 
 ![放置磚之後，應用程式會開始 ](images/slide2-500px.png) ![ 執行執行、暫停或未執行之應用程式的狀態圖表](images/ic576232-500px.png)<br>
 *左方：放置磚之後，應用程式就會開始執行。Right：應用程式執行中、已暫止或未執行的狀態圖表。*
@@ -42,7 +42,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 
 ### <a name="app-suspensiontermination"></a>應用程式暫停/終止
 
-在 [Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)中，使用者可以從 [開始] 功能表啟動應用程式，並將應用程式磚放在世界中，以建立應用程式的多個進入點。 每個應用程式磚的行為都是不同的進入點，並且在系統中具有個別的磚實例。 [SecondaryTile](/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync)的查詢會針對每個應用程式實例產生 **SecondaryTile** 。
+在[Windows Mixed Reality 首頁](../discover/navigating-the-windows-mixed-reality-home.md)中，使用者可以從 [開始] 功能表啟動應用程式，並將應用程式磚放在世界中，以建立應用程式的多個進入點。 每個應用程式磚的行為都是不同的進入點，並且在系統中具有個別的磚實例。 [SecondaryTile](/uwp/api/Windows.UI.StartScreen.SecondaryTile#Windows_UI_StartScreen_SecondaryTile_FindAllAsync)的查詢會針對每個應用程式實例產生 **SecondaryTile** 。
 
 當 UWP 應用程式暫停時，會取得目前狀態的螢幕擷取畫面。
 
@@ -61,7 +61,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 
 ### <a name="extended-execution"></a>擴充執行
 
-有時候您的應用程式需要繼續在背景中執行工作或播放音訊。 [背景](/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest) 工作可在 HoloLens 上取得。
+有時候您的應用程式需要繼續在背景中執行工作或播放音訊。 [背景](/windows/uwp/launch-resume/declare-background-tasks-in-the-application-manifest)工作可在 HoloLens 上取得。
 
 ![應用程式可以在背景中執行](images/slide10-800px.png)<br>
 *應用程式可以在背景中執行*
@@ -70,7 +70,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 
 當您的應用程式啟動時，您可以選擇您想要顯示的檢視類型。 針對應用程式的 **CoreApplication**，一律會有主要的 [應用程式視圖](/uwp/api/Windows.UI.ViewManagement.ApplicationView) ，以及您想要建立的任意數目的應用程式視圖。 在桌上型電腦上，您可以將應用程式視圖視為視窗。 我們的混合現實應用程式範本會建立 Unity 專案，其中主要應用程式視圖為 [沉浸式](app-views.md)。 
 
-您的應用程式可以使用 XAML 之類的技術來建立額外的2D 應用程式視圖，以使用應用程式內購買的 Windows 10 功能。 如果您的應用程式啟動為其他 Windows 10 裝置的 UWP 應用程式，您的主要視圖是2D。 不過，您可以藉由新增另一個可輕鬆顯示體驗 volumetrically 的應用程式視圖，在混合現實中「亮亮」。 想像一下以 XAML 建立相片檢視器應用程式，其中的投影片按鈕會切換至沉浸式應用程式視圖，從世界各地的應用程式 flew 相片。
+您的應用程式可以使用 XAML 之類的技術來建立額外的2d 應用程式視圖，以使用應用程式內購買的 Windows 10 功能。 如果您的應用程式啟動為其他 Windows 10 裝置的 UWP 應用程式，您的主要視圖是2d。 不過，您可以藉由新增另一個可輕鬆顯示體驗 volumetrically 的應用程式視圖，在混合現實中「亮亮」。 Imagine 在 XAML 中建立相片檢視器應用程式，其中的投影片按鈕會切換至沉浸式應用程式視圖，從世界各地的應用程式 flew 相片。
 
 ![執行中的應用程式可以有2D 視圖或沉浸式視圖](images/slide3-800px.png)<br>
 *執行中的應用程式可以有2D 視圖或沉浸式視圖*
@@ -86,7 +86,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 ![在沉浸式視圖中執行的應用程式只有一個可見的](images/slide4-800px.png)<br>
 *在沉浸式視圖中執行的應用程式是唯一可見的*
 
-### <a name="2d-view-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 首頁中的2D 視圖
+### <a name="2d-view-in-the-windows-mixed-reality-home"></a>Windows Mixed Reality 首頁中的2d 視圖
 
 沉浸式觀賞以外的任何功能都會轉譯為您世界上的2D 觀點。
 
@@ -97,7 +97,7 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 
 ### <a name="placement-of-additional-app-tiles"></a>其他應用程式磚的位置
 
-您可以視需要使用 [次要磚 api](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles)，將多個應用程式放在世界各地的 2d view。 這些「釘選」的磚會顯示為使用者必須放置的啟動顯示畫面，之後可用來啟動您的應用程式。 Windows Mixed Reality 目前不支援將任何2D 磚內容轉譯為動態磚。
+您可以視需要使用 [次要磚 api](/windows/uwp/design/shell/tiles-and-notifications/secondary-tiles)，將多個應用程式放在世界各地的 2d view。 這些「釘選」的磚會顯示為使用者必須放置的啟動顯示畫面，之後可用來啟動您的應用程式。 Windows Mixed Reality 目前不支援將任何2d 磚內容轉譯為動態磚。
 
 ![使用次要磚的應用程式可以有多個放置](images/slide6-800px.png)<br>
 *使用次要磚的應用程式可以有多個放置*
@@ -143,13 +143,13 @@ Windows Mixed Reality 使用 [通用 Windows 平臺](/windows/uwp/get-started/) 
 
 ## <a name="app-to-app-interactions"></a>應用程式與應用程式的互動
 
-當您建立應用程式時，您可以存取 Windows 10 上可用的應用程式通訊機制的豐富應用程式。 許多新的通訊協定 Api 和檔案註冊在 HoloLens 上都能順利運作，以啟用應用程式啟動和通訊。 
+當您建立應用程式時，您可以存取 Windows 10 上可用的應用程式通訊機制的豐富應用程式。 許多新的通訊協定 api 和檔案註冊都能在 HoloLens 上完美運作，以啟用應用程式啟動和通訊。 
 
 針對桌上型耳機，與指定副檔名或通訊協定相關聯的應用程式可能是 Win32 應用程式，只能出現在桌面監視器或桌上型電腦平板中。
 
 ### <a name="protocols"></a>通訊協定
 
-HoloLens 透過Windows.System 支援應用程式啟動應用程式 [ 。啟動器 Api](/uwp/api/Windows.System.Launcher)。
+HoloLens 透過Windows.System 支援應用程式啟動應用程式[。 Launcher api](/uwp/api/Windows.System.Launcher)。
 
 啟動另一個應用程式時，需要考慮一些事項：
 
@@ -161,7 +161,7 @@ HoloLens 透過Windows.System 支援應用程式啟動應用程式 [ 。啟動�
 
 ### <a name="file-pickers"></a>檔案選擇器
 
-HoloLens 同時支援 [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker) 和 [FileSavePicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker) 合約。 不過，尚未預先安裝任何應用程式來滿足檔案選擇器合約。 例如，您可以從 Microsoft Store 安裝這些應用程式-OneDrive。
+HoloLens 支援[FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpenPicker)和[FileSavePicker](/uwp/api/Windows.Storage.Pickers.FileSavePicker)合約。 不過，尚未預先安裝任何應用程式來滿足檔案選擇器合約。 例如，您可以從 Microsoft Store 安裝這些應用程式 OneDrive。
 
 如果您已安裝多個檔案選擇器應用程式，您將不會看到任何可供選擇要啟動之應用程式的混淆 UI。 相反地，系統會選擇第一個安裝的檔案選擇器。 儲存檔案時，會產生包含時間戳記的檔案名。 這無法由使用者變更。
 
@@ -174,7 +174,7 @@ HoloLens 同時支援 [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpen
 
 ### <a name="app-contracts-and-windows-mixed-reality-extensions"></a>應用程式合約和 Windows Mixed Reality 擴充功能
 
-應用程式合約和擴充點可讓您註冊應用程式，以利用更深入的作業系統功能，例如處理副檔名或使用背景工作。 這是支援和不支援的合約清單，以及 HoloLens 上的擴充點。
+應用程式合約和擴充點可讓您註冊應用程式，以利用更深入的作業系統功能，例如處理副檔名或使用背景工作。 這是 HoloLens 上支援和不支援的合約和擴充點的清單。
 
 |  合約或延伸模組  |  是否支援？ | 
 |----------|----------|
@@ -207,7 +207,7 @@ HoloLens 同時支援 [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpen
 
 ## <a name="app-file-storage"></a>應用程式檔儲存體
 
-所有儲存體都是透過 [Windows. storage 命名空間](/uwp/api/Windows.Storage)。 HoloLens 不支援應用程式儲存體同步處理/漫遊。 如需詳細資訊，請參閱下列檔：
+所有儲存體都會透過[Windows 儲存體命名空間](/uwp/api/Windows.Storage)。 HoloLens 不支援應用程式儲存體同步/漫遊。 如需詳細資訊，請參閱下列檔：
 
 * [檔案、資料夾和媒體櫃](/windows/uwp/files/index)
 * [儲存及擷取設定和其他應用程式資料](/windows/uwp/design/app-settings/store-and-retrieve-app-data)
@@ -218,7 +218,7 @@ HoloLens 同時支援 [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpen
 
 <table>
 <tr>
-<th> 屬性</th><th> 在 HoloLens 上支援</th><th> 在沉浸式耳機上支援</th><th> 描述</th>
+<th> 屬性</th><th> 支援 HoloLens</th><th> 在沉浸式耳機上支援</th><th> Description</th>
 </tr><tr>
 <td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_AppCaptures">AppCaptures</a></td><td style="text-align: center;">✔️</td><td style="text-align: center;">✔️</td><td>取得應用程式的 [捕獲] 資料夾。</td>
 </tr><tr>
@@ -240,7 +240,7 @@ HoloLens 同時支援 [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpen
 </tr><tr>
 <td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_HomeGroup">HomeGroup</a></td><td></td><td style="text-align: center;">✔️</td><td>取得家庭家庭資料夾。</td>
 </tr><tr>
-<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MediaServerDevices">MediaServerDevices</a></td><td></td><td style="text-align: center;">✔️</td><td>取得媒體伺服器的資料夾 (數位生活網路聯盟 (DLNA) # A3 裝置。</td>
+<td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_MediaServerDevices">MediaServerDevices</a></td><td></td><td style="text-align: center;">✔️</td><td>取得媒體伺服器的資料夾 (數位生活網路聯盟 (DLNA) ) 裝置。</td>
 </tr><tr>
 <td><a href="/uwp/api/Windows.Storage.KnownFolders#Windows_Storage_KnownFolders_RecordedCalls">RecordedCalls</a></td><td></td><td style="text-align: center;">✔️</td><td>取得錄製的呼叫資料夾。</td>
 </tr><tr>
@@ -250,11 +250,11 @@ HoloLens 同時支援 [FileOpenPicker](/uwp/api/Windows.Storage.Pickers.FileOpen
 
 ## <a name="app-package"></a>應用程式套件
 
-使用 Windows 10 時，您不再以作業系統為目標，而是將 [應用程式的目標設為一或多個裝置系列](/windows/uwp/get-started/universal-application-platform-guide#device-families)。 裝置系列會識別 API、系統特性以及您對於裝置系列中的裝置可以預期的行為。 它也會決定您的應用程式可從 [Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)安裝的裝置集合。
+使用 Windows 10 時，您不再以作業系統為目標，而是將[應用程式的目標設為一或多個裝置系列](/windows/uwp/get-started/universal-application-platform-guide#device-families)。 裝置系列會識別 API、系統特性以及您對於裝置系列中的裝置可以預期的行為。 它也會決定您的應用程式可從[Microsoft Store](../distribute/submitting-an-app-to-the-microsoft-store.md#specifying-target-device-families)安裝的裝置集合。
 
-* 若要以桌上型耳機和 HoloLens 為目標，請將應用程式的目標設為 **Windows。通用** 裝置系列。
-* 若要以桌面耳機為目標，請將您的應用程式目標設為 **Windows desktop** 裝置系列。
-* 若要以 HoloLens 為目標，請將您的應用程式設定為 **Windows** 全像裝置系列。
+* 若要以桌面耳機和 HoloLens 為目標，請將您的應用程式設為 **Windows。通用** 裝置系列。
+* 若要只以桌上型耳機為目標，請將您的應用程式設為目標 **Windows。桌面** 裝置系列。
+* 若要將目標設為僅 HoloLens，請將您的應用程式設定為 **Windows。全像裝置系列**。
 
 ## <a name="see-also"></a>另請參閱
 

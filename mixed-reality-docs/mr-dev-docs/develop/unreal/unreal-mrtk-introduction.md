@@ -7,12 +7,12 @@ ms.date: 01/08/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Windows Mixed Reality, 測試, 混合實境工具組, MRTK 第 2 版, MRTK, 工具, SDK, HoloLens, HoloLens 2, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 跨平台
-ms.openlocfilehash: 3d46b92dbf3182ca5a50a8e106d2b947e4f7120f
-ms.sourcegitcommit: 6ade7e8ebab7003fc24f9e0b5fa81d091369622c
+ms.openlocfilehash: 06eacac245c80f16ab48dbda4b5aca740ffdfd66a0266beafac5e46b39a9d109
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/19/2021
-ms.locfileid: "112394282"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221828"
 ---
 # <a name="introducing-mrtk-for-unreal"></a>適用于 Unreal 的 MRTK 簡介
 
@@ -26,7 +26,7 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 * [適用于 Unreal 的 UX 工具](https://github.com/microsoft/MixedReality-UXTools-Unreal)，可提供程式碼、藍圖和範例，以針對 Hololens 2 應用程式執行 UX 功能。
 * [適用于 Unreal 的圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal)，可協助改善混合現實應用程式的視覺精確度，同時維持在效能預算內。
 
-請參閱 [GitHub 上的 MRTK 檔](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html) ，並開始使用 [UX 工具](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html) 或 [圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md) 安裝指南。
+請參閱[MRTK 的檔，瞭解 GitHub 的相關檔](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html)，以及如何開始使用[UX 工具](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html)或[圖形工具](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md)安裝指南。
 
 ### <a name="modular"></a>模組化
 
@@ -45,7 +45,7 @@ MRTK 是一項令人驚奇的開放原始碼工具組，自 HoloLens 首次發�
 
 * [安裝工具](../install-the-tools.md)
 * [使用 MRTK for Unreal 進行開發](unreal-development-overview.md)
-* [UX 工具- (GitHub) 的安裝指南 ](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html)
+* [UX 工具- (GitHub) 的安裝指南](https://microsoft.github.io/MixedReality-UXTools-Unreal/Docs/Installation.html)
 * [UX 工具-檔首頁 (GitHub) ](https://microsoft.github.io/MixedReality-UXTools-Unreal/README.html)
-* [圖形工具- (GitHub) 的安裝指南 ](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md)
+* [圖形工具- (GitHub) 的安裝指南](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/blob/main/Docs/Installation.md)
 * [圖形工具-檔首頁 (GitHub) ](https://github.com/microsoft/MixedReality-GraphicsTools-Unreal/)

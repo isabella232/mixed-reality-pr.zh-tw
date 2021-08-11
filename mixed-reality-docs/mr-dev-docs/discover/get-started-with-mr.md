@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 探索, 散發, 索引, 登陸頁面, 設計, 開發, 教學課程, 範例應用程式, 基本, 案例研究, 資源, HoloLens 操作說明, 開放原始碼專案, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: e3c30429109de367993357701092154741ca571b
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: 7d875b1e4aa31c7131f8154b1d4a0d2027dbd022791d8daa06169aa0fcb51b55
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403379"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115228774"
 ---
 # <a name="get-started-with-mixed-reality"></a>開始使用混合實境
 

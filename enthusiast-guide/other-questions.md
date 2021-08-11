@@ -7,12 +7,12 @@ ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、卸載 Windows Mixed Reality、支援的語言
 appliesto:
 - Windows 10
-ms.openlocfilehash: ede2620ca6a47b085a3d7b54fd6df073bfaa528e
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 9de3ecfe2f2fc58a0afee0d7702b15131b15b12086d9f4f9851b3a9d4920afe3
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196593"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219714"
 ---
 # <a name="other-questions"></a>其他問題
 
@@ -39,12 +39,12 @@ Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung H
 如果固件更新程式停滯，而且沒有超過五分鐘的進度：
 
 * 暫時拔掉所有其他 USB 裝置，然後重試一次固件更新。
-* 將 Samsung 耳機連接到您電腦上的其他 USB 3.0 埠。
+* 連線 Samsung 耳機連接到您電腦上的不同 USB 3.0 埠。
 * 停用或卸載任何可能幹擾固件更新的軟體，例如 Gb 的 AORUS App Center。
 * 使用不同的電腦來更新 Samsung 耳機固件。
 
 ## <a name="how-do-i-access-my-pc-desktop-in-mixed-reality"></a>如何? 在混合的生活中存取我的電腦桌面？
-從 Windows 的 [耳機] 按鈕啟動桌面應用程式 **> 所有應用程式 > 桌面** ，以混合的方式存取您的電腦桌面。
+在耳機中從 Windows 按鈕啟動傳統型應用程式 **> 所有應用程式 > Desktop** ，以在混合的現實情況中存取您的電腦桌面。
 
 ## <a name="how-can-i-see-multiple-monitors-in-mixed-reality"></a>如何查看混合現實中的多個監視器
 
@@ -67,15 +67,15 @@ Samsung 擁有併發布透過其 "Samsung HMD 電影對白 Setup" 和 "Samsung H
 如果您使用 2.4-GHz Wi-Fi 連接，您的移動控制器可能會減緩您的 Wi-fi：
 
 * 切換至 5 GHz Wi-Fi 連接（如果有的話）。 [深入了解](https://support.microsoft.com/help/4000461)。
-* 使用個別的 Bluetooth 介面卡，將您的動作控制器連接到您的電腦。 請參閱 [建議的介面卡](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)。
+* 使用不同的藍牙介面卡，將您的動作控制器連接到您的電腦。 請參閱 [建議的介面卡](https://support.microsoft.com/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)。
 
-## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 為何會這樣？
+## <a name="i-got-a-message-that-said-to-plug-in-and-charge-my-pc-why"></a>我收到一則訊息，表示插入和收取電腦的費用。 原因為何？
 
 如果您使用的是膝上型電腦，則在電腦同時完全收取和插入電源時，Windows Mixed Reality 的效果最佳。
 
 ## <a name="what-is-the-experience-options-setting"></a>何謂體驗選項設定？
 
-**設定 > 混合現實 > 耳機顯示器 > 體驗選項** 可讓您變更 Windows Mixed Reality 的效能設定。 這可讓您在各種內容中選擇硬體設定的最佳體驗。 您有三個體驗選項可供選擇：
+**設定 > 混合現實 > 耳機顯示器 > 體驗選項** 可讓您變更 Windows Mixed Reality 效能設定。 這可讓您在各種內容中選擇硬體設定的最佳體驗。 您有三個體驗選項可供選擇：
 * 自動： Windows Mixed Reality 將決定硬體設定的最佳體驗。 對於大部分的人來說，這是開始使用的最佳選擇。
 * 60 Hz：將重新整理頻率設定為 60 Hz，並關閉特定功能，例如混合實境入口中的影片捕獲和預覽。
 * 90 Hz：將更新頻率設定為 90 Hz。
@@ -113,13 +113,13 @@ Windows Mixed Reality 也提供下列語言版本，不需要語音命令或聽�
 
 1. 中斷耳機與電腦的連線。
 2. 關閉 Windows Mixed Reality 入口網站。
-2. 移至 [  **開始] > 設定 > 混合現實** ，然後選取 [卸載]。
+2. 移至 [**開始] > 設定 > Mixed Reality** ]，然後選取 [卸載]。
 
 當您準備好要再次開始使用耳機時，請將其插入，Windows Mixed Reality 入口網站會引導您完成安裝程式。
 
 ## <a name="i-got-a-we-couldnt-finish-uninstalling-windows-mixed-reality-message"></a>我收到「我們無法完成卸載 Windows Mixed Reality」訊息。
 
-有些檔案（包括您的環境相關資訊）仍可能在您的電腦上。 如果您決定稍後重新安裝 Windows Mixed Reality，這可能會造成問題。 您可以藉由修改登錄和使用 Windows PowerShell 來執行命令，以手動方式從電腦移除任何剩餘的 Windows Mixed Reality 資訊。 _如果您不正確地修改登錄，可能會發生嚴重的問題。請務必小心遵循這些步驟。為了增加保護，請先備份登錄再進行修改，以便在發生問題時進行還原。_ 如需詳細資訊，請參閱 [如何在 Windows 中備份和 restory 登錄](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows)。 
+有些檔案（包括您的環境相關資訊）仍可能在您的電腦上。 如果您決定稍後重新安裝 Windows Mixed Reality，這可能會造成問題。 您可以藉由修改登錄和使用 Windows PowerShell 來執行命令，以手動方式從電腦移除任何剩餘的 Windows Mixed Reality 資訊。 _如果您不正確地修改登錄，可能會發生嚴重的問題。請務必小心遵循這些步驟。為了增加保護，請先備份登錄再進行修改，以便在發生問題時進行還原。_ 如需詳細資訊，請參閱[如何在 Windows 中備份和 restory 登錄](https://support.microsoft.com/en-us/help/322756/how-to-back-up-and-restore-the-registry-in-windows)。 
 
 若要使用下列命令卸載 Windows mixed reality：
 1. 重新啟動電腦。
@@ -128,7 +128,7 @@ Windows Mixed Reality 也提供下列語言版本，不需要語音命令或聽�
    <ul>
     <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>，然後刪除 "FirstRunSucceeded"。</li> 
     <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic\SpeechAndAudio</b>，然後刪除 "PreferDesktopSpeaker" 和 "PreferDesktopMic"。</li> 
-    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; Settings\Holographic</b>，然後刪除 "DisableSpeechInput"。 注意：您必須針對已使用 Windows Mixed Reality 之電腦上的每個使用者帳戶，刪除 HHKEY_CURRENT_USER 中的登錄專案。</li> 
+    <li><b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore&gt; 設定 \Holographic</b>，然後刪除 "DisableSpeechInput"。 注意：您必須針對已使用 Windows Mixed Reality 之電腦上的每個使用者帳戶，刪除 HHKEY_CURRENT_USER 中的登錄專案。</li> 
     <li><b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\PerceptionSimulationExtensions</b>，然後刪除「DeviceID」和「模式」。</li> 
     <li><b>HKEY_CURRENT_USER\Software\Microsoft\Windows\CurrentVersion\Holographic</b>，然後刪除 "OnDeviceLearningCompleted"。</li> 
    </ul>
@@ -137,10 +137,10 @@ Windows Mixed Reality 也提供下列語言版本，不需要語音命令或聽�
    <li> <b>HKEY_LOCAL_MACHINE\Software\Microsoft\Windows\CurrentVersion\HoloSI</b></li> 
    <li> <b>HKEY_CURRENT_USER\Software\Microsoft\Speech_OneCore\Settings\HolographicPreferences</b></li><br/></ul>
 5. 關閉登錄編輯程式。
-6. 移至 **C:\Users\user name\appdata\local\packages\ Microsoft.Windows.HolographicFirstRun_cw5n1h2txyewy \localstate** 並刪除「RoomBounds.js開啟」。 針對已使用 Windows Mixed Reality 的每個使用者重複此步驟。
+6.前往 **C:\Users\user name\AppData\Local\Packages\Microsoft. Windows。HolographicFirstRun_cw5n1h2txyewy \LocalState** 並刪除「RoomBounds.js開啟」。 針對已使用 Windows Mixed Reality 的每個使用者重複此步驟。
 7. 開啟系統管理員命令提示字元，並移至 **C:\ProgramData\WindowsHolographicDevices\SpatialStore\HoloLensSensors**。 刪除 "HeadTracking data" 資料夾的內容 (但不) 資料夾本身。
-8. 在 [搜尋方塊] 中輸入 "powershell"，以滑鼠右鍵按一下 [Windows PowerShell]，然後選取 [以系統管理員身分執行]。
-9. 在 Windows PowerShell： <ul>
+8.在 [搜尋方塊] 中輸入 "powershell"，以滑鼠右鍵按一下 [Windows PowerShell]，然後選取 [以系統管理員身分執行]。
+9.在 Windows PowerShell： <ul>
    <li>在命令提示字元中，複製並貼上 <b>Dism/Online/Get-Capabilities</b>，然後按 enter。</b></li> 
    <li>複製以類比........ Desktop 開頭的功能身分識別。 如果不存在，則不會安裝專案，而且您可以跳到步驟 10) 。</li> 
    <li>複製並貼上下列命令提示字元，然後按 Enter： <b>Dism/Online/Remove-Capability/CapabilityName：在最後一個步驟中複製的功能身分識別</b></li>

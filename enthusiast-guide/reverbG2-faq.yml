@@ -8,12 +8,12 @@ metadata:
   keywords: Windows Mixed Reality, Mixed Reality, Virtual Reality, VR, MR, Troubleshoot, Errors, Help, Support, Performance
   appliesto:
   - Windows 10
-  ms.openlocfilehash: a15a29f36d4ad053f9f76016239c94365695d7c3
-  ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+  ms.openlocfilehash: 73c4761a35e679bccc8430ae7860aef71f015f25946ee709393980cf5f064148
+  ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
   ms.translationtype: MT
   ms.contentlocale: zh-TW
-  ms.lasthandoff: 05/19/2021
-  ms.locfileid: "110143261"
+  ms.lasthandoff: 08/05/2021
+  ms.locfileid: "115219932"
 title: HP 的回音，常見問題
 summary: ''
 sections:
@@ -25,7 +25,7 @@ sections:
       HP 建議：
 
 
-      - 先將6計量纜線連接到耳機，再連接到電腦或電源供應器。
+      - 先連線6計量線連接到耳機，再連接到電腦或電源供應器。
 
       - 初始安裝之後，請將6計量線連接到耳機。
 
@@ -58,7 +58,7 @@ sections:
   - question: >
       當我使用麥克風進行某些應用程式時，其他人會看到我的聲音，或是音訊正在剪切
     answer: >
-      當 Windows 電腦第一次辨識出 HP 的「回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定的預期。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」的應用程式範例包括 Skype、縮放、小組和 Cisco WebEx，但並非所有的 VR 社交或廣播應用程式都有這項功能。
+      當 Windows PC 第一次辨識 HP 的「回音」 G2 麥克風時，輸入磁片區層級會自動設為100%。 由於 G2's 高品質的麥克風，因此輸入敏感度遠高於預設的 Windows 10 設定的預期。 建議您設定從50% 開始的迴響 G2 麥克風輸入層級，並從該處擴大。 最佳設定是使用者專屬的設定，特別是在使用沒有「自動取得」麥克風設定的應用程式時。 具有「自動增益」 Skype、縮放、Teams 和 Cisco WebEx 的應用程式範例，但並非所有的 VR 社交或廣播應用程式都有這項功能。
   - question: >
       混合實境入口指出「此耳機上無法執行混合的現實」，但這在先前的 WMR 耳機中運作正常
     answer: >
@@ -84,7 +84,7 @@ sections:
   - question: >
       我的 SteamVR 遊戲似乎無法正常搭配我的 HP 運動控制器運作
     answer: >
-      雖然開發人員致力於更新其遊戲以進行 HP 運動控制器相容性，但我們為串流上許多最受歡迎的遊戲提供了自訂控制器系結。 使用 "Windows Mixed Reality for SteamVR" 完全更新至版本1.2.444 時，應會在遊戲執行時自動挑選這些系結。 但是，如果您的遊戲目前似乎沒有註冊您的動作，您可以使用 [SteamVR 設定] 功能表手動搜尋自訂系結設定檔。
+      雖然開發人員致力於更新其遊戲以進行 HP 運動控制器相容性，但我們為串流上許多最受歡迎的遊戲提供了自訂控制器系結。 使用 "Windows Mixed Reality for SteamVR" 完全更新至版本1.2.444 時，應會在遊戲執行時自動挑選這些系結。 但是，如果您的遊戲目前似乎沒有註冊您的動作，您可以使用 [SteamVR 設定] 功能表，手動搜尋自訂系結設定檔。
 
       作法
 
@@ -115,6 +115,6 @@ sections:
   - question: >
       「回音」 G2 顯示器的影像較小，而且只在左上方
     answer: >-
-      如果您有 AMD 電源 GPU，則必須停用自動消除倍增。 當您的耳機連線時，流覽至 [設定]-> 混合現實-> 耳機-> 解析度。
+      如果您有 AMD 電源 GPU，則必須停用自動消除倍增。 當您的耳機連接時，請流覽至設定 > 混合現實-> 耳機-> 解析度。
 
       在下拉式功能表中，選取 [4320 x 2160 (最佳品質) ] 選項。 選取 [自動消除倍增 (最佳效能) ] 時，您可能會遇到顯示的問題。

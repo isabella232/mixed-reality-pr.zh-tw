@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 400212d80833f5d8dfbb3c5265c755ed2e127131
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bf77d976c9c894e6cf455a3a6b0e0c538912af2a9e8f8e2c7e847ba6e4657140
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113177000"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222760"
 ---
 # <a name="input-animation-file-format"></a>輸入動畫檔案格式
 

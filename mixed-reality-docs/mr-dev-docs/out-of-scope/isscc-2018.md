@@ -1,23 +1,23 @@
 ---
 title: 深度相機白皮書-ISSCC 2018
-description: 技術白皮書討論在 Project Kinect for Azure 和下一版 HoloLens 中使用的深度相機。
+description: 技術白皮書討論要在 Azure Project Kinect 和下一版 HoloLens 中使用的深度相機。
 author: mattzmsft
 ms.author: mazeller
 ms.date: 7/5/2018
 ms.topic: article
 keywords: 活動、iscc、電腦視覺、研究、kinect、hololens、深度、tof
-ms.openlocfilehash: b692f9deeb7768e57ab6161b2c356a6610f18ed9
-ms.sourcegitcommit: 09599b4034be825e4536eeb9566968afd021d5f3
+ms.openlocfilehash: b2d8107dcbe9c2b23ba05cd660e207b69334ad5917041304bcad5ddb578e56eb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/03/2020
-ms.locfileid: "91683013"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219832"
 ---
 # <a name="depth-camera-whitepaper---isscc-2018"></a>深度相機白皮書-ISSCC 2018
 
 **標題：** 1MPIXEL 65Nm BSI 320MHZ Demodulated TOF 映射感應器與3.5 μμ Global 快門圖元和類比分類收納
 
-**參與者：** Cyrus S Bamji、Swati Mehta、Barry Thompson、Tamer Elkhatib、Stefan Wurster、Onur Akkaya、Andrew Payne、John Godbaz、Mike Fenton、Vijay Rajasekaran、Larry Prather、Satya Nagaraja、Vishali Mogallapu、來雪、Rich McCauley、Mustansir Mukadam、Iskender Agi、Shaun McCarthy、Zhanping Xu、Travis Perry、William Qian、Vei Chan、Prabhu Adepu、Gazi Muneeb、Ahmed Aditya、Mukherjee Sheethal、Nayak Dave、Gampell Sunil、Acharya Lou、Kordus O'Connor、、
+**參與者：** Cyrus S Bamji、Swati Mehta、Barry Thompson、Tamer Elkhatib、Stefan Wurster、Onur Akkaya、Andrew Payne、John Godbaz、Mike Fenton、Vijay Rajasekaran、Larry Prather、Satya Nagaraja、Vishali Mogallapu、來雪、Rich McCauley、Mustansir Mukadam、Iskender Agi、Shaun McCarthy、Zhanping Xu、Travis Perry、William Qian、Chan Prabhu Vei-Han、Adepu Gazi、Muneeb Ahmed、Aditya Mukherjee、Sheethal Nayak、Dave Gampell、Sunil Acharya、Lou Kordus、O'Connor、Pat
 
 **顯示于 ISSCC 2018，並以 ISSCC 技術白皮書，2018年2月的形式發行。**
 

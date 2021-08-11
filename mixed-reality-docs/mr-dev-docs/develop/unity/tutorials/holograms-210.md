@@ -1,24 +1,24 @@
 ---
 title: HoloLens (第1代) 輸入 210-注視
-description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解注視概念的詳細資料。
+description: 遵循此程式碼逐步解說使用 Unity、Visual Studio 和 HoloLens 來瞭解注視概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
-keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、注視、HoloLens、Mixed Reality 學院、unity、Mixed reality 耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 7598e6f6822c86fa34ac526fbe7468d535f7fba7
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、注視、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
+ms.openlocfilehash: e0d761c6292502f381618f8efa1bed9d26f0e6fbac8dbdafa8085e0bb41676ce
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269964"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220968"
 ---
 # <a name="hololens-1st-gen-input-210-gaze"></a>HoloLens (第1代) 輸入210：注視
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
-[注視](../../../design/gaze-and-commit.md) 是輸入的第一種形式，會顯示使用者的意圖和認知。 MR 輸入 210 (也稱為 Project Explorer) 是 Windows Mixed Reality 的注視相關概念深入探討。 我們會將內容感知新增至游標和全像投影，以充分利用您的應用程式對使用者的注視有何認識。
+[注視](../../../design/gaze-and-commit.md) 是輸入的第一種形式，會顯示使用者的意圖和認知。 MR 輸入 210 (也稱為 Project Explorer) 是 Windows Mixed Reality 相關的注視相關概念的深入探討。 我們會將內容感知新增至游標和全像投影，以充分利用您的應用程式對使用者的注視有何認識。
 
 >[!VIDEO https://www.youtube.com/embed/yKAttGduVp0]
 
@@ -58,7 +58,7 @@ ms.locfileid: "106269964"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-210-Gaze)取得。
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
@@ -72,7 +72,7 @@ ms.locfileid: "106269964"
 
 * 最佳化 Unity 以用於 HoloLens 開發。
 * 匯入資產並設定場景。
-* 查看 HoloLens 中的太空人。
+* 在 HoloLens 中查看太空人。
 
 ### <a name="instructions"></a>指示
 
@@ -81,33 +81,33 @@ ms.locfileid: "106269964"
 3. 將專案命名為 **ModelExplorer**。
 4. 輸入 [位置] 作為先前未封存的 [ **注視** ] 資料夾。
 5. 確定專案已設定為 **3D**。
-6. 按一下 [ **建立專案**]。
+6. 按一下 [**建立] Project**。
 
 ### <a name="unity-settings-for-hololens"></a>HoloLens 的 Unity 設定
 
 我們需要讓 Unity 知道我們想要匯出的應用程式應該建立一個 [沉浸式視圖](../../../design/app-views.md) ，而不是2d 視圖。 做法是將 HoloLens 新增為虛擬實境裝置。
 
-1. 移至 **> Player 的 [編輯 > 專案設定**]。
-2. 在 [播放程式設定] 的 [偵測 **器] 面板** 中，選取 [ **Windows Store** ] 圖示。
+1. 移至 [**編輯] > Project 設定 > 播放機**。
+2. 在播放程式設定的 [偵測 **器] 面板** 中，選取 **Windows 存放區** 圖示。
 3. 展開 [XR 設定] 群組。
 4. 在 [轉譯] 區段中核取 [支援虛擬實境] 核取方塊，以新增 [虛擬實境 SDK] 清單。
 5. 確認 **Windows Mixed Reality** 出現在清單中。 如果沒有，請選取 **+** 清單底部的按鈕，然後選擇 [ **Windows** 全像]。
 
 接下來，我們需要將腳本後端設定為 .NET。
 
-1. 移至 **> Player 的 [編輯] > 專案設定** (您可能仍已從上一個步驟) 。
-2. 在 [播放程式設定] 的 [偵測 **器] 面板** 中，選取 [ **Windows Store** ] 圖示。
-3. 在 [**其他設定**] 設定區段中，確定 [**腳本後端**] 設定為 [ **.net** ]
+1. 移至 [**編輯] > Project 設定 > Player** (您可能仍已從上一個步驟) 完成此操作。
+2. 在播放程式設定的 [偵測 **器] 面板** 中，選取 **Windows 存放區** 圖示。
+3. 在 [**其他設定** 設定] 區段中，確定 [**腳本後端**] 設定為 [ **.net** ]
 
-最後，我們會更新品質設定，以在 HoloLens 上達成更快速的效能。
+最後，我們會更新品質設定，以達到 HoloLens 的快速效能。
 
-1. 移至 [ **編輯 > 專案設定 > 品質**]。
-2. 按一下 [Windows 市集中] 圖示底下 **預設** 資料列中的向下箭號。
-3. 針對 **Windows Store 應用程式** 選取 [**非常低**]。
+1. 移至 [**編輯] > Project 設定 > 品質**]。
+2. 按一下 Windows 儲存區圖示底下 **預設** 資料列中的向下箭號。
+3. 針對 **Windows Store 應用程式** 選取 [**低**]。
 
 ### <a name="import-project-assets"></a>匯入專案資產
 
-1. 以滑鼠右鍵按一下 [**專案**] 面板中的 [**資產**] 資料夾。
+1. 以滑鼠右鍵按一下 **Project** 面板中的 [**資產**] 資料夾。
 2. 按一下 [匯 **入封裝 > 自訂套件**]。
 3. 流覽至您所下載的專案檔，然後按一下 [ **ModelExplorer unitypackage**]。
 4. 按一下 [開啟]。
@@ -119,14 +119,14 @@ ms.locfileid: "106269964"
 2. 在 **HoloToolkit** 資料夾中，開啟 **輸入** 資料夾，然後開啟 **Prefabs** 資料夾。
 3. 將 **MixedRealityCameraParent** 預製專案從 **Prefabs** 資料夾拖 **放到階層中。**
 4. 以滑鼠右鍵按一下階層中的 **方向燈** ，然後選取 [ **刪除**]。
-5. 在 [全像 **] 資料夾中**，將下列資產拖放到 **階層的根目錄中：**
+5. 在 [**全像投影**] 資料夾中，將下列資產拖放到階層的根目錄 **中：**
     * **AstroMan**
     * **光線**
     * **SpaceAudioSource**
     * **SpaceBackground**
 6. 啟動 **播放模式** ▶以查看太空人。
 7. 按一下 [ **播放模式▶]** 以 **停止**。
-8. 在 [全像 **] 資料夾中**，尋找 **Fitbox** 資產，然後將它拖曳到 **階層的根目錄。**
+8. 在 [**全像投影**] 資料夾中，尋找 **Fitbox** 資產，然後將它拖曳到階層 **的根目錄。**
 9. **在 [階層] 面板中** 選取 **Fitbox** 。
 10. 將 **AstroMan** 集合從階層拖曳 **至 [** 偵測 **器**] 面板中 Fitbox 的 [**全息圖集合**] 屬性。
 
@@ -138,10 +138,10 @@ ms.locfileid: "106269964"
 
 ### <a name="build-the-project"></a>建置專案
 
-1. 在 Unity 中，選取 [ **File > Build Settings**]。
+1. 在 Unity 中，選取 [ **File > Build 設定**]。
 2. 按一下 [ **新增開啟場景** ] 以加入場景。
 3. 在 [**平臺**] 清單中選取 **通用 Windows 平臺**，然後按一下 [**切換平臺**]。
-4. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
+4. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設為 **HoloLens**。 否則，請將它保留在 **任何裝置** 上。
 5. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
 6. 按一下 [建置]。
 7. 建立名為 "App" 的 **新資料夾** 。
@@ -153,12 +153,12 @@ ms.locfileid: "106269964"
 1. 開啟 **應用程式** 資料夾。
 2. 開啟 **ModelExplorer Visual Studio 方案**。
 
-如果要部署到 HoloLens：
+如果部署至 HoloLens：
 
 1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
 2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+3. 輸入 **您的 HoloLens 裝置 IP 位址**，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 **設定 > 網路 & 網際網路 > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將[它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 5. 部署應用程式之後，請使用 **選取手勢** 來關閉 **Fitbox** 。
 
 如果部署到沉浸式耳機：
@@ -236,7 +236,7 @@ void IFocusable.OnFocusExit()
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-1. 同樣地，建立專案並部署到 HoloLens。
+1. 同樣地，建立專案並部署至 HoloLens。
 2. 觀察當注視的目標物件和不是時，會發生什麼事。
 
 ## <a name="chapter-3---targeting-techniques"></a>第3章-目標技術
@@ -278,7 +278,7 @@ void IFocusable.OnFocusExit()
 3. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
 4. 在功能表中，輸入搜尋方塊 **方向指標**。 選取搜尋結果。
 5. **在 [階層] 面板中**，將資料 **指標** 物件拖放至偵測 **器** 中的資料 **指標** 屬性。
-6. 在 [**專案**] 面板的 [全像 **] 資料夾中**，將 **DirectionalIndicator** 資產拖放到偵測 **器** 的 **方向指標** 屬性。
+6. 在 [ **Project** ] 面板的 [**全像投影**] 資料夾中，將 **DirectionalIndicator** 資產拖放到偵測 **器** 中的 **方向指標** 屬性。
 7. 建立並部署應用程式。
 8. 觀賞方向指標物件如何協助您尋找太空人。
 
@@ -339,13 +339,13 @@ if (interactibleAction != null)
 
 **InteractibleAction** 與 **Interactible** 配對的腳本會在您點擊全像影像時執行自訂動作。 在此情況下，我們將特別針對標記使用一個。
 
-* 在 [ **腳本** ] 資料夾中，按一下 [ **TagalongAction** ] 資產以在 Visual Studio 中開啟。
+* 在 [**腳本**] 資料夾中，按一下 [ **TagalongAction** ] 資產以在 Visual Studio 中開啟。
 * 完成程式碼撰寫練習，或將其變更為：
   * 在階層 **頂端的搜尋列中，輸入** **ChestButton_Center** 並選取結果。
   * 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
   * 在功能表中，輸入搜尋方塊 **Tagalong 動作**。 選取搜尋結果。
-  * 在 [全像 **] 資料夾中** 尋找 **Tagalong** 資產。
-  * 選取階層中的 **ChestButton_Center** 物件 **。** 將 **TagAlong** 物件從 **專案** 面板拖放到偵測 **器** 的 [ **要 TagAlong 的物件** ] 屬性中。
+  * 在 **全像投影**] 資料夾中尋找 **Tagalong** 資產。
+  * 選取階層中的 **ChestButton_Center** 物件 **。** 將 **TagAlong** 物件從 **Project** 面板拖放到偵測 **器** 上的 [**要 TagAlong 的物件**] 屬性。
   * 將 **Tagalong 動作** 物件從偵測 **器** 拖曳到 **Interactible** 腳本的 **Interactible 動作** 欄位中。
 * 按兩下 **TagalongAction** 腳本，在 Visual Studio 中開啟它。
 

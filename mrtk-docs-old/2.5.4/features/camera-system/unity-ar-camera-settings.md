@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、AR 攝影機、
-ms.openlocfilehash: bd808a3457fc2632fd8da9c12309fc57ebb6df73
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: e915db26d615246c70c26c7efa8c90fba763dfee3925f9e688b188060bd0cac9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683071"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221824"
 ---
 # <a name="unity-ar-camera-settings-provider"></a>Unity AR 相機設定提供者
 

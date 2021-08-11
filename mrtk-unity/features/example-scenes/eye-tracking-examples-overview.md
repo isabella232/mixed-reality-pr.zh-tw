@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 4cdeaa10725e00ac1a041c3692d64c1bd6488854
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: 32ae64a470572dda71578948d5091887bea9e0e084d97ede7f2f14af596b5a6b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113175543"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223210"
 ---
 # <a name="eye-tracking-examples-overview"></a>目視追蹤範例總覽
 
@@ -65,7 +65,7 @@ Imagine 您正在閱讀有關遠處顯示器或電子讀者的部分資訊，而
 
 ## <a name="setting-up-the-mrtk-eye-tracking-samples"></a>設定 MRTK 眼追蹤範例
 
-### <a name="prerequisites"></a>Prerequisites
+### <a name="prerequisites"></a>必要條件
 
 請注意，在裝置上使用眼睛追蹤範例需要 HoloLens 2，以及使用套件 package.appxmanifest 上的「注視輸入」功能建立的範例應用程式套件。
 

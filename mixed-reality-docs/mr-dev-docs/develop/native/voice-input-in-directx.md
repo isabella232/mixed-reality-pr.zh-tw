@@ -6,19 +6,19 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: 逐步解說、語音命令、片語、辨識、語音、directx、平臺、cortana、windows mixed reality
-ms.openlocfilehash: 5f7ed587b474d147c0b13e4896a89f655f8dc30b
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e30d5c2101bed4b613111b6131a3e94d654c3ff5b1e913f4d8e275ffc1a2776a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583748"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221838"
 ---
 # <a name="voice-input-in-directx"></a>DirectX 中的語音輸入
 
 > [!NOTE]
 > 本文與舊版 WinRT 原生 Api 相關。  針對新的原生應用程式專案，建議使用 **[OPENXR API](openxr-getting-started.md)**。
 
-本文說明如何在 Windows Mixed Reality 的 DirectX 應用程式中，執行 [語音命令](../../design/voice-input.md) 加上小型片語和句子辨識。
+本文說明如何在 Windows Mixed Reality 的 DirectX 應用程式中，執行[語音命令](../../design/voice-input.md)加上小型片語和句子辨識。
 
 >[!NOTE]
 >本文中的程式碼片段使用 c + +/CX，而不是 C + + 17 相容的 c + +/WinRT，它會用於 [c + + 全像專案範本](creating-a-holographic-directx-project.md)。  這些概念對 c + +/WinRT 專案而言是相等的，但您需要轉譯程式碼。
@@ -284,7 +284,7 @@ catch (Exception^ exception)
 
 ## <a name="use-continuous-recognition"></a>使用連續辨識
 
-如需持續聽寫的案例，請參閱 [WINDOWS 10 UWP 語音程式碼範例](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)。
+如需持續聽寫的案例，請參閱[Windows 10 UWP 語音程式碼範例](https://github.com/Microsoft/Windows-universal-samples/blob/master/Samples/SpeechRecognitionAndSynthesis/cpp/Scenario_ContinuousDictation.xaml.cpp)。
 
 ## <a name="handle-quality-degradation"></a>處理品質降低
 

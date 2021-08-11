@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、SceneTransition、
-ms.openlocfilehash: 546facf53abe38e62176e32e9fb79728e6536d1b
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: a1db05143808224186757c63a9554d50c72875e4cbb7ab8a4f1ec2c4338f963b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104685481"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115222770"
 ---
 # <a name="scene-transition-service"></a>場景轉換服務
 

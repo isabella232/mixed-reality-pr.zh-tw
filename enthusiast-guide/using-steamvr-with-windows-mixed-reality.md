@@ -3,12 +3,12 @@ title: 使用 SteamVR 搭配 Windows Mixed Reality
 description: 瞭解如何在使用相容電腦的 Windows Mixed Reality 耳機和控制器上設定及播放 SteamVR 遊戲。
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: 0d79b0c2079875b32387d616e77c5f497ab4aa59
-ms.sourcegitcommit: c65759b8d6465b6b13925cacab5af74443f7e6bd
+ms.openlocfilehash: 42459f9b8d661bd01ce489460c5293333034612bc59becccf3d35e0ce506fddb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/15/2021
-ms.locfileid: "112110141"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221374"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
 
@@ -16,9 +16,9 @@ ms.locfileid: "112110141"
 
 ## <a name="get-your-pc-ready"></a>讓您的電腦準備就緒
 
-* 確定您沒有任何擱置中的更新：選取 [ **開始 > 設定] > 更新 & 安全性 > Windows Update**。 如果有可用的更新，請選取 [ **立即安裝**]。 如果沒有可用的更新，請選取 [ **檢查更新**]，然後安裝任何新的更新。
+* 確定您沒有任何擱置中的更新：選取 [**開始] > 設定 > 更新 & 安全性] > Windows Update**。 如果有可用的更新，請選取 [ **立即安裝**]。 如果沒有可用的更新，請選取 [ **檢查更新**]，然後安裝任何新的更新。
 * 電腦需求會因流上的應用程式和內容而有所不同。 查看每個標題的最低需求。 具有 GTX 1070 圖形配接器 (或對等) 的電腦，以及 Intel® Core™ i7 處理器都應為廣泛的標題提供良好的體驗。
-* 設定 [Windows Mixed Reality](set-up-windows-mixed-reality.md) （如果您尚未安裝）。 
+* 設定[Windows Mixed Reality](set-up-windows-mixed-reality.md) （如果您尚未安裝）。 
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr"></a>設定 SteamVR 的 Windows Mixed Reality
 
@@ -29,7 +29,7 @@ ms.locfileid: "112110141"
 > 1. 安裝 [串流](http://store.steampowered.com/about/) 和 **登** 入，或 **建立新的帳戶。**
 > 2. 安裝 [SteamVR](https://store.steampowered.com/app/250820/SteamVR/)。 當您的耳機插入電源時，啟動串流，您應該會看到一個對話方塊，提示您安裝 SteamVR。 依照對話方塊上的提示進行安裝。
     * 如果您沒有看到快顯視窗，請流覽至 *媒體* 櫃的 [*工具*] 區段來安裝 SteamVR。 在清單中找出 SteamVR，然後以滑鼠右鍵按一下並選取 [ *安裝遊戲*]。
-> 3. 安裝 [適用于 SteamVR 的 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)。
+> 3. 安裝[適用于 SteamVR 的 Windows Mixed Reality](https://store.steampowered.com/app/719950/Windows_Mixed_Reality_for_SteamVR/)。
 
 ## <a name="set-up-windows-mixed-reality-for-steamvr-in-an-environment-without-internet-access"></a>在沒有網際網路存取的環境中設定 SteamVR 的 Windows Mixed Reality
 
@@ -50,7 +50,7 @@ ms.locfileid: "112110141"
 chdir "C:\SteamVRInstall"
 .\SteamVR\bin\win64\vrpathreg.exe adddriver "C:\SteamVRInstall\MixedRealityVRDriver"
 ```
- (請注意，如果您執行的是32位版本的 Windows，則 `win64` 應該改為使用上述路徑的部分 `win32` 。 ) 
+ (請注意，如果您執行的是32位版本的 Windows， `win64` 則應該改用上述路徑的部分 `win32` 。 ) 
 
 這可讓執行時間在您的自訂安裝中尋找 SteamVR 驅動程式的 Windows Mixed Reality。
 
@@ -60,7 +60,7 @@ chdir "C:\SteamVRInstall"
 
 ## <a name="play-steamvr-games"></a>Play SteamVR 遊戲
 
-1. 將您的耳機連接到您的電腦，然後開啟您的動作控制器。
+1. 連線您的耳機帶到您的電腦，然後開啟您的動作控制器。
 2. 一旦載入 Windows Mixed Reality 首頁，並顯示您的控制器，請在您的桌面上開啟串流應用程式。
 3. 使用流應用程式從您的串流庫啟動 SteamVR 遊戲。
 
@@ -94,7 +94,7 @@ SteamVR 的 Windows Mixed Reality 是您從串流存放區安裝的元件，可�
 若要加入：
 
   1. 在 [流] 中，使用 [連結 **庫** ] 功能表底下的下拉式清單來篩選 **軟體**。
-  2. 在清單中，以滑鼠右鍵按一下 **SteamVR 的 [Windows Mixed Reality** ]，然後選取 [ **屬性**]。
+  2. 在清單中，以滑鼠右鍵按一下 **SteamVR 的 [Windows Mixed Reality** ]，然後選取 [**屬性**]。
   3. 選取 [ **Beta** ] 索引標籤。
   4. 選擇 **[Beta-public Beta]** ，然後選取 [ **關閉** ] 以確認。 [Beta 存取程式碼] 欄位應該保留空白。
   
@@ -111,27 +111,27 @@ SteamVR 是由閥門建立和發行，而且在所有 SteamVR 耳機都很常見
 
 ### <a name="windows-insider-program"></a>Windows 測試人員計畫
 
-Windows Mixed Reality 是 Windows 10 的一部分。  許多影響 SteamVR 使用者的修正和功能都隨附于 Windows 作業系統。  如果您想要試用最新的 Windows 10 preview 組建，建議您加入 [Windows 測試人員計畫](https://insider.windows.com)。
+Windows Mixed Reality 是 Windows 10 的一部分。  許多影響 SteamVR 使用者的修正和功能都會隨附 Windows 作業系統。  如果您想要試用最新的 Windows 10 preview 組建，建議您加入[Windows 測試人員計畫](https://insider.windows.com)。
 
 ## <a name="enabling-motion-reprojection-for-steamvr-apps"></a>啟用 SteamVR Apps 的動作 reprojection
 
 SteamVR 的 Windows Mixed Reality 具有實驗性動作 reprojection 功能，可讓 90 FPS reprojection 更順暢。
 
-啟用 [動作] reprojection 時，所有的串流 VR 遊戲都會以1/2 畫面播放速率轉譯名義上 (45 fps，而非 90 FPS) ，而 Windows Mixed Reality for SteamVR 會使用 GPU 所產生的動態向量來推斷下一個畫面格。 針對在指定的電腦上可靠地達到 60 FPS + 的 SteamVR 遊戲，這應該會產生具有偶爾構件的穩固 90 FPS 體驗，同時維持舒適的體驗。
+啟用 [動作] reprojection 時，所有的串流 VR 遊戲都會以1/2 畫面播放速率轉譯名義上 (45 fps，而非 90 fps) ，而 Windows Mixed Reality for SteamVR 會使用 GPU 所產生的動態向量來推斷下一個畫面格。 針對在指定的電腦上可靠地達到 60 FPS + 的 SteamVR 遊戲，這應該會產生具有偶爾構件的穩固 90 FPS 體驗，同時維持舒適的體驗。
 
 可用的動作 reprojection 模式如下所示：
 
-* **SteamVR 每個應用程式的設定**：可讓您透過 STEAMVR 設定 UI 控制動作 reprojection。 然後，您可以開啟 [SteamVR 設定]、移至 [影片] > Per-Application 影片設定]，然後選取 [動作平滑] 的選項。
+* **SteamVR 每個應用程式的設定**：可讓您透過 SteamVR 設定 UI 控制 reprojection 動作。 然後，您可以開啟 SteamVR 設定、前往 [影片] > Per-Application Video 設定，然後選取 [動作平滑] 的選項。
 * **Auto**：讓運動 reprojection 在遊戲轉譯太慢時自動開啟，以維護 90 FPS。 當遊戲開始維護 90 FPS 或在低於 45 FPS 的時候開始轉譯時，移動 reprojection 將會關閉。 非同步旋轉 reprojection 一律為啟用狀態。
 * **動作向量**：強制應用程式一律以具有動作向量 reprojection 的半畫面播放速率執行。
 * **None**：停用運動 reprojection。
 
-**預期的視覺構件** 
+**預期的 Visual Artifacts** 
 
 1. 使用大於150% 的應用程式解析時，您可能會遇到模糊的情況。 使用移動 reprojection 時，建議使用小於150% 的值。
 2. 清晰對比度的邊緣或文字（特別是在遊戲 HUDs 或功能表上）可能會因為 disocclusion 而暫時扭曲或失真。
 3. SteamVR 家用及許多其他不可靠地在您的電腦上達到 50-60 FPS 的遊戲，將會繼續在此模式下使用不佳的體驗。
-4. 某些遊戲已回報為以50% 速度執行，或延遲)  (延遲增加。 請透過下列 [Windows 意見反應中樞](filing-feedback.md) 指示來報告這些遊戲。
+4. 某些遊戲已回報為以50% 速度執行，或延遲)  (延遲增加。 請透過下列[Windows 意見反應中樞](filing-feedback.md)指示來報告這些遊戲。
 
 一開始，我們會對最新世代的 NVidia Gpu 進行實驗性支援。 我們會持續在更多 Gpu 上反復查看和改善我們的運動 reprojection 支援，並積極聆聽您的意見反應。
 
@@ -141,7 +141,7 @@ SteamVR 的 Windows Mixed Reality 具有實驗性動作 reprojection 功能，�
 
 1. 請確定您已使用上述指示加入宣告 **SteamVR Beta 的 Windows Mixed Reality** 。
 2. 開啟 SteamVR 儀表板。
-3. 選取左邊的按鈕，並使用 Windows Mixed Reality 標誌來開啟 [SteamVR] 設定 **Windows Mixed Reality** 。
+3. 選取左邊的按鈕，以 Windows Mixed Reality 標誌開啟 **Windows Mixed Reality 的 SteamVR** 設定。
 4. 在彈出的 UI 中，選取 [圖形] 索引標籤。
 5. 選取 [預設 SteamVR 應用程式動作 reprojection 模式] 的 [自動]，以啟用自動動作 reprojection。
 
@@ -165,7 +165,7 @@ Red = 動作 reprojection 是關閉的，因為應用程式的執行速度低於
 
 ## <a name="sharing-feedback-on-steamvr"></a>SteamVR 上的分享意見反應
 
-在改善 Windows Mixed Reality SteamVR 體驗時，您的意見反應非常寶貴。 透過 [Windows 意見反應中樞](filing-feedback.md)提交所有意見反應和 bug。 請遵循下列建議，以協助我們充分利用您的意見反應：
+在改善 Windows Mixed Reality SteamVR 體驗時，您的意見反應非常寶貴。 透過[Windows 意見反應中樞](filing-feedback.md)提交所有意見反應和 bug。 請遵循下列建議，以協助我們充分利用您的意見反應：
 
 1. 在意見反應中樞中，表示您回報的是「這是哪一種意見反應？」的新問題。 區段。
 2. 選取 **混合現實** 類別和 **應用程式** 子類別。

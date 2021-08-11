@@ -7,12 +7,12 @@ ms.date: 04/13/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, 混合實境, 偵錯, 部署
-ms.openlocfilehash: 5510646c058f683babff5e9e34dd296f88cd06c3
-ms.sourcegitcommit: b4bdac2c4d7315902712ce74fd909fb8383d4bfd
+ms.openlocfilehash: 43abf7b512d6b01695e2c953df821a608359918c461614e3f94710b57f241db0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110543224"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221127"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>使用 Visual Studio 來部署和偵錯
 
@@ -37,7 +37,7 @@ ms.locfileid: "110543224"
 3. 選取 [設定]  磚，在您的環境中啟動應用程式。
 4. 選取 [更新]  功能表項目。
 5. 選取 [適用於開發人員]  功能表項目。
-6. 啟用 [ **使用開發人員功能** ]，將應用程式從 Visual Studio 部署到 HoloLens。 如果您的裝置正在執行 Windows 全像21H1 版或更新版本，也可以啟用 **裝置探索**。
+6. 啟用 [**使用開發人員功能**]，將應用程式從 Visual Studio 部署至您的 HoloLens。 如果您的裝置正在執行 Windows 全像21H1 版或更新版本，則也會啟用 **裝置探索**。
 7. 選擇性：向下捲動而且啟用 [裝置入口網站]，可讓您從網頁瀏覽器連線到您 HoloLens 上的 [Windows 裝置入口網站](using-the-windows-device-portal.md)。
 
 ### <a name="windows-pc"></a>Windows PC
@@ -57,7 +57,7 @@ ms.locfileid: "110543224"
     * 針對所有其他專案，選擇 [**發行**]
 
 > [!NOTE]
-> 您可以在 [匯出和建立 Visual Studio 方案](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution)中，找到每個編譯選項的完整定義。
+> 您可以在[匯出和建立 Visual Studio 方案](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution)中，找到每個編譯選項的完整定義。
 
 2. 根據您的裝置選取組建設定
 
@@ -73,7 +73,7 @@ ms.locfileid: "110543224"
 > 如果 [遠端連線] 對話方塊未出現在 c # 專案中，您可以從 [ **屬性] > Debug**] 手動開啟。
 
 1. 在 [位址]  或 [電腦名稱]  欄位中，輸入您裝置的 IP 位址。 
-    * 您可以在 HoloLens 下的 [**設定] > Network & Internet > Advanced Options** 中找到 IP 位址
+    * 您可以在 HoloLens **設定 > Network & Internet > Advanced Options** 下的找到 IP 位址
     * 我們一律建議以手動方式輸入您的 IP 位址，而不是根據自動偵測到的功能。
 
 2. 將 **驗證模式** 設定為 **通用 (未加密的通訊協定)**
@@ -99,7 +99,7 @@ ms.locfileid: "110543224"
     * 針對所有其他專案，選擇 [**發行**]
 
 > [!NOTE]
-> 您可以在 [匯出和建立 Visual Studio 方案](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution)中，找到每個編譯選項的完整定義。
+> 您可以在[匯出和建立 Visual Studio 方案](../unity/exporting-and-building-a-unity-visual-studio-solution.md#building-and-deploying-a-unity-visual-studio-solution)中，找到每個編譯選項的完整定義。
 
 2. 根據您的裝置選取組建設定
 
@@ -120,9 +120,9 @@ ms.locfileid: "110543224"
 > [!NOTE]
 > 如果您在透過 USB 部署應用程式時看到相當長的延遲時間，建議您在上一節中使用 [遠端電腦的指示](#deploying-a-hololens-app-over-wi-fi) 。
 
-## <a name="deploying-an-app-to-the-hololens-emulator"></a>將應用程式部署到 HoloLens 模擬器
+## <a name="deploying-an-app-to-the-hololens-emulator"></a>將應用程式部署至 HoloLens Emulator
 
-1. 請確定您已 **[安裝 HoloLens 2 或 HoloLens (第1代) 模擬器](../install-the-tools.md#installation-checklist)**
+1. 請確定您已 **[安裝 HoloLens 2 或 HoloLens (第一代) Emulator](../install-the-tools.md#installation-checklist)**
 2. 根據您的裝置選取組建設定和模擬器
 
 [!INCLUDE[](includes/vs-wifi-hl-include.md)]

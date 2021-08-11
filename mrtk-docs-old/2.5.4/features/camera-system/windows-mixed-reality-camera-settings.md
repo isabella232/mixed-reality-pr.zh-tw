@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、攝影機、
-ms.openlocfilehash: a5d261d7ccadcd47b1697dd78f74013a343d1bbc
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: aa0e02f60d6da233893aeea462156f2ac216c37ee58be6f809b86aa59662cc19
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104683061"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115221802"
 ---
 # <a name="windows-mixed-reality-camera-settings-provider"></a>Windows Mixed Reality 相機設定提供者
 
@@ -24,15 +24,15 @@ Windows Mixed Reality 相機設定提供者會決定裝置的類型，應用程�
 
     ![MRTK 設定的場景階層](../images/MRTK_ConfiguredHierarchy.png)
 
-2. 將 [偵測器] 面板移至 [相機系統] 區段，然後展開 [ **相機設定提供者** ] 區段。
+2. 將 [偵測器] 面板移至 [相機系統] 區段，然後展開 [**相機設定提供者**] 區段。
 
     ![展開設定提供者](../images/camera-system/ExpandProviders.png)
 
-3. 按一下 [新增 **相機設定提供者** ]，並展開新加入的 **新相機設定** 專案。
+3. 按一下 [新增 **相機設定提供者**]，並展開新加入的 **新相機設定** 專案。
 
     ![展開新的設定提供者](../images/camera-system/ExpandNewProvider.png)
 
-4. 選取 Windows Mixed Reality 相機設定提供者
+4. 選取 Windows Mixed Reality 攝影機設定提供者
 
     ![選取 Windows Mixed Reality 設定提供者](../images/camera-system/SelectWindowsMixedRealitySettings.png)
 

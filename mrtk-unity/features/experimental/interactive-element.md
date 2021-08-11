@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 02/22/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、Interactive 元素、互動
-ms.openlocfilehash: 65f518c53414d68d3a9d2093cb427140cc65560b
-ms.sourcegitcommit: c0ba7d7bb57bb5dda65ee9019229b68c2ee7c267
+ms.openlocfilehash: 6d8f36c4780844e991eb32943645402503fab8340c6843dbb607f1c11033d912
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110144764"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115220358"
 ---
 # <a name="interactive-element-experimental"></a>Interactive 元素 [實驗性]
 
@@ -33,7 +33,7 @@ MRTK 輸入系統的簡化集中進入點。 包含狀態管理方法、事件�
 - [預設值](#default-state) 
 
 近和遠的互動核心狀態：
-- [重點](#focus-state) 
+- [焦點](#focus-state) 
 
 近距離互動核心狀態：
 
@@ -580,7 +580,7 @@ myNewStateEvents.OnStateOn.AddListener(() =>
 
 ## <a name="animatable-properties"></a>Animatable 屬性
 
-Animatable 屬性的主要目的是簡化動畫剪輯主要畫面格的設定。  如果使用者熟悉 Unity 動畫系統，而且想要在產生的動畫剪輯上直接設定主要畫面格，則可以直接將 Animatable 屬性加入至目標物件，並在 Unity 的動畫視窗中開啟剪輯， (Windows > 動畫 > 動畫) 。 
+Animatable 屬性的主要目的是簡化動畫剪輯主要畫面格的設定。  如果使用者熟悉 Unity 動畫系統，而且想要在產生的動畫剪輯上直接設定主要畫面格，則它們只可以將 Animatable 屬性加入至目標物件，並在 Unity 的動畫視窗中開啟剪輯， (Windows > 動畫 > 動畫) 。 
 
 如果使用動畫的 Animatable 屬性，則曲線類型會設定為 EaseInOut。
 

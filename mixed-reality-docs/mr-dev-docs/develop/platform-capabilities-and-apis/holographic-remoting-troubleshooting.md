@@ -5,13 +5,13 @@ author: florianbagarmicrosoft
 ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
-keywords: Windows Mixed Reality，全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、疑難排解、說明、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 429ca7364d82e1713af059aa3c6da01852283120
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+keywords: Windows Mixed Reality，全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、疑難排解、說明、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
+ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583829"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115223568"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>全像遠端處理疑難排解
 
@@ -30,11 +30,11 @@ ms.locfileid: "98583829"
 
 ## <a name="h265-video-codec-not-available"></a>H265 視頻編碼器無法使用
 
-在遠端應用程式中使用 H265 video 編解碼器時，請安裝 [HEVC 影片擴充](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7) 功能。 如果您遇到已安裝但無法使用編解碼器的問題，請參閱 [疑難排解](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) 指南。
+在遠端應用程式中使用 H265 Video 編解碼器時，請安裝[HEVC 視訊延伸模組](https://www.microsoft.com/p/hevc-video-extensions/9nmzlz57r3t7)。 如果您遇到已安裝但無法使用編解碼器的問題，請參閱 [疑難排解](/azure/remote-rendering/resources/troubleshoot#h265-codec-not-available) 指南。
 
 ## <a name="limitations"></a>限制
 
-下列 Api 目前 **不** 支援使用全像 HoloLens 2 的全像的遠端處理，除非另有說明，否則會引發 ```ERROR_NOT_SUPPORTED``` 錯誤：
+下列 api 目前 **不** 支援使用全像 HoloLens 2 的全像的遠端處理，除非另有說明，否則會引發 ```ERROR_NOT_SUPPORTED``` 錯誤：
 
 [Windows.Graphics.Holographic](/uwp/api/windows.graphics.holographic)
 
@@ -105,7 +105,7 @@ ms.locfileid: "98583829"
 
 ## <a name="see-also"></a>另請參閱
 * [全像遠端版本歷程記錄](holographic-remoting-version-history.md)
-* [使用 Windows Mixed Reality Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
+* [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)

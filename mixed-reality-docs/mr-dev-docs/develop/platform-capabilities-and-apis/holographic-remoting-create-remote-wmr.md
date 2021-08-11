@@ -6,23 +6,23 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、NuGet
-ms.openlocfilehash: 6884c2679b155c36a21bcf89352524e4957a9f20
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 0d8f7149533de7f3f095761b13feeb91c319cda711c99b9101a13300a591fc2c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810087"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115219212"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-holographicspace-api"></a>使用 HolographicSpace API 撰寫全像遠端執行遠端應用程式
 
 >[!IMPORTANT]
->本檔說明如何使用 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)建立 HoloLens 2 的遠端應用程式。 **HoloLens (第1代)** 的遠端應用程式必須使用 NuGet 套件1.x 版。 這表示針對 HoloLens 2 撰寫的遠端應用程式不相容于 HoloLens 1，反之亦然。 您可以在 [這裡](add-holographic-remoting.md)找到 HoloLens 1 的檔。
+>本檔說明如何使用[HolographicSpace API](../native/getting-a-holographicspace.md)建立 HoloLens 2 的遠端應用程式。 **HoloLens (第1代)** 的遠端應用程式必須使用 NuGet 套件1.x 版。 這表示針對 HoloLens 2 撰寫的遠端應用程式與 HoloLens 1 不相容，反之亦然。 您可以在[這裡](add-holographic-remoting.md)找到 HoloLens 1 的檔。
 
-全像的遠端處理應用程式可以將遠端轉譯的內容串流至 HoloLens 2 並 Windows Mixed Reality 沉浸式耳機。 您也可以存取更多的系統資源，並將遠端 [沉浸式觀點](../../design/app-views.md) 整合到現有的桌上型電腦軟體。 遠端應用程式會從 HoloLens 2 接收輸入資料流程、在虛擬沉浸式視圖中轉譯內容，並將內容框架串流回 HoloLens 2。 連接是使用標準 Wi-fi 進行的。 在桌面或 UWP 應用程式中，會透過 NuGet 封包新增全像的遠端處理。 需要額外的程式碼，以處理連接並以沉浸式視圖呈現。 一般的遠端連線的延遲將會降到50毫秒。 播放程式應用程式可以即時報告延遲時間。
+全像的遠端處理應用程式可以將遠端轉譯的內容串流至 HoloLens 2 並 Windows Mixed Reality 沉浸式耳機。 您也可以存取更多的系統資源，並將遠端 [沉浸式觀點](../../design/app-views.md) 整合到現有的桌上型電腦軟體。 遠端應用程式會從 HoloLens 2 接收輸入資料流程、在虛擬沉浸式視圖中轉譯內容，並將內容框架串流回 HoloLens 2。 連接是使用標準 Wi-fi 進行的。 在桌面或 UWP 應用程式中，透過 NuGet 封包新增了全像的遠端處理功能。 需要額外的程式碼，以處理連接並以沉浸式視圖呈現。 一般的遠端連線的延遲將會降到50毫秒。 播放程式應用程式可以即時報告延遲時間。
 
 此頁面上的所有程式碼和工作專案都可在「全像 [遠端範例」 github 存放庫](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到。
 
-## <a name="prerequisites"></a>先決條件
+## <a name="prerequisites"></a>必要條件
 
 良好的起點是以 [HOLOGRAPHICSPACE API](../native/getting-a-holographicspace.md)為目標的可運作 DirectX 型桌面或 UWP 應用程式。 如需詳細資訊，請參閱 [DirectX 開發總覽](../native/directx-development-overview.md)。 [C + + 全息版專案範本](../native/creating-a-holographic-directx-project.md)是不錯的起點。
 
@@ -31,18 +31,18 @@ ms.locfileid: "98810087"
 
 
 
-## <a name="get-the-holographic-remoting-nuget-package"></a>取得全像 Remoting NuGet 套件
+## <a name="get-the-holographic-remoting-nuget-package"></a>取得全像 NuGet 套件的全像遠端
 
 若要將 NuGet 套件新增至 Visual Studio 中的專案，必須執行下列步驟。
 1. 在 Visual Studio 中開啟專案。
-2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 套件 ...** ]
+2. 以滑鼠右鍵按一下專案節點，然後選取 [**管理 NuGet 封裝**.。。
 3. 在出現的面板中，選取 **[流覽]** ，然後搜尋「全像的遠端處理」。
 4. 選取 [ **Microsoft**]，並確定 **挑選最新** 的2.x 版，然後選取 [ **安裝**]。
 5. 如果出現 [ **預覽** ] 對話方塊，請選取 **[確定]**。
 6. 當 [授權合約] 對話方塊出現時，選取 [ **我接受** ]。
 
 >[!NOTE]
->2.x **版的** NuGet 套件仍可供想要以 HoloLens 1 為目標的開發人員使用。 如需詳細資訊，請參閱新增全像 [遠端 (HoloLens (第1代) # B3 ](add-holographic-remoting.md)。
+>NuGet 套件的 **1.x 版仍** 適用于想要以 HoloLens 1 為目標的開發人員。 如需詳細資訊，請參閱[HoloLens (第一代) ) 新增全像遠端 (](add-holographic-remoting.md)。
 
 ## <a name="create-the-remote-context"></a>建立遠端內容
 
@@ -79,7 +79,7 @@ CreateRemoteContext(m_remoteContext, 20000, false, PreferredVideoCodec::Default)
 m_holographicSpace = winrt::Windows::Graphics::Holographic::HolographicSpace::CreateForCoreWindow(nullptr);
 ```
 
-## <a name="connect-to-the-device"></a>連接到裝置
+## <a name="connect-to-the-device"></a>連線至裝置
 
 當遠端應用程式準備好轉譯內容時，可建立與播放機裝置的連線。
 
@@ -104,7 +104,7 @@ catch(winrt::hresult_error& e)
 >如同任何 c + +/WinRT API， ```Connect``` 可能會擲回需要處理的 WinRT：： hresult_error。
 
 >[!TIP]
->若要避免使用 [c + +/WinRT](/windows/uwp/cpp-and-winrt-apis/) 語言投射， ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` 可以包含位於全像「遠端處理 NuGet」套件內的檔案。 它包含基礎 COM 介面的宣告。 不過，我們建議使用 c + +/WinRT。
+>若要避免使用[c + +/WinRT](/windows/uwp/cpp-and-winrt-apis/)語言投射， ```build\native\include\<windows sdk version>\abi\Microsoft.Holographic.AppRemoting.h``` 可以包含位於全像「遠端 NuGet 套件內的檔案。 它包含基礎 COM 介面的宣告。 不過，我們建議使用 c + +/WinRT。
 
 您可以藉由呼叫方法來接聽遠端應用程式上的連入連線 ```Listen``` 。 交握埠和傳輸埠都可以在此呼叫期間指定。 交握埠用於初始交握。 然後，資料會透過傳輸埠來傳送。 預設會使用 **8265** 和 **8266** 。
 
@@ -120,7 +120,7 @@ catch(winrt::hresult_error& e)
 ```
 
 >[!IMPORTANT]
->NuGet 套件內的包含適用于全像全像攝影的 ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` API 的詳細檔。
+>NuGet 套件內的會包含由全像全像的應用 ```build\native\include\HolographicAppRemoting\Microsoft.Holographic.AppRemoting.idl``` 程式所公開之 API 的詳細檔。
 
 ## <a name="handling-remoting-specific-events"></a>處理遠端處理特定事件
 
