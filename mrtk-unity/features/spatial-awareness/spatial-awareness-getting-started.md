@@ -5,12 +5,12 @@ author: davidkline-ms
 ms.author: davidkl
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: 46bb78bc4e2574fd4da14f19edf52624b7b301c2
-ms.sourcegitcommit: f338b1f121a10577bcce08a174e462cdc86d5874
+ms.openlocfilehash: bbe5b923ea7da965424e7fac98adca180c6f91d0c9b4c4ca7a0477e301c362f9
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/01/2021
-ms.locfileid: "113176714"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204320"
 ---
 # <a name="spatial-awareness-getting-started"></a>空間感知入門
 
@@ -37,9 +37,9 @@ ms.locfileid: "113176714"
 
 | 設定檔 | 預設啟用的系統 |
 | --- | --- |
-| `DefaultHoloLens1ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens1)  | False |
-| `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2)  | False |
-| `DefaultMixedRealityToolkitConfigurationProfile` (資產/MRTK/SDK/設定檔)  | True |
+| `DefaultHoloLens1ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens1)  | 否 |
+| `DefaultHoloLens2ConfigurationProfile` (資產/MRTK/SDK/設定檔/HoloLens2)  | 否 |
+| `DefaultMixedRealityToolkitConfigurationProfile` (資產/MRTK/SDK/設定檔)  | 是 |
 
 1. 在場景階層中選取要在 [偵測器] 面板中開啟的 MixedRealityToolkit 物件。
 

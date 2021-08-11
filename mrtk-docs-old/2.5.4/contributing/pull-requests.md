@@ -5,22 +5,22 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、PR、
-ms.openlocfilehash: c49934139ae23b714addcb9c015e95377f47900e
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: 0e2018236458a4f1df9945ac3bc243a733e20b869aeb5adf1d69c8628ef9467c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104693715"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204380"
 ---
 # <a name="pull-requests"></a>提取要求
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 如果您之前尚未參與 Microsoft 專案，系統可能會要求您簽署 [投稿授權合約](https://cla.microsoft.com/)。
 PR 中的批註可讓您知道您的做法。
 
 > [!IMPORTANT]
-> 如果您是 Microsoft 員工，而且不是 [GitHub 上的 microsoft 組織](https://github.com/Microsoft)成員，請在您開始提取要求之前，先造訪 [Microsoft 的開放原始](https://opensource.microsoft.com/) 碼，在公司網路上連結您的 microsoft 與 GitHub 帳戶。 您必須事先進行一些處理。
+> 如果您是 microsoft 員工，而且不是[microsoft 組織的 GitHub](https://github.com/Microsoft)的成員，請在公司網路上造訪[開放原始碼以](https://opensource.microsoft.com/)連結 microsoft 和 GitHub 帳戶，然後再開始您的提取要求。 您必須事先進行一些處理。
 
 ## <a name="creating-a-pull-request"></a>建立提取要求
 

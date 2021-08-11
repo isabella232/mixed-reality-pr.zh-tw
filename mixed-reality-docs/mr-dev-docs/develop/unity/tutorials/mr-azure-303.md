@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，混合的現實，學術，unity，教學課程，api，語言理解智慧服務，luis，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 663ac44dbf15ce2db63d7ffe0ecc605d3555857f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 443b5f2c186fbbb0a3e979b48ccc20b4c3d3b4f0bd9c93950e27e1f86d610c07
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730555"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218002"
 ---
 # <a name="hololens-1st-gen-and-azure-303-natural-language-understanding-luis"></a>HoloLens (第1代) 和 Azure 303：自然語言理解 (LUIS) 
 
@@ -36,7 +36,7 @@ ms.locfileid: "104730555"
 
 開發過程中會建立應用程式，讓使用者能夠使用語音和/或注視來變更場景中物件的大小和色彩。 將不會涵蓋移動控制器的使用。
 
-在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何整合 Azure 服務與您的 Unity 專案。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。
+在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何將 Azure 服務與 Unity Project 整合。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。
 
 準備訓練 LUIS 數次，其涵蓋于第 [12 章](#chapter-12--improving-your-luis-service)。 LUIS 定型的次數愈多，您將會得到更好的結果。
 
@@ -51,9 +51,9 @@ ms.locfileid: "104730555"
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更的注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
+> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
@@ -72,7 +72,7 @@ ms.locfileid: "104730555"
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。 
-2.  若要允許您的電腦啟用聽寫，請移至 [ **Windows 設定] > 隱私權 > 語音]、筆墨 & 輸入** ，然後按下按鈕 **開啟語音服務和輸入建議**。
+2.  若要允許您的電腦啟用聽寫，請移至 **Windows 設定 > 隱私權 > 語音]、筆墨 & 輸入**，然後按下按鈕 **開啟語音服務和輸入建議**。
 3.  本教學課程中的程式碼可讓您從電腦上的 **預設麥克風裝置** 集錄製。 請確定預設的麥克風裝置已設定為您想要用來捕捉聲音的裝置。
 4.  如果您的耳機有內建的麥克風，請在 *混合實境入口* 設定中，確定已開啟 [*當我磨損耳機、切換到耳機 mic]* 選項。
 
@@ -317,7 +317,7 @@ change the color of this object to blue
 
     ![開始新的 Unity 專案。](images/AzureLabs-Lab3-24.png)
 
-2.  您現在將需要提供 Unity 專案名稱、插入 **MR_LUIS**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  您現在將需要提供 Unity Project 名稱、插入 **MR_LUIS**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![提供新 Unity 專案的詳細資料。](images/AzureLabs-Lab3-25.png)
  
@@ -325,11 +325,11 @@ change the color of this object to blue
 
     ![更新腳本編輯器喜好設定。](images/AzureLabs-Lab3-26.png)
  
-4.  接著，移至 [檔案 **> 組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移至 [檔案 **> 建立設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
 
-    ![[組建設定] 視窗，將平臺切換至 UWP。](images/AzureLabs-Lab3-27.png)
+    ![建立設定視窗、將平臺切換至 UWP。](images/AzureLabs-Lab3-27.png)
  
-5.  移至 [檔案 **> 組建設定** ]，並確定：
+5.  移至 [檔案 **> 組建設定** 並確定：
 
     1. **目標裝置** 已設定為 **任何裝置**
 
@@ -353,15 +353,15 @@ change the color of this object to blue
 
             ![提供新場景的名稱。](images/AzureLabs-Lab3-30.png)
 
-    7. [ *組建設定*] 中的其餘設定，現在應該保持為預設值。
+    7. [*組建設定*] 中的其餘設定，現在應該保持為預設值。
 
-6. 在 [ *組建設定* ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
+6. 在 [*組建設定*] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。 
 
     ![開啟 [播放玩家設定]。](images/AzureLabs-Lab3-31.png) 
  
 7. 在此面板中，需要驗證幾個設定：
 
-    1. 在 [ **其他設定** ] 索引標籤中：
+    1. 在 [**其他設定**] 索引標籤中：
 
         1. **腳本執行階段版本** 應該是 **穩定** 的 ( .net 3.5 對等) 。
         2. **腳本後端** 應該是 **.net**
@@ -369,20 +369,20 @@ change the color of this object to blue
 
             ![更新其他設定。](images/AzureLabs-Lab3-32.png)
       
-    2. 在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2. 在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         1. **InternetClient**
         2. **麥克風**
 
             ![正在更新發行設定。](images/AzureLabs-Lab3-33.png)
 
-    3. 在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3. 接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
         ![更新 X R 設定。](images/AzureLabs-Lab3-34.png)
 
-8.  回到 *組建設定*： _Unity c #_ 專案不再呈現灰色;勾選此方塊旁邊的核取方塊。 
+8.  回到 *組建設定* _Unity c #_ 專案不再呈現灰色;勾選此方塊旁邊的核取方塊。 
 9.  關閉 [建置設定] 視窗。
-10. 將場景和專案儲存 (檔 **> 儲存場景/檔案 > 儲存專案**) 。
+10. 儲存場景並 Project (檔 **> 儲存場景/檔案 > 儲存專案**) 。
 
 ## <a name="chapter-4--create-the-scene"></a>第4章-建立場景
 
@@ -482,7 +482,7 @@ change the color of this object to blue
 
 若要建立此類別： 
 
-1.  在 [ *專案] 面板* 中按一下滑鼠右鍵， **建立 > 資料夾**。 呼叫資料夾 **腳本**。 
+1.  在 *Project 面板* 中按一下滑鼠右鍵，**建立 > 資料夾**。 呼叫資料夾 **腳本**。 
 
     ![建立腳本資料夾。](images/AzureLabs-Lab3-40.png)
  
@@ -1028,11 +1028,11 @@ change the color of this object to blue
 若要建立：
 
 1.  按一下 [檔案] **> 儲存**]，以儲存目前的場景。
-2.  移至 [檔案 **> 組建設定**]。
+2.  移至 [檔案 **> 組建] 設定**。
 3.  勾選稱為「 **Unity c # 專案** 」的方塊 (在建立 UWP 專案之後，用來查看和偵錯工具代碼。
 4.  按一下 [ **新增開啟的場景**]，然後按一下 [ **建立**]。
 
-    ![[組建設定] 視窗](images/AzureLabs-Lab3-43.png)
+    ![組建設定視窗](images/AzureLabs-Lab3-43.png)
 
 4.  系統會提示您選取要在其中建立解決方案的資料夾。 
 
@@ -1051,8 +1051,8 @@ change the color of this object to blue
 3.  在 [ **方案** 設定] 中選取 [ **Debug**]。
 
     > 在 Microsoft HoloLens 中，您可能會發現將此設定為 *遠端電腦* 較容易，因此不會行動網卡到您的電腦。 不過，您也必須執行下列動作：
-    > - 知道您 HoloLens 的 **IP 位址** ，您可以在 *設定 > 網路 & 網際網路 > Wi-Fi > Advanced 選項* 中找到此位址;IPv4 是您應該使用的位址。 
-    > - 確定已 **開啟****開發人員模式**;在 [設定] 中找到 *> 為開發人員更新 & 安全性 >*。
+    > - 知道您 HoloLens 的 **IP 位址**，您可以在 *設定 > 網路 & Internet > Wi-Fi > Advanced 選項* 中找到此位址;IPv4 是您應該使用的位址。 
+    > - 確定已 **開啟****開發人員模式**;*設定 > 為開發人員更新 & 安全性 >*。
 
     ![部署應用程式](images/AzureLabs-Lab3-46.png)
  
@@ -1111,10 +1111,10 @@ change the color of this object to blue
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 在使用此應用程式時，您可能會注意到，如果您看著 Floor 物件，並要求變更其色彩，則會這樣做。 您是否可以用來避免應用程式變更地面色彩？
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 嘗試擴充 LUIS 和應用程式功能，為場景中的物件新增額外的功能;例如，根據使用者顯示的內容，在注視的位置建立新的物件，然後透過現有的命令，將這些物件與目前的場景物件一起使用。

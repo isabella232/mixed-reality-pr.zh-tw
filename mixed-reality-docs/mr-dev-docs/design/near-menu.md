@@ -6,12 +6,12 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、功能表、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: ecee6182d64ab1c843a9948984565d49ae313923
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: ab035c195824d987b397676e946633734b0f1af6a983bada4ea9145ff7d07b1e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600167"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201762"
 ---
 # <a name="near-menu"></a>近端功能表
 

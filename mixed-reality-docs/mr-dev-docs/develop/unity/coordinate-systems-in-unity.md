@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 座標系統、空間座標系統、僅限方向、固定大小、固定規模、會議室規模、世界規模、360度、卡上、站上、房間、世界、縮放、位置、方向、Unity、錨定、空間錨點、世界錨點、全球鎖定、世界鎖定、內文鎖定、內文鎖定、追蹤損失、locatability、界限、recenter、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 91b1adf6dcf1c54d0d29a02bfb97ac4674a87c88
-ms.sourcegitcommit: 3e36b2fbbcc250c49aaf8ca1b6133cf0e9db69fa
+ms.openlocfilehash: 3372b9bd259202145fd658e225a36d2125f4a86d01eb90bc765b65918540db8b
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/16/2021
-ms.locfileid: "107528742"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203580"
 ---
 # <a name="coordinate-systems-in-unity"></a>Unity 中的座標系統
 
@@ -90,7 +90,7 @@ if (UnityEngine.Experimental.XR.Boundary.TryGetGeometry(vertices, Boundary.Type.
 **命名空間：** *UnityEngine. XR*<br>
 **類型：** *WorldAnchor*
 
-若要在 HoloLens 上讓使用者穿梭超過5個度量的真實 **世界規模體驗** ，您將需要新的技術，而不是用於會議室規模的體驗。 您將使用的一項重要技巧是建立 [空間錨點](../../design/coordinate-systems.md#spatial-anchors) ，以在實體世界中精確地鎖定大量的全像位置，而不論使用者漫遊的程度為何，然後 [在後續的會話中再次找出這些影像](../../design/coordinate-systems.md#spatial-anchor-persistence)。
+若要取得 HoloLens 的真實 **世界規模體驗**，讓使用者穿梭超過5個計量，您將需要新的技術，而不是用於房間規模的體驗。 您將使用的一項重要技巧是建立 [空間錨點](../../design/coordinate-systems.md#spatial-anchors) ，以在實體世界中精確地鎖定大量的全像位置，而不論使用者漫遊的程度為何，然後 [在後續的會話中再次找出這些影像](../../design/coordinate-systems.md#spatial-anchor-persistence)。
 
 在 Unity 中，您可以藉由將 **WorldAnchor** Unity 元件新增至 GameObject 來建立空間錨點。
 
@@ -163,7 +163,7 @@ Anchor_OnTrackingChanged(anchor, anchor.isLocated);
 
 ## <a name="sharing-anchors-across-devices"></a>跨裝置共用錨點
 
-使用 <a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a> ，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可在多個 HoloLens、IOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
+使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>，從本機 WorldAnchor 建立持久的雲端錨點，讓您的應用程式可在多個 HoloLens、iOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。  這可提供即時共用體驗。
 
 若要開始在 Unity 中建立共用體驗，請嘗試5分鐘的 <a href="/azure/spatial-anchors/unity-overview" target="_blank">Azure 空間錨點 Unity 快速入門</a>。
 

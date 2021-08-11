@@ -6,18 +6,18 @@ ms.author: dongpark
 ms.date: 11/01/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、ui、ux、著色器、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、視覺效果
-ms.openlocfilehash: 9a60c5065ddb5bcf410bb43b318575da50f7ccf8
-ms.sourcegitcommit: 9ae76b339968f035c703d9c1fe57ddecb33198e3
+ms.openlocfilehash: dcedd7ef0f41de2cbbad623a192abda63588b5691407397db229ef7796e6926e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/27/2021
-ms.locfileid: "110600177"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207390"
 ---
 # <a name="shader"></a>著色器
 
 ![著色器](images/UX_Hero_StandardShader.jpg)
 
-因為全像真實環境中的實體物件會混合使用，所以請務必提供視覺提示給使用者。 混合現實工具組標準著色器提供各種類型的視覺效果，以用於全像影像。 陰影系統使用單一、彈性的著色器來達成類似 Unity 標準著色器的視覺效果。 著色器會在混合現實裝置上實行 [Fluent Design 系統準則](https://www.microsoft.com/design/fluent/#/) 並維持效能。
+因為全像真實環境中的實體物件會混合使用，所以請務必提供視覺提示給使用者。 混合現實工具組標準著色器提供各種類型的視覺效果，以用於全像影像。 陰影系統使用單一、彈性的著色器來達成類似 Unity 標準著色器的視覺效果。 著色器會實[Fluent Design 系統準則](https://www.microsoft.com/design/fluent/#/)，並在混合現實裝置上維持效能。
 <br>
 
 ## <a name="examples-of-visual-effects-using-mrtk-mixed-reality-toolkit-standard-shader"></a>使用 MRTK (混合現實工具組的視覺效果範例) 標準著色器 

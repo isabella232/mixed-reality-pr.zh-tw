@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，mixed reality，學術，unity，教學課程，api，通知，函式，資料表，通知中樞，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 8fef7fe2da76e228264037ca51daa57662fbc554
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 01d096297a9fbe25d39b2846acd2ee89b50edcfd26456f3f20ccd2c9bc26b514
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730585"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115205365"
 ---
 # <a name="hololens-1st-gen-and-azure-308-cross-device-notifications"></a>HoloLens (第1代) 和 Azure 308：跨裝置通知
 
@@ -30,7 +30,7 @@ ms.locfileid: "104730585"
 
 **Azure Functions** 是一項 Microsoft 服務，可讓開發人員在 Azure 中執行一小段程式碼，也就是「函數」。 這可提供將工作委派給雲端的方法，而不是您的本機應用程式，這可能有許多優點。 **Azure Functions** 支援數種開發語言，包括 C \# 、F \# 、Node.js、JAVA 和 PHP。 如需詳細資訊，請造訪 **Azure Functions** [頁面](/azure/azure-functions/functions-overview)。
 
-**Azure 資料表** 是一項 Microsoft 雲端服務，可讓開發人員將結構化的非 SQL 資料儲存在雲端中，方便隨處存取。 此服務具有無架構設計，可讓您視需要進行資料表演進，因此非常有彈性。 如需詳細資訊，請造訪 **Azure 資料表**[頁面](/azure/cosmos-db/table-storage-overview)
+**Azure 資料表** 是一項 Microsoft 雲端服務，可讓開發人員將結構化的非 SQL 資料儲存在雲端中，讓它可輕鬆地隨處存取。 此服務具有無架構設計，可讓您視需要進行資料表演進，因此非常有彈性。 如需詳細資訊，請造訪 **Azure 資料表**[頁面](/azure/cosmos-db/table-storage-overview)
 
 完成本課程之後，您將會有一個混合現實的沉浸式耳機應用程式，以及一個可執行下列動作的桌上型電腦應用程式：
 
@@ -42,7 +42,7 @@ ms.locfileid: "104730585"
 
 4. 當收到通知（其中包含物件識別碼、類型和轉換資訊）時，mixed reality 應用程式會將接收到的資訊套用至本身的場景。
 
-在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何整合 Azure 服務與您的 Unity 專案。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。 本課程是獨立的教學課程，不會直接牽涉到任何其他混合的現實實驗室。
+在您的應用程式中，您可以自行決定如何將結果與您的設計整合。 本課程旨在告訴您如何將 Azure 服務與 Unity Project 整合。 您的工作是使用您在本課程中所得到的知識，來增強您的混合現實應用程式。 本課程是獨立的教學課程，不會直接牽涉到任何其他混合的現實實驗室。
 
 ## <a name="device-support"></a>裝置支援
 
@@ -55,9 +55,9 @@ ms.locfileid: "104730585"
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更的注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
+> 雖然本課程主要著重于 Windows Mixed Reality 沉浸式 (VR) 耳機，您也可以將在本課程中學到的內容套用至 Microsoft HoloLens。 當您依照課程的指示進行時，您將會看到有關您可能需要採用以支援 HoloLens 的任何變更注意事項。 使用 HoloLens 時，您可能會注意到語音捕捉期間的一些回應。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和撰寫的指示，代表在撰寫 (可能是 2018) 時經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you'll find in newer software than what's listed below.
@@ -105,7 +105,7 @@ ms.locfileid: "104730585"
 
     > [!WARNING] 
     > 您必須使用您的 Microsoft 帳戶登入。  
-    > 這 **必須** 是您在上一 [章](#chapter-1---create-an-application-on-the-microsoft-developer-portal)中使用的 Microsoft 帳戶，以及 Windows Store 開發人員入口網站。
+    > 這 **必須** 是您在上一 [章](#chapter-1---create-an-application-on-the-microsoft-developer-portal)中使用的 Microsoft 帳戶，以及 Windows 存放區開發人員入口網站。
 
 2.  您會在 [ **我的應用程式** ] 區段下找到您的應用程式。 找到之後，請按一下該頁面，您會進入新的頁面，其中包含應用程式名稱加上 **註冊**。
 
@@ -179,12 +179,12 @@ ms.locfileid: "104730585"
 
 1.  如果還沒有登入，請登入 [Azure 入口網站](https://portal.azure.com)。
 
-2.  登入後，按一下左上角的 [ **新增** ]，並搜尋 [ **儲存體帳戶**]，然後按一下 [ **輸入**]。
+2.  登入後，按一下左上角的 [**新增**]，並搜尋 **儲存體帳戶**，然後按一下 [**輸入**]。
 
     > [!NOTE] 
     > 在較新的入口網站中，「**新增**」這個字可能已取代為 _ * 建立資源 * *。
 
-3.  從清單中選取 [ **儲存體帳戶]-blob、檔案、資料表、佇列** 。
+3.  從清單中選取 **儲存體帳戶-blob、檔案、資料表、佇列**。
 
     ![搜尋儲存體帳戶](images/AzureLabs-Lab8-13.png)
 
@@ -198,7 +198,7 @@ ms.locfileid: "104730585"
 
     2. 若為 **部署模型**，請按一下 [ **Resource manager**]。
 
-    3.  針對 **帳戶類型**，使用下拉式功能表選取 **[儲存體 (一般用途 v1)**。
+    3.  For **Account kind**, using the dropdown menu, select **Storage (general purpose v1)**.
 
     4. 選取適當的 **位置**。
     
@@ -216,7 +216,7 @@ ms.locfileid: "104730585"
 
     10. 如果這是您可以選擇的選項，請將 **虛擬網路** 保留為 **已停用** 。
 
-    11. 按一下頁面底部的 [新增]  。
+    11. 按一下 [建立]。
 
         ![填入儲存體詳細資料](images/AzureLabs-Lab8-15.png)
 
@@ -266,11 +266,11 @@ ms.locfileid: "104730585"
     >
     >   ![尋找訂用帳戶](images/AzureLabs-Lab8-22-5.png)
 
-4.  將會顯示您的 Azure 雲端服務。 尋找 **儲存體帳戶** ，然後按一下左邊的箭號以展開您的帳戶。
+4.  將會顯示您的 Azure 雲端服務。 尋找 **儲存體帳戶**，然後按一下左邊的箭號展開您的帳戶。
 
     ![開啟儲存體帳戶](images/AzureLabs-Lab8-23.png)
 
-5.  展開之後，您就可以使用新建立的 **儲存體帳戶** 。 按一下儲存體左邊的箭號，然後展開 [尋找 **資料表** ]，然後按一下旁邊的箭號，以顯示您在上一章所建立的 **資料表** 。 按兩下您的 **資料表**。
+5.  展開之後，您就可以使用新建立的 **儲存體帳戶**。 按一下儲存體左邊的箭號，然後展開 [尋找 **資料表** ]，然後按一下旁邊的箭號，以顯示您在上一章所建立的 **資料表** 。 按兩下您的 **資料表**。
 
     ![開啟場景物件資料表](images/AzureLabs-Lab8-24.png)
 
@@ -319,11 +319,11 @@ ms.locfileid: "104730585"
 
 首先，您必須建立可讓您的 Azure 函式載入所需程式庫的檔案。
 
-1.  開啟 [ **記事本** ] (按下 Windows 鍵，然後輸入 Notepad) 。
+1.  開啟 **記事本** (按 Windows 鍵，然後輸入記事本) 。
 
     ![開啟 [記事本]](images/AzureLabs-Lab8-31.png)
 
-2.  開啟 [記事本]，將下列 JSON 結構插入其中。 完成之後，請將它儲存在您的桌面上，作為 **project.js**。 命名正確是很重要的：請確定它沒有副檔名 **.txt** 。 此檔案會定義您的函式將使用的程式庫，如果您已使用 NuGet，則會很熟悉。
+2.  在記事本開啟時，將下列 JSON 結構插入其中。 完成之後，請將它儲存在您的桌面上，作為 **project.js**。 命名正確是很重要的：請確定它沒有 **.txt的** 副檔名。 此檔案會定義您的函式將使用的程式庫，如果您已使用 NuGet 它會很熟悉。
 
     ```json
     {
@@ -364,17 +364,17 @@ ms.locfileid: "104730585"
 
         > 如果您想要深入瞭解 Azure 資源群組，請遵循此 [連結，以瞭解如何管理資源群組](/azure/azure-resource-manager/resource-group-portal)。
 
-    5. 針對 **OS**，請按一下 [Windows]，因為這是所需的平臺。
+    5. 針對 **OS**，請按一下 [Windows，因為這是預期的平臺。
 
     6.  (本教學課程使用取用 **方案**，請選取 **主控方案**。
 
     7. 選取 **位置** **(選擇與您在上一個步驟中建立的儲存體相同的位置)**
 
-    8. 在 [ **儲存體** ] 區段中， **您必須選取您在上一個步驟中建立的儲存體服務**。
+    8. 在 [**儲存體**] 區段中，**您必須選取您在上一個步驟中建立的儲存體服務**。
 
     9. 您將不需要在此應用程式中 *Application Insights* ，因此請隨時將 **其保留**。
 
-    10. 按一下頁面底部的 [新增]  。
+    10. 按一下 [建立]。
 
         ![建立新的實例](images/AzureLabs-Lab8-34.png)
 
@@ -415,7 +415,7 @@ ms.locfileid: "104730585"
 
     4.  針對 [ **資料表名稱** ] 區段，您必須使用您先前用來建立 **表格** 服務的完整名稱， (包含相同的字母大小寫) 。
 
-    5.  在 [ **儲存體帳戶連接** ] 區段中，使用下拉式功能表，然後從該處選取您的儲存體帳戶。 如果不存在，請按一下區段標題旁的 **新** 超連結，以顯示您的儲存體帳戶應列在其中的另一個面板。
+    5.  在 [**儲存體帳戶連接**] 區段中，使用下拉式功能表，然後從該處選取您的儲存體帳戶。 如果不存在，請按一下區段標題旁的 **新** 超連結，以顯示您的儲存體帳戶應列在其中的另一個面板。
 
         ![新儲存體](images/AzureLabs-Lab8-40.png)
 
@@ -498,9 +498,9 @@ ms.locfileid: "104730585"
 
     ![開啟上傳面板](images/AzureLabs-Lab8-43.png)
 
-20. 面板將會從右側滑入。 在該面板中，按一下 **[上傳**]，[檔案瀏覽器] 隨即出現。
+20. 面板將會從右側滑入。 在該面板中，按一下 [ **Upload**]，[檔案瀏覽器] 隨即出現。
 
-21. 流覽至您先前在 [**記事本**] 中建立的 **project.json** file，然後按一下 [**開啟**] 按鈕。 此檔案會定義您的函式將使用的程式庫。
+21. 流覽至您在先前 **記事本** 中建立的 **project.json** 檔案，然後按一下 [**開啟**] 按鈕。 此檔案會定義您的函式將使用的程式庫。
 
     ![上傳 json](images/AzureLabs-Lab8-44.png)
 
@@ -554,7 +554,7 @@ ms.locfileid: "104730585"
 
 27. 您可能會注意到您剛剛插入的輸入參數可能不符合您的資料表和儲存體詳細資料，因此需要使用您的資訊加以更新。 請勿在 **此進行**，因為接下來會討論到。 只要按一下頁面右上角的 [ **標準編輯器** ] 連結，即可返回。
 
-28. 回到 **標準編輯器** 中，按一下 [**輸入**] 下的 [ **Azure 資料表儲存體 (資料表)**。 
+28. 回到 **標準編輯器** 中，按一下 [**輸入**] 下的 [ **Azure 資料表儲存體] (資料表)**）。 
     
     ![資料表輸入](images/AzureLabs-Lab8-47-5.png)
 
@@ -562,7 +562,7 @@ ms.locfileid: "104730585"
 
     1.  **資料表名稱**：您在 Azure 儲存體表服務內建立的資料表名稱。
 
-    2.  **儲存體帳戶連接：** 按一下 [ **新增**]，這會出現在下拉式功能表旁，而面板會顯示在視窗的右側。
+    2.  **儲存體帳戶連接：** 按一下 [**新增**]，這會出現在下拉式功能表旁，而面板會顯示在視窗的右側。
 
         ![新儲存體](images/AzureLabs-Lab8-48.png)
 
@@ -633,7 +633,7 @@ ms.locfileid: "104730585"
     > [!WARNING]
     > 如果上述測試失敗，您必須再次確認您已遵循上述步驟，尤其是 **整合面板** 內的設定。 
 
-## <a name="chapter-7---set-up-desktop-unity-project"></a>第7章-設定 Desktop Unity 專案
+## <a name="chapter-7---set-up-desktop-unity-project"></a>第7章-設定 Desktop Unity Project
 
 > [!IMPORTANT]
 > 您現在建立的桌面應用程式 **將無法** 在 Unity 編輯器中運作。 您必須在應用程式建立之後，使用 Visual Studio (或部署的應用程式) ，在編輯器之外執行它。 
@@ -643,13 +643,13 @@ ms.locfileid: "104730585"
 設定及測試您的混合現實沉浸式耳機。
 
 > [!NOTE] 
-> 在此課程中，您將 **不** 需要移動控制器。 如果您需要設定沉浸式耳機的支援，請遵循此 [連結，瞭解如何設定 Windows Mixed Reality](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality)。
+> 在此課程中，您將 **不** 需要移動控制器。 如果您需要設定沉浸式耳機的支援，請遵循此[連結，瞭解如何設定 Windows Mixed Reality](https://support.microsoft.com/help/4043101/windows-10-set-up-windows-mixed-reality)。
 
 1.  開啟 **Unity** ，然後按一下 [ **新增**]。
 
     ![新增 unity 專案](images/AzureLabs-Lab8-52.png)
 
-2.  您必須提供 Unity 專案名稱，請插入 **UnityDesktopNotifHub**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  您必須提供 Unity Project 名稱，請插入 **UnityDesktopNotifHub**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![建立專案](images/AzureLabs-Lab8-53.png)
 
@@ -657,7 +657,7 @@ ms.locfileid: "104730585"
 
     ![設定外部 VS 工具](images/AzureLabs-Lab8-54.png)
 
-4.  接下來，移 **至 [** 檔案  >  **組建設定**] 並選取 [**通用 Windows 平臺**]，然後按一下 [**切換平臺**] 按鈕以套用您的選取專案。
+4.  接著，**移至 [** 檔案  >  **組建設定** 並選取 [**通用 Windows 平臺**]，然後按一下 [**切換平臺**] 按鈕以套用您的選取專案。
 
     ![切換平臺](images/AzureLabs-Lab8-55.png)
 
@@ -689,13 +689,13 @@ ms.locfileid: "104730585"
 
             ![新增 NH_Desktop_Scene](images/AzureLabs-Lab8-58.png)
 
-    7.  [ **組建設定**] 中的其餘設定，現在應該保持為預設值。
+    7.  [**組建設定**] 中的其餘設定，現在應該保持為預設值。
 
-6.  在相同的視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。
+6.  在相同的視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。
 
 7.  在此面板中，需要驗證幾個設定：
 
-    1.  在 [ **其他設定** ] 索引標籤中：
+    1.  在 [**其他設定**] 索引標籤中：
 
         1.  **腳本執行階段版本** 應該是 **實驗 ( .Net 4.6 對等)**
 
@@ -705,38 +705,38 @@ ms.locfileid: "104730585"
 
             ![4.6 net 版本](images/AzureLabs-Lab8-59.png)
 
-    2.  在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2.  在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         - **InternetClient**
 
             ![刻度網際網路用戶端](images/AzureLabs-Lab8-60.png)
 
-8.  回到 **組建設定**： *Unity C \# 專案* 不再呈現灰色; 勾選此方塊旁邊的核取方塊。
+8.  回到 **組建設定** *Unity C \# 專案* 不再呈現灰色; 勾選此方塊旁邊的核取方塊。
 
 9.  關閉 [組建設定]  視窗。
 
-10. 儲存場景和專案 **檔**  >  **儲存場景/** 檔案  >  **儲存專案**。
+10. 儲存場景並 Project **檔** 儲存  >  **場景/** 檔案  >  **儲存 Project**。
 
     > [!IMPORTANT]
     > 如果您想要略過此專案的 *Unity 設定* 元件 (傳統型應用程式) ，並直接繼續進行程式碼，請隨意 [下載 unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-Desktop.unitypackage)，並將其匯入您的專案中做為 [**自訂套件**](https://docs.unity3d.com/Manual/AssetPackages.html)，然後繼續進行第 [9 章](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)。  您仍然需要新增腳本元件。
 
 ## <a name="chapter-8---importing-the-dlls-in-unity"></a>第8章-匯入 Unity 中的 Dll
 
-您將使用適用于 Unity (的 Azure 儲存體，其本身會利用 .Net SDK for Azure) 。 如需詳細資訊，請遵循此 [連結，瞭解 Unity 的 Azure 儲存體](/sandbox/gamedev/unity/azure-storage-unity)。
+您將使用適用于 Unity (的 Azure 儲存體，其本身會利用 .net SDK for Azure) 。 如需詳細資訊，請遵循此[連結，瞭解 Unity 的 Azure 儲存體](/sandbox/gamedev/unity/azure-storage-unity)。
 
 Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程式。 在解決 bug 之後，將不再需要這一節中的這些步驟 (4-7) 。
 
-若要將 SDK 匯入您自己的專案中，請確定您已從 GitHub 下載最新的 [**unitypackage**](https://aka.ms/azstorage-unitysdk) 。 然後執行下列動作：
+若要將 SDK 匯入您自己的專案中，請確定您已從 GitHub 下載最新的 [**. unitypackage**](https://aka.ms/azstorage-unitysdk) 。 然後執行下列動作：
 
 1.  使用 [**資產匯 \> 入封裝 \> 自訂套件**] 功能表選項，將 **unitypackage** 新增至 Unity。
 
-2.  在快顯的 [匯 **入 Unity 套件** ] 方塊中，您可以選取 [_外掛程式_ \> * 存放裝置] 下的所有專案。  取消核取其他所有專案，因為此課程不需要。
+2.  在彈出的 [匯 **入 Unity 套件**] 方塊中，您可以選取 * *_外掛程式_ \> * 儲存體 * * * 下的所有專案。  取消核取其他所有專案，因為此課程不需要。
 
     ![匯入至封裝](images/AzureLabs-Lab8-61.png)
 
 3.  按一下 [匯 ***入*** ] 按鈕，將專案新增至您的專案。
 
-4.  移至專案視圖中 [**外掛程式**] 下的 [**儲存體**] 資料夾，並 *只* 選取下列外掛程式：
+4.  移至 Project 視圖中 [**外掛程式**] 下的 [**儲存體**] 資料夾，並 *只* 選取下列外掛程式：
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -753,13 +753,13 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
     > [!NOTE] 
     > 我們會將這些特定外掛程式標示為僅用於 Unity 編輯器。 這是因為在 [WSA] 資料夾中有不同版本的相同外掛程式，在從 Unity 匯出專案之後，將會使用這些相同的外掛程式。
 
-6.  在 [ **儲存體** 外掛程式] 資料夾中，只選取：
+6.  在 **儲存體** 外掛程式] 資料夾中，只選取：
 
     -   Microsoft.Data.Services.Client
 
         ![set 不要處理 dll](images/AzureLabs-Lab8-64.png)
 
-7.  勾選 [**平臺設定**] 下的 [**不處理**] 方塊，**_然後按一下 [_** 套用]。
+7.  勾選 [**平臺設定** 下的 [**不處理**] 方塊，**_然後按一下 [_** 套用]。
 
     ![套用無處理](images/AzureLabs-Lab8-65.png)
 
@@ -782,7 +782,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
 若要建立此類別：
 
-1.  以滑鼠右鍵按一下位於 [專案] 面板中的 [**資產**] 資料夾，然後 **建立**  >  **資料夾**。 將資料夾命名為 **腳本**。
+1.  以滑鼠右鍵按一下位於 Project 面板中的 [**資產**] 資料夾，**建立**  >  **資料夾**。 將資料夾命名為 **腳本**。
 
     ![建立腳本資料夾](images/AzureLabs-Lab8-66.png)
 
@@ -959,7 +959,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
     ![將腳本新增至主要攝影機](images/AzureLabs-Lab8-71.png)
 
-## <a name="chapter-10---create-the-cloudscene-class-in-the-desktop-unity-project"></a>第10章-在 Desktop Unity 專案中建立 CloudScene 類別
+## <a name="chapter-10---create-the-cloudscene-class-in-the-desktop-unity-project"></a>第10章-在 Desktop Unity 中建立 CloudScene 類別 Project
 
 您需要建立的第二個腳本是 **CloudScene**，其負責：
 
@@ -1134,13 +1134,13 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
         > ![將雲端腳本拖曳至主要攝影機](images/AzureLabs-Lab8-75.png)
 
-## <a name="chapter-11---build-the-desktop-project-to-uwp"></a>第11章-將桌面專案建立到 UWP
+## <a name="chapter-11---build-the-desktop-project-to-uwp"></a>第11章-建立 UWP 的桌面 Project
 
 現在已完成此專案的 Unity 區段所需的所有專案。
 
 1.  流覽至 **組建設定** (**檔案**  >  **組建設定**) 。
 
-2.  從 [ **組建設定** ] 視窗中，按一下 [ **建立**]。
+2.  從 [**組建設定**] 視窗中，按一下 [**建立**]。
 
     ![組建專案](images/AzureLabs-Lab8-76.png)
 
@@ -1157,7 +1157,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 4.  下列組建之後， **檔案總管** 將會顯示新專案的位置。 但不需要開啟它，因為您需要先建立其他 Unity 專案，請前往接下來的幾章。
 
 
-## <a name="chapter-12---set-up-mixed-reality-unity-project"></a>第12章-設定混合現實 Unity 專案
+## <a name="chapter-12---set-up-mixed-reality-unity-project"></a>第12章-設定 Mixed Reality Unity Project
 
 以下是使用混合式開發進行開發的一般設定，因此，它是適用于其他專案的絕佳範本。
 
@@ -1165,7 +1165,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
     ![新增 unity 專案](images/AzureLabs-Lab8-79.png)
 
-2.  您現在將需要提供 Unity 專案名稱，請插入 **UnityMRNotifHub**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
+2.  您現在需要提供 Unity Project 名稱，請插入 **UnityMRNotifHub**。 請確定專案類型設定為 **3d**。 將 **位置** 設定為適合您 (記住，較接近根目錄的) 。 然後，按一下 [ **建立專案**]。
 
     ![名稱 UnityMRNotifHub](images/AzureLabs-Lab8-80.png)
 
@@ -1173,11 +1173,11 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
     ![將外部編輯器設定為 VS](images/AzureLabs-Lab8-81.png)
 
-4.  接下來，移 **至 [** 檔案  >  **組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 **通用 Windows 平臺**。
+4.  接下來，移 **至 [** 檔案  >  **組建設定**]，然後按一下 [**切換平臺**] 按鈕，將平臺切換至 [**通用 Windows 平臺**]。
 
     ![將平臺切換至 UWP](images/AzureLabs-Lab8-82.png)
 
-5.  移至 **檔案**  >  **組建設定**，並確定：
+5.  移至 **[** 檔案  >  **組建設定** 並確定：
 
     1.  **目標裝置** 已設定為 **任何裝置**
 
@@ -1205,15 +1205,15 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
             ![新增場景-NH_MR_Scene](images/AzureLabs-Lab8-85.png)
 
-    7.  [ **組建設定**] 中的其餘設定，現在應該保持為預設值。
+    7.  [**組建設定**] 中的其餘設定，現在應該保持為預設值。
 
-6.  在相同的視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。    
+6.  在相同的視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。    
 
     ![開啟播放機設定](images/AzureLabs-Lab8-86.png)
 
 7.  在此面板中，需要驗證幾個設定：
 
-    1.  在 [ **其他設定** ] 索引標籤中：
+    1.  在 [**其他設定**] 索引標籤中：
 
         1.  **腳本執行階段版本** 應該是 **實驗** ( .net 4.6 對等) 
         2.  **腳本後端** 應該是 **_.net_**
@@ -1221,41 +1221,41 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
             ![api 相容性](images/AzureLabs-Lab8-87.png)
 
-    2.  在面板的 [ **XR 設定**] 中，在 [設定] (找到的 [**發佈設定**]) 、[支援的滴答 **虛擬事實**]，確定已新增 **Windows Mixed Reality SDK**
+    2.  接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，並確定已新增 **Windows Mixed Reality SDK**
 
         ![更新 xr 設定](images/AzureLabs-Lab8-88.png)        
 
-    3.  在 [ **發行設定** ] 索引標籤的 [功能] 下，[ **功能**] 下：
+    3.  在 [**發行設定**] 索引標籤的 [功能] 下，[**功能**] 下：
 
         - **InternetClient**           
 
             ![刻度網際網路用戶端](images/AzureLabs-Lab8-89.png)
 
-8.  回到 **組建設定**， **Unity c # 專案** 不再呈現灰色：勾選這個旁邊的核取方塊。
+8.  回到 **Build 設定**， **Unity c # 專案** 不再呈現灰色：勾選這個旁邊的核取方塊。
 
-9.  完成這些變更後，請關閉 [組建設定] 視窗。
+9.  完成這些變更後，請關閉組建設定視窗。
 
-10. 儲存場景和專案 **檔**  >  **儲存場景/** 檔案  >  **儲存專案**。
+10. 儲存場景並 Project **檔** 儲存  >  **場景/** 檔案  >  **儲存 Project**。
 
     > [!IMPORTANT]
     > 如果您想要略過此專案的 *Unity 設定* 元件 (混合現實應用程式) ，並直接繼續進行程式碼，請隨意 [下載 unitypackage](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20308%20-%20Cross-device%20notifications/Azure-MR-308-MR.unitypackage)，並將它匯入至您的專案中做為 [**自訂套件**](https://docs.unity3d.com/Manual/AssetPackages.html)，然後繼續進行第 [14 章](#chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project)。 您仍然需要新增腳本元件。
 
-### <a name="chapter-13---importing-the-dlls-in-the-mixed-reality-unity-project"></a>第13章-匯入混合現實 Unity 專案中的 Dll
+### <a name="chapter-13---importing-the-dlls-in-the-mixed-reality-unity-project"></a>第13章-匯入混合現實 Unity 中的 Dll Project
 
-您將使用適用于 Azure) 的 .Net SDK (Azure 儲存體 for Unity library。 請遵循此 [連結，以瞭解如何搭配使用 Azure 儲存體與 Unity](/sandbox/gamedev/unity/azure-storage-unity)。
+您將使用適用于 Azure) 的 .net SDK (Azure 儲存體 for Unity library。 請遵循此[連結，以瞭解如何搭配使用 Azure 儲存體與 Unity](/sandbox/gamedev/unity/azure-storage-unity)。
 Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程式。 在解決 bug 之後，將不再需要這一節中的這些步驟 (4-7) 。
 
 若要將 SDK 匯入您自己的專案中，請確定您已下載最新的 [unitypackage](https://aka.ms/azstorage-unitysdk)。 然後執行下列動作：
 
 1.  使用 [**資產** 匯  >  **入封裝**  >  **自訂套件**] 功能表選項，將您從上述下載的 unitypackage 新增至 Unity。
 
-2.  在快顯的 [匯 **入 Unity 套件**] 方塊中，您可以選取 **外掛程式**  >  **儲存體** 下的所有專案。
+2.  在彈出的 [匯 **入 Unity 套件**] 方塊中，您可以選取 [**外掛程式**] 儲存體下的所有專案  >  ****。
 
     ![匯入套件](images/AzureLabs-Lab8-90.png)
 
 3.  按一下 [匯 **入** ] 按鈕，將專案新增至您的專案。
 
-4.  移至專案視圖中 [**外掛程式**] 下的 [**儲存體**] 資料夾，並 *只* 選取下列外掛程式：
+4.  移至 Project 視圖中 [**外掛程式**] 下的 [**儲存體**] 資料夾，並 *只* 選取下列外掛程式：
 
     -   Microsoft.Data.Edm
     -   Microsoft.Data.OData
@@ -1272,13 +1272,13 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
     > [!NOTE] 
     > 您要將這些特定外掛程式標示為僅用於 Unity 編輯器。 這是因為在 [WSA] 資料夾中有不同版本的相同外掛程式，在從 Unity 匯出專案之後，將會使用這些相同的外掛程式。
 
-6.  在 [ **儲存體** 外掛程式] 資料夾中，只選取：
+6.  在 **儲存體** 外掛程式] 資料夾中，只選取：
 
     -   Microsoft.Data.Services.Client
 
         ![選取資料服務用戶端](images/AzureLabs-Lab8-93.png)
 
-7.  勾選 [**平臺設定**] 下的 [**不處理**] 方塊，**然後按一下 [** 套用]。
+7.  勾選 [**平臺設定** 下的 [**不處理**] 方塊，**然後按一下 [** 套用]。
 
     ![不處理](images/AzureLabs-Lab8-94.png)
 
@@ -1287,11 +1287,11 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
 ## <a name="chapter-14---creating-the-tabletoscene-class-in-the-mixed-reality-unity-project"></a>第14章-在混合現實 Unity 專案中建立 TableToScene 類別
 
-**TableToScene** 類別與第 [9 章](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)所述的類別相同。 遵循第 [9 章](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)所述的相同程式，在混合現實 Unity 專案中建立相同的類別。
+**TableToScene** 類別與第 [9 章](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)所述的類別相同。 遵循第[9 章](#chapter-9---create-the-tabletoscene-class-in-the-desktop-unity-project)所述的相同程式，在混合現實 Unity Project 中建立相同的類別。
 
 當您完成本章節之後，這兩個 **Unity 專案** 將會在主要攝影機上設定此類別。
 
-## <a name="chapter-15---creating-the-notificationreceiver-class-in-the-mixed-reality-unity-project"></a>第15章-在混合現實 Unity 專案中建立 NotificationReceiver 類別
+## <a name="chapter-15---creating-the-notificationreceiver-class-in-the-mixed-reality-unity-project"></a>第15章-在混合現實 Unity Project 中建立 NotificationReceiver 類別
 
 您需要建立的第二個腳本是 **NotificationReceiver**，其負責：
 
@@ -1481,13 +1481,13 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
     > - 清除旗標：單色
     > - 背景：黑色
 
-## <a name="chapter-16---build-the-mixed-reality-project-to-uwp"></a>第16章-將 Mixed Reality 專案建立到 UWP
+## <a name="chapter-16---build-the-mixed-reality-project-to-uwp"></a>第16章-建立 UWP 的混合現實 Project
 
 這一章與先前專案的組建程式相同。 此專案的 Unity 區段所需的所有專案現在都已完成，因此您可以從 Unity 建立它。
 
 1.  流覽至 **組建設定** (**檔案**  >  **組建設定**) 。
 
-2.  在 [ **組建設定** ] 功能表中，確定 [ **Unity c # 專案**] 是 [核取 (]，這可讓您在組建) 之後，編輯此專案中的腳本。
+2.  從 [**組建設定**] 功能表中，確定 [ **Unity c # 專案**] 為 [核取] (可讓您在組建) 之後，編輯此專案中的腳本。
 
 3.  完成之後，請按一下 [ **建立**]。
 
@@ -1510,16 +1510,16 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 ## <a name="chapter-17---add-nuget-packages-to-the-unitymrnotifhub-solution"></a>第17章-將 NuGet 套件新增至 UnityMRNotifHub 方案
 
 > [!WARNING] 
-> 請記住，一旦您將下列 NuGet 套件新增 (並取消批註下一 [章](#chapter-18---edit-unitymrnotifhub-application-notificationreceiver-class) 中的程式碼) ，在 Unity 專案中重新開啟程式碼時，就會出現錯誤。 如果您想要返回並繼續在 Unity 編輯器中編輯，您將需要 errosome 程式碼的批註，然後在您回到 Visual Studio 之後，稍後再取消批註。 
+> 請記住，一旦您新增下列 NuGet 套件 (並取消批註下一[章](#chapter-18---edit-unitymrnotifhub-application-notificationreceiver-class)中的程式碼) 程式碼，在 Unity Project 中重新開啟時，就會出現錯誤。 如果您想要返回並繼續在 Unity 編輯器中編輯，您將需要 errosome 程式碼的批註，然後在您回到 Visual Studio 之後，稍後再取消批註。 
 
 完成混合的事實組建之後，請流覽至您所建立的 mixed reality 專案，然後按兩下該資料夾內的方案 ( .sln) 檔案，以 Visual Studio 2017 開啟您的方案。
-您現在需要新增 **WindowsAzure、managed** NuGet 套件;這是用來從通知中樞接收通知的程式庫。
+您現在需要新增 **WindowsAzure managed** NuGet 套件;這是用來從通知中樞接收通知的程式庫。
 
 若要匯入 NuGet 套件：
 
 1.  在 **方案總管** 中，以滑鼠右鍵按一下您的方案
 
-2.  按一下 [ **管理 NuGet 套件**]。
+2.  按一下 [**管理 NuGet 套件**]。
 
     ![開啟 nuget 管理員](images/AzureLabs-Lab8-102.png)
 
@@ -1527,7 +1527,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
     ![尋找 windows azure 訊息套件](images/AzureLabs-Lab8-103.png)
 
-4.  選取 [結果] (如下所示) ，然後在右邊的視窗中，選取 [ **專案**] 旁的核取方塊。 這會在 [ **專案**] 旁的核取方塊中放置一個刻度，並在 [ **元件-CSharp** ] 和 [ **UnityMRNotifHub** ] 專案旁邊加上核取方塊。
+4.  選取 [結果] (如下所示) ，然後在右邊的視窗中，選取 [ **Project**] 旁的核取方塊。 這會在 **Project** 旁的核取方塊中放置一個刻度，並在 [**元件-CSharp** ] 和 [ **UnityMRNotifHub** ] 專案旁邊加上核取方塊。
 
     ![勾選所有專案](images/AzureLabs-Lab8-104.png)
 
@@ -1539,7 +1539,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
 ## <a name="chapter-18---edit-unitymrnotifhub-application-notificationreceiver-class"></a>第18章-編輯 UnityMRNotifHub 應用程式，NotificationReceiver 類別
 
-新增 **NuGet 封裝** 之後，您必須將 **NotificationReceiver** 類別內的一些程式碼 *取消* 批註。
+新增 **NuGet 套件** 之後，您必須將 **NotificationReceiver** 類別內的一些程式碼 *取消* 批註。
 
 這包括：
 
@@ -1549,7 +1549,7 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
     using Microsoft.WindowsAzure.Messaging;
     ```
 
-2. **>initnotificationsasync ()** 方法內的所有程式碼：
+2. **>Initnotificationsasync ()** 方法內的所有程式碼：
 
     ```csharp
         /// <summary>
@@ -1613,11 +1613,11 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
 
 1.  開啟解決方案。
 
-2.  以滑鼠右鍵按一下 [方案總管面板中的 UWP 應用程式專案，移至 [ **儲存**]，然後 **將應用程式與存放區建立關聯**...。
+2.  以滑鼠右鍵按一下方案總管面板中的 UWP 應用程式 Project，移至 [**儲存**]，然後 **將應用程式與存放區建立關聯**...。
 
     ![開啟存放區關聯](images/AzureLabs-Lab8-105.png)
 
-3.  將會出現新的視窗 **，稱為將您的應用程式與 Windows Store 產生關聯**。 按一下 [下一步] 。
+3.  將會出現新的視窗 **，稱為將您的應用程式與 Windows 存放區建立關聯**。 按一下 [下一步] 。
 
     ![移至下一個畫面](images/AzureLabs-Lab8-106.png)
 
@@ -1680,10 +1680,10 @@ Unity 中目前有已知的問題，需要在匯入之後重新設定外掛程�
  
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 您可以瞭解如何變更 Gameobject 的色彩，並將該通知傳送至其他應用程式來查看場景？
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 您是否可以將 Gameobject 移動到您的 MR 應用程式，並在您的桌面應用程式中查看更新的場景？

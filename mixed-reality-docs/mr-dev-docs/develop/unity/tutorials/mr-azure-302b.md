@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/03/2018
 ms.topic: article
 keywords: azure，mixed reality，學院，unity，教學課程，api，自訂視覺，hololens，沉浸，vr，Windows 10，Visual Studio
-ms.openlocfilehash: 97fd0ae72401b67a83752cb2cf6799fa2b1ccc0c
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 25f07dddf53cf8c279f99d230d1bd4d206a663eba884abc0dd32313bce4b7b43
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730525"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217502"
 ---
 # <a name="hololens-1st-gen-and-azure-302b-custom-vision"></a>HoloLens (第1代) 和 Azure 302b：自訂視覺
 
@@ -35,7 +35,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 -   **分析模式**：以手動方式設定自訂視覺服務，方法是上傳影像、建立標記，以及將服務定型以辨識不同的物件 (在此案例中為滑鼠和鍵盤) 。 然後，您將建立 HoloLens 應用程式，以使用相機來捕捉影像，並嘗試辨識真實世界中的那些物件。
 
--   **定型模式**：您將會執行程式碼，以在您的應用程式中啟用「定型模式」。 定型模式可讓您使用 HoloLens 的相機來捕捉影像、將捕獲的影像上傳至服務，以及定型自訂視覺模型。
+-   **定型模式**：您將會執行程式碼，以在您的應用程式中啟用「定型模式」。 定型模式可讓您使用 HoloLens 相機來捕捉影像、將已捕獲的影像上傳至服務，以及定型自訂視覺模型。
 
 本課程將告訴您如何將自訂視覺服務的結果取得 Unity 型範例應用程式。 您必須將這些概念套用至您可能正在建立的自訂應用程式。
 
@@ -50,9 +50,9 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 </table>
 
 > [!NOTE]
-> 雖然本課程主要著重于 HoloLens，您也可以將本課程中所學到的內容套用到 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
+> 雖然本課程主要著重于 HoloLens，但您也可以在本課程中套用您學到的內容，以 Windows Mixed Reality 沉浸式 (VR) 耳機。 因為沉浸式 (VR) 耳機沒有可存取的攝影機，所以您需要有連接到電腦的外部攝影機。 當您依照課程的指示，您將會看到有關您可能需要採用以支援沉浸式 (VR) 耳機的任何變更的注意事項。
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和書面指示，代表在撰寫 (2018 年7月) 時已經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
@@ -72,12 +72,12 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
-2.  設定及測試 HoloLens。 如果您需要設定 HoloLens 的支援， [請務必造訪 HoloLens 安裝文章](/hololens/hololens-setup)。 
-3.  開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助針對每個使用者) 執行這些工作。 
+2.  設定及測試您的 HoloLens。 如果您需要設定 HoloLens 的支援，[請務必造訪 HoloLens 安裝程式文章](/hololens/hololens-setup)。 
+3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。 
 
-如需有關校正的說明，請遵循此 [與 HoloLens 校正文章相關的連結](/hololens/hololens-calibration#hololens-2)。
+如需有關校正的說明，請遵循此[連結來 HoloLens 校正文章](/hololens/hololens-calibration#hololens-2)。
 
-如需有關感應器微調的說明，請依照此 [連結來進行「HoloLens 感應器微調」文章](/hololens/hololens-updates)。
+如需有關感應器微調的說明，請依照此[連結前往 HoloLens 感應器微調文章](/hololens/hololens-updates)。
 
 ## <a name="chapter-1---the-custom-vision-service-portal"></a>第1章-自訂視覺 Service 入口網站
 
@@ -85,7 +85,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 1.  首先， [流覽至 *自訂視覺服務* 主頁面](https://azure.microsoft.com/services/cognitive-services/custom-vision-service/)。
 
-2.  按一下 [ **開始** ] 按鈕。
+2.  按一下 [**入門**] 按鈕。
 
     ![開始使用自訂視覺服務](images/AzureLabs-Lab302b-01.png)
 
@@ -100,7 +100,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
     ![服務條款](images/AzureLabs-Lab302b-03.png)
 
-5.  同意條款之後，您將會流覽至入口網站的 [ *專案* ] 區段。 按一下 [ **新增專案**]。
+5.  同意條款之後，您將會流覽至入口網站的 [ *專案* ] 區段。 按一下 [**新增 Project**]。
 
     ![建立新專案](images/AzureLabs-Lab302b-04.png)
 
@@ -112,7 +112,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
     3.  選擇資源群組，或建立一個新的 *資源群組* 。 資源群組提供一種方式來監視、控制存取、布建及管理 Azure 資產集合的計費。 建議您保留與單一專案相關聯的所有 Azure 服務 (例如，) 一般資源群組下的這些課程) 。
 
-    4. 將 *專案類型* 設定為 **分類**
+    4. 將 *Project 類型* 設定為 **分類**
     
     5. 將 *網域* 設定為 **[一般**]。
 
@@ -153,7 +153,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
     ![選取標記](images/AzureLabs-Lab302b-10.png)
 
-7.  按一下 **[上傳** 檔案]。 檔案將會開始上傳。 確認上傳之後，請按一下 [ **完成**]。
+7.  按一下 [ **Upload** 檔案]。 檔案將會開始上傳。 確認上傳之後，請按一下 [ **完成**]。
 
     ![上傳檔案](images/AzureLabs-Lab302b-11.png)
 
@@ -170,7 +170,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
     > [!NOTE] 
     > 由此提供的端點 URL 會設定為已標示為預設值的任何 *反復* 專案。 因此，如果您稍後建立新的 *反復* 專案，並將其更新為預設值，您就不需要變更程式碼。
 
-11. 當您按一下 [ *預測 URL*] 之後，請開啟 [ *記事本*]，然後複製並貼上 **URL** 和 **預測金鑰**，以便稍後在程式碼中需要時加以取出。
+11. 按一下 [*預測 URL*] 之後，開啟 *記事本*，然後複製並貼上 **URL** 和 **預測金鑰**，以便稍後在程式碼中需要時加以取出。
 
     ![複製並貼上 URL 和 Prediction-Key](images/AzureLabs-Lab302b-14.png)
 
@@ -182,7 +182,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
     ![複製訓練金鑰](images/AzureLabs-Lab302b-16.png)
 
-14. 此外，也請複製您的 **專案 Id**，並將其貼到您的 *記事本* 檔案中，以供稍後使用。
+14. 此外，也請複製您的 **Project 識別碼**，並將它貼到您的 *記事本* 檔案中，以供稍後使用。
 
     ![複製專案識別碼](images/AzureLabs-Lab302b-16a.png)
 
@@ -202,11 +202,11 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
     ![設定外部工具](images/AzureLabs-Lab302b-19.png)
 
-4.  接下來，移至 [檔案 **> 組建設定** ]，選取 [ **通用 Windows 平臺**]，然後按一下 [ **切換平臺** ] 按鈕以套用您的選取專案。
+4.  接著，移至 [檔案 **> 組建] 設定** 然後選取 [**通用 Windows 平臺**]，再按一下 [**切換平臺**] 按鈕以套用您的選取專案。
 
     ![設定組建設定 ](images/AzureLabs-Lab302b-20.png)
 
-5.  在檔案中仍 **> 組建設定** ，並確定：
+5.  在檔案中仍 **> 建立設定** 並確定：
 
     1.  **目標裝置** 設定為 **HoloLens**
 
@@ -232,15 +232,15 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
             > 請注意，您必須將 Unity 場景儲存在 [ *資產* ] 資料夾中，因為它們必須與 Unity 專案相關聯。 建立幕後資料夾 (和其他類似的資料夾) 是結構化 Unity 專案的典型方式。
             
-    7.  [ *組建設定*] 中的其餘設定，現在應該保持為預設值。
+    7.  [*組建設定*] 中的其餘設定，現在應該保持為預設值。
 
         ![預設組建設定](images/AzureLabs-Lab302b-24.png)
 
-6.  在 [ *組建設定* ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。
+6.  在 [*組建設定*] 視窗中，按一下 [播放程式]**設定** 按鈕，這會開啟偵測 *器* 所在空間中的相關面板。
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1.  在 [ **其他設定** ] 索引標籤中：
+    1.  在 [**其他設定**] 索引標籤中：
 
         1.  **腳本執行階段版本** 應該是 **實驗 ( .Net 4.6 對等)**，這會觸發重新開機編輯器的需求。
 
@@ -250,7 +250,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
         ![設定 API compantiblity](images/AzureLabs-Lab302b-25.png)
 
-    2.  在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2.  在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         1. **InternetClient**
 
@@ -260,11 +260,11 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
         ![設定發佈設定](images/AzureLabs-Lab302b-26.png)
 
-    3.  在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
+    3.  接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，請確定已新增 **Windows Mixed Reality SDK** 。
 
     ![設定 XR 設定](images/AzureLabs-Lab302b-27.png)
 
-8.  回到 *組建設定*： *Unity C \# 專案* 不再呈現灰色; 勾選此方塊旁邊的核取方塊。
+8.  回到 *組建設定* *Unity C \# 專案* 不再呈現灰色; 勾選此方塊旁邊的核取方塊。
 
 9.  關閉 [建置設定] 視窗。
 
@@ -345,7 +345,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 若要建立此類別：
 
-1.  以滑鼠右鍵按一下位於 [*專案] 面板* 中的 [*資產] 資料夾*，然後按一下 [**建立] > 資料夾**。 呼叫資料夾 **腳本**。
+1.  以滑鼠右鍵按一下位於 *Project 面板* 中的 *資產資料夾*，然後按一下 [**建立] > 資料夾**。 呼叫資料夾 **腳本**。
 
     ![建立腳本資料夾](images/AzureLabs-Lab302b-33.png)
 
@@ -390,7 +390,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
     ```
 
     > [!NOTE]
-    > 請務必將您的 **預測金鑰** 插入至 **predictionKey** 變數，並將 **預測端點** 插入至 **predictionEndpoint** 變數。 您稍早在課程中將這些複製到 [ *記事本* ]。
+    > 請務必將您的 **預測金鑰** 插入至 **predictionKey** 變數，並將 **預測端點** 插入至 **predictionEndpoint** 變數。 您稍早在課程中將它們複製到 *記事本*。
 
 7.  現在需要新增 **喚醒 ()** 的程式碼，以初始化執行個體變數：
 
@@ -784,7 +784,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
     ```
 
     > [!IMPORTANT]
-    > 請確定您將 **服務金鑰** 新增 (定型金鑰) 值和 **專案識別碼** 值（您先前記下的值）;這些是您稍 [早在課程中從入口網站收集的值 (第2章：步驟 10)](#chapter-2---training-your-custom-vision-project)。
+    > 請確定您已將 **服務金鑰** 新增 (定型金鑰) 值和 **Project 識別碼** 值（您先前記下的值）;這些是您稍 [早在課程中從入口網站收集的值 (第2章：步驟 10)](#chapter-2---training-your-custom-vision-project)。
 
 5.  新增下列 **開始 ()** 和 **喚醒的 ()** 方法。 這些方法會在初始化時呼叫，並包含設定 UI 的呼叫：
 
@@ -1628,7 +1628,7 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 ## <a name="chapter-12---before-building"></a>第12章-建立前
 
-若要執行應用程式的完整測試，您必須將它側載到 HoloLens。
+若要執行應用程式的完整測試，您必須將它側載到您的 HoloLens。
 
 在執行之前，請確定：
 
@@ -1644,13 +1644,13 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 - 您已將 **定型金鑰** 插入 *CustomVisionTrainer* 類別的 **trainingKey** 變數中。
 
-- 您已在 *CustomVisionTrainer* 類別的 **projectId** 變數中插入您的 **專案識別碼**。
+- 您已將 **Project 識別碼** 插入 *CustomVisionTrainer* 類別的 **projectId** 變數中。
 
 ## <a name="chapter-13---build-and-sideload-your-application"></a>第13章-建立並側載您的應用程式
 
 若要開始 *建立* 程式：
 
-1.  移至 [檔案 **> 組建設定**]。
+1.  移至 [檔案 **> 組建] 設定**。
 
 2.  勾選 **Unity C \# 專案**。
 
@@ -1662,15 +1662,15 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 若要在 HoloLens 上部署：
 
-1.  您將需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保 HoloLens 處於 **開發人員模式**。 若要這樣做：
+1.  您需要 HoloLens (的 IP 位址，才能進行遠端部署) ，並確保您的 HoloLens 處於 **開發人員模式**。 若要這樣做：
 
-    1.  在設置 HoloLens 的同時，開啟 **設定**。
+    1.  在 HoloLens 時，請開啟 **設定**。
 
     2.  前往 **Network & Internet**  >  **wi-fi**  >  **Advanced Options**
 
     3.  記下 **IPv4** 位址。
 
-    4.  接下來，流覽回到 [**設定**]，然後 **更新**  >  **開發人員 & 的** 安全性
+    4.  接下來，流覽回到 **設定**，然後為開發 **人員更新 & 安全性**  >  
 
     5.  設定 [ **開發人員模式]**。
 
@@ -1678,13 +1678,13 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 3.  在 [ *方案* 設定] 中選取 [ **Debug**]。
 
-4.  在 *解決方案平臺* 中，選取 [ **x86]、[遠端電腦**]。 系統會提示您將遠端裝置的 **IP 位址** 插入 (HoloLens，在此案例中，您會記下) 。
+4.  在 *解決方案平臺* 中，選取 [ **x86]、[遠端電腦**]。 系統會提示您 (HoloLens 中插入遠端裝置的 **IP 位址**，在此案例中，您記) 。
 
     ![設定 IP 位址](images/AzureLabs-Lab302b-34.png)
 
-5. 移至 [ **組建** ] 功能表，然後按一下 [ **部署方案** ]，將應用程式側載至 HoloLens。
+5. 移至 [**組建**] 功能表，然後按一下 [**部署方案**]，將應用程式側載到您的 HoloLens。
 
-6. 您的應用程式現在應該會出現在 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
+6. 您的應用程式現在應該會出現在您 HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
 
 > [!NOTE]
 > 若要部署到沉浸式耳機，請將 **解決方案平臺****設定為 [** *本機電腦*]，並將 [設定] 設定為 [以 *x86* 作為 **平臺**] 來進行 *Debug*。 然後使用 [ **組建** ] 功能表項目選取 [ *部署方案*]，部署到本機電腦。 
@@ -1750,11 +1750,11 @@ Azure 自訂視覺是一項 Microsoft 認知服務，可讓開發人員建立自
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 訓練您的 **自訂視覺服務** ，以辨識更多物件。
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 若要展開您學到的內容，請完成下列練習：
 

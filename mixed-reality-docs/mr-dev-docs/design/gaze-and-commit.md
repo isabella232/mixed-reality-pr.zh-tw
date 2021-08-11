@@ -6,12 +6,12 @@ ms.author: sostel
 ms.date: 10/31/2019
 ms.topic: article
 keywords: 混合的現實、注視、注視目標、互動、設計、眼睛追蹤、head 追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組
-ms.openlocfilehash: db394ab4aded7136550e8e88eb3d66e06f3eeb92
-ms.sourcegitcommit: 8f141a843bcfc57e1b18cc606292186b8ac72641
+ms.openlocfilehash: 98f2ac9d26fc02c969520fff9083152b77bf66a2f864d5fdb15b1ee781d5d7cb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/19/2021
-ms.locfileid: "110196563"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115201890"
 ---
 # <a name="gaze-and-commit"></a>注視並認可
 
@@ -60,16 +60,16 @@ ms.locfileid: "110196563"
 
 ## <a name="head-and-eye-tracking-design-concepts-demo"></a>標題和眼睛追蹤設計概念示範
 
-如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全息圖-標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
+如果您想要查看前端和眼睛追蹤設計的概念，請參閱下面 **的設計全像投影標頭追蹤和眼睛追蹤** 影片示範。 當您完成時，請繼續進行，以深入瞭解特定主題。
 
 > [!VIDEO https://channel9.msdn.com/Shows/Docs-Mixed-Reality/Microsofts-Designing-Holograms-Head-Tracking-and-Eye-Tracking-Chapter/player]
 
-*這段影片取自「設計全像」應用程式 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
+*這段影片取自「設計全像投影」 HoloLens 2 應用程式。下載並享有完整 [的體驗。](https://aka.ms/dhapp)*
 
 ## <a name="gaze"></a>注視
 
 ### <a name="eye--or-head-gaze"></a>眼睛或頭部？
-無論您是否應該使用「眼睛和認可」或「前端和認可」輸入模型，都有幾個考慮。 如果您正在針對沉浸式耳機或 HoloLens (第一代) 進行開發，則選擇很簡單：標上和認可。 如果您是針對 HoloLens 2 進行開發，則選擇會變得更困難。 請務必瞭解每個都有的優點和挑戰。
+無論您是否應該使用「眼睛和認可」或「前端和認可」輸入模型，都有幾個考慮。 如果您正在針對沉浸式耳機進行開發，或 (第1代) 的 HoloLens，則選擇很簡單：標上和認可。 如果您是針對 HoloLens 2 進行開發，則選擇會變得更困難。 請務必瞭解每個都有的優點和挑戰。
 在下表中，我們編譯了一些很廣泛的專業人員和 con，以對比眼睛的目標。 這並不是完整的，我們建議您在此處深入瞭解混合現實中的眼睛目標：
 * [HoloLens 2 上的眼睛追蹤](eye-tracking.md)：在 HoloLens 2 上推出新的眼睛追蹤功能，包括一些開發人員指引。 
 * [眼睛的互動](eye-gaze-interaction.md)：規劃使用眼睛追蹤作為輸入時的設計考慮和建議。
@@ -123,7 +123,7 @@ ms.locfileid: "110196563"
     :::column:::
         針對 head，大部分的應用程式應該使用資料 [指標](cursors.md) 或其他聽覺/視覺指示，讓使用者在他們即將與其互動的方面具有信賴度。 您通常會將這個資料指標放在世界中，其中的前端光線最先與物件（可能是全息圖或真實世界表面）相交。<br>
         <br>
-        針對眼睛，我們通常不建議您 *不要* 顯示資料指標，因為這可能會對使用者造成干擾和討厭。 相反地，請特別強調視覺效果目標，或使用不清楚的眼睛游標，以提供使用者即將互動的相關資訊。 如需詳細資訊，請參閱 HoloLens 2 上 [的眼睛輸入的設計指引](eye-tracking.md) 。
+        針對眼睛，我們通常不建議您 *不要* 顯示資料指標，因為這可能會對使用者造成干擾和討厭。 相反地，請特別強調視覺效果目標，或使用不清楚的眼睛游標，以提供使用者即將互動的相關資訊。 如需詳細資訊，請參閱 HoloLens 2 上[的眼睛輸入的設計指引](eye-tracking.md)。
     :::column-end:::
         :::column:::
        ![顯示注視的視覺效果游標範例](images/cursor.jpg)<br>
@@ -147,7 +147,7 @@ ms.locfileid: "110196563"
 - 按下 Xbox 適應性控制器上的 [A] 按鈕
 
 ### <a name="gaze-and-air-tap-gesture"></a>注視和點擊手勢
-空中點選是手部直立的點選手勢。 若要使用 [點一下]，請將您的索引指向 [就緒] 位置，然後使用您的 thumb 來縮小，然後將您的索引手指重設為 [發行]。 在 HoloLens (第1代) 上，按一下是最常見的次要輸入。
+空中點選是手部直立的點選手勢。 若要使用 [點一下]，請將您的索引指向 [就緒] 位置，然後使用您的 thumb 來縮小，然後將您的索引手指重設為 [發行]。 在 HoloLens (第1代) 上，「攻點」是最常見的次要輸入。
 
 
 :::row:::
@@ -174,7 +174,7 @@ HoloLens 2 也可以使用 [點一下]。 它已從原始版本中放寬。 幾�
 - 使用 click actuation 或 commit 作為次要輸入的泛型 "Select" 命令。
 - 物件命令 (例如，「關閉」或「變得更大」 ) 執行並認可至動作做為次要輸入。
 - 全域命令 (例如「移至開始」 ) 不需要目標。
-- 對話使用者介面或 Cortana 之類的實體都具有 AI 自然語言功能。
+- 對話使用者介面或 Cortana 等實體具有 AI 自然語言功能。
 - 自訂語音命令
 
 若要深入瞭解詳細資料和可用語音命令的完整清單，以及如何使用這些命令，請參閱我們的 [語音命令](../out-of-scope/voice-design.md) 指引。
@@ -188,11 +188,11 @@ HoloLens 2 也可以使用 [點一下]。 它已從原始版本中放寬。 幾�
 
 :::row:::
     :::column:::
-        HoloLens Clicker 是特別為 HoloLens 建立的第一個週邊設備。 它隨附于 HoloLens (第一代) 開發版。 HoloLens Clicker 可讓使用者按下最少量的動作，並認可為次要輸入。 HoloLens Clicker 會連接到 HoloLens (第1代) 或使用藍牙低能源 (BTLE) HoloLens 2。<br>
+        HoloLens Clicker 是特別為 HoloLens 建立的第一個週邊設備。 它隨附于 HoloLens (第1代) 開發版。 HoloLens Clicker 可讓使用者按一下最少量的動作，並認可為次要輸入。 HoloLens Clicker 會連線至 HoloLens (第一代) 或 HoloLens 2 使用藍牙低能源 (BTLE) 。<br>
         <br>
         [有關將裝置配對的詳細資訊和指示](../discover/hardware-accessories.md#pairing-bluetooth-accessories)<br>
         <br>
-        *映射： HoloLens Clicker*
+        *影像： HoloLens Clicker*
     :::column-end:::
         :::column:::
        ![HoloLens Clicker](images/hololens-clicker-500px.jpg)<br>
@@ -234,7 +234,7 @@ Xbox 適應性控制器會使用 [A] 按鈕，以次要輸入的形式執行 cli
 ![Xbox Adaptive Controller](images/xbox-adaptive-controller-devices.jpg)<br>
 *Xbox Adaptive Controller*
 
-連接外部裝置（例如交換器、按鈕、掛接和操作杆）來建立獨特的自訂控制器體驗。 按鈕、操縱杆和觸發程式輸入都是由透過 3.5-mm 插座和 USB 埠連接的輔助裝置所控制。
+連線外部裝置（例如交換器、按鈕、掛接和操作杆）來建立獨特的自訂控制器體驗。 按鈕、操縱杆和觸發程式輸入都是由透過 3.5-mm 插座和 USB 埠連接的輔助裝置所控制。
 
 ![Xbox Adaptive Controller 連接埠](images/xbox-adaptive-controller-ports.jpg)<br>
 *Xbox Adaptive Controller 連接埠*
@@ -276,18 +276,18 @@ Xbox 適應性控制器會使用 [A] 按鈕，以次要輸入的形式執行 cli
 
 ## <a name="hand-recognition"></a>手部辨識
 HoloLens 可藉由追蹤裝置可見的任一手或雙手位置來辨識手勢。 當手部處於就緒狀態 (手背朝向您且食指朝上) 或按下狀態 (手背朝向您且食指朝下) 時，HoloLens 就會看見手部。 當手中有其他人時，HoloLens 會忽略它們。
-針對 HoloLens 偵測到的每個手，您可以存取其位置，而不需要方向和按下的狀態。 當手部接近手勢框架邊緣時，您也會取得方向向量，而您可對使用者顯示該向量，讓他們知道如何移動其手部以回到 HoloLens 可看見手部的位置。
+針對每個 HoloLens 偵測到的手，您可以存取其位置，而不需要方向和按下的狀態。 當手部接近手勢框架邊緣時，您也會取得方向向量，而您可對使用者顯示該向量，讓他們知道如何移動其手部以回到 HoloLens 可看見手部的位置。
 
 ## <a name="gesture-frame"></a>手勢框架
-針對 HoloLens 上的手勢，手必須位於手勢框架內、手勢檢測攝影機可適當地查看的範圍、從鼻子到 waist，以及肩膀之間。 使用者必須在此辨識區域上進行訓練，以獲得動作的成功，並讓他們自己的舒適。 許多使用者一開始會假設手勢框架必須在其觀看的情況下，透過 HoloLens，並讓其 arm uncomfortably 互動。 使用 HoloLens Clicker 時，不一定要將手放在手勢框架內。
+針對 HoloLens 上的手勢，手必須位於手勢框架內、手勢檢測攝影機可以適當地查看的範圍、從鼻子到 waist，以及肩膀之間。 使用者必須在此辨識區域上進行訓練，以獲得動作的成功，並讓他們自己的舒適。 許多使用者一開始會假設手勢框架必須透過 HoloLens 在其觀點內進行，並讓其 arm uncomfortably 進行互動。 使用 HoloLens Clicker 時，不一定要在手勢框架內進行手。
 
 尤其是針對連續手勢，當移動全像投影片的物件時，使用者可能會有一些風險將手移至手勢框架之外，而不會發生預期的結果。
 
 您應該考量下列三個事項：
 
-- 手勢框架存在和大約界限的使用者教育。 這是在 HoloLens 安裝期間教授。
+- 手勢框架存在和大約界限的使用者教育。 這是 HoloLens 設定期間的教授。
 
-- 當使用者的手勢接近或中斷應用程式內的手勢框架界限時，通知使用者，表示遺失的手勢會導致不想要的結果。 研究已展示這類通知系統的主要品質。 HoloLens shell 會在中央游標上提供此類型通知（視覺效果）的良好範例，指出界限跨越的方向。
+- 當使用者的手勢接近或中斷應用程式內的手勢框架界限時，通知使用者，表示遺失的手勢會導致不想要的結果。 研究已展示這類通知系統的主要品質。 HoloLens shell 會在中央游標處提供這種類型的通知（視覺效果）範例，指出界限跨越的方向。
 
 - 您應該將突破手勢框架界限的後果最小化。 一般來說，這表示手勢的結果應該在界限停止，而不是反轉。 比方說，如果使用者要在房間內移動一些全像的物件，則當軌跡框架被入侵時，移動應該會停止，而且不會傳回至起始點。 使用者可能會遇到一些挫折，但可能更快速地瞭解界限，而不必每次重新開機其完整的預期動作。
 

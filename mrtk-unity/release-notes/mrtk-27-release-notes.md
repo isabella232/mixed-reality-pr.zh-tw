@@ -7,12 +7,12 @@ ms.date: 06/16/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、XRSDK、舊版 XR、閏運動、Ultraleap、OpenXR
 ms.localizationpriority: high
 monikerRange: '>= mrtkunity-2021-05'
-ms.openlocfilehash: 8f6c68c067df735761dd9c162c71fd85f1f3e132
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 921cdb4d9643e55841bc7c979066c276f5fd80998ad97d19332c528cebe05c37
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906974"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203486"
 ---
 # <a name="microsoft-mixed-reality-toolkit-27-release-notes"></a>Microsoft Mixed Reality 工具組2.7 版本資訊
 
@@ -34,7 +34,7 @@ ms.locfileid: "112906974"
 ![MRTK 版本對話方塊](images/VersionDialog.png)
 
 > [!NOTE]
-> 如果 MRTK 是從 GitHub 存放 [庫](https://aka.ms/mrtk)複製的，則不會設定版本資訊。
+> 如果從[GitHub 儲存](https://aka.ms/mrtk)機制複製 MRTK，則不會設定版本資訊。
 >
 > ![無法判斷版本](images/CannotDetermineVersion.png)
 
@@ -79,14 +79,14 @@ ms.locfileid: "112906974"
 
 ![舊版與 XR SDK 資料提供者現在可以在單一設定檔下整合](../features/images/xrsdk/LegacyAndXrsdkUnified.png)
 
-為了符合此值，現在不會再載入和顯示設定檔偵測器中的 null 資料提供者。 使用者可以 `Show null data providers in the profile inspector` 在 **編輯 > 專案設定下切換-> Mixed Reality 工具** 組，以使用遺漏的資料提供者來偵測非預期的行為。
+為了符合此值，現在不會再載入和顯示設定檔偵測器中的 null 資料提供者。 使用者可以切換 `Show null data providers in the profile inspector` 到 [**編輯->] Project 設定 > 的混合現實工具** 組，以使用遺漏的資料提供者來偵測非預期的行為。
 
 ![Null 資料提供者現在會隱藏在 ](https://user-images.githubusercontent.com/39840334/115093658-ead24600-9ecf-11eb-91c2-486a37f69aba.png)
  ![ 設定檔偵測器中的預設值切換顯示 null 資料提供者](https://user-images.githubusercontent.com/39840334/115093670-f6257180-9ecf-11eb-96ec-ffe44a225a55.png)
 
-### <a name="added-experience-settings-and-an-associated-mixed-reality-scene-content-behavior"></a>新增經驗設定和相關聯的混合現實場景內容行為
+### <a name="added-experience-settings-and-an-associated-mixed-reality-scene-content-behavior"></a>新增體驗設定以及相關聯的混合現實場景內容行為
 
-使用者現在可以設定 [體驗設定](../features/experience-settings/experience-settings.md)，這可讓 MRTK 根據目標體驗適當地顯示 [混合現實場景內容](../features/experience-settings/scene-content.md) 。
+使用者現在可以設定 [[體驗設定](../features/experience-settings/experience-settings.md)]，這可讓 MRTK 根據目標體驗適當地顯示[混合現實場景內容](../features/experience-settings/scene-content.md)。
 
 如果使用者先前的經驗調整設定不符合新的體驗設定設定檔，系統會提示他們在偵測器中加以修正
 
@@ -142,7 +142,7 @@ ms.locfileid: "112906974"
 
 ### <a name="support-for-eye-tracking-on-windows-xr-plugin"></a>Windows XR 外掛程式上的眼睛追蹤支援
 
-在使用 Windows XR 外掛程式的最小2.7.0 版本時，新增了眼睛的支援 (Unity 2019) 、4.4.2 (Unity 2020) 和 5.2.2 (Unity 2021) 。 [#9609](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9609)
+在使用 Windows XR 外掛程式的 2.7.0 (Unity 2019) 、4.4.2 (unity 2020) 和 5.2.2 (unity 2021) 時，新增了眼睛的支援。 [#9609](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9609)
 
 ### <a name="notable-bugfixes-and-changes"></a>值得注意的錯誤修正與變更
 
@@ -157,13 +157,13 @@ ms.locfileid: "112906974"
 - 在場景理解示範腳本中，新增函式 `GetSceneObjectsOfType` 以取得特定種類的所有觀察場景物件。 [#9524](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9524)， [#9744](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9744)
 - 在命令列建立工具中，只有 `sceneList` `sceneListFile` 當有任何旗標存在時，或旗標所指定的場景 () 將會包含在組建中。 [#9695](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9695)
 - 在 build tool 中，有一個新的選項可指定 `nuget.exe` 和使用該路徑來執行封裝還原，而不是使用 `msbuild` (預設選項) 。 [#9556](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9556)
-- 已修正使用 Windows XR 外掛程式的問題可能會導致過時的接點和雙手勢網格。 [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
+- 已修正使用 Windows XR 外掛程式的問題，可能會導致過時的接點和雙手勢網格。 [#9890](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9890)
 - 已修正使用 Windows XR 外掛程式的自動遠端功能導致遺失輸入和互動的問題。 [#9868](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9868)
 - 已修正 BuildDeployWindow 嘗試查詢不正確登錄機碼以取得 Windows SDK 路徑的問題。 [#9664](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9664)
 - MRTK 的 glTF 匯入工具現在是選擇性的。 如果有多個 glTF 匯入工具，您可以藉由新增 `MRTK_GLTF_IMPORTER_OFF` 至自訂腳本定義符號來停用 MRTK。 [#9658](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9658)
 - 已修正未正確偵測到 OpenVR 上 Knuckles 控制器的問題。 [#9881](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9881)
 - 減少視覺化手中的每個畫面格配置數目 [#9756](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9756)
-- 新增功能表項目以啟動 Unity 中的 MRTK 範例套件 (封裝管理員) ，讓您更輕鬆地匯入範例 [#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
+- 新增功能表項目以啟動 Unity 中的 MRTK 範例套件 (封裝管理員) ，讓您更輕鬆地匯入範例[#9798](https://github.com/microsoft/MixedRealityToolkit-Unity/pull/9798)
 - 減少使用 Unity 2020.3 時的載入時間警告數目。
 - 已新增組建視窗功能檔： [造訪頁面](../features/tools/build-window.md)
 

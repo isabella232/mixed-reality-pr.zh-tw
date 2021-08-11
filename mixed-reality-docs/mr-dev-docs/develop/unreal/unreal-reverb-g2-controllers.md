@@ -6,16 +6,16 @@ ms.author: jacksonf
 ms.date: 10/9/2020
 ms.topic: article
 keywords: Unreal、Unreal Engine 4、UE4、回音、回音、HP 回音、mixed reality、開發、運動控制器、使用者輸入、功能、新專案、模擬器、檔、指南、功能、全像遊戲開發、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 006c70208ec0eaa45447caecf39f799c4be1bfeb
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: b287a5c7de1ea086b76228d9109cc07a4e1569f5f926cb42dc3e37cc2a3bb916
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582680"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204168"
 ---
 # <a name="hp-reverb-g2-controllers-in-unreal"></a>Unreal 中的 HP 回音 G2 控制器 
 
-## <a name="getting-started"></a>開始使用
+## <a name="getting-started"></a>使用者入門
 
 > [!IMPORTANT]
 > 需要有 Unreal Engine 4.26 及 OpenXR 或 SteamVR，才能存取 hp 運動控制器外掛程式，您必須使用 HP 的「回音」 G2 控制器。

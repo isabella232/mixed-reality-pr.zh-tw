@@ -7,12 +7,12 @@ ms.date: 11/30/2020
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, 學習, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境, MRTK, 混合實境工具組, 語言翻譯, Azure, Azure 認知服務, Microsoft Learn
 ms.localizationpriority: high
-ms.openlocfilehash: e21f6245be5a47797c2b58fd8f57c4c6179b1751
-ms.sourcegitcommit: 72970dbe6674e28c250f741e50a44a238bb162d4
+ms.openlocfilehash: 24584532fca0872a1ec62f6f2381e0aa076da5bb79eea765cb3a0a0f5736f36f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/25/2021
-ms.locfileid: "112906874"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204394"
 ---
 # <a name="mixed-reality-learn-overview"></a>混合實境學習概觀
 
@@ -56,7 +56,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 在本學習路徑結束之後，您將能夠：
 
 * 安裝並設定您的開發環境，以使用 Azure Digital Twins 和 Unity 建立 HoloLens 2 的混合實境解決方案
-* 在 Unity 中使用靜態和動態地形資料搭配 Microsoft 的 Maps SDK 來建立3D 場景
+* 透過 Microsoft 的地圖 SDK，使用靜態和動態地形資料在 Unity 中建立3D 場景
 * 使用 MRTK 互動來提供豐富的使用者體驗
 * 連接至 Azure 上的數位對應項資料來源
 * 使用包括 ADT 的 Azure 服務將遙測資料串流至 Unity 場景中的資產
@@ -95,7 +95,7 @@ Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學
 
 **學習目標**
 
-在此課程模組結束時，您將可以：
+在本課程模組結束時，您將能夠：
 
 * 建立遠端轉譯會話
 * 載入 3D 模型

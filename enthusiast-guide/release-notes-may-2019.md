@@ -6,20 +6,20 @@ ms.author: mazeller
 ms.date: 07/11/2019
 ms.topic: article
 keywords: 版本資訊、版本、windows 10、組建、19h1、os、5月2019
-ms.openlocfilehash: b8df518b03544bd2473ff67030ed008e1a2bc26e
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: e1b0ecfdd78d86b1adb624fcaf4bf37025aa559ed1ed5d005c40dc24f3a784b8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98581499"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202486"
 ---
 # <a name="release-notes---may-2019"></a>版本資訊-2019 年5月
 
 **Windows 10 2019 年5月更新** (也稱為 19H1) 包含 Windows Mixed Reality (的新功能) 耳機，例如在混合實境首頁中啟動 Win32 應用程式的能力。 HoloLens (第1代) 長期維護 (LTS) ，每月發行服務更新。
 
-若要更新為電腦上的最新版本 Windows Mixed Reality 沉浸式 (VR) 耳機，請開啟 [ **設定** ] 應用程式，移至 [ **更新 & 安全性**]，然後選取 [ **檢查更新** ] 按鈕。 在 Windows 10 的電腦上，您也可以使用 [Windows media 建立工具](https://www.microsoft.com/software-download/windows10)手動安裝 Windows 10 2019 年5月更新。
+若要更新為電腦上的最新版本 Windows Mixed Reality 沉浸式 (VR) 耳機，請開啟 **設定** 應用程式，移至 [**更新 & 安全性**]，然後選取 [**檢查更新**] 按鈕。 在 Windows 10 的電腦上，您也可以使用[Windows 媒體建立工具](https://www.microsoft.com/software-download/windows10)手動安裝 Windows 10 2019 年5月更新。
 
-**適用于桌面的最新版本：** Windows 10 2019 年5月更新 (**10.0.18362.116**) <br>
+**Desktop 的最新版本：** Windows 10 2019 年5月更新 (**10.0.18362.116**) <br>
 
 ## <a name="new-features-for-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality 沉浸式耳機的新功能
 
@@ -28,7 +28,7 @@ ms.locfileid: "98581499"
 #### <a name="what-does-it-do"></a>用途 
 有了 Windows 10 2019 的更新，我們引進了在 Windows Mixed Reality 內啟動傳統 Win32 應用程式的功能，例如網頁瀏覽器、通訊應用程式和媒體串流應用程式。 
 
-![Win32 視窗](images/mr-win32-slates-1.png)
+![Win32 Windows](images/mr-win32-slates-1.png)
 
 ![Win32 瀏覽器](images/mr-win32-slates-2.png)
 
@@ -38,11 +38,11 @@ ms.locfileid: "98581499"
 ![Win32 Pin_Panel](images/mr-win32-slates-pinspanel.png)
 
 #### <a name="help-us-improve"></a>協助我們改進！
-我們會持續尋找改善相容性。  如果您認為慣用的傳統 Win32 應用程式在 Windows Mixed Reality 時無法正常運作，請透過我們的 [意見反應中樞](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)提交意見反應。
+我們會持續尋找改善相容性。  如果您認為慣用的傳統 Win32 應用程式在 Windows Mixed Reality 時無法正常運作，請透過我們的[意見反應中樞](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)提交意見反應。
 
 ## <a name="hololens-1st-gen-long-term-servicing"></a>HoloLens (第1代) Long-Term 服務
 
-HoloLens (第1代) 正在進入長期服務 (LTS) 狀態。 未來的更新將著重于問題和安全性修正程式，同時維持與 Windows 10 HoloLens ([2018 版](release-notes-october-2018.md) 的功能同位，也稱為 RS5) 。 
+HoloLens (第1代) 正在進入長期服務 (LTS) 狀態。 未來的更新將著重于問題和安全性修正，同時維持與[Windows 10 2018 年10月版本](release-notes-october-2018.md)的功能同位（HoloLens (也稱為 RS5) 。 
 
 ## <a name="known-issues"></a>已知問題
 
@@ -50,7 +50,7 @@ HoloLens (第1代) 正在進入長期服務 (LTS) 狀態。 未來的更新將�
 
 ## <a name="provide-feedback-and-report-issues"></a>提供意見反應和報告問題
 
-使用 Windows 10 電腦或 HoloLens 裝置 [上的意見反應中樞應用程式](/windows/mixed-reality/give-us-feedback) ，以提供意見反應和報告問題。 使用意見反應中樞可確保包含所有必要的診斷資訊，以協助我們的工程師快速地偵測和解決問題。
+使用 Windows 10 電腦或 HoloLens 裝置[上的意見反應中樞應用程式](/windows/mixed-reality/give-us-feedback)來提供意見反應和報告問題。 使用意見反應中樞可確保包含所有必要的診斷資訊，以協助我們的工程師快速地偵測和解決問題。
 
 >[!NOTE]
 >請務必接受提示，詢問您是否要意見反應中樞存取您的 [檔] 資料夾， (在出現提示時選取 **[是]**) 。

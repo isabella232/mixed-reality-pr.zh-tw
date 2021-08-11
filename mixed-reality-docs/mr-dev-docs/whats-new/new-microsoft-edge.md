@@ -6,29 +6,29 @@ ms.author: mazeller
 ms.date: 08/04/2020
 ms.topic: article
 keywords: edge、new、沉浸式 web、microsoft edge、browser、vr、360、360 video、360 viewer、webxr、webvr
-ms.openlocfilehash: 041c374e1e2120c3aac35bd09889b8594825a186
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 51efc5c4d3afb4d46ba7722867514f740a9f60a4280652fdbd665134f83af23d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98582504"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218820"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>Windows Mixed Reality 的新 Microsoft Edge
 
 [新的 Microsoft Edge 現在已可供下載](https://blogs.windows.com/windowsexperience/?p=173496)，但客戶也可以[等候未來的更新](https://blogs.windows.com/msedgedev/2020/01/15/upgrading-new-microsoft-edge-79-chromium/)，在未來幾個月內依照測量出的推出方法，以 Windows 10 進行安裝。 
 
-有了這項新聞， **我們想要讓 WINDOWS MIXED REALITY VR 耳機客戶知道新 Microsoft Edge 的預期，並顯示擱置的更新，以改善 Windows Mixed Reality 中的流覽體驗**。
+有了這項新聞，**我們想要讓 Windows Mixed Reality VR 耳機客戶知道新 Microsoft Edge 的預期，並顯示擱置的更新，以改善 Windows Mixed Reality 中的流覽體驗**。
 
 ## <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
 
-新的 Microsoft Edge [採用桌面上的 Chromium 開放原始碼專案](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/) ，為客戶建立更好的相容性，並為 網頁程式開發人員提供較少的 web 片段。 它也支援在啟動時 WebXR，這是建立 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
+新的 Microsoft Edge 採用桌上型電腦上[Chromium 的開放原始碼專案](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)，為客戶建立更好的相容性，並為 網頁程式開發人員提供較少的 web 片段。 它也支援在啟動時 WebXR，這是建立 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
 
 >[!IMPORTANT]
 >當您在最新的 Windows 10 裝置上安裝 Microsoft Edge 時，將會取代您電腦上先前 (舊版) 版本。
 
 ## <a name="getting-ready-for-the-new-microsoft-edge"></a>準備迎接新的 Microsoft Edge
 
-如果您想要在混合實境首頁中使用新 Microsoft Edge 的 Windows Mixed Reality VR 耳機客戶應該 **升級至 Windows 10 1903 版或更新版本，以進行 Win32 應用程式的原生支援， (例如 Microsoft Edge 中的新) 混合實境首頁** 。 請檢查 Windows Update 或 [手動安裝最新版本的 Windows 10](https://www.microsoft.com/en-us/software-download/windows10)。
+Windows Mixed Reality如果您想要在混合實境首頁中使用新 Microsoft Edge 的 VR 耳機客戶應該 **升級至 Windows 10 1903 版或更新版本，以進行 Win32 應用 (程式的原生支援，如 Microsoft Edge 中新的) 混合實境首頁**。 請檢查 Windows Update 或[手動安裝最新版本的 Windows 10](https://www.microsoft.com/en-us/software-download/windows10)。
 
 為了充分利用混合實境首頁中的最佳 Microsoft Edge 經驗，我們也建議您等候 **新 Microsoft Edge 的一些關鍵 Windows Mixed Reality 優化，以取得 Windows 10 1903 版或更新版本 (的2020-01 累積更新**，這應該會在1月底的) 中提供。
 
@@ -48,7 +48,7 @@ ms.locfileid: "98582504"
 
 ### <a name="monitor-and-input-handling-issues"></a>監視和輸入處理問題
 
-取得 Windows 10 1903 版 (或更新版本) 的2020-01 累積更新之後，虛擬監視器會顯示為 [設定] 中的一般實體監視器， **> 系統 >** 在 Windows Mixed Reality 會話期間顯示。 某些客戶（尤其是有一個以上的實體監視器）可能會發現桌上出版面配置和輸入處理的問題。
+針對 Windows 10 1903 版 (或更新版本) 取得2020-01 累積更新之後，虛擬監視器將會在 > 會話期間顯示為 **設定 > 系統 Windows Mixed Reality 顯示** 的一般實體監視器。 某些客戶（尤其是有一個以上的實體監視器）可能會發現桌上出版面配置和輸入處理的問題。
 
 **發生這種情況的原因**
 
@@ -69,7 +69,7 @@ ms.locfileid: "98582504"
 >停用虛擬監視器預先配置，可能會在您啟動 Win32 應用程式 (例如串流、新 Microsoft Edge 或 Windows Mixed Reality 中的 Google Chrome) 時，導致您的耳機顯示短暫凍結。
 
 若要停用虛擬監視器預先配置：
-1. 檢查上面所列的其中一個 Windows 10 累積更新預覽版本的 **Windows Update** ，並在可用時安裝更新。 您可以在 [Windows Update 設定] 頁面上的 [ **選用更新** ] 或 [ **Advanced options** ] 下找到更新
+1. 檢查上面所列的其中一個 Windows 10 累積更新預覽版本的 **Windows Update** ，並在可用時安裝更新。 您可以在 [Windows Update 設定] 頁面上的 [**選用更新**] 或 [ **Advanced options** ] 下找到更新
 2. 啟動 **登錄編輯程式**
 3. 流覽至 [HKEY_CURRENT_USER\SOFTWARE\Microsoft\Windows\CurrentVersion\Holographic\"
 4. 如果 "PreallocateVirtualMonitors" REG_DWORD 不存在，請選取 [ **編輯 > New > DWORD (32 位) 值** ，然後輸入 PreallocateVirtualMonitors 做為名稱來建立它。

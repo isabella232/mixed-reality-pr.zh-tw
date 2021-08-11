@@ -7,12 +7,12 @@ ms.date: 07/01/2021
 ms.topic: article
 keywords: 混合實境, 全像攝影, AR, VR, MR, XR, 擴增實境, 虛擬實境, 說明, 案例研究, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 什麼是虛擬實境, 什麼是擴增實境
 ms.localizationpriority: high
-ms.openlocfilehash: 088bc9a978bd236069ddc1beab40387c607b906e
-ms.sourcegitcommit: b0b49ad27a0d09eb0a3d5df0c766bb4b7bbd8208
+ms.openlocfilehash: fc2686c409883e948f1e5f3a631060a66cd55849f998f94a201801ac10b65808
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/12/2021
-ms.locfileid: "113634319"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115205038"
 ---
 # <a name="what-is-mixed-reality"></a>什麼是混合實境？
 

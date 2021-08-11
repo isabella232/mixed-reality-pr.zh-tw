@@ -6,12 +6,12 @@ ms.author: v-vtieto
 ms.date: 07/27/2021
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、診斷、效能
-ms.openlocfilehash: f467b32ddab231286fc916916b0a40f210a66eb1
-ms.sourcegitcommit: 9831b89a1641ba1b5df14419ee2a4f29d3fa2d64
+ms.openlocfilehash: 1e286612035a34c1bac174a620c350a91eb2b0fd59c3e808fe3a99368e03f43c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/29/2021
-ms.locfileid: "114757016"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217138"
 ---
 # <a name="holographic-remoting-player"></a>全像攝影遠端播放程式
 

@@ -6,17 +6,17 @@ ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、手勢、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 1431c9b53657e2cec1bd6ade1a3629e628e15917
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+ms.openlocfilehash: 75cfb836e5a9702c1d949ed57450984081db0c5d6ec14c76cae5148edf637e7e
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269984"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206418"
 ---
 # <a name="hololens-1st-gen-input-211-gesture"></a>HoloLens (第1代) 輸入211：手勢
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
 [手勢](../../../design/gaze-and-commit.md#composite-gestures) 將使用者意圖變成行動。 透過手勢，使用者可以與全像投影互動。 在此課程中，我們將瞭解如何追蹤使用者的手、回應使用者輸入，並根據手邊的州和地點將意見反應提供給使用者。
 
@@ -60,7 +60,7 @@ ms.locfileid: "106269984"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-211-Gesture)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-211-Gesture)取得。
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
@@ -75,31 +75,31 @@ ms.locfileid: "106269984"
 3. 流覽至您先前取消封存的 **手勢** 資料夾。
 4. 尋找並選取 [**啟動** / **模型瀏覽器**] 資料夾。
 5. 按一下 [ **選取資料夾** ] 按鈕。
-6. 在 [ **專案** ] 面板中，展開 [ **場景** ] 資料夾。
+6. 在 **Project** 面板中，展開 [**場景**] 資料夾。
 7. 按兩下 [ **ModelExplorer** 場景]，以在 Unity 中載入。
 
 ### <a name="building"></a>建置
 
-1. 在 Unity 中，選取 [ **File > Build Settings**]。
+1. 在 Unity 中，選取 [ **File > Build 設定**]。
 2. 如果 **場景/ModelExplorer** 未列在 **組建的場景** 中，請按一下 [ **新增開啟場景** ] 以加入場景。
-3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
+3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設為 **HoloLens**。 否則，請將它保留在 **任何裝置** 上。
 4. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
 5. 按一下 [建置]。
 6. 建立名為 "App" 的 **新資料夾** 。
 7. 按一下 **應用程式** 資料夾。
-8. 按下 [ **選取資料夾** ]，Unity 就會開始建立 Visual Studio 的專案。
+8. 按下 [**選取資料夾**]，Unity 就會開始建立 Visual Studio 的專案。
 
 當 Unity 完成時，將會出現檔案總管視窗。
 
 1. 開啟 **應用程式** 資料夾。
 2. 開啟 **ModelExplorer Visual Studio 方案**。
 
-如果要部署到 HoloLens：
+如果部署至 HoloLens：
 
 1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
 2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+3. 輸入 **您的 HoloLens 裝置 IP 位址**，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 **設定 > 網路 & 網際網路 > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將[它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 5. 部署應用程式之後，請使用 **選取手勢** 來關閉 **Fitbox** 。
 
 如果部署到沉浸式耳機：
@@ -138,7 +138,7 @@ ms.locfileid: "106269984"
 接下來，我們會根據使用者的動作，將我們的資料指標從 [MR 輸入 210](holograms-210.md) 升級為一個顯示意見反應的資料指標。
 
 1. **在 [階層**] 面板中，選取資料 **指標** 物件，並將其刪除。
-2. 在 [ **專案** ] 面板中，搜尋 **CursorWithFeedback** ，然後將它拖曳 **至 [階層** ] 面板中。
+2. 在 **Project** 面板中，搜尋 **CursorWithFeedback** ，然後將它拖曳到 **[階層**] 面板中。
 3. 按一下 [階層 **] 面板中的 [** **InputManager** ]，然後將 [ **CursorWithFeedback** ] 物件從階層 **拖曳至偵測****器** 底部的 InputManager **SimpleSinglePointerSelector** 資料 **指標** 欄位中。
 4. 按一下階層 **中的** **CursorWithFeedback** 。
 5. 在 [偵測 **器**] 面板中，展開物件資料 **指標** 腳本上的 **資料指標狀態資料**。
@@ -151,12 +151,12 @@ ms.locfileid: "106269984"
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-* 在 Unity 中，使用檔案 **> 組建設定** 來重建應用程式。
+* 在 Unity 中，請使用 **File > Build 設定** 重建應用程式。
 * 開啟 **應用程式** 資料夾。
 * 如果尚未開啟，請開啟 **ModelExplorer Visual Studio 方案**。
   *  (如果您已在安裝期間于 Visual Studio 中建立或部署此專案，則您可以開啟 VS 的實例，然後在出現) 提示時按一下 [全部重載]。
-* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
-* 將應用程式部署到 HoloLens 之後，請使用 [點一下手勢] 來關閉 fitbox。
+* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試**]，或按 **Ctrl + F5**。
+* 將應用程式部署至 HoloLens 之後，請使用 [點一下手勢] 來關閉 fitbox。
 * 將您的手移至視野，並將您的索引手指指向天空以開始進行追蹤。
 * 將您的手靠左、靠右、向上和向下移動。
 * 觀賞偵測到您手上的游標變更，然後從 view 遺失。
@@ -175,7 +175,7 @@ ms.locfileid: "106269984"
 若要在我們的應用程式中使用導覽手勢，我們將會在導覽手勢發生時，編輯 **GestureAction** 來旋轉物件。 此外，我們會將意見反應新增至游標，以在流覽可供使用時顯示。
 
 1. **在 [階層**] 面板中，展開 [ **CursorWithFeedback**]。
-2. 在 [全像 **] 資料夾中** ，尋找 **ScrollFeedback** 資產。
+2. 在 [**全像投影**] 資料夾中，尋找 **ScrollFeedback** 資產。
 3. 將 **ScrollFeedback** 預製專案拖放到階層中的 **CursorWithFeedback** **GameObject。**
 4. 按一下 [ **CursorWithFeedback**]。
 5. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
@@ -300,9 +300,9 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-1. 在 Unity 中重建應用程式，然後從 Visual Studio 建立和部署應用程式，以在 HoloLens 中執行該應用程式。
+1. 在 Unity 中重建應用程式，然後從 Visual Studio 建立並部署，以便在 HoloLens 中執行該應用程式。
 2. 在太空人中，兩個箭號應該會出現在游標的任一邊。 這個新的視覺效果表示可以旋轉太空人。
-3. 將您的手移至天空 (的索引手指) ，讓 HoloLens 開始追蹤您的手。
+3. 將您的手放在 (index 手指指向天空) ，讓 HoloLens 開始追蹤您的手。
 4. 若要旋轉太空人，請將您的索引指向較低的位置，然後向左或向右移動以觸發 NavigationX 手勢。
 
 ## <a name="chapter-3---hand-guidance"></a>第3章-手指引
@@ -319,7 +319,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 1. **在 [階層] 面板中**，選取 [ **CursorWithFeedback** ] 物件。
 2. 在 [偵測 **器** ] 面板中，按一下 [ **新增元件** ] 按鈕。
 3. 在功能表中，輸入搜尋方塊 **手動指引**。 選取搜尋結果。
-4. 在 [ **專案** ] **面板的** [全像] 資料夾中，尋找 **HandGuidanceFeedback** 資產。
+4. 在 **Project** 面板 **全像投影** 資料夾中，尋找 **HandGuidanceFeedback** 資產。
 5. 將 **HandGuidanceFeedback** 資產拖放到 [偵測 **器**] 面板中的 [**手形指導指標**] 屬性。
 
 ### <a name="build-and-deploy"></a>建置和部署
@@ -367,7 +367,7 @@ GestureManager .cs 和 AstronautManager 可讓我們執行下列作業：
 
 接下來，我們將設定資料指標的操作意見反應。
 
-1. 在 [ **專案** ] **面板的** [全像] 資料夾中，尋找 **PathingFeedback** 資產。
+1. 在 **Project** 面板 **全像投影** 資料夾中，尋找 **PathingFeedback** 資產。
 2. 將 **PathingFeedback** 預製專案拖放到階層中的 **CursorWithFeedback** **物件。**
 3. **在 [階層**] 面板中，按一下 [ **CursorWithFeedback**]。
 4. 從階層中，將 **PathingFeedback** **物件拖放至偵測****器** 的 [資料 **指標意見**] 元件中的 [偵測 **到的遊戲物件**] 屬性。
@@ -486,8 +486,8 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-* 在 Unity 中重建，然後從 Visual Studio 建立並部署，以在 HoloLens 中執行應用程式。
-* 將您手上的手移至 HoloLens 之前，並提起您的食指以進行追蹤。
+* 在 Unity 中重建，然後從 Visual Studio 建立並部署，以 HoloLens 執行應用程式。
+* 將您的手移至 HoloLens 上方，並將您的索引手指往上移動，以便進行追蹤。
 * 將游標放在太空人上。
 * 說 ' Move 太空人 ' 可將太空人與操作手勢移動。
 * 游標周圍應該會出現四個箭號，以指出程式現在會回應操作事件。
@@ -534,7 +534,7 @@ public class GestureAction : MonoBehaviour, INavigationHandler, IManipulationHan
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-* 試試看！ 建立應用程式，並將其部署到 HoloLens。
+* 試試看！ 建立應用程式，並將其部署至 HoloLens。
 * **展開 [展開模型**] 以查看展開的太空人模型。
 * 使用 **導覽** 來旋轉太空人花色的個別部分。
 * 假設 **Move 太空人** ，然後使用 **操作** 來移動太空人花色的個別部分。

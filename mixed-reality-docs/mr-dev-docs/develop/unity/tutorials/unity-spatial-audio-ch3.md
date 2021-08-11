@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合現實、unity、教學課程、hololens2、空間音訊、MRTK、混合現實工具組、UWP、Windows 10、HRTF、前端相關的傳送功能、回音、Microsoft 空間定位器、影片匯入、影片播放工具
-ms.openlocfilehash: 60b70fc3b7f49f5b39138a218f93c0b37f29b9d9
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 2926301aac9db67d3e72b0511600720c24e5965f52a23faa1230c381a47c9b90
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712876"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115202894"
 ---
 # <a name="3-spatializing-audio-from-a-video"></a>3.從影片空間化音訊
 
@@ -32,11 +32,11 @@ ms.locfileid: "110712876"
 將影片匯入 unity 專案。 在 Unity 功能表中，選取 [**資產** 匯  >  **入新增** 資產匯 
  ![ 入資產]](images/spatial-audio/spatial-audio-03-section1-step1-1.PNG)
 
-在 [匯 **入新資產** ] 視窗中，選取您下載的 **Microsoft HoloLens 空間音效 PTPvx7mDon4** 檔案，然後按一下 [ **開啟** ] 按鈕，將資產匯入至專案中：
+在 [匯 **入新資產**] 視窗中，選取您下載的 **Microsoft HoloLens 空間音效 PTPvx7mDon4** 檔案，然後按一下 [**開啟**] 按鈕，將資產匯入至專案中：
 
 ![選取資產](images/spatial-audio/spatial-audio-03-section1-step1-2.PNG)
 
-調整影片剪輯的品質設定，可確保在 HoloLens 2 上進行順暢的播放。 在 [ **專案** ] 視窗和影片檔案的 [偵測器] 視窗中選取影片檔案，覆 **寫** **Windows Store 應用程式** 的設定，以及：
+調整影片剪輯的品質設定，可確保在 HoloLens 2 上進行順暢的播放。 在 [ **Project** ] 視窗中選取影片檔案，然後在影片檔案的 [偵測器] 視窗中，覆 **寫** **Windows Store 應用程式** 的設定，以及：
 
 * 啟用 **轉碼**
 * 將 **編解碼器** 設定為 H264
@@ -63,17 +63,17 @@ ms.locfileid: "110712876"
 
 ![新增四個](images/spatial-audio/spatial-audio-03-section2-step1-1.PNG)
 
-現在您需要將 **四** 段影片的材質材質，請在 [**專案**] 視窗中，以滑鼠右鍵按一下並選擇 [**建立** 轉譯  >  **材質**] 來建立轉譯材質元件、為轉譯紋理輸入適當的名稱，例如，_空間音訊材質_：
+現在您需要將 **四** 段影片材質在 **Project** 視窗中，以滑鼠右鍵按一下並選擇 [**建立** 轉譯  >  **材質**] 來建立轉譯材質元件、為轉譯紋理輸入適當的名稱，例如，_空間音訊材質_：
 
 ![建立呈現材質](images/spatial-audio/spatial-audio-03-section2-step1-2.PNG)
 
-選取 [轉譯 **材質** ]，然後在 [偵測器] 視窗中設定 [ **大小** ] 屬性，以符合影片的1280x720 原生解析度。 然後，若要確保 HoloLens 2 的良好轉譯效能，請將 [ **深度緩衝區** ] 屬性設定為 **至少16個位的深度**。
+選取 [轉譯 **材質** ]，然後在 [偵測器] 視窗中設定 [ **大小** ] 屬性，以符合影片的1280x720 原生解析度。 然後，若要確保 HoloLens 2 的良好轉譯效能，請將 [**深度緩衝區**] 屬性設定為 **至少16個位的深度**。
 
 ![轉譯材質屬性](images/spatial-audio/spatial-audio-03-section2-step1-3.PNG)
 
 接下來，使用已建立的轉譯材質 **空間音訊紋理** 作為 **四** 個的材質：
 
-1. 將 [ **空間音訊材質** ] 從 [ **專案** ] 視窗拖曳至階層中的 [ **四** 個]，以將轉譯紋理新增至 [四]
+1. 將 **空間音訊材質** 從 **Project** 視窗拖曳至階層中的 **四個四** 個，以將轉譯紋理新增至四個
 2. 若要確保 HoloLens 2 的良好效能，請選取階層中的 [四]，然後在著色器的 [偵測器] 視窗中選取 [**混合現實工具** 組  >  **標準** 著色器]
 
 ![四材質屬性](images/spatial-audio/spatial-audio-03-section2-step1-4.PNG)
@@ -92,7 +92,7 @@ ms.locfileid: "110712876"
 
 在 **音訊來源** 中：
 
-* 將 **輸出** 設定為 **空間音訊混音** 器
+* 將 **輸出** 設定為 **空間音訊 Mixer**
 * 核取 [ **Spatialize** ] 方塊
 * 將 **空間 Blend** 滑杆移至 1 (3d) 
 

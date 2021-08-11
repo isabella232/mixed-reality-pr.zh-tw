@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: 85792491eb4c349eea3dac4ae227c6736d7a90c2
-ms.sourcegitcommit: 4bb5544a0c74ac4e9766bab3401c9b30ee170a71
+ms.openlocfilehash: 4dde9dcb34553e1ad39d9c732f32f9d0ef174eaf2a6b6fbe7b59b8fdc9facf8d
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/27/2020
-ms.locfileid: "92638636"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115204197"
 ---
 # <a name="all-platforms"></a>[所有平台](#tab/all)
 
@@ -75,7 +75,7 @@ private:
 
 ![使用操縱杆事件](../images/reverb-g2-img-09.png)
 
-最後，使用 SteamVR 在遊戲中註冊動作，方法是使用 [ **重新產生動作資訊清單** ]，然後在專案設定中 **重新產生控制器** 系結按鈕 > 的串流 VR 輸入。
+最後，使用 SteamVR 在遊戲中註冊動作，方法是使用 [**重新產生動作資訊清單**]，然後在 Project 設定 > 串流 VR 輸入中 **重新產生控制器** 系結按鈕。
 
 ![在專案設定中註冊動作](../images/reverb-g2-img-10.png)
 

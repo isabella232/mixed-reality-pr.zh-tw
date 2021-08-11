@@ -7,12 +7,12 @@ ms.date: 04/19/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: 9f12a1eba0c28b89000f1541ba62747a03e3564b
-ms.sourcegitcommit: 286384e6e255135939bce2ab0267a62558837562
+ms.openlocfilehash: fef1edd9e7257985a30739794f4b40164345254e3e76cfa740b3fe9699de79f2
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/19/2021
-ms.locfileid: "107731998"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203705"
 ---
 # <a name="discovering-and-acquiring-features"></a>探索和取得功能
 

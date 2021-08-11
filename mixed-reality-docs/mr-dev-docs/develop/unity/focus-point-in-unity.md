@@ -1,33 +1,33 @@
 ---
 title: Unity 中的焦點
-description: 瞭解如何藉由設定 HoloLens 的焦點點以及 Windows Mixed Reality 的沉浸式耳機，以手動調整 Unity 中的全像影像穩定性。
+description: 瞭解如何藉由設定 HoloLens 的焦點點，並 Windows Mixed Reality 沉浸式耳機，以手動方式調整 Unity 中的全像影像穩定性。
 author: thetuvix
 ms.author: alexturn
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、聚焦點、焦點平面、穩定平面、穩定點、reprojection、LSR、深度緩衝區、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 16f359e1742b86c5f12c0c5965ac9e818ea76aee
-ms.sourcegitcommit: 0db5777954697f1d738469363bbf385481204d24
+ms.openlocfilehash: 91fba310cf86f145174512c4c1e23d69907d2f57f48f3fe1992b417eb283235f
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/27/2021
-ms.locfileid: "105636220"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203590"
 ---
 # <a name="focus-point-in-unity"></a>Unity 中的焦點
 
 **命名空間：** *UnityEngine. XR*<br>
 **類型**： *HolographicSettings*
 
-使用 [焦點](../platform-capabilities-and-apis/hologram-stability.md#reprojection) 來提供 HoloLens，並提供有關如何最好穩定目前顯示的全像投影的提示。
+使用[焦點](../platform-capabilities-and-apis/hologram-stability.md#reprojection)來提供 HoloLens 的提示，告訴您如何最好地穩定目前顯示的全像影像。
 
 如果您想要在 Unity 中設定焦點，必須使用 *HolographicSettings. SetFocusPointForFrame ()* 來設定每個框架。 如果未設定框架的焦點點，則會使用預設穩定平面。
 
 > [!NOTE]
-> 依預設，新的 Unity 專案會設定「啟用深度緩衝區共用」選項。  使用此選項時，在沉浸式桌上型耳機或執行 Windows 10 2018 年4月更新 (RS4) 或更新版本的 HoloLens 上執行的 Unity 應用程式，會將您的深度緩衝區提交至 Windows，以自動優化全像影像穩定性，而不需要您的應用程式指定焦點點：
+> 依預設，新的 Unity 專案會設定「啟用深度緩衝區共用」選項。  使用此選項時，在沉浸式桌上型耳機或 HoloLens 執行 Windows 10 2018 年4月更新 (RS4) 或更新版本中執行的 Unity 應用程式，會將您的深度緩衝區提交至 Windows，以自動優化全像影像穩定性，而不需要您的應用程式指定焦點點：
 > * 在沉浸式桌面耳機上，這會啟用依圖元深度為基礎的 reprojection。
-> * 在執行 Windows 10 2018 年4月更新或更新版本的 HoloLens 上，這會分析深度緩衝區以自動挑選最佳的穩定平面。
+> * 在執行 Windows 10 2018 年4月更新或更新版本的 HoloLens，這會分析深度緩衝區以自動挑選最佳的穩定平面。
 >
-> 這兩種方法都應提供更佳的影像品質，而不會讓您的應用程式明確地為每個畫面格選取焦點點。  請注意，如果您要以手動方式提供焦點，這將會覆寫上述的自動行為，而且通常會減少全像全像全像是。  一般而言，當您的應用程式是在尚未更新為 Windows 10 2018 年4月更新的 HoloLens 上執行時，您應該只指定手動焦點點。
+> 這兩種方法都應提供更佳的影像品質，而不會讓您的應用程式明確地為每個畫面格選取焦點點。  請注意，如果您要以手動方式提供焦點，這將會覆寫上述的自動行為，而且通常會減少全像全像全像是。  一般而言，當您的應用程式在尚未更新 Windows 10 為2018年4月更新的 HoloLens 上執行時，您應該只指定手動焦點點。
 
 ### <a name="example"></a>範例
 

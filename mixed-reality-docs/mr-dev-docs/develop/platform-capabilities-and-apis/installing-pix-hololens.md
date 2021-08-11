@@ -6,32 +6,32 @@ ms.author: flbagar
 ms.date: 12/02/2020
 ms.topic: article
 keywords: HoloLens、HoloLens 2、PIX、捕獲、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 29cb741cd986fbb98dabb1faf2051450fd0286c3
-ms.sourcegitcommit: d3a3b4f13b3728cfdd4d43035c806c0791d3f2fe
+ms.openlocfilehash: 2e5e66ea5a1a2b68d91213c38d88d815f54a28fa5328ab3b2d93f1e267f6f994
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/20/2021
-ms.locfileid: "98583094"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217272"
 ---
 # <a name="installing-pix-for-hololens-2"></a>安裝使用於 HoloLens 2 的 PIX
 
-[PIX](https://devblogs.microsoft.com/pix) 是 Windows 上 DirectX 12 應用程式的效能微調和偵錯工具。 
+[PIX](https://devblogs.microsoft.com/pix)是 Windows 上 DirectX 12 應用程式的效能微調和偵錯工具。 
 
-## <a name="setup"></a>安裝程式
+## <a name="setup"></a>設定
 
-1. 從您的主機電腦抓取最新的 PIX [版本]( https://devblogs.microsoft.com/pix/download) ，並透過 USB 纜線將您的 HoloLens 2 連接到您的電腦。
+1. 從您的主機電腦抓取最新的 PIX[版本]( https://devblogs.microsoft.com/pix/download)，並透過 USB 纜線將您的 HoloLens 2 連接到您的電腦。
 
-2. 如果您的 HoloLens 2 是在 [Windows 測試人員組建](https://insider.windows.com) 上，或具有會中斷 PIX 的設定，請  [重新刷新您的裝置](/hololens/hololens-recovery) 以清除所有資料。
+2. 如果您的 HoloLens 2 是在[Windows 測試人員組建](https://insider.windows.com)上，或具有會中斷 PIX 的設定，請[重新刷新您的裝置](/hololens/hololens-recovery)以清除所有資料。
 
 3. 啟用 **開發人員模式** 和 **裝置入口網站**：
 
-* 從混合現實首頁開啟 **設定** ：
+* 從混合現實首頁開啟 **設定**：
 
-![反白顯示 [設定] 按鈕的 HoloLens 功能表螢幕擷取畫面](images/pix-img-01.jpg)
+![反白顯示 [設定] 按鈕的 [HoloLens] 功能表的螢幕擷取畫面](images/pix-img-01.jpg)
 
 * 選取 [ **更新 & 安全性**：
 
-![醒目提示 [更新] 和 [安全性] 按鈕的 HoloLens 開啟 [設定] 視窗的螢幕擷取畫面](images/pix-img-02.jpg)
+![醒目提示 [更新] 和 [安全性] 按鈕之 HoloLens 上開啟 [設定] 視窗的螢幕擷取畫面](images/pix-img-02.jpg)
 
 * **針對開發人員** 選取：
 
@@ -46,11 +46,11 @@ ms.locfileid: "98583094"
 * 如果裝置仍連線、喚醒，以及使用者登入，請啟動 Visual Studio。
 
 > [!IMPORTANT]
-> 請確定您的裝置不在待命模式或睡眠狀態。 如果您在此步驟中遇到問題，請參閱 [Windows 裝置入口網站的指示](./using-the-windows-device-portal.md)。
+> 請確定您的裝置不在待命模式或睡眠狀態。 如果您在此步驟中遇到問題，請參閱[Windows 裝置入口網站的指示](./using-the-windows-device-portal.md)。
 
 ## <a name="preparing-for-deployment"></a>準備部署
 
-1. 在 Visual Studio 中，將 **ARM64** 設定為裝置的平臺和 **裝置** ：
+1. 在 Visual Studio 中，將 **ARM64** 設定為裝置的平臺和 **裝置**：
 
 ![醒目提示平臺和裝置設定的 visual studio 解決方案螢幕擷取畫面](images/pix-img-06.png)
 
@@ -76,7 +76,7 @@ ms.locfileid: "98583094"
 
 ![PIX 應用程式主畫面的螢幕擷取畫面](images/pix-img-10.png)
 
-* 從左側功能表中選取 **[連線]** ：
+* 從左側功能表中選取 [**連線**：
 
 ![已反白顯示 [連線] 按鈕的 PIX 應用程式左側功能表的螢幕擷取畫面](images/pix-img-11.png)
 
@@ -84,14 +84,14 @@ ms.locfileid: "98583094"
     * 別名：由使用者自行決定
     * 主機名稱或 IP 位址：127.0.0。1
 
-3. 選取 [**電腦**] 索引標籤右下角的 **[** 連線]：
+3. 選取 [**電腦**] 索引標籤右下角的 **連線**：
 
 ![已反白顯示 [別名]、[主機名稱]、[IP 位址] 和 [新增] 按鈕的 PIX 應用程式連線視窗](images/pix-img-12.png)
 
 > [!NOTE]
 > 第一個連接一律會變慢，因為正在複製二進位檔。
 
-4. 當 PIX 連接到 HoloLens 2 時，請在 [啟動 UWP] 索引標籤的 [ **選取目標進程** ] 區段中尋找您的應用程式，然後選取 [ **啟動**]：
+4. 當 PIX 連接到 HoloLens 2 時，請在 [啟動 UWP] 索引標籤的 [**選取目標進程**] 區段中尋找您的應用程式，然後選取 [**啟動**]：
 
 ![已反白顯示 [選取目標進程] 視窗和 [啟動] 按鈕的 PIX 應用程式螢幕擷取畫面](images/pix-img-13.png)
 

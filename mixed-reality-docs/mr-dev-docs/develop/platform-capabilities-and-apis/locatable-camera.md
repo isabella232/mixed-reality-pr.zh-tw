@@ -1,21 +1,21 @@
 ---
 title: 定位相機
-description: HoloLens 正面相機、運作方式，以及可供開發人員使用的設定檔和解決方案的一般資訊。
+description: 有關 HoloLens 正面攝影機、其運作方式，以及可供開發人員使用的設定檔和解決方案的一般資訊。
 author: cdedmonds
 ms.author: wguyman
 ms.date: 06/12/2019
 ms.topic: article
 keywords: 攝影機、hololens、彩色攝影機、正面、hololens 2、cv、電腦視覺、基準、標記、qr 代碼、qr、相片、影片
-ms.openlocfilehash: f34973fee56f9469632b320a62dd441ed32e5805
-ms.sourcegitcommit: 63b7f6d5237327adc51486afcd92424b79e6118b
+ms.openlocfilehash: 33faa4107c6b44041958f422329d8967958a666606a474949184628abcd12544
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/26/2021
-ms.locfileid: "98810157"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115217094"
 ---
 # <a name="locatable-camera"></a>定位相機
 
-HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式查看使用者看到的內容。 開發人員可以存取和控制攝影機，就像在 smartphone、筆記本電腦或桌上型電腦上的彩色攝影機一樣。 適用于行動裝置和桌上型電腦的相同通用 windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture) 和 windows Media foundation api 可在 HoloLens 上運作。 Unity [已將這些 Windows api 包裝](../unity/locatable-camera-in-unity.md) 成可在 HoloLens 上抽象化相機使用功能。 功能工作包括將一般相片和影片 (與或不含全像投影) ，以及在場景中找出相機的位置和觀點。
+HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式查看使用者看到的內容。 開發人員可以存取和控制攝影機，就像在 smartphone、筆記本電腦或桌上型電腦上的彩色攝影機一樣。 適用于行動裝置和桌上型電腦的相同通用 windows [media capture](/uwp/api/Windows.Media.Capture.MediaCapture)和 windows Media foundation api 可在 HoloLens 上運作。 Unity[已包裝這些 Windows api](../unity/locatable-camera-in-unity.md) ，以 HoloLens 上的相機使用功能。 功能工作包括將一般相片和影片 (與或不含全像投影) ，以及在場景中找出相機的位置和觀點。
 
 ## <a name="device-camera-information"></a>裝置相機資訊
 
@@ -67,7 +67,7 @@ HoloLens 包含掛接在裝置前方的全球面向相機，可讓應用程式�
 
 當 HoloLens 拍攝相片和影片時，所捕捉的框架會包含相機在世界的位置，以及相機的鏡頭模型。 這可讓應用程式在真實世界中的相機位置，以增強影像案例。 開發人員可以使用其最愛的影像處理或自訂電腦視覺程式庫，以創造性的來變換自己的案例。
 
-HoloLens 檔中其他位置的「相機」可能參考「虛擬遊戲攝影機」 (應用程式轉譯為) 的錐。 除非另有指示，否則這個頁面上的「相機」是指真實的 RGB 色攝影機。
+HoloLens 檔中其他位置的「相機」可能參考「虛擬遊戲攝影機」 (應用程式轉譯成) 的錐。 除非另有指示，否則這個頁面上的「相機」是指真實的 RGB 色攝影機。
 
 ### <a name="using-unity"></a>使用 Unity
 
@@ -173,19 +173,19 @@ private:
 
 ### <a name="distortion-error"></a>扭曲錯誤
 
-在 HoloLens 上，影片和靜止影像串流會在系統的影像處理管線中 undistorted，然後才會將框架提供給應用程式 (預覽資料流程包含) 的原始失真畫面。 由於只有 CameraIntrinsics 可供使用，因此應用程式必須假設圖像框架代表完美的 pinhole 攝影機。
+在 HoloLens 上，影片和靜止影像資料流程會在系統的影像處理管線中 undistorted，然後才會將框架提供給應用程式 (預覽資料流程包含) 的原始失真畫面。 由於只有 CameraIntrinsics 可供使用，因此應用程式必須假設圖像框架代表完美的 pinhole 攝影機。
 
-在 HoloLens (第一代) ，在框架中繼資料中使用 CameraIntrinsics 時，映射處理器中的 undistortion 函式可能仍會保留最多10圖元的錯誤。 在許多使用案例中，此錯誤並不重要，但如果您要將影像對齊真實的海報/標記，而您注意到 <的10圖元位移 (大約是 11 mm 的空間，代表2計量離開) ，則可能造成失真錯誤。 
+在 HoloLens (第一代) 上，在框架中繼資料中使用 CameraIntrinsics 時，映射處理器中的 undistortion 函式可能仍會保留最多10圖元的錯誤。 在許多使用案例中，此錯誤並不重要，但如果您要將影像對齊真實的海報/標記，而您注意到 <的10圖元位移 (大約是 11 mm 的空間，代表2計量離開) ，則可能造成失真錯誤。 
 
 ## <a name="locatable-camera-usage-scenarios"></a>的相機使用案例
 
 ### <a name="show-a-photo-or-video-in-the-world-where-it-was-captured"></a>顯示在世界中的拍攝相片或影片
 
-裝置相機框架隨附「相機到世界」轉換，可用來顯示裝置在拍攝影像時的確切位置。 例如，您可以將小型全像攝影圖示放置在此位置， (CameraToWorld MultiplyPoint (Vector3。零) # A3，甚至在相機面對的方向繪製一個小箭號 (CameraToWorld. MultiplyVector (Vector3. 轉寄) # A7。
+裝置相機框架隨附「相機到世界」轉換，可用來顯示裝置在拍攝影像時的確切位置。 例如，您可以將小型的全像攝影圖示放置在此位置， (CameraToWorld MultiplyPoint (Vector3) ) ，甚至在相機面對的方向繪製一個小箭號 (CameraToWorld. MultiplyVector (Vector3. 轉寄) ) 。
 
 ### <a name="tag--pattern--poster--object-tracking"></a>標記/模式/海報/物件追蹤
 
-許多混合現實應用程式都使用可辨識的影像或視覺模式來建立空間中的可追蹤點。 然後，這會用來呈現相對於該點的物件，或建立已知位置。 HoloLens 的一些用途包括尋找以 fiducials 標記的真實世界物件 (例如，具有 QR 代碼) 的電視監視器、將 fiducials 放在，以及以視覺化方式與非 HoloLens 裝置（例如已設定為透過 Wi-fi 與 HoloLens 通訊的平板電腦）配對。
+許多混合現實應用程式都使用可辨識的影像或視覺模式來建立空間中的可追蹤點。 然後，這會用來呈現相對於該點的物件，或建立已知位置。 HoloLens 的某些用途包括尋找以 fiducials 標記的真實世界物件 (例如，具有 QR 代碼) 的電視監視器、將 fiducials 放在，以及以視覺化方式與非 HoloLens 裝置（例如已設定為透過 wi-fi 與 HoloLens 進行通訊的平板電腦）。
 
 您需要一些東西來辨識視覺效果模式，並將物件放在應用程式世界空間中：
 1. 影像模式辨識工具組，例如 QR 代碼、AR 標記、臉部搜尋工具、圓形追蹤器、OCR 等等。

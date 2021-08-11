@@ -5,18 +5,18 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 0813b6573beea1f66d54a29259d24309e750e471
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c5134f20275183d48af13f44255ca25e8d29ee44edf7c54054e56881e07b5f60
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702174"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218530"
 ---
 # <a name="eye-supported-navigation-in-mrtk"></a>MRTK 中的眼睛支援導覽
 
 ![MRTK](../images/eye-tracking/mrtk_et_navigation.png)
 
-假設您是在手上讀取資訊，當您到達顯示文字的結尾時，文字會自動向上滾動以顯示更多內容。 或者，您可以流暢放大查看的位置。 地圖也會自動調整內容，以在您的視圖欄位中保留感興趣的專案。 另一個有趣的應用程式是：自動將您想要的全像是您想要的全像投影部分，將您想要的全像投影零件帶到最前面。 以下是此頁面在支援的導覽內容中所描述的一些範例。
+Imagine 您正在閱讀手上的資訊，當您到達所顯示文字的結尾時，文字會自動向上滾動以顯示更多內容。 或者，您可以流暢放大查看的位置。 地圖也會自動調整內容，以在您的視圖欄位中保留感興趣的專案。 另一個有趣的應用程式是：自動將您想要的全像是您想要的全像投影部分，將您想要的全像投影零件帶到最前面。 以下是此頁面在支援的導覽內容中所描述的一些範例。
 
 下列說明假設您已經熟悉如何 [在 MRTK 場景中設定眼睛追蹤](eye-tracking-basic-setup.md) ，以及如何在 MRTK Unity 中 [存取眼睛追蹤資料](eye-tracking-target-selection.md) 的基本概念。
 下列範例中所討論的範例都是 `EyeTrackingDemo-03-Navigation` (資產/MRTK/範例/示範/EyeTracking/場景/EyeTrackingDemo-03-導覽) 場景的一部分。
@@ -59,7 +59,7 @@ SkimProofUpdateSpeed | 值越低，skimming 後滾動的速度就越慢。 建�
 
 ## <a name="gaze-supported-pan-and-zoom"></a>注視支援的平移和縮放
 
-誰之前未使用虛擬對應來搜尋其首頁或探索全新的位置？ 眼睛追蹤可讓您直接深入瞭解您感興趣的部分，一旦放大之後，您就可以順暢地遵循街道的課程來探索您的鄰近地區！
+神秘在搜尋首頁或探索全新位置之前，尚未使用虛擬對應？ 眼睛追蹤可讓您直接深入瞭解您感興趣的部分，一旦放大之後，您就可以順暢地遵循街道的課程來探索您的鄰近地區！
 這不僅適用于探索地理地圖，也可以查看相片、資料視覺效果或甚至是即時串流醫療影像的詳細資料。 若要在您的應用程式中使用這項功能很簡單！ 針對轉譯成 [材質]( https://docs.unity3d.com/ScriptReference/Texture.html) 的內容 (例如，相片、串流處理的資料) ，只要新增 [PanZoomTexture](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomTexture) 腳本即可。
 若為 [RectTransform](https://docs.unity3d.com/ScriptReference/RectTransform.html) ，請使用 [PanZoomRectTransf](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.PanZoomRectTransf)。 在擴充 [自動滾動](#auto-scroll) 功能的同時，我們基本上可讓您同時垂直和水準滾動，並在使用者目前的焦點點周圍放大內容。
 
@@ -86,7 +86,7 @@ SkimProofUpdateSpeed | 值越低，skimming 後滾動的速度就越慢。 建�
 
 ## <a name="attention-based-3d-rotation"></a>以注意力為基礎的3D 旋轉
 
-想像一下3D 物件，以及您想要更仔細地看的部分，就像系統會讀著您的想法，並知道要將專案轉變成您一樣！
+Imagine 查看3d 物件和您想要看到的部分，讓您更安心地轉向您的工作，就像系統會閱讀您的想法，並知道如何將專案轉變成您一樣！
 這是以提示為基礎的3D 旋轉的概念，可讓您調查全像影像的所有側邊，而不需要抬起手指。
 若要啟用此行為，只要將 [OnLookAtRotateByEyeGaze](xref:Microsoft.MixedReality.Toolkit.Examples.Demos.EyeTracking.OnLookAtRotateByEyeGaze) 腳本新增至具有 [碰撞](https://docs.unity3d.com/ScriptReference/Collider.html) 元件的 GameObject 部分即可。
 您可以調整以下所列的數個參數，以限制全息圖的速度和方向。

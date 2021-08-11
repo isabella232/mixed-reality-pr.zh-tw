@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，自訂視覺，物件偵測，混合現實，學院，unity，教學課程，api，hololens，Windows 10，Visual Studio
-ms.openlocfilehash: 29b3622e510a0d97ee3f1dea04661b7d6ab51f9f
-ms.sourcegitcommit: 35bd43624be33afdb1bf6ba4ddbe36d268eb9bda
+ms.openlocfilehash: 85a99b676f6765696524bc42adf257b3430c00cc955413b4c299ddb58502cefb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/20/2021
-ms.locfileid: "104730345"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216572"
 ---
 # <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (第1代) 和 Azure 310：物件偵測
 
@@ -55,7 +55,7 @@ ms.locfileid: "104730345"
 </tr>
 </table>
 
-## <a name="prerequisites"></a>Prerequisites
+## <a name="prerequisites"></a>必要條件
 
 > [!NOTE]
 > 本教學課程是專為擁有 Unity 和 c # 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和書面指示，代表在撰寫 (2018 年7月) 時已經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than what is listed below.
@@ -74,12 +74,12 @@ ms.locfileid: "104730345"
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
-2.  設定及測試 HoloLens。 如果您需要設定 HoloLens 的支援， [請務必造訪 HoloLens 安裝文章](/hololens/hololens-setup)。 
-3.  開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助針對每個使用者) 執行這些工作。 
+2.  設定及測試您的 HoloLens。 如果您需要設定 HoloLens 的支援，[請務必造訪 HoloLens 安裝程式文章](/hololens/hololens-setup)。 
+3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。 
 
-如需有關校正的說明，請遵循此 [與 HoloLens 校正文章相關的連結](/hololens/hololens-calibration#hololens-2)。
+如需有關校正的說明，請遵循此[連結來 HoloLens 校正文章](/hololens/hololens-calibration#hololens-2)。
 
-如需有關感應器微調的說明，請依照此 [連結來進行「HoloLens 感應器微調」文章](/hololens/hololens-updates)。
+如需有關感應器微調的說明，請依照此[連結前往 HoloLens 感應器微調文章](/hololens/hololens-updates)。
 
 ## <a name="chapter-1---the-custom-vision-portal"></a>第1章-自訂視覺入口網站
 
@@ -101,7 +101,7 @@ ms.locfileid: "104730345"
 
     ![](images/AzureLabs-Lab310-03.png)
 
-6.  同意條款之後，您現在就可以在 [ *我的專案* ] 區段中。 按一下 [ **新增專案**]。
+6.  同意條款之後，您現在就可以在 [ *我的專案* ] 區段中。 按一下 [**新增 Project**]。
 
     ![](images/AzureLabs-Lab310-04.png)
 
@@ -118,7 +118,7 @@ ms.locfileid: "104730345"
         > [!NOTE]
         > 如果您想要[閱讀更多有關 Azure 資源群組的資訊，請流覽至相關聯的](/azure/azure-resource-manager/resource-group-portal)檔
 
-    4.  將 **專案類型** 設定為 **物件偵測 (預覽)**。
+    4.  將 **Project 類型** 設定為 **物件偵測 (預覽)**。
 
 8.  完成之後，按一下 [ **建立專案**]，系統就會將您重新導向至自訂視覺服務專案] 頁面。
 
@@ -154,7 +154,7 @@ ms.locfileid: "104730345"
 
     ![](images/AzureLabs-Lab310-10.png)
 
-6.  當您選取要用來定型專案的所有影像之後，請按 **[上傳** 檔案]。 檔案將會開始上傳。 確認上傳之後，請按一下 [ **完成**]。
+6.  一旦選取您要用來定型專案的所有影像，請按 **Upload** 檔案。 檔案將會開始上傳。 確認上傳之後，請按一下 [ **完成**]。
 
     ![](images/AzureLabs-Lab310-11.png)
 
@@ -194,7 +194,7 @@ ms.locfileid: "104730345"
     > [!NOTE] 
     > 由此提供的端點會設定為已標示為預設值的任何 *反復* 專案。 因此，如果您稍後建立新的 *反復* 專案，並將其更新為預設值，您就不需要變更程式碼。
 
-14. 當您按一下 [ **預測 URL**] 之後，請開啟 [ *記事本*]，然後複製並貼上 **URL** (也稱為您的 **預測端點**) 和 **服務預測金鑰**，讓您可以在稍後於程式碼中需要時加以取出。
+14. 當您按一下 [**預測 URL**] 之後，請開啟 *記事本*，然後複製並貼上 **URL** (也稱為您的 **預測端點**) 和 **服務預測金鑰**，以便稍後在程式碼中需要時加以取出。
 
     ![](images/AzureLabs-Lab310-20.png)
 
@@ -214,26 +214,26 @@ ms.locfileid: "104730345"
 
     ![](images/AzureLabs-Lab310-23.png)
 
-4.  接下來，移至 [檔案 **> 組建設定** ]，並將 **平臺** 切換至 [ *通用 Windows 平臺*]，然後按一下 [ **切換平臺** ] 按鈕。
+4.  接下來，移至 [檔案 **> 組建] 設定** 並將 **平臺** 切換至 [*通用 Windows 平臺*]，然後按一下 [**切換平臺**] 按鈕。
 
     ![](images/AzureLabs-Lab310-24.png)
 
-5.  在相同的 [ **組建設定** ] 視窗中，確定已設定下列各項：
+5.  在相同的 **組建設定** 視窗中，確定已設定下列各項：
 
     1.  **目標裝置** 設定為 **HoloLens**        
     2.  **組建類型** 設定為 **D3D**
     3.  **SDK** 已設定為 **最新安裝**
     4.  **Visual Studio 版本** 設定為 **最新安裝**
     5.  **組建並執行** 設定為 **本機電腦**            
-    6.  [ **組建設定**] 中的其餘設定，現在應該保持為預設值。
+    6.  [**組建設定**] 中的其餘設定，現在應該保持為預設值。
 
         ![](images/AzureLabs-Lab310-25.png)
 
-6.  在相同的 [ **組建設定** ] 視窗中，按一下 [ **播放程式設定** ] 按鈕，這會開啟偵測 **器** 所在空間中的相關面板。
+6.  在相同的 **組建設定** 視窗中，按一下 [**播放** 程式] 設定按鈕，這會開啟偵測 **器** 所在空間中的相關面板。
 
 7. 在此面板中，需要驗證幾個設定：
 
-    1.  在 [ **其他設定** ] 索引標籤中：
+    1.  在 [**其他設定**] 索引標籤中：
 
         1.  **腳本執行階段版本** 應該是 **實驗** ( .net 4.6 對等) ，這會觸發重新開機編輯器的需求。
 
@@ -243,7 +243,7 @@ ms.locfileid: "104730345"
 
             ![](images/AzureLabs-Lab310-26.png)
 
-    2.  在 [ **發行設定** ] 索引標籤的 [ **功能**] 下，選取：
+    2.  在 [**發行設定**] 索引標籤的 [**功能**] 下，選取：
 
         1. **InternetClient**
 
@@ -253,19 +253,19 @@ ms.locfileid: "104730345"
 
             ![](images/AzureLabs-Lab310-27.png) ![](images/AzureLabs-Lab310-28.png)
 
-    3.  在面板的 [XR 設定] 中，在 [ **設定** ] (找到的 [ **發佈設定** ]) 、[滴答 **虛擬實境支援**]，並確定已新增 **Windows Mixed Reality SDK** 。
+    3.  接下來的面板中，在 **XR 設定** (的 [**發佈設定**) ]、[滴答 **虛擬實境支援**]，並確定已新增 **Windows Mixed Reality SDK** 。
 
         ![](images/AzureLabs-Lab310-29.png)
 
-8.  回到 **組建設定**， *Unity C \# 專案* 不再呈現灰色：勾選這個旁邊的核取方塊。
+8.  回到 **Build 設定**， *Unity C \# 專案* 不再呈現灰色：勾選這個旁邊的核取方塊。
 
 9.  關閉 [組建設定]  視窗。
 
-10. 在 **編輯器** 中，按一下 [**編輯**  >  **專案設定**  >  **圖形**]。
+10. 在 **編輯器** 中，按一下 [**編輯**]  >  **Project 設定**  >  **圖形**]。
 
     ![](images/AzureLabs-Lab310-30.png)
 
-11. 在 [偵測 **器] 面板** 中， *圖形設定* 將會開啟。 向下鍵，直到您看到名為 [ **永遠包含著色** 器] 的陣列為止。 在此範例中，藉由將 **大小** 變數增加一個 (來新增位置，這是8，因此我們將它設為 9) 。 新的位置會出現在陣列的最後一個位置，如下所示：
+11. 在 [偵測 **器] 面板** 中，*圖形設定* 將會開啟。 向下鍵，直到您看到名為 [ **永遠包含著色** 器] 的陣列為止。 在此範例中，藉由將 **大小** 變數增加一個 (來新增位置，這是8，因此我們將它設為 9) 。 新的位置會出現在陣列的最後一個位置，如下所示：
 
     ![](images/AzureLabs-Lab310-31.png)
 
@@ -305,7 +305,7 @@ ms.locfileid: "104730345"
 
     4.  目前包含此課程之預先建立場景的 **場景** 資料夾。
 
-4.  開啟 [ **場景** ] 資料夾，然後在 [ **專案] 面板** 中按兩下 **ObjDetectionScene**，載入您將在此課程中使用的場景。
+4.  開啟 [**場景**] 資料夾，然後在 [ **Project] 面板** 中按兩下 **ObjDetectionScene**，載入您將在此課程中使用的場景。
 
     ![](images/AzureLabs-Lab310-36.png)
 
@@ -331,7 +331,7 @@ ms.locfileid: "104730345"
 
 若要建立此類別：
 
-1.  以滑鼠右鍵按一下 [**資產] 資料夾**（位於 [**專案] 面板** 中），然後按一下 [**建立**  >  **資料夾**]。 呼叫資料夾 **腳本**。
+1.  以滑鼠右鍵按一下 [**資產] 資料夾**，位於 **Project 面板** 中，然後按一下 [**建立**  >  **資料夾**]。 呼叫資料夾 **腳本**。
 
     ![](images/AzureLabs-Lab310-37.png)
 
@@ -376,7 +376,7 @@ ms.locfileid: "104730345"
     ```
 
     > [!NOTE]
-    > 務必將您的 **服務預測金鑰** 插入至 **predictionKey** 變數，並將您的 **預測端點** 插入至 **predictionEndpoint** 變數。 您先前已將這些複製到「記事本」， [步驟14中的第2章](#chapter-2---training-your-custom-vision-project)。
+    > 務必將您的 **服務預測金鑰** 插入至 **predictionKey** 變數，並將您的 **預測端點** 插入至 **predictionEndpoint** 變數。 您已將這些[記事本複製到先前第2章步驟14中的](#chapter-2---training-your-custom-vision-project)。
 
 7.  現在需要新增 **喚醒 ()** 的程式碼，以初始化執行個體變數：
 
@@ -1239,7 +1239,7 @@ ms.locfileid: "104730345"
 
     ![](images/AzureLabs-Lab310-38.png)
 
-3.  在 [**專案] 面板** 中，開啟 [ **Prefabs] 資料夾**，將 **標籤** 預製專案拖曳到您剛剛新增至 *主要攝影機* 之 **SceneOrganiser** 腳本中的 *卷* 標空白參考目標輸入區域，如下圖所示：
+3.  在 [ **Project] 面板** 中，開啟 [ **Prefabs] 資料夾**，將 **標籤** 預製專案拖曳到您剛剛新增至 *主要攝影機* 之 **SceneOrganiser** 腳本中的 *卷* 標空白參考目標輸入區域，如下圖所示：
 
     ![](images/AzureLabs-Lab310-39.png)
 
@@ -1274,7 +1274,7 @@ ms.locfileid: "104730345"
 
 您現在已準備好將您的應用程式建立為 UWP 解決方案，您將能夠部署至 Microsoft HoloLens。 若要開始建立程式：
 
-1.  移至 [檔案 **> 組建設定**]。
+1.  移至 [檔案 **> 組建] 設定**。
 
 2.  勾選 **Unity C \# 專案**。
 
@@ -1288,15 +1288,15 @@ ms.locfileid: "104730345"
 
 6.  Unity 完成組建之後 (可能需要一些時間) ，它會在您的組建位置開啟 **檔案總管** 視窗 (檢查您的工作列，因為它不一定會出現在您的視窗上方，但會通知您加入新的視窗) 。
 
-7.  若要部署到 Microsoft HoloLens，您將需要該裝置的 IP 位址 (用於遠端部署) ，並確定它也已設定 **開發人員模式** 。 若要這樣做：
+7.  若要部署到 Microsoft HoloLens，您將需要該裝置的 IP 位址 (用於遠端部署) ，並確定它也已設定 **開發人員模式**。 若要這樣做：
 
-    1.  在設置 HoloLens 的同時，開啟 **設定**。
+    1.  在 HoloLens 時，請開啟 **設定**。
 
     2.  前往 **Network & Internet**  >  **wi-fi**  >  **Advanced Options**
 
     3.  記下 **IPv4** 位址。
 
-    4.  接下來，流覽回到 [**設定**]，然後 **更新**  >  **開發人員 & 的** 安全性
+    4.  接下來，流覽回到 **設定**，然後為開發 **人員更新 & 安全性**  >  
 
     5.  設定 [**開發人員模式]** *。*
 
@@ -1304,11 +1304,11 @@ ms.locfileid: "104730345"
 
 9.  在 [方案設定] 中選取 [ **Debug**]。
 
-10. 在解決方案平臺中，選取 [ **x86]、[遠端電腦**]。 系統會提示您 (Microsoft HoloLens 中插入遠端裝置的 **IP 位址** ，在此案例中，您記) 。
+10. 在解決方案平臺中，選取 [ **x86]、[遠端電腦**]。 系統會提示您 (Microsoft HoloLens 中插入遠端裝置的 **IP 位址**，在此案例中，您記) 。
 
     ![](images/AzureLabs-Lab310-43.png)
 
-11. 移至 [ **組建** ] 功能表，然後按一下 [ **部署方案** ]，將應用程式側載至 HoloLens。
+11. 移至 [**組建**] 功能表，然後按一下 [**部署方案**]，將應用程式側載到您的 HoloLens。
 
 12. 您的應用程式現在應該會出現在您 Microsoft HoloLens 上已安裝的應用程式清單中，準備好可供啟動！
 
@@ -1331,11 +1331,11 @@ ms.locfileid: "104730345"
 
 ## <a name="bonus-exercises"></a>額外練習
 
-### <a name="exercise-1"></a>練習1
+### <a name="exercise-1"></a>練習 1
 
 加入至文字標籤時，請使用半透明 cube，將真實物件包裝在3D 周 *框* 方塊中。
 
-### <a name="exercise-2"></a>練習2
+### <a name="exercise-2"></a>練習 2
 
 訓練您的自訂視覺服務，以辨識更多物件。
 

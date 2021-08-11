@@ -7,12 +7,12 @@ ms.date: 11/18/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 教學課程, 開始使用, mrtk, uxt, UX 工具, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
-ms.openlocfilehash: 771dd4028adfacb27544e632aa0f355d3bc91c66
-ms.sourcegitcommit: 4a6c26615d52776bdc4faab70391592092a471fc
+ms.openlocfilehash: 74d4fb7ebab2f5ba2df477cc29d8787367c1f105cc7a65d87460ac1e033b0fbb
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 05/29/2021
-ms.locfileid: "110712595"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203776"
 ---
 # <a name="4-making-your-scene-interactive"></a>4.使場景成為互動式場景
 
@@ -26,13 +26,13 @@ ms.locfileid: "110712595"
 * 使用輸入模擬來驗證專案
 
 ## <a name="downloading-the-mixed-reality-ux-tools-plugin"></a>下載混合實境 UX 工具外掛程式
-開始使用使用者輸入之前，您必須先將 Mixed Reality UX 工具外掛程式新增至專案。 若要深入瞭解 UX 工具，您可以在 [GitHub](https://aka.ms/uxt-unreal)上查看專案。
+開始使用使用者輸入之前，您必須先將 Mixed Reality UX 工具外掛程式新增至專案。 若要深入瞭解 UX 工具，您可以查看[GitHub](https://aka.ms/uxt-unreal)上的專案。
 
-1. 開啟 [長篇比賽] 啟動器。 流覽至 Unreal Engine Marketplace 並搜尋「[混合現實 UX 工具](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)」。 將外掛程式安裝到您的引擎。
+1. Launcher 中開啟長篇的遊戲。 流覽至 Unreal Engine Marketplace 並搜尋「[混合現實 UX 工具](https://www.unrealengine.com/marketplace/en-US/product/mixed-reality-ux-tools)」。 將外掛程式安裝到您的引擎。
 
 ![Unreal Marketplace](images/unreal-uxt/2-uxt-plugin.PNG)
 
-2. 回到 [Unreal 編輯器]，移至 [**專案設定**]  >  **外掛程式**，並搜尋「混合式現實 UX 工具」。 確定已啟用外掛程式，並在出現提示時重新開機編輯器。
+2. 回到 [Unreal 編輯器]，移至 **Project 設定**  >  **外掛程式**，並搜尋「混合現實 UX 工具」。 確定已啟用外掛程式，並在出現提示時重新開機編輯器。
 
 ![啟用混合式現實 UX 工具外掛程式](images/unreal-uxt/2-enable-uxt.PNG)
 

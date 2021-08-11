@@ -6,25 +6,25 @@ ms.author: wangmax
 ms.date: 03/30/2021
 ms.topic: article
 keywords: 鍵盤、輸入、unity、touchscreenkeyboard、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、HoloLens、HoloLens 2
-ms.openlocfilehash: 398a7c57dc701fc848fe9091949b45b2c1796987
-ms.sourcegitcommit: e5bd72d8b92976a6590e0f59706a88e66374934c
+ms.openlocfilehash: a7bd392036ca548fdd1f25581c8fc1910308909253f9c8df763e2039a32d3e9a
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/31/2021
-ms.locfileid: "106098270"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115203850"
 ---
 # <a name="keyboard-input-in-unity"></a>Unity 中的鍵盤輸入
 
 **命名空間：** *UnityEngine*<br>
  **類型**： *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)*
 
-雖然 HoloLens 支援許多形式的輸入，包括 Bluetooth 鍵盤，但大部分的應用程式都無法假設所有使用者都有可用的實體鍵盤。 如果您的應用程式需要文字輸入，則應該提供某種形式的螢幕小鍵盤。
+雖然 HoloLens 支援許多形式的輸入，包括藍牙鍵盤，但大部分的應用程式都無法假設所有使用者都有可用的實體鍵盤。 如果您的應用程式需要文字輸入，則應該提供某種形式的螢幕小鍵盤。
 
 Unity 提供 *[TouchScreenKeyboard](https://docs.unity3d.com/ScriptReference/TouchScreenKeyboard.html)* 類別，可在沒有可用的實體鍵盤時接受鍵盤輸入。
 
-## <a name="hololens-system-keyboard-behavior-in-unity"></a>在 Unity 中的 HoloLens 系統鍵盤行為
+## <a name="hololens-system-keyboard-behavior-in-unity"></a>Unity 中的 HoloLens 系統鍵盤行為
 
-在 HoloLens 上， *TouchScreenKeyboard* 會利用系統的螢幕小鍵盤，並在您的 MR 應用程式的體積型視圖上方直接重迭。 此體驗類似于在 HoloLens 的內建應用程式中使用鍵盤。 請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens 上的鍵盤 (第一代) 則會支援 GGV (注視、手勢和語音) 。 此外，從編輯器將 Unity 遠端執行到 HoloLens 時，系統鍵盤也不會顯示。
+在 HoloLens 上， *TouchScreenKeyboard* 會利用系統的螢幕小鍵盤，並在您的 MR 應用程式的體積型視圖上方直接重迭。 此體驗類似于在 HoloLens 的內建應用程式中使用鍵盤。 請注意，系統鍵盤會根據目標平臺的功能來運作，例如 HoloLens 2 上的鍵盤可支援直接互動，而 HoloLens (第一代) 支援 GGV (注視、手勢和語音) 。 此外，從編輯器執行 Unity 遠端處理至 HoloLens 時，不會顯示系統鍵盤。
 
 ## <a name="using-the-system-keyboard-in-your-unity-app"></a>在 Unity 應用程式中使用系統鍵盤
 

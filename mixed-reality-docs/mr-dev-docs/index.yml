@@ -1,10 +1,10 @@
 ### YamlMime:Hub
 title: 混合實境文件
-summary: 使用混合現實工具組，探索不斷擴大的混合現實應用程式世界 (MRTK) 、Windows Mixed Reality、Unity、Unreal，以及適用于 HoloLens 和 Windows 沉浸式耳機的更多功能。
+summary: 使用混合現實工具組，探索不斷擴大的混合現實應用程式世界 (MRTK) 、Windows Mixed Reality、Unity、Unreal，以及 HoloLens 和 Windows 沉浸式耳機。
 brand: windows
 metadata:
   title: 混合實境文件
-  description: 使用混合現實工具組，探索不斷擴大的混合現實應用程式世界 (MRTK) 、Windows Mixed Reality、Unity、Unreal，以及適用于 HoloLens 和 Windows 沉浸式耳機的更多功能。
+  description: 使用混合現實工具組，探索不斷擴大的混合現實應用程式世界 (MRTK) 、Windows Mixed Reality、Unity、Unreal，以及 HoloLens 和 Windows 沉浸式耳機。
   services: service
   ms.service: service
   ms.subservice: subservice

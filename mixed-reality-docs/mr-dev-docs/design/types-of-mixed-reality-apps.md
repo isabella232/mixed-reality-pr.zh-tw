@@ -5,19 +5,19 @@ author: rwinj
 ms.author: willyang
 ms.date: 03/21/2018
 ms.topic: article
-keywords: Windows Mixed Reality、設計、應用程式模式、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、HoloLens
-ms.openlocfilehash: 795d8733b9f509a79d9429f75dff2f88a2a63c93
-ms.sourcegitcommit: 2329db5a76dfe1b844e21291dbc8ee3888ed1b81
+keywords: Windows Mixed Reality、設計、應用程式模式、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機、HoloLens
+ms.openlocfilehash: 13d4f538148b2c6b6f4df422c6c423f2b2710ca1ba2d98fe4f952c14284035f8
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 01/08/2021
-ms.locfileid: "98007618"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218916"
 ---
 # <a name="types-of-mixed-reality-apps"></a>混合現實應用程式的類型
 
 針對 Windows Mixed Reality 開發應用程式的優點之一，就是平臺可支援的體驗。 從完全沉浸式虛擬環境到使用者目前環境下的輕量資訊分層，Windows Mixed Reality 提供了一組強大的工具，可將任何體驗變為現實。 應用程式製作者必須在開發過程中及早瞭解其體驗所在的範圍。 這項決策最終將會影響應用程式設計的組成，以及開發的技術途徑。
 
-## <a name="enhanced-environment-apps-hololens-only"></a>增強的環境應用程式僅 (HoloLens) 
+## <a name="enhanced-environment-apps-hololens-only"></a>增強的環境應用程式 (只 HoloLens) 
 
 混合現實可能帶來價值的其中一種最強大的方式，就是讓開發人員將數位資訊或內容放在使用者目前的環境中。 這種方法最受歡迎的應用程式，是指真實世界中數位內容的內容位置是最重要的，而且在其體驗期間讓使用者的真實世界環境「呈現」相當重要。 使用者也可以輕鬆地在真實世界的數位工作之間移動。 這可讓使用者所看到的混合現實應用程式真正成為其環境的一部分，以更 credence 的承諾。
 
@@ -32,7 +32,7 @@ ms.locfileid: "98007618"
 * 整個工廠中的混合現實附注可提供工作者的必要資訊
 * 在辦公室空間中尋找的混合現實方式
 * 混合現實桌面體驗 (也就是電路板遊戲樣式的體驗) 
-* 像 Skype 這樣的混合現實通訊應用程式
+* 混合現實通訊應用程式，例如 Skype
 
 ## <a name="blended-environment-apps"></a>混合式環境應用程式
 

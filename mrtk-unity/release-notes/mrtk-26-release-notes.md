@@ -5,12 +5,12 @@ author: polar-kev
 ms.author: kesemple
 ms.date: 05/27/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、
-ms.openlocfilehash: c172e5d071bba22626e9c35b2b4318f1ff779335
-ms.sourcegitcommit: f7839221c9549e60a2c3ac2dbd39f07a6851dcd2
+ms.openlocfilehash: 452f0f352443620dea70b1680859bab4e2b3a0818de5f130accdb84c2798cfe0
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/23/2021
-ms.locfileid: "112562508"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115206696"
 ---
 # <a name="microsoft-mixed-reality-toolkit-26-release-notes"></a>Microsoft Mixed Reality 工具組2.6 版本資訊
 
@@ -85,7 +85,7 @@ HP 殘響 G2 的控制器現在可在 MRTK 中以原生方式運作。
 > 只有 HoloLens 2 和 Unity 2019.4 和更新版本才支援場景理解。
 >
 > 這項功能需要場景理解套件，現在可透過「 [混合現實」功能工具](https://aka.ms/MRFeatureTool)取得。
-> 使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱 [此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431) 。
+> 使用 Mixed Reality 功能工具或透過 UPM 匯入時，請先匯入示範-SpatialAwareness 範例，再匯入實驗性 SceneUnderstanding 範例，因為相依性問題。 如需詳細資訊，請參閱[此 GitHub 問題](https://github.com/microsoft/MixedRealityToolkit-Unity/issues/9431)。
 
 ![場景理解](images/SceneUnderstanding.gif)
 
@@ -123,13 +123,13 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="reading-mode"></a>讀取模式
 
-已新增 HoloLens 2 的 [讀取模式](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality) 支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上的投射圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
+已新增 HoloLens 2 的[讀取模式](/hololens/hololens2-display#what-improvements-are-coming-that-will-improve-hololens-2-image-quality)支援。 [讀取] 模式可減少系統的顯示欄位，但會排除 Unity 輸出的縮放比例。 Unity 轉譯的圖元會對應到 HoloLens 2 上的投射圖元。 應用程式作者應該使用多個個人進行測試，以確保這是他們在應用程式中所需的取捨。
 
 ![Windows Mixed Reality 閱讀模式](images/WMRReadingMode.gif)
 
 ### <a name="support-for-3d-app-launchers-on-uwp"></a>在 UWP 上支援3D 應用程式啟動器
 
-新增為 UWP 設定 [3d 應用程式啟動器](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) 的功能。 這項設定會在 [MRTK 組建] 視窗和 [MRTK] 專案設定的 [組建設定] 底下公開。 它會在 Unity 中的組建期間自動寫入至專案。
+新增為 UWP 設定 [3d 應用程式啟動器](/windows/mixed-reality/distribute/3d-app-launcher-design-guidance) 的功能。 這項設定會在 [MRTK 組建] 視窗和 [MRTK Project 設定的 [組建設定] 底下公開。 它會在 Unity 中的組建期間自動寫入至專案。
 
 ![組建設定](images/ProjectBuildSettings.png)
 
@@ -143,9 +143,9 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 輸入動畫二進位檔（由 `InputRecordingService` 和使用 `InputPlaybackService` ）現在具有更新的檔案格式，可讓您對這兩個服務進行優化。 如需新版本1.1 規格的詳細資訊，請參閱 [這裡](../features/input-simulation/input-animation-file-format.md) 。
 
-### <a name="msbuild-for-unity-support"></a>適用于 Unity 的 MSBuild 支援
+### <a name="msbuild-for-unity-support"></a>Unity 支援的 MSBuild
 
-從2.5.2 版本開始，已移除對 MSBuild for Unity 的支援，以配合 [Unity 的新套件指引](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)。
+2.5.2 版本已移除對 unity 的 MSBuild 的支援，以配合[unity 的新套件指引](https://forum.unity.com/threads/updates-to-our-terms-of-service-and-new-package-guidelines.999940/)。
 
 ## <a name="known-issues"></a>已知問題
 
@@ -164,7 +164,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 
 ### <a name="filenotfoundexception-when-examples-are-imported-via-unity-package-manager"></a>FileNotFoundException 透過 Unity 匯入範例的時機封裝管理員
 
-視專案路徑的長度而定，透過 Unity 匯入範例封裝管理員可能會在 Unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
+視專案路徑的長度而定，透過 unity 匯入範例封裝管理員可能會在 unity 主控台中產生 FileNotFoundException 訊息。 造成這種情況的原因是「遺失」檔案的路徑超過 MAX_PATH (256 個字元) 。 若要解決此問題，請縮短專案路徑的長度。
 
 ### <a name="no-spatializer-was-specified-the-application-will-not-support-spatial-sound"></a>未指定空間定位器。 應用程式將不支援空間音效
 
@@ -173,7 +173,7 @@ MRTK 現在可讓您在初始化 MRTK (實例之前切換設定檔（亦即，�
 若要解決此問題，請確定：
 
 - **視窗**  > **封裝管理員** 已安裝一或多個 XR 套件
-- **混合現實工具**  >  組 **公用程式**  > **設定 Unity 專案** 並為 **音訊空間定位器** 進行選取
+- **混合現實工具**  >  組 **公用程式**  > **設定 Unity Project** 並為 **音訊空間定位器** 進行選取
 
   ![選取音訊空間定位器](images/SpatializerSelection.png)
 

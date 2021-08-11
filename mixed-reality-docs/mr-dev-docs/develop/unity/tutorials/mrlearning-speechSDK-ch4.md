@@ -7,12 +7,12 @@ ms.date: 02/05/2021
 ms.topic: article
 keywords: 混合實境, unity, 教學課程, hololens, MRTK, 混合實境工具組, UWP, Azure spatial anchors, 語音辨識, Windows 10, LUIS, LUIS 入口網站, 意圖, 實體, 語句, 自然語言理解
 ms.localizationpriority: high
-ms.openlocfilehash: ab9c1db7ca90a59e4ef688a8faa3d294e433cff6
-ms.sourcegitcommit: b4fd969b9c2e6313aa728b0dbee4b25014668720
+ms.openlocfilehash: fab521f51f653f3d7f381468cfc045c8c8c0f0c79354c5bf41f9531d0178a193
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 06/04/2021
-ms.locfileid: "111403459"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207052"
 ---
 # <a name="4-setting-up-intent-and-natural-language-understanding"></a>4.設定意圖和自然語言理解
 
@@ -250,7 +250,7 @@ PressButton 意圖範例語句 'go ahead and launch the rocket' 現在已設定�
 
 ![mrlearning-語音27](images/mrlearning-speech/tutorial4-section3-step6-5.png)
 
-流覽至 [管理 > 的應用程式設定 > **Azure 資源** ] 頁面上，您的 azure 資源頁面看起來應該像這樣：
+流覽至 [管理 > 應用程式設定 > **Azure 資源**] 頁面上，您的 azure 資源頁面看起來應該像這樣：
 
 ![mrlearning-語音28](images/mrlearning-speech/tutorial4-section3-step6-6.png)
 

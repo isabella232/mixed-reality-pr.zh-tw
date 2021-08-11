@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 12/20/2019
 ms.topic: article
 keywords: Vuforia、標記、座標、參考的框架、追蹤、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、unity、HoloLens、裝置追蹤、效能模式、Vuforia 開發人員入口網站
-ms.openlocfilehash: 1a21f4bb441a1ab0706b5916feaac0d691486626
-ms.sourcegitcommit: 7160843723ccd6567490e2f4222219603f184d76
+ms.openlocfilehash: dd5153b5e4986ebf1ecc2c133f3d431de08ce5b923cc7d2327d9cbda4f4df61c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 07/15/2021
-ms.locfileid: "114232168"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115216414"
 ---
 # <a name="using-vuforia-engine-with-unity"></a>搭配使用 Vuforia 引擎與 Unity
 

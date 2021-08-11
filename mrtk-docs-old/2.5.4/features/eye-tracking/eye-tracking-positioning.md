@@ -5,12 +5,12 @@ author: CDiaz-MS
 ms.author: cadia
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、EyeTracking、
-ms.openlocfilehash: 12e1f633dc21ce160482421a2c5ad22b2c721bf7
-ms.sourcegitcommit: 59c91f8c70d1ad30995fba6cf862615e25e78d10
+ms.openlocfilehash: c9fc5bc2a88878094da207923a7388daa01c05d953c8d49dffeaeb3e4568dc8c
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 03/19/2021
-ms.locfileid: "104702104"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115218816"
 ---
 # <a name="eye-supported-target-positioning-in-mrtk"></a>MRTK 中的眼睛支援目標定位
 

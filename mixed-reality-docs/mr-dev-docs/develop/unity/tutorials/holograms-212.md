@@ -1,22 +1,22 @@
 ---
 title: HoloLens (第1代) 輸入 212-語音
-description: 遵循此程式碼逐步解說，使用 Unity、Visual Studio 和 HoloLens 來瞭解語音概念的詳細資料。
+description: 遵循此程式碼逐步解說使用 Unity、Visual Studio 和 HoloLens 來瞭解語音概念的詳細資料。
 author: keveleigh
 ms.author: kurtie
 ms.date: 10/22/2019
 ms.topic: article
 keywords: holotoolkit、mixedrealitytoolkit、mixedrealitytoolkit-unity、學術、教學課程、語音、HoloLens、混合現實學術、unity、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機、Windows 10
-ms.openlocfilehash: 8e36233ff4abd3ac91670dd7d04b6675bec045ff
-ms.sourcegitcommit: 3236abcba27335fe3d52e38423d2b265ca883355
+ms.openlocfilehash: 75a1d32ae72a07b68fc65c40035109c468adb1080070240827eeb253eb4a03f4
+ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 04/02/2021
-ms.locfileid: "106269924"
+ms.lasthandoff: 08/05/2021
+ms.locfileid: "115207364"
 ---
 # <a name="hololens-1st-gen-input-212-voice"></a>HoloLens (第1代) 輸入212：語音
 
 >[!IMPORTANT]
->混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機來設計的。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
+>混合的現實學術教學課程是以 HoloLens (第一代) 、Unity 2017 和混合現實的沉浸式耳機為考慮。  因此，對於仍在尋找這些裝置開發指引的開發人員而言，我們覺得這些教學課程很重要。 這些教學課程 **_不_** 會使用最新的工具組或互動進行 HoloLens 2，而且可能與較新版本的 Unity 不相容。  系統會保留這些資訊，以繼續在支援的裝置上運作。 已針對 HoloLens 2 公佈[一系列新的教學課程](mrlearning-base.md)。
 
 [語音輸入](../../../design/voice-input.md) 可讓我們以另一種方式與我們的全像影像互動。 語音命令的運作方式非常自然且簡單。 設計您的語音命令，使其為：
 
@@ -68,7 +68,7 @@ ms.locfileid: "106269924"
 * 取消將檔案封存到您的桌面或其他易於觸及的位置。
 
 >[!NOTE]
->如果您想要在下載之前查看原始程式碼， [可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-212-Voice)取得。
+>如果您想要在下載之前查看原始程式碼，[可在 GitHub 上](https://github.com/Microsoft/HolographicAcademy/tree/Holograms-212-Voice)取得。
 
 ### <a name="errata-and-notes"></a>勘誤表和記事
 
@@ -80,34 +80,34 @@ ms.locfileid: "106269924"
 
 1. 啟動 Unity。
 2. 選取 [開啟]  。
-3. 流覽至您先前取消封存的 HolographicAcademy-全像 **-212-Voice** 資料夾。
+3. 流覽至您先前取消封存的 **HolographicAcademy-全像投影-212-Voice** 資料夾。
 4. 尋找並選取 [**啟動** / **模型瀏覽器**] 資料夾。
 5. 按一下 [ **選取資料夾** ] 按鈕。
-6. 在 [ **專案** ] 面板中，展開 [ **場景** ] 資料夾。
+6. 在 **Project** 面板中，展開 [**場景**] 資料夾。
 7. 按兩下 [ **ModelExplorer** 場景]，以在 Unity 中載入。
 
 ### <a name="building"></a>建置
 
-1. 在 Unity 中，選取 [ **File > Build Settings**]。
+1. 在 Unity 中，選取 [ **File > Build 設定**]。
 2. 如果 **場景/ModelExplorer** 未列在 **組建的場景** 中，請按一下 [ **新增開啟場景** ] 以加入場景。
-3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設定為 **hololens**。 否則，請將它保留在 **任何裝置** 上。
+3. 如果您是特別針對 HoloLens 進行開發，請將 **目標裝置** 設為 **HoloLens**。 否則，請將它保留在 **任何裝置** 上。
 4. 請確定 **組建類型** 設定為 [ **D3D** ]，並將 [ **Sdk** ] 設定為 [ **最新安裝** 的 (，其應為 SDK 16299 或更新版本的) 。
 5. 按一下 [建置]。
 6. 建立名為 "App" 的 **新資料夾** 。
 7. 按一下 **應用程式** 資料夾。
-8. 按下 [ **選取資料夾** ]，Unity 就會開始建立 Visual Studio 的專案。
+8. 按下 [**選取資料夾**]，Unity 就會開始建立 Visual Studio 的專案。
 
 當 Unity 完成時，將會出現檔案總管視窗。
 
 1. 開啟 **應用程式** 資料夾。
 2. 開啟 **ModelExplorer Visual Studio 方案**。
 
-如果要部署到 HoloLens：
+如果部署至 HoloLens：
 
 1. 使用 Visual Studio 中的頂端工具列，將目標從 Debug 變更為 **Release** ，以及從 ARM 變更為 **x86**。
 2. 按一下 [本機電腦] 按鈕旁的下拉箭號，然後選取 [ **遠端電腦**]。
-3. 輸入 **您的 HoloLens 裝置 IP 位址** ，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 [ **設定] > Network & Internet > Advanced 選項**。
-4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將 [它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
+3. 輸入 **您的 HoloLens 裝置 IP 位址**，並將驗證模式設定為 **通用 (未加密的通訊協定)**。 按一下 [選取]。 如果您不知道您的裝置 IP 位址，請查看 **設定 > 網路 & 網際網路 > Advanced 選項**。
+4. 在頂端功能表列中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。 如果這是您第一次部署至您的裝置，您必須將[它與 Visual Studio 配對](../../../develop/platform-capabilities-and-apis/using-visual-studio.md#pairing-your-device)。
 5. 部署應用程式之後，請使用 **選取手勢** 來關閉 **Fitbox** 。
 
 如果部署到沉浸式耳機：
@@ -138,7 +138,7 @@ ms.locfileid: "106269924"
 
 * 建立簡潔的命令。 您不想要使用「 *播放目前選取的影片*」，因為該命令並非簡潔，而且使用者很容易就會忘記。 相反地，您應該使用：「 *播放影片*」，因為它很簡潔，而且有多個音節。
 * 使用簡單的詞彙。 請一律嘗試使用簡單的單字和片語，方便使用者探索和記住。 例如，如果您的應用程式具有可顯示或隱藏的附注物件，您就不會使用 " *Show 牌子"* 命令，因為 "牌子" 是很少使用的詞彙。 相反地，您會 *使用下列命令來顯示應用* 程式中的附注。
-* 保持一致。 語音命令在您的應用程式中應該保持一致。 假設您的應用程式中有兩個場景，而且這兩個場景都包含用來關閉應用程式的按鈕。 如果第一個場景使用 " *Exit"* 命令來觸發按鈕，但第二個場景使用「 *關閉應用程式*」命令，則使用者會感到混淆。 如果相同的功能跨多個場景保存，則應該使用相同的語音命令來觸發它。
+* 保持一致。 語音命令在您的應用程式中應該保持一致。 Imagine 您的應用程式中有兩個場景，而這兩個場景都包含關閉應用程式的按鈕。 如果第一個場景使用 " *Exit"* 命令來觸發按鈕，但第二個場景使用「 *關閉應用程式*」命令，則使用者會感到混淆。 如果相同的功能跨多個場景保存，則應該使用相同的語音命令來觸發它。
 
 #### <a name="dont"></a>不要
 
@@ -157,24 +157,24 @@ ms.locfileid: "106269924"
 * 在 **Unity 的階層** 面板中，使用搜尋工具來尋找 **holoComm_screen_mesh** 物件。
 * 按兩下 **holoComm_screen_mesh** 物件以在 **場景** 中加以查看。 這是太空人的監看，它會回應我們的語音命令。
 * 在 [偵測 **器** ] 面板中，找出 **語音輸入來源 (腳本)** 元件。
-* 展開 [ **關鍵字** ] 區段以查看支援的語音命令： **開啟 Communicator**。
+* 展開 [**關鍵字**] 區段以查看支援的語音命令：**開啟 Communicator**。
 * 按一下右邊的齒輪，然後選取 [ **編輯腳本**]。
 * 探索 **SpeechInputSource** ，瞭解它如何使用 **KeywordRecognizer** 來新增語音命令。
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-* 在 Unity 中，使用檔案 **> 組建設定** 來重建應用程式。
+* 在 Unity 中，請使用 **File > Build 設定** 重建應用程式。
 * 開啟 **應用程式** 資料夾。
 * 開啟 **ModelExplorer Visual Studio 方案**。
 
  (如果您已在安裝期間于 Visual Studio 中建立或部署此專案，則您可以開啟 VS 的實例，然後在出現) 提示時按一下 [全部重載]。
 
-* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試** ]，或按 **Ctrl + F5**。
-* 將應用程式部署到 HoloLens 之後，請使用 [點 [一下手勢] 關閉 [符合](../../../design/gaze-and-commit.md#composite-gestures) ] 方塊。
+* 在 Visual Studio 中，按一下 [ **Debug-> 啟動但不進行調試**]，或按 **Ctrl + F5**。
+* 將應用程式部署至 HoloLens 之後，請使用 [點[一下手勢] 關閉 [符合](../../../design/gaze-and-commit.md#composite-gestures)] 方塊。
 * 觀賞太空人的觀賞。
 * 當 watch 具有焦點時，請確認游標變更為麥克風。 這會提供應用程式接聽語音命令的意見反應。
 * 確認 watch 上出現工具提示。 這可協助使用者探索 *"Open Communicator"* 命令。
-* 撥雲見日監看時，請說「 *開啟 communicator* 」來開啟 communicator 面板。
+* 撥雲見日監看時，請說「*開啟 Communicator* 」來開啟 Communicator 面板。
 
 ## <a name="chapter-2---acknowledgement"></a>第2章-確認
 
@@ -188,24 +188,24 @@ ms.locfileid: "106269924"
 >[!NOTE]
 >必須針對要從麥克風錄製的應用程式宣告 **麥克風** 功能。 您已在 MR 輸入212中為您完成這項操作，但請記住您自己的專案。
 >
->1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定
+>1. 在 Unity 編輯器中，流覽至 [編輯 > Project 設定 > 播放機]，移至播放機設定
 >2. 按一下 [通用 Windows 平臺] 索引標籤
->3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
+>3. 在 [發行設定 > 功能] 區段中，檢查 **麥克風** 功能
 
 ### <a name="instructions"></a>指示
 
 * 在 Unity 的 **階層面板中** ，確認已選取 **holoComm_screen_mesh** 物件。
 * 在 [偵測 **器** ] 面板中，尋找 **太空人 Watch (腳本)** 元件。
-* 按一下設定為 [ **Communicator 預製專案** ] 屬性值的小、藍色 cube。
-* 在 [ **專案** ] 面板中， **Communicator** 預製專案現在應該會有焦點。
-* 按一下 [**專案**] 面板中的 **Communicator** 預製專案，以在偵測 **器** 中查看其元件。
+* 按一下設定為 [ **Communicator 預製專案**] 屬性值的小、藍色 cube。
+* 在 **Project** 面板中， **Communicator** 預製專案現在應該會有焦點。
+* 按一下 **Project** 面板中的 **Communicator** 預製專案，以在偵測 **器** 中查看其元件。
 * 查看 **麥克風管理員 (腳本)** 元件，這可讓我們記錄使用者的聲音。
-* 請注意， **Communicator** 物件具有 **語音輸入處理常式 (腳本)** 元件，可回應 **傳送訊息** 命令。
-* 查看 **Communicator (腳本)** 元件，然後按兩下腳本，在 Visual Studio 中開啟它。
+* 請注意， **Communicator** 物件具有 **語音輸入處理常式 (腳本)** 元件，以回應 **傳送訊息** 命令。
+* 查看 **Communicator (腳本)** 元件，然後按兩下腳本將它開啟 Visual Studio。
 
-Communicator 負責在 communicator 裝置上設定適當的按鈕狀態。 這可讓我們的使用者記錄訊息、播放訊息，然後將訊息傳送至太空人。 它也會啟動和停止動畫 wave 表單，以向使用者確認他們的聲音聽到。
+Communicator .cs 負責在 Communicator 裝置上設定適當的按鈕狀態。 這可讓我們的使用者記錄訊息、播放訊息，然後將訊息傳送至太空人。 它也會啟動和停止動畫 wave 表單，以向使用者確認他們的聲音聽到。
 
-* 在 **Communicator** 中，刪除從 **Start** 方法 (81 和 82) 的下列幾行。 這會啟用 communicator 上的 [記錄] 按鈕。
+* 在 **Communicator** 中，從 **Start** 方法中刪除 (81 和 82) 的下列程式程式碼。 這會啟用 communicator 上的 [記錄] 按鈕。
 
 ```cs
 // TODO: 2.a Delete the following two lines:
@@ -216,7 +216,7 @@ MessageUIRenderer.gameObject.SetActive(false);
 ### <a name="build-and-deploy"></a>建置和部署
 
 * 在 Visual Studio 中，重建您的應用程式並部署至裝置。
-* 觀賞太空人的監看，然後說「 *開啟 communicator* 」來顯示 Communicator。
+* 觀賞太空人的監看式，並說出「*開啟 Communicator* 」以顯示 Communicator。
 * 按下 [ **錄製** ] 按鈕 (麥克風) ，開始記錄太空人的口頭訊息。
 * 開始說話，並確認 wave 動畫是在 communicator 上播放的，它會將意見反應提供給使用者，指出他們的聲音聽起來。
 * 按下 [ **停止** ] 按鈕 (左方塊) ，並確認 wave 動畫停止執行。
@@ -244,9 +244,9 @@ MessageUIRenderer.gameObject.SetActive(false);
 >[!NOTE]
 >必須針對要從麥克風錄製的應用程式宣告 **麥克風** 功能。 您已在 MR 輸入212中為您完成這項操作，但請記住您自己的專案。
 >
->1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定
+>1. 在 Unity 編輯器中，流覽至 [編輯 > Project 設定 > 播放機]，移至播放機設定
 >2. 按一下 [通用 Windows 平臺] 索引標籤
->3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
+>3. 在 [發行設定 > 功能] 區段中，檢查 **麥克風** 功能
 
 ### <a name="instructions"></a>指示
 
@@ -451,7 +451,7 @@ namespace Academy
 
 * 在 Visual Studio 中重建並部署至您的裝置。
 * 使用輕量手勢關閉 [符合] 方塊。
-* 觀賞太空人的監看，然後說「 *開啟 Communicator*」。
+* 在太空人的監看看，然後說「 *Open Communicator*」。
 * 選取 [ **錄製** ] 按鈕 (麥克風) 以記錄您的訊息。
 * 開始說話。 **聽寫辨識器** 會解讀您的語音，並顯示 communicator 中的假設文字。
 * 當您記錄訊息時，請嘗試說出「 *傳送訊息* 」。 請注意， **關鍵字辨識器** 沒有回應，因為 **聽寫辨識器** 仍在作用中。
@@ -471,9 +471,9 @@ namespace Academy
 >[!NOTE]
 >必須針對要從麥克風錄製的應用程式宣告 **麥克風** 功能。 您已在 MR 輸入212中為您完成這項操作，但請記住您自己的專案。
 >
->1. 在 Unity 編輯器中，流覽至 [> Player 編輯 > 專案設定]，移至播放機設定
+>1. 在 Unity 編輯器中，流覽至 [編輯 > Project 設定 > 播放機]，移至播放機設定
 >2. 按一下 [通用 Windows 平臺] 索引標籤
->3. 在 [發佈設定 > 功能] 區段中，檢查 **麥克風** 功能
+>3. 在 [發行設定 > 功能] 區段中，檢查 **麥克風** 功能
 
 ### <a name="instructions"></a>指示
 
@@ -492,7 +492,7 @@ namespace Academy
 
 ### <a name="build-and-deploy"></a>建置和部署
 
-* 在 Unity 中重建應用程式，然後從 Visual Studio 建立和部署，以在 HoloLens 上體驗應用程式。
+* 在 Unity 中重建應用程式，然後從 Visual Studio 建立和部署，以便在 HoloLens 上體驗應用程式。
 * 使用輕量手勢關閉 [符合] 方塊。
 * 看看太空人的 jetpack，然後執行一下點一下手勢。
 * 開始說話。 **文法辨識器** 會解讀您的語音，並根據辨識來變更圖形的色彩。 範例命令為「藍色圓圈、黃色方形」。
