@@ -6,14 +6,14 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、安全性、驗證、伺服器對用戶端
-ms.openlocfilehash: fa23994ff4ab49d313fe24a67974bf4d90454e511658e0663c61d7b129b10f9e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6ac5284bdf9e5984fcf091b6502fb62a494e4fe8
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223578"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184645"
 ---
-# <a name="enabling-connection-security-for-holographic-remoting"></a>針對全像遠端功能啟用連接安全性
+# <a name="enabling-connection-security-for-holographic-remoting-c"></a>針對全像是 (c + +) 的全像遠端啟用連接安全性
 
 >[!IMPORTANT]
 >本指南專為 HoloLens 2 上的全像攝影遠端所特有。
@@ -189,6 +189,7 @@ Windows 存放區中的範例應用程式和全像攝影遠端播放程式會停
 此 API 與以 IDL 為基礎的 API 類似，此 API 是在實裡建的 [遠端安全性](#implementing-holographic-remoting-security)中所述。 不過，您應該提供回呼，而不是執行介面。 您可以在 [OpenXR 範例應用程式](https://github.com/microsoft/MixedReality-HolographicRemoting-Samples)中找到詳細的範例。
 
 ## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)

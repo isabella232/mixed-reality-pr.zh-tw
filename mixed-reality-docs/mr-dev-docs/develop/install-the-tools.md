@@ -7,12 +7,12 @@ ms.date: 05/11/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: 最新狀態, 開始使用, 基本概念, unity, visual studio, 工具組, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 安裝, Windows, HoloLens, 模擬器, unreal, openxr
-ms.openlocfilehash: e0acc696a1109a29bcbfc99555a3b91708ccbd3c5b71db30183a085a19cd6c28
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 7a4440ade98a592072d340457918dade90a65f28
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115210577"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905631"
 ---
 # <a name="install-the-tools"></a>安裝工具
 
@@ -35,7 +35,7 @@ ms.locfileid: "115210577"
 |---------|---------|
 | ![Windows 標誌](images/Windows10_logo.png)<br><br><a href="https://www.microsoft.com/software-download/windows10" target="_blank">**Windows 10** (手動安裝連結)</a><br><br>安裝最新版的 Windows 10，讓您電腦的作業系統符合您要建置混合實境應用程式的平台。  | **安裝 Windows 10** <br> 您可以透過 [設定] 中的 Windows Update 或藉由建立安裝媒體 (使用左欄中的連結)，安裝最新版的 Windows 10。 <br><br>請參閱[目前的版本資訊](/windows/mixed-reality/enthusiast-guide/release-notes-october-2018.md)，以取得每個 Windows 10 版本可用的最新混合實境功能。 **在開發電腦上啟用開發人員模式** (在 [設定] > [更新與安全性] / [開發人員專用])。 <br><br> **企業和公司管理電腦的注意事項**<br>如果您的電腦由組織的 IT 部門管理，則可能需要與其連絡以便更新。 <br><br> **Windows 的 'N' 版本**<br> Windows 的 'N' 版本不支援 Windows Mixed Reality 沈浸式 (VR) 頭戴裝置。 |
 | ![Visual Studio 標誌影像](images/visualstudio_logo.png)<br><br><a href="https://visualstudio.microsoft.com/downloads/" target="_blank">**Visual Studio 2019 (16.8 或更新版本)** (安裝連結)</a> <br><br>Windows 等的全功能整合式開發環境 (IDE)。 您將使用 Visual Studio 來撰寫程式碼、偵錯、測試及部署。 | **安裝 Visual Studio 2019** <br> 請確定您已安裝下列工作負載： <br><br>*● 使用 C++ 的傳統型開發*<br>*● 通用 Windows 平台 (UWP) 開發*<br>*●使用 Unity 進行遊戲開發 (**如果打算使用 unity**)*<br><br>在 UWP 工作負載中， **確定已包含下列元件以供安裝**：<br><br>*● Windows 10 SDK 版本10.0.19041.0 或10.0.18362。0*<br>*●將 usb 裝置連線 (部署/調試至 HoloLens 透過 usb) 所需*<br>*● c + + (適用于 v142) 使用 Unity 時 (所需的通用 Windows 平臺工具)*<br><br>**HoloLens (1 代) 和桌上型電腦 Windows Mixed Reality 耳機**<br>如果您只是針對桌上型電腦 Windows Mixed Reality 耳機或 HoloLens (第一代) ，則可以使用 Visual Studio 2017，並使用其所安裝的 Windows SDK。<br><br>**已知問題**<br>Visual Studio 2019 16.0 版中的混合實境應用程式偵錯有一些已知問題。  請務必更新至 **Visual Studio 2019 16.8 版或更新版本**。 |
-| ![Visual Studio 標誌](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2167725" target="_blank">**HoloLens 2 Emulator (Windows 全像 21H1 2021 年7月更新)** (安裝連結： 10.0.20348.1010)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens (第 1 代) 模擬器** (安裝連結：10.0.17763.134)</a> <br><br>選用模擬器可讓您在 HoloLens 的虛擬機器映射上執行應用程式，而不需要實體 HoloLens。<br> <br> | 如需開始使用選用模擬器的詳細資訊，請參閱[使用 HoloLens 模擬器](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)。<br> <br> **您的系統必須支援 Hyper-V**，模擬器安裝才能成功。 請參考下面的「系統需求」一節以取得詳細資料。 <br> <br> **HoloLens (第 1 代) 模擬器的注意事項** <br>  必須使用 Visual Studio 2017，才能順利完成安裝。 如果您要使用 Visual Studio 2019 安裝 HoloLens (第 1 代) 模擬器，您必須取消選取 VS 範本，然後[從 Visual Studio Marketplace 加以安裝](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)。 |
+| ![Visual Studio 標誌](images/HoloLensIcon.jpg)<br><br><a href="https://go.microsoft.com/fwlink/?linkid=2169418" target="_blank">**HoloLens 2 Emulator (Windows 全像 21H1 2021 年8月更新)** (安裝連結： 10.0.20348.1010)</a><br> <br><a href="https://go.microsoft.com/fwlink/?linkid=2065980" target="_blank">**HoloLens (第 1 代) 模擬器** (安裝連結：10.0.17763.134)</a> <br><br>選用模擬器可讓您在 HoloLens 的虛擬機器映射上執行應用程式，而不需要實體 HoloLens。<br> <br> | 如需開始使用選用模擬器的詳細資訊，請參閱[使用 HoloLens 模擬器](../develop/platform-capabilities-and-apis/using-the-hololens-emulator.md)。<br> <br> **您的系統必須支援 Hyper-V**，模擬器安裝才能成功。 請參考下面的「系統需求」一節以取得詳細資料。 <br> <br> **HoloLens (第 1 代) 模擬器的注意事項** <br>  必須使用 Visual Studio 2017，才能順利完成安裝。 如果您要使用 Visual Studio 2019 安裝 HoloLens (第 1 代) 模擬器，您必須取消選取 VS 範本，然後[從 Visual Studio Marketplace 加以安裝](https://marketplace.visualstudio.com/items?itemName=WindowsMixedRealityteam.WindowsMixedRealityAppTemplatesVSIX)。 |
 
 ## <a name="install-your-engine-of-choice"></a>安裝您選擇的引擎
 

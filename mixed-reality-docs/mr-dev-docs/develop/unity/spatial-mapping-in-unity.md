@@ -6,12 +6,12 @@ ms.author: davidkl
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Unity、空間對應、轉譯器、碰撞器、網格、掃描、元件、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、MRTK、混合現實工具組
-ms.openlocfilehash: 4c8d0598898b4717a624562340918f968bd26f1fcde72258907e4fce73bd8489
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 62e4c4fad725dbe58773035b0bb47f1911098217
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223098"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905700"
 ---
 # <a name="spatial-mapping-in-unity"></a>Unity 中的空間對應
 
@@ -49,159 +49,9 @@ Unity 包含空間對應的完整支援，可透過下列方式公開給開發�
 2. 找出指定 **y** 的行，並將 **MaxVersionTested = "10.0.10240.0"** 變更為 **MaxVersionTested = "10.0.10586.0"**
 3. **儲存** package.appxmanifest。
 
-## <a name="getting-started-with-unitys-built-in-spatial-mapping-components"></a>開始使用 Unity 的內建空間對應元件
+## <a name="how-to-add-mapping-in-unity"></a>如何在 Unity 中新增對應
 
-Unity 提供兩個元件，可讓您輕鬆地將空間對應新增至您的應用程式、 **空間對應** 轉譯器和 **空間對應碰撞** 器。
-
-### <a name="spatial-mapping-renderer"></a>空間對應轉譯器
-
-空間對應轉譯器可讓空間對應網格的視覺效果。
-
-![Unity 中的空間對應轉譯器](images/spatialmappingrenderer.png)
-
-### <a name="spatial-mapping-collider"></a>空間對應碰撞
-
-空間對應碰撞程式可允許全像的內容 (或字元) 互動，例如物理，以及空間對應網格。
-
-![Unity 中的空間對應碰撞](images/spatialmappingcollider.png)
-
-### <a name="using-the-built-in-spatial-mapping-components"></a>使用內建空間對應元件
-
-如果您想要將這兩個元件視覺化並與實體介面互動，您可以將這兩個元件新增至您的應用程式。
-
-若要在 Unity 應用程式中使用這兩個元件：
-
-1. 在您想要偵測空間介面網格的區域中央選取 GameObject。
-2. 在 [偵測器] 視窗中，**加入元件**  >  **XR**  >  **空間對應碰撞** 器或 **空間對應** 轉譯器。
-
-您可以在 <a href="https://docs.unity3d.com/Manual/SpatialMappingComponents.html" target="_blank">Unity 檔網站</a>找到更多有關如何使用這些元件的詳細資料。
-
-### <a name="going-beyond-the-built-in-spatial-mapping-components"></a>超越內建空間對應元件
-
-這些元件可讓您輕鬆地開始使用空間對應。  當您想要繼續進行時，有兩個主要的途徑可以探索：
-
-* 若要進行您自己的較低層級網格處理，請參閱下一節有關低層級空間對應腳本 API 的資訊。
-* 若要進行較高層級的網狀分析，請參閱下列有關 <a href="https://github.com/Microsoft/MixedRealityToolkit-Unity/tree/htk_release/Assets/HoloToolkit/SpatialUnderstanding" target="_blank">MixedRealityToolkit</a>中 SpatialUnderstanding 程式庫的章節。
-
-## <a name="using-the-low-level-unity-spatial-mapping-api"></a>使用低層級 Unity 空間對應 API
-
-如果您需要比空間對應轉譯器和空間對應碰撞器元件供應專案更多的控制，請使用低層級空間對應 Api。
-
-**命名空間：** *UnityEngine. XR*<br>
-**類型**： *SurfaceObserver*、 *SurfaceChange*、 *SurfaceData*、 *SurfaceId*
-
-我們概述了在下列各節中使用空間對應 Api 的應用程式所建議的流程。
-
-### <a name="set-up-the-surfaceobservers"></a>設定 SurfaceObserver (s) 
-
-針對需要空間對應資料的每個應用程式定義區域，將一個 SurfaceObserver 物件具現化。
-
-```cs
-SurfaceObserver surfaceObserver;
-
-private void Start()
-{
-    surfaceObserver = new SurfaceObserver();
-}
-```
-
-藉由呼叫 SetVolumeAsSphere、SetVolumeAsAxisAlignedBox、SetVolumeAsOrientedBox 或 SetVolumeAsFrustum，指定每個 SurfaceObserver 物件將提供資料的空間區域。 您可以直接呼叫其中一個方法，在未來重新定義空間的區域。
-
-```cs
-private void Start()
-{
-    surfaceObserver.SetVolumeAsAxisAlignedBox(Vector3.zero, new Vector3(3, 3, 3));
-}
-```
-
-當您呼叫 SurfaceObserver () 時，您必須針對空間對應系統具有新資訊的空間 SurfaceObserver 區域中的每個空間介面，提供一個處理常式。 處理常式會收到一個空間介面：
-
-```cs
-private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
-{
-    // see Handling Surface Changes
-}
-```
-
-### <a name="handling-surface-changes"></a>處理介面變更
-
-有幾個主要案例要處理-新增和更新，可以使用相同的程式碼路徑，並移除。
-
-* 在新增和更新的案例中，我們會在字典中加入或取得代表這個網格的 GameObject、建立具有必要元件的 SurfaceData 結構，然後呼叫 RequestMeshDataAsync，以在場景中填入網格資料和位置的 GameObject。
-* 在移除的案例中，我們會從字典中移除代表這個網格的 GameObject，並將它終結。
-
-```cs
-System.Collections.Generic.Dictionary<SurfaceId, GameObject> spatialMeshObjects =
-    new System.Collections.Generic.Dictionary<SurfaceId, GameObject>();
-
-private void OnSurfaceChanged(SurfaceId surfaceId, SurfaceChange changeType, Bounds bounds, System.DateTime updateTime)
-{
-    switch (changeType)
-    {
-        case SurfaceChange.Added:
-        case SurfaceChange.Updated:
-            if (!spatialMeshObjects.ContainsKey(surfaceId))
-            {
-                spatialMeshObjects[surfaceId] = new GameObject("spatial-mapping-" + surfaceId);
-                spatialMeshObjects[surfaceId].transform.parent = this.transform;
-                spatialMeshObjects[surfaceId].AddComponent<MeshRenderer>();
-            }
-            GameObject target = spatialMeshObjects[surfaceId];
-            SurfaceData sd = new SurfaceData(
-                // the surface id returned from the system
-                surfaceId,
-                // the mesh filter that is populated with the spatial mapping data for this mesh
-                target.GetComponent<MeshFilter>() ?? target.AddComponent<MeshFilter>(),
-                // the world anchor used to position the spatial mapping mesh in the world
-                target.GetComponent<WorldAnchor>() ?? target.AddComponent<WorldAnchor>(),
-                // the mesh collider that is populated with collider data for this mesh, if true is passed to bakeMeshes below
-                target.GetComponent<MeshCollider>() ?? target.AddComponent<MeshCollider>(),
-                // triangles per cubic meter requested for this mesh
-                1000,
-                // bakeMeshes - if true, the mesh collider is populated, if false, the mesh collider is empty.
-                true
-            );
-
-            SurfaceObserver.RequestMeshAsync(sd, OnDataReady);
-            break;
-        case SurfaceChange.Removed:
-            var obj = spatialMeshObjects[surfaceId];
-            spatialMeshObjects.Remove(surfaceId);
-            if (obj != null)
-            {
-                GameObject.Destroy(obj);
-            }
-            break;
-        default:
-            break;
-    }
-}
-```
-
-### <a name="handling-data-ready"></a>處理資料就緒
-
-OnDataReady 處理常式會接收 SurfaceData 物件。 WorldAnchor、MeshFilter 和 (選擇性地) 它所包含的 MeshCollider 物件會反映相關聯空間介面的最新狀態。 （選擇性）藉由存取 MeshFilter 物件的網狀成員來分析及/或 [處理](../../design/spatial-mapping.md#mesh-processing) 網格資料。 使用最新的網格轉譯空間介面，並 (選擇性地) 將它用於物理衝突和 raycasts。 請務必確認 SurfaceData 的內容不是 null。
-
-### <a name="start-processing-on-updates"></a>開始處理更新
-
-SurfaceObserver 應該在延遲而不是每個畫面上呼叫更新 () 。
-
-```cs
-void Start ()
-{
-    StartCoroutine(UpdateLoop());
-}
-
-IEnumerator UpdateLoop()
-{
-    var wait = new WaitForSeconds(2.5f);
-    while(true)
-    {
-        surfaceObserver.Update(OnSurfaceChanged);
-        yield return wait;
-    }
-}
-```
+[!INCLUDE[](includes/unity-spatial-mapping.md)]
 
 ## <a name="higher-level-mesh-analysis-spatial-understanding"></a>更高層級的網狀分析：空間理解
 
@@ -212,7 +62,7 @@ IEnumerator UpdateLoop()
 
 ### <a name="spatial-understanding"></a>空間理解
 
-在實體世界中放置全像影像時，通常會想要超越空間對應的網格和表面平面。 當放置完成 cti 時，需要較高層級的環境理解。 這通常需要做出有關樓層、上限和牆壁的決策。 您也可以針對一組放置條件約束進行優化，以判斷全像攝影物件最適合的實體位置。
+在實體世界中放置全像影像時，通常會想要超越空間對應的網格和表面平面。 當放置完成 cti 時，需要較高層級的環境理解。 這通常需要做出有關樓層、上限和牆壁的決策。 您也可以針對一組放置條件約束進行優化，以決定全像攝影物件的最佳實體位置。
 
 在開發年輕 Conker 和片段的期間，Asobo 工作室藉由開發會議室規劃求解來面對這個問題。 這些遊戲都有遊戲專屬的需求，但它們共用了核心空間的理解技術。 HoloToolkit. SpatialUnderstanding 程式庫會封裝這項技術，可讓您快速找出牆上的空格、將物件放在最上方、找出放置的字元，以及許多其他空間理解查詢。
 

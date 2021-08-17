@@ -6,12 +6,12 @@ ms.author: grbury
 ms.date: 02/10/2019
 ms.topic: article
 keywords: 共用體驗、混合現實、全息圖、空間錨點、多使用者、多重
-ms.openlocfilehash: fe738d07e57bd2f62cab8036a09ca6ab31d6544bdd9b6dacc8dde3445fa58214
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 013d30bcbf3818e944eb637a792bdbc82d430f69
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193582"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184739"
 ---
 # <a name="shared-experiences-in-mixed-reality"></a>混合現實的共用體驗
 
@@ -171,7 +171,7 @@ OnSight 等經驗提供了共同作業的新商機。 從實際指向虛擬環�
 **注意：** 圖片會透過 iOS/Android 裝置上的螢幕擷取畫面取得。
 
 ## <a name="multi-user-collaborative-experience"></a>多使用者協同作業體驗
-
+<!--Unity Note-->
 從我們的 [多使用者學習教學課程](../unity/tutorials/mr-learning-sharing-02.md)開始，此教學課程會利用適用于本機使用者的 [Azure 空間錨點](/azure/spatial-anchors/) 和 [Photon SDK](https://www.photonengine.com/PUN) ，在場景中同步處理內容/狀態。 建立在本機共同作業的應用程式，其中每位使用者都有自己在場景中的全像投影，而且每一位使用者都可以與全像全像全像全像  系統會在所有裝置上提供更新，並由 Photon 處理互動衝突管理。
 
 > [!NOTE]

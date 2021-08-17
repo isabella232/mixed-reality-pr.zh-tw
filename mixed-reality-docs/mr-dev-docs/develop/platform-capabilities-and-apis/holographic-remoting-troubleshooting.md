@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality，全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、疑難排解、說明、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: fa984e89fb6eb770917d9a1d62ce7c1007d45fab7fbcb2723f9642ac81814054
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: d49f73f4cbe205e71cb2f76ab02769ddad5f3ed2
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223568"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184609"
 ---
 # <a name="holographic-remoting-troubleshooting"></a>全像遠端處理疑難排解
 
@@ -104,6 +104,7 @@ ms.locfileid: "115223568"
 * [SpatialGraphInteropPreview.TryCreateFrameOfReference](/uwp/api/windows.perception.spatial.preview.spatialgraphinteroppreview.trycreateframeofreference)
 
 ## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [全像遠端版本歷程記錄](holographic-remoting-version-history.md)
 * [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)

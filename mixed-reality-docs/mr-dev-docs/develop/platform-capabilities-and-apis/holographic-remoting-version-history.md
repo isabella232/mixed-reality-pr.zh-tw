@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 07/20/2021
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、版本歷程記錄、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 21ba89e477872f5dfa41468f1a7f2d7507affd681556d79843c195d7d5839e7b
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c474583aacf3872095eaf151f5ab47b617fe0252
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223550"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184749"
 ---
 # <a name="holographic-remoting-version-history"></a>全像遠端版本歷程記錄
 
@@ -166,7 +166,7 @@ ms.locfileid: "115223550"
 * HoloLens 2 的全像全像的全像公開發行。
 
 ## <a name="see-also"></a>另請參閱
-
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)

@@ -2,22 +2,24 @@
 title: Unreal 中的串流
 description: 了解如何將 Unreal 應用程式串流至 HoloLens 2，包括串流限制和命令列選項。
 author: sw5813
-ms.author: suwu
-ms.date: 12/7/2020
+ms.author: v-vtieto
+ms.date: 08/04/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 串流, 電腦, 全像攝影應用程式遠端處理, 全像攝影遠端播放程式, 文件, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 4b3be99f699c7c1d40d3ea98aacecde6f60e4d2db759448f84c820a43d89bb0a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218852"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184631"
 ---
 # <a name="streaming-in-unreal"></a>Unreal 中的串流
+
+「串流」有時也稱為「全像攝影」。 若要深入瞭解，請參閱全像的 [遠端處理總覽](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 從電腦串流至 HoloLens 可提供兩大優點： 
 * 可讓您的混合實境應用程式利用電腦的計算能力。 

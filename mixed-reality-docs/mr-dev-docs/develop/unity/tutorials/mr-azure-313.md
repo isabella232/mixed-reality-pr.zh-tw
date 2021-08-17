@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/11/2018
 ms.topic: article
 keywords: azure，混合的現實，學術，邊緣，iot edge，教學課程，api，通知，函式，資料表，hololens，沉浸式，vr，iot，虛擬機器，ubuntu，python，Windows 10，Visual Studio
-ms.openlocfilehash: 0a9f1b7c42094b3c441bdb32082f6821f2fd43a1ce3339cf1f58e7bd0fcf8318
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: fbd793a5941a5fa1b236403672680aa7df375f8d
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115194836"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905766"
 ---
 # <a name="hololens-1st-gen-and-azure-313-iot-hub-service"></a>HoloLens (第1代) 和 Azure 313： IoT 中樞服務
 
@@ -57,7 +57,7 @@ ms.locfileid: "115194836"
 
 ## <a name="prerequisites"></a>必要條件
 
-如需使用混合現實進行開發的最新必要條件，包括使用 Microsoft HoloLens，請造訪[安裝工具](/windows/mixed-reality/install-the-tools)文章。
+如需使用混合現實進行開發的最新必要條件，包括使用 Microsoft HoloLens，請造訪[安裝工具](../../install-the-tools.md)文章。
 
 > [!NOTE]
 > 本教學課程是專為具有 Python 基本經驗的開發人員所設計。 另外也請注意，本檔中的必要條件和書面指示，代表在撰寫 (2018 年7月) 時已經過測試和驗證的內容。 You are free to use the latest software, as listed within the [install the tools](../../install-the-tools.md) article, though it should not be assumed that the information in this course will perfectly match what you will find in newer software than that listed below.
@@ -1247,11 +1247,11 @@ ms.locfileid: "115194836"
 
 1. 在您的 HoloLens 上，藉由在應用程式清單中使用其圖示來登入 **Microsoft Store**。
 
-    ![Power BIH l](images/AzureLabs-Lab313-87.png)
+    ![Power BIH L](images/AzureLabs-Lab313-87.png)
 
 2. 搜尋 **Power BI** 應用程式，然後加以下載。
 
-    ![Power BIH l](images/AzureLabs-Lab313-88.png)
+    ![Power BIH L](images/AzureLabs-Lab313-88.png)
 
 3. 從應用程式清單中開始 **Power BI** 。 
 
@@ -1259,7 +1259,7 @@ ms.locfileid: "115194836"
 
 5. 在應用程式中，工作區預設應會顯示，如下圖所示。 如果沒有發生這種情況，只要按一下視窗左側的工作區圖示即可。
 
-    ![Power BIH l](images/AzureLabs-Lab313-89.png)
+    ![Power BIH L](images/AzureLabs-Lab313-89.png)
 
 ## <a name="your-finished-your-iot-hub-application"></a>您已完成 IoT 中樞應用程式
 

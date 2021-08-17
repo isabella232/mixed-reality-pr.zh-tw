@@ -1,19 +1,19 @@
 ---
-title: 撰寫自訂全像攝影遠端播放程式
+title: " (c + +) 撰寫自訂的全像遠端播放機"
 description: 建立自訂 Hologaphic 遠端應用程式，以將在遠端電腦上轉譯的內容顯示到您的 HoloLens 2。
 author: florianbagarmicrosoft
-ms.author: flbagar
-ms.date: 12/01/2020
+ms.author: v-vtieto
+ms.date: 7/30/2021
 ms.topic: article
 keywords: HoloLens、遠端處理、全像攝影遠端處理、NuGet、應用程式資訊清單、播放機內容、遠端應用程式、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: b395f94f6c98b20f7c0c188f11a718e6da9394de5df3404e7c703558daf526f2
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 37388dc9cbf70cb7fccd742fb45e1e29c0ceb971
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190162"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184729"
 ---
-# <a name="writing-a-custom-holographic-remoting-player-app"></a>撰寫自訂全像攝影遠端播放應用程式
+# <a name="writing-a-custom-holographic-remoting-player-app-c"></a> (c + +) 撰寫自訂的全像遠端播放機應用程式
 
 >[!IMPORTANT]
 >本檔說明如何建立 HoloLens 2 的自訂播放程式應用程式。 針對 HoloLens 2 撰寫的自訂播放程式與針對 HoloLens 1 撰寫的遠端應用程式不相容。 這表示這兩個應用程式都必須使用 NuGet 套件 **2.x 版。**
@@ -251,6 +251,7 @@ winrt::Microsoft::Holographic::AppRemoting::PlayerFrameStatistics statistics = m
 自訂資料通道可以用來透過已建立的遠端連線來傳送使用者資料。 如需詳細資訊，請參閱 [自訂資料通道](holographic-remoting-custom-data-channels.md) 。
 
 ## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [自訂全像攝影遠端資料通道](holographic-remoting-custom-data-channels.md)

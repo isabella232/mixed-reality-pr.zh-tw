@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: Windows Mixed Reality、全像全像全像）、遠端轉譯、網路轉譯、HoloLens、遠端全息全像、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: ecfc49477e202b08303160e54ce986577a9d79eb387dc1edb1bc33c63644615f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3f9d3d23d18f680ce1001310e4ce49089edaae6a
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115198854"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184619"
 ---
 # <a name="add-holographic-remoting-hololens-first-gen"></a>新增全像遠端 (HoloLens (第一代) ) 
 
@@ -261,3 +261,11 @@ internal:
 程式 **代碼範例：** 您可以使用完整的全像 [遠端處理常式代碼範例](https://github.com/Microsoft/HoloLensCompanionKit)，其中包含了一種全像桌面應用程式，可與桌上型電腦 WIN32、uwp DIRECTX 和 UWP 的遠端處理和遠端處理主項目目相容。 
 
 **調試附注：** 全像全像遠端程式庫可能會擲回第一個可能發生的例外狀況。 這些例外狀況可能會顯示在偵錯工具中，視當時作用中的 Visual Studio 例外狀況設定而定。 這些例外狀況是由全像「全像」遠端程式庫在內部攔截，可以忽略。
+
+## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
+* [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
+* [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)
+* [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
+* [全像攝影遠端軟體授權條款](/legal/mixed-reality/microsoft-holographic-remoting-software-license-terms)
+* [Microsoft 隱私權聲明](https://go.microsoft.com/fwlink/?LinkId=521839)

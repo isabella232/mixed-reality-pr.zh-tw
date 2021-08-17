@@ -6,12 +6,12 @@ ms.author: moelhama
 ms.date: 05/11/2021
 ms.topic: article
 keywords: HoloLens、Emulator、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
-ms.openlocfilehash: ca5338a0104c5551d96cb7ea4d7dfef3e38432c14dc75ee41a32874e71f1fb01
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f8c76ef8f7228f0fe4602c6df40754b3ba50c2d8
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115223551"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905686"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 Emulator 封存
 
@@ -19,6 +19,8 @@ HoloLens Emulator (第一代) 和 HoloLens 2 Emulator 組建並存安裝。 我�
 
 |  組建 |  發行日期 |  備註 |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator 組建10.0.20348.1014](https://go.microsoft.com/fwlink/?linkid=2169418) | 2021年8月10日 | Windows全像21H1 版2021年8月更新。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator 組建10.0.19041.1161](https://go.microsoft.com/fwlink/?linkid=2169166) | 2021年8月10日 | Windows全像20H2 版2021年8月更新。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator 組建10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | 2021年7月13日 | Windows全像21H1 版的2021年7月更新。 <br> 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。 先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。 在某些情況下，模擬器無法順利開機，但現在將會。 <br> 如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator 組建10.0.19041.1157](https://go.microsoft.com/fwlink/?linkid=2167735) | 2021年7月13日 | Windows全像20H2 版的2021年7月更新。  <br> 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。 先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。 在某些情況下，模擬器無法順利開機，但現在將會。 <br> 如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator 組建10.0.20348.1007](https://go.microsoft.com/fwlink/?linkid=2165258) | 2021年6月8日 | Windows21H1 年6月更新版全像2021版。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |

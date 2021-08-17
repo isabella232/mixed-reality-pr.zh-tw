@@ -6,12 +6,12 @@ ms.author: jemccull
 ms.date: 07/04/2018
 ms.topic: article
 keywords: azure，自訂視覺，物件偵測，混合現實，學院，unity，教學課程，api，hololens，Windows 10，Visual Studio
-ms.openlocfilehash: 85a99b676f6765696524bc42adf257b3430c00cc955413b4c299ddb58502cefb
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: b152aaebbd3858140b79133a8f8e551aab06b4f3
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216572"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905741"
 ---
 # <a name="hololens-1st-gen-and-azure-310-object-detection"></a>HoloLens (第1代) 和 Azure 310：物件偵測
 
@@ -33,12 +33,12 @@ ms.locfileid: "115216572"
 
 完成本課程之後，您將會有一個混合現實應用程式，可以執行下列動作：
 
-1. 使用者可以使用 Azure 自訂視覺服務的物件偵測，來 *注視* 已定型的物件。 
+1. 使用者可以使用 Azure 自訂視覺服務的物件偵測，來 *注視* 已定型的物件。
 2. 使用者會使用點一下 *手勢來* 捕捉其所查看內容的影像。
 3. 應用程式會將映射傳送至 Azure 自訂視覺服務。
 4. 服務會有回復，會將辨識結果顯示為世界空間文字。 這會透過使用 Microsoft HoloLens 的空間追蹤來完成，以瞭解辨識物件的世界位置，然後使用與影像中偵測到的相關聯的 *標記* 來提供標籤文字。
 
-本課程也會說明如何手動上傳影像、建立標籤，以及訓練服務，以在所提供的範例中辨識不同的物件 (在所提供的範例中，這是杯) ，方法是在您提交的影像內設定 *界限* 方塊。 
+本課程也會說明如何手動上傳影像、建立標記，以及訓練服務來辨識不同的物件 (在提供的範例中) ，藉由在您提交的影像內設定 *界限* 方塊來辨識不同的物件。
 
 > [!IMPORTANT]
 > 在建立和使用應用程式之後，開發人員應該流覽回 Azure 自訂視覺服務，並找出服務所做的預測，並判斷其是否正確或不 (透過標記服務遺漏的任何內容，以及調整周 *框方塊*) 。 然後，您可以重新定型服務，這會增加 it 識別真實世界物件的可能性。
@@ -63,10 +63,10 @@ ms.locfileid: "115216572"
 本課程建議您採用下列硬體和軟體：
 
 - 開發電腦
-- [啟用開發人員模式的 Windows 10 Fall Creators Update (或更新版本) ](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [最新的 Windows 10 SDK](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Unity 2017.4 LTS](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
-- [Visual Studio 2017](/windows/mixed-reality/install-the-tools#installation-checklist-for-hololens)
+- [啟用開發人員模式的 Windows 10 Fall Creators Update (或更新版本) ](../../install-the-tools.md#installation-checklist-for-hololens)
+- [最新的 Windows 10 SDK](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Unity 2017.4 LTS](../../install-the-tools.md#installation-checklist-for-hololens)
+- [Visual Studio 2017](../../install-the-tools.md#installation-checklist-for-hololens)
 - 啟用開發人員模式的[Microsoft HoloLens](/windows/mixed-reality/hololens-hardware-details)
 - 適用于 Azure 安裝和自訂視覺服務抓取的網際網路存取
 -  針對您想要自訂視覺辨識的每個物件，至少) 需要一系列 15 (15) 映射。 如果您想要的話，可以使用本課程所提供的映射，也就 [是一系列的 cup](https://github.com/Microsoft/HolographicAcademy/raw/Azure-MixedReality-Labs/Azure%20Mixed%20Reality%20Labs/MR%20and%20Azure%20310%20-%20Object%20detection/Cup%20Images.zip)) 。
@@ -74,8 +74,8 @@ ms.locfileid: "115216572"
 ## <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 1.  為了避免在建立此專案時發生問題，強烈建議您在根或近端根資料夾中，建立本教學課程中所述的專案 (長的資料夾路徑可能會在組建階段) 時發生問題。
-2.  設定及測試您的 HoloLens。 如果您需要設定 HoloLens 的支援，[請務必造訪 HoloLens 安裝程式文章](/hololens/hololens-setup)。 
-3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。 
+2.  設定及測試您的 HoloLens。 如果您需要這項支援，請[造訪 HoloLens 安裝文章](/hololens/hololens-setup)。
+3.  在開始開發新的 HoloLens 應用程式時，最好先執行校正和感應器調整， (有時它可以協助您為每個使用者) 執行這些工作。
 
 如需有關校正的說明，請遵循此[連結來 HoloLens 校正文章](/hololens/hololens-calibration#hololens-2)。
 

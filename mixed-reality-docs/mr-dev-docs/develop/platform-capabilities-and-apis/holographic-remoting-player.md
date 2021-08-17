@@ -3,19 +3,20 @@ title: 全像攝影遠端播放程式
 description: 您可以透過 wi-fi，瞭解全像攝影的遠端播放機，以及從電腦即時將全像攝影內容串流至您的 HoloLens。
 author: florianbagarmicrosoft
 ms.author: v-vtieto
-ms.date: 07/27/2021
+ms.date: 07/30/2021
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、診斷、效能
-ms.openlocfilehash: 1e286612035a34c1bac174a620c350a91eb2b0fd59c3e808fe3a99368e03f43c
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c5574017c33379248f4bf412cb5b046fdf309d72
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217138"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184659"
 ---
 # <a name="holographic-remoting-player"></a>全像攝影遠端播放程式
 
-[瞭解全像攝影的基本概念。](platform-capabilities-and-apis/holographic-remoting-overview.md)
+>[!TIP]
+>[瞭解全像攝影的基本概念。](holographic-remoting-overview.md)
 
 >[!IMPORTANT]
 >HoloLens 2 的全像是主要版本變更。 [ **HoloLens (第1代)** 的遠端應用程式](add-holographic-remoting.md)必須使用 NuGet 套件 1.x. x **. x** 和 [遠端應用程式 **HoloLens 2**](holographic-remoting-create-remote-wmr.md)必須 **使用 2.x**. x. x. x. x. x. x. x 版。 這表示針對 HoloLens 2 撰寫的遠端應用程式與 HoloLens (第一代) 並不相容，反之亦然。
@@ -78,6 +79,7 @@ ms.locfileid: "115217138"
 * 建議您透過乙太網路將您的電腦連線到您的網路，以減少無線躍點數目。
 
 ## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [HoloLens (第一代) ：新增全像的遠端處理](add-holographic-remoting.md)
 * [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)

@@ -6,14 +6,14 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、資料頻道
-ms.openlocfilehash: 09fea161f9042d7afc59c16d3b5e8a6c69892e84b1de5e9ab4a4808733b4f171
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1adda10aa7792eaeab0ac32cb37d73dcfd2b58e6
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115217084"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184709"
 ---
-# <a name="custom-holographic-remoting-data-channels"></a>自訂全像攝影遠端資料通道
+# <a name="custom-holographic-remoting-data-channels-c"></a>自訂的全像遠端資料通道 (c + +) 
 
 >[!NOTE]
 >本指南專為 HoloLens 2 上的全像攝影遠端所特有。
@@ -114,6 +114,7 @@ m_customDataChannel.Close();
 ```
 
 ## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [使用 Windows Mixed Reality api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-wmr.md)
 * [使用 OpenXR Api 撰寫全像遠端執行遠端應用程式](holographic-remoting-create-remote-openxr.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)

@@ -6,12 +6,12 @@ ms.author: adlinv
 ms.date: 03/21/2018
 ms.topic: article
 keywords: Windows Mixed Reality、範例應用程式、設計、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、Windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: 50ca50acd2960ac7bfbd3a3595d7a3dfa4e69f06848919afe7c8f430c41aeaaf
-ms.sourcegitcommit: 5977109661a1db4ee2be8ed532479342093303d5
+ms.openlocfilehash: a75ec87cb41345a8a4bec26eddf70a79d12fb399
+ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/07/2021
-ms.locfileid: "116862606"
+ms.lasthandoff: 08/13/2021
+ms.locfileid: "121905731"
 ---
 # <a name="lunar-module"></a>月球模組
 ![陰曆模組](../images/MRDL_LunarModule.jpg)

@@ -6,12 +6,12 @@ ms.author: flbagar
 ms.date: 12/01/2020
 ms.topic: article
 keywords: HoloLens、遠端、全像全像遠端、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、NuGet
-ms.openlocfilehash: 6cf44bd031aec4b475d7496a999a3c7d4d40cae7cc921ff39cfe61698f3dd532
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 3fd210db1b179cbceff057e25bf451be0e7ca843
+ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115212066"
+ms.lasthandoff: 08/14/2021
+ms.locfileid: "122184589"
 ---
 # <a name="writing-a-holographic-remoting-remote-app-using-the-openxr-api"></a>使用 OpenXR API 撰寫全像遠端執行遠端應用程式
 
@@ -206,6 +206,7 @@ m_window->PresentSwapchain();
 如果您的遠端應用程式使用 DX12，請使用 XrRemotingFrameMirrorImageD3D12MSFT 而不是 XrRemotingFrameMirrorImageD3D11MSFT。
 
 ## <a name="see-also"></a>另請參閱
+* [全像遠端處理總覽](holographic-remoting-overview.md)
 * [撰寫自訂全像攝影遠端播放應用程式](holographic-remoting-create-player.md)
 * [建立全像攝影遠端處理的連線安全](holographic-remoting-secure-connection.md)
 * [全像遠端的疑難排解和限制](holographic-remoting-troubleshooting.md)
