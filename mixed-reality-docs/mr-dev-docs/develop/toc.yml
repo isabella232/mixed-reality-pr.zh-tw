@@ -1,6 +1,6 @@
 - name: 混合實境開發簡介
   items:
-    - name: 使用者入門
+    - name: 開始使用
       href: development.md
     - name: 安裝工具
       href: install-the-tools.md
@@ -234,6 +234,8 @@
           href: unity/using-the-windows-namespace-with-unity-apps-for-hololens.md
         - name: Unity 中的混合現實原生 interop
           href: unity/unity-xrdevice-advanced.md
+        - name: 使用電腦資源來增強您的應用程式
+          href: unity/use-pc-resources.md
         - name: 使用 Vuforia
           href: unity/vuforia-development-overview.md
     - name: 沉浸式 VR
@@ -266,8 +268,8 @@
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Unity 的建議設定
           href: unity/recommended-settings-for-unity.md
-        - name: 預覽您的工作與全像攝影遠端
-          href: unity/holographic-remoting-in-unity.md
+        - name: 使用全像的遠端處理來預覽和偵測應用程式
+          href: unity/preview-and-debug-your-app.md
     - name: Visual Studio 解決方案
       items:
         - name: 匯出和建置 Unity Visual Studio 解決方案
@@ -452,21 +454,21 @@
           href: platform-capabilities-and-apis/installing-pix-hololens.md
     - name: 全像攝影遠端處理
       items:
-        - name: 概觀
+        - name: 全像遠端處理總覽
           href: platform-capabilities-and-apis/holographic-remoting-overview.md
         - name: 全像遠端播放機
           href: platform-capabilities-and-apis/holographic-remoting-player.md
-        - name: 撰寫全像攝影遠端應用程式
+        - name: ' (c + +) 撰寫全像遠端遠端應用程式'
           items:
             - name: HolographicSpace API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-wmr.md
             - name: OpenXR API
               href: platform-capabilities-and-apis/holographic-remoting-create-remote-openxr.md
-        - name: 撰寫自訂全像攝影遠端播放應用程式
+        - name: ' (c + +) 撰寫自訂的全像遠端播放機應用程式'
           href: platform-capabilities-and-apis/holographic-remoting-create-player.md
-        - name: 自訂全像攝影遠端資料通道
+        - name: '自訂的全像遠端資料通道 (c + +) '
           href: platform-capabilities-and-apis/holographic-remoting-custom-data-channels.md
-        - name: 保護全像攝影遠端連線的安全
+        - name: 使用全像 (c + +) 的安全連線
           href: platform-capabilities-and-apis/holographic-remoting-secure-connection.md
         - name: 疑難排解和限制
           href: platform-capabilities-and-apis/holographic-remoting-troubleshooting.md
