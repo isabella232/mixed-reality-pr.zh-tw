@@ -220,7 +220,7 @@
           href: unity/spatial-sound-in-unity.md
     - name: 進階功能
       items:
-        - name: Unity 中的相片攝影機
+        - name: 相片攝影機
           href: unity/locatable-camera-in-unity.md
         - name: 對焦點
           href: unity/focus-point-in-unity.md
