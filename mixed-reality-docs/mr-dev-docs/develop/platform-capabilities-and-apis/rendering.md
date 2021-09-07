@@ -6,14 +6,14 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 轉譯，全像影像
-ms.openlocfilehash: d01a5911ad8b479197bd38e8ed7825feef1f69dc51d2c2dc2f8e500e93880955
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 5bd06b9ca521e489a8944a1813b735a0fe1d60a5
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193664"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244215"
 ---
-# <a name="rendering"></a>轉譯
+# <a name="holographic-rendering"></a>全像轉譯
 
 全像影像呈現可讓您的應用程式在世界各地的精確位置繪製一個全像，無論是精確地放在實體世界或您所建立的虛擬領域中。 [全像投影](../../discover/hologram.md)是由音效和淺色所組成的物件。 呈現可讓您的應用程式新增燈光。
 

@@ -1,18 +1,20 @@
 ---
-ms.openlocfilehash: ad45cf8df4e51d17533c8e57b9ffe67738676d2af5398dd320cc86be469d5803
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2ab12da2da926d906a5ae57868f152ecc2b13d90
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208845"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244297"
 ---
 # <a name="world-locking-tools-recommended"></a>[ (建議) 的世界鎖定工具 ](#tab/wlt)
 
-根據預設，全球鎖定工具會跨會話還原 Unity 的座標系統，相對於實體世界。 這表示，在結束並重新執行應用程式之後，若要讓全像地方在實體世界中出現相同的位置，則全像投影一樣必須再次具有相同的姿勢。
+根據預設，全球鎖定工具會在支援本機空間錨點持續性的裝置上，于不同的會話之間，還原 Unity 的座標系統。 若要在結束並重新執行應用程式之後，在實體世界的相同位置中出現全像投影，則只需要再次使用相同的姿勢。
 
 ![Unity inspector 中的世界鎖定內容元件](../../images/world-locking-tools-img-02.png)
 
 如果應用程式需要更細微的控制，則在偵測器中可能會停用 **自動儲存** 和 **自動載入** ，以及從腳本的持續性部分（如 [檔的持續性區段](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/Concepts/Advanced/Persistence.html)中所述）進行管理。
+
+目前只有 HoloLens 系列的裝置才支援本機錨點持續性。 不過，在 Android 和 iOS 上以及 HoloLens、跨會話的座標空間持續性，以及跨裝置共用座標空間的支援，都是透過與 Azure 空間錨點的整合來支援。 有豐富的 [詳細資訊和範例](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html) ，可搭配使用全球鎖定工具與 Azure 空間錨點。
 
 # <a name="aranchormanager"></a>[ARAnchorManager](#tab/anchorstore)
 

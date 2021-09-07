@@ -218,6 +218,8 @@
           href: unity/spatial-mapping-in-unity.md
         - name: 空間音效
           href: unity/spatial-sound-in-unity.md
+        - name: 場景理解
+          href: unity/scene-understanding-sdk.md
     - name: 進階功能
       items:
         - name: 相片攝影機
@@ -264,6 +266,8 @@
               href: unity/lunar-module.md
     - name: 偵錯和效能
       items:
+        - name: 對 Unity 的效能建議
+          href: unity/performance-recommendations-for-unity.md
         - name: 使用 Unity 的 Managed 調試
           href: unity/managed-debugging-with-unity-il2cpp.md
         - name: Unity 的建議設定
@@ -422,15 +426,13 @@
   items:
     - name: 核心基本要素
       items:
-        - name: 場景理解
-          href: platform-capabilities-and-apis/scene-understanding-sdk.md
         - name: 共用 spatial anchors
           href: platform-capabilities-and-apis/shared-spatial-anchors-in-directx.md
-        - name: 鍵盤、滑鼠及控制器輸入
+        - name: '使用 c + + 範例的鍵盤、滑鼠和控制器輸入 () '
           href: platform-capabilities-and-apis/keyboard-mouse-and-controller-input-in-directx.md
         - name: 使用全像攝影 DirectX 應用程式中的 XAML
           href: platform-capabilities-and-apis/using-xaml-with-holographic-directx-apps.md
-        - name: QR 代碼追蹤
+        - name: '使用 c # 和 c + + 範例的 QR 代碼追蹤 () '
           href: platform-capabilities-and-apis/qr-code-tracking.md
     - name: 混合實境中的共用體驗
       items:
@@ -440,13 +442,13 @@
           href: /azure/spatial-anchors/
         - name: 觀眾檢視
           href: platform-capabilities-and-apis/spectator-view.md
-        - name: WebRTC
+        - name: 'WebRTC (c #、c + +、Unity) '
           href: 'https://github.com/microsoft/MixedReality-WebRTC'
     - name: 相機和擷取
       items:
-        - name: 定位相機
+        - name: '使用 c + + 範例的隨攝影機 () '
           href: platform-capabilities-and-apis/locatable-camera.md
-        - name: 適用於開發人員的混合實境擷取
+        - name: '適用于開發人員的混合現實 capture (使用 c # 和 c + + 範例) '
           href: platform-capabilities-and-apis/mixed-reality-capture-for-developers.md
         - name: 運作方式 - 混合實境擷取工作室
           href: platform-capabilities-and-apis/how-it-works-mixed-reality-capture-studios.md
@@ -484,12 +486,10 @@
           href: platform-capabilities-and-apis/app-quality-criteria.md
         - name: 全像攝影的呈現
           href: platform-capabilities-and-apis/rendering.md
-        - name: 磁碟區呈現
+        - name: '使用 c + + 範例的磁片區轉譯 () '
           href: platform-capabilities-and-apis/volume-rendering.md
-        - name: 全像投影穩定性
+        - name: '使用 c # 範例) 的全像 (的全息圖穩定性'
           href: platform-capabilities-and-apis/hologram-stability.md
-        - name: 使用穩定平面減少全像攝影晃動
-          href: platform-capabilities-and-apis/case-study-using-the-stabilization-plane-to-reduce-holographic-turbulence.md
         - name: 了解混合實境的效能
           href: platform-capabilities-and-apis/understanding-performance-for-mixed-reality.md
         - name: 對 Unity 的效能建議
@@ -506,13 +506,13 @@
           href: platform-capabilities-and-apis/advanced-hololens-emulator-and-mixed-reality-simulator-input.md
         - name: HoloLens 模擬器封存
           href: platform-capabilities-and-apis/hololens-emulator-archive.md
-        - name: 感知模擬
+        - name: '使用 c # 範例的認知模擬 () '
           href: platform-capabilities-and-apis/perception-simulation.md
     - name: 裝置入口網站
       items:
         - name: 使用 Windows 裝置入口網站
           href: platform-capabilities-and-apis/using-the-windows-device-portal.md
-        - name: 裝置入口網站 API 參照
+        - name: ' (REST) 的裝置入口網站 API 參考'
           href: platform-capabilities-and-apis/device-portal-api-reference.md
     - name: 研究工具
       items:

@@ -2,16 +2,16 @@
 title: 可互動的物件
 description: 瞭解如何在您的混合現實應用程式中觸發事件、提供視覺提示，以及與物件互動。
 author: cre8ivepark
-ms.author: v-hferrone
+ms.author: dongpark
 ms.date: 06/06/2019
 ms.topic: article
 keywords: 混合的現實、控制項、互動、提示、ui、ux、混合現實耳機、windows mixed Reality 耳機、虛擬實境耳機、HoloLens、MRTK、混合現實工具組、音訊
-ms.openlocfilehash: 9ce682de7e400eba6ffbaccbca34065a1f09966f842cffd6853f3a064f146904
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f1fe68c7f35fecb9fbee888893fb15a83a8595ec
+ms.sourcegitcommit: 4f1697b11e5638db9bbd0bd7a671d846d54c6389
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190711"
+ms.lasthandoff: 08/23/2021
+ms.locfileid: "122682994"
 ---
 # <a name="interactable-object"></a>可互動的物件
 
@@ -229,18 +229,6 @@ HoloLens 2 支援明確的手追蹤輸入，可讓您與物件互動。 如果�
 ![直接接觸互動的目標大小](images/TargetSizingNear.jpg)<br>
 *直接接觸互動的目標大小*
 
-<br>
-
-### <a name="target-size-for-buttons"></a>按鈕的目標大小
-
-建立直接互動的按鈕時，建議使用較大的大小（3.2 x 3.2 cm），以確保有足夠的空間可包含圖示且可能有一些文字。
-
-| 距離 | 最小大小 |
-|---------|---------|
-| 45 cm  | 3.2 x 3.2 cm |
-
-![按鈕的目標大小](images/TargetSizingButtons.png)<br>
-*按鈕的目標大小*
 
 <br>
 

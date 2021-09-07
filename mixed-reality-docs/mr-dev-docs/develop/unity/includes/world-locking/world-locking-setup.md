@@ -1,10 +1,10 @@
 ---
-ms.openlocfilehash: e4ada87db2d9e483758030bf1bbe56dbacd7664ae7e1921540c0c7abfe14a7c7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 047a77259d78ba8ea68002a5142080971900e305
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208858"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244300"
 ---
 # <a name="world-locking-tools-recommended"></a>[ (建議) 的世界鎖定工具 ](#tab/wlt)
 
@@ -17,7 +17,7 @@ ms.locfileid: "115208858"
 
 ### <a name="automated-setup"></a>自動化設定
 
-當您的專案準備就緒時，請從混合現實工具組中執行設定場景公用程式 **> 公用程式 > 世界鎖定工具**：
+當您的專案準備就緒時，請從 **混合現實 > 的世界鎖定工具** 中，執行設定場景公用程式：
 
 ![已選取混合現實工具組功能表的 Unity 編輯器](../../images/world-locking-configuration-img-01.jpeg)
 

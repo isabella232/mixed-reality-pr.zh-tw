@@ -6,12 +6,12 @@ ms.author: alexturn
 ms.date: 02/24/2019
 ms.topic: article
 keywords: 共用、錨定、WorldAnchor、MR 共用250、WorldAnchorTransferBatch、>spatialperception、Azure、Azure 空間錨點、ASA、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機
-ms.openlocfilehash: b9fdd09740dc6197c46a2d017f61e97898f213cd44bb504cbbf306f6a7ae21ec
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f7725c8282d1b5a93d555ac0f55ee936b910ff6c
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115195920"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244195"
 ---
 # <a name="shared-experiences-in-unity"></a>Unity 中的共用體驗
 
@@ -19,7 +19,15 @@ ms.locfileid: "115195920"
 
 ## <a name="azure-spatial-anchors"></a>Azure Spatial Anchors
 
-<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>會建立持久的雲端支援空間錨點，讓您的應用程式可在多個 HoloLens、iOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。 
+### <a name="automated-with-world-locking-tools"></a>使用世界鎖定工具自動化
+
+如同本機錨點，全球鎖定工具可以使用一組 Azure 空間錨點來鎖定與實體世界相關的整個座標空間，而不是使用個別錨點來鎖定個別物件。 全球鎖定整個空間不僅提供更採用遭利用精確配置的環境，也會在開發人員時間和執行時間資源中提高效率。
+
+如需運用 Azure 空間錨點來跨 HoloLens、Android 和 iOS 裝置共用協調系統，以及跨會話保存空間的詳細資訊和範例，請參閱[全球鎖定工具檔](https://microsoft.github.io/MixedReality-WorldLockingTools-Unity/DocGen/Documentation/HowTos/WLT_ASA.html)。
+
+### <a name="manual-configuration-of-azure-spatial-anchors"></a>手動設定 Azure 空間錨點
+
+<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>會建立持久的雲端支援空間錨點，讓您的應用程式可在多個 HoloLens、iOS 和 Android 裝置上找到。  藉由在多個裝置上共用一般空間錨點，每個使用者都可以在相同的實體位置中看到相對於該錨點轉譯的內容。
 
 您也可以在 HoloLens、iOS 和 Android 裝置上，使用<a href="/azure/spatial-anchors/overview" target="_blank">Azure 空間錨點</a>來取得非同步全像持續性。  藉由共用長期雲端空間錨點，即使這些裝置不會同時存在，多個裝置也可以觀察經過一段時間的相同保存全息圖。
 

@@ -6,12 +6,12 @@ ms.author: v-hferrone
 ms.date: 04/7/2021
 ms.topic: article
 keywords: Unity、空間錨點、錨定存放區、HoloLens、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、全球鎖定工具、全像影像
-ms.openlocfilehash: 34ef74ab968bff04188b1010eb4c863fd73d76ee6b1dd8a0bd89c7d4232a2be9
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 1de3571d0ad43308acad459021f2c2e9a1a6e1e7
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115208844"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244282"
 ---
 # <a name="world-locking-and-spatial-anchors-in-unity"></a>Unity 中的世界鎖定和空間錨點
 
@@ -33,12 +33,13 @@ ms.locfileid: "115208844"
 
 ## <a name="choosing-your-world-locking-approach"></a>選擇您的世界鎖定方法
 
-* **我們的建議** 是使用 **世界鎖定工具** ，來滿足您所有的全像全像位置需求。 
+* 我們建議您針對所有的全像位置需求使用 **世界鎖定工具** 。
     * 全球鎖定工具提供穩定的座標系統，可將虛擬與真實世界標記之間的明顯不一致範圍降至最低。 以另一種方式進行，它會以共用的錨點鎖定整個場景，而不是使用群組本身的個別錨點鎖定每個物件群組。
+    * 全球鎖定工具會自動處理內部的空間錨點建立和管理。 您不需要與 **ARAnchorManager** 或 **WorldAnchor** 互動，就能讓您的全像世界鎖定。
 * **針對使用 OpenXR 或 Windows XR 外掛程式的 Unity 2019/2020**，您需要使用 **ARAnchorManager**
 * **針對較舊的 Unity 版本或 WSA** 專案，您需要使用 **WorldAnchor**
 
-## <a name="setting-up-world-locking"></a>設定世界鎖定 
+## <a name="setting-up-world-locking"></a>設定世界鎖定
 
 [!INCLUDE[](includes/world-locking/world-locking-setup.md)]
 
@@ -51,11 +52,9 @@ ms.locfileid: "115208844"
 
 [!INCLUDE[](includes/world-locking/world-locking-persistence.md)]
 
-## <a name="sharing-coordinate-spaces"></a>共用座標空間 
+## <a name="sharing-coordinate-spaces"></a>共用座標空間
 
 如果您想要共用世界鎖定的座標空間，請參閱我們的全方位 [共用體驗檔](shared-experiences-in-unity.md)。
-
-請注意，在全球鎖定工具中，尚未直接支援 Azure 空間錨點，因此共用體驗將會要求您手動建立空間錨點。
 
 ## <a name="next-development-checkpoint"></a>下一個開發檢查點
 

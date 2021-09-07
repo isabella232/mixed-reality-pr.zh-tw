@@ -2,16 +2,16 @@
 title: 瞭解混合現實的效能
 description: 瞭解分析和優化 Windows Mixed Reality 應用程式效能的 advanced 資訊和詳細資料。
 author: hferrone
-ms.author: v-hferrone
-ms.date: 3/26/2019
+ms.author: v-vtieto
+ms.date: 08/16/2021
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，效能，優化，CPU，GPU
-ms.openlocfilehash: 394198011c40f0b90e2c5579f7e0ad8c4019b2a8cefcb1859c544afcbce47df6
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 9304e4cd80f0929b87a29873ad07329700ec463f
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115193554"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244204"
 ---
 # <a name="understanding-performance-for-mixed-reality"></a>瞭解混合現實的效能
 
@@ -30,7 +30,7 @@ ms.locfileid: "115193554"
 | [Windows Mixed Reality Ultra個人電腦](../../discover/immersive-headset-hardware-details.md) | 90 FPS |
 | [Windows Mixed Reality個人電腦](../../discover/immersive-headset-hardware-details.md) | 60 FPS |
 
-下列架構概述達到目標畫面播放速率的最佳作法。 建議您閱讀 [unity 文章的效能建議](../unity/performance-recommendations-for-unity.md) ，以取得在 unity 環境中測量及改善畫面播放速率的秘訣。
+下列架構概述達到目標畫面播放速率的最佳作法。 如需在 Unity 環境中測量及改善畫面播放速率的秘訣，建議您閱讀[unity 的效能建議文章](../unity/performance-recommendations-for-unity.md)。 
 
 ## <a name="understanding-performance-bottlenecks"></a>瞭解效能瓶頸
 
@@ -55,7 +55,7 @@ ms.locfileid: "115193554"
 - [Unity Profiler](https://docs.unity3d.com/Manual/Profiler.html)
 - [Unity 框架偵錯工具](https://docs.unity3d.com/Manual/FrameDebugger.html)
 - [Unreal Insights](../unreal/unreal-insights.md)
-- [Pix](https://devblogs.microsoft.com/pix/)
+- [PIX](https://devblogs.microsoft.com/pix/)
 - [Unreal 中的 GPU Pofiling](https://docs.unrealengine.com/en-US/TestingAndOptimization/PerformanceAndProfiling/GPU/index.html)
 
 ### <a name="how-to-profile-in-any-environment"></a>如何在任何環境中進行分析

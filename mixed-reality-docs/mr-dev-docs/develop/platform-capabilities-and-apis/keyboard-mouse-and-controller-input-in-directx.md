@@ -6,12 +6,12 @@ ms.author: mriches
 ms.date: 08/04/2020
 ms.topic: article
 keywords: Windows Mixed Reality、鍵盤、滑鼠、遊戲控制器、xbox 控制器、HoloLens、桌面、逐步解說、範例程式碼
-ms.openlocfilehash: 2e83fa0a14a24eb98001c7dc88af062202a2ef9a5eee7cd53e9702dbe4eedc8e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e7ae65e660fe0348205fabc1c292328912fb1cdc
+ms.sourcegitcommit: 6f3b3aa31cc3acefba5fa3ac3ba579d9868a4fe4
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115192022"
+ms.lasthandoff: 08/31/2021
+ms.locfileid: "123244166"
 ---
 # <a name="keyboard-mouse-and-controller-input-in-directx"></a>DirectX 中的鍵盤、滑鼠及控制器輸入
 
@@ -21,7 +21,7 @@ ms.locfileid: "115192022"
 鍵盤、滑鼠和遊戲控制器都可以為 Windows Mixed Reality 裝置輸入有用的形式。 HoloLens 上支援藍牙鍵盤和滑鼠，可用於對應用程式進行偵錯工具或作為輸入的替代形式。 Windows Mixed Reality 也支援連接到電腦的沉浸式耳機，其中的滑鼠、鍵盤和遊戲控制器在過去是標準的。
 
 若要在 HoloLens 上使用鍵盤輸入，請將藍牙鍵盤配對至您的裝置，或透過 Windows 裝置入口網站使用虛擬輸入。 若要在戴 Windows Mixed Reality 沉浸式耳機時使用鍵盤輸入，請將輸入焦點放在裝置上，或使用 Windows 鍵 + Y 鍵盤組合，以將輸入焦點指派給混合的現實。 請記住，適用于 HoloLens 的應用程式必須提供未連接這些裝置的功能。
-
+<!--Unity Note: the paragraph below explains that the article provides C++ code snippets. -->
 >[!NOTE]
 >本文中的程式碼片段目前示範如何使用 c + + [/cx，而](../native/creating-a-holographic-directx-project.md)不是 c + + 全像 c + + 全像 c + + 的 + 17 相容 c + +/WinRT。  這些概念對 c + +/WinRT 專案而言是相等的，不過您必須轉譯程式碼。
 
