@@ -6,12 +6,12 @@ ms.author: szymons
 ms.date: 07/08/2019
 ms.topic: article
 keywords: 場景理解、空間對應、Windows Mixed Reality、Unity、混合現實耳機、Windows Mixed reality 耳機、虛擬實境耳機、HoloLens、遮蔽、SDK
-ms.openlocfilehash: 4dd5a2c96478e50b2e9eda35be22c15c1db07f88cfc4d25d753c4860a1283f55
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 6d950fca4211aef659b1f957ca5e7135ac9764ac
+ms.sourcegitcommit: 6b8ccb881fbbdaa5119841eac528e29d7b49bd04
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115213458"
+ms.lasthandoff: 09/07/2021
+ms.locfileid: "123557315"
 ---
 # <a name="scene-understanding"></a>場景理解
 
@@ -33,7 +33,7 @@ ms.locfileid: "115213458"
 
 本文僅適用于引入場景瞭解執行時間和概念。 如果您要尋找如何使用場景理解進行開發的相關檔，您可能會對下列文章感興趣：
 
-[場景理解 SDK 總覽](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+[場景理解 SDK 總覽](../develop/unity/scene-understanding-SDK.md)
 
 您可以從範例 GitHub 網站下載場景理解範例應用程式：
 
@@ -45,7 +45,7 @@ ms.locfileid: "115213458"
 
 ### <a name="sdk"></a>SDK
 
-如果您要尋找以場景理解進行開發的特定詳細資料，請參閱 [場景理解 SDK 總覽](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md) 檔。
+如果您要尋找以場景理解進行開發的特定詳細資料，請參閱 [場景理解 SDK 總覽](../develop/unity/scene-understanding-SDK.md) 檔。
 
 ### <a name="sample"></a>範例
 
@@ -101,7 +101,7 @@ ms.locfileid: "115213458"
 <br>
 
 
-如果您的應用程式想要在您的環境的固定結構上放置2D 或3D 影像，則最好是從 [空間對應](spatial-mapping.md) 網格計算這項資訊，以方便放置 SceneQuads。 如需本主題的詳細資訊，請參閱 [場景理解 SDK 參考](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+如果您的應用程式想要在您的環境的固定結構上放置2D 或3D 影像，則最好是從 [空間對應](spatial-mapping.md) 網格計算這項資訊，以方便放置 SceneQuads。 如需本主題的詳細資訊，請參閱 [場景理解 SDK 參考](../develop/unity/scene-understanding-SDK.md)
 
 **注意** 若是相依于空間對應網格的舊版放置程式碼，則可以藉由設定 EnableWorldMesh 設定來計算空間對應網格和 SceneQuads。 如果場景理解 API 無法滿足您應用程式的延遲需求，我們建議您繼續使用 [空間對應 api](spatial-mapping.md#placement)。
 
@@ -129,5 +129,5 @@ ms.locfileid: "115213458"
 
 ### <a name="see-also"></a>另請參閱
 
-* [場景理解 SDK](../develop/platform-capabilities-and-apis/scene-understanding-SDK.md)
+* [場景理解 SDK](../develop/unity/scene-understanding-SDK.md)
 * [空間對應](spatial-mapping.md)
