@@ -7,14 +7,19 @@ ms.date: 02/11/2019
 ms.topic: article
 ms.localizationpriority: high
 keywords: 觀眾檢視, iPhone, iOS, iPad, OpenCV, 相機, ARKit, HoloLens, 混合實境, MixedRealityToolkit, 示範, 錄製
-ms.openlocfilehash: 23f5dce85bdcd15e8950f5682814dec042bc604d7e983b17a5528949e51e844a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f30c745154056cda6b5ccf052efbbd0bb7f094ea
+ms.sourcegitcommit: 5d13ff165f4d08a3b028935fb39539a45a30f7e8
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115190504"
+ms.lasthandoff: 09/15/2021
+ms.locfileid: "127779459"
 ---
 # <a name="spectator-view-for-hololens-and-hololens-2"></a>HoloLens 和 HoloLens 2 的觀眾檢視
+
+> [!WARNING]
+> 由於與範例所依賴的 Azure 空間錨點 SDK 套件版本不相容，Microsoft 將會淘汰 Spectator View 範例。 此外，此範例可能會因為 Unity 環境中的其他變更而停止運作，因為客戶移至支援的 2019 LTS 組建。
+>
+> 雖然 Microsoft 目前不會投資資源來解決上述問題，但可能會從範例中移除 Azure 空間錨點功能，並依賴諸如 QR 代碼等技術來進行對齊。   如果社區的成員提交 Pr 來解決這些問題，我們將會複習並接受這些問題。
 
 ![Marker](images/SpecViewPhoneHero.jpg)
 
