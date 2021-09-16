@@ -3,16 +3,16 @@ title: 使用 Visual Studio 來部署和偵錯
 description: 了解如何使用 Visual Studio 來建置、偵錯及部署 HoloLens 和 Windows Mixed Reality 的應用程式。
 author: pbarnettms
 ms.author: pbarnett
-ms.date: 04/13/2020
+ms.date: 09/15/2021
 ms.topic: article
 ms.localizationpriority: high
 keywords: Visual Studio, HoloLens, 混合實境, 偵錯, 部署
-ms.openlocfilehash: 43abf7b512d6b01695e2c953df821a608359918c461614e3f94710b57f241db0
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 948ec52dcfe738a28316e9906d473b32454f6d59
+ms.sourcegitcommit: 7dad5bde71d429bb23c72a4074e60b6668a7f091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115221127"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127857501"
 ---
 # <a name="using-visual-studio-to-deploy-and-debug"></a>使用 Visual Studio 來部署和偵錯
 
@@ -117,21 +117,25 @@ ms.locfileid: "115221127"
 
 5. 當您第一次從電腦將應用程式部署到 HoloLens 時，系統會提示您輸入 PIN 碼。 遵循以下的 **配對您的裝置** 指示。
 
-> [!NOTE]
-> 如果您在透過 USB 部署應用程式時看到相當長的延遲時間，建議您在上一節中使用 [遠端電腦的指示](#deploying-a-hololens-app-over-wi-fi) 。
+## <a name="deploying-an-app-to-the-hololens-1st-gen-emulator"></a>將應用程式部署至 HoloLens (第 1 代) 模擬器
 
-## <a name="deploying-an-app-to-the-hololens-emulator"></a>將應用程式部署至 HoloLens Emulator
+1. 請確定您已 **[安裝 HoloLens 模擬器](../install-the-tools.md)** 。
+2. 為您的應用程式選取 **x86** 組建設定。</br>
+![Visual Studio 中的 x86 組建設定](images/x86setting.png)</br>
+3. 在 [部署目標] 下拉式功能表中，選取 [HoloLens 模擬器] </br>
+![Visual Studio 中的模擬器目標](images/deployemulator.png)</br>
+4. 選取 [偵錯 > 開始偵錯]  來部署您的應用程式並開始偵錯</br>
+![在 Visual Studio 中開始但不進行偵錯](images/deploywithdebugging.png)</br>
 
-1. 請確定您已 **[安裝 HoloLens 2 或 HoloLens (第一代) Emulator](../install-the-tools.md#installation-checklist)**
-2. 根據您的裝置選取組建設定和模擬器
+## <a name="deploying-an-app-to-the-hololens-2-emulator"></a>將應用程式部署至 HoloLens 2 模擬器
 
-[!INCLUDE[](includes/vs-wifi-hl-include.md)]
-
-3. 根據您的需求來建立、部署及偵測您的應用程式
-    * 選取 [偵錯 > 開始偵錯]  來部署您的應用程式並開始偵錯
-    * 選取 **組建 > 部署** 至不 debuggingg 的組建和部署
-
-![在 Visual Studio 中開始但不進行偵錯](images/deploywithdebugging.png)
+1. 請確定您已 **[安裝 HoloLens 模擬器](../install-the-tools.md)** 。
+2. 為您的應用程式選取 **x86** 或 **x64** 組建設定。</br>
+![Visual Studio 中的 x86 組建設定](images/x86setting.png)</br>
+3. 在 [部署目標] 下拉式功能表中，選取 [HoloLens 2 模擬器] </br>
+![Visual Studio 應用程式中的 Emulator 目標](images/deployemulator2.png)</br>
+4. 選取 [偵錯 > 開始偵錯]  來部署您的應用程式並開始偵錯</br>
+![在 Visual Studio 中開始但不進行偵錯](images/deploywithdebugging.png)</br>
 
 ## <a name="deploying-a-vr-app-to-your-local-pc"></a>將 VR 應用程式部署到您的本機電腦 
 

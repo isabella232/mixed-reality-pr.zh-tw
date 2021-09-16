@@ -3,15 +3,15 @@ title: HoloLens 模擬器封存
 description: 針對 Microsoft HoloLens (第一代) 和 HoloLens 2 模擬器的已發行組建清單，隨時保持最新狀態。
 author: hamalawi
 ms.author: moelhama
-ms.date: 05/11/2021
+ms.date: 09/15/2021
 ms.topic: article
 keywords: HoloLens、Emulator、組建、版本、混合現實耳機、windows mixed reality 耳機、虛擬實境耳機、封存
-ms.openlocfilehash: f8c76ef8f7228f0fe4602c6df40754b3ba50c2d8
-ms.sourcegitcommit: 191c3d89c034714377d09fa91c07cbaa81301bae
+ms.openlocfilehash: 8b5bb6de3b8ed2da83d93d3c8614f372a83033fc
+ms.sourcegitcommit: 7dad5bde71d429bb23c72a4074e60b6668a7f091
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/13/2021
-ms.locfileid: "121905686"
+ms.lasthandoff: 09/16/2021
+ms.locfileid: "127857461"
 ---
 # <a name="hololens-2-emulator-archive"></a>HoloLens 2 Emulator 封存
 
@@ -19,6 +19,8 @@ HoloLens Emulator (第一代) 和 HoloLens 2 Emulator 組建並存安裝。 我�
 
 |  組建 |  發行日期 |  備註 |
 |----------|----------|----------|
+|  [HoloLens 2 Emulator 組建10.0.20348.1018](https://go.microsoft.com/fwlink/?linkid=2172762) | 2021年9月15日 | Windows2021年9月的全像21H1 版更新。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
+|  [HoloLens 2 Emulator 組建10.0.19041.1165](https://go.microsoft.com/fwlink/?linkid=2172868) | 2021年9月15日 | Windows2021年9月的全像20H2 版更新。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator 組建10.0.20348.1014](https://go.microsoft.com/fwlink/?linkid=2169418) | 2021年8月10日 | Windows全像21H1 版2021年8月更新。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
 |  [HoloLens 2 Emulator 組建10.0.19041.1161](https://go.microsoft.com/fwlink/?linkid=2169166) | 2021年8月10日 | Windows全像20H2 版2021年8月更新。  如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
 | [HoloLens 2 Emulator 組建10.0.20348.1010](https://go.microsoft.com/fwlink/?linkid=2167725) | 2021年7月13日 | Windows全像21H1 版的2021年7月更新。 <br> 在具有整合式和離散圖形介面卡的電腦上使用 HoloLens 2 Emulator 時，模擬器在大部分情況下都可以啟用硬體圖形加速，不過它可能會使用較不強大的整合式介面卡。 先前無法啟用硬體加速，通常會報告程式碼43的圖形失敗。 在某些情況下，模擬器無法順利開機，但現在將會。 <br> 如需一般 HoloLens 2 版本資訊，請參閱https://docs.microsoft.com/hololens/hololens-release-notes |
