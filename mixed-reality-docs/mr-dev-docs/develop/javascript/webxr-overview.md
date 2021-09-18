@@ -2,20 +2,18 @@
 title: 使用 WebXR 搭配 Windows Mixed Reality
 description: 瞭解針對 Windows Mixed Reality 沉浸式耳機上執行的 WebXR 應用程式，使用和開發的基本概念。
 author: yonet
-ms.author: ayyonet
-ms.date: 04/10/2020
+ms.author: v-vtieto
+ms.date: 09/16/2021
 ms.topic: article
 keywords: WebXR、WinMR、WebAR、WebVR、WindowsMixedReality、HoloLens、windows mixed reality、web vr、web xr、web mr、web ar、360、360影片、360影片、360相片、360相片、360內容、沉浸式 web、immersiveweb、IW
-ms.openlocfilehash: e670135cb00db26082b73f8465390a686de6a3e946bbffa561f9df90085970f8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: f99637c79d1147d940bb6a72d68969c99a2482ec
+ms.sourcegitcommit: 645608f33d2d02625484c29586f42d21c442aaa9
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216264"
+ms.lasthandoff: 09/18/2021
+ms.locfileid: "127932521"
 ---
-# <a name="webxr-overview"></a>WebXR 總覽
-
-## <a name="javascript-development"></a>JavaScript 開發
+# <a name="javascript-development-with-webxr"></a>使用 WebXR 進行 JavaScript 開發
 
 JavaScript 是世界上最受歡迎的程式設計語言之一！ 它在網路上很簡單、輕量且廣泛使用。 利用 JavaScript 和 web 技能的強大功能，創造更吸引人的混合現實體驗。
 
@@ -60,3 +58,11 @@ JavaScript 是世界上最受歡迎的程式設計語言之一！ 它在網路�
 * [glTF](https://www.khronos.org/gltf)
 * [沉浸式 web 社區群組](https://www.w3.org/community/immersive-web/)
 * [沉浸式 Web W3C Github](https://github.com/immersive-web)
+
+## <a name="next-steps--tutorials"></a>後續步驟--教學課程
+
+> [!div class="nextstepaction"]
+> [使用 Babylon.js建立您的第一個 WebXR 應用程式 ](tutorials/babylonjs-webxr-helloworld/introduction-01.md)
+> [!div class="nextstepaction"]
+
+> [使用 Babylon.js在 WebXR 中建立鋼琴 ](tutorials/babylonjs-webxr-piano/introduction-01.md)

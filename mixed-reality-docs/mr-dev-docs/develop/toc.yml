@@ -372,7 +372,7 @@
           href: unreal/unreal-publishing-to-store.md
 - name: JavaScript
   items:
-    - name: JavaScript 開發概觀
+    - name: 使用 WebXR 進行 JavaScript 開發
       href: javascript/webxr-overview.md
     - name: 教學課程
       items:
@@ -384,6 +384,14 @@
               href: javascript/tutorials/babylonjs-webxr-helloworld/prepare-scene-02.md
             - name: 3. 與3D 物件互動
               href: javascript/tutorials/babylonjs-webxr-helloworld/interact-03.md
+        - name: 使用 babylon.js 在 WebXR 中建立鋼琴
+          items:
+            - name: 1. 簡介
+              href: javascript/tutorials/babylonjs-webxr-piano/introduction-01.md
+            - name: 2. 建立3D 鋼琴模型
+              href: javascript/tutorials/babylonjs-webxr-piano/keyboard-model-02.md
+            - name: 3. 播放3D 鋼琴
+              href: javascript/tutorials/babylonjs-webxr-piano/keyboard-interaction-03.md
 - name: 自訂引擎
   items:
     - name: 自訂引擎開發總覽
