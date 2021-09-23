@@ -10,19 +10,19 @@ keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 混合實境, 串�
 appliesto:
 - HoloLens
 - HoloLens 2
-ms.openlocfilehash: 77f32cafa84233654ad9e5754d0db9f7b6f9437a
-ms.sourcegitcommit: 820f2dfe98065298f6978a651f838de12620dd45
+ms.openlocfilehash: 091f0876c37756fad47d2d78520adbd526aab24d
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/14/2021
-ms.locfileid: "122184631"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184616"
 ---
 # <a name="streaming-in-unreal"></a>Unreal 中的串流
 
 「串流」有時也稱為「全像攝影」。 若要深入瞭解，請參閱全像的 [遠端處理總覽](../platform-capabilities-and-apis/holographic-remoting-overview.md)
 
 從電腦串流至 HoloLens 可提供兩大優點： 
-* 可讓您的混合實境應用程式利用電腦的計算能力。 
+* 它可讓您的混合現實應用程式利用電腦的計算能力。 
 * 有助於加快開發反覆運算的時間。 
 
 若要開始使用，您必須將[全像攝影遠端播放程式](../platform-capabilities-and-apis/holographic-remoting-player.md)下載到您的 HoloLens 裝置。 全像攝影遠端播放程式可讓您的應用程式從下列來源直接串流至 HoloLens 上的遠端播放程式：
@@ -93,6 +93,9 @@ ms.locfileid: "122184631"
 
 > [!NOTE]
 > 系統應該會自動使用您專案設定中的應用程式名稱來建立 Windows 套件。 如果這些設定因某些原因而有所不同，請在命令提示字元中使用 Windows 可執行檔名稱。
+
+> [!NOTE]
+> 從已封裝的可執行檔串流處理時，如果眼睛追蹤無法運作，請使用電腦支援的眼睛追蹤器停用任何其他外掛程式 (範例：魔術 Leap) 或從命令列使用相關的眼睛追蹤引數來執行應用程式 (查看 [命令列選項](https://docs.microsoft.com/en-us/windows/mixed-reality/develop/unreal/unreal-streaming?tabs=wmr#command-line-options)) 。
 
 按 Enter 鍵，您的應用程式即會開始串流！
 

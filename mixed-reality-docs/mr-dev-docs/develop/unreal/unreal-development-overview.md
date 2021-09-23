@@ -7,12 +7,12 @@ ms.date: 12/9/2020
 ms.topic: article
 ms.localizationpriority: high
 keywords: Unreal, Unreal Engine 4, UE4, HoloLens, HoloLens 2, 串流, 遠端, 混合實境, 開發, 開始使用, 功能, 新專案, 模擬器, 文件, 指南, 功能, 全像投影, 遊戲開發, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, OpenXR
-ms.openlocfilehash: fd9eec18e865910ef4899dfda75661d1edb57eed25a55641cde3ca7ac3f0b3a8
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 90dfb113008e6f8b1162c068ebfc967ed74fd6b4
+ms.sourcegitcommit: 71c2a4884bd83599e35dd894771a5e43e951b574
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115203425"
+ms.lasthandoff: 09/23/2021
+ms.locfileid: "128184664"
 ---
 # <a name="unreal-development-overview"></a>Unreal 開發概觀
 
@@ -110,11 +110,9 @@ ms.locfileid: "115203425"
 | 相機存取 | 4.23 | ✔️ |
 | QR 代碼 | 4.23 | ✔️ |
 | 空間音訊 | 4.23 | ✔️ |
-| 串流的觀眾螢幕支援 | 4.24 |
 | 透過串流的平面 LSR | 4.24 |
 | [範例應用程式](../features-and-samples.md) | 4.24 | ✔️ |
 | 行動多重檢視：效能命中 60 fps | 4.25 | ✔️ |
-| 第三相機轉譯 | 4.25 | ✔️ |
 | 從已封裝的桌面應用程式串流 | 4.25.1 | ✔️ |
 | 適用于 HoloLens 2 的 Azure 空間錨點 | 4.25 | ✔️ |
 | 混合實境 UX 工具支援 | 4.25 | ✔️ |
