@@ -1,49 +1,47 @@
 ---
 title: 了解工具和架構
 description: 了解您開始製作 HoloLens 和沉浸式頭戴裝置應用程式所需的混合實境開發工具。
-author: grbury
-ms.author: grbury
-ms.date: 12/9/2020
+author: vtieto
+ms.author: v-vtieto
+ms.date: 9/15/2021
 ms.topic: overview
 ms.localizationpriority: high
 keywords: 混合實境, 開發, 開發, HoloLens, unity, unreal, directx, 混合實境頭戴式裝置, windows 混合實境頭戴式裝置, 虛擬實境頭戴式裝置, 虛擬實境, 擴增實境, 虛擬實境開發, 擴增實境開發
-ms.openlocfilehash: 2020ceb898f6badaec56a599348c8633c4cb90ba22eaf53df0e097d4fc3e110e
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: c6a246de87595be7047c7712a2db489c3d87ac39
+ms.sourcegitcommit: 18880591624caa888ade6d7c60bd2b2ee3eadaaa
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115195952"
+ms.lasthandoff: 09/26/2021
+ms.locfileid: "129016796"
 ---
-# <a name="introduction-to-mixed-reality-development"></a>混合實境開發簡介
+# <a name="introduction-to-mixed-reality-development"></a>混合現實開發簡介
 
 ![抽象 3D 球體](images/development-hero-image.png)
 
-混合實境是一個很大的地方，也就是真實和虛擬世界碰撞的交會點。 無限可能，從您開始。 選擇您的引擎、下載您的工具，以及備好鍵盤待用。 歡迎使用混合實境生態系統 - 該是建立的時候了。
+混合現實是很大的地方，其中的真實和虛擬世界會與驚嘆號相衝突。 無限可能，從您開始。 選擇您的引擎、下載您的工具，以及備好鍵盤待用。 歡迎使用 mixed reality 生態系統--這是建立的時候了。
 
-我們有三個可能的路徑，可在混合的現實開發中開始進行，其中每一個都是在下一節中說明：
-* [Microsoft Learn](#microsoft-learn)
-* [混合現實工具組教學課程系列](#mixed-reality-toolkit-tutorials)
-* [自我引導式探索](#self-guided-exploration)
+您可以根據您到目前為止的旅程，選擇以下的起點。
 
-## <a name="microsoft-learn"></a>Microsoft Learn
+## <a name="new-to-mixed-reality-development"></a>混合現實開發的新功能
 
-Microsoft Learn 是讓大家學習的地方。 透過互動式的實際操作學習途徑，在短短幾分鐘內探索新技能、尋找認證並讓事業更上層樓。
+### <a name="learn-the-concepts-products-and-services"></a>瞭解概念、產品和服務
 
-我們的學習模組可讓您更精通混合實境的開發，並提供模組式結構，讓您可以開始使用混合實境工具組、Unity 和 Azure 混合實境服務等重要工具。 當我們在單一介面中配置了學習目標、必要條件，以及完成預期的設定時間，進入 Hello World 變得非常容易。
+從一開始就開始著手，並概述混合現實的本質，以及它與虛擬和增強的現實有何不同。 瞭解 HoloLens、沉浸式耳機和全像投影。 探索基本設計並開發概念和相關技術，例如 Azure 遠端轉譯。
 
 > [!div class="nextstepaction"]
-> [Microsoft Learn 上的混合現實簡介](/learn/modules/intro-to-mixed-reality)
+> [Microsoft Learn 上的混合現實簡介](/learn/modules/intro-to-mixed-reality/)
 
-## <a name="mixed-reality-toolkit-tutorials"></a>混合現實工具組教學課程
+### <a name="start-building-a-mixed-reality-experience"></a>開始打造混合的現實體驗
 
-如果您是更深入瞭解使用者，請參閱我們的混合現實工具組 (MRTK) 的教學課程系列。 您將建立混合的現實體驗，讓使用者可以在 NASA 的 Mars 好奇心 Rover 之後，探索模型化的全息圖，並取得 MRTK，以及它如何加速開發流程。
+如果您已熟悉基本概念，而且想要開始建立一些東西，請參閱我們的「HoloLens 2 基礎」教學課程系列。 您將會建立混合的現實體驗，讓使用者可以在 NASA 的 Mars 好奇心 Rover 之後，探索模型化的全像影像。 這可讓您瞭解 MRTK，並為您示範如何加速您的開發流程。
 
 > [!div class="nextstepaction"]
-> [MRTK 教學課程](unity/tutorials/mr-learning-base-01.md)
+> [HoloLens 2基本教學課程](/learn/paths/beginner-hololens-2-tutorials/)
 
-## <a name="self-guided-exploration"></a>自我引導式探索
-
-如果您是經驗豐富的開發人員，而且想要直接進入我們的檔，請先安裝必要的工具。 從該處選擇您的 unity 開發設定，並遵循我們的策劃 Unity 開發路徑 HoloLens，或流覽我們的內容庫。
+## <a name="choose-your-own-development-path"></a>選擇您自己的開發路徑
+您是在混合、增強或虛擬實境方面有一些先前體驗的中繼對先進開發人員嗎？ 我們將協助您選擇適當的工具，並在需要時進行設定，然後我們會將您導向至 Unity、Unreal、Native 或 Web 的策劃開發路徑。
 
 > [!div class="nextstepaction"]
 > [安裝工具](install-the-tools.md)
+
+
