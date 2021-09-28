@@ -5,12 +5,12 @@ author: RogPodge
 ms.author: roliu
 ms.date: 01/12/2021
 keywords: Unity、HoloLens、HoloLens 2、Mixed Reality、開發、MRTK、UnitTest、
-ms.openlocfilehash: d528b5c16ab39271f9984bdd9e23ebca091efd53ed563149f3933ed31ed656dd
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 85c8a330d9af5b0d91c2b1b838ead7d10d97f981
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115216254"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148648"
 ---
 # <a name="writing-and-running-tests"></a>撰寫和執行測試
 
@@ -41,13 +41,13 @@ MRTK 會使用 [unity Test Runner](https://docs.unity3d.com/Manual/testing-edito
 在位於 H:\mrtk.dev 的專案上執行測試，並使用 Unity 2018.4 (例如 Unity 2018.4.26 f1) 
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe"
 ```
 
 在位於 H:\mrtk.dev、Unity 2018.4 的專案上執行測試，並將結果輸出至 C：\ playmode_test_out
 
 ```ps
-.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath = "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
+.\run_playmode_tests.ps1 H:\mrtk.dev -unityExePath "C:\Program Files\Unity\Hub\Editor\2018.4.26f1\Editor\Unity.exe" -outFolder "C:\playmode_test_out\"
 ```
 
 您也可以透過腳本多次執行 playmode 測試 `run_repeat_tests.ps1` 。 中使用的所有參數都可以 `run_playmode_tests.ps1` 使用。

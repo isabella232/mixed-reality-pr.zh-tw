@@ -2,16 +2,16 @@
 title: Windows Mixed Reality 和新的 Microsoft Edge
 description: 瞭解混合現實的新 Microsoft Edge，包括預期、要尋找的更新，以及已知問題。
 author: mattzmsft
-ms.author: mazeller
-ms.date: 08/04/2020
+ms.author: v-vtieto
+ms.date: 09/24/2021
 ms.topic: article
 keywords: edge、new、沉浸式 web、microsoft edge、browser、vr、360、360 video、360 viewer、webxr、webvr
-ms.openlocfilehash: 51efc5c4d3afb4d46ba7722867514f740a9f60a4280652fdbd665134f83af23d
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: ca849f63d2a755639bedba68c47e419528006a6d
+ms.sourcegitcommit: 3176df29fb0c9508751bd370f1211031d50d2c14
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115218820"
+ms.lasthandoff: 09/28/2021
+ms.locfileid: "129148643"
 ---
 # <a name="the-new-microsoft-edge-for-windows-mixed-reality"></a>Windows Mixed Reality 的新 Microsoft Edge
 
@@ -81,7 +81,8 @@ Windows Mixed Reality如果您想要在混合實境首頁中使用新 Microsoft 
 
 ### <a name="other-known-issues"></a>其他已知問題
 
--   當混合實境入口關閉時，在 Windows Mixed Reality 中開啟的網站將會遺失。 Microsoft Edge 視窗將停留在混合實境首頁的放置位置。
-- 具有混合式 GPU 設定的電腦上可能無法正確啟動 WebXR 體驗，包括360檢視器擴充功能。 若要解決此問題，您可以在新的 Microsoft Edge 中啟用預覽功能。 流覽至 `edge://flags` ，並搜尋「多重 gpu」，並啟用稱為 **WEBXR 多重 gpu 支援** 的旗標。
 -   Microsoft Edge windows 的音訊不會 hrtf。
--   **修正于360檢視器延伸模組版本 2.3.8**：在 Windows Mixed Reality 中從 YouTube 開啟360影片可能會導致視頻耳機中的影片失真。 重新開機 Edge 應該會以不可見的更新360檢視器延伸模組來解決此問題。 您可以 `edge://system/` 在網址列中輸入，然後選取 [擴充功能] 旁的 **展開** 按鈕，以確認您擁有的延伸模組版本。
+
+## <a name="see-also"></a>另請參閱
+
+* [WebXR 總覽](../develop/javascript/webxr-overview.md)
