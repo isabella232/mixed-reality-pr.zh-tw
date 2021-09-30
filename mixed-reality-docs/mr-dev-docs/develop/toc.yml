@@ -36,6 +36,8 @@
           href: unity/tutorials.md
         - name: HoloLens 2 教學課程
           items:
+            - name: HoloLens 2基本教學課程
+              href: /learn/paths/beginner-hololens-2-tutorials/
             - name: 多使用者功能教學課程
               items:
                 - name: 1. 簡介
