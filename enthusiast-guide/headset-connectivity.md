@@ -1,19 +1,19 @@
 ---
 title: 耳機連接常見問題
 description: 耳機連線 Windows Mixed Reality 耳機連線能力疑難排解，超過標準的取用者支援檔。
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，疑難排解，錯誤，協助，支援，耳機
 appliesto:
-- Windows 10
-ms.openlocfilehash: ed8708d39953e79d445f3794d335d9a9451c9bf9fe8c2fca1feb792ee3f9b2a7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 47c726c5beeac0463fe4286bd7a949e4e4d4cc45
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189220"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436608"
 ---
 # <a name="headset-connectivity-faqs"></a>耳機連接常見問題
 
@@ -64,7 +64,7 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 > [!NOTE]
 > 針對 surface 使用者：較舊版本的 surface Dock 和 Surface Book USB Hub 固件更新軟體與混合現實耳機不相容。 如果您在 Surface PC 上收到「連線您的耳機」訊息，請在裝置管理員中檢查是否有任何裝置回報「程式碼10：裝置無法啟動」錯誤。 如果是，請 [移除衝突的驅動程式](https://support.microsoft.com/en-us/help/4032123/kinect-sensor-is-not-recognized-on-a-surface-book)。 您應該只需要做一次。
 
-注意：如果您 Windows 10 的電腦執行 Windows 10 n，在插入您的混合現實耳機之後，裝置管理員會看到「代碼28：安裝類別不存在或無效」錯誤。 Windows Mixed Reality 不支援 N 版的 Windows 10。 如需詳細資訊，請遵循下列 [指示](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) 。
+注意 Windows 10-n 和 Windows 11-n 使用者：如果您的電腦執行 Windows 10-n 或 Windows 11-n，則在插入您的混合現實耳機之後，裝置管理員中會出現「代碼28：安裝類別不存在或無效」錯誤。 Windows Mixed Reality 不支援 N 版的 Windows 10 和 Windows 11。 如需詳細資訊，請遵循下列 [指示](headset-display.md#im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager) 。
 
 ## <a name="a-message-says-check-your-usb-cable-or-insufficient-usb-speed"></a>顯示「檢查 USB 纜線」或「USB 速度不足」的訊息
 
@@ -94,7 +94,7 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 
 ## <a name="the-headset-driver-did-not-install-automatically-when-i-plugged-in-the-headset"></a>當我插入耳機時，不會自動安裝耳機驅動程式
 
-在新電腦上，或具有新安裝 Windows 10 複本的電腦上，耳機驅動程式可能會排在其他 Windows 更新後方，而且可能不會立即安裝。
+在新電腦上，或具有新安裝 Windows 10 或 Windows 11 複本的電腦上，耳機驅動程式可能會排在其他 Windows 更新後方，而且可能不會立即安裝。
 
 1. 移至 [ **開始] > 裝置管理員** ，並查看耳機的 [混合的現實裝置]。 裝置狀態應該會指出「裝置運作正常」。
 2. 在裝置上按一下滑鼠右鍵，然後選取 [更新驅動程式]。
@@ -106,4 +106,4 @@ Windows Mixed Reality 耳機未正式支援 USB、HDMI 或 DisplayPort 延伸模
 3. 在出現的新快顯視窗中，選取 [刪除此裝置的驅動程式軟體] 核取方塊，然後選取 [卸載]。
 4. 完成時，請從您的電腦拔下耳機，然後將它插回。 Windows更新現在會下載並安裝新的驅動程式。
 
-注意：如果您有 N 版的 Windows，您必須切換至一般版本的 Windows 10，才能使用 Windows Mixed Reality。
+注意：如果您有 N 版的 Windows，您必須切換至一般版本的 Windows 10 或 Windows 11 才能使用 Windows Mixed Reality。

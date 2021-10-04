@@ -1,19 +1,19 @@
 ---
 title: 耳機顯示器常見問題
 description: 針對出現在標準取用者支援檔之外的耳機顯示器問題，顯示 Windows Mixed Reality 疑難排解。
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2020
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援
 appliesto:
-- Windows 10
-ms.openlocfilehash: 811b5160c739c8b19fde737e7a61bcef84e0cf60a87927adbe21241e229f3f22
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 5a7c7979c9d93d917633cbfed23dc82597368a43
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189387"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436676"
 ---
 # <a name="headset-display-faqs"></a>耳機顯示器常見問題
 
@@ -97,7 +97,7 @@ ms.locfileid: "115189387"
 
 ## <a name="im-getting-a-the-install-class-is-not-present-or-is-invalid-error-in-device-manager"></a>我收到裝置管理員中的「安裝類別不存在或無效」錯誤
 
-如果您在裝置管理員中看到有黃色驚嘆號的「HoloLens 感應器」，請選取裝置以取得其他詳細資料。 如果您看到一則訊息，指出「未安裝此裝置的驅動程式。  (代碼 28) --安裝類別不存在或無效」，這通常是因為您的電腦正在[Windows 10 N](https://support.microsoft.com/en-us/help/4039813/media-feature-pack-for-windows-10-n-october-2017)執行。N 版的 Windows 10 不支援 Windows Mixed Reality，而且您需要安裝 Windows 10 的非 N 版。
+如果您在裝置管理員中看到有黃色驚嘆號的「HoloLens 感應器」，請選取裝置以取得其他詳細資料。 如果您看到一則訊息，指出「未安裝此裝置的驅動程式。  (代碼 28) --安裝類別不存在或無效」，這通常是因為您的電腦正在[Windows 10 N](https://support.microsoft.com/en-us/help/4039813/media-feature-pack-for-windows-10-n-october-2017)執行。N 版的 Windows 10 和 Windows 11 不支援 Windows Mixed Reality，而您必須安裝非 N 版的 Windows 10 或 Windows 11。
 
 ## <a name="my-wmr-environment-is-jittery-or-stutters-when-i-move-my-head-and-displays-double-vision"></a>我的 WMR 環境在移動前端並顯示雙重視覺時，會抖動或口吃
 

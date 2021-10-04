@@ -1,26 +1,26 @@
 ---
 title: 開始之前
 description: 瞭解如何確保您的電腦相容，並準備好使用各種 Windows Mixed Reality 的應用程式體驗。
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、相容、相容性、入門、安裝程式、電腦、系統需求
 appliesto:
-- Windows 10
-ms.openlocfilehash: 026f36caf3eebaee8f883235284a1beaf870bb89c5bb27eb565abbd89fcf4f21
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 62e0e20045e63fb9d002febaaf1f7666728dc515
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115187958"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436574"
 ---
 # <a name="before-you-start"></a>在您開始使用 Intune 之前
 
 ## <a name="what-youll-need-to-run-windows-mixed-reality"></a>您需要執行的工作 Windows Mixed Reality
 
 * Windows 的[混合現實前端裝載的顯示器 (HMD) ](https://www.microsoft.com/en-us/windows/windows-mixed-reality-devices)。
-* Windows 10 1709 版或更新版本執行的新[Windows Mixed Reality ready pc](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)或 Windows Mixed Reality 相容的電腦。
+* 新的[Windows Mixed Reality ready pc](https://support.microsoft.com/en-us/help/4039260/windows-10-mixed-reality-pc-hardware-guidelines)或 Windows Mixed Reality 相容的電腦，其執行 Windows 10 1709 版或更新版本或 Windows 11。
 * 網際網路連接
 * 如果未內建在耳機或電腦中， (顯示、USB 和藍牙介面卡) 
 * 移動控制器、Xbox 控制器或滑鼠和鍵盤
@@ -45,6 +45,16 @@ ms.locfileid: "115187958"
 若要查看您的裝置目前執行的 Windows 10 版本，請選取 [**開始**] 按鈕，然後選取 [**設定 > 系統 >**。
 
 若要確保電腦上的 Windows 10 為最新狀態，請選取 [**開始**] 按鈕，然後選取 [**設定 > 更新 & 安全性**] > Windows Update。  選取 [檢查更新]。 如果有可用的更新，請加以安裝。
+
+## <a name="make-sure-you-have-the-windows-11-version-21h2-or-newer-installed"></a>請確定您已安裝 Windows 11 21H2 版或更新版本
+
+您必須執行 Windows 11 21H2 版或更新版本，才能使用 Windows Mixed Reality。 Windows 11 的相容版本包括：
+
+* Windows 11 21H2 版
+
+若要查看您的裝置目前執行的 Windows 11 版本，請選取 [**開始**] 按鈕，然後選取 [**設定 > 系統 >**。
+
+若要確保電腦上的 Windows 11 為最新狀態，請選取 [**開始**] 按鈕，然後選取 [**設定 > 更新 & 安全性**] > Windows Update。  選取 [檢查更新]。 如果有可用的更新，請加以安裝。
 
 查看 [讓您的電腦保持最新](https://support.microsoft.com/help/12373/windows-update-faq) 狀態，以取得詳細資訊。
 

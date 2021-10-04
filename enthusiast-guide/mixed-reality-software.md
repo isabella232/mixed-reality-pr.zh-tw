@@ -1,19 +1,19 @@
 ---
 title: 軟體總覽和發行歷程記錄
 description: 概述 Windows Mixed Reality、沉浸式耳機和其發行歷程記錄的主要軟體元件。
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/15/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/30/2021
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
-- Windows 10
-ms.openlocfilehash: 51c13326d2ad8aebe164e64d0bfc380923a91d1be02cea840cec4addd062533f
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: e20b2075e45620a7533dbb2d369d00e73b98f9c7
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115219724"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436627"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -24,6 +24,7 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 1. **混合實境入口**，提供主要 Windows Mixed Reality 體驗
     * 在 Windows 10 1709 和1803版中，混合實境入口是透過 Windows Update 更新之 Windows 10 作業系統的主要元件。
     * 在 Windows 10 1809 版和更新版本中，混合實境入口會透過 Microsoft Store 應用程式更新。
+    * 在 Windows 11 21H2 版中。
 2. **混合現實隨選封裝** (FOD) ，在混合實境入口首次執行時自動下載並安裝。 您可以在[這裡](/windows/application-management/manage-windows-mixed-reality)找到 FOD 套件的詳細資訊
 3. **混合現實耳機和移動控制器驅動程式**（也稱為 HoloLens 感應器驅動程式）是可讓 Windows Mixed Reality 耳機使用 Windows Mixed Reality 的重要驅動程式套件。 這項功能會在您第一次插入混合現實耳機時，透過 Windows Update 自動下載和安裝，並透過 Windows Update 定期更新
 4. * * 混合式事實移動控制器模型驅動程式包含混合現實移動控制器的3D 模型，以及協力廠商混合現實體驗所需的模型。 這項功能會在您第一次將混合現實移動控制器配對至您的電腦時自動下載並安裝 Windows Update，並透過 Windows Update 進行更新
@@ -38,57 +39,35 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 
 8. 每個耳機製造商開發和維護的 **裝置附屬應用程式**，提供您 Windows Mixed Reality 耳機的快速簡介。 在具有內建藍牙功能的耳機上，裝置附屬應用程式可讓您將動作控制器還原至其藍牙配對的工廠。 某些耳機 (例如 Samsung 電影對白和 Samsung 電影對白 +) 也會使用裝置附屬應用程式，從耳機製造商提供耳機固件更新。 此應用程式會在第一次插入耳機時自動下載，而且可以在 Windows 開始] 功能表中找到。
 
-## <a name="windows-10-release-notes---may-2020"></a>Windows 10 版本資訊-5 月2020
+## <a name="windows-11-release-notes---october-2021"></a>Windows 11 版本資訊-2021 年10月
 
-**Windows 10 5 月2020更新 (v2004)** 包含 Windows Mixed Reality (VR) 耳機的新功能，例如在混合實境首頁中啟動 Win32 應用程式的能力。 HoloLens (第1代) 長期維護 (LTS) ，每月發行服務更新。
+### <a name="infinite-expanse"></a>無限 Expanse
 
-升級至 Windows Mixed Reality 沉浸式 (VR) 耳機的最新電腦版本、開啟 **設定 > 更新 & 安全性**，然後選取 [**檢查更新**]。 在 Windows 10 的電腦上，您也可以使用 [Windows 媒體建立工具](https://www.microsoft.com/software-download/windows10)，以手動方式安裝 **Windows 10 2020 更新**。
+<img src="images\infinite-expanse-win11.png" alt="The Infinite Explanse environment">
 
-**Desktop 的最新版本**： Windows 10 v2004 (10.0.19041.264) 
+<br>
 
-### <a name="updates-for-windows-mixed-reality-immersive-headsets"></a>Windows Mixed Reality 沉浸式耳機的更新
+* 新的虛擬家用環境適用于 Windows Mixed Reality 裝置，可大幅降低範圍和大小，以簡化為單一階段，而不是功能豐富的 Cliffhouse。 
+* 以效能為基礎，無限 Expanse 的設計目的是針對較不具資源需求的虛擬家用環境，解決長期持續的客戶要求，讓客戶能夠從其遊戲和經驗中獲得最佳效能。 
+* 您可以在 [**位置**] 功能表的 [釘選]**面板** 中找到這個新的虛擬 home 環境。 
 
-#### <a name="introducing-the-new-microsoft-edge"></a>新 Microsoft Edge 簡介
+### <a name="steamvr-boot-with-mixed-reality-portal-launch"></a>SteamVR boot 混合實境入口啟動
 
-如[先前所宣佈](/windows/mixed-reality/new-microsoft-edge)，我們已使用 Windows Mixed Reality 中的新 Microsoft Edge 瀏覽器進行更新，以提供更好的支援。 新的 Microsoft Edge 採用 Chromium 的開放原始碼專案，為客戶建立更好的 web 相容性，並為所有 網頁程式開發人員建立較少的 web 片段。 它也支援 WebXR，這是用來建立適用于 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
-
-#### <a name="improved-settings-for-wmr"></a>改善 WMR 的設定
-
-感謝您的意見反應，我們已新增並闡明耳機顯示頁面上的設定：
-
-* **我的家用的視覺品質** 變更這些設定只會影響 (懸崖之屋和 Skyloft) 的混合實境首頁環境：
-
-* **調整混合實境首頁中的詳細資料層級和效果品質** -這會變更我們在家裡使用的部分轉譯。 尤其是，不同材質的視覺品質 (木頭、具體等等) 將會隨著您將此設定從低變更為高而調整。
-
-* **變更應用程式視窗解析度** -根據預設，在首頁中啟動的大部分2d 視窗都會以 720-p 解析度啟動。 雖然您可以手動手動調整它們的大小 &，您也可以選擇讓它們全都以1080p 的方式啟動。 先前，此選項是以視覺品質 (搶鮮版（Beta）) 選項的形式提供。 我們已適當地將它分割為個別設定。
-
-* **體驗選項** -這些選項會調整混合現實體驗，以降低硬體可能難以跟上不受限制 90 fps 的系統負載。 您可以明確地啟用或停用這些額外的設定，或選擇 [Let Windows 決定]，並讓啟發學習法繼續決定何時要切換這些設定。
-
-* **解決方案** -如果您有高解析度耳機（如 HP 的回音），我們支援以原生解析度執行，或基於效能考慮減少解析度。 先前的耳機（像是 Samsung 電影對白和電影對白 +）只支援單一解析度，因此您無法在那些耳機上變更此設定。
-
-* **畫面播放速率**-您現在可以手動設定耳機顯示器的畫面播放速率，或繼續讓 Windows 使用其啟發學習法來判斷 60 hz 或 90 Hz 是否更適合。
-
-* **校正** -如同之前，如果您的耳機支援，您可以調整 IPD (interpupillary 距離) 。
-
-* **輸入切換** -切換輸入焦點切換 (Win + Y) 行為，根據狀態感應器回饋) 或手動 (自動。
-
-#### <a name="new-cortana-app"></a>新增 Cortana 應用程式
-
-Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限英文），不再支援特定的混合現實特定命令，例如「拍攝相片」和「拍攝影片」。 您可以使用新的 Cortana 來啟動應用程式，而且它也支援以生產力為焦點的新命令，例如「我的下一個會議是什麼時候」。 或「傳送電子郵件給 <name> 我遲到的時候。」
+* 新設定可在 WMR 啟動時自動啟動 SteamVR，可讓您略過 WMR 首頁空間，並直接跳至 SteamVR。
+   * 這項新設定可以在混合現實的 **設定** 應用程式中找到 **> 啟動和桌面 > 自動啟動**。
     
-#### <a name="additional-updates-in-available-in-19041546-released-october-2020"></a>19041.546 2020 年10月10日發行 (推出的其他更新) 
+### <a name="new-startup-experience-settings"></a>新的啟動體驗設定
 
-此桌面每月服務更新包括下列 Windows Mixed Reality 裝置的變更： 
-* 減少 Windows Mixed Reality 前端掛載顯示器 (HMD) 的扭曲和 aberrations。 
-* 新增即將推出之 HP Windows Mixed Reality 移動控制器的支援。 
-* 將 Windows Mixed Reality 中的 90-Hz 重新整理頻率設定的行為變更為，在無法達到 90 Hz 的特定情況下，不會再自動切換回 60 Hz。 
-
-#### <a name="help-us-improve"></a>協助我們改進！
-
-我們會持續尋找改善相容性。  如果您認為慣用的傳統 Win32 應用程式在 Windows Mixed Reality 時無法正常運作，請透過我們的[意見反應中樞](https://support.microsoft.com//help/4021566/windows-10-send-feedback-to-microsoft-with-feedback-hub)提交意見反應。
+* 新的設定可讓您藉由在混合實境入口啟動時提高控制層級，來更妥善地設定您的理想啟動體驗。
+* 您現在可以控制混合實境入口在裝置連線時或啟動狀態感應器啟動時是否啟動，以及控制虛擬桌面應用程式的開啟方式。
+* 這些新設定可以在 **設定** 應用程式的 **混合現實 > 啟動和桌上型電腦** 上找到
+    * 切換以啟動 HMD 外掛程式上的 MRP。
+    * 當偵測到狀態時，切換以啟動 MRP。
+    * 在桌面應用程式焦點上切換開啟桌面應用程式。
 
 ### <a name="prior-release-notes"></a>先前的版本資訊
 
+* [版本資訊-2020 年5月](release-notes-may-2020.md)
 * [版本資訊-2019 年5月](release-notes-may-2019.md)
 * [版本資訊 - 2018 年 10 月](release-notes-october-2018.md)
 * [版本資訊-2018 年4月](release-notes-april-2018.md)
@@ -178,7 +157,7 @@ Windows 的這項更新包含最新版本的 Cortana 應用程式（目前僅限
    | 2000.19101.1211.0  | 2019年11月11日     | <ul><li>解決防止您切換房間界限視覺效果的問題。</li><li>解決防止您在房間界限設定期間將耳機置中的問題。</li></ul>  | 
    | 2000.19081.1301.0  | 2019 年 9 月 23 日    | <ul><li>解決耳機有硬體問題的問題顯示錯誤訊息。 在先前的版本上收到1-4 錯誤碼的使用者，現在可能會收到更明確的裝置狀態錯誤碼。</li></ul>  |
    | 2000.19071.1302.0  | 2019 年 8 月 13 日     | <ul><li>支援在5月2019更新的裝置上使用 [OpenXR](/windows/mixed-reality/openxr) 的應用程式。</li></ul>  | 
-   | 2000.19061.1011.0  | 2019 年 7 月 16 日         | <ul><li>支援自訂應用程式行為的 JSON 設定選項。 深入瞭解 https://docs.microsoft.com/windows/mixed-reality/location-based-experiences#setup 。</li></ul>  | 
+   | 2000.19061.1011.0  | 2019 年 7 月 16 日         | <ul><li>支援自訂應用程式行為的 JSON 設定選項。 在安裝時閱讀更多[Windows Mixed Reality 的位置型娛樂](/windows/mixed-reality/location-based-experiences#setup)。</li></ul>  | 
 
 ### <a name="steamvr-release-history"></a>SteamVR 發行歷程記錄 ###
 

@@ -1,14 +1,17 @@
 ---
 title: 設定 Windows Mixed Reality
 description: 如何設定您的 Windows Mixed Reality 動作控制器、語音和音訊，以及定義安全播放空間的房間界限。
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、入門、設定、移動控制器、控制器、語音、音訊、站上、站上、界限、圖形驅動程式、Microsoft Edge、chromium
-ms.openlocfilehash: 436818ee662f9beb1c445ea5b22c5d168bb4142a7b49a116a4f5fa138e3a5595
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: e30fe5919bbd1345f413902f8f7acd36eed76bb5
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115221048"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436829"
 ---
 # <a name="set-up-windows-mixed-reality"></a>設定 Windows Mixed Reality
 
@@ -110,7 +113,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 
 這項設定會控制您的混合現實首頁的視覺品質。 預設值為「自動」。
 
-### <a name="resolution"></a>解決方法
+### <a name="resolution"></a>解決方案
 
 您的耳機原生解析度如下所示。
 
@@ -122,7 +125,7 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
     * 您的電腦不符合您的耳機的最小圖形硬體需求，解析度顯示較高
     * 您看到圖形效能問題
 
-這項設定可在 Windows 10、1903版或更新版本上使用。
+這項設定適用于 Windows 10、1903版或更新版本，以及 Windows 11。
 
 ### <a name="calibration"></a>校正
 
@@ -146,11 +149,11 @@ Windows Mixed Reality 會根據您電腦的硬體設定，自動選擇可平衡�
 * **使用耳機目前狀態感應器自動切換** (預設) ： Windows 會在您佩戴耳機時，自動將輸入 (鍵盤、滑鼠 ... ) 轉換成 Windows Mixed Reality。 您可以隨時使用 Win + Y 覆寫此項。
 * **使用 Windows 標誌鍵 + Y 手動切換**： Windows 不會使用耳機目前狀態感應器來偵測您是否佩戴耳機。 您必須使用 Win + Y 來切換電腦桌面與 Windows Mixed Reality 之間的輸入。
 
-這項設定可在 Windows 10、1903版或更新版本上使用。
+這項設定適用于 Windows 10、1903版或更新版本，以及 Windows 11。
 
 ## <a name="installing-microsoft-edge"></a>安裝 Microsoft Edge 
 
-若要在 Windows Mixed Reality home 中使用新的 Chromium 型 Microsoft Edge，請升級至 Windows 10 1903 版或更新版本，以支援 Win32 應用程式的原生支援，例如 (home 的新 Microsoft Edge) 。 請檢查 Windows Update 或[手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)。
+若要在 Windows Mixed Reality home 中使用新的 Chromium 型 Microsoft Edge，請升級至 Windows 10 1903 版或更新版本，或 Windows 11 提供 Win32 應用程式的原生支援 (例如新的 Microsoft Edge) Windows Mixed Reality 首頁。 檢查 Windows Update，[手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)，或[安裝最新版的 Windows 11](https://www.microsoft.com/software-download/windows11)。
 
 >[!IMPORTANT]
 >新的 Microsoft Edge 推出 WebXR 的支援，這是為 VR 耳機建立沉浸式 web 體驗的新標準。 如果您安裝新的 Microsoft Edge，您將無法在 Microsoft Edge 中播放 WebVR 體驗。

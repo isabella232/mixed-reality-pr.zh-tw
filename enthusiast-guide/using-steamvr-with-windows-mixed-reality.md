@@ -1,14 +1,17 @@
 ---
 title: 使用 SteamVR 搭配 Windows Mixed Reality
 description: 瞭解如何在使用相容電腦的 Windows Mixed Reality 耳機和控制器上設定及播放 SteamVR 遊戲。
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/23/2021
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、遊戲、SteamVR、流、系統需求
-ms.openlocfilehash: 42459f9b8d661bd01ce489460c5293333034612bc59becccf3d35e0ce506fddb
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: b06c5e0b9918a5277a2c31e391dbdbc1ef740110
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115221374"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436710"
 ---
 # <a name="using-steamvr-with-windows-mixed-reality"></a>使用 SteamVR 搭配 Windows Mixed Reality
 
@@ -111,7 +114,7 @@ SteamVR 是由閥門建立和發行，而且在所有 SteamVR 耳機都很常見
 
 ### <a name="windows-insider-program"></a>Windows 測試人員計畫
 
-Windows Mixed Reality 是 Windows 10 的一部分。  許多影響 SteamVR 使用者的修正和功能都會隨附 Windows 作業系統。  如果您想要試用最新的 Windows 10 preview 組建，建議您加入[Windows 測試人員計畫](https://insider.windows.com)。
+Windows Mixed Reality 是 Windows 10 和 Windows 11 的一部分。  許多影響 SteamVR 使用者的修正和功能都會隨附 Windows 作業系統。  如果您想要試用最新的 Windows 10 和 Windows 11 的預覽組建，我們建議您加入[Windows 測試人員計畫](https://insider.windows.com)。
 
 ## <a name="enabling-motion-reprojection-for-steamvr-apps"></a>啟用 SteamVR Apps 的動作 reprojection
 

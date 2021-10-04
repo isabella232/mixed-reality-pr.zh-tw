@@ -1,19 +1,19 @@
 ---
 title: Windows Mixed Reality電腦相容性指導方針
 description: 總覽圖表列出與 Windows Mixed Reality 相容性的最低電腦系統需求。
-author: hferrone
-ms.author: v-hferrone
-ms.date: 09/16/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 09/22/2021
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，Ultra，相容，相容性，系統需求，電腦
 appliesto:
-- Windows 10
-ms.openlocfilehash: ed9113c5aa54d74678fcd6f888fa96007533d0d27e921f91aa6feeda459d11b7
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: af3228e76bc9ce54ef877b67e8e85a3bde25e140
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115187848"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436727"
 ---
 # <a name="windows-mixed-reality-minimum-pc-hardware-compatibility-guidelines"></a>Windows Mixed Reality 最小電腦硬體相容性指導方針
 
@@ -21,7 +21,7 @@ ms.locfileid: "115187848"
 
 ## <a name="features-and-experiences"></a>功能和經驗
 
-Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳機。  您電腦的威力將決定您可以擁有的體驗。
+Windows 10 和 Windows 11 在各式各樣的電腦硬體上提供各種耳機 Windows Mixed Reality。  您電腦的威力將決定您可以擁有的體驗。
 在較高的終端機中，您可以取得一些額外的功能和功能：
 
 * 更鮮亮的視覺效果和更新率更高。
@@ -51,17 +51,11 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 然後，您將會針對所需的硬體、驅動程式和作業系統，取得電腦的分析。
 ![Windows Mixed Reality 電腦檢查的螢幕擷取畫面](images/screenshot-mr-pc-check.jpg)
 
-<table>
-<tr>
-<th>圖示</th><th>代表的意義</th>
-</tr><tr>
-<td> <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /></td><td style="vertical-align: middle">您的電腦通過必要的專案。</td>
-</tr><tr>
-<td> <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /></td><td style="vertical-align: middle">您的電腦可能會因為指定的需求而發生問題。 如果您遇到問題，您可能需要針對您的電腦進行疑難排解或升級。</td>
-</tr><tr>
-<td> <img alt="Error" width="30" height="30" src="images/glyph-error.png" /></td><td style="vertical-align: middle">您的電腦不符合指定專案的需求。</td>
-</tr>
-</table>
+| 圖示 | 代表的意義 |
+| --- | --- |
+| <img alt="Succeeded" width="30" height="30" src="images/glyph-succeeded.png" /> | 您的電腦通過必要的專案。 |
+| <img alt="Warning" width="30" height="30" src="images/glyph-warning.png" /> | 您的電腦可能會因為指定的需求而發生問題。 如果您遇到問題，您可能需要針對您的電腦進行疑難排解或升級。 
+| <img alt="Error" width="30" height="30" src="images/glyph-error.png" /> | 您的電腦不符合指定專案的需求。 |
 
  [取得混合實境入口結果的協助](get-help-with-pc-compatibility.md)
 
@@ -74,80 +68,30 @@ Windows 10 在一組不同的電腦硬體上，Windows Mixed Reality 各種耳�
 
 因為解析度較高，所以下列需求適用于 HP 的「回音」 G1、G2 和 Omnicept 產品線，以確保最佳的 90 Hz、完整的解析度體驗：
 
-<ul>
-<li> Intel Core i5、i7、Intel （r） E3-1240 v5，相當於或更好。 AMD Ryzen 5 等於或更好。 </li>
-<li> NVIDIA GeForce GTX 1080、AMD Radeon RX 5700、等於或更佳 </li>
-<li> 記憶體： 8 GB RAM 或更多 </li>
-<li> 1x 顯示埠1。3 </li>
-<li> 具有電源傳遞的 1x USB 3.0 類型-C (或包含的電源配接器) </li>
-<li> Windows 105月2019更新或更新版本 </li>
-</ul>
-
+- Intel Core i5、i7、Intel （r） E3-1240 v5，相當於或更好。 AMD Ryzen 5 等於或更好。  
+- NVIDIA GeForce GTX 1080、AMD Radeon RX 5700、等於或更佳  
+- 記憶體： 8 GB RAM 或更多  
+- 1x 顯示埠1。3  
+- 具有電源傳遞的 1x USB 3.0 類型-C (或包含的電源配接器)  
+- Windows 105月2019更新或更新版本  
+ 
 **所有其他 WMR 相容的耳機** <br>
 針對所有其他 Hmd，請參閱下列需求：
 
-<table>
-<tr>
-    <th style="width:10%"></th><th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 90Hz 的電腦</th>
-    <th style="vertical-align: middle; text-align: center; width:30%">Windows Mixed Reality 60hz 電腦</th>
-</tr><tr>
-    <td style="vertical-align: middle">作業系統</td><td colspan="2" style="vertical-align: middle; text-align: center;">Windows 10 Fall Creators Update (RS3) 或更新版本-首頁、Pro、商務、教育。<br/>     (<b>附注</b>： N 版或 S 模式中的 Windows 10 專業版不支援) </td>
-</tr><tr>
-    <td style="vertical-align: middle">處理器</td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 4590 (第4代) 、四核心 (或更好的)  <br>AMD Ryzen 5 1400 3.4 Ghz (桌面) 、四核心 (或更好的) </td>
-    <td style="vertical-align: middle; text-align: center;">Intel Core i5 7200U (第7代的行動) 、已啟用 Intel Hyper-Threading 技術的雙核心 (或更好的)  <br>AMD Ryzen 5 1400 3.4 Ghz (桌面) 、四核心 (或更好的) </td>
-</tr><tr>
-    <td style="vertical-align: middle">RAM</td>
-    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 (或更佳) </td>
-    <td style="vertical-align: middle; text-align: center;">8 GB DDR3 雙重通道 (或更佳) </td>
-</tr><tr>
-    <td style="vertical-align: middle">可用磁碟空間</td>
-    <td style="vertical-align: middle; text-align: center;">至少 10 GB</td>
-    <td style="vertical-align: middle; text-align: center;">至少 10 GB</td>
-</tr><tr>
-    <td style="vertical-align: middle">顯卡</td>
-    <td style="vertical-align: middle; text-align: middle;">
-            <ul>
-            <li>NVIDIA GTX 1060 (或更高) 具有 DX12 功能的離散 GPU</li>
-            <li>AMD RX 470/570 (或更高) DX12 支援的離散 GPU </li>
-            </ul>
-            <b>注意：</b> GPU 必須裝載于 PCIe 3.0 x4 + 連結插槽 </td>
-    <td style="vertical-align: middle; text-align: middle;">
-            <li>整合 Intel HD 圖形 620 (或更高) DX12 支援的整合 GPU <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units"> (檢查您的模型是否更大) </a></li>
-        <li>NVIDIA MX150 (或更高) 離散 GPU</li>
-        <li>Nvidia GeForce GTX 1050 離散 GPU</li>
-        <li>Nvidia 965M 離散 GPU</li>
-        <li>AMD Radeon RX 460/560</li>
-        </ul>
-        <b>注意：</b> 不支援較舊的 Intel Gpu，例如 HD 圖形4xx、5xx、2xxx、3xxx、4xxx、5xxx 和6xxx。
-    </td>
-</tr><tr>
-    <td style="vertical-align: middle">圖形驅動程式</td>
-    <td colspan="3" td style="vertical-align: middle; text-align: center;">Windows顯示驅動程式模型 (WDDM) 2。2</td>
-</tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">圖形顯示埠</a></td>
-    <td style="vertical-align: middle; text-align: center;">HDMI 2.0 或 DisplayPort 1。2</td>
-    <td style="vertical-align: middle; text-align: center;">HDMI 1.4 或 DisplayPort 1。2</td>
-</tr><tr>
-    <td style="vertical-align: middle">顯示</td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">連接的外部或整合式 VGA (800x600) 顯示 (或更好的) </td>
-</tr><tr>
-    <td style="vertical-align: middle"><a href="Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md">USB 連線能力</a></td>
-    <td colspan="2" style="vertical-align: middle; text-align: center;">USB 3.0 </td>
-</tr><tr>
-    <td style="vertical-align: middle">藍牙<a href="controllers-in-wmr.md">動作控制器</a>的連接 () </td>
-    <td colspan="3" style="vertical-align: middle; text-align: center;">藍牙4。0</td>
-</tr><tr>
-    <td style="vertical-align: middle">預期的耳機幀率</td>
-    <td style="vertical-align: middle; text-align: center;">90 Hz</td>
-    <td style="vertical-align: middle; text-align: center;">60 Hz</td>
-</tr>
-<tr>
-    <td style="vertical-align: middle">電源</td>
-    <td style="vertical-align: middle; text-align: center;">USB 3.0 埠</td>
-    <td style="vertical-align: middle; text-align: center;">USB 3.0 埠</td>
-</tr>
-</table>
+| | Windows Mixed Reality 90Hz 的電腦 | Windows Mixed Reality 60hz 電腦 |
+| --- | --- | --- |
+| 作業系統 | Windows 10 Fall Creators Update (RS3) 或更新版本-首頁、Pro、商務、教育。 <br/>     (<b>附注</b>： N 版或 S 模式中的 Windows 10 專業版不支援)  |
+| 處理器 | Intel Core i5 4590 (第4代) 、四核心 (或更好的)  <br> AMD Ryzen 5 1400 3.4 Ghz (桌面) 、四核心 (或更好的)  | Intel Core i5 7200U (第7代的行動) 、已啟用 Intel Hyper-Threading 技術的雙核心 (或更好的)  <br> AMD Ryzen 5 1400 3.4 Ghz (桌面) 、四核心 (或更好的)  |
+| RAM | 8 GB DDR3 (或更佳)  | 8 GB DDR3 雙重通道 (或更佳)  |
+| 可用磁碟空間 | 至少 10 GB | 至少 10 GB |
+| 顯卡| <ul> <li>NVIDIA GTX 1060 (或更高) 具有 DX12 功能的離散 GPU </li> <li>AMD RX 470/570 (或更高) DX12 支援的離散 GPU </li> </ul> <br> <b>注意：</b> GPU 必須裝載于 PCIe 3.0 x4 + 連結插槽 |  <ul>  <li>整合 Intel HD 圖形 620 (或更高) DX12 支援的整合 GPU <a href="https://en.wikipedia.org/wiki/List_of_Intel_graphics_processing_units"> (檢查您的模型是否更大) </a></li> <li>NVIDIA MX150 (或更高) 離散 GPU</li> <li>Nvidia GeForce GTX 1050 離散 GPU</li> <li>Nvidia 965M 離散 GPU</li> <li>AMD Radeon RX 460/560</li> </ul> <b>注意：</b> 不支援較舊的 Intel Gpu，例如 HD 圖形4xx、5xx、2xxx、3xxx、4xxx、5xxx 和6xxx。 |
+| 圖形驅動程式 | Windows顯示驅動程式模型 (WDDM) 2。2 |  |
+| [圖形顯示埠](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) | HDMI 2.0 或 DisplayPort 1。2 | HDMI 1.4 或 DisplayPort 1。2 |
+| 顯示 | 連接的外部或整合式 VGA (800x600) 顯示 (或更好的)  | 
+| [USB 連線能力](Recommended-adapters-for-Windows-Mixed-Reality-Capable-PCs.md) | USB 3.0 | |
+| [移動控制器](controllers-in-wmr.md)藍牙連接 ( | 藍牙4。0 | |
+| 預期的耳機幀率 | 90 Hz | 60 Hz |
+| 電源 | USB 3.0 埠 | USB 3.0 埠 |
 
 **其他資訊:**
 

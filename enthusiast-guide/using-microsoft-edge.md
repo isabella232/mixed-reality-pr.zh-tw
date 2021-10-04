@@ -1,17 +1,17 @@
 ---
 title: 在 Windows Mixed Reality 中使用 Microsoft Edge
 description: 準備好開始進行新的 Microsoft Edge Windows Mixed Reality。 包含預期的變更、要尋找的更新，以及已知問題。
-author: mattzmsft
-ms.author: mazeller
-ms.date: 11/11/2020
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、Home、流覽、規避、應用程式、遊戲、Microsoft Edge、chromium、Edge、360、360影片、360檢視器
-ms.openlocfilehash: 3cdb051e9925338a5f0145e106e2213712eb611e575b9f5d7dd29342a52ff38d
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 2834adc7325f6b600a5cf5f65c74948e0feb2c57
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115199484"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436693"
 ---
 # <a name="windows-mixed-reality-and-the-new-microsoft-edge"></a>Windows Mixed Reality 和新的 Microsoft Edge
 
@@ -20,13 +20,13 @@ ms.locfileid: "115199484"
 新的 Microsoft Edge 會採用桌上型電腦上[Chromium 的開放原始碼專案](https://blogs.windows.com/windowsexperience/2018/12/06/microsoft-edge-making-the-web-better-through-more-open-source-collaboration/)。 這可為客戶帶來更好的相容性，並讓 網頁程式開發人員更少片段。 它也會在啟動時支援 WebXR，這是建立 VR 耳機之沉浸式 web 體驗的新標準，取代 WebVR。
 
 >[!IMPORTANT]
->當您在最新的 Windows 10 裝置上安裝 Microsoft Edge 時，將會取代您電腦上先前 (舊版) 版本。
+>當您在最新的 Windows 10 或 Windows 11 裝置上安裝 Microsoft Edge 時，將會取代您電腦上先前的 (舊版) 版本。
 
 ## <a name="installing-the-new-microsoft-edge"></a>安裝新的 Microsoft Edge 
 
-在安裝新的 Microsoft Edge 之前，請 **升級至 Windows 10 1903 版或更新版本，以取得原生 Win32 應用程式支援，如 Windows Mixed Reality 中的新 Microsoft Edge** 。 請檢查 Windows Update 或[手動安裝最新版本的 Windows 10](https://www.microsoft.com/software-download/windows10)。
+在您安裝新的 Microsoft Edge 之前，請 **升級為 Windows 10 1903 版或更新版本，或 Windows 11 提供原生 Win32 應用程式支援，例如 Windows Mixed Reality 中的新 Microsoft Edge** 。 檢查 Windows Update 或[手動安裝最新版的 Windows 10](https://www.microsoft.com/software-download/windows10)或 Windows 11。
 
-Windows 10 1903 版或更新版本之後，您就可以開始使用新的 Microsoft Edge！ 新 Microsoft Edge 是透過 Windows Update 推出，但如果您想要更快，可以從[Microsoft Edge 網站](https://www.microsoft.com/edge)手動安裝新的 Microsoft Edge。
+Windows 10 1903 版或更新版本或 Windows 11 之後，您就可以開始使用新的 Microsoft Edge！ 新 Microsoft Edge 是透過 Windows Update 推出，但如果您想要更快，可以從[Microsoft Edge 網站](https://www.microsoft.com/edge)手動安裝新的 Microsoft Edge。
 
 >[!IMPORTANT]
 >新的 Microsoft Edge 推出 WebXR 的支援，這是為 VR 耳機建立沉浸式 web 體驗的新標準。 當您安裝新的 Microsoft Edge 時，將無法再于 Microsoft Edge 播放 WebVR 體驗。 

@@ -1,19 +1,19 @@
 ---
 title: 取得電腦相容性的協助
 description: 使用 Windows Mixed Reality 應用程式和裝置時，隨時掌握解決電腦相容性問題的最新資源。
-author: hferrone
-ms.author: v-hferrone
-ms.date: 01/07/2021
+author: qianw211
+ms.author: v-qianwen
+ms.date: 9/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，意見反應，意見反應中樞，bug
 appliesto:
-- Windows 10
-ms.openlocfilehash: cd5598147823670d1aa00eddda844bea21d7da262339624613f3724cbc5157fa
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+- Windows 10 and Windows 11
+ms.openlocfilehash: 1a07326da871eead6b13fe8350f37a22f8d27c23
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115189210"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436557"
 ---
 # <a name="get-help-with-pc-compatibility-in-windows-mixed-reality"></a>在 Windows Mixed Reality 中取得電腦相容性的協助
 
@@ -51,6 +51,7 @@ ms.locfileid: "115189210"
 * [這部電腦沒有足夠的可用磁碟空間來執行 Windows Mixed Reality](#this-pc-doesnt-have-enough-free-disk-space-to-run-windows-mixed-reality)
 * [這部電腦正在執行不支援的 Windows 版本 Windows Mixed Reality](#this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality)
 * [這部電腦未執行最新版本的 Windows 10](#this-pc-isnt-running-the-latest-version-of-windows-10)
+* [這部電腦未執行最新版的 Windows 11](#this-pc-isnt-running-the-latest-version-of-windows-11)
 * [這部電腦沒有 USB 3.0 埠](#this-pc-has-no-usb-30-port)
 * [您無法透過遠端桌面執行此應用程式](#you-cant-run-this-app-via-remote-desktop)
 
@@ -162,11 +163,15 @@ Windows Mixed Reality 需要 10 GB 的可用磁碟空間，才能安裝和獲得
 
 ### <a name="this-pc-is-running-an-edition-of-windows-that-doesnt-support-windows-mixed-reality"></a>這部電腦正在執行不支援的 Windows 版本 Windows Mixed Reality
 
-Windows Mixed Reality 可在[Windows 10 家用版](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab)和[Windows 10 專業版](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab)上運作。 您必須安裝其中一個版本，才能使用 Windows Mixed Reality。
+Windows Mixed Reality 適用于[Windows 10 家用版](https://www.microsoft.com/p/windows-10-home/d76qx4bznwk4?activetab=pivot:overviewtab)、 [Windows 10 專業版](https://www.microsoft.com/p/windows-10-pro/DF77X4D43RKT?icid=W10Pro_upsell_071817&activetab=pivot:overviewtab)和[Windows 11](https://www.microsoft.com/software-download/windows11)。 您必須安裝其中一個版本，才能使用 Windows Mixed Reality。
 
 ### <a name="this-pc-isnt-running-the-latest-version-of-windows-10"></a>這部電腦未執行最新版本的 Windows 10
 
 Windows Mixed Reality 需要 Windows 10 Fall Creators Update。 請[更新您的電腦](https://support.microsoft.com/help/4028685)，然後再試一次。
+
+### <a name="this-pc-isnt-running-the-latest-version-of-windows-11"></a>這部電腦未執行最新版的 Windows 11
+
+Windows Mixed Reality 需要 Windows 11 的最新版本。 請[更新您的電腦](https://www.microsoft.com/software-download/windows11)，然後再試一次。
 
 ### <a name="this-pc-has-no-usb-30-port"></a>這部電腦沒有 USB 3.0 埠
 
@@ -189,7 +194,7 @@ Windows Mixed Reality 需要 Windows 10 Fall Creators Update。 請[更新您的
 如果您仍有效能問題，請更新下列[Windows Mixed Reality](set-up-windows-mixed-reality.md)設定，以獲得最佳的使用者體驗：
 
 * 體驗
-* 解決方法
+* 解決方案
 * 畫面播放速率
 * 校正
 

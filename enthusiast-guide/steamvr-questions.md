@@ -1,14 +1,17 @@
 ---
 title: SteamVR 常見問題
 description: SteamVR 超過標準取用者支援檔的 Windows Mixed Reality 疑難排解。
+author: qianwen
+ms.author: v-qianwen
+ms.date: 09/24/2021
 ms.topic: article
 keywords: Windows Mixed Reality、混合的現實、虛擬實境、VR、MR、疑難排解、錯誤、協助、支援、SteamVR
-ms.openlocfilehash: 0fb9c07dda8fe354966403bc9c6a21acb600e61cb943c270eb9c87f5ec2fb89a
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 17ab1709e8a2fc7e3eee70082aef64f0dc23d318
+ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115199494"
+ms.lasthandoff: 10/04/2021
+ms.locfileid: "129436795"
 ---
 # <a name="steamvr-faqs"></a>SteamVR 常見問題
 
@@ -21,7 +24,7 @@ ms.locfileid: "115199494"
 
 ## <a name="a-message-says-to-use-steamvr-with-windows-mixed-reality-you-need-to-install-the-latest-windows-update-or-windows-developer-mode-required"></a>訊息顯示「若要搭配 Windows Mixed Reality 使用 SteamVR，您必須安裝最新的 Windows Update」或「需要 Windows 開發人員模式」。
 
-1. 確定您的電腦正在執行最新版本的 Windows 10。 請移至 **設定 > 系統 >**，並在 [Windows 規格] 下，確定 [作業系統組建] 為16299.64 或更新版本。
+1. 確定您的電腦正在執行最新版的 Windows 10 或 Windows 11。 請移至 **設定 > 系統 >**，並在 [Windows 規格] 下，確定 [作業系統組建] 為16299.64 或更新版本。
 2. 請確定您沒有任何更新正在等候下載或安裝。 移至 **設定 > 更新 & 安全性 > Windows Update** 然後選取 [檢查更新]。 您可能必須多次檢查，直到沒有其他可用的更新，然後重新開機您的電腦。
 
 ## <a name="steamvr-is-crashing-after-updating-windows"></a>SteamVR 在更新 Windows 後損毀
