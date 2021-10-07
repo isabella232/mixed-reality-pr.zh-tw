@@ -3,17 +3,17 @@ title: 軟體總覽和發行歷程記錄
 description: 概述 Windows Mixed Reality、沉浸式耳機和其發行歷程記錄的主要軟體元件。
 author: qianw211
 ms.author: v-qianwen
-ms.date: 09/30/2021
+ms.date: 10/5/2021
 ms.topic: article
 keywords: Windows Mixed Reality，混合的現實，虛擬實境，VR，MR，軟體元件，發行歷程記錄，版本資訊，版本歷程記錄
 appliesto:
 - Windows 10 and Windows 11
-ms.openlocfilehash: e20b2075e45620a7533dbb2d369d00e73b98f9c7
-ms.sourcegitcommit: c159bdcf2ada1f45606b10d41ea3adf95109c979
+ms.openlocfilehash: b27006790d48107bdb19c7afa59e9c8adbda45b1
+ms.sourcegitcommit: 289cefbe479d6e0f4451a618bf926e4b08b50260
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 10/04/2021
-ms.locfileid: "129436627"
+ms.lasthandoff: 10/06/2021
+ms.locfileid: "129593373"
 ---
 # <a name="mixed-reality-software-overview-and-release-history"></a>混合實境軟體概觀和發行歷程記錄
 
@@ -24,7 +24,7 @@ Windows Mixed Reality 是由下列主要軟體元件所組成：
 1. **混合實境入口**，提供主要 Windows Mixed Reality 體驗
     * 在 Windows 10 1709 和1803版中，混合實境入口是透過 Windows Update 更新之 Windows 10 作業系統的主要元件。
     * 在 Windows 10 1809 版和更新版本中，混合實境入口會透過 Microsoft Store 應用程式更新。
-    * 在 Windows 11 21H2 版中。
+    * 在 Windows 11 21H2 版中，混合實境入口會透過 Microsoft Store 應用程式更新。
 2. **混合現實隨選封裝** (FOD) ，在混合實境入口首次執行時自動下載並安裝。 您可以在[這裡](/windows/application-management/manage-windows-mixed-reality)找到 FOD 套件的詳細資訊
 3. **混合現實耳機和移動控制器驅動程式**（也稱為 HoloLens 感應器驅動程式）是可讓 Windows Mixed Reality 耳機使用 Windows Mixed Reality 的重要驅動程式套件。 這項功能會在您第一次插入混合現實耳機時，透過 Windows Update 自動下載和安裝，並透過 Windows Update 定期更新
 4. * * 混合式事實移動控制器模型驅動程式包含混合現實移動控制器的3D 模型，以及協力廠商混合現實體驗所需的模型。 這項功能會在您第一次將混合現實移動控制器配對至您的電腦時自動下載並安裝 Windows Update，並透過 Windows Update 進行更新
