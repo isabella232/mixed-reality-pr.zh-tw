@@ -6,12 +6,12 @@ ms.author: v-qianwen
 ms.date: 07/15/2021
 ms.topic: article
 keywords: 品質基本概念、案例研究、專案、範例、MRTK、混合現實工具組、Unity、範例應用程式、範例應用程式、開放原始碼、Microsoft Store、HoloLens、混合現實耳機、windows Mixed Reality 耳機、虛擬實境耳機
-ms.openlocfilehash: a8189ca8cb161bb792ad298535c32eac1a47260d8d5559c2383e0322b2cbeb03
-ms.sourcegitcommit: a1c086aa83d381129e62f9d8942f0fc889ffcab0
+ms.openlocfilehash: 69c6a55b95937c0c6af4920f6ffe0929eebe76ee
+ms.sourcegitcommit: 82f7db75d8ecc7ac89c76b0db504126cbcb8f16d
 ms.translationtype: MT
 ms.contentlocale: zh-TW
-ms.lasthandoff: 08/05/2021
-ms.locfileid: "115211952"
+ms.lasthandoff: 10/07/2021
+ms.locfileid: "129647526"
 ---
 # <a name="quality-fundamentals"></a>品質基本概念
 
@@ -60,7 +60,7 @@ HoloLens 的效能可能會受到非常低或非常明亮的狀況所負面影�
 > * 使用 QR 代碼，在多個共同作業者之間共用空間錨點。
 > * 空間中非常大型物件的錨點放置。
 
-如需詳細資訊，請參閱[混合現實](/windows/mixed-reality/design/spatial-anchors)檔中的[空間錨點](/windows/mixed-reality/design/spatial-anchors)。
+如需詳細資訊，請參閱[混合現實](../../design/spatial-anchors.md)檔中的[空間錨點](../../design/spatial-anchors.md)。
 
 ## <a name="stability-and-fidelity"></a>穩定性和精確度
 
@@ -80,7 +80,7 @@ HoloLens 的效能可能會受到非常低或非常明亮的狀況所負面影�
 
 ![三角形計數優化](images\qf-triangle-count-optimization.png)
 
-如需詳細資訊，請參閱全像全像全像全[像的](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability)[框架率](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#frame-rate)。
+如需詳細資訊，請參閱全像全像全像全[像的](../platform-capabilities-and-apis/hologram-stability.md)[框架率](../platform-capabilities-and-apis/hologram-stability.md#frame-rate)。
 
 ### <a name="late-stage-reprojection-lsr"></a>延遲階段 reprojection (LSR) 
 
@@ -88,7 +88,7 @@ Reprojection 是用來在使用者四處移動空間時，穩定的全像影像�
 
 ![請嘗試不同的 reprojection 選項，以體驗差異。](images\qf-lsr-modes.jpg)
 
-For detailed information, see [reprojection](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability#reprojection) in the [hologram stability](/windows/mixed-reality/develop/platform-capabilities-and-apis/hologram-stability) article.
+For detailed information, see [reprojection](../platform-capabilities-and-apis/hologram-stability.md#reprojection) in the [hologram stability](../platform-capabilities-and-apis/hologram-stability.md) article.
 
 ### <a name="z-fighting"></a>Z-fighting
 
@@ -96,7 +96,7 @@ For detailed information, see [reprojection](/windows/mixed-reality/develop/plat
 
 ![使用物件放置體驗 z 的操作。](images\qf-z-fighting.jpg)
 
-如需有關 z 的詳細資訊，請參閱在[Unity 的建議設定](/windows/mixed-reality/develop/unity/recommended-settings-for-unity)文章中[啟用深度緩衝區共用](/windows/mixed-reality/develop/unity/recommended-settings-for-unity#enable-depth-buffer-sharing)。
+如需有關 z 的詳細資訊，請參閱在[Unity 的建議設定](./recommended-settings-for-unity.md)文章中[啟用深度緩衝區共用](./recommended-settings-for-unity.md#enable-depth-buffer-sharing)。
 
 ### <a name="anti-aliasing"></a>消除鋸齒
 
@@ -120,7 +120,7 @@ For detailed information, see [reprojection](/windows/mixed-reality/develop/plat
 
 ![選擇不同的三角形計數選項，以查看畫面播放速率的效果。](images\qf-3d-asset-visible-triangles.jpg)
 
-如需詳細資訊，請參閱 [資產建立流程](/windows/mixed-reality/design/asset-creation-process)。
+如需詳細資訊，請參閱 [資產建立流程](../../design/asset-creation-process.md)。
 
 ### <a name="shader-passes"></a>著色器階段
 
@@ -136,7 +136,7 @@ For detailed information, see [reprojection](/windows/mixed-reality/develop/plat
 
 ![繪製呼叫應該經過優化，才能提升效能。](images\qf-3d-asset-draw-calls.jpg)
 
-請參閱 [CPU 對 GPU 效能建議](/windows/mixed-reality/develop/unity/performance-recommendations-for-unity#cpu-to-gpu-performance-recommendations)。
+請參閱 [CPU 對 GPU 效能建議](./performance-recommendations-for-unity.md#cpu-to-gpu-performance-recommendations)。
 
 ### <a name="finale"></a>結局
 
